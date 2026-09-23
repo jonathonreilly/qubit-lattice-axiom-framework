@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-author-prepared-v3.json",
+    "sha256": "b8e3d7e60aaabdea97c8a070a441265552c7b96b5cbb545f68ac1907d71db020"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-author-full-mapping-v3.json",
+    "sha256": "2c69274c2d517b3b5caecd5559b84b3ebb3b6c0ad5cc47541e68b874179de687"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-author-discovery-v3.json",
+    "sha256": "30ba33a4f8eae06f801f16313c179596f80f5d4b2c3e96d9faf7a6ff42c5bded"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-author-input-resource-plan-v3.json",
+    "sha256": "2290e47f9a26c0af271c45b5990cd4953b83ab5cdc0af0e3226bbe62f03a1547"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-author-finding-dispositions-v3.json",
+    "sha256": "9a1dcfd9d8fa92940c82988a1a5d7abc1900036d156d2a57feb53abfbd1a84b7"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-author-handoff-v3.json",
+    "sha256": "ad6bd7d5670434c396e42bd0de53e4742c816137c369ba7f0b3c11ce4abecfc3"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-prepared-v3-source-freeze.json",
+    "sha256": "53b706d4fe87e021c26e57a1899992ccb11f208253cfe6aae8c18e452414c116"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-packaging-v2-to-v3.diff",
+    "sha256": "a3b8e155f7dafd7b80a35d21730edc79242b2cfa45d3ecc3927126fedf7b6bbb"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-basename-collision-check-v3.json",
+    "sha256": "27589cbdba55d1142f40633caad5fa6ef21bbab6af96c01574dd00572f7f5824"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-author-correction-v2.diff",
+    "sha256": "ec005d5fb1c01ac9c752915a69643f396f04f9a9f31dca400dd3469419ef1677"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-author-preservation-v1.json",
+    "sha256": "09a300c78a0845f7c745439050e61c1e57587b2a024cf11514bc7542ca222d69"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-review-original.json",
+    "sha256": "724cc955b08af65a5f6933a2f9c8c701b222c5a5bab2732cabb22c241105f541"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-early-review-v2.json",
+    "sha256": "e26ba8a6d56f628a4064b24f32b5fe70891a43519fc5952250323f8c089f6c4d"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-original/inventory.json",
+    "sha256": "247038ae72ce92f8a5b72a58f42ada6e2e752097656b7dac32056860dd434f0e"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8174-original/original.patch",
+    "sha256": "9887b73aa5f1c89df2de5950c00f23cd9dbaaf2872062a9706e65f273b5ca9bd"
+  }
+]

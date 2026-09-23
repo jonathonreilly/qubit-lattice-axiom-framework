@@ -1,0 +1,38 @@
+{
+  "original_count": 25,
+  "all_raw_hashes_and_git_blobs_verified": true,
+  "unchanged_computational_asts": [
+    "mut",
+    "normalize_text",
+    "add",
+    "sub",
+    "level",
+    "M",
+    "preds",
+    "is_fork",
+    "cone",
+    "run_automaton",
+    "Explainer",
+    "check_tree",
+    "phi_of",
+    "conditional",
+    "deviations",
+    "test_config",
+    "family_c",
+    "step",
+    "gf_coefficients",
+    "exp_bounds",
+    "family_d"
+  ],
+  "mathematical_changes": [
+    "T1 sufficient domain/factorization and explicit three derivatives",
+    "T2 full finite localization and pole-transport proof",
+    "T4 full invariant-law argument and exact four certificate table",
+    "T5 strict full-domain endpoint corrected and readable negative proof deferred; positive parametrization live"
+  ],
+  "original_fixture_families_unchanged": [
+    "family_c",
+    "family_d"
+  ],
+  "current_science_runs": 0
+}

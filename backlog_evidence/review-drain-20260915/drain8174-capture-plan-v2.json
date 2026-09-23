@@ -1,0 +1,120 @@
+{
+  "runner": {
+    "path": "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py",
+    "sha256": "4c4027558538dad0ad0a4d8887de2ac7d39671438ca15aaa1fcc38f214efc866"
+  },
+  "ordered_inputs": [
+    {
+      "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2"
+    }
+  ],
+  "mathematical_parents": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "Framework vocabulary"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "Product conditional and six-axis model"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2",
+      "role": "Single-noise sufficient certificate comparison and complete reproduced pole transport"
+    }
+  ],
+  "mathematical_closure": "Complete supplied-domain coupling, finite ancestor-cone localization, extended cluster/tree refinement and transport, exact lifted slot count, four preserved rational super-solutions, compact Feller Cesaro argument and optional extreme stationary-law decomposition. No unlanded sibling, simulation, historical output or deferred negative proof is a premise.",
+  "runtime_read_set": "Four literal AUDIT_INPUT_PATHS plus own source for identity; no external helper, simulation file or historical payload read. Sympy and Python standard library are dependencies.",
+  "timeout_sec": 900,
+  "proposed_external_process_tree_limit_bytes": 805306368,
+  "source_basis": "Original 900-second declared cap retained. Original all1024 depth2 configurations, depth3 configurations with one through four noise sites, random.seed(30) and1200 cones depths3..8 unchanged. Original 66103 lifted-tree enumeration through4edges and all four rational certificates unchanged. Additional symbolic three derivatives/factorization and endpoint denominator are bounded small expressions. 768MiB conservative proposed import/tree-enumeration headroom, unmeasured; original historical cache1.54seconds is not a fresh performance measurement. Preserve any failure; no automatic retry or cap increase.",
+  "json_output": "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.json",
+  "mutation_json_pattern": "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--<mutation>.json",
+  "stdout": "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.txt",
+  "checks_source_derived_not_executed": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B3",
+    "B2",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "D1",
+    "D2",
+    "D3",
+    "E1",
+    "E3",
+    "E2"
+  ],
+  "mutation_names": {
+    "deviation_closed_form_wrong": "B",
+    "domination_state_wrong": "B",
+    "spanning_identity_wrong": "C",
+    "budget_amplified_dropped": "C",
+    "bad_pairs_wrong": "C",
+    "forks_identity_wrong": "C",
+    "subtree_bound_wrong": "D",
+    "certificate_wrong": "D",
+    "ceiling_wrong": "E",
+    "domination_domain_wrong": "B",
+    "ceiling_endpoint_wrong": "E"
+  },
+  "mutation_status": "Nine original mathematical mutations retained, two corrected-domain/endpoint mutations added. Two original prose-only mutations preserved only in exact historical runner. No outcomes asserted.",
+  "primary_executions": 0,
+  "mutation_executions": 0,
+  "simulation_executions": 0,
+  "status": "PROPOSED, UNEXECUTED: builder v2 binds actual v3 source clearance; capture adapters remain blocked pending actual staged cold report binding",
+  "baseline_runs_planned": 1,
+  "mutation_runs_planned": 11,
+  "baseline_retry": false,
+  "mutation_retry": false,
+  "adapters": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-build-staged-draft-v2.py",
+      "sha256": "99e209509e0756b5ffbc072d4b235fe3cee03cc1f61b8c4eca03a25f84d81b1c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-v1.py",
+      "sha256": "a0eaf9e49510d205678522a78b1d26acf734ea42684b4561c9788aed7c0c1bae"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-mutation-capture-v1.py",
+      "sha256": "5472569fcd62e622d0f9b51aeee37d3ab86feae8e5119a308c745480a65c197d"
+    }
+  ],
+  "ordering": [
+    "Actual v3 packaging confirmation; new immutable builder revision binding exact approval",
+    "Root guarded advance and staging, cheap receipt, actual same-session cold/new-main clearance",
+    "New immutable capture revisions binding actual cold schema, report hash, exact tree and predicates",
+    "One primary, full execute_runner return saved externally before API postidentity checks",
+    "Eleven serial once-only mutation attempts reuse unchanged successful primary; no baseline rerun",
+    "No cache staging until all source-bound captures complete"
+  ],
+  "raw_preservation": "Primary raw execute_runner return persisted immediately before original execute_and_write_cache identity/cache publication logic; mutation stdout/stderr stream to exclusive external files before any postrun rejection; all actual JSON paths are retained",
+  "limit_policy": "900seconds and768MiB sampled aggregate RSS of supervisor and descendants, 20ms polling; kill observed process group/children on violation; no automatic retry or raised cap",
+  "scratch": "None. Runner emits distinct exclusive JSON per mutation name.",
+  "cold_binding": null,
+  "early_v3_binding": {
+    "path": "/private/tmp/review-drain-20260915/drain8174-early-review-v3.json",
+    "sha256": "c69531fe6e86ef41a9e625743732d7856d937ab0accf52bd714f3ecdb958ec5b"
+  }
+}

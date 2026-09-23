@@ -1,0 +1,15 @@
+diff --git a/docs/work_history/repo/review_feedback/pr8174-evidence/DEFERRED_SCIENCE.md b/docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md
+similarity index 100%
+rename from docs/work_history/repo/review_feedback/pr8174-evidence/DEFERRED_SCIENCE.md
+rename to docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md
+--- docs/work_history/repo/review_feedback/pr8174-evidence/README.md
++++ docs/work_history/repo/review_feedback/pr8174-evidence/README.md
+@@ -2,7 +2,7 @@
+ 
+ Original head `cc7662e14ebf17010a0c60fdb8e7e634b176ce99`; merge base `6dda46fc1af02827e9c6b64b2f7d05c381a3ce07`. Every original path, Git mode, blob and raw SHA is recorded in [archive manifest](archive-manifest.json). Historical claims and PASS records are uncorrected provenance, never present-day authority. Gzip objects decode byte-for-byte, including original EOF whitespace; restore the recorded Git mode. Plain proofs and programs remain readable. The complete original delta is [compressed here](original-delta.patch.gz). Retain the original branch for unique deferred science.
+ 
+-[Complete corrected deferred argument and raw outputs](DEFERRED_SCIENCE.md).
++[Complete corrected deferred argument and raw outputs](pr8174-deferred-science.md).
+ 
+ - `.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md`: [APPROACH_REGISTRY-a24d7a0fbd69f46c.md](kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md) (identity).
+ - `.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block30_findings.md`: [CHECKER_block30_findings-df0ff512f1767b7f.md](kept/CHECKER_block30_findings-df0ff512f1767b7f.md) (identity).

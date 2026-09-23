@@ -1,0 +1,85 @@
+{
+  "runner": {
+    "path": "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py",
+    "sha256": "4c4027558538dad0ad0a4d8887de2ac7d39671438ca15aaa1fcc38f214efc866"
+  },
+  "ordered_inputs": [
+    {
+      "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2"
+    }
+  ],
+  "mathematical_parents": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "Framework vocabulary"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "Product conditional and six-axis model"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2",
+      "role": "Single-noise sufficient certificate comparison and complete reproduced pole transport"
+    }
+  ],
+  "mathematical_closure": "Complete supplied-domain coupling, finite ancestor-cone localization, extended cluster/tree refinement and transport, exact lifted slot count, four preserved rational super-solutions, compact Feller Cesaro argument and optional extreme stationary-law decomposition. No unlanded sibling, simulation, historical output or deferred negative proof is a premise.",
+  "runtime_read_set": "Four literal AUDIT_INPUT_PATHS plus own source for identity; no external helper, simulation file or historical payload read. Sympy and Python standard library are dependencies.",
+  "timeout_sec": 900,
+  "proposed_external_process_tree_limit_bytes": 805306368,
+  "source_basis": "Original 900-second declared cap retained. Original all1024 depth2 configurations, depth3 configurations with one through four noise sites, random.seed(30) and1200 cones depths3..8 unchanged. Original 66103 lifted-tree enumeration through4edges and all four rational certificates unchanged. Additional symbolic three derivatives/factorization and endpoint denominator are bounded small expressions. 768MiB conservative proposed import/tree-enumeration headroom, unmeasured; original historical cache1.54seconds is not a fresh performance measurement. Preserve any failure; no automatic retry or cap increase.",
+  "json_output": "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.json",
+  "mutation_json_pattern": "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--<mutation>.json",
+  "stdout": "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.txt",
+  "checks_source_derived_not_executed": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B3",
+    "B2",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "D1",
+    "D2",
+    "D3",
+    "E1",
+    "E3",
+    "E2"
+  ],
+  "mutation_names": {
+    "deviation_closed_form_wrong": "B",
+    "domination_state_wrong": "B",
+    "spanning_identity_wrong": "C",
+    "budget_amplified_dropped": "C",
+    "bad_pairs_wrong": "C",
+    "forks_identity_wrong": "C",
+    "subtree_bound_wrong": "D",
+    "certificate_wrong": "D",
+    "ceiling_wrong": "E",
+    "domination_domain_wrong": "B",
+    "ceiling_endpoint_wrong": "E"
+  },
+  "mutation_status": "Nine original mathematical mutations retained, two corrected-domain/endpoint mutations added. Two original prose-only mutations preserved only in exact historical runner. No outcomes asserted.",
+  "primary_executions": 0,
+  "mutation_executions": 0,
+  "simulation_executions": 0
+}

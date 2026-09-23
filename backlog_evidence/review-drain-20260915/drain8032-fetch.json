@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+  "fetched_ref": "refs/review-loop/fetched/8032-6064ccc3736045129f92adc8421e51b6",
+  "metadata": {
+    "baseRefName": "codex/finite-transporter-block41-20260907",
+    "headRefName": "codex/finite-pw-energy-block42-20260907",
+    "headRefOid": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+    "isDraft": true,
+    "number": 8032,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

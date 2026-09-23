@@ -1,0 +1,673 @@
+{
+  "schema_version": 1,
+  "pr": 8173,
+  "kind": "original-same-session-final-source-evidence-review",
+  "reviewer_session": "/root/review_8173",
+  "reviewer_model": "gpt-6-astra",
+  "reviewer_reasoning": "low",
+  "same_session": true,
+  "source_evidence_accepted": true,
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "material_blockers": [],
+  "base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "source_tree": "ea0bcc42f9ebb76f431610e598ca6ad6300c2538",
+  "original_head": "e5b3aa31686d88d8a2fe0aad5e938acac0e39404",
+  "original_merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "source_paths": [
+    {
+      "path": "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "mode": "100644",
+      "blob": "1831a104ef2553dcdab279d7fd116bf9f5f96893",
+      "sha256": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/README.md",
+      "mode": "100644",
+      "blob": "bd553ac136a4154a12f4a2fb2fa7683709663ab4",
+      "sha256": "33724294adedcce27ec90174e18f2986e9c56278d553cc5c06fe2eae8a0e8ade"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/01-APPROACH_REGISTRY.md.gz",
+      "mode": "100644",
+      "blob": "6f8d2a35611309fd28c9650f88b54fac5fce49ff",
+      "sha256": "857d09cef32234c520bd59d08411b449f5ac04b78d74378c448502592012ba29"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/02-CHECKER_block29_findings.md.gz",
+      "mode": "100644",
+      "blob": "3837ec6d0affa8ed5ea067f2e1b8de953545f866",
+      "sha256": "2c638ede1b64b9d5423d79e97398efafcf2fdce83cb6afa524caf05110cead96"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/03-CLAIM_STATUS_CERTIFICATE_block29.md.gz",
+      "mode": "100644",
+      "blob": "144fbadb3ff10eb77204cd3580adf015e65d4864",
+      "sha256": "8ed5405e355813d9395b90cfdbd896c76262aac8a5a3b7a8b31a72731f9de888"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/04-GOAL_block29.md.gz",
+      "mode": "100644",
+      "blob": "24ded44f0596f5039d41d089bf0f116cf12470b5",
+      "sha256": "378a1fe8125abd4749ca4889b0fe8f331e514073621332dc88f643ff8bf98f39"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/05-HANDOFF.md.gz",
+      "mode": "100644",
+      "blob": "45ca2d92b3dd9f9fd73b15ef7c72a735dc41bd38",
+      "sha256": "199169ccf962e9fe4c4274b447793eb9074cf24ea4df3b8705c9de77234c14ce"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/06-OPPORTUNITY_QUEUE.md.gz",
+      "mode": "100644",
+      "blob": "efade81ebb4108f0a1c29f5ba586db1e01eba473",
+      "sha256": "9f7b952ec26ecdb6b8917b4d6a8f90e9d214f4a91afc37f28da2f1a00ab96f23"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/07-RESULTS_block29.md.gz",
+      "mode": "100644",
+      "blob": "e8eb2737ef738df126177022adca4de8b8278106",
+      "sha256": "54601c9c78b6854fff41f45211687701a74f939787a8dcb5671be0632b3d939d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/08-REVIEW_HISTORY.md.gz",
+      "mode": "100644",
+      "blob": "5f17fd0e5e117099d382906b0a088c19233dab58",
+      "sha256": "e2248333ffc2003d302581c24bb5821e7415189c2706daa67224c8f19e578fa2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/09-STATE.yaml.gz",
+      "mode": "100644",
+      "blob": "6a9e8c508bebdd3d1b9c974e33c124ff316aa7e0",
+      "sha256": "5ac09f19b043e9994f0d0171edb383996cb7e660f54d73eff7e7c22ea2627063"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/10-TRACE_GATE.md.gz",
+      "mode": "100644",
+      "blob": "9bf5325ea738eac31788e7aedd4d4303542d0949",
+      "sha256": "c6b7406443a249e7c9f1fbe883a83e3e7d75a776f94c3d2994252e785e6d1ed2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/11-supervisor_control_block29_exact.out.txt.gz",
+      "mode": "100644",
+      "blob": "53d3803412f329cbc15142f7b48fa763bf1044a5",
+      "sha256": "8b27327e129541631721fe0f4e0bb92eb1c77453fd1886de8369c1da77eb1f55"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/12-supervisor_control_block29_exact.py.gz",
+      "mode": "100644",
+      "blob": "96dab36c5ca6f00dafc6e008c6bfd8a1f006dbd6",
+      "sha256": "d46232eaca14d0dc92f7f51eb2432771a8ea15054953fca893047470262b4754"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/13-supervisor_control_block29_kernel.out.txt.gz",
+      "mode": "100644",
+      "blob": "b1047659992375e3cfde5eaf30a2d8eaf3267b2b",
+      "sha256": "7394155c39ccd6233e938dc2a2f913ce081686e3ace1e78ecb4ed025747cb821"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/14-supervisor_control_block29_kernel.py.gz",
+      "mode": "100644",
+      "blob": "63d64b2617ffa9a89aea9db0455455e2337c5483",
+      "sha256": "aa07f0258de983d20a07a41015900f53078af1f683f29c3b2e4cace9942ceaf7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/15-supervisor_control_block29_refuter.out.txt.gz",
+      "mode": "100644",
+      "blob": "1b4bfa3bff2dcdc681ea8ea3fdd483c54338fb72",
+      "sha256": "f4ada474e66f7a8c5a05ce98710e0412962b23380f2d00314167f607169e9f96"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/16-supervisor_control_block29_refuter.py.gz",
+      "mode": "100644",
+      "blob": "231bd52a14d243bbb484d1d24f1d9da27d9db026",
+      "sha256": "77c4a78d30833aa44c7c089a3019ba0dd5704f0e810e23ae5fd3a2f26f93dee7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/17-ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz",
+      "mode": "100644",
+      "blob": "096139bdbf17255c8d8fd5b542b409af2185b00b",
+      "sha256": "c9e103ad9136141775b33773d4f51d30eedfe195920bba15322b8a9ead2bcf28"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/18-citation_graph_manifest.json.gz",
+      "mode": "100644",
+      "blob": "cf3d42f384cad4ea3de1c305954703b66fbcfe8b",
+      "sha256": "2abec2b944c759ec88868f40652699ef9454a34415b94e463723f4d86806fda8"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/19-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt.gz",
+      "mode": "100644",
+      "blob": "855adffe96f46642d1d3d7072bfd8bac51fba1ef",
+      "sha256": "f3868586fdec6e47545fd4f2f0c66950f8dce8cc234c0a4108c28d8130af7380"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/20-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py.gz",
+      "mode": "100644",
+      "blob": "de5d445fe6fb851ab9c0683adbbab4f1878054c9",
+      "sha256": "b92a1afb616f83b1e19068aa751fb8386ca2f306238dad7d4d0fb4f07123323e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/pr8173-original-manifest.json",
+      "mode": "100644",
+      "blob": "b8df27bd12015905091b38293c975b39d10dc9b7",
+      "sha256": "73153da44fb0d4b53229c976e5e6aba77a6f471b51cb1e2c3a2e4feda0b89186"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/pr8173-original-note-and-measurement-corrections.txt",
+      "mode": "100644",
+      "blob": "13c7a2033ce1abf2f7b068679eb941397afb897b",
+      "sha256": "896e6b6840c46861084116f9c26c988b48776a6e561d86813d707880d7aa04c0"
+    },
+    {
+      "path": "logs/runner-cache/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.txt",
+      "mode": "100644",
+      "blob": "c8cf25ffe7e57cd74b75c521505abe9adb8e5231",
+      "sha256": "5c239ec1b43954a92b4e836065022b85fba84859b04f7fdfb28e1cc021798252"
+    },
+    {
+      "path": "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py",
+      "mode": "100755",
+      "blob": "ba535d375e30b7cb9a0d2c7a2a27880d7657f9c5",
+      "sha256": "54441f119d85ebc62de0127366305e8b9871592b33f064f0c0f4d633fdb13682"
+    }
+  ],
+  "inputs": {
+    "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05",
+    "docs/work_history/review_loop/pr8173/README.md": "33724294adedcce27ec90174e18f2986e9c56278d553cc5c06fe2eae8a0e8ade",
+    "docs/work_history/review_loop/pr8173/originals/01-APPROACH_REGISTRY.md.gz": "857d09cef32234c520bd59d08411b449f5ac04b78d74378c448502592012ba29",
+    "docs/work_history/review_loop/pr8173/originals/02-CHECKER_block29_findings.md.gz": "2c638ede1b64b9d5423d79e97398efafcf2fdce83cb6afa524caf05110cead96",
+    "docs/work_history/review_loop/pr8173/originals/03-CLAIM_STATUS_CERTIFICATE_block29.md.gz": "8ed5405e355813d9395b90cfdbd896c76262aac8a5a3b7a8b31a72731f9de888",
+    "docs/work_history/review_loop/pr8173/originals/04-GOAL_block29.md.gz": "378a1fe8125abd4749ca4889b0fe8f331e514073621332dc88f643ff8bf98f39",
+    "docs/work_history/review_loop/pr8173/originals/05-HANDOFF.md.gz": "199169ccf962e9fe4c4274b447793eb9074cf24ea4df3b8705c9de77234c14ce",
+    "docs/work_history/review_loop/pr8173/originals/06-OPPORTUNITY_QUEUE.md.gz": "9f7b952ec26ecdb6b8917b4d6a8f90e9d214f4a91afc37f28da2f1a00ab96f23",
+    "docs/work_history/review_loop/pr8173/originals/07-RESULTS_block29.md.gz": "54601c9c78b6854fff41f45211687701a74f939787a8dcb5671be0632b3d939d",
+    "docs/work_history/review_loop/pr8173/originals/08-REVIEW_HISTORY.md.gz": "e2248333ffc2003d302581c24bb5821e7415189c2706daa67224c8f19e578fa2",
+    "docs/work_history/review_loop/pr8173/originals/09-STATE.yaml.gz": "5ac09f19b043e9994f0d0171edb383996cb7e660f54d73eff7e7c22ea2627063",
+    "docs/work_history/review_loop/pr8173/originals/10-TRACE_GATE.md.gz": "c6b7406443a249e7c9f1fbe883a83e3e7d75a776f94c3d2994252e785e6d1ed2",
+    "docs/work_history/review_loop/pr8173/originals/11-supervisor_control_block29_exact.out.txt.gz": "8b27327e129541631721fe0f4e0bb92eb1c77453fd1886de8369c1da77eb1f55",
+    "docs/work_history/review_loop/pr8173/originals/12-supervisor_control_block29_exact.py.gz": "d46232eaca14d0dc92f7f51eb2432771a8ea15054953fca893047470262b4754",
+    "docs/work_history/review_loop/pr8173/originals/13-supervisor_control_block29_kernel.out.txt.gz": "7394155c39ccd6233e938dc2a2f913ce081686e3ace1e78ecb4ed025747cb821",
+    "docs/work_history/review_loop/pr8173/originals/14-supervisor_control_block29_kernel.py.gz": "aa07f0258de983d20a07a41015900f53078af1f683f29c3b2e4cace9942ceaf7",
+    "docs/work_history/review_loop/pr8173/originals/15-supervisor_control_block29_refuter.out.txt.gz": "f4ada474e66f7a8c5a05ce98710e0412962b23380f2d00314167f607169e9f96",
+    "docs/work_history/review_loop/pr8173/originals/16-supervisor_control_block29_refuter.py.gz": "77c4a78d30833aa44c7c089a3019ba0dd5704f0e810e23ae5fd3a2f26f93dee7",
+    "docs/work_history/review_loop/pr8173/originals/17-ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz": "c9e103ad9136141775b33773d4f51d30eedfe195920bba15322b8a9ead2bcf28",
+    "docs/work_history/review_loop/pr8173/originals/18-citation_graph_manifest.json.gz": "2abec2b944c759ec88868f40652699ef9454a34415b94e463723f4d86806fda8",
+    "docs/work_history/review_loop/pr8173/originals/19-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt.gz": "f3868586fdec6e47545fd4f2f0c66950f8dce8cc234c0a4108c28d8130af7380",
+    "docs/work_history/review_loop/pr8173/originals/20-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py.gz": "b92a1afb616f83b1e19068aa751fb8386ca2f306238dad7d4d0fb4f07123323e",
+    "docs/work_history/review_loop/pr8173/pr8173-original-manifest.json": "73153da44fb0d4b53229c976e5e6aba77a6f471b51cb1e2c3a2e4feda0b89186",
+    "docs/work_history/review_loop/pr8173/pr8173-original-note-and-measurement-corrections.txt": "896e6b6840c46861084116f9c26c988b48776a6e561d86813d707880d7aa04c0",
+    "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py": "54441f119d85ebc62de0127366305e8b9871592b33f064f0c0f4d633fdb13682",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2",
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "dfac044b35160d3c5a1cb1bd5a20707f0ae9695623d0b8641f099060420a421b",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    "docs/audit/scripts/build_citation_graph.py": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/audit_packet_script_deps.py": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_mode": "100644",
+      "original_blob": "a79441db2ec2885121c2cbaccdb0877a0860909d",
+      "original_sha256": "dd7145afcc9791c1dd58df4a8e1e4120798a4578ae3a5ce37da53ec33cdcc2da",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/01-APPROACH_REGISTRY.md.gz",
+      "final_sha256": "857d09cef32234c520bd59d08411b449f5ac04b78d74378c448502592012ba29",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/01-APPROACH_REGISTRY.md.gz",
+        "encoding": "gzip",
+        "sha256": "857d09cef32234c520bd59d08411b449f5ac04b78d74378c448502592012ba29",
+        "decoded_sha256": "dd7145afcc9791c1dd58df4a8e1e4120798a4578ae3a5ce37da53ec33cdcc2da"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block29_findings.md",
+      "original_mode": "100644",
+      "original_blob": "7d4f6b6e073e194e0305d99f8ad4455a91c5b95e",
+      "original_sha256": "48fecc9aa202bba2868f8169d3e63259eb5f3de87e689dc6b258fd7cbe0a7266",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/02-CHECKER_block29_findings.md.gz",
+      "final_sha256": "2c638ede1b64b9d5423d79e97398efafcf2fdce83cb6afa524caf05110cead96",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/02-CHECKER_block29_findings.md.gz",
+        "encoding": "gzip",
+        "sha256": "2c638ede1b64b9d5423d79e97398efafcf2fdce83cb6afa524caf05110cead96",
+        "decoded_sha256": "48fecc9aa202bba2868f8169d3e63259eb5f3de87e689dc6b258fd7cbe0a7266"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block29.md",
+      "original_mode": "100644",
+      "original_blob": "c29cc814690eeb2d3574e0ad83367e8e0f6fe0d7",
+      "original_sha256": "3f9642296b7bb3e15263010cdc54ff30795231bd5bc2932b6ca802df553a3c67",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/03-CLAIM_STATUS_CERTIFICATE_block29.md.gz",
+      "final_sha256": "8ed5405e355813d9395b90cfdbd896c76262aac8a5a3b7a8b31a72731f9de888",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/03-CLAIM_STATUS_CERTIFICATE_block29.md.gz",
+        "encoding": "gzip",
+        "sha256": "8ed5405e355813d9395b90cfdbd896c76262aac8a5a3b7a8b31a72731f9de888",
+        "decoded_sha256": "3f9642296b7bb3e15263010cdc54ff30795231bd5bc2932b6ca802df553a3c67"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block29.md",
+      "original_mode": "100644",
+      "original_blob": "afb19aeb1ca1711b13bcfe5d33954bf94d858919",
+      "original_sha256": "c835f119a34d3cc7f71c432584a5eb93703326c645b362f677120cf8450e5586",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/04-GOAL_block29.md.gz",
+      "final_sha256": "378a1fe8125abd4749ca4889b0fe8f331e514073621332dc88f643ff8bf98f39",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/04-GOAL_block29.md.gz",
+        "encoding": "gzip",
+        "sha256": "378a1fe8125abd4749ca4889b0fe8f331e514073621332dc88f643ff8bf98f39",
+        "decoded_sha256": "c835f119a34d3cc7f71c432584a5eb93703326c645b362f677120cf8450e5586"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_mode": "100644",
+      "original_blob": "3e6f98e945e39a4bcb7615b95142fcc2e28ccffb",
+      "original_sha256": "261d677a4f6188d669f7e7e6c64890e553fd811db8f5ee344aa89bae1bc74e9e",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/05-HANDOFF.md.gz",
+      "final_sha256": "199169ccf962e9fe4c4274b447793eb9074cf24ea4df3b8705c9de77234c14ce",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/05-HANDOFF.md.gz",
+        "encoding": "gzip",
+        "sha256": "199169ccf962e9fe4c4274b447793eb9074cf24ea4df3b8705c9de77234c14ce",
+        "decoded_sha256": "261d677a4f6188d669f7e7e6c64890e553fd811db8f5ee344aa89bae1bc74e9e"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_mode": "100644",
+      "original_blob": "488c355e99ab8b92b66872dd08cf4998247a74c8",
+      "original_sha256": "32c119d68b47154cc03e475755cb6c90d8c5967843df863d4760dda602ff6d10",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/06-OPPORTUNITY_QUEUE.md.gz",
+      "final_sha256": "9f7b952ec26ecdb6b8917b4d6a8f90e9d214f4a91afc37f28da2f1a00ab96f23",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/06-OPPORTUNITY_QUEUE.md.gz",
+        "encoding": "gzip",
+        "sha256": "9f7b952ec26ecdb6b8917b4d6a8f90e9d214f4a91afc37f28da2f1a00ab96f23",
+        "decoded_sha256": "32c119d68b47154cc03e475755cb6c90d8c5967843df863d4760dda602ff6d10"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block29.md",
+      "original_mode": "100644",
+      "original_blob": "e385da4308a7aa0eb037c7b828e0a4e13a945fb6",
+      "original_sha256": "5f34562c560d0967d7ec9fd1f49d48c18dfd18586a7b555a46725dc60c099ac2",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/07-RESULTS_block29.md.gz",
+      "final_sha256": "54601c9c78b6854fff41f45211687701a74f939787a8dcb5671be0632b3d939d",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/07-RESULTS_block29.md.gz",
+        "encoding": "gzip",
+        "sha256": "54601c9c78b6854fff41f45211687701a74f939787a8dcb5671be0632b3d939d",
+        "decoded_sha256": "5f34562c560d0967d7ec9fd1f49d48c18dfd18586a7b555a46725dc60c099ac2"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_mode": "100644",
+      "original_blob": "eb059916ad78e84d3ba5e08694e6a89e90d5d0a0",
+      "original_sha256": "cafee1711697d2038d83ee4cf09fee4dc100ccc6820f8304884732799179ca52",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/08-REVIEW_HISTORY.md.gz",
+      "final_sha256": "e2248333ffc2003d302581c24bb5821e7415189c2706daa67224c8f19e578fa2",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/08-REVIEW_HISTORY.md.gz",
+        "encoding": "gzip",
+        "sha256": "e2248333ffc2003d302581c24bb5821e7415189c2706daa67224c8f19e578fa2",
+        "decoded_sha256": "cafee1711697d2038d83ee4cf09fee4dc100ccc6820f8304884732799179ca52"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_mode": "100644",
+      "original_blob": "3e289ca5ee58b9b5c30017ff86deb2bff0891ac3",
+      "original_sha256": "ff1f9a51339cc84130452754671e6b97d826f3262b45af876723b23f3ac6c93b",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/09-STATE.yaml.gz",
+      "final_sha256": "5ac09f19b043e9994f0d0171edb383996cb7e660f54d73eff7e7c22ea2627063",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/09-STATE.yaml.gz",
+        "encoding": "gzip",
+        "sha256": "5ac09f19b043e9994f0d0171edb383996cb7e660f54d73eff7e7c22ea2627063",
+        "decoded_sha256": "ff1f9a51339cc84130452754671e6b97d826f3262b45af876723b23f3ac6c93b"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_mode": "100644",
+      "original_blob": "d83c7380a85903b9e77634eb6459d4c35115144f",
+      "original_sha256": "999ee5363f974ee16283b397da440c48164d87b2d873955d0a6a5fecba2814a8",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/10-TRACE_GATE.md.gz",
+      "final_sha256": "c6b7406443a249e7c9f1fbe883a83e3e7d75a776f94c3d2994252e785e6d1ed2",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/10-TRACE_GATE.md.gz",
+        "encoding": "gzip",
+        "sha256": "c6b7406443a249e7c9f1fbe883a83e3e7d75a776f94c3d2994252e785e6d1ed2",
+        "decoded_sha256": "999ee5363f974ee16283b397da440c48164d87b2d873955d0a6a5fecba2814a8"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_exact.out.txt",
+      "original_mode": "100644",
+      "original_blob": "73897d37fbf68ed6058b6bc2d61591841b670c7d",
+      "original_sha256": "155b5982756097c248d7647f239fca2ab558354c137cb7ae12b60be6bc7144a7",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/11-supervisor_control_block29_exact.out.txt.gz",
+      "final_sha256": "8b27327e129541631721fe0f4e0bb92eb1c77453fd1886de8369c1da77eb1f55",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/11-supervisor_control_block29_exact.out.txt.gz",
+        "encoding": "gzip",
+        "sha256": "8b27327e129541631721fe0f4e0bb92eb1c77453fd1886de8369c1da77eb1f55",
+        "decoded_sha256": "155b5982756097c248d7647f239fca2ab558354c137cb7ae12b60be6bc7144a7"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_exact.py",
+      "original_mode": "100644",
+      "original_blob": "30715c0a7a480b68b363da34a9c29ef20faae1b8",
+      "original_sha256": "e1be2656d3ac68b2c264e837a08e652ed79917b590fda5d7069ba46e0498a41d",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/12-supervisor_control_block29_exact.py.gz",
+      "final_sha256": "d46232eaca14d0dc92f7f51eb2432771a8ea15054953fca893047470262b4754",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/12-supervisor_control_block29_exact.py.gz",
+        "encoding": "gzip",
+        "sha256": "d46232eaca14d0dc92f7f51eb2432771a8ea15054953fca893047470262b4754",
+        "decoded_sha256": "e1be2656d3ac68b2c264e837a08e652ed79917b590fda5d7069ba46e0498a41d"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_kernel.out.txt",
+      "original_mode": "100644",
+      "original_blob": "6e443f12004ac868044de31e88bc7623983910e9",
+      "original_sha256": "859f60e510f02b3d2bb77c93ba47c39f58620e0655dab64189ad7bc005c1224d",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/13-supervisor_control_block29_kernel.out.txt.gz",
+      "final_sha256": "7394155c39ccd6233e938dc2a2f913ce081686e3ace1e78ecb4ed025747cb821",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/13-supervisor_control_block29_kernel.out.txt.gz",
+        "encoding": "gzip",
+        "sha256": "7394155c39ccd6233e938dc2a2f913ce081686e3ace1e78ecb4ed025747cb821",
+        "decoded_sha256": "859f60e510f02b3d2bb77c93ba47c39f58620e0655dab64189ad7bc005c1224d"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_kernel.py",
+      "original_mode": "100644",
+      "original_blob": "ef954b509434abb54b2cba6fb55ccb17a32e6cdd",
+      "original_sha256": "d7e6c78db326380a097dabb0163c43406c68e880727a5ebb1c70c6a76d75867f",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/14-supervisor_control_block29_kernel.py.gz",
+      "final_sha256": "aa07f0258de983d20a07a41015900f53078af1f683f29c3b2e4cace9942ceaf7",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/14-supervisor_control_block29_kernel.py.gz",
+        "encoding": "gzip",
+        "sha256": "aa07f0258de983d20a07a41015900f53078af1f683f29c3b2e4cace9942ceaf7",
+        "decoded_sha256": "d7e6c78db326380a097dabb0163c43406c68e880727a5ebb1c70c6a76d75867f"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_refuter.out.txt",
+      "original_mode": "100644",
+      "original_blob": "abba41109bb972427c2a4bfd862d6384e268d22e",
+      "original_sha256": "d6203ad40665fb15662dfa264528cd1f76154ab823d1fc25faa89b7cd89846cb",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/15-supervisor_control_block29_refuter.out.txt.gz",
+      "final_sha256": "f4ada474e66f7a8c5a05ce98710e0412962b23380f2d00314167f607169e9f96",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/15-supervisor_control_block29_refuter.out.txt.gz",
+        "encoding": "gzip",
+        "sha256": "f4ada474e66f7a8c5a05ce98710e0412962b23380f2d00314167f607169e9f96",
+        "decoded_sha256": "d6203ad40665fb15662dfa264528cd1f76154ab823d1fc25faa89b7cd89846cb"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_refuter.py",
+      "original_mode": "100644",
+      "original_blob": "37eec6ad4d4011eda676551b9cf5d023f2141cc7",
+      "original_sha256": "674d37831d96bd3731c2a8ebf40800e90047c0fd9e8212afd7c2b556b6bfea06",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/16-supervisor_control_block29_refuter.py.gz",
+      "final_sha256": "77c4a78d30833aa44c7c089a3019ba0dd5704f0e810e23ae5fd3a2f26f93dee7",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/16-supervisor_control_block29_refuter.py.gz",
+        "encoding": "gzip",
+        "sha256": "77c4a78d30833aa44c7c089a3019ba0dd5704f0e810e23ae5fd3a2f26f93dee7",
+        "decoded_sha256": "674d37831d96bd3731c2a8ebf40800e90047c0fd9e8212afd7c2b556b6bfea06"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "original_mode": "100644",
+      "original_blob": "3f24b79f3888a068cf7d4cadc39a27fb14dc0590",
+      "original_sha256": "2373bff52c5922257da4b81b6a6f249b56bda63e9d7f3098efe785eb73e6b32c",
+      "disposition": "narrowed",
+      "final_path": "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "final_sha256": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/17-ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz",
+        "encoding": "gzip",
+        "sha256": "c9e103ad9136141775b33773d4f51d30eedfe195920bba15322b8a9ead2bcf28",
+        "decoded_sha256": "2373bff52c5922257da4b81b6a6f249b56bda63e9d7f3098efe785eb73e6b32c"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_mode": "100644",
+      "original_blob": "bc9bee5c1f840b34dafc8db2df44311ace217eb7",
+      "original_sha256": "3a41b5129a8afd0fcce910c738a064d20b5c900e67ec51d8bcff84c02c8445fc",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/18-citation_graph_manifest.json.gz",
+      "final_sha256": "2abec2b944c759ec88868f40652699ef9454a34415b94e463723f4d86806fda8",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/18-citation_graph_manifest.json.gz",
+        "encoding": "gzip",
+        "sha256": "2abec2b944c759ec88868f40652699ef9454a34415b94e463723f4d86806fda8",
+        "decoded_sha256": "3a41b5129a8afd0fcce910c738a064d20b5c900e67ec51d8bcff84c02c8445fc"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt",
+      "original_mode": "100644",
+      "original_blob": "6ba8804fd59596465e9c6ff6048e624735b080ce",
+      "original_sha256": "8145bb63dd127dc26dad01afc25f795c241fdad79b7b37901740d8b8529bf1f3",
+      "disposition": "historical-recovery-only",
+      "final_path": "docs/work_history/review_loop/pr8173/originals/19-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt.gz",
+      "final_sha256": "f3868586fdec6e47545fd4f2f0c66950f8dce8cc234c0a4108c28d8130af7380",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/19-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt.gz",
+        "encoding": "gzip",
+        "sha256": "f3868586fdec6e47545fd4f2f0c66950f8dce8cc234c0a4108c28d8130af7380",
+        "decoded_sha256": "8145bb63dd127dc26dad01afc25f795c241fdad79b7b37901740d8b8529bf1f3"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    },
+    {
+      "original_path": "scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py",
+      "original_mode": "100755",
+      "original_blob": "cdc166ee940cc254f72d844abb698629c3e47258",
+      "original_sha256": "7d58205f79e430b0b24830a4c8066c301cd9b3a5006241c2e3e48180a19d6ff6",
+      "disposition": "narrowed",
+      "final_path": "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py",
+      "final_sha256": "54441f119d85ebc62de0127366305e8b9871592b33f064f0c0f4d633fdb13682",
+      "recovery": {
+        "path": "docs/work_history/review_loop/pr8173/originals/20-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py.gz",
+        "encoding": "gzip",
+        "sha256": "b92a1afb616f83b1e19068aa751fb8386ca2f306238dad7d4d0fb4f07123323e",
+        "decoded_sha256": "7d58205f79e430b0b24830a4c8066c301cd9b3a5006241c2e3e48180a19d6ff6"
+      },
+      "scope": "Canonical finite identities only; broader source/data/proofs retained as historical recovery, no empirical/asymptotic/negative promotion."
+    }
+  ],
+  "original_disposition_count": 20,
+  "source_count": 26,
+  "accepted_scope": "Three complete supplied finite-law Gaussian covariance, fixed-axis Ward response and projected Parseval identities; no empirical/infinite-volume/physical normalization or negative certification.",
+  "branch_preservation_required": true,
+  "primary_runs_observed": 1,
+  "mathematical_mutation_runs_observed": 5,
+  "simulations_run": 0,
+  "reviewer_science_reruns": 0,
+  "evidence": [
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8173-execution-v2.json",
+      "status": "CAPTURED; no scientific verdict or staging",
+      "elapsed_seconds": 0.820568082970567,
+      "peak_rss": 130695168
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8173-mutation-eigenvalue_wrong-v1.json",
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 0.7775246250093915,
+      "peak_rss": 99811328
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8173-mutation-spin_wave_normalization_wrong-v1.json",
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 0.9388781670131721,
+      "peak_rss": 101416960
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8173-mutation-sum_rule_wrong-v1.json",
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 1.317238042014651,
+      "peak_rss": 100974592
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8173-mutation-integration_by_parts_wrong-v1.json",
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 0.6775335419806652,
+      "peak_rss": 98992128
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8173-mutation-parseval_wrong-v1.json",
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 0.5819287080084905,
+      "peak_rss": 99418112
+    }
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-review-original.json",
+      "sha256": "f40811c50dd4ec1f23945e855850810b610985423e61467660649f54a5751189"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-early-review-v3.json",
+      "sha256": "9ad28d3417d6c1a3b10d92dc7027ee029c39a58d98e042de25ed50f29e04adb0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-cold-review-v1.json",
+      "sha256": "bac7fd67ae26ccc43049d4845c0fc3bd80a6007016eb5e4f3c8782f1e80faf4b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-author-final-freeze.json",
+      "sha256": "5ac4b03b2c92b401eace32b67df83c80ea788a3eb038dfd705fbcf698e108203"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-capture-binding-v2.json",
+      "sha256": "21b9cb200f6101bf853391304c226554737939ee917df9cd6ab75c7a06d87575"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8173/final-verify.py",
+      "sha256": "57e83e21c3d4adf3390b0edb043344084224ccd294dcba10110bf8479bea1c03"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8173/final-verify.stdout.json",
+      "sha256": "72de27f280252734cfd644efd1e1fbc9fe6d02d40eb17532e22c20fdc94c0998"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8173/final-verify.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-execution-v2.json",
+      "sha256": "d839f3f6156b0d4d58ab8664a1fa948f7e7b39eb939f5e33cd8ef5e857bd446c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-mutation-eigenvalue_wrong-v1.json",
+      "sha256": "e22e26cae0ed725cd804df656f59f8a2c766ec457cacd9791aafeecdac21d018"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-mutation-spin_wave_normalization_wrong-v1.json",
+      "sha256": "69bcda3af74c75f14419434d8dd8da21a6b2906dbd1cd8405101bce5e7394ba3"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-mutation-sum_rule_wrong-v1.json",
+      "sha256": "add0765d526f914996aec60d19f710b19a54f413080171317f7c19598f381759"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-mutation-integration_by_parts_wrong-v1.json",
+      "sha256": "b04707dcdb1e1ffefe4be9e8052c534e030eb2d6d4baebea2d7cef670abcc561"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-mutation-parseval_wrong-v1.json",
+      "sha256": "bb5bb12bacf398da55415aaa6be84aa780edcbae03acb0f0e76cba8af89fb931"
+    }
+  ],
+  "report": {
+    "path": "/private/tmp/review-drain-20260915/drain8173-final-review.md",
+    "sha256": "ba380f78007ec348b23842c827841c16cf335347e0e66ce444aa234d4c624760"
+  },
+  "landing_pass": false,
+  "audit_verdict_applied": false,
+  "prospective_context": {
+    "tree": "00545238571bc27fc92574dacfd414ec54af8a04",
+    "pr": 8172,
+    "interaction_blocker": false,
+    "authority": "unlanded context only"
+  },
+  "pending": [
+    "combined integration gates",
+    "exact original-head freshness",
+    "actual-base activation if main advances"
+  ]
+}

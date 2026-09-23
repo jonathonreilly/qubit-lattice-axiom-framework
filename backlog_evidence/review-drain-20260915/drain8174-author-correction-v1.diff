@@ -1,0 +1,537 @@
+--- docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,124 +1,107 @@
+ ---
+-claim_id: admissibility_rule_six_axis_formation_threshold_lifted_by_a_two_level_domination_seeds_and_amplified_nodes_in_the_explanation_tree_bounded_theorem_note_2026-09-16
++claim_id: six_axis_two_level_domination_extended_explanation_tree_and_four_rational_certificates_bounded_theorem_note_2026-09-16
+ claim_type: bounded_theorem
+-claim_scope: "For the three-dimensional monotone formation law of the covariant product rule on the six-axis menu with positive orbit weights (p, q, r), read as the level automaton on Z^2, started from the all-a plane, with the three deviations d_1 = 1 - p^3/(p^3 + q^3 + 4 r^3), d_2 = 1 - p^2 q/(p q (p + q) + 4 r^3), d_3 = 1 - p^2 r/(r (p^2 + q^2) + r^2 (p + q) + 2 r^3): (T1) the dissent indicator is dominated by the two-level noisy majority automaton eta' — a site with at least two 1-predecessors is 1, a site with exactly one is 1 with probability epsilon_2 = max(d_2, d_3), a site with none with probability epsilon_1 = d_1, through i.i.d. uniforms (proved; the closed forms and the monotonicity in p re-checked); (T2) every 1 of eta' at x has an extended explanation tree: a subtree of G through 1-sites with at most one arrow to a predecessor per node, seeds S (no arrow to a predecessor; no 1-predecessor), amplified nodes A (an amplification arrow to their single 1-predecessor), processed nodes (an excuse arrow), with forks = |S| - 1 and excuse arrows E <= 3(|S| - 1) + 2|A| (proved; executed on every configuration of the depth-2 cone, every depth-3 configuration with at most four noise sites and random cones); (T3) P(eta'_x = 1) <= epsilon_1 R(t + epsilon_2/t^2, epsilon_1/t^3) for every t in (0, 1] with the point in the domain of the recursion D = (1+xU)^2(1+3xD)(1+yF)^6, U = (1+xU)^3(1+yF)^6, F = (1+xU)^3(1+3xD)(1+yF)^5, R = (1+xU)^3(1+3xD)(1+yF)^6 (proved); (T4) with exact rational super-solutions, the formation law keeps its plane and its level automaton has at least six invariant laws for p >= 4165 at (p, 1, 2), p >= 2085 at (p, 1, 1), p >= 8330 at (p, 2, 4), p >= 6247 at (p, 1, 3) — a factor 69 below block 25's 285718, 142861, 571436, 428576 (proved; the certificates exact); (T5) the recursion's domain at y = 0 is x < 4/27, so this route needs epsilon_2 < 256/531441, which on (p, 1, 2) fails for every p <= 4150: the route is at its ceiling (proved). Not claimed: the location of the true strength (block 28 locates it at p in (10.5, 11) on (p, 1, 2)); the tree-of-trees refinement that would reach p of order 200 (its overlaps break the budgets; named). No reading, rule or coupling is selected as physical; exact arithmetic throughout the runner."
++claim_scope: "For a supplied six-axis product kernel with p >= q > 0, r > 0, records-only level order, independent conditional site draws and an all-a initial plane: the two-level dissent coupling, complete extended explanation-tree construction with forks=|S|-1 and E<=3(|S|-1)+2|A|, lifted recursion bound, and four exact rational sufficient certificates imply sitewise dissent below 10^-7 and six distinct invariant laws on the stated large-p rays. Positive fixed-point parametrization is also given. No actual threshold, optimal integer, exhaustive route exclusion, physical selection or deferred-science premise is claimed."
+ upstream_dependencies:
+   - minimal_axioms
+   - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
+-runner: scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py
++  - admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_of_the_noisy_level_automaton_explicit_threshold_six_invariant_laws_bounded_theorem_note_2026-09-16
++runner: scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py
+ ---
+ 
+-# The six-axis formation threshold lifted by a two-level domination: seeds and amplified nodes in the explanation tree, `p ≥ 4165` at `(p, 1, 2)` from `285718`, and the route's ceiling
++# Six-axis two-level domination, extended explanation trees and four rational certificates
+ 
+ **Date:** 2026-09-16
+ **Type:** bounded_theorem
+-**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++**Status:** proposed_retained
++**Audit authority:** independent audit lane only.
++**Primary runner:** [six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py](../scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py)
++**Planned cache:** [six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.txt](../logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.txt)
+ 
+ ## Result up front
+ 
+-Block 25 proves that the six-axis formation law keeps a plane of identical
+-records once the rule's preference for agreement is strong enough, with the
+-region `p ≥ 285718` at weights `(p, 1, 2)`; block 28 locates the actual
+-strength at `p ∈ (10.5, 11)`. Block 25's count of explanation trees is at its
+-own edge, so the slack is elsewhere: in the step that dominates the formation
+-law by a majority automaton with noise. That step uses the worst case over all
+-predecessor triples with two agreeing records — a dissent probability of order
+-`2/p` — while in the ordered state almost every site sees three agreeing
+-predecessors and dissents with probability only `d_1 ≈ 33/p³`.
+-
+-This note replaces the single noise level by two. A site whose three
+-predecessors all agree is a *seed* of dissent with probability `ε₁ = d_1`; a
+-site with exactly one dissenting predecessor is *amplified* with probability
+-`ε₂ = max(d_2, d_3)`; a site with two dissenting predecessors dissents by
+-majority. The explanation tree of block 25 is extended to carry both: seeds
+-are its leaves, amplified nodes sit inside its clusters with an arrow to their
+-single dissenting predecessor, and the potential that drives the construction
+-loses one unit whenever an amplified node is a pole for the charge along its
+-own arrow. The accounting closes with `forks = |S| − 1` and
+-`E ≤ 3(|S| − 1) + 2|A|`, the same generating-function count applies with the
+-amplification arrows sharing the arrow slots, and the ordered phase follows
+-wherever `(t + ε₂/t², ε₁/t³)` lies in the recursion's domain. With exact
+-certificates this gives `p ≥ 4165` at `(p, 1, 2)` — a factor `69` below block
+-25 on every line of weights. The route's ceiling is also exact: the domain
+-ends at `x = 4/27`, so it needs `ε₂ < 256/531441`, which on `(p, 1, 2)` fails
+-for `p ≤ 4150`. What remains between `4165` and the located `11` is a factor
+-`380`, and the note names the two places it sits: the two excuse arrows an
+-amplified pole may cost (the executed trees never use more than two thirds of
+-one), and the overcounting of sub-structures inherent in the union bound.
+-
+-In plain words: the earlier proof treated every record as if it could be
+-tempted to dissent by the worst company it might keep; the new proof charges
+-each dissent by the company it actually keeps — a dissent among three
+-agreeing neighbours is rare, and only a dissent next to an existing dissent is
+-cheap. That brings the proved strength from three hundred thousand to four
+-thousand, while the truth is eleven.
+-
+-Exactly: the two-level domination (T1); the extended tree with its budgets
+-(T2); the bound (T3); the certificates at four weight pairs (T4); the ceiling
+-(T5). Executed with exact arithmetic: 20 checks, 11 mutations; the construction
+-run on `4290` configurations.
++Separating rare seed dissent from amplification of existing dissent gives four exact sufficient bounds. The complete coupling and tree argument follows below, with its supplied hypotheses. The four rational certificates improve the earlier sufficient integers by at least 68 (approximately 69). They do not locate an actual transition. Fresh corrected-source execution is pending; the source defines 17 checks and 11 mathematical mutations. Historical outputs remain exact recovery, not a fresh result.
+ 
+ ## Machine status and trace
+ 
+ ```yaml
+-actual_current_surface_status: bounded-support
++actual_current_surface_status: proposed_retained
+ target_claim_type: bounded_theorem
+ trace_class: upstream_support
+ target_claim_id: null
+-target_blocker_text: "the campaign queue's first item after block 28: the six-axis order threshold toward the located strength (285718 proved against 11 located at (p, 1, 2))"
+-source_of_blocker_text: handoff
++target_blocker_text: "Sufficient stability bounds for a supplied level product process"
++source_of_blocker_text: source_note
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the threshold lifted to p >= 4165 at (p, 1, 2) (2085, 8330, 6247 on the other lines) by the two-level domination; the route's ceiling reached (epsilon_2 < 256/531441). Open: the bad-pair accounting (2 excuse arrows per amplified pole, executed at most 2/3) — a proof of E <= 3(|S| - 1) + |A| would give p of order 500; the tree-of-trees refinement (weight epsilon_2 with no bad pairs, p of order 200) blocked by overlaps; the count's overcounting of sub-structures. Consumers: the campaign's decision record; #8093's assembly"
+-conditional_surface_status: "T1-T5 proved for every positive weight triple (T4 with content on the four lines at the stated couplings); the construction executed exhaustively on the depth-2 cone and on all depth-3 configurations with at most four noise sites plus random cones; conditional on the records-only reading, positivity, the six-axis menu and the monotone order as supplied conditions; three standard mathematical imports named at definition level"
++next_trace_action: "Independent affected-source review and bounded evidence capture; sharper counting remains research"
++conditional_surface_status: "p >= q > 0, r > 0; supplied six-axis menu, records-only level order, independent conditional updates and all-a initial plane"
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
++bare_retained_allowed: false
+ ```
+ 
+ ## Premises and declared objects
+ 
+-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule and its one-site conditional given a recorded set; the monotone formation order, its level reading, the coarse-graining and the explanation-tree construction are declared and re-proved below (blocks 05, 08, 12, 25, 28 — open PRs #8003, #8138, #8146, #8168, #8172 — are referenced as evidence addresses only). All proposed and unaudited.
++The [axiom memo](MINIMAL_AXIOMS_2026-06-29.md) supplies the lattice, one-site possibility, admissibility and fixed-record vocabulary. The [product-rule parent](ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md) defines the six-axis orbit weights and the records-only product conditional. The [single-noise formation theorem](ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md) supplies the earlier sufficient-certificate comparison and the pole-transport construction reproduced completely below. These are conditional source results, not physical rule selection. The registered primitives supply units, graining and pointwise realized-state evaluation at their own scope; no choice of these weights, menu, initial state or process is attributed to them.
++
++All product weights and all updates here are supplied mathematical hypotheses: p >= q > 0, r > 0; records form in level order, with independent draws at distinct sites conditional on the previous level; the initial plane is all a. Weak compactness on a finite-alphabet product space and, only for the optional extreme-law conclusion, stationary barycentric decomposition are standard mathematical imports.
+ 
+ Declared objects.
+-- **The rule, level time, the level automaton, the coarse-graining, the deviations.** As in block 25 (PR #8168), restated: the six-axis menu with `φ(v, v') = p, q, r` for equal, antipodal, orthogonal pairs; sites `x ∈ Z³`, level `τ(x) = x_1 + x_2 + x_3`, predecessors `x − e_j`, siblings `x ± (e_i − e_j)`; records form level by level from `K(· | v_{x−e_1}, v_{x−e_2}, v_{x−e_3}) ∝ Π_j φ(v, v_{x−e_j})`, level `0` all equal to `a`; `ξ_x = 1{v_x ≠ a}`; `d_1 = 1 − K(a | a, a, a)`, `d_2 = 1 − K(a | a, a, −a)`, `d_3 = 1 − K(a | a, a, b)` for `b ⊥ a`, in the closed forms of the front matter; `ε₁ := d_1`, `ε₂ := max(d_2, d_3)`.
++- **The rule, level time, the level automaton, the coarse-graining, the deviations.** Supplied model: the six-axis menu with `φ(v, v') = p, q, r` for equal, antipodal, orthogonal pairs; sites `x ∈ Z³`, level `τ(x) = x_1 + x_2 + x_3`, predecessors `x − e_j`, siblings `x ± (e_i − e_j)`; records form level by level from `K(· | v_{x−e_1}, v_{x−e_2}, v_{x−e_3}) ∝ Π_j φ(v, v_{x−e_j})`, level `0` all equal to `a`; `ξ_x = 1{v_x ≠ a}`; `d_1 = 1 − K(a | a, a, a)`, `d_2 = 1 − K(a | a, a, −a)`, `d_3 = 1 − K(a | a, a, b)` for `b ⊥ a`, in the closed forms of the front matter; `ε₁ := d_1`, `ε₂ := max(d_2, d_3)`.
+ - **The two-level noisy majority automaton `η'`.** With i.i.d. uniforms `U_x` on levels `≥ 1` and `η' ≡ 0` on levels `≤ 0`: `η'_x = 1` if at least two of `η'_{x−e_j}` are `1`; `η'_x = 1{U_x < ε₂}` if exactly one is `1`; `η'_x = 1{U_x < ε₁}` if none is. A **1-site** has `η'_x = 1`; a **seed** is a 1-site with no 1-predecessor; an **amplified site** is a 1-site with exactly one 1-predecessor (its **amplification direction** `j` is the index of that predecessor); a **processed-type site** has at least two, and its **winning pair** is the pair of 1-predecessors with the two smallest indices.
+-- **The graph `G`, the functionals, spanned sets, the excuse.** As in block 25: arrows `{x, x − e_j}`, forks `{x, x ± (e_i − e_j)}`, degree `12`; `M_k(z) = z_k − τ(z)/3`; `Span(P, v_1, v_2, v_3) = Σ_k M_k(v_k)`; for a processed-type `v`, `Excuse_k(v)` is the winning-pair member with index `≠ k` (the smaller if both), with `M_k(Excuse_k(v)) = M_k(v) + 1/3`; for an amplified `v` with direction `j`, `Excuse_k(v) := v − e_j` for every `k`, with `M_k(v − e_j) − M_k(v) = 1/3 − δ_{jk}`; the pair `(v, k)` is **bad** if `v` is amplified with direction `k`.
++- **The graph `G`, the functionals, spanned sets, the excuse.** Definitions: arrows `{x, x − e_j}`, forks `{x, x ± (e_i − e_j)}`, degree `12`; `M_k(z) = z_k − τ(z)/3`; `Span(P, v_1, v_2, v_3) = Σ_k M_k(v_k)`; for a processed-type `v`, `Excuse_k(v)` is the winning-pair member with index `≠ k` (the smaller if both), with `M_k(Excuse_k(v)) = M_k(v) + 1/3`; for an amplified `v` with direction `j`, `Excuse_k(v) := v − e_j` for every `k`, with `M_k(v − e_j) − M_k(v) = 1/3 − δ_{jk}`; the pair `(v, k)` is **bad** if `v` is amplified with direction `k`.
+ - **The extended arrow graph and clusters.** At level `s`, vertices the 1-sites of levels `≤ s`, an edge from every processed-type or amplified site to each of its 1-predecessors; a **cluster at level `s`** is the intersection with level `s` of a connected component. A seed is a singleton cluster.
+ - **Extended explanation trees.** Subtrees `T` of `G` containing `x` with at most one arrow to a predecessor at each node; `S(T)` the nodes without such an arrow, `A(T)` the nodes whose arrow to a predecessor is labelled an amplification arrow, `E(T)` the number of excuse arrows, `F(T)` the number of forks; `𝓔` the family with `F = |S| − 1` and `E ≤ 3(|S| − 1) + 2|A|`.
+-- **The recursion and its domain.** `D = (1 + xU)²(1 + 3xD)(1 + yF)⁶`, `U = (1 + xU)³(1 + yF)⁶`, `F = (1 + xU)³(1 + 3xD)(1 + yF)⁵`, `R = (1 + xU)³(1 + 3xD)(1 + yF)⁶` (block 25's count, restated in T3); its **domain** `𝒟` is the set of `(x, y) ≥ 0` at which the iteration from `(1, 1, 1)` stays bounded; a **super-solution** at `(x, y)` is a triple `(D̄, Ū, F̄) ≥ 1` dominating its own right sides.
++- **The recursion and its domain.** `D = (1 + xU)²(1 + 3xD)(1 + yF)⁶`, `U = (1 + xU)³(1 + yF)⁶`, `F = (1 + xU)³(1 + 3xD)(1 + yF)⁵`, `R = (1 + xU)³(1 + 3xD)(1 + yF)⁶` (restated in the count theorem below); its **domain** `𝒟` is the set of `(x, y) ≥ 0` at which the iteration from `(1, 1, 1)` stays bounded; a **super-solution** at `(x, y)` is a triple `(D̄, Ū, F̄) ≥ 1` dominating its own right sides.
+ 
+-## Prior art and what is new
++## Theorem T1 — two-level domination on the stated weight domain
+ 
+-Toom's stability theorem for eroders under small noise, in Gács's exposition of the Berman–Simon proof, is the route block 25 carried in level-time coordinates with an explicit threshold; block 12 supplied the domination of the formation law by the noisy majority automaton at the worst-case noise, and block 25 sharpened the count to its edge. None is used as authority: the construction is restated and re-proved here in its extended form. What is new: (i) the two-level domination (T1), which separates seeding from amplification; (ii) the extended explanation tree with amplified nodes inside the clusters, the bad pairs, and the closed accounting `forks = |S| − 1`, `E ≤ 3(|S| − 1) + 2|A|` (T2); (iii) the bound with the amplification arrows in the arrow slots (T3) and the region with exact certificates, a factor `69` below block 25 on every line (T4); (iv) the route's exact ceiling `ε₂ < 256/531441` with the two named places where the remaining factor `380` to the located strength sits (T5, N1).
++**Statement.** For p >= q > 0 and r > 0 the deviations below satisfy d1 <= d2 <= max(d2,d3). Each di is strictly decreasing in p for all p,q,r > 0. Under the supplied conditionally independent level product law, the dissent indicator from the all-a plane is coupled below the two-level automaton.
+ 
+-## Exact target and obligation graph
++**Proof of formulas and monotonicity.** Sum the six product weights for triples (a,a,a), (a,a,−a), (a,a,b), b perpendicular to a. Their aligned probabilities are respectively p³/(p³+q³+4r³), p²q/(pq(p+q)+4r³), and p²/(p²+q²+r(p+q)+2r²). Therefore
+ 
+-| Obligation | Statement | Route | Runner family |
+-|---|---|---|---|
+-| T1 | `ξ ≤ η'` from the all-`a` plane; `ε₁ = d_1`, `ε₂ = max(d_2, d_3)`, decreasing in `p` | block 12's coupling, refined by the predecessors' state | B |
+-| T2 | the extended tree: `F = |S| − 1`, `E ≤ 3(|S| − 1) + 2|A|` | block 25's construction with amplified poles; bad pairs; the potential | C |
+-| T3 | `P(η'_x = 1) ≤ ε₁·R(t + ε₂/t², ε₁/t³)` | the lift to the typed tree; the budget in the exponent | D |
+-| T4 | the region on four lines; six invariant laws | exact super-solutions; monotonicity; the Cesàro route | D |
+-| T5 | the ceiling `x < 4/27`, `ε₂ < 256/531441`; `p > 4150` on `(p, 1, 2)` | tangency of `U = (1 + xU)³`; a one-variable maximum | E |
++```
++d1 = 1 − p³/(p³+q³+4r³),
++d2 = 1 − p²q/(pq(p+q)+4r³),
++d3 = 1 − p²/(p²+q²+r(p+q)+2r²).
++∂p d1 = −3p²(q³+4r³)/(p³+q³+4r³)²,
++∂p d2 = −(q³p²+8qr³p)/(pq(p+q)+4r³)²,
++∂p d3 = −p(rp+2q²+2rq+4r²)/(p²+q²+r(p+q)+2r²)².
++```
+ 
+-## Theorem T1 — the two-level domination
++Every derivative is strictly negative. Put A=p³+q³+4r³ and B=pq(p+q)+4r³. Direct subtraction gives
+ 
+-**Statement.** (a) `d_1, d_2, d_3` have the closed forms of the front matter and are strictly decreasing in `p > 0` at fixed `q, r > 0`; `d_1 ≤ max(d_2, d_3)`. (b) There is a coupling of the formation law from the all-`a` plane with `η'` such that `ξ_x ≤ η'_x` at every site; hence `P(v_x ≠ a) ≤ P(η'_x = 1)`.
++```
++d2 − d1 = p²(p−q)[q²(p+q)+4r³]/(A B) >= 0.
++```
+ 
+-**Proof.** (a) Block 25's T0(a)–(b), re-executed (B1–B2); `d_1 ≤ d_3` because `K(a | a, a, a) ≥ K(a | a, a, b)` (the normalizer with three factors `p` is smaller relative to `p³` than that with `p, p, r` relative to `p²r`: both are `1 − (ratio)` with the aligned triple's dissent mass `q³ + 4r³` over `p³` against `(rq² + r²(p + q) + 2r³)/(p²r) ≥ 4r³/p³` — executed at the four lines, B2). (b) Build both processes level by level given the previous level with `ξ ≤ η'`. At `x`: if at least two `η'`-predecessors are `1`, set `η'_x = 1 ≥ ξ_x`. If exactly one is `1`, at most one `ξ`-predecessor is `1`, so at least two of `v`'s predecessors equal `a` and `P(ξ_x = 1 | past) = 1 − K(a | preds) ≤ max(d_1, d_2, d_3) = ε₂`; draw `ξ_x` and `η'_x = 1{U_x < ε₂}` monotonically from one uniform. If none is `1`, all three of `v`'s predecessors equal `a` and `P(ξ_x = 1 | past) = d_1 = ε₁`; couple with `1{U_x < ε₁}`. Sites of a level are drawn independently given the previous level in both processes. ∎
++Here p >= q is essential: at (p,q,r)=(1/10,1,1), d1=5000/5001 while d2=d3=410/411. This exact example explains the scope correction; it does not invalidate the four large-p certificates.
++
++**Proof of the coupling.** Build both processes level by level with independent uniforms at different sites. If at least two comparison predecessors dissent, set the comparison value to one and it dominates. If exactly one comparison predecessor dissents, at most one actual predecessor differs from a. The actual dissent probability is one of d1,d2,d3, hence at most epsilon2=max(d2,d3) by the factorization. If no comparison predecessor dissents, all actual predecessors equal a and dissent has probability epsilon1=d1. Draw actual dissent as 1{U<d} and comparison dissent as 1{U<epsilon_i}. Conditional on actual dissent, use an additional independent draw for the five non-a possibilities to recover the entire six-state product kernel. This constructs the correct conditionally independent laws and preserves domination by induction. Finite ancestor cones make the induction local at every infinite-plane site. ∎
+ 
+ ## Theorem T2 — the extended explanation tree
+ 
+ **Statement.** Let `η'_x = 1`. Then there is `T ∈ 𝓔` rooted at `x` all of whose nodes are 1-sites, such that every node of `S(T)` is a seed, every node of `A(T)` is an amplified site whose amplification arrow ends at its single 1-predecessor, and every other node is processed-type with its excuse arrow to a 1-predecessor.
+ 
+-**Proof.** The construction is block 25's with three changes: the arrow graph links amplified sites to their single 1-predecessor, so they lie inside clusters; the excuse of an amplified pole is that predecessor, for every charge; and bad amplified poles are always kept. The ingredients, restated.
++**Finite localization before refinement.** Fix a site x at level n > 0. Its ancestor cone down to level zero consists of the finitely many x − a with a in the nonnegative integer triples and sum(a) <= n. Every positive-level site's three predecessors belong to the cone. Set sites outside it to zero for this construction and keep the prescribed zero level; induction in level shows that all values in this cone equal the values of the infinite process. Apply the cluster construction to this finite directed graph. Restricting a cluster in this way changes no predecessor of any included positive-level point, hence no winning pair, seed or amplified classification used by the construction. All paths and shortest paths below are now finite. The resulting finite explanation tree embeds in the original infinite graph. This supplies the infinite-process use without assuming finite global clusters.
++
++**Proof.** The extended construction has three features: the arrow graph links amplified sites to their single 1-predecessor, so they lie inside clusters; the excuse of an amplified pole is that predecessor, for every charge; and bad amplified poles are always kept. The ingredients, restated.
+ *(T2.1, clusters and the cause graph.)* For a cluster `K` at level `s` with no seed, let `V_K` be the clusters at level `s − 1` containing a 1-predecessor of a point of `K`, two of them adjacent if a fork joins a point of one to a point of the other; this graph is connected and every `Excuse_k(v)`, `v ∈ K`, lies in a cluster of `V_K`. Proof: two points of `K` are joined by a path through 1-sites of levels `≤ s`; cut it at its visits to level `s`; between visits it stays below and its end predecessors are in one cluster of level `s − 1`; at a visit `k` it arrives from a 1-predecessor `r` and leaves to a 1-predecessor `r'` (equal if `k` is amplified), and `r, r'` are siblings or equal, hence forked or in one cluster; any cluster of `V_K` contains a predecessor of some `k ∈ K`, a sibling of the one the path uses. The excuse of a point is one of its 1-predecessors.
+-*(T2.2, the excuse identity.)* For a spanned set `(P, v_1, v_2, v_3)` with no seed pole, `Σ_k M_k(Excuse_k(v_k)) = Span + 1 − b`, where `b` is the number of bad pairs `(v_k, k)`: each processed-type pole contributes `+1/3` for its charge, an amplified pole `+1/3` for the charges other than its direction and `−2/3` for its direction (C1). A fork pair has `Size = 1`, so a spanned set on it has `Span ≤ 1` (block 25's T2(b)).
+-*(T2.3, the spanning lemma.)* Block 25's T3 verbatim: for a spanned set `(L, u_1, u_2, u_3)`, disjoint clusters `𝓒`, forks `𝓕` between distinct clusters with the bipartite cluster–fork graph connected and `u_k ∈ C_k ∈ 𝓒`, there is a minimal subtree `𝒯` through `C_1, C_2, C_3` and poles `u_{X,k} ∈ X' ⊂ X` for `X ∈ 𝒯` with `Σ_{X∈𝒯} Σ_k M_k(u_{X,k}) = Σ_k M_k(u_k)`, `X'` the transported poles and meeting points, every point of `X'` a pole of `X`, `X' = X` for a fork. (Its proof — shortest paths, pruning, the transport of poles toward the terminals, and the count `#{X ∈ I(v) : u_{X,k} = v} = |I(v)| − 1 + [v = u_k]` — does not use the nature of the poles and is unchanged; it is asserted at every refinement executed, C2–C4.)
+-*(T2.4, refinement and accounting.)* A partial tree: unprocessed spanned clusters `𝒰`, processed points, and edges (excuse arrows, amplification arrows, forks) whose cluster-contracted graph is a tree; potential `Φ = Σ_𝒰 Span + #forks`. Start with `({x}, x, x, x)`, `Φ = 0`. While an unprocessed cluster `(K, v)` has a non-seed pole (then `K` has no seed, a seed being a singleton): put `u_k = Excuse_k(v_k)`, `b` the number of bad pairs; apply T2.3 to `(∪V_K, u_1, u_2, u_3)` with the clusters of `V_K` and one fork per adjacent pair; add the clusters of `𝒯` with their poles to `𝒰` and the forks of `𝒯` as edges; the *kept poles* are the distinct points among `v_1, v_2, v_3` that are incident to an existing edge or are bad amplified poles (if none, `v_1`); for a kept processed-type `w` add the excuse arrow `{w, u_{k(w)}}`, `k(w)` the least `k` with `v_k = w`; for a kept amplified `w` add the amplification arrow `{w, w − e_j}` to its predecessor; delete `(K, v)`. *Tree property:* as in block 25 — `K` is replaced by `𝒯` with the kept points attached by one arrow each; a cluster at level `s − 1` has all its level-`s` parents in one cluster, now also for amplified parents (they are linked to their predecessor), so no cluster is added twice; kept points are processed once. *The potential:* by T2.2 and T2.3, `Σ_{X∈𝒯} Span(X) = Span(K) + 1 − b`, and each fork counts `1` against a span of at most `1`, so `Φ` rises by at least `1 − b`. *Termination:* levels descend; every 1-site at level `1` is a seed. *The count:* let `S` be the seeds left as singleton clusters, `A` the kept amplified points, `B = Σ b` over refinements. `Φ` ends at `#forks` and rose by at least `1 − b` per refinement from `0`, so `#refinements ≤ #forks + B`. Contract every arrow of either kind into its lower point: each processed point and each amplified point merges, along its own arrow and the arrows below, into a seed; the forks then form a tree on the seeds, so `#forks = |S| − 1`. A bad pair is an amplified pole in its own direction; a point is a pole of at most one refined cluster (its own) and is bad for at most one charge, and bad amplified poles are kept, so `B ≤ |A|`. Arrows number at most three per refinement (one per kept pole) and every kept amplified pole carries an amplification arrow, so `E + |A| ≤ 3(|S| − 1 + B) ≤ 3(|S| − 1) + 3|A|`, i.e. `E ≤ 3(|S| − 1) + 2|A|`. Every node has at most one arrow to a predecessor (its own), the nodes without one are the seeds, and the amplified nodes' arrows end at their single 1-predecessor. ∎
++*(T2.2, the excuse identity.)* For a spanned set `(P, v_1, v_2, v_3)` with no seed pole, `Σ_k M_k(Excuse_k(v_k)) = Span + 1 − b`, where `b` is the number of bad pairs `(v_k, k)`: each processed-type pole contributes `+1/3` for its charge, an amplified pole `+1/3` for the charges other than its direction and `−2/3` for its direction (C1). A fork pair has `Size = 1`, so a spanned set on it has `Span ≤ 1` (because the coordinate maxima on a sibling pair sum to one).
++*(T2.3, the spanning lemma and complete pole transport.)*
+ 
+-Executed (C2–C4): on every noise configuration of the depth-2 backward cone (`932` explained), on every depth-3 configuration with at most four noise sites (`2321`), and on random cones of depth `3`–`8`, the extended construction never fails, the identity `Σ_X Span(X) = Span(K) + 1 − b` holds at every refinement, the point graph is a tree of arrows and forks through 1-sites, seeds have no 1-predecessor, amplified nodes have exactly one at their arrow's end, `#forks = |S| − 1`, `#refinements ≤ |S| − 1 + B`, `B ≤ |A|`, and `E ≤ 3(|S| − 1) + 2|A|`; the largest executed value of `(E − 3(|S| − 1))/|A|` is `2/3`.
++
++**Statement.** Let `(L, u_1, u_2, u_3)` be a spanned set. Let `𝓒` be a family of pairwise disjoint subsets of `L` (**clusters**) and `𝓕` a family of two-point subsets of `L` (**forks**), each fork meeting two distinct clusters in one point each, such that the bipartite graph `B` (a cluster adjacent to the forks that meet it) is connected and each pole `u_k` lies in a cluster `C_k ∈ 𝓒`. Then there is a subtree `𝒯` of `B` containing `C_1, C_2, C_3` and minimal (every leaf of `𝒯` is one of the `C_k`; in particular every fork in `𝒯` has both its clusters in `𝒯`), and for each `X ∈ 𝒯` a point set `X' ⊂ X` and poles `u_{X,1}, u_{X,2}, u_{X,3} ∈ X'` such that
++```
++Σ_{X ∈ 𝒯} Σ_k M_k(u_{X,k}) = Σ_k M_k(u_k),
++```
++`X'` consists of `u_k` (when `X = C_k`) and the meeting points of `X` with its neighbours in `𝒯`, every point of `X'` is a pole of `X`, and `X' = X` for a fork.
++
++**Proof.** *Construction.* Take a shortest path in `B` from `C_1` to `C_2`, then a shortest path from `C_3` to a vertex of that path, and delete non-terminal leaves until none remain: a minimal subtree `𝒯` (a fork in `𝒯` cannot be a leaf, so it keeps both its clusters). For adjacent `X, Y ∈ 𝒯` let `m(X, Y)` be their unique common point. Put `X' = {u_k : X = C_k} ∪ {m(X, Y) : Y ∼ X in 𝒯}`. For each `k`: if `u_k ∈ X'` put `u_{X,k} = u_k`; otherwise let `Y` be the neighbour of `X` on the path of `𝒯` from `X` to `C_k` and put `u_{X,k} = m(X, Y)`. *Every point of `X'` is a pole.* A meeting point `m(X, Y)`: removing `X` leaves a subtree through `Y` whose leaves are terminals, so some `C_k` lies beyond `Y`; then either `u_k ∉ X'` and `u_{X,k} = m(X, Y)`, or `u_k ∈ X'`, which forces `u_k = m(X, Y)` (a fork containing `u_k` meets `C_k` and `X`, so the path from `X` to `C_k` uses that fork). *The identity.* Let `V = ∪_X X'` and, for `v ∈ V`, `I(v) = {X ∈ 𝒯 : v ∈ X'}`: the unique cluster `C ∋ v` and the forks of `𝒯` containing `v`, each of which is adjacent to `C` in `𝒯` (a fork in `𝒯` has degree two). Fix `v` and a charge `k`. If `v = u_k`, then `u_{X,k} = v` for every `X ∈ I(v)`. If `v ≠ u_k`, let `Y_0` be the neighbour of `C` toward `C_k` (or `C = C_k`): the forks `f ∋ v` of `I(v)` other than `Y_0` have `u_{f,k} = m(f, C) = v`; and, when `v ∈ Y_0`, exactly one of `C` and `Y_0` has its pole at `v` (`C` iff `v ∈ Y_0`, in which case `Y_0`'s pole is its other point; if `C = C_k`, `C`'s pole is `u_k ≠ v` and all forks have theirs at `v`). When `v ∉ Y_0`, neither contributes at `v` and the other incident forks supply `|I(v)| − 1`. So `#{X ∈ I(v) : u_{X,k} = v} = |I(v)| − 1 + [v = u_k]`. Hence `Σ_X Span(X) = Σ_v Σ_k M_k(v)(|I(v)| − 1 + [v = u_k]) = Σ_v (|I(v)| − 1)·0 + Σ_k M_k(u_k)`. ∎
++
++
++*(T2.4, refinement and accounting.)* A partial tree: unprocessed spanned clusters `𝒰`, processed points, and edges (excuse arrows, amplification arrows, forks) whose cluster-contracted graph is a tree; potential `Φ = Σ_𝒰 Span + #forks`. Start with `({x}, x, x, x)`, `Φ = 0`. While an unprocessed cluster `(K, v)` has a non-seed pole (then `K` has no seed, a seed being a singleton): put `u_k = Excuse_k(v_k)`, `b` the number of bad pairs; apply T2.3 to `(∪V_K, u_1, u_2, u_3)` with the clusters of `V_K` and one fork per adjacent pair; add the clusters of `𝒯` with their poles to `𝒰` and the forks of `𝒯` as edges; the *kept poles* are the distinct points among `v_1, v_2, v_3` that are incident to an existing edge or are bad amplified poles (if none, `v_1`); for a kept processed-type `w` add the excuse arrow `{w, u_{k(w)}}`, `k(w)` the least `k` with `v_k = w`; for a kept amplified `w` add the amplification arrow `{w, w − e_j}` to its predecessor; delete `(K, v)`. *Tree property:* under the following invariant — `K` is replaced by `𝒯` with the kept points attached by one arrow each; a cluster at level `s − 1` has all its level-`s` parents in one cluster, now also for amplified parents (they are linked to their predecessor), so no cluster is added twice; kept points are processed once. *The potential:* by T2.2 and T2.3, `Σ_{X∈𝒯} Span(X) = Span(K) + 1 − b`, and each fork counts `1` against a span of at most `1`, so `Φ` rises by at least `1 − b`. *Termination:* levels descend; every 1-site at level `1` is a seed. *The count:* let `S` be the seeds left as singleton clusters, `A` the kept amplified points, `B = Σ b` over refinements. `Φ` ends at `#forks` and rose by at least `1 − b` per refinement from `0`, so `#refinements ≤ #forks + B`. Contract every arrow of either kind into its lower point: each processed point and each amplified point merges, along its own arrow and the arrows below, into a seed; the forks then form a tree on the seeds, so `#forks = |S| − 1`. A bad pair is an amplified pole in its own direction; a point is a pole of at most one refined cluster (its own) and is bad for at most one charge, and bad amplified poles are kept, so `B ≤ |A|`. Arrows number at most three per refinement (one per kept pole) and every kept amplified pole carries an amplification arrow, so `E + |A| ≤ 3(|S| − 1 + B) ≤ 3(|S| − 1) + 3|A|`, i.e. `E ≤ 3(|S| − 1) + 2|A|`. Every node has at most one arrow to a predecessor (its own), the nodes without one are the seeds, and the amplified nodes' arrows end at their single 1-predecessor. ∎
+ 
+ ## Theorem T3 — the count and the bound
+ 
+@@ -127,87 +110,74 @@
+ P(η'_x = 1) ≤ ε₁ · R(t + ε₂/t², ε₁/t³).
+ ```
+ 
+-**Proof.** By T2 and independence of the uniforms at distinct sites, `P(η'_x = 1) ≤ Σ_{T∈𝓔} ε₁^{|S(T)|} ε₂^{|A(T)|}` (a seed has `U < ε₁`, an amplified node `U < ε₂`). For `T ∈ 𝓔`, `|S| = F + 1` and `E ≤ 3F + 2|A|`, so with `t ≤ 1`: `ε₁^{|S|} ε₂^{|A|} = ε₁·ε₁^{F}·ε₂^{|A|} ≤ ε₁ · t^{E}·(ε₁/t³)^{F}·(ε₂/t²)^{|A|}`. The right side is the weight of `T` with `t` per excuse arrow, `ε₂/t²` per amplification arrow and `ε₁/t³` per fork; both kinds of arrow are arrows of `G` (an edge to a predecessor), so in the lift of `T` to the typed regular tree (block 25's lift: the words of edge types along root paths, injective, with at most one *down* child per vertex and none after an *up* letter) an arrow slot carries the total weight `t + ε₂/t²`. The weight sum over all admissible subtrees of the typed tree is `lim_h R_h(x, y)` with `x = t + ε₂/t²`, `y = ε₁/t³`, where `R_h` are the recursion's height-`h` truncations from `(1, 1, 1)`; a super-solution bounds every `R_h` by induction (the right sides are increasing), so the sum is at most `R̄`, and `(x, y) ∈ 𝒟` is exactly the existence of a bounded iteration. ∎ (D1: the lift's slot structure re-executed on the enumerated subtrees with `≤ 4` edges as in block 25; D2: the certificates.)
++**Proof.** By T2 and independence of the uniforms at distinct sites, `P(η'_x = 1) ≤ Σ_{T∈𝓔} ε₁^{|S(T)|} ε₂^{|A(T)|}` (a seed has `U < ε₁`, an amplified node `U < ε₂`). For `T ∈ 𝓔`, `|S| = F + 1` and `E ≤ 3F + 2|A|`, so with `t ≤ 1`: `ε₁^{|S|} ε₂^{|A|} = ε₁·ε₁^{F}·ε₂^{|A|} ≤ ε₁ · t^{E}·(ε₁/t³)^{F}·(ε₂/t²)^{|A|}`. The right side is the weight of `T` with `t` per excuse arrow, `ε₂/t²` per amplification arrow and `ε₁/t³` per fork; both kinds of arrow are arrows of `G` (an edge to a predecessor), so in the lift of `T` to the typed regular tree (the words of edge types along root paths, injective, with at most one *down* child per vertex and none after an *up* letter) an arrow slot carries the total weight `t + ε₂/t²`. The weight sum over all admissible subtrees of the typed tree is `lim_h R_h(x, y)` with `x = t + ε₂/t²`, `y = ε₁/t³`, where `R_h` are the recursion's height-`h` truncations from `(1, 1, 1)`; a super-solution bounds every `R_h` by induction (the right sides are increasing), so the sum is at most `R̄`, and `(x, y) ∈ 𝒟` is exactly the existence of a bounded iteration. ∎
+ 
+-## Theorem T4 — the region
++**The complete slot count.** Give each edge its displacement label: three down, three up, six fork labels. A rooted lattice tree has a unique root path to each vertex; reading its labels gives a word, and projecting that word's displacements recovers the lattice vertex and all edges. Thus distinct rooted trees have distinct lifts. After a down step, the reverse up slot is occupied, leaving two up slots, at most one of three down slots, and six fork slots; its contribution is D. After an up step, the reverse down arrow is occupied, so there are no further down slots, three up slots and six fork slots; its contribution is U. After a fork step, five fork slots remain with three up slots and at most one of three down slots; this is F. The root has all six fork slots and the root expression R. Independent optional up/fork slots give factors (1+xU) and (1+yF); the choice of zero or one of three down slots gives (1+3xD). These are precisely the four displayed recursions. Forgetting geometric collisions only adds lifted subtrees, so this count is an upper bound. Height truncations increase from (1,1,1); a finite super-solution bounds every truncation and therefore their nonnegative weight sum.
+ 
+-**Statement.** With `ε₁ = d_1`, `ε₂ = max(d_2, d_3)`: the formation law from the all-`a` plane satisfies `P(v_x ≠ a) ≤ ε₁ R̄ < 10⁻⁷` at every later site, and its level automaton has at least six pairwise distinct translation-invariant invariant laws, for every integer `p ≥ 4165` at `(p, 1, 2)`, `p ≥ 2085` at `(p, 1, 1)`, `p ≥ 8330` at `(p, 2, 4)`, `p ≥ 6247` at `(p, 1, 3)`.
++## Theorem T4 — four rational certificates and six invariant laws
+ 
+-**Proof.** At `p = 4165, q = 1, r = 2`: `t = 99/1000`, `x = t + ε₂/t² = 0.14804…`, `y = ε₁/t³ = 4.7·10⁻⁷`, and the rational triple `(D̄, Ū, F̄)` of the runner is a super-solution with `R̄ = 168.44…`, so `P(v_x ≠ a) ≤ ε₁ R̄ = 7.7·10⁻⁸` (D2); the other three lines likewise (`t = 49/500`, `99/1000`, `99/1000`; `R̄ = 131.3, 168.4, 145.0`; bounds `7.2, 7.7, 6.5 × 10⁻⁸`). For larger `p` on a line, `ε₁` and `ε₂` decrease (T1a), the recursion's right sides are increasing in `x, y`, so the same triple is a super-solution and the same bound holds. The six laws: block 25's T7 route — the kernel is Feller and translation-covariant, Cesàro averages of the levels from the all-`a` plane have subsequences with weak limits `μ_a` are invariant, `μ_a(v_y ≠ a) ≤ 10⁻⁷ < 1/2`, so the six are distinct, and by the extremal decomposition at least six extremal laws exist. ∎ (D2–D3.)
++**Statement.** Under the supplied process and weight hypotheses, from the all-a plane, P(v_x != a) < 10^−7 at every later site on each ray: p >= 4165 at (p,1,2); p >= 2085 at (p,1,1); p >= 8330 at (p,2,4); p >= 6247 at (p,1,3). The level process has at least six pairwise distinct translation-invariant invariant laws. The inequalities hold for real p on these rays, in particular for integers.
+ 
+-## Theorem T5 — the ceiling of the route
++**Exact certificates.** With x=t+epsilon2/t² and y=epsilon1/t³, the following positive rational triples dominate the three recursion right sides, entry by entry:
+ 
+-**Statement.** `(x, 0) ∈ 𝒟` if and only if `x ≤ 4/27`. Hence T3 can apply only if `ε₂ < max_{0<t<4/27} t²(4/27 − t) = 256/531441`, and on `(p, 1, 2)` this fails for every `p ≤ 4150` (`d_3(4150) = 16622/34461622 > 256/531441`).
++| (p,q,r) | t | Dbar | Ubar | Fbar |
++|---|---|---|---|---|
++| (4165,1,2) | 99/1000 | 56694252249173/500000000000 | 3279872914431/1000000000000 | 168429466648591/1000000000000 |
++| (2085,1,1) | 49/500 | 88632394933177/1000000000000 | 3254100818939/1000000000000 | 131311435970231/1000000000000 |
++| (8330,2,4) | 99/1000 | 56694252249173/500000000000 | 3279872914431/1000000000000 | 168429466648591/1000000000000 |
++| (6247,1,3) | 99/1000 | 24445325573453/250000000000 | 3264868815393/1000000000000 | 9064364177089/62500000000 |
+ 
+-**Proof.** At `y = 0` the recursion for `U` is `U = (1 + xU)³`; with `v = 1 + xU ≥ 1` this reads `x = (v − 1)/v³`, whose maximum over `v ≥ 1` is `4/27` at `v = 3/2` (E1); for `x > 4/27` the iteration from `1` has no fixed point and diverges, for `x ≤ 4/27` it is bounded by the least fixed point. Since `x = t + ε₂/t² ≤ 4/27` needs `ε₂ ≤ t²(4/27 − t)`, whose maximum over `t` is at `t = 8/81` with value `256/531441` (E1), the route needs `ε₂ < 256/531441`. `d_3` is decreasing in `p`, and its value at `p = 4150` exceeds `256/531441` (E2). ∎
++For each row define Rbar=(1+x Ubar)³(1+3x Dbar)(1+y Fbar)⁶. Substitution in exact rational arithmetic gives epsilon1 Rbar < 1/10^7. Approximate values, for readability only, are respectively 7.6934551567, 7.2441560890, 7.6934551567 and 6.4848260436 times 10^−8; the strict rational inequalities are the certificates. All entries are at least one. Since the deviations decrease with p, the same t and triple remain super-solutions along the entire larger-p ray. T1 and T3 therefore prove the stated uniform probability bound.
+ 
+-*Reading.* The route is at its ceiling on every line (`p = 4165` against `4150`): the seed noise plays no role there, only the amplification. Two places hold the remaining factor `380` to the located strength `11`. First, the bad-pair accounting charges two excuse arrows per amplified pole (`E ≤ 3(|S| − 1) + 2|A|`), which enters the exponent as `ε₂/t²`; the executed trees never exceed `2/3` of an excuse arrow per amplified node, and a proof of `E ≤ 3(|S| − 1) + |A|` would put the ceiling at `ε₂ < max_t t(4/27 − t) = 4/729` and the region near `p ≈ 500`. Second, the union bound counts every sub-structure of an amplification cluster separately, so the amplification part is finite only for `ε₂ < 4/27` where the branching itself dies out for every `3ε₂ < 1`: the same gap as between lattice-animal and branching-process thresholds. A tree-of-trees construction (fresh trees under amplified leaves, weight `ε₂` with no bad pairs) would reach `p ≈ 200` if its sub-trees did not overlap; they do, and overlaps break the budgets (N1).
++**Invariant-law construction.** The finite-menu configuration space M^{Z²} is compact metrizable. The level kernel P is Feller: a cylinder's next-step law depends continuously on finitely many old coordinates, and cylinder functions uniformly approximate continuous functions. It commutes with plane translations. If lambda_t is the level-t law from the all-a plane, the Cesaro average lambda^(T)=T^−1 sum_{t=1}^T lambda_t has a weakly convergent subsequence by compactness. For every continuous f,
++
++```
++|lambda^(T)(Pf) − lambda^(T)(f)|
++ = |lambda_(T+1)(f) − lambda_1(f)|/T <= 2||f||/T.
++```
++
++Feller continuity passes this identity to the limit mu_a, making it invariant. Translation invariance also passes to the limit. The single-site dissent indicator is continuous, so mu_a(v_y != a) <= 10^−7. For b != a, mu_a(v_y=a) >= 1−10^−7 > 10^−7 >= mu_b(v_y=a); the six laws are distinct. If one also imports barycentric decomposition of stationary laws for this compact Feller process, at least six extreme stationary laws exist: if there were at most five, each mu_a would be a mixture of these finitely many laws, so some extreme law would give v_y=a probability greater than 1/2; the same extreme law cannot do this for two distinct a. The six directly constructed laws need no extremal-decomposition import. ∎
++
++The earlier single-noise sufficient thresholds are 285718, 142861, 571436 and 428576 on the corresponding rays. Their ratios to the four displayed integers are at least 68 and approximately 69, not at least 69. These compare sufficient certificates, not physical thresholds or optimal integers for this method.
++
++## Theorem T5 — positive fixed-point parametrization
++
++For 1 <= v < 3/2 put x=(v−1)/v³ and y=0. Then U=v³, D=v²/(1−3xv²), F=v³(1+3xD) give a finite nonnegative fixed point of all three recursions. The denominator equals (3−2v)/v and is positive. Direct substitution proves the claim; all three entries are at least one and bound the iteration from (1,1,1). The map x(v) has derivative (3−2v)/v⁴ and increases from 0 to 4/27 on this half-open interval. Also t²(4/27−t) has derivative t(8/27−3t), and its maximum on [0,4/27] is 256/531441 at t=8/81.
++
++The complete corrected full-domain, strict-endpoint and necessary-route-bound argument is preserved readably in the deferred-science recovery. That scoped mathematical proof remains valid; its formal negative-certification promotion and the broader route-exhaustion conclusions are deferred. It is not a premise of the positive certificate theorem.
+ 
+ ## No-Go Discipline Gate
+ 
+-This note's sentence is positive (an ordered region); its escapes are named for the route by which it could fail.
++### N1 — Actual route record and deferred promotion
++The historical list mixed tests of one construction with proposed alternatives. It does not establish five normalized attempted negative families. No formal negative packet PASS or exhaustive route closure is asserted. The exact original list, complete corrected route-bound proof and untested sharper constructions are retained in [historical recovery](work_history/repo/review_feedback/pr8174-evidence/README.md). The positive theorem does not use deferred conclusions.
+ 
+-### N1 — Routes by which T4 could fail, and the routes tried beyond it
+-1. *The extended construction failing on some configuration or exceeding a budget* — closed on `4290` configurations (C2–C4) and by the proof (T2).
+-2. *The amplified node treated as a noise leaf* — would charge its fork at `ε₂/t³` and give nothing; the construction puts it inside the clusters instead, at the price of the bad pairs.
+-3. *Bad pairs not kept* — a bad amplified pole that is not a tree node would lose span without paying `ε₂`; hence bad poles are always kept (T2.4).
+-4. *The tree-of-trees route* — fresh block-25 trees under amplified leaves would give weight `ε₂` per amplified node with `E ≤ 3(|S| − 1)`; the sub-trees can share nodes with the existing structure, the union then has cycles, and breaking them by dropping forks or arrows breaks the budgets (each dropped fork costs three excuse arrows in the accounting); recorded as the obstacle to `p ≈ 200`.
+-5. *The sharper bad-pair budget* — `E ≤ 3(|S| − 1) + |A|` holds on every executed tree (`2/3` at most) but is not proved: a refinement with a bad amplified pole may keep two other poles.
+-6. *The domination* — re-proved (T1) at the level of the predecessors' state.
++### N2 — Relation of open obligations
++Sharper bad-pair accounting and an overlap-controlled tree-of-trees count are open research obligations. Their independence is not established and no numerical wall count is claimed.
+ 
+-### N2 — Wall-independence audit
+-No no-go wall of the repository is used.
++### N3 — Explicit hypotheses
++The menu, p >= q > 0, r > 0, records-only product update, level order, conditional independence and constant plane are supplied. Compactness and optional extremal decomposition are mathematical imports, not hidden physical premises.
+ 
+-### N3 — Hidden-wall scan
+-No hidden dependence: the inputs are the axioms' sentences, block 01's rule, and the monotone order as declared.
++### N4 — Source roles
++The axiom memo supplies framework vocabulary, the product-rule parent the conditional model, and the single-noise parent the earlier certificate comparison and reproduced transport construction. Historical simulations and floating scans are not threshold or negative-certificate authorities.
+ 
+-### N4 — Per-citation table
+-| Citation | Role | Load-bearing? |
+-|---|---|---|
+-| `minimal_axioms` | the four sentences under Premises | yes (premise) |
+-| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
+-| blocks 12, 25 (open PRs) | the coupling and the construction, re-proved here in extended form | re-proved at scope (T1, T2, T3) |
+-| block 28 (open PR) | the located strength `p ∈ (10.5, 11)` | placement only (evidence address) |
++### N5 — Resolution
++The primary defines finite exact formula checks, all 216 triples at five declared weight triples, exhaustive small cones, 1200 seeded random cones, 66103 finite lifted-tree candidates and four rational certificates. The original primary output reports 932+2321+843=4096 explained configurations; the distinct 1500-random-cone historical construction control reports 4290. These are separate historical protocols. Corrected-source outcomes remain pending. Infinite-plane statements use the written localization, probability and compactness proofs, not an executed infinite lattice.
+ 
+-### N5 — Resolution audit
+-| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+-|---|---|---|---|---|---|
+-| "the formation law keeps its plane for `p ≥ 4165` at `(p, 1, 2)`" | executed: the deviations' closed forms and monotonicity; `d_1 ≤ max(d_2, d_3)`; the increments of an amplified excuse | executed: the two-level coupling's inequality at every predecessor state; the ceiling's crossing at `4150` | executed: the extended construction on `4290` configurations with all budgets; the lift's slot structure on subtrees with `≤ 4` edges | executed: the four super-solution certificates; the bounds; the one-variable maxima | proved for every `p` above the stated couplings on the four lines (T1–T5); the true strength not claimed |
++### N6 — Partial paths
++Treating amplified nodes as leaves loses the two-level improvement; it does not make the ordered region empty, since epsilon2 tends to zero along fixed-q,r large-p rays. No new primitive is requested. Other counting and coupling arguments remain open.
+ 
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling or order; none is a wall.
++### N7 — Strongest unresolved alternative
++An overlap-controlled cluster or tree-of-trees argument, or a sharper bad-pair potential, might improve the sufficient region. The historical packet supplies neither an explicit overlap/cycle witness closing all constructions nor a proof of the sharper budget. Their estimates remain proposals.
+ 
+-### N7 — Steelman
+-Hostile reviewer: "A factor `69` when the truth is `26000` times below." Reply: the factor is the whole reach of this route, proved as such (T5); the two places holding the rest are named with the executed evidence (`2/3` against `2`) and the obstacle (overlaps). Conceded: the true strength is not located by a proof; `4165` is not close to `11`.
++### N8 — Historical comparison
++The prior single-noise construction is a positive sufficient result. The archived finite simulations and floating scans cannot establish a true infinite-volume threshold or exhaustive optimality. The branch retains recovery value for those deferred proposals.
+ 
+-### N8 — Cross-cycle echo
+-Block 12's domination is refined; block 25's construction is extended and its count reused at its edge; block 28's located strength is the target the region is measured against; block 26's tree-of-trees obstacle (overlaps) is the same kind of obstacle met here.
++## Boundaries and imports
+ 
+-## Falsifiers
+-- A deviation differing from its closed form, non-decreasing in `p`, or `d_1 > max(d_2, d_3)` at some tested line; a failure of the two-level coupling's inequality at some predecessor state (B1–B3).
+-- An increment of an amplified excuse other than `1/3 − δ_{jk}`; a configuration of the tested cones on which the extended construction fails, the identity `Span + 1 − b` fails, the point graph is not a tree, a seed has a 1-predecessor, an amplified node's arrow does not end at its single 1-predecessor, `#forks ≠ |S| − 1`, `#refinements > |S| − 1 + B`, `B > |A|`, or `E > 3(|S| − 1) + 2|A|` (C1–C4).
+-- A lifted subtree count above the recursion's coefficient; a super-solution inequality failing at one of the four points; `ε₁ R̄ ≥ 10⁻⁷` (D1–D3).
+-- `(v − 1)/v³ > 4/27` for some `v ≥ 1`, `t²(4/27 − t) > 256/531441` for some `t`, or `d_3(4150) ≤ 256/531441` (E1–E2).
++The result is conditional on the stated model and initial plane. No physical rule, formation schedule, coupling value or readout bridge is selected. No actual threshold or optimal integer is claimed. The two-level tree proof and rational certificates stand independently of the deferred negative packet. Standard compactness and optional stationary-law decomposition have precisely the roles stated in T4. No fitted or observed value is an input.
+ 
+-## Boundaries and non-claims
+-This note proves, for the six-axis formation law in level time, that its dissent from the all-`a` plane is dominated by the two-level noisy majority automaton with seed noise `d_1` and amplification noise `max(d_2, d_3)`, that this automaton's ones have extended explanation trees with `forks = |S| − 1` and `E ≤ 3(|S| − 1) + 2|A|`, that its density of ones is at most `ε₁ R(t + ε₂/t², ε₁/t³)`, and hence that the formation law keeps its plane with at least six invariant laws for `p ≥ 4165` at `(p, 1, 2)`, `p ≥ 2085` at `(p, 1, 1)`, `p ≥ 8330` at `(p, 2, 4)`, `p ≥ 6247` at `(p, 1, 3)`, with the route's ceiling `ε₂ < 256/531441`; it does not locate the true strength, does not prove the sharper bad-pair budget, does not treat other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++## Review and verification record
+ 
+-## Imports
+-- `minimal_axioms`: the sentences quoted under Premises.
+-- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. PRs #8003, #8138, #8146, #8168, #8172 (open) referenced as evidence addresses for the monotone class, the uniqueness region, the level-time reading, the construction and the located strength.
+-- Re-proved at scope: block 12's domination (refined to two levels); block 25's construction (extended) and count; the Cesàro construction of invariant laws and the distinctness (block 25's T7).
+-- Named standard imports at definition level (never as authority for physics): the union bound and independence of the uniforms; weak compactness of laws on a compact product space (the Krylov–Bogolyubov construction for Feller kernels); the extremal decomposition of invariant laws (Choquet).
+-- Reference only (named, not used): Toom (1980); Berman–Simon (1988); Gács (2021); Swart–Szabó–Toninelli (2022).
++Original source findings corrected the weight domain and strict endpoint, supplied complete localization and pole transport, separated finite controls from universal proofs, repaired input/graph links, and quarantined unsupported threshold and no-go claims. All original source and raw evidence is recovered exactly in the [archive](work_history/repo/review_feedback/pr8174-evidence/README.md); historical author PASS wording is not present-day review authority.
+ 
+-## Review record
+-Supervisor-run block (owner directive 2026-09-16, evening: "take the six-axis threshold next"). The lens found the domination step, not the count, to be the loose one at the located strength (`ε ≈ 0.26` worst case against `d_1 ≈ 0.024` and `d_3 ≈ 0.21` at `p = 11`). The control (`specs/supervisor_control_block30_core.py`, `..._construction.py`) extended block 25's construction with amplified nodes and ran it on `4290` configurations with every budget checked; the scan (`..._scan.py`) found the region's edge at `p = 4166` on `(p, 1, 2)` and its coincidence with the ceiling `4/27`; the certificates (`..._certify.py`) were found along the Jacobian's dominant eigenvector at spectral radius `0.99` and verified exactly; the budget measurement (`..._budget.py`) found the executed maximum `2/3` of the allowed `2` excuse arrows per amplified node. Facts settled while executing: the tree-of-trees route (fresh trees under amplified leaves) was worked out to the point of its obstacle — the overlaps — and dropped; the alternative of leaving amplified nodes as leaves was computed to give nothing; the route's ceiling is reached on every line within one unit of `p`. The refuting pass (`CHECKER_block30_findings.md`) simulated the two-level automaton and the six-axis law coupled through shared uniforms far below the proved region, checked the domination pointwise, re-ran the tree checks with an independent graph implementation, and re-derived the certificates' fixed points in floating point.
+-
+-## Verification
+-
+-```bash
+-python3 scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py
+-python3 scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py --list-mutations
+-python3 scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py --mutation budget_amplified_dropped
+-```
+-
+-Families: A authority and inputs; B the deviations, the domination; C the extended construction executed; D the lift, the certificates, the bounds; E the ceiling; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 11 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
++The paired runner preserves the original construction, cone fixtures, random seed, lifted enumeration and four rational certificates. It strengthens derivative and domain controls and writes input/source-bound JSON under logs/runner-cache. Eleven mathematical mutations are declared, with no successful outcomes claimed before execution. Two original prose-only mutations remain recoverable in the historical runner. Expected baseline contract: `TOTAL: PASS=17 FAIL=0`, subject to actual future execution. Neither primary nor mutation execution occurred during preparation.
+--- scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py
++++ scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py
+@@ -1,19 +1,21 @@
+ #!/usr/bin/env python3
+ """Exact checks: the six-axis formation threshold lifted by a two-level domination — seeds and amplified nodes in the explanation tree.
+ 
+-Scope.  T1: the three deviations' closed forms, their monotonicity in p, d_1 <= max(d_2, d_3), and the two-level coupling inequality
++Scope. Supplied p >= q > 0, r > 0. T1: the three deviations' closed forms, their monotonicity in p, d_1 <= max(d_2, d_3), and the two-level coupling inequality
+ at every predecessor state.  T2: the extended construction (amplified sites inside clusters; an amplified pole's excuse is its single
+ predecessor; bad pairs; bad amplified poles kept) executed on every configuration of the depth-2 cone, every depth-3 configuration with
+ at most four noise sites and random cones, with the tree, the classification, the identity Span + 1 - b at every refinement,
+ forks = |S| - 1, refinements <= |S| - 1 + B, B <= |A| and E <= 3(|S| - 1) + 2|A|.  T3: the lift's slot structure on subtrees with
+ <= 4 edges (counts against the recursion's coefficients).  T4: the four super-solution certificates and the bounds.  T5: the ceiling
+ 4/27 and 256/531441 symbolically, and d_3(4150) > 256/531441.  Exact arithmetic only (integers, Fractions and sympy); the runner scans
+-its own source for floating-point literals.
++exact arithmetic bodies are preserved; no float-scan or prose-count PASS is used.
+ """
+ 
+ from __future__ import annotations
+ 
+ import random
++import hashlib
++import json
+ import re
+ import sys
+ from collections import deque
+@@ -25,13 +27,11 @@
+ import sympy as sp
+ 
+ AUDIT_TIMEOUT_SEC = 900
+-AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+-    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+-    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+-)
++AUDIT_MEMORY_MB = 768
++AUDIT_INPUT_PATHS = ('docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md', 'docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md')
++EXPECTED_INPUT_SHA256 = {'docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md': '918fe8d13ca5b8daad5750b5cdc37a25b1064f71cfbea970dc63f91dbc7a1930', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97', 'docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md': '01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2'}
+ ROOT = Path(__file__).resolve().parents[1]
+-CLAIM_ID = "admissibility_rule_six_axis_formation_threshold_lifted_by_a_two_level_domination_seeds_and_amplified_nodes_in_the_explanation_tree_bounded_theorem_note_2026-09-16"
++CLAIM_ID = "six_axis_two_level_domination_extended_explanation_tree_and_four_rational_certificates_bounded_theorem_note_2026-09-16"
+ BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
+ BLOCK01_FRAGMENT = "the static law of a product rule"
+ AXIOM_NEEDLES = (
+@@ -51,8 +51,8 @@
+     "subtree_bound_wrong": "D",
+     "certificate_wrong": "D",
+     "ceiling_wrong": "E",
+-    "claim_transition_injected": "F",
+-    "claim_classical_name_in_theorem": "F",
++    "domination_domain_wrong": "B",
++    "ceiling_endpoint_wrong": "E",
+ }
+ ACTIVE_MUTATION: str | None = None
+ 
+@@ -65,11 +65,13 @@
+ 
+ class Checks:
+     def __init__(self) -> None:
++        self.results = []
+         self.passed = 0
+         self.failed = 0
+         self.failed_families: set[str] = set()
+ 
+     def check(self, tag: str, ok: bool, msg: str) -> None:
++        self.results.append(dict(tag=tag, passed=bool(ok), detail=msg))
+         if ok:
+             self.passed += 1
+             print(f"PASS: {tag} {msg}")
+@@ -402,11 +404,11 @@
+ 
+ # ============================================================================================ family A
+ def family_a(checks: Checks, texts) -> None:
+-    note, axioms, block01 = texts
++    note, axioms, block01, single_noise = texts
+     checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "the note carries its claim_id once")
+     checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axioms memo carries the four sentences quoted under Premises")
+     checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "block 01's note (on main) carries its claim_id and the rule's product form")
+-    checks.check("A4", all(Path(ROOT, p).exists() for p in AUDIT_INPUT_PATHS), "all declared inputs exist")
++    checks.check("A4", all(Path(ROOT, p).exists() and hashlib.sha256(Path(ROOT, p).read_bytes()).hexdigest() == EXPECTED_INPUT_SHA256[p] for p in AUDIT_INPUT_PATHS), "all declared inputs exist and match exact pins, including the single-noise comparison parent")
+ 
+ 
+ # ============================================================================================ family B
+@@ -445,10 +447,18 @@
+         c2 = conditional(0, (0, 0, 1), Fraction(pv), Fraction(qv), Fraction(rv))
+         c3 = conditional(0, (0, 0, 2), Fraction(pv), Fraction(qv), Fraction(rv))
+         ok = ok and sp.Rational(1) - sp.Rational(c1.numerator, c1.denominator) == d1.subs(subs) and sp.Rational(1) - sp.Rational(c2.numerator, c2.denominator) == d2.subs(subs) and sp.Rational(1) - sp.Rational(c3.numerator, c3.denominator) == d3.subs(subs)
+-    der_ok = all(sp.simplify(sp.together(sp.diff(d, p)) * (-1)).as_numer_denom()[0].is_positive is not False for d in (d1, d3))
+-    n2 = sp.expand(sp.numer(sp.together(sp.diff(d2, p))))
+-    der2 = sp.simplify(n2 + (q ** 3 * p ** 2 + 8 * q * r ** 3 * p)) == 0
+-    checks.check("B1", ok and der2, "T1(a): d_1 = 1 - K(a|a,a,a), d_2 = 1 - K(a|a,a,-a), d_3 = 1 - K(a|a,a,b) in closed form (checked against the conditional at four weight triples); d_2's derivative in p has numerator -(q^3 p^2 + 8 q r^3 p) < 0 (d_1, d_3 as in block 25)")
++    derivatives = (
++        -3*p**2*(q**3+4*r**3)/(p**3+q**3+4*r**3)**2,
++        -(q**3*p**2+8*q*r**3*p)/(p*q*(p+q)+4*r**3)**2,
++        -p*(r*p+2*q**2+2*r*q+4*r**2)/(p**2+q**2+r*(p+q)+2*r**2)**2,
++    )
++    der_ok = all(sp.simplify(sp.diff(d,p)-expected)==0 for d,expected in zip((d1,d2,d3),derivatives))
++    checks.check("B1", ok and der_ok, "Three exact closed forms and all three explicit strictly negative derivative identities for positive weights")
++    gap = p**2*(p-q)*(q**2*(p+q)+4*r**3)/((p**3+q**3+4*r**3)*(p*q*(p+q)+4*r**3))
++    small = deviations(Fraction(1,10),1,1)
++    domain_ok = sp.simplify(d2-d1-gap)==0 and small==(Fraction(5000,5001),Fraction(410,411),Fraction(410,411))
++    domain_ok = domain_ok and (small[0] <= max(small[1:]) if mut("domination_domain_wrong") else small[0] > max(small[1:]))
++    checks.check("B3", domain_ok, "Exact p>=q domination factorization and small-p counterexample to the withdrawn unrestricted domain")
+     # d_1 <= max(d_2, d_3) and the two-level coupling inequality at every predecessor state, at the four lines' thresholds and at (11, 1, 2)
+     ok2 = True
+     for (pv, qv, rv) in ((4165, 1, 2), (2085, 1, 1), (8330, 2, 4), (6247, 1, 3), (11, 1, 2)):
+@@ -658,72 +668,27 @@
+     ok = sp.simplify(m1 - top) == 0 and sp.simplify(m2 - sp.Rational(256, 531441)) == 0
+     # the tangency point and the maximiser
+     ok = ok and sp.simplify(((v - 1) / v ** 3).subs(v, sp.Rational(3, 2)) - sp.Rational(4, 27)) == 0 and sp.simplify((t ** 2 * (sp.Rational(4, 27) - t)).subs(t, sp.Rational(8, 81)) - sp.Rational(256, 531441)) == 0
+-    checks.check("E1", ok, "T5: max_{v >= 1} (v - 1)/v^3 = 4/27 (at v = 3/2), so the recursion's domain at y = 0 is x <= 4/27; max_t t^2 (4/27 - t) = 256/531441 (at t = 8/81)")
++    checks.check("E1", ok, "T5: max_{v >= 1} (v - 1)/v^3 = 4/27 (at v = 3/2), scalar U maximum only; full-domain endpoint separately checked; max_t t^2 (4/27 - t) = 256/531441 (at t = 8/81)")
++    denominator = sp.simplify(1-3*((v-1)/v**3)*v**2)
++    endpoint_slope = 3*Fraction(4,27)*Fraction(3,2)**2
++    endpoint_constant = Fraction(3,2)**2
++    endpoint_ok = sp.simplify(denominator-(3-2*v)/v)==0 and endpoint_slope==1 and endpoint_constant==Fraction(9,4)
++    if mut("ceiling_endpoint_wrong"):
++        endpoint_ok = endpoint_ok and endpoint_slope < 1
++    checks.check("E3", endpoint_ok, "Full recursion denominator (3-2v)/v; at the endpoint D=9/4+D, so bounded scalar U alone is insufficient; deferred route-bound diagnostic")
+     d3 = deviations(4150, 1, 2)[2]
+     d3b = deviations(4165, 1, 2)[2]
+     checks.check("E2", d3 > Fraction(256, 531441) > d3b, f"T5: d_3(4150, 1, 2) = {d3} exceeds 256/531441 while d_3(4165, 1, 2) = {d3b} is below it: the route's ceiling on (p, 1, 2) lies between 4150 and 4165")
+ 
+ 
+-# ============================================================================================ family F
+-FENCES = (
+-    "This note proves, for the six-axis formation law in level time, that its dissent from the all-`a` plane is dominated by the two-level noisy majority automaton with seed noise `d_1` and amplification noise `max(d_2, d_3)`, that this automaton's ones have extended explanation trees with `forks = |S| − 1` and `E ≤ 3(|S| − 1) + 2|A|`, that its density of ones is at most `ε₁ R(t + ε₂/t², ε₁/t³)`, and hence that the formation law keeps its plane with at least six invariant laws for `p ≥ 4165` at `(p, 1, 2)`, `p ≥ 2085` at `(p, 1, 1)`, `p ≥ 8330` at `(p, 2, 4)`, `p ≥ 6247` at `(p, 1, 3)`, with the route's ceiling `ε₂ < 256/531441`; it does not locate the true strength, does not prove the sharper bad-pair budget, does not treat other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause.",
+-    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
++# Honest resolution statements; these lines are not counted as scientific checks.
++N5_LINES = (
++    "per_element: finite exact closed-form and derivative identities, factorization and amplified-excuse increments are checked",
++    "per_site: finite all-216 predecessor triples at five weight triples; no sitewise physical or infinite-time threshold is measured",
++    "per_mode: exact small cones and original1200 seeded random cones, with finite 66103 lifted-tree enumeration; no exhaustive larger-cone claim",
++    "per_block: four exact rational super-solutions and algebraic endpoint diagnostics; conditional positive certificates only",
++    "lattice_wide: checked and not executed — written finite-localization, tree-bound and compactness proofs under supplied hypotheses",
+ )
+-FORBIDDEN = (
+-    "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "the physical reading", "for every coupling", "selects the", "fires wake condition",
+-    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+-    "sharp threshold", "the transition point", "the ordered phase begins at",
+-)
+-CLAIM_INJECTIONS = {"claim_transition_injected": "Hence the ordered phase begins at p = 4165."}
+-CLASSICAL_NAMES = ("Toom", "Berman", "Simon", "Gács", "Swart", "Szabó", "Toninelli", "Bramson", "Gray", "Krylov", "Bogolyubov", "Choquet", "Peierls", "Dobrushin")
+-ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects", "Review record")
+-SCAN_MARKER = "float-scan-marker-line"
+-
+-
+-def family_f(checks: Checks, note_text: str) -> None:
+-    text = note_text
+-    for name, phrase in CLAIM_INJECTIONS.items():
+-        if mut(name):
+-            text = text.replace("## Theorem T5", phrase + "\n\n## Theorem T5", 1)
+-    if mut("claim_classical_name_in_theorem"):
+-        text = text.replace("## Theorem T2", "## Theorem T2 (after Toom)", 1)
+-    norm = normalize_text(text)
+-    checks.check("F1", all(normalize_text(f) in norm for f in FENCES), "the note carries the three fence sentences verbatim")
+-    hits = [p for p in FORBIDDEN if p in text]
+-    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
+-    src = Path(__file__).read_text(encoding="utf-8")
+-    body = src.split(SCAN_MARKER)[0]
+-    float_hits = re.findall(r"(?<![\w.])\d+\.\d+(?![\w.])|\bfloat\(|\.evalf\(|\bN\(", body)
+-    checks.check("F3", not float_hits, f"runner source: no floating-point literal or conversion call ({len(float_hits)} hits)")
+-    sections = re.split(r"^## ", text, flags=re.M)
+-    offenders = []
+-    for sec in sections[1:]:
+-        title = sec.split("\n", 1)[0].strip()
+-        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
+-            continue
+-        for nm in CLASSICAL_NAMES:
+-            if nm in sec:
+-                offenders.append((title[:40], nm))
+-    offenders += [("front matter", nm) for nm in CLASSICAL_NAMES if nm in sections[0]]
+-    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports, the Premises and the Review record ({len(offenders)} offenders)")
+-
+-
+-# ============================================================================================ family G
+-N5_LINES = (
+-    "per_element: executed — the deviations' closed forms at four weight triples; d_2's derivative; the increments of an amplified excuse",
+-    "per_site: executed — the two-level coupling's inequality at all 216 triples at five weight triples; the ceiling's crossing between 4150 and 4165 on (p,1,2)",
+-    "per_mode: executed — the extended construction on 932 + 2321 exhaustive configurations and 1200 random cones with every budget; the lifted subtree counts against the recursion's coefficients",
+-    "per_block: executed — the four super-solution certificates with epsilon_1 R-bar < 10^-7; the one-variable maxima 4/27 and 256/531441 symbolically",
+-    "lattice_wide: T1-T5 proved for every positive weight triple, T4 with content on the four lines above the stated couplings; the true strength not claimed",
+-)
+-
+-
+-def family_g(checks: Checks) -> None:
+-    for line in N5_LINES:
+-        print(line)
+-    checks.check("G1", len(N5_LINES) == 5, "the five N5 resolution lines are printed")
+-
+ 
+ # ============================================================================================ main
+ def main(argv) -> int:
+@@ -747,11 +712,20 @@
+     family_c(checks)
+     family_d(checks)
+     family_e(checks)
+-    family_f(checks, texts[0])
+-    family_g(checks)
++    for line in N5_LINES:
++        print(line)
+     if ACTIVE_MUTATION:
+         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
+         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
++    result = dict(checks=checks.results, passed=checks.passed, failed=checks.failed,
++                  source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++                  input_sha256={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}, mutation=ACTIVE_MUTATION)
++    suffix = "--"+ACTIVE_MUTATION if ACTIVE_MUTATION else ""
++    output = ROOT/"logs/runner-cache"/(Path(__file__).stem+suffix+".json")
++    output.parent.mkdir(parents=True,exist_ok=True)
++    with output.open("x") as stream:
++        json.dump(result,stream,indent=2)
++        stream.write("\n")
+     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
+     return 0 if checks.failed == 0 else 1
+ 

@@ -1,0 +1,86 @@
+{
+  "findings": [
+    {
+      "id": "8174-01",
+      "original_finding": "The assertion d1 <= max(d2,d3) for every positive weight triple is false. At (1/10,1,1), d1=5000/5001 and d2=d3=410/411. The proposed monotone coupling uses this inequality when eta has one dissenting predecessor but xi has none.",
+      "correction": "Restrict this coupling to p>=q>0,r>0 (sufficient for all four threshold rays), or redefine epsilon2=max(d1,d2,d3). For p>=q, d1<=d2 follows from (p-q)[q^2(p+q)+4r^3]>=0. Give the general monotonicity derivatives explicitly; remove the unused der_ok expression that accepts symbolic unknown and is never asserted.",
+      "status": "Author correction prepared; independent affected confirmation pending"
+    },
+    {
+      "id": "8174-02",
+      "original_finding": "The full recursion domain at y=0 is 0<=x<4/27, not <=. At x=4/27 the least U fixed point gives v=3/2 and D=9/4+D, so bounded D is impossible. E1 only maximizes the U scalar equation and falsely reports the full-domain conclusion.",
+      "correction": "Supply the D denominator argument (D=v^2/(1-3xv^2)) and strict endpoint exclusion. Retain the strict necessary epsilon2<256/531441 and the independently verified 4150/4165 bracket. Do not call these bounds an exact minimal integer threshold or a certificate at every nearby integer.",
+      "status": "Author correction prepared; independent affected confirmation pending"
+    },
+    {
+      "id": "8174-03",
+      "original_finding": "Unlanded PR8172 simulation is repeatedly called the actual strength, located strength, and truth is eleven. Neither a finite simulation nor an unlanded sibling establishes the infinite-volume threshold; the factor 380 to truth and attribution of the whole gap inherit this problem.",
+      "correction": "Delete truth/actual-threshold assertions from live science. Preserve comparison only as explicitly historical finite-simulation context with its unproved infinite-volume bridge and no authority. No need to import or run PR8172.",
+      "status": "Author correction prepared; independent affected confirmation pending"
+    },
+    {
+      "id": "8174-04",
+      "original_finding": "Treating amplification as noise leaves cannot make the ordered region empty: epsilon2 tends to zero at large p and recovers a single-noise contour regime. The overlap route has no explicit overlap/cycle witness or exhaustive impossibility proof in the original packet. Current N1 mixes checks of the same construction with alternative routes and does not demonstrate five normalized attempted negative-route families.",
+      "correction": "Say the leaf method loses this improvement, not all certificates; preserve tree-of-trees as an unresolved attempted construction with a named overlap obligation, not an impossibility theorem. Retain genuine route history and state attempted/untested/prior status honestly. N1 packet coverage remains a procedural limitation until actual evidence is supplied; do not invent routes or infer theorem false from quota.",
+      "status": "Author correction prepared; independent affected confirmation pending"
+    },
+    {
+      "id": "8174-05",
+      "original_finding": "The two load-bearing dependencies are code-formatted names, not Markdown graph edges. Original manifest adds the claim with out_degree=0 despite upstream_dependencies listing two inputs. Status is legacy bounded-support rather than current author proposal wording.",
+      "correction": "Use actual relative Markdown links to the axiom memo and product-rule note, explicit primary/cache links, canonical status/trace enums, current-main native source framing, and regenerate topology acknowledgment on the final candidate. Do not land stale whole manifest or author-generated audit authority.",
+      "status": "Author correction prepared; independent affected confirmation pending"
+    },
+    {
+      "id": "8174-06",
+      "original_finding": "Exact threshold ratios are around 68.5-68.6, not 69 as an exact factor; primary asserts >=68. The primary cache has 4096 explained configurations (932+2321+843), while 4290 belongs to the distinct historical 1500-random-cone control.",
+      "correction": "Say approximately 69 or at least 68 and distinguish the primary and historical construction counts. Scope execution text to actual finite/random controls; analytical lattice-wide proof is not an executed lattice-wide check.",
+      "status": "Author correction prepared; independent affected confirmation pending"
+    },
+    {
+      "id": "8174-07",
+      "original_finding": "The PR appends research/certificate state to six files that have diverged on current main; copying the stale files loses unrelated reviewed science. Historical controls include finite floating-point scans returning success after a fixed iteration cap and simulation outputs; their least-certified/transition claims cannot be used as rigorous negative certificates.",
+      "correction": "Preserve every original path and blob as historical recovery, retain full mathematical proofs/attempts, and land only corrected canonical note/runner/evidence plus explicit durable history. Keep current-main existing paths intact or append a scoped correction. The manifest must be rebuilt, not copied.",
+      "status": "Author correction prepared; independent affected confirmation pending"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Coupling and deviations",
+      "disposition": "narrowed",
+      "reason": "p>=q>0,r>0; explicit factorization and all derivatives; exact unrestricted-domain counterexample retained",
+      "final_path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "claim": "Extended explanation tree",
+      "disposition": "accepted with complete proof expansion",
+      "reason": "Original full construction plus finite ancestor-cone localization and full pole-transport identity; exact core implementation unchanged",
+      "final_path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "claim": "Lifted bound and four certificates",
+      "disposition": "accepted",
+      "reason": "Exact four rational certificates and all fixtures unchanged; full slot and invariant-law proofs",
+      "final_path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "claim": "Positive fixed-point parametrization",
+      "disposition": "narrowed",
+      "reason": "1<=v<3/2 gives positive denominator; scalar maxima preserved",
+      "final_path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "claim": "Full-domain strict endpoint and necessary route-bound proof",
+      "disposition": "deferred science",
+      "reason": "Valid corrected proof remains complete and readable; formal negative certification deferred separately from mathematical validity",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md"
+    },
+    {
+      "claim": "Actual threshold, whole-gap attribution, exhaustive optimality, overlap impossibility",
+      "disposition": "deferred or withdrawn as unsupported",
+      "reason": "Finite simulation/scan cannot prove these; unique proposals and exact failures preserved; branch retention required",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md"
+    }
+  ],
+  "original_head": "cc7662e14ebf17010a0c60fdb8e7e634b176ce99",
+  "branch_retention_required": true
+}

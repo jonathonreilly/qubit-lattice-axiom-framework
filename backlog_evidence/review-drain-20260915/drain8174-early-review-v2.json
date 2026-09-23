@@ -1,0 +1,313 @@
+{
+  "reviewer_session": "/root/review_8174",
+  "review_type": "same-session early affected-source v2",
+  "verdict": "SOURCE CLEAN FOR STAGING, COLD REVIEW AND BOUNDED CAPTURE; not final source confirmation or landing PASS",
+  "original_head": "cc7662e14ebf17010a0c60fdb8e7e634b176ce99",
+  "author_base": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "current_main": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "handoff_sha256": "89baaf5aedcc32f66507531e59d1d21998234a3777b47d21002cd8f62138a285",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-prepared-v2.json",
+      "sha256": "f9b94dd53c7807309ff4308411ee3d7423c60ee28479ba15ed94ccba3079ae25"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source-freeze.json",
+      "sha256": "05b4e2478e5ec1c13f676f427ab7f076debca9f165bd5d360470954af7960ebd"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-full-mapping-v2.json",
+      "sha256": "2c69274c2d517b3b5caecd5559b84b3ebb3b6c0ad5cc47541e68b874179de687"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-correction-v2.diff",
+      "sha256": "ec005d5fb1c01ac9c752915a69643f396f04f9a9f31dca400dd3469419ef1677"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-discovery-v2.json",
+      "sha256": "30ba33a4f8eae06f801f16313c179596f80f5d4b2c3e96d9faf7a6ff42c5bded"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-input-resource-plan-v2.json",
+      "sha256": "2290e47f9a26c0af271c45b5990cd4953b83ab5cdc0af0e3226bbe62f03a1547"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-finding-dispositions-v2.json",
+      "sha256": "4783644b85f41c41a0a933f637f79e2f640c48af6a30bdccaf2b8f752e669da2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-preservation-v1.json",
+      "sha256": "09a300c78a0845f7c745439050e61c1e57587b2a024cf11514bc7542ca222d69"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/DEFERRED_SCIENCE.md",
+      "sha256": "0db03a5c23a0466a010c9f6a64dd9efd079bdaf64cb7df334c8f30c58c8be271",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/DEFERRED_SCIENCE.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/README.md",
+      "sha256": "b04eac559391c6a26bcbe4f98c4cbe1fafb757ab5d1a2a149b480118a443e05e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/README.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json",
+      "sha256": "b8b85acc762ee0145d2a84ec4048f61553b24dbef3d01ae39f1f70b085cd5f98",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md",
+      "sha256": "c9850d47e436dea7bf370f03f6a696f824bc1100fe824926fbeeb956ee09815f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md",
+      "sha256": "a24d7a0fbd69f46c52194649c9a62f8bf6e99e7b104c7bbaad23d6537f388bc2",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md",
+      "sha256": "df0ff512f1767b7f00c80d60bc50bcbf8ce2220bce1f7b06545d34c64b1975fe",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md",
+      "sha256": "3b47da9614abb91399d7db278a5167c9f3c660bfb2c451eac81461271aa0e2a8",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md",
+      "sha256": "eed3c47d058abe9c576c96c8f5119c94679f530dc4b9ec4744185f9680adc651",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md",
+      "sha256": "3daf21b65f4e73bea37a22fa4bdf75ad240ff98ee9ed3c9b13f69fa68c43a8bf",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md",
+      "sha256": "d3108acdf7a1cb18f6d652536848cf247b4a49583741ee7a0e447bc7f5e70300",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md",
+      "sha256": "5242365320da46ae3e7347b8398c80404e6dd1bcad0b3959f501811ef117c13f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md",
+      "sha256": "e3346d7d91b61912f86bc3544d0f63a4975f8a3c280a73dfca4234ec9fdc53b3",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz",
+      "sha256": "124b63668868db22895d34e29ef8f39977a15fe39d2cb17818620f19676bf070",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md",
+      "sha256": "b7388c63cc0a04c53c29da4680fcfbc103a571068ae44852a00d1281d7557238",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz",
+      "sha256": "a028b21f644f3f906ff50ce8988a1717eb9f97fe40ef2bb81eac72e4e3c0922b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py",
+      "sha256": "99299e47dc478c701b901bda2c32c20bdae77fd5b9f815ec3f0b816b37aa1c4d",
+      "mode": "0o755",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz",
+      "sha256": "159f40259cd8cf2040afc4b4e113424c4b4de9d372c9b6cb947e930017aecdee",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py",
+      "sha256": "f1feabd9e97ed7938cf6a1997f5ae56dcc5d28833bcc42982d2e85a99d9a4e1b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz",
+      "sha256": "e8b311e9961f684344302566f17f6d352c84854cbbff6b55d2496943fab44047",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py",
+      "sha256": "d270f06f2dc4fa26234873a5f91bdaf963cd6ac3264a4aabf1ecc0f8e560b636",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz",
+      "sha256": "10d887c91336bb3f4143fff050bc4304fea7b3dad8843b659a059050a94b102f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py",
+      "sha256": "6dc3fe6ece20ace6bf62891f74ad4aada028ddf3d48cd845621fa88758453259",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz",
+      "sha256": "fd990cc9c0a6c22af56c5a7ca2429c91c73df224b435644acd9af22eead25911",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py",
+      "sha256": "83e90b6e4b5d9a6483265e8069abc5e412733b4eb4ffaee86144034ae499ec89",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py",
+      "sha256": "379613ed262399426d3073b1c7beead6b29bbf7ae2649b2e7b4a982766533374",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz",
+      "sha256": "86f12d9360195a79d674fa143152992f66ca022d6b3ca6d96f34e5d4ebe86145",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py",
+      "sha256": "7a1623641b0029e0c9839b732d62640d0f95b629a4eae4456908a7b693d5a897",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz",
+      "sha256": "8741efe569ac8298dd4d6a4cf4ff0777ccc4d639dc28c21a72d0e7abceed9a93",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8174-evidence/original-delta.patch.gz",
+      "sha256": "cfb208117d56f169eabc20aebe8039c298a019930b3207b347f370b67c754a8a",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/docs/work_history/repo/review_feedback/pr8174-evidence/original-delta.patch.gz"
+    },
+    {
+      "path": "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py",
+      "sha256": "4c4027558538dad0ad0a4d8887de2ac7d39671438ca15aaa1fcc38f214efc866",
+      "mode": "0o755",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8174-prepared-v2-source/scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2"
+    }
+  ],
+  "new_findings": [],
+  "original_findings": {
+    "8174-01": "resolved or explicitly deferred with full recovery, as described below",
+    "8174-02": "resolved or explicitly deferred with full recovery, as described below",
+    "8174-03": "resolved or explicitly deferred with full recovery, as described below",
+    "8174-04": "resolved or explicitly deferred with full recovery, as described below",
+    "8174-05": "resolved or explicitly deferred with full recovery, as described below",
+    "8174-06": "resolved or explicitly deferred with full recovery, as described below",
+    "8174-07": "resolved or explicitly deferred with full recovery, as described below"
+  },
+  "corrections": {
+    "8174-01": "p>=q restriction, exact factorization, negative derivatives and full six-state coupling recover the valid domain. Counterexample retained.",
+    "8174-02": "Strict endpoint proof complete in readable deferred recovery; live T5 positive parametrization valid. E3 checks denominator/endpoint honestly.",
+    "8174-03": "Truth/actual-strength claims removed from live theorem; finite historical simulations unambiguously non-authority.",
+    "8174-04": "Noise-leaf empty-region assertion withdrawn; overlap/sharper-budget proposals unresolved; N1 quota not fabricated. Mathematical scoped route proof valid while formal negative promotion deferred.",
+    "8174-05": "Three actual current-main parents linked and pinned; metadata/discovery visible. Final cache link intentionally pending capture and final graph manifest remains coordinator work.",
+    "8174-06": "At least68/approximately69 and separate4096/4290 protocols; finite checks distinguished from analytical infinite-plane proof.",
+    "8174-07": "All25 originals recovered exactly, with full delta and readable proofs/raw outputs; existing seven conflict paths untouched. Branch retention remains required."
+  },
+  "proof_confirmation": "Read complete corrected live note and deferred proof. Finite ancestor cone is predecessor closed; transported poles preserve sum because each point contributes |I(v)|-1 copies of sum_k M_k(v)=0 plus its terminal charges. Forced bad amplified poles make B<=|A|, so E<=3(|S|-1)+2|A|. Fixed-tree uniform events at distinct marked vertices give epsilon1^S epsilon2^A without assuming seed classifications independent. Lifted arrow-color slot sum overcounts safely. Feller/Cesaro proof and optional extremal pigeonhole are explicit and valid. No target-equivalent unresolved lemma is imported into the positive claim.",
+  "independent_checks": {
+    "reused": "Original independent four exact certificates, amplification mutation rejection and endpoint contradiction retain identical numbers and interpretation; source AST verifies family_d and construction unchanged.",
+    "new": "64 exact positive-weight factorizations,192 independently computed quotient-derivative signs and4 positive fixed-point substitutions; all pass. These are finite checks supporting the written general algebra, not its replacement.",
+    "artifacts": [
+      {
+        "path": "/private/tmp/review-drain-20260915/check8174/early-v2/affected_control.py",
+        "sha256": "e433621d9f44513a9813134b275a37608560be86c857f79857b20f4104f38652"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8174/early-v2/affected_control.out.txt",
+        "sha256": "c7b3baf0167d648e39e0c7129d211f384c63248497c39fbf2403f0ed141fc480"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8174/early-v2/affected_control.err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "limits": "Affected stdlib-only control used actual15-second CPU and20-second alarm; finite64-case loop. No separate memory cap set for this tiny control. No errors. Proposed primary cap900seconds/768MiB remains subject to actual external enforcement by coordinator."
+  },
+  "preservation_verification": {
+    "count": 25,
+    "decoded_raw_blobs_equal_original_git_objects": true,
+    "mode_manifest_matches_original_inventory": true,
+    "full_original_delta_equal": true,
+    "source_hash_mode_immutable_copy_checks": 31,
+    "new_current_main_path_collisions": 0,
+    "tracked_and_index_clean": true,
+    "author_status": "?? docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/DEFERRED_SCIENCE.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/README.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py\n?? docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz\n?? docs/work_history/repo/review_feedback/pr8174-evidence/original-delta.patch.gz\n?? scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py\n"
+  },
+  "current_main_interactions": "Relevant review/no-go authorities, registry and deferred decisions unchanged from original-review authority revision. All three existing actual input bytes match main51cac1a. Train85 adds a sphere exponential-kernel contraction result on a different menu/small-beta domain, without changing these inputs or the seven original conflict paths other than generated topology acknowledgment. No scientific interaction invalidates the six-axis supplied large-p certificates. Rebuild final manifest on latest integration base.",
+  "no_go_boundary": "No formal negative packet PASS. N1 remains incomplete and is explicit; full scoped mathematical proof retained without active negative certification. Positive bounded theorem uses no deferred negative result.",
+  "next_steps": [
+    "Root may stage exact31 source files after its ownership/path checks.",
+    "Same-session cold staged review and source freeze precede one authorized bounded baseline/mutation capture.",
+    "Preserve all failures and output files; exclusive JSON creation deliberately fails if an output already exists.",
+    "Refresh exact source/input/current-main identities for final confirmation, graph acknowledgment, combined validation and landing.",
+    "Retain original branch for deferred science."
+  ],
+  "primary_executions": 0,
+  "mutation_executions": 0,
+  "simulation_executions": 0,
+  "full_gates": 0,
+  "source_edits": 0,
+  "audits": 0
+}

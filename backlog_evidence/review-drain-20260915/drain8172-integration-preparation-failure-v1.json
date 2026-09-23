@@ -1,0 +1,11 @@
+{
+  "train": "train86",
+  "stage": "candidate preparation before pipeline",
+  "failed_candidate": "cb5da2498108255a2b0ab3c9cf51a8a797944bd8",
+  "base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "error": "Duplicate Markdown basename DEFERRED_SCIENCE.md collides with landed PR8170 appendix",
+  "source_preserved": true,
+  "pipeline_executions": 0,
+  "science_reruns": 0,
+  "recovery": "Failed candidate strict-released to preserved ref. Exact100% appendix rename andREADMElink, originalreviewerfinal-v2 confirmsreuse. Failed unitv2non-science pathbinding receipt retained;v3corrects recordfield only."
+}

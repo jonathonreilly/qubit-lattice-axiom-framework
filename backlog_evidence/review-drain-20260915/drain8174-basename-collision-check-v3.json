@@ -1,0 +1,28 @@
+{
+  "main": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "checked_paths": [
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/README.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md"
+  ],
+  "exceptions": [
+    "README.md",
+    "SKILL.md"
+  ],
+  "casefold_comparison": true,
+  "collisions": [],
+  "runtime_inputs_unchanged": true,
+  "runner_unchanged": true,
+  "renamed_payload_unchanged": true,
+  "tracked_index_clean": true
+}

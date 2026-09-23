@@ -1,0 +1,15 @@
+{
+  "failed_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-author-final-cache-v2.json",
+    "sha256": "e4a70afda60d393bd2fdfe8d08c0eb7ad04b158311888f4c11348a0a6e5b6530"
+  },
+  "previous_record": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-unit-final-v2.json",
+    "sha256": "493df842a818f76b51f998e02e3df1a0b41abdb3827e9cafbe9ab5d827da3f1b"
+  },
+  "new_record": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-unit-final-v3.json",
+    "sha256": "196279c944273dbbb6f2889cbc2e75e265b9bedb96749aa49daa08749bca1883"
+  },
+  "change": "Carry the independently confirmed appendix rename into its non_science_notes path field. Source/tree/input/reviewer report unchanged."
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8173",
+  "tree": "ea0bcc42f9ebb76f431610e598ca6ad6300c2538",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "sphere_static_finite_volume_gaussian_covariance_fixed_axis_response_and_projected_mode_sum_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/work_history/review_loop/pr8173/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4535
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4533
+    },
+    "declared_inputs": {
+      "hits": 8801,
+      "misses": 4688
+    }
+  },
+  "record_sha256": "c83c559ec0b724aad8d3e1ffdb74be0a5d91171837fe04c59bd48b6b531621a0",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

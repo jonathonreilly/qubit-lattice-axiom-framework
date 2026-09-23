@@ -1,0 +1,40 @@
+{
+  "status": "STATIC SYNTAX AND METADATA VERIFIED; adapters unexecuted",
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-build-staged-draft-v2.py",
+      "sha256": "99e209509e0756b5ffbc072d4b235fe3cee03cc1f61b8c4eca03a25f84d81b1c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-v1.py",
+      "sha256": "a0eaf9e49510d205678522a78b1d26acf734ea42684b4561c9788aed7c0c1bae"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-mutation-capture-v1.py",
+      "sha256": "5472569fcd62e622d0f9b51aeee37d3ab86feae8e5119a308c745480a65c197d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-builder-bindings-v1.json",
+      "sha256": "b75a3532a210f6cc9f56ded7172df90e581dbad3cd153497926a6bd465a9c209"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-plan-v1.json",
+      "sha256": "243f41f80ed34e71ada46eacdb1517b0be2dad4b13346fdff97d7eb74edb768f"
+    }
+  ],
+  "source_files_unchanged": 31,
+  "tracked_index_clean": true,
+  "base": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "early_review": {
+    "path": "/private/tmp/review-drain-20260915/drain8174-early-review-v3.json",
+    "sha256": "c69531fe6e86ef41a9e625743732d7856d937ab0accf52bd714f3ecdb958ec5b"
+  },
+  "cold_bindings": null,
+  "science_executions": 0,
+  "staging": 0,
+  "notes": [
+    "Builder v2 binds exact actual v3 review files and verdict; v1 retained unchanged.",
+    "Primary and mutation adapters require future immutable actual cold binding before dispatch.",
+    "One primary with 17 checks; 11 separately captured mutations, no baseline rerun; 900 seconds and 768 MiB sampled aggregate RSS per invocation."
+  ]
+}

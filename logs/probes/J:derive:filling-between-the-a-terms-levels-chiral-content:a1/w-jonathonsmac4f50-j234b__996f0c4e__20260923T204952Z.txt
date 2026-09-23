@@ -1,0 +1,29 @@
+PASS 1.1 at k = pi n the symbol is the scalar a0 + 2a(3 - 2|n|) (coin vector 0); sense chi_n = det(d sin k/dk) = (-1)^{|n|}
+PASS 1.2 multiplicities 1:3:3:1 and one sense per level; sum of senses = 0 :: senses by |n|: [1, -1, 1, -1]
+PASS 2.1a upper band of d.sigma: F = i tr(P[dP,dP]) = -1(1/2) sin(theta) (outward on the unit sphere); Chern = -1 x degree :: F = -sin(theta)/2, Chern = -1
+PASS 2.1b lower band of d.sigma: F = i tr(P[dP,dP]) = 1(1/2) sin(theta) (outward on the unit sphere); Chern = 1 x degree :: F = sin(theta)/2, Chern = 1
+PASS 2.2 near each zero d(pi n + q) = J_n q + O(q^3), J_n = diag((-1)^{n_j}); degree of d/|d| on a small sphere = det J_n = chi_n
+PASS 3.1 upper-band sheets carry -sum_{L_n<mu} chi_n, lower-band sheets +sum_{L_n<mu} chi_n = -sum_{L_n>mu} chi_n; total 0 at every filling :: mu in (-10a,-6a): upper +0, lower +0, total 0 ; mu in (-6a,-2a): upper +1, lower -1, total 0 ; mu in (-2a,2a): upper -2, lower +2, total 0 ; mu in (2a,6a): upper +1, lower -1, total 0 ; mu in (6a,10a): upper +0, lower +0, total 0
+PASS 3.2 per-band values: (-6a,-2a): +1/-1; (-2a,2a): -2/+2; (2a,6a): +1/-1; outside: 0
+PASS 3.3 with the occupied-region orientation every separate pocket carries -chi_n (electron or hole alike); right - left over the eight = 0
+PASS 4.1 h(k + pi(111)) - a0 = -(h(k) - a0)
+PASS 4.2 in the basis (k, k + pi(111)) eps = tau_x, and (tau_z x A + m tau_x x 1)^2 = tau_0 x A^2 + m^2 for any 2x2 A
+PASS 4.3 at a zero the 4x4 block is (L tau_z + m tau_x) x 1: eigenvalues +-sqrt(L^2+m^2), each TWICE (a degeneracy, not a gap)
+PASS 4.4 on that eigenspace <tau_z> = L/sqrt(L^2+m^2): the pair splits LINEARLY as +-(L/sqrt(L^2+m^2))|J q| - a Weyl point of sense sign(L) chi_n :: <tau_z> = L*(L + sqrt(L**2 + m**2))/(L**2 + L*sqrt(L**2 + m**2) + m**2)
+PASS 4.5 exact eigenvalues near a zero: +-sqrt((L +- q)^2 + m^2); their difference at q -> 0 is 2 L q/sqrt(L^2+m^2) + O(q^2)
+PASS 4.6 spectrum a0 +- sqrt((E_i(k) - a0)^2 + m^2): the smallest |E - a0| is |m|, reached exactly on the massless sheets E_i = a0
+PASS 4.7 for |mu - a0| > |m| the Fermi sheets are the massless ones at a0 +- sqrt((mu - a0)^2 - m^2): no pocket is gapped
+PASS 4.8 on the surface sum cos k = 0 the 4x4 block is tau_z x sigma.s + m tau_x: eigenvalues +-sqrt(|s|^2+m^2) each twice (a nodal surface)
+PASS 4.9 each pair (n, n+(111)) has L_nb = -L_n and chi_nb = -chi_n, so the upper Weyl point's sense sign(L) chi is the same from either member :: upper-point senses by |L|: [(2, -1), (2, -1), (2, -1), (6, 1)]
+exact part done in 0.3 s
+PASS E1 [executed] a = 0.2, m = 0.7: the zero's pair sits at sqrt(L^2+m^2) = 1.3892 and splits linearly with speed L/sqrt(L^2+m^2) = 0.8638 :: speed 0.863779
+PASS E2 [executed] link flux through a small sphere (orientation calibrated on d = q): upper band -chi_n, lower band +chi_n at all eight zeros :: raw identity-map value +1.000000, orientation factor -1
+EXEC E3 a=0.1 mu in (-6a,-2a): pockets by the |n| of the zeros they hold: upper: 3; lower: 0 | 1 | 1 | 2 | 1 | 2 | 2
+EXEC E3 a=0.1 mu in (-2a,2a): pockets by the |n| of the zeros they hold: upper: 2 | 2 | 2 | 3; lower: 0 | 1 | 1 | 1
+EXEC E3 a=0.1 mu in (2a,6a): pockets by the |n| of the zeros they hold: upper: 1 | 1 | 2 | 1 | 2 | 2 | 3; lower: 0
+EXEC E3 a=0.6 mu in (-6a,-2a): pockets by the |n| of the zeros they hold: upper: 3; lower: 0112122
+EXEC E3 a=0.6 mu in (-2a,2a): pockets by the |n| of the zeros they hold: upper: 2223; lower: 0111
+EXEC E3 a=0.6 mu in (2a,6a): pockets by the |n| of the zeros they hold: upper: 1121223; lower: 0
+EXEC E3 note: every zero lies in a pocket of one band or the other; a group's sheet carries -sum chi of its zeros (Step 3)
+total 0.7 s; PASS=19 FAIL=0
+SUMMARY: PARTIAL (free comparator, exact for every a0, a, m and every filling) the Fermi sheets' Berry charges add to zero at every Fermi level: per band -sum_{L_n<mu} chi_n (upper) and +sum_{L_n<mu} chi_n (lower) = +1/-1, -2/+2, +1/-1 in the three windows, and every separate pocket carries its own zero's sense, so right minus left = 0; no filling has gapless content of a single sense. With the staggered term the spectrum is a0 +- sqrt((E_i - a0)^2 + m^2): for a != 0 the zeros stay two-fold degenerate at a0 +- sqrt(L^2 + m^2) and split linearly (Weyl points of speed |L|/sqrt(L^2+m^2)), the only gap is |mu - a0| < |m|, and no pocket outside it is gapped. The interacting case (d) is stated, not proved. The task's HIT condition (a single-sense filling) is not met.

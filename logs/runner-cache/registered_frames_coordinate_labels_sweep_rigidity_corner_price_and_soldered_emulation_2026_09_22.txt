@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.py
+runner_sha256: e1b47e6fd22273a31b3d79fe5775e5bcabcf201891b78008e237b9a36310e2e2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.28
+status: ok
+----- stdout -----
+A. sweeps with no first formation
+[PASS] plaquette lemma: u_a+u_b = u_c+u_d mod 4 iff {a,b} = {c,d} :: 81 cases
+[PASS] frame lemma: (f1(a), f2(b), f3(c)) a permutation for all a, b, c forces every f_i constant :: 19683 triples on Z_3
+[PASS] torus Z_4^3 sweep: stationary hole-free records with c(0)=0 are exactly 6 :: 6 complete candidates searched; all affine, sigma(e_i) = u_pi(i)
+[PASS] sweep records carry ice (label rule) at all 8 torus vertices and the role letters at all 64 sites :: link occupied iff its odd label coordinate is 1
+B. corner growth from a first formation
+[PASS] K=3: P(hole-free) = P(frame) = 2/9 on boxes 2x2x2, 3x3x3, 6x3x2, 4x4x4 :: 6 frames of mass 1/27 each; finished states [27, 27, 75, 171]
+[PASS] the finished law is the same for three corner-growth orders (x-fastest, z-fastest, diagonal) :: 27 finished states on 3x3x2
+[PASS] K=4 axes: P(frame) = 3/8 = (K-1)(K-2)/K^2 :: [Fraction(3, 8), Fraction(3, 8)]
+[PASS] in corner growth the sites seeing only the corner are exactly its 3 forward neighbours, related by rotations :: so their values are i.i.d. given the corner
+[PASS] price bound: P(3 i.i.d. first-shell values pairwise distinct) = 6 e3(p) <= (m-1)(m-2)/m^2 :: 205 rational laws, equality at uniform; distinct axes = 6 q1 q2 q3 <= 2/9
+C. broadcast from a centre
+[PASS] broadcast: P(frame at the centre) = 48 prod(p) <= 48/6^6 = 1/972 :: uniform exact 1/972; skewed law 1280/3176523
+D. a designed order
+[PASS] designed order: the record is the frame sigma = identity with probability 1 :: boxes 2x2x2, 3x3x3, 5x3x2, 4x4x4, 6x5x4; the order fixes the frame
+[PASS] designed order: the corner's forward neighbours see different configurations :: formed neighbours [1, 2, 2]; one lone child, two closings
+[PASS] corner rule and designed rule are unsoldered: invariant under the 24 rotations on every arising configuration :: 602 + 114 configurations
+E. ice, roles and emulation
+[PASS] corner growth 7x7x7: every frame record has ice at the 8 interior vertices and correct role letters :: the carried ice configuration is the same for all 6 frames
+[PASS] soldered ice vertex-record rule on the star, corner growth: exact law (1/8)/C(3,3-m) :: m = occupied back-links; 20 ice configurations, no defect
+[PASS] emulator (coordinate letters, unsoldered): P(frame) = 2/9 and the pulled-back law equals the soldered law in each frame :: 896 configurations invariant under 24 rotations
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

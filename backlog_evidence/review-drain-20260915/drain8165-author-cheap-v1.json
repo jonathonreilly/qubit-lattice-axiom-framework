@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8165",
+  "tree": "6188178f9f64888bf5ba065157d0c4794e18eef9",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/repo/review_feedback/pr8165-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_magnetic_excursion_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_reflection_and_path_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/repo/review_feedback/pr8165-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_spatial_ground_path_limit_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_reflection_and_path_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/repo/review_feedback/pr8165-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_temporal_oscillation_coarse_current_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_coarse_current_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/repo/review_feedback/pr8165-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8771,
+      "misses": 4515
+    },
+    "packet_imports": {
+      "hits": 8758,
+      "misses": 4513
+    },
+    "declared_inputs": {
+      "hits": 8801,
+      "misses": 4668
+    }
+  },
+  "record_sha256": "d5994a3cef76e274658d2cd3213a830fcdc1a9746ee2d0d58830fd1fb9911b0f",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

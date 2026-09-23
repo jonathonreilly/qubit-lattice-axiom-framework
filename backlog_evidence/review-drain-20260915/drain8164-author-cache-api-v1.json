@@ -1,0 +1,162 @@
+[
+  {
+    "primary": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "packet_transitive_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "a596b1cd114ccc478570983735b14b464f80462eb6b2b3b947b8e881ad37f01b"
+      }
+    ],
+    "declared_input_fingerprint": "05df6cad8f551292594cf621b7b938d30539dacf0ab34d7dff6fbbe2f842b519",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "packet_transitive_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "13702c3e77cc77a02a8e8c44a2adf3e589c47a1ab46d3e2b2a66ae36f42acd17"
+      },
+      {
+        "path": "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "a596b1cd114ccc478570983735b14b464f80462eb6b2b3b947b8e881ad37f01b"
+      }
+    ],
+    "declared_input_fingerprint": "d083dc04920934465893c4fcd6c23a49aba4324b62ddde88766ee7098f83e53c",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+      "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "13702c3e77cc77a02a8e8c44a2adf3e589c47a1ab46d3e2b2a66ae36f42acd17"
+      },
+      {
+        "path": "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "a596b1cd114ccc478570983735b14b464f80462eb6b2b3b947b8e881ad37f01b"
+      },
+      {
+        "path": "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "fc81364d9e8e477ff837e7c09a46fc485b7d72fb61c237b83e294164eccea5de"
+      },
+      {
+        "path": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+        "sha256": "3f87037c9d628e39c04e6b4e532a70df3c09c3b24d940d74880623a12702ca86"
+      }
+    ],
+    "declared_input_fingerprint": "a977c343c2235fccd34575452a7b4c64e9cdf49fb53151de9fa103081e240099",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "packet_transitive_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "13702c3e77cc77a02a8e8c44a2adf3e589c47a1ab46d3e2b2a66ae36f42acd17"
+      },
+      {
+        "path": "docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "0d48d612ea58396707177a83ed0b44a52e3194379d94f2f9749da9f442804c36"
+      },
+      {
+        "path": "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "fc81364d9e8e477ff837e7c09a46fc485b7d72fb61c237b83e294164eccea5de"
+      }
+    ],
+    "declared_input_fingerprint": "dd3e49540dc73e94a26aefa6207ae7fe30fcbe30a93e4a73e92d51dc9229bd53",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "packet_transitive_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "73b47654882e92bf4ff41435f884c86a2d09823fb65260b79ee972f1f0799a9d"
+      }
+    ],
+    "declared_input_fingerprint": "30837458130e0a41397767be87322fb55d52d7ba19e377b3d18886145f0895ff",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "packet_transitive_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "8fd9b2b2be329ef58988a2882b93fdcc7d30c1d8b61030fbfbbd5d81c77d9e4d"
+      }
+    ],
+    "declared_input_fingerprint": "2cdb5ca6c7092c284e240e0a75c72064a8267b9cf907eb477cd052c44bfbd5fb",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "packet_transitive_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "27ad064b1c5c5bef018512eefc40c4fe81f88b4b12dc0d6deea48b1289701cd4"
+      }
+    ],
+    "declared_input_fingerprint": "5339ca9f58882ca95e2a40a14c6007e78551eedfc0549fa99302ab0ba9e5efbc",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "packet_transitive_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "04eda66101dd4cd09c5b15d1e356d0e36db3c69380c12c92e474b3ba54a5c783"
+      }
+    ],
+    "declared_input_fingerprint": "575e63d9640f00e3bd02510987e29689950b3cd0c6976c4a1592dcd467b80b58",
+    "cache_status": "missing"
+  }
+]

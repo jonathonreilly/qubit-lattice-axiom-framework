@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8167",
+  "tree": "4e343f18c0b143677700d2feb3e7683af36aa356",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_cover_source_identities_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_cover_source_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/repo/review_feedback/pr8167-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_sine_score_static_curl_limit_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_sine_score_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/repo/review_feedback/pr8167-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8768,
+      "misses": 4514
+    },
+    "packet_imports": {
+      "hits": 8757,
+      "misses": 4512
+    },
+    "declared_inputs": {
+      "hits": 8798,
+      "misses": 4667
+    }
+  },
+  "record_sha256": "203c50734c5f922f342f756dc0f6870fabd3ddb61c6a6cf28e5464c31291c608",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

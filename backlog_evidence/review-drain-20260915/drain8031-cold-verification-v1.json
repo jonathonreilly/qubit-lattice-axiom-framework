@@ -1,0 +1,14 @@
+{
+  "base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+  "staged_tree": "fef359464ea984c83e2f19df106b707d19317da5",
+  "draft_sha256": "9e07a3cc7071b7b1cbb0158f679d86c5ffc23f280ce6acd60308645e6264db2e",
+  "source_paths": 74,
+  "all_stage_disk_and_tree_hashes_match": true,
+  "archive_roundtrips": 70,
+  "v1_snapshots_verified": 2,
+  "bound_record_references_verified": 122,
+  "actual_parent_and_authorities_unchanged_from_original_policy_revision": true,
+  "current_main_preservation": "74 additions only; no replacement/deletion of main source",
+  "working_vs_index_clean": true,
+  "untracked_count": 0
+}

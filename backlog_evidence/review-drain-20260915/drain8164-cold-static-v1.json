@@ -1,0 +1,47 @@
+{
+  "tree": "a61c1aa27111156ac99ba6346a58ed184aa689aa",
+  "base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+  "source_paths": 196,
+  "exact_index_tree_match": true,
+  "same_as_early_prepared": true,
+  "all_input_hashes_verified": true,
+  "exact_archives": 178,
+  "actual_helper_discovery": [
+    {
+      "primary": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+      "discovered_helpers": []
+    },
+    {
+      "primary": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+      "discovered_helpers": []
+    },
+    {
+      "primary": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+      "discovered_helpers": [
+        "finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16"
+      ]
+    },
+    {
+      "primary": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+      "discovered_helpers": []
+    },
+    {
+      "primary": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+      "discovered_helpers": []
+    },
+    {
+      "primary": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+      "discovered_helpers": []
+    },
+    {
+      "primary": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+      "discovered_helpers": []
+    },
+    {
+      "primary": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+      "discovered_helpers": []
+    }
+  ],
+  "capture_plan_verified": true,
+  "primaries_or_gates_executed": 0
+}

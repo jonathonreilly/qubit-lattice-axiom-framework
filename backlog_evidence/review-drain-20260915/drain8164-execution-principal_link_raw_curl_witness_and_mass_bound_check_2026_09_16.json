@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"source_sha256\": \"1aaa604fc5ae5fde96980403a27f9dda2e6abb2ca580dc581589a8a32c575e41\",\n  \"domain\": \"free square with vertices {-1,0,1}^2\",\n  \"vertices\": 9,\n  \"links\": 12,\n  \"faces\": 4,\n  \"nonzero_link_angles_over_pi\": [\n    \"-1/2\",\n    \"1/2\",\n    \"-1/2\",\n    \"-1/2\",\n    \"1/2\",\n    \"1/2\"\n  ],\n  \"raw_curls_over_pi\": {\n    \"(-1, -1)\": \"0\",\n    \"(-1, 0)\": \"0\",\n    \"(0, -1)\": \"0\",\n    \"(0, 0)\": \"2\"\n  },\n  \"theta_norm_squared_over_pi_squared\": \"3/2\",\n  \"curl_norm_squared_over_pi_squared\": \"4\",\n  \"mass\": \"1/10\",\n  \"action\": \"3/5\",\n  \"claimed_lower_bound\": 4.095885826452084,\n  \"exact_failure_certificate\": \"9*(83/200) > 3/5 and pi^2 > 9\",\n  \"principal_face_curls_vanish\": true,\n  \"scope\": \"counterexample to the displayed raw-curl comparison only\",\n  \"status\": \"PASS\",\n  \"canonical_completed_families\": [\n    \"exact_failure_certificate\"\n  ],\n  \"canonical_total\": 1\n}\nTOTAL: PASS=1 FAIL=0\nper_element: rational-angle action inequality\nper_site: nine-vertex free square\nper_mode: not executed: no spectral/Fourier modes\nper_block: one exact finite counterexample only\nlattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation\n",
+  "stderr": "",
+  "elapsed_sec": 0.04305100440979004,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.json",
+    "sha256": "1613ac56f0a744f5db3f0bdd212337fe1e1b3338b41a544765115c91604fb76d"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 32825,
+    "samples": 2,
+    "peak_tree_rss_bytes": 39911424,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8164-capture.py",
+  "capture_script_sha256": "ce5928f64811e794de96beb1c99e55bbe2e4fac7e76c2ea09408f4ce5db3e9c5"
+}

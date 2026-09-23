@@ -1,0 +1,64 @@
+{
+  "pr": 8031,
+  "reviewer": "same-session /root/review_8031",
+  "stage": "staged cold source confirmation v1",
+  "verdict": "SOURCE_CONFIRMED_FOR_BOUNDED_CAPTURE",
+  "landing_pass": false,
+  "base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+  "staged_tree": "fef359464ea984c83e2f19df106b707d19317da5",
+  "draft_sha256": "9e07a3cc7071b7b1cbb0158f679d86c5ffc23f280ce6acd60308645e6264db2e",
+  "source_note_sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+  "runner_sha256": "662523c65e08ac1a73da5a232bd98de5145a21c6e073a9567cc008ed8b01035a",
+  "source_verification": {
+    "base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+    "staged_tree": "fef359464ea984c83e2f19df106b707d19317da5",
+    "draft_sha256": "9e07a3cc7071b7b1cbb0158f679d86c5ffc23f280ce6acd60308645e6264db2e",
+    "source_paths": 74,
+    "all_stage_disk_and_tree_hashes_match": true,
+    "archive_roundtrips": 70,
+    "v1_snapshots_verified": 2,
+    "bound_record_references_verified": 122,
+    "actual_parent_and_authorities_unchanged_from_original_policy_revision": true,
+    "current_main_preservation": "74 additions only; no replacement/deletion of main source",
+    "working_vs_index_clean": true,
+    "untracked_count": 0
+  },
+  "findings": [],
+  "resolved_findings": [
+    "8031-N1 live semantic contradiction removed in v2; negative proof exact archive only",
+    "8031-N5 execution scopes corrected, total17=16math+1resource",
+    "8031-GOV historical review/campaign/generated records archived without present authority",
+    "8031-EVIDENCE source-side note and parent literal pins correct; execution evidence pending"
+  ],
+  "science": "Confirm previously read complete v2 positive supplied-model proof on identical staged bytes: arbitrary tensor trace identity; actual Haar compression; shell support and highest-weight kernel/eigenvalue/norm identity; balanced shell energy; distinct-link shared-color projection/union bound; conditioned normalization and trace distance. No changed premises or new scientific interaction found. Prior independent controls remain applicable to unchanged math region; primary is not rerun in reviewer lane.",
+  "recovery": "All70 original stage0 gzip payloads decode to original hashes; original path/mode/blob/dispositions match reviewed inventory. Complete native/root negative proofs and initial R0 failure retained. Both externalv1 snapshots match frozen hashes and are bound by unit references. No archive treated as present supporting proof or audit authority.",
+  "main_interactions": "Actual compact-cutoff parent, framework premise sources, registry and relevant review/no-go/proof governance unchanged from631d6b. Main additions include unrelated bounded Wilson/rotor packages. Two helper registries add other explicit claim IDs only; no PR8031 entry, parser semantics or helper expansion changes. Candidate delta consists of74 additions only and overwrites/deletes no current-main bytes.",
+  "dependency_boundary": "Ownnote and actual cutoff source are literal inputs; runner source also bound. No local helpers or hidden runtime inputs. Static-source theorem is context only. Archive README is historical citation, not a load-bearing premise. No inherited full negative certificate is presumed landed.",
+  "resource_acceptance": {
+    "accepted": true,
+    "programs": 1,
+    "timeout_seconds": 180,
+    "rss_limit_MiB": 180,
+    "expected_total": 17,
+    "math_checks": 16,
+    "resource_checks": 1,
+    "reason": "Fixed57x57 exact SymPy construction and finite products; no grid scaling or helper primary. Original limit retained, independent prior raw-matrix controls verified math. Symbolic peak not inferred from entry count; externally monitored capture must enforce stated budget.",
+    "dispatch": "Root dispatch only; this review performs no capture."
+  },
+  "negative_certification": "DEFERRED, not PASS and not mathematical refutation. Preserve original PR head branch for unresolved certification. Scoped positive identities are not a five-route certificate.",
+  "remaining": "One authorized bounded capture then canonical input/source-bound cache verification, combined mechanical gate, fresh remote-head/current-main preservation and same-session final evidence confirmation.",
+  "executions": {
+    "primary": 0,
+    "capture": 0,
+    "pipeline": 0,
+    "audit": 0
+  },
+  "evidence_sha256": {
+    "drain8031-author-unit-draft-v1.json": "9e07a3cc7071b7b1cbb0158f679d86c5ffc23f280ce6acd60308645e6264db2e",
+    "drain8031-early-affected-review-v2.json": "7ce6fa353096615cc97bd84c773213e9f24a307ecaf900601e82e6996963f89a",
+    "drain8031-cold-verification-v1.json": "b2d02f5d77c5c0b517b8a2358e5e4f3437d93cf2f46750d4756e4e3b7f1168f2",
+    "drain8031-capture-plan-v1.json": "e79ba1f9d17ca5942c6bc0cfef4159f9f6f37b85764930d513d2284d6aabe5fb",
+    "drain8031-author-prepared-v2.json": "f206fc8429d05078570eb74b21a14b6b7ed025e10ffb5284b3848bba8bcc181d",
+    "drain8031-controls.json": "1573e34bbeb386c81ef25c67da889dbf5341906bcd7a76d2e23e4dfa1221d1e1"
+  }
+}

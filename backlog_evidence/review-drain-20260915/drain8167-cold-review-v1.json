@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-09-23T02:29:16.837933+00:00",
+  "reviewer_session": "/root/review_8167",
+  "verdict": "PASS_WITH_BOUNDED_CLAIMS_SOURCE_ONLY",
+  "base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+  "tree": "4e343f18c0b143677700d2feb3e7683af36aa356",
+  "draft_sha256": "203c50734c5f922f342f756dc0f6870fabd3ddb61c6a6cf28e5464c31291c608",
+  "early_report_sha256": "3f9bd0c27e60a76129108664215174158f2fa3172eb02db90710d7d6e6be5681",
+  "archive_manifest_sha256": "17db2932e98ec4e93418d42e9a378dbb86a6b17bbef1b28f5614476a0ffa56ba",
+  "source_paths_verified": 68,
+  "original_recoveries_verified": 116,
+  "staged_equals_reviewed_snapshot": true,
+  "index_equals_tree": true,
+  "working_source_equals_index": true,
+  "current_main_preservation": "All68 candidate paths are additions; no current-main path modified/deleted. Frozen mandatory premise/governance authority inputs unchanged. New current-main helper registry additions only concern other claims, including temporal Wilson; they neither add a PR8167 helper nor alter discovery semantics. PR8165/8166 remain context, not imports.",
+  "authority_inputs_unchanged": [
+    "docs/CANONICAL_HARNESS_INDEX.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+    "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+    "docs/audit/README.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/audit/data/premise_decision_history.json",
+    "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+    "docs/repo/CONTROLLED_VOCABULARY.md",
+    "docs/repo/DEFERRED_DECISIONS.md",
+    "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md"
+  ],
+  "actual_cache_api_checks": [
+    {
+      "runner": "scripts/compact_rotor_cover_source_check_2026_09_16.py",
+      "sha256": "6e36daccb31eccc081a7e1c992d7402e37a5e4061927e62634f56c73ce5dec2a",
+      "input_fingerprint": "07bd1488e7fccdbe984ccfaaac8116cf447826945d3e92a32f62faf524ab935f"
+    },
+    {
+      "runner": "scripts/compact_rotor_sine_score_check_2026_09_16.py",
+      "sha256": "e90f995637b707fa435dd087862786def65a76ce58f3e36bf140e93abb645cb4",
+      "input_fingerprint": "b82b83c56305d29d7d78976f502a9007d96db7e7d84e0335ccd64b674f6ec536"
+    }
+  ],
+  "scientific_conclusion": "Both complete positive proofs and original computational ASTs remain byte-identical to prepared-v1 reviewed source. Explicit supplied Hamiltonian/state/source/temperature premises and all equations preserved. Full sparse construction and negative implication remain exact readable deferred science; no disguised live negative certification.",
+  "resource_assessment": "Serial two primaries,120s each, external805306368-byte process-tree RSS limit. Reasonable source-derived625/729 dense matrix bound; not measured performance. Preserve failures; no automatic retry or cap escalation.",
+  "scope_disposition": "Partial positive closure only. Keep original branch physics-loop/toe-compact-winding-20260916 while formal negative certification is deferred.",
+  "findings": [],
+  "primary_executions": 0,
+  "gates_run": 0,
+  "source_edits": 0,
+  "landing_ready": false,
+  "remaining": [
+    "Actual final source/input-bound bounded captures and execution identity equality.",
+    "Original same-session final evidence confirmation.",
+    "Root combined gates and final unchanged-head/current-main checks."
+  ],
+  "bound_capture_plan_sha256": "bc0fcd6e6dba3aa773109ad8d2b53e6b18ab81763f588df7c16b48ed3f79e851"
+}

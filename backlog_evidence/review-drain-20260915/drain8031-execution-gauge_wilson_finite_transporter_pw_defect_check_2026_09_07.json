@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py\nper_element: 5 checks; one-link matrix dimension, two Cartan tests, trace offset and R0 block\nper_site: 0 checks; checked and not executed; no spatial-site resolution\nper_mode: 4 checks; finite Gram Hermiticity/projection/rank and defect projection\nper_block: 8 checks; one 57x57 block: defect rank/shell/interior/kernel/norm, energy-shell, fake identity and one resource check\nlattice_wide: 0 checks; checked and not executed; all-R and distinct-link path claims use written proofs, not lattice execution\nTOTAL: PASS=17 FAIL=0\nseconds: 2.8424637080170214; rss_MiB: 66.203125\nsource_sha256: 662523c65e08ac1a73da5a232bd98de5145a21c6e073a9567cc008ed8b01035a\n",
+  "stderr": "",
+  "elapsed_sec": 2.9648730754852295,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.json",
+    "sha256": "5986891423adaaa1cf879b8182016c6faa25493d10b1b86ba690e973e5c8878e"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 34570,
+    "samples": 61,
+    "peak_tree_rss_bytes": 102121472,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8031-capture.py",
+  "capture_script_sha256": "148e4c17cbaa0e2f3f342fd4a01aadb363c0a7415b8dbee5136b76634838ceb0"
+}

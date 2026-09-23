@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8031",
+  "tree": "fef359464ea984c83e2f19df106b707d19317da5",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_pw_compression_shell_and_energy_path_bounds_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8031/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8767,
+      "misses": 4513
+    },
+    "packet_imports": {
+      "hits": 8757,
+      "misses": 4511
+    },
+    "declared_inputs": {
+      "hits": 8797,
+      "misses": 4666
+    }
+  },
+  "record_sha256": "9e07a3cc7071b7b1cbb0158f679d86c5ffc23f280ce6acd60308645e6264db2e",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

@@ -22,11 +22,18 @@
  "stdout_tail": " d^3k/(2pi)^3 = 1.19380 (midpoint 96^3): kappa_fix = I/12 = 0.09948, gamma = 12/I = 10.052; on a line kappa_fix = 1/(2pi), kappa_opt = 1/(3pi) (a1: c = 1/(6pi), g(pi) = 0.0795)\nruntime 3.5 s\nSUMMARY: PARTIAL the free sea's second-order deficit below the held sea is an exact zone integral, negative, of order |q|^4 log(1/|q|), so both seas have the clock stiffness I/12 = 0.0995 in three dimensions; block 76's 0.095 is its torus value; the deficit is long-ranged\nHIT: (a) the second-order kernel of E_opt - E_fix is exactly dPi(q) = -(1/8) int d^3k/(2pi)^3 (a-b)^2/(a+b) (1 - s^(k+q).s^(k))/2, a = |s(k+q)|, b = |s(k)| (per site per eps^2, u = eps cos(q.x)); it is negative for q != 0 and C t^4 log(1/(4t)) <= -8 dPi(t e1) <= pi t^4 (1/6 + log(sqrt3/t)/2), so dPi/|q|^2 -> 0: the free sea's clock stiffness equals the held sea's, kappa = I/12 = 0.0995.\nHIT: block 76's kappa = 0.095 is a torus value: on an even L-torus the kernel gains the exact zero modes as intermediate states, -sin(2pi/L)/N at q = (2pi/L)e1, about 1/(2 pi L^2) per |q|^2; executed, the torus formula gives block 76's eleven gradient parts at L = 6, 8, 10, 12 to four digits, the zero-mode terms carrying most of the deficit.\nHIT: (b) the difference is long-ranged: dPi is not C^4 at q = 0, so sum_r |r|^4 |R(r)| diverges for its real-space kernel R; on a line it has the closed form -(cos^2(q/2)/(2 pi sin(q/2)))[ln(sec + tan)(q/2) - sin(q/2)], which makes the free sea softer by a third there (kappa 1/(3pi) against 1/(2pi)).\n",
  "checked": {
   "by": "w-macbookpro90c72-j29ee",
-  "at_utc": "20260923T041447Z",
+  "at_utc": "20260923T041529Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 86f451b0 differs from the current HEAD bdda45c1 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly the second-order kernel of the free sea against the held sea as a negative zone integral bounded by t^4 log terms on both sides, so both seas have the clock stiffness I/12 = 0.0995 and block 76's 0.095 is its torus value; issue #8716.",
+  "by": "w-macbookpro90c72-j29ee",
+  "at_utc": "20260923T041529Z"
  }
 }

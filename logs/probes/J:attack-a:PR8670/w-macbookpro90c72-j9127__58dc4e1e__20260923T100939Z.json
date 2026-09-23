@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8670",
+ "type": "judgment",
+ "lane": "formation-arrow-order-laws-20260922",
+ "worker": "w-macbookpro90c72-j9127",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/pr8670/witness_realizability.py",
+ "seed": 58179,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "58dc4e1e",
+ "started_utc": "20260923T100939Z",
+ "elapsed_s": 555.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: every stated witness is realized in the declared setting (windows, antipodal corners, the exact 599/2048 by running the soldered rule on all 40320 orders, 60 disjoint neighbourhoods in a 1620-site window, the 48 sweeps and their invariance, the 5x5x5 box)"
+ },
+ "review": "Witness realizability finds no purchase: every witness of the order-law note is realized in the declared setting - the 5-site path, 3x3 plane and 2x2x2 cube are the Z^3 windows named with E[k] = 2, 38/15, 2 over all orders; the antipodal cube corners have disjoint closed neighbourhoods and both nucleate in 2520/40320 = 1/16; the exact 599/2048 is reproduced by running the soldered role-letter rule on all 40320 cube orders (completion (1/8)^(k-1) on each; k distribution 8640/24480/5760/1440) with the bound 121/128 above it; 60 sites at 3Z^3 + (1,1,1) have disjoint interior closed neighbourhoods in a 1620-site window with bound 0.00198 < 1/100; the 48 sweeps of the cube are distinct with one nucleation each, their mixture is invariant under the 24 rotations and no single sweep is; on a 5x5x5 box all 48 sweeps have one nucleation and are translation-invariant. No HIT, which matches the pattern's no-purchase outcome.",
+ "what": "PR #8670 (docs(campaign): order laws for extended soldered supports): attack ORDER_LAWS_FOR_EXTENDED_SOLDERED_SUPPORTS_INDEPENDENT_CLOCKS_NUCLEATE_AT_POSITIVE_DENSITY_AND_SWEEPS_HAVE_NO_FIRST_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-22.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/formation-arrow-order-laws-20260922; git show origin/claude/formation-arrow-order-laws-20260922:<note>. Create probes/work/pr8670/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8670/<script>.py\"",
+ "stdout_sha256": "483c666edab8b0ed43c26a33b4bc33e50c0c7e84029f3c14ec2a33845fe37c2a",
+ "stdout_tail": "ok W1: 5-site path: 5 sites, 4 bonds, E[k] = 2; 3x3 plane: 9 sites, 12 bonds, E[k] = 38/15; 2x2x2 cube: 8 sites, 12 bonds, E[k] = 2 (all orders), equal to sum 1/(1 + deg) and to the note's 2, 38/15, 2\nok W2: antipodal corners: closed neighbourhoods disjoint (True), both nucleate in 2520 of 40320 orders = 1/16\nok W3: the rule run on all 40320 cube orders completes with (1/8)^(k-1) on each; k distribution [(1, 8640), (2, 24480), (3, 5760), (4, 1440)]; uniform-race completion 599/2048 (= the note's exact 599/2048); bound 121/128 above it\nok W4: 60 sites at 3Z^3 + (1,1,1) in the 9x12x15 window (1620 sites): closed neighbourhoods pairwise disjoint and inside (degree 6, p = 1/7); bound at m = 60 = 0.00198 < 1/100 (first below 1/100 at m = 48)\nok W5: 48 signed frames, 48 distinct sweeps, one nucleation each; the mixture is invariant under all 24 proper rotations and each single sweep is fixed only by the identity\nok W6: 5x5x5 box, all 48 frames: one nucleation (the corner), every other site has an earlier neighbour, s - d1 always precedes s, and the order is translation-invariant\nSUMMARY: pattern has no purchase on this note: every stated witness is realized in the declared setting (windows, antipodal corners, the exact 599/2048 by running the soldered rule on all 40320 orders, 60 disjoint neighbourhoods in a 1620-site window, the 48 sweeps and their invariance, the 5x5x5 box)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9127",
+  "at_utc": "20260923T101856Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

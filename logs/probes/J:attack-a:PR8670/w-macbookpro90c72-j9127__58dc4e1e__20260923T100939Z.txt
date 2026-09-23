@@ -1,0 +1,7 @@
+ok W1: 5-site path: 5 sites, 4 bonds, E[k] = 2; 3x3 plane: 9 sites, 12 bonds, E[k] = 38/15; 2x2x2 cube: 8 sites, 12 bonds, E[k] = 2 (all orders), equal to sum 1/(1 + deg) and to the note's 2, 38/15, 2
+ok W2: antipodal corners: closed neighbourhoods disjoint (True), both nucleate in 2520 of 40320 orders = 1/16
+ok W3: the rule run on all 40320 cube orders completes with (1/8)^(k-1) on each; k distribution [(1, 8640), (2, 24480), (3, 5760), (4, 1440)]; uniform-race completion 599/2048 (= the note's exact 599/2048); bound 121/128 above it
+ok W4: 60 sites at 3Z^3 + (1,1,1) in the 9x12x15 window (1620 sites): closed neighbourhoods pairwise disjoint and inside (degree 6, p = 1/7); bound at m = 60 = 0.00198 < 1/100 (first below 1/100 at m = 48)
+ok W5: 48 signed frames, 48 distinct sweeps, one nucleation each; the mixture is invariant under all 24 proper rotations and each single sweep is fixed only by the identity
+ok W6: 5x5x5 box, all 48 frames: one nucleation (the corner), every other site has an earlier neighbour, s - d1 always precedes s, and the order is translation-invariant
+SUMMARY: pattern has no purchase on this note: every stated witness is realized in the declared setting (windows, antipodal corners, the exact 599/2048 by running the soldered rule on all 40320 orders, 60 disjoint neighbourhoods in a 1620-site window, the 48 sweeps and their invariance, the 5x5x5 box)

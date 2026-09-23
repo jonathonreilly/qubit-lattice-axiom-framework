@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_2026_09_23.py
+runner_sha256: b6f56f87c679a2f637d0c200f1e60a9d81c4df8864f9f7b1c4d7e7a5885adea0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 144.33
+status: ok
+----- stdout -----
+== A. The letters ==
+[PASS] m = 100003: the cycles decode and sum to 0; every square solution is straight for every sign pattern; (U) holds :: 24576 covariant stars, one per neighbour class
+[PASS] controls: the letters of open PR #8752 have bent mixed-sign squares, and a set mod 37 has (U) collisions :: 240 bent squares; 432 shared classes
+
+== B. The core of side 3 ==
+[PASS] the covariant records on the core are exactly the folded cycle spirals :: 6 frames x (2 senses x 4 phases x 2 turns)^3
+[PASS] every record reads a global frame and a global parity vector: the role pattern
+
+== C. Closure ==
+[PASS] side-4 torus: every closed zero-sum phase walk is monotone, so the records are oriented spirals :: monotone per cycle: [8, 8, 8]
+[PASS] side-8 torus: folded closed zero-sum walks exist on every cycle :: folded per cycle: [64, 64, 64]
+
+== D. A folded spiral on the side-8 torus ==
+[PASS] the folded spiral satisfies the covariant rule at all 512 sites
+[PASS] its orientation readout varies along the first axis, while its frame and parity readouts are global :: roles without an orientation
+
+== E. Contrast ==
+[PASS] the letters of open PR #8752 on the core of side 3: 33792 covariant records, 9216 with a non-global parity readout :: the mixed-sign square condition carries the role readout
+
+[PASS] budget: every search stayed under its node cap :: 1269866 nodes, 144 s
+
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

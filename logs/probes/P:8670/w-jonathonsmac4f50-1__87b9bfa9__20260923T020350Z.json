@@ -1,0 +1,36 @@
+{
+ "task": "P:8670",
+ "type": "pr-reexecution",
+ "lane": "formation-arrow-order-laws-20260922",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8670",
+ "pr": 8670,
+ "branch": "claude/formation-arrow-order-laws-20260922",
+ "git_sha": "87b9bfa9",
+ "started_utc": "20260923T020350Z",
+ "elapsed_s": 6.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/order_laws_nucleation_density_and_sweep_laws_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=10 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "1d423be04128f4acc6cd9f388b7b686fe54e0aafd71961465ab93b3ae652dd06",
+ "stdout_tail": "PR #8670: docs(campaign): order laws for extended soldered supports\nbranch claude/formation-arrow-order-laws-20260922 (base main)\nrunners in the PR: 1\n== scripts/order_laws_nucleation_density_and_sweep_laws_2026_09_22.py: rc=0 PASS=10 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T020356Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

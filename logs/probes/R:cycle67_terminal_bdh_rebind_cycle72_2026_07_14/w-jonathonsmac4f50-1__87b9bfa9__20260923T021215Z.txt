@@ -1,0 +1,47 @@
+FAIL A01 note exists
+PASS A02 source is exactly the completed Cycle-67 record map
+PASS A03 source has 181 records = 90 base + 91 Cycle-67 additions :: (181, 90, 91)
+PASS A04 source already contains exact X_B/Z_A/Z_C endpoints
+PASS B01 actual terminal overlaps exactly 11 old guide/output sites :: {(2, -2, 0): ('L8', 'G0'), (3, -2, 0): ('L7', 'G2'), (3, 0, 0): ('Z_C', 'Z_C'), (1, -2, 1): ('L10', 'L1'), (2, -2, 2): ('L10', 'L1'), (2, -1, 2): ('L11', 'G2'), (2, -2, 1): ('L9', 'K'), (1, 0, 0): ('Z_A', 'Z_A'), (2, 0, 0): ('X_B', 'X_B'), (2, -1, 1): ('L10', 'G0'), (2, -3, 0): ('L7', 'G2')}
+PASS B02 overlap is three identical outputs plus eight preserved cable labels
+PASS B03 no occupied old guide coordinate is overwritten
+PASS B04 all 31 additions are an exact-content subset of Cycle 63
+PASS B05 exactly the 11 obsolete preguides and optional OY image are omitted :: [(-1, -3, -1), (-1, -2, -1), (-1, 0, -4), (-1, 0, -3), (0, 1, -4), (0, 1, -3), (2, -3, 1), (2, 1, -1), (3, -2, 1), (3, -1, 1), (3, 1, -1), (3, 3, 1)]
+PASS C01 new table has 27 canonical rows :: 27
+PASS C02 new table has 612 proper-cubic raw rows :: 612
+PASS C03 full Cycle-60/67/72 union has 147 canonical rows :: 147
+PASS C04 full union has 3,206 proper-cubic raw rows :: 3206
+PASS C05 every union raw input is single-valued
+PASS C06 all three rotated input domains are pairwise disjoint
+PASS C07 construction declares 31 additions :: Counter({'D1': 4, 'H1': 4, 'B1': 4, 'B0': 2, 'D0': 2, 'H0': 2, 'U': 2, 'OZ': 2, 'BTG': 1, 'AUXY': 1, 'BTP': 1, 'BTQ': 1, 'AUXZ': 1, 'TY': 1, 'TZ': 1, 'TJ': 1, 'OY': 1})
+PASS D01 first D_y class is the singleton selected by X_B
+PASS D02 first D_z class is the singleton selected by X_B plus preserved L10
+PASS D03 D1+Z_C class is exactly the two intended H signals
+PASS D04 only four staged classes are pairs
+PASS D05 every other staged class is singleton
+PASS E01 official generated map is exactly the Cycle-14 B/D/H projection :: {(2, 1, 0): 'D1', (2, 0, 1): 'D1', (3, 0, 1): 'H1', (3, 1, 0): 'H1', (1, 1, 0): 'B1', (1, 0, 1): 'B1', (1, 2, 0): 'B0', (1, 0, 2): 'B0', (1, 3, 0): 'B1', (2, 2, 0): 'D0', (2, 0, 2): 'D0', (2, 3, 0): 'D1', (2, 1, 1): 'B1', (3, 1, 1): 'D1', (3, 0, 2): 'H0', (3, 2, 0): 'H0', (3, 3, 0): 'H1', (4, 1, 1): 'H1'}
+PASS E02 role census is exact six B / six D / six H
+PASS E03 all thirteen new auxiliaries avoid current official support
+PASS F01 compiled condition count is 49 :: 49
+PASS F02 reachable-state count is 465 :: 465
+PASS F03 append-edge count is 1,307 :: 1307
+PASS F04 all schedules join one complete terminal :: (31,)
+PASS F05 graph has no parasite :: []
+PASS F06 graph has no output conflict :: frozenset()
+PASS G01 D_y and D_z are the only two initial writes and genuinely commute
+PASS G02 each early H signal requires its own D signal
+PASS G03 each first B requires its own D signal
+PASS G04 first B and first H commute independently after each D
+PASS G05 chronology is not strict B<D<H
+PASS G06 isolated B5 is always the last B
+PASS G07 D5 never precedes B5 and H5 never precedes D5
+PASS G08 complete next header implies every B and D record
+PASS H01 six final H writes are exactly the translated next header
+PASS H02 next q/a/b/c remain open :: q'=(3, -1, 0), data'=((4, 0, 0), (5, 0, 0), (6, 0, 0))
+PASS H03 translated Cycle-14 preparation interface is ready
+PASS H04 all new auxiliaries avoid the fresh next-only block
+PASS H05 terminal decodes exactly current and translated programs :: (Program(trigger=(0, 0, 0), forward=(1, 0, 0), transverse=(0, 1, 0)), Program(trigger=(3, 0, 0), forward=(1, 0, 0), transverse=(0, 1, 0)))
+
+NEW_ROWS=27 UNION_ROWS=147 ADDITIONS=31 CONDITIONS=49
+STATES=465 EDGES=1307 TERMINALS=1
+SUMMARY: 42 PASS / 1 FAIL

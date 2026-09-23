@@ -1,0 +1,14 @@
+PR #8626: physics-loop: admissibility induced-law block 81 - the record gas never makes the chessboard a rest mass needs; binding grows only around loops; content order gives the walk no gap
+branch physics-loop/admissibility-induced-law-block81-the-record-gas-never-makes-the-chessboard-a-rest-mass-needs-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_record_gas_never_makes_the_chessboard_a_rest_mass_needs_loops_bind_content_order_no_gap_2026_09_22.py: rc=0 PASS=20 FAIL=0
+   mutation records_repel_when_a_loop_closes: expected B observed B ok
+   mutation bond_across_components_binds: expected B observed B ok
+   mutation an_arrangement_lighter_than_free: expected C observed C ok
+   mutation chessboard_is_the_heaviest_arrangement: expected C observed C ok
+   mutation staggered_order_at_the_neutral_scale: expected D observed D ok
+   mutation chessboard_is_the_mode_at_the_neutral_scale: expected D observed D ok
+   mutation content_chessboard_gaps_the_walk: expected E observed E ok
+   mutation uniform_content_gaps_the_walk: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

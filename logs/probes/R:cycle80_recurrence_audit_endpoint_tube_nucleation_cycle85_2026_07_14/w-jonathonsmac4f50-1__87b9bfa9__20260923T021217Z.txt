@@ -1,0 +1,70 @@
+FAIL A01 note exists
+PASS A02 proper cubic group has 24 rotations
+PASS A03 Cycle 80 baseline runner remains internally green
+PASS B01 exact connected-triple enumeration gives eight opposite-colour neighbours :: (8, 18)
+PASS B02 Cycle-80 launcher triple attains the eight-neighbour bound
+PASS B03 footprint has the forced 9:8 bipartite census :: {0: 9, 1: 8}
+PASS B04 all three phase paths have same-colour launcher endpoints
+PASS B05 scoped lower bound is exactly 2*8+1=17 and is attained
+PASS C01 every Cycle-80 rule is strict nearest-neighbour
+PASS CA2 four-layer induction window is 18 states / 18 edges :: (18, 18, 18)
+PASS CA3 window reaches the complete next layer
+PASS CA4 only the exact following seed crosses the window :: frozenset({((2, 2, 2), 'R_C22')})
+PASS CA5 induction window has no conflict or dead terminal
+PASS CB2 four-layer induction window is 18 states / 18 edges :: (18, 18, 18)
+PASS CB3 window reaches the complete next layer
+PASS CB4 only the exact following seed crosses the window :: frozenset({((2, 3, 1), 'R_A31')})
+PASS CB5 induction window has no conflict or dead terminal
+PASS CC2 four-layer induction window is 18 states / 18 edges :: (18, 18, 18)
+PASS CC3 window reaches the complete next layer
+PASS CC4 only the exact following seed crosses the window :: frozenset({((2, 1, 1), 'R_B11')})
+PASS CC5 induction window has no conflict or dead terminal
+PASS D6 completed rear/interior/front quotient is quiet except next seed :: {(7, 1, 1): frozenset({'R_B11'})}
+PASS D7 completed rear/interior/front quotient is quiet except next seed :: {(8, 2, 2): frozenset({'R_C22'})}
+PASS D8 completed rear/interior/front quotient is quiet except next seed :: {(9, 3, 1): frozenset({'R_A31'})}
+PASS D09 phase-local nonseed rows require an existing same-phase predecessor
+PASS E01 Cycle 75 literally imports the Cycle-72 union
+PASS E02 current live-safe joint endpoint is Cycle 78
+PASS E03 chosen D1 rear cap is generated, not supplied
+PASS E04 rear cap has both endpoint records in mandatory ancestry
+PASS F01 transform maps the standard rear cap onto the live D1 record
+PASS F02 bridge has exactly 17 A records plus nine finite guides
+PASS F03 all 26 staged bridge classes are singleton
+PASS F04 launcher is five-neighbour caged
+PASS F05 every bridge record is a mandatory ancestor of the launcher :: 26/26
+PASS G01 selected/bridge/recurrent raw domains are pairwise disjoint
+PASS G02 corrected composed law is 236 canonical / 5,240 raw rows :: (236, 5240)
+PASS G03 corrected composed law is raw single-valued
+PASS H01 terminal-to-tube graph is 30 conditions / 291 states / 780 edges :: (30, 291, 780)
+PASS H02 complete bridge state is reachable
+PASS H03 only the exact first B seed crosses the bridge :: frozenset({((2, 5, 0), 'R_B11')})
+PASS H04 bridge graph has no conflict
+PASS I01 endpoint/bridge interleaving graph is pinned :: (109, 1305172, 8753059)
+PASS I02 complete endpoint plus bridge is reachable
+PASS I03 endpoint/bridge graph has only the exact first B frontier :: frozenset({((2, 5, 0), 'R_B11')})
+PASS I04 endpoint/bridge graph has no conflict
+MIXED ScanResult(interface_candidates=496, retained_candidates=245, contexts=115957, certified_wrong_contexts=1143, certified_wrong_classes=60, feasible_wrong_contexts=0, feasible_wrong_classes=(), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=312, feasible_phase_blockers=0)
+PASS J01 composite has 73 downstream records / 18 availability masks :: (73, 18)
+PASS J02 full mixed scan exhausts 115,957 contexts :: 115,957
+PASS J03 all 1,143 apparent wrong contexts are ancestry-certified :: (1143, 60)
+PASS J04 no feasible mixed wrong/off-footprint write remains :: ()
+PASS J05 no feasible mixed conflict or blocker remains
+PASS K00 recurrence is quiescent before the all-ancestor launcher
+PASS K01 transformed horizon counters are exact :: (54, 308, 797)
+PASS K01 transformed horizon exposes only its next seed
+PASS K02 transformed horizon counters are exact :: (86, 325, 814)
+PASS K02 transformed horizon exposes only its next seed
+PASS K03 transformed horizon counters are exact :: (119, 342, 831)
+PASS K03 transformed horizon exposes only its next seed
+PASS K06 transformed horizon counters are exact :: (216, 393, 882)
+PASS K06 transformed horizon exposes only its next seed
+PASS K09 transformed horizon counters are exact :: (313, 444, 933)
+PASS K09 transformed horizon exposes only its next seed
+PASS L01 live selected endpoint inventory is 93 roles
+PASS L02 recurrence and endpoint alphabets are disjoint
+PASS L03 corrected endpoint/bridge/recurrence inventory is 153 roles :: 153
+PASS L04 corrected selected route still requires exactly eight bits
+
+BRIDGE_ROWS=26 BRIDGE_RECORDS=26
+COMPOSED_ROWS=236 RAW=5240 ROLES=153
+SUMMARY: 64 PASS / 1 FAIL

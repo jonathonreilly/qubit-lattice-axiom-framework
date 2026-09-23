@@ -1,0 +1,32 @@
+{
+ "task": "R:cycle48_unified_stabilizer_record_machine_cycle147_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cycle48_unified_stabilizer_record_machine_cycle147_2026_07_15.py",
+ "seed": 29133,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "87b9bfa9",
+ "started_utc": "20260923T020533Z",
+ "elapsed_s": 397.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8d75c32bfcd4c0bd5b544a4d1d021b54fb99478340b992bf439457004ae20ba8",
+ "stdout_tail": "TIONAL UPDATE GRAMMAR\nPASS 1,800 five-parent rows compile all Pauli outcome updates :: Counter({5: 1800})\nPASS 43,200 covariant update rows are single-valued :: \nPASS bound+decoder+Clifford+measurement union is conflict-free :: 67580\nPASS zero-weight transcripts write reject; nonzero transcripts write exact target state :: \n\nUNIFIED TWO-EVENT TAPE\nPASS all 86,640 Clifford/measurement event pairs are exact :: (250800, 164160, {42}, [])\nPASS one 38-event alphabet mixes eight Clifford and thirty outcome records :: \nPASS reject outputs terminate while every nonzero output is reusable :: \n\nPREPARATION-TO-MEASUREMENT BIND\nPASS Cycle-144 terminal keeps exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\nPASS all 46,080 rotated preparation/measurement histories are exact :: (365760, 319680, {69}, [])\nPASS integrated graph census is six writes for rejects and seven for valid preparations :: (365760, 319680)\nPASS deleting any conditional-update parent suppresses that update :: (9000, ())\n\nSCOPE\nFAIL note contains: unified conditional stabilizer record machine :: \nFAIL note contains: outcome occurrence is not derived :: \nFAIL note contains: weights remain an explicit conditional import :: \nFAIL note contains: compiled truth table is not a selected natural law :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 14 FAIL 8\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T021210Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

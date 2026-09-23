@@ -1,0 +1,4 @@
+PR #8670: docs(campaign): order laws for extended soldered supports
+branch claude/formation-arrow-order-laws-20260922 (base main)
+runners in the PR: 1
+== scripts/order_laws_nucleation_density_and_sweep_laws_2026_09_22.py: rc=0 PASS=10 FAIL=0

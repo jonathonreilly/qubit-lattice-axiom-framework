@@ -1,0 +1,35 @@
+AUTHORITY AND CONDITIONAL ALGEBRA
+FAIL review note exists :: 
+PASS Cycle-48 branch table has exact 0/half/1 census :: Counter({Fraction(1, 2): 1440, Fraction(0, 1): 180, Fraction(1, 1): 180})
+PASS every nonzero branch has an exact sixty-state target :: 
+PASS fifteen physical measurement roles are injective and outside state IDs :: 
+
+CONDITIONAL UPDATE GRAMMAR
+PASS 1,800 five-parent rows compile all Pauli outcome updates :: Counter({5: 1800})
+PASS 43,200 covariant update rows are single-valued :: 
+PASS bound+decoder+Clifford+measurement union is conflict-free :: 67580
+PASS zero-weight transcripts write reject; nonzero transcripts write exact target state :: 
+
+UNIFIED TWO-EVENT TAPE
+PASS all 86,640 Clifford/measurement event pairs are exact :: (250800, 164160, {42}, [])
+PASS one 38-event alphabet mixes eight Clifford and thirty outcome records :: 
+PASS reject outputs terminate while every nonzero output is reusable :: 
+
+PREPARATION-TO-MEASUREMENT BIND
+PASS Cycle-144 terminal keeps exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}
+PASS all 46,080 rotated preparation/measurement histories are exact :: (365760, 319680, {69}, [])
+PASS integrated graph census is six writes for rejects and seven for valid preparations :: (365760, 319680)
+PASS deleting any conditional-update parent suppresses that update :: (9000, ())
+
+SCOPE
+FAIL note contains: unified conditional stabilizer record machine :: 
+FAIL note contains: outcome occurrence is not derived :: 
+FAIL note contains: weights remain an explicit conditional import :: 
+FAIL note contains: compiled truth table is not a selected natural law :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n1 — alternative routes :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 14 FAIL 8
+RESULT FAIL

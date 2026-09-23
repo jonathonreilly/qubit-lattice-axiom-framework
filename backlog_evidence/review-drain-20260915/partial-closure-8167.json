@@ -1,0 +1,21 @@
+{
+  "pr": 8167,
+  "original_head": "5265ddd85815fe92e55342f4352f5e675b84703c",
+  "branch": "physics-loop/toe-compact-winding-20260916",
+  "landing": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+  "source_verified_at": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8167-landing-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T02:59:42Z",
+    "headRefName": "physics-loop/toe-compact-winding-20260916",
+    "headRefOid": "5265ddd85815fe92e55342f4352f5e675b84703c",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8167,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8167"
+  }
+}

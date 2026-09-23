@@ -1,0 +1,21 @@
+{
+  "pr": 8031,
+  "original_head": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+  "branch": "codex/finite-transporter-block41-20260907",
+  "landing": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+  "source_verified_at": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8031-landing-report.md",
+  "closed": {
+    "baseRefName": "codex/continuum-boundary-block40-20260907",
+    "closedAt": "2026-09-23T02:59:37Z",
+    "headRefName": "codex/finite-transporter-block41-20260907",
+    "headRefOid": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8031,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8031"
+  }
+}

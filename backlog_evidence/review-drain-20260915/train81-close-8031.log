@@ -1,0 +1,5 @@
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+ * branch                  ai/execution -> FETCH_HEAD
+✓ Closed pull request jonathonreilly/qubit-lattice-axiom-framework#8031 ([physics-loop] finite-transporter block41 conditional-support)
+{"pr": 8031, "state": "CLOSED", "recovery_branch_preserved": true}

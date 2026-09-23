@@ -1,6 +1,6 @@
 {
- "edge_count": 13756,
- "node_count": 6274,
+ "edge_count": 13763,
+ "node_count": 6279,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16542,6 +16542,22 @@
    "deps_hash": "249b8e8adb93",
    "out_degree": 6
   },
+  "rotor_coupled_free_vacuum_resolvent_densities_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "f015d82dc5d6",
+   "out_degree": 1
+  },
+  "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "f015d82dc5d6",
+   "out_degree": 1
+  },
+  "rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "e00146c2daf3",
+   "out_degree": 2
+  },
+  "rotor_reference_vertex_infrared_weighted_norms_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "85572dc97c5c",
+   "out_degree": 3
+  },
   "route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30": {
    "deps_hash": "20e02c11a8d5",
    "out_degree": 4
@@ -24527,6 +24543,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8158.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8161.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

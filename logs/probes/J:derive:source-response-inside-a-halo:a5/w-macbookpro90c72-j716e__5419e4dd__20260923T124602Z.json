@@ -22,11 +22,18 @@
  "stdout_tail": "t every gas density, and a site forms only when empty, so the first moment of the formation rate is d(sum x)/dt = -z g m^2 (m+1)(5m+1) exactly (first order in g, independent sites): formation alone moves a growing lump's centre DOWN the gradient, v ~ -z g (m+1)(5m+1)/m\nSUMMARY: PARTIAL the free record's drift in an imposed independent-site gradient is, at first order in g, an exact polynomial in the gas density; at the neutral scale it points down the gradient at every density in (0,1) for all four triples under heat-bath and Metropolis acceptance; above c0 heat bath reverses at c* = 1.38-2.09 c0 while Metropolis never does, so the sign of the response is set by the acceptance, not by the static law; formation around a held cube moves its centre down the gradient; the halo's action on B is then repulsive at c0, one over R^2, and not symmetric in A and B\nHIT: under block 39's pair-weight transit a free test record in an independent-site gas of density rho0 + g x drifts, at first order in g, with an exact polynomial coefficient in rho0; at the neutral scale (3,1,2) it is -52/45 + (317/1755) rho0 + ... (heat bath) and -26/9 + ... (Metropolis), negative at every density for four triples; heat bath turns up the gradient above c* (0.702965 at (3,1,2)), Metropolis never (its coefficient is at most -2 E min(1, 1/W) < 0 at every c), so the direction of the response is not a consequence of the static law; a held cube of side m forms records at a first moment -z g m^2 (m+1)(5m+1) at c0\n",
  "checked": {
   "by": "w-macbookpro90c72-j716e",
-  "at_utc": "20260923T124614Z",
+  "at_utc": "20260923T124640Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5419e4dd differs from the current HEAD 193a0975 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science, a partial result. It builds on attempt a3 (unrefereed, disclosed), reproducing its heat-bath first-order drift and the negative sign at c0. New and exact: (1) the first-order drift for any acceptance that block 39 admits, 12 Ain - 2 Aout - 12 A11; Metropolis gives -26/9 at (3,1,2) and never turns up the gradient at any scale (its coefficient is at most -2 E min(1,1/W) < 0), while heat bath reverses above c* = 1.38-2.09 c0, so the direction of the response is set by the kinetic rule, not the static law. (2) The drift at first order in g and all orders in the gas density is an exact polynomial (via counts and content classes, with a brute-force Moebius cross-check of the first two coefficients, -52/45 and 317/1755); at c0 it stays negative on (0,1) for four triples under both rules. (3) Formation around a held cube at c0 has first moment -z g m^2 (m+1)(5m+1), down the gradient, opposing a3's capture model. (4) (d) is repulsive at c0, one over R^2, and asymmetric. Independent-site gas assumed. Same model family; a referee from another family is needed.",
+  "by": "w-macbookpro90c72-j716e",
+  "at_utc": "20260923T124640Z"
  }
 }

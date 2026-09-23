@@ -1,0 +1,49 @@
+{
+  "reviewed_utc": "2026-09-23T19:16:24.281009+00:00",
+  "root_review_status": "Selected supplied-rotor milestone checked for publication, not a formal audit or retained verdict.",
+  "source_seals": [
+    {
+      "seal": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/AUTHOR_SEAL.json",
+        "bytes": 3139,
+        "sha256": "0ffc4d68970054377f6b80c4b5cc0ec593d38380944d8e5d202a6aa0090648c7"
+      },
+      "authenticated_bindings": 8
+    },
+    {
+      "seal": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/PRE_COMPARISON_SEAL.json",
+        "bytes": 7844,
+        "sha256": "0aac7b39eefeacd4464660b824af56638ed05f30865abcc2cd16024a756bbb2c"
+      },
+      "authenticated_bindings": 18
+    },
+    {
+      "seal": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/FINAL_SEAL.json",
+        "bytes": 12074,
+        "sha256": "1dbb25fa5d58f7095bd78549d8bf0ec64b773e1466c1eb99fe800c076be48861"
+      },
+      "authenticated_bindings": 33
+    }
+  ],
+  "full_read_coverage": [
+    "Root authored and read the complete tail note and all author controls.",
+    "Root read the complete independent PRE report and tail_check.py before comparison authorization.",
+    "Root read the complete COMPARISON.md and comparison_check.py and authenticated all33 FINAL source/artifact bindings."
+  ],
+  "scientific_conclusions": [
+    "For nonzero a=eta-4delta and one-circulation input, S(t) is asymptotic to t^(-3/2)/(32|a|sqrt(2pi kappa)).",
+    "Mean3/(8kappa), infinite second moment for that input; finite-variance counterexamples and the a=0 exception are retained.",
+    "The general continuous-density coefficient and exact second-moment integral agree with independent reconstruction.",
+    "Independent full Laplace law, positive-moment criteria and instrument-dependent density cancellations remain separately attributed."
+  ],
+  "verification_limits": [
+    "Fixed supplied eight-site rotor target. No joint-spin, volume or microscopic long-time extension.",
+    "Quadrature corroborates but does not prove the asymptotic. Exact Lyapunov equations and the local slow-mode integral carry the result.",
+    "Authenticated receipts are not retrospective witnessing of author execution.",
+    "Earlier finite-eta all-time convergence does not justify exchange with moment integration."
+  ],
+  "repairs_required": [],
+  "failed_results_policy": "No historical source or evidence was overwritten. Tail continuation had no new failed assertion."
+}

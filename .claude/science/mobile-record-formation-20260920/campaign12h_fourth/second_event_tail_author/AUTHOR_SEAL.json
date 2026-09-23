@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-09-23T18:27:57.524222+00:00",
+  "status": "Root-authored extension awaiting selective independent check, no formal audit status.",
+  "scope": "Exact finite-eta supplied rotor waiting-time second moment and asymptotic tail; no finite-spin or infinite-volume claim.",
+  "dependency_boundary": "The block survival law was independently authored by the second-event checker and read by root before this extension. Root derived the moment/tail formulas and wrote the note before new controls. No checker has received these new formulas or sources.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_independent/REPORT.md",
+      "bytes": 21282,
+      "sha256": "39e2b04f9140f10db8d8bbd178a086902d9b09f6854b0e317a663071bacf4582"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 21378,
+      "sha256": "e710cf956b2cff69afc8241757901c040a4c2f6b23516f09968cb372975bd734"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/CHECK.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/CHECK.stdout.log",
+      "bytes": 15704,
+      "sha256": "4b1ee316e90f4b74ab7df55edb367d9144da3e730ff61d95a62ed8a875583ac0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/CHECK_RUN_RECEIPT.json",
+      "bytes": 201,
+      "sha256": "bc32951badbc9c28f36a1f7e6b5a13eac1bea25dcbda1dc87ccbca6ab06a38e6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/ROTOR_CLOCK_LONG_TIME_TAIL_AND_MOMENTS.md",
+      "bytes": 6892,
+      "sha256": "8043a10bb42ac45cc207d06ed53a23a9a500c376acdc0f13ee3b5b8ab4ddceea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/TAIL_AND_MOMENT_RESULTS.json",
+      "bytes": 15704,
+      "sha256": "4b1ee316e90f4b74ab7df55edb367d9144da3e730ff61d95a62ed8a875583ac0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/tail_moment_check.py",
+      "bytes": 5237,
+      "sha256": "73c886d0272361700397a74cfd5a30bd09f31fc3538fff5f9da20e5e0db82309"
+    }
+  ]
+}

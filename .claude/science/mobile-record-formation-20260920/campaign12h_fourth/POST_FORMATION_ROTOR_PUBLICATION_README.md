@@ -45,6 +45,13 @@ composition. Frozen opening sentences that say “pending review” describe
 the pre-comparison snapshots; these completed comparisons supply the current
 selective-check status.
 
+The subsequent [long-time clock extension](ROTOR_TAIL_PUBLICATION_README.md)
+derives the exact rare-wait tail and moments, with a separate independent
+reconstruction, comparison and byte-pinned manifest. For one circulation and
+eta different from 4 delta, the finite-eta clock has a t^(-3/2) survival tail
+and infinite variance despite its finite mean. Field-density qualifications
+and finite-variance counterexamples are included.
+
 ## Evidence and verification
 
 The packet retains complete source, controls, results, command streams,
@@ -84,6 +91,6 @@ not retain the generated electric term of a simultaneous spin/epsilon limit.
 The fixed-graph conclusions do not supply a volume limit, indefinite record
 production, a three-dimensional field phase, a microscopic normalized
 random-stop restart, native selection of the quantum laws, or a TOE.
-New finite-spin and long-time-tail research is outside this selected unit.
+Finite-spin research is outside this selected rotor unit.
 No raw field arrays, third-party papers, campaign plans or unrelated artifacts
 are added here.

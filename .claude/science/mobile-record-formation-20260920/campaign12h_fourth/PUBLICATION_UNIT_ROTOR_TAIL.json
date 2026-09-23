@@ -1,0 +1,164 @@
+{
+  "unit": "Exact rotor second-clock long-time tails and moments",
+  "base_commit": "a3e590014f4ce1887e5d60d592a0faa28e024ec7",
+  "raw_checkpoint_commit": "eee4a417c8871d90ca3ea8a2c40266ec32f4752b",
+  "artifact_count": 30,
+  "artifacts": [
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/AUTHOR_SEAL.json",
+      "bytes": 3139,
+      "sha256": "0ffc4d68970054377f6b80c4b5cc0ec593d38380944d8e5d202a6aa0090648c7"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/CHECK.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/CHECK.stdout.log",
+      "bytes": 15704,
+      "sha256": "4b1ee316e90f4b74ab7df55edb367d9144da3e730ff61d95a62ed8a875583ac0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/CHECK_RUN_RECEIPT.json",
+      "bytes": 201,
+      "sha256": "bc32951badbc9c28f36a1f7e6b5a13eac1bea25dcbda1dc87ccbca6ab06a38e6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/ROTOR_CLOCK_LONG_TIME_TAIL_AND_MOMENTS.md",
+      "bytes": 6892,
+      "sha256": "8043a10bb42ac45cc207d06ed53a23a9a500c376acdc0f13ee3b5b8ab4ddceea"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/TAIL_AND_MOMENT_RESULTS.json",
+      "bytes": 15704,
+      "sha256": "4b1ee316e90f4b74ab7df55edb367d9144da3e730ff61d95a62ed8a875583ac0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_author/tail_moment_check.py",
+      "bytes": 5237,
+      "sha256": "73c886d0272361700397a74cfd5a30bd09f31fc3538fff5f9da20e5e0db82309"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/COMPARISON.md",
+      "bytes": 9269,
+      "sha256": "11fec3a22b295d051c06bf5704e67ac6286d85c787a2e68b3b04842f092cf5ae"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/COMPARISON_RESULTS.json",
+      "bytes": 30544,
+      "sha256": "df85084cb015bec89e3a34c6dc3355169119b55adba9d753607459f38b7f6e93"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/FINAL_SEAL.json",
+      "bytes": 12074,
+      "sha256": "1dbb25fa5d58f7095bd78549d8bf0ec64b773e1466c1eb99fe800c076be48861"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 7844,
+      "sha256": "0aac7b39eefeacd4464660b824af56638ed05f30865abcc2cd16024a756bbb2c"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/REPORT.md",
+      "bytes": 17246,
+      "sha256": "72124a5757a5de2185f4139528d77a37dd0f59248b70c6c0e9b57e7380cccd21"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/SOURCE_BINDINGS.json",
+      "bytes": 3554,
+      "sha256": "dc52668f896159c3092075ba981ac84233189c3132ca5256a478f0919f170877"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/TAIL_RESULTS.json",
+      "bytes": 22456,
+      "sha256": "1fa0b4cb64580f837e65b824c975a7085de27e6a330691e89ba5dc2328dd1181"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/comparison_check.py",
+      "bytes": 6487,
+      "sha256": "5f8ac642092e20f84ac201338ebd7b033ebee151dd6967cf760535633c9e7fe0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/comparison_run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/comparison_run.stdout",
+      "bytes": 30544,
+      "sha256": "df85084cb015bec89e3a34c6dc3355169119b55adba9d753607459f38b7f6e93"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/comparison_run_RECEIPT.json",
+      "bytes": 1397,
+      "sha256": "f0995e9dfb4bcf6f489ec67f8da871e17e18b98e25f9c4a6442cab8388e7b654"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/provenance_check.py",
+      "bytes": 1892,
+      "sha256": "095fa114076c696ac6a3984bad7f20d6e6792632ef24f2f3e578f30ef956659b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/provenance_run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/provenance_run.stdout",
+      "bytes": 3554,
+      "sha256": "dc52668f896159c3092075ba981ac84233189c3132ca5256a478f0919f170877"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/provenance_run_RECEIPT.json",
+      "bytes": 1396,
+      "sha256": "410f7bd1995dcf27611e7b42693c529eab28f4c0af822ea7d5ce67eaf5d929ca"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/run_control.py",
+      "bytes": 1004,
+      "sha256": "f7de4ca2e916547a485cc5797871235d83fb9c5b9db781e91b1e6be5947cef84"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/seal_comparison.py",
+      "bytes": 2751,
+      "sha256": "5dd7d3e33adfc1962b96dc42cc27cc27d14e85d4e5cd9ba8951eee6aa2677faf"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/seal_packet.py",
+      "bytes": 2598,
+      "sha256": "7fd006e3c1cc6958e3c747f31f24841023731b8bba51617cb0cde25e9b2e5028"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/tail_check.py",
+      "bytes": 11361,
+      "sha256": "0417a97c755cc5a2feaeb9d56c4c27c7b32f34a4648e5e4e1ec0640fc038c42a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/tail_run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/tail_run.stdout",
+      "bytes": 22456,
+      "sha256": "1fa0b4cb64580f837e65b824c975a7085de27e6a330691e89ba5dc2328dd1181"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_tail_independent/tail_run_RECEIPT.json",
+      "bytes": 1374,
+      "sha256": "b1758ea967f197da67fee48e790d7f6107046c01c259ff91a6ee1c2b8a85c56b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/ROOT_TAIL_PUBLICATION_REVIEW.json",
+      "bytes": 2840,
+      "sha256": "a53f43339344fc0a98667eec41b9463e92122115b0a98a2a3f0f72c4469b0aa3"
+    }
+  ],
+  "selected_seals": {
+    "second_event_tail_author/AUTHOR_SEAL.json": "0ffc4d68970054377f6b80c4b5cc0ec593d38380944d8e5d202a6aa0090648c7",
+    "second_event_tail_independent/PRE_COMPARISON_SEAL.json": "0aac7b39eefeacd4464660b824af56638ed05f30865abcc2cd16024a756bbb2c",
+    "second_event_tail_independent/FINAL_SEAL.json": "1dbb25fa5d58f7095bd78549d8bf0ec64b773e1466c1eb99fe800c076be48861"
+  },
+  "scientific_status": "Conditional supplied-rotor results with selective independent reconstruction/comparison; no formal audit verdict."
+}

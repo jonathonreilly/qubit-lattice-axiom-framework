@@ -1,0 +1,14 @@
+ok A.su2 rational points of S^3 give exact SU(2) matrices (g g^dag = 1, det 1)
+ok A.hermitian <phi, H[E,U] psi> = <H[E,U] phi, psi> for random frame, links, states
+ok A.covariant H[g E g^dag, g_x U g_y^dag] (g psi) = g H[E, U] psi exactly for a random site-dependent g in SU(2)
+ok B.link first-order term of the pure-gauge links g_x g_y^dag (g = exp(-i theta.sigma/2)) = (1/2) sum_a C_a[d_a theta_a], block 65's twist hop
+ok B.total frame rotation (1/2) sum {(theta x e_j).sigma, S_j} + link term = -(i/2)[theta.sigma, H] exactly (block 65 T1)
+ok C.gauge g_x = (-1)^{n.x} i sigma_c is in SU(2) (centre times a half turn); it sends (E = 1, U = 1) to (rho_c E, U' = (-1)^{n_j} on bonds along j) for every n and c
+ok C.flat every plaquette holonomy of U' = (-1)^{n_j} is the identity: a flat Z2 connection
+ok C.species species n's zero modes (-1)^{n.x} u map to constant (species 000) zero modes of H[rho_c E, D]
+ok D.so3 g sigma_b g^dag = sum_a R_ab sigma_a with R rational, orthogonal, det 1: the frame's coin index turns in SO(3)
+ok D.covariant Theta_a^j[g psi; g U g^dag] = R(g_x)_ab Theta_b^j[psi; U]: the frame's response turns with the coin, so which species a gauge-invariant coin-blind field energy serves is gauge invariant (block 74's 2 of 8 at fixed links)
+runtime 2.0 s
+SUMMARY: PARTIAL SU(2) links make the frame walk exactly gauge covariant, give block 65's twist hop as pure gauge, and turn the species maps into a flat Z2 connection; the species count is unchanged (task HIT not met)
+HIT: the link-dressed frame walk H[E, U] = (1/2) sum_j {E^j.sigma, S_j^U} with SU(2) links is hermitian and exactly gauge covariant (checked with Gaussian-rational SU(2) elements on the 4^3 torus); its pure-gauge links g_x g_y^dag give at first order exactly block 65's twist hop (1/2) sum_a C_a[d_a theta_a], and with the frame rotation block 65's -(i/2)[theta.sigma, H].
+HIT: block 70's species maps are gauge transformations g_x = (-1)^{n.x} i sigma_c: species n of (E, U = 1) is species 000 of (rho_c E, U = (-1)^{n_j} on bonds along j), a flat Z2 connection; the frame's response turns covariantly, so block 74's count (two of eight) is unchanged at fixed links, and connection terms, proportional to plaquette curvature, vanish on these flat backgrounds (no supply of the missing shear at first order).

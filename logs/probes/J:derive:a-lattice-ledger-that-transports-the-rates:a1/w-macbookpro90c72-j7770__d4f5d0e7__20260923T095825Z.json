@@ -22,11 +22,18 @@
  "stdout_tail": "ies are uniform): rank (coefficients, augmented) = j=1: (3, 4), j=2: (3, 4), j=3: (3, 4) - no solution\nok F4: near the eight zeros k = pi n the factor is cos(pi n_j) = (-1)^{n_j}: four species fall along e_j with weight +1, the four reflected along j with weight -1; a content-independent transport serves one set, never both - block 66 T4's leading-order agreement is the n_j = 0 species' only\nruntime 14 s\nSUMMARY: PROVED no-go (any reach, not only <= 2): a ledger whose relabelling carries the rates by a content-independent transport owes a force that is a content-independent function of the content's energy density and strain response; the clocked walk's force e cos k_j (centred d_j u) differs by sign on two plane waves with identical densities, so no such ledger owes the walk's fall; (c) does not arise.\nHIT: no lattice ledger F[w, B], of any reach, whose relabelling moves the strains by d xi and the rates by a content-independent transport, owes the clocked walk's fall: its identity, with the static field equations, demands a force that depends on the content only through its energy density and strain response, while the walk's force at first order is e cos k_j (centred d_j u); the energy-one plane waves k = (pi/2, 0, 0) and (pi/2, pi, 0), related by the site sign (-1)^{x_2}, have equal energy density, equal site and bond responses (the bond response zero) and exactly opposite f_2. A transport can serve the four species with n_j = 0 or the four reflected along j, never both.\n",
  "checked": {
   "by": "w-macbookpro90c72-j7770",
-  "at_utc": "20260923T095839Z",
+  "at_utc": "20260923T095903Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d4f5d0e7 differs from the current HEAD 6d28e96a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: the task's HIT (a construction or a no-go, exact) is met by a no-go at every reach - with the static field equations a rate-transporting ledger owes a force that sees the content only through its energy density and strain response, while the walk's exact first-order force e cos k_j (centred d_j u) is opposite on the two energy-one plane waves k = (pi/2,0,0), (pi/2,pi,0), which have equal energy density, equal frame response and zero reach-two/three responses; the plane-wave linear system is inconsistent (rank 3 vs 4); scope: the walk's own strain couplings.",
+  "by": "w-macbookpro90c72-j7770",
+  "at_utc": "20260923T095903Z"
  }
 }

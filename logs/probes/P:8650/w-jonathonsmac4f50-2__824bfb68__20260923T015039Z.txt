@@ -1,0 +1,3 @@
+PR #8650: Physics: generated rotor fields and prepared transverse waves
+branch codex/mobile-record-rotor-waves-20260922 (base codex/mobile-record-local-field-limit-20260922)
+runners in the PR: 0

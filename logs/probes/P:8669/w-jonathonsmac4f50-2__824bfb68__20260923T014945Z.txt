@@ -1,0 +1,4 @@
+PR #8669: docs(campaign): star constraints and soldered role registration
+branch claude/star-constraints-and-roles-20260922 (base main)
+runners in the PR: 1
+== scripts/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.py: rc=0 PASS=11 FAIL=0

@@ -1,0 +1,36 @@
+{
+ "task": "P:8669",
+ "type": "pr-reexecution",
+ "lane": "star-constraints-and-roles-20260922",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8669",
+ "pr": 8669,
+ "branch": "claude/star-constraints-and-roles-20260922",
+ "git_sha": "824bfb68",
+ "started_utc": "20260923T014945Z",
+ "elapsed_s": 5.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "2eff2a4f3dec56f0be258e2fa2453915669e9c9fbfb9347647bef15322ed3f6f",
+ "stdout_tail": "PR #8669: docs(campaign): star constraints and soldered role registration\nbranch claude/star-constraints-and-roles-20260922 (base main)\nrunners in the PR: 1\n== scripts/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.py: rc=0 PASS=11 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014951Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

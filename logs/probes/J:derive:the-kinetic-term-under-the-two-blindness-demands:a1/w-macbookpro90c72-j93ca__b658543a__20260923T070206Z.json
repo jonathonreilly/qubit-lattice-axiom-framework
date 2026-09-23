@@ -22,11 +22,18 @@
  "stdout_tail": "pha, beta): nothing in the clauses can absorb it\nok K.speed: the travelling pair has X = K wbar^2 p^2/(4 alpha) (block 62 T4): at the walker's top speed (X = p^2, one site per ambient tick) iff alpha = K/4; no clause of blocks 53 to 65 makes the field's disturbances share the walker's light cone\nruntime 18 s\nSUMMARY: PARTIAL blindness to rotations of the coin axes that vary in the label leaves exactly block 62's two kinetic numbers; blindness to relabellings that vary in the label fixes beta = -alpha (with the rates shifting by -(2 alpha/K) zeta''), for gradient relabellings only; alpha/K stays declared\nHIT: a rotation of the coin axes varying in place and label adds E (Rdot^T R) E^-1/w to the frame's rate K, exactly antisymmetric once lowered with the metric, while its symmetric part is -gdot/(2w); so blindness leaves (det e/w)[alpha tr(g^-1 gdot g^-1 gdot) + beta (tr g^-1 gdot)^2], block 62's (alpha, beta), and the isotropic stretch carries (12 alpha + 36 beta) lamdot^2 = block 60 T5's c_k, negative iff beta < -alpha/3.\nHIT: at second order the relabelling h -> h + p p^T zeta(t) with u -> u - (2 alpha/K) zeta'' changes the Lagrangian by the total derivative -2 alpha d(zeta' R_1)/dt iff beta = -alpha (the zero of block 62 T4's determinant; the rates act as its multiplier); transverse relabellings in the label cost 2 alpha p^2 |xi'|^2 for every (alpha, beta); (K/4, -K/4) gives c_k = -6K, block 60 T5's comparator value, but alpha = K/4 (the walker's top speed) stays declared.\n",
  "checked": {
   "by": "w-macbookpro90c72-j93ca",
-  "at_utc": "20260923T070224Z",
+  "at_utc": "20260923T070318Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b658543a differs from the current HEAD 2e524b41 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that label-dependent rotations of the coin axes shift the frame's rate by a metric-antisymmetric matrix (leaving block 62's alpha, beta), that the isotropic stretch carries block 60 T5's c_k = 12 alpha + 36 beta, and that the gradient relabelling in the label with the rates as multiplier is a symmetry of the quadratic Lagrangian iff beta = -alpha while transverse ones never are; alpha/K stays declared; issue #8734.",
+  "by": "w-macbookpro90c72-j93ca",
+  "at_utc": "20260923T070318Z"
  }
 }

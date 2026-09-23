@@ -19,14 +19,21 @@
  "stdout_sha256": "1d0072aea2a1582f57aa3285ee872278eae513c23183a8b4366f37b714504fb0",
  "stdout_tail": "=======\nB - Common-neighbour occupancy and literal row reuse\n===============================================================================\nPASS B01 T_N0 and B_0_2 have exactly the two expected common neighbours :: ((-2, 2, -1), (-1, 2, 0))\nPASS B02 both common neighbours are permanently occupied :: open=() contents=('Y2', 'A_0_2')\nPASS B03 completed terminal has zero open match for launch canonical :: ()\nPASS B04 hypothetical cleared slot is not an existing Cycle-129 bridge row :: local=(((-1, 0, 0), 'B_0_2'), ((0, -1, 0), 'A_0_1'), ((0, 0, -1), 'T_N0'), ((0, 0, 1), 'A_1_2'), ((0, 1, 0), 'START'), ((1, 0, 0), 'H0')) values=None\nPASS B05 complete Cycle-129 law still exposes only ordered rail renewal :: {(-3, 1, 2): frozenset({'R_B21'})}\n\n===============================================================================\nC - Bounded negative and live repair routes\n===============================================================================\nFAIL C01 note names literal translated same-grammar scope\nFAIL C02 note keeps adapter and phase-relabel routes live\nFAIL C03 note carries complete N1-N8 discipline\nFAIL C04 note denies recurrence no-go and axiom addition\nPASS C05 Cycle 131 writes only runner and review note\n\nLAUNCH_CANONICAL=(((-1, 0, 0), 'H1'), ((0, -1, 0), 'R_B01'))\nSECOND_CANONICAL=(((-1, 0, 0), 'A_0_1'), ((0, -1, 0), 'A_1_2'), ((0, 0, -1), 'H0'), ((0, 0, 1), 'B_0_2'), ((0, 1, 0), 'T_N0'), ((1, 0, 0), 'START'))\nROLE_SUBSTITUTIONS=2 OPEN_SLOTS=0\nPASS=10 FAIL=5\nRESULT=FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T065511Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T183651Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a5094169 differs from the current HEAD 8d9c708f (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note TRANSLATED_SECOND_RAIL_FRAME_JOIN_INTERFACE_CYCLE131_NOTE_2026-07-15.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (PASS=15 FAIL=0); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T183651Z"
  }
 }

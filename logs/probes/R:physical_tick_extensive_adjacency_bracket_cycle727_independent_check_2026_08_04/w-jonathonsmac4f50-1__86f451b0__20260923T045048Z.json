@@ -22,15 +22,22 @@
  "stdout_sha256": "1fc50ce3f378f856e310788ec83fc378b1cb6f00066c079fde7943a0b3309fdd",
  "stdout_tail": "an [(0, 5344), (1, 1744), (2, 4944), (3, 3040), (4, 2208)]\nPASS independent group and piece-orbit reconstruction        group 48; orbits 364\nPASS independent point-orbit reconstruction                  17472 distinct integer numerators\nPASS independent exact point membership is boundary free     all 17280 by 17472 incidences checked in integer arithmetic\nPASS uncompressed rows respect the independently built orbits 342 distinct membership rows\nPASS independent floor certificate arithmetic                least slack 0; tight 13392\nPASS independent ceiling certificate arithmetic              least slack 0; tight 6336\nPASS independent exact attaining-witness verification        costs [216, 256, 108, 128]\nPASS hostile cost/certificate/witness controls are rejected  spatial threshold, floor constant, ceiling denominator, witness corner\nPASS primary direct run is fail-closed green                 exit 0; one terminal verdict\nFAIL committed receipt equals the live primary receipt       schema and every gate-bound value match\nPASS receipt binds the primary and every declared primary input source and input SHA-256 map\nCHECKER_RECEIPT {\"claim_type\": \"bounded_theorem\", \"exact_minimal_piece_bracket\": [216, 256], \"gates\": {\"fail\": 1, \"pass\": 14}, \"hostile_controls\": [\"spatial_threshold\", \"floor_constant\", \"ceiling_denominator\", \"witness_corner\"], \"independent_membership_rows\": 342, \"primary_sha256\": \"fad12066154112242965529c99d7b98c6eb4afc2d724d3794314ce7d7cac9173\"}\nTOTAL: PASS=14 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T045139Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T183650Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 86f451b0 differs from the current HEAD 8d9c708f (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=14 FAIL=1' vs cache 'TOTAL: PASS=15 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the committed Cycle 727 receipt records MINIMAL_AXIOMS at its 2026-08-05 bytes (53175250...), while the live primary (PASS=50 FAIL=0) records 93af34cf... after the 2026-08-13 Record-axiom narrowing; every computed value matches. Issue #8826.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T183650Z"
  }
 }

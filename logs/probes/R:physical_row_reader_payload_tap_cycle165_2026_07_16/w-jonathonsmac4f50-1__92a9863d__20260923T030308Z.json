@@ -19,14 +19,21 @@
  "stdout_sha256": "97b9bc80f556151670c5e7cad8b3180de79a2b2f748df3842e6c77c6af04a5e7",
  "stdout_tail": "AUTHORITY AND LAW\nFAIL Cycle-165 review note exists :: \nPASS 32 canonical tap rows add 768 disjoint cubic rows :: (32, 768)\nPASS the 97,388-row candidate law is deterministic :: 97388\n\nEXHAUSTIVE READER/TAP COMPOSITION\nLAW 32 768 96620 97388 0 0\nIDENTITY {'ported': {(112, 320, 1, 5, (), 107, 10)}, 'twoport': {(4375, 21250, 1, 9, (), 147, 18)}}\nROTATIONS {'ported': {(112, 320, 1, 5, (), 107, 10)}, 'twoport': {(4375, 21250, 1, 9, (), 147, 18)}}\nDELETION 0\nRESULT PHYSICAL_ROW_READER_PAYLOAD_TAP\nPASS the complete reader/tap probe is green :: \n\nSCOPE\nFAIL note contains: one covariant whole-row tap :: \nFAIL note contains: 4,375 :: \nFAIL note contains: deleting the sole physical row source :: \nFAIL note contains: closes the last distinct interface mechanism :: \nFAIL note contains: one joint geometric placement :: \nFAIL note contains: does not claim that placement is already complete :: \nFAIL note contains: no axiom, primitive, registry, policy, or audit edit follows :: \n\nTOTAL\nPASS 3 FAIL 8\nRESULT FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T031026Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T183650Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 92a9863d differs from the current HEAD 8d9c708f (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note PHYSICAL_ROW_READER_PAYLOAD_TAP_CYCLE165_NOTE_2026-07-16.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (TOTAL; PASS 11 FAIL 0; RESULT PHYSICAL_ROW_READER_PAYLOAD_TAP); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T183650Z"
  }
 }

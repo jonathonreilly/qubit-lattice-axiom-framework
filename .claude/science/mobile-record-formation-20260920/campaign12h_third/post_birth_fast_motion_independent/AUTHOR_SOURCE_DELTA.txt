@@ -1,0 +1,54 @@
+--- preserved initial probe
++++ final expanded graph checker
+@@ -26,6 +26,42 @@
+  assert np.max(abs(np.diag(H2)+2))<1e-14
+  assert all(np.count_nonzero(abs(row)>1e-12)==3 for row in H2)
+  return H2
++# Exact integer-exponent certificate for the two-hop graph.
++terms={}
++for col,q in enumerate(qs):
++ for e in range(6):
++  x,y=e,(e+1)%6
++  for a,b,orientation in [(x,y,1),(y,x,-1)]:
++   if q[a] and not q[b]:
++    qq=list(q);charge=q[a];qq[a]=0;qq[b]=charge
++    terms[ix[tuple(qq)],col]=-orientation*charge if e==0 else 0
++arcs={}
++for ci,p in enumerate(P):
++ for ri,r in enumerate(P):
++  if ci==ri:continue
++  exps=[terms[q,p]-terms[q,r] for q in Q if (q,p) in terms and (q,r) in terms]
++  if exps:
++   assert len(exps)==1
++   arcs[ci,ri]=exps[0]
++assert len(arcs)==30
++for a in range(15):
++ neighbors=[b for c,b in arcs if c==a]
++ assert len(neighbors)==2
++ for b in neighbors:assert arcs[a,b]==-arcs[b,a]
++order=[start];current=start;previous=None;holonomy=0
++for k in range(15):
++ neighbors=sorted(b for a,b in arcs if a==current and b!=previous)
++ nxt=neighbors[0]
++ holonomy+=arcs[current,nxt]
++ previous,current=current,nxt
++ if k<14:
++  assert current not in order
++  order.append(current)
++assert current==start and sorted(order)==list(range(15)) and abs(holonomy)==3
++vacancies=[qs[P[a]].index(0) for a in order]
++step=(vacancies[1]-vacancies[0])%6
++assert step in (2,4) and all(v==(vacancies[0]+step*k)%6 for k,v in enumerate(vacancies))
++exact_graph={'cycle_length':15,'two_hop_diagonal':-2,'off_diagonal_magnitude':1,'ordered_charge_words':[list(qs[P[a]]) for a in order],'vacancy_positions':vacancies,'oriented_flux_increment_after_one_cycle':holonomy,'conclusion':'The fixed integer-flux initial state belongs to an infinite path component: one full 15-step matter circuit changes the integer flux by three. Vacancy position repeats every three path steps.'}
+ spectra=[]
+ for theta in [0,np.pi/7,np.pi/2,np.pi]:
+  H=fiber(theta);ev=eigh(H,eigvals_only=True)
+@@ -45,6 +81,6 @@
+   target=(1+2*j0(2*np.sqrt(3)*u))/3
+   assert abs(p-target)<2e-13
+   controls.append({'grid':grid,'fast_time':u,'vacancy_still_at_B3':p,'bessel_prediction':float(target),'absolute_error':float(abs(p-target))})
+-out={'model':'six-site unit-rotor ring Fourier fibers, one vacancy, one minus record and four plus records','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'P_dimension':15,'Q1_dimension':15,'initial_resolved_birth_output':initial,'spectra':spectra,'controls':controls,'interpretation':'Supplied-model author probe only. The initial state is normalizable at one electric flux; Fourier integration computes its matter probability. No full-time field or repeated-birth theorem is inferred.'}
+-path=Path('/Users/jonreilly/Documents/Codex/physics-sync-2026-09-22-third/POST_BIRTH_FAST_RING_RESULTS.json');assert not path.exists();path.write_text(json.dumps(out,indent=2)+'\n')
++out={'model':'six-site unit-rotor ring Fourier fibers, one vacancy, one minus record and four plus records','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'P_dimension':15,'Q1_dimension':15,'exact_graph_certificate':exact_graph,'initial_resolved_birth_output':initial,'spectra':spectra,'controls':controls,'interpretation':'Supplied-model author probe only. The initial state is normalizable at one electric flux; Fourier integration computes its matter probability. No full-time field or repeated-birth theorem is inferred.'}
++path=Path(__file__).with_name('POST_BIRTH_FAST_RING_RESULTS.json');assert not path.exists();path.write_text(json.dumps(out,indent=2)+'\n')
+ print(json.dumps(out,indent=2))

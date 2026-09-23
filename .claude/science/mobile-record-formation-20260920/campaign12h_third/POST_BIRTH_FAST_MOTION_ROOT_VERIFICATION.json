@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-09-23T01:07:46.469876+00:00",
+  "status": "Root completed source-informed independent report/evidence comparison, no required correction; not formal audit or retained status.",
+  "author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/AUTHOR_SEAL.json",
+    "bytes": 3338,
+    "sha256": "945fe1a4e76d39c09f435df29409d3dd507af94aed757dfb277f773f4bc5b79f"
+  },
+  "independent_final": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_independent/FINAL_SEAL.json",
+    "bytes": 8856,
+    "sha256": "943e0342f29b1095c2e970517d21f35738ea27a241b2a263c41200b2627532ef"
+  },
+  "independent_report": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_independent/REPORT.md",
+    "bytes": 11834,
+    "sha256": "ac396a036961d37f8f0deec41538a083d66fb41b18521c714abab2ad998e6727"
+  },
+  "authenticated_final_binding_rows": 24,
+  "top_level_author_seal_authenticated": true,
+  "coverage": "Complete author note/source/every result field personally derived/read; complete independent report, both scientific/evidence checkers, every result field, source delta, wrapper failure observation and command receipts read.",
+  "conclusion": "Actual normalized conditional output, uniform singular-block estimate, exact integer-flux graph and Bessel vacancy probability agree. Independent complete S=1,2,4 sectors and physical-path exponential corroborate the proof.",
+  "limits": "Specified post-event preparation and compact fast times only; no later births possible in this sector. No fixed laboratory-time, cubic post-event field, volume, fuel, native or TOE conclusion."
+}

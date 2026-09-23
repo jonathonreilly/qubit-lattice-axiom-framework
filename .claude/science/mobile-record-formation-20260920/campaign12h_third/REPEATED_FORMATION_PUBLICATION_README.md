@@ -27,11 +27,21 @@ births. Its pure-field limit is established before the first formation event.
   field dynamics until the first formation, with a finite exponential
   first-event clock and controlled time/mark probabilities.
 
+- [Fast motion after formation](post_birth_fast_motion_author/FAST_VACANCY_MOTION_AFTER_FORMATION.md)
+  gives a separate, self-contained six-site calculation. An actual specified
+  formation output has one vacancy; its microscopic motion has a uniform-spin
+  approximation on compact fast-time intervals. The exact rotor law follows
+  by lifting the physical charge cycle through its integer field winding to
+  an infinite path. The vacancy is back at its original site with probability
+  [1+2 J0(2sqrt(3)u)]/3. This sector cannot form another pair.
+
 The first two notes have a separate-context [blind reconstruction](finite_formation_independent/REPORT.md)
 and [subsequent source comparison](finite_formation_independent/COMPARISON.md),
 with no required correction. The third has a completed [source-informed
 independent review](fast_matter_formation_independent/REPORT.md), also with no
-required correction; it is not described as blind. Root verification receipts
+required correction; it is not described as blind. The fast-motion result has
+its own [source-informed review](post_birth_fast_motion_independent/REPORT.md),
+which also found no required correction. Root verification receipts
 bind the actual read and check scope. These are scientific checks, not formal
 retained/audit status.
 
@@ -41,8 +51,10 @@ spectral weights and 144 effective count rows. Two independently evolved
 microscopic endpoints agree within 7e-14. The higher-scale checks independently
 reconstruct every stored H2/H4 matrix, exact cyclic coefficients and first-loss
 formulas, and complete matrix-unit discrepancy/correction maps. An independently
-assembled first-event endpoint agrees within 4.4e-15. Full author trajectory
-grids were not rerun; finite floating controls corroborate the explicit proofs.
+assembled first-event endpoint agrees within 4.4e-15. The post-event check independently reconstructs the physical charge/field
+graph, complete spin-one, -two and -four sectors, and a separate path
+exponential. Full author trajectory grids were not rerun; finite floating
+controls corroborate the explicit proofs.
 
 ## Assumptions and remaining obligations
 

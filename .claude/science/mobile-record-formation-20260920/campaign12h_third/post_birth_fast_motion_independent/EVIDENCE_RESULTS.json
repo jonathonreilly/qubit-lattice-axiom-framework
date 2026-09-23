@@ -1,0 +1,17 @@
+{
+  "author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/AUTHOR_SEAL.json",
+    "bytes": 3338,
+    "sha256": "945fe1a4e76d39c09f435df29409d3dd507af94aed757dfb277f773f4bc5b79f"
+  },
+  "authenticated_artifacts": 9,
+  "initial_common_result_fields_exactly_unchanged": true,
+  "current_stdout_exact_result_bytes": true,
+  "certificate_matches_independent_physical_route": true,
+  "spectral_rows": 4,
+  "largest_recomputed_spectrum_error": 4.440892098500626e-15,
+  "probability_rows": 18,
+  "initial_direct_execution_boundary": "First direct shell execution reported exit 0 and returned all result fields. Exact source and results preserved here. No separately captured first-run timing/stdout receipt was produced. Expanded exact graph control below is separately timed and captured.",
+  "independent_failures": "One wrapper invocation rejected a relative-path argument before executing science; preserved separately. Scientific first run passed.",
+  "coverage": "All bound sources/results/receipt inspected or compared completely; no author grid rerun, no RNG or production data."
+}

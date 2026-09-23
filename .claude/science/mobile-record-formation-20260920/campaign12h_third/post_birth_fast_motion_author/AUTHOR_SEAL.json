@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-09-23T00:51:59.847089+00:00",
+  "status": "Conditional author result and controls. Independent review pending; not publication or audit status.",
+  "scope": "Normalizable post-formation state, exact six-site rotor fast-motion law, uniform-spin microscopic compact-fast-time limit. No subsequent birth can occur in this five-record sector.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/CHECK.stdout",
+      "bytes": 8278,
+      "sha256": "ebfcbd81c51503cca21f1d9bf3335f9741b2fc66842e5b7516fd3fbc8fd16818"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/CHECK_RECEIPT.json",
+      "bytes": 1384,
+      "sha256": "1a14e7cbfbcb3cf57d4bb78fd089ed9e418ad806e8a7176707899b88e8d06f29"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/FAST_VACANCY_MOTION_AFTER_FORMATION.md",
+      "bytes": 8764,
+      "sha256": "76d7f2faf3a0b4635499ddff1d8a88868d691d58c035780af737129701e30eeb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/POST_BIRTH_FAST_RING_RESULTS.json",
+      "bytes": 8278,
+      "sha256": "ebfcbd81c51503cca21f1d9bf3335f9741b2fc66842e5b7516fd3fbc8fd16818"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/initial_probe/EXECUTION_OBSERVATION.json",
+      "bytes": 507,
+      "sha256": "05d493dce8a09260469cc8268d48b97720153cab24461ae4c2af603aa6a6e0a1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/initial_probe/POST_BIRTH_FAST_RING_RESULTS.json",
+      "bytes": 6446,
+      "sha256": "f73b18e4283d49fbd93c8836e1a8d0720d036fb53c48f725bf791d05f697e6b5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/initial_probe/post_birth_fast_ring_probe.py",
+      "bytes": 2804,
+      "sha256": "3842bbf0c43a8001ad00ab203f5e55e245a80a32402faef8caa07c75ce2788c4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/post_birth_fast_ring_check.py",
+      "bytes": 4439,
+      "sha256": "3f571f71f84c5700b83eed5583e5f325b51e62a2b5d167775e6593829d90cd4b"
+    }
+  ]
+}

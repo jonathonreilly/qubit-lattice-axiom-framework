@@ -1,0 +1,8 @@
+{
+  "failure": "run_control.py was invoked with a relative path including its own directory; its contract is a local script basename and local output prefix.",
+  "observed_exit_code": 1,
+  "observed_traceback": "run_control.py line 7: assert p.resolve().parent==here; AssertionError",
+  "scientific_script_started": false,
+  "repair": "Call unchanged wrapper with independent_check.py and independent_run basenames. No scientific source or assertion changed.",
+  "recording_boundary": "The failed wrapper emitted this traceback in the tool transcript before it could create per-command streams; this receipt preserves that observation, not a fabricated raw stream."
+}

@@ -1,0 +1,6 @@
+{
+  "recorded_utc": "2026-09-23T00:49:49.213078+00:00",
+  "observation": "First direct shell execution reported exit 0 and returned all result fields. Exact source and results preserved here. No separately captured first-run timing/stdout receipt was produced. Expanded exact graph control below is separately timed and captured.",
+  "source_sha256": "3842bbf0c43a8001ad00ab203f5e55e245a80a32402faef8caa07c75ce2788c4",
+  "result_sha256": "f73b18e4283d49fbd93c8836e1a8d0720d036fb53c48f725bf791d05f697e6b5"
+}

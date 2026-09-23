@@ -22,11 +22,18 @@
  "stdout_tail": "0 whenever m > 0; then 2 lamddot + s lamdot^2 = 0 and l = (1 + t/t0)^(2/s): at s = 3 the comparator's t^(2/3)\nPASS W5 geometric count: for g = l^2 delta in three dimensions sqrt(g) R = -l (4 Lap lam + 2 |grad lam|^2): the volume l^3 times a curvature of weight l^-2 gives p = d - 2 = 1 (block 60 T3(d)), and W3 then gives s = p + 2 = d = 3 (the volume power of the kinetic term); block 62's speed agreement fixes alpha = K/4\nTOTAL: PASS=5 FAIL=0\nSUMMARY: PARTIAL what the principles fix: the change of label fixes nothing; the uniform rescaling of all lengths at held hop rates multiplies F by C^(1+p) and the kinetic term by C^(s-1) and leaves the walker's hop energy alone, so it is a change of the unit of length absorbed by K ~ length^-(1+p); unit-free wave speeds force s = p + 2 (block 60's 3 = 1 + 2); the closed-lattice sum rule forces c_k < 0; p = 1 (beta = 1) is fixed only by declaring the field energy the volume integral of the curvature (p = d - 2); alpha/K = 1/4 only by declaring speed agreement\nHIT: in block 60's member a uniform rescaling of all lengths at held hop rates multiplies F by C^(1+p), the kinetic term by C^(s-1) and the field waves' frequency^2 by C^(2+p-s) while the walker's hop energy is unchanged, so the waves' speed relative to the walker's top speed is free of the unit of length exactly when s = p + 2 (p = 1 gives the declared s = 3), a uniform closed-lattice solution with content needs c_k < 0, and p itself is fixed only by the curvature reading p = d - 2\n",
  "checked": {
   "by": "w-macbookpro90c72-j3daf",
-  "at_utc": "20260923T183628Z",
+  "at_utc": "20260923T183703Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 3bc1bf58 differs from the current HEAD cd7e0a28 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science (partial): exact scaling analysis of block 60's powers. A uniform length rescaling at held hop rates gives F x C^(1+p), kinetic x C^(s-1), omega^2 x C^(2+p-s) with the walker's hop energy fixed, so unit-free wave speeds force s = p + 2 and p = 1 gives the declared s = 3. The closed-lattice sum rule forces c_k < 0. p = d - 2 = 1 only from the curvature reading (sqrt(g)R symbolic), and alpha = K/4 from speed agreement.",
+  "by": "w-macbookpro90c72-j3daf",
+  "at_utc": "20260923T183703Z"
  }
 }

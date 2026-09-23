@@ -1,0 +1,51 @@
+[detached HEAD 1126978dac] Preserve independently reviewed source unit PR8175
+ Date: Wed Sep 23 01:14:17 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 35 files changed, 1566 insertions(+)
+ create mode 100644 docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/review_loop/pr8175/README.md
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-01-APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-02-CHECKER_block31_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-03-CLAIM_STATUS_CERTIFICATE_block31.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-04-GOAL_block31.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-05-HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-06-NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-07-OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-08-RESULTS_block31.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-09-REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-10-STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-11-TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-12-supervisor_control_block31_certify.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-13-supervisor_control_block31_certify.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-14-supervisor_control_block31_climb.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-15-supervisor_control_block31_climb.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-16-supervisor_control_block31_climb_wide.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-17-supervisor_control_block31_climb_wide.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-18-supervisor_control_block31_core.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-19-supervisor_control_block31_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-20-supervisor_control_block31_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-21-supervisor_control_block31_search.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-22-supervisor_control_block31_search.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-23-supervisor_control_block31_witness.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-24-supervisor_control_block31_witness.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-25-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-26-citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-27-admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/originals/pr8175-28-admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/pr8175-deferred-science.txt
+ create mode 100644 docs/work_history/review_loop/pr8175/pr8175-original-delta.patch.gz
+ create mode 100644 docs/work_history/review_loop/pr8175/pr8175-original-manifest.json
+ create mode 100644 logs/runner-cache/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.txt
+ create mode 100644 scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py
+FROZEN 1126978dacb1006c8310a72b28fe84c36516f135 sources 35 inputs 62 notes 1

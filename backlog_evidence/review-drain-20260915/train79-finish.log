@@ -1,0 +1,32 @@
+open_boundary_wilson_fock_model_match_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+open_wilson_gauge_matter_fixed_graph_state_join_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16 bounded_theorem unaudited ['scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py', 'scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py', 'scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py']
+docs/audit/data/citation_graph_manifest.json | 36 ++++++++++++++++++++++++++--
+ 1 file changed, 34 insertions(+), 2 deletions(-)
+[detached HEAD ed129b572e] Acknowledge reviewed source topology for train79
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 34 insertions(+), 2 deletions(-)
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+remote: Bypassed rule violations for refs/heads/main:        
+remote: 
+remote: - Changes must be made through a pull request.        
+remote: 
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+   ea403fe1c5..ed129b572e  HEAD -> main
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+LANDED ed129b572ea8364ed8d2792a0860b07ab94056a5

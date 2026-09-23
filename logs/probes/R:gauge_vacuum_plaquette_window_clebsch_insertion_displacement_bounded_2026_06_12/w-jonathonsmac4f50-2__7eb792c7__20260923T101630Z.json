@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_window_clebsch_insertion_displacement_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_window_clebsch_insertion_displacement_bounded_2026_06_12.py",
+ "seed": 58590,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101630Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=50, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8143bb8f7c7f6d0100ac47cfa126174cbe4b5f6b132472983aaa6c932020aade",
+ "stdout_tail": "-diagonal B4 support\nPASS: pair-window support is nonempty and dense relative to the diagonal bond\nPASS: W44 builders expose no normalized external-label recoupling API\nPASS: runner does not fabricate a W44 displacement from fusion support alone\nP(k=2, window -> 0) = 0.449370834209282\nW44 k=2 anchor        = 0.449370834209281\ndelta_zero_window     = +8.881784197001252e-16\nW44 deep limit        = 0.615191992185898\npair-support limit    = 0.615191992185898\nPASS: window set to zero reproduces the W44 k=2 anchor\nPASS: zero-window gate leaves the W44 deep limit unchanged\nPASS: fundamental-channel exactness is scoped to the 3bar-3-3bar-3 subspace\nPASS: higher window channels remain named outside this fundamental subspace\nk=3 windowed probe = NOT_RUN because it requires the same 625-state recoupling kernel.\nPASS: deeper probe is withheld for the same named kernel gap\n\n================================================================================================================\nPart 5: note hygiene and negative-claim discipline\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note uses markdown links for one-hop authorities\nPASS: context refs avoid tool-local scratch paths\nPASS: note avoids overreach closure phrases\nPASS: note contains visible N1-N8 discipline\nPASS: note reports the W44 displacement as not reported rather than zero\n\nTOTAL: PASS=50, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101631Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_window_clebsch_insertion_displacement_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

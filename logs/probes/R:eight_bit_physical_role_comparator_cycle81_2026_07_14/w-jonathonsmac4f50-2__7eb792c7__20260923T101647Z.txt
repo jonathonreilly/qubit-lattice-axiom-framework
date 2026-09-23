@@ -1,0 +1,57 @@
+
+===============================================================================
+A - Selected recurrent inventory and exact eight-bit bound
+===============================================================================
+PASS A01 selected table has 198 canonical rows
+PASS A02 selected raw table has 4,376 rows
+PASS A03 exact output inventory has 113 roles
+PASS A04 output-only information bound remains seven bits
+PASS A05 active matcher alphabet has 120 roles
+PASS A06 active-only matcher could fit seven bits
+PASS A07 recurrence contributes exactly 51 disjoint roles
+PASS A08 bounded source-preserving alphabet has 134 roles
+PASS A09 seven bits fail and eight bits suffice for 134
+PASS A10 exact selected arity census is pinned
+
+===============================================================================
+B - Prefix-preserving codebook and physical comparator table
+===============================================================================
+PASS B01 all 134 roles have distinct eight-bit words
+PASS B02 all prior words are preserved below a leading zero
+PASS B03 all recurrent words occupy the leading-one half
+PASS B04 exactly 122 words remain reserved
+PASS B05 assigned and reserved words partition all 256
+PASS B06 every harness contains exactly 38 H0/H1 records
+PASS B07 fixed 22-record cage has trivial proper-cubic stabilizer
+PASS B08 comparator still needs exactly three canonical rows
+PASS B09 comparator has 56 proper-cubic raw rows
+PASS B10 comparator uses and writes only H0/H1
+PASS B11 comparator raw domain is disjoint from Cycle-58
+PASS B12 comparator raw domain is disjoint from selected recurrence union
+PASS B13 provisional union has 4,564 raw rows
+PASS B14 provisional union is output-single-valued
+
+===============================================================================
+C - All 65,536 physical comparisons and reachable states
+===============================================================================
+PASS C01 first-difference census is exact :: Counter({0: 32768, 1: 16384, 2: 8192, 3: 4096, 4: 2048, 5: 1024, 6: 512, 8: 256, 7: 256})
+PASS C02 all 131,072 reachable states have exact frontier :: []
+PASS C03 all-pairs graph has exactly 65,536 edges :: 65536
+PASS C04 every pair has exactly one terminal
+PASS C05 exactly the 256 equal pairs reach MATCH
+PASS C06 no state exposes more than one write
+PASS C07 rejected one-rail design would corrupt 32,640 pairs
+
+===============================================================================
+D - Covariance and supplied-harness boundary
+===============================================================================
+PASS D01 all 120 transformed controls have exact frontier :: []
+FAIL D02 note exists and carries no authority
+FAIL D03 note says the comparator harness is supplied
+FAIL D04 note names the surviving seed-growth residual
+FAIL D05 note names the row-port next step
+FAIL D06 note denies axiom consequence
+
+OUTPUT_ROLES=113 ACTIVE_ROLES=120 FULL_ROLES=134 BITS=8 RESERVED=122
+COMPARATOR_CANONICAL=3 COMPARATOR_RAW=56 PAIR_STATES=131072 PAIR_EDGES=65536
+SUMMARY: 32 PASS / 5 FAIL

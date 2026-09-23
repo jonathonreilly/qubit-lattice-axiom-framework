@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
+ "seed": 58563,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101603Z",
+ "elapsed_s": 6.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d72b795f24dc7dd1478f1dedd952a3f3bbe8d5b3aa21ad527b9ed572ec76a161",
+ "stdout_tail": "haracter trivial_slice: P = 0.429196712321; |P - P_loc_reference| = 0.023210446723; |P - P_triv_reference| = 0.006664972674; |P - 0.5934| = 0.164203287679; direction_vs_tw1 = away by 0.005018700938\nthree-word matrix_element marginal: P = 0.592817119605; |P - P_loc_reference| = 0.140409960560; |P - P_triv_reference| = 0.170285379958; |P - 0.5934| = 0.000582880395; direction_vs_tw1 = toward by 0.158601706345\nthree-word matrix_element trivial_slice: P = 0.429196712321; |P - P_loc_reference| = 0.023210446723; |P - P_triv_reference| = 0.006664972674; |P - 0.5934| = 0.164203287679; direction_vs_tw1 = away by 0.005018700938\n```\nPASS: canonical comparator is isolated to distance reporting and not used in construction\n\n================================================================================================\nPart 6: bounded statement inputs\n================================================================================================\nStatus authority: independent audit lane only. This source note does not set or predict an audit outcome.\nNamed residuals: finite word count; finite dominant-weight box; no physical 3D environment computation; no untruncated convergence proof; no L_perp limit; no selected adjacent-contraction convention; no canonical repinning; no analytic P(6).\nPASS: two-word character marginal readout is finite and positive\n      P=0.429847250027\nPASS: two-word matrix-element marginal readout is finite and positive\n      P=0.436251149956\n\nTOTAL: PASS=25, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101609Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_readout_form_trace_vs_perron_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_readout_form_trace_vs_perron_bounded_2026_06_12.py",
+ "seed": 58533,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101533Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "25db3e1290a32fb08da9d30006a5807da990a9f739c65d106069417758e9bf29",
+ "stdout_tail": "     max derivative-density residual=2.776e-16; D_beta prime and environment beta terms are not evaluated here\n\n====================================================================================================\nGate 4: residual-scale question\n====================================================================================================\nmax requested-set correction: 1.810523046317791e-04 at rho=1, L_t=2\nmax accepted-MC-L correction: 5.500366882238428e-06 at rho=1, L_t=3\nPASS: no reported finite trace correction exceeds the panel-era residual scale 0.02\n      max=1.811e-04, scale=2.000e-02; statement is restricted to reported L_t values\n\n====================================================================================================\nBoundaries\n====================================================================================================\nConvention-consistent readout: Tr[J T_src(6)^L_t] / Tr[T_src(6)^L_t].\nDerivative diagnostic: (1/L_t) d/d beta log Tr[T_beta^L_t] restricted to the explicit exp(beta J/2) multipliers.\nDifference from the full beta derivative: the D_beta prime and any environment-beta contribution are named open terms, not computed here.\nNamed open targets: identification theorem for readout versus per-plaquette f-prime; HF D_beta prime term; per-plaquette normalization; licensed L_t geometry input.\nPASS: source note states the finite bounded boundary and leaves physical targets open\n      missing=[]; forbidden_present=[]\n\nTOTAL: PASS=17, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101534Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_readout_form_trace_vs_perron_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

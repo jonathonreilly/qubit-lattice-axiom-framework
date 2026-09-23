@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_rim_depth_ladder_deep_rim_limit_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_rim_depth_ladder_deep_rim_limit_2026_06_12.py",
+ "seed": 58536,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101536Z",
+ "elapsed_s": 5.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "61f8eab6e7ae397093ae6ae8ed5a199161f212ac89a1f79e27969481e587c8b1",
+ "stdout_tail": " - P_trivial3| = 0.113026378972; |P3 - P_marginal3| = 0.050594028312; |P3 - 0.5934| = 0.051176908707\nk=8: P2 = 0.433060212494; P3 = 0.543094536619; higher_L1 = 1.088994966639; |P3 - P_trivial3| = 0.113897824298; |P3 - P_marginal3| = 0.049722582986; |P3 - 0.5934| = 0.050305463381\nk=12: P2 = 0.433061847558; P3 = 0.543141664312; higher_L1 = 1.089404185700; |P3 - P_trivial3| = 0.113944951991; |P3 - P_marginal3| = 0.049675455293; |P3 - 0.5934| = 0.050258335688\nk=20: P2 = 0.433061880367; P3 = 0.543142609685; higher_L1 = 1.089412397728; |P3 - P_trivial3| = 0.113945897364; |P3 - P_marginal3| = 0.049674509920; |P3 - 0.5934| = 0.050257390315\nk=inf: P2 = 0.433061880380; P3 = 0.543142610051; higher_L1 = 1.089412400909; |P3 - P_trivial3| = 0.113945897730; |P3 - P_marginal3| = 0.049674509554; |P3 - 0.5934| = 0.050257389949\n```\nPASS: canonical comparator is isolated to fenced distance reporting\n\n========================================================================================================\nPart 5: bounded residuals\n========================================================================================================\nNamed residuals: finite word count; finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.\nPASS: runner scope names the finite-packet residuals without claiming them retired\n\nTOTAL: PASS=22, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101542Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_rim_depth_ladder_deep_rim_limit_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

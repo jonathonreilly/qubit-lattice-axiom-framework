@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12.py",
+ "seed": 58588,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101628Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "05cc264a1f826ff95ba2e3c5c8364ac95be5585f2e5e60f6b2ee403c35c7ebf0",
+ "stdout_tail": "81\n|P_strip - 0.5934| = 0.146365109541176\n|P_word_limit - 0.5934| = 0.021791992185898\ndistance_change_vs_word = 0.012819477198905\ndistance_closure_fraction_vs_word = 0.080532151142475\ndistance_ratio_strip_to_word = 0.919467848857525\ndistance_ratio_strip_to_word_limit = 6.716463015065297\n```\nPASS: primary two-strip readout moves toward the fenced comparator relative to one-word rho\n      distance_change=0.012819477198905\nPASS: primary two-strip readout remains farther from the fenced comparator than the word-limit value\n      strip_distance=0.146365109541176, word_limit_distance=0.021791992185898\nPASS: primary composed readout is finite and inside the source anchor interval\n\n================================================================================================================\nPart 5: note hygiene\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note declares bounded-theorem claim type\nPASS: note uses markdown links for one-hop authorities\nPASS: note keeps durable context pointers as plain-text paths\nPASS: note avoids overreach closure language\nNamed residuals: finite two-strip first rung; finite B4 weight box; finite Bessel support; internal-link normalization/6j convention; strip depth direction; wider slab limit; 3D stack; L_perp limit; analytic P(6); no repinning.\nPASS: runner names residuals without retiring them\n\nTOTAL: PASS=31, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101629Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

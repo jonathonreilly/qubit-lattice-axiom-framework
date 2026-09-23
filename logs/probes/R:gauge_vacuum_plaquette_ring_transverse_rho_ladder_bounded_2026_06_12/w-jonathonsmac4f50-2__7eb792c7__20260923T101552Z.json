@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_ring_transverse_rho_ladder_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_ring_transverse_rho_ladder_bounded_2026_06_12.py",
+ "seed": 58552,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101552Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=45, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d70f66bb7926986eeac94c72529b20d6eb662b0ee8b423f8e45dbf9c33a84737",
+ "stdout_tail": "previously observed parity oscillation\nPASS: simple-ring N=3 to N=4 finite increment is positive\nPASS: including doubled-edge N=2 does not give a monotone ring sequence\nPASS: ring readouts remain inside the source anchor interval\n      P_triv=0.422531739600, P_ring3=0.443670871217, P_ring4=0.443819912886, P_loc=0.452407159000\n\n================================================================================================================\nPart 6: note hygiene\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note records topology underdetermination rather than selecting a closed loop\nPASS: note uses markdown links for one-hop authorities\nPASS: note keeps durable context pointers as backticked non-links\nPASS: note records finite bracket caution without extrapolating a width limit\nPASS: note avoids overreach closure language\nPASS: note avoids audit-status labels for claims\nNamed residuals: transverse-topology underdetermination in the cited geometry notes; finite ring widths N=3 and N=4; doubled-edge N=2 multigraph diagnostic; finite B4 weight box; finite Bessel support; scalar class-channel internal-link contraction; future all-link 6j/intertwiner normalization; full rim eta evaluation; strip-depth direction; wider slab limit; 3D stack; L_perp limit; analytic P(6); no repinning.\nPASS: runner names residuals without retiring them\n\nTOTAL: PASS=45, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101554Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_ring_transverse_rho_ladder_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

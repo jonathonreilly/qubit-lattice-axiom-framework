@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12.py",
+ "seed": 58557,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101557Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bdb83d43fe1b1ee7f5ebe650ac16cea8ded42d5d92373ddfe68ba7bf1725e0d2",
+ "stdout_tail": "18949950\nzero-window direct eig = 1.664872828075300e-01; residual=4.559e-15; iterations=29\nfull-window direct eig = 1.951223619010709e-01; residual=1.178e-14; iterations=37\nP(k=2, window -> 0) = 0.449370834209279\nW44 k=2 anchor        = 0.449370834209281\ndelta_zero_window     = -1.998401444325282e-15\nP(k=2, windowed fundamental) = 0.445084590711324\ndisplacement_vs_anchor = -4.286243497957365e-03\nsign = negative\nmagnitude = 4.286243497957365e-03\nPASS: zero-window direct solve reproduces the W44 k=2 anchor\n      delta=-1.998e-15\nPASS: zero-window power residual is small\n      residual=4.559e-15\nPASS: windowed fundamental direct solve is finite\nPASS: windowed fundamental power residual is small\n      residual=1.178e-14\nPASS: windowed fundamental Perron vector is nonnegative up to tolerance\n      min=0.000e+00\nPASS: windowed fundamental displacement is reported numerically\n\n================================================================================================================\nPart 5: note hygiene\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note uses markdown links for one-hop authorities\nPASS: context refs and script pointers are repo-local plain-text paths\nPASS: note avoids overreach closure phrases\nPASS: note does not use retained/no_go/conditional/clean status labels\nPASS: note reports the W53 numeric displacement\nTOTAL: PASS=30, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101600Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

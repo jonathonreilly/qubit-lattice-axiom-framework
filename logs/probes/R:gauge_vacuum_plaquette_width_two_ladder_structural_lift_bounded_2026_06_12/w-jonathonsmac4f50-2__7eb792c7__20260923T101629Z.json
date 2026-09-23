@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_width_two_ladder_structural_lift_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_width_two_ladder_structural_lift_bounded_2026_06_12.py",
+ "seed": 58589,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101629Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0b51e6b28d24d7cce234047b8a719bbaacf01f017a270a7f4c6abdf81d47151e",
+ "stdout_tail": " 0.615191992185898\n|P_inf(width2) - P_inf(width1)| = 3.330669073875470e-16\n|P_inf(width2) - 0.5934| = 0.021791992185898\nfraction_of_width1_comparator_gap_closed_by_width2_limit = 0.000000000000000\ndiagnostic finite k=4 layer-diagonal P = 0.614951813995048\n|diagnostic finite k=4 layer-diagonal P - 0.5934| = 0.021551813995048\n```\nPASS: width-two factorized limit does not move the finite limit away from the width-one pair-support value\nPASS: finite k=4 layer-diagonal diagnostic is not promoted as the k->infinity value\n      P_4_diag=0.614951813995048, P_inf=0.615191992185898\n\n================================================================================================================\nPart 7: note hygiene\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note uses markdown links for one-hop authorities\nPASS: note uses repo source context links, not temp handles\nPASS: note includes a visible no-go discipline gate for the bounded negative\nNamed residuals: finite dominant-weight box; finite Bessel mode support; finite width-two factorized layer only; shared-link rail-rail readings fail the pinned gate; no physical 3D unmarked spatial Wilson environment computation; no width-to-infinity slab; no slab-stacking to 3D; no L_perp limit; no analytic P(6); no canonical repinning.\nPASS: runner names residuals without claiming them retired\n\nTOTAL: PASS=26, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101630Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_width_two_ladder_structural_lift_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

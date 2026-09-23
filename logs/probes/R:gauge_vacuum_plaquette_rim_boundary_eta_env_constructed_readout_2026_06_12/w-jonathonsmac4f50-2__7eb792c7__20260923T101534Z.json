@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_2026_06_12.py",
+ "seed": 58534,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101534Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "65d466d5dd3b247c8bf0059792ca44df3b1ae8064e8994f1722cc3eb95b4db2c",
+ "stdout_tail": "rget, or repinning input.\n```text\none-word anchor: P = 0.434215413260; |P - P_loc_reference| = 0.018191745785; |P - P_triv_reference| = 0.011683673613; |P - 0.5934| = 0.159184586740; direction_vs_tw1 = away by 0.000000000000\ntwo-word matrix_element constructed_eta: P = 0.431504881786; |P - P_loc_reference| = 0.020902277259; |P - P_triv_reference| = 0.008973142139; |P - 0.5934| = 0.161895118214; direction_vs_tw1 = away by 0.002710531474\nthree-word matrix_element constructed_eta: P = 0.487332641164; |P - P_loc_reference| = 0.034925482119; |P - P_triv_reference| = 0.064800901517; |P - 0.5934| = 0.106067358836; direction_vs_tw1 = toward by 0.053117227904\nthree-word classification: constructed_eta is neither the trivial-slice stationary value nor the marginal revival value; it is closer to the trivial-slice P-distance in this finite box.\n```\nPASS: canonical comparator is isolated to distance reporting\n\n================================================================================================\nPart 4: bounded residuals\n================================================================================================\nNamed residuals: finite word count; finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.\nPASS: runner scope names the full physical residuals without claiming them closed\n\nTOTAL: PASS=20, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101536Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

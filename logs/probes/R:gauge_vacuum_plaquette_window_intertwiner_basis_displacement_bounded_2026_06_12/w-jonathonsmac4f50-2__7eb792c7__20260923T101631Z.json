@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_window_intertwiner_basis_displacement_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_window_intertwiner_basis_displacement_bounded_2026_06_12.py",
+ "seed": 58591,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101631Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4f91ee259d01168dea6dd9163e83d0abdf9116a635e698d8d4b4a0531985d20a",
+ "stdout_tail": "4 modules = []\nPASS: fundamental insertion changes W44 labels rather than acting as a diagonal scalar\nPASS: W44 modules still expose no external-label Clebsch or 6j recoupling API\nExact P(k=2, windowed fundamental) is NOT_REPORTED here: the universal 3bar-3-3bar-3 tensor is closed, but the 625-state strip kernel still needs normalized Hom(V_a x 3, V_c) maps and their recoupling.\nPASS: runner does not turn the missing external-label recoupling into a zero displacement claim\nP(k=2, window coupling -> 0) = 0.449370834209282\nW44 unwindowed k=2 anchor      = 0.449370834209281\ndelta_zero_coupling            = +8.881784197001252e-16\nW44 strip-word deep limit       = 0.615191992185898\npair-support limit from runner  = 0.615191992185898\nPASS: window coupling set to zero reproduces W44 k=2 exactly\nPASS: zero-coupling gate leaves the W44 deep limit unchanged\n\n================================================================================================================\nPart 5: note hygiene and bounded wall discipline\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note uses markdown links for one-hop authorities\nPASS: context refs are repo-native plain-text paths\nPASS: note avoids overreach closure phrases\nPASS: note includes visible N1-N8 wall discipline\nPASS: note states that exact fundamental-window k=2 displacement is not reported\n\nTOTAL: PASS=34, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101632Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_window_intertwiner_basis_displacement_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

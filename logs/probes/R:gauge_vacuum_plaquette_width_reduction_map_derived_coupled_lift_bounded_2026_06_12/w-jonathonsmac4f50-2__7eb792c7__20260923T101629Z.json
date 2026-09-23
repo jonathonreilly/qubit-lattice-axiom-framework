@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_width_reduction_map_derived_coupled_lift_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_width_reduction_map_derived_coupled_lift_bounded_2026_06_12.py",
+ "seed": 58589,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101629Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2d4df42e18191a3b2e41f7e604cdf8502a652e1682b9f2f69b0c47265a1a5287",
+ "stdout_tail": ") - 0.5934| = 0.021791992185898\n|P_inf(width2 coupled) - 0.5934| = 0.170868260352869\nsigned_displacement_from_width1_in_gap_units = 8.840873789567686\nabsolute_distance_closure_fraction = -6.840873789567685\ntheta(width2 coupled measured) = 2.576899456648947e-02\ntheta(width2 coupled closed_t_ratio) = 2.576902915195543e-02\n```\nPASS: coupled width-two limit is not a bounded lift toward the fenced comparator\n      width1_gap=2.179e-02, width2_gap=1.709e-01\nPASS: reported signed gap units record the overshoot rather than a tuned match\n      signed_gap_units=8.840874, distance_closure=-6.840874\n\n================================================================================================================\nPart 6: note hygiene\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note uses markdown links for one-hop authorities\nPASS: note keeps context pointers as repo filenames without load-bearing links\nPASS: note includes a visible no-go discipline gate for the bounded negative\nNamed residuals: finite dominant-weight box; finite Bessel mode support; finite width-two pair layer; no all-weight width-reduction theorem; no physical 3D unmarked spatial Wilson environment computation; no width-to-infinity slab; no slab-stacking to 3D; no L_perp limit; no analytic P(6); no repinning.\nPASS: runner names residuals without claiming them retired\n\nTOTAL: PASS=33, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101629Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_width_reduction_map_derived_coupled_lift_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

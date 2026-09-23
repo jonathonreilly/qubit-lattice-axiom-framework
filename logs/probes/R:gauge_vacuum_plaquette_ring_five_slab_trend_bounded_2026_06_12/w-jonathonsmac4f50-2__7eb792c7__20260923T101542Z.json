@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_ring_five_slab_trend_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_ring_five_slab_trend_bounded_2026_06_12.py",
+ "seed": 58542,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101542Z",
+ "elapsed_s": 10.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "823d1ae5f37f9e3768f7689f45dbcae5120394ceb56e4fee27255012762d1b9f",
+ "stdout_tail": "ot a monotone rise.\nPASS: simple-ring N=3 to N=4 finite increment is positive\nPASS: simple-ring N=4 to N=5 finite increment is negative\nPASS: simple-ring N=4 to N=5 absolute increment is smaller\nPASS: N=5 ring remains above N=3 ring\nPASS: ring N=3,4,5 readouts sit above the open-chain four-strip context interval\nPASS: ring readouts remain inside the source anchor interval\n      P_triv=0.422531739600, P_ring5=0.443741696436, P_loc=0.452407159000\n\n================================================================================================================\nPart 5: note hygiene and named residuals\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note keeps runner and cache as plain-text pointers\nPASS: note keeps durable context pointers as backticked non-links\nPASS: note uses markdown links for one-hop authorities\nPASS: note avoids overreach closure language\nPASS: note avoids audit-status labels for claims\nNamed residuals: transverse-topology underdetermination in the cited geometry notes; finite simple ring widths N=3,4,5; finite B4 weight box; finite Bessel support; scalar class-channel internal-link contraction; future all-link 6j/intertwiner normalization; full rim eta evaluation; strip-depth direction; wider slab limit; 3D stack; L_perp limit; analytic P(6); no repinning.\nPASS: runner names residuals without retiring them\n\nTOTAL: PASS=37, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101552Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_ring_five_slab_trend_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_2026_06_12.py",
+ "seed": 58593,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7eb792c7",
+ "started_utc": "20260923T101633Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bfdc376cb4da232c963d0475ddb9b9bea64889daca4806d036744936183345b9",
+ "stdout_tail": "==============================================================\nPart 5: bounded measurement output\n================================================================================================================\nP(k=2, windowed fundamental) = NOT_REPORTED\ndisplacement_vs_anchor = NOT_REPORTED\nsign = NOT_REPORTED\nmagnitude = NOT_REPORTED\nwindowed deep probe = NOT_RUN\nNamed obstruction: the remaining top-down window-specific integral is the normalized external-label Clebsch/Racah contraction over B4, not the one-word anchor and not the unit 3 x 3bar invariant.\nPASS: runner does not convert nonempty support into a numeric displacement\nPASS: deep probe is withheld for the same named window-specific integral\n\n================================================================================================================\nPart 6: note hygiene and no-go discipline\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note uses markdown links for one-hop authorities\nPASS: context refs avoid tool-local scratch paths\nPASS: note avoids overreach closure phrases\nPASS: note contains visible N1-N8 discipline\nPASS: note reports the fundamental displacement as not reported\nPASS: note includes the reverse-anchor construction row\nPASS: note names the exact remaining integral object\nPASS: note does not use retained/no_go/conditional/clean status labels\nTOTAL: PASS=37, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101634Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

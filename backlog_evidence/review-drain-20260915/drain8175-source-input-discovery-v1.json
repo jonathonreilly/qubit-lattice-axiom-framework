@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "kind": "read-only-source-discovery-not-execution",
+  "base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "primary": "scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py",
+  "primary_sha256": "85f03114c320925015c9e0b32eaa8bc13d3c29b7d7e467cf399865eae04093b0",
+  "runtime_inputs": [
+    {
+      "path": "docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "a0c558c7d98c573f32a148724c3c3629c3aeca818d286f1df2024f870dc6f072",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "context only, not mathematical premise"
+    }
+  ],
+  "input_fingerprint": "e9932815f0736808bcf514c5483ecb71cc8f1032b05ec4f02fc50ecedd2697a3",
+  "declared_timeout": 60,
+  "packet_transitive_helpers": [],
+  "graph_helpers": [],
+  "citations": [
+    "docs/work_history/review_loop/pr8175/README.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "graph_primary": "scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py",
+  "framework_dependencies": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "mathematical_premise_notes": [],
+  "mathematical_imports": [
+    "finite graph/tree connectivity and edge count",
+    "finite coordinate increments and charge telescoping under stated finite refinement conditions",
+    "rational polynomial substitution and completed-square identity"
+  ],
+  "deferred_role": "Complete corrected negative argument plus original full note, not live supporting proof or premise; universal upper2 remains conditional",
+  "registry_changes_required": false,
+  "primary_imported": false,
+  "primary_executed": false,
+  "static_compile": true,
+  "original_archives_verified": 28,
+  "original_delta_verified": true
+}

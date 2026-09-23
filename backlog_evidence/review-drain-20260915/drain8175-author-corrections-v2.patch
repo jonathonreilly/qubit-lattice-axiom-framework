@@ -1,0 +1,521 @@
+--- docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,64 +1,32 @@
+ ---
+-claim_id: admissibility_rule_six_axis_formation_threshold_the_sharper_bad_pair_budget_is_false_for_the_extended_explanation_tree_explicit_witnesses_and_the_two_level_period_bounded_theorem_note_2026-09-16
++claim_id: extended_explanation_tree_finite_witness_counts_and_rational_recursion_certificates_bounded_theorem_note_2026-09-16
+ claim_type: bounded_theorem
+-claim_scope: "For the two-level noisy majority automaton of block 30 (PR #8174) in level time on Z^3 — a site with at least two 1-predecessors is 1, a site with exactly one is 1 only by a noise mark, a site with none only by a noise mark — and block 30's extended explanation tree (seeds S, amplified nodes A with an arrow to their single 1-predecessor, processed nodes with an excuse arrow, forks; the potential Sum of the poles' charges plus the number of forks; bad pairs): (T1) the accounting identities — an amplified excuse changes the charge k by 1/3 - delta_{jk}; the potential rises by 1 - b at a fork-free refinement with b bad pairs and by at most 1 - b + (forks created) otherwise; the rises sum to the number of forks; the excuse arrows and amplified nodes sum over the refinements to E and |A| — and the two-level period: a fork-free refinement with three processed poles (rise 1, three excuse arrows) followed by one with two bad poles and one processed pole (rise -1, one excuse arrow, two amplified nodes) is rise-neutral with four excuse arrows per two amplified nodes, ratio 2 (proved); (T2) the sharper bad-pair budget E <= 3(|S| - 1) + |A| named open in block 30 is false for this construction: three explicit noise configurations (windows 4x4x7 and 5x5x9), re-executed through the automaton and the construction, have valid trees with (E, |A|, |S|) = (16, 10, 1), (20, 12, 1), (23, 12, 2), inside block 30's budget E <= 3(|S| - 1) + 2|A| and above the sharper one by 6, 8 and 8, so that any constant c with E <= 3(|S| - 1) + c|A| on every tree of this construction satisfies c >= 5/3; the first witness's noise marks are exactly its tree's seed and ten amplified nodes; uniformly random cones (300 in the runner, 40 000 in the controls) never exceed the ratio 1, which places block 30's executed maximum 2/3 as a sampling artefact (proved by exhibition; executed); (T3) the stake the refuted budget would have had: with the amplification weight epsilon_2/t the exact super-solutions at (t + epsilon_2/t, epsilon_1/t^3) give p >= 453 at (p, 1, 2), 232 at (p, 1, 1), 905 at (p, 2, 4), 677 at (p, 1, 3), a factor between 8 and 10 below block 30, under a ceiling 4/729 at t = 2/27 crossed between p = 367 and 368 on (p, 1, 2) — none of it claimed as a region (conditional on the false budget; exact). Not claimed: that the constant 2 is attained (the period gives 2 per period; chains of arbitrary length are not constructed); a lowering of block 30's ceiling; anything about a differently built tree; the true strength. No reading, rule or coupling is selected as physical; exact arithmetic throughout the runner."
++claim_scope: "Exact finite marked-automaton constructions and charge identities for the declared explanation-tree algorithm: counts 16/10/1, 20/12/1, 23/12/2, exact consecutive periods 2/1/1 and local neutral arithmetic; four exact rational polynomial super-solutions and completed-square maximum. No global sharpness, universal upper budget, physical formation threshold or completed negative certification is claimed."
+ upstream_dependencies:
+   - minimal_axioms
+-  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
+-runner: scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py
++runner: scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py
+ ---
+ 
+-# The sharper bad-pair budget is false for the extended explanation tree: explicit witnesses at `8/5` and `5/3` inside block 30's budget, and the two-level period of ratio `2`
++# Finite explanation-tree witness counts and rational recursion certificates
+ 
+ **Date:** 2026-09-16
+ **Type:** bounded_theorem
+-**Status:** bounded-support (exact; a route pruned by exhibition; conditional on the named supplied readings; unaudited)
++**Status:** bounded-support; declared finite combinatorics and arithmetic, unaudited.
++**Primary:** [exact finite checks](../scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py).
++**Cache:** [source-bound execution evidence](../logs/runner-cache/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.txt).
++**Recovery:** [full original history and deferred science](work_history/review_loop/pr8175/README.md).
+ 
+ ## Result up front
+ 
+-Block 30 (PR #8174) lifted the six-axis formation threshold to `p ≥ 4165` at
+-`(p, 1, 2)` and named, as the first item after it, a sharper accounting for
+-its extended explanation tree: `E ≤ 3(|S| − 1) + |A|` in place of the proved
+-`E ≤ 3(|S| − 1) + 2|A|`, where `E` counts excuse arrows, `S` the seeds and `A`
+-the amplified nodes. Every executed tree of block 30 used at most `2/3` of the
+-allowed two arrows per amplified node, and a proof of the sharper budget
+-would have moved the region to `p ≈ 500`. This note closes that item in the
+-negative.
+-
+-The sharper budget is false for the construction. A hill-climb over noise
+-configurations in a `4×4×7` window finds trees with `(E, |A|, |S|) =
+-(16, 10, 1)` and `(20, 12, 1)`, and a `5×5×9` window gives `(23, 12, 2)`; each
+-is a valid extended explanation tree, each lies inside block 30's budget, and
+-each exceeds the sharper one — by `6`, `8` and `8`. Their ratio
+-`(E − 3(|S| − 1))/|A|` is `8/5`, `5/3`, `5/3`, so any constant `c` with
+-`E ≤ 3(|S| − 1) + c|A|` on every tree of this construction is at least `5/3`.
+-The first witness is self-contained: its eleven noise marks are exactly its
+-tree's seed and ten amplified nodes. The mechanism is read off the
+-construction's own log. Two kinds of refinement alternate: one keeps three
+-processed poles (three excuse arrows, and the potential rises by one), the
+-next keeps two bad amplified poles and one processed pole (one excuse arrow,
+-two amplified nodes, and the potential falls by one). The pair is neutral for
+-the potential and spends four excuse arrows on two amplified nodes — ratio
+-exactly `2`, the constant block 30 proved. Uniform random sampling never
+-sees this: `40 000` random cones stay at or below ratio `1`, which is why
+-block 30 measured `2/3`.
+-
+-What the route would have been worth is recorded and not claimed: under the
+-false budget the exact certificates give `p ≥ 453` on `(p, 1, 2)` and a
+-factor between `8` and `10` on every line, with a ceiling `4/729`. Block 30's
+-ceiling `256/531441` stands. The remaining factor from `4165` to the located
+-`11` must be sought in a differently built tree or a different count, not in
+-this accounting.
+-
+-In plain words: the earlier proof allowed each cheap dissent to drag along
+-two expensive explanations, and every example we had looked at used less
+-than one. We hoped the proof was merely loose. It is not: a deliberately
+-built example makes the cheap dissents come in pairs, and each pair really
+-does drag along four explanations. The allowance of two was the truth about
+-this way of counting, so the next improvement has to count differently.
+-
+-Exactly: the identities and the period (T1); the witnesses (T2); the stake
+-(T3). Executed with exact arithmetic: 20 checks, 9 mutations.
++Three explicit finite constructions have ratios 8/5, 5/3, 5/3 and consecutive
++local-period counts 2, 1, 1. A two-refinement neutral period has `(r,e,a)=(0,4,2)`.
++That local identity does not decide a global sharp constant. All witness marks,
++algorithmic steps, accounting identities and rational certificates are retained.
++The full corrected negative argument is readable in the recovery packet with
++formal certification deferred; incomplete N1 coverage is not a mathematical
++refutation. No primary, random-cone fixture or mutation was run during author
++preparation. The expected primary count remains 20 checks; its new exact
++per-witness period target replaces the former aggregate-only check.
+ 
+ ## Machine status and trace
+ 
+@@ -67,12 +35,12 @@
+ target_claim_type: bounded_theorem
+ trace_class: upstream_support
+ target_claim_id: null
+-target_blocker_text: "block 30's first open item: the sharper bad-pair budget E <= 3(|S| - 1) + |A| for the extended explanation tree (would give p of order 500 at (p, 1, 2))"
++target_blocker_text: "finite witness accounting and rational recursion arithmetic"
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the item closed in the negative by exhibition: three witnesses with ratio 8/5, 5/3, 5/3 inside block 30's budget; the two-level period has ratio exactly 2; the stake (p >= 453 on (p, 1, 2)) recorded and not claimed. Next for the threshold: a count of the amplification part by clusters rather than sub-structures, or a tree built with a different pole rule (the witnesses are the test cases either must pass); the overlap-free tree of trees remains blocked. Consumers: the campaign's decision record; block 30's N1 item 5"
+-conditional_surface_status: "T1 proved for the construction as declared; T2 proved by exhibition and executed (the witnesses rebuilt from their noise marks; every arrow checked against the 1-predecessors; block 30's budget verified on them); T3 exact and conditional on the false budget, recorded as the stake only; conditional on the records-only reading, positivity, the six-axis menu and the monotone order as supplied conditions for the automaton's meaning; the standard mathematical imports named at definition level"
++next_trace_action: "original-reviewer affected confirmation and exact-source bounded evidence; global conclusions remain deferred"
++conditional_surface_status: "explicit finite construction and algebraic identities only; no open handoff used as theorem authority"
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
+@@ -80,116 +48,164 @@
+ 
+ ## Premises and declared objects
+ 
+-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule and its one-site conditional given a recorded set; the level automaton, the two-level domination and the extended explanation tree are block 30's objects (PR #8174, an open hand-off referenced as an evidence address), restated here as declared objects and re-executed by the runner's embedded construction. All proposed and unaudited.
++The [axioms memo](MINIMAL_AXIOMS_2026-06-29.md) supplies framework context:
++one fixed covariant nearest-neighbor rule; conditional probabilities vary
++with nearest-neighbor conditions; records form; only records are readable.
++It does not select the marked automaton, tree algorithm or weights below.
++The primary also pins and reads the context-only finite product-law note
++`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`.
++No theorem from that note is needed by the finite construction. The historical
++open handoffs are archived provenance, not mathematical authority. The
++polynomial recursion and six-menu arithmetic are defined explicitly here.
+ 
+ Declared objects.
+-- **Level time and the one-sided automaton.** Sites `x ∈ Z³`, level `τ(x) = x_1 + x_2 + x_3`, predecessors `x − e_j`, siblings `x ± (e_i − e_j)`. A **noise set** `ζ` is a set of sites; the automaton sets `η_x = 1` if at least two of `η_{x−e_j}` are `1`, and otherwise `η_x = 1` if and only if `x ∈ ζ`; sites outside the window are `0`. This is block 30's automaton `η'` with the uniforms replaced by the marks they produce: `ζ` is the set of sites at which the uniform falls below the relevant noise level. A **seed** is a 1-site with no 1-predecessor, an **amplified site** one with exactly one (its **direction** `j` is the index of that predecessor), a **processed-type site** one with at least two; the **winning pair** of a processed-type site is its two 1-predecessors of smallest index.
++- **Level time and the one-sided automaton.** Sites `x ∈ Z³`, level `τ(x) = x_1 + x_2 + x_3`, predecessors `x − e_j`, siblings `x ± (e_i − e_j)`. A **noise set** `ζ` is a set of sites; the automaton sets `η_x = 1` if at least two of `η_{x−e_j}` are `1`, and otherwise `η_x = 1` if and only if `x ∈ ζ`; sites outside the window are `0`. This is a declared deterministic marked automaton; no probabilistic domination or selected physical rule is assumed. A **seed** is a 1-site with no 1-predecessor, an **amplified site** one with exactly one (its **direction** `j` is the index of that predecessor), a **processed-type site** one with at least two; the **winning pair** of a processed-type site is its two 1-predecessors of smallest index.
+ - **The graph `G`, the functionals, the excuse, bad pairs.** Arrows `{x, x − e_j}`, forks `{x, x ± (e_i − e_j)}`; `M_k(z) = z_k − τ(z)/3`; for a processed-type `v`, `Excuse_k(v)` is the winning-pair member with index `≠ k` (the smaller if both); for an amplified `v` with direction `j`, `Excuse_k(v) = v − e_j` for every `k`; the pair `(v, k)` is **bad** if `v` is amplified with direction `k`.
+-- **Clusters, poles, refinements — block 30's construction.** At level `s` the clusters are the level-`s` parts of the components of the graph on 1-sites of levels `≤ s` with an edge from each processed-type or amplified site to each of its 1-predecessors. A cluster carries three **poles** `(p_0, p_1, p_2)` (the root's cluster `{x}` with poles `(x, x, x)`); a **refinement** of a cluster `K` with poles `p_k` takes the excuses `u_k = Excuse_k(p_k)`, the clusters of the 1-predecessors of `K`, one representative fork between each pair of these clusters that a fork joins, and the minimal tree of clusters and forks connecting the clusters of `u_0, u_1, u_2`; each cluster of that tree receives the poles `u_k` it contains and, for the other charges, the endpoint of the fork toward the cluster of `u_k`; the forks of the tree become tree edges. A pole is **kept** if it is incident to an existing tree edge or is a bad amplified pole for its charge (the first pole if none is); a kept processed-type pole `v` with charge `k` gets the **excuse arrow** `{v, u_k}`, a kept amplified pole the **amplification arrow** to its single 1-predecessor. Seeds are singleton clusters and end the recursion.
++- **Clusters, poles, refinements — declared construction.** At level `s` the clusters are the level-`s` parts of the components of the graph on 1-sites of levels `≤ s` with an edge from each processed-type or amplified site to each of its 1-predecessors. A cluster carries three **poles** `(p_0, p_1, p_2)` (the root's cluster `{x}` with poles `(x, x, x)`); a **refinement** of a cluster `K` with poles `p_k` takes the excuses `u_k = Excuse_k(p_k)`, the clusters of the 1-predecessors of `K`, one representative fork between each pair of these clusters that a fork joins, and the minimal tree of clusters and forks connecting the clusters of `u_0, u_1, u_2`; each cluster of that tree receives the poles `u_k` it contains and, for the other charges, the endpoint of the fork toward the cluster of `u_k`; the forks of the tree become tree edges. A pole is **kept** if it is incident to an existing tree edge or is a bad amplified pole for its charge (the first pole if none is); a kept processed-type pole `v` with charge `k` gets the **excuse arrow** `{v, u_k}`, a kept amplified pole the **amplification arrow** to its single 1-predecessor. Seeds are singleton clusters and end the recursion.
+ - **The potential and the log.** `Span(K) = Σ_k M_k(p_k)`; `Φ = Σ_{unprocessed clusters} Span + #forks`, `Φ = 0` at the start. The construction's **log** records, at each refinement, `(b, kept, a, e, f, r, d)`: bad pairs, kept poles, amplified and processed-type kept poles, forks created, the rise `r = 1 − b + Σ_{forks created}(1 − Span(fork))` of `Φ`, and the number of distinct poles.
+-- **The budgets.** `F = #forks`, `E = Σ e`, `|A| = Σ a` over the refinements; block 30's budget is `E ≤ 3(|S| − 1) + 2|A|`; the **sharper budget** is `E ≤ 3(|S| − 1) + |A|`; the **ratio** of a tree with `|A| ≥ 1` is `(E − 3(|S| − 1))/|A|`.
++- **Finite counts.** `F=#forks`, `E=sum e`, `|A|=sum a`; for the explicitly reconstructed trees these equal distinct edge/node counts. The arithmetic ratio is `(E-3(|S|-1))/|A|` when `|A|>=1`. No universal budget is imported.
+ - **The witnesses.** `W1`: window `[0,4)²×[0,7)`, root `(3, 3, 4)`, marks `(0,0,0), (0,0,1), (0,1,0), (1,0,0), (1,0,2), (1,2,0), (1,3,1), (2,0,0), (2,2,3), (2,3,4), (3,0,2)`. `W2`: the same window, root `(3, 3, 6)`, the forty marks listed in the runner. `W3`: window `[0,5)²×[0,9)`, root `(4, 4, 5)`, the seventy-four marks listed in the runner.
+-- **The recursion of block 25 and the stake's weights.** `D = (1 + xU)²(1 + 3xD)(1 + yF)⁶`, `U = (1 + xU)³(1 + yF)⁶`, `F = (1 + xU)³(1 + 3xD)(1 + yF)⁵`, `R = (1 + xU)³(1 + 3xD)(1 + yF)⁶`; under a budget `E ≤ 3(|S| − 1) + c|A|` the amplification weight in block 30's count is `ε₂/t^c`, so `x = t + ε₂/t^c`, `y = ε₁/t³`; a **super-solution** at `(x, y)` is a rational triple `≥ 1` dominating its own right sides; `ε₁ = d_1`, `ε₂ = max(d_2, d_3)` with block 30's closed forms.
+-
+-## Prior art and what is new
+-
+-Block 30 (PR #8174) built the extended explanation tree on top of block 25's level-time carrying of Toom's stability theorem (in the Berman–Simon route as exposed by Gács), proved `E ≤ 3(|S| − 1) + 2|A|`, measured `2/3` on its executed trees and named the sharper budget as its first open item. What is new: (i) the sharper budget is refuted by explicit witnesses found by a hill-climb rather than by uniform sampling (T2); (ii) the mechanism — the two-level period of the potential's accounting with ratio exactly `2` (T1) — which identifies block 30's constant as the value of this accounting rather than its slack; (iii) the stake of the refuted route recorded exactly and not claimed (T3); (iv) the identification of the executed `2/3` as a sampling artefact, with the blind spot quantified.
+-
+-## Exact target and obligation graph
+-
+-| Obligation | Statement | Route | Runner family |
+-|---|---|---|---|
+-| T1 | the accounting identities; the two-level period has ratio `2` | block 30's spanning identity; the log | B |
+-| T2 | the sharper budget fails: three witnesses, ratio `8/5`, `5/3`, `5/3`; `c ≥ 5/3`; the blind spot | exhibition; the construction re-executed; uniform sampling | C |
+-| T3 | the stake: certificates under the false budget; the ceiling `4/729` | exact super-solutions; a one-variable maximum | D |
+-
+-## Theorem T1 — the accounting identities and the two-level period
++- **Declared polynomial recursion.** `D=(1+xU)^2(1+3xD)(1+yF)^6`, `U=(1+xU)^3(1+yF)^6`, `F=(1+xU)^3(1+3xD)(1+yF)^5`, `R=(1+xU)^3(1+3xD)(1+yF)^6`. A rational triple `(Dbar,Ubar,Fbar)>=1` is a super-solution when it dominates the three right sides. Here `x=t+epsilon_2/t`, `y=epsilon_1/t^3` are declared algebraic weights only. No probability or formation threshold follows from a certificate.
++
++## Theorem T1 — accounting identities and local period
++
++
+ 
+ **T1.1 (increments).** For an amplified `v` with direction `j`, `M_k(v − e_j) − M_k(v) = 1/3 − δ_{jk}`; for a processed-type `v`, `M_k(Excuse_k(v)) − M_k(v) = 1/3`. *Proof.* `τ` drops by one along either arrow; the coordinate `k` drops by one exactly when the arrow's direction is `k`. ∎
+ 
+-**T1.2 (the rise).** At a refinement of `K` with `b` bad pairs, `Σ_{clusters of the tree} Span + Σ_{forks of the tree} Span(fork) = Span(K) + 1 − b` (block 30's spanning identity, restated: each pole's charge either travels to its excuse, gaining `1/3` or losing `2/3`, or is carried across the forks with the fork endpoints' charges telescoping); hence `Φ` rises by `r = 1 − b + Σ_{forks created}(1 − Span(fork))`, which is `1 − b` at a fork-free refinement and at most `1 − b + f` otherwise. Since `Φ = 0` at the start and `Φ = #forks` at the end (seeds are singleton clusters with `Span = 0`), `Σ_i r_i = F`. Trivially `Σ_i e_i = E`, `Σ_i a_i = |A|`, `b_i ≤ a_i` (a bad pole is amplified and kept) and `e_i + a_i ≤ 3`. Executed on the three witnesses' logs (B2).
+-
+-**T1.3 (the two-level period).** A fork-free refinement keeping three processed-type poles has `b = 0`, `r = 1`, `e = 3`, `a = 0`; a fork-free refinement keeping two bad amplified poles and one processed-type pole has `b = 2`, `r = −1`, `e = 1`, `a = 2`. Their sum has `r = 0`, `e = 4`, `a = 2`: the pair leaves the potential where it was and spends four excuse arrows on two amplified nodes, `(e − 3r)/a = 2`. *Proof.* T1.2 with `f = 0`. ∎ Each of the three witnesses realises the pair as consecutive refinements of its log (B3: `4` occurrences; W1 twice, W2 twice). Whether the pair can be repeated an arbitrary number of times is not proved here; the witnesses contain two periods each.
+-
+-*Remark (what a per-refinement proof would need).* Per refinement, `e ≤ 3r + 2a` always (block 30's proof), with equality at `(b, a, e) = (1, 1, 2)`, `(2, 2, 1)`, `(3, 3, 0)`; the sharper inequality `e ≤ 3r + a` fails at each of these, and each occurs in W1 (C3). So no per-refinement argument can give a constant below `2`, and T2 shows that no global compensation rescues `1`.
+-
+-## Theorem T2 — the witnesses
+-
+-**T2.1.** Run the automaton from the marks of W1 in its window. The root `(3, 3, 4)` is `1`; the construction returns a tree with `27` nodes, `E = 16`, `|A| = 10`, `|S| = 1`, no fork, `10` refinements and `10` bad pairs; every excuse arrow joins a processed-type node to one of its 1-predecessors, every amplification arrow joins an amplified node to its single 1-predecessor, the seed has no 1-predecessor, and the point graph is a tree through 1-sites containing the root. Block 30's budget reads `16 ≤ 20`; the sharper budget reads `16 ≤ 10` and is false. The eleven marks are exactly the tree's seed and its ten amplified nodes, so W1 is self-contained (C1, C5).
+-
+-**T2.2.** W2 gives `E = 20`, `|A| = 12`, `|S| = 1`, no fork (`20 ≤ 24` against `20 ≤ 12`), and W3 gives `E = 23`, `|A| = 12`, `|S| = 2`, one fork (`23 ≤ 27` against `23 ≤ 15`) (C2). Hence any constant `c` with `E ≤ 3(|S| − 1) + c|A|` on every tree of this construction satisfies `c ≥ 5/3`; the sharper budget, `c = 1`, is false. ∎
+-
+-**T2.3 (the blind spot).** On `300` uniformly random cones of depth `3` to `8` at four noise densities the construction never exceeds the ratio `1` (worst `1/2` in the runner; `1` on `40 000` cones in the controls), while W1 reaches `8/5` (C4). Block 30's executed maximum `2/3` measured the sampling, not the construction. The witnesses were found by a hill-climb on the ratio (`specs/supervisor_control_block31_climb.py`), which reaches `5/3` from random starts within four minutes in both windows.
++**T1.2 (the rise).** At a refinement of `K` with `b` bad pairs, `Σ_{clusters of the tree} Span + Σ_{forks of the tree} Span(fork) = Span(K) + 1 − b` (the pole-assignment identity justified below); hence `Φ` rises by `r = 1 − b + Σ_{forks created}(1 − Span(fork))`, which is `1 − b` at a fork-free refinement and at most `1 − b + f` when each created fork has nonnegative span; that condition is checked on the three finite witnesses, not imported as a universal construction theorem. Since `Φ = 0` at the start and `Φ = #forks` at the end (seeds are singleton clusters with `Span = 0`), `Σ_i r_i = F`. Trivially `Σ_i e_i = E`, `Σ_i a_i = |A|`, `b_i ≤ a_i` (a bad pole is amplified and kept) and `e_i + a_i ≤ 3`. The three witness logs satisfy these identities (B2); the runner also checks equality of accumulated counts with independently recounted distinct edges/nodes. For a general refinement history, the telescoping assertion is conditional on termination at singleton seeds and the stated pole assignment, not an existence theorem for all marked inputs.
++
++**T1.3 (the two-level period).** A fork-free refinement keeping three processed-type poles has `b = 0`, `r = 1`, `e = 3`, `a = 0`; a fork-free refinement keeping two bad amplified poles and one processed-type pole has `b = 2`, `r = −1`, `e = 1`, `a = 2`. Their sum has `r = 0`, `e = 4`, `a = 2`: the pair leaves the potential where it was and spends four excuse arrows on two amplified nodes, `(e − 3r)/a = 2`. *Proof.* T1.2 with `f = 0`. ∎ The exact consecutive-period counts in `(W1,W2,W3)` are `(2,1,1)` (B3), four in total. The equality is local arithmetic; arbitrary repetitions and a sharp global ratio are not asserted.
++
++**Pole-assignment proof.** Regard the finite cluster/fork incidence tree as an abstract tree. For each charge k, the terminal is the cluster containing its excuse u_k; every other vertex takes the intersection point on its first edge toward that terminal. Remove a leaf vertex not carrying all terminals. For each charge whose terminal is outside the leaf, the leaf's assigned point is its unique edge intersection q. For charges with terminal in the leaf, the adjacent vertex currently carries q, and deleting the leaf transfers their terminal value to that neighbor. Thus the change in the sum over all vertices for all charges is `sum_k M_k(q)=0`. Repeating leaf removal reduces the sum to `sum_k M_k(u_k)`. The coordinate calculation in T1.1 makes this `Span(K)+1-b`. Subtracting old cluster span and adding one to the fork counter per new fork gives the exact rise formula. Summing these actual potential differences gives the terminal potential minus the initial potential. At a singleton seed all three poles coincide, so their span is zero. This proves the stated identity under the explicit finite refinement conditions without importing the separate global budget.
++
++## Theorem T2 — three exact finite constructions
++
++The complete marks and deterministic construction are specified above and in
++the linked primary. Reconstruct the automaton in increasing level order,
++choose the first two live predecessor indices at each processed site, and
++apply the declared cluster/pole algorithm. Recount edges and nodes separately.
++The resulting finite identities are:
++
++| Witness | E | amplified nodes | seeds | forks | ratio | consecutive periods |
++|---|---:|---:|---:|---:|---|---:|
++| W1 |16|10|1|0|8/5|2|
++| W2 |20|12|1|0|5/3|1|
++| W3 |23|12|2|1|5/3|1|
++
++**Proof by explicit finite construction.** W1 has 27 nodes, 10 refinements and 10 bad
++pairs; W2 has 33 nodes, 12 refinements and 12 bad pairs; W3 has 37 nodes, 13 refinements,
++12 bad pairs and one fork. Every excuse arrow joins a processed-type live
++site to a live predecessor, each amplification arrow joins a site with exactly
++one live predecessor to that predecessor, and each seed has no live predecessor.
++The point graph contains the root, is connected and has one fewer edges than
++vertices, hence is a tree. All vertices are live sites. W1's eleven marks
++are exactly its seed and ten amplified sites. These are finite claims verified
++by the explicit algorithm and independently recounted witness records;
++B2/B3/C1/C2/C5 reconstruct and test them, rather than assume a global theorem.
++Subtracting the integer counts gives `E-3(|S|-1)-|A|=(6,8,8)` and
++`3(|S|-1)+2|A|-E=(4,4,4)`; the ratios in the table follow by division. ∎
+ 
+ *Reading of the witnesses.* W1's log is `(0,1,0,1)`, `(1,2,1,1)`, `(0,2,0,2)`, `(1,3,1,2)`, `(0,3,0,3)`, `(2,3,2,1)`, `(0,3,0,3)`, `(2,3,2,1)`, `(1,3,1,2)`, `(3,3,3,0)` in `(b, kept, a, e)`: the root's single arrow, a bad pole appearing beside it, the width growing to three poles, then two periods of T1.3, and the bottom refinement with three bad poles all pointing at the seed. The three-pole width is sustained because the two amplification arrows of a two-bad refinement land on processed-type sites that are kept at the next level, and that level's three excuse arrows land on two amplified sites and one processed-type site — the excuse rule (the smaller index of the winning pair) and the one-sided rule's forced ones cooperate to keep three distinct poles incident without any fork.
+ 
+-## Theorem T3 — the stake of the refuted budget
+-
+-Had the sharper budget held, block 30's count would read `P(η'_x = 1) ≤ ε₁ R(t + ε₂/t, ε₁/t³)`, and the region would need `t + ε₂/t < 4/27`, i.e. `ε₂ < max_t t(4/27 − t) = 4/729` (at `t = 2/27`), which on `(p, 1, 2)` is crossed between `p = 367` and `368`. The rational triples of the runner are exact super-solutions at `(453, 1, 2)` with `t = 77/1000`, `(232, 1, 1)` with `19/250`, `(905, 2, 4)` with `39/500`, `(677, 1, 3)` with `77/1000`, each with `ε₁ R̄ < 10⁻⁵` (D1–D2): a factor between `8` and `10` below block 30's `4165`, `2085`, `8330`, `6247` (D3). By T2 the premise is false and none of this is a region; it is recorded so that the item's value and the ceiling it was aiming at are on the record. Block 30's ceiling `ε₂ < 256/531441` stands.
+-
+-## No-Go Discipline Gate
+-
+-This note's sentence is negative — a route is pruned — and the gate applies in full.
+-
+-### N1 — Routes by which the negative sentence could fail, and the routes beyond it
+-1. *The witnesses invalid* — closed: rebuilt from their marks through the one-sided rule, every arrow checked against the 1-predecessors, the tree checked (C1–C2); the refuting pass repeats the checks with a separate implementation.
+-2. *The construction implemented differently from block 30's* — the runner embeds block 30's control core with a per-refinement log added; the refuting pass re-derives the witnesses' counts from the edge lists alone.
+-3. *A differently built tree* — not covered: a construction with another pole or excuse rule may satisfy a smaller constant; the witnesses' configurations are the test cases it must pass (N7).
+-4. *The sharper budget rescued by a global compensation* — closed by T2 (the ratio `5/3` is global).
+-5. *The constant `2` attained* — not claimed: the period gives `2` per period, but chains of arbitrary length are not constructed; the executed maximum is `5/3` (windows `4×4×7` and `5×5×9`, four minutes of hill-climb each).
+-6. *The stake's certificates* — exact (D1); conditional on the false budget; not a region.
+-
+-### N2 — Wall-independence audit
+-No no-go wall of the repository is used.
+-
+-### N3 — Hidden-wall scan
+-No hidden dependence: the inputs are the axioms' sentences, block 01's rule, and block 30's automaton and construction as declared and re-executed.
+-
+-### N4 — Per-citation table
+-| Citation | Role | Load-bearing? |
+-|---|---|---|
+-| `minimal_axioms` | the four sentences under Premises | yes (premise) |
+-| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
+-| block 30 (open PR #8174) | the automaton, the construction, the budget, the open item; re-executed here | yes (the object of the refutation; construction embedded) |
+-| block 25 (open PR #8168) | the recursion used in T3 | the stake only |
+-
+-### N5 — Resolution audit
+-| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+-|---|---|---|---|---|---|
+-| "the sharper bad-pair budget is false for block 30's extended explanation tree" | executed: the increments of an amplified excuse; the rise identity at every refinement of the witnesses; the period's arithmetic | executed: the witnesses rebuilt from their marks through the one-sided automaton; every arrow against the 1-predecessors; the ceiling's crossing at `367`/`368` | executed: the trees' counts; the sharper budget failing by `6`, `8`, `8` and block 30's holding; `300` random cones never above `1` | executed: the four certificates of the stake; the maximum `4/729` symbolically | a statement about block 30's construction for any weights; the constant's attainment, other constructions and the true strength not claimed |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling or order; none is a wall.
+-
+-### N7 — Steelman
+-Hostile reviewer: "You refuted a budget for one implementation of one tree; the idea of a sharper accounting is untouched." Reply: the constant is shown to be the value of this accounting's period, not an artefact of one implementation — the period uses only the spanning identity and the one-arrow-per-kept-pole rule; a different construction must change one of those, and the three witnesses are the configurations on which it will be judged. Conceded: no theorem says every extended tree of these configurations has ratio above `1`; the negative sentence is about block 30's construction.
+-
+-### N8 — Cross-cycle echo
+-Block 25's sharpening refuted its own candidate lemma (arrows point down) by search; block 30 named this item on executed evidence that this note shows to be a sampling artefact; the lesson of block 04 (sup-of-sums) and block 07 (no iff without a witness search) recurs: an executed maximum on random inputs is not evidence about a worst case.
+-
+-## Falsifiers
+-- An increment of an amplified excuse other than `1/3 − δ_{jk}`; a refinement of the witnesses whose rise is not `1 − b` when fork-free or exceeds `1 − b + f`; rises not summing to the number of forks; `e`, `a`, `b` not summing to `E`, `|A|` and the bad count; `b > a` or `e + a > 3` somewhere; the period's pair with a sum other than `(r, e, a) = (0, 4, 2)` or absent from the logs (B1–B3).
+-- W1 failing to rebuild to a valid tree with `(E, |A|, |S|, F) = (16, 10, 1, 0)`; W2 or W3 not at ratio `5/3` or outside block 30's budget; W1 without the two local patterns; a random cone above ratio `1`; W1's or W2's bad count differing from `|A|` (C1–C5).
+-- A super-solution inequality failing at one of the four points of the stake; `t(4/27 − t)` exceeding `4/729`; the crossing not between `367` and `368`; a line's factor outside `(8, 10)` (D1–D3).
++The fixed seeded sample in C4 has 300 cones of depths 3 through 8 and four integer
++noise percentages. Its resulting maximum is a property of that sample only.
++It does not provide an upper bound over all inputs or demonstrate uniform
++search coverage. The historical 40,000-cone search, candidate collapse,
++hill-climbs and refuter outputs are fully archived; none is rerun in preparation.
++The global negative inference from these counts is preserved separately with
++explicit incomplete formal certification, not promoted by this finite table.
++
++## Theorem T3 — rational polynomial certificates
++
++For positive supplied `(p,q,r)`, define purely rational quantities
++`d1=1-p^3/(p^3+q^3+4r^3)`,
++`d2=1-p^2 q/(pq(p+q)+4r^3)`,
++`d3=1-p^2 r/(r(p^2+q^2)+r^2(p+q)+2r^3)` and
++`epsilon_1=d1`, `epsilon_2=max(d2,d3)`.
++These may also be computed by enumerating the six signed coordinate axes:
++weights p for equal values, q for opposite values on the same axis, and r
++for perpendicular axes, taking predecessor triples `(a,a,a)`, `(a,a,-a)`
++and `(a,a,b)` with b perpendicular to a. Summing the six products gives
++exactly the three displayed denominators; dividing the target a product by
++each sum gives the stated deviations. This defines the algebra without an
++imported menu theorem or a probability domination claim.
++
++At each tuple below, `(t,Dbar,Ubar,Fbar)` is an exact super-solution for the
++declared recursion with `x=t+epsilon_2/t`, `y=epsilon_1/t^3`:
++
++```python
++{
++        (453, 1, 2): (Fraction(77, 1000), Fraction(530590310409, 62500000000), Fraction(2581678475343, 1000000000000), Fraction(11343276538931, 1000000000000)),
++        (232, 1, 1): (Fraction(19, 250), Fraction(3177134369, 390625000), Fraction(2565214474763, 1000000000000), Fraction(10810979357851, 1000000000000)),
++        (905, 2, 4): (Fraction(39, 500), Fraction(8819680764063, 1000000000000), Fraction(2607018650019, 1000000000000), Fraction(2955282963089, 250000000000)),
++        (677, 1, 3): (Fraction(77, 1000), Fraction(8860200884553, 1000000000000), Fraction(1306536163573, 500000000000), Fraction(5937627036121, 500000000000)),
++    }
++```
++
++Here `Fraction(n,d)` denotes the exact rational n/d. Substitute each tuple
++into the four finite products above. Clearing their positive denominators
++verifies `Dbar>=rD`, `Ubar>=rU`, `Fbar>=rF`, the three values at least 1,
++`x<4/27`, and `epsilon_1 Rbar<1/100000`; D1 checks these exact inequalities.
++Independent original review recomputed the six-menu deviations and expanded
++all binary port choices, rather than using the same closed forms.
++
++The elementary identity
++`t(4/27-t)=4/729-(t-2/27)^2`
++proves its maximum on `[0,4/27]` is `4/729`, attained at `2/27`.
++Direct rational substitution gives `d3(367,1,2)>4/729>d3(368,1,2)`.
++The four comparison ratios `4165/453`, `2085/232`, `8330/905`, `6247/677`
++each lie strictly between 8 and 10 by cross multiplication (D2/D3).
++These are arithmetic comparisons, not validated old/new formation regions.
++The original conditional probability interpretation requires a separate
++construction/count theorem and the budget discussed in deferred science;
++no such theorem or threshold is imported here. ∎
++
++## No-Go Discipline Gate — DEFERRED applicability record
++
++N1 is incomplete for formal negative certification. Witness validity and
++implementation agreement are concrete finite tests; global compensation is
++addressed only by the exhibited arithmetic. A different construction is
++outside scope; attainment of a global constant 2 is unproved; certificate
++arithmetic is a separate question. These are not five closed attack families.
++N2: no repository wall is imported. N3: marked inputs, outside-zero window,
++winning-pair rule, pole assignment and polynomial weights are explicit.
++N4: the axioms are framework context, product-law source is context-only,
++and historical handoffs have no theorem authority. N5: finite sites and
++refinements are executed by the primary when captured; no spectral modes or
++infinite lattice are executed. N6: preserve original branch and full negative
++proof as deferred science. N7: the global constant may still improve below 2;
++the local period does not force a change of construction. N8: a seeded sample
++maximum does not imply a worst-case bound; earlier historical claims remain
++recovery, not repeated authority.
+ 
+ ## Boundaries and non-claims
+-This note proves that block 30's extended explanation tree does not satisfy the sharper bad-pair budget `E ≤ 3(|S| − 1) + |A|`: three explicit configurations of the two-level noisy majority automaton, re-executed from their noise marks, have valid trees with `(E − 3(|S| − 1))/|A| = 8/5`, `5/3` and `5/3` inside block 30's budget `E ≤ 3(|S| − 1) + 2|A|`, and the two-level period of the potential's accounting has ratio exactly `2`; it does not prove that the constant `2` is attained, does not lower block 30's ceiling, does not treat other tree constructions, other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++This note retains exact finite construction counts, local charge identities and rational polynomial certificates for explicitly declared objects; no physical rule, order or coupling is selected.
++
++A local ratio-two period does not establish a sharp global constant; the universal upper budget is not imported from an open handoff.
++
++Formal negative certification is deferred in the readable recovery argument; finite witness validity is not a claim of five closed attack families.
+ 
+ ## Imports
+-- `minimal_axioms`: the sentences quoted under Premises.
+-- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. Block 30 (PR #8174, open) is the object refuted: its automaton and construction are restated as declared objects and re-executed by the embedded core; block 25 (PR #8168, open) supplies the recursion used for the stake. Both referenced as evidence addresses.
+-- Named standard imports at definition level (never as authority for physics): none beyond finite arithmetic and the union bound implicit in block 30's count (used only in T3, the stake).
+-- Reference only (named, not used): Toom (1980); Berman–Simon (1988); Gács (2021).
+-
+-## Review record
+-Supervisor-run block (owner directive 2026-09-16, evening: "try the sharper bad-pair budget next"). The attempt began as a proof search: the per-refinement accounting was shown to reach equality at `(1, 1, 2)`, `(2, 2, 1)`, `(3, 3, 0)` and `40 000` uniformly random trees never exceeded the ratio `1` (`specs/supervisor_control_block31_search.py`), which suggested a global compensation; a hand analysis of chains with three kept poles produced a candidate family that the construction collapsed to ratio `1` (the one-arrow-per-kept-pole rule leaves the second wall unkept); a hill-climb on the ratio (`..._climb.py`) then found `5/3` in both windows within minutes, and the witnesses' logs exposed the period. The witnesses were verified (`..._witness.py`), W1 reduced to its own marks, and the stake's certificates computed (`..._certify.py`) before the note was written. The refuting pass (`CHECKER_block31_findings.md`, `..._refuter.py`) rebuilds the witnesses' trees from the edge lists with an independent implementation, enumerates the per-refinement accounting to confirm that `2` is its maximum and where `1` fails, and re-runs the majority rule with a separate array implementation. Block 30's N1 item 5 and its "executed `2/3`" are superseded by this note; its theorems are untouched.
++
++Finite graph connectivity, a finite tree's edge count, rational arithmetic,
++and a completed-square identity suffice. The declared pole-assignment identity
++is proved at scope. No global probabilistic domination, formation threshold,
++physical identification or accepted no-go wall is imported. Historical
++sampling and search outputs remain in their original exact recovery files.
+ 
+ ## Verification
+ 
++Expected output is `TOTAL: PASS=20 FAIL=0`: four input checks, three accounting,
++five finite witness/sample checks, three certificate checks, four packaging
++checks and one resolution-report check. There are ten mutation definitions,
++including a new targeted period-count corruption; this is a source census,
++not a new execution result. The primary writes stdout only. The unchanged
++seeded 300-cone fixture is finite evidence, not an exhaustive theorem.
++
+ ```bash
+-python3 scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py
+-python3 scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py --list-mutations
+-python3 scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py --mutation sharper_budget_asserted
++python3 scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py
++python3 scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py --list-mutations
++python3 scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py --mutation period_counts_wrong
+ ```
+-
+-Families: A authority and inputs; B the identities and the period; C the witnesses and the blind spot; D the stake; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 9 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+--- scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py
++++ scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py
+@@ -1,19 +1,14 @@
+ #!/usr/bin/env python3
+-"""Exact checks: the sharper bad-pair budget E <= 3(|S| - 1) + |A| is false for block 30's extended explanation tree.
+-
+-Scope.  T1: the accounting identities of the extended construction (an amplified excuse's increments 1/3 - delta_{jk}; the rise of the
+-potential at each refinement, 1 - b + sum over the forks of (1 - Span); the sum of the rises equal to the number of forks), and the
+-two-level period: a fork-free refinement with three processed poles (rise 1, three excuse arrows) followed by one with two bad poles and
+-one processed pole (rise -1, one excuse arrow, two amplified nodes) is rise-neutral with four excuse arrows per two amplified nodes.
+-T2: three explicit witnesses re-executed from their noise marks through the one-sided automaton and the construction — the trees valid,
+-block 30's budget E <= 3(|S| - 1) + 2|A| holding, the sharper budget failing with (E - 3(|S| - 1))/|A| = 8/5, 5/3 and 5/3 — and the
+-blind spot of uniform sampling (300 random cones never above 1).  T3: the stake the refuted budget would have had: exact
+-super-solutions at (t + epsilon_2/t, epsilon_1/t^3) on the four weight lines and the corresponding ceiling 4/729.  Exact arithmetic
+-only (integers, Fractions and sympy); the runner scans its own source for floating-point literals.
++"""Exact finite marked-automaton witness counts, local charge accounting and
++rational polynomial certificates. Global negative certification and a sharp
++constant two are deferred; no physical threshold is obtained. All three exact
++witness fixtures and the original seeded300-cone sample are retained. This
++primary runs no historical hill-climb or annealing search and writes stdout.
+ """
+ 
+ from __future__ import annotations
+ 
++import hashlib
+ import random
+ import re
+ import sys
+@@ -25,14 +20,15 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 60
+ AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md",
++    "docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+ )
++INPUT_SHA256 = {'docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md': '398661b5330d2e8530aca15429a2fac865b1982ea5215dcd7c6d12e525088599', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
+ ROOT = Path(__file__).resolve().parents[1]
+-CLAIM_ID = "admissibility_rule_six_axis_formation_threshold_the_sharper_bad_pair_budget_is_false_for_the_extended_explanation_tree_explicit_witnesses_and_the_two_level_period_bounded_theorem_note_2026-09-16"
++CLAIM_ID = "extended_explanation_tree_finite_witness_counts_and_rational_recursion_certificates_bounded_theorem_note_2026-09-16"
+ BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
+ BLOCK01_FRAGMENT = "the static law of a product rule"
+ AXIOM_NEEDLES = (
+@@ -45,6 +41,7 @@
+ MUTATION_GATE = {
+     "rise_identity_wrong": "B",
+     "period_arithmetic_wrong": "B",
++    "period_counts_wrong": "B",
+     "witness_marks_wrong": "C",
+     "sharper_budget_asserted": "C",
+     "witness_ratio_wrong": "C",
+@@ -410,8 +407,8 @@
+     note, axioms, block01 = texts
+     checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "the note carries its claim_id once")
+     checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axioms memo carries the four sentences quoted under Premises")
+-    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "block 01's note (on main) carries its claim_id and the rule's product form")
+-    checks.check("A4", all(Path(ROOT, p).exists() for p in AUDIT_INPUT_PATHS), "all declared inputs exist")
++    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "the pinned context-only product-law note carries its identity and product-form heading")
++    checks.check("A4", all(Path(ROOT, p).is_file() and hashlib.sha256(Path(ROOT, p).read_bytes()).hexdigest() == INPUT_SHA256[p] for p in AUDIT_INPUT_PATHS), "all three declared source/context inputs match literal SHA-256 pins")
+ 
+ 
+ # ============================================================================================ the witnesses (T2)
+@@ -473,6 +470,8 @@
+     period_e = 3 if mut("period_arithmetic_wrong") else 4
+     ok3 = True
+     pairs_total = 0
++    per_witness_pairs = []
++    expected_pairs = (2, 2, 0) if mut("period_counts_wrong") else (2, 1, 1)
+     for w_ in (W1, W2, W3):
+         log = run_witness(w_)["log"]
+         pairs = 0
+@@ -482,8 +481,8 @@
+                 pairs += 1
+                 ok3 = ok3 and a_[3] + b_[3] == period_e and a_[2] + b_[2] == 2 and a_[5] + b_[5] == 0
+         pairs_total += pairs
+-        ok3 = ok3 and (pairs >= 1 or w_ is W3)
+-    checks.check("B3", ok3 and pairs_total >= 4, f"T1: a fork-free refinement with three processed poles (rise 1, three excuse arrows) followed by one with two bad poles and one processed pole (rise -1, one excuse arrow, two amplified nodes) is rise-neutral with four excuse arrows per two amplified nodes — the period of ratio 2; the witnesses' logs contain {pairs_total} such consecutive pairs")
++        per_witness_pairs.append(pairs)
++    checks.check("B3", ok3 and tuple(per_witness_pairs) == expected_pairs and pairs_total == 4, f"T1: a fork-free refinement with three processed poles (rise 1, three excuse arrows) followed by one with two bad poles and one processed pole (rise -1, one excuse arrow, two amplified nodes) is rise-neutral with four excuse arrows per two amplified nodes — the period of ratio 2; the exact per-witness counts are {tuple(per_witness_pairs)}, total {pairs_total}; no global sharpness follows")
+ 
+ 
+ # ============================================================================================ family C
+@@ -492,19 +491,19 @@
+     r1 = run_witness(W1, drop=(2, 0, 0) if mut("witness_marks_wrong") else None)
+     ok1 = r1 is not None and r1["ok"] and (r1["E"], r1["A"], r1["S"], r1["F"], r1["refs"], r1["bad"]) == (16, 10, 1, 0, 10, 10)
+     ok1 = ok1 and r1["E"] <= 3 * (r1["S"] - 1) + slack * r1["A"] and r1["E"] - 3 * (r1["S"] - 1) - r1["A"] == 6 and Fraction(r1["E"] - 3 * (r1["S"] - 1), r1["A"]) == Fraction(8, 5)
+-    checks.check("C1", ok1, "T2: witness W1 (window 4x4x7, root (3,3,4), 11 noise marks = the tree's seed and ten amplified nodes): the tree is valid with E = 16, |A| = 10, |S| = 1, no fork, 10 refinements, 10 bad pairs; block 30's budget 3(|S|-1) + 2|A| = 20 holds; the sharper budget 3(|S|-1) + |A| = 10 fails by 6: the ratio is 8/5")
++    checks.check("C1", ok1, "T2: witness W1 (window 4x4x7, root (3,3,4), 11 noise marks = the tree's seed and ten amplified nodes): the tree is valid with E = 16, |A| = 10, |S| = 1, no fork, 10 refinements, 10 bad pairs; the comparison expression with coefficient two 3(|S|-1) + 2|A| = 20 holds; the arithmetic difference E-[3(|S|-1)+|A|] equals6: the ratio is 8/5")
+     r2 = run_witness(W2)
+     target = Fraction(4, 3) if mut("witness_ratio_wrong") else Fraction(5, 3)
+     ok2 = r2 is not None and r2["ok"] and (r2["E"], r2["A"], r2["S"], r2["F"]) == (20, 12, 1, 0) and Fraction(r2["E"] - 3 * (r2["S"] - 1), r2["A"]) == target and r2["E"] <= 3 * (r2["S"] - 1) + 2 * r2["A"]
+     r3 = run_witness(W3)
+     ok3 = r3 is not None and r3["ok"] and (r3["E"], r3["A"], r3["S"]) == (23, 12, 2) and Fraction(r3["E"] - 3 * (r3["S"] - 1), r3["A"]) == target and r3["E"] <= 3 * (r3["S"] - 1) + 2 * r3["A"]
+-    checks.check("C2", ok2 and ok3, "T2: witnesses W2 (window 4x4x7, root (3,3,6): E = 20, |A| = 12, |S| = 1) and W3 (window 5x5x9, root (4,4,5): E = 23, |A| = 12, |S| = 2, one fork) are valid trees with ratio 5/3, within block 30's budget")
++    checks.check("C2", ok2 and ok3, "T2: witnesses W2 (window 4x4x7, root (3,3,6): E = 20, |A| = 12, |S| = 1) and W3 (window 5x5x9, root (4,4,5): E = 23, |A| = 12, |S| = 2, one fork) are valid trees with ratio 5/3, within the comparison expression with coefficient two")
+     # C3: the local patterns that defeat a per-refinement proof (on the unmutated W1)
+     r1u = run_witness(W1)
+     log = r1u["log"]
+     two_e = sum(1 for en in log if en[0] >= 1 and en[3] == 2 and en[5] == 0)
+     two_bad = sum(1 for en in log if en[0] == 2 and en[3] == 1 and en[5] == -1)
+-    checks.check("C3", two_e >= 1 and two_bad >= 1 and all(en[3] > 3 * en[5] + en[2] for en in log if (en[0] >= 1 and en[3] == 2 and en[5] == 0) or (en[0] == 2 and en[3] == 1 and en[5] == -1)), f"T2: W1 contains {two_e} refinement(s) with a bad pole, two excuse arrows and rise 0, and {two_bad} with two bad poles, one excuse arrow and rise -1; at each, e > 3 rise + a, so no per-refinement inequality gives the sharper budget")
++    checks.check("C3", two_e >= 1 and two_bad >= 1 and all(en[3] > 3 * en[5] + en[2] for en in log if (en[0] >= 1 and en[3] == 2 and en[5] == 0) or (en[0] == 2 and en[3] == 1 and en[5] == -1)), f"T2: W1 contains {two_e} refinement(s) with a bad pole, two excuse arrows and rise 0, and {two_bad} with two bad poles, one excuse arrow and rise -1; at each, e > 3 rise + a, these are exact local arithmetic comparisons; formal negative certification remains deferred")
+     # C4: uniform sampling's blind spot
+     random.seed(31)
+     worst = Fraction(-100)
+@@ -524,7 +523,7 @@
+         if A:
+             E_ = sum(1 for e, k in edges.items() if k == "arrow")
+             worst = max(worst, Fraction(E_ - 3 * (len(S) - 1), len(A)))
+-    checks.check("C4", cases > 100 and worst <= 1 < Fraction(8, 5), f"T2: 300 uniformly random cones of depth 3-8 ({cases} explained) never exceed the ratio 1 (worst {worst}), while the witnesses reach 8/5 and 5/3: block 30's executed maximum 2/3 was a sampling artefact")
++    checks.check("C4", cases > 100 and worst <= 1 < Fraction(8, 5), f"T2: 300 uniformly random cones of depth 3-8 ({cases} explained) never exceed the ratio 1 (worst {worst}), while the witnesses reach 8/5 and 5/3: this fixed seeded sample is not a global upper bound")
+     # C5: the witnesses' refinements all fork-free except W3's single fork; bad = |A| in W1 and W2 (every amplified node kept is a bad pole)
+     checks.check("C5", r1u["bad"] == r1u["A"] and r2["bad"] == r2["A"] and r3["F"] == 1 and r1u["nodes"] == 27 and r2["nodes"] == 33, "T2: in W1 and W2 every amplified node of the tree is a bad pole (b = |A|), W1 has 27 nodes and W2 33, and W3 carries exactly one fork (its two seeds)")
+ 
+@@ -557,7 +556,7 @@
+         rF = (1 + xx * Ub) ** 3 * (1 + 3 * xx * Db) * (1 + yy * Fb) ** 5
+         Rbar = (1 + xx * Ub) ** 3 * (1 + 3 * xx * Db) * (1 + yy * Fb) ** 6
+         ok = ok and Db >= rD and Ub >= rU and Fb >= rF and min(Db, Ub, Fb) >= 1 and xx < Fraction(4, 27) and e1 * Rbar < Fraction(1, 10 ** 5)
+-    checks.check("D1", ok, "T3 (the stake): had the sharper budget held, the amplification weight would be epsilon_2/t and the rational triples at (453,1,2), (232,1,1), (905,2,4), (677,1,3) with t = 77/1000, 19/250, 39/500, 77/1000 are exact super-solutions at (t + epsilon_2/t, epsilon_1/t^3) with epsilon_1 R-bar < 10^-5: a factor 9 below block 30's region on every line")
++    checks.check("D1", ok, "T3: at the declared algebraic weight epsilon_2/t the rational triples at (453,1,2), (232,1,1), (905,2,4), (677,1,3) with t = 77/1000, 19/250, 39/500, 77/1000 are exact super-solutions at (t + epsilon_2/t, epsilon_1/t^3) with epsilon_1 R-bar < 10^-5: pure polynomial inequalities, not a formation region")
+     t = sp.symbols("t", positive=True)
+     top = sp.Rational(4, 729) if not mut("ceiling_c1_wrong") else sp.Rational(5, 729)
+     m = sp.maximum(t * (sp.Rational(4, 27) - t), t, sp.Interval(0, sp.Rational(4, 27)))
+@@ -565,17 +564,13 @@
+     d3a = deviations(367, 1, 2)[2]
+     d3b = deviations(368, 1, 2)[2]
+     ok2 = ok2 and d3a > Fraction(4, 729) > d3b
+-    checks.check("D2", ok2, f"T3 (the stake): under the sharper budget the ceiling would be max_t t (4/27 - t) = 4/729 at t = 2/27, crossed on (p, 1, 2) between p = 367 and 368 (d_3(367) = {d3a}, d_3(368) = {d3b}); the refutation leaves block 30's ceiling 256/531441 in force")
++    checks.check("D2", ok2, f"T3: the declared scalar expression has maximum max_t t (4/27 - t) = 4/729 at t = 2/27, crossed on (p, 1, 2) between p = 367 and 368 (d_3(367) = {d3a}, d_3(368) = {d3b}); this algebra does not establish any universal construction budget or formation region")
+     ratios = [Fraction(4165, 453), Fraction(2085, 232), Fraction(8330, 905), Fraction(6247, 677)]
+-    checks.check("D3", all(r > 8 for r in ratios) and all(r < 10 for r in ratios), "T3 (the stake): the refuted budget would have moved every line by a factor between 8 and 10 (4165 -> 453, 2085 -> 232, 8330 -> 905, 6247 -> 677); none of it is claimed")
++    checks.check("D3", all(r > 8 for r in ratios) and all(r < 10 for r in ratios), "T3 (the stake): the four historical comparison numbers differ by a factor between 8 and 10 (4165 -> 453, 2085 -> 232, 8330 -> 905, 6247 -> 677); none of it is claimed")
+ 
+ 
+ # ============================================================================================ family F
+-FENCES = (
+-    "This note proves that block 30's extended explanation tree does not satisfy the sharper bad-pair budget `E ≤ 3(|S| − 1) + |A|`: three explicit configurations of the two-level noisy majority automaton, re-executed from their noise marks, have valid trees with `(E − 3(|S| − 1))/|A| = 8/5`, `5/3` and `5/3` inside block 30's budget `E ≤ 3(|S| − 1) + 2|A|`, and the two-level period of the potential's accounting has ratio exactly `2`; it does not prove that the constant `2` is attained, does not lower block 30's ceiling, does not treat other tree constructions, other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause.",
+-    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
+-)
++FENCES = ('This note retains exact finite construction counts, local charge identities and rational polynomial certificates for explicitly declared objects; no physical rule, order or coupling is selected.', 'A local ratio-two period does not establish a sharp global constant; the universal upper budget is not imported from an open handoff.', 'Formal negative certification is deferred in the readable recovery argument; finite witness validity is not a claim of five closed attack families.')
+ FORBIDDEN = (
+     "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "the physical reading", "for every coupling", "selects the", "fires wake condition",
+     "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+@@ -616,13 +611,7 @@
+ 
+ 
+ # ============================================================================================ family G
+-N5_LINES = (
+-    "per_element: executed — the increments of an amplified excuse; the rise identity at every refinement of the three witnesses; the period's arithmetic (4 excuse arrows per 2 amplified nodes, rise 0)",
+-    "per_site: executed — the three witnesses rebuilt from their noise marks through the one-sided automaton; every arrow checked against the 1-predecessors; the ceiling's crossing between 367 and 368 on (p,1,2)",
+-    "per_mode: executed — the trees' counts (16/10/1, 20/12/1, 23/12/2), the sharper budget failing by 6, 8, 8 and block 30's budget holding; 300 uniformly random cones never above 1",
+-    "per_block: executed — the four super-solution certificates of the stake with epsilon_1 R-bar < 10^-5; the one-variable maximum 4/729 symbolically",
+-    "lattice_wide: the refutation is a statement about block 30's construction on the automaton (any weights); the constant 2's attainment, a different construction and the true strength are not claimed",
+-)
++N5_LINES = ('per_element: executed — exact rational charge increments and local rise/count identities on every refinement of the three specified witnesses', 'per_site: executed — three marked windows of112,112,225sites, tree connectivity and live-predecessor edge types; unchanged finite fixtures', 'per_mode: checked and not executed — no spectral decomposition is present; witness classes and seeded cones are finite configurations, not modes', 'per_block: executed — exact witness period counts2,1,1, the fixed seeded300-cone sample, four rational certificates and scalar completed-square maximum', 'lattice_wide: checked and not executed — no exhaustive input search, infinite lattice simulation, sharp global budget or formal negative certification')
+ 
+ 
+ def family_g(checks: Checks) -> None:

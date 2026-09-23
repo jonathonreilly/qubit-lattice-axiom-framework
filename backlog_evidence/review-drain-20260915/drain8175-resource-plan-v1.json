@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "kind": "proposed-resource-plan-not-execution",
+  "primary": "scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py",
+  "timeout_seconds": 60,
+  "memory_limit_bytes": 402653184,
+  "limits_status": "proposed finite process-tree watchdog; unmeasured corrected source; original independent reviewer and root dispatch required",
+  "original_measured_resource": {
+    "command": [
+      "python3",
+      "/private/tmp/review-drain-20260915/drain-author-slot/scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py"
+    ],
+    "exit": 0,
+    "wall_seconds": 0.585654666996561,
+    "user_cpu": 0.463194,
+    "system_cpu": 0.043515,
+    "max_rss_bytes": 68173824,
+    "wall_limit": 30,
+    "cpu_limit": 20,
+    "memory_design": "finite 225-site windows; observed RSS; OS AS cap unsupported (preserved failure)"
+  },
+  "cost": {
+    "witnesses": "Repeated reconstructions of fixed112,112,225-site windows; union-find clusters, small cluster/fork incidence graph and BFS. No input enlargement.",
+    "sample": "Unchanged random.seed(31),300cones, depths3through8, maximum binomial(11,3)=165sites per cone, sequential disposal of prior cone graph; not historical40000-cone search.",
+    "exact_arithmetic": "Four fixed rational certificate products with powers up to6 and scalar SymPy maximum; no numerical quadrature/eigensolver or dense simulation lattice.",
+    "imports": "SymPy plus stdlib only; no local helper imports and no top-level simulation.",
+    "memory": "Observed original primary RSS68173824bytes, not a measurement or proof for corrected source.384MiB proposed with headroom for interpreter/SymPy and finite graph objects; fail closed on violation, no automatic increase."
+  },
+  "expected_completed_checks": 20,
+  "count_scope": "A4+B3+C5+D3+F4+G1; source/report checks included, not20 independent theorems",
+  "stdout_only": true,
+  "json_outputs": [],
+  "other_output_writes": [],
+  "cache_destination": "logs/runner-cache/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.txt",
+  "mutations": {
+    "rise_identity_wrong": "B",
+    "period_arithmetic_wrong": "B",
+    "period_counts_wrong": "B",
+    "witness_marks_wrong": "C",
+    "sharper_budget_asserted": "C",
+    "witness_ratio_wrong": "C",
+    "certificate_wrong": "D",
+    "ceiling_c1_wrong": "D",
+    "claim_transition_injected": "F",
+    "claim_classical_name_in_theorem": "F"
+  },
+  "new_targeted_mutation": {
+    "name": "period_counts_wrong",
+    "target": "B3",
+    "wrong_target": [
+      2,
+      2,
+      0
+    ],
+    "correct_target": [
+      2,
+      1,
+      1
+    ],
+    "total_unchanged": 4,
+    "expected_exit_code": 1,
+    "expected_total": "PASS=19 FAIL=1",
+    "status": "proposed expected rejection; no invocation executed"
+  },
+  "historical_executions_reused_as_history_only": true,
+  "primary_runs": 0,
+  "simulation_runs": 0,
+  "mutation_runs": 0
+}

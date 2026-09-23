@@ -1,0 +1,111 @@
+--- note@v1
++++ note@v2
+@@ -1,7 +1,7 @@
+ ---
+ claim_id: extended_explanation_tree_finite_witness_counts_and_rational_recursion_certificates_bounded_theorem_note_2026-09-16
+ claim_type: bounded_theorem
+-claim_scope: "Exact finite marked-automaton constructions and charge identities for the declared explanation-tree algorithm: counts16/10/1,20/12/1,23/12/2, exact consecutive periods2/1/1 and local neutral arithmetic; four exact rational polynomial super-solutions and completed-square maximum. No global sharpness, universal upper budget, physical formation threshold or completed negative certification is claimed."
++claim_scope: "Exact finite marked-automaton constructions and charge identities for the declared explanation-tree algorithm: counts 16/10/1, 20/12/1, 23/12/2, exact consecutive periods 2/1/1 and local neutral arithmetic; four exact rational polynomial super-solutions and completed-square maximum. No global sharpness, universal upper budget, physical formation threshold or completed negative certification is claimed."
+ upstream_dependencies:
+   - minimal_axioms
+ runner: scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py
+@@ -18,14 +18,14 @@
+ 
+ ## Result up front
+ 
+-Three explicit finite constructions have ratios8/5,5/3,5/3 and consecutive
+-local-period counts2,1,1. A two-refinement neutral period has `(r,e,a)=(0,4,2)`.
++Three explicit finite constructions have ratios 8/5, 5/3, 5/3 and consecutive
++local-period counts 2, 1, 1. A two-refinement neutral period has `(r,e,a)=(0,4,2)`.
+ That local identity does not decide a global sharp constant. All witness marks,
+ algorithmic steps, accounting identities and rational certificates are retained.
+ The full corrected negative argument is readable in the recovery packet with
+ formal certification deferred; incomplete N1 coverage is not a mathematical
+ refutation. No primary, random-cone fixture or mutation was run during author
+-preparation. The expected primary count remains20checks; its new exact
++preparation. The expected primary count remains 20 checks; its new exact
+ per-witness period target replaces the former aggregate-only check.
+ 
+ ## Machine status and trace
+@@ -93,9 +93,9 @@
+ | W2 |20|12|1|0|5/3|1|
+ | W3 |23|12|2|1|5/3|1|
+ 
+-**Proof by explicit finite construction.** W1 has27nodes,10refinements and10bad
+-pairs; W2 has33nodes,12refinements and12bad pairs; W3 has37nodes,13refinements,
+-12bad pairs and one fork. Every excuse arrow joins a processed-type live
++**Proof by explicit finite construction.** W1 has 27 nodes, 10 refinements and 10 bad
++pairs; W2 has 33 nodes, 12 refinements and 12 bad pairs; W3 has 37 nodes, 13 refinements,
++12 bad pairs and one fork. Every excuse arrow joins a processed-type live
+ site to a live predecessor, each amplification arrow joins a site with exactly
+ one live predecessor to that predecessor, and each seed has no live predecessor.
+ The point graph contains the root, is connected and has one fewer edges than
+@@ -108,10 +108,10 @@
+ 
+ *Reading of the witnesses.* W1's log is `(0,1,0,1)`, `(1,2,1,1)`, `(0,2,0,2)`, `(1,3,1,2)`, `(0,3,0,3)`, `(2,3,2,1)`, `(0,3,0,3)`, `(2,3,2,1)`, `(1,3,1,2)`, `(3,3,3,0)` in `(b, kept, a, e)`: the root's single arrow, a bad pole appearing beside it, the width growing to three poles, then two periods of T1.3, and the bottom refinement with three bad poles all pointing at the seed. The three-pole width is sustained because the two amplification arrows of a two-bad refinement land on processed-type sites that are kept at the next level, and that level's three excuse arrows land on two amplified sites and one processed-type site — the excuse rule (the smaller index of the winning pair) and the one-sided rule's forced ones cooperate to keep three distinct poles incident without any fork.
+ 
+-The fixed seeded sample in C4 has300cones of depths3through8 and four integer
++The fixed seeded sample in C4 has 300 cones of depths 3 through 8 and four integer
+ noise percentages. Its resulting maximum is a property of that sample only.
+ It does not provide an upper bound over all inputs or demonstrate uniform
+-search coverage. The historical40000-cone search, candidate collapse,
++search coverage. The historical 40,000-cone search, candidate collapse,
+ hill-climbs and refuter outputs are fully archived; none is rerun in preparation.
+ The global negative inference from these counts is preserved separately with
+ explicit incomplete formal certification, not promoted by this finite table.
+@@ -145,7 +145,7 @@
+ 
+ Here `Fraction(n,d)` denotes the exact rational n/d. Substitute each tuple
+ into the four finite products above. Clearing their positive denominators
+-verifies `Dbar>=rD`, `Ubar>=rU`, `Fbar>=rF`, the three values at least1,
++verifies `Dbar>=rD`, `Ubar>=rU`, `Fbar>=rF`, the three values at least 1,
+ `x<4/27`, and `epsilon_1 Rbar<1/100000`; D1 checks these exact inequalities.
+ Independent original review recomputed the six-menu deviations and expanded
+ all binary port choices, rather than using the same closed forms.
+@@ -155,7 +155,7 @@
+ proves its maximum on `[0,4/27]` is `4/729`, attained at `2/27`.
+ Direct rational substitution gives `d3(367,1,2)>4/729>d3(368,1,2)`.
+ The four comparison ratios `4165/453`, `2085/232`, `8330/905`, `6247/677`
+-each lie strictly between8and10 by cross multiplication (D2/D3).
++each lie strictly between 8 and 10 by cross multiplication (D2/D3).
+ These are arithmetic comparisons, not validated old/new formation regions.
+ The original conditional probability interpretation requires a separate
+ construction/count theorem and the budget discussed in deferred science;
+@@ -166,7 +166,7 @@
+ N1 is incomplete for formal negative certification. Witness validity and
+ implementation agreement are concrete finite tests; global compensation is
+ addressed only by the exhibited arithmetic. A different construction is
+-outside scope; attainment of a global constant2 is unproved; certificate
++outside scope; attainment of a global constant 2 is unproved; certificate
+ arithmetic is a separate question. These are not five closed attack families.
+ N2: no repository wall is imported. N3: marked inputs, outside-zero window,
+ winning-pair rule, pole assignment and polynomial weights are explicit.
+@@ -174,7 +174,7 @@
+ and historical handoffs have no theorem authority. N5: finite sites and
+ refinements are executed by the primary when captured; no spectral modes or
+ infinite lattice are executed. N6: preserve original branch and full negative
+-proof as deferred science. N7: the global constant may still improve below2;
++proof as deferred science. N7: the global constant may still improve below 2;
+ the local period does not force a change of construction. N8: a seeded sample
+ maximum does not imply a worst-case bound; earlier historical claims remain
+ recovery, not repeated authority.
+@@ -202,7 +202,7 @@
+ checks and one resolution-report check. There are ten mutation definitions,
+ including a new targeted period-count corruption; this is a source census,
+ not a new execution result. The primary writes stdout only. The unchanged
+-seeded300-cone fixture is finite evidence, not an exhaustive theorem.
++seeded 300-cone fixture is finite evidence, not an exhaustive theorem.
+ 
+ ```bash
+ python3 scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py
+--- runner@v1
++++ runner@v2
+@@ -26,7 +26,7 @@
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+ )
+-INPUT_SHA256 = {'docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'a0c558c7d98c573f32a148724c3c3629c3aeca818d286f1df2024f870dc6f072', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
++INPUT_SHA256 = {'docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md': '398661b5330d2e8530aca15429a2fac865b1982ea5215dcd7c6d12e525088599', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
+ ROOT = Path(__file__).resolve().parents[1]
+ CLAIM_ID = "extended_explanation_tree_finite_witness_counts_and_rational_recursion_certificates_bounded_theorem_note_2026-09-16"
+ BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"

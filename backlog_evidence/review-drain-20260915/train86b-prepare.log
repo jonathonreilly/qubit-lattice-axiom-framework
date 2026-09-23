@@ -1,0 +1,73 @@
+[detached HEAD acd07ed20f] Preserve independently reviewed source unit PR8172
+ Date: Wed Sep 23 00:29:35 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 41 files changed, 3479 insertions(+)
+ create mode 100644 docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/DEFERRED_SCIENCE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/complete-packet-inventory.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16-f2af9a93a1c168a8.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/APPROACH_REGISTRY-f296aef8bec769dd.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/CHECKER_block28_findings-6fdbdf7ac1bd8d16.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/CLAIM_STATUS_CERTIFICATE_block28-bb508f195a32e2e9.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/GOAL_block28-90d0882134e9ee53.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/HANDOFF-44c009a7729b873d.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/OPPORTUNITY_QUEUE-da597e8270234a27.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/RESULTS_block28-94bec5337188678b.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/REVIEW_HISTORY-5de1f2362d5592b4.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/STATE-4e45eff3b361f6e3.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/TRACE_GATE-e0b88a0cc15db463.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-5d81f2535f3c6840.txt.gz
+ create mode 100755 docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-6411552d4900e6e0.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/citation_graph_manifest-3c45f083d588d6d8.json.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact-841cfedbb1c9c00a.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact.out-82cb36c9ecb8ead2.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter-be8a580c8a49dcc4.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter.out-4785cb7bd1bc89bc.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis-c7293f468d6cffac.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis.out-24388d69821ab568.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis-3356d4221aa94000.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis.out-bac7f37e8a0ea271.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere-45845b8cb7ae5b02.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere.out-19a5299c46cab3ee.txt.gz
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--criterion_bracket_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--eroder_bound_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--influence_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--polynomial_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--region_count_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--third_coordinate_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--threshold_p0_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--translation_origin_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.json
+ create mode 100644 logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.txt
+ create mode 100755 scripts/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.py
+[detached HEAD 185602abfc] Preserve independently reviewed source unit PR8172
+ Date: Wed Sep 23 00:37:04 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ rename docs/work_history/repo/review_feedback/pr8172-evidence/{DEFERRED_SCIENCE.md => pr8172-deferred-science.md} (100%)
+FROZEN 185602abfc3eb9c1168ecc32d2f63dc12c1912c1 sources 41 inputs 67 notes 1

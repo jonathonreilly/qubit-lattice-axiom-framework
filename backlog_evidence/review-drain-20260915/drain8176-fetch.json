@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "ee73bef6a1f37590abacdd2cf4a13900019a1e64",
+  "fetched_ref": "refs/review-loop/fetched/8176-d9ad7ef6993449e7bf4012a8d69dd2e8",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917",
+    "headRefOid": "ee73bef6a1f37590abacdd2cf4a13900019a1e64",
+    "isDraft": false,
+    "number": 8176,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

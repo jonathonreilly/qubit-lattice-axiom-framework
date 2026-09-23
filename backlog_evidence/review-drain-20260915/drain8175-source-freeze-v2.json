@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "source": [
+    {
+      "path": "docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "mode": "100644",
+      "sha256": "398661b5330d2e8530aca15429a2fac865b1982ea5215dcd7c6d12e525088599"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/README.md",
+      "mode": "100644",
+      "sha256": "c1f776619e0e4b42a99a6214485c165bb250a90edf1f785f4b2db3a9fa938815"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-01-APPROACH_REGISTRY.md.gz",
+      "mode": "100644",
+      "sha256": "75bcaf1535b03de22e2c87f6fd061e9e839065c6f8e60807c35fc8a0ee418df5"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-02-CHECKER_block31_findings.md.gz",
+      "mode": "100644",
+      "sha256": "76871e359105f69c5c3deaf30873a89745f268d7ed8bab2d7b0a91958662881a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-03-CLAIM_STATUS_CERTIFICATE_block31.md.gz",
+      "mode": "100644",
+      "sha256": "8d381db1a2eca8cc98f398a2dac80ed8e985c769cc292bd85cf54011200d6b48"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-04-GOAL_block31.md.gz",
+      "mode": "100644",
+      "sha256": "20169430ceb858472f7996109c842571bff057284de1a7835c8c102385b401e9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-05-HANDOFF.md.gz",
+      "mode": "100644",
+      "sha256": "7badecbbda3d3a44b037e74cd335ccb57c6f3a24d5dcb5dd22dcc0b15e40ab84"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-06-NO_GO_LEDGER.md.gz",
+      "mode": "100644",
+      "sha256": "7139e4cb4f8900cc7c9bb10d3cc254923dce3960ac3167ea82a0f456c6e4ba69"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-07-OPPORTUNITY_QUEUE.md.gz",
+      "mode": "100644",
+      "sha256": "a18c76fc3478b64164f6d5e1c491494caeec0a3b1f914c16ea1bdf5afe1a1b6e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-08-RESULTS_block31.md.gz",
+      "mode": "100644",
+      "sha256": "d7a05c0d4cadbf8274e69582ed27fcf8143f8212110b3bcbf42f1fc39c83df9e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-09-REVIEW_HISTORY.md.gz",
+      "mode": "100644",
+      "sha256": "1d3fc189a81be2752e6b0235d2a06468356f133d6923cdb46aa43528e64df0b1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-10-STATE.yaml.gz",
+      "mode": "100644",
+      "sha256": "bef6184e05f70b3111b9933b558c5bb0528fbd4760519dc1105b6b0433b8c07a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-11-TRACE_GATE.md.gz",
+      "mode": "100644",
+      "sha256": "d286e9a6f9f75b4b410a19f6e8c4370fe9b1b691579c49f1148fe770b8a8e14e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-12-supervisor_control_block31_certify.out.txt.gz",
+      "mode": "100644",
+      "sha256": "fb100ffe2cfb4954ec3cbc4e5cbacd77160d5f1986114a387c501c165c82b747"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-13-supervisor_control_block31_certify.py.gz",
+      "mode": "100644",
+      "sha256": "a5ed5d5021a41294e930752200dfdde2fc7f2909b331fceea50d5038f7ca090d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-14-supervisor_control_block31_climb.out.txt.gz",
+      "mode": "100644",
+      "sha256": "df157cc5e32c263d6a9cf932dc9d4123eaffc17d63ab8c481047d91962f5bee9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-15-supervisor_control_block31_climb.py.gz",
+      "mode": "100644",
+      "sha256": "57f5566e5541c6196b396714fa7c175ee6d7a5d9324ed3bd7cf3237cea4589ea"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-16-supervisor_control_block31_climb_wide.out.txt.gz",
+      "mode": "100644",
+      "sha256": "a3e1fc117fd3becfa533e6bcbf1d4f551cfc7e0b24d7a457b656aca46b2caa52"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-17-supervisor_control_block31_climb_wide.py.gz",
+      "mode": "100644",
+      "sha256": "f10510336e18d748a111e43dcbe4b0692d3c1a1513a2a00778dae1e01572bbcb"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-18-supervisor_control_block31_core.py.gz",
+      "mode": "100644",
+      "sha256": "f84b5c2b7090bdf146079018c7d0b56317110e4702595cef6a6f329c72aad98f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-19-supervisor_control_block31_refuter.out.txt.gz",
+      "mode": "100644",
+      "sha256": "2f567a367b9cec7951139367f51ad4c291bc49b4ac6804a4c2a967bf4ecfe66d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-20-supervisor_control_block31_refuter.py.gz",
+      "mode": "100644",
+      "sha256": "d78df1a0e62028fe2a9797cae435c76a13782aec09f368c6bcededc5db8a43a6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-21-supervisor_control_block31_search.out.txt.gz",
+      "mode": "100644",
+      "sha256": "7f4f7fa18fe57d2e401e3349dd9503e08c89032636c116031587a331511cf47f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-22-supervisor_control_block31_search.py.gz",
+      "mode": "100644",
+      "sha256": "a1e9c794d3ebd9dfc6ea933fb5819a9eccfe9a6f685b7557c5a1c26dcc522563"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-23-supervisor_control_block31_witness.out.txt.gz",
+      "mode": "100644",
+      "sha256": "f4ee9b31c277b31bc988083fa25224d0aceb61bf9efb272c705a67d08502e46f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-24-supervisor_control_block31_witness.py.gz",
+      "mode": "100644",
+      "sha256": "46e16b2f32aad0a4b8cb467a15fafa69e2fd76c39233bcb46e9a849552640d29"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-25-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz",
+      "mode": "100644",
+      "sha256": "b0ba05823ec6d58bdc82e4d321423e29da7bc963729d77b3ab4648174ce17ac1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-26-citation_graph_manifest.json.gz",
+      "mode": "100644",
+      "sha256": "3df99ec3724d39caf17918ca7d14fc03ac25fa74eb9100c6738ae8a59e80a14e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-27-admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.txt.gz",
+      "mode": "100644",
+      "sha256": "745911569f03b0237f4ae5d3fe04869c149846a29106374b39cfe92ae310ab4f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/originals/pr8175-28-admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py.gz",
+      "mode": "100644",
+      "sha256": "675c41636349c548327963aa73a24335e7bc76a49c580cc243b76387fb8542e4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/pr8175-deferred-science.txt",
+      "mode": "100644",
+      "sha256": "2dc9be3afb010e40ec84961810bd988f52eddec395815a80f2aa466dc9b7ce17"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/pr8175-original-delta.patch.gz",
+      "mode": "100644",
+      "sha256": "4606c853eda629a3f9296e0b997d54c1d8695b3bef51beb45bbad494abf1e73d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8175/pr8175-original-manifest.json",
+      "mode": "100644",
+      "sha256": "eb6f2013c9c5282031afda18cae24138d1fc9cdad1af8a017a9d75f87ab72c63"
+    },
+    {
+      "path": "scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py",
+      "mode": "100644",
+      "sha256": "bfcc98e9d0bccedcd3a21ecfd77667e03f3f80f57ae935734005575f016af83b"
+    }
+  ],
+  "base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "snapshot": "/private/tmp/review-drain-20260915/drain8175-prepared-source-v2",
+  "prepared_sha256": "570e40eb535a4c4aca06caa54baac9ba008d1e2b8fd4263b822316eed443e750"
+}

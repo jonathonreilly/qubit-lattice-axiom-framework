@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8560",
+ "type": "judgment",
+ "lane": "mobile-record-transverse-waves-20260921",
+ "worker": "w-macbookpro90c72-j4b5f",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/pr8560/product_current_brute_force.py",
+ "seed": 56940,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "995030ba",
+ "started_utc": "20260923T094900Z",
+ "elapsed_s": 6.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern applied to section 2's product-current step of PR #8560's transverse-curl note: verified literally by enumeration (all 15^4 edge contexts, both rate implementations as written, exact rationals, every species including vacancy) together with section 1's sharp bounds and example, the periodic-line identity, and the fourteen-field characteristic polynomial; no defect found"
+ },
+ "review": "Pattern applied to one proof step, section 2's product current of the transverse-curl note, verified literally by enumeration: for 3 random rational products and both rate implementations as written (kappa + max(h,0) and K0 + h/2), the brute-force average over all 15^4 edge contexts equals gamma p_a[e(a) x Y + X x b(a) - 2 X x Y] for all 15 species including vacancy, with sum_a J_a = 0, J_0 = -2 p_0 Psi and the rho_A, rho_B currents as stated; section 1's sharp bounds (max|S_i| = |gamma|/2, max|h_i| = 2|gamma|), the example h_3 = 2 gamma, the reversal of h and the periodic-line identity on N = 4, 5, and the fourteen-field characteristic polynomial lambda^10 (lambda^2 - c^2|K|^2)^2 also hold exactly; no defect, which matches the pattern's no-purchase outcome.",
+ "what": "PR #8560 (Immutable records: transverse curl waves and formation noise): attack MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/mobile-record-transverse-waves-20260921; git show origin/codex/mobile-record-transverse-waves-20260921:<note>. Create probes/work/pr8560/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8560/<script>.py\"",
+ "stdout_sha256": "bc26d8f1c4e68d2ceb025d7f5ec465493584997c9c9d6b11aaa86fcefe67e9af",
+ "stdout_tail": "ok S1: over all 15^2 pairs and 15^4 contexts: max|S_i| = 3/4 = |gamma|/2, max|h_i| = 3 = 2|gamma| (gamma = 3/2); central A(+e1), A(-e1) with outer B(+,+,+) give h_3 = 3 = 2 gamma\nok S2: central exchange reverses h for every context and component, so c(eta) - c(eta^edge) = h(eta) for both rates\nok S3: sum_x h_x = 0 on every labelling of periodic lines N = 4 (15^4) and N = 5 (15^5), all three components\nok J1: 6 exact comparisons (3 random rational products, both rates c = kappa + max(h,0) and K0 + h/2, all 15 species incl. vacancy, 3 directions, 15^4 contexts each): the brute-force current equals gamma p_a[e(a) x Y + X x b(a) - 2 X x Y]; sum_a J_a = 0, J_0 = -2 p_0 Psi, J_rhoA = (1-2rho_A)Psi, J_rhoB = (1-2rho_B)Psi, with Psi != 0\nok J2: orbit-isotropic products: det(A(K) - lambda) = lambda^10 (lambda^2 - c^2|K|^2)^2, c^2 = gamma^2 rho_A rho_B/3, exactly; rho_A=1/4, rho_B=1/3, K=(1, 0, 0): lambda**10*(4*lambda - 1)**2*(4*lambda + 1)**2/256; rho_A=1/5, rho_B=1/2, K=(1, 2, 2): lambda**10*(40*lambda**2 - 27)**2/1600; rho_A=3/10, rho_B=2/5, K=(2, -1, 3): lambda**10*(50*lambda**2 - 63)**2/2500\nSUMMARY: pattern applied to section 2's product-current step of PR #8560's transverse-curl note: verified literally by enumeration (all 15^4 edge contexts, both rate implementations as written, exact rationals, every species including vacancy) together with section 1's sharp bounds and example, the periodic-line identity, and the fourteen-field characteristic polynomial; no defect found\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4b5f",
+  "at_utc": "20260923T094908Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

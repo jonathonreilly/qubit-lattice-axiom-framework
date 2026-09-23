@@ -1,0 +1,31 @@
+{
+  "status": "BOUNDED SAME-GRID SLAB REPAIR RECOMMENDED; NO RERUN OR EDIT BY REVIEWER",
+  "source": {
+    "path": "/private/tmp/review-drain-20260915/review-draft-slot/scripts/holonomy_check_2026_09_15.py",
+    "sha256": "f11ffd70fd35b9ca48996e175311b1309ca0a514f1d48f6dc9c594da1142fa17"
+  },
+  "diagnosis": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-holonomy-rss-diagnosis-v1.json",
+    "sha256": "07fd91236b26ff0e07f6db333920efe09c84c882fb117a07c9c35cc21be67ba3"
+  },
+  "failure_assessment": "Observed whole-tree RSS598654976 exceeds536870912; exit-9, no assertion/stdout. Source supports large full-grid allocation risk. Exact allocation at kill is unknown because no per-PID/allocation trace was captured. This is a resource failure, not a mathematical counterexample. Earlier generic cost estimate omitted actual full meshes/stacks.",
+  "implementation_contract": [
+    "Change only full-grid storage/reduction inside band and the finite Fourier-energy sum. Preserve heat/theta formulas, all M/L/phi/sign fixtures, refinements, outputs, mutation check, assertions and every original tolerance. Keep180s/512MiB proposal; no automatic cap increase.",
+    "Use fixed slab width1 in first coordinate. Band points i=0..L-1, j,k=0..L-1; Fourier i=-M..M, j,k=-M..M. Enumerate all slabs including tails once; preserve C-order k-fast flattening within each plane. Do not replace the cube cutoff by a sphere or drop small terms.",
+    "Keep original sign handling exactly: k=(2pi*grid+sign*phi)/L; negate all k when sign=-1; then subtract pi/3 only from k[0]. Preserve derivative formulas/dj/djj and /L and /L^2 normalizations. Do not attempt unrelated symbolic simplification.",
+    "For each band slab, compute the same vectorized r, dot and Hessian terms as before; reduce to one scalar energy, one minimum, three gradient sums and nine Hessian sums. Global minimum is min of slab minima; require every derivative-mode r>1e-12 before division. Sum slab reductions deterministically, preferably math.fsum over scalar partials.",
+    "For each Fourier slab, compute exactly r2=sum(mesh*mesh/G), exclude only origin, and sum cos(ap@mesh)/r2^2 with unchanged prefactor. Combine scalar partials deterministically. Avoid retaining the last mesh/r2/nz arrays in main when band starts; isolate slab locals in helper scope.",
+    "Maintain function return signatures and JSON fields. A slab implementation is algebraically equal in exact arithmetic but changes floating reduction grouping; do not claim bitwise equivalence."
+  ],
+  "proof_and_review_requirements": [
+    "Document the disjoint union of first-coordinate planes equals the original full Cartesian grid, with identical pointwise integrands and exact minimum reduction. This is finite sum regrouping, not a new scientific approximation.",
+    "Before a fresh primary, provide complete narrow diff, changed source/hash/input bindings and a source-derived peak workspace inventory. One band plane has at most72^2=5184 points; one Fourier plane at M48 has97^2=9409 points. Even roughly60 simultaneously live float components use only about2.5MiB and4.3MiB respectively, plus mask/copies/library/supervisor overhead; inventory actual allocations, not this illustrative component count as a guarantee.",
+    "Provide an independent bounded comparison control (not a full primary rerun) comparing original vectorized and new slab functions at small cases including both charge signs, energy-only and derivative paths, a nonstationary twist, stationary twist, origin-excluded Fourier grids and a nondividing slab-tail case if slab width is configurable. It may execute only specifically authorized independent controls; no hidden primary main/import side effects.",
+    "Use tight explicitly justified floating error checks for energy/gradient/Hessian and retained full original L12 finite-difference assertion on the eventual primary. Cancellation-sensitive second differences amplify rounding by eps^-2; do not loosen2e-6 if changed grouping fails. Diagnose any discrepancy and preserve it.",
+    "Review all relevant arithmetic/ordering and the repaired source cold; refresh source/input preflight and exact tree binding through root before the next bounded capture. Original mathematical theorem review remains unchanged."
+  ],
+  "successful_capture_reuse": "Preserve first13 successes. Do not rerun them merely because the unit tree changes: verify each source and actual input fingerprint is unchanged, then bind the existing receipts honestly. If any dependent input changed, assess only that affected receipt. Preserve the failed holonomy receipt/log/watchdog and old source as a distinct failed attempt.",
+  "capture_policy": "After affected source confirmation and root gates, one bounded repaired holonomy capture under existing cap. Preserve any second resource/numerical failure; no fixture cuts, automatic cap escalation or success claims before evidence review.",
+  "executions": 0,
+  "source_edits": 0
+}

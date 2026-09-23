@@ -1,0 +1,34 @@
+{
+  "scope": "All open PRs including drafts and new arrivals.",
+  "snapshot": "open-prs-wave17.json",
+  "snapshot_sha256": "26399b25a21ab39b07dd407ebe6cdf53c384d675ef7cb382c5398def3a385a52",
+  "open": 107,
+  "drafts": 19,
+  "new_arrivals_since_wave16": [
+    8676
+  ],
+  "closed_since_expanded_scope": 38,
+  "main": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+  "landed_closed_latest": [
+    8030
+  ],
+  "partial_salvage_branch_preserved_latest": [
+    8030
+  ],
+  "capture_repair": [
+    8159
+  ],
+  "confirmed_preparation_pending_serialized_maps_and_cold": [
+    8163,
+    8164,
+    8165
+  ],
+  "original_review_complete_pending_author": [
+    8166,
+    8167
+  ],
+  "original_review_active": [
+    8168
+  ],
+  "active_review_default": "Astra low; matched Sol-max experiment saved in sol-max-astra-low-8158/comparison.md. No default change."
+}

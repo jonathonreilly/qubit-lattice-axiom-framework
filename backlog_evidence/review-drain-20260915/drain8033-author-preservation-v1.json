@@ -1,0 +1,10 @@
+{
+  "scientific_AST_identical": true,
+  "displayed_formula_lines_literal": true,
+  "connected_domain_repair": "Main statement now agrees with original alternative proof; disconnected charged fixed space is zero",
+  "original_paths": 84,
+  "unique_payloads": 76,
+  "full_delta_sha256": "1dd2c1a178bd7c0e17664a7f7f0bc0fc53cf45a4c433371f0d74762051be62fb",
+  "all_new_markdown_basenames_unique": true,
+  "scientific_executions": 0
+}

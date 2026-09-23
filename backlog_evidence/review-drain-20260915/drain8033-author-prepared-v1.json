@@ -1,0 +1,70 @@
+{
+  "status": "PREPARED ONLY; pending actual parent8032 landing and original same-session source confirmation",
+  "base": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "original_head": "d041b83a507226feae9713662767dd34d2ffb4a8",
+  "original_base": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+  "source_files": 81,
+  "original_paths": 84,
+  "note": {
+    "path": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "sha256": "87b32515257c0c3363b6f47845ff8eafada3d1b79e02dff075ea8bb905c696d6"
+  },
+  "runner": {
+    "path": "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py",
+    "sha256": "dd230084337c5204fee69a9040702d9a94288a0f251f875109dea3a7a6567b6e"
+  },
+  "freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source-freeze.json",
+    "sha256": "488698c6912ecf689fc068bb894df145dbcf357c9147ec4d58c5c47764c6e944"
+  },
+  "archive_manifest": {
+    "path": "docs/work_history/repo/review_feedback/pr8033-evidence/pr8033-archive-manifest.json",
+    "sha256": "59e67cb9ab774dbd1f4214de7addd9e3766ab17fff58a36f032452d9a0da372b"
+  },
+  "ordered_inputs": [
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "87b32515257c0c3363b6f47845ff8eafada3d1b79e02dff075ea8bb905c696d6",
+      "state": "present",
+      "immutable_prospective_source": null
+    },
+    {
+      "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "state": "present",
+      "immutable_prospective_source": null
+    },
+    {
+      "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f",
+      "state": "present",
+      "immutable_prospective_source": null
+    },
+    {
+      "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72",
+      "state": "present",
+      "immutable_prospective_source": null
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6",
+      "state": "PENDING parent8032 landing",
+      "immutable_prospective_source": "/private/tmp/review-drain-20260915/drain8032-prepared-v2-source/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    }
+  ],
+  "pending_parent": {
+    "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6",
+    "source": {
+      "path": "/private/tmp/review-drain-20260915/drain8032-prepared-v2-source/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6"
+    },
+    "provenance": {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-unit-draft-v2.json",
+      "sha256": "3ed4960ef2ec39fe2896f930dec6d11dda47613bceb76193e2fe2c231383b5f7"
+    },
+    "boundary": "Actual complete mathematical proof is prospective dependency. Its review verdict is not theorem authority and this unit does not duplicate its source."
+  },
+  "science_executions": 0
+}

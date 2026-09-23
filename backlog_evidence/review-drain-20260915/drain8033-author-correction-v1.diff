@@ -1,0 +1,174 @@
+--- original/docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md
++++ prepared/docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md
+@@ -8,7 +8,7 @@
+   - gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07
+   - gauge_wilson_selected_infinite_static_source_sector_bounded_theorem_note_2026-09-07
+   - gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07
+-claim_scope: "Actual full-irrep PW charged lower bound uniform in R>=1, volume and separation; compatible finite-energy upper envelope and separately fixed-R selected-sector consequence under acceptance condition."
++claim_scope: "Actual full-irrep PW charged lower bound for distinct connected endpoints, uniform in R>=1, volume and separation; compatible finite-energy upper envelope and separately fixed-R selected-sector consequence under acceptance condition."
+ ---
+ 
+ **Type:** bounded_theorem
+@@ -30,17 +30,17 @@
+ 
+ A separate EACH-fixed-R consequence uses the [selected-GNS construction](GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md). Under the same positive-acceptance condition the selected charged sector is nonempty and inherits both bounds. No finite charged-minimum convergence, R/volume interchange, representation independence or bottom eigenvector is asserted.
+ 
+-The [canonical helper](../scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py) performs18 exact controls. It enumerates all243 necessary R1 center flows for each of two cube endpoint pairs, checks ghost and boundary adverse cases, and constructs a positive-perturbation Ritz example where subtracting two increased energies decreases the gap. Center conservation is necessary, not a claim that every flow has a full SU3 intertwiner. Finite controls do not prove the imported coordinate constants. The [durable packet](../.claude/science/physics-loops/finite-pw-static-lower-20260907/PROOF_REVIEW.md) retains prospective contracts, both full proofs, all reviews, original parser-only failure and identical scientific port receipt.
+-
+-The complete native proof follows. Candidate information and preliminary source/envelope confirmations were exposed before root completed verification; no blind-discovery claim is made. This is a cutoff extension of an explicitly imported perturbative theorem for a supplied model, not a new generic confinement theorem or a hardware construction.
++The [canonical helper](../scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py) performs18 exact controls. It enumerates all243 necessary R1 center flows for each of two cube endpoint pairs, checks ghost and boundary adverse cases, and constructs a positive-perturbation Ritz example where subtracting two increased energies decreases the gap. Center conservation is necessary, not a claim that every flow has a full SU3 intertwiner. Finite controls do not prove the imported coordinate constants. The [exact historical recovery](work_history/repo/review_feedback/pr8033-evidence/README.md) retains every original proof, prospective contract, review, parser failure, flow fixture and output. Both complete positive proofs are given below. Historical reviews, audit/status records and prospective planning are not current theorem or execution authority.
++
++The complete finite-cutoff proof and alternative derivation follow. Their original writing and correction provenance remains in the exact historical recovery. This is a cutoff extension of an explicitly imported perturbative theorem for a supplied model, not a new generic confinement theorem or a hardware construction.
+ 
+ # Uniform finite-PW charged lower bound and its compatible upper estimate
+ 
+-2026-09-07. Written after the exposed candidate and prospective contract, before reading a completed root43 proof. This is a reapplication of the explicitly imported charged-coordinate argument to the actual cutoff carrier. It is not a variational comparison between different vacuum energies and is not a new general confinement theorem.
++Here a>0 is the supplied temporal-scaling kinetic parameter, not a derived spatial spacing; v, the Wilson dynamics and the source tensor remain supplied model data. This is a reapplication of the explicitly imported charged-coordinate argument to the actual cutoff carrier. It is not a variational comparison between different vacuum energies and is not a new general confinement theorem.
+ 
+ ## 1. Exact cutoff model and statement
+ 
+-Let G be a finite oriented cubic-lattice link graph with a subset of its elementary plaquettes, and impose Gauss transformations at every incident vertex, including boundary vertices. Let distinct endpoints x,y have graph distance d. Every actual link carries the complete Peter–Weyl sum
++Let G be a finite oriented cubic-lattice link graph with a subset of its elementary plaquettes, and impose Gauss transformations at every incident vertex, including boundary vertices. Let distinct endpoints x,y lie in the same connected component, with finite graph distance d=d_G(x,y)<infinity. If the endpoints are in different components, the center argument below makes the combined charged fixed space zero; no nonempty finite-energy sector is asserted in that case. Every actual link carries the complete Peter–Weyl sum
+ 
+  H_(e,R)=directsum_(p+q<=R) V_(p,q) tensor V_(p,q)^*, R>=1.
+ 
+@@ -58,7 +58,7 @@
+ 
+  sum_J ||F_(JI) w_I|| <= c r |I| ||w_I||.     (2)
+ 
+-This is the explicit dimension-independent coordinate estimate imported and audited in the earlier uniform-gap and static-source results. The current argument retains this mathematical import; it does not infer sector information from a theorem about the full spectrum alone.
++This is the explicit dimension-independent coordinate estimate explicitly imported in the linked uniform-gap and static-source arguments. The current argument retains this mathematical import; it does not infer sector information from a theorem about the full spectrum alone.
+ 
+ Group three outgoing finite link carriers into each cubic cell z. Set h_(z,R)=(a/4)sum_(e tail z)K_e,R. The unique cell vacuum is unchanged and the gap is exactly1 for everyR>=1, because the fundamental and antifundamental remain. Complete-irrep compression preserves Gauss covariance and cannot increase the norm of a centered face interaction. The three plaquettes anchored at z therefore give a centered scaled perturbation of norm at most3u/4 and support within the same Lambda0={0,e1,e2,e3}. The local dimension grows with R, but none of these estimates does.
+ 
+@@ -138,3 +138,94 @@
+ ## 8. Provenance and limit of the result
+ 
+ This is an explicit dimension-uniform mathematical import applied to a specific finite gauge-covariant carrier, combined with actual center-flow and local-energy arguments. The original charged result's sector proof, rather than its global spectral-circle conclusion, is the load-bearing antecedent. No unused hardware states are included. No native compiler, physical source identification, continuum static potential or axiom-selected coupling is derived. Primary source: https://arxiv.org/pdf/math-ph/0411042, assumptions/Theorem1 and Section2 equations(8)–(15); optional Section7 uses Theorems2–3.
++
++
++# Appendix: complete alternative two-sided finite-cutoff energy proof
++
++This alternative proof composes the linked charged-coordinate, uniform-gap and finite-cutoff upper-energy arguments for the same supplied lattice Hamiltonian. The full writing history is preserved in exact recovery.
++
++## 1. A separate cutoff argument is necessary
++
++For the full compact Hamiltonian H and cutoff H_R=P_R H P_R, the ordinary variational inequalities E_xy,R>=E_xy and E0_R>=E0 do NOT imply E_xy,R-E0_R>=E_xy-E0. The two subtracted quantities both change. The following lower bound therefore reapplies the quantitative ground-state theorem to H_R itself, rather than transporting an uncut spectral difference by subtraction.
++
++Take a finite cubic link graph with retained elementary faces, complete PW cutoffs p+q<=R, R>=1, and H_R=K_R+sum_f P_R v(1-ReTr U_f/3)P_R. Impose full Gauss transformations at every actual vertex, including boundary vertices. Put u=av and use the same source tensor D=C3 tensor conjugate(C3) of dimension9 used in the charged-coordinate theorem. Source locations x,y are distinct and connected, with actual graph distance d.
++
++## 2. Uniform cell hypotheses and exact gauge preservation
++
++Complete each outgoing cell with three links as in the uniform-gap and charged-coordinate arguments, using decoupled vacuum ghost links where needed. On a cell put h_z=(a/4)sum_(e tail z)K_e,R. The constant Haar vector is its unique zero state. Every nontrivial retained irrep costs at least4/a, and a fundamental irrep is present for every R>=1, so the normalized onsite gap is exactly1 at every R.
++
++Group at most three centered face perturbations per cell. Their compressed norm is at most r=3u/4, because orthogonal compression never enlarges the multiplication norm. The fixed four-cell interaction range is unchanged. The quantitative perturbative theorem of Yarotsky0411042, in the applicability map given in the linked uniform-gap and charged-coordinate arguments, uses a unique local vacuum, a gap lower bound, bounded interaction norm and fixed geometry. It permits arbitrary local Hilbert spaces; its stated smallness and coordinate constants do not depend on their dimensions or on an upper bound on onsite energy. Consequently the same geometric constants c and r_* apply to all R>=1. These are imported existence constants, not a computed physical threshold.
++
++Full-irrep cutoffs commute with both endpoint actions on every link. Local gauge transformations factor over outgoing cells, preserve each cell vacuum and its orthogonal complement, and commute with h_z. The interacting neutral full-carrier ground is unique and has nonzero product-vacuum overlap in the small window. Overlap normalization makes it invariant under all gauge transformations. Its unique creation-log coefficients and the resulting similarity S_R inherit that invariance, by the charged-coordinate argument.
++
++## 3. Charged free floor survives the cutoff
++
++In the PW decomposition an occupied link has a nontrivial retained representation. Consider a connected component of occupied links. Apply the SAME central SU3 element at every vertex of that component. Every internal link coefficient has cancelling endpoint center factors, while trivial incident links are unchanged. An isolated external fundamental or antifundamental source would contribute a nontrivial center phase, contradicting combined Gauss invariance. Therefore x and y must lie in the same occupied component.
++
++An occupied component connecting them contains at least d distinct actual links, each of normalized electric energy at least1. Hence the charged free operator H0=(a/4)K_R obeys H0>=d on the combined fixed source sector, regardless of how many additional representations the cutoff retains. This is an all-representation center argument, not a restriction to fundamental path states or a count of occupied cells alone.
++
++The charged sector is nonempty for every R>=1 and every finite coupling: a fundamental transporter on a simple path, acting on the product Haar vacuum, is a nonzero normalized source vector, with every used link in a fundamental or antifundamental summand retained already at R1. This witness is only a nonemptiness proof here; its total potential energy is not used to claim a volume-uniform upper bound.
++
++## 4. Same coordinate-resolvent exclusion, centered on the cutoff vacuum
++
++For the finite-cutoff Hamiltonian itself, the imported creation-log construction gives the similar centered operator
++
++ S_R^-1 [(a/4)(H_R-E0_R)] S_R=H0+F_R.
++
++In the direct sum of cell-excitation coordinates, equip vectors with the sum of their component Hilbert norms. The quantitative column estimate bounds the perturbation by c r times H0 in this norm. Tensoring by D and bounding its9 components by Cauchy–Schwarz costs sqrt9=3, so on the charged source sector
++
++ ||F_R z||_1<=kappa ||H0 z||_1, kappa=3c r.
++
++S_R commutes with the combined gauge projection, so this is the appropriate charged restriction of the centered operator. Every space is finite-dimensional at finite graph and R, and the coordinate norm is equivalent to its Hilbert norm; no hidden closure issue is involved. For real z<d the charged free floor yields
++
++ ||H0(H0-z)^-1||_1<=d/(d-z) for0<=z<d,
++ ||H0(H0-z)^-1||_1<=1 for z<0.
++
++If r<r_* and kappa<1, the Neumann inverse therefore exists for every real z<(1-kappa)d. Similarity preserves the spectrum. The lower bound is
++
++ E_xy,R-E0_R >= (4/a)(1-kappa)d,              (1)
++
++uniform in R>=1, graph volume and source separation. In a common smaller window kappa<=1/2 this gives2d/a. The centering is explicitly E0_R, not E0 of the uncut model.
++
++For irregular actual boundaries, include only actual plaquette interactions and decouple padded ghosts. The physical and ghost-vacuum projectors commute with H0, the interacting ground similarity and F_R. Restrict their intersection throughout the argument. The charged free floor then uses actual occupied links and actual d, so a ghost cannot shorten the path. The decoupled ghost ground energy is zero and leaves E0_R unchanged. Dropping boundary Gauss conditions would invalidate the component-center argument and is not permitted.
++
++## 5. Compose with the separate finite-cutoff energy-form upper bound
++
++In the common weak window, the finite-cutoff upper-energy theorem applies to this same full neutral cutoff ground and gives its local-energy charged trial estimate. Its geometry-only form uses h_R=a e_R=ceil(3R^2/4)+3R and theta=8ud/h_R. For theta<1, combining the upper-energy theorem with(1) yields
++
++ 1-kappa <= (E_xy,R-E0_R)/(4d/a) <= B(u,d,R),
++
++ B(u,d,R)=[1+sqrt(theta)(1+sqrt(8u)+2u)
++                  +2u sqrt(32u/h_R)]/(1-theta).                 (2)
++
++At u=0 the actual charged minimum is exactly4d/a: the free floor and the fundamental path witness coincide. At positive fixed u, for any sequence of finite graphs and source distances with h_R/d tending to infinity, B tends to1. Thus the charged cost per distance stays between a strictly positive lower coefficient and a finite upper coefficient along that controlled cutoff scaling. This does not force a limit of the ratio or identify it with1; the actual charged minimum can lie below the full-unitary trial cost.
++
++At a fixed finite R the lower bound(1) holds for every d, but theta<1 eventually fails as d increases. Neither(2) nor the upper-energy theorem supplies a fixed-R uniform all-distance upper bound. R^2/d tending to infinity is a sufficient scaling, not a necessary or optimal hardware cost.
++
++## 6. Optional fixed-R selected infinite representation
++
++Fix one R once and for all. Use the same fixed-interaction, whole-range finite restrictions and neutral infinite ground representation supplied by0411042. The local link algebra is now a matrix algebra, so local normality and continuity of the finite gauge actions are immediate. The ground representation and Hamiltonian carry combined gauge actions after tensoring the external source space. Finite-vertex Haar averaging of bounded local vectors yields a dense charged subspace, as in the selected-GNS construction.
++
++The finite charged spectral supports lie above L=(4/a)(1-kappa)d for sources fixed in the bulk. Weak-resolvent convergence of the ground representations transfers this support exclusion for fixed local charged test vectors; density gives the same lower bound on the selected charged Hamiltonian. This does not infer convergence of finite charged minima.
++
++For theta=8ud/h_R<1, the local bounded compressed path operator has norm squared at least1-theta in every finite ground. Its local expectation converges, so the infinite trial is nonzero with the same lower norm bound. The finite-cutoff upper theorem’s normalized trial spectral measures have first moments bounded by(4d/a)B(u,d,R). Weak convergence and lower semicontinuity of the nonnegative first moment therefore put the infinite trial in the energy form domain and give the same upper bound for the selected charged bottom. There is no claim of an eigenvector at that bottom, representation independence, a joint R/volume limit, or a temporal Wilson-loop potential.
++
++The finite theorem(1)–(2) does not rely on this optional extension. Neither version derives the supplied gauge action, coupling, clock, source meaning or state preparation from the four axioms, and neither describes a qubit implementation of nonunitary postselection.
++
++## Evidence scope and import boundary
++
++N1: This is a positive conditional energy theorem. Exact Ritz, ghost and boundary adverse examples do not establish an exhaustive negative classification or a five-route certificate.
++
++N2: No wall-independence count is asserted. Connected endpoints, full boundary Gauss action, weak coupling and acceptance are explicit related hypotheses.
++
++N3: The supplied Haar Wilson carrier, temporal kinetic parameter a, coupling v and external color sources are not selected by framework axioms or registered primitives.
++
++N4: Linked mathematical arguments, including the finite-cutoff upper-energy proof, are load-bearing; review verdicts are not theorem premises. The Yarotsky coordinate and GNS statements remain explicit mathematical imports.
++
++N5: All 18 finite controls remain: eight cube flow/connectivity/energy predicates, three ghost predicates, two boundary-Gauss predicates, four Ritz predicates and one retained-orientation predicate. No site-resolved dynamics or lattice-wide execution is claimed. The dimension-uniform and selected-sector arguments are analytical, not established by enumerating finite flows.
++
++N6: Original parser failure, raw fixtures and adverse outcomes remain recoverable. Resource and input guards are not mathematical check counts.
++
++N7: Better trials and other limiting mechanisms remain open; no impossibility or new-axiom necessity is inferred.
++
++N8: Both complete proofs remain live; historical and prospective campaign material has no current authority. Source review and finite controls do not confer an audit verdict.
+--- original/scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py
++++ prepared/scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py
+@@ -4,6 +4,11 @@
+ from pathlib import Path
+ AUDIT_TIMEOUT_SEC = 180
+ AUDIT_RSS_LIMIT_MIB = 180
++AUDIT_INPUT_PATHS = ['docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md']
++EXPECTED_INPUT_SHA256 = {'docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md': '87b32515257c0c3363b6f47845ff8eafada3d1b79e02dff075ea8bb905c696d6', 'docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3', 'docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f', 'docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md': '0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72', 'docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6'}
++_REPO_ROOT = Path(__file__).resolve().parents[1]
++_input_sha256 = {p: hashlib.sha256((_REPO_ROOT / p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
++assert _input_sha256 == EXPECTED_INPUT_SHA256, "Declared scientific input drift"
+ _started = time.monotonic()
+ for _name in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):
+     os.environ[_name] = '1'
+@@ -30,6 +35,15 @@
+     out['N5_scopes'] = scopes
+     out['resource_limits'] = {'seconds': AUDIT_TIMEOUT_SEC, 'rss_MiB': AUDIT_RSS_LIMIT_MIB}
+     _finite(out)
++    out['input_sha256'] = _input_sha256
++    _sidecar = os.environ.get('AUDIT_RESULT_SIDECAR')
++    if _sidecar:
++        _result_path = Path(_sidecar)
++        if not _result_path.is_absolute() or _result_path.resolve().is_relative_to(_REPO_ROOT.resolve()):
++            raise ValueError('AUDIT_RESULT_SIDECAR must be an absolute path outside the repository')
++        with _result_path.open('x') as _result_file:
++            json.dump(out, _result_file, sort_keys=True, indent=2, allow_nan=False)
++            _result_file.write('\n')
+     if sys.argv[1:] == ['--json']:
+         print(json.dumps(out, sort_keys=True, indent=2, allow_nan=False))
+     else:
+@@ -105,4 +119,4 @@
+ ck('actual_R1_retains_both_path_orientations',[(p,q) for p in range(2) for q in range(2) if p+q<=1]==[(0,0),(0,1),(1,0)])
+ result={'TOTAL':len(checks),'checks':checks,'vertices':verts,'edges':edges,'flows':out,'ghost_solutions':len(sol),'ghost_vacuum_solutions':len(kept),'Ritz_toy':{'full_ground':1,'cutoff_ground':2,'charged_both':10,'gap_full':9,'gap_cutoff':8},'scope':'Necessary actual R1 center-flow controls plus an abstract Ritz subtraction adverse. Not all center flows are claimed SU3-admissible, and no finite test proves imported resolvent constants.','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'seconds':time.monotonic()-start,'rss_MiB':_rss()}
+ 
+-_emit(result,18,{'per_element': {'checks': 8, 'scope': 'two actual cube endpoint pairs: all243 center flows, connectivity and minimal occupied energies'}, 'per_site': {'checks': 3, 'scope': 'ghost shortcut and exact ghost-vacuum recovery'}, 'per_mode': {'checks': 2, 'scope': 'missing versus complete boundary Gauss control'}, 'per_block': {'checks': 4, 'scope': 'positive-perturbation Ritz subtraction counterexample with commuting cutoff'}, 'lattice_wide': {'checks': 1, 'scope': 'R1 retains both bare path orientations; finite flows are necessary center controls, not all-SU3 admissibility or imported-theorem proof'}})
++_emit(result, 18, {'per_element': {'checks': 1, 'scope': 'one finite cutoff-R=1 representation-label enumeration retaining both fundamental orientations'}, 'per_site': {'checks': 0, 'scope': 'checked and not executed — no site-resolved dynamics or observable measurement'}, 'per_mode': {'checks': 2, 'scope': 'two finite missing/complete boundary Gauss predicates'}, 'per_block': {'checks': 15, 'scope': 'eight predicates on two cube endpoint flow sets, three ghost-vacuum predicates and four abstract 3-by-3 Ritz predicates; center conservation is only necessary SU3 data'}, 'lattice_wide': {'checks': 0, 'scope': 'checked and not executed — finite cube flows and scalar/matrix examples do not execute arbitrary-volume coordinate estimates or the selected infinite-sector theorem'}})

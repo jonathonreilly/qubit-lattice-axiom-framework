@@ -1,0 +1,45 @@
+{
+  "status": "Proposed exact adapter; same original reviewer confirmation required",
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-cold-review-v1.json",
+    "sha256": "94e4ce992e3845f81f735a8bd39eb913a2fd8cff69e92bdf41a4daf9023cba0b"
+  },
+  "binding": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-cold-review-v1.json",
+    "sha256": "94e4ce992e3845f81f735a8bd39eb913a2fd8cff69e92bdf41a4daf9023cba0b",
+    "same_session_provenance": "/root/review_8032",
+    "verdict_pointer": "/verdict",
+    "verdict_value": "COLD_SOURCE_PASS_CONDITIONAL_CAPTURE_CLEARANCE",
+    "tree_pointer": "/source_tree",
+    "tree": "d218c35f6ebdc84e6bb8ea8a8b2385ff9ed47ceb",
+    "frozen_base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+    "reviewed_main": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+    "required_predicates": {
+      "/reviewer_session": "/root/review_8032",
+      "/frozen_base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+      "/reviewed_current_main": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+      "/findings": [],
+      "/science_source_confirmed": true,
+      "/input_closure_confirmed": true,
+      "/archive_confirmed": true,
+      "/registry_confirmed": true,
+      "/resource_plan_confirmed": true,
+      "/dual_main_pattern_allowed": true,
+      "/limits/wall_seconds_per_program": 180,
+      "/limits/sampled_aggregate_rss_mib": 256
+    }
+  },
+  "old": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-v1.py",
+    "sha256": "a111b3d73563978b8150f2f5074837ab7d7df885d28a3eba9dd7acfd2813b928"
+  },
+  "new": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-v2.py",
+    "sha256": "39a96c89177b7d130dc5db09bfd13885ed5f72a9d23fcddf63a06b1c970cacd5"
+  },
+  "diff": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-dual-binding-v2.diff",
+    "sha256": "5ea6dd854612657c8d45ea8cf3bd84e7284ed8d2e561a98580dc6a85dcc95172"
+  },
+  "scope": "Actual cold binding and exact previously reviewed dual-main guard before/after; scientific code, invocation, limits, preservation, once-only markers unchanged"
+}

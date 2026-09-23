@@ -1,0 +1,70 @@
+{
+  "status": "PREPARED FOR SAME-SESSION AFFECTED REVIEW; parent8032 actual landing/closure hold",
+  "owner": "PR8033-author",
+  "base": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "original_head": "d041b83a507226feae9713662767dd34d2ffb4a8",
+  "source_files": 81,
+  "original_paths": 84,
+  "full_proofs": "Main and alternative entire arguments inline, exact original arguments archived",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-author-prepared-v1.json",
+      "sha256": "b6bb3c0f2e3e7c1c16b211a633e57ee8bf5d15dc37984109f0eccdd555ad0403"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source-freeze.json",
+      "sha256": "488698c6912ecf689fc068bb894df145dbcf357c9147ec4d58c5c47764c6e944"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-author-full-mapping-v1.json",
+      "sha256": "1c638a3064e5fd7b468dc21ea9b5c3d871afe5e7dc1e9507dfa59da5e662948c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-author-preservation-v1.json",
+      "sha256": "3bd38406ed06c79852b523d420239c9141ac7cbd9a175091eac77bf45423c1c8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-author-correction-v1.diff",
+      "sha256": "b9abfc92aa46c39506a8ffd83b3503c60b69a037053257109b4c720dbf6697f1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-author-discovery-v1.json",
+      "sha256": "8799cbddaeb286ad1b7335ffa2fc7fc25969d3e86c6aeb5391b299d8babc894e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-author-input-resource-plan-v1.json",
+      "sha256": "2037079a79a49bd99704cd4d2ced29de525811f8e93685a8d182af30d07cd38e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-author-finding-dispositions-v1.json",
+      "sha256": "22f0be5e9cc00b4db87413397143c3297229b25e0d9db77dac6e93c923642cf1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-review-original.json",
+      "sha256": "e0a9a39b5a670fa9de4f0f3dd16277d182bcaf0f5868f3cfb9c22b3883c63d4f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8033-review-original.md",
+      "sha256": "103360bb2de0f367ef6a1a5a5d54319c0e93dbd1f6c03185b8616a4cb5ca4819"
+    }
+  ],
+  "pending_parent": {
+    "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6",
+    "source": {
+      "path": "/private/tmp/review-drain-20260915/drain8032-prepared-v2-source/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6"
+    },
+    "provenance": {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-unit-draft-v2.json",
+      "sha256": "3ed4960ef2ec39fe2896f930dec6d11dda47613bceb76193e2fe2c231383b5f7"
+    },
+    "boundary": "Actual complete mathematical proof is prospective dependency. Its review verdict is not theorem authority and this unit does not duplicate its source."
+  },
+  "new_inputs_and_closure": "Five source pins; four present including own note, one exact prospective parent. Actual fingerprint empty and parent citation unresolved by current API, honestly recorded.",
+  "shared_map_changes": [],
+  "science_executions": 0,
+  "staging": 0,
+  "gates": 0,
+  "draft_status_changed": false
+}

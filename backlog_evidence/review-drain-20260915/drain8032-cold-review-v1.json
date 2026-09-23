@@ -1,0 +1,125 @@
+{
+  "reviewer_session": "/root/review_8032",
+  "verdict": "COLD_SOURCE_PASS_CONDITIONAL_CAPTURE_CLEARANCE",
+  "original_head": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+  "original_delta_base": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+  "frozen_base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+  "reviewed_current_main": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "source_tree": "d218c35f6ebdc84e6bb8ea8a8b2385ff9ed47ceb",
+  "source_paths": 84,
+  "record_sha256": "3ed4960ef2ec39fe2896f930dec6d11dda47613bceb76193e2fe2c231383b5f7",
+  "science_source_confirmed": true,
+  "input_closure_confirmed": true,
+  "archive_confirmed": true,
+  "registry_confirmed": true,
+  "resource_plan_confirmed": true,
+  "dual_main_pattern_allowed": true,
+  "capture_adapter_confirmation_required": true,
+  "execution_cleared_now": false,
+  "limits": {
+    "programs_serial": 2,
+    "attempts_per_program": 1,
+    "wall_seconds_per_program": 180,
+    "sampled_aggregate_rss_mib": 256,
+    "internal_rss_mib": 180,
+    "extra_json_runs": 0
+  },
+  "changed_main_paths": [
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/audit/data/citation_graph_manifest.json",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/README.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/original-delta.patch.gz",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--bad_pairs_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--budget_amplified_dropped.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--ceiling_endpoint_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--ceiling_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--certificate_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--deviation_closed_form_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--domination_domain_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--domination_state_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--forks_identity_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--spanning_identity_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--subtree_bound_wrong.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.json",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.txt",
+    "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py"
+  ],
+  "source_input_intersection": [],
+  "analysis": "Cold source passes; capture requires exact bound-adapter confirmation. All 84 staged source paths and every bound input match. Actual maps are precisely the two accepted one-line registrations; actual graph and packet APIs agree on the companion. All five tooling files and both registry data inputs are pinned. The missing checkpoint pin in draft-v1 and its failed cheap receipt remain preserved; draft-v2 passes mechanical checks, which do not confer scientific authority.\n\nFull conditional energy upper-bound, alternative Haar/Cayley and one-plaquette proofs remain inline and unchanged from accepted v2, as do original 84-path recovery and the two scientific AST bodies. Original complete proof/axiom/primitive review and 68 exact independent controls continue to apply. Full-carrier ground, supplied temporal a and distinct-link hypotheses remain explicit. No physical selection, confinement lower bound, exact charged minimum or continuum theorem is promoted. Historical packets remain nonauthority.\n\nFrozen base to reviewed current main changes only PR8174's conditional six-axis product process, explanation-tree certificates and associated evidence/manifest. Exact path intersection with every bound source/input is empty. Its hypotheses and conclusion neither supply nor alter the SU3 finite-PW Hamiltonian, Haar identities, shell bounds, ground premise or authorities. Thus no semantic interaction was found.\n\nCapture-v1 preserves unique external same-run sidecars, raw execute_runner return before cache checks, exclusive attempt markers, failures, snapshots and frozen index. Its null binding and single-main equality correctly prevent execution now. Dual-main guarding is accepted in principle: independently pin HEAD/record base to frozen_base and origin/main to reviewed_current_main, before and after execution. Bind this exact report, verdict/tree and affirmative predicates with same-session provenance. Submit the resulting exact adapter hash for confirmation before either program runs.\n\nAfter that confirmation, primary then companion once each, serial, 180 seconds and 256 MiB sampled aggregate RSS per attempt, with the existing 180 MiB internal guard. No extra JSON science run. No source edits, staging, primary/helper execution, gates, audit actions or draft-status changes occurred in this review.",
+  "findings": [],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-review-original.json",
+      "sha256": "648191b14e06afb49643ef9f41655fcacb5f3ba3a130b5dffea244fbd1cf7ab6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-early-review-v2.json",
+      "sha256": "a440feea0e62644e0ca0190f11b1cb1f69e9d9420b5514783675cfcd81fc138e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-unit-draft-v2.json",
+      "sha256": "3ed4960ef2ec39fe2896f930dec6d11dda47613bceb76193e2fe2c231383b5f7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-cheap-v2.json",
+      "sha256": "0e00ceb34ac715d770b9601863bddca100f52ddc5274a987e855afc48b92e1f5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-staged-freeze-v1.json",
+      "sha256": "464d245929f22ab1a2f3d92e93e9cb97505dcf9875d11d58a7128399b7aaeb54"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-cache-api-v1.json",
+      "sha256": "19611e8b7147862e8915d74da2670c6e54b58caf1f7b7675af5038a82b992973"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-receipt-tooling-fix-v2.json",
+      "sha256": "35f49131f0d7aac299ab25ae5ac8360bb9a1971b06b5e8fe1d3c940236b14164"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-capture-v1.py",
+      "sha256": "a111b3d73563978b8150f2f5074837ab7d7df885d28a3eba9dd7acfd2813b928"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-input-resource-plan-v2.json",
+      "sha256": "269e4a415fa6316f4922d9c54c136d0414f85b7c2683d6b712f746f3a74a4b6b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-cold-verification-v1.json",
+      "sha256": "bb0a963ce26ef811aebdcb3da1c5654b6b990c944ccaeee68cac08dfabfb4ae3"
+    }
+  ],
+  "reviewer_science_executions": 0,
+  "source_mutations": 0,
+  "stage_mutations": 0,
+  "audit_or_gate_runs": 0,
+  "draft_status_change": false,
+  "report_preparation_failure": "Initial artifact-writing invocation stopped before writing because resource-plan basename was shortened incorrectly; corrected to existing drain8032-author-input-resource-plan-v2.json. No science or state was affected."
+}

@@ -1,0 +1,339 @@
+{
+  "base": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "claim_id": "gauge_wilson_finite_pw_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+  "note": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+  "primary_runner": "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py",
+  "helpers": {
+    "graph": [],
+    "packet": [],
+    "transitive_graph": [],
+    "transitive_packet": []
+  },
+  "actual_resolved_citations": [
+    "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/work_history/repo/review_feedback/pr8033-evidence/README.md"
+  ],
+  "intended_citations": [
+    "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/work_history/repo/review_feedback/pr8033-evidence/README.md"
+  ],
+  "pending_unresolved_citations": [
+    "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+  ],
+  "literal_inputs": [
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "87b32515257c0c3363b6f47845ff8eafada3d1b79e02dff075ea8bb905c696d6",
+      "state": "present",
+      "immutable_prospective_source": null
+    },
+    {
+      "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "state": "present",
+      "immutable_prospective_source": null
+    },
+    {
+      "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f",
+      "state": "present",
+      "immutable_prospective_source": null
+    },
+    {
+      "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72",
+      "state": "present",
+      "immutable_prospective_source": null
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6",
+      "state": "PENDING parent8032 landing",
+      "immutable_prospective_source": "/private/tmp/review-drain-20260915/drain8032-prepared-v2-source/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    }
+  ],
+  "actual_input_fingerprint": "",
+  "fingerprint_status": "INCOMPLETE because exact pending parent8032 is not on this checkout; not executable closure",
+  "pending_parent_source": {
+    "path": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/pending-parent8032/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6"
+  },
+  "context": [
+    {
+      "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "unchanged": true,
+      "role": "current-inputs"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72",
+      "unchanged": true,
+      "role": "current-inputs"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f",
+      "unchanged": true,
+      "role": "current-inputs"
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/CANONICAL_HARNESS_INDEX.md",
+      "original_review_sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "original_review_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "original_review_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "original_review_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "original_review_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "original_review_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "original_review_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "original_review_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "original_review_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/SKILL.md",
+      "original_review_sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "original_review_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "original_review_sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "original_review_sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/LANDING.md",
+      "original_review_sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "original_review_sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "original_review_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "original_review_sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+      "original_review_sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "original_review_sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "original_review_sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/audit/README.md",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/audit/README.md",
+      "original_review_sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/audit/data/axiom_premise_nodes.json",
+      "original_review_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/audit/data/premise_decision_history.json",
+      "original_review_sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "original_review_sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/repo/CONTROLLED_VOCABULARY.md",
+      "original_review_sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/repo/DEFERRED_DECISIONS.md",
+      "original_review_sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "unchanged": true,
+      "role": "context"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-current-context-v1/docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "original_review_sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "unchanged": true,
+      "role": "context"
+    }
+  ],
+  "tooling": [
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5"
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+    },
+    {
+      "path": "docs/audit/scripts/ledger_io.py",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+    }
+  ],
+  "registry_changes_required": [],
+  "output_contract": {
+    "default": "Normal stdout; no filesystem output required, regardless of existing canonical JSON.",
+    "json_flag": "--json prints structured stdout; not an additional required capture run.",
+    "external_sidecar": "Optional AUDIT_RESULT_SIDECAR absolute external destination, exclusive creation; capture caller provides unique per-attempt path with existing parent.",
+    "stdout_cache": "logs/runner-cache/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.txt",
+    "canonical_json_required": false
+  },
+  "science_executions": 0
+}

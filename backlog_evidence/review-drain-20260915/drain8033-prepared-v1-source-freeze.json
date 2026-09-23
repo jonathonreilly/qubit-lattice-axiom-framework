@@ -1,0 +1,491 @@
+{
+  "base": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "files": [
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "87b32515257c0c3363b6f47845ff8eafada3d1b79e02dff075ea8bb905c696d6",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/README.md",
+      "sha256": "0837dd3190da10338913e450d87a071d434dbe1bdfdaca930a993b0a3e66bea5",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/README.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ARTIFACT_PLAN-53b1136cea2552f5.md",
+      "sha256": "53b1136cea2552f58efc2a6c7bc34a2792d697fd3dc598e37341178c449cc527",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ARTIFACT_PLAN-53b1136cea2552f5.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ASSUMPTIONS_AND_IMPORTS-0a0aaa5360cb8283.md",
+      "sha256": "0a0aaa5360cb8283d1372b3e9497ea70c7a6c4343519ffe6edb15943e3343d7f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ASSUMPTIONS_AND_IMPORTS-0a0aaa5360cb8283.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CAMPAIGN_REPORT-4d93b09ecc9cc035.md",
+      "sha256": "4d93b09ecc9cc0357aafe372689dcb9e639c9c0a20dc56503210f7b5c95be23b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CAMPAIGN_REPORT-4d93b09ecc9cc035.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CAMPAIGN_REPORT_REVIEW-7550739be2ef42a8.md",
+      "sha256": "7550739be2ef42a8e2f399f7b022b67b4404f968eacf30de59ccfb78022649fd",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CAMPAIGN_REPORT_REVIEW-7550739be2ef42a8.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CANONICAL_RESULT-114adcd393fdaec6.json.gz",
+      "sha256": "e4c5ea9f5f21afe2e66da97b782e2cd8727605f98c6b48977725183286536eca",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CANONICAL_RESULT-114adcd393fdaec6.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CANONICAL_STDOUT-bb144330eff41f1e.txt.gz",
+      "sha256": "ae3a9e53577328e4670fd542a32c2040b722d0b7641d6fd0451aef91ae412f58",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CANONICAL_STDOUT-bb144330eff41f1e.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CLAIM_ROWS_BEFORE_CLEANUP-19948b7cf438fc70.json.gz",
+      "sha256": "1c2aa90d1f85b48d53a15a7ff82650f7bc03a3cbdda7e0aa4923967c37797787",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CLAIM_ROWS_BEFORE_CLEANUP-19948b7cf438fc70.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CLAIM_STATUS_CERTIFICATE-d1157c49ba9da70b.md",
+      "sha256": "d1157c49ba9da70b9e0d37ba1db609096c93ab82bd6ba370022c0c4a1dee0637",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CLAIM_STATUS_CERTIFICATE-d1157c49ba9da70b.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CONTROLS_PREREGISTRATION-6cbf80a5ca28caa1.md",
+      "sha256": "6cbf80a5ca28caa117dbefe3d5c51d57a95fbbf8228ce736f83b2d90bba35f69",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CONTROLS_PREREGISTRATION-6cbf80a5ca28caa1.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DELIVERY_RECEIPT-e4a43678cd42a912.md",
+      "sha256": "e4a43678cd42a9123aa6507ebaab1c6fd44eb3226c52648b32bcb117ba5bf932",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DELIVERY_RECEIPT-e4a43678cd42a912.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DELIVERY_RECEIPT-fc5b771191eb47ae.md",
+      "sha256": "fc5b771191eb47ae12771a8db918d6855031ca0c272eb2db7123982183465cb9",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DELIVERY_RECEIPT-fc5b771191eb47ae.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DERIVATION-2037554d8fffef48.md",
+      "sha256": "2037554d8fffef48606b1d866567e007ea28446d068723e43f0f6f12ab028c05",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DERIVATION-2037554d8fffef48.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FAILED_SYNTAX-b334a0b1725b8b39.md",
+      "sha256": "b334a0b1725b8b398a3dece659140ff1628befce356b122ac53eb2d08f2c723d",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FAILED_SYNTAX-b334a0b1725b8b39.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FAILED_SYNTAX_check-9cf20117d64bf4e8.py",
+      "sha256": "9cf20117d64bf4e81b68b483f2eeb4a8f012ca34614d815c2bb1d42bb9d0d239",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FAILED_SYNTAX_check-9cf20117d64bf4e8.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_DELIVERY_METADATA_INVARIANT-1dc70317c0c024cf.json.gz",
+      "sha256": "5a06dab039f1303820972c22e94aadcb2c56e46b0ca6b5ffc5af36d21e35ea31",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_DELIVERY_METADATA_INVARIANT-1dc70317c0c024cf.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_DESCENDANT_PUBLICATION_SNAPSHOT-fb9eec3c6ce7de26.json.gz",
+      "sha256": "81e92503a252694726b2a42e94aafdd8a8ffa777caf051b9785108725b99d143",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_DESCENDANT_PUBLICATION_SNAPSHOT-fb9eec3c6ce7de26.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION-df75f344212ce1b5.json.gz",
+      "sha256": "277ad84cd8887f67a53f1f46033869451d903a29204d36ea9daaf5ddfd7edd6b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION-df75f344212ce1b5.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_LOCK_RELEASE-25f09ffc3fa01b87.json.gz",
+      "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_LOCK_RELEASE-25f09ffc3fa01b87.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_READINESS-7b963328759b4782.json.gz",
+      "sha256": "9b4bf20a1dd3ab4a6cc66df63d9c7e3a25c96bbdd49b705191e95abfaabc4aa6",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_READINESS-7b963328759b4782.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_STRICT-55389a4b84c5d946.log.gz",
+      "sha256": "12bc72da6d3b62a00cc2168d8bc3acd7272714790e14c811686f7701cc15ca99",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_STRICT-55389a4b84c5d946.log.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_SYNC_RECEIPT-208ed5a422d4e13f.json.gz",
+      "sha256": "17c5477639a9c586871829ad458271091ea6e4ee909f08504672f6a0d7be608b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_SYNC_RECEIPT-208ed5a422d4e13f.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_VALIDATION-c9fe766c44bae973.md",
+      "sha256": "c9fe766c44bae9734a5bbf059f0626505542e25089157b1ada9d61291efe3cc2",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_VALIDATION-c9fe766c44bae973.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_PIPELINE_PENDING-e6f17060672c4875.md",
+      "sha256": "e6f17060672c48750335afa20ae93d6260b8909ddb32d24ea0b86de0b19326a5",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_PIPELINE_PENDING-e6f17060672c4875.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_PUBLICATION_SNAPSHOT-28355d84935da4b0.json.gz",
+      "sha256": "147dacc687156b56090ecec0dd4b25e6f79123569ef6bc1f2317833d79d78f62",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_PUBLICATION_SNAPSHOT-28355d84935da4b0.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_REPORT_COPY_RECEIPT-534a669e900c19f3.json.gz",
+      "sha256": "ae3da7ba6df7c6d8d53911a80b904383bf46fed2d6888d2b94c68ed628f20b93",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_REPORT_COPY_RECEIPT-534a669e900c19f3.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_VALIDATION-776713e9220c654c.md",
+      "sha256": "776713e9220c654ce097e7796253b1fb0b93155ac857158e5d26c695a5eed7a4",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_VALIDATION-776713e9220c654c.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_VOCAB_LINT-75d6a064729cbe1e.txt.gz",
+      "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_VOCAB_LINT-75d6a064729cbe1e.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FROZEN_PORT_RECEIPT-012e6ec021546ec8.json.gz",
+      "sha256": "5f17302b9c4227d2ba7c4baac04688c6d6dd8b0fa375f4b37dc1fc13dd6e5d59",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FROZEN_PORT_RECEIPT-012e6ec021546ec8.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FULL_PIPELINE-5740b9dc80b466bd.log.gz",
+      "sha256": "8ded28d35542a345cacaeab804c42992772ee29afeebcef2886830def5b753d8",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FULL_PIPELINE-5740b9dc80b466bd.log.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FULL_PIPELINE-946b10f2a4266f42.log.gz",
+      "sha256": "3ee720f84f2b6f3783f6c9e0966c9d839a10ebd2d3378a773a99ea2c6b441203",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FULL_PIPELINE-946b10f2a4266f42.log.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_-3a50603a272e1149.md",
+      "sha256": "3a50603a272e1149dfa24bc0437c9272ad6d9f0975f2627e9e418ee6a3ebb325",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_-3a50603a272e1149.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-GOAL-ae6497d8902c465f.md",
+      "sha256": "ae6497d8902c465fa8015da30f32e0bf681cff237c79fff630f8cc2b70745a71",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-GOAL-ae6497d8902c465f.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-HANDOFF-9c0ab795ede81c9f.md",
+      "sha256": "9c0ab795ede81c9f93b7122a12cd83699b9f4eec55b654b02d83ecfc29b74a60",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-HANDOFF-9c0ab795ede81c9f.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-INHERITED_BOTH_REGISTRY_CHECK-e265fd9eca3c063b.json.gz",
+      "sha256": "9c3353eaf46bfa722bc73701ecaf66e4820be90eabfe8db5d7d3e3b7f17e3382",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-INHERITED_BOTH_REGISTRY_CHECK-e265fd9eca3c063b.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-LITERATURE_BRIDGES-afd4b3dc89374f1f.md",
+      "sha256": "afd4b3dc89374f1ff1f1f53ed20cf3b2bf4311afe44283d587b67c32b43950bd",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-LITERATURE_BRIDGES-afd4b3dc89374f1f.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-LIVE_PORT_RESULT-6a6bce0e49d6ce26.json.gz",
+      "sha256": "ac47f53588efa36a6f0cfea377f5d20fa1aaea4bb178d948e7d46cfdc8fb862f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-LIVE_PORT_RESULT-6a6bce0e49d6ce26.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-MERGEABILITY_SNAPSHOT-5f9f09a5b424a88a.json.gz",
+      "sha256": "9a34b2fa612427041e1458fb67c4e9dbf9995b423049278a114199b0bf21a1d0",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-MERGEABILITY_SNAPSHOT-5f9f09a5b424a88a.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NATIVE_REVIEW-4cc3d74846f88e1b.md",
+      "sha256": "4cc3d74846f88e1bdfc645755f185b79a253ef35b85b59d44e161eaae88a2264",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NATIVE_REVIEW-4cc3d74846f88e1b.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NEXT_CAMPAIGN_BRIEF_REVIEW-5595f1d44fb1cb82.md",
+      "sha256": "5595f1d44fb1cb827c631e9544e18e62de91d69e0a318438c8fc55b19dca25ef",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NEXT_CAMPAIGN_BRIEF_REVIEW-5595f1d44fb1cb82.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NEXT_NATIVE_BRIDGE_CAMPAIGN-1825debe48e14a60.md",
+      "sha256": "1825debe48e14a60cc6ad0183661470aaa7d226485cf668c940c345e2c72712e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NEXT_NATIVE_BRIDGE_CAMPAIGN-1825debe48e14a60.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NO_GO_DISCIPLINE_CHECKLIST-324a7c07744e7f0c.md",
+      "sha256": "324a7c07744e7f0c3ffa51c5e786a34f36a07035c51e096947f56595f8098dbe",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NO_GO_DISCIPLINE_CHECKLIST-324a7c07744e7f0c.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NO_GO_LEDGER-6dce5c1e8c391666.md",
+      "sha256": "6dce5c1e8c391666b0641489215a91274bd643ac5a8192856bb18a46783aaedf",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NO_GO_LEDGER-6dce5c1e8c391666.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-OPPORTUNITY_QUEUE-749a057bf7129b97.md",
+      "sha256": "749a057bf7129b9706512e903c2d5b24c9a74b712befedb9cbee732fa58295f8",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-OPPORTUNITY_QUEUE-749a057bf7129b97.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PACK_INDEX-2d7addcea67fbd58.json.gz",
+      "sha256": "ce18e069e47ea35ce58aaf6b20b48e81fb10bb0c17de2fd813484ded00e8ed78",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PACK_INDEX-2d7addcea67fbd58.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PARENT_VALIDATION_METADATA_CATCHUP-e19fe79e1b1fc0c6.md",
+      "sha256": "e19fe79e1b1fc0c6dd9a60a9bf9e97dbeb7ac14aa8defe732f2d324c0f0af358",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PARENT_VALIDATION_METADATA_CATCHUP-e19fe79e1b1fc0c6.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PORT_RECEIPT-e74d4a49ae5399f8.json.gz",
+      "sha256": "30352a2249724e4376c948abc5544b50c1619edf81803b3daab3f1242a284da2",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PORT_RECEIPT-e74d4a49ae5399f8.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PREREGISTRATION-802636e4f63a2bb4.md",
+      "sha256": "802636e4f63a2bb439c96f41be8e6facbd8c0acf13304a6ca327682a660101ca",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PREREGISTRATION-802636e4f63a2bb4.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PREREGISTRATION-ffd3b1e79159b8eb.md",
+      "sha256": "ffd3b1e79159b8ebb94abfd1ed5e996e7ce7c62a9fc90ac135c7c163e7fa702d",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PREREGISTRATION-ffd3b1e79159b8eb.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PROOF_REVIEW-afbe0037e110fb92.md",
+      "sha256": "afbe0037e110fb929f8c9aabde61f84ff7e25f123d2e31f26c500a7ccf1b9eb9",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PROOF_REVIEW-afbe0037e110fb92.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_BACKLOG-356efbf84e1da86a.md",
+      "sha256": "356efbf84e1da86ad4b5a7c4c78aa82e8877e42ec69a06f50f1e9b223f35fdcb",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_BACKLOG-356efbf84e1da86a.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_BODY-43fb92e7296b72bc.md",
+      "sha256": "43fb92e7296b72bcb123ffa01246360ac7875a3374c31e9451e5fcb6a1ed6319",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_BODY-43fb92e7296b72bc.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_INVENTORY-c81d5916a37c8b12.md",
+      "sha256": "c81d5916a37c8b121ed9fa10e1a172d928de3709cb13a7ac33cf59ae3794c977",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_INVENTORY-c81d5916a37c8b12.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PUBLICATION_RECEIPT-aff08d03508853b7.json.gz",
+      "sha256": "31d6a8bfcd554b16a7bec56a63a1897504fad8ad33e2a24bc6c786c2a496fb3b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PUBLICATION_RECEIPT-aff08d03508853b7.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-READINESS_BEFORE_CLEANUP-b94a89be79434e64.json.gz",
+      "sha256": "5707f194f330be6d63a631ef6fcd7f6e93f722e6bc96233d793ae0b3b65ba45a",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-READINESS_BEFORE_CLEANUP-b94a89be79434e64.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-REVIEW_HISTORY-18d0a861bec1bbba.md",
+      "sha256": "18d0a861bec1bbbacd2662d7d95d6f2bda391542ce5955162165014e5139ee10",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-REVIEW_HISTORY-18d0a861bec1bbba.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_CANONICAL_PORT_REVIEW-e12cd862be85a4cb.md",
+      "sha256": "e12cd862be85a4cb4920fd7d43c5d675d60afb74c7dede7c0dd88f8f75ca0aa6",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_CANONICAL_PORT_REVIEW-e12cd862be85a4cb.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_DERIVATION-593c0cf58c849b6b.md",
+      "sha256": "593c0cf58c849b6b3c368d748522a2df193fe387735aee75229f5d9f316b4260",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_DERIVATION-593c0cf58c849b6b.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_NATIVE_REVIEW-f233708b2774f04a.md",
+      "sha256": "f233708b2774f04aca896813b9dc6ca99741cc525e47d693f952e1099bff5748",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_NATIVE_REVIEW-f233708b2774f04a.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_REVIEW-ef7eea3a64a0bc18.md",
+      "sha256": "ef7eea3a64a0bc1823597bab20ee524da780b879bce9798ee13a18aee2dde17c",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_REVIEW-ef7eea3a64a0bc18.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_REVIEW-fb0ff14bcc894ed4.md",
+      "sha256": "fb0ff14bcc894ed401cd7dbde9ddc19cf844153ad94f2d87f7a4c092ceb285d6",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_REVIEW-fb0ff14bcc894ed4.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROUTE_PORTFOLIO-1a5b31d04209c7cd.md",
+      "sha256": "1a5b31d04209c7cdc808635f37f7168f2cb5afeef3cbe95093d0a01c22db1d9b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROUTE_PORTFOLIO-1a5b31d04209c7cd.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-SCOPED_VALIDATION-4c5ef802f8a9e25c.md",
+      "sha256": "4c5ef802f8a9e25c9804b4a20f6e10ed2446cfc7c55ea16dcb413c121a6ad406",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-SCOPED_VALIDATION-4c5ef802f8a9e25c.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STAGING_VALIDATION-2ecd1be1b76df9ca.json.gz",
+      "sha256": "91e5d7430b17d31562e68df02bcf9a6583896d25097c9bd50d23d7570bfce9dc",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STAGING_VALIDATION-2ecd1be1b76df9ca.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STATE-af31f30f4d7ab531.yaml.gz",
+      "sha256": "dddeeb2b910cb6d395185b56820cb60a7406190d244780281265a8d4196b0bef",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STATE-af31f30f4d7ab531.yaml.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STATUS-851eb7fba5546863.json.gz",
+      "sha256": "dca499ea2fb2bf0e0d7529b9b79125bb2969d18a903014c3e9ad0505b6b93fcd",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STATUS-851eb7fba5546863.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STRICT_LINT-208df6c7af272993.log.gz",
+      "sha256": "3bdc68a5f7ab31bbd12c29d7c7a7ce36ca54637c5186fc4a965075a14f823bc9",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STRICT_LINT-208df6c7af272993.log.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STRICT_LINT-97778d4e4d289958.log.gz",
+      "sha256": "f8cf99a2df681b2559469451e7f84434a58c91cf3830f63cfa7310d631bf4ba6",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STRICT_LINT-97778d4e4d289958.log.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-TOP_FIVE_MAIN66_VALIDATION-3c9635d6a3c76563.md",
+      "sha256": "3c9635d6a3c76563bbae7e2e360cc46ca72e8e8d31ecc2d53f1f142d7b501bd0",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-TOP_FIVE_MAIN66_VALIDATION-3c9635d6a3c76563.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-TRACE_GATE-5b5922cfbedb2267.md",
+      "sha256": "5b5922cfbedb22677f864e5443b05816ac865fcd1110a063468d61cb756c3a03",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-TRACE_GATE-5b5922cfbedb2267.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-check-5c9f2cc5139b5928.py",
+      "sha256": "5c9f2cc5139b5928b7a666293a0f547782669cf28dfd301bdfc3a4e145c97b8a",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-check-5c9f2cc5139b5928.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-citation_graph_manifest-bd5be9c83fc7275c.json.gz",
+      "sha256": "4101eec340f183057d17314ecda8e03a7703af7827e486ef33832307eb7a81cd",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-citation_graph_manifest-bd5be9c83fc7275c.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07-47cb4fb7eef2ef35.py",
+      "sha256": "47cb4fb7eef2ef35774dc1a7a2b327c34bd44ba1768cf146aebaa9bf1aec0b82",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07-47cb4fb7eef2ef35.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07-8ffdaa5eef97e1ef.txt.gz",
+      "sha256": "d9967ccbaa6627cff991e90ffea551c3b695912ec3ffcb6c5523701ef43f5476",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07-8ffdaa5eef97e1ef.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-result-37ff13f4bde23384.json.gz",
+      "sha256": "17c8ed6d96d1304c6e1796614601484b1f5eda1ee35fe13a320c07145b301519",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-result-37ff13f4bde23384.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-toe_main66_five_STATUS-421393f8bba61259.json.gz",
+      "sha256": "4feab6f92e42c0e088c1a754f422809a9557459843b3d2460038191d1ffa1ee5",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-toe_main66_five_STATUS-421393f8bba61259.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-validated_readiness_before_generated_cleanup-716bc4b683e8877b.json.gz",
+      "sha256": "71b5e6cd116f0261040b237940909d1a6da3ffacecb6d2bf8e3e2e2a368d1dfa",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-validated_readiness_before_generated_cleanup-716bc4b683e8877b.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/pr8033-archive-manifest.json",
+      "sha256": "59e67cb9ab774dbd1f4214de7addd9e3766ab17fff58a36f032452d9a0da372b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/pr8033-archive-manifest.json"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/pr8033-original.delta.gz",
+      "sha256": "ab5b7139ba87cdd63ddd03050ecea335b8da21ec179518aee56ccb09b91d4bdd",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/docs/work_history/repo/review_feedback/pr8033-evidence/pr8033-original.delta.gz"
+    },
+    {
+      "path": "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py",
+      "sha256": "dd230084337c5204fee69a9040702d9a94288a0f251f875109dea3a7a6567b6e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source/scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py"
+    }
+  ]
+}

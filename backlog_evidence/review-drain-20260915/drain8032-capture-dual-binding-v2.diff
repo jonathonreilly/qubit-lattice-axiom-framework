@@ -1,0 +1,47 @@
+--- drain8032-capture-v1.py
++++ drain8032-capture-v2.py
+@@ -5,7 +5,7 @@
+ assert __debug__
+ R=Path('/private/tmp/review-drain-20260915');W=R/'review-meta-slot'
+ h=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();ref=lambda p:dict(path=str(p),sha256=h(p));git=lambda *a:subprocess.check_output(['git','-C',str(W),*a],text=True).strip()
+-COLD_CLEARANCE_BINDING=None
++COLD_CLEARANCE_BINDING={'path': '/private/tmp/review-drain-20260915/drain8032-cold-review-v1.json', 'sha256': '94e4ce992e3845f81f735a8bd39eb913a2fd8cff69e92bdf41a4daf9023cba0b', 'same_session_provenance': '/root/review_8032', 'verdict_pointer': '/verdict', 'verdict_value': 'COLD_SOURCE_PASS_CONDITIONAL_CAPTURE_CLEARANCE', 'tree_pointer': '/source_tree', 'tree': 'd218c35f6ebdc84e6bb8ea8a8b2385ff9ed47ceb', 'frozen_base': 'e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6', 'reviewed_main': '1bb8b7befb857852acaed93bcf2bb1e47925b013', 'required_predicates': {'/reviewer_session': '/root/review_8032', '/frozen_base': 'e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6', '/reviewed_current_main': '1bb8b7befb857852acaed93bcf2bb1e47925b013', '/findings': [], '/science_source_confirmed': True, '/input_closure_confirmed': True, '/archive_confirmed': True, '/registry_confirmed': True, '/resource_plan_confirmed': True, '/dual_main_pattern_allowed': True, '/limits/wall_seconds_per_program': 180, '/limits/sampled_aggregate_rss_mib': 256}}
+ PLAN_SHA256='269e4a415fa6316f4922d9c54c136d0414f85b7c2683d6b712f746f3a74a4b6b'
+ # A future immutable revision binds the actual report path/hash, exact verdict and
+ # source tree pointers/values, original reviewer provenance and nonempty predicates.
+@@ -16,6 +16,17 @@
+ def load(p,s):
+  p=Path(p);assert p.is_absolute() and p.resolve().is_relative_to(R) and not p.resolve().is_relative_to(W) and not p.is_symlink() and h(p)==s
+  return p,json.loads(p.read_text())
++def confirm_reviewed_main(record, expected_base):
++    # Preserve the already reviewed source tree; separately bind unchanged inputs
++    # and the original reviewer's semantic confirmation of the actual new main.
++    b = COLD_CLEARANCE_BINDING
++    assert git('rev-parse', 'HEAD') == expected_base == record['source']['base'] == b['frozen_base']
++    assert git('rev-parse', 'origin/main') == b['reviewed_main'], 'Reviewed current main moved'
++    assert git('merge-base', b['frozen_base'], b['reviewed_main']) == b['frozen_base']
++    changed = set(git('diff', '--name-only', '--no-renames', b['frozen_base'], b['reviewed_main']).splitlines())
++    bound = {e['path'] for e in record['source']['paths'] + sum(record['inputs'].values(), [])}
++    assert not changed & bound, 'Current-main advance overlaps frozen source or input paths'
++
+ def main():
+  ap=argparse.ArgumentParser()
+  for k in ['record','record-sha256','cheap','cheap-sha256','cold','cold-sha256','runner','expected-base']:ap.add_argument('--'+k,required=True)
+@@ -27,7 +38,8 @@
+  assert at(cold,b['verdict_pointer'])==b['verdict_value'] and at(cold,b['tree_pointer'])==b['tree']==record['source']['tree'] and b['required_predicates']
+  for p,v in b['required_predicates'].items():assert at(cold,p)==v
+  assert json.loads((R/'review-meta-slot.json').read_text())['owner']=='PR8032-author'
+- assert git('rev-parse','HEAD')==a.expected_base==record['source']['base']==git('rev-parse','origin/main') and git('write-tree')==record['source']['tree'] and not git('diff','--name-only')
++ confirm_reviewed_main(record, a.expected_base)
++ assert git('write-tree')==record['source']['tree'] and not git('diff','--name-only')
+  planpath=R/'drain8032-author-input-resource-plan-v2.json';assert h(planpath)==PLAN_SHA256;plan=json.loads(planpath.read_text());programs={x['path']:x for x in plan['programs']};assert len(programs)==2 and a.runner in programs
+  assert {record['notes'][0]['primary_runner'],*record['notes'][0]['helpers']}==set(programs);program=programs[a.runner]
+  ids={}
+@@ -66,6 +78,7 @@
+   assert re.search(r'^TOTAL: '+str(count)+r'$',rr['stdout'],re.M) and Path(result['cache']).resolve()==cache.resolve()
+   assert data['resource_limits']=={'seconds':180,'rss_MiB':180} and 0<data['rss_MiB']<180 and data['seconds']<180
+   after=snapshot();assert before==after and git('write-tree')==record['source']['tree'] and not git('diff','--name-only')
++  confirm_reviewed_main(record, a.expected_base)
+  except BaseException as ex:
+   error=dict(error=repr(ex),traceback=traceback.format_exc())
+   if proc is not None:

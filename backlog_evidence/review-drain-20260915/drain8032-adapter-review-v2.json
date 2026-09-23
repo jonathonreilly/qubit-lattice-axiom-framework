@@ -1,0 +1,41 @@
+{
+  "reviewer_session": "/root/review_8032",
+  "verdict": "EXACT_ADAPTER_CONFIRMED",
+  "capture_authorized": true,
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-v2.py",
+    "sha256": "39a96c89177b7d130dc5db09bfd13885ed5f72a9d23fcddf63a06b1c970cacd5"
+  },
+  "binding_handoff": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-dual-binding-v2.json",
+    "sha256": "029049006a8f3bcbc6fcb0ef1d41a6ef262023f2ce2db28f6fbc68ebabf81514"
+  },
+  "cold_review": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-cold-review-v1.json",
+    "sha256": "94e4ce992e3845f81f735a8bd39eb913a2fd8cff69e92bdf41a4daf9023cba0b"
+  },
+  "source_tree": "d218c35f6ebdc84e6bb8ea8a8b2385ff9ed47ceb",
+  "frozen_base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+  "reviewed_current_main": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "scope": "Exact diff is limited to cold binding and dual-main guard invoked before and after execution. All prior output, raw-return, input/index, once-only marker and resource guards remain unchanged. Authorization expires if any bound identity changes.",
+  "authorized_execution": {
+    "order": [
+      "primary",
+      "companion"
+    ],
+    "serial": true,
+    "attempts_each": 1,
+    "wall_seconds_each": 180,
+    "sampled_aggregate_rss_mib": 256,
+    "internal_rss_mib": 180,
+    "extra_json_runs": 0
+  },
+  "guard_only_checks": [
+    "actual guard-only invocation passes",
+    "wrong current-main pin rejected",
+    "wrong base rejected"
+  ],
+  "science_runs": 0,
+  "source_or_stage_mutations": 0,
+  "findings": []
+}

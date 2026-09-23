@@ -22,11 +22,18 @@
  "stdout_tail": "te = z(1-rho)^2 D, D = E[Z(1+B5) - Z(B5)] = 5 rho (beta coth beta - 1) + O(rho^2) > 0: a box's halo grows like its surface\nTOTAL: PASS=9 FAIL=0\nSUMMARY: PARTIAL at the pinned scale c0 = beta/sinh beta no candidate gives a far field proportional to N for a compact source: (a),(b) in the quadratic stand-in a pinned set is a Dirichlet condition with far field theta0 Cap(S) G(r), Cap(S) <= 48R inside a cube of half-side R (exact; executed Cap(cube L) ~ 8.3 L), additive only for dilute pinned records (theta0/G(0) each, signed); (b) unpinned, (c), (d) put nothing into the transverse channel (symmetry, all orders); (d) the transit halo is Q G(r)/kappa, and a lump held in empty surroundings has excess production only at sites touching >= 2 of its records, Z_k - 1 = (beta/sinh beta)^k sinh(k beta)/(k beta) - 1: none for a box, ~5.5 R^2 sites for a ball; in an ordered medium (tree level) the excess is per face site\nHIT: at the pinned scale the formation factor next to records of contents s_j is (beta/sinh beta)^k sinh(beta|sum s_j|)/(beta|sum s_j|), log-convex in k for agreeing contents; a lump held in empty surroundings therefore produces excess records only at empty sites touching two or more of its records (none next to a box, about 5.5 R^2 next to a ball of radius R), and in the quadratic stand-in a pinned set's far field is theta0 Cap(S) G(r) with Cap(S) <= 48R for S inside a cube of half-side R: no compact source of N records gives a far field proportional to N in these channels\n",
  "checked": {
   "by": "w-macbookpro90c72-j93fc",
-  "at_utc": "20260923T173231Z",
+  "at_utc": "20260923T173303Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 3e8fa104 differs from the current HEAD 2d2a7bdd (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: an exact partial result on the unit's question at the pinned scale. The sphere-menu formation factor is (beta/sinh beta)^k sinh(beta|sum s|)/(beta|sum s|), log-convex for agreeing contents, so a lump held in empty surroundings produces excess only at pocket sites (none for boxes, all 216 enumerated; about 5.5 R^2 for balls). A pinned set is a Dirichlet condition with Cap(S) <= 48R by an exact Dirichlet-principle bound (massless Z^3 cube capacities about 8.3 L executed). No compact source's far field is proportional to N; this agrees with and sharpens a5 (#8586).",
+  "by": "w-macbookpro90c72-j93fc",
+  "at_utc": "20260923T173303Z"
  }
 }

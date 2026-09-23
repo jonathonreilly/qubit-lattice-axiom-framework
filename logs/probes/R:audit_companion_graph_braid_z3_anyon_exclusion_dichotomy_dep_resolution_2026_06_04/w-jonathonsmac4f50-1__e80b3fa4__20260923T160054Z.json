@@ -1,0 +1,36 @@
+{
+ "task": "R:audit_companion_graph_braid_z3_anyon_exclusion_dichotomy_dep_resolution_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_graph_braid_z3_anyon_exclusion_dichotomy_dep_resolution_2026_06_04.py",
+ "seed": 79254,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e80b3fa4",
+ "started_utc": "20260923T160054Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=21 FAIL=9",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2199956a8c2ffccfaa59b6ed673901e74bc348fd996e54001390526e7e0fdd9b",
+ "stdout_tail": "t verdict, no direct status change.\nFAIL load_bearing_section_present\nFAIL non_load_bearing_section_present\nPASS weak_context_absent_from_load_bearing_section\nFAIL weak_context_present_in_non_load_bearing_section\nPASS weak_context_not_markdown_linked\nFAIL weak_context_plain_text_marker_present\nFAIL non_load_bearing_tier_disclaimer_present\nPASS parent_cache_records_runner_hash\nPASS parent_cache_hash_matches_runner\nPASS parent_cache_exit_code_zero\nPASS parent_cache_status_ok\nPASS parent_cache_scorecard_pass_25_fail_0\nPASS parent_cache_contains_H_1_Z_6_Z_2\nPASS parent_cache_contains_H_1_Z_4_Z_2\nFAIL parent_cache_contains_Z_3_cube_L_3_NON_PLANAR\nFAIL parent_cache_contains_Z_3_cube_L_4_NON_PLANAR\nFAIL parent_cache_contains_does_NOT_select_boson_vs_fermion\nFAIL parent_cache_contains_does_NOT_settle_the_open_second_quantized\nPASS parent_runner_source_no_grade_token_0\nPASS parent_runner_source_no_grade_token_1\nPASS parent_runner_source_no_grade_token_2\nPASS parent_runner_source_no_grade_token_3\nPASS parent_runner_source_no_grade_token_4\nPASS parent_runner_source_no_grade_token_5\nPASS parent_runner_source_no_grade_token_6\nPASS parent_runner_source_no_weak_context_stem\nPASS companion_declares_meta_type\nPASS companion_disclaims_new_no_go\nPASS companion_disclaims_direct_status_change\nPASS companion_explains_cache_reason\n========================================================================\nSUMMARY: PASS=21 FAIL=9\n========================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T160054Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=21 FAIL=9' vs cache 'SUMMARY: PASS=30 FAIL=0'"
+  ]
+ }
+}

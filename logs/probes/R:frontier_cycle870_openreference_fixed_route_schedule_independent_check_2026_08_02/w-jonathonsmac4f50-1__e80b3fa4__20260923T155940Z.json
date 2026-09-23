@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle870_openreference_fixed_route_schedule_independent_check_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle870_openreference_fixed_route_schedule_independent_check_2026_08_02.py",
+ "seed": 79180,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e80b3fa4",
+ "started_utc": "20260923T155940Z",
+ "elapsed_s": 60.6,
+ "returncode": 1,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4a01eed9c79ef8cd4e06b3c409467301d548ef770390167fc9cbb70a9ec3586a",
+ "stdout_tail": "39d169912347aff0591ae\"\n    },\n    \"expected_base_commit\": \"4d6dedee82a14e13cbccb8bf62d6eac1227a4f0c\",\n    \"expected_base_is_ancestor\": false,\n    \"joint_probe_imported\": false,\n    \"prior_independent_core\": \"scripts/frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py\",\n    \"prior_independent_core_sha256\": \"49d76550de2d1d44adb2703be0ce7d3bc1ebfdc4914c8eee0413b29ad8dc8af9\",\n    \"repo\": \".\",\n    \"target_hashes_at_run\": {\n      \"joined_EG_active_target\": \"1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd\",\n      \"native_G_active_target\": \"687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237\",\n      \"root_E_active_target\": \"64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2\",\n      \"targets_frozen_for_comparison\": true\n    }\n  },\n  \"target_comparison\": {\n    \"hashes_are_observational_only\": false,\n    \"independent_schedule_difference\": \"this checker supplies a mod-3 rotation-layer schedule; the frozen joined target independently supplies a coarser mod-4 whole-factor schedule\",\n    \"status\": \"frozen source hashes verified; target probes were not imported\"\n  },\n  \"unlawful_domain_controls\": {\n    \"accepted_domain\": \"integer cubic open boxes L>=2\",\n    \"invalid_scalar_domains_rejected\": 5,\n    \"invalid_scalar_domains_tested\": 5,\n    \"noncubic_domains_rejected\": 3,\n    \"noncubic_domains_tested\": 3\n  },\n  \"validation_failures\": [\n    \"expected base is not an ancestor\"\n  ]\n}\nINDEPENDENT_FIXED_MOD3_ROUTE_SCHEDULE_FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T160041Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

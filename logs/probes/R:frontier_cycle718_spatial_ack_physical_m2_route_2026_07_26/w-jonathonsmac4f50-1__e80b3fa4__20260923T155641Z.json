@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+ "seed": 79001,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e80b3fa4",
+ "started_utc": "20260923T155641Z",
+ "elapsed_s": 164.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e10f5985c59ee8606bb14fbdc163e9e98f4cfdc0458f4208c8aaf503c3baea44",
+ "stdout_tail": "\"exact_inverse_failures\": 0, \"expanded_one_two_M2_primitives\": 5121, \"full_34_raw_payload_failures\": 0, \"one_decoded_event_failures\": 0, \"orientation_head_rotor_identity_pending_cases\": 256, \"packet_failures\": 0, \"pending_latch_failures\": 0, \"pending_latch_rows\": 4, \"transient_or_work_failures\": 0}, \"supplied\": [\"Cycle-713 physical two-cell decoder and full free/seam/contact update\", \"BINDER/ACTUAL/ADMISS/LAW=1 and clean head/rotor/identity/work genesis\", \"six A/B packet-bundle loops as a proper-cubic orbit\", \"finite pre-wrap blank/no-return sector and fixed commit-then-shift layer order\", \"blank routing sites used transiently and returned by every routed macro\", \"one clean persistent pending M2 and twelve clean local HOLD M2 at genesis\"], \"support_scaling\": {\"assigned_M2_intercept\": 115, \"assigned_M2_slope_per_rail_station\": 468, \"fixed_routing_overhead_primitives\": 165098, \"physical_word_intercept\": 6929, \"physical_word_slope_per_rail_station\": 1404, \"touched_M2_intercept\": 7671, \"touched_M2_slope_per_rail_station\": 468}, \"two_layer_shifts\": {\"13\": {\"M2_per_bundle\": 39, \"inverse_failures\": 0, \"length\": 13, \"prewrap_updates_checked\": 4, \"rail_families\": 6, \"shift_failures\": 0, \"two_layer_swap_instances\": 6084, \"wrap_reached\": false}, \"17\": {\"M2_per_bundle\": 39, \"inverse_failures\": 0, \"length\": 17, \"prewrap_updates_checked\": 4, \"rail_families\": 6, \"shift_failures\": 0, \"two_layer_swap_instances\": 7956, \"wrap_reached\": false}}}\nCYCLE718_SPATIAL_ACK_PHYSICAL_M2_ROUTE_INCOMPLETE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T155926Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'CYCLE718_SPATIAL_ACK_PHYSICAL_M2_ROUTE_INCOMPLETE' vs cache 'CYCLE718_SPATIAL_ACK_PHYSICAL_M2_ROUTE_PASS'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.txt against the .txt beside this log"
+  ]
+ }
+}

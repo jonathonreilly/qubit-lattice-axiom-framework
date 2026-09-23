@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle716_same_code_six_port_admission_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle716_same_code_six_port_admission_2026_07_26.py",
+ "seed": 78813,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e80b3fa4",
+ "started_utc": "20260923T155333Z",
+ "elapsed_s": 168.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ce20c9823c15450e858a8265ef0382625a53741debb50016d4a1cfc6c4f176ec",
+ "stdout_tail": ": 1.4142135623730934}, \"dirty_ancilla_rows\": 5, \"dirty_ancilla_rows_rejected\": 5, \"instrument_gate_census\": {\"endpoint_OR_CNOT\": 12, \"endpoint_OR_Toffoli_CNOT\": 36, \"endpoint_OR_Toffoli_H\": 12, \"endpoint_OR_Toffoli_T\": 24, \"endpoint_OR_Toffoli_Tdg\": 18, \"endpoint_clean_left_from_left\": 6, \"endpoint_clean_left_from_right\": 6, \"endpoint_clean_right_from_left\": 6, \"endpoint_clean_right_from_right\": 6, \"endpoint_post_left\": 6, \"endpoint_post_right\": 6, \"endpoint_pre_left\": 6, \"endpoint_pre_right\": 6, \"star_onsite_contact\": 105, \"star_seam_FSWAP\": 294}, \"matter_modes\": 162, \"matter_target_failures\": 0, \"maximum_norm_residual\": 1.2212453270876722e-15, \"maximum_phase_residual\": 1.5895974606912448e-15, \"neighbor_endpoint_modes\": [132, 25, 98, 63, 88, 77], \"pointer_truth_failures\": 0, \"scratch_cleanup_failures\": 0, \"selected_star_cells\": 7, \"shared_center_endpoint_modes\": [79, 78, 81, 80, 83, 82], \"support_failures\": 0, \"tested_basis_rows\": 449, \"unique_all_endpoint_modes\": 12, \"unique_shared_center_endpoint_modes\": 6}, \"status\": \"bounded constructive comparison\", \"supplied\": [\"Cycle713/712 physical code, gate alphabet, common coin/contact fixtures\", \"one clean 3x3x3 prepared PatchGraph+four-rail code block\", \"clean seam and candidate ancillas\", \"compile-time choice of unique-quorum or odd-shell candidate word\", \"fixed reversible gate order and route workspace\", \"the landed five-table family and lane-zero grammar for comparison only\"]}\nCYCLE716_SAME_CODE_SIX_PORT_ADMISSION_INCOMPLETE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T155622Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'CYCLE716_SAME_CODE_SIX_PORT_ADMISSION_INCOMPLETE' vs cache 'CYCLE716_SAME_CODE_SIX_PORT_ADMISSION_PASS'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle716_same_code_six_port_admission_2026_07_26.txt against the .txt beside this log"
+  ]
+ }
+}

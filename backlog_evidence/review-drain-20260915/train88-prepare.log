@@ -1,0 +1,60 @@
+[detached HEAD 1deac04107] Preserve independently reviewed source unit PR8174
+ Date: Wed Sep 23 01:09:04 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 44 files changed, 4592 insertions(+)
+ create mode 100644 docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz
+ create mode 100755 docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/original-delta.patch.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--bad_pairs_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--budget_amplified_dropped.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--ceiling_endpoint_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--ceiling_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--certificate_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--deviation_closed_form_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--domination_domain_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--domination_state_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--forks_identity_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--spanning_identity_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--subtree_bound_wrong.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.json
+ create mode 100644 logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.txt
+ create mode 100755 scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py
+FROZEN 1deac04107aef5aba62517fc3e0e249b9c59172e sources 44 inputs 68 notes 1

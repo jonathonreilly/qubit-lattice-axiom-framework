@@ -1,0 +1,20 @@
+{
+  "head": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "owner": "train88",
+  "archive": "train88-pool-validation-recovery.tar.gz",
+  "archive_sha256": "4f4ec0b87d487478d7ce9696cfa6411d12a016f576a8c7191c49e454e55edd49",
+  "paths": {
+    "docs/audit/AUDIT_LEDGER.md": "eafa78d4a910411399885b0cc701934a1a7274e9bc70c054b5d35730824ab18e",
+    "docs/audit/data/audit_ledger.json": "f3409c5e5e8de2b20b8b9caab01c17c0eff3cc8c29f538a6d9ec291b66ce15d9",
+    "docs/audit/data/audit_publication_lane.json": "0ed52541d717dd968137219093414817727b087ec596711dd46e49bd7d9b77fa",
+    "docs/audit/data/audit_queue.json": "fd589d56d0142dcf45e37b8a21421c47dc42a218d28ce2c4d01fc9b80e37c31d",
+    "docs/audit/data/citation_graph.json": "a3a97a5ce172d112ddb14d4cbd9af36b58c446ccc26d771ff6852c964e71e5d2",
+    "docs/audit/data/ledger_cache_manifest.json": "0c3c6b1f63f062a0b08662698d968e69ae1f97c15aa71611d6d096b7234a94a1",
+    "docs/audit/data/publication_gap.json": "2315103e5bfa6ea47a66bae3cb74099678becd6575d78be073a3f89ea08958a6",
+    "docs/audit/data/runner_classification.json": "cd485804b98167cfd69b2a4dae5f1c84c6ff0f79f9953d66f48b75133938387d",
+    "docs/audit/data/static_pipeline_checkpoint.json": "e40c7f0b77de14aceaea923b041a317faee74d80e37dc85c52980f73c8e8eda2",
+    "docs/audit/data/static_pipeline_checkpoint.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/__pycache__/science_fix_loop.cpython-312.pyc": "04186ad7cefa7cf8da3a43c736a542d02c335c7ecfe40fc2bc341b7ff150c35d"
+  },
+  "boundary": "Generated validation only; preserved decoded identities before releasing an exclusively owned landed checkout"
+}

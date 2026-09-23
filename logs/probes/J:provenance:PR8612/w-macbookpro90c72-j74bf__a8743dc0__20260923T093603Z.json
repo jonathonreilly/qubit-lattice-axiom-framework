@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8612",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block77-the-ax",
+ "worker": "w-macbookpro90c72-j74bf",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/pr8612/provenance.py",
+ "seed": 56163,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a8743dc0",
+ "started_utc": "20260923T093603Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "28 numbers in the statements of T1-T4 of PR #8612's note: 16 printed by its runner cache, 7 derived exactly in the note, 5 printed by the cache of the block the note attributes them to (INFO); 0 unsourced"
+ },
+ "review": "All 28 numbers in the statements of T1-T4 of block 77's note are sourced: 16 are printed by its runner cache (B1, C1, D1, D2, e.g. a0 + 2a(3 - 2|n|), 1:3:3:1, sqrt(m^2 + 36a^2), THREE pairs sqrt(m^2 + 4a^2), iff a = 0), 7 follow by exact derivation in the note's premises and proofs (k = pi n, |n| = 0..3, cos(pi n_j) = (-1)^{n_j}, sin(pi n_j) = 0, s_n = (-1)^{|n|} for the odd-n clause, c = 3 - 2|n| at a zero, |3 - 2|n|| = 3 or 1), and 5 attributed to other blocks are printed by those blocks' caches (block 70: det(D_n) is the sense, Theta = sigma_2 x conjugation; blocks 62, 63, 69: the (1/2) in the frame, reach-two and reach-three couplings) - INFO; 0 unsourced, so no HIT, which matches the task's description.",
+ "what": "PR #8612 (physics-loop: admissibility induced-law block 77 - the axiom): for every number in the theorem statements of ADMISSIBILITY_RULE_THE_AXIOMS_OWN_GENERATOR_THE_SCALAR_HOP_SPLITS_THE_EIGHT_SPECIES_INTO_FOUR_LEVELS_OF_ONE_SENSE_AND_A_STAGGERED_TERM_GIVES_THEM_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block77-the-axioms-own-generator-and-a-staggered-rest-term-20260922; git show origin/physics-loop/admissibility-induced-law-block77-the-axioms-own-generator-and-a-staggered-rest-term-20260922:<note>. Create probes/work/pr8612/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8612/<script>.py\"",
+ "stdout_sha256": "592cf918fe97dc0ac22268e18bf827a2ba5a4ef2ebf7120e6ca9e08f691b9ada",
+ "stdout_tail": "1/2){(d_a xi_j) C_a, S_j}' in PASS: C1 T2\nT3 | (H + m\u03b5)\u00b2 = H\u00b2 + m\u00b2 | square of the massive walk | OK cache: '(H + m eps)^2 psi = (H^2 + m^2) psi' in PASS: D1 T3\nT3 | \u03c6(H + m\u03b5)\u03c6 = \u03c6H\u03c6 + m w \u03b5 | clocked form | OK cache: 'phi (H + m eps) phi = phi H phi + m w eps' in PASS: D1 T3\nT4 | k + \u03c0(1,1,1) | mixed wave vectors | OK cache: 'k + pi(1,1,1)' in PASS: D2 T4\nT4 | 2 \u00d7 2 | block size | OK cache: '2x2 blocks' in PASS: D2 T4\nT4 | a\u2080 \u00b1 \u221a((2a\u03a3cos k \u00b1 |s|)\u00b2 + m\u00b2) | block eigenvalues | OK cache: 'a0 +- sqrt((2a sum cos k +- |sin k|)^2 + m^2)' in PASS: D2 T4\nT4 | (n, n + (111)) | pairing | OK cache: '(n, n + (111))' in PASS: D2 T4\nT4 | a\u2080 \u00b1 \u221a(m\u00b2 + 4a\u00b2(3 \u2212 2|n|)\u00b2) | energies at the zeros | OK note (exact derivation): 'At a zero `|s| = 0`, `c = 3 \u2212 2|n|`' in *Proof.* `\u03b5` shifts the \nT4 | \u221a(m\u00b2 + 36a\u00b2) | heavy mass | OK cache: 'ONE pair of mass sqrt(m^2 + 36a^2)' in PASS: D2 T4\nT4 | |n| = 0, 3 and 1, 2 | which pairs | OK note (exact derivation): '`|3 \u2212 2|n||` is 3 or 1' in *Proof.* `\u03b5` shifts the \nT4 | \u221a(m\u00b2 + 4a\u00b2) | light mass | OK cache: 'THREE pairs of mass sqrt(m^2 + 4a^2)' in PASS: D2 T4\nT4 | four masses equal iff a = 0 | degeneracy | OK cache: 'all four masses equal m iff a = 0' in PASS: D2 T4\nstatements read: T1, T2, T3, T4; every listed number occurs in its statement: True\nSUMMARY: 28 numbers in the statements of T1-T4 of PR #8612's note: 16 printed by its runner cache, 7 derived exactly in the note, 5 printed by the cache of the block the note attributes them to (INFO); 0 unsourced\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j74bf",
+  "at_utc": "20260923T093604Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

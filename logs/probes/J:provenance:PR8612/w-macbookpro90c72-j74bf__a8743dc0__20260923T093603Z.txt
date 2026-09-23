@@ -1,0 +1,30 @@
+T1 | eight zeros | count of the walk's zeros | OK cache: 'eight zeros' in PASS: B1 T1
+T1 | k = πn | the zeros | OK note (exact derivation): 'At `k = πn`: `Σcos k_j = 3 − 2|n|`' in - **Levels.** At `k = πn
+T1 | a₀ + 2a(3 − 2|n|) | level energies | OK cache: 'a0 + 2a(3 - 2|n|)' in PASS: B1 T1
+T1 | four levels | number of levels | OK cache: 'four energies' in PASS: B1 T1
+T1 | |n| = 0, 1, 2, 3 | level labels | OK note (exact derivation): '`|n|` the number of components equal to 1' in - **Levels.** At `k = πn
+T1 | 1, 3, 3, 1 | multiplicities | OK cache: '1:3:3:1' in PASS: B1 T1
+T1 | (−1)^{|n|} | sense of a level | INFO block 70 cache: 'det(D_n) is the sense of species n (the determinant of the s' in PASS: B1 T1
+T1 | (−1)^{|n|} | sense of a level (value) | OK note (exact derivation): '`cos(πn_j) = (−1)^{n_j}`' in *Proof.* `cos(πn_j) = (−
+T1 | s(πn) = 0 | branches meet | OK note (exact derivation): '`sin(πn_j) = 0`' in *Proof.* `cos(πn_j) = (−
+T2 | (1 − s_n)a₀ + 2aΣ_j(D_j − s_n)C_j | exchange-map defect (s_n = det D_n) | OK cache: '(1 - det D_n) a0 psi + 2a sum_j (D_j - det D_n) C_j psi' in PASS: C1 T2
+T2 | n ≠ 0 | species broken | OK cache: 'nonzero for the seven species n != 0' in PASS: C1 T2
+T2 | odd n when a₀ ≠ 0 | a0 part: 1 - s_n = 2 for odd |n| | OK note (exact derivation): 'sense `s_n = (−1)^{|n|}`' in - **Levels.** At `k = πn
+T2 | Θ = σ₂K | reversal of motion | INFO block 70 cache: 'Theta = sigma_2 x (complex conjugation)' in PASS: E2 T3
+T2 | Θ commutes with H_a | reversal kept | OK cache: 'Theta still commutes with H_a' in PASS: C1 T2
+T3 | ½Σ{E^j·σ, S_j} | block 62's frame coupling | INFO block 62 cache: '(1/2) sum_j {E^j.sigma, S_j}' in PASS: B2 T1
+T3 | Σσ_a½{C_a[B_a^j], P_j} | reach-three strain term | INFO block 69 cache: 'sigma_a (1/2){C_a[d_a xi_j], P_j}' in PASS: C1 T3
+T3 | Σσ_a½{C_a[B_a^j], S_j} | reach-two strain term | INFO block 63 cache: 'sigma_a (1/2){(d_a xi_j) C_a, S_j}' in PASS: C1 T2
+T3 | (H + mε)² = H² + m² | square of the massive walk | OK cache: '(H + m eps)^2 psi = (H^2 + m^2) psi' in PASS: D1 T3
+T3 | φ(H + mε)φ = φHφ + m w ε | clocked form | OK cache: 'phi (H + m eps) phi = phi H phi + m w eps' in PASS: D1 T3
+T4 | k + π(1,1,1) | mixed wave vectors | OK cache: 'k + pi(1,1,1)' in PASS: D2 T4
+T4 | 2 × 2 | block size | OK cache: '2x2 blocks' in PASS: D2 T4
+T4 | a₀ ± √((2aΣcos k ± |s|)² + m²) | block eigenvalues | OK cache: 'a0 +- sqrt((2a sum cos k +- |sin k|)^2 + m^2)' in PASS: D2 T4
+T4 | (n, n + (111)) | pairing | OK cache: '(n, n + (111))' in PASS: D2 T4
+T4 | a₀ ± √(m² + 4a²(3 − 2|n|)²) | energies at the zeros | OK note (exact derivation): 'At a zero `|s| = 0`, `c = 3 − 2|n|`' in *Proof.* `ε` shifts the 
+T4 | √(m² + 36a²) | heavy mass | OK cache: 'ONE pair of mass sqrt(m^2 + 36a^2)' in PASS: D2 T4
+T4 | |n| = 0, 3 and 1, 2 | which pairs | OK note (exact derivation): '`|3 − 2|n||` is 3 or 1' in *Proof.* `ε` shifts the 
+T4 | √(m² + 4a²) | light mass | OK cache: 'THREE pairs of mass sqrt(m^2 + 4a^2)' in PASS: D2 T4
+T4 | four masses equal iff a = 0 | degeneracy | OK cache: 'all four masses equal m iff a = 0' in PASS: D2 T4
+statements read: T1, T2, T3, T4; every listed number occurs in its statement: True
+SUMMARY: 28 numbers in the statements of T1-T4 of PR #8612's note: 16 printed by its runner cache, 7 derived exactly in the note, 5 printed by the cache of the block the note attributes them to (INFO); 0 unsourced

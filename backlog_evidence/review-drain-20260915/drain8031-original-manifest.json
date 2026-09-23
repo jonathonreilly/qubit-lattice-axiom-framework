@@ -1,0 +1,569 @@
+{
+  "head": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+  "base": "3dee7c038c60dd9aaddbcc186207f165367cc274",
+  "merge_base": "3dee7c038c60dd9aaddbcc186207f165367cc274",
+  "main": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+  "delta_sha256": "1cc527889ea8158eff0ca217d7847299c7370cdac49ce52156b66fd3769784f8",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/ARTIFACT_PLAN.md",
+      "mode": "100644",
+      "blob": "ac0c4b1659e34586399c3069dd5f7ca110aa9fba",
+      "sha256": "d258c0cdf2106fde6f69b10538781c3b40317c6211a1214758475eb388b5d88f",
+      "size": 161,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/ARTIFACT_PLAN.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "mode": "100644",
+      "blob": "675d907e450476a8526be1291d2521f31fdc5c75",
+      "sha256": "0d3a1fd4da7664cc3eb41e3a3644671b163711b4f61a1fb81357859b206a672a",
+      "size": 322,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/CANONICAL_RESULT.json",
+      "mode": "100644",
+      "blob": "8b63aadab3481651edbd5568ad1612c29cf3d194",
+      "sha256": "7fbddf5541c7af209058181abbc180b2386ad87a2fb9cc988481bb42e8f571f6",
+      "size": 4622,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/CANONICAL_RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/CANONICAL_STDOUT.txt",
+      "mode": "100644",
+      "blob": "eb04c8319d7c514a692679e71fd20378f7cfbc51",
+      "sha256": "72f30ffa85eae8a85894c00a107288fc170239584a0cbcb7825d4e721e8b0522",
+      "size": 644,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/CANONICAL_STDOUT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "mode": "100644",
+      "blob": "a554c76864912623abacc200d12a9ac4387c57e7",
+      "sha256": "5d3f3ae591a47f51dc3c16f5a5b106dbcbc1c6056c993020e41c8dea64af3b18",
+      "size": 221,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "mode": "100644",
+      "blob": "c00bdc004bd6b48c8b84a0433a77804faf100ce2",
+      "sha256": "b0fee004171ee2c73da506fc5aa713c36477320dba6fc5956c128aec6d47b276",
+      "size": 1127,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "mode": "100644",
+      "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "size": 43,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_LOCK_RELEASE.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_READINESS.json",
+      "mode": "100644",
+      "blob": "06a7e532e42be2ac35b87bf6d0b59e95409ec976",
+      "sha256": "841529bdb7a8e126e49a2a424f807f09212a2c40a71cd6e4c7c8306ad0241163",
+      "size": 10557,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_READINESS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_STRICT.log",
+      "mode": "100644",
+      "blob": "4d09ac45a84b3a6f7a3ad19751ddd60f3dc47015",
+      "sha256": "985f81c63c0d87169048caf3a9156560020c3edd76ebe7af8537d7a3f97c0c02",
+      "size": 14003,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_STRICT.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "mode": "100644",
+      "blob": "8ff212f9883c0b76e4cbbdf2353943a35da94cb7",
+      "sha256": "e5b7ff27e96bc263b8390778c63e2fe691eab97c4f69f0d640ba9d825360f3c4",
+      "size": 1337,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_SYNC_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_VALIDATION.md",
+      "mode": "100644",
+      "blob": "fc96fb4e7dcfefb7c2883d0f9fdd2474366a8366",
+      "sha256": "bd2bcf4e9ea91c842f7d65083a9044c4bbeaad8fbba816419fed98def34e2cbe",
+      "size": 753,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_MAIN66_VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_VALIDATION.md",
+      "mode": "100644",
+      "blob": "c740813b8f45122af971eb96c39b847486ad4ddc",
+      "sha256": "2c93b38f6eca1f8762fb95d625665a348dd359e35e3ef450442acde3144097fe",
+      "size": 1171,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_VOCAB_LINT.txt",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "size": 81,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FINAL_VOCAB_LINT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FROZEN_PORT_RECEIPT.json",
+      "mode": "100644",
+      "blob": "be986b4cc683cd8dc400c97962c6584c34d31fe9",
+      "sha256": "6f2409568689cecf02ba1cef2d6d820626dba69cd37735088b4be9a0c819f4d4",
+      "size": 311,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FROZEN_PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/FULL_PIPELINE.log",
+      "mode": "100644",
+      "blob": "57ed71a165acdf73ac1fab7a5158dc64b9668f18",
+      "sha256": "cd2adf512eb132e3c7bfcdff626e9c687d44a76b3a88126557abac0429d1c6f8",
+      "size": 21454,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/FULL_PIPELINE.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/GOAL.md",
+      "mode": "100644",
+      "blob": "01bddc889d7b394411e4df31eecba328b2cb72fa",
+      "sha256": "9490dfaa375dc66cd92b820470ed85b1f49a49b50479664eeb254f5d7c9c31a4",
+      "size": 162,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/GOAL.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/HANDOFF.md",
+      "mode": "100644",
+      "blob": "5b8833ba1ab5930ce5bc3e1c3501655447fddbde",
+      "sha256": "82da26f0378534c66d3fb584de9f7ee30a4ab1192e1192f136e223aea09ab099",
+      "size": 1914,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/LITERATURE_BRIDGES.md",
+      "mode": "100644",
+      "blob": "9e1b4c086cf67884d7b36e0905a43aa676628402",
+      "sha256": "5fd202a9eafcbd84b0e84f5d275af71f9ffd02e9e2e93f66e4af1264a04fe00c",
+      "size": 269,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/LIVE_PORT_RESULT.json",
+      "mode": "100644",
+      "blob": "8848b1608a814fb3ec442bf2ec316e5721423c8b",
+      "sha256": "85a79ce52bff0108c0d55fa255413f674c274083e2927ee98e35f0c28031bafb",
+      "size": 4621,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/LIVE_PORT_RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/LOCK_RELEASE.json",
+      "mode": "100644",
+      "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "size": 43,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/LOCK_RELEASE.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "mode": "100644",
+      "blob": "5d6cd35b39ed30b339d3e0988bfb2d00e6790c65",
+      "sha256": "4d5b3f2740b24951fe124b4fe6f3de475dd7e4962d120ce96700431995079f5e",
+      "size": 716,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/NO_GO_LEDGER.md",
+      "mode": "100644",
+      "blob": "8ab1e48fc03d0999f8270e29d7a5ae7f45fc4577",
+      "sha256": "83bdf8f4d8d48df881439ac7c76ebb08243313f8a277de5656bd50c5e9210add",
+      "size": 439,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/NO_GO_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "blob": "e9185a52a1c0d47c14de764ca0659352413b2a03",
+      "sha256": "6c88a45b674394507d1cd4880567804b113d6ecbdb35a022520ea63dbc6d0d59",
+      "size": 261,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/PACK_INDEX.json",
+      "mode": "100644",
+      "blob": "51047aee16dc374934303122d304bbacc34c4073",
+      "sha256": "2ba3c4aa58382ef6b5548bc52d268bc776be12e00d7bfb38a33e38804983ac33",
+      "size": 6440,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/PACK_INDEX.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "mode": "100644",
+      "blob": "45d71149a6c818be3c65ce203d99d0eabc1aff50",
+      "sha256": "55cd0b043c5410ad56398a536ee669d7a366507db13c4ee307785e0b80a847cb",
+      "size": 506,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/PORT_RECEIPT.json",
+      "mode": "100644",
+      "blob": "6451c9edc788354dfcf583c7f80a6a4259cab152",
+      "sha256": "bfd11a413308a63d6317dcb0c565df7d9ccce61a679ab30683d9df4519201668",
+      "size": 524,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/PORT_VOCAB_LINT.txt",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "size": 81,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/PORT_VOCAB_LINT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/PRIMARY_ROOT_REVIEW.md",
+      "mode": "100644",
+      "blob": "a301e66bab2ce53e2e9491865a77c8ce949aca55",
+      "sha256": "baa65333852a635db3c1a0e324f3ee82c43afb836517fa29353f08e4ae888666",
+      "size": 1711,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/PRIMARY_ROOT_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/PROOF_REVIEW.md",
+      "mode": "100644",
+      "blob": "62ee5dd55d5529a733aeb71136c642c917c6bed9",
+      "sha256": "cd7ee9d76bc45bc1e7da39ef66ba60f46a8571352c6efb7c7ccdc1c00241ec01",
+      "size": 264,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/PROOF_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/PR_BACKLOG.md",
+      "mode": "100644",
+      "blob": "0711031323ccea47c33b56a9b82075f35331caea",
+      "sha256": "d33bc7d050691b586fe3fc46983d4c8642f1b57c569c465e595c7651e32f4ed8",
+      "size": 236,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/PR_BACKLOG.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/PR_BODY.md",
+      "mode": "100644",
+      "blob": "a2b5388d8e83dcdaeb6fd7a56134110e8a48a46f",
+      "sha256": "5f9075a303b7c54f521f901dd02b3c5c3dcadf7aa0759ded4502817a9b9e31a1",
+      "size": 2010,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/PR_BODY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/PUBLICATION_RECEIPT.json",
+      "mode": "100644",
+      "blob": "b52e9b1fd8ccf30e352a936b1442590df5eb0120",
+      "sha256": "038d2a1e4266682dac765fbf0506d8c9c23cdd4b9c20949bfde20b905f516abe",
+      "size": 243,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/PUBLICATION_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "mode": "100644",
+      "blob": "341c8a4e75184db8c8ff029df961b274e0d5d3ef",
+      "sha256": "c3bcfb2907858ca18e9673b2ea7b19e91a250a56e96bf9945dbd50fcacc32953",
+      "size": 1154,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/REVIEW_HISTORY.md",
+      "mode": "100644",
+      "blob": "7d1d594b83b1f1892c84914798beca8b5d3e29f8",
+      "sha256": "a0ca671b7a633304448ee2aae57367521dc01fecad58b9fe4deeae64ffc2b917",
+      "size": 323,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "mode": "100644",
+      "blob": "7ded609cf905a4489ac0118b9bf9ef13c227ec9d",
+      "sha256": "38a0d1ebe6456d395db14910dfedad779183812b1c77ddefca7f9faa63041951",
+      "size": 1270,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/ROOT_CANONICAL_PORT_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/ROUTE_PORTFOLIO.md",
+      "mode": "100644",
+      "blob": "440180b8179968969903b9515c9888e8ffc67ff7",
+      "sha256": "be062d93a1be1d5fa152df1625d6d8eb62dcea6a858ce35bf13044825d556f62",
+      "size": 287,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/SCOPED_VALIDATION.md",
+      "mode": "100644",
+      "blob": "65f8723520e6568821347d7a9e425e72d65aad2c",
+      "sha256": "6cb3a5cd0c2f6a374dfc18fed74ce445d4ff241e395c3c84944ad6662ba0e562",
+      "size": 242,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/SCOPED_VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/STAGING_VALIDATION.json",
+      "mode": "100644",
+      "blob": "6c0e4ef4824bb4a67bd9dc4c6672e02e0a5fbf17",
+      "sha256": "f3062bac1cc499ceeea33c177b5390c1fae5da9c08e09a3b67587aaa1894b526",
+      "size": 698,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/STAGING_VALIDATION.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/STATE.yaml",
+      "mode": "100644",
+      "blob": "5b9a321eb00a1935b7260aaae99c1224cc20bcff",
+      "sha256": "2aa9f9c7ee5f5cfb5c33d862477bf0e46e836fcd2c9a81d275eae1e755f0e032",
+      "size": 966,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/STATE.yaml"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/STRICT_LINT.log",
+      "mode": "100644",
+      "blob": "cc3468b640402851ee42463158e43d9afe0972e5",
+      "sha256": "8a6967532c12934e2cb879e3f65bdc2a93f4f829de36f4ded3d9670c034b6933",
+      "size": 13464,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/STRICT_LINT.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/TRACE_GATE.md",
+      "mode": "100644",
+      "blob": "ea03a3fb40f5f41e0f1ffd9d573e0a1619b15f1d",
+      "sha256": "1c9c8696f1f8c5696011f1afdda8060953537d0064dd3a62899693ed1b1d7875",
+      "size": 201,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/CLAIM_ROWS_BEFORE_CLEANUP.json",
+      "mode": "100644",
+      "blob": "fdbfa00cc609e03f919c756292711a07d8de8c35",
+      "sha256": "2ee6c2b75827c2cdb16219b99629ece749851644b345a668cc3c8142ab6d2542",
+      "size": 41323,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/CLAIM_ROWS_BEFORE_CLEANUP.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/FULL_PIPELINE.log",
+      "mode": "100644",
+      "blob": "474171e07659e1da86db7a7cf641961a930a6662",
+      "sha256": "4d8b0e0f66f6f68d711dbd80cae5bfe7cb6a59ef4100edbe0de7df7e588904cd",
+      "size": 21456,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/FULL_PIPELINE.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/LOCK_RELEASE.json",
+      "mode": "100644",
+      "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "size": 43,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/LOCK_RELEASE.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/READINESS_BEFORE_CLEANUP.json",
+      "mode": "100644",
+      "blob": "6f4a278a3a4401993920e7875ee207bd012fd1c6",
+      "sha256": "502b58ec26155ee3aabb9404d156b1097a1fb9499ad474fbdae2c6e4468f6639",
+      "size": 10557,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/READINESS_BEFORE_CLEANUP.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/STRICT_LINT.log",
+      "mode": "100644",
+      "blob": "c0c8e4fee84c9eee4145f66c12e5c87a0affe7ec",
+      "sha256": "28ac754f328b5a5f5e3c82a1781595405786f82d75e90d948272101cc95bf391",
+      "size": 13466,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/STRICT_LINT.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/VALIDATION.md",
+      "mode": "100644",
+      "blob": "482410e7cb6736a094c27ef0b1150e62cdb3d87e",
+      "sha256": "1532f3cf0b84c9853757c2dbd2debc56eab77f7a2f5b36a353307cc97694137f",
+      "size": 527,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/corrected-main-validation-20260907/VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/BEFORE_R0_CHECK_STRENGTHENING_r1_check.py",
+      "mode": "100644",
+      "blob": "2370f10c05d00a148d35b675f71e9e16b0bbb8e8",
+      "sha256": "8187d0cdae3fd0dca9d86c27d3ecaf0924c391076ca639b209c09e6ea5ad3950",
+      "size": 2935,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/BEFORE_R0_CHECK_STRENGTHENING_r1_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/BEFORE_R0_CHECK_STRENGTHENING_r1_result.json",
+      "mode": "100644",
+      "blob": "639ee036ae2ff3794a6f65a92953350bd5cfa64a",
+      "sha256": "4e191295e2ad334a8f88bacf1800422ee608948d86e3d125947c5f2a39e48f25",
+      "size": 3890,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/BEFORE_R0_CHECK_STRENGTHENING_r1_result.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/CANONICAL_RESULT.json",
+      "mode": "100644",
+      "blob": "8b63aadab3481651edbd5568ad1612c29cf3d194",
+      "sha256": "7fbddf5541c7af209058181abbc180b2386ad87a2fb9cc988481bb42e8f571f6",
+      "size": 4622,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/CANONICAL_RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/CANONICAL_STDOUT.txt",
+      "mode": "100644",
+      "blob": "eb04c8319d7c514a692679e71fd20378f7cfbc51",
+      "sha256": "72f30ffa85eae8a85894c00a107288fc170239584a0cbcb7825d4e721e8b0522",
+      "size": 644,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/CANONICAL_STDOUT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/DERIVATION.md",
+      "mode": "100644",
+      "blob": "4cdaa7a97d7b87044c190f6e202140d54595d233",
+      "sha256": "90f8a663d06e9168cca60bd4e98fd5125d98a6f0cd284f45ced696cc5c126cb7",
+      "size": 8084,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/DERIVATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/PORT_RECEIPT.json",
+      "mode": "100644",
+      "blob": "6451c9edc788354dfcf583c7f80a6a4259cab152",
+      "sha256": "bfd11a413308a63d6317dcb0c565df7d9ccce61a679ab30683d9df4519201668",
+      "size": 524,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/PREREGISTRATION.md",
+      "mode": "100644",
+      "blob": "0d677fc258ab3fa3e75adb9fd51d26353d014ff1",
+      "sha256": "c2c82f148de16fdf7b597e272519828b174adad4ffefe256221be62dfd635e93",
+      "size": 1568,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/R0_CHECK_STRENGTHENING.md",
+      "mode": "100644",
+      "blob": "72e346c1e2c6f7972d3c953a0e0ed01e39c17523",
+      "sha256": "dcc72f151fe6357e49de332c7e596013f0f43903479ccb316beff5456fa5edc7",
+      "size": 487,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/R0_CHECK_STRENGTHENING.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/R1_MATRIX_PREREGISTRATION.md",
+      "mode": "100644",
+      "blob": "601703a690c422cb4858f024cb64cf28d68fe158",
+      "sha256": "467bee404b78de54be30f23195c5078061d012c4fbb758e470c6fdd85e282f39",
+      "size": 1113,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/R1_MATRIX_PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/ROOT_REVIEW.md",
+      "mode": "100644",
+      "blob": "acb92227481c85373f4ef294160a5f198ba437b5",
+      "sha256": "1869cb3da5c2c3bef94ccbfc5e0cfb78be11103d1b0b57de984954f7beb04d23",
+      "size": 898,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/ROOT_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/r1_check.py",
+      "mode": "100644",
+      "blob": "a32f15f9ae7968baf6f1e361cd0b00b0b4bd6bd4",
+      "sha256": "28bd81d1230c4a18fe789755a54dbafbf773a93e5cc527226eb74f56cb193cb3",
+      "size": 2892,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/r1_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/r1_result.json",
+      "mode": "100644",
+      "blob": "7df81ff297e34b93bdfb82eef66fbe5cd8489fd4",
+      "sha256": "f33eb6db452ec072e093bf7936935fdc6f14185f92850d1c2d72832be849e8ec",
+      "size": 3890,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/native/r1_result.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/primary_review/REVIEW.md",
+      "mode": "100644",
+      "blob": "c70ed98e9ec4f6f24e1673231a8eef06cdec5746",
+      "sha256": "d5e40b00ed767cbc4b17d0910c6e399cb3e17684f89fff7ea16c4305b4ee560e",
+      "size": 3741,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/primary_review/REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/primary_review/ROOT_REVIEW.md",
+      "mode": "100644",
+      "blob": "a301e66bab2ce53e2e9491865a77c8ce949aca55",
+      "sha256": "baa65333852a635db3c1a0e324f3ee82c43afb836517fa29353f08e4ae888666",
+      "size": 1711,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/primary_review/ROOT_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/root/PREREGISTRATION.md",
+      "mode": "100644",
+      "blob": "7964cd7c84503ec6e70d5f90c8c82e161225f5f9",
+      "sha256": "e3637c278dd0c5792879090647d5010a8b9702b31c01b1ba45f2e728f4b6672f",
+      "size": 1764,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/root/PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/root/ROOT_DERIVATION.md",
+      "mode": "100644",
+      "blob": "f109261c37d3d3e5167d728c4005ec33737e12c0",
+      "sha256": "82081e42d05de246e5ca4e1cb1f53d6236298259e7ba6e1e5cbbedf60e6a323c",
+      "size": 7573,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/root/ROOT_DERIVATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/root/ROOT_NATIVE_REVIEW.md",
+      "mode": "100644",
+      "blob": "756b378a8fd1b1ff6299d0858e1104f7f3131ca4",
+      "sha256": "3e044acfce625fa63bf04ed4b4ddb721470db449ace9b1fd1cf98b92f3b85a2a",
+      "size": 2027,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/evidence/root/ROOT_NATIVE_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/validated_claims_before_generated_cleanup.json",
+      "mode": "100644",
+      "blob": "d40b0af568218c6840ff380112ee5ff5a918bb7f",
+      "sha256": "c8de27eb15f1c66563cb33efb869cd4ec2876459725384657b27a301889bbc41",
+      "size": 43997,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/validated_claims_before_generated_cleanup.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-transporter-bridge-20260907/validated_readiness_before_generated_cleanup.json",
+      "mode": "100644",
+      "blob": "6bacd928893912bf5d09d9f202567067dc15c0ca",
+      "sha256": "b9fa23ca51ea1920c40fa53d77e300cdf622b7cb9312b4f381bfbeb64a330507",
+      "size": 11401,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/.claude/science/physics-loops/finite-transporter-bridge-20260907/validated_readiness_before_generated_cleanup.json"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "mode": "100644",
+      "blob": "d4a0de261b5741ea49bad94ee32544e4baf6a376",
+      "sha256": "b342aef6419572e0ac5fce924cf1c2c4f5f624b604130b8edc5f9b914767d5b5",
+      "size": 11111,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/docs/GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "mode": "100644",
+      "blob": "0b1c5e50c28a12c5a6b64e0a7e07ad21daaf27a9",
+      "sha256": "e237a29ea1549f278df47126267acc43f6d35a4bdff815a4d1df57632ecbfa0c",
+      "size": 633705,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.txt",
+      "mode": "100644",
+      "blob": "dc74c80fef61e680ff0c20d84dffa54578db08ca",
+      "sha256": "4a906da2b8cc05f8dc7b9b22ac3adca6899452e73e76089cae3d27862e6376be",
+      "size": 927,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/logs/runner-cache/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.txt"
+    },
+    {
+      "path": "scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py",
+      "mode": "100644",
+      "blob": "657098d1be634660d4a5f3f4962aa83d6740c8f6",
+      "sha256": "a49d3902e7d8f82d7a81aa103c8f89628b991f8c7112de06695d12d8855ff1e0",
+      "size": 5125,
+      "recovery": "/private/tmp/review-drain-20260915/drain8031-originals/scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py"
+    }
+  ]
+}

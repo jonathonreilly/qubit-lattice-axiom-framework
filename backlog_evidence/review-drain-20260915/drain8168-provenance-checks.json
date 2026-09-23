@@ -1,0 +1,26 @@
+{
+  "runner_sha256": "9c0100b33b9ed876b101113e2b45dfa0d9257864cfacd01ca7c1b2a91de15dd3",
+  "input_fingerprint_sha256": "655a1a093cfa91b429ce44c8c556a5220bc3ee08cc76440e2c2f7a19dd3b3fcf",
+  "cache_runner_matches": true,
+  "cache_inputs_match": true,
+  "inputs": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "original_blob": "7f4e232db702099854c4e1b8897b72b4c3edb991",
+      "original_sha256": "98d101672c35e2c92d934df14f13f13fa8a604af268738c3823ea42f63d31fb3",
+      "main_same": false
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "original_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "original_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "main_same": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "original_blob": "ec3bb81397ea1b136c4040c69832ad1a1bc9ee76",
+      "original_sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "main_same": true
+    }
+  ]
+}

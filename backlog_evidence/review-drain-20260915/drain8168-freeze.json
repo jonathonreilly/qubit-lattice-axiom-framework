@@ -1,0 +1,11 @@
+{
+  "baseRefName": "main",
+  "baseRefOid": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "headRefName": "physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916",
+  "headRefOid": "c3bbf3758eb59b1d6c997389ae35738ce986dcbc",
+  "isDraft": false,
+  "number": 8168,
+  "state": "OPEN",
+  "title": "[physics-loop] admissibility-induced-law block25 \u2014 bounded_theorem \u2014 bounded-support: the three-dimensional formation law has an ordered phase \u2014 stability of the noisy level automaton with an explicit threshold; six invariant laws; block 12's S6 closed",
+  "merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07"
+}

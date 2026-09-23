@@ -1,0 +1,50 @@
+{
+  "pr": 8168,
+  "verdict": "NEEDS_BOUNDED_REPAIR",
+  "core_scope": "T0-T7 conditional positive theorem is salvageable; no unresolved equivalent-strength proof gap found",
+  "findings": [
+    {
+      "id": "8168-F1",
+      "status": "open",
+      "details": "drain8168-report.md"
+    },
+    {
+      "id": "8168-F2",
+      "status": "open",
+      "details": "drain8168-report.md"
+    },
+    {
+      "id": "8168-F3",
+      "status": "open",
+      "details": "drain8168-report.md"
+    },
+    {
+      "id": "8168-F4",
+      "status": "open",
+      "details": "drain8168-report.md"
+    },
+    {
+      "id": "8168-F5",
+      "status": "open",
+      "details": "drain8168-report.md"
+    }
+  ],
+  "original_head": "c3bbf3758eb59b1d6c997389ae35738ce986dcbc",
+  "base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "policy_main": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+  "independent_control": "check8168/independent.json",
+  "full_primary_runs": 0,
+  "audit_runs": 0,
+  "pipeline_runs": 0,
+  "final_confirmation": false,
+  "same_session_reviewer": "/root/review_8168",
+  "evidence_hashes": {
+    "drain8168-manifest.json": "b3d7699a6f5f8f1c49f39147f2b3acf6322222ccd5c36ad5eeab359ba5d74073",
+    "drain8168-original.delta": "c53bf9a1b1d6d8138c24bf09ab60f80c5ddab1b86f20adc35e5b99a566fd6a04",
+    "drain8168-dispositions.json": "67cd989fe9729d7d35ef2f01580c0f0d70a68c8a39b79c113357a4767b399699",
+    "drain8168-report.md": "5241978303d313789f2d077dfa81879b1e5c31b52aa05efd94a12e0cff849fc6",
+    "independent.py": "0135eed4ca14e565dc746ef80e1a70c50742799107cf0b2aaa2a429a26978b1f",
+    "independent.json": "e9dae68035b8653c35dc3d34550d3d446868cbcdbfec8b8f831a27a18b0c9376"
+  }
+}

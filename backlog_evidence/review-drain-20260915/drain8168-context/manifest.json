@@ -1,0 +1,329 @@
+[
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "639c843b0348fe3d108f26435e367083ef83091d3304784592da400189f88a78",
+    "matches": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "blob": "d1b8ba1967bb70baf088402cab727eead107b993"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/CONTROLLED_VOCABULARY.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+    "matches": [
+      {
+        "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+        "blob": "27e61f73c6839c28091947c0056da16b478c0a19"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "matches": [
+      {
+        "path": ".claude/science/physics-loops/eta-affine-repeat-correction-20260909/bodies/5acb4643882438f8dd16baf9694e6fa2d33d1dc6/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+      },
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/current/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+      },
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/inputs/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+      },
+      {
+        "path": ".claude/science/physics-loops/schur-poles-7338-correction-20260909/review-packet/authority/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "matches": [
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/current/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4"
+      },
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/inputs/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4"
+      },
+      {
+        "path": ".claude/science/physics-loops/schur-poles-7338-correction-20260909/review-packet/authority/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/DEFERRED_DECISIONS.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+    "matches": [
+      {
+        "path": "docs/repo/DEFERRED_DECISIONS.md",
+        "blob": "4b8954556f59870f204de0709f6bf2f0a2c67a86"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/PRIMITIVE_REGISTRY_CHECK.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "matches": [
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/current/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "blob": "0075998454899efb1b83e71daea5bc60d3499d49"
+      },
+      {
+        "path": ".claude/science/physics-loops/schur-poles-7338-correction-20260909/review-packet/authority/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "blob": "0075998454899efb1b83e71daea5bc60d3499d49"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "blob": "0075998454899efb1b83e71daea5bc60d3499d49"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "matches": [
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/current/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+      },
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/inputs/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+      },
+      {
+        "path": ".claude/science/physics-loops/schur-poles-7338-correction-20260909/review-packet/authority/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "6e0f04265dffbfe87d6fa5a016a00a454f6b387924c839ef71220a7e2670b0ba",
+    "matches": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "blob": "e4a7195aa03ac4fdf23cd8141883d150e1c48073"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/axiom_premise_nodes.json",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "matches": [
+      {
+        "path": ".claude/science/physics-loops/eta-affine-repeat-correction-20260909/bodies/b93959cca4f7e26c673cdccbe601e50c3cb93daa/axiom_premise_nodes.json",
+        "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+      },
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/current/docs/audit/data/axiom_premise_nodes.json",
+        "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+      },
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/inputs/docs/audit/data/axiom_premise_nodes.json",
+        "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+      },
+      {
+        "path": ".claude/science/physics-loops/schur-poles-7338-correction-20260909/review-packet/authority/docs/audit/data/axiom_premise_nodes.json",
+        "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/README.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+    "matches": [
+      {
+        "path": "docs/audit/README.md",
+        "blob": "ca590b6141c1440a520c1ef2d777aa74bec41e35"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/MINIMAL_AXIOMS_2026-06-29.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "matches": [
+      {
+        "path": ".claude/science/physics-loops/eta-affine-repeat-correction-20260909/bodies/bc23300becfe4e4db57153c0e94cfcdf2338da71/MINIMAL_AXIOMS_2026-06-29.md",
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+      },
+      {
+        "path": ".claude/science/physics-loops/gaussian-7326-correction-20260909/bodies/bc23300becfe4e4db57153c0e94cfcdf2338da71/MINIMAL_AXIOMS_2026-06-29.md",
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+      },
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/current/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+      },
+      {
+        "path": ".claude/science/physics-loops/markov-6347-correction-20260909/review-packet/inputs/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+      },
+      {
+        "path": ".claude/science/physics-loops/regge-refinement-7335-correction-20260909/review-packet/inherited-source/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+      },
+      {
+        "path": ".claude/science/physics-loops/schur-poles-7338-correction-20260909/review-packet/authority/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+      },
+      {
+        "path": ".claude/science/physics-loops/schur-poles-7338-correction-20260909/review-packet/original/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/premise_decision_history.json",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+    "matches": [
+      {
+        "path": "docs/audit/data/premise_decision_history.json",
+        "blob": "9f05a519e90f8ad7eaf0607f6fd00547722944b1"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/SKILL.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "matches": [
+      {
+        "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+        "blob": "b1b498432c82d68c4e59fb5601df5dbfc73ea72e"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/ACTIVE_REVIEW_QUEUE.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+    "matches": [
+      {
+        "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+        "blob": "a4b0638649e7f8402cf5f2827e4bf2329f95aea3"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "matches": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "blob": "ec3bb81397ea1b136c4040c69832ad1a1bc9ee76"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/SKILL_FRESHNESS_CHECK.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "matches": [
+      {
+        "path": ".claude/science/physics-loops/schur-poles-7338-correction-20260909/review-packet/authority/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+        "blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305"
+      },
+      {
+        "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+        "blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "9632e807157b58cbbbac39d9632f2806b49ec221a664c3dda5f941106833bd16",
+    "matches": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "blob": "6db284cde0866cc24cb4686a395de2d598bb9914"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/REVIEW_FEEDBACK_WORKFLOW.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+    "matches": [
+      {
+        "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+        "blob": "eaff7bb45b92f647467c2847b5521f6e45a472ae"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/proof-search-governance.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "matches": [
+      {
+        "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+        "blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/CANONICAL_HARNESS_INDEX.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+    "matches": [
+      {
+        "path": "docs/CANONICAL_HARNESS_INDEX.md",
+        "blob": "6aca1f45f18874a028eedb5501a173fc8dcb37d4"
+      }
+    ]
+  },
+  {
+    "local": "/private/tmp/review-drain-20260915/drain8168-context/admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06.json",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "e97db4f7288e611027e3b401e750d3d525e74a9f8c2b1bb2d73db8d5e08445bd",
+    "matches": [
+      {
+        "path": "docs/audit/data/ledger/ad/admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06.json",
+        "blob": "12fdc1011f8c408f76e9804f90ee57909b7ce623"
+      }
+    ]
+  }
+]

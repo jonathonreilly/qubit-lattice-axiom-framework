@@ -1,0 +1,62 @@
+[
+  {
+    "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+    "blob": "eaff7bb45b92f647467c2847b5521f6e45a472ae"
+  },
+  {
+    "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+    "blob": "a4b0638649e7f8402cf5f2827e4bf2329f95aea3"
+  },
+  {
+    "path": "docs/repo/DEFERRED_DECISIONS.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+    "blob": "4b8954556f59870f204de0709f6bf2f0a2c67a86"
+  },
+  {
+    "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+    "blob": "27e61f73c6839c28091947c0056da16b478c0a19"
+  },
+  {
+    "path": "docs/CANONICAL_HARNESS_INDEX.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+    "blob": "6aca1f45f18874a028eedb5501a173fc8dcb37d4"
+  },
+  {
+    "path": "docs/audit/README.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+    "blob": "ca590b6141c1440a520c1ef2d777aa74bec41e35"
+  },
+  {
+    "path": "docs/audit/data/premise_decision_history.json",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+    "blob": "9f05a519e90f8ad7eaf0607f6fd00547722944b1"
+  },
+  {
+    "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+    "blob": "37221b9407b952edbb5ee72c245d2dd2753c326e"
+  },
+  {
+    "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+    "blob": "75f96a8a315d77d5ebb8344ba798ebee0bd554f5"
+  },
+  {
+    "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f",
+    "blob": "7df7ae1ac353a38adb330d991ba58f26ff01b5b8"
+  }
+]

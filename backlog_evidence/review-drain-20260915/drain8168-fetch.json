@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "c3bbf3758eb59b1d6c997389ae35738ce986dcbc",
+  "fetched_ref": "refs/review-loop/fetched/8168-78051ab7fa394c23a7b7b0bf052c30e0",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916",
+    "headRefOid": "c3bbf3758eb59b1d6c997389ae35738ce986dcbc",
+    "isDraft": false,
+    "number": 8168,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

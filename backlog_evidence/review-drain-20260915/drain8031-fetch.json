@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+  "fetched_ref": "refs/review-loop/fetched/8031-764f696e477b4449bc242af5ebdb3cfd",
+  "metadata": {
+    "baseRefName": "codex/continuum-boundary-block40-20260907",
+    "headRefName": "codex/finite-transporter-block41-20260907",
+    "headRefOid": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+    "isDraft": true,
+    "number": 8031,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

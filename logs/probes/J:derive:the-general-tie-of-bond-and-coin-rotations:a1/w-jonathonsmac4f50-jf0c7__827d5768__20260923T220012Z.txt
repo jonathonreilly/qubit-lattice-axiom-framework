@@ -1,0 +1,17 @@
+PASS 1.1 <k',u'| s_a (1/2){C_a[delta_x], S_j} |k,u> = e^{iq.x} (e^{ik_a} + e^{-ik'_a})(sin k_j + sin k'_j)/4 u'^dag s_a u exactly (4^3 torus, unnormalised plane waves)
+PASS 2.1 the embedding K -> F_p: i^2 = -1, sqrt2^2 = 2, sqrt3^2 = 3 and zeta6 = (1 + i sqrt3)/2 a primitive sixth root, p = 1 mod 24 :: p = 1048609
+PASS 2.2 a tie reads theta at the 12 sites within one step of either end of its bond: 108 unknowns per rotation component b (the system is the same for each b)
+rows: 4^3 9984, 6^3 125184; ranks mod p: 81, 87, together 87
+PASS 2.3 the relabelling ties B = d(M theta), M reading theta on the 7-point star, form a 21-dimensional space of ties inside the 12-site reach
+PASS 2.4 every relabelling tie satisfies all constraints (mod p check of the theorem: T^dagger J = -M^dagger div J = 0 on stationary states, block 63)
+PASS 2.5 on the 6^3 torus the constraint matrix has rank 87 mod p, so over K the ties form a space of dimension at most 108 - 87 = 21: exactly the relabelling ties
+PASS 2.6 the 4^3 torus alone admits 27 (offsets 2 and -2 are one site there): six more per b, torus artefacts removed by the 6^3 torus
+PASS 2.7 the forward-bond tie B_a^j(x) = eps_abj theta_b(x) (issue #8659) violates the constraints on the 6^3 torus :: violated rows [70144, 70144, 70912]
+exact part (a) done in 10.3 s
+PASS 3.1 the quadratic density is independent of the antisymmetric strain (bond rotations) iff (c1, c2, c3) is proportional to (1, 2, -4): block 64's blind ratio; every other member sees bond rotations
+PASS 3.2 off the relabellings the static form has eigenvalues kappa^2 x {2c1 - c2, 2c1 + c2 (twice), 2c1 + c2 + c3 (twice), 2c1 + c2 + 2c3}: static equations solvable for every source iff all four are non-zero
+PASS 3.3 at the blind ratio the form has rank 3: two of the four factors vanish (2c1 - c2 and 2c1 + c2 + c3), so the blind member cannot balance a bond torque
+PASS 3.4 block 64 T4's exponent beta = c4/(4c1 + 2c2 + 4c3) = c4/(2(2c1 + c2 + 2c3)): finite exactly when the last factor is non-zero; beta = 1 is the hyperplane c4 = 2(2c1 + c2 + 2c3), not forced
+total 10.5 s; PASS=12 FAIL=0
+SUMMARY: PARTIAL (a) decided exactly: every local tie of the three site rotations to the nine bond strains that reads theta within one step of its bond's ends and has T^dagger J = 0 on every stationary state of the 6^3 torus is a relabelling tie B = d(M theta) (dimension 21 per component, rank 87 of 108 mod p against 21 exact solutions), which makes the tied rotation pure gauge: the nine-plus-three variables are forced at this reach. (b) the field energies for nine-plus-three: block 64's family with c0 = 0, five numbers (c1..c5); it sees bond rotations iff (c1, c2, c3) is not along (1, 2, -4); its static equations are solvable for every source iff (2c1 - c2)(2c1 + c2)(2c1 + c2 + c3)(2c1 + c2 + 2c3) != 0; beta = c4/(2(2c1 + c2 + 2c3)) is free, beta = 1 a hyperplane
+HIT: (a) decided exactly at reach one step from the bond's ends: the only ties with T^dagger J = 0 on every stationary state of the 6^3 torus are relabellings B = d(M theta) (21 per component), so the nine-plus-three variables are forced; (b) the nine-plus-three field energies: block 64's family off the blind ratio, solvable iff (2c1 - c2)(2c1 + c2)(2c1 + c2 + c3)(2c1 + c2 + 2c3) != 0, with beta = c4/(2(2c1 + c2 + 2c3)) free

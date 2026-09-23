@@ -1,0 +1,34 @@
+AUDIT_INPUT_PATHS:
+  docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 the context-only product-law note carries its claim_id and the rule's product form
+PASS: A4 all three declared inputs match literal SHA-256 pins
+PASS: B3 isolated seed: zero cost and zero amplification; restricted positive-amplification ratio domain is empty
+PASS: B1 T1: on 90 tiny realizations whose component holds one seed, the subset dynamic program equals the brute-force minimum over the full family (forks included) in every case (90)
+PASS: B2 T1: on 51 tiny realizations with several seeds in the component, forks lower the minimum or are needed for any tree in 51 cases (the multi-seed part of the family is not vacuous; the single-seed reduction is used only where the component holds one seed)
+PASS: C4 Z_B has exactly36 distinct marked sites; the original fixture bytes are retained
+PASS: C1 T2: realization Z_A (window 4x4x7, 20 marks, root (3,3,3)): the component of the root has 42 of the 46 ones and one seed; the exact minimum of E - 3(|S|-1) - c|A| over every tree of the family is 0 at c = 1, 3/50 at c = 99/100 and -1/10 at c = 101/100; the optimal tree has E = |A| = 6 and is verified: finite minimum at c=1 is zero
+PASS: C2 T2: realization Z_B (window 5x5x8, root (4,4,4)): the component has 60 of the 69 ones and one seed; the minimum is 0 at c = 1 and 2/25 at c = 99/100; the optimal tree has E = |A| = 9
+PASS: C3 T2: on Z_A the minimum is non-increasing in c along ['0', '1/4', '1/2', '3/4', '99/100', '1', '101/100'] with values ['6', '9/2', '3', '3/2', '3/50', '0', '-1/10']; the concavity proof is written in the note; these are finite rational values, with zero-credit minimum6
+PASS: D1 T3: W1 (the first supplied witness) has a single-seed component; the minimum is 0 at c = 3/4 and positive at 74/100, with an optimal tree E = 6, |A| = 8: the family's constant on W1 is exactly 3/4 against the construction's 8/5
+PASS: D2 T3: W2 carries a verified tree of the family with E = 7, |A| = 11, |S| = 2, one fork: ratio 4/11 against the construction's 5/3
+PASS: D3 T3: W3 carries a verified tree with E = 9, |A| = 17, |S| = 8, seven forks: E - 3(|S|-1) = -12, raw ratio -12/17, not clamped
+PASS: E1 T4: for the supplied polynomial definitions, the rational triples at (453,1,2), (232,1,1), (905,2,4), (677,1,3) are exact super-solutions at (t + epsilon_2/t, epsilon_1/t^3) with epsilon_1 R-bar < 10^-5 (four points only; no parameter interval or physical conclusion)
+PASS: E2 T4: scalar maximum4/729 and integer crossing367/368; d3 values 745/135434, 747/136171; conditional algebra, not a physical route theorem
+FAIL: E3 real p=36799/100 satisfies the exact necessary polynomial inequality; this is not a full recursion certificate
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — exact rational finite-subset costs, tree counts and the completed-square scalar maximum; full DP completeness is a written proof
+per_site: executed — five fixed finite marked windows, component connectivity and predecessor/fork validation; Z_B contains36 distinct marks
+per_mode: checked and not executed — no spectral decomposition is used; cost parameters and finite subsets are not spectral modes
+per_block: executed — unchanged seeded tiny-fixture batch, exact finite minima, four supplied-recursion points and isolated-seed/real-scalar boundaries
+lattice_wide: checked and not executed — no infinite lattice or global construction search; the written conditional implications have deferred formal negative certification
+PASS: G1 the five N5 resolution lines are printed
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=21 FAIL=1

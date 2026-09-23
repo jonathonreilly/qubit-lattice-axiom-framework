@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "kind": "actual-same-session-cold-review-not-execution-or-final-pass",
+  "session": "/root/review_8176",
+  "created_at": "2026-09-23T05:19:58.716513+00:00",
+  "unit_id": "PR8176",
+  "verdict": "COLD SOURCE AND BOUNDED PLAN CLEARED; ADAPTER BINDING CONFIRMATION REQUIRED",
+  "base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+  "tree": "7f5b50cdc4c3b1e475cbaadc3bf861a7052b298d",
+  "reviewed_current_main": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "original_head": "ee73bef6a1f37590abacdd2cf4a13900019a1e64",
+  "source_paths": 35,
+  "original_paths_preserved": 29,
+  "clearance": {
+    "source_cold_read_complete": true,
+    "same_session_original_and_affected_review": true,
+    "all_six_original_findings_resolved_at_narrow_scope": true,
+    "runtime_and_authority_closure_complete": true,
+    "all_source_and_input_disk_index_hashes_verified": true,
+    "current_main_interaction_reviewed": true,
+    "current_main_delta_disjoint_from_bound_closure": true,
+    "resource_plan_accepted": true,
+    "one_baseline_three_targeted_mutations_only": true,
+    "no_json_baseline_rerun": true,
+    "adapter_logic_reviewed": true,
+    "v1_execution_authorized": false,
+    "binding_only_v2_confirmation_required": true
+  },
+  "science_scope": "Finite component and single-seed dynamic program, exact small witness ratios, four supplied-recursion rational point certificates and conditional scalar algebra. No global ratio theorem, optimal threshold, p>=453 ray, physical selection, route closure or formal negative certification adopted. Full original/deferred science preserved; branch retained.",
+  "current_main_interaction": "Read complete landed PR8174 canonical argument at reviewed_current_main. Its extended explanation trees, coupling, count and large-p sufficient rays concern its own family and recurrence, and do not provide PR8176 minimal-family uniform c=1 bound or convert the four PR8176 point certificates into phase/ray conclusions. No load-bearing PR8174 input is added. All paths changed between base and reviewed_current_main are disjoint from the 35 source paths and every runtime/helper/parent/context/tooling binding. Changes from earlier 3dca review base to e46c are also disjoint from this closure. Generated citation topology will require normal integrated validation.",
+  "runtime_closure": {
+    "primary": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+    "primary_sha256": "d124f4480a52ad253510138c06792ee0a6f148acb8e0d27a582fd658f439375a",
+    "declared_inputs": 3,
+    "transitive_helpers": [],
+    "input_fingerprint_sha256": "492585553d25a503803907c90ba2140c60b2867ec24799fbef791bbf18b773e7",
+    "other_reads": "Own source for fences; standard library and sympy. Historical controls/recovery are not executed. No hidden simulation or network input identified."
+  },
+  "execution_contract": {
+    "baseline_attempts": 1,
+    "expected_baseline": "TOTAL: PASS=22 FAIL=0; exit 0",
+    "mutations": [
+      {
+        "name": "isolated_seed_cost_wrong",
+        "failure_tag": "B3"
+      },
+      {
+        "name": "zb_mark_count_wrong",
+        "failure_tag": "C4"
+      },
+      {
+        "name": "real_boundary_rounded",
+        "failure_tag": "E3"
+      }
+    ],
+    "mutation_attempts_each": 1,
+    "expected_each_mutation": "exit 1, exact intended failed tag, TOTAL: PASS=21 FAIL=1",
+    "serial": true,
+    "wall_seconds_each": 60,
+    "sampled_process_tree_rss_bytes": 402653184,
+    "sampling_interval_seconds": 0.02,
+    "limitations": "RSS is sampled, with ps overhead; it is not a hard allocation limit. Seeded rejection batch has no deterministic attempt cap, hence external wall enforcement is mandatory. No separate CPU cap is claimed.",
+    "failure_policy": "Preserve full raw output, logs and watchdog/identity failure receipt; no retry, cap increase or success relabeling.",
+    "simulations": 0,
+    "json_baseline_reruns": 0
+  },
+  "adapter_review": "Complete builder and both v1 adapters read. Actual runner_cache execute_runner, write_cache and execute_and_write_cache reviewed. Primary wrapper preserves raw result before identity comparison/cache handling and calls underlying execute_runner once. External watchdog monitors the process tree; unique open-x attempt markers prevent version-name retries. Mutation adapter directly runs only one selected changed-claim mutation after verified baseline and preserves primary artifacts/source generations. Both adapters require exact report/hash/predicates and index/source identity checks. COLD_CLEARANCE_BINDING=None intentionally blocks v1; current-main equality guard also now blocks it.",
+  "required_adapter_only_followup": {
+    "allowed_change": "Bind this actual report path/hash/verdict/tree/predicates/session. Keep expected frozen base equal to record base and HEAD e46c; separately require origin/main equal to reviewed_current_main 1bb8b7. Preserve ancestry/disjoint closure checks or bind this explicit interaction review. Do not change source, resource limits, once-only markers, execute/cache logic or mutation selection.",
+    "execution_after_followup": "Only after original reviewer confirms exact binding/dual-main adapter delta; this report does not itself authorize running unreviewed v2 adapters."
+  },
+  "findings": [],
+  "executions_this_cold_review": {
+    "primary": 0,
+    "mutations": 0,
+    "simulations": 0
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-review-original.json",
+      "sha256": "88561466f7eafe617ad720cf6654691a4bd363158f8f7a0fe2b14775c3d7222e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-early-review-v1.json",
+      "sha256": "15fa0b9c897716f04ef96791c2b23cb10285dac78d16713873e8a74ba242a77f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-staged-handoff-v1.json",
+      "sha256": "4531b787936b9c77b30287ae530a58688ba375f2ac7282afe080e03c42435415"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-author-cheap-v1.json",
+      "sha256": "70593b52c922398ddde0a31c4abe21120527127190714254fa7127ceb650af02"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-author-unit-draft-v1.json",
+      "sha256": "492b4bb0f4ea42d67ad4118efba8c47aacf06868f55d9ad885659c93d5a777de"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-build-staged-draft-v1.py",
+      "sha256": "04a86e98129137c9e5bf8d3035784c7940b3db66fda2c3ccfcf4faf200b6c563"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-capture-v1.py",
+      "sha256": "62178a73792df5f1442e5bea28b1cfcbe68519f9f3a3055d1f36e702cfca7d7c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-mutation-capture-v1.py",
+      "sha256": "8aaa571f7046edcdeb4f173d254fbeedc08557b31e0746310106d473fbb44a66"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-capture-plan-v1.json",
+      "sha256": "527405c60a28be6b207b8ac3fd58c48023fd0670661f59917063af1694f936a0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8176/cold-identities-v1.json",
+      "sha256": "5919ee343ea15d37e3742eda67369d9b9b78bdb5597391e116e07564b03bd272"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8176/affected-preservation-v1.json",
+      "sha256": "b4afee975cfd20159bbcd153bcff54c3be34eb0090aef2f86d25a75a3e415780"
+    }
+  ]
+}

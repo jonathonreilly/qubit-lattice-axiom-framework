@@ -1,0 +1,44 @@
+[
+  {
+    "mutation": "wrong_charge",
+    "exit_code": 1,
+    "seconds": 0.2710139589617029,
+    "failure": "AssertionError: target4_all243_congruences",
+    "source_sha256": "a5b719cd6f42769b258036095da2d603835ac48ce3f96722f6275f667071268a"
+  },
+  {
+    "mutation": "fake_connectivity",
+    "exit_code": 1,
+    "seconds": 0.21151916700182483,
+    "failure": "AssertionError: target4_all_supports_connect",
+    "source_sha256": "c9541dada8bff86b533997f2bc86022a914feb55cf8c00539342d760ec11cc2a"
+  },
+  {
+    "mutation": "wrong_floor",
+    "exit_code": 1,
+    "seconds": 0.20741720899241045,
+    "failure": "AssertionError: target4_minimum_energy4d",
+    "source_sha256": "c707508dff7699b330cac92dee084e44143eb38f032c9acd10b7790db7629f01"
+  },
+  {
+    "mutation": "allow_ghost",
+    "exit_code": 1,
+    "seconds": 0.21257904102094471,
+    "failure": "AssertionError: ghost_vacuum_restores_actual_distance",
+    "source_sha256": "a2956913a1fb4bebcc1c38f6790bc670fc1b380a0ae7f1a0bed85c73d5b7cedd"
+  },
+  {
+    "mutation": "ritz_false",
+    "exit_code": 1,
+    "seconds": 0.35478541598422453,
+    "failure": "AssertionError: Ritz_toy_subtracted_gap_decreases",
+    "source_sha256": "78b1dd71c53582badf78060fefc59f82040d8fc328c565f07fcfbaa0b2afd441"
+  },
+  {
+    "mutation": "delete_antifund",
+    "exit_code": 1,
+    "seconds": 0.3689298339886591,
+    "failure": "AssertionError: actual_R1_retains_both_path_orientations",
+    "source_sha256": "92e1729661a0c7060156d6dc812a8de866452c67265db15fee94ef6d8931323b"
+  }
+]

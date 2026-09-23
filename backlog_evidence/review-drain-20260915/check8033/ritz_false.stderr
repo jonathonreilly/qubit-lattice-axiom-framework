@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8033/ritz_false.py", line 104, in <module>
+    ck('Ritz_toy_subtracted_gap_decreases',10-2>10-1)
+  File "/private/tmp/review-drain-20260915/check8033/ritz_false.py", line 48, in ck
+    if not b or n in checks:raise AssertionError(n)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Ritz_toy_subtracted_gap_decreases

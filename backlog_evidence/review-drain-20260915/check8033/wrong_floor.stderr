@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8033/wrong_floor.py", line 91, in <module>
+    ck(f'target{target}_minimum_energy4d',min(weights)*4==5*d)
+  File "/private/tmp/review-drain-20260915/check8033/wrong_floor.py", line 48, in ck
+    if not b or n in checks:raise AssertionError(n)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: target4_minimum_energy4d

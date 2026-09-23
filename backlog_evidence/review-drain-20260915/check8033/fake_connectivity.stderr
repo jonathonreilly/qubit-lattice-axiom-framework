@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8033/fake_connectivity.py", line 89, in <module>
+    ck(f'target{target}_all_supports_connect',all(connected(z,edges,target) for z in sol))
+  File "/private/tmp/review-drain-20260915/check8033/fake_connectivity.py", line 48, in ck
+    if not b or n in checks:raise AssertionError(n)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: target4_all_supports_connect

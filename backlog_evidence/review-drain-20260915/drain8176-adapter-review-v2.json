@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "kind": "same-session-narrow-adapter-confirmation",
+  "session": "/root/review_8176",
+  "verdict": "ACCEPTED FOR EXACT BOUNDED CAPTURE",
+  "capture_authorized": true,
+  "base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+  "tree": "7f5b50cdc4c3b1e475cbaadc3bf861a7052b298d",
+  "reviewed_current_main": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-cold-review-v1.json",
+    "sha256": "76112752dfddb90cd9cf6330532d8fe512405da46d713c5a5f7a1b1f99d70778"
+  },
+  "proposal": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-capture-dual-binding-v2.json",
+    "sha256": "5b4615ff3b832f23006b2065e7064d1ceaa2951683f7096ff9815079456d5299"
+  },
+  "adapters": [
+    {
+      "adapter": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-capture-v2.py",
+        "sha256": "f252e03e9b7e27f7663b10b07ecf367d27b47e86ff6d0439d053f5c1f765d53b"
+      },
+      "guard_only_checks": [
+        "actual cold and actual main accepted",
+        "wrong session rejected",
+        "changed limit rejected",
+        "wrong tree rejected",
+        "moved main rejected",
+        "wrong HEAD rejected",
+        "nonancestor rejected",
+        "closure overlap rejected"
+      ]
+    },
+    {
+      "adapter": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-mutation-capture-v2.py",
+        "sha256": "53b34b7f07d7c2ef852d3eba0f47a9692233fb1b4a8d8ea61279f93adf31912c"
+      },
+      "guard_only_checks": [
+        "actual cold and actual main accepted",
+        "wrong session rejected",
+        "changed limit rejected",
+        "wrong tree rejected",
+        "moved main rejected",
+        "wrong HEAD rejected",
+        "nonancestor rejected",
+        "closure overlap rejected"
+      ]
+    }
+  ],
+  "review": "Actual immutable v1-to-v2 diffs read and adapter bytes verified. Changes only bind actual cold report and separate frozen HEAD/base from reviewed origin/main, enforcing ancestry and disjointness of all source/input category paths before and after. Underlying execution, raw preservation, limits, mutation selection and once-only attempt markers unchanged. Guard functions extracted by AST and exercised in isolation; main and scientific runners never invoked.",
+  "limits": {
+    "baseline_attempts": 1,
+    "expected_baseline": "TOTAL: PASS=22 FAIL=0; exit 0",
+    "mutations": [
+      {
+        "name": "isolated_seed_cost_wrong",
+        "failure_tag": "B3"
+      },
+      {
+        "name": "zb_mark_count_wrong",
+        "failure_tag": "C4"
+      },
+      {
+        "name": "real_boundary_rounded",
+        "failure_tag": "E3"
+      }
+    ],
+    "mutation_attempts_each": 1,
+    "expected_each_mutation": "exit 1, exact intended failed tag, TOTAL: PASS=21 FAIL=1",
+    "serial": true,
+    "wall_seconds_each": 60,
+    "sampled_process_tree_rss_bytes": 402653184,
+    "sampling_interval_seconds": 0.02,
+    "limitations": "RSS is sampled, with ps overhead; it is not a hard allocation limit. Seeded rejection batch has no deterministic attempt cap, hence external wall enforcement is mandatory. No separate CPU cap is claimed.",
+    "failure_policy": "Preserve full raw output, logs and watchdog/identity failure receipt; no retry, cap increase or success relabeling.",
+    "simulations": 0,
+    "json_baseline_reruns": 0
+  },
+  "conditions": [
+    "Exactly one baseline and serial three named mutations; no baseline JSON rerun or simulations.",
+    "Do not change staged source or inputs; fail closed if current main moves or closure changes.",
+    "Preserve all outputs/resource/identity failures; no retry or cap increases.",
+    "Final same-session evidence confirmation and normal integration validation remain required."
+  ],
+  "findings": [],
+  "science_executions": 0
+}

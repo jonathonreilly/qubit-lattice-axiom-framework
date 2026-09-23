@@ -1,0 +1,60 @@
+{
+  "status": "PROPOSED; original reviewer exact adapter confirmation required before execution",
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-cold-review-v1.json",
+    "sha256": "76112752dfddb90cd9cf6330532d8fe512405da46d713c5a5f7a1b1f99d70778"
+  },
+  "binding": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-cold-review-v1.json",
+    "sha256": "76112752dfddb90cd9cf6330532d8fe512405da46d713c5a5f7a1b1f99d70778",
+    "same_session_provenance": "/root/review_8176 original reviewer; narrow adapter confirmation required",
+    "verdict_pointer": "/verdict",
+    "verdict_value": "COLD SOURCE AND BOUNDED PLAN CLEARED; ADAPTER BINDING CONFIRMATION REQUIRED",
+    "tree_pointer": "/tree",
+    "tree": "7f5b50cdc4c3b1e475cbaadc3bf861a7052b298d",
+    "frozen_base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+    "reviewed_main": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+    "required_predicates": {
+      "/session": "/root/review_8176",
+      "/base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+      "/reviewed_current_main": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+      "/findings": [],
+      "/clearance/same_session_original_and_affected_review": true,
+      "/clearance/current_main_delta_disjoint_from_bound_closure": true,
+      "/clearance/resource_plan_accepted": true,
+      "/execution_contract/wall_seconds_each": 60,
+      "/execution_contract/sampled_process_tree_rss_bytes": 402653184
+    }
+  },
+  "adapters": [
+    {
+      "old": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-capture-v1.py",
+        "sha256": "62178a73792df5f1442e5bea28b1cfcbe68519f9f3a3055d1f36e702cfca7d7c"
+      },
+      "new": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-capture-v2.py",
+        "sha256": "f252e03e9b7e27f7663b10b07ecf367d27b47e86ff6d0439d053f5c1f765d53b"
+      },
+      "diff": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-capture-dual-binding-v2.diff",
+        "sha256": "71a79c1ea2f8b40d83f04b9391f5860167c036b8f395b0692ed939f9e7ea9078"
+      }
+    },
+    {
+      "old": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-mutation-capture-v1.py",
+        "sha256": "8aaa571f7046edcdeb4f173d254fbeedc08557b31e0746310106d473fbb44a66"
+      },
+      "new": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-mutation-capture-v2.py",
+        "sha256": "53b34b7f07d7c2ef852d3eba0f47a9692233fb1b4a8d8ea61279f93adf31912c"
+      },
+      "diff": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-mutation-capture-dual-binding-v2.diff",
+        "sha256": "bf19714b401ec5d0efd24b115fd9996e685a8f63abd6c3e1ed9cdca381ef47df"
+      }
+    }
+  ],
+  "scope": "Exact cold binding and guarded frozen source/current-main separation before and after only; original raw evidence, limits, once-only markers and scientific invocations unchanged"
+}

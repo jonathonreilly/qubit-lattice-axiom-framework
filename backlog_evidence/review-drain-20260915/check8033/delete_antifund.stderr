@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8033/delete_antifund.py", line 105, in <module>
+    ck('actual_R1_retains_both_path_orientations',[(p,q) for p in range(2) for q in range(2) if p+q<=1 and p>=q]==[(0,0),(0,1),(1,0)])
+  File "/private/tmp/review-drain-20260915/check8033/delete_antifund.py", line 48, in ck
+    if not b or n in checks:raise AssertionError(n)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: actual_R1_retains_both_path_orientations

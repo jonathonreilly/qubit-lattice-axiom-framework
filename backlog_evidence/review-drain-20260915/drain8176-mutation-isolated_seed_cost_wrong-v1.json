@@ -1,0 +1,1077 @@
+{
+  "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+  "mutation": "isolated_seed_cost_wrong",
+  "expected_family": "B",
+  "command": [
+    "/usr/local/bin/python3",
+    "-u",
+    "/private/tmp/review-drain-20260915/review-draft-slot/scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+    "--mutation",
+    "isolated_seed_cost_wrong"
+  ],
+  "exit_code": 1,
+  "error": null,
+  "elapsed_seconds": 2.561695458018221,
+  "whole_tree_watchdog": {
+    "limit_seconds": 60,
+    "limit_bytes": 402653184,
+    "sampling_interval_seconds": 0.02,
+    "samples": 52,
+    "peak_tree_rss_bytes": 103186432,
+    "violations": [],
+    "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+  },
+  "before": {
+    "docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md": {
+      "sha256": "10003c417a65f6d7b14bc50a7d7b191b777d08d11811fac448ebd3d774bf4448",
+      "device": 16777231,
+      "inode": 252579225,
+      "size": 16527,
+      "mtime_ns": 1790139971625768447,
+      "ctime_ns": 1790139971625790780
+    },
+    "docs/work_history/review_loop/pr8176/README.md": {
+      "sha256": "f9b43af78bb68f8f7e25cdb9617acd785c4dd94e88182251cbc19ceb61447e50",
+      "device": 16777231,
+      "inode": 252579223,
+      "size": 1021,
+      "mtime_ns": 1790139971624780107,
+      "ctime_ns": 1790139971624793732
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-01-APPROACH_REGISTRY.md.gz": {
+      "sha256": "86f481250cefdae4750679638bdaed3cf75475828203c0fedc6b1e6ee64f4b58",
+      "device": 16777231,
+      "inode": 252579192,
+      "size": 1181,
+      "mtime_ns": 1790139971116004358,
+      "ctime_ns": 1790139971116052859
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-02-CHECKER_block32_findings.md.gz": {
+      "sha256": "c946e7cd06e28081ac1907ce8ab5eef7cfd7f4131a05506acea44cb674b10d53",
+      "device": 16777231,
+      "inode": 252579193,
+      "size": 1169,
+      "mtime_ns": 1790139971131893878,
+      "ctime_ns": 1790139971131964087
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-03-CLAIM_STATUS_CERTIFICATE_block32.md.gz": {
+      "sha256": "f78522e1ef359dda3344a5b707dc993a89a3f01f7adbae6544ccc9cdd76aa96a",
+      "device": 16777231,
+      "inode": 252579194,
+      "size": 1268,
+      "mtime_ns": 1790139971146580723,
+      "ctime_ns": 1790139971146609348
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-04-GOAL_block32.md.gz": {
+      "sha256": "33d70a97083f7cce3f0788167b38ea3114164d579be8f032cb36a0eedf14cea5",
+      "device": 16777231,
+      "inode": 252579195,
+      "size": 1150,
+      "mtime_ns": 1790139971163064038,
+      "ctime_ns": 1790139971163110788
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-05-HANDOFF.md.gz": {
+      "sha256": "9fd6f8f26f33c78b34170245fe0719cd541d017c0d846e4ea5e28b4c1c103fec",
+      "device": 16777231,
+      "inode": 252579196,
+      "size": 4427,
+      "mtime_ns": 1790139971180051648,
+      "ctime_ns": 1790139971180106731
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-06-NO_GO_LEDGER.md.gz": {
+      "sha256": "98210929885b9b3c1e3e9084db9719d1be61235f0f14e070dd613ecac7dd53d5",
+      "device": 16777231,
+      "inode": 252579197,
+      "size": 1489,
+      "mtime_ns": 1790139971196474212,
+      "ctime_ns": 1790139971196524504
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-07-OPPORTUNITY_QUEUE.md.gz": {
+      "sha256": "23f0254bfe054f78300b66775b17a4d7d6f8bf5dd49bc91229c9cebd7fab610c",
+      "device": 16777231,
+      "inode": 252579198,
+      "size": 4878,
+      "mtime_ns": 1790139971215264709,
+      "ctime_ns": 1790139971215297709
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-08-RESULTS_block32.md.gz": {
+      "sha256": "282895582c87b18334d9685c628b5a302b86db02bed286c66d48c25f207ef73c",
+      "device": 16777231,
+      "inode": 252579199,
+      "size": 2207,
+      "mtime_ns": 1790139971230552558,
+      "ctime_ns": 1790139971230613725
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-09-REVIEW_HISTORY.md.gz": {
+      "sha256": "56491cba2d7516991129261ac8e71460abf790850b472907937a3eecfab4026a",
+      "device": 16777231,
+      "inode": 252579200,
+      "size": 19610,
+      "mtime_ns": 1790139971248508549,
+      "ctime_ns": 1790139971248535007
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-10-STATE.yaml.gz": {
+      "sha256": "8f3f468fa33eeaef1318f7a3ff12a54db71374d5613ce72a09548069656a887e",
+      "device": 16777231,
+      "inode": 252579201,
+      "size": 6265,
+      "mtime_ns": 1790139971268004466,
+      "ctime_ns": 1790139971268048633
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-11-TRACE_GATE.md.gz": {
+      "sha256": "d2f3dd479039035fcdb35a40aa97a640d237f1cbeadc1643e54eb87fbfca8757",
+      "device": 16777231,
+      "inode": 252579202,
+      "size": 1744,
+      "mtime_ns": 1790139971284855992,
+      "ctime_ns": 1790139971284896701
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-12-supervisor_control_block32_climb.out.txt.gz": {
+      "sha256": "185b66426020f1b72df58329f09d4d39d31865962ea1173ba219673721dfe368",
+      "device": 16777231,
+      "inode": 252579203,
+      "size": 1535,
+      "mtime_ns": 1790139971305414833,
+      "ctime_ns": 1790139971305471792
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-13-supervisor_control_block32_climb.py.gz": {
+      "sha256": "9aa45059efc09d71588be00393d372118d8163e7b2e201bf8ac3f10b92d80d70",
+      "device": 16777231,
+      "inode": 252579204,
+      "size": 1074,
+      "mtime_ns": 1790139971318994879,
+      "ctime_ns": 1790139971319023755
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-14-supervisor_control_block32_climb_seeded.out.txt.gz": {
+      "sha256": "c3f3c0991d153bb84925eb8ac7f90f700c6e10266f3dfac5f27cc22f0a9df9b9",
+      "device": 16777231,
+      "inode": 252579205,
+      "size": 91,
+      "mtime_ns": 1790139971335458736,
+      "ctime_ns": 1790139971335494195
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-15-supervisor_control_block32_climb_seeded.py.gz": {
+      "sha256": "3ba57b168beb6396c1b6ad6dd6938f6cb5f262619d11b97c9df964746f3959ff",
+      "device": 16777231,
+      "inode": 252579206,
+      "size": 992,
+      "mtime_ns": 1790139971351790758,
+      "ctime_ns": 1790139971351816842
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-16-supervisor_control_block32_crosscheck.out.txt.gz": {
+      "sha256": "d78c78b8c6ebd11d976723aab23b0b96b2ce0ba740517b04dd498e50a2718277",
+      "device": 16777231,
+      "inode": 252579207,
+      "size": 65,
+      "mtime_ns": 1790139971364508132,
+      "ctime_ns": 1790139971364549049
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-17-supervisor_control_block32_crosscheck.py.gz": {
+      "sha256": "f295d50923bb0bc3232a726b0cbb175d01391be8503c1dd7e2a168b58ec21161",
+      "device": 16777231,
+      "inode": 252579208,
+      "size": 1469,
+      "mtime_ns": 1790139971380678195,
+      "ctime_ns": 1790139971380707612
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-18-supervisor_control_block32_mintree.out.txt.gz": {
+      "sha256": "6d5fedb66307ffd948378d98ab07a8aef8fc67ffebcd2821261d930e4037cd73",
+      "device": 16777231,
+      "inode": 252579209,
+      "size": 553,
+      "mtime_ns": 1790139971400421448,
+      "ctime_ns": 1790139971400483365
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-19-supervisor_control_block32_mintree.py.gz": {
+      "sha256": "cb474db341a635ac1b4916368383f31f996669a41b50f75987ee6477a698f1a7",
+      "device": 16777231,
+      "inode": 252579210,
+      "size": 3538,
+      "mtime_ns": 1790139971416456802,
+      "ctime_ns": 1790139971416481593
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-20-supervisor_control_block32_refuter.out.txt.gz": {
+      "sha256": "2b12c7917ea0b3abff023be333f6532b9a9978826b58fffcdbe8ad8c7af43c73",
+      "device": 16777231,
+      "inode": 252579211,
+      "size": 484,
+      "mtime_ns": 1790139971433042909,
+      "ctime_ns": 1790139971433068534
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-21-supervisor_control_block32_refuter.py.gz": {
+      "sha256": "2f195f66b8a5b3653118d116c6ee447f0c4d761f2e11197e65c666a067cb1515",
+      "device": 16777231,
+      "inode": 252579212,
+      "size": 2550,
+      "mtime_ns": 1790139971448659010,
+      "ctime_ns": 1790139971448687427
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-22-supervisor_control_block32_ssdp.out.txt.gz": {
+      "sha256": "dc44897aa2e741cfde188d190758c707cfa7c6e2607e8f8a9533f3572686cf4a",
+      "device": 16777231,
+      "inode": 252579213,
+      "size": 269,
+      "mtime_ns": 1790139971467804550,
+      "ctime_ns": 1790139971467855426
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-23-supervisor_control_block32_ssdp.py.gz": {
+      "sha256": "caadb37e4d3aa8dacb02830e405de33e83defd6fde35ef34a8124655e78d8a6a",
+      "device": 16777231,
+      "inode": 252579214,
+      "size": 2202,
+      "mtime_ns": 1790139971484310032,
+      "ctime_ns": 1790139971484362824
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-24-supervisor_control_block32_treedp.out.txt.gz": {
+      "sha256": "5c9f24db138e6d02f3a0a542da924bdb402dc60d2e68b33d24aa18020e5e5ea1",
+      "device": 16777231,
+      "inode": 252579215,
+      "size": 208,
+      "mtime_ns": 1790139971500084426,
+      "ctime_ns": 1790139971500120884
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-25-supervisor_control_block32_treedp.py.gz": {
+      "sha256": "37586890b07c3aa95c2e9dbf6dbcd1384bf987b78aa33d5aa0f787838ce24877",
+      "device": 16777231,
+      "inode": 252579216,
+      "size": 2850,
+      "mtime_ns": 1790139971519857512,
+      "ctime_ns": 1790139971519889929
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-26-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md.gz": {
+      "sha256": "bd0b72ba7ee1f68d65e50038872a8023b63be96f8d4ead764e038da31fd5c354",
+      "device": 16777231,
+      "inode": 252579217,
+      "size": 10473,
+      "mtime_ns": 1790139971537945712,
+      "ctime_ns": 1790139971537987587
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-27-citation_graph_manifest.json.gz": {
+      "sha256": "deeff2c6a81db188a9cf88eb107a1d6b23a39597804caf4be8c68c8b45c13318",
+      "device": 16777231,
+      "inode": 252579218,
+      "size": 128215,
+      "mtime_ns": 1790139971580830031,
+      "ctime_ns": 1790139971580862490
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-28-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.txt.gz": {
+      "sha256": "3c74f6c912e43ecb80e9c706dd1f98f5bc78ac2b7abdd7bfd0853d4fda3d1797",
+      "device": 16777231,
+      "inode": 252579219,
+      "size": 2332,
+      "mtime_ns": 1790139971597515014,
+      "ctime_ns": 1790139971597565639
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-29-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py.gz": {
+      "sha256": "f0dfc146c4bd234c30f878516e351da21b0294234122ec5f983dabebcd4477f1",
+      "device": 16777231,
+      "inode": 252579220,
+      "size": 10563,
+      "mtime_ns": 1790139971618962570,
+      "ctime_ns": 1790139971619013570
+    },
+    "docs/work_history/review_loop/pr8176/pr8176-deferred-science.txt": {
+      "sha256": "cc4879c533169cc3e584c1300e38bb8e2498eb11bf7aa5be506f1fb941f57f18",
+      "device": 16777231,
+      "inode": 252579224,
+      "size": 32519,
+      "mtime_ns": 1790139971624882066,
+      "ctime_ns": 1790139971624897275
+    },
+    "docs/work_history/review_loop/pr8176/pr8176-original-delta.patch.gz": {
+      "sha256": "5d2dff5f73c274568e418df41204d1c829611e2d373d548b1e115c3236e30f5c",
+      "device": 16777231,
+      "inode": 252579221,
+      "size": 43893,
+      "mtime_ns": 1790139971624314521,
+      "ctime_ns": 1790139971624337938
+    },
+    "docs/work_history/review_loop/pr8176/pr8176-original-manifest.json": {
+      "sha256": "e7d9e88fd9fd90e45dc065b4fff4185144b2a09e1433c5825559657c93ad8faa",
+      "device": 16777231,
+      "inode": 252579222,
+      "size": 25777,
+      "mtime_ns": 1790139971624697982,
+      "ctime_ns": 1790139971624714607
+    },
+    "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py": {
+      "sha256": "d124f4480a52ad253510138c06792ee0a6f148acb8e0d27a582fd658f439375a",
+      "device": 16777231,
+      "inode": 252579226,
+      "size": 31844,
+      "mtime_ns": 1790139971632494240,
+      "ctime_ns": 1790139971632516074
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 244188469,
+      "size": 45923,
+      "mtime_ns": 1790110816258258156,
+      "ctime_ns": 1790110816258258156
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244190583,
+      "size": 11333,
+      "mtime_ns": 1790110816510588403,
+      "ctime_ns": 1790110816510588403
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244190111,
+      "size": 4770,
+      "mtime_ns": 1790110816450341213,
+      "ctime_ns": 1790110816450341213
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244191366,
+      "size": 5313,
+      "mtime_ns": 1790110816613163842,
+      "ctime_ns": 1790110816613163842
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244191547,
+      "size": 2581,
+      "mtime_ns": 1790110816635067945,
+      "ctime_ns": 1790110816635067945
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244192495,
+      "size": 6427,
+      "mtime_ns": 1790110816767776936,
+      "ctime_ns": 1790110816767776936
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 244192540,
+      "size": 8247,
+      "mtime_ns": 1790110816774010556,
+      "ctime_ns": 1790110816774010556
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252566018,
+      "size": 19430,
+      "mtime_ns": 1790139389378763041,
+      "ctime_ns": 1790139389378763041
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 252566019,
+      "size": 23216,
+      "mtime_ns": 1790139389378906751,
+      "ctime_ns": 1790139389378906751
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 252566020,
+      "size": 3829,
+      "mtime_ns": 1790139389378980542,
+      "ctime_ns": 1790139389378980542
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "device": 16777231,
+      "inode": 252566021,
+      "size": 6707,
+      "mtime_ns": 1790139389379049210,
+      "ctime_ns": 1790139389379049210
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 252566022,
+      "size": 28160,
+      "mtime_ns": 1790139389379157544,
+      "ctime_ns": 1790139389379157544
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "device": 16777231,
+      "inode": 252566023,
+      "size": 6185,
+      "mtime_ns": 1790139389379261919,
+      "ctime_ns": 1790139389379261919
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 252566024,
+      "size": 5188,
+      "mtime_ns": 1790139389379329587,
+      "ctime_ns": 1790139389379329587
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "device": 16777231,
+      "inode": 252566025,
+      "size": 10211,
+      "mtime_ns": 1790139389379402379,
+      "ctime_ns": 1790139389379402379
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 252566026,
+      "size": 5009,
+      "mtime_ns": 1790139389379501629,
+      "ctime_ns": 1790139389379501629
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 252566027,
+      "size": 12918,
+      "mtime_ns": 1790139389379584671,
+      "ctime_ns": 1790139389379584671
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 252566028,
+      "size": 14219,
+      "mtime_ns": 1790139389380748804,
+      "ctime_ns": 1790139389380748804
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252566029,
+      "size": 24983,
+      "mtime_ns": 1790139389380896097,
+      "ctime_ns": 1790139389380896097
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 244192557,
+      "size": 15405,
+      "mtime_ns": 1790110816779616926,
+      "ctime_ns": 1790110816779616926
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244192608,
+      "size": 6416,
+      "mtime_ns": 1790110816790503081,
+      "ctime_ns": 1790110816790503081
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244192624,
+      "size": 6052,
+      "mtime_ns": 1790110816804886900,
+      "ctime_ns": 1790110816804886900
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "device": 16777231,
+      "inode": 252566041,
+      "size": 74385,
+      "mtime_ns": 1790139389399462717,
+      "ctime_ns": 1790139389399462717
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244197792,
+      "size": 12227,
+      "mtime_ns": 1790110817723780436,
+      "ctime_ns": 1790110817723780436
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244197814,
+      "size": 28870,
+      "mtime_ns": 1790110817730902429,
+      "ctime_ns": 1790110817730902429
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "device": 16777231,
+      "inode": 252574710,
+      "size": 39496,
+      "mtime_ns": 1790139390506492376,
+      "ctime_ns": 1790139390506492376
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244247644,
+      "size": 24941,
+      "mtime_ns": 1790110825405943560,
+      "ctime_ns": 1790110825405943560
+    },
+    "logs/runner-cache/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.txt": {
+      "sha256": "3208c599d860f9a6747975deef1098a7d7ec41b9a4a0c06e044dcaa905063c0b",
+      "device": 16777231,
+      "inode": 252642197,
+      "size": 4621,
+      "mtime_ns": 1790140961024422510,
+      "ctime_ns": 1790140961024422510
+    }
+  },
+  "after": {
+    "docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md": {
+      "sha256": "10003c417a65f6d7b14bc50a7d7b191b777d08d11811fac448ebd3d774bf4448",
+      "device": 16777231,
+      "inode": 252579225,
+      "size": 16527,
+      "mtime_ns": 1790139971625768447,
+      "ctime_ns": 1790139971625790780
+    },
+    "docs/work_history/review_loop/pr8176/README.md": {
+      "sha256": "f9b43af78bb68f8f7e25cdb9617acd785c4dd94e88182251cbc19ceb61447e50",
+      "device": 16777231,
+      "inode": 252579223,
+      "size": 1021,
+      "mtime_ns": 1790139971624780107,
+      "ctime_ns": 1790139971624793732
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-01-APPROACH_REGISTRY.md.gz": {
+      "sha256": "86f481250cefdae4750679638bdaed3cf75475828203c0fedc6b1e6ee64f4b58",
+      "device": 16777231,
+      "inode": 252579192,
+      "size": 1181,
+      "mtime_ns": 1790139971116004358,
+      "ctime_ns": 1790139971116052859
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-02-CHECKER_block32_findings.md.gz": {
+      "sha256": "c946e7cd06e28081ac1907ce8ab5eef7cfd7f4131a05506acea44cb674b10d53",
+      "device": 16777231,
+      "inode": 252579193,
+      "size": 1169,
+      "mtime_ns": 1790139971131893878,
+      "ctime_ns": 1790139971131964087
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-03-CLAIM_STATUS_CERTIFICATE_block32.md.gz": {
+      "sha256": "f78522e1ef359dda3344a5b707dc993a89a3f01f7adbae6544ccc9cdd76aa96a",
+      "device": 16777231,
+      "inode": 252579194,
+      "size": 1268,
+      "mtime_ns": 1790139971146580723,
+      "ctime_ns": 1790139971146609348
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-04-GOAL_block32.md.gz": {
+      "sha256": "33d70a97083f7cce3f0788167b38ea3114164d579be8f032cb36a0eedf14cea5",
+      "device": 16777231,
+      "inode": 252579195,
+      "size": 1150,
+      "mtime_ns": 1790139971163064038,
+      "ctime_ns": 1790139971163110788
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-05-HANDOFF.md.gz": {
+      "sha256": "9fd6f8f26f33c78b34170245fe0719cd541d017c0d846e4ea5e28b4c1c103fec",
+      "device": 16777231,
+      "inode": 252579196,
+      "size": 4427,
+      "mtime_ns": 1790139971180051648,
+      "ctime_ns": 1790139971180106731
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-06-NO_GO_LEDGER.md.gz": {
+      "sha256": "98210929885b9b3c1e3e9084db9719d1be61235f0f14e070dd613ecac7dd53d5",
+      "device": 16777231,
+      "inode": 252579197,
+      "size": 1489,
+      "mtime_ns": 1790139971196474212,
+      "ctime_ns": 1790139971196524504
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-07-OPPORTUNITY_QUEUE.md.gz": {
+      "sha256": "23f0254bfe054f78300b66775b17a4d7d6f8bf5dd49bc91229c9cebd7fab610c",
+      "device": 16777231,
+      "inode": 252579198,
+      "size": 4878,
+      "mtime_ns": 1790139971215264709,
+      "ctime_ns": 1790139971215297709
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-08-RESULTS_block32.md.gz": {
+      "sha256": "282895582c87b18334d9685c628b5a302b86db02bed286c66d48c25f207ef73c",
+      "device": 16777231,
+      "inode": 252579199,
+      "size": 2207,
+      "mtime_ns": 1790139971230552558,
+      "ctime_ns": 1790139971230613725
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-09-REVIEW_HISTORY.md.gz": {
+      "sha256": "56491cba2d7516991129261ac8e71460abf790850b472907937a3eecfab4026a",
+      "device": 16777231,
+      "inode": 252579200,
+      "size": 19610,
+      "mtime_ns": 1790139971248508549,
+      "ctime_ns": 1790139971248535007
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-10-STATE.yaml.gz": {
+      "sha256": "8f3f468fa33eeaef1318f7a3ff12a54db71374d5613ce72a09548069656a887e",
+      "device": 16777231,
+      "inode": 252579201,
+      "size": 6265,
+      "mtime_ns": 1790139971268004466,
+      "ctime_ns": 1790139971268048633
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-11-TRACE_GATE.md.gz": {
+      "sha256": "d2f3dd479039035fcdb35a40aa97a640d237f1cbeadc1643e54eb87fbfca8757",
+      "device": 16777231,
+      "inode": 252579202,
+      "size": 1744,
+      "mtime_ns": 1790139971284855992,
+      "ctime_ns": 1790139971284896701
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-12-supervisor_control_block32_climb.out.txt.gz": {
+      "sha256": "185b66426020f1b72df58329f09d4d39d31865962ea1173ba219673721dfe368",
+      "device": 16777231,
+      "inode": 252579203,
+      "size": 1535,
+      "mtime_ns": 1790139971305414833,
+      "ctime_ns": 1790139971305471792
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-13-supervisor_control_block32_climb.py.gz": {
+      "sha256": "9aa45059efc09d71588be00393d372118d8163e7b2e201bf8ac3f10b92d80d70",
+      "device": 16777231,
+      "inode": 252579204,
+      "size": 1074,
+      "mtime_ns": 1790139971318994879,
+      "ctime_ns": 1790139971319023755
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-14-supervisor_control_block32_climb_seeded.out.txt.gz": {
+      "sha256": "c3f3c0991d153bb84925eb8ac7f90f700c6e10266f3dfac5f27cc22f0a9df9b9",
+      "device": 16777231,
+      "inode": 252579205,
+      "size": 91,
+      "mtime_ns": 1790139971335458736,
+      "ctime_ns": 1790139971335494195
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-15-supervisor_control_block32_climb_seeded.py.gz": {
+      "sha256": "3ba57b168beb6396c1b6ad6dd6938f6cb5f262619d11b97c9df964746f3959ff",
+      "device": 16777231,
+      "inode": 252579206,
+      "size": 992,
+      "mtime_ns": 1790139971351790758,
+      "ctime_ns": 1790139971351816842
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-16-supervisor_control_block32_crosscheck.out.txt.gz": {
+      "sha256": "d78c78b8c6ebd11d976723aab23b0b96b2ce0ba740517b04dd498e50a2718277",
+      "device": 16777231,
+      "inode": 252579207,
+      "size": 65,
+      "mtime_ns": 1790139971364508132,
+      "ctime_ns": 1790139971364549049
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-17-supervisor_control_block32_crosscheck.py.gz": {
+      "sha256": "f295d50923bb0bc3232a726b0cbb175d01391be8503c1dd7e2a168b58ec21161",
+      "device": 16777231,
+      "inode": 252579208,
+      "size": 1469,
+      "mtime_ns": 1790139971380678195,
+      "ctime_ns": 1790139971380707612
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-18-supervisor_control_block32_mintree.out.txt.gz": {
+      "sha256": "6d5fedb66307ffd948378d98ab07a8aef8fc67ffebcd2821261d930e4037cd73",
+      "device": 16777231,
+      "inode": 252579209,
+      "size": 553,
+      "mtime_ns": 1790139971400421448,
+      "ctime_ns": 1790139971400483365
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-19-supervisor_control_block32_mintree.py.gz": {
+      "sha256": "cb474db341a635ac1b4916368383f31f996669a41b50f75987ee6477a698f1a7",
+      "device": 16777231,
+      "inode": 252579210,
+      "size": 3538,
+      "mtime_ns": 1790139971416456802,
+      "ctime_ns": 1790139971416481593
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-20-supervisor_control_block32_refuter.out.txt.gz": {
+      "sha256": "2b12c7917ea0b3abff023be333f6532b9a9978826b58fffcdbe8ad8c7af43c73",
+      "device": 16777231,
+      "inode": 252579211,
+      "size": 484,
+      "mtime_ns": 1790139971433042909,
+      "ctime_ns": 1790139971433068534
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-21-supervisor_control_block32_refuter.py.gz": {
+      "sha256": "2f195f66b8a5b3653118d116c6ee447f0c4d761f2e11197e65c666a067cb1515",
+      "device": 16777231,
+      "inode": 252579212,
+      "size": 2550,
+      "mtime_ns": 1790139971448659010,
+      "ctime_ns": 1790139971448687427
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-22-supervisor_control_block32_ssdp.out.txt.gz": {
+      "sha256": "dc44897aa2e741cfde188d190758c707cfa7c6e2607e8f8a9533f3572686cf4a",
+      "device": 16777231,
+      "inode": 252579213,
+      "size": 269,
+      "mtime_ns": 1790139971467804550,
+      "ctime_ns": 1790139971467855426
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-23-supervisor_control_block32_ssdp.py.gz": {
+      "sha256": "caadb37e4d3aa8dacb02830e405de33e83defd6fde35ef34a8124655e78d8a6a",
+      "device": 16777231,
+      "inode": 252579214,
+      "size": 2202,
+      "mtime_ns": 1790139971484310032,
+      "ctime_ns": 1790139971484362824
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-24-supervisor_control_block32_treedp.out.txt.gz": {
+      "sha256": "5c9f24db138e6d02f3a0a542da924bdb402dc60d2e68b33d24aa18020e5e5ea1",
+      "device": 16777231,
+      "inode": 252579215,
+      "size": 208,
+      "mtime_ns": 1790139971500084426,
+      "ctime_ns": 1790139971500120884
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-25-supervisor_control_block32_treedp.py.gz": {
+      "sha256": "37586890b07c3aa95c2e9dbf6dbcd1384bf987b78aa33d5aa0f787838ce24877",
+      "device": 16777231,
+      "inode": 252579216,
+      "size": 2850,
+      "mtime_ns": 1790139971519857512,
+      "ctime_ns": 1790139971519889929
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-26-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md.gz": {
+      "sha256": "bd0b72ba7ee1f68d65e50038872a8023b63be96f8d4ead764e038da31fd5c354",
+      "device": 16777231,
+      "inode": 252579217,
+      "size": 10473,
+      "mtime_ns": 1790139971537945712,
+      "ctime_ns": 1790139971537987587
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-27-citation_graph_manifest.json.gz": {
+      "sha256": "deeff2c6a81db188a9cf88eb107a1d6b23a39597804caf4be8c68c8b45c13318",
+      "device": 16777231,
+      "inode": 252579218,
+      "size": 128215,
+      "mtime_ns": 1790139971580830031,
+      "ctime_ns": 1790139971580862490
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-28-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.txt.gz": {
+      "sha256": "3c74f6c912e43ecb80e9c706dd1f98f5bc78ac2b7abdd7bfd0853d4fda3d1797",
+      "device": 16777231,
+      "inode": 252579219,
+      "size": 2332,
+      "mtime_ns": 1790139971597515014,
+      "ctime_ns": 1790139971597565639
+    },
+    "docs/work_history/review_loop/pr8176/originals/pr8176-29-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py.gz": {
+      "sha256": "f0dfc146c4bd234c30f878516e351da21b0294234122ec5f983dabebcd4477f1",
+      "device": 16777231,
+      "inode": 252579220,
+      "size": 10563,
+      "mtime_ns": 1790139971618962570,
+      "ctime_ns": 1790139971619013570
+    },
+    "docs/work_history/review_loop/pr8176/pr8176-deferred-science.txt": {
+      "sha256": "cc4879c533169cc3e584c1300e38bb8e2498eb11bf7aa5be506f1fb941f57f18",
+      "device": 16777231,
+      "inode": 252579224,
+      "size": 32519,
+      "mtime_ns": 1790139971624882066,
+      "ctime_ns": 1790139971624897275
+    },
+    "docs/work_history/review_loop/pr8176/pr8176-original-delta.patch.gz": {
+      "sha256": "5d2dff5f73c274568e418df41204d1c829611e2d373d548b1e115c3236e30f5c",
+      "device": 16777231,
+      "inode": 252579221,
+      "size": 43893,
+      "mtime_ns": 1790139971624314521,
+      "ctime_ns": 1790139971624337938
+    },
+    "docs/work_history/review_loop/pr8176/pr8176-original-manifest.json": {
+      "sha256": "e7d9e88fd9fd90e45dc065b4fff4185144b2a09e1433c5825559657c93ad8faa",
+      "device": 16777231,
+      "inode": 252579222,
+      "size": 25777,
+      "mtime_ns": 1790139971624697982,
+      "ctime_ns": 1790139971624714607
+    },
+    "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py": {
+      "sha256": "d124f4480a52ad253510138c06792ee0a6f148acb8e0d27a582fd658f439375a",
+      "device": 16777231,
+      "inode": 252579226,
+      "size": 31844,
+      "mtime_ns": 1790139971632494240,
+      "ctime_ns": 1790139971632516074
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 244188469,
+      "size": 45923,
+      "mtime_ns": 1790110816258258156,
+      "ctime_ns": 1790110816258258156
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244190583,
+      "size": 11333,
+      "mtime_ns": 1790110816510588403,
+      "ctime_ns": 1790110816510588403
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244190111,
+      "size": 4770,
+      "mtime_ns": 1790110816450341213,
+      "ctime_ns": 1790110816450341213
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244191366,
+      "size": 5313,
+      "mtime_ns": 1790110816613163842,
+      "ctime_ns": 1790110816613163842
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244191547,
+      "size": 2581,
+      "mtime_ns": 1790110816635067945,
+      "ctime_ns": 1790110816635067945
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244192495,
+      "size": 6427,
+      "mtime_ns": 1790110816767776936,
+      "ctime_ns": 1790110816767776936
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 244192540,
+      "size": 8247,
+      "mtime_ns": 1790110816774010556,
+      "ctime_ns": 1790110816774010556
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252566018,
+      "size": 19430,
+      "mtime_ns": 1790139389378763041,
+      "ctime_ns": 1790139389378763041
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 252566019,
+      "size": 23216,
+      "mtime_ns": 1790139389378906751,
+      "ctime_ns": 1790139389378906751
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 252566020,
+      "size": 3829,
+      "mtime_ns": 1790139389378980542,
+      "ctime_ns": 1790139389378980542
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "device": 16777231,
+      "inode": 252566021,
+      "size": 6707,
+      "mtime_ns": 1790139389379049210,
+      "ctime_ns": 1790139389379049210
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 252566022,
+      "size": 28160,
+      "mtime_ns": 1790139389379157544,
+      "ctime_ns": 1790139389379157544
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "device": 16777231,
+      "inode": 252566023,
+      "size": 6185,
+      "mtime_ns": 1790139389379261919,
+      "ctime_ns": 1790139389379261919
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 252566024,
+      "size": 5188,
+      "mtime_ns": 1790139389379329587,
+      "ctime_ns": 1790139389379329587
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "device": 16777231,
+      "inode": 252566025,
+      "size": 10211,
+      "mtime_ns": 1790139389379402379,
+      "ctime_ns": 1790139389379402379
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 252566026,
+      "size": 5009,
+      "mtime_ns": 1790139389379501629,
+      "ctime_ns": 1790139389379501629
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 252566027,
+      "size": 12918,
+      "mtime_ns": 1790139389379584671,
+      "ctime_ns": 1790139389379584671
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 252566028,
+      "size": 14219,
+      "mtime_ns": 1790139389380748804,
+      "ctime_ns": 1790139389380748804
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252566029,
+      "size": 24983,
+      "mtime_ns": 1790139389380896097,
+      "ctime_ns": 1790139389380896097
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 244192557,
+      "size": 15405,
+      "mtime_ns": 1790110816779616926,
+      "ctime_ns": 1790110816779616926
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244192608,
+      "size": 6416,
+      "mtime_ns": 1790110816790503081,
+      "ctime_ns": 1790110816790503081
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244192624,
+      "size": 6052,
+      "mtime_ns": 1790110816804886900,
+      "ctime_ns": 1790110816804886900
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "device": 16777231,
+      "inode": 252566041,
+      "size": 74385,
+      "mtime_ns": 1790139389399462717,
+      "ctime_ns": 1790139389399462717
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244197792,
+      "size": 12227,
+      "mtime_ns": 1790110817723780436,
+      "ctime_ns": 1790110817723780436
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244197814,
+      "size": 28870,
+      "mtime_ns": 1790110817730902429,
+      "ctime_ns": 1790110817730902429
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "device": 16777231,
+      "inode": 252574710,
+      "size": 39496,
+      "mtime_ns": 1790139390506492376,
+      "ctime_ns": 1790139390506492376
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244247644,
+      "size": 24941,
+      "mtime_ns": 1790110825405943560,
+      "ctime_ns": 1790110825405943560
+    },
+    "logs/runner-cache/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.txt": {
+      "sha256": "3208c599d860f9a6747975deef1098a7d7ec41b9a4a0c06e044dcaa905063c0b",
+      "device": 16777231,
+      "inode": 252642197,
+      "size": 4621,
+      "mtime_ns": 1790140961024422510,
+      "ctime_ns": 1790140961024422510
+    }
+  },
+  "structured_result": {
+    "parsed_stdout": true,
+    "failed_tags": [
+      "B3"
+    ],
+    "expected_failed_tags": [
+      "B3"
+    ],
+    "completed_checks": 22,
+    "passed": 21,
+    "failed": 1
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-mutation-isolated_seed_cost_wrong-v1.stdout.txt",
+      "sha256": "0d6982bbd901b41af8032d5da5d652f6a87ebcee2b98e335ea210b522016b487"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-mutation-isolated_seed_cost_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "primary_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-execution-v2.json",
+    "sha256": "be7c4f0363ea37bb14f6421543b94ca250102bed6c503ef4842ececdcd8c4b7b"
+  },
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-author-unit-draft-v1.json",
+    "sha256": "492b4bb0f4ea42d67ad4118efba8c47aacf06868f55d9ad885659c93d5a777de"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-cold-review-v1.json",
+    "sha256": "76112752dfddb90cd9cf6330532d8fe512405da46d713c5a5f7a1b1f99d70778"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-mutation-capture-v2.py",
+    "sha256": "53b34b7f07d7c2ef852d3eba0f47a9692233fb1b4a8d8ea61279f93adf31912c"
+  },
+  "baseline_runs": 0,
+  "mutation_attempts": 1,
+  "simulation_runs": 0
+}

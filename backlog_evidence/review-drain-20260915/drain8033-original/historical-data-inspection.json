@@ -1,0 +1,451 @@
+[
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/FINAL_MAIN66_READINESS.json",
+    "bytes": 11813,
+    "keys": [
+      "base",
+      "changed_path_count",
+      "checked",
+      "control_failures",
+      "diff_scope",
+      "failures",
+      "schema"
+    ],
+    "sha256": "7b963328759b478219b3f66d02b6805c96db424fb687ef7768ad325ee2cbd545"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/FINAL_PUBLICATION_SNAPSHOT.json",
+    "bytes": 31274,
+    "keys": [
+      "timestamp_utc",
+      "campaign_window",
+      "latest_remote_main",
+      "synchronized_main_pin",
+      "scope",
+      "rows"
+    ],
+    "sha256": "28355d84935da4b08c2f61f6f06220d9998255a271b2bc3a994688012394f590"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/FROZEN_PORT_RECEIPT.json",
+    "bytes": 322,
+    "keys": [
+      "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py"
+    ],
+    "sha256": "012e6ec021546ec8a87164ce856c620eb82f2bcf0a286937753768a913741e2d"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/FINAL_MAIN66_DESCENDANT_PUBLICATION_SNAPSHOT.json",
+    "bytes": 6073,
+    "keys": "list",
+    "sha256": "fb9eec3c6ce7de269c6f28cc6cdb9f80b6619560dec41c4201882083a0abfd6c"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/STAGING_VALIDATION.json",
+    "bytes": 910,
+    "keys": [
+      "mathematical_reviews",
+      "canonical_port_review",
+      "helper",
+      "repo_writes",
+      "full_pipeline_run"
+    ],
+    "sha256": "2ecd1be1b76df9cae2a6b3841e39f230aaeba18bb279384f06e11485a600b989"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/PORT_RECEIPT.json",
+    "bytes": 710,
+    "keys": [
+      "source",
+      "source_sha256",
+      "original_sha256",
+      "TOTAL",
+      "scientific_payload_identical",
+      "ignored_metadata",
+      "timer_correction",
+      "rss_key_normalization",
+      "strict_cli_adverse_returncode",
+      "seconds",
+      "rss_MiB"
+    ],
+    "sha256": "e74d4a49ae5399f8407bb63253375f922e4bff8ad21842892cefb647a11d538e"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+    "bytes": 829,
+    "keys": [
+      "explicit_ephemeral_rehydration",
+      "sources",
+      "row_assignments",
+      "scope"
+    ],
+    "sha256": "df75f344212ce1b589321f14fa0ae3788df4d7537492c7a0a8ff5e5feef32aa3"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+    "bytes": 1352,
+    "keys": [
+      "child_science_sha256",
+      "consumer_sha256",
+      "main_pin",
+      "new_parent_science_head",
+      "old_head",
+      "protected_file_count",
+      "protected_manifest_sha256",
+      "scope"
+    ],
+    "sha256": "208ed5a422d4e13f9710ed88c22aff76c1083dd9e567449052c25869cd67b151"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/validated_readiness_before_generated_cleanup.json",
+    "bytes": 11813,
+    "keys": [
+      "base",
+      "changed_path_count",
+      "checked",
+      "control_failures",
+      "diff_scope",
+      "failures",
+      "schema"
+    ],
+    "sha256": "716bc4b683e8877bee10ba17d7f0fc83f7e0ec7c06c065b0df82cc61833ec4bd"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/LOCK_RELEASE.json",
+    "bytes": 43,
+    "keys": [
+      "lock",
+      "status"
+    ],
+    "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/INHERITED_BOTH_REGISTRY_CHECK.json",
+    "bytes": 270,
+    "keys": [
+      "docs/audit/scripts/build_citation_graph.py",
+      "scripts/audit_packet_script_deps.py"
+    ],
+    "sha256": "e265fd9eca3c063bb0c372c0d87da1c1986759076175f7447486384086450549"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/LIVE_PORT_RESULT.json",
+    "bytes": 88792,
+    "keys": [
+      "N5_scopes",
+      "Ritz_toy",
+      "TOTAL",
+      "checks",
+      "edges",
+      "flows",
+      "ghost_solutions",
+      "ghost_vacuum_solutions",
+      "resource_limits",
+      "rss_MiB",
+      "scope",
+      "seconds",
+      "source_sha256",
+      "vertices"
+    ],
+    "sha256": "6a6bce0e49d6ce2600cd637858282bad3b89ff05c5bffd3ff80a7d0eee906979"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/toe_main66_five_STATUS.json",
+    "bytes": 2993,
+    "keys": [
+      "timestamp_utc",
+      "rows"
+    ],
+    "sha256": "421393f8bba61259afcc6cb4d3a6337ce72651385ae31e5edb5068e2b0c01943"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+    "bytes": 43,
+    "keys": [
+      "lock",
+      "status"
+    ],
+    "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/PACK_INDEX.json",
+    "bytes": 6118,
+    "keys": [
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/ARTIFACT_PLAN.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/CANONICAL_RESULT.json",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/CANONICAL_STDOUT.txt",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/GOAL.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/HANDOFF.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/LITERATURE_BRIDGES.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/OPPORTUNITY_QUEUE.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/PORT_RECEIPT.json",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/PROOF_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/PR_BACKLOG.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/REVIEW_HISTORY.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/ROUTE_PORTFOLIO.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/SCOPED_VALIDATION.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/STAGING_VALIDATION.json",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/STATE.yaml",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/TRACE_GATE.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/CANONICAL_RESULT.json",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/CANONICAL_STDOUT.txt",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/CONTROLS_PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/DERIVATION.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/FAILED_SYNTAX.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/FAILED_SYNTAX_check.py",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/PORT_RECEIPT.json",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/ROOT_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/check.py",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/result.json",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/primary_reviews/NATIVE_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/primary_reviews/ROOT_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/root/PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/root/ROOT_DERIVATION.md",
+      ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/root/ROOT_NATIVE_REVIEW.md",
+      "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py"
+    ],
+    "sha256": "2d7addcea67fbd581cf6e62483903a17d188ab0b25b6eb8ee713e091aaaa2082"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/PR_INVENTORY.json",
+    "bytes": 31274,
+    "keys": [
+      "timestamp_utc",
+      "campaign_window",
+      "latest_remote_main",
+      "synchronized_main_pin",
+      "scope",
+      "rows"
+    ],
+    "sha256": "28355d84935da4b08c2f61f6f06220d9998255a271b2bc3a994688012394f590"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/PUBLICATION_RECEIPT.json",
+    "bytes": 243,
+    "keys": [
+      "headRefOid",
+      "isDraft",
+      "mergeStateStatus",
+      "mergeable",
+      "number",
+      "statusCheckRollup",
+      "url"
+    ],
+    "sha256": "aff08d03508853b76951d4cea3bd890f3b269d3d2d0bdb07686ab9b651e710dd"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/CANONICAL_RESULT.json",
+    "bytes": 88792,
+    "keys": [
+      "N5_scopes",
+      "Ritz_toy",
+      "TOTAL",
+      "checks",
+      "edges",
+      "flows",
+      "ghost_solutions",
+      "ghost_vacuum_solutions",
+      "resource_limits",
+      "rss_MiB",
+      "scope",
+      "seconds",
+      "source_sha256",
+      "vertices"
+    ],
+    "sha256": "114adcd393fdaec6f2352c2380d5ce1adc418ef284344dc2dda2c0871bf3e174"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/FINAL_REPORT_COPY_RECEIPT.json",
+    "bytes": 581,
+    "keys": [
+      "CAMPAIGN_REPORT.md",
+      "NEXT_NATIVE_BRIDGE_CAMPAIGN.md",
+      "NEXT_CAMPAIGN_BRIEF_REVIEW.md",
+      "PR_INVENTORY.md",
+      "PR_INVENTORY.json",
+      "CAMPAIGN_REPORT_REVIEW.md"
+    ],
+    "sha256": "534a669e900c19f3925ce053ed9fc2745552a92f84cce6258e68c966ce649653"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/validated_claims_before_generated_cleanup.json",
+    "bytes": 46174,
+    "keys": [
+      "gauge_wilson_compact_cube_all_coupling_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_finite_qubit_cutoff_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_galerkin_spectral_enclosures_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_nonlinear_saddle_dilated_kernel_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_weak_coupling_window_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_finite_pw_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_finite_transporter_unitarity_pw_defect_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_compact_interacting_hamiltonian_limit_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_physical_transfer_geometry_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_simultaneous_transfer_limit_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_selected_infinite_static_source_sector_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_uniform_weak_continuum_correlation_boundary_bounded_theorem_note_2026-09-07"
+    ],
+    "sha256": "19948b7cf438fc707c1517f2f3d7a39b3c4e9d74669f109ce523b12645409f79"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/FINAL_DELIVERY_METADATA_INVARIANT.json",
+    "bytes": 406,
+    "keys": [
+      "previous_head",
+      "protected_file_count",
+      "protected_manifest_sha256",
+      "scope"
+    ],
+    "sha256": "1dc70317c0c024cfaf95e6540ffede459ccf05a3ddfc4fef8609336449773f36"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/final-main66-full-pipeline/READINESS_BEFORE_CLEANUP.json",
+    "bytes": 11813,
+    "keys": [
+      "base",
+      "changed_path_count",
+      "checked",
+      "control_failures",
+      "diff_scope",
+      "failures",
+      "schema"
+    ],
+    "sha256": "b94a89be79434e642c4330e2f24909f7b64f512012c3c8fc1c3b2c7b5a2f624c"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/final-main66-full-pipeline/MERGEABILITY_SNAPSHOT.json",
+    "bytes": 12446,
+    "keys": "list",
+    "sha256": "5f9f09a5b424a88a4c39270abf58348512d20f11fef29c89d5456b9c9914b87e"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/final-main66-full-pipeline/LOCK_RELEASE.json",
+    "bytes": 43,
+    "keys": [
+      "lock",
+      "status"
+    ],
+    "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/final-main66-full-pipeline/STATUS.json",
+    "bytes": 112,
+    "keys": [
+      "completed",
+      "exit_code",
+      "deadline_utc",
+      "terminated"
+    ],
+    "sha256": "851eb7fba55468637fe6bc58a9139d9e7008a41e4ffe83c30900a5552af1185a"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/final-main66-full-pipeline/CLAIM_ROWS_BEFORE_CLEANUP.json",
+    "bytes": 46174,
+    "keys": [
+      "gauge_wilson_compact_cube_all_coupling_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_finite_qubit_cutoff_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_galerkin_spectral_enclosures_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_nonlinear_saddle_dilated_kernel_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_weak_coupling_window_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_finite_pw_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_finite_transporter_unitarity_pw_defect_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_compact_interacting_hamiltonian_limit_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_physical_transfer_geometry_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_simultaneous_transfer_limit_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_selected_infinite_static_source_sector_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_uniform_weak_continuum_correlation_boundary_bounded_theorem_note_2026-09-07"
+    ],
+    "sha256": "19948b7cf438fc707c1517f2f3d7a39b3c4e9d74669f109ce523b12645409f79"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/result.json",
+    "bytes": 87988,
+    "keys": [
+      "TOTAL",
+      "checks",
+      "vertices",
+      "edges",
+      "flows",
+      "ghost_solutions",
+      "ghost_vacuum_solutions",
+      "Ritz_toy",
+      "scope",
+      "source_sha256",
+      "seconds",
+      "rss_mib"
+    ],
+    "sha256": "37ff13f4bde23384fcbd277c7141d2c7a0ec8aad694f988e61d15835743fa600"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/PORT_RECEIPT.json",
+    "bytes": 710,
+    "keys": [
+      "source",
+      "source_sha256",
+      "original_sha256",
+      "TOTAL",
+      "scientific_payload_identical",
+      "ignored_metadata",
+      "timer_correction",
+      "rss_key_normalization",
+      "strict_cli_adverse_returncode",
+      "seconds",
+      "rss_MiB"
+    ],
+    "sha256": "e74d4a49ae5399f8407bb63253375f922e4bff8ad21842892cefb647a11d538e"
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-static-lower-20260907/evidence/native/CANONICAL_RESULT.json",
+    "bytes": 88792,
+    "keys": [
+      "N5_scopes",
+      "Ritz_toy",
+      "TOTAL",
+      "checks",
+      "edges",
+      "flows",
+      "ghost_solutions",
+      "ghost_vacuum_solutions",
+      "resource_limits",
+      "rss_MiB",
+      "scope",
+      "seconds",
+      "source_sha256",
+      "vertices"
+    ],
+    "sha256": "114adcd393fdaec6f2352c2380d5ce1adc418ef284344dc2dda2c0871bf3e174"
+  },
+  {
+    "path": "docs/audit/data/citation_graph_manifest.json",
+    "bytes": 634010,
+    "keys": [
+      "edge_count",
+      "node_count",
+      "nodes",
+      "schema_version"
+    ],
+    "sha256": "bd5be9c83fc7275c9cd7f26a3642616fa512e0568c0427be1e37f38709ba3f8e"
+  }
+]

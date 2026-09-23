@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8033/wrong_charge.py", line 88, in <module>
+    ck(f'target{target}_all243_congruences',len(sol)==243 and all(all((sum(v*q for v,q in zip(row,z))-b[i])%3==0 for i,row in enumerate(B)) for z in sol))
+  File "/private/tmp/review-drain-20260915/check8033/wrong_charge.py", line 48, in ck
+    if not b or n in checks:raise AssertionError(n)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: target4_all243_congruences

@@ -1,0 +1,47 @@
+--- drain8176-capture-v1.py
++++ drain8176-capture-v2.py
+@@ -19,7 +19,7 @@
+ # Deliberately unbound: a new immutable adapter version must bind the ACTUAL
+ # original-reviewer cold report path/hash, exact verdict pointer/value and tree.
+ # Early source clearance is insufficient. No hypothetical verdict is accepted.
+-COLD_CLEARANCE_BINDING = None
++COLD_CLEARANCE_BINDING = {'path': '/private/tmp/review-drain-20260915/drain8176-cold-review-v1.json', 'sha256': '76112752dfddb90cd9cf6330532d8fe512405da46d713c5a5f7a1b1f99d70778', 'same_session_provenance': '/root/review_8176 original reviewer; narrow adapter confirmation required', 'verdict_pointer': '/verdict', 'verdict_value': 'COLD SOURCE AND BOUNDED PLAN CLEARED; ADAPTER BINDING CONFIRMATION REQUIRED', 'tree_pointer': '/tree', 'tree': '7f5b50cdc4c3b1e475cbaadc3bf861a7052b298d', 'frozen_base': 'e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6', 'reviewed_main': '1bb8b7befb857852acaed93bcf2bb1e47925b013', 'required_predicates': {'/session': '/root/review_8176', '/base': 'e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6', '/reviewed_current_main': '1bb8b7befb857852acaed93bcf2bb1e47925b013', '/findings': [], '/clearance/same_session_original_and_affected_review': True, '/clearance/current_main_delta_disjoint_from_bound_closure': True, '/clearance/resource_plan_accepted': True, '/execution_contract/wall_seconds_each': 60, '/execution_contract/sampled_process_tree_rss_bytes': 402653184}}
+ def confirm_cold(cp,cold,tree):
+     b=COLD_CLEARANCE_BINDING
+     assert isinstance(b,dict), 'BLOCKED: actual same-session cold report schema/clearance has not yet been bound; root must prepare a new immutable adapter version'
+@@ -36,6 +36,17 @@
+     assert read_pointer(b['tree_pointer'])==tree==b['tree']
+     for p,v in b['required_predicates'].items():assert p.startswith('/') and read_pointer(p)==v
+ 
++def confirm_reviewed_main(record, expected_base):
++    # Preserve the already reviewed source tree; separately bind unchanged inputs
++    # and the original reviewer's semantic confirmation of the actual new main.
++    b = COLD_CLEARANCE_BINDING
++    assert git('rev-parse', 'HEAD') == expected_base == record['source']['base'] == b['frozen_base']
++    assert git('rev-parse', 'origin/main') == b['reviewed_main'], 'Reviewed current main moved'
++    assert git('merge-base', b['frozen_base'], b['reviewed_main']) == b['frozen_base']
++    changed = set(git('diff', '--name-only', '--no-renames', b['frozen_base'], b['reviewed_main']).splitlines())
++    bound = {e['path'] for e in record['source']['paths'] + sum(record['inputs'].values(), [])}
++    assert not changed & bound, 'Current-main advance overlaps frozen source or input paths'
++
+ def main():
+     ap=argparse.ArgumentParser()
+     for k in ['record','record-sha256','cheap','cheap-sha256','cold','cold-sha256','expected-base','version']:ap.add_argument('--'+k,required=True)
+@@ -45,7 +56,8 @@
+     assert record['unit_id']=='PR8176' and record['schema_version']==2
+     assert pre['mechanical_status']=='ok' and pre['tree']==record['source']['tree'] and pre['record_sha256']==sha(rp) and not pre['cache_checked']
+     confirm_cold(cp,cold,record['source']['tree'])
+-    assert git('rev-parse','HEAD')==a.expected_base==record['source']['base']==git('rev-parse','origin/main') and git('write-tree')==record['source']['tree']
++    confirm_reviewed_main(record, a.expected_base)
++    assert True and git('write-tree')==record['source']['tree']
+     owner=json.loads((R/'review-draft-slot.json').read_text());assert owner['owner']=='PR8176-author' and Path(owner['path']).resolve()==W.resolve()
+     assert not git('diff','--name-only')
+     planpath=R/'drain8176-capture-plan-v1.json';assert sha(planpath)==PLAN_SHA256;plan=json.loads(planpath.read_text())
+@@ -100,6 +112,7 @@
+         assert r['status']=='ok' and r['exit_code']==0 and re.search(r'^TOTAL: PASS=22 FAIL=0$',r['stdout'],re.M)
+         assert Path(result['cache']).resolve()==cache.resolve() and cache.exists()
+         after=snapshot();assert after==before and git('write-tree')==record['source']['tree'] and not git('diff','--name-only')
++        confirm_reviewed_main(record, a.expected_base)
+     except BaseException as exc:
+         error=dict(error=repr(exc),traceback=traceback.format_exc())
+         if proc is not None:

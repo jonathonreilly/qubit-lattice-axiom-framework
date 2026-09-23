@@ -1,0 +1,55 @@
+{
+  "4": {
+    "count": 243,
+    "histogram": {
+      "1": 1,
+      "5": 16,
+      "8": 58,
+      "7": 47,
+      "9": 63,
+      "3": 2,
+      "6": 15,
+      "4": 2,
+      "10": 31,
+      "12": 1,
+      "11": 7
+    }
+  },
+  "7": {
+    "count": 243,
+    "histogram": {
+      "3": 6,
+      "5": 12,
+      "7": 42,
+      "8": 63,
+      "6": 21,
+      "10": 39,
+      "9": 54,
+      "11": 6
+    }
+  },
+  "original_flow_sets_match": true,
+  "ghost_and_endpoint_boundary": "direct ghost charge vector (1,0,0,0,0,0,0,-1); zero actual flow accepted only if both endpoint equations removed",
+  "ritz_exact": {
+    "V_principal_minors": [
+      2,
+      1,
+      0
+    ],
+    "full_spectrum": [
+      1,
+      3,
+      10
+    ],
+    "compressed_spectrum": [
+      2,
+      10
+    ]
+  },
+  "upper_envelope_identity": true,
+  "resolvent_derivative": "-z/(lambda-z)^2",
+  "shell_minima_1_24": true,
+  "seconds": 1.5147922500036657,
+  "rss_bytes": 64536576,
+  "source_sha256": "555d7c7eff3aa7c177336128dd15beee5be54536a14a0e58d7de346f1ac5bcbd"
+}

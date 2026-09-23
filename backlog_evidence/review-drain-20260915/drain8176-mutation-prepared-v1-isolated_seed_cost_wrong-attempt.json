@@ -1,0 +1,20 @@
+{
+  "status": "RESERVED; exactly one invocation for this name, no automatic retry",
+  "mutation": "isolated_seed_cost_wrong",
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-author-unit-draft-v1.json",
+    "sha256": "492b4bb0f4ea42d67ad4118efba8c47aacf06868f55d9ad885659c93d5a777de"
+  },
+  "primary_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-execution-v2.json",
+    "sha256": "be7c4f0363ea37bb14f6421543b94ca250102bed6c503ef4842ececdcd8c4b7b"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-cold-review-v1.json",
+    "sha256": "76112752dfddb90cd9cf6330532d8fe512405da46d713c5a5f7a1b1f99d70778"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-mutation-capture-v2.py",
+    "sha256": "53b34b7f07d7c2ef852d3eba0f47a9692233fb1b4a8d8ea61279f93adf31912c"
+  }
+}

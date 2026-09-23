@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8033/allow_ghost.py", line 96, in <module>
+    ck('ghost_vacuum_restores_actual_distance',min(sum(q!=0 for q in z) for z in kept)==3)
+  File "/private/tmp/review-drain-20260915/check8033/allow_ghost.py", line 48, in ck
+    if not b or n in checks:raise AssertionError(n)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ghost_vacuum_restores_actual_distance

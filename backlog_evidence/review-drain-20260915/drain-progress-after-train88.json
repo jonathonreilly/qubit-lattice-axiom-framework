@@ -1,0 +1,20 @@
+{
+  "main": "1bb8b7befb857852acaed93bcf2bb1e47925b013",
+  "closed_since_expanded_scope": 52,
+  "open_prs": 108,
+  "draft_prs": 18,
+  "inventory": {
+    "path": "/private/tmp/review-drain-20260915/backlog-inventory-wave33.json",
+    "sha256": "019ec1f71de104c2f3f12a8c4777a236a8d353dce641bf2c97452780ecd59f09"
+  },
+  "active": {
+    "train89": "PR8175 combined gate running",
+    "PR8176": "baseline22/0 plus three intended mutation rejections; final frozen evidence awaiting original reviewer",
+    "PR8032": "cold review after corrected v2 preflight; no science run yet",
+    "PR8033": "narrow author source repair; prospective parent8032 dependency",
+    "PR8177": "independent original review"
+  },
+  "model_comparison": "Sol max 5/6 known findings,53% lower modeled standard credits,59% slower than Astra low6/6 on one matched PR. Default unchanged.",
+  "skill_parity": "all15 local review-loop files match remote current main",
+  "authorization": "Continue all open including drafts to reviewed land or explicit close; no newPRs or audit verdicts"
+}

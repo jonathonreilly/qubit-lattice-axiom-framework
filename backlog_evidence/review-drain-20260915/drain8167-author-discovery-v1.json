@@ -1,0 +1,41 @@
+{
+  "status": "METADATA_ONLY_DISCOVERY_PASS",
+  "rows": [
+    {
+      "note": "docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_cover_source_identities_bounded_theorem_note_2026-09-16",
+      "primary": "scripts/compact_rotor_cover_source_check_2026_09_16.py",
+      "helpers": [],
+      "ordered_inputs": [
+        "docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "input_fingerprint": "07bd1488e7fccdbe984ccfaaac8116cf447826945d3e92a32f62faf524ab935f",
+      "timeout": 120,
+      "repository_dependencies": [],
+      "citations": [
+        "docs/work_history/repo/review_feedback/pr8167-evidence/README.md"
+      ],
+      "runtime_reads": "Own source hash and declared note; internal unchanged fixtures and external library imports only."
+    },
+    {
+      "note": "docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_sine_score_static_curl_limit_bounded_theorem_note_2026-09-16",
+      "primary": "scripts/compact_rotor_sine_score_check_2026_09_16.py",
+      "helpers": [],
+      "ordered_inputs": [
+        "docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "input_fingerprint": "b82b83c56305d29d7d78976f502a9007d96db7e7d84e0335ccd64b674f6ec536",
+      "timeout": 120,
+      "repository_dependencies": [],
+      "citations": [
+        "docs/work_history/repo/review_feedback/pr8167-evidence/README.md"
+      ],
+      "runtime_reads": "Own source hash and declared note; internal unchanged fixtures and external library imports only."
+    }
+  ],
+  "registry_edits_needed": false,
+  "primaries_executed": 0,
+  "author_cold_diff_read": true,
+  "scope_guidance": "Original reviewer /root/review_8167 confirmed proposed two-positive-note boundary by message; this is not prepared-source confirmation."
+}

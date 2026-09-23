@@ -1,0 +1,19 @@
+{
+  "pr": 8163,
+  "original_head": "f950bab266a2c2c82321b49d94e21f0f8d2bcf61",
+  "branch": "physics-loop/toe-temporal-fermion-resummation-20260916",
+  "landing": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/toe-temporal-fermion-resummation-20260916",
+    "headRefOid": "f950bab266a2c2c82321b49d94e21f0f8d2bcf61",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8163,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8163"
+  }
+}

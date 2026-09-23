@@ -1,0 +1,169 @@
+{
+  "primary": [
+    {
+      "source": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.py",
+      "source_sha256": "01ec94ab5b1c5b93d57f8c55d9248f9dcf52903e024ba49c0f630daf31af31f5",
+      "stdout_sha256": "d068738b6ba2cdf602dad89e12443e3ed1c364a58a9cb0c9236f754e0dba31b7",
+      "elapsed_seconds": 0.49037483404390514,
+      "keys": [
+        "circle",
+        "elapsed_seconds",
+        "rotors",
+        "scope",
+        "source_sha256",
+        "status"
+      ]
+    },
+    {
+      "source": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.py",
+      "source_sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa",
+      "stdout_sha256": "b31e00e8da862ba1eb42470219366abdb178a8a14848e1f6571c4be308228357",
+      "elapsed_seconds": 3.607232250040397,
+      "keys": [
+        "elapsed_seconds",
+        "gapped_comparator",
+        "scope",
+        "source_sha256",
+        "status",
+        "torus"
+      ]
+    },
+    {
+      "source": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.py",
+      "source_sha256": "cfee7b31f5e8276145c9000669739abafd3549dbc27572ce3161727e3a594810",
+      "stdout_sha256": "e9460ee9a0f5581880bc35a501acd40d011693bb503676931c228e604153c57e",
+      "elapsed_seconds": 0.2735097089316696,
+      "keys": [
+        "elapsed_seconds",
+        "geometry",
+        "moments",
+        "scaling",
+        "scope",
+        "source_sha256",
+        "status"
+      ]
+    }
+  ],
+  "mutations": [
+    {
+      "kind": "current",
+      "name": "loop_boundary",
+      "source_sha256": "69ddc24146be2c0e86cb31939493e8b5b7f99ca2fd7642eb6241fa9266b40fd5",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py\", line 161, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py\", line 155, in main\n    geometry=geometry_checks(),moments=exact_moment_checks(),scaling=analytic_scaling_checks(),\n             ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py\", line 61, in geometry_checks\n    assert dict(mapped)=={k:int(sign)*v for k,v in expected.items()}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "current",
+      "name": "sign_environment",
+      "source_sha256": "dd68adabd2fd05621b9e6dfa199c89fb7f2191118d58e57abac68ed23d3f987e",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py\", line 161, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py\", line 155, in main\n    geometry=geometry_checks(),moments=exact_moment_checks(),scaling=analytic_scaling_checks(),\n                                       ~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py\", line 112, in exact_moment_checks\n    L=2;sites,masks,coeff,independent=moment_coefficients(L);N=len(sites)\n                                      ~~~~~~~~~~~~~~~~~~~^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py\", line 92, in moment_coefficients\n    assert dict(coefficients)==expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "current",
+      "name": "fourth_moment",
+      "source_sha256": "d24f97a3c873780b0c6719d0afd11ac8bf4eb829385728791d82104db32ebf7c",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py\", line 161, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py\", line 155, in main\n    geometry=geometry_checks(),moments=exact_moment_checks(),scaling=analytic_scaling_checks(),\n                                       ~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py\", line 126, in exact_moment_checks\n    assert normalized==polynomial==formula\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "current",
+      "name": "haar_normalization",
+      "source_sha256": "1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py\", line 139, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py\", line 134, in main\n    circle=circle_checks(),rotors=rotor_checks(),status='PERSONAL_CHECKS_COMPLETED')\n           ~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py\", line 50, in circle_checks\n    assert errors[key]<mp.mpf('1e-60')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "current",
+      "name": "winding_cubic",
+      "source_sha256": "e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py\", line 139, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py\", line 134, in main\n    circle=circle_checks(),rotors=rotor_checks(),status='PERSONAL_CHECKS_COMPLETED')\n           ~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py\", line 50, in circle_checks\n    assert errors[key]<mp.mpf('1e-60')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "current",
+      "name": "ground_ward_factor",
+      "source_sha256": "1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py\", line 139, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py\", line 134, in main\n    circle=circle_checks(),rotors=rotor_checks(),status='PERSONAL_CHECKS_COMPLETED')\n                                  ~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py\", line 122, in rotor_checks\n    a=rotor_model(g,cuts[0],G,h);b=rotor_model(g,cuts[1],G,h)\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py\", line 85, in rotor_model\n    assert abs(inverse_moment-contact)<2e-11\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "current",
+      "name": "source_phase",
+      "source_sha256": "f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py\", line 159, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py\", line 153, in main\n    scope=__doc__,torus=torus_checks(),gapped_comparator=independent_rotors(),\n                        ~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py\", line 87, in torus_checks\n    assert matrix_error<2e-12\n           ^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "current",
+      "name": "thermal_time_measure",
+      "source_sha256": "e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py\", line 159, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py\", line 153, in main\n    scope=__doc__,torus=torus_checks(),gapped_comparator=independent_rotors(),\n                        ~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py\", line 76, in torus_checks\n    if label=='exact':assert abs(var-w)<2e-10\n                             ^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "current",
+      "name": "curl_premise",
+      "source_sha256": "140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py\", line 159, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py\", line 153, in main\n    scope=__doc__,torus=torus_checks(),gapped_comparator=independent_rotors(),\n                        ~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py\", line 76, in torus_checks\n    if label=='exact':assert abs(var-w)<2e-10\n                             ^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "historical",
+      "name": "loop_boundary",
+      "source_sha256": "7727bd0055e4b989ea71e6ebe98c55407b4a230a91503fbf44263dc79e4ec21b",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py\", line 161, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py\", line 155, in main\n    geometry=geometry_checks(),moments=exact_moment_checks(),scaling=analytic_scaling_checks(),\n             ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py\", line 61, in geometry_checks\n    assert dict(mapped)=={k:int(sign)*v for k,v in expected.items()}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "historical",
+      "name": "sign_environment",
+      "source_sha256": "6884ae63b57d286bcbc530b7b4ee0fefa977199264f274b7e5c7f6c7fd5084f7",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py\", line 161, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py\", line 155, in main\n    geometry=geometry_checks(),moments=exact_moment_checks(),scaling=analytic_scaling_checks(),\n                                       ~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py\", line 112, in exact_moment_checks\n    L=2;sites,masks,coeff,independent=moment_coefficients(L);N=len(sites)\n                                      ~~~~~~~~~~~~~~~~~~~^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py\", line 92, in moment_coefficients\n    assert dict(coefficients)==expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "historical",
+      "name": "fourth_moment",
+      "source_sha256": "7d77f158eae4c0d4154f941e739833b71cbf6c196f2c4c116ca6c72091d68e54",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py\", line 161, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py\", line 155, in main\n    geometry=geometry_checks(),moments=exact_moment_checks(),scaling=analytic_scaling_checks(),\n                                       ~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py\", line 126, in exact_moment_checks\n    assert normalized==polynomial==formula\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "historical",
+      "name": "haar_normalization",
+      "source_sha256": "1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py\", line 139, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py\", line 134, in main\n    circle=circle_checks(),rotors=rotor_checks(),status='PERSONAL_CHECKS_COMPLETED')\n           ~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py\", line 50, in circle_checks\n    assert errors[key]<mp.mpf('1e-60')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "historical",
+      "name": "winding_cubic",
+      "source_sha256": "e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py\", line 139, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py\", line 134, in main\n    circle=circle_checks(),rotors=rotor_checks(),status='PERSONAL_CHECKS_COMPLETED')\n           ~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py\", line 50, in circle_checks\n    assert errors[key]<mp.mpf('1e-60')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "historical",
+      "name": "ground_ward_factor",
+      "source_sha256": "1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py\", line 139, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py\", line 134, in main\n    circle=circle_checks(),rotors=rotor_checks(),status='PERSONAL_CHECKS_COMPLETED')\n                                  ~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py\", line 122, in rotor_checks\n    a=rotor_model(g,cuts[0],G,h);b=rotor_model(g,cuts[1],G,h)\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py\", line 85, in rotor_model\n    assert abs(inverse_moment-contact)<2e-11\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "historical",
+      "name": "source_phase",
+      "source_sha256": "f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py\", line 159, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py\", line 153, in main\n    scope=__doc__,torus=torus_checks(),gapped_comparator=independent_rotors(),\n                        ~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py\", line 87, in torus_checks\n    assert matrix_error<2e-12\n           ^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "historical",
+      "name": "thermal_time_measure",
+      "source_sha256": "e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py\", line 159, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py\", line 153, in main\n    scope=__doc__,torus=torus_checks(),gapped_comparator=independent_rotors(),\n                        ~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py\", line 76, in torus_checks\n    if label=='exact':assert abs(var-w)<2e-10\n                             ^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "kind": "historical",
+      "name": "curl_premise",
+      "source_sha256": "140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py\", line 159, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py\", line 153, in main\n    scope=__doc__,torus=torus_checks(),gapped_comparator=independent_rotors(),\n                        ~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py\", line 76, in torus_checks\n    if label=='exact':assert abs(var-w)<2e-10\n                             ^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ],
+  "history": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md",
+      "diff": "--- \n+++ \n@@ -11,11 +11,11 @@\n ## 1. A stationary current law with isolated unit loops\n \n Work on the dual cubic lattice Z^4. Fix0<p<1 and q=p^4. Partition its\n-vertices into side4 blocks\n-\n-    B_r=4r+U+{0,1,2,3}^4, r in Z^4,\n-\n-where U is uniform on{0,1,2,3}^4. The random origin is independent of\n+vertices into side6 blocks\n+\n+    B_r=6r+U+{0,1,2,3,4,5}^4, r in Z^4,\n+\n+where U is uniform on{0,1,2,3,4,5}^4. The random origin is independent of\n all variables below. There are six increasing coordinate planes\n I={i,j}, i<j. For every pair(I,nu), nu=1,...,4, let\n \n@@ -29,11 +29,11 @@\n \n At each block choose independently: an activation A_r with Bernoulli(q)\n law; a plane M_r uniform among the six planes; and two independent\n-perpendicular offsets, each uniform on{1,2}. These marks are independent\n+perpendicular offsets, each uniform on{2,3}. These marks are independent\n across blocks and independent of the sign sequences.\n \n The selected unit plaquette Q_r lies strictly inside its block. Its two\n-varying coordinates run from1 to2, and its two perpendicular coordinates\n+varying coordinates run from2 to3, and its two perpendicular coordinates\n are the chosen offsets. Orient it in the increasing order of M_r. Put\n \n     Q=sum_r A_r sigma^(M_r)_r Q_r,   j=boundary Q.          (2)\n@@ -41,13 +41,13 @@\n This is an integer2-chain and a conserved integer1-current, with\n boundary j=0 and |j_e|<=1. Set B equal to the four vertices of every\n active plaquette. Neighboring blocks' interior vertices are separated\n-by at least3 in some coordinate. Thus every bad-vertex component under\n+by at least5 in some coordinate. Thus every bad-vertex component under\n Chebyshev adjacency is exactly one four-vertex square. Every nonzero\n current component is its four-edge loop. The components cannot join.\n \n The coordinate bounding box of an active square, enlarged by1, stays\n-inside its block's closed coordinate box[0,3]^4. Adjacent such boxes are\n-separated by at least1. Consequently even the enlarged filling regions\n+inside its block's closed coordinate box[1,4]^4. Adjacent blocks' enlarged\n+boxes are separated by at least3; even Chebyshev adjacency is excluded. Consequently even the enlarged filling regions\n have a deterministic, volume-independent diameter bound. The canonical\n coordinate-path filling of a unit planar loop gives the very plaquette\n Q_r in(2); no remote surface is needed.\n@@ -75,7 +75,7 @@\n \n ## 3. Stationarity, ergodicity and lattice symmetries\n \n-First consider translations by4 lattice spacings, which act on block\n+First consider translations by6 lattice spacings, which act on block\n indices. In particular translation by the block vector(1,1,1,1) shifts\n all24 independent Rademacher sequences by one and shifts the iid block\n marks along that vector. This transformation is mixing: for two cylinder\n@@ -86,14 +86,14 @@\n event invariant under the full Z^4 block action has probability0 or1.\n \n The random origin makes the induced fine-lattice law stationary. Any\n-fine-translation invariant event is invariant under4Z^4, so it is\n-constant on each origin fiber; unit translations permute all256 fibers\n+fine-translation invariant event is invariant under6Z^4, so it is\n+constant on each origin fiber; unit translations permute all1296 fibers\n transitively. Its probability is0 or1. The current law, being a measurable\n factor, is stationary and ergodic.\n \n Coordinate permutations permute the six plane labels and the four\n families within each plane. Reflections reverse block indices up to an\n-integer shift and send an interior perpendicular offset1 to2 or vice\n+integer shift and send an interior perpendicular offset2 to3 or vice\n versa. The block origin remains uniform. Reorienting the image plaquette\n into increasing coordinate order introduces a fixed sign for each plane.\n That sign can be absorbed by reversing one complete Rademacher sequence\n@@ -207,7 +207,7 @@\n \n ## 6. Deterministic physical windows and scope\n \n-One may use a fixed fine-lattice cube of side4L rather than a window\n+One may use a fixed fine-lattice cube of side6L rather than a window\n aligned to the random origin. For any origin there is an aligned cube\n of L^4 blocks differing from the physical window by O(L^3) boundary\n blocks. Different blocks' signed filling observables are uncorrelated,\n"
+    }
+  ],
+  "cost": {
+    "paths": 141,
+    "bytes": 399194,
+    "python_files": 25,
+    "primary_reruns": 0
+  }
+}

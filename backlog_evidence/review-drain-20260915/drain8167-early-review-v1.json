@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-09-23T02:24:52.277129+00:00",
+  "reviewer_session": "/root/review_8167",
+  "status": "EARLY_AFFECTED_SOURCE_CLEAR_FOR_PREPARATION_NOT_FINAL_PASS",
+  "snapshot": "/private/tmp/review-drain-20260915/drain8167-prepared-v1-source",
+  "base": "ea403fe1c5e71418c95b976e72a11df375c0a655",
+  "source_freeze_sha256": "4f2760ea5c4f5cc48161f617e427039537403c99d8392d0ec628919f00fcb6ba",
+  "author_prepared_receipt_sha256": "b1249f0427dc7e1a8523775fd6341a2a7bbb7b007b373f19af7296d63b8aa597",
+  "archive_manifest_sha256": "17db2932e98ec4e93418d42e9a378dbb86a6b17bbef1b28f5614476a0ffa56ba",
+  "verified_frozen_files": 68,
+  "verified_original_paths": 116,
+  "original_inventory_complete": true,
+  "full_correction_diff_recomputed_exact": true,
+  "computational_ASTs_verified": [
+    "scripts/compact_rotor_cover_source_check_2026_09_16.py",
+    "scripts/compact_rotor_sine_score_check_2026_09_16.py"
+  ],
+  "findings": [],
+  "scientific_assessment": "Complete positive proofs and displayed equations preserved; scope narrowing matches immutable addendum. Full sparse construction, calculation and original negative implication remain exact readable historical recovery; explicit deferred scientific disposition and branch retention prevent loss or live relabeling. Finite-circle and gapped rotor controls remain scoped calculations; restrictions are proof boundaries, not model-wide exclusions.",
+  "input_assessment": "Each runner reads only its declared canonical note and own source hash; no local helper or current-main science input. Existing mathematical library imports and unchanged finite fixtures remain required. Recomputed static AST/inputs agree with author discovery.",
+  "resource_assessment": "120-second timeout unchanged. Proposed external process-tree cap 768MiB is a plausible source-derived bound for dense dimensions625/729 and numerical library overhead; not measured peak memory and not execution success. Enforce externally, preserve any cap failure, no silent expansion.",
+  "evidence_assessment": "TOTAL=2 counts completed families only and emitter is reached after both families return; no assertion inflation. N5 accurately describes finite resolution and unexecuted all-volume scope. Canonical capture still absent and must bind final frozen notes/sources.",
+  "remaining": [
+    "Guarded move to new main requires unchanged relevant premise and current-main preservation/interactions review.",
+    "Final source/input identities must be frozen after all packaging/vocabulary edits before primary capture.",
+    "Final evidence and original-reviewer confirmation plus combined root gates remain required.",
+    "Preserve original branch while negative certification remains deferred."
+  ],
+  "primary_runs": 0,
+  "gates": 0,
+  "staging": false,
+  "edits": "Only this reviewer-owned control and immutable report artifacts",
+  "final_source_PASS": false
+}

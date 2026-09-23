@@ -1,0 +1,56 @@
+{
+  "status": "UNTRACKED_AUTHOR_PREPARED_V1_ORIGINAL_REVIEWER_AFFECTED_CONFIRMATION_PENDING",
+  "owner": "PR8167-author",
+  "base": "ea403fe1c5e71418c95b976e72a11df375c0a655",
+  "worktree": "/private/tmp/review-drain-20260915/review-meta-slot",
+  "notes": [
+    {
+      "path": "docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "3089086a1191446ccea22cc8368eba4907aa80222d430839043948feaf9ca9a8"
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "4481e4feb62a7abccac574b07e18604922a55044955a6c8ee5212d140132759b"
+    }
+  ],
+  "runners": [
+    {
+      "path": "scripts/compact_rotor_cover_source_check_2026_09_16.py",
+      "sha256": "6e36daccb31eccc081a7e1c992d7402e37a5e4061927e62634f56c73ce5dec2a"
+    },
+    {
+      "path": "scripts/compact_rotor_sine_score_check_2026_09_16.py",
+      "sha256": "e90f995637b707fa435dd087862786def65a76ce58f3e36bf140e93abb645cb4"
+    }
+  ],
+  "original_review_sha256": "ad566688ec255c2a878cbddc3c73a17e451bbd6a5dc677fd4d41391156dd093b",
+  "archive_manifest": {
+    "path": "docs/work_history/repo/review_feedback/pr8167-evidence/archive-manifest.json",
+    "sha256": "17db2932e98ec4e93418d42e9a378dbb86a6b17bbef1b28f5614476a0ffa56ba"
+  },
+  "originals": 116,
+  "claim_dispositions": [
+    {
+      "claim": "Finite compact cover theorem: normalized Haar requires (2pi)^E kernel factor. The exact trace retains initial Q fundamental cell, all intermediate real coordinates and terminal winding w. Every finite graph and g,T>0; no Gauss projection or thermodynamic limit.",
+      "disposition": "Live complete positive theorem; exact finite example/calibration remains scoped"
+    },
+    {
+      "claim": "Normalized background derivatives: Phi_ab=<S_ab>-Cov(S_a,S_b), and cubic contact/covariance/cumulant formula derived by differentiating normalized expectations. Actual periodic-observable insertion differs from nonlinear background partition derivatives. Free-circle derivatives are exact checks, not uniform-coupling/volume exclusions.",
+      "disposition": "Live complete positive theorem; exact finite example/calibration remains scoped"
+    },
+    {
+      "claim": "Finite-thermal compact sine MGF: positive electric Dyson trace coefficients remove phases, then coordinate positivity bounds amplitude increase, yielding exp(t\u00b2 H2/2) for real time-dependent L2 sources. It controls actual sin(B)/g observables, not principal flux or integer fillings.",
+      "disposition": "Live complete positive theorem; exact finite example/calibration remains scoped"
+    },
+    {
+      "claim": "Static exact curl Ward identity and conditional Gaussian theorem: h=Cu, fixed beta and fixed g, bounded H2, vanishing H3 and deterministic L2 contact concentration imply the displayed quantitative MGF bound. Supplied stationary spatially ergodic Gibbs loop state gives weighted contact concentration. No supplied state existence/uniqueness, beta-uniform limit, physical Gauss projection or photon pole.",
+      "disposition": "Live complete positive theorem; exact finite example/calibration remains scoped"
+    },
+    {
+      "claim": "Sparse construction: side6 isolated oriented unit loops, q=p^4, random origin, independent plane/offset marks and 24 product-sign sequences yield stationary ergodic symmetric current law and joint vertex bound. Diffuse filling limit is rho product of four independent normals plus independent Gaussian noise; kappa4=78rho^4 and real MGF lower bound diverges. Complete construction is mathematically supported; formal negative implication certification remains deferred.",
+      "disposition": "Deferred complete scientific construction and negative implication, exact readable archive; original branch must remain"
+    }
+  ],
+  "primaries_executed": 0,
+  "staged": false
+}

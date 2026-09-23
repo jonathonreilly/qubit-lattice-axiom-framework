@@ -1,0 +1,72 @@
+[
+  {
+    "original": "notes/EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES.md",
+    "canonical": "docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "all_indented_formula_lines_exact": true,
+    "full_positive_argument_preserved": true,
+    "exact_prose_transformations": [
+      {
+        "original": "This is the same definition used in PR8166 at frozen head\n02bfa4eb99fce8329619a476775299567f735d4b. Its unreviewed derivative estimates\nare not imported here. In particular0<=F_T<=2PT.",
+        "canonical": "The bridge definition is complete here and imports no sibling derivative\nestimate. In particular0<=F_T<=2PT.",
+        "reason": "Narrow live scope or remove non-load-bearing sibling/counterexample implication; complete original remains exact recovery."
+      },
+      {
+        "original": "Dropping the integer term changes the observable. Small density or bounded\ncomponents of m_n do not alone control its diffuse-source contribution;\nthe separate sparse-loop counterexample tests exactly that kind of gap.",
+        "canonical": "Dropping the integer term changes the observable. Equation (5) retains\nthat term in the exact definition.",
+        "reason": "Narrow live scope or remove non-load-bearing sibling/counterexample implication; complete original remains exact recovery."
+      },
+      {
+        "original": "The sparse\nfilling geometry in PR8166 supplies possible supports. It does not\nsupply the normalized activities or their source derivatives.",
+        "canonical": "The normalized activities and their source derivatives remain targets\nfor a further constructive comparison.",
+        "reason": "Narrow live scope or remove non-load-bearing sibling/counterexample implication; complete original remains exact recovery."
+      },
+      {
+        "original": "The local Hamiltonian path specification is additional information that\nthe sparse-loop counterexample lacks. A proof exploiting it could still\nexclude the counterexample's long-range sign structure. No axiom update\nis inferred from the present missing estimate.",
+        "canonical": "The local Hamiltonian path specification is part of the supplied compact\nlaw. Further comparison work can use that structure. No axiom update is\ninferred from the present open target.",
+        "reason": "Narrow live scope or remove non-load-bearing sibling/counterexample implication; complete original remains exact recovery."
+      },
+      {
+        "original": "For the scope of negative statements, see the [N1-N8 review](../NO_GO_DISCIPLINE_CHECKLIST.md).",
+        "canonical": "Explicit deferred historical boundary",
+        "reason": "No import of uncertified universal negative conclusion."
+      }
+    ]
+  },
+  {
+    "original": "notes/COMPACT_SINE_SCORE_DOMINATION_AND_STATIC_CURL_LIMIT.md",
+    "canonical": "docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "all_indented_formula_lines_exact": true,
+    "full_positive_argument_preserved": true,
+    "exact_prose_transformations": [
+      {
+        "original": "## 6. Scope relative to the campaign target",
+        "canonical": "## 6. Scope of the source and state theorem",
+        "reason": "Narrow live scope or remove non-load-bearing sibling/counterexample implication; complete original remains exact recovery."
+      },
+      {
+        "original": "This result uses the extra Gibbs weight and shift identity absent from the\nsparse-loop construction. It prevents that construction's exploding MGFs\nfor the actual sine score and controls a particular diffuse source sector.\nIt does not prove the desired full compact-to-real magnetic comparison:",
+        "canonical": "This result uses the supplied Gibbs weight and exact shift identity to\ncontrol a particular diffuse sine-source sector. Its scope for a further\ncompact-to-real magnetic comparison is as follows:",
+        "reason": "Narrow live scope or remove non-load-bearing sibling/counterexample implication; complete original remains exact recovery."
+      },
+      {
+        "original": "For the scope of negative statements, see the [N1-N8 review](../NO_GO_DISCIPLINE_CHECKLIST.md).",
+        "canonical": "Explicit deferred historical boundary",
+        "reason": "No import of uncertified universal negative conclusion."
+      }
+    ]
+  },
+  {
+    "original": "evidence/compact_cover_source_check.py",
+    "canonical": "scripts/compact_rotor_cover_source_check_2026_09_16.py",
+    "all_original_computational_ASTs_exact": true,
+    "only_exception": "Final report emitter wrapper; identical existing report and all calculations",
+    "static_assert_count": 15
+  },
+  {
+    "original": "evidence/compact_score_check.py",
+    "canonical": "scripts/compact_rotor_sine_score_check_2026_09_16.py",
+    "all_original_computational_ASTs_exact": true,
+    "only_exception": "Final report emitter wrapper; identical existing report and all calculations",
+    "static_assert_count": 18
+  }
+]

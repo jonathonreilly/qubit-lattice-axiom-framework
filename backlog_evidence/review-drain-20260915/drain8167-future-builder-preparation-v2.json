@@ -1,0 +1,21 @@
+{
+  "status": "SYNTAX_AND_METADATA_GUARDS_CHECKED; BUILDER_NOT_EXECUTED",
+  "builder": {
+    "path": "/private/tmp/review-drain-20260915/drain8167-build-staged-draft-v2.py",
+    "sha256": "7ddd3b0ddedbb9315e236a96e2e05c648b630c785306c6e0ebf43de9210b1c6d"
+  },
+  "capture_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8167-capture-plan-v2.json",
+    "sha256": "bc0fcd6e6dba3aa773109ad8d2b53e6b18ab81763f588df7c16b48ed3f79e851"
+  },
+  "early_review": {
+    "path": "/private/tmp/review-drain-20260915/drain8167-early-review-v1.json",
+    "sha256": "3f9bd0c27e60a76129108664215174158f2fa3172eb02db90710d7d6e6be5681"
+  },
+  "prior_builder_metadata_mismatch": "Unexecuted v1 expected verdict PASS; actual early report correctly uses status EARLY_AFFECTED_SOURCE_CLEAR_FOR_PREPARATION_NOT_FINAL_PASS. v2 requires exact hash/status; v1 retained unchanged.",
+  "maps_needed": false,
+  "source_changes": 0,
+  "staging": 0,
+  "primary_runs": 0,
+  "gates": 0
+}

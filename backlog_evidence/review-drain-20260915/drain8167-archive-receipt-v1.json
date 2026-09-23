@@ -1,0 +1,1480 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "8535b7aed8ce7fbac5a05cccdd75c670313dd55e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/APPROACH_REGISTRY.md",
+      "raw_bytes": 1349,
+      "raw_sha256": "b67c3706618401c7256f94642c644ece45abffcef70036486b0c4d7dd53d0754",
+      "stored_path": "_objects/b67c3706618401c7256f94642c644ece45abffcef70036486b0c4d7dd53d0754.gz",
+      "stored_sha256": "27912949056116f0d68ea7f01901f329fc1dbe5120fbbda5f7dbe5a06fa9baa1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8636393dc4a98029ad7fc1790aaa5276d7a404c7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/ARTIFACT_PLAN.md",
+      "raw_bytes": 521,
+      "raw_sha256": "5526e661a11e8d39f2b6da2e1837863f30805569e51f9a43f4be4e0413676b32",
+      "stored_path": "_objects/5526e661a11e8d39f2b6da2e1837863f30805569e51f9a43f4be4e0413676b32.gz",
+      "stored_sha256": "6ffb83d374229844bb52da031b308cb1985afccec848773a2ee9b420a7a1cfad"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "80f30bf263f3215cfaf03a02d6201dfb4a82a4d0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 2554,
+      "raw_sha256": "6202d4d7f537334154e308149d8a944e876c1af30997b37d42c85e1361d24876",
+      "stored_path": "_objects/6202d4d7f537334154e308149d8a944e876c1af30997b37d42c85e1361d24876.gz",
+      "stored_sha256": "aa5fd280bb17ec1ec0bf60389c8214b5cb657de940acdaa0518fa089eb653f7b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b4bbe848950b2e1812ca09b96bf778b7f56cc15b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 1364,
+      "raw_sha256": "a5a6a6d23e4324cc36138735a41d0a0a79ae562f4d19ffa720b0739e1f47322a",
+      "stored_path": "_objects/a5a6a6d23e4324cc36138735a41d0a0a79ae562f4d19ffa720b0739e1f47322a.gz",
+      "stored_sha256": "758d16d14aae0e63302df7a190646954c84a2ee80c2538b3f207f378c8ad81c2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c50a6ef3a13a73169232ba7ca5f15fe521e72caa",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/GOAL.md",
+      "raw_bytes": 1511,
+      "raw_sha256": "20c1b7743deccc72a7eaf2ebc44e7a5aea37bf7effc2e690cae1bf5e98058cf7",
+      "stored_path": "_objects/20c1b7743deccc72a7eaf2ebc44e7a5aea37bf7effc2e690cae1bf5e98058cf7.gz",
+      "stored_sha256": "e4b2222fdce4176d0efb2709bf0b130f728696f86818a8bad87b26f2cbfa125f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5bcb0e85d0cdfcd95450d20f948bdd6ac93ab2b5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/HANDOFF.md",
+      "raw_bytes": 4362,
+      "raw_sha256": "ead93eaf27ce82fa89910cd0c0a53cc46b456bdbde85f1eb27ea7126ecc067c0",
+      "stored_path": "_objects/ead93eaf27ce82fa89910cd0c0a53cc46b456bdbde85f1eb27ea7126ecc067c0.gz",
+      "stored_sha256": "b68885d76a60f7c24363434f6e55e16b6f0842208780e3615f0432d429fbbd01"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2e6e4b136550f1d99fd627b06c8be29a5a3f1a29",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/LITERATURE_BRIDGES.md",
+      "raw_bytes": 675,
+      "raw_sha256": "d1bee88fe71e78fa5b8c0ea108418416f6815c4d2b5a111e1fe962d68fa69004",
+      "stored_path": "_objects/d1bee88fe71e78fa5b8c0ea108418416f6815c4d2b5a111e1fe962d68fa69004.gz",
+      "stored_sha256": "17247671000676bf9ac68dabbfe9b14fcca1a39e2abc11c651f948a8f5731f83"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "45233526af07d5c9926f17df7d2f66d1fe2bcc28",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/MANIFEST.json",
+      "raw_bytes": 21586,
+      "raw_sha256": "d66bf5387933dcbfd01b427598ff1eb65738cc539ee14ee46847e8298ca6a930",
+      "stored_path": "_objects/d66bf5387933dcbfd01b427598ff1eb65738cc539ee14ee46847e8298ca6a930.gz",
+      "stored_sha256": "4e8f13eb9fd8a8236c7c429f19bbaea548b118a53edeaaa4f594e8bd9753729f"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "bff297484c3a18ea855f93f00d96ca4c7f4f8352",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "raw_bytes": 5432,
+      "raw_sha256": "ad3b995265818f809d8d0c0f980a352e7755e5a5c47be1c5aad5a9929d5f1ffb",
+      "stored_path": "kept/pr8167-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "stored_sha256": "ad3b995265818f809d8d0c0f980a352e7755e5a5c47be1c5aad5a9929d5f1ffb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eee229d0f460ac32f450d2cc7adc9879b30e750e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/NO_GO_LEDGER.md",
+      "raw_bytes": 760,
+      "raw_sha256": "b63328587df046a5dcdc1ae8f8f30c34683d4d0d7382dea571aa4bb1f215e2f6",
+      "stored_path": "_objects/b63328587df046a5dcdc1ae8f8f30c34683d4d0d7382dea571aa4bb1f215e2f6.gz",
+      "stored_sha256": "60cad005d021196c95b26d26580231a4025616d094213a320b82a722e27c41c7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b16ff7fe1433b04523085bdd3510c640440c4dc3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 956,
+      "raw_sha256": "60d92a2b23c874d179e6e800bb0c547209b4eaceb2e6ec040507dea3a7491f5d",
+      "stored_path": "_objects/60d92a2b23c874d179e6e800bb0c547209b4eaceb2e6ec040507dea3a7491f5d.gz",
+      "stored_sha256": "9cc884851c93da8c9d1e2de9c23fcccca256c632a2d678c6793db7467d3e4f8e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "df048c748966c305175536286d75c22dff8258ff",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/READING_LEDGER.md",
+      "raw_bytes": 1361,
+      "raw_sha256": "896ae572dee8262d84f6eb9d2ea3c42c4f74d541f86047c022637e59dca4947b",
+      "stored_path": "_objects/896ae572dee8262d84f6eb9d2ea3c42c4f74d541f86047c022637e59dca4947b.gz",
+      "stored_sha256": "1397f4ee2cb56d274b1cb2dfe58790d1d6011627ec9a715ba7e6d6972618a8cd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "584ab4db07caedd0f13bcda08c24bf619021ebaf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/README.md",
+      "raw_bytes": 3917,
+      "raw_sha256": "6c6e0e8dc2578f57767a64383b253313aafe723969eb0d0e29d646fd886849ab",
+      "stored_path": "_objects/6c6e0e8dc2578f57767a64383b253313aafe723969eb0d0e29d646fd886849ab.gz",
+      "stored_sha256": "8d752c9c14a53f2cc523de51dbfa9b9e20e27f17e0553ec9d9d840a09077fae2"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a52a3e0f497ffe97096f0012900a604322110d38",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/REVIEW_HISTORY.md",
+      "raw_bytes": 3433,
+      "raw_sha256": "774fedf185f7db87e5e923794d4cf020afe7ad6229e337f6645b0b29b8517d51",
+      "stored_path": "kept/pr8167-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "774fedf185f7db87e5e923794d4cf020afe7ad6229e337f6645b0b29b8517d51"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fee35757f312ffe1d231c1b92f1a4cadbe46ff2b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 477,
+      "raw_sha256": "7d92dbcdbf43e51956b903a542e2274e55438074c7f86e2c34d4b5a8404233bf",
+      "stored_path": "_objects/7d92dbcdbf43e51956b903a542e2274e55438074c7f86e2c34d4b5a8404233bf.gz",
+      "stored_sha256": "c4e60da7515137825fb3be76caf6daf70c930f3588912ee2a58e57d1175d2028"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "596387c30ffa984a5a9f691650e1aed68d9bd587",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/STATE.yaml",
+      "raw_bytes": 1481,
+      "raw_sha256": "4797301e770da68045be9e138828b4a5a1dfe055e6ecbe0a03efcf00825cc7d6",
+      "stored_path": "_objects/4797301e770da68045be9e138828b4a5a1dfe055e6ecbe0a03efcf00825cc7d6.gz",
+      "stored_sha256": "cf01b1564cfdea2df01bb764fecdddae6df90ed2e1834a254f848f38f0595805"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "29492a7cffe9c22b2dcc221706624c6bcd9486c8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/TRACE_GATE.md",
+      "raw_bytes": 1066,
+      "raw_sha256": "6342f77119d111192a75e490ed0706f282c56c0931dcaf161973a37c86236215",
+      "stored_path": "_objects/6342f77119d111192a75e490ed0706f282c56c0931dcaf161973a37c86236215.gz",
+      "stored_sha256": "77815110eab25806aaec66c9bab9e503376339efe39f5a669c0663272532f793"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.ATTEMPT1.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.FINAL.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT1.stdout.json",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT2.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.FINAL.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT1.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT2.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT1.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT2.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.FINAL.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FINAL.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FIX.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/run.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.ATTEMPT1.stderr.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.ATTEMPT1.stdout.json",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "adb63b5aaf90d51479d54567f8814f70a6988e3a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.ATTEMPT1.stdout.json",
+      "raw_bytes": 18357,
+      "raw_sha256": "d068738b6ba2cdf602dad89e12443e3ed1c364a58a9cb0c9236f754e0dba31b7",
+      "stored_path": "_objects/d068738b6ba2cdf602dad89e12443e3ed1c364a58a9cb0c9236f754e0dba31b7.gz",
+      "stored_sha256": "15c45fc5d2181a1804841a9532d1aa5884093f2354ed5a68d997fa791c5970a4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "adb63b5aaf90d51479d54567f8814f70a6988e3a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.FINAL.stdout.json",
+      "raw_bytes": 18357,
+      "raw_sha256": "d068738b6ba2cdf602dad89e12443e3ed1c364a58a9cb0c9236f754e0dba31b7",
+      "stored_path": "_objects/d068738b6ba2cdf602dad89e12443e3ed1c364a58a9cb0c9236f754e0dba31b7.gz",
+      "stored_sha256": "15c45fc5d2181a1804841a9532d1aa5884093f2354ed5a68d997fa791c5970a4"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "db6149411e4088e412c88d67cbc9230122135e6b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.py",
+      "raw_bytes": 6572,
+      "raw_sha256": "01ec94ab5b1c5b93d57f8c55d9248f9dcf52903e024ba49c0f630daf31af31f5",
+      "stored_path": "kept/pr8167-compact_cover_source_check-01b703512f84a072.py",
+      "stored_sha256": "01ec94ab5b1c5b93d57f8c55d9248f9dcf52903e024ba49c0f630daf31af31f5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d9f06b41721d1a1a1581b7ac3b14c8a916bff924",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT1.stderr.txt",
+      "raw_bytes": 837,
+      "raw_sha256": "6c34c99629aae623e91ba45fafd310e8985922341a497d0601993e7238a8a319",
+      "stored_path": "_objects/6c34c99629aae623e91ba45fafd310e8985922341a497d0601993e7238a8a319.gz",
+      "stored_sha256": "80a04706b11db415a0a15562ccae7d778e0f90aeef059f51c97c2477859e21ed"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d9f06b41721d1a1a1581b7ac3b14c8a916bff924",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.ATTEMPT1.stderr.txt",
+      "raw_bytes": 837,
+      "raw_sha256": "6c34c99629aae623e91ba45fafd310e8985922341a497d0601993e7238a8a319",
+      "stored_path": "_objects/6c34c99629aae623e91ba45fafd310e8985922341a497d0601993e7238a8a319.gz",
+      "stored_sha256": "80a04706b11db415a0a15562ccae7d778e0f90aeef059f51c97c2477859e21ed"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c4e140d9bf82f9657b2687910b8956a1bb441b76",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT2.stdout.json",
+      "raw_bytes": 16429,
+      "raw_sha256": "b31e00e8da862ba1eb42470219366abdb178a8a14848e1f6571c4be308228357",
+      "stored_path": "_objects/b31e00e8da862ba1eb42470219366abdb178a8a14848e1f6571c4be308228357.gz",
+      "stored_sha256": "066229eb2dcc0560c18a08f281aac26b1a74516db84df0ae9f058aa825924071"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c4e140d9bf82f9657b2687910b8956a1bb441b76",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.FINAL.stdout.json",
+      "raw_bytes": 16429,
+      "raw_sha256": "b31e00e8da862ba1eb42470219366abdb178a8a14848e1f6571c4be308228357",
+      "stored_path": "_objects/b31e00e8da862ba1eb42470219366abdb178a8a14848e1f6571c4be308228357.gz",
+      "stored_sha256": "066229eb2dcc0560c18a08f281aac26b1a74516db84df0ae9f058aa825924071"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "e845135c9f74d35d29a3699977d8517863ef7cb9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.py",
+      "raw_bytes": 7255,
+      "raw_sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa",
+      "stored_path": "kept/pr8167-compact_score_check-bcd02678a2acbcd9.py",
+      "stored_sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bcf625c1f847078cf7fef8f18ee95b3f75efd28c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT1.stdout.json",
+      "raw_bytes": 4370,
+      "raw_sha256": "4ae3a4b3b287031ece07a98b2d33bdcf67e24828959d267dcafcf17f074c9329",
+      "stored_path": "_objects/4ae3a4b3b287031ece07a98b2d33bdcf67e24828959d267dcafcf17f074c9329.gz",
+      "stored_sha256": "537dd1ab0ae125f74756c953bfcc4414a2992150688ce6a23378ae58759becf4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bcf625c1f847078cf7fef8f18ee95b3f75efd28c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/run.stdout.json",
+      "raw_bytes": 4370,
+      "raw_sha256": "4ae3a4b3b287031ece07a98b2d33bdcf67e24828959d267dcafcf17f074c9329",
+      "stored_path": "_objects/4ae3a4b3b287031ece07a98b2d33bdcf67e24828959d267dcafcf17f074c9329.gz",
+      "stored_sha256": "537dd1ab0ae125f74756c953bfcc4414a2992150688ce6a23378ae58759becf4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "052f0de9f8995720f487125eec379356b9be136a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT2.stdout.json",
+      "raw_bytes": 4367,
+      "raw_sha256": "31ed79d996e9cea3ee62cf48a3a3b0609ba3a3f23ddf4178917f3c15a2d915e1",
+      "stored_path": "_objects/31ed79d996e9cea3ee62cf48a3a3b0609ba3a3f23ddf4178917f3c15a2d915e1.gz",
+      "stored_sha256": "ef0f5b4d1707c81db5c99b6ee7510652de38138a77f3709e5687f00d40fa4b3d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6b68d726eeb1a2f7b1fbeeee0cae758013f56a7a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/run_formula_faults.py",
+      "raw_bytes": 2714,
+      "raw_sha256": "bdd7e535fdd44b30749d3afbcbbc79f170cc4889cb82cdd43afa6172d0be2cd6",
+      "stored_path": "_objects/bdd7e535fdd44b30749d3afbcbbc79f170cc4889cb82cdd43afa6172d0be2cd6.gz",
+      "stored_sha256": "0bbfca6df9e31914e337ae9d679a802007d47496de2eac948acfb03f204e560c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "85e7f8ac6c9eb2b7521d7047630ccc319fa26f5d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT1.stdout.json",
+      "raw_bytes": 3464,
+      "raw_sha256": "480d6dcf9ba640a1706110a07c9e3066efcf7fd6c2398b4e814c6bf33a97c883",
+      "stored_path": "_objects/480d6dcf9ba640a1706110a07c9e3066efcf7fd6c2398b4e814c6bf33a97c883.gz",
+      "stored_sha256": "ee9ee54aa4b6150fa58615f2f2d3af1fde45d76ea27948166712c9eea666efcc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "85e7f8ac6c9eb2b7521d7047630ccc319fa26f5d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.ATTEMPT1.stdout.json",
+      "raw_bytes": 3464,
+      "raw_sha256": "480d6dcf9ba640a1706110a07c9e3066efcf7fd6c2398b4e814c6bf33a97c883",
+      "stored_path": "_objects/480d6dcf9ba640a1706110a07c9e3066efcf7fd6c2398b4e814c6bf33a97c883.gz",
+      "stored_sha256": "ee9ee54aa4b6150fa58615f2f2d3af1fde45d76ea27948166712c9eea666efcc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "03d5c158a50443eca8960fe608e8048f5d56ed2d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT2.stdout.json",
+      "raw_bytes": 3463,
+      "raw_sha256": "e9460ee9a0f5581880bc35a501acd40d011693bb503676931c228e604153c57e",
+      "stored_path": "_objects/e9460ee9a0f5581880bc35a501acd40d011693bb503676931c228e604153c57e.gz",
+      "stored_sha256": "1f03bbb62446b64663627ddb399e2f99611f3f5d6f70b53e2a123d81ecf276c2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "03d5c158a50443eca8960fe608e8048f5d56ed2d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.FINAL.stdout.json",
+      "raw_bytes": 3463,
+      "raw_sha256": "e9460ee9a0f5581880bc35a501acd40d011693bb503676931c228e604153c57e",
+      "stored_path": "_objects/e9460ee9a0f5581880bc35a501acd40d011693bb503676931c228e604153c57e.gz",
+      "stored_sha256": "1f03bbb62446b64663627ddb399e2f99611f3f5d6f70b53e2a123d81ecf276c2"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "b70fcd906a5e42a9bea0acc5e4fe135f02a1c944",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.py",
+      "raw_bytes": 7185,
+      "raw_sha256": "cfee7b31f5e8276145c9000669739abafd3549dbc27572ce3161727e3a594810",
+      "stored_path": "kept/pr8167-sparse_loop_counterexample_check-cfeb390d98db64d2.py",
+      "stored_sha256": "cfee7b31f5e8276145c9000669739abafd3549dbc27572ce3161727e3a594810"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "6043fed7c222c17d061c5800831e8e07e92e9edc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/notes/COMPACT_SINE_SCORE_DOMINATION_AND_STATIC_CURL_LIMIT.md",
+      "raw_bytes": 10625,
+      "raw_sha256": "3965a88a8274bdffa1b12be0bece7e1ce21b4d270f4ef5b26ab1041c29da06a8",
+      "stored_path": "kept/pr8167-COMPACT_SINE_SCORE_DOMINATION_AND_STATIC_CURL_LIMIT-6b845da826f6bcc6.md",
+      "stored_sha256": "3965a88a8274bdffa1b12be0bece7e1ce21b4d270f4ef5b26ab1041c29da06a8"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "8a036192e12023c10183557f2d526c55dfb2dc9c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/notes/EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES.md",
+      "raw_bytes": 10445,
+      "raw_sha256": "8dfeb0852a3fc5dc11ae7f0410981b2d43f8e649aa074d1a95c1b10f29b55242",
+      "stored_path": "kept/pr8167-EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES-3443f691b71f300d.md",
+      "stored_sha256": "8dfeb0852a3fc5dc11ae7f0410981b2d43f8e649aa074d1a95c1b10f29b55242"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "10e2c461deea8f7a52709214625002349cef06cf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/notes/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md",
+      "raw_bytes": 12130,
+      "raw_sha256": "54ea2c673d71b5bbbf3ac24854b3b5af1166c13c4462ddae5d14f0cb06608b29",
+      "stored_path": "kept/pr8167-SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS-e810456f880739f8.md",
+      "stored_sha256": "54ea2c673d71b5bbbf3ac24854b3b5af1166c13c4462ddae5d14f0cb06608b29"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7085ce4cf467c53d57d3f1ec509f57e4a83abf13",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/FOCUSED_VERIFY.json",
+      "raw_bytes": 5004,
+      "raw_sha256": "7f021f5b5068a7e811fe4382506f2ba88843c0595cc2e6b08a4acac63a3eb184",
+      "stored_path": "_objects/7f021f5b5068a7e811fe4382506f2ba88843c0595cc2e6b08a4acac63a3eb184.gz",
+      "stored_sha256": "65a25b9e4772b086c523a1129c14b25415c03a1d2186bc8e4812356a7a9566f9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4c9745d9f88f78d54e7624ba2df10ff41d0441c5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/PERSONAL_REVIEW.md",
+      "raw_bytes": 7460,
+      "raw_sha256": "b361ca818aabbda7fd57e50ddc018ee9456015063a8618c47a4cb33fa2dfc387",
+      "stored_path": "_objects/b361ca818aabbda7fd57e50ddc018ee9456015063a8618c47a4cb33fa2dfc387.gz",
+      "stored_sha256": "0470c98a0b5a6789d01021522b178e891066b022ac7d744ee24ef0849958a381"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FINAL.stdout.txt",
+      "raw_bytes": 81,
+      "raw_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": "_objects/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz",
+      "stored_sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FIX.stdout.txt",
+      "raw_bytes": 81,
+      "raw_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": "_objects/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz",
+      "stored_sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e98c440b0f215b88a0ee17e9eeaa13546f07bf0f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/focused_verify.py",
+      "raw_bytes": 4648,
+      "raw_sha256": "64466bd013ee4f0aaa16db9c97e4c08c2cae2ee78b9aba2aac9d18c6937ee660",
+      "stored_path": "_objects/64466bd013ee4f0aaa16db9c97e4c08c2cae2ee78b9aba2aac9d18c6937ee660.gz",
+      "stored_sha256": "1a11cd6850ec4e6203ca34035f00930e4bb1e648d90a66742a9a783c517e8939"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b5a6a513f28b4239518483d63cde2c4903fb8cd9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py",
+      "raw_bytes": 7255,
+      "raw_sha256": "140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555",
+      "stored_path": "_objects/140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555.gz",
+      "stored_sha256": "c02125af884c0d4af8954fe81e65f2bd0126191deba61ae37754f8a780cd14a9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b5a6a513f28b4239518483d63cde2c4903fb8cd9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/compact_score_check.py",
+      "raw_bytes": 7255,
+      "raw_sha256": "140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555",
+      "stored_path": "_objects/140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555.gz",
+      "stored_sha256": "c02125af884c0d4af8954fe81e65f2bd0126191deba61ae37754f8a780cd14a9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "283806805f8fd92437ba7953effb1b12c42ef1b1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/stderr.txt",
+      "raw_bytes": 962,
+      "raw_sha256": "32a0574e831def9f278ab606edac6958cd66f9dc97d79781a03a25f851d3594a",
+      "stored_path": "_objects/32a0574e831def9f278ab606edac6958cd66f9dc97d79781a03a25f851d3594a.gz",
+      "stored_sha256": "1fa1cdd33f4d840b59bda778390b9514561c067bcace0978e156d236610cc8d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "283806805f8fd92437ba7953effb1b12c42ef1b1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/stderr.txt",
+      "raw_bytes": 962,
+      "raw_sha256": "32a0574e831def9f278ab606edac6958cd66f9dc97d79781a03a25f851d3594a",
+      "stored_path": "_objects/32a0574e831def9f278ab606edac6958cd66f9dc97d79781a03a25f851d3594a.gz",
+      "stored_sha256": "1fa1cdd33f4d840b59bda778390b9514561c067bcace0978e156d236610cc8d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3fe454aa559cacb1d7e03e808e6b78d0bc8c9861",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py",
+      "raw_bytes": 7185,
+      "raw_sha256": "d24f97a3c873780b0c6719d0afd11ac8bf4eb829385728791d82104db32ebf7c",
+      "stored_path": "_objects/d24f97a3c873780b0c6719d0afd11ac8bf4eb829385728791d82104db32ebf7c.gz",
+      "stored_sha256": "7d68f1a53fb0b9b537191ee6dc3799ef5b01aefefdb8db7e73ab8bbbb03d13d6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3e1a1bf6b2e0115ca9765f116d116555a877818d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/stderr.txt",
+      "raw_bytes": 1045,
+      "raw_sha256": "07f2810673172113221297af1a4d31a22b9794f4ca1427168f785fce6ea9aa5e",
+      "stored_path": "_objects/07f2810673172113221297af1a4d31a22b9794f4ca1427168f785fce6ea9aa5e.gz",
+      "stored_sha256": "38f291cf89389ca648d164a167720c5025b6930feefea093df0152fbf88dc2c2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3e1a1bf6b2e0115ca9765f116d116555a877818d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/stderr.txt",
+      "raw_bytes": 1045,
+      "raw_sha256": "07f2810673172113221297af1a4d31a22b9794f4ca1427168f785fce6ea9aa5e",
+      "stored_path": "_objects/07f2810673172113221297af1a4d31a22b9794f4ca1427168f785fce6ea9aa5e.gz",
+      "stored_sha256": "38f291cf89389ca648d164a167720c5025b6930feefea093df0152fbf88dc2c2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "65555142f42c9b58252bda876f6c4790f4417005",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py",
+      "raw_bytes": 6570,
+      "raw_sha256": "1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2",
+      "stored_path": "_objects/1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2.gz",
+      "stored_sha256": "b7f943431feb70c75133cc66ac8533036be8f97af6a5679d56041672dbde1210"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "65555142f42c9b58252bda876f6c4790f4417005",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/compact_cover_source_check.py",
+      "raw_bytes": 6570,
+      "raw_sha256": "1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2",
+      "stored_path": "_objects/1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2.gz",
+      "stored_sha256": "b7f943431feb70c75133cc66ac8533036be8f97af6a5679d56041672dbde1210"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1a8e9287394a517e320d3820e2aba2913cc13160",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/stderr.txt",
+      "raw_bytes": 1304,
+      "raw_sha256": "8225846b2770741e55008db9c9e5a355f910cb785530e74409854c8f1f663a01",
+      "stored_path": "_objects/8225846b2770741e55008db9c9e5a355f910cb785530e74409854c8f1f663a01.gz",
+      "stored_sha256": "fa0d2974f6106c96a979e24c0c0bd45e9543878d2b21f737a8cfd56acc7622b6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1a8e9287394a517e320d3820e2aba2913cc13160",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/stderr.txt",
+      "raw_bytes": 1304,
+      "raw_sha256": "8225846b2770741e55008db9c9e5a355f910cb785530e74409854c8f1f663a01",
+      "stored_path": "_objects/8225846b2770741e55008db9c9e5a355f910cb785530e74409854c8f1f663a01.gz",
+      "stored_sha256": "fa0d2974f6106c96a979e24c0c0bd45e9543878d2b21f737a8cfd56acc7622b6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "59e0afbb650e302f5e8e567fc1e165630d39a885",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py",
+      "raw_bytes": 6566,
+      "raw_sha256": "1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4",
+      "stored_path": "_objects/1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4.gz",
+      "stored_sha256": "98f8810a3008c760ed62e36a4a7e87c9bdeb8e3a907f4b94429b4a3d3b397746"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "59e0afbb650e302f5e8e567fc1e165630d39a885",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/compact_cover_source_check.py",
+      "raw_bytes": 6566,
+      "raw_sha256": "1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4",
+      "stored_path": "_objects/1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4.gz",
+      "stored_sha256": "98f8810a3008c760ed62e36a4a7e87c9bdeb8e3a907f4b94429b4a3d3b397746"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "512673607f7acd9805e865fc8f7d744e5490a3da",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/stderr.txt",
+      "raw_bytes": 982,
+      "raw_sha256": "49658bf322893f7d1eb78e163815260cadc7128366c05bd3c025c14605982f81",
+      "stored_path": "_objects/49658bf322893f7d1eb78e163815260cadc7128366c05bd3c025c14605982f81.gz",
+      "stored_sha256": "5215399d5d8f1e484c7e3c7ac3d09fc0e50b1986db0aa7ca20632a0a3fb56df7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "512673607f7acd9805e865fc8f7d744e5490a3da",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/stderr.txt",
+      "raw_bytes": 982,
+      "raw_sha256": "49658bf322893f7d1eb78e163815260cadc7128366c05bd3c025c14605982f81",
+      "stored_path": "_objects/49658bf322893f7d1eb78e163815260cadc7128366c05bd3c025c14605982f81.gz",
+      "stored_sha256": "5215399d5d8f1e484c7e3c7ac3d09fc0e50b1986db0aa7ca20632a0a3fb56df7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "50ee82943b3ec6e0edca48221debfcbf3845a413",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py",
+      "raw_bytes": 7184,
+      "raw_sha256": "69ddc24146be2c0e86cb31939493e8b5b7f99ca2fd7642eb6241fa9266b40fd5",
+      "stored_path": "_objects/69ddc24146be2c0e86cb31939493e8b5b7f99ca2fd7642eb6241fa9266b40fd5.gz",
+      "stored_sha256": "912e1d6a967c232803a5c0298645d54be2d6cde2e20b688e4d1549db32f83cfa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cb559d198ab68c2f65615784f09250326ee30b79",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/stderr.txt",
+      "raw_bytes": 1062,
+      "raw_sha256": "477a7f80781e90d7ccd02d7ba7be7dd425053e74ca7e2047bf272ce282ae35c7",
+      "stored_path": "_objects/477a7f80781e90d7ccd02d7ba7be7dd425053e74ca7e2047bf272ce282ae35c7.gz",
+      "stored_sha256": "f418c395131073fe2e5d09ff775b5ab627c8afacaa3ca3e896a90412f08c9138"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cb559d198ab68c2f65615784f09250326ee30b79",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/stderr.txt",
+      "raw_bytes": 1062,
+      "raw_sha256": "477a7f80781e90d7ccd02d7ba7be7dd425053e74ca7e2047bf272ce282ae35c7",
+      "stored_path": "_objects/477a7f80781e90d7ccd02d7ba7be7dd425053e74ca7e2047bf272ce282ae35c7.gz",
+      "stored_sha256": "f418c395131073fe2e5d09ff775b5ab627c8afacaa3ca3e896a90412f08c9138"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e81a81d4c0e038f2b71e8d0653174718719334b4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py",
+      "raw_bytes": 7185,
+      "raw_sha256": "dd68adabd2fd05621b9e6dfa199c89fb7f2191118d58e57abac68ed23d3f987e",
+      "stored_path": "_objects/dd68adabd2fd05621b9e6dfa199c89fb7f2191118d58e57abac68ed23d3f987e.gz",
+      "stored_sha256": "b4b7e0303c3374d45c337220755fbc4e4d18f701bc852822d8fad31188b34848"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9a5fdc5c7b20ab79cfd808dbd9175c25e6251994",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/stderr.txt",
+      "raw_bytes": 1421,
+      "raw_sha256": "8046861cf63ef68a0cfbdd8ce7bd63caf4bcc7601511d501aa207e0be30172af",
+      "stored_path": "_objects/8046861cf63ef68a0cfbdd8ce7bd63caf4bcc7601511d501aa207e0be30172af.gz",
+      "stored_sha256": "04e9a9972a42d02362e7ef08956ae03a4509f73eb62e22c5d26b7e734e076940"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9a5fdc5c7b20ab79cfd808dbd9175c25e6251994",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/stderr.txt",
+      "raw_bytes": 1421,
+      "raw_sha256": "8046861cf63ef68a0cfbdd8ce7bd63caf4bcc7601511d501aa207e0be30172af",
+      "stored_path": "_objects/8046861cf63ef68a0cfbdd8ce7bd63caf4bcc7601511d501aa207e0be30172af.gz",
+      "stored_sha256": "04e9a9972a42d02362e7ef08956ae03a4509f73eb62e22c5d26b7e734e076940"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ee24d41d5441229962f331e9cfece981dc3a5895",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py",
+      "raw_bytes": 7255,
+      "raw_sha256": "f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c",
+      "stored_path": "_objects/f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c.gz",
+      "stored_sha256": "9d4e7cf01328084dee332df82d8e6d9bcd8e686e3212751637eaf3b19383016c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ee24d41d5441229962f331e9cfece981dc3a5895",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/compact_score_check.py",
+      "raw_bytes": 7255,
+      "raw_sha256": "f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c",
+      "stored_path": "_objects/f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c.gz",
+      "stored_sha256": "9d4e7cf01328084dee332df82d8e6d9bcd8e686e3212751637eaf3b19383016c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6e09ca1f9dc4d424a27066f11d75ab2eba40ffa",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/stderr.txt",
+      "raw_bytes": 930,
+      "raw_sha256": "5ca0c6985ee1a6e2f4130bae4efc4bfbf7c25bc1a7a59de65b39c408be3a7eb0",
+      "stored_path": "_objects/5ca0c6985ee1a6e2f4130bae4efc4bfbf7c25bc1a7a59de65b39c408be3a7eb0.gz",
+      "stored_sha256": "204936ea8fb282fe3a6747b0361ab7246d2deefb62a17d616346cf80d83c1690"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6e09ca1f9dc4d424a27066f11d75ab2eba40ffa",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/stderr.txt",
+      "raw_bytes": 930,
+      "raw_sha256": "5ca0c6985ee1a6e2f4130bae4efc4bfbf7c25bc1a7a59de65b39c408be3a7eb0",
+      "stored_path": "_objects/5ca0c6985ee1a6e2f4130bae4efc4bfbf7c25bc1a7a59de65b39c408be3a7eb0.gz",
+      "stored_sha256": "204936ea8fb282fe3a6747b0361ab7246d2deefb62a17d616346cf80d83c1690"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "70b98d9e28679de394ccd3142d6dc87c9cf06234",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py",
+      "raw_bytes": 7250,
+      "raw_sha256": "e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326",
+      "stored_path": "_objects/e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326.gz",
+      "stored_sha256": "239467f6e6a21a491a24d589d0cb32367de22a60dc077e7012c223be9b8e9c87"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "70b98d9e28679de394ccd3142d6dc87c9cf06234",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/compact_score_check.py",
+      "raw_bytes": 7250,
+      "raw_sha256": "e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326",
+      "stored_path": "_objects/e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326.gz",
+      "stored_sha256": "239467f6e6a21a491a24d589d0cb32367de22a60dc077e7012c223be9b8e9c87"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b855535a5261d26cb0d2877b78cf33bc1a4ec625",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/stderr.txt",
+      "raw_bytes": 986,
+      "raw_sha256": "c272741d8ea73354ebe8dc9ccc0505dfde22b12ca7f8c41063bb7e68ad638712",
+      "stored_path": "_objects/c272741d8ea73354ebe8dc9ccc0505dfde22b12ca7f8c41063bb7e68ad638712.gz",
+      "stored_sha256": "e76e7c2a8884d1af33788c1318bd8a183861739eea19416dd730fe23871096d0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b855535a5261d26cb0d2877b78cf33bc1a4ec625",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/stderr.txt",
+      "raw_bytes": 986,
+      "raw_sha256": "c272741d8ea73354ebe8dc9ccc0505dfde22b12ca7f8c41063bb7e68ad638712",
+      "stored_path": "_objects/c272741d8ea73354ebe8dc9ccc0505dfde22b12ca7f8c41063bb7e68ad638712.gz",
+      "stored_sha256": "e76e7c2a8884d1af33788c1318bd8a183861739eea19416dd730fe23871096d0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eeedd16d3024ba8c14b438320f02f0dd692d2716",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py",
+      "raw_bytes": 6573,
+      "raw_sha256": "e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c",
+      "stored_path": "_objects/e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c.gz",
+      "stored_sha256": "9ffdefe9d7e36dfafed110bf493ec4ee9f1ded8f81995e8c3d6fc1a2518b8dc6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eeedd16d3024ba8c14b438320f02f0dd692d2716",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/compact_cover_source_check.py",
+      "raw_bytes": 6573,
+      "raw_sha256": "e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c",
+      "stored_path": "_objects/e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c.gz",
+      "stored_sha256": "9ffdefe9d7e36dfafed110bf493ec4ee9f1ded8f81995e8c3d6fc1a2518b8dc6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f820c5c4c3d0d8f8206efa5e1512419ac764b2d4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/stderr.txt",
+      "raw_bytes": 967,
+      "raw_sha256": "fdee7303fb0c1b6acd6a089612b74b2109e7880d9265f12a0479d86ddd6706b0",
+      "stored_path": "_objects/fdee7303fb0c1b6acd6a089612b74b2109e7880d9265f12a0479d86ddd6706b0.gz",
+      "stored_sha256": "7fe8f0ccbfe8cc64f97b271b1f044429b399c53b167f08b378b7a7683299753f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f820c5c4c3d0d8f8206efa5e1512419ac764b2d4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/stderr.txt",
+      "raw_bytes": 967,
+      "raw_sha256": "fdee7303fb0c1b6acd6a089612b74b2109e7880d9265f12a0479d86ddd6706b0",
+      "stored_path": "_objects/fdee7303fb0c1b6acd6a089612b74b2109e7880d9265f12a0479d86ddd6706b0.gz",
+      "stored_sha256": "7fe8f0ccbfe8cc64f97b271b1f044429b399c53b167f08b378b7a7683299753f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6e000a108cbb81537e5b31076bd127ae7e845675",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/sparse_loop_counterexample_check.py",
+      "raw_bytes": 7181,
+      "raw_sha256": "7d77f158eae4c0d4154f941e739833b71cbf6c196f2c4c116ca6c72091d68e54",
+      "stored_path": "_objects/7d77f158eae4c0d4154f941e739833b71cbf6c196f2c4c116ca6c72091d68e54.gz",
+      "stored_sha256": "ecd2c9fba730ad163a7963750f28106bf064cec85207e4b83a91d87ed0739043"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ed3463aaafdfc408712be35f1216d2da114caa3a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/sparse_loop_counterexample_check.py",
+      "raw_bytes": 7180,
+      "raw_sha256": "7727bd0055e4b989ea71e6ebe98c55407b4a230a91503fbf44263dc79e4ec21b",
+      "stored_path": "_objects/7727bd0055e4b989ea71e6ebe98c55407b4a230a91503fbf44263dc79e4ec21b.gz",
+      "stored_sha256": "5696761f3651c7df60404ef124292554c9ad1736c586f19537356038b9d5fc32"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2eccddb89c865fe80e501f36e321dc3ac9d9e69d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/sparse_loop_counterexample_check.py",
+      "raw_bytes": 7181,
+      "raw_sha256": "6884ae63b57d286bcbc530b7b4ee0fefa977199264f274b7e5c7f6c7fd5084f7",
+      "stored_path": "_objects/6884ae63b57d286bcbc530b7b4ee0fefa977199264f274b7e5c7f6c7fd5084f7.gz",
+      "stored_sha256": "2ee4d5a2010e8b49281d2b5bf765b2c39ec9370dc7f991ede73c085f000f7861"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a560b21d8d9efd80a17dd13c52241787c8e0cce8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/FINDING.md",
+      "raw_bytes": 692,
+      "raw_sha256": "6926058b06eb055cf8ffb01075981f9c5072db1f421bd101c548af6378ddb9ab",
+      "stored_path": "_objects/6926058b06eb055cf8ffb01075981f9c5072db1f421bd101c548af6378ddb9ab.gz",
+      "stored_sha256": "61dbdd9097f84fc0bd515238c0d25e16f9cbe4a47154238899e7ca609c84d90e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eff10bf524fb23c8aa7fb9aef733a8c1e61abdd3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md",
+      "raw_bytes": 12071,
+      "raw_sha256": "723df4625d9d6573c26fad85f798d76bf5044e93dd92151529c64124eadbe87b",
+      "stored_path": "_objects/723df4625d9d6573c26fad85f798d76bf5044e93dd92151529c64124eadbe87b.gz",
+      "stored_sha256": "f382667e0818fbdf55c2590281d2f92a5870c82a78173a5bb66b633d8cbd99b0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3ee768b6d29df53648182b60d7643c706e6c3135",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.py",
+      "raw_bytes": 7181,
+      "raw_sha256": "b91e824a223e7d4a9bebf778462465bb3cb346ce63ed42956f6ec4f5ac92656d",
+      "stored_path": "_objects/b91e824a223e7d4a9bebf778462465bb3cb346ce63ed42956f6ec4f5ac92656d.gz",
+      "stored_sha256": "914b259f0f853b932fbabf1693ba3d4a0d72f44f2ed5591d979e4d5e2d426261"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "18e1967aef18a59bdec8128f01fe78a534d736a7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.py",
+      "raw_bytes": 7255,
+      "raw_sha256": "a37534021caa4d8b6818316e778fd7f1128123df754ae1f169c356f691d8f5cb",
+      "stored_path": "_objects/a37534021caa4d8b6818316e778fd7f1128123df754ae1f169c356f691d8f5cb.gz",
+      "stored_sha256": "cee73330a265172f422572f36d1e1a0d33594f9b99813d6bc260357d3988af26"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9359f4b77edcdc9de73525ca87ee3895c5be9b43",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/refinement_diagnostic.json",
+      "raw_bytes": 1431,
+      "raw_sha256": "c5006a81784508f310539187876d1cc115c8b7ed9d72d0e0ee548a9b2786706a",
+      "stored_path": "_objects/c5006a81784508f310539187876d1cc115c8b7ed9d72d0e0ee548a9b2786706a.gz",
+      "stored_sha256": "ceb9ac48c8ce01355b868e9b40f54c1bcaacf0bfd574a98c91b144a3312f6f78"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/toe-compact-winding-20260916/",
+  "revision": "5265ddd85815fe92e55342f4352f5e675b84703c",
+  "schema_version": 1,
+  "unique_blobs": {
+    "03d5c158a50443eca8960fe608e8048f5d56ed2d": {
+      "occurrences": 2,
+      "raw_bytes": 3463,
+      "raw_sha256": "e9460ee9a0f5581880bc35a501acd40d011693bb503676931c228e604153c57e"
+    },
+    "052f0de9f8995720f487125eec379356b9be136a": {
+      "occurrences": 1,
+      "raw_bytes": 4367,
+      "raw_sha256": "31ed79d996e9cea3ee62cf48a3a3b0609ba3a3f23ddf4178917f3c15a2d915e1"
+    },
+    "10e2c461deea8f7a52709214625002349cef06cf": {
+      "occurrences": 1,
+      "raw_bytes": 12130,
+      "raw_sha256": "54ea2c673d71b5bbbf3ac24854b3b5af1166c13c4462ddae5d14f0cb06608b29"
+    },
+    "18e1967aef18a59bdec8128f01fe78a534d736a7": {
+      "occurrences": 1,
+      "raw_bytes": 7255,
+      "raw_sha256": "a37534021caa4d8b6818316e778fd7f1128123df754ae1f169c356f691d8f5cb"
+    },
+    "1a8e9287394a517e320d3820e2aba2913cc13160": {
+      "occurrences": 2,
+      "raw_bytes": 1304,
+      "raw_sha256": "8225846b2770741e55008db9c9e5a355f910cb785530e74409854c8f1f663a01"
+    },
+    "283806805f8fd92437ba7953effb1b12c42ef1b1": {
+      "occurrences": 2,
+      "raw_bytes": 962,
+      "raw_sha256": "32a0574e831def9f278ab606edac6958cd66f9dc97d79781a03a25f851d3594a"
+    },
+    "29492a7cffe9c22b2dcc221706624c6bcd9486c8": {
+      "occurrences": 1,
+      "raw_bytes": 1066,
+      "raw_sha256": "6342f77119d111192a75e490ed0706f282c56c0931dcaf161973a37c86236215"
+    },
+    "2e6e4b136550f1d99fd627b06c8be29a5a3f1a29": {
+      "occurrences": 1,
+      "raw_bytes": 675,
+      "raw_sha256": "d1bee88fe71e78fa5b8c0ea108418416f6815c4d2b5a111e1fe962d68fa69004"
+    },
+    "2eccddb89c865fe80e501f36e321dc3ac9d9e69d": {
+      "occurrences": 1,
+      "raw_bytes": 7181,
+      "raw_sha256": "6884ae63b57d286bcbc530b7b4ee0fefa977199264f274b7e5c7f6c7fd5084f7"
+    },
+    "3e1a1bf6b2e0115ca9765f116d116555a877818d": {
+      "occurrences": 2,
+      "raw_bytes": 1045,
+      "raw_sha256": "07f2810673172113221297af1a4d31a22b9794f4ca1427168f785fce6ea9aa5e"
+    },
+    "3ee768b6d29df53648182b60d7643c706e6c3135": {
+      "occurrences": 1,
+      "raw_bytes": 7181,
+      "raw_sha256": "b91e824a223e7d4a9bebf778462465bb3cb346ce63ed42956f6ec4f5ac92656d"
+    },
+    "3fe454aa559cacb1d7e03e808e6b78d0bc8c9861": {
+      "occurrences": 1,
+      "raw_bytes": 7185,
+      "raw_sha256": "d24f97a3c873780b0c6719d0afd11ac8bf4eb829385728791d82104db32ebf7c"
+    },
+    "45233526af07d5c9926f17df7d2f66d1fe2bcc28": {
+      "occurrences": 1,
+      "raw_bytes": 21586,
+      "raw_sha256": "d66bf5387933dcbfd01b427598ff1eb65738cc539ee14ee46847e8298ca6a930"
+    },
+    "4c9745d9f88f78d54e7624ba2df10ff41d0441c5": {
+      "occurrences": 1,
+      "raw_bytes": 7460,
+      "raw_sha256": "b361ca818aabbda7fd57e50ddc018ee9456015063a8618c47a4cb33fa2dfc387"
+    },
+    "50ee82943b3ec6e0edca48221debfcbf3845a413": {
+      "occurrences": 1,
+      "raw_bytes": 7184,
+      "raw_sha256": "69ddc24146be2c0e86cb31939493e8b5b7f99ca2fd7642eb6241fa9266b40fd5"
+    },
+    "512673607f7acd9805e865fc8f7d744e5490a3da": {
+      "occurrences": 2,
+      "raw_bytes": 982,
+      "raw_sha256": "49658bf322893f7d1eb78e163815260cadc7128366c05bd3c025c14605982f81"
+    },
+    "584ab4db07caedd0f13bcda08c24bf619021ebaf": {
+      "occurrences": 1,
+      "raw_bytes": 3917,
+      "raw_sha256": "6c6e0e8dc2578f57767a64383b253313aafe723969eb0d0e29d646fd886849ab"
+    },
+    "596387c30ffa984a5a9f691650e1aed68d9bd587": {
+      "occurrences": 1,
+      "raw_bytes": 1481,
+      "raw_sha256": "4797301e770da68045be9e138828b4a5a1dfe055e6ecbe0a03efcf00825cc7d6"
+    },
+    "59e0afbb650e302f5e8e567fc1e165630d39a885": {
+      "occurrences": 2,
+      "raw_bytes": 6566,
+      "raw_sha256": "1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4"
+    },
+    "5bcb0e85d0cdfcd95450d20f948bdd6ac93ab2b5": {
+      "occurrences": 1,
+      "raw_bytes": 4362,
+      "raw_sha256": "ead93eaf27ce82fa89910cd0c0a53cc46b456bdbde85f1eb27ea7126ecc067c0"
+    },
+    "6043fed7c222c17d061c5800831e8e07e92e9edc": {
+      "occurrences": 1,
+      "raw_bytes": 10625,
+      "raw_sha256": "3965a88a8274bdffa1b12be0bece7e1ce21b4d270f4ef5b26ab1041c29da06a8"
+    },
+    "65555142f42c9b58252bda876f6c4790f4417005": {
+      "occurrences": 2,
+      "raw_bytes": 6570,
+      "raw_sha256": "1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2"
+    },
+    "6b68d726eeb1a2f7b1fbeeee0cae758013f56a7a": {
+      "occurrences": 1,
+      "raw_bytes": 2714,
+      "raw_sha256": "bdd7e535fdd44b30749d3afbcbbc79f170cc4889cb82cdd43afa6172d0be2cd6"
+    },
+    "6e000a108cbb81537e5b31076bd127ae7e845675": {
+      "occurrences": 1,
+      "raw_bytes": 7181,
+      "raw_sha256": "7d77f158eae4c0d4154f941e739833b71cbf6c196f2c4c116ca6c72091d68e54"
+    },
+    "7085ce4cf467c53d57d3f1ec509f57e4a83abf13": {
+      "occurrences": 1,
+      "raw_bytes": 5004,
+      "raw_sha256": "7f021f5b5068a7e811fe4382506f2ba88843c0595cc2e6b08a4acac63a3eb184"
+    },
+    "70b98d9e28679de394ccd3142d6dc87c9cf06234": {
+      "occurrences": 2,
+      "raw_bytes": 7250,
+      "raw_sha256": "e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326"
+    },
+    "80f30bf263f3215cfaf03a02d6201dfb4a82a4d0": {
+      "occurrences": 1,
+      "raw_bytes": 2554,
+      "raw_sha256": "6202d4d7f537334154e308149d8a944e876c1af30997b37d42c85e1361d24876"
+    },
+    "8535b7aed8ce7fbac5a05cccdd75c670313dd55e": {
+      "occurrences": 1,
+      "raw_bytes": 1349,
+      "raw_sha256": "b67c3706618401c7256f94642c644ece45abffcef70036486b0c4d7dd53d0754"
+    },
+    "85e7f8ac6c9eb2b7521d7047630ccc319fa26f5d": {
+      "occurrences": 2,
+      "raw_bytes": 3464,
+      "raw_sha256": "480d6dcf9ba640a1706110a07c9e3066efcf7fd6c2398b4e814c6bf33a97c883"
+    },
+    "8636393dc4a98029ad7fc1790aaa5276d7a404c7": {
+      "occurrences": 1,
+      "raw_bytes": 521,
+      "raw_sha256": "5526e661a11e8d39f2b6da2e1837863f30805569e51f9a43f4be4e0413676b32"
+    },
+    "8a036192e12023c10183557f2d526c55dfb2dc9c": {
+      "occurrences": 1,
+      "raw_bytes": 10445,
+      "raw_sha256": "8dfeb0852a3fc5dc11ae7f0410981b2d43f8e649aa074d1a95c1b10f29b55242"
+    },
+    "9359f4b77edcdc9de73525ca87ee3895c5be9b43": {
+      "occurrences": 1,
+      "raw_bytes": 1431,
+      "raw_sha256": "c5006a81784508f310539187876d1cc115c8b7ed9d72d0e0ee548a9b2786706a"
+    },
+    "9a5fdc5c7b20ab79cfd808dbd9175c25e6251994": {
+      "occurrences": 2,
+      "raw_bytes": 1421,
+      "raw_sha256": "8046861cf63ef68a0cfbdd8ce7bd63caf4bcc7601511d501aa207e0be30172af"
+    },
+    "a52a3e0f497ffe97096f0012900a604322110d38": {
+      "occurrences": 1,
+      "raw_bytes": 3433,
+      "raw_sha256": "774fedf185f7db87e5e923794d4cf020afe7ad6229e337f6645b0b29b8517d51"
+    },
+    "a560b21d8d9efd80a17dd13c52241787c8e0cce8": {
+      "occurrences": 1,
+      "raw_bytes": 692,
+      "raw_sha256": "6926058b06eb055cf8ffb01075981f9c5072db1f421bd101c548af6378ddb9ab"
+    },
+    "adb63b5aaf90d51479d54567f8814f70a6988e3a": {
+      "occurrences": 2,
+      "raw_bytes": 18357,
+      "raw_sha256": "d068738b6ba2cdf602dad89e12443e3ed1c364a58a9cb0c9236f754e0dba31b7"
+    },
+    "b16ff7fe1433b04523085bdd3510c640440c4dc3": {
+      "occurrences": 1,
+      "raw_bytes": 956,
+      "raw_sha256": "60d92a2b23c874d179e6e800bb0c547209b4eaceb2e6ec040507dea3a7491f5d"
+    },
+    "b4bbe848950b2e1812ca09b96bf778b7f56cc15b": {
+      "occurrences": 1,
+      "raw_bytes": 1364,
+      "raw_sha256": "a5a6a6d23e4324cc36138735a41d0a0a79ae562f4d19ffa720b0739e1f47322a"
+    },
+    "b5a6a513f28b4239518483d63cde2c4903fb8cd9": {
+      "occurrences": 2,
+      "raw_bytes": 7255,
+      "raw_sha256": "140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555"
+    },
+    "b70fcd906a5e42a9bea0acc5e4fe135f02a1c944": {
+      "occurrences": 1,
+      "raw_bytes": 7185,
+      "raw_sha256": "cfee7b31f5e8276145c9000669739abafd3549dbc27572ce3161727e3a594810"
+    },
+    "b855535a5261d26cb0d2877b78cf33bc1a4ec625": {
+      "occurrences": 2,
+      "raw_bytes": 986,
+      "raw_sha256": "c272741d8ea73354ebe8dc9ccc0505dfde22b12ca7f8c41063bb7e68ad638712"
+    },
+    "bcf625c1f847078cf7fef8f18ee95b3f75efd28c": {
+      "occurrences": 2,
+      "raw_bytes": 4370,
+      "raw_sha256": "4ae3a4b3b287031ece07a98b2d33bdcf67e24828959d267dcafcf17f074c9329"
+    },
+    "bff297484c3a18ea855f93f00d96ca4c7f4f8352": {
+      "occurrences": 1,
+      "raw_bytes": 5432,
+      "raw_sha256": "ad3b995265818f809d8d0c0f980a352e7755e5a5c47be1c5aad5a9929d5f1ffb"
+    },
+    "c4e140d9bf82f9657b2687910b8956a1bb441b76": {
+      "occurrences": 2,
+      "raw_bytes": 16429,
+      "raw_sha256": "b31e00e8da862ba1eb42470219366abdb178a8a14848e1f6571c4be308228357"
+    },
+    "c50a6ef3a13a73169232ba7ca5f15fe521e72caa": {
+      "occurrences": 1,
+      "raw_bytes": 1511,
+      "raw_sha256": "20c1b7743deccc72a7eaf2ebc44e7a5aea37bf7effc2e690cae1bf5e98058cf7"
+    },
+    "c6b06e4b14504b301c7d8fc39082e996eeedf704": {
+      "occurrences": 2,
+      "raw_bytes": 81,
+      "raw_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971"
+    },
+    "c6e09ca1f9dc4d424a27066f11d75ab2eba40ffa": {
+      "occurrences": 2,
+      "raw_bytes": 930,
+      "raw_sha256": "5ca0c6985ee1a6e2f4130bae4efc4bfbf7c25bc1a7a59de65b39c408be3a7eb0"
+    },
+    "cb559d198ab68c2f65615784f09250326ee30b79": {
+      "occurrences": 2,
+      "raw_bytes": 1062,
+      "raw_sha256": "477a7f80781e90d7ccd02d7ba7be7dd425053e74ca7e2047bf272ce282ae35c7"
+    },
+    "d9f06b41721d1a1a1581b7ac3b14c8a916bff924": {
+      "occurrences": 2,
+      "raw_bytes": 837,
+      "raw_sha256": "6c34c99629aae623e91ba45fafd310e8985922341a497d0601993e7238a8a319"
+    },
+    "db6149411e4088e412c88d67cbc9230122135e6b": {
+      "occurrences": 1,
+      "raw_bytes": 6572,
+      "raw_sha256": "01ec94ab5b1c5b93d57f8c55d9248f9dcf52903e024ba49c0f630daf31af31f5"
+    },
+    "df048c748966c305175536286d75c22dff8258ff": {
+      "occurrences": 1,
+      "raw_bytes": 1361,
+      "raw_sha256": "896ae572dee8262d84f6eb9d2ea3c42c4f74d541f86047c022637e59dca4947b"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 33,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e81a81d4c0e038f2b71e8d0653174718719334b4": {
+      "occurrences": 1,
+      "raw_bytes": 7185,
+      "raw_sha256": "dd68adabd2fd05621b9e6dfa199c89fb7f2191118d58e57abac68ed23d3f987e"
+    },
+    "e845135c9f74d35d29a3699977d8517863ef7cb9": {
+      "occurrences": 1,
+      "raw_bytes": 7255,
+      "raw_sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa"
+    },
+    "e98c440b0f215b88a0ee17e9eeaa13546f07bf0f": {
+      "occurrences": 1,
+      "raw_bytes": 4648,
+      "raw_sha256": "64466bd013ee4f0aaa16db9c97e4c08c2cae2ee78b9aba2aac9d18c6937ee660"
+    },
+    "ed3463aaafdfc408712be35f1216d2da114caa3a": {
+      "occurrences": 1,
+      "raw_bytes": 7180,
+      "raw_sha256": "7727bd0055e4b989ea71e6ebe98c55407b4a230a91503fbf44263dc79e4ec21b"
+    },
+    "ee24d41d5441229962f331e9cfece981dc3a5895": {
+      "occurrences": 2,
+      "raw_bytes": 7255,
+      "raw_sha256": "f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c"
+    },
+    "eee229d0f460ac32f450d2cc7adc9879b30e750e": {
+      "occurrences": 1,
+      "raw_bytes": 760,
+      "raw_sha256": "b63328587df046a5dcdc1ae8f8f30c34683d4d0d7382dea571aa4bb1f215e2f6"
+    },
+    "eeedd16d3024ba8c14b438320f02f0dd692d2716": {
+      "occurrences": 2,
+      "raw_bytes": 6573,
+      "raw_sha256": "e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c"
+    },
+    "eff10bf524fb23c8aa7fb9aef733a8c1e61abdd3": {
+      "occurrences": 1,
+      "raw_bytes": 12071,
+      "raw_sha256": "723df4625d9d6573c26fad85f798d76bf5044e93dd92151529c64124eadbe87b"
+    },
+    "f820c5c4c3d0d8f8206efa5e1512419ac764b2d4": {
+      "occurrences": 2,
+      "raw_bytes": 967,
+      "raw_sha256": "fdee7303fb0c1b6acd6a089612b74b2109e7880d9265f12a0479d86ddd6706b0"
+    },
+    "fee35757f312ffe1d231c1b92f1a4cadbe46ff2b": {
+      "occurrences": 1,
+      "raw_bytes": 477,
+      "raw_sha256": "7d92dbcdbf43e51956b903a542e2274e55438074c7f86e2c34d4b5a8404233bf"
+    }
+  }
+}

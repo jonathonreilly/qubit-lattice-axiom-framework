@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "5265ddd85815fe92e55342f4352f5e675b84703c",
+  "fetched_ref": "refs/review-loop/fetched/8167-53c892f282114e2895f958151e96b556",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-compact-winding-20260916",
+    "headRefOid": "5265ddd85815fe92e55342f4352f5e675b84703c",
+    "isDraft": false,
+    "number": 8167,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

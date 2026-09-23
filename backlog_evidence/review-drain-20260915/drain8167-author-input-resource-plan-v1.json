@@ -1,0 +1,50 @@
+[
+  {
+    "runner": "scripts/compact_rotor_cover_source_check_2026_09_16.py",
+    "source_sha256": "6e36daccb31eccc081a7e1c992d7402e37a5e4061927e62634f56c73ce5dec2a",
+    "ordered_inputs": [
+      {
+        "path": "docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "3089086a1191446ccea22cc8368eba4907aa80222d430839043948feaf9ca9a8"
+      }
+    ],
+    "timeout_sec": 120,
+    "proposed_external_process_tree_limit_bytes": 805306368,
+    "resource_basis": "Maximum dense625-dimensional two-plaquette eigenproblem with several real/complex work arrays;120-digit scalar circle sums.",
+    "cap_status": "source-derived proposal, not measured peak RSS",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/compact_rotor_cover_source_check_2026_09_16.json",
+    "completed_family_total": 2,
+    "N5": [
+      "image/Fourier kernels and three source derivatives; one/two-plaquette Ward identities",
+      "finite one/two-plaquette systems; no thermodynamic simulation",
+      "images8/10, Fourier120/160 at120 digits; rotor cutoffs up to24 and two-coordinate cutoff12",
+      "all original coupling, time, endpoint and source fixtures completed",
+      "checked and not executed \u2014 all-volume or photon limits are not part of these finite calculations"
+    ]
+  },
+  {
+    "runner": "scripts/compact_rotor_sine_score_check_2026_09_16.py",
+    "source_sha256": "e90f995637b707fa435dd087862786def65a76ce58f3e36bf140e93abb645cb4",
+    "ordered_inputs": [
+      {
+        "path": "docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "4481e4feb62a7abccac574b07e18604922a55044955a6c8ee5212d140132759b"
+      }
+    ],
+    "timeout_sec": 120,
+    "proposed_external_process_tree_limit_bytes": 805306368,
+    "resource_basis": "Maximum dense729-dimensional Fourier sector; four cosine/sine matrices and thermal eigenvector/complex source work arrays. Dozens of matrix-sized temporaries plus BLAS/Python overhead; no volume sweep.",
+    "cap_status": "source-derived proposal, not measured peak RSS",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/compact_rotor_sine_score_check_2026_09_16.json",
+    "completed_family_total": 2,
+    "N5": [
+      "actual sine-source matrices, amplitude/phase factors and static-curl Ward/Taylor controls",
+      "2x2 plaquette complex in a zero-harmonic Fourier electric sector; not full physical thermal Gauss trace",
+      "Fourier cutoffs3/4, dimensions343/729; original nonexact source control retained",
+      "two thermal parameter pairs, three source strengths and independent-rotor copy counts1/16/256/4096",
+      "checked and not executed \u2014 infinite-volume conditional Gaussian result uses its full analytic contact-concentration proof"
+    ]
+  }
+]

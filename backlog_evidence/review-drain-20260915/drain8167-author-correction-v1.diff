@@ -1,0 +1,289 @@
+--- original/notes/EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES.md
++++ docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,10 +1,27 @@
++---
++claim_id: compact_rotor_cover_source_identities_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/compact_rotor_cover_source_check_2026_09_16.py
++claim_scope: "Exact finite-graph compact cover and normalized source identities for the supplied rotor Hamiltonian, with full thermal trace and all windings."
++upstream_dependencies: []
++---
++
+ # Exact compact cover, normalized sources and the winding-mixture terms
+ 
+-Working personal derivation, 2026-09-16. These are finite-graph identities
+-for the supplied rotor Hamiltonian. They organize the missing compact
+-comparison rather than assert a field limit. Standard covering-space
+-heat kernels, Feynman-Kac and differentiation of positive integrals are
+-used without a novelty claim.
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Exact finite-graph compact cover and normalized source identities for the supplied rotor Hamiltonian, with full thermal trace and all windings. The complete proof is self-contained below. No result from PR8165 or PR8166 is a mathematical premise. The Hamiltonian, coupling, thermal state and source class are supplied, not selected from framework axioms. No audit verdict is asserted.
+ 
+ ## 1. Kernel and Haar normalization
+ 
+@@ -25,9 +42,8 @@
+     F_T(x,y)=-g^2 log E_b exp[-g^(-2)integral_0^T
+         sum_p[1-cos(C[(1-s/T)x+(s/T)y+g b(s)])_p] ds].
+ 
+-This is the same definition used in PR8166 at frozen head
+-02bfa4eb99fce8329619a476775299567f735d4b. Its unreviewed derivative estimates
+-are not imported here. In particular0<=F_T<=2PT. Simultaneous integer shifts of both endpoints leave k_T
++The bridge definition is complete here and imports no sibling derivative
++estimate. In particular0<=F_T<=2PT. Simultaneous integer shifts of both endpoints leave k_T
+ unchanged. The compact Haar kernel is
+ 
+     K_T(theta,phi)=(2pi)^E sum_(ell in Z^E)
+@@ -86,9 +102,8 @@
+     X_h=(T/g)sum h_n,p(Ca_n)_p
+                        -(2pi T/g)sum h_n,p m_n,p.         (5)
+ 
+-Dropping the integer term changes the observable. Small density or bounded
+-components of m_n do not alone control its diffuse-source contribution;
+-the separate sparse-loop counterexample tests exactly that kind of gap.
++Dropping the integer term changes the observable. Equation (5) retains
++that term in the exact definition.
+ A heat-kernel score or a sine score would be another observable and must
+ be identified explicitly rather than substituted for principal flux.
+ 
+@@ -225,13 +240,37 @@
+ Equations(4)-(6) preserve the compact law and identify precisely where a
+ comparison must act. The current task is to reorganize that exact measure
+ into controlled local weights, or derive its response directly, while
+-retaining both the mixture terms and the intended observable. The sparse
+-filling geometry in PR8166 supplies possible supports. It does not
+-supply the normalized activities or their source derivatives.
+-
+-The local Hamiltonian path specification is additional information that
+-the sparse-loop counterexample lacks. A proof exploiting it could still
+-exclude the counterexample's long-range sign structure. No axiom update
+-is inferred from the present missing estimate.
+-
+-For the scope of negative statements, see the [N1-N8 review](../NO_GO_DISCIPLINE_CHECKLIST.md).
++retaining both the mixture terms and the intended observable. The normalized activities and their source derivatives remain targets
++for a further constructive comparison.
++
++The local Hamiltonian path specification is part of the supplied compact
++law. Further comparison work can use that structure. No axiom update is
++inferred from the present open target.
++
++The separate sparse-loop construction and its negative implication are
++preserved as deferred historical science in the recovery packet. They are
++not a live claim of this note.
++
++## Evidence and historical boundary
++
++Primary runner: `scripts/compact_rotor_cover_source_check_2026_09_16.py`. The runner retains all original arithmetic, fixtures, assertions and tolerances. Its 120-second timeout is unchanged; a 768 MiB external process-tree cap is proposed from the finite dense matrices and library overhead, not measured RSS. JSON is written under `logs/runner-cache/`. `TOTAL: PASS=2 FAIL=0` counts the two completed diagnostic families, not dynamic assertions or exhaustive theorem coverage. Static assertion count is separately labelled.
++
++The [exact historical recovery](work_history/repo/review_feedback/pr8167-evidence/README.md) preserves all 116 original paths, modes, blobs and hashes, including the complete sparse construction and calculation, every current/historical mutation, failed side4 adjacency claim and passing-but-insufficient check, and failed Fourier2/3 refinement. The universal sparse-geometry negative implication is deferred with its full proof and branch recovery handle. It is neither a live bounded conclusion nor mathematically refuted by the procedural N1 limitation.
++
++## No-Go Discipline Gate
++
++**N1 — Actual scope.** This note states the positive identities or conditional source theorem above. The separate sparse-law universal negative conclusion is absent from the live claim; formal negative certification is deferred, with no invented five-route coverage.
++
++**N2 — Premises.** The supplied rotor model, full thermal trace and stated source/state conditions are the exact premises. Open extensions are not counted as independent impossibility walls.
++
++**N3 — Imports.** Normalized Haar measure, all windings, Feynman-Kac, electric Dyson expansion and standard differentiation/ergodic tools are explicit. No empirical fit or native model-selection claim is made.
++
++**N4 — Controls.** Free-circle derivatives and gapped finite rotors calibrate the displayed identities at their actual finite domains. The complete sparse-law proof and eighteen current/historical mutation sources and errors remain historical, not present execution evidence.
++
++**N5 — Resolution.** Finite Fourier/image and matrix challenges exercise the specified formulas. No numerical thermodynamic, beta-infinity, principal-flux or photon proof is claimed. Executed certificates state exactly the two diagnostic families completed.
++
++**N6 — Positive content.** Exact compact normalization, contact/mixture identities and the bounded sine-source/static-curl results preserve their complete arguments. A stronger physical-source comparison remains open.
++
++**N7 — State boundary.** Fixed finite temperature and supplied contact concentration or ergodicity are not physical thermal Gauss projection, vacuum selection or a photon pole. No model-wide obstruction is claimed.
++
++**N8 — Reopening.** Further source/state/temperature control can extend these results. The deferred sparse construction remains available in full for an honestly completed future certification.
+--- original/notes/COMPACT_SINE_SCORE_DOMINATION_AND_STATIC_CURL_LIMIT.md
++++ docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,11 +1,27 @@
++---
++claim_id: compact_rotor_sine_score_static_curl_limit_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/compact_rotor_sine_score_check_2026_09_16.py
++claim_scope: "Actual compact sine-source MGF bound and conditional static exact-curl Gaussian limit at fixed g and finite beta, with explicit deterministic contact concentration or supplied spatial ergodicity."
++upstream_dependencies: []
++---
++
+ # Actual compact sine scores: exponential control and a static curl limit
+ 
+-Working author proposal, 2026-09-16. This note uses the supplied pure compact
+-rotor Hamiltonian and its actual finite-temperature path law, including all
+-windings. It proves a source bound and gives a conditional Gaussian limit
+-for time-integrated sine scores tested against static spatial curls. The
+-observable, source class, state and temperature restrictions are essential.
+-This is neither the full magnetic field limit nor a photon phase theorem.
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Actual compact sine-source MGF bound and conditional static exact-curl Gaussian limit at fixed g and finite beta, with explicit deterministic contact concentration or supplied spatial ergodicity. The complete proof is self-contained below. No result from PR8165 or PR8166 is a mathematical premise. The Hamiltonian, coupling, thermal state and source class are supplied, not selected from framework axioms. No audit verdict is asserted.
+ 
+ ## 1. Supplied law and observables
+ 
+@@ -196,12 +212,11 @@
+ be deterministic. This note does not replace the resulting conditional
+ variance by an unconditional number or assert a Gaussian limit in that case.
+ 
+-## 6. Scope relative to the campaign target
+-
+-This result uses the extra Gibbs weight and shift identity absent from the
+-sparse-loop construction. It prevents that construction's exploding MGFs
+-for the actual sine score and controls a particular diffuse source sector.
+-It does not prove the desired full compact-to-real magnetic comparison:
++## 6. Scope of the source and state theorem
++
++This result uses the supplied Gibbs weight and exact shift identity to
++control a particular diffuse sine-source sector. Its scope for a further
++compact-to-real magnetic comparison is as follows:
+ 
+ - The score is sin(B)/g, not principal(B)/g or the local integer filling.
+   At fixed g, even rare branch events cannot be discarded by a pointwise
+@@ -221,4 +236,30 @@
+ sector and its time dependence at fixed g, including normalized compact
+ weights and the intended source. No framework axiom or primitive is changed.
+ 
+-For the scope of negative statements, see the [N1-N8 review](../NO_GO_DISCIPLINE_CHECKLIST.md).
++The separate sparse-loop construction and its negative implication are
++preserved as deferred historical science in the recovery packet. They are
++not a live claim of this note.
++
++## Evidence and historical boundary
++
++Primary runner: `scripts/compact_rotor_sine_score_check_2026_09_16.py`. The runner retains all original arithmetic, fixtures, assertions and tolerances. Its 120-second timeout is unchanged; a 768 MiB external process-tree cap is proposed from the finite dense matrices and library overhead, not measured RSS. JSON is written under `logs/runner-cache/`. `TOTAL: PASS=2 FAIL=0` counts the two completed diagnostic families, not dynamic assertions or exhaustive theorem coverage. Static assertion count is separately labelled.
++
++The [exact historical recovery](work_history/repo/review_feedback/pr8167-evidence/README.md) preserves all 116 original paths, modes, blobs and hashes, including the complete sparse construction and calculation, every current/historical mutation, failed side4 adjacency claim and passing-but-insufficient check, and failed Fourier2/3 refinement. The universal sparse-geometry negative implication is deferred with its full proof and branch recovery handle. It is neither a live bounded conclusion nor mathematically refuted by the procedural N1 limitation.
++
++## No-Go Discipline Gate
++
++**N1 — Actual scope.** This note states the positive identities or conditional source theorem above. The separate sparse-law universal negative conclusion is absent from the live claim; formal negative certification is deferred, with no invented five-route coverage.
++
++**N2 — Premises.** The supplied rotor model, full thermal trace and stated source/state conditions are the exact premises. Open extensions are not counted as independent impossibility walls.
++
++**N3 — Imports.** Normalized Haar measure, all windings, Feynman-Kac, electric Dyson expansion and standard differentiation/ergodic tools are explicit. No empirical fit or native model-selection claim is made.
++
++**N4 — Controls.** Free-circle derivatives and gapped finite rotors calibrate the displayed identities at their actual finite domains. The complete sparse-law proof and eighteen current/historical mutation sources and errors remain historical, not present execution evidence.
++
++**N5 — Resolution.** Finite Fourier/image and matrix challenges exercise the specified formulas. No numerical thermodynamic, beta-infinity, principal-flux or photon proof is claimed. Executed certificates state exactly the two diagnostic families completed.
++
++**N6 — Positive content.** Exact compact normalization, contact/mixture identities and the bounded sine-source/static-curl results preserve their complete arguments. A stronger physical-source comparison remains open.
++
++**N7 — State boundary.** Fixed finite temperature and supplied contact concentration or ergodicity are not physical thermal Gauss projection, vacuum selection or a photon pole. No model-wide obstruction is claimed.
++
++**N8 — Reopening.** Further source/state/temperature control can extend these results. The deferred sparse construction remains available in full for an honestly completed future certification.
+--- original/evidence/compact_cover_source_check.py
++++ scripts/compact_rotor_cover_source_check_2026_09_16.py
+@@ -5,6 +5,9 @@
+ nor identify a background-source partition ratio with an observable MGF.
+ """
+ AUDIT_TIMEOUT_SEC=120
++AUDIT_MEMORY_MB=768
++AUDIT_INPUT_PATHS=['docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++EXPECTED_INPUT_SHA256={'docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md': '3089086a1191446ccea22cc8368eba4907aa80222d430839043948feaf9ca9a8'}
+ from itertools import product
+ from pathlib import Path
+ import hashlib,json,math,time
+@@ -133,7 +136,33 @@
+     out=dict(source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),scope=__doc__,
+              circle=circle_checks(),rotors=rotor_checks(),status='PERSONAL_CHECKS_COMPLETED')
+     out['elapsed_seconds']=time.monotonic()-start
+-    print(json.dumps(out,indent=2,sort_keys=True))
++    _emit(out)
+ 
+ 
+-if __name__=='__main__':main()
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_PATHS:
++        if hashlib.sha256((root / name).read_bytes()).hexdigest() != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 2
++    report["total_unit"] = "completed diagnostic families, not dynamic assertions"
++    report["static_source_assert_statements"] = 15
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
++    print(json.dumps(report, indent=2, sort_keys=True))
++    print("TOTAL: PASS=2 FAIL=0")
++    print('per_element: image/Fourier kernels and three source derivatives; one/two-plaquette Ward identities.')
++    print('per_site: finite one/two-plaquette systems; no thermodynamic simulation.')
++    print('per_mode: images8/10, Fourier120/160 at120 digits; rotor cutoffs up to24 and two-coordinate cutoff12.')
++    print('per_block: all original coupling, time, endpoint and source fixtures completed.')
++    print('lattice_wide: checked and not executed — all-volume or photon limits are not part of these finite calculations.')
++
++if __name__ == '__main__':
++    _check_inputs()
++    main()
+--- original/evidence/compact_score_check.py
++++ scripts/compact_rotor_sine_score_check_2026_09_16.py
+@@ -5,6 +5,9 @@
+ 2x2 plaquette complex. The independent-rotor limit is a gapped comparator.
+ """
+ AUDIT_TIMEOUT_SEC=120
++AUDIT_MEMORY_MB=768
++AUDIT_INPUT_PATHS=['docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++EXPECTED_INPUT_SHA256={'docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md': '4481e4feb62a7abccac574b07e18604922a55044955a6c8ee5212d140132759b'}
+ from itertools import product
+ from pathlib import Path
+ import hashlib,json,math,time
+@@ -153,7 +156,33 @@
+              scope=__doc__,torus=torus_checks(),gapped_comparator=independent_rotors(),
+              status='PERSONAL_CHECKS_COMPLETED')
+     out['elapsed_seconds']=time.monotonic()-start
+-    print(json.dumps(out,indent=2,sort_keys=True))
++    _emit(out)
+ 
+ 
+-if __name__=='__main__':main()
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_PATHS:
++        if hashlib.sha256((root / name).read_bytes()).hexdigest() != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 2
++    report["total_unit"] = "completed diagnostic families, not dynamic assertions"
++    report["static_source_assert_statements"] = 18
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
++    print(json.dumps(report, indent=2, sort_keys=True))
++    print("TOTAL: PASS=2 FAIL=0")
++    print('per_element: actual sine-source matrices, amplitude/phase factors and static-curl Ward/Taylor controls.')
++    print('per_site: 2x2 plaquette complex in a zero-harmonic Fourier electric sector; not full physical thermal Gauss trace.')
++    print('per_mode: Fourier cutoffs3/4, dimensions343/729; original nonexact source control retained.')
++    print('per_block: two thermal parameter pairs, three source strengths and independent-rotor copy counts1/16/256/4096.')
++    print('lattice_wide: checked and not executed — infinite-volume conditional Gaussian result uses its full analytic contact-concentration proof.')
++
++if __name__ == '__main__':
++    _check_inputs()
++    main()

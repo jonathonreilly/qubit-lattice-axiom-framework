@@ -1,0 +1,81 @@
+{
+  "status": "PLAN ONLY; NOT EXECUTED",
+  "concurrency": 1,
+  "unique_programs": 2,
+  "order": [
+    {
+      "runner": "scripts/compact_rotor_cover_source_check_2026_09_16.py",
+      "source_sha256": "6e36daccb31eccc081a7e1c992d7402e37a5e4061927e62634f56c73ce5dec2a",
+      "command": [
+        "python3",
+        "scripts/compact_rotor_cover_source_check_2026_09_16.py"
+      ],
+      "ordered_inputs": [
+        {
+          "path": "docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "3089086a1191446ccea22cc8368eba4907aa80222d430839043948feaf9ca9a8"
+        }
+      ],
+      "timeout_seconds": 120,
+      "process_tree_rss_limit_bytes": 805306368,
+      "json_output": "logs/runner-cache/compact_rotor_cover_source_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/compact_rotor_cover_source_check_2026_09_16.txt",
+      "expected_total": 2,
+      "count_scope": "Two completed diagnostic families, not dynamic assertion counts. Every original assertion must finish before TOTAL is emitted.",
+      "resource_basis": "Maximum dense625-dimensional two-plaquette eigenproblem with several real/complex work arrays;120-digit scalar circle sums.",
+      "helper_execution": "Standalone primary, no local scientific imports, helpers or sibling executions.",
+      "failure_policy": "Preserve exit, stdout, stderr, timing, process-tree resources and any partial JSON in a new immutable attempt record. No automatic retries or raised limits."
+    },
+    {
+      "runner": "scripts/compact_rotor_sine_score_check_2026_09_16.py",
+      "source_sha256": "e90f995637b707fa435dd087862786def65a76ce58f3e36bf140e93abb645cb4",
+      "command": [
+        "python3",
+        "scripts/compact_rotor_sine_score_check_2026_09_16.py"
+      ],
+      "ordered_inputs": [
+        {
+          "path": "docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "4481e4feb62a7abccac574b07e18604922a55044955a6c8ee5212d140132759b"
+        }
+      ],
+      "timeout_seconds": 120,
+      "process_tree_rss_limit_bytes": 805306368,
+      "json_output": "logs/runner-cache/compact_rotor_sine_score_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/compact_rotor_sine_score_check_2026_09_16.txt",
+      "expected_total": 2,
+      "count_scope": "Two completed diagnostic families, not dynamic assertion counts. Every original assertion must finish before TOTAL is emitted.",
+      "resource_basis": "Maximum dense729-dimensional Fourier sector; four cosine/sine matrices and thermal eigenvector/complex source work arrays. Dozens of matrix-sized temporaries plus BLAS/Python overhead; no volume sweep.",
+      "helper_execution": "Standalone primary, no local scientific imports, helpers or sibling executions.",
+      "failure_policy": "Preserve exit, stdout, stderr, timing, process-tree resources and any partial JSON in a new immutable attempt record. No automatic retries or raised limits."
+    }
+  ],
+  "prepared_reference": {
+    "path": "/private/tmp/review-drain-20260915/drain8167-author-prepared-v1.json",
+    "sha256": "b1249f0427dc7e1a8523775fd6341a2a7bbb7b007b373f19af7296d63b8aa597"
+  },
+  "source_freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8167-prepared-v1-source-freeze.json",
+    "sha256": "4f2760ea5c4f5cc48161f617e427039537403c99d8392d0ec628919f00fcb6ba"
+  },
+  "resource_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8167-author-input-resource-plan-v1.json",
+    "sha256": "872655510f529cf80c574a640a4d3e700a1dc8d6cb171db410c8d8a35c5de309"
+  },
+  "requirements": [
+    "Original reviewer clean affected-source review must bind prepared-v1; any correction requires a new immutable preparation and builder version.",
+    "Root advances to then-current main and explicitly dispatches builder; exact staged cheap preflight and original reviewer cold-source confirmation precede captures.",
+    "External wrapper enforces120s/768MiB process-tree RSS per program, serially. Source declarations alone are not enforcement or measured RSS.",
+    "Authenticate and save each actual stdout with current runner_cache API, source/input identities and resource receipt; JSON diagnostics alone are not canonical evidence.",
+    "No historical sparse-loop or mutation reruns. The complete sparse construction/negative implication stays deferred and branch recovery remains.",
+    "Original same-session final evidence confirmation and root combined validation follow actual source-bound execution."
+  ],
+  "affected_source_confirmation": {
+    "path": "/private/tmp/review-drain-20260915/drain8167-early-review-v1.json",
+    "sha256": "3f9bd0c27e60a76129108664215174158f2fa3172eb02db90710d7d6e6be5681"
+  },
+  "prior_unexecuted_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8167-capture-plan-v1.json",
+    "sha256": "62074117c6f73c8466b2d15104a2c9c1cc0ba317973173c89988bf68f31de4d4"
+  }
+}

@@ -1,0 +1,3 @@
+# PR8166 original recovery
+
+The [manifest](manifest.json) records every one of the 123 original paths, modes, Git blobs and raw SHA256 hashes. Uniquely named gzip payloads decode to exact originals, including four full proofs, all prior sources, unsuccessful sign/helper attempts, twelve mutations and their failures, and old evidence. Original exclusion arguments remain historical, with formal negative certification deferred and the branch retained for partial closure. The archive preserves source independently of branch retention; author status and old captures are not current review authority.

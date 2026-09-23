@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/compact_rotor_integer_filling_check_2026_09_16.py
+runner_sha256: 66d67d0e3b0fb26c3e2e728c80ce6b9482e9943b86a11c11ee4112547e528b5b
+input_fingerprint_sha256: 1bdd51d42e4fc8b4f3cf5b58033875d8e2a0d221a8c59e8f67d5fd7e244d4bb2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+per_element: integer boundary and Hodge orientation identities
+per_site: finite four-dimensional chains and witness membership counts
+per_mode: checked and not executed; no spectral decomposition is performed by this integer-chain program
+per_block: five completed finite diagnostic families; no exhaustive theorem execution
+lattice_wide: not executed; infinite fillings/tail use explicit probability premise and written proof
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

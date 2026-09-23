@@ -1,0 +1,13 @@
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+remote: Bypassed rule violations for refs/heads/main:        
+remote: 
+remote: - Changes must be made through a pull request.        
+remote: 
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+   a1777fd8af..f947216c6e  HEAD -> main
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+LANDED f947216c6ec62d6c663b9c73ef180b1f4f8b622f

@@ -1,0 +1,14 @@
+{
+  "collection": "train92-collected-units.json",
+  "sha256": "91e6b70680d32e1c36d8d22147775f8193af18f886eb8e6afb170d14033d4977",
+  "evidence_files": 239,
+  "verified_canonical_references": [
+    "docs/audit/scripts/repo_invariants_check.py",
+    "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+    "scripts/runner_cache.py"
+  ],
+  "historical_local_recovery": {
+    "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-local-before-recovery-v1.json",
+    "sha256": "4c2cf9ad40bf7a385a6673351cd9d3d2f4988025bb2581948e6e71e6e40d363d"
+  }
+}

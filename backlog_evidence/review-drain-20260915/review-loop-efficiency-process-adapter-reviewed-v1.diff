@@ -1,0 +1,31 @@
+--- /private/tmp/review-drain-20260915/enroll_drain_receipt_v2.py
++++ /private/tmp/review-drain-20260915/enroll_process_receipt_v1.py
+@@ -63,22 +63,21 @@
+ required = {n['path']: [graph.claim_id_from_path(w / d) for d in n['repository_dependencies']]
+             for n in r['notes']}
+ scope = Path(r['reviewer']['report']['path']).relative_to(out).as_posix()
++assert not r['notes'] and not r.get('supporting_proofs', []), 'Process-only adapter'
++assert set(x['path'] for x in r['non_science_notes']) == set(sources), 'Complete four-file process disposition required'
++assert set(git('diff', '--name-only', r['source']['base']+'...HEAD').splitlines()) == set(sources)
++assert git('rev-parse', 'HEAD^{tree}') == r['source']['tree'], 'Source must already be committed'
+ prs = []
+-for row in r['constituents']:
+-    match = re.fullmatch(r'(?:PR|#)?(\d+)', str(row['id']))
+-    assert match, row['id']
+-    prs.append(int(match.group(1)))
+-subprocess.run(['git', 'commit', '-q', '-m', 'Preserve independently reviewed source unit PR' + a.unit], check=True)
+ head = git('rev-parse', 'HEAD')
+ assert git('rev-parse', 'HEAD^{tree}') == r['source']['tree']
+-u = {'unit': a.unit, 'prs': prs,
++u = {'unit': a.unit, 'prs': prs, 'procedural_only': True, 'procedural_review': scope,
+      'commits': [head], 'final_head': head, 'source_paths': sources,
+      'inputs': inputs, 'reports': list(reports), 'review_evidence_hashes': reports,
+      'canonical_unit_record': rp.name, 'canonical_preflight': pp.name, 'required_repository_claim_ids': required,
+      'dependency_scope': scope,
+      'dependency_reason': ' '.join(dict.fromkeys(n['dependency_rationale'] for n in r['notes'])),
+      'validated_source_tree': r['source']['tree'],
+-     'commit_mapping': 'Root committed exactly the independently confirmed and mechanically checked staged tree; original v1 report/check identities preserved.'}
++     'commit_mapping': 'Existing exact process-only source commit independently confirmed; this adapter performs no commit, source mutation, review inference or PR fabrication.'}
+ collection = {'units': [u], 'science_notes': sum(n['path'] in sources for n in r['notes']), 'source_count': len(sources),
+               'collection_closed': a.departure}
+ target.write_text(json.dumps(collection, indent=2) + '\n')

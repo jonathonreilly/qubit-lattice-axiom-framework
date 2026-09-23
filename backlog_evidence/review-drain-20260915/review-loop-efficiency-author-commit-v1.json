@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "stdout": "[detached HEAD be3809098b] Document demonstrated review-loop efficiency improvements\n Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly:\n\n    git config --global user.name \"Your Name\"\n    git config --global user.email you@example.com\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 4 files changed, 47 insertions(+), 1 deletion(-)\n",
+  "stderr": "",
+  "staged_tree": "5b7890b3e1ce34bd62e94acbe53f364629551190"
+}

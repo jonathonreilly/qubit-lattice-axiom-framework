@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "status": "COMMITTED SOURCE ONLY; final same-session confirmation and integration pending",
+  "unit_id": "review-loop-efficiency-docs-v1",
+  "owner": "review-loop-efficiency-author",
+  "worktree": "/private/tmp/review-drain-20260915/review-meta-slot",
+  "base": "a1777fd8af3c62caeef8431b8791fa69ababc1ea",
+  "commit": "be3809098bd4af9445f15c4f82138b918ccb744e",
+  "tree": "5b7890b3e1ce34bd62e94acbe53f364629551190",
+  "paths": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "before_sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "before_sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "before_sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "before_sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+    }
+  ],
+  "deleted_paths": [],
+  "vocab_lint_changed_bytes": false,
+  "whitespace_checks": [
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "a1777fd8af3c62caeef8431b8791fa69ababc1ea",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-review-v1.json",
+      "sha256": "e0d39c2f4525f57be3768935a4358c78e9962f23ea6f158da515897d529d28f7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-proposal-v1/manifest.json",
+      "sha256": "0bbedf9128373615ab314c5ee2222133271ba8ea52239703251c423efeaf6fcc"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-proposal-v1/proposal.patch",
+      "sha256": "a9e9899332d59c462fd9be9e302c305f3577973c4a23948a513e4b0e27181877"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-author-acquire-v1.json",
+      "sha256": "8cf938d42d6804c5d86373ff0aa1e09758b0cc01e0078c4864857c61995bbddf"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-author-vocab-command-v1.json",
+      "sha256": "4403f543258e0b4784c65b26794649669b6b68b4dce2fb76c8bd16bddc86b5f2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-author-vocab-v1.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-author-commit-v1.json",
+      "sha256": "50ffff7895363ae9f30dc2d2418cfd0e7cc79b1bb9e7e1d5bb6feb6b06155c6c"
+    }
+  ],
+  "science_executions": 0,
+  "combined_gates": 0,
+  "cache_checks": 0,
+  "pushes": 0,
+  "local_skill_sync": false
+}

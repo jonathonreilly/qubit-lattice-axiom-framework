@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonBridger/.codex/skills/review-loop/scripts/review_workspace.py",
+    "release",
+    "--repo",
+    "/private/tmp/review-drain-20260915/review-meta-slot",
+    "--pool",
+    "/private/tmp/review-drain-20260915",
+    "--slot",
+    "review-meta-slot",
+    "--owner",
+    "review-loop-efficiency-author",
+    "--expected-head",
+    "be3809098bd4af9445f15c4f82138b918ccb744e"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"common_git_dir\": \"/Users/jonBridger/Documents/New Axioms Lets Go/.git\",\n  \"head\": \"be3809098bd4af9445f15c4f82138b918ccb744e\",\n  \"owner\": null,\n  \"path\": \"/private/tmp/review-drain-20260915/review-meta-slot\",\n  \"preserved_ref\": \"refs/review-loop/preserved/review-meta-slot-65052a3315c640feab0b300d4792114b\",\n  \"schema_version\": 1\n}\n",
+  "stderr": ""
+}

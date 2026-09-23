@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "status": "SOURCE COMMITTED; original reviewer final confirmation and train92 landing pending",
+  "base": "a1777fd8af3c62caeef8431b8791fa69ababc1ea",
+  "commit": "be3809098bd4af9445f15c4f82138b918ccb744e",
+  "tree": "5b7890b3e1ce34bd62e94acbe53f364629551190",
+  "worktree": "/private/tmp/review-drain-20260915/review-meta-slot",
+  "worktree_released": true,
+  "preserved_ref": "refs/review-loop/preserved/review-meta-slot-65052a3315c640feab0b300d4792114b",
+  "paths": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "before_sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "before_sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "before_sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "before_sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+    }
+  ],
+  "vocabulary_changed_bytes": false,
+  "all_three_whitespace_checks_exit_zero": true,
+  "source_exactly_accepted_proposal": true,
+  "actual_constituent": "review-loop-efficiency-methodology-source; real source commit against its actual parent; no PR invented",
+  "canonical_draft": "schema2 with empty notes/supporting_proofs, four explicit non_science_notes, five required API tooling paths plus four actual workflow tooling paths, 14 authority/context inputs",
+  "pending": [
+    "Original same-session reviewer must confirm final actual-base source and identity-only dispositions",
+    "Review changed actual-main tooling maps identified in main-input-check",
+    "Canonical draft preflight and combined integration validation by root; no cache or combined gate executed by author",
+    "Landing and local skill synchronization by root after final confirmation"
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-author-source-freeze-v1.json",
+      "sha256": "aade62362bc5f44df85a08ee814284bc8d1ffdb4a46c80235dd0ce01aceae445"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-author-unit-draft-v1.json",
+      "sha256": "2b4e67a628fa71a1af7bc95c56da8cbf1bb1734b49799e7a35cc25d0428c547f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-author-dispositions-v1.json",
+      "sha256": "e5e4247a649f267a79a4fc5893f8b4625c50ec51377b0a75386780d1808f1657"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-author-main-input-check-v1.json",
+      "sha256": "b46abb80f29a881e5b5219a3b1cc2f4a2488eb734106c43a95710b0f2e0720b5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-review-v1.json",
+      "sha256": "e0d39c2f4525f57be3768935a4358c78e9962f23ea6f158da515897d529d28f7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-author-release-v1.json",
+      "sha256": "61a50dad9c0328b58f8162f334c4c6443123cf61d0824195660fab78239ef0c4"
+    }
+  ],
+  "limits": {
+    "combined_gates": 0,
+    "cache_checks": 0,
+    "scientific_executions": 0,
+    "integration_operations": 0,
+    "pushes": 0,
+    "local_skill_sync": false
+  }
+}

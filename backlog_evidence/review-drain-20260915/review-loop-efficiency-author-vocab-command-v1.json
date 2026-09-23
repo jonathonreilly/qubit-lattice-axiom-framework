@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "python3",
+    "scripts/vocab_lint.py",
+    "--fix",
+    "--report-path",
+    "/private/tmp/review-drain-20260915/review-loop-efficiency-author-vocab-v1.json",
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md"
+  ],
+  "exit_code": 0,
+  "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /private/tmp/review-drain-20260915/review-loop-efficiency-author-vocab-v1.json\n",
+  "stderr": ""
+}

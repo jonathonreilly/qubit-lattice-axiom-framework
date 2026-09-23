@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "review-loop-efficiency-docs-v1",
+  "tree": "5b7890b3e1ce34bd62e94acbe53f364629551190",
+  "cache_checked": true,
+  "notes": [],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8769,
+      "misses": 4540
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4538
+    },
+    "declared_inputs": {
+      "hits": 8799,
+      "misses": 4694
+    }
+  },
+  "record_sha256": "3432fc40e1785c821d678b6903facd301e65ca005672dc266ec1692bfc9e4112",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

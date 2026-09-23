@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonBridger/.codex/skills/review-loop/scripts/review_workspace.py",
+    "acquire",
+    "--repo",
+    "/private/tmp/review-drain-20260915/review-meta-slot",
+    "--pool",
+    "/private/tmp/review-drain-20260915",
+    "--slot",
+    "review-meta-slot",
+    "--owner",
+    "review-loop-efficiency-author",
+    "--base",
+    "a1777fd8af3c62caeef8431b8791fa69ababc1ea",
+    "--expected-head",
+    "9203ce0e47e3d95a4cfd32c25d335f0eced47cb3"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"common_git_dir\": \"/Users/jonBridger/Documents/New Axioms Lets Go/.git\",\n  \"head\": \"a1777fd8af3c62caeef8431b8791fa69ababc1ea\",\n  \"owner\": \"review-loop-efficiency-author\",\n  \"path\": \"/private/tmp/review-drain-20260915/review-meta-slot\",\n  \"preserved_ref\": \"refs/review-loop/preserved/review-meta-slot-73045fae7d7548ea8fcb012e001184d2\",\n  \"schema_version\": 1\n}\n",
+  "stderr": "Previous HEAD position was 9203ce0e47 Preserve independently reviewed source unit PR8032\nHEAD is now at a1777fd8af Acknowledge reviewed source topology for train91\n"
+}

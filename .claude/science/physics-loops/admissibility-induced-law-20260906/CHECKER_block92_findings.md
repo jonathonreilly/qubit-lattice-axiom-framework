@@ -6,3 +6,5 @@
 4. **Honesty about the plane bound.** It is below one only for `H_{L/2−1} > 6π²β + 1/2` (`L/2 ~ 10^25` at `β = 1`); the note says so, and the executed plateaus are the evidence at accessible sides.
 5. **Two note fixes before gates.** "Riemann sums" (a name in a theorem section) → "lattice sums"; a mutation named "halved" that doubled the count → renamed.
 6. Provenance: the route is the supervisor's earlier block 20 carried to the bilayer; this block is by Claude Opus 5.5; an other-family referee is owed.
+
+**Corrigendum (2026-09-23, supervisor).** Block 36 (#8507) is prior art for this block and found the per-tick clause behind it excluded by the axioms memo as written (a site never carries more than one record; records are permanent). Status paragraph and Review record amended; no theorem, check or number changed.

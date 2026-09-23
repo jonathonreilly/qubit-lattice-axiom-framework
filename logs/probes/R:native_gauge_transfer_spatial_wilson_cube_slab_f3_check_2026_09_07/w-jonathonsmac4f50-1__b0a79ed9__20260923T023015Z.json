@@ -1,0 +1,34 @@
+{
+ "task": "R:native_gauge_transfer_spatial_wilson_cube_slab_f3_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_spatial_wilson_cube_slab_f3_check_2026_09_07.py",
+ "seed": 30615,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T023015Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "26acb625de1dad7c725268ea06b4605f1a086cae9aa8886365ef50d14980ed23",
+ "stdout_tail": "PASS independent actual cube-slab F3 system: 15 named checks\nper_element:24 Haar links,22 action faces; all5832 solution-link congruences verified.\nper_site: bit-vertex geometry, rank17/nullity5; all243 affine residue solutions retained in JSON.\nper_mode: support histogram {\"5\": 1, \"9\": 6, \"10\": 5, \"11\": 16, \"13\": 37, \"14\": 30, \"15\": 42, \"16\": 64, \"17\": 34, \"18\": 6, \"19\": 2}\nper_block: unique input cap [[[0, 0, 1, 1], -1], [[0, 0, 2, 0], -1], [[0, 0, 2, 1], 1], [[0, 1, 2, 0], 1], [[0, 1, 2, 1], -1]] ; minimum5, next9.\nlattice_wide: necessary center selection plus exact scalar remainder comparison; Haar coefficient remains source proof.\nREMAINDER_TO_LEADING_CEILING 158366590209/3906250000000\nSOURCE_SHA256 87e1ea5e9ac6fa8e61f4ecc05dc08db245df250b626c5eacf810046f1b0d842c\nDEPENDENCIES {}\nRESOURCES 0.01585670799249783 21.9375 seconds/MiB;180 limits, BLAS1\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T023015Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_spatial_wilson_cube_slab_f3_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

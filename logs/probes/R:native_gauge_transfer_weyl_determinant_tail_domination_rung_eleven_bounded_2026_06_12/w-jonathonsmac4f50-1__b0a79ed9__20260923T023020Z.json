@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_weyl_determinant_tail_domination_rung_eleven_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_weyl_determinant_tail_domination_rung_eleven_bounded_2026_06_12.py",
+ "seed": 30620,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T023020Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cfb97a1ff48f264046582472fc91f78c85bffa0a636b01d2cc14d2b2f3a162a1",
+ "stdout_tail": "MALIZATION AND FINITE WEIGHT-TAIL WITNESSES\nbeta= 48 e^-beta c00=2.743640682111e-06 beta^(3/2)*e^-beta*c00=9.124080113527e-04\nbeta= 96 e^-beta c00=1.734045316585e-07 beta^(3/2)*e^-beta*c00=1.631050067134e-04\nbeta=192 e^-beta c00=1.089636751407e-08 beta^(3/2)*e^-beta*c00=2.898902346594e-05\nPASS: c00 witness rows are positive but not an analytic lower bound\n      positivity is witnessed numerically only\nfinite outside-weight grid beta=96 cap=12 shell=20 max_row=(4, 13) max_scaled_exact=0.034121300042 K_tail_sad=1.329294628913\nPASS: finite outside-weight witness is bounded on the sampled grid\n      saddle tail is a loose proxy and not a true Wilson tail proof\nWRONG-STRUCTURE FALSIFIER ROWS beta=96 p=6 q=5\ncorrect exact determinant ratio      = 0.078225286971\ncorrect saddle N_c=3                = 0.079761275743\nwrong N_c=2                         = 0.122681758828\nwrong N_c=4                         = 0.051856618041\nwrong dimension omitted             = 0.000292165845\nwrong determinant size 2x2          = 0.005101635871\nwrong highest-weight lambda         = 0.030362625798\nPASS: wrong N_c substitutions visibly move the saddle row\n      N_c=2 and N_c=4 both separate from N_c=3\nPASS: wrong dimension, determinant size, and lambda index visibly move the exact object\n      wrong-structure substitutions are not small perturbations\nPASS: falsifier values reproduce the note's displayed rows to tolerance\n      checked exact, dimension-omitted, and 2x2 falsifier rows\n\nTOTAL: PASS=16, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T023022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

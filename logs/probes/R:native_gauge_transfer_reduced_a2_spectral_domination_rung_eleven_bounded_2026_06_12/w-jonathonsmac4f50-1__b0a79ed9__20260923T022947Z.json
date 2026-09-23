@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_reduced_a2_spectral_domination_rung_eleven_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_reduced_a2_spectral_domination_rung_eleven_bounded_2026_06_12.py",
+ "seed": 30587,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T022947Z",
+ "elapsed_s": 14.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a0a1dcfe5d0915e550ce95c0be0055c56944c88ae136c24b4d7637e7985e6e05",
+ "stdout_tail": "  0.834363   0.779367   0.054996   0.93409  0.20481\n  60    28   0.847469   0.819819   0.027651   0.96737  0.19925\n 120    37   0.854701   0.840331   0.014369   0.98319  0.19650\n 180    45   0.857260   0.847168   0.010093   0.98823  0.19559\nPASS: c_D < c_J on the tested grid (margin strictly positive)\n      margins = [0.10895, 0.054996, 0.027651, 0.014369, 0.010093]\nPASS: the margin c_J - c_D shrinks monotonically with beta\n      margins decreasing: [0.10895, 0.054996, 0.027651, 0.014369, 0.010093]\nPASS: c_D/c_J climbs monotonically toward 1 (leading coefficients near-equal)\n      ratios = [0.86573, 0.93409, 0.96737, 0.98319, 0.98823]\nPASS: beta*(c_J-c_D) stays O(1), consistent with equal leading coefficients\n      beta*(c_J-c_D) = [1.634, 1.65, 1.659, 1.724, 1.817] (positive witnessed products)\nPASS: margin>0 => d/dbeta log(l1/l0) ~ -(c_J-c_D)/beta < 0 (decrease supported)\n      the ratio decreases (consistent with the measured trajectory), but ever more slowly\nPASS: H_spec uniform-margin domination is NOT established (shrinking finite margin)\n      the leading c_J, c_D are near-equal; uniform strictness is a delicate subleading question\nPASS: anti-fab: c_J, c_D are spectral witnesses (no fit, no closure constant)\n      computed from eigh of the finite operator; no curve_fit/target value used\nPASS: falsifier present: the comparison depends on the exact J normalization\n      J = six-neighbor average /6; a wrong normalization rescales Delta_J vs Delta_D\n\nTOTAL: PASS=8, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T023002Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

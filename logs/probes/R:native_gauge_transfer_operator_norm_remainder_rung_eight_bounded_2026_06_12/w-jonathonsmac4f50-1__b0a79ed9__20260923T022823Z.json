@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py",
+ "seed": 30503,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T022823Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ba881864511d6be32148a38f86302f876f3080bc9e4a31036f1813d72f49d412",
+ "stdout_tail": "te\nPASS: character authority states the six-neighbor source recurrence\nfinite_packet_semigroup_rows\n  shell= 2 symmetry_err=0.000e+00 lambda_max_J=0.649184419321 ||exp(25(J-I))||=0.000155263091\n  shell= 4 symmetry_err=0.000e+00 lambda_max_J=0.834698682486 ||exp(25(J-I))||=0.016042193438\n  shell= 8 symmetry_err=0.000e+00 lambda_max_J=0.938737197658 ||exp(25(J-I))||=0.216195960389\n  shell=12 symmetry_err=0.000e+00 lambda_max_J=0.968496918282 ||exp(25(J-I))||=0.454945775002\nPASS: finite packet J compressions are symmetric\nPASS: finite packet J compressions have top eigenvalue at most one\nPASS: scaled semigroup exp((beta/2)(J-I)) is contractive on witness packets\nPASS: semigroup contraction statement is present in the note\nratio_perturbation_rows\n  epsilon=0.010 worst_delta=1.205864444444e-02 formula_bound=1.205864444444e-02\n  epsilon=0.050 worst_delta=6.283188421053e-02 formula_bound=6.283188421053e-02\n  epsilon=0.100 worst_delta=1.326450888889e-01 formula_bound=1.326450888889e-01\nPASS: ratio perturbation formula bounds the Weyl worst-case rows\nPASS: ratio bound is below one under the stated epsilon gate\n      epsilon_gate=(1-L)/3, L_plus_bound=0.632513415727\nPASS: perturbation-transfer formula is present in the note\nPASS: note names the missing Wilson-to-saddle estimate instead of declaring K\nPASS: note states that R(beta), K, and beta_0 are not assembled\nPASS: negative-claim discipline gate is included\nPASS: runner and cache paths are named in the note\n\nTOTAL: PASS=25, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T022823Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

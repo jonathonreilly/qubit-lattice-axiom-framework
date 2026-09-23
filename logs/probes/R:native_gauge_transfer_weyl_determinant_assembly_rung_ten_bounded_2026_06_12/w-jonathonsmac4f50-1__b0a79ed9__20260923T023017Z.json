@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12.py",
+ "seed": 30617,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T023017Z",
+ "elapsed_s": 3.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b9e2646038469d792d041f2d7e46cba772d583ab180cc5d9faa67f740483bac9",
+ "stdout_tail": "t_r=25.894978539180 saddle=26.882522035981 rel_diff=-3.673552263733e-02\n  beta= 96 (p,q)=( 6, 5) exact_r=73.579022615880 saddle=75.023779892741 rel_diff=-1.925732452998e-02\n  beta=192 (p,q)=(10, 8) exact_r=207.380571748836 saddle=209.688188327461 rel_diff=-1.100499077717e-02\nPASS: true determinant rows show decreasing relative exact-to-saddle residual\n      finite consistency witness only\nactive_grid_witness_rows\n  beta= 48 cap= 8 max_sqrt_beta_scaled_resid=2.710005629592e-02 at=(5,5) exact=6.896246186280e-02 saddle=7.287401806218e-02\n  beta= 96 cap=12 max_sqrt_beta_scaled_resid=1.907301888919e-02 at=(7,7) exact=7.405901338733e-02 saddle=7.600564522620e-02\n  beta=192 cap=17 max_sqrt_beta_scaled_resid=1.337437050442e-02 at=(10,11) exact=7.233605140744e-02 saddle=7.330126345881e-02\nPASS: active-grid witness residual decreases across sampled beta rows\n      finite consistency witness only\nfalsifier_rows_beta_96_p_6_q_5\n  correct exact determinant ratio: 0.078225286971\n  correct saddle N_c=3: 0.079761275743\n  wrong N_c=2: 0.122681758828\n  wrong N_c=4: 0.051856618041\n  wrong dimension omitted: 0.000292165845\n  wrong determinant size 2x2: 0.005101635871\n  wrong lambda=(p,q,0): 0.030362625798\nPASS: wrong N_c substitutions visibly differ from the true row\nPASS: wrong determinant size and wrong highest weight visibly differ from the true row\nPASS: wrong dimension substitution visibly differs from the true row\nPASS: final verdict is necessary-but-not-sufficient\n\nTOTAL: PASS=26, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T023020Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

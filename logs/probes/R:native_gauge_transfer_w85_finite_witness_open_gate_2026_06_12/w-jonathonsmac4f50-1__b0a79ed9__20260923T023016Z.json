@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_w85_finite_witness_open_gate_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_w85_finite_witness_open_gate_2026_06_12.py",
+ "seed": 30616,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T023016Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2ff0a38fa5831eca573cb4f268cc4bebd830b204e0254b7029403b58c5558384",
+ "stdout_tail": " 0.13529         9.22     0.0147   0.00e+00\n  300 (0.7,0.7)     0.00998         5.90     0.0017   0.00e+00\n  300 (1.0,0.6)     0.06322        12.40     0.0051   0.00e+00\n  300 (1.3,1.0)     0.10640        28.93     0.0037   0.00e+00\n  300 (0.5,1.4)     0.08179        33.04     0.0025   0.00e+00\n  300 (1.6,1.2)     0.03532        54.67     0.0006   0.00e+00\n  300 (0.9,0.9)     0.14520        10.70     0.0136   0.00e+00\n  600 (0.7,0.7)     0.00415         5.92     0.0007   0.00e+00\n  600 (1.0,0.6)     0.07266        12.35     0.0059   0.00e+00\n  600 (1.3,1.0)     0.11301        27.52     0.0041   0.00e+00\n  600 (0.5,1.4)     0.07266        33.22     0.0022   0.00e+00\n  600 (1.6,1.2)     0.04258        51.94     0.0008   0.00e+00\n  600 (0.9,0.9)     0.13790        10.02     0.0138   0.00e+00\nPASS: sampled W85 cells satisfy rho <= K_geom(a)\n      finite sample only; no uniform K_W bound is inferred\nPASS: sampled rho values are beta-stable on the checked cells\n      (0.7, 0.7):[0.0079, 0.01, 0.0042]; (1.0, 0.6):[0.0702, 0.0632, 0.0727]; (1.3, 1.0):[0.0989, 0.1064, 0.113]\nPASS: finite-mode coefficient probe is stable under mode doubling\n      max |rho(mode)-rho(2*mode)| = 0.00e+00\nPASS: falsifier: wrong saddle prefactor inflates rho on the sampled cell\n      wrong-H rho = 3.065 >> correct-H rho = 0.063\nINFO: worst sampled ratio beta=108, cell=(0.9,0.9), rho=0.13529, K_geom=9.22, ratio=0.0147\nINFO: W85 remains open; this runner is finite sampled support only.\n\nTOTAL: PASS=4, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T023017Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

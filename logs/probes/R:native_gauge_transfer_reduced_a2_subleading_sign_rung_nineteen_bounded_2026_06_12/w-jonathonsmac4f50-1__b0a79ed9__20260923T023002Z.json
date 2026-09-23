@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_reduced_a2_subleading_sign_rung_nineteen_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_reduced_a2_subleading_sign_rung_nineteen_bounded_2026_06_12.py",
+ "seed": 30602,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T023002Z",
+ "elapsed_s": 5.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "60326c0df0b38d1e8c5772c400c1223d059b53c372405fb72df3b11c81e8ebcc",
+ "stdout_tail": "ct -41/2\nPASS: wrong N_c changes P1 visibly\nPASS: wrong dimension omission changes P1 visibly\nPASS: correct P2 sample is exact 135/2\nPASS: wrong N_c changes P2 visibly\nPASS: wrong dimension omission changes P2 visibly\nPASS: swap parity preserves P1 rather than cancelling it\n      P1(1,2)-P1(2,1)=0, P1(1,2)=-41/2\nPASS: symbolic expansion gives retained P1\nPASS: symbolic expansion gives retained P2\nPASS: P1 is mixed-degree, so scalar homogeneity does not repeat W97\n      degrees=[2, 4]\nPASS: P2 is mixed-degree, so beta^-1 Ward step needs more data\n      degrees=[1, 3, 5]\nPASS: symbolic P1 is swap-even\nPASS: [D,L] = -2L on polynomial test\nPASS: [D,C4] = -4C4 on polynomial test\nPASS: heat side has no beta^-1/2 term in the paired six-neighbor expansion\nPASS: C4 exact coefficient row is present\nfenced_w90_style_witness_rows\n  beta= 30 shell=21 cJ_minus_cD=0.054996208392 beta_times_margin=1.649886251769\n  beta= 60 shell=28 cJ_minus_cD=0.027650892544 beta_times_margin=1.659053552662\n  beta=120 shell=37 cJ_minus_cD=0.014369272446 beta_times_margin=1.724312693549\nPASS: finite witness margins are positive on the small W90-style grid\nPASS: finite beta*(margin) rows are printed as witnesses, not proof inputs\n      beta*(margin)=[1.649886, 1.659054, 1.724313]\nPASS: runner contains no fitted target machinery\nPASS: exact rationals are constructed from integer Fraction inputs, not floats\nPASS: final note scope excludes continuum, beta=6, Clay, and audit outcome claims\n\nTOTAL: PASS=37, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T023008Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_reduced_a2_subleading_sign_rung_nineteen_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_reduced_a2_virial_leading_equality_rung_eighteen_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_reduced_a2_virial_leading_equality_rung_eighteen_bounded_2026_06_12.py",
+ "seed": 30608,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T023008Z",
+ "elapsed_s": 6.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "415074772a93a07ee0d14f46291280b4cd014abbaf52543111f26ef304324d86",
+ "stdout_tail": "us_B=1.488709964966 wrong_A_minus_B=-5.794713900806\n  beta=400 shell=80 state=2 A=-2.589481254749 B_over_mu=4.077212992329 A_plus_B=1.487731737579 wrong_A_minus_B=-6.666694247078\nfinite_plus_errors=['0.049200', '0.024555', '0.012268']\nfinite_plus_state_spreads=['0.014053', '0.006993', '0.003490']\nfinite_wrong_combo_spreads=['2.582548', '2.589240', '2.592561']\nfinite_leading_margins_state0_state1=['0.010104', '0.005032', '0.002512']\nPASS: finite saddle A_i+B_i/mu_i errors decrease toward 3/2\nPASS: finite saddle state spread of A_i+B_i/mu_i decreases\nPASS: wrong finite combination remains visibly state-dependent\nPASS: finite leading c_J-c_D margin between states shrinks toward zero\nPASS: note carries the exact status-authority sentence\nPASS: note declares controlled claim type and source-side boundary\nPASS: note links the runner and SHA-pinned cache path\nPASS: one-hop authorities are markdown links\nPASS: quote anchors for H, Q, L, T, c_J, c_D, and subleading warning are present\nPASS: note fences W90 witnesses and avoids comparator promotion\nPASS: note states the exact subleading stopping step\nPASS: note differentiates new material from W96/W95/W86/W90\nPASS: note avoids forbidden overreach phrases\nPASS: note includes the no-go discipline gate for the subleading obstruction\nPASS: note records both ambiguity readings\nPASS: cache path is canonical for this runner\nPASS: runner uses no fit helpers\nPASS: no suspicious float-to-Fraction exact constants are used\n\nTOTAL: PASS=28, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T023014Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_reduced_a2_virial_leading_equality_rung_eighteen_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

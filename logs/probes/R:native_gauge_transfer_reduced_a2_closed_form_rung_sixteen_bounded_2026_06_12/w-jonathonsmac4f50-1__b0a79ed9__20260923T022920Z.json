@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_2026_06_12.py",
+ "seed": 30560,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T022920Z",
+ "elapsed_s": 6.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a698c753f82dead7c70127fa2a2a9978bb0f6c4a1dcb9760b991beb8a74e8ea3",
+ "stdout_tail": "ves 14/3\nPASS: falsifier: wrong J normalization changes the L coefficient\n      L(u^2+v^2)=8/3, raw unnormalized operator gives 8\nfinite_rung_eleven_witness_rows\n  beta shell c_J c_D margin beta_margin lambda1_over_lambda0\n    15    16 0.811415447696 0.702464978092 0.108950469604 1.634257044064 0.216335855768\n    30    21 0.834363055423 0.779366847031 0.054996208392 1.649886251769 0.204812933383\n    60    28 0.847469446625 0.819818554081 0.027650892544 1.659053552662 0.199245016875\n   120    37 0.854700610938 0.840331338491 0.014369272446 1.724312693549 0.196503452859\nPASS: finite rung-eleven witness keeps c_D < c_J on the sampled grid\n      margins=[0.108950469604, 0.054996208392, 0.027650892544, 0.014369272446]\nPASS: finite rung-eleven witness shows c_D/c_J increasing toward tightness\n      c_D/c_J=[0.86572788, 0.934086, 0.9673724, 0.98318795]\nPASS: finite rung-eleven witness keeps beta*(c_J-c_D) positive and same-scale\n      beta_margins=[1.63425704, 1.64988625, 1.65905355, 1.72431269]\nPASS: note contains required status-authority line\nPASS: note declares source-side claim type without audit verdict\nPASS: note avoids forbidden overreach fragments\n      bad=[]\nPASS: note fences finite rung-eleven numbers as witnesses, not proof inputs\nPASS: note names the exact obstruction step\nPASS: anti-fab source scan: no fit helpers or float-to-rational promotion\nNO DERIVED Phi_i/A_i/B_i CLOSED FORM EMITTED: obstruction at the reduced spectral eigenfunction step.\nTOTAL: PASS=18, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T022927Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

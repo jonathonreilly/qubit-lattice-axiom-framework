@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_reduced_a2_discriminant_conjugation_rung_seventeen_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_reduced_a2_discriminant_conjugation_rung_seventeen_bounded_2026_06_12.py",
+ "seed": 30567,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T022927Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "42b6cc71388e49f0e62977d5f441e56f07998b8655dd200a31e4c5b141bc1ab6",
+ "stdout_tail": "ities_deg_0_1_2=[0, 0, 0], deg3_basis=x*y*(x + y)\nPASS: anti-invariant polynomials factor as delta times an invariant quotient\nPASS: delta is L-harmonic\nPASS: delta-Doob generator identity holds on polynomial basis degree <= 3\n      cx=-(x**2 - 2*x*y - 2*y**2)/(3*x*y*(x + y)), cy=(2*x**2 + 2*x*y - y**2)/(3*x*y*(x + y))\nPASS: conjugated generator sends Q to exact constant 4\nPASS: note states the explicit conjugated heat-sandwich operator on g\nfull_plane_multiplier_parity_values\n  signed_delta_times_anti_at_(1,2)=36\n  signed_delta_times_anti_at_sx(1,2)=36\n  abs_delta_times_anti_at_(1,2)=36\n  abs_delta_times_anti_at_sx(1,2)=-36\nPASS: signed full-plane delta multiplier changes the Weyl parity sector\nPASS: note names the exact missing identity after conjugation\ncommutator_falsifier_values\n  exp(Q)*[L,M_Hexp(-Q)]1=x*y*(x + y)*(x**2 + x*y + y**2 - 4)/2\n  at_(1,2)_scaled=9\n  at_(1,2)_actual=9*exp(-7)\nPASS: commutator with the retained multiplier is nonzero\nwrong_root_system_falsifier_values\n  A2_delta(1,2)=6\n  B2_degree4_product(1,2)=30\n  G2_degree6_product(1,2)=1680\n  A1_single_root_product(1,2)=1\nPASS: wrong B2/G2/A1 substitutions visibly break H=delta/2\nPASS: note does not promote closed-form spectral constants\nPASS: note gives both ambiguity readings\nPASS: note differentiates new material from prior rungs\nPASS: no-go discipline gate is visible for the named obstruction\nPASS: N1 lists five attempted routes\nPASS: verification section names this runner total\n\nTOTAL: PASS=29, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T022928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

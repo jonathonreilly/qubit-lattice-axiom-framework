@@ -1,0 +1,34 @@
+{
+ "task": "R:native_gauge_transfer_wilson_discrete_heat_insertion_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_wilson_discrete_heat_insertion_2026_09_07.py",
+ "seed": 30622,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T023022Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "19296d2a9d90bf85a15a2466de9b552a900ddc1e0251075a58c235e069528a60",
+ "stdout_tail": "PASS native Wilson exact discrete-heat insertion rational certificate\nper_element: nine exact rational checks; no sampled spectral value is a proof input.\nper_site: global dominant labels; unchanged exact recurrence and sampled shifted saddle.\nper_mode: 29+768/2045<30 remainder and5/12 insertion ceiling.\nper_block: compact signed insertion and top-Perron comparison are analytic proofs, not numerical checks.\nlattice_wide: no full saddle expansion, Perron sign or physical mass-gap conclusion.\nSOURCE_SHA256 e6b8f38402ebe9a50196d7251ec52068deadb7222f5165945d10a589d99d66a2\nDEPENDENCIES {}\nRESOURCES 0.009893458045553416 20.4375 seconds/MiB;180 limits, BLAS1\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T023023Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_wilson_discrete_heat_insertion_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

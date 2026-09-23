@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_2026_06_12.py",
+ "seed": 30503,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T022823Z",
+ "elapsed_s": 56.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "99bab8883be82ad609f72d20c7a647e37f774aac4f713f2d8cc9339cf0cfaa6c",
+ "stdout_tail": "beta   v0:[Q>2.5^2,3^2,3.5^2]            v1:[...]\n  48   8.96e-03 2.73e-04 3.44e-06      1.05e-01 7.09e-03 1.66e-04\n 108   1.36e-02 4.95e-04 6.33e-06      1.41e-01 1.17e-02 2.89e-04\n 192   1.71e-02 6.67e-04 9.07e-06      1.64e-01 1.49e-02 3.98e-04\n 300   1.93e-02 7.78e-04 1.10e-05      1.77e-01 1.69e-02 4.72e-04\nPASS: outside-weight eigenvector L2 tail small at A=3.5 on the tested grid (v0<=1e-4, v1<=1e-3)\n      v0(3.5)=['3.4e-06', '6.3e-06', '9.1e-06', '1.1e-05'], v1(3.5)=['1.7e-04', '2.9e-04', '4.0e-04', '4.7e-04']\nPASS: super-Gaussian decay: tail(A)/tail(A+0.5) >= 10 (Gaussian cutoff in Q)\n      v0 successive ratios min=24.8 (each +0.5 in A divides by >=10)\nPASS: beta-creep increments shrink on the tested grid\n      v1(A=3) increments ['4.6e-03', '3.2e-03', '2.0e-03'] (finite-grid support, not proof)\nPASS: v1 tail > v0 tail (first-excited state has a node, spreads more)\n      v1/v0 at A=3: [26.0, 23.6, 22.3, 21.7]x\nPASS: dimension-weighted trace mass is FAT at A=2.5 (the WRONG tail object)\n      dim-mass(2.5)=['7.05e-02', '8.32e-02', '9.27e-02', '9.85e-02'] (poly-spread; eigenvector L2 is the right object)\nPASS: anti-fab: tails computed from exact eigenvectors (no fit, no closure constant)\n      v_i from np.linalg.eigh of the exact operator; Q the A2 Casimir form; no curve_fit\n\nTOTAL: PASS=6, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T022920Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

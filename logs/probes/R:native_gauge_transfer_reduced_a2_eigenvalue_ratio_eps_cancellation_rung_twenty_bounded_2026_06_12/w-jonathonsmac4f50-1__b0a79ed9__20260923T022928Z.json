@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_reduced_a2_eigenvalue_ratio_eps_cancellation_rung_twenty_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_reduced_a2_eigenvalue_ratio_eps_cancellation_rung_twenty_bounded_2026_06_12.py",
+ "seed": 30568,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T022928Z",
+ "elapsed_s": 19.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "faef0fa7b536e90f01a348c84d32ca179feb070f05b7951b10ba5e9522161ea8",
+ "stdout_tail": " translation-of-Q term)\nPASS: W99-bug: the dropped term 3u H is nonzero (= 27 at (1,2))\nPASS: P_1(1,2) = -41/2\nPASS: P_2(1,2) = 135/2\nPASS: falsifier: A1 (N_c=2) discriminant is degree 1 (!= A2 cubic H, degree 3)\n[Part 2] lattice commutator identity (no boundary assumption)\nPASS: <v|[C,T_0]|v> = 0 for every eigenvector of symmetric T_0, ANY C  (<1e-10)\n[Part 3] exact-Wilson eps-cancellation witness (b ~ 0) and a_2 ~ 1.66\n  beta=  60.0 shell= 33  Lambda=log(l1/l0)=-1.61321855\n  beta=  90.0 shell= 40  Lambda=log(l1/l0)=-1.62243244\n  beta= 120.0 shell= 46  Lambda=log(l1/l0)=-1.62704426\n  beta= 150.0 shell= 51  Lambda=log(l1/l0)=-1.62981289\n  beta= 200.0 shell= 59  Lambda=log(l1/l0)=-1.63258264\n  fit: L_inf=-1.640879  b(eps)=-0.000820  a2=1.676878  a3=-0.084310\n  force b=0: a2=1.668435\nPASS: eps-cancellation witness: |b (beta^-1/2 coeff)| < 0.02  (~0)\nPASS: eps^2 margin a_2 in (1.55, 1.75)  [matches W90 fence ~1.66, sign POSITIVE]\nPASS: computed a_2 witness is positive (Route-A monotonicity direction support)\n  shell-convergence beta=120: ratio delta(shell, shell+4) rel=2.98e-09\nPASS: shell convergence: lambda_1/lambda_0 stable to <1e-5 (shell vs shell+4)\n[Part 4] a_2^heat = (1/4)(||L Phi_1||^2 - ||L Phi_0||^2) > 0 witness\n  ||L Phi_0||^2=2.036878  ||L Phi_1||^2=6.037156  a_2^heat=1.000070\nPASS: a_2^heat = (1/4)(||L Phi_1||^2 - ||L Phi_0||^2) > 0 (excited state more L-curved)\n  (W97 leading virial c_J=c_D already established; a_2^heat is the eps^2 piece.)\n\nTOTAL: PASS=22, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T022947Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

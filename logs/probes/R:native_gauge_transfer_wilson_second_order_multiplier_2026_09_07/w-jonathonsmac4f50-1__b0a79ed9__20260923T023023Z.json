@@ -1,0 +1,34 @@
+{
+ "task": "R:native_gauge_transfer_wilson_second_order_multiplier_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_wilson_second_order_multiplier_2026_09_07.py",
+ "seed": 30623,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T023023Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "329f311c7740fceb4d011ce7788ace4383029c924da06e3f92e35edc11739201",
+ "stdout_tail": "PASS native Wilson second-order multiplier: four symbolic identities and22 exact rational inequalities\nper_element: exact symbol quartic, Weyl alternant quadratic and two Gaussian differential identities.\nper_site: fixed dominant-weight endpoints with rho=(1,1); shifted window[1/4,2]^2.\nper_mode: exact low/high Fourier remainder constants171 and2618; positive denominator controlled.\nper_block: |v-W-W2/beta|<=29/beta^2 for every beta>=2048 in the declared window.\nlattice_wide: no operator spectral consequence; original native Fourier identity is the conditional parent premise.\nSOURCE_SHA256 c5d3ae664927ae3fb89ad015c9d5e568f9b1ae407260808cb99daacd088cf5b9\nDEPENDENCIES {}\nRESOURCES 0.862602874985896 66.734375 seconds/MiB;180 limits, BLAS1\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T023024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_wilson_second_order_multiplier_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

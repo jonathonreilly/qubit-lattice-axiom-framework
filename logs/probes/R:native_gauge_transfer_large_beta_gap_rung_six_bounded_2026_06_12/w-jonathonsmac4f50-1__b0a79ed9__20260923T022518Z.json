@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_large_beta_gap_rung_six_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_large_beta_gap_rung_six_bounded_2026_06_12.py",
+ "seed": 30318,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b0a79ed9",
+ "started_utc": "20260923T022518Z",
+ "elapsed_s": 184.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dfa133ea90ec5e72e37a8f46b94f7da8370bb42d28867ca0757b875d5ef013a9",
+ "stdout_tail": "ic_reduced beta=100 shell= 60 value=0.195765410548\nanalytic_reduced beta=200 shell= 80 value=0.194781049595\nanalytic_reduced beta=400 shell=120 value=0.194292302716\nanalytic_reduced beta=800 shell=180 value=0.194048778624\n\nanalytic_reduced_extrapolation fit_1_over_beta2=0.193805832833 fit_1_over_beta3=0.193805817316 estimate=0.193805825074 error_proxy=1.552e-08\n\nPASS: saddle-reduced operator ratios decrease on the analytic grid\n      values=0.195765410548, 0.194781049595, 0.194292302716, 0.194048778624\nPASS: numerical and saddle-reduced limit estimates agree\n      true=0.193805815624, analytic=0.193805825074, discrepancy=9.450e-09\nFALSIFIER ROWS ON THE REDUCED OPERATOR\nfalsifier beta=200 shell=80 correct=0.194781049595\nfalsifier beta=200 shell=80 saddle_constant_2=0.267528715388\nfalsifier beta=200 shell=80 J_adjacency_scale_1_over_5=0.165413156203\n\nPASS: wrong saddle constant changes the reduced limit row visibly\n      correct=0.194781049595, saddle_constant_2=0.267528715388\nPASS: wrong six-neighbor J normalization changes the reduced limit row visibly\n      correct=0.194781049595, J_scale_1/5=0.165413156203\nPASS: note contains status, object, limit, runner, cache, and caveat markers\n      checked required note markers\nPASS: one-hop authorities are canonical markdown links with no scratch dependency\n      checked authority-link forms and scratch-free scope\nPASS: note avoids overreach and forbidden physical-scope phrases\n      scanned banned phrase set\n\nTOTAL: PASS=13, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T022823Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

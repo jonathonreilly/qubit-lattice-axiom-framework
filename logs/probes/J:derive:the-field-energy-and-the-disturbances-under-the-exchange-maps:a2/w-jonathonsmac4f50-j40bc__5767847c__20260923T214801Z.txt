@@ -1,0 +1,17 @@
+PASS 1.1 lattice, exactly: under B -> B D (component j scaled by d_j = (-1)^{n_j}) every plaquette curl goes to F_ab^j d_j, for all eight species
+PASS 2.1 T1 is unchanged by B -> B D for every species (the component index is summed in squares)
+PASS 2.2 species (000): the curvature member (c1, c2, c3) = (1/4, 1/2, -1) and the rate coupling unchanged
+PASS 2.3 species (111): the quadratic part is the SAME member (1/4, 1/2, -1) but the first-order divergence term, which multiplies the rates, changes sign (c4 -> -c4)
+PASS 2.4 the six species with |n| = 1, 2: D*[B' D] is NOT of the family's form c1 T1 + c2 T2 + c3 T3 for any (c1, c2, c3), and the rate coupling is not a multiple of species (000)'s: they live outside the isotropic family :: 6 species
+PASS 2.5 on the isotropic stretch lam: the rate coupling seen by species n is sum_a d_a d_a^2 lam - (sum_a d_a) Lap lam: -2 Lap lam for (000), +2 Lap lam for (111), -2 d_1^2 lam for (100)
+PASS 2.6 block 64 T4's exponent: beta = 1 for (000); species (111) sees c4 -> -c4 and beta = -1, so for it a ray's bending over a slow body's fall, 1 + beta, is 0
+PASS 2.7 the inversion-odd term eps.T is unchanged for (000) and reversed for (111); for the mixed species it becomes sum_j d_j eps^jkl T^j_kl (c5 = 0 in the member, so no effect)
+PASS 3.1 vertex of species n with a metric disturbance h: frame D h D (h_ij times d_i d_j: shear components flip for d_i != d_j); reach two (hD + Dh)/2 (h_ij times (d_i + d_j)/2: zero for d_i != d_j, sign d_i on the diagonal); reach three h
+PASS 3.2 a TT wave along z: under the frame coupling species with d_1 d_2 = -1 see the x-polarisation reversed; under reach two they do not couple to it at all, and species with d_1 = d_2 = -1 see + reversed
+PASS 4.1 exactly on a 4^3 torus with an integer strain: V_n H3[B] V_n^dag = s_n H3[B] for all eight species (reach three: the strain unchanged)
+PASS 4.2 and V_n H2[B] V_n^dag = s_n H2[B D] (reach two: the strain seen as B D) - block 70, reproduced
+PASS 4.3 the reach-three bond response K_a^j at sampled bonds maps to s_n K for every species (exact): every species sources the common strain alike up to its energy sign
+PASS 4.4 in a rate field (integer phi) the energy density maps to s_n e at every site for every species (V_n commutes with phi): with block 72's fP_j -> s_n fP_j, block 66's identity (stress gradient = weight) holds for species n iff for (000)
+PASS 4.5 hence with reach three all eight species see the same field energy F[B] of the same strain and source it with the same response: the task's HIT condition does not arise
+total 1.0 s; PASS=15 FAIL=0
+SUMMARY: PARTIAL exact: under the reach-two map B -> B D every plaquette curl goes to F^j d_j; species (000) sees the curvature member, species (111) sees the same quadratic member with the rate coupling reversed (c4 -> -c4, block 64 T4 exponent beta = -1, bending over fall 0), and the six species with |n| = 1, 2 see a density that is not in the family at all (no (c1, c2, c3) reproduces it; their rate coupling on an isotropic stretch is -2 d_a^2 lam along their reflected axis); a TT disturbance's vertex is D h D (frame), (hD + Dh)/2 (reach two) and h (reach three); with reach three every species sees the same F[B] and sources it with s_n K: no disagreement (the task's HIT condition does not arise)

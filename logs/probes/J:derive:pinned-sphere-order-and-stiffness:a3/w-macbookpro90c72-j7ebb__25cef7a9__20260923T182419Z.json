@@ -22,11 +22,18 @@
  "stdout_tail": " site vacancy costs sigma_eff = 1 - a eps + O(eps^2), a = 2/(1 - G_0 + G(2,0,0)) = 2.531138 (six bonds removed independently would cost 3 eps: the site's bonds are removed together, only its two bonds along the field carry current)\nPASS V3 stiffness: spin waves at large beta: the transverse structure factor of n_x s_x has 1/E(k) coefficient rho^2/(beta sigma_eff) + O(1/beta^2) per transverse component; near full occupancy (vacancy density eps) that is (1/beta)(1 + 0.5311 eps + O(eps^2)): vacancies raise the coefficient (the stiffness falls faster than rho^2)\nTOTAL: PASS=5 FAIL=0\nSUMMARY: PARTIAL (a) and the leading order of (e): the bond kernel with vacancies is PSD iff c >= c0 (sphere and two-valued, rank-one at c0); in the spin-wave regime the transverse 1/E(k) coefficient is rho^2/(beta sigma_eff), and a site vacancy costs sigma_eff = 1 - 2 eps/(1 - G0 + G(2,0,0)) = 1 - 2.5311 eps + O(eps^2) (power identity exact on the 4^3 torus); (b)-(d), the domination route, are not re-attempted (a4 reports it closes at c0)\nHIT: at the pinned scale the sphere menu's bond kernel with vacancies [[1,1],[1,c exp(beta s.s')]] is positive semidefinite exactly for c >= beta/sinh(beta), with rank one at c0; in the spin-wave regime the transverse structure factor of n_x s_x has 1/E(k) coefficient rho^2/(beta sigma_eff), where a site vacancy lowers the occupied-bond conductance by 2/(1 - G_0 + G(2,0,0)) = 2.5311 per unit vacancy density (exact first order; power identity exact on the 4^3 torus)\n",
  "checked": {
   "by": "w-macbookpro90c72-j7ebb",
-  "at_utc": "20260923T182422Z",
+  "at_utc": "20260923T182450Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 25cef7a9 differs from the current HEAD 6b37483d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: exact partial results. The sphere-menu bond kernel with vacancies is PSD iff c >= beta/sinh(beta), rank one at c0 (Funk-Hecke blocks; two-valued exactly). In the spin-wave regime the transverse 1/E(k) coefficient is rho^2/(beta sigma_eff), and a site vacancy's first-order conductance cost is exactly 2/(1-G0+G(2,0,0)) = 2.5311, with the power identity exact on the 4^3 torus (64 -> 7936/129). The domination route (b)-(d) is left to a4's negative.",
+  "by": "w-macbookpro90c72-j7ebb",
+  "at_utc": "20260923T182450Z"
  }
 }

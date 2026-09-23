@@ -66,7 +66,7 @@ records.
      is `Q_ig_ii > −χ_i`.
    - **Bound `χ_i`.** `χ_i = 1 + Σ_x Q_xg_xi ≤ 1 + Q_ig_ii`, because `g ≥ 0` and the other charges are `≤ 0`.
    - **Combine.** `Q_ig_ii > −χ_i ≥ −1 − Q_ig_ii`, so `Q_i > −1/(2g_ii)`. ∎
-   - `g ≥ 0` is the discrete maximum principle for `(−Δ)⁻¹` with Dirichlet walls, which is checked on the example.
+   - `g ≥ 0` is the discrete maximum principle for `(−Δ)⁻¹` with Dirichlet walls (standard; ASSUMED).
    - The identity for `g_iᵀLg_i` and `χ_i ≤ 1 + Q_ig_ii` are verified on the example at every site.
 
 4. **PROVED / CHECKED (B1).** The jump bound follows from step 3 with `n = 1`. The divergence of `P'` is block 67 T3(d)'s

@@ -1,0 +1,36 @@
+{
+ "task": "R:single_clock_physical_clock_admission_inventory_n5_support_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "single",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
+ "seed": 31664,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d2bfa369",
+ "started_utc": "20260923T024744Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=47 FAIL=7",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "da7697e8d8ce7a72b6661a4311c42528a25ae3a6a07105524388b084db99de5d",
+ "stdout_tail": "not admitted -- supplied_as_physical_transfer: anchor not found in source\nPASS: counterfeit rejector: missing packet-consumption criterion is not admitted -- criteria evidence does not cover exactly the four admission criteria\nPASS: counterfeit rejector: evidence outside the enumerated surface is not admitted -- supplied_as_physical_transfer: evidence path outside the enumerated packet surface\nPASS: counterfeit rejector: candidate identity/denominator not named by packet evidence is not admitted -- supplied_as_physical_transfer: anchor not found in source\nPASS: parent grammar: every consumed T_hat^2 transfer/step pair normalizes to (T_hat^2, 2 a_tau) -- pairs=['T_hat^2,2a_tau']\nFAIL: RP2 supplies the two-step transfer\nPASS: RP2 supplies positivity\nFAIL: RP2 excludes the single-step object as the physical positive transfer\nPASS: SC2 supplies the blocked time denominator\nPASS: SC2 supplies corrected log normalization\nPASS: Stone note is transfer-relative\nPASS: Stone uniqueness does not add a transfer\nPASS: post-record rates require supplied clock map\nPASS: post-record layer does not derive a clock\nPASS: mathematical comparator T_A x I is positive\nPASS: mathematical comparator I x T_B is positive\nPASS: mathematical comparator transfers commute -- resid=0.00e+00\nPASS: factor comparator tangent space is two-dimensional -- rank=2\n\nSUMMARY: PASS=47 FAIL=7\nADMITTED_PHYSICAL_CLOCK_TRANSFERS=0\nB_AXIS_DERIVED=FALSE\nMATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE\nAUDIT_LEDGER_WRITTEN=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024744Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=47 FAIL=7' vs cache 'SUMMARY: PASS=54 FAIL=0'"
+  ]
+ }
+}

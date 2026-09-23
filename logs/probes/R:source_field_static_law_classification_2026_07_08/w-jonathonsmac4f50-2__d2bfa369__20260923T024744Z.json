@@ -1,0 +1,34 @@
+{
+ "task": "R:source_field_static_law_classification_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "source",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/source_field_static_law_classification_2026_07_08.py",
+ "seed": 31664,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d2bfa369",
+ "started_utc": "20260923T024744Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "da142157f11174a50d47c4d3059f644c9551ebaac8fd68291cbc919ebe586e3b",
+ "stdout_tail": "KERNELS+SUBTRACTION CHECK-01/02 d1:zero_mult=1,gap=0.00963055;d2:zero_mult=1,gap=0.0384294;d3:zero_mult=1,gap=0.152241 shift(L0*1=0.0e+00,Lmu*1=0.09) SUBTRACTION k0_res=1.0,sub_res=1.8e-15,massive_res=3.3e-16\nWINDOW CHECK-03/04 d3_rel16=[r2:0.0247,r3:0.0143,r4:0.0343,r5:0.0427,r6:0.114] d3_rel24=[r2:0.0178,r3:0.00961,r4:0.0314,r5:0.0213,r6:0.0666] d1_ring_max=3.2e-14 SPEC-NOTE d3_mean_zero_offset_fit,d1_G=-|x|/2+x^2/(2L)+const\nYUKAWA CHECK-05 mu=0.2:xi_fit=5.003,xi_exact=5.0083,rel=0.00107;mu=0.5:xi_fit=2.0103,xi_exact=2.0205,rel=0.00503 shift_broken_Lmu1=0.09 SPEC-NOTE xi=1/(2asinh(mu/2)),fit=log(rG)+b/r^2\nTOTAL PASS flags=compact-zero-mode-and-subtraction,finite-green-windows,lattice-yukawa-range elapsed=0.03s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024744Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'TOTAL PASS flags=compact-zero-mode-and-subtraction,finite-green-windows,lattice-' vs cache 'TOTAL PASS flags=compact-zero-mode-and-subtraction,finite-green-windows,lattice-'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/source_field_static_law_classification_2026_07_08.txt against the .txt beside this log"
+  ]
+ }
+}

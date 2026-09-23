@@ -1,0 +1,50 @@
+[
+  {
+    "dimension": 2,
+    "vertices": 144,
+    "edges": 288,
+    "holes": [
+      [
+        1,
+        0
+      ],
+      [
+        7,
+        0
+      ]
+    ],
+    "overlapping_A_pairs": 288,
+    "resolved_birth_paths": 0,
+    "overlapping_pair_double_hop_paths": 0,
+    "all_Gauss_constraints": true,
+    "D": 0,
+    "max_absolute_field": 1,
+    "record_density_per_vertex": "71/72",
+    "vacancy_density_per_vertex": "1/72"
+  },
+  {
+    "dimension": 3,
+    "vertices": 1728,
+    "edges": 5184,
+    "holes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        0
+      ]
+    ],
+    "overlapping_A_pairs": 7776,
+    "resolved_birth_paths": 0,
+    "overlapping_pair_double_hop_paths": 0,
+    "all_Gauss_constraints": true,
+    "D": 0,
+    "max_absolute_field": 1,
+    "record_density_per_vertex": "863/864",
+    "vacancy_density_per_vertex": "1/864"
+  }
+]

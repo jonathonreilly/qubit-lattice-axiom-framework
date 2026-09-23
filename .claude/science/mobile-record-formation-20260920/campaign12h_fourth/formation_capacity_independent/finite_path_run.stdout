@@ -1,0 +1,16 @@
+{
+  "physical_dimension": 52,
+  "number_sector_dimensions": {
+    "3": 1,
+    "5": 30,
+    "7": 21
+  },
+  "all_Gauss_constraints": true,
+  "exact_number_balance": true,
+  "resolved_coherent_loss_equal": true,
+  "first_total_rate_divided_by_kappa": 12,
+  "initial_H4_eigenvalue": -12,
+  "dark_first_mark_weight": "1/3",
+  "unused_birth_capacity_in_dark_output": 1,
+  "Gamma_norm_bound_by_row_sum": 12
+}

@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-23T22:00:54.729188+00:00",
+  "authorization": "Parent explicitly authorized this volume-only source update before capacity PRE.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/FINAL_SEAL.json",
+      "bytes": 19312,
+      "sha256": "ad9aa6598563aabe3db38e0ae4bb421aef602782aa9c718daf479056402f8c89",
+      "role": "whole-file authentication, metadata and selected relevant entries read; no claim to rerun or recursively authenticate the whole prior packet"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/COMPARISON.md",
+      "bytes": 16589,
+      "sha256": "61411fbea5f5c9566de48080464dbd2f5439d6c5054a903ca159144121a426a0",
+      "role": "complete argument read for source-comparison closure"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/F1_CLARIFICATION_ACK.json",
+      "bytes": 2361,
+      "sha256": "4e4234926f9b0ec8781af90d9ddec63a0553af3a2fce48dedb8b948384a40ee1",
+      "role": "complete acknowledgment read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/ROOT_TIME_TOPOLOGY_CLARIFICATION.md",
+      "bytes": 1278,
+      "sha256": "256c6243b7f0c4d7208dd8b2ced8971b9f843bb8a9a715e36be05ce10e932fdd",
+      "role": "complete clarification read; no norm-C0 restoration by representation change"
+    }
+  ],
+  "previous_source_binding_preserved": true,
+  "disposition": "Pending volume source comparison closed; read original note with the exact F1 clarification.",
+  "mathematical_change_to_capacity_reconstruction": false,
+  "formation_capacity_author_read": false,
+  "no_new_independent_volume_proof_or_runner_replay_claim": true
+}

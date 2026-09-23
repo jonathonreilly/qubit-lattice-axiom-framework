@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-09-23T23:01:54.484997+00:00",
+  "artifact": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/terminal_path_author/SEVEN_SITE_TERMINAL_FORMATION_COUNTS_DRAFT.md",
+    "bytes": 2420,
+    "sha256": "fa21c180a6b3013f2775f57979efef267a95b930e55d2c0edbe27a473d073bc7"
+  },
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 16592,
+      "sha256": "85c7668c76e47cc472f7b04b380f27f267ab7a3323f39b87b722223286bf45e4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/FINITE_PATH_RESULTS.json",
+      "bytes": 26155,
+      "sha256": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553"
+    }
+  ],
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/terminal-path-personal/terminal_path_exact.py",
+    "bytes": 5516,
+    "sha256": "a290fbc4b2cf1fba4d924d85f4f6cdc68a3dd1146238b961bdb42b0da9ecc02f"
+  },
+  "scope": "Root personal post-PRE exact seven-site terminal-count calculation; no theorem result claimed before first run."
+}

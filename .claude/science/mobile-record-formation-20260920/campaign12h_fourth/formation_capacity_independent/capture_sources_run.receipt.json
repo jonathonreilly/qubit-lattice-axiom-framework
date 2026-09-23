@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/capture_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent",
+  "started_utc": "2026-09-23T21:52:29.363224+00:00",
+  "ended_utc": "2026-09-23T21:52:29.394601+00:00",
+  "wall_seconds": 0.031432416988536716,
+  "returncode": 0,
+  "script": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/capture_sources.py",
+    "bytes": 2521,
+    "sha256": "667bb4792d4720448e4eeb390c6b6aa236162d57d42dc83e1ca36f7e34334ef1"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/capture_sources_run.stdout",
+    "bytes": 177,
+    "sha256": "af33ffe8cc67508b1d7ac1c2521248398009bc5ff3a7ef11876abe26f4c2e238"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/capture_sources_run.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

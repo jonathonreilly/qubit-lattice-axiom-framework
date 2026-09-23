@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-23T21:47:57.276265+00:00",
+  "status": "Root new extension before control execution, not derived from independent capacity feedback. Independent progress so far addressed only accounting and separated-hole stationary states.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_author/MOTION_CAN_REACTIVATE_INSTANTANEOUSLY_DARK_STATES.md",
+      "bytes": 2709,
+      "sha256": "81d7d2e3b5b78308c3143db2c2f0661f1b2ac7d1b4be2699157325d555318904"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_author/capacity_and_dark_state_check.py",
+      "bytes": 12263,
+      "sha256": "3e9621b36280d19373909922b104c1ead0df9aa47c043d372abd9f9424393a4a"
+    }
+  ]
+}

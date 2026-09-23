@@ -1,0 +1,54 @@
+{
+  "magnetic_words": 65,
+  "magnetic_norm_squared": 616,
+  "initial_D": 2,
+  "total_squared_norm": 3136,
+  "cubic_coefficient": "3136/3",
+  "nonzero_resolved_channels": 72,
+  "all_author_channel_rows_match": true,
+  "unique_Gauss_states_checked": 426,
+  "author_periodic_data_checks": [
+    {
+      "d": 2,
+      "all_recorded_components_consumed": true,
+      "vertices": 36,
+      "edges": 72,
+      "Gauss": true,
+      "pair_terms": 72,
+      "birth_paths": 0,
+      "pair_paths": 0,
+      "D": 6,
+      "density": "17/18",
+      "field_second_moment": "19/18",
+      "max_abs_field": 3
+    },
+    {
+      "d": 3,
+      "all_recorded_components_consumed": true,
+      "vertices": 216,
+      "edges": 648,
+      "Gauss": true,
+      "pair_terms": 972,
+      "birth_paths": 0,
+      "pair_paths": 0,
+      "D": 396,
+      "density": "107/108",
+      "field_second_moment": "703/108",
+      "max_abs_field": 18
+    },
+    {
+      "d": 4,
+      "all_recorded_components_consumed": true,
+      "vertices": 1296,
+      "edges": 5184,
+      "Gauss": true,
+      "pair_terms": 10368,
+      "birth_paths": 0,
+      "pair_paths": 0,
+      "D": 15354,
+      "density": "647/648",
+      "field_second_moment": "25393/648",
+      "max_abs_field": 108
+    }
+  ]
+}

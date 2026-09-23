@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-23T23:07:06.744232+00:00",
+  "ended_utc": "2026-09-23T23:07:06.790074+00:00",
+  "wall_seconds": 0.0462156250141561,
+  "returncode": 0,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/terminal_path_author/terminal_path_structural_check.py"
+  ],
+  "script_sha256": "33e237ba94265027180bb28158bd0f6257b4558ab0af7a177d3cb271af7d9fe8",
+  "stdout_sha256": "51c2bb6a31a97257b6d017f4e4ff1792d408e9ae04a735f94dbb887f1c4ed144",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,41 @@
+{
+  "computational_failures": [],
+  "scientific_rejected_routes": [
+    {
+      "route": "Stationarity or rate extinction implies complete occupancy",
+      "disposition": "False in the supplied physical target",
+      "control": "Seven-site path has a one-third first-mark branch into an N=5 stationary output with N=7 physically allowed; periodic Gauss-legal dark states have positive vacancy density."
+    },
+    {
+      "route": "Use one leftover B hole as the principal finite counterexample",
+      "disposition": "Replaced by a stronger two-hole construction",
+      "reason": "On a closed graph total charge fixes N parity; one leftover hole can merely express an odd-|B| parity maximum. Two distance-six holes on the seven-site path leave one parity-allowed birth unused."
+    },
+    {
+      "route": "Continuous nonnegative integrable intensity implies a pointwise limit of zero",
+      "disposition": "Insufficient as a scalar inference",
+      "replacement": "For finite graphs, trace-class C0 contractivity supplies uniform continuity. For infinite states only the integrated/average conclusion is unconditional here; local orbit trace-norm precompactness is a sufficient additional condition."
+    },
+    {
+      "route": "Import norm time continuity from the spatial volume theorem",
+      "disposition": "Not permitted by the exact source premises",
+      "replacement": "Use the weak local-number integral identity and the Foelner boundary estimate. No moment or norm-C0 assumption is inserted."
+    },
+    {
+      "route": "Formation-free evolution implies a full stationary density limit",
+      "disposition": "False",
+      "control": "A finite physical dark two-field superposition has electric energies 0 and 2K and oscillates forever."
+    }
+  ],
+  "tooling_events": [
+    {
+      "event": "Combined source output was truncated by the aggregate token budget",
+      "repair": "The full independent volume REPORT was emitted and read separately from the stored complete exec result before deriving the report."
+    },
+    {
+      "event": "A source-status update patch accidentally appended one duplicate prose fragment at the end of REPORT.md",
+      "repair": "The immediate targeted read detected it; the fragment was removed before PRE. The same edit reconciled the two remaining historical provisional-status sentences with the authorized comparison closure. No mathematical runner or source file changed."
+    }
+  ],
+  "no_overwritten_failure_or_author_source": true
+}

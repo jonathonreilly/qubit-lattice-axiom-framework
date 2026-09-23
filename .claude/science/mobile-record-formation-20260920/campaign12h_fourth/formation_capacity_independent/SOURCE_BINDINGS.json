@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-09-23T21:52:29.391395+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+      "role": "finite target, full read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS.md",
+      "bytes": 7985,
+      "sha256": "5539bbe3171ba21933aa42c4cc191b787029e5f5c9220dc8c3ee255e4906f582",
+      "role": "local pair form and jump support, full read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/AUTHOR_SEAL.json",
+      "bytes": 5798,
+      "sha256": "5da6ab8a81e7f6442a3c63ece190e9119b3c2cdd00c9960465bc01cc963d1f7f",
+      "role": "provisional volume seal, full read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 9136,
+      "sha256": "6e8bae143d8ee1e0c77c57461c8025143b660709ff89e42c5c072a38d2164d0f",
+      "role": "provisional volume PRE, full read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS.md",
+      "bytes": 16819,
+      "sha256": "a0c1389773766c47b41300329cf6b945a8f5e584c2c46853fe34064a9c331bd6",
+      "role": "bound provisional volume theorem, full read for needed hypotheses"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/REPORT.md",
+      "bytes": 26346,
+      "sha256": "9dee691689889316acea057aa0180c59776315b7fa9499f0c52bccc9f0e6101b",
+      "role": "bound provisional volume report, full read for needed hypotheses"
+    }
+  ],
+  "instructions": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "unchanged instructions, previously read; no new workflow loop"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "unchanged instructions, previously read; no new workflow loop"
+    }
+  ],
+  "external_literature_used": false,
+  "forbidden_author_or_frontier_read": false,
+  "provisional_dependency": "Volume source comparison not closed in this packet."
+}

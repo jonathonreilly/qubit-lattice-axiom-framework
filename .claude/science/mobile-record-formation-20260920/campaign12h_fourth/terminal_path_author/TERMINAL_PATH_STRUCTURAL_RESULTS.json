@@ -1,0 +1,164 @@
+{
+  "scope": "Seven-site physical tree; root second operator implementation; exact all first channels",
+  "source_bindings": {
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_author/capacity_and_dark_state_check.py": "3e9621b36280d19373909922b104c1ead0df9aa47c043d372abd9f9424393a4a",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/FINITE_PATH_RESULTS.json": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553"
+  },
+  "physical_states": 52,
+  "N5_states": 30,
+  "all_first_resolved": 12,
+  "all_first_coherent": 6,
+  "first_total_norm_squared": 12,
+  "stationary_middle_norm_squared": 4,
+  "strictly_lossy_endpoint_norm_squared": 8,
+  "endpoint_Gamma_eigenvalue_divided_by_kappa": 4,
+  "all_first_channels_matched_separate_PRE_matrix": true,
+  "universal_count_formula": "For all real K,delta and kappa>0: Pr(J_infinity=1)=1/3, Pr(J_infinity=2)=2/3 for both instruments.",
+  "proof_condition": "The zero-loss middle vectors are annihilated by D and H4; each endpoint first vector lies in the positive eigenvalue-4 subspace of Gamma0, orthogonal to every future-surviving dark Hamiltonian subspace.",
+  "resolved_rows": [
+    {
+      "channel": [
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 4,
+      "H4_zero": false,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 4,
+      "H4_zero": false,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        1,
+        2,
+        -1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 4,
+      "H4_zero": false,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        1,
+        2,
+        1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 4,
+      "H4_zero": false,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        3,
+        2,
+        -1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 0,
+      "H4_zero": true,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        3,
+        2,
+        1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 0,
+      "H4_zero": true,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        3,
+        4,
+        -1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 0,
+      "H4_zero": true,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        3,
+        4,
+        1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 0,
+      "H4_zero": true,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        5,
+        4,
+        -1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 4,
+      "H4_zero": false,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        5,
+        4,
+        1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 4,
+      "H4_zero": false,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        5,
+        6,
+        -1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 4,
+      "H4_zero": false,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    },
+    {
+      "channel": [
+        5,
+        6,
+        1
+      ],
+      "norm_squared": 1,
+      "Gamma_eigenvalue_divided_by_kappa": 4,
+      "H4_zero": false,
+      "D_zero": true,
+      "matches_separate_PRE_matrix": true
+    }
+  ]
+}

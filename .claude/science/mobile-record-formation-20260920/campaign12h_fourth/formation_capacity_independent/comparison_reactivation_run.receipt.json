@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/comparison_reactivation_control.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent",
+  "started_utc": "2026-09-23T22:09:05.922541+00:00",
+  "ended_utc": "2026-09-23T22:09:05.998038+00:00",
+  "wall_seconds": 0.07558820908889174,
+  "returncode": 0,
+  "script": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/comparison_reactivation_control.py",
+    "bytes": 12137,
+    "sha256": "c9e080013a7d2899621aca84fff0b0affc66151d491c0df4d3e97a8a4f816358"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/comparison_reactivation_run.stdout",
+    "bytes": 1255,
+    "sha256": "0245adb73680b5dcbc2f4d346cb91e78bde9c0d2916dda0af5f4ddf5eb518c2f"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/comparison_reactivation_run.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

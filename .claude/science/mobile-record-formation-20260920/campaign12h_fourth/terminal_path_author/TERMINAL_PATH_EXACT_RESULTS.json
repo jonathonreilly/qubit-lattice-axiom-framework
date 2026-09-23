@@ -1,0 +1,702 @@
+{
+  "exact_arithmetic": "SymPy rational matrices, no fitted evolution",
+  "source_bindings": {
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/PRE_COMPARISON_SEAL.json": "85c7668c76e47cc472f7b04b380f27f267ab7a3323f39b87b722223286bf45e4",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/FINITE_PATH_RESULTS.json": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/terminal_path_author/SEVEN_SITE_TERMINAL_FORMATION_COUNTS_DRAFT.md": "fa21c180a6b3013f2775f57979efef267a95b930e55d2c0edbe27a473d073bc7"
+  },
+  "scope": "Seven-site physical tree at kappa>0, exact selected K/delta values only",
+  "first_event_probability": "1",
+  "no_event_survival": "exp(-12*kappa*t)",
+  "physical_dimensions": {
+    "N3": 1,
+    "N5": 30,
+    "N7": 21
+  },
+  "profiles": [
+    {
+      "name": "pure_magnetic",
+      "K": "0",
+      "delta": "1",
+      "dark_dimension": 5,
+      "row_ranks": [
+        15,
+        25
+      ],
+      "instruments": {
+        "resolved": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 0, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 2, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(5, 4, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 4, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, 1)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        },
+        "coherent": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(3, 4)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(5, 4)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        }
+      }
+    },
+    {
+      "name": "ratio_one_third",
+      "K": "1/3",
+      "delta": "1",
+      "dark_dimension": 5,
+      "row_ranks": [
+        15,
+        25
+      ],
+      "instruments": {
+        "resolved": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 0, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 2, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(5, 4, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 4, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, 1)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        },
+        "coherent": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(3, 4)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(5, 4)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        }
+      }
+    },
+    {
+      "name": "ratio_one",
+      "K": "1",
+      "delta": "1",
+      "dark_dimension": 5,
+      "row_ranks": [
+        15,
+        25
+      ],
+      "instruments": {
+        "resolved": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 0, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 2, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(5, 4, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 4, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, 1)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        },
+        "coherent": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(3, 4)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(5, 4)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        }
+      }
+    },
+    {
+      "name": "ratio_two",
+      "K": "2",
+      "delta": "1",
+      "dark_dimension": 5,
+      "row_ranks": [
+        15,
+        25
+      ],
+      "instruments": {
+        "resolved": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 0, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 2, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(5, 4, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 4, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, 1)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        },
+        "coherent": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(3, 4)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(5, 4)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        }
+      }
+    },
+    {
+      "name": "ratio_five",
+      "K": "5",
+      "delta": "1",
+      "dark_dimension": 5,
+      "row_ranks": [
+        15,
+        25
+      ],
+      "instruments": {
+        "resolved": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 0, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 2, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(5, 4, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 4, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, 1)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        },
+        "coherent": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(3, 4)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(5, 4)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        }
+      }
+    },
+    {
+      "name": "pure_electric",
+      "K": "1",
+      "delta": "0",
+      "dark_dimension": 15,
+      "row_ranks": [
+        15
+      ],
+      "instruments": {
+        "resolved": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 0, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 2, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(5, 4, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 4, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, 1)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        },
+        "coherent": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(3, 4)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(5, 4)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        }
+      }
+    },
+    {
+      "name": "zero_H",
+      "K": "0",
+      "delta": "0",
+      "dark_dimension": 15,
+      "row_ranks": [
+        15
+      ],
+      "instruments": {
+        "resolved": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 0, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 2, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, -1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(3, 4, 1)",
+              "projected_norm_squared": "1"
+            },
+            {
+              "channel": "(5, 4, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 4, 1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, -1)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6, 1)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        },
+        "coherent": {
+          "p_exactly_one_birth": "1/3",
+          "p_exactly_two_births": "2/3",
+          "projected_norm_by_first_channel": [
+            {
+              "channel": "(1, 0)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(1, 2)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(3, 2)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(3, 4)",
+              "projected_norm_squared": "2"
+            },
+            {
+              "channel": "(5, 4)",
+              "projected_norm_squared": "0"
+            },
+            {
+              "channel": "(5, 6)",
+              "projected_norm_squared": "0"
+            }
+          ],
+          "total_first_norm_squared": "12"
+        }
+      }
+    }
+  ]
+}

@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-21 block 65 — author checks (not a review PASS)
 Written lens pass by the supervisor. The continuum expectation (an on-site potential) was corrected by the lattice computation (a hop weighted by the twist); the naive varying-frame generalisation was broken in scratch and not claimed; the scope against block 64 T5 (bond rotation against coin rotation) was made explicit. Refuting pass with dense matrices and finite rotations (W1–W4, 4/0). Census 9/9 in family.
+
+## 2026-09-23 block 65 — corrigendum (supervisor, Claude Opus 5.5)
+Result item 3 and plain terms: 'block 64's torque disappears' corrected to the coin's own torque; block 64 T5's bond torque remains (the note's Boundaries). Text-only.

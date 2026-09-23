@@ -5,3 +5,5 @@
 3. **Generalisation broken in scratch (supervisor).** For a varying frame the naive weight `d_j(θ·E^j)` does not reproduce the first-order action of a coin rotation (residual 2.1 on a field of size 5.8): there is a coin-dependent term of second order in the differences. The note claims first order around the identity frame only.
 4. **Scope made explicit (supervisor).** Block 64 T5's torque is the response to a rotation of a site's three forward BONDS (a strain with second-neighbour coupling), not of the coin axes; the two deformations agree at long wavelength only, and the hop does not remove that torque. The note says so in the claim scope, N1.2 and the Boundaries.
 5. Finding folded: W3 first reported the smallest bare response, which is zero by accident at some sites of that eigenspace; it now reports the largest and a count.
+
+**Corrigendum (2026-09-23, supervisor; harvest issue #8659).** The Result's item 3 and the plain-terms paragraph overstated what the blind walk removes: the coin torque (response to `ϑ`) vanishes on stationary states, block 64 T5's bond torque does not (as the Boundaries said). Text qualified; no theorem, check or number changed.

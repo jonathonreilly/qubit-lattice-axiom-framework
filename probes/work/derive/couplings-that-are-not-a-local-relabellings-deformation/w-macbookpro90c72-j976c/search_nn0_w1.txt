@@ -1,0 +1,11 @@
+window 1, hops nn0: 756 unknowns, after (C0),(C2): 616
+  after 48 symmetries: dim 85
+  after 96 symmetries: dim 1
+  after 144 symmetries: dim 1
+  after 192 symmetries: dim 1
+  after 240 symmetries: dim 1
+  after 288 symmetries: dim 1
+  after 336 symmetries: dim 1
+  after 384 symmetries: dim 1
+solution space dimension: 1
+U(1) residual 1.1136354844544448e-14

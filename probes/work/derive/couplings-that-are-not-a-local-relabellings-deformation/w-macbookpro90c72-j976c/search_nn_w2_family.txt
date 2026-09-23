@@ -1,0 +1,13 @@
+window 2, hops nn: 3000 unknowns, after (C0),(C2): 2892
+  after 48 symmetries: dim 1173
+  after 96 symmetries: dim 105
+  after 144 symmetries: dim 105
+  after 192 symmetries: dim 105
+  after 240 symmetries: dim 105
+  after 288 symmetries: dim 105
+  after 336 symmetries: dim 105
+  after 384 symmetries: dim 105
+solution space dimension: 105
+on-site generator family i[H, zeta]: rank 105; its residual outside the solution space 2.0e-14
+solution space equals the family: True
+U(1) residual 1.9074170490511456e-14

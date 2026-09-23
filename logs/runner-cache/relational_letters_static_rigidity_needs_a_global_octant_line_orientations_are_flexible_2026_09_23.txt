@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.py
+runner_sha256: a4385f31f0c5f1bb727cb3c53d559e3c4700e6303e71959415d62851d119ab8a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 251.66
+status: ok
+----- stdout -----
+A. a global octant gives exactly the aligned spirals
+[PASS] each of the 8 global octants gives exactly the 12 spirals aligned with it; the 4 opposite pairs give 48 records :: the fixed octant of open PR 8743 is the octant (+, +, +)
+B. arbitrary line fields do not guarantee rigidity on this core
+[PASS] over all 4096 orientation fields of the 12 lines through the core, the records number 11136, only 48 of them spirals :: 1300 fields admit records; the largest count on one field is 108, on a field that is not a global octant (lines flipped against (+, +, +): 5 of 12)
+C. sites, lines and a global octant are nested
+[PASS] every line-field record is a per-site-octant record, and every global-octant record is a line-field record :: per-site octants: 15024 records (open PR 8743); line fields: 11136; global octants: 48
+per_element: Exact arithmetic tests the declared angle, star or linear-system objects; no physical qubit encoding is inferred.
+per_site: Site checks cover only the explicit finite boxes, tori and samples printed above; boundary freedoms remain as stated in the note.
+per_mode: Analytic mode or symmetry arguments are conditional source proofs; finite runner cases alone do not prove untested universality.
+per_block: This is one bounded support result in a supplied relational record model, with the controls and counts declared above.
+lattice_wide: No physical infinite-volume conclusion is inferred; any whole-lattice or all-size statement is limited to the explicit source theorem hypotheses.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

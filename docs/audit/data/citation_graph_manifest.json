@@ -1,6 +1,6 @@
 {
- "edge_count": 14029,
- "node_count": 6477,
+ "edge_count": 14059,
+ "node_count": 6490,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16622,6 +16622,50 @@
    "deps_hash": "44506016e46e",
    "out_degree": 3
   },
+  "relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_on_the_landed_ice_torus_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "cf81749ee5be",
+   "out_degree": 2
+  },
+  "relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "relational_letters_formed_by_multi_qubit_units_every_single_face_attachment_is_at_best_a_fair_coin_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "388507ed6b64",
+   "out_degree": 3
+  },
+  "relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_but_not_on_the_side_four_torus_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "1bf1655acf73",
+   "out_degree": 3
+  },
+  "relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "bd6990460606",
+   "out_degree": 4
+  },
+  "relational_letters_static_rigidity_needs_a_global_octant_site_and_line_orientations_leave_the_letters_flexible_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "20ffd5f73984",
+   "out_degree": 2
+  },
+  "relational_letters_under_the_static_reading_are_globally_rigid_exactly_for_sidon_angle_sets_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "388507ed6b64",
+   "out_degree": 3
+  },
+  "relational_spiral_frames_are_locally_rigid_under_the_static_reading_nonlinear_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "3c0e9767daa4",
+   "out_degree": 3
+  },
+  "relational_spiral_frames_are_rigid_on_the_lattice_and_under_the_static_reading_but_flexible_and_amplified_under_the_sweep_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "fa4b33dba396",
+   "out_degree": 2
+  },
+  "relational_spiral_letters_with_finitely_many_values_seven_suffice_and_are_the_fewest_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "fa4b33dba396",
+   "out_degree": 2
+  },
   "relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10": {
    "deps_hash": "790b6a424aff",
    "out_degree": 1
@@ -18205,6 +18249,14 @@
   "strong_cp_theta_zero_note": {
    "deps_hash": "6311da330cc6",
    "out_degree": 4
+  },
+  "strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "36bcdfc35f69",
+   "out_degree": 2
+  },
+  "strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "dee067d51f16",
+   "out_degree": 2
   },
   "structural_no_go_survey_note": {
    "deps_hash": "e7df0adc06f6",

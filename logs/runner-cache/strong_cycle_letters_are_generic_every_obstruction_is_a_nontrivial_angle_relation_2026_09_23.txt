@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.py
+runner_sha256: d5862fe558e0c256af22e20d29f4f44a36ca13a184fbdd5088aaa15912224741
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.35
+status: ok
+----- stdout -----
+== A. Decoding ==
+[PASS] the parametrisation: each cycle's four angle vectors sum to zero, and the free angles are unit vectors
+[PASS] every coincidence of two signed angles, and every vanishing angle, is a nonzero relation :: 135 decoding hyperplanes
+
+== B. Squares ==
+[PASS] every non-straight square is a nonzero relation, and every straight square the zero relation :: 73344 non-straight configurations on 3645 sign-normalized relation vectors
+
+== C. (U) ==
+[PASS] the 24576 covariant stars have pairwise distinct symbolic neighbour classes :: a collision needs a nonzero relation among the angles
+
+== D. Random letters modulo a prime ==
+[PASS] seeded conditioned samples reproduce the declared strong-with-(U) counts :: strong of 60: 1, 34, 56 at m = 1009, 10007, 100003
+[PASS] at m = 10007 and 100003 the observed bad fraction lies within a factor 4 of H/m :: H = 3780 counted decoding/square relations only (U omitted); bad of 60: 26, 4; H/m = 0.378, 0.038
+
+time 4 s
+per_element: Exact arithmetic tests the declared angle, star or linear-system objects; no physical qubit encoding is inferred.
+per_site: Site checks cover only the explicit finite boxes, tori and samples printed above; boundary freedoms remain as stated in the note.
+per_mode: Analytic mode or symmetry arguments are conditional source proofs; finite runner cases alone do not prove untested universality.
+per_block: This is one bounded support result in a supplied relational record model, with the controls and counts declared above.
+lattice_wide: No physical infinite-volume conclusion is inferred; any whole-lattice or all-size statement is limited to the explicit source theorem hypotheses.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

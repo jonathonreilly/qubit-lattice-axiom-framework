@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:the-zero-field-floor-sharpened:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-je12b",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-zero-field-floor-sharpened/w-jonathonsmac4f50-je12b/check.py",
+ "seed": 99347,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "944ef3df",
+ "started_utc": "20260923T213547Z",
+ "elapsed_s": 3.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PARTIAL (b) exact: with F = (m x A)_2 in place of block 92's A1 m3, <DF> doubles while <|F|^2> = E[|m|^2|A_perp|^2]/3 <= V u, so u(k) >= 4(M^2/3)^2/(beta E(k) + 8M^2/(3V)) at zero field in every finite volume - four times block 92's floor; in 3+1 E(k)R(k) >= 4((1 - beta_L/beta)/3)^2, up to 4/9 of the inverse Laplacian instead of 1/9. (a) a bound with M^2 to the first power, u(k) >= (4/9) M^2/(beta E(k) + 8/(3V)), follows exactly from ONE correlation inequality (C) E[|m|^2 |A_perp(k)|^2] <= M^2 E|A_perp(k)|^2, which is not proved here (executed: ratio below 1 on the bilayer); ROUTE FAILS AT (C) for the unconditional linear bound. The task's HIT condition (an unconditional M^2-linear bound) is not met."
+ },
+ "review": "Attempt 2 (claude-opus-5-5; same family as blocks 19, 20, 90-92). No HIT (task: an unconditional M^2-linear zero-field bound). Exact new floor: with F = (m x A)_2 instead of block 92's A1 m3, <DF> = 2(V M^2/3 - u) doubles while <|F|^2> = E[|m|^2|A_perp|^2]/3 <= V u, so u(k) >= 4(M^2/3)^2/(beta E + 8M^2/(3V)) - four times block 92's; in 3+1 E R >= 4((1 - beta_L/beta)/3)^2, limit 4/9 (was 1/9). The linear bound (4/9)M^2/(beta E + 8/(3V)) follows exactly from one unproved correlation inequality (C) E[|m|^2|A_perp|^2] <= M^2 E|A_perp|^2; executed on block 90's bilayer the ratio is 0.935-0.996 < 1 through the ordering onset. Route fails at (C).",
+ "what": "DERIVATION, independent attempt 2 of 2: Block 92's zero-field floor (M^2/3)^2/E: can the square and the 1/3 go?. SETTING (the formation lane of the admissibility induced-law campaign, under the owner's reading that records FORM: open PRs #8678 (block 89) #8692 (block 90) #8696 (block 91) #8703 (block 92) and block 93 'covariance forces a reversible formation law' when opened; decision record #8572 (eighth addendum); blocks 19 (#8153), 20 (#8154, closed and archived), 26-28 (#8170, #8172); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). TASK: block 92: at zero field u(k) >= (M^2/3)^2/(beta E(k) + 2/(3V)) on the bilayer (block 20's argument), so a held source's response in 3+1 is at least ((1 - beta_L/beta)/3)^2/E(k), at most 1/9 of the inverse Laplacian, while block 91 measures about 0.95 and its field version gives <m>^2/<P_b>. (a) A zero-field, finite-volume lower bound linear in M^2 (not squared), e.g. by choosing F differently or by a second-moment argument in the symmetric state; (b) the best constant in front. HIT: a zero-field bound with M^2 to the first power. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-zero-field-floor-sharpened/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-zero-field-floor-sharpened/<name>/check.py\"",
+ "stdout_sha256": "a193cbddcd77d555fb3bf7c0cef3acf96f0772f4910e808da32479fed865502d",
+ "stdout_tail": "eta=0.8: M^2 = 0.4924; (C) ratio E[|m|^2|A_perp|^2]/(M^2 E|A_perp|^2) = 0.9888 +- 0.0009; u(k_min) = 0.830 against floors: block 92 0.034, this attempt 0.134, conditional linear 0.271\nEXEC E L=8 beta=1.0: M^2 = 0.6026; (C) ratio E[|m|^2|A_perp|^2]/(M^2 E|A_perp|^2) = 0.9963 +- 0.0009; u(k_min) = 1.178 against floors: block 92 0.069, this attempt 0.275, conditional linear 0.455\nEXEC E L=6 beta=1.2: M^2 = 0.6835; (C) ratio E[|m|^2|A_perp|^2]/(M^2 E|A_perp|^2) = 0.9944 +- 0.0007; u(k_min) = 0.561 against floors: block 92 0.043, this attempt 0.172, conditional linear 0.252\nPASS E1 [executed] on block 90's bilayer at beta = 0.55 to 1.2 (through the ordering onset) the correlation ratio of (C) is below 1 and every floor lies below the measured u(k)\ntotal 3.6 s; PASS=12 FAIL=0\nSUMMARY: PARTIAL (b) exact: with F = (m x A)_2 in place of block 92's A1 m3, <DF> doubles while <|F|^2> = E[|m|^2|A_perp|^2]/3 <= V u, so u(k) >= 4(M^2/3)^2/(beta E(k) + 8M^2/(3V)) at zero field in every finite volume - four times block 92's floor; in 3+1 E(k)R(k) >= 4((1 - beta_L/beta)/3)^2, up to 4/9 of the inverse Laplacian instead of 1/9. (a) a bound with M^2 to the first power, u(k) >= (4/9) M^2/(beta E(k) + 8/(3V)), follows exactly from ONE correlation inequality (C) E[|m|^2 |A_perp(k)|^2] <= M^2 E|A_perp(k)|^2, which is not proved here (executed: ratio below 1 on the bilayer); ROUTE FAILS AT (C) for the unconditional linear bound. The task's HIT condition (an unconditional M^2-linear bound) is not met.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-je12b",
+  "at_utc": "20260923T213551Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -22,15 +22,22 @@
  "stdout_sha256": "ae098a2a83a2800aa166dd5c57b7cb3c6a65911442060f9be9cd1dbcf78b47bf",
  "stdout_tail": "Magnitude minimal-block readout boundary\n========================================================================\n--- Section I: finite temporal count facts ---\nPASS: eta_1(t)=(-1)^t has minimal period 2\nPASS: a single time-slice is not a translation-invariant eta_1 cell\nPASS: direct two-step contraction sample lies in (0,1]\nFAIL: one-hop RP cache supplies single-step non-positivity\nFAIL: one-hop RP cache supplies two-step positivity\n--- Section R: Record axiom boundary ---\nFAIL: approved Record axiom boundary is present\nFAIL: Record does not supply a readout-scale selector\n  minimal axioms leave readout-context selection, time metric, weighting, normalization, and occupancy selection open\n--- Section S: conditional arithmetic only ---\nPASS: conditional UV/minimal-block exponent would be 8 x 2 = 16\nPASS: OS-continuum count sequence is a different unbounded reconstruction object\nPASS: no-go: Record plus RP two-step does not select L_t=2 over L_t -> infinity\n========================================================================\nMAGNITUDE_MINIMAL_BLOCK_SELECTED_BY_RECORD=FALSE\nCONDITIONAL_IF_UV_MINIMAL_BLOCK_READOUT_SUPPLIED=16\nTOTAL: PASS=6 FAIL=4\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T144353Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 410cc8b6 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=6 FAIL=4' vs cache 'TOTAL: PASS=10 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the one-hop RP cache was reworded by 06f5f7dcf3 (2026-07-28), and two Record-boundary phrases left MINIMAL_AXIOMS (82f7b0754a 2026-08-05, 634b1de2f8 2026-08-13). Issue #8808.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z"
  }
 }

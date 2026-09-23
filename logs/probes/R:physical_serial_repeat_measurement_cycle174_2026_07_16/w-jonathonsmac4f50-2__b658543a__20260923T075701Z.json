@@ -19,14 +19,21 @@
  "stdout_sha256": "342946918528b6d203d62e98d31782cca902d37813b84e93b4a3caec4a9944a2",
  "stdout_tail": "}\nPASS all four lower fork departures consume that face as a local guard :: (((0, 1, -181), (0, 1, -182), (0, 0, -182), 'MARK'), ((1, 0, -181), (1, 0, -182), (0, 0, -182), 'MARK'), ((0, -1, -181), (0, -1, -182), (0, 0, -182), 'MARK'), ((-1, 0, -181), (-1, 0, -182), (0, 0, -182), 'P0'))\nPASS protecting the lower line for a row witness empties forty cable domains :: {'kind': 'no-guide-option-against-fixed-records', 'empty_domains': 40, 'sample': ((((0, 1, -181), 1, (0, 1, -182), (0, 1, -181), (0, 1, -183)), 0), (((0, 1, -181), 2, (0, 1, -183), (0, 1, -182), (0, 1, -184)), 0))}\n\nALTERNATIVE INTERFACES\nPASS the unguarded orthogonal-pair shortcut is not a deterministic merge :: {'raw': 384, 'overlap': 12, 'conflicts': 12}\nPASS a marked opposite-pair compiler interface remains a clean live route :: {'raw': 384, 'conflicts': 0}\nPASS serial composition still requires visible nonzero transport :: (2695700, 2906400)\n\nSCOPE AND NO-GO DISCIPLINE\nFAIL note contains: partial exact interface result :: \nFAIL note contains: positive 96-row two-witness ingress :: \nFAIL note contains: stock p two-port/mark line :: \nFAIL note contains: not a serial-composition no-go :: \nFAIL note contains: exterior row-decoder/fanout :: \nFAIL note contains: n1 \u2014 alternative route enumeration :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \nFAIL note contains: status: fail for a broad no-go :: \nFAIL note contains: no axiom, primitive, registry, policy, or audit edit follows :: \n\nTOTAL\nPASS 10 FAIL 9\nRESULT FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T075804Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175122Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b658543a differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note PHYSICAL_SERIAL_REPEAT_MEASUREMENT_CYCLE174_NOTE_2026-07-16.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (TOTAL; PASS 19 FAIL 0; RESULT PARTIAL_EXACT_INTERFACE_RESULT); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175122Z"
  }
 }

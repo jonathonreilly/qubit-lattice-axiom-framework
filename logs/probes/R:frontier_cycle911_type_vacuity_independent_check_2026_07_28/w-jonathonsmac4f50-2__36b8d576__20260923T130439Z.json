@@ -22,15 +22,22 @@
  "stdout_sha256": "97ea531e26592f9b82740ab7fbc7e4117d5987ea23c761fd6adf08113a9b1add",
  "stdout_tail": "==============================================================================\nCYCLE 911 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE\n==============================================================================\n\n  FAIL  R0_PINNED_EVIDENCE                   scripts/frontier_cycle911_type_vacuity_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle911_type_vacuity_2026_07_28.txt:MISMATCH\n  FAIL  R0b_CLAIMS_PARSED                    claims_line_found=False\n  FAIL  R1_CENSUS_ARITHMETIC_INDEPENDENT     748/4=187 rem 0; sum(0..747)=279378\n  FAIL  R2_MAXIMIZER_INDEPENDENT             pairwise_smoothing_always_increases=True grid_maximizer_uniform=True\n  FAIL  R3_MERGED_ATOM_CONTROL               (2/6)^2*(1/6)^4=1/11664 > (1/5)^6=1/15625\n  FAIL  R4_OVERCLAIM_SCAN                    hits=['cache:71:UNCONDITIONALLY']\n  PASS  R5_RUNTIME                           elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=1 FAIL=6\nVERDICT: PRIMARY_REFUTED_ON_THIS_CHECK\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T130439Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175114Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 36b8d576 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=1 FAIL=6' vs cache 'TOTAL: PASS=63 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: salvage commit ffaa1a06e6 (2026-08-09) restored the 2026-08-04 cache of the cycle911 primary (no CLAIMS_JSON line) while the primary stayed at its 2026-08-08 version; one of 422 caches it left stale (#8770). Issue #8782.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175114Z"
  }
 }

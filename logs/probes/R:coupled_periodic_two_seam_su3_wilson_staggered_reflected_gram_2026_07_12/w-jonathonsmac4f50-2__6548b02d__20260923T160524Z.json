@@ -22,15 +22,22 @@
  "stdout_sha256": "fff4b8736db3c9a048a67487532bc515fbb07c61b4be28111c18f0dc9239db74",
  "stdout_tail": "0439019223\nPASS Antiperiodic staggered matrices are anti-Hermitian off mass with positive determinant: maximum anti-Hermitian residual=0.000e+00, minimum det=3.078125e+00\nPASS Uniform reflection is rejected on gauge-invariant baryon probes: Hermiticity residual=5.192190e+01, minimum Hermitian-part eigenvalue=-4.212168e+00\nPASS Positive adjacent forms alone do not imply OS-null descent: G0=diag(1,0), G2=diag(0,1) is the exact countermodel\nPASS Positive adjacent forms alone do not imply contraction: G0=I, G2=diag(2,1/2) is the exact countermodel\nFAIL Source-note boundary and N1-N8 contract: missing=['individually gauge-invariant positive-half cylinder algebra', 'separate plane-adapted charts', 'combined two-seam coefficient kernel', 'residual Polyakov holonomy', 'positive adjacent-plane correlation form', 'does not descend automatically', 'not a transfer operator', 'finite-group analogue', 'does not prove the SU(3) theorem', 'No-Go Discipline N1--N8', '### N3 \u2014 hidden-condition phrase scan', '### N4 \u2014 citation/residual matching', '### N5 \u2014 rhetoric and resolution audit', '### N6 \u2014 partial-closure, convention, reframe, and primitive scan', '### N7 \u2014 hostile steelman', '### N8 \u2014 cross-cycle echo', 'No axiom-update stop', '| `C1,C2` |', '| `C1,C3` |', '| `C1,C4` |', '| `C1,C5` |', '| `C1,C6` |', '| `C2,C3` |', '| `C2,C4` |', '| `C2,C5` |', '| `C2,C6` |', '| `C3,C4` |', '| `C3,C5` |', '| `C3,C6` |', '| `C4,C5` |', '| `C4,C6` |', '| `C5,C6` |']; attempted=0\nSCORECARD PASS=15 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T160556Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175112Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6548b02d differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SCORECARD PASS=15 FAIL=1' vs cache 'SCORECARD PASS=16 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note COUPLED_PERIODIC_TWO_SEAM_SU3_WILSON_STAGGERED_REFLECTED_GRAM_BOUNDED_THEOREM_NOTE_2026-07-12.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (SCORECARD PASS=16 FAIL=0); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175112Z"
  }
 }

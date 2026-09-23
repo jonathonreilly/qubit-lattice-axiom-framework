@@ -19,14 +19,21 @@
  "stdout_sha256": "67d1bcbc22d1bd66a321d5e93a44211c06d54969aa529196b7d1106920175e63",
  "stdout_tail": "ract :: ()\nFAIL Cycle-168 note states every required scope and provenance boundary :: ('not a routed row-native physical-membership theorem', 'not a probability or Born-rule derivation', 'No axiom conclusion follows', 'before the dynamic firewall is installed', 'not an oracle-free synthesis of those tables')\nPASS primary exhaustive runner passes with the exact evidence surface :: {'returncode': 0, 'missing': (), 'stderr': '', 'stdout_tail': \"(0, 0, 4, 2, (0, 0, 1))\\nREPRESENTATIVE (('D-', 'A10', 'D-'), 1, 1, 0) (0, 1, 5, 2, (0, 0, 0))\\nREPRESENTATIVE (('D-', 'A11', 'D+'), 0, 0, 0) (0, 1, 4, 2, (0, 0, 0))\\nREPRESENTATIVE (('D-', 'A11', 'D+'), 1, 0, 0) (0, 0, 5, 2, (0, 0, 1))\\nREPRESENTATIVE (('D-', 'A11', 'D-'), 0, 1, 0) (0, 1, 4, 2, (0, 0, 1))\\nREPRESENTATIVE (('D-', 'A11', 'D-'), 1, 1, 0) (0, 0, 5, 2, (0, 0, 0))\\nREPRESENTATIVE (('D-', 'D+', 'D+'), 0, 0, 0) (0, 0, 1, 0, (0, 1, 1))\\nREPRESENTATIVE (('D-', 'D+', 'D+'), 1, 0, 0) (36, 0, 5, 0, (1, 1, 1))\\nREPRESENTATIVE (('D-', 'D+', 'D-'), 0, 1, 0) (0, 0, 1, 0, (0, 1, 0))\\nREPRESENTATIVE (('D-', 'D+', 'D-'), 1, 1, 0) (36, 0, 5, 0, (1, 1, 0))\\nREPRESENTATIVE (('D-', 'D-', 'D+'), 0, 1, 0) (0, 0, 1, 0, (0, 0, 1))\\nREPRESENTATIVE (('D-', 'D-', 'D+'), 1, 1, 0) (36, 0, 5, 0, (1, 0, 1))\\nREPRESENTATIVE (('D-', 'D-', 'D-'), 0, 0, 0) (0, 0, 1, 0, (0, 0, 0))\\nREPRESENTATIVE (('D-', 'D-', 'D-'), 1, 0, 0) (36, 0, 5, 0, (1, 0, 0))\\n\\nTOTAL\\nPASS 16 FAIL 0\\nRESULT PERES_MERMIN_FACTORIZED_REFERENCE_CENSUS\\n\"}\n\nTOTAL\nPASS 8 FAIL 1\nRESULT OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T120120Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175122Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6283b3fe differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note PERES_MERMIN_FACTORIZED_REFERENCE_CENSUS_CYCLE168_NOTE_2026-07-16.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (TOTAL; PASS 9 FAIL 0; RESULT CYCLE168_PERES_MERMIN_FACTORIZED_REFERENCE_CENSUS_VERIFIED); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175122Z"
  }
 }

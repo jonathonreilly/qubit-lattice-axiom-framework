@@ -19,14 +19,21 @@
  "stdout_sha256": "5d8a52a8a9f600d5e64b3ce7d48f932d41c37ce5f00cc7ee16fca0d4af93b72c",
  "stdout_tail": "-independent terminal :: (68736, 330024, 9, 686970)\nPASS terminal exposes only next rail and next sidecar fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\nPASS first root requires physical seed, JOINT, and every adapter record :: ((5, 2, -3), (-1, 2, -2), (-1, 1, -2), (-1, 0, -2), (-1, 0, -1), (-1, -1, -1), (-2, -1, -1), (-2, -2, -1), (-3, -2, -1), (-3, -1, -1), (-2, -1, 0), (-3, -1, 0), (-4, -1, 0))\nPASS second root requires first root and the carried sidecar :: ((-4, 0, 0), (-5, -1, 0), (-6, -1, 0), (-7, -1, 0), (-8, -1, 0))\nPASS both roots consume the same three-parent guarded local row :: ((((0, -1, 0), 'R_A22'), ((0, 1, 0), 'R_C23'), ((1, 0, 0), 'B0')), (((0, -1, 0), 'R_A22'), ((0, 1, 0), 'R_C23'), ((1, 0, 0), 'B0')))\n\nPHYSICAL PREHISTORY FIREWALL\nPASS 249,192 physical histories preserve byte, port, and launch barriers :: (249192, 1596534, (), (), {(4, 4, -3)})\nPASS extension rows cannot rewrite a physical-prefix target :: ()\nPASS every reachable prehistory extension front is declared and typed :: (1188, 3, 2, ())\n\nMUTATION AND COVARIANCE CONTROLS\nPASS all 918 direct root-parent mutations suppress R_B01 :: ((), ())\nPASS alternate typed fronts never contain the intended root value :: (0, 0)\nPASS all 236,064 proper-cubic raw images preserve output :: []\nFAIL review note carries N1-N8 discipline and no axiom edit :: \n\nACCOUNTING\nPHYSICAL_STATES 249192\nFACTOR_STATES 68736\nFACTOR_EDGES 330024\nFINAL_RAW 9836\nPASS 14 FAIL 2\nRESULT CYCLE144_REJECTED\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T025519Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175122Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 92a9863d differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note PHYSICAL_R_B01_RECURRENT_ROOT_BIND_CYCLE144_NOTE_2026-07-15.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (PASS 16 FAIL 0; RESULT PHYSICAL_R_B01_RECURRENT_ROOT_BIND); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175122Z"
  }
 }

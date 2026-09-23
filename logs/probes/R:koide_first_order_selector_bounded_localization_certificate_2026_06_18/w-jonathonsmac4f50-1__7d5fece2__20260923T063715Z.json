@@ -22,15 +22,22 @@
  "stdout_sha256": "81231f24b90156d7fd0672a42aa072923302e66c517d7d09339c7e5936562837",
  "stdout_tail": " firewall marker present: discrete `C3` clock index\nPASS: required firewall marker present: native circulant anticommuting operator\nPASS: required firewall marker present: static grading or complex structure\nPASS: required firewall marker present: separate chiral factor\nPASS: required firewall marker present: N2 wall independence\nPASS: required firewall marker present: N3 hidden-wall scan\nPASS: required firewall marker present: N4 residual matching\nPASS: required firewall marker present: N5 rhetoric audit\nPASS: required firewall marker present: N6 partial-closure path scan\nPASS: required firewall marker present: N7 steelman\nPASS: required firewall marker present: N8 cross-cycle echo\nPASS: forbidden overclaim absent: is a retained physical selector\nPASS: forbidden overclaim absent: derives the physical Koide `r=1/2` selector\nPASS: forbidden overclaim absent: AC_phi_lambda supplies the physical\nPASS: forbidden overclaim absent: framework supplies the physical coupling\nPASS: forbidden overclaim absent: is a retained Koide `r=1/2` derivation\nPASS: forbidden overclaim absent: asserts an effective-status change\nPASS: forbidden overclaim absent: only surviving escape requires\nPASS: forbidden overclaim absent: only surviving first-order escape\nPASS: forbidden overclaim absent: only viable first-order escape\nPASS: certificate enumerates five load-bearing statements\nPASS: verification stanza points at this runner\n\nTOTAL: PASS=54 FAIL=1\nVERDICT: bounded localization certificate FAILED.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T063716Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7d5fece2 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=54 FAIL=1' vs cache 'TOTAL: PASS=55 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the firewall marker '2026-06-18 bounded-localization re-audit packet' was renamed to '\u2026 source packet' by 177575ece9 (2026-06-20) and occurs in neither the note nor the certificate. Issue #8804.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z"
  }
 }

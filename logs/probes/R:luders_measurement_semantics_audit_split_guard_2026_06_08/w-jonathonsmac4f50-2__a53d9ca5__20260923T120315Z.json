@@ -22,15 +22,22 @@
  "stdout_sha256": "b260027e725edf41422034b4c2368c5d93068e8e75a80122c12cc5734cedec8e",
  "stdout_tail": "LUEDERS MEASUREMENT-SEMANTICS AUDIT SPLIT GUARD 2026-06-08\nPASS docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md exists\nPASS docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md exists\nPASS docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md exists\nPASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md exists\nPASS docs/RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md exists\nPASS docs/MINIMAL_AXIOMS_2026-06-05.md exists\nPASS parent declares conditional-support assembly\nPASS parent says not retained/unbounded/native Lueders theorem\nPASS parent names 2026-06-08 split\nPASS parent enumerates PEP finite support\nPASS parent enumerates KP finite support\nPASS parent enumerates finite pointer-record write\nPASS parent enumerates typed record-instrument kernel\nPASS parent identifies residual measurement-semantics bridge\nPASS parent states Record axiom supplies no probability/instrument\nPASS parent keeps Born/measurement probability premise open\nPASS PEP bridge denies measurement probability semantics\nPASS KP bridge scopes out general apparatus label-mixing\nFAIL record-write bridge is finite pointer-model conditional\nPASS record-write bridge denies Born/probability derivation\nPASS kernel interface is under supplied instrument\nPASS kernel interface leaves trace/effect probability open\nPASS minimal axioms deny instrument/Born content\nSUMMARY: PASS=22 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T120315Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a53d9ca5 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=22 FAIL=1' vs cache 'SUMMARY: PASS=23 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE was rewritten by fd042fd4c0 (2026-06-19); 'ideal record-write' now occurs only split across a line break, which the raw substring test misses. Issue #8806.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z"
  }
 }

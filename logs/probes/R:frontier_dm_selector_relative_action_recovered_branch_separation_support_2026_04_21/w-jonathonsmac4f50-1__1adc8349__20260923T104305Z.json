@@ -22,15 +22,22 @@
  "stdout_sha256": "ea1cc3ade8e450060ed429dfcbd380aaecc1944b49806cba3db05c72ecf2bb4f",
  "stdout_tail": " source becomes strictly smaller than every recovered-bank competitor  ((V_rel, min_bank)=(0.030950556466, 0.580783471954))\n\n========================================================================================\nPART 4: SCIENTIFIC CONSEQUENCE\n========================================================================================\n  [FAIL] The review register still names the finer right-sensitive microscopic selector law as open\n  [PASS] So the remaining selector burden is not just to force minimal relative action abstractly  (the current internal selector and the recovered-bank threshold candidate are distinct exact selector objects)\n  [PASS] What remains is a bridge from the internal selector law to the recovered right-sensitive selector branch, or a finer replacement law  (support narrowing only)\n\n========================================================================================\nRESULT\n========================================================================================\n  The strongest current framework-internal selector law does not yet\n  collapse to the recovered selector branch.\n  Its exact source stays off the recovered bank, carries its own later\n  intrinsic breakpoint, and is not selected by the recovered-bank\n  canonical breakpoint tau_b,min.\n  So the remaining microscopic selector burden is now sharper:\n    bridge the exact internal selector law to the recovered\n    right-sensitive selector branch, or replace it with a finer law.\n\nSUMMARY: PASS=12 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T104307Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175114Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1adc8349 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=12 FAIL=2' vs cache 'SUMMARY: PASS=13 FAIL=1'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the open-imports register no longer contains 'finer right-sensitive microscopic selector law' (absent back to 2026-05-16) and the relative-action note no longer says 'strongest framework-internal selector currently available'. Issue #8788.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175114Z"
  }
 }

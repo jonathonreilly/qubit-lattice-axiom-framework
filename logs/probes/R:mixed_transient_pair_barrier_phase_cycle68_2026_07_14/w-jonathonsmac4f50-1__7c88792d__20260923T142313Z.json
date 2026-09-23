@@ -19,14 +19,21 @@
  "stdout_sha256": "201f56680f208decaf63c106eb128a93b4cd69414eb4edadf1272b132600479f",
  "stdout_tail": "inversions :: 27\nPASS C01 exact Cycle-60 reachable-state census is retained :: 242,033\nPASS C02 legacy mixed-context census is exact :: 7687\nPASS C03 legacy feasible-context census is exact :: 2737\nPASS C04 legacy table has six delayed-F wrong-write classes :: [((0, -3, -3), 'PHASE', ('T',), 'F'), ((0, -2, -4), 'PHASE', ('T',), 'F'), ((2, -3, -1), 'PHASE', ('T',), 'F'), ((2, 0, -4), 'PHASE', ('T',), 'F'), ((3, -2, -1), 'PHASE', ('T',), 'F'), ((3, 0, -3), 'PHASE', ('T',), 'F')]\nPASS C05 every legacy wrong write is T stealing F\nPASS C06 legacy scan has no merged-output conflict\nPASS C07 legacy phase cannot block an unfinished comb target\nPASS D01 AB-only table has 34 canonical rows :: Counter({'F': 12, 'A': 10, 'AB': 7, 'T': 5})\nPASS D02 AB-only table has 684 raw rotated rows :: 684\nPASS D03 AB-only feasible bridge-context census is exact :: 204\nPASS D04 AB-only split retains 96 wrong-write contexts :: Counter({((3, 0, -4), 'PHASE', ('A',), 'AB'): 32, ((3, -3, -1), 'PHASE', ('A',), 'AB'): 32, ((0, -3, -4), 'PHASE', ('A',), 'AB'): 32})\nPASS D05 every AB-only wrong write is A stealing AB\nPASS D06 AB-only bridge scan has no merged-output conflict\nPASS E01 repaired mixed-context census is exact :: 8911\nPASS E02 repaired feasible-context census is exact :: 2353\nPASS E03 repaired table has no feasible wrong/off-footprint write :: ()\nPASS E04 repaired table has no feasible merged-output conflict\nPASS E05 repaired phase cannot block an unfinished comb target\n\nSUMMARY: 30 PASS / 1 FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T142342Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c88792d differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note MIXED_TRANSIENT_PAIR_BARRIER_PHASE_CYCLE68_NOTE_2026-07-14.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (SUMMARY: 31 PASS / 0 FAIL); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z"
  }
 }

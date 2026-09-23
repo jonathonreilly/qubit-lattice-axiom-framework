@@ -22,15 +22,22 @@
  "stdout_sha256": "dfaffb883456cbb5de509e005d2a3175859ef4f6b23dc31e47969ec8d9a16b67",
  "stdout_tail": "Z3 finite-group analogue equals its two-seam forest-fixed average: full=1.036647727456, fixed=1.036647727456, residual=0.000e+00; analogue is not the SU3 Haar proof\nPASS Gauge-invariance restriction is load-bearing for forest disintegration: noninvariant full=-0.000, fixed=1.000\nPASS Sampled SU3 Wilson seam kernel is positive semidefinite: minimum sampled eigenvalue=4.715e-01\nPASS Wilson tensor fermion seam crossing remains positive: minimum tensor eigenvalue proxy=1.179e-01\nPASS Dropped orientation conjugation breaks seam positivity: minimum sampled eigenvalue=-9.972e-01\nFAIL Source-note boundary and N1-N8 contract: missing=['gauge-invariant/dressed cylinder algebra', 'constant Faddeev--Popov factor', 'residual temporal holonomy', 'plane-adapted', 'separate plane-adapted charts', 'normalized Haar bi-invariance', 'finite-group analogue', 'does not prove SU(3) Haar invariance', 'Berezin Jacobian', 'no single common forest', 'No-Go Discipline N1--N8', '### N3 \u2014 hidden-condition phrase scan', '### N4 \u2014 citation/residual matching', '### N5 \u2014 rhetoric and resolution audit', '### N6 \u2014 partial-closure, convention, reframe, and primitive scan', '### N7 \u2014 hostile steelman', '### N8 \u2014 cross-cycle echo', 'No axiom-update stop', '| `C1,C2` |', '| `C1,C3` |', '| `C1,C4` |', '| `C1,C5` |', '| `C1,C6` |', '| `C2,C3` |', '| `C2,C4` |', '| `C2,C5` |', '| `C2,C6` |', '| `C3,C4` |', '| `C3,C5` |', '| `C3,C6` |', '| `C4,C5` |', '| `C4,C6` |', '| `C5,C6` |']; attempted=0\nSCORECARD PASS=36 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T070133Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175123Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a5094169 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SCORECARD PASS=36 FAIL=1' vs cache 'SCORECARD PASS=37 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note TWO_SEAM_FOREST_GAUGE_POLYAKOV_HOLONOMY_PRESERVATION_BOUNDED_THEOREM_NOTE_2026-07-12.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (SCORECARD PASS=37 FAIL=0); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175123Z"
  }
 }

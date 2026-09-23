@@ -19,14 +19,21 @@
  "stdout_sha256": "dd79884bdbaa473115b65957651aa42bc598cb4308baf9504d446bb2a17ea3ee",
  "stdout_tail": "in is disjoint from selected recurrence union\nPASS B13 provisional union has 4,564 raw rows\nPASS B14 provisional union is output-single-valued\n\n===============================================================================\nC - All 65,536 physical comparisons and reachable states\n===============================================================================\nPASS C01 first-difference census is exact :: Counter({0: 32768, 1: 16384, 2: 8192, 3: 4096, 4: 2048, 5: 1024, 6: 512, 8: 256, 7: 256})\nPASS C02 all 131,072 reachable states have exact frontier :: []\nPASS C03 all-pairs graph has exactly 65,536 edges :: 65536\nPASS C04 every pair has exactly one terminal\nPASS C05 exactly the 256 equal pairs reach MATCH\nPASS C06 no state exposes more than one write\nPASS C07 rejected one-rail design would corrupt 32,640 pairs\n\n===============================================================================\nD - Covariance and supplied-harness boundary\n===============================================================================\nPASS D01 all 120 transformed controls have exact frontier :: []\nFAIL D02 note exists and carries no authority\nFAIL D03 note says the comparator harness is supplied\nFAIL D04 note names the surviving seed-growth residual\nFAIL D05 note names the row-port next step\nFAIL D06 note denies axiom consequence\n\nOUTPUT_ROLES=113 ACTIVE_ROLES=120 FULL_ROLES=134 BITS=8 RESERVED=122\nCOMPARATOR_CANONICAL=3 COMPARATOR_RAW=56 PAIR_STATES=131072 PAIR_EDGES=65536\nSUMMARY: 32 PASS / 5 FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T053359Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175113Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha eaaa4c12 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note EIGHT_BIT_PHYSICAL_ROLE_COMPARATOR_CYCLE81_NOTE_2026-07-14.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (SUMMARY: 37 PASS / 0 FAIL); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175113Z"
  }
 }

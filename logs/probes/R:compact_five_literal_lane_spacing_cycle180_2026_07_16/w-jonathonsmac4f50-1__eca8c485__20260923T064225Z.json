@@ -19,14 +19,21 @@
  "stdout_sha256": "daa08cf25172486d0dd83503003493f85205b869cafa1c6d0f70e4d61a46fe15",
  "stdout_tail": ", 'L6')))))\nPASS the compact sources are disjoint but nearest-neighbor adjacent :: 1\n\nALL-32 COMPACT CAUSAL CERTIFICATES\nPASS all 32 words retain the exact Cycle-178 causal shape at spacing 12 :: (Counter({(1521, 3455, 18, 16, 0, 10): 32}), ())\nPASS all five compact payload lineages remain exact and disjoint :: ((), {((-26, 3, -1), (-26, 15, -1), (-26, 27, -1), (-26, 39, -1), (-26, 51, -1))})\nPASS the compact causal graph has zero cross-lane ancestry :: ((), (), ())\nPASS the five-lane graph factorizes exactly into five single-lane graphs :: (1521, 3455, 18, 16, 0, 10)\n\nCOMPACTION AND BINDING STATUS\nPASS transverse source width falls from 813 to 61 sites :: (813, 61, 800, 48)\nPASS compaction generates no common binding or membership target :: (0, 0)\n\nSCOPE AND NO-GO DISCIPLINE\nFAIL the note freezes the construction-bounded scope and N1-N8 gate :: \n\nACCOUNTING\nREFERENCE_SPACING 200\nMINIMUM_DISJOINT_SPACING 12\nFIRST_FAILED_SPACING 11\nFIRST_FAILURES (((2, 6, -1), ((0, 'R_B32'), (1, 'L6'))), ((2, 7, 0), ((0, 'R_B32'), (1, 'L6'))), ((2, 17, -1), ((1, 'R_B32'), (2, 'L6'))), ((2, 18, 0), ((1, 'R_B32'), (2, 'L6'))), ((2, 28, -1), ((2, 'R_B32'), (3, 'L6'))), ((2, 29, 0), ((2, 'R_B32'), (3, 'L6'))), ((2, 39, -1), ((3, 'R_B32'), (4, 'L6'))), ((2, 40, 0), ((3, 'R_B32'), (4, 'L6'))))\nCOMPACT_OFFSETS ((0, 0, 0), (0, 12, 0), (0, 24, 0), (0, 36, 0), (0, 48, 0))\nBUNDLE_SHAPES Counter({(1521, 3455, 18, 16, 0, 10): 32})\nCROSS_LANE_EDGES 0\nMULTI_LANE_TARGETS 0\nPASS 10 FAIL 2\nRESULT CYCLE180_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T064404Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175112Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha eca8c485 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note COMPACT_FIVE_LITERAL_LANE_SPACING_CYCLE180_NOTE_2026-07-16.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (PASS 12 FAIL 0; RESULT CONSTRUCTION_BOUNDED_COMPACT_FIVE_LITERAL_BUNDLE); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175112Z"
  }
 }

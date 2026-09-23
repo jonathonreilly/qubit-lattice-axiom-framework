@@ -22,15 +22,22 @@
  "stdout_sha256": "e8a1fb1f4321307aa93a67f49c0e8e47d020dabb7f5a758b4da080f16471a3af",
  "stdout_tail": "urface battery alone ties PASS/PASS \u2014 det positivity at m > 0 (check 10), the Berezin identity (check 13), the supplied-inventory g* arithmetic (check 14), and the carrier package (both embedded carriers: M_3(C) dim 9, count 3, re-computed here) \u2014 the ENTIRE selection lives in the unsupplied clause CL\n[PASS] 23. [D] turn-1 inversion-guard compliance (computed): nothing is forced from the matched 3 = 3 \u2014 the kernel-global count readouts are 8/4 (K1) and 20/8 (K0), never 3; the only reading yielding 3 (carrier + hw=1) TIES; and the discriminating certificates (vanishing order, g_eff, tangent flatness) consume only spectra \u2014 no count, carrier, or species-label input anywhere in their chain\nRESIDUAL (declared-open): CL is NOT retained and is not granted here; it is B-Z2 restated in the retained SB row's per-dof currency, and on this surface (given the parent carrier certificates) it is strictly stronger than the bare point-like-zero-set clause (boundary B-F2)\nRESIDUAL (declared-open): finite volumes/grids: eigensolver L in {2,4,6,8,12}, symbol grids L in {12,24,48,64,128} licensed by check 4; wrap-convention (PBC/APBC, L mod 4) data recorded as convention-graded, not analyzed exhaustively (boundary B-F4)\nRESIDUAL (declared-open): the supplier sweep covers the enumerated determinant/Matsubara/heat-kernel, thermal/g*/entropy, and isotropy/Lorentz families enumerated in the note's section 4; exhaustiveness over all retained rows is not claimed (boundary B-F5)\n\nTOTAL: PASS=22 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T060040Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a5af72bc differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=22 FAIL=1' vs cache 'TOTAL: PASS=23 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: none of the 17 determinant/Matsubara/heat-kernel candidate rows has a retained grade in the committed shards, so the dynamically-read retained set is empty. Issue #8812.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z"
  }
 }

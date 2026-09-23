@@ -22,15 +22,22 @@
  "stdout_sha256": "9c45fefaf53483a6f77c27d708935f8058148ce200f5a2db242810bd3276b6ac",
  "stdout_tail": "on(1, 4), 'signed_ab_ba': Fraction(-1, 4)}\nPASS second_is_b value is exact :: {'endpoint_ab': Fraction(1, 4), 'endpoint_ba': Fraction(1, 2), 'second_is_b': Fraction(1, 4), 'signed_ab_ba': Fraction(-1, 4)}\nPASS signed_ab_ba value is exact :: {'endpoint_ab': Fraction(1, 4), 'endpoint_ba': Fraction(1, 2), 'second_is_b': Fraction(1, 4), 'signed_ab_ba': Fraction(-1, 4)}\n\n------------------------------------------------------------------------------\nFirewall flags\n------------------------------------------------------------------------------\nPASS audit data written flag is false\nPASS audit verdict applied flag is false\nPASS promoted/retained claim flag is false\nPASS selection rule derived from Record flag is false\nPASS candidate family derived from Record flag is false\nPASS kernel selected without supplied rule flag is false\nPASS Record-derived physical arrow flag is false\nPASS Born law derived from Record flag is false\nPASS generation/Koide dial selected flag is false\nPASS stable setting selects dial flag is false\n\nSUMMARY: PASS=36 FAIL=3\nSUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE\nSUPPLIED_RULE_UNIQUE_MINIMUM=TRUE\nWEAK_RULE_UNDERSELECTS_KERNEL=TRUE\nSELECTION_RULE_DERIVED_FROM_RECORD=FALSE\nCANDIDATE_FAMILY_DERIVED_FROM_RECORD=FALSE\nPRODUCTION_KERNEL_SELECTED_WITHOUT_RULE=FALSE\nPHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE\nBORN_LAW_DERIVED_FROM_RECORD=FALSE\nGENERATION_OR_KOIDE_DIAL_SELECTED=FALSE\nSTABLE_SETTING_SELECTS_DIAL=FALSE\nAUDIT_LEDGER_WRITTEN=FALSE\nAUDIT_VERDICT_APPLIED=FALSE\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T093820Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175116Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ab16172c differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=36 FAIL=3' vs cache 'SUMMARY: PASS=39 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md was rewritten as an exact rational theorem by 4e911553c5 (2026-07-16) and no longer contains the three scope sentences the interface runner quotes. Issue #8794.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175116Z"
  }
 }

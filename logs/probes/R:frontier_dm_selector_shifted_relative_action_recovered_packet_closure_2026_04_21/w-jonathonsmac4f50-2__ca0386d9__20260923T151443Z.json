@@ -22,15 +22,22 @@
  "stdout_sha256": "fb69719589f51b1834af9240cd36326ebd02577bf5f54d35a76f7433c1e22e36",
  "stdout_tail": "============================\n  [PASS] The projection note still records that the exact internal selector already has the same preferred recovered image\n  [PASS] So on the current recovered selector packet, the remaining review-surface selector residue is closed by the same exact scalar law  (packet-local closure only)\n  [PASS] The companion exact-target theorem removes any separate native A-BCC residue once the PMNS target surface is granted  (pure target-free global sign/source-chart derivation remains outside this theorem alone)\n\n========================================================================================\nRESULT\n========================================================================================\n  On the current recovered selector packet, the same exact scalar\n  observable-principle law already closes point selection.\n  After transporting the seed-relative LogDet/Bregman law to the common\n  positive windows A_mu(H)=H+mu I, the preferred recovered lift 0 is the\n  unique minimizer across the full audited shift family and on a dense\n  admissible stress range, and it is exactly the unique recovered point\n  with Im(K_Z3[1,2]) > 0.\n  So the review-surface DM selector residue is closed on the current\n  recovered packet. By itself this theorem is not a pure target-free\n  global sign/source-chart theorem, but the companion exact-target\n  source-cubic theorem removes any separate native A-BCC residue once\n  the PMNS target surface is granted.\n\nSUMMARY: PASS=13 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T151443Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175115Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ca0386d9 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=13 FAIL=1' vs cache 'SUMMARY: PASS=14 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the relative-action note no longer contains 'exact scalar `log|det|` observable' (absent on every reachable main commit back to 2026-05-16), while the committed cache records PASS=14 FAIL=0. Issue #8791.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175115Z"
  }
 }

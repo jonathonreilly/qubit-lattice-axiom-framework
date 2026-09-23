@@ -19,14 +19,21 @@
  "stdout_sha256": "0243767a96c818daae3bc8761fec12bc5045fbe4a5878e3f89594f6612731ca6",
  "stdout_tail": "======================\nPASS B01 all 143 product states have exactly the two lawful fronts :: []\nPASS B02 product contains every code/rail interleaving prefix\nPASS B03 code front remains the exact R_B11 to VALID to READY sequence\nPASS B04 first rail slice remains the exact twelve-write Cycle-52 sweep\nPASS B05 bounded product exposes only the next lawful rail write\n\n===============================================================================\nC - Longer renewal, old debris, and covariance\n===============================================================================\nPASS C01 all 96 rail appends have a singleton mixed frontier :: []\nPASS C02 eight complete slices expose exactly the ninth-slice start\nPASS C03 old endpoint, code, and seven prior slices stay permanently present\nPASS C04 all 96 mixed checkpoint rotations preserve the frontier :: []\nPASS C05 Cycle-52 supplies an exact period-four unbounded renewal induction\n\n===============================================================================\nD - Exact scope and constitutional disposition\n===============================================================================\nFAIL D01 note exists and carries authority none\nFAIL D02 note names the closed bounded interface\nFAIL D03 note names the exact remaining bind\nFAIL D04 note contains N1-N8\nFAIL D05 note denies foundation and axiom effects\n\nSOURCE=254 CODE_APPENDS=10 RAIL_APPENDS=96\nMACROBLOCK_RAW=5444 RAIL_RAW=1080 MIXED_RAW=6524\nPRODUCT_STATES=143\nSUMMARY: 17 PASS / 5 FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T150526Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175119Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e07bf4a9 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note GENERATED_ENDPOINT_AUTONOMOUS_FRAME_RAIL_CYCLE102_NOTE_2026-07-15.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (SUMMARY: 22 PASS / 0 FAIL); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175119Z"
  }
 }

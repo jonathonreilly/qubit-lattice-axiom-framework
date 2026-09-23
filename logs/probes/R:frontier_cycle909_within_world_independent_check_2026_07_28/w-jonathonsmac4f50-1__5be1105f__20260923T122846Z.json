@@ -19,15 +19,22 @@
  "stdout_sha256": "2199112be80dec22c22e37d84ffd61e3a36ea4e75f3ee406312fcd5408e0750e",
  "stdout_tail": "==============================================================================\nCYCLE 909 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE\n==============================================================================\n\nScope: the revised primary's stipulated-table claims only.  The\nunlanded census closure is removed; no universal negative exists to\ncheck and none is certified.\n\n  FAIL  R0_PINNED_EVIDENCE                   scripts/frontier_cycle909_within_world_pricing_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle909_within_world_pricing_2026_07_28.txt:MISMATCH\n  FAIL  R0b_CLAIMS_PARSED                    claims_line_found=False\n  FAIL  R1_FACTORIZATION                     19003=31*613 primality independently confirmed; primary_factors={}\n  FAIL  R2_TABLE_BY_MULTIPLICATION           sites*per_site==column for both degrees: False\n  FAIL  R3_TWO_SQUARES_INDEPENDENT           counts=[3, 2, 1, 1] product=6 primary=None/None\n  FAIL  R4_DENOMINATOR_LEMMA_INDEPENDENT     trials=3000 violations=0 primary_violations=None\n  PASS  R5_RUNTIME                           elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=1 FAIL=6\nVERDICT: PRIMARY_REFUTED_ON_THIS_CHECK\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T122846Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175113Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5be1105f differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'VERDICT: PRIMARY_REFUTED_ON_THIS_CHECK' vs cache 'elapsed_sec: 76.957'",
    "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: salvage commit ffaa1a06e6 (2026-08-09) restored the 2026-08-04 cache of the cycle909 primary (no CLAIMS_JSON line) while the primary stayed at its 2026-08-08 version; one of 422 caches it left stale (#8770). Issue #8781.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175113Z"
  }
 }

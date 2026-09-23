@@ -22,15 +22,22 @@
  "stdout_sha256": "2d231d9402e50059fe2e1a096e2fd6abef7b81153f1a06d4e2a752e6de3b5228",
  "stdout_tail": "ve_from_source`\n    sha256=982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01\n[PASS] sewing shell source cache exists -- logs/runner-cache/frontier_sewing_shell_source.txt\n[PASS] sewing shell source cache names helper runner -- scripts/frontier_sewing_shell_source.py\n[PASS] sewing shell source cache is SHA-fresh -- 982afafc28f9\n[PASS] sewing shell source cache exited cleanly -- status=ok exit=0\n[PASS] sewing shell source cache output is passing\n\nradial shell matching law\n[PASS] scripts/frontier_radial_shell_matching_law.py exists\n[PASS] scripts/frontier_radial_shell_matching_law.py has substantive source -- lines=172\n[PASS] scripts/frontier_radial_shell_matching_law.py exposes `def radial_average_shell`\n[PASS] scripts/frontier_radial_shell_matching_law.py exposes `def solve_from_source`\n[PASS] scripts/frontier_radial_shell_matching_law.py exposes `def exterior_relative_errors`\n    sha256=0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c\n[PASS] radial shell matching law cache exists -- logs/runner-cache/frontier_radial_shell_matching_law.txt\n[PASS] radial shell matching law cache names helper runner -- scripts/frontier_radial_shell_matching_law.py\n[PASS] radial shell matching law cache is SHA-fresh -- 0bb3dac9010b\n[PASS] radial shell matching law cache exited cleanly -- status=ok exit=0\n[PASS] radial shell matching law cache output is passing\n\n========================================================================\nSUMMARY: PASS=50 FAIL=5 TOTAL=55\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T114745Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 2038ab50 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=50 FAIL=5' vs cache 'SUMMARY: PASS=55 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the primary reduced-shell runner no longer imports the five helper modules (823121ba09, 2026-07-09, now imports the self-contained replay), so the helper-packet premise is false. Issue #8810.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z"
  }
 }

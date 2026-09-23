@@ -23,15 +23,22 @@
  "stdout_sha256": "d7bf5ccf8de23f76640244636e436e67b4d55413b78274ca03494c674dd3a0e4",
  "stdout_tail": "=======================\nPART 4: SCIENTIFIC CONSEQUENCE\n========================================================================================\n  [FAIL] The open-import register still names the finer right-sensitive microscopic selector law as the live DM blocker\n  [PASS] The internal selector and recovered threshold branch are no longer disconnected by the current exact branch science  (the same preferred recovered lift is selected by the threshold family and by the audited projection metrics from the internal selector)\n  [PASS] So the remaining selector-side burden narrows to justifying the projection principle, or replacing both selector objects by a finer microscopic law  (support narrowing only)\n\n========================================================================================\nRESULT\n========================================================================================\n  The relative-action source still stays off the recovered selector branch,\n  but it now has a canonical recovered projection packet.\n  Across Frobenius, target, threshold-profile, affine-invariant, dual\n  LogDet, and inverse-eigenvalue metrics, the unique nearest recovered\n  point is always the preferred lift 0.\n  That same lift is already selected by the intrinsic breakpoint tau_b,min.\n\n  So the selector-side burden narrows again:\n    justify the projection from the exact internal selector to that\n    preferred recovered lift, or replace both by a finer microscopic law.\n\nSUMMARY: PASS=12 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T151440Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175115Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ca0386d9 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_selector_relative_action_recovered_projection_support_2026_04_21.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the open-imports register no longer names the 'finer right-sensitive microscopic selector law' (absent on every reachable main commit back to 2026-05-16; the committed cache already records this FAIL). Issue #8789.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175115Z"
  }
 }

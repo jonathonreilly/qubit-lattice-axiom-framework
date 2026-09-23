@@ -22,15 +22,22 @@
  "stdout_sha256": "90d6bf74527313adfa2e765d4fc50c0b01c635a02397f2e30c12494d8ab227a0",
  "stdout_tail": "inct r -> distinct Q) (dQ/dr = 2/3 > 0)\n[PASS] [A] STRUCTURE derived, OCCUPANCY free: r is the lone per-sector real input (one real parameter r(s) per sector on the derived axis)\n[PASS] [B] sector-ladder r(s)=2^(s-1) is a relabel of free occupancy (s=1 -> r=1) (ladder is an indexing convention, not a derivation)\n\n=== note boundary / honesty guard ===\n[PASS] [A] note contains: Generation Koide data reduces to a single derived modulus per sector\n[FAIL] [A] note contains: Claim type:** theorem\n[PASS] [A] note contains: r = |b|^2/a^2\n[PASS] [A] note contains: onto\n[PASS] [A] note contains: exactly one real modulus\n[PASS] [A] note contains: Record explicitly supplies no\n[PASS] [A] note contains: one real modulus per sector\n[PASS] [A] note omits banned phrase: T1\n[PASS] [A] note omits banned phrase: T2\n[PASS] [A] note omits banned phrase: wall-blocked\n[PASS] [A] note omits banned phrase: closes the route\n[PASS] [A] note omits banned phrase: last route\n[PASS] [A] note omits banned phrase: exhausted\n[PASS] [A] note does not self-claim retained tier: Status:** retained\n[PASS] [A] note does not self-claim retained tier: Claim type:** retained\n[PASS] [A] note does not self-claim retained tier: this result is retained\n[PASS] [A] note does not self-claim retained tier: promote to retained\n[PASS] [A] all 'retained' mentions are sibling no-go provenance (not self-tier) (non-provenance 'retained' count = 0)\n\nGENERATION_KOIDE_SINGLE_MODULUS_REDUCTION boundary certificate: FAIL\nPASS=47 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T113423Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175119Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 769d150d differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=47 FAIL=1' vs cache 'PASS=48 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: a type-header backfill (cf04eaafc3, 2026-07-04) changed '**Claim type:** theorem' to '**Claim type:** bounded_theorem \u2014 theorem' in GENERATION_KOIDE_SINGLE_MODULUS_REDUCTION; the claim was conditional before and after. Issue #8802.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175119Z"
  }
 }

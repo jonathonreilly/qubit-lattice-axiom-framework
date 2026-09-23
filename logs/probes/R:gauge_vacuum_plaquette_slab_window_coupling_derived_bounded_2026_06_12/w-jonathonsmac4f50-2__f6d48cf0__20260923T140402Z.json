@@ -22,15 +22,22 @@
  "stdout_sha256": "0d0d8b1fb63ac259142b6a3adca0a48f1d362b09ddf7c993704cefb3ec4138d5",
  "stdout_tail": "runcation: trivial window channel, equal to switched-off window.\n\n================================================================================================================\nPart 4: switched-off measurement gate\n================================================================================================================\nP(k=2, window channel switched off) = 0.449370834209282\nW44 unwindowed k=2 reference        = 0.449370834209281\ndelta_off_minus_W44                = +8.881784197001252e-16\nW44 strip-word deep limit           = 0.615191992185898\npair-support limit from runner      = 0.615191992185898\nPASS: window switched off reproduces W44 k=2 strip-word value\nPASS: pair-support limit is unchanged by the switched-off window gate\nPASS: nontrivial k=2 displacement is not reported without the missing recoupling object\n      the runner reports zero switched-off displacement only, not a window-physics cancellation\n\n================================================================================================================\nPart 5: note hygiene and no-go discipline visibility\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note uses markdown links for one-hop authorities\nPASS: context refs avoid branch-local .claude paths\nPASS: note avoids overreach closure phrases\nPASS: note includes a visible N1-N8 wall-discipline gate\n\nTOTAL: PASS=20, FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T140404Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175118Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f6d48cf0 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=20, FAIL=2' vs cache 'TOTAL: PASS=22, FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the tensor-transfer note no longer states the character-expansion step the slab-window runner quotes; abfd82d89d (2026-07-18) removed both passages (absent even after whitespace flattening). Issue #8800.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175118Z"
  }
 }

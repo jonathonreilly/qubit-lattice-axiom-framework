@@ -19,14 +19,21 @@
  "stdout_sha256": "0e3c4c158833e4be7c78152faf730a8001f00d3095a0eba00a26a8d2fabc5197",
  "stdout_tail": "itnesses leaves one redundant witness :: \nPASS erasing both witnesses restores the coherent source :: \n\nGLOBAL COHERENCE AND ACTUALITY\nPASS two witnesses create a coherent GHZ record candidate, not one selected branch :: (0.9999999999999998+0j)\nPASS the global branch phase survives even when every local marginal is classical :: \nPASS neither one nor two CNOT witnesses contains an outcome selector :: (array([0, 3]), array([0, 7]))\n\nENDPOINT CHANNEL AND NO-CLONING\nPASS the endpoint-only map preserves basis populations and kills phase terms :: \nPASS the endpoint is a dephased record copy rather than the transported plus state :: [[0.5+0.j 0. +0.j]\n [0. +0.j 0.5+0.j]]\nPASS unitarity forbids extending record copying to arbitrary-state cloning :: (np.float64(0.7071067811865475), np.float64(0.4999999999999999))\nPASS coherent state transfer by SWAP revokes the old source value :: \n\nFIVE-LANE JOINT CODE\nPASS all 32 five-lane repetition codewords are distinct :: 32\nPASS discarding the persistent trails dephases every distinct five-bit codeword :: ()\nPASS a coherent 32-codeword superposition becomes a classical endpoint mixture :: (0.9999999999999998+1.0697626444327289e-18j)\n\nFORMATION INTERPRETATION\nPASS two witnesses buy single-erasure redundancy, not a unitary actuality rule :: \nPASS a clock or read register coupled by the same copy interaction is another witness :: one witness plus one clock/read copy equals the two-witness state\n\nSUMMARY\nPASS 21\nFAIL 1\nRESULT CYCLE182_NEEDS_REPAIR\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T144526Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 410cc8b6 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note ORTHOGONAL_LINEAGE_COHERENT_DILATION_CYCLE182_NOTE_2026-07-16.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (PASS 22; FAIL 0; RESULT ORTHOGONAL_COPY_HAS_COHERENT_DILATION_BUT_NOT_ACTUALITY_OR_QUBIT_TRANSPORT); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z"
  }
 }

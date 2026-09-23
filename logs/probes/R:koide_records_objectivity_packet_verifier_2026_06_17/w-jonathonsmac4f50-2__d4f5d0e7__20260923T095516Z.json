@@ -29,14 +29,21 @@
  "stdout_sha256": "d5b8db0735f7f5c4730b985548d4f441e96149f39eb1e1bac8d5b254471e519d",
  "stdout_tail": "ffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8\nPASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt contains 'PASS=12 FAIL=0'\nPASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt contains 'pre-record identification remains open'\nPASS scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py exists\nPASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt exists\nPASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt records runner path -- runner=scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py\nPASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt exits zero -- exit_code=0\nPASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt status ok -- status=ok\nPASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt sha matches source -- cache=647d52eaa0d55d5acccd067202621ebab8e17b5f5f141c0cbbabbfb81d30cfa8, live=647d52eaa0d55d5acccd067202621ebab8e17b5f5f141c0cbbabbfb81d30cfa8\nPASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt contains 'PASS=23 FAIL=0'\nPASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt contains 'Open derivation gaps'\nPASS packet leaves both selector inputs open\nPASS packet is non-promotional\n============================================================================\nTOTAL: PASS=83 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T095516Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d4f5d0e7 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=83 FAIL=1' vs cache 'TOTAL: PASS=84 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: salvage commit ffaa1a06e6 (2026-08-09) restored the 2026-07-27 cache of frontier_koide_frobenius_isotype_split_uniqueness (header e9dc3b77\u2026) while its runner stayed at the 2026-08-07 version (78215366\u2026); #8770. Issue #8805.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z"
  }
 }

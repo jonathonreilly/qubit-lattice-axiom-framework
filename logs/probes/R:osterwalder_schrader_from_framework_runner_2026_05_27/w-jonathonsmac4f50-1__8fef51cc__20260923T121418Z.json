@@ -22,15 +22,22 @@
  "stdout_sha256": "fdd8125c81ea2161ece9cd1aa2a88d63af7d4e76d0b342093dea09b6b68ed7a7",
  "stdout_tail": "----\n  [PASS (A)] (Composition) (C-RP) companion exists: AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)\n  [PASS (A)] (Composition) (C-SC) companion exists: AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)\n  [PASS (A)] (Composition) (C-Sc) companion exists: AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md  (docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)\n  [FAIL (A)] (Composition) (C-Sc) Step 1 contains the spectral-expansion Wick-rotation  (presence of phrase 'spectral expansion' and 'Wick-rotation' in (C-Sc))\n\n----------------------------------------------------------------------------------------\nPart 11: Note + claim metadata sanity\n----------------------------------------------------------------------------------------\n  [PASS (A)] Source note exists: docs/OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md\n  [PASS (A)] Note declares Type: bounded_theorem\n  [PASS (A)] Note declares Status authority: independent audit lane only\n  [PASS (A)] Note contains source-note proposal disclaimer\n  [PASS (A)] Note records the P2 sign-epsilon lane boundary\n\n========================================================================================\nPASS = 75    FAIL = 1\n========================================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T121418Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8fef51cc differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS = 75    FAIL = 1' vs cache 'PASS = 76    FAIL = 0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the (C-Sc) note lost the spectral-expansion Wick-rotation step in 645fe912cf (2026-06-10, 'Demote single-clock axis theorem'); the OS composition still cites it. Issue #8811.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175121Z"
  }
 }

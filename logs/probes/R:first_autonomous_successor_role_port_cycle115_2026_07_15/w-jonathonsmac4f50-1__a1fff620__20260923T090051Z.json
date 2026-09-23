@@ -19,14 +19,21 @@
  "stdout_sha256": "34793a7ccc340f122ea5ed1a3f20acd3e1102f0fddc3d6a9f88cab1dfa78c598",
  "stdout_tail": " states=7203608 edges=49196498\nPASS C04 all 194,304 proper-cubic raw images preserve output :: []\nPASS C05 every rotated completed history exposes only the rotated next rail :: []\n\n===============================================================================\nD - Wrong-word and H0-branch controls\n===============================================================================\nPASS D01 all eight flips plus wrong VALID/READY stop before successor :: []\nPASS D02 corrupted graph census remains pinned :: [(1080, 3522, (30,)), (920, 2938, (29,)), (760, 2354, (28,)), (520, 1438, (27,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]\nPASS D03 exhausted H0 reject history never reaches allocator or successor :: states=44 edges=97 sizes=(6, 7) bad=()\n\n===============================================================================\nE - Scope, N1-N8, and constitutional boundary\n===============================================================================\nFAIL E01 note names exact bounded positive\nFAIL E02 note names exact next object\nFAIL E03 note states Cycle 114 contributes zero rows\nFAIL E04 note carries remote N1-N8 discipline\nFAIL E05 note denies generic addressability\nFAIL E06 note makes no axiom addition\nPASS E07 Cycle 115 writes only runner and review note\n\nSUCCESSOR_CANONICAL=2 SUCCESSOR_RAW=48 UNION_RAW=8096\nLOCAL_STATES=74264 LOCAL_EDGES=433682 PRODUCT_STATES=7203608 PRODUCT_EDGES=49196498\nPASS=21 FAIL=7\nRESULT=FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T090130Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175113Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a1fff620 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note FIRST_AUTONOMOUS_SUCCESSOR_ROLE_PORT_CYCLE115_NOTE_2026-07-15.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (PASS=28 FAIL=0); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175113Z"
  }
 }

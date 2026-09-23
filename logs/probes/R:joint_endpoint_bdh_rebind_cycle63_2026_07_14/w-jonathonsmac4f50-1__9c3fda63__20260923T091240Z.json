@@ -19,14 +19,21 @@
  "stdout_sha256": "d9ea1cae6650e80cf347c1b1cd46446985e01b02512a8effcf30d74c64b8c9dc",
  "stdout_tail": "cedes B5\nPASS C11 H5 never precedes D5\nPASS C12 complete next header implies every B and D record\nPASS C13 endpoint orders genuinely commute\nPASS C14 chronology is explicitly not strict B<D<H\n\n===============================================================================\nD. Fresh translated front\n===============================================================================\nPASS D01 c is the next trigger and retains Z_C\nPASS D02 six final H writes are exactly the translated next header\nPASS D03 next q/a/b/c are all open :: q'=(3, -1, 0), data'=((4, 0, 0), (5, 0, 0), (6, 0, 0))\nPASS D04 translated Cycle-14 preparation interface is ready\nPASS D05 generated auxiliaries avoid the fresh next-only block\nPASS D06 terminal decodes exactly current and translated programs :: {Program(trigger=(0, 0, 0), forward=(1, 0, 0), transverse=(0, 1, 0)), Program(trigger=(3, 0, 0), forward=(1, 0, 0), transverse=(0, 1, 0))}\n\n===============================================================================\nE. Scope contract\n===============================================================================\nFAIL E01 note states authority none\nFAIL E02 note states conditional prefix\nFAIL E03 note distinguishes interleaving from strict chronology\nFAIL E04 note makes no axiom claim\nFAIL E05 note names phase-prefix non-closure\n\n===============================================================================\nSUMMARY\n===============================================================================\nPASS=42 FAIL=6\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T091243Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175119Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 9c3fda63 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note JOINT_ENDPOINT_BDH_REBIND_CYCLE63_NOTE_2026-07-14.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (PASS=48 FAIL=0); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175119Z"
  }
 }

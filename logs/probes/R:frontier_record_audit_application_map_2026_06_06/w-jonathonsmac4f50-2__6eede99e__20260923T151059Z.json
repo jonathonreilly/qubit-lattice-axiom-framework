@@ -22,15 +22,22 @@
  "stdout_sha256": "4114f7d4e311003bd646fb4ec57fc924d39ba5212abe1e914dd8df9b7bf03720",
  "stdout_tail": "case: chirality_record_typing\n  classification=record_schema_partial\n  supported=('post_record_label_consumption',)\n  missing=('car_frame', 'carrier_chirality', 'generation_transport', 'signed_readout_choice')\n[PASS] chirality_record_typing: supported gate set matches expectation -- post_record_label_consumption\n[PASS] chirality_record_typing: missing gate set matches expectation -- car_frame,carrier_chirality,generation_transport,signed_readout_choice\ncase: arrow_from_record_formation\n  classification=record_schema_partial\n  supported=('durable_realized_outcome',)\n  missing=('low_record_boundary', 'past_hypothesis', 'record_formation_dynamics')\n[PASS] arrow_from_record_formation: supported gate set matches expectation -- durable_realized_outcome\n[PASS] arrow_from_record_formation: missing gate set matches expectation -- low_record_boundary,past_hypothesis,record_formation_dynamics\n\nC. audit discipline\n[PASS] only the schema artifact itself is fully covered by Record schema -- ['record_unbounded_additivity_schema']\n[PASS] real downstream lanes are partial, not promoted -- ['flavor_det_character_selection', 'darwinism_local_observability', 'dynamics_form_record_preservation', 'color_su3_record_invariance', 'chirality_record_typing', 'arrow_from_record_formation']\n[PASS] forbidden closure claims are absent from classifier outputs\n[PASS] classifier emits only support/gate language\n\nSCORECARD: PASS=38 FAIL=1\nVERDICT: record audit application map failed; do not use this artifact.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T151059Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175118Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6eede99e differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=38 FAIL=1' vs cache 'PASS=39 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the color-SU(3) record-invariance source note lost the anchor 'not forced by Lattice + Quantum + Record' in the 2026-07-16 recon repairs (bfaf3283a5 onward). Issue #8798.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175118Z"
  }
 }

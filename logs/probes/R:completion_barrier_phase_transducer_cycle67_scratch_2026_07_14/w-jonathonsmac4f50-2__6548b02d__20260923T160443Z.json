@@ -19,14 +19,21 @@
  "stdout_sha256": "926d3178c430f254e002854e57b877efc068d1c36dcba6270eabe77c7c6cdf3e",
  "stdout_tail": "FAIL A01 note exists\nPASS A02 proper cubic group has 24 rotations\nPASS A03 six F records pair into three FP records\nPASS A04 completion convergence is 3 FP / 3 I1 / 3 I2 / 1 DONE\nPASS A05 q-return cable leaves all four phase relays fresh\nPASS A06 all declared sites are role-disjoint :: 91\nPASS A07 official phase contents are exact\nPASS A08 auxiliaries avoid current official support\nPASS A09 auxiliaries avoid next official support\nPASS A10 next q/a/b/c remain open\nPASS B01 canonical table is nonempty :: 99\nPASS B02 every rotated input is single-valued :: 2218\nPASS C01 arbitrary-subset scan exposes 47 apparent bad conditions :: 47\nPASS C02 apparent bad conditions span 34 target/output classes :: 34\nPASS C03 apparent bad split is 15 off-footprint / 32 wrong-role\nPASS C04 all apparent bad conditions have absent-ancestor witnesses :: 47/47\nPASS C05 must-ancestor fixed point converges :: 17\nPASS C06 table has 308 correct compiled conditions :: 308\nPASS C07 every declared target has a correct compiled condition\nPASS C08 every apparent first bad write contradicts its own prefix\nPASS D01 every target has at least one parent-valid local subset\nPASS D02 all within-rank prefix subsets retain every missing write :: 30240 tests\nPASS D03 causal safety plus rank closure proves one complete terminal\nPASS D04 official order is C before X before endpoint Z\nPASS D05 endpoints are nonadjacent commuting peers\n\nADDITIONS=91 ROWS=99 RAW=2,218 CONDITIONS=355\nSUMMARY: 24 PASS / 1 FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T160444Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175112Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6548b02d differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note COMPLETION_BARRIER_PHASE_TRANSDUCER_CYCLE67_SCRATCH_NOTE_2026-07-14.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (SUMMARY: 25 PASS / 0 FAIL); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175112Z"
  }
 }

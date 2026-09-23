@@ -19,14 +19,21 @@
  "stdout_sha256": "3c8051a38759b0b78788a919d34c8ac02eb4d409f003cfb9659566459166f55a",
  "stdout_tail": "tions\nPASS B01 Cycle-60 and Cycle-67 raw input domains are disjoint\nPASS B02 Cycle-60 raw census is 376 :: 376\nPASS B03 Cycle-67 raw census is 2,218 :: 2218\nPASS C01 every reachable Cycle-60 state is retained :: 242,033\nPASS C02 mixed over-approximation scans 1,204,205 contexts :: 1,204,205\nPASS C03 207,550 contexts pass the first parent-feasibility gate :: 207,550\nPASS C04 mixed union has no output conflict\nPASS C05 permanent phase records cannot block an unfinished comb target\nPASS D01 over-approximation reports exactly 15 wrong-write classes :: [((-2, -3, -3), 'PHASE', ('L10',), None), ((-2, -2, -4), 'PHASE', ('L10',), None), ((-1, -3, -4), 'PHASE', ('L8',), None), ((0, -4, -4), 'PHASE', ('L6',), None), ((0, -3, -5), 'PHASE', ('L6',), None), ((2, -3, 1), 'PHASE', ('L10',), None), ((2, 2, -4), 'PHASE', ('L10',), None), ((3, -4, -1), 'PHASE', ('L6',), None), ((3, -3, 0), 'PHASE', ('L8',), None), ((3, -2, 1), 'PHASE', ('L10',), None), ((3, 0, -5), 'PHASE', ('L6',), None), ((3, 1, -4), 'PHASE', ('L8',), None), ((3, 2, -3), 'PHASE', ('L10',), None), ((4, -3, -1), 'PHASE', ('L6',), None), ((4, 0, -4), 'PHASE', ('L6',), None)]\nPASS D02 no new partial-comb wrong-write class appears\nPASS D03 all 15 classes are off-footprint aliases\nPASS D04 every mixed alias has a must-ancestor contradiction\nPASS D05 every Cycle-67 bad condition remains causally certified\nPASS E01 mixed safety induction closes\nPASS E02 composition retains Cycle-67 complete-terminal proof\n\nSUMMARY: 18 PASS / 1 FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T142312Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c88792d differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner imports the Cycle-67 runner, whose note COMPLETION_BARRIER_PHASE_TRANSDUCER_CYCLE67_SCRATCH_NOTE_2026-07-14.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f); the first 'FAIL A01 note exists' and 'SUMMARY 24 PASS / 1 FAIL' are Cycle-67's own output, and A02 'Cycle-67 conditional runner is green' fails only because of it. With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (SUMMARY: 19 PASS / 0 FAIL).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175120Z"
  }
 }

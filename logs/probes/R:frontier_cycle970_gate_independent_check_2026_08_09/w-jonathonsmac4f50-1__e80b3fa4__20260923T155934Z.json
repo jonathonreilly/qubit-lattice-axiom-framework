@@ -22,15 +22,22 @@
  "stdout_sha256": "2e8f81c68cb5c1a6dc9143ef4c08adfc46f62a3b8f51408a4affaef452fcb017",
  "stdout_tail": "e612_bank_core_2026_07_26.py', 'scripts/frontier_cycle718_carrier_return_core_2026_07_26.py', 'scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py']; blocked_modules_loaded=False; transitive_cycle_import=False; self_contained_semantics=output[gate.wires[1]] ^= output[gate.wires[0]]; cycle719_to_cycle715_ast_bridge=True\nPASS R1_INDEPENDENT_STATE_RESOLVED_CENSUS :: independent_state_resolved_changed=4/20; primary=4/20\nPASS R2_INDEPENDENT_ONE_CNOT_WITNESS :: independent_one_cnot_witness=True; word=CNOT(1->0); D0=[1, 0]; D1=[0, 1]; transition_n1=[0, 1]->[1, 1]\nPASS R3_SCOPE_RECONCILIATION :: scope_route=one_cnot_finite_family_witness; family_words=5; contexts=20\nPASS R4_CONTROLS :: determinism_replay=True; runtime_s=0.021178<1400; stdout_upper_bound_bytes=3070<6000<150000; timeout_s=300<1400; literal_inputs=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py', 'scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py', 'scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py', 'scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py', 'scripts/frontier_cycle718_carrier_return_core_2026_07_26.py', 'scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py']\nVERDICT: INDEPENDENT_CHECKS_INCOMPLETE\nTOTAL: PASS=4 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T155934Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175114Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e80b3fa4 differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=4 FAIL=1' vs cache 'TOTAL: PASS=5 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: R0 pins docs/MINIMAL_AXIOMS_2026-06-29.md at its 2026-08-05 bytes; the 2026-08-13 Record-axiom narrowing (634b1de2f8, 574346c636) changed it, which also moves the primary cache's input fingerprint. Issue #8787.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175114Z"
  }
 }

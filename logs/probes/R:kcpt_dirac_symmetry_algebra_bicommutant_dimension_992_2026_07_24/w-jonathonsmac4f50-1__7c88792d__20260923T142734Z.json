@@ -22,15 +22,22 @@
  "stdout_sha256": "5f5d3a7deefe65587187be8bb40c522711b170e2395fc88568292f462d290059",
  "stdout_tail": "1.0e-12  => A = A''\n[PASS] G13: nonzero_sv=15.49  rank=1  dim_A'=5  max_dropped_sv <= 1.0e-09\n[PASS] G14: mults[0,+2i,-2i,+2i\u221a2,-2i\u221a2,+2i\u221a3,-2i\u221a3]=[8, 12, 12, 12, 12, 4, 4]  matched=64/64  (7 distinct => dim C[D2]=7)\n[PASS] G15: max_m||Jfull.Pm - D2.Pm/(2\u221am)|| <= 1.0e-12  wrong-norm(m=2, using /2)=0.0732 (>1e-6, ~1e10x the locked residual: the \u221am factor is load-bearing)  kernel split +i:4 -i:4\n[PASS] G16: joint dims sorted=[4, 4, 4, 4, 12, 12, 12, 12]  #classes=8  M-shells=4  maxres_M <= 1.0e-09  maxres_J <= 1.0e-09\n[PASS] G17: full words rank=8(=8, sdrop 1.63e-12)  even words rank=4(=4=C[M], sdrop <= 1.0e-12)  4 != 8\n[PASS] G18: max_i||[P12+,Qi]|| <= 1.0e-12  trace=12  idem <= 1.0e-12  ||[D2,P12+]||_max=0.354  ||[D2,P12+]||_2=2 (non-central)  unfused Q_i central <= 1.0e-12\n[PASS] G19: max over 6 constituents x 5 modules ||[P_k,Qi]|| <= 1.0e-12  (End_H block-diagonal => End_H subset A)\n[FAIL] G-PIN-1: note contains preserve string #1: '64 + 64 + 144 + 144 + 576 = 992'\n[FAIL] G-PIN-2: note contains preserve string #2: '992 = 8^2 + 8^2 + 12^2 + 12^2 + 24^2'\n[FAIL] G-PIN-3: note contains preserve string #3: 'stalls at 288 = 12^2 + 12^2 without D2 and fills to 576 = 24^2'\n[FAIL] G-PIN-4: note contains preserve string #4: '[4, 4, 4, 4, 12, 12, 12, 12]'\n[FAIL] G-PIN-5: note contains preserve string #5: 'an algebra element, not a central idempotent'\n[FAIL] G-PIN-6: note contains preserve string #6: 'dims 4 \u228a 7 \u228a 8 \u228a 992'\n[FAIL] G-PIN-LINKS: dependency links=[]\nTOTAL: PASS=19 FAIL=7\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T142759Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175119Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c88792d differs from the current HEAD 3ae96225 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=19 FAIL=7' vs cache 'TOTAL: PASS=26 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's notes KCPT_DIRAC_SYMMETRY_ALGEBRA_BICOMMUTANT_DIMENSION_992_BOUNDED_THEOREM_NOTE_2026-07-24.md, KCPT_DIRAC_SYMMETRY_FIVE_MODULE_SELECTIVE_CP_FUSION_BOUNDED_THEOREM_NOTE_2026-07-21.md, KCPT_DIRAC_EVEN_ALGEBRA_REACH_CHARACTER_CP_CHARGE_BOUNDED_THEOREM_NOTE_2026-07-21.md are on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (TOTAL: PASS=26 FAIL=0); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T175119Z"
  }
 }

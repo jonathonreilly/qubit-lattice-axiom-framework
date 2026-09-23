@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:the-held-sea-against-the-free-sea:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j29ee",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-held-sea-against-the-free-sea/w-macbookpro90c72-j29ee/check.py",
+ "seed": 36883,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T041443Z",
+ "elapsed_s": 4.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL the free sea's second-order deficit below the held sea is an exact zone integral, negative, of order |q|^4 log(1/|q|), so both seas have the clock stiffness I/12 = 0.0995 in three dimensions; block 76's 0.095 is its torus value; the deficit is long-ranged"
+ },
+ "review": "Exact checks (Fractions, sympy): held-sea second variation on every 4^3/6^3 mode, coin overlap identity, the vector and integral identities behind two-sided bounds C t^4 log(1/4t) <= -8 dPi(t e1) <= pi t^4 (1/6 + log(sqrt3/t)/2), and the closed-form line kernel; the second-order formula itself is standard Rayleigh-Schroedinger (listed ASSUMED) and is cross-checked by dense diagonalization on 6^3 to 2e-11; the torus version reproduces block 76's eleven executed gradient parts digit for digit (floating-point notes), so kappa_free = kappa_held = I/12 = 0.0995 and block 76's 0.095 is a torus value; the log coefficient 1/(120 pi^2) is argued and executed, not proved.",
+ "what": "DERIVATION, independent attempt 1 of 2: The held filled sea gives block 56's simplest member exactly; how far below it is the free sea?. SETTING (source-link direction, blocks 53-89 of the admissibility induced-law campaign: open PRs #8568 #8570 #8571 #8573 #8578 #8579 #8581 #8590 #8591 #8592 #8593 #8595 #8596 #8597 #8598 #8599 #8601 #8602 #8603 #8605 #8606 #8607 #8608 #8611 #8612 #8613 #8614 #8615 #8626 #8628 #8632 #8652 #8657 #8660 #8662 #8665 and block 89 'the unit of rate decides the alternation's thresholds' when opened; decision record #8572 with FORK_PROBE_source_link_20260922.md; the moving-records reading of blocks 39-52; ALL supplied clauses, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>; the 2026-09-23 harvest's issues #8616-#8673 carry the worker results this problem builds on). TASK: harvest issue #8647 (the-field-energy-as-a-clocked-amplitude:a3): the clocked energy of the FIXED filled lower band of the rate-independent walk is exactly beta sum_bonds sqrt(w_x w_y) = 3 beta sum w + c sum_bonds (phi_x - phi_y)^2 with c = -beta/2 = <|s|>/6 on Z^3 (0.199), and the self-consistent sea (block 76) lies below it at every rate field. (a) The exact second-order kernel of E_opt - E_fix (a zone integral), its sign and its long-wavelength limit against block 76's kappa = 0.095. (b) Is the difference local (finite reach) or long-ranged? HIT: (a) exact. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-held-sea-against-the-free-sea/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-held-sea-against-the-free-sea/<name>/check.py\"",
+ "stdout_sha256": "2b31a0be12f5e006b641c1842d9639f8e7f209917ec5497c8e6b44687aa3a5ca",
+ "stdout_tail": " d^3k/(2pi)^3 = 1.19380 (midpoint 96^3): kappa_fix = I/12 = 0.09948, gamma = 12/I = 10.052; on a line kappa_fix = 1/(2pi), kappa_opt = 1/(3pi) (a1: c = 1/(6pi), g(pi) = 0.0795)\nruntime 3.5 s\nSUMMARY: PARTIAL the free sea's second-order deficit below the held sea is an exact zone integral, negative, of order |q|^4 log(1/|q|), so both seas have the clock stiffness I/12 = 0.0995 in three dimensions; block 76's 0.095 is its torus value; the deficit is long-ranged\nHIT: (a) the second-order kernel of E_opt - E_fix is exactly dPi(q) = -(1/8) int d^3k/(2pi)^3 (a-b)^2/(a+b) (1 - s^(k+q).s^(k))/2, a = |s(k+q)|, b = |s(k)| (per site per eps^2, u = eps cos(q.x)); it is negative for q != 0 and C t^4 log(1/(4t)) <= -8 dPi(t e1) <= pi t^4 (1/6 + log(sqrt3/t)/2), so dPi/|q|^2 -> 0: the free sea's clock stiffness equals the held sea's, kappa = I/12 = 0.0995.\nHIT: block 76's kappa = 0.095 is a torus value: on an even L-torus the kernel gains the exact zero modes as intermediate states, -sin(2pi/L)/N at q = (2pi/L)e1, about 1/(2 pi L^2) per |q|^2; executed, the torus formula gives block 76's eleven gradient parts at L = 6, 8, 10, 12 to four digits, the zero-mode terms carrying most of the deficit.\nHIT: (b) the difference is long-ranged: dPi is not C^4 at q = 0, so sum_r |r|^4 |R(r)| diverges for its real-space kernel R; on a line it has the closed form -(cos^2(q/2)/(2 pi sin(q/2)))[ln(sec + tan)(q/2) - sin(q/2)], which makes the free sea softer by a third there (kappa 1/(3pi) against 1/(2pi)).\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j29ee",
+  "at_utc": "20260923T041447Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

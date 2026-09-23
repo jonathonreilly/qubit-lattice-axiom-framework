@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "pr": 8163,
+  "reviewer": "/root/review_8161; same-session Astra low independent affected review",
+  "verdict": "NARROW DEPENDENCY FIX REQUIRED BEFORE STAGED COLD",
+  "base": "6b9c6183f24c01651d5a98394061bd88a52aef63",
+  "prepared_reference": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-author-prepared-v1.json",
+    "sha256": "4a1920ede35f1a65a87372569614d8088e89a8aeefff7e8f4664824686bb1d65"
+  },
+  "original_reference": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-original-review.json",
+    "sha256": "1677efaacb57f8d4c7df3c51b7fa0cee990cf31c9f89d678d542d7324258bfbe"
+  },
+  "mechanical_reference": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-early-affected-mechanical-v1.json",
+    "sha256": "4d85f75fa86e2d5b61e790dce7e0266310471ac5a2ee01f6c5823fcdecdac72c"
+  },
+  "source": {
+    "paths": [
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      },
+      {
+        "path": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "53267149867d9bef81f3bf2778942e8d4a4874d60713f598d5fd00387a6a0ad6"
+      },
+      {
+        "path": "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7"
+      },
+      {
+        "path": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+        "sha256": "d839a3cca0b369abff73b0e8c2e6187c8b33b0bf858faf4ed501233a4b1d1918"
+      },
+      {
+        "path": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+        "sha256": "6daede33d838a88bf0788eadac70c534f8d43c8ee85662c64c169431f984371c"
+      },
+      {
+        "path": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+        "sha256": "72c7a1e9fe9d6dbf8abc0d6601577a30b51593c208705cad2ef4ef86d9655395"
+      },
+      {
+        "path": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+        "sha256": "daf28930f7300800a7ad092259e4974e0de266ef1385e33b00c4a38b9b03cc85"
+      },
+      {
+        "path": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+        "sha256": "4a273a3cf78d62cf9be7129af0386baec20d3259b2002371da87deaebfa68e88"
+      },
+      {
+        "path": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+        "sha256": "f6eaca43f96699d74d62893013c413e63570c28a3730d08523d10a07ca3d1216"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "8163-EARLY-DEPENDENCY-1",
+      "severity": "must_fix_before_cold",
+      "path": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "finding": "The note declares no upstream dependency, while section1 imports the temporal-resummation spatial Wilson definitions and section3 imports D0 normalization. Its runner currently pins only the owner. The actual citation API confirms the scientific parent is missing.",
+      "fix": "Add the temporal-resummation note as an explicit linked/registered model-definition and normalization parent; pin/read it in the model-match runner and rebind changed owner hashes in the gauge-join runner. State that m>0 suffices for this algebra and the heavy curl hypothesis is not imported as necessary. Reverse curl-to-model and model-to-gauge comparisons remain context only."
+    }
+  ],
+  "proof_preservation": "Complete changed argument read by original-to-canonical full prose diff and direct affected sections; unchanged full proofs reuse original same-session reads. All110 indented formula lines retain exact order (44/27/39). No proof, unique lemma, failure or quantitative limitation discarded. All165 originals decoded and independently compared byte-for-byte including mode/blob identity; all four readable working/history files match exact original bytes.",
+  "runtime": "All original function ASTs preserved, except the final print wrapper changed to _emit with identical report-expression AST. New literal inputs are read and SHA-checked before run; declarations precede loads; no hidden helper import. Reports write only logs/runner-cache, then print original JSON, TOTAL and five honest scope classes. TOTAL1 means one entire completed diagnostic family, not one assertion. No primary executed.",
+  "graph": "Actual extract_citations and type/runner API applied to the three new notes and five history Markdown files. Current topology has no cycle; reverse companion references are truly contextual. History files have no claim-type hints or runners and are not new autonomous proof nodes. The one missing actual model-definition parent must be added. Full graph and global helper maps await coordinator.",
+  "parents": "Exact accepted8162 parent source hashes retained; no newly imported premise or physical promotion. Curl bound remains physical-Lp and volume-uniform in its heavy domain; state result remains fixed graph. Original audit-status vocabulary remains conditional-support.",
+  "resource_assessment": {
+    "six_sequential_runs": true,
+    "timeout_seconds_each": 180,
+    "external_process_tree_limit_bytes_each": 805306368,
+    "assessment": "Reasonable source-derived operational bounds for future cold freeze, not measured peak guarantees or permission to execute now. Largest full Dirac dense matrix is512x512 complex (4MiB per matrix); Hessian stacks are on96-dimensional matrices, third variation reaches192; gauge calculation uses1296-component vectors, small tensor factors and sparse Hamiltonians. No source loop scales over general graphs or allocates full large-volume Fock space. Numerical-library and temporary-array headroom motivates768MiB. Watchdog must stop a violating run rather than silently increase bounds.",
+    "original_limits_unchanged": true
+  },
+  "remaining": [
+    "Apply only missing dependency and input-hash corrections",
+    "Advance and stage on coordinator current base; apply three explicit curl-helper entries without losing existing maps",
+    "Actual discovery/input/cache preflight and same-session staged cold confirmation",
+    "Then sole limited captures and final evidence confirmation; no full pipeline or audit run by reviewer"
+  ]
+}

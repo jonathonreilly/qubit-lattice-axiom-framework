@@ -1,0 +1,100 @@
+[
+  {
+    "source": ".claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/block01_temporal_resummation_check.py",
+    "sha256": "cee1ae079230a2ef22fd15fc53256a4cd87be4d146a90a75ae4f37305b83e521",
+    "declarations": {
+      "AUDIT_TIMEOUT_SEC": 180,
+      "AUDIT_INPUT_FILES": []
+    },
+    "imports": [
+      "import hashlib, itertools, json, math, time",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from scipy.linalg import block_diag"
+    ],
+    "scientific_local_file_inputs": [],
+    "file_read_scope": "Only Path(__file__).read_bytes self hash; no local code import or external scientific data load."
+  },
+  {
+    "source": ".claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/block02_physical_curl_hessian_check.py",
+    "sha256": "3ef63a575b5ba0cf59f6bdcd2f516aaa12a58dc76611d89c76addaa32e5db59d",
+    "declarations": {
+      "AUDIT_TIMEOUT_SEC": 180,
+      "AUDIT_INPUT_FILES": []
+    },
+    "imports": [
+      "import hashlib, itertools, json, math, time",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from scipy.linalg import eigh"
+    ],
+    "scientific_local_file_inputs": [],
+    "file_read_scope": "Only Path(__file__).read_bytes self hash; no local code import or external scientific data load."
+  },
+  {
+    "source": ".claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/block03_open_boundary_hamiltonian_check.py",
+    "sha256": "87a9b40d3c599074f58cae9f44dd6300a59378de0afe052e8d211c93a9904a80",
+    "declarations": {
+      "AUDIT_TIMEOUT_SEC": 180,
+      "AUDIT_INPUT_FILES": []
+    },
+    "imports": [
+      "import hashlib, itertools, json, math, time",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from scipy.integrate import solve_ivp",
+      "from scipy.linalg import eigh"
+    ],
+    "scientific_local_file_inputs": [],
+    "file_read_scope": "Only Path(__file__).read_bytes self hash; no local code import or external scientific data load."
+  },
+  {
+    "source": ".claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/block04_dynamical_gauge_join_check.py",
+    "sha256": "864d6ece3868b35a0ff7f87efd62fc5c7a3c50eb539069c4ee449e16394c2a05",
+    "declarations": {
+      "AUDIT_TIMEOUT_SEC": 180,
+      "AUDIT_INPUT_FILES": []
+    },
+    "imports": [
+      "import hashlib, itertools, json, math, time",
+      "from pathlib import Path",
+      "import numpy as np",
+      "from scipy.linalg import eigh",
+      "from scipy.optimize import brentq",
+      "from scipy.sparse import csr_matrix, diags, eye, kron",
+      "from scipy.sparse.linalg import expm_multiply"
+    ],
+    "scientific_local_file_inputs": [],
+    "file_read_scope": "Only Path(__file__).read_bytes self hash; no local code import or external scientific data load."
+  },
+  {
+    "source": ".claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/block05_integer_local_filling_check.py",
+    "sha256": "9aa46872c133b09cb801e02ab7c885765d4fff2f9e8284078375175aa9cf55a2",
+    "declarations": {
+      "AUDIT_TIMEOUT_SEC": 180,
+      "AUDIT_INPUT_FILES": []
+    },
+    "imports": [
+      "import collections, hashlib, itertools, json, math, time",
+      "from pathlib import Path",
+      "import numpy as np"
+    ],
+    "scientific_local_file_inputs": [],
+    "file_read_scope": "Only Path(__file__).read_bytes self hash; no local code import or external scientific data load."
+  },
+  {
+    "source": ".claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/block06_third_curl_variation_check.py",
+    "sha256": "0827382ea444db852980b95e4e5c32933885ca83eb277e78ea1b3c53220a1057",
+    "declarations": {
+      "AUDIT_TIMEOUT_SEC": 180,
+      "AUDIT_INPUT_FILES": []
+    },
+    "imports": [
+      "import hashlib, itertools, json, math, time",
+      "from pathlib import Path",
+      "import numpy as np"
+    ],
+    "scientific_local_file_inputs": [],
+    "file_read_scope": "Only Path(__file__).read_bytes self hash; no local code import or external scientific data load."
+  }
+]

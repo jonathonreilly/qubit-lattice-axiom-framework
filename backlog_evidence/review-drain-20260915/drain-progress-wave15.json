@@ -1,0 +1,42 @@
+{
+  "scope": "All open PRs including drafts and new arrivals.",
+  "snapshot": "drain-all-prs-wave15.json",
+  "snapshot_sha256": "ca1e57ce99af9f034543c42416b031bb0771423b0a035e81edfb99586cc78849",
+  "open": 108,
+  "drafts": 20,
+  "new_arrivals_since_wave14": [
+    8672,
+    8671,
+    8670,
+    8669
+  ],
+  "closed_since_expanded_scope": 36,
+  "main": "6b9c6183f24c01651d5a98394061bd88a52aef63",
+  "landed_closed_latest": [
+    8028,
+    8161,
+    8029,
+    8162
+  ],
+  "combined_gate_running": {
+    "train76": [
+      8160
+    ]
+  },
+  "author_preparation": [
+    8163
+  ],
+  "confirmed_preparation_pending_base_maps_cold": [
+    8030,
+    8159
+  ],
+  "original_review_active": [
+    8164
+  ],
+  "partial_salvage_branch_preservation_required": [
+    8030,
+    8159
+  ],
+  "active_review_default": "Astra low; Sol pilot complete and unchanged default.",
+  "skill_sync": "15/15 files matched remote main in wave14; no subsequent skill changes."
+}

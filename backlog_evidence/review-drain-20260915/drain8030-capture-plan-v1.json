@@ -1,0 +1,49 @@
+{
+  "status": "PLAN ONLY; NOT EXECUTED",
+  "concurrency": 1,
+  "order": [
+    {
+      "runner": "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+      "source_sha256": "a5bd37b25bb607390765714efad1f41a5cbcfba8446163becb43a9fd88186466",
+      "command": [
+        "python3",
+        "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py"
+      ],
+      "timeout_seconds": 180,
+      "process_tree_rss_limit_bytes": 188743680,
+      "expected_total": 18,
+      "count_scope": "17 scientific/control predicates plus one resource predicate",
+      "json_output": "logs/runner-cache/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.json",
+      "stdout_cache": "logs/runner-cache/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.txt",
+      "stderr_and_failure_policy": "Preserve stdout, stderr, exit status and measured resources including timeout or memory-cap failure; never overwrite previous attempt evidence."
+    },
+    {
+      "runner": "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
+      "source_sha256": "7fc63dbba4190fbd34ae55482834cdf521c5521b4a4b8d07152a6cf6f79e009b",
+      "command": [
+        "python3",
+        "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py"
+      ],
+      "timeout_seconds": 180,
+      "process_tree_rss_limit_bytes": 188743680,
+      "expected_total": 13,
+      "count_scope": "13 scientific controls; separate resource guard",
+      "json_output": "logs/runner-cache/gauge_wilson_haar_contact_fdd_controls_2026_09_07.json",
+      "stdout_cache": "logs/runner-cache/gauge_wilson_haar_contact_fdd_controls_2026_09_07.txt",
+      "stderr_and_failure_policy": "Preserve stdout, stderr, exit status and measured resources including timeout or memory-cap failure; never overwrite previous attempt evidence."
+    }
+  ],
+  "requirements": [
+    "Fresh guarded current-main source staging via explicit root dispatch.",
+    "Successful cheap schema2 preflight and original reviewer cold confirmation.",
+    "Root resource wrapper enforces time and process-tree RSS caps; script self-check is additional, not a substitute.",
+    "No empty evidence placeholders. JSON outputs are under logs/runner-cache.",
+    "Capture one sequential run per affected program and bind outputs to exact frozen source/inputs."
+  ],
+  "source_resource_evidence": "Both current runner AST declarations retain original 180-second/180-MiB limits; no new performance measurement or arithmetic run.",
+  "deferred_certifications": [
+    "separated-field classification",
+    "propagation/bounded-gap noncoexistence"
+  ],
+  "branch_preservation_required": true
+}

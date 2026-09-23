@@ -1,0 +1,91 @@
+{
+  "status": "UNTRACKED_AUTHOR_PREPARED_V1_NOT_REVIEWED_OR_EXECUTED",
+  "base": "6b9c6183f24c01651d5a98394061bd88a52aef63",
+  "worktree": "/private/tmp/review-drain-20260915/review-meta-slot",
+  "owner": "PR8163-author",
+  "notes": [
+    "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+  ],
+  "runners": [
+    "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+    "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+    "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+    "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+    "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+    "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py"
+  ],
+  "requested_explicit_packet_helpers": {
+    "temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16": [
+      "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+      "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+      "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py"
+    ]
+  },
+  "archive_manifest": {
+    "path": "docs/work_history/repo/review_feedback/pr8163-evidence/archive-manifest.json",
+    "sha256": "a29f6706fe493341a0c5d5c0bc638deb8840d6afea6b886ce4769d7d62baef31"
+  },
+  "original_review_sha256": "1677efaacb57f8d4c7df3c51b7fa0cee990cf31c9f89d678d542d7324258bfbe",
+  "evidence_files": [
+    "/private/tmp/review-drain-20260915/drain8163-author-correction.diff",
+    "/private/tmp/review-drain-20260915/drain8163-author-preservation.json",
+    "/private/tmp/review-drain-20260915/drain8163-author-full-mapping.json",
+    "/private/tmp/review-drain-20260915/drain8163-author-input-resource-plans.json"
+  ],
+  "remaining": [
+    "Coordinator global explicit-helper registration, staged identity and actual discovery preflight",
+    "Original reviewer correction and cold-source confirmation",
+    "Coordinator freeze memory cap then six sole sequential 180-second captures",
+    "Final evidence confirmation and combined validation"
+  ],
+  "source_bindings": [
+    {
+      "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+    },
+    {
+      "path": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "53267149867d9bef81f3bf2778942e8d4a4874d60713f598d5fd00387a6a0ad6"
+    },
+    {
+      "path": "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7"
+    },
+    {
+      "path": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+      "sha256": "d839a3cca0b369abff73b0e8c2e6187c8b33b0bf858faf4ed501233a4b1d1918"
+    },
+    {
+      "path": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+      "sha256": "6daede33d838a88bf0788eadac70c534f8d43c8ee85662c64c169431f984371c"
+    },
+    {
+      "path": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+      "sha256": "72c7a1e9fe9d6dbf8abc0d6601577a30b51593c208705cad2ef4ef86d9655395"
+    },
+    {
+      "path": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+      "sha256": "daf28930f7300800a7ad092259e4974e0de266ef1385e33b00c4a38b9b03cc85"
+    },
+    {
+      "path": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+      "sha256": "4a273a3cf78d62cf9be7129af0386baec20d3259b2002371da87deaebfa68e88"
+    },
+    {
+      "path": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+      "sha256": "f6eaca43f96699d74d62893013c413e63570c28a3730d08523d10a07ca3d1216"
+    }
+  ],
+  "author_checks": {
+    "all_six_compile_in_memory": true,
+    "tracked_and_index_unchanged": true,
+    "formula_lines_identical": true,
+    "original_function_ASTs_identical_except_report_wrapper": true,
+    "all_165_recovered_raw_bytes_modes_and_git_blobs_match_original_review": true,
+    "primary_runs": 0,
+    "helper_or_pipeline_runs": 0,
+    "memory_proposal_rationale": "Largest dense owner matrices reach 512 squared complex entries; Hessian derivative stacks on 96-dimensional matrices and 1296-vector tensor contractions are finite. 768 MiB process-tree proposal leaves numerical-library headroom and is not a measured historical peak. External enforcement belongs to coordinator."
+  }
+}

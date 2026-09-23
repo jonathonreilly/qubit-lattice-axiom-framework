@@ -1,0 +1,35 @@
+rotor_joint_bounded_neutral_matter_dynamics_bounded_theorem_note_2026-09-16 bounded_theorem unaudited ['scripts/rotor_joint_gauge_propagation_check_2026_09_16.py']
+rotor_joint_equal_time_weyl_car_state_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16 bounded_theorem unaudited ['scripts/rotor_tree_slater_dressing_check_2026_09_16.py']
+rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16 bounded_theorem unaudited ['scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py']
+rotor_joint_real_time_gauge_two_point_limit_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+docs/audit/data/citation_graph_manifest.json | 32 ++++++++++++++++++++++++++--
+ 1 file changed, 30 insertions(+), 2 deletions(-)
+[detached HEAD 16574d8f02] Acknowledge reviewed source topology for train76
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 30 insertions(+), 2 deletions(-)
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+remote: Bypassed rule violations for refs/heads/main:        
+remote: 
+remote: - Changes must be made through a pull request.        
+remote: 
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+   6b9c6183f2..16574d8f02  HEAD -> main
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+LANDED 16574d8f023c06a3ef86fe6d8993a257e0936c81

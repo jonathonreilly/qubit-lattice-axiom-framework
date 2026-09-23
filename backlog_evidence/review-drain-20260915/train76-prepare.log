@@ -1,0 +1,131 @@
+[detached HEAD b61216c375] Preserve independently reviewed source unit PR8160
+ Date: Tue Sep 22 20:47:32 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 117 files changed, 6221 insertions(+)
+ create mode 100644 docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_000_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_001_CLAIM_STATUS_CERTIFICATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_002_GOAL.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_003_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_004_MANIFEST.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_005_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_006_READING_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_007_README.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_008_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_009_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_010_block01_uniform_response_check.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_011_block01_uniform_response_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_012_block01_uniform_response_check.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_013_block01_uniform_response_check.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_014_block02_integer_gaussian_square_check.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_015_block02_integer_gaussian_square_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_016_block02_integer_gaussian_square_check.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_017_block02_integer_gaussian_square_check.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_018_block02_tree_slater_check.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_019_block02_tree_slater_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_020_block02_tree_slater_check.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_021_block02_tree_slater_check.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_022_block03_characteristic_check.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_023_block03_characteristic_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_024_block03_characteristic_check.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_025_block03_characteristic_check.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_026_block04_weyl_zero_mode_check.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_027_block04_weyl_zero_mode_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_028_block04_weyl_zero_mode_check.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_029_block04_weyl_zero_mode_check.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_030_block05_generator_propagation_check.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_031_block05_generator_propagation_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_032_block05_generator_propagation_check.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_033_block05_generator_propagation_check.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_034_block06_rooted_matter_check.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_035_block06_rooted_matter_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_036_block06_rooted_matter_check.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_037_block06_rooted_matter_check.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_038_BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_039_BLOCK01_WORKING_DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_040_BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_041_BLOCK02_WORKING_JOINT_LIMIT.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_042_BLOCK03_JOINT_EQUAL_TIME_GAUGE_LIMIT.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_043_BLOCK04_JOINT_GAUGE_AND_MATTER_STATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_044_BLOCK04_WORKING_MIXED_STATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_045_BLOCK05_JOINT_REAL_TIME_GAUGE_TWO_POINT.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_046_BLOCK05_WORKING_REAL_TIME_ELECTRIC.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_047_BLOCK06_JOINT_BOUNDED_MATTER_DYNAMICS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_048_BLOCK06_WORKING_BOUNDED_MATTER_DYNAMICS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_049_BLOCK01_AUTHOR_REVIEW_INPUTS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_050_BLOCK01_FINAL_SOURCE_HASHES.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_051_BLOCK01_PERSONAL_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_052_BLOCK01_PREFLIGHT_OUTPUT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_053_BLOCK01_PREFLIGHT_RUNNER.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_054_BLOCK01_PREFLIGHT_SOURCE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_055_BLOCK01_VOCAB.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_056_BLOCK02_03_PERSONAL_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_057_BLOCK02_03_SOURCE_HASHES.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_058_BLOCK02_03_VOCAB.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_059_BLOCK04_PERSONAL_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_060_BLOCK04_SOURCE_HASHES.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_061_BLOCK04_VOCAB.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_062_RECORD.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_063_block05_generator_propagation_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_064_block05_generator_propagation_check.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_065_block05_generator_propagation_check.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_066_DIAGNOSTIC.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_067_RECORD.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_068_block05_generator_propagation_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_069_block05_generator_propagation_check.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_070_block05_generator_propagation_check.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_071_BLOCK05_PERSONAL_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_072_BLOCK05_SOURCE_HASHES.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_073_BLOCK05_VOCAB.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_074_BLOCK06_PERSONAL_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_075_BLOCK06_SOURCE_HASHES.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_076_MILESTONE_DISK_SWEEP.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_077_MILESTONE_PERSONAL_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_078_MILESTONE_VALIDATION.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_079_MILESTONE_VOCAB.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_080_OPEN_PR_HEADS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_081_PRIOR_MILESTONE_INPUTS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_082_milestone_mutation_checks.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_083_milestone_mutation_checks.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_084_milestone_mutation_checks.stderr.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/8160_085_milestone_mutation_checks.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8160/README.md
+ create mode 100644 docs/work_history/review_loop/pr8160/original-manifest.json
+ create mode 100644 logs/runner-cache/rotor_integer_gaussian_positive_square_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/rotor_integer_gaussian_positive_square_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_joint_characteristic_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/rotor_joint_characteristic_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_joint_gauge_propagation_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/rotor_joint_gauge_propagation_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_joint_rooted_matter_dynamics_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/rotor_joint_rooted_matter_dynamics_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_joint_weyl_car_state_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/rotor_joint_weyl_car_state_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_tree_slater_dressing_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/rotor_tree_slater_dressing_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_uniform_compact_response_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/rotor_uniform_compact_response_check_2026_09_16.txt
+ create mode 100644 scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py
+ create mode 100644 scripts/rotor_joint_characteristic_check_2026_09_16.py
+ create mode 100644 scripts/rotor_joint_gauge_propagation_check_2026_09_16.py
+ create mode 100644 scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py
+ create mode 100644 scripts/rotor_joint_weyl_car_state_check_2026_09_16.py
+ create mode 100644 scripts/rotor_tree_slater_dressing_check_2026_09_16.py
+ create mode 100644 scripts/rotor_uniform_compact_response_check_2026_09_16.py
+FROZEN b61216c3759af522d30b88fd89fb08c9bed34bc7 sources 117 inputs 122 notes 6

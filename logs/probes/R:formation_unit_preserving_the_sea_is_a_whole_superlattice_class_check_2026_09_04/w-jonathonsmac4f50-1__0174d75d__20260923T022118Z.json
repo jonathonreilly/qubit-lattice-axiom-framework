@@ -22,15 +22,22 @@
  "stdout_sha256": "bcb8a7e45992665cd03394ce7312696cc4dd686cdbe3fafc6430d48008dae989",
  "stdout_tail": ".8274364764901819}, {'set': [1, 4, 8, 11], 'max_live_residual': 0.7541737377209761}, {'set': [1, 5, 6, 10], 'max_live_residual': 0.48931920527117456}, {'set': [1, 5, 7, 10], 'max_live_residual': 0.8274364764901819}, {'set': [1, 5, 7, 11], 'max_live_residual': 0.7541737377209763}, {'set': [2, 4, 7, 9], 'max_live_residual': 0.4893192052711749}, {'set': [2, 4, 7, 10], 'max_live_residual': 0.8274364764901818}, {'set': [2, 4, 8, 10], 'max_live_residual': 0.7541737377209763}, {'set': [2, 5, 7, 10], 'max_live_residual': 0.7541737377209763}]\nPASS Q2 every one of 21 actual irregular slab sets has a nonzero many-body outcome: min 0.489319205 max 0.827436476\nPASS Q3 periodic 4-cube +2 paths, antiperiodic cancellation and two distinct rank-32 zero-mode ground Slaters\nPASS Q0 current own-note/memo and declared proof inputs match their literal bindings\nTOTAL: PASS=20 FAIL=1\n\n[stderr]\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T022303Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T023523Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 0174d75d differs from the current HEAD 8b7dd5ef (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=20 FAIL=1' vs cache 'TOTAL: PASS=21 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run 1c058f20 (issue #8504, open): same A2 failure, w_res = 1.523e-14 against the pinned 1.5e-14 (message advertises 1e-13); every structural count identical.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T023523Z"
  }
 }

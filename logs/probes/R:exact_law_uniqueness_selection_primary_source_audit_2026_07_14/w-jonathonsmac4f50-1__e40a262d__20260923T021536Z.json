@@ -19,14 +19,21 @@
  "stdout_sha256": "87692534c56a698cfdac9057338e58418ff658a80046bf7016d13d5c1cff5d86",
  "stdout_tail": "urce ledger includes S0019-9958(64)90223-2\nFAIL A primary-source ledger includes 10.1109/TIT.1980.1056144\nFAIL A primary-source ledger includes 10.1109/TIT.1983.1056747\nFAIL A primary-source ledger includes 1405.5563\nFAIL A primary-source ledger includes gr-qc/9904062\nFAIL A primary-source ledger includes 2004.14810\nFAIL A primary-source ledger includes the-concept-of-the-ruliad\nFAIL A route ledger has one start marker\nFAIL A route ledger has one end marker\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py\", line 670, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py\", line 652, in main\n    document_and_source_contracts()\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py\", line 343, in document_and_source_contracts\n    header, routes = parse_table(text, ROUTE_START, ROUTE_END)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py\", line 73, in parse_table\n    body = text.split(start, 1)[1].split(end, 1)[0]\n           ~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T021536Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T023523Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e40a262d differs from the current HEAD 8b7dd5ef (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the companion note and the three review_feedback sources the runner reads (CANONICAL_LAW_COMPLETENESS_CONTRACT, CUBIC_SPLIT_STEP_QW_QCA_PRIMARY_SOURCE_UNIQUENESS_AUDIT, MINIMUM_AXIOM_UPDATE_EXERCISE_SYNTHESIS_AND_CUT_GATE) are on main only under archive/notes/; all 46 FAILs are existence/contract/ledger gates on those files; no FAIL touches the sources still on main.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T023523Z"
  }
 }

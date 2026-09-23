@@ -1,0 +1,114 @@
+[detached HEAD 476b811b6d] Preserve independently reviewed source unit PR8030
+ Date: Tue Sep 22 21:07:48 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 100 files changed, 1615 insertions(+)
+ create mode 100644 docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/work_history/review_loop/pr8030/README.md
+ create mode 100644 docs/work_history/review_loop/pr8030/manifest.json
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/000-ARCHIVE_WHITESPACE_RECEIPT.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/001-ARTIFACT_PLAN.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/002-ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/003-CLAIM_STATUS_CERTIFICATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/004-FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/005-FINAL_MAIN66_LOCK_RELEASE.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/006-FINAL_MAIN66_READINESS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/007-FINAL_MAIN66_STRICT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/008-FINAL_MAIN66_SYNC_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/009-FINAL_MAIN66_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/010-FINAL_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/011-FINAL_VOCAB_LINT.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/012-FROZEN_PORT_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/013-FULL_PIPELINE.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/014-GOAL.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/015-HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/016-LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/017-LOCK_RELEASE.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/018-NO_GO_DISCIPLINE_CHECKLIST.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/019-NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/020-OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/021-PACK_INDEX.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/022-PARENT_VALIDATION_METADATA_CATCHUP.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/023-PORT_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/024-PORT_VOCAB_LINT.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/025-PROOF_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/026-PR_BACKLOG.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/027-PR_BODY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/028-PUBLICATION_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/029-REVIEWED_UPSTREAM_SYNC_20260907.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/030-REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/031-ROOT_CANONICAL_PORT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/032-ROOT_CANONICAL_PORT_REVIEW_TIMESTAMP_CORRECTED.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/033-ROOT_REVIEW_TIMESTAMP_CORRECTION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/034-ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/035-SCOPED_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/036-STAGING_VALIDATION.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/037-STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/038-STRICT_LINT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/039-TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/040-UPSTREAM_SYNC_PIPELINE.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/041-UPSTREAM_SYNC_READINESS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/042-UPSTREAM_SYNC_STRICT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/043-UPSTREAM_SYNC_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/044-CONTACT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/045-DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/046-DERIVATION_BEFORE_FDD_SCOPE_CLARIFICATION_0e93e579.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/047-FDD_SCOPE_CLARIFICATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/048-FDD_SCOPE_CLARIFICATION.original.base64.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/049-FINITE_CONTROLS_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/050-PORT_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/051-PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/052-ROOT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/053-check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/054-native_canonical_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/055-native_canonical_stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/056-primary_canonical_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/057-primary_canonical_stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/058-result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/059-DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/060-PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/061-check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/062-result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/063-NATIVE_AND_CONTACT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/064-NATIVE_SCOPE_DELTA_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/065-ROOT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/066-BOUNDARY_SOURCE_ALIGNMENT.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/067-PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/068-ROOT_DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/069-ROOT_DERIVATION_BEFORE_BOUNDARY_SOURCE_ALIGNMENT_97fe162b.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/070-ROOT_NATIVE_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/071-PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/072-ROOT_DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/073-gauge_wilson_haar_contact_fdd_controls_2026_09_07.py.live.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/074-gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py.live.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/075-native_canonical_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/076-native_canonical_stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/077-primary_canonical_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/078-primary_canonical_stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/079-validated_claims_before_generated_cleanup.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/080-validated_readiness_before_generated_cleanup.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/081-GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/082-citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/083-build_citation_graph.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/084-gauge_wilson_haar_contact_fdd_controls_2026_09_07.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/085-gauge_wilson_uniform_weak_scaling_controls_2026_09_07.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/086-audit_packet_script_deps.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/087-gauge_wilson_haar_contact_fdd_controls_2026_09_07.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8030/originals/088-gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py.gz
+ create mode 100644 logs/runner-cache/gauge_wilson_haar_contact_fdd_controls_2026_09_07.json
+ create mode 100644 logs/runner-cache/gauge_wilson_haar_contact_fdd_controls_2026_09_07.txt
+ create mode 100644 logs/runner-cache/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.json
+ create mode 100644 logs/runner-cache/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.txt
+ create mode 100644 scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py
+ create mode 100644 scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py
+FROZEN 476b811b6da94742e7e0f9f70d6e9ea453de9b06 sources 100 inputs 109 notes 1

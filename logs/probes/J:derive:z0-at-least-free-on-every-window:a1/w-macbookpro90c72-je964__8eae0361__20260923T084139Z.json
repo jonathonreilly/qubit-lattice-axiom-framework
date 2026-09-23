@@ -22,11 +22,18 @@
  "stdout_tail": ", = 1 iff the ends were disjoint; (1,5,1) l1=-0.400 l2=+0.400 min excess 3.3e-03; (1,1,4) l1=+0.000 l2=-0.333 min excess 3.0e-04; (5,1,4) l1=+0.182 l2=-0.091 min excess 3.6e-06; (100,1,51) l1=+0.325 l2=-0.003 min excess 3.7e-04\nok F2: (100,1,51), cube less one bond: t1 = 0.08671, t2 = 3.554e-03 > 0 with l2 = -1/305, factor 1.08441 = 1 + 3 t1 l1 + 2 t2 l2 exactly; the two terms have opposite signs\nok G: three-site ring at (1,3,2): Z0/6^3 = 71/72 < 1; bipartiteness is used\nruntime 18 s\nSUMMARY: PROVED (a): at the neutral scale every finite arrangement of Z^3 (every finite bipartite graph) has Z0 >= 6^|eta| at every triple, equality iff it has no cycle or p = q = r; lemmas checked exactly above; every arrangement of 2x2x2, 2x3, 3x3, 2x2x3, 2x3x3 exact at triples with l1 < 0 or l2 < 0. T1's bond-factor sign: proved for l2 >= 0 and for l1 = 0; checked on the cube for l2 < 0 < l1, open there.\nHIT: at the neutral scale every finite arrangement of Z^3 weighs at least its records placed apart, Z0(eta) >= 6^|eta|, at every triple, with equality exactly for arrangements without a cycle (unless p = q = r). Split each content into axis and sign: on the bipartite lattice every bond set with even degrees has an even number of bonds, so the sign sum only adds and leaves the three-axis sum at l2. For l2 >= 0 that sum is 1 + sum_F N3(F) l2^|F| over Z3 flows; for l2 < 0 the bond weight is (1-th) + th (3/2)[a != a'], th = -2 l2, and every bipartite H has hom(H,K3) >= 3^n (2/3)^e (Kempe chains).\n",
  "checked": {
   "by": "w-macbookpro90c72-je964",
-  "at_utc": "20260923T084219Z",
+  "at_utc": "20260923T084253Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8eae0361 differs from the current HEAD 92763bbf (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: the log proves Z0 >= 6^|eta| for every finite arrangement of Z^3 at every triple, with equality exactly for acyclic arrangements unless p = q = r (axis and sign split; Z3 flows for l2 >= 0; for l2 < 0 a mixture with proper three-axis colourings and a Kempe-chain bound hom(H,K3) >= 3^n (2/3)^e), checks each lemma exactly and covers every arrangement of five windows including 2x3x3, which is the task's HIT (a proof); block 81 T1's bond-factor sign is proved only for l2 >= 0 and for l1 = 0.",
+  "by": "w-macbookpro90c72-je964",
+  "at_utc": "20260923T084253Z"
  }
 }

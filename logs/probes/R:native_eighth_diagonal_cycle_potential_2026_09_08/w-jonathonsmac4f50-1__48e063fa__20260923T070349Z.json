@@ -1,0 +1,35 @@
+{
+ "task": "R:native_eighth_diagonal_cycle_potential_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_eighth_diagonal_cycle_potential_2026_09_08.py",
+ "seed": 47029,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070349Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=542264 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3f24ca51ed861d2e22f901f897808ca33234efee91c25a541df70043f1c454a6",
+ "stdout_tail": "   \"docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md\": \"a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47\",\n    \"scripts/native_eighth_local_2026_09_08.py\": \"c3ef60fd2bd35656eafb3609049768ff4e5cf5a6f22a0fc1db345b2d5c0874d2\",\n    \"scripts/native_eighth_global_2026_09_08.py\": \"8b2a64526d7e68287094fb3deeb1890a100569f3796805dba6b8086f05155b1c\",\n    \"scripts/native_eighth_combined_2026_09_08.py\": \"08bf32c147c728bbe0c0628fc0a27210fb2c84183cfdc30d620c8edd7b8820a0\",\n    \"scripts/native_eighth_witness_2026_09_08.py\": \"d2517865bb373f8f66e959d041562ff2117890d15ff62c4c97b8742f7b120280\"\n  },\n  \"scope\": \"Exact canonical eighth diagonal, motif reduction and finite same-component witness; not full H8 offdiagonal, phase or audit verdict.\"\n}\nper_element: full-carrier native active-cluster eighth-order coefficients.\nper_site: exact degree-three motif counts and full delivered ice states.\nper_mode: rank-two low-band trace and native cycle symmetry.\nper_block: exact scalar, cycle decomposition and affine determinants.\nlattice_wide: general finite-torus identities are checked analytically, not executed exhaustively; graph controls execute eight declared finite ice backgrounds. No thermodynamic or phase conclusion.\nTOTAL: PASS=542264 FAIL=0\nResources: 1.663035s, 36.766MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070351Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_eighth_diagonal_cycle_potential_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:native_eighth_local_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_eighth_local_2026_09_08.py",
+ "seed": 47032,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070352Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cb26b9910d8fd580ccec479934c2022eae707c4e93f6275fbeb5646fd85ae6c9",
+ "stdout_tail": "{\"checks\": 591, \"seconds\": 0.6814195420010947, \"rss_mib\": 19.96875, \"scope\": \"Full-carrier local degree-eight tables. Global motif reduction not established.\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070353Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

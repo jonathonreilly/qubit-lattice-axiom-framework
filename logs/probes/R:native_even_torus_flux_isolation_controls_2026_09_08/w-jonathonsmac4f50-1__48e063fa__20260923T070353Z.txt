@@ -1,0 +1,1 @@
+{"checks": 5956, "seconds": 0.09767275000922382, "rss_mib": 22.953125, "scope": "exact finite lemma controls; analytical all-even proof separate"}

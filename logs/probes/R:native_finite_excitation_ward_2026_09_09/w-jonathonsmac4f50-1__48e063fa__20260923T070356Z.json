@@ -1,0 +1,35 @@
+{
+ "task": "R:native_finite_excitation_ward_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_finite_excitation_ward_2026_09_09.py",
+ "seed": 47036,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070356Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=543 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0cff6297a163f51a69435dbbec94f45ebc0bb3510f79e470cfdab642263e9c35",
+ "stdout_tail": "fad3f94c328461ecf94c59788272736944ee019\",\n    \"docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md\": \"1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226\",\n    \"docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md\": \"fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd\",\n    \"scripts/native_finite_excitation_ward_controls_2026_09_09.py\": \"ffb8be317f93733cd8ebbfa9b0c8f7caa6abb99611d53c80b842297e63f053b9\"\n  },\n  \"physical_runs\": 0,\n  \"rank_bound\": 2352,\n  \"raw_eta\": \"2287839703834313821/4000000000000000000000000\",\n  \"review_status\": \"current execution evidence only; historical source reviews preserved separately\",\n  \"scope\": \"finite exact supporting controls, not an infinite-proof audit\",\n  \"state_error_coefficient_upper\": \"124346375743098790485171/35000000000000000000000000\",\n  \"status\": \"PASS\",\n  \"supporting_predicates\": 543\n}\nTOTAL: PASS=543 FAIL=0\nper_element: finite exact rational Ward and normalization predicates are executed on the declared matrices.\nper_site: local source identities are checked in finite fixtures; no native spatial tail approximation is computed.\nper_mode: rational rank and principal-angle fidelity bounds execute; the exact principal orbitals are not computed.\nper_block: the finite state-error certificate is evaluated; all other algorithmic approximation errors remain unpriced.\nlattice_wide: stationary Fock and infinite Ward identities are analytical; no physical node scalar or interacting phase is evaluated.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070356Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_finite_excitation_ward_2026_09_09.txt against the .txt beside this log"
+  ]
+ }
+}

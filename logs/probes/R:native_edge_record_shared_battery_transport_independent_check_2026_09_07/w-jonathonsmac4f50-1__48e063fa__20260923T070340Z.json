@@ -1,0 +1,35 @@
+{
+ "task": "R:native_edge_record_shared_battery_transport_independent_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_shared_battery_transport_independent_check_2026_09_07.py",
+ "seed": 47020,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070340Z",
+ "elapsed_s": 8.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5cbbd416a1c960e6e7075d7ba950af2d141f4ac86a641ee59f82490826f6f48c",
+ "stdout_tail": "227 B=22.73636 S=5 n=0.5295,0.5022,0.4907,0.5056,0.4637,0.4960,0.5325,0.4798 j=+0.0207,+0.0623,-0.0102,+0.0114,-0.0330,-0.0797,-0.0062,+0.0243\nFO5 e9 E=-3.56492 B=22.15901 S=4 n=0.5411,0.4983,0.4805,0.4886,0.4575,0.5032,0.4888,0.5420 j=+0.0085,+0.0314,-0.0006,-0.0315,-0.0266,-0.0195,-0.0315\nBENCHMARK CONTROL1 originalgate=FAIL preS=[7, 6, 5, 0, 2] postS=[0, 5, 6, 5, 5] postgate=FAIL front=0.135911 rho=[0.125304,0.874696] postEmax=-3.598118 excess=0.607119 resource=w1/mean24.5/cap49 finalB=22.192208\nBENCHMARK FREE1 originalgate=PASS preS=[7, 6, 5, 4, 5] postS=[0, 5, 7, 1, 4] postgate=FAIL front=0.134999 rho=[0.125304,0.874696] postEmax=-3.564919 excess=0.582008 resource=w1/mean24.5/cap49 finalB=22.159009\nBENCHMARK CONTROL125 originalgate=PASS preS=[7, 6, 4, 6, 7] postS=[6, 5, 4, 6, 6] postgate=PASS front=0.255986 rho=[0.125304,0.874696] postEmax=-3.583893 excess=0.582721 resource=w125/mean86.5/cap173 finalB=84.177983\nBENCHMARK CONTROL260 originalgate=PASS preS=[7, 6, 4, 6, 7] postS=[6, 5, 4, 6, 6] postgate=PASS front=0.256209 rho=[0.125304,0.874696] postEmax=-3.583852 excess=0.582652 resource=w260/mean154/cap308 finalB=151.677942\nLEGEND CP/CO=CONTROL1 pre/post; FP/FO=FREE1 pre/post; j values follow ascending live-edge indices. SCOPE CONTROL uses supplied D_j tensor I_B; FREE uses laboratory H_j+H_B dwell; both are fixed conditional fixtures, not formation, renewal, or autonomy\nPASS envelope execution envelope: elapsed=8.37s rss=109.8MiB limits=180s/256MiB\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070349Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_shared_battery_transport_independent_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:native_eighth_combined_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_eighth_combined_2026_09_08.py",
+ "seed": 47029,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070349Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d0b688281d9e804676a896aa511707d57f22bc5c46c6f965e59a75789826ec91",
+ "stdout_tail": "{\n  \"checks\": 112,\n  \"scalar_parts\": {\n    \"one\": \"15/128\",\n    \"pair\": \"525/64\",\n    \"star3\": \"225/8\",\n    \"path3\": \"6479/150\",\n    \"star4\": \"225/16\",\n    \"fork4\": \"10091/120\",\n    \"path4_unrestricted\": \"191387/4000\"\n  },\n  \"C_tree\": \"3610233/16000\",\n  \"W\": {\n    \"0000\": \"-99/1600\",\n    \"0001\": \"-10019/108000\",\n    \"0010\": \"-10019/108000\",\n    \"0011\": \"-11/144\",\n    \"0100\": \"-10019/108000\",\n    \"0101\": \"5/32\",\n    \"0110\": \"-11/144\",\n    \"0111\": \"-10019/108000\",\n    \"1000\": \"-10019/108000\",\n    \"1001\": \"-11/144\",\n    \"1010\": \"5/32\",\n    \"1011\": \"-10019/108000\",\n    \"1100\": \"-11/144\",\n    \"1101\": \"-10019/108000\",\n    \"1110\": \"-10019/108000\",\n    \"1111\": \"-99/1600\"\n  },\n  \"decomposition\": {\n    \"constant\": \"-7567/108000\",\n    \"domainwalls\": \"-209/28800\",\n    \"four_sigma_product\": \"1769/216000\",\n    \"flippability\": \"3559/14400\"\n  },\n  \"input_sha256\": \"ae5f2307fb43c55a10f4e153bc77aa73e9b322b9e5ede3fd69809e375aba0e6f\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070349Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

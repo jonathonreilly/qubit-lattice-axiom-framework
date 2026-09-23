@@ -1,0 +1,31 @@
+{
+ "task": "R:native_eighth_global_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_eighth_global_2026_09_08.py",
+ "seed": 47031,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070351Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d3b5c6765b3fdc862b2868350ca12c75edaa5795b0aede06a8a5e2c56dacc38c",
+ "stdout_tail": "{\"checks\": 541533, \"seconds\": 0.7035965000395663, \"rss_mib\": 35.0625, \"source_sha256\": \"8b2a64526d7e68287094fb3deeb1890a100569f3796805dba6b8086f05155b1c\", \"scope\": \"Independent symbolic motif multiplicities on eight deterministic ice backgrounds; no physical H8 coefficients or stochastic evidence.\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070352Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

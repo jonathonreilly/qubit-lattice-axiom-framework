@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_reduced_cell_full_isometry_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_reduced_cell_full_isometry_2026_09_07.py",
+ "seed": 47008,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070328Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1142a8620f3f0272433f9bf5df93e782f5adf942cd26aca5c4042cf79947b566",
+ "stdout_tail": "PASS exact full native reduced-cell isometry: 163 actual exact assertions; all8 columns,9 pulses\nCOLUMN_SHA256 975eb5f92927d653897c375731ee13597b9091e5e8a8e8faf337ca40b8ecf6fd\nper_element: full exact sign amplitudes, one refusal, energy intertwining and phase controls\nper_site: same nine reduced registers, no additional ancillas, old Record unchanged\nper_mode: both matter states and all four positive battery levels, arbitrary reference by linearity\nper_block: nine explicit completegraph generators with support at most3 and exact unitary identities\nlattice_wide: checked and not executed -- no NN synthesis, full cube dynamics or physical control law\nSOURCE_SHA256 61dd4621ffc39835fdcb854dc0da26312b4d12ca9cb42c8fdb4963dcd90d8225\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070330Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

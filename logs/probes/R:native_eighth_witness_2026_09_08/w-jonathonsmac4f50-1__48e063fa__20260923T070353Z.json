@@ -1,0 +1,31 @@
+{
+ "task": "R:native_eighth_witness_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_eighth_witness_2026_09_08.py",
+ "seed": 47033,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070353Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "653b0b537997ce7681e3dc19f20a0f1fb6b9e099c4909bacf9b13ac7e3dd4b47",
+ "stdout_tail": "\n            ]\n          ],\n          \"before_bits\": [\n            0,\n            1,\n            0,\n            1\n          ]\n        }\n      ]\n    },\n    {\n      \"L\": 6,\n      \"features\": [\n        [\n          324,\n          648,\n          1296\n        ],\n        [\n          320,\n          624,\n          1304\n        ],\n        [\n          317,\n          612,\n          1310\n        ]\n      ],\n      \"determinant\": \"-1769/9000\",\n      \"tapes\": [\n        {\n          \"edge_ids\": [\n            0,\n            125,\n            15,\n            17\n          ],\n          \"edge_endpoints\": [\n            [\n              0,\n              36\n            ],\n            [\n              41,\n              36\n            ],\n            [\n              5,\n              41\n            ],\n            [\n              5,\n              0\n            ]\n          ],\n          \"before_bits\": [\n            0,\n            1,\n            0,\n            1\n          ]\n        },\n        {\n          \"edge_ids\": [\n            1,\n            558,\n            541,\n            540\n          ],\n          \"edge_endpoints\": [\n            [\n              0,\n              6\n            ],\n            [\n              186,\n              6\n            ],\n            [\n              180,\n              186\n            ],\n            [\n              180,\n              0\n            ]\n          ],\n          \"before_bits\": [\n            0,\n            1,\n            0,\n            1\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070353Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

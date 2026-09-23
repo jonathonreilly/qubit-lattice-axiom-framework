@@ -1,0 +1,35 @@
+{
+ "task": "R:native_edge_record_transport_ideal_margin_certificate_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_transport_ideal_margin_certificate_2026_09_07.py",
+ "seed": 47029,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070349Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1026e1dc4d2f27002ec182daa570def1474e99577845f69db8c816d4dde94351",
+ "stdout_tail": "iance_error<1e-22=True\nprefix=3 chosen_four=(4, 2, 1, 8) current_slack>=0.0492056499 post_chosen_four=(4, 2, 1, 8) post_current_slack>=0.0492056499 density_slack>=0.1903481533 negative_energy_slack>=4.7681208706 covariance_error<1e-22=True\nprefix=4 chosen_four=(4, 1, 2, 8) current_slack>=0.1732355474 post_chosen_four=(4, 1, 2, 8) post_current_slack>=0.1732355474 density_slack>=0.2731483199 negative_energy_slack>=4.1773993562 covariance_error<1e-22=True\nprefix=5 chosen_four=(4, 8, 1, 2) current_slack>=0.1376858185 post_chosen_four=(4, 8, 1, 2) post_current_slack>=0.1376858185 density_slack>=0.2472171339 negative_energy_slack>=3.5838388966 covariance_error<1e-22=True\nfront_witness step=2 edge=3 slack>=0.2062774875\n[PASS] covariance errors bounded strictly below 1e-22\n[PASS] chosen integer width strictly exceeds every sufficient bound\n[PASS] original-only integer width strictly exceeds its sufficient bounds\nORIGINAL_GATES_SUFFICIENT_WIDTH=125 bottleneck=pre-current-3 support=[24,149] mean=173/2 cap=173\nADDED_POST_GATE_SUFFICIENT_WIDTH=260 derived_from=ideal_slacks_and_pi_squared_less_than_16 bottleneck=post-current-2\nBATTERY support=[24,284] mean=154 cap=308; one retained continuous battery, no reset; width-one result unchanged\nScope: original pre-current/front gates, added post-current gate, and post-density/all-prefix-negative-energy gates; no optimum-width claim\n[PASS] execution stays within 180 seconds and 180 MiB\nruntime_seconds=0.02 peak_rss_mib=18.0\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070349Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_transport_ideal_margin_certificate_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

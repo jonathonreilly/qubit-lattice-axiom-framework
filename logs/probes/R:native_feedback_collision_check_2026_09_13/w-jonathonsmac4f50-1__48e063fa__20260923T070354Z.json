@@ -1,0 +1,31 @@
+{
+ "task": "R:native_feedback_collision_check_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_feedback_collision_check_2026_09_13.py",
+ "seed": 47034,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070354Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "03a5deb2b2fe89cec8b0f61f15073c33bfc42da80d68f2e46c940569253d89ff",
+ "stdout_tail": "bound_0.02\": true,\n    \"old_Record_bridge_wrong_free_detected_0.02\": true,\n    \"old_Record_bridge_trace_0.02\": true,\n    \"old_Record_bridge_rounded_energy_mean_0.02\": true,\n    \"old_Record_bridge_explicit_unitary_formula_0.01\": true,\n    \"old_Record_bridge_full_local_error_bound_0.01\": true,\n    \"old_Record_bridge_dissipative_local_error_bound_0.01\": true,\n    \"old_Record_bridge_wrong_free_detected_0.01\": true,\n    \"old_Record_bridge_trace_0.01\": true,\n    \"old_Record_bridge_rounded_energy_mean_0.01\": true,\n    \"old_Record_bridge_h_squared_0.04\": true,\n    \"old_Record_bridge_h_squared_0.02\": true,\n    \"coefficient_bound_43\": true,\n    \"finite_battery_levels\": true,\n    \"storage_register_count\": true,\n    \"collision_labels_six_qubits\": true,\n    \"collision_constant\": true,\n    \"collision_step_domain\": true,\n    \"collision_error_under_one_fortieth\": true,\n    \"combined_error_budget\": true,\n    \"total_retained_registers\": true,\n    \"runtime_under_180_seconds\": true,\n    \"RSS_under_180_MiB\": true\n  },\n  \"check_count\": 100,\n  \"maximum_equality_residual\": 1.776547413335493e-15,\n  \"runtime_seconds\": 0.0679137499537319,\n  \"peak_RSS_MiB\": 106.1875,\n  \"resources\": {\n    \"finite_battery_levels\": 124160,\n    \"storage_qubits\": 49,\n    \"collision_count\": 2161,\n    \"retained_qubits_total\": 13015,\n    \"combined_trace_norm_upper_bound\": \"15/256\"\n  },\n  \"scope\": \"Small state-specific native witnesses and exact resource arithmetic; general channel proof is analytical.\"\n}\nTOTAL: PASS=100 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070355Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

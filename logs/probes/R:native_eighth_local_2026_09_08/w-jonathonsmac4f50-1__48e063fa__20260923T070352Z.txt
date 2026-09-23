@@ -1,0 +1,1 @@
+{"checks": 591, "seconds": 0.6814195420010947, "rss_mib": 19.96875, "scope": "Full-carrier local degree-eight tables. Global motif reduction not established."}

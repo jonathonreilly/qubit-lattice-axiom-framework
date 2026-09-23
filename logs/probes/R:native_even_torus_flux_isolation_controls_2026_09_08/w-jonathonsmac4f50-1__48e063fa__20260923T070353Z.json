@@ -1,0 +1,31 @@
+{
+ "task": "R:native_even_torus_flux_isolation_controls_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_even_torus_flux_isolation_controls_2026_09_08.py",
+ "seed": 47033,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070353Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d8d79e07861d76450fedd9662c50d28d11bf0d741d23c93578b11f4b0fad8e8f",
+ "stdout_tail": "{\"checks\": 5956, \"seconds\": 0.09767275000922382, \"rss_mib\": 22.953125, \"scope\": \"exact finite lemma controls; analytical all-even proof separate\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070354Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

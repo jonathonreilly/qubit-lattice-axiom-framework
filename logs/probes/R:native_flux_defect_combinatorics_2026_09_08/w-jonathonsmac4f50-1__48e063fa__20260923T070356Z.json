@@ -1,0 +1,31 @@
+{
+ "task": "R:native_flux_defect_combinatorics_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_flux_defect_combinatorics_2026_09_08.py",
+ "seed": 47036,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070356Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "631adba7034ccad7fb0dadbaa046a5f50971b745f57b73bb51b53a9c4726f49d",
+ "stdout_tail": "{\n  \"predicates\": 14218,\n  \"seconds\": 0.07291220797924325,\n  \"scope\": \"finite run-extension/empirical-count/twist controls; no energy computation\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070356Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

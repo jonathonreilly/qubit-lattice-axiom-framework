@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_reduced_cell_full_isometry_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py",
+ "seed": 47010,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070330Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "22c0cb1cc225897bdb0d2db05533725728d3de051f3bcda6ac57fa107bf7801c",
+ "stdout_tail": "}, {\"max_pauli_support\": 3, \"pulse\": 4}, {\"max_pauli_support\": 3, \"pulse\": 5}, {\"max_pauli_support\": 2, \"pulse\": 6}, {\"max_pauli_support\": 2, \"pulse\": 7}, {\"max_pauli_support\": 1, \"pulse\": 8}], \"refusal_rank\": 2, \"resources\": {\"blas_threads\": 1, \"rss_limit_MiB\": 180, \"start_before_imports\": true, \"timeout_seconds\": 180}, \"rss_MiB\": 97.453125, \"scope\": \"Full source-column native isometry under supplied globally conserving support<=3 completegraph pulses; fixed old boundary Record sector, no NN or permanent formation claim\", \"seconds\": 0.19774045899976045, \"source_sha256\": \"4a10bda8a07b7aaf9afd7b8280f6a66755e17f657a9929ca1e5d072183b21f9c\", \"zero_energy_label_qubits\": 2}\nper_element: both unnormalized native sign amplitudes and ONE combined cap refusal are retained.\nper_site: actual square-boundary Pauli compression, unchanged old Records and one-head control.\nper_mode: all eight matter/four-battery input columns, full complex phases and energy intertwiners checked.\nper_block: eight fixed pulses checked globally for energy, head number, unitarity and exact final isometry.\nlattice_wide: checked and not executed -- supplied completegraph support<=3 controls; no NN, full arbitrary-label collision or permanent formation claim.\nSOURCE_SHA256 4a10bda8a07b7aaf9afd7b8280f6a66755e17f657a9929ca1e5d072183b21f9c\nDEPENDENCIES {\"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py\": \"fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af\"}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070330Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

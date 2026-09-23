@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_reduced_cell_control_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_reduced_cell_control_check_2026_09_07.py",
+ "seed": 47008,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070328Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2f7a5279f7da0f1f9dce75d94364c973c1558b4e300a2ed6fb7f754ec7c6d357",
+ "stdout_tail": "final_phase\": \"+1\", \"folded_fixed_spectators\": [\"r=0\", \"b0=0\"], \"matrix_dimension\": 128, \"pulses\": [{\"cyclic_dimension\": 2, \"global_energy_commutator_norm\": 2.0000000000000004, \"pulse\": 1}, {\"cyclic_dimension\": 2, \"global_energy_commutator_norm\": 0.0, \"pulse\": 2}, {\"cyclic_dimension\": 2, \"global_energy_commutator_norm\": 0.0, \"pulse\": 3}, {\"cyclic_dimension\": 2, \"global_energy_commutator_norm\": 0.0, \"pulse\": 4}, {\"cyclic_dimension\": 2, \"global_energy_commutator_norm\": 0.0, \"pulse\": 5}], \"scope\": \"Fixed-input cyclic energy preservation; first pulse is NOT a globally energy-commuting control and does not contradict the two-site invariant.\"}}\nper_element: actual parent boundary Pauli identities, exact pulse exponentials and cyclic projectors are checked.\nper_site: fixed square boundary reduction and unchanged old Record; complete interaction graph only.\nper_mode: three-site global energy commutation versus two-site fixed-input energy support are distinguished.\nper_block: each occupied cyclic subspace is invariant at energy5/2; first two-site pulse globally fails energy commutation.\nlattice_wide: checked and not executed -- no full instrument, native nearest-neighbor synthesis, permanent new Record or all48-qubit simulation.\nSOURCE_SHA256 c3dbc326693c79173b8fabb6068430c450a4133c571833b4f477415eccb939cc\nDEPENDENCIES {\"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py\": \"fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af\"}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070328Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_reduced_cell_control_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

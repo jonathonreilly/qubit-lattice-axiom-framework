@@ -1,0 +1,35 @@
+{
+ "task": "R:native_edge_record_z4_flux_five_event_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_z4_flux_five_event_check_2026_09_07.py",
+ "seed": 47029,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070349Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=1802 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8ae5deaee6e31e8a48806ddfb09229762129804c1ed361ac19cb0fd76cc22581",
+ "stdout_tail": "PASS: 256 inputs;8 physical three-site Pauli actions;5 native events;both flux Record sites.\nper_element: 256 prepared basis inputs; all data occupations and both physical flux Record sites verified.\nper_site: Five actual bridge events on a twelve-mode path; three-edge pulse support verified.\nper_mode: All8 local Pauli basis actions include the pulse phase and guard; no arbitrary-controller Hilbert simulation.\nper_block: Ideal supplied-controller instrument; switching, work apparatus and preparation remain inputs.\nlattice_wide: checked and not executed \u2014 finite path scope; no autonomous or finite-battery implementation.\nTOTAL: PASS=1802 FAIL=0; executed assertions include one resource guard.\nResources: 0.001051s; 19.781 MiB; declared limits180s/180MiB.\nSource SHA256: e3afa3b30d6a987ebfd5ea375b8764edf5f62bad15c5f646710ee30c31638c92\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070349Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_z4_flux_five_event_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

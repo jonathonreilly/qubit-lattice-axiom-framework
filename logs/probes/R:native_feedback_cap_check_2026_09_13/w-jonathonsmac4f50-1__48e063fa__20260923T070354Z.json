@@ -1,0 +1,31 @@
+{
+ "task": "R:native_feedback_cap_check_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_feedback_cap_check_2026_09_13.py",
+ "seed": 47034,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070354Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6edfcf80064114f67fc67a54b35742ec2d01ba9e7bbf070db22d9cf5cd44c680",
+ "stdout_tail": "ce_rate_predicted_half\": true,\n    \"feedback_local_rate_predicted_17_over_50\": true,\n    \"feedback_cap_rate_predicted_8_over_25\": true,\n    \"feedback_uses_actual_rate_not_identity\": true,\n    \"two_state_actual_generator_difference\": true,\n    \"four_factor_dissipator_bound\": true,\n    \"two_factor_competitor_rejected\": true\n  },\n  \"results\": {\n    \"complete\": {\n      \"exact_source_rate\": \"1\",\n      \"uncapped_local_rate\": \"1\",\n      \"capped_local_rate\": \"16/25\",\n      \"local_cap_leakage\": \"9/25\",\n      \"uncapped_column_difference_squared\": \"2\",\n      \"capped_column_difference_squared\": \"41/25\",\n      \"adjoint_error_squared\": \"2\",\n      \"common_bound_from_two_separate_premises_squared\": \"2\",\n      \"loss_error_squared\": \"9/25\",\n      \"actual_refusal_mass\": \"9/25\"\n    },\n    \"feedback\": {\n      \"exact_source_rate\": \"1/2\",\n      \"uncapped_local_rate\": \"17/50\",\n      \"capped_local_rate\": \"8/25\",\n      \"local_cap_leakage\": \"1/50\",\n      \"uncapped_column_difference_squared\": \"21/25\",\n      \"capped_column_difference_squared\": \"41/50\",\n      \"adjoint_error_squared\": \"1\",\n      \"common_bound_from_two_separate_premises_squared\": \"1\",\n      \"loss_error_squared\": \"1/2\"\n    },\n    \"two_state_lemma\": {\n      \"scope\": \"synthetic amplitude damping\",\n      \"generator_trace_norm\": \"7/8\",\n      \"common_weighted_error\": \"1/4\",\n      \"comparison_multiplier\": 4\n    }\n  },\n  \"scope\": \"Commensurate finite native cap algebra; not a metric-radius or sine-packet error certificate.\"\n}\nTOTAL: PASS=52 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070354Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

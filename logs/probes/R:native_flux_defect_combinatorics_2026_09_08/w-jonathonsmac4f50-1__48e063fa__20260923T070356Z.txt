@@ -1,0 +1,5 @@
+{
+  "predicates": 14218,
+  "seconds": 0.07291220797924325,
+  "scope": "finite run-extension/empirical-count/twist controls; no energy computation"
+}

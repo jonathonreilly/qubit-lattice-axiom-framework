@@ -1,0 +1,35 @@
+{
+ "task": "R:native_feedback_finite_apparatus_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_feedback_finite_apparatus_2026_09_13.py",
+ "seed": 47035,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48e063fa",
+ "started_utc": "20260923T070355Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=152 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "91916e29062951935691e3a92b93b05479a2deb3d7b6e4927da87b583acf27b0",
+ "stdout_tail": "_trace_norm_error\": 8.833725726589064e-05,\n            \"dissipative_trace_norm_error\": 6.0082359833573384e-05,\n            \"wrong_free_trace_norm_error\": 0.013266950761885322\n          },\n          {\n            \"h\": 0.01,\n            \"original_free_trace_norm_error\": 2.215317729685597e-05,\n            \"dissipative_trace_norm_error\": 1.5099077696680828e-05,\n            \"wrong_free_trace_norm_error\": 0.006650035579989282\n          }\n        ]\n      }\n    },\n    \"check_count\": 100,\n    \"maximum_equality_residual\": 1.776547413335493e-15,\n    \"runtime_seconds\": 0.06788241700269282,\n    \"peak_RSS_MiB\": 130.796875,\n    \"resources\": {\n      \"finite_battery_levels\": 124160,\n      \"storage_qubits\": 49,\n      \"collision_count\": 2161,\n      \"retained_qubits_total\": 13015,\n      \"combined_trace_norm_upper_bound\": \"15/256\"\n    },\n    \"scope\": \"Small state-specific native witnesses and exact resource arithmetic; general channel proof is analytical.\"\n  }\n}\nper_element: Exact native two-edge cap identities and rounded square jump matrices are exercised.\nper_site: Old and newly written native edge Record guards are checked on the stated finite inputs.\nper_mode: The small positive battery cells and their real dark boundary are included in the operators.\nper_block: Two fixed legal square preparations are compared by explicit unitary and GKSL evolution.\nlattice_wide: checked and not executed \u2014 the full cube resource count is analytical, with no large apparatus simulation.\nTOTAL: PASS=152 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070356Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_feedback_finite_apparatus_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

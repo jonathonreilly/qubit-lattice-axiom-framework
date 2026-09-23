@@ -1,0 +1,1 @@
+{"checks": 541533, "seconds": 0.7035965000395663, "rss_mib": 35.0625, "source_sha256": "8b2a64526d7e68287094fb3deeb1890a100569f3796805dba6b8086f05155b1c", "scope": "Independent symbolic motif multiplicities on eight deterministic ice backgrounds; no physical H8 coefficients or stochastic evidence."}

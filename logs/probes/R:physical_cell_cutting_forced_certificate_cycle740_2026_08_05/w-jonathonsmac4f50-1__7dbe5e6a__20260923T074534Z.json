@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_forced_certificate_cycle740_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_forced_certificate_cycle740_2026_08_05.py",
+ "seed": 49534,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7dbe5e6a",
+ "started_utc": "20260923T074534Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0973c3e647c02b5e7cfe71416649cc11b55c6a7d6cc80dd3b7ebde79e8bd82c8",
+ "stdout_tail": "y piece\nPASS G26  its symmetric difference with the first half, a set that is no block union, is forced too, by 44 pivot cuttings checked the same way\nPASS G27  the planted 20 piece set is not forced: a kernel word of weight 8 with zero syndrome meets it oddly, after 0 redraws\nPASS hostile.order  a cyclic order shift changes the forced block profile\nPASS hostile.dependency  failed dependency status is rejected\nPASS hostile.sample_geometry  sample-disjoint pieces can overlap; exact separation is load-bearing\nPASS hostile.incidence  one flipped bit breaks row/column counts and population identity\nelapsed under 10 s peak memory under 300 MB\nPASS G28  the whole runner finishes under 900 seconds\nPASS G29  its output stays under 5500 characters\n\nper_element: checked -- all 192 used pieces enter the exact incidence, row-space, kernel, block, and certificate checks\nper_site: checked -- one supplied 16-corner coordinate cell only; no physical assembly-cell or framework site identification is executed\nper_mode: checked and not executed -- the finite incidence system has no field, spectral, or momentum-mode decomposition\nper_block: checked -- all 16 quarter unions and all 256 unions of the eight declared lexicographic 24-piece blocks\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, thermodynamic, boundary, or continuum negative is asserted\nRECEIPT outputs/physical_cell_cutting_forced_certificate_cycle740_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=35 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074537Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_forced_certificate_cycle740_2026_08_05.txt against the .txt beside this log"
+  ]
+ }
+}

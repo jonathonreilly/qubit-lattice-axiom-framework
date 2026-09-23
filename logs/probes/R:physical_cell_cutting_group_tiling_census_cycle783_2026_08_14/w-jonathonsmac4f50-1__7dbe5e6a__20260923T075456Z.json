@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_group_tiling_census_cycle783_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_group_tiling_census_cycle783_2026_08_14.py",
+ "seed": 50096,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7dbe5e6a",
+ "started_utc": "20260923T075456Z",
+ "elapsed_s": 25.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7427ba0bb25d4884bad59ce576e9fbd7d426b6ac2ceca47fa6be1c56294d2ba1",
+ "stdout_tail": "ven 90 parity-mixed; 25 realized, 6 odd 19 even, mixed realized 0; kernel dimension 6 of 12\nPASS K10 orbits: 6 orbits of the 25 realized profiles, sizes 1 6 3 3 6 6, counts 9368 944 160 24 20 16, weighted total 15800, action failures 0\nprofile census: U size 1 count 9368 -8:24 0:9320 8:24; O size 6 count 944 -4:472 4:472\nprofile census: A size 3 count 160 -8:8 0:144 8:8; B size 3 count 24 -8:12 8:12\nprofile census: C size 6 count 20 -8:6 0:8 8:6; D size 6 count 16 0:16\nPASS K11 halving: each of the 25 profiles has a sign-minus stabilizer, per-profile censuses all sign symmetric, class O pure at 4 and class B at 8\nPASS K12 assembly: 2832 = 6 times 472; 120 = (48 + 3 times 16 + 3 times 24 + 6 times 12) halved; 9896 = 15800 - 5664 - 240\nPASS K13 extremes: the 240 cuttings at size 8 fall into 7 orbits, 4 of size 24 by stabilizer 16 and 3 of size 48 by 8, each product 384\nPASS K14 rejector one: moving one tile element to another even mask gives 288 distinct translates of which 96 are pieces, short of 192\nPASS K15 rejector two: negating the labels of one tile type changes the census at 3 values, the count at minus 8 moving from 120 to 108\nPASS K16 rejector three: the parity-mixed abstract solution 4 0 4 0 3 1 0 0 1 4 3 4 is realized by 0 of the 15800 tilings\nPASS K17 support budget: 25 seconds under 300, peak 111 MB under 2500, output 3053 bytes under 6000\ncensus: label sum over the 15800 cuttings -8:120 -4:2832 0:9896 4:2832 8:120\nresource: 25 s, 111 MB peak\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T075522Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_group_tiling_census_cycle783_2026_08_14.txt against the .txt beside this log"
+  ]
+ }
+}

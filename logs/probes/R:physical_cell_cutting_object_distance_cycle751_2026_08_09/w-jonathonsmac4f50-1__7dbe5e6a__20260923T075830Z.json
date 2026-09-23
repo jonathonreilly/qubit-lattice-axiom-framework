@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_object_distance_cycle751_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py",
+ "seed": 50310,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7dbe5e6a",
+ "started_utc": "20260923T075830Z",
+ "elapsed_s": 99.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=46 FAIL=3",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6c60dfe142e8bf21489f8e727f68017df592a01457f0803bcdce521d812434e1",
+ "stdout_tail": "eight far corners of a four-cube fold to three steps, since nothing stands farther: 480 pairs, all at three and 0 at four\nPASS G37  the two three-cubes interleave, not apart: 4032 pairs across at two steps, 576 at three\nPASS G38  sixteen pieces taken evenly spaced instead: 730 of 768 are brought closer from outside\nPASS G39  the relabelling search takes a four-cube and refuses one with two joins moved, every corner still at 4\nPASS G40  over the whole object the count fixes the step for 44 of 47, failing at 202,212,250 on 1632 pairs\nso carrier component distances through three survive ambient embedding, while the four-cube antipodes shorten from four to three\nelapsed under 100 s peak memory under 2500 MB\nFAIL G41  the whole runner finishes under 900 seconds inside the printed 2500 MB\nPASS G42  its output including the evidence footer stays under 8000 characters\n\nper_element: checked -- all 192 pieces enter the global graph and distance-layer calculations\nper_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only\nper_mode: checked and not executed -- this finite binary incidence object has no modal decomposition\nper_block: checked -- every one of the 15800 cutting rows contributes to the dense co-incidence matrix\nlattice_wide: checked and not executed -- no multicell, infinite-lattice, continuum, or physical-metric claim\nRECEIPT outputs/physical_cell_cutting_object_distance_cycle751_2026_08_09_receipt_2026-08-09.json\nTOTAL: PASS=46 FAIL=3\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T080010Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=46 FAIL=3' vs cache 'TOTAL: PASS=49 FAIL=0'"
+  ]
+ }
+}

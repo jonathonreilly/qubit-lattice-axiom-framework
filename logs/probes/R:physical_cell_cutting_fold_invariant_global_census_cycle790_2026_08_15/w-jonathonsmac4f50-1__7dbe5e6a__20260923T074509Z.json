@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_fold_invariant_global_census_cycle790_2026_08_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_fold_invariant_global_census_cycle790_2026_08_15.py",
+ "seed": 49509,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7dbe5e6a",
+ "started_utc": "20260923T074509Z",
+ "elapsed_s": 24.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a8ee5dd7718b4d9840e1f980b9f5f6518d837bf3ddf712436bacbb14514508e8",
+ "stdout_tail": "8 each; entry 100 pairs (3,3) and (14,14) hold 36, (5,5) and (10,10) hold 10\nG6 detail: entry 104 pairs (6,8) and (8,6) hold 18 each, so the remainder splits as 96 plus 72 plus 20 plus 36\nPASS G7 the centralizer of the sample fold has order 32, closed under composition, 16 members hold axis 0, all 32 hold the 336 cuttings\nPASS G8 the centralizer has 31 orbits on the 336 held cuttings, size census {4: 4, 8: 14, 16: 13}\nPASS G9 the axis-0 side flip commutes with all 6 folds and pairs the 336 held cuttings with no fixed member, cycle census {2: 168}\nG9 detail: 12 of the 32 centralizer members hold no cutting of the 336 and 4 of those are pure two-cycles, so the global count is even\nPASS G10 only 2 centralizer members hold the sample fiber's 14 cuttings; the 16 axis-0 members hit each of the 8 fibers 2 times\nG10 detail: the side flip pairs the fibers (0,4)-(4,0) (2,9)-(9,2) (7,11)-(11,7) (12,13)-(13,12), holding none of the 8\nG10 detail: 6 of the 16 letter pairs are held by the side flip, (1,1) (3,3) (5,5) (10,10) (14,14) (15,15), each with an even count and none fixed\nPASS G11 the 400 kept pieces give 200 two-orbits, no singleton and no overlap; the cover of the 625 sample points has 336 solutions of 12\nG11 detail: the 336 quotient solutions are exactly the 336 cuttings the fold holds, as sets of pieces\nPASS G12 the 336 quotient solutions carry the same 16 letter pairs with count census {10: 2, 14: 8, 18: 2, 36: 2, 48: 2}\nresource: under 60 s, under 250 MB\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074534Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

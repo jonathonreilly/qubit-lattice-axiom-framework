@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_label_sum_size_bound_cycle781_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_label_sum_size_bound_cycle781_2026_08_14.py",
+ "seed": 50300,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7dbe5e6a",
+ "started_utc": "20260923T075820Z",
+ "elapsed_s": 10.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0a5cf0c089174f3d09f6a513689c6770a64cac519e5c6f4830efd01049e942b8",
+ "stdout_tail": "y enumerated cutting\nPASS seeded_completion chamber exact-cover searches seeded by all 48 nine-piece families find 0 completions\nPASS sealing_witnesses sealing: each of the 48 families leaves a chamber it does not hold whose 8 holders all meet it, failures 0 of 48\nPASS size_bound_identity theorem: S = 4 (p - 6) at the positive half-set count p, with p + m = 12 and p between 4 and 8, failures 0 of 15800\nPASS endpoint_censuses p census 4:120 5:2832 6:9896 7:2832 8:120 sum 15800; label sum census -8:120 -4:2832 0:9896 4:2832 8:120\nPASS halving_mutation control one: negating the halving certificate at one chamber breaks the per-piece identity at exactly 8 pieces, its holders\nPASS half_set_mutation control two: dropping one piece from the half set breaks the constant 12 at exactly 1975 cuttings, the cuttings through it\nper_element: checked - all 192 piece incidences, labels, g1 sums, and W counts are executed exactly\nper_site: checked and not executed - the one-cell theorem has no framework site variable or sitewise extension\nper_mode: checked and not executed - the finite incidence theorem defines no mode decomposition or modal extension\nper_block: checked - all 15800 declared cell cuttings are scanned and each same-sign half-set count is at most 8\nlattice_wide: checked and not executed - no multi-cell or lattice-wide statement is made or tested by this runner\nresource: under 60 s of the 120 s budget, under 250 MB of the 2500 MB budget, 2864 gate characters\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T075830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

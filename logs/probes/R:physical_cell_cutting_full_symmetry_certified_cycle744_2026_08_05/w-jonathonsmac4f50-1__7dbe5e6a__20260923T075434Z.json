@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_full_symmetry_certified_cycle744_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_full_symmetry_certified_cycle744_2026_08_05.py",
+ "seed": 50074,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7dbe5e6a",
+ "started_utc": "20260923T075434Z",
+ "elapsed_s": 14.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=51 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e2c853c6a2521d7a4f3f2a1e563954028b448b4d3c32b01c1d1339019ba7bd07",
+ "stdout_tail": "it: 192 images of the base piece exp 192 -> PASS\nG41 stabsame: 2 elements, the same two exp 2 -> PASS\nG42 count: 192 times 2 is 384 exp 384 -> PASS\nGhostile.pair_inventory submitted half-width chunks are rejected: 7900 is not 15800 -> PASS\nGhostile.dependency a failing Cycle 743 receipt is rejected: fail closed -> PASS\nGhostile.automorphism_identity a self-consistently rehashed changed predecessor map is rejected: fail closed -> PASS\nGhostile.omitted_generator omitting b1 collapses the generated group: 96 not 384 -> PASS\nGhostile.reading_identity a changed reading identity is rejected: fail closed -> PASS\nGbudget.time elapsed 14.68s: <900s -> PASS\nGbudget.memory peak 445.3 MB: <2500 MB -> PASS\nGbudget.output bounded stdout: <6500 chars -> PASS\nper_element: checked -- all 192 support columns enter the exact incidence, group, overlap, and stabilizer-branch checks\nper_site: checked and not executed -- one supplied coordinate four-cube only; no framework cell or site is identified\nper_mode: checked and not executed -- the finite incidence table has no field or momentum-mode decomposition\nper_block: checked -- every one of the 15800 supplied cutting supports and all 50 declared generators enter the direct automorphism tests\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, boundary, thermodynamic, or continuum theorem is asserted\nRECEIPT outputs/physical_cell_cutting_full_symmetry_certified_cycle744_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=51 FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T075449Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=51 FAIL=2' vs cache 'TOTAL: PASS=53 FAIL=0'"
+  ]
+ }
+}

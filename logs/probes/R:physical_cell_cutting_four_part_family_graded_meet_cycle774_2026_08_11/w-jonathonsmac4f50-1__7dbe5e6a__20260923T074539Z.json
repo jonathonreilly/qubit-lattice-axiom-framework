@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_four_part_family_graded_meet_cycle774_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_four_part_family_graded_meet_cycle774_2026_08_11.py",
+ "seed": 49539,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7dbe5e6a",
+ "started_utc": "20260923T074539Z",
+ "elapsed_s": 11.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0453243e6f1a5d1417487e00230e0cc49b5e53e7fa762a289ed295e61a789707",
+ "stdout_tail": "nk 9/3; its and incidence's 3-nullspaces meet in dimension 3 and coincide\nPASS E22 the halved quotients are distinct with 0 of 24 rows equal in place and different row multisets; their named-field null spaces coincide\nPASS E23 the incidence row and the twin row share 0 pieces in every one of the 192 rows\nPASS E24 the difference of the two has entry set [-1, 0, 1] and 3072 nonzero entries, which is 192 times 16\nPASS E25 over F_1000003, difference ranks by weight are [6, 9, 6, 6, 0], class-constant, total 102, zero on the all-signs block\nPASS E26 over F_1000003, the 368-member one-swap sweep has 185 signatures, kernel totals 48..120, all-signs meet entry 12\nPASS E27 over F_1000003, the declared 368-member one-swap sweep has meet totals 12..59; full family size 3321960\nPASS E28 over F_1000003, the sample has 169/366 dimension-6 selected weight-3 kernels transverse to incidence\nPASS E29 over F_1000003, the 460-member sample realises 130 selected weight-3 kernels; 103 have dimension 6, maximum multiplicity 27\nPASS E30 over F_1000003, selected weight-3 kernel multiplicities in the 460-member sample: incidence 13, comparison 2; kernels distinct\nPASS E31 all 13 targeted mutations are rejected: masks, geometry, orbit fibres, signs, ranks, quotient, selectors, sample, fields, and family\nthe 96 tables give 3321960 four-part sums; the named-field meet 33 contains the 12-dimensional integer all-signs block, profile [3, 0, 3, 0, 12]\nelapsed 11 s, peak resident 116 MB\nTOTAL: PASS=33 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074551Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_four_part_family_graded_meet_cycle774_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

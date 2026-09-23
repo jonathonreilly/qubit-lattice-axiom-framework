@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_full_symmetry_certified_cycle744_independent_check_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_full_symmetry_certified_cycle744_independent_check_2026_08_05.py",
+ "seed": 50089,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7dbe5e6a",
+ "started_utc": "20260923T075449Z",
+ "elapsed_s": 6.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=11 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "51d69d327fa34554cbec215a7d6a1f8fb972e24e95e0a5e8401bf2440e6231e4",
+ "stdout_tail": "ted_group  tuple closure is transitive of order 384 with point stabilizer two\nPASS independent.point_partition  explicit cell splitting gives 16 singleton and 88 two-element suborbits\nPASS independent.exhaustive_stabilizer_branch  the two discrete branches yield exactly identity and the known stabilizer map\nPASS independent.full_group  orbit-stabilizer upper bound equals the contained generated group\nFAIL independent.primary_contract  primary receipt pins current sources and the independently rebuilt certificate\nPASS hostile.primary_status  a failing primary receipt is rejected\nPASS hostile.stabilizer_size  an enlarged stabilizer cannot satisfy the certificate contract\nPASS hostile.automorphism  a transposed image pair breaks exact incidence preservation\nPASS hostile.omitted_generator  omitting b1 collapses the generated group\nPASS hostile.incidence_identity  one changed incidence bit invalidates the canonical table identity\nper_element: checked -- all 192 columns enter opposite-pivot incidence, group closure, and explicit-cell refinement\nper_site: checked and not executed -- one supplied coordinate four-cube only\nper_mode: checked and not executed -- no field or momentum modes are present\nper_block: checked -- all 15800 rows and all 50 generators are tested\nlattice_wide: checked and not executed -- no multi-cell or continuum claim\nRECEIPT outputs/physical_cell_cutting_full_symmetry_certified_cycle744_independent_check_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=11 FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T075456Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=11 FAIL=2' vs cache 'TOTAL: PASS=13 FAIL=0'"
+  ]
+ }
+}

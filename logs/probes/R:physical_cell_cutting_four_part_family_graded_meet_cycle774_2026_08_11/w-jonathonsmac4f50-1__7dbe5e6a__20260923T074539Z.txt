@@ -1,0 +1,36 @@
+PASS E0 the cell has 2672 unit-determinant subsets, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces in 1975 each, 379200 slots both ways
+PASS E0G exact masks, 24 unit volumes, and 15168 co-occurring pairs with 80 integer normals certify continuous cuttings
+PASS E1 the 192 covers hold 8 pieces each and meet every cutting exactly once, and 8 times 1975 is the cutting count 15800
+PASS E2 the 384 maps close under composition, act transitively on pieces and covers, and freely on the 36864 pairs: 96 orbits of 384
+PASS E3 the 16 flips form a subgroup free on the 192 pieces with 12 orbits; each block has dimension 12, and all 16 stack to 192, both primes
+PASS E4 the 96 disjoint orbit tables partition all pairs and each has row/column fibres [2]; every table has 384 entries
+PASS E5 incidence and twin, each a sum of 4 tables, have entry set [0, 1], row sums 8 and column sums 8; the family has 3321960 members
+PASS E6 mutation witness: repeating one of 4 selected tables changes the entry set to [0, 1, 2] while row sums remain 8
+PASS E7 mutation witness: a sum of 5 distinct tables stays binary and changes the row sum from 8 to 10; four-table selection fixes regularity
+PASS E8 cover-row census in the two binary 8-regular members: incidence 192 of 192, comparison 0 of 192
+PASS E9 every one of the 96 tables annihilates the whole all-signs block: the per-table kernel dimensions there are [12], the block dimension 12
+PASS E10 over F_1000003, the 12-dimensional integer all-signs block lies in the 33-dimensional meet; the complementary contribution is 21
+PASS E11 both members are held by all signed coordinate maps; odd-field character dimensions [3, 3, 6, 6, 12] recompose to 87 at both primes
+PASS E12 the meet profile is [3, 0, 3, 0, 12] by character weight and recomposes to full-space meet 33 over both named prime fields
+PASS E13 over F_1000003, incidence-only block dimensions are [0, 3, 3, 6, 0], totaling 54; with meet 33, 54+33=87
+PASS E14 over F_1000003, all 4 weight-3 blocks have kernel pair 6/6, meet 0, stack rank 12/12; coordinate permutations carry the class
+PASS E15 over F_1000003: weight-1 stack rank 6/12, meet 0; weight-2 meet 3/6; separation is at odd weight
+PASS E16 over F_1000003, swap mutation holds 1/16 flips, block sum 71 differs from kernel 87; incidence block/full 87/87
+PASS E17 every cover has flip stabiliser of order 2, giving 24 orbits of 8; the 12 piece orbits have size 16, and 24 times 8 is 192
+PASS E18 the orbit quotient is 24 by 12 with entry set [0, 2], row sums 8, column sums 16, and 12 distinct rows each occurring 2 times
+PASS E19 halving those rows gives a 12 by 12 zero-one table, 4 regular in rows and columns, of rank 9 at both primes and corank 3
+PASS E20 3 integer vectors, entries [-1, 0, 1], disjoint size-4 supports, partition 12 piece orbits and annihilate both halved quotients
+PASS E21 over F_1000003, twin halved rank/corank 9/3; its and incidence's 3-nullspaces meet in dimension 3 and coincide
+PASS E22 the halved quotients are distinct with 0 of 24 rows equal in place and different row multisets; their named-field null spaces coincide
+PASS E23 the incidence row and the twin row share 0 pieces in every one of the 192 rows
+PASS E24 the difference of the two has entry set [-1, 0, 1] and 3072 nonzero entries, which is 192 times 16
+PASS E25 over F_1000003, difference ranks by weight are [6, 9, 6, 6, 0], class-constant, total 102, zero on the all-signs block
+PASS E26 over F_1000003, the 368-member one-swap sweep has 185 signatures, kernel totals 48..120, all-signs meet entry 12
+PASS E27 over F_1000003, the declared 368-member one-swap sweep has meet totals 12..59; full family size 3321960
+PASS E28 over F_1000003, the sample has 169/366 dimension-6 selected weight-3 kernels transverse to incidence
+PASS E29 over F_1000003, the 460-member sample realises 130 selected weight-3 kernels; 103 have dimension 6, maximum multiplicity 27
+PASS E30 over F_1000003, selected weight-3 kernel multiplicities in the 460-member sample: incidence 13, comparison 2; kernels distinct
+PASS E31 all 13 targeted mutations are rejected: masks, geometry, orbit fibres, signs, ranks, quotient, selectors, sample, fields, and family
+the 96 tables give 3321960 four-part sums; the named-field meet 33 contains the 12-dimensional integer all-signs block, profile [3, 0, 3, 0, 12]
+elapsed 11 s, peak resident 116 MB
+TOTAL: PASS=33 FAIL=0

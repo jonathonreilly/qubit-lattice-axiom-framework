@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_ctx_instantiation_canonical_two_cell_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_ctx_instantiation_canonical_two_cell_2026_07_02.py",
+ "seed": 35447,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a6719703",
+ "started_utc": "20260923T035047Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=23 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e142d0c0e51e9bbfa420da83a778a1ad207d889624d0cf24f912c9315108ffc2",
+ "stdout_tail": "HECK 19: PASS -- automorphism-canonical complement: all 6 permutation conjugations preserve tracelessness\nCHECK 20: PASS -- HS inner product preserved by all 6 permutation conjugations on the sampled set (exact integer) [8 sampled matrices]\n\n------------------------------------------------------------------------------\nKappa boundary: normal form Pi = x_C + kappa*x_S on the instance\n------------------------------------------------------------------------------\nCHECK 21: PASS -- normal form Pi = x_C + kappa*x_S is content-determined/additive and reproduces the count toggle Pi(0)=C, Pi(1)=C+S at kappa=1\nCHECK 22: PASS -- diagonal (equal-cell-content x_C=x_S) ratios are kappa-independent across >=3 kappa values (parent's own K_EW-cancellation structure) [4 kappa values]\nCHECK 23: PASS -- off-diagonal (x_C != x_S) ratio is kappa-sensitive: the honest load-bearing premise (off-diagonal evaluation carries w's content) [3 distinct ratios]\n\n------------------------------------------------------------------------------\nBoundary greps on the generated note (firewall language)\n------------------------------------------------------------------------------\nCHECK 24: FAIL -- note carries firewall phrases (note file present) [note not found at CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md]\n\n==============================================================================\nTOTAL: PASS=23 FAIL=1\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T035047Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=23 FAIL=1' vs cache 'TOTAL: PASS=24 FAIL=0'"
+  ]
+ }
+}

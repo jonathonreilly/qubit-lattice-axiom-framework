@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle330_symmetric_edge_sign_translator_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle330_symmetric_edge_sign_translator_2026_07_25.py",
+ "seed": 35447,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a6719703",
+ "started_utc": "20260923T035047Z",
+ "elapsed_s": 1115.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "530f38bda45692493c801c2301b0ac60006a45caf6520007c40f635e3bfe593a",
+ "stdout_tail": "branch_phase_residual_failures\": 0, \"edge_cells\": [0, 5], \"forward_gram_raw_maximum\": 7.771561172376096e-16, \"forward_nonzeros\": 3964, \"forward_reverse_row_mismatches\": 0, \"logical_block_intertwiner_raw_maxima\": {\"FSWAP\": 0.0, \"coin\": 0.0, \"contact\": 0.0, \"full_update\": 0.0}, \"logical_columns\": 79, \"mass\": {\"Cycle219\": 0.4534056541748851, \"one_particle_eigen_residual\": 3.8571762755144336e-16, \"two_cell\": 0.4534056541748851}, \"one_particle_negative_terms\": 0, \"physical_rows\": 3964, \"reverse_gram_raw_maximum\": 7.771561172376096e-16, \"reverse_nonzeros\": 3964, \"row_pattern_conflicts\": 0, \"row_sign_conflicts\": 0, \"translator_intertwiner_raw_maximum\": 0.0, \"translator_involution_raw_maximum\": 0.0}, {\"L\": 6, \"branch_phase_residual_failures\": 0, \"edge_cells\": [0, 6], \"forward_gram_raw_maximum\": 7.771561172376096e-16, \"forward_nonzeros\": 3964, \"forward_reverse_row_mismatches\": 0, \"logical_block_intertwiner_raw_maxima\": {\"FSWAP\": 0.0, \"coin\": 0.0, \"contact\": 0.0, \"full_update\": 0.0}, \"logical_columns\": 79, \"mass\": {\"Cycle219\": 0.4534056541748851, \"one_particle_eigen_residual\": 3.8571762755144336e-16, \"two_cell\": 0.4534056541748851}, \"one_particle_negative_terms\": 0, \"physical_rows\": 3964, \"reverse_gram_raw_maximum\": 7.771561172376096e-16, \"reverse_nonzeros\": 3964, \"row_pattern_conflicts\": 0, \"row_sign_conflicts\": 0, \"translator_intertwiner_raw_maximum\": 0.0, \"translator_involution_raw_maximum\": 0.0}]}\nRESULT SYMMETRIC_LOCAL_RAY_SIGN_TRANSLATOR_CLOSES_ORDER_SIGN_PHYSICAL_SYNTHESIS_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T040923Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

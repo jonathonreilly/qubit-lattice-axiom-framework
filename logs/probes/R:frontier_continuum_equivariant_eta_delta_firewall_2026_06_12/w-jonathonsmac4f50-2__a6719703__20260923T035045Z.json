@@ -1,0 +1,39 @@
+{
+ "task": "R:frontier_continuum_equivariant_eta_delta_firewall_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_continuum_equivariant_eta_delta_firewall_2026_06_12.py",
+ "seed": 35445,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a6719703",
+ "started_utc": "20260923T035045Z",
+ "elapsed_s": 0.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": [
+   "PASS=23 FAIL=1",
+   "PASS=23 FAIL=1"
+  ],
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e76573d6bb253f2c8e5d46ace4888a70ef49e6d14cc52e30ad416d163493b8a4",
+ "stdout_tail": "source\n  [PASS] ANTI-CIRCULARITY C1 code path takes omega/weights, not phase input  (lefschetz_args=('root',), cotangent_args=())\n\nPart C3: operator family\n  [PASS] C3a D(delta) eigenvalue branches cross zero and are nontrivial  (zero_crossings=12, branch_range=3.999990)\n  [PASS] C3b spectral flow over one phase period is an integer and equals 0  (spectral_flow=0)\n  [PASS] C3c eta(delta) is flat over the scan  (eta_range=0)\n\nPart C4: independence assembly\n  [PASS] C4a nearest zero-crossing does not match Part-C1 value  (topological_eta=0.222222222222, nearest_zero=0.420000000000, distance=0.197778)\n  [PASS] C4b analytic index, topological eta, and free mass phase are distinct  (analytic_index=0, topological_eta=2/9, mass_phase_free=True, delta_forced_by_eta=False)\n  [PASS] C4c note states route boundary without irreducibility/no-go posture\n\nB-checks: note and dependencies\n  [FAIL] B1 fixed-locus dependency carries L_3(1,2)=2/9 content\n  [PASS] B2 substep2 dependency carries D_KD Kahler-Dirac content\n  [PASS] B3 minimal axioms dependency is present and status-bounded as meta\n  [PASS] B4 firewall wording is present and terminal no-go wording is absent\n  [PASS] B5 malformed no-go gate is absent\n  [PASS] B6 anti-circularity confirmation sentence is present\n  [PASS] B7 markdown link inventory is exactly three  (count=3)\n  [PASS] B8 context inventory is backticked\n  [PASS] B9 status lines and No-promotion statement are present\n\nSUMMARY: PASS=23 FAIL=1 TOTAL=24\nTOTAL PASS=23 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T035046Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=23 FAIL=1' vs cache 'PASS=24 FAIL=0'"
+  ]
+ }
+}

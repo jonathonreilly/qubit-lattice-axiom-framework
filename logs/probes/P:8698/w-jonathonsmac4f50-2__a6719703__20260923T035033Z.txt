@@ -1,0 +1,4 @@
+PR #8698: docs(campaign): positive static rules select the Coulomb measure
+branch claude/coulomb-measure-selection-20260922 (base main)
+runners in the PR: 1
+== scripts/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.py: rc=0 PASS=6 FAIL=0

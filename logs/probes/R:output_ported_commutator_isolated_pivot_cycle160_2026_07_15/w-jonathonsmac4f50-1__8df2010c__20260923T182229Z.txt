@@ -1,0 +1,42 @@
+AUTHORITY AND CANDIDATE LAW
+FAIL review note exists :: 
+PASS eight canonical rows copy four case roles through straight and turn cells :: Counter({5: 8})
+PASS 192 new raw rows are disjoint and yield a deterministic 89,708-row law :: (192, 89708)
+PASS no foundation or axiom surface is part of the Cycle 160 delta :: compiler-only candidate rows
+
+CASE-ROLE ISOLATION CABLE
+PASS all 96 case-role fork/orientation graphs are exact :: ({121}, [])
+PASS deleting the case source suppresses both isolated branches :: []
+
+OUTPUT-PORTED AND/XOR COMMUTATOR
+PASS all 256 physical eight-input graphs produce exact four-product parity :: (Counter({(3217, 4, 14954, 1259): 256}), [])
+PASS the spacious commutator survives all 24 proper-cubic orientations :: (Counter({(1260, 4, 14954, 1259, 0): 24}), [])
+PASS deleting any one literal parent suppresses exactly its AND product :: []
+
+ISOLATED PIVOT CONTROLLER
+PASS all four cases pass in all 24 orientations through isolated lanes :: (Counter({((0, 0), 624, 2, 7504, 623): 24, ((0, 1), 624, 2, 7504, 623): 24, ((1, 0), 624, 2, 7504, 623): 24, ((1, 1), 624, 2, 7504, 623): 24}), [])
+PASS selector inputs, case role, and lane selectors are absent initially :: []
+
+PREDECESSOR COEXISTENCE
+PASS the complete Cycle-159 smoke survives exactly :: (True, (2957, 23564, 12, 33736, 2956))
+PASS all 24 Cycle-159 schedule proofs survive the new rows :: []
+PASS all 768 two-port row-fork graphs survive :: []
+PASS all 1,024 Cycle-156 schedule proofs survive :: (Counter({5006: 1024}), [])
+PASS all 54,000 Cycle-152 router graphs survive :: []
+PASS all 86,640 prior unified histories survive :: []
+PASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}
+
+SCOPE
+FAIL note contains: output-ported commutator and isolated pivot controller :: 
+FAIL note contains: eight canonical case-role cable rows :: 
+FAIL note contains: 89,708 :: 
+FAIL note contains: 256 :: 
+FAIL note contains: 96/96 :: 
+FAIL note contains: supplied product literals :: 
+FAIL note contains: does not derive occurrence or equal weights :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 17 FAIL 10
+RESULT FAIL

@@ -1,0 +1,32 @@
+{
+ "task": "R:output_ported_commutator_isolated_pivot_cycle160_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "output",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/output_ported_commutator_isolated_pivot_cycle160_2026_07_15.py",
+ "seed": 87749,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8df2010c",
+ "started_utc": "20260923T182229Z",
+ "elapsed_s": 850.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "655aca2def79785e42eb31c8e30b1b4c3473cc8ddc243e63e5652d0ac97a223e",
+ "stdout_tail": "ns :: (Counter({(1260, 4, 14954, 1259, 0): 24}), [])\nPASS deleting any one literal parent suppresses exactly its AND product :: []\n\nISOLATED PIVOT CONTROLLER\nPASS all four cases pass in all 24 orientations through isolated lanes :: (Counter({((0, 0), 624, 2, 7504, 623): 24, ((0, 1), 624, 2, 7504, 623): 24, ((1, 0), 624, 2, 7504, 623): 24, ((1, 1), 624, 2, 7504, 623): 24}), [])\nPASS selector inputs, case role, and lane selectors are absent initially :: []\n\nPREDECESSOR COEXISTENCE\nPASS the complete Cycle-159 smoke survives exactly :: (True, (2957, 23564, 12, 33736, 2956))\nPASS all 24 Cycle-159 schedule proofs survive the new rows :: []\nPASS all 768 two-port row-fork graphs survive :: []\nPASS all 1,024 Cycle-156 schedule proofs survive :: (Counter({5006: 1024}), [])\nPASS all 54,000 Cycle-152 router graphs survive :: []\nPASS all 86,640 prior unified histories survive :: []\nPASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: output-ported commutator and isolated pivot controller :: \nFAIL note contains: eight canonical case-role cable rows :: \nFAIL note contains: 89,708 :: \nFAIL note contains: 256 :: \nFAIL note contains: 96/96 :: \nFAIL note contains: supplied product literals :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 17 FAIL 10\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T183639Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

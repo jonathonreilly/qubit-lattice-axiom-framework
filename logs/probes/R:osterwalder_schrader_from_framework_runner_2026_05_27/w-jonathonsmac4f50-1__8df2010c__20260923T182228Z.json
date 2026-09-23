@@ -1,0 +1,36 @@
+{
+ "task": "R:osterwalder_schrader_from_framework_runner_2026_05_27",
+ "type": "runner-reexecution",
+ "lane": "osterwalder",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py",
+ "seed": 87748,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8df2010c",
+ "started_utc": "20260923T182228Z",
+ "elapsed_s": 0.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS = 75    FAIL = 1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fdd8125c81ea2161ece9cd1aa2a88d63af7d4e76d0b342093dea09b6b68ed7a7",
+ "stdout_tail": "----\n  [PASS (A)] (Composition) (C-RP) companion exists: AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)\n  [PASS (A)] (Composition) (C-SC) companion exists: AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)\n  [PASS (A)] (Composition) (C-Sc) companion exists: AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md  (docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)\n  [FAIL (A)] (Composition) (C-Sc) Step 1 contains the spectral-expansion Wick-rotation  (presence of phrase 'spectral expansion' and 'Wick-rotation' in (C-Sc))\n\n----------------------------------------------------------------------------------------\nPart 11: Note + claim metadata sanity\n----------------------------------------------------------------------------------------\n  [PASS (A)] Source note exists: docs/OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md\n  [PASS (A)] Note declares Type: bounded_theorem\n  [PASS (A)] Note declares Status authority: independent audit lane only\n  [PASS (A)] Note contains source-note proposal disclaimer\n  [PASS (A)] Note records the P2 sign-epsilon lane boundary\n\n========================================================================================\nPASS = 75    FAIL = 1\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T182229Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS = 75    FAIL = 1' vs cache 'PASS = 76    FAIL = 0'"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:kcpt_cp_completion_under_extended_group_2026_07_20",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_cp_completion_under_extended_group_2026_07_20.py",
+ "seed": 72206,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6d48cf0",
+ "started_utc": "20260923T140326Z",
+ "elapsed_s": 24.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=17 FAIL=3",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9b8a89c8669b0d93aafbdcd94300f59bec735918233dc6043ce0516a8d22e60c",
+ "stdout_tail": " (two distinct G_amb-irreps) / != 1. G_amb-commutant 4 (M_2, same content) vs H-commutant 2 (split by the coset)\nPASS G15 - CHARACTER CROSS-CHECK (opposite coset character = chi_sgn): all 768 G_amb character pairs are EQUAL (max complex gap 4.0e-15<1e-6); all 768 coset pairs are OPPOSITE (max complex sum 5.2e-15<1e-6); all half-characters are REAL (max |Im| 2.4e-15<1e-6). One nonzero coset witness has (chi_a,chi_b)=(-2.8284,+2.8284) with |chi_a-chi_b|=5.657>1e-3 -- hence 12^- = 12^+ (x) chi_sgn. [observed value +-2*sqrt(2), NOT gated -- only equality/opposition, nonzero distinction, and reality]\nPASS G-MEM - MEMORY-BUDGET: small deterministic greedy generating sets close exactly -- G_amb 4 gens -> 768==768, H 5 gens -> 1536==1536 (1<len<=16/20, actual printed, never called minimal); commutant kron stacks use these generators, never a per-element stack over 768/1536 (OOM-avoiding, peak < ~3 GB)\nPASS G-PIN-U9 - SOURCE PIN Unit 9: common-sign-orbit note contains `S_eps J_full S_eps = -J_full` (the sign reversal used by G5/G9)\nFAIL G-PIN-U12 - SOURCE PIN Unit 12: holomorphic-rep note contains `4 + 4 + 6 + 6 + 12 = 32` (the decomposition that CP-completes)\nFAIL G-PIN-U13 - SOURCE PIN Unit 13: reality/CP-census note contains `FS = (0, 0, 0, 0, +1)` (rank-12 the unique self-conjugate)\nFAIL G-PIN-SELF - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 0==3 (Unit12 0==1, Unit13 0==1, Unit9 0==1); Unit8/10/11 linked 0/0/0==0/0/0 (backticked only, never `](...)`)\nTOTAL: PASS=17 FAIL=3\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T140350Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=17 FAIL=3' vs cache 'TOTAL: PASS=20 FAIL=0'"
+  ]
+ }
+}

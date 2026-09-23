@@ -1,0 +1,32 @@
+{
+ "task": "R:joint_endpoint_bdh_rebind_cycle63_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "joint",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/joint_endpoint_bdh_rebind_cycle63_2026_07_14.py",
+ "seed": 72202,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6d48cf0",
+ "started_utc": "20260923T140322Z",
+ "elapsed_s": 4.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d9ea1cae6650e80cf347c1b1cd46446985e01b02512a8effcf30d74c64b8c9dc",
+ "stdout_tail": "cedes B5\nPASS C11 H5 never precedes D5\nPASS C12 complete next header implies every B and D record\nPASS C13 endpoint orders genuinely commute\nPASS C14 chronology is explicitly not strict B<D<H\n\n===============================================================================\nD. Fresh translated front\n===============================================================================\nPASS D01 c is the next trigger and retains Z_C\nPASS D02 six final H writes are exactly the translated next header\nPASS D03 next q/a/b/c are all open :: q'=(3, -1, 0), data'=((4, 0, 0), (5, 0, 0), (6, 0, 0))\nPASS D04 translated Cycle-14 preparation interface is ready\nPASS D05 generated auxiliaries avoid the fresh next-only block\nPASS D06 terminal decodes exactly current and translated programs :: {Program(trigger=(0, 0, 0), forward=(1, 0, 0), transverse=(0, 1, 0)), Program(trigger=(3, 0, 0), forward=(1, 0, 0), transverse=(0, 1, 0))}\n\n===============================================================================\nE. Scope contract\n===============================================================================\nFAIL E01 note states authority none\nFAIL E02 note states conditional prefix\nFAIL E03 note distinguishes interleaving from strict chronology\nFAIL E04 note makes no axiom claim\nFAIL E05 note names phase-prefix non-closure\n\n===============================================================================\nSUMMARY\n===============================================================================\nPASS=42 FAIL=6\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T140326Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

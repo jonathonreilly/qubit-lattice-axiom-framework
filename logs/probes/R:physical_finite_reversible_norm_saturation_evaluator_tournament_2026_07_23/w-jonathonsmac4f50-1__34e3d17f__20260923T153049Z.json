@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23.py",
+ "seed": 77449,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "34e3d17f",
+ "started_utc": "20260923T153049Z",
+ "elapsed_s": 2.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "02421d9f9adbe6499f94152eb4ecd083e8b793333616ab91a340fc7d7a2058c0",
+ "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23.py\", line 360, in <module>\n    LABEL_PERMS = [extract_label_perm(f) for f in FRAMES]\n                   ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23.py\", line 351, in extract_label_perm\n    mat = c576.frame_sector_permutation(frame)  # (1 + 24*15) square permutation\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22' has no attribute 'frame_sector_permutation'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T153052Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

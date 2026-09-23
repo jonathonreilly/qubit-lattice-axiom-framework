@@ -1,0 +1,10 @@
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23.py", line 360, in <module>
+    LABEL_PERMS = [extract_label_perm(f) for f in FRAMES]
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23.py", line 351, in extract_label_perm
+    mat = c576.frame_sector_permutation(frame)  # (1 + 24*15) square permutation
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22' has no attribute 'frame_sector_permutation'

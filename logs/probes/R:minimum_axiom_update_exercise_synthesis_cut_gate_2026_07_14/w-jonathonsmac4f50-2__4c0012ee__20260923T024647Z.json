@@ -1,0 +1,38 @@
+{
+ "task": "R:minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "minimum",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py",
+ "seed": 31607,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4c0012ee",
+ "started_utc": "20260923T024647Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "528272313992de587e5ef60c38c56a0039080a76a171672e8cf8efee6ea3e99e",
+ "stdout_tail": "rcise_synthesis_cut_gate_2026_07_14.py\", line 584, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py\", line 568, in main\n    source_and_authority_contract()\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py\", line 216, in source_and_authority_contract\n    note = normalized(NOTE)\n           ^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py\", line 198, in normalized\n    text = path.read_text(encoding=\"utf-8\").lower()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/MINIMUM_AXIOM_UPDATE_EXERCISE_SYNTHESIS_AND_CUT_GATE_NOTE_2026-07-14.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024647Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/MINIMUM_AXIOM_UPDATE_EXERCISE_SYNTHESIS_AND_CUT_GATE_NOTE_2026-07-14.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024647Z"
+ }
+}

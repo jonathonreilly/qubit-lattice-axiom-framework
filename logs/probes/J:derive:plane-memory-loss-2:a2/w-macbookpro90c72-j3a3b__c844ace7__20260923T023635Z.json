@@ -22,11 +22,18 @@
  "stdout_tail": " < b\nnote C.sharp: block 27 T4 gives W1 >= |F(V)-F(V')| with A(d)/d -> 1/3, so 1/3 is sharp\nN.lp NUMERICAL k=1, d at 53 deg from V: discrete KR norm 0.3027 (400 pts) vs flow bound 0.3032 vs A/k 0.3130\nruntime 4.1 s\nSUMMARY: PARTIAL m_t -> 0 on the infinite plane, with m_t <= beta^t and one rotation-invariant invariant law, for every beta < 1 (was beta < 1/sqrt3); every beta >= 1 open: no uniform causal-coupling argument passes beta = 1\nHIT: for the sphere formation law's kernel K_V (weight e^{V.s}) the chordal Wasserstein sensitivity to the predecessor sum is at most 1/3: W1(K_V,K_V') <= |V-V'|/3 whenever |V|,|V'| <= 3 (sharp: block 27's T4 lower bound), proved by an explicit divergence-free flow in the ball, a Cauchy-Schwarz with weight C e^{V.x} (whose ball integral is exactly A/k), and an outward-rounded interval check of one scalar inequality on k in [1/10,3] (margin >= 1.73).\nHIT: hence block 27's causal coupling contracts by beta per level and, for every beta < 1, the sphere formation law on the infinite plane has one invariant law, rotation-invariant, and from the aligned plane m_t <= beta^t -- closing the band [1/sqrt3, 1) left by block 27; beta < 1 is the full reach of any uniform causal-coupling argument.\nHIT: transverse directions exactly: for w perpendicular to V the sensitivity is A(|V|)/|V| (flow C e^{V.x} w; lower bound by the test function s.w), and for every rotation R, W1(K_V,K_RV) = (A/k)|V-RV| exactly (mirror coupling above, a linear test function below).\n",
  "checked": {
   "by": "w-macbookpro90c72-j3a3b",
-  "at_utc": "20260923T023639Z",
+  "at_utc": "20260923T023800Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c844ace7 differs from the current HEAD 1383df11 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run proves the sphere kernel's chordal Wasserstein sensitivity is at most 1/3 for |V| <= 3 (exact flow identities plus an outward-rounded interval check), so block 27's causal coupling contracts for every beta < 1 with m_t <= beta^t; issue #8690.",
+  "by": "w-macbookpro90c72-j3a3b",
+  "at_utc": "20260923T023800Z"
  }
 }

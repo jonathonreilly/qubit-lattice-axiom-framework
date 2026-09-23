@@ -1,0 +1,60 @@
+PASS A0 |O_h| = 48 and |O| = 24
+PASS A1 covariant hermitian nearest-neighbour generators: real dimension 3 (block 54 T1(a))
+PASS A1 the family A_0 = a0, A_{+-e_j} = a -+ (i beta/2) sigma_j solves every condition
+PASS A1 and spans the solution space
+PASS A2 linear coin maps commuting with the 24 lifts: only scalars (dim 2 real = C)
+PASS A2 antilinear coin maps V K commuting with the 24 lifts: only multiples of sigma_2
+PASS A2 site-sign patterns (-1)^{n.x} kept by the 24 rotations: n = 000 and 111 only
+PASS A2 symbol of the family = a0 + 2a sum cos k + beta sum sigma_j sin k
+     Pi (linear)                  a0: keeps  a: keeps  beta: breaks
+     eps Pi (linear)              a0: keeps  a: breaks beta: keeps
+     Theta Pi (antilinear)        a0: breaks a: breaks beta: keeps
+     Theta eps Pi (antilinear)    a0: breaks a: keeps  beta: breaks
+PASS A2 parity table: Pi keeps a0,a breaks beta; eps Pi keeps a0,beta breaks a; Theta Pi keeps beta breaks a0,a; Theta eps Pi keeps a breaks a0,beta
+PASS A3 gamma* is a closed 8-step loop
+     tau(gamma*)      = (256*a**8 + 256*a**6*beta**2 + 32*a**4*beta**4 - 64*a**3*beta**5 - 32*a**2*beta**6 + beta**8)/128
+     tau(-gamma*)     = (256*a**8 + 256*a**6*beta**2 + 32*a**4*beta**4 + 64*a**3*beta**5 - 32*a**2*beta**6 + beta**8)/128
+PASS A3 tau(gamma*) - tau(-gamma*) = -a^3 beta^5
+PASS A3 loop traces real (tau = conj tau) for real a, beta
+PASS A3 tau(R gamma*) = tau(gamma*) for all 24 rotations (so every improper image has tau = tau(-gamma*))
+PASS A3 no closed 6-step loop (1860 walks) has a mirror-odd trace at beta/a = 1, 2, 3 (hence none for any a, beta)
+     closed 8-step walks: 44730, with a mirror-odd trace at a=1, beta=2: 2688
+PASS A3 some closed 8-step walks are chiral (odd trace)
+     a=1 beta=2: tr((2wH)^L) differ from the mirror field at L = [8]; rotated field equal: True
+     a=0 beta=2: tr((2wH)^L) differ from the mirror field at L = []; rotated field equal: True
+     a=1 beta=0: tr((2wH)^L) differ from the mirror field at L = []; rotated field equal: True
+PASS A4 rotated rate field: all eight moments equal (covariance control)
+PASS A4 a=0 (the walk) and beta=0: moments of the field and of its mirror image equal
+PASS A4 a*beta != 0: moments equal for L <= 7 and differ at L = 8
+PASS A4 all moments real (imaginary parts zero)
+     a=1 beta=2, L=8: tr((2wH)^8) = 4083834945536, mirror field 4082722668544, difference 1112276992
+PASS A5 -(i/2)[theta.sigma, sum_j (T_j + T_j^dag)] = - sum_j S_j[(d_j theta).sigma] (coin-vector hop, all three coin components)
+PASS A5 the completion is hermitian
+PASS A5 block 65 T1 reproduced in these conventions (frame rotation + twist hop)
+PASS A5 Theta Pi: completed scalar hop -> + (completed scalar hop in the mirror twist): odd relative to the walk
+PASS A6 Theta Pi: completed walk -> - (completed walk in the mirror twist)
+PASS A6 Theta Pi: clocked walk phi W phi -> -(phi' W phi'), phi' the mirror clock field
+PASS A5 Theta Pi: clocked scalar hop phi C phi -> + phi' C phi'
+PASS A6 Theta Pi: frame walk H[E] -> -H[E'], E'(x) = E(-x)
+     T (one derivative, linear)         O-invariants 1, O_h-invariants 0, parity-odd 1
+     T T (two derivatives, quadratic)   O-invariants 4, O_h-invariants 4, parity-odd 0
+     dT (two derivatives, linear)       O-invariants 1, O_h-invariants 1, parity-odd 0
+     d theta, u d theta, (du) theta     O-invariants 1, O_h-invariants 0, parity-odd 1
+     d d theta                          O-invariants 0, O_h-invariants 0, parity-odd 0
+     theta theta                        O-invariants 1, O_h-invariants 1, parity-odd 0
+     theta d theta                      O-invariants 1, O_h-invariants 0, parity-odd 1
+     (d theta)(d theta)                 O-invariants 4, O_h-invariants 4, parity-odd 0
+     theta d d theta                    O-invariants 3, O_h-invariants 3, parity-odd 0
+     (du)(d theta)                      O-invariants 1, O_h-invariants 1, parity-odd 0
+     u d d theta                        O-invariants 0, O_h-invariants 0, parity-odd 0
+PASS B1 frame class: parity-odd invariants at <= 2 derivatives: exactly one (linear in T); none quadratic, none in dT
+PASS B1 T T: 4 invariants under O (one more than SO(3)'s 3), all even
+PASS B1 separate rotation field: odd invariants = div theta, u div theta / grad u.theta, theta.curl theta; none at two derivatives
+PASS B1 the invariant is eps.T = eps_{jab} T^j_{ab}: kept by the 24, reversed by every improper element
+PASS B2 at zero strain a coin rotation theta(x) changes eps.T by -4 div theta (block 65 T4)
+PASS B2 ... and changes the c4 density d_b V_b by 0, det e by tr(B) = 0
+PASS B2 eps.T vanishes at first order for every symmetric strain
+PASS C one species on the top level +6|a|; its sense is sign(a beta); the mirror image reverses it
+
+SUMMARY: PARTIAL generator: the scalar hop a is the one term of the 24-covariant nearest-neighbour family that every walk-keeping inversion reverses; it survives local-tick timing and blindness (conjugation completion); for a*beta != 0 no inversion composed with any site-local unitary or antiunitary is a symmetry (chiral 8-loop: tau - tau_mirror = -a^3 beta^5; a chiral rate field and its mirror image differ first at tr((wH)^8)); field energy: the odd sector at <= 2 derivatives under the 24 is eps.T alone (plus theta-terms if the rotation is a separate field) and blindness removes all of it
+HIT: a parity-odd (Theta-Pi-odd) term survives per-tick timing and blindness: block 54's scalar hop a, with blind completion -a sum_j S_j[(d_j theta).sigma]; for a*beta != 0 it tells the two mirror classes apart (exact chiral-loop invariant -a^3 beta^5, exact mirror-field spectral moments); in the field energy no parity-odd term survives blindness

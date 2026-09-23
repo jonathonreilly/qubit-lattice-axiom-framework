@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_koide_record_orbit_count_does_not_select_r_half_2026_06_07",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_koide_record_orbit_count_does_not_select_r_half_2026_06_07.py",
+ "seed": 39765,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eab82c95",
+ "started_utc": "20260923T050245Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "366e6f2bd95f532b9b95519d3b0ada725380138b83e0ac0b14877fddb70b234f",
+ "stdout_tail": "lattice positions, and every quantity the runner pulls out of it is either a whole-matrix norm or a trace against a block projector, so not one assertion in the file is attached to an individual axis.\n  per_mode: the three C3 characters 1, w = exp(2i*pi/3) and its conjugate are listed individually and then collapsed under K/CPT into exactly two conjugation orbits, which is the (1,1) count the refuted re-walk wants; Part C answers it at the same granularity by producing three distinct real eigenvalues of the circulant, the largest being the exact trivial-character value a + 2*Re(b) = 2.5, separated by more than the file's 1e-6 distinctness gap.\n  per_block: rank-1 and rank-2 projectors P_s and P_d are traced against rho = eye(3)/3 and return the exact block weights 1/3 and 2/3 to within 1e-9, i.e. the DIMENSION count (1,2) giving r = 1. What this runner actually establishes is that its per_mode answer and its per_block answer disagree - orbit multiplicity says (1,1) and r = 1/2, block dimension says (1,2) and r = 1 - and neither granularity is a weighting rule, which is why the atom gets relocated to dynamics.\n  lattice_wide: checked and not executed - the largest object anywhere in the file is 3x3 and the measure-neutrality argument in Part E runs on a single 2x2 SO(2) matrix at th = 0.7; there is no extent, no limit and no thermodynamic statement, and the runner's own verdict moves the residual onto the gated staggered-Dirac operator rather than onto any whole-system count.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050245Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '  lattice_wide: checked and not executed - the largest object anywhere in the fi' vs cache 'TOTAL: 9 PASS / 0 FAIL'",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

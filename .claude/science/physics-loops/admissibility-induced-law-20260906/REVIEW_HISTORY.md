@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-23 block 90 — author checks (not a review PASS)
 Written lens pass by the supervisor (Claude Opus 5.5). The probes' route re-derived step by step; non-reversibility of the level-ordered past by the cycle criterion (first draft only tested the candidate law); the bilayer's spectrum checked eigenvector by eigenvector (first draft asserted it); the layer-halves minor on the cube and the torus; three overclaims removed from the note (two dimensions, first direction, five per cent). Census 9/9 in family.
+
+## 2026-09-23 block 90 — corrigendum: block 36 prior art and status (supervisor, Claude Opus 5.5)
+Block 36 (#8507) is prior art and found the per-tick clause excluded by the memo as written; the note now says so. Text-only.

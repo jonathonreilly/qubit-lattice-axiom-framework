@@ -151,58 +151,21 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
-    'gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py'],
-    'temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16': ['scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py', 'scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py', 'scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py'],
-
-    'hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15': ['scripts/hybrid_curvature_check_2026_09_15.py', 'scripts/integrated_rate_check_2026_09_15.py'],
-    'signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15': ['scripts/cofactor_cyclic_check_2026_09_15.py', 'scripts/contact_register_check_2026_09_15.py', 'scripts/cut_completion_check_2026_09_15.py', 'scripts/determinant_exclusion_check_2026_09_15.py', 'scripts/forest_interpolation_check_2026_09_15.py', 'scripts/gaussian_cycle_check_2026_09_15.py', 'scripts/graph_source_check_2026_09_15.py', 'scripts/hard_core_cycle_check_2026_09_15.py', 'scripts/operator_source_check_2026_09_15.py', 'scripts/partition_exclusion_check_2026_09_15.py'],
-    'supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15': ['scripts/general_order_check_2026_09_15.py'],
-    'cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15': ['scripts/cofactor_cyclic_check_2026_09_15.py', 'scripts/contact_register_check_2026_09_15.py', 'scripts/determinant_exclusion_check_2026_09_15.py', 'scripts/forest_interpolation_check_2026_09_15.py', 'scripts/tree_count_check_2026_09_15.py'],
-    'supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15': ['scripts/inverse_corner_support_check_2026_09_15.py'],
-    'local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15': ['scripts/polarized_word_check_2026_09_15.py'],
-    'finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15': ['scripts/cyclic_equilibrium_check_2026_09_15.py'],
-    'fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15': ['scripts/review_harmonic_metric_check_2026_09_15.py'],
-    'iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15': ['scripts/slow_fast_check_2026_09_15.py'],
-
-    'gauge_wilson_weak_window_quantitative_bounds_and_haar_contact_fdd_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py'],
-
-    'rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16': ['scripts/rotor_tree_slater_dressing_check_2026_09_16.py'],
-    'rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16': ['scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py'],
-    'rotor_joint_bounded_neutral_matter_dynamics_bounded_theorem_note_2026-09-16': ['scripts/rotor_joint_gauge_propagation_check_2026_09_16.py'],
-
-    'rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16': ['scripts/rotor_gauss_charged_ring_compression_2026_09_16.py'],
-    'rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16': ['scripts/rotor_gauss_affine_theta_check_2026_09_16.py'],
-    'gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py'],
-    'gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py'],
-    'gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py'],
-    'gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py'],
-    "gauge_wilson_cube_slab_first_spectral_corrections_bounded_theorem_note_2026-09-07": [
-        "scripts/gauge_wilson_cube_slab_first_ground_correction_independent_check_2026_09_07.py",
+    "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": ["scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"],
+    "gauge_wilson_uniform_weak_continuum_correlation_boundary_bounded_theorem_note_2026-09-07": [
+        "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
     ],
-    'native_gauge_transfer_dimension_divided_wilson_second_order_bounded_theorem_note_2026-09-07': ['scripts/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py'],
-    'native_edge_record_z4_flux_bridge_capacity_bounded_theorem_note_2026-09-07': ['scripts/native_edge_record_z4_flux_five_event_check_2026_09_07.py'],
-    'admissibility_d4_frozen_h2_common_action_source_image_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_frozen_h2_common_action_source_image_2026_08_29.py'],
-    'admissibility_d4_common_spin2_source_module_six_bit_capacity_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_common_spin2_source_module_2026_08_29.py'],
-    'admissibility_d4_quantum_direction_corner_common_source_owner_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_quantum_quadrupole_common_source_owner_2026_08_29.py'],
-    'admissibility_d4_joint_action_quadrupole_six_m2_carrier_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_joint_action_quadrupole_six_m2_carrier_2026_08_29.py'],
-    'admissibility_d4_record_past_nondisturbing_causal_preparation_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_record_past_nondisturbing_causal_preparation_gate_2026_08_29.py'],
-    "admissibility_finite_state_markov_completion_bounded_theorem_note_2026-08-14": [
-        "scripts/frontier_admissibility_finite_state_markov_completion_independent_check_2026_09_09.py",
+    "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07": [
+        "scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py",
     ],
-    'ac_reta_c3_source_response_spectral_identity_type_repair_bounded_theorem_note_2026-09-02': [
-        'scripts/reta_c3_source_response_independent_check_2026_09_02.py',
-        'scripts/reta_c3_source_response_mutation_check_2026_09_02.py',
+    "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07": [
+        "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
     ],
-    'cubic_repulsive_flux_fixed_half_and_canonical_twists_bounded_theorem_note_2026-09-04': ['scripts/cubic_repulsive_flux_fixed_half_independent_check_2026_09_04.py'],
-    'local_record_quench_finite_energy_and_ground_overlap_bounded_theorem_note_2026-09-04': ['scripts/local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04.py'],
-    'repeated_record_matter_and_energy_conserving_apparatus_bounded_theorem_note_2026-09-05': ['scripts/repeated_record_matter_energy_apparatus_independent_check_2026_09_05.py'],
-    'multiplicity_freeness_terminal_clause_cycle890_bounded_theorem_note_2026-07-28': ['scripts/frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28.py'],
-    'gbw1b_priced_quadratic_gauge_break_cycle892_bounded_theorem_note_2026-07-28': ['scripts/frontier_cycle892_gbw1b_independent_check_2026_07_28.py', 'scripts/frontier_cycle887_window_freedom_2026_07_28.py', 'scripts/multiplicity_cycle885_configuration_fixture_2026_09_08.py'],
-    'mixed_degree_reaches_not_selects_cycle904_bounded_theorem_note_2026-07-28': ['scripts/frontier_cycle904_mixed_degree_independent_check_2026_07_28.py'],
-    'third_pair_shadow_derived_rc3_open_cycle930_bounded_theorem_note_2026-07-28': ['scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py'],
-    "admissibility_sharp_qubit_record_writer_orientation_axiom_decision_bounded_theorem_note_2026-09-01": [
-        "scripts/admissibility_random_axis_m2_matter_repeat_selector_local_compiler_2026_09_01.py",
-        "scripts/admissibility_block36_specific_nn_active_cut_record_front_2026_09_01.py",
+    "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07": [
+        "scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py",
+    ],
+    "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07": [
+        "scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py",
     ],
     "gauge_wilson_cube_slab_character_mixing_bounded_theorem_note_2026-09-07": [
         "scripts/gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.py",

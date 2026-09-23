@@ -1,0 +1,34 @@
+{
+ "task": "R:gauge_wilson_cube_slab_first_ground_correction_independent_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_wilson_cube_slab_first_ground_correction_independent_check_2026_09_07.py",
+ "seed": 39293,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e36d0d0c",
+ "started_utc": "20260923T045453Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2a841044d5657f600f6250c83352236aca0a91ddc2c9aefc56e3a45341dfb923",
+ "stdout_tail": "PASS independent adapted-tree ground correction; TOTAL=8\nper_element: exact SU3 color contractions\nper_site: 16 vertices in the declared finite cube slab\nper_mode: 17 chord variables with 8 colors\nper_block: 22 weighted face words with two marked sources\nlattice_wide: one finite supplied cube slab\nk0={'rational': '126839623/20482880', 'sqrt55': '27961081/27931200', 'float_diagnostic': 13.61660254061718}\nresources: elapsed_sec=0.09576699999161065 rss_MiB=21.203125; limits=180sec/180MiB\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045453Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'resources: elapsed_sec=0.09576699999161065 rss_MiB=21.203125; limits=180sec/180M' vs cache 'resources: elapsed_sec=0.08612970903050154 rss_MiB=21.4375; limits=180sec/180MiB'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_cube_slab_first_ground_correction_independent_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

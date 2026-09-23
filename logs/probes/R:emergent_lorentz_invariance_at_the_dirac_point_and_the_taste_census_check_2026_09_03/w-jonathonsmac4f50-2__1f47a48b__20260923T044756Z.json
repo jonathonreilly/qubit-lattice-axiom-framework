@@ -1,0 +1,35 @@
+{
+ "task": "R:emergent_lorentz_invariance_at_the_dirac_point_and_the_taste_census_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "emergent",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/emergent_lorentz_invariance_at_the_dirac_point_and_the_taste_census_check_2026_09_03.py",
+ "seed": 38876,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044756Z",
+ "elapsed_s": 3.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eb2df578ad5cc4dc61260f839e2e48ac84994f70a42f634d8d7aa098aebf596a",
+ "stdout_tail": "           216    0 0.5000000  0.2500000000   0.0e+00\n  8^3 periodic           512    8 0.4921875  0.2499389648   0.0e+00\nPASS E1 [numerical, 1e-15] on the 8^3 torus with one antiperiodic direction (zero modes lifted, an exact half-filled projector) P_vv = 1/2 at every site (dev 7.8e-16) and sum_{u != v} P_vu^2 = P_vv - P_vv^2 = 1/4 exactly (dev 5.6e-16): Var N = 0 under supplied Slater/Born law.   6^3 periodic gives the same 1/4\nPASS E2 [numerical] Hermitian idempotent projectors and distinct-site Slater/Born pair probabilities; original 262144 ordered-entry determinant diagnostic max excess 0.0e+00 (diagonal occupation uses n_v^2=n_v); no general Record negative-association claim\nPASS E3 [numerical, reported as ambiguous] on the 8^3 PERIODIC torus the zero modes make half filling ambiguous: proj(E < 0) has rank 252, P_vv = 252/512, and the sum rule closes at 0.2499390, not 1/4 (identity dev 5.6e-16).  Reported, not used\n\nPASS E4 [bounded joint-law control] supplied Slater minors normalize and give distinct-site Cov=-|P_uv|^2, diagonal Var=n(1-n); same-marginal alternative has Cov(0,1)=+1/4; nonprojector rejected\nPASS E5 [bounded zero-mode control] periodic 4^3 permits a supplied rank32 half-filled projector with uniform diagonal1/2; strict-negative convention remains separate\nPASS C5 [normalization control] axis phase/group corrections -p^2/24 and -p^2/8; G(-iD)G^dag=M/2, cell p=2k; speed1 per cell or2 per coarse site in supplied units\nTOTAL: PASS=22 FAIL=0   runtime 3.1 s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044800Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/emergent_lorentz_invariance_at_the_dirac_point_and_the_taste_census_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

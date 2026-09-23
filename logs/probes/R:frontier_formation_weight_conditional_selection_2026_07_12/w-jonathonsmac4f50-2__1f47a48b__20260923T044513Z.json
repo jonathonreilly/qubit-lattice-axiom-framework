@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_formation_weight_conditional_selection_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_formation_weight_conditional_selection_2026_07_12.py",
+ "seed": 38713,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044513Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=35; FAIL=0",
+   "PASS=35 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f31006c75149bdf7d6968a57b5f4d778d61bf3b41160809e865ea0ac6a9d9853",
+ "stdout_tail": "ion bounded grade with supplied OS reflection/crossing, P-even orbit clause, history-index/transfer ingredients, and time-homogeneity as an explicit load-bearing modeling condition, not a licensed default.\n  7. Two-slice corner \u2014 bilinear one-component scope only.\n  8. C_3[111] \u2014 declared probe coupling, not a derived physical mass coupling.\n  9. B_abs \u2014 declared sign-allowed spectral-registration branch (T2) from the endpoint-registration asymmetry bounded theorem.\n 10. Open-pinned-Q compatibility \u2014 this note's explicit T2 selection criterion.\nT2 EXACT RESULT: HOLDS \u2014 r=1 has three one-negative sign regions whose exact derivatives are nonzero trigonometric functions with only isolated critical points; r=1/2 alone has an open all-positive ND_3 sector with Q_abs=2/3.\nCHECK COUNT: 35 exact checks; PASS=35; FAIL=0.\nPROPOSED CLAIM_SCOPE: conditional on the ten named elements at their declared source grades, with every independent-audit narrowing or failure inherited, classify the two SOCMLC-lawful weights on the tied bilinear two-slice C_3[111] corner; w=1/2 alone has the required open non-degenerate pinned-Q sector, mapping to r=1/2 and Q=2/3 there.\nHOSTILE-AUDIT UNCERTAINTIES: SOCMLC exhaustiveness; formation-energy bridge; spectral-registration branches; ND_3 authority; time-homogeneity/orbit/history-index supplies; two-slice/probe physical scope; the open-pinned-Q criterion; source-grade and audit dependence. No premise or audit outcome is adopted here.\nTOTAL: PASS=35 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044515Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "energy",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+ "seed": 38883,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044803Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ba011edf46169cdf8c653f0f0b03da4f9e975ac7d5d1bc9379ca97b0dda073fc",
+ "stdout_tail": " 2e-16 at unchanged magnitude (1e-16); F_U,x = -2.808e-01 to -9.413e-03 is NEGATIVE at every D = 3/4/6/8/10/16 -- pair 2 pulled TOWARD pair 1\nPASS H3 [actual operands] extended FU versus point FN has nonzero discrepancy 0.040047771; exact extended convolution matches FU to 2.1e-16; no false point equality\nPASS R1 [actual joint/classical distinction] density defect 0.210861615; same-box classical residual 0.0e+00, true-joint residual -0.284741566\nPASS R2 [complete actual translation] 3072 directed equations, matrix residual 0e+00, row-energy residual 1.1e-16; old KS-only residual retained separately\nPASS R3 [PSD is quadratic] Q(e1)=1.062938032 positive but B(e1,-e1)=-1.062938032 negative\nSUMMARY: distinct joint/classical sources, exact conditional action and extended-force sign, finite point approximation. Physical preparation/readout/force identification remains supplied.\nper_element: checked finite source sums and exact stated scalar identities; physical interpretation is not supplied\nper_site: checked declared coordinate/record/source dictionaries on finite sites; no fine-site formation mechanism follows\nper_mode: checked the stated one-particle or Fourier modes only; no unexecuted interacting or APS boundary spectrum\nper_block: checked named finite preparations, response boxes or sign-field families at their stated tolerances\nlattice_wide: checked and not executed \u2014 no physical infinite-volume formation law or numerical limit error bound is certified\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044804Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

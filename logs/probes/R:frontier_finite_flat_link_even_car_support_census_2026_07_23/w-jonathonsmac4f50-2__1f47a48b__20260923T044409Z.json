@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_finite_flat_link_even_car_support_census_2026_07_23",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_finite_flat_link_even_car_support_census_2026_07_23.py",
+ "seed": 38649,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044409Z",
+ "elapsed_s": 62.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b1f441b76d816be4a79237b11637ddedd15bae4bcc545c58474c24dfd1474d3e",
+ "stdout_tail": "pological_input_chart_supplied\": true}, \"tests_failed\": 0, \"tests_passed\": 17, \"three_mode_helper_parity\": {\"correct_two_edge_maximum_Frobenius_residual\": 2.221417347195572e-16, \"extra_helper_B_minimum_operator_residual\": 1.4142135623730947, \"factor_rows\": [{\"coarse_modes\": [4, 5], \"correct_Frobenius_residual\": 2.220446319386543e-16, \"extra_helper_B_operator_residual\": 1.4142135623730947, \"kind\": \"coin_Givens\"}, {\"coarse_modes\": [2, 3], \"correct_Frobenius_residual\": 1.1102238187182606e-16, \"extra_helper_B_operator_residual\": 1.7320508075688772, \"kind\": \"coin_Givens\"}, {\"coarse_modes\": [0, 1], \"correct_Frobenius_residual\": 1.1102230246251565e-16, \"extra_helper_B_operator_residual\": 1.877706015764793, \"kind\": \"coin_Givens\"}, {\"coarse_modes\": [2, 3], \"correct_Frobenius_residual\": 1.9229626863835638e-16, \"extra_helper_B_operator_residual\": 1.7320508075688772, \"kind\": \"coin_Givens\"}, {\"coarse_modes\": [4, 5], \"correct_Frobenius_residual\": 2.221417347195572e-16, \"extra_helper_B_operator_residual\": 1.414213562373095, \"kind\": \"coin_Givens\"}, {\"coarse_modes\": [0, 1], \"correct_Frobenius_residual\": 0.0, \"extra_helper_B_operator_residual\": 2.0, \"kind\": \"reverse_FSWAP\"}, {\"coarse_modes\": [2, 3], \"correct_Frobenius_residual\": 0.0, \"extra_helper_B_operator_residual\": 2.0, \"kind\": \"reverse_FSWAP\"}, {\"coarse_modes\": [4, 5], \"correct_Frobenius_residual\": 0.0, \"extra_helper_B_operator_residual\": 2.0, \"kind\": \"reverse_FSWAP\"}], \"pass\": true, \"three_mode_factors_tested\": 8}}\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044511Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_finite_flat_link_even_car_support_census_2026_07_23.txt against the .txt beside this log"
+  ]
+ }
+}

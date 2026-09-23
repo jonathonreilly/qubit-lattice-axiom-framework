@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_flavor_carrier_measure_scoring_discriminator_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_flavor_carrier_measure_scoring_discriminator_2026_07_02.py",
+ "seed": 38712,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044512Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6030307684efaa98c8a8af8dd24a96274916c8423f28c990da8e94a708a6b441",
+ "stdout_tail": "C3 leaves S1 r-value unchanged\nPASS D2 C3 leaves S2 r-value unchanged\nPASS D2 C3 leaves S3 r-value unchanged\nPASS D2 complement maps hw=1 bijectively to hw=2\nPASS D2 complement commutes with C3 rotation on hw=1\nPASS D2 complement swap leaves all three scalar r-values unchanged\nPASS D2 global U(1) phase dressing is inert on modulus r\nPASS D2 S1 total generator energy is phase inert\nPASS D2 S2 per-mode modulus is phase inert\nPASS D2 S3 parent r-value is phase inert as a modulus\nPASS D2 U(2) mixing preserves S1 total-HS r_eff\nPASS D2 U(2) mixing changes S2 per-mode channel squares\nPASS D2 hostile S2 witness can mimic r=1/2 at special point\nPASS D2 hostile S2 mimic fails generically\nPASS D2 S3 parent idempotent relation holds before U(2) mixing\nPASS D2 U(2) mixing changes S3 idempotent/eigenvalue relation\nPASS D2 honesty: equal-split condition itself moves under U(2) mixing\nPASS D2 mixed channel-1 is not the algebra unit direction\nPASS D2 mixed channel-2 is not HS-orthogonal to the unit\nPASS D3 S1 empty readout is zero\nPASS D3 S1 finitely additive on disjoint records\nPASS D3 S2 empty readout is zero\nPASS D3 S2 finitely additive on disjoint records\nPASS D3 S3 empty readout is zero\nPASS D3 S3 finitely additive on disjoint records\nPASS D4 named invariance requirement leaves S1\nPASS D4 named invariance requirement rejects S2\nPASS D4 named invariance requirement rejects S3\nPASS D4 conditional survivor gives r=1/2\nPASS D4 parent theorem target string is preserved\nTOTAL: PASS=39 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044513Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

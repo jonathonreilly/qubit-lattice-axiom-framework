@@ -1,0 +1,38 @@
+
+===============================================================================
+A - Source, authority, and completeness-contract boundary
+===============================================================================
+FAIL A cycle88 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/EXACT_COMPILER_CLOSURE_LEDGER_CYCLE88_NOTE_2026-07-14.md
+PASS A axioms exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS A registry exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/axiom_premise_nodes.json
+PASS A scale exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+PASS A kinetic exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS A realized exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+FAIL A contract exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/CANONICAL_LAW_COMPLETENESS_CONTRACT_NOTE_2026-07-13.md
+PASS A cycle78 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/JOINT_ENDPOINT_MIXED_REBIND_CYCLE78_NOTE_2026-07-14.md
+PASS A cycle80 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/THREE_PHASE_RECURRENT_APPEND_TUBE_CYCLE80_NOTE_2026-07-14.md
+FAIL A cycle81 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/EIGHT_BIT_PHYSICAL_ROLE_COMPARATOR_CYCLE81_NOTE_2026-07-14.md
+PASS A cycle82 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/DIRECTIONAL_MULTIWORD_RULE_PORT_OUTPUT_CYCLE82_NOTE_2026-07-14.md
+FAIL A cycle83 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/CONSTRUCTIVE_CONSTITUTIONAL_DELTA_AUDIT_CYCLE83_NOTE_2026-07-14.md
+FAIL A cycle84 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/SEPARATED_RECURRENT_TUBE_COLLISION_CONTROL_CYCLE84_NOTE_2026-07-14.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/exact_compiler_closure_ledger_cycle88_2026_07_14.py", line 451, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/exact_compiler_closure_ledger_cycle88_2026_07_14.py", line 439, in main
+    source_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/exact_compiler_closure_ledger_cycle88_2026_07_14.py", line 168, in source_contract
+    texts = {name: normalized(path) for name, path in SOURCES.items()}
+                   ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/exact_compiler_closure_ledger_cycle88_2026_07_14.py", line 69, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/CANONICAL_LAW_COMPLETENESS_CONTRACT_NOTE_2026-07-13.md'

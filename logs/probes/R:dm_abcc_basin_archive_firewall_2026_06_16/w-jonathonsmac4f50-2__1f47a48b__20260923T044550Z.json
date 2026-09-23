@@ -1,0 +1,31 @@
+{
+ "task": "R:dm_abcc_basin_archive_firewall_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "dm",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/dm_abcc_basin_archive_firewall_2026_06_16.py",
+ "seed": 38750,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044550Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "af3e875e698224745daa0afd70c22a9e1fa482086a16b5b053e523ea29c7f80c",
+ "stdout_tail": "PASS: DM A-BCC basin archive firewall holds\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044550Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

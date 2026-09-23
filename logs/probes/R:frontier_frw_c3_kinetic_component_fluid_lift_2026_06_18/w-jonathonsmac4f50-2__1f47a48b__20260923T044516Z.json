@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_frw_c3_kinetic_component_fluid_lift_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_frw_c3_kinetic_component_fluid_lift_2026_06_18.py",
+ "seed": 38716,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044516Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=51 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1f9f595f52367f26b8f94fc43c98fedebf953c911eb1d2b9e51b7677c94b28cf",
+ "stdout_tail": "homogeneous cell packet is pointwise FRW-compatible\nPASS: inhomogeneous cells can each retain local w_r=1/3\nPASS: inhomogeneous cells are not a homogeneous FRW background (cell_a=((Fraction(-9, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(3, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(3, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(3, 1))), cell_b=((Fraction(-15, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(5, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(5, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(5, 1))))\nPASS: cell inhomogeneity is a C1 residual, not a C3 label failure\n\n== Part 4: source-free continuity boundary ==\nPASS: source-free radiation scaling exponent a^-4 matches w=1/3 (residual=0)\nPASS: source-free matter scaling exponent a^-3 matches w=0 (residual=0)\nPASS: nonzero source term blocks adiabatic/scaling closure (residual_with_source=2)\nPASS: source injection is a C2 residual, not a C3 label failure\n\n== Result ==\nClosed by this bridge: finite component tensors and homogeneous cell aggregation.\nStill open: C1, C2, real species allocation, thermal history, and audit status.\n\nTOTAL: PASS=51 FAIL=0\nVERDICT: bounded support passes for the finite perfect-fluid lift of ideal kinetic C3 labels. C1, C2, real cosmological species allocation, and audit status remain open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044516Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

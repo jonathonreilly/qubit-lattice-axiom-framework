@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_finite_cell_two_band_closed_form_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py",
+ "seed": 38648,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044408Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3f5213ba612e264df724c3c59f8e069b2733783cafc528fd1ed939b97d22913c",
+ "stdout_tail": "t Harper PT at m=0.0 :: closed-direct=-1.160e-14, tol=1.0e-10\nPASS: closed finite sum equals direct Harper PT at m=0.2 :: closed-direct=+2.034e-14, tol=1.0e-10\nPASS: closed finite sum equals direct Harper PT at m=0.3 :: closed-direct=+1.167e-14, tol=1.0e-10\nPASS: closed finite sum equals direct Harper PT at m=0.5 :: closed-direct=-5.759e-15, tol=1.0e-10\nfinite-difference discriminator m=0.2: B=5.0e-04 err=7.833229e-05, B=2.5e-04 err=1.961971e-05, ratio=3.993\nPASS: finite-difference cross-check converges toward the closed form when B halves :: fine_err=1.962e-05, max=3.0e-05, ratio=3.993, min=3.5\n\nS2 convergence: finite-Q discrete Moyal midpoint sums\nm=0.2 Q-sequence: Q=24: +1.679677098484e-02, Q=48: +1.581698221168e-02, Q=96: +1.583215353175e-02, Q=192: +1.583230423312e-02; target Q=384: +1.583230424665e-02; rates=62.946, 101.662, 11137.242\nPASS: discrete Moyal sum converges monotonically at m=0.2 :: diffs_to_Q384=9.645e-04, 1.532e-05, 1.507e-07, 1.353e-11\nm=0.5 Q-sequence: Q=24: +1.184950414430e-01, Q=48: +1.179651305982e-01, Q=96: +1.179647705970e-01, Q=192: +1.179647705973e-01; target Q=384: +1.179647705973e-01; rates=1472.971, 1139603.664, 315.900\nPASS: discrete Moyal sum converges monotonically at m=0.5 :: diffs_to_Q384=5.303e-04, 3.600e-07, 3.159e-13, 0.000e+00\n\nS3 note hygiene\nPASS: note has bounded theorem claim type and audit authority\nPASS: note names the supplied finite-cell scope\nPASS: note discloses residuals and the Moyal comparator scope\n\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044409Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_finite_cell_two_band_closed_form_2026_06_13.txt against the .txt beside this log"
+  ]
+ }
+}

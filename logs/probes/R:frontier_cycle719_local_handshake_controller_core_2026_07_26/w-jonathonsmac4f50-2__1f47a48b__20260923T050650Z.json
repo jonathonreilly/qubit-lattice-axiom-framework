@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle719_local_handshake_controller_core_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+ "seed": 40010,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T050650Z",
+ "elapsed_s": 98.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "788d34e101346503912774bf0a6435f1ad2337bf37a1e3834f55a521086370f0",
+ "stdout_tail": "}, \"open\": [\"literal reversible M2 synthesis of marker transition/control gates\", \"autonomous preparation/enforcement of the one-marker and clean-work sector\", \"distant multi-source composition beyond the declared one-root domain\", \"post-capacity renewal and autonomous occurrence/admission\"], \"pass\": true, \"physical_route\": {\"complete_physical_primitives\": 196578, \"covariance\": {\"active_pointer_direction_failures\": 0, \"direction_product_failures\": 0, \"instruction_coordinate_failures\": 0, \"ordered_frame_products\": 576, \"proper_cubic_frames\": 24, \"routed_NN_frame_failures\": 0, \"translation_failures\": 0}, \"forward_route_deletions\": 54279, \"forward_routed_NN_gates\": 1106656, \"forward_word_sha256\": \"5b4d829b0299e8007b87e8ac3c9ee8d3fd905fa6c7366e80f8085c4836cfc9e3\", \"inverse_route_deletions\": 54279, \"inverse_routed_NN_gates\": 1106656, \"inverse_word_sha256\": \"c47d3c5a0e545a18222ec98f21c5d62c8939072b59ced3edd30beee1b68fcc5c\", \"maximum_route_distance\": 24, \"non_NN_failures\": 0, \"operand_order_failures\": 0, \"route_return_failures\": 0, \"selected_allocator_primitives\": 195178, \"selected_semantic_gates\": 23664}, \"report_sha256\": \"abc99f8f2a7e473028f089194405e34596e88f2af5b8e676c0043d927307cef4\", \"supplied\": [\"source boundary, one marker, clean bank/link/route genesis\", \"bounded local handoff/relay/packet/return gate words\", \"BINDER/ACTUAL/ADMISS/LAW and the Cycle713 endpoint source\", \"the internal gate order inside each bounded local macro\"]}\nCYCLE719_LOCAL_HANDSHAKE_CONTROLLER_CORE_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T050829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

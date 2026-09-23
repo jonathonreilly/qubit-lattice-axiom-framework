@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+ "seed": 39205,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T045325Z",
+ "elapsed_s": 26.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "817c64add1df43d9df79d9465cc87310856c18efb9c803c99800d8606a0c0c58",
+ "stdout_tail": "e_deletion\": 25}}, \"reason\": \"target decode sends all code stabilizers to Z on auxiliary wires; the update acts only on logical wires; target encode restores them; the outer CNOT restores each Z_left Z_right repetition stabilizer\", \"stabilizer_class_counts\": {\"D\": 1, \"rail\": 1, \"repetition\": 1, \"shared_cycle\": 24}}, \"state_isometry\": {\"E_dagger_E_exact_by_unitary_ancilla_injection\": true, \"auxiliary_zero_qubits\": 26, \"formula\": \"E = Rep U_target (I_4096 tensor |0>^26)\", \"literal_M2\": 39, \"logical_dimension\": 4096, \"placement_collisions\": 0, \"repeated_abstract_qubits\": [36], \"repetition_ancilla_M2\": 1, \"synthesis\": {\"maximum_local_table_residual\": 3.1560822113208575e-16, \"source_decode_failures\": 0, \"source_decode_gates\": 659, \"source_encode_failures\": 0, \"target_decode_failures\": 0, \"target_decode_gates\": 653, \"target_encode_failures\": 0}}, \"supplied\": [\"the connected two-cell +x OpenReference/PatchGraph geometry and semantic cell/mode order\", \"the Cycle706 signed W/V symplectic bases and one rail-Z reference completion\", \"the Cycle707 39-M2 placement, stream-edge repetition sector, and serial Manhattan router\", \"the landed Cycle709 four signed seam-chart factors\", \"Cycle230/Cycle655 beta=-0.3 coin, reverse layer, +x seam attachment, g=0.37 onsite contact, and factor order\", \"the stabilizer/repetition/rail +1 sectors and blank route work\"], \"terminal\": \"CYCLE712_TWO_CELL_JOINT_E_FREE_SEAM_CONTACT_PHYSICAL_M2_PASS\"}\nCYCLE712_TWO_CELL_JOINT_E_FREE_SEAM_CONTACT_PHYSICAL_M2_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T045352Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

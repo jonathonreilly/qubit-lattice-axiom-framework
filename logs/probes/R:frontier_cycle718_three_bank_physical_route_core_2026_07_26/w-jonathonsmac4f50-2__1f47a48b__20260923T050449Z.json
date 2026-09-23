@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle718_three_bank_physical_route_core_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+ "seed": 39889,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T050449Z",
+ "elapsed_s": 24.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "da923f509d0b5b6779f187870867f43d4919e77fd4ee2b839f3c696fa4cf6031",
+ "stdout_tail": "outing of the eventual ACK/pending repair\", \"general overlapping-chain genesis/enforcement and resource growth\", \"numeric Cycle-612 adapter and time/Record/Born/source-gravity bridges\"], \"pass\": true, \"placement\": {\"allocator_bank_M2\": 393, \"allocator_edge_tube_M2\": 764, \"bank_translation\": [0, 0, 10], \"bank_translation_failures\": 0, \"decoded_wire_sites\": 1198, \"link_translation_failures\": 0, \"physical_assigned_M2\": 1199, \"placement_collisions\": 0, \"source_endpoint_register_M2\": 3, \"source_literal_code_M2\": 39}, \"report_sha256\": \"656437c7b221967755ec6862c125c4564489e3ee6603f485fbb3163faa31b61f\", \"route\": {\"allocator_physical_primitives\": 50892, \"blank_route_work_M2\": 803, \"coin_QR_residual\": 1.3496230663401984e-15, \"decoded_Cycle713_gates\": 92, \"maximum_route_distance\": 24, \"non_NN_failures\": 0, \"operand_order_failures\": 0, \"route_deletion_detected_macros\": 15256, \"route_return_failures\": 0, \"routed_nearest_neighbor_gates\": 274118, \"routed_word_sha256\": \"b7bc19064350edb6764c6b725964202ab63c1bbc85ad8f72d53e50b788de9712\", \"semantic_allocator_gates\": 5742, \"source_physical_primitives\": 1400, \"total_physical_primitives\": 52292, \"touched_M2\": 2002}, \"supplied\": [\"Cycle-713 physical two-cell placement/decoder and blank route work\", \"three 131-M2 banks and two edge-exclusive 382-M2 link tubes\", \"fixed proper-cubic coframe relating matter seam and history chain\", \"finite clean genesis, one-token sector, and fixed circuit layer order\"]}\nCYCLE718_THREE_BANK_PHYSICAL_ROUTE_SUPPORT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T050513Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

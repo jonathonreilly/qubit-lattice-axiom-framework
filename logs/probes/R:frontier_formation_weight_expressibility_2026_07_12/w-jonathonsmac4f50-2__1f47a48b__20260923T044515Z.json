@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_formation_weight_expressibility_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_formation_weight_expressibility_2026_07_12.py",
+ "seed": 38715,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044515Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=18 FAIL=0",
+   "PASS=18 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4a284d58f3dcb9a5c8f014724b4b41dbb2dc3a019414236d5cd362a81359159d",
+ "stdout_tail": "1/5 absent\n[PASS] 12 the exact fork map sends w=1/3 to r=1 and w=1/2 to r=1/2\n[PASS] 13 T2 control: rho=I/3 is positive, K-even, unit trace, and realizes (1/3,2/3)\n[PASS] 14 T2 fork: diag(1/2,1/4,1/4) is positive, K-even, unit trace, and realizes (1/2,1/2)\n[PASS] 15 the external exponent family is nonconstant and yields 1/2, 1/3, 1/5 at alpha=0,1,2\n[PASS] 16 the full diagonal K-even state family on C+C is diag(t,(1-t)/2,(1-t)/2), positive exactly for 0<=t<=1\n[PASS] 17 T4 two-cell check: dimensions/orbits (1,3) change the set to {1/4,1/2}\n[PASS] 18 T4 three-cell check: three identical singletons collapse all constructions to uniform thirds\nTOTAL: PASS=18 FAIL=0\nVERDICT: W_expr = {1/3, 1/2}.\nCANDIDATE-3 ALGEBRA: the declared orbit-constant scalar formation algebra A_reg=C+C; C+M2 contains internal-doublet data outside that class, so 1/5 is excluded.\nT1: SOCMLC gives a finite exact two-weight set.\nT2: both exact fork endpoints are lawful and neither is selected.\nT3: conditionally, the continuum dial becomes a finite selection problem; this runner selects nothing.\nT4: changing the supplied menu invariants changes or collapses the set.\nCHECKS: PASS=18 FAIL=0.\nPROPOSED CLAIM_SCOPE: conditional canonical-measure classification on the supplied C3 carrier and its two-cell orbit-constant quotient only.\nUNCERTAINTIES: SOCMLC completeness is contestable; the orbit clause is bridge-carried; a separately supplied formation/readout block algebra or formation operator would enlarge the set.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044515Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

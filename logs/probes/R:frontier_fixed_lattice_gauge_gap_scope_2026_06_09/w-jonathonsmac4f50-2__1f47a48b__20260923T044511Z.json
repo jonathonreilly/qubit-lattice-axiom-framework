@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_fixed_lattice_gauge_gap_scope_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_fixed_lattice_gauge_gap_scope_2026_06_09.py",
+ "seed": 38711,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044511Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f8ff3f9bfb97d543e9a3814fcbf6acacfc3d05bdc5efa740a1d87b09a5cb0bef",
+ "stdout_tail": "tor=0.242500, sigma=1.416755\n  beta=1.0: SU(2) factor=0.240194, sigma=1.426309; U(1) factor=0.446390, sigma=0.806562\n  beta=1.5: SU(2) factor=0.344144, sigma=1.066695; U(1) factor=0.596133, sigma=0.517291\n  [PASS] strong-coupling factors are between zero and one\n  [PASS] leading strong-coupling sigma diagnostics -log(factor) are positive\n  [PASS] toy leading-loop diagnostic has area-law-shaped algebra log W(R,T)=-sigma*R*T\n\n----------------------------------------------------------------------------------------\nC. Weakening diagnostic, not all-coupling confinement\n----------------------------------------------------------------------------------------\n  [PASS] leading factors move toward one as beta increases  --  SU(2) 0.124->0.819; U(1) 0.242->0.935\n\n----------------------------------------------------------------------------------------\nD. Guardrails\n----------------------------------------------------------------------------------------\n  [PASS] guardrail: no Clay continuum a->0 construction\n  [PASS] guardrail: no rigorous physical SU(3) gap at beta=6\n  [PASS] guardrail: no observed photon/gluon spectrum derivation\n  [PASS] guardrail: no Planck-scale physical import from the scale-reference primitive\n  [PASS] guardrail: no Record readout, probability, or measurement claim\n\n========================================================================================\nSUMMARY: PASS=10 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044512Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

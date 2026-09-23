@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+ "seed": 39593,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T045953Z",
+ "elapsed_s": 5.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "31e8fe4e714ee06d61c8aaf8904043ad41d812c532d430c1c0114ec1a723430e",
+ "stdout_tail": "ointer\", \"direction carrier derived from post-update physical matter endpoints\", \"exact carrier return to the original matter seam\", \"exact source-pointer and bank-interface uncompute without host reset\", \"coherent Cycle-713-plus-history composition on every N<=2 source\"], \"failures\": 0, \"maximum_composed_residual\": 8.980574805303166e-16, \"maximum_dirty_auxiliary_probability_weight\": 0.0, \"maximum_norm_residual\": 1.1102230246251565e-15, \"maximum_one_particle_norm_residual\": 4.440892098500626e-16, \"maximum_one_particle_residual\": 6.057936537328431e-16, \"maximum_particle_number_leakage\": 0, \"maximum_sparse_support\": 36, \"one_particle_sources\": 12, \"open\": [\"safe local destination backpressure/refusal\", \"literal physical-M2 placement and routing of the complete word\", \"active proper-cubic carrier covariance on the routed layout\", \"autonomous ACTUAL/ADMISS law and genesis/enforcement\", \"finite resource exhaustion behavior and unbounded realized history\"], \"pass\": true, \"report_sha256\": \"b59d2a2a10e125a628a7bd7a1f1f225bfab69085b18f2df28202692984b190f4\", \"sources_N_le_2\": 79, \"supplied\": [\"landed decoded Cycle-713 two-cell matter word and endpoint register\", \"Route-A full source bank, blank destination bank, and clean link work\", \"one-hot token and complete BINDER/ACTUAL/ADMISS/LAW inputs\", \"fixed three-phase handoff/append/carrier-return circuit order\", \"six-bit structural bank-prefix ROM\"], \"total_decoded_plus_classical_gates\": 1989}\nCYCLE718_CYCLE713_CARRIER_RETURN_SUPPORT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T045958Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

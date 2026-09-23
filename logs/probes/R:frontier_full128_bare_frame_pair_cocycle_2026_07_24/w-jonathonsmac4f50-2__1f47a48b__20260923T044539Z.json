@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_full128_bare_frame_pair_cocycle_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+ "seed": 38739,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044539Z",
+ "elapsed_s": 2.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8673a1977859e09e6a15bbb704d074af1008b6eb3900345595e7c50a6a53763c",
+ "stdout_tail": "r\", \"a time-homogeneous autonomous controller for the supplied finite gate word\", \"overlapping recurrent blocks, shared-port consistency and held-volume lattice streaming\", \"derivation of the mode labels, contact coupling, program order or register genesis from the axioms\", \"physical time, energy, source, gravity, Record, occurrence and probability\", \"any minimum-content, impossibility, shared-obstruction or axiom-pressure conclusion\"], \"pass\": true, \"resources\": {\"elapsed_seconds\": 2.8904202500125393, \"peak_rss_mb\": 91.25}, \"status\": \"bounded-full-M64-bare-frame-pair-cocycle-certificate\", \"supplied\": [\"six local signed-direction mode labels in the declared order (+x,-x,+y,-y,+z,-z)\", \"one optional rotation-fixed seam-port occupation bit ordered after the six local modes\", \"the 25-site shell coordinate formulas from the bounded seam-cell construction\", \"thirty ordered-pair M2 sites a_(i,j)=4*d_i+d_j and six 4*d_i corridor/work sites\", \"conditional antisymmetric pair state (|1_(j,i)>-|1_(i,j)>)/sqrt(2)\", \"a fixed fifteen-pair reversible gadget order and one returned work flag\", \"standard exact Toffoli and controlled-H decompositions for the gate-count bound\", \"uniform ordered-pair onsite contact phase with supplied coupling g=0.37\", \"standard coordinate action of the 24 proper-cubic frames and tolerance 2e-12\"], \"terminal\": \"FULL_M64_BARE_FRAME_PAIR_COCYCLE_CONTACT_CERTIFICATE\", \"tests_failed\": 0, \"tests_passed\": 12}\nRESULT FULL_M64_BARE_FRAME_PAIR_COCYCLE_CONTACT_CERTIFICATE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044542Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_full128_bare_frame_pair_cocycle_2026_07_24.txt against the .txt beside this log"
+  ]
+ }
+}

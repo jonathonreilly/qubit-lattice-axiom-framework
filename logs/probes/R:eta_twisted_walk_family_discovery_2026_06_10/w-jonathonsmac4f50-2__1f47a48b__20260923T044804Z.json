@@ -1,0 +1,35 @@
+{
+ "task": "R:eta_twisted_walk_family_discovery_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "eta",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/eta_twisted_walk_family_discovery_2026_06_10.py",
+ "seed": 38884,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044804Z",
+ "elapsed_s": 79.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "04a991a693f53da4967765c8d2e851fff123668d9117857879b96fd7af220d9e",
+ "stdout_tail": "; shapes/front speeds = moduli content\n\nPART F -- the eta twist is load-bearing: the same structure WITHOUT the twist signs fails\n==============================================================================\n  [PASS] F1 the SAME orbits and amplitudes WITHOUT the eta signs are NOT unitary; WITH them, exactly unitary  --  sign-stripped residual 0.67 vs eta-twisted 2.2e-16: the staggered eta signs are load-bearing for covariant transport; linear-family flatness = landed block04 F2b\n\nPART E -- the equivariant seeded sweep census (sweep-grade; the family is what the sweeps find)\n==============================================================================\n  [PASS] E1 sweep census: every dispersive equivariant unitary found lies in the six-orbit walk family (diag ~ 0, moduli 1/sqrt 3)  --  65 unitaries, 19 dispersive, 19 in-family: the family IS the dispersive sector found\n\nPART G -- open-1 status: the unrestricted family's tree exceeds any practical cap (computed)\n==============================================================================\n  [PASS] G1 the unrestricted family's kill-propagation exceeds the 50,000-leaf cap (deterministic): exhaustive enumeration infeasible  --  200 exact equations; cap exceeded -- open 1 (full-family exact classification) remains NAMED, sharpened by documentation\n\n==============================================================================\nSCORECARD: PASS=13 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/eta_twisted_walk_family_discovery_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

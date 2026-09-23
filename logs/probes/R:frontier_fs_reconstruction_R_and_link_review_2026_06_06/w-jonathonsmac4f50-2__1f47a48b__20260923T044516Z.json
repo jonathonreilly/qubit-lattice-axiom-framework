@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_fs_reconstruction_R_and_link_review_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_fs_reconstruction_R_and_link_review_2026_06_06.py",
+ "seed": 38716,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044516Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 20   FAIL = 0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f5fd39bfed8c82dfb25f03a2469ea3fa9911a44748dd06a067ac3921050bfac1",
+ "stdout_tail": "uine open link of the chain (+ the boost-spinor)\n\n[REVIEW LINK D + R] spin-statistics engine + the RP-selection -- TIGHT (given C)\n  [PASS] LINK D engine is rigorous (= BUILD R): a spin-1/2 bosonic field is positivity-inconsistent  --  Pauli 1940; Streater-Wightman; Osterwalder-Schrader fermions (comparators)\n  [PASS] R's RP-selection is TIGHT GIVEN the relativistic Dirac structure; non-circular (derives the sign)\n  [PASS] R's only upstream dependency is the continuum Dirac structure = LINK C + boost-spinor (not R itself)  --  refines the earlier 'R is circular': the circularity was upstream, in C, not in R\n\n[VERDICT] tightness map of the chain\n      A spin-1/2                         : TIGHT\n      B algebra-3=spatial-3 (discrete)   : TIGHT\n      C emergent Lorentz                 : NOT TIGHT (target/open)\n      D spin-statistics engine           : TIGHT\n      R RP-selection (given C)           : TIGHT\n  [PASS] 4 of 5 links TIGHT; the SINGLE non-tight link is C (emergent Lorentz) + the boost-spinor\n  [PASS] R (built) closes the SIGN given C: FS = forced-modulo {emergent Lorentz + boost-spinor}  --  both framework TARGETS -> NO new principle beyond Planck\n  [PASS] review found NO new gap; it REFINES 'R is circular' -> R is non-circular, circularity is in C\n\n==============================================================================================\nSCORECARD:  PASS = 20   FAIL = 0\n==============================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044516Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

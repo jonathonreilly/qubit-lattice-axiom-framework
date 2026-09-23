@@ -1,0 +1,32 @@
+{
+ "task": "R:energy_gauss_constraint_obstruction_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "energy",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/energy_gauss_constraint_obstruction_2026_07_08.py",
+ "seed": 38881,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044801Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8b4968f61e3cc241076a5341e201fa82173f61defa587a0c4ffedb3844fe4422",
+ "stdout_tail": "a closes abelian, while inside a cell the staggered mass enters with sign +1 on the even site and -1 on the odd site, so the two sites of one cell are not interchangeable\nper_mode: the fermionic modes are the finest label this algebra carries and they are kept apart end to end - species a and b at a given site are distinct modes, the cell density is assembled from mode-resolved number terms, nearest-neighbour hoppings and density products written mode pair by mode pair, and the commutator expansion then runs over individual mode-string keys rather than over any coarser bookkeeping\nper_block: the two-site cell is the block and the entire obstruction is a statement about block adjacency - h_0, h_1 and h_2 are one density translated by zero, two and four sites, adjacent blocks share the site their hoppings reach into so their commutator survives both the coefficient l2 norm and the eight-site Hilbert-Schmidt norm, whereas the pair two cells apart has disjoint support and its commutator dictionary comes back exactly empty rather than merely small\nlattice_wide: the whole-chain claim here is a finite-N one and is fenced as such - eight sites, that is sixteen fermionic modes, carry both the Hilbert-Schmidt norm and the dense commutator cross-check, no boundary condition is varied and no thermodynamic limit is attempted, and the commuting-auxiliary identity is confirmed separately on a finite tensor product of a three-dimensional auxiliary factor with a two-dimensional matter factor\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044803Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'lattice_wide: the whole-chain claim here is a finite-N one and is fenced as such' vs cache 'TOTAL PASS elapsed=2.02s'",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

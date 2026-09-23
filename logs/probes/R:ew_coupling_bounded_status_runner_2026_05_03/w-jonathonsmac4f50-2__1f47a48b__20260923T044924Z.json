@@ -1,0 +1,35 @@
+{
+ "task": "R:ew_coupling_bounded_status_runner_2026_05_03",
+ "type": "runner-reexecution",
+ "lane": "ew",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/ew_coupling_bounded_status_runner_2026_05_03.py",
+ "seed": 38964,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T044924Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4cd5f7326793175a35d252570f43ef3e673f926ad5aeec8070f083c9fa8def25",
+ "stdout_tail": "mation):\n    Imported EW (experiment): g_1 = 0.464, g_2 = 0.646 -> m_t ~ 169.4 GeV (baseline)\n    Derived g_1 (D1) + obs g_2: g_1 = 0.590, g_2 = 0.646 -> m_t ~ 175.0 GeV (+5.6 GeV)\n    No EW (g_1 = g_2 = 0):                              -> m_t ~ 146.0 GeV (-23.4 GeV)\n  Confirms: imported EW couplings are subdominant (delta m_t ~ 5-6 GeV vs 23 GeV for full EW removal)\n  The QCD beta coefficient (c_3 = 8) dominates over the EW contributions (c_2 = 9/4, c_1 = 17/20).\n  [PASS] EW couplings confirmed subdominant to QCD beta in y_t chain  (qualitative table per note Part 5)\n\n--- Import Status Summary (matches note's table) ---\n  | Parameter   | Status   | Source                              |\n  | alpha_s(v)  | DERIVED  | CMT, n_link = 2                     |\n  | v           | DERIVED  | Hierarchy theorem                   |\n  | g_1_GUT(v)  | DERIVED  | 1-loop U(1) RGE from M_Pl (~+27%)   |\n  | g_2(v)      | BOUNDED  | Landau pole; CMT/SU(2) matching open|\n  | lambda(v)   | BOUNDED  | Vacuum stability + CW lower bound   |\n  | y_t(v)      | DERIVED  | Backward Ward (robust to EW)        |\n\n  No parameter is fit to observed sin^2(theta_W) or any other\n  EW observable in this runner.  The g_2 and lambda statuses\n  remain BOUNDED until SU(2) non-perturbative matching is\n  derived from retained inputs.\n\n================================================================================\n SUMMARY: PASS=4, FAIL=0\n================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

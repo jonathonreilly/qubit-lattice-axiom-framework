@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle718_carrier_return_core_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+ "seed": 39577,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T045937Z",
+ "elapsed_s": 10.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ce2874e2e7250116c12a1c21deaf745e699fdfa75fd2ff0fa6025cc9c6fb5b81",
+ "stdout_tail": "mantic\": 1885}, \"maximum_inverse_basis_residual\": 0.0, \"maximum_returned_work_population\": 0, \"maximum_state_basis_residual\": 0.0, \"open\": [\"literal composition with the Cycle-713 source extractor and its inverse\", \"literal M2 placement/routing of the persistent per-link reverse pass\", \"safe backpressure/refusal when the downstream bank is occupied or unlawful\", \"autonomous event admission, genesis/enforcement, and finite exhaustion behavior\", \"active proper-cubic carrier action and same-E recurrent physical update\"], \"pass\": true, \"persistent_chain\": {\"edge_permutations\": 6, \"forward_reverse_order_comparisons\": 864, \"held_failures\": 0, \"held_rows\": [{\"banks\": 2, \"events\": 4, \"issues\": []}, {\"banks\": 5, \"events\": 10, \"issues\": []}, {\"banks\": 12, \"events\": 24, \"issues\": []}], \"host_source_cleanup_still_supplied\": true, \"mixed_failures\": 0, \"mixed_sequences\": 729, \"order_failures\": 0, \"order_fill_phases\": 8, \"persistent_aux_bits_per_link\": 191}, \"report_sha256\": \"c1ebbc1066aa8dc44fb0a13be27238a4b62cee5d8ff5b42829e49f157b9f565d\", \"rows\": 32, \"supplied\": [\"Route-A two-cell bank and safe admitted packet body\", \"full source bank, blank destination bank, and clean 190-bit link work\", \"one-hot allocator token and complete BINDER/ACTUAL/ADMISS/LAW inputs\", \"one endpoint direction carrier and fixed handoff/packet/return order\", \"six-bit structural destination-bank ROM prefix\", \"host carrier injection and host source cleanup in the semantic chain\"]}\nCYCLE718_CARRIER_RETURN_SUPPORT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T045948Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

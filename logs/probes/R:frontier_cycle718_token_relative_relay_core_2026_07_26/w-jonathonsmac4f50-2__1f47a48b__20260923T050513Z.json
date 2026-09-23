@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle718_token_relative_relay_core_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+ "seed": 39913,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f47a48b",
+ "started_utc": "20260923T050513Z",
+ "elapsed_s": 97.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5bf4f3e4192c001afb033600c36bc8c4daa63008a977b208cb308a8276bf9835",
+ "stdout_tail": "and four applications on all N<=2 sources\"], \"domains\": {\"2\": {\"applications\": 2, \"maximum_bad_history_or_auxiliary_probability_weight\": 0.0, \"maximum_norm_residual\": 1.5543122344752192e-15, \"maximum_particle_number_leakage\": 0.0, \"maximum_sparse_support\": 38, \"sources_N_le_2\": 79}, \"4\": {\"applications\": 4, \"maximum_bad_history_or_auxiliary_probability_weight\": 0.0, \"maximum_norm_residual\": 2.6645352591003757e-15, \"maximum_particle_number_leakage\": 0.0, \"maximum_sparse_support\": 172, \"sources_N_le_2\": 79}}, \"edge_tubes\": [{\"handoff_latch\": 434, \"handoff_work\": 190, \"relay_latch\": 625, \"relay_work\": 190}, {\"handoff_latch\": 816, \"handoff_work\": 190, \"relay_latch\": 1007, \"relay_work\": 190}], \"open\": [\"transient complete-blank NEW predicate and append ACK\", \"exact pending-event refusal under occupied, dirty, or exhausted destinations\", \"edge-local predecessor/frontier replacing structural bank-index ROM\", \"literal physical-M2 placement/routing and active proper-cubic covariance\", \"unbounded resources, autonomous ACTUAL/ADMISS, Record/Born/time/source bridges\"], \"pass\": true, \"report_sha256\": \"b5b95a12747e214be9d5ca1db86df13d28eea7d8e7477f1818df1c29fc904dee\", \"supplied\": [\"decoded Cycle-713 two-cell matter word at one fixed source seam\", \"three-bank chain with one token, blank downstream banks, and clean link tubes\", \"BINDER/ACTUAL/ADMISS/LAW event inputs and fixed forward/reverse edge order\", \"six-bit structural bank-index prefix ROM\"]}\nCYCLE718_TOKEN_RELATIVE_RELAY_SUPPORT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T050650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

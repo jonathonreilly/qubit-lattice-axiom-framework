@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-21 block 53 — author checks (not a review PASS)
 Foundations read in full before framing (axioms memo; parked-decisions registry). Written lens pass by the supervisor; a capacity argument withdrawn because a pinned absolute rate is not scale covariant. Refuting pass with symbolic solving, a sparse solve, a transform solve and a simulation (5/0); one wall artefact and one mis-scaled check folded. Census 10/10 in family.
+
+## 2026-09-23 block 53 — corrigendum: the record's mean velocity (supervisor, Claude Opus 5.5)
+T5's remark that the record's mean velocity follows the gradient is wrong for its own timing (unbiased hops; the flux follows the gradient); found while building block 95 (#8860). Text-only.

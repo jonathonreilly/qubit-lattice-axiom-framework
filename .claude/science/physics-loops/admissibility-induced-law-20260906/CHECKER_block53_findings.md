@@ -5,3 +5,5 @@
 3. Finding folded: the runner's first geometric-mean check scaled sixth roots where it meant to scale rates.
 4. A supervisor's argument withdrawn in the lens pass: records as pinned values would give a capacity that adds for dilute bodies and saturates for compact ones; attractive as that looked, a pinned absolute rate is not scale covariant and the clause excludes it.
 5. Recorded for block 50: under "no master clock" the global clock `1/π(C)` is a change of the unobservable unit of rate; what its stationary law means for an observer who can only compare rates is open.
+
+**Corrigendum (2026-09-23, supervisor).** T5's remark "the record's mean velocity, not its acceleration, follows the gradient" is wrong for T5's own timing: hops timed by the departure site are unbiased, so the mean velocity is zero away from contact; the probability flux, not the velocity, follows the gradient. Found while building block 95 (#8860); text-only.

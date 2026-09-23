@@ -1,6 +1,6 @@
 {
- "edge_count": 13973,
- "node_count": 6424,
+ "edge_count": 14013,
+ "node_count": 6463,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6661,6 +6661,10 @@
   "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1e65f050bf30",
    "out_degree": 4
+  },
+  "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "54642007c92f",
+   "out_degree": 3
   },
   "gauge_wilson_full_cube_compact_interacting_hamiltonian_limit_bounded_theorem_note_2026-09-07": {
    "deps_hash": "2ccb2e4b384d",
@@ -20877,6 +20881,158 @@
   "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.readme": {
    "deps_hash": "c174245ba2ae",
    "out_degree": 54
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-actual_r1_derivation-ddcf0e7425c1c81c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-actual_r1_preregistration-bc048351d5b6482d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-actual_r1_review-b68626a8cd92c405": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-actual_r1_review-e6e33c9855fac926": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-artifact_plan-88fe929b75c29baa": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-assumptions_and_imports-6fde2a74731cdfd0": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-claim_status_certificate-d197fcba0e77ca60": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-controls_preregistration-70f3c106c801b133": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-derivation-55f5a4e94d945cc3": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-final_main66_validation-7924df3dfd482e60": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-final_validation-61c13e5cae19471f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_not-cbddff81440b3c19": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-generator_normalization_correction-3677fe3c989a4b82": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-goal-ba656aa86e9d2ae9": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-handoff-8c0cffd89510f74a": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-literature_bridges-ae5f5c8723a6a117": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-no_go_discipline_checklist-dc918699e447b583": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-no_go_ledger-e50f67e1d0650414": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-opportunity_queue-2f31dcb0a1a1195c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-parent_validation_metadata_catchup-af13a255467d5eb8": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-pr_backlog-fe013018afe4be5d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-pr_body-ff8f204868c63144": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-preregistration-39a046d3644d7ade": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-preregistration-ab4d5238c7ab1ad3": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-proof_review-e640563f3b04a488": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-restricted_matrix_strengthening-5e080b3fcf704c51": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-review-818868bd22c7c6c1": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-review_history-68ab8fd6caeaa94e": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_canonical_port_review-086a49565d6feb83": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_correction_review-e914a5c4ee6056e3": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_derivation-9ef44bb2da9d373c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_derivation_before_generator_normalization_224fa648-224fa648db011ab7": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_native_review-4f94cd015b61b7bd": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_review-007283ac7cbe03a3": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-route_portfolio-9f34935b612d6b7a": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-scoped_validation-3a3215bf937b2b30": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-trace_gate-f6854afb6c690994": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.readme": {
+   "deps_hash": "0b2e6afe4f09",
+   "out_degree": 37
   },
   "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.canonical-cold-review.pr8038-evidence-canonical-cold-review-final_delta_confirmation": {
    "deps_hash": "e3b0c44298fc",

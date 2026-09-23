@@ -1,0 +1,44 @@
+Route-2 source/readout density-primitive inventory no-go
+Scope: named current source/readout authority bank; future nonlinear primitives remain open
+
+PART 1: exact inverse-square density primitive consequences
+PASS: O_h projector weights are w_E=1/3 and w_T=1/2
+PASS: one inverse-density factor is 3/2 -- 3/2
+PASS: two inverse-density factors give lambda=9/4 -- 9/4
+PASS: lambda=9/4 with q_T=5/6 gives q_E=15/8 -- 15/8
+PASS: q_E=15/8 gives rho_E=21/4 -- 21/4
+PASS: with shell T/E=-2 the center ratio is c_TE=-8/9 -- -8/9
+
+PART 2: exponent scan over channel weight powers
+  p=-2: lambda=9/4, q_E=15/8, rho_E=21/4, c_TE=-8/9
+  p=-1: lambda=3/2, q_E=5/4, rho_E=3/2, c_TE=-4/3
+  p= 0: lambda=1, q_E=5/6, rho_E=-1, c_TE=-2
+  p= 1: lambda=2/3, q_E=5/9, rho_E=-8/3, c_TE=-3
+  p= 2: lambda=4/9, q_E=10/27, rho_E=-34/9, c_TE=-9/2
+PASS: among tested natural powers only p=-2 gives the endpoint target
+PASS: one inverse-density power gives the wrong E lift -- q_E=5/4, rho_E=3/2, c_TE=-4/3
+
+PART 3: quote-anchored current-bank inventory
+PASS: quadratic Schur note names inverse-square as the gap, not a derived primitive -- QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md; missing=0
+PASS: E-center blindness note names the necessary new ingredient -- QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md; missing=0
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_source_readout_density_primitive_inventory_no_go_2026_06_21.py", line 340, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_source_readout_density_primitive_inventory_no_go_2026_06_21.py", line 324, in main
+    quote_inventory_checks()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_source_readout_density_primitive_inventory_no_go_2026_06_21.py", line 196, in quote_inventory_checks
+    text = read_doc(doc_name)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_source_readout_density_primitive_inventory_no_go_2026_06_21.py", line 42, in read_doc
+    return (DOCS / name).read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md'

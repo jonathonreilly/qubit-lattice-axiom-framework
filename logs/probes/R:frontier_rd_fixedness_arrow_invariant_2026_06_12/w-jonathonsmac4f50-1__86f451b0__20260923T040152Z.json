@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_rd_fixedness_arrow_invariant_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_rd_fixedness_arrow_invariant_2026_06_12.py",
+ "seed": 36112,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040152Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8db4ba7a5c24b57e9e48524a0190469c879c36017418f47db8060342fe4aa496",
+ "stdout_tail": "ons = {1/2}  [selected_phi={1/2}]\n[PASS] F4.4 g admissible set {0,1/2,inf} minus side-condition exclusions = {1/2}  [selected_g={1/2}]\n[PASS] F4.5 negative control: stability verdict differs while fixedness-based selection is invariant  [phi=repeller, g=attractor]\n[PASS] B1 separatrix dependency contains the supplied phi map definition\n[PASS] B2 separatrix dependency contains its physical-boundary sentence\n[PASS] B3 thermalizing dependency contains the supplied g map definition\n[PASS] B4 thermalizing dependency contains its physical-boundary sentence\n[PASS] B5 this note contains the required firewall sentences\n[PASS] B6 closing language is absent\n[PASS] B7 markdown link inventory is exactly the two load-bearing dependency links  [links=['FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md', 'FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md']]\n[PASS] B8 context companions are backticked only, not markdown-linked\n[PASS] B9 No-promotion statement is present\n\ngit diff --stat\n ...preparation_tournament_cycle622_receipt_2026_07_22.json |  2 +-\n ...iangulation_covariance_cycle695_receipt_2026_07_25.json |  2 +-\n ...bic_covariance_ceiling_cycle690_receipt_2026_07_24.json |  2 +-\n ...arrier_three_way_split_cycle693_receipt_2026_07_25.json |  2 +-\n ...er_symplectic_dilation_cycle704_receipt_2026-08-01.json |  2 +-\n ...ield_update_response_tournament_receipt_2026_07_23.json | 14 +++++++-------\n 6 files changed, 12 insertions(+), 12 deletions(-)\nSUMMARY: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040153Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_rd_fixedness_arrow_invariant_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

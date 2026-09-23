@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_theta_slice_channel_density_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_theta_slice_channel_density_no_go_2026_06_21.py",
+ "seed": 36058,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040058Z",
+ "elapsed_s": 2.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b005a688dd900454af73314af4cc8d0c78d17036be8f8cbf1f2d7bf190e4cae3",
+ "stdout_tail": "through the same V_R(t) at the 4 tested times (0.0, 0.5, 1.0, 2.0) and each mode's center/shell ratio, and their quotient, come back unchanged, so rho_E=0 keeps lambda=6/5 and rho_E=21/4 keeps lambda=9/4 rather than being mixed.\nper_block: resolved -- the restricted carrier space splits into an E block on coordinates {0,2} and a T block on {1,3}; P(rho_E) is block-diagonal across that split, so the whole rho_E freedom sits inside the E block while the T block stays pinned at (-2, 2). The typed graph carries the same block structure: the 5 current theta-to-slice edges and the 3 missing-primitive edges form two components with no edge joining them, which is precisely what PART 4 certifies as unreachability.\nlattice_wide: resolved as a finite-N statement -- Lambda_R is the Schur complement of the 15^3 negative Laplacian onto the trace set at cutoff radius 4.0, a whole-grid operator, and it is certified whole here: symmetric to EXACT_TOL and positive definite with smallest eigenvalue 1.148587. Because V_R(t)=exp(-t Lambda_R) u_* multiplies every source channel identically, this entire lattice-scale factor cancels out of each ratio. One grid size (15) and one cutoff (4.0) are executed; no thermodynamic limit.\n\nPASS=16 FAIL=0 TOTAL=16\nVERDICT: scoped no-go. The exact rank-one theta-to-slice coupling preserves source-side readout ratios and cannot generate the missing channel-density normalization or inverse-square covariance primitive; the remaining blocker is source/readout-side.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040101Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

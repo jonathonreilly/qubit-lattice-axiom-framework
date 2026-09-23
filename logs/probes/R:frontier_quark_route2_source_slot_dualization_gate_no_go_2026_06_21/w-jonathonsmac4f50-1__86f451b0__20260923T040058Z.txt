@@ -1,0 +1,77 @@
+Route-2 source-slot dualization gate
+Status: no-go for current conditional time-family two-slot shortcut; not an audit verdict.
+TRACE: negative_route_pruning
+
+PART 1: exact source/readout slot arithmetic
+PASS: same-domain weights are w_E=1/3 and w_T=1/2
+PASS: target total inverse-factor count is p=2
+PASS: T-side conditional values are q_T=5/6 and shell T/E=-2
+                         no-dual: source=0, readout=0, p=0, lambda=1, q_E=5/6, rho_E=-1, center T/E=-2
+PASS: no-dual endpoint arithmetic matches the slot-count model
+      no inverse Schur factor
+      source-only-canonical-dual: source=1, readout=0, p=1, lambda=3/2, q_E=5/4, rho_E=3/2, center T/E=-4/3
+PASS: source-only-canonical-dual endpoint arithmetic matches the slot-count model
+      source side only
+     readout-only-canonical-dual: source=0, readout=1, p=1, lambda=3/2, q_E=5/4, rho_E=3/2, center T/E=-4/3
+PASS: readout-only-canonical-dual endpoint arithmetic matches the slot-count model
+      readout side only
+        two-sided-canonical-dual: source=1, readout=1, p=2, lambda=9/4, q_E=15/8, rho_E=21/4, center T/E=-8/9
+PASS: two-sided-canonical-dual endpoint arithmetic matches the slot-count model
+      source and readout
+     readout-only-inverse-square: source=0, readout=2, p=2, lambda=9/4, q_E=15/8, rho_E=21/4, center T/E=-8/9
+PASS: readout-only-inverse-square endpoint arithmetic matches the slot-count model
+      readout row supplies p=2 by itself
+
+PART 2: current-family slot count
+PASS: current Xi_P family has source factor count zero in the model
+PASS: readout-only canonical dual gives p=1 and misses rho_E=21/4
+PASS: p=2 requires either source+readout canonical dual or readout-only inverse-square
+
+PART 3: authority markers for one-slot time family
+PASS: authority file exists: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
+PASS: authority file exists: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: authority file exists: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md
+PASS: authority file exists: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: Xi_P(t ; c) = (P_R c)
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: Given any admissible readout map `P_R`
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: selects one unique `P_R`
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: Once an admissible readout map `P_R` is chosen
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: `P_R` is algebraic once specified
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md contains marker: `|| (P_R c) ||` factor cancels
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md contains marker: right factor `V_R(t)`
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: P_R = [[alpha_E, 0, beta_E, 0]
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: irreducible missing map entry
+PASS: authority bank does not contain source-slot marker: source preparation
+PASS: authority bank does not contain source-slot marker: source-preparation
+PASS: authority bank does not contain source-slot marker: source map
+PASS: authority bank does not contain source-slot marker: source-map
+PASS: authority bank does not contain source-slot marker: source slot
+PASS: authority bank does not contain source-slot marker: S_dual
+PASS: authority bank does not contain source-slot marker: S_R c
+PASS: authority bank exposes P_R c but no independent source-preparation slot
+
+PART 4: note and status firewall
+PASS: note contains marker: **Actual current-surface status:** no-go for current conditional time-family two-slot shortcut
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not resolve the parent
+PASS: note contains marker: does not rule out a future source-preparation theorem
+PASS: note contains marker: current `Xi_P` family has one readout slot and no independent source-preparation slot
+PASS: note contains marker: readout-only canonical dualization gives `p=1`
+PASS: note avoids overclaim marker: legacy source-status certificate
+PASS: note avoids overclaim marker: parent-closure phrase
+PASS: note avoids overclaim marker: current-surface endpoint-derivation phrase
+PASS: note avoids overclaim marker: audit-ratification phrase
+PASS: note avoids overclaim marker: branch-local status-promotion phrase
+PASS: note avoids overclaim marker: future-retention phrase
+PASS: note avoids overclaim marker: promotion-to-retention phrase
+PASS: note avoids overclaim marker: no-future-theorem phrase
+
+PART 5: N5 execution certificate
+per_element: checked -- nothing is compared as a summary. Every one of the 5 slot cases is compared as a full five-component tuple, total count and lambda and q_E and rho_E and center T/E together, against its own expected entry, and on the documentary side 9 required markers and 7 forbidden slot markers are each resolved one string at a time in exact Fraction and literal-substring terms.
+per_site: checked and not executed -- a slot count is a statement about how many factors a formula carries, and formulas do not have sites. No configuration, carrier column or support geometry is instantiated anywhere in this file, so nothing here can be attributed to a location and nothing is.
+per_mode: checked, and honestly it is narrow -- the E and T channels enter only through the single weight ratio w_E/w_T = 2/3, of which each dual factor is one power. No E or T amplitude is formed and no channel is ever evaluated on its own, so the mode-level evidence here amounts to the fact that this one ratio, raised to the total factor count, reproduces the endpoint arithmetic.
+per_block: checked, and this is the class the no-go is written in -- the two slots, source and readout, are the blocks, and the executed finding is that only their sum is observable. The source-only and readout-only rows are literally identical at p = 1, both giving lambda 3/2 and rho_E 3/2, and the two-sided and readout-only-inverse-square rows are likewise identical at p = 2, both giving rho_E 21/4, so the endpoint data cannot attribute a factor to a block even when the total is right.
+lattice_wide: checked and not executed, and two scope facts belong on the record here rather than being left implicit -- there is no lattice, volume or limit, so the class has no referent; and the slot-count model itself is a configured table in this file, so PART 1 certifies that the arithmetic agrees with that table rather than deriving the model from the time family, while the claim that the current family carries zero source slots rests on the lexical absence scan over the 4 authority files.
+
+TOTAL: PASS=46, FAIL=0
+VERDICT: no-go for the current conditional time-family two-slot shortcut. The existing Xi_P family has no source-preparation dual slot; p=2 still requires a new source-preparation theorem or a readout-only inverse-square coefficient theorem.

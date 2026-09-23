@@ -1,0 +1,54 @@
+Cycle 708 conditional signed-stabilizer classifier for a supplied K map
+note PHYSICAL_SOURCE_EDIT_SET_SIGNED_STABILIZER_CLASSIFICATION_CYCLE708_NOTE_2026-08-02.md
+battery one-edit, two-distinct-axis-edits, three-distinct-axis-edits, and inversion-pair; sizes 3 and 7
+group_order G48 order 48 distinct 48 proper 24 equals module FRAMES set PASS
+constant_sign_closure CS order 12 closed under all 144 products PASS
+constant_sign_proper CS_proper order 6 FRAMES indices [1, 4, 9, 15, 18, 23] PASS
+sign_character sx multiplicative on all 144 CS pairs PASS
+stabilizer_orders L=3 Stab48 orders one_edit 8 two_distinct_axis_edits 2 three_distinct_axis_edits 1 inversion_pair 16 PASS
+stabilizer_intersections L=3 CS^Stab orders 2 1 1 4 minus-sign member no no no yes PASS
+product_counting L=3 CS.Stab set orders 48 24 12 48 equal formula 48 24 12 48 PASS
+coframe_unclipped L=3 principal coframe unclipped on all 57 chains pd_min 4.8e-01 PASS
+state_collapse L=3 state collapse over every lawful representative 48 12 6 96 PASS
+rho_equality L=3 rho bit-equality over the same representatives PASS
+pointwise_transport L=3 distinct representatives 12 12 6 12 worst plus 6.2e-15 minus 2.7e-11 PASS
+class_agreement L=3 one_edit measured 12/12/0/0 predicted 12/12/0/0 agreement 24/24 PASS
+class_agreement L=3 two_distinct_axis_edits measured 6/6/0/12 predicted 6/6/0/12 agreement 24/24 PASS
+class_agreement L=3 three_distinct_axis_edits measured 3/3/0/18 predicted 3/3/0/18 agreement 24/24 PASS
+class_agreement L=3 inversion_pair measured 0/0/24/0 predicted 0/0/24/0 agreement 24/24 PASS
+branch_separation L=3 one_edit floors plus 4.4e-15 minus 2.5e-12 both none broken none sep none PASS
+branch_separation L=3 two_distinct_axis_edits floors plus 3.7e-15 minus 2.4e-11 both none broken 5.7e-02 sep 2.3e+09 PASS
+branch_separation L=3 three_distinct_axis_edits floors plus 6.2e-15 minus 2.7e-11 both none broken 8.5e-02 sep 3.1e+09 PASS
+branch_separation L=3 inversion_pair floors plus none minus none both 6.4e-12 broken none sep none PASS
+proper_only_rejector L=3 lawful 6 vs measured 12 on two_distinct_axis_edits mismatch 6 PASS
+determinant_sign_rejector L=3 misclassifies 12 of 24 on one_edit PASS
+wrong_sign_rejector L=3 one_edit minimum wrong-sign distance on plus frames 5.0e-02 minus-frame 5.0e-02 sep 2.0e+10 PASS
+wrong_sign_rejector L=3 three_distinct_axis_edits minimum wrong-sign distance on plus frames 4.2e-02 minus-frame 4.2e-02 sep 1.5e+09 PASS
+inversion_stabilizer L=3 -I in Stab48(inversion_pair) True PASS
+inversion_corollaries L=3 inversion_pair palindrome 6.4e-12 centre 6.5e-12 antisymmetry 1.3e-11 PASS
+separation_floor L=3 smallest off-class distance over worst lawful floor 1.5e+09 across 4 rows PASS
+stabilizer_orders L=7 Stab48 orders one_edit 8 two_distinct_axis_edits 2 three_distinct_axis_edits 1 inversion_pair 16 PASS
+stabilizer_intersections L=7 CS^Stab orders 2 1 1 4 minus-sign member no no no yes PASS
+product_counting L=7 CS.Stab set orders 48 24 12 48 equal formula 48 24 12 48 PASS
+coframe_unclipped L=7 principal coframe unclipped on all 57 chains pd_min 4.2e-01 PASS
+state_collapse L=7 state collapse over every lawful representative 48 12 6 96 PASS
+rho_equality L=7 rho bit-equality over the same representatives PASS
+pointwise_transport L=7 distinct representatives 12 12 6 12 worst plus 1.4e-13 minus 1.6e-10 PASS
+class_agreement L=7 one_edit measured 12/12/0/0 predicted 12/12/0/0 agreement 24/24 PASS
+class_agreement L=7 two_distinct_axis_edits measured 6/6/0/12 predicted 6/6/0/12 agreement 24/24 PASS
+class_agreement L=7 three_distinct_axis_edits measured 3/3/0/18 predicted 3/3/0/18 agreement 24/24 PASS
+class_agreement L=7 inversion_pair measured 0/0/24/0 predicted 0/0/24/0 agreement 24/24 PASS
+branch_separation L=7 one_edit floors plus 5.2e-14 minus 8.2e-11 both none broken none sep none PASS
+branch_separation L=7 two_distinct_axis_edits floors plus 1.4e-13 minus 1.5e-10 both none broken 4.1e-02 sep 2.6e+08 PASS
+branch_separation L=7 three_distinct_axis_edits floors plus 1.3e-13 minus 1.6e-10 both none broken 1.2e-01 sep 7.7e+08 PASS
+branch_separation L=7 inversion_pair floors plus none minus none both 1.2e-10 broken none sep none PASS
+proper_only_rejector L=7 lawful 6 vs measured 12 on two_distinct_axis_edits mismatch 6 PASS
+determinant_sign_rejector L=7 misclassifies 12 of 24 on one_edit PASS
+wrong_sign_rejector L=7 one_edit minimum wrong-sign distance on plus frames 1.2e-02 minus-frame 1.2e-02 sep 1.5e+08 PASS
+wrong_sign_rejector L=7 three_distinct_axis_edits minimum wrong-sign distance on plus frames 3.2e-02 minus-frame 3.2e-02 sep 2.0e+08 PASS
+inversion_stabilizer L=7 -I in Stab48(inversion_pair) True PASS
+inversion_corollaries L=7 inversion_pair palindrome 1.2e-10 centre 3.4e-11 antisymmetry 1.2e-10 PASS
+separation_floor L=7 smallest off-class distance over worst lawful floor 1.5e+08 across 4 rows PASS
+size_independence Stab48 member index lists equal at L=3 and L=7 for all four domains PASS
+sign_single_valuedness on every lawful frame one_edit 24 two_distinct_axis_edits 12 three_distinct_axis_edits 6 PASS
+TOTAL: PASS=95 FAIL=0

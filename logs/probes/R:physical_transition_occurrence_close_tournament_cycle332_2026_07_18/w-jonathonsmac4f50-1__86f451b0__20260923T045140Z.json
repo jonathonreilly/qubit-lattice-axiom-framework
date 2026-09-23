@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_transition_occurrence_close_tournament_cycle332_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_transition_occurrence_close_tournament_cycle332_2026_07_18.py",
+ "seed": 39099,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T045140Z",
+ "elapsed_s": 74.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1dae32b2feccd15ea0eaf00ff2726f17240bf394a66b18dfdc80836beb0bce6f",
+ "stdout_tail": "d': False, 'prior_candidate': 1, 'protected': ((1, 1, 1), (1, 1, 1), (1, 1, 1)), 'protected_flags': (1, 1, 1), 'inverse_recovered': ((1, 0, 0), (1, 0, 0), (1, 0, 0)), 'match_ready': (1, 1), 'current_transition': 1, 'receiver': (0, 1), 'single_replica_faults': [(0, 0, (1, 0)), (0, 1, (1, 0)), (0, 2, (1, 0)), (1, 0, (1, 0)), (1, 1, (1, 0)), (1, 2, (1, 0)), (2, 0, (1, 0)), (2, 1, (1, 0)), (2, 2, (1, 0))], 'fanout_deletions': [(0, 0, (1, 0)), (0, 1, (1, 0)), (1, 0, (1, 0)), (1, 1, (1, 0)), (2, 0, (1, 0)), (2, 1, (1, 0))], 'identity_splice': (1, 0), 'false_boundary_receiver': (1, 0)}, {'L': 6, 'held': True, 'prior_candidate': 1, 'protected': ((1, 1, 1), (1, 1, 1), (1, 1, 1)), 'protected_flags': (1, 1, 1), 'inverse_recovered': ((1, 0, 0), (1, 0, 0), (1, 0, 0)), 'match_ready': (1, 1), 'current_transition': 1, 'receiver': (0, 1), 'single_replica_faults': [(0, 0, (1, 0)), (0, 1, (1, 0)), (0, 2, (1, 0)), (1, 0, (1, 0)), (1, 1, (1, 0)), (1, 2, (1, 0)), (2, 0, (1, 0)), (2, 1, (1, 0)), (2, 2, (1, 0))], 'fanout_deletions': [(0, 0, (1, 0)), (0, 1, (1, 0)), (1, 0, (1, 0)), (1, 1, (1, 0)), (2, 0, (1, 0)), (2, 1, (1, 0))], 'identity_splice': (1, 0), 'false_boundary_receiver': (1, 0)}], 'single_replica_readiness_survivors': 0, 'fanout_deletion_readiness_survivors': 0, 'identity_splice_readiness_survivors': 0, 'fresh_replica_capacity_M2': 6, 'protected_history_M2': 9, 'conservative_source_matcher_history_receiver_M2': 1198}\nSUMMARY PASS 7 FAIL 0\nRESULT CYCLE332_TRANSITION_OCCURRENCE_CLOSE_GREEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045254Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

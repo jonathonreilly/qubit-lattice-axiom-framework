@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_symplectic_commutation_circuit_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_symplectic_commutation_circuit_probe_2026_07_15.py",
+ "seed": 36502,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040822Z",
+ "elapsed_s": 244.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e7add6af86180b8c7a713a26eac98bdd01dcb381bb9fad5f53e78d1d4a6010a9",
+ "stdout_tail": "PARITY 6 48 70892 0\nGRAPHS 24576 [417792, 811008] 0\nRESULT PHYSICAL_SYMPLECTIC_COMMUTATION\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T041226Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

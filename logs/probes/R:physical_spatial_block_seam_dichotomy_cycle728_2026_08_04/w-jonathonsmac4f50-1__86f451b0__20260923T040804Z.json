@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_spatial_block_seam_dichotomy_cycle728_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_spatial_block_seam_dichotomy_cycle728_2026_08_04.py",
+ "seed": 36484,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040804Z",
+ "elapsed_s": 6.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=65 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5195abbae83143133b39b4fbda8576fa6bfe8ba061b10f3ca6655b145df1ebca",
+ "stdout_tail": "xis_span_spectrum\": {\"0\": 5344, \"1\": 1744, \"2\": 4944, \"3\": 3040, \"4\": 2208}, \"spatial_larger_on\": 12208, \"spatial_range\": [3, 9], \"spatial_smaller_on\": 1952, \"spatial_spectrum\": {\"3\": 128, \"4\": 768, \"5\": 2816, \"6\": 4928, \"7\": 5760, \"8\": 2608, \"9\": 272}, \"transposed_range\": [3, 7], \"transposed_spectrum\": {\"3\": 432, \"4\": 2592, \"5\": 7488, \"6\": 4896, \"7\": 1872}}, \"claim_type\": \"bounded_theorem\", \"gates\": {\"fail\": 0, \"pass\": 65}, \"no_go_discipline\": {\"n5_certificate\": \"five resolution lines in primary cached stdout\", \"no_go_claim_shipped\": false, \"scope\": \"two exact finite exclusions only\", \"status\": \"PASS\"}, \"one_cell\": {\"ceiling_certificate\": {\"bound\": 128, \"denominator\": 3, \"equality_pieces\": 944, \"least_slack\": 0, \"numerator\": 384}, \"exact_bracket\": [108, 128], \"floor_certificate\": {\"bound\": 108, \"denominator\": 2, \"equality_pieces\": 1984, \"least_slack\": 0, \"numerator\": 216}, \"point_orbits\": 57, \"points_per_orbit\": 48}, \"schema\": \"physical-spatial-block-seam-dichotomy-cycle728-v2\", \"seam\": {\"crossing_pieces\": 11936, \"global_floor_status\": \"open; 216 is an attained value only\", \"least_confined_piece_charge\": 3, \"least_crossing_piece_charge\": 5, \"seam_respecting_exact_bracket\": [216, 256], \"slab_confined_pieces\": 5344}, \"status\": \"pass\", \"supplied_model\": {\"physical_simplex_identification_bridge\": \"open\", \"physical_tick_admissibility_bridge\": \"open\", \"piece_class\": \"five-corner normalized-volume-one simplices\", \"spatial_shape\": [2, 1, 1], \"tick_extent\": 1}}\nTOTAL: PASS=65 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040810Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

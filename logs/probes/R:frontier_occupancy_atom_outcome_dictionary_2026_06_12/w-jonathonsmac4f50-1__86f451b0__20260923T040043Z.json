@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_occupancy_atom_outcome_dictionary_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_occupancy_atom_outcome_dictionary_2026_06_12.py",
+ "seed": 36043,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040043Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=21 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "75ea14c3ed480f685bce8483c04a614216621a77c6ed2fb1e10378cf50728366",
+ "stdout_tail": "utcome-is-the-K/CPT-orbit quote present\n[PASS] (13) B-check: both flow notes' maps are present in their sources\n[PASS] (14) B-check: firewall sentences present  [cannot by itself discriminate, sharpening, not a correction, the occupancy binary stays open]\n[PASS] (15) B-check: positive closing language absent\n[PASS] (16) B-check: markdown link inventory is exactly the three dependency links  [links=[('`FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md`', 'FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md'), ('`FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md`', 'FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md'), ('`MINIMAL_AXIOMS_2026-06-05.md`', 'MINIMAL_AXIOMS_2026-06-05.md')]]\n[PASS] (17) B-check: companions are backticked context only, not markdown-linked\n[PASS] (18) B-check: canonical front matter and No-promotion statement present\n[PASS] (19) B-check: Boundary contains the required does-NOT clauses\n[FAIL] (20) B-check: note, runner, and cache are the only touched files in this spec path set\n[PASS] (21) B-check: Record guardrail states supplied-context and no-weight/no-occupancy boundary\n[PASS] (22) B-check: tri-guise language is supplied-label scoped\n==============================================================================\nTOTAL: PASS=21 FAIL=1\nSUMMARY: conditioned flow selects x*=1; dictionary choice maps that invariant selection to r=1/2 or r=1.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040044Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=21 FAIL=1' vs cache 'TOTAL: PASS=22 FAIL=0'"
+  ]
+ }
+}

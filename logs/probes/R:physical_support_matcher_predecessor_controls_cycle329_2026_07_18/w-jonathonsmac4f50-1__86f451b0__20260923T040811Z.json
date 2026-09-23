@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_support_matcher_predecessor_controls_cycle329_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_support_matcher_predecessor_controls_cycle329_2026_07_18.py",
+ "seed": 36491,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040811Z",
+ "elapsed_s": 11.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2ae273ee2ea5492cf16f5dbcd1178a0262800b90d75f40b1408e88e49bd4bc23",
+ "stdout_tail": "cessor_corruption_readiness_survivors': 0, 'missing_predecessors': [(3, 0, (1, 0)), (3, 1, (1, 0)), (3, 2, (1, 0)), (6, 0, (1, 0)), (6, 1, (1, 0)), (6, 2, (1, 0))], 'deletions': {'matcher_copy': (0, 1), 'readiness_copy': (1, 0)}, 'comparator_receiver_M2': 1089, 'integrated_Cycle326_M2': 1093, 'conservative_source_plus_receiver_M2': 1138, 'maximum_primitive_gate_support_M2': 3}\nDATA syndrome {'signature_rows': [(3, 9, 5), (6, 9, 5)], 'mixed_splice_false_positives': 0, 'false_negatives': 0, 'single_support_fault_false_positives': 0, 'support_delete_insert_false_positives': 0, 'predecessor_splice_readiness_survivors': 0, 'predecessor_corruption_readiness_survivors': 0, 'missing_predecessors': ((1, 0), (1, 0), (1, 0)), 'deletions': {'matcher_copy': (0, 1), 'readiness_copy': (1, 0)}, 'comparator_receiver_M2': 621, 'integrated_Cycle326_M2': 625, 'conservative_source_plus_receiver_M2': 670, 'maximum_primitive_gate_support_M2': 3}\nDATA certificate {'stage_rows': [(3, 135, 0), (6, 135, 0)], 'anti_splice_false_positives': 0, 'false_negatives': 0, 'support_corruption_survivors': 0, 'predecessor_splice_readiness_survivors': 0, 'deleted_stage_survivors': 0, 'missing_predecessors': ((1, 0), (1, 0), (1, 0)), 'deletions': {'target_stage': (0, 1), 'readiness_stage': (1, 0)}, 'comparator_receiver_M2': 1094, 'integrated_Cycle326_M2': 1098, 'conservative_source_plus_receiver_M2': 1143, 'maximum_primitive_gate_support_M2': 3}\nSUMMARY PASS 8 FAIL 0\nRESULT CYCLE329_PHYSICAL_MATCHER_READINESS_GREEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040822Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

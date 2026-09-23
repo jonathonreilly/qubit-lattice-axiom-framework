@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py",
+ "seed": 36064,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040104Z",
+ "elapsed_s": 13.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a33b512f234e9efbbb1a8620a413274eecb7d9d0dce3dc4faef52927ce61c7a8",
+ "stdout_tail": "enter entry, which is the whole point of the firewall, is only meaningful because the two bright modes are carried separately throughout.\nper_block: thin, and reported as thin -- the only block-against-block invariance actually driven by the rho_E dial here is the E-side pair, with E-shell certified unchanged and E-center certified to move. T-shell and T-center enter as printed ratios but are never put through the same dial in this file, so this runner supports a block statement over two of the four endpoint blocks and no more.\nlattice_wide: checked and not executed -- no lattice, no volume and no whole-system operator is built anywhere in this file, so there is no finite-N quantity to certify and no limit is taken. The deepest structure reached is the adapted seven-site basis sitting behind tensor_endpoint_data(), and it is already reduced to endpoint slopes before it arrives. The route classification in PART 2 is likewise an inventory of six documented routes, not a computation of any extended object.\n  provenance: PART 4 consumes a seeded global optimizer (differential_evolution with seed=83, then L-BFGS-B) via solve_anchored_surface(); no converged or fitted value from that stream is quoted above and this certificate re-derives nothing from it.\n\n========================================================================\nTOTAL: PASS=33, FAIL=0\n========================================================================\nStatus: exact negative boundary for the scalar-bypass route.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040117Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

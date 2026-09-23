@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_source_stabilizer_coset_collapse_k_sign_law_cycle707_2026_08_01",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_source_stabilizer_coset_collapse_k_sign_law_cycle707_2026_08_01.py",
+ "seed": 36477,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040757Z",
+ "elapsed_s": 6.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "14b9a8cb298224e10e3b9a743ee17a66555d048f7dfae9a0bc50854cd4aa44ce",
+ "stdout_tail": "SS G1.L7.minus branch max over 6 frames 3.1e-10\nPASS G1.L7.id identity total defect 0.0e+00\nPASS G2.L7 minus/plus floor 9.9e+02\nPASS G3.L7 mixed min d_e 6.3e-01 over 18 frames\nPASS G4.L7.cs parity not None -> law 6/6\nPASS G4.L7.mix parity None -> stated pointwise law fails 18/18\nPASS G4.L7.parity local/imported frame parity agree 24/24\nPASS G4.L7.imp improper det -1 parity match 6/6\nPASS G4.L7.rej wrong-sign d_K 9.9e-01\nPASS G6.L7.collapse decorated-domain equality g.dom == (g t).dom 24/24\nPASS G6.L7.images distinct domain images 6\nPASS G7.L7.plus chi=+1 multiset max 2.0e-13\nPASS G7.L7.minus chi=-1 multiset max 3.1e-10\nPASS G7.L7.counts chi split 12/12\nnote G7.L7 plus-compare on a minus frame 4.1e-02 unscored\nPASS G8.L7.rho.minus d_rho 0.0e+00\nPASS G8.L7.rho.plus d_rho 0.0e+00\nPASS G8.L7.b.minus d_b 1.0e-14\nPASS G8.L7.b.plus d_b 1.8e-15\nPASS G8.L7.eps.minus d_eps 1.5e-09 over 100 d_b 1.0e-12\nPASS G8.L7.eps.plus d_eps 7.2e-13\nnote G8.L7 minus d_len 2.7e-10 unscored\nPASS G10.L7.mz m_z = diag(1,1,-1) fixes x5y7\nPASS G10.L7.classes pp/mm/broken 6/6/12\nPASS G10.L7.collapse coset 12/12 decorated-domain-equal 12/12\nPASS G10.L7.domain x5y7 clip quarantine engaged; base 24 frame range 24-28 pd_min -5.1e-01\nCONDITIONAL_ON_CLIP G10.L7.pp clipped-surrogate pp multiset max 6.9e-13\nCONDITIONAL_ON_CLIP G10.L7.mm clipped-surrogate mm multiset max 5.5e-10\nCONDITIONAL_ON_CLIP G10.L7.broken clipped-surrogate broken min over both compare signs 1.0e-01\nTOTAL: PASS=71 FAIL=0 CONDITIONAL_ON_CLIP=6\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040804Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

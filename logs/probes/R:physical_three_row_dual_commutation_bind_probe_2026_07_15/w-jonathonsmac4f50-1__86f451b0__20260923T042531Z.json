@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_three_row_dual_commutation_bind_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_three_row_dual_commutation_bind_probe_2026_07_15.py",
+ "seed": 37531,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T042531Z",
+ "elapsed_s": 77.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6c7b4dc79fc174e7733a9dc2a0dd920f152900b52faecf66c33df45dd115d622",
+ "stdout_tail": "PATH_CONTACTS 2946 2958\nSMOKE True (2957, 23564, 12, 33736, 2956) EXPECTED ('H1', 'H0')\nRESULT PHYSICAL_THREE_ROW_DUAL_COMMUTATION_BIND\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T042649Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

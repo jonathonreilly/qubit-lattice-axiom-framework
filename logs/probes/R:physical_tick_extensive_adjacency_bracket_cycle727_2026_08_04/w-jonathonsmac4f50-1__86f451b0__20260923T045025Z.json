@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04.py",
+ "seed": 39025,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T045025Z",
+ "elapsed_s": 22.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=50 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "67d8db4517e429c09c11fa0ef30676a975ddb119b7ee5254f54a85baaf2d8b2e",
+ "stdout_tail": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b\", \"docs/MINIMAL_AXIOMS_2026-06-29.md\": \"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\", \"docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md\": \"f080cc51bda354b6dd780c3bb67e81a6a0f95cc25a71153c23998100d04aa8e9\", \"docs/PHYSICAL_TICK_EXTENSIVE_ADJACENCY_BRACKET_CYCLE727_NOTE_2026-08-04.md\": \"69659c87e67b04ef00b06c0f91e714e28c8411752426c83d8fc96a1e536f2b26\"}, \"no_go_discipline\": {\"checklist\": \"committed N1-N8 record in the note\", \"n5_certificate\": \"five resolution lines in this stdout\", \"no_go_shipped\": false, \"status\": \"PASS\"}, \"open_bridges\": [\"physical rule-to-tick realization\", \"framework selection of corner-simplex assembly cells\", \"framework selection of zero slab-coordinate charge\", \"coarser, noncorner, nonsimplicial, longer-run, larger-block, and continuum extension\"], \"review_loop\": [{\"date\": \"2026-08-12\", \"disposition\": \"FIX_THEN_PROCEED\", \"fix\": \"narrowed the claim to the supplied two-slab corner-simplex model; made the runner exact and fail closed; bound declared premises and the independent checker; replaced raw stdout with canonical caches; added receipt, harness, graph, hostile controls, and N1-N8 surfaces\", \"iteration\": 1, \"reviewer\": \"Sol\"}], \"sample_points\": {\"boundary_incidences\": 0, \"distinct_membership_rows\": 342, \"orbits\": 364, \"points\": 17472}, \"source_sha256\": \"fad12066154112242965529c99d7b98c6eb4afc2d724d3794314ce7d7cac9173\"}\nTOTAL: PASS=50 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045048Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04.txt against the .txt beside this log"
+  ]
+ }
+}

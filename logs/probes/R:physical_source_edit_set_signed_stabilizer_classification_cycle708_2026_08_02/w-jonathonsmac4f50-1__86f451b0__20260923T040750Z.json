@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_source_edit_set_signed_stabilizer_classification_cycle708_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_source_edit_set_signed_stabilizer_classification_cycle708_2026_08_02.py",
+ "seed": 36470,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040750Z",
+ "elapsed_s": 6.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=95 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d20456df566de08bd17a99a5a076b91dfc19137586fafa1ea2a99f93ee1bff97",
+ "stdout_tail": "predicted 3/3/0/18 agreement 24/24 PASS\nclass_agreement L=7 inversion_pair measured 0/0/24/0 predicted 0/0/24/0 agreement 24/24 PASS\nbranch_separation L=7 one_edit floors plus 5.2e-14 minus 8.2e-11 both none broken none sep none PASS\nbranch_separation L=7 two_distinct_axis_edits floors plus 1.4e-13 minus 1.5e-10 both none broken 4.1e-02 sep 2.6e+08 PASS\nbranch_separation L=7 three_distinct_axis_edits floors plus 1.3e-13 minus 1.6e-10 both none broken 1.2e-01 sep 7.7e+08 PASS\nbranch_separation L=7 inversion_pair floors plus none minus none both 1.2e-10 broken none sep none PASS\nproper_only_rejector L=7 lawful 6 vs measured 12 on two_distinct_axis_edits mismatch 6 PASS\ndeterminant_sign_rejector L=7 misclassifies 12 of 24 on one_edit PASS\nwrong_sign_rejector L=7 one_edit minimum wrong-sign distance on plus frames 1.2e-02 minus-frame 1.2e-02 sep 1.5e+08 PASS\nwrong_sign_rejector L=7 three_distinct_axis_edits minimum wrong-sign distance on plus frames 3.2e-02 minus-frame 3.2e-02 sep 2.0e+08 PASS\ninversion_stabilizer L=7 -I in Stab48(inversion_pair) True PASS\ninversion_corollaries L=7 inversion_pair palindrome 1.2e-10 centre 3.4e-11 antisymmetry 1.2e-10 PASS\nseparation_floor L=7 smallest off-class distance over worst lawful floor 1.5e+08 across 4 rows PASS\nsize_independence Stab48 member index lists equal at L=3 and L=7 for all four domains PASS\nsign_single_valuedness on every lawful frame one_edit 24 two_distinct_axis_edits 12 three_distinct_axis_edits 6 PASS\nTOTAL: PASS=95 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040757Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_source_edit_set_signed_stabilizer_classification_cycle708_2026_08_02.txt against the .txt beside this log"
+  ]
+ }
+}

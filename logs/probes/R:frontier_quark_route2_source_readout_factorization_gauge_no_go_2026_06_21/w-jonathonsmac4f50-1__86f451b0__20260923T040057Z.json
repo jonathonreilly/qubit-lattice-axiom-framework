@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.py",
+ "seed": 36057,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040057Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2e22a1211b0f2155e94e67d7d7ee18a633d86efac6fd6e19cfdeaed8e80eb090",
+ "stdout_tail": "wise with different factors on the two modes, 5 on E and 7 on T, and the executed result is a clean split between what survives and what does not: the per-mode products are invariant at Q_E = 1 and Q_T = 1, while the per-mode attribution moves, the source ratio going from 9/4 to 45/28 and the readout ratio from 4/9 to 28/45. Mode-resolved products cannot see the split.\nper_block: checked, but only as a census, and one of the blocks is inert -- the three O_h projector blocks are named once with their weights, after which the A1 block plays no further part in any computation in this file. Only the E and T blocks feed the degree and gauge arguments, so the block-level evidence here is two weights in use and one weight recorded but unused.\nlattice_wide: checked and not executed -- no lattice, no volume and no limit is taken. The scope of the degeneracy claim also deserves an exact reading: it is exhibited by 5 named degree splits sharing total degree two and by one explicit gauge pair, so the executed evidence is a demonstration that the endpoint product fails to separate these cases, not a classification of the full gauge orbit.\n\n====================================================================================\nPASS=13 FAIL=0\n\nVERDICT: no-go. Product-level endpoint/readout algebra fixes only total reciprocal\ndegree two. It cannot certify the source/readout split or two independent dual legs\nwithout an additional leg-level factorization primitive that fixes the channel gauges.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040058Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

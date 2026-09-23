@@ -1,0 +1,43 @@
+{
+ "task": "R:frontier_quark_route2_t_row_primitive_minimality_selector_boundary_2026_06_22",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_t_row_primitive_minimality_selector_boundary_2026_06_22.py",
+ "seed": 36058,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040058Z",
+ "elapsed_s": 0.3,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6b6256fc4aa7d0991408025339d76b92ad31d4ebf8d2290fff64fc629489fb90",
+ "stdout_tail": "========================================\n\nA. Source-note and premise boundary\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_t_row_primitive_minimality_selector_boundary_2026_06_22.py\", line 269, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_t_row_primitive_minimality_selector_boundary_2026_06_22.py\", line 93, in main\n    note = read(NOTE)\n           ^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_t_row_primitive_minimality_selector_boundary_2026_06_22.py\", line 66, in read\n    return path.read_text(encoding=\"utf-8\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/QUARK_ROUTE2_T_ROW_PRIMITIVE_MINIMALITY_SELECTOR_BOUNDARY_NOTE_2026-06-22.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040058Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=74, FAIL=0' and this run printed none",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/QUARK_ROUTE2_T_ROW_PRIMITIVE_MINIMALITY_SELECTOR_BOUNDARY_NOTE_2026-06-22.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040058Z"
+ }
+}

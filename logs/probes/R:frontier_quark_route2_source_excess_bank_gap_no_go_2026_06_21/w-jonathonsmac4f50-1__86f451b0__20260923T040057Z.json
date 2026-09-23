@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.py",
+ "seed": 36057,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f451b0",
+ "started_utc": "20260923T040057Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=60, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "352bc21668be2783a0f62c85d3b88688300e8761f0be5baec94ccf5c816089fe",
+ "stdout_tail": "inverse factor and hence rho_E = 3/2. What the certificate must add is that this is exactly where the mode route stops. The residual factor 7/2 separating that result from the target is not produced by any weight, ratio or power of the two modes in this file; it is defined as the quotient and then shown to be unsourced.\nper_block: checked, and the two halves of the bank argument are deliberately not symmetric. The presence half is closed block by block, each of the 7 files carrying its own anchor set and failing on its own; the absence half is evaluated against the concatenation of all seven, so a missing marker is certified bank-wide but is not attributed to any individual file. That asymmetry is a real limit of the executed evidence and is recorded here rather than smoothed over.\nlattice_wide: checked and not executed -- no lattice, no volume and no asymptotic regime is present, so the class has no referent in this runner. The one genuinely bank-wide object is the absence sweep, and its nature should be stated precisely: it is lexical, asserting that strings such as the tilt value and the source-map symbols do not occur across the seven files. That establishes the bank does not currently state the primitive; it does not establish that no such primitive could be stated.\n\nTOTAL: PASS=60, FAIL=0\nVERDICT: bounded current-bank no-go. The normalized source-excess target is b_E/a_E=7/2, but the named current Route-2 source/readout bank has no typed primitive deriving that target.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T040057Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

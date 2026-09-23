@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_blind_walk_a_scalar_hop_weighted_by_the_twist_of_the_coin_along_the_bond_2026_09_21.py
 runner_sha256: ffeb37cc44ceb7ff9351f99b252da813c3875179ddd5094ef17acca4c2caeb9a
-input_fingerprint_sha256: c121877a03c83639c5f49e9115f5509f919c440e57f9a813915e4705c83570f4
+input_fingerprint_sha256: 40ccd2ea8d3fa5a66341ce9a6964ca3c773bf5316976891d5de441e865e567a7
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 5.92
+elapsed_sec: 6.44
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

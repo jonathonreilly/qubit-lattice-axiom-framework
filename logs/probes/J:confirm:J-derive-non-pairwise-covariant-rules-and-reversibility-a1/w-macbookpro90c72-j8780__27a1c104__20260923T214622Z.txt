@@ -1,0 +1,4 @@
+menu 2 ring 4: unknowns 16 rows 120 nullity 11 rank 5
+menu 2 ring 5: unknowns 16 rows 496 nullity 11 rank 5
+HIT: confirmed - on rings with past {x-1,x,x+1} the reversible nullspace has dimension 11 for menu 2 on rings 4 and 5 (16 unknowns; 120 and 496 constraints)
+SUMMARY: confirmed the exact ring census in S4 for menu 2; the two-body exchange-symmetric family matches that nullity

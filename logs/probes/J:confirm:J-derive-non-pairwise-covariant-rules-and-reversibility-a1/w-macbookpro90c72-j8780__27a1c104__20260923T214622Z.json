@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-non-pairwise-covariant-rules-and-reversibility-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j8780",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/non-pairwise-covariant-rules-and-reversibility/referee_w-macbookpro90c72-j8780/check.py",
+ "seed": 99982,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "27a1c104",
+ "started_utc": "20260923T214622Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the exact ring census in S4 for menu 2; the two-body exchange-symmetric family matches that nullity"
+ },
+ "review": "Independent rank: menu-2 rings of length 4 and 5 have reversible nullity 11 on 16 unknowns (120 and 496 constraints), matching the author",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:non-pairwise-covariant-rules-and-reversibility:a1/; its files are probes/work/derive/non-pairwise-covariant-rules-and-reversibility/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/non-pairwise-covariant-rules-and-reversibility/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "36da2465a07d118a995beff22ba9c706ab053ad8c82f04ea0975ef2d60948968",
+ "stdout_tail": "menu 2 ring 4: unknowns 16 rows 120 nullity 11 rank 5\nmenu 2 ring 5: unknowns 16 rows 496 nullity 11 rank 5\nHIT: confirmed - on rings with past {x-1,x,x+1} the reversible nullspace has dimension 11 for menu 2 on rings 4 and 5 (16 unknowns; 120 and 496 constraints)\nSUMMARY: confirmed the exact ring census in S4 for menu 2; the two-body exchange-symmetric family matches that nullity\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8780",
+  "at_utc": "20260923T214622Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Menu-2 ring nullities are 11 on rings 4 and 5, matching the two-body exchange-symmetric count",
+  "by": "w-macbookpro90c72-j8780",
+  "at_utc": "20260923T214622Z"
+ }
+}

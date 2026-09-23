@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py",
+ "seed": 32024,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "099dfcfc",
+ "started_utc": "20260923T025344Z",
+ "elapsed_s": 49.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f972bbc0cf2df83ffc443aa0b78f39498a112955bb8b2b5ee50c4fcc6f041533",
+ "stdout_tail": " = constant 21 M2 per cell', 'bounded_factors': 'onsite six-mode coin, local reverse, and outer stream/catch-up factors', 'not_supplied': 'global parity service, Jordan-Wigner string, host anchor selector, or recurrent projection', 'open': 'absolute preparation, locally enforced role, autonomous full-Hilbert extension, primitive synthesis, and full Fock'}\nFAIL N4 locks each decisive residual to its matching file and line :: [{'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 471, 'fragment': 'complete cross-anchor Gram', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 546, 'fragment': 'actual recurrent coin-plus', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 753, 'fragment': 'direct sparse composite law exactly', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 765, 'fragment': 'homogeneous composite matrix-unit grammar', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 882, 'fragment': 'multi-step orbit growth is counted', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 1039, 'fragment': 'coarse Cycle-219 mass fixture', 'match': False}]\nTOTAL PASS=24 FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T025433Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

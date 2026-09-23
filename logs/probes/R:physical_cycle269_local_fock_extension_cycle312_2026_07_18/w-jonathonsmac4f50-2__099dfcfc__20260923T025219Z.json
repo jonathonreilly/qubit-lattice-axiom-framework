@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_cycle269_local_fock_extension_cycle312_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py",
+ "seed": 31939,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "099dfcfc",
+ "started_utc": "20260923T025219Z",
+ "elapsed_s": 15.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b0fc5aa40a3021a02933f65d510542492f70da2b0f48547efce286197a731cd2",
+ "stdout_tail": "308 complement carrier, and Cycle-311 common M64', 'tested_numbers': 'n=0,1,2,3,4', 'tested_geometries': 'separated, neighboring, and same-cell simultaneous carriers', 'not_supplied': 'global parity service, global pair ordering, Jordan-Wigner string, or host branch', 'open': 'multi-carrier local extension, contact on the recurrent volume, primitive gate synthesis, and full Fock', 'authority': 'none', 'audit': 'unset'}\nFAIL N4 locks each decisive residual to its exact runner line :: [{'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 510, 'fragment': 'bounded encoded coin, reverse, and edge blocks', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 758, 'fragment': 'formal pair-row Gamma is exactly', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 904, 'fragment': 'literal products of even encoded pair creators', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 1000, 'fragment': 'commuting-pair multiplicative lift', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 1140, 'fragment': 'number-two-selective M2 gate closes', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 1208, 'fragment': 'incident-link Gauss census', 'match': False}]\nTOTAL PASS=29 FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T025235Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,52 @@
+
+===============================================================================
+A - Physical sensor, reserved EMPTY word, and exact table
+===============================================================================
+PASS A01 all-H1 EMPTY word is reserved
+PASS A02 source has exactly 59 supplied H0/H1 records
+PASS A03 monitored port and all seventeen additions start open
+PASS A04 sensor has four recorded transverse neighbours and two axial openings
+PASS A05 table has exactly openness and H1-wire rows
+PASS A06 two rows have 36 proper-cubic raw images
+PASS A07 new raw domain is disjoint from Cycle-82
+PASS A08 physical union has 4,624 single-valued raw rows
+PASS A09 supplied source has trivial proper-cubic stabilizer
+
+===============================================================================
+B - Exhaustive asynchronous openness-to-EMPTY graph
+===============================================================================
+PASS B01 graph has exactly 46 reachable states
+PASS B02 graph has exactly 73 append edges
+PASS B03 graph has one complete seventeen-record terminal
+PASS B04 graph has no parasite or output conflict :: ()
+PASS B05 no state enables more than candidate plus comparator
+PASS B06 states are exactly sensor then 0<=certificate<=candidate<=8 :: Counter()
+PASS B07 terminal candidate is physical 11111111
+PASS B08 terminal comparator certificates form the physical slot MATCH
+PASS B09 monitored port is never naturally writable
+
+===============================================================================
+C - Extra-neighbour sensitivity and all proper-cubic images
+===============================================================================
+PASS C01 all 3,375 pre-existing one-extra-neighbour controls are quiet :: []
+PASS C02 every one of the 134 bounded physical contents blocks EMPTY
+PASS C03 an otherwise unknown content also blocks EMPTY
+PASS C04 all 1,104 rotated reachable states have exact frontier :: []
+
+===============================================================================
+D - All 198 programs and exact remaining physical boundary
+===============================================================================
+PASS D01 all 198 programs remain distinct with EMPTY=11111111
+PASS D02 exact program bank has 613 open-direction slots
+PASS D03 exactly 195 programs consume at least one EMPTY slot
+PASS D04 program minimum Hamming distance remains one
+PASS D05 note exists and carries authority none
+PASS D06 note states the 59-record source is supplied
+PASS D07 note names the slot-placement residual
+PASS D08 note names late-composition scope
+PASS D09 note denies foundation and axiom effects
+
+SOURCE=59 CANONICAL=2 RAW=36 PHYSICAL_UNION_RAW=4624
+STATES=46 EDGES=73 TERMINALS=1 EXTRA_CONTROLS=3375 ROTATED_STATES=1104
+EMPTY_PROGRAM_SLOTS=613 PROGRAMS=198
+SUMMARY: 31 PASS / 0 FAIL

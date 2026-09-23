@@ -1,0 +1,31 @@
+{
+ "task": "R:outgoing_carrier_nonrecurrence_cycle286_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "outgoing",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/outgoing_carrier_nonrecurrence_cycle286_2026_07_17.py",
+ "seed": 65658,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8fef51cc",
+ "started_utc": "20260923T121418Z",
+ "elapsed_s": 34.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a0202a56fbef7f64db8844ba3fab698169bb35ee36bedf81d567325e7c121ec8",
+ "stdout_tail": ", 'state_rows': 24, 'state_failures': 0, 'local_check_or_Wilson_leakage': 0, 'matter_support_union_M2': 18, 'weights': ('57/64', '13/16', '31/32')}, {'L': 5, 'split': 'training', 'state_rows': 24, 'state_failures': 0, 'local_check_or_Wilson_leakage': 0, 'matter_support_union_M2': 18, 'weights': ('57/64', '13/16', '31/32')}, {'L': 6, 'split': 'held-out', 'state_rows': 24, 'state_failures': 0, 'local_check_or_Wilson_leakage': 0, 'matter_support_union_M2': 18, 'weights': ('57/64', '13/16', '31/32')}]\nPASS the Q_x endpoint and connected-code family remain covariant in all 24 proper-cubic frames and full L=3 translations :: {'combined_tests': 648, 'failures': [], 'outgoing_rail_is_carried_not_generated': True}\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE / SEMANTICS\nPASS lawful-domain controls and the complete supplied origin/rail/blank/boundary inventory remain explicit :: {'rejected_controls': 4, 'supplied': 'same code and Q_x; open rail and orientation; role word; unique origin token; all future blanks; positive-close core; one repeated update; forward-only lawful episode; boundary; trace/effect pairing', 'homogeneous_rail_genesis': False, 'unbounded_capacity': False, 'boundary_rule_derived': False, 'actual_branch_selected': False, 'carrier_is_Record': False, 'fact_copy_is_Record': False, 'step_count_is_physical_time': False, 'causal_duration_claim': False, 'shared_obstruction': False, 'axiom_pressure': False}\n\nSUMMARY PASS 14 FAIL 0\nRESULT CYCLE286_OUTGOING_CARRIER_NONRECURRENCE_GREEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T121453Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

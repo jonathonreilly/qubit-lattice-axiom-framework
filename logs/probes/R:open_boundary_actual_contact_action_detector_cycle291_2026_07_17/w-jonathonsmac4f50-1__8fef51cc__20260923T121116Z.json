@@ -1,0 +1,31 @@
+{
+ "task": "R:open_boundary_actual_contact_action_detector_cycle291_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "open",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/open_boundary_actual_contact_action_detector_cycle291_2026_07_17.py",
+ "seed": 65476,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8fef51cc",
+ "started_utc": "20260923T121116Z",
+ "elapsed_s": 36.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "66bd560f9cd93ce327b5d42da29185d15b0efce15d381c5eb115e28a711d69b7",
+ "stdout_tail": "eighbor synthesis not derived'}\nPASS the three-cell reference/action family is covariant under all 24 proper-cubic frames and full L=3 translations :: {'frame_translation_tests': 648, 'failures': []}\n\nOPEN-SINK COLLISION / CARRIED COVARIANCE\nPASS the supplied open three-lane sink is collision-free and carried covariantly in all 24 proper-cubic frames :: {'frame_translation_tests': 648, 'held_sink_role_sites': 141, 'failures': [], 'deliberate_dark_token_lane_merge_collisions': 47, 'origin_orientation_generated': False}\n\nLAWFUL DOMAIN / SUPPLIED IMPORTS / SEMANTIC FIREWALL\nPASS finite/open lawful-domain and semantic controls retain every supplied import without promoting export to physics it does not provide :: {'rejected_controls': 4, 'supplied': 'three-cell connected code; fixed-total-N reference; selected cells/modes; W_g fixture; recombiner/transfer; bright/dark convention; blank open rail; token, origin, orientation, boundary, fresh targets; forward grammar; trace/effect pairing', 'physical_recombiner_NN_synthesis': False, 'reference_preparation_derived': False, 'actual_branch_selected': False, 'Record_formed': False, 'clock_or_rate': False, 'energy_or_source_connector': False, 'shared_obstruction': False, 'axiom_pressure': False}\nDATA {'dark_weight': 0.6377951234122565, 'W_I_trace_distance': 0.7986207631988138, 'W_Wdagger_trace_distance': 0.9612752029752996, 'carrier_Y': 0.9612752029752996}\nSUMMARY PASS 14 FAIL 0\nRESULT CYCLE291_OPEN_BOUNDARY_ACTUAL_ACTION_DETECTOR_GREEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T121153Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

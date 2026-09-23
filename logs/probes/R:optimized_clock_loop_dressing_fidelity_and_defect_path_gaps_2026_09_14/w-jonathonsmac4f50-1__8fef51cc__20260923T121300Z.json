@@ -1,0 +1,35 @@
+{
+ "task": "R:optimized_clock_loop_dressing_fidelity_and_defect_path_gaps_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "optimized",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/optimized_clock_loop_dressing_fidelity_and_defect_path_gaps_2026_09_14.py",
+ "seed": 65580,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8fef51cc",
+ "started_utc": "20260923T121300Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c2b0b9bf04cf17756b932d5708ce17d2e3038eed4fd989830da7e7b04d6b4db3",
+ "stdout_tail": "2, 6.389759990454991e-06, np.float64(6.5215214912073065e-06)], [8, 0.55, 0.015190773974190108, np.float64(0.018182860023711046)], [8, 0.8, 0.16925743967300022, np.float64(0.2654876453388652)], [16, 0.8, 0.0264540946116097, np.float64(0.04392750129100151)], [32, 0.8, 0.0007415806658043545, np.float64(0.0012359597231348328)], [64, 0.8, 5.875367220739089e-07, np.float64(9.792278707205184e-07)], [128, 0.8, 3.68771679859492e-13, np.float64(6.146712966637581e-13)]]\nPASS strong_zero_mode\nPATH FIXTURES N,min_grid_gap,twisted_residual,required_neutrality_error= [[3, 0.9140320341797299, 1.7320508075688772, 1.7320508075688772], [5, 0.8123273597912638, 1.1755705045849463, 1.1755705045849463], [7, 0.7796817666577989, 0.8677674782351168, 0.8677674782351167]]\nPASS defect_paths_and_commutator\nTOTAL: PASS=4 FAIL=0\nper_element: charged polar optimizers, exact constraint commutation and root-fidelity source identities are checked.\nper_site: every divergence-free current of strips through thirteen links matches the dual qubit carrier.\nper_mode: exact parity blocks and an independent Majorana singular-value spectrum check the defect gap.\nper_block: clock interpolation endpoints and the indispensable electric-flow neutrality commutator are checked.\nlattice_wide: checked and not executed \u2014 no lattice-wide numerical execution; analytical scope only: the optimized gap criterion and separated-loop path theorem use the written conditional proofs; no interacting infinite-volume clock state is computed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T121300Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

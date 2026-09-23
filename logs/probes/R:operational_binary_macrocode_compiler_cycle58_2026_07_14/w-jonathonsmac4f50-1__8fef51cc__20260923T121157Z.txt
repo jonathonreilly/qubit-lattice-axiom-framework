@@ -1,0 +1,30 @@
+
+===============================================================================
+A - Authority, live source, and seed-relative binary pair
+===============================================================================
+FAIL A source exists: OPERATIONAL_BINARY_MACROCODE_COMPILER_CYCLE58_NOTE_2026-07-14.md
+FAIL A source exists: COMPLETE_CANDIDATE_LSTAR_ASSEMBLY_CYCLE41_NOTE_2026-07-14.md
+FAIL A source exists: SELF_EXTENDING_FRAME_CAGE_RAIL_CYCLE52_NOTE_2026-07-14.md
+FAIL A source exists: FIRST_ROLE_DIFFERENTIATION_CYCLE56_NOTE_2026-07-14.md
+PASS A source exists: MINIMAL_AXIOMS_2026-06-29.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/operational_binary_macrocode_compiler_cycle58_2026_07_14.py", line 665, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/operational_binary_macrocode_compiler_cycle58_2026_07_14.py", line 648, in main
+    source_and_authority_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/operational_binary_macrocode_compiler_cycle58_2026_07_14.py", line 397, in source_and_authority_contract
+    note = normalized(NOTE)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/operational_binary_macrocode_compiler_cycle58_2026_07_14.py", line 387, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/OPERATIONAL_BINARY_MACROCODE_COMPILER_CYCLE58_NOTE_2026-07-14.md'

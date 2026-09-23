@@ -1,0 +1,31 @@
+{
+ "task": "R:open_direction_empty_slot_cycle86_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "open",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/open_direction_empty_slot_cycle86_2026_07_14.py",
+ "seed": 65513,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8fef51cc",
+ "started_utc": "20260923T121153Z",
+ "elapsed_s": 4.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "24b6690b09932139ce40062f7ed0a30e7a18f4ed04ae072a0c98e660dd5f87de",
+ "stdout_tail": "SS B08 terminal comparator certificates form the physical slot MATCH\nPASS B09 monitored port is never naturally writable\n\n===============================================================================\nC - Extra-neighbour sensitivity and all proper-cubic images\n===============================================================================\nPASS C01 all 3,375 pre-existing one-extra-neighbour controls are quiet :: []\nPASS C02 every one of the 134 bounded physical contents blocks EMPTY\nPASS C03 an otherwise unknown content also blocks EMPTY\nPASS C04 all 1,104 rotated reachable states have exact frontier :: []\n\n===============================================================================\nD - All 198 programs and exact remaining physical boundary\n===============================================================================\nPASS D01 all 198 programs remain distinct with EMPTY=11111111\nPASS D02 exact program bank has 613 open-direction slots\nPASS D03 exactly 195 programs consume at least one EMPTY slot\nPASS D04 program minimum Hamming distance remains one\nPASS D05 note exists and carries authority none\nPASS D06 note states the 59-record source is supplied\nPASS D07 note names the slot-placement residual\nPASS D08 note names late-composition scope\nPASS D09 note denies foundation and axiom effects\n\nSOURCE=59 CANONICAL=2 RAW=36 PHYSICAL_UNION_RAW=4624\nSTATES=46 EDGES=73 TERMINALS=1 EXTRA_CONTROLS=3375 ROTATED_STATES=1104\nEMPTY_PROGRAM_SLOTS=613 PROGRAMS=198\nSUMMARY: 31 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T121157Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

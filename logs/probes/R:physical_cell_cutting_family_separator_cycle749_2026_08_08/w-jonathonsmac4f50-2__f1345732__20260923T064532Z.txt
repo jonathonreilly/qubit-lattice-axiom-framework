@@ -1,0 +1,4 @@
+FAIL dependency.cycle748  current primary and independent Cycle 748 certificates bind all 15800 rows and 132 carriers
+PASS hostile.cycle748_inventory  a predecessor receipt reverting to the half-row pair inventory is rejected
+PASS hostile.cycle748_census  a predecessor receipt losing one of the 132 carriers is rejected
+PASS hostile.cycle748_independent  a failing independent predecessor certificate is rejected

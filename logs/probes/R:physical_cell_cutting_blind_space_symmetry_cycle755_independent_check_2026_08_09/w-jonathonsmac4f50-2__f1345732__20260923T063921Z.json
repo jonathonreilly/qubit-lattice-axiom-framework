@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09.py",
+ "seed": 45561,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f1345732",
+ "started_utc": "20260923T063921Z",
+ "elapsed_s": 143.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=7 FAIL=3",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d6a217f0a7a86ed272c00b2314ade304104f784e365add1b376010b6f40283e7",
+ "stdout_tail": " and 384 symmetries\nPASS independent.characters  exact character inner products are 29, 21, 33 and rebuild the 104-dimensional endomorphism algebra\nPASS independent.orbital_residual  104 ordered-pair orbitals give residual rank 21 twice; 2 individual orbitals preserve the kernel\nPASS independent.exchange_orbit  the signed four-for-four orbit has 192 exact blind vectors and exact/modular span dimension 60\nFAIL independent.primary_contract  the Cycle 755 primary receipt matches the independent character, commutant, and exchange calculations\nPASS hostile.primary_overlap  a one-unit reversion of the isotypic multiplicity overlap is rejected\nPASS hostile.primary_boundary  a reversion from the named character-route result to a universal rank no-go is rejected\nPASS hostile.cycle754_status  a failed direct-predecessor helper receipt is rejected\nper_element: checked -- all 192 piece coordinates enter the independent exact kernel and orbital checks\nper_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only\nper_mode: checked -- exact character inner products resolve seen/blind irreducible multiplicity overlap\nper_block: checked -- the blind, seen, orbital-residual, and signed-exchange blocks are reconstructed\nlattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim\nRECEIPT outputs/physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09_receipt_2026-08-09.json\nTOTAL: PASS=7 FAIL=3\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T064144Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=7 FAIL=3' vs cache 'TOTAL: PASS=10 FAIL=0'"
+  ]
+ }
+}

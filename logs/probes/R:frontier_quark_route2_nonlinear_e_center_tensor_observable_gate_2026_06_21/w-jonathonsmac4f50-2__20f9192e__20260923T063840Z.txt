@@ -1,0 +1,25 @@
+========================================================================================
+ROUTE-2 NONLINEAR E-CENTER TENSOR OBSERVABLE GATE
+========================================================================================
+
+A. Authority surfaces
+------------------------------------------------------------------------
+FAIL: note surface exists -- docs/QUARK_ROUTE2_NONLINEAR_E_CENTER_TENSOR_OBSERVABLE_GATE_NOTE_2026-06-21.md
+PASS: parent surface exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: exact_readout surface exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: bilinear surface exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+FAIL: rank1 surface exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_RANK1_FACTORIZATION_NOTE_2026-05-17.md
+PASS: naturality surface exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: covariance surface exists -- docs/QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md
+FAIL: box_scan surface exists -- docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md
+FAIL: measured surface exists -- docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py", line 254, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py", line 94, in main
+    note = texts["note"]
+           ~~~~~^^^^^^^^
+KeyError: 'note'

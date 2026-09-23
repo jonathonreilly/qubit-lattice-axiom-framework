@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_census_families_cycle748_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_census_families_cycle748_2026_08_08.py",
+ "seed": 45815,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f1345732",
+ "started_utc": "20260923T064335Z",
+ "elapsed_s": 110.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=43 FAIL=3",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c5093ab16d474dea721d7aa9f3627ff0c48b9f02be961fb3663b4f140efe3f2b",
+ "stdout_tail": " G32  each overlapping pair gives a diffe...\nan eighteen-piece carrier of the flip partner, were one to exist, would meet any of those in at most 4 pieces, its sums running down from 26\nPASS G33  sharing five or more would give a c...\nPASS hostile.pair_inventory  the stale half-width loop is detect...\nPASS hostile.cycle746_inventory  a predecessor receipt reverting to ...\nPASS hostile.cycle747_status  a failing Cycle 747 receipt is reje...\nPASS hostile.cycle747_anchor  a changed landed anchor support doe...\nPASS hostile.symmetry_action  a one-swap mutation of the extra ge...\nPASS hostile.generator_omission  omitting b0 and b1 leaves four piec...\nelapsed under 200 s peak memory under 2500 MB\nFAIL G34  the whole runner finishes under 900...\nPASS G35  its output stays under 6000 characters\n\nper_element: checked -- all 192 support columns enter the incidence, group, carrier, overlap, and family calculations\nper_site: checked and not executed -- one supplied coordinate four-cube only; no framework cell or site is identified\nper_mode: checked and not executed -- these finite binary targets have no field or momentum-mode decomposition\nper_block: checked -- all 15800 cutting rows and every exact anchored search block through weight 16 are bound\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, boundary, thermodynamic, or continuum statement\nRECEIPT outputs/physical_cell_cutting_census_families_cycle748_2026_08_08_receipt_2026-08-08.json\nTOTAL: PASS=43 FAIL=3\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T064525Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=43 FAIL=3' vs cache 'TOTAL: PASS=46 FAIL=0'"
+  ]
+ }
+}

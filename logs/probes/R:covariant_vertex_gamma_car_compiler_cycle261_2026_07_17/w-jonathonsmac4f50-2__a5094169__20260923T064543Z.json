@@ -1,0 +1,32 @@
+{
+ "task": "R:covariant_vertex_gamma_car_compiler_cycle261_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "covariant",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/covariant_vertex_gamma_car_compiler_cycle261_2026_07_17.py",
+ "seed": 45943,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T064543Z",
+ "elapsed_s": 1.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c9e1a4bf605fbeaa5b46a9182b724416c8c8e9c80322a92823f05705ac92eb9b",
+ "stdout_tail": "oles per coarse cell with constant routing overhead :: {'roles_per_cell': 18, 'shell_sizes': {0: 6, 1: 6, 2: 6}, 'collisions': 0, 'proper_frame_failures': 0, 'period64_translation_difference': 0, 'unit_translation_difference': 972, 'macro_marker': 'supplied'}\nPASS bounded elementary checks leave three Wilson logicals in both candidates, so bounded preparation and sector selection are not constructed :: {'degree5_Wilson_increment': 3, 'degree6_Wilson_increment': 3, 'bounded_preparation': False, 'degree5_sector_selection': 'both sectors exist; selecting one uses extensive total parity', 'degree6_sector_selection': 'even parity is fixed by the stabilizer group; odd parity is absent', 'autonomous_preparation': 'not constructed'}\nPASS the fixed Cycle-230 gates and mass/contact/seam fixtures remain separate because neither candidate supplies one common full-Fock E :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'degree5_common_full_Fock_E': False, 'degree6_common_full_Fock_E': False, 'coin_A_B_FSWAP_contact_synthesis': 'not reached', 'mass_seam_intertwining': 'not claimed'}\nPASS the Clifford schedules and stabilizer preparation resources are not physical time or Records :: {'compiler_layers_are_not_physical_time': True, 'gamma_roles': 'coherent local Clifford carriers, not Records', 'dummy_edges': 'code-design relations, not realized histories', 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 13 FAIL 1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T064544Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

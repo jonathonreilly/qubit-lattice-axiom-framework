@@ -1,0 +1,37 @@
+{
+ "task": "R:frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py",
+ "seed": 45520,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "20f9192e",
+ "started_utc": "20260923T063840Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d15a7576ce5cc513bf9e69a8bb9125649e80955ad519f688cd0346290d9d6758",
+ "stdout_tail": "--------------------------------------------------------------\nFAIL: note surface exists -- docs/QUARK_ROUTE2_NONLINEAR_E_CENTER_TENSOR_OBSERVABLE_GATE_NOTE_2026-06-21.md\nPASS: parent surface exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md\nPASS: exact_readout surface exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md\nPASS: bilinear surface exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md\nFAIL: rank1 surface exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_RANK1_FACTORIZATION_NOTE_2026-05-17.md\nPASS: naturality surface exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md\nPASS: covariance surface exists -- docs/QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md\nFAIL: box_scan surface exists -- docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md\nFAIL: measured surface exists -- docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py\", line 254, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py\", line 94, in main\n    note = texts[\"note\"]\n           ~~~~~^^^^^^^^\nKeyError: 'note'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T063840Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=53, FAIL=0' and this run printed none",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

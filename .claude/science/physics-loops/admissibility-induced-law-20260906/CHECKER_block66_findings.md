@@ -5,3 +5,5 @@
 3. **Order counted before computing (supervisor).** The first expectation was an inconsistency at first order in the fields. The content's energy is itself of first order (it sources first-order fields), so `𝔢∂u` is of second order: the fall shows at second order in the field equations, third order of the ledger. The symbolic check was taken to that order.
 4. Finding folded: the factor between total force and total weight in W2 is `cos k`, because the momentum in T3 is the lattice's `sin k`; the note says so under T4.
 5. Finding folded: the first symbolic version of T4 used the library's series and complex-conjugate machinery on shifted functions and raised errors; rewritten with explicit truncated expansions and real functions.
+
+**Corrigendum (2026-09-23, supervisor; harvest issue #8644).** The plain-terms conclusion ('things fall because otherwise the books could not be balanced') is a continuum statement; on the lattice the curl-built members with site-multiplier rates obey sum_a back_a dF/dB = 0 exactly and their static equations admit no content with a force density. Qualified in the Result and Boundaries; no theorem, check or number changed.

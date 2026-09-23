@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-21 block 66 — author checks (not a review PASS)
 Written lens pass by the supervisor. Orders were counted before computing (the fall is a second-order statement in the field equations); an empty refuter test on a ring (`0 = 0`) was found and replaced by a three-dimensional one; a symbolic check was rewritten with explicit truncated expansions. Refuting pass W1–W4 (4/0). Census 8/8 in family.
+
+## 2026-09-23 block 66 — corrigendum (supervisor, Claude Opus 5.5)
+Plain terms and Boundaries qualified: continuum only; on the lattice the curl-built ledgers forbid a static falling content (harvest #8644). Text-only.

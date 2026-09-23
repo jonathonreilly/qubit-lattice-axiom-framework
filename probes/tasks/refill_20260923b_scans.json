@@ -1,0 +1,248 @@
+[
+ {
+  "id": "X:covariant-six-neighbour-onset",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": "1",
+  "command": "cd probes/lib && python3 formation_covariant.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": "28800",
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "Block 93: with the six neighbours alone (w0 = 0) formation splits into two classes that never interact, each settling into the static sphere law with coupling beta w1; so its onset should be the static law's, sufficient bound 3 I_0 = 0.758 (single-torus sum rule), comparator value for the cubic sphere ferromagnet about 0.693. Locate it. Arguments: w0 w1 beta L T T0 seed [start] (probes/lib/formation_covariant.py). GRID UNITS: one run per point.",
+  "grid": [
+   {
+    "extra": "0 1 0.64 16 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.64 24 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.64 32 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.66 16 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.66 24 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.66 32 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.68 16 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.68 24 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.68 32 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.70 16 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.70 24 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.70 32 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.72 16 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.72 24 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.72 32 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.74 16 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.74 24 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.74 32 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.76 16 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.76 24 3000 1500 1"
+   },
+   {
+    "extra": "0 1 0.76 32 3000 1500 1"
+   }
+  ]
+ },
+ {
+  "id": "X:covariant-weighted-onsets",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": "1",
+  "command": "cd probes/lib && python3 formation_covariant.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": "28800",
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "Block 93: all seven with weights (w0, w1) is block 90's bilayer with rung w0 and slabs w1; proved memory for beta > (3/(2 w1))(I(0) + I(2 w0/w1)): 0.3174 at (1, 2), 0.5398 at (2, 1) (0.5905 at (1, 1)). Where are the executed onsets? Arguments: w0 w1 beta L T T0 seed. GRID UNITS: one run per point.",
+  "grid": [
+   {
+    "extra": "1 2 0.26 16 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.26 24 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.26 32 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.28 16 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.28 24 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.28 32 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.30 16 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.30 24 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.30 32 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.32 16 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.32 24 3000 1500 1"
+   },
+   {
+    "extra": "1 2 0.32 32 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.46 16 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.46 24 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.46 32 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.48 16 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.48 24 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.48 32 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.50 16 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.50 24 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.50 32 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.52 16 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.52 24 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.52 32 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.54 16 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.54 24 3000 1500 1"
+   },
+   {
+    "extra": "2 1 0.54 32 3000 1500 1"
+   }
+  ]
+ },
+ {
+  "id": "X:covariant-two-classes-and-copy",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": "1",
+  "command": "cd probes/lib && python3 formation_covariant.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": "28800",
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "Block 93's two structural predictions: (i) with w0 = 0 two halves started orthogonal stay orthogonal (plateau cosine near 0, drifting) while with w0 > 0 they align (cosine near 1); (ii) with w1 = 0 (the record below alone) no common direction forms at any beta (plateau |m| of order N^-1/2). Arguments: w0 w1 beta L T T0 seed [start]. GRID UNITS: one run per point.",
+  "grid": [
+   {
+    "extra": "0 1 1.5 16 2000 1000 1 orthogonal"
+   },
+   {
+    "extra": "0 1 1.5 16 2000 1000 2 orthogonal"
+   },
+   {
+    "extra": "0 1 1.5 32 2000 1000 1 orthogonal"
+   },
+   {
+    "extra": "0 1 1.5 32 2000 1000 2 orthogonal"
+   },
+   {
+    "extra": "0.25 1 1.5 16 2000 1000 1 orthogonal"
+   },
+   {
+    "extra": "0.25 1 1.5 16 2000 1000 2 orthogonal"
+   },
+   {
+    "extra": "0.25 1 1.5 32 2000 1000 1 orthogonal"
+   },
+   {
+    "extra": "0.25 1 1.5 32 2000 1000 2 orthogonal"
+   },
+   {
+    "extra": "1 1 1.5 16 2000 1000 1 orthogonal"
+   },
+   {
+    "extra": "1 1 1.5 16 2000 1000 2 orthogonal"
+   },
+   {
+    "extra": "1 1 1.5 32 2000 1000 1 orthogonal"
+   },
+   {
+    "extra": "1 1 1.5 32 2000 1000 2 orthogonal"
+   },
+   {
+    "extra": "1 0 1 16 1000 500 1"
+   },
+   {
+    "extra": "1 0 1 32 1000 500 1"
+   },
+   {
+    "extra": "1 0 3 16 1000 500 1"
+   },
+   {
+    "extra": "1 0 3 32 1000 500 1"
+   },
+   {
+    "extra": "1 0 10 16 1000 500 1"
+   },
+   {
+    "extra": "1 0 10 32 1000 500 1"
+   }
+  ]
+ }
+]

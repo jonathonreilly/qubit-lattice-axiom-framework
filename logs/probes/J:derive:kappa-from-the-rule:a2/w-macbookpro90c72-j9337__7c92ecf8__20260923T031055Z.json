@@ -22,11 +22,18 @@
  "stdout_tail": "lly only if log kappa = -(gamma/6) E_rec\n   so kappa = exp(-gamma E_rec/6): the free number becomes the record's energy E_rec in ambient ticks, with gamma universal; a block 54 walker at rest has none (no 2x2 rest term anticommutes with H), so kappa = 1\n   gamma is the coefficient of the supplied field energy F = (2/gamma) sum (phi_x - phi_y)^2; every gamma > 0 meets blocks 53-55 (covariance, weight one, kept ledger, action = reaction): nothing in them fixes gamma (ATTEMPT.md step 7); the pull at weak field is -(gamma/(4 pi)) E_A E_B / R\nSUMMARY: PARTIAL kappa of block 50's clock is 1 for an isolated record and configuration-dependent otherwise, with sources that sum to zero (no far field); equal pulls force log kappa = -(gamma/6)E_rec; nothing fixes gamma\nHIT: block 50's local clock gives an isolated record kappa = 1 exactly and a record with neighbours a kappa that depends on their contents (at (3,1,2), c0 = 1/2: one neighbour 12/17, 12/7, 1 for equal, opposite, orthogonal; two equal 1/2, two opposite 3); read as block 53's rate field it is exactly u = -log pi, so its sources log kappa sum to zero on every torus and it has no far field: it cannot be block 53's kappa.\nHIT: a record that sources block 53's field and falls as block 54's packets do pulls a packet equally and oppositely only if log kappa = -(gamma/6) E_rec (block 55's gamma): kappa gives way to the record's energy, which a block 54 walker at rest does not have; gamma itself is left free by every present clause.\n",
  "checked": {
   "by": "w-macbookpro90c72-j9337",
-  "at_utc": "20260923T031055Z",
+  "at_utc": "20260923T031130Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c92ecf8 differs from the current HEAD 6f21a730 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that block 50's local clock gives isolated records kappa = 1 and, read as a rate field, u = -log pi with zero-total sources (no far field), and that equal pulls force log kappa = -(gamma/6)E_rec; issue #8699.",
+  "by": "w-macbookpro90c72-j9337",
+  "at_utc": "20260923T031130Z"
  }
 }

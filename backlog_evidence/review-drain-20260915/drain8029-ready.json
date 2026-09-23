@@ -1,0 +1,12 @@
+{
+  "before": {
+    "headRefOid": "c5f58f84246c7ee938152dcc317264f8b1384a3f",
+    "isDraft": true,
+    "state": "OPEN"
+  },
+  "after": {
+    "headRefOid": "c5f58f84246c7ee938152dcc317264f8b1384a3f",
+    "isDraft": false,
+    "state": "OPEN"
+  }
+}

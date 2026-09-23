@@ -1,0 +1,4194 @@
+{
+  "status": "OWNERSHIP PLAN CONFIRMED FOR AUTHOR PREPARATION WITH EXPLICIT PROOF/INPUT/COST OBLIGATIONS; NO FINAL SOURCE VERDICT",
+  "plan": "/private/tmp/review-drain-20260915/drain8159-author-ownership-plan-v2.json",
+  "plan_sha256": "8f25ca1e52a595a9e4d99142dbc9655f5177c1d24c79bdc826f021908694c946",
+  "plan_md_sha256": "23030d94b4bd784c366b8daea7b953a3fd21b527402eaefd97e61074b65d45d7",
+  "archive_receipt_sha256": "39dc2297a8f5b970d9fb69e3e224a1bbe4b37105d4788ab25aab41780167e04f",
+  "plan_base": "48334d7f83137d5a18ffd4962623a32a6778a637",
+  "original_head": "ccca36e505a4cc5d0cd4735b377c15d69042fc41",
+  "original_delta_base": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "counts": {
+    "owners": 25,
+    "final_notes": 71,
+    "owned_note_entries": 71,
+    "active_programs": 41,
+    "historical_programs": 13,
+    "registry_owner_entries": 9,
+    "archived_originals": 366,
+    "archive_receipt_paths": 368
+  },
+  "coverage": {
+    "all_notes_once": true,
+    "all_python_partitioned": true,
+    "block12_independent": true,
+    "block21_harmonic_note_and_runner_owned": true,
+    "all_active_hashes_and_direct_imports_match": true,
+    "all_archive_records_match": true,
+    "all_receipt_paths_match": true,
+    "all_current_parent_hashes_match_plan_base": true
+  },
+  "findings": [
+    {
+      "id": "OWN-P1",
+      "requirement": "Complete historical Block27 proof ownership",
+      "detail": "Plan correctly flags but does not yet list BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md in any full_owned_appendices. Assign its complete anchored moments, integer fillings and support-graph proof under Block2, with historical SHA256 7a0a953deb6b02a4b4c2f78a941013d30a61ad61ef6e5c0c278489c149c1c647 at e3fc0b7707dce894ef98e7981a9feaf6041708f8. Alternatively identify and verify a complete current canonical equivalent before using it. An archive link/context citation is not proof closure. This requirement can be implemented during authorized authoring; it blocks final freeze/acceptance, not drafting."
+    },
+    {
+      "id": "OWN-P2",
+      "requirement": "Resolve actual mathematical input edges",
+      "detail": "actual_source_reference_occurrences is a partial literal scan, not the final premise graph: several owners have empty occurrence lists despite substantive current parent dependencies. Material examples: Block12 finite-link dynamics; Block15 September13 Ward/node/locality/spectator chain; Block16 cyclic local dynamics; Blocks19/21 exact Gauss/flat-holonomy; Blocks11/13/14 supplied quartet/action; Block6 smoothing. Use exact family identity/read-scope artifacts and final366 actual_dependencies, retaining full versus partial premise-read scope. Own proof appendices in the same note or use one-direction ownership links; do not create reciprocal autonomous proof rows."
+    },
+    {
+      "id": "OWN-R1",
+      "requirement": "Per-program cost confirmation before capture",
+      "detail": "180s/512MiB and 300s/1GiB are provisional ceilings, not justified budgets. Need source-cost records for all 41 final programs, including combinatorial partition/register sums, FFT/grid arrays, sparse shift-invert fill-in/complex workspaces, dense eigenproblems, quadratures and imported top-level work. B17 charged sectors and B19/B21/B22 cutoff-dependent sparse solves deserve explicit dimensions and peak memory estimates. Historical seconds cover only a subset and are not memory measurements. Do not reduce scientific fixtures/tolerances to fit caps."
+    },
+    {
+      "id": "OWN-R2",
+      "requirement": "Concrete runtime and output closure",
+      "detail": "The nine owner-level registry entries correctly combine extra standalone evidence and actual helper reachability. They are not nine distinct helper programs. Confirm final rewritten literal paths/API imports and transitive hashes, preserve AST-selected B10->B9 semantics, avoid executing imported primaries as a side effect, and capture every unique standalone evidence program once. JSON outputs are outputs, not source inputs; preserve full structured data (including B6 augmented fields printed after its earlier stdout snapshot). Assertions-active ordinary Python is the execution contract."
+    }
+  ],
+  "program_checks": [
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": true
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block11_quartet_metric_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block12_ground_cutoff_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block13_quadratic_coframe_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block14_decay_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block15_mixed_history_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block16_cyclic_equilibrium_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block17_cyclic_scaling_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": true
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block18_positive_generator_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block19_charged_ring_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_curvature_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_generator_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_integrated_rate_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/hybrid_generator_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block20_holonomy_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block21_slow_fast_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block22_physical_probe_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": true
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block23_matched_cone_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block24_response_identity_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_cofactor_cyclic_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/determinant_exclusion_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_contact_register_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_cut_completion_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_determinant_exclusion_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_forest_interpolation_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_gaussian_cycle_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_graph_source_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_hard_core_cycle_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/gaussian_cycle_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_operator_source_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_partition_exclusion_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_phase_energy_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_general_order_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/record_pair_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_record_pair_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block4_fourier_gaussian_register_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/cofactor_cyclic_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block4_tree_count_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_algebra_naturality_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_inverse_corner_support_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [
+        "scripts/algebra_naturality_check_2026_09_15.py"
+      ],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block6_positive_auxiliary_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/review_harmonic_metric_check.py",
+      "hash_matches": true,
+      "direct_python_imports": [],
+      "direct_imports_in_plan": true,
+      "dynamic_edges_verified_in_prior_full_read": false
+    }
+  ],
+  "archive_checks": [
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/APPROACH_REGISTRY.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/GOAL.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/HANDOFF.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/NO_GO_LEDGER.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/OPPORTUNITY_QUEUE.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/READING_LEDGER.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/README.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/STATE.yaml",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/TRACE_GATE.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block11_quartet_metric_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block11_quartet_metric_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block11_quartet_metric_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block12_ground_cutoff_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block12_ground_cutoff_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block12_ground_cutoff_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block13_quadratic_coframe_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block13_quadratic_coframe_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block13_quadratic_coframe_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block14_decay_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block14_decay_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block14_decay_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block15_mixed_history_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block15_mixed_history_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block15_mixed_history_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block16_cyclic_equilibrium_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block16_cyclic_equilibrium_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block16_cyclic_equilibrium_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block16_cyclic_equilibrium_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block17_cyclic_scaling_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block17_cyclic_scaling_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block17_cyclic_scaling_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block17_cyclic_scaling_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block18_positive_generator_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block18_positive_generator_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block18_positive_generator_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block18_positive_generator_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block19_charged_ring_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block19_charged_ring_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block19_charged_ring_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block19_charged_ring_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_curvature_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_curvature_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_generator_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_generator_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_integrated_rate_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_integrated_rate_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block20_holonomy_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block20_holonomy_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block20_holonomy_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block20_holonomy_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block21_slow_fast_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block21_slow_fast_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block21_slow_fast_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block21_slow_fast_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block22_physical_probe_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block22_physical_probe_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block22_physical_probe_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block22_physical_probe_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block23_matched_cone_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block23_matched_cone_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block23_matched_cone_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block23_matched_cone_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block24_response_identity_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block24_response_identity_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block24_response_identity_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block24_response_identity_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_cofactor_cyclic_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_cofactor_cyclic_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_contact_register_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_contact_register_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_cut_completion_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_cut_completion_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_determinant_exclusion_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_determinant_exclusion_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_forest_interpolation_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_forest_interpolation_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_gaussian_cycle_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_gaussian_cycle_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_graph_source_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_graph_source_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_hard_core_cycle_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_hard_core_cycle_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_operator_source_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_operator_source_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_partition_exclusion_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_partition_exclusion_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_phase_energy_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_phase_energy_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_general_order_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_general_order_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_general_order_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_record_pair_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_record_pair_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_record_pair_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block4_fourier_gaussian_register_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block4_fourier_gaussian_register_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block4_fourier_gaussian_register_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block4_tree_count_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block4_tree_count_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_algebra_naturality_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_algebra_naturality_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_algebra_naturality_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_inverse_corner_support_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_inverse_corner_support_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_inverse_corner_support_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block6_positive_auxiliary_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block6_positive_auxiliary_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block6_positive_auxiliary_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/review_harmonic_metric_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/review_harmonic_metric_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/review_harmonic_metric_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/review_harmonic_metric_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_POSITIVE_ELECTRIC_GENERATOR_ACCURACY.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_BOUNDED_RATE_ALTERNATIVE.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_CURVATURE_TEST_DESIGN.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POINTWISE_CURVATURE_WITNESS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POSITIVE_HYBRID_GENERATOR.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ASSUMPTIONS_AND_ROUTE_REFRAME.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_CONTACT_REGISTER_SUM.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_FRONTIER_REASSESSMENT.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_MACROSCOPIC_COMPONENT_SOURCE_BOUND.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_PHASE_PRESERVING_FOREST_INTERPOLATION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_SIGNED_SINE_OPERATOR_AND_CYCLES.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_SCOPE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/REVIEW_PERIODIC_HARMONIC_METRIC.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK10_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK11_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK12_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK13_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK14_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK14_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK15_PARENT_REVISIONS.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK15_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK15_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK15_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK16_PARENT_REVISIONS.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK16_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK16_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK17_PARENT_REVISIONS.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK17_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK17_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK17_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK18_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK18_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK18_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK19_PARENT_REVISIONS.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK19_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK19_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK19_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK1_CHECKPOINT_SOURCE_HASHES.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK20_PARENT_REVISIONS.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK20_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK20_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK20_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK21_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK21_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK21_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK22_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK22_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK22_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK23_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK23_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK23_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK24_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK24_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK24_PREFLIGHT_SOURCE.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK24_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK25_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK25_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK25_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK2_CONTACT_REGISTER_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK2_DRESSED_CYCLE_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK2_FOREST_EXCLUSION_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK2_HARD_CORE_LOOP_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK2_SOURCE_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK3_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK4_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK5_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK6_LITERATURE_READING.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK6_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK7_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK8_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK9_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/END_STAGE_NEW_MAIN_READING.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/END_STAGE_VOCAB.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_MANIFEST.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_PERSONAL_REVIEW.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_PERSONAL_REVIEW.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/USER_EXTENSION_20260916.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block11_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block12_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block13_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_boundary_quadrature_failure/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_boundary_quadrature_failure/DISPOSITION.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_boundary_quadrature_failure/STATUS.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_boundary_quadrature_failure/block14_decay_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_boundary_quadrature_failure/diagnostic.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_boundary_quadrature_failure/stderr.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_boundary_quadrature_failure/stdout.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_phase_space_failure/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_phase_space_failure/DISPOSITION.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_phase_space_failure/STATUS.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_phase_space_failure/block14_decay_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_phase_space_failure/diagnostic.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_phase_space_failure/stderr.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_phase_space_failure/stdout.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_charged_multiplicity_failure/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_charged_multiplicity_failure/PROVENANCE.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_charged_multiplicity_failure/block17_cyclic_scaling_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_charged_multiplicity_failure/block17_cyclic_scaling_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_charged_multiplicity_failure/block17_cyclic_scaling_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_charged_multiplicity_failure/block17_cyclic_scaling_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_near_degenerate_solver_failure/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_near_degenerate_solver_failure/BLOCK17_PREFLIGHT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_near_degenerate_solver_failure/PROVENANCE.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_near_degenerate_solver_failure/block17_cyclic_scaling_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_near_degenerate_solver_failure/block17_cyclic_scaling_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_near_degenerate_solver_failure/block17_cyclic_scaling_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_checkpoint2_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_curvature_initial/RECEIPT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_curvature_initial/source.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_curvature_initial/stderr.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_curvature_initial/stdout.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/RESULTS.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/missing_smoothing_noise.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/missing_smoothing_noise.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/wrong_rate_energy.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/wrong_rate_energy.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/wrong_shift_phase.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/wrong_shift_phase.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block20_initial_check_failure/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block20_initial_check_failure/block20_holonomy_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block20_initial_check_failure/block20_holonomy_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block20_initial_check_failure/block20_holonomy_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_initial_fourier_convention/block21_slow_fast_check.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_initial_fourier_convention/block21_slow_fast_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_initial_fourier_convention/block21_slow_fast_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_initial_fourier_convention/block21_slow_fast_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_literal_check_initial_dtype_failure/BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_literal_check_initial_dtype_failure/block21_slow_fast_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_literal_check_initial_dtype_failure/block21_slow_fast_check.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_literal_check_initial_dtype_failure/block21_slow_fast_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_checkpoint4_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_checkpoint_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_contact_register_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_cut_completion_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_cut_initial_zero_parse/RECEIPT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_cut_initial_zero_parse/source.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_determinant_exclusion_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_determinant_initial/block2_determinant_exclusion_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_determinant_initial/failure.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_dressed_cycle_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_forest_initial_cycle/INTERRUPTION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_forest_initial_cycle/RECEIPT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_forest_initial_cycle/source.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_graph_source_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_growth_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_hard_core_cycle_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_initial_rank/INTERRUPTION.md",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_initial_rank/RECEIPT.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_initial_rank/source.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_loop_quadratic_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_partition_exclusion_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_checkpoint_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/RESULTS.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_mixed.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_mixed.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_mixed.stdout",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_same.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_same.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_same.stdout",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_source.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_source.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_source.stdout",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/source_missing_phase_i.py.gz",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/source_missing_phase_i.stderr",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/source_missing_phase_i.stdout",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block3_record_pair_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block4_initial_fixture_failure/block4_fourier_gaussian_register_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block4_initial_fixture_failure/failure.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block4_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block5_initial_symbolic_failure/block5_algebra_naturality_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block5_initial_symbolic_failure/failure.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block5_inverse_initial_symbolic_failure/block5_inverse_corner_support_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block5_inverse_initial_symbolic_failure/failure.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block5_vocab.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block6_initial_symbolic_failure/block6_positive_auxiliary_check.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block6_initial_symbolic_failure/block6_positive_auxiliary_check.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block6_initial_symbolic_failure/diagnosis.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/block9_initial.py",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/block9_initial.txt",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/diagnosis.json",
+      "archive_hash_matches": true,
+      "decoded_matches": true,
+      "mode_blob_match": true
+    }
+  ],
+  "receipt_checks": [
+    {
+      "path": "docs/work_history/review_loop/pr8159/README.md",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/manifest.json",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/001-APPROACH_REGISTRY.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/002-GOAL.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/003-HANDOFF.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/004-NO_GO_LEDGER.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/005-OPPORTUNITY_QUEUE.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/006-READING_LEDGER.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/007-README.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/008-STATE.yaml.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/009-TRACE_GATE.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/010-block10_local_spectrum_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/011-block10_local_spectrum_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/012-block10_local_spectrum_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/013-block11_quartet_metric_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/014-block11_quartet_metric_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/015-block11_quartet_metric_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/016-block12_ground_cutoff_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/017-block12_ground_cutoff_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/018-block12_ground_cutoff_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/019-block13_quadratic_coframe_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/020-block13_quadratic_coframe_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/021-block13_quadratic_coframe_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/022-block14_decay_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/023-block14_decay_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/024-block14_decay_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/025-block15_mixed_history_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/026-block15_mixed_history_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/027-block15_mixed_history_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/028-block16_cyclic_equilibrium_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/029-block16_cyclic_equilibrium_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/030-block16_cyclic_equilibrium_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/031-block16_cyclic_equilibrium_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/032-block17_cyclic_scaling_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/033-block17_cyclic_scaling_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/034-block17_cyclic_scaling_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/035-block17_cyclic_scaling_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/036-block18_positive_generator_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/037-block18_positive_generator_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/038-block18_positive_generator_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/039-block18_positive_generator_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/040-block19_charged_ring_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/041-block19_charged_ring_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/042-block19_charged_ring_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/043-block19_charged_ring_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/044-block1_hybrid_curvature_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/045-block1_hybrid_curvature_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/046-block1_hybrid_generator_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/047-block1_hybrid_generator_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/048-block1_integrated_rate_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/049-block1_integrated_rate_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/050-block20_holonomy_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/051-block20_holonomy_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/052-block20_holonomy_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/053-block20_holonomy_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/054-block21_slow_fast_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/055-block21_slow_fast_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/056-block21_slow_fast_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/057-block21_slow_fast_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/058-block22_physical_probe_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/059-block22_physical_probe_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/060-block22_physical_probe_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/061-block22_physical_probe_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/062-block23_matched_cone_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/063-block23_matched_cone_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/064-block23_matched_cone_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/065-block23_matched_cone_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/066-block24_response_identity_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/067-block24_response_identity_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/068-block24_response_identity_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/069-block24_response_identity_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/070-block25_visible_threshold_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/071-block25_visible_threshold_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/072-block25_visible_threshold_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/073-block25_visible_threshold_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/074-block2_cofactor_cyclic_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/075-block2_cofactor_cyclic_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/076-block2_contact_register_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/077-block2_contact_register_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/078-block2_cut_completion_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/079-block2_cut_completion_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/080-block2_determinant_exclusion_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/081-block2_determinant_exclusion_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/082-block2_forest_interpolation_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/083-block2_forest_interpolation_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/084-block2_gaussian_cycle_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/085-block2_gaussian_cycle_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/086-block2_graph_source_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/087-block2_graph_source_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/088-block2_hard_core_cycle_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/089-block2_hard_core_cycle_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/090-block2_operator_source_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/091-block2_operator_source_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/092-block2_partition_exclusion_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/093-block2_partition_exclusion_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/094-block2_phase_energy_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/095-block2_phase_energy_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/096-block3_general_order_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/097-block3_general_order_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/098-block3_general_order_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/099-block3_record_pair_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/100-block3_record_pair_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/101-block3_record_pair_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/102-block4_fourier_gaussian_register_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/103-block4_fourier_gaussian_register_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/104-block4_fourier_gaussian_register_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/105-block4_tree_count_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/106-block4_tree_count_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/107-block5_algebra_naturality_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/108-block5_algebra_naturality_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/109-block5_algebra_naturality_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/110-block5_inverse_corner_support_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/111-block5_inverse_corner_support_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/112-block5_inverse_corner_support_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/113-block6_positive_auxiliary_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/114-block6_positive_auxiliary_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/115-block6_positive_auxiliary_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/116-block7_native_motion_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/117-block7_native_motion_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/118-block7_native_motion_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/119-block8_native_twist_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/120-block8_native_twist_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/121-block8_native_twist_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/122-block9_polarized_word_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/123-block9_polarized_word_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/124-block9_polarized_word_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/125-review_harmonic_metric_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/126-review_harmonic_metric_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/127-review_harmonic_metric_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/128-review_harmonic_metric_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/129-BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/130-BLOCK10_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/131-BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/132-BLOCK11_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/133-BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/134-BLOCK12_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/135-BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/136-BLOCK13_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/137-BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/138-BLOCK14_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/139-BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/140-BLOCK15_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/141-BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/142-BLOCK16_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/143-BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/144-BLOCK17_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/145-BLOCK18_POSITIVE_ELECTRIC_GENERATOR_ACCURACY.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/146-BLOCK18_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/147-BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/148-BLOCK19_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/149-BLOCK1_BOUNDED_RATE_ALTERNATIVE.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/150-BLOCK1_CURVATURE_TEST_DESIGN.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/151-BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/152-BLOCK1_POINTWISE_CURVATURE_WITNESS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/153-BLOCK1_POSITIVE_HYBRID_GENERATOR.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/154-BLOCK20_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/155-BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/156-BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/157-BLOCK21_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/158-BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/159-BLOCK22_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/160-BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/161-BLOCK23_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/162-BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/163-BLOCK24_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/164-BLOCK25_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/165-BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/166-BLOCK2_ASSUMPTIONS_AND_ROUTE_REFRAME.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/167-BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/168-BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/169-BLOCK2_CONTACT_REGISTER_SUM.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/170-BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/171-BLOCK2_FRONTIER_REASSESSMENT.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/172-BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/173-BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/174-BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/175-BLOCK2_MACROSCOPIC_COMPONENT_SOURCE_BOUND.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/176-BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/177-BLOCK2_PHASE_PRESERVING_FOREST_INTERPOLATION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/178-BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/179-BLOCK2_SIGNED_SINE_OPERATOR_AND_CYCLES.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/180-BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/181-BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/182-BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/183-BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/184-BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/185-BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/186-BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/187-BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/188-BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/189-BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/190-BLOCK5_SCOPE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/191-BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/192-BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/193-BLOCK6_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/194-BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/195-BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/196-BLOCK8_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/197-BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/198-BLOCK9_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/199-REVIEW_PERIODIC_HARMONIC_METRIC.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/200-BLOCK10_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/201-BLOCK11_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/202-BLOCK12_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/203-BLOCK13_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/204-BLOCK14_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/205-BLOCK14_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/206-BLOCK15_PARENT_REVISIONS.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/207-BLOCK15_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/208-BLOCK15_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/209-BLOCK15_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/210-BLOCK16_PARENT_REVISIONS.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/211-BLOCK16_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/212-BLOCK16_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/213-BLOCK17_PARENT_REVISIONS.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/214-BLOCK17_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/215-BLOCK17_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/216-BLOCK17_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/217-BLOCK18_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/218-BLOCK18_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/219-BLOCK18_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/220-BLOCK19_PARENT_REVISIONS.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/221-BLOCK19_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/222-BLOCK19_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/223-BLOCK19_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/224-BLOCK1_CHECKPOINT_SOURCE_HASHES.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/225-BLOCK20_PARENT_REVISIONS.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/226-BLOCK20_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/227-BLOCK20_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/228-BLOCK20_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/229-BLOCK21_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/230-BLOCK21_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/231-BLOCK21_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/232-BLOCK22_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/233-BLOCK22_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/234-BLOCK22_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/235-BLOCK23_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/236-BLOCK23_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/237-BLOCK23_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/238-BLOCK24_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/239-BLOCK24_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/240-BLOCK24_PREFLIGHT_SOURCE.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/241-BLOCK24_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/242-BLOCK25_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/243-BLOCK25_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/244-BLOCK25_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/245-BLOCK2_CONTACT_REGISTER_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/246-BLOCK2_DRESSED_CYCLE_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/247-BLOCK2_FOREST_EXCLUSION_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/248-BLOCK2_HARD_CORE_LOOP_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/249-BLOCK2_SOURCE_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/250-BLOCK3_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/251-BLOCK4_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/252-BLOCK5_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/253-BLOCK6_LITERATURE_READING.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/254-BLOCK6_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/255-BLOCK7_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/256-BLOCK8_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/257-BLOCK9_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/258-END_STAGE_NEW_MAIN_READING.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/259-END_STAGE_VOCAB.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/260-MILESTONE_MANIFEST.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/261-MILESTONE_PERSONAL_REVIEW.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/262-MILESTONE_PERSONAL_REVIEW.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/263-USER_EXTENSION_20260916.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/264-block11_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/265-block12_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/266-block13_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/267-BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/268-DISPOSITION.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/269-STATUS.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/270-block14_decay_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/271-diagnostic.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/272-stderr.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/273-stdout.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/274-BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/275-DISPOSITION.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/276-STATUS.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/277-block14_decay_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/278-diagnostic.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/279-stderr.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/280-stdout.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/281-BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/282-PROVENANCE.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/283-block17_cyclic_scaling_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/284-block17_cyclic_scaling_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/285-block17_cyclic_scaling_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/286-block17_cyclic_scaling_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/287-BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/288-BLOCK17_PREFLIGHT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/289-PROVENANCE.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/290-block17_cyclic_scaling_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/291-block17_cyclic_scaling_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/292-block17_cyclic_scaling_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/293-block1_checkpoint2_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/294-RECEIPT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/295-source.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/296-stderr.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/297-stdout.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/298-RESULTS.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/299-missing_smoothing_noise.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/300-missing_smoothing_noise.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/301-wrong_rate_energy.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/302-wrong_rate_energy.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/303-wrong_shift_phase.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/304-wrong_shift_phase.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/305-BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/306-block20_holonomy_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/307-block20_holonomy_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/308-block20_holonomy_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/309-block21_slow_fast_check.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/310-block21_slow_fast_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/311-block21_slow_fast_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/312-block21_slow_fast_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/313-BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/314-block21_slow_fast_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/315-block21_slow_fast_check.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/316-block21_slow_fast_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/317-block2_checkpoint4_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/318-block2_checkpoint_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/319-block2_contact_register_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/320-block2_cut_completion_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/321-RECEIPT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/322-source.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/323-block2_determinant_exclusion_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/324-block2_determinant_exclusion_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/325-failure.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/326-block2_dressed_cycle_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/327-INTERRUPTION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/328-RECEIPT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/329-source.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/330-block2_graph_source_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/331-block2_growth_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/332-block2_hard_core_cycle_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/333-INTERRUPTION.md.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/334-RECEIPT.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/335-source.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/336-block2_loop_quadratic_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/337-block2_partition_exclusion_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/338-block2_source_checkpoint_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/339-RESULTS.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/340-cut_missing_mixed.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/341-cut_missing_mixed.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/342-cut_missing_mixed.stdout.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/343-cut_missing_same.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/344-cut_missing_same.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/345-cut_missing_same.stdout.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/346-cut_missing_source.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/347-cut_missing_source.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/348-cut_missing_source.stdout.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/349-source_missing_phase_i.py.gz.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/350-source_missing_phase_i.stderr.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/351-source_missing_phase_i.stdout.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/352-block3_record_pair_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/353-block4_fourier_gaussian_register_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/354-failure.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/355-block4_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/356-block5_algebra_naturality_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/357-failure.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/358-block5_inverse_corner_support_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/359-failure.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/360-block5_vocab.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/361-block6_positive_auxiliary_check.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/362-block6_positive_auxiliary_check.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/363-diagnosis.json.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/364-block9_initial.py.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/365-block9_initial.txt.gz",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/366-diagnosis.json.gz",
+      "matches": true
+    }
+  ],
+  "parent_checks": [
+    {
+      "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/FINITE_CLOCK_SCORE_GAUSSIAN_MAXWELL_SCALING_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTRATION_AND_LINEAR_ENERGY_BAND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "same_reviewed_bytes": true
+    },
+    {
+      "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "same_reviewed_bytes": true
+    }
+  ],
+  "nine_registry_entries": {
+    "hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15": [
+      "scripts/hybrid_curvature_check_2026_09_15.py",
+      "scripts/integrated_rate_check_2026_09_15.py"
+    ],
+    "signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15": [
+      "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "scripts/contact_register_check_2026_09_15.py",
+      "scripts/cut_completion_check_2026_09_15.py",
+      "scripts/determinant_exclusion_check_2026_09_15.py",
+      "scripts/forest_interpolation_check_2026_09_15.py",
+      "scripts/gaussian_cycle_check_2026_09_15.py",
+      "scripts/graph_source_check_2026_09_15.py",
+      "scripts/hard_core_cycle_check_2026_09_15.py",
+      "scripts/operator_source_check_2026_09_15.py",
+      "scripts/partition_exclusion_check_2026_09_15.py"
+    ],
+    "supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15": [
+      "scripts/general_order_check_2026_09_15.py"
+    ],
+    "cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15": [
+      "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "scripts/contact_register_check_2026_09_15.py",
+      "scripts/determinant_exclusion_check_2026_09_15.py",
+      "scripts/forest_interpolation_check_2026_09_15.py",
+      "scripts/tree_count_check_2026_09_15.py"
+    ],
+    "supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15": [
+      "scripts/inverse_corner_support_check_2026_09_15.py"
+    ],
+    "local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15": [
+      "scripts/polarized_word_check_2026_09_15.py"
+    ],
+    "finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15": [
+      "scripts/cyclic_equilibrium_check_2026_09_15.py"
+    ],
+    "fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15": [
+      "scripts/review_harmonic_metric_check_2026_09_15.py"
+    ],
+    "iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15": [
+      "scripts/slow_fast_check_2026_09_15.py"
+    ]
+  },
+  "original_review_reference": "/private/tmp/review-drain-20260915/drain8159-final366-original-dispositions.json",
+  "scope": "Read full plan semantics using field-wise recovery after oversized output truncation; complete archive records independently decoded/compared. Reused prior complete original source reviews at exact hashes. No primary program, staging, audit or author-source mutation. No final cap confirmation or canonical source acceptance."
+}

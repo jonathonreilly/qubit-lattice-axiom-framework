@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS: 15 exact scientific controls; 1 separate resource guard\nper_element: 3 exact rational spectral-measure cases\nper_site: 3 finite Z3 charge labels, explicitly a toy\nper_mode: 2 fixed local resolvent modes\nper_block: 3 distinct adverse-control families\nlattice_wide: checked and not executed \u2014 local normality, selected GNS sector and resolvent/form bounds are analytical; no numerical infinite-volume simulation\nresources: 0.010586s / 180s; 20.969MiB / 180MiB\nTOTAL: PASS=15 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.07455587387084961,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 41942,
+    "samples": 2,
+    "peak_tree_rss_bytes": 49889280,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8029-capture.py",
+  "capture_script_sha256": "90bb6bfd8c4b2a4d0fd27151469a664806ffa9ba2d3149bbab46b47e723a377c"
+}

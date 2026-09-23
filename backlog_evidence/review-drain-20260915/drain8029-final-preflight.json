@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8029",
+  "tree": "b4d20094538feaf358d4a80a373172531426d02c",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_selected_infinite_static_source_sector_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8029/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8763,
+      "misses": 4471
+    },
+    "packet_imports": {
+      "hits": 8753,
+      "misses": 4469
+    },
+    "declared_inputs": {
+      "hits": 8789,
+      "misses": 4607
+    }
+  },
+  "record_sha256": "e03d86cd69017ace94968870b601508def61e597e757e07d293f7149c8fe3d65",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

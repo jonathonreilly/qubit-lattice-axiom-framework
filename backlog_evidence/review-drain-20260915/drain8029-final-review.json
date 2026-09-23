@@ -1,0 +1,826 @@
+{
+  "status": "FINAL SOURCE PASS WITH BOUNDED CLAIMS",
+  "reviewer": "/root/review_8012",
+  "base": "48334d7f83137d5a18ffd4962623a32a6778a637",
+  "tree": "b4d20094538feaf358d4a80a373172531426d02c",
+  "source_paths": {
+    "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72",
+    "docs/work_history/review_loop/pr8029/8029_000_ARTIFACT_PLAN.md.gz": "e5e43e75ceffd97e044d1a73c23f2dd948305d4b1d2c9df9ecba225564edf3ab",
+    "docs/work_history/review_loop/pr8029/8029_001_ASSUMPTIONS_AND_IMPORTS.md.gz": "766c788f17c5417ce94b64d6e5e538e55126d9d7b8b26212486d92cdc633f9e7",
+    "docs/work_history/review_loop/pr8029/8029_002_CLAIM_STATUS_CERTIFICATE.md.gz": "c1f4f662ce2f05e4eed80e45a7f35671d36cf3a20c8308716778eb12ff3d736a",
+    "docs/work_history/review_loop/pr8029/8029_003_FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz": "d548499249711fc429ac9eff871d4b1036305284d70b9ac6f4bc9a8c46205ab1",
+    "docs/work_history/review_loop/pr8029/8029_004_FINAL_MAIN66_LOCK_RELEASE.json.gz": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+    "docs/work_history/review_loop/pr8029/8029_005_FINAL_MAIN66_READINESS.json.gz": "eb74fbd02706727e63760e101e63209b7da763f7a7cd49bfefc3b3003df5b58b",
+    "docs/work_history/review_loop/pr8029/8029_006_FINAL_MAIN66_STRICT.log.gz": "37fb1e0ea38346a6eb5733cda5b93adffd5134beb4e8a59e2c736f801673923b",
+    "docs/work_history/review_loop/pr8029/8029_007_FINAL_MAIN66_SYNC_RECEIPT.json.gz": "330fb5265dc6c98390dfaf7da8afa0a51701045c24a28c35f64a9aacf969eab0",
+    "docs/work_history/review_loop/pr8029/8029_008_FINAL_MAIN66_VALIDATION.md.gz": "1416dbce5d43561bf155c837a9689d1c4345a2234a3d349718497246628e01f8",
+    "docs/work_history/review_loop/pr8029/8029_009_FINAL_VALIDATION.md.gz": "2f9bc56246954492692aa677f2ff834bf2474c4ff0583ffff565057a7649473b",
+    "docs/work_history/review_loop/pr8029/8029_010_FINAL_VOCAB_LINT.txt.gz": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe",
+    "docs/work_history/review_loop/pr8029/8029_011_FROZEN_PORT_RECEIPT.json.gz": "62940298b6bb42ac640ea55c639ca1b5b3f37fb62ead15b3b45d35d4f12fadee",
+    "docs/work_history/review_loop/pr8029/8029_012_FULL_PIPELINE.log.gz": "12b851eb68601852b03f3fcc165616405d1991014039431a920c104fd67c6e4e",
+    "docs/work_history/review_loop/pr8029/8029_013_GOAL.md.gz": "0d11cb2ee7e3ca04c6c3046a1c48211be962c0ca8a9a17b4a251277a4ae11cf6",
+    "docs/work_history/review_loop/pr8029/8029_014_HANDOFF.md.gz": "5e30658e764071245b3c19be2b732599d5bc842bfb7d9c8f6529009015946ff9",
+    "docs/work_history/review_loop/pr8029/8029_015_HASHES.json.gz": "329245644bd2b4ce997c62203d2df16225c74df45f172f16795d64bfaa45ffcc",
+    "docs/work_history/review_loop/pr8029/8029_016_JSON_RECEIPT.json.gz": "3a19f7793c3c3764f05d49f21b12e36ab6889a1742bbf0a1b728f82029eeacfa",
+    "docs/work_history/review_loop/pr8029/8029_017_LITERATURE_BRIDGES.md.gz": "df5ab31b293ac781e12a5d4a72963add0b6831462fc128beb364c512ed5e49d2",
+    "docs/work_history/review_loop/pr8029/8029_018_LOCK_RELEASE.json.gz": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+    "docs/work_history/review_loop/pr8029/8029_019_N1_N8.md.gz": "f9fff1e6cab108211ba76e1389b2a4adf6a853bf208233efffb57df9e221c5dd",
+    "docs/work_history/review_loop/pr8029/8029_020_NO_GO_LEDGER.md.gz": "cc5fdbcb69e15585499f16d5f1ae038588718e0efdc4244ef818352a59d4cf34",
+    "docs/work_history/review_loop/pr8029/8029_021_OPPORTUNITY_QUEUE.md.gz": "a6fc44c9c50a429e576f3a53ff20b46e8e6cfc16a8c47b51253f4d0cae164c2e",
+    "docs/work_history/review_loop/pr8029/8029_022_PACK_INDEX.md.gz": "68447973b39e85f4b392f975bc1178b243b7374c34761cb42bb23736548d7738",
+    "docs/work_history/review_loop/pr8029/8029_023_PARENT_VALIDATION_METADATA_CATCHUP.md.gz": "53dde1bfab0d4910348ee8fdf184cb5c8a8e7babd0a8d51b1215ee6d12705f45",
+    "docs/work_history/review_loop/pr8029/8029_024_PR_BACKLOG.md.gz": "1a3d43ddb15de14ee2f4675590b54d8dbed7cf888ab17e2dc8b4e67d6c75eb12",
+    "docs/work_history/review_loop/pr8029/8029_025_PR_BODY.md.gz": "5c21e99645e8ca73986906ab142a95a2f0336a2d7f197db9b82afbabc3a1af3f",
+    "docs/work_history/review_loop/pr8029/8029_026_PUBLICATION_RECEIPT.json.gz": "170d691bb39635cf6c19f5ca49506fc81bbc2daad482c6a0dfc3b7daaa071b08",
+    "docs/work_history/review_loop/pr8029/8029_027_QUEUE.md.gz": "13558b37256c08239709bc5fff9a22ad41685461004a2d8d73f473ca7a46c0d9",
+    "docs/work_history/review_loop/pr8029/8029_028_REVIEW.md.gz": "4fd222d614601f8dc62c2000a896665057ac6a7498530ff428eea1a8c99a8911",
+    "docs/work_history/review_loop/pr8029/8029_029_REVIEWED_UPSTREAM_SYNC_20260907.json.gz": "88d9fd0874ce38bf46d53682ec58c179d64794b1cf4e8d62bf4a32b51e21dd07",
+    "docs/work_history/review_loop/pr8029/8029_030_REVIEW_HISTORY.md.gz": "5605f5e6357e4fd9dd71388c8f155f3846ece535534a2cb859bf96bf381871f3",
+    "docs/work_history/review_loop/pr8029/8029_031_ROOT_CANONICAL_PORT_REVIEW.md.gz": "1668adec34a4d5399bdf5adc36ed9fdb21285dc646f736ed814ad24a4e0acceb",
+    "docs/work_history/review_loop/pr8029/8029_032_ROUTE_PORTFOLIO.md.gz": "fde473f10802290cb2f541fd07933eff0e9142a233ce36e830d24ff4bbab6604",
+    "docs/work_history/review_loop/pr8029/8029_033_STATE.yaml.gz": "1af646b8b2df38eadaf06d44a7cc77182e24b827f85316401373d2fd117cef72",
+    "docs/work_history/review_loop/pr8029/8029_034_STATUS.md.gz": "4e22c55c0caaf6eabf3297384d07fd881be07f65278ea74c2b9913a5fdb3dd57",
+    "docs/work_history/review_loop/pr8029/8029_035_STDOUT_RECEIPT.txt.gz": "ce7bdf24ddf68b0c8e8f461753e9f0b982cf2507704393836ece9353ff0cc2d9",
+    "docs/work_history/review_loop/pr8029/8029_036_STRICT_LINT.log.gz": "845794cd11c97b584fd7bc9de740ad7d1157f44522e88d43594591e9af8c0aac",
+    "docs/work_history/review_loop/pr8029/8029_037_TRACE_GATE.md.gz": "f008c615af758df417d52a7100e805fcce4b1eee827beddd9c4e588021253521",
+    "docs/work_history/review_loop/pr8029/8029_038_UPSTREAM_SYNC_PIPELINE.log.gz": "59af1fa03b81a8faf7530dc4fd631051e3e2f6dfd7b1f21d3f7ceda948c7379a",
+    "docs/work_history/review_loop/pr8029/8029_039_UPSTREAM_SYNC_READINESS.json.gz": "3b1406113b0517cb8fd43e6bc8504505503eeeb6dca5cf7234a571f35c2fd7a3",
+    "docs/work_history/review_loop/pr8029/8029_040_UPSTREAM_SYNC_STRICT.log.gz": "4c09da454edc12c180d77704ba6fd2ce0d30f04c74cf70d0b368d22a132c3d50",
+    "docs/work_history/review_loop/pr8029/8029_041_UPSTREAM_SYNC_VALIDATION.md.gz": "116689a6f8312d05623e8a8c8a0a86c0dc1eb6b5e3915e3d31776e69fae2924f",
+    "docs/work_history/review_loop/pr8029/8029_042_CONTROL_PREREGISTRATION.md.gz": "b0f59f3e924691ae5332fbe32c11cbf384e9e0e943f0078597fae44caad96b81",
+    "docs/work_history/review_loop/pr8029/8029_043_DERIVATION.md.gz": "696abe34809bd6fb10e01a25befcf039730f59212f6f7858804bed4f86a7de5c",
+    "docs/work_history/review_loop/pr8029/8029_044_NATIVE_DOUBLE_REVIEW.md.gz": "1aa35abe624cbec3063e072d57fab9cebcf81af78917901adbefd77d7393c6d8",
+    "docs/work_history/review_loop/pr8029/8029_045_PREREGISTRATION.md.gz": "b43135df10184e2d9ca183f280388c46a2a81df4ef44fd5b379a7c5f010eab16",
+    "docs/work_history/review_loop/pr8029/8029_046_ROOT_DERIVATION.md.gz": "d80555ab4774c09f4c56af391a54c0314a993251ee89c08ce2d384595e762787",
+    "docs/work_history/review_loop/pr8029/8029_047_ROOT_PRIMARY_REVIEW.md.gz": "f28fddcf73f02f18dc82a27045f690a2d2fd7cd625264e096429e396726ba0ce",
+    "docs/work_history/review_loop/pr8029/8029_048_ROOT_REVIEW.md.gz": "afd4f783d4d09788897b21cc73cd0f18d6ff3ded2f446a7c803003805d9efebe",
+    "docs/work_history/review_loop/pr8029/8029_049_check.py.gz": "b553957657d86358dd0c9f625b36d565777f4f033451edbd97ddd888e15eadd8",
+    "docs/work_history/review_loop/pr8029/8029_050_result.json.gz": "70f4d20dba85849615d017fdc9e250b470c9b36a4c0e3d4fa5363173d5cee528",
+    "docs/work_history/review_loop/pr8029/8029_051_validated_claims_before_generated_cleanup.json.gz": "7f17841f19dda1f0175bb9b40e70638a034cb01df2a6e7d59d0c677d7cb76b20",
+    "docs/work_history/review_loop/pr8029/8029_052_validated_readiness_before_generated_cleanup.json.gz": "c688d47fa24a375f0447855174b17d96f8dc75491e4e6411f0d8238067eae115",
+    "docs/work_history/review_loop/pr8029/8029_053_GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz": "ebf5617e5b60f84b2eea21ba913121e84665d1c9cb66eb401fbb41cfcd35a59f",
+    "docs/work_history/review_loop/pr8029/8029_054_citation_graph_manifest.json.gz": "2618da06ad0d4d24d00d8e929446ab526f2061b4db0868c1e66394aa5e16c22d",
+    "docs/work_history/review_loop/pr8029/8029_055_gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt.gz": "312fc1c810188ead64181e09d54eef4e981626b9ea18aa59e15efa87ddc36080",
+    "docs/work_history/review_loop/pr8029/8029_056_gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py.gz": "75303110d9a34928dddb0da421e09df787d9ccccbe2127729f2bcede5e93da96",
+    "docs/work_history/review_loop/pr8029/README.md": "eb01bf362b5c623e13c0c6330e419ed4138ebd1baad2e090a273cd1d328e4b7b",
+    "docs/work_history/review_loop/pr8029/original-manifest.json": "87c6c16f687cb1aed093309b97df30181be2fb5dbc0a74c4d7072a95dceb2761",
+    "logs/runner-cache/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt": "a6edabac2d8691d78b210540b924fb9b2ea5a4e7ece24a2fbeb3c62c115fd000",
+    "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py": "3c4d34c6f97a37884bf81c6872c215e02d3e95680c6cbfb47ccbd5a581c7c71c"
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f"
+      },
+      {
+        "path": "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py",
+        "sha256": "3c4d34c6f97a37884bf81c6872c215e02d3e95680c6cbfb47ccbd5a581c7c71c"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8029/README.md",
+        "sha256": "eb01bf362b5c623e13c0c6330e419ed4138ebd1baad2e090a273cd1d328e4b7b"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "a7cc92e284646e8e499408df34d89f7a89d80be04b7641a3a4f63163de4f467a"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "3d283188b8a1919a869eab92b425a1022eed1b16e544d03419be23666c07463f"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/ARTIFACT_PLAN.md",
+      "original_mode": "100644",
+      "original_blob": "4a2540db55affed7bd8b69571bc7a6af3e4f9be8",
+      "original_sha256": "89564c8f6e798e6dd64d6eb93218f2019e28dd2383bf551d52dfe53e14bdabfd",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_000_ARTIFACT_PLAN.md.gz",
+      "final_sha256": "e5e43e75ceffd97e044d1a73c23f2dd948305d4b1d2c9df9ecba225564edf3ab",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/ARTIFACT_PLAN.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_mode": "100644",
+      "original_blob": "7827494a455bec3bbbc74e252d3e1250b61770cd",
+      "original_sha256": "42b8f105e9c647d2578e23dbdcdf01e5536d2d08b1aefa0403e0eb2563732f57",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_001_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "final_sha256": "766c788f17c5417ce94b64d6e5e538e55126d9d7b8b26212486d92cdc633f9e7",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "original_mode": "100644",
+      "original_blob": "c519ef3c7cb39825842179229590b6c65e78d81a",
+      "original_sha256": "d659a3301a941e78e7f391ae290508bd69e8fb211a892c36325187a08efbbd5a",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_002_CLAIM_STATUS_CERTIFICATE.md.gz",
+      "final_sha256": "c1f4f662ce2f05e4eed80e45a7f35671d36cf3a20c8308716778eb12ff3d736a",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "original_mode": "100644",
+      "original_blob": "4e470c448780dd076fab80105f2883941d4833b2",
+      "original_sha256": "9e166737687a98cae280005834bfced494dd048838f57f9fa840cbfcb21bd3ce",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_003_FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz",
+      "final_sha256": "d548499249711fc429ac9eff871d4b1036305284d70b9ac6f4bc9a8c46205ab1",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "original_mode": "100644",
+      "original_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_004_FINAL_MAIN66_LOCK_RELEASE.json.gz",
+      "final_sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_LOCK_RELEASE.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_READINESS.json",
+      "original_mode": "100644",
+      "original_blob": "97563076dd4aed3d2bd3a6b42e5bc9501319c70a",
+      "original_sha256": "a002ade2f957cb326fd6c2d06e1ce34e82ee4e40eb5bd95ac327e193c832c4b7",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_005_FINAL_MAIN66_READINESS.json.gz",
+      "final_sha256": "eb74fbd02706727e63760e101e63209b7da763f7a7cd49bfefc3b3003df5b58b",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_READINESS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_STRICT.log",
+      "original_mode": "100644",
+      "original_blob": "d61818fd1dacbbb4f6669adf2723879d1641ea63",
+      "original_sha256": "23d586300c1e0d21120cf1bef7d9dbea3281f503dfec44fa6bee288c03b39727",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_006_FINAL_MAIN66_STRICT.log.gz",
+      "final_sha256": "37fb1e0ea38346a6eb5733cda5b93adffd5134beb4e8a59e2c736f801673923b",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_STRICT.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "original_mode": "100644",
+      "original_blob": "4c6b751baade567bfdd748a03979371cf65dee8f",
+      "original_sha256": "81fcf007d470bc34f8190f0037e6dacaddeb17fd5922a9928c2a6b8b4f080f06",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_007_FINAL_MAIN66_SYNC_RECEIPT.json.gz",
+      "final_sha256": "330fb5265dc6c98390dfaf7da8afa0a51701045c24a28c35f64a9aacf969eab0",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_SYNC_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_VALIDATION.md",
+      "original_mode": "100644",
+      "original_blob": "92a40cffc6d9bc72ae1ef3c364ba2c4fc053f2f3",
+      "original_sha256": "e44e3872ebc060156e3f54b78998bb2b4e4af13346b19f76889f763af49a2b67",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_008_FINAL_MAIN66_VALIDATION.md.gz",
+      "final_sha256": "1416dbce5d43561bf155c837a9689d1c4345a2234a3d349718497246628e01f8",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FINAL_MAIN66_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FINAL_VALIDATION.md",
+      "original_mode": "100644",
+      "original_blob": "24509d71d0987091a00009a0dc07e39bc677e3d9",
+      "original_sha256": "72c3ab7e201d0e8038c77f76075bf0e438d309d3d21f13990e56439443d354ee",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_009_FINAL_VALIDATION.md.gz",
+      "final_sha256": "2f9bc56246954492692aa677f2ff834bf2474c4ff0583ffff565057a7649473b",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FINAL_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FINAL_VOCAB_LINT.txt",
+      "original_mode": "100644",
+      "original_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "original_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_010_FINAL_VOCAB_LINT.txt.gz",
+      "final_sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FINAL_VOCAB_LINT.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FROZEN_PORT_RECEIPT.json",
+      "original_mode": "100644",
+      "original_blob": "e81ff6278c24b8c47541a4e1b2c00a4072298750",
+      "original_sha256": "781d4d114e602263854387bc81ab940d439259ef802dd3b2bfe26fe6ee76c722",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_011_FROZEN_PORT_RECEIPT.json.gz",
+      "final_sha256": "62940298b6bb42ac640ea55c639ca1b5b3f37fb62ead15b3b45d35d4f12fadee",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FROZEN_PORT_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/FULL_PIPELINE.log",
+      "original_mode": "100644",
+      "original_blob": "d8354bec8aea48c3d4f0a3b02892fbe1ec604915",
+      "original_sha256": "f0f152b126189ba2f18e1218cc9887df08a72ae19f0a1477e76cbb1f3eb5df6f",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_012_FULL_PIPELINE.log.gz",
+      "final_sha256": "12b851eb68601852b03f3fcc165616405d1991014039431a920c104fd67c6e4e",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/FULL_PIPELINE.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/GOAL.md",
+      "original_mode": "100644",
+      "original_blob": "8247cf054b099d747578807b07249752a604a98b",
+      "original_sha256": "21ed59e8fef14d1873ea9ff508ad37b40a262ce18f0d3dd0fcc52cc540feed4e",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_013_GOAL.md.gz",
+      "final_sha256": "0d11cb2ee7e3ca04c6c3046a1c48211be962c0ca8a9a17b4a251277a4ae11cf6",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/GOAL.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/HANDOFF.md",
+      "original_mode": "100644",
+      "original_blob": "cd9b3b1658754fdf38499db69e514ec2b48f6783",
+      "original_sha256": "ca76e9a738d7658567a2864a55fb83afb94b0a1f7056fe46cbe521c6d1912f53",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_014_HANDOFF.md.gz",
+      "final_sha256": "5e30658e764071245b3c19be2b732599d5bc842bfb7d9c8f6529009015946ff9",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/HANDOFF.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/HASHES.json",
+      "original_mode": "100644",
+      "original_blob": "406093c50ccd0accd7b050d9136bd64c6dc7243e",
+      "original_sha256": "93f09b1b1101b36ea14a2fa13d6ca19003fc800f003c92deb5d0be276139ecf4",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_015_HASHES.json.gz",
+      "final_sha256": "329245644bd2b4ce997c62203d2df16225c74df45f172f16795d64bfaa45ffcc",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/JSON_RECEIPT.json",
+      "original_mode": "100644",
+      "original_blob": "04f0c90aa9d6bd61c1bf3c66481496fab640e53a",
+      "original_sha256": "96bb91af5d2d8605a9ce8f7d94f57ec98aac927e14269f99c07361d894876813",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_016_JSON_RECEIPT.json.gz",
+      "final_sha256": "3a19f7793c3c3764f05d49f21b12e36ab6889a1742bbf0a1b728f82029eeacfa",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/JSON_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/LITERATURE_BRIDGES.md",
+      "original_mode": "100644",
+      "original_blob": "d00750fb71c64c91a3959b977bc48bbf15750890",
+      "original_sha256": "d228fff58bc44fb779b69d1b9a699b73a2770b5c4a97f07bece677e123336cf8",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_017_LITERATURE_BRIDGES.md.gz",
+      "final_sha256": "df5ab31b293ac781e12a5d4a72963add0b6831462fc128beb364c512ed5e49d2",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/LITERATURE_BRIDGES.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/LOCK_RELEASE.json",
+      "original_mode": "100644",
+      "original_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_018_LOCK_RELEASE.json.gz",
+      "final_sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/LOCK_RELEASE.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/N1_N8.md",
+      "original_mode": "100644",
+      "original_blob": "ff4872f13eec661093fcdaf34ba43dad8cd817d7",
+      "original_sha256": "9b68db5c1cc065799e60e7806e3842ba10457a9fe136095271221546646db346",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_019_N1_N8.md.gz",
+      "final_sha256": "f9fff1e6cab108211ba76e1389b2a4adf6a853bf208233efffb57df9e221c5dd",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/N1_N8.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/NO_GO_LEDGER.md",
+      "original_mode": "100644",
+      "original_blob": "2693d19719852c79707a3a92aa5490ca07fb3fcb",
+      "original_sha256": "15fd9eae868911e133fb97ee82a79f2eab6e771b012e39be83acf6af6b2569e5",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_020_NO_GO_LEDGER.md.gz",
+      "final_sha256": "cc5fdbcb69e15585499f16d5f1ae038588718e0efdc4244ef818352a59d4cf34",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/NO_GO_LEDGER.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/OPPORTUNITY_QUEUE.md",
+      "original_mode": "100644",
+      "original_blob": "2984f30d6344de9071d64adf7d8940d16ec17fb4",
+      "original_sha256": "8bbd3b777e5406dfe94cbf77afaa4dae979d99f146b1f1f0c8839ac376399e87",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_021_OPPORTUNITY_QUEUE.md.gz",
+      "final_sha256": "a6fc44c9c50a429e576f3a53ff20b46e8e6cfc16a8c47b51253f4d0cae164c2e",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/PACK_INDEX.md",
+      "original_mode": "100644",
+      "original_blob": "a721492a1f52e48ba2abeab0c59b16e495112cfb",
+      "original_sha256": "635e7a1edc09a3e79428abee092eee6df6a20a348ccb7227949bef8984d8f0ef",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_022_PACK_INDEX.md.gz",
+      "final_sha256": "68447973b39e85f4b392f975bc1178b243b7374c34761cb42bb23736548d7738",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/PACK_INDEX.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "original_mode": "100644",
+      "original_blob": "5231ab86140b5e7d127d80d8bc88f5365bb820be",
+      "original_sha256": "96d306255c5b34240c3b39a8a45a5a2f00aad32620b56abd7a3c46ebc055c6d4",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_023_PARENT_VALIDATION_METADATA_CATCHUP.md.gz",
+      "final_sha256": "53dde1bfab0d4910348ee8fdf184cb5c8a8e7babd0a8d51b1215ee6d12705f45",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/PR_BACKLOG.md",
+      "original_mode": "100644",
+      "original_blob": "b1a0cc0da5a2a929099d97ba50120cfce8f4dc70",
+      "original_sha256": "e3f827abe21e8b6dc78e386fed0e546eeffaf4151c40c6a0472ef4ebc6a74b78",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_024_PR_BACKLOG.md.gz",
+      "final_sha256": "1a3d43ddb15de14ee2f4675590b54d8dbed7cf888ab17e2dc8b4e67d6c75eb12",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/PR_BACKLOG.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/PR_BODY.md",
+      "original_mode": "100644",
+      "original_blob": "239f6fe3be363f410ad2e7d4b9c4b59b96dabcbc",
+      "original_sha256": "c744c7ae7da66ed0e07863629ca11d61b2841c221d1b0dadb89f41ad6f390e0e",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_025_PR_BODY.md.gz",
+      "final_sha256": "5c21e99645e8ca73986906ab142a95a2f0336a2d7f197db9b82afbabc3a1af3f",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/PR_BODY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/PUBLICATION_RECEIPT.json",
+      "original_mode": "100644",
+      "original_blob": "74c6a7909d4c74a2d0526ec83defc295947d9d9a",
+      "original_sha256": "d54da2670562130b9dfcd07b0dc728c9088d2403725ff8551b56c83f27500af6",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_026_PUBLICATION_RECEIPT.json.gz",
+      "final_sha256": "170d691bb39635cf6c19f5ca49506fc81bbc2daad482c6a0dfc3b7daaa071b08",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/PUBLICATION_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/QUEUE.md",
+      "original_mode": "100644",
+      "original_blob": "2656c97dfefc303e9b391072932e2d6473cfe7b6",
+      "original_sha256": "fa6ac91d923780e70aae43b89a2ead767387e18ad490463a902c60dad33d412b",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_027_QUEUE.md.gz",
+      "final_sha256": "13558b37256c08239709bc5fff9a22ad41685461004a2d8d73f473ca7a46c0d9",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/QUEUE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/REVIEW.md",
+      "original_mode": "100644",
+      "original_blob": "737fac229358ca215f119a9637294edad597bb72",
+      "original_sha256": "43a970c1f47c23708b47e524207b52bad0bf98394ebe0a7ecb9d15d1d48d5b9c",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_028_REVIEW.md.gz",
+      "final_sha256": "4fd222d614601f8dc62c2000a896665057ac6a7498530ff428eea1a8c99a8911",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_mode": "100644",
+      "original_blob": "255ab59b9b91a9e21e3bdfba3e96d9507d7aaf55",
+      "original_sha256": "58e8ebaa61aabfcc945268e2216c057bc92226f7a332a02afb5fcef25e0ba01f",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_029_REVIEWED_UPSTREAM_SYNC_20260907.json.gz",
+      "final_sha256": "88d9fd0874ce38bf46d53682ec58c179d64794b1cf4e8d62bf4a32b51e21dd07",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/REVIEW_HISTORY.md",
+      "original_mode": "100644",
+      "original_blob": "993bc2f721ad53c6461c8e67f82cda84a56dd874",
+      "original_sha256": "b959b6778c15c3b541964858b8da70cb53760bf143873787b5fd811609ce5e5d",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_030_REVIEW_HISTORY.md.gz",
+      "final_sha256": "5605f5e6357e4fd9dd71388c8f155f3846ece535534a2cb859bf96bf381871f3",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/REVIEW_HISTORY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "original_mode": "100644",
+      "original_blob": "00c917c883c129d424f160d087fd936a5160b6a2",
+      "original_sha256": "ae06d775247cad789365d8a1aed6f9e474cd73af0e9dbfbc8dcc04098e512a17",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_031_ROOT_CANONICAL_PORT_REVIEW.md.gz",
+      "final_sha256": "1668adec34a4d5399bdf5adc36ed9fdb21285dc646f736ed814ad24a4e0acceb",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/ROOT_CANONICAL_PORT_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/ROUTE_PORTFOLIO.md",
+      "original_mode": "100644",
+      "original_blob": "f7533a0430f6ad00119b6028e9416b6e5f6f12fd",
+      "original_sha256": "67a4e3734ac2d46a338892a3ce3276bf083b6aef934c2272ccf64f3b2522f816",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_032_ROUTE_PORTFOLIO.md.gz",
+      "final_sha256": "fde473f10802290cb2f541fd07933eff0e9142a233ce36e830d24ff4bbab6604",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/STATE.yaml",
+      "original_mode": "100644",
+      "original_blob": "d3690ef7195d49e773d0bc5880b58f8ef529275a",
+      "original_sha256": "8f4d491bf4eda2bc5b98df1f0bbb1442b50267be56065034ce700db859150cc6",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_033_STATE.yaml.gz",
+      "final_sha256": "1af646b8b2df38eadaf06d44a7cc77182e24b827f85316401373d2fd117cef72",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/STATE.yaml"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/STATUS.md",
+      "original_mode": "100644",
+      "original_blob": "5f2594f6ab2e40580254c6a4f9995b1d16090357",
+      "original_sha256": "7bc318c59c5ae2e6e61c8f68fdf1205cca11754824a4051179b1c5a31ecc1b94",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_034_STATUS.md.gz",
+      "final_sha256": "4e22c55c0caaf6eabf3297384d07fd881be07f65278ea74c2b9913a5fdb3dd57",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/STATUS.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/STDOUT_RECEIPT.txt",
+      "original_mode": "100644",
+      "original_blob": "3bce77afb6b20845997532a8f33e0653114a792b",
+      "original_sha256": "f94b5b7a26cc2e5ee69651d15a166a5075c9dc2c621bf1150b5f16ec9813d1f1",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_035_STDOUT_RECEIPT.txt.gz",
+      "final_sha256": "ce7bdf24ddf68b0c8e8f461753e9f0b982cf2507704393836ece9353ff0cc2d9",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/STDOUT_RECEIPT.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/STRICT_LINT.log",
+      "original_mode": "100644",
+      "original_blob": "8da0006419f806f0f0a5cab6256c08d355891683",
+      "original_sha256": "5661af476a4ec39329252682e532f49a2f1a505394788ecbb8063880d3375259",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_036_STRICT_LINT.log.gz",
+      "final_sha256": "845794cd11c97b584fd7bc9de740ad7d1157f44522e88d43594591e9af8c0aac",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/STRICT_LINT.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/TRACE_GATE.md",
+      "original_mode": "100644",
+      "original_blob": "fa92018b0892d960853efa12fcf93e7da7423791",
+      "original_sha256": "3d817dcd5135df6f283967a362aa54ed14447b2421e3b1ca33eaf9ecdb722626",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_037_TRACE_GATE.md.gz",
+      "final_sha256": "f008c615af758df417d52a7100e805fcce4b1eee827beddd9c4e588021253521",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/TRACE_GATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "original_mode": "100644",
+      "original_blob": "32717ff745fdaac1f0313a72b22f690ebcfb392b",
+      "original_sha256": "a8da6e1d5be424f2b3d399f459f3ae0c07edcbf64004fa3760d800eb970fedb0",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_038_UPSTREAM_SYNC_PIPELINE.log.gz",
+      "final_sha256": "59af1fa03b81a8faf7530dc4fd631051e3e2f6dfd7b1f21d3f7ceda948c7379a",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/UPSTREAM_SYNC_PIPELINE.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/UPSTREAM_SYNC_READINESS.json",
+      "original_mode": "100644",
+      "original_blob": "a1c0741a124b5e36f29862accd9095521a4c73c1",
+      "original_sha256": "8eca681916b21f0ddad8a28f7da6d2f36095c93ae26719267642b53d3373f9fa",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_039_UPSTREAM_SYNC_READINESS.json.gz",
+      "final_sha256": "3b1406113b0517cb8fd43e6bc8504505503eeeb6dca5cf7234a571f35c2fd7a3",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/UPSTREAM_SYNC_READINESS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/UPSTREAM_SYNC_STRICT.log",
+      "original_mode": "100644",
+      "original_blob": "fc454800533d266f9bc20c3854bd050ffb4d64cd",
+      "original_sha256": "274a4b5d52080a0e24d72e736ca63c14d7cdc37ad53013aa493f9541cecde7b0",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_040_UPSTREAM_SYNC_STRICT.log.gz",
+      "final_sha256": "4c09da454edc12c180d77704ba6fd2ce0d30f04c74cf70d0b368d22a132c3d50",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/UPSTREAM_SYNC_STRICT.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "original_mode": "100644",
+      "original_blob": "0bad12be093048eeb1f2a409f3fbca93845d3d5c",
+      "original_sha256": "2ab67c02b873f0b4b3ac90cd78e37277308a31f1b778493c7fff54e920aa9892",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_041_UPSTREAM_SYNC_VALIDATION.md.gz",
+      "final_sha256": "116689a6f8312d05623e8a8c8a0a86c0dc1eb6b5e3915e3d31776e69fae2924f",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/UPSTREAM_SYNC_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/evidence/CONTROL_PREREGISTRATION.md",
+      "original_mode": "100644",
+      "original_blob": "81d5cfa26d6a0042c270f4521429d058a04858e0",
+      "original_sha256": "f732e4011013f1eae205e6b804ed53725f700649964677300d73383ac7b4ca4a",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_042_CONTROL_PREREGISTRATION.md.gz",
+      "final_sha256": "b0f59f3e924691ae5332fbe32c11cbf384e9e0e943f0078597fae44caad96b81",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/evidence/CONTROL_PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/evidence/DERIVATION.md",
+      "original_mode": "100644",
+      "original_blob": "323b2bd018f0e51c145531287fd63aa094bac179",
+      "original_sha256": "d82ddb5165688622c3d6e7a110274f61b0fa3db4a9b1a386bbb8ba07c187b98b",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_043_DERIVATION.md.gz",
+      "final_sha256": "696abe34809bd6fb10e01a25befcf039730f59212f6f7858804bed4f86a7de5c",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/evidence/DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/evidence/NATIVE_DOUBLE_REVIEW.md",
+      "original_mode": "100644",
+      "original_blob": "478d4263cfa288044d18459159122033c277f3dd",
+      "original_sha256": "780ce16951b05b88d8d3a8d9dea44826a1b62eebd724277650e7cb6b34ffd54a",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_044_NATIVE_DOUBLE_REVIEW.md.gz",
+      "final_sha256": "1aa35abe624cbec3063e072d57fab9cebcf81af78917901adbefd77d7393c6d8",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/evidence/NATIVE_DOUBLE_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/evidence/PREREGISTRATION.md",
+      "original_mode": "100644",
+      "original_blob": "6c577efae96fe97028c025b9c08af2bc427d77b8",
+      "original_sha256": "6dde8066c19e3746fe8f86e0713d123e4ad6d5c7fe1ed5e59ad15b7b19e21569",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_045_PREREGISTRATION.md.gz",
+      "final_sha256": "b43135df10184e2d9ca183f280388c46a2a81df4ef44fd5b379a7c5f010eab16",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/evidence/PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/evidence/ROOT_DERIVATION.md",
+      "original_mode": "100644",
+      "original_blob": "f46eede55e5321c84475ff2dd0bd3c1a72823330",
+      "original_sha256": "868eed1df8dbee74957f5ad0a5afc880de921847400cfc6ca61ad4c7255dcac3",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_046_ROOT_DERIVATION.md.gz",
+      "final_sha256": "d80555ab4774c09f4c56af391a54c0314a993251ee89c08ce2d384595e762787",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/evidence/ROOT_DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/evidence/ROOT_PRIMARY_REVIEW.md",
+      "original_mode": "100644",
+      "original_blob": "bba566cb16315cd451a340d606f8d2235b1a32cb",
+      "original_sha256": "60d991875f6346912453339a4ccc87c592e34df22419c63952dbea90f1268b65",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_047_ROOT_PRIMARY_REVIEW.md.gz",
+      "final_sha256": "f28fddcf73f02f18dc82a27045f690a2d2fd7cd625264e096429e396726ba0ce",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/evidence/ROOT_PRIMARY_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/evidence/ROOT_REVIEW.md",
+      "original_mode": "100644",
+      "original_blob": "42abaf5f2e0fa6ef0a3d880037a59ce11f38fc8a",
+      "original_sha256": "fed246b5dd592cb608cac315b9bc9ee4ceaa1cfa1aa013c9897fa7ed6c4cab23",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_048_ROOT_REVIEW.md.gz",
+      "final_sha256": "afd4f783d4d09788897b21cc73cd0f18d6ff3ded2f446a7c803003805d9efebe",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/evidence/ROOT_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/evidence/check.py",
+      "original_mode": "100644",
+      "original_blob": "e0201a6d6c817c951a9f988a2cd7c79b4fa248d5",
+      "original_sha256": "04f73391f096e965bdff2b2905c66c57e4eb73c0013dd42549e2dd49d91c9e65",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_049_check.py.gz",
+      "final_sha256": "b553957657d86358dd0c9f625b36d565777f4f033451edbd97ddd888e15eadd8",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/evidence/check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/evidence/result.json",
+      "original_mode": "100644",
+      "original_blob": "f2a0206ad78ee4a20001cfb8e68ef01d0075637c",
+      "original_sha256": "ed3078cda772306b274820fb902d09f78674b010c9477648db0b673c2a6d7721",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_050_result.json.gz",
+      "final_sha256": "70f4d20dba85849615d017fdc9e250b470c9b36a4c0e3d4fa5363173d5cee528",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/evidence/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/validated_claims_before_generated_cleanup.json",
+      "original_mode": "100644",
+      "original_blob": "c8cb9cfd60e40ca5544452b11f9250589e6777d2",
+      "original_sha256": "177a0bd0c9225c3ab1ac4cf4f9c4e795414793099e31b69fd62b56c9aafe49bb",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_051_validated_claims_before_generated_cleanup.json.gz",
+      "final_sha256": "7f17841f19dda1f0175bb9b40e70638a034cb01df2a6e7d59d0c677d7cb76b20",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/validated_claims_before_generated_cleanup.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/infinite-static-sector-20260907/validated_readiness_before_generated_cleanup.json",
+      "original_mode": "100644",
+      "original_blob": "192157c935568c32ae8c76470bf9eada41df3cc8",
+      "original_sha256": "0e5ccdcbc1800da35f3beb977a213931e2dea958e22c3a3beb8c1d930da99dd2",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_052_validated_readiness_before_generated_cleanup.json.gz",
+      "final_sha256": "c688d47fa24a375f0447855174b17d96f8dc75491e4e6411f0d8238067eae115",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:.claude/science/physics-loops/infinite-static-sector-20260907/validated_readiness_before_generated_cleanup.json"
+    },
+    {
+      "original_path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_mode": "100644",
+      "original_blob": "e513850df5d6c1bfb1c7d440cd52d9185f4653a0",
+      "original_sha256": "aa7b0c45399e0ae046aee8db6c1ccc10ce5cca279f98e3a1d35911916a777f4b",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_053_GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz",
+      "final_sha256": "ebf5617e5b60f84b2eea21ba913121e84665d1c9cb66eb401fbb41cfcd35a59f",
+      "disposition": "Full canonical argument/calculation preserved with finding-scoped packaging and proof-explication fixes; exact original separately archived.",
+      "canonical_path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_mode": "100644",
+      "original_blob": "19a7dae6dbe2065ce198aa87bca5f99d54cdc616",
+      "original_sha256": "e42b9bb04cc1c6e1df47ffff265831598748ed2fc4d968fe2af97ca2c3c792e5",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_054_citation_graph_manifest.json.gz",
+      "final_sha256": "2618da06ad0d4d24d00d8e929446ab526f2061b4db0868c1e66394aa5e16c22d",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt",
+      "original_mode": "100644",
+      "original_blob": "e3e3652a246c680a7233b31b5cc6e741d48e7a9d",
+      "original_sha256": "6990748c89f2f5751942d5ee1e35313836cd66b5c9824daf6878a55f0e07ce2e",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_055_gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt.gz",
+      "final_sha256": "312fc1c810188ead64181e09d54eef4e981626b9ea18aa59e15efa87ddc36080",
+      "disposition": "Complete original version retained as historical provenance; no old verdict/cache or generated graph manifest imported as current authority.",
+      "canonical_path": null,
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:logs/runner-cache/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt"
+    },
+    {
+      "original_path": "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py",
+      "original_mode": "100644",
+      "original_blob": "c3efa1ba946ced51207b16fe13356bc434ed6ede",
+      "original_sha256": "2c58736ea0eba7ec1f5ab6960df3169bb93a0183cfb0884dafcf773e6c667f8b",
+      "final_path": "docs/work_history/review_loop/pr8029/8029_056_gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py.gz",
+      "final_sha256": "75303110d9a34928dddb0da421e09df787d9ccccbe2127729f2bcede5e93da96",
+      "disposition": "Full canonical argument/calculation preserved with finding-scoped packaging and proof-explication fixes; exact original separately archived.",
+      "canonical_path": "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py",
+      "recovery": "c5f58f84246c7ee938152dcc317264f8b1384a3f:scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py"
+    }
+  ],
+  "scientific_confirmation": {
+    "complete_read": "Fullcanonicalderivation, verbatim originalprimaryproof, complete rootproof, threecrossreviews/preregistrations/history, fullrunner and historycode delta read. No material mathematical defect found.",
+    "fixed_family": "One fixed infinite cubic interaction, nestedwhole-range emptyboundary restrictions. Atmost4normdelta groups touchcell; removal/trial yields<h_z><=8delta. No volume-dependentcoupling substituted.",
+    "normality": "Finitecellkinetic compactresolvent and positive density energy tail imply trace-normprecompactness through gentlecompression, then prescribedlocalstate identifiesnormal limit. Dense localvector matrixelements on largerfinitealgebra promote normalstate to normal localGNSrepresentation.",
+    "gauge": "Full local B(Hlink) algebra, not observables-only algebra. Strongcontinuity followsfrom localnormality/strongstar translations; no normcontinuityassertion. Finiteresolventcovariance transfers tolimit; commoncombinedfixedspace reducesH.",
+    "density": "Average finitelymany incidentvertices+endpoints; operatorintegrals local bounded/ultraweak, agreeGNSbynormality. Average fixes targetchargedvector/contractsapproximation; sameoperators are exactlycharged in sufficientlylarge finitevolumes.",
+    "lower": "ActualYarotskyThm3eq6 localresolventmatrixelements imply C0spectralmeasureconvergence; finitecharged support>=b transfers tolocalcharged vectors, then entiresectorbydensity/bounded spectralprojections. Doesnot transfer spectralminimizers.",
+    "upper": "Fixedpath ninecomponents have exactnorm1 atfinite andlimit. Finitefirstmoment4d/a, resolventlimit and unitmass giveweakmeasureconvergence; positiveenergy lowersemicontinuity gives limitmoment<=4d/a, henceformdomain andupperbound. No equalityoffirstmoment/operator-domain/groundeigenvectorclaimed.",
+    "scope": "Selectedfull-local-algebra neutralGNSrepresentation withsuppliedstaticfundamentalprobes; commonexistentialsmallcoupling regime. Finite charged minima convergence, boundaryindependence ofallrepresentations, attainedbottom, temporalWilsonpotential, tensionlimit andcontinuum remainunproved, not disproved.",
+    "negative_gate": "Concrete adversemeasure/moving-eigenvector/finiteZ3examples and analytical quantitativebound directly assessed; not universalnogocertification."
+  },
+  "executions": [
+    {
+      "runner": "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py",
+      "status": "ok",
+      "exit_code": 0,
+      "stdout": "PASS: 15 exact scientific controls; 1 separate resource guard\nper_element: 3 exact rational spectral-measure cases\nper_site: 3 finite Z3 charge labels, explicitly a toy\nper_mode: 2 fixed local resolvent modes\nper_block: 3 distinct adverse-control families\nlattice_wide: checked and not executed \u2014 local normality, selected GNS sector and resolvent/form bounds are analytical; no numerical infinite-volume simulation\nresources: 0.010586s / 180s; 20.969MiB / 180MiB\nTOTAL: PASS=15 FAIL=0\n",
+      "stderr": "",
+      "elapsed_sec": 0.07455587387084961,
+      "timeout_sec": 180,
+      "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt",
+      "whole_tree_watchdog": {
+        "limit_bytes": 188743680,
+        "interval_sec": 0.02,
+        "root_pid": 41942,
+        "samples": 2,
+        "peak_tree_rss_bytes": 49889280,
+        "violations": [],
+        "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+      },
+      "capture_script": "/private/tmp/review-drain-20260915/drain8029-capture.py",
+      "capture_script_sha256": "90bb6bfd8c4b2a4d0fd27151469a664806ffa9ba2d3149bbab46b47e723a377c"
+    }
+  ],
+  "identity_confirmation": "All61coldsource paths andinputs unchanged; onlyone canonicalcacheadded. Working/index/finalfreeze exact;57originals decodedverified. Landed8028parent exactacceptedsource. Cache fingerprint andstdout matchactualreceipt; watchdogscript/hash andbounds verified. No reviewerprimary/cachechecker rerun.",
+  "cache_binding": {
+    "path": "logs/runner-cache/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt",
+    "sha256": "a6edabac2d8691d78b210540b924fb9b2ea5a4e7ece24a2fbeb3c62c115fd000",
+    "input_fingerprint": "5c4ead3577a5c03f44ed7f25b4a10e9fdcff95f3c599fe09b455f6f5829943b3"
+  },
+  "closure_disposition": {
+    "complete_unique_mathematical_content_accepted": true,
+    "substantive_unique_science_deferred": false,
+    "historical_content_fully_preserved": true,
+    "eligible_for_full_landing_and_exact_lease_child_safe_cleanup": true,
+    "scope": "Selected full-local-algebra neutralGNS chargedsector under suppliedcompactinteraction/probes andactualYarotskyimports. Finitechargedminima convergence, attainedbottom, temporalpotential/continuum remainopen, not rejecteduniquescience."
+  },
+  "references": {
+    "/private/tmp/review-drain-20260915/drain8029-original-review.json": "b5850761497ca133463d3362f832f6f594ced160df078b53634bffaed6b7f407",
+    "/private/tmp/review-drain-20260915/drain8029-cold-confirmation-v1.json": "ac7eafce5e2f17f6b8fe32637f17e1afd653b0485fe6646e6679be9281a2fd82",
+    "/private/tmp/review-drain-20260915/drain8029-author-unit-draft-v2.json": "e0bed877845f0ab2cf8ac58d912add90a5f49367bd35e7fe64089643387cddea",
+    "/private/tmp/review-drain-20260915/drain8029-author-cheap-v2.json": "b887b89acbbca1012fcff1066c0071387c2d69b64beaf6d79bc7375af084b0e9",
+    "/private/tmp/review-drain-20260915/drain8029-author-final-freeze.json": "80c9adff5549e499515d89106fe38e33564092a8890f019c2e83450dc3842b69",
+    "/private/tmp/review-drain-20260915/drain8029-execution-primary.json": "37e850b7cff54ee16c7da53bb4a734973515977e92d7881f406ea67830e1787f",
+    "/private/tmp/review-drain-20260915/drain8029-capture.py": "90bb6bfd8c4b2a4d0fd27151469a664806ffa9ba2d3149bbab46b47e723a377c",
+    "/private/tmp/review-drain-20260915/check8029/control.py": "55f2f77ddd70f64cb7d34ef0d69256a98d38f1b3e8c10fa57ab83e5a0eac4714",
+    "/private/tmp/review-drain-20260915/check8029/control.json": "b8bdbd25993efa99bfc35028e807c47efacf123cf2a2ce539d03fe2ceb21244b"
+  },
+  "report_preparation": "Initial report construction attempted nonexistent capture.log reference and stopped beforewritingreport; actual executionreceipt contains fullstdout. No scientific execution orsourcechange occurred.",
+  "remaining": "Root canonicalfinalrecord/solefinalcache andintegration guards; no auditverdict."
+}

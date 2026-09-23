@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_same_carrier_three_record_archive_packet_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+ "seed": 29276,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "abafb404",
+ "started_utc": "20260923T020756Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f633aaab1614f87e92d465c31c9067acd58eab9a659aab116b48444eaab8915b",
+ "stdout_tail": "_rank=32 physical_swaps=13 packet_cases=192 lock_content_residual=4.44e-16\nBOUNDARY: a self-contained finite candidate conserves arbitrary target/background information and places three already-present M2 lock-content candidates; clean preparation, NN compilation of the algebraic formation word/readiness test, Admissibility support, realized-member selection, formation occurrence/site/rate, simultaneous atomicity as an actual law, internal-action selection, full-Z3 scheduling, overlapping-packet confluence, physical duration, source normalization, gravity, audit retention, obligation retirement, and TOE percentage movement remain open\nper_element: checked the 29-gate algebraic five-M2 unitary, four normalized rays, 32 arbitrary target-basis columns, exact target marginals, and overwrite control\nper_site: checked five input roles, three arbitrary Record targets, all 11 SWAP-incident sites, 13-site event support, packet roles, occupancy, and reverse permutation\nper_mode: checked all four (m,b) modes, 24 proper-cubic frames, two translations, exact branch weights, incidence signs, and outcomes\nper_block: checked a diameter-8 rank-4 projector boundary, rank-32 archive isometry, branch-neutral NN route, candidate simultaneous append, complete-map decoder, and refusal formula\nlattice_wide: checked and not executed \u2014 this is one finite Record-free event support plus a separated prior packet, not a homogeneous full-Z3 law or overlapping-event confluence theorem\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020757Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_same_carrier_three_record_archive_packet_2026_08_13.txt against the .txt beside this log"
+  ]
+ }
+}

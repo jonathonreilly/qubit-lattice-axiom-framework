@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py",
+ "seed": 29246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "abafb404",
+ "started_utc": "20260923T020726Z",
+ "elapsed_s": 7.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f40febf4646aea3d04c8acdebc458cca20a358c39ff2b70f487be1ab2f06df34",
+ "stdout_tail": "ed Gram min_eig = -0.3799\n     Z_5: antiferro plane-kernel min_eig = -2.1588, integrated Gram min_eig = -0.3702\n  [PASS] [BOUNDARY_EVIDENCE] (E1) note-as-written exp(-beta Re) plane kernel AND integrated Gram are NON-PSD (sign is load-bearing)\n  [PASS] [BOUNDARY_EVIDENCE] (E2) control: dropping Theta's conjugation (linear Theta) is also NON-PSD (correct antilinear OS reflection needed)  --  min_eig (wrong reflection) = -0.2913\n\n------------------------------------------------------------------------------------------\nSummary\n------------------------------------------------------------------------------------------\n  REPAIRED:\n   A  sign root: alpha=beta_Wilson/N and weight exp(+alpha Re Tr); note<->runner consistent\n   B  exact positivity is the source tensor-power/fusion proof;\n      runner Bessel/FFT/Weyl/Monte-Carlo/truncation values are finite support\n   C  exhaustive finite-carrier floating Gram support across Z_N x alpha\n   D  finite-carrier G = W diag(kappa) W^dag residual and spectrum\n   E  TEETH: antiferro (note-as-written) sign breaks PSD; dropped-conjugation breaks PSD\n  Literature (Osterwalder-Seiler 1978; Montvay-Munster 1994; Bessel/Peter-Weyl): comparator only.\n  EVIDENCE_COUNTS exact_algebra=0 exact_finite_algebra=0 numerical_support=14 boundary_evidence=3\n\n==========================================================================================\nTOTAL: 17 PASS / 0 FAIL\n==========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020734Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

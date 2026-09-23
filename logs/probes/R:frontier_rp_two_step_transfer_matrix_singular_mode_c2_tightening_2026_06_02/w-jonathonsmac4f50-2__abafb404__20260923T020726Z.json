@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_rp_two_step_transfer_matrix_singular_mode_c2_tightening_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_rp_two_step_transfer_matrix_singular_mode_c2_tightening_2026_06_02.py",
+ "seed": 29246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "abafb404",
+ "started_utc": "20260923T020726Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "70be0ba5633651165858b2c2467252e2302e3a7990599ddb1e581165c485c3aa",
+ "stdout_tail": "750780274961, 1.105124921972504])\n[PASS] closed_form_eigenvalues_m=0.1 (got=[-1.104987562112089, 0.904987562112089], expected=[-1.104987562112089, 0.904987562112089])\n[PASS] characteristic_polynomial_roots_m=0.1 (max_residual=1.110e-16)\n[PASS] one_step_indefinite_m=0.1 (lower=-1.10499, upper=0.904988)\n[PASS] two_step_square_nonnegative_m=0.1 (T2_eigs=[0.8190024875775821, 1.220997512422418])\n[PASS] closed_form_eigenvalues_m=0.5 (got=[-1.618033988749895, 0.6180339887498948], expected=[-1.618033988749895, 0.6180339887498949])\n[PASS] characteristic_polynomial_roots_m=0.5 (max_residual=0.000e+00)\n[PASS] one_step_indefinite_m=0.5 (lower=-1.61803, upper=0.618034)\n[PASS] two_step_square_nonnegative_m=0.5 (T2_eigs=[0.38196601125010515, 2.618033988749895])\n[PASS] closed_form_eigenvalues_m=1.0 (got=[-2.414213562373095, 0.4142135623730951], expected=[-2.414213562373095, 0.41421356237309515])\n[PASS] characteristic_polynomial_roots_m=1.0 (max_residual=2.220e-16)\n[PASS] one_step_indefinite_m=1.0 (lower=-2.41421, upper=0.414214)\n[PASS] two_step_square_nonnegative_m=1.0 (T2_eigs=[0.17157287525380993, 5.82842712474619])\n[PASS] closed_form_eigenvalues_m=2.0 (got=[-4.23606797749979, 0.2360679774997897], expected=[-4.23606797749979, 0.2360679774997898])\n[PASS] characteristic_polynomial_roots_m=2.0 (max_residual=4.441e-16)\n[PASS] one_step_indefinite_m=2.0 (lower=-4.23607, upper=0.236068)\n[PASS] two_step_square_nonnegative_m=2.0 (T2_eigs=[0.055728090000841224, 17.94427190999916])\n\nPASS=20  FAIL=0\n\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020726Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

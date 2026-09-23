@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.py",
+ "seed": 29275,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "abafb404",
+ "started_utc": "20260923T020755Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "43732125ecc87b36745cbed67a4a0d3da19ae29dd20d44a6a1abaf84c9b96a22",
+ "stdout_tail": "=======================\nPASS: note is scoped as bounded support, not endpoint-triple closure\nPASS: parent note still names the endpoint triple as the blocker\nPASS: factor-rigidity note supplies the shared time-factor premise\nPASS: readout-map authority supplies the normalized one-parameter family\nPASS: E-shell ambiguity vector matches (rho_delta*c3,0) tensor V (residual=3.469e-18)\nPASS: E-center ambiguity vector matches (rho_delta*c3,0) tensor V (residual=1.388e-17)\nPASS: T-shell ambiguity vector matches (rho_delta*c3,0) tensor V (residual=0.000e+00)\nPASS: T-center ambiguity vector matches (rho_delta*c3,0) tensor V (residual=0.000e+00)\nPASS: normalized E-center witness reads the exact 7/8 increment (increment=0.875000000000)\nPASS: T-row witness is blind to rho_E (T-row response=0.000e+00)\nPASS: slice dual orthogonal to V_R(t) is blind to rho_E (orthogonal response=0.000e+00)\nPASS: rank-one dual formula holds for a mixed channel and slice witness (lhs=1.104771290721e+00, rhs=1.104771290721e+00)\nPASS: time-attenuation norm ratio is blind to rho_E (ratio_0=3.187811813930, ratio_21=3.187811813930)\nPASS: target readout witness gives shell 1 and center 15/8 (shell=1.000000000000, center=1.875000000000)\nPASS: witness target is equivalent to the Route-2 endpoint chain (q_T=5/6, q_E=15/8, c_TE=-8/9, rho_E=21/4)\nPASS: current authorities do not supply the E-center witness value as a theorem\n========================================================================\nTOTAL: PASS=16, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020756Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

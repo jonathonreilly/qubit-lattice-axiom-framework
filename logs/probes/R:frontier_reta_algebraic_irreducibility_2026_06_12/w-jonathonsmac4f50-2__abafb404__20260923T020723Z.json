@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_reta_algebraic_irreducibility_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py",
+ "seed": 29243,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "abafb404",
+ "started_utc": "20260923T020723Z",
+ "elapsed_s": 0.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=20 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cd065ac26f689bae8888dc7b3fd4970856fa84202ab511085a6c4b5bc514c595",
+ "stdout_tail": "rel_2pi=0.988]\n[PASS] (12) I6c 2/9 is not q*pi for rational q; 2/(9*pi) is irrational by pi irrationality  [2/(9*pi) is not rational]\n[FAIL] (13) B-check dependency greps: fixed-locus L_3 phrase and real radian-bridge scope phrase are pinned\n[PASS] (14) B-check firewall / walls-move sentences are present without forbidden overclaim use\n[PASS] (15) B-check N1-N8 gate section is present\n[PASS] (16) B-check six-wall carrier map present with six backticked wall names\n[PASS] (17) B-check markdown link inventory is exactly the three dependencies and all resolve  [links=['KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md', 'KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md', 'MINIMAL_AXIOMS_2026-06-05.md']]\n[PASS] (18) B-check context inventory is backticked, not markdown-linked\n[PASS] (19) B-check status lines, No-promotion statement, no registry edit, and bounded theorem declaration are present\n[PASS] (20) B-check R-eta is characterized but not adopted, derived, or refuted\n[PASS] (21) B-check two live derivation targets are named and neither is probed here\n========================================================================\ngit diff --stat\n docs/RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md | 276 +\n scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py | 393 +\n 2 files changed, 669 insertions(+)\n========================================================================\nSUMMARY: TOTAL PASS=20 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020724Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: TOTAL PASS=20 FAIL=1' vs cache 'SUMMARY: TOTAL PASS=21 FAIL=0'"
+  ]
+ }
+}

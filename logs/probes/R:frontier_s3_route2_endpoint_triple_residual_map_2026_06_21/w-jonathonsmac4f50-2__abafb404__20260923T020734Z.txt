@@ -1,0 +1,88 @@
+S3/Route-2 endpoint-triple residual map
+Status: bounded direct-consumer residual map; not an audit verdict.
+TRACE: upstream_support plus negative_route_pruning
+
+PART 1: exact endpoint equivalence class
+PASS: rho_T=-1 is exactly q_T=5/6
+PASS: rho_E=21/4 is exactly q_E=15/8
+PASS: mu=-2 with target q_T/q_E gives c_TE=-8/9
+PASS: c_TE=-8/9 solves back to rho_E=21/4
+PASS: lambda=q_E/q_T is exactly 9/4
+PASS: (w_E/w_T)^-2 is exactly the same 9/4 value
+PASS: one-power value remains only 3/2, not 9/4
+
+PART 2: target-near route2/s3-time/rconn surface sweep
+FAIL: candidate sweep contains the expected finite target-near surface bank
+      missing=['docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md', 'docs/QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md', 'docs/QUARK_ROUTE2_ENDPOINT_T_BALANCE_FD_PROVENANCE_AND_STEP_STABILITY_BOUNDED_NOTE_2026-06-11.md', 'docs/QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md', 'docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md', 'docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md', 'docs/QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md', 'docs/QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md', 'docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md', 'docs/QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md', 'docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md', 'docs/S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md', 'docs/S3_TIME_TENSOR_BUILD_MEMO.md'] extra_count=134
+PASS: candidate bank includes the expanded singleton surface count
+      count=164
+FAIL: candidate surface exists: docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md
+FAIL: candidate surface exists: docs/QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md
+FAIL: candidate surface exists: docs/QUARK_ROUTE2_ENDPOINT_T_BALANCE_FD_PROVENANCE_AND_STEP_STABILITY_BOUNDED_NOTE_2026-06-11.md
+PASS: candidate surface exists: docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: candidate surface exists: docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
+PASS: candidate surface exists: docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md
+FAIL: candidate surface exists: docs/QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md
+FAIL: candidate surface exists: docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md
+PASS: candidate surface exists: docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+FAIL: candidate surface exists: docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md
+PASS: candidate surface exists: docs/QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md
+FAIL: candidate surface exists: docs/QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md
+FAIL: candidate surface exists: docs/QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md
+FAIL: candidate surface exists: docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md
+PASS: candidate surface exists: docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+FAIL: candidate surface exists: docs/QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md
+FAIL: candidate surface exists: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md
+PASS: candidate surface exists: docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md
+FAIL: candidate surface exists: docs/S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md
+FAIL: candidate surface exists: docs/S3_TIME_TENSOR_BUILD_MEMO.md
+PASS: candidate surface exists: docs/S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md
+PASS: candidate surface exists: docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: candidate surface exists: scripts/frontier_cte_rconn_bridge_cross_domain_no_go.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_e_center_blindness_no_go.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_exact_readout_map.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_exact_time_coupling.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_qe_box_size_scan_2026_06_10.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_rconn_center_ratio_bridge_obstruction.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py
+PASS: candidate surface exists: scripts/frontier_quark_route2_source_domain_bridge_no_go.py
+PASS: candidate surface exists: scripts/frontier_route2_readout_record_positivity_no_go.py
+PASS: candidate surface exists: scripts/frontier_s3_time_primitive_chain_reaudit.py
+PASS: candidate surface exists: scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py
+PASS: candidate surface exists: scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py
+PASS: candidate surface exists: scripts/frontier_s3_time_theta_to_slice_coupling.py
+PASS: candidate surface exists: scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py
+PASS: candidate surface exists: scripts/quark_route2_ell_e_structural_narrowing_bounded_2026_06_12.py
+PASS: candidate surface exists: scripts/quark_route2_t_side_endpoint_theorem_attempt_bounded_2026_06_12.py
+
+PART 3: current authority markers
+PASS: docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: open_gate route survey
+PASS: docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: The next theorem target is the missing readout-map endpoint triple
+PASS: docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: no unique exact `Theta_R -> Lambda_R` coupling theorem
+PASS: docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: (beta_T / alpha_T, alpha_T / alpha_E, beta_E / alpha_E)
+PASS: docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: = (-1, -2, 21/4).
+PASS: docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: irreducible missing map entry
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_s3_route2_endpoint_triple_residual_map_2026_06_21.py", line 286, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_s3_route2_endpoint_triple_residual_map_2026_06_21.py", line 227, in main
+    text = read(rel)
+           ^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_s3_route2_endpoint_triple_residual_map_2026_06_21.py", line 38, in read
+    return (ROOT / rel_path).read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md'

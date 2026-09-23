@@ -1,0 +1,39 @@
+{
+ "task": "R:frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07.py",
+ "seed": 29277,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "abafb404",
+ "started_utc": "20260923T020757Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=76, FAIL=0",
+   "PASS=65, FAIL=0",
+   "PASS=11, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "376b380cb730908031653496923790f22a1638b4a58a8aa7f5bb9b74cf2a20fe",
+ "stdout_tail": "us:** promoted'  (status authority stays with the independent audit lane)\n  [PASS] note keeps its prior-art deferral: 'prior art in the CKM'  (note defers the mixed-scale/common-scale distinction to the CKM lane)\n  [PASS] note keeps its prior-art deferral: 'neither restates nor re-quantifies'  (note defers the sector-spread observation to the fourth-axiom scoping note)\n  [PASS] note avoids retired overclaim: 'the exact converse'  (the literal converse is FALSE; Part C' exhibits counterexamples)\n  [PASS] note avoids retired overclaim: 'not scheme-blocked'  (only the reference SCALE is unblocked; scheme remains a residual)\n  [PASS] note avoids retired overclaim: 'attributed to scheme bookkeeping'  (Parts A-C remove the scale choice, not the scheme choice)\n  [PASS] note avoids retired overclaim: '**Type:** bounded_theorem'  (the note was demoted to meta in review; the algebraic content it would need for retained_bounded grade is prior art)\n  [PASS] note avoids retired overclaim: '**Claim type:** bounded_theorem'  (the note was demoted to meta in review; the algebraic content it would need for retained_bounded grade is prior art)\n\n================================================================\nTOTAL: PASS=76, FAIL=0\n  exact      (Parts A-C, C', E, Fraction/int only): PASS=65, FAIL=0\n  comparator (Part D, floating point + PDG inputs): PASS=11, FAIL=0\nOnly the exact tally is load-bearing; Part D supplies no premise.\n================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020757Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

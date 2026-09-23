@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.py
+runner_sha256: d7adeec694fe00b8f646e4a26b72cadb01f508a3eecb9f1dd048e52c8439ed4e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 9.52
+status: ok
+----- stdout -----
+== 1. Never-failing rules with zeros: constant, or order-sensitive ==
+[PASS] copy-when-unanimous never fails, has zeros, and varies with its neighbour conditions
+[PASS] variance identity on the bent path: E[rho(+|.)] = 1/2 = r0(+) but E[rho(+|.)^2] = 1/2, not 1/4 :: order-blindness would need two equal neighbours to give E[rho^2] = r0(+)^2; the gap is Var = 1/4
+[PASS] so it is order-sensitive: leaves-first the two leaves differ with probability 1/2, centre-first never
+
+== 2. Holes: strict order-blindness has an exact pair form; forcing does not ==
+[PASS] binary rejection exclusion on the 7-site cross: all 5040 orders give one sub-law, total mass 1/64 :: two completed configurations (centre a, every leaf -a), each 1/128: clock-blind in how often and in what
+[PASS] forcing exclusion on the cross: the completion mass depends on the order, the completed law does not :: 6 distinct completion masses from 1/32 (leaves first) to 1 (centre first)
+[PASS] pair form: rejection and soft rules equal r0(a) prod K(a, b_i) with symmetric K on all 127 value lists :: K_rej(a, b) = 1[a != b]; K_soft(a, b) = (3/4)(1 + ab/3) = K_soft(b, a)
+[PASS] both are sub-probabilities on every neighbour condition; the soft rule's worst case (6 equal values) is 65/128
+[PASS] forcing is not of pair form: its one-neighbour K = 2 1[a != b] would give mass 2 to two equal neighbours
+[PASS] soft pair rule on the 7-site cross: all 5040 orders give one sub-law (strictly order-blind, and it varies) :: completion mass 729/4096 = (3/4)^6, the same for every order
+
+== 3. Completed records of order-blind hole rules: the static pair law returns ==
+[PASS] 8-site path, four orders: one sub-law, completion (3/4)^7 = 2187/16384, completed law = the static pair measure :: the nearest-neighbour pair measure 2^(agreeing bonds) is the completed-record law of an order-blind hole rule
+[PASS] so its completed records correlate at every distance: c(0, d) = 3^-d for d = 1..7 (all means exactly 0)
+[PASS] binary rejection on the 8-site path: completion 1/128, completed records the two staggered patterns :: exact staggered order at every distance, with hole mass 127/128
+[PASS] six-axis rejection (proper colourings): one sub-law for all orders of the bent path (6) and 4-site star (24) :: star completion (5/6)^3; two leaves at distance 2 agree with probability 1/5, not 1/6
+[PASS] six-axis rejection on a 4-site path: agreement (1/6)(1 + 5(-1/5)^d) = 1/5 at d = 2, 4/25 at d = 3
+
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

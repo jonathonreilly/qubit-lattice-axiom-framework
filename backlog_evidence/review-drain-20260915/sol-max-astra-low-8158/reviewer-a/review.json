@@ -1,0 +1,155 @@
+{
+  "schema": "independent_scientific_review_v1",
+  "pr": 8158,
+  "source_identity": {
+    "head": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+    "delta_base": "df5316ee81d59d573b3837afb80d371d12d890d6",
+    "methodology_revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "manifest_files_verified": 36
+  },
+  "recommendation": "NEEDS MANUAL SCIENCE",
+  "final_claim_strength": "Q1, Q2, and restricted Q3 are conditional bounded mathematics; the graph-only iff and all-axiom model-pair interpretation are not established.",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P1",
+      "category": "BUG",
+      "title": "Plaquette-plus-site witness is outside the declared cubic nearest-neighbor domain",
+      "status": "observed fixture/domain mismatch",
+      "sources": [
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [79, 83]},
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [123, 127]},
+        {"path": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py", "lines": [232, 246]},
+        {"path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.py", "lines": [63, 68]},
+        {"path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.py", "lines": [24, 32]}
+      ],
+      "reasoning": "The four-cycle has edge c0-c1, while the submitted exterior site has edges to both c0 and c1, making a triangle. The nearest-neighbor graph of Z^3 is bipartite. Every outside neighbor of the unit plaquette touches exactly one of its four corners. The submitted fractions are correct on an abstract graph, not on the stated lattice fixture.",
+      "independent_evidence": "independent_check.py / independent_check.out.txt: outside attachment counts [1]; abstract TV 78621/4563820, 675203620/64463986907, 221667/30063356; embeddable two-record path TV 1/72 at (3,1,2).",
+      "suggested_narrow_fix": "Relabel D1 and its three fractions as abstract-graph checks or replace them with an induced cubic-lattice path fixture and recompute the witnesses; retain the independently valid cube witness."
+    },
+    {
+      "id": "F2",
+      "priority": "P1",
+      "category": "NO_GO_OVERCLAIM",
+      "secondary_category": "PROOF_OBLIGATION",
+      "title": "Universal graph-only iff is false at the constant rule and lacks a general converse proof",
+      "status": "observed counterexample plus unresolved proof obligation",
+      "sources": [
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [4, 4]},
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [29, 38]},
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [107, 121]},
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [137, 175]},
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [182, 183]},
+        {"path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md", "lines": [343, 356]},
+        {"path": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py", "lines": [299, 314]},
+        {"path": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py", "lines": [366, 379]}
+      ],
+      "reasoning": "At p=q=r>0 every F_C is constant regardless of attachments, contradicting the unqualified iff. The parent source shows full-domain variation does not exclude a constant restricted-menu triple. Excluding that triple still leaves a gap: Q3(d) only says a general two-terminal factor is constant iff both nontrivial eigenvalues vanish; it does not prove nonvanishing for every connected C. Components with at least three attachments and possible products of factors are not handled. Factorization alone cannot rule out cancellation. The runner's general resolution is a printed assertion, not a check.",
+      "independent_evidence": "independent_check.py gives TV 0 for an embeddable two-attachment path at (2,2,2) and TV 1/72 at (3,1,2). The exact equality condition derived from Q1 and positivity is that the product over C of F_C is constant over all recorded configurations.",
+      "no_go_gate": "FAIL: N1 route 2 has no cancellation proof and route 5 bundles escapes; N5 claims lattice-wide closure beyond executed/proved scope; N7 attacks novelty rather than the strongest general-converse objection.",
+      "suggested_narrow_fix": "Remove the universal iff until an arbitrary-component theorem proves it. Keep Q1, Q2, the single-site/path results for nonconstant rules, the spectral criterion, and valid exact witnesses. Exclude p=q=r explicitly; if unattached E-components are allowed, say at most one attachment."
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "category": "SEMANTIC_BRIDGE",
+      "title": "Q5's axiom-satisfying model pair is not constructed",
+      "status": "missing support, not an impossibility claim",
+      "sources": [
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [44, 50]},
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [75, 83]},
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [129, 135]},
+        {"path": "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md", "lines": [34, 50]},
+        {"path": "docs/MINIMAL_AXIOMS_2026-06-29.md", "lines": [35, 95]},
+        {"path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md", "lines": [24, 38]}
+      ],
+      "reasoning": "The packet constructs finite static laws on restricted menus but does not supply a checked full-domain/global Z^3 extension or a formation and readout process for the quoted Record sentences. The campaign's own witness contract requires these when calling a pair axiom-satisfying. Existence of such extensions is left open.",
+      "independent_evidence": "Source-level obligation comparison; the finite TV control supports a conditional reading difference, not a complete axiom-model witness.",
+      "suggested_narrow_fix": "Call R1/R2 two supplied finite static readings with different marginals. Hold the axiom-model-pair claim until explicit full-domain, global-law, formation and readout checks exist."
+    },
+    {
+      "id": "F4",
+      "priority": "P2",
+      "category": "AUDIT_COMPATIBILITY",
+      "title": "Changed claim has no graph dependencies for its load-bearing authorities",
+      "status": "observed source/metadata mismatch",
+      "sources": [
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [5, 9]},
+        {"path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md", "lines": [75, 77]},
+        {"path": "docs/audit/data/citation_graph_manifest.json", "lines": [757, 759]},
+        {"path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md", "lines": [85, 89]},
+        {"path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md", "lines": [350, 363]}
+      ],
+      "reasoning": "The note has no Markdown links to its cited premise notes. YAML IDs and backticked paths do not seed graph edges. The submitted graph node has out_degree 0 and the empty-dependency hash e3b0c44298fc despite three named load-bearing upstream dependencies.",
+      "independent_evidence": "identity_check.py verified the submitted graph file hash and extracted the changed node; a read-only Markdown-link scan found none in the note.",
+      "suggested_narrow_fix": "Add relative Markdown links for the axiom memo, block 01, and the sphere note, regenerate the graph manifest, and verify nonempty dependencies without authoring any audit verdict."
+    }
+  ],
+  "confirmed_sound": [
+    "Q1 component factorization and R2 as the true exterior-marginal average of R3 follow by bond partition and conditioning.",
+    "Q2 one-attachment constancy follows from value covariance, invariant integration/counting measure, and transitivity, including cyclic C.",
+    "Q3(a-c) spectral eigenvalues, phi-squared formula and path powers are correct; Q3(d)'s isotypic constancy criterion is correct but does not close the graph converse.",
+    "The sphere single-site integral is correct with the continuous 4pi value at antipodal records.",
+    "The three plaquette fractions are correct for the stated abstract triangle graph; the cube fraction 9778807/1312253264 is correct for an embeddable cube; pendant-only equality follows from Q2."
+  ],
+  "independent_controls": [
+    {"path": "reviewer-a/identity_check.py", "output": "reviewer-a/identity_check.out.txt", "result": "36 manifest hashes and byte lengths verified; changed graph node out_degree 0."},
+    {"path": "reviewer-a/independent_check.py", "output": "reviewer-a/independent_check.out.txt", "result": "Plaquette geometry, exact abstract plaquette TVs, exact embeddable path TVs, and exact cube TV checked by separate factor summation."}
+  ],
+  "lenses": {
+    "code_runner": "FAIL: invalid lattice fixture and no decisive general-iff control",
+    "physics_claim": "BOUNDED after narrowing",
+    "proof_obligations": "FAIL headline; CLOSED Q1/Q2 and restricted Q3",
+    "imports_support": "DISCLOSED finite readings; missing Q5 semantic construction",
+    "nature_retention": "BOUNDED/OPEN; no retained or physical-selection claim supported",
+    "no_go_discipline": "FAIL N1/N5/N7",
+    "labeling_convention": "PASS: genuine algebraic core",
+    "repo_governance": "FIX",
+    "audit_compatibility": "FIX"
+  },
+  "coverage": {
+    "changed_science_read_full": [
+      "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py",
+      "logs/runner-cache/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.txt",
+      ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.py",
+      ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.out.txt",
+      ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.py",
+      ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.out.txt",
+      ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block24.md"
+    ],
+    "cited_context_read_full": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md"
+    ],
+    "governance_read": [
+      "docs/ai_methodology/skills/review-loop/SKILL.md (applicable review sections)",
+      "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md (full)",
+      "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md (full)",
+      "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md (full)",
+      "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md (full)",
+      "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md (full)",
+      "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md (full)",
+      "docs/ai_methodology/skills/no-go-discipline/SKILL.md (full)",
+      "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md (full)",
+      "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md (full)",
+      "docs/audit/data/axiom_premise_nodes.json (full)",
+      "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md (full)",
+      "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md (full)",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md (full)",
+      "docs/repo/controlled_vocabulary.yaml (relevant claim/status entries)",
+      "docs/audit/data/citation_graph_manifest.json (changed node and comparator nodes)"
+    ]
+  },
+  "coverage_gaps": [
+    {"path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md", "effect": "Referenced proof/no-go route-normalization procedure was not packaged; mathematical obligation graph was reconstructed independently, but its detailed procedure was not certified."},
+    {"path": "source notes for blocks 17 and 19-23 (exact paths not named in submitted Q5(b) and absent from packet)", "effect": "Held per-block attribution in Q5(b); verified only the conditional averaging and no-exterior logic."},
+    {"path": "mutation transcripts for the 13 declared mutations (not included in packet)", "effect": "Did not certify the asserted mutation outcomes; submitted programs were read but not run."},
+    {"path": "original constituent source dispositions and combined pipeline/lint/evidence receipts", "effect": "Intentionally excluded by scoped packet; no full original-path or landing PASS inferred."}
+  ],
+  "operations": "Read-only packet; no repository mutation, Git operation, network call, submitted primary/control execution, subagent, or other-reviewer output."
+}

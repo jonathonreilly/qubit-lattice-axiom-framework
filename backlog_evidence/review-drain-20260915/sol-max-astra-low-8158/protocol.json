@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-09-23T01:21:01.530447+00:00",
+  "pr": 8158,
+  "head": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+  "packet_manifest_sha256": "8fb54c2e035888e1b89dc22b3d08e8c44855b46b2f49c894b5fab946e5d9c654",
+  "common_prompt_sha256": "ae3b8f48c963446f0a5fd6846937bd7fd128b4976aa13ade0ec05867dd3d1e45",
+  "models": {
+    "reviewer-a": {
+      "model": "gpt-6-sol",
+      "effort": "max"
+    },
+    "reviewer-b": {
+      "model": "gpt-6-astra",
+      "effort": "low"
+    }
+  },
+  "blindness": "Fresh fork-none agents; identical frozen packet/prompt; separate outputs; prior findings and corrected source excluded. No model name in common prompt.",
+  "scope": "Matched scoped scientific review, not complete source-disposition or landing review. Original reviewer/checker/history/status commentary excluded identically; no corrected source, prior reviewer findings or comparison results included.",
+  "policy": "Experiment only; unchanged Astra-low landing default.",
+  "metrics": [
+    "validated material findings and misses",
+    "false-positive findings",
+    "coverage",
+    "valid independent controls",
+    "elapsed task time",
+    "actual token usage and modeled credits"
+  ]
+}

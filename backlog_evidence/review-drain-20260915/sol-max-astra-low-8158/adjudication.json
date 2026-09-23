@@ -1,0 +1,95 @@
+{
+  "packet_files_verified": 36,
+  "packet_manifest_sha256": "8fb54c2e035888e1b89dc22b3d08e8c44855b46b2f49c894b5fab946e5d9c654",
+  "reports_frozen_verified": true,
+  "theme_mapping": [
+    {
+      "theme": "cubic_fixture",
+      "sol_max": "F1",
+      "astra_low": "B-02"
+    },
+    {
+      "theme": "global_iff",
+      "sol_max": "F2",
+      "astra_low": "B-01"
+    },
+    {
+      "theme": "zero_attachment",
+      "sol_max": "F2 final paragraph",
+      "astra_low": "B-01 and sound results"
+    },
+    {
+      "theme": "axiom_model",
+      "sol_max": "F3",
+      "astra_low": "B-03"
+    },
+    {
+      "theme": "averaging",
+      "sol_max": null,
+      "astra_low": "B-04"
+    },
+    {
+      "theme": "dependency_graph",
+      "sol_max": "F4",
+      "astra_low": "B-05"
+    }
+  ],
+  "sol_max_known_themes_found": 5,
+  "astra_low_known_themes_found": 6,
+  "unsupported_material_findings_identified": [],
+  "adjudication": "Both reports support the five shared themes. Sol explicitly accepts the generic uniform-in-exterior averaging inference and does not identify the nonlinear closure restriction. Astra B-04 gives a valid positive product-law counterexample independently verified here. Missing earlier block sources limit particular attributions for both models. No material new issue beyond the rubric changes this decision.",
+  "reviewer_metrics": {
+    "reviewer-a": {
+      "actual_configurations": [
+        {
+          "model": "gpt-6-sol",
+          "effort": "max",
+          "service_tier": null
+        }
+      ],
+      "active_task_seconds": 635.977,
+      "request_count": 38,
+      "total_token_usage": {
+        "input_tokens": 4347313,
+        "cached_input_tokens": 4186240,
+        "output_tokens": 31347,
+        "reasoning_output_tokens": 16923,
+        "total_tokens": 4378660
+      },
+      "modeled_standard_credits": 36.8216,
+      "modeled_fast_credits": 92.05399999999999,
+      "report_hashes": {
+        "review.json": "b2ec8915567b6ca4aa63aa69e45cfbdcb89cfbf6b20fd8c140859f3ddc7b9e36",
+        "review.md": "e2eeedd0f0e57be50afb691158e7a7b384373405647fb61046e440bb4bf9c888"
+      }
+    },
+    "reviewer-b": {
+      "actual_configurations": [
+        {
+          "model": "gpt-6-astra",
+          "effort": "low",
+          "service_tier": null
+        }
+      ],
+      "active_task_seconds": 400.157,
+      "request_count": 17,
+      "total_token_usage": {
+        "input_tokens": 1465508,
+        "cached_input_tokens": 1348864,
+        "output_tokens": 11943,
+        "total_tokens": 1477451,
+        "reasoning_output_tokens": 1365
+      },
+      "modeled_standard_credits": 77.81135,
+      "modeled_fast_credits": 194.528375,
+      "report_hashes": {
+        "review.json": "5978e044c0b69d0ebb8d31e438b3d375f521fd31ad1de78eb9d4c3e9bf715f16",
+        "review.md": "93c286c375718eba565df8d8efcc49dc46d57ff3b12169742aeacbda8c19e0de"
+      }
+    }
+  },
+  "sol_credit_savings_percent": 52.678368901195014,
+  "sol_elapsed_increase_percent": 58.93186924132279,
+  "averaging_control_sha256": "4d343919541a8e9bb85365a6c29b62c6f1d3a5fda57f3ca5c530479514a41b6a",
+  "decision": "Keep Astra low default. One selected defective PR is insufficient to establish general model equivalence or replacement safety. No model-default or skill change."
+}

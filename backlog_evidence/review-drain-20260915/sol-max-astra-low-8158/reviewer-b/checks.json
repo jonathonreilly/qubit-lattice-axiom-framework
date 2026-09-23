@@ -1,0 +1,504 @@
+{
+  "source_identities": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "fabcfa802e1a950ccc11563c3a098164a867d13fc9f460b0770acc662969bcec",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block24.md",
+      "sha256": "73393cb2db4542537882a99c10aecaec9903495ec3e0a677562dd453bb145579",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.out.txt",
+      "sha256": "108c9cf3f923b595a365d0571d17cc7201d473071bf21658ab099ba828ad3aee",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.py",
+      "sha256": "ae6fe4600998c528b415fe8b1ba699b036ca11138ec1de18d5cf42ecb75dbace",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.out.txt",
+      "sha256": "a907ead9af5246a4910f8d67de17570787c8d6fefc004d0420f9fee6c3ed67e1",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.py",
+      "sha256": "fbc17666daf67ba4a6d9790dc3b597ae77738bee33204ce1d64e12bb9fe854a6",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "59d8c8889583ff028c917f41189aeea226a24b627c9c3a76a67c41381354e5f4",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "434a81baa578e234ad7e52bd9d9de74f824c23d5608a2a13f4703e66bb14af36",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.txt",
+      "sha256": "9767fa7d6b9f0b2e8dd2e5e2baf6578acae4a9d028649ae2679adbcfefbfaa1f",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py",
+      "sha256": "1a8a46077ab9fe971200c6935c9747c7d580fad4ba6b4f51ff594165dc2d9170",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "sha256": "410982aa1926f6eb8027946ba24cee9d4f9001302512c2a04de89cc27ef6c5b6",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md",
+      "sha256": "d62d986e0d9bb755a17affb64ecfa259fb69b269d66a31d552fb8b9106916c9a",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/repo/controlled_vocabulary.yaml",
+      "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/references/case-studies.md",
+      "sha256": "bcd62b9f19e0df5557d6a9b034dd3fa294f942da26f66a19f9e88513b708c3e7",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "hash_matches": true,
+      "size_matches": true
+    }
+  ],
+  "abstract_triangle_fixture_tv": {
+    "(3, 1, 2)": "78621/4563820",
+    "(5, 2, 4)": "675203620/64463986907",
+    "(2, 1, 2)": "221667/30063356"
+  },
+  "cube_edges_from_coordinates": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "cube_tv": "9778807/1312253264",
+  "legal_path_witness": {
+    "W": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "E": [
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "factors_for_first_spin_zero": [
+      26,
+      22,
+      24,
+      24,
+      24,
+      24
+    ],
+    "tv": "1/72"
+  },
+  "adjacent_common_neighbours": [],
+  "pendant_forest": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "unique_factors": [
+      1331
+    ],
+    "tv": "0"
+  },
+  "one_attachment_cycle": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "factors": [
+      41568,
+      41568,
+      41568,
+      41568,
+      41568,
+      41568
+    ]
+  },
+  "spectral_checks": [
+    {
+      "pqr": [
+        3,
+        1,
+        2
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        5,
+        2,
+        4
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        2,
+        1,
+        2
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        1,
+        3,
+        2
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        1,
+        1,
+        3
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        2,
+        2,
+        2
+      ],
+      "powers_1_through_5": "pass"
+    }
+  ],
+  "constant_rule_bridge": {
+    "pqr": [
+      2,
+      2,
+      2
+    ],
+    "factors": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "tv": "0",
+    "touches_two": true
+  },
+  "R2_record_only_conditional_on_distant_record": [
+    "13/72",
+    "11/72",
+    "1/6",
+    "1/6",
+    "1/6",
+    "1/6"
+  ],
+  "mixture_nonclosure_control": {
+    "component_determinants": [
+      "0",
+      "0"
+    ],
+    "mixture": [
+      "5/16",
+      "3/16",
+      "3/16",
+      "5/16"
+    ],
+    "mixture_determinant": "1/16"
+  },
+  "sphere_controls": [
+    {
+      "t": -1,
+      "series": 12.566370614359172,
+      "quadrature": 12.566370614359174,
+      "abs_error": 1.7763568394002505e-15
+    },
+    {
+      "t": 0,
+      "series": 20.942726635185743,
+      "quadrature": 20.942726635185828,
+      "abs_error": 8.526512829121202e-14
+    },
+    {
+      "t": 0.5,
+      "series": 26.2256755652505,
+      "quadrature": 26.225675565250736,
+      "abs_error": 2.3447910280083306e-13
+    },
+    {
+      "t": 1,
+      "series": 32.357110133034475,
+      "quadrature": 32.35711013303499,
+      "abs_error": 5.186961971048731e-13
+    }
+  ],
+  "changed_note_markdown_links": [],
+  "submitted_graph_node": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  }
+}

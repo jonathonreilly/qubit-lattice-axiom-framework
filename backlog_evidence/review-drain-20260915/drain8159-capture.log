@@ -1,0 +1,18 @@
+local_spectrum_check_2026_09_15 1 0.9046969413757324 130072576
+quartet_metric_check_2026_09_15 1 0.824084997177124 123961344
+ground_cutoff_check_2026_09_15 1 0.4353821277618408 122912768
+quadratic_coframe_check_2026_09_15 1 2.3356478214263916 134594560
+decay_check_2026_09_15 1 5.263532876968384 131661824
+mixed_history_check_2026_09_15 1 2.716313123703003 105234432
+cyclic_equilibrium_check_2026_09_15 1 1.131230115890503 191512576
+cyclic_scaling_check_2026_09_15 1 1.6614563465118408 291340288
+positive_generator_check_2026_09_15 1 0.5869309902191162 154796032
+charged_ring_check_2026_09_15 1 0.6554908752441406 169443328
+hybrid_curvature_check_2026_09_15 1 0.35376882553100586 81248256
+hybrid_generator_check_2026_09_15 1 0.3554360866546631 150224896
+integrated_rate_check_2026_09_15 1 0.6999020576477051 172687360
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/drain8159-capture.py", line 55, in <module>
+    assert r['status']=='ok' and r['exit_code']==0 and re.search(r'^TOTAL: PASS=[1-9][0-9]* FAIL=0$',r['stdout'],re.M) and not watch['violations'] and watch['samples']>0,r
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'runner': 'scripts/holonomy_check_2026_09_15.py', 'status': 'nonzero_exit', 'exit_code': -9, 'stdout': '', 'stderr': '', 'elapsed_sec': 0.8523657321929932, 'timeout_sec': 180, 'live_log': '/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/holonomy_check_2026_09_15.txt', 'whole_tree_watchdog': {'limit_bytes': 536870912, 'interval_sec': 0.02, 'root_pid': 77568, 'samples': 18, 'peak_tree_rss_bytes': 598654976, 'violations': [{'rss_bytes': 598654976, 'pids': [77568, 78175, 78194]}], 'boundary': 'Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution.'}, 'capture_script': '/private/tmp/review-drain-20260915/drain8159-capture.py', 'capture_script_sha256': 'b7e0a4bcd9235f5d9500b6495d79f9fca6736517dc5463545a205833af877294'}

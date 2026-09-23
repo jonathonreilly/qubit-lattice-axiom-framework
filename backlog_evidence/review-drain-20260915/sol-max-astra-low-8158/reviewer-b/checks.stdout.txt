@@ -1,0 +1,286 @@
+{
+  "abstract_triangle_fixture_tv": {
+    "(3, 1, 2)": "78621/4563820",
+    "(5, 2, 4)": "675203620/64463986907",
+    "(2, 1, 2)": "221667/30063356"
+  },
+  "cube_edges_from_coordinates": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "cube_tv": "9778807/1312253264",
+  "legal_path_witness": {
+    "W": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "E": [
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "factors_for_first_spin_zero": [
+      26,
+      22,
+      24,
+      24,
+      24,
+      24
+    ],
+    "tv": "1/72"
+  },
+  "adjacent_common_neighbours": [],
+  "pendant_forest": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "unique_factors": [
+      1331
+    ],
+    "tv": "0"
+  },
+  "one_attachment_cycle": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "factors": [
+      41568,
+      41568,
+      41568,
+      41568,
+      41568,
+      41568
+    ]
+  },
+  "spectral_checks": [
+    {
+      "pqr": [
+        3,
+        1,
+        2
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        5,
+        2,
+        4
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        2,
+        1,
+        2
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        1,
+        3,
+        2
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        1,
+        1,
+        3
+      ],
+      "powers_1_through_5": "pass"
+    },
+    {
+      "pqr": [
+        2,
+        2,
+        2
+      ],
+      "powers_1_through_5": "pass"
+    }
+  ],
+  "constant_rule_bridge": {
+    "pqr": [
+      2,
+      2,
+      2
+    ],
+    "factors": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "tv": "0",
+    "touches_two": true
+  },
+  "R2_record_only_conditional_on_distant_record": [
+    "13/72",
+    "11/72",
+    "1/6",
+    "1/6",
+    "1/6",
+    "1/6"
+  ],
+  "mixture_nonclosure_control": {
+    "component_determinants": [
+      "0",
+      "0"
+    ],
+    "mixture": [
+      "5/16",
+      "3/16",
+      "3/16",
+      "5/16"
+    ],
+    "mixture_determinant": "1/16"
+  },
+  "sphere_controls": [
+    {
+      "t": -1,
+      "series": 12.566370614359172,
+      "quadrature": 12.566370614359174,
+      "abs_error": 1.7763568394002505e-15
+    },
+    {
+      "t": 0,
+      "series": 20.942726635185743,
+      "quadrature": 20.942726635185828,
+      "abs_error": 8.526512829121202e-14
+    },
+    {
+      "t": 0.5,
+      "series": 26.2256755652505,
+      "quadrature": 26.225675565250736,
+      "abs_error": 2.3447910280083306e-13
+    },
+    {
+      "t": 1,
+      "series": 32.357110133034475,
+      "quadrature": 32.35711013303499,
+      "abs_error": 5.186961971048731e-13
+    }
+  ],
+  "changed_note_markdown_links": [],
+  "submitted_graph_node": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  }
+}

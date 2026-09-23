@@ -1,0 +1,28 @@
+{
+  "status": "FUTURE_BUILDER_SYNTAX_AND_ACTUAL_METADATA_CHECKED_NOT_EXECUTED",
+  "builder": {
+    "path": "/private/tmp/review-drain-20260915/drain8165-build-staged-draft-v1.py",
+    "sha256": "b995e86d8a73790f4faad439b4ae0daa9010121d3919958d17a02d2ed582ea30"
+  },
+  "capture_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8165-capture-plan-v1.json",
+    "sha256": "72c562ec6ce768dab8c86385fe87345aeebada911e2cbc1836e40946f0e73a76"
+  },
+  "api_check": {
+    "path": "/private/tmp/review-drain-20260915/drain8165-future-builder-api-check-v1.json",
+    "sha256": "a8907242d2064b5bc9ccd931dd97c76571828e2029de16c18c93e76a203ed3ac"
+  },
+  "registry_edits_needed": false,
+  "source_files": 74,
+  "original_dispositions": 88,
+  "unique_programs": 3,
+  "scientific_execution_count": 0,
+  "guard_review": [
+    "Exact reviewed source/archive and immutable snapshot bytes/modes",
+    "Expected base must equal HEAD and current origin/main, exclusive owner and clean tracked/index/ignored state",
+    "Actual APIs rechecked before staging; any drift preserves failure and stops",
+    "No registry mutation; only 74 owned paths may be staged",
+    "All 88 path/mode/blob/raw/stored identities and disposition/recovery bindings",
+    "No fabricated cold/final reviewer confirmation; original and early reports immutable"
+  ]
+}

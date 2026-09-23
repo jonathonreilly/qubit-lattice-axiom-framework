@@ -1,0 +1,54 @@
+{
+  "status": "READ-ONLY RESOURCE DIAGNOSIS; NO EDIT OR RERUN",
+  "source_sha256": "f11ffd70fd35b9ca48996e175311b1309ca0a514f1d48f6dc9c594da1142fa17",
+  "failure_receipt": "/private/tmp/review-drain-20260915/drain8159-execution-holonomy_check_2026_09_15.json",
+  "failure_sha256": "dff042d1d457c250e18c0d890024b8eab822223c778cab651c369c59ab8ad64d",
+  "observed": {
+    "runner": "scripts/holonomy_check_2026_09_15.py",
+    "status": "nonzero_exit",
+    "exit_code": -9,
+    "stdout": "",
+    "stderr": "",
+    "elapsed_sec": 0.8523657321929932,
+    "timeout_sec": 180,
+    "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/holonomy_check_2026_09_15.txt",
+    "whole_tree_watchdog": {
+      "limit_bytes": 536870912,
+      "interval_sec": 0.02,
+      "root_pid": 77568,
+      "samples": 18,
+      "peak_tree_rss_bytes": 598654976,
+      "violations": [
+        {
+          "rss_bytes": 598654976,
+          "pids": [
+            77568,
+            78175,
+            78194
+          ]
+        }
+      ],
+      "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+    },
+    "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture.py",
+    "capture_script_sha256": "b7e0a4bcd9235f5d9500b6495d79f9fca6736517dc5463545a205833af877294"
+  },
+  "cause_assessment": "Whole supervisor/descendant RSS exceeded512MiB. Original plan missed major np.indices and stacked array work. Receipt has no per-PID RSS or allocation stack, so exact allocation at kill cannot be identified from preserved evidence. This is a resource failure, not failed mathematical assertion.",
+  "source_inventory": {
+    "Fourier_M48_points": 912673,
+    "Fourier_mesh_bytes": 21904152,
+    "band_L72_points": 373248,
+    "band_visible_arrays_38_float_components_bytes": 113467392,
+    "retained_Fourier_mesh_r2_mask_min_bytes": 30118209,
+    "additional_costs": "Boolean-index mesh copy, trigonometric/ufunc temporaries, derivative products and reduction temporaries, BLAS/library workspaces and allocator retention, supervisor/ps RSS. No local helper imports. First13 receipts total only about0.15MB, not hundreds of MiB."
+  },
+  "plan_defect": "Resource operation inventory listed zeros_like/zeros but omitted np.indices full3D meshes, sin/cos and stacked derivative arrays; generic512MiB ceiling was insufficient in actual host execution.",
+  "proposal": "Prefer bounded slab evaluation of Fourier sums and band energy/gradient/Hessian over identical full M and L grids, preserving all points, parameters, refinements and assertions/tolerances. Explicitly review floating summation-order differences; mathematical identity unchanged but implementation must receive affected cold review and fresh source/input preflight. Keep512MiB as proposed ceiling until source-accounted bound is reviewed; no blind increase. Preserve original failed receipt/cache and first13 valid captures.",
+  "alternative_diagnostic": "If exact allocation attribution is required before implementation, root can authorize one instrumented diagnostic with per-PID RSS and stage markers; no such run has occurred.",
+  "not_done": [
+    "No source edits",
+    "No cap change",
+    "No rerun",
+    "No staging or gate"
+  ]
+}

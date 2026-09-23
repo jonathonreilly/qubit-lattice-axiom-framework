@@ -1,0 +1,8 @@
+{
+  "id": "01a0cbdb-eb9c-7d51-a3ad-e526f691c072",
+  "rollout_path": "/Users/jonBridger/.codex/sessions/2026/09/22/rollout-2026-09-22T21-23-02-01a0cbdb-eb9c-7d51-a3ad-e526f691c072.jsonl",
+  "created_at": 1790126582,
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "agent_path": "/root/astra_low_matched_8158"
+}

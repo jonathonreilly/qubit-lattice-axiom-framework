@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/hybrid_curvature_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"negative_pointwise_curvature_witness_checked\",\n  \"rows\": [\n    {\n      \"beta\": 1.0,\n      \"N\": 256,\n      \"q\": 41.94581870462977,\n      \"mean_reference_not_used\": true,\n      \"gamma\": 8973401360.009935,\n      \"direct_gamma2\": -9444334817.251295,\n      \"scalar_gamma2\": -9444334817.251291,\n      \"relative_error\": 4.039138107066011e-16,\n      \"curvature_ratio\": -1.0524810423993827,\n      \"electric_hessian_bound\": 1.83895820475033e-12,\n      \"electric_correction_upper\": 0.016501677113409368,\n      \"actual_clock_gamma2_upper\": -9444334817.234789\n    },\n    {\n      \"beta\": 2.0,\n      \"N\": 363,\n      \"q\": 83.89163740925954,\n      \"mean_reference_not_used\": true,\n      \"gamma\": 2.303589143360119e+19,\n      \"direct_gamma2\": -2.4656583543610724e+19,\n      \"scalar_gamma2\": -2.465658354361072e+19,\n      \"relative_error\": 1.6612196060152867e-16,\n      \"curvature_ratio\": -1.070355085440519,\n      \"electric_hessian_bound\": 1.3154394416476595e-12,\n      \"electric_correction_upper\": 30302320.16442823,\n      \"actual_clock_gamma2_upper\": -2.465658354358042e+19\n    },\n    {\n      \"beta\": 4.0,\n      \"N\": 512,\n      \"q\": 167.7832748185191,\n      \"mean_reference_not_used\": true,\n      \"gamma\": 7.59053908826228e+37,\n      \"direct_gamma2\": -8.192432325028999e+37,\n      \"scalar_gamma2\": -8.1924323250289985e+37,\n      \"relative_error\": 1.1528606634789455e-16,\n      \"curvature_ratio\": -1.0792951896786178,\n      \"electric_hessian_bound\": 1.83895820475033e-12,\n      \"electric_correction_upper\": 1.3958684134838013e+26,\n      \"actual_clock_gamma2_upper\": -8.19243232501504e+37\n    }\n  ],\n  \"scope\": \"Finite free four-cube; fixed-clock correction uses the cited uniform electric-extension theorem. No gap, phase, or axiom no-go.\"\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite move rates, detailed balance and source identities\nper_site: finite cube carrier and curvature fixtures\nper_mode: finite source directions only; no spectral limit execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.35376882553100586,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/hybrid_curvature_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/hybrid_curvature_check_2026_09_15.json",
+    "sha256": "cba7ed6dbf6ce48f1ad5c4cbbcdaa7185a9f26ecc001ea4ab7ac29e6c870e0c2"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 77568,
+    "samples": 8,
+    "peak_tree_rss_bytes": 81248256,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture.py",
+  "capture_script_sha256": "b7e0a4bcd9235f5d9500b6495d79f9fca6736517dc5463545a205833af877294"
+}

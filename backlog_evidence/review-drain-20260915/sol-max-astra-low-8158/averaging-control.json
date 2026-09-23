@@ -1,0 +1,26 @@
+{
+  "first_product_law": [
+    "9/16",
+    "3/16",
+    "3/16",
+    "1/16"
+  ],
+  "second_product_law": [
+    "1/16",
+    "3/16",
+    "3/16",
+    "9/16"
+  ],
+  "equal_mixture": [
+    "5/16",
+    "3/16",
+    "3/16",
+    "5/16"
+  ],
+  "determinants": [
+    "0",
+    "0",
+    "1/16"
+  ],
+  "conclusion": "Strictly positive independent conditional laws can mix to a dependent law; this refutes generic nonlinear transfer, not a particular absent block theorem."
+}

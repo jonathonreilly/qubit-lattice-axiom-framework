@@ -1,0 +1,36 @@
+{
+  "frozen_before_any_candidate_report": true,
+  "created_at": "2026-09-23T01:21:42.665836+00:00",
+  "known_issue_themes": [
+    {
+      "id": "cubic_fixture",
+      "criterion": "Triangle-containing fixture is outside nearest-neighbor cubic lattice domain."
+    },
+    {
+      "id": "global_iff",
+      "criterion": "Global iff overclaims constant-rule cases and/or lacks arbitrary-component noncancellation proof."
+    },
+    {
+      "id": "zero_attachment",
+      "criterion": "Components with zero recorded attachments also contribute constants."
+    },
+    {
+      "id": "axiom_model",
+      "criterion": "Finite static measures do not establish complete all-axiom model counterexamples."
+    },
+    {
+      "id": "averaging",
+      "criterion": "Averaging transfers appropriate uniform linear bounds, not arbitrary nonlinear law properties."
+    },
+    {
+      "id": "dependency_graph",
+      "criterion": "Submitted changed-claim graph omits actual named premise dependencies."
+    }
+  ],
+  "historical_basis": {
+    "astra_original_sha256": "85470c99cba0d21a4a29572ed307f39e88a4c6c0d745bd8afca9b9e78f0a27ad",
+    "prior_pilot_comparison_sha256": "f2b199f6734570d89987fa2b127fbde8c2da9f6ad362acd118eb7ca4060ba339"
+  },
+  "scoring": "Root independently checks each report against original source; credit substantiated equivalent reasoning, not matching keywords. Separate materiality and new valid issues; report false positives and omissions. Packet coverage and control quality are separate from issue count.",
+  "bias": "Same known-defective PR chosen after prior pilot. Fresh model contexts are blind, but this is not an unbiased sample of repository PRs or a replacement-safety estimate."
+}

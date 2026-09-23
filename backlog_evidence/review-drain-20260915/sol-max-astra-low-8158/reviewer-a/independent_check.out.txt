@@ -1,0 +1,10 @@
+plaquette outside-neighbour attachment counts: [1]
+actual two-record path (3, 1, 2) TV 1/72
+abstract ring plus triangle (3, 1, 2) TV 78621/4563820
+actual two-record path (5, 2, 4) TV 29/3174
+abstract ring plus triangle (5, 2, 4) TV 675203620/64463986907
+actual two-record path (2, 1, 2) TV 5/726
+abstract ring plus triangle (2, 1, 2) TV 221667/30063356
+actual two-record path (2, 2, 2) TV 0
+abstract ring plus triangle (2, 2, 2) TV 0
+actual cube face (3, 1, 2) TV 9778807/1312253264

@@ -1,0 +1,127 @@
+{
+  "status": "PLAN ONLY; NOT EXECUTED",
+  "concurrency": 1,
+  "unique_programs": 3,
+  "order": [
+    {
+      "runner": "scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py",
+      "source_sha256": "83bb578cdd010b3c09c532382d19e132b70a8600e4a8b0d30e2c880fb4d59cb3",
+      "owners": [
+        "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "command": [
+        "python3",
+        "scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py"
+      ],
+      "ordered_inputs": [
+        {
+          "path": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc"
+        },
+        {
+          "path": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e"
+        }
+      ],
+      "timeout_seconds": 120,
+      "process_tree_rss_limit_bytes": 536870912,
+      "expected_total": 3,
+      "count_scope": "Three completed diagnostic families; emitted after every original family assertion and main witness-loss assertion finishes. Static assertion count is separately labelled, not dynamic coverage.",
+      "json_output": "logs/runner-cache/compact_rotor_geometry_and_heat_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/compact_rotor_geometry_and_heat_check_2026_09_16.txt",
+      "helper_execution": "Standalone; no local scientific helper imports or sibling execution. Shared reflection/path primary captured exactly once for its two owners.",
+      "failure_policy": "Preserve every stream, exit, timing, resource measurement and partial output in a new immutable attempt record. No automatic retry or cap increase."
+    },
+    {
+      "runner": "scripts/compact_rotor_reflection_and_path_check_2026_09_16.py",
+      "source_sha256": "a48e2b037a49ca350d89213b3a88d931509e44c0d9ebff462c0cc036cb0cbef4",
+      "owners": [
+        "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "command": [
+        "python3",
+        "scripts/compact_rotor_reflection_and_path_check_2026_09_16.py"
+      ],
+      "ordered_inputs": [
+        {
+          "path": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc"
+        },
+        {
+          "path": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e"
+        },
+        {
+          "path": "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0"
+        }
+      ],
+      "timeout_seconds": 120,
+      "process_tree_rss_limit_bytes": 536870912,
+      "expected_total": 3,
+      "count_scope": "Three completed diagnostic families; emitted after every original family assertion and main witness-loss assertion finishes. Static assertion count is separately labelled, not dynamic coverage.",
+      "json_output": "logs/runner-cache/compact_rotor_reflection_and_path_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/compact_rotor_reflection_and_path_check_2026_09_16.txt",
+      "helper_execution": "Standalone; no local scientific helper imports or sibling execution. Shared reflection/path primary captured exactly once for its two owners.",
+      "failure_policy": "Preserve every stream, exit, timing, resource measurement and partial output in a new immutable attempt record. No automatic retry or cap increase."
+    },
+    {
+      "runner": "scripts/compact_rotor_coarse_current_check_2026_09_16.py",
+      "source_sha256": "dbae621b71f1f45a285af5ae6dd1f3ccdc14e86bc962d2369e7dbb65f5370c14",
+      "owners": [
+        "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "command": [
+        "python3",
+        "scripts/compact_rotor_coarse_current_check_2026_09_16.py"
+      ],
+      "ordered_inputs": [
+        {
+          "path": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc"
+        },
+        {
+          "path": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e"
+        },
+        {
+          "path": "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0"
+        },
+        {
+          "path": "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "0bec7eaaf856d6e48314e15c13468e98b6d5af3d90f52626c853cd5327d52416"
+        }
+      ],
+      "timeout_seconds": 120,
+      "process_tree_rss_limit_bytes": 536870912,
+      "expected_total": 3,
+      "count_scope": "Three completed diagnostic families; emitted after every original family assertion and main witness-loss assertion finishes. Static assertion count is separately labelled, not dynamic coverage.",
+      "json_output": "logs/runner-cache/compact_rotor_coarse_current_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/compact_rotor_coarse_current_check_2026_09_16.txt",
+      "helper_execution": "Standalone; no local scientific helper imports or sibling execution. Shared reflection/path primary captured exactly once for its two owners.",
+      "failure_policy": "Preserve every stream, exit, timing, resource measurement and partial output in a new immutable attempt record. No automatic retry or cap increase."
+    }
+  ],
+  "resource_evidence": {
+    "path": "/private/tmp/review-drain-20260915/drain8165-original-review.json",
+    "sha256": "686b5b035052e7d793a126d7d7b24626dd07c98c03d6613efb87d0c20806ba0d"
+  },
+  "affected_confirmation": {
+    "path": "/private/tmp/review-drain-20260915/drain8165-early-affected-review-v1.json",
+    "sha256": "b668974f0c980b4c839d390236e0635d021bceb81a64ba2fb719a711b84aa2b6"
+  },
+  "prepared_reference": {
+    "path": "/private/tmp/review-drain-20260915/drain8165-author-prepared-v1.json",
+    "sha256": "61656f86004b0288198f6f754177ad24437c76ccffece2c0dac3e8dcb770e698"
+  },
+  "requirements": [
+    "Root explicitly dispatches staging after current-main advance; staged cheap preflight and original reviewer cold-source confirmation precede primary captures.",
+    "External wrapper enforces 120 seconds and 512 MiB process-tree RSS; declarations are not enforcement. Budget is source-derived, not measured RSS.",
+    "Freeze source, inputs and actual discovery/tooling identities before three sole sequential captures. No placeholders or historical cache restamping.",
+    "Use actual runner_cache authentication and save API after each authorized run; raw JSON is not by itself authenticated evidence.",
+    "No reruns of original eleven mutations or failed Fourier history; retain their exact immutable sources and streams.",
+    "Original reviewer final evidence confirmation and combined integration validation remain required."
+  ]
+}

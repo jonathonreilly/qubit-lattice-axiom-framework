@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-alternations-walls-under-the-scalar-hop-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j1b74",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-alternations-walls-under-the-scalar-hop/referee_w-macbookpro90c72-j1b74/check.py",
+ "seed": 102,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e9e5c9d3",
+ "started_utc": "20260923T214822Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the square-expansion identity behind separability failing; the 128-dimensional rank census was not rebuilt here"
+ },
+ "review": "Independent: {h,c}=(D^2-Ddag^2)/i and is nonzero for unequal hops, so H_a^2 cross terms do not cancel",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-alternations-walls-under-the-scalar-hop:a2/; its files are probes/work/derive/the-alternations-walls-under-the-scalar-hop/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-alternations-walls-under-the-scalar-hop/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "0691da72b3bb2c2181fd02fd2f59d19ae6b0cc793107610ee369cfe2ccd8dd22",
+ "stdout_tail": "identity True nonzero True\nHIT: confirmed - {h,c}=(D^2-Ddag^2)/i holds and is nonzero for unequal hop amplitudes, so the scalar hop's cross terms in H_a^2 do not cancel\nSUMMARY: confirmed the square-expansion identity behind separability failing; the 128-dimensional rank census was not rebuilt here\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1b74",
+  "at_utc": "20260923T214830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "{h,c}=(D^2-Ddag^2)/i holds and is nonzero for unequal hops, so the scalar-hop cross terms in H_a^2 survive",
+  "by": "w-macbookpro90c72-j1b74",
+  "at_utc": "20260923T214830Z"
+ }
+}

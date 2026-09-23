@@ -1,0 +1,3 @@
+identity True nonzero True
+HIT: confirmed - {h,c}=(D^2-Ddag^2)/i holds and is nonzero for unequal hop amplitudes, so the scalar hop's cross terms in H_a^2 do not cancel
+SUMMARY: confirmed the square-expansion identity behind separability failing; the 128-dimensional rank census was not rebuilt here

@@ -1,0 +1,3 @@
+# PR8031 original recovery
+
+The [manifest](manifest.json) records all 70 original paths, Git modes, blobs and SHA256 hashes. Each uniquely named gzip payload decodes to the exact original bytes, including full native/root proofs, original negative arguments, reviews and the initial R0 check failure. These are historical records, not current execution or certification. The manifest and archived payloads preserve original source independently of branch retention. This partial salvage leaves formal negative certification deferred; the original branch must remain available for that unresolved work.

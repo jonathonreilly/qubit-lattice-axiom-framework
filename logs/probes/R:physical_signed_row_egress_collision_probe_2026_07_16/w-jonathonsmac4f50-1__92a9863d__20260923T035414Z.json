@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_signed_row_egress_collision_probe_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_signed_row_egress_collision_probe_2026_07_16.py",
+ "seed": 35654,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92a9863d",
+ "started_utc": "20260923T035414Z",
+ "elapsed_s": 94.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "86627fcc45404abad7d8886b135a48bf3b7f8d92429a7165a889719ceda46b71",
+ "stdout_tail": "TERMINAL 32 0 all-six-neighbors-occupied\nOPEN_PORT_IDENTITY 32 0 equals-whole-row-tap\nLAW 97388 32 768 768 768 0\nOUTPUT_PAIRS 32 [('ARM', 'H0'), ('AUXY', 'H1'), ('AUXZ', 'H0'), ('A_0_1', 'H1'), ('A_0_2', 'H0'), ('A_1_0', 'H1'), ('A_1_2', 'H0'), ('A_2_0', 'H1')]\nRESULT PHYSICAL_SIGNED_ROW_EGRESS_COLLISION\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T035549Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

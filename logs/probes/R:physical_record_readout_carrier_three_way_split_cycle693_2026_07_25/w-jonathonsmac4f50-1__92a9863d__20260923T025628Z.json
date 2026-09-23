@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_record_readout_carrier_three_way_split_cycle693_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_record_readout_carrier_three_way_split_cycle693_2026_07_25.py",
+ "seed": 32188,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92a9863d",
+ "started_utc": "20260923T025628Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "31c74d15d289d60e686536d397ad2a23400ecdf4fa67394f5391583642e1e79f",
+ "stdout_tail": "hile the pointwise fixture has no nonzero nilpotent :: {'x': '(Fraction(0, 1), Fraction(1, 1), Fraction(0, 1))', 'x_squared': '(Fraction(0, 1), Fraction(0, 1), Fraction(1, 1))', 'x_cubed': '(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))', 'pointwise_grid_nilpotents': 0}\nSUMMARY_JSON {\"additive_factorization\": \"derived for each supplied additive scalar codomain and realized content set\", \"algebra_product\": \"not selected by the additive Record reduct; parent already names pointwise multiplication\", \"audit\": \"unset\", \"authority\": \"none\", \"complex_scalar_carrier\": \"not derived by Record; scalar codomain and operational closure remain inputs\", \"conclusion\": \"Record derives singleton-content factorization for each supplied additive scalar codomain. It does not by itself supply a finite content alphabet, a complex operational carrier, or a physical event-algebra product identification.\", \"cycle\": 693, \"cycle_claim\": null, \"fail_count\": 0, \"finite_alphabet\": \"not entailed; full-framework infinite-content countermodel exhibited\", \"firewalls\": {\"dynamics_probability_or_measurement_claimed\": false, \"new_axiom_or_primitive_proposed\": false, \"physical_carrier_identified\": false, \"pointwise_product_called_unnamed_input\": false}, \"pass\": true, \"pass_count\": 6, \"resources\": {\"elapsed_seconds\": 1.0640167919918895}, \"runner_sha256\": \"d5403ebbf51d8ecfaf621d5e0983d333b8df9a7d589145095b598c530ac15ab4\"}\nRESULT 6 0 elapsed 1.07 s\nRESULT RECORD_FIXES_ADDITIVE_FORM_NOT_FINITE_COMPLEX_EVENT_ALGEBRA\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T025629Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

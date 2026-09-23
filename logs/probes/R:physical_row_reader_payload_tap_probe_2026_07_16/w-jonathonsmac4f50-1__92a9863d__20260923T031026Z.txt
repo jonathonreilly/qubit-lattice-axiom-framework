@@ -1,0 +1,5 @@
+LAW 32 768 96620 97388 0 0
+IDENTITY {'ported': {(112, 320, 1, 5, (), 107, 10)}, 'twoport': {(4375, 21250, 1, 9, (), 147, 18)}}
+ROTATIONS {'ported': {(112, 320, 1, 5, (), 107, 10)}, 'twoport': {(4375, 21250, 1, 9, (), 147, 18)}}
+DELETION 0
+RESULT PHYSICAL_ROW_READER_PAYLOAD_TAP

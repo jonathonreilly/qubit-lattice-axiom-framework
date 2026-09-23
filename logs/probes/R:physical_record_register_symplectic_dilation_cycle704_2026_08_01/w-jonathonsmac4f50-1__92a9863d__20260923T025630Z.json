@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_record_register_symplectic_dilation_cycle704_2026_08_01",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_record_register_symplectic_dilation_cycle704_2026_08_01.py",
+ "seed": 32189,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92a9863d",
+ "started_utc": "20260923T025630Z",
+ "elapsed_s": 7.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "70e519025aa5f5d63932d64d9bf93de14e54bd7704ada1d3ef359520903b2234",
+ "stdout_tail": "n_bit_exact_oddness\nPASS e2b_sign_ratio_blind\nPASS e2c_sign_difference_registers\nREPORT e1_delratio=0.0 e2_dsum=0.0\nPASS e3_scale_double_exact\nPASS e3b_scale_half_exact\nPASS e4_register_swap_inverse\nREPORT e4_swap=2.775558e-17\n== F REJECTORS ==\nPASS f1_back_reaction_detected\nPASS f2_back_reaction_linear\nPASS f3_bit_identity_discriminates\nPASS f4_adjoint_window_rejector\nREPORT f1_shift=0.024162430644096317 f2_lin=1.740479e-14\nREPORT f4_window=0.022060595687201985\n== G RECEIPT ==\nPASS g1_receipt_fields\nPASS stdout_under_6000\nSUMMARY_JSON {\"A\":{\"R_mut\":-4.041192913005944,\"R_static19\":-3.9169789686578174,\"hold\":[-4.209568736178572,-4.150939492487698,-4.121308954024253,-4.1145788661621125],\"range_ratio\":33.161007666123425,\"range_sep\":0.12421394434812694,\"reversal\":2.916316e-16,\"staticerr\":0.003745783167953043},\"B\":{\"b4\":0.0,\"b5\":0.0,\"b6\":1.047724e-15,\"bit_phi\":true,\"bit_phibar\":true,\"bit_pi\":true,\"ratio_A\":-4.11457886616211},\"C\":{\"c1\":2.916316e-16,\"c2\":2.414735e-15,\"c4c\":4.773069e-16,\"defect_raw\":3.637979e-12,\"dim\":58,\"inv_raw\":3.274181e-11,\"logdet\":5.340173e-14,\"trip\":2.19301e-13},\"D\":{\"d1\":6.270474e-14,\"d2\":1.800173e-13,\"d6\":5.594399e-19,\"kernel_dim\":1454,\"loud\":0.0008532113036548956,\"omitted_gap\":1.4554301648969066,\"silent\":3.507658e-19,\"sv\":[77.5680609707272,54.09257575502038,47.78606367793194,39.56216442318937]},\"E\":{\"del\":0.0,\"swap\":2.775558e-17},\"F\":{\"f1\":0.024162430644096317,\"f2\":1.740479e-14,\"f4\":0.022060595687201985},\"cycle\":704,\"fail\":0,\"pass\":54}\nTOTAL: PASS=54 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T025638Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

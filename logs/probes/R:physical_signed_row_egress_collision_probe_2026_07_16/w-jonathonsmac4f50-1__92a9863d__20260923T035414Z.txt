@@ -1,0 +1,5 @@
+TERMINAL 32 0 all-six-neighbors-occupied
+OPEN_PORT_IDENTITY 32 0 equals-whole-row-tap
+LAW 97388 32 768 768 768 0
+OUTPUT_PAIRS 32 [('ARM', 'H0'), ('AUXY', 'H1'), ('AUXZ', 'H0'), ('A_0_1', 'H1'), ('A_0_2', 'H0'), ('A_1_0', 'H1'), ('A_1_2', 'H0'), ('A_2_0', 'H1')]
+RESULT PHYSICAL_SIGNED_ROW_EGRESS_COLLISION

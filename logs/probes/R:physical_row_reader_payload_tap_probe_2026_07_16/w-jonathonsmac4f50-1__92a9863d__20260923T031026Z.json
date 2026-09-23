@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_row_reader_payload_tap_probe_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_row_reader_payload_tap_probe_2026_07_16.py",
+ "seed": 33026,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92a9863d",
+ "started_utc": "20260923T031026Z",
+ "elapsed_s": 432.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2819634bafe157d8ecaadb27eef8adfbbe52cff768b076fd76c26407041503cc",
+ "stdout_tail": "LAW 32 768 96620 97388 0 0\nIDENTITY {'ported': {(112, 320, 1, 5, (), 107, 10)}, 'twoport': {(4375, 21250, 1, 9, (), 147, 18)}}\nROTATIONS {'ported': {(112, 320, 1, 5, (), 107, 10)}, 'twoport': {(4375, 21250, 1, 9, (), 147, 18)}}\nDELETION 0\nRESULT PHYSICAL_ROW_READER_PAYLOAD_TAP\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T031738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

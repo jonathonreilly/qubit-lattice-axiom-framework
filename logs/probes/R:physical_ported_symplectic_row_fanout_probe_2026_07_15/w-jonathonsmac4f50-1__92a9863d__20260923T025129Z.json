@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_ported_symplectic_row_fanout_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_ported_symplectic_row_fanout_probe_2026_07_15.py",
+ "seed": 31889,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92a9863d",
+ "started_utc": "20260923T025129Z",
+ "elapsed_s": 91.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b3182cfce85e7b18189ae924f72aa7e71bde67e5d94624d47a58db9e90e4420d",
+ "stdout_tail": "ROLES ('M', 'MX', 'OPEN_B', 'OPEN_C')\nTABLE 128 3072 86444 0\nGRAPHS 768 [53] 0\nRESULT PHYSICAL_PORTED_SYMPLECTIC_ROW_FANOUT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T025300Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

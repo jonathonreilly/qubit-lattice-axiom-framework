@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_row_native_signed_membership_cycle169_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_row_native_signed_membership_cycle169_2026_07_16.py",
+ "seed": 32274,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92a9863d",
+ "started_utc": "20260923T025754Z",
+ "elapsed_s": 313.6,
+ "returncode": 1,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2eb50aa435cebeeff114626e1bd3fe43fb8274c03bd59583d30a0f3b5e02177e",
+ "stdout_tail": "LAW 97388 768 768 288 99212 0 100652 101708 0\nGEOMETRY 3 132541 1587395 38 54 0\nROUTE_PREFLIGHT 38 0 0 0\nCOMPACT_REGRESSION (True, '')\nDOMAIN 360 2160 1080 1080 (360, 360, 360) 0\nFIREWALL 0 0 0 () True\nINITIAL_CROSSFIRE (True, 15, 15, (), ())\nCOVARIANCE (24, 288, 132747) 0\nMIN (True, (132542, 2261261, 27, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))\nMAX (True, (132542, 1685913, 23, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))\nPHYSICAL_ROTATIONS ((0, (True, (132542, 1685909, 23, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))), (1, (True, (132542, 1776617, 25, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))), (2, (True, (132542, 1747032, 23, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))), (3, (True, (132542, 1842059, 24, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))), (4, (True, (132542, 1670477, 21, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))), (5, (True, (132542, 1629005, 18, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))))\nDELETIONS 132606 0 (0, 0, -1)\nSECONDS 230.949\nRESULT OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T030308Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:physical_proper_cubic_covariance_ceiling_cycle690_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_proper_cubic_covariance_ceiling_cycle690_2026_07_24.py",
+ "seed": 31980,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92a9863d",
+ "started_utc": "20260923T025300Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "faed2a9c0cba43fd594018fd4d93c8202a1623f43a544efc985a1d84b413d1f8",
+ "stdout_tail": "ations and all 576 group products\nper_block: computed the five-tetrahedron ceiling block (stabilizer 12) and Kuhn block (stabilizer 6)\nlattice_wide: checked and not executed \u2014 the executed claim is local to one unit-cube substrate; global periodic or dynamical covariance is outside scope\nSUMMARY_JSON {\"all_24_invariant_triangulation_exists\": false, \"audit\": \"unset\", \"authority\": \"none\", \"chirality_forced_at_ceiling\": true, \"covariance_ceiling\": 12, \"cycle\": 690, \"cycle_claim\": null, \"diagonal_orbits\": {\"body\": 4, \"face\": 12}, \"escape_requires_vertices_beyond_Z3\": true, \"fail_count\": 0, \"failures\": 0, \"firewalls\": {\"any_gravity_stress_energy_or_einstein_claim\": false, \"chirality_choice_called_parity_violation\": false, \"stabilizer_called_a_physical_symmetry\": false}, \"group_order\": 24, \"kuhn_covariance\": 6, \"no_go\": {\"axiom_pressure\": false, \"escape_conditions\": [\"enrich the vertex set beyond Z^3 (cube and face centres), at the cost of leaving the lattice\", \"accept 12 via the five-tetrahedron decomposition and declare a chirality\", \"accept the standard Kuhn complex's scope of 6\"], \"shared_obstruction\": false, \"statement\": \"no Z^3-vertex cube triangulation is invariant under all 24 proper cubic rotations\"}, \"pass\": true, \"pass_count\": 15, \"passes\": 15, \"resources\": {\"elapsed_seconds\": 0.15233575005549937}, \"runner_sha256\": \"4f5cca0082c0fc344f9a1366381d17fb764d19e05fc3f056e987bfa3dee8ce21\"}\nRESULT 15 0 elapsed 0.15 s\nRESULT Z3_VERTEX_PROPER_CUBIC_COVARIANCE_CEILING_IS_EXACTLY_12\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T025301Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_proper_cubic_covariance_ceiling_cycle690_2026_07_24.txt against the .txt beside this log"
+  ]
+ }
+}

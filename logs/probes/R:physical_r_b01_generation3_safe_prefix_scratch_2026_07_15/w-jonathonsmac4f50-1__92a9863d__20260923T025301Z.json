@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_r_b01_generation3_safe_prefix_scratch_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_r_b01_generation3_safe_prefix_scratch_2026_07_15.py",
+ "seed": 31981,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92a9863d",
+ "started_utc": "20260923T025301Z",
+ "elapsed_s": 69.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c8a71dc5b9fa8496bb11b6b132ff8f4f7720005ccb7b6d9bfd1f13009ddef6ad",
+ "stdout_tail": "MISMATCHES ()\nTABLE 6 NEW_RAW 144 FULL_RAW 9128 MULTI 0\nCOMPILED 244 253 UNEXPECTED 8 ((-9, 1, -2), (-8, 0, -2), (-8, 2, -2), (-7, 1, -2), (-5, 1, -2), (-4, 0, -2), (-4, 2, -2), (-3, 1, -2)) WRONG 156\nTERMINAL_ENABLED {(-11, 1, 2): frozenset({'R_B21'})}\nSTART (3, 2, -3) A_1_2\nRESULT PHYSICAL_R_B01_GENERATION3_SAFE_PREFIX\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T025410Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

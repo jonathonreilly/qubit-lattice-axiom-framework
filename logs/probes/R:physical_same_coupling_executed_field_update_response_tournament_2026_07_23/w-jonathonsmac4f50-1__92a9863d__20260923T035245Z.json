@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_same_coupling_executed_field_update_response_tournament_2026_07_23",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_same_coupling_executed_field_update_response_tournament_2026_07_23.py",
+ "seed": 35565,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92a9863d",
+ "started_utc": "20260923T035245Z",
+ "elapsed_s": 15.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b9effd91d29dce044d91df77e49ac57d535c09fba54cc2a87cd395b74e73699b",
+ "stdout_tail": "eds the frozen far control on the D2 fixtures :: {'D2_L3': {'near': 0.06843739777646976, 'far': 0.008817928089412792}, 'D2_L6': {'near': 0.016123112000249587, 'far': 0.00020517868390703415}, 'D2_L7': {'near': 0.014824417533065272, 'far': 7.328359383213931e-05}}\nPASS kick/drift orderings agree within the O(dt^2) bound at the probe ramp time :: {'D1_L3': {'gap': 1.3945559984573919e-11, 'bound': 0.0001}, 'D1_L6': {'gap': 4.550911470585506e-11, 'bound': 0.0001}, 'D1_L7': {'gap': 8.244718146047103e-11, 'bound': 0.0001}, 'D2_L3': {'gap': 2.14652740027077e-11, 'bound': 0.0001}, 'D2_L6': {'gap': 2.810719712531551e-11, 'bound': 0.0001}, 'D2_L7': {'gap': 5.415093720650965e-12, 'bound': 0.0001}}\nPASS kick/drift orderings share one adiabatic limit (both bridge slopes ~ -p) :: {'D1_L3': -1.993, 'D1_L6': -2.039, 'D1_L7': -1.9591, 'D2_L3': -2.0396, 'D2_L6': -2.0065, 'D2_L7': -2.0435}\nSUMMARY_JSON {\"audit\": \"unset\", \"authority\": \"none\", \"bridge_slopes\": {\"D1_L3\": -1.993, \"D1_L6\": -2.039, \"D1_L7\": -1.9591, \"D2_L3\": -2.0396, \"D2_L6\": -2.0065, \"D2_L7\": -2.0435}, \"cycle_claim\": 681, \"failures\": 2, \"literal_comparators_matched\": true, \"passes\": 24, \"resources\": {\"elapsed_seconds\": 11.815834750013892, \"peak_rss_mb\": 172.6875}, \"scale_exponents\": {\"D1_L3\": 2.0, \"D1_L6\": 2.0, \"D1_L7\": 2.0, \"D2_L3\": 2.0, \"D2_L6\": 2.0, \"D2_L7\": 2.0}}\nRESULT SAME_PARAMETER_EXECUTED_FIELD_UPDATE_RESPONSE_SUPPORT_TEST_FAILED outputs/physical_same_coupling_executed_field_update_response_tournament_receipt_2026_07_23.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T035300Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+identity True loose 5/13 > 1/5, (3,1,2) content spread 9 exceeds 49/25 True
+Hstar formula ok, 6 tanh boundary 49/25
+HIT: confirmed - sup TV = (sqrt(M)-sqrt(m))/(sqrt(M)+sqrt(m)) = tanh(log(R)/4), attained (1/5 at R=9/4); 6 tanh < 1 iff R < 49/25; (3,1,2) content ratios already exceed that
+SUMMARY: confirmed the sharp one-site bound and the 49/25 uniqueness window; the chessboard/Peierls constants above were not recomputed

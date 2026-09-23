@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-clumping-bounds-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j2014",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-clumping-bounds/referee_w-macbookpro90c72-j2014/check.py",
+ "seed": 3957,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6d134dae",
+ "started_utc": "20260923T225237Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the sharp one-site bound and the 49/25 uniqueness window; the chessboard/Peierls constants above were not recomputed"
+ },
+ "review": "Independent: sharp TV is (sqrt M-sqrt m)/(sqrt M+sqrt m); 6 tanh<1 iff R<49/25; at (3,1,2) the content spread is 9 not 4, still no uniqueness window",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-clumping-bounds:a2/; its files are probes/work/derive/moving-clumping-bounds/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-clumping-bounds/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "e8da4a8ca408732c1b078195edd8741dba391e97802945c0b657dbd5d4b0c8e8",
+ "stdout_tail": "identity True loose 5/13 > 1/5, (3,1,2) content spread 9 exceeds 49/25 True\nHstar formula ok, 6 tanh boundary 49/25\nHIT: confirmed - sup TV = (sqrt(M)-sqrt(m))/(sqrt(M)+sqrt(m)) = tanh(log(R)/4), attained (1/5 at R=9/4); 6 tanh < 1 iff R < 49/25; (3,1,2) content ratios already exceed that\nSUMMARY: confirmed the sharp one-site bound and the 49/25 uniqueness window; the chessboard/Peierls constants above were not recomputed\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2014",
+  "at_utc": "20260923T225238Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Sharp TV bound and 49/25 window hold; (3,1,2) content spread is 9, still above 49/25",
+  "by": "w-macbookpro90c72-j2014",
+  "at_utc": "20260923T225238Z"
+ }
+}

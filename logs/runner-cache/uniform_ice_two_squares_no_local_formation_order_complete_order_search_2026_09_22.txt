@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_two_squares_no_local_formation_order_complete_order_search_2026_09_22.py
+runner_sha256: 400f8ad99027b583ede9f5d6ff28063112d0c0e99744e84810fe5cfa7f883c57
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 15.35
+status: ok
+----- stdout -----
+A. the window laws
+[PASS] uniform ice weights: 10016 on one square (tr T^4) and 501632 on two :: grid patterns 16 and 128 carry the private-link counts
+B. one square (consistency with open PR 8686)
+[PASS] one square without the plaquette site: no order works :: 21 admissible formed sets, at most 3 of 8 sites
+[PASS] one square with the plaquette site: an order works (the coordinator of open PR 8686) :: 68 admissible formed sets
+C. two squares
+[PASS] two squares without plaquette sites: no order works :: 40 admissible formed sets, at most 4 of 13 sites
+[PASS] two squares with both plaquette coordinators: no order works, for all five record schemes :: V pattern, P pattern: at most 7/15; V nothing, P pattern: at most 11/15; V pattern, P nothing: at most 6/15; V count, P pattern: at most 7/15; V pattern, P count: at most 4/15
+D. one cube
+[PASS] one cube with its six plaquette sites but no cube site: no order works :: 173 admissible formed sets, at most 5 of 26 sites; weight 6316544 = generating-function coefficient
+[PASS] with the cube site, the cube-first order reproduces the law exactly: each top cell needs its own coordinator :: cube, then plaquettes, links, vertices
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

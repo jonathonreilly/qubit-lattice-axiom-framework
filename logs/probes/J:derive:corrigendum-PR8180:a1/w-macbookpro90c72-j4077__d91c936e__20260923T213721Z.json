@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:corrigendum-PR8180:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j4077",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/corrigendum-PR8180/w-macbookpro90c72-j4077/check.py",
+ "seed": 99441,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d91c936e",
+ "started_utc": "20260923T213721Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED - corrigendum for PR #8180. T1: with block 34's transform L^-1 sum e^{-ik.x} th_x, P multiplies mode k by conj(phi(k)), not phi(k) (block 34 L85/L104/L108, block 35 L86 and L106's first line); with the executed pairing E[X conj Y] the display Cov = phi^s Var and the gloss C_s = sigma^2 (I - PP*)^-1 P*^s hold verbatim. In L86's labelling the two differ exactly where phi(k)^s is not real (16/24, 26/45, 58/105 pairs on L = 3, 4, 6). B1/B2 cannot see it; the sine-cosine cross covariance can. T3/D2: the product test separates nothing (both kernels vanish only at 0, so neither is a product in any frame; in level time both depend on w through Re(phi e^{iw})); the frame-free separation is the Hessian of the inverse kernel at 0: 2I (elliptic) against (2/3)J (parabolic, range the causal-cone axis), with 3|1 - z|^2 = E - 3(1 - u) exactly."
+ },
+ "review": "Independent attempt 1 of 2 (claude-opus-5-5). Plan formed before reading a2 (w-jonathonsmac4f50-jb8bf, claude-opus-5, no referee log); agreements (T1 diagnosis, counts 8/24 and 19/45) and differences (frame-free T3 route: zero-set lemma for every frame, Hessian-rank separation, common dependence on Re(phi e^{iw}); L = 6 counts; block 13 T3(ii) as the separation) disclosed in ATTEMPT.md. check.py is exact (own Q(zeta_12) class, Fractions, sympy Laurent identities), 13/13, 20 source quotes pinned by commit; a negative control (phi -> conj phi) fails T1a-T1f. No earlier unit of mine on PR #8180.",
+ "what": "DERIVATION, independent attempt 1 of 2: Corrigendum packet for PR #8180. A probe found and another model family confirmed this defect in PR #8180: T1: phi^s/(1 - |phi|^2) against (I - PP*)^-1 P*^s differ by complex conjugation on every nonzero mode (cosine characters hid it); and T3/D2's product-structure separation is representation-dependent. TASK: (a) the minimal corrected statement (the largest domain on which the original holds, or the corrected formula), proved; (b) every later statement in that note AND in other notes of the campaign that uses the defective one (search the PR branches of blocks 12-35: PRs #8146-#8180), with a verdict for each: unaffected / holds on the corrected domain / needs its own repair; (c) the exact lines of the note and runner that must change. check.py verifies the corrected statement exactly and exhibits the original's failure. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/corrigendum-PR8180/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/corrigendum-PR8180/<name>/check.py\"",
+ "stdout_sha256": "06c72d095570525a239eba12eb31db68be3d1c685b0467ece4a5cdc0efc678bd",
+ "stdout_tail": "tau) - 3 phi G(tau+1) - 3 conj(phi) G(tau-1) = delta is solved by G = conj(phi)^tau (1+y)^-tau/(6y) (|z|^2 = 1/5), with T1b's formation coefficient conj(phi)^tau (1-u^t)/(1-u): the same phase\nchecks: 13 ok, 0 fail\nSUMMARY: PROVED - corrigendum for PR #8180. T1: with block 34's transform L^-1 sum e^{-ik.x} th_x, P multiplies mode k by conj(phi(k)), not phi(k) (block 34 L85/L104/L108, block 35 L86 and L106's first line); with the executed pairing E[X conj Y] the display Cov = phi^s Var and the gloss C_s = sigma^2 (I - PP*)^-1 P*^s hold verbatim. In L86's labelling the two differ exactly where phi(k)^s is not real (16/24, 26/45, 58/105 pairs on L = 3, 4, 6). B1/B2 cannot see it; the sine-cosine cross covariance can. T3/D2: the product test separates nothing (both kernels vanish only at 0, so neither is a product in any frame; in level time both depend on w through Re(phi e^{iw})); the frame-free separation is the Hessian of the inverse kernel at 0: 2I (elliptic) against (2/3)J (parabolic, range the causal-cone axis), with 3|1 - z|^2 = E - 3(1 - u) exactly.\nHIT: block 35's T1 display and operator gloss hold with block 34's transform and the pairing E[X conj Y]; the defect is the multiplier: P acts on that mode k by conj(phi(k)) (block 34 L85/L104/L108, block 35 L86/L106); D2's product test fails for both kernels in every frame, and the separation is the Hessian of the inverse kernel at 0 - rank 3 for E, rank 1 along (1,1,1) for the formation law, where 3|1 - z|^2 = E - 3(1 - u).\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4077",
+  "at_utc": "20260923T213729Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

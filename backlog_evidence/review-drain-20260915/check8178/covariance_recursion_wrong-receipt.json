@@ -1,0 +1,21 @@
+{
+  "plan": {
+    "command": [
+      "/usr/local/bin/python3",
+      "/private/tmp/review-drain-20260915/review-draft-slot/scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py",
+      "--mutation",
+      "covariance_recursion_wrong"
+    ],
+    "wall_limit_seconds": 60,
+    "rss_limit_bytes": 402653184,
+    "poll_seconds": 0.02,
+    "scope": "supervisor and child process tree sampled RSS; enforce by kill group",
+    "simulation_runs": 0
+  },
+  "exit_code": 1,
+  "failure": null,
+  "elapsed": 0.9130805829772726,
+  "peak_rss_bytes": 91422720,
+  "samples": 19,
+  "script_sha256": "f4429ff85f6aef207e4c75e10ecd8313af90af6c5190323723a300d5e4f5c312"
+}

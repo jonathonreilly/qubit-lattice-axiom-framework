@@ -1,0 +1,33 @@
+{
+  "science_executions": 0,
+  "prior_attempt_marker": {
+    "existing_bytes": "prior failed capture",
+    "exclusive_recreation_blocked": true,
+    "bytes_preserved": true,
+    "retry_authorized": false
+  },
+  "actual_basename_collector": {
+    "md_count": 2,
+    "duplicate_basenames": [
+      "PROOF.md",
+      "README.md"
+    ]
+  },
+  "blocking_collision": [
+    "PROOF.md"
+  ],
+  "text_scenarios": [
+    {
+      "case": "original deletion or inherited proof",
+      "outcome": "retain complete original binary delta and endpoint snapshots plus claim disposition; compact transport cannot omit either"
+    },
+    {
+      "case": "successful science on frozen base; integration base advances",
+      "outcome": "keep evidence under original identity; current-main loss/interactions check and fresh combined gate required"
+    },
+    {
+      "case": "same source with changed semantic consumer outside path closure",
+      "outcome": "renew original-reviewer same-session confirmation; disjoint path guard alone insufficient"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
+PASS: A4 all declared inputs exist
+PASS: B1 T1: 1 - |phi(k)|^2 = (4/9)[sin^2(k1/2) + sin^2(k2/2) + sin^2((k1 - k2)/2)] for phi = (1 + e^{i k1} + e^{i k2})/3 (symbolic), so 0 <= |phi|^2 <= 1 with equality only at the zero mode; e.g. |phi(pi, 0)|^2 = 1/9
+PASS: B2 T1: a mode with |phi|^2 = u < 1 driven by white noise of variance sigma^2 has variance sigma^2 (1 - u^t)/(1 - u) after t levels (the geometric sum), the zero mode sigma^2 t, and the plane average sigma^2 t / L^2 per component
+FAIL: C1 T2: on the tori L = 2, 3, 4 the exact rational covariance recursion Sigma_{t+1} = P Sigma_t P^T + I reproduces the mode formula (1/L^2)[t + sum_{k != 0} (1 - u_k^t)/(1 - u_k)] for the site variance and t/L^2 for the plane average at every level tested; L=2: v_12 = 13/2; L=3: v_12 = 10252743/2097152; L=4: v_8 = 831/256
+PASS: C2 T2: on the tori L = 2, 3, 4 the exact V_L = (1/L^2) sum_{k != 0} 1/(1 - u_k) lies in [3/(4 pi^2), 9/16] S_L with the rational lattice sum S_L (the bracket of T3.2 checked where V_L is rational)
+PASS: D1 T3.1: the memory time tau_L = 3 beta L^2 / A(3 beta) enclosed exactly (width < 1/10) at beta = 6, 12, 24, 48 and L = 16, 32, 64, e.g. beta=6 L=16: tau in [4879, 4880]; beta=6 L=32: tau in [19516, 19517]; beta=6 L=64: tau in [78064, 78065]; beta=12 L=16: tau in [9479, 9480] ...; the rate sigma^2/L^2 = A(3 beta)/(3 beta L^2) positive
+PASS: D2 T3.2: M = (1/9)[[2,-1],[-1,2]] has eigenvalues 1/9 and 1/3; sin^2(x/2) <= x^2/4 and sin(x/2) >= x/pi on [0, pi] (exact Taylor enclosures on a grid); hence 3/|k|^2 <= 1/(1 - u(k)) <= (9 pi^2/4)/|k|^2 on the square and V_L in [3/(4 pi^2), 9/16] sigma^2 S_L, verified on the tiny tori
+PASS: D3 T3.2: the rational lattice sums S_16, S_32, S_64 increase (16, 20, 25 to the integer part) and consecutive differences lie within 1 of 2 pi log 2 (the growth 2 pi log L + O(1))
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the multiplier identity and the geometric mode variance symbolically; the eigenvalues of M; the sine inequalities on an exact grid
+per_site: executed — the rational covariance recursion on the tori L = 2, 3, 4 at every level tested against the mode sum; the plane average t/L^2
+per_mode: executed — the exact V_L of the tiny tori inside the lattice-sum bracket; the lattice sums S_16, S_32, S_64 and their logarithmic increments
+per_block: executed — the memory times 3 beta L^2 / A(3 beta) enclosed to width below 1/10 at four couplings and three sizes
+lattice_wide: T1-T3 hold for every L and beta (the linearized field); the nonlinear law's rates are executed in the controls and not claimed
+PASS: G1 the five N5 resolution lines are printed
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=15 FAIL=1

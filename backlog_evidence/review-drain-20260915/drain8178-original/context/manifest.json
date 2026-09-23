@@ -1,0 +1,104 @@
+[
+  {
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "bytes": 11333
+  },
+  {
+    "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "bytes": 6427
+  },
+  {
+    "path": "docs/audit/data/axiom_premise_nodes.json",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "bytes": 6416
+  },
+  {
+    "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "bytes": 2581
+  },
+  {
+    "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "bytes": 4770
+  },
+  {
+    "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "bytes": 5313
+  },
+  {
+    "path": "docs/repo/DEFERRED_DECISIONS.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+    "bytes": 10595
+  },
+  {
+    "path": "docs/audit/data/premise_decision_history.json",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+    "bytes": 11572
+  },
+  {
+    "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+    "bytes": 3694
+  },
+  {
+    "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+    "bytes": 20824
+  },
+  {
+    "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+    "bytes": 39977
+  },
+  {
+    "path": "docs/CANONICAL_HARNESS_INDEX.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+    "bytes": 109354
+  },
+  {
+    "path": "docs/audit/README.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+    "bytes": 35690
+  },
+  {
+    "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "bytes": 45923
+  },
+  {
+    "path": "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "bcbad1f04d60ba345906cf1d83dc45691bb92516ddd85b2af2318f738f96f54c",
+    "bytes": 19505
+  },
+  {
+    "path": "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05",
+    "bytes": 17677
+  },
+  {
+    "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "revision": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+    "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+    "bytes": 19956
+  }
+]

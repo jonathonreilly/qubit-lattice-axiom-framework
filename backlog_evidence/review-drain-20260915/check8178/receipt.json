@@ -1,0 +1,19 @@
+{
+  "plan": {
+    "command": [
+      "/usr/local/bin/python3",
+      "/private/tmp/review-drain-20260915/check8178/independent.py"
+    ],
+    "wall_limit_seconds": 30,
+    "rss_limit_bytes": 201326592,
+    "poll_seconds": 0.02,
+    "scope": "supervisor and child process tree sampled RSS; enforce by kill group",
+    "simulation_runs": 0
+  },
+  "exit_code": 0,
+  "failure": null,
+  "elapsed": 0.052712333970703185,
+  "peak_rss_bytes": 21069824,
+  "samples": 1,
+  "script_sha256": "d0dff4d272d0dc2b917279cd2ab438265190d2dfc4a22c99134ee366998beb29"
+}

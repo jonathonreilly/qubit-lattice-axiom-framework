@@ -1,0 +1,326 @@
+{
+  "status": "passed",
+  "science_executions": 0,
+  "pipeline_executions": 0,
+  "checks": [
+    {
+      "case": "before hash references/REVIEW_UNITS.md",
+      "actual": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "expected": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+    },
+    {
+      "case": "after hash references/REVIEW_UNITS.md",
+      "actual": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "expected": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f"
+    },
+    {
+      "case": "before hash references/OPERATIONS.md",
+      "actual": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "expected": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+    },
+    {
+      "case": "after hash references/OPERATIONS.md",
+      "actual": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "expected": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af"
+    },
+    {
+      "case": "before hash references/FIXES_AND_REPORTING.md",
+      "actual": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "expected": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+    },
+    {
+      "case": "after hash references/FIXES_AND_REPORTING.md",
+      "actual": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "expected": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "case": "before hash references/UNIT_RECEIPT.md",
+      "actual": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "expected": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+    },
+    {
+      "case": "after hash references/UNIT_RECEIPT.md",
+      "actual": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "expected": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8174-capture-dual-binding-v2.json",
+      "actual": "f1308b59571f515c97b37f54dfcc745331f3a2b40c778b1b5dd7f689ad34ba2a",
+      "expected": "f1308b59571f515c97b37f54dfcc745331f3a2b40c778b1b5dd7f689ad34ba2a"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8174-adapter-review-v2.json",
+      "actual": "c789eeeee564f5118d3fdfd47706e850e9c805064099b17f4e5a1e1dfbde2444",
+      "expected": "c789eeeee564f5118d3fdfd47706e850e9c805064099b17f4e5a1e1dfbde2444"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8176-capture-dual-binding-v2.json",
+      "actual": "5b4615ff3b832f23006b2065e7064d1ceaa2951683f7096ff9815079456d5299",
+      "expected": "5b4615ff3b832f23006b2065e7064d1ceaa2951683f7096ff9815079456d5299"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8176-adapter-review-v2.json",
+      "actual": "357562e86290ee489ac250991734ec163179bea4eafdc3ffbbeaed4d22c057ec",
+      "expected": "357562e86290ee489ac250991734ec163179bea4eafdc3ffbbeaed4d22c057ec"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8032-early-review-v1.md",
+      "actual": "cf5838c5e262276956690b1a79494aa6cda99b627a5b9003649c20960291ecaa",
+      "expected": "cf5838c5e262276956690b1a79494aa6cda99b627a5b9003649c20960291ecaa"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8032-early-review-v2.md",
+      "actual": "d0762f4b0cafb13091e2d4d89064eea9c93e4121797e7dc2a7f0588571404e43",
+      "expected": "d0762f4b0cafb13091e2d4d89064eea9c93e4121797e7dc2a7f0588571404e43"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8032-io-control-receipt-v2.json",
+      "actual": "0366ea0ace10fe60f633f777f47ac2f67862bfdf456c8ddf41827f8b4af71c65",
+      "expected": "0366ea0ace10fe60f633f777f47ac2f67862bfdf456c8ddf41827f8b4af71c65"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8032-capture-v3.py",
+      "actual": "df1b538f1c0c3bae759dea26e371850f9f1284f4376ddb3d6157da6577052ac6",
+      "expected": "df1b538f1c0c3bae759dea26e371850f9f1284f4376ddb3d6157da6577052ac6"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8174-basename-collision-check-v3.json",
+      "actual": "27589cbdba55d1142f40633caad5fa6ef21bbab6af96c01574dd00572f7f5824",
+      "expected": "27589cbdba55d1142f40633caad5fa6ef21bbab6af96c01574dd00572f7f5824"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8174-original/inventory.json",
+      "actual": "247038ae72ce92f8a5b72a58f42ada6e2e752097656b7dac32056860dd434f0e",
+      "expected": "247038ae72ce92f8a5b72a58f42ada6e2e752097656b7dac32056860dd434f0e"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8174-original/main-loss-guard.json",
+      "actual": "f8849e04979296764a7e6844d12a94dd5aa4ccbb247c052ee3eddae7c78aece0",
+      "expected": "f8849e04979296764a7e6844d12a94dd5aa4ccbb247c052ee3eddae7c78aece0"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8174-original/original.patch",
+      "actual": "9887b73aa5f1c89df2de5950c00f23cd9dbaaf2872062a9706e65f273b5ca9bd",
+      "expected": "9887b73aa5f1c89df2de5950c00f23cd9dbaaf2872062a9706e65f273b5ca9bd"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8032-author-cheap-v1.json",
+      "actual": "30979b36068cccc08eb01ba7fcef963a12a989a9f22c7145a5a8bb8bff75bcc3",
+      "expected": "30979b36068cccc08eb01ba7fcef963a12a989a9f22c7145a5a8bb8bff75bcc3"
+    },
+    {
+      "case": "evidence /private/tmp/review-drain-20260915/drain8032-receipt-tooling-fix-v2.json",
+      "actual": "35f49131f0d7aac299ab25ae5ac8360bb9a1971b06b5e8fe1d3c940236b14164",
+      "expected": "35f49131f0d7aac299ab25ae5ac8360bb9a1971b06b5e8fe1d3c940236b14164"
+    },
+    {
+      "case": "different frozen base and reviewed main, unrelated paths",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "case": "overlap docs/source.md",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "case": "overlap runtime.dat",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "case": "overlap helpers.dat",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "case": "overlap parents.dat",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "case": "overlap context.dat",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "case": "overlap tooling.dat",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "case": "main movement",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "case": "head movement",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "case": "ancestor movement",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "case": "disjoint new consumer changes meaning: mechanical path guard",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "case": "disjoint new consumer changes meaning: full proposed guidance holds",
+      "actual": "holds: changed interactions requires renewed review",
+      "expected": "holds: changed interactions requires renewed review"
+    },
+    {
+      "case": "repeat output []",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "case": "canonical preserved []",
+      "actual": "prior canonical artifact",
+      "expected": "prior canonical artifact"
+    },
+    {
+      "case": "repeat output []",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "case": "canonical preserved []",
+      "actual": "prior canonical artifact",
+      "expected": "prior canonical artifact"
+    },
+    {
+      "case": "repeat output ['--json']",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "case": "canonical preserved ['--json']",
+      "actual": "prior canonical artifact",
+      "expected": "prior canonical artifact"
+    },
+    {
+      "case": "repeat output ['--json']",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "case": "canonical preserved ['--json']",
+      "actual": "prior canonical artifact",
+      "expected": "prior canonical artifact"
+    },
+    {
+      "case": "prior sidecar collision rejected",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "case": "prior sidecar preserved",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "case": "later API identity failure rejected",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "case": "raw return survives later API rejection",
+      "actual": "synthetic partial/result",
+      "expected": "synthetic partial/result"
+    },
+    {
+      "case": "synthetic invocation count",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "case": "complete original path inventory",
+      "actual": [
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block30_findings.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block30.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block30.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block30.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_core.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.py",
+        "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/audit/data/citation_graph_manifest.json",
+        "logs/runner-cache/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.txt",
+        "scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py"
+      ],
+      "expected": [
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block30_findings.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block30.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block30.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block30.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_core.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.py",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.out.txt",
+        ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.py",
+        "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/audit/data/citation_graph_manifest.json",
+        "logs/runner-cache/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.txt",
+        "scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py"
+      ]
+    },
+    {
+      "case": "original endpoint snapshots verified",
+      "actual": true,
+      "expected": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-capture-v3.py",
+      "sha256": "df1b538f1c0c3bae759dea26e371850f9f1284f4376ddb3d6157da6577052ac6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-meta-slot/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "sha256": "21ebc8258ba0db6b39f502261bfa416e89ee28d882d46f45aae4ecb0f677e8d7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-meta-slot/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-meta-slot/docs/audit/scripts/repo_invariants_check.py",
+      "sha256": "b93e4c36022764464b2eb71047b85b3e91b2acdf6fd1887deb2e950edff3a1f6"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:uniqueness-up-2:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j8469",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/uniqueness-up-2/w-macbookpro90c72-j8469/check.py",
+ "seed": 73295,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c20992a2",
+ "started_utc": "20260923T142135Z",
+ "elapsed_s": 856.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL exact certificates of uniqueness and exponential memory loss for the six-axis formation law on (p,1,2) up to p = 139/25 (round 1: 5.1; a3: 5.26) by a two-level Wasserstein contraction: optimal couplings on odd levels, glued couplings on even levels, switch one grand-predecessor, propagate two levels exactly, average the environment over the level below with each order-group's laws drawn from one configuration; the located threshold 10.5 is not reached"
+ },
+ "review": "Own plan formed before opening a3/a4 files (their summary lines were printed at claim); different route: two-level Wasserstein contraction with optimal couplings on odd levels, glued couplings on even levels along a lexicographic order, exact two-level propagation of a single grand-predecessor switch, environment averaged over the level below with order-group-consistent laws. Exact Fractions for laws/plans/W/tables, plans certified optimal by dual witnesses and equivariant under 48 signed permutations; maxima over realisable environments in upward-rounded integers. Reproduces round 1's exact constant. Same model family as round 1, a3, a4; needs a cross-family referee.",
+ "what": "DERIVATION, independent attempt 2 of 4: From p <= 5.1 toward the located 10.5: a stronger no-memory criterion. GIVEN (refereed twice): exact certificates of uniqueness and exponential memory loss for the six-axis formation law on (p,1,2) at p = 3.7..5.1 by an averaged Wasserstein contraction (alpha = 5/4); the criterion's numerical edge is p = 5.11. A two-step Hamming/Dobrushin attempt FAILED at the iteration step (the one-site bound holds for deterministic planes; iterating needs a coupling of the random planes meeting every site's bound at once). TASK: certificates above 5.11. Routes: (i) the averaged Wasserstein criterion over 2x2 or 3x3 blocks of the level plane and two or three levels, with the metric optimized by linear programming (exact rational LP); (ii) repair the two-step route with an explicit coupling (a site-by-site maximal coupling in a fixed scan order, or a disagreement-percolation domination); (iii) a computer-assisted cone-mixing bound. Report the largest p certified and the exact objects. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/uniqueness-up-2/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/uniqueness-up-2/<name>/check.py\"",
+ "stdout_sha256": "19428386c4eff0db4b3ce4be0e5fc30e3a981fd5e9bec91ade703cfbd12f5efa",
+ "stdout_tail": " maxima in upward-rounded integers: p = 51/10 (alpha 27/20): K2c <= 0.845071; p = 21/4 (alpha 27/20): K2c <= 0.894864; p = 27/5 (alpha 27/20): K2c <= 0.944946; p = 11/2 (alpha 27/20): K2c <= 0.978358; p = 111/20 (alpha 27/20): K2c <= 0.995052; p = 139/25 (alpha 34/25): K2c <= 0.998429; at p = 139/25 the six positions give 11: 0.11087, 12: 0.22142, 13: 0.21292, 22: 0.12093, 23: 0.22142, 33: 0.11087 (856 s)\nok A5: at p = 139/25: kappa_max = 0.39208, so D_1 <= 3 kappa_max D_0 and D_2k <= 3 kappa_max D_(2k-1); with K2c < 1, D_t <= alpha max(1, 3 kappa_max)^2 K2c^floor((t-1)/2)\nSUMMARY: PARTIAL exact certificates of uniqueness and exponential memory loss for the six-axis formation law on (p,1,2) up to p = 139/25 (round 1: 5.1; a3: 5.26) by a two-level Wasserstein contraction: optimal couplings on odd levels, glued couplings on even levels, switch one grand-predecessor, propagate two levels exactly, average the environment over the level below with each order-group's laws drawn from one configuration; the located threshold 10.5 is not reached\nHIT: the level automaton of the six-axis formation law on (p,1,2) has exactly one invariant law and forgets every initial plane exponentially at p = 139/25 (alpha = 34/25), and at each p of the table: the two-level constant K2c (sum over the six grand-predecessors of the averaged two-level sensitivity with group-consistent environments) is <= 0.998429 < 1 there, an exact upper bound; the one-level criteria stop at 5.11 (round 1) and 5.26 (a3)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8469",
+  "at_utc": "20260923T143635Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

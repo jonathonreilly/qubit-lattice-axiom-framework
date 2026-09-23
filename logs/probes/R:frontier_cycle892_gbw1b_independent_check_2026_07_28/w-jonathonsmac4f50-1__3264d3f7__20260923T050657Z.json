@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle892_gbw1b_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle892_gbw1b_independent_check_2026_07_28.py",
+ "seed": 40017,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3264d3f7",
+ "started_utc": "20260923T050657Z",
+ "elapsed_s": 14.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2d6a0620fb2bfea7e6748806735e1f97dbdc533c2db73c009afafa8dd8c9f873",
+ "stdout_tail": "nostics of a supplied interpretation, not necessary independent physical requirements. Supports need not be disjoint, normalization may depend on a fixed theta, and zero window mass need not mean frozen propagation.\"}\n      - {\"claim\": \"the three windows the primary never evaluated land where C892-T2 predicts\", \"survives\": true, \"evidence\": \"C15 correction: predict using the full exact path-length coefficient vector, including zero steps. Equal vectors yield equal mass; the six distinct cosine samples distinguish polynomials of degree at most four. Set inequality alone is not a predictor. This remains a finite test of three declared new windows.\"}\n    claim_count: 8\n    survived: 8\n    refuted:\n\n    overall: \"ALL CLAIMS SURVIVE\"\n    what_this_checker_could_not_break: \"The verdict rests on the barrier identification B(R) = supp(R), which this checker inherits from the pinned 885 construction and does not test.  If a different barrier were adopted, amplitude would relocate and Q1 could invert.  That is a scope limit the primary already names, and it is the one route to the collapse that neither cycle closes.\"\n    scope_of_this_check: \"12 configurations, 17 catalogue maps plus 3 new ones, 6 thetas, plus a sweep of 7192 generated containment-holding windows.  Exact arithmetic throughout; independent path-enumeration machinery.\"\n    pass: true\n\nreceipt: outputs/gbw1b_independent_check_cycle892_receipt_2026_07_28.json\noverall: ALL CLAIMS SURVIVE\nteeth: 8/8 bite\nelapsed_sec: 14.857\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050712Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'elapsed_sec: 14.857' vs cache 'elapsed_sec: 17.811'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle892_gbw1b_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

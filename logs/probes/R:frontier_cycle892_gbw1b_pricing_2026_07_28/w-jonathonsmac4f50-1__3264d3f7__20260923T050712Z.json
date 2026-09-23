@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle892_gbw1b_pricing_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py",
+ "seed": 40032,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3264d3f7",
+ "started_utc": "20260923T050712Z",
+ "elapsed_s": 26.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9bbe5368eb53c3efd69ccf08683dfaa83935ebc28b84c45eeebd7901a0fcce62",
+ "stdout_tail": " positive weight is not available on this family without an extra hypothesis.\"\n      - \"The scalar readout and quadratic mass are different supplied functions. Their supports can overlap at seeds; a singleton seed has I=Z=1. No general physical identification or exclusion is established.\"\n    exact_scope: \"One 12-configuration family (digest 30edaa3d5ca03c24) in a box of radius 4 with walk depth 4; one catalogue of 17 named window maps AST-extracted from the pinned 887 primary; one theta grid of 6 values plus a 27-value fine grid used only for the structure characterization; exact arithmetic throughout.\"\n    pass: true\n\n[N_CONTROLS]  pass=True\n    checks:\n      exact_arithmetic_only: true\n      no_floating_point_in_certified_values: true\n      deterministic_double_build: true\n      runtime_within_cap: true\n      firewall_hits_zero: true\n      theta_grid_complete: true\n      catalogue_complete: true\n      both_orders_present: true\n      restriction_gate_reproduced: true\n      family_digest_matches_887: true\n    elapsed_sec_at_gate: 26.303\n    runtime_cap_sec: 900\n    outcome_neutrality: \"None of these gates requires a particular answer to Q1.  They require the pinned results to be reproduced, the catalogue to be complete, BOTH orders to be computed, the theta grid to be complete, and the build to be deterministic.\"\n    finding: \"10/10 controls hold.\"\n    pass: true\n\nreceipt: outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json\nall_certificates_pass: True\nelapsed_sec: 26.303\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050739Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'elapsed_sec: 26.303' vs cache 'elapsed_sec: 30.392'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle892_gbw1b_pricing_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

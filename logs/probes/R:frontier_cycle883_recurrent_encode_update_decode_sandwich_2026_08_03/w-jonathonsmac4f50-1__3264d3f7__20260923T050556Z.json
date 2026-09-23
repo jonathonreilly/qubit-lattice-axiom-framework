@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py",
+ "seed": 39956,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3264d3f7",
+ "started_utc": "20260923T050556Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "abb9ec6ae6354045bad530f8642566ef6f4faedb44e22753cf1c6d95945a13a8",
+ "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py\", line 841, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py\", line 762, in main\n    raise RuntimeError(\"Cycle883 input pin drift: \" + repr(pin_failures))\nRuntimeError: Cycle883 input pin drift: {'docs/MINIMAL_AXIOMS_2026-06-29.md': {'expected': 'fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697', 'observed': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753'}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050557Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

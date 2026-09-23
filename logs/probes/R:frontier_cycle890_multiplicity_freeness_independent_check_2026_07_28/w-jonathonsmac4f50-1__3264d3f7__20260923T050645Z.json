@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28.py",
+ "seed": 40005,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3264d3f7",
+ "started_utc": "20260923T050645Z",
+ "elapsed_s": 12.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "61563f4e3504a9f996efcaab191cfa418ab1614a6b2fbece0576f756dcda088d",
+ "stdout_tail": "pendent\": true,\n      \"gates\": {\n       \"atom_search_terminated_cleanly\": true\n      },\n      \"grid_radius_1_submodules\": 7,\n      \"grid_radius_2_submodules\": 7,\n      \"grid_radius_2_truncated\": false,\n      \"radius_1_atoms\": 3,\n      \"radius_2_atoms\": 3,\n      \"route\": \"CHECKER_atom_test_on_the_submodule_lattice\",\n      \"space_dimension\": 6,\n      \"why\": \"the atoms are independent, span the space and do not change when the grid grows: the decomposition is a single point\"\n     },\n     \"MULT_FREE\": {\n      \"MULTIPLICITY_FREE\": true,\n      \"all_gates_pass\": true,\n      \"burnside_orbital_count\": \"3/1\",\n      \"coarse_ordered_pair\": [\n       1,\n       5\n      ],\n      \"commutant_is_commutative\": true,\n      \"first_noncommuting_orbital_pair\": null,\n      \"gates\": {\n       \"burnside_orbit_count_matches_the_direct_count\": true,\n       \"burnside_orbital_count_matches_the_direct_count\": true,\n       \"every_orbital_matrix_commutes_with_the_representation\": true,\n       \"the_orbital_matrices_partition_X_times_X\": true\n      },\n      \"orbit_count\": 1,\n      \"orbital_count_equals_dim_of_the_commutant\": 3,\n      \"route\": \"CHECKER_orbital_Schur_algebra_commutativity\",\n      \"space_dimension\": 6\n     },\n     \"space_dimension\": 6\n    }\n   },\n   \"shell_orbit_lengths\": [\n    6\n   ]\n  }\n ],\n \"claims_attacked\": {\n  \"H2\": true,\n  \"T1\": true,\n  \"T2\": true,\n  \"T3\": true\n },\n \"cycle\": 890,\n \"deterministic_double_build\": true,\n \"every_claim_survives\": true,\n \"role\": \"independent adversarial checker\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050657Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

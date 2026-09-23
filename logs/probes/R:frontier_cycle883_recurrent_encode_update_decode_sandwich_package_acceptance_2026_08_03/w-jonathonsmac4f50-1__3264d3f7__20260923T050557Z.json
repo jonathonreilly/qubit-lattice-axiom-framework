@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle883_recurrent_encode_update_decode_sandwich_package_acceptance_2026_08_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_package_acceptance_2026_08_03.py",
+ "seed": 39957,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3264d3f7",
+ "started_utc": "20260923T050557Z",
+ "elapsed_s": 47.9,
+ "returncode": 1,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4bd4504f122b6420f9108711de3e343e075e450c33933188c160d8ef92de1b39",
+ "stdout_tail": "5dbe8ce6263ed8274a9b8c4a40d87e3791\",\n      \"returncode\": 1,\n      \"semantic_pass\": true,\n      \"source\": \"scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py\",\n      \"source_sha256\": \"053b0886a5de2b204bc004b0bd30b47e47fd0049ba80f11a8d9b7b4b24e04aa0\",\n      \"stdout_matches_receipt\": false\n    },\n    {\n      \"executed\": true,\n      \"expected_receipt_sha256\": \"b78d209e50fb7b60c5072e140f5debfae4a629de8776fa20b07b5db400c7cbc3\",\n      \"expected_source_sha256\": \"89b23e73d815c4c1c4c9ebc5a16b260331e153bd6267fed1289aa5b4ecaae5ba\",\n      \"name\": \"independent\",\n      \"receipt\": \"outputs/cycle883_recurrent_encode_update_decode_sandwich_independent_receipt_2026_08_03.json\",\n      \"receipt_sha256\": \"ab3adc3b22a90663a905622f7600bc7d47ff42ad6e3a4c74a83ca7f789f14c41\",\n      \"returncode\": 0,\n      \"semantic_pass\": true,\n      \"source\": \"scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03.py\",\n      \"source_sha256\": \"89b23e73d815c4c1c4c9ebc5a16b260331e153bd6267fed1289aa5b4ecaae5ba\",\n      \"stdout_matches_receipt\": true\n    }\n  ],\n  \"static_audit_helper_modules\": [\n    \"frontier_cycle883_recurrent_encode_update_decode_sandwich_core_2026_08_03\",\n    \"frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03\",\n    \"frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03\"\n  ],\n  \"status\": \"fail\",\n  \"this_source_sha256\": \"b6f68d26814c86af8e74c66035721a4d973855fba2ac4e198ea50ad0a0d4c010\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050645Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

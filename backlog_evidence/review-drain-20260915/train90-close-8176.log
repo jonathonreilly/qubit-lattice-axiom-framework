@@ -1,0 +1,5 @@
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+ * branch                  ai/execution -> FETCH_HEAD
+✓ Closed pull request jonathonreilly/qubit-lattice-axiom-framework#8176 (ail32: the minimal marked tree — the counted family's constant is at least one (exact certificates), block 31's witnesses have cheap trees, the tree route's floor at p = 368 on (p,1,2))
+{"pr": 8176, "state": "CLOSED", "recovery_branch_preserved": true}

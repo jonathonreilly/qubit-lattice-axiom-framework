@@ -1,0 +1,23 @@
+{
+  "status": "Proposed unexecuted adapter correction; original cold review still required",
+  "old": {
+    "path": "/private/tmp/review-drain-20260915/drain8033-capture-v1.py",
+    "sha256": "82e669bc4efb5367a09aa149a3892ce2a390f9e319b4ab37b5fc129aa74cf33b"
+  },
+  "new": {
+    "path": "/private/tmp/review-drain-20260915/drain8033-capture-v2.py",
+    "sha256": "b932625f9da932fd70e15b98ba1e8993972e3260bf1d3df9050178dd9dbdb561"
+  },
+  "diff": {
+    "path": "/private/tmp/review-drain-20260915/drain8033-capture-guard-fix-v2.diff",
+    "sha256": "b1c6a342f8a0086e72fc45246b18e6f9d8c421bb7858cd6ba0c0f1b7d3bd78dc"
+  },
+  "guard_reused_from": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-v3.py",
+    "sha256": "df1b538f1c0c3bae759dea26e371850f9f1284f4376ddb3d6157da6577052ac6"
+  },
+  "defect": "Unexecuted v1 compared only non-owned current-main inputs before execution; it lacked ancestry, protected owned-path overlap, explicit cold-reviewed main versus CLI equality and post-run main check.",
+  "correction": "Use the already reviewed exact dual-main guard before and after; independently require explicit CLI main equal to immutable actual cold reviewed_main. Full closure includes owned source and every input category. Cold binding remains None.",
+  "owned_source_changes": 0,
+  "science_executions": 0
+}

@@ -1,0 +1,46 @@
+--- drain8033-capture-v1.py
++++ drain8033-capture-v2.py
+@@ -15,6 +15,17 @@
+ def load(p,s):
+  p=Path(p);assert p.is_absolute() and p.resolve().is_relative_to(R) and not p.resolve().is_relative_to(W) and not p.is_symlink() and h(p)==s
+  return p,json.loads(p.read_text())
++def confirm_reviewed_main(record, expected_base):
++    # Preserve the already reviewed source tree; separately bind unchanged inputs
++    # and the original reviewer's semantic confirmation of the actual new main.
++    b = COLD_CLEARANCE_BINDING
++    assert git('rev-parse', 'HEAD') == expected_base == record['source']['base'] == b['frozen_base']
++    assert git('rev-parse', 'origin/main') == b['reviewed_main'], 'Reviewed current main moved'
++    assert git('merge-base', b['frozen_base'], b['reviewed_main']) == b['frozen_base']
++    changed = set(git('diff', '--name-only', '--no-renames', b['frozen_base'], b['reviewed_main']).splitlines())
++    bound = {e['path'] for e in record['source']['paths'] + sum(record['inputs'].values(), [])}
++    assert not changed & bound, 'Current-main advance overlaps frozen source or input paths'
++
+ def main():
+  ap=argparse.ArgumentParser()
+  for k in ['record','record-sha256','cheap','cheap-sha256','cold','cold-sha256','runner','expected-base','expected-current-main','plan','plan-sha256']:ap.add_argument('--'+k,required=True)
+@@ -26,14 +37,9 @@
+  assert at(cold,b['verdict_pointer'])==b['verdict_value'] and at(cold,b['tree_pointer'])==b['tree']==record['source']['tree'] and b['required_predicates']
+  for p,v in b['required_predicates'].items():assert at(cold,p)==v
+  assert json.loads((R/'author-draft-slot.json').read_text())['owner']=='PR8033-author'
+- assert git('rev-parse','HEAD')==a.expected_base==record['source']['base'] and git('rev-parse','origin/main')==a.expected_current_main and git('write-tree')==record['source']['tree'] and not git('diff','--name-only')
+- # Dual-base guard: a newer remote main is allowed only when every bound non-owned
+- # premise/tooling/input byte is identical there. Cold tree remains exact.
+- owned={e['path'] for e in record['source']['paths']}
+- for e in sum(record['inputs'].values(),[]):
+-  if e['path'] not in owned:
+-   remote=subprocess.check_output(['git','-C',str(W),'show',a.expected_current_main+':'+e['path']])
+-   assert hashlib.sha256(remote).hexdigest()==e['sha256'],'New main input/tooling interaction requires renewed review'
++ assert a.expected_current_main==b['reviewed_main'], 'CLI main must equal actual cold-reviewed main'
++ confirm_reviewed_main(record, a.expected_base)
++ assert git('write-tree')==record['source']['tree'] and not git('diff','--name-only')
+ 
+  planpath,plan=load(a.plan,a.plan_sha256);assert ref(planpath) in record['reviewer']['references'] and plan['parent_landed_exact'] is True and plan['actual_tree']==record['source']['tree'] and plan['actual_base']==record['source']['base']
+  assert a.runner==plan['runner']['path']==record['notes'][0]['primary_runner'] and record['notes'][0]['helpers']==[]
+@@ -74,6 +80,7 @@
+   assert re.search(r'^TOTAL: '+str(count)+r'$',rr['stdout'],re.M) and Path(result['cache']).resolve()==cache.resolve()
+   assert data['resource_limits']=={'seconds':180,'rss_MiB':180} and 0<data['rss_MiB']<180 and data['seconds']<180
+   after=snapshot();assert before==after and git('write-tree')==record['source']['tree'] and not git('diff','--name-only')
++  confirm_reviewed_main(record, a.expected_base)
+  except BaseException as ex:
+   error=dict(error=repr(ex),traceback=traceback.format_exc())
+   if proc is not None:

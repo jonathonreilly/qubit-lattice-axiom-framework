@@ -1,0 +1,21 @@
+{
+  "pr": 8176,
+  "original_head": "ee73bef6a1f37590abacdd2cf4a13900019a1e64",
+  "branch": "physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917",
+  "landing": "eadad252feffba1891b5b774822da85b92842578",
+  "source_verified_at": "eadad252feffba1891b5b774822da85b92842578",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8176-landing-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T05:45:10Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917",
+    "headRefOid": "ee73bef6a1f37590abacdd2cf4a13900019a1e64",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8176,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8176"
+  }
+}

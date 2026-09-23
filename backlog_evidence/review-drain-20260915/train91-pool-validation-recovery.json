@@ -1,0 +1,20 @@
+{
+  "head": "a1777fd8af3c62caeef8431b8791fa69ababc1ea",
+  "owner": "train91",
+  "archive": "train91-pool-validation-recovery.tar.gz",
+  "archive_sha256": "2097d1483c6c8bd1be2e1ab98d9bfce5760d1b6c8af29383e75cb46d1ffb1ce6",
+  "paths": {
+    "docs/audit/AUDIT_LEDGER.md": "4d7f848c9a3e9b56b8e34c22236bf019fbbcc26b343d4ec014b4fe5ff9152e0f",
+    "docs/audit/data/audit_ledger.json": "3203cb85560af88ff672d9260ccc700b334b73164f750380edcffeca896b53a5",
+    "docs/audit/data/audit_publication_lane.json": "0ed52541d717dd968137219093414817727b087ec596711dd46e49bd7d9b77fa",
+    "docs/audit/data/audit_queue.json": "60053e849acc1614946e0cadec997cc6bbd03089624b32cf06872e3856124aab",
+    "docs/audit/data/citation_graph.json": "eec0cf561eaab88ff03986550a8a6979e4cd1b4f66bf34430be812a149f08312",
+    "docs/audit/data/ledger_cache_manifest.json": "c8c970519e42b6e4f4266de6292cd435601868ec6c3173012c64f3bf1c1c0178",
+    "docs/audit/data/publication_gap.json": "2315103e5bfa6ea47a66bae3cb74099678becd6575d78be073a3f89ea08958a6",
+    "docs/audit/data/runner_classification.json": "10ded51112b447f1122f97bf5b2a21379e05f46eabdbe551342881c80df2df89",
+    "docs/audit/data/static_pipeline_checkpoint.json": "0249e2402e38f4f42c713a8b7db91bb8515adbdb0723189a10b79b9b49d7d6a5",
+    "docs/audit/data/static_pipeline_checkpoint.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/__pycache__/science_fix_loop.cpython-312.pyc": "04186ad7cefa7cf8da3a43c736a542d02c335c7ecfe40fc2bc341b7ff150c35d"
+  },
+  "boundary": "Generated validation only; preserved decoded identities before releasing an exclusively owned landed checkout"
+}

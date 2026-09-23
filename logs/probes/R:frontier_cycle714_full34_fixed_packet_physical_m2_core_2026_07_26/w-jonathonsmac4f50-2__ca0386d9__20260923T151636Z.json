@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+ "seed": 76596,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ca0386d9",
+ "started_utc": "20260923T151636Z",
+ "elapsed_s": 2.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1ca0ce8be2b4e7228d05280c74c006dcb07da91f968870e5e564c1072881029e",
+ "stdout_tail": "oper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\", \"scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py\", \"scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py\", \"scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py\"], \"untracked_inputs\": []}, \"refused_cases\": 6, \"refused_inverse_failures\": 0, \"refused_mutation_failures\": 0, \"report_sha256\": \"0d99b8ca4627f330cb8747af6e20a86b34cf1e47d94e0bf3a82c72acb2daa9ca\", \"retained_pointer_M2\": 1, \"retained_pointer_site\": [-8, -1, 1], \"route_return_failures\": 0, \"routed_gates\": 2598, \"routed_word_sha256\": \"f56d6b6630801be480e0017a72fe3adfb19c0d64657de498048fd52fe6986956\", \"semantic_gates\": 60, \"source_closure\": false, \"supplied\": [\"fixed selected blank packet cell\", \"fresh bit\", \"fixed address 23\", \"blank payload/work\", \"head and rotor input\", \"derived Cycle713 pointer on the identical retained-pointer coordinate\", \"binder\", \"actuality\", \"admissibility\", \"law-domain\", \"orientation\", \"gate word and route workspace\"], \"supplied_control_bits\": 7, \"toffoli_decomposition_residual\": 8.021723640960921e-16, \"touched_M2_union\": 76, \"unappend_expanded_gates\": 718, \"unappend_maximum_route_distance\": 12, \"unappend_non_NN_failures\": 0, \"unappend_operand_order_failures\": 0, \"unappend_route_return_failures\": 0, \"unappend_routed_gates\": 2598, \"unappend_routed_word_sha256\": \"5b880cb234bec10f642e6cf1996f7cae91bc84e5b78cc48b12e0c265df99a847\", \"work_return_failures\": 0}\nCYCLE714_FULL34_FIXED_PACKET_PHYSICAL_M2_INCOMPLETE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T151639Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'CYCLE714_FULL34_FIXED_PACKET_PHYSICAL_M2_INCOMPLETE' vs cache 'CYCLE714_FULL34_FIXED_PACKET_PHYSICAL_M2_PASS'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_dm_selector_relative_action_recovered_branch_separation_support_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_selector_relative_action_recovered_branch_separation_support_2026_04_21.py",
+ "seed": 76475,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ca0386d9",
+ "started_utc": "20260923T151435Z",
+ "elapsed_s": 2.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=12 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ea1cc3ade8e450060ed429dfcbd380aaecc1944b49806cba3db05c72ecf2bb4f",
+ "stdout_tail": " source becomes strictly smaller than every recovered-bank competitor  ((V_rel, min_bank)=(0.030950556466, 0.580783471954))\n\n========================================================================================\nPART 4: SCIENTIFIC CONSEQUENCE\n========================================================================================\n  [FAIL] The review register still names the finer right-sensitive microscopic selector law as open\n  [PASS] So the remaining selector burden is not just to force minimal relative action abstractly  (the current internal selector and the recovered-bank threshold candidate are distinct exact selector objects)\n  [PASS] What remains is a bridge from the internal selector law to the recovered right-sensitive selector branch, or a finer replacement law  (support narrowing only)\n\n========================================================================================\nRESULT\n========================================================================================\n  The strongest current framework-internal selector law does not yet\n  collapse to the recovered selector branch.\n  Its exact source stays off the recovered bank, carries its own later\n  intrinsic breakpoint, and is not selected by the recovered-bank\n  canonical breakpoint tau_b,min.\n  So the remaining microscopic selector burden is now sharper:\n    bridge the exact internal selector law to the recovered\n    right-sensitive selector branch, or replace it with a finer law.\n\nSUMMARY: PASS=12 FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T151438Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=12 FAIL=2' vs cache 'SUMMARY: PASS=13 FAIL=1'"
+  ]
+ }
+}

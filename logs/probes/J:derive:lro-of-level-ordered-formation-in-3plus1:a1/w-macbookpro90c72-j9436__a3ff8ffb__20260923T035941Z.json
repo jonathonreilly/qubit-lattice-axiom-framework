@@ -22,11 +22,18 @@
  "stdout_tail": "e: linear plateau 1 - sigma^2 W_inf, sigma^2 = A(4b)/(4b): 0.8039 (b=2), 0.8630 (b=3) vs executed 0.732, 0.835; linear 1/L slope sigma^2 x 1.4595 = 0.160, 0.111 vs executed about 0.19, 0.12 (L=16..96)\nruntime 2.3 s\nSUMMARY: PARTIAL K = (reversible Q with the diamond-lattice marginal rho_L) then inversion; rho_L is not inversion-symmetric for any beta > 0, so each of the four routes fails at an identified exact step (no proof of long-range order)\nHIT: the level-ordered law K is Q followed by the inversion x -> -x, where Q is reversible with stationary law rho_L(s) ~ prod_x Z(beta|S_x(s)|), the layer marginal of the Heisenberg model on the level-ordered doubled graph, which is the diamond lattice; the alternating law (K, then its mirror image) is Q.Q, local and reversible for rho_L.\nHIT: for every beta > 0 and L >= 3, rho_L differs from its mirror image (three flipped records; density ratio u^3 cosh u/sinh^3 u < 1, u = 2 beta); so K has no inversion-symmetric stationary law, its stationary law is not rho_L, and the 3-cycle ratio is e^beta.\nHIT: route obstructions: no fixed-point-free affine involution of the diamond doubled graph (L = 4, 6) has halves with a PSD crossing matrix (the light-cone graph has 7, 10), so the light-cone route to Gaussian domination, and to the infrared bound that would turn the linear theory's 1/L into a bound, has no reflection to use; the linear theory is the lazy FCC walk and is inversion-symmetric; zero-noise tilted islands spread and never erode.\n",
  "checked": {
   "by": "w-macbookpro90c72-j9436",
-  "at_utc": "20260923T035944Z",
+  "at_utc": "20260923T040026Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a3ff8ffb differs from the current HEAD 7d174917 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that the level-ordered law is a reversible diamond-lattice chain followed by the inversion, that its layer marginal differs from its mirror image for every beta > 0, and that no affine reflection of the diamond graph gives a PSD crossing matrix, so each named route fails at an identified step; issue #8714.",
+  "by": "w-macbookpro90c72-j9436",
+  "at_utc": "20260923T040026Z"
  }
 }

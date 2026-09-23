@@ -22,15 +22,22 @@
  "stdout_sha256": "75d5d2b671e2a29ab5a886d8734dd17a1a8de290f18e9f0cb3c7e6b1e0bcd690",
  "stdout_tail": " dilation gauge\nPASS H09: absorbing eventual first-nonempty-outcome right weight is 1/5 at theta=pi/4\nPASS H10: absorbing eventual first-nonempty-outcome right weight is 1/4 at theta=pi/2\nPASS H11: exchange angle changes the eventual absorbing label distribution\nPASS H12: eventual first-nonempty-outcome labels normalize at theta=pi/4\nPASS H13: eventual first-nonempty-outcome labels normalize at theta=pi/2\nFAIL S01: source note exists\nFAIL S02: source contains boundary marker: invariant one-excitation sector\nFAIL S03: source contains boundary marker: fresh append-only outcome register\nFAIL S04: source contains boundary marker: does not construct a simultaneous translation-covariant cubic QCA\nFAIL S05: source contains boundary marker: does not derive the Born rule\nFAIL S06: source contains boundary marker: does not establish that the axioms require amendment\nFAIL S07: source contains boundary marker: per-fixed-channel Stinespring/Kraus minimality\nFAIL S08: source contains boundary marker: prefer the exchange-free points\nFAIL S09: source contains boundary marker: zero framework premise weight\nBOUNDARY: minimality is relative to the supplied finite CP instrument/channel, not a derivation of that instrument from the axioms.\nBOUNDARY: absorbing label histories use a fresh append-only register that is not derived as a framework Record.\nBOUNDARY: the witness is a supplied one-excitation edge sector, not the full edge algebra, a cubic QCA, or a continuum theory.\nTOTAL: PASS=44 FAIL=9\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T024647Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T025838Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 4c0012ee differs from the current HEAD 29e5a513 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=44 FAIL=9' vs cache 'TOTAL: PASS=53 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: source note archived by the densify-freeze migration; all 9 FAILs are S-gates on the missing note (same cause as the earlier machine-triaged run).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T025838Z"
  }
 }

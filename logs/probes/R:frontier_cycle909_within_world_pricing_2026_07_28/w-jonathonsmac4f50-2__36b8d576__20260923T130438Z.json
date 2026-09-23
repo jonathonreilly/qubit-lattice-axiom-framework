@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle909_within_world_pricing_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle909_within_world_pricing_2026_07_28.py",
+ "seed": 68678,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "36b8d576",
+ "started_utc": "20260923T130438Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "623d0e84e60a71dee6e1c5b9d14cfbd92e4149a2c0d5b2c194243610dbf32312",
+ "stdout_tail": "    c0=  485 c2=  44 pair=[22, 1] identity=True reps=[[17, 14], [22, 1]]\n    c0=   82 c2=  18 pair=[9, 1] identity=True reps=[[9, 1]]\n    c0=    1 c2=   0 pair=[1, 0] identity=True reps=[[1, 0]]\n  admissible degree-2 columns within the representation: 6\n\nCLAIMS_JSON: {\"admissible_degree2_columns\":6,\"degree2_reduced_denominator\":175,\"lemma_violations\":0,\"per_site_degree0\":[1300,485,82,1],\"per_site_degree2\":[144,44,18,0],\"representation_counts\":[3,2,1,1],\"scale0_factors\":{\"31\":1,\"613\":1},\"science_digest\":\"4d0238a23e548c4bd463073114497fc6ca90eab6637fe9487ece91492948315e\"}\n\n-- CERTIFICATES --------------------------------------------------------\n  PASS  A_FACTORIZATION                          scale0=19003={31: 1, 613: 1} reduced_degree2_denominator=175={5: 2, 7: 1}\n  PASS  B_TABLE_CONSISTENCY                      per_site_degree0=['1300', '485', '82', '1'] per_site_degree2=['144', '44', '18', '0']\n  PASS  C_DENOMINATOR_LEMMA                      randomized_instances=4000 violations=0 planted_pass_lcm_divisible=True planted_fail_lcm_divisible=False\n  PASS  D_TWO_SQUARES_IDENTITIES                 identities_hold=True representation_counts=[3, 2, 1, 1] admissible_degree2_columns=6\n  PASS  E_REPRESENTATION_SCOPED_NONUNIQUENESS    atoms_with_multiple_representations=2 each_with_distinct_2pq=True\n  PASS  F_DETERMINISM                            double_run_digest_equal=True\n  PASS  G_RUNTIME                                elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=7 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T130439Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'VERDICT: PASS' vs cache 'science_digest: 764090395ecbf51e0e45b4b65131b234fe56afe23878c0aa4223209035aa7552'",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

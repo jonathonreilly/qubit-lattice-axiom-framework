@@ -1,0 +1,15 @@
+==============================================================================
+CYCLE 912 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
+==============================================================================
+
+  FAIL  R0_PINNED_EVIDENCE                   scripts/frontier_cycle912_a3_channel_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle912_a3_channel_2026_07_28.txt:MISMATCH
+  PASS  R0c_MODEL_STIPULATION_PRESENT        primary_source_contains_declared_model=True
+  FAIL  R0b_CLAIMS_PARSED                    claims_line_found=False
+  FAIL  R1_INVISIBILITY_RANDOMIZED           preserving_pairs=48352 random_readouts=400 separations=0 planted_tooth_fired=True
+  FAIL  R2_SIMPLEX_DIMENSION_INDEPENDENT     vertex_rank=4 n_cells=5 primary_dim=None
+  FAIL  R3_EXISTENCE_DOES_NOT_SELECT         both_witnesses_are_state_functional_probabilities=True witnesses_differ=True -> the existence premise selects nothing; uniform counting pins one point
+  FAIL  R4_RECORDED_SCALE                    52018-1=52017 primary=None (counts stipulated, arithmetic only)
+  PASS  R5_RUNTIME                           elapsed_s=88.9 budget_s=300
+
+TOTAL: PASS=2 FAIL=6
+VERDICT: PRIMARY_REFUTED_ON_THIS_CHECK

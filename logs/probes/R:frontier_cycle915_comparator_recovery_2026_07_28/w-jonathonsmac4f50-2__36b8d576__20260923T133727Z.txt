@@ -1,0 +1,2 @@
+SETUP MACHINERY-FAIL pin:sha256 outputs/d3_bar_commission_cycle914_receipt_2026_07_28.json want=2dddb1e145fb5854 got=77a5a35040b640f1 | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+TOTAL MACHINERY-FAIL | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.

@@ -1,0 +1,32 @@
+==============================================================================
+CYCLE 913 -- FINITE NON-FUNCTIONALITY LEMMA AND RECORDED-TABLE ARITHMETIC
+==============================================================================
+
+SCOPE: self-contained.  The unlanded substrate closure is removed.
+No terminality claim, no derivability denial, and no prohibition
+claim is made; the realized-state primitive supplies no measure but
+does not forbid a separately derived or explicitly imported one.
+
+-- stipulated recorded table --------------------------------------------
+  lock_points: 164
+  realized_left_right: [84, 80]
+  menu_size: 2
+  site_possibility_pairs: 328
+  record_free_lock_points: 67
+  record_free_split: [51, 16]
+  largest_neighbour_collision_class: 30
+  collision_class_split: [15, 15]
+  compiled_gates: 34166
+  gates_targeting_endpoint_wires: 0
+
+CLAIMS_JSON: {"lock_points":164,"realized_split":[84,80],"recorded_ratio":[0,34166],"science_digest":"8590445e2a26b3dc5e075540bcfc707257eb3555d29a6bc529963f5f41ead7be","site_possibility_pairs":328,"soundness_errors":0,"witness_not_function":true}
+
+-- CERTIFICATES --------------------------------------------------------
+  PASS  L1_CONSISTENCY_ARITHMETIC        84+80=164 164*2=328 51+16=67 15+15=30
+  PASS  L2_NONFUNCTIONALITY_LEMMA        witness_rows_not_a_function=True planted_functional_detected=True soundness_trials=600 errors=0
+  PASS  L3_RECORDED_VALUE_ECHO           recorded reads-never-writes ratio 0/34166 (STIPULATED history; certifies nothing about a landed substrate)
+  PASS  L4_DETERMINISM                   double_run_digest_equal=True
+  PASS  L5_RUNTIME                       elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=5 FAIL=0
+VERDICT: PASS

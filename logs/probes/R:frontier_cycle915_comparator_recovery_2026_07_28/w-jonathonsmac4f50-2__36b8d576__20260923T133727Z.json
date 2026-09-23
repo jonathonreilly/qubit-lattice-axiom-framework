@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle915_comparator_recovery_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle915_comparator_recovery_2026_07_28.py",
+ "seed": 70647,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "36b8d576",
+ "started_utc": "20260923T133727Z",
+ "elapsed_s": 0.2,
+ "returncode": 2,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3f4f1f5202664d57761b776d3a6ad7c4a714d5befd4a36e6dbad2c5940b0f415",
+ "stdout_tail": "SETUP MACHINERY-FAIL pin:sha256 outputs/d3_bar_commission_cycle914_receipt_2026_07_28.json want=2dddb1e145fb5854 got=77a5a35040b640f1 | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.\nTOTAL MACHINERY-FAIL | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T133727Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 2 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'TOTAL MACHINERY-FAIL | Not basis-neutral: the ZZ bond and the declared Z pointer' vs cache 'TOTAL LOW-FIELD-CERTIFIED low-field=SAMPLED-WINDOW-INCLUDES-0.02(lambda=0.02 in '",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle915_comparator_recovery_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

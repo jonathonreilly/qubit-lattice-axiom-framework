@@ -1,0 +1,30 @@
+==============================================================================
+CYCLE 911 -- CENSUS-CONSISTENCY ARITHMETIC AND THE DECLARED-LIKELIHOOD LEMMA
+==============================================================================
+
+SCOPE: self-contained.  The unlanded substrate closure is removed;
+the worlds/setups re-typing is a CONVENTION recorded in a separate
+meta note and asserted nowhere in this runner; the likelihood lemma
+is conditional on declared model imports named in the receipt.
+
+-- stipulated recorded census -------------------------------------------
+  position_sets: 187
+  event_seeds: 4
+  census_worlds: 748
+  world_pairs: 279378
+  shared_tick0_pairs: 5168
+  distinct_tick0_vectors: 323
+  lock_points: 164
+  menu_size_at_every_lock_point: 2
+  recorded_branch_pairs: 0
+
+CLAIMS_JSON: {"computed_world_pairs":279378,"lemma_trials":390,"lemma_violations":0,"merged_atom_control":true,"science_digest":"73a7419a4f4337b10c783bee13b3fb434dca0125d953064b82600b59ce710bae"}
+
+-- CERTIFICATES --------------------------------------------------------
+  PASS  L1_CENSUS_CONSISTENCY              187*4=748 C(748,2)=279378 recorded_pairs=279378
+  PASS  L2_LIKELIHOOD_LEMMA_CONDITIONAL    random_nonuniform_vectors=390 violations=0 uniform_attains_bound=True merged_atom_control_moves_MLE=True
+  PASS  L3_DETERMINISM                     double_run_digest_equal=True
+  PASS  L4_RUNTIME                         elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=4 FAIL=0
+VERDICT: PASS

@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_cycle913_selection_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle913_selection_independent_check_2026_07_28.py",
+ "seed": 68768,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "36b8d576",
+ "started_utc": "20260923T130608Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=2 FAIL=5",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9d1875706f9d1f65674434b60c946ee3617de5800ce7180807581b038a9cd985",
+ "stdout_tail": "==============================================================================\nCYCLE 913 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE\n==============================================================================\n\n  FAIL  R0_PINNED_EVIDENCE                 scripts/frontier_cycle913_selection_function_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle913_selection_function_2026_07_28.txt:MISMATCH\n  FAIL  R0b_CLAIMS_PARSED                  claims_line_found=False\n  FAIL  R1_CONSISTENCY_INDEPENDENT         164-84=80, 164*2=328, 67-51=16, 30//2=15; primary_split=None\n  FAIL  R2_NONFUNCTIONALITY_INDEPENDENT    witness_refutes_functionality=True planted_functional_ok=True\n  FAIL  R3_RECORDED_RATIO_ECHO             primary_recorded_ratio=None (stipulated history only)\n  PASS  R4_OVERCLAIM_SCAN                  hits=none\n  PASS  R5_RUNTIME                         elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=2 FAIL=5\nVERDICT: PRIMARY_REFUTED_ON_THIS_CHECK\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T130609Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=2 FAIL=5' vs cache 'PASS=31 FAIL=0'"
+  ]
+ }
+}

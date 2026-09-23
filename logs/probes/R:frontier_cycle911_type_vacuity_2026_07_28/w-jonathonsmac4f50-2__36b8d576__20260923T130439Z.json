@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle911_type_vacuity_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle911_type_vacuity_2026_07_28.py",
+ "seed": 68679,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "36b8d576",
+ "started_utc": "20260923T130439Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c8d39fbf30b9ef6561e7687a28c837f5aee908615c87ff16750d8fcb7154c0d2",
+ "stdout_tail": "==============================================================================\nCYCLE 911 -- CENSUS-CONSISTENCY ARITHMETIC AND THE DECLARED-LIKELIHOOD LEMMA\n==============================================================================\n\nSCOPE: self-contained.  The unlanded substrate closure is removed;\nthe worlds/setups re-typing is a CONVENTION recorded in a separate\nmeta note and asserted nowhere in this runner; the likelihood lemma\nis conditional on declared model imports named in the receipt.\n\n-- stipulated recorded census -------------------------------------------\n  position_sets: 187\n  event_seeds: 4\n  census_worlds: 748\n  world_pairs: 279378\n  shared_tick0_pairs: 5168\n  distinct_tick0_vectors: 323\n  lock_points: 164\n  menu_size_at_every_lock_point: 2\n  recorded_branch_pairs: 0\n\nCLAIMS_JSON: {\"computed_world_pairs\":279378,\"lemma_trials\":390,\"lemma_violations\":0,\"merged_atom_control\":true,\"science_digest\":\"73a7419a4f4337b10c783bee13b3fb434dca0125d953064b82600b59ce710bae\"}\n\n-- CERTIFICATES --------------------------------------------------------\n  PASS  L1_CENSUS_CONSISTENCY              187*4=748 C(748,2)=279378 recorded_pairs=279378\n  PASS  L2_LIKELIHOOD_LEMMA_CONDITIONAL    random_nonuniform_vectors=390 violations=0 uniform_attains_bound=True merged_atom_control_moves_MLE=True\n  PASS  L3_DETERMINISM                     double_run_digest_equal=True\n  PASS  L4_RUNTIME                         elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=4 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T130439Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'VERDICT: PASS' vs cache 'science_digest: 7a988705c1bfe8af6e9074a16b990e97d264646a5bc72a6312e21d92f8abce94'",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

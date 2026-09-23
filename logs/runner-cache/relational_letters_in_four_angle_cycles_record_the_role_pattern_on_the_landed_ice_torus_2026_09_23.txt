@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_2026_09_23.py
+runner_sha256: 3c840a38eeb1b4c8839e020db6f8d9eeaed175148e13c3e569a58851e944d7f0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 304.33
+status: ok
+----- stdout -----
+== A. The letters ==
+[PASS] m = 211, three cycles of four angles: the 24 signed angles are distinct and nonzero, and each cycle sums to 0 mod m :: m odd, so no residue is 180 degrees
+[PASS] every solution of the square relation is straight: the same cycle and phase on opposite sides :: 96 straight, 0 bent
+[PASS] (U): no two allowed stars share their six neighbours :: 768 stars at a centre; so every site is a function of its six neighbours
+[PASS] the (U) test is not vacuous: the decodable cycle set mod 37 below has 24 stars that a shift of the centre turns into others :: ((34, 13, 35, 29), (11, 4, 23, 36), (20, 15, 18, 21)): 24 shared stars
+
+== B. Complete search on cores of side 2, 3 and 4 ==
+[PASS] cores of side 2, 3, 4 (one core value fixed): exactly the 768 cycle spirals, each with one completion on the faces :: side 2: 768; side 3: 768; side 4: 768 = 6 frames x 2 senses x 4^3 phases
+
+== C. Tori ==
+[PASS] tori of side 2 to 8: static records exist exactly when 4 divides L, and they are the 768 cycle spirals :: L=2: 0, L=3: 0, L=4: 768, L=5: 0, L=6: 0, L=7: 0, L=8: 768
+
+== D. Roles on the landed ice torus (side 4) ==
+[PASS] every site reads the same frame (which line carries which cycle) and sense from its forward differences :: 768 records x 64 sites
+[PASS] each line's phase is x mod 4 plus one global phase, so the parity vector is read up to one global phase :: all 64 cycle phases and all 8 parity phases occur
+[PASS] the readout is unchanged by rotations of the circle, shifts and reflections :: 8 records x 31 shifts x 2
+[PASS] given its six neighbours, the cycle rule admits exactly one value at every site :: 48 records x 64 sites x 211 values
+
+== E. Contrast ==
+[PASS] a cycle set mod 37 with (U) but bent squares has core records that are not spirals :: ((31, 2, 13, 28), (1, 7, 15, 14), (32, 12, 34, 33)): 1344 records, 576 not spirals; bent squares 104
+[PASS] with one octant per site (a sense per line, phase steps of +1 or -1), the side-4 torus has 24576 records :: 768 of them the spirals with every axis forward; the rest have axes reversed (open PR #8854)
+
+[PASS] budget: every search stayed under its node cap :: 2351540 nodes, 304 s
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

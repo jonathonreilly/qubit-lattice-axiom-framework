@@ -27,13 +27,13 @@
     "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05",
     "the_fermion_on_compact_u1_links_the_integer_flux_selects_the_staggered_gauss_law_and_joins_the_maxwell_germ_bounded_theorem_note_2026-09-03"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/charged_finite_link_local_dynamics_and_phase_bridge_2026_09_13.py",
   "title": "Finite charged links: controlled local dynamics and the remaining phase argument",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

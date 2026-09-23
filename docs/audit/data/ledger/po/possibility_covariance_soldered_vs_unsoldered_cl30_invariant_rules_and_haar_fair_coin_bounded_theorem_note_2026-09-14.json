@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -33,13 +33,13 @@
     "admissibility_handed_rule_pseudoscalar_invariant_census_and_parity_odd_record_correlators_bounded_theorem_note_2026-09-13",
     "covariant_nn_support_rules_gauss_law_as_glued_support_and_hole_statistics_bounded_theorem_note_2026-09-14"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 8,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 7.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -60,6 +60,6 @@
   },
   "runner_path": "scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py",
   "title": "Conditional possibility covariance and recorded frames",
-  "transitive_descendants": 0,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

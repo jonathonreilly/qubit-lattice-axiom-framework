@@ -26,13 +26,13 @@
     "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
     "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.0,
+  "load_bearing_score": 3.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
   "title": "Gaussian remainders for extended gradient interactions on free cubes",
-  "transitive_descendants": 3,
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

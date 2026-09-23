@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07",
     "admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 3.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.py",
   "title": "The formation law of a product-class nearest-neighbor rule is fixed by its multiset of recorded-neighbour sets of size at least two, and the order census on the 2x3 rectangle and the 2x2x2 cube gives exactly 28 and 542 laws",
-  "transitive_descendants": 0,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

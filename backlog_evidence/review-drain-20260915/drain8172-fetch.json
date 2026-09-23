@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "c8ae4a4622c1aa924ff6c9b3452021022f20746d",
+  "fetched_ref": "refs/review-loop/fetched/8172-2c414bd380d84d3992d149f39e04df75",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916",
+    "headRefOid": "c8ae4a4622c1aa924ff6c9b3452021022f20746d",
+    "isDraft": false,
+    "number": 8172,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

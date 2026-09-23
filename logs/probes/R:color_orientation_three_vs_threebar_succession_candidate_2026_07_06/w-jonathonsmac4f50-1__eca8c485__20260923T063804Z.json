@@ -22,15 +22,22 @@
  "stdout_sha256": "4c235ce1da8f6d71a7865ef93958e9cae936a0540407269a8892fa68b1b35036",
  "stdout_tail": "[FAIL] missing quote in docs/MINIMAL_AXIOMS_2026-06-29.md: Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration before use as a premise.\nTOTAL PASS=0 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T063804Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174629Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha eca8c485 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the verbatim quote 'Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration \u2026' was reworded in MINIMAL_AXIOMS by c62dce4792 (2026-07-11), dropping 'explicit admission'. Issue #8777.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174629Z"
  }
 }

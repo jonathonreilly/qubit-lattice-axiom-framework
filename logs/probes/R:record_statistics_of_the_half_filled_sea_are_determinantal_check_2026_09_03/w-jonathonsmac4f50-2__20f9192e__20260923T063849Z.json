@@ -22,15 +22,22 @@
  "stdout_sha256": "8a2470490a11f4490a0fa4d8433cc2ea86b48d6c604b7777df04f11e764d261d",
  "stdout_tail": "3 with 2 forcing; [0.021268, 0.978732] on 6^3, 0; [0.024036, 0.975964] on 8^3, 0 -- in this six-neighbour menu forcing occurs on the torus with M^2 = 6I exactly (0.0e+00)\nPASS E3 [numerical, 1e-12] FORCING: the row support sum of P_vu^2 = 1/4 exactly (7.2e-16), uniform occupied-support sufficiency: the tested whole row supports have 6, 81, 108 sites, giving odds 2.2e-16; one short leaves 8.3e-02, 1.1e-05, 2.0e-05\nPASS E4 [numerical, stated finite bounds] BEYOND THE STAR, 8^3, six neighbours occupied (0.0240): one more record at d = 2..7 shifts at most 4.5e-03, 1.1e-03, 3.6e-05, 1.1e-04, 2.6e-06, 2.0e-05, and by 0.0e+00 at d >= 8\nPASS E5 [numerical, stated mixed tolerances] with the neighbours ALTERNATING (0.5000) a d = 2 record reaches 5.9e-02 though P_vu = 0 there (8.2e-17): influence through the Schur complement alone; the d = 2 shell empty gives 0.9704\nPASS E6 [numerical, 1e-13] full row support with three occupied and three empty neighbours does NOT force n0: condition probability 0.015625000000 and conditional odds 0.500000000000\nPASS E7 [exact] eleven-site nonstar T=(0, 2, 3, 4, 5, 12, 13, 16, 17, 48, 49) has det P_T=0, all deletion minors positive; T without 0 occupied forces n0=0 with probability 3125/7962624 despite missing row site [1]\nSUMMARY: the finished set of records is determinantal with kernel P, conditioning is the Schur complement, and forcing means a conditional Schur diagonal is 0 or 1; neither arbitrary row-cover implication holds.\nTOTAL: PASS=31 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T063901Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 20f9192e differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=31 FAIL=1' vs cache 'TOTAL: PASS=32 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Floating-point residual at the tolerance edge, not a failed identity: E1 requires the additive-odds identity to 1e-15 over 64 x 3 sums; this machine gives 1.6e-15, the committed cache 8.9e-16 (and 4.4e-16 vs 5.6e-16 for the I/2 part, which passes). The other 31 checks pass. The platform (numpy 2.4.1, Python 3.12.8 arm64) accumulates differently from the author's; a 1e-15 bound on a 192-term sum sits at double-precision noise.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z"
  }
 }

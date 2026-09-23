@@ -21,14 +21,21 @@
  "stdout_sha256": "d5bd800ece8adf64dc4f2bd1c52148cd0ae0fb67eb1d4c8f17f35dd8db644953",
  "stdout_tail": "tonomous local realization of the load-bearing forward/reverse edge sweep\", \"literal Cycle713 source finalizer replacing the hosted marker-gated cleanup\", \"literal placement/routing and active coordinate covariance of the twelve-bank word\", \"autonomous genesis/enforcement of blank banks, link work, and one-token sector\", \"objective occurrence/admission, inaccessible inverse, Record permanence, Born/history, and source/gravity meaning\"], \"order\": {\"failures\": 178, \"rows\": 756}, \"pass\": true, \"report_sha256\": \"5df185a9f2b16bd5aa82bef3fa586c70e016af3a96383df7fa61777ff25642aa\", \"supplied\": [\"clean finite bank/link genesis and exactly one allocator token\", \"BINDER, ACTUAL, ADMISS, LAW, and one endpoint direction carrier\", \"fixed source-bank carrier injection and fixed forward/packet/reverse factor schedule\", \"host implementation of the success-marker-gated literal Cycle713 source finalizer\", \"clean transient-NEW work and blank route workspace\", \"physical placement/routing only by the smaller three-bank ancestor, not this twelve-bank word\"], \"unchanged_Cycle612_JointOrder\": {\"JointOrder_class_module\": \"physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22\", \"consistent_acyclic\": true, \"consistent_statuses\": [\"admitted\", \"admitted\"], \"edge_qubit_opportunities\": [1, 1], \"forced_cycle_detected\": true, \"inverted_first\": \"admitted\", \"inverted_refusal\": \"refused_inverted\", \"no_endpoint_status\": \"no_opportunity\"}}\nCYCLE719_RECURRENT_CYCLE612_BANK_CORE_BOUNDED_PARTIAL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T155928Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174632Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e80b3fa4 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)",
    "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
    "ok: stdout identical to the pinned cache"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The three FAIL lines (autonomous_edge_schedule, literal_source_finalizer, active_twelve_bank_physical_route) are the runner's designed BOUNDED_PARTIAL verdict: the committed cache logs/runner-cache/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.txt on main carries the same three FAIL lines and the same CYCLE719_RECURRENT_CYCLE612_BANK_CORE_BOUNDED_PARTIAL verdict, rc=0; the hit fired on designed FAIL text, not a regression.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174632Z"
  }
 }

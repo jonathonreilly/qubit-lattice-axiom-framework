@@ -22,15 +22,22 @@
  "stdout_sha256": "150a8dd4b8b9a1adc1e50093c4b2854b4be3c2130598f857057cb7a41519a4b6",
  "stdout_tail": "ce IR gap/clustering\n  [PASS] source note no longer carries load-bearing RG diagnostic: b_1=26\n  [PASS] source note no longer carries load-bearing RG diagnostic: two-loop/one-loop diagnostic\n  [PASS] source note no longer carries load-bearing RG diagnostic: finite dimensional-transmutation scale\n  [PASS] source note no longer carries load-bearing RG diagnostic: mu_conf/mu_lattice\n==============================================================================\nPart 4  Target reframing\n==============================================================================\n   FIXED SURFACE: retained_bounded g_bare=1, beta=6.\n   TARGET: fixed-lattice IR mass gap / clustering at beta=6.\n   OPEN: Delta_gauge(beta=6)>0 and coupled spectral control.\n   REMOVED: two-loop/asymptotic-scaling diagnostic as load-bearing support.\n  [PASS] reframing is bounded and does not assert interacting existence\n==============================================================================\nTOTAL: PASS=13 FAIL=3\n==============================================================================\nSCOPE: This packet is a framework-native fixed-g_bare target clarification.\n  It depends on the retained_bounded G_BARE surface and does not import\n  two-loop RG, asymptotic-scaling, or dimensional-transmutation arithmetic.\n  The open science target remains Delta_gauge(beta=6)>0 plus full coupled\n  IR spectral control. No new axiom, primitive, or audit verdict.\nrunner_check_breakdown = {A: 13, B: 0, C: 0, D: 0, total_pass: 13}\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T081444Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174629Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e121f2dd differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=13 FAIL=3' vs cache 'TOTAL: PASS=16 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: g_bare_derivation_note and the interacting-transfer row are unaudited in the committed shards (grades cleared 2026-06-21 and 2026-07-11), while the runner requires retained_bounded / audited_clean. Issue #8778.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174629Z"
  }
 }

@@ -21,15 +21,22 @@
  "stdout_sha256": "0c64453d64279eb9a896f5c8c9d22c65712cf28f09e0c01a2bd5a1f1afc2df31",
  "stdout_tail": "non_contradicting_g_is_one :: non-contradicting grid points = [Fraction(1, 1)]\n  PASS route3_value_equals_one :: route3 = 1\n  PASS route4_via_rearrangement :: route4 = positive_sqrt(1) = 1\n  PASS all_four_routes_agree_exactly :: max pairwise diff = 0 (exact rational)\n\n========================================================================\nTOTAL PASS: 49\nTOTAL FAIL: 1\n========================================================================\n\nCompanion conclusion (audit-friendly evidence only):\n  The load-bearing step of G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-05-09.md\n  (class-A rational substitution yielding g_bare = 1) uses ONLY\n  the cited rational data (W1)^2 = 1/6, (W2), and N_c = 3 plus\n  closed-field algebra (positive square-root branch selection).\n  The Record axiom (additive scalar record-readout functional)\n  is neither used nor invoked. Numeric output is identical under\n  both 'Record axiom asserted' and 'Record axiom not asserted'\n  outer scopes. This runner does not re-apply the prior\n  audited_clean verdict; it records that the arithmetic checked\n  here is unchanged by the 2026-06-04 axiom-set adoption.\n\nThe audit lane decides whether to honor or re-test the prior\nverdict on the new minimal_axioms premise hash, once the\ncascade-upstream rows yt_ward_identity_derivation_theorem and\ng_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19\nthemselves recover retained-grade status under their own\nRecord-axiom-invariance companions or fresh audits.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T160052Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174622Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e80b3fa4 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_g_bare_forced_by_ward_rep_b_record_axiom_invariance_2026_06_04.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "The runner's Block 11 opens docs/audit/data/audit_ledger.json, the gitignored generated monolith, which this slot worktree did not have (FAIL ledger_present, the only FAIL); checkout-state class #8212. With the monolith materialized from the shards on a clean main checkout the same runner instead fails the W1 status gates, which are triaged science on the other logs of this task.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174622Z"
  }
 }

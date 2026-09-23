@@ -21,15 +21,22 @@
  "stdout_sha256": "03a24da4f6d67ea916634d6c717047aca92e1eb63e1c9ba8428c041540068ebc",
  "stdout_tail": "oper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\", \"scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py\", \"scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py\", \"scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py\"], \"untracked_inputs\": []}, \"refused_cases\": 6, \"refused_inverse_failures\": 0, \"refused_mutation_failures\": 0, \"report_sha256\": \"1316367e25429d2924f59b7d625f59f765a89702dec972bc31be4b22443f8adf\", \"retained_pointer_M2\": 1, \"retained_pointer_site\": [-8, -1, 1], \"route_return_failures\": 0, \"routed_gates\": 2598, \"routed_word_sha256\": \"f56d6b6630801be480e0017a72fe3adfb19c0d64657de498048fd52fe6986956\", \"semantic_gates\": 60, \"source_closure\": false, \"supplied\": [\"fixed selected blank packet cell\", \"fresh bit\", \"fixed address 23\", \"blank payload/work\", \"head and rotor input\", \"derived Cycle713 pointer on the identical retained-pointer coordinate\", \"binder\", \"actuality\", \"admissibility\", \"law-domain\", \"orientation\", \"gate word and route workspace\"], \"supplied_control_bits\": 7, \"toffoli_decomposition_residual\": 8.021723640960921e-16, \"touched_M2_union\": 76, \"unappend_expanded_gates\": 718, \"unappend_maximum_route_distance\": 12, \"unappend_non_NN_failures\": 0, \"unappend_operand_order_failures\": 0, \"unappend_route_return_failures\": 0, \"unappend_routed_gates\": 2598, \"unappend_routed_word_sha256\": \"5b880cb234bec10f642e6cf1996f7cae91bc84e5b78cc48b12e0c265df99a847\", \"work_return_failures\": 0}\nCYCLE714_FULL34_FIXED_PACKET_PHYSICAL_M2_INCOMPLETE\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T155244Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174630Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e80b3fa4 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'CYCLE714_FULL34_FIXED_PACKET_PHYSICAL_M2_INCOMPLETE' vs cache 'CYCLE714_FULL34_FIXED_PACKET_PHYSICAL_M2_PASS'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Shallow probe clone: the one FAIL is source_closure, and the printed provenance shows its only false input is baseline_is_ancestor (declared_path_failures 0, no duplicate, missing or untracked paths). The runner asks git merge-base --is-ancestor ebd05531036b (2026-07-26, 'fix: drain forensic audit backlog efficiently') HEAD, and the probe clone's history is grafted at 2026-09-15 (ed6c77aea6), so that commit is unreachable here. In a deeper clone of origin/main (graft 2026-05-16) the same merge-base returns ancestor.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174630Z"
  }
 }

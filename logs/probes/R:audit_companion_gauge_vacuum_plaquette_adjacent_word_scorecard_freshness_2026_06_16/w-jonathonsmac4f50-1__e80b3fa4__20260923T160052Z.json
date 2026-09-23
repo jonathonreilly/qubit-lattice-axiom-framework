@@ -22,15 +22,22 @@
  "stdout_sha256": "c60d7983b60d5c23a6fd20548c4762c1310a8a820f3261b6304387255b12e70e",
  "stdout_tail": "Gauge vacuum plaquette adjacent-word scorecard freshness companion\n==============================================================================\nPASS: companion is hygiene-only\nFAIL: parent note remains on historical displayed scorecard\nPASS: cache is the current parent-runner all-pass scorecard\n      cache_scorecard=(28, 0)\nPASS: cache is for the adjacent-word parent runner\nPASS: parent runner exits successfully\nPASS: live parent runner emits the current all-pass scorecard\n      live_scorecard=(28, 0)\nPASS: Part R stationarity check is present\nPASS: Part R non-factorization guard is present\nPASS: Part R slice-proportionality check is present\n\nTOTAL: PASS=8 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T160054Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174628Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e80b3fa4 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=8 FAIL=1' vs cache 'TOTAL: PASS=9 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the companion requires the parent note to still show the historical TOTAL: PASS=25, FAIL=0; the parent was refreshed to PASS=28 by c1cf7aa6e8 (2026-06-17), so the guarded staleness no longer exists and the companion is obsolete. Issue #8774.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174628Z"
  }
 }

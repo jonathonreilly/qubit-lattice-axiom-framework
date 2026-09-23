@@ -21,15 +21,22 @@
  "stdout_sha256": "4a94eb30682a7fef66cd79a7bc31f6acd9d39e8823a2407673b58ce62f3475c1",
  "stdout_tail": "ual\": 8.881784197001252e-16, \"maximum_particle_number_leakage\": 0.0, \"maximum_sparse_support\": 24, \"no_append_branch_terms\": 2220, \"one_particle_sources\": 12}, \"report_sha256\": \"4160d69e173c7c9e66139c09b0aa9640fc3153ab0809931ae9ad1439fa225a87\", \"route\": {\"assigned_M2\": 453, \"frame_failures\": 0, \"maximum_route_distance\": 361, \"non_NN_failures\": 0, \"operand_order_failures\": 0, \"ordered_frame_products\": 576, \"primitive_one_two_M2_gates\": 17823, \"product_failures\": 0, \"proper_cubic_frames\": 24, \"route_deletion_detected_macros\": 4795, \"route_return_failures\": 0, \"routed_nearest_neighbor_gates\": 1289681, \"routed_word_sha256\": \"a8aeeb6be8a63b7e3e57458e06166d05cb31ca9360a4d6fa1c3889ba7f14fc94\", \"translation_failures\": 0}, \"status\": \"bounded conditional construction\", \"supplied\": [\"Cycle-715 two-cell physical bank and packet word\", \"finite translated chain of blank banks and link work genesis\", \"six-bit structural bank-address ROM (at most 32 two-cell banks)\", \"one initial token/head/rotor state\", \"BINDER, ACTUAL, ADMISS, LAW and endpoint-event inputs\", \"fixed boundary-handoff-then-append circuit order; not physical time\"], \"trained\": {\"banks\": 2, \"events\": 4, \"exhausted_next_event_declared_outside_domain\": true, \"fill_failures\": 0, \"filled_packet_cells\": 4, \"forced_exhausted_continuation_changes_state\": true, \"global_predecessor_failures\": 0, \"head_rotor_continuity_failures\": 0, \"one_hot_token_failures\": 0, \"packet_field_failures\": 0}}\nCYCLE717_INTERBANK_ALLOCATOR_HANDOFF_INCOMPLETE\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T054137Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174631Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8ea1eba1 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'CYCLE717_INTERBANK_ALLOCATOR_HANDOFF_INCOMPLETE' vs cache 'CYCLE717_INTERBANK_ALLOCATOR_HANDOFF_PASS'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle717_interbank_allocator_handoff_2026_07_26.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Shallow probe clone: the one FAIL is source_closure, and the printed provenance shows its only false input is baseline_is_ancestor (declared_path_failures 0, no duplicate, missing or untracked paths). The runner asks git merge-base --is-ancestor ebd05531036b (2026-07-26, 'fix: drain forensic audit backlog efficiently') HEAD, and the probe clone's history is grafted at 2026-09-15 (ed6c77aea6), so that commit is unreachable here. In a deeper clone of origin/main (graft 2026-05-16) the same merge-base returns ancestor.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174631Z"
  }
 }

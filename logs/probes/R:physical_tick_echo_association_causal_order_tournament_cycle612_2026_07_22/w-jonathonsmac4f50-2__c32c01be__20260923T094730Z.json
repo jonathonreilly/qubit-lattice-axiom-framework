@@ -19,14 +19,21 @@
  "stdout_sha256": "5d200cdfee3bf936fc7a92d6c00459d0dadc2d0462aa2abc9213847eff50d2ac",
  "stdout_tail": "ss rows for s=-1, and no 5:4 anywhere :: {'hit_3_4': [(1, 1)]}\nPASS pi-ceiling corollary: |R| <= pi/|theta0| = 1.0556 for every uniform-field modulation on the full W=16 and W=64 lattices; the 5:4 advance word (|R| = 1.25) is unreachable by any uniform-field rate shift, while the declared A-count convention has a 3:4-class row :: {'ceiling': 1.0557935731446526, 'max_ratio_found': 1.045600047967765}\nFAIL matched-ray certification: the Cycle-611 P-A (m=16, k=4) prepared state certifies through its own rays (frozen prediction), while the raw-ray control on the same state stays uncertified \u2014 certification is a property of the (ray, state) pair :: {'matched': {'rate': -0.3125, 'predicted': -0.47357742338851666, 'locked': False, 'convention_independent': False}, 'raw_control_certified': False, 'cumulative_success': 0.00695871364018185}\nPASS causal-order bridge: consistent sequential co-registrations are admitted and the joint predecessor relation is acyclic :: {'s1': 'admitted', 's2': 'admitted', 'acyclic': True}\nPASS inverted registration: the locally checkable cross-order rule refuses a shared event that would precede an earlier shared event in one device (no silent cycle admission) :: {'first': 'admitted', 'attempt_after_forced_inversion': 'refused_inverted'}\nPASS adversary witness: forcing inverted identifications past the rule creates a cyclic joint relation, which the acyclicity decoder detects (undefined, never a lawful order) :: {'acyclic': False}\nRESULT 6 1 elapsed 5.12 s\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T094736Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c32c01be differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Designed tournament outcome: the one FAIL gate (matched-ray certification of the Cycle-611 P-A m=16, k=4 state) and 'RESULT 6 1' are exactly what the committed cold run outputs/physical_tick_echo_association_causal_order_tournament_cycle612_cold_2026_07_22.txt and receipt (pass_count 6, fail_count 1) on main record.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z"
  }
 }

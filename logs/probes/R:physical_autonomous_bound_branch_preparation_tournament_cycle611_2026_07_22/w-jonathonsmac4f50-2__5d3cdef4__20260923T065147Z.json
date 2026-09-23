@@ -19,14 +19,21 @@
  "stdout_sha256": "3f1bd6670d828626188d24a519ab341011777fc14a15b6f45431efb6f3951c00",
  "stdout_tail": "7e-14, 'raw_bound_weight': 0.2626773191935403, 'eig_residual': 2.1331798302301967e-12}\nPASS no-op control reproduces the Cycle-610 falsification: locked but convention-dependent and uncertified :: {'rate_T1': 0.049899193548387094, 'rate_T2': 0.049899193548387094, 'locked': True, 'convention_independent': False, 'certified': False}\nPASS lawful-domain: a non-antisymmetric input is detected outside the declared domain :: {'antisym_defect': 0.14142135623730953}\nPASS the radius-1 conditioning window is proper-cubic invariant (all 24 frames) :: {'max_mask_defect': 0}\nFAIL P-B prior: the window-conditioning cascade certifies within k <= 12 at m = 16 (raw source in, certified clock out) :: {'first_certified': None}\nPASS conditioning deletion: pure evolution leaves the bound weight at the raw value and uncertified :: {'weight': 0.2626773191931021}\nPASS P-A prior: the minus-port filter raises the bound-weight diagnostic monotonically over the certification grid :: {'8': [0.5122, 0.6887, 0.8103], '16': [0.8929, 0.909, 0.909]}\nPASS port-swap control: the plus port does not purify (the minus port is load-bearing) :: {'plus_port_weight': 0.03173352762619215, 'raw': 0.2626773191935403}\nFAIL P-C frozen prior: bound weight improves monotonically with ramp length (certification outcome separately reported) :: {'weights': [0.0196, 0.0041, 0.0003], 'certified': [False, False, False]}\nFAIL held transfer: no certified P-B configuration to transfer :: P-B never certified\nRESULT 8 3 elapsed 16.47 s\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T065203Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5d3cdef4 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Designed tournament outcome: the three FAIL gates (P-B never certifies within k<=12 at m=16; P-C frozen prior not monotone; held transfer has no certified P-B) and 'RESULT 8 3' are exactly what the committed cold run outputs/physical_autonomous_bound_branch_preparation_tournament_cycle611_cold_2026_07_22.txt and receipt (pass_count 8, fail_count 3) on main record.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z"
  }
 }

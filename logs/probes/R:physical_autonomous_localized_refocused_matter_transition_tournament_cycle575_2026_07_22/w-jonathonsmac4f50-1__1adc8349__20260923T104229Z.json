@@ -19,14 +19,21 @@
  "stdout_sha256": "d621accb67557b14fe07d311384fee2b84159ec106f3e5989957939ac9e13e5d",
  "stdout_tail": "n supplied, and the composite clock is a kinematically attached spectator', 'C_num': 'exact finite E/G, inverse, factorization, composition and covariance residuals; no empirical duration scale', 'C_wrap': 'comparison work returns blank and carried echo control recycles; unbounded/noisy renewal remains open', 'C_int': 'accepted mass/contact transition used without naming phase energy or a generator entry rate', 'C_local': 'star radius one, carried 12-rail echo, 36-rail composite with 30 extra rails, support-three receipts, all24/all576; compiler and dynamical-binding retirement open', 'C_source': 'contact/source phase varied as a common-mode input only; no stress, gravity, redshift, or backreaction law'}}\nPASS the frozen tournament stays below the 360-second and 3-GiB cold caps :: {'elapsed_seconds': 0.33936525002354756, 'peak_RSS_bytes': 84328448}\nSUMMARY_JSON {\"audit\": \"unset\", \"authority\": \"none\", \"axiom_pressure\": false, \"elapsed_seconds_internal\": 0.33936525002354756, \"firewall_clean\": true, \"maximum_RSS_bytes_internal\": 84328448, \"route_A_maximum_residual\": 1.6318698558282648e-15, \"route_A_shell_deletion_signal\": 0.5206306602938691, \"route_B_all576_failures\": 0, \"route_B_maximum_residual\": 4.884981308350689e-15, \"route_C_all576_failures\": 0, \"route_C_maximum_residual\": 6.994405055138486e-15, \"shared_substrate_obstruction\": false, \"status\": \"cycle575-autonomous-localized-refocused-matter-transition-tournament\", \"tests_failed\": 1, \"tests_passed\": 7}\n\nRESULT pass=7 fail=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T104230Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1adc8349 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Shallow probe clone: the one FAIL is the provenance gate, and its printed detail shows accepted_Cycle573_is_ancestor False with Cycle573_pass True. The runner asks git merge-base --is-ancestor 69e1a7cfbc (2026-07-23, 're-freeze Cycle 573 on the main-based \u2026') HEAD, and the probe clone's history is grafted at 2026-09-15, so the commit is unreachable here; in a deeper clone of origin/main it is an ancestor. With only that ancestry call forced true, the runner on a clean main checkout gives RESULT pass=8 fail=0, so the byte-exact artifact, receipt and note-hash conjuncts all hold.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z"
  }
 }

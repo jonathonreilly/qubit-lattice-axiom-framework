@@ -19,14 +19,21 @@
  "stdout_sha256": "bf80ac64faace59b3c313d68c96ea88972293d3ff70642ff8e8f5deae834b18e",
  "stdout_tail": "753336866636, 'residual': 2.3497402073550424e-13, 'interior_weight': 0.9999999999999991, 'antisym': 2.919594317009366e-14}, 'ball4': None}\nPASS the frozen discriminator produces a decided reading (R1 or R2, not MIXED) with converged interior modes on every verdict row :: {'reading': 'R1_contact_dependent', 'persists_at_g0': False, 'phase_g037': 0.30654753336866636, 'phase_g0': -3.066253761813115, 'phase_g0185': -3.0263829019634225, 'phase_shift_g0_to_g037': 2.910384011997805}\nPASS full-window BS near-zero diagnostic evaluated; the candidate is reported without identifying it as the physical second branch :: {'window_min': 1.123619162708616e-10, 'at_theta': 0.29998079266839706, 'coarse_min': 0.002432005546640917, 'bs_visible': True}\nPASS unmasked corroborator evaluated: whether the dust-lock line exists without contact (reported; consistency with the verdict assessed in the note) :: {'rate_T1': -0.023185483870967742, 'locked': False, 'convention_independent': True, 'locks_at_dust_line': False}\nFAIL two-line beat word: the ball-survivor mixture's retained word shows exactly the two predicted lines (bound root and the interior line) as dominant DFT peaks within one bin :: {'predicted_lines': [-2.975574708446694, 0.30654753336866636], 'found_lines': [-2.9754126895460007, 0.3133679321968659], 'peak_mags': [454.80010838853707, 59.628043920197], 'median_floor': 0.08505157172770339, 'bin_width': 0.003165332648453192, 'survivor_norm_sq': 0.2525965797979323}\nRESULT 4 2 elapsed 45.06 s\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T142554Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c88792d differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Designed tournament outcome: the two FAIL gates (W5 anchor reproduction at g=0.37; two-line beat word) and 'RESULT 4 2' are exactly what the committed cold run outputs/physical_a2_line_contact_discriminator_tournament_cycle629_cold_2026_07_22.txt and receipt (pass_count 4, fail_count 2, pass False, reading R1_contact_dependent) on main record; the hit fired on FAIL text of a tournament whose frozen verdict includes those losses.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174633Z"
  }
 }

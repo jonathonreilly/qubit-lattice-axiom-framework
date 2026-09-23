@@ -19,14 +19,21 @@
  "stdout_sha256": "c1f1718bfef328a28a16d0a6d9a009620a6a3ff73e72dbf2c9e7e37245d0ecc7",
  "stdout_tail": "8035a2a:docs/BARYOGENESIS_CLOSURE_GATE_NOTE.md\n  - does not resolve to a blob: e5297ea7b9b12d6e0dbc071241d578eb72ce3254:docs/BARYOGENESIS_EFFICIENCY_PENALTY_NOTE.md\n  - does not resolve to a blob: defc57b6a6c7869115a414a14301b176a7fbee6e:docs/BARYOGENESIS_EWPT_WASHOUT_TARGET_NOTE.md\n  - does not resolve to a blob: 18fd4af077bb47d39d7fb20d5e0880db95369cda:docs/BARYOGENESIS_FINITE_T_REDUCTION_NOTE.md\n  - does not resolve to a blob: d0d8cd7af207e027c9cb9dee4d4468c36c751656:docs/BARYOGENESIS_HIGGS_DOUBLET_MULTIPLICITY_NOTE.md\n  - does not resolve to a blob: 27af994c8fbbd555f5006d8b79364cbc4b1fbc78:docs/BARYOGENESIS_HOMOGENEOUS_SOURCE_LIFT_NOTE.md\n  - does not resolve to a blob: 53acdf60cb67f95f68630fba740c9d40d54bde41:docs/BARYOGENESIS_JARLSKOG_FACTORIZATION_NOTE.md\n  - does not resolve to a blob: e28ede6e7208c0976e4121d745953bf3ee42b0d7:docs/BARYOGENESIS_KEWPT_SINGLE_ORDER_PARAMETER_NOTE.md\n  - does not resolve to a blob: 1fa2366a4906734d3f44875d7561f9f66386876b:docs/BARYOGENESIS_KNP_STAGE_DECOMPOSITION_NOTE.md\n  - does not resolve to a blob: 1a2284261e6a6961c90956249db25a840028b829:docs/BARYOGENESIS_KSPH_SINGLE_ACTIVE_LANE_NOTE.md\n  - does not resolve to a blob: b7e5dd8bcf86824f54670fea78940d70cd3d39af:docs/BARYOGENESIS_KTR_SINGLE_LEFT_HANDED_LANE_NOTE.md\n  - does not resolve to a blob: 576adc435d121018e6bd01427ba43617efee5840:docs/BARYOGENESIS_NONPERTURBATIVE_ROUTE_PIVOT_NOTE.md\n  - does not resolve to a blob: 1ab8c735882e7f69a99ad31b6521dd54dddfcad4:docs/BARYOGENESIS_NOTE.md\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T053414Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174629Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8ea1eba1 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Shallow probe clone: every one of the 2277 problems is 'does not resolve to a blob' for a <ref>:<path> record, and the rebuild itself is byte-exact (shipped and regenerated sha256 both 40f28782\u2026). The probe clone's object store (history grafted at 2026-09-15, main and ai/* only) resolves 1344 of the 3621 records; a deeper local clone of origin (grafted 2026-05-16) resolves 3149, and the rest name historical or PR-branch commits a single-branch clone does not fetch. The failure is the object store, not the index.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174629Z"
  }
 }

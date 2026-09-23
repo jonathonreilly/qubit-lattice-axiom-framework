@@ -21,15 +21,22 @@
  "stdout_sha256": "9169102b0131201f9f15f400e47c02536f2343422b34ed29ced8719431aad724",
  "stdout_tail": "{\"first\": {\"actuality\": 1, \"admissibility\": 1, \"binder\": 1, \"carry\": 0, \"delta_mask\": 66, \"endpoint\": 1, \"identity\": 0, \"law_domain\": 1, \"orientation\": 1, \"predecessor\": null, \"rotor\": 15, \"rotor_before\": 14, \"valid\": 1}, \"fresh\": [1, 1], \"head\": 1, \"rotor\": 0, \"second\": {\"actuality\": 1, \"admissibility\": 1, \"binder\": 1, \"carry\": 1, \"delta_mask\": 66, \"endpoint\": 1, \"identity\": 1, \"law_domain\": 1, \"orientation\": -1, \"predecessor\": 0, \"rotor\": 0, \"rotor_before\": 15, \"valid\": 1}, \"token\": [1, 0]}, \"two_successive_expected\": {\"first\": {\"actuality\": 1, \"admissibility\": 1, \"binder\": 1, \"carry\": 0, \"delta_mask\": 66, \"endpoint\": 1, \"identity\": 0, \"law_domain\": 1, \"orientation\": 1, \"predecessor\": null, \"rotor\": 15, \"rotor_before\": 14, \"valid\": 1}, \"fresh\": [1, 1], \"head\": 1, \"rotor\": 0, \"second\": {\"actuality\": 1, \"admissibility\": 1, \"binder\": 1, \"carry\": 1, \"delta_mask\": 66, \"endpoint\": 1, \"identity\": 1, \"law_domain\": 1, \"orientation\": -1, \"predecessor\": 0, \"rotor\": 0, \"rotor_before\": 15, \"valid\": 1}, \"token\": [1, 0]}, \"two_successive_failures\": false}, \"status\": \"bounded_constructive_theorem\", \"supplied\": [\"Cycle-712/713 common code isometry and fixed free/seam/contact word\", \"clean packet payload, freshness-witness, and work-register genesis\", \"station-zero two-rail one-hot token and finite two-cell local bank\", \"BINDER, ACTUAL, ADMISS, LAW controls\", \"head/rotor genesis and fixed reversible gate word/Manhattan route workspace\"]}\nCYCLE715_RECURRENT_DIRECTIONAL_PACKET_BANK_INCOMPLETE\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T053802Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174631Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8ea1eba1 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'CYCLE715_RECURRENT_DIRECTIONAL_PACKET_BANK_INCOMPLETE' vs cache 'CYCLE715_RECURRENT_DIRECTIONAL_PACKET_BANK_PASS'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Shallow probe clone: the one FAIL is source_closure, and the printed provenance shows its only false input is baseline_is_ancestor (declared_path_failures 0, no duplicate, missing or untracked paths). The runner asks git merge-base --is-ancestor ebd05531036b (2026-07-26, 'fix: drain forensic audit backlog efficiently') HEAD, and the probe clone's history is grafted at 2026-09-15 (ed6c77aea6), so that commit is unreachable here. In a deeper clone of origin/main (graft 2026-05-16) the same merge-base returns ancestor.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174631Z"
  }
 }

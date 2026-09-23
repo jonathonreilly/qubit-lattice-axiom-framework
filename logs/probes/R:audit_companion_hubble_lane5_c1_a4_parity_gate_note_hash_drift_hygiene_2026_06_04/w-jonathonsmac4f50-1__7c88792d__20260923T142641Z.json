@@ -26,14 +26,21 @@
  "stdout_sha256": "b2c612d95e275d4d5af2d06b849ec98287be47c209550ee91b780b451e716428",
  "stdout_tail": "===================================================================\nBlock 8 : tau(q) = q + pi involution partition on a 64^n grid\n========================================================================\n  PASS 1D tau-involution gives equal-count low/high partition :: n_low=31, n_high=31, n_boundary=2\n  PASS 1D tau-involution partition matches archived snapshot counts :: got (31, 31, 2), expected (31, 31, 2)\n  PASS 2D tau-involution gives equal-count low/high partition :: n_low=1985, n_high=1985, n_boundary=126\n  PASS 2D tau-involution partition matches archived snapshot counts :: got (1985, 1985, 126), expected (1985, 1985, 126)\n\n========================================================================\nBlock 9 : No-claim gate preservation across runs\n========================================================================\n  PASS parent runner emits the A4 no-go verdict :: no-go verdict present\n  PASS parent runner does NOT claim (G1) closed :: no (G1) closure claim\n  PASS parent runner does NOT claim (G2) closed :: no (G2) closure claim\n  PASS parent runner does NOT claim (C1) closed :: no (C1) closure claim\n  PASS parent note explicitly states (G1) remains open :: open-gate language present in Section 5\n  PASS parent note explicitly states (C1) remains open :: open-gate language present in Section 5\n\n========================================================================\nSummary\n========================================================================\nTOTAL: PASS=53, FAIL=1\n\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T142641Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174629Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c88792d differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=53, FAIL=1' vs cache 'TOTAL: PASS=54, FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main at any clone depth: the companion pins the parent runner's only commit to 5fd2c65a7, which is not an ancestor of origin/main, and the parent runner was edited on 2026-08-07 (52f9035fdf, N5 execution certificate). Issue #8776.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174629Z"
  }
 }

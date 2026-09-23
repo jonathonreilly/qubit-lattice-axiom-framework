@@ -21,15 +21,22 @@
  "stdout_sha256": "ccee189dfbc35dd2990390ebc586e9f8e6465b994c1ae74c6009f146340279f4",
  "stdout_tail": " {\"JointOrder_class_module\": \"physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22\", \"consistent_acyclic\": true, \"consistent_statuses\": [\"admitted\", \"admitted\"], \"edge_qubit_opportunities\": [1, 1], \"forced_cycle_detected\": true, \"inverted_first\": \"admitted\", \"inverted_refusal\": \"refused_inverted\", \"no_endpoint_status\": \"no_opportunity\"}, \"unchanged_Cycle704_host_control\": {\"Cycle610_append_attempts_compared\": 25, \"actuality_admissibility_domain_supplied\": true, \"additivity_closed\": true, \"bank_admitted\": 24, \"bank_cells\": 24, \"bank_exhausted_seen\": true, \"candidate_head_bits\": 6, \"candidate_packet_payload_bits_per_bank_cell\": 34, \"carry_truth_failures\": 0, \"d_ab\": 9, \"d_ac\": 21, \"d_bc\": 12, \"duplicate_statuses\": [\"refused_fresh\", \"refused_fresh\"], \"empirical_unit_supplied\": false, \"forward_replay_exact\": true, \"interval_failures\": 0, \"inverse_returned_initial_state\": true, \"inverse_statuses\": [\"unappended\", \"unappended\", \"unappended\", \"unappended\", \"unappended\", \"unappended\"], \"matching_statuses\": 25, \"no_actuality_statuses\": [\"refused_supplied\", \"refused_supplied\"], \"no_endpoint_statuses\": [\"no_opportunity\", \"no_opportunity\"], \"projection_failures\": 0, \"refill_statuses\": [\"admitted\", \"admitted\"], \"register_inverse_cases\": 96, \"register_inverse_failures\": 0, \"reversal_closed\": true, \"schedule_ordinal_stored\": false, \"software_blank_address_selector_supplied\": true, \"software_packet_inverse_accessible\": true}}\nCYCLE718_CYCLE612_INTERVAL_BRIDGE_INCOMPLETE\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T045953Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174631Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1f47a48b differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'CYCLE718_CYCLE612_INTERVAL_BRIDGE_INCOMPLETE' vs cache 'CYCLE718_CYCLE612_INTERVAL_BRIDGE_PASS'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle718_cycle612_interval_bridge_2026_07_26.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Shallow probe clone: the one FAIL is source_closure, and the printed provenance shows its only false input is baseline_is_ancestor (declared_path_failures 0, no duplicate, missing or untracked paths). The runner asks git merge-base --is-ancestor ebd05531036b (2026-07-26, 'fix: drain forensic audit backlog efficiently') HEAD, and the probe clone's history is grafted at 2026-09-15 (ed6c77aea6), so that commit is unreachable here. In a deeper clone of origin/main (graft 2026-05-16) the same merge-base returns ancestor.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174631Z"
  }
 }

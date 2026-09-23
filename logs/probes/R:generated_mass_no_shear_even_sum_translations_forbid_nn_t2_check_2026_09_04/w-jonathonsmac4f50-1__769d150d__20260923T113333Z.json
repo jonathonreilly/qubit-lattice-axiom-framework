@@ -22,15 +22,22 @@
  "stdout_sha256": "a5a90f9c9cbcf30220d78aceeacf0a8c6ee38d9bce65ec486b30bcdb69aa0eb1",
  "stdout_tail": " field is gamma_2 V_2 (1/2 + eps_v O) S e^{ik.v}, S = sum_{a<b} h_ab sin k_a sin k_b, reproduced for the shear polarisations by du@k = S/2 and du@k+Q = O S to 1.4e-16 at every declared momentum and both masses -- a lattice d_a d_b h_ab, hence exactly 1.8e-18 for the cross mode on (1,0,0), (1,1,0), (1,2,0) and the body diagonal, alive only off the planes (0.10206 at (1,2,3))\nPASS (xiii) T6 on the fixed self-consistent branch the common positive k=0 rescaling leaves the projector fixed | at beta = gamma a uniform rescaling of every edge rescales the whole law, so at n = (0,0,0) the staggered site response is site@k+Q = 7.6e-17 (6^3), 3.5e-16 (8^3), 8.2e-16 (12^3) with rank(R) = 2, against 2.7261e-01 / 2.5343e-01 / 2.4385e-01 and rank 3 for the hop dressing alone; the dilation survives only through its gradient, rank 3 at n = (1,0,0) where site@k+Q = 6.2e-03 (12^3) against 1.8e-01 -- a Hartree feedback multiplying the bare staggered response by 3.96 there and 5.21 at k = 0\nSUPPLIED, not derived: the fermion law and V; the Hartree decoupling; the pi-flux sea, KS pattern and twist rule; m via the gap equation; beta = 1 (supplied), gamma (scanned); the endpoint-mean rule; the pair-statistic reading of an edge length; the face-diagonal comparator. The 14^3 spot check is dropped. Runtime 44 s.\nPASS C1 finite endpoint ranks and the formal axis-array/full-metric distinction | L6,m1 n333/n331 TT ranks=[0, 1]; uniform hxy=1 is outside positive-definite full metrics\nTOTAL: PASS=12 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T113418Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174632Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 769d150d differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=12 FAIL=2' vs cache 'TOTAL: PASS=14 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Floating-point residuals at the tolerance edge, not a failed identity: (iv) requires du@other < 1e-15 and this machine gives 1.0e-15 (committed cache 8.3e-16); (vii) requires the even-sum invariance < 2e-14 and this machine gives 2.0e-14 (cache 1.2e-14). Every other quantity in both lines is at 1e-15..1e-16 and matches the cache, and the other 12 checks pass. The platform (numpy 2.4.1, Python 3.12.8 arm64) accumulates differently from the author's; the strict bounds sit at double-precision noise.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174632Z"
  }
 }

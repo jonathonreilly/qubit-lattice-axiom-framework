@@ -22,15 +22,22 @@
  "stdout_sha256": "cf3f6f19ccf4b2a44ea4532bb3e2073ee28fe3b01728f5f1e1f6ce3905f35f14",
  "stdout_tail": "external_scientific_inputs: finite support scaffold and declared witnesses; physical access remains unsupplied\nintegrity_reads: axioms, deep probe, law pair, history-index note\nconstruction: finite static target decisions require complete solvers; declared witnesses and pool checked\nnegative_scope: required finite target/centered-box solver decisions; no global geometry or pool-negative inference\nAUDIT_INPUT_PATHS:\n  docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md\n  docs/MINIMAL_AXIOMS_2026-06-29.md\n  docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md\n  docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md\n  docs/TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md\nAUDIT_TIMEOUT_SEC: 300\ncache_write: false\nscientific_dependency: minimal_axioms Admissibility and Record clauses\ndeclared_math: cubic rotations, ternary support tables, 48-bit demand masks\nsolver_mode: required CaDiCaL, Glucose and MiniSat; emitted DRUP lengths are not proof checking\nFAIL: required-solver-engines all required actual engines pass positive/negative calibration\n  residual: {'completed': [], 'error': \"ModuleNotFoundError: No module named 'pysat'\"}\nTOTAL: PASS=0 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T060051Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174632Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a5af72bc differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=0 FAIL=1' vs cache 'TOTAL: PASS=53 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Missing package: the only check is the solver-engine calibration, and its residual is ModuleNotFoundError: No module named 'pysat' (python-sat, providing CaDiCaL/Glucose/MiniSat). The probe machine's Python 3.12 lacks it, so the runner never reaches a target decision (TOTAL PASS=0 FAIL=1); reproduced identically on a clean main checkout here.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174632Z"
  }
 }

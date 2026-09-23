@@ -21,15 +21,22 @@
  "stdout_sha256": "fb81dfeac9b7da873d94e57765135418ff08dcc24a29f498566facd95e5b262a",
  "stdout_tail": "external\": {\"final_amplitude\": [0.9999999999999913, -4.554560263873204e-15], \"final_support\": 1, \"maximum_transient_support\": 2, \"sparse_residual\": 9.784431971240087e-15}, \"alternating_external\": {\"final_amplitude\": [0.9999999999999913, -4.554560263873204e-15], \"final_support\": 1, \"maximum_transient_support\": 2, \"sparse_residual\": 9.784431971240087e-15}, \"opposite_alternating_external\": {\"final_amplitude\": [0.9999999999999913, -4.554560263873204e-15], \"final_support\": 1, \"maximum_transient_support\": 2, \"sparse_residual\": 9.784431971240087e-15}, \"vacuum\": {\"final_amplitude\": [0.9999999999999913, -4.554560263873204e-15], \"final_support\": 1, \"maximum_transient_support\": 2, \"sparse_residual\": 9.784431971240087e-15}}, \"maximum_background_residual\": 9.784431971240087e-15, \"maximum_transient_support\": 2, \"semantic_output_basis\": 609356918205826616262145}}, \"route_return_failures\": 0, \"routed_gates\": 2598, \"routed_word_sha256\": \"f56d6b6630801be480e0017a72fe3adfb19c0d64657de498048fd52fe6986956\", \"touched_M2\": 76}, \"same_E_argument\": \"Extend Cycle713 E by the supplied blank packet/head/rotor/control registers. Its retained pointer coordinate is exactly the packet control coordinate. The Cycle713 routed word returns its routing permutation, and the independently executed packet routed word returns its routing permutation, so their literal concatenation implements the checked decoded composition on the extended Cycle713 code space.\"}\nCYCLE714_FIXED_PACKET_COHERENT_COMPOSITION_INCOMPLETE\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T053647Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174630Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8ea1eba1 differs from the current HEAD affd306a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'CYCLE714_FIXED_PACKET_COHERENT_COMPOSITION_INCOMPLETE' vs cache 'CYCLE714_FIXED_PACKET_COHERENT_COMPOSITION_PASS'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Shallow probe clone: the one FAIL is source_closure, and the printed provenance shows its only false input is baseline_is_ancestor (declared_path_failures 0, no duplicate, missing or untracked paths). The runner asks git merge-base --is-ancestor ebd05531036b (2026-07-26, 'fix: drain forensic audit backlog efficiently') HEAD, and the probe clone's history is grafted at 2026-09-15 (ed6c77aea6), so that commit is unreachable here. In a deeper clone of origin/main (graft 2026-05-16) the same merge-base returns ancestor.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T174630Z"
  }
 }

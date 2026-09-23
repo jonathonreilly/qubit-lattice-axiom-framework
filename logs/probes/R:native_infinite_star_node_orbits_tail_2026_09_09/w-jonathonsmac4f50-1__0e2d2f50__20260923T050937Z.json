@@ -1,0 +1,31 @@
+{
+ "task": "R:native_infinite_star_node_orbits_tail_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_infinite_star_node_orbits_tail_2026_09_09.py",
+ "seed": 40177,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e2d2f50",
+ "started_utc": "20260923T050937Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "da2fbd53dd85041998e2c10688dadc145496a375b7c01c1432a069f2cda8edf5",
+ "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"checks\": 102,\n  \"orbit_sizes\": [\n    6,\n    12,\n    12,\n    12,\n    48\n  ],\n  \"tail_upper_exact\": \"15209543410242279501055732047125086115977483872559257113157625681953889558236575560981547665248249855237372690578718266536768305127225925960717157331627965375132773900619252395911872698896653933664247057749399579850344894743211987490422582943924771638848666992640/18663286336436536727368582298074721157445841365101560458451441645599903660120416638224273307969902298074994604470995732805359489640602355945823796921340407512537848492432277479239037755747545442622485879614859707694610231241131825335785606074511721947347577956032657573\",\n  \"tail_less_than\": \"1/1000000\",\n  \"physical_runs\": 0\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050937Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

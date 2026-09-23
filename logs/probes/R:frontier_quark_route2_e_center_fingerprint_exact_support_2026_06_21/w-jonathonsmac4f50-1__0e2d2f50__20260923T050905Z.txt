@@ -1,0 +1,42 @@
+========================================================================================
+ROUTE-2 E-CENTER FINGERPRINT EXACT SUPPORT
+========================================================================================
+
+A. Authority surfaces
+------------------------------------------------------------------------
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+FAIL: QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md exists -- docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md
+PASS: QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md exists -- docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md
+PASS: authority_anchor_QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md_1 -- q_E   := gamma_E(center) / gamma_E(shell) = 1 + (beta_E / alpha_E) / 6
+PASS: authority_anchor_QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md_2 -- c_TE  := gamma_T(center) / gamma_E(center) = s_TE * q_T / q_E.
+PASS: authority_anchor_QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md_3 -- So `rho_E = 0` and `rho_E = 21/4` are both exact admissible maps
+PASS: authority_anchor_S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md_1 -- Xi_P(t ; c) = (P_R c) ⊗ V_R(t)
+PASS: authority_anchor_S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md_2 -- because the readout-map endpoint triple is not derived
+PASS: authority_anchor_S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md_1 -- P(rho_E) = [[1, 0, rho_E, 0],
+PASS: authority_anchor_S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md_2 -- Xi_a(t ; c) - Xi_b(t ; c) = ((P_a - P_b) c) ⊗ V_R(t)
+PASS: authority_anchor_QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md_1 -- P(rho_E) E-center = (1 + rho_E/6, 0).
+PASS: authority_anchor_QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md_2 -- source-domain, or readout-map primitive is supplied.
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.py", line 355, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.py", line 216, in main
+    check_anchor(
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.py", line 131, in check_anchor
+    text = read(path)
+           ^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.py", line 68, in read
+    return path.read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md'

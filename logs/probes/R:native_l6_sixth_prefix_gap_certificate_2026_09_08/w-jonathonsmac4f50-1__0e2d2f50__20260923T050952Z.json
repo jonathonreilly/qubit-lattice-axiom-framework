@@ -1,0 +1,35 @@
+{
+ "task": "R:native_l6_sixth_prefix_gap_certificate_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_l6_sixth_prefix_gap_certificate_2026_09_08.py",
+ "seed": 40192,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e2d2f50",
+ "started_utc": "20260923T050952Z",
+ "elapsed_s": 61.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6489 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d3bb06db97860e18d7ed5f8a691bd3c3e513584c840eac5d64c8d823e41cfe22",
+ "stdout_tail": "3f39d.json\": \"77f3f4c9ba4583b2e6a2990fb40e10e641b31f89779fb7d9a365c5c890e7d7ac\",\n    \"docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_CENSUS-e1706553032432f1.json\": \"770cea5aa4a859067971cbcf0cccf8319a98954bda720c909548c298bcd2cffb\",\n    \"docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-ADJACENT_COMPLETE-1cbe308dc1f7dcc7.json\": \"75c73f36aad81bab3a7521f4c59d675e43a7ffe847a575ce962f8aac55b1f986\",\n    \"docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_ROWS-3586b7f01bc15347.json\": \"db9bafde6a00a068905b05732e6a8d7a90459067846ff8121e6c36fdbdf5bb46\",\n    \"docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-TARGETS-ff56893c03dca52b.json\": \"dd9efc53c609ba11bc37dd8e7d9cf4462803f8424c1105ea9fb645180fb2e011\"\n  },\n  \"source_sha256\": \"8ba9e03b608893ababc6c56342ac8233bddcdbe684970a97a443eddf57c79f30\",\n  \"seconds\": 61.517502333037555,\n  \"rss_bytes\": 79151104,\n  \"scope\": \"six declared supports only; no coefficient, all-flux or bulk claim\"\n}\nTOTAL: PASS=6489 FAIL=0\nper_element: exact prefix geometry covers only the six declared finite L6 supports.\nper_mode: every declared proper mask has its fixed-parity rational denominator bound checked.\nper_site: saved finite-support coverage is checked; no boundary ensemble is sampled.\nper_block: no half-slab field or stochastic slab evolution is executed by this certificate.\nlattice_wide: all6489 declared proper masks replay; no all-flux or all-volume enumeration.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051054Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_l6_sixth_prefix_gap_certificate_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

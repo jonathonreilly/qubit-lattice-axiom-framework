@@ -1,0 +1,35 @@
+{
+ "task": "R:native_infinite_star_node_reduction_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_infinite_star_node_reduction_2026_09_09.py",
+ "seed": 40177,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e2d2f50",
+ "started_utc": "20260923T050937Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=223 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7d8d03d5f6fc4d663bc5c03cec1d54cfde695d646958322271e26b52436bd092",
+ "stdout_tail": "C_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md\": \"787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada\",\n    \"scripts/native_infinite_star_node_algebra_2026_09_09.py\": \"63f11991b60429a96a95b6ce5c6985524eaea9d9d00ccf36a720a150069c838a\",\n    \"scripts/native_infinite_star_node_shift_2026_09_09.py\": \"6972966ace6074ee98f83457fb32924a181ace7945c3e7a265e94f21b57fc0d4\",\n    \"scripts/native_infinite_star_node_gap_2026_09_09.py\": \"e8408214f5d8d113f0f890058693c480832657a1746b42c97f949654ae88af87\",\n    \"scripts/native_infinite_star_node_orbits_tail_2026_09_09.py\": \"815f6af7e3c8c0a32a851ed106795ab4d15df52235a5dd6c584d7fe6c7361469\"\n  },\n  \"source_sha256\": \"c882d07f74f54db9779a3ea189285e4cd8ee9ca75013814e5f747071e76fed2c\",\n  \"elapsed_seconds\": 0.19004829198820516,\n  \"peak_rss_bytes\": 24559616,\n  \"physical_runs\": 0,\n  \"actual_current_surface_status\": \"conditional-support\",\n  \"alpha_evaluated\": false\n}\nTOTAL: PASS=223 FAIL=0\nper_element: finite integer Clifford and rational shifted-resolvent predicates are executed on declared fixtures.\nper_site: exact ordered-pair symmetry orbits are enumerated; infinite node extraction remains analytical.\nper_mode: exact return and logarithmic inequalities are checked; no native node scalar is evaluated.\nper_block: finite rational gap and imaginary-time tail certificates execute, without pointwise kernel quadrature.\nlattice_wide: infinite impurity gap and Gaussian GNS limits are analytical; no finite-size threshold or interacting phase is computed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050938Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_infinite_star_node_reduction_2026_09_09.txt against the .txt beside this log"
+  ]
+ }
+}

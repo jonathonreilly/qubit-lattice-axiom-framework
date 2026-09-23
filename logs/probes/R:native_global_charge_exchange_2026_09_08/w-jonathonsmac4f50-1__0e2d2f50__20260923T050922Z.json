@@ -1,0 +1,31 @@
+{
+ "task": "R:native_global_charge_exchange_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_global_charge_exchange_2026_09_08.py",
+ "seed": 40162,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e2d2f50",
+ "started_utc": "20260923T050922Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f5c72dc7eb34cbf4977a36b7406bdfd1dd4cf89ca28c8f338c41e4c57fb7c90b",
+ "stdout_tail": "       {\n          \"bits\": \"000000000000110101001010010010001101010010110100110011100110110011011101100110001011000010100100110011110110100011011001100111001011011011101101100110011000111111011101110011101110011100110001\",\n          \"charges\": [\n            0,\n            -1,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            -1,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            1,\n            0,\n            0,\n            0,\n            0,\n            0,\n            1,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0\n          ],\n          \"phase_mod4\": 3\n        }\n      ],\n      \"routeA_phase\": 3,\n      \"routeB_phase\": 1,\n      \"closed_loop_phase\": 2\n    }\n  ],\n  \"seconds\": 0.004380665952339768,\n  \"peak_MiB\": 21.125,\n  \"source_sha256\": \"17f6e958ea3813f0159b0ac5ddabf96bacf92af291ec6afdf4565a233c3cbfd0\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050923Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

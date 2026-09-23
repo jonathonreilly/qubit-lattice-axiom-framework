@@ -1,0 +1,35 @@
+{
+ "task": "R:native_halfline_clock_completion_finite_horizons_and_permanence_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_halfline_clock_completion_finite_horizons_and_permanence_2026_09_14.py",
+ "seed": 40171,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e2d2f50",
+ "started_utc": "20260923T050931Z",
+ "elapsed_s": 4.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3045ddf8eef9eff8ec2c9b3e99180f143bd8be854d8717d2d79b550defe21f9b",
+ "stdout_tail": "lumns\nHALFLINE sine/Bessel/finite-spectrum max_vector_residual= 2.0797361757909208e-14 L9_parity_sums= [120, 165]\nPASS halfline_integrals_and_tail\nPOSITIVE full_bond_dimension=1024 actual_gate_bonds=9 polynomial_residual= 0.0\nPASS positive_full_bonds\nJOINT direct_sparse_dimension= 10240 columns=8 max_entry_residual= 4.4214167185930334e-14\nPASS direct_native_joint\nHORIZON epsilon=.01 J=1 T0= 71.76593731461308 T=100 M= 243 certified_error= 0.009419871816199923 finite_rows= [[18, 4.0, 4.978678500687029e-06, 0.00024059645221277164], [30, 8.0, 6.378764090330693e-07, 3.935364569352147e-05], [48, 16.0, 2.5660896919641296e-06, 0.0001932083573636122], [70, 25.0, 6.461408835525255e-07, 5.714820946538506e-05]]\nPASS finite_horizon_and_recurrence\nABSORBING Erlang/master_equation matched; coherent_vs_dephased_difference= 0.8092062869348053\nPASS absorbing_clock_and_instrument\nTOTAL: PASS=6 FAIL=0\nper_element: all native gate phases, capped battery branches and Gaussian-dyadic commutators are checked.\nper_site: full two-clock-qubit positive bonds include unused number sectors and the actual native carrier.\nper_mode: sine integrals, Bessel amplitudes, finite path spectra and asymptotic parity coefficients agree.\nper_block: direct 10240-dimensional joint evolution checks all eight ready columns and arbitrary-input gauge identities.\nlattice_wide: checked and not executed \u2014 half-line and interval-permanence theorems use the written proof; no native infinite-lattice formation law is established.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050936Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

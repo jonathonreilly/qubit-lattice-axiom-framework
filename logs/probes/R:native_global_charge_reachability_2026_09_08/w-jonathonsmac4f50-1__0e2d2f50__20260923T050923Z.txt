@@ -1,0 +1,39 @@
+{
+  "checks": 328177,
+  "rows": [
+    {
+      "shape": [
+        4,
+        4,
+        4
+      ],
+      "states": 43,
+      "directed_paths": 5418,
+      "max_path_length": 7
+    },
+    {
+      "shape": [
+        4,
+        4,
+        6
+      ],
+      "states": 43,
+      "directed_paths": 8170,
+      "max_path_length": 7
+    },
+    {
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "states": 46,
+      "directed_paths": 19780,
+      "max_path_length": 9
+    }
+  ],
+  "two_dimensional_min_cut": 4,
+  "seconds": 2.869099124975037,
+  "peak_MiB": 21.921875,
+  "source_sha256": "8976643f273954a2676e13dfc7f88f69b791c71f26067a5bb04e99c2d1beefbf"
+}

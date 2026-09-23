@@ -1,0 +1,35 @@
+{
+ "task": "R:native_growing_formation_current_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_growing_formation_current_2026_09_13.py",
+ "seed": 40169,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e2d2f50",
+ "started_utc": "20260923T050929Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=472 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "296a187aa190ba5c6dac98a4a369bbeae75d87bc0d60246180b78c42f9d19c50",
+ "stdout_tail": "/16\"\n        },\n        {\n          \"name\": \"lower_front_exponent_1.0\"\n        },\n        {\n          \"name\": \"upper_front_base_1.0\"\n        },\n        {\n          \"name\": \"lower_front_exponent_10.0\"\n        },\n        {\n          \"name\": \"upper_front_base_10.0\"\n        },\n        {\n          \"name\": \"lower_front_exponent_100.0\"\n        },\n        {\n          \"name\": \"upper_front_base_100.0\"\n        },\n        {\n          \"name\": \"lower_front_exponent_1000.0\"\n        },\n        {\n          \"name\": \"upper_front_base_1000.0\"\n        }\n      ],\n      \"seconds\": 0.044005416973959655,\n      \"source_sha256\": \"9d2ee775d9699341436e49b34cbd653f05d197afd81a5042906f371b2eff7143\",\n      \"note_sha256\": \"01d0ffb651b44c06785d11bc73b7abb77eb57cc69bee741ea885a4ae3f557145\",\n      \"scope\": \"same-author exact finite role/probability checks; front bounds are analytical\"\n    }\n  },\n  \"seconds\": 0.620216834009625\n}\nper_element: Native Pauli bit actions and the actual Born projectors check the local instrument.\nper_site: Literal lattice roles and nearest-neighbor program conditions are checked on the prepared domain.\nper_mode: All finite periodic comparator modes and their physical-position current operators are checked.\nper_block: Finite histories, parity preparation, boundary evolution and fresh collision storage are checked.\nlattice_wide: checked and not executed \u2014 nonexplosion and front/current windows use the analytical proofs; no infinite physical cycle code is assumed.\nTOTAL: PASS=472 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050931Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_growing_formation_current_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

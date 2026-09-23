@@ -1,0 +1,31 @@
+{
+ "task": "R:native_global_charge_reachability_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_global_charge_reachability_2026_09_08.py",
+ "seed": 40163,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e2d2f50",
+ "started_utc": "20260923T050923Z",
+ "elapsed_s": 2.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1239335d7ed102cc28ea9920bd64c3c08a6795696420f76cc5611ca017e0fff7",
+ "stdout_tail": "{\n  \"checks\": 328177,\n  \"rows\": [\n    {\n      \"shape\": [\n        4,\n        4,\n        4\n      ],\n      \"states\": 43,\n      \"directed_paths\": 5418,\n      \"max_path_length\": 7\n    },\n    {\n      \"shape\": [\n        4,\n        4,\n        6\n      ],\n      \"states\": 43,\n      \"directed_paths\": 8170,\n      \"max_path_length\": 7\n    },\n    {\n      \"shape\": [\n        6,\n        6,\n        6\n      ],\n      \"states\": 46,\n      \"directed_paths\": 19780,\n      \"max_path_length\": 9\n    }\n  ],\n  \"two_dimensional_min_cut\": 4,\n  \"seconds\": 2.869099124975037,\n  \"peak_MiB\": 21.921875,\n  \"source_sha256\": \"8976643f273954a2676e13dfc7f88f69b791c71f26067a5bb04e99c2d1beefbf\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T050926Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

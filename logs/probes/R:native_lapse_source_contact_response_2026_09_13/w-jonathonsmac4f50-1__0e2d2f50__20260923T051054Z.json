@@ -1,0 +1,35 @@
+{
+ "task": "R:native_lapse_source_contact_response_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_lapse_source_contact_response_2026_09_13.py",
+ "seed": 40254,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e2d2f50",
+ "started_utc": "20260923T051054Z",
+ "elapsed_s": 2.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=218 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1c0a26b2072012062aa0475434380f25ff0426e12ead2aee0109583c00a2b84d",
+ "stdout_tail": "vot_16\nPASS certificate: strict_positive_rational_pivot_17\nPASS certificate: strict_positive_rational_pivot_18\nPASS certificate: strict_positive_rational_pivot_19\nPASS certificate: exact_LDL_reconstruction\nPASS certificate: trial_sign_-1\nPASS certificate: positive_mean_one_lapse_-1\nPASS certificate: nonzero_trial_-1\nPASS certificate: real_rational_rayleigh_parts_-1\nPASS certificate: exact_sqrt_bracket_-1\nPASS certificate: trial_sign_1\nPASS certificate: positive_mean_one_lapse_1\nPASS certificate: nonzero_trial_1\nPASS certificate: real_rational_rayleigh_parts_1\nPASS certificate: exact_sqrt_bracket_1\nPASS certificate: both_opposite_trials\nPASS certificate: strict_midpoint_convexity_violation\nper_element: Exact band vertices, mean derivatives, contact signs and rational Rayleigh inequalities are exercised.\nper_site: Actual position-space energy cells, literal Fock CAR signs and physical edge Pauli commutators are checked.\nper_mode: All 27 reciprocal modes of the declared three-cubed free torus are compared with its position Hessian.\nper_block: Finite interacting sectors and an exact three-particle midpoint witness are checked, with the sector fixed explicitly.\nlattice_wide: The integral limit, quartic-log remainder and convexity proofs are analytical in the note; infinity is not enumerated.\nScientific input reads: no external data files; frozen trial vectors are in this source. Integrity read: this source for its hash; the cache also binds the paired note.\nTOTAL: PASS=218 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051056Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

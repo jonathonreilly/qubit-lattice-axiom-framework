@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "certificate_groups": 6489,
+  "geometry": {
+    "status": "PASS",
+    "masks": 6489,
+    "keys": 7148,
+    "overlap": 31,
+    "singletons": 7,
+    "scope": "complete declared-support geometry and source ledger"
+  },
+  "minimum": "11391316772010430774722998053916333310961066067/33026152674622787925000000000000000000000000000",
+  "common_floor": "1/3",
+  "native_units": "|t|=1; scale gap by |t|, h=2|t|",
+  "input_sha256": {
+    "docs/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md": "ace955515db1402f967402fffb21d106e0b1cb8ee10543431278c566fc64aa67",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py": "9bd8f3b0269aa4fc4dc9772ddb28456d4bb2fe6fc8fd0949db5990a93b537786",
+    "scripts/native_l6_sixth_prefix_gap_geometry_2026_09_08.py": "922062f0d3261f69c0ed43d926c24351ce2019b972cad05411470785e6beeb33",
+    "docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-ADJACENT_CENSUS-678691e77473f39d.json": "77f3f4c9ba4583b2e6a2990fb40e10e641b31f89779fb7d9a365c5c890e7d7ac",
+    "docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_CENSUS-e1706553032432f1.json": "770cea5aa4a859067971cbcf0cccf8319a98954bda720c909548c298bcd2cffb",
+    "docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-ADJACENT_COMPLETE-1cbe308dc1f7dcc7.json": "75c73f36aad81bab3a7521f4c59d675e43a7ffe847a575ce962f8aac55b1f986",
+    "docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_ROWS-3586b7f01bc15347.json": "db9bafde6a00a068905b05732e6a8d7a90459067846ff8121e6c36fdbdf5bb46",
+    "docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-TARGETS-ff56893c03dca52b.json": "dd9efc53c609ba11bc37dd8e7d9cf4462803f8424c1105ea9fb645180fb2e011"
+  },
+  "source_sha256": "8ba9e03b608893ababc6c56342ac8233bddcdbe684970a97a443eddf57c79f30",
+  "seconds": 61.517502333037555,
+  "rss_bytes": 79151104,
+  "scope": "six declared supports only; no coefficient, all-flux or bulk claim"
+}
+TOTAL: PASS=6489 FAIL=0
+per_element: exact prefix geometry covers only the six declared finite L6 supports.
+per_mode: every declared proper mask has its fixed-parity rational denominator bound checked.
+per_site: saved finite-support coverage is checked; no boundary ensemble is sampled.
+per_block: no half-slab field or stochastic slab evolution is executed by this certificate.
+lattice_wide: all6489 declared proper masks replay; no all-flux or all-volume enumeration.

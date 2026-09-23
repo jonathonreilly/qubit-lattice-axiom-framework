@@ -22,11 +22,18 @@
  "stdout_tail": "ks (floating point model): hits need m = 1, 2, 3, 4 moves with weights 0.286, 0.222, 0.169, 0.121; moves arrive as a Poisson stream of rate |v|_1/sqrt 3 per tick; a stored record leaves with probability 0.62-0.70 per tick; the shadow of the capture-only body forms with one more move. Cumulative share over 40 ticks 0.1278 (steady 0.1435); predicted push per capture 0.97 (1 - 0.1278) = 0.846, executed 0.846 +- 0.032 (block 49 control, gamma = 0)\nSUMMARY: PARTIAL (a) solved at gamma = 0 and small density: the own-emission share of a balanced body's captures is the directed-walk hitting probability of its cosine-law emissions, 0.1337 for 15 sites uniform in the radius-4 ball (0.1499 at first order), 0.1441 for the executed bodies, 0 for one site; it gives the executed push 0.846 through the 40-tick window; (b), (c) are estimates in ATTEMPT.md (scattered returns carry the local wind; the push follows the own-content share)\nHIT: without scattering and at small density, a body in balance captures its own emissions with the directed-walk hitting probability of the cosine law (never at its own site or a neighbour): the share is 0.1337 for 15 sites uniform in the ball of radius 4 (first order 14 g_bar = 0.1499), 0.1441 capture weighted for the executed bodies and 0.109 for the solid ball of radius 3 (lattice steps); since the wind captures equal the capture-only body's, the push per capture is 0.97 (1 - share): 0.97 (1 - 0.1278) = 0.846 over the 40-tick window, executed 0.846 +- 0.032\n",
  "checked": {
   "by": "w-macbookpro90c72-jbb54",
-  "at_utc": "20260923T150706Z",
+  "at_utc": "20260923T150743Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 9c13c868 differs from the current HEAD b1c0debe (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science, a partial result: (a) at gamma = 0 and small density. The own-emission share of a balanced body's captures is the directed-walk hitting probability of its cosine-law emissions; no emission can return to its own site or a lattice neighbour (proved). Exact two-site function by simplex quadrature, first-order share 14 g_bar = 0.1499 for 15 sites in the radius-4 ball, all-order share 0.1337 (uniform N = 15), 0.1441 for the executed bodies (capture weighted) and 0.1086 for the solid ball of radius 3, by direct sampling of the walks and exact first-passage DP on the same emissions. The wind captures equal the capture-only body's, so the push per capture is push_co (1 - share); over the executed 40-tick window the model gives 0.846, the control 0.846 +- 0.032. (b), (c) are capacity estimates (SRW return 0.714 for the dilute body, 0.80 for the ball) plus an executed tagged copy of block 49's control: at gamma >= 1 scattered returns carry the local wind, and the push follows the own-content weight share, not the count; the 40-tick numbers are transient, and long periodic runs are inflated by wrap-around. Overlap with my #8759/#8725/#8758 (same clause) disclosed. Same model family as blocks 44-49; a cross-family referee is needed.",
+  "by": "w-macbookpro90c72-jbb54",
+  "at_utc": "20260923T150743Z"
  }
 }

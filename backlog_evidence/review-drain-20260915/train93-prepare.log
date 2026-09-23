@@ -1,0 +1,73 @@
+[detached HEAD 6ef5390c2c] Preserve independently reviewed source unit PR8177
+ Date: Wed Sep 23 02:28:52 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 57 files changed, 2006 insertions(+)
+ create mode 100644 docs/ROOTED_MARKED_TREE_EXTENSION_SEED_INDUCTION_AND_RELAXED_LIFTED_TREE_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md
+ create mode 100644 docs/work_history/review_loop/pr8177/README.md
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-01-APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-02-CHECKER_block33_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-03-CLAIM_STATUS_CERTIFICATE_block33.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-04-GOAL_block33.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-05-HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-06-NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-07-OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-08-RESULTS_block33.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-09-REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-10-STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-11-TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-12-supervisor_control_block33_certify33.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-13-supervisor_control_block33_certify33.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-14-supervisor_control_block33_core30.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-15-supervisor_control_block33_diag.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-16-supervisor_control_block33_diag.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-17-supervisor_control_block33_doublechild.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-18-supervisor_control_block33_doublechild2.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-19-supervisor_control_block33_doublekind.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-20-supervisor_control_block33_kind_certs.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-21-supervisor_control_block33_kind_certs.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-22-supervisor_control_block33_lemmas.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-23-supervisor_control_block33_lemmas.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-24-supervisor_control_block33_mintree.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-25-supervisor_control_block33_overlap.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-26-supervisor_control_block33_overlap.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-27-supervisor_control_block33_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-28-supervisor_control_block33_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-29-supervisor_control_block33_restricted_count.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-30-supervisor_control_block33_restricted_count.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-31-supervisor_control_block33_rooted.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-32-supervisor_control_block33_rooted.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-33-supervisor_control_block33_shape.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-34-supervisor_control_block33_shape.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-35-supervisor_control_block33_shape2.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-36-supervisor_control_block33_shape2.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-37-supervisor_control_block33_structural.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-38-supervisor_control_block33_structural.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-39-supervisor_control_block33_tight.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-40-supervisor_control_block33_tight.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-41-supervisor_control_block33_tightpairs.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-42-supervisor_control_block33_tightpairs.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-43-supervisor_control_block33_violate.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-44-supervisor_control_block33_violate.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-45-supervisor_control_block33_vprofile.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-46-supervisor_control_block33_vprofile.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-47-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-48-citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-49-admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/originals/pr8177-50-admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/pr8177-deferred-science-and-history.txt
+ create mode 100644 docs/work_history/review_loop/pr8177/pr8177-original-delta.patch.gz
+ create mode 100644 docs/work_history/review_loop/pr8177/pr8177-original-manifest.json
+ create mode 100644 logs/runner-cache/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.txt
+ create mode 100644 scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py
+FROZEN 6ef5390c2c7dde4eab411bc98d7c9d4b151d2a35 sources 57 inputs 85 notes 1

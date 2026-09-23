@@ -1,0 +1,9 @@
+{
+  "baseRefName": "codex/finite-pw-energy-block42-20260907",
+  "headRefName": "codex/finite-pw-confinement-block43-20260907",
+  "headRefOid": "d041b83a507226feae9713662767dd34d2ffb4a8",
+  "isDraft": true,
+  "number": 8033,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8033"
+}

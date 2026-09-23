@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.py
+runner_sha256: 7c361c7bee5dee8be34eeceea7e7e6f30b1b5209918984aa380b3b55f3a895f8
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 186.42
+status: ok
+----- stdout -----
+A. a global octant gives exactly the aligned spirals
+[PASS] each of the 8 global octants gives exactly the 12 spirals aligned with it; the 4 opposite pairs give 48 records :: the fixed octant of open PR 8743 is the octant (+, +, +)
+B. one orientation per lattice line is not enough
+[PASS] over all 4096 orientation fields of the 12 lines through the core, the records number 11136, only 48 of them spirals :: 1300 fields admit records; the largest count on one field is 108, on a field that is not a global octant (lines flipped against (+, +, +): 5 of 12)
+C. sites, lines and a global octant are nested
+[PASS] every line-field record is a per-site-octant record, and every global-octant record is a line-field record :: per-site octants: 15024 records (open PR 8743); line fields: 11136; global octants: 48
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

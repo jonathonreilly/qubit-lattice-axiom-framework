@@ -1,6 +1,6 @@
 {
- "edge_count": 13897,
- "node_count": 6351,
+ "edge_count": 13901,
+ "node_count": 6361,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2938,6 +2938,10 @@
    "deps_hash": "aa5ce5e499a9",
    "out_degree": 2
   },
+  "compact_rotor_cover_source_identities_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5c5744845f3f",
+   "out_degree": 1
+  },
   "compact_rotor_ground_correlation_comparison_bounded_theorem_note_2026-09-16": {
    "deps_hash": "2fcf27dbac88",
    "out_degree": 1
@@ -2948,6 +2952,10 @@
   },
   "compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16": {
    "deps_hash": "5b20d62d46aa",
+   "out_degree": 1
+  },
+  "compact_rotor_sine_score_static_curl_limit_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5c5744845f3f",
    "out_degree": 1
   },
   "compact_rotor_spatial_ground_path_limit_bounded_theorem_note_2026-09-16": {
@@ -6649,6 +6657,10 @@
   "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07": {
    "deps_hash": "3082e5eb18d6",
    "out_degree": 3
+  },
+  "gauge_wilson_pw_compression_shell_and_energy_path_bounds_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "399ee213d817",
+   "out_degree": 2
   },
   "gauge_wilson_selected_infinite_static_source_sector_bounded_theorem_note_2026-09-07": {
    "deps_hash": "3013f159bb7a",
@@ -24570,6 +24582,30 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-compact_sine_score_domination_and_static_curl_limit-6b845da826f6bcc6": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-exact_compact_cover_and_source_identities-3443f691b71f300d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-no_go_discipline_checklist-af3647a217d8dd77": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-sparse_loops_with_nongaussian_filling_fluctuations-e810456f880739f8": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -24699,6 +24735,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8030.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8031.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

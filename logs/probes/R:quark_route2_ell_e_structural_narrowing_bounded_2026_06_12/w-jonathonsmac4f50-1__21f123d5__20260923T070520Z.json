@@ -1,0 +1,36 @@
+{
+ "task": "R:quark_route2_ell_e_structural_narrowing_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "quark",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/quark_route2_ell_e_structural_narrowing_bounded_2026_06_12.py",
+ "seed": 47120,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "21f123d5",
+ "started_utc": "20260923T070520Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=35, FAIL=12",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ed413d7c7d430b2498319783fb3669b9bdce07d6cf526edf2d1577a3be3f2e99",
+ "stdout_tail": "itive E-family sample rho_E=1 still has negative sign\nPASS: wrong T orientation flips the sign for positive q_E\nPASS: violating E-center positivity flips the sign despite correct T orientation\nPASS: sign-only does not pin the magnitude\n      rho=0 gives c_TE=-5/3\nPASS: c_TE=-8/9 pins q_E=15/8 exactly\nPASS: c_TE=-8/9 pins rho_E=21/4 exactly\n\nNote hygiene\nFAIL: note file exists\nFAIL: note has status-authority block\nFAIL: note uses canonical bounded_theorem claim type\nFAIL: note links authority [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md]\nFAIL: note links authority [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md]\nFAIL: note links authority [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md]\nFAIL: note links authority [RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md]\nFAIL: note links authority [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md]\nFAIL: note links authority [QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md]\nPASS: note avoids branch-local scratch references\nPASS: note avoids sole-route phrasing\nPASS: note avoids terminal-route phrasing\nPASS: note avoids depletion phrasing\nPASS: note avoids program-closure phrasing\nPASS: note avoids audit-clean status token\nPASS: note avoids retention-status prefix\nFAIL: note records narrowed positive projective family\nFAIL: note records sign separation\nFAIL: note records exact target arithmetic\nTOTAL: PASS=35, FAIL=12\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070520Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=35, FAIL=12' vs cache 'TOTAL: PASS=47, FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py",
+ "seed": 47246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "21f123d5",
+ "started_utc": "20260923T070726Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=39 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "995b3705a75bd298b9c9994cf92b953dba65ca8ead3cb98a89d8d15af4e2f298",
+ "stdout_tail": "space -- family size=16, real rank=16\n[PASS] D2 rejector: diagonal projections have deficient real span -- real rank=4 < 16\n[PASS] D3 density matrix is exactly positive with unit trace -- eigenvalues=[1/10, 1/5, 3/10, 2/5]\n[PASS] D3 projectors form an exact orthogonal resolution of identity\n[PASS] D3 trace weights are nonnegative and normalized -- weights=[1/10, 1/5, 3/10, 2/5]\n[PASS] D3 trace form is exactly additive on every tested orthogonal pair\nGROUP E -- note content and link gates\n[PASS] E1 live memo basename is present\n[PASS] E1 obsolete memo link targets are absent\n[PASS] E2 the bridge selection is explicitly named\n[PASS] E2 the commuting joint presentation is explicitly supplied rather than axiom-derived\n[PASS] E2 source note disclaims audit-outcome authority\n[PASS] E2 declared-premise tag (J1) is present\n[PASS] E2 declared-premise tag (J2) is present\n[PASS] E2 declared bounded-premise packet header is present\n[PASS] E2 dated 2026-07-10 Repair Note is present\n[PASS] E2 declared bounded-premise status phrase is present\n[PASS] E2 economy does not derive m = 1\n[PASS] E3 forbidden overclaims are absent\n[PASS] E3 markdown link inventory is exactly the three authorized targets -- targets=['../scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py', '../logs/runner-cache/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.txt', 'MINIMAL_AXIOMS_2026-06-29.md']\nVERDICT: one or more exact bridge checks failed.\nTOTAL: PASS=39 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070727Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=39 FAIL=1' vs cache 'TOTAL: PASS=40 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:quark_route2_endpoint_t_balance_fd_provenance_step_stability_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "quark",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/quark_route2_endpoint_t_balance_fd_provenance_step_stability_2026_06_11.py",
+ "seed": 47120,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "21f123d5",
+ "started_utc": "20260923T070520Z",
+ "elapsed_s": 81.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=3, FAIL=4",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "67ede8ca07e01e48f7d9ff86132222ec260327b7be50947db5587566299a58db",
+ "stdout_tail": "uced at module step EPS=0.005\n    recomputed 1.000030814262; |diff| = 3.63e-13\n\nPart 2: step-stability of the t_balance near-miss (stable window)\n------------------------------------------------------------------------\n  eps        |b_E/b_T|        |a_T/a_E|        |b_T/a_T|\n  2.0e-03  2.621602450768  2.005382281450  1.000031700607\n  1.0e-03  2.621606709331  2.005382479266  1.000031003847\n  5.0e-04  2.621594165461  2.005384143552  1.000030750230\n  2.0e-04  2.621554798310  2.005399375554  1.000041398410\nFAIL: t_balance stays inside the narrow band over the stable window\n    band [1.0000259, 1.0000319]; observed [1.000030750, 1.000041398]\n  Richardson extrapolants (leading O(eps^2) cancellation model):\n    from eps=2e-03: t_balance -> 1.000030771593\n    from eps=1e-03: t_balance -> 1.000030665691\nPASS: Richardson extrapolants stay inside the same band\n    extrapolants ['1.000030772', '1.000030666']\nFAIL: the band excludes t_balance = 1 by more than six times the observed spread\n    min(t_balance) - 1 = 3.08e-05; window spread = 1.06e-05\n\nPart 3: small-step noise floor (bounds the honest FD precision)\n------------------------------------------------------------------------\n  eps=1.0e-04: t_balance = 0.999941294367\n  eps=5.0e-05: t_balance = 0.999936827140\nPASS: below eps ~ 1e-4 the chain leaves the stable band (internal noise floor)\n    max |drift from 1.0000308| = 9.40e-05; the exact slope needs the symbolic (Hellmann-Feynman) route, not smaller FD steps\n\nTOTAL: PASS=3, FAIL=4\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070642Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=3, FAIL=4' vs cache 'TOTAL: PASS=7, FAIL=0'"
+  ]
+ }
+}

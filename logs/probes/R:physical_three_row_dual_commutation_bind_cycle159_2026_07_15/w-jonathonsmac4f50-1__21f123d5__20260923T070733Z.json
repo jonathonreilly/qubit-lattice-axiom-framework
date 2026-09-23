@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_three_row_dual_commutation_bind_cycle159_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_three_row_dual_commutation_bind_cycle159_2026_07_15.py",
+ "seed": 47253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "21f123d5",
+ "started_utc": "20260923T070733Z",
+ "elapsed_s": 726.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a174f151500e858c8367640f1fe510a28ee1a2cd2ad1663a4f9c4473840be439",
+ "stdout_tail": "resses all derived bits :: []\n\nPREDECESSOR COEXISTENCE\nPASS all 768 one-port row fanout graphs survive the two-port rows :: []\nPASS all 48 supplied-bit fork graphs survive the two-port rows :: []\nPASS all 1,024 Cycle-156 row-pair schedule proofs survive :: (Counter({5006: 1024}), [])\nPASS all 54,000 Cycle-152 router graphs survive the two-port rows :: []\nPASS the enlarged law preserves all 86,640 prior unified histories :: []\nPASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: physical two-port row four-fork :: \nFAIL note contains: four recorded parents :: \nFAIL note contains: 89,516 :: \nFAIL note contains: no no-go is shipped :: \nFAIL note contains: compiler content :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 14 FAIL 9\nRESULT FAIL\nFAIL the complete Cycle-158 predecessor suite remains green :: 1\n\nSCOPE\nFAIL note contains: one measured row to two physical commutation records :: \nFAIL note contains: no transition row is added :: \nFAIL note contains: 32,768 :: \nFAIL note contains: 37,676 :: \nFAIL note contains: supplied guide/frame harness :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 15 FAIL 10\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T071940Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

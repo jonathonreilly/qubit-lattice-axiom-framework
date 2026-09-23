@@ -1,0 +1,21 @@
+ok anchor: full cube Z0/6^8 = 1.0149 at (3,1,2), 4330.1 at (100,1,1) (block 81 T2: 1.015, 4330)
+ok A1: 2x2x3 window: all 512 of the 2^20 bond sets with even degrees have an even bond count
+ok A2: cube, all 4096 bond sets S: sign sum = 2^8 sum over the 32 even edge sets (all of even size) inside S, and >= its l1 = 0 value, at (al,be) = (5,3), (3,-1)
+ok A3: full cube: sum over axes of r^(orthogonal bonds) x sign sum = the content sum W, exactly, at (1,2,5) and (3,1,4)
+ok B: three-axis average = sum_F N3(F) l2^|F| (N3 >= 0, N3(cycle) = 2) exactly on cube, domino, hexagon at 13 points; the cube has 118 bond sets carrying flows
+ok C1: three-axis average = sum_F (1-th)^(|E|-|F|) th^|F| Psi(F), Psi = (3/2)^|F| hom(F,K3)/3^n, th = -2 l2, exactly on cube and domino at 13 points
+ok C2: cube, all 4096 bond sets: hom(F,K3) >= 3^8 (2/3)^|F| (equality iff F is a forest); 40960 opposite-class pairs: #(a_u=a_v=0) <= #(a_u=0,a_v=1), strictly iff joined (16500)
+ok C3: Kempe map (swap 0,1 on v's two-colour chain), the cube and 3x3 window less one bond and 300 random cube bond sets: 23732 colourings with a_u = a_v = 0 go injectively to a_u = 0, a_v = 1; u is never in v's chain
+ok C4: hom(H,K3) >= 3^n (2/3)^e exactly for 4176 bond sets H: every one of the 3x3 window, 40 random each in 2x3x3 and 3x3x3
+triples (1,2,5): l1=-0.043 l2=-0.304, (3,1,4): l1=+0.100 l2=-0.200, (1,5,1): l1=-0.400 l2=+0.400, (1,1,100): l1=+0.000 l2=-0.493
+ok D1: every arrangement: Z0 >= 6^n, equality iff acyclic (counts 188, 56, 415, 2466 as block 81); Z0(p,q,r) = Z0(q,p,r) and Z0 >= its l1 = 0 value (windows <= 9 sites). 2x2x2: 255 arr, 188 acyclic, min excess 1.6e-03/1.3e-04/2.0e-02/2.9e-02; 2x3x1: 63 arr, 56 acyclic, min excess 1.7e-02/3.5e-03/1.3e-01/1.2e-01; 3x3x1: 511 arr, 415 acyclic, min excess 1.5e-04/5.2e-06/3.3e-03/6.9e-03; 2x2x3: 4095 arr, 2466 acyclic, min excess 1.5e-04/5.2e-06
+ok D2: 2x2x3, all 4095 arrangements at (1,2,5): Z0/6^n = product over leafless-core components (up to the 48 lattice symmetries: 34 classes) exactly
+ok D3: 2x3x3, all 262143 arrangements (149575 with a cycle) via their 675 core classes: every class weighs strictly more than free at all four triples; min excess 1.3e-06/8.2e-09/8.4e-05/4.1e-04
+ok E1: 3x3x3 at l1 = 0, l2 = -1/3 and -99/201 (triples (1,1,4), (1,1,100)): 128 exact evaluations (full window, 27 one-vacancy, 36 random): Z0 >= 6^n, equality iff acyclic; min excess 5.1e-02
+ok E2: control (float64, positive terms): full 3x3x3 at (1,2,5), Z0/6^27 = 2.324233
+ok F1: cube, every bond set and every added bond: factor >= 1, = 1 iff the ends were disjoint; (1,5,1) l1=-0.400 l2=+0.400 min excess 3.3e-03; (1,1,4) l1=+0.000 l2=-0.333 min excess 3.0e-04; (5,1,4) l1=+0.182 l2=-0.091 min excess 3.6e-06; (100,1,51) l1=+0.325 l2=-0.003 min excess 3.7e-04
+ok F2: (100,1,51), cube less one bond: t1 = 0.08671, t2 = 3.554e-03 > 0 with l2 = -1/305, factor 1.08441 = 1 + 3 t1 l1 + 2 t2 l2 exactly; the two terms have opposite signs
+ok G: three-site ring at (1,3,2): Z0/6^3 = 71/72 < 1; bipartiteness is used
+runtime 18 s
+SUMMARY: PROVED (a): at the neutral scale every finite arrangement of Z^3 (every finite bipartite graph) has Z0 >= 6^|eta| at every triple, equality iff it has no cycle or p = q = r; lemmas checked exactly above; every arrangement of 2x2x2, 2x3, 3x3, 2x2x3, 2x3x3 exact at triples with l1 < 0 or l2 < 0. T1's bond-factor sign: proved for l2 >= 0 and for l1 = 0; checked on the cube for l2 < 0 < l1, open there.
+HIT: at the neutral scale every finite arrangement of Z^3 weighs at least its records placed apart, Z0(eta) >= 6^|eta|, at every triple, with equality exactly for arrangements without a cycle (unless p = q = r). Split each content into axis and sign: on the bipartite lattice every bond set with even degrees has an even number of bonds, so the sign sum only adds and leaves the three-axis sum at l2. For l2 >= 0 that sum is 1 + sum_F N3(F) l2^|F| over Z3 flows; for l2 < 0 the bond weight is (1-th) + th (3/2)[a != a'], th = -2 l2, and every bipartite H has hom(H,K3) >= 3^n (2/3)^e (Kempe chains).

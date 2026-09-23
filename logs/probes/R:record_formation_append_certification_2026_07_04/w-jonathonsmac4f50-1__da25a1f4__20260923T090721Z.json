@@ -1,0 +1,32 @@
+{
+ "task": "R:record_formation_append_certification_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/record_formation_append_certification_2026_07_04.py",
+ "seed": 54441,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "da25a1f4",
+ "started_utc": "20260923T090721Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e6e1ca568dbce3577fa2333885a6d01f8e546126061945ab59bd0971962debb6",
+ "stdout_tail": "ASS - note prose verdict present: sweep consequence past-hypothesis\nCHECK 27: PASS - note prose verdict present: sweep consequence single-clock\nCHECK 28: PASS - extension lemma enumerates non-saturated finite configurations\nCHECK 29: PASS - extension lemma enumerates all one-site formation successors\nCHECK 30: PASS - extension lemma successors strictly extend predecessors\nCHECK 31: PASS - extension lemma successors increase size by one\nCHECK 32: PASS - extension lemma successors do not overwrite old records\nCHECK 33: PASS - infinite-lattice saturation shadow is fully recorded in finite window\nCHECK 34: PASS - infinite-lattice saturation shadow is still a state\nCHECK 35: PASS - infinite-lattice saturation shadow has no valid successor under permanence plus uniqueness\nCHECK 36: PASS - rejected law-form exhibit fires on every non-saturated state of the window -- this is what the rejected reading forces: maximal rate\nCHECK 37: PASS - rejected law-form exhibit count equals all non-saturated states\nCHECK 38: PASS - rejected law-form exhibit has no supplied silence inside its domain\nCHECK 39: PASS - rejected law-form exhibit still preserves extension where it fires\nCHECK 40: PASS - rejector: drop permanence and extension can fail\nCHECK 41: PASS - rejector: drop uniqueness and overwrite becomes possible\nCHECK 42: PASS - rejector: empty-forever history violates occurrence\nCHECK 43: PASS - rejector: empty-as-a-state remains valid while occurrence history can fire\nTOTAL: PASS=42 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T090721Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

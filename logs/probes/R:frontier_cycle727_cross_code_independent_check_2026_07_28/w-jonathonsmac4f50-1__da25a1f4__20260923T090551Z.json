@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle727_cross_code_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle727_cross_code_independent_check_2026_07_28.py",
+ "seed": 54351,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "da25a1f4",
+ "started_utc": "20260923T090551Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e7f79c53739ffbf7a20ed666ea3c8e658e63de4adccdef9803200c67a2b5a618",
+ "stdout_tail": "PASS extraction: primary literal input manifest is complete :: ok\nPASS blocklist: Cycle-727 primary/core were not imported :: ok\nPASS sector recount: independent stabilizer/operator/Gram ranks give full and fixed-sector exponents :: ok\nPASS sector recount: frozen exponent pairs agree exactly :: ok\nPASS dimension lemma: full register is twice one fixed sector :: ok\nPASS dictionary recount: all four primary frozen dictionary digests agree :: ok\nPASS pullback spot: full seam family on (2,2,2) has exact signed C/target/M pairs :: ok\nPASS discipline: primary/core do not mutate imported parent modules :: ok\nPASS discipline: frozen sector/dictionary/supply tables are literal data :: ok\nFINAL_JSON\n{\"checks_passed\":9,\"checks_total\":9,\"dictionary_sha256\":{\"2x2x2\":\"dadb2087ae6604e877d8c406c056fb0d88ed31fceb772daf4093e685fed1797e\",\"3x2x2\":\"c55deffa417b236dc8d98cc55848b4a934d65b4b669f4d43fe44a0aa9e5dfb5f\",\"3x3x2\":\"8214b0b177946978e3093caff08deec409eab384ea1a096d50da0fa5d90ecd89\",\"5x3x2\":\"d3d60bdd877d6f8b1d4fe35be6c7ea9fcbf2ee9a203564fe0fd0654f46e7ccf2\"},\"pass\":true,\"runtime_seconds\":0.23990454204613343,\"scope\":\"partial AST/census/digest/full-seam spot check; not a full independent pullback proof\",\"seam_spot\":{\"mismatches\":0,\"rows\":12,\"shape\":[2,2,2]},\"sector_exponents\":{\"2x2x2\":[48,47],\"3x2x2\":[72,71],\"3x3x2\":[108,107],\"5x3x2\":[180,179]}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T090551Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"checks_passed\":9,\"checks_total\":9,\"dictionary_sha256\":{\"2x2x2\":\"dadb2087ae6604' vs cache '{\"checks_passed\":9,\"checks_total\":9,\"dictionary_sha256\":{\"2x2x2\":\"dadb2087ae6604'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle727_cross_code_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

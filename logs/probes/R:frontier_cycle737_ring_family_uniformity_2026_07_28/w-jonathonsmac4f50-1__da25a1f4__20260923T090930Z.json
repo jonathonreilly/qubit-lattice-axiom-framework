@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle737_ring_family_uniformity_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py",
+ "seed": 54570,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "da25a1f4",
+ "started_utc": "20260923T090930Z",
+ "elapsed_s": 40.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5a842d333fb7492eb29f6857b25eef25509bbbd4fde92b80094f9c4cc30487b0",
+ "stdout_tail": "closed_form_counts_by_k\":[1,11,44,77,55,11],\"counts_by_k\":[1,11,44,77,55,11],\"covariance_sample_configurations\":59,\"exact\":true,\"gauge_normalized_covariance_failures\":0,\"gauge_normalized_covariance_identities\":649,\"marked_edge_reference_failures\":0,\"mask_table_sha256\":\"81dc59fe228d9f40a901997638a5466de0f2667c9623dd3708e62861d7a513a0\",\"multi_token_masks\":187,\"pair_distance_incidences\":7865,\"ring\":11,\"total\":199},\"19\":{\"closed_form_counts_by_k\":[1,19,152,665,1729,2717,2508,1254,285,19],\"counts_by_k\":[1,19,152,665,1729,2717,2508,1254,285,19],\"covariance_sample_configurations\":179,\"exact\":true,\"gauge_normalized_covariance_failures\":0,\"gauge_normalized_covariance_identities\":3401,\"marked_edge_reference_failures\":0,\"mask_table_sha256\":\"0f1b116000b107cf89b8964ee133e010c2027ed3f07c6fac26e9dbdb79b36b88\",\"multi_token_masks\":9329,\"pair_distance_incidences\":2133871,\"ring\":19,\"total\":9349},\"27\":{\"closed_form_counts_by_k\":[1,27,324,2277,10395,32319,69768,104652,107406,72930,30888,7371,819,27],\"counts_by_k\":[1,27,324,2277,10395,32319,69768,104652,107406,72930,30888,7371,819,27],\"covariance_sample_configurations\":363,\"exact\":true,\"gauge_normalized_covariance_failures\":0,\"gauge_normalized_covariance_identities\":9801,\"marked_edge_reference_failures\":0,\"mask_table_sha256\":\"b4fef263e5e0a442c78c9f34a0965e40d40f1fa6aa71e73e5a4f31aeae99c733\",\"multi_token_masks\":439176,\"pair_distance_incidences\":300275100,\"ring\":27,\"total\":439204}},\"terminal\":\"CYCLE737_SELECTED_CONSTRUCTOR_CENSUS_DIAGNOSTICS_PASS\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091011Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOU' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOU'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle737_ring_family_uniformity_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

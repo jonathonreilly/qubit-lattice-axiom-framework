@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle730_charge_row_enforcement_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
+ "seed": 54365,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "da25a1f4",
+ "started_utc": "20260923T090605Z",
+ "elapsed_s": 44.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6a0d83cb7a3b74d80ced5824805dc2143974c512b17f8f723323dd6a12e21f1d",
+ "stdout_tail": "syndrome_mask\":2,\"h\":0,\"parity_mismatch\":true,\"refs_mask\":2},\"global_guard_counterexample_pass\":true,\"global_parity_acceptance_not_constructed\":true,\"h_sectors\":2,\"projected_exact_separation_failures\":0,\"rail_h_cases\":8388608,\"rail_states_per_h\":4194304,\"reference_extensions_per_matching_rail_state\":2,\"ring11_full_width\":5959,\"ring11_semantic_gates\":10896,\"ring_stations\":11,\"static_matched_parity_multitoken_row_witness\":{\"A_mask\":33,\"B_mask\":0,\"all_local_rows_pass\":true,\"canonical_refs\":62,\"charge_syndrome_mask\":0,\"closure_obstruction\":0,\"h\":0,\"refs_mask\":62,\"ring_stations\":11,\"token_separation\":5,\"token_sites\":[0,5]},\"static_row_witness_pass\":true,\"theorem_domain\":\"every finite oriented ring with n >= 1\",\"theorem_quantifiers\":\"for every A,B,h there exists r with all L_s=0 iff XOR_s(A_s XOR B_s)=h\",\"token_parity_sector_states_per_h\":[2097152,2097152],\"twist_telescope_failures\":0},\"report_sha256\":\"b8633f1bdd9c9018e1509b5af454c9641c3118f39f906e1234aa43d1eba9732c\",\"runtime_seconds\":43.603471,\"static_matched_parity_multitoken_row_witness\":true,\"stdout_characters\":15154,\"supplied_inventory\":\"One source controller token; zero B/work/syndrome/MCX/OR/charge scratch; a clean static reference chain and h; oriented program ring and clean data genesis.\",\"terminal\":\"CYCLE730_LOCAL_CHARGE_ROW_GUARD_PASS\",\"timeout_seconds\":900,\"word_size_comparison\":{\"Cycle724_semantic_gates\":98034,\"Cycle730_semantic_gates\":99310,\"Cycle730_to_Cycle724_ratio\":1.0130158924454782,\"added_semantic_gates\":1276}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T090649Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"Cycle724_regression_anchor\":{\"count_match\":true,\"expected_semantic_gates\":9803' vs cache '{\"Cycle724_regression_anchor\":{\"count_match\":true,\"expected_semantic_gates\":9803'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle730_charge_row_enforcement_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

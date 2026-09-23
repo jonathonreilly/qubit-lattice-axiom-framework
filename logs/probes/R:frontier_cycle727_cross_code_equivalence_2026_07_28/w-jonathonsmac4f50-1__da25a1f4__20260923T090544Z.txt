@@ -1,0 +1,34 @@
+SCOPE finite-box fitted signed pullback; supplied fixed sectors
+PASS dictionary frozen on four boxes :: ok
+PASS free ranks exact in both sectors :: ok
+PASS free signed rows exact in both sectors :: ok
+PASS free gauge leakage zero :: ok
+PASS free explicit supply predicates exact :: ok
+PASS free locality census bounded :: ok
+PASS seam ranks exact in both sectors :: ok
+PASS seam signed rows exact in both sectors :: ok
+PASS seam gauge leakage zero :: ok
+PASS seam explicit supply predicates exact :: ok
+PASS seam locality census bounded :: ok
+PASS reverse ranks exact in both sectors :: ok
+PASS reverse signed rows exact in both sectors :: ok
+PASS reverse gauge leakage zero :: ok
+PASS reverse explicit supply predicates exact :: ok
+PASS reverse locality census bounded :: ok
+PASS contact ranks exact in both sectors :: ok
+PASS contact signed rows exact in both sectors :: ok
+PASS contact gauge leakage zero :: ok
+PASS contact explicit supply predicates exact :: ok
+PASS contact locality census bounded :: ok
+PASS coin ranks exact in both sectors :: ok
+PASS coin signed rows exact in both sectors :: ok
+PASS coin gauge leakage zero :: ok
+PASS coin explicit supply predicates exact :: ok
+PASS coin locality census bounded :: ok
+PASS all signed pullbacks exact :: ok
+PASS single fixed-sector dimension ratio is exactly two :: ok
+PASS control sign mutation detected :: ok
+PASS control order mutation detected :: ok
+PASS control supply mutation detected :: ok
+FINAL_JSON
+{"boundary":{"channel_scope":"separate supplied fixed-parity sectors","coherent_both_sector_channel":"open","implementation":"self-contained finite Cycle-727 modules","input_compiler_and_collision_free_epoch":"open","marker_or_coframe_map":"not addressed","orientation":"shape-specific fitted algebraic orientation","physical_preparation":"open"},"certificates":{"center_parity_supply_classified":true,"locality_census_certified":true,"phase_agreement":true,"rank_agreement":true,"zero_gauge_leakage":true},"controls":{"order":true,"sign":true,"supply":true},"family_order":["free","seam","reverse","contact","coin"],"family_table_columns":["count","full_rank","fixed_rank","reference_diameter","companion_diameter"],"pass":true,"report_sha256":"67d1f41054c9a8fb7f87374a3891a6e94fb9050f60799a2bc1103f1e36f8df18","runtime_seconds":6.842169374984223,"shapes":[{"E":12,"N":8,"R":312,"dictionary_sha256":"dadb2087ae6604e877d8c406c056fb0d88ed31fceb772daf4093e685fed1797e","family_table":[[48,48,47,0,0],[12,12,12,3,1],[12,12,12,3,1],[120,72,72,0,0],[120,72,72,0,0]],"generators_sha256":"7a9e86184137114d97a1893c11bde909c6cb5bddc598850fbfa16711c59a36df","shape":[2,2,2],"supply_counts_sha256":"7fb346b59906eed6730a96f0b6530ddc3d45fbe5fddf9f37f2717cfd42f9356f"},{"E":20,"N":12,"R":472,"dictionary_sha256":"c55deffa417b236dc8d98cc55848b4a934d65b4b669f4d43fe44a0aa9e5dfb5f","family_table":[[72,72,71,0,0],[20,20,20,3,1],[20,20,20,3,1],[180,108,108,0,0],[180,108,108,0,0]],"generators_sha256":"3c5860d43097ace6362b6404d6c16344bbd182dd53a9286f22169a9c092c3196","shape":[3,2,2],"supply_counts_sha256":"a153fbd0d2edd4e821d6fe50c292b6871532acb74e807016b6587f30b756adc9"},{"E":33,"N":18,"R":714,"dictionary_sha256":"8214b0b177946978e3093caff08deec409eab384ea1a096d50da0fa5d90ecd89","family_table":[[108,108,107,0,0],[33,33,33,3,1],[33,33,33,3,1],[270,162,162,0,0],[270,162,162,0,0]],"generators_sha256":"b5034ea7fed08c08b9a870bb619413be4b1b26aab9bdb15bd3c2d91e991fd696","shape":[3,3,2],"supply_counts_sha256":"ab93f2109967f7fd4b997a1b216caf0872b3fcc30a521d3eca217992724e0f7a"},{"E":59,"N":30,"R":1198,"dictionary_sha256":"d3d60bdd877d6f8b1d4fe35be6c7ea9fcbf2ee9a203564fe0fd0654f46e7ccf2","family_table":[[180,180,179,0,0],[59,59,59,3,1],[59,59,59,3,1],[450,270,270,0,0],[450,270,270,0,0]],"generators_sha256":"31d285db9789bfccaf59abcf276874ff0789aadee410f163a8bd84154e0060e0","shape":[5,3,2],"supply_counts_sha256":"b9d9f50e3900e77e695dd78a699bc73c237a0de3810b9b940089a507009917b6"}],"single_fixed_sector_dimension":{"certified":true,"dimension_ratio":2,"exponent_pairs":{"2x2x2":[48,47],"3x2x2":[72,71],"3x3x2":[108,107],"5x3x2":[180,179]},"two_sector_direct_sum_dimension_match":true},"status":"CYCLE727_FINITE_BOX_SIGNED_PULLBACK_PASS","supply_predicates":{"passed":13,"total":13}}

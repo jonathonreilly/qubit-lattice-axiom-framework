@@ -1,0 +1,12 @@
+ONE-STEP REQUESTED PLACEMENT
+PASS one step closes the slab gap but not the occupied-support gap :: {'offset': 132, 'contacts': 0, 'minimum_distance': (4, (6, 3, -3), (10, 3, -3)), 'mixed_signatures': ()}
+PASS the requested one-step configuration is transparently exact :: {'ok': True, 'states': 6677, 'edges': 8615}
+FIRST MIXED SIGNATURE
+PASS the exact approach profile is 4, 3, 2, 1 lattice steps :: {132: 4, 131: 3, 130: 2, 129: 1}
+PASS offset 130 has one mixed signature and no acting law row :: (((7, 3, -3), (((-1, 0, 0), 'R_A13'), ((1, 0, 0), 'MARK')), None),)
+PASS the first mixed-signature configuration remains transparently exact :: {'ok': True, 'states': 6677, 'edges': 8615}
+FIRST OCCUPIED CONTACT
+PASS offset 129 is the first occupied-record contact :: frozenset({((6, 3, -3), (7, 3, -3))})
+FAIL the note preserves the diagnostic boundary :: ('bounding-slab contact is not occupied-record contact', 'transparent closure', 'no existing row acts', 'not a no-go', 'draft parking branch')
+PASS 6 FAIL 1
+RESULT CYCLE199_OPEN

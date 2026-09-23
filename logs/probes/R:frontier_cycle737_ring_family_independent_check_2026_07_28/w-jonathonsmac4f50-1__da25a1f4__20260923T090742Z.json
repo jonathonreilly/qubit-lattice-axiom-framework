@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle737_ring_family_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle737_ring_family_independent_check_2026_07_28.py",
+ "seed": 54462,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "da25a1f4",
+ "started_utc": "20260923T090742Z",
+ "elapsed_s": 108.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "928397fe1e0210a1a3ebcfc639f370b548d0e139f8ba406251f8ed3de3c6a45a",
+ "stdout_tail": "covariance_failures\":0,\"covariance_identities\":9801,\"exact\":true,\"formula\":[1,27,324,2277,10395,32319,69768,104652,107406,72930,30888,7371,819,27],\"marked_edge_reference_failures\":0,\"n3_multi_token_degenerate\":true,\"total\":439204}},\"3\":{\"bare\":{\"configuration_steps\":12,\"data_changed_configurations\":3,\"exact\":true,\"inverse_failures\":0,\"rail_or_adjacency_failures\":0},\"prefix\":{\"accepts\":4,\"exact\":true,\"failures\":0,\"prefixes\":2,\"refusals\":4,\"reversibility_failures\":0},\"static\":{\"counts\":[1,3],\"covariance_failures\":0,\"covariance_identities\":12,\"exact\":true,\"formula\":[1,3],\"marked_edge_reference_failures\":0,\"n3_multi_token_degenerate\":true,\"total\":4}}},\"gate_export\":{\"command\":[\"/usr/local/bin/python3\",\"scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py\",\"--export-gates\"],\"export_sha256\":\"3eb5e45b2587f8c05d06aea357ee0c2852617aa7c08b5b3b3f86d96ac79ff050\",\"returncode\":0,\"stderr\":\"\",\"stdout_bytes\":1100657},\"joint_live_primary\":{\"command\":[\"/usr/local/bin/python3\",\"scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py\"],\"report_sha256\":\"5fc08091769596d0850560451714fc6461255a3c145803b264c3d9976b335e0e\",\"returncode\":0,\"stderr\":\"\",\"stdout_bytes\":18879},\"pass\":true,\"report_sha256\":\"a9a493a325d93a74ecbf6dd9c1fdd876c20b3d9542ef565164478c7688d17f62\",\"runtime_seconds\":107.9091073750169,\"scope\":\"selected constructor counts and four finite census/static/prefix/bare diagnostics; no framework or controller theorem\",\"terminal\":\"CYCLE737_SELECTED_DIAGNOSTICS_INDEPENDENT_PASS\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T090930Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle737_ring_family_uniformity_2026_07_' vs cache '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle737_ring_family_uniformity_2026_07_'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle737_ring_family_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

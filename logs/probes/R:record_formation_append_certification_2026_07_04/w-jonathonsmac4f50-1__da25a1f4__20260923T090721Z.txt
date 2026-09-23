@@ -1,0 +1,44 @@
+CHECK 01: PASS - axiom file readable
+CHECK 02: PASS - note file readable
+CHECK 03: PASS - policy file readable
+CHECK 04: PASS - landed guard: axiom file contains Records form.
+CHECK 05: PASS - policy entry needle present
+CHECK 06: PASS - premise present in landed axiom file: state definition
+CHECK 07: PASS - premise present in landed axiom file: per-site uniqueness plus permanence
+CHECK 08: PASS - premise present in landed axiom file: law-form sentence
+CHECK 09: FAIL - premise present in landed axiom file: named-primitive-content sentence
+CHECK 10: PASS - note contains verbatim quote: landed formation sentence
+CHECK 11: PASS - note contains verbatim quote: record-locking sentence
+CHECK 12: PASS - note contains verbatim quote: per-site uniqueness plus permanence quote
+CHECK 13: PASS - note contains verbatim quote: empty readout quote
+CHECK 14: PASS - note contains verbatim quote: state definition
+CHECK 15: PASS - note contains verbatim quote: per-site uniqueness plus permanence
+CHECK 16: PASS - note contains verbatim quote: law-form sentence
+CHECK 17: PASS - note contains verbatim quote: named-primitive-content sentence
+CHECK 18: PASS - note prose verdict present: occurrence-strength verdict
+CHECK 19: PASS - note prose verdict present: empty-state boundary
+CHECK 20: PASS - note prose verdict present: extension lemma verdict
+CHECK 21: PASS - note prose verdict present: saturation wall
+CHECK 22: PASS - note prose verdict present: law-form over-supply wall
+CHECK 23: PASS - note prose verdict present: owner ruling occurrence strength
+CHECK 24: PASS - note prose verdict present: formation-rule residual
+CHECK 25: PASS - note prose verdict present: sweep consequence formation family
+CHECK 26: PASS - note prose verdict present: sweep consequence past-hypothesis
+CHECK 27: PASS - note prose verdict present: sweep consequence single-clock
+CHECK 28: PASS - extension lemma enumerates non-saturated finite configurations
+CHECK 29: PASS - extension lemma enumerates all one-site formation successors
+CHECK 30: PASS - extension lemma successors strictly extend predecessors
+CHECK 31: PASS - extension lemma successors increase size by one
+CHECK 32: PASS - extension lemma successors do not overwrite old records
+CHECK 33: PASS - infinite-lattice saturation shadow is fully recorded in finite window
+CHECK 34: PASS - infinite-lattice saturation shadow is still a state
+CHECK 35: PASS - infinite-lattice saturation shadow has no valid successor under permanence plus uniqueness
+CHECK 36: PASS - rejected law-form exhibit fires on every non-saturated state of the window -- this is what the rejected reading forces: maximal rate
+CHECK 37: PASS - rejected law-form exhibit count equals all non-saturated states
+CHECK 38: PASS - rejected law-form exhibit has no supplied silence inside its domain
+CHECK 39: PASS - rejected law-form exhibit still preserves extension where it fires
+CHECK 40: PASS - rejector: drop permanence and extension can fail
+CHECK 41: PASS - rejector: drop uniqueness and overwrite becomes possible
+CHECK 42: PASS - rejector: empty-forever history violates occurrence
+CHECK 43: PASS - rejector: empty-as-a-state remains valid while occurrence history can fire
+TOTAL: PASS=42 FAIL=1

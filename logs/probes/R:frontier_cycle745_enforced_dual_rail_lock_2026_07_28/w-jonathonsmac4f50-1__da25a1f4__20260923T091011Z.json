@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle745_enforced_dual_rail_lock_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py",
+ "seed": 54611,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "da25a1f4",
+ "started_utc": "20260923T091011Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fc97454fa6460435bbba5337f07b43ebedc8c215abd6a7c0fafea56a0ddcf9cb",
+ "stdout_tail": "or/local compilation, admissibility or dynamics, literal closed-system macro composition, Record formation or physical persistence, and any readout bridge\",\"packet_lifecycle\":\"Each macro injects fresh V/Q_in/Q_accept/Q_refuse event rails and projects the result to persistent storage (D,U,L).\",\"passed\":true,\"scope\":{\"abstract_packet_protocol_derived\":true,\"alphabet_scope\":[\"IDLE\",\"READ\",\"WRITE[0]\",\"WRITE[1]\"],\"closed_system_word_composition_claimed\":false,\"event_injection_projection_supplied\":true,\"local_physical_compilation_claimed\":false,\"record_semantics_claimed\":false},\"supplied_portfolio_verbatim\":\"Supplied: the binary diagonal encoding; rail roles, order, and coordinate labels; UNLOCKED/LOCKED meanings and initial D=0; literal controlled-gate semantics and order; fresh event injection with Q_accept=Q_refuse=0; projection to (D,U,L); an external macro scheduler; the exact alphabet; and the accept/refuse and event-local READ conventions.\"}},\"closed_system_word_composition_claimed\":false,\"event_injection_projection_supplied\":true,\"induction_statement\":\"For each macro M let F_M=P o M o E_M be the supplied reduced event map. For every n >= 0 and M_1,...,M_n in alphabet_scope, LOCKED(x) implies LOCKED(F_M_n...F_M_1(x)) and D(F_M_n...F_M_1(x))=D(x).\",\"local_physical_compilation_claimed\":false,\"record_semantics_claimed\":false,\"runtime_sec\":0.010187,\"seven_semantic_rails\":[\"D\",\"V\",\"U\",\"L\",\"Q_in\",\"Q_accept\",\"Q_refuse\"],\"word_sizes\":{\"IDLE\":0,\"READ\":1,\"REVERSE_WRITE\":8,\"WRITE\":8}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091011Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07' vs cache '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle745_enforced_dual_rail_lock_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

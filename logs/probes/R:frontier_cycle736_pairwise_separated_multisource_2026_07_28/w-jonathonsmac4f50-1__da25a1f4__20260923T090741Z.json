@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle736_pairwise_separated_multisource_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle736_pairwise_separated_multisource_2026_07_28.py",
+ "seed": 54461,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "da25a1f4",
+ "started_utc": "20260923T090741Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "292a1346a8bc3a2fa78c9c8bbf71806e7d8d0ae37ce8f2ac4388e17f80c285b7",
+ "stdout_tail": "lsifier\":{\"actual_convention\":\"insert h only at marked edge s=0\",\"examples\":[{\"actual_refs\":[0,0,0,0,0,0,0,0,0,0,0],\"distributed_h_refs\":[0,0,1,0,1,0,1,0,1,0,1],\"distributed_row_fails_marked_law\":true,\"k\":1,\"mask\":1},{\"actual_refs\":[0,1,0,0,0,0,0,0,0,0,0],\"distributed_h_refs\":[0,1,1,0,1,0,1,0,1,0,1],\"distributed_row_fails_marked_law\":true,\"k\":1,\"mask\":2},{\"actual_refs\":[0,1,1,0,0,0,0,0,0,0,0],\"distributed_h_refs\":[0,1,0,0,1,0,1,0,1,0,1],\"distributed_row_fails_marked_law\":true,\"k\":1,\"mask\":4}],\"mismatches_failing_marked_law\":99,\"pass\":true,\"rejected_convention\":\"insert h at every recurrence edge\",\"row_mismatches\":99},\"pass\":true,\"report_sha256\":\"5bd76906375f05722507322db39dc8f4ea9a08c5b5fe26ac7483ca86bc0724f3\",\"runtime_seconds\":0.257204,\"static_template\":{\"failures\":[],\"gauge_normalized_covariance\":{\"definition\":\"passive A/reference translation; when h=1 toggle reference sites 1..shift; then complement the reference row iff its translated r_0 is one\",\"matches\":2189,\"matches_by_h\":[1100,1089],\"supplied_gauge\":\"r_0 = 0 at the marked cut\",\"total\":2189,\"total_by_h\":[1100,1089]},\"h0_cases\":100,\"h1_cases\":99,\"h1_multitoken_cases\":88,\"literal_passive_covariance_diagnostic\":{\"claimed_as_theorem\":false,\"failures\":1482,\"matches\":707,\"matches_by_h\":[608,99],\"total\":2189,\"total_by_h\":[1100,1089]},\"marked_edge_law_cases\":199,\"pass\":true,\"table_sha256\":\"982a97ba0f0094c47302fb9c5da4e6887bb2d1574a6041bc2667bcbb0db4cd1c\",\"template_cases\":199},\"terminal\":\"CYCLE736_STATIC_TEMPLATE_PREFIX_PASS\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T090742Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_BOUNDED_THEO' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_BOUNDED_THEO'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle736_pairwise_separated_multisource_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

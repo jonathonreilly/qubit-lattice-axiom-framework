@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle731_token_count_certificate_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
+ "seed": 54424,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "da25a1f4",
+ "started_utc": "20260923T090704Z",
+ "elapsed_s": 5.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "739c08c4e73134debf14f7325d0a88e61a7d3a9604b20db0f7a418aeae9353bd",
+ "stdout_tail": ",\"lawful_behavior\":{\"cases\":[{\"A0_return\":true,\"B_work_return\":true,\"Cycle730_semantic_gates\":10896,\"Cycle731_semantic_gates\":11206,\"Cycle731_word_sha256\":\"4aa775d1b8698be9a3b70ce4096204433760685d4b63f98b749314ebed84a73a\",\"all_auxiliaries_return_clean\":true,\"banks\":2,\"data_and_rails_equal_Cycle730\":true,\"label\":\"held_2\",\"literal_reverse_exact\":true,\"refs_h_return\":true,\"stations\":11},{\"A0_return\":true,\"B_work_return\":true,\"Cycle730_semantic_gates\":37350,\"Cycle731_semantic_gates\":39420,\"Cycle731_word_sha256\":\"e4301f56bac01f4456800571a52d80d5b28d188b202da70abf5b529d288df105\",\"all_auxiliaries_return_clean\":true,\"banks\":5,\"data_and_rails_equal_Cycle730\":true,\"label\":\"held_5\",\"literal_reverse_exact\":true,\"refs_h_return\":true,\"stations\":35},{\"A0_return\":true,\"B_work_return\":true,\"Cycle730_semantic_gates\":99310,\"Cycle731_semantic_gates\":112912,\"Cycle731_word_sha256\":\"5b20a6025b700a2ae27d83bea470b7345c596db410c1dba47837c7cf266de625\",\"all_auxiliaries_return_clean\":true,\"banks\":12,\"data_and_rails_equal_Cycle730\":true,\"label\":\"padded_130\",\"literal_reverse_exact\":true,\"refs_h_return\":true,\"stations\":130}],\"failure_census\":0,\"trajectories\":3},\"pass\":true,\"runtime_seconds\":4.937124,\"semantic_report_sha256\":\"569329d4b9353cd784f28f748898b9ca77af124dad69344969af87ef87545ae3\",\"terminal\":\"CYCLE731_A_RAIL_COUNTER_COMPARATOR_PASS\",\"word_size_comparison\":{\"Cycle730_semantic_gates\":99310,\"Cycle731_semantic_gates\":112912,\"Cycle731_to_Cycle730_ratio\":1.1369650589064546,\"added_semantic_gates\":13602}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T090710Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOU' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOU'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle731_token_count_certificate_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

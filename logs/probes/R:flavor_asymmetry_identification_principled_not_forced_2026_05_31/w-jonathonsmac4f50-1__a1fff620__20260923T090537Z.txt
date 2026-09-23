@@ -1,0 +1,25 @@
+[PASS] F1 single-fixed-point local density L_3(1,2)=2/9; global sum = L*(2/9) extensive
+       local=2/9; L=4 sum=8/9, L=6 sum=4/3
+[PASS] F1b global eta = sum sign(lambda) = 0 (Gamma5 +/- pairing) -> excluded (dimensionless != 0)
+[PASS] F2 type-filter (intensive/dimensionless) EXCLUDES global-eta(0) & extensive-sum(L*2/9); (c) only survivor
+       FORCED elimination of (a),(b); NOT a cherry-pick -- (c) is the sole type-consistent object
+[PASS] F3/F4 NOT fully forced: (c) is a SUMMAND of (b); promoting contribution->observable needs the (undischarged) generation-space bridge
+       gen space = C3[111] fixed locus reading its local density: load-bearing, undischarged on main
+[PASS] F5 dimensionless 2/9 != CP radian-delta (2/9 rad): (2/9)/(q*pi) irrational (retained radian-bridge separation)
+       not conflated; the radian-bridge no-go is a different surface
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py", line 118, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py", line 84, in main
+    ledger = json.loads((ROOT / "docs" / "audit" / "data" / "audit_ledger.json").read_text())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/audit_ledger.json'

@@ -31,6 +31,12 @@ run actual helper/input discovery before freezing or executing evidence.
 Never replace active inputs with opaque gzip objects or silently drop duplicate
 original paths, inherited evidence, deleted content or failed attempts.
 
+Before staging archival Markdown or capturing evidence that binds it, check its
+proposed basenames against the repository-wide tracked `docs/**` inventory and
+one another; historical placement does not exempt a basename collision. Respect
+the existing `README.md` and `SKILL.md` exceptions. Choose unique archival names
+and update recovery mappings and consumers before the source freeze.
+
 Freeze the newly generated manifest's SHA-256 in the independent review receipt,
 alongside the original revision and verified complete Git inventory. For reuse:
 

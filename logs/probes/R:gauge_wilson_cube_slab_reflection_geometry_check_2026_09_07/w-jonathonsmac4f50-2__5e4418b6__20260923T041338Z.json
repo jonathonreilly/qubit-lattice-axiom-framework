@@ -1,0 +1,34 @@
+{
+ "task": "R:gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.py",
+ "seed": 36818,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041338Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5274394f2d14e3da408514e40b1be224ceb17df6b4030194df54551af956f2bf",
+ "stdout_tail": "kind': 'spatial', 'word': [(3, 7, 1), (2, 6, -1)], 'left_edge': (2, 6)}, {'axes': [0, 2], 'base': 10, 'kind': 'spatial', 'word': [(11, 15, 1), (10, 14, -1)], 'left_edge': (10, 14)}, {'axes': [0, 3], 'base': 0, 'kind': 'temporal', 'word': [(1, 9, 1), (0, 8, -1)], 'left_edge': (0, 8)}, {'axes': [0, 3], 'base': 4, 'kind': 'temporal', 'word': [(5, 13, 1), (4, 12, -1)], 'left_edge': (4, 12)}, {'axes': [0, 3], 'base': 2, 'kind': 'temporal', 'word': [(3, 11, 1), (2, 10, -1)], 'left_edge': (2, 10)}, {'axes': [0, 3], 'base': 6, 'kind': 'temporal', 'word': [(7, 15, 1), (6, 14, -1)], 'left_edge': (6, 14)}] ; expected coupled left edges [(0, 4), (0, 8), (2, 6), (2, 10), (4, 6), (4, 12), (6, 14), (8, 12), (10, 14), (12, 14)]\nper_block: source word [('R', 1), ('L', -1)] ; half-action reduced words [{'axes': [1, 2], 'base': 0, 'kind': 'spatial', 'word': [('U', 1)]}, {'axes': [1, 2], 'base': 8, 'kind': 'spatial', 'word': [('V', 1)]}, {'axes': [1, 3], 'base': 0, 'kind': 'temporal', 'word': [('U', 1), ('V', -1)]}, {'axes': [1, 3], 'base': 4, 'kind': 'temporal', 'word': []}, {'axes': [2, 3], 'base': 0, 'kind': 'temporal', 'word': []}, {'axes': [2, 3], 'base': 2, 'kind': 'temporal', 'word': []}]\nlattice_wide: graph bookkeeping is executed; all-coupling strict positivity remains the analytic Haar/reflection proof.\nSOURCE_SHA256 016b8f1d84a7685fb435e32d772e4123e4bbfebbe311f7edfdde0204e5694ed7\nDEPENDENCIES {}\nRESOURCES 0.0030044999439269304 22.28125 seconds/MiB;180 limits, BLAS1\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041339Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_word_limit_box_mode_sweep_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_word_limit_box_mode_sweep_bounded_2026_06_12.py",
+ "seed": 36809,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041329Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=47, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "936c275c6994af1232dc4183d4226f9a5d072156e5b939b5ebd8de81d1719090",
+ "stdout_tail": "361860916e-07; source NMAX 5->7 drift = +9.517398948944e-07; source NMAX 7->9 drift = +9.629119723797e-11\ndiagnostic verdict: within these computed cells, the dominant-weight box and Bessel-mode axes do not move the word-limit value toward the fenced comparator; the named open target left by this sweep is the 1D word-chain versus 3D rim-geometry residual.\nnon-load-bearing Richardson-style diagnostic: no word-axis Richardson value is emitted because the computed P_inf cells are identical at the 1e-12 scale.\n```\nPASS: fenced comparator is used only for distance reporting\nPASS: no fitting or extrapolation claim is emitted\n\n================================================================================================================\nPart 5: note hygiene and residual boundary\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note links the primary runner as a one-hop authority\nPASS: note omits transient preparation refs\nPASS: note names canonical load-bearing input notes\nNamed residuals: finite dominant-weight box; finite Bessel mode support; source-box truncation; finite word count checked through k=40; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.\nPASS: runner names residuals without claiming them retired\n\nTOTAL: PASS=47, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041331Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_word_limit_box_mode_sweep_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

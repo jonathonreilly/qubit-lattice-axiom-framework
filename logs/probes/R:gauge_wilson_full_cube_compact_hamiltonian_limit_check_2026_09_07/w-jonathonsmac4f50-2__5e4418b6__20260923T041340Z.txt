@@ -1,0 +1,9 @@
+PASS: exact compact Wilson Hamiltonian algebra support
+per_element: eight trace-normalized generators; fundamental kinetic coefficient4/a
+per_site: cube incidence verifies twelve physical links and six closed faces
+per_mode: covariance3 and radial Gaussian moments are finite algebra checks
+per_block: exact nonlinear compact potential and transfer scalar retained
+lattice_wide: fixed cube only; no numerical certification of strong convergence or continuum limit
+TOTAL: PASS=31 FAIL=0
+resources: seconds=0.176384 RSS_MiB=62.843750 limits180/180
+source_sha256: f58b22c7315cb36eca14cd352e10150b41dc930765c0c2570d61d4c061e0f836

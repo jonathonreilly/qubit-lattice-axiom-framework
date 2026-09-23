@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_word_count_hilbert_metric_bracket_narrow_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_word_count_hilbert_metric_bracket_narrow_2026_06_12.py",
+ "seed": 36793,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041313Z",
+ "elapsed_s": 4.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aa9375c42a6bcce39d78a048f22ca0d70c9046cb1fe3f3d289f265b18e74b12e",
+ "stdout_tail": "27112357448, max_post4_ratio=0.263585189186\nPASS: measured envelope is not promoted to a certified all-w tail by this runner\n      missing pieces: full-cone finite Hilbert diameter and ratio-denominator perturbation bound\n\n========================================================================================================\nPart 4: bounded residuals and obstruction statement\n========================================================================================================\nObstruction: the actual reduced word-count matrices K_w have persistent zero entries, so the Birkhoff/Hilbert coefficient tanh(diam/4) is not finite on the full cone. The ordinary fourth-power positivity of the support graph does not repair this, because K_w contains entrywise powers of g_one rather than ordinary powers of a fixed positive matrix.\nPartial structure: the finite packet has an explicit reduced formula, a computed fundamental-support limiting source solve, and a matrix-derived candidate theta that matches the measured rungs. The missing certification target is a uniform positive denominator/source-perturbation bound for the readout ratio.\nNamed residuals: finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.\nPASS: runner reports an obstruction map rather than a certified Hilbert-metric bracket\n\nTOTAL: PASS=19, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041317Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_word_count_hilbert_metric_bracket_narrow_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

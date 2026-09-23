@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_2026_06_12.py",
+ "seed": 36752,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041232Z",
+ "elapsed_s": 39.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c3adef1f9edad62e04845fa377ffe3e3b98dca757b87408d8c94351a9c319c8e",
+ "stdout_tail": "comparator             = 0.593400000000000\nunwindowed deep residual      = 0.021791992185898\nB4 windowed k=2 P             = 0.445084590711323\nB4 windowed k=2 displacement  = -4.286243497957531e-03\nk=2 residual fraction         = 0.196688924142109\nNMAX=3 windowed k=3 P          = 0.448674745889987\nNMAX=3 window-vs-zero k=3      = -4.177674469897252e-03\n```\nNamed open targets: full B4 windowed k=3, B4 windowed deep limit, conjugate-orientation or real-window surface, larger boxes, higher window channels, physical 3D rim environment, all-link non-class intertwiner normalization, analytic P(6), and repinning.\nPASS: k=2 finite displacement accounts for a bounded fraction of the unwindowed deep residual\n      fraction=0.196688924142109\nPASS: runner keeps the B4 windowed deep limit as an open target after slice closure breaks\n\n================================================================================================================\nPart 6: note hygiene\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note carries canonical source-proposal metadata\nPASS: note uses markdown links for one-hop authorities\nPASS: context refs are repo-local plain-text script paths\nPASS: note contains no tool provenance text\nPASS: note avoids overreach closure phrases\nPASS: note avoids audit-status labels\nPASS: note reports the W53 orientation caveat\nTOTAL: PASS=34, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041312Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py",
+ "seed": 36819,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041339Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cf28edef643a4fe98e1426979dfc2d96485e45eef2176391ae25b65ac57d73d4",
+ "stdout_tail": "TOTAL: PASS=16 FAIL=0\nper_element: two exact free-group word reductions and ten rational action, concentration and character constants checked\nper_site: four adverse controls remove the same side constraint on both slices of the finite cube fixture\nper_mode: checked and not executed \u2014 finite-character convergence follows from the analytical representation bound, not a spectral computation\nper_block: exact finite-slab identities support the written Haar concentration proof; no numerical Haar integration performed\nlattice_wide: checked and not executed \u2014 no thermodynamic limit, high-label uniformity or physical coupling-selection test is claimed\nsource_sha256: d0a56e3d6e2dc16a7ee0914588e8f3fc934dc2023433bd3e7f334cf5f90eb19a\nResources: 0.010062s; 20.859 MiB; limits 180s/180MiB.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041339Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

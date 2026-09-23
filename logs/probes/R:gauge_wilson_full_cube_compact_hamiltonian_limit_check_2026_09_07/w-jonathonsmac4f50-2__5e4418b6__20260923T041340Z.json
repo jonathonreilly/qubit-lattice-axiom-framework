@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py",
+ "seed": 36820,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041340Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2c70087beea25264e52fe914598db0291b284b63a33a4a1a903ea836d8ede930",
+ "stdout_tail": "PASS: exact compact Wilson Hamiltonian algebra support\nper_element: eight trace-normalized generators; fundamental kinetic coefficient4/a\nper_site: cube incidence verifies twelve physical links and six closed faces\nper_mode: covariance3 and radial Gaussian moments are finite algebra checks\nper_block: exact nonlinear compact potential and transfer scalar retained\nlattice_wide: fixed cube only; no numerical certification of strong convergence or continuum limit\nTOTAL: PASS=31 FAIL=0\nresources: seconds=0.176384 RSS_MiB=62.843750 limits180/180\nsource_sha256: f58b22c7315cb36eca14cd352e10150b41dc930765c0c2570d61d4c061e0f836\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041340Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

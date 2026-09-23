@@ -1,0 +1,8 @@
+PASS: 12 scientific checks and 2 resource/accounting controls; TOTAL=14
+per_element: 8 explicit trace-orthonormal SU3 generators and alternating tensor.
+per_site: No lattice-site simulation; exact finite color algebra for the supplied source model.
+per_mode: Two arbitrary retained eight-component source vectors; zero/one controls included.
+per_block: Three isotropic covariance contractions and a nonzero three-source adverse case.
+lattice_wide: Not executed; nonlinear cube tails and spectral rate are analytical, with no finite onset.
+resources: elapsed_sec=0.4804153749719262 rss_MiB=65.6875; limits=180sec/180MiB
+source_sha256=5f9a1b2d5f293ebd0977de15e1233fcc927dd59971c974f1a65a7d05ccef23b9

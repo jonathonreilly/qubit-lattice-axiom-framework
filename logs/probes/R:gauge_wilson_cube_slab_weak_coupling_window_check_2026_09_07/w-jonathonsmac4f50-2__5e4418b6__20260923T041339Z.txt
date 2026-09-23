@@ -1,0 +1,8 @@
+TOTAL: PASS=16 FAIL=0
+per_element: two exact free-group word reductions and ten rational action, concentration and character constants checked
+per_site: four adverse controls remove the same side constraint on both slices of the finite cube fixture
+per_mode: checked and not executed — finite-character convergence follows from the analytical representation bound, not a spectral computation
+per_block: exact finite-slab identities support the written Haar concentration proof; no numerical Haar integration performed
+lattice_wide: checked and not executed — no thermodynamic limit, high-label uniformity or physical coupling-selection test is claimed
+source_sha256: d0a56e3d6e2dc16a7ee0914588e8f3fc934dc2023433bd3e7f334cf5f90eb19a
+Resources: 0.010062s; 20.859 MiB; limits 180s/180MiB.

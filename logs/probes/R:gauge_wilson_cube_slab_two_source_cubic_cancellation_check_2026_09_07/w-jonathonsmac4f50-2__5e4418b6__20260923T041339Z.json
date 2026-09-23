@@ -1,0 +1,34 @@
+{
+ "task": "R:gauge_wilson_cube_slab_two_source_cubic_cancellation_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_wilson_cube_slab_two_source_cubic_cancellation_check_2026_09_07.py",
+ "seed": 36819,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041339Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b3eacde914e7260a6820a1e376389d0a44273bf3d420638607d4255c395b6163",
+ "stdout_tail": "PASS: 12 scientific checks and 2 resource/accounting controls; TOTAL=14\nper_element: 8 explicit trace-orthonormal SU3 generators and alternating tensor.\nper_site: No lattice-site simulation; exact finite color algebra for the supplied source model.\nper_mode: Two arbitrary retained eight-component source vectors; zero/one controls included.\nper_block: Three isotropic covariance contractions and a nonzero three-source adverse case.\nlattice_wide: Not executed; nonlinear cube tails and spectral rate are analytical, with no finite onset.\nresources: elapsed_sec=0.4804153749719262 rss_MiB=65.6875; limits=180sec/180MiB\nsource_sha256=5f9a1b2d5f293ebd0977de15e1233fcc927dd59971c974f1a65a7d05ccef23b9\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041339Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_cube_slab_two_source_cubic_cancellation_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

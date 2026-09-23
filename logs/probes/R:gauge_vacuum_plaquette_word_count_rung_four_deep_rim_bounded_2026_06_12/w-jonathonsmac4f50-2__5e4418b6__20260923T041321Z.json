@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_2026_06_12.py",
+ "seed": 36801,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041321Z",
+ "elapsed_s": 6.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "86ccf4093bccd2414d6b2ddc6407324a80b8b7f84d716d5da94f8db08fbd192d",
+ "stdout_tail": ".162784832289; |P - P_triv_reference| = 0.192660251686; |P - 0.5934| = 0.021791991333\nk=17: P = 0.615191991961; |P - P_loc_reference| = 0.162784832916; |P - P_triv_reference| = 0.192660252314; |P - 0.5934| = 0.021791991961\nk=18: P = 0.615191992127; |P - P_loc_reference| = 0.162784833082; |P - P_triv_reference| = 0.192660252479; |P - 0.5934| = 0.021791992127\nk=19: P = 0.615191992170; |P - P_loc_reference| = 0.162784833126; |P - P_triv_reference| = 0.192660252523; |P - 0.5934| = 0.021791992170\nk=20: P = 0.615191992182; |P - P_loc_reference| = 0.162784833137; |P - P_triv_reference| = 0.192660252535; |P - 0.5934| = 0.021791992182\n```\nPASS: canonical comparator is isolated to fenced distance reporting\n\n========================================================================================================\nPart 7: note and bounded residual checks\n========================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note names the primary runner as a plain-text pointer\nPASS: note contains no worktree-local temp references\nNamed residuals: finite word count; finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.\nPASS: runner scope names the finite-packet residuals without claiming them retired\n\nTOTAL: PASS=24, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041327Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

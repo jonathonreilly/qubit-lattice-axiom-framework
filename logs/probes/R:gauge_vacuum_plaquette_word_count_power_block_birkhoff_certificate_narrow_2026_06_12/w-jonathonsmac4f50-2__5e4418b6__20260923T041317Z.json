@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py",
+ "seed": 36797,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041317Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "31679061c82332f0362fdc647157ce6fea1ace4492dd0872f4abd49b2b05a373",
+ "stdout_tail": "ASS: power-block iterates are not the measured entrywise-power word-count ladder\n      the measured ladder uses K_k = C_k^(1/2) G^(entrywise k) C_k^(1/2)\nPASS: W_eta Perron readout is not the measured fundamental-pair P_inf target\n      limit_mismatch=1.807e-01\nPASS: no P_inf tail bracket is emitted without a denominator/source perturbation theorem for K_k\n      remaining target: control the entrywise-power channel denominator and source solve to the boundary support\n\n============================================================================================================\nPart 6: named residuals\n============================================================================================================\nPartial certificate: W_eta^8 is entrywise positive and has a finite computed Birkhoff coefficient. This certifies the eigenvector-level Hilbert bracket for ordinary W_eta iterates.\nNot certified here: a numerical B(k) for |P_inf - P_k| on the measured word-count ladder. The missing step is a finite-packet theorem that propagates the entrywise-power reduced Perron vector through the eta-weighted denominator and then through the source Perron solve.\nNamed residuals: finite dominant-weight box; finite Bessel mode support; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.\nPASS: partial certificate names the remaining propagation target\n\nTOTAL: PASS=24, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041318Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

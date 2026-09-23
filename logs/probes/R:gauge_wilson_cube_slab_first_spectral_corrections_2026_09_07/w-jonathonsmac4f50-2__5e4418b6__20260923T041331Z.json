@@ -1,0 +1,34 @@
+{
+ "task": "R:gauge_wilson_cube_slab_first_spectral_corrections_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_wilson_cube_slab_first_spectral_corrections_2026_09_07.py",
+ "seed": 36811,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041331Z",
+ "elapsed_s": 7.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "82022c3b31527727fd0e92a485464065a18906f1faaef6738c9b7e023100cce8",
+ "stdout_tail": "PASS exact cube ground and excited correction; TOTAL=26\nper_element: 8 trace-orthonormal color matrices and exact contractions\nper_site: 16 vertices in the declared finite cube slab\nper_mode: 17 chord variables with 8 colors\nper_block: 22 weighted face words with two marked sources\nlattice_wide: one finite cube slab; no thermodynamic claim\nk0=126839623/20482880 + 27961081*sqrt(55)/27931200; k1=137812123/20482880 + 27961081*sqrt(55)/18620800\nresources: elapsed_sec=7.153090000036173 rss_MiB=75.5625; limits=180sec/180MiB\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041338Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'resources: elapsed_sec=7.153090000036173 rss_MiB=75.5625; limits=180sec/180MiB' vs cache 'resources: elapsed_sec=5.263135707937181 rss_MiB=75.203125; limits=180sec/180MiB'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_cube_slab_first_spectral_corrections_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

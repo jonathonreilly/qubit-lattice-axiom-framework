@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py",
+ "seed": 36792,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041312Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4ef55efcdb9f27e6e04652a37f7c958416097053217575a18fb6fdf0bb7df241",
+ "stdout_tail": "=============================================================================\nk0 = 17\nPASS: c3*theta_3^k is below C_source*theta^(k-1) for every checked k >= k0 through 80\n      k0=17\nk=9: bracket=[-3.172002270326694e-03, 3.191210155392055e-03], leading=9.603942532680194e-06, remainder_radius=3.181606212859375e-03\nk=20: bracket=[3.674184368228469e-12, 4.577101609378973e-12], leading=4.125642988803721e-12, remainder_radius=4.514586205752521e-13\nPASS: requested bracket values are emitted at k=9 and k=20\n\n================================================================================================================\nPart 5: note hygiene and residual boundary\n================================================================================================================\nPASS: note file exists\n      /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md\nPASS: note delegates status to the independent audit lane\nPASS: one-hop authorities are markdown links\nPASS: note omits transient preparation refs\nPASS: note names finite-packet residuals\nNamed residuals: finite dominant-weight box; finite Bessel mode support; finite word-count packet; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning.\nPASS: runner names residuals without claiming them resolved\nTOTAL: PASS=16, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041313Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18.py",
+ "seed": 36798,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e4418b6",
+ "started_utc": "20260923T041318Z",
+ "elapsed_s": 2.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1699f39db4f1967da3bbaba96684073f9a18fc47ce9dd8346f8f3fc1156a0d69",
+ "stdout_tail": "6 delta_l1/theta^(k-1)=1.29822152684418144\nPASS: rescaled high-precision rows stay below 4.05 alpha^k on the sampled tail\n      ceiling=4.05\nPASS: sampled high-precision tail ratio is monotone decreasing\nPASS: sampled high-precision tail is far below the k=2 finite-scan envelope\n      tail_max=4.03317129516350649\ndouble_vs_high_precision k= 2 max_diff=2.220e-15\nPASS: high precision agrees with the existing double path at k=2\ndouble_vs_high_precision k=10 max_diff=1.101e-20\nPASS: high precision agrees with the existing double path at k=10\ndouble_vs_high_precision k=18 max_diff=5.726e-21\nPASS: high precision agrees with the existing double path at k=18\nk20_cancellation_probe high_precision_q=1.87939769580492291e-6 double_path_q=2.75618845721462215e-12\nPASS: high precision exposes the k=20 post-leading tail lost by the double path\nPASS: support note exists\n      /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RESCALED_TAIL_SUPPORT_NOTE_2026-06-18.md\nPASS: support note keeps the closure boundary explicit\nPASS: support note records the sampled tail rows\nPASS: parent note exists\n      /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md\nPASS: parent note links the rescaled tail support without claiming closure\nremaining blocker: analytic monotone/Neumann tail proof for every k beyond the sampled high-precision window.\nTOTAL: PASS=14, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041321Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18.txt against the .txt beside this log"
+  ]
+ }
+}

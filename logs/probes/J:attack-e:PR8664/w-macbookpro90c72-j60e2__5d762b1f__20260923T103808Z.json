@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8664",
+ "type": "judgment",
+ "lane": "order-blind-zeros-and-holes-20260922",
+ "worker": "w-macbookpro90c72-j60e2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/pr8664/all_orders_and_all_conditions.py",
+ "seed": 59888,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d762b1f",
+ "started_utc": "20260923T103808Z",
+ "elapsed_s": 36.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "pattern (e) sampled evidence: every order statement the runner backs with samples (8-site path soft and rejection, forcing completed law on the cross, six-axis 4-site path) holds exactly over the complete order sets, and pair-form order-blindness holds on the cube with cycles; the single-condition 'worst case 65/128' is not an extremum over every neighbour condition"
+ },
+ "review": "Pattern (e) applied with my own machinery (dyadic integer masses, own neighbour graphs), disjoint from the runner: every order statement the runner backs with samples is rerun over the complete order set (8-site path 40320 orders for the soft and rejection rules, 7-site cross 5040 orders for forcing, 4-site path 24 orders for six-axis rejection), plus an adversarial window with cycles (2x2x2 cube, 40320 orders) and a complete search over all 127 unsoldered neighbour value lists for the extremal label 'worst case 65/128'. All order statements hold exactly; the extremal label does not.",
+ "what": "PR #8664 (docs(campaign): order-blind formation with zeros and holes): attack ORDER_BLIND_FORMATION_WITH_ZEROS_AND_HOLES_NEVER_FAILING_UNSOLDERED_RULES_ARE_CONSTANT_AND_HOLE_RULES_HAVE_PAIR_FORM_BOUNDED_THEOREM_NOTE_2026-09-22.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/order-blind-zeros-and-holes-20260922; git show origin/claude/order-blind-zeros-and-holes-20260922:<note>. Create probes/work/pr8664/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8664/<script>.py\"",
+ "stdout_sha256": "9c1cdb31b058ea1fc3e9b0a04f03b066dd8b130bb03173ed0d0cc9e4ffd2e622",
+ "stdout_tail": " 1/8, 1/16, 1/32\nok P4: six-axis rejection, 4-site path, all 24 orders (runner: 1): one sub-law, completion 125/216 = (5/6)^3, agreement (1/6)(1 + 5(-1/5)^d) = 1, 0, 1/5, 4/25 for d = 0..3\nok P5: soft rule on the 2x2x2 cube (12 bonds, four-cycles), all 40320 orders: one sub-law = prod r0 prod_bonds K atom by atom, completion 18225/524288; the pair-form converse of Theorem 2 holds off trees\nok P6: soft rule over all 127 neighbour value lists: a sub-probability everywhere (the note's claim holds); total mass max 1 (no formed neighbour), max 3/4 with a formed neighbour, min 1/8 at three +1 and three -1 (one-step hole 7/8); 65/128 occurs only at six equal values, the max over six-neighbour lists\nthe sampled order statements: all hold over complete order sets\nSUMMARY: pattern (e) sampled evidence: every order statement the runner backs with samples (8-site path soft and rejection, forcing completed law on the cross, six-axis 4-site path) holds exactly over the complete order sets, and pair-form order-blindness holds on the cube with cycles; the single-condition 'worst case 65/128' is not an extremum over every neighbour condition\nHIT: PR #8664 result 4 labels 65/128 the worst case of the soft pair rule K = (3/4)(1 + ab/3) on every neighbour condition, but over every condition its total mass runs from 1/8 (three formed neighbours at +1, three at -1: one-step hole 7/8) to 1 (none formed), 3/4 with one formed neighbour; 65/128 is the largest total among six-neighbour conditions only\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j60e2",
+  "at_utc": "20260923T103851Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

@@ -1,0 +1,137 @@
+{
+  "adapters": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-build-staged-draft-v1.py",
+      "sha256": "5157386d521b2d4c033a1121b3f85f6ef01a2a7d541639a715ce21553d2bfd64",
+      "syntax": "parsed and compiled only; no adapter main executed"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-capture-v1.py",
+      "sha256": "0862ccd014e1c58ee28698b4e4e3e25f9f51b450d9b17b32624b60e9853110f0",
+      "syntax": "parsed and compiled only; no adapter main executed"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-mutations-v1.py",
+      "sha256": "ab808dc79c51d17368cb0191f3320bdf7306e6b60124db76f839346a9832d93a",
+      "syntax": "parsed and compiled only; no adapter main executed"
+    }
+  ],
+  "cold_binding": null,
+  "syntax_only": true,
+  "guard_controls": [
+    {
+      "adapter": "drain8178-capture-v1.py",
+      "case": "same-main",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "adapter": "drain8178-capture-v1.py",
+      "case": "disjoint-advance",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "adapter": "drain8178-capture-v1.py",
+      "case": "source-overlap",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-capture-v1.py",
+      "case": "runtime-overlap",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-capture-v1.py",
+      "case": "tool-overlap",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-capture-v1.py",
+      "case": "non-descendant",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-capture-v1.py",
+      "case": "moved-main",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-capture-v1.py",
+      "case": "moved-head",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-mutations-v1.py",
+      "case": "same-main",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "adapter": "drain8178-mutations-v1.py",
+      "case": "disjoint-advance",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "adapter": "drain8178-mutations-v1.py",
+      "case": "source-overlap",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-mutations-v1.py",
+      "case": "runtime-overlap",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-mutations-v1.py",
+      "case": "tool-overlap",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-mutations-v1.py",
+      "case": "non-descendant",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-mutations-v1.py",
+      "case": "moved-main",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "adapter": "drain8178-mutations-v1.py",
+      "case": "moved-head",
+      "accepted": false,
+      "expected": false
+    }
+  ],
+  "synthetic_identity_drift": {
+    "error": "SYNTHETIC post-run source identity changed before cache publication",
+    "raw_result": {
+      "path": "/private/tmp/review-drain-20260915/drain8178-synthetic-identity-drift-v1.raw-result.json",
+      "sha256": "3e13a99281bf7bd674972e8a8eb2caa408d94a13cb64efe935540f376edebc40"
+    },
+    "actual_child_calls": 0,
+    "fake_result_calls": 1,
+    "preserved_before_rejection": true
+  },
+  "owned_source_unchanged": true,
+  "science_executions": 0,
+  "staging": 0,
+  "known_staging_hold": "Actual Type extractor returns None for frozen note; builder rejects before staging. Add explicit Type metadata only under root direction and obtain affected confirmation/new freeze and builder revision.",
+  "vocabulary": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-vocab-verification-v1.json",
+    "sha256": "bd779b0a4fcc51445ad7db33ed7cbcb0aad3026066b45e7995e80bf01d52c1f9"
+  }
+}

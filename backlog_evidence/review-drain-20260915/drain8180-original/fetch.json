@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "7c844adf7555a3558729be69179646f6a83a1539",
+  "fetched_ref": "refs/review-loop/fetched/8180-061ee3b62b954abdb38aa8ce20a19254",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+    "headRefOid": "7c844adf7555a3558729be69179646f6a83a1539",
+    "isDraft": false,
+    "number": 8180,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

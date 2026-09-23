@@ -1,0 +1,6 @@
+COMPARATOR: a=5/2, E_2=1/2, C_s=(2/3)(1/2)^|s| solves (a-shift-shift*)C=delta exactly.
+PLANE METRIC: G M = I/3 exactly; M is isotropic with respect to the actual plane metric.
+SYMMETRY: six source generators subgroup elements; inversion doubles to 12, all preserving the six stencil roots.
+COMPLEX COVARIANCE: negative-sign DFT multiplier is conjugate(phi), cross E[X_t conjugate(X_t+1)] is phi; old proof conflates these signs.
+DIFFUSIVE BOUND: 1-u = (2/9)[1-cos k1+1-cos k2+1-cos(k1-k2)] >= 4(k1^2+k2^2)/(9*pi^2) on principal square; log u <= -(1-u) supplies bound (u=0 by continuity).
+NONLINEAR LOG CHECK: beta12 mode(2,2), lag64 modulus .907/.983 gives relative deviation 0.07731434384537128

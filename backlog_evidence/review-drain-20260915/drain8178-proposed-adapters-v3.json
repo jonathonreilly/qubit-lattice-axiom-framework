@@ -1,0 +1,67 @@
+{
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-build-staged-draft-v3.py",
+      "sha256": "a869931442e316216627d8254b7ff41914341c147522cd1dfa6bb7175a664712"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-capture-v2.py",
+      "sha256": "be4ba6f8807a9d92414e743690f2f56a530dd53e7b2a2fd03a5263c196a9410d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-mutations-v2.py",
+      "sha256": "a1e61bca838d31304107868d21e5d9bc3920ab0dd016a695786adf413030c685"
+    }
+  ],
+  "syntax": "compiled only, no adapter main execution",
+  "guard_controls_reused": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-proposed-adapters-v1.json",
+    "sha256": "44af31913a1a8173db67023377f3566fc8d390b2707e71afcfd9e1d53f2b94d2"
+  },
+  "raw_preservation_synthetic_control_reused": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-synthetic-identity-drift-v1.raw-result.json",
+    "sha256": "3e13a99281bf7bd674972e8a8eb2caa408d94a13cb64efe935540f376edebc40"
+  },
+  "primary_and_mutation_logic_unchanged_except_versioned_external_artifact_labels": true,
+  "metadata_confirmation_binding": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-early-review-v2.json",
+    "sha256": "2825826d31bbec8a97dbdc62f0833993087be14d22c49d9c4f268cf7efdafb0f",
+    "prepared_v2_freeze_sha256": "ae109a49dbcbe6705ecbc1008f9d03a0ab75ca6a711f0cb07083c6891c73d3c1",
+    "required_predicates": {
+      "/verdict": "EARLY_AFFECTED_SOURCE_ACCEPTED",
+      "/source_acceptance": true,
+      "/blockers": [],
+      "/material_science_blockers": [],
+      "/source_freeze/sha256": "ae109a49dbcbe6705ecbc1008f9d03a0ab75ca6a711f0cb07083c6891c73d3c1"
+    }
+  },
+  "cold_clearance_binding": null,
+  "source_freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-prepared-v2-source-freeze.json",
+    "sha256": "ae109a49dbcbe6705ecbc1008f9d03a0ab75ca6a711f0cb07083c6891c73d3c1"
+  },
+  "vocabulary": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-vocab-verification-v2.json",
+    "sha256": "b02d5856d575b3d70b66fd5a52080986f9732a993eabd547b25031ffe5937b53"
+  },
+  "staging": 0,
+  "science_executions": 0,
+  "builder_command_schema": "PYTHONDONTWRITEBYTECODE=1 python3 /private/tmp/review-drain-20260915/drain8178-build-staged-draft-v3.py --expected-base <full-current-main-SHA> --version <vN>",
+  "capture_command_schema": "python3 drain8178-capture-v2.py --record PATH --record-sha256 SHA --cheap PATH --cheap-sha256 SHA --cold PATH --cold-sha256 SHA --runner REPO_PATH --expected-base FROZEN_BASE --expected-current-main COLD_REVIEWED_MAIN --plan PATH --plan-sha256 SHA; blocked while cold binding null",
+  "mutations_command_schema": "Same required capture arguments, plus --primary-receipt PATH --primary-receipt-sha256 SHA --mutation one-of-four-new-controls; blocked while cold binding null",
+  "caps": {
+    "wall_seconds": 60,
+    "aggregate_rss_bytes": 402653184
+  },
+  "no_retry": true,
+  "new_controls": [
+    "fourier_sign_wrong",
+    "real_modes_independent_wrong",
+    "zero_start_stationary_wrong",
+    "integer_crossing_floor_wrong"
+  ],
+  "old_controls": "Four independently accepted original mathematical controls reused; never executed by mutation adapter",
+  "source_or_checkout_mutations": "None by adapter preparation. Earlier authorized Type-only repair recorded separately.",
+  "metadata_report_actual_predicates_verified": true,
+  "builder_executed": false
+}

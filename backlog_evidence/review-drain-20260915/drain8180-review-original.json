@@ -1,0 +1,326 @@
+{
+  "pr": 8180,
+  "reviewer_session": "/root/review_8180",
+  "model": "gpt-6-astra",
+  "reasoning": "low",
+  "iteration": 1,
+  "verdict": "FIX REQUIRED; salvageable supplied auxiliary covariance core, no source PASS yet",
+  "head": "7c844adf7555a3558729be69179646f6a83a1539",
+  "base": "95d6ba7d3d3eb83976ea8ef88c750ddf90e0a5db",
+  "main": "a1777fd8af3c62caeef8431b8791fa69ababc1ea",
+  "original_delta": {
+    "path": "/private/tmp/review-drain-20260915/drain8180-original/original.patch",
+    "sha256": "e69901a523d9069e9c781ec4a76300032eee555c2b36314e5a2be138f416afc0"
+  },
+  "history": {
+    "path": "/private/tmp/review-drain-20260915/drain8180-original/history.txt",
+    "sha256": "46e9f45af627d66a1b155a0ae7abf718dd83ff08af8bae8ff6c35555bad7d979"
+  },
+  "original_manifest": {
+    "path": "/private/tmp/review-drain-20260915/drain8180-original/inventory.json",
+    "sha256": "803198546dfbbb180829b4cfa080395cd93c2a49c35dd5c551a00013a553ce1c"
+  },
+  "context_manifest": {
+    "path": "/private/tmp/review-drain-20260915/drain8180-original/context-manifest.json",
+    "sha256": "9ae1eb2b9612c5312388eef19068c30f426b92361f4cb50ffa596eabae34d565"
+  },
+  "proof_record": {
+    "path": "/private/tmp/review-drain-20260915/drain8180-independent-proof.md",
+    "sha256": "9594e19eeed201db760321e8fd226f84688da9e30d7ea102195e0b7032b0590a"
+  },
+  "findings": [
+    {
+      "id": "8180-1",
+      "category": "SEMANTIC_BRIDGE",
+      "priority": 1,
+      "location": "Note title, result, declared objects, T1, boundaries; runner docstring/FENCES",
+      "finding": "Gain-one recursion is not the exact finite-beta sphere Cartesian linearization or an axiom-selected law. Current-main kernel source derives mean gain A(3beta)<1.",
+      "repair": "Retain exact covariance for a separately supplied auxiliary field with centered independent finite-variance noise. State menu, beta, order and product sampling as supplied conditions. Remove physical gravity and axiom-entailment phrasing.",
+      "status": "open"
+    },
+    {
+      "id": "8180-2",
+      "category": "PROOF_OBLIGATION",
+      "priority": 1,
+      "location": "Note T3/N1.3 and runner family_d D2; all historical summaries",
+      "finding": "Comparator product prohibition is false in the representation actually compared. Its partial Fourier inverse is q(k)^|s|/sqrt((2+E_2(k))\u00b2-4); a mixed derivative in full Fourier space cannot rule this out or all rotated frames.",
+      "repair": "Withdraw broad negative and preserve its failed argument. Keep only the narrow fixed-coordinate full-Fourier nonseparability result if needed, or state the corrected mixed-representation kernel with proof. Do not infer any physical-gravity exclusion.",
+      "status": "open"
+    },
+    {
+      "id": "8180-3",
+      "category": "BUG",
+      "priority": 2,
+      "location": "Note T2 and plain-language interpretation; runner C1-C2",
+      "finding": "The order-six substitutions form a subgroup: inversion yields 12 symmetries of u. Coordinate eigenvalue anisotropy is not physical in-plane anisotropy: M=G^-1/3 in the oblique plane basis. The cone axis is normal to the plane.",
+      "repair": "Call order six a subgroup, distinguish u symmetry from phi phase symmetry, remove false physical anisotropy, and retain accurate coordinate quadratic form.",
+      "status": "open"
+    },
+    {
+      "id": "8180-4",
+      "category": "BUG",
+      "priority": 2,
+      "location": "Note T1 proof and declared modes; runner B1-B2/docstring",
+      "finding": "Complex covariance convention is omitted and recurrence uses phi whereas stated Hermitian lag formula then requires conjugate(phi). Cosine tests are blind to this sign; docstring itself uses both signs.",
+      "repair": "Declare negative-exponent DFT, multiplier psi=(1+e^-ik1+e^-ik2)/3 and E[X_t conjugate(X_t+s)]=conjugate(psi)^s V_t. Add complex phase-sensitive control. Clarify stationary nonzero-mode projection, zero mode, L=1, u=0 and s=0 boundaries.",
+      "status": "open"
+    },
+    {
+      "id": "8180-5",
+      "category": "OVERCLAIM",
+      "priority": 1,
+      "location": "Note nonlinear result/Executed/N7, historical checker and output files",
+      "finding": "Finite simulation logs do not establish c(beta)->1, exact phases, common normalization, stationarity or all-mode few-percent agreement. Raw beta12 mode(2,2) lag64 is .907/.983 (7.73% relative error); phase differences are visible. Shells use [0,2pi) coordinate representatives. Rotating-frame comparison changes L and reports no errors.",
+      "repair": "Preserve every control and raw output as finite historical observation; explicitly defer nonlinear asymptotics/calibration and revise quoted accuracy. No new simulation needed.",
+      "status": "open"
+    },
+    {
+      "id": "8180-6",
+      "category": "AUDIT_COMPATIBILITY",
+      "priority": 2,
+      "location": "Note Premises/Imports/frontmatter; runner AUDIT_INPUT_PATHS; citation manifest/cache",
+      "finding": "Actual scientific dependencies are bare paths/open PR labels. Simulator/log evidence supporting headline is not in declared inputs. Keyword/name/floating-point fences do not test the disputed mathematics.",
+      "repair": "Use portable live source/runner/cache/recovery links; bind actual final proof/runtime inputs. Separate historical evidence, correct decisive controls/mutations, recapture final evidence once after frozen inputs. Coordinator regenerates topology; no audit status promoted.",
+      "status": "open"
+    },
+    {
+      "id": "8180-7",
+      "category": "REPO_GOVERNANCE",
+      "priority": 2,
+      "location": "No-Go Discipline Gate and 11 campaign metadata paths",
+      "finding": "N1.3 falsely closes a counter-route; N5 claims all-direction certification not executed; N7 answers nonlinear objections with finite measurements. Five entries are not five distinct closed attacks. Author certificates and inherited prose are not current authority.",
+      "repair": "Preserve complete 19-path originals/inherited shared bytes and all failed/deferred arguments. Reframe as the narrow positive supplied-field theorem; record negative certification deferred without inventing routes. Keep recovery branch when any content remains deferred.",
+      "status": "open"
+    }
+  ],
+  "coverage": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "base": "100644 blob 8f9c496033ee3e37e4ad73433151a79224a60814\t.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "head": "100644 blob 99c15544ba980b6e8ab49aafd71807e71607d691\t.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "main": "100644 blob 8f9c496033ee3e37e4ad73433151a79224a60814\t.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "base_sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af",
+      "head_sha256": "a492d8de1f5d8e1e2a337c655bc1fff2819c7af7198e67e7de018a54d9002abd",
+      "main_sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af",
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block35_findings.md",
+      "base": "",
+      "head": "100644 blob a6ad9cddd628c07dafcc0fa348e8f74d8fbcf8af\t.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block35_findings.md",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "0084e10ae216f98dcd68c28deccb9f8ec61f8a5f953d54136e3d555466aa9b65",
+      "main_sha256": null,
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block35.md",
+      "base": "",
+      "head": "100644 blob c41c1d3a7978219bb77cfe23ad0b3a836317332f\t.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block35.md",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "6f85e24720950ded0d3130aae66f458d9e275ccba0d56b3adf93cc0af639decf",
+      "main_sha256": null,
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block35.md",
+      "base": "",
+      "head": "100644 blob 688a08bdd794ef99851e5e9c49326cf7b0bebea3\t.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block35.md",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "6a3b59fe741d9fced039ce3a3402a7072391fd3b112ff33ec2c70d5242f1349a",
+      "main_sha256": null,
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "base": "100644 blob 6dfc9de13838b8fe1d6d593b83d0d31cd0763b93\t.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "head": "100644 blob 0f32d6940104cbc3d65dbf83e2be4cf771d5dd97\t.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "main": "100644 blob 6dfc9de13838b8fe1d6d593b83d0d31cd0763b93\t.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "base_sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+      "head_sha256": "eb731be158452237e26381bb517b12593b0522851cdbe6f3779e945c8b66ac11",
+      "main_sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "base": "100644 blob 2977b7f9903b58f95963491e44cb244ee894ab84\t.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "head": "100644 blob 255f832a0e785e92405655f019cdae96983c28e8\t.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "main": "100644 blob 2977b7f9903b58f95963491e44cb244ee894ab84\t.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "base_sha256": "6b14211f9f8f1f284602d74b61136b60dca0bc01b508176a309a4bc1d3dd848c",
+      "head_sha256": "5c2ac9e21af52f27d5d086f500375cf2120df5fdf4f8139fe027bffe6728ca26",
+      "main_sha256": "6b14211f9f8f1f284602d74b61136b60dca0bc01b508176a309a4bc1d3dd848c",
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "base": "100644 blob 74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7\t.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "head": "100644 blob b175634fda8df85c3738fc5c5d783512a50a9ec7\t.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "main": "100644 blob 74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7\t.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "base_sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19",
+      "head_sha256": "916d73132886f64ae14d56fa1091462f3ac7a13884a468bef79dc47198c86de4",
+      "main_sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19",
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block35.md",
+      "base": "",
+      "head": "100644 blob f61ae2568dd70feb6384049f43d03c8e59374ea2\t.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block35.md",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "44b39c69c20b67b9cf94cf161750834136da587b8d66125f4f28bf64d9d68ed4",
+      "main_sha256": null,
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "base": "100644 blob 08d17f0940e3756c94ff724c8ff531adc9e029ce\t.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "head": "100644 blob 1082db956bf8e2d2169ad4ea32e92ecd7b9048e2\t.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "main": "100644 blob 08d17f0940e3756c94ff724c8ff531adc9e029ce\t.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "base_sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7",
+      "head_sha256": "dcb5f9f32985bf6ac9e6b4019ca81144b91c669078a4493afda771343e3c98df",
+      "main_sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7",
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "base": "100644 blob e16642020759d3d57935cd6d037d382fc6573bf0\t.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "head": "100644 blob a43ff3c2c2ccff475cc27db506abfd514ae40913\t.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "main": "100644 blob e16642020759d3d57935cd6d037d382fc6573bf0\t.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "base_sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+      "head_sha256": "135aac9d8b3ec47ee5a115ff55eeed74e02f90a8640a80f108e74b4e6ff15d9a",
+      "main_sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "base": "100644 blob 8f432e2cd2631c0cc6a5121f932b305f16d3a023\t.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "head": "100644 blob 1d172a77c9a73b38077959cbf15493958f12e0c3\t.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "main": "100644 blob 8f432e2cd2631c0cc6a5121f932b305f16d3a023\t.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "base_sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3",
+      "head_sha256": "671ab64d4ee321cf247b98454715de02670136aaaf89e6bd2cab114ea27c6676",
+      "main_sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3",
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.out.txt",
+      "base": "",
+      "head": "100644 blob 02101fca58bb7ec5e9e6b134ca99a7a7b3d68b58\t.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.out.txt",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "5c0b5a21edbd92503ad41ece72146624d096800c0a0a1e811e86a27e27cda235",
+      "main_sha256": null,
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.py",
+      "base": "",
+      "head": "100644 blob ddc5ac7cc2a11d4fbeba17f4902e76b8ff9d3bfc\t.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.py",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "9ee7b05a56ca8a820bf73b8b47557f60dae93891dbdc76c767efb13d6823fcb9",
+      "main_sha256": null,
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.out.txt",
+      "base": "",
+      "head": "100644 blob dc412891a09d0048b58d99a07ff6f187ca71b0c9\t.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.out.txt",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "b2b983f47fda43d965790f8b89824c3ea37bc28fd41d7fb20631802e0c3e48c3",
+      "main_sha256": null,
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.py",
+      "base": "",
+      "head": "100644 blob b4897abcc6f235501d339bdacf7b3fb9af2dd633\t.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.py",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "2e7d28a9c6b8b3928ff56e7c06a5b1f93ecd9add2c67bdc19b937392d84e001d",
+      "main_sha256": null,
+      "disposition": "preserve complete original as historical recovery; superseded by final reviewed source only after correction"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md",
+      "base": "",
+      "head": "100644 blob aeca3e00e69002dcc4c6d5676140463b373c3dad\tdocs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "485e742b2cda2a8acd1db2890f9df2efe92a569a427e77f46c1eb16dd9b964e9",
+      "main_sha256": null,
+      "disposition": "narrow to supplied auxiliary-field covariance theorem; preserve all original arguments, including refuted product and deferred nonlinear claims"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "base": "100644 blob 9c5ee548861f53d42bff5d600652e7391b769f17\tdocs/audit/data/citation_graph_manifest.json",
+      "head": "100644 blob 021ff48350183e5b7316c635a54e617689848821\tdocs/audit/data/citation_graph_manifest.json",
+      "main": "100644 blob 5d0806f6911666ea6d3d05d06c04a8dd4ba3ac33\tdocs/audit/data/citation_graph_manifest.json",
+      "base_sha256": "a3dcc3d90687ae261e65dc02caec57008d018c514d8ef6cd6fcbfb0d2806f5fb",
+      "head_sha256": "a43c4f0a13f1efec862bbc87a04870671e432b7690ddd5f87b94a6fa58a5095a",
+      "main_sha256": "0054602169406999ea0b3f302d68262d5972d274f16c321a3ec63c419d6fb1ce",
+      "disposition": "historical topology; coordinator regenerates final topology without audit verdict changes"
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.txt",
+      "base": "",
+      "head": "100644 blob 35d45c9f652f0fecca5dca12d32a79da7df8950c\tlogs/runner-cache/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.txt",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "477fb9f7bf75d035becd14806c753630a279ac414ffb61c5cfbe94426142ae26",
+      "main_sha256": null,
+      "disposition": "historical original evidence; never restamp as corrected-source execution"
+    },
+    {
+      "path": "scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py",
+      "base": "",
+      "head": "100644 blob 3b2470cf5760f18a3bb7405f8a55fcaf8398614a\tscripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py",
+      "main": "",
+      "base_sha256": null,
+      "head_sha256": "32935c6c56367443f7b913bd5bd4519b52b7c6d033978668fe64a44d259e7700",
+      "main_sha256": null,
+      "disposition": "correct complex phase, geometric symmetry/metric and comparator logic; replace prose-only assertions with decisive controls"
+    }
+  ],
+  "source_read_scope": "Complete 19-path original delta and complete new note/runner/control source/raw output; changed campaign arguments; necessary actual input definitions and current-main axiom/primitive authority sources. Complete shared base/head/main files frozen; unrelated inherited campaign science not re-certified. PR8178 original reviewer findings read as unpublished context only.",
+  "lenses": {
+    "CodeRunnerReviewer": "FIX",
+    "PhysicsClaimReviewer": "BOUNDED only after correction",
+    "ProofObligationReviewer": "FAIL original T3; CONDITIONAL auxiliary T1 with convention correction; T2 arithmetic sound but geometric interpretation false",
+    "ImportSupportReviewer": "explicit supplier correction required",
+    "NatureRetentionReviewer": "OPEN; no retention granted",
+    "NoGoDisciplineReviewer": "FAIL N1/N3/N5/N7; N2 no wall independence established; N4 no gravity entailment from supplied comparator; N6 primitives not walls; N8 earlier walk and torus context does not establish nonlinear claims",
+    "LabelingConventionReviewer": "not applicable",
+    "RepoGovernanceReviewer": "FIX",
+    "AuditCompatibility": "FIX; no generated verdict authority in delta",
+    "MethodologySkillReviewer": "not applicable"
+  },
+  "checks": {
+    "independent_controls_receipt": "/private/tmp/review-drain-20260915/drain8180-independent-controls-execution.json",
+    "independent_controls_stdout": "/private/tmp/review-drain-20260915/drain8180-independent-controls.stdout",
+    "independent_controls_stderr": "/private/tmp/review-drain-20260915/drain8180-independent-controls.stderr",
+    "static_preexecution": "/private/tmp/review-drain-20260915/drain8180-original/preexecution-static.json",
+    "original_primary_runs": 0,
+    "simulation_runs": 0,
+    "pipeline_runs": 0,
+    "diff_checks": "working/index clean; original patch reviewed"
+  },
+  "skipped": [
+    "Original primary and mutation execution: known static/independent decisive defects mean a repeated expected PASS adds no useful evidence.",
+    "Expensive nonlinear simulators and author refuter: no need for fresh samples to disprove universal promotion of recorded finite data.",
+    "Pipeline/strict/changed-evidence: coordinator combined candidate only."
+  ],
+  "claims": {
+    "accepted_mathematical_core": "finite auxiliary-field equal/lag covariance, projected stationary covariance, zero-mode variance, coordinate quadratic form, diffusion upper bound",
+    "rejected": "all-direction/mixed-representation product prohibition; physical planar anisotropy from oblique-coordinate eigenvalues; exact finite-beta sphere linearization identification",
+    "deferred": "nonlinear asymptotics, calibration, gravity-node interpretation, inherited spatial logarithmic asymptotics from unlanded8178; full negative packet certification"
+  },
+  "current_main_preservation": "Frozen exact main identities for every original changed path; final main loss/interactions check remains pending corrected candidate. Do not replay complete stale shared files.",
+  "commits_created": 0,
+  "external_comments": 0,
+  "audit_verdict_applied": false,
+  "same_session_final_confirmation_required": true
+}

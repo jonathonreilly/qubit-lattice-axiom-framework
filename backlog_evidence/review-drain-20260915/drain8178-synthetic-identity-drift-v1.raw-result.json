@@ -1,0 +1,9 @@
+{
+  "runner": "synthetic",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "SYNTHETIC raw stdout\n",
+  "stderr": "SYNTHETIC stderr\n",
+  "elapsed_sec": 0,
+  "timeout_sec": 60
+}

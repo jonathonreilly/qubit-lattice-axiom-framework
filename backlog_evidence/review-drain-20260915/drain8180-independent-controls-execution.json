@@ -1,0 +1,16 @@
+{
+  "source": "/private/tmp/review-drain-20260915/drain8180-independent-controls.py",
+  "source_sha256": "367c08ac1824981a8221c960eb002ab7a84d278f180488243841eee8e558ff7d",
+  "supervisor_sha256": "64caadf3a75733662372e2c8fbcb86606edb35fb1adec906ac11a360780f73d0",
+  "exit_code": 0,
+  "elapsed_seconds": 0.0570797499967739,
+  "peak_worker_tree_rss_bytes": 1572864,
+  "samples": 1,
+  "limits": {
+    "seconds": 30,
+    "bytes": 402653184
+  },
+  "violation": null,
+  "stdout_sha256": "695934a3209c78c81468249401769bd5666bb0da8a5946eb1e6541c577221b09",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

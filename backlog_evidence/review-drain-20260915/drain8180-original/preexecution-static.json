@@ -1,0 +1,23 @@
+{
+  "primary_source": "/private/tmp/review-drain-20260915/drain8180-original/head/scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py",
+  "source_sha256": "32935c6c56367443f7b913bd5bd4519b52b7c6d033978668fe64a44d259e7700",
+  "static_discovery": "AST inspection only; no original code imported or executed",
+  "declared_timeout_seconds": 900,
+  "actual_inputs": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md",
+      "sha256": "485e742b2cda2a8acd1db2890f9df2efe92a569a427e77f46c1eb16dd9b964e9"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    }
+  ],
+  "fixed_workload": "SymPy L=3,4 covariance matrices through t=6,4; symbolic series; no source primary simulations",
+  "decision": "Original primary not executed: decisive independent proof/counterexample already shows false passing claims; historical stdout preserved. Original simulator and refuter not run; costly and irrelevant to correcting the theorem.",
+  "independent_controls": "30 s / 384 MiB sampled process-tree limits; raw stdout and stderr retained"
+}

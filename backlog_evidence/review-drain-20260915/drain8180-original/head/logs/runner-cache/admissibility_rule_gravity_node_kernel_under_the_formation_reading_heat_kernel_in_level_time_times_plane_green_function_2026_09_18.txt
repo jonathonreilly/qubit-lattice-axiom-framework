@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py
+runner_sha256: 32935c6c56367443f7b913bd5bd4519b52b7c6d033978668fe64a44d259e7700
+input_fingerprint_sha256: a23daef74708865e5cb66e92f88d98de155a068e7affc7fb9c1d14629cc5661c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
+PASS: A4 all declared inputs exist
+PASS: B1 T1: for a mode with multiplier phi driven by white noise, Cov(theta^_k(t), theta^_k(t+s)) = phi^s Var(theta^_k(t)) = sigma^2 phi^s (1 - u^t)/(1 - u), u = |phi|^2 (symbolic, t <= 8, s <= 3); so the stationary kernel is C_s = sigma^2 (I - P P*)^{-1} P*^s
+PASS: B2 T1: on the tori L = 3, 4 the exact rational cross-level covariance Sigma_{t,t+s} = Sigma_t (P^s)^T gives, for every cosine character of a nonzero mode, Cov/Var = Re phi(k)^s at s = 1, 2, 3, and t/L^2 for the plane average (the zero mode's random walk)
+PASS: C1 T2: 1 - u(k) = k^T M k + O(k^4) with M = (1/9)[[2,-1],[-1,2]], eigenvalues 1/9 (along (1,1)) and 1/3 (along (1,-1)): an anisotropic two-dimensional quadratic form; the comparator's E(k) = sum 2(1 - cos k_i) = |k|^2 + O(k^4) is isotropic on Z^3
+PASS: C2 T2: u(k) is invariant under k1 <-> k2 and (k1, k2) -> (k1 - k2, -k2), which generate a group of order 6 permuting {k1, k2, k1 - k2} (the three predecessor directions); the comparator's E(k) is invariant under the 48 signed permutations of (k1, k2, k3)
+PASS: D1 T3: for every nonzero mode |C_s(k)|/C_0(k) = |phi(k)|^s <= exp(-(1 - u) s/2) <= exp(-2|k|^2 s/(9 pi^2)) on the square (log(1 - y) <= -y): the kernel is diffusive, correlations across s levels living at in-plane scales |k|^{-1} ~ s^{1/2}; and phi(k) = 1 + i(k1 + k2)/3 + O(k^2): the heat kernel drifts along the causal cone's axis
+PASS: D2 T3: the comparator's 1/E(k) is not of the product form (plane factor) x (cross-plane factor) — its logarithm has a non-vanishing mixed derivative in (k1, k3) — so it cannot be written as a plane Green function times a propagator in any direction; the formation kernel is exactly of that form
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the mode covariance identity symbolically; the small-k forms and eigenvalues; the drift; log(1 - y) <= -y
+per_site: executed — the exact rational cross-level covariances on the tori L = 3, 4 against Re phi(k)^s for every cosine character
+per_mode: executed — the symmetry group of u (order 6) and of E (signed permutations); the non-product form of 1/E by a mixed derivative
+per_block: executed — the diffusive decay bound exp(-2|k|^2 s/(9 pi^2)) for every nonzero mode
+lattice_wide: T1-T3 hold for every L and beta for the linearized field; the nonlinear law's structure factors and cross-level ratios are executed in the controls and not claimed; no gravity kernel is derived
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

@@ -19,14 +19,21 @@
  "stdout_sha256": "d84f854f1703545a89aebce41222b81141000396fe46d2653fc9e03ece213e16",
  "stdout_tail": "y branch socket :: ('LAUNCH_A', 4)\n\nLAW MERGE\nPASS 192 physical row-copy contexts cover all selected rows :: Counter({5: 192})\nPASS 204 canonical router rows expand to 4,896 proper-cubic rows :: (204, 4896)\nPASS router merges into 82,316 rows without conflict :: (77420, 4896, 82316)\nPASS all wrong selectors remain inert at every typed branch socket :: (1024, ())\nPASS deleting any direct router parent suppresses its intended output :: (1004, ())\n\nEXHAUSTIVE CAUSAL GRAPHS\nPASS all 10,800 bases/outcomes have the exact finite causal graph :: (Counter({(1, 0): 2880, (0, 1): 2880, (1, 1): 2880, (0, 0): 2160}), [])\nPASS all 43,200 rotated canonical-basis graphs are exact :: []\nPASS combined graph census is 54,000 with all four pivot cases present :: 54000\n\nMIXED-DEVICE CLOSURE\nPASS router rows preserve all 86,640 prior unified histories :: []\nPASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: physical four-case pivot router :: \nFAIL note contains: supplied commutation bits :: \nFAIL note contains: supplied product row :: \nFAIL note contains: case-dependent output sites :: \nFAIL note contains: deterministic membership remains open :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 16 FAIL 10\nRESULT FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T031406Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T032923Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d0317746 differs from the current HEAD 1c114768 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note is on main only as archive/notes/docs/work_history/repo/review_feedback/PHYSICAL_FOUR_CASE_PIVOT_ROUTER_CYCLE152_NOTE_2026-07-15.md; every FAIL is a note-existence or note-text gate on it.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T032923Z"
  }
 }

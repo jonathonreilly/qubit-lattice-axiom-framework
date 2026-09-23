@@ -1,0 +1,32 @@
+{
+ "task": "R:local_to_global_cubic_process_glue_cycle33_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "local",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/local_to_global_cubic_process_glue_cycle33_2026_07_14.py",
+ "seed": 74624,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T144344Z",
+ "elapsed_s": 1.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9acd03f462920174f9cb930259286a83e3703acd2ceda02aa4555ce0f2326e28",
+ "stdout_tail": "==================\nPASS H note contains one fixed nearest-neighbor controlled-phase rule\nPASS H note contains normalized strongly-positive decoherence functional\nPASS H note contains adaptive instruments\nPASS H note contains identity-slot containment\nPASS H note contains record-fibre future-equivalence\nPASS H note contains boundary/history datum survives\nPASS H note contains no independent finite global measure atom survives\nPASS H note contains projective extension\nPASS H note contains quasilocal automorphism\nPASS H note contains retyped admissibility\nPASS H note contains separate law\nPASS H note contains same local rule\nPASS H note contains different boundary\nPASS H note contains global consistency is a theorem obligation\nPASS H note contains no qualification amendment is forced\nPASS H finite and infinite claims are separated\nPASS H open-boundary truncation is not mistaken for restriction\nPASS H global phase limitation is scoped\nPASS H N1 section exists\nPASS H N2 section exists\nPASS H N3 section exists\nPASS H N4 section exists\nPASS H N5 section exists\nPASS H N6 section exists\nPASS H N7 section exists\nPASS H N8 section exists\nPASS H no-go discipline passes\n\n===============================================================================\nTOTAL\n===============================================================================\nPASS=102 FAIL=1\nRESULT: FAIL\nPLACEMENT_GATE: exact local composition plus an exact consistent boundary derives the global process; local rule alone does not\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T144345Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

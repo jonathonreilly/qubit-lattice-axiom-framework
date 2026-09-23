@@ -1,0 +1,35 @@
+{
+ "task": "R:corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "corner",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+ "seed": 74543,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T144223Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d23ccaead41068d7d4691c5c942d38ffdec8ede3eb7715f945975375724c9332",
+ "stdout_tail": "-> g O g^-1 with C -> g C g^-1, covering all eight C3 elements) leave (a, |b|, r where defined) unchanged with circulant residual 0, for every one of the twelve operators\nPASS E3 [exact] naming C^2 rather than C the generator sends b -> conj(b), i.e. delta -> -delta when b != 0, and leaves (a, |b|, r where defined) fixed on both carriers: the orientation of the cyclic order is a supplied datum, not a computed one\nPASS F1 [exact] exactly 4 of the twelve separate the two carriers: sum Z_a and epsilon, by the sign of a -- the chirality grading's own sign convention -- and the two Gamma-Xi cross terms, with equal |b| and delta differing by exactly pi; the remaining 8 restrict identically to both\nPASS F2 [exact] no listed operator is C3-invariant with b != 0 on exactly one carrier: the off-diagonal part is either absent on both or present on both, so nothing in this list singles out one triplet as the one carrying a weight\nPASS R1 [exact mixed carrier] actual rank3 rational projector commutes with all24 lifts, is irreducible and distinct from the Hamming pair\nPASS R2 [exact domains] all24 actual table rows retain undefined r at a=0 and undefined phase at b=0, including zero/scalar/off-diagonal cases\nSUMMARY: exact isotypic multiplicities permit mixed cubic carriers; the supplied Hamming grading selects two copies. The original finite coefficient table is retained, with ratios and phases only on their domains; no physical readout or carrier selection follows.\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T144224Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

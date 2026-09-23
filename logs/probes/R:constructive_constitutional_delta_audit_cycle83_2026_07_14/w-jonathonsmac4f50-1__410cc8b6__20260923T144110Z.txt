@@ -1,0 +1,42 @@
+
+===============================================================================
+A - Live foundation, primitive, and source contract
+===============================================================================
+FAIL A cycle83 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/CONSTRUCTIVE_CONSTITUTIONAL_DELTA_AUDIT_CYCLE83_NOTE_2026-07-14.md
+PASS A axioms exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS A registry exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/axiom_premise_nodes.json
+PASS A scale exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+PASS A kinetic exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS A realized exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+FAIL A cycle47 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/SEED_ORBIT_WRITE_ONCE_TRANSDUCER_CYCLE47_NOTE_2026-07-14.md
+PASS A cycle75 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/SEVEN_BIT_PHYSICAL_ROLE_COMPARATOR_CYCLE75_NOTE_2026-07-14.md
+PASS A cycle78 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/JOINT_ENDPOINT_MIXED_REBIND_CYCLE78_NOTE_2026-07-14.md
+PASS A cycle80 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/THREE_PHASE_RECURRENT_APPEND_TUBE_CYCLE80_NOTE_2026-07-14.md
+FAIL A cycle81 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/EIGHT_BIT_PHYSICAL_ROLE_COMPARATOR_CYCLE81_NOTE_2026-07-14.md
+FAIL A actuality exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/BARE_METAL_RECORD_ACTUALIZATION_PRIMARY_SOURCE_AUDIT_2026-07-14.md
+FAIL A born exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/OPERATIONAL_QUOTIENT_BORN_AFFINITY_CYCLE20_NOTE_2026-07-14.md
+FAIL A clock exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/CLOCK_AS_COMMIT_COUNT_AND_RATE_CLASSIFICATION_CYCLE22_NOTE_2026-07-14.md
+FAIL A matter exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/MATTER_COUNTING_CHIRALITY_EXACT_LAW_PLACEMENT_NOTE_2026-07-14.md
+PASS A gravity exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/LOCAL_CONSERVATIVE_COMMIT_RESOURCE_GRAVITY_CYCLE9_NOTE_2026-07-14.md
+FAIL A law_identity exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/EXACT_LAW_UNIQUENESS_SELECTION_PRIMARY_SOURCE_AUDIT_NOTE_2026-07-14.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/constructive_constitutional_delta_audit_cycle83_2026_07_14.py", line 346, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/constructive_constitutional_delta_audit_cycle83_2026_07_14.py", line 336, in main
+    source_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/constructive_constitutional_delta_audit_cycle83_2026_07_14.py", line 141, in source_contract
+    texts = {name: normalized(path) for name, path in SOURCES.items()}
+                   ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/constructive_constitutional_delta_audit_cycle83_2026_07_14.py", line 71, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/SEED_ORBIT_WRITE_ONCE_TRANSDUCER_CYCLE47_NOTE_2026-07-14.md'

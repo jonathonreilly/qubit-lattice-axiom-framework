@@ -1,0 +1,32 @@
+FAIL the Cycle-287 note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/CONTACT_CLOSE_TYPED_RECORD_DAG_CYCLE287_NOTE_2026-07-17.md
+PASS a Cycle-282-style physical one-hot program state drives the exact Cycle-281 five-stage receiver :: {'program_isometry_residual': 0.0, 'active_roles': ('U_I_WRITE', 'ARCHIVE', 'U_I_RESET', 'POSITIVE_CLOSE', 'HISTORY_EXPORT'), 'rail_M2': 12, 'role_marker_M2': 36, 'host_selected_stage_actions': 0}
+PASS the programmed ideal candidate event/history effects equal Q while deleting either U_I removes both :: {'ideal': PhysicalPacket(write=True, archive=True, reset=True, candidate_event=True, history_export=True, close_effect_norm=7.54983443527075, history_effect_norm=7.54983443527075), 'delete_first_U_I': PhysicalPacket(write=False, archive=False, reset=False, candidate_event=False, history_export=False, close_effect_norm=0.0, history_effect_norm=0.0), 'delete_second_U_I': PhysicalPacket(write=True, archive=True, reset=False, candidate_event=False, history_export=False, close_effect_norm=0.0, history_effect_norm=0.0), 'delete_both_U_I': PhysicalPacket(write=False, archive=False, reset=False, candidate_event=False, history_export=False, close_effect_norm=0.0, history_effect_norm=0.0)}
+PASS the conditional receiving DAG is invariant under every base topological order :: {'topological_orders': (('write', 'archive', 'reset', 'candidate_event', 'actual_event', 'history_export', 'commit', 'Record', 'permanent_Record'), ('write', 'archive', 'reset', 'candidate_event', 'history_export', 'actual_event', 'commit', 'Record', 'permanent_Record')), 'formed_nodes': ('Record', 'actual_event', 'archive', 'candidate_event', 'commit', 'history_export', 'permanent_Record', 'reset', 'write'), 'maximum_dependency_rank_not_time': 8}
+PASS all edge deletions are load bearing for their child and the final conditional permanent Record :: [{'edge': ('Record', 'permanent_Record'), 'child_removed': True, 'permanent_Record_removed': True}, {'edge': ('actual_event', 'commit'), 'child_removed': True, 'permanent_Record_removed': True}, {'edge': ('archive', 'candidate_event'), 'child_removed': True, 'permanent_Record_removed': True}, {'edge': ('archive', 'reset'), 'child_removed': True, 'permanent_Record_removed': True}, {'edge': ('candidate_event', 'actual_event'), 'child_removed': True, 'permanent_Record_removed': True}, {'edge': ('candidate_event', 'history_export'), 'child_removed': True, 'permanent_Record_removed': True}, {'edge': ('commit', 'Record'), 'child_removed': True, 'permanent_Record_removed': True}, {'edge': ('history_export', 'commit'), 'child_removed': True, 'permanent_Record_removed': True}, {'edge': ('reset', 'candidate_event'), 'child_removed': True, 'permanent_Record_removed': True}, {'edge': ('write', 'archive'), 'child_removed': True, 'permanent_Record_removed': True}]
+PASS occurrence, commit, Record typing, and conditional permanence uses remain separately exposed to deletion :: {'occurrence': ('archive', 'candidate_event', 'history_export', 'reset', 'write'), 'commit_map': ('actual_event', 'archive', 'candidate_event', 'history_export', 'reset', 'write'), 'record_typing': ('actual_event', 'archive', 'candidate_event', 'commit', 'history_export', 'reset', 'write'), 'permanence': ('Record', 'actual_event', 'archive', 'candidate_event', 'commit', 'history_export', 'reset', 'write')}
+PASS deleting either U_I removes the candidate event and commit even when every semantic import is granted :: {'delete_first_U_I': (), 'delete_second_U_I': ('archive', 'write'), 'delete_both_U_I': ()}
+PASS parallel and serial conditional Record-DAG compositions are topological-order invariant :: {'parallel': {'schedules': 194480, 'formed': 18, 'maximum_dependency_rank_not_time': 8, 'rank_signatures': 1}, 'serial': {'schedules': 4, 'formed': 18, 'maximum_dependency_rank_not_time': 16, 'rank_signatures': 1}}
+PASS the serial join is load bearing while parallel composition has no hidden cross-edge :: {'serial_join_cut_formed': ('A:Record', 'A:actual_event', 'A:archive', 'A:candidate_event', 'A:commit', 'A:history_export', 'A:permanent_Record', 'A:reset', 'A:write')}
+PASS the Q-controlled receiver, carried program roles, and conditional DAG have proper-cubic carried covariance :: {'proper_cubic_frames': 24, 'failures': [], 'Q_role': 'proper-cubic scalar', 'program_and_DAG_roles': 'carried supplied data'}
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/contact_close_typed_record_dag_cycle287_2026_07_17.py", line 858, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/contact_close_typed_record_dag_cycle287_2026_07_17.py", line 835, in main
+    inventory = time_firewall_and_inventory_controls()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/contact_close_typed_record_dag_cycle287_2026_07_17.py", line 781, in time_firewall_and_inventory_controls
+    text = normalized(NOTE)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/contact_close_typed_record_dag_cycle287_2026_07_17.py", line 73, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/CONTACT_CLOSE_TYPED_RECORD_DAG_CYCLE287_NOTE_2026-07-17.md'

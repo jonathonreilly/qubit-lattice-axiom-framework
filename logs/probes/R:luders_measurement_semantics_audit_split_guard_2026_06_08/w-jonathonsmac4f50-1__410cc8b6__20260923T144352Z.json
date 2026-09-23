@@ -1,0 +1,36 @@
+{
+ "task": "R:luders_measurement_semantics_audit_split_guard_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "luders",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/luders_measurement_semantics_audit_split_guard_2026_06_08.py",
+ "seed": 74632,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T144352Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=22 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b260027e725edf41422034b4c2368c5d93068e8e75a80122c12cc5734cedec8e",
+ "stdout_tail": "LUEDERS MEASUREMENT-SEMANTICS AUDIT SPLIT GUARD 2026-06-08\nPASS docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md exists\nPASS docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md exists\nPASS docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md exists\nPASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md exists\nPASS docs/RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md exists\nPASS docs/MINIMAL_AXIOMS_2026-06-05.md exists\nPASS parent declares conditional-support assembly\nPASS parent says not retained/unbounded/native Lueders theorem\nPASS parent names 2026-06-08 split\nPASS parent enumerates PEP finite support\nPASS parent enumerates KP finite support\nPASS parent enumerates finite pointer-record write\nPASS parent enumerates typed record-instrument kernel\nPASS parent identifies residual measurement-semantics bridge\nPASS parent states Record axiom supplies no probability/instrument\nPASS parent keeps Born/measurement probability premise open\nPASS PEP bridge denies measurement probability semantics\nPASS KP bridge scopes out general apparatus label-mixing\nFAIL record-write bridge is finite pointer-model conditional\nPASS record-write bridge denies Born/probability derivation\nPASS kernel interface is under supplied instrument\nPASS kernel interface leaves trace/effect probability open\nPASS minimal axioms deny instrument/Born content\nSUMMARY: PASS=22 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T144352Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=22 FAIL=1' vs cache 'SUMMARY: PASS=23 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:connected_edge_same_code_local_instrument_cycle278_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "connected",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/connected_edge_same_code_local_instrument_cycle278_2026_07_17.py",
+ "seed": 74434,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T144034Z",
+ "elapsed_s": 36.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0a166144dcf1446ae03556b67e717245390da967eaa32399f10afc24fd138de6",
+ "stdout_tail": "': True, 'Wilson_pointer_p1_plus_minus': ('0', '1'), 'one_factor_deleted_increment': 0, 'bounded_contact_pointer_uniform_p1': '57/64'}, {'L': 6, 'axis': 1, 'first_wrap': 3, 'wrapped_central_increment': 3, 'paired_seam_move_possible': False, 'Wilson_factor_count': 18, 'word_equals_Wilson': True, 'Wilson_pointer_p1_plus_minus': ('0', '1'), 'one_factor_deleted_increment': 0, 'bounded_contact_pointer_uniform_p1': '57/64'}, {'L': 6, 'axis': 2, 'first_wrap': 3, 'wrapped_central_increment': 3, 'paired_seam_move_possible': False, 'Wilson_factor_count': 18, 'word_equals_Wilson': True, 'Wilson_pointer_p1_plus_minus': ('0', '1'), 'one_factor_deleted_increment': 0, 'bounded_contact_pointer_uniform_p1': '57/64'}], 'scope': 'no post-wrap equality theorem for arbitrary states or observables', 'extended_Wilson_pointer_bounded_support': False}\nPASS lawful-domain and interpretation firewalls reject undeclared sizes, sectors, and pointer algebras :: {'rejected_controls': 3, 'included': 'Cycle-275 total-even matched projectors and even observables in a Cycle-271 pre-wrap cone', 'excluded': 'odd one-particle/rank-73 states, unmatched states, global preparation, and arbitrary post-wrap processes', 'preparation_trace_readout_outcome_selection_are_imports': True, 'instrument_is_occurrence': False, 'pointer_is_Record': False, 'compiler_iteration_is_physical_time': False, 'shared_obstruction': False, 'axiom_pressure': False}\nSUMMARY PASS 11 FAIL 0\nRESULT CYCLE278_CONNECTED_EDGE_LOCAL_INSTRUMENT_GREEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T144110Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

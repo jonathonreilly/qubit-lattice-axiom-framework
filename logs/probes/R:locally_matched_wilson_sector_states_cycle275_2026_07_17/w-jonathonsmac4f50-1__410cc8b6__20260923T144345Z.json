@@ -1,0 +1,32 @@
+{
+ "task": "R:locally_matched_wilson_sector_states_cycle275_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "locally",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/locally_matched_wilson_sector_states_cycle275_2026_07_17.py",
+ "seed": 74625,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T144345Z",
+ "elapsed_s": 6.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b03d04c2d261900707b217d080d29b90d54e0a2839eccbe891e922eea57fdb3a",
+ "stdout_tail": " 'Wilson_projector_support': (21, 17, 21), 'Wilson_hopping_factor_count': 9, 'comparison_membrane_support': (13, 13, 13), 'basis_diagonal_string_length': 3, 'two_input_fanin_depth_lower_bound': 5}, {'L': 4, 'Wilson_projector_support': (27, 23, 27), 'Wilson_hopping_factor_count': 12, 'comparison_membrane_support': (20, 20, 20), 'basis_diagonal_string_length': 6, 'two_input_fanin_depth_lower_bound': 5}, {'L': 5, 'Wilson_projector_support': (33, 29, 33), 'Wilson_hopping_factor_count': 15, 'comparison_membrane_support': (41, 41, 41), 'basis_diagonal_string_length': 6, 'two_input_fanin_depth_lower_bound': 6}, {'L': 6, 'Wilson_projector_support': (39, 35, 39), 'Wilson_hopping_factor_count': 18, 'comparison_membrane_support': (52, 52, 52), 'basis_diagonal_string_length': 9, 'two_input_fanin_depth_lower_bound': 6}], 'algebraic_global_state_exists': True, 'bounded_preparation_circuit': False, 'universal_preparation_no_go': False}\nPASS the lawful domain and interpretation firewalls remain explicit :: {'included': 'even observables in a contractible actual Cycle-230 stream-gate cone under the Cycle-271 comparison maps', 'excluded': 'wrapped Wilson observables, membranes, odd states, unmatched states, and preparation claims', 'result_type': 'local reduced-state equality backed by explicit global mixed states', 'compiler_iteration_is_physical_time': False, 'Wilson_labels_are_Records': False, 'shared_obstruction': False, 'axiom_pressure': False}\nSUMMARY PASS 13 FAIL 1\nRESULT CYCLE275_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T144352Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

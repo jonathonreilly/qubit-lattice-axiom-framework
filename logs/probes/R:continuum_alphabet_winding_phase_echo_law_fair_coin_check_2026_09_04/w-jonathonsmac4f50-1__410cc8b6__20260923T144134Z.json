@@ -1,0 +1,35 @@
+{
+ "task": "R:continuum_alphabet_winding_phase_echo_law_fair_coin_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "continuum",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/continuum_alphabet_winding_phase_echo_law_fair_coin_check_2026_09_04.py",
+ "seed": 74494,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T144134Z",
+ "elapsed_s": 19.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "91a185607d775141e8173240b66d7659e1daae8ced9bda8a8a17fe877953015d",
+ "stdout_tail": "ue, 'complete_spectrum_certified': False}, {'k': 60, 'cut': 0.6859999999999999, 'returned_inside': 60, 'exterior_returned': False, 'complete_spectrum_certified': False}, {'k': 60, 'cut': 0.6859999999999999, 'returned_inside': 48, 'exterior_returned': True, 'complete_spectrum_certified': False}, {'k': 24, 'cut': 0.3, 'returned_inside': 2, 'exterior_returned': True, 'complete_spectrum_certified': False}, {'k': 24, 'cut': 0.3, 'returned_inside': 2, 'exterior_returned': True, 'complete_spectrum_certified': False}, {'k': 24, 'cut': 0.3, 'returned_inside': 18, 'exterior_returned': True, 'complete_spectrum_certified': False}, {'k': 24, 'cut': 0.3, 'returned_inside': 2, 'exterior_returned': True, 'complete_spectrum_certified': False}]\nSUMMARY: Finite indexed/R1 menus, pinned static fields and returned-subspace spectra; supplied Born grades and independent-resampling counter-route. No physical or universal index verdict.\nper_element: the actual finite algebra and counterexample values are exercised; no physical input is derived.\nper_site: only the stated local menus or site-summed observables are measured; permanent formation is supplied.\nper_mode: selected finite eigenvectors and returned subspaces only; no complete infinite spectrum is claimed.\nper_block: the declared finite boxes, schedules and full small counters are checked at their stated tolerances.\nlattice_wide: no infinite-volume, general-index, universal physical no-go or asymptotic claim is certified.\nTOTAL: PASS=33 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T144154Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/continuum_alphabet_winding_phase_echo_law_fair_coin_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

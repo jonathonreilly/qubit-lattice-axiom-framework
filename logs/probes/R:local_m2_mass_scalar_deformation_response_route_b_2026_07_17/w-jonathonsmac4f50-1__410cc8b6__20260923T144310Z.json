@@ -1,0 +1,32 @@
+{
+ "task": "R:local_m2_mass_scalar_deformation_response_route_b_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "local",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/local_m2_mass_scalar_deformation_response_route_b_2026_07_17.py",
+ "seed": 74590,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T144310Z",
+ "elapsed_s": 34.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "14d2ee42c8b9d269236eb034fe4a28823d367750b271ca6f57af24b8eec16523",
+ "stdout_tail": "tiffness_residual': 4.1016060314694323e-16, 'three_green_residual': 4.0919025283447565e-16}, {'L': 7, 'held_out': True, 'stiffness_residual': 4.552521930955827e-16, 'three_green_residual': 1.21058561706807e-15}]\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE\nPASS the declared domain accepts the imported six-mode blocks and rejects aliased or mistyped controls :: {'negative_fixture_rejections': 3}\nPASS the supplied structure inventory is explicit :: {'supplied': ('beta=-0.3 common-family species and m=-3 tan(beta/2)', 'g=0.37 onsite contact and its insertion order', 'Cycle-269 connected physical matter code and B representatives', 'six additional field M2 sites per coarse cell', 'vacuum plus one-excitation field code restriction', 'uniform scalar transition X_s', 'bilinear M_x tensor X_s vertex', 'epsilon parameter, zero, sign, and normalization', 'finite-coin field law and K=2I-U-U-dagger stiffness', 'periodic zero-mean boundary/source fixture'), 'derived': ('exact finite relative update', 'Hermitian bounded deformation response', 'parallel additivity', 'common-rephase cancellation', 'physical-M2 support/leakage/covariance', 'free Cycle-213 and static Cycle-216 scalar reductions'), 'not_earned': ('deformation-dependent phase zero', 'deformation normalization', 'direct Cycle-213 source term', 'combined continuity and recoil', 'reciprocal geometry or metric response', 'physical energy/stress/source selection')}\n\nSUMMARY PASS 23 FAIL 1\nRESULT LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T144344Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

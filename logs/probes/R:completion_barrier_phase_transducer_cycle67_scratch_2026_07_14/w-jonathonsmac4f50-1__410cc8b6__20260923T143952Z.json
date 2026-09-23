@@ -1,0 +1,32 @@
+{
+ "task": "R:completion_barrier_phase_transducer_cycle67_scratch_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "completion",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/completion_barrier_phase_transducer_cycle67_scratch_2026_07_14.py",
+ "seed": 74392,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T143952Z",
+ "elapsed_s": 0.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "926d3178c430f254e002854e57b877efc068d1c36dcba6270eabe77c7c6cdf3e",
+ "stdout_tail": "FAIL A01 note exists\nPASS A02 proper cubic group has 24 rotations\nPASS A03 six F records pair into three FP records\nPASS A04 completion convergence is 3 FP / 3 I1 / 3 I2 / 1 DONE\nPASS A05 q-return cable leaves all four phase relays fresh\nPASS A06 all declared sites are role-disjoint :: 91\nPASS A07 official phase contents are exact\nPASS A08 auxiliaries avoid current official support\nPASS A09 auxiliaries avoid next official support\nPASS A10 next q/a/b/c remain open\nPASS B01 canonical table is nonempty :: 99\nPASS B02 every rotated input is single-valued :: 2218\nPASS C01 arbitrary-subset scan exposes 47 apparent bad conditions :: 47\nPASS C02 apparent bad conditions span 34 target/output classes :: 34\nPASS C03 apparent bad split is 15 off-footprint / 32 wrong-role\nPASS C04 all apparent bad conditions have absent-ancestor witnesses :: 47/47\nPASS C05 must-ancestor fixed point converges :: 17\nPASS C06 table has 308 correct compiled conditions :: 308\nPASS C07 every declared target has a correct compiled condition\nPASS C08 every apparent first bad write contradicts its own prefix\nPASS D01 every target has at least one parent-valid local subset\nPASS D02 all within-rank prefix subsets retain every missing write :: 30240 tests\nPASS D03 causal safety plus rank closure proves one complete terminal\nPASS D04 official order is C before X before endpoint Z\nPASS D05 endpoints are nonadjacent commuting peers\n\nADDITIONS=91 ROWS=99 RAW=2,218 CONDITIONS=355\nSUMMARY: 24 PASS / 1 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T143953Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

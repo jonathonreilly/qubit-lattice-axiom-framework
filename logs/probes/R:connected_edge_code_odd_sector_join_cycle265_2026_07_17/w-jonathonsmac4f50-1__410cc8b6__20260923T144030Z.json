@@ -1,0 +1,32 @@
+{
+ "task": "R:connected_edge_code_odd_sector_join_cycle265_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "connected",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/connected_edge_code_odd_sector_join_cycle265_2026_07_17.py",
+ "seed": 74430,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T144030Z",
+ "elapsed_s": 4.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "19282dc48868b3592f5dcedddb37ce71c605f028f3c525513f3505383d76576a",
+ "stdout_tail": "or': 73, 'bounded_even_coin_contact_FSWAP_algebra': True, 'one_particle_mass_intertwining': False, 'rank73_contact_seam_intertwining': False, 'reason': 'symmetric branch omits odd; one-port is marked, even-volume defective, and not bounded-prepared'}\nPASS one literal cell-center M2 plus the 15 face M2 sites gives a collision-free all-24 period-16 placement :: {'cell_center_roles': 1, 'face_roles_after_sharing': 15, 'collisions': 0, 'frame_failures': 0}\nPASS the physical placement is a macrocode, and compiler schedules are not physical time :: {'patches': [{'L': 3, 'active_M2': 432, 'unit_symmetric_difference': 864, 'macro_symmetric_difference': 0}, {'L': 4, 'active_M2': 1024, 'unit_symmetric_difference': 2048, 'macro_symmetric_difference': 0}, {'L': 5, 'active_M2': 2000, 'unit_symmetric_difference': 4000, 'macro_symmetric_difference': 0}, {'L': 6, 'active_M2': 3456, 'unit_symmetric_difference': 6912, 'macro_symmetric_difference': 0}], 'period16_origin_marker': 'supplied', 'compiler_schedules_are_not_physical_time': True, 'ancilla_field_is_not_a_Record': True}\nPASS the scoped Z-equality result is not a universal no-go, shared obstruction, minimum-content claim, or axiom pressure :: {'live': ('X/cat-like reference codes', 'local even pair-flip constraints', 'non-Pauli subsystem encoders', 'measurement/reset or supplied entanglement', 'open boundaries/punctures'), 'three_dimensions': 'axiomatic input', 'shared_obstruction': False, 'axiom_pressure': False}\nSUMMARY PASS 18 FAIL 1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T144034Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

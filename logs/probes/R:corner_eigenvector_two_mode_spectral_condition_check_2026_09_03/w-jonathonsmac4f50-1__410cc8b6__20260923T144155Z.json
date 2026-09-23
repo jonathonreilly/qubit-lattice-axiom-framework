@@ -1,0 +1,35 @@
+{
+ "task": "R:corner_eigenvector_two_mode_spectral_condition_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "corner",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/corner_eigenvector_two_mode_spectral_condition_check_2026_09_03.py",
+ "seed": 74515,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "410cc8b6",
+ "started_utc": "20260923T144155Z",
+ "elapsed_s": 27.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9aed8b3820d5b050b888341cf4cd53ac0c4dff7afaf34e7296940611465c308c",
+ "stdout_tail": "ogical Z_T there are I, B_v, B_w, B_v B_w while max_v |<B_v>| = 2.7e-17 and <B_v B_w> = 3.2e-18/-2.3e-17/-2.4e-18 on those non-adjacent pairs (against -0.2500 on adjacent (0,1)). Only a non-zero <B_v B_w> could fail that test, and this schedule makes none.\nPASS F3 [numerical, 1e-12] T5, what DOES discriminate: the FULL record law. Record every remaining edge and compare all 2^20 patterns with the sea's: TV = 6.8e-17/2.2e-15/5.0e-15 where the property holds, against 0.020/0.087 at tau = [0.5, 2.0] where it fails, the state leaking out of the sea's Z-support by 16384 patterns (428032 against 411648).\nPASS F4 [numerical] T5, THE CANCELLATION TRAP, named. One matvec and a bincount give every outcome at once, but via the variance form <H_R^2> - <H_R>^2 they cancel catastrophically: at the holding corner v=1 that difference is NEGATIVE (-1.3e-11, an impossible variance) of magnitude 3.7e-06 -- the ~1e-6 floor -- where the DIRECT form, differenced elementwise before summing, gives 2.8e-13. They agree at the failing corner (0.2071 vs 0.2071).\nPASS F5 [numerical, 1e-11] nonadjacent (0,5) has disjoint incident edge sets but is NOT uniform: P05=-0.051776695297, <B0B5>=-0.010723304703, marginal deviation 1.676e-04\nSUMMARY: the simultaneous two-branch eigenvector condition is a finite supplied-model spectral statement. Flatness suffices but is not necessary; the declared marginal tests are blind while another nonadjacent pair is nonuniform. No physical tick follows.\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T144223Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/corner_eigenvector_two_mode_spectral_condition_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

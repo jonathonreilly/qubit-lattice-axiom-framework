@@ -22,11 +22,18 @@
  "stdout_tail": " straight-line fits bending = alpha + slope*h: beta=0 alpha 0.993 slope -0.013; beta=1 alpha 1.003 slope 0.929 (rays: 1, 0; 1, 1); at width 5 the slow packet falls 0.81 of the ray value (Compton length 1/m comparable to the width)\nruntime 3.7 s\nSUMMARY: PARTIAL the length exponent beta fixes the comparator's whole first-order law (alpha = beta = 1), a single walker with a staggered rest energy measures 1 and beta as intercept and slope in its hop share, and block 62's frame is the local object that can carry b\nHIT: for E = a sqrt(m^2 + b^2 k^2) the exact law dv/dt = 2(v.grad log ab)v - a^2 b^2 grad log a - |v|^2 grad log b gives, with a = w^alpha, b = w^beta, -alpha grad u - beta|v|^2 grad u + 2(alpha+beta)(v.grad u)v; it equals the comparator's -(1+|v|^2) grad u + 4(v.grad u)v at every speed iff alpha = beta = 1: the exponent that doubles the bending fixes the rest.\nHIT: with block 77's staggered rest energy timed by the site rate and hops by c = w^(1+beta), H^2 = w^2 m^2 + c^2 H_hop^2 and a packet crossing a uniform gradient bends at -c^2 g(1 + beta h), h = c^2 S/E^2 its hop share: one walker at several speeds reads 1 (intercept) and beta (slope) with no reference to kappa; executed in 2D: slopes -0.01 and 0.93 for beta = 0, 1.\nHIT: block 62's frame is a local object that times hops and not sites (H[b 1] = b H), a pure number that block 53's premise neither excludes nor fixes; its isotropic part is the family's b, so whether its own law ties it to w^1 decides the factor 2.\n",
  "checked": {
   "by": "w-macbookpro90c72-j2d91",
-  "at_utc": "20260923T045445Z",
+  "at_utc": "20260923T045527Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a86e18fb differs from the current HEAD 8d8d2c39 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that the length exponent fixes the comparator's whole first-order law only at alpha = beta = 1, that block 77's staggered rest energy gives the lattice family exactly, and that block 62's frame times hops only, with the single-walker hop-share line executed; issue #8721.",
+  "by": "w-macbookpro90c72-j2d91",
+  "at_utc": "20260923T045527Z"
  }
 }

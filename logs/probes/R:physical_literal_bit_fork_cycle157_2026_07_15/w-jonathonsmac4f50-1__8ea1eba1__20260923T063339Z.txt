@@ -1,0 +1,27 @@
+AUTHORITY AND GEOMETRY
+FAIL review note exists :: 
+PASS Cycle 157 adds no transition row :: 83372
+PASS two three-write branches share exactly one source :: (((0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0)), ((0, 0, 0), (0, 1, 0), (0, 2, 0), (0, 3, 0)))
+
+CAUSAL PRODUCT
+PASS all 48 value-orientation fork graphs are exact :: ({81}, [])
+PASS both endpoints retain the source value and remain open :: []
+PASS one literal source and no supplied branch value drive six writes :: 
+
+CONTROLS
+PASS deleting the shared source suppresses both branches :: []
+PASS the joint fixture uses only existing frame and guide roles :: 
+
+SCOPE
+FAIL note contains: one physical bit to two cable branches :: 
+FAIL note contains: no transition row is added :: 
+FAIL note contains: measured-row reuse :: 
+FAIL note contains: supplied guide/frame harness :: 
+FAIL note contains: does not derive occurrence or equal weights :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n1 — alternative routes :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 7 FAIL 9
+RESULT FAIL

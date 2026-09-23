@@ -1,0 +1,34 @@
+{
+ "task": "R:cl3_frame_free_ambient_chiral_grading_no_go_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "cl3",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cl3_frame_free_ambient_chiral_grading_no_go_2026_06_02.py",
+ "seed": 41665,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053425Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1f67d6c662a3369c5c2d87a102143ccbdb7eb2fae8e0b7e7821e028f0d610a61",
+ "stdout_tail": " here is the Qubit one-site baseline M_2(C) realizing Cl(3,0), and the question asked is about ambient operations internal to that single algebra; no lattice, no hop and no second site is ever constructed, so nothing in this runner could be resolved against a site index.\nper_mode: resolved by Clifford grade rather than by any spectral or momentum mode \u2014 each named operation is evaluated specifically on grade 1, the pseudoscalar is confirmed central against the grade-1 generators, the Hodge star is shown to carry grade 1 to grade 2 with index identity k to k, and the grade-2 adjoints come back antisymmetric; no Fourier or eigenmode expansion is performed anywhere.\nper_block: the Schur step is a statement about blocks and it is computed, not cited \u2014 solving the full 9-parameter commutant equations against L_x, L_y, L_z leaves 1 free parameter, so grade-1 is a single irreducible real block whose only equivariant endomorphisms are scalars, and a scalar c I gives {c I, Gamma_chi} = 2 c Gamma_chi, which vanishes only at c = 0; the single-axis family b0 I + b1 v v^T likewise stays block-diagonal and commutes.\nlattice_wide: checked and not executed \u2014 no volume, no lattice and no limit of any kind enters; the widest claim made is about the whole class of frame-free ambient Clifford operations on one algebra, and the note's own scope keeps frame-broken and dynamics-selected routes explicitly open, so no global lattice statement is available or asserted here.\n\nSCORECARD: PASS=39 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053426Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

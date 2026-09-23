@@ -1,0 +1,35 @@
+{
+ "task": "R:chiral_content_distinct_recurring_import_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "chiral",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/chiral_content_distinct_recurring_import_2026_06_08.py",
+ "seed": 41661,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053421Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1eb02b925bd15870c518dbac955c1fa70f4aaa97c52b56326bcaf85f2c90cb3b",
+ "stdout_tail": "S -- a third object, different sector from epsilon (spatial) and omega (qubit)\n       Vandermonde = 7.5570 (real), sign = 1\n[PASS] X4 (the correction): {epsilon (K-even, spatial), omega (K-ODD, qubit), Vandermonde (K-even, generation)} are THREE DISTINCT objects (different K-parity AND sector) -> NOT one Z2; omega is K-odd and the generation Vandermonde is K-even, so they cannot be the same object\n       epsilon (staggered): spatial Z^3 grading, K-even; omega = sigma1sigma2sigma3: qubit pseudoscalar, K-odd; sign(Vandermonde): generation handedness, K-even\n[PASS] X5: the tested grading is BLIND to the chiral-vs-vector coupling choice -- [Gamma5, weak]=0 and the dressed connection (D.T, D.T.P_L, D.T.P_R) anticommutes with Gamma5 identically. The grading check supplies no selection rule for chiral gauging.\n       [Gamma5,weak]=0: True; vector/left/right dressings anticommute identically: True\n\nTOTAL: PASS=5 FAIL=0\nrunner_check_breakdown = {A: 5, B: 0, C: 0, D: 0, total_pass: 5}\nVERDICT: the staggered epsilon (K-even, spatial), the Cl(3) pseudoscalar omega=iI (K-ODD,\nqubit), and the supplied generation Vandermonde sign (K-even, generation) are three distinct\nobjects. They do not collapse into one orientation Z2. The finite grading/coupling check is\nblind to vector/left/right dressing, so it supplies no chiral-gauging selection rule. This is\nonly a distinctness correction; it derives no chirality source, generation handedness, chiral\ngauging, action-form theorem, or fitted value.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053421Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

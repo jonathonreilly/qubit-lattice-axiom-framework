@@ -1,0 +1,35 @@
+{
+ "task": "R:charged_finite_link_local_dynamics_and_phase_bridge_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "charged",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/charged_finite_link_local_dynamics_and_phase_bridge_2026_09_13.py",
+ "seed": 41658,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053418Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=508 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9934ca05be600c198be111f796287882316eb1061b6355dc9c62c062c22f259d",
+ "stdout_tail": "001\",\n      \"coefficient\": \"-0.3494337928534829695235765790179008770409578494740383619237804280794093\",\n      \"target\": \"-0.34944\"\n    },\n    {\n      \"name\": \"background T maps phases to opposites\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"background T maps phases to opposites\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"background T maps phases to opposites\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"time reversal pairs conjugate weights\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"paired weight modulus\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"one and two positive factors give positive weight\",\n      \"n\": 1\n    },\n    {\n      \"name\": \"time reversal pairs conjugate weights\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"paired weight modulus\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"one and two positive factors give positive weight\",\n      \"n\": 2\n    },\n    {\n      \"name\": \"time reversal pairs conjugate weights\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"paired weight modulus\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"three factors have complex weight despite T\",\n      \"n\": 3,\n      \"phase\": -0.000482237029831507\n    }\n  ],\n  \"elapsed_seconds\": 1.9524211669922806,\n  \"source_sha256\": \"0a91be548fb7be4fb11a6b3e4cdda74083a249c0b0e4fbdd001b6908ad78e6a8\",\n  \"claim_limit\": \"Finite-link algebra, stated finite-time bounds and representation-specific phase witnesses; no thermodynamic charged phase or axiom update.\"\n}\nTOTAL: PASS=508 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053420Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/charged_finite_link_local_dynamics_and_phase_bridge_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

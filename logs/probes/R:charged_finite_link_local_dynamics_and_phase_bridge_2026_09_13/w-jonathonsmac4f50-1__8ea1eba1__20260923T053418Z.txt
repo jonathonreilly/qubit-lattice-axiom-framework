@@ -1,0 +1,3477 @@
+per_element: exact compressed link commutator, endpoint defects and phase heat kernel checked
+per_site: finite charged two-cell Gauss sectors and time reversal checked; state selection open
+per_mode: bounded one-link flux-tail fixtures and matrix growth constants challenged; photon modes not certified
+per_block: multi-link cutoff Duhamel errors and exact time-sliced determinant coefficients checked
+lattice_wide: checked and not executed — thermodynamic charged photon phase and uniform infrared limits remain proof obligations
+{
+  "status": "PASS",
+  "author_check_count": 508,
+  "checks": [
+    {
+      "name": "exact hard-cutoff electric commutator",
+      "error": 0.0,
+      "K": 1
+    },
+    {
+      "name": "upper endpoint unitarity defect",
+      "error": 0.0,
+      "K": 1
+    },
+    {
+      "name": "lower endpoint unitarity defect",
+      "error": 0.0,
+      "K": 1
+    },
+    {
+      "name": "cyclic unitary violates electric commutator",
+      "K": 1
+    },
+    {
+      "name": "trace contradiction for finite unitary shift",
+      "error": 0.0,
+      "K": 1
+    },
+    {
+      "name": "positive trace shift impossible",
+      "K": 1
+    },
+    {
+      "name": "qubit encoding dimension",
+      "K": 1
+    },
+    {
+      "name": "exact hard-cutoff electric commutator",
+      "error": 0.0,
+      "K": 2
+    },
+    {
+      "name": "upper endpoint unitarity defect",
+      "error": 0.0,
+      "K": 2
+    },
+    {
+      "name": "lower endpoint unitarity defect",
+      "error": 0.0,
+      "K": 2
+    },
+    {
+      "name": "cyclic unitary violates electric commutator",
+      "K": 2
+    },
+    {
+      "name": "trace contradiction for finite unitary shift",
+      "error": 0.0,
+      "K": 2
+    },
+    {
+      "name": "positive trace shift impossible",
+      "K": 2
+    },
+    {
+      "name": "qubit encoding dimension",
+      "K": 2
+    },
+    {
+      "name": "exact hard-cutoff electric commutator",
+      "error": 0.0,
+      "K": 3
+    },
+    {
+      "name": "upper endpoint unitarity defect",
+      "error": 0.0,
+      "K": 3
+    },
+    {
+      "name": "lower endpoint unitarity defect",
+      "error": 0.0,
+      "K": 3
+    },
+    {
+      "name": "cyclic unitary violates electric commutator",
+      "K": 3
+    },
+    {
+      "name": "trace contradiction for finite unitary shift",
+      "error": 0.0,
+      "K": 3
+    },
+    {
+      "name": "positive trace shift impossible",
+      "K": 3
+    },
+    {
+      "name": "qubit encoding dimension",
+      "K": 3
+    },
+    {
+      "name": "exact hard-cutoff electric commutator",
+      "error": 0.0,
+      "K": 5
+    },
+    {
+      "name": "upper endpoint unitarity defect",
+      "error": 0.0,
+      "K": 5
+    },
+    {
+      "name": "lower endpoint unitarity defect",
+      "error": 0.0,
+      "K": 5
+    },
+    {
+      "name": "cyclic unitary violates electric commutator",
+      "K": 5
+    },
+    {
+      "name": "trace contradiction for finite unitary shift",
+      "error": 0.0,
+      "K": 5
+    },
+    {
+      "name": "positive trace shift impossible",
+      "K": 5
+    },
+    {
+      "name": "qubit encoding dimension",
+      "K": 5
+    },
+    {
+      "name": "onsite ordinary time reversal",
+      "error": 0.0
+    },
+    {
+      "name": "Fock antiunitary squares to one",
+      "error": 0.0
+    },
+    {
+      "name": "hopping ordinary time reversal",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "nuclear hopping norm",
+      "error": 4.440892098500626e-16,
+      "axis": 0
+    },
+    {
+      "name": "hopping singular values",
+      "error": 2.220446049250313e-16,
+      "axis": 0
+    },
+    {
+      "name": "CAR bilinear bounded by nuclear norm",
+      "actual": 1.4142135623730951,
+      "axis": 0
+    },
+    {
+      "name": "exact charged Gauss commutator x",
+      "error": 0.0,
+      "axis": 0,
+      "K": 1
+    },
+    {
+      "name": "exact charged Gauss commutator y",
+      "error": 0.0,
+      "axis": 0,
+      "K": 1
+    },
+    {
+      "name": "nonempty physical sector dimension",
+      "dimension": 68,
+      "K": 1,
+      "axis": 0
+    },
+    {
+      "name": "full matter link antiunitary invariance",
+      "axis": 0,
+      "K": 1
+    },
+    {
+      "name": "open link vanishes in physical mixed state",
+      "error": 0.0,
+      "axis": 0,
+      "K": 1
+    },
+    {
+      "name": "physical Gibbs state positive",
+      "axis": 0,
+      "K": 1
+    },
+    {
+      "name": "exact charged Gauss commutator x",
+      "error": 0.0,
+      "axis": 0,
+      "K": 2
+    },
+    {
+      "name": "exact charged Gauss commutator y",
+      "error": 0.0,
+      "axis": 0,
+      "K": 2
+    },
+    {
+      "name": "nonempty physical sector dimension",
+      "dimension": 70,
+      "K": 2,
+      "axis": 0
+    },
+    {
+      "name": "full matter link antiunitary invariance",
+      "axis": 0,
+      "K": 2
+    },
+    {
+      "name": "open link vanishes in physical mixed state",
+      "error": 0.0,
+      "axis": 0,
+      "K": 2
+    },
+    {
+      "name": "physical Gibbs state positive",
+      "axis": 0,
+      "K": 2
+    },
+    {
+      "name": "hopping ordinary time reversal",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "nuclear hopping norm",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "hopping singular values",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "CAR bilinear bounded by nuclear norm",
+      "actual": 1.4142135623730954,
+      "axis": 1
+    },
+    {
+      "name": "exact charged Gauss commutator x",
+      "error": 0.0,
+      "axis": 1,
+      "K": 1
+    },
+    {
+      "name": "exact charged Gauss commutator y",
+      "error": 0.0,
+      "axis": 1,
+      "K": 1
+    },
+    {
+      "name": "nonempty physical sector dimension",
+      "dimension": 68,
+      "K": 1,
+      "axis": 1
+    },
+    {
+      "name": "full matter link antiunitary invariance",
+      "axis": 1,
+      "K": 1
+    },
+    {
+      "name": "open link vanishes in physical mixed state",
+      "error": 0.0,
+      "axis": 1,
+      "K": 1
+    },
+    {
+      "name": "physical Gibbs state positive",
+      "axis": 1,
+      "K": 1
+    },
+    {
+      "name": "exact charged Gauss commutator x",
+      "error": 0.0,
+      "axis": 1,
+      "K": 2
+    },
+    {
+      "name": "exact charged Gauss commutator y",
+      "error": 0.0,
+      "axis": 1,
+      "K": 2
+    },
+    {
+      "name": "nonempty physical sector dimension",
+      "dimension": 70,
+      "K": 2,
+      "axis": 1
+    },
+    {
+      "name": "full matter link antiunitary invariance",
+      "axis": 1,
+      "K": 2
+    },
+    {
+      "name": "open link vanishes in physical mixed state",
+      "error": 0.0,
+      "axis": 1,
+      "K": 2
+    },
+    {
+      "name": "physical Gibbs state positive",
+      "axis": 1,
+      "K": 2
+    },
+    {
+      "name": "hopping ordinary time reversal",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "nuclear hopping norm",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "hopping singular values",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "CAR bilinear bounded by nuclear norm",
+      "actual": 1.2247448713915896,
+      "axis": 2
+    },
+    {
+      "name": "exact charged Gauss commutator x",
+      "error": 0.0,
+      "axis": 2,
+      "K": 1
+    },
+    {
+      "name": "exact charged Gauss commutator y",
+      "error": 0.0,
+      "axis": 2,
+      "K": 1
+    },
+    {
+      "name": "nonempty physical sector dimension",
+      "dimension": 68,
+      "K": 1,
+      "axis": 2
+    },
+    {
+      "name": "full matter link antiunitary invariance",
+      "axis": 2,
+      "K": 1
+    },
+    {
+      "name": "open link vanishes in physical mixed state",
+      "error": 0.0,
+      "axis": 2,
+      "K": 1
+    },
+    {
+      "name": "physical Gibbs state positive",
+      "axis": 2,
+      "K": 1
+    },
+    {
+      "name": "exact charged Gauss commutator x",
+      "error": 0.0,
+      "axis": 2,
+      "K": 2
+    },
+    {
+      "name": "exact charged Gauss commutator y",
+      "error": 0.0,
+      "axis": 2,
+      "K": 2
+    },
+    {
+      "name": "nonempty physical sector dimension",
+      "dimension": 70,
+      "K": 2,
+      "axis": 2
+    },
+    {
+      "name": "full matter link antiunitary invariance",
+      "axis": 2,
+      "K": 2
+    },
+    {
+      "name": "open link vanishes in physical mixed state",
+      "error": 0.0,
+      "axis": 2,
+      "K": 2
+    },
+    {
+      "name": "physical Gibbs state positive",
+      "axis": 2,
+      "K": 2
+    },
+    {
+      "name": "plaquette commutes with vertex Gauss",
+      "error": 0.0,
+      "vertex": 0
+    },
+    {
+      "name": "plaquette commutes with vertex Gauss",
+      "error": 0.0,
+      "vertex": 1
+    },
+    {
+      "name": "plaquette commutes with vertex Gauss",
+      "error": 0.0,
+      "vertex": 2
+    },
+    {
+      "name": "plaquette commutes with vertex Gauss",
+      "error": 0.0,
+      "vertex": 3
+    },
+    {
+      "name": "pure gauge positive flux representation remains live"
+    },
+    {
+      "name": "raising decomposition with entangled environment",
+      "error": 0.0,
+      "electric": 0.0
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.0,
+      "lambda_": 0.2
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "lambda_": 0.2,
+      "actual": 1.015216077253302,
+      "bound": 1.0199852095343458
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.049108615596447865,
+      "bound": 0.835093258730458
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.04905310483552069,
+      "bound": 0.835093258730458
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": -1,
+      "actual": 9.021009650729684e-06,
+      "bound": 0.5597797516362526
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": 1,
+      "actual": 8.978220553720184e-06,
+      "bound": 0.5597797516362526
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": -1,
+      "actual": 5.219747056940368e-10,
+      "bound": 0.3752315888866316
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": 1,
+      "actual": 5.170017496803014e-10,
+      "bound": 0.3752315888866316
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.0,
+      "lambda_": 0.7
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "lambda_": 0.7,
+      "actual": 1.0585431858790393,
+      "bound": 1.0774064440602156
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.049108615596447865,
+      "bound": 0.5350242063304644
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.04905310483552069,
+      "bound": 0.5350242063304644
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": -1,
+      "actual": 9.021009650729684e-06,
+      "bound": 0.1319353449163602
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": 1,
+      "actual": 8.978220553720184e-06,
+      "bound": 0.1319353449163602
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": -1,
+      "actual": 5.219747056940368e-10,
+      "bound": 0.032534855492963075
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": 1,
+      "actual": 5.170017496803014e-10,
+      "bound": 0.032534855492963075
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.0,
+      "lambda_": 1.1
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "lambda_": 1.1,
+      "actual": 1.1053418399470036,
+      "bound": 1.140278923710838
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.049108615596447865,
+      "bound": 0.3795658810537063
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.04905310483552069,
+      "bound": 0.3795658810537063
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": -1,
+      "actual": 9.021009650729684e-06,
+      "bound": 0.04205709842733261
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": 1,
+      "actual": 8.978220553720184e-06,
+      "bound": 0.04205709842733261
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": -1,
+      "actual": 5.219747056940368e-10,
+      "bound": 0.0046600593373039975
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": 1,
+      "actual": 5.170017496803014e-10,
+      "bound": 0.0046600593373039975
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "L": 5
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "cutoff": 0,
+      "actual": 0.05757357911260329,
+      "bound": 0.11031785562045723
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "cutoff": 1,
+      "actual": 0.0008984097975497429,
+      "bound": 0.04058367107688566
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "cutoff": 2,
+      "actual": 1.156654566364926e-05,
+      "bound": 0.014929898236450322
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 0.13,
+      "cutoff": 4,
+      "actual": 6.949878089852593e-10,
+      "bound": 0.0020205420065238086
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.0,
+      "lambda_": 0.2
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "lambda_": 0.2,
+      "actual": 1.081192323371554,
+      "bound": 1.1124351615949768
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.25946598957407363,
+      "bound": 0.9107848776030819
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.25141003393332056,
+      "bound": 0.9107848776030819
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.00140076269858698,
+      "bound": 0.6105173610834619
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.00138619218014932,
+      "bound": 0.6105173610834619
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": -1,
+      "actual": 2.314408618089175e-06,
+      "bound": 0.4092420255870232
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": 1,
+      "actual": 2.2187768370506877e-06,
+      "bound": 0.4092420255870232
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.0,
+      "lambda_": 0.7
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "lambda_": 0.7,
+      "actual": 1.3413203247370937,
+      "bound": 1.494003187798294
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.25946598957407363,
+      "bound": 0.74190002687815
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.25141003393332056,
+      "bound": 0.74190002687815
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.00140076269858698,
+      "bound": 0.18295029417634812
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.00138619218014932,
+      "bound": 0.18295029417634812
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": -1,
+      "actual": 2.314408618089175e-06,
+      "bound": 0.045114987096111205
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": 1,
+      "actual": 2.2187768370506877e-06,
+      "bound": 0.045114987096111205
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.0,
+      "lambda_": 1.1
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "lambda_": 1.1,
+      "actual": 1.6745753071608132,
+      "bound": 2.0276025593145097
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.25946598957407363,
+      "bound": 0.6749302612280205
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.25141003393332056,
+      "bound": 0.6749302612280205
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.00140076269858698,
+      "bound": 0.07478440461837972
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.00138619218014932,
+      "bound": 0.07478440461837972
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": -1,
+      "actual": 2.314408618089175e-06,
+      "bound": 0.00828634822796318
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": 1,
+      "actual": 2.2187768370506877e-06,
+      "bound": 0.00828634822796318
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "L": 5
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "cutoff": 0,
+      "actual": 0.2997170582358152,
+      "bound": 0.9856984512782355
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "cutoff": 1,
+      "actual": 0.02616853062933584,
+      "bound": 0.36261819541979345
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "cutoff": 2,
+      "actual": 0.0017971158528239744,
+      "bound": 0.13339977908963047
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 0.7,
+      "cutoff": 4,
+      "actual": 3.0560531386940765e-06,
+      "bound": 0.018053696886796707
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.0,
+      "lambda_": 0.2
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "lambda_": 0.2,
+      "actual": 1.1506893403708993,
+      "bound": 1.2375119887528423
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.4903463689774334,
+      "bound": 1.0131891224946457
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.4390349407759334,
+      "bound": 1.0131891224946457
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.010083204716681357,
+      "bound": 0.6791609792334198
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.010183663573521,
+      "bound": 0.6791609792334198
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": -1,
+      "actual": 6.668380760389634e-05,
+      "bound": 0.45525521886535586
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": 1,
+      "actual": 6.287811934738502e-05,
+      "bound": 0.45525521886535586
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.0,
+      "lambda_": 0.7
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "lambda_": 0.7,
+      "actual": 1.6976984143143226,
+      "bound": 2.2320455251514644
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.4903463689774334,
+      "bound": 1.1084010051835962
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.4390349407759334,
+      "bound": 1.1084010051835962
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.010083204716681357,
+      "bound": 0.2733283227080997
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.010183663573521,
+      "bound": 0.2733283227080997
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": -1,
+      "actual": 6.668380760389634e-05,
+      "bound": 0.06740193453906902
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": 1,
+      "actual": 6.287811934738502e-05,
+      "bound": 0.06740193453906902
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.0,
+      "lambda_": 1.1
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "lambda_": 1.1,
+      "actual": 2.548872129879096,
+      "bound": 4.11117213853875
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.4903463689774334,
+      "bound": 1.3684903250247449
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.4390349407759334,
+      "bound": 1.3684903250247449
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.010083204716681357,
+      "bound": 0.15163305020103854
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.010183663573521,
+      "bound": 0.15163305020103854
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": -1,
+      "actual": 6.668380760389634e-05,
+      "bound": 0.016801420874389406
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": 1,
+      "actual": 6.287811934738502e-05,
+      "bound": 0.016801420874389406
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "L": 5
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "cutoff": 0,
+      "actual": 0.5507278657669131,
+      "bound": 3.671810122424373
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "cutoff": 1,
+      "actual": 0.09850437684775133,
+      "bound": 1.3507834559251235
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "cutoff": 2,
+      "actual": 0.013221627961536586,
+      "bound": 0.49692546290936407
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.0,
+      "time": 1.4,
+      "cutoff": 4,
+      "actual": 8.825965858440244e-05,
+      "bound": 0.06725154827032366
+    },
+    {
+      "name": "raising decomposition with entangled environment",
+      "error": 0.0,
+      "electric": 0.17
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.17,
+      "lambda_": 0.2
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "lambda_": 0.2,
+      "actual": 1.0152068129958798,
+      "bound": 1.0199852095343458
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.04910830034374975,
+      "bound": 0.835093258730458
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.049064283317368035,
+      "bound": 0.835093258730458
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 3,
+      "sign": -1,
+      "actual": 9.017042241437614e-06,
+      "bound": 0.5597797516362526
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 3,
+      "sign": 1,
+      "actual": 8.976108092804003e-06,
+      "bound": 0.5597797516362526
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 5,
+      "sign": -1,
+      "actual": 5.208759505185924e-10,
+      "bound": 0.3752315888866316
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 5,
+      "sign": 1,
+      "actual": 5.163876522880697e-10,
+      "bound": 0.3752315888866316
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.17,
+      "lambda_": 0.7
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "lambda_": 0.7,
+      "actual": 1.0585067793476362,
+      "bound": 1.0774064440602156
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.04910830034374975,
+      "bound": 0.5350242063304644
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.049064283317368035,
+      "bound": 0.5350242063304644
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 3,
+      "sign": -1,
+      "actual": 9.017042241437614e-06,
+      "bound": 0.1319353449163602
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 3,
+      "sign": 1,
+      "actual": 8.976108092804003e-06,
+      "bound": 0.1319353449163602
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 5,
+      "sign": -1,
+      "actual": 5.208759505185924e-10,
+      "bound": 0.032534855492963075
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 5,
+      "sign": 1,
+      "actual": 5.163876522880697e-10,
+      "bound": 0.032534855492963075
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.17,
+      "lambda_": 1.1
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "lambda_": 1.1,
+      "actual": 1.1052748741892318,
+      "bound": 1.140278923710838
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.04910830034374975,
+      "bound": 0.3795658810537063
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.049064283317368035,
+      "bound": 0.3795658810537063
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 3,
+      "sign": -1,
+      "actual": 9.017042241437614e-06,
+      "bound": 0.04205709842733261
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 3,
+      "sign": 1,
+      "actual": 8.976108092804003e-06,
+      "bound": 0.04205709842733261
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 5,
+      "sign": -1,
+      "actual": 5.208759505185924e-10,
+      "bound": 0.0046600593373039975
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 5,
+      "sign": 1,
+      "actual": 5.163876522880697e-10,
+      "bound": 0.0046600593373039975
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "L": 5
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "cutoff": 0,
+      "actual": 0.05758543700784539,
+      "bound": 0.11031785562045723
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "cutoff": 1,
+      "actual": 0.0008981434128522074,
+      "bound": 0.04058367107688566
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "cutoff": 2,
+      "actual": 1.1561304937179616e-05,
+      "bound": 0.014929898236450322
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 0.13,
+      "cutoff": 4,
+      "actual": 6.939074467125208e-10,
+      "bound": 0.0020205420065238086
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.17,
+      "lambda_": 0.2
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "lambda_": 0.2,
+      "actual": 1.0801841401534102,
+      "bound": 1.1124351615949768
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.2594030880954681,
+      "bound": 0.9107848776030819
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.2529786812337652,
+      "bound": 0.9107848776030819
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.001380673103814329,
+      "bound": 0.6105173610834619
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.0013830620028647074,
+      "bound": 0.6105173610834619
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 5,
+      "sign": -1,
+      "actual": 2.17402637296735e-06,
+      "bound": 0.4092420255870232
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 5,
+      "sign": 1,
+      "actual": 2.1444635455190446e-06,
+      "bound": 0.4092420255870232
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.17,
+      "lambda_": 0.7
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "lambda_": 0.7,
+      "actual": 1.3366134367363245,
+      "bound": 1.494003187798294
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.2594030880954681,
+      "bound": 0.74190002687815
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.2529786812337652,
+      "bound": 0.74190002687815
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.001380673103814329,
+      "bound": 0.18295029417634812
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.0013830620028647074,
+      "bound": 0.18295029417634812
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 5,
+      "sign": -1,
+      "actual": 2.17402637296735e-06,
+      "bound": 0.045114987096111205
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 5,
+      "sign": 1,
+      "actual": 2.1444635455190446e-06,
+      "bound": 0.045114987096111205
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.17,
+      "lambda_": 1.1
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "lambda_": 1.1,
+      "actual": 1.6641961704649655,
+      "bound": 2.0276025593145097
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.2594030880954681,
+      "bound": 0.6749302612280205
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.2529786812337652,
+      "bound": 0.6749302612280205
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.001380673103814329,
+      "bound": 0.07478440461837972
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.0013830620028647074,
+      "bound": 0.07478440461837972
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 5,
+      "sign": -1,
+      "actual": 2.17402637296735e-06,
+      "bound": 0.00828634822796318
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 5,
+      "sign": 1,
+      "actual": 2.1444635455190446e-06,
+      "bound": 0.00828634822796318
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "L": 5
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "cutoff": 0,
+      "actual": 0.3013622095191793,
+      "bound": 0.9856984512782355
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "cutoff": 1,
+      "actual": 0.025961942135563982,
+      "bound": 0.36261819541979345
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "cutoff": 2,
+      "actual": 0.0017753745406934862,
+      "bound": 0.13339977908963047
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 0.7,
+      "cutoff": 4,
+      "actual": 2.9170060258041467e-06,
+      "bound": 0.018053696886796707
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.17,
+      "lambda_": 0.2
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "lambda_": 0.2,
+      "actual": 1.1470545458871135,
+      "bound": 1.2375119887528423
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.4895355876106331,
+      "bound": 1.0131891224946457
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.4476083226633531,
+      "bound": 1.0131891224946457
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.009472962701232612,
+      "bound": 0.6791609792334198
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.010345805440886953,
+      "bound": 0.6791609792334198
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 5,
+      "sign": -1,
+      "actual": 5.1628897389697546e-05,
+      "bound": 0.45525521886535586
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 5,
+      "sign": 1,
+      "actual": 5.5085632836412686e-05,
+      "bound": 0.45525521886535586
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.17,
+      "lambda_": 0.7
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "lambda_": 0.7,
+      "actual": 1.6781217000538877,
+      "bound": 2.2320455251514644
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.4895355876106331,
+      "bound": 1.1084010051835962
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.4476083226633531,
+      "bound": 1.1084010051835962
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.009472962701232612,
+      "bound": 0.2733283227080997
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.010345805440886953,
+      "bound": 0.2733283227080997
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 5,
+      "sign": -1,
+      "actual": 5.1628897389697546e-05,
+      "bound": 0.06740193453906902
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 5,
+      "sign": 1,
+      "actual": 5.5085632836412686e-05,
+      "bound": 0.06740193453906902
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 0.17,
+      "lambda_": 1.1
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "lambda_": 1.1,
+      "actual": 2.4953428655312915,
+      "bound": 4.11117213853875
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.4895355876106331,
+      "bound": 1.3684903250247449
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.4476083226633531,
+      "bound": 1.3684903250247449
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 3,
+      "sign": -1,
+      "actual": 0.009472962701232612,
+      "bound": 0.15163305020103854
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 3,
+      "sign": 1,
+      "actual": 0.010345805440886953,
+      "bound": 0.15163305020103854
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 5,
+      "sign": -1,
+      "actual": 5.1628897389697546e-05,
+      "bound": 0.016801420874389406
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 5,
+      "sign": 1,
+      "actual": 5.5085632836412686e-05,
+      "bound": 0.016801420874389406
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "L": 5
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "cutoff": 0,
+      "actual": 0.5580363974246304,
+      "bound": 3.671810122424373
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "cutoff": 1,
+      "actual": 0.09621565050903881,
+      "bound": 1.3507834559251235
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "cutoff": 2,
+      "actual": 0.012757211492847278,
+      "bound": 0.49692546290936407
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 0.17,
+      "time": 1.4,
+      "cutoff": 4,
+      "actual": 7.329031097167447e-05,
+      "bound": 0.06725154827032366
+    },
+    {
+      "name": "raising decomposition with entangled environment",
+      "error": 0.0,
+      "electric": 19.0
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 19.0,
+      "lambda_": 0.2
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "lambda_": 0.2,
+      "actual": 1.0092167459716952,
+      "bound": 1.0199852095343458
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.037617069370001775,
+      "bound": 0.835093258730458
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.03870110860023605,
+      "bound": 0.835093258730458
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": -1,
+      "actual": 2.0860617124887347e-07,
+      "bound": 0.5597797516362526
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": 1,
+      "actual": 2.196563064661244e-07,
+      "bound": 0.5597797516362526
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": -1,
+      "actual": 1.0585812017245367e-13,
+      "bound": 0.3752315888866316
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": 1,
+      "actual": 1.1110976697041107e-13,
+      "bound": 0.3752315888866316
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 19.0,
+      "lambda_": 0.7
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "lambda_": 0.7,
+      "actual": 1.0351705826926074,
+      "bound": 1.0774064440602156
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.037617069370001775,
+      "bound": 0.5350242063304644
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.03870110860023605,
+      "bound": 0.5350242063304644
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": -1,
+      "actual": 2.0860617124887347e-07,
+      "bound": 0.1319353449163602
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": 1,
+      "actual": 2.196563064661244e-07,
+      "bound": 0.1319353449163602
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": -1,
+      "actual": 1.0585812017245367e-13,
+      "bound": 0.032534855492963075
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": 1,
+      "actual": 1.1110976697041107e-13,
+      "bound": 0.032534855492963075
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 19.0,
+      "lambda_": 1.1
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "lambda_": 1.1,
+      "actual": 1.0627477847220699,
+      "bound": 1.140278923710838
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.037617069370001775,
+      "bound": 0.3795658810537063
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.03870110860023605,
+      "bound": 0.3795658810537063
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": -1,
+      "actual": 2.0860617124887347e-07,
+      "bound": 0.04205709842733261
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 3,
+      "sign": 1,
+      "actual": 2.196563064661244e-07,
+      "bound": 0.04205709842733261
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": -1,
+      "actual": 1.0585812017245367e-13,
+      "bound": 0.0046600593373039975
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 5,
+      "sign": 1,
+      "actual": 1.1110976697041107e-13,
+      "bound": 0.0046600593373039975
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "L": 5
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "cutoff": 0,
+      "actual": 0.04531436568801443,
+      "bound": 0.11031785562045723
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "cutoff": 1,
+      "actual": 0.00015419724308473267,
+      "bound": 0.04058367107688566
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "cutoff": 2,
+      "actual": 2.7684925501834535e-07,
+      "bound": 0.014929898236450322
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 0.13,
+      "cutoff": 4,
+      "actual": 1.454897652397413e-13,
+      "bound": 0.0020205420065238086
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 19.0,
+      "lambda_": 0.2
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "lambda_": 0.2,
+      "actual": 1.0039848135694107,
+      "bound": 1.1124351615949768
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.015195375676418743,
+      "bound": 0.9107848776030819
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.012753723218935344,
+      "bound": 0.9107848776030819
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": -1,
+      "actual": 1.0709505765896667e-07,
+      "bound": 0.6105173610834619
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": 1,
+      "actual": 1.424461474444576e-07,
+      "bound": 0.6105173610834619
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": -1,
+      "actual": 7.916820233182831e-14,
+      "bound": 0.4092420255870232
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": 1,
+      "actual": 9.907299375920926e-14,
+      "bound": 0.4092420255870232
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 19.0,
+      "lambda_": 0.7
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "lambda_": 0.7,
+      "actual": 1.01555715599655,
+      "bound": 1.494003187798294
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.015195375676418743,
+      "bound": 0.74190002687815
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.012753723218935344,
+      "bound": 0.74190002687815
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": -1,
+      "actual": 1.0709505765896667e-07,
+      "bound": 0.18295029417634812
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": 1,
+      "actual": 1.424461474444576e-07,
+      "bound": 0.18295029417634812
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": -1,
+      "actual": 7.916820233182831e-14,
+      "bound": 0.045114987096111205
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": 1,
+      "actual": 9.907299375920926e-14,
+      "bound": 0.045114987096111205
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 19.0,
+      "lambda_": 1.1
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "lambda_": 1.1,
+      "actual": 1.0291675059819951,
+      "bound": 2.0276025593145097
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.015195375676418743,
+      "bound": 0.6749302612280205
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.012753723218935344,
+      "bound": 0.6749302612280205
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": -1,
+      "actual": 1.0709505765896667e-07,
+      "bound": 0.07478440461837972
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 3,
+      "sign": 1,
+      "actual": 1.424461474444576e-07,
+      "bound": 0.07478440461837972
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": -1,
+      "actual": 7.916820233182831e-14,
+      "bound": 0.00828634822796318
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 5,
+      "sign": 1,
+      "actual": 9.907299375920926e-14,
+      "bound": 0.00828634822796318
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "L": 5
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "cutoff": 0,
+      "actual": 0.017918353990501863,
+      "bound": 0.9856984512782355
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "cutoff": 1,
+      "actual": 9.637062572453124e-05,
+      "bound": 0.36261819541979345
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "cutoff": 2,
+      "actual": 1.6794677791931419e-07,
+      "bound": 0.13339977908963047
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 0.7,
+      "cutoff": 4,
+      "actual": 1.2319267790320675e-13,
+      "bound": 0.018053696886796707
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 19.0,
+      "lambda_": 0.2
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "lambda_": 0.2,
+      "actual": 1.0064395984196395,
+      "bound": 1.2375119887528423
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.02723465101149803,
+      "bound": 1.0131891224946457
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.02381934278927475,
+      "bound": 1.0131891224946457
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": -1,
+      "actual": 1.8474264954992375e-07,
+      "bound": 0.6791609792334198
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": 1,
+      "actual": 1.3199386949435914e-07,
+      "bound": 0.6791609792334198
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": -1,
+      "actual": 9.276094531540714e-14,
+      "bound": 0.45525521886535586
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": 1,
+      "actual": 4.906255439757518e-14,
+      "bound": 0.45525521886535586
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 19.0,
+      "lambda_": 0.7
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "lambda_": 0.7,
+      "actual": 1.025121493584645,
+      "bound": 2.2320455251514644
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.02723465101149803,
+      "bound": 1.1084010051835962
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.02381934278927475,
+      "bound": 1.1084010051835962
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": -1,
+      "actual": 1.8474264954992375e-07,
+      "bound": 0.2733283227080997
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": 1,
+      "actual": 1.3199386949435914e-07,
+      "bound": 0.2733283227080997
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": -1,
+      "actual": 9.276094531540714e-14,
+      "bound": 0.06740193453906902
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": 1,
+      "actual": 4.906255439757518e-14,
+      "bound": 0.06740193453906902
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 5
+    },
+    {
+      "name": "weighted generator growth bound",
+      "electric": 19.0,
+      "lambda_": 1.1
+    },
+    {
+      "name": "weighted evolution bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "lambda_": 1.1,
+      "actual": 1.0471198390704772,
+      "bound": 4.11117213853875
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": -1,
+      "actual": 0.02723465101149803,
+      "bound": 1.3684903250247449
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 1,
+      "sign": 1,
+      "actual": 0.02381934278927475,
+      "bound": 1.3684903250247449
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 1
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": -1,
+      "actual": 1.8474264954992375e-07,
+      "bound": 0.15163305020103854
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 3,
+      "sign": 1,
+      "actual": 1.3199386949435914e-07,
+      "bound": 0.15163305020103854
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 3
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": -1,
+      "actual": 9.276094531540714e-14,
+      "bound": 0.016801420874389406
+    },
+    {
+      "name": "one-sided low-flux leakage bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 5,
+      "sign": 1,
+      "actual": 4.906255439757518e-14,
+      "bound": 0.016801420874389406
+    },
+    {
+      "name": "orthogonal two-tail bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "L": 5
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "cutoff": 0,
+      "actual": 0.0323216133223947,
+      "bound": 3.671810122424373
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "cutoff": 1,
+      "actual": 0.00014241950695411103,
+      "bound": 1.3507834559251235
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "cutoff": 2,
+      "actual": 1.9342721870825226e-07,
+      "bound": 0.49692546290936407
+    },
+    {
+      "name": "Duhamel Hamiltonian cutoff bound",
+      "electric": 19.0,
+      "time": 1.4,
+      "cutoff": 4,
+      "actual": 1.0589263791168584e-13,
+      "bound": 0.06725154827032366
+    },
+    {
+      "name": "coincident outward boundaries require safe prefactor",
+      "actual": 9.899494930548223e-05,
+      "bound": 0.00014002303583836556
+    },
+    {
+      "name": "simultaneous-boundary multi-link bound",
+      "time": 0.2,
+      "cutoff": 1,
+      "actual": 0.010496538705996369,
+      "bound": 0.2758579534741424
+    },
+    {
+      "name": "simultaneous-boundary multi-link bound",
+      "time": 0.2,
+      "cutoff": 2,
+      "actual": 0.0004591016707288035,
+      "bound": 0.10148246976676523
+    },
+    {
+      "name": "simultaneous-boundary multi-link bound",
+      "time": 0.2,
+      "cutoff": 3,
+      "actual": 1.4904756110140485e-05,
+      "bound": 0.03733331426649538
+    },
+    {
+      "name": "simultaneous-boundary multi-link bound",
+      "time": 0.6,
+      "cutoff": 1,
+      "actual": 0.08745635514360811,
+      "bound": 1.5740781994155182
+    },
+    {
+      "name": "simultaneous-boundary multi-link bound",
+      "time": 0.6,
+      "cutoff": 2,
+      "actual": 0.01050457515969022,
+      "bound": 0.5790710083611309
+    },
+    {
+      "name": "simultaneous-boundary multi-link bound",
+      "time": 0.6,
+      "cutoff": 3,
+      "actual": 0.0008734781295349687,
+      "bound": 0.21302831895447646
+    },
+    {
+      "name": "simultaneous-boundary multi-link bound",
+      "time": 1.1,
+      "cutoff": 1,
+      "actual": 0.24298088962523937,
+      "bound": 6.4586779923176145
+    },
+    {
+      "name": "simultaneous-boundary multi-link bound",
+      "time": 1.1,
+      "cutoff": 2,
+      "actual": 0.0436188540869496,
+      "bound": 2.376014850520097
+    },
+    {
+      "name": "simultaneous-boundary multi-link bound",
+      "time": 1.1,
+      "cutoff": 3,
+      "actual": 0.004944532637062658,
+      "bound": 0.8740870154243814
+    },
+    {
+      "name": "optimized Chernoff exponent",
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "stationary optimized exponent",
+      "error": 0.0
+    },
+    {
+      "name": "optimized Chernoff exponent",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "stationary optimized exponent",
+      "error": 0.0
+    },
+    {
+      "name": "optimized Chernoff exponent",
+      "error": 0.0
+    },
+    {
+      "name": "stationary optimized exponent",
+      "error": 0.0
+    },
+    {
+      "name": "sufficient integer cutoff",
+      "N": 3,
+      "cutoff": 8,
+      "bound": 0.00039158926810759935,
+      "epsilon": 0.001
+    },
+    {
+      "name": "sufficient integer cutoff",
+      "N": 120,
+      "cutoff": 21,
+      "bound": 9.544002367108613e-07,
+      "epsilon": 1e-06
+    },
+    {
+      "name": "sufficient integer cutoff",
+      "N": 1,
+      "cutoff": 0,
+      "bound": 0.0020047063334966827,
+      "epsilon": 0.9
+    },
+    {
+      "name": "matched quadratic magnetic metric",
+      "error": 1.1102230246251565e-16,
+      "axis": 0
+    },
+    {
+      "name": "canonical electric continuum coefficient",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "magnetic continuum coefficient",
+      "error": 2.220446049250313e-16,
+      "axis": 0
+    },
+    {
+      "name": "four incident plaquette raising norm",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "matched quadratic magnetic metric",
+      "error": 1.1102230246251565e-16,
+      "axis": 1
+    },
+    {
+      "name": "canonical electric continuum coefficient",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "magnetic continuum coefficient",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "four incident plaquette raising norm",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "matched quadratic magnetic metric",
+      "error": 2.7755575615628914e-17,
+      "axis": 2
+    },
+    {
+      "name": "canonical electric continuum coefficient",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "magnetic continuum coefficient",
+      "error": 2.220446049250313e-16,
+      "axis": 2
+    },
+    {
+      "name": "four incident plaquette raising norm",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "matched quadratic magnetic metric",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "canonical electric continuum coefficient",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "magnetic continuum coefficient",
+      "error": 2.220446049250313e-16,
+      "axis": 0
+    },
+    {
+      "name": "four incident plaquette raising norm",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "matched quadratic magnetic metric",
+      "error": 5.551115123125783e-17,
+      "axis": 1
+    },
+    {
+      "name": "canonical electric continuum coefficient",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "magnetic continuum coefficient",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "four incident plaquette raising norm",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "matched quadratic magnetic metric",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "canonical electric continuum coefficient",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "magnetic continuum coefficient",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "four incident plaquette raising norm",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "matched quadratic magnetic metric",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "canonical electric continuum coefficient",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "magnetic continuum coefficient",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "four incident plaquette raising norm",
+      "error": 0.0,
+      "axis": 0
+    },
+    {
+      "name": "matched quadratic magnetic metric",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "canonical electric continuum coefficient",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "magnetic continuum coefficient",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "four incident plaquette raising norm",
+      "error": 0.0,
+      "axis": 1
+    },
+    {
+      "name": "matched quadratic magnetic metric",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "canonical electric continuum coefficient",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "magnetic continuum coefficient",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "four incident plaquette raising norm",
+      "error": 0.0,
+      "axis": 2
+    },
+    {
+      "name": "onsite interaction picture preserves norms",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "onsite interaction picture preserves disjoint support commutation",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "exact phase heat-kernel derivative"
+    },
+    {
+      "name": "negative finite phase heat-kernel at small step"
+    },
+    {
+      "name": "phase heat-kernel independent Fourier matrix",
+      "error": 3.5647266038494346e-17
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": -1,
+      "order": 0
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": -1,
+      "order": 1
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": -1,
+      "order": 2
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": -1,
+      "order": 3
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": -1,
+      "order": 4
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": -1,
+      "order": 5
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": 1,
+      "order": 0
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": 1,
+      "order": 1
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": 1,
+      "order": 2
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": 1,
+      "order": 3
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": 1,
+      "order": 4
+    },
+    {
+      "name": "exact single-flavor determinant coefficient",
+      "eta": 1,
+      "order": 5
+    },
+    {
+      "name": "quartet cubic determinant phase cancels"
+    },
+    {
+      "name": "quartet fifth-order determinant phase survives"
+    },
+    {
+      "name": "exact rational nonzero phase witness"
+    },
+    {
+      "name": "independent precision phase coefficient limit",
+      "step": "0.002",
+      "coefficient": "-0.3494151722860940727020614804604858131811270570253639789872583768839542",
+      "target": "-0.34944"
+    },
+    {
+      "name": "independent precision phase coefficient limit",
+      "step": "0.001",
+      "coefficient": "-0.3494337928534829695235765790179008770409578494740383619237804280794093",
+      "target": "-0.34944"
+    },
+    {
+      "name": "background T maps phases to opposites",
+      "error": 0.0
+    },
+    {
+      "name": "background T maps phases to opposites",
+      "error": 0.0
+    },
+    {
+      "name": "background T maps phases to opposites",
+      "error": 0.0
+    },
+    {
+      "name": "time reversal pairs conjugate weights",
+      "error": 0.0
+    },
+    {
+      "name": "paired weight modulus",
+      "error": 0.0
+    },
+    {
+      "name": "one and two positive factors give positive weight",
+      "n": 1
+    },
+    {
+      "name": "time reversal pairs conjugate weights",
+      "error": 0.0
+    },
+    {
+      "name": "paired weight modulus",
+      "error": 0.0
+    },
+    {
+      "name": "one and two positive factors give positive weight",
+      "n": 2
+    },
+    {
+      "name": "time reversal pairs conjugate weights",
+      "error": 0.0
+    },
+    {
+      "name": "paired weight modulus",
+      "error": 0.0
+    },
+    {
+      "name": "three factors have complex weight despite T",
+      "n": 3,
+      "phase": -0.000482237029831507
+    }
+  ],
+  "elapsed_seconds": 1.9524211669922806,
+  "source_sha256": "0a91be548fb7be4fb11a6b3e4cdda74083a249c0b0e4fbdd001b6908ad78e6a8",
+  "claim_limit": "Finite-link algebra, stated finite-time bounds and representation-specific phase witnesses; no thermodynamic charged phase or axiom update."
+}
+TOTAL: PASS=508 FAIL=0

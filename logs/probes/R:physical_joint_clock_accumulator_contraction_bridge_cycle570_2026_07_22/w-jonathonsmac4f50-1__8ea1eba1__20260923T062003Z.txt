@@ -1,0 +1,6 @@
+Cycle570 physical joint-clock / accumulator / arbitrary-input contraction bridge
+authority none audit unset
+FAIL Cycle570 runner completed without exception :: FileNotFoundError(2, 'No such file or directory')
+SUMMARY_JSON {"audit": "unset", "authority": "none", "axiom_pressure": false, "compiler_resource": {}, "elapsed_seconds_internal": 4.0624989196658134e-05, "held_prefixes": [8, 13, 21], "maximum_RSS_bytes_internal": 96845824, "shared_substrate_obstruction": false, "status": "cycle570-joint-clock-accumulator-full-contraction-bridge", "tests_failed": 1, "tests_passed": 0, "train_prefixes": [1, 2, 4, 5]}
+
+RESULT pass=0 fail=1

@@ -1,0 +1,99 @@
+Dedicated exact exclusion stress runner
+
+=== E1: central-idempotent split and simplicity ===
+[PASS] 01 E1.1
+[PASS] 02 E1.2
+[PASS] 03 E1.3
+[PASS] 04 E1.4
+[PASS] 05 E1.5
+[PASS] 06 E1.6
+[PASS] 07 E1.7
+[PASS] 08 E1.8
+[PASS] 09 E1.9
+[PASS] 10 E1.10
+[PASS] 11 E1.11
+[PASS] 12 E1.12+
+[PASS] 13 E1.13+
+[PASS] 14 E1.14+
+[PASS] 15 E1.15+
+[PASS] 16 E1.12-
+[PASS] 17 E1.13-
+[PASS] 18 E1.14-
+[PASS] 19 E1.15-
+[PASS] 20 E1.TOTAL
+
+=== E2: exhaustive irreducible-module dimension ===
+[PASS] 21 E2.1
+[PASS] 22 E2.2+.1
+[PASS] 23 E2.3+.1
+[PASS] 24 E2.2+.2
+[PASS] 25 E2.3+.2
+[PASS] 26 E2.4+
+[PASS] 27 E2.5+
+[PASS] 28 E2.6+
+[PASS] 29 E2.2-.1
+[PASS] 30 E2.3-.1
+[PASS] 31 E2.2-.2
+[PASS] 32 E2.3-.2
+[PASS] 33 E2.4-
+[PASS] 34 E2.5-
+[PASS] 35 E2.6-
+[PASS] 36 E2.TOTAL
+
+=== E3: one-dimensional exclusion and two-dimensional positive control ===
+[PASS] 37 E3.1
+[PASS] 38 E3.2
+[PASS] 39 E3.3
+[PASS] 40 E3.4
+[PASS] 41 E3.5
+[PASS] 42 E3.TOTAL
+
+=== E4: full-complexification kernel and real-algebra faithfulness boundary ===
+[PASS] 43 E4.1+
+[PASS] 44 E4.2+
+[PASS] 45 E4.3+
+[PASS] 46 E4.4+
+[PASS] 47 E4.1-
+[PASS] 48 E4.2-
+[PASS] 49 E4.3-
+[PASS] 50 E4.4-
+[PASS] 51 E4.TOTAL
+
+=== EL: finite-region lattice tensor extension ===
+[PASS] 52 EL.scalar N=2
+[PASS] 53 EL.scalar N=3
+[PASS] 54 EL.module (+,+)
+[PASS] 55 EL.module (+,-)
+[PASS] 56 EL.module (-,+)
+[PASS] 57 EL.module (-,-)
+[PASS] 58 EL.exhaustion
+[PASS] 59 EL.TOTAL finite-region certificates for both exclusions execute
+
+N1 MECHANISM CLASSES (distinct attack routes, live evidence above):
+mechanism_class 1: route_id=central_split route_class=algebraic_rearrangement mechanism=solve the complete center and central-idempotent algebra, then isolate matrix units in each summand; attempt=test whether an omitted central block or proper ideal supports another simple-module dimension; outcome=E1 exhausts exactly two simple M2(C) summands; honesty_marker=ATTEMPTED disposition=CLOSED
+mechanism_class 2: route_id=module_carriers route_class=alternate_carrier_or_sector mechanism=classify every minimal left ideal in both central sectors; attempt=test alternate irreducible modules or carrier dimensions within either M2(C) block; outcome=E2 finds one 2-dimensional simple-module class per sector; honesty_marker=ATTEMPTED disposition=CLOSED
+mechanism_class 3: route_id=scalar_finite_scan route_class=numerical_or_finite_case mechanism=compute the exact scalar polynomial solve, unit-ideal Groebner basis, and finite square-law scan; attempt=search every one-dimensional scalar candidate for a Clifford character; outcome=E3 finds no solution and exhibits the exact contradiction; honesty_marker=ATTEMPTED disposition=CLOSED
+mechanism_class 4: route_id=faithfulness_boundary route_class=boundary_or_initial_condition mechanism=compute kernels on the full complexification and at the real-algebra restriction boundary; attempt=test whether the faithfulness wording hides an alternate full-complexification representation; outcome=E4 computes the opposite summand kernels and faithful real restrictions; honesty_marker=ATTEMPTED disposition=CLOSED
+mechanism_class 5: route_id=finite_lattice_tensor route_class=lattice_scale_or_limit mechanism=restrict finite-region tensor-algebra characters sitewise and construct the two-site tensor modules; attempt=test whether multiple lattice sites evade the one-site exclusions or change the tensor-power simple-module dimensions; outcome=EL proves all finite N by tensor induction and exhausts the N=2 blocks constructively; honesty_marker=ATTEMPTED disposition=CLOSED
+
+=== N5 RESOLUTION SWEEP (per authenticated negative statement) ===
+Each negative statement below is swept over the five canonical resolution classes; every class is backed by an exact certificate above, including the lattice-wide tensor induction. Lines are stable for byte-for-byte citation.
+NEGATIVE STATEMENT 1: no faithful one-dimensional complex representation of Cl(3,0) exists
+per_element: [EXECUTED] each generator pair (x_i, x_j), i != j, already forces the contradiction x_i x_j = -x_j x_i with commuting scalars; the scalar Clifford system has no solution element-by-element
+per_site: [EXECUTED] Cl(3,0) is the one-site real algebra; the full scalar system over one site was solved exhaustively and is inconsistent
+per_mode: [EXECUTED] every irreducible module (mode) restricts to one central summand and has computed complex dimension 2, never 1
+per_block: [EXECUTED] both central-idempotent blocks e_+A and e_-A carry only the 2-dimensional simple module; no block admits a 1-dimensional faithful action
+lattice_wide: [EXECUTED] for every nonempty finite N-site tensor algebra, a unital one-dimensional representation restricts to a forbidden one-site scalar character; the N=2 and N=3 joint systems were also solved explicitly with no solutions
+[PASS] 60 N5.1
+NEGATIVE STATEMENT 2: no faithful irreducible complex representation of Cl(3,0) has dimension other than 2
+per_element: [EXECUTED] central idempotent actions on any simple module were solved element-wise to exactly one active summand
+per_site: [EXECUTED] at the single site, the minimal-left-ideal decomposition exhausts all simple quotients and each has dimension 2
+per_mode: [EXECUTED] every irreducible module (mode) is a quotient of its active regular summand and computes to dimension exactly 2
+per_block: [EXECUTED] each 4-dimensional simple block decomposes into two copies of the same 2-dimensional simple module; no other dimension occurs
+lattice_wide: [EXECUTED] at N=1 faithful irreducibles have dimension 2; for N>=2 a matrix-unit induction gives full real image rank 2*4^N < 8^N, so no tensor-power simple is faithful; N=2 ranks 32 and kernels 32 were computed explicitly
+[PASS] 61 N5.2
+
+=== TOTAL ===
+[PASS] 62 UNIVERSAL
+TOTAL: PASS=62 FAIL=0
+FLAGS: none

@@ -1,0 +1,35 @@
+{
+ "task": "R:ckm_down_type_scale_convention_cycle_edge_hygiene_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "ckm",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/ckm_down_type_scale_convention_cycle_edge_hygiene_2026_06_17.py",
+ "seed": 41662,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053422Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "91cf68d001e9b9800f21d44c61a6442719861abd44e6fd1d3ea592cdff6c6ba0",
+ "stdout_tail": "==============================================================================\nCKM down-type scale-convention source-edge hygiene\n==============================================================================\n[PASS] note exists\n[PASS] runner exists\n[PASS] markdown dependencies are approved foundation notes only (['MINIMAL_AXIOMS_2026-06-29.md', 'SCALE_REFERENCE_PRIMITIVE_NOTE.md'])\n[PASS] no co-cycle source edge remains ([])\n[PASS] new claim firewall is explicit ([])\n[PASS] former numerical-match claim is absent ([])\n[PASS] runner proves shared-transport deviation invariance\n[PASS] runner proves the textbook CKM countermodel bridge\n[PASS] runner separates exact and comparator pass classes\n[PASS] runner pins the one-loop factor independently\n==============================================================================\nTOTAL: PASS=10 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053422Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

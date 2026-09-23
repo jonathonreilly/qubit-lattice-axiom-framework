@@ -1,0 +1,41 @@
+{
+ "task": "R:cl3_fourth_axiom_rg_scale_dynamics_scoping_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "cl3",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cl3_fourth_axiom_rg_scale_dynamics_scoping_2026_06_05.py",
+ "seed": 41664,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053424Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS = 3, FAIL = 0",
+   "PASS = 15, FAIL = 0",
+   "PASS = 0, FAIL = 0",
+   "PASS = 18, FAIL = 0",
+   "PASS=18, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6a4b25ec185f316f79159c130605fa8db7f8b902e64d916dca5dba99d92c5f16",
+ "stdout_tail": "ndary condition. Producing N distinct moduli costs\n    N inputs (N attractor sites OR N UV BCs). Outputs never exceed\n    inputs. The modulus is RELOCATED to the UV boundary condition.\n\n  THIRD OPTION (IR-attractive funnel): does NOT beat relocation.\n    One attractor -> one value (BAR 1 fail); per-sector attractors\n    -> the attractor location IS each modulus (BAR 2 fail).\n\n  Plus a NEW dimensionful scale-reference primitive (the UV cutoff /\n  # decades) is required that A1/A2/A3 do not contain.\n\n  OVERALL VERDICT: RELOCATES (to a UV boundary condition / the\n    matter-sector beta coefficients), with a WRONG-VALUES corner\n    for the single-fixed-point sub-option (falsified by quarks).\n    INPUT COUNT: >= N (one per sector) + 1 scale reference; never\n    fewer inputs than the N moduli it would explain.\n\n  This generalizes Probe-5 (r_lep=1/2 fixed-point bounded\n  obstruction) to all four sectors and formalizes the input count.\n  No fourth axiom is adopted. Owner-authorized SCOPING only.\n\n======================================================================\nNOTE       : PASS = 3, FAIL = 0\nEXACT      : PASS = 15, FAIL = 0\nBOUNDED    : PASS = 0, FAIL = 0\nTOTAL      : PASS = 18, FAIL = 0\n=== TOTAL: PASS=18, FAIL=0 ===\n======================================================================\n\nScoping verdict: RELOCATES (UV boundary condition / matter-sector\nbeta coefficients) + WRONG-VALUES single-fixed-point corner.\nInputs >= N moduli + 1 scale reference. No fourth axiom adopted.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_literal_bit_cable_cycle154_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_literal_bit_cable_cycle154_2026_07_15.py",
+ "seed": 44613,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T062333Z",
+ "elapsed_s": 605.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "77568e65cd1a6a668a48292d7d2cfd5e93c9a5482598a8c34cc6b8f2e19fd088",
+ "stdout_tail": "ometrically distinct for both bits :: \nPASS 96 proper-cubic cable rows are disjoint from Cycle 153 :: 96\nPASS cable merges into 83,372 rows without conflict :: 83372\nPASS deleting any direct cable parent suppresses its intended copy :: (20, ())\n\nPATHS, TURNS, AND CORRUPTION\nPASS all 192 straight/turn/three-axis histories are exact :: (192, {'straight': {4}, 'one_turn': {3}, 'two_turn': {3}, 'three_axis': {4}}, [])\nPASS every cable cell sees a guide while compatible corner cells may share one :: {'straight': {4}, 'one_turn': {3}, 'two_turn': {3}, 'three_axis': {4}}\nPASS deleting any path guide forces a strict preterminal stall :: (28, [])\n\nPREDECESSOR COEXISTENCE\nPASS all 768 Cycle-153 fanout graphs survive cable rows :: []\nPASS all 54,000 Cycle-152 router graphs survive cable rows :: []\nPASS cable rows preserve all 86,640 prior unified histories :: []\nPASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: physical literal-bit cable :: \nFAIL note contains: straight and covariant turn cells :: \nFAIL note contains: path compiler :: \nFAIL note contains: transport primitive :: \nFAIL note contains: does not choose a fundamental law :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 14 FAIL 10\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063339Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

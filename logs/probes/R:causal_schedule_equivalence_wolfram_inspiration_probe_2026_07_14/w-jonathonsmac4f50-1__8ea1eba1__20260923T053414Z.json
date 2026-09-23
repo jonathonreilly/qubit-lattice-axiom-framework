@@ -1,0 +1,31 @@
+{
+ "task": "R:causal_schedule_equivalence_wolfram_inspiration_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "causal",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/causal_schedule_equivalence_wolfram_inspiration_probe_2026_07_14.py",
+ "seed": 41654,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053414Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "78ad3e12cd515a59958a64946c71e58acf3da28cecd358039c41f223835b7296",
+ "stdout_tail": "reserves the causal record law\nPASS rotation 01 preserves the causal record law\nPASS rotation 02 preserves the causal record law\nPASS rotation 03 preserves the causal record law\nPASS rotation 04 preserves the causal record law\nPASS rotation 05 preserves the causal record law\nPASS rotation 06 preserves the causal record law\nPASS rotation 07 preserves the causal record law\nPASS rotation 08 preserves the causal record law\nPASS rotation 09 preserves the causal record law\nPASS rotation 10 preserves the causal record law\nPASS rotation 11 preserves the causal record law\nPASS rotation 12 preserves the causal record law\nPASS rotation 13 preserves the causal record law\nPASS rotation 14 preserves the causal record law\nPASS rotation 15 preserves the causal record law\nPASS rotation 16 preserves the causal record law\nPASS rotation 17 preserves the causal record law\nPASS rotation 18 preserves the causal record law\nPASS rotation 19 preserves the causal record law\nPASS rotation 20 preserves the causal record law\nPASS rotation 21 preserves the causal record law\nPASS rotation 22 preserves the causal record law\nPASS rotation 23 preserves the causal record law\nPASS translation 00 preserves the causal record law\nPASS translation 01 preserves the causal record law\nPASS translation 02 preserves the causal record law\nPASS global outcome-name interchange preserves the law\nPASS linear extension orders incomparable events\nPASS incomparable-event swap is gauge at distribution level\nRESULT PASS=50 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053414Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

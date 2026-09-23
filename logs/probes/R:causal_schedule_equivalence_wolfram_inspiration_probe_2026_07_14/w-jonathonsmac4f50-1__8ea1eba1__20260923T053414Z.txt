@@ -1,0 +1,51 @@
+PASS live schedule x->y has the exact contaminated law
+PASS live schedule y->x has the exact contaminated law
+PASS live asynchronous order changes readable terminal statistics
+PASS only one terminal sector rejoins
+PASS causal-layer execution preserves the old-front law
+PASS opposite execution order preserves the old-front law
+PASS causal-layer linear extensions are physically equivalent
+PASS averaging schedules creates a third law rather than a quotient
+PASS schedule randomization does not recover the layer law
+PASS no normalized mixed-profile kernel matches both live orders
+PASS the two confluence demands contradict normalization
+PASS boundary distance generates the intended causal ranks
+PASS random root reads both boundary predecessors
+PASS two children read the same causal parent
+PASS join reads both causal children
+PASS DAG has exactly the two expected linear extensions
+PASS all DAG linear extensions agree exactly
+PASS causal Bayesian product gives the exact correlated joint law
+PASS causal joint law is normalized
+PASS enumerated all 24 proper cubic rotations
+PASS rotation 00 preserves the causal record law
+PASS rotation 01 preserves the causal record law
+PASS rotation 02 preserves the causal record law
+PASS rotation 03 preserves the causal record law
+PASS rotation 04 preserves the causal record law
+PASS rotation 05 preserves the causal record law
+PASS rotation 06 preserves the causal record law
+PASS rotation 07 preserves the causal record law
+PASS rotation 08 preserves the causal record law
+PASS rotation 09 preserves the causal record law
+PASS rotation 10 preserves the causal record law
+PASS rotation 11 preserves the causal record law
+PASS rotation 12 preserves the causal record law
+PASS rotation 13 preserves the causal record law
+PASS rotation 14 preserves the causal record law
+PASS rotation 15 preserves the causal record law
+PASS rotation 16 preserves the causal record law
+PASS rotation 17 preserves the causal record law
+PASS rotation 18 preserves the causal record law
+PASS rotation 19 preserves the causal record law
+PASS rotation 20 preserves the causal record law
+PASS rotation 21 preserves the causal record law
+PASS rotation 22 preserves the causal record law
+PASS rotation 23 preserves the causal record law
+PASS translation 00 preserves the causal record law
+PASS translation 01 preserves the causal record law
+PASS translation 02 preserves the causal record law
+PASS global outcome-name interchange preserves the law
+PASS linear extension orders incomparable events
+PASS incomparable-event swap is gauge at distribution level
+RESULT PASS=50 FAIL=0

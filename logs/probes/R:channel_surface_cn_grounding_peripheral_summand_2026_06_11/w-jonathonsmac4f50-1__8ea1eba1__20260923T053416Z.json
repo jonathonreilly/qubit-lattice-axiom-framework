@@ -1,0 +1,35 @@
+{
+ "task": "R:channel_surface_cn_grounding_peripheral_summand_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "channel",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/channel_surface_cn_grounding_peripheral_summand_2026_06_11.py",
+ "seed": 41656,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053416Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b32a44c35cb51964f76db12500746fdd4be65a79da901ee981b864576a1198f6",
+ "stdout_tail": "reflection cycle's converse: C holds on the summand with NO transport premise\n\nPART F -- T4: large-separation data factors through the peripheral summand\n==============================================================================\n  [PASS] F1 asymptotic window recovery error tracks the cnu suppression rho^{n0} (offsets 2, 6, 10)  --  n0=2: err=3.18e-02 (bound 2.14e-01); n0=6: err=2.13e-03 (bound 1.34e-02); n0=10: err=2.54e-04 (bound 8.37e-04)\n  [PASS] F2 hostile witness: a fully cnu tick's covariance dies geometrically -- no band for the chain to read  --  band persistence = the peripheral summand is nonempty: the sharpened P4 residual\n\nPART G -- composition with the transcription cycle (no tension)\n==============================================================================\n  [PASS] G[eps=0.3] the transcription model's channel is doubly stochastic (HS-norm 1); its registered sector is a strict contraction (peripheral part empty for eps > 0)  --  |eig M| = [0.90848 0.90848]: the faithful limit eps -> 0 is the peripheral restoration\n  [PASS] G[eps=0.15] the transcription model's channel is doubly stochastic (HS-norm 1); its registered sector is a strict contraction (peripheral part empty for eps > 0)  --  |eig M| = [0.97741 0.97741]: the faithful limit eps -> 0 is the peripheral restoration\n\n==============================================================================\nSCORECARD: PASS=12 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053416Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

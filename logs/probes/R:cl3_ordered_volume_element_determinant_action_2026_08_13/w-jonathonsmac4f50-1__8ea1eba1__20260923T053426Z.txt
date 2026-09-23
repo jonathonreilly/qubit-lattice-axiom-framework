@@ -1,0 +1,29 @@
+external_scientific_inputs: none
+package_local_integrity_reads: docs/CL3_ORDERED_VOLUME_ELEMENT_DETERMINANT_ACTION_NARROW_THEOREM_NOTE_2026-08-13.md
+audit_input_paths: docs/CL3_ORDERED_VOLUME_ELEMENT_DETERMINANT_ACTION_NARROW_THEOREM_NOTE_2026-08-13.md
+PASS: package-input the declared theorem note is readable
+PASS: package-metadata the theorem surface carries the required proposal and trace fields
+PASS: clifford-car all nine Euclidean CAR identities hold
+PASS: reverse-order e3 e2 e1 equals minus e1 e2 e3
+PASS: odd-grade both ordered volume words have odd grade
+PASS: centrality both volume words commute with all three generators
+PASS: square-minus-one both volume words square to minus the identity
+PASS: pauli-car the Pauli exhibit obeys all nine CAR identities
+PASS: pauli-volume the forward and reversed Pauli products are plus and minus iI
+PASS: pauli-squares both Pauli volume products square to minus the identity
+PASS: pauli-real-rank the eight real basis images have exact coordinate determinant minus sixteen
+PASS: signed-permutation-census the enumeration has 48 unique matrices
+PASS: determinant-split the determinant classes contain 24 matrices each
+PASS: group-closure all signed-permutation products stay in the 48-element set
+PASS: determinant-action every signed permutation sends omega to determinant times omega
+PASS: proper-action all 24 determinant-plus-one elements fix both ordered signs
+PASS: improper-action all 24 determinant-minus-one elements exchange the ordered signs
+PASS: mutation-clifford-swap the one-fault scientific mutant is rejected
+PASS: mutation-reverse-word the one-fault scientific mutant is rejected
+PASS: mutation-centrality-sign the one-fault scientific mutant is rejected
+PASS: mutation-square-sign the one-fault scientific mutant is rejected
+PASS: mutation-pauli-orientation the one-fault scientific mutant is rejected
+PASS: mutation-group-census the one-fault scientific mutant is rejected
+PASS: mutation-determinant-action the one-fault scientific mutant is rejected
+PASS: mutation-aggregate all seven load-bearing one-fault mutants are rejected
+TOTAL: PASS=25 FAIL=0

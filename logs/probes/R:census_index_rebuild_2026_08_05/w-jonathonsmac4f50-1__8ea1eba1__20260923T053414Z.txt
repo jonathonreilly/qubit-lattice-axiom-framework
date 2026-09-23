@@ -1,0 +1,58 @@
+records: 3621  unique_paths: 3408  overlaps: 213
+resolved to git blobs: 1344  blob fields matching: 183
+unresolved refs (disclosed): 0  null refs: 0
+shipped sha256:     40f2878275e84ca53e905cfdf214ff5e44dfb8e9b144ac9a36743193b843e31b
+regenerated sha256: 40f2878275e84ca53e905cfdf214ff5e44dfb8e9b144ac9a36743193b843e31b
+byte-exact match:   True
+receipt: logs/runner-cache/census_index_rebuild_2026_08_05.json
+FAIL (2277 problems):
+  - does not resolve to a blob: e945c772ede00688da910f6c99180e8bc2546b18:docs/A2_CORRECTION_BEFORE_AFTER_PANEL_VERDICT_2026-06-24.md
+  - does not resolve to a blob: e945c772ede00688da910f6c99180e8bc2546b18:docs/A2_CORRECTION_CODEX_GPT55_CROSSCHECK_2026-06-24.md
+  - does not resolve to a blob: 35fa83361b13f7a69081ced3e17cd1ace4f4fd56:docs/A2_CORRECTION_FINAL_2026-06-25.md
+  - does not resolve to a blob: 35fa83361b13f7a69081ced3e17cd1ace4f4fd56:docs/A2_FINAL_BEFORE_AFTER_PANEL_VERDICT_2026-06-25.md
+  - does not resolve to a blob: 21e95aaff2c6c7ab1fea802c639fa4418f806beb:docs/A2_MINIMAL_CORRECTION_PROPOSAL_2026-06-24.md
+  - does not resolve to a blob: 35fa83361b13f7a69081ced3e17cd1ace4f4fd56:docs/A2_MINIMAL_EDIT_PANEL_VERDICT_2026-06-25.md
+  - does not resolve to a blob: 1ec9572df07f737326382c5070d9d69690ffa778:docs/A3_RECORD_CLEAN_ROOM_PANEL_VERDICT_2026-06-25.md
+  - does not resolve to a blob: 1ec9572df07f737326382c5070d9d69690ffa778:docs/A3_SPLIT_BEFORE_AFTER_PANEL_VERDICT_2026-06-25.md
+  - does not resolve to a blob: 17f88bb35ad7c81ba7fbac32c7c40bfca4441312:docs/ACTIVITY_INFORMATION_BOUND_BOUNDED_NOTE_2026-07-09.md
+  - does not resolve to a blob: f0be7f3c93e09aeda4b6847e1c56f0a861eea7bc:docs/ADVERSARIAL_AUDIT_2026-04-13.md
+  - does not resolve to a blob: 63f0315500211dc8f7100431ed083d8d9c03d978:docs/ADVERSARIAL_AUDIT_ACTION_ITEMS_2026-04-13.md
+  - does not resolve to a blob: 48fb3d50ebf30425a908334a183c1b322a8d7d78:docs/ADVERSARIAL_CHAIN_AUDIT_2026-04-13.md
+  - does not resolve to a blob: e65e69b77cac98064f68c4a7e0707e30ad3ec811:docs/ALPHA_2LOOP_HIERARCHY_NOTE.md
+  - does not resolve to a blob: 5d16934406a624cd2904484369a53cc2bab9eaad:docs/ALPHA_EM_AUDIT_NOTE.md
+  - does not resolve to a blob: a6fdce65069126907d9e2f1ab8bf55569b5487de:docs/ALPHA_EM_DERIVATION_NOTE.md
+  - does not resolve to a blob: 28fdee17d5748efa67e2176edae0d2eec4fba8f0:docs/ALPHA_S_DETERMINATION_NOTE.md
+  - does not resolve to a blob: e9aa7c3869830ade532f971c9ed1aabe3491c5c2:docs/ALPHA_S_DM_RATIO_RESULT_2026-04-12.md
+  - does not resolve to a blob: a2b6bdd5cb3bb0145b46d784efdf98d059206204:docs/ALPHA_S_ROBUSTNESS_NOTE.md
+  - does not resolve to a blob: 141e0646d05ed0f3af60bbffde7184f292266915:docs/ALPHA_S_SELF_CONSISTENCY_NOTE.md
+  - does not resolve to a blob: dba521b3f49bd2d802037413754798ea19a21805:docs/ALTERNATIVE_AXIOM_FIRST_GR_PATH_NOTE.md
+  - does not resolve to a blob: 60a264ba93427b648c4c01edb5b2437542b78eb5:docs/ANCHORED_SURFACE_GAS_ROUTE_NOTE.md
+  - does not resolve to a blob: 330729a8815265bdda9d3d06f6379f32890e2a50:docs/ANNIHILATION_RATIO_NOTE.md
+  - does not resolve to a blob: dc64695a347c4458b8114eabbdf5e6d6b6334f31:docs/APBC_DERIVED_NOTE.md
+  - does not resolve to a blob: 8b60bea66816669d0c54ce1b62e0b005e8061cf7:docs/ATLAS_ISSUES_FLAGGED_DURING_KOIDE_REVIEW_2026-04-21.md
+  - does not resolve to a blob: 504ec5d2b414212b21332df3b99151244506cf8a:docs/ATOMIC_RYDBERG_DEPENDENCY_COMPRESSION_THEOREM_NOTE_2026-04-26.md
+  - does not resolve to a blob: 62c3d57addbf2720e61ba9041ca50dd0bbc6801a:docs/AUTONOMOUS_LOOP_INDEX_2026-04-22.md
+  - does not resolve to a blob: 77e56f41fafc1b85189f38ee62c97ad0e4dc4a1e:docs/AUTONOMOUS_LOOP_INDEX_UPDATE_2026-04-22.md
+  - does not resolve to a blob: 0009ff9fd09141790e40f399a29ced192123deea:docs/AUTONOMOUS_LOOP_NATURE_GRADE_REVIEW_2026-04-22.md
+  - does not resolve to a blob: 0009ff9fd09141790e40f399a29ced192123deea:docs/AUTONOMOUS_LOOP_RETAINED_SCIENCE_PACKAGE_2026-04-22.md
+  - does not resolve to a blob: a3bae980704b4316b69df4760ae97fb3f1332a11:docs/AXIOM_NATIVE_ATTEMPT_LOG.md
+  - does not resolve to a blob: a3bae980704b4316b69df4760ae97fb3f1332a11:docs/AXIOM_NATIVE_STARTING_KIT.md
+  - does not resolve to a blob: a3bae980704b4316b69df4760ae97fb3f1332a11:docs/AXIOM_NATIVE_TARGETS.md
+  - does not resolve to a blob: d43cf0a10a2fcb1fec69211a716b44ca531a5494:docs/AXIOM_PANEL_OPUS48_RERUN_2026-06-22.md
+  - does not resolve to a blob: 382da83c0d7a68690666a740e518542b54d43cdd:docs/AXIOM_RECONCILIATION_INDEX_2026-07-12.md
+  - does not resolve to a blob: 6442046103b2893c260b2fc6089d3c142112d44c:docs/AXIOM_REDUCTION_TO_TWO_NOTE.md
+  - does not resolve to a blob: 988ebc4f6966ad4e7efc8003f1c406ff420a43e2:docs/AXIOM_RISK_LEDGER.md
+  - does not resolve to a blob: 01a58a893e599cfb2fa876f2f9cdae3ae952c51a:docs/AXIOM_TO_MAIN_LANE_CASCADE_SYNTHESIS_NOTE_2026-04-29.md
+  - does not resolve to a blob: 6d95d13a8620042df9556c20497f38a9c8035a2a:docs/BARYOGENESIS_CLOSURE_GATE_NOTE.md
+  - does not resolve to a blob: e5297ea7b9b12d6e0dbc071241d578eb72ce3254:docs/BARYOGENESIS_EFFICIENCY_PENALTY_NOTE.md
+  - does not resolve to a blob: defc57b6a6c7869115a414a14301b176a7fbee6e:docs/BARYOGENESIS_EWPT_WASHOUT_TARGET_NOTE.md
+  - does not resolve to a blob: 18fd4af077bb47d39d7fb20d5e0880db95369cda:docs/BARYOGENESIS_FINITE_T_REDUCTION_NOTE.md
+  - does not resolve to a blob: d0d8cd7af207e027c9cb9dee4d4468c36c751656:docs/BARYOGENESIS_HIGGS_DOUBLET_MULTIPLICITY_NOTE.md
+  - does not resolve to a blob: 27af994c8fbbd555f5006d8b79364cbc4b1fbc78:docs/BARYOGENESIS_HOMOGENEOUS_SOURCE_LIFT_NOTE.md
+  - does not resolve to a blob: 53acdf60cb67f95f68630fba740c9d40d54bde41:docs/BARYOGENESIS_JARLSKOG_FACTORIZATION_NOTE.md
+  - does not resolve to a blob: e28ede6e7208c0976e4121d745953bf3ee42b0d7:docs/BARYOGENESIS_KEWPT_SINGLE_ORDER_PARAMETER_NOTE.md
+  - does not resolve to a blob: 1fa2366a4906734d3f44875d7561f9f66386876b:docs/BARYOGENESIS_KNP_STAGE_DECOMPOSITION_NOTE.md
+  - does not resolve to a blob: 1a2284261e6a6961c90956249db25a840028b829:docs/BARYOGENESIS_KSPH_SINGLE_ACTIVE_LANE_NOTE.md
+  - does not resolve to a blob: b7e5dd8bcf86824f54670fea78940d70cd3d39af:docs/BARYOGENESIS_KTR_SINGLE_LEFT_HANDED_LANE_NOTE.md
+  - does not resolve to a blob: 576adc435d121018e6bd01427ba43617efee5840:docs/BARYOGENESIS_NONPERTURBATIVE_ROUTE_PIVOT_NOTE.md
+  - does not resolve to a blob: 1ab8c735882e7f69a99ad31b6521dd54dddfcad4:docs/BARYOGENESIS_NOTE.md

@@ -1,0 +1,16 @@
+==============================================================================
+CKM down-type scale-convention source-edge hygiene
+==============================================================================
+[PASS] note exists
+[PASS] runner exists
+[PASS] markdown dependencies are approved foundation notes only (['MINIMAL_AXIOMS_2026-06-29.md', 'SCALE_REFERENCE_PRIMITIVE_NOTE.md'])
+[PASS] no co-cycle source edge remains ([])
+[PASS] new claim firewall is explicit ([])
+[PASS] former numerical-match claim is absent ([])
+[PASS] runner proves shared-transport deviation invariance
+[PASS] runner proves the textbook CKM countermodel bridge
+[PASS] runner separates exact and comparator pass classes
+[PASS] runner pins the one-loop factor independently
+==============================================================================
+TOTAL: PASS=10 FAIL=0
+==============================================================================

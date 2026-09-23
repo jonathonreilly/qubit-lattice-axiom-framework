@@ -1,0 +1,35 @@
+{
+ "task": "R:charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "charged",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py",
+ "seed": 41660,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053420Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "587ffec9364af0324cb1a2e9f0bc4ec06206ad081f9c8ba28d13192dfab2d8a1",
+ "stdout_tail": "variance identity is 6|c|^2\n  [PASS] Fourier and symmetric formulas for r agree\n  [PASS] r is common-scale invariant\n  [PASS] r is invariant under a generating transposition\n  [PASS] r is invariant under a generating cycle\n\nPart C: Koide identity\n----------------------\n  [PASS] Parseval identity\n  [PASS] Q equals 1/3+2r/3\n  [PASS] r=1/2 implies Q=2/3\n  [PASS] Q=2/3 has r=1/2\n  [PASS] Koide equivalence does not fix phase\n\nPart D: folded phase and unordered reconstruction\n-------------------------------------------------\n  [PASS] a is invariant under every permutation\n  [PASS] r is invariant under every permutation\n  [PASS] folded phase is invariant under every permutation\n  [PASS] inverse cosine formula reconstructs ordered roots\n  [PASS] folded phase reconstructs the unordered roots\n  [PASS] folded phase lies in [0,pi/3]\n  [PASS] fold boundary is permutation invariant\n  [PASS] both fold-boundary representatives give pi/3\n  [PASS] r is invariant under common positive mass scaling\n  [PASS] degenerate triple has c=0 and r=0\n  [PASS] c=0 reconstruction is phase independent\n\nScope guards\n------------\n  [PASS] source requires an independently defined mass functional\n  [PASS] source keeps the primitive outside its mathematical premise set\n  [PASS] source separates the AC obligation-retirement domain\n  [PASS] source keeps r free\n  [PASS] source keeps comparator and premise surfaces unchanged\n\n====================================================================\nTOTAL: PASS=33, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053421Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

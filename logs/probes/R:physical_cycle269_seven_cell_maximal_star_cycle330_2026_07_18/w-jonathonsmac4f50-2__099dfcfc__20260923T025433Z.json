@@ -19,14 +19,21 @@
  "stdout_sha256": "bbccc508bd58aa1fdf68b90f34e162f91f0dc704b33c9f42fcf3a894e878283d",
  "stdout_tail": "d_joint_S7_smallest_Gram_eigenvalue': 0.9999999999999989, 'identity_to_first_adjacent_order_residual': 1.414213562373093, 'identity_to_reversal_order_residual': 1.4142135623730865, 'lower_role_register_M2_inventory': {'S4': 5, 'S5': 7, 'S6': 10}, 'two_overlapping_S6_register_M2': 20, 'joint_S7_role_register_M2': 13, 'slot_plus_active_edge_register_M2': 5, 'total_patch_union_with_joint_S7_role_M2': 276, 'maximum_joint_branch_with_joint_S7_role_M2': 52, 'face_port_cell_role_union_M2': 263, 'maximum_joint_branch_before_role_register_M2': 39, 'direct_multiplication_sample_branches': 8, 'direct_multiplication_sample_order_products': 64, 'direct_multiplication_validation_failures': np.int64(0), 'local_physical_union_M2': 263, 'maximum_local_branch_M2': 36, 'port_constraint_commutator_failures': 0, 'fixed_sector_commutator_failures': 0}}\nPASS joint-role update coin contact slot exclusion and lawful-domain deletions are detected :: {'deleted_joint_order_amplitude_Gram_residual': 0.0001984126984126984, 'deleted_update_column_unitarity_residual': 1.0, 'deleted_coin_coefficient': np.complex128(-0.6592368421510875+0.04906436503248315j), 'deleted_coin_unitarity_residual': 0.7605089632771271, 'deleted_contact_residual': 0.3678930670560825, 'deleted_slot_cycle_unitarity_residual': 1.0, 'deleted_unused_S7_state_exclusion_rank_surplus': 3152, 'deleted_unused_slot_state_exclusion_rank_surplus': 2, 'one_S6_only_common_rank_factor': 7, 'lawful_domain_rejections': 2}\nSCIENCE TOTAL PASS=18 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T025645Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T031426Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 099dfcfc differs from the current HEAD b8d94cbb (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged slot-1 run (issue #8621): the same N4 exact-line-pin failure on main. The second FAIL here ('recorded no-go methodology commit remains an ancestor of origin/main', 8e1adb5bc) is a shallow-clone artefact of this slot: the commit is an ancestor of origin/main in a checkout with deeper history (machine, not science).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T031426Z"
  }
 }

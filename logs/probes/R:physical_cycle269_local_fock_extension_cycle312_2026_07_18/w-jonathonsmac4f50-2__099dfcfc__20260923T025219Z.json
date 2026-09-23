@@ -19,14 +19,21 @@
  "stdout_sha256": "b0fc5aa40a3021a02933f65d510542492f70da2b0f48547efce286197a731cd2",
  "stdout_tail": "308 complement carrier, and Cycle-311 common M64', 'tested_numbers': 'n=0,1,2,3,4', 'tested_geometries': 'separated, neighboring, and same-cell simultaneous carriers', 'not_supplied': 'global parity service, global pair ordering, Jordan-Wigner string, or host branch', 'open': 'multi-carrier local extension, contact on the recurrent volume, primitive gate synthesis, and full Fock', 'authority': 'none', 'audit': 'unset'}\nFAIL N4 locks each decisive residual to its exact runner line :: [{'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 510, 'fragment': 'bounded encoded coin, reverse, and edge blocks', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 758, 'fragment': 'formal pair-row Gamma is exactly', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 904, 'fragment': 'literal products of even encoded pair creators', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 1000, 'fragment': 'commuting-pair multiplicative lift', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 1140, 'fragment': 'number-two-selective M2 gate closes', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 1208, 'fragment': 'incident-link Gauss census', 'match': False}]\nTOTAL PASS=29 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T025235Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T031426Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 099dfcfc differs from the current HEAD b8d94cbb (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged slot-1 run (issue #8623): the same N4 exact-line-pin failure on main. The second FAIL here ('recorded no-go methodology commit remains an ancestor of origin/main', 8e1adb5bc) is a shallow-clone artefact of this slot: the commit is an ancestor of origin/main in a checkout with deeper history (machine, not science).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T031426Z"
  }
 }

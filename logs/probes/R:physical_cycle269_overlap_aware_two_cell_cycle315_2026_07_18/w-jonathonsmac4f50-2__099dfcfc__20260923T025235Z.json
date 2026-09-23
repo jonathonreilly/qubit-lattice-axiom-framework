@@ -19,14 +19,21 @@
  "stdout_sha256": "be0c947d52fc2979175b5ca005d26ac4fea856707db962d52a907cf87cbe768d",
  "stdout_tail": " the two-cell edge seam :: {'coin_unitarity': 0.0, 'coin_unitarity_raw_maximum': 2.8865802078198784e-15, 'FSWAP_unitarity': 0.0, 'FSWAP_unitarity_raw_maximum': 0.0, 'contact_unitarity': 0.0, 'contact_unitarity_raw_maximum': 1.1221478865777832e-16, 'composed_unitarity': 0.0, 'composed_unitarity_raw_maximum': 2.6645354726145656e-15, 'coin_nonzeros': 627264, 'FSWAP_nonzeros': 4096, 'contact_nontrivial_columns': 4047, 'stream_coin_commutator': 1.8777060157647927, 'stream_contact_commutator': 1.5972415263976152, 'Cycle219_mass_fixture': 0.4534056541748851, 'two_cell_rest_mass': 0.4534056541748851, 'two_cell_uniform_one_particle_residual': 3.8571762755144336e-16}\nPASS carrier, FSWAP, coin, contact, edge-role, and lawful-domain deletions are detected :: {'deleted_carrier_role_branch_coefficient': -0.2236067977499789j, 'deleted_carrier_role_branch_Gram_residual': 0.050000000000000724, 'deleted_FSWAP_column_unitarity_residual': 1.0, 'deleted_coin_coefficient': (0.6588873599839347+0.05355345758006535j), 'deleted_coin_unitarity_residual': 0.7605089632771268, 'deleted_contact_residual': 1.9911500883709052, 'lawful_domain_rejections': 4}\nPASS the supplied local edge role, dense matrices, and multi-edge volume boundary remain explicit :: {'supplied': 'fixed reference, cell roles, edge f+r, dense matrix units, full M64 tensor code, preparation/application', 'open': 'shared-cell edge constraints, recurrent all-edge stream/contact, primitive synthesis, volume full Fock'}\nTOTAL PASS=21 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T025344Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T031426Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 099dfcfc differs from the current HEAD b8d94cbb (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged slot-1 run (issue #8620): the same N4 exact-line-pin failure on main. The second FAIL here ('recorded no-go methodology commit remains an ancestor of origin/main', 8e1adb5bc) is a shallow-clone artefact of this slot: the commit is an ancestor of origin/main in a checkout with deeper history (machine, not science).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T031426Z"
  }
 }

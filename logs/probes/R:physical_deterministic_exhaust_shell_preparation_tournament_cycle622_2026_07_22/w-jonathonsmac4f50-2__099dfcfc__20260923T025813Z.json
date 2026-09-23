@@ -19,14 +19,21 @@
  "stdout_sha256": "3e957f4f05e591057aa4ee522866aefb95bbac6592664476c43fcfba21a971fe",
  "stdout_tail": "rep>=128) with the minus channel selected by CT-1'' (raw source in, certified clock out, deterministically) :: {'first_certified': None}\nFAIL P1 survivor-norm band: the frozen [0.10, 0.35] prediction for the certified R3 rows (a falsifiable magnitude claim, not a certification condition) :: {'survivor_norms': []}\nFAIL P1 purity: offline purity exceeds 0.95 on the certified rows :: {'purities': []}\nFAIL P2 contact-off: without the contact law the absorber drains essentially everything (the absorber is a bound-state existence detector) and nothing certifies :: {'survivor': 0.1905345056736696, 'certified': False}\nPASS P3 absorber-off: plain unitary evolution of the raw source stays uncertified on both channels :: {'selected': 'none', 'certified': False}\nPASS lawful domain: non-antisymmetric input is refused :: {'defect': 0.07071067811865477}\nFAIL P4/P5: no certified configuration exists to test :: route D-1 never certified\nFAIL P8 internal: the masked-operator dominant phase lies within 5e-3 of the Cycle-610 root (independent worker comparison recorded in the note) :: {'abs_lambda': 0.3087251561077763, 'arg_lambda': 0.46874753709363653, 'theta0': -2.975574708446694}\nPASS D-3 mechanism probe (frozen negative-leaning prior): the P0-dephasing cascade does not purify \u2014 the bound-branch weight of the dephased ensemble does not rise above the raw value plus 0.05 :: {'weights': [0.26305, 0.13624, 0.13727, 0.11787, 0.09291, 0.05945, 0.03965, 0.03416, 0.0313]}\nRESULT 6 6 elapsed 20.45 s\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T025834Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T031427Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 099dfcfc differs from the current HEAD b8d94cbb (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Repeat of the earlier false-positive triage: identical FAIL lines; the runner is a falsification tournament whose note records the designed cold outcome (6 PASS / 6 FAIL, exit 1 expected).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T031427Z"
  }
 }

@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "scope": "finite algebra; infinite support from written positivity proof",
+  "fixtures": [
+    {
+      "theta": 0.4,
+      "real_overlap": 0.9473739960019236,
+      "full_dimension": 363,
+      "binary_dimension": 62,
+      "embedding_metric_error": 2.5757174171303632e-14,
+      "full_operator_intertwiner_error": 1.0557513393102307e-15,
+      "source_error": 0.0,
+      "connected_binary_vertices": 62,
+      "finite_lowest_energy": 4.035749524686862,
+      "full_infinite_floor": 3.0717967697244912,
+      "finite_ground_source_weight": 0.08040903587209135,
+      "direct_tensor_overlap_error": 1.5545807746064292e-15,
+      "textures": [
+        {
+          "N": 16,
+          "exact_product_Rayleigh_excess": 0.11294351261199437,
+          "analytic_upper_bound": 0.1312100571684724
+        },
+        {
+          "N": 64,
+          "exact_product_Rayleigh_excess": 0.009891441361072745,
+          "analytic_upper_bound": 0.014661517829645948
+        },
+        {
+          "N": 256,
+          "exact_product_Rayleigh_excess": 0.0010318794979359627,
+          "analytic_upper_bound": 0.0022351892232221
+        }
+      ]
+    },
+    {
+      "theta": 1.1,
+      "real_overlap": 0.6357307476170516,
+      "full_dimension": 363,
+      "binary_dimension": 62,
+      "embedding_metric_error": 3.1086244689504383e-15,
+      "full_operator_intertwiner_error": 8.881851831120113e-16,
+      "source_error": 0.0,
+      "connected_binary_vertices": 62,
+      "finite_lowest_energy": 4.25381786967316,
+      "full_infinite_floor": 3.0717967697244912,
+      "finite_ground_source_weight": 0.06360046848959061,
+      "direct_tensor_overlap_error": 2.4425721219856163e-15,
+      "textures": [
+        {
+          "N": 16,
+          "exact_product_Rayleigh_excess": 0.1614730871664906,
+          "analytic_upper_bound": 0.2953306756230678
+        },
+        {
+          "N": 64,
+          "exact_product_Rayleigh_excess": 0.022811382249538506,
+          "analytic_upper_bound": 0.0577495308662308
+        },
+        {
+          "N": 256,
+          "exact_product_Rayleigh_excess": 0.004308583390965577,
+          "analytic_upper_bound": 0.013121083897242815
+        }
+      ]
+    },
+    {
+      "theta": 2.0943951023931953,
+      "real_overlap": 1.08076172323985e-16,
+      "full_dimension": 363,
+      "binary_dimension": 62,
+      "embedding_metric_error": 3.9968028886505635e-15,
+      "full_operator_intertwiner_error": 4.965068306494546e-16,
+      "source_error": 0.0,
+      "connected_binary_vertices": 62,
+      "finite_lowest_energy": 4.748733439520666,
+      "full_infinite_floor": 3.0717967697244912,
+      "finite_ground_source_weight": 0.032855951495079874,
+      "direct_tensor_overlap_error": 1.7773793903104663e-15,
+      "textures": [
+        {
+          "N": 16,
+          "exact_product_Rayleigh_excess": 0.2829387339734204,
+          "analytic_upper_bound": 0.7083493619992582
+        },
+        {
+          "N": 64,
+          "exact_product_Rayleigh_excess": 0.055281946717238836,
+          "analytic_upper_bound": 0.16618291791109932
+        },
+        {
+          "N": 256,
+          "exact_product_Rayleigh_excess": 0.012551872672696179,
+          "analytic_upper_bound": 0.04051604475365313
+        }
+      ]
+    }
+  ],
+  "runner_sha256": "32decf8bbe185badac69af2635218b17812d3fdaaea3fbbc845b0a63581d7993"
+}

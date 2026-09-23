@@ -1,0 +1,308 @@
+{
+  "status": "finite_author_checks_only",
+  "cube_cases": [
+    {
+      "beta": 0.25,
+      "N": 2,
+      "actual_clock_configurations": 32,
+      "source_error": 1.5543122344752192e-15,
+      "aux_cutoff_comparison": 9.992007221626409e-16,
+      "image_cutoff_comparison": 7.905119822539829e-107,
+      "covariance_error": 7.771561172376096e-16,
+      "aux_covariance_cutoff_gap": 5.134781488891349e-16,
+      "aux_normalization": 1.9630593665642406,
+      "directions": [
+        {
+          "X_variance": 0.9877106026687259,
+          "Y_variance": 0.012289397331273764,
+          "X_fourth_cumulant": 0.1297749814080591,
+          "Y_fourth_cumulant": 0.12977498140805868,
+          "fourth_gap": 4.163336342344337e-16
+        },
+        {
+          "X_variance": 0.9877106026687261,
+          "Y_variance": 0.24305862810050224,
+          "X_fourth_cumulant": 0.045134176055650954,
+          "Y_fourth_cumulant": 0.045134176055652786,
+          "fourth_gap": 1.8318679906315083e-15
+        },
+        {
+          "X_variance": 0.9877106026687257,
+          "Y_variance": 0.018593989868780917,
+          "X_fourth_cumulant": 0.08031160657666847,
+          "Y_fourth_cumulant": 0.08031160657666789,
+          "fourth_gap": 5.828670879282072e-16
+        }
+      ],
+      "rejected_prefactor_P_gap": 0.6106601200478288,
+      "rejected_prefactor_I_covariance_gap": 0.038461538461538325,
+      "dual_lattice_source_error": 6.661338147750939e-16,
+      "dual_lattice_cutoff_gap": 4.440892098500626e-16,
+      "independent_noise_covariance_error": 4.163336342344337e-16,
+      "independent_noise_fourth_cumulant_error": 2.5118795932144167e-15,
+      "smoothing_coupling_matrix_margin": -2.4328244548149406e-16
+    },
+    {
+      "beta": 0.5,
+      "N": 3,
+      "actual_clock_configurations": 243,
+      "source_error": 3.2196487168702945e-15,
+      "aux_cutoff_comparison": 8.881784197001252e-16,
+      "image_cutoff_comparison": 0.0,
+      "covariance_error": 1.4432899320127035e-15,
+      "aux_covariance_cutoff_gap": 4.996003610813204e-16,
+      "aux_normalization": 1.3931945080808892,
+      "directions": [
+        {
+          "X_variance": 0.9902351646874072,
+          "Y_variance": 0.00976483531259271,
+          "X_fourth_cumulant": 0.11754575003855638,
+          "Y_fourth_cumulant": 0.11754575003855514,
+          "fourth_gap": 1.2490009027033011e-15
+        },
+        {
+          "X_variance": 0.9321271860387013,
+          "Y_variance": 0.298642044730527,
+          "X_fourth_cumulant": 0.7210077115252758,
+          "Y_fourth_cumulant": 0.7210077115252735,
+          "fourth_gap": 2.220446049250313e-15
+        },
+        {
+          "X_variance": 0.9886476604636546,
+          "Y_variance": 0.01765693207385228,
+          "X_fourth_cumulant": 0.06211624774494773,
+          "Y_fourth_cumulant": 0.062116247744946916,
+          "fourth_gap": 8.118505867571457e-16
+        }
+      ],
+      "rejected_prefactor_P_gap": 0.6722322307859433,
+      "rejected_prefactor_I_covariance_gap": 0.03846153846153999,
+      "dual_lattice_source_error": 1.1103887699919512e-15,
+      "dual_lattice_cutoff_gap": 4.440892098500626e-16,
+      "independent_noise_covariance_error": 7.355227538141662e-16,
+      "independent_noise_fourth_cumulant_error": 2.6645352591003757e-15,
+      "smoothing_coupling_matrix_margin": -2.437338338311377e-16
+    },
+    {
+      "beta": 0.8,
+      "N": 4,
+      "actual_clock_configurations": 1024,
+      "source_error": 4.440892723848538e-15,
+      "aux_cutoff_comparison": 2.4424906541753444e-15,
+      "image_cutoff_comparison": 0.0,
+      "covariance_error": 4.3298697960381105e-15,
+      "aux_covariance_cutoff_gap": 9.298117831235686e-16,
+      "aux_normalization": 1.1466666566236472,
+      "directions": [
+        {
+          "X_variance": 0.991971634521218,
+          "Y_variance": 0.008028365478781928,
+          "X_fourth_cumulant": 0.11065736990631159,
+          "Y_fourth_cumulant": 0.11065736990630995,
+          "fourth_gap": 1.6375789613221059e-15
+        },
+        {
+          "X_variance": 0.6605195882894359,
+          "Y_variance": 0.5702496424797885,
+          "X_fourth_cumulant": 2.183489534555858,
+          "Y_fourth_cumulant": 2.1834895345558447,
+          "fourth_gap": 1.3322676295501878e-14
+        },
+        {
+          "X_variance": 0.9829163974332884,
+          "Y_variance": 0.02338819510421793,
+          "X_fourth_cumulant": 0.05122194976012295,
+          "Y_fourth_cumulant": 0.05122194976012213,
+          "fourth_gap": 8.257283745649602e-16
+        }
+      ],
+      "rejected_prefactor_P_gap": 0.8541445992195024,
+      "rejected_prefactor_I_covariance_gap": 0.03846153846154288,
+      "dual_lattice_source_error": 2.664672499480479e-15,
+      "dual_lattice_cutoff_gap": 8.881784197001252e-16,
+      "independent_noise_covariance_error": 1.734723475976807e-15,
+      "independent_noise_fourth_cumulant_error": 1.3322676295501878e-14,
+      "smoothing_coupling_matrix_margin": -2.412325467550591e-16
+    }
+  ],
+  "integer_filling_periodicity_controls": [
+    {
+      "N": 3,
+      "theta_shift_gap": 2.1760371282653068e-14
+    },
+    {
+      "N": 3.5,
+      "theta_shift_gap": 3.183035236278314
+    }
+  ],
+  "exact_regulator_checks": [
+    {
+      "E": "5/6",
+      "U": "8/39",
+      "kappa": "1/4",
+      "exponent_without_half_factor": "-51/52"
+    },
+    {
+      "E": "5/6",
+      "U": "8/39",
+      "kappa": "1/2",
+      "exponent_without_half_factor": "-147/52"
+    },
+    {
+      "E": "5/6",
+      "U": "8/39",
+      "kappa": "9/10",
+      "exponent_without_half_factor": "-569/156"
+    },
+    {
+      "E": "41/6",
+      "U": "8/39",
+      "kappa": "1/4",
+      "exponent_without_half_factor": "-1455/52"
+    },
+    {
+      "E": "41/6",
+      "U": "8/39",
+      "kappa": "1/2",
+      "exponent_without_half_factor": "-1551/52"
+    },
+    {
+      "E": "41/6",
+      "U": "8/39",
+      "kappa": "9/10",
+      "exponent_without_half_factor": "-4781/156"
+    },
+    {
+      "E": "0",
+      "U": "96/13",
+      "kappa": "1/4",
+      "exponent_without_half_factor": "1296/13"
+    },
+    {
+      "E": "0",
+      "U": "96/13",
+      "kappa": "1/2",
+      "exponent_without_half_factor": "432/13"
+    },
+    {
+      "E": "0",
+      "U": "96/13",
+      "kappa": "9/10",
+      "exponent_without_half_factor": "48/13"
+    }
+  ],
+  "planar_fourier_discretizations": [
+    {
+      "grid": 24,
+      "side": 1,
+      "energy_sample": 0.499998492959105,
+      "area": 1,
+      "proved_infinite_upper": 2.7206990463513265
+    },
+    {
+      "grid": 24,
+      "side": 2,
+      "energy_sample": 1.3692871546420526,
+      "area": 4,
+      "proved_infinite_upper": 5.441398092702653
+    },
+    {
+      "grid": 24,
+      "side": 4,
+      "energy_sample": 3.2610766665524777,
+      "area": 16,
+      "proved_infinite_upper": 10.882796185405306
+    },
+    {
+      "grid": 24,
+      "side": 8,
+      "energy_sample": 7.1602430039249105,
+      "area": 64,
+      "proved_infinite_upper": 21.765592370810612
+    },
+    {
+      "grid": 24,
+      "side": 12,
+      "energy_sample": 11.08111371350602,
+      "area": 144,
+      "proved_infinite_upper": 32.64838855621592
+    },
+    {
+      "grid": 32,
+      "side": 1,
+      "energy_sample": 0.49999952316284185,
+      "area": 1,
+      "proved_infinite_upper": 2.7206990463513265
+    },
+    {
+      "grid": 32,
+      "side": 2,
+      "energy_sample": 1.3693038585906085,
+      "area": 4,
+      "proved_infinite_upper": 5.441398092702653
+    },
+    {
+      "grid": 32,
+      "side": 4,
+      "energy_sample": 3.2613580155723954,
+      "area": 16,
+      "proved_infinite_upper": 10.882796185405306
+    },
+    {
+      "grid": 32,
+      "side": 8,
+      "energy_sample": 7.165653619540319,
+      "area": 64,
+      "proved_infinite_upper": 21.765592370810612
+    },
+    {
+      "grid": 32,
+      "side": 12,
+      "energy_sample": 11.117014157097461,
+      "area": 144,
+      "proved_infinite_upper": 32.64838855621592
+    },
+    {
+      "grid": 48,
+      "side": 1,
+      "energy_sample": 0.49999990580994413,
+      "area": 1,
+      "proved_infinite_upper": 2.7206990463513265
+    },
+    {
+      "grid": 48,
+      "side": 2,
+      "energy_sample": 1.3693100239983167,
+      "area": 4,
+      "proved_infinite_upper": 5.441398092702653
+    },
+    {
+      "grid": 48,
+      "side": 4,
+      "energy_sample": 3.2614594132734895,
+      "area": 16,
+      "proved_infinite_upper": 10.882796185405306
+    },
+    {
+      "grid": 48,
+      "side": 8,
+      "energy_sample": 7.167451954941978,
+      "area": 64,
+      "proved_infinite_upper": 21.765592370810612
+    },
+    {
+      "grid": 48,
+      "side": 12,
+      "energy_sample": 11.127639945846298,
+      "area": 144,
+      "proved_infinite_upper": 32.64838855621592
+    }
+  ],
+  "non_gaussian_self_duality_fourth_cumulant": "3/8",
+  "limits": [
+    "no interval-certified quadrature or image tails",
+    "Fourier samples do not execute an infinite lattice proof",
+    "free-box exhaustion is an analytic argument",
+    "no full coupled-field summation or independent review"
+  ]
+}

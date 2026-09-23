@@ -1,0 +1,121 @@
+{
+  "status": "PASS_bounded_checks_personal_not_independent",
+  "geometry": {
+    "vertices": 64,
+    "edges": 192,
+    "plaquettes": 192
+  },
+  "fixed_positive_configurations": 18,
+  "positive_degree_counts": {
+    "4": 9,
+    "3": 9
+  },
+  "phase_checked_hops": 126,
+  "phase_checked_ring_entries": 3238,
+  "native_phase_omission_adverse_cases": 126,
+  "coherent_escape_coefficient": 3.5325239072418526,
+  "full_commutator_column_l1": [
+    20.0,
+    16.0,
+    20.0,
+    16.0,
+    20.0,
+    16.0
+  ],
+  "full_commutator_column_nonzeros": [
+    18,
+    14,
+    18,
+    14,
+    18,
+    14
+  ],
+  "local_commutator_pairs": 4416,
+  "unitary_taylor_power_support_sizes": [
+    1,
+    6,
+    34,
+    132,
+    554
+  ],
+  "certified_actual_J0_unitary_escape": [
+    {
+      "time": "1/128",
+      "operator_tail_bound": "1/117964800",
+      "escape_probability_lower": 0.00018309312841398827,
+      "escape_probability_upper": 0.0001830935872355833,
+      "claimed_lower": 4.57763671875e-05,
+      "rational_certificate_lower": "3154107757123357713964324810482107690449/17226794825372509712833339501233265704960000"
+    },
+    {
+      "time": "1/64",
+      "operator_tail_bound": "1/3440640",
+      "escape_probability_lower": 0.0007322121918625699,
+      "escape_probability_upper": 0.0007322436507891589,
+      "claimed_lower": 0.00018310546875,
+      "rational_certificate_lower": "2746976847532383563525821950705074638009/3751613095303346559683705046935244531302400"
+    },
+    {
+      "time": "1/40",
+      "operator_tail_bound": "1/300000",
+      "escape_probability_lower": 0.0018734379047192745,
+      "escape_probability_upper": 0.001874015058882495,
+      "claimed_lower": 0.00046875,
+      "rational_certificate_lower": "56030087504643601372883976778514018626476769/29907629905160607140335658856307752960000000000"
+    }
+  ],
+  "translation_cases": 16,
+  "ordinary_translation_adverse_cases": 8,
+  "toy_dirichlet_absolute_error": 8.881784197001252e-16,
+  "checks": {
+    "native quadratic phase symmetry": 1,
+    "actual cubic L4 geometry": 1,
+    "four plaquettes per physical edge": 1,
+    "explicit ice seed": 1,
+    "D2 low domain": 2357,
+    "adjacent signed pair": 1,
+    "degree six and degree eight fixtures": 1,
+    "ordered native ring support": 10248,
+    "common positive position for coherent Gram challenge": 1,
+    "positive degree three or four": 18,
+    "native signed-hole hop is negative one": 126,
+    "native hopping Hermiticity": 126,
+    "ring preserves signed positions": 3238,
+    "native signed-hole RK ring matrix": 3238,
+    "omitting native phase has adverse cases": 1,
+    "coherent positive-hop Gram is exact diagonal": 1,
+    "arbitrary coherent fixture escape interval": 1,
+    "full native ring-hopping commutator column bound": 6,
+    "ring-hopping commutator not set to zero": 1,
+    "off-plaquette native commutator cancels exactly": 4324,
+    "on-plaquette commutator column bound": 92,
+    "native real-time generator integer entry": 1350,
+    "certified actual J0 unitary escape lower bound": 3,
+    "certificate time in uniform theorem interval": 3,
+    "actual charge-distance commutator column bound": 18,
+    "staggered translation preserves signed identity": 16,
+    "staggered translation preserves hopping support": 16,
+    "staggered translation preserves ring support": 16,
+    "ordinary odd translation exchanges signed identities": 8,
+    "staggered translation group law": 4,
+    "separate weighted-graph ground vector": 1,
+    "complex ground-state Dirichlet identity": 1,
+    "missing one-half Dirichlet mutant rejected": 1,
+    "separate spectral measure first moment": 1,
+    "separate spectral Markov weight": 1
+  },
+  "seconds": 0.32078795798588544,
+  "limits": [
+    "finite selected global native configurations; no sector census",
+    "commutator products untruncated, but only selected columns checked",
+    "no finite-volume native ground-state diagonalization",
+    "toy spectral identity is not a native spectral calculation",
+    "J0 unitary intervals include exact rational operator-tail bounds",
+    "uniform time and momentum theorems rely on the written proofs",
+    "no independent scientific review"
+  ],
+  "sha256": {
+    "scripts/native_motion_check_2026_09_15.py": "e11214c3ad4a87efd3847e6ee2a9a736b48bc8799373218505febd20bd53d3da",
+    "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+  }
+}

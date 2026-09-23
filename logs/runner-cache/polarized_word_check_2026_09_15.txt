@@ -1,0 +1,644 @@
+===== runner cache v1 =====
+runner: scripts/polarized_word_check_2026_09_15.py
+runner_sha256: 0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362
+input_fingerprint_sha256: 01211d3f5530330538ef8537c9709ce88c5aa3f9818401e4043db53086d68478
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.08
+status: ok
+----- stdout -----
+{
+  "status": "PASS_personal_bounded_native_and_tensor_challenges",
+  "native_states": 240,
+  "native_ring_checks": 408,
+  "nonmonotone_mutant_charges": [
+    -1,
+    -1,
+    0,
+    2
+  ],
+  "finite_fiber_checks": [
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "finite_word_dimension": 3279,
+      "marker_action_error": 1.0133636298719597e-15
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "finite_word_dimension": 3279,
+      "marker_action_error": 7.672405452194589e-16
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "finite_word_dimension": 3279,
+      "marker_action_error": 7.923338794722063e-16
+    }
+  ],
+  "texture_trials": [
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 8,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 1.141003366517669,
+      "analytic_upper": 3.951975789136041
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 8,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 1.7472779998864585,
+      "analytic_upper": 5.185676339272211
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 8,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 61.7684667033966,
+      "analytic_upper": 127.32203080275302
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 16,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.5476404292771555,
+      "analytic_upper": 2.0858373314814815
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 16,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.9057070258588883,
+      "analytic_upper": 2.702687606549566
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 16,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 36.35430008745044,
+      "analytic_upper": 63.77086483828997
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 32,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.2609977207716012,
+      "analytic_upper": 1.0611747046836386
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 32,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.4546308136167061,
+      "analytic_upper": 1.369599842217681
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 32,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 19.62430700528209,
+      "analytic_upper": 31.90368845808788
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 64,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.12602282680970323,
+      "analytic_upper": 0.5332409605142125
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 64,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.22658221890662744,
+      "analytic_upper": 0.6874535292812338
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 64,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 10.181962036502128,
+      "analytic_upper": 15.954497837216335
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 128,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.061701542227206474,
+      "analytic_upper": 0.26697898235646744
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 128,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.11292726802108558,
+      "analytic_upper": 0.3440852667399781
+    },
+    {
+      "k": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "N": 128,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 5.184274121615116,
+      "analytic_upper": 7.977607420707528
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 8,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 1.1410033665176709,
+      "analytic_upper": 3.951975789136041
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 8,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 1.7519862975817913,
+      "analytic_upper": 5.185676339272211
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 8,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 62.23929647292972,
+      "analytic_upper": 127.32203080275302
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 16,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.54764042927716,
+      "analytic_upper": 2.0858373314814815
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 16,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.9069772428101477,
+      "analytic_upper": 2.702687606549566
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 16,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 36.48132178257593,
+      "analytic_upper": 63.77086483828997
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 32,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.2609977207716083,
+      "analytic_upper": 1.0611747046836386
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 32,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.45496072802915305,
+      "analytic_upper": 1.369599842217681
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 32,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 19.65729844652608,
+      "analytic_upper": 31.90368845808788
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 64,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.1260228268097201,
+      "analytic_upper": 0.5332409605142125
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 64,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.2266662804595087,
+      "analytic_upper": 0.6874535292812338
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 64,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 10.190368191788583,
+      "analytic_upper": 15.954497837216335
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 128,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.061701542227240225,
+      "analytic_upper": 0.26697898235646744
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 128,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.11294848344715364,
+      "analytic_upper": 0.3440852667399781
+    },
+    {
+      "k": [
+        0.3,
+        -0.7,
+        1.2
+      ],
+      "N": 128,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 5.186395664218581,
+      "analytic_upper": 7.977607420707528
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 8,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 1.141003366517669,
+      "analytic_upper": 3.951975789136041
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 8,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 1.7624689606171737,
+      "analytic_upper": 5.185676339272211
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 8,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 63.287562776468135,
+      "analytic_upper": 127.32203080275302
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 16,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.5476404292771546,
+      "analytic_upper": 2.0858373314814815
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 16,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.9098458752324561,
+      "analytic_upper": 2.702687606549566
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 16,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 36.768185024807295,
+      "analytic_upper": 63.77086483828997
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 32,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.26099772077160033,
+      "analytic_upper": 1.0611747046836386
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 32,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.45570861691795933,
+      "analytic_upper": 1.369599842217681
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 32,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 19.7320873354075,
+      "analytic_upper": 31.90368845808788
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 64,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.12602282680970145,
+      "analytic_upper": 0.5332409605142125
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 64,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.22685702714267397,
+      "analytic_upper": 0.6874535292812338
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 64,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 10.209442860106954,
+      "analytic_upper": 15.954497837216335
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 128,
+      "J": 0,
+      "lambda": 1,
+      "energy_above_threshold": 0.06170154222719937,
+      "analytic_upper": 0.26697898235646744
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 128,
+      "J": 1,
+      "lambda": 1,
+      "energy_above_threshold": 0.11299663598746978,
+      "analytic_upper": 0.3440852667399781
+    },
+    {
+      "k": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "N": 128,
+      "J": 100,
+      "lambda": 1,
+      "energy_above_threshold": 5.1912109182542405,
+      "analytic_upper": 7.977607420707528
+    }
+  ],
+  "periodic_to_polarized_energy_separation_per_lambda": 0.2717967697244914,
+  "nonhorizontal_curve_creation_gap": 0.7653668647301849,
+  "checks": {
+    "native word hopping degree": 240,
+    "word transition flips exactly one actual edge": 2884,
+    "physical nearest-neighbor edge": 125640,
+    "native hopping factor nonzero": 2884,
+    "native hop exact edge image": 2884,
+    "native hop unit modulus": 2884,
+    "literal full-background endpoint charge": 8652,
+    "no empty word enters physical sector": 11497,
+    "canonical native path reaches requested word and anchor": 1641,
+    "canonical infinite-background frame negative native hop": 1908,
+    "all and only adjacent unequal letters are flippable faces": 240,
+    "every actual gated native face is an adjacent letter swap": 408,
+    "actual native ring phase in canonical word frame": 408,
+    "undirected-path replacement rejected on actual charges": 1,
+    "marker orthogonal to both endpoint vectors": 3,
+    "finite two-ended marker vectors orthonormal": 3,
+    "actual word-matrix action equals two half-lines": 3,
+    "full finite word matrix versus tensor creation contractions": 15,
+    "full finite word matrix versus tensor swap contractions": 15,
+    "complex horizontal creation-overlap bound": 759,
+    "ferromagnetic texture energy bound": 759,
+    "actual tensor trial obeys analytic threshold bound": 45,
+    "uniform word radial trial has exactly zero ring action numerically": 3,
+    "radial finite word hopping expectation": 3,
+    "omitting horizontal complex phase control fails creation bound": 1
+  },
+  "seconds": 0.8481710839550942,
+  "limits": [
+    "finite native words/anchors, not all configurations",
+    "infinite classification and spectral threshold proved analytically",
+    "no infinite matrix diagonalization or spectral extrapolation",
+    "tensor product contractions avoid exponential enumeration",
+    "specified polarized finite-excitation boundary sector",
+    "not the periodic ground state or a selected physical vacuum",
+    "same author; no independent scientific review"
+  ],
+  "sha256": {
+    "scripts/polarized_word_check_2026_09_15.py": "0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362",
+    "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+  }
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: word/native-hop and radial identities
+per_site: finite polarized words and edge configurations
+per_mode: finite truncated word spectra and radial moments
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

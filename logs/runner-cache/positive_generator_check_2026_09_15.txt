@@ -1,0 +1,462 @@
+===== runner cache v1 =====
+runner: scripts/positive_generator_check_2026_09_15.py
+runner_sha256: 6279f4f85cb4ac6d148117167d7a4be32abb51a90389e966a60e9145d34a4cb7
+input_fingerprint_sha256: 735f649bf47ea4c77cdc09bd004405f7c053de7bd05282015dadc0914ee585fb
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.59
+status: ok
+----- stdout -----
+{
+  "status": "personal_finite_checks_pass_no_independent_audit",
+  "exact_symbol_series": "theta**2/2 - theta**6/180 + O(theta**8)",
+  "exact_sixth_moment": "15/64",
+  "exact_spectral_coefficient": "pi**4/12",
+  "positive_generators": [
+    {
+      "N": 5,
+      "fixture": 0,
+      "curvature": 1.0,
+      "fourth_moment": 3.238053912300801,
+      "minimum_nonzero_envelope_margin": 0.1780959428842145,
+      "symbol_matrix_error": 1.1152273961178415e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 9.325203463816106e-07
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.00911656670690902
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.1516919859639473
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "fixture": 1,
+      "curvature": 1.0,
+      "fourth_moment": 3.2846397018843807,
+      "minimum_nonzero_envelope_margin": 0.1818030654317513,
+      "symbol_matrix_error": 1.1391828702384215e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 9.519309725600554e-07
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.009299082543540588
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.15259113307939856
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "fixture": 2,
+      "curvature": 1.0,
+      "fourth_moment": 3.0590753578360754,
+      "minimum_nonzero_envelope_margin": 0.1638535002700059,
+      "symbol_matrix_error": 1.1147472398757895e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 8.579464778134735e-07
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.008421945538169693
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.14922570625699283
+        }
+      ]
+    },
+    {
+      "N": 7,
+      "fixture": 0,
+      "curvature": 1.0,
+      "fourth_moment": 4.919119281929481,
+      "minimum_nonzero_envelope_margin": 0.08774510513135902,
+      "symbol_matrix_error": 2.4810544422873265e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 1.1359892862623679e-07
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.0011704774380134372
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.04232796807954204
+        }
+      ]
+    },
+    {
+      "N": 7,
+      "fixture": 1,
+      "curvature": 1.0,
+      "fourth_moment": 7.373312538010035,
+      "minimum_nonzero_envelope_margin": 0.1331774054854198,
+      "symbol_matrix_error": 2.573059393840839e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 2.1016644121063318e-07
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.0020955669761336736
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.05531644926820248
+        }
+      ]
+    },
+    {
+      "N": 7,
+      "fixture": 2,
+      "curvature": 1.0000000000000002,
+      "fourth_moment": 7.837146031789424,
+      "minimum_nonzero_envelope_margin": 0.1427971950321872,
+      "symbol_matrix_error": 1.7011074501357147e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 1.8860607615933426e-07
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.0018773966937991938
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.0486880857185281
+        }
+      ]
+    },
+    {
+      "N": 9,
+      "fixture": 0,
+      "curvature": 1.0,
+      "fourth_moment": 11.527355951132204,
+      "minimum_nonzero_envelope_margin": 0.08230105957541883,
+      "symbol_matrix_error": 1.665353248784659e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 8.496591134364197e-08
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.0008520424603870492
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.026100748335203896
+        }
+      ]
+    },
+    {
+      "N": 9,
+      "fixture": 1,
+      "curvature": 0.9999999999999999,
+      "fourth_moment": 9.967040115743448,
+      "minimum_nonzero_envelope_margin": 0.07146354599171098,
+      "symbol_matrix_error": 1.6653410101878824e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 9.967474503218276e-08
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.0009974527742295275
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.029176281721761184
+        }
+      ]
+    },
+    {
+      "N": 9,
+      "fixture": 2,
+      "curvature": 1.0,
+      "fourth_moment": 11.996313980876124,
+      "minimum_nonzero_envelope_margin": 0.08571322739472165,
+      "symbol_matrix_error": 1.6655309565129135e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 2.0082713051267923e-08
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.0002064760431006556
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.009938311911686218
+        }
+      ]
+    },
+    {
+      "N": 15,
+      "fixture": 0,
+      "curvature": 0.9999999999999999,
+      "fourth_moment": 30.236794089390806,
+      "minimum_nonzero_envelope_margin": 0.030348933388348813,
+      "symbol_matrix_error": 1.1545402325876776e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 1.1134916594124741e-08
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.00011177373143353828
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.0036675383701460034
+        }
+      ]
+    },
+    {
+      "N": 15,
+      "fixture": 1,
+      "curvature": 1.0,
+      "fourth_moment": 35.03155417684983,
+      "minimum_nonzero_envelope_margin": 0.03423281910398297,
+      "symbol_matrix_error": 9.997380551579173e-17,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 1.861331023072874e-08
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.00018599900072782707
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.0054566763478884495
+        }
+      ]
+    },
+    {
+      "N": 15,
+      "fixture": 2,
+      "curvature": 1.0,
+      "fourth_moment": 26.41481805717092,
+      "minimum_nonzero_envelope_margin": 0.026775780596459672,
+      "symbol_matrix_error": 1.2899371589914903e-16,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 1.8870170419766888e-08
+        },
+        {
+          "time": 0.1,
+          "minimum": 0.00018900565098997984
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.005864313662315064
+        }
+      ]
+    },
+    {
+      "N": 31,
+      "fixture": 0,
+      "curvature": 0.9999999999999999,
+      "fourth_moment": 149.18458816258206,
+      "minimum_nonzero_envelope_margin": 0.00817786573579532,
+      "symbol_matrix_error": 6.245004711402861e-17,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 4.639915637943878e-10
+        },
+        {
+          "time": 0.1,
+          "minimum": 4.657888660549606e-06
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.00015496939559607578
+        }
+      ]
+    },
+    {
+      "N": 31,
+      "fixture": 1,
+      "curvature": 1.0000000000000002,
+      "fourth_moment": 144.094794274301,
+      "minimum_nonzero_envelope_margin": 0.007947916073573829,
+      "symbol_matrix_error": 7.285840544248801e-17,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 4.2371489728807687e-10
+        },
+        {
+          "time": 0.1,
+          "minimum": 4.255724238488267e-06
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.0001434127178950051
+        }
+      ]
+    },
+    {
+      "N": 31,
+      "fixture": 2,
+      "curvature": 1.0,
+      "fourth_moment": 123.05906625534149,
+      "minimum_nonzero_envelope_margin": 0.00694081567047255,
+      "symbol_matrix_error": 9.367507279141154e-17,
+      "heat_kernels": [
+        {
+          "time": 1e-05,
+          "minimum": 1.0691128140406226e-09
+        },
+        {
+          "time": 0.1,
+          "minimum": 1.071081020755873e-05
+        },
+        {
+          "time": 3.0,
+          "minimum": 0.0003378360092794262
+        }
+      ]
+    }
+  ],
+  "signed_improvement": [
+    {
+      "N": 5,
+      "minimum_energy": -6.106226635438391e-16,
+      "smallest_symbol": 0.0,
+      "phase_H_20": 0.041666666666666664,
+      "time": 1e-05,
+      "heat_20": -4.1664201413308826e-07,
+      "closed_history_product": -1.8516944972768344e-17
+    },
+    {
+      "N": 7,
+      "minimum_energy": -1.2490009027033373e-16,
+      "smallest_symbol": 0.0,
+      "phase_H_20": 0.041666666666666664,
+      "time": 1e-05,
+      "heat_20": -4.166392364394144e-07,
+      "closed_history_product": -1.8516821040744466e-17
+    },
+    {
+      "N": 9,
+      "minimum_energy": -6.854412973062092e-17,
+      "smallest_symbol": 0.0,
+      "phase_H_20": 0.041666666666666664,
+      "time": 1e-05,
+      "heat_20": -4.166392364399931e-07,
+      "closed_history_product": -1.8516821040770252e-17
+    },
+    {
+      "N": 15,
+      "minimum_energy": 3.8246280756962436e-16,
+      "smallest_symbol": 0.0,
+      "phase_H_20": 0.041666666666666664,
+      "time": 1e-05,
+      "heat_20": -4.166392364399931e-07,
+      "closed_history_product": -1.8516821040770252e-17
+    },
+    {
+      "N": 31,
+      "minimum_energy": 1.06445718111066e-15,
+      "smallest_symbol": 0.0,
+      "phase_H_20": 0.041666666666666664,
+      "time": 1e-05,
+      "heat_20": -4.1663923643999316e-07,
+      "closed_history_product": -1.8516821040770255e-17
+    }
+  ],
+  "periodic_spectral_comparison": [
+    {
+      "ell": 2.0,
+      "nearest_ground": 0.3886909595030123,
+      "improved_ground": 0.47729298255997443,
+      "nearest_scaled_error": 2.4452361619879506,
+      "improved_scaled_error": 8.363312279040409,
+      "improved_asymptotic_coefficient": 8.117424252833535,
+      "refinement_error": 5.383249401802459e-12,
+      "residual": 1.9782395396714884e-12
+    },
+    {
+      "ell": 4.0,
+      "nearest_ground": 0.9043046311801255,
+      "improved_ground": 0.9690180144448792,
+      "nearest_scaled_error": 1.531125901117992,
+      "improved_scaled_error": 7.931388302110918,
+      "improved_asymptotic_coefficient": 8.117424252833535,
+      "refinement_error": 1.1820544543184042e-12,
+      "residual": 1.0132649730436906e-13
+    },
+    {
+      "ell": 8.0,
+      "nearest_ground": 0.980328296838122,
+      "improved_ground": 0.9981744022120864,
+      "nearest_scaled_error": 1.2589890023601953,
+      "improved_scaled_error": 7.477648539294023,
+      "improved_asymptotic_coefficient": 8.117424252833535,
+      "refinement_error": 4.32764934998886e-13,
+      "residual": 8.615725450920054e-14
+    },
+    {
+      "ell": 16.0,
+      "nearest_ground": 0.9951572899816887,
+      "improved_ground": 0.999878964539787,
+      "nearest_scaled_error": 1.239733764687685,
+      "improved_scaled_error": 7.932179920520866,
+      "improved_asymptotic_coefficient": 8.117424252833535,
+      "refinement_error": 9.43689570931383e-14,
+      "residual": 3.993180332654459e-14
+    },
+    {
+      "ell": 24.0,
+      "nearest_ground": 0.9978535415240639,
+      "improved_ground": 0.999975789074584,
+      "nearest_scaled_error": 1.2363600821391856,
+      "improved_scaled_error": 8.032603990834104,
+      "improved_asymptotic_coefficient": 8.117424252833535,
+      "refinement_error": 5.861977570020827e-14,
+      "residual": 1.1221891413786182e-13
+    }
+  ],
+  "limits": [
+    "Single-link translation-invariant all-time phase positivity only.",
+    "A negative local-history weight is not an invalid Hamiltonian.",
+    "No unrestricted positive representation or photon no-go.",
+    "Continuum spectral error is not a joint finite-g,N rate."
+  ]
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: cyclic jump rates and signed-stencil moments
+per_site: finite one-link generator fixtures
+per_mode: finite clock-mode spectra and oscillator comparisons in the specified cone
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

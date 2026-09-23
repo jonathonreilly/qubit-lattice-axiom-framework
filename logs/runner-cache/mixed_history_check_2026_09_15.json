@@ -1,0 +1,173 @@
+{
+  "status": "PASS_personal_structural_and_normalization_controls",
+  "checks": {
+    "all ordered star pair partitions are distinct": 1,
+    "separated star plaquette supports are disjoint": 4,
+    "complete native star is a flux-preserving gauge cut": 8,
+    "every two- or four-edge partial star has six or eight defective faces": 8,
+    "complete native separated-center history census": 4,
+    "actual mixed prefixes attain six-face minimum": 4,
+    "literal CAR convention": 64,
+    "five-exponential word equals shifted cocycle product on original vacuum": 2,
+    "two separated clusters factor exactly with odd center fields": 1,
+    "coupled propagation is not silently replaced by exact factorization": 1,
+    "unitary two-cocycle Duhamel bound": 3,
+    "graded Schur bound controls non-Hermitian odd cross-correlation kernel": 1,
+    "disjoint odd fields require anticommutators": 1,
+    "actual CAR elimination gives minus-four singleton skew matrix and scalar": 1,
+    "omitting one ordered-center factor is rejected": 1,
+    "reversing the singleton sign is rejected": 1,
+    "two native parity closures retain the active-spectator CAR sign": 1,
+    "bounded Hermitian remainder satisfies spectral perturbation bound": 5,
+    "diagnostic volume scaling approaches the derived coefficient": 1
+  },
+  "native_history_census": [
+    {
+      "offset": [
+        4,
+        0,
+        0
+      ],
+      "histories": {
+        "singleton": 16200,
+        "mixed": 145800
+      },
+      "proper_prefix_defect_counts": {
+        "6": 362880,
+        "0": 16200,
+        "12": 217728,
+        "8": 90720,
+        "14": 108864,
+        "16": 13608
+      },
+      "minimum_mixed_defective_faces": 6
+    },
+    {
+      "offset": [
+        2,
+        2,
+        0
+      ],
+      "histories": {
+        "singleton": 16200,
+        "mixed": 145800
+      },
+      "proper_prefix_defect_counts": {
+        "6": 362880,
+        "0": 16200,
+        "12": 217728,
+        "8": 90720,
+        "14": 108864,
+        "16": 13608
+      },
+      "minimum_mixed_defective_faces": 6
+    },
+    {
+      "offset": [
+        1,
+        1,
+        2
+      ],
+      "histories": {
+        "singleton": 16200,
+        "mixed": 145800
+      },
+      "proper_prefix_defect_counts": {
+        "6": 362880,
+        "0": 16200,
+        "12": 217728,
+        "8": 90720,
+        "14": 108864,
+        "16": 13608
+      },
+      "minimum_mixed_defective_faces": 6
+    },
+    {
+      "offset": [
+        0,
+        0,
+        5
+      ],
+      "histories": {
+        "singleton": 16200,
+        "mixed": 145800
+      },
+      "proper_prefix_defect_counts": {
+        "6": 362880,
+        "0": 16200,
+        "12": 217728,
+        "8": 90720,
+        "14": 108864,
+        "16": 13608
+      },
+      "minimum_mixed_defective_faces": 6
+    }
+  ],
+  "cocycle": {
+    "word_error": 7.0833667318882545e-16,
+    "decoupled_word_error": 1.0855323396380278e-16,
+    "decoupled_factor_error": 1.1270430290944564e-15,
+    "coupled_factor_error": 6.514814434945226e-08,
+    "duhamel": [
+      {
+        "time": 0.1,
+        "error": 1.6956543026630823e-12,
+        "coarse_bound": 0.00039100000000000007
+      },
+      {
+        "time": 0.4,
+        "error": 2.739628679999962e-08,
+        "coarse_bound": 0.006256000000000001
+      },
+      {
+        "time": 1.0,
+        "error": 1.547429299496432e-05,
+        "coarse_bound": 0.0391
+      }
+    ]
+  },
+  "graded_cross_family": {
+    "kernel_norm": 2.162397786750461,
+    "bound": 2.2991834958258344
+  },
+  "singleton_elimination_error": 4.440892098500626e-16,
+  "diagnostic_bloch": [
+    {
+      "L": 16,
+      "matrix_norm_over_L": 0.6476015335833897,
+      "predicted_limit": 0.6211638888418858
+    },
+    {
+      "L": 32,
+      "matrix_norm_over_L": 0.627762624341974,
+      "predicted_limit": 0.6211638888418858
+    },
+    {
+      "L": 64,
+      "matrix_norm_over_L": 0.6228128730739,
+      "predicted_limit": 0.6211638888418858
+    },
+    {
+      "L": 128,
+      "matrix_norm_over_L": 0.6215760906632223,
+      "predicted_limit": 0.6211638888418858
+    },
+    {
+      "L": 256,
+      "matrix_norm_over_L": 0.6212669365244661,
+      "predicted_limit": 0.6211638888418858
+    }
+  ],
+  "seconds": 2.454212875047233,
+  "limits": [
+    "no native mixed resolvent spectrum is evaluated",
+    "finite CAR matrices challenge identities, not the infinite locality theorem",
+    "Bloch remainder is an explicit diagnostic, not a fitted physical kernel",
+    "uniform flux stiffness and positive native amplitude are inherited conditional sources",
+    "same author, no independent audit"
+  ],
+  "sha256": {
+    "scripts/mixed_history_check_2026_09_15.py": "b8853d66e555f78e3ba28b165f9aead8c60cbd7bfc2c1ce6573bb6404a50cfa5",
+    "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md": "6aa00d3bbba0927f92f1dbd4da52b83e0b15f21a5c03816c04bd7f4699f23392"
+  }
+}

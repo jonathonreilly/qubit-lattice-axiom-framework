@@ -151,6 +151,16 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    'hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15': ['scripts/hybrid_curvature_check_2026_09_15.py', 'scripts/integrated_rate_check_2026_09_15.py'],
+    'signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15': ['scripts/cofactor_cyclic_check_2026_09_15.py', 'scripts/contact_register_check_2026_09_15.py', 'scripts/cut_completion_check_2026_09_15.py', 'scripts/determinant_exclusion_check_2026_09_15.py', 'scripts/forest_interpolation_check_2026_09_15.py', 'scripts/gaussian_cycle_check_2026_09_15.py', 'scripts/graph_source_check_2026_09_15.py', 'scripts/hard_core_cycle_check_2026_09_15.py', 'scripts/operator_source_check_2026_09_15.py', 'scripts/partition_exclusion_check_2026_09_15.py'],
+    'supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15': ['scripts/general_order_check_2026_09_15.py'],
+    'cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15': ['scripts/cofactor_cyclic_check_2026_09_15.py', 'scripts/contact_register_check_2026_09_15.py', 'scripts/determinant_exclusion_check_2026_09_15.py', 'scripts/forest_interpolation_check_2026_09_15.py', 'scripts/tree_count_check_2026_09_15.py'],
+    'supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15': ['scripts/inverse_corner_support_check_2026_09_15.py'],
+    'local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15': ['scripts/polarized_word_check_2026_09_15.py'],
+    'finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15': ['scripts/cyclic_equilibrium_check_2026_09_15.py'],
+    'fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15': ['scripts/review_harmonic_metric_check_2026_09_15.py'],
+    'iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15': ['scripts/slow_fast_check_2026_09_15.py'],
+
     'gauge_wilson_weak_window_quantitative_bounds_and_haar_contact_fdd_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py'],
 
     'rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16': ['scripts/rotor_tree_slater_dressing_check_2026_09_16.py'],

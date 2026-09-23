@@ -1,0 +1,171 @@
+===== runner cache v1 =====
+runner: scripts/quartet_metric_check_2026_09_15.py
+runner_sha256: 39f256955fd28a0090de564a8ae0d4a6ad0af07e03dbaf04abcdde28f2ec820c
+input_fingerprint_sha256: 18fc13cf570d343b610a4ca876a23b2c58abfe3f19f4f0bff2cad6cc1c5f820a
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.82
+status: ok
+----- stdout -----
+{
+  "status": "PASS_personal_bounded_formal_loop_and_native_jet_challenges",
+  "quartet_spectrum": {
+    "zero": 1,
+    "two": 3,
+    "four": 1
+  },
+  "variance_checks": [
+    {
+      "N": 1,
+      "mean_coefficient": "2/(5*z) - 2/(5*z**6)",
+      "contrast_coefficient": "(2/3 - 2/(3*z**3))/z"
+    },
+    {
+      "N": 2,
+      "mean_coefficient": "2/(3*z) - 2/(3*z**4)",
+      "contrast_coefficient": "(2 - 2/z)/z"
+    },
+    {
+      "N": 4,
+      "mean_coefficient": "1/z - 1/z**3",
+      "contrast_coefficient": "2*log(z)/z"
+    },
+    {
+      "N": 6,
+      "mean_coefficient": "6/(5*z) - 6/(5*z**(8/3))",
+      "contrast_coefficient": "(6*z**(1/3) - 6)/z"
+    }
+  ],
+  "native_jet_checks": [
+    {
+      "step": 0.001,
+      "max_error": 2.1743619904590616e-08,
+      "predicted_coframe_derivative": -0.032552083333333336
+    },
+    {
+      "step": 0.0005,
+      "max_error": 5.43590804313876e-09,
+      "predicted_coframe_derivative": -0.032552083333333336
+    },
+    {
+      "step": 0.00025,
+      "max_error": 1.3590543065933325e-09,
+      "predicted_coframe_derivative": -0.032552083333333336
+    }
+  ],
+  "constitutive_checks": [
+    {
+      "strength": 0.02,
+      "z": 2.0,
+      "W_error": 4.9005967468255286e-08,
+      "split": 0.00040000000360251864,
+      "predicted_split": 0.0004
+    },
+    {
+      "strength": 0.02,
+      "z": 5.0,
+      "W_error": 2.1325982443659148e-08,
+      "split": 0.000256003074958322,
+      "predicted_split": 0.00025600000000000004
+    },
+    {
+      "strength": 0.02,
+      "z": 10.0,
+      "W_error": 9.173161778574734e-09,
+      "split": 0.0001440069141431799,
+      "predicted_split": 0.00014400000000000003
+    },
+    {
+      "strength": 0.01,
+      "z": 2.0,
+      "W_error": 3.0621152483000528e-09,
+      "split": 0.0001000000000572765,
+      "predicted_split": 0.0001
+    },
+    {
+      "strength": 0.01,
+      "z": 5.0,
+      "W_error": 1.3326108579674091e-09,
+      "split": 6.400019204777507e-05,
+      "predicted_split": 6.400000000000001e-05
+    },
+    {
+      "strength": 0.01,
+      "z": 10.0,
+      "W_error": 5.732152990406824e-10,
+      "split": 3.6000432031668694e-05,
+      "predicted_split": 3.600000000000001e-05
+    },
+    {
+      "strength": 0.005,
+      "z": 2.0,
+      "W_error": 1.9136995884965684e-10,
+      "split": 2.5000000000052758e-05,
+      "predicted_split": 2.5e-05
+    },
+    {
+      "strength": 0.005,
+      "z": 5.0,
+      "W_error": 8.328498530013444e-11,
+      "split": 1.6000012003192232e-05,
+      "predicted_split": 1.6000000000000003e-05
+    },
+    {
+      "strength": 0.005,
+      "z": 10.0,
+      "W_error": 3.5824494392131104e-11,
+      "split": 9.000027000771738e-06,
+      "predicted_split": 9.000000000000002e-06
+    }
+  ],
+  "checks": {
+    "fermion coframe derivative coefficient": 1,
+    "fermion coframe trace coefficient": 1,
+    "Dirac photon bubble radial coefficient": 1,
+    "Euclidean chirality squares to identity": 1,
+    "parity-even Weyl closed trace is half Dirac": 256,
+    "24-cell exact sphere second moment": 1,
+    "24-cell exact sphere fourth moment": 256,
+    "birefringent kernel transverse and traceless": 24,
+    "pointwise Clifford birefringence insertion identity": 96,
+    "linear birefringence does not source fermion metric logarithm": 1,
+    "quartet graph detailed balance": 1,
+    "quartet eigenvalues count four Weyl nodes once": 1,
+    "common metric is the unique quartet zero mode": 1,
+    "exact weighted energy dissipation": 1,
+    "zero-charge adverse control adds a disconnected zero mode": 1,
+    "metric-mean variance agrees with sourced birefringence ODE": 4,
+    "contrast variance solves source ODE including resonance": 4,
+    "exact root lies in the full native four-band zero space": 25,
+    "actual node velocities are untilted": 25,
+    "projected native shear derivative matches analytic contrast coefficient": 12,
+    "positive constitutive quadrature cutoff comparison": 9,
+    "full constitutive mixture matches quadratic variance": 9,
+    "actual photon polarization roots match predicted split": 9,
+    "zero average shear does not erase its variance": 9,
+    "nonzero contrasts with isotropic variance need not source quadratic birefringence": 1
+  },
+  "seconds": 0.4810367909958586,
+  "limits": [
+    "one-loop and small-anisotropy calculations, not a full quantum phase",
+    "four Weyl nodes count as two Dirac bubbles; each self-energy is local to its external node",
+    "native metric jets projected from actual four-band matrices",
+    "constitutive trajectories use derived linear running, not nonlinear all-orders flow",
+    "no empirical speed or scale fitted",
+    "same author; no independent audit"
+  ],
+  "sha256": {
+    "scripts/quartet_metric_check_2026_09_15.py": "39f256955fd28a0090de564a8ae0d4a6ad0af07e03dbaf04abcdde28f2ec820c",
+    "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+  }
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: quartet gamma/metric and polarization identities
+per_site: not executed: continuum matrix and quadrature fixtures
+per_mode: finite angular/matrix quadrature, not a constructed interacting phase
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

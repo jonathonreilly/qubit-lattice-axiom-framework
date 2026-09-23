@@ -1,0 +1,48 @@
+{
+  "status": "finite_author_checks_passed",
+  "independent_review": false,
+  "cofactor_order_cases": 1920,
+  "maximum_identity_error": 3.0531133177191805e-16,
+  "omitted_local_sign_failure": 0.40907930099128836,
+  "false_one_sided_commutation_gap": 7.6850426358840735,
+  "source_checks": [
+    {
+      "assigned_entries": 1,
+      "source_distributions": 35,
+      "maximum_absolute_value": 8.771177209762683e-06,
+      "bound": 0.007875446839688896,
+      "maximum_ratio": 0.0011137370854387193,
+      "rotation_error": 6.548261831076961e-22
+    },
+    {
+      "assigned_entries": 2,
+      "source_distributions": 35,
+      "maximum_absolute_value": 1.0546080643951765e-06,
+      "bound": 0.003937723419844448,
+      "maximum_ratio": 0.00026782177211339965,
+      "rotation_error": 1.4254412556366483e-22
+    },
+    {
+      "assigned_entries": 2,
+      "source_distributions": 35,
+      "maximum_absolute_value": 1.2249365427528834e-05,
+      "bound": 0.003937723419844448,
+      "maximum_ratio": 0.0031107734397487776,
+      "rotation_error": 2.2770165388072663e-22
+    },
+    {
+      "assigned_entries": 3,
+      "source_distributions": 35,
+      "maximum_absolute_value": 6.123198023595829e-05,
+      "bound": 0.001968861709922224,
+      "maximum_ratio": 0.031100193541971587,
+      "rotation_error": 9.470116246213047e-22
+    }
+  ],
+  "limitations": [
+    "fixed oriented resource assignments only",
+    "generic finite matrices rather than physical lattice law",
+    "shared CAR construction",
+    "no sum over lattice resource assignments or branching graphs"
+  ]
+}

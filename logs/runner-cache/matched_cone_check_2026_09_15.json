@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "scope": "finite algebra only, personal checks",
+  "symbolic": {
+    "characteristic_polynomial_residual": "0"
+  },
+  "literal_curl_spectra": [
+    {
+      "L": 3,
+      "G": [
+        1.0,
+        1.0,
+        0.75
+      ],
+      "eta": 1.0,
+      "positive_count": 52,
+      "spectral_error": 8.881784197001252e-15,
+      "kernel_error": 3.8199065021457285e-15
+    },
+    {
+      "L": 4,
+      "G": [
+        1.0,
+        1.0,
+        0.75
+      ],
+      "eta": 1.0,
+      "positive_count": 126,
+      "spectral_error": 2.4868995751603507e-14,
+      "kernel_error": 5.771217056713922e-15
+    },
+    {
+      "L": 4,
+      "G": [
+        1.0,
+        1.0,
+        0.75
+      ],
+      "eta": 0.37,
+      "positive_count": 126,
+      "spectral_error": 1.5987211554602254e-14,
+      "kernel_error": 5.770077696442269e-15
+    },
+    {
+      "L": 3,
+      "G": [
+        0.4,
+        1.3,
+        2.1
+      ],
+      "eta": 2.0,
+      "positive_count": 52,
+      "spectral_error": 1.0658141036401503e-14,
+      "kernel_error": 8.05580754029133e-15
+    }
+  ],
+  "wilson_nodes": [
+    {
+      "charge": 1,
+      "node": [
+        1.0471975511965976,
+        0.0,
+        -1.0471975511965976
+      ],
+      "metric_error": 1.424356188550746e-10,
+      "node_residual": 1.1102230246251565e-16
+    },
+    {
+      "charge": 1,
+      "node": [
+        1.0471975511965976,
+        0.0,
+        1.0471975511965976
+      ],
+      "metric_error": 1.424356188550746e-10,
+      "node_residual": 1.1102230246251565e-16
+    },
+    {
+      "charge": -1,
+      "node": [
+        -1.0471975511965976,
+        0.0,
+        -1.0471975511965976
+      ],
+      "metric_error": 1.424356188550746e-10,
+      "node_residual": 1.1102230246251565e-16
+    },
+    {
+      "charge": -1,
+      "node": [
+        -1.0471975511965976,
+        0.0,
+        1.0471975511965976
+      ],
+      "metric_error": 1.424356188550746e-10,
+      "node_residual": 1.1102230246251565e-16
+    }
+  ],
+  "necessity_counterexample": {
+    "positive_but_birefringent_axis_squared_frequencies": [
+      0.0,
+      1.0,
+      2.0000000000000004
+    ]
+  },
+  "runner_sha256": "7589f3815af40612c1e0e49098b8b3af29049d241f6fd54653c5523913b4e279"
+}

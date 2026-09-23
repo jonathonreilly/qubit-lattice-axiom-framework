@@ -1,0 +1,87 @@
+{
+  "status": "exact_author_checks_passed",
+  "independent_review": false,
+  "support_profiles": [
+    {
+      "profile": "empty",
+      "complex_word_algebra_dimension": 1,
+      "inverse_feature_count": 0,
+      "enhanced_real_covariance_rank": 2
+    },
+    {
+      "profile": "scalar",
+      "complex_word_algebra_dimension": 1,
+      "inverse_feature_count": 0,
+      "enhanced_real_covariance_rank": 2
+    },
+    {
+      "profile": "commuting",
+      "complex_word_algebra_dimension": 2,
+      "inverse_feature_count": 0,
+      "enhanced_real_covariance_rank": 4
+    },
+    {
+      "profile": "nilpotent_commuting",
+      "complex_word_algebra_dimension": 2,
+      "inverse_feature_count": 0,
+      "enhanced_real_covariance_rank": 4
+    },
+    {
+      "profile": "upper_triangular",
+      "complex_word_algebra_dimension": 3,
+      "inverse_feature_count": 1,
+      "enhanced_real_covariance_rank": 8
+    },
+    {
+      "profile": "lower_triangular",
+      "complex_word_algebra_dimension": 3,
+      "inverse_feature_count": 1,
+      "enhanced_real_covariance_rank": 8
+    },
+    {
+      "profile": "two_nilpotents",
+      "complex_word_algebra_dimension": 4,
+      "inverse_feature_count": 0,
+      "enhanced_real_covariance_rank": 8
+    },
+    {
+      "profile": "full_pair",
+      "complex_word_algebra_dimension": 4,
+      "inverse_feature_count": 4,
+      "enhanced_real_covariance_rank": 8
+    }
+  ],
+  "automorphism_covariance_cases": 48,
+  "degeneration": [
+    {
+      "t": "1",
+      "variance_21": "1",
+      "exact_probability_unit_disk": "1 - exp(-1)"
+    },
+    {
+      "t": "1/2",
+      "variance_21": "4",
+      "exact_probability_unit_disk": "1 - exp(-1/4)"
+    },
+    {
+      "t": "1/4",
+      "variance_21": "16",
+      "exact_probability_unit_disk": "1 - exp(-1/16)"
+    },
+    {
+      "t": "1/16",
+      "variance_21": "256",
+      "exact_probability_unit_disk": "1 - exp(-1/256)"
+    }
+  ],
+  "continuous_limit_word_covariance_rank": 4,
+  "analytic_non_tightness": "P(abs(output21)<=R)=1-exp(-R^2*t^2) tends to0",
+  "limitations": [
+    "initial structural polynomial equality failure is preserved under review/",
+    "continuous maximal-support and global-existence assertions use analytic proofs",
+    "Borel inverse-corner law is discontinuous at specified degeneracies",
+    "common-fiber identification and matrix-label process remain supplied",
+    "word covariance helper shared with earlier exact runner",
+    "no matter kinetic, Born or all-foundation conclusion"
+  ]
+}

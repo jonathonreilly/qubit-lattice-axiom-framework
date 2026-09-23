@@ -22,11 +22,18 @@
  "stdout_tail": "028, 1.019-1.040 (tilt <= 0.31); beta=2: executed 1.0094-1.0114; order beta^-2 1.0034->1.0052; own MC (4 seeds) 1.0042->1.0059, beta^2(P_b - rho_s) = 0.0127; block 91's control, new seeds: 1.000-1.002, 1.004-1.006 (tilt <= 0.20); beta=3: executed 1.0031-1.0051; order beta^-2 1.0014->1.0022; own MC (3 seeds) 1.0011->1.0023, beta^2(P_b - rho_s) = 0.0119; block 91's control, new seeds: 0.999-1.000, 1.001-1.003 (tilt <= 0.16); c_s(16, eps) = 0.01069; the MC's Ward identities hold within 1e-4\nTOTAL: PASS=8 FAIL=0\nSUMMARY: PARTIAL the obstruction is exact: R^(k)E(k) = m^2/(rho(k) + eps m/E) exactly, rho(k) = <P_b> - beta/(2N E) Var(G_perp), G_perp the part of DH orthogonal to the transverse mode; R^E -> m*^2/rho_s (rho_s = <P_b> - beta/(2N)<J^2>, the twist stiffness) iff the non-Goldstone longitudinal current variance is continuous at k = 0; at order beta^-2 it is (c(k) -> c_s = 0.01111); block 91's flat 1.004-1.04 is single-run scatter: the ratio rises with k as c(k) does\nHIT: in block 90's bilayer R^(k)E(k) = m^2/(rho(k) + eps m/E(k)) exactly, rho(k) = <P_b> - beta/(2N E(k)) Var(G_perp(k)); so R^E -> m*^2/rho_s, rho_s = <P_b> - beta/(2N)<J^2>, iff the variance of the longitudinal current orthogonal to the Goldstone mode is continuous at k = 0 (the raw variance jumps by rho_s there); at strong coupling <P_b> - rho_s = c_s/beta^2 + O(beta^-3) with no beta^-1 term, c_s = 0.01111 (a two-loop lattice sum; exact rationals on 4^3, 6^3), and <P_b> - rho(k) = c(k)/beta^2 with c(k) -> c_s\n",
  "checked": {
   "by": "w-macbookpro90c72-j1804",
-  "at_utc": "20260923T194157Z",
+  "at_utc": "20260923T194238Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5e1a73bb differs from the current HEAD 95d7664d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science (partial): block 91's Bogoliubov step made exact in block 90's bilayer: R^(k)E(k) = m^2/(rho(k) + eps m/E), rho(k) = <P_b> - beta/(2N E) Var(G_perp), G_perp the part of the rotated energy orthogonal to the transverse mode. With the twist stiffness rho_s = <P_b> - beta/(2N)<J^2>, the Goldstone limit R^E -> m*^2/rho_s is equivalent to continuity at k = 0 of the variance of the longitudinal current orthogonal to the Goldstone mode (the raw variance jumps by rho_s at k = 0). At strong coupling <P_b> - rho_s = c_s/beta^2 + O(beta^-3), no beta^-1 term, c_s = 0.011105, and <P_b> - rho(k) = c(k)/beta^2 with c(k) -> c_s (two-loop lattice sums; exact rationals on 4^3 and 6^3). Executed (floating point): an independent bilayer MC with its Ward identities satisfied, and block 91's own control rerun with new seeds, show block 91's flat 1.004-1.04 excess is single-run scatter; the ratio rises with k like c(k).",
+  "by": "w-macbookpro90c72-j1804",
+  "at_utc": "20260923T194238Z"
  }
 }

@@ -22,11 +22,18 @@
  "stdout_tail": "ds map commutes with them at every site; the average of their permutation matrices has rank 1 (the constants): the only invariant direction in content space is the constant one, orthogonal to every departure\nSUMMARY: PARTIAL (a)-(d) with the quadrupole channel: Z = 1 + 3 sum_(y<y') (l1^2 m.m' + l2^2 w.w') + O(3); the content-blind potential of one record is exactly -(3/2)[u^2 - l1^2 sum u_y^2] - [psi^2 - l2^2 sum psi_y^2] at second order, far constant -(3/2)(1 - 6 l1^2) near the massless surface (-5/4; -0.1239/r^2 on it) and direction-dependent when screened; the first-order term of content b is -3 (a.b) u - 3 (w_a)_axis(b) psi; two bodies couple through their mutual capacitance -> cap1 cap2 G(d); no content-blind clause is first order (only a seventh outcome, zero at the neutral scale)\nHIT: for the self-consistent odds of the six-axis rule, a record of unread content weighted by the normalizer feels, at second order in a first record's field, V = -(3/2)[u^2 - l1^2 sum_(y~x) u_y^2] - [psi^2 - l2^2 sum psi_y^2] exactly (u the lean, psi the quadrupole field, sum_y u_y = u/l1); far away V -> -(3/2)[1 - 2 l1^2 sum_j cosh 2k_j] u^2, which is -(5/4) u^2 = -0.1239/r^2 on the massless surface (3,1,2); a record of content b feels -3 (a.b) u - 3 (w_a)_axis(b) psi at first order (orthogonal contents feel the quadrupole field when l2 != 0); two bodies couple through their mutual capacitance, cap1 cap2 G(d) far apart; content-blind clauses of the six-outcome odds have no first-order term\n",
  "checked": {
   "by": "w-macbookpro90c72-jc53e",
-  "at_utc": "20260923T152429Z",
+  "at_utc": "20260923T152455Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ca0386d9 differs from the current HEAD f32f01e3 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science, a partial result building past a1 (same family, unrefereed; plan formed before opening it). Exact: the normalizer is 1 + 3 sum_{y<y'}(l1^2 m.m' + l2^2 w.w') + O(3), the quadrupole channel entering wherever l2 != 0 (third order nonzero then); the content-blind potential of one record is exactly -(3/2)[u^2 - l1^2 sum u_y^2] - [psi^2 - l2^2 sum psi_y^2] at second order, via sum_y u_y = u/l1 (checked on exact rational fields of the 5^3 torus); a record of content b feels -3(a.b)u - 3(w_a)_axis(b) psi at first order, averaging to zero. Far constants (floating point, Bessel-integral Green functions): -(3/2)(1 - 6 l1^2) near the massless surface, -5/4 and -0.1239/r^2 on it (a1's -0.098/r^2 drops the 5/4), direction-dependent -(3/2)[1 - 2 l1^2 sum cosh 2k_j] when screened (a1's 45 l1^2 holds only on the surface). Two bodies couple through their mutual capacitance, cap1 cap2 G(d) far apart (32^3 torus: 1.0000 single records, 1.03 cubes; strength ratio 11.8 vs cap ratio^2 11.5 vs N^2 64). No content-blind clause of the six-outcome odds is first order (Schur over the 48 content symmetries); only a seventh outcome, zero at the neutral scale. Same model family as blocks 41-42; a cross-family referee is needed.",
+  "by": "w-macbookpro90c72-jc53e",
+  "at_utc": "20260923T152455Z"
  }
 }

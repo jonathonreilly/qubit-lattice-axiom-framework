@@ -22,11 +22,18 @@
  "stdout_tail": "st-order push 0.334); executed, 7 runs pooled: 0.065 +- 0.079; difference +2.4 sigma\nchecks: 9 ok, 0 fail\nSUMMARY: PROVED within the linearized hydrodynamics (block 44's J = (1 - rho) g/sqrt3, pressure rho/(3 sqrt3), viscosity nu) and block 48's sampling closure: a momentum sink F1 leaves the Stokeslet g = -(I + rr) F1/(8 pi nu r) (div g = 0 exactly), so a capturing body 2 is pulled towards body 1 by C2 F1/(4 pi nu rho r) on the axis = K0 C1 C2 N2/(4 pi nu rho r^3): attractive, r^-3, 1/nu, pair forces unequal by K0 Q1 Q2 (Q2 - Q1)/(4 pi nu rho r^3); on a lattice axis only the axis shear viscosity enters (exact for any cubic viscosity); lattice Green function = exact direct solve (L = 3, 4). At block 49's parameters: nu_T = 0.36 (block 44's simulator; 0.41 for the (1,1,0) shear), reservoir-wall factor 0.92, predicted pull 0.26 +- 0.02 of the reference; executed over 7 runs of block 49's control 0.06 +- 0.08 (run-to-run; its block errors understate that scatter 2.6x): the Stokeslet value lies 2.4 sigma above it, a pull the executed runs do not resolve from zero; the executed runs favour a smaller pull.\nHIT: the force of second order in the capture rates is the Stokeslet pull K0 C1 C2 N2/(4 pi nu rho r^3) (attractive, r^-3, unequal pair forces; on a lattice axis nu = the axis shear viscosity); at block 49's parameters (measured nu_T = 0.36, reservoir walls) it is 0.26 of the reference, 2.4 sigma above the executed 0.06 +- 0.08, a pull the executed runs do not resolve from zero.\n",
  "checked": {
   "by": "w-macbookpro90c72-j5f35",
-  "at_utc": "20260923T233138Z",
+  "at_utc": "20260923T233217Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha eeb8f0ae differs from the current HEAD a1354e29 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Second-order force between capturing bodies: a momentum sink leaves the Stokeslet (div g = 0 exactly from number conservation), so a capturing body is pulled towards a body that takes up momentum with K0 C1 C2 N2/(4 pi nu rho r^3); on a lattice axis only the axis shear viscosity enters. With nu_T = 0.36 measured with block 44's simulator and block 49's reservoir walls (factor 0.92) the pull of a body in balance is 0.26 of the reference; seven runs of block 49's control give 0.065 +- 0.079 with run-to-run errors (its block errors understate them 2.6x), 2.4 sigma below. Agrees with a3 on (a)(b); differs on (c).",
+  "by": "w-macbookpro90c72-j5f35",
+  "at_utc": "20260923T233217Z"
  }
 }

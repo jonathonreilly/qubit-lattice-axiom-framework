@@ -1,0 +1,120 @@
+--- prepared-v2/scripts/temporal_wilson_resummation_check_2026_09_16.py
++++ prepared-v3/scripts/temporal_wilson_resummation_check_2026_09_16.py
+@@ -3,7 +3,7 @@
+ All numerical comparisons are floating checks of supplied finite systems.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_INPUT_PATHS=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
+ AUDIT_MEMORY_MB=768
+ EXPECTED_INPUT_SHA256={'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import hashlib,itertools,json,math,time
+@@ -118,7 +118,7 @@
+ 
+ def _check_inputs():
+     root = Path(__file__).resolve().parents[1]
+-    for name in AUDIT_INPUT_FILES:
++    for name in AUDIT_INPUT_PATHS:
+         actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
+         if actual != EXPECTED_INPUT_SHA256[name]:
+             raise RuntimeError("input identity mismatch: " + name)
+--- prepared-v2/scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py
++++ prepared-v3/scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py
+@@ -3,7 +3,7 @@
+ Uses a different Clifford basis and explicit derivatives, not loop enumeration.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_INPUT_PATHS=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
+ AUDIT_MEMORY_MB=768
+ EXPECTED_INPUT_SHA256={'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import hashlib,itertools,json,math,time
+@@ -94,7 +94,7 @@
+ 
+ def _check_inputs():
+     root = Path(__file__).resolve().parents[1]
+-    for name in AUDIT_INPUT_FILES:
++    for name in AUDIT_INPUT_PATHS:
+         actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
+         if actual != EXPECTED_INPUT_SHA256[name]:
+             raise RuntimeError("input identity mismatch: " + name)
+--- prepared-v2/scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py
++++ prepared-v3/scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py
+@@ -3,7 +3,7 @@
+ The general determinant reduction is prior art; this checks our exact conventions.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=['docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_INPUT_PATHS=['docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
+ AUDIT_MEMORY_MB=768
+ EXPECTED_INPUT_SHA256={'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md': '9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import hashlib,itertools,json,math,time
+@@ -100,7 +100,7 @@
+ 
+ def _check_inputs():
+     root = Path(__file__).resolve().parents[1]
+-    for name in AUDIT_INPUT_FILES:
++    for name in AUDIT_INPUT_PATHS:
+         actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
+         if actual != EXPECTED_INPUT_SHA256[name]:
+             raise RuntimeError("input identity mismatch: " + name)
+--- prepared-v2/scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py
++++ prepared-v3/scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py
+@@ -6,7 +6,7 @@
+ amplitude. This is a finite diagnostic, not a phase or thermal-trace test.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=['docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_INPUT_PATHS=['docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md']
+ AUDIT_MEMORY_MB=768
+ EXPECTED_INPUT_SHA256={'docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md': '8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07', 'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md': '9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8', 'docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md': '1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21', 'docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md': '89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537'}
+ import hashlib,itertools,json,math,time
+@@ -170,7 +170,7 @@
+ 
+ def _check_inputs():
+     root = Path(__file__).resolve().parents[1]
+-    for name in AUDIT_INPUT_FILES:
++    for name in AUDIT_INPUT_PATHS:
+         actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
+         if actual != EXPECTED_INPUT_SHA256[name]:
+             raise RuntimeError("input identity mismatch: " + name)
+--- prepared-v2/scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py
++++ prepared-v3/scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py
+@@ -6,7 +6,7 @@
+ chain-homotopy proof. Floating phases additionally test physical time units.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_INPUT_PATHS=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
+ AUDIT_MEMORY_MB=768
+ EXPECTED_INPUT_SHA256={'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import collections,hashlib,itertools,json,math,time
+@@ -110,7 +110,7 @@
+ 
+ def _check_inputs():
+     root = Path(__file__).resolve().parents[1]
+-    for name in AUDIT_INPUT_FILES:
++    for name in AUDIT_INPUT_PATHS:
+         actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
+         if actual != EXPECTED_INPUT_SHA256[name]:
+             raise RuntimeError("input identity mismatch: " + name)
+--- prepared-v2/scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py
++++ prepared-v3/scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py
+@@ -5,7 +5,7 @@
+ directions test the C3 formula, not the general all-direction estimate.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_INPUT_PATHS=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
+ AUDIT_MEMORY_MB=768
+ EXPECTED_INPUT_SHA256={'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import hashlib,itertools,json,math,time
+@@ -84,7 +84,7 @@
+ 
+ def _check_inputs():
+     root = Path(__file__).resolve().parents[1]
+-    for name in AUDIT_INPUT_FILES:
++    for name in AUDIT_INPUT_PATHS:
+         actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
+         if actual != EXPECTED_INPUT_SHA256[name]:
+             raise RuntimeError("input identity mismatch: " + name)

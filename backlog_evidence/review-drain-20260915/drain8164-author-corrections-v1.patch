@@ -1,0 +1,811 @@
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK01_WORKING_ANISOTROPIC_SELF_ENERGY_AND_TIME_BLOCKING.md
++++ docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,3 +1,36 @@
++---
++claim_id: weighted_gaussian_damping_and_integer_time_blocking_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py
++upstream_dependencies: []
++claim_scope: "01: weighted conditional Gaussian damping includes the factor one half; Hodge anisotropy, specified integer-jump time model, finite-volume Skellam/Trotter comparison. Error is extensive; endpoint sandwich is not whole-operator equality."
++---
++
++# Weighted Gaussian damping and integer time blocking
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++## Scope and provenance
++
++01: weighted conditional Gaussian damping includes the factor one half; Hodge anisotropy, specified integer-jump time model, finite-volume Skellam/Trotter comparison. Error is extensive; endpoint sandwich is not whole-operator equality.
++
++The complete original mathematical argument follows. Its personal reading, timing, proposal and review statements describe historical work, not a new review or current execution. Model parameters are supplied. No PR8160, PR8162 or PR8163 result is implicitly a premise. Narrow quantitative bounds and explicit witnesses do not supply a broad negative certificate or a physical phase. No five-route no-go PASS is asserted.
++
++The supplied model and proof are redeclared here; other campaign mentions are context.
++
++## Complete argument
++
+ # Working anisotropic self-energy and time-blocking analysis
+ 
+ Personal derivation in progress, 2026-09-16. This identifies one failed direct theorem substitution and a concrete resummation target. It is not a no-go for the phase, an axiom wall, or a claim to invent electric-flux Hamiltonians.
+@@ -133,8 +166,13 @@
+ 
+ ## Review and proposal status
+ 
+-The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+-[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+-proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
++The [claim-status contract](work_history/review_loop/pr8164/README.md) and
++[premise inventory](work_history/review_loop/pr8164/README.md) apply to this author
++proposal. The [negative-claim checklist](work_history/review_loop/pr8164/README.md)
+ records the scoped comparison restrictions and untested alternatives.
+ Independent review, formal registration and retained landing are pending.
++
++
++## Canonical evidence boundary
++
++[Program](../scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py); [current stdout cache](../logs/runner-cache/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.txt). The canonical TOTAL counts 2 completed finite control families, not each loop iteration or an analytical theorem. All original assertion expressions and tolerances are retained. No canonical capture has run during preparation. Historical outputs, failed refinements and mutations remain in the [exact recovery archive](work_history/review_loop/pr8164/README.md).
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK02_ELECTRIC_RESPONSE_AND_GAUSSIAN_REFERENCE_TESTS.md
++++ docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,3 +1,38 @@
++---
++claim_id: finite_box_electric_offset_response_and_tail_bounds_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py
++upstream_dependencies: ["docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md"]
++claim_scope: "02: finite-box electric offset curvature, diamagnetic response, conditional soft spectral support, factorial ray lower bound excluding the stated global quadratic Gaussian tail class. Uniform positive response is not proved; no photon pole or residue."
++---
++
++# Finite-box electric offset response and factorial tail bounds
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++## Scope and provenance
++
++02: finite-box electric offset curvature, diamagnetic response, conditional soft spectral support, factorial ray lower bound excluding the stated global quadratic Gaussian tail class. Uniform positive response is not proved; no photon pole or residue.
++
++The complete original mathematical argument follows. Its personal reading, timing, proposal and review statements describe historical work, not a new review or current execution. Model parameters are supplied. No PR8160, PR8162 or PR8163 result is implicitly a premise. Narrow quantitative bounds and explicit witnesses do not supply a broad negative certificate or a physical phase. No five-route no-go PASS is asserted.
++
++Actual mathematical dependencies:
++
++- [Weighted Gaussian damping and integer time blocking](WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
++## Complete argument
++
+ # Electric response as a precise phase target
+ 
+ Personal derivation proposal, 2026-09-16. This uses the supplied pure-gauge rotor Hamiltonian, not an axiom-derived law. The spectral identities are standard perturbation and sum-rule machinery derived below. They identify a sufficient response estimate for low-energy excitations; that estimate has not been proved uniformly in volume. Neither the identities nor the finite checks establish a photon phase.
+@@ -96,8 +131,13 @@
+ 
+ ## Review and proposal status
+ 
+-The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+-[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+-proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
++The [claim-status contract](work_history/review_loop/pr8164/README.md) and
++[premise inventory](work_history/review_loop/pr8164/README.md) apply to this author
++proposal. The [negative-claim checklist](work_history/review_loop/pr8164/README.md)
+ records the scoped comparison restrictions and untested alternatives.
+ Independent review, formal registration and retained landing are pending.
++
++
++## Canonical evidence boundary
++
++[Program](../scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py); [current stdout cache](../logs/runner-cache/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.txt). The canonical TOTAL counts 3 completed finite control families, not each loop iteration or an analytical theorem. All original assertion expressions and tolerances are retained. No canonical capture has run during preparation. Historical outputs, failed refinements and mutations remain in the [exact recovery archive](work_history/review_loop/pr8164/README.md).
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK03_WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_TESTS.md
++++ docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,3 +1,38 @@
++---
++claim_id: weighted_phase_corrector_and_magnetic_gram_certificates_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py
++upstream_dependencies: ["docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md"]
++claim_scope: "03: exact weighted phase-corrector variational identity and magnetic Gram lower-bound certificates. Cube-kernel witness excludes the stated whole-space comparison, not all possible correctors. One-plaquette harmonic-mean normalization is correct."
++---
++
++# Weighted phase correctors and magnetic Gram certificates
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++## Scope and provenance
++
++03: exact weighted phase-corrector variational identity and magnetic Gram lower-bound certificates. Cube-kernel witness excludes the stated whole-space comparison, not all possible correctors. One-plaquette harmonic-mean normalization is correct.
++
++The complete original mathematical argument follows. Its personal reading, timing, proposal and review statements describe historical work, not a new review or current execution. Model parameters are supplied. No PR8160, PR8162 or PR8163 result is implicitly a premise. Narrow quantitative bounds and explicit witnesses do not supply a broad negative certificate or a physical phase. No five-route no-go PASS is asserted.
++
++Actual mathematical dependencies:
++
++- [Finite-box electric offset response and factorial tail bounds](FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
++## Complete argument
++
+ # The electric response as an exact weighted phase problem
+ 
+ Working personal derivation, 2026-09-16. The finite-volume identities below
+@@ -169,8 +204,13 @@
+ 
+ ## Review and proposal status
+ 
+-The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+-[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+-proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
++The [claim-status contract](work_history/review_loop/pr8164/README.md) and
++[premise inventory](work_history/review_loop/pr8164/README.md) apply to this author
++proposal. The [negative-claim checklist](work_history/review_loop/pr8164/README.md)
+ records the scoped comparison restrictions and untested alternatives.
+ Independent review, formal registration and retained landing are pending.
++
++
++## Canonical evidence boundary
++
++[Program](../scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py); [current stdout cache](../logs/runner-cache/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.txt). The canonical TOTAL counts 3 completed finite control families, not each loop iteration or an analytical theorem. All original assertion expressions and tolerances are retained. No canonical capture has run during preparation. Historical outputs, failed refinements and mutations remain in the [exact recovery archive](work_history/review_loop/pr8164/README.md).
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK04_LOCAL_DENSITY_AND_FINITE_LOOP_TEST_FAMILY_BOUND.md
++++ docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,3 +1,39 @@
++---
++claim_id: local_rotor_density_and_finite_template_bounds_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py
++upstream_dependencies: ["docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md", "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"]
++claim_scope: "04: local conditional density floor, finite-character orthogonality and fixed finite-template certificate limitation; principal cube event has positive probability. This bounds the restricted certificate, not full susceptibility; no particle interpretation."
++---
++
++# Local rotor density and finite-template bounds
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++## Scope and provenance
++
++04: local conditional density floor, finite-character orthogonality and fixed finite-template certificate limitation; principal cube event has positive probability. This bounds the restricted certificate, not full susceptibility; no particle interpretation.
++
++The complete original mathematical argument follows. Its personal reading, timing, proposal and review statements describe historical work, not a new review or current execution. Model parameters are supplied. No PR8160, PR8162 or PR8163 result is implicitly a premise. Narrow quantitative bounds and explicit witnesses do not supply a broad negative certificate or a physical phase. No five-route no-go PASS is asserted.
++
++Actual mathematical dependencies:
++
++- [Finite-box electric offset response and factorial tail bounds](FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++- [Weighted phase correctors and magnetic Gram certificates](WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
++## Complete argument
++
+ # A volume-uniform local density bound and the limit of finite loop tests
+ 
+ Working bounded derivation, 2026-09-16. This supplies a quantitative local
+@@ -211,8 +247,13 @@
+ 
+ ## Review and proposal status
+ 
+-The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+-[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+-proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
++The [claim-status contract](work_history/review_loop/pr8164/README.md) and
++[premise inventory](work_history/review_loop/pr8164/README.md) apply to this author
++proposal. The [negative-claim checklist](work_history/review_loop/pr8164/README.md)
+ records the scoped comparison restrictions and untested alternatives.
+ Independent review, formal registration and retained landing are pending.
++
++
++## Canonical evidence boundary
++
++[Program](../scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py); [current stdout cache](../logs/runner-cache/local_rotor_density_and_finite_template_bounds_check_2026_09_16.txt). The canonical TOTAL counts 4 completed finite control families, not each loop iteration or an analytical theorem. All original assertion expressions and tolerances are retained. No canonical capture has run during preparation. Historical outputs, failed refinements and mutations remain in the [exact recovery archive](work_history/review_loop/pr8164/README.md).
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK05_GROUND_STATE_CORRELATION_COMPARISON.md
++++ docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,3 +1,36 @@
++---
++claim_id: compact_rotor_ground_correlation_comparison_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py
++upstream_dependencies: []
++claim_scope: "05: ground-state cone comparison including the half-angle cover/parity caveat, cofinal free-box angle marginal and local electric quadratic moment limits at fixed coupling. No unrestricted thermal trace equivalence, full quantum-state uniqueness, or susceptibility monotonicity."
++---
++
++# Compact rotor ground correlation comparison
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++## Scope and provenance
++
++05: ground-state cone comparison including the half-angle cover/parity caveat, cofinal free-box angle marginal and local electric quadratic moment limits at fixed coupling. No unrestricted thermal trace equivalence, full quantum-state uniqueness, or susceptibility monotonicity.
++
++The complete original mathematical argument follows. Its personal reading, timing, proposal and review statements describe historical work, not a new review or current execution. Model parameters are supplied. No PR8160, PR8162 or PR8163 result is implicitly a premise. Narrow quantitative bounds and explicit witnesses do not supply a broad negative certificate or a physical phase. No five-route no-go PASS is asserted.
++
++The supplied model and proof are redeclared here; other campaign mentions are context.
++
++## Complete argument
++
+ # Ground-state correlation comparison on the actual compact Hamiltonian
+ 
+ Working bounded derivation, 2026-09-16. This adapts standard quantum
+@@ -196,8 +229,13 @@
+ 
+ ## Review and proposal status
+ 
+-The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+-[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+-proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
++The [claim-status contract](work_history/review_loop/pr8164/README.md) and
++[premise inventory](work_history/review_loop/pr8164/README.md) apply to this author
++proposal. The [negative-claim checklist](work_history/review_loop/pr8164/README.md)
+ records the scoped comparison restrictions and untested alternatives.
+ Independent review, formal registration and retained landing are pending.
++
++
++## Canonical evidence boundary
++
++[Program](../scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py); [current stdout cache](../logs/runner-cache/compact_rotor_ground_correlation_comparison_check_2026_09_16.txt). The canonical TOTAL counts 3 completed finite control families, not each loop iteration or an analytical theorem. All original assertion expressions and tolerances are retained. No canonical capture has run during preparation. Historical outputs, failed refinements and mutations remain in the [exact recovery archive](work_history/review_loop/pr8164/README.md).
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK06_COMPACT_STABILITY_COMPARISON_READING.md
++++ docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,3 +1,36 @@
++---
++claim_id: principal_link_raw_curl_witness_and_mass_bound_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py
++upstream_dependencies: []
++claim_scope: "06: explicit pure-gauge principal-link raw-curl witness contradicts the stated imported raw coercivity claim; mass-dependent replacement. This does not refute the external main theorem or repair its entire proof."
++---
++
++# Principal-link raw-curl witness and mass-dependent bound
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++## Scope and provenance
++
++06: explicit pure-gauge principal-link raw-curl witness contradicts the stated imported raw coercivity claim; mass-dependent replacement. This does not refute the external main theorem or repair its entire proof.
++
++The complete original mathematical argument follows. Its personal reading, timing, proposal and review statements describe historical work, not a new review or current execution. Model parameters are supplied. No PR8160, PR8162 or PR8163 result is implicitly a premise. Narrow quantitative bounds and explicit witnesses do not supply a broad negative certificate or a physical phase. No five-route no-go PASS is asserted.
++
++The supplied model and proof are redeclared here; other campaign mentions are context.
++
++## Complete argument
++
+ # Compact stability comparison: a source check and its limited repair
+ 
+ Working source-application check, 2026-09-16. The purpose is to decide
+@@ -105,8 +138,13 @@
+ 
+ ## Review and proposal status
+ 
+-The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+-[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+-proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
++The [claim-status contract](work_history/review_loop/pr8164/README.md) and
++[premise inventory](work_history/review_loop/pr8164/README.md) apply to this author
++proposal. The [negative-claim checklist](work_history/review_loop/pr8164/README.md)
+ records the scoped comparison restrictions and untested alternatives.
+ Independent review, formal registration and retained landing are pending.
++
++
++## Canonical evidence boundary
++
++[Program](../scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py); [current stdout cache](../logs/runner-cache/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.txt). The canonical TOTAL counts 1 completed finite control families, not each loop iteration or an analytical theorem. All original assertion expressions and tolerances are retained. No canonical capture has run during preparation. Historical outputs, failed refinements and mutations remain in the [exact recovery archive](work_history/review_loop/pr8164/README.md).
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK07_POSITIVE_WILSON_MIXTURE_AND_WEAK_REGION_COMPARISON.md
++++ docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,3 +1,36 @@
++---
++claim_id: positive_wilson_villain_mixture_and_weak_region_bounds_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py
++upstream_dependencies: []
++claim_scope: "07: positive Wilson/Villain Hartman-Watson mixture, partition reweighting domination, weak-region tails and diluted comparison. Infinite first mixing-time moment is retained; no finite-variance auxiliary field or thin-slice phase conclusion."
++---
++
++# Positive Wilson–Villain mixtures and weak-region bounds
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++## Scope and provenance
++
++07: positive Wilson/Villain Hartman-Watson mixture, partition reweighting domination, weak-region tails and diluted comparison. Infinite first mixing-time moment is retained; no finite-variance auxiliary field or thin-slice phase conclusion.
++
++The complete original mathematical argument follows. Its personal reading, timing, proposal and review statements describe historical work, not a new review or current execution. Model parameters are supplied. No PR8160, PR8162 or PR8163 result is implicitly a premise. Narrow quantitative bounds and explicit witnesses do not supply a broad negative certificate or a physical phase. No five-route no-go PASS is asserted.
++
++The supplied model and proof are redeclared here; other campaign mentions are context.
++
++## Complete argument
++
+ # Positive Wilson mixtures and control of weak regions
+ 
+ Working derivation, 2026-09-16. Standard Hartman-Watson and Ginibre machinery
+@@ -268,8 +301,13 @@
+ 
+ ## Review and proposal status
+ 
+-The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+-[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+-proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
++The [claim-status contract](work_history/review_loop/pr8164/README.md) and
++[premise inventory](work_history/review_loop/pr8164/README.md) apply to this author
++proposal. The [negative-claim checklist](work_history/review_loop/pr8164/README.md)
+ records the scoped comparison restrictions and untested alternatives.
+ Independent review, formal registration and retained landing are pending.
++
++
++## Canonical evidence boundary
++
++[Program](../scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py); [current stdout cache](../logs/runner-cache/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.txt). The canonical TOTAL counts 4 completed finite control families, not each loop iteration or an analytical theorem. All original assertion expressions and tolerances are retained. No canonical capture has run during preparation. Historical outputs, failed refinements and mutations remain in the [exact recovery archive](work_history/review_loop/pr8164/README.md).
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK08_SHORT_TIME_BRIDGE_AND_ENDPOINT_ACTION.md
++++ docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,3 +1,36 @@
++---
++claim_id: short_time_rotor_bridge_and_endpoint_hessian_bounds_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py
++upstream_dependencies: []
++claim_scope: "08: fixed-lift short-time bridge convexity, curl-relative endpoint Hessian approximation including negative covariance, extensive normalization and label-locality resolvent bounds. Endpoint action need not be convex; windings and repeated blocks remain open."
++---
++
++# Short-time rotor bridges and endpoint Hessian bounds
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++## Scope and provenance
++
++08: fixed-lift short-time bridge convexity, curl-relative endpoint Hessian approximation including negative covariance, extensive normalization and label-locality resolvent bounds. Endpoint action need not be convex; windings and repeated blocks remain open.
++
++The complete original mathematical argument follows. Its personal reading, timing, proposal and review statements describe historical work, not a new review or current execution. Model parameters are supplied. No PR8160, PR8162 or PR8163 result is implicitly a premise. Narrow quantitative bounds and explicit witnesses do not supply a broad negative certificate or a physical phase. No five-route no-go PASS is asserted.
++
++The supplied model and proof are redeclared here; other campaign mentions are context.
++
++## Complete argument
++
+ # Short physical time: convex bridge fluctuations and the endpoint action
+ 
+ Working derivation, 2026-09-16. This treats the actual supplied compact
+@@ -250,8 +283,13 @@
+ 
+ ## Review and proposal status
+ 
+-The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+-[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+-proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
++The [claim-status contract](work_history/review_loop/pr8164/README.md) and
++[premise inventory](work_history/review_loop/pr8164/README.md) apply to this author
++proposal. The [negative-claim checklist](work_history/review_loop/pr8164/README.md)
+ records the scoped comparison restrictions and untested alternatives.
+ Independent review, formal registration and retained landing are pending.
++
++
++## Canonical evidence boundary
++
++[Program](../scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py); [current stdout cache](../logs/runner-cache/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.txt). The canonical TOTAL counts 3 completed finite control families, not each loop iteration or an analytical theorem. All original assertion expressions and tolerances are retained. No canonical capture has run during preparation. Historical outputs, failed refinements and mutations remain in the [exact recovery archive](work_history/review_loop/pr8164/README.md).
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block01_anisotropic_conditional_and_poisson_check.py
++++ scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py
+@@ -4,8 +4,31 @@
+ The one-dimensional Poisson comparison omits the coupled quadratic gauge
+ killing. It is a diagnostic of the reference measure, not a phase proof.
+ """
++
++from pathlib import Path as _InputPath
++_REPO_ROOT = _InputPath(__file__).resolve().parents[1]
++AUDIT_INPUT_PATHS = ['docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++_INPUT_TEXT = {p: (_REPO_ROOT / p).read_text() for p in AUDIT_INPUT_PATHS}
++assert 'exp[-(1/2) sum_(dual plaquettes p) w_p (d alpha)_p²],' in _INPUT_TEXT['docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++def _emit_json(text):
++    import json as _json
++    payload = _json.loads(text)
++    families = ['weighted_gaussian_check', 'integer_temporal_blocking']
++    assert all(k in payload for k in families)
++    payload["canonical_completed_families"] = families
++    payload["canonical_total"] = len(families)
++    output = _REPO_ROOT / 'logs/runner-cache/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.json'
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(_json.dumps(payload, indent=2, allow_nan=False)+"\n")
++    print(_json.dumps(payload, indent=2, allow_nan=False))
++    print("TOTAL: PASS="+str(len(families))+" FAIL=0")
++    print('per_element: conditional precision and half-factor')
++    print('per_site: finite4D curl complex')
++    print('per_mode: finite512-mode convolution and cutoffs')
++    print('per_block: Gaussian quadrature and Skellam arithmetic')
++    print("lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation")
++
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=[]
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+@@ -73,6 +96,6 @@
+ 
+ def run():
+     start=time.time();gaussian=weighted_curl();blocking=integer_blocking()
+-    print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'weighted_gaussian_check':gaussian,'integer_temporal_blocking':blocking,'seconds':time.time()-start},indent=2))
++    _emit_json(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'weighted_gaussian_check':gaussian,'integer_temporal_blocking':blocking,'seconds':time.time()-start},indent=2))
+ 
+ if __name__=='__main__':run()
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block02_coupled_jump_and_response_check.py
++++ scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py
+@@ -4,8 +4,32 @@
+ No finite truncation checks the volume-uniform susceptibility target. The
+ positive finite matrices here challenge exact identities in the written proof.
+ """
++
++from pathlib import Path as _InputPath
++_REPO_ROOT = _InputPath(__file__).resolve().parents[1]
++AUDIT_INPUT_PATHS = ['docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++_INPUT_TEXT = {p: (_REPO_ROOT / p).read_text() for p in AUDIT_INPUT_PATHS}
++assert 'H=(g²/2)||E||²+(1/g²)sum_p[1-(S_(c_p)+S_(-c_p))/2], g>0.' in _INPUT_TEXT['docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++assert 'weighted_gaussian_damping_and_integer_time_blocking_bounded_theorem_note_2026-09-16' in _INPUT_TEXT['docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++def _emit_json(text):
++    import json as _json
++    payload = _json.loads(text)
++    families = ['transfer', 'electric_response', 'ground_tail']
++    assert all(k in payload for k in families)
++    payload["canonical_completed_families"] = families
++    payload["canonical_total"] = len(families)
++    output = _REPO_ROOT / 'logs/runner-cache/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.json'
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(_json.dumps(payload, indent=2, allow_nan=False)+"\n")
++    print(_json.dumps(payload, indent=2, allow_nan=False))
++    print("TOTAL: PASS="+str(len(families))+" FAIL=0")
++    print('per_element: electric offset and commutator')
++    print('per_site: two adjacent square cycles')
++    print('per_mode: finite625-state cutoff spectra and inverse solve')
++    print('per_block: 65-state transfer and factorial recurrence')
++    print("lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation")
++
+ AUDIT_TIMEOUT_SEC = 180
+-AUDIT_INPUT_FILES = []
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+@@ -144,6 +168,6 @@
+ 
+ def run():
+     start=time.time();transfer=transfer_checks();response=response_checks();tail=factorial_tail_check()
+-    print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'transfer':transfer,'electric_response':response,'ground_tail':tail,'seconds':time.time()-start},indent=2))
++    _emit_json(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'transfer':transfer,'electric_response':response,'ground_tail':tail,'seconds':time.time()-start},indent=2))
+ 
+ if __name__=='__main__':run()
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.py
++++ scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py
+@@ -5,8 +5,32 @@
+ Gram matrices, and cube cochains are computed by different constructions.
+ No growing-volume response estimate is asserted.
+ """
++
++from pathlib import Path as _InputPath
++_REPO_ROOT = _InputPath(__file__).resolve().parents[1]
++AUDIT_INPUT_PATHS = ['docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py', 'docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++_INPUT_TEXT = {p: (_REPO_ROOT / p).read_text() for p in AUDIT_INPUT_PATHS}
++assert '<Psi u,(H_f(t)-E0)Psi u>' in _INPUT_TEXT['docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++assert 'finite_box_electric_offset_response_and_tail_bounds_bounded_theorem_note_2026-09-16' in _INPUT_TEXT['docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++def _emit_json(text):
++    import json as _json
++    payload = _json.loads(text)
++    families = ['one_plaquette', 'two_square', 'cube']
++    assert all(k in payload for k in families)
++    payload["canonical_completed_families"] = families
++    payload["canonical_total"] = len(families)
++    output = _REPO_ROOT / 'logs/runner-cache/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.json'
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(_json.dumps(payload, indent=2, allow_nan=False)+"\n")
++    print(_json.dumps(payload, indent=2, allow_nan=False))
++    print("TOTAL: PASS="+str(len(families))+" FAIL=0")
++    print('per_element: phase/Gram normalization')
++    print('per_site: one plaquette,two squares and one cube')
++    print('per_mode: finite character radii and harmonic grids')
++    print('per_block: shared response helper; no independent implementation claim')
++    print("lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation")
++
+ AUDIT_TIMEOUT_SEC = 180
+-AUDIT_INPUT_FILES = ["block02_coupled_jump_and_response_check.py"]
+ import hashlib, importlib.util, itertools, json, math, time
+ from pathlib import Path
+ import numpy as np
+@@ -15,8 +39,8 @@
+ from scipy.sparse.linalg import LinearOperator, cg, eigsh
+ 
+ HERE = Path(__file__).resolve().parent
+-PARENT = HERE / AUDIT_INPUT_FILES[0]
+-assert hashlib.sha256(PARENT.read_bytes()).hexdigest() == "5981a5204073001efa670d996adfb45be698275e5a6ae8914ba88755e70f280b"
++PARENT = _REPO_ROOT / 'scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py'
++assert hashlib.sha256(PARENT.read_bytes()).hexdigest() == "3f87037c9d628e39c04e6b4e532a70df3c09c3b24d940d74880623a12702ca86"
+ spec = importlib.util.spec_from_file_location("block02", PARENT)
+ block02 = importlib.util.module_from_spec(spec)
+ spec.loader.exec_module(block02)
+@@ -183,7 +207,7 @@
+     result['source_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+     result['parent_sha256']=hashlib.sha256(PARENT.read_bytes()).hexdigest()
+     result['seconds']=time.time()-start
+-    print(json.dumps(result,indent=2))
++    _emit_json(json.dumps(result,indent=2))
+ 
+ 
+ if __name__=='__main__':run()
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block04_local_heat_and_orthogonality_check.py
++++ scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py
+@@ -5,8 +5,33 @@
+ structure, not the continuum quantum gauge phase. Cube Fourier orthogonality
+ is checked by character arithmetic and exact finite Haar sums.
+ """
++
++from pathlib import Path as _InputPath
++_REPO_ROOT = _InputPath(__file__).resolve().parents[1]
++AUDIT_INPUT_PATHS = ['docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++_INPUT_TEXT = {p: (_REPO_ROOT / p).read_text() for p in AUDIT_INPUT_PATHS}
++assert 'H=-(g^2/2)sum_e partial_e^2' in _INPUT_TEXT['docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++assert 'finite_box_electric_offset_response_and_tail_bounds_bounded_theorem_note_2026-09-16' in _INPUT_TEXT['docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++assert 'weighted_phase_corrector_and_magnetic_gram_certificates_bounded_theorem_note_2026-09-16' in _INPUT_TEXT['docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++def _emit_json(text):
++    import json as _json
++    payload = _json.loads(text)
++    families = ['heat_comparison', 'geometry', 'circle_bounds', 'principal_cube_event']
++    assert all(k in payload for k in families)
++    payload["canonical_completed_families"] = families
++    payload["canonical_total"] = len(families)
++    output = _REPO_ROOT / 'logs/runner-cache/local_rotor_density_and_finite_template_bounds_check_2026_09_16.json'
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(_json.dumps(payload, indent=2, allow_nan=False)+"\n")
++    print(_json.dumps(payload, indent=2, allow_nan=False))
++    print("TOTAL: PASS="+str(len(families))+" FAIL=0")
++    print('per_element: heat kernel and character identities')
++    print('per_site: finite cubes and4096 cube corners')
++    print('per_mode: finite Haar-character arithmetic and wrapped images')
++    print('per_block: 81-state two-angle kernel')
++    print("lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation")
++
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=[]
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+@@ -158,7 +183,7 @@
+        'circle_bounds':circle_kernel_bounds(),'principal_cube_event':principal_cube_event(),
+        'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+     d['seconds']=time.time()-start
+-    print(json.dumps(d,indent=2))
++    _emit_json(json.dumps(d,indent=2))
+ 
+ 
+ if __name__=='__main__':run()
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block05_quantum_comparison_check.py
++++ scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py
+@@ -1,5 +1,29 @@
+ #!/usr/bin/env python3
+ """Finite checks of the compact doubled-ground argument, not a phase computation."""
++
++from pathlib import Path as _InputPath
++_REPO_ROOT = _InputPath(__file__).resolve().parents[1]
++AUDIT_INPUT_PATHS = ['docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++_INPUT_TEXT = {p: (_REPO_ROOT / p).read_text() for p in AUDIT_INPUT_PATHS}
++assert 'H=(1/2) E* U E - sum_b J_b cos(b dot theta),' in _INPUT_TEXT['docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++def _emit_json(text):
++    import json as _json
++    payload = _json.loads(text)
++    families = ['connected', 'covering', 'negative_coupling_control']
++    assert all(k in payload for k in families)
++    payload["canonical_completed_families"] = families
++    payload["canonical_total"] = len(families)
++    output = _REPO_ROOT / 'logs/runner-cache/compact_rotor_ground_correlation_comparison_check_2026_09_16.json'
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(_json.dumps(payload, indent=2, allow_nan=False)+"\n")
++    print(_json.dumps(payload, indent=2, allow_nan=False))
++    print("TOTAL: PASS="+str(len(families))+" FAIL=0")
++    print('per_element: cosine and electric-square derivatives')
++    print('per_site: two-angle model; not growing boxes')
++    print('per_mode: finite225-state Galerkin spectra')
++    print('per_block: 49-mode lifted kernel and parity trace')
++    print("lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation")
++
+ AUDIT_TIMEOUT_SEC = 180
+ from pathlib import Path
+ import hashlib
+@@ -142,7 +166,7 @@
+                   negative_coupling_control=negative_coupling_control(),
+                   source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                   seconds=time.time()-start)
+-    print(json.dumps(report, indent=2))
++    _emit_json(json.dumps(report, indent=2))
+ 
+ if __name__ == '__main__':
+     main()
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block06_raw_curl_counterexample.py
++++ scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py
+@@ -5,6 +5,30 @@
+ lower bound pi > 3 certifies the violated inequality without floating error.
+ This does not evaluate any theorem beyond the displayed comparison.
+ """
++
++from pathlib import Path as _InputPath
++_REPO_ROOT = _InputPath(__file__).resolve().parents[1]
++AUDIT_INPUT_PATHS = ['docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++_INPUT_TEXT = {p: (_REPO_ROOT / p).read_text() for p in AUDIT_INPUT_PATHS}
++assert 'H_m(theta)=sum_p[1-cos(C theta)_p]+m sum_e[1-cos(theta_e)],' in _INPUT_TEXT['docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++def _emit_json(text):
++    import json as _json
++    payload = _json.loads(text)
++    families = ['exact_failure_certificate']
++    assert all(k in payload for k in families)
++    payload["canonical_completed_families"] = families
++    payload["canonical_total"] = len(families)
++    output = _REPO_ROOT / 'logs/runner-cache/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.json'
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(_json.dumps(payload, indent=2, allow_nan=False)+"\n")
++    print(_json.dumps(payload, indent=2, allow_nan=False))
++    print("TOTAL: PASS="+str(len(families))+" FAIL=0")
++    print('per_element: rational-angle action inequality')
++    print('per_site: nine-vertex free square')
++    print('per_mode: not executed: no spectral/Fourier modes')
++    print('per_block: one exact finite counterexample only')
++    print("lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation")
++
+ AUDIT_TIMEOUT_SEC = 180
+ from fractions import Fraction as F
+ from hashlib import sha256
+@@ -71,7 +95,7 @@
+         "scope": "counterexample to the displayed raw-curl comparison only",
+         "status": "PASS"
+     }
+-    print(json.dumps(result, indent=2))
++    _emit_json(json.dumps(result, indent=2))
+ 
+ 
+ if __name__ == "__main__":
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.py
++++ scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py
+@@ -5,6 +5,30 @@
+ challenge the partition tilt and dilution comparison on an actual incidence
+ matrix, using a finite two-point mixing law, not sampled Hartman-Watson tails.
+ """
++
++from pathlib import Path as _InputPath
++_REPO_ROOT = _InputPath(__file__).resolve().parents[1]
++AUDIT_INPUT_PATHS = ['docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++_INPUT_TEXT = {p: (_REPO_ROOT / p).read_text() for p in AUDIT_INPUT_PATHS}
++assert 'W_a(theta)=exp(a cos theta)/I_0(a), a>0,' in _INPUT_TEXT['docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++def _emit_json(text):
++    import json as _json
++    payload = _json.loads(text)
++    families = ['radial_heat', 'cube_mixture', 'circle_convolution', 'infinite_mean_cusp']
++    assert all(k in payload for k in families)
++    payload["canonical_completed_families"] = families
++    payload["canonical_total"] = len(families)
++    output = _REPO_ROOT / 'logs/runner-cache/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.json'
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(_json.dumps(payload, indent=2, allow_nan=False)+"\n")
++    print(_json.dumps(payload, indent=2, allow_nan=False))
++    print("TOTAL: PASS="+str(len(families))+" FAIL=0")
++    print('per_element: radial transform and mixture normalization')
++    print('per_site: one cube with64 two-point masks')
++    print('per_mode: selected radial modes and4096 circle FFT')
++    print('per_block: finite mixture,convolution and cusp controls')
++    print("lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation")
++
+ AUDIT_TIMEOUT_SEC = 180
+ from hashlib import sha256
+ from itertools import product, combinations
+@@ -201,7 +225,7 @@
+     result["elapsed_seconds"] = time.monotonic() - start
+     result["scope"] = "finite heat-kernel, character, and two-point-mixing challenges; no phase certification"
+     result["status"] = "PASS"
+-    print(json.dumps(result, indent=2))
++    _emit_json(json.dumps(result, indent=2))
+ 
+ 
+ if __name__ == "__main__":
+--- .claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.py
++++ scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py
+@@ -5,6 +5,30 @@
+ uses its own Dirichlet eigenvalue, not the continuum pi^2/T^2 constant.
+ No result here establishes a phase or a uniform time-quadrature error.
+ """
++
++from pathlib import Path as _InputPath
++_REPO_ROOT = _InputPath(__file__).resolve().parents[1]
++AUDIT_INPUT_PATHS = ['docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++_INPUT_TEXT = {p: (_REPO_ROOT / p).read_text() for p in AUDIT_INPUT_PATHS}
++assert 'q=2(d-1), Lambda=4q=8(d-1), ||C||_2^2<=Lambda,' in _INPUT_TEXT['docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++def _emit_json(text):
++    import json as _json
++    payload = _json.loads(text)
++    families = ['cosine_bridge', 'endpoint_nonconvex_control', 'time_limit']
++    assert all(k in payload for k in families)
++    payload["canonical_completed_families"] = families
++    payload["canonical_total"] = len(families)
++    output = _REPO_ROOT / 'logs/runner-cache/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.json'
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(_json.dumps(payload, indent=2, allow_nan=False)+"\n")
++    print(_json.dumps(payload, indent=2, allow_nan=False))
++    print("TOTAL: PASS="+str(len(families))+" FAIL=0")
++    print('per_element: endpoint derivatives and covariance sign')
++    print('per_site: one/two plaquette coordinates')
++    print('per_mode: finite time slices and Gaussian quadrature')
++    print('per_block: 16^4/20^4 refinements and compact kernel')
++    print("lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation")
++
+ AUDIT_TIMEOUT_SEC = 180
+ from hashlib import sha256
+ from pathlib import Path
+@@ -182,7 +206,7 @@
+     result["elapsed_seconds"] = time.monotonic() - start
+     result["status"] = "PASS"
+     result["scope"] = "deterministic finite bridge and one-plaquette kernel checks; no phase proof"
+-    print(json.dumps(result, indent=2))
++    _emit_json(json.dumps(result, indent=2))
+ 
+ 
+ if __name__ == "__main__":

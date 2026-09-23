@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8030",
+  "tree": "43f78ff9a0630c59440d7e7c345639a7b2001aa4",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_weak_window_quantitative_bounds_and_haar_contact_fdd_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+      "helpers": [
+        "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8030/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8765,
+      "misses": 4480
+    },
+    "packet_imports": {
+      "hits": 8755,
+      "misses": 4478
+    },
+    "declared_inputs": {
+      "hits": 8792,
+      "misses": 4618
+    }
+  },
+  "record_sha256": "606e0afc34e133a9fdab353754228b0c7c455c17b59064c089b97ef5ee04f2fa",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

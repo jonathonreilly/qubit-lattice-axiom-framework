@@ -1,0 +1,147 @@
+{
+  "status": "UNTRACKED_AUTHOR_PREPARED_V3_ACTUAL_API_FIX_PENDING_ORIGINAL_REVIEWER_CONFIRMATION",
+  "base": "6b9c6183f24c01651d5a98394061bd88a52aef63",
+  "worktree": "/private/tmp/review-drain-20260915/review-meta-slot",
+  "owner": "PR8163-author",
+  "notes": [
+    "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+  ],
+  "runners": [
+    "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+    "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+    "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+    "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+    "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+    "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py"
+  ],
+  "requested_explicit_packet_helpers": {
+    "temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16": [
+      "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+      "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+      "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py"
+    ]
+  },
+  "archive_manifest": {
+    "path": "docs/work_history/repo/review_feedback/pr8163-evidence/archive-manifest.json",
+    "sha256": "a29f6706fe493341a0c5d5c0bc638deb8840d6afea6b886ce4769d7d62baef31"
+  },
+  "original_review_sha256": "1677efaacb57f8d4c7df3c51b7fa0cee990cf31c9f89d678d542d7324258bfbe",
+  "evidence_files": [
+    "/private/tmp/review-drain-20260915/drain8163-author-correction.diff",
+    "/private/tmp/review-drain-20260915/drain8163-author-preservation.json",
+    "/private/tmp/review-drain-20260915/drain8163-author-full-mapping.json",
+    "/private/tmp/review-drain-20260915/drain8163-author-input-resource-plans.json"
+  ],
+  "remaining": [
+    "Original reviewer affected confirmation for actual API metadata correction",
+    "Only after confirmation create future builder v2 binding prepared-v3 and new freeze",
+    "Root current-base advancement, registrations, staging and cheap/cold checks",
+    "Sole limited captures and final evidence confirmation"
+  ],
+  "source_bindings": [
+    {
+      "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+    },
+    {
+      "path": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8"
+    },
+    {
+      "path": "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7"
+    },
+    {
+      "path": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+      "sha256": "d557a0f7568e5e272e3afe01431a209cdc436714a7cc3cb22c8c979208dc5cc8"
+    },
+    {
+      "path": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+      "sha256": "52c730b124f8c4a24179cdc8952962e73d45a1676bb206475b8f8a765a473e7e"
+    },
+    {
+      "path": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+      "sha256": "5679b000903a07cd478622fd42d58430d7f7bfbb40f7eb72012a97cfce0215ad"
+    },
+    {
+      "path": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+      "sha256": "f04b76f92f325e302e99e59648b1ad4fb4bed535922580bc65eb6746ca0d2749"
+    },
+    {
+      "path": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+      "sha256": "9f4ae7979e723a6be0535b2e320a1204806265cfe03b8bba05091f4aec724d2b"
+    },
+    {
+      "path": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+      "sha256": "fc22a65bb2eb260cc273f786288f956ce512106739907b30946df7f534471ede"
+    }
+  ],
+  "author_checks": {
+    "all_six_compile_in_memory": true,
+    "tracked_and_index_unchanged": true,
+    "formula_lines_identical": true,
+    "original_function_ASTs_identical_except_report_wrapper": true,
+    "all_165_recovered_raw_bytes_modes_and_git_blobs_match_original_review": true,
+    "primary_runs": 0,
+    "helper_or_pipeline_runs": 0,
+    "memory_proposal_rationale": "Largest dense owner matrices reach 512 squared complex entries; Hessian derivative stacks on 96-dimensional matrices and 1296-vector tensor contractions are finite. 768 MiB process-tree proposal leaves numerical-library headroom and is not a measured historical peak. External enforcement belongs to coordinator."
+  },
+  "prior_prepared": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-author-prepared-v2.json",
+    "sha256": "c256784ae1b7de82957f535d1e769b75076c29a282a6edd491d9b2f80cd33163"
+  },
+  "finding_reference": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-early-affected-review-v1.json",
+    "sha256": "1a51fc949008b8ebdb345e18bd74f1be4ed6e97e695960ba8e2c1d98f5d934b3"
+  },
+  "correction": {
+    "scope": "Only six runner declaration/actual guard iteration names changed to AUDIT_INPUT_PATHS. Order, pins, notes, proofs, arithmetic, fixtures and archive unchanged.",
+    "changed_paths": [
+      "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+      "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+      "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+      "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+      "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+      "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py"
+    ],
+    "original_reviewer_confirmation": "pending"
+  },
+  "v2_evidence": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8163-author-v1-to-v2.diff",
+      "sha256": "d40ebd616f403dad63fbcc40b89214a6be2d361d2309b47d04250c09ebd3d906"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8163-author-input-resource-plans-v2.json",
+      "sha256": "1d1ad5a288b3c8d5052055aded72be5bed105439eb1e573f7c8696099e7933e3"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8163-author-full-mapping-v2.json",
+      "sha256": "9e645be203eabdf4430337a579852da5e015f381bef9a2ea177fe3b560bcc85e"
+    }
+  ],
+  "v3_evidence": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8163-v2-input-api-failure.json",
+      "sha256": "0ea227170b389116eb84956b65d3a8c34f0afed170dd8d34a6988d785ee0acc4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8163-author-v2-to-v3.diff",
+      "sha256": "561d8f6bcebc0f0b49b93ec1677b86cabf01d6fedbdcb8decf4d8dda3a103c22"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8163-v3-input-api-verification.json",
+      "sha256": "536c703dc6c9a474ca2f9112f24ef9a502fd25fb845baa812ca36b4693c1591d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8163-author-input-resource-plans-v3.json",
+      "sha256": "4b66ec6a55a1e1d38f3b06ad9bde81d5c01476ab2a3b03b35926cc4e4bff5681"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8163-author-full-mapping-v3.json",
+      "sha256": "e6497da89e815d43c9c43b8f33870d91ac139e433c45e9d654b082bcdfb20e95"
+    }
+  ]
+}

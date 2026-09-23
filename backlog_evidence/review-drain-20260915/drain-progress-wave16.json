@@ -1,0 +1,28 @@
+{
+  "scope": "All open PRs including drafts and new arrivals.",
+  "snapshot": "drain-all-prs-wave16.json",
+  "snapshot_sha256": "ee24715a80ae79e681f84030d13457fdb509ac4de78693169ef642f821c94c8c",
+  "open": 107,
+  "drafts": 20,
+  "new_arrivals_since_wave15": [],
+  "closed_since_expanded_scope": 37,
+  "main": "16574d8f023c06a3ef86fe6d8993a257e0936c81",
+  "landed_closed_latest": [
+    8160
+  ],
+  "final_evidence_review": [
+    8030
+  ],
+  "source_preparation": [
+    8164
+  ],
+  "confirmed_preparation_pending_serialized_maps_and_cold": [
+    8159,
+    8163
+  ],
+  "partial_salvage_branch_preservation_required": [
+    8030,
+    8159
+  ],
+  "active_review_default": "Astra low; completed Sol pilot does not change default."
+}

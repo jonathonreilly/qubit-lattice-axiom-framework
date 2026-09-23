@@ -1,0 +1,47 @@
+{
+  "status": "SOURCE_DECLARATION_NOT_RECOGNIZED_BY_ACTUAL_CACHE_API",
+  "api": {
+    "path": "scripts/runner_cache.py",
+    "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "source_commit": "6b9c6183f24c01651d5a98394061bd88a52aef63"
+  },
+  "results": [
+    {
+      "runner": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+      "source_sha256": "d839a3cca0b369abff73b0e8c2e6187c8b33b0bf858faf4ed501233a4b1d1918",
+      "declared_input_paths": null,
+      "declared_input_fingerprint": null
+    },
+    {
+      "runner": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+      "source_sha256": "6daede33d838a88bf0788eadac70c534f8d43c8ee85662c64c169431f984371c",
+      "declared_input_paths": null,
+      "declared_input_fingerprint": null
+    },
+    {
+      "runner": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+      "source_sha256": "fc4d6fcabdd063c99587253a8e24180ad5f7124869534117705bf05bf3e2509f",
+      "declared_input_paths": null,
+      "declared_input_fingerprint": null
+    },
+    {
+      "runner": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+      "source_sha256": "877c7c1a5a2e69852b6313274ba2d70554165f04caca4f0787b34b443f63c84b",
+      "declared_input_paths": null,
+      "declared_input_fingerprint": null
+    },
+    {
+      "runner": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+      "source_sha256": "4a273a3cf78d62cf9be7129af0386baec20d3259b2002371da87deaebfa68e88",
+      "declared_input_paths": null,
+      "declared_input_fingerprint": null
+    },
+    {
+      "runner": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+      "source_sha256": "f6eaca43f96699d74d62893013c413e63570c28a3730d08523d10a07ca3d1216",
+      "declared_input_paths": null,
+      "declared_input_fingerprint": null
+    }
+  ],
+  "execution": "No primary; metadata API parses only"
+}

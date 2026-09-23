@@ -1,0 +1,89 @@
+[
+  {
+    "runner": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+    "scientific_function_ASTs_unchanged": 3,
+    "original_assertion_expressions": 11,
+    "families": [
+      "weighted_gaussian_check",
+      "integer_temporal_blocking"
+    ],
+    "no_execution": true
+  },
+  {
+    "runner": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+    "scientific_function_ASTs_unchanged": 6,
+    "original_assertion_expressions": 21,
+    "families": [
+      "transfer",
+      "electric_response",
+      "ground_tail"
+    ],
+    "no_execution": true
+  },
+  {
+    "runner": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+    "scientific_function_ASTs_unchanged": 5,
+    "original_assertion_expressions": 20,
+    "families": [
+      "one_plaquette",
+      "two_square",
+      "cube"
+    ],
+    "no_execution": true
+  },
+  {
+    "runner": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+    "scientific_function_ASTs_unchanged": 6,
+    "original_assertion_expressions": 16,
+    "families": [
+      "heat_comparison",
+      "geometry",
+      "circle_bounds",
+      "principal_cube_event"
+    ],
+    "no_execution": true
+  },
+  {
+    "runner": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+    "scientific_function_ASTs_unchanged": 5,
+    "original_assertion_expressions": 11,
+    "families": [
+      "connected",
+      "covering",
+      "negative_coupling_control"
+    ],
+    "no_execution": true
+  },
+  {
+    "runner": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+    "scientific_function_ASTs_unchanged": 1,
+    "original_assertion_expressions": 9,
+    "families": [
+      "exact_failure_certificate"
+    ],
+    "no_execution": true
+  },
+  {
+    "runner": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+    "scientific_function_ASTs_unchanged": 8,
+    "original_assertion_expressions": 16,
+    "families": [
+      "radial_heat",
+      "cube_mixture",
+      "circle_convolution",
+      "infinite_mean_cusp"
+    ],
+    "no_execution": true
+  },
+  {
+    "runner": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+    "scientific_function_ASTs_unchanged": 6,
+    "original_assertion_expressions": 15,
+    "families": [
+      "cosine_bridge",
+      "endpoint_nonconvex_control",
+      "time_limit"
+    ],
+    "no_execution": true
+  }
+]

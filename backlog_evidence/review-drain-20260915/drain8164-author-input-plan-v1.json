@@ -1,0 +1,74 @@
+[
+  {
+    "runner": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "helpers": [],
+    "note_pin": "exp[-(1/2) sum_(dual plaquettes p) w_p (d alpha)_p\u00b2],"
+  },
+  {
+    "runner": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "helpers": [],
+    "note_pin": "H=(g\u00b2/2)||E||\u00b2+(1/g\u00b2)sum_p[1-(S_(c_p)+S_(-c_p))/2], g>0."
+  },
+  {
+    "runner": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+      "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "helpers": [
+      "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py"
+    ],
+    "note_pin": "<Psi u,(H_f(t)-E0)Psi u>"
+  },
+  {
+    "runner": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "helpers": [],
+    "note_pin": "H=-(g^2/2)sum_e partial_e^2"
+  },
+  {
+    "runner": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "helpers": [],
+    "note_pin": "H=(1/2) E* U E - sum_b J_b cos(b dot theta),"
+  },
+  {
+    "runner": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "helpers": [],
+    "note_pin": "H_m(theta)=sum_p[1-cos(C theta)_p]+m sum_e[1-cos(theta_e)],"
+  },
+  {
+    "runner": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "helpers": [],
+    "note_pin": "W_a(theta)=exp(a cos theta)/I_0(a), a>0,"
+  },
+  {
+    "runner": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "helpers": [],
+    "note_pin": "q=2(d-1), Lambda=4q=8(d-1), ||C||_2^2<=Lambda,"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "runner": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+    "timeout_seconds": 180,
+    "process_tree_rss_cap_bytes": 402653184,
+    "basis": "216-link4D curl precision (~0.36MiB square),512 Fourier modes and13 jumps; finite quadrature",
+    "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+    "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+  },
+  {
+    "runner": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+    "timeout_seconds": 180,
+    "process_tree_rss_cap_bytes": 402653184,
+    "basis": "65x65 transfer matrices;625-state sparse eigsh k8 and conjugate gradient;90-digit recurrence160",
+    "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+    "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+  },
+  {
+    "runner": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+    "timeout_seconds": 180,
+    "process_tree_rss_cap_bytes": 402653184,
+    "basis": "73x8192 harmonic grid (~4.6MiB),625-state sparse solve and at most24-character Gram; shared02 definitions only",
+    "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+    "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+  },
+  {
+    "runner": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+    "timeout_seconds": 180,
+    "process_tree_rss_cap_bytes": 402653184,
+    "basis": "81x81 heat matrices,144-plaquette geometry,4096x12 cube corners (~0.38MiB)",
+    "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+    "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+  },
+  {
+    "runner": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+    "timeout_seconds": 180,
+    "process_tree_rss_cap_bytes": 402653184,
+    "basis": "225x225 full eigensystems retained for finite differences;49x49 lifted kernel",
+    "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+    "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+  },
+  {
+    "runner": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+    "timeout_seconds": 180,
+    "process_tree_rss_cap_bytes": 402653184,
+    "basis": "Exact Fraction arithmetic on12 edges and4 faces",
+    "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+    "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+  },
+  {
+    "runner": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+    "timeout_seconds": 180,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Radial size ceil(8*1024.5)=8196; stebz selects eigenvalues in[-100a,0],vectors8196\u00d7selected modes. Even full real eigenvector array~512MiB;1GiB operational ceiling includes LAPACK/library workspace. Selected count observed only during eventual capture.",
+    "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+    "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+  },
+  {
+    "runner": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+    "timeout_seconds": 180,
+    "process_tree_rss_cap_bytes": 402653184,
+    "basis": "160000 Gaussian points\u00d78 noise entries~9.8MiB; order16 and20 quadratures coexist, several field/trig/gradient arrays (~10MiB each); sequential evaluates, no160000-square matrix.384MiB includes temporary arrays and libraries.",
+    "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+    "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+  }
+]

@@ -1,0 +1,1061 @@
+{
+  "schema_version": 1,
+  "pr": 8164,
+  "review_kind": "original-session early affected-source review",
+  "created_utc": "2026-09-23T01:07:12.776092+00:00",
+  "base": "16574d8f023c06a3ef86fe6d8993a257e0936c81",
+  "verdict": "ELIGIBLE_FOR_STAGED_COLD_REVIEW",
+  "material_findings": [],
+  "full_scientific_salvage": true,
+  "landing_or_capture_approval": false,
+  "scope": "Eight complete canonical notes, eight programs, 178 exact original archives plus manifest/README; 196 untracked additions. No staged maps or capture evidence yet.",
+  "proof_review": "All original proof bodies are exactly preserved except three historical governance link destinations. Complete equations, hypotheses, boundaries and external citations retain the original-session full proof review. Added scope text correctly limits supplied models, phase conclusions and no-go status. No new mathematical premise or cross-model dependency introduced.",
+  "program_review": "All scientific functions/classes match original ASTs. Original run/main bodies change only JSON output sink. New sink writes finite JSON to logs/runner-cache, emits family count only after all original checks return, and prints truthful N5 scope. The declared families are not individual assertions or independent implementations.",
+  "family_totals": [
+    2,
+    3,
+    3,
+    4,
+    3,
+    1,
+    4,
+    3
+  ],
+  "input_review": "Actual file reads match literal AUDIT_INPUT_PATHS. Own proof formula pins resolve. Helper03 imports02 with exact canonical source SHA; its transitive runtime note01 and note02 reads are declared by03. Note04 reads its own note and direct proof dependencies02/03; no runtime helper import occurs. Mathematical chain02\u219201 and03\u219202 remains in note metadata. Current runner_cache.py literal list/timeout API was read.",
+  "dependency_map": {
+    "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md": [],
+    "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": [
+      "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": [
+      "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": [
+      "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md": [],
+    "docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md": [],
+    "docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": [],
+    "docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": []
+  },
+  "resource_assessment": "Eligible operational plan for later reviewed sequential capture: 180 seconds each; 384 MiB process-tree RSS except07 at1 GiB. These caps are not measured peaks or guaranteed success.07 selects modes of an8196-row tridiagonal problem, with full real eigenvector storage about512 MiB; selected solve normally smaller, workspace remains a capture concern.08 uses160000 four-dimensional Gaussian nodes and arrays linear in node count, no160000-square matrix;384 MiB is a plausible operational ceiling. Preserve any cap failure and reassess without reducing fixtures/tolerances.",
+  "resources": [
+    {
+      "runner": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "216-link4D curl precision (~0.36MiB square),512 Fourier modes and13 jumps; finite quadrature",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+    },
+    {
+      "runner": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "65x65 transfer matrices;625-state sparse eigsh k8 and conjugate gradient;90-digit recurrence160",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+    },
+    {
+      "runner": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "73x8192 harmonic grid (~4.6MiB),625-state sparse solve and at most24-character Gram; shared02 definitions only",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+    },
+    {
+      "runner": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "81x81 heat matrices,144-plaquette geometry,4096x12 cube corners (~0.38MiB)",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+    },
+    {
+      "runner": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "225x225 full eigensystems retained for finite differences;49x49 lifted kernel",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+    },
+    {
+      "runner": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "Exact Fraction arithmetic on12 edges and4 faces",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+    },
+    {
+      "runner": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 1073741824,
+      "basis": "Radial size ceil(8*1024.5)=8196; stebz selects eigenvalues in[-100a,0],vectors8196\u00d7selected modes. Even full real eigenvector array~512MiB;1GiB operational ceiling includes LAPACK/library workspace. Selected count observed only during eventual capture.",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+    },
+    {
+      "runner": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "160000 Gaussian points\u00d78 noise entries~9.8MiB; order16 and20 quadratures coexist, several field/trig/gradient arrays (~10MiB each); sequential evaluates, no160000-square matrix.384MiB includes temporary arrays and libraries.",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction"
+    }
+  ],
+  "static_checks": {
+    "prepared_sha256": "2ed40d6f9d42e7053822e4ca62d63041518d145417f414345f3e98275130a11a",
+    "files_verified": 196,
+    "exact_original_archives_verified": 178,
+    "proofs": [
+      {
+        "path": "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "complete_original_body_preserved": true
+      },
+      {
+        "path": "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "complete_original_body_preserved": true
+      },
+      {
+        "path": "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "complete_original_body_preserved": true
+      },
+      {
+        "path": "docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "complete_original_body_preserved": true
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "complete_original_body_preserved": true
+      },
+      {
+        "path": "docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "complete_original_body_preserved": true
+      },
+      {
+        "path": "docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "complete_original_body_preserved": true
+      },
+      {
+        "path": "docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "complete_original_body_preserved": true
+      }
+    ],
+    "programs": [
+      {
+        "path": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+        "unchanged_scientific_functions_and_classes": 2,
+        "families": [
+          "weighted_gaussian_check",
+          "integer_temporal_blocking"
+        ],
+        "input_sha256": {
+          "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md": "a596b1cd114ccc478570983735b14b464f80462eb6b2b3b947b8e881ad37f01b"
+        }
+      },
+      {
+        "path": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+        "unchanged_scientific_functions_and_classes": 5,
+        "families": [
+          "transfer",
+          "electric_response",
+          "ground_tail"
+        ],
+        "input_sha256": {
+          "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "13702c3e77cc77a02a8e8c44a2adf3e589c47a1ab46d3e2b2a66ae36f42acd17",
+          "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md": "a596b1cd114ccc478570983735b14b464f80462eb6b2b3b947b8e881ad37f01b"
+        }
+      },
+      {
+        "path": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+        "unchanged_scientific_functions_and_classes": 4,
+        "families": [
+          "one_plaquette",
+          "two_square",
+          "cube"
+        ],
+        "input_sha256": {
+          "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": "fc81364d9e8e477ff837e7c09a46fc485b7d72fb61c237b83e294164eccea5de",
+          "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "13702c3e77cc77a02a8e8c44a2adf3e589c47a1ab46d3e2b2a66ae36f42acd17",
+          "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py": "3f87037c9d628e39c04e6b4e532a70df3c09c3b24d940d74880623a12702ca86",
+          "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md": "a596b1cd114ccc478570983735b14b464f80462eb6b2b3b947b8e881ad37f01b"
+        }
+      },
+      {
+        "path": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+        "unchanged_scientific_functions_and_classes": 5,
+        "families": [
+          "heat_comparison",
+          "geometry",
+          "circle_bounds",
+          "principal_cube_event"
+        ],
+        "input_sha256": {
+          "docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "0d48d612ea58396707177a83ed0b44a52e3194379d94f2f9749da9f442804c36",
+          "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "13702c3e77cc77a02a8e8c44a2adf3e589c47a1ab46d3e2b2a66ae36f42acd17",
+          "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": "fc81364d9e8e477ff837e7c09a46fc485b7d72fb61c237b83e294164eccea5de"
+        }
+      },
+      {
+        "path": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+        "unchanged_scientific_functions_and_classes": 4,
+        "families": [
+          "connected",
+          "covering",
+          "negative_coupling_control"
+        ],
+        "input_sha256": {
+          "docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md": "73b47654882e92bf4ff41435f884c86a2d09823fb65260b79ee972f1f0799a9d"
+        }
+      },
+      {
+        "path": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+        "unchanged_scientific_functions_and_classes": 0,
+        "families": [
+          "exact_failure_certificate"
+        ],
+        "input_sha256": {
+          "docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md": "8fd9b2b2be329ef58988a2882b93fdcc7d30c1d8b61030fbfbbd5d81c77d9e4d"
+        }
+      },
+      {
+        "path": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+        "unchanged_scientific_functions_and_classes": 7,
+        "families": [
+          "radial_heat",
+          "cube_mixture",
+          "circle_convolution",
+          "infinite_mean_cusp"
+        ],
+        "input_sha256": {
+          "docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "27ad064b1c5c5bef018512eefc40c4fe81f88b4b12dc0d6deea48b1289701cd4"
+        }
+      },
+      {
+        "path": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+        "unchanged_scientific_functions_and_classes": 5,
+        "families": [
+          "cosine_bridge",
+          "endpoint_nonconvex_control",
+          "time_limit"
+        ],
+        "input_sha256": {
+          "docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "04eda66101dd4cd09c5b15d1e356d0e36db3c69380c12c92e474b3ba54a5c783"
+        }
+      }
+    ],
+    "helper_pin_verified": true,
+    "source_executions": 0,
+    "tracked_or_staged_changes": false
+  },
+  "source_files": [
+    {
+      "path": "docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "73b47654882e92bf4ff41435f884c86a2d09823fb65260b79ee972f1f0799a9d"
+    },
+    {
+      "path": "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "13702c3e77cc77a02a8e8c44a2adf3e589c47a1ab46d3e2b2a66ae36f42acd17"
+    },
+    {
+      "path": "docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "0d48d612ea58396707177a83ed0b44a52e3194379d94f2f9749da9f442804c36"
+    },
+    {
+      "path": "docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "27ad064b1c5c5bef018512eefc40c4fe81f88b4b12dc0d6deea48b1289701cd4"
+    },
+    {
+      "path": "docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "8fd9b2b2be329ef58988a2882b93fdcc7d30c1d8b61030fbfbbd5d81c77d9e4d"
+    },
+    {
+      "path": "docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "04eda66101dd4cd09c5b15d1e356d0e36db3c69380c12c92e474b3ba54a5c783"
+    },
+    {
+      "path": "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "a596b1cd114ccc478570983735b14b464f80462eb6b2b3b947b8e881ad37f01b"
+    },
+    {
+      "path": "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "fc81364d9e8e477ff837e7c09a46fc485b7d72fb61c237b83e294164eccea5de"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/README.md",
+      "sha256": "8ab10c337d5f68a29180ce0ce59b41a0154c7444089eae290966421665a376d4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/manifest.json",
+      "sha256": "c9dc112b970ee17e70224dd86bbdf82c47af9fe01ae27901e4a2ce9e35684de3"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/000-APPROACH_REGISTRY.md.gz",
+      "sha256": "8b95c02ed3ac7f672eba75387b77381a9d176961b58d793662b7ce3796f8161e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/001-ARTIFACT_PLAN.md.gz",
+      "sha256": "f1435544467fcc30851b798c9ccee2104f1000f1affbbbf372a90243f8dd4242"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/002-ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "sha256": "205e3308da09b929e300debf8003aaee480b56befb5038c391b9e2af93604844"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/003-CLAIM_STATUS_CERTIFICATE.md.gz",
+      "sha256": "55c0f6c99165ef58f792c0876f99c8255e7ffef419a1ba2fb43fbe535a259b7b"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/004-GOAL.md.gz",
+      "sha256": "541564859c3bd3ea2396e0cf5bace14766415c49566b6fd6bc057837dc5617b6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/005-HANDOFF.md.gz",
+      "sha256": "1797315ee8237c213afe583f9d3eaa532689fb2658bd5eccff63a53aff59599a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/006-MANIFEST.sha256.gz",
+      "sha256": "95d7a17bc9b2cbd4e52a8f53a2b3d558fc9b59ab4f755afc9fe35de79bc23bc8"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/007-NO_GO_DISCIPLINE_CHECKLIST.md.gz",
+      "sha256": "079f00c7406ddd50660e96c1f436450e26b29ca69298775826c8c0c78a9278a2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/008-NO_GO_LEDGER.md.gz",
+      "sha256": "2d49cd749381430aae24969a6ba1ffdd5f559cb6eb26d26dd8059962b44faca5"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/009-OPPORTUNITY_QUEUE.md.gz",
+      "sha256": "2bf9a9ce4b46f1fd74abad9119c3f04ac0de9595934bcd7cf82fe7a10ae07681"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/010-READING_LEDGER.md.gz",
+      "sha256": "d91151291d53129958d0fe8e11583a7bbd5372f255f5e251e7ba8fdd6f617a2c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/011-README.md.gz",
+      "sha256": "5c2a6e91d82525e9c5e7eee866bbd3ac5578e91febb1658f2042e7b5f4a4922f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/012-REVIEW_HISTORY.md.gz",
+      "sha256": "5b030ef34d18701e9ce8ef78347b5a960e2705d423b5d1aab4c41738bb4d7d85"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/013-ROUTE_PORTFOLIO.md.gz",
+      "sha256": "7b906a08c238b62997a77dbdb2864b90f76feddfcc70ba29b2be54e40619a227"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/014-STATE.yaml.gz",
+      "sha256": "721f0f978f88dfafaed38c77f9dba0c7674764a4e681baf8f68c8e27ea831288"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/015-TRACE_GATE.md.gz",
+      "sha256": "1372b65be5d6adc0e3a8a47df99496be0be576d0481c861e09408b5815d33da0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/016-BLOCK01_ANISOTROPIC_POISSON_ATTEMPT1.stderr.txt.gz",
+      "sha256": "d46b53a451e400377b0b66405188ce0f6e75ccd6486ddb54521cc0be9f65f7b6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/017-BLOCK01_ANISOTROPIC_POISSON_ATTEMPT1.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/018-BLOCK01_ANISOTROPIC_POISSON_ATTEMPT2.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/019-BLOCK01_ANISOTROPIC_POISSON_ATTEMPT2.stdout.txt.gz",
+      "sha256": "b54aa9fdda9015825c669c0d6af983e07ae327b7131caf72f7475eb58e088b81"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/020-BLOCK01_VARIANCE_RESOLUTION_DIAGNOSTIC.json.gz",
+      "sha256": "aa8ae261696136bd2eec83350e634c1f3cbd3ef39d4c77d9a3ee5b43c4e0daf7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/021-BLOCK02_COUPLED_RESPONSE_ATTEMPT1.stderr.txt.gz",
+      "sha256": "7147002421e01cc9ea20a0097a3249f64d055b05c4128094f3e552a3b5845ff9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/022-BLOCK02_COUPLED_RESPONSE_ATTEMPT1.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/023-BLOCK02_COUPLED_RESPONSE_ATTEMPT2.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/024-BLOCK02_COUPLED_RESPONSE_ATTEMPT2.stdout.txt.gz",
+      "sha256": "28839017c9c592f102ab97673df6172d0ed779c84dc5d2d9c4ed03260b79d3d1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/025-BLOCK02_FAILURE_AND_SCOPE.md.gz",
+      "sha256": "1f15bfba378eed7be06f4dbfde375d59cd5f0e43b04c77f6a2ce7e26b2fcd3f9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/026-BLOCK02_TRANSFER_ROUNDOFF_DIAGNOSTIC.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/027-BLOCK02_TRANSFER_ROUNDOFF_DIAGNOSTIC.stdout.txt.gz",
+      "sha256": "5787a95677b5fb3d93569bda20d10d37172c2dff610b070ca264889b2a9ad08f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/028-BLOCK03_04_CHECKS_AND_LIMITS.md.gz",
+      "sha256": "10b40e7f26354da2e7b15da644cf334df0ed1bd84dcccd8ecee2421b5738dd5b"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/029-BLOCK05_CHECKS_AND_LIMITS.md.gz",
+      "sha256": "b7b38f9a0b08aa29e0bee5f8e2fe615ab0de1dbabdf0642ac5519fc5f28b6e24"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/030-BLOCK06_07_CHECKS_AND_LIMITS.md.gz",
+      "sha256": "cceba973e429db6bbe40635b428754cd95efaf4a9b4f42a1e2e18e69c87d9998"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/031-BLOCK08_CHECKS_AND_LIMITS.md.gz",
+      "sha256": "e514a2aa104a7461b5dbc9aafb0c9378cd637a8b949894225f626788468d27a2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/032-TIMEOUT_METADATA_CHANGES.json.gz",
+      "sha256": "558d39ebe389bdbc6a0f08dcaaef744b5a82fa101bb345651448bd73497d15a9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/033-block01_anisotropic_conditional_and_poisson_check.ATTEMPT1.py.gz",
+      "sha256": "0805954ab42bc6a7bf1c10e9bcb9e7e542e0b6ca54dd6cde4ae587d02a570cf0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/034-block01_anisotropic_conditional_and_poisson_check.py.gz",
+      "sha256": "c4303b09894946fc0f29dd1145d4eb55ddb738ed36b8446cfabe5376c4149af0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/035-block02_coupled_jump_and_response_check.ATTEMPT1.py.gz",
+      "sha256": "8659e1dffadc6a8edd5a17c22c4bb623e3327f3bd6ce8da2510f38405f5db4e7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/036-block02_coupled_jump_and_response_check.py.gz",
+      "sha256": "7b2156c8b236ed22e38a24931ef7ba54d82398e1708c104a6a82f14914392e99"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/037-block02_transfer_roundoff_diagnostic.py.gz",
+      "sha256": "f193afea22fda908c5ff35094de1c635ff0d049841a18977173de941be9f58d2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/038-block03_covariance_roundoff_diagnostic.py.gz",
+      "sha256": "ac2d664826547274ee50c6ed463509d29abcfa50c81128eae1bcf78f7bddcdf2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/039-block03_covariance_roundoff_diagnostic.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/040-block03_covariance_roundoff_diagnostic.stdout.txt.gz",
+      "sha256": "fac1d3235b74001f37e414e89bb48a76eb1729b50c4845b3b83083852be791e3"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/041-block03_phase_corrector_check.ATTEMPT1.py.gz",
+      "sha256": "d60b3f65620eec73da15595b076aa904b2b7ea99be55dfd7614cb6de7ee4ce40"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/042-block03_phase_corrector_check.ATTEMPT1.stderr.txt.gz",
+      "sha256": "57979930a87ee7bfa62df2d13009a864511dab465f47810645839601128d4f2a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/043-block03_phase_corrector_check.ATTEMPT1.stdout.json.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/044-block03_phase_corrector_check.ATTEMPT2.py.gz",
+      "sha256": "49f0022ca3aed8393ace063056f226012910db44ba3f70eba4b131d2de56a91f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/045-block03_phase_corrector_check.ATTEMPT2.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/046-block03_phase_corrector_check.ATTEMPT2.stdout.json.gz",
+      "sha256": "d85730c86a54039db78e3605f8ca3e3053096312841e13ddc9470a5f2089385c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/047-block03_phase_corrector_check.ATTEMPT3.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/048-block03_phase_corrector_check.ATTEMPT3.stdout.json.gz",
+      "sha256": "1a58ab9a42ad946ecd00607b7d68a1a22d0dfa89599c5b54095a3f4b81a78e49"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/049-block03_phase_corrector_check.py.gz",
+      "sha256": "02094c59b7b293a77b3756c23e7975b6b9c498c2fa4d8938a076d746f1bc3715"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/050-block04_local_heat_and_orthogonality_check.ATTEMPT1.py.gz",
+      "sha256": "eb05eec48fde08e89451316aa682df31810796acf0e64b8741e9b247de2f8f71"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/051-block04_local_heat_and_orthogonality_check.ATTEMPT1.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/052-block04_local_heat_and_orthogonality_check.ATTEMPT1.stdout.json.gz",
+      "sha256": "5fbcf9c1707281a15207fc7a06892e8c2a0dd8ed6abdd40d5c6553db48b55e53"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/053-block04_local_heat_and_orthogonality_check.ATTEMPT2.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/054-block04_local_heat_and_orthogonality_check.ATTEMPT2.stdout.json.gz",
+      "sha256": "aa4152fe3bf37ee58005c11e062bb73480467e6a499c68601122aea11b75da48"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/055-block04_local_heat_and_orthogonality_check.py.gz",
+      "sha256": "5a278bd066f26cb5f3535f5a0ce19fe3e868af46cbce05ea524b9431156f4680"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/056-block05_quantum_comparison_check.ATTEMPT1.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/057-block05_quantum_comparison_check.ATTEMPT1.stdout.json.gz",
+      "sha256": "379036acf166a02d92525712a8335a3ca64fd7f747f6cf72430c7d995d5209d7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/058-block05_quantum_comparison_check.BEFORE_TIMEOUT_METADATA.py.gz",
+      "sha256": "4da6c9e41a3fb667f39e51ab272d7294142b9ed6f9beefce8661c4b8163d21c8"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/059-block05_quantum_comparison_check.FINAL.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/060-block05_quantum_comparison_check.FINAL.stdout.json.gz",
+      "sha256": "386f2760943275578376f2ed025dd702fb7af6ed1aeb8b56340be28e4d10a927"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/061-block05_quantum_comparison_check.py.gz",
+      "sha256": "ae6b937e965d17a5c0f8d1eaef6edeecddfe5fd51837297de1818c003f4a883c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/062-block06_raw_curl_counterexample.ATTEMPT1.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/063-block06_raw_curl_counterexample.ATTEMPT1.stdout.json.gz",
+      "sha256": "02d2596e801468d3348020fc81ba509a069e4b7f22f3e472fb43c849d83be0f5"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/064-block06_raw_curl_counterexample.BEFORE_TIMEOUT_METADATA.py.gz",
+      "sha256": "7ab897f0e5335769226561887aeb66619d0807987a708b482fb4f45533aafb64"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/065-block06_raw_curl_counterexample.FINAL.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/066-block06_raw_curl_counterexample.FINAL.stdout.json.gz",
+      "sha256": "1e324992897429879cb573977083e8b30dbdcb47c840d07160d35cd762b46186"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/067-block06_raw_curl_counterexample.py.gz",
+      "sha256": "f2145e953d5063455a903b62b1eb0ccd818ea522101a281d11880064f8df7606"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/068-block07_positive_mixture_check.ATTEMPT1.py.gz",
+      "sha256": "661d9fa64079616c94f9ceabede49154affaba0fdca1864af3559f9eb05cf0a9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/069-block07_positive_mixture_check.ATTEMPT1.stderr.txt.gz",
+      "sha256": "29c20d775b670e40ad50572981c94d61e1977d78dcd0d3fbce652624efc82a18"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/070-block07_positive_mixture_check.ATTEMPT1.stdout.json.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/071-block07_positive_mixture_check.ATTEMPT2.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/072-block07_positive_mixture_check.ATTEMPT2.stdout.json.gz",
+      "sha256": "da9873a8000dc086d94080ea1677570aa2a65310a7cf23f25703ec9688e3eee8"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/073-block07_positive_mixture_check.BEFORE_TIMEOUT_METADATA.py.gz",
+      "sha256": "c6df5f50e844396ab5a9ebcd0fb6de38820dea47c9d2866af154f81eff72fa9c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/074-block07_positive_mixture_check.FINAL.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/075-block07_positive_mixture_check.FINAL.stdout.json.gz",
+      "sha256": "bce985cd82f851e4b4c2697f0df29c3fff21858416917ac92351865b3ea4bcab"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/076-block07_positive_mixture_check.py.gz",
+      "sha256": "6a1994e7918a1734d8e1da2041615845b0fdb9eb8f5e843a58971490f00497be"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/077-block07_radial_resolution_diagnostic.py.gz",
+      "sha256": "ab0aa8b40a6a2e03d7e38e3052320091532fb760b733f0f47c3006c3a17581b7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/078-block07_radial_resolution_diagnostic.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/079-block07_radial_resolution_diagnostic.stdout.json.gz",
+      "sha256": "dac3883515a42e95c263657a347951b29b29a24d78044368a25b33648b66f222"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/080-block08_bridge_action_check.ATTEMPT1.py.gz",
+      "sha256": "44f52e8d29cc23ef781d721b739367e03c6862368a0b6fd6153e88584c5ae8e9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/081-block08_bridge_action_check.ATTEMPT1.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/082-block08_bridge_action_check.ATTEMPT1.stdout.json.gz",
+      "sha256": "2b58855aca7453ebf3f416fd9690c1f1aea3ec039c9ca681dc4a1ec43cbba563"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/083-block08_bridge_action_check.ATTEMPT2.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/084-block08_bridge_action_check.ATTEMPT2.stdout.json.gz",
+      "sha256": "54e10d16c3672ad0ae7bdc94e0b2fd40256350deec88d1584a889a1e4c61700a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/085-block08_bridge_action_check.BEFORE_TIMEOUT_METADATA.py.gz",
+      "sha256": "2f20bf01db50084653cd0b88bad334a66e4e95b592884c35eb1b5ec8318043e1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/086-block08_bridge_action_check.FINAL.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/087-block08_bridge_action_check.FINAL.stdout.json.gz",
+      "sha256": "0219b37e7787d38a6622cb8b91e51237e02b93ef668b4815c38dee190ce1c838"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/088-block08_bridge_action_check.py.gz",
+      "sha256": "b16dbb55c0f0dc142f6e761e8dc15726d4f400ee5b508f570b3b5ec764b464d6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/089-challenge_formula_faults.ATTEMPT1.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/090-challenge_formula_faults.ATTEMPT1.stdout.json.gz",
+      "sha256": "fa0e3d8ad3a24bf6530e995fb78bb524550057ee2f7833c1a40f6b91c30c64da"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/091-challenge_formula_faults.py.gz",
+      "sha256": "b68d1a5e78d02f8cc6f25b80934e0e132728e9fc2a9d1428d05be2c2cc5c3904"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/092-anisotropic_wrong_dual_type.py.gz",
+      "sha256": "fc6dae64446ede91777aa07e9e849f66447331d8ce95b4110b86fbb081a3903d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/093-anisotropic_wrong_dual_type.stderr.txt.gz",
+      "sha256": "81e05ab43aa831b8bcde36a1228f496f42e8bbc4ae6382bd763346b155f0124d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/094-anisotropic_wrong_dual_type.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/095-bridge_wrong_covariance_sign.py.gz",
+      "sha256": "1ef7e3f647889df6393cf3b72736b80f5df21dc49e6ef8d9ffdf403227283837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/096-bridge_wrong_covariance_sign.stderr.txt.gz",
+      "sha256": "abce0ddce8c1021ee67f63e56e81c0641a145d99e6bbab549687e5f075e2303b"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/097-bridge_wrong_covariance_sign.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/098-bridge_wrong_kinetic_metric.py.gz",
+      "sha256": "14727f55c5c2420bcee17a67e2c056f4ac126a14ef3c1e5c5bfc2ffbc3bf45d7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/099-bridge_wrong_kinetic_metric.stderr.txt.gz",
+      "sha256": "ff9cc3b9d899038700fec022ab3bbc0a672ba431f4c5671b196b778788e5ca58"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/100-bridge_wrong_kinetic_metric.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/101-character_missing_pair_factor.py.gz",
+      "sha256": "234dee783eab74070ac58fbb9dadba85f0e4589c6fd1c4c47da8b69011cf42db"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/102-character_missing_pair_factor.stderr.txt.gz",
+      "sha256": "10a5084f3f950d9c7c665566c96dcd6fefb1c0c58e1d04ddfeed30ac8451ace7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/103-character_missing_pair_factor.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/104-circle_wrong_convolution_power.py.gz",
+      "sha256": "be4ff55eb3d5b402e9a485d4b0b46209752be2a9c0ceca0767e5181387998185"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/105-circle_wrong_convolution_power.stderr.txt.gz",
+      "sha256": "0eff673217ae29b123efa796e459e23fe4d7e629ddc1eabbd01699f67cedb74c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/106-circle_wrong_convolution_power.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/107-conditional_missing_half.py.gz",
+      "sha256": "01274a4ea3354f15e6cc7649ae0f61e03115804bf005e76161ef23e3352917a3"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/108-conditional_missing_half.stderr.txt.gz",
+      "sha256": "de7f7d625a73386239598d056a1dac56bb035625fd751628e47600f46ba1b3ae"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/109-conditional_missing_half.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/110-cover_trace_drops_parity.py.gz",
+      "sha256": "c0b98e7ab2475f76048f26719a6c4edcc61d64e82303f08da2ca04855fc79a28"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/111-cover_trace_drops_parity.stderr.txt.gz",
+      "sha256": "7ca89b4710cbe8f62b356a2913dff8f525e3592c09c13d8774b289803c3042af"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/112-cover_trace_drops_parity.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/113-cube_linearizes_cosine.py.gz",
+      "sha256": "bf44d8aac1f28795248498d2af1cc9db196e6c125107ee6bfae00149e765f08e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/114-cube_linearizes_cosine.stderr.txt.gz",
+      "sha256": "5fce76722ae0c4b34395a4106192960b713b28ef8d3c18721eec968610de3e3d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/115-cube_linearizes_cosine.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/116-cusp_wrong_laplace_order.py.gz",
+      "sha256": "4d7933b83e979227dda350fd68b0ebb6376b5f55c528a89d6f13538b0e3034d4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/117-cusp_wrong_laplace_order.stderr.txt.gz",
+      "sha256": "e510bb1527c9e7a8827a9b27467f82cf08d1eec2fc35165fc8c8453da386d074"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/118-cusp_wrong_laplace_order.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/119-haar_wrong_pair_normalization.py.gz",
+      "sha256": "f3a36166813b8349d8fc65fcabb301169529a39638a6c15dff2eddcd2db437cf"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/120-haar_wrong_pair_normalization.stderr.txt.gz",
+      "sha256": "9c214c9b300e429e9ef99ea84749ea783e53e632a4ace3b91a2c1bfc442d1972"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/121-haar_wrong_pair_normalization.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/122-kernel_drops_lower_weight.py.gz",
+      "sha256": "ad65b13309cd166887c3628fa49fbf0516e4de5b53a8f987150f516083fb2a07"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/123-kernel_drops_lower_weight.stderr.txt.gz",
+      "sha256": "903599270c4e7adf195d71ad4fe216f368051afbbe19b3ffe2e251b0223f0ae0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/124-kernel_drops_lower_weight.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/125-mixture_inverted_partition_tilt.py.gz",
+      "sha256": "d4a5d3e0041d94324a7df1b903b046f14f2350ae02a84d27f3f5400b1c77bdc1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/126-mixture_inverted_partition_tilt.stderr.txt.gz",
+      "sha256": "f6f770cbf23577fcd932cb827ef36f37166eea4eddfebb532d2ab85d98c53cbb"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/127-mixture_inverted_partition_tilt.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/128-offset_wrong_response_sign.py.gz",
+      "sha256": "b99f7f1fa59ea4b8a9d1b68b2475c382c8aea55ba7327c31fbd67d550a1ada27"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/129-offset_wrong_response_sign.stderr.txt.gz",
+      "sha256": "2bb1aaa2c39d17048b84ce5b8045ac4cfecbd3f98805d304adb1b85a1a0e8238"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/130-offset_wrong_response_sign.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/131-phase_wrong_harmonic_mean.py.gz",
+      "sha256": "bbc844d2b035a6e9338cafc8eec311e1a1725af360c6cfaf2588c6695c76d125"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/132-phase_wrong_harmonic_mean.stderr.txt.gz",
+      "sha256": "392906d6660acac61370ca3eecf4a5ed10fd2069cf4120114b42259def6b0d10"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/133-phase_wrong_harmonic_mean.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/134-poisson_wrong_rate.py.gz",
+      "sha256": "170f37583e1b1e25d5a19a9712a8768acbc1cb9b379c05d142d5fe62bda03e4b"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/135-poisson_wrong_rate.stderr.txt.gz",
+      "sha256": "ac167d34c82f7a39d327e50721eabf48e052991f92aa9e8252cd9664af77bcea"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/136-poisson_wrong_rate.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/137-principal_charge_uses_raw_curl.py.gz",
+      "sha256": "fd19b71c8aa3c236971465686ff73a028e6b8bbd2964ef22e6ca9264731b2f5b"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/138-principal_charge_uses_raw_curl.stderr.txt.gz",
+      "sha256": "7d59cd3f180b144c43cad0cdd2d6bdd1f70e2c0cb00940c91739b02c88596d76"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/139-principal_charge_uses_raw_curl.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/140-quantum_derivative_missing_two.py.gz",
+      "sha256": "28d7f0f9e83061b0ba4f6f0381fc0e31b691688d610b02494e485cc323afccfc"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/141-quantum_derivative_missing_two.stderr.txt.gz",
+      "sha256": "5dbb51677a2b8dbda7c6c634a7738e186f2e308af2d6d1a4da4b8a45d58f5491"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/142-quantum_derivative_missing_two.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/143-quantum_electric_wrong_sign.py.gz",
+      "sha256": "a415aef9c4fa1780debd7421e4d7c7e96ff84a1a8158d5f34320b3f5ba55e38e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/144-quantum_electric_wrong_sign.stderr.txt.gz",
+      "sha256": "ce58b26495ca864855c16dbe8d4db6feb21b8ec3304f26fb0c125cc76eae2c37"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/145-quantum_electric_wrong_sign.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/146-radial_killing_missing_half.py.gz",
+      "sha256": "0c44180ef502cba5681e6b08cbf7b5ad155a1e4dc79eacb036c949799072f0ee"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/147-radial_killing_missing_half.stderr.txt.gz",
+      "sha256": "820e3f44b328475685f04d3335b7f0819a50236dc14bc9c574e0b6d704167c94"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/148-radial_killing_missing_half.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/149-raw_curl_replaced_by_principal.py.gz",
+      "sha256": "f515de3158bb57329da754391c5002acb0d07ccddca42ba17d4bb3020613a532"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/150-raw_curl_replaced_by_principal.stderr.txt.gz",
+      "sha256": "2f4ee8762358313c09986eb3ba66cd0f59bfeb2cecad2caa7d26e1340335de6d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/151-raw_curl_replaced_by_principal.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/152-sum_rule_missing_half.py.gz",
+      "sha256": "cbef42516440d8f1d707c7adb42d0f2e05f1064e5873f5178ff7d3a2c434e310"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/153-sum_rule_missing_half.stderr.txt.gz",
+      "sha256": "9ccc7173f34c73341e268c62061ed42e8b7f366914b360d018b09234d8199279"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/154-sum_rule_missing_half.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/155-tail_wrong_factorial_power.py.gz",
+      "sha256": "b6ec43773341ec82bc505abd153b28c1af9f2a06972a75ff1885a89546ef5cc9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/156-tail_wrong_factorial_power.stderr.txt.gz",
+      "sha256": "22650663ee07ca7ab526a3773c2b834bbe04dbe49238fa502b8125a94a4071e5"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/157-tail_wrong_factorial_power.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/158-transfer_missing_endpoints.py.gz",
+      "sha256": "a399f291274fd99be399d19113932f1805150d25f70bf1bf1415d80e7ea59d05"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/159-transfer_missing_endpoints.stderr.txt.gz",
+      "sha256": "ef04978a234d427a31b2d7044bec33fc0aa42de27ddcc8ce65acd8ec7fc41df6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/160-transfer_missing_endpoints.stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/161-BLOCK01_WORKING_ANISOTROPIC_SELF_ENERGY_AND_TIME_BLOCKING.md.gz",
+      "sha256": "af134f6b69f98450153e93bcd3ac9bc350412a869b4edfb2632d8bb3623ad108"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/162-BLOCK02_ELECTRIC_RESPONSE_AND_GAUSSIAN_REFERENCE_TESTS.md.gz",
+      "sha256": "381df115d086b917781c62900556ac44c7349e7b924b11fed534c249910d6b1f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/163-BLOCK03_WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_TESTS.md.gz",
+      "sha256": "5f6e98eacd5cb838a2e4aaa7a34fd5ba924a388841fa856460d69c26b604b6c0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/164-BLOCK04_LOCAL_DENSITY_AND_FINITE_LOOP_TEST_FAMILY_BOUND.md.gz",
+      "sha256": "cfd84494f4c07886537d73353b2733171e1a66221f9e7af79b6ab8ce7876c167"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/165-BLOCK05_GROUND_STATE_CORRELATION_COMPARISON.md.gz",
+      "sha256": "ab6cbba0eb3ed44b3f19b5dc44630221bb40bc3908edcacbc6bdb6706825db7a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/166-BLOCK06_COMPACT_STABILITY_COMPARISON_READING.md.gz",
+      "sha256": "3393e24e3c2d3b7196becd6f8bee14ef0f782f453929c6a49c385ecc6f7f14fb"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/167-BLOCK07_POSITIVE_WILSON_MIXTURE_AND_WEAK_REGION_COMPARISON.md.gz",
+      "sha256": "21f448e55f380a19a6c3b8c9122fe435f3a88b37a11d3e0c04917687213745a4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/168-BLOCK08_SHORT_TIME_BRIDGE_AND_ENDPOINT_ACTION.md.gz",
+      "sha256": "2325e36bbe1876dea07c45bb1c6a8b13a96055b4395888e8daae200a9af9c054"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/169-FOCUSED_VERIFICATION.json.gz",
+      "sha256": "45e5bbda69f637959e1f420c33e57c51d2d10d96daf25cbd3927afbf20d16866"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/170-NUMERICAL_HISTORY.md.gz",
+      "sha256": "96da1bfc55b86eb222017cca1ac573323a526bfcfd5dd751be24425330c76868"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/171-PERSONAL_PROOF_REVIEW.md.gz",
+      "sha256": "cd88143291262803c487e256a9d3dcd04c416e75e29fd88d07d3bd01dd1c2b1a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/172-VOCAB_FIX.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/173-VOCAB_FIX.stdout.txt.gz",
+      "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/174-VOCAB_REPORT.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/175-VOCAB_REPORT.stdout.txt.gz",
+      "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/176-focused_verify.ATTEMPT1.py.gz",
+      "sha256": "339fca777fac688f5b5707eba8c215b2a374e6378506a0bc268f3eb352df6921"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8164/originals/177-focused_verify.py.gz",
+      "sha256": "1dbd18258334949e3a22f54145b974b9597d5dcd40b2b3fea2e9f945dd5fff19"
+    },
+    {
+      "path": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+      "sha256": "958d2496a9f6581bb9f87d5d54f6bc4366057adabbd832fec4585a772600690c"
+    },
+    {
+      "path": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+      "sha256": "3f87037c9d628e39c04e6b4e532a70df3c09c3b24d940d74880623a12702ca86"
+    },
+    {
+      "path": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+      "sha256": "735b86f3af718e2b873afe2704b5bad526a5e5da5513ec3d80950111d256867f"
+    },
+    {
+      "path": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+      "sha256": "de138383b921432cd9a25d23bfd8814fc168b81b7302fbd7732d19e6ab1eee19"
+    },
+    {
+      "path": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+      "sha256": "1aaa604fc5ae5fde96980403a27f9dda2e6abb2ca580dc581589a8a32c575e41"
+    },
+    {
+      "path": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+      "sha256": "b27de02473bde563ac318dc5514975e8e9ccdd7ac8d08aef639f9f4c497db0c1"
+    },
+    {
+      "path": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+      "sha256": "f565de393364d08d4becee29a48b4b53f09c4ad6e4f3bb37c5d20ab1457bc063"
+    },
+    {
+      "path": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+      "sha256": "f01b29d46d5d32774326458f3602b3b67cf3c3903ce162b9aa9529bae5029d4c"
+    }
+  ],
+  "original_disposition_confirmation": "All178 original paths recover exactly to original mode/blob/SHA manifest. Eight complete arguments and eight programs have canonical destinations; historical failures, diagnostic changes and23 mutation results remain in archive. No discarded unique science.",
+  "nonblocking_notes": [
+    "Governance links intentionally land on the recovery README and then manifest rather than directly opening compressed historical documents.",
+    "Cache links describe a future canonical destination; preparation text explicitly states no canonical capture has run."
+  ],
+  "next_required": "Build source/ownership maps, freeze exact staged draft, perform cheap preflight and same-session cold review before resource-bounded capture; later final evidence review required.",
+  "primary_executions": 0,
+  "source_changes_by_reviewer": false,
+  "bound_artifacts": {
+    "drain8164-original-review.json": "2df0a061e704714b80e35d067ddd72d3ded9fa17c5fae7e448138897b33a6da6",
+    "drain8164-early-static-v1.py": "093badbc826b76da7950d87cae72c886fe379131786d0b9091f7815b8541081c",
+    "drain8164-early-static-v1.json": "969a6541f240884ee0e8abe54df65c117d8deb621f570f9f4d95293b41d353ca",
+    "drain8164-author-api-v1.json": "32f542469d30222cc75d2a1e4dd1b48e8e5d5e3410a0de0d3857133487e58415",
+    "drain8164-author-input-plan-v1.json": "089cac814557d4dfc032f5aa9458cb4f8a8193a19de30a70c58c9e8744578da7",
+    "drain8164-author-prepared-v1.json": "2ed40d6f9d42e7053822e4ca62d63041518d145417f414345f3e98275130a11a",
+    "drain8164-author-preservation-checks-v1.json": "d4ad0e11aa5b5db19958801eb6c37eb6936a3d9e8afa896cb21ba732a95e9809",
+    "drain8164-author-resource-plan-v1.json": "5b1c17a4a82c739e0d7da6c886f16899951c754156abc667d918c2961fb7e2f9",
+    "drain8164-author-vocab-v1.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "drain8164-author-corrections-v1.patch": "f1a33d82b7c1971372b7c7f6d9975d2b193be5a4ea73d5046414193cdd95d7d1"
+  },
+  "runner_cache_api_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+}

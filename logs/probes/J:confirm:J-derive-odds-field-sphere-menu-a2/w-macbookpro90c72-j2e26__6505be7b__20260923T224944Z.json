@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-odds-field-sphere-menu-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j2e26",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/odds-field-sphere-menu/referee_w-macbookpro90c72-j2e26/check.py",
+ "seed": 3784,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6505be7b",
+ "started_utc": "20260923T224944Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the exact Funk-Hecke dipole, the aligned-record vanishing, and the non-additive capacity; the numeric ordered-field spectrum was not rebuilt"
+ },
+ "review": "Independent: lambda_1=coth beta-1/beta, P_l^1(+-1)=0 for l<=7, and one 5^3 record has capacity 99/136 with adjacent pair strictly subadditive",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:odds-field-sphere-menu:a2/; its files are probes/work/derive/odds-field-sphere-menu/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/odds-field-sphere-menu/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "cbcd6c80fe961e76b89fa2744476b1601c50db7b6c8c0f69522ad35ad5506e1f",
+ "stdout_tail": "lambda1 True\nP_l^1 poles True\ncap1 99/136 cap2adj 15061186701/13100122654 subadditive True\nHIT: confirmed - lambda_1 = coth beta - 1/beta, P_l^1(+-1)=0 for l<=7, and one record on a 5^3 box has capacity 99/136, two adjacent records strictly less than twice that\nSUMMARY: confirmed the exact Funk-Hecke dipole, the aligned-record vanishing, and the non-additive capacity; the numeric ordered-field spectrum was not rebuilt\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2e26",
+  "at_utc": "20260923T224949Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "lambda_1 identity, aligned-record vanishing, and capacity 99/136 with subadditive adjacent pair all hold independently",
+  "by": "w-macbookpro90c72-j2e26",
+  "at_utc": "20260923T224949Z"
+ }
+}

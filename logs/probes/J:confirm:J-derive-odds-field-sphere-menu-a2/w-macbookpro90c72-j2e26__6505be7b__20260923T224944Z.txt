@@ -1,0 +1,5 @@
+lambda1 True
+P_l^1 poles True
+cap1 99/136 cap2adj 15061186701/13100122654 subadditive True
+HIT: confirmed - lambda_1 = coth beta - 1/beta, P_l^1(+-1)=0 for l<=7, and one record on a 5^3 box has capacity 99/136, two adjacent records strictly less than twice that
+SUMMARY: confirmed the exact Funk-Hecke dipole, the aligned-record vanishing, and the non-additive capacity; the numeric ordered-field spectrum was not rebuilt

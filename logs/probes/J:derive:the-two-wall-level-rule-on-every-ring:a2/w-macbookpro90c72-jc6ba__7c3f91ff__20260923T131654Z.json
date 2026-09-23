@@ -22,11 +22,18 @@
  "stdout_tail": "10 (float)\nok A5: L = 6, 10, 14, 18, 22 (L = 2 mod 4), exact: the wall-free ring has no level 1 (k = pi is not on the odd sublattice ring), block 87's s_x gives two strong-strong walls L/2 apart (the bonds have period L/2), zero modes exist (prod t_even = prod t_odd) and no squared level of the wall-free ring survives (block 87's matrix to L = 14); L = 6 loses {9/100: 2, 309/400: 4} and gains {387/400: 4, 0: 2}\nSUMMARY: PROVED on every ring whose length is a multiple of 4 (on L = 2 mod 4 the rule cannot hold: no level 1, block 87's walls are both strong-strong, every level moves): h^2 = J_even (+) J_odd, isospectral; the walls are defects +-eta at antipodal sites of J_odd; tr(B^(n-1)(B + eps E11)B^(n-1)(B - eps E11)) - 2 = U_(n-1)^2 (4(z^2 - 1) - eps^2), so only the band edges z = +-1 move, to lam = 0 and 2D; walls r apart, 2n walls and t = e^(+-delta) follow from the same trace\nHIT: on every ring with 4 | L, block 87's one-axis operator with bonds t_s, t_w and two antipodal walls (strong-strong, weak-weak) has the wall-free squared spectrum with (t_s - t_w)^2/4 and (t_s + t_w)^2/4 (twice each) replaced by 0 and (t_s^2 + t_w^2)/2 (twice each): delta^2, 1 -> 0, 1 + delta^2 for t = 1 +- delta and sinh^2, cosh^2 -> 0, cosh 2 delta for t = e^(+-delta); walls r apart on one sublattice give (T_M - 1) - (eta^2/2C^2) U_(r-1) U_(M-r-1), keeping a degenerate level exactly when M | 2rj; exact zero modes iff the strong bonds are equally many on the two sublattices (two walls: antipodal)\n",
  "checked": {
   "by": "w-macbookpro90c72-jc6ba",
-  "at_utc": "20260923T131704Z",
+  "at_utc": "20260923T131803Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c3f91ff differs from the current HEAD bb155453 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: a complete argument for (a) on every ring with 4 | L, for any strong/weak pair (t_s, t_w). h^2 splits into two isospectral sublattice blocks; the two walls are antipodal diagonal defects +-eta of one block; a ring determinant lemma (matching expansion) and the Chebyshev trace identity tr(B^(n-1)(B + eps E11)B^(n-1)(B - eps E11)) - 2 = U_(n-1)^2 (4(z^2-1) - eps^2) show only the band edges move. The wording 'every even ring' is too broad: on L = 2 mod 4 the wall-free ring has no level 1, block 87's walls are both strong-strong, and every level moves (exact to L = 22). (b): separation-r characteristic function (T_M - 1) - (eta^2/2C^2) U_(r-1) U_(M-r-1), a degenerate level survives iff M | 2rj; zero modes iff prod t_even = prod t_odd (det A formula); 2n-wall trace formula. (c): sinh^2, cosh^2 -> 0, cosh 2 delta. Float: closer wall pairs cost the sea less than block 87's constant. No prior attempt; overlap with my #8754 disclosed. Same model family as block 87; a cross-family referee is needed.",
+  "by": "w-macbookpro90c72-jc6ba",
+  "at_utc": "20260923T131803Z"
  }
 }

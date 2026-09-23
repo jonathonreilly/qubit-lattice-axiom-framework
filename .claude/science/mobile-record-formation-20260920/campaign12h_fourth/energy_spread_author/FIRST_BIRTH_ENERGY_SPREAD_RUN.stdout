@@ -1,0 +1,15 @@
+{
+  "arithmetic": "integer path vectors and Fraction moments",
+  "physical_words": 52,
+  "initial_H4_eigenvalue": -12,
+  "first_rate_divided_by_kappa": 12,
+  "pre_matrix_first_vectors_all_match": true,
+  "post_H_mean_divided_by_delta": "-4/3",
+  "post_H_second_divided_by_delta_squared": "8",
+  "post_H_variance_divided_by_delta_squared": "56/9",
+  "mean_transition_energy_divided_by_delta": "32/3",
+  "initial_power_divided_by_kappa_delta": "128",
+  "number_offset_mean_shift_per_birth": "2 mu",
+  "number_offset_variance_shift": "0",
+  "scope": "Supplied compensated target; fixed seven-site physical path, first actual birth only."
+}

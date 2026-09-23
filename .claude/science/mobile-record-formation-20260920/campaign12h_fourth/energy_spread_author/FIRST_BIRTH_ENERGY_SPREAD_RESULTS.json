@@ -1,0 +1,199 @@
+{
+  "arithmetic": "integer path vectors and Fraction moments",
+  "sources": {
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_author/capacity_and_dark_state_check.py": "3e9621b36280d19373909922b104c1ead0df9aa47c043d372abd9f9424393a4a",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/FINITE_PATH_RESULTS.json": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553"
+  },
+  "physical_words": 52,
+  "initial_H4_eigenvalue": -12,
+  "first_rate_divided_by_kappa": 12,
+  "pre_matrix_first_vectors_all_match": true,
+  "post_H_mean_divided_by_delta": "-4/3",
+  "post_H_second_divided_by_delta_squared": "8",
+  "post_H_variance_divided_by_delta_squared": "56/9",
+  "mean_transition_energy_divided_by_delta": "32/3",
+  "initial_power_divided_by_kappa_delta": "128",
+  "number_offset_mean_shift_per_birth": "2 mu",
+  "number_offset_variance_shift": "0",
+  "rows": {
+    "resolved": [
+      {
+        "channel": [
+          1,
+          0,
+          -1
+        ],
+        "norm2": 1,
+        "h4_first": -2,
+        "h4_second": 12
+      },
+      {
+        "channel": [
+          1,
+          0,
+          1
+        ],
+        "norm2": 1,
+        "h4_first": -2,
+        "h4_second": 12
+      },
+      {
+        "channel": [
+          1,
+          2,
+          -1
+        ],
+        "norm2": 1,
+        "h4_first": -2,
+        "h4_second": 12
+      },
+      {
+        "channel": [
+          1,
+          2,
+          1
+        ],
+        "norm2": 1,
+        "h4_first": -2,
+        "h4_second": 12
+      },
+      {
+        "channel": [
+          3,
+          2,
+          -1
+        ],
+        "norm2": 1,
+        "h4_first": 0,
+        "h4_second": 0
+      },
+      {
+        "channel": [
+          3,
+          2,
+          1
+        ],
+        "norm2": 1,
+        "h4_first": 0,
+        "h4_second": 0
+      },
+      {
+        "channel": [
+          3,
+          4,
+          -1
+        ],
+        "norm2": 1,
+        "h4_first": 0,
+        "h4_second": 0
+      },
+      {
+        "channel": [
+          3,
+          4,
+          1
+        ],
+        "norm2": 1,
+        "h4_first": 0,
+        "h4_second": 0
+      },
+      {
+        "channel": [
+          5,
+          4,
+          -1
+        ],
+        "norm2": 1,
+        "h4_first": -2,
+        "h4_second": 12
+      },
+      {
+        "channel": [
+          5,
+          4,
+          1
+        ],
+        "norm2": 1,
+        "h4_first": -2,
+        "h4_second": 12
+      },
+      {
+        "channel": [
+          5,
+          6,
+          -1
+        ],
+        "norm2": 1,
+        "h4_first": -2,
+        "h4_second": 12
+      },
+      {
+        "channel": [
+          5,
+          6,
+          1
+        ],
+        "norm2": 1,
+        "h4_first": -2,
+        "h4_second": 12
+      }
+    ],
+    "coherent": [
+      {
+        "channel": [
+          1,
+          0
+        ],
+        "norm2": 2,
+        "h4_first": -4,
+        "h4_second": 24
+      },
+      {
+        "channel": [
+          1,
+          2
+        ],
+        "norm2": 2,
+        "h4_first": -4,
+        "h4_second": 24
+      },
+      {
+        "channel": [
+          3,
+          2
+        ],
+        "norm2": 2,
+        "h4_first": 0,
+        "h4_second": 0
+      },
+      {
+        "channel": [
+          3,
+          4
+        ],
+        "norm2": 2,
+        "h4_first": 0,
+        "h4_second": 0
+      },
+      {
+        "channel": [
+          5,
+          4
+        ],
+        "norm2": 2,
+        "h4_first": -4,
+        "h4_second": 24
+      },
+      {
+        "channel": [
+          5,
+          6
+        ],
+        "norm2": 2,
+        "h4_first": -4,
+        "h4_second": 24
+      }
+    ]
+  },
+  "scope": "Supplied compensated target; fixed seven-site physical path, first actual birth only."
+}

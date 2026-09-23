@@ -1,0 +1,26 @@
+{
+  "started_utc": "2026-09-23T23:35:19.560884+00:00",
+  "ended_utc": "2026-09-23T23:35:19.597779+00:00",
+  "wall_seconds": 0.037043374963104725,
+  "returncode": 0,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_spread_author/first_birth_energy_spread_check.py"
+  ],
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_spread_author/first_birth_energy_spread_check.py",
+    "sha256": "2e353dddb986d3fe8019b13f3e4f09bf3bb23ea62f7a551adddc823eccaff53d"
+  },
+  "results": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_spread_author/FIRST_BIRTH_ENERGY_SPREAD_RESULTS.json",
+    "sha256": "03f1bc36bbd8be8cd0996190268c45fd7eb535a8753fb4bb9b85d0125c761e2c"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_spread_author/FIRST_BIRTH_ENERGY_SPREAD_RUN.stdout",
+    "sha256": "24544b6de39b2e4e4cbf71dc2ad8f83cbea7f998fd8f0543a2ad9598f779b253"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_spread_author/FIRST_BIRTH_ENERGY_SPREAD_RUN.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

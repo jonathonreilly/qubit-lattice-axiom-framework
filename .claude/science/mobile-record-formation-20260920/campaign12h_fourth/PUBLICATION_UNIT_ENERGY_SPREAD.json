@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-09-23T23:37:35.731352+00:00",
+  "base_commit": "79ab61e5aee8945bf96924815c7e0f9dd4d256a5",
+  "base_pr": 8865,
+  "claim_status": "provisional review proposal; no audit verdict",
+  "independent_post_result_review": "not completed",
+  "artifacts_count": 7,
+  "sources_count": 3,
+  "artifacts": [
+    {
+      "path": "ENERGY_SPREAD_PUBLICATION_README.md",
+      "bytes": 1351,
+      "sha256": "dba0f61986a1945d1d303fb3f252b53e7c194fc0933795bfe3e99d92a07e5517"
+    },
+    {
+      "path": "energy_spread_author/FIRST_BIRTH_ENERGY_SPREAD_ON_SEVEN_SITE_PATH.md",
+      "bytes": 4255,
+      "sha256": "6896b3739eb71b62eb108d310a7535f575bf636d02f80f383a5b0dd3f0a5adaf"
+    },
+    {
+      "path": "energy_spread_author/FIRST_BIRTH_ENERGY_SPREAD_RESULTS.json",
+      "bytes": 3959,
+      "sha256": "03f1bc36bbd8be8cd0996190268c45fd7eb535a8753fb4bb9b85d0125c761e2c"
+    },
+    {
+      "path": "energy_spread_author/FIRST_BIRTH_ENERGY_SPREAD_RUN.stdout",
+      "bytes": 637,
+      "sha256": "24544b6de39b2e4e4cbf71dc2ad8f83cbea7f998fd8f0543a2ad9598f779b253"
+    },
+    {
+      "path": "energy_spread_author/FIRST_BIRTH_ENERGY_SPREAD_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "energy_spread_author/FIRST_BIRTH_ENERGY_SPREAD_RUN_RECEIPT.json",
+      "bytes": 1660,
+      "sha256": "d93b1ea8bbf7b969670f067d1495e2f02af995f396174ada1f95fd7f0478031e"
+    },
+    {
+      "path": "energy_spread_author/first_birth_energy_spread_check.py",
+      "bytes": 5273,
+      "sha256": "2e353dddb986d3fe8019b13f3e4f09bf3bb23ea62f7a551adddc823eccaff53d"
+    }
+  ],
+  "sources": [
+    {
+      "path": "formation_capacity_author/capacity_and_dark_state_check.py",
+      "bytes": 12263,
+      "sha256": "3e9621b36280d19373909922b104c1ead0df9aa47c043d372abd9f9424393a4a"
+    },
+    {
+      "path": "formation_capacity_independent/FINITE_PATH_RESULTS.json",
+      "bytes": 26155,
+      "sha256": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553"
+    },
+    {
+      "path": "terminal_path_author/EXACT_TERMINAL_COUNTS_ON_SEVEN_SITE_PATH.md",
+      "bytes": 5966,
+      "sha256": "1091f635e46e5952fa766b37ea721e161c0c1faa8e858a2a96b4f6682332e928"
+    }
+  ]
+}

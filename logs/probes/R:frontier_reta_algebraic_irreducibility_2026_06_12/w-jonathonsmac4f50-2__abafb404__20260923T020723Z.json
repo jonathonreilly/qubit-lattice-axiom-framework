@@ -22,15 +22,22 @@
  "stdout_sha256": "cd065ac26f689bae8888dc7b3fd4970856fa84202ab511085a6c4b5bc514c595",
  "stdout_tail": "rel_2pi=0.988]\n[PASS] (12) I6c 2/9 is not q*pi for rational q; 2/(9*pi) is irrational by pi irrationality  [2/(9*pi) is not rational]\n[FAIL] (13) B-check dependency greps: fixed-locus L_3 phrase and real radian-bridge scope phrase are pinned\n[PASS] (14) B-check firewall / walls-move sentences are present without forbidden overclaim use\n[PASS] (15) B-check N1-N8 gate section is present\n[PASS] (16) B-check six-wall carrier map present with six backticked wall names\n[PASS] (17) B-check markdown link inventory is exactly the three dependencies and all resolve  [links=['KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md', 'KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md', 'MINIMAL_AXIOMS_2026-06-05.md']]\n[PASS] (18) B-check context inventory is backticked, not markdown-linked\n[PASS] (19) B-check status lines, No-promotion statement, no registry edit, and bounded theorem declaration are present\n[PASS] (20) B-check R-eta is characterized but not adopted, derived, or refuted\n[PASS] (21) B-check two live derivation targets are named and neither is probed here\n========================================================================\ngit diff --stat\n docs/RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md | 276 +\n scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py | 393 +\n 2 files changed, 669 insertions(+)\n========================================================================\nSUMMARY: TOTAL PASS=20 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T020724Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T021907Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha abafb404 differs from the current HEAD e40a262d (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: TOTAL PASS=20 FAIL=1' vs cache 'SUMMARY: TOTAL PASS=21 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Issue #8681. Runner/note desync on main: check 13's fixed_dep_ok needs 'local density `2/9`' and 'core identity' in the fixed-locus note, which on main is retitled 'C3 Body-Diagonal Fixed Locus and Local Inverse-Determinant Density' and states L_C_3(N) = 2/9 without them (same root cause as #8234); radian and minimal-axioms phrases present; 20/21 as cache otherwise.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T021907Z"
  }
 }

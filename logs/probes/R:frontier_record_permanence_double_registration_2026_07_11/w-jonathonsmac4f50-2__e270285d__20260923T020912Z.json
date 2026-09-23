@@ -22,15 +22,22 @@
  "stdout_sha256": "b8b1ad590bc5f07e125991fab3aff9d1768e6124a4d2b1966300bb198cb53d3e",
  "stdout_tail": "300831067572038441027668'), Decimal('0.000005564043311679437836368195465289260210281357325837343015911523118372159851916705613005')), 25: (Decimal('-3.3250980164443787200254623957768552775175454653467072451805278248583409151628625585E-9'), Decimal('2.71680291428098622854363019792980042163779472014291712506328110709127102227764495E-9'))}\nCHECK 23: PASS -- T3 counterexample: a nonzero offset survives the 14-step finite window; offset=0.0000027820216558397189181840977326446301051406786629186715079557615591860799259583528065025\nCHECK 24: PASS -- T3 permanence role: once an out-of-band fresh-site record forms, later snapshots retain it; first_out=14\nCHECK 25: PASS -- conditional agreement arithmetic: per-filter probability 1/2 and n-filter fraction 2^-n\nCHECK 26: PASS -- flow-class boundary: psi(r)=r^2 has fixed set {0,1} and is not selected here\nSUMMARY T1: in the site-tagged monotone model, fresh sites and full retention are necessary after events are identified as record formation; no converse to full Admissibility.\nSUMMARY T2: constant orbit iff fixed point under the supplied map and common epoch-comparable readout rule.\nSUMMARY T3: exact finite-horizon bounds replace the withdrawn finite-time exactness claim; nonzero offsets survive every finite window.\nSUMMARY files: docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md; scripts/frontier_record_permanence_double_registration_2026_07_11.py\nTOTAL: PASS=25 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T020912Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T021922Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e270285d differs from the current HEAD e40a262d (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=25 FAIL=1' vs cache 'TOTAL: PASS=26 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run d26a7886 (issue #8658, open): same CHECK 05 failure - the runner requires the Record quote 'For any finite collection of pairwise-disjoint records, scalar readout I is additive, with I(empty)=0.' verbatim in the axioms memo, which on main says finite additivity and a named scalar I are not Record axiom content; 25/26 otherwise.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T021922Z"
  }
 }

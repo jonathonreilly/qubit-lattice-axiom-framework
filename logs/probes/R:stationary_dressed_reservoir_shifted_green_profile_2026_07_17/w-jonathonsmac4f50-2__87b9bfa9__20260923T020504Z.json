@@ -19,14 +19,21 @@
  "stdout_sha256": "c99d0e983c00ca984064f1aab6743abac6fcea75cdadb4958e36dc0018edd4db",
  "stdout_tail": "nd one-excitation preparation', \"Cycle216's stiffness/3L+ comparator\", 'shift-invert target exp(+/- i theta/L^(3/2)); among three returned requested-sign candidates choose maximum reservoir squared-norm weight, then normalize and rephase the reservoir amplitude real-positive', 'runner acceptance inventory: L=3,...,9; L=3,...,8 training; held-out L=9; phase ratio [0.96,0.99]; reservoir squared-norm weight (0.45,0.48); held-out profile ratio below 7.1e-4'), 'derived': ('numerically selected closed finite-volume dressed eigenpairs with stationary basis-component squared norms on L=3,...,9', 'local-gate eigenpair-to-q equations and exact local-source plus 3(L-mu)^-1 normalized-tail profile identity conditional on those eigenpair equations', 'tested-size comparison with Cycle216 3L+, covariance, theta=0 parameter endpoint, held-size, uniform-component, and zero-mode controls'), 'not_earned': ('physical energy, a Hamiltonian, eigenphase-as-rate, clock normalization, gravity, stress, or source mass', 'host-side renewal, retarded selection, radiation reaction, moving-source transport, or many-excitation closure', 'a matter Hilbert space or matter/contact update, the Cycle230 contact block, or a whole physical-M2 compiler/intertwiner', 'an interface to the carried-source code; this active fixed reservoir is neither carried nor moving', 'a Record, occurrence law, Born rule, axiom change, or audit authority')}\n\nSUMMARY PASS 16 FAIL 1\nRESULT STATIONARY_DRESSED_SHIFTED_GREEN_PROFILE_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T020506Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T021851Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 87b9bfa9 differs from the current HEAD e40a262d (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the note-exists gate fails because the note moved to archive/notes/docs/work_history/repo/review_feedback/ on main; the only FAIL is that gate; the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T021851Z"
  }
 }

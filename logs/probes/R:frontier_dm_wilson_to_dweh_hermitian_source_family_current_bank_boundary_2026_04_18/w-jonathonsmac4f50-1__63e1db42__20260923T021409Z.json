@@ -21,15 +21,22 @@
  "stdout_sha256": "c35f03fef8c5e66fa0ce51b6858be81fce38371ab32d39561f4f5100a96a30fc",
  "stdout_tail": "=============================\n  [PASS] No unclassified current-main doc or script combines Wilson-side structure with dW_e^H under another name  (classified_nonclosing=11, unclassified=[])\n  [PASS] No unclassified current-main doc or script already names a Wilson Hermitian source family target  (classified_nonclosing=1, unclassified=[])\n  [BOUNDARY] Current main contains classified adjacent Wilson/dW_e^H mentions, but none is a theorem-grade generic DM Wilson-to-dW_e^H closure  (classified_nonclosing=11)\n  [BOUNDARY] Current main contains a classified adjacent Wilson Hermitian-source-family mention outside the DM current-bank closure target  (classified_nonclosing=1)\n\n========================================================================================\nPART 4: BOTTOM LINE\n========================================================================================\n  [PASS] The current exact bank does not already realize the Wilson-side Hermitian source family needed upstream of the selector  (current main still names dW_e^H itself as live target and has no unclassified Wilson-to-dW_e^H closure artifact)\n  [PASS] So the Wilson Hermitian source family is a genuinely new constructive primitive on current main  (not a hidden current-bank object under another label)\n\n========================================================================================\nSUMMARY: PASS=9 BOUNDARY=2 HARD_ISSUES=1\n========================================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T021411Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T021908Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 63e1db42 differs from the current HEAD e40a262d (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'SUMMARY: PASS=9 BOUNDARY=2 HARD_ISSUES=1' vs cache 'SUMMARY: PASS=10 BOUNDARY=2 HARD_ISSUES=0'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_to_dweh_hermitian_source_family_current_bank_boundary_2026_04_18.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Issue #8685. Runner/note desync on main: the guard needs 'derive `dW_e^H` on `E_e` from `Cl(3)` on `Z^3`' in the projected-source note, which on main reads 'from the current four-axiom framework baseline' (ed6c77aea6); sibling of #8684.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T021908Z"
  }
 }

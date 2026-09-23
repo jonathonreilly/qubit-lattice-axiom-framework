@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_two_adjacent_cubes_no_local_formation_order_closed_set_search_2026_09_23.py
+runner_sha256: ce8ba9f0986f228bf72df79cbfef134400c71cc09cc6cdaffad10170fcad15af
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 219.72
+status: ok
+----- stdout -----
+A. the closed-set search against the plain search of open PR 8715
+[PASS] the closed-set search reproduces the plain search: same verdicts and the same largest formed sets :: square: none, 9 closed / 21 plain sets, largest 3; square + P: order, 2 closed / 68 plain sets, largest 9; 2x1 + P: none, 16 closed / 92 plain sets, largest 7; 2x1 + P, V nothing: none, 10 closed / 2560 plain sets, largest 11; cube: none, 27 closed / 173 plain sets, largest 5; cube + C: order, 11 closed / - plain sets, largest 27
+B. the two-cube window
+[PASS] two cubes sharing a face: 45 sites, 20 grid links, weight 3985518592 = generating-function coefficient :: 614912 grid patterns carry weight
+C. no order, with both cube sites
+[PASS] full local records: no complete order; the largest formed set is one cube's sites :: 46 closed sets; largest 23 of 45: one cube site, its 6 plaquettes, 12 links and 4 outer vertices
+D. coarser record schemes
+[PASS] vertex records nothing, plaquette records nothing, or both nothing: no complete order :: V nothing: 34 closed sets, largest 31; P nothing: 35 closed sets, largest 16; V nothing,P nothing: 23 closed sets, largest 24
+E. why the other cube cannot follow
+[PASS] the other cube site depends on the formed cube beyond the shared plaquette :: at a shared vertex with one face link occupied the weights C(2, 2 - e1 - e2) of the two cubes' perpendicular edges form [[1, 2], [2, 1]], rank 2
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

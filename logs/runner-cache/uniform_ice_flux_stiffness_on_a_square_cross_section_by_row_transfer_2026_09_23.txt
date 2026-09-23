@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.py
+runner_sha256: d9c93dcc96136036a3544c35bdfd07f49c3279c8e63304e616058def2c9e44db
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 46.00
+status: ok
+----- stdout -----
+== A. The row transfer reproduces open PR #8746 ==
+[PASS] trace T^2 = 9600 on 2 x 2, the transfer is symmetric, and the top eigenvalues match open PR #8746 on 2 x 2, 2 x 4, 2 x 6 :: lam0 = 60.9137, 2401.3316, 105338.1323
+
+== B. The square 4 x 4 ==
+[PASS] the top eigenvalue falls with the flux across |S| = 0, 2, 4, 6, 8 :: lam = 3244639.0, 2989915.0, 2332665.4, 1526346.9, 822834.3
+[PASS] c(S) = (A / S^2) ln(lam_0 / lam_S) is 0.327 at |S| = 2 and within 3% of it up to |S| = 6 :: c = 0.3270, 0.3300, 0.3352, 0.3430
+
+== C. Shape at equal area ==
+[PASS] the strip 2 x 8 has c = 0.314 at |S| = 2, about 4% below the square's :: 0.3137 vs 0.3270
+
+== D. Strips of width 2 ==
+[PASS] c at |S| = 2 rises with the strip's length, b = 2, 4, 6, 8, 10 :: 0.2808, 0.3073, 0.3121, 0.3137, 0.3145
+
+time 46 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

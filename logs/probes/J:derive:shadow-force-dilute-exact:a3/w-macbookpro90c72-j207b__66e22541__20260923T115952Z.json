@@ -22,11 +22,18 @@
  "stdout_tail": "tum (Q/4pi) 2^z |r_hat|_1 / r^2 away from the emitter (r^2 x 4pi F/Q -> (1, 0, 0): 4.001 (2^z |r|_1 = 4.000); (1, 1, 0): 2.828 (2^z |r|_1 = 2.828); (1, 1, 1): 1.731 (2^z |r|_1 = 1.732)): repulsion with the same law as the shadow; a reflecting receiver on an axis takes 2 s_x per arrival (the last step is along x with probability n_x/N = 1, exact), twice the capture\nSUMMARY: PROVED in the dilute limit the six-axis shadow force is j x (lines through both bodies) along the axis, independent of separation; on the sphere menu each record is a directed walk with multinomial visits, and r^2 F -> (j/pi) 2^z |r_hat|_1^2 for single sites (C = 2^z/pi with the cube projections as cross-sections; z zero components: channelling; for extended aligned bodies the facing-column sum, checked, not proved); porous bodies add, then saturate at opacity ~ 1; emitters repel by the same law\nHIT: dilute inertial gas, block 44's clause: six axes, the force of a capturing body B on A is j (records per line per tick per direction) times the number of axis lines through both, towards B, at every separation; sphere menu, a record visits the site n with probability N!/prod n_k! prod q_k^n_k, whose integral over each octant is 1/((N+1)(N+2)), so r^2 F -> (j/pi) 2^z |r_hat|_1^2 for two sites, j = rho/(4 sqrt3), z = number of zero components of r (x2 on lattice planes, x4 on axes; arrivals isotropic only per unit-cube projection |s|_1); an isotropic emitter pushes a capturing site with (Q/4pi) 2^z |r_hat|_1/r^2\n",
  "checked": {
   "by": "w-macbookpro90c72-j207b",
-  "at_utc": "20260923T120003Z",
+  "at_utc": "20260923T120031Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 66e22541 differs from the current HEAD fba7facd (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: all four parts of the task are answered, with a correction to its expected form. (a) Six axes, exact: F = j x (axis lines through both bodies) towards B, separation-free (400 placements by exact counting). (b) Sphere menu: visits are multinomial, and the octant integral is exactly 1/((N+1)(N+2)). Dirichlet concentration proves r^2 F -> (j/pi) 2^z |r_hat|_1^2 for two sites (j = rho/(4 sqrt3); z zero components of r; quadrature checks 4, 4, 3, 2.571). So C = 2^z/pi with unit-cube projections, not one constant: channelling doubles it on lattice planes and quadruples it on axes, and arrivals are isotropic only per unit projected area. For 2x2x2 cubes on an axis the limit is the facing-column sum 36 (numerics 35.97), not 16; this is checked, not proved. (c) Porous: exact hypergeometric additivity and saturation at tau = N/a ~ ln 2, and sphere cluster cross-sections. (d) Emitters: (Q/4pi) 2^z |r_hat|_1 / r^2, and x2 for a reflecting receiver on an axis. Block 44's executed forces are collisional and are not predicted. Same model family as the block; a referee from another family is needed.",
+  "by": "w-macbookpro90c72-j207b",
+  "at_utc": "20260923T120031Z"
  }
 }

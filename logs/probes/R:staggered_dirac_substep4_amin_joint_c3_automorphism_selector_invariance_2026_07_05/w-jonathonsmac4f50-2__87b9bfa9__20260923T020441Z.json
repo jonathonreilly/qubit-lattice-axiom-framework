@@ -1,0 +1,36 @@
+{
+ "task": "R:staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_2026_07_05",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_2026_07_05.py",
+ "seed": 29081,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "87b9bfa9",
+ "started_utc": "20260923T020441Z",
+ "elapsed_s": 0.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=27 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "48f093252b7df356dabb366681539a8617d77f76bf0cf1dfbafe3c348ae5c387",
+ "stdout_tail": "m) = tau^a_m for all a, m\n\n[S5] exhaustive word sweep (length <= 4) + homomorphism extension\n\n  PASS  generator-level intertwining: Phi(g) = C g C^-1 for every generator (T_mu and C alike)\n  PASS  homomorphism extension: conjugation is multiplicative, so Phi(w) = C w C^-1 for EVERY word w\n  PASS  word sweep: labeled readout of every word (length <= 4) is sigma-covariant :: 780 words checked\n\n[S6] selector consequence on the transitive orbit\n\n  PASS  sigma is transitive on the corner index set\n  PASS  every sigma-invariant function on the orbit is constant (exhaustive over 27 functions) :: invariant functions found: [(1, 1, 1), (2, 2, 2), (3, 3, 3)]\n  PASS  hence no sigma-invariant (A_min-derivable) selector fixes a bijection to a labeled 3-set\n  PASS  pi_B = pi_A o sigma and pi_B != pi_A (the no-go's counter-model pair)\n\n[S7] negative control\n\n  PASS  negative control: added C_3-breaking H_break = diag(1,0,0) is NOT a fixed point of the joint action :: conjugation moves it; only ADDED (admitted) structure can break the orbit\n  PASS  negative control sanity: H_break's labeled readout profile is non-constant (it would select)\n\n[S8] consumer linkage\n\n  PASS  labeling no-go states the orbit-equivariance invariant this bridge supports\n  PASS  labeling no-go names the P1/P2/P3 closure surface (the admitted routes outside this bridge's scope)\n\n=== SCORECARD ===\n  PASS=27 FAIL=1\n  FAILED: memo supplies (verbatim): 'a law may not depend on a choice not fixed by the supplied struc...'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020442Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=27 FAIL=1' vs cache 'PASS=28 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "R:stationary_dressed_reservoir_shifted_green_profile_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "stationary",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/stationary_dressed_reservoir_shifted_green_profile_2026_07_17.py",
+ "seed": 29104,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "87b9bfa9",
+ "started_utc": "20260923T020504Z",
+ "elapsed_s": 1.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c99d0e983c00ca984064f1aab6743abac6fcea75cdadb4958e36dc0018edd4db",
+ "stdout_tail": "nd one-excitation preparation', \"Cycle216's stiffness/3L+ comparator\", 'shift-invert target exp(+/- i theta/L^(3/2)); among three returned requested-sign candidates choose maximum reservoir squared-norm weight, then normalize and rephase the reservoir amplitude real-positive', 'runner acceptance inventory: L=3,...,9; L=3,...,8 training; held-out L=9; phase ratio [0.96,0.99]; reservoir squared-norm weight (0.45,0.48); held-out profile ratio below 7.1e-4'), 'derived': ('numerically selected closed finite-volume dressed eigenpairs with stationary basis-component squared norms on L=3,...,9', 'local-gate eigenpair-to-q equations and exact local-source plus 3(L-mu)^-1 normalized-tail profile identity conditional on those eigenpair equations', 'tested-size comparison with Cycle216 3L+, covariance, theta=0 parameter endpoint, held-size, uniform-component, and zero-mode controls'), 'not_earned': ('physical energy, a Hamiltonian, eigenphase-as-rate, clock normalization, gravity, stress, or source mass', 'host-side renewal, retarded selection, radiation reaction, moving-source transport, or many-excitation closure', 'a matter Hilbert space or matter/contact update, the Cycle230 contact block, or a whole physical-M2 compiler/intertwiner', 'an interface to the carried-source code; this active fixed reservoir is neither carried nor moving', 'a Record, occurrence law, Born rule, axiom change, or audit authority')}\n\nSUMMARY PASS 16 FAIL 1\nRESULT STATIONARY_DRESSED_SHIFTED_GREEN_PROFILE_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020506Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

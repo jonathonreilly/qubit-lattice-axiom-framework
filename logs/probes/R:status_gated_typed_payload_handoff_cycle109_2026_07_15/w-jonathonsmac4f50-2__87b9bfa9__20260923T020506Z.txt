@@ -1,0 +1,57 @@
+
+===============================================================================
+A - Three open routes and exact integration table
+===============================================================================
+FAIL A01 note exists
+PASS A02 route 1 keeps literal Cycle-105 cap and adds one cap-cage row :: canonical=1 raw=12
+PASS A03 cap-only cage necessarily exposes all three proper-cubic images :: {(4, 7, 2): frozenset({'BACKSTOP'}), (5, 7, 1): frozenset({'BACKSTOP'}), (-2, 1, 1): frozenset({'R_C02'}), (5, 6, 2): frozenset({'BACKSTOP'})}
+PASS A04 reduced literal-cap graph is exact 8-state / 12-edge and terminates with three cages :: states=8 edges=12 terminals=1 bad=()
+PASS A05 route 2 retains 17 Cycle-105 shell/JOIN rows and substitutes one cap row :: canonical=17 raw=408
+PASS A06 status handoff is eight canonical / 192 raw rows :: canonical=8 raw=192
+PASS A07 7,496-row selected union is disjoint, single-valued, and alphabet-closed
+PASS A08 route 3 full Cycle-95 import has exactly six unary-R_LA conflicts :: {(((1, 0, 0), 'R_LA'),): (frozenset({'H1'}), frozenset({'R_B11'})), (((0, -1, 0), 'R_LA'),): (frozenset({'H1'}), frozenset({'R_B11'})), (((0, 0, -1), 'R_LA'),): (frozenset({'H1'}), frozenset({'R_B11'})), (((-1, 0, 0), 'R_LA'),): (frozenset({'H1'}), frozenset({'R_B11'})), (((0, 1, 0), 'R_LA'),): (frozenset({'H1'}), frozenset({'R_B11'})), (((0, 0, 1), 'R_LA'),): (frozenset({'H1'}), frozenset({'R_B11'}))}
+PASS A09 Cycle-95 new transport and Cycle-93 status/final surfaces remain literal-compatible
+
+===============================================================================
+B - Zero-added-source status-gated typed handoff
+===============================================================================
+PASS B01 initial boundary is exactly Cycle-100 terminal with zero Cycle-109 supply
+PASS B02 exact variable set has 46 grown physical records :: 46
+PASS B03 correct payload literally sees JOINT plus grown H1 status :: (((-1, 0, 0), 'H1'), ((0, 0, -1), 'JOINT'))
+PASS B04 correct handoff writes one directed onsite R_B11 payload
+PASS B05 every schedule reaches one complete 46-write terminal :: states=11320 edges=54066 terminals=1 max=9
+PASS B06 terminal exposes only the first repaired-rail append :: {(-2, 1, 1): frozenset({'R_C02'})}
+
+===============================================================================
+C - Required rail product and 101-slice late-alias control
+===============================================================================
+PASS C01 all 96 required rail appends remain exact singleton fronts :: []
+PASS C02 new handoff support is rail-separated and no handoff row aliases any rail prefix :: distance=7 hits=[]
+PASS C03 exact locality product is 1,098,040 states / 6,331,122 edges :: states=1098040 edges=6331122
+PASS C04 late-alias control grows 101 full slices / 1,212 records exactly :: []
+
+===============================================================================
+D - Exact reject launch and every literal corruption
+===============================================================================
+PASS D01 injected H0 follows exact STATUS -> AUX -> A_0_0 reject path then quiet :: []
+PASS D02 correct/reject interface is quiet under compatible Cycle-95/Cycle-93 rows :: []
+PASS D03 all eight word flips plus wrong VALID/READY stop before status and payload :: []
+PASS D04 all ten corrupt terminals retain eight exact rail slices :: []
+PASS D05 corrupt graph census is executable and pinned :: [(760, 2274, (29,)), (680, 2022, (28,)), (600, 1770, (27,)), (440, 1186, (26,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]
+
+===============================================================================
+E - Proper-cubic covariance and bounded claim discipline
+===============================================================================
+PASS E01 all 179,904 raw proper-cubic images preserve output :: []
+PASS E02 all positive/fault/corrupt terminal rotations expose only next rail :: []
+FAIL E03 note names exact status-gated substitution
+FAIL E04 note names positive reduced literal-cap cage
+FAIL E05 note carries full N1-N8 discipline
+FAIL E06 note avoids a complete reusable-harness claim
+FAIL E07 note makes no axiom claim
+PASS E08 Cycle 109 writes only runner and review note
+
+GROWN=46 SPINE_JOIN_CANONICAL=17 HANDOFF_CANONICAL=8 UNION_RAW=7496
+LOCAL_STATES=11320 LOCAL_EDGES=54066 PRODUCT_STATES=1098040 PRODUCT_EDGES=6331122
+PASS=26 FAIL=6
+RESULT=FAIL

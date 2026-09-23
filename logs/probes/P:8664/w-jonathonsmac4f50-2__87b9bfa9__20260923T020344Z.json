@@ -1,0 +1,36 @@
+{
+ "task": "P:8664",
+ "type": "pr-reexecution",
+ "lane": "order-blind-zeros-and-holes-20260922",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8664",
+ "pr": 8664,
+ "branch": "claude/order-blind-zeros-and-holes-20260922",
+ "git_sha": "87b9bfa9",
+ "started_utc": "20260923T020344Z",
+ "elapsed_s": 17.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "eae346382e5163f3beed5ef2699fd2deb531ac4b9573875ffb8a73cffcbad5df",
+ "stdout_tail": "PR #8664: docs(campaign): order-blind formation with zeros and holes\nbranch claude/order-blind-zeros-and-holes-20260922 (base main)\nrunners in the PR: 1\n== scripts/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.py: rc=0 PASS=14 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020401Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

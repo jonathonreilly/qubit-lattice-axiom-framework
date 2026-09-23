@@ -1,0 +1,4 @@
+PR #8664: docs(campaign): order-blind formation with zeros and holes
+branch claude/order-blind-zeros-and-holes-20260922 (base main)
+runners in the PR: 1
+== scripts/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.py: rc=0 PASS=14 FAIL=0

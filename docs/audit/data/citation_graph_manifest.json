@@ -1,6 +1,6 @@
 {
- "edge_count": 13767,
- "node_count": 6281,
+ "edge_count": 13772,
+ "node_count": 6286,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2766,9 +2766,17 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "clock_all_mode_coercivity_finite_graph_states_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "19a59dfa7d56",
+   "out_degree": 2
+  },
   "clock_penalty_local_normal_form_and_simultaneous_ground_state_limit_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "clock_variance_calibrated_joint_rotor_transfer_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "0181264194bd",
+   "out_degree": 1
   },
   "closure_c_bb_canonical_mass_coupling_note_2026-05-10_cbb": {
    "deps_hash": "2d20f59c98da",
@@ -6581,6 +6589,10 @@
   "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07": {
    "deps_hash": "3082e5eb18d6",
    "out_degree": 3
+  },
+  "gauge_wilson_selected_infinite_static_source_sector_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "3013f159bb7a",
+   "out_degree": 2
   },
   "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07": {
    "deps_hash": "205cf1d98d21",
@@ -24438,6 +24450,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "work_history.review_loop.pr8029.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "work_history.review_loop.pr8137.pr8137_approach_registry": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -24555,6 +24571,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8161.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8162.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

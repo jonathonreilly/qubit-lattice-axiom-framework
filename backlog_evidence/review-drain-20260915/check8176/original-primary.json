@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py"
+  ],
+  "exit": 0,
+  "wall": 2.1415155839640647,
+  "user_cpu": 1.889136,
+  "system_cpu": 0.05407,
+  "max_rss_bytes": 68485120,
+  "wall_limit": 35,
+  "cpu_limit": 25,
+  "memory_design": "finite graphs max225 sites; exact layered subset states max2^10; observed RSS"
+}

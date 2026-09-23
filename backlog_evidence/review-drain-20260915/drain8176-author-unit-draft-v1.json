@@ -1,0 +1,425 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8176",
+  "constituents": [
+    {
+      "id": "PR8176",
+      "head": "ee73bef6a1f37590abacdd2cf4a13900019a1e64",
+      "delta_base": "9a3ffc8d913c6f09d822ef19975073d93df0f8ee",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-author-source-handoff-v1.json",
+        "sha256": "e151efadf396c4d0b67f45096b781ac6432c76750f9cd289f486641b325c3a15",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+    "commit": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+    "tree": "7f5b50cdc4c3b1e475cbaadc3bf861a7052b298d",
+    "paths": [
+      {
+        "path": "docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+        "sha256": "10003c417a65f6d7b14bc50a7d7b191b777d08d11811fac448ebd3d774bf4448"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/README.md",
+        "sha256": "f9b43af78bb68f8f7e25cdb9617acd785c4dd94e88182251cbc19ceb61447e50"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-01-APPROACH_REGISTRY.md.gz",
+        "sha256": "86f481250cefdae4750679638bdaed3cf75475828203c0fedc6b1e6ee64f4b58"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-02-CHECKER_block32_findings.md.gz",
+        "sha256": "c946e7cd06e28081ac1907ce8ab5eef7cfd7f4131a05506acea44cb674b10d53"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-03-CLAIM_STATUS_CERTIFICATE_block32.md.gz",
+        "sha256": "f78522e1ef359dda3344a5b707dc993a89a3f01f7adbae6544ccc9cdd76aa96a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-04-GOAL_block32.md.gz",
+        "sha256": "33d70a97083f7cce3f0788167b38ea3114164d579be8f032cb36a0eedf14cea5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-05-HANDOFF.md.gz",
+        "sha256": "9fd6f8f26f33c78b34170245fe0719cd541d017c0d846e4ea5e28b4c1c103fec"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-06-NO_GO_LEDGER.md.gz",
+        "sha256": "98210929885b9b3c1e3e9084db9719d1be61235f0f14e070dd613ecac7dd53d5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-07-OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "23f0254bfe054f78300b66775b17a4d7d6f8bf5dd49bc91229c9cebd7fab610c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-08-RESULTS_block32.md.gz",
+        "sha256": "282895582c87b18334d9685c628b5a302b86db02bed286c66d48c25f207ef73c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-09-REVIEW_HISTORY.md.gz",
+        "sha256": "56491cba2d7516991129261ac8e71460abf790850b472907937a3eecfab4026a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-10-STATE.yaml.gz",
+        "sha256": "8f3f468fa33eeaef1318f7a3ff12a54db71374d5613ce72a09548069656a887e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-11-TRACE_GATE.md.gz",
+        "sha256": "d2f3dd479039035fcdb35a40aa97a640d237f1cbeadc1643e54eb87fbfca8757"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-12-supervisor_control_block32_climb.out.txt.gz",
+        "sha256": "185b66426020f1b72df58329f09d4d39d31865962ea1173ba219673721dfe368"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-13-supervisor_control_block32_climb.py.gz",
+        "sha256": "9aa45059efc09d71588be00393d372118d8163e7b2e201bf8ac3f10b92d80d70"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-14-supervisor_control_block32_climb_seeded.out.txt.gz",
+        "sha256": "c3f3c0991d153bb84925eb8ac7f90f700c6e10266f3dfac5f27cc22f0a9df9b9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-15-supervisor_control_block32_climb_seeded.py.gz",
+        "sha256": "3ba57b168beb6396c1b6ad6dd6938f6cb5f262619d11b97c9df964746f3959ff"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-16-supervisor_control_block32_crosscheck.out.txt.gz",
+        "sha256": "d78c78b8c6ebd11d976723aab23b0b96b2ce0ba740517b04dd498e50a2718277"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-17-supervisor_control_block32_crosscheck.py.gz",
+        "sha256": "f295d50923bb0bc3232a726b0cbb175d01391be8503c1dd7e2a168b58ec21161"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-18-supervisor_control_block32_mintree.out.txt.gz",
+        "sha256": "6d5fedb66307ffd948378d98ab07a8aef8fc67ffebcd2821261d930e4037cd73"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-19-supervisor_control_block32_mintree.py.gz",
+        "sha256": "cb474db341a635ac1b4916368383f31f996669a41b50f75987ee6477a698f1a7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-20-supervisor_control_block32_refuter.out.txt.gz",
+        "sha256": "2b12c7917ea0b3abff023be333f6532b9a9978826b58fffcdbe8ad8c7af43c73"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-21-supervisor_control_block32_refuter.py.gz",
+        "sha256": "2f195f66b8a5b3653118d116c6ee447f0c4d761f2e11197e65c666a067cb1515"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-22-supervisor_control_block32_ssdp.out.txt.gz",
+        "sha256": "dc44897aa2e741cfde188d190758c707cfa7c6e2607e8f8a9533f3572686cf4a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-23-supervisor_control_block32_ssdp.py.gz",
+        "sha256": "caadb37e4d3aa8dacb02830e405de33e83defd6fde35ef34a8124655e78d8a6a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-24-supervisor_control_block32_treedp.out.txt.gz",
+        "sha256": "5c9f24db138e6d02f3a0a542da924bdb402dc60d2e68b33d24aa18020e5e5ea1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-25-supervisor_control_block32_treedp.py.gz",
+        "sha256": "37586890b07c3aa95c2e9dbf6dbcd1384bf987b78aa33d5aa0f787838ce24877"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-26-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md.gz",
+        "sha256": "bd0b72ba7ee1f68d65e50038872a8023b63be96f8d4ead764e038da31fd5c354"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-27-citation_graph_manifest.json.gz",
+        "sha256": "deeff2c6a81db188a9cf88eb107a1d6b23a39597804caf4be8c68c8b45c13318"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-28-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.txt.gz",
+        "sha256": "3c74f6c912e43ecb80e9c706dd1f98f5bc78ac2b7abdd7bfd0853d4fda3d1797"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/originals/pr8176-29-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py.gz",
+        "sha256": "f0dfc146c4bd234c30f878516e351da21b0294234122ec5f983dabebcd4477f1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/pr8176-deferred-science.txt",
+        "sha256": "cc4879c533169cc3e584c1300e38bb8e2498eb11bf7aa5be506f1fb941f57f18"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/pr8176-original-delta.patch.gz",
+        "sha256": "5d2dff5f73c274568e418df41204d1c829611e2d373d548b1e115c3236e30f5c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/pr8176-original-manifest.json",
+        "sha256": "e7d9e88fd9fd90e45dc065b4fff4185144b2a09e1433c5825559657c93ad8faa"
+      },
+      {
+        "path": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+        "sha256": "d124f4480a52ad253510138c06792ee0a6f148acb8e0d27a582fd658f439375a"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+        "sha256": "10003c417a65f6d7b14bc50a7d7b191b777d08d11811fac448ebd3d774bf4448"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+        "sha256": "d124f4480a52ad253510138c06792ee0a6f148acb8e0d27a582fd658f439375a"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+        "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+        "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+        "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+        "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+        "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+        "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+        "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+        "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/README.md",
+        "sha256": "f9b43af78bb68f8f7e25cdb9617acd785c4dd94e88182251cbc19ceb61447e50"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/pr8176-deferred-science.txt",
+        "sha256": "cc4879c533169cc3e584c1300e38bb8e2498eb11bf7aa5be506f1fb941f57f18"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8176/pr8176-original-manifest.json",
+        "sha256": "e7d9e88fd9fd90e45dc065b4fff4185144b2a09e1433c5825559657c93ad8faa"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8176; staged current-base cold and final evidence confirmation pending",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8176-review-original.json",
+      "sha256": "88561466f7eafe617ad720cf6654691a4bd363158f8f7a0fe2b14775c3d7222e"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-author-prepared-v1.json",
+        "sha256": "a0eb6355b6d81816b1a6ad1802de24e74839411e61decccf32e9142ce11a80ed"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-source-freeze-v1.json",
+        "sha256": "52bd69da1c0520b7e852c3ad98f88b962da47fe1a700ac020af361e77062ee7b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-author-handoff-v1.json",
+        "sha256": "d26eb3e88cbfe8ff7295dfdf899569851c82b8bdad0c843573ace143d6cfe287"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-author-dispositions-v1.json",
+        "sha256": "64a980b44e6c200165a0c091e6c23cc8cd5f6da68008b2215cd7c993a7caccb8"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-author-corrections-v1.patch",
+        "sha256": "df2785f9a4b7f6890fb6e37b8884a703215a44fa12c4e9d429bb2f3196797876"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-source-input-discovery-v1.json",
+        "sha256": "3cc58c4cc3f94713df689559ff663050635a7550a7b25007e4aeff6aea6ac5f3"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-resource-plan-v1.json",
+        "sha256": "7d311b2da5dd0fba794df723c4302900e791b026e9c5b8ebbaa3ab531a576a92"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-review-original.json",
+        "sha256": "88561466f7eafe617ad720cf6654691a4bd363158f8f7a0fe2b14775c3d7222e"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-review-original.md",
+        "sha256": "d52821c8be37d13c120dd80bbe69d54bf5a2f7e22ed8de67f22e946b172fd571"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-early-review-v1.json",
+        "sha256": "15fa0b9c897716f04ef96791c2b23cb10285dac78d16713873e8a74ba242a77f"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-early-review-v1.md",
+        "sha256": "e42f10ab3cbc04c236cb30a02dd2defbb3ad8c405f387db09532fed056cd59ef"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-adapter-authority-v1.json",
+        "sha256": "ba4d6b8f4f23b1d1bcaeeeb0bce84af9af596c120b99672e625e608ed1dc6689"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8176/affected-preservation-v1.json",
+        "sha256": "b4afee975cfd20159bbcd153bcff54c3be34eb0090aef2f86d25a75a3e415780"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-adapter-bindings-v1.json",
+        "sha256": "0e7b83ed6b71957aca11875a0e72b6cb6398a9807bc0c7ee971438817e7a2ef9"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-build-staged-draft-v1.py",
+        "sha256": "04a86e98129137c9e5bf8d3035784c7940b3db66fda2c3ccfcf4faf200b6c563"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-author-cache-api-v1.json",
+        "sha256": "41fd9f0494d771dae694265a7084d5b5d0afc7713e1c358304355a2c3dd05bff"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8176-author-source-handoff-v1.json",
+        "sha256": "e151efadf396c4d0b67f45096b781ac6432c76750f9cd289f486641b325c3a15"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "claim_id": "marked_tree_single_seed_dynamic_program_and_finite_rational_certificates_bounded_theorem_note_2026-09-17",
+      "declared_claim_id": "marked_tree_single_seed_dynamic_program_and_finite_rational_certificates_bounded_theorem_note_2026-09-17",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/work_history/review_loop/pr8176/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "dependency_rationale": "Complete finite component and single-seed dynamic-program proofs, explicit tree ratios, four supplied-recursion rational points and conditional scalar algebra. Restricted ratio domain,36-mark count and real/integer scope repaired; complete negative implication remains readable deferred science. Framework memo context and product-law context are explicit; no helper, upstream phase theorem or global construction premise. Branch retention required."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8176/README.md",
+      "rationale": "Recovery index only; complete original note remains readable history with explicit corrections, and all 29 original payloads are exact. Complete corrected finite proofs reside in the canonical note; historical samplers and empirical claims are not inputs or supporting premises.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8176-early-review-v1.json",
+        "sha256": "15fa0b9c897716f04ef96791c2b23cb10285dac78d16713873e8a74ba242a77f"
+      }
+    }
+  ]
+}

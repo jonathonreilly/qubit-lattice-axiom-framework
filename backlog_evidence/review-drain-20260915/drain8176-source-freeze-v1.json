@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "source": [
+    {
+      "path": "docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "mode": "100644",
+      "sha256": "10003c417a65f6d7b14bc50a7d7b191b777d08d11811fac448ebd3d774bf4448"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/README.md",
+      "mode": "100644",
+      "sha256": "f9b43af78bb68f8f7e25cdb9617acd785c4dd94e88182251cbc19ceb61447e50"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-01-APPROACH_REGISTRY.md.gz",
+      "mode": "100644",
+      "sha256": "86f481250cefdae4750679638bdaed3cf75475828203c0fedc6b1e6ee64f4b58"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-02-CHECKER_block32_findings.md.gz",
+      "mode": "100644",
+      "sha256": "c946e7cd06e28081ac1907ce8ab5eef7cfd7f4131a05506acea44cb674b10d53"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-03-CLAIM_STATUS_CERTIFICATE_block32.md.gz",
+      "mode": "100644",
+      "sha256": "f78522e1ef359dda3344a5b707dc993a89a3f01f7adbae6544ccc9cdd76aa96a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-04-GOAL_block32.md.gz",
+      "mode": "100644",
+      "sha256": "33d70a97083f7cce3f0788167b38ea3114164d579be8f032cb36a0eedf14cea5"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-05-HANDOFF.md.gz",
+      "mode": "100644",
+      "sha256": "9fd6f8f26f33c78b34170245fe0719cd541d017c0d846e4ea5e28b4c1c103fec"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-06-NO_GO_LEDGER.md.gz",
+      "mode": "100644",
+      "sha256": "98210929885b9b3c1e3e9084db9719d1be61235f0f14e070dd613ecac7dd53d5"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-07-OPPORTUNITY_QUEUE.md.gz",
+      "mode": "100644",
+      "sha256": "23f0254bfe054f78300b66775b17a4d7d6f8bf5dd49bc91229c9cebd7fab610c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-08-RESULTS_block32.md.gz",
+      "mode": "100644",
+      "sha256": "282895582c87b18334d9685c628b5a302b86db02bed286c66d48c25f207ef73c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-09-REVIEW_HISTORY.md.gz",
+      "mode": "100644",
+      "sha256": "56491cba2d7516991129261ac8e71460abf790850b472907937a3eecfab4026a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-10-STATE.yaml.gz",
+      "mode": "100644",
+      "sha256": "8f3f468fa33eeaef1318f7a3ff12a54db71374d5613ce72a09548069656a887e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-11-TRACE_GATE.md.gz",
+      "mode": "100644",
+      "sha256": "d2f3dd479039035fcdb35a40aa97a640d237f1cbeadc1643e54eb87fbfca8757"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-12-supervisor_control_block32_climb.out.txt.gz",
+      "mode": "100644",
+      "sha256": "185b66426020f1b72df58329f09d4d39d31865962ea1173ba219673721dfe368"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-13-supervisor_control_block32_climb.py.gz",
+      "mode": "100644",
+      "sha256": "9aa45059efc09d71588be00393d372118d8163e7b2e201bf8ac3f10b92d80d70"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-14-supervisor_control_block32_climb_seeded.out.txt.gz",
+      "mode": "100644",
+      "sha256": "c3f3c0991d153bb84925eb8ac7f90f700c6e10266f3dfac5f27cc22f0a9df9b9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-15-supervisor_control_block32_climb_seeded.py.gz",
+      "mode": "100644",
+      "sha256": "3ba57b168beb6396c1b6ad6dd6938f6cb5f262619d11b97c9df964746f3959ff"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-16-supervisor_control_block32_crosscheck.out.txt.gz",
+      "mode": "100644",
+      "sha256": "d78c78b8c6ebd11d976723aab23b0b96b2ce0ba740517b04dd498e50a2718277"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-17-supervisor_control_block32_crosscheck.py.gz",
+      "mode": "100644",
+      "sha256": "f295d50923bb0bc3232a726b0cbb175d01391be8503c1dd7e2a168b58ec21161"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-18-supervisor_control_block32_mintree.out.txt.gz",
+      "mode": "100644",
+      "sha256": "6d5fedb66307ffd948378d98ab07a8aef8fc67ffebcd2821261d930e4037cd73"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-19-supervisor_control_block32_mintree.py.gz",
+      "mode": "100644",
+      "sha256": "cb474db341a635ac1b4916368383f31f996669a41b50f75987ee6477a698f1a7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-20-supervisor_control_block32_refuter.out.txt.gz",
+      "mode": "100644",
+      "sha256": "2b12c7917ea0b3abff023be333f6532b9a9978826b58fffcdbe8ad8c7af43c73"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-21-supervisor_control_block32_refuter.py.gz",
+      "mode": "100644",
+      "sha256": "2f195f66b8a5b3653118d116c6ee447f0c4d761f2e11197e65c666a067cb1515"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-22-supervisor_control_block32_ssdp.out.txt.gz",
+      "mode": "100644",
+      "sha256": "dc44897aa2e741cfde188d190758c707cfa7c6e2607e8f8a9533f3572686cf4a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-23-supervisor_control_block32_ssdp.py.gz",
+      "mode": "100644",
+      "sha256": "caadb37e4d3aa8dacb02830e405de33e83defd6fde35ef34a8124655e78d8a6a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-24-supervisor_control_block32_treedp.out.txt.gz",
+      "mode": "100644",
+      "sha256": "5c9f24db138e6d02f3a0a542da924bdb402dc60d2e68b33d24aa18020e5e5ea1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-25-supervisor_control_block32_treedp.py.gz",
+      "mode": "100644",
+      "sha256": "37586890b07c3aa95c2e9dbf6dbcd1384bf987b78aa33d5aa0f787838ce24877"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-26-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md.gz",
+      "mode": "100644",
+      "sha256": "bd0b72ba7ee1f68d65e50038872a8023b63be96f8d4ead764e038da31fd5c354"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-27-citation_graph_manifest.json.gz",
+      "mode": "100644",
+      "sha256": "deeff2c6a81db188a9cf88eb107a1d6b23a39597804caf4be8c68c8b45c13318"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-28-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.txt.gz",
+      "mode": "100644",
+      "sha256": "3c74f6c912e43ecb80e9c706dd1f98f5bc78ac2b7abdd7bfd0853d4fda3d1797"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/originals/pr8176-29-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py.gz",
+      "mode": "100644",
+      "sha256": "f0dfc146c4bd234c30f878516e351da21b0294234122ec5f983dabebcd4477f1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/pr8176-deferred-science.txt",
+      "mode": "100644",
+      "sha256": "cc4879c533169cc3e584c1300e38bb8e2498eb11bf7aa5be506f1fb941f57f18"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/pr8176-original-delta.patch.gz",
+      "mode": "100644",
+      "sha256": "5d2dff5f73c274568e418df41204d1c829611e2d373d548b1e115c3236e30f5c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8176/pr8176-original-manifest.json",
+      "mode": "100644",
+      "sha256": "e7d9e88fd9fd90e45dc065b4fff4185144b2a09e1433c5825559657c93ad8faa"
+    },
+    {
+      "path": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+      "mode": "100644",
+      "sha256": "d124f4480a52ad253510138c06792ee0a6f148acb8e0d27a582fd658f439375a"
+    }
+  ],
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "snapshot": "/private/tmp/review-drain-20260915/drain8176-prepared-source-v1",
+  "prepared_sha256": "a0eb6355b6d81816b1a6ad1802de24e74839411e61decccf32e9142ce11a80ed"
+}

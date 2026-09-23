@@ -1,0 +1,37 @@
+{
+  "boundary": "Root serialized application of two independently accepted additive helper mappings; all source capture remains pending",
+  "accepted_review": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-early-review-v2.json",
+    "sha256": "a440feea0e62644e0ca0190f11b1cb1f69e9d9420b5514783675cfcd81fc138e"
+  },
+  "changes": [
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "current_sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "current_sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    }
+  ]
+}

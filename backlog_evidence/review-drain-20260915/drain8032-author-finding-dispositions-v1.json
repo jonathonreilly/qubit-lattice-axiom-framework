@@ -1,0 +1,114 @@
+{
+  "findings": [
+    {
+      "id": "8032-DEP",
+      "original_finding": {
+        "id": "8032-DEP",
+        "kind": "PROOF_OBLIGATION",
+        "severity": "repair-before-landing",
+        "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "lines": "7,29,65",
+        "evidence": "Original parent ID/link names the closed PR8031 broad negative source, absent from current main; only its positive compression/shell/path source landed. The new proof needs those positive identities, not the deferred finite-unitarity exclusion.",
+        "fix": "Bind metadata and markdown link to GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md. Preserve parent8031 negative disposition; do not restore its unlanded broad source. Current uniform-gap source supplies the separate weak-regime neutral full-ground argument."
+      },
+      "author_correction": "Actual positive parent link and dependency; broader negative certification not imported"
+    },
+    {
+      "id": "8032-N5",
+      "original_finding": {
+        "id": "8032-N5",
+        "kind": "BUG",
+        "severity": "repair-before-landing",
+        "path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py; scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+        "lines": "95;165",
+        "evidence": "lattice_wide allocates two checks to a 2x2 restricted-ground example and scalar trace arithmetic, and three checks to scalar/one-plaquette budget and artificial distant-volume arithmetic. These do not execute lattice-wide energy control. The actual-R1 per_site group is neutral 3x3 spectral algebra rather than site-resolution measurement.",
+        "fix": "Remap all 40 and22 actual predicates to honest resolution groups; explicitly mark unexecuted lattice-wide class checked and not executed with substantive reason. Finite cubic-box incidence may have its actual finite graph scope, not arbitrary-volume dynamics. Keep rational adverse outcomes and original outputs recoverable. Resource guards are additional guards, not new mathematical checks."
+      },
+      "author_correction": "All 40/22 predicates retained with exact scope partitions and zero unexecuted site/lattice classes"
+    },
+    {
+      "id": "8032-GOV",
+      "original_finding": {
+        "id": "8032-GOV",
+        "kind": "REPO_GOVERNANCE",
+        "severity": "repair-before-landing",
+        "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "lines": "31-41,65,156-201",
+        "evidence": "Live proof uses block41/42, root/native publication history and branch-local PROOF_REVIEW as a durable citation. Original packet includes campaign state, authored prior review PASS and generated ledger/readiness records.",
+        "fix": "Translate live source into native theorem language, explicitly say a is supplied temporal-scaling kinetic parameter, archive all84 original path/mode/blob/bytes with current source and both complete derivations retained. Keep historical successes/failures non-authoritative. Preserve the actual full-ground and finite-evidence limitations. No new axiom/primitive or Nature-grade assertion."
+      },
+      "author_correction": "Scientific source names, explicit temporal a, full alternative derivation live, all84 exact recoveries"
+    },
+    {
+      "id": "8032-EVIDENCE",
+      "original_finding": {
+        "id": "8032-EVIDENCE",
+        "kind": "AUDIT_COMPATIBILITY",
+        "severity": "repair-before-landing",
+        "path": "logs/runner-cache/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.txt; logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt",
+        "lines": "1-20",
+        "evidence": "Historical caches bind original runner bytes, not the corrected source/current proof inputs. Both one-line helper registrations are useful but original entire registry files are stale relative to main. citation manifest is stale topology acknowledgment.",
+        "fix": "Keep the two source-local helper registrations by narrow additions onto current main, freeze actual discovered primary/helper/note/premise inputs and execute only after cold clearance. Replace caches with captured current evidence; regenerate manifest from intended topology in root combined validation. Strip generated audit authority, never migrate old ledger as authority."
+      },
+      "author_correction": "Three actual inputs per runner; exact input hashes; exclusive JSON results; two narrow externally proposed helper-map additions; no old generated authority imported"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "local_ground_budget",
+      "disposition": "ACCEPT",
+      "reason": "Full tensor-carrier minimum and positive bounded incident face terms give E_e<=2v n_e<=8v by mixed vacuum replacement. Neutrality is separate; restricted arbitrary subspace example is only logical premise-control."
+    },
+    {
+      "claim": "charged_projection",
+      "disposition": "ACCEPT",
+      "reason": "Full-irrep endpoint covariance and distinct-link PWP identity yield the external-source trial, normalized color trace/3 and q>=1-E_path/e_R. Need integer R>=1,a>0,theta<1."
+    },
+    {
+      "claim": "kinetic_commutator",
+      "disposition": "ACCEPT",
+      "reason": "Smooth finite PW domain, trace(T)=0 and sum T_A^2=8I/3 give exact expectation4d/a and norm4d/a+4sqrt(d E_path/a). Projection pairing produces sqrt(theta) times this norm; no state-norm-to-energy leap."
+    },
+    {
+      "claim": "local_magnetic_commutator",
+      "disposition": "ACCEPT",
+      "reason": "Signs PWQVP-PVQWP correct; non-touching color-scalar faces commute; actual face fusion kills all-interior leakage and touching count<=4d. No volume norm introduced."
+    },
+    {
+      "claim": "rayleigh_upper_and_uniformity",
+      "disposition": "ACCEPT",
+      "reason": "Full ground implies nonnegative numerator. Positive explicit numerator divided by1-theta is safe; equations8/9 agree, fixed a,v,d limit4d/a uniform ambient finite graph, relative growing-d condition h_R/d->infinity sufficient. It bounds trial/sector infimum, not equality of charged minimum."
+    },
+    {
+      "claim": "actual_R1_ground",
+      "disposition": "ACCEPT",
+      "reason": "Three neutral loop characters span physical cutoff space by bivalent matching. Exact two remaining eigenvectors/eigenvalues and E0<4 plus nonnegative V establish full-carrier ground. No arbitrary numerical weak-window threshold is inferred."
+    },
+    {
+      "claim": "actual_R1_projection_and_energy",
+      "disposition": "ACCEPT",
+      "reason": "Independent X=MU character/Cayley route confirms G=diag(1,1/3,1/9), J offdiagonal1/18,1/54,1/54. Electric patterns4,16,12 keep all three M links. Exact excess454685351/113607549 in(4,4.01), q45002/45009, rational upper14650177783/3506250000; local sufficient bound passes, crude theta0>1."
+    },
+    {
+      "claim": "framework_or_hardware_physics",
+      "disposition": "OPEN not asserted",
+      "reason": "Supplied Wilson dynamics, Haar cutoff,a,v,physical neutral ground and postselected trial remain named. Registered primitives do not select dynamics/coupling or realize C. No lower confinement, continuum or infinite-volume charged-minimum convergence claim."
+    },
+    {
+      "claim": "inherited_parent_negative_certification",
+      "disposition": "DEFERRED unchanged parent disposition",
+      "reason": "Parent8031 formal universal finite-unitarity/no-operator-norm-convergence certification remains deferred. Its actual positive compression and path results are sufficient here. No new N1 five-family certification granted."
+    },
+    {
+      "claim": "historical_generator_and_restricted_control",
+      "disposition": "SUPERSEDED preserved",
+      "reason": "Original root trace2 delta mismatch was corrected to delta only; historical first scalar4>0 restricted-minimum check replaced by2x2 example. Exact originals remain in snapshot; do not revive historical incorrect normalization."
+    },
+    {
+      "claim": "historical_status_and_validation",
+      "disposition": "ARCHIVE",
+      "reason": "Prior PASS and generated unaudited/readiness rows are historical execution/review records, not current proof or audit authority."
+    }
+  ],
+  "independent_confirmation": "PENDING original reviewer"
+}

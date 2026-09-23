@@ -1,0 +1,78 @@
+{
+  "status": "NARROW IO REPAIR; SAME-SESSION AFFECTED CONFIRMATION PENDING",
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "source_files": 82,
+  "original_paths": 84,
+  "changed_paths": [
+    "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+    "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+  ],
+  "unchanged": "All notes, three inputs, mathematical AST outside _emit, all40/22 scientific checks, archives, and shared registry proposals remain byte-identical to v1.",
+  "output_contract": {
+    "default": "No JSON filesystem write; canonical artifacts may already exist. Ordinary stdout unchanged.",
+    "json_flag": "--json prints the same structured result to stdout without a filesystem requirement.",
+    "optional_sidecar_env": "AUDIT_RESULT_SIDECAR",
+    "sidecar": "Caller supplies an absolute unique external path with existing parent directory. Exclusive creation; existing evidence never overwritten. Internal or relative paths rejected.",
+    "canonical_json": "No runner writes canonical JSON. Capture retains external same-run JSON and may separately package verified evidence; ordinary execution never depends on canonical JSON absence."
+  },
+  "source_ast_preservation": [
+    {
+      "path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "v1_sha256": "8457e1c7adff154addaa9a476cabcb1b087d3d46a7a16e581a5f1f0b91d7625f",
+      "v2_sha256": "21ebc8258ba0db6b39f502261bfa416e89ee28d882d46f45aae4ecb0f677e8d7",
+      "all_ast_except_emit_identical": true
+    },
+    {
+      "path": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "v1_sha256": "d64149ff67bde3f8965c70d5319bc11ef3ee003392298b5ed5d771de32994309",
+      "v2_sha256": "65be3fa85929ca0cc3562e9cb51047304d2d4620fb49a01e50c018802b5f20b8",
+      "all_ast_except_emit_identical": true
+    }
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-prepared-v2.json",
+      "sha256": "028cf8f3a2ede1b68e22bcaed3584006c8b2f7182bd9f013b6c538d917652839"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-prepared-v2-source-freeze.json",
+      "sha256": "7ec9664ae64bc3380cf2c946808fc16da3e45576fa92e31122c9208dea926902"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-full-mapping-v2.json",
+      "sha256": "28d50658d7bdcc80cff0847906f44ffd405a7fc5e90066f2e42947b10c3da4e9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-discovery-v2.json",
+      "sha256": "521e7ab73e7b29600a125b2bc4816a65ebffc44d4c516af2b5ad8084719f88b7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-input-resource-plan-v2.json",
+      "sha256": "269e4a415fa6316f4922d9c54c136d0414f85b7c2683d6b712f746f3a74a4b6b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-finding-dispositions-v2.json",
+      "sha256": "0831142147f65e48ce5405cbd680c18105c4a1f3e9dbe64fe057a660f04deedd"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-io-v1-to-v2.diff",
+      "sha256": "63743f483cf30c1ed276beb570327fb209032b716eed1ef89c5f7f3fe09a055f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-io-control-receipt-v2.json",
+      "sha256": "0366ea0ace10fe60f633f777f47ac2f67862bfdf456c8ddf41827f8b4af71c65"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-handoff-v1.json",
+      "sha256": "ca7a706f64745fbb3fe72ed345fb0f9d517cc0f66d61b9840f0f87742c52cab1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-early-review-v1.json",
+      "sha256": "31b53d82c3da5deeaba512187099de628dd6f0fb0d98b64774050d2b893f8f87"
+    }
+  ],
+  "science_executions": 0,
+  "staging": 0,
+  "gates": 0,
+  "draft_status_changed": false
+}

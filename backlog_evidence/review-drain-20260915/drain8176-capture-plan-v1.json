@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "kind": "proposed-root-owned-capture-and-mathematical-control-plan-not-executed",
+  "primary": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+  "primary_sha256": "d124f4480a52ad253510138c06792ee0a6f148acb8e0d27a582fd658f439375a",
+  "runtime_inputs": [
+    {
+      "path": "docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "sha256": "10003c417a65f6d7b14bc50a7d7b191b777d08d11811fac448ebd3d774bf4448",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "context only, not mathematical premise"
+    }
+  ],
+  "input_fingerprint": "492585553d25a503803907c90ba2140c60b2867ec24799fbef791bbf18b773e7",
+  "helpers": [],
+  "cache_destination": "logs/runner-cache/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.txt",
+  "stdout_only": true,
+  "json_outputs": [],
+  "primary_output_writes": [],
+  "runner_cache_result_contract": "Original API merges primary stderr into stdout; result.stderr is empty by design. Raw result is serialized before original source/input generation comparison, unchanged return identity.",
+  "primary_limits": {
+    "wall_seconds": 60,
+    "memory_bytes": 402653184,
+    "enforcement": "External sampled aggregate process-tree RSS including supervisor, worker and descendants; interval .02s plus ps overhead; not an OS hard reservation; kills process group and recorded descendants on violation."
+  },
+  "completed_check_count": 22,
+  "primary_invocations": 1,
+  "all_mutation_definitions": {
+    "forks_dropped_in_family": "B",
+    "isolated_seed_cost_wrong": "B",
+    "zb_mark_count_wrong": "C",
+    "real_boundary_rounded": "E",
+    "extremal_marks_wrong": "C",
+    "family_bound_asserted": "C",
+    "witness_tree_wrong": "D",
+    "certificate_wrong": "E",
+    "floor_wrong": "E",
+    "claim_transition_injected": "F",
+    "claim_classical_name_in_theorem": "F"
+  },
+  "mathematical_controls": {
+    "isolated_seed_cost_wrong": {
+      "expected_family": "B",
+      "expected_failed_tags": [
+        "B3"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 21,
+        "failed": 1
+      },
+      "mechanism": "Replace expected singleton zero cost with1; preserve fixture and algorithm."
+    },
+    "zb_mark_count_wrong": {
+      "expected_family": "C",
+      "expected_failed_tags": [
+        "C4"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 21,
+        "failed": 1
+      },
+      "mechanism": "Replace true36 distinct marks target by erroneous108; preserve all coordinates."
+    },
+    "real_boundary_rounded": {
+      "expected_family": "E",
+      "expected_failed_tags": [
+        "E3"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 21,
+        "failed": 1
+      },
+      "mechanism": "Add incorrect real p>=368 demand to exact p36799/100 scalar test; not a full certificate."
+    }
+  },
+  "mutation_limits": {
+    "wall_seconds_each": 60,
+    "memory_bytes_each": 402653184,
+    "sequence": "Three listed changed-claim mutations once each, serial after preserved baseline; no baseline repeat, retry or cap increase."
+  },
+  "not_proposed_packaging_mutations": [
+    "forks_dropped_in_family",
+    "extremal_marks_wrong",
+    "family_bound_asserted",
+    "witness_tree_wrong",
+    "certificate_wrong",
+    "floor_wrong",
+    "claim_transition_injected",
+    "claim_classical_name_in_theorem"
+  ],
+  "scientific_scope": "Finite single-seed DP and supplied rational points. Unchanged seeded tiny-fixture batch remains inside primary; no historical hill-climb, integer program or simulated annealing.",
+  "required_before_execution": [
+    "Exact staged schema2 source and input record",
+    "Cheap mechanical preflight tied to that record/tree",
+    "Original same-session actual cold report clearance, explicitly bound in a new immutable adapter version; v1 deliberately refuses execution",
+    "Root explicit capture dispatch"
+  ],
+  "failure_policy": "Preserve markers, raw result, live merged stream, supervisor log, mutation stdout/stderr, receipt and source/input generations. No automatic retry, baseline repeat, cap increase, evidence replacement or fabricated JSON.",
+  "source_resource_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-resource-plan-v1.json",
+    "sha256": "7d311b2da5dd0fba794df723c4302900e791b026e9c5b8ebbaa3ab531a576a92"
+  },
+  "limits_measured": false,
+  "recovery_and_source_counts": {
+    "source_paths": 35,
+    "original_payloads": 29,
+    "full_original_delta": true
+  },
+  "canonical_evidence_binding": "Canonical cache is owned by source unit at cache_destination; final unit must bind its bytes. No extra mutable checkout cache path is added to reviewer references. External preserved raw capture is execution provenance only.",
+  "not_proposed_other_mutations_reason": "Only original-reviewer-cleared changed-claim predicates; no routine historical mutation duplication."
+}

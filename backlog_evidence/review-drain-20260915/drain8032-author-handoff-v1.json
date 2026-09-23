@@ -1,0 +1,225 @@
+{
+  "status": "AUTHOR PREPARATION; ORIGINAL REVIEWER EARLY AFFECTED CONFIRMATION PENDING",
+  "owner": "PR8032-author",
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "original_head": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+  "source_files": 82,
+  "original_paths": 84,
+  "live_complete_proofs": [
+    "full main energy derivation",
+    "full alternative energy derivation",
+    "full exact one-plaquette projection/spectral proof"
+  ],
+  "source_math_AST_unchanged": true,
+  "registry_changes": "Two claim-to-companion helper registrations prepared externally only. Current checkout maps untouched; root must serialize integration onto then-current registries preserving every existing entry.",
+  "source_freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source-freeze.json",
+    "sha256": "712f7a572aba2daed97fae00d0cf2e0f82bce2c17bd2cd1beb16a254d52c29f9"
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-prepared-v1.json",
+      "sha256": "b84670c36dec28496718f538ac74b5a5908f315158c1c71f55ed07ca646a43cf"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source-freeze.json",
+      "sha256": "712f7a572aba2daed97fae00d0cf2e0f82bce2c17bd2cd1beb16a254d52c29f9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-full-mapping-v1.json",
+      "sha256": "5934b7498c1457724afa12c0ea9d60b6fdde27035b1be1a9cf47d187f01d7bba"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-preservation-v1.json",
+      "sha256": "5cb39d8aaf521919ce56f721b6d4ceaff83c51ef255ce345dc97c0fe75a6e8b4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-finding-dispositions-v1.json",
+      "sha256": "53d7f47e6945af5353a4ca7471d274aed0d88d1a7e5d86ce7a0c6ade3504952e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-correction-v1.diff",
+      "sha256": "e3b02cad8e220cb42bc12d844d5ffd578aa9bbf900caf08641072b8e3ff488d9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-discovery-v1.json",
+      "sha256": "db75b23d27ff541b6d1352d0eb8e0ab1290929e9e5706ac046f25827f40bc7f9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-input-resource-plan-v1.json",
+      "sha256": "b8d2b341cd8f2f33681603ba7d4b8eda64141bd61c1917a58dd8e7cb1f68b0f2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-registry-proposal-v1.patch",
+      "sha256": "c9f435c3be2b04bce2dbf2f5b878088e4c31517c2e5f1bc879a8556e6fc62c33"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-review-original.json",
+      "sha256": "648191b14e06afb49643ef9f41655fcacb5f3ba3a130b5dffea244fbd1cf7ab6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-review-original.md",
+      "sha256": "1d2298416a2feeef831547a084520698f6243c932c82a2dbee84cd4b1a75f9f7"
+    }
+  ],
+  "current_context": [
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/CANONICAL_HARNESS_INDEX.md",
+      "original_review_sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "original_review_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "original_review_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "original_review_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "original_review_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "original_review_sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "original_review_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/audit/README.md",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/audit/README.md",
+      "original_review_sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/audit/data/axiom_premise_nodes.json",
+      "original_review_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/audit/data/premise_decision_history.json",
+      "original_review_sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "original_review_sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/repo/CONTROLLED_VOCABULARY.md",
+      "original_review_sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/repo/DEFERRED_DECISIONS.md",
+      "original_review_sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "original_review_sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "unchanged_from_original_review": true
+    }
+  ],
+  "branch_retention": "Original branch retained pending root disposition; parent deferred science remains on its preserved branch.",
+  "author_cold_diff": "Read full original-to-prepared note/runners patch; all formula lines preserved, scope/IO/dependency changes only. Exact current-main tracked/index bytes remain unchanged.",
+  "science_executions": 0,
+  "staging": 0,
+  "gates": 0,
+  "draft_status_changed": false
+}

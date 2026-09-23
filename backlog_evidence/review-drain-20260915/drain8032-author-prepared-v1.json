@@ -1,0 +1,67 @@
+{
+  "status": "AUTHOR PREPARATION ONLY; no source confirmation or draft-ready action",
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "original_head": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+  "original_merge_base": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6"
+    }
+  ],
+  "runners": [
+    {
+      "path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "sha256": "8457e1c7adff154addaa9a476cabcb1b087d3d46a7a16e581a5f1f0b91d7625f"
+    },
+    {
+      "path": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "sha256": "d64149ff67bde3f8965c70d5319bc11ef3ee003392298b5ed5d771de32994309"
+    }
+  ],
+  "archive_manifest": {
+    "path": "docs/work_history/repo/review_feedback/pr8032-evidence/pr8032-archive-manifest.json",
+    "sha256": "000c2a9d57c963a20e6d17b7b7ebf2af4825dbb9d105e0573d6002db5c3c23aa"
+  },
+  "freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source-freeze.json",
+    "sha256": "712f7a572aba2daed97fae00d0cf2e0f82bce2c17bd2cd1beb16a254d52c29f9"
+  },
+  "registry_proposals": [
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "current_sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "current_sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    }
+  ],
+  "source_files": 82,
+  "original_paths": 84,
+  "checks": [
+    40,
+    22
+  ],
+  "science_executions": 0
+}

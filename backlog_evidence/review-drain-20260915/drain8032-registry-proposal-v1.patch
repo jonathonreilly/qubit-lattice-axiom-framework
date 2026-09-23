@@ -1,0 +1,20 @@
+--- a/docs/audit/scripts/build_citation_graph.py
++++ b/docs/audit/scripts/build_citation_graph.py
+@@ -151,6 +151,7 @@
+ LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
+ 
+ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
++    'gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py'],
+     'temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16': ['scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py', 'scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py', 'scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py'],
+ 
+     'hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15': ['scripts/hybrid_curvature_check_2026_09_15.py', 'scripts/integrated_rate_check_2026_09_15.py'],
+--- a/scripts/audit_packet_script_deps.py
++++ b/scripts/audit_packet_script_deps.py
+@@ -45,6 +45,7 @@
+ import ledger_io  # noqa: E402
+ 
+ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
++    'gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py'],
+     'temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16': ['scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py', 'scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py', 'scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py'],
+ 
+     'hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15': ['scripts/hybrid_curvature_check_2026_09_15.py', 'scripts/integrated_rate_check_2026_09_15.py'],

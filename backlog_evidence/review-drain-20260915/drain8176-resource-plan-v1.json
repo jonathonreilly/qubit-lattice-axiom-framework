@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "kind": "proposed-resource-plan-not-execution",
+  "primary": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+  "timeout_seconds": 60,
+  "memory_limit_bytes": 402653184,
+  "limits_status": "Unmeasured corrected source; proposed external process-tree RSS/time watchdog, fail closed without retry/increase",
+  "original_measured_resource": {
+    "command": [
+      "python3",
+      "scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py"
+    ],
+    "exit": 0,
+    "wall": 2.1415155839640647,
+    "user_cpu": 1.889136,
+    "system_cpu": 0.05407,
+    "max_rss_bytes": 68485120,
+    "wall_limit": 35,
+    "cpu_limit": 25,
+    "memory_design": "finite graphs max225 sites; exact layered subset states max2^10; observed RSS"
+  },
+  "cost": {
+    "fixed_windows": "112,200,112,112,225sites; repeated finite graph reconstruction, no fixture growth",
+    "dynamic_program": "Exact Fraction subset-level transfers; original measured run reports max2^10states per level, pairwise adjacent-level subset scan and retained backpointers. No dense numerical array or eigensolver.",
+    "brute_force": "Unchanged seeded32 rejection loop selects4through10live-site fixtures, >=90single-seed and >=25multi-seed accepted; no deterministic bound on rejected proposals, so external wall cap remains necessary.",
+    "arithmetic": "Four exact polynomial certificates and one SymPy scalar maximum; three added small domain/count checks do not enlarge any original fixture.",
+    "imports": "SymPy and standard library; no local helper or top-level scientific execution.",
+    "memory": "Original independent primary measured68485120bytes RSS in2.1415155839640647s; this does not measure corrected source.384MiB proposed with headroom, not a successful resource certificate."
+  },
+  "expected_completed_checks": 22,
+  "count_scope": "A4+B3+C4+D3+E3+F4+G1 includes packaging/resolution checks, not22theorems",
+  "stdout_only": true,
+  "json_outputs": [],
+  "other_output_writes": [],
+  "cache_destination": "logs/runner-cache/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.txt",
+  "mutations": {
+    "forks_dropped_in_family": "B",
+    "isolated_seed_cost_wrong": "B",
+    "zb_mark_count_wrong": "C",
+    "real_boundary_rounded": "E",
+    "extremal_marks_wrong": "C",
+    "family_bound_asserted": "C",
+    "witness_tree_wrong": "D",
+    "certificate_wrong": "E",
+    "floor_wrong": "E",
+    "claim_transition_injected": "F",
+    "claim_classical_name_in_theorem": "F"
+  },
+  "changed_claim_mutations": [
+    {
+      "name": "isolated_seed_cost_wrong",
+      "target": "B3",
+      "expected_exit_code": 1,
+      "expected_total": "PASS=21 FAIL=1",
+      "status": "proposed only, not executed"
+    },
+    {
+      "name": "zb_mark_count_wrong",
+      "target": "C4",
+      "expected_exit_code": 1,
+      "expected_total": "PASS=21 FAIL=1",
+      "status": "proposed only, not executed"
+    },
+    {
+      "name": "real_boundary_rounded",
+      "target": "E3",
+      "expected_exit_code": 1,
+      "expected_total": "PASS=21 FAIL=1",
+      "status": "proposed only, not executed"
+    }
+  ],
+  "unchanged_mutation_reruns_requested": false,
+  "primary_runs": 0,
+  "simulation_runs": 0,
+  "mutation_runs": 0
+}

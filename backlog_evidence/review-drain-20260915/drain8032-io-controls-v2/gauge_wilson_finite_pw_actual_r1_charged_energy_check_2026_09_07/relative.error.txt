@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/drain8032-io-repair-v2.py", line 70, in <module>
+    try:ns['_emit'](fake.copy(),1,scopes)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/extracted-output-layer.py", line 24, in _emit
+    raise ValueError('AUDIT_RESULT_SIDECAR must be an absolute path outside the repository')
+ValueError: AUDIT_RESULT_SIDECAR must be an absolute path outside the repository

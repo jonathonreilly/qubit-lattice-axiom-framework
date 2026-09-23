@@ -1,0 +1,54 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-author-prepared-v1.json",
+    "sha256": "a0eb6355b6d81816b1a6ad1802de24e74839411e61decccf32e9142ce11a80ed"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-source-freeze-v1.json",
+    "sha256": "52bd69da1c0520b7e852c3ad98f88b962da47fe1a700ac020af361e77062ee7b"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-author-handoff-v1.json",
+    "sha256": "d26eb3e88cbfe8ff7295dfdf899569851c82b8bdad0c843573ace143d6cfe287"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-author-dispositions-v1.json",
+    "sha256": "64a980b44e6c200165a0c091e6c23cc8cd5f6da68008b2215cd7c993a7caccb8"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-author-corrections-v1.patch",
+    "sha256": "df2785f9a4b7f6890fb6e37b8884a703215a44fa12c4e9d429bb2f3196797876"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-source-input-discovery-v1.json",
+    "sha256": "3cc58c4cc3f94713df689559ff663050635a7550a7b25007e4aeff6aea6ac5f3"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-resource-plan-v1.json",
+    "sha256": "7d311b2da5dd0fba794df723c4302900e791b026e9c5b8ebbaa3ab531a576a92"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-review-original.json",
+    "sha256": "88561466f7eafe617ad720cf6654691a4bd363158f8f7a0fe2b14775c3d7222e"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-review-original.md",
+    "sha256": "d52821c8be37d13c120dd80bbe69d54bf5a2f7e22ed8de67f22e946b172fd571"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-early-review-v1.json",
+    "sha256": "15fa0b9c897716f04ef96791c2b23cb10285dac78d16713873e8a74ba242a77f"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-early-review-v1.md",
+    "sha256": "e42f10ab3cbc04c236cb30a02dd2defbb3ad8c405f387db09532fed056cd59ef"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8176-adapter-authority-v1.json",
+    "sha256": "ba4d6b8f4f23b1d1bcaeeeb0bce84af9af596c120b99672e625e608ed1dc6689"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8176/affected-preservation-v1.json",
+    "sha256": "b4afee975cfd20159bbcd153bcff54c3be34eb0090aef2f86d25a75a3e415780"
+  }
+]

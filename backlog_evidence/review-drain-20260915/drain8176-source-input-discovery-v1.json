@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "kind": "read-only-source-discovery-not-execution",
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "primary": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+  "primary_sha256": "d124f4480a52ad253510138c06792ee0a6f148acb8e0d27a582fd658f439375a",
+  "runtime_inputs": [
+    {
+      "path": "docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "sha256": "10003c417a65f6d7b14bc50a7d7b191b777d08d11811fac448ebd3d774bf4448",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "context only, not mathematical premise"
+    }
+  ],
+  "input_fingerprint": "492585553d25a503803907c90ba2140c60b2867ec24799fbef791bbf18b773e7",
+  "declared_timeout": 60,
+  "packet_transitive_helpers": [],
+  "graph_helpers": [],
+  "citations": [
+    "docs/work_history/review_loop/pr8176/README.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "graph_primary": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+  "framework_dependencies": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "mathematical_premise_notes": [],
+  "mathematical_imports": [
+    "finite graph/tree connectivity and edge count",
+    "exact level dynamic programming and affine-minimum concavity",
+    "rational polynomial substitution and completed-square identity"
+  ],
+  "deferred_role": "Complete corrected negative argument plus original full note, not live supporting proof or premise; global construction/physical implications remain unsupported",
+  "registry_changes_required": false,
+  "primary_imported": false,
+  "primary_executed": false,
+  "static_compile": true,
+  "original_archives_verified": 29,
+  "original_delta_verified": true
+}

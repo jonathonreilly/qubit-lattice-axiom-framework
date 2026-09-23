@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "/private/tmp/review-drain-20260915/check8176/independent.py"
+  ],
+  "exit": 0,
+  "wall": 0.20371949998661876,
+  "user_cpu": 0.166262,
+  "system_cpu": 0.013597,
+  "max_rss_bytes": 22888448,
+  "wall_limit": 35,
+  "cpu_limit": 25,
+  "memory_design": "finite graphs max225 sites; exact layered subset states max2^10; observed RSS"
+}

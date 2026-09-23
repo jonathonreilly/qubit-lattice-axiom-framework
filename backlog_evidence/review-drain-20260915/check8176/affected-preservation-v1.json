@@ -1,0 +1,47 @@
+{
+  "source_sha_verified": 35,
+  "original_path_payload_mode_blob_verified": 29,
+  "delta_byte_identical": true,
+  "readable_original_note_byte_identical": true,
+  "unchanged_math_functions": [
+    "mut",
+    "Checks",
+    "normalize_text",
+    "level",
+    "preds",
+    "is_fork",
+    "run_automaton",
+    "kinds",
+    "component",
+    "cost_of",
+    "single_seed_min",
+    "verify_tree",
+    "tree_counts",
+    "brute_min",
+    "cone",
+    "realization",
+    "deviations",
+    "family_f",
+    "family_g",
+    "main"
+  ],
+  "changed_functions_read_completely": [
+    "family_a",
+    "family_b",
+    "family_c",
+    "family_d",
+    "family_e"
+  ],
+  "fixtures_unchanged": [
+    "Z_A",
+    "Z_B",
+    "W1",
+    "W2",
+    "W3",
+    "W2_TREE",
+    "W3_TREE"
+  ],
+  "head": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "tracked_diff": "",
+  "staged_diff": ""
+}

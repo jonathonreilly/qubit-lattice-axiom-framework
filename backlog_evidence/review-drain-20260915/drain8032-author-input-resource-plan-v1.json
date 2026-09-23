@@ -1,0 +1,371 @@
+{
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "programs": [
+    {
+      "path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "sha256": "8457e1c7adff154addaa9a476cabcb1b087d3d46a7a16e581a5f1f0b91d7625f",
+      "ordered_inputs": [
+        {
+          "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6"
+        },
+        {
+          "path": "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade"
+        },
+        {
+          "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+        }
+      ],
+      "input_fingerprint": "f82c11ca64ceb68df734371f18e5e483d249c78c4c2555e1a085aac832ad7a7c",
+      "helper_imports": [],
+      "graph_helper_imports": [],
+      "timeout_sec": 180,
+      "internal_rss_limit_mib": 180,
+      "mathematical_checks": 40,
+      "N5_scopes": {
+        "per_element": {
+          "checks": 21,
+          "scope": "20 exact shell minima for R=1..20 and one scalar generator-normalization discriminator; no site dynamics"
+        },
+        "per_site": {
+          "checks": 0,
+          "scope": "checked and not executed \u2014 no site-resolved state or dynamical measurement; finite graph incidence is classified per_block"
+        },
+        "per_mode": {
+          "checks": 7,
+          "scope": "six exact abstract 3-by-3 compression predicates and one 2-by-2 restricted-ground Rayleigh adverse example; not an SU3 spectrum"
+        },
+        "per_block": {
+          "checks": 12,
+          "scope": "nine finite cubic-box n=2,3,4 incidence/touching/distinct-path predicates and three scalar acceptance/denominator predicates"
+        },
+        "lattice_wide": {
+          "checks": 0,
+          "scope": "checked and not executed \u2014 finite boxes and scalar controls do not execute arbitrary-volume Hamiltonian energy bounds; the written proof supplies uniformity"
+        }
+      },
+      "json_output": "logs/runner-cache/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.json",
+      "stdout_cache": "logs/runner-cache/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.txt",
+      "cli": "No arguments for canonical stdout and same-run exclusive JSON; --json prints JSON instead but is not an additional required run"
+    },
+    {
+      "path": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "sha256": "d64149ff67bde3f8965c70d5319bc11ef3ee003392298b5ed5d771de32994309",
+      "ordered_inputs": [
+        {
+          "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6"
+        },
+        {
+          "path": "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade"
+        },
+        {
+          "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+        }
+      ],
+      "input_fingerprint": "f82c11ca64ceb68df734371f18e5e483d249c78c4c2555e1a085aac832ad7a7c",
+      "helper_imports": [],
+      "graph_helper_imports": [],
+      "timeout_sec": 180,
+      "internal_rss_limit_mib": 180,
+      "mathematical_checks": 22,
+      "N5_scopes": {
+        "per_element": {
+          "checks": 5,
+          "scope": "five exact Haar Gram/magnetic and source-normalization/isometry predicates on the single supplied plaquette"
+        },
+        "per_site": {
+          "checks": 0,
+          "scope": "checked and not executed \u2014 neutral 3-by-3 spectral algebra is a representation block calculation, not a site-resolved measurement"
+        },
+        "per_mode": {
+          "checks": 5,
+          "scope": "two neutral character-matrix identities and three exact neutral/full-carrier ground predicates for this plaquette"
+        },
+        "per_block": {
+          "checks": 12,
+          "scope": "five accepted-norm/local-budget/finite-excess predicates, four radical-enclosure/local-bound predicates, and three scalar adverse predicates for this fixture; distant-volume arithmetic is not volume execution"
+        },
+        "lattice_wide": {
+          "checks": 0,
+          "scope": "checked and not executed \u2014 one plaquette and artificial distant-vacuum arithmetic do not execute a lattice-wide Hamiltonian or the analytic uniform bound"
+        }
+      },
+      "json_output": "logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.json",
+      "stdout_cache": "logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt",
+      "cli": "No arguments for canonical stdout and same-run exclusive JSON; --json prints JSON instead but is not an additional required run"
+    }
+  ],
+  "unique_programs": 2,
+  "planned_runs": 2,
+  "primary_runs": 0,
+  "helper_runs": 0,
+  "simulation_runs": 0,
+  "mutation_runs": 0,
+  "historical_measurements": [
+    {
+      "source": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_RESULT.json",
+        "sha256": "9081851f01852583d689429a5814bc8d7b576a9075533d35eec9675e358d6cb6"
+      },
+      "seconds": 0.11797004198888317,
+      "rss_mib": 57.359375,
+      "checks": 40,
+      "status": "Historical measurement only; not a fresh capture"
+    },
+    {
+      "source": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_RESULT.json",
+        "sha256": "fb588cb555b830c0fff561e1e6a2a10d74ca957c796ba8095da5524f6ed24f9f"
+      },
+      "seconds": 0.039964167022844777,
+      "rss_mib": 19.484375,
+      "checks": 22,
+      "status": "Historical measurement only; not a fresh capture"
+    }
+  ],
+  "proposed_limits": {
+    "per_program_wall_seconds": 180,
+    "per_program_aggregate_rss_bytes": 268435456,
+    "internal_original_rss_mib": 180,
+    "policy": "Preserve original 180-second alarm and 180-MiB self-RSS guard. External process-tree supervisor should enforce 180 seconds and 256 MiB aggregate RSS including capture worker/supervisor; preserve any failure and partial outputs, no implicit retry or cap increase."
+  },
+  "basis": "Actual historical source runs used 0.118 seconds / 57.36 MiB and 0.040 seconds / 19.49 MiB; figures exclude some startup and differ by environment. Original 180-second limits retained. 256 MiB external aggregate allowance includes unchanged symbolic import and tooling overhead; not a newly measured usage claim.",
+  "runtime_scope": "Each runner reads its own source and three declared note inputs. No repo scientific module is imported; primary imports Sympy, both use Python standard library. Companion is an independently executed packet helper, never imported or called by primary.",
+  "mathematical_closure": "Complete full-carrier mixed replacement, positive compression/shell/path identities, actual smooth kinetic row-Casimir derivative estimate, touching-face compression/fusion, Rayleigh bound, full alternative proof and exact one-plaquette Haar/spectral derivation are live in canonical note. Actual positive parent is direct dependency. Uniform-gap parent optionally supplies full neutral ground via its explicit external theorem; otherwise ground stays a hypothesis. Indirect cutoff/operator/spectrum premises are preserved in current contextual closure. Deferred parent negative certification, historical outputs and route summaries are not premises.",
+  "current_context": [
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/CANONICAL_HARNESS_INDEX.md",
+      "original_review_sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_review_sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "original_review_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "original_review_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "original_review_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "original_review_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "original_review_sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "original_review_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/audit/README.md",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/audit/README.md",
+      "original_review_sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/audit/data/axiom_premise_nodes.json",
+      "original_review_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/audit/data/premise_decision_history.json",
+      "original_review_sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "original_review_sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/repo/CONTROLLED_VOCABULARY.md",
+      "original_review_sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/repo/DEFERRED_DECISIONS.md",
+      "original_review_sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "unchanged_from_original_review": true
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-current-context-v1/docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "original_review_sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "unchanged_from_original_review": true
+    }
+  ],
+  "parent_receipts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-review.json",
+      "sha256": "ee7a32aa548fa526f2dd2bc50151b1e48f91827b3d5337ea933c7469d268b36b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-review.md",
+      "sha256": "d8e2971f9d5d2083e16347e91bce2432a1c78367058964fcb8af939fc3975106"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-final-confirmation.json",
+      "sha256": "dc5312f0a876fc75b77044f98921f5308685d69a977b5250730676e2b039c5bf"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-unit-final.json",
+      "sha256": "2abda8b41838a82bccbfc22c4d626c362078afb328e0d7a462f4cc3776e69413"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-landing-report.md",
+      "sha256": "535ce69152f8feb71ca1bdb5666c5bb151594c85fd7e40d9882f4647f8c60157"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/partial-closure-8031.json",
+      "sha256": "7e6cd77cb7c0d1c160bd412160e9722c2b8ca0f6bf5279941913a62e1354b2f2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/partial-closure-8031-comment.md",
+      "sha256": "f95231624156eee8a7099b3c4fbdaa858bb47c5bfcc20d2b2b1e3ea1cffca418"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-fetch.json",
+      "sha256": "c0bf4df1ad17966c842bd737165deea8a9c282e61c7571365449091e596418ca"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-parent8031-state.json",
+      "sha256": "1acf093705dfb0d6ef3ecfb658dc14d1624637599b1ba6e5061ebd121a6cefab"
+    }
+  ],
+  "adverse_controls": "All original exact adverse predicates remain embedded in the 40/22 checks. No separate mutation CLI exists and no new mutation execution or outcomes are asserted; any future mutation plan needs reviewer-scoped immutable copies/actual failure evidence.",
+  "capture_requirements": [
+    "Original reviewer early and cold clearance, fresh main and source freeze before execution",
+    "Narrow helper mappings integrated serially and actual APIs rediscovered on final candidate",
+    "Capture each unique program once through actual runner_cache API; preserve execute_runner raw result before post-run identity checks",
+    "Same-run exclusive JSON file and exact stdout cache path; do not run --json again to obtain structured data",
+    "External aggregate process-tree watchdog and before/after source/input identity; preserve errors/timeouts/partial stdout, no automatic retry",
+    "Historical audit/status/cache surfaces are not current evidence; no audit verdict"
+  ],
+  "registry_changes_required": [
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "current_sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "current_sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    }
+  ]
+}

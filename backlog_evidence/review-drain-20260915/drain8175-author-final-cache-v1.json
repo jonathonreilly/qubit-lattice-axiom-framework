@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8175",
+  "tree": "aea4fc4407b07b0b251cb50fcde3c12fcb741e4e",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "extended_explanation_tree_finite_witness_counts_and_rational_recursion_certificates_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/work_history/review_loop/pr8175/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4536
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4534
+    },
+    "declared_inputs": {
+      "hits": 8801,
+      "misses": 4689
+    }
+  },
+  "record_sha256": "769f9f41d9ce15174a967a6cb5671bbae25418460027be51df5f81380f1079cf",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

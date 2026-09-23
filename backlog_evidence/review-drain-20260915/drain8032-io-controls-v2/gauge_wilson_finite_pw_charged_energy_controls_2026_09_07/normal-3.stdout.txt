@@ -1,0 +1,22 @@
+{
+  "N5_scopes": {
+    "per_element": {
+      "checks": 1,
+      "scope": "synthetic output-layer control, no science"
+    }
+  },
+  "TOTAL": 1,
+  "checks": [
+    "synthetic-output-only"
+  ],
+  "input_sha256": {
+    "synthetic_input": "synthetic_hash"
+  },
+  "resource_limits": {
+    "rss_MiB": 180,
+    "seconds": 180
+  },
+  "rss_MiB": 1.0,
+  "seconds": 0.0,
+  "source_sha256": "synthetic-source"
+}

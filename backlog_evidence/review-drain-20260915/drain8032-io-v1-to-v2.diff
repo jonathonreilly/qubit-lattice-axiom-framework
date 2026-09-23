@@ -1,0 +1,46 @@
+--- v1/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py
++++ v2/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py
+@@ -36,11 +36,15 @@
+     out['resource_limits'] = {'seconds': AUDIT_TIMEOUT_SEC, 'rss_MiB': AUDIT_RSS_LIMIT_MIB}
+     out['input_sha256'] = _input_sha256
+     _finite(out)
+-    _result_path = _REPO_ROOT / 'logs/runner-cache' / (Path(__file__).stem + '.json')
+-    _result_path.parent.mkdir(parents=True, exist_ok=True)
+-    with _result_path.open('x') as _result_file:
+-        json.dump(out, _result_file, sort_keys=True, indent=2, allow_nan=False)
+-        _result_file.write('\n')
++    # Capture may request a unique external sidecar; ordinary live runs write no file.
++    _sidecar = os.environ.get('AUDIT_RESULT_SIDECAR')
++    if _sidecar:
++        _result_path = Path(_sidecar)
++        if not _result_path.is_absolute() or _result_path.resolve().is_relative_to(_REPO_ROOT.resolve()):
++            raise ValueError('AUDIT_RESULT_SIDECAR must be an absolute path outside the repository')
++        with _result_path.open('x') as _result_file:
++            json.dump(out, _result_file, sort_keys=True, indent=2, allow_nan=False)
++            _result_file.write('\n')
+     if sys.argv[1:] == ['--json']:
+         print(json.dumps(out, sort_keys=True, indent=2, allow_nan=False))
+     else:
+--- v1/scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py
++++ v2/scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py
+@@ -36,11 +36,15 @@
+     out['resource_limits'] = {'seconds': AUDIT_TIMEOUT_SEC, 'rss_MiB': AUDIT_RSS_LIMIT_MIB}
+     out['input_sha256'] = _input_sha256
+     _finite(out)
+-    _result_path = _REPO_ROOT / 'logs/runner-cache' / (Path(__file__).stem + '.json')
+-    _result_path.parent.mkdir(parents=True, exist_ok=True)
+-    with _result_path.open('x') as _result_file:
+-        json.dump(out, _result_file, sort_keys=True, indent=2, allow_nan=False)
+-        _result_file.write('\n')
++    # Capture may request a unique external sidecar; ordinary live runs write no file.
++    _sidecar = os.environ.get('AUDIT_RESULT_SIDECAR')
++    if _sidecar:
++        _result_path = Path(_sidecar)
++        if not _result_path.is_absolute() or _result_path.resolve().is_relative_to(_REPO_ROOT.resolve()):
++            raise ValueError('AUDIT_RESULT_SIDECAR must be an absolute path outside the repository')
++        with _result_path.open('x') as _result_file:
++            json.dump(out, _result_file, sort_keys=True, indent=2, allow_nan=False)
++            _result_file.write('\n')
+     if sys.argv[1:] == ['--json']:
+         print(json.dumps(out, sort_keys=True, indent=2, allow_nan=False))
+     else:

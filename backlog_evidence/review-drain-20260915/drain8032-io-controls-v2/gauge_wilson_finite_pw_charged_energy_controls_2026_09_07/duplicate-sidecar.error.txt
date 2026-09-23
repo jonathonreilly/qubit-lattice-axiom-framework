@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/drain8032-io-repair-v2.py", line 64, in <module>
+    with contextlib.redirect_stdout(io.StringIO()):ns['_emit'](fake.copy(),1,scopes)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/extracted-output-layer.py", line 25, in _emit
+    with _result_path.open('x') as _result_file:
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: '/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/unique-1.json'

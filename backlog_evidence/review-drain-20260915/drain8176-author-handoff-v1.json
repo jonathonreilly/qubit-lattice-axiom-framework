@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "kind": "author-preparation-handoff-not-source-pass",
+  "pr": 8176,
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "head": "ee73bef6a1f37590abacdd2cf4a13900019a1e64",
+  "owner": "PR8176-author",
+  "source_count": 35,
+  "original_count": 29,
+  "source_freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8176-source-freeze-v1.json",
+    "sha256": "52bd69da1c0520b7e852c3ad98f88b962da47fe1a700ac020af361e77062ee7b"
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-author-prepared-v1.json",
+      "sha256": "a0eb6355b6d81816b1a6ad1802de24e74839411e61decccf32e9142ce11a80ed"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-source-freeze-v1.json",
+      "sha256": "52bd69da1c0520b7e852c3ad98f88b962da47fe1a700ac020af361e77062ee7b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-author-dispositions-v1.json",
+      "sha256": "64a980b44e6c200165a0c091e6c23cc8cd5f6da68008b2215cd7c993a7caccb8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-author-corrections-v1.patch",
+      "sha256": "df2785f9a4b7f6890fb6e37b8884a703215a44fa12c4e9d429bb2f3196797876"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-source-input-discovery-v1.json",
+      "sha256": "3cc58c4cc3f94713df689559ff663050635a7550a7b25007e4aeff6aea6ac5f3"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-resource-plan-v1.json",
+      "sha256": "7d311b2da5dd0fba794df723c4302900e791b026e9c5b8ebbaa3ab531a576a92"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-review-original.json",
+      "sha256": "88561466f7eafe617ad720cf6654691a4bd363158f8f7a0fe2b14775c3d7222e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-review-original.md",
+      "sha256": "d52821c8be37d13c120dd80bbe69d54bf5a2f7e22ed8de67f22e946b172fd571"
+    }
+  ],
+  "authority": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_reuse": "Prior same-author complete authority read, verified bytes unchanged from PR8173 authority binding"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_reuse": "Prior same-author complete authority read, verified bytes unchanged from PR8173 authority binding"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_reuse": "Prior same-author complete authority read, verified bytes unchanged from PR8173 authority binding"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "read_reuse": "Prior same-author complete authority read, verified bytes unchanged from PR8173 authority binding"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "read_reuse": "Prior same-author complete authority read, verified bytes unchanged from PR8173 authority binding"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "read_reuse": "Prior same-author complete authority read, verified bytes unchanged from PR8173 authority binding"
+    }
+  ],
+  "branch_preservation_required": true,
+  "tracked_and_index_clean": true,
+  "document_basename_collision_check": {
+    "all_new_docs_checked": true,
+    "exceptions": [
+      "README.md",
+      "SKILL.md"
+    ],
+    "collisions": []
+  },
+  "primary_runs": 0,
+  "simulation_runs": 0,
+  "mutation_runs": 0,
+  "staged": false,
+  "registry_changes": false,
+  "pending": "Root-dispatched original same-session affected review; no source or landing PASS asserted."
+}

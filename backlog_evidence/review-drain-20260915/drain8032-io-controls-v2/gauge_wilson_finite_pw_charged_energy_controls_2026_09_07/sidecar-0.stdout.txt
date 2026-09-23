@@ -1,0 +1,5 @@
+PASS gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py
+per_element: 1 checks; synthetic output-layer control, no science
+TOTAL: 1
+seconds: 0.0; rss_MiB: 1.0
+source_sha256: synthetic-source

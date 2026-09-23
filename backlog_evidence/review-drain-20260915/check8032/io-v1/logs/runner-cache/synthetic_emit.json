@@ -1,0 +1,20 @@
+{
+  "N5_scopes": {
+    "per_element": {
+      "checks": 1,
+      "scope": "synthetic IO control only"
+    }
+  },
+  "TOTAL": 1,
+  "checks": [
+    "synthetic"
+  ],
+  "input_sha256": {},
+  "resource_limits": {
+    "rss_MiB": 180,
+    "seconds": 180
+  },
+  "rss_MiB": 1,
+  "seconds": 0,
+  "source_sha256": "synthetic"
+}

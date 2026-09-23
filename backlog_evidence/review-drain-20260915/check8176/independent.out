@@ -1,0 +1,13 @@
+Z_A 0 (Fraction(6, 1), 46, 42, 20)
+Z_A 3/4 (Fraction(3, 2), 46, 42, 20)
+Z_A 99/100 (Fraction(3, 50), 46, 42, 20)
+Z_A 1 (Fraction(0, 1), 46, 42, 20)
+Z_A 101/100 (Fraction(-1, 10), 46, 42, 20)
+Z_B 99/100 (Fraction(2, 25), 69, 60, 36)
+Z_B 1 (Fraction(0, 1), 69, 60, 36)
+W1 37/50 (Fraction(2, 25), 36, 36, 11)
+W1 3/4 (Fraction(0, 1), 36, 36, 11)
+isolated seed: tree budget=0 for every c; restricted ratio minimum empty (undefined).
+floor 367 745/135434 minus4/729 1369/98731386
+floor 368 747/136171 minus4/729 -121/99268659
+completed square: t*(4/27-t)=4/729-(t-2/27)^2; for c>=1 and 0<t<1, t^c<=t

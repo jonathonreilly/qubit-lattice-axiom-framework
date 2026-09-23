@@ -1,0 +1,10 @@
+{
+  "cold_read": "Complete original primary, paired note, changed controls and all changed campaign deltas read. Actual imports stdlib and sympy only, self source scan and exactly three declared markdown inputs; no helpers dynamically imported by primary. Original controls have scipy/numpy, unbounded stochastic loops and 60s MILP calls: not authorized for execution here and kept historical. Necessary menu/product conditional and framework/primitive authorities inspected. Main supplied recurrence/healing context remains to compare for final report, not primary runtime input.",
+  "input_hashes": {
+    "scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py": "0c19965c42a4cb444e413e36877281bf453906a4428dd0c77f1dd887268e7ea3",
+    "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md": "6f443575ce81d01d56cc101fc52a30ab82535a7744bf5a0b92c8aab5606e2e7b",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+  },
+  "resources": "Primary finite <=225-site witness, exact layered subsets and brute force restricted <=10 ones; random sampling loop lacks hard iteration cap so external 35s wall/25s CPU mandatory. Expected <150MB; measure RSS. No simulation/hillclimb executed."
+}

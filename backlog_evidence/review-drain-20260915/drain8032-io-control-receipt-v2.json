@@ -1,0 +1,196 @@
+{
+  "status": "IO-ONLY SYNTHETIC CONTROLS PASSED",
+  "outcomes": [
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "case": "repeat []",
+      "status": "success",
+      "stdout": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/normal-0.stdout.txt",
+        "sha256": "c7ad34899c4f95b4b12cf8894cdb38167b2dc5302a71bf767968d4806be79ed3"
+      },
+      "canonical_unchanged": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "case": "repeat []",
+      "status": "success",
+      "stdout": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/normal-1.stdout.txt",
+        "sha256": "c7ad34899c4f95b4b12cf8894cdb38167b2dc5302a71bf767968d4806be79ed3"
+      },
+      "canonical_unchanged": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "case": "repeat ['--json']",
+      "status": "success",
+      "stdout": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/normal-2.stdout.txt",
+        "sha256": "4a9ff59383fb4dd785b6f630313a0a4499b785a52c947a7207c0df62ace5ce63"
+      },
+      "canonical_unchanged": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "case": "repeat ['--json']",
+      "status": "success",
+      "stdout": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/normal-3.stdout.txt",
+        "sha256": "4a9ff59383fb4dd785b6f630313a0a4499b785a52c947a7207c0df62ace5ce63"
+      },
+      "canonical_unchanged": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "case": "unique external sidecar",
+      "status": "success",
+      "sidecar": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/unique-0.json",
+        "sha256": "4a9ff59383fb4dd785b6f630313a0a4499b785a52c947a7207c0df62ace5ce63"
+      }
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "case": "unique external sidecar",
+      "status": "success",
+      "sidecar": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/unique-1.json",
+        "sha256": "4a9ff59383fb4dd785b6f630313a0a4499b785a52c947a7207c0df62ace5ce63"
+      }
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "case": "duplicate external sidecar",
+      "status": "expected FileExistsError; original preserved",
+      "error": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/duplicate-sidecar.error.txt",
+        "sha256": "b5a5b4c51c63ae6dfa4ad3c1a6cac84b1a1399a6f5fe89d68fa7d233d8324a2b"
+      }
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "case": "invalid destination relative.json",
+      "status": "expected ValueError",
+      "error": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/relative.error.txt",
+        "sha256": "14506e7dfe75a8e297cf30b2acd05478be5065d101db9ad2ac99ee646523d527"
+      }
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "case": "invalid destination /private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/repo/logs/runner-cache/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.json",
+      "status": "expected ValueError",
+      "error": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07/internal.error.txt",
+        "sha256": "14506e7dfe75a8e297cf30b2acd05478be5065d101db9ad2ac99ee646523d527"
+      }
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "case": "repeat []",
+      "status": "success",
+      "stdout": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/normal-9.stdout.txt",
+        "sha256": "f5c447695b46658265349100175095d435c497554868619241bf571368cf0765"
+      },
+      "canonical_unchanged": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "case": "repeat []",
+      "status": "success",
+      "stdout": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/normal-10.stdout.txt",
+        "sha256": "f5c447695b46658265349100175095d435c497554868619241bf571368cf0765"
+      },
+      "canonical_unchanged": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "case": "repeat ['--json']",
+      "status": "success",
+      "stdout": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/normal-11.stdout.txt",
+        "sha256": "4a9ff59383fb4dd785b6f630313a0a4499b785a52c947a7207c0df62ace5ce63"
+      },
+      "canonical_unchanged": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "case": "repeat ['--json']",
+      "status": "success",
+      "stdout": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/normal-12.stdout.txt",
+        "sha256": "4a9ff59383fb4dd785b6f630313a0a4499b785a52c947a7207c0df62ace5ce63"
+      },
+      "canonical_unchanged": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "case": "unique external sidecar",
+      "status": "success",
+      "sidecar": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/unique-0.json",
+        "sha256": "4a9ff59383fb4dd785b6f630313a0a4499b785a52c947a7207c0df62ace5ce63"
+      }
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "case": "unique external sidecar",
+      "status": "success",
+      "sidecar": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/unique-1.json",
+        "sha256": "4a9ff59383fb4dd785b6f630313a0a4499b785a52c947a7207c0df62ace5ce63"
+      }
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "case": "duplicate external sidecar",
+      "status": "expected FileExistsError; original preserved",
+      "error": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/duplicate-sidecar.error.txt",
+        "sha256": "5e2519623e587a99415eaca9a2eeaa5ba4a89b584b66ef2174523c49e06eeffd"
+      }
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "case": "invalid destination relative.json",
+      "status": "expected ValueError",
+      "error": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/relative.error.txt",
+        "sha256": "79d39395f678a9814ce4317e1c4bd1041e22e8c0711f9eb7383dfa2640a07a31"
+      }
+    },
+    {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "case": "invalid destination /private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/repo/logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.json",
+      "status": "expected ValueError",
+      "error": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-io-controls-v2/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07/internal.error.txt",
+        "sha256": "79d39395f678a9814ce4317e1c4bd1041e22e8c0711f9eb7383dfa2640a07a31"
+      }
+    }
+  ],
+  "source_ast_preservation": [
+    {
+      "path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "v1_sha256": "8457e1c7adff154addaa9a476cabcb1b087d3d46a7a16e581a5f1f0b91d7625f",
+      "v2_sha256": "21ebc8258ba0db6b39f502261bfa416e89ee28d882d46f45aae4ecb0f677e8d7",
+      "all_ast_except_emit_identical": true
+    },
+    {
+      "path": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "v1_sha256": "d64149ff67bde3f8965c70d5319bc11ef3ee003392298b5ed5d771de32994309",
+      "v2_sha256": "65be3fa85929ca0cc3562e9cb51047304d2d4620fb49a01e50c018802b5f20b8",
+      "all_ast_except_emit_identical": true
+    }
+  ],
+  "science_executions": 0,
+  "primary_executions": 0,
+  "helper_executions": 0,
+  "v1_failure_preserved": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-early-review-v1.json",
+    "sha256": "31b53d82c3da5deeaba512187099de628dd6f0fb0d98b64774050d2b893f8f87"
+  }
+}

@@ -1,0 +1,630 @@
+{
+  "pr": 8032,
+  "reviewer": "same-session /root/review_8032",
+  "stage": "early affected source v1",
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "original_head": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+  "verdict": "POSITIVE SCIENCE CONFIRMED; IO REPAIR REQUIRED BEFORE COLD EXECUTION CLEARANCE",
+  "landing_pass": false,
+  "cold_execution_clearance": false,
+  "registry_proposals_accepted": [
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "current_sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "current_sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    }
+  ],
+  "source_freeze": {
+    "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+    "files": [
+      {
+        "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/README.md",
+        "sha256": "b3261309eedab0520e158e15bbf2cb1a3863cfaca419e0d156af40b3c745a3c8",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/README.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_CANONICAL_RESULT-fb588cb555b830c0.json.gz",
+        "sha256": "0061ead7f119dfb47ea3415d6e0f4c5618219a32212e7030b1f682947809f306",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_CANONICAL_RESULT-fb588cb555b830c0.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_CANONICAL_STDOUT-aeb917d8815282fc.txt.gz",
+        "sha256": "371207e4214a7adcd8a3b7230824b1ab26f2038338cb76431164dd4c0a02c128",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_CANONICAL_STDOUT-aeb917d8815282fc.txt.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_DERIVATION-ddcf0e7425c1c81c.md",
+        "sha256": "ddcf0e7425c1c81c84a79ccbb7c443c311ddef37d2c53269281760c0072e7ef9",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_DERIVATION-ddcf0e7425c1c81c.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_PORT_RECEIPT-9cdb1da5696dd949.json.gz",
+        "sha256": "51c3519b04dc6baafb88d0616d48ca50f27502cc6f7c5c3f0357f8e231e01922",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_PORT_RECEIPT-9cdb1da5696dd949.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_PREREGISTRATION-bc048351d5b6482d.md",
+        "sha256": "bc048351d5b6482d25ce990b787d49fea357eeedae245a3e3677d87c7a3eb100",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_PREREGISTRATION-bc048351d5b6482d.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_REVIEW-b68626a8cd92c405.md",
+        "sha256": "b68626a8cd92c405b3976883d9ecbced510d94908c919dd0d6e2f81609b7437b",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_REVIEW-b68626a8cd92c405.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_REVIEW-e6e33c9855fac926.md",
+        "sha256": "e6e33c9855fac92659a8d4b4656a6c427c309ac639778706cfb989746e6b64ca",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_REVIEW-e6e33c9855fac926.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ARTIFACT_PLAN-88fe929b75c29baa.md",
+        "sha256": "88fe929b75c29baae634adc21888a6d89676e2dce3ecffb5387b50642de0aebf",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ARTIFACT_PLAN-88fe929b75c29baa.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ASSUMPTIONS_AND_IMPORTS-6fde2a74731cdfd0.md",
+        "sha256": "6fde2a74731cdfd039493323df244a738bdaca73211fd16a8aaed36f9e193099",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ASSUMPTIONS_AND_IMPORTS-6fde2a74731cdfd0.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BEFORE_RESTRICTED_MATRIX_STRENGTHENING_check-921454c6f377441e.py",
+        "sha256": "921454c6f377441e3559da09bcd4b4c4624496b9104cf51cedf8e304cd183ea3",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BEFORE_RESTRICTED_MATRIX_STRENGTHENING_check-921454c6f377441e.py"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result-711299a34d8885ab.json.gz",
+        "sha256": "717ae4d3d516278078260245416e8c8e0db519fd37363182f785158e5d7f8aef",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result-711299a34d8885ab.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BOTH_REGISTRY_AST_RECEIPT-af9c2bed02c98155.json.gz",
+        "sha256": "310fe89b63bd1535c00405aa3ae4885b445723858562a22ed0275453fb343fb2",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BOTH_REGISTRY_AST_RECEIPT-af9c2bed02c98155.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CANONICAL_RESULT-9081851f01852583.json.gz",
+        "sha256": "794289b6dad084aca5ac37ed6c0412aac5d1f9d6d5ea56606ca420d2ebaaaecf",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CANONICAL_RESULT-9081851f01852583.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CANONICAL_STDOUT-688278f6aa5cb62d.txt.gz",
+        "sha256": "82158b8c9f489a8bc62e697a5c91231f8041b33015776ec3a1be0b0ea8736d0a",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CANONICAL_STDOUT-688278f6aa5cb62d.txt.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CLAIM_STATUS_CERTIFICATE-d197fcba0e77ca60.md",
+        "sha256": "d197fcba0e77ca60427259fefc9382922895039b36aaa689bc3dcb3cc9e79e98",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CLAIM_STATUS_CERTIFICATE-d197fcba0e77ca60.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CONTROLS_PREREGISTRATION-70f3c106c801b133.md",
+        "sha256": "70f3c106c801b1338e3bfe5fd795b97da4ad940000a5ad207c628a00525a220d",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CONTROLS_PREREGISTRATION-70f3c106c801b133.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-DERIVATION-55f5a4e94d945cc3.md",
+        "sha256": "55f5a4e94d945cc30ad2d00718378e0f92559106bd94039c40cbfc55dc59955d",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-DERIVATION-55f5a4e94d945cc3.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION-b7ea371b71d19e6d.json.gz",
+        "sha256": "541d7a829b0d6f910d70aee20e04ae347191a031626717df7197bf1805aed1c6",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION-b7ea371b71d19e6d.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_LOCK_RELEASE-25f09ffc3fa01b87.json.gz",
+        "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_LOCK_RELEASE-25f09ffc3fa01b87.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_READINESS-da03199a43f726cc.json.gz",
+        "sha256": "648782aedfb5fd194584d320dab49170b02089bd37277709bdfbbdd7c3782680",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_READINESS-da03199a43f726cc.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_STRICT-547d5f47193228f9.log.gz",
+        "sha256": "eb4b462c673ef580669d092dc1081d67fe080fd462bcebe7e5e7728c487dbc5b",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_STRICT-547d5f47193228f9.log.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_SYNC_RECEIPT-28a1cc4b98844534.json.gz",
+        "sha256": "b13c9b4794e435e0e6535c47b93e945c361299873a9439bec137329859935603",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_SYNC_RECEIPT-28a1cc4b98844534.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_VALIDATION-7924df3dfd482e60.md",
+        "sha256": "7924df3dfd482e60a5646b5e1205b174ad6512537eb85701cda766477e814ded",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_VALIDATION-7924df3dfd482e60.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_VALIDATION-61c13e5cae19471f.md",
+        "sha256": "61c13e5cae19471f93fed9f9ee3d425e4c6f30d0cdd34211319d4e8b5d066b96",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_VALIDATION-61c13e5cae19471f.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_VOCAB_LINT-75d6a064729cbe1e.txt.gz",
+        "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_VOCAB_LINT-75d6a064729cbe1e.txt.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FROZEN_PORT_RECEIPT-fa62849d3c843469.json.gz",
+        "sha256": "81725a07a5ff6b501dac56cf653eabe44d0c0cac45c32d99073763a58683bf2c",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FROZEN_PORT_RECEIPT-fa62849d3c843469.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FULL_PIPELINE-562561a9c5c5690c.log.gz",
+        "sha256": "e3e0d8717b7b85b3ff986c0c790e80dcbb8d669565aa4b0ecd19215797367fcd",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FULL_PIPELINE-562561a9c5c5690c.log.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOT-cbddff81440b3c19.md",
+        "sha256": "cbddff81440b3c199dd1bda76db586da489a99dc1dbfe8d192e3dc908646b51b",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOT-cbddff81440b3c19.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GENERATOR_NORMALIZATION_CORRECTION-3677fe3c989a4b82.md",
+        "sha256": "3677fe3c989a4b826dd380d3a2043363dbf3d268e098aade83fc36b89504ccc3",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GENERATOR_NORMALIZATION_CORRECTION-3677fe3c989a4b82.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GOAL-ba656aa86e9d2ae9.md",
+        "sha256": "ba656aa86e9d2ae9b8c9208bc8970cf61d736a7c854be74c36ad01c6d7b20366",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GOAL-ba656aa86e9d2ae9.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-HANDOFF-8c0cffd89510f74a.md",
+        "sha256": "8c0cffd89510f74a355f0e4ff89a4e960f1ceb7a69e1ca0bf3d86b0ddc3f81ee",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-HANDOFF-8c0cffd89510f74a.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-LITERATURE_BRIDGES-ae5f5c8723a6a117.md",
+        "sha256": "ae5f5c8723a6a117b5cbc527321312662e7c4c0bfc9ece10943ac2040e5eb317",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-LITERATURE_BRIDGES-ae5f5c8723a6a117.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-NO_GO_DISCIPLINE_CHECKLIST-dc918699e447b583.md",
+        "sha256": "dc918699e447b583724ac0c27178da01ecabd210bbca57d2b9fd38bde18bf0c8",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-NO_GO_DISCIPLINE_CHECKLIST-dc918699e447b583.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-NO_GO_LEDGER-e50f67e1d0650414.md",
+        "sha256": "e50f67e1d0650414cae94ad7fd663d20fa0d964ae08018490f08f63d439a84f2",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-NO_GO_LEDGER-e50f67e1d0650414.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-OPPORTUNITY_QUEUE-2f31dcb0a1a1195c.md",
+        "sha256": "2f31dcb0a1a1195c83a3e43626dd57f7b13486b45a689c8390b556b962fcf7ca",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-OPPORTUNITY_QUEUE-2f31dcb0a1a1195c.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PACK_INDEX-4d741e696e366e95.json.gz",
+        "sha256": "c6b1819ec9bd8693275da5b8d0d2ba8e2bfc9f0ecb3e5d1db96d9f18d77be22b",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PACK_INDEX-4d741e696e366e95.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PARENT_VALIDATION_METADATA_CATCHUP-af13a255467d5eb8.md",
+        "sha256": "af13a255467d5eb82ec76ed81faf3f976cc62b669eba9ac7ee7b24b4f10fd12f",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PARENT_VALIDATION_METADATA_CATCHUP-af13a255467d5eb8.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PORT_RECEIPT-a0bb7d734ff7fddc.json.gz",
+        "sha256": "04899ecd68ab17f0ccb515d4dbe1a7c59dee5104836f841c3345f4e3cf06bad7",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PORT_RECEIPT-a0bb7d734ff7fddc.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PREREGISTRATION-39a046d3644d7ade.md",
+        "sha256": "39a046d3644d7ade83e2c5f49c164b119a9aff25af1f2bd4af656160d9b7323d",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PREREGISTRATION-39a046d3644d7ade.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PREREGISTRATION-ab4d5238c7ab1ad3.md",
+        "sha256": "ab4d5238c7ab1ad3b5c5a7670c02d29780a2f8e36b4a49f4f7eb325807f702cf",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PREREGISTRATION-ab4d5238c7ab1ad3.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PROOF_REVIEW-e640563f3b04a488.md",
+        "sha256": "e640563f3b04a488931d7eb0253de2d74688f0bcd9535d6fea2da9e713e3a30e",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PROOF_REVIEW-e640563f3b04a488.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PR_BACKLOG-fe013018afe4be5d.md",
+        "sha256": "fe013018afe4be5d8a248b5d3e331c44ad92d77e1f985677e30fc3132ef10f96",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PR_BACKLOG-fe013018afe4be5d.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PR_BODY-ff8f204868c63144.md",
+        "sha256": "ff8f204868c6314477f344e35dc71f506cb016a51270ea99e5f66386607936e7",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PR_BODY-ff8f204868c63144.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PUBLICATION_RECEIPT-3bb8b3155cc0004c.json.gz",
+        "sha256": "494cf79ae4abf8fdac5717caeb02082117ea6185626a8a8727b385961ce8476e",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PUBLICATION_RECEIPT-3bb8b3155cc0004c.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-RESTRICTED_MATRIX_STRENGTHENING-5e080b3fcf704c51.md",
+        "sha256": "5e080b3fcf704c51f090c6dda46f1e6fd5ef3e6bad5c4ad4d4f662e468556858",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-RESTRICTED_MATRIX_STRENGTHENING-5e080b3fcf704c51.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-REVIEW-818868bd22c7c6c1.md",
+        "sha256": "818868bd22c7c6c1fdbc89267454fc809aeed7e0a5a6cacf6222459845524b68",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-REVIEW-818868bd22c7c6c1.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-REVIEW_HISTORY-68ab8fd6caeaa94e.md",
+        "sha256": "68ab8fd6caeaa94e58090752d631d6972f937060f95738e425e9a85e35fdd508",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-REVIEW_HISTORY-68ab8fd6caeaa94e.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_CANONICAL_PORT_REVIEW-086a49565d6feb83.md",
+        "sha256": "086a49565d6feb83b56d57772ffb66816bdf3af8a739d34784e20de41985daa6",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_CANONICAL_PORT_REVIEW-086a49565d6feb83.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_CORRECTION_REVIEW-e914a5c4ee6056e3.md",
+        "sha256": "e914a5c4ee6056e3c20472cc10526dce6cd9de6de431f12027323e71ee69c797",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_CORRECTION_REVIEW-e914a5c4ee6056e3.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_DERIVATION-9ef44bb2da9d373c.md",
+        "sha256": "9ef44bb2da9d373c72bc79fadf1c283fca6fe7d0fce64416df3c3a3a200913ce",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_DERIVATION-9ef44bb2da9d373c.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_DERIVATION_BEFORE_GENERATOR_NORMALIZATION_224fa648-224fa648db011ab7.md",
+        "sha256": "224fa648db011ab7f22011949279e523f04cf0d436cbbf1694e91a507dfc8129",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_DERIVATION_BEFORE_GENERATOR_NORMALIZATION_224fa648-224fa648db011ab7.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_NATIVE_REVIEW-4f94cd015b61b7bd.md",
+        "sha256": "4f94cd015b61b7bd47258415153305dbccf5ac56bb30d3eefcf4ca8dfc154564",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_NATIVE_REVIEW-4f94cd015b61b7bd.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_REVIEW-007283ac7cbe03a3.md",
+        "sha256": "007283ac7cbe03a31712e7918b70d63e346b11b529f7681a19ca610e74137814",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_REVIEW-007283ac7cbe03a3.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROUTE_PORTFOLIO-9f34935b612d6b7a.md",
+        "sha256": "9f34935b612d6b7afc5f4b1ba45db268d59fde1a20d396524757bac33489f6a1",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROUTE_PORTFOLIO-9f34935b612d6b7a.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-SCOPED_VALIDATION-3a3215bf937b2b30.md",
+        "sha256": "3a3215bf937b2b303dbbe422561092713582c8f4e119069539749df3a8b5da01",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-SCOPED_VALIDATION-3a3215bf937b2b30.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STAGING_INDEX-a288fb0054e18d67.json.gz",
+        "sha256": "33a2754a7e009f43067be4b73e65bdf5fcba73e15cf7641da6a3d7fb599bb526",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STAGING_INDEX-a288fb0054e18d67.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STAGING_VALIDATION-93d467aa30988bb5.json.gz",
+        "sha256": "990ec5b2fc2491fe7dff66c7671c04a4a8ab54964cb44e286847cd88c65f6973",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STAGING_VALIDATION-93d467aa30988bb5.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STATE-4b4bba442dd9c0f9.yaml.gz",
+        "sha256": "dcb92efa6cc814188d7c17fba2184988f554dcf14360a5471996e5c5856f63d1",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STATE-4b4bba442dd9c0f9.yaml.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STRICT_LINT-e6fc7621f090a9ba.log.gz",
+        "sha256": "09e60992d6fb34d0d60c7228336d409044387284d83dffa2d7207d0f46729969",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STRICT_LINT-e6fc7621f090a9ba.log.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-TRACE_GATE-f6854afb6c690994.md",
+        "sha256": "f6854afb6c690994192b3d37b0b8b18f7db7b9d6ae79610bec1c465d289b86a2",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-TRACE_GATE-f6854afb6c690994.md"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-actual_r1_check-27c764ecf14dff29.py",
+        "sha256": "27c764ecf14dff294a1f47332edfee276b646eb5c8896fbf5fb9379f0bf45b5a",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-actual_r1_check-27c764ecf14dff29.py"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-actual_r1_result-decbe9cb033a9863.json.gz",
+        "sha256": "939144c683bc8b5d4c4aef73c298175c3fe1ab1eb3bc73137a8cbe37a01ef4fc",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-actual_r1_result-decbe9cb033a9863.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-audit_packet_script_deps-5a20df422b36e986.py",
+        "sha256": "5a20df422b36e986e242c6814e0d991cab5fa81a33b938666ff82a217514e7b3",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-audit_packet_script_deps-5a20df422b36e986.py"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-build_citation_graph-2529a54db0533874.py",
+        "sha256": "2529a54db0533874752d3d8c15b7aa46e435bbda8fe977d671a996b401d7bed7",
+        "mode": "0o755",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-build_citation_graph-2529a54db0533874.py"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-check-0bdff133fb9b8426.py",
+        "sha256": "0bdff133fb9b84260afbd03bef0cf7775c8a7f42776bc70952cd24b97c2be307",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-check-0bdff133fb9b8426.py"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-citation_graph_manifest-25ec0d2941a91203.json.gz",
+        "sha256": "0f53aacc9b88f0645f291ed5f5f2b1a598670612260fcfcd424f8d6664f25b97",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-citation_graph_manifest-25ec0d2941a91203.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-9d43e55cc41384e4.py",
+        "sha256": "9d43e55cc41384e4f98398cc599655d881bfdfb2cba545781b501fa9024bdf70",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-9d43e55cc41384e4.py"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-b249b1433a7199be.txt.gz",
+        "sha256": "3bacf0b7ad57c6174306083f92a24306a5cba2e6e27fa347b5dbfa4b481264bf",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-b249b1433a7199be.txt.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py.live-b15f9bc0d5c28082.json.gz",
+        "sha256": "de41cc6a4e39ce2ec2bc4d5d8874f38d90211758b89bf7b2d2919491093b1644",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py.live-b15f9bc0d5c28082.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07-02b74ad5d2baff2f.txt.gz",
+        "sha256": "ac629feaea736b5106857b2223b31558f2b17e4ed558d4be3762dabb17427e42",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07-02b74ad5d2baff2f.txt.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07-2007377e37c26a7e.py",
+        "sha256": "2007377e37c26a7e2903332fe1c48388b6ac124bc95e7e71e3f9d6fcfb436433",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07-2007377e37c26a7e.py"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py.live-10ced76cb62c47ef.json.gz",
+        "sha256": "7fd3b311d2afedda586740ceaa3028c29c73d3d2d9cd39b626c607281ee746c2",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py.live-10ced76cb62c47ef.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-port_actual_r1-d000880a23aa821b.py",
+        "sha256": "d000880a23aa821be488c8b9f83959494905b49f5d598d5c6c61bbde8bac779c",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-port_actual_r1-d000880a23aa821b.py"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-result-033490f7a9e4d805.json.gz",
+        "sha256": "8e50ea93464749a10a5d9545e6c6022853b745a661176080a9a71f1bc78e02f7",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-result-033490f7a9e4d805.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-validated_claims_before_generated_cleanup-64a1ac1c910dd4d0.json.gz",
+        "sha256": "ff66fa9700b131668020cdce4987744263fd7fec3732436b9f852523cb109f9b",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-validated_claims_before_generated_cleanup-64a1ac1c910dd4d0.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-validated_readiness_before_generated_cleanup-ec75eb2ff65c6bc7.json.gz",
+        "sha256": "88caee7b58c8be99bff1f2b5dfa8488ccb704f13b1492fe6e4871208bab051a8",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-validated_readiness_before_generated_cleanup-ec75eb2ff65c6bc7.json.gz"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/pr8032-archive-manifest.json",
+        "sha256": "000c2a9d57c963a20e6d17b7b7ebf2af4825dbb9d105e0573d6002db5c3c23aa",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/pr8032-archive-manifest.json"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8032-evidence/pr8032-original.delta.gz",
+        "sha256": "721a2da730218c209a8cb210ff8e838a75e98551aaea23eeaa45dc6ac04534d2",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/docs/work_history/repo/review_feedback/pr8032-evidence/pr8032-original.delta.gz"
+      },
+      {
+        "path": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+        "sha256": "d64149ff67bde3f8965c70d5319bc11ef3ee003392298b5ed5d771de32994309",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+      },
+      {
+        "path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+        "sha256": "8457e1c7adff154addaa9a476cabcb1b087d3d46a7a16e581a5f1f0b91d7625f",
+        "mode": "0o644",
+        "immutable_copy": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py"
+      }
+    ]
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-handoff-v1.json",
+      "sha256": "ca7a706f64745fbb3fe72ed345fb0f9d517cc0f66d61b9840f0f87742c52cab1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-prepared-v1.json",
+      "sha256": "b84670c36dec28496718f538ac74b5a5908f315158c1c71f55ed07ca646a43cf"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-prepared-v1-source-freeze.json",
+      "sha256": "712f7a572aba2daed97fae00d0cf2e0f82bce2c17bd2cd1beb16a254d52c29f9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-correction-v1.diff",
+      "sha256": "e3b02cad8e220cb42bc12d844d5ffd578aa9bbf900caf08641072b8e3ff488d9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-discovery-v1.json",
+      "sha256": "db75b23d27ff541b6d1352d0eb8e0ab1290929e9e5706ac046f25827f40bc7f9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-input-resource-plan-v1.json",
+      "sha256": "b8d2b341cd8f2f33681603ba7d4b8eda64141bd61c1917a58dd8e7cb1f68b0f2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-full-mapping-v1.json",
+      "sha256": "5934b7498c1457724afa12c0ea9d60b6fdde27035b1be1a9cf47d187f01d7bba"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-early-verification-v1.json",
+      "sha256": "eaf1d608ebac318f50be56565e392755b49205c3a88ae7b3a74f4f8a12a76af7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8032/early_verify.py",
+      "sha256": "f7d7f01e7d645afe0d6823479452243c14bb96c05827e1790f32a518585c2ac9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8032/early_verify_v1.stdout",
+      "sha256": "323b758d8d26b4a9aa5bda0ba360824905be61c167d22eef70a825d0eeef8e8a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8032/early_verify_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-registry-proposal-v1.patch",
+      "sha256": "c9f435c3be2b04bce2dbf2f5b878088e4c31517c2e5f1bc879a8556e6fc62c33"
+    }
+  ],
+  "verification": {
+    "second_emit": "FileExistsError as predicted",
+    "raw_traceback": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8032/early_verify.py\", line 38, in <module>\n    try:ns['_emit'](fake.copy(),1,scopes)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/review-drain-20260915/review-meta-slot/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py\", line 41, in _emit\n    with _result_path.open('x') as _result_file:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/private/tmp/review-drain-20260915/check8032/io-v1/logs/runner-cache/synthetic_emit.json'\n",
+    "source_count": 82,
+    "original_roundtrips": 84,
+    "context_pins": 19,
+    "registry_proposals_preserve_existing": true,
+    "science_AST_unchanged": true,
+    "primary_runs": 0,
+    "helper_runs": 0,
+    "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736"
+  },
+  "finding_dispositions": {
+    "8032-DEP": "resolved: actual landed positive parent only; separate neutral full-ground premise remains explicit",
+    "8032-N5": "resolved: 21/0/7/12/0 primary and5/0/5/12/0 companion scopes honestly account for40/22 mathematical predicates",
+    "8032-GOV": "resolved: full main, alternative and exact one-plaquette proofs live in native language, all84 original paths recover exactly; no historical status promotion",
+    "8032-EVIDENCE": "source declaration/registration proposal accepted; captures pending and new IO blocker below"
+  },
+  "findings": [
+    {
+      "id": "8032-IO1",
+      "kind": "BUG",
+      "severity": "blocking-rerun-and-cold-clearance",
+      "paths": [
+        "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+        "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+      ],
+      "line": 41,
+      "evidence": "Both _emit functions unconditionally exclusive-create a canonical logs/runner-cache/<stem>.json. Once this output lands, every fresh live default/--json/auditor run fails FileExistsError before its stdout report. scripts/runner_cache.py execute_runner invokes subprocess directly and does not clear that JSON. A synthetic external-only extraction of _emit reproduced first success then FileExistsError; no scientific runner executed.",
+      "fix": "Make normal live execution independent of absent tracked JSON. Prefer optional explicitly named external per-attempt sidecar destination with exclusive creation when supplied; preserve exact same-run data in the capture wrapper and then place intended canonical evidence. Default live/--json reproduction must remain rerunnable even when canonical artifacts are present. Freeze corrected runner and capture plan for same-session cold check; no scientific formula changes needed."
+    }
+  ],
+  "science_confirmation": "All original positive claims remain confirmed at stated bounded scope; original68 independent controls reused because scientific body AST and formula families unchanged. Main/alternative proofs and R1 supplement checked with changed premise links. No target-equivalent gap, new physical import or source loss introduced. Registered authorities and19 contextual files remain byte-identical to original review.",
+  "no_go": "Applicability account honestly limits positive theorem and finite adverse example; no new exhaustive N1 packet or deferred parent negative certification PASS.",
+  "current_main_interactions": "51cac1ae->3dca18dd changes add unrelated six-axis record-law recurrence source/evidence and topology; all19 relevant authority/context pins unchanged. Current tracked source and registry files unmodified;82 candidate files are additions. Narrow helper proposals add exactly one identical claim entry in each map and preserve every existing entry. Actual integrated map/source identity and APIs must be frozen before capture.",
+  "resource_plan": "180-second internal/external bounds and180MiB internal guard/256MiB aggregate external proposed cap reasonable for unchanged small40/22 controls with historical58/20MiB measurements. No new measured runner usage asserted. External cap includes capture tooling; preserve failures and no automatic retry.",
+  "independent_controls": "Only exact archive/hash/AST/registry verification and isolated synthetic _emit IO reproduction this turn; no primary/helper/simulation execution. Original68 math controls remain valid and were not rerun.",
+  "next": "Root may integrate accepted narrow helper-map proposals serially. Repair IO, update source/discovery/resource-plan freeze, then request same-session cold clearance. No draft/branch/GitHub actions by reviewer.",
+  "source_edits": 0,
+  "primary_runs": 0,
+  "helper_runs": 0,
+  "pipeline_runs": 0,
+  "audit_runs": 0
+}

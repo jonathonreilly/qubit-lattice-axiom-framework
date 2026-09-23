@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py",
+ "seed": 39252,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48c5078d",
+ "started_utc": "20260923T045412Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=48, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "827b97d6575ef5262f45969851d1d8c008b6b2a32439a17f39d785fd3820eacf",
+ "stdout_tail": "(R9-scan) proof does not consume 'fitted'\n  [PASS (A)] (R9-scan) proof does not consume 'Wilson plaquette'\n  [PASS (A)] (R9-scan) proof does not consume 'u_0'\n  [PASS (A)] (R9-scan) proof does not consume 'Monte Carlo'\n  [PASS (A)] (R9-scan) proof does not consume 'Brillouin'\n  [PASS (A)] (R9-scan) proof does not consume 'staggered phase'\n  [PASS (A)] (R9-scan) proof does not consume 'framework axiom'\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (R1) A four-component vector eps in C^4 has 4 components.\n    (R2) The nonzero row ell has rank 1.\n    (R3) The nonzero direction k in ker(ell) has rank 1.\n    (R4) Quotient dim_C ker(ell)/span(k) = 4 - 1 - 1 = 2.\n    (R5) Explicit representatives (0,1,0,0), (0,0,1,0) in the canonical model.\n    (R6-R8) Former physics-language checks are diagnostics only.\n    (R9) Note structure + forbidden-import scan.\n\n========================================================================================\nTOTAL: PASS=48, FAIL=0\nVERDICT: bounded abstract quotient identity verified at exact precision;\n         dim_C ker(ell)/span(k) = 2 for a nonzero row ell and nonzero\n         k in ker(ell). Physical massless-vector interpretation is outside\n         this row's load-bearing scope.\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045412Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

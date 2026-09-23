@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_observable_principle_scale_invariant_source_response_exact_2026_05_16",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_observable_principle_scale_invariant_source_response_exact_2026_05_16.py",
+ "seed": 39255,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48c5078d",
+ "started_utc": "20260923T045415Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5b7e429694f91161c2985e6d7468e614b3fc4a3f86757783179b38a30edd0f21",
+ "stdout_tail": "invariance at second order, sites (j2, j2)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j2, j3)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j2, j4)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j3, j1)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j3, j2)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j3, j3)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j3, j4)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j4, j1)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j4, j2)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j4, j3)\n[PASS (A)] (D2) additive-constant invariance at second order, sites (j4, j4)\n[PASS (A)] (CF) at eps = 0, counterfactual reduces to admissible (R agrees with W)\n[PASS (A)] (CF) for eps != 0, counterfactual changes the source-response ratio  (R^(F_cf) - R^(W) = -225*eps/(25*eps + 1))\n\n============================================================================\nSCORECARD: 45 pass, 0 fail out of 45\n============================================================================\nVERDICT: scale-invariant source-response narrow theorem holds at exact sympy precision on the runner test block; the c=1 choice is shown to be a unit convention with no propagation to normalized source-response observables; class (X2) admissibility is load-bearing (counterfactual probe).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045416Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

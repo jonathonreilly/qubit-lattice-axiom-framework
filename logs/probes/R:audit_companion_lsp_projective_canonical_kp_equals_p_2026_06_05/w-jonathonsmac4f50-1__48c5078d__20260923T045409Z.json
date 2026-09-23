@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
+ "seed": 39249,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48c5078d",
+ "started_utc": "20260923T045409Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a13f7855e40fca30059d772669142495aad34999cb2742594814207791cb2894",
+ "stdout_tail": " Zero-projector edge-case for the necessity clause\n  [PASS] E''[zero-zero mixing]: formal zero-label rotation leaves every K_r^dag K_r unchanged\n  [PASS] E''[nonzero-nonzero mixing]: nonzero sector mixing breaks K_r^dag K_r = P_r\n  [PASS] E''[nonzero-zero mixing]: leaking a nonzero sector into a zero label still breaks\n  [PASS] E''[nonzero convention]: displayed physical labels have P_r != 0\n\n[Part F] Source-note boundary string checks\n  [PASS] F.required present: 'Status authority:** independent audit lane only'\n  [PASS] F.required present: 'restricted Step-3 scope'\n  [PASS] F.required present: 'K_P = P'\n  [PASS] F.required present: 'P_r \u2260 0'\n  [PASS] F.required present: 'zero-projector edge-case'\n  [PASS] F.required present: 'outcome-label'\n  [PASS] F.required present: 'necessary'\n  [PASS] F.required present: 'What this does NOT claim'\n  [PASS] F.required present: 'audit lane is the only status authority'\n  [PASS] F.forbidden absent: 'Status: retained'\n  [PASS] F.forbidden absent: 'Status: promoted'\n  [PASS] F.forbidden absent: '**Status:** retained'\n  [PASS] F.forbidden absent: 'target_audit_status'\n  [PASS] F.forbidden absent: 'audited_clean'\n  [PASS] F.forbidden absent: 'effective_status='\n  [PASS] F.forbidden absent: 'audit_status='\n  [PASS] F.forbidden absent: 'uniqueness theorem for all instruments'\n\n========================================================================\nTOTAL: 53 PASS / 0 FAIL\n========================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045411Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_luders_rule_from_composition_consistency_deps_changed_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_luders_rule_from_composition_consistency_deps_changed_2026_06_04.py",
+ "seed": 39251,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48c5078d",
+ "started_utc": "20260923T045411Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1fe34b40d038e4fbd2ce732a564ae9959974676cf5a34fb6640c558e1316858b",
+ "stdout_tail": "uals_route_A :: ||route_B_alt - route_A|| = 1.243e-16\n  PASS route_A_equals_route_B :: ||route_A - route_B|| = 1.243e-16\n  PASS purification_reduces_to_sigma :: ||rho_S - sigma|| = 2.289e-16\n  PASS route_C_purification_post_equals_route_A :: ||route_C - route_A|| = 1.242e-16\n\n========================================================================\nTOTAL PASS: 174\nTOTAL FAIL: 0\n========================================================================\n\nCompanion conclusion (audit-friendly evidence only):\n  The load-bearing chain of LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_\n  NOTE_2026-05-20.md uses ONLY Quantum axiom content (per-site\n  qubit local algebra M_2(C)) and Lattice axiom content (Z^3\n  site set + standard C*-tensor product over finite regions)\n  plus standard textbook operator-algebraic identities (trace\n  cyclicity, positivity preservation under congruence, finite-\n  dimensional density/effect duality, Bayes rule, standard\n  sequential-effect composition M_{P,E} = P E P). The Record\n  axiom (additive scalar record-readout functional) is neither\n  used nor invoked. Numeric / algebraic output is identical\n  under both 'Record axiom included' and 'Record axiom not\n  included' outer scopes. This runner does not re-apply the\n  prior audit verdict; it records that the algebra checked\n  here is unchanged by the 2026-06-04 minimal-axioms edge\n  re-resolution.\n\nThe audit lane decides its independent handling of the\narchived snapshot under the new minimal_axioms premise hash.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045411Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_luders_rule_from_composition_consistency_deps_changed_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

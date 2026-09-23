@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_m_dm_nsites_v_factorization_enumeration_2026_05_28",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_m_dm_nsites_v_factorization_enumeration_2026_05_28.py",
+ "seed": 39252,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48c5078d",
+ "started_utc": "20260923T045412Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9ea2e97532bc665adcf150b6b91a9a3358c51f7f7b4f045446c79762963612eb",
+ "stdout_tail": "---------------------\nPart 4: source-note boundary hygiene\n----------------------------------------------------------------------------------------\n  [PASS] required source boundary text: '**Type:** bounded_theorem'\n  [PASS] required source boundary text: '**Audit status:** assigned only by the independent audit lane.'\n  [PASS] required source boundary text: 'does not derive `m_DM = N_sites \u00b7 v`'\n  [PASS] required source boundary text: 'does not assign audit status'\n  [PASS] required source boundary text: 'does not ship a new no-go'\n  [PASS] required source boundary text: 'not a claim that no future source can introduce another reading'\n  [PASS] required source boundary text: 'The audit ledger is the authority for live effective status.'\n  [PASS] required source boundary text: 'F1'\n  [PASS] required source boundary text: 'F2'\n  [PASS] required source boundary text: 'F3'\n  [PASS] required source boundary text: 'F4'\n  [PASS] forbidden source overclaim absent: 'audited_clean'\n  [PASS] forbidden source overclaim absent: 'promotes the bounded eta prediction'\n  [PASS] forbidden source overclaim absent: 'closes m_DM = N_sites \u00b7 v'\n  [PASS] forbidden source overclaim absent: 'new axiom proposed'\n  [PASS] forbidden source overclaim absent: 'lattice-realization-invariant by definition'\n\n========================================================================================\nSUMMARY: PASS=37 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045412Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

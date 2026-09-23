@@ -1,0 +1,23 @@
+========================================================================
+N_F trace-space bounded obstruction record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/N_F_TRACE_SPACE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_w2binary.md
+Parent runner: scripts/cl3_n_f_v3_trace_check_2026-05-07_w2binary.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/audit_companion_n_f_trace_space_bounded_obstruction_record_invariance_2026_06_04.py", line 183, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/audit_companion_n_f_trace_space_bounded_obstruction_record_invariance_2026_06_04.py", line 102, in main
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/audit_ledger.json'

@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_observable_principle_real_d_block_uniqueness_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_observable_principle_real_d_block_uniqueness_exact_2026_05_10.py",
+ "seed": 39253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48c5078d",
+ "started_utc": "20260923T045413Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=38, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a8b7cd16a1b80c7122fa1695870d441feb8bee3bfee347bd01fd3142f8e5590e",
+ "stdout_tail": "-----------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (X1) test block D is real anti-Hermitian and invertible on the selected subregion\n    (Step 1) det(D + J) \u2208 R for real D, real-symmetric J\n    (Step 4) det factorizes on no-bond direct-sum blocks\n    (R2) Re Tr log(D + J) = log|det(D + J)| at test point\n    (R1) Im Tr log(D + J) is locally constant on real-D block\n    (U2/U3) \u2202_j W and \u2202^2_j W at J=0 match Tr(D^{-1}) and -Tr(D^{-2})\n    (CE) candidate f(r) = c log r satisfies multiplicative-to-additive;\n      non-log candidates fail; one real parameter c is allowed\n    (A) W is block-additive on no-bond splits (Step 4 implication)\n    Counterfactual: non-real anti-Hermitian D breaks Step 1 \u2014 (X1) is load-bearing\n    Strengthened-(A) probe: (log r)^2 fails strengthened (A) at realized\n      (r_A, r_B) with r_A, r_B != 1 (cross-term 2 log r_A log r_B nonzero);\n      this closes the audit-lane (log r)^2 counterexample to the original\n      per-block (A).\n    Direct-sum closure + dense realized ratio: the family B = { a sigma_y :\n      a in R_+ } with sources J in R*I and R*sigma_x has realized r_A sweeping\n      R_+; two independent factors realize R_+ \u00d7 R_+.\n\n========================================================================================\nTOTAL: PASS=38, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045415Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

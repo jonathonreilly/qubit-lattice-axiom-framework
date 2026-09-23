@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_luders_sequential_effect_composition_pep_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
+ "seed": 39251,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48c5078d",
+ "started_utc": "20260923T045411Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f44de5b531a3ebdf58da4f12a41a6875f670b7221bbc1f9f4099d58e956ec477",
+ "stdout_tail": "=\n[PASS] P is an orthogonal projection\n[PASS] E is an effect with spectrum in [0,1]\n[PASS] rho is a density matrix\n[PASS] PEP is Hermitian\n[PASS] PEP is positive\n[PASS] P - PEP is positive\n[PASS] I - P is positive\n[PASS] trace identity Tr(rho PEP) = Tr(P rho P E)\n[PASS] boundary PIP = P\n[PASS] boundary IEI = E\n\n=== Part 2: numeric d=2,3,4 compression checks ===\n[PASS] d=2: trace identity over 300 seeds  [max err=2.78e-16]\n[PASS] d=2: PEP positive over 300 seeds  [min eig=-3.00e-16]\n[PASS] d=2: 0 <= PEP <= P <= I over 300 seeds  [min boundary eig=-9.91e-16]\n[PASS] d=2: nested compression identity over 300 seeds  [max err=4.51e-16]\n[PASS] d=3: trace identity over 300 seeds  [max err=2.23e-16]\n[PASS] d=3: PEP positive over 300 seeds  [min eig=-4.18e-16]\n[PASS] d=3: 0 <= PEP <= P <= I over 300 seeds  [min boundary eig=-1.08e-15]\n[PASS] d=3: nested compression identity over 300 seeds  [max err=4.64e-16]\n[PASS] d=4: trace identity over 300 seeds  [max err=2.22e-16]\n[PASS] d=4: PEP positive over 300 seeds  [min eig=-3.77e-16]\n[PASS] d=4: 0 <= PEP <= P <= I over 300 seeds  [min boundary eig=-1.66e-15]\n[PASS] d=4: nested compression identity over 300 seeds  [max err=6.72e-16]\n\n=== Part 3: exact nested compression and Jordan guard ===\n[PASS] exact nested identity P(QFQ)P = (QP)^*F(QP)\n[PASS] exact F=I boundary gives P Q P\n[PASS] nested compression is positive\n[PASS] Jordan symmetrization differs from compression\n[PASS] Jordan guard: trace scalar differs on rho\n\nSUMMARY: PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045412Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_observable_principle_p2_phase_blindness_sector_resolved_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_observable_principle_p2_phase_blindness_sector_resolved_2026_06_04.py",
+ "seed": 39253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48c5078d",
+ "started_utc": "20260923T045413Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dec21e6774b3c18c6fd7d700f257fbf4f4d8f3ba871d3b2ac32418b202ab1fdf",
+ "stdout_tail": "r (Part B), the two sectors are complementary ===\n[PASS] mass-like sector has arg(det)=0 => Part A compactness adds nothing there  [honest scope: compactness is non-vacuous only on the generic sector]\n[PASS] two sectors are complementary and EXHAUST det(D+J) in C* (R_{>0} via positivity; the rest via single-valued-real phase-blindness)  [documented: every det value is either real-positive (B) or carries a phase (A)]\n\n=== Part E: residual analysis -- P2 routes into the (M)/AC_phi_lambda determinant identification; no extra premise class ===\n[PASS] residual is (M)/Berezin det-identification (AC_phi_lambda-gated), NOT P2 itself  [P2 has no separate residual beyond AC_phi_lambda plus named regularity hypotheses]\n[PASS] no admission authority exists; the AC occupancy dependency remains an open gate  [Record supplies additivity only; the open gate supplies no premise]\n[PASS] continuity attributed to finite-block analyticity of j->det(D+jI), NOT to Record  [det polynomial=j**2 + 5*j - 2; Record boundary states no P2 import]\n\n======================================================================\nTOTAL: 19 PASS / 0 FAIL  (out of 19 checks)\n======================================================================\n\nAll checks passed: P2 phase-blindness is sector-resolved (audit-ratified positivity on the mass-like sector; prior compact-phase lemma on the generic sector); its only residual is the (M)/AC_phi_lambda determinant identification plus named regularity hypotheses. No new premise.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045413Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

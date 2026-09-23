@@ -1,0 +1,101 @@
+========================================================================================
+Audit companion (exact-symbolic) for
+ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10
+Goal: verify (R1)-(R4) closed forms satisfy anomaly equations
+parametric in n_color, plus condition-supplied regression instances
+Slot aliases do not assert physical species identification
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  symbolic n_color = n_color, a, b = LH eigenvalues
+  LH trace constraint (imported from sister narrow): b = -n_color * a
+  (R1) Y_uR  = a + 1
+  (R2) Y_dR  = a - 1
+  (R3) Y_eR  = b - 1
+  (R4) Y_nuR = b + 1 (fourth slot is 0 at supplied b = -1)
+
+----------------------------------------------------------------------------------------
+Part 1: color SU(3)_c anomaly under closed forms
+----------------------------------------------------------------------------------------
+  [PASS (A)] color SU(3)_c anomaly vanishes identically  (color anomaly simplifies to 0)
+  [PASS (A)] color anomaly /n_color form: 2a - (Y_uR + Y_dR) = 0  (2a - (Y_uR + Y_dR) simplifies to 0)
+
+----------------------------------------------------------------------------------------
+Part 2: mixed gauge-gravity anomaly under closed forms
+----------------------------------------------------------------------------------------
+  [PASS (A)] gauge-gravity anomaly vanishes before LH trace substitution  (gauge-gravity anomaly simplifies to 0)
+  [PASS (A)] gauge-gravity anomaly under LH trace b = -n_color a: vanishes identically  (grav_anom under trace = 0)
+
+----------------------------------------------------------------------------------------
+Part 3: cubic [U(1)_Y]^3 anomaly under closed forms
+----------------------------------------------------------------------------------------
+  [PASS (A)] cubic anomaly under LH trace b = -n_color a: vanishes identically  (cubic_anom under trace = 0)
+
+----------------------------------------------------------------------------------------
+Part 4: regression support at supplied n_color = 3, b = -1, a = 1/3
+----------------------------------------------------------------------------------------
+  [PASS (SUPPORT)] framework n_color=3: Y_uR = 4/3  (Y_uR = 4/3)
+  [PASS (SUPPORT)] framework n_color=3: Y_dR = -2/3  (Y_dR = -2/3)
+  [PASS (SUPPORT)] framework n_color=3: Y_eR = -2  (Y_eR = -2)
+  [PASS (SUPPORT)] framework n_color=3: fourth slot Y_nuR = 0 under supplied b=-1  (Y_nuR = 0)
+
+----------------------------------------------------------------------------------------
+Part 5: anomaly regression at supplied n_color = 3
+----------------------------------------------------------------------------------------
+  [PASS (SUPPORT)] framework n_color=3: (COLOR_ANOM) SU(3)_c anomaly = 0  (color_anom at framework = 0)
+  [PASS (SUPPORT)] framework n_color=3: (GRAV_ANOM) gauge-gravity anomaly = 0  (grav_anom at framework = 0)
+  [PASS (SUPPORT)] framework n_color=3: (CUBIC_ANOM) cubic [U(1)_Y]^3 anomaly = 0  (cubic_anom at framework = 0)
+
+----------------------------------------------------------------------------------------
+Part 6: non-load-bearing broad-note literal regression at n_color = 3
+----------------------------------------------------------------------------------------
+  [PASS (SUPPORT)] broad-note readout at framework n_color=3: Y_uR = 4/3  (Y_uR = 4/3; broad note uses (1,3)_{+4/3})
+  [PASS (SUPPORT)] broad-note readout at framework n_color=3: Y_dR = -2/3  (Y_dR = -2/3; broad note uses (1,3)_{-2/3})
+  [PASS (SUPPORT)] broad-note readout at framework n_color=3: Y_eR = -2  (Y_eR = -2; broad note uses (1,1)_{-2})
+  [PASS (SUPPORT)] broad-note readout at framework n_color=3: Y_nuR = 0  (Y_nuR = 0; broad note uses (1,1)_{0})
+
+----------------------------------------------------------------------------------------
+Part 7: non-framework instance n_color = 5, b = -1, a = 1/5
+----------------------------------------------------------------------------------------
+  [PASS (SUPPORT)] non-framework n_color=5: Y_uR = 6/5  (Y_uR = 6/5)
+  [PASS (SUPPORT)] non-framework n_color=5: Y_dR = -4/5  (Y_dR = -4/5)
+  [PASS (SUPPORT)] non-framework n_color=5: Y_eR = -2 (independent of n_color)  (Y_eR = -2)
+  [PASS (SUPPORT)] non-framework n_color=5: fourth slot Y_nuR = 0 under supplied b=-1  (Y_nuR = 0)
+  [PASS (SUPPORT)] non-framework n_color=5: all three anomalies vanish  ((color_anom, grav_anom, cubic_anom) = (0, 0, 0))
+
+----------------------------------------------------------------------------------------
+Part 8: lepton-slot exchange shows absence of a naming selector
+----------------------------------------------------------------------------------------
+  [PASS (BOUNDARY)] lepton-slot exchange: (GRAV_ANOM) still vanishes  (A3_swap = 0)
+  [PASS (BOUNDARY)] lepton-slot exchange: (CUBIC_ANOM) still vanishes  (A4_swap = 0)
+  [PASS (BOUNDARY)] lepton-slot exchange at n_color=3 swaps 0 and -2 without selecting names  (swap: Y_eR = 0, Y_nuR = -2)
+
+----------------------------------------------------------------------------------------
+Part 9: (C1) sum of all hypercharges (gravitational trace) vanishes
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) gravitational-trace sum vanishes identically  (confirms mixed gauge-gravity anomaly is gravitational-trace identity (C1))
+
+----------------------------------------------------------------------------------------
+Part 10: (C2) sum of right-handed Y under (R1)-(R4)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) sum_{R} Y_R = 2a + 2b = 2a(1 - n_color)  (sum_RH under trace = 2*a*(1 - n_color))
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (R1)-(R4) closed forms for Y_uR, Y_dR, Y_eR, Y_nuR
+    Color SU(3)_c anomaly vanishes identically
+    Gauge-gravity anomaly vanishes under LH trace b = -n_color a
+    Cubic [U(1)_Y]^3 anomaly vanishes under LH trace
+    Supplied n_color=3 regression: slot values (4/3, -2/3, -2, 0)
+    Non-load-bearing broad-note literal regression agrees at n_color=3
+    Supplied n_color=5 regression: slot values (6/5, -4/5, -2, 0)
+    Lepton-slot exchange is anomaly-invariant and selects no names
+    (C1), (C2) corollaries verified
+
+========================================================================================
+TOTAL: PASS=26, FAIL=0
+========================================================================================

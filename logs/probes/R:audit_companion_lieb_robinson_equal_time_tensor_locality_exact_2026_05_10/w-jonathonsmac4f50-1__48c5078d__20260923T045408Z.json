@@ -1,0 +1,42 @@
+{
+ "task": "R:audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py",
+ "seed": 39248,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48c5078d",
+ "started_utc": "20260923T045408Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=16, FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cbb95c5a173192de4ca4e4f2f8db40dc4d3e69146a49e8ad58a078faea68fa27",
+ "stdout_tail": "cited dependency ledger row visibility\n----------------------------------------------------------------------------------------\n  [FAIL (A)] audit_ledger.json accessible for graph-visibility check  (could not load ledger: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/audit_ledger.json')\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (L1) ungraded [O_x, O_y] = 0 over 8 free 2x2 entries at 2 sites\n    (L3) tensor-factorization O_x \u00b7 O_y = a \u2297 b\n    Abstract M_2(C) Pauli illustration of (L1)-(L3):\n         [\u03c3_3^{(1)}, \u03c3_3^{(2)}] = 0, [\u03c3_+, \u03c3_-] = 0,\n         [\u03c3_+, \u03c3_3] = 0, [\u03c3_-, \u03c3_3] = 0 at distinct sites\n         (illustration only; no per-site physical Hilbert-realization claim)\n    (L2) Pauli ladders on distinct raw tensor factors commute\n    3-site extension: [O_1, O_3] = 0 with identity at site 2\n    Counterfactual: same-site [\u03c3_+, \u03c3_3] \u2260 0 confirms non-trivial scope\n    Ledger-row visibility check: `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`\n    is graph-visible in audit_ledger.json (not load-bearing on rescoped claim)\n\n========================================================================================\nTOTAL: PASS=16, FAIL=1\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045409Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=16, FAIL=1' vs cache 'TOTAL: PASS=17, FAIL=0'"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/audit_ledger.json, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045409Z"
+ }
+}

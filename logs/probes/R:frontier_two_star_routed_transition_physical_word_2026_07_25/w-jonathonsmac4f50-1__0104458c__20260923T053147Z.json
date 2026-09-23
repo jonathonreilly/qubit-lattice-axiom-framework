@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_star_routed_transition_physical_word_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_star_routed_transition_physical_word_2026_07_25.py",
+ "seed": 41507,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053147Z",
+ "elapsed_s": 29.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c6c459792c5e59d1dc59a0448a0416352ffe78451282c7660377d14e8182b83f",
+ "stdout_tail": "568394002505e-15, \"non_sentinel_raw_maximum\": 5.967448757360216e-16, \"poststate_nonzeros\": 52813, \"stage\": \"decoded-local-seam-8\"}, {\"column_norm_residual\": 1.7763568394002505e-15, \"non_sentinel_raw_maximum\": 5.967448757360216e-16, \"poststate_nonzeros\": 52813, \"stage\": \"decoded-local-seam-9\"}, {\"column_norm_residual\": 1.7763568394002505e-15, \"non_sentinel_raw_maximum\": 5.967448757360216e-16, \"poststate_nonzeros\": 52813, \"stage\": \"decoded-local-seam-10\"}, {\"column_norm_residual\": 1.7764134526780015e-15, \"non_sentinel_raw_maximum\": 5.967448757360216e-16, \"poststate_nonzeros\": 52813, \"stage\": \"decoded-onsite-contact\"}], \"symbolic_E_adjoint_used_as_gate\": false, \"transition_after_seams_raw_maximum\": 2.0000000000000004, \"transition_after_seams_residual\": 1.9999999999999993}], \"same_E_on_both_sides\": true, \"symbolic_E_adjoint_used_as_physical_operand\": false}, \"status\": \"bounded-transition-word-plus-decoded-common-E-closure\", \"supplied\": [\"Cycle655 bounded occupation decoder/encoder and fixed finite program ordinal\", \"E_refresh local carrier/qutrit graph code and clean matcher convention\", \"the eleven independently returned signed-carrier seam words\", \"the target exterior inversion set and its offline-synthesized exact 224-CZ transition\", \"the beta=-0.3 free coin, g=0.37 local contact and proper-cubic frame family\"], \"terminal\": \"TWO_STAR_DECODED_CLOSURE_FIXED_M2_FACTORIZATION_OPEN\", \"tests_failed\": 0, \"tests_passed\": 11}\nRESULT TWO_STAR_DECODED_CLOSURE_FIXED_M2_FACTORIZATION_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053217Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

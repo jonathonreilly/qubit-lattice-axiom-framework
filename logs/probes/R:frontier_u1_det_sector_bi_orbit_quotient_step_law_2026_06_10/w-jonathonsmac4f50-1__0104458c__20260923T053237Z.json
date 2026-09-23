@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_u1_det_sector_bi_orbit_quotient_step_law_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_u1_det_sector_bi_orbit_quotient_step_law_2026_06_10.py",
+ "seed": 41557,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053237Z",
+ "elapsed_s": 5.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5393c0b96bb249627e2d504132d4c226a37ced1f121d832fa06dc31837fe2af9",
+ "stdout_tail": "ntification + gauge invariance).  Its raw\n  law is NON-stationary at all six seeds (D2) -- the natural extrapolation of\n  the Block-26 split is REFUTED: bi-frame localization does not extend to all\n  bi-invariant content; Block 26's panel-forced scope was load-bearing.  The\n  constructive result (D3): the non-stationarity DECOMPOSES -- the wandering is\n  the deterministic record-free dynamical phase; the seed-robust content is the\n  RAW/CENTERED median-drift ratio > 2x at all six seeds (observed 3.2x-18.1x;\n  cross-seed median spread ~[0.05,0.35] disclosed with margin; near-pi stray\n  maxima sit at SMALL-SINGULAR-VALUE polar-readout rows near the rank-guard edge\n  -- eps is constant, so they are NOT strong-eps rows).  (D4): wrapped-Gaussian\n  matches are variance-automatic (two-atom control) -- no U(1)-CLT is claimed;\n  high-concentration matches are variance-automatic; the question is posed on\n  the CENTERED fluctuation (named next object).  Finite horizon; six seeds\n  (adversarial included); one (eps,tau) instance; numbers seed/instance-labeled.\n  The U(1) factor of U_eff is NOT identified with a physical gauge field\n  (identification gate).  Conditionality inherited from #3507/#3522 (Born\n  derived-chain cap -- assembly note UNAUDITED on the live ledger, self-\n  verified at landing; named instruments; supplied C^3 carrier; named hopping;\n  guarded domain).  Discrete-time (R1 boundaries untouched).  No new axiom/\n  primitive/measure/weight; r untouched.  Audit lane grades.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053243Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_u1_det_sector_bi_orbit_quotient_step_law_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

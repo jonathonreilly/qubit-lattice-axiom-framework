@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_overlapping_star_sparse_qutrit_edge_gauge_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_overlapping_star_sparse_qutrit_edge_gauge_2026_07_25.py",
+ "seed": 40835,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T052035Z",
+ "elapsed_s": 21.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "889791951d197694fe879d401937cd657a3d0cbb3692f513b9e9913db5765f7f",
+ "stdout_tail": "n_Wigner_string_M2\": 0, \"distinct_coarse_cells\": 12, \"edge_local_scratch_M2\": 11, \"elapsed_seconds\": 20.360352875024546, \"feature_copy_M2\": 48, \"global_ordering_M2\": 0, \"host_branch_queries\": 0, \"maximal_stars\": 2, \"maximum_projector_support_M2\": 4, \"maximum_update_support_M2\": 6, \"new_M2_per_coarse_cell_on_this_fixed_patch\": 5.833333333333333, \"peak_rss_mb\": 130.796875, \"star_private_feature_qutrits\": 24, \"total_new_feature_role_scratch_M2\": 70, \"unique_edge_role_M2\": 11, \"unique_physical_edges\": 11}, \"route_disposition\": \"constructive shared-edge order/sign compiler and exact local role-toggle update; partial for the tournament because the simultaneous twelve-cell physical M64 update and primitive projector enforcement remain open\", \"status\": \"bounded-two-overlapping-star-sparse-qutrit-edge-gauge-probe\", \"supplied\": [\"the landed Cycle-311 factor branch representatives, port tags, role gauge and fixed seam\", \"the landed Cycle-315 nearest-neighbor AB/BA physical-ray reducer and n<=2 update fixtures\", \"the landed Cycle-330 center-plus-six-arm geometry and proper-cubic action\", \"the Cycle-658 endpoint identity q=(outer-square factor X contribution, own endpoint-tag X contribution)\", \"one local edge-role M2, one scratch M2 per physical edge, and two M2 per star-private feature copy\"], \"terminal\": \"SHARED_EDGE_QUTRIT_ROLE_TOGGLE_CLOSED_FULL_TWO_STAR_M64_UPDATE_OPEN\", \"tests_failed\": 0, \"tests_passed\": 11}\nRESULT SHARED_EDGE_QUTRIT_ROLE_TOGGLE_CLOSED_FULL_TWO_STAR_M64_UPDATE_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T052057Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

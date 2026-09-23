@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_universal_gr_canonical_channel_section_and_einstein_signs_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_universal_gr_canonical_channel_section_and_einstein_signs_2026_06_17.py",
+ "seed": 41566,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053246Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "30b61ac2e248fc22b43a6b0ed934f4f2f8b8c664b06444df20ef79f9bc34fe19",
+ "stdout_tail": "T SCOPE: this closes the POINT-WISE frame ambiguity -- the canonical irreducible-channel\nprojectors are frame-independent (the gate's frame_delta was a within-channel BASIS artifact);\nthe 5-dim s2 is the canonical graviton channel. NOT yet closed: the bundle CONNECTION across\npoints + the 5->2 transverse-traceless reduction (needs a propagation direction k).\nVALIDATION: linearized Einstein tensor is gauge-invariant  G_lin(p.xi + xi.p) = 0\n   max|G_lin(gauge)| = 1.80e-16   -> operator validated (it IS linearized Einstein)\n\nNULL-CONE sanity check (non-diagnostic for kinetic signs):\n   on-shell TT h_+ coefficient = +0.0000 (zero as expected for a free null wave)\n   on-shell TT h_x coefficient = +0.0000 (zero as expected for a free null wave)\n   The sign-pattern comparison is made below from off-shell channel stiffnesses.\n\n==============================================================================\nSTEP 3  OFF-SHELL channel stiffness signs (the kinetic-term signs)\n  p = [1.3 0.  0.  0.4], p^2 = -1.530 (off-shell)\n  spin-2 h_+  : G_lin(h_+) = mu*h_+ ? True;  mu_TT = +0.7650\n  spin-2 h_x  : G_lin(h_x) = mu*h_x ? True;  mu_TT = +0.7650\n  spin-0 conformal (h=phi*eta): scalar stiffness mu_conf = -1.1475\n\n  TT and conformal OPPOSITE sign (the Einstein conformal-factor structure)? True\n    => linearized Einstein: TT = +,  conformal = -\n    => emergent Regge:      l=2 = +9.96 (+),  breathing = -5.18 (-)   [OPPOSITE]\n  SIGN PATTERN of emergent channels MATCHES linearized Einstein: True\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053246Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_star_literal_m2_deletion_domain_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_star_literal_m2_deletion_domain_2026_07_25.py",
+ "seed": 41083,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T052443Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "30ff1ec416e27b300865213f812d52feecd865e3884b933b8fd684156e30ddb1",
+ "stdout_tail": "letions\": {\"CZ\": 2.0, \"first_SWAP\": 1.4142135623730951, \"last_SWAP\": 1.4142135623730951}, \"distance\": 2, \"term\": 215}, {\"deletions\": {\"CZ\": 2.0, \"first_SWAP\": 1.4142135623730951, \"last_SWAP\": 1.4142135623730951}, \"distance\": 2, \"term\": 216}, {\"deletions\": {\"CZ\": 2.0, \"first_SWAP\": 1.4142135623730951, \"last_SWAP\": 1.4142135623730951}, \"distance\": 2, \"term\": 217}, {\"deletions\": {\"CZ\": 2.0, \"first_SWAP\": 1.4142135623730951, \"last_SWAP\": 1.4142135623730951}, \"distance\": 2, \"term\": 218}, {\"deletions\": {\"CZ\": 2.0, \"first_SWAP\": 1.4142135623730951, \"last_SWAP\": 1.4142135623730951}, \"distance\": 2, \"term\": 219}, {\"deletions\": {\"CZ\": 2.0, \"first_SWAP\": 1.4142135623730951, \"last_SWAP\": 1.4142135623730951}, \"distance\": 2, \"term\": 220}, {\"deletions\": {\"CZ\": 2.0, \"first_SWAP\": 1.4142135623730951, \"last_SWAP\": 1.4142135623730951}, \"distance\": 2, \"term\": 221}, {\"deletions\": {\"CZ\": 2.0, \"first_SWAP\": 1.4142135623730951, \"last_SWAP\": 1.4142135623730951}, \"distance\": 2, \"term\": 222}, {\"deletions\": {\"CZ\": 2.0, \"first_SWAP\": 1.4142135623730951, \"last_SWAP\": 1.4142135623730951}, \"distance\": 2, \"term\": 223}]}}, \"pass\": true, \"resources\": {\"certificate_sha256\": \"be0a9ab6b37a693de5b22d6b309aac6b1e30451221419c57c5eb6fd463fb00e0\", \"elapsed_seconds\": 0.9465140419779345, \"peak_rss_mb\": 109.71875}, \"status\": \"literal-fixed-M2-deletion-domain-audit\", \"terminal\": \"LITERAL_M2_DELETIONS_ACTIVE_RECURRENT_GAUGE_OPEN\", \"tests_failed\": 0, \"tests_passed\": 8}\nRESULT LITERAL_M2_DELETIONS_ACTIVE_RECURRENT_GAUGE_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T052445Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

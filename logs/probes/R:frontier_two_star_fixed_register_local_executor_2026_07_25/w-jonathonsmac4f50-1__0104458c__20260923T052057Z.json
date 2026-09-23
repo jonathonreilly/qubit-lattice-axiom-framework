@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_star_fixed_register_local_executor_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_star_fixed_register_local_executor_2026_07_25.py",
+ "seed": 40857,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T052057Z",
+ "elapsed_s": 208.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a4888853de1ef83f3f66224c978f9a4dcc51487457ad8f60d1da6d48e3c089c8",
+ "stdout_tail": "lumns_n_le_2\": 2629, \"maximum_column_residual\": 8.563843312570936e-16, \"maximum_intertwiner_raw\": 4.742874840267547e-16, \"maximum_output_norm_defect\": 1.3322676295501878e-15, \"mismatch_columns\": \"0\", \"output_rays\": 239764, \"returned_work_failures\": 0, \"split\": \"train\", \"transit_cases\": 4}, {\"L\": 6, \"carrier_unprepare_failures\": 0, \"chart_erase_failures\": 0, \"coin_executed\": false, \"executed_columns\": 10516, \"held_parameters_refit\": 0, \"logical_columns_n_le_2\": 2629, \"maximum_column_residual\": 8.563843312570936e-16, \"maximum_intertwiner_raw\": 4.742874840267547e-16, \"maximum_output_norm_defect\": 1.3322676295501878e-15, \"mismatch_columns\": \"0\", \"output_rays\": 239764, \"returned_work_failures\": 0, \"split\": \"held-no-refit\", \"transit_cases\": 4}], \"supplied\": [\"the fixed tensor-product M2 carrier and clean circuit-program convention\", \"Cycle655 physical 61-M2 cell decode/encode binding and Cycle656 matcher/bypass expansions\", \"E_refresh seven-rail amplitudes and local half-edge chart relation\", \"a finite global mode order, the target exterior inversion set, and offline-synthesized 224-CZ transition\", \"the commuting-CZ matching schedule-independence theorem (not its tensor carrier as a derivation)\", \"the failed/reset graph-braid non-fibered exchange result as mapped evidence only, not authority\"], \"terminal\": \"FIXED_INTERFACE_TWO_STAR_CLOSED_ORDER_COVARIANCE_RECURRENCE_OPEN\", \"tests_failed\": 0, \"tests_passed\": 8}\nRESULT FIXED_INTERFACE_TWO_STAR_CLOSED_ORDER_COVARIANCE_RECURRENCE_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T052425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

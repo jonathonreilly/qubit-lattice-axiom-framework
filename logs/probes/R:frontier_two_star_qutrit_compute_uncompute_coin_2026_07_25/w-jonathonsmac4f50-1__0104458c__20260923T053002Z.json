@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_star_qutrit_compute_uncompute_coin_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_star_qutrit_compute_uncompute_coin_2026_07_25.py",
+ "seed": 41402,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053002Z",
+ "elapsed_s": 86.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "afa2423eb9c1b854d6bbca917e17ed6d30e124c272f865bdbee1023bbbb7834a",
+ "stdout_tail": ": [{'block': 0, 'mode': 0, 'erase_intertwiner': 3.7416573867739418, 'erase_leakage': 2.7928480087537877, 'recompute_intertwiner': 3.741657386773941, 'recompute_leakage': 2.7928480087537877}], 'minimum_erase_deletion_intertwiner': 3.7416573867739418, 'minimum_recompute_deletion_intertwiner': 3.741657386773941, 'support': {'feature_blocks': 1, 'feature_M2_sites': 2, 'face_M2_sites_union': 30, 'port_M2_sites_union': 12, 'branch_control_M2_sites_union': 42, 'total_control_plus_feature_M2_sites': 44, 'max_branch_word_weight': 14, 'max_landed_coin_transition_weight': 23, 'branch_projector_count': 46}, 'symmetry': {'frames': 24, 'frame_products': 576, 'feature_transport_failures_24': 0, 'encoding_covariance_residual_24': 0.0, 'landed_coin_covariance_residual_24': 5.928593550334434e-17, 'frame_product_mapping_failures_576': 0, 'frame_product_representation_residual_576': 0.0, 'encoding_covariance_residual_576': 0.0, 'landed_coin_covariance_residual_576': 5.928593550334434e-17}}\ntwo_star_word {'free_coin_stage': 'locally closed by the tested factorization', 'eleven_seam_stage': 'not yet compiled on the same common augmented E', 'contact_stage': 'not reached physically', 'full_word_claimed': False, 'first_open_interface': 'a bounded same-E physical seam/catch-up map that transports the Route-B branch factors and then recomputes the endpoint qutrits', 'dense_EUE_dagger_substitute_rejected': True, 'obstruction_claimed': False}\nCOMPUTE_UNCOMPUTE_FIRST_COIN_CLOSED_SAME_E_SEAM_REMAINS_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053128Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

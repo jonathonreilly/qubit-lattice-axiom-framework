@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_universal_gr_sakharov_gnewton_induced_scale_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_universal_gr_sakharov_gnewton_induced_scale_2026_06_17.py",
+ "seed": 41635,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053355Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "14d9db6431e292436d692ca90b7031641a64b02e47c53fb80f957ee21f47f978",
+ "stdout_tail": "e cutoff and N_f,\n          NOT an admitted free parameter. (Sakharov induced gravity, realized from log|det D|.)\n\n=== what is HEALTHY vs what is the RESIDUAL ===\n  HEALTHY (established): spin-2 TT stiffness C_TT > 0 (repo induced-determinant runs); polarization\n    sector canonical + linearized-Einstein channel signs (landed canonical-channel note);\n    diffeo-Ward to quintic order;\n    G_Newton induced ~a^2 (above). => the emergent graviton's KINETIC + POLARIZATION structure is healthy.\n  RESIDUAL WALL (NOT closed): the overall EH-sign / SOURCE coupling for G>0 (attractive). In induced\n    gravity the sign of 1/(16piG) is famously content/convention-sensitive (Sakharov sign problem);\n    in this framework it is conditional on the lambda=1 / conformal-class structure of the emergent\n    metric, which ties to the UNAUDITED metric-DOF posit (the emergent metric's conformal factor /\n    record-time axis). The conformal (trace) channel is exactly the wrong-sign mode\n    (landed canonical-channel note:\n    mu_conf < 0), so fixing G>0 = fixing the conformal-class admission. THAT is the named residual.\n\nCONCLUSION: emergent gravity is cracked down to ONE named structural admission -- the metric-DOF /\nconformal-class posit (record-time axis). Above it: healthy spin-2, Einstein signs, G induced ~a^2,\ndiffeo-Ward to quintic order. The wall is NOT G_Newton's magnitude (induced) nor the graviton's\nexistence (healthy spin-2) -- it is the conformal-sector SIGN = the metric-DOF admission.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053355Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

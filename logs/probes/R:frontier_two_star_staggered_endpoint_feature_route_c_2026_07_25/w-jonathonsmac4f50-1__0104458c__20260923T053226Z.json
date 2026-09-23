@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_star_staggered_endpoint_feature_route_c_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_star_staggered_endpoint_feature_route_c_2026_07_25.py",
+ "seed": 41546,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053226Z",
+ "elapsed_s": 11.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "91ef01cc7de8e80b833275eeec13a1b34367cd42aba92f0217a16aa177bf9c1a",
+ "stdout_tail": "894a60f55e8584b850\", \"global_half_edge_qutrit_role_M2\": 44, \"global_sign_work_M2\": 110, \"program_counter_is_physical_time\": false, \"program_counter_states\": 319, \"runtime_measurements\": 0, \"runtime_order_queries\": 0, \"runtime_parity_queries\": 0, \"shared_edge_is_expected\": true, \"shared_edge_program_owners\": 1, \"shared_edge_rows\": [[[0, 0, 0], [1, 0, 0]]], \"star_A_edges\": 6, \"star_B_edges\": 6, \"union_cells\": 12, \"unique_union_edges\": 11}, \"two_star_update\": {\"Cycle219_mass_fixture\": 0.4534056541748851, \"axis\": [1, 0, 0], \"cells\": 12, \"coin_nonzeros\": 88309, \"coin_unitarity_raw_maximum\": 6.661438741028268e-16, \"contact_nontrivial_columns\": 180, \"contact_unitarity_raw_maximum\": 2.226534750406793e-17, \"delete_contact_update_residual\": 0.3678930670560824, \"delete_shared_seam_update_residual\": 2.0, \"duplicate_shared_seam_update_residual\": 2.0, \"logical_columns_n_le_2\": 2629, \"one_particle_dimension\": 72, \"one_particle_mass\": 0.45340565417488493, \"one_particle_mass_residual\": 1.6653345369377348e-16, \"reverse_free_seam_contact_order_residual\": 1.990327350532773, \"shared_edge_occurrences\": 1, \"stream_nonzeros\": 2629, \"stream_unitarity_raw_maximum\": 0.0, \"two_particle_dimension\": 2556, \"two_particle_update_unitarity_raw_maximum\": 6.661458038344961e-16, \"uniform_one_particle_eigen_residual\": 7.066438185755257e-16, \"unique_star_edges\": 11, \"update_unitarity_raw_maximum\": 6.66144839573683e-16, \"vacuum_dimension\": 1}}\nRESULT TWO_STAR_QUTRIT_SIGN_AND_NLE2_UPDATE_CLOSED_FULL_PHYSICAL_E_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053237Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

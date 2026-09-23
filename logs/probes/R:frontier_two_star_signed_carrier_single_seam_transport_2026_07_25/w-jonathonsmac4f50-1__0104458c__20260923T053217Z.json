@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_star_signed_carrier_single_seam_transport_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_star_signed_carrier_single_seam_transport_2026_07_25.py",
+ "seed": 41537,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053217Z",
+ "elapsed_s": 8.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f150da5a6d93aebfde62528d390a142b91e5a1d7e688534bb2ffe01b92c3e2fd",
+ "stdout_tail": "local_modes\": [1, 2, 3, 4, 5, 6], \"columns_using_signed_role_stage\": 10, \"dense_code_completion_used\": false, \"direct_endpoint_FSWAP_raw_maximum\": 2.0, \"direct_endpoint_FSWAP_residual\": 2.0, \"encoding_columns\": 79, \"encoding_nonzeros\": 991, \"encoding_rows\": 991, \"left_endpoint_global_mode\": 0, \"local_correction_CNOT_factors\": 12, \"local_correction_CZ_factors\": 2, \"local_correction_edge_role_return_failures\": 0, \"local_correction_formula_failures\": 0, \"right_endpoint_global_mode\": 7, \"signed_refresh_code_leakage\": 0.0, \"signed_refresh_same_E_intertwiner\": 0.0, \"signed_refresh_same_E_raw_maximum\": 0.0, \"target_vs_direct_sign_mismatch_columns\": 12, \"unsigned_after_q_phase_effective_minimum\": 0.6000000000000003, \"unsigned_after_q_phase_leakage\": 0.8000000000000003, \"unsigned_after_q_phase_leakage_raw_maximum\": 0.3200000000000001}, \"status\": \"bounded-signed-carrier-single-seam-transport-certificate\", \"supplied\": [\"Cycle655 decoded local occupation coordinates and bounded decoder/encoder word\", \"Cycle656 clean token matcher, returned bypass work and finite program ordinal\", \"Route B's edge-role M2 and exact qutrit phase truth table\", \"Route C's graded qutrit swap, eleven owned edges and logical exterior fixture\", \"the landed five-carrier amplitudes, local signed mode order and rotated frame family\"], \"terminal\": \"ONE_SEAM_SIGNED_CARRIER_CLOSED_ELEVEN_EDGE_CHART_COCYCLE_OPEN\", \"tests_failed\": 0, \"tests_passed\": 7}\nRESULT ONE_SEAM_SIGNED_CARRIER_CLOSED_ELEVEN_EDGE_CHART_COCYCLE_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053226Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

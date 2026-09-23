@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_universal_gr_round_pl_s3_regge_hessian_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_universal_gr_round_pl_s3_regge_hessian_2026_06_10.py",
+ "seed": 41634,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053354Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "85702d2377bdeb0a95a0b3179e852eff104c87b118550332c262682ea95e11d6",
+ "stdout_tail": "to the gate's canonical scalar projector; the {4, 5} channels are the analogue of its frame-ambiguous complement -- here multiplicity-free, hence canonically split with scalar weights (R3). This supplies the geometric route's canonical channel structure ON THE GATE'S OWN SPATIAL ATLAS at the round point. NOT claimed: the 3+1 prism/tick extension on S^3 x Z_tau (the gate's full kinematic scaffold), off-round backgrounds, any continuum-limit statement (the atlas refinement obstruction of the PL S^3 rows), or any retained status.\n       scalar projector max error = 0.0e+00; complement rank = 9; 3+1 tick extension + off-round + refinement named open\n\nTOTAL: PASS=6 FAIL=0\nVERDICT: on the gate's own spatial atlas -- the PL round S^3 = the regular boundary of the\n4-simplex -- the supplied geometric (Lambda-Regge) route has: an exact critical background (deficit\n2pi - 3 arccos(1/3) per edge, one symmetric Lambda*), a true Hessian via the curved-background Regge\nidentity (symmetric, end-to-end verified), and a MULTIPLICITY-FREE canonical channel\ndecomposition 10 = 1 (+) 4 (+) 5 under S_5 -- by Schur's lemma the channel split is UNIQUE,\nso the scalar-route frame-choice obstruction does not arise for this supplied round geometric\nroute at the gate's spatial atlas. The three channel eigenvalues are computed and\nreported with their qualitative continuum reading. Open and named: the 3+1 prism/tick\nextension, off-round backgrounds, the atlas-refinement/continuum limit. No PDG/fitted value.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053355Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

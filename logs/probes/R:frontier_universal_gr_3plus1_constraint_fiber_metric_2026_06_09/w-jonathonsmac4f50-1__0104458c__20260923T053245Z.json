@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_universal_gr_3plus1_constraint_fiber_metric_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_universal_gr_3plus1_constraint_fiber_metric_2026_06_09.py",
+ "seed": 41565,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053245Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6fb5013e06b4d5ba2badea138e97220206181154208c81f6bfa5c5de45279a9d",
+ "stdout_tail": "ary on the records-Hessian gluing specifically; the geometric target operator carries its own healthy non-degenerate gluing.\n       records-supermetric gluing: omega^2 product = -1/4 < 0 (no-go reproduced); derived geometric fiber metric: product = 1 > 0 (bypass)\n\nTOTAL: PASS=9 FAIL=0\nVERDICT: the no-go's own named bypass ('a derived non-degenerate fiber metric') EXISTS and is\nnow exhibited: the 3+1 kinetic fiber metric of the linearized EH target operator is the\nindefinite lambda-one DeWitt form (K_trace:K_TT = -2:+1, derived), the comparator potential\nsigns (V_TT>0, V_trace<0) are derived from the same operator, and the gluing law with both\nhalves derived gives BOTH channels healthy -- while the trace channel is in fact CONSTRAINED\n(G^{00} = +(k^2/2)(transverse trace): not a free diagonal channel, eliminated not glued), the\nlapse/shift multiplier structure is scheme-independent (S-formal zero polynomial => holds for\nANY stencil, including the symmetric Z^3 x Z_tau with c_t=c_s), the exact DOF count is 2 TT,\nand the discrete TT dispersion is omega=+-k across the BZ. The degenerate-supermetric no-go\nremains correct at its stated scope: it binds the RECORDS-route Hessian gluing (reproduced\nhere); the geometric target operator bypasses it. OPEN (unchanged): deriving the geometric\naction itself from the framework (Einstein/Regge glue, edge-length DOF, action selection),\nthe cubic-Coxeter Regge second variation, nonlinear constraint closure on discrete time.\nNo PDG/fitted value.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053246Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

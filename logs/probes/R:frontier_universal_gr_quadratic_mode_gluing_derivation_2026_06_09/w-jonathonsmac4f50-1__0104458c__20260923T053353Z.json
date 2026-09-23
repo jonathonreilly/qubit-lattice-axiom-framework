@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09.py",
+ "seed": 41633,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053353Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6ee639303ac3414c50254f8989fcd2db795875e5634f523d16f9415893445887",
+ "stdout_tail": "========================================================================================\nUNIVERSAL GR QUADRATIC MODE GLUING DERIVATION\n========================================================================================\n  [PASS] Euler-Lagrange equation gives V - G*omega^2 on a normal mode\n         dispersion=-G*omega**2 + V\n  [PASS] normal-mode root is omega^2 = V/G\n         L = 1/2 G qdot^2 - 1/2 V q^2, G != 0\n  [PASS] finite diagonal channel gluing is exact over rational coefficients\n         G=3/2, V=7/4, omega2=7/6, G=5/3, V=-11/6, omega2=-11/10\n  [PASS] degenerate equal-channel G makes the sign product depend only on V_trace*V_TT\n         overall-sign product signs=[-1, -1]\n  [PASS] GR lambda=1 control has both quadratic-mode signs positive for the comparator pair\n         omega_trace^2=49/400, omega_TT^2=49/200\n  [PASS] source note keeps comparator signs and physical GR action outside scope\n  [PASS] source note states no new axiom or Tier-A admission\n\nBOUNDARY\n  Derived: finite quadratic-mode gluing law omega^2 = V/G for diagonal channels.\n  Still open: comparator signs, full geometric action, continuum coefficient, G_Newton.\n\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053354Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

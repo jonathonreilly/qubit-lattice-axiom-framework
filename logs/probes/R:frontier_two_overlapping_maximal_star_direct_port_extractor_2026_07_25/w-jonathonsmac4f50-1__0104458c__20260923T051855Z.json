@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_overlapping_maximal_star_direct_port_extractor_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_overlapping_maximal_star_direct_port_extractor_2026_07_25.py",
+ "seed": 40735,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T051855Z",
+ "elapsed_s": 99.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "83cc54d320e8040f2117690da35daf2f3d14325da2901c21af2b8f8d473a646c",
+ "stdout_tail": "s\": 12, \"constant_overhead_M2_per_coarse_cell_upper_bound\": 36, \"elapsed_seconds\": 99.13595891598379, \"extractor_work_M2\": 5, \"face_M2_union\": 285, \"incidence_adjacencies\": 15, \"lawful_work_states\": 31, \"maximum_branch_support_including_r\": 34, \"peak_rss_mb\": 2288.515625, \"physical_seams\": 11, \"port_M2_union\": 114, \"total_selected_M2_upper_bound\": 428, \"work_computational_states\": 32}, \"status\": \"two-overlapping-maximal-star-direct-port-extractor-partial\", \"supplied\": [\"the landed Cycle-311 fixed-reference cell rays, cell role constraint and collision-safe port M2\", \"two neighboring maximal-star centers, their twelve-cell bounded chart and total n<=2 domain\", \"the Cycle-219 coin, eleven unique FSWAP seams, Cycle-230 coupling and factor order\", \"the exact local r-companion Hadamard basis change and spectator |+> preparation\", \"a five-M2 zero work register, dense bounded code-space matrix-unit completion and off-code identity\", \"a bounded inverse-square-root repair on the twenty-four observed two-column Gram collision blocks\", \"for a qutrit-conditioned full two-star action, one binary branch-resolution datum on each of sixteen collided port signatures\", \"preparation/application of the fixed reference and arbitrary amplitudes in 2629 logical columns\"], \"terminal\": \"PER_EDGE_DIRECT_PORT_EXTRACTOR_AND_TWO_STAR_UPDATE_CLOSED_SELECTOR_CONFLICT_RETAINED\", \"tests_failed\": 0, \"tests_passed\": 9}\nRESULT PER_EDGE_DIRECT_PORT_EXTRACTOR_AND_TWO_STAR_UPDATE_CLOSED_SELECTOR_CONFLICT_RETAINED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T052035Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_star_full128_coin_covariant_feature_refresh_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_star_full128_coin_covariant_feature_refresh_2026_07_25.py",
+ "seed": 41065,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T052425Z",
+ "elapsed_s": 18.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6b580f9136b4e994cbe2acda6da866f74b4f61a6954aa713e795d825afdfb9e6",
+ "stdout_tail": " \"clean_match_flag_bypass_M2_per_cell\": 8, \"coarse_cells\": 12, \"coarse_modes\": 72, \"constant_overhead_per_coarse_cell\": true, \"declared_block_stride\": 92, \"elapsed_seconds\": 17.33813937503146, \"feature_copy_M2\": 48, \"global_or_Jordan_Wigner_M2\": 0, \"logical_columns_n_le_2\": 2629, \"maximum_chart_copy_M2_per_cell\": 14, \"maximum_two_cell_route_length_bound\": 185, \"peak_rss_mb\": 388.59375, \"placement_rows\": [{\"L\": 5, \"block_collisions\": 0, \"coarse_cells\": 12, \"distinct_block_anchors\": 12, \"held_parameters_refit\": 0, \"split\": \"train\"}, {\"L\": 6, \"block_collisions\": 0, \"coarse_cells\": 12, \"distinct_block_anchors\": 12, \"held_parameters_refit\": 0, \"split\": \"held-no-refit\"}], \"role_chart_rays\": 59941, \"unique_edge_role_scratch_M2\": 22}, \"status\": \"bounded-full128-two-star-coin-feature-refresh-certificate\", \"supplied\": [\"Cycle655 E_full decoder/encoder, pair-register preparation, contact word and eleven decoded coin factors\", \"Cycle656 station-zero token, clean selector/flag/scratch/bypass convention and selector-before-shift ordinal\", \"the landed Cycle311 five-carrier one-particle amplitudes and three-state half-edge chart\", \"Route C's 12-cell/11-owned-seam n<=2 logical update and its 24-frame/576-product family\", \"one seven-rail carrier convention, one finite factor order, L5 training, held L6 and numerical tolerance\"], \"terminal\": \"FULL128_COIN_REFRESH_CLOSED_LOCAL_SEAM_ROLE_MAP_OPEN\", \"tests_failed\": 0, \"tests_passed\": 11}\nRESULT FULL128_COIN_REFRESH_CLOSED_LOCAL_SEAM_ROLE_MAP_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T052443Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

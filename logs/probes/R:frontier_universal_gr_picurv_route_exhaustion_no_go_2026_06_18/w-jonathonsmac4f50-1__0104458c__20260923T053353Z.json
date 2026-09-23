@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_universal_gr_picurv_route_exhaustion_no_go_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_universal_gr_picurv_route_exhaustion_no_go_2026_06_18.py",
+ "seed": 41633,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T053353Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=21 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d1a147dc04fd7a8d2a3ecf61783ac30b08270214fa53824c48c4026352bfc357",
+ "stdout_tail": "is exact support, not full closure\n[FAIL] Casimir note excludes connection and dynamics\n    block projectors do not provide full Pi_curv\n[PASS] connection candidate note is candidate-only\n    orbit connection is not the full target\n[PASS] complement note contains no-go discipline boundaries\n    older complement no-go remains local\n[PASS] round Regge route is supplied-scope only\n    round Regge is positive but not direct-universal Pi_curv derivation\n[PASS] flat-atlas spin-2 route is not PL S3 x R closure\n    flat spin-2 supply leaves the target surface open\n[PASS] finite-rank helper is scalar/helper scoped\n    finite-rank helper is not a tensorial Pi_curv route\n[PASS] coarse exterior helper is scalar/isotropic scoped\n    coarse exterior law is not full Pi_curv\n\n==============================================================================\nFINITE WITNESS\n==============================================================================\nresp_a[0:5]      = ['-2.500000e-01', '-8.249579e-02', '3.111270e-02', '-1.818275e-02', '4.194312e-02']\nresp_b[0:5]      = ['-2.500000e-01', '-8.699980e-02', '-1.430351e-02', '-1.818275e-02', '4.194312e-02']\na1_delta         = 0.000000000000e+00\ncomplement_delta = 6.767360754447e-02\nframe_delta      = 6.767360754447e-02\n\n==============================================================================\nSUMMARY\n==============================================================================\nPASS=21 FAIL=1 TOTAL=22\nOne or more route-exhaustion checks failed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053353Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=21 FAIL=1' vs cache 'PASS=22 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_star_literal_m2_reachable_executor_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_star_literal_m2_reachable_executor_2026_07_25.py",
+ "seed": 41085,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0104458c",
+ "started_utc": "20260923T052445Z",
+ "elapsed_s": 316.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ae14bf39fd3cebcb1f5c641dc0c5dd6f918cc4e34b170cf442f2fa05b012f652",
+ "stdout_tail": "tual transformed-E/rebuilt-word 24/576 covariance\"], \"pass\": true, \"resources\": {\"certificate_sha256\": \"f080e3ff703c855d3ed24e25f7532d3aeafdd06639975223430d95ecd0e3ddc6\", \"elapsed_seconds\": 315.8223118750029, \"peak_rss_mb\": 140.375}, \"status\": \"literal-fixed-M2-two-star-decoded-interface-closure\", \"stream_contact\": [{\"L\": 5, \"carrier_sentinel_failures\": 0, \"chart_erase_failures\": 0, \"coin_executed\": false, \"columns\": 2629, \"maximum_column_residual\": 6.461745986520615e-16, \"maximum_intertwiner_raw\": 2.2887833992611187e-16, \"maximum_norm_defect\": 8.881784197001252e-16, \"mismatch_columns\": \"0\", \"output_rays\": 59941, \"split\": \"train\", \"token_return_failures\": 0, \"work_return_failures\": 0}, {\"L\": 6, \"carrier_sentinel_failures\": 0, \"chart_erase_failures\": 0, \"coin_executed\": false, \"columns\": 78, \"maximum_column_residual\": 6.461745986520615e-16, \"maximum_intertwiner_raw\": 2.220446049250313e-16, \"maximum_norm_defect\": 8.881784197001252e-16, \"mismatch_columns\": \"0\", \"output_rays\": 462, \"split\": \"held-no-refit\", \"token_return_failures\": 0, \"work_return_failures\": 0}], \"supplied\": [\"fixed tensor-product decoded data/rail/chart/token/work/transit M2 registers\", \"Cycle656 clean matcher/Fredkin-bypass grammar and Cycle655 onsite coin factors\", \"the finite global order and target-derived 224-CZ two-star transition list\"], \"terminal\": \"LITERAL_M2_TWO_STAR_STREAM_CLOSED_RECURRENT_GAUGE_OPEN\", \"tests_failed\": 0, \"tests_passed\": 3}\nRESULT LITERAL_M2_TWO_STAR_STREAM_CLOSED_RECURRENT_GAUGE_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T053002Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

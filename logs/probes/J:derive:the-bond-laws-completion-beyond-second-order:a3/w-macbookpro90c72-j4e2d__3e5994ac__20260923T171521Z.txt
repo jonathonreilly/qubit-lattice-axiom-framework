@@ -1,0 +1,33 @@
+PASS A1 unit: weight-0 law: threshold lambda<1/|s|>/4 moves with the unit lambda; weight-1 ledger: <1/|s|>/4 at every unit
+PASS A2 no-mass: weight-1 local ledger sum_b c_b f(v_b) (ring, generic f): F(u+t)=e^t F(u); Hessian rows sum to f(0): mass f(0) at every k
+PASS A3 pairs: c_b g(u_b'-u_b)+c_b' g(u_b-u_b') = sqrt(cc') phi(u_b-u_b'), phi even; every even phi arises; weight 1; phi=4(cosh(x/2)-1) is 2(sqrt c-sqrt c')^2, phi=x sinh(x/2) is (c-c')log(c/c')/2
+PASS A4 match: 4^3 torus: per bond 8 perp, 2 coll, 4 par; Hessian of sum K sqrt(cc')phi (phi''(0)=1) = -M(k) of block 59 T3 at all 64 k (max dev 3e-14)
+PASS A5 members: N1: A sum c_b + sum_X B_X sum sqrt(c_b c_b') massless+matched only for A=2 sum K_X n_X, B_X=-4K_X, i.e. 2 sum K(sqrt c-sqrt c')^2; N2: energy per tick linear in log ratios only with slope -K/2, i.e. F=(1/2)<c,-M log c> (torus identity)
+PASS A6 cost: exact pair multiset per site on the alternation family; cost = alpha sum phi(2d_j) + 2beta sum_{i<j}[cosh((d_i+d_j)/2)phi(d_i-d_j)+cosh((d_i-d_j)/2)phi(d_i+d_j)], delta_par absent; diagonal 3 kappa phi(2d); N2: 2 kappa sum d_j sinh d_j
+PASS A7 mass: premise (block 89 T1b) for independent delta_j on 4^3: spectrum = +-sqrt(sum sin^2 k + sum sinh^2 delta_j) (max dev 6e-15); sea gain G(mu), mu = sum sinh^2 delta_j
+PASS A8 identities: h(y)=sqrt(y)asinh(sqrt y) strictly concave; 6(sinh a-a)<=sinh^3 a; sinh^2-2(cosh-1)=(cosh-1)^2; x sinh(x/2) >= 4(cosh(x/2)-1); d/dp[(cosh px-1)/p^2] >= 0; cosh x-1 >= x sinh(x/2)
+PASS B0 special fns: K3=(e^-x I0(x))^3, x=t/2, decreasing on the grid; scipy i0e vs 30-digit mpmath at 2000 grid points: max rel dev 6.7e-16
+PASS B1 threshold: <1/|s|> in [0.910594,0.910782], kappa_c=<1/|s|>/4 in [0.227648,0.227696] (block 89: 0.91067)
+PASS B2 growth: G(mu)>=sqrt(mu)-<|s|>, <|s|><=sqrt(3/2): profiles o(e^(|x|/2)) unbounded below at every kappa (witnesses: x^2/2 at kappa 1,10; p=0.45 at 1,10); bounded at kappa_c needs liminf phi e^(-x/2) >= sqrt3/(6kappa_c) = 1.268 (N1: 2, N2: inf)
+PASS B3 N2 one axis: N2 single axis, cost 2kappa a sinh a: kappa_c cost > G(mu) for all x>0: x<=0.881 by J/mu^2>=0.0805>0.0759; 699 cells on [0.881,2.196] min margin 0.067; x>=2.196 by G<sqrt(mu)
+PASS B4 N1 diagonal: N1 on block 89's diagonal, cost 12kappa(cosh d-1): kappa_c cost > G(mu) for all x>0: x<=0.881 by J/mu^2>=0.0493>0.0379; 699 cells on [0.881,1.496] min margin 0.225; x>=1.496 by G<sqrt(mu)
+PASS B5 Dirac log: slope of J/mu^2 in log(1/mu) on [1e-6,1e-5] in [0.02523,0.02547] contains 1/(4pi^2)=0.02533; j0 = 3.628
+PASS B6 N1 one axis: N1, beta/kappa=1/10: at a=2.2 G/cost >= 0.22869 > kappa_c (uniform not global on [kappa_c,0.2287)); beta=0, kappa=0.24>kappa_c: B(a=12) <= -3255 < 0 (unbounded for kappa<1/(4+8beta/kappa))
+PASS C1 N2 minimiser: kappa=Q(a) strictly decreasing on both lines: one minimiser per kappa<kappa_c, on one axis (lower than the diagonal)
+  kappa | a*  m*=sinh a*  B* (one axis) | d*  m=sqrt3 sinh d*  B (diagonal)
+  0.227 | 0.0696 0.06969 -2.96e-06 | 0.0337 0.0583 -2.14e-06
+  0.225 | 0.1674 0.1682 -6.55e-05 | 0.0754 0.1307 -4.19e-05
+  0.220 | 0.3543 0.3618 -0.000798 | 0.1439 0.2502 -0.000428
+  0.210 | 0.6954 0.7528 -0.00685 | 0.2492 0.4362 -0.00286
+  0.200 | 1.0046 1.182 -0.0236 | 0.3437 0.6072 -0.00827
+  0.180 | 1.5220 2.181 -0.11 | 0.5337 0.9688 -0.0324
+  0.150 | 2.2476 4.68 -0.488 | 0.8740 1.714 -0.129
+  0.100 | 3.9956 27.17 -4.29 | 1.8639 5.451 -0.873
+  0.050 | 9.0000 4052 -404 | 4.7732 102.4 -16.6
+PASS C2 law: m*^2 log(1/m*^2) / 4pi^2(kappa_c-kappa) = 0.98, 0.96, 0.88; with the constant j0-1/2-4pi^2 kappa/3: 1.001, 1.001, 0.979
+PASS C3 controls: midpoint zone sums 96^3 vs Bessel G: max rel dev 1.3e-05; free 3-axis minimisation at kappa=0.2 -> (1.0046,2e-08,1e-08), B=-0.02356 (one-axis line -0.02356)
+PASS C4 block 89: quadratic law, diagonal: d* = 0.084, 0.167, 0.313, 0.480 (block 89: 0.084, 0.168, 0.312, 0.480); kappa=0.25 barrier 0.82 at 1.87, below uniform from 2.51
+PASS C5 N1 ratio: N1 one axis: uniform global above kappa_c iff beta/kappa >= r0 = 0.1102; first order at kappa=0.2358 (a=3.00), 0.2287 (a=2.21) for beta/kappa=0.05, 0.1; 3-axis samples (mu>0.1) at beta/kappa=0.25, 0.5: min cost/G-1 = 0.013, 0.017
+TOTAL: PASS=20 FAIL=0
+SUMMARY: PROVED (a),(b) for weight-one pair ledgers of block 59's law on block 89's alternation family (S0: float64 bounds, i0e checked against mpmath): one free even profile phi per class; phi = o(e^(|x|/2)), block 89's quadratic law included, is unbounded below at every kappa; diagonal: phi >= 4(cosh(x/2)-1) suffices (power family iff p >= 1/2); whole family: phi >= x sinh(x/2) suffices (N2, cost 2kappa sum d_j sinh d_j), N1 fails for beta/kappa below 0.110 (witness at 1/10); transition continuous; (c) executed under N2
+HIT: weight-one pair completions of block 59's law are F = sum K sqrt(c_b c_b') phi(log c_b/c_b'), one even profile per class; on block 89's alternation family the uniform field is the strict global minimum for every alpha+2beta >= <1/|s|>/4 when phi >= x sinh(x/2) (rate-weighted law F = (1/2) sum_b c_b (-M log c)_b, cost 2(alpha+2beta) sum_j d_j sinh d_j) and for no kappa when phi = o(e^(|x|/2)); the transition is then continuous, m^2 log(1/m^2) ~ 4pi^2(kappa_c-kappa), and under the rate-weighted law the alternation lies along one axis

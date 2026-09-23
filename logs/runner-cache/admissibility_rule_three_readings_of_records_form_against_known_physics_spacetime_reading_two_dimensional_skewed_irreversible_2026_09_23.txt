@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_three_readings_of_records_form_against_known_physics_spacetime_reading_two_dimensional_skewed_irreversible_2026_09_23.py
+runner_sha256: 8542fac8ea051de84b7bf45dbf11ed6c04a9af2c17648ea2f35fe0c077f93e6c
+input_fingerprint_sha256: d32aa2a4d3e7b58ecf7aad00d45d6bdb5b21d8fddb9edbc85e42a0b2dc44ccf9
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THREE_READINGS_OF_RECORDS_FORM_AGAINST_KNOWN_PHYSICS_THE_SPACETIME_READING_IS_TWO_DIMENSIONAL_SKEWED_AND_IRREVERSIBLE_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 reading (i): with Z^3 read as spacetime the predecessors of a record are x - e_1, x - e_2, x - e_3, i.e. the offsets 0, -e_1, -e_2 in the level plane; on the 4 x 4 plane torus the cycle a -> b -> -a -> a has forward over backward exponent 8 (ratio t^8): the level chain is reversible with respect to no law, while a symmetric past gives exponent 0
+PASS: B2 reading (i): the level walk's centred step has covariance [[2/9, -1/9], [-1/9, 2/9]] (isotropic in the plane's own metric) and third cumulants T_111 = 2/27, T_112 = -1/27: its propagation is skewed, and after three levels its causal cone (10 sites, rest frame) is a triangle that point reflection does not preserve; the symmetric pasts of readings (ii) and (iii) have zero third cumulant and a centrally symmetric cone (the octahedron |d|_1 <= 3)
+PASS: C1 reading (i): the linear field of a source at rest (worldline along (1,1,1), in the level plane at (n, n) three n levels back), Phi(y) = sum_n P_(3n)(y + (n, n)), has a reflection-odd part Phi(y) - Phi(-y) that is exactly zero on the three mirror lines (y = (1, 0), (0, 1), (1, -1): termwise, by the axis swaps) and nonzero along the step directions: partial sums to n = 10, 20, 40 at y = (1, 1) are about -665/10000, -679/10000, -683/10000 (exact rationals, rounded exactly; increasing in size) and the opposite at (2, -1): the field of A at B differs from the field of B at A
+PASS: D1 reading (iii): on a ring of four with two records (contents +-1) and two vacancies, a record choosing between its place and an empty neighbouring place in proportion to the pair weights (t^(s.s') between records, c between a record and an empty site; t, c symbolic) is in detailed balance with the static law's weight at every one of the 24 configurations and every move (block 39 T1): motion is reversible; formation fills an empty site and is never undone (records are permanent), so the only arrow is formation
+PASS: E1 the dimension of space in each reading, from the growth of causal cones: in reading (i) a level set of Z^3 is a rank-2 lattice and the sites reachable in m levels number (m + 1)(m + 2)/2 (a quadratic: two space dimensions), exactly for m = 1..12; in readings (ii) and (iii) the ball |d|_1 <= m holds (2m + 1)(2m^2 + 2m + 3)/3 sites (a cubic: three space dimensions)
+PASS: E2 no fronts under detailed balance: for a reversible translation-invariant chain, <f, P^(2n) tau_r f>_pi = <P^n f, tau_r P^n f>_pi <= <f, P^(2n) f>_pi (Cauchy-Schwarz, tau_r unitary), so a disturbance's imprint is largest at its origin at every even lag; exactly on a ring of five at t = e^beta = 2 the lag-2 and lag-4 correlations of the reversible light-cone chain peak at shift [0, 0], while the one-sided past's peak moves to shifts [4, 3] (-1 and -2): readings (ii) and (iii)'s record layers carry no waves; waves need a non-reversible or amplitude dynamics
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the cycle exponents on the 4 x 4 plane torus; the third cumulants; the three-level cones; detailed balance of pair-weight motion at every configuration and move of a ring of four
+per_site: executed - the resting source's reflection-odd part at five plane points, partial sums to 10, 20, 40
+per_mode: executed - control: the resting source's potential against log r to n = 6000, the three-dimensional kernel against 1/r by quadrature
+per_block: executed - the scorecard's entries cite the blocks that prove them
+lattice_wide: B for every even torus by the one-sided past (block 90 T1), checked on 4 x 4; C for the linear theory, partial sums exact, limits executed; D for every window by the heat-bath form (block 39 T1), checked on a ring; the readings and the comparator benchmarks are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: three readings of records form against known physics - (i) Z^3 as spacetime: two space dimensions, a level chain reversible with respect to no law, skewed propagation, a triangular cone, a two-dimensional reflection-odd resting-source field; (ii) re-recording ticks (block 36, excluded by the memo): three dimensions, reversible, 1/r reciprocal; (iii) moving records (owner): three dimensions, reversible motion with formation the only arrow; nothing adopted
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

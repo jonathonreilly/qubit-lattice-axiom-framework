@@ -1,0 +1,21 @@
+W1: reading (i), resting source in the level plane (sums to n = 6000)
+  along the mirror line (k, -k): Phi(0) - Phi(y), and its slope against log k (expected sqrt(3)/pi = 0.5513)
+    k= 1: 0.24044
+    k= 2: 0.61245   slope per log step 0.5367
+    k= 4: 0.99130   slope per log step 0.5466
+    k= 8: 1.37054   slope per log step 0.5471
+    k=16: 1.74381   slope per log step 0.5385
+  reflection-odd part Phi(y) - Phi(-y):
+    y=(1, 1): -0.06847
+    y=(2, 2): -0.03154
+    y=(4, 4): -0.01541
+    y=(1, 0): -0.00000
+    y=(2, -1): +0.06847
+    y=(4, -2): +0.03154
+W2: 3D lattice Green function (inverse lattice Laplacian) difference G(0) - G(r e1) against 1/r, by quadrature of the resolvent
+    r= 1: G(r) = 0.086064, r G(r) = 0.08606 (1/(4 pi) = 0.07958)
+    r= 2: G(r) = 0.042889, r G(r) = 0.08578 (1/(4 pi) = 0.07958)
+    r= 4: G(r) = 0.020289, r G(r) = 0.08116 (1/(4 pi) = 0.07958)
+    r= 8: G(r) = 0.009988, r G(r) = 0.07990 (1/(4 pi) = 0.07958)
+    r=16: G(r) = 0.004979, r G(r) = 0.07966 (1/(4 pi) = 0.07958)
+CONTROL exit=0

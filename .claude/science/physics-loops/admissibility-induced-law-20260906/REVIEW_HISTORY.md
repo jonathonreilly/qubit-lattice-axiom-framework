@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 94 — author checks and panel (not a review PASS)
+Written lens pass and four-lens panel (Claude Opus 5.5 after the Fable lenses hit a usage limit); supervisor checks of the lenses' load-bearing claims (0.1730 recomputed; the no-front proof and exact check; the dimension count); the supervisor's own error on blocks 90–93 found and corrected by corrigenda before this block; names kept out of the theorem sections. Census 8/8 in family.

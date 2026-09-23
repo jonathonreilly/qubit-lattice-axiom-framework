@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_post_record_supplied_concentration_certificate_interface_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_supplied_concentration_certificate_interface_2026_06_06.py",
+ "seed": 56299,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab16172c",
+ "started_utc": "20260923T093819Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=45 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "74761b00c0f7eb94bda0da4df5a7d41250bb55b570645bb3b8178fc26775ffbc",
+ "stdout_tail": "8\nPASS correlated word/count event probabilities agree :: 1\nPASS iid count distribution is exact binomial pushforward\n\n------------------------------------------------------------------------------\nCertificate checks\n------------------------------------------------------------------------------\nPASS iid certificate valid under its own law :: exact=1/8, epsilon=1/4\nPASS iid exact certificate valid at equality :: exact=1/8, epsilon=1/8\nPASS iid certificate rejected under correlated law scope :: exact=1, epsilon=1/4\nPASS iid observed extreme p-value bounded by certificate :: 1/8\nPASS correlated observed extreme p-value not bounded by iid certificate :: 1\nPASS same observed word has law-dependent p-values :: 1/8 vs 1\n\n------------------------------------------------------------------------------\nFirewall flags\n------------------------------------------------------------------------------\nPASS expectation-only certificate accepted flag is false\nPASS Record-derived probability-law flag is false\nPASS Record-derived concentration flag is false\nPASS Record-derived p-value flag is false\nPASS Record-derived kernel flag is false\nPASS Record-derived clock/rate flag is false\nPASS Record-derived Hamiltonian flag is false\nPASS audit verdict applied flag is false\nPASS generation/Koide dial selected flag is false\n\nSUMMARY: PASS=45 FAIL=0\nSUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE=TRUE\nLAW_SCOPE_REQUIRED=TRUE\nEXPECTATION_ONLY_CERTIFICATE_ACCEPTED=FALSE\nGENERATION_OR_KOIDE_DIAL_SELECTED=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T093819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

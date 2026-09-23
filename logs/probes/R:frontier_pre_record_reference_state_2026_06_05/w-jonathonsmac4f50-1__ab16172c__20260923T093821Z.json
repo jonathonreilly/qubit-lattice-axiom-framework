@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_pre_record_reference_state_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_pre_record_reference_state_2026_06_05.py",
+ "seed": 56301,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab16172c",
+ "started_utc": "20260923T093821Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "587b4de4712b3fa781616af33444f2591fb638b08445e76869a9b81834f084e7",
+ "stdout_tail": "DISTINCT\n        record-free state, so symmetry of the reference is an added postulate\n        about the STATE, not a property of record-absence.  (B4)\n\n  MINIMAL EXTRA PREMISE (named precisely):\n      (X)  \"Maximal-symmetry reference\":  the pre-record reference state is\n           invariant under the full unitary group of the per-site algebra\n           (equivalently: it is the tracial state; equivalently: it is the\n           maximum-entropy / maximal-ignorance state).\n      This is exactly the \"no-extra-structure principle\" of Step 5 of\n      PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20, here shown\n      to be (a) a genuine logical extra, and (b) the SAME premise under all\n      three candidate names.  It is a Jaynes-type / symmetry meta-principle\n      about the axiom-to-reference map, not a theorem of the three axioms.\n\n  CONSEQUENCE FOR THE BORN ROUTE:\n      The Gleason/Busch route gives the Born FORM p(E)=Tr(rho E) and, given a\n      reference, its VALUE.  This runner does NOT discharge the reference\n      residual: rho_ref = I/d remains conditional on premise X.  The Born\n      form+value are unconditional GIVEN rho_ref; the rho_ref = I/d input is\n      an open input (one symmetry/max-ignorance premise).\n\n\n==========================================================================\nRESULT: 14/14 checks PASS\nCLASSIFICATION: rho_ref = I/d remains an open maximal-symmetry premise X\n==========================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T093821Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

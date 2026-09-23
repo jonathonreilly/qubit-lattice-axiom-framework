@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_quark_route2_center_excess_source_target_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_center_excess_source_target_2026_06_21.py",
+ "seed": 56302,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab16172c",
+ "started_utc": "20260923T093822Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=43, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dc13fc1a0c4aca1e5cc96668a3f7d5cb2c57635e1849d338715541853f51f4c8",
+ "stdout_tail": " gives center T/E=-8/9\n\nPART 4: necessity in the endpoint-normalized class\nPASS: solving the shell equation returns a_T/a_E=1\nPASS: solving the T-center equation returns b_T/a_T=1\nPASS: solving the E-center equation returns b_E/a_E=7/2\nPASS: low-rational sweep has a unique E-excess hit\n      hits=[Fraction(7, 2)]\nPASS: nearby simple tilts miss the target\n\nPART 5: note and status firewall\nPASS: note contains marker: **Actual current-surface status:** bounded support for the normalized center-excess source target\nPASS: note contains marker: This is not an audit verdict\nPASS: note contains marker: does not resolve the parent gate\nPASS: note contains marker: b_E/a_E = 7/2\nPASS: note contains marker: the exact next source theorem target\nPASS: note avoids overclaim marker: legacy source-status certificate\nPASS: note avoids overclaim marker: parent-closure phrase\nPASS: note avoids overclaim marker: current-surface endpoint-derivation phrase\nPASS: note avoids overclaim marker: audit-ratification phrase\nPASS: note avoids overclaim marker: branch-local status-promotion phrase\nPASS: note avoids overclaim marker: future-retention phrase\nPASS: note avoids overclaim marker: promotion-to-retention phrase\nPASS: note avoids overclaim marker: no-future-theorem phrase\n\nTOTAL: PASS=43, FAIL=0\nVERDICT: bounded support. Under the one-power readout premise, the endpoint-normalized source theorem target is uniquely b_E/a_E=7/2 with a_T/a_E=1 and b_T/a_T=1. Existence of that source map remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T093823Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

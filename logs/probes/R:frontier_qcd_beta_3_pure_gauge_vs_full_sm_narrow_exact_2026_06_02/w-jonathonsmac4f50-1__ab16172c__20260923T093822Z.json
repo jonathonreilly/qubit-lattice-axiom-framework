@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_qcd_beta_3_pure_gauge_vs_full_sm_narrow_exact_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_qcd_beta_3_pure_gauge_vs_full_sm_narrow_exact_2026_06_02.py",
+ "seed": 56302,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab16172c",
+ "started_utc": "20260923T093822Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f9591e7b1a3769b413b63ece4f87a9fb181f252010c19f1b8c206fbd331499f6",
+ "stdout_tail": "t) at (3, 6): b_3(6) - b_3(0) = -4  (-4)\n  [PASS (A)] (C4) AF threshold at N_color=3: N_quark < 33/2 = 16.5  (threshold = 33/2)\n  [PASS (A)] (C4) framework N_quark=6 < 16.5 -> AF holds; bound recovers N_quark <= 16  (b_3(16)=1/3 > 0, b_3(17)=-1/3 < 0 -> AF cuts at n_f = 16)\n  [PASS (A)] (C5) counterfactual (3, 12) -> 3 (N_pair=4 -> N_quark=12); parametric confirmed  (b_3 = (33 - 24)/3 = 3)\n\n----------------------------------------------------------------------------------------\nPart 7: cross-checks (Rational arithmetic, sister, convention-flip)\n----------------------------------------------------------------------------------------\n  [PASS (A)] Rational arithmetic: pure-gauge = 11, full-SM = 7, Delta = 4  (pg=11, sm=7, delta=4)\n  [PASS (A)] sister cross-check: SU(2) pure-gauge matter-free = +22/3  ((11/3) * 2 = 22/3)\n  [PASS (A)] convention-flip: b_3 -> -b_3, |Delta b_3| = 4 preserved  (pg_flip=-11, sm_flip=-7, |delta|=4)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified: (P1)/(P1') parametric form; (P2a) pg=11; (P2b) sm=7;\n  (P2) Delta=4; (P3) per-sector; (C1)-(C5); SU(2) cross-check;\n  convention-flip; Rational-arithmetic sanity.\n\n========================================================================================\nTOTAL: PASS=23, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T093822Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

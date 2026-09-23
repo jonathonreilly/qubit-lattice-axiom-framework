@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py",
+ "seed": 56299,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab16172c",
+ "started_utc": "20260923T093819Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "843601a20f0023979bc5f2c90da210bd10629bdd4fa42100e4cb02360a896c01",
+ "stdout_tail": "\nPASS family-lift is not derived from Record\nPASS unbounded retained authority is not applied\nPASS audit verdict is not applied\nPASS dial is not forced or selected\n\n------------------------------------------------------------------------------\nDocument checks\n------------------------------------------------------------------------------\nPASS document contains phrase: The interface has three pieces\nPASS document contains phrase: supplied projection maps\nPASS document contains phrase: supplied stable predicate\nPASS document contains phrase: This is not an unbounded retained claim\nPASS document contains phrase: leading_marker_is_one(C_n) = true\nPASS document contains phrase: prefix density is not stable\nPASS document contains phrase: pre-record law carries probabilities\nPASS document contains phrase: post-record records carry realized information\nPASS document contains phrase: actual_current_surface_status: bounded-support\nPASS document contains phrase: audit_required_before_effective_retained: true\nPASS document contains phrase: bare_retained_allowed: false\nPASS document avoids live retained/promotion leaks\n\nSUMMARY: PASS=39 FAIL=0\nPOST_RECORD_FINITE_LADDER_COMPATIBILITY_WITNESS=TRUE\nLADDER_LEVELS=4\nSUPPLIED_PROJECTIONS_COMMUTE=TRUE\nSTABLE_PREDICATE=leading_marker_is_one\nDENSITY_USED_AS_STABLE_LIFT=FALSE\nSUPPLIED_STABLE_PREDICATE=TRUE\nFAMILY_LIFT_AUTHORITY_APPLIED=FALSE\nFAMILY_LIFT_DERIVED_FROM_RECORD=FALSE\nUNBOUNDED_RETAINED_AUTHORITY_APPLIED=FALSE\nAUDIT_VERDICT_APPLIED=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T093819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

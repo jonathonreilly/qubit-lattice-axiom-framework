@@ -1,0 +1,22 @@
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_povm_observation_comparator_exact_arithmetic_2026_07_30.py", line 375, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_povm_observation_comparator_exact_arithmetic_2026_07_30.py", line 282, in main
+    hashes_before = declared_hashes()
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_povm_observation_comparator_exact_arithmetic_2026_07_30.py", line 75, in declared_hashes
+    return {relative: digest(ROOT / relative) for relative in AUDIT_INPUT_PATHS}
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_povm_observation_comparator_exact_arithmetic_2026_07_30.py", line 71, in digest
+    return sha256(path.read_bytes()).hexdigest()
+                  ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/POVM_OBSERVATION_COMPARATOR_INPUT_CONVENTION_META_NOTE_2026-07-30.md'

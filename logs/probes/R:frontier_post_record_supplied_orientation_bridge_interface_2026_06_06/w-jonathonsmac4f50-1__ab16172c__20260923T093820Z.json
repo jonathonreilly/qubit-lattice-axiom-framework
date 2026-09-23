@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_post_record_supplied_orientation_bridge_interface_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.py",
+ "seed": 56300,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab16172c",
+ "started_utc": "20260923T093820Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "80541352a1bd9f6fb8a73c1ff7d2944786443e01eb5919834aacb0b52ed612cd",
+ "stdout_tail": "ction(1, 1), 'C': Fraction(0, 1)}, 'B': {'A': Fraction(0, 1), 'B': Fraction(1, 2), 'C': Fraction(1, 2)}, 'C': {'A': Fraction(1, 1), 'B': Fraction(0, 1), 'C': Fraction(0, 1)}}\nPASS supplied reversed empirical kernel is row-stochastic :: {'A': {'A': Fraction(0, 1), 'B': Fraction(0, 1), 'C': Fraction(1, 1)}, 'B': {'A': Fraction(1, 2), 'B': Fraction(1, 2), 'C': Fraction(0, 1)}, 'C': {'A': Fraction(0, 1), 'B': Fraction(1, 1), 'C': Fraction(0, 1)}}\nPASS forward and reversed supplied kernels differ\nPASS identical count state does not select either supplied kernel\n\n------------------------------------------------------------------------------\nFirewall flags\n------------------------------------------------------------------------------\nPASS audit data written flag is false\nPASS audit verdict applied flag is false\nPASS promoted/retained claim flag is false\nPASS Record-derived physical arrow flag is false\nPASS Record-derived orientation flag is false\nPASS production-kernel selected flag is false\nPASS clock/rate derived flag is false\nPASS stable setting selects dial flag is false\nPASS generation/Koide dial selected flag is false\n\nSUMMARY: PASS=37 FAIL=0\nSUPPLIED_ORIENTATION_BRIDGE_INTERFACE=TRUE\nDIRECTED_CERTIFICATE_REQUIRES_SUPPLIED_ORIENTATION=TRUE\nORIENTATION_DERIVED_FROM_RECORD=FALSE\nPHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE\nPRODUCTION_KERNEL_SELECTED=FALSE\nCLOCK_OR_RATE_DERIVED=FALSE\nSTABLE_SETTING_SELECTS_DIAL=FALSE\nGENERATION_OR_KOIDE_DIAL_SELECTED=FALSE\nAUDIT_LEDGER_WRITTEN=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T093820Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

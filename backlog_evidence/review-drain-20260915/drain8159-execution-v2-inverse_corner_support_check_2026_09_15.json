@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/inverse_corner_support_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"exact_author_checks_passed\",\n  \"independent_review\": false,\n  \"support_profiles\": [\n    {\n      \"profile\": \"empty\",\n      \"complex_word_algebra_dimension\": 1,\n      \"inverse_feature_count\": 0,\n      \"enhanced_real_covariance_rank\": 2\n    },\n    {\n      \"profile\": \"scalar\",\n      \"complex_word_algebra_dimension\": 1,\n      \"inverse_feature_count\": 0,\n      \"enhanced_real_covariance_rank\": 2\n    },\n    {\n      \"profile\": \"commuting\",\n      \"complex_word_algebra_dimension\": 2,\n      \"inverse_feature_count\": 0,\n      \"enhanced_real_covariance_rank\": 4\n    },\n    {\n      \"profile\": \"nilpotent_commuting\",\n      \"complex_word_algebra_dimension\": 2,\n      \"inverse_feature_count\": 0,\n      \"enhanced_real_covariance_rank\": 4\n    },\n    {\n      \"profile\": \"upper_triangular\",\n      \"complex_word_algebra_dimension\": 3,\n      \"inverse_feature_count\": 1,\n      \"enhanced_real_covariance_rank\": 8\n    },\n    {\n      \"profile\": \"lower_triangular\",\n      \"complex_word_algebra_dimension\": 3,\n      \"inverse_feature_count\": 1,\n      \"enhanced_real_covariance_rank\": 8\n    },\n    {\n      \"profile\": \"two_nilpotents\",\n      \"complex_word_algebra_dimension\": 4,\n      \"inverse_feature_count\": 0,\n      \"enhanced_real_covariance_rank\": 8\n    },\n    {\n      \"profile\": \"full_pair\",\n      \"complex_word_algebra_dimension\": 4,\n      \"inverse_feature_count\": 4,\n      \"enhanced_real_covariance_rank\": 8\n    }\n  ],\n  \"automorphism_covariance_cases\": 48,\n  \"degeneration\": [\n    {\n      \"t\": \"1\",\n      \"variance_21\": \"1\",\n      \"exact_probability_unit_disk\": \"1 - exp(-1)\"\n    },\n    {\n      \"t\": \"1/2\",\n      \"variance_21\": \"4\",\n      \"exact_probability_unit_disk\": \"1 - exp(-1/4)\"\n    },\n    {\n      \"t\": \"1/4\",\n      \"variance_21\": \"16\",\n      \"exact_probability_unit_disk\": \"1 - exp(-1/16)\"\n    },\n    {\n      \"t\": \"1/16\",\n      \"variance_21\": \"256\",\n      \"exact_probability_unit_disk\": \"1 - exp(-1/256)\"\n    }\n  ],\n  \"continuous_limit_word_covariance_rank\": 4,\n  \"analytic_non_tightness\": \"P(abs(output21)<=R)=1-exp(-R^2*t^2) tends to0\",\n  \"limitations\": [\n    \"initial structural polynomial equality failure is preserved under review/\",\n    \"continuous maximal-support and global-existence assertions use analytic proofs\",\n    \"Borel inverse-corner law is discontinuous at specified degeneracies\",\n    \"common-fiber identification and matrix-label process remain supplied\",\n    \"word covariance helper shared with earlier exact runner\",\n    \"no matter kinetic, Born or all-foundation conclusion\"\n  ]\n}\nper_element: checked intrinsic partial-inverse equations and covariance under real algebra automorphisms\nper_site: checked exact maximal support ranks on central, commuting, triangular and full-algebra profiles\nper_mode: checked and not executed \u2014 these are probability kernels, not kinetic or quantum modes\nper_block: checked a degenerating two-record profile and its exact non-tight Gaussian probability\nlattice_wide: checked and not executed \u2014 append-support monotonicity and global existence use the written proof\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite M2 algebra actions and support witnesses\nper_site: not executed: matrix-profile fixtures are not a spatial lattice\nper_mode: not executed: symbolic matrix support tests, not a spectral field\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.9789550304412842,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/inverse_corner_support_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/inverse_corner_support_check_2026_09_15.json",
+    "sha256": "c837fa817bc7d8912e723bbe82349191806ac983273bc394e768141a17e524d9"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 22,
+    "peak_tree_rss_bytes": 118341632,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

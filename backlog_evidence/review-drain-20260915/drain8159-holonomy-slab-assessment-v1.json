@@ -1,0 +1,149 @@
+{
+  "status": "AUTHOR SLAB REPAIR; AFFECTED COLD CONFIRMATION REQUIRED",
+  "changed_source": "scripts/holonomy_check_2026_09_15.py",
+  "source_sha256": "c0ee175798de3c1e4f61d8a5f27af37d108c079cc794d8ac75537e9d89cf30fa",
+  "unchanged_notes": true,
+  "unchanged_declared_inputs": [
+    "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+  ],
+  "timeout_seconds": 180,
+  "rss_cap_bytes": 536870912,
+  "array_accounting": {
+    "largest_band_plane_points": 5184,
+    "band_38_float_components_bytes": 1575936,
+    "largest_Fourier_plane_points": 9409,
+    "Fourier_three_float_mesh_bytes": 225816,
+    "lifetime": "All large band locals confined to _band_plane; only scalar energy/min and3+9 derivative partials survive. Fourier locals confined to fourier_cube.",
+    "budget": "Dominant grid arrays reduce cubic\u2192quadratic; allowance for ufunc/BLAS/library and supervisor overhead remains operational, not measured or proven RSS. Existing180s/512MiB cap retained."
+  },
+  "changed_floating_behavior": "Deterministic plane partials combined with math.fsum; exact same finite index sets, origin exclusion, charge transformation and derivative formulas. Reduction order changed, bounded comparisons passed.",
+  "comparison": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-holonomy-slab-controls-v1.json",
+    "sha256": "9fecc4d7206d0a1d37ad7e2267415bf1a60ba97b42d6cfb73fc4e88686b87d34"
+  },
+  "failure_preserved": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-execution-holonomy_check_2026_09_15.json",
+    "sha256": "dff042d1d457c250e18c0d890024b8eab822223c778cab651c369c59ab8ad64d"
+  },
+  "eligible_prior_captures": [
+    {
+      "runner": "scripts/charged_ring_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-charged_ring_check_2026_09_15.json",
+        "sha256": "d54296980f5574e42361b530ab41ab5880388b062be01a5d7f5143a9a75f8fb8"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "1dfce0899065b747ed4b04cb17939eea2dbabbca108671aae5c5732645f7e8ab"
+    },
+    {
+      "runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-cyclic_equilibrium_check_2026_09_15.json",
+        "sha256": "2b8432dd113d5a04f224fcadf33a005ae2b1a21ca434b0ccd3f0bfc0972c5fde"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "a0f0361826f76b87424fe20c5a2f10ffafd77ba8565f43ff7f5a95b61bbaf8f1"
+    },
+    {
+      "runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-cyclic_scaling_check_2026_09_15.json",
+        "sha256": "05a0963cb0ce093f53c199a54534d94c8f715e8d579881a988afb4d65594ef4b"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "b82354741b26dc957b1ac0fe5ba706e394939991e7bab7812ade3e39ab06578e"
+    },
+    {
+      "runner": "scripts/decay_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-decay_check_2026_09_15.json",
+        "sha256": "1c543a7c5b59ac10c6e33693fd21ee4c22f82ea623fc641d74441eba98c4e0d7"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "7b832c3406cefaf8c790cda399816db1c2dfefc3872fb7b54e06cc619db78723"
+    },
+    {
+      "runner": "scripts/ground_cutoff_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-ground_cutoff_check_2026_09_15.json",
+        "sha256": "830825cfd6cc7f3cbb69ef22ed8916a4223f52acd6029de40d92b1e84fd5259c"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "50bf4930b24963bccac71db7a96da69036793cea6a558f04b04c61d0a7b7b9f7"
+    },
+    {
+      "runner": "scripts/hybrid_curvature_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-hybrid_curvature_check_2026_09_15.json",
+        "sha256": "18879f724205a8deeec196edeb830baef602b522270567a5ea37205547da2031"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "fd147129ffce1d34d256cd2358270b16a1d61065deccff44989b7ef91f8efbb5"
+    },
+    {
+      "runner": "scripts/hybrid_generator_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-hybrid_generator_check_2026_09_15.json",
+        "sha256": "b08a3c91274589637ae882ff89fa33554cabe4fc0ee271a91f39e1d6aa060a57"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "fd147129ffce1d34d256cd2358270b16a1d61065deccff44989b7ef91f8efbb5"
+    },
+    {
+      "runner": "scripts/integrated_rate_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-integrated_rate_check_2026_09_15.json",
+        "sha256": "586fe48d085873f1cd8a763edd449950f45d18e65e1d82693662e3b8755be04b"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "3e6b6d7874452bd80961285cefd20020a5fd214c5b3991d07719dec9652b9fbb"
+    },
+    {
+      "runner": "scripts/local_spectrum_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-local_spectrum_check_2026_09_15.json",
+        "sha256": "15c4700661dab0fe03ac858a084649940d9512ccc0897dce42bcce3e22de5de2"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "50a12e38efc1c9ae1827158bc66b79c901aa38662624a09a68f22a853d26a615"
+    },
+    {
+      "runner": "scripts/mixed_history_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-mixed_history_check_2026_09_15.json",
+        "sha256": "a30fb08ef03788cba0e282bbd40b011bfa98d1b62d98bcdc2ac106f3a17fba2d"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "f760e20baddf25883466c5d3e67c132dfbaf79213ef04efd43355e7802cc20a7"
+    },
+    {
+      "runner": "scripts/positive_generator_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-positive_generator_check_2026_09_15.json",
+        "sha256": "7e1f329f8d6c6a40502b3d78240e915339ec7182b7336b3e43794778b0300594"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "735f649bf47ea4c77cdc09bd004405f7c053de7bd05282015dadc0914ee585fb"
+    },
+    {
+      "runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-quadratic_coframe_check_2026_09_15.json",
+        "sha256": "325a79d56a67a9b29813364a7d83b8b6864ad7ec70d875350a542ff10fa672a6"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "b2c0a111653f6a35fd783d5aa5d660836bcf298671eb4050ddb2987e0f158c03"
+    },
+    {
+      "runner": "scripts/quartet_metric_check_2026_09_15.py",
+      "receipt": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-quartet_metric_check_2026_09_15.json",
+        "sha256": "5582e4858b03731851b83f64b7c711034e16f9cb50e48b2926de6246fb95bbc9"
+      },
+      "cache_status": "fresh",
+      "declared_input_fingerprint": "18fc13cf570d343b610a4ca876a23b2c58abfe3f19f4f0bff2cad6cc1c5f820a"
+    }
+  ],
+  "no_full_primary_rerun": true
+}

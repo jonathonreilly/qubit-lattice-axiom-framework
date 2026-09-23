@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/gaussian_cycle_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_author_checks_passed\",\n  \"independent_review\": false,\n  \"source_trace\": {\n    \"random\": [\n      {\n        \"trial\": 0,\n        \"insertions\": 491,\n        \"maximum_ratio\": 0.034948686348688786\n      },\n      {\n        \"trial\": 1,\n        \"insertions\": 491,\n        \"maximum_ratio\": 0.18205300371252423\n      },\n      {\n        \"trial\": 2,\n        \"insertions\": 491,\n        \"maximum_ratio\": 0.015548748985157082\n      },\n      {\n        \"trial\": 3,\n        \"insertions\": 491,\n        \"maximum_ratio\": 0.04621072625470316\n      }\n    ],\n    \"sharp_value\": 0.003200000000000001,\n    \"sharp_bound\": 0.0032000000000000006,\n    \"wrong_rho_power_rejected\": true\n  },\n  \"actual_cochain_fixture\": {\n    \"fixture_beta\": 0.5,\n    \"fixture_N\": 3,\n    \"normalized_marks_replicated\": false,\n    \"fixed_field_trace_error\": 1.9160647057153807e-17,\n    \"fixed_field_bound_maximum_ratio\": 0.7924748336848265,\n    \"gaussian_quadrature_order\": 22,\n    \"diagnostic_covariance_scale\": 0.04,\n    \"gaussian_characteristic_error\": 4.107829973248212e-15,\n    \"missing_gaussian_diagonal_difference\": 0.6126959118971752,\n    \"full_unscaled_covariance_source_remainder\": \"0.00000000000019650569803338958150213621741823377763276872277402083\",\n    \"full_source_trace_bound\": 3.4789659006528126e-07,\n    \"source_scope\": \"fixed finite cochain h, not a macroscopic sequence\"\n  },\n  \"residual_negative_control\": {\n    \"signed\": 4.0,\n    \"absolute_sum\": 16.0,\n    \"positive_indicator_residual\": 10.0,\n    \"arbitrary_bounded_residual_extension_rejected\": true\n  },\n  \"fixed_parameter_operator_bound\": {\n    \"symmetric_endpoint_x\": \"16384.0\",\n    \"rho_upper\": \"4.82675048881779607622220717267834356437720000297232566931148e-34\",\n    \"example_beta\": 512,\n    \"example_N\": 4096,\n    \"claim_scope\": \"operator and restricted loop bound only\"\n  }\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite cochain, signed phase, partition and derivative fixtures\nper_site: finite source-support configurations only\nper_mode: finite matrix/operator directions; no all-order or infinite-kernel execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.6547839641571045,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/gaussian_cycle_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/gaussian_cycle_check_2026_09_15.json",
+    "sha256": "58de017fcaf9322317876395a30642d8567bc717e3c036b03e52752e859f5a9f"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 14,
+    "peak_tree_rss_bytes": 209633280,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

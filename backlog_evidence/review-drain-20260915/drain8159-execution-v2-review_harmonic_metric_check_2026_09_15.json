@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/review_harmonic_metric_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"exact_integer_normalization_checks\",\n  \"rows\": [\n    {\n      \"L\": 3,\n      \"vertices\": 27,\n      \"links\": 81,\n      \"cycle_dimension\": 55,\n      \"harmonic_dimension\": 3,\n      \"integer_identities\": \"exact\",\n      \"electric_weights\": [\n        2,\n        3,\n        5\n      ],\n      \"tangent_metric\": [\n        \"2/3\",\n        \"3/3\",\n        \"5/3\"\n      ]\n    },\n    {\n      \"L\": 4,\n      \"vertices\": 64,\n      \"links\": 192,\n      \"cycle_dimension\": 129,\n      \"harmonic_dimension\": 3,\n      \"integer_identities\": \"exact\",\n      \"electric_weights\": [\n        2,\n        3,\n        5\n      ],\n      \"tangent_metric\": [\n        \"2/4\",\n        \"3/4\",\n        \"5/4\"\n      ]\n    },\n    {\n      \"L\": 5,\n      \"vertices\": 125,\n      \"links\": 375,\n      \"cycle_dimension\": 251,\n      \"harmonic_dimension\": 3,\n      \"integer_identities\": \"exact\",\n      \"electric_weights\": [\n        2,\n        3,\n        5\n      ],\n      \"tangent_metric\": [\n        \"2/5\",\n        \"3/5\",\n        \"5/5\"\n      ]\n    }\n  ],\n  \"scope\": \"author cross-check; no independent audit\"\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: Exact integer incidence, cycle-basis, plaquette and weighted harmonic-metric identities.\nper_site: Periodic cubic coordinate fixtures L=3,4,5.\nper_mode: Three harmonic directions and complete finite cycle-coordinate identities; no spectral solver or slow-spectrum/cutoff-refinement run.\nper_block: Three exact integer normalization fixtures with electric weights2,3,5.\nlattice_wide: Not executed: the all-L metric theorem relies on the written proof.\n",
+  "stderr": "",
+  "elapsed_sec": 0.14378786087036133,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/review_harmonic_metric_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/review_harmonic_metric_check_2026_09_15.json",
+    "sha256": "08d0c8195629d8f6aeb1ab43d02181735cd2e73e450cbd5509596c7e2d2d7326"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 4,
+    "peak_tree_rss_bytes": 90882048,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/forest_interpolation_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_forest_checks_passed\",\n  \"N\": 3,\n  \"beta\": 0.5,\n  \"source\": \"independently assembled finite incidences within author check\",\n  \"raw_phase_interpolation_gauge_failure\": 2.0,\n  \"affine_phase_interpolation_gauge_error\": 1.2658490090568385e-15,\n  \"cases\": [\n    {\n      \"case\": \"compatible\",\n      \"chi\": [\n        0.0,\n        0.0,\n        0.0,\n        0.0,\n        0.0,\n        0.0\n      ],\n      \"self_energy\": 18.589333288823255,\n      \"local_reserve\": 3.48370055013617,\n      \"normalized_connected\": 6.182224375549606,\n      \"imaginary_residual\": 0.0,\n      \"quadrature\": {\n        \"10\": {\n          \"real\": 6.182224375549593,\n          \"imag\": 0.0,\n          \"error\": 1.3322676295501878e-14\n        },\n        \"16\": {\n          \"real\": 6.182224375549605,\n          \"imag\": 0.0,\n          \"error\": 8.881784197001252e-16\n        }\n      },\n      \"minimum_interpolated_gram_eigenvalue\": 4.0176393433882325,\n      \"maximum_modulus_to_local_reserve_ratio\": 3.3909453258602263e-06,\n      \"maximum_tested_schur_contraction_ratio\": 0.8656426765899907\n    },\n    {\n      \"case\": \"overlapping_electric\",\n      \"chi\": [\n        1.0,\n        0.0,\n        0.0,\n        0.0,\n        0.0,\n        0.0\n      ],\n      \"self_energy\": 18.58933328882326,\n      \"local_reserve\": 3.48370055013617,\n      \"normalized_connected\": 1.0761295731204958,\n      \"imaginary_residual\": 0.0,\n      \"quadrature\": {\n        \"10\": {\n          \"real\": 1.0761343083733586,\n          \"imag\": 0.0,\n          \"error\": 4.735252862708705e-06\n        },\n        \"16\": {\n          \"real\": 1.076129573120491,\n          \"imag\": 0.0,\n          \"error\": 4.884981308350689e-15\n        }\n      },\n      \"minimum_interpolated_gram_eigenvalue\": 0.7960943163003884,\n      \"maximum_modulus_to_local_reserve_ratio\": 0.0004790956333242937,\n      \"maximum_tested_schur_contraction_ratio\": 0.8918599553152396\n    },\n    {\n      \"case\": \"overlapping_both\",\n      \"chi\": [\n        1.0,\n        0.0,\n        0.0,\n        0.0,\n        0.0,\n        1.0\n      ],\n      \"self_energy\": 18.519309304954763,\n      \"local_reserve\": 3.48370055013617,\n      \"normalized_connected\": -0.9131954743347395,\n      \"imaginary_residual\": 0.0,\n      \"quadrature\": {\n        \"10\": {\n          \"real\": -0.9164906660987171,\n          \"imag\": 0.0,\n          \"error\": 0.003295191763977634\n        },\n        \"16\": {\n          \"real\": -0.9131954743371224,\n          \"imag\": 0.0,\n          \"error\": 2.382982700055436e-12\n        }\n      },\n      \"minimum_interpolated_gram_eigenvalue\": 0.18414625115851369,\n      \"maximum_modulus_to_local_reserve_ratio\": 0.0023382717916191733,\n      \"maximum_tested_schur_contraction_ratio\": 0.930977368066666\n    }\n  ],\n  \"scope\": \"Finite floating checks and two quadrature orders. No interval certification, full gas estimate, physical scaling theorem, or independent review.\"\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite cochain, signed phase, partition and derivative fixtures\nper_site: finite source-support configurations only\nper_mode: finite matrix/operator directions; no all-order or infinite-kernel execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.7001259326934814,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/forest_interpolation_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/forest_interpolation_check_2026_09_15.json",
+    "sha256": "659c63164a7af3a59712d271a5a48787e1671380922df8bd9072b7c8a308c826"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 16,
+    "peak_tree_rss_bytes": 135921664,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

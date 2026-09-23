@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/tree_count_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_author_checks_passed\",\n  \"independent_review\": false,\n  \"weighted_tree_checks\": [\n    {\n      \"n\": 2,\n      \"theta\": \"0.0\",\n      \"weighted_count\": \"1.0\"\n    },\n    {\n      \"n\": 2,\n      \"theta\": \"0.5\",\n      \"weighted_count\": \"1.0\"\n    },\n    {\n      \"n\": 2,\n      \"theta\": \"0.75\",\n      \"weighted_count\": \"1.0\"\n    },\n    {\n      \"n\": 3,\n      \"theta\": \"0.0\",\n      \"weighted_count\": \"3.0\"\n    },\n    {\n      \"n\": 3,\n      \"theta\": \"0.5\",\n      \"weighted_count\": \"4.242640687119285146405066\"\n    },\n    {\n      \"n\": 3,\n      \"theta\": \"0.75\",\n      \"weighted_count\": \"5.045378491522287258186753\"\n    },\n    {\n      \"n\": 4,\n      \"theta\": \"0.0\",\n      \"weighted_count\": \"16.0\"\n    },\n    {\n      \"n\": 4,\n      \"theta\": \"0.5\",\n      \"weighted_count\": \"33.79795897113271239278914\"\n    },\n    {\n      \"n\": 4,\n      \"theta\": \"0.75\",\n      \"weighted_count\": \"49.27575999886482059176891\"\n    },\n    {\n      \"n\": 5,\n      \"theta\": \"0.0\",\n      \"weighted_count\": \"125.0\"\n    },\n    {\n      \"n\": 5,\n      \"theta\": \"0.5\",\n      \"weighted_count\": \"402.046621820868462061469\"\n    },\n    {\n      \"n\": 5,\n      \"theta\": \"0.75\",\n      \"weighted_count\": \"726.4710032737188369691348\"\n    },\n    {\n      \"n\": 6,\n      \"theta\": \"0.0\",\n      \"weighted_count\": \"1296.0\"\n    },\n    {\n      \"n\": 6,\n      \"theta\": \"0.5\",\n      \"weighted_count\": \"6404.3763241414574959121\"\n    },\n    {\n      \"n\": 6,\n      \"theta\": \"0.75\",\n      \"weighted_count\": \"14415.71157557824936342176\"\n    },\n    {\n      \"n\": 7,\n      \"theta\": \"0.0\",\n      \"weighted_count\": \"16807.0\"\n    },\n    {\n      \"n\": 7,\n      \"theta\": \"0.5\",\n      \"weighted_count\": \"128237.6657321894801197013\"\n    },\n    {\n      \"n\": 7,\n      \"theta\": \"0.75\",\n      \"weighted_count\": \"360589.4634675368651348326\"\n    }\n  ],\n  \"maximum_relative_identity_error\": \"1.7681729e-61\",\n  \"exact_series_upper_bound\": \"79781/7000\",\n  \"first_sixteen_upper_coefficients\": [\n    \"1\",\n    \"841/500\",\n    \"1917/1000\",\n    \"226/125\",\n    \"1511/1000\",\n    \"1159/1000\",\n    \"831/1000\",\n    \"113/200\",\n    \"367/1000\",\n    \"23/100\",\n    \"139/1000\",\n    \"41/500\",\n    \"47/1000\",\n    \"13/500\",\n    \"3/200\",\n    \"1/125\"\n  ],\n  \"direct_cycle_path_counts\": [\n    {\n      \"r\": 2,\n      \"cycles\": 1,\n      \"paths_per_species\": 1,\n      \"normalized_path_decorations\": \"1/4\"\n    },\n    {\n      \"r\": 3,\n      \"cycles\": 6,\n      \"paths_per_species\": 3,\n      \"normalized_path_decorations\": \"3/2\"\n    },\n    {\n      \"r\": 4,\n      \"cycles\": 72,\n      \"paths_per_species\": 12,\n      \"normalized_path_decorations\": \"18\"\n    },\n    {\n      \"r\": 5,\n      \"cycles\": 1440,\n      \"paths_per_species\": 60,\n      \"normalized_path_decorations\": \"360\"\n    }\n  ],\n  \"limitations\": [\n    \"counts concern specified combinatorial objects, not an identified physical expansion\",\n    \"divergence is of the stated series of common upper bounds, not of physical coefficients\",\n    \"no second factorial normalization is introduced\"\n  ]\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: Exact degree-factorial weights, rational series bounds and cycle/path normalization identities.\nper_site: Not executed: labeled combinatorial vertices, not a spatial lattice.\nper_mode: Not executed: no Fourier or spectral computation.\nper_block: Pruefer words for n=2..7 and theta=0,1/2,3/4; sixteen rational coefficient bounds; alternating cycles/decorating paths for r=2..5.\nlattice_wide: Not executed: series estimates and their physical-scope limitation use the written proof.\n",
+  "stderr": "",
+  "elapsed_sec": 0.07869505882263184,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/tree_count_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/tree_count_check_2026_09_15.json",
+    "sha256": "ec18f3edeb8317767e433c1564b09969f3810c3460e0e6d525924744db7881bf"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 2,
+    "peak_tree_rss_bytes": 75186176,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

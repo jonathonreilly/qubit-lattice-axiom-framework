@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/response_identity_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"finite response identities, no cubic phase theorem\",\n  \"charged_ring\": {\n    \"dimension\": 540,\n    \"CAR_Gauss_transitions\": 1416,\n    \"electric_double_commutator_error\": 4.440892098500626e-15,\n    \"magnetic_interior_error\": 1.8207657603852567e-14,\n    \"magnetic_hard_boundary_discrepancy_retained\": 24.14285714285715,\n    \"flat_twist_unitary_error\": 1.4876885792002277e-14,\n    \"diamagnetic\": 0.31981617573350324,\n    \"paramagnetic\": 0.31981617573350346,\n    \"ward_error\": 2.220446049250313e-16,\n    \"ground_degeneracy\": 1,\n    \"spectral_first_moment\": 0.057566911632030426,\n    \"sum_rule_error\": 1.5265566588595902e-16\n  },\n  \"massive_screening_example\": {\n    \"rho\": 1.7,\n    \"g\": 0.4,\n    \"rows\": [\n      {\n        \"k\": 0.4,\n        \"frequency\": 0.6572670690061995,\n        \"static_curvature\": 0.6296296296296298\n      },\n      {\n        \"k\": 0.1,\n        \"frequency\": 0.5310367218940701,\n        \"static_curvature\": 0.06028368794326244\n      },\n      {\n        \"k\": 0.02,\n        \"frequency\": 0.5219195340279955,\n        \"static_curvature\": 0.0024963289280470757\n      },\n      {\n        \"k\": 0.004,\n        \"frequency\": 0.5215515314904176,\n        \"static_curvature\": 9.999411799310742e-05\n      },\n      {\n        \"k\": 0.0,\n        \"frequency\": 0.521536192416212,\n        \"static_curvature\": 0.0\n      }\n    ],\n    \"scope\": \"distinct quadratic discriminator\"\n  },\n  \"runner_sha256\": \"b81caeeb31f9580a4794b8d474793c27964d30ab112689fc63ecf632fd8763c7\"\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: charged f-sum and Ward identities\nper_site: finite charged-ring configurations\nper_mode: finite matrix spectral/response controls; no pole or phase inference\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.41530609130859375,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/response_identity_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/response_identity_check_2026_09_15.json",
+    "sha256": "1593a18949c13740855c261d7454247b5bab7a6ffaef999210ef57afd0367ad3"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 10,
+    "peak_tree_rss_bytes": 138133504,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

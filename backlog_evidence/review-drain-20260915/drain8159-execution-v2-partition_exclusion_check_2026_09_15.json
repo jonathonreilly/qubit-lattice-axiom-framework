@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/partition_exclusion_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_author_checks_passed\",\n  \"independent_review\": false,\n  \"new_interpolation_value\": [\n    0.516,\n    0.6839999999999999\n  ],\n  \"old_affine_value\": [\n    0.6,\n    0.9\n  ],\n  \"derivative_at_compatible_pair\": [\n    -0.41999999999999993,\n    -0.27\n  ],\n  \"maximum_derivative_variation_ratio\": 1.0000000000000002,\n  \"cochain_face_triple\": [\n    0,\n    6,\n    1\n  ],\n  \"incompatibility\": [\n    0,\n    1,\n    0\n  ],\n  \"gram_eigenvalues\": [\n    7.447587003486868,\n    9.975495978941005,\n    13.703089658586801\n  ],\n  \"connected_reference\": {\n    \"real\": -2.4152690339152275e-08,\n    \"imag\": -9.899838659532824e-12\n  },\n  \"quadrature\": [\n    {\n      \"order\": 12,\n      \"absolute_error\": 6.617729673083605e-24,\n      \"relative_error\": 2.739955269681262e-16\n    },\n    {\n      \"order\": 20,\n      \"absolute_error\": 1.3235003790758358e-23,\n      \"relative_error\": 5.479721924610218e-16\n    },\n    {\n      \"order\": 28,\n      \"absolute_error\": 3.30926238144761e-24,\n      \"relative_error\": 1.3701422313583812e-16\n    }\n  ],\n  \"wrong_local_contact_routing_error\": 9.278429135188331e-09,\n  \"limitations\": [\n    \"three-component identity fixture only\",\n    \"shared float cochain inputs\",\n    \"no spatial routing or full convergence theorem\"\n  ]\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite cochain, signed phase, partition and derivative fixtures\nper_site: finite source-support configurations only\nper_mode: finite matrix/operator directions; no all-order or infinite-kernel execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.14183521270751953,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/partition_exclusion_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/partition_exclusion_check_2026_09_15.json",
+    "sha256": "88c85e36a6c0101f42d4d9f4b49eb3812160198cc6750ec423daa8ae44d674d6"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 4,
+    "peak_tree_rss_bytes": 85000192,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

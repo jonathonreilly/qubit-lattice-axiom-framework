@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/matched_cone_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"finite algebra only, personal checks\",\n  \"symbolic\": {\n    \"characteristic_polynomial_residual\": \"0\"\n  },\n  \"literal_curl_spectra\": [\n    {\n      \"L\": 3,\n      \"G\": [\n        1.0,\n        1.0,\n        0.75\n      ],\n      \"eta\": 1.0,\n      \"positive_count\": 52,\n      \"spectral_error\": 8.881784197001252e-15,\n      \"kernel_error\": 3.8199065021457285e-15\n    },\n    {\n      \"L\": 4,\n      \"G\": [\n        1.0,\n        1.0,\n        0.75\n      ],\n      \"eta\": 1.0,\n      \"positive_count\": 126,\n      \"spectral_error\": 2.4868995751603507e-14,\n      \"kernel_error\": 5.771217056713922e-15\n    },\n    {\n      \"L\": 4,\n      \"G\": [\n        1.0,\n        1.0,\n        0.75\n      ],\n      \"eta\": 0.37,\n      \"positive_count\": 126,\n      \"spectral_error\": 1.5987211554602254e-14,\n      \"kernel_error\": 5.770077696442269e-15\n    },\n    {\n      \"L\": 3,\n      \"G\": [\n        0.4,\n        1.3,\n        2.1\n      ],\n      \"eta\": 2.0,\n      \"positive_count\": 52,\n      \"spectral_error\": 1.0658141036401503e-14,\n      \"kernel_error\": 8.05580754029133e-15\n    }\n  ],\n  \"wilson_nodes\": [\n    {\n      \"charge\": 1,\n      \"node\": [\n        1.0471975511965976,\n        0.0,\n        -1.0471975511965976\n      ],\n      \"metric_error\": 1.424356188550746e-10,\n      \"node_residual\": 1.1102230246251565e-16\n    },\n    {\n      \"charge\": 1,\n      \"node\": [\n        1.0471975511965976,\n        0.0,\n        1.0471975511965976\n      ],\n      \"metric_error\": 1.424356188550746e-10,\n      \"node_residual\": 1.1102230246251565e-16\n    },\n    {\n      \"charge\": -1,\n      \"node\": [\n        -1.0471975511965976,\n        0.0,\n        -1.0471975511965976\n      ],\n      \"metric_error\": 1.424356188550746e-10,\n      \"node_residual\": 1.1102230246251565e-16\n    },\n    {\n      \"charge\": -1,\n      \"node\": [\n        -1.0471975511965976,\n        0.0,\n        1.0471975511965976\n      ],\n      \"metric_error\": 1.424356188550746e-10,\n      \"node_residual\": 1.1102230246251565e-16\n    }\n  ],\n  \"necessity_counterexample\": {\n    \"positive_but_birefringent_axis_squared_frequencies\": [\n      0.0,\n      1.0,\n      2.0000000000000004\n    ]\n  },\n  \"runner_sha256\": \"7589f3815af40612c1e0e49098b8b3af29049d241f6fd54653c5523913b4e279\"\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: positive-weight cone identities\nper_site: finite periodic curl fixtures\nper_mode: finite Bloch derivatives and weighted polarization checks\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.3520779609680176,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/matched_cone_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/matched_cone_check_2026_09_15.json",
+    "sha256": "fcb3c34e4cc0bee79beb9879c4c6133ce983885d86ae02175382faaaca767b2b"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 7,
+    "peak_tree_rss_bytes": 121061376,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "runner": "scripts/charged_ring_check_2026_09_15.py",
+    "cache_sha256": "1d0ca0a52c54b0015baa532bdc9cf100ca80d61816edc449ca4551bd275dff92",
+    "raw_sha256": "d9f24521e4c41824c538ac60022cef9d417149a44d7ce3c7d1b2a5f10b80b5db",
+    "input_fingerprint": "1dfce0899065b747ed4b04cb17939eea2dbabbca108671aae5c5732645f7e8ab"
+  },
+  {
+    "runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+    "cache_sha256": "90a47869c451423121de8e990e8e8fb55d67818e4fd89a9b5e0f72f3e86c3264",
+    "raw_sha256": "b97a32f02927ed8abaeba9026b9c40253b9063cffc187d8b7dd48a03fb2da1e7",
+    "input_fingerprint": "a0f0361826f76b87424fe20c5a2f10ffafd77ba8565f43ff7f5a95b61bbaf8f1"
+  },
+  {
+    "runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+    "cache_sha256": "acf10093e2216d458e70fb76881bc5aa9ab5aa7af496035cad3966cb398ef09f",
+    "raw_sha256": "3b7ed5773af01eafb3c19a597f7024f7d026575fa9f2bbe16ca55b9e6ce24b9d",
+    "input_fingerprint": "b82354741b26dc957b1ac0fe5ba706e394939991e7bab7812ade3e39ab06578e"
+  },
+  {
+    "runner": "scripts/decay_check_2026_09_15.py",
+    "cache_sha256": "1bd0fe59eac5763aff5b54862957bb0288e6261bbb3dc693f4bdf0d4bea804ca",
+    "raw_sha256": "21952437d7e98aa6efd424b4ff34267491427c5a3270e1be0688771139434829",
+    "input_fingerprint": "7b832c3406cefaf8c790cda399816db1c2dfefc3872fb7b54e06cc619db78723"
+  },
+  {
+    "runner": "scripts/ground_cutoff_check_2026_09_15.py",
+    "cache_sha256": "1f8f803370de11092e5d768389174d3c51d5ba5a7f2db027107f267a5efd36be",
+    "raw_sha256": "e27833ce5016b16f731742792dea8b6c8ecc914e0722c71278b8b7bb8d54e1ab",
+    "input_fingerprint": "50bf4930b24963bccac71db7a96da69036793cea6a558f04b04c61d0a7b7b9f7"
+  },
+  {
+    "runner": "scripts/hybrid_curvature_check_2026_09_15.py",
+    "cache_sha256": "0d5553f61af7f445fa24209eb861351dd45368f9fa9b4ef52e5c31da709a07d7",
+    "raw_sha256": "cba7ed6dbf6ce48f1ad5c4cbbcdaa7185a9f26ecc001ea4ab7ac29e6c870e0c2",
+    "input_fingerprint": "fd147129ffce1d34d256cd2358270b16a1d61065deccff44989b7ef91f8efbb5"
+  },
+  {
+    "runner": "scripts/hybrid_generator_check_2026_09_15.py",
+    "cache_sha256": "58cb39be7a6dfc58e7c8962c281af301acce2aca05e2aa0bc172fbd1e73b3c1b",
+    "raw_sha256": "4daa3faa6aba988f564f2ae48a47a9fb0991a867bb491364a3ea1e2235a8e4d4",
+    "input_fingerprint": "fd147129ffce1d34d256cd2358270b16a1d61065deccff44989b7ef91f8efbb5"
+  },
+  {
+    "runner": "scripts/integrated_rate_check_2026_09_15.py",
+    "cache_sha256": "e2c89752ba04e703fdcdb3c533662e7b62e0c868870f7e08b14552a3b5e7d7fc",
+    "raw_sha256": "71816a7c34d8095efdde6fda429d9cf3c0b8ec00c4fa8918330bde12e2094719",
+    "input_fingerprint": "3e6b6d7874452bd80961285cefd20020a5fd214c5b3991d07719dec9652b9fbb"
+  },
+  {
+    "runner": "scripts/local_spectrum_check_2026_09_15.py",
+    "cache_sha256": "ff9d4ac634846fe15fffe42f020c9d386dd5412591cfff5ed39600e1e65bc441",
+    "raw_sha256": "daff5da4603dd75fc2b91677a041be3ced6f3f38413c7493a6fca3f58ba86821",
+    "input_fingerprint": "50a12e38efc1c9ae1827158bc66b79c901aa38662624a09a68f22a853d26a615"
+  },
+  {
+    "runner": "scripts/mixed_history_check_2026_09_15.py",
+    "cache_sha256": "ca765b6c5b30df2ebba58ae4605ac37dcbbb3774233e14d9b22846c8a40f8e0a",
+    "raw_sha256": "d500c753bf59ea20c5e3adb29c771fddaebc9a646dd8ef7ff1bb08477ee6fc9b",
+    "input_fingerprint": "f760e20baddf25883466c5d3e67c132dfbaf79213ef04efd43355e7802cc20a7"
+  },
+  {
+    "runner": "scripts/positive_generator_check_2026_09_15.py",
+    "cache_sha256": "92018cec3e6ce3d4d2f4044cc608c831ad7a01595e8138a3fbec48321ccbeddd",
+    "raw_sha256": "1b4c339d6a9ec8c136758f25c5280ff758119a4a6b084e62e3d2fe26f3d60b2e",
+    "input_fingerprint": "735f649bf47ea4c77cdc09bd004405f7c053de7bd05282015dadc0914ee585fb"
+  },
+  {
+    "runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+    "cache_sha256": "88bf83e1a954827ab8ce4df953a506d44b94616eff16334672d97e66ffe81560",
+    "raw_sha256": "733f1483e923483d062a9dbd88709a1f065dec6145b915efe6aeaf6a9d41bfa0",
+    "input_fingerprint": "b2c0a111653f6a35fd783d5aa5d660836bcf298671eb4050ddb2987e0f158c03"
+  },
+  {
+    "runner": "scripts/quartet_metric_check_2026_09_15.py",
+    "cache_sha256": "701b427b9815c65e45be160a64aa711b3f36b953fd45ee16ce12b495c0d168e5",
+    "raw_sha256": "e322579aad3bca0d77219799bbdf3bd2222bab1dd7ca5965112c9c10770b2df0",
+    "input_fingerprint": "18fc13cf570d343b610a4ca876a23b2c58abfe3f19f4f0bff2cad6cc1c5f820a"
+  }
+]

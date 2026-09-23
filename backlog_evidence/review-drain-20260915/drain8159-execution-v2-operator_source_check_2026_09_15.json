@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/operator_source_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_cycle_and_source_checks_passed\",\n  \"cycles\": {\n    \"matrix_rows\": [\n      {\n        \"shape\": [\n          2,\n          2\n        ],\n        \"distinct_cycle\": 0.0006757898849404484,\n        \"trace_four\": 0.008752310235878009,\n        \"logdet_sum\": 0.004143009711985245,\n        \"majorant\": 0.005713534524781652\n      },\n      {\n        \"shape\": [\n          3,\n          4\n        ],\n        \"distinct_cycle\": -0.0023133224190129147,\n        \"trace_four\": 0.012948667615181335,\n        \"logdet_sum\": 0.006140643501328894,\n        \"majorant\": 0.008162198579389263\n      },\n      {\n        \"shape\": [\n          5,\n          6\n        ],\n        \"distinct_cycle\": 0.0008059070626487901,\n        \"trace_four\": 0.011967547678751122,\n        \"logdet_sum\": 0.005700938215401135,\n        \"majorant\": 0.009629328631886737\n      }\n    ],\n    \"compatible_distinct_cycle\": -0.3754651225367022,\n    \"compatible_unrestricted_trace\": 1.2661941297744947,\n    \"repeated_label_positivity_negative_control\": true,\n    \"half_measure_rho_upper\": \"0.0000000235121163383395000975367881170832722589356952988929446757864395228776\",\n    \"orientation_included_upper\": \"0.00000004702423267667900019507357623416654451787139059778588935157287904575519\"\n  },\n  \"source_scales\": [\n    [\n      32,\n      0.28636790022586445,\n      0.5690627605083896,\n      1.4584597396413765\n    ],\n    [\n      64,\n      0.2858780747295203,\n      0.5708381338035411,\n      2.9119301577470345\n    ],\n    [\n      128,\n      0.2857552568690056,\n      0.5712810254912946,\n      5.821358290585155\n    ],\n    [\n      256,\n      0.2857245299938775,\n      0.5713916889114424,\n      11.641464655650331\n    ]\n  ]\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite cochain, signed phase, partition and derivative fixtures\nper_site: finite source-support configurations only\nper_mode: finite matrix/operator directions; no all-order or infinite-kernel execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.14531302452087402,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/operator_source_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/operator_source_check_2026_09_15.json",
+    "sha256": "118aad01dd1fdc39f8ce7b928304f1be5226e93629654f9923fb58b28def4a07"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 4,
+    "peak_tree_rss_bytes": 85688320,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

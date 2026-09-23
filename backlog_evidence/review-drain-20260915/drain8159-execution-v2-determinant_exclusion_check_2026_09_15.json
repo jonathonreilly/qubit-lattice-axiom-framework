@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/determinant_exclusion_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_author_checks_passed\",\n  \"independent_review\": false,\n  \"gram_trace_cases\": 240,\n  \"gram_trace_error\": 8.326672684688674e-16,\n  \"cross_minor_cases\": 1392,\n  \"cross_minor_trace_error\": 8.326672684688674e-16,\n  \"commuting_map_error\": 6.661338147750939e-16,\n  \"derivative_point_checks\": 7488,\n  \"maximum_derivative_bound_ratio\": 1.0,\n  \"non_psd_cube_determinant\": -1.0,\n  \"physical_cochain_triple\": [\n    0,\n    6,\n    1\n  ],\n  \"shared_resource_counts\": [\n    0,\n    3,\n    0\n  ],\n  \"physical_connected_reference\": {\n    \"real\": -2.4152690339152275e-08,\n    \"imag\": -9.899838659532824e-12\n  },\n  \"bkar_quadrature\": [\n    {\n      \"order\": 12,\n      \"absolute_error\": 3.309353478762453e-24\n    },\n    {\n      \"order\": 20,\n      \"absolute_error\": 9.926337743129382e-24\n    },\n    {\n      \"order\": 28,\n      \"absolute_error\": 6.300789822181265e-26\n    }\n  ],\n  \"normalization_control\": {\n    \"single_resource_without_boost\": 0.5,\n    \"unnormalized_trace_identity_at_n3\": 8.0\n  },\n  \"limitations\": [\n    \"finite identities only\",\n    \"shared float cochain fixture\",\n    \"no derivative operator source theorem\",\n    \"no physical all-order convergence\"\n  ]\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite cochain, signed phase, partition and derivative fixtures\nper_site: finite source-support configurations only\nper_mode: finite matrix/operator directions; no all-order or infinite-kernel execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 1.6839089393615723,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/determinant_exclusion_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/determinant_exclusion_check_2026_09_15.json",
+    "sha256": "358d622ce0a904bb79f2c0d388f7bb2b33ca6d1af00fd70957e446fa36a022aa"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 34,
+    "peak_tree_rss_bytes": 145604608,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

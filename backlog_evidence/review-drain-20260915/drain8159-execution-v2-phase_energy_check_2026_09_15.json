@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/phase_energy_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_exact_cochain_and_phase_checks_passed\",\n  \"phase_periodicity_max_error\": \"6.791759309120034275631839468165843835511898398604353642186961167451626e-70\",\n  \"gauge_dependent_wrong_energy_ratios\": [\n    \"21641/7\",\n    \"2975\",\n    \"20009/7\",\n    \"2975\"\n  ],\n  \"rooted_checks\": [\n    {\n      \"species\": \"electric\",\n      \"root\": 0,\n      \"integral\": 4.6123129537354535,\n      \"frame_bound\": 31.04880566067852,\n      \"physical_energy\": \"17/24\",\n      \"energy_bound\": 125.83745611388932\n    },\n    {\n      \"species\": \"magnetic\",\n      \"root\": 0,\n      \"integral\": 3.708827170627726,\n      \"frame_bound\": 21.616219593083084,\n      \"physical_energy\": \"7/24\",\n      \"energy_bound\": 51.815423105719134\n    },\n    {\n      \"species\": \"electric\",\n      \"root\": 5,\n      \"integral\": 2.455946837813608,\n      \"frame_bound\": 14.34443759423128,\n      \"physical_energy\": \"17/24\",\n      \"energy_bound\": 125.83745611388932\n    },\n    {\n      \"species\": \"magnetic\",\n      \"root\": 5,\n      \"integral\": 3.5412543287256857,\n      \"frame_bound\": 9.27066702016967,\n      \"physical_energy\": \"7/24\",\n      \"energy_bound\": 51.815423105719134\n    },\n    {\n      \"species\": \"electric\",\n      \"root\": 13,\n      \"integral\": 1.813963278864132,\n      \"frame_bound\": 8.377335003504825,\n      \"physical_energy\": \"17/24\",\n      \"energy_bound\": 125.83745611388932\n    },\n    {\n      \"species\": \"magnetic\",\n      \"root\": 13,\n      \"integral\": 4.22279585366456,\n      \"frame_bound\": 8.902269360727514,\n      \"physical_energy\": \"7/24\",\n      \"energy_bound\": 51.815423105719134\n    },\n    {\n      \"species\": \"electric\",\n      \"root\": 23,\n      \"integral\": 4.718240010563446,\n      \"frame_bound\": 38.64115410115777,\n      \"physical_energy\": \"17/24\",\n      \"energy_bound\": 125.83745611388932\n    },\n    {\n      \"species\": \"magnetic\",\n      \"root\": 23,\n      \"integral\": 1.2322056123449594,\n      \"frame_bound\": 2.795041326253594,\n      \"physical_energy\": \"7/24\",\n      \"energy_bound\": 51.815423105719134\n    }\n  ],\n  \"mixed_four_cycle\": {\n    \"electric_labels\": [\n      0,\n      6\n    ],\n    \"magnetic_labels\": [\n      0,\n      18\n    ],\n    \"width\": [\n      4,\n      1,\n      1,\n      1\n    ],\n    \"same_species_compatible\": true,\n    \"fill_cells\": [\n      [\n        [\n          0,\n          0,\n          0,\n          0\n        ],\n        [\n          0,\n          1\n        ]\n      ],\n      [\n        [\n          0,\n          0,\n          0,\n          1\n        ],\n        [\n          0,\n          1\n        ]\n      ],\n      [\n        [\n          0,\n          0,\n          0,\n          0\n        ],\n        [\n          0,\n          1\n        ]\n      ],\n      [\n        [\n          1,\n          0,\n          0,\n          0\n        ],\n        [\n          0,\n          1\n        ]\n      ]\n    ],\n    \"exact_P_entries\": [\n      \"3256681/4643045\",\n      \"-211582/4643045\",\n      \"496/3905\",\n      \"63/3905\"\n    ],\n    \"average_real\": -0.4564196014534977,\n    \"empty_term\": -0.3625533208193221,\n    \"cycle_term\": -0.09386628063417557\n  },\n  \"noninteger_N_periodicity_failure\": 1.2175228580174413,\n  \"uniform_reserve_upper_at_x2048\": 0.005187242215518125,\n  \"scope\": \"Author finite diagnostic; no complete gas sum, continuum limit, interval certification, or independent review.\"\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite cochain, signed phase, partition and derivative fixtures\nper_site: finite source-support configurations only\nper_mode: finite matrix/operator directions; no all-order or infinite-kernel execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 1.572134017944336,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/phase_energy_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/phase_energy_check_2026_09_15.json",
+    "sha256": "0af57c8b455f7890e6c74ce7c42994a17b9545c531a23ab5f156813b2e183693"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 34,
+    "peak_tree_rss_bytes": 118472704,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

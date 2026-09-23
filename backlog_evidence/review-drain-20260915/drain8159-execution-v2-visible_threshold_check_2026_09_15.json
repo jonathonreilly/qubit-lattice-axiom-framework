@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/visible_threshold_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"finite algebra; infinite support from written positivity proof\",\n  \"fixtures\": [\n    {\n      \"theta\": 0.4,\n      \"real_overlap\": 0.9473739960019236,\n      \"full_dimension\": 363,\n      \"binary_dimension\": 62,\n      \"embedding_metric_error\": 2.5757174171303632e-14,\n      \"full_operator_intertwiner_error\": 1.0557513393102307e-15,\n      \"source_error\": 0.0,\n      \"connected_binary_vertices\": 62,\n      \"finite_lowest_energy\": 4.035749524686862,\n      \"full_infinite_floor\": 3.0717967697244912,\n      \"finite_ground_source_weight\": 0.08040903587209135,\n      \"direct_tensor_overlap_error\": 1.5545807746064292e-15,\n      \"textures\": [\n        {\n          \"N\": 16,\n          \"exact_product_Rayleigh_excess\": 0.11294351261199437,\n          \"analytic_upper_bound\": 0.1312100571684724\n        },\n        {\n          \"N\": 64,\n          \"exact_product_Rayleigh_excess\": 0.009891441361072745,\n          \"analytic_upper_bound\": 0.014661517829645948\n        },\n        {\n          \"N\": 256,\n          \"exact_product_Rayleigh_excess\": 0.0010318794979359627,\n          \"analytic_upper_bound\": 0.0022351892232221\n        }\n      ]\n    },\n    {\n      \"theta\": 1.1,\n      \"real_overlap\": 0.6357307476170516,\n      \"full_dimension\": 363,\n      \"binary_dimension\": 62,\n      \"embedding_metric_error\": 3.1086244689504383e-15,\n      \"full_operator_intertwiner_error\": 8.881851831120113e-16,\n      \"source_error\": 0.0,\n      \"connected_binary_vertices\": 62,\n      \"finite_lowest_energy\": 4.25381786967316,\n      \"full_infinite_floor\": 3.0717967697244912,\n      \"finite_ground_source_weight\": 0.06360046848959061,\n      \"direct_tensor_overlap_error\": 2.4425721219856163e-15,\n      \"textures\": [\n        {\n          \"N\": 16,\n          \"exact_product_Rayleigh_excess\": 0.1614730871664906,\n          \"analytic_upper_bound\": 0.2953306756230678\n        },\n        {\n          \"N\": 64,\n          \"exact_product_Rayleigh_excess\": 0.022811382249538506,\n          \"analytic_upper_bound\": 0.0577495308662308\n        },\n        {\n          \"N\": 256,\n          \"exact_product_Rayleigh_excess\": 0.004308583390965577,\n          \"analytic_upper_bound\": 0.013121083897242815\n        }\n      ]\n    },\n    {\n      \"theta\": 2.0943951023931953,\n      \"real_overlap\": 1.08076172323985e-16,\n      \"full_dimension\": 363,\n      \"binary_dimension\": 62,\n      \"embedding_metric_error\": 3.9968028886505635e-15,\n      \"full_operator_intertwiner_error\": 4.965068306494546e-16,\n      \"source_error\": 0.0,\n      \"connected_binary_vertices\": 62,\n      \"finite_lowest_energy\": 4.748733439520666,\n      \"full_infinite_floor\": 3.0717967697244912,\n      \"finite_ground_source_weight\": 0.032855951495079874,\n      \"direct_tensor_overlap_error\": 1.7773793903104663e-15,\n      \"textures\": [\n        {\n          \"N\": 16,\n          \"exact_product_Rayleigh_excess\": 0.2829387339734204,\n          \"analytic_upper_bound\": 0.7083493619992582\n        },\n        {\n          \"N\": 64,\n          \"exact_product_Rayleigh_excess\": 0.055281946717238836,\n          \"analytic_upper_bound\": 0.16618291791109932\n        },\n        {\n          \"N\": 256,\n          \"exact_product_Rayleigh_excess\": 0.012551872672696179,\n          \"analytic_upper_bound\": 0.04051604475365313\n        }\n      ]\n    }\n  ],\n  \"runner_sha256\": \"32decf8bbe185badac69af2635218b17812d3fdaaea3fbbc845b0a63581d7993\"\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: same-source overlap and reducing-carrier identities\nper_site: finite word fixtures only\nper_mode: finite truncated threshold comparisons; no generic edge exponent\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.3077571392059326,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/visible_threshold_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/visible_threshold_check_2026_09_15.json",
+    "sha256": "bb50e37932c9dae88764338fb053b3b5ae02644225cfa710b8ab44464adb066c"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 7,
+    "peak_tree_rss_bytes": 110329856,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

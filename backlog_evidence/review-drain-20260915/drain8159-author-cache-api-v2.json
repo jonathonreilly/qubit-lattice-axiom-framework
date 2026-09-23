@@ -1,0 +1,1793 @@
+[
+  {
+    "primary": "scripts/local_spectrum_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/polarized_word_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [
+      "scripts/polarized_word_check_2026_09_15.py"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      },
+      {
+        "path": "scripts/polarized_word_check_2026_09_15.py",
+        "sha256": "0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+      },
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+      },
+      {
+        "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      },
+      {
+        "path": "scripts/polarized_word_check_2026_09_15.py",
+        "sha256": "0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+      },
+      {
+        "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+      }
+    ],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "50a12e38efc1c9ae1827158bc66b79c901aa38662624a09a68f22a853d26a615",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/quartet_metric_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9318215ebc71ad93aa9dbe8117f68122bfa3f6a3d2cc4967560d740d8ba2c6db"
+      },
+      {
+        "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9318215ebc71ad93aa9dbe8117f68122bfa3f6a3d2cc4967560d740d8ba2c6db"
+      },
+      {
+        "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "18fc13cf570d343b610a4ca876a23b2c58abfe3f19f4f0bff2cad6cc1c5f820a",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/ground_cutoff_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4"
+      },
+      {
+        "path": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4"
+      },
+      {
+        "path": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "50bf4930b24963bccac71db7a96da69036793cea6a558f04b04c61d0a7b7b9f7",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/quadratic_coframe_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "b2c0a111653f6a35fd783d5aa5d660836bcf298671eb4050ddb2987e0f158c03",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/decay_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8979b78cb9939242eefccc2dfc321a0ff8ea63c61b4da07590b2941a68d7a61c"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8979b78cb9939242eefccc2dfc321a0ff8ea63c61b4da07590b2941a68d7a61c"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "7b832c3406cefaf8c790cda399816db1c2dfefc3872fb7b54e06cc619db78723",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/mixed_history_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+      "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+      "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f"
+      },
+      {
+        "path": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6aa00d3bbba0927f92f1dbd4da52b83e0b15f21a5c03816c04bd7f4699f23392"
+      },
+      {
+        "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f"
+      },
+      {
+        "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c"
+      },
+      {
+        "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+      },
+      {
+        "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+        "sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0"
+      },
+      {
+        "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+        "sha256": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f"
+      },
+      {
+        "path": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6aa00d3bbba0927f92f1dbd4da52b83e0b15f21a5c03816c04bd7f4699f23392"
+      },
+      {
+        "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f"
+      },
+      {
+        "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c"
+      },
+      {
+        "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+      },
+      {
+        "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+        "sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0"
+      },
+      {
+        "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+        "sha256": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "f760e20baddf25883466c5d3e67c132dfbaf79213ef04efd43355e7802cc20a7",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f"
+      },
+      {
+        "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f"
+      },
+      {
+        "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "a0f0361826f76b87424fe20c5a2f10ffafd77ba8565f43ff7f5a95b61bbaf8f1",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/cyclic_scaling_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "scripts/cyclic_equilibrium_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/cyclic_equilibrium_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f"
+      },
+      {
+        "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba"
+      },
+      {
+        "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+      },
+      {
+        "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "2a6d5c79513cb92334e64d780d5b8490b6f4e9b781ad24adaafc33e1288d6851"
+      },
+      {
+        "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+      },
+      {
+        "path": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+        "sha256": "bcbcb17302e6cc9fcc6819831bf810b4060acb6aa0ad61b6149ee4014402fc6c"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f"
+      },
+      {
+        "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba"
+      },
+      {
+        "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+      },
+      {
+        "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "2a6d5c79513cb92334e64d780d5b8490b6f4e9b781ad24adaafc33e1288d6851"
+      },
+      {
+        "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+      },
+      {
+        "path": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+        "sha256": "bcbcb17302e6cc9fcc6819831bf810b4060acb6aa0ad61b6149ee4014402fc6c"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "b82354741b26dc957b1ac0fe5ba706e394939991e7bab7812ade3e39ab06578e",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/positive_generator_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+      },
+      {
+        "path": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cb90dfc9747c088b6a429699388c6d38462613095b8fc421bcb015d10accbbbd"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+      },
+      {
+        "path": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cb90dfc9747c088b6a429699388c6d38462613095b8fc421bcb015d10accbbbd"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "735f649bf47ea4c77cdc09bd004405f7c053de7bd05282015dadc0914ee585fb",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/charged_ring_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbbcbb346f725448b936df560904842eb6390b0751585d31616a2c63b2ca6b98"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbbcbb346f725448b936df560904842eb6390b0751585d31616a2c63b2ca6b98"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "1dfce0899065b747ed4b04cb17939eea2dbabbca108671aae5c5732645f7e8ab",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/hybrid_curvature_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "fd147129ffce1d34d256cd2358270b16a1d61065deccff44989b7ef91f8efbb5",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/hybrid_generator_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "fd147129ffce1d34d256cd2358270b16a1d61065deccff44989b7ef91f8efbb5",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/integrated_rate_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/hybrid_generator_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/hybrid_generator_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+      },
+      {
+        "path": "scripts/hybrid_generator_check_2026_09_15.py",
+        "sha256": "5d4e0f87d6d048c2e038dca2b85a8d1d2cf9592926cbcfe9ccad74e284f31cee"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+      },
+      {
+        "path": "scripts/hybrid_generator_check_2026_09_15.py",
+        "sha256": "5d4e0f87d6d048c2e038dca2b85a8d1d2cf9592926cbcfe9ccad74e284f31cee"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "3e6b6d7874452bd80961285cefd20020a5fd214c5b3991d07719dec9652b9fbb",
+    "cache_status": "fresh"
+  },
+  {
+    "primary": "scripts/holonomy_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "378a6591f66ec5d575f06ae286d4a2474a572e89936bd9e584bd66f07333594c",
+    "cache_status": "sha_mismatch"
+  },
+  {
+    "primary": "scripts/slow_fast_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "3ebb5f823f2dfa0884eec45812cb034f7839875abaff33e2c89aa4807efa2df6",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/physical_probe_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/slow_fast_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/slow_fast_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+      },
+      {
+        "path": "scripts/slow_fast_check_2026_09_15.py",
+        "sha256": "f6b6e5b0427b88edd4b08a1dc5253e4b068c26fba7e474821d06b97f5f1df88f"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+      },
+      {
+        "path": "scripts/slow_fast_check_2026_09_15.py",
+        "sha256": "f6b6e5b0427b88edd4b08a1dc5253e4b068c26fba7e474821d06b97f5f1df88f"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "fcb862d026ee1b400fe143c5afc6e9d802c48caf126024b5c18536ce6f1d1dfb",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/matched_cone_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+      },
+      {
+        "path": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "24dbc17e78cb932f240f6b0bdbec62663795b3cfccb1030a5ca8f1b7ff1cdfab"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+      },
+      {
+        "path": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "24dbc17e78cb932f240f6b0bdbec62663795b3cfccb1030a5ca8f1b7ff1cdfab"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "9119993d7baba6694211c18708263f608ebbbcf038622352bed2deaed0a3cf1e",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/response_identity_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7a460381594eb146002105566995fb328d827051ddaa4eed28936e202e81f72e"
+      },
+      {
+        "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7a460381594eb146002105566995fb328d827051ddaa4eed28936e202e81f72e"
+      },
+      {
+        "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "3b1805d20c53e78f79a7e5616b49582b9e08a660fae0073a895d0b6f4e20341b",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/visible_threshold_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      },
+      {
+        "path": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b55c574197329d931e39ced4cb34063ebe1438dcf654c7d049d76340d60e8c23"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      },
+      {
+        "path": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b55c574197329d931e39ced4cb34063ebe1438dcf654c7d049d76340d60e8c23"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "9aa4bf7662ffb861a95add6183e37d5c912fb467de0672898950e4a55d22dccd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/cofactor_cyclic_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/determinant_exclusion_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/determinant_exclusion_check_2026_09_15.py",
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "be1b409c883f93fd30525f498164846df557fe89e2180096ac02545fa53bc3e9",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/contact_register_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/cofactor_cyclic_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "scripts/determinant_exclusion_check_2026_09_15.py",
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "sha256": "6ca04bfd0d28da2a74b161688a954054bb7887defb9cc01b2d4bee61f7579111"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "sha256": "6ca04bfd0d28da2a74b161688a954054bb7887defb9cc01b2d4bee61f7579111"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "031460c0c94b92bb73546882cd2ada59b77566f1fe9522581a32aa44497cc6b9",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/cut_completion_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "6fbd9978003c74edd28ddbe2f744ed4f792373bd129bc1a4e20251d77275a9fd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/determinant_exclusion_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "6fbd9978003c74edd28ddbe2f744ed4f792373bd129bc1a4e20251d77275a9fd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/forest_interpolation_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "cef25be0c188ddcfff9d358e588185c41e1af5bafdd230b5918859c9e212ebbd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/gaussian_cycle_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "6fbd9978003c74edd28ddbe2f744ed4f792373bd129bc1a4e20251d77275a9fd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/graph_source_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "6fbd9978003c74edd28ddbe2f744ed4f792373bd129bc1a4e20251d77275a9fd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/hard_core_cycle_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/forest_interpolation_check_2026_09_15.py",
+      "scripts/gaussian_cycle_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/forest_interpolation_check_2026_09_15.py",
+      "scripts/gaussian_cycle_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      },
+      {
+        "path": "scripts/gaussian_cycle_check_2026_09_15.py",
+        "sha256": "1fb8088a9a72ef13cf1a7240f6a04d79c9149f2210649761b056a85a11a2f762"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      },
+      {
+        "path": "scripts/gaussian_cycle_check_2026_09_15.py",
+        "sha256": "1fb8088a9a72ef13cf1a7240f6a04d79c9149f2210649761b056a85a11a2f762"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "13c4093dd803ea84e7229d01d398d87e827c509ae1e9fe946f291a52ab435472",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/operator_source_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "cef25be0c188ddcfff9d358e588185c41e1af5bafdd230b5918859c9e212ebbd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/partition_exclusion_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "6fbd9978003c74edd28ddbe2f744ed4f792373bd129bc1a4e20251d77275a9fd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/phase_energy_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "cef25be0c188ddcfff9d358e588185c41e1af5bafdd230b5918859c9e212ebbd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/general_order_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "scripts/record_pair_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/record_pair_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008"
+      },
+      {
+        "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+      },
+      {
+        "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+      },
+      {
+        "path": "scripts/record_pair_check_2026_09_15.py",
+        "sha256": "5afaa1492afa3e2da5195776cb07a931cb41667e777edd1c34910175ef97ee76"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008"
+      },
+      {
+        "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+      },
+      {
+        "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+      },
+      {
+        "path": "scripts/record_pair_check_2026_09_15.py",
+        "sha256": "5afaa1492afa3e2da5195776cb07a931cb41667e777edd1c34910175ef97ee76"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "92df30cce046ad7e0325cea01a36f74df3fcba2e3f5907842ef7bb7b26453f26",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/record_pair_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008"
+      },
+      {
+        "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+      },
+      {
+        "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008"
+      },
+      {
+        "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+      },
+      {
+        "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "dcd39692de65509634f25b62de220ec8b5c7745f2d7a602184270ffb0bc220dd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "scripts/contact_register_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "scripts/contact_register_check_2026_09_15.py",
+      "scripts/determinant_exclusion_check_2026_09_15.py",
+      "scripts/forest_interpolation_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca"
+      },
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "sha256": "6ca04bfd0d28da2a74b161688a954054bb7887defb9cc01b2d4bee61f7579111"
+      },
+      {
+        "path": "scripts/contact_register_check_2026_09_15.py",
+        "sha256": "ea4cbe01dc77a3053e61072368b0ecc9f99f620a0c424982d68f8da272c232b8"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca"
+      },
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "sha256": "6ca04bfd0d28da2a74b161688a954054bb7887defb9cc01b2d4bee61f7579111"
+      },
+      {
+        "path": "scripts/contact_register_check_2026_09_15.py",
+        "sha256": "ea4cbe01dc77a3053e61072368b0ecc9f99f620a0c424982d68f8da272c232b8"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "718d34f4b99013694e79d5b33aea49bf8008b7c32e654946c0600a461def4b20",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/tree_count_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca"
+      },
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca"
+      },
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "329980e333727537d3f83fcd23725054c52f8db9c286c2f5cc65de4167c00efd",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/algebra_naturality_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "f4b9b4ee91f061bc20d59e0dfd41baebd6ee9dd57b29784477565a31d2a3e3d3",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/inverse_corner_support_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/algebra_naturality_check_2026_09_15.py"
+    ],
+    "packet_transitive_helpers": [
+      "scripts/algebra_naturality_check_2026_09_15.py"
+    ],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+      },
+      {
+        "path": "scripts/algebra_naturality_check_2026_09_15.py",
+        "sha256": "791ab9cbae504bc6d65bdef7e82b36a2b10592492240903bf65d6555799a3676"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+      },
+      {
+        "path": "scripts/algebra_naturality_check_2026_09_15.py",
+        "sha256": "791ab9cbae504bc6d65bdef7e82b36a2b10592492240903bf65d6555799a3676"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "25a2878d6013f21c1f3890cf97b6ed3645bf63672c5eaf8703c87ee748d69a26",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/positive_auxiliary_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "94f3be3f568d3391a56d35ec98bb3dc8a0cdf1de38c36ab50eaffca8b44d75e9"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "94f3be3f568d3391a56d35ec98bb3dc8a0cdf1de38c36ab50eaffca8b44d75e9"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "b17fe6ebba48322805c71e6dbf6d639ef77e2f062c694ec2ecf27a078c703c42",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/native_motion_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+      "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+      "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+      },
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5"
+      },
+      {
+        "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+      },
+      {
+        "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+      },
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5"
+      },
+      {
+        "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+      },
+      {
+        "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "4383329195e4a65d862cc9c5041fd72b7548b37f1a77460a56e56a1e0943da6c",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/native_twist_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "bfbbb45f3ec7ca59b0d32d9482f209d0da16098f1b4cafe39882d903077236e9"
+      },
+      {
+        "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+      },
+      {
+        "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "bfbbb45f3ec7ca59b0d32d9482f209d0da16098f1b4cafe39882d903077236e9"
+      },
+      {
+        "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+      },
+      {
+        "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "e15f7fef8426de5dd720305ec5b8ba2fbe1ee71b6b4120d1f9191fa5cd7f8e6b",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/polarized_word_check_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+      "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+      },
+      {
+        "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+      },
+      {
+        "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "01211d3f5530330538ef8537c9709ce88c5aa3f9818401e4043db53086d68478",
+    "cache_status": "missing"
+  },
+  {
+    "primary": "scripts/review_harmonic_metric_check_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "packet_transitive_helpers": [],
+    "selected_source_helpers": [],
+    "runtime_closure": [
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      }
+    ],
+    "conservative_selected_source_closure": [
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      }
+    ],
+    "not_executed_selected_helper_note_reads": [],
+    "closure_scope": "Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.",
+    "declared_input_fingerprint": "3ebb5f823f2dfa0884eec45812cb034f7839875abaff33e2c89aa4807efa2df6",
+    "cache_status": "missing"
+  }
+]

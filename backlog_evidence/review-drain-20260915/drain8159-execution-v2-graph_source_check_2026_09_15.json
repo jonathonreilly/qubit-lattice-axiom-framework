@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/graph_source_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_graph_source_checks_passed\",\n  \"patterns\": {\n    \"connected_bond_state_patterns\": 624,\n    \"parity_matched_remainder_patterns\": 23556,\n    \"maximum_augmented_edges\": 28,\n    \"minimum_spatial_one_minus_alpha\": 0.00033333333333340764,\n    \"minimum_actual_source_power\": 3.928571428571429,\n    \"unmarked_bridge_negative_control\": true\n  },\n  \"finite_group_holder\": [\n    {\n      \"group_order\": 5,\n      \"graph_edges\": 10,\n      \"actual\": 0.9070277462346402,\n      \"bound\": 5.763564351048295\n    },\n    {\n      \"group_order\": 5,\n      \"graph_edges\": 10,\n      \"actual\": 0.22338057774508885,\n      \"bound\": 1.5616776644096708\n    },\n    {\n      \"group_order\": 5,\n      \"graph_edges\": 10,\n      \"actual\": 1.8627686893485502,\n      \"bound\": 8.252718883398817\n    }\n  ],\n  \"physical_bond_source_identities\": [\n    {\n      \"case\": \"compatible\",\n      \"subtracted_real\": \"0.0000086022765984591953686233032991853372109424952690889979218819\",\n      \"subtracted_imag\": \"0.0000178682225172177665154516992304211506419863939720768866712081\",\n      \"parity_expansion_error\": \"1.5943287432287185219378889765419914704306309299472034900353e-60\"\n    },\n    {\n      \"case\": \"electric_overlap\",\n      \"subtracted_real\": \"0.000172664755985437844854132520266320929861121794790933051001801\",\n      \"subtracted_imag\": \"0.000353142809648120766369524230961694343966914824747022729686723\",\n      \"parity_expansion_error\": \"3.85188592194234153525292580876315531805230783408772528090549e-62\"\n    },\n    {\n      \"case\": \"double_overlap\",\n      \"subtracted_real\": \"0.000130851247670164780134896683767787774148779677779512133665638\",\n      \"subtracted_imag\": \"0.00026644385178873583775136242152538997118588936444494358389831\",\n      \"parity_expansion_error\": \"4.14357505564478046797668574138756436199195840655331412778351e-62\"\n    }\n  ],\n  \"scope\": \"Exhaustive four-label parity bookkeeping, finite tree mixtures and source identities. No infinite-volume numerical limit, all-order coefficient bound, interval arithmetic or independent review.\"\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite cochain, signed phase, partition and derivative fixtures\nper_site: finite source-support configurations only\nper_mode: finite matrix/operator directions; no all-order or infinite-kernel execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 2.8346340656280518,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/graph_source_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/graph_source_check_2026_09_15.json",
+    "sha256": "f551d6c6a01ae455419ef5555184ea752719d3afe0b3ba826bfc9f075d02fc56"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 60,
+    "peak_tree_rss_bytes": 95420416,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

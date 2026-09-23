@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/hard_core_cycle_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_author_checks_passed\",\n  \"independent_review\": false,\n  \"exclusion\": {\n    \"words\": 9330,\n    \"maximum_error\": 1.1102230246251565e-16,\n    \"projector_overlap_wrong_value\": 1.9999999999999996,\n    \"missing_boost_single_wrong_value\": 0.4999999999999999,\n    \"auxiliary_groups\": 4\n  },\n  \"generic_source_cycle\": {\n    \"length\": 4,\n    \"source_patterns\": 35,\n    \"groups\": 4,\n    \"auxiliary_dimension\": 16,\n    \"rho\": 0.14241027894225602,\n    \"source_bound\": 0.01294795249972012,\n    \"maximum_operator_vs_exclusion_error\": 4.092663644423101e-23,\n    \"maximum_source_bound_ratio\": 8.509173167871135e-06\n  },\n  \"six_cycle\": {\n    \"length\": 6,\n    \"source_patterns\": 5,\n    \"groups\": 6,\n    \"auxiliary_dimension\": 64,\n    \"rho\": 0.17702974524260576,\n    \"source_bound\": 0.0009717085503500432,\n    \"maximum_operator_vs_exclusion_error\": 1.2626364062055999e-23,\n    \"maximum_source_bound_ratio\": 3.080918936513304e-05\n  },\n  \"cochain_footprints\": {\n    \"support_pairs\": 12168,\n    \"footprint_bound\": \"size <= 3 l1-current mass\",\n    \"finite_free_fixture_scope\": \"incidence identity only; no finite-boundary scaling assertion\",\n    \"actual_cycle\": {\n      \"length\": 4,\n      \"source_patterns\": 35,\n      \"groups\": 4,\n      \"auxiliary_dimension\": 16,\n      \"rho\": 19.123973887089992,\n      \"source_bound\": 0.4099212788416939,\n      \"maximum_operator_vs_exclusion_error\": 6.772541265277914e-24,\n      \"maximum_source_bound_ratio\": 7.745344337852724e-09\n    }\n  },\n  \"fixed_parameter_bound\": {\n    \"endpoint_x\": \"32768.0\",\n    \"operator_norm_upper\": \"3.8614003908013783908095257910050408997306835666725125389464e-33\",\n    \"example_beta\": 1024,\n    \"example_N\": 8192,\n    \"scope\": \"sufficient restricted loop bound, not a phase window\"\n  }\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite cochain, signed phase, partition and derivative fixtures\nper_site: finite source-support configurations only\nper_mode: finite matrix/operator directions; no all-order or infinite-kernel execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.5171198844909668,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/hard_core_cycle_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/hard_core_cycle_check_2026_09_15.json",
+    "sha256": "c4f4f0612dad6b51316fdcea60f8430b3ee14f7ffd1537c34af1f442dca55bdc"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 13,
+    "peak_tree_rss_bytes": 184696832,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

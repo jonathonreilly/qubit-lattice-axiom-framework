@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/cofactor_cyclic_check_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"finite_author_checks_passed\",\n  \"independent_review\": false,\n  \"cofactor_order_cases\": 1920,\n  \"maximum_identity_error\": 3.0531133177191805e-16,\n  \"omitted_local_sign_failure\": 0.40907930099128836,\n  \"false_one_sided_commutation_gap\": 7.6850426358840735,\n  \"source_checks\": [\n    {\n      \"assigned_entries\": 1,\n      \"source_distributions\": 35,\n      \"maximum_absolute_value\": 8.771177209762683e-06,\n      \"bound\": 0.007875446839688896,\n      \"maximum_ratio\": 0.0011137370854387193,\n      \"rotation_error\": 6.548261831076961e-22\n    },\n    {\n      \"assigned_entries\": 2,\n      \"source_distributions\": 35,\n      \"maximum_absolute_value\": 1.0546080643951765e-06,\n      \"bound\": 0.003937723419844448,\n      \"maximum_ratio\": 0.00026782177211339965,\n      \"rotation_error\": 1.4254412556366483e-22\n    },\n    {\n      \"assigned_entries\": 2,\n      \"source_distributions\": 35,\n      \"maximum_absolute_value\": 1.2249365427528834e-05,\n      \"bound\": 0.003937723419844448,\n      \"maximum_ratio\": 0.0031107734397487776,\n      \"rotation_error\": 2.2770165388072663e-22\n    },\n    {\n      \"assigned_entries\": 3,\n      \"source_distributions\": 35,\n      \"maximum_absolute_value\": 6.123198023595829e-05,\n      \"bound\": 0.001968861709922224,\n      \"maximum_ratio\": 0.031100193541971587,\n      \"rotation_error\": 9.470116246213047e-22\n    }\n  ],\n  \"limitations\": [\n    \"fixed oriented resource assignments only\",\n    \"generic finite matrices rather than physical lattice law\",\n    \"shared CAR construction\",\n    \"no sum over lattice resource assignments or branching graphs\"\n  ]\n}\nTOTAL: PASS=1 FAIL=0\nCompleted family: complete finite companion program; individual checks and diagnostics remain in structured JSON\nper_element: finite cochain, signed phase, partition and derivative fixtures\nper_site: finite source-support configurations only\nper_mode: finite matrix/operator directions; no all-order or infinite-kernel execution\nper_block: one complete companion family; imported helpers are shared implementation, not independent evidence\nlattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here\n",
+  "stderr": "",
+  "elapsed_sec": 0.42940783500671387,
+  "timeout_sec": 300,
+  "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/cofactor_cyclic_check_2026_09_15.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/cofactor_cyclic_check_2026_09_15.json",
+    "sha256": "b4994afbe319717ab482292ae8d1bceb974888a911f7cbfb17a63070380aee84"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 1073741824,
+    "interval_sec": 0.02,
+    "root_pid": 88240,
+    "samples": 10,
+    "peak_tree_rss_bytes": 126287872,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+  "capture_script_sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+}

@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8159",
+  "tree": "4ba6ac5af198073fcac0168d3795ed018139ad32",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/hybrid_generator_check_2026_09_15.py",
+      "helpers": [
+        "scripts/hybrid_curvature_check_2026_09_15.py",
+        "scripts/integrated_rate_check_2026_09_15.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/phase_energy_check_2026_09_15.py",
+      "helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/cut_completion_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/gaussian_cycle_check_2026_09_15.py",
+        "scripts/graph_source_check_2026_09_15.py",
+        "scripts/hard_core_cycle_check_2026_09_15.py",
+        "scripts/operator_source_check_2026_09_15.py",
+        "scripts/partition_exclusion_check_2026_09_15.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/record_pair_check_2026_09_15.py",
+      "helpers": [
+        "scripts/general_order_check_2026_09_15.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+      "helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/tree_count_check_2026_09_15.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/algebra_naturality_check_2026_09_15.py",
+      "helpers": [
+        "scripts/inverse_corner_support_check_2026_09_15.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "positive_auxiliary_current_law_and_regulator_witness_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/positive_auxiliary_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "native_charge_motion_and_spectral_weight_bounds_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/native_motion_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_native_winding_curvature_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/native_twist_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "polarized_word_carrier_and_essential_threshold_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/polarized_word_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/local_spectrum_check_2026_09_15.py",
+      "helpers": [
+        "scripts/polarized_word_check_2026_09_15.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_quartet_linear_metric_flow_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/quartet_metric_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "fixed_coupling_rotor_ground_cutoff_compactness_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/ground_cutoff_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_quartet_quadratic_backreaction_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_quartet_leading_decay_bounds_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/decay_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "native_mixed_sixth_order_coefficient_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/mixed_history_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "cyclic_equilibrium_and_integer_gauss_limit_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+      "helpers": [
+        "scripts/cyclic_equilibrium_check_2026_09_15.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/cyclic_equilibrium_check_2026_09_15.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/cyclic_equilibrium_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "positive_electric_generator_cone_bounds_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/positive_generator_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "charged_ring_slow_spectrum_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/charged_ring_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "free_weyl_holonomy_minimization_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/holonomy_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/slow_fast_check_2026_09_15.py",
+      "helpers": [
+        "scripts/review_harmonic_metric_check_2026_09_15.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/physical_probe_check_2026_09_15.py",
+      "helpers": [
+        "scripts/slow_fast_check_2026_09_15.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/slow_fast_check_2026_09_15.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/slow_fast_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_matched_free_cone_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/matched_cone_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "exact_gauge_ward_response_identities_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/response_identity_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    },
+    {
+      "path": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/visible_threshold_check_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8797,
+      "misses": 4509
+    },
+    "packet_imports": {
+      "hits": 8757,
+      "misses": 4507
+    },
+    "declared_inputs": {
+      "hits": 8844,
+      "misses": 4659
+    }
+  },
+  "record_sha256": "26bee4a8957a77818c6a3b42759c9e7935a36c62c434ee6837aac2ceb2e3457d",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

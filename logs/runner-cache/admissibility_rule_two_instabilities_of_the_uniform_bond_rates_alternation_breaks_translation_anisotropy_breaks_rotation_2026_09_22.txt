@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_two_instabilities_of_the_uniform_bond_rates_alternation_breaks_translation_anisotropy_breaks_rotation_2026_09_22.py
 runner_sha256: b4fb17d3b156eb99346f146e933eeaf50680433f8c4d5779b918bd1bf940a1e2
-input_fingerprint_sha256: d05a3ffda5614ec306893e59574e4593b4b16e2458ddd9a78625b6182b824e7e
+input_fingerprint_sha256: c2fe5d08f63a81a2696d53ab525915be11077c34630077c338549234a2be2405
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

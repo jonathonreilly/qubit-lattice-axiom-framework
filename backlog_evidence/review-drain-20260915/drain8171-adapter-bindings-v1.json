@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-author-prepared-v2.json",
+    "sha256": "70b6331cf48a0da2b64ff88a8f4279758fa48ef8e299b6b3d48ff469f79f75d5"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-author-handoff-v2.json",
+    "sha256": "0d10265a2831d7a8b04bed9068cce29b59ca2d7ea6b10463127cb0523616f491"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-author-dispositions-v1.json",
+    "sha256": "f648a2f9ccc78dbab982be3853c986ac5ddf34e08a2e623d7439a3f91c534c80"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-source-input-discovery-v2.json",
+    "sha256": "38103e9bf7c1b25d0645f517b06fd0ff29cab51f3bc5c1bd677b0010d6aa0aea"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-resource-plan-v2.json",
+    "sha256": "7ac5e32c604a0fa248fa9f6f6efeadd0c6cf076b4204f2bda218cd528e408350"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-disposition-original.json",
+    "sha256": "605be9fe8a2a8c81f999144371bdb9b73008dd6c0169b4dbd95d9488293d0658"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-review-original.json",
+    "sha256": "4bccd0d13a9ee51daca545fbdfeca8acd72126d1896cad6312aa3fb80599bf0a"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-review-original.md",
+    "sha256": "b7cfdf78c9c31453eec2b80e79262b469ae713e1dc82d2b77be48501959bd86a"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-early-review-v2.json",
+    "sha256": "5da6fcfb236143f5a01623be0ec909d7dd4b1fde666b77e8c2c37debd1fd6995"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-early-review-v2.md",
+    "sha256": "322321ab0d0341498bf8f49b9a859080da237bd2590461ff30fabe225ff8ff22"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8171-preparation-discovery-failures-v1.json",
+    "sha256": "5cf4b23dabbb417fa915ba3741b4f431dfb2dce6c155ccf7cd893498c309867a"
+  }
+]

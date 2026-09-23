@@ -1,0 +1,14 @@
+{
+  "quadratic_form_energy": 3.0,
+  "expected_eigenvalue": 3,
+  "variance_beta2_per_component": 0.16666666666666666,
+  "vector_variance_two_components": 0.3333333333333333,
+  "instantaneous_frame_zero_mode_norm_squared": 3.697785493223493e-32,
+  "parseval_error": 8.881784197001252e-16,
+  "reported_combinations": 11,
+  "reported_n_ge_2_min": 0.861,
+  "reported_n_ge_2_max": 1.013,
+  "finite_volume_uniform_susceptibility": 0.3333333333333333,
+  "ward_correct_equation": "N E[m3] = beta h N^2 E[m1^2]",
+  "limits": "one deterministic Python standard-library run; 3^3 toy quadratic and DFT checks; no sampler/primary execution, no uncertainty inference"
+}

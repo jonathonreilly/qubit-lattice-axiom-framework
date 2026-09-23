@@ -1,0 +1,959 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..a79441db2e 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,6 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++| F29.1 the spin-wave reference | plane waves diagonalize the torus Laplacian; Gaussian modes | `βE(k)⟨|θ̂(k)|²⟩ = 1` | `c → 1` for the sphere law as a theorem | exact | candidate-complete | T1 (B1–B2) | — |
++| F29.2 the transverse sum rule in a field | integration by parts on the sphere; the bond terms cancel | `βh·N⟨(m̂¹)²⟩ = ⟨m̂³⟩` on any finite torus | — | exact | candidate-complete | T2 (C1–C2) | — |
++| F29.3 the normalization measured | the structure factor by FFT in the instantaneous frame; three lattices, five couplings | `c(β, k)` at `0.86`–`1.01` for `n ≥ 2` | the longest mode; a theorem | numerical | frontier discovery | specs (control, refuter) | a value outside `[(m²/3)², 1]` beyond the scatter |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block29_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block29_findings.md
+new file mode 100644
+index 0000000000..7d4f6b6e07
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block29_findings.md
+@@ -0,0 +1,13 @@
++# Refuting pass — block 29 (supervisor-run, disjoint machinery; 2026-09-16)
++
++Routes compared (controls `specs/supervisor_control_block29_exact.py`, `specs/supervisor_control_block29_kernel.py`; refuting pass `specs/supervisor_control_block29_refuter.py`; outputs in `.out.txt`):
++
++| item | control's route | refuting route | result |
++|---|---|---|---|
++| the normalization `c(β, k)` | the transverse structure factor by FFT in the instantaneous frame, `k` along an axis, three lattices, five couplings | the real-space transverse correlation `T(r)` against the torus Green function `G_L(r)` computed by FFT: `c = βT(r)/G_L(r)` for `r = 1 … 4` on `16³` | `0.91, 0.91, 0.91, 0.94` at `β = 1`; `0.96, 0.96, 0.97, 1.00` at `1.5`; `0.96, 0.95, 0.94, 0.91` at `2` — the same constant as the structure factor's modes `n ≥ 2` |
++| the sampler | heat bath with the exact conditional | single-site proposals accepted with the weight ratio, `β = 1.5`, `16³` | `c = 0.80, 1.08, 0.94, 0.94, 1.01, 0.99` for `n = 1 … 6`: agrees within the scatter |
++| the sum rule (T2) | the one-site instance symbolically; the generator's action; the vanishing surface integral | the field runs at `β = 1.5`, `16³`, `h = 0.05, 0.1, 0.2`, `2000` measured sweeps | `βh·N⟨(m̂¹)²⟩ = 1.01, 0.71, 0.96` against `⟨m̂³⟩ = 0.82, 0.83, 0.84`: the exact identity is met within the scatter of the slowest mode (about `±20 %` at this run length), which the finite-size and autocorrelation of the `k = 0` transverse mode explain; not a finding against T2 |
++| the spin-wave reference (T1) | the eigenvalues and the ring modes symbolically | the measured `c` at the largest coupling (`0.97` at `β = 3`) approaching `1` from below | consistent with `1` as the large-`β` limit |
++| the placement against block 19's bounds | `(m²/3)²` from the measured `m` | — | the lower bound is `12` (at `β = 3`) to `110` (at `β = 0.8`) times below the measured `c`; the upper bound `1` is above every mode `n ≥ 2` except within the scatter |
++
++Findings: none against the theorems. One scan finding folded: the identity's author's name appeared in the theorem sections and was replaced by "the mode sum". Attempts to refute (nothing refuted): whether the instantaneous frame biases the structure factor (a rigid rotation leaves `k ≠ 0` modes unchanged; the real-space estimator agrees); whether the aligned start biases `c` (the single-site chain from the same start agrees; block 28's random-start runs order at these couplings); whether the sum rule's scatter hides a violation (three fields straddle the exact value on both sides). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard for T1–T3; the normalization is measured, not proved, and is labelled so; pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block29.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block29.md
+new file mode 100644
+index 0000000000..c29cc81469
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block29.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 29 (close, 2026-09-16)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: frontier_discovery
++reachability_to_target: supports
++conditional_surface_status: "T1-T3 proved as stated: beta E(k) <|theta_hat(k)|^2> = 1 for the quadratic transverse model; beta h N <(m^1)^2> = <m^3> for the sphere static law in a field on any finite torus; the mode-sum identity. Measured, not proved: c(beta, k) = beta E(k) S_perp(k) at 0.86-1.01 for the modes n >= 2 on 16^3, 24^3, 32^3 at beta = 0.8-3, rising toward 1; the lower bound (m^2/3)^2 ten to a hundred times below. Conditional on the records-only reading, positivity, the sphere menu and the static reading as supplied conditions; two standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "the plane-wave diagonalisation of the torus Laplacian and Gaussian mode variances; integration by parts on the sphere with the bond terms cancelling; the unitarity of the discrete Fourier transform; the normalization is a simulation measurement labelled as such"
++dependency_classes: "one premise node (minimal_axioms); block 01 (on main; proposed, unaudited); blocks 19, 22 (open PRs) as evidence addresses for the bounds and the threshold the measurement is placed against; blocks 18, 21, 28 (open PRs) for the menu, the uniqueness region and the located strength"
++open_imports: "the records-only reading; positivity; the sphere menu; the static reading; the two standard mathematical imports"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): controls (exact identities; the structure-factor measurement on three lattices), contract with a lens pass, primary, refuting pass by the real-space estimator against the torus Green function, a single-site chain and the sum rule in a field, fold (a name folded out of the theorem sections)"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block29.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block29.md
+new file mode 100644
+index 0000000000..afb19aeb1c
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block29.md
+@@ -0,0 +1,15 @@
++# GOAL — block 29: the normalization of the transverse kernel in the ordered sphere static law — measured between block 19's bounds, with the transverse sum rule and the spin-wave reference as exact anchors (2026-09-16)
++
++**Directive.** Owner 2026-09-16: keep running the campaign twelve more hours. Blocks 19–23 placed the gravity node's Green-function kernel in the transverse channel of the ordered sphere static law: for `β > 76/100` the transverse structure factor obeys `(M²/3)²/(βE(k)) ≤ ⟨|ŝ¹(k)|²⟩ ≤ 1/(βE(k))` (block 19's G5 with block 22's threshold), a window of a factor nine or more in the normalization. The queue's item "the kernel's normalization on `Z³`" is hard as a theorem; it is cheap to measure. The map (block 28) puts the sphere static law's strength at `β ∈ (0.66, 0.72)`, so `β = 0.8, 1, 1.5, 2, 3` are in the ordered regime.
++
++**Exact target (claim type `bounded_theorem`; trace class `frontier_discovery` for the measured normalization).**
++- T1 (the spin-wave reference): for the quadratic transverse model on the periodic `L³` lattice, `H = (β/2) Σ_{bonds} |θ_x − θ_y|²` with `θ ∈ R²`, the structure factor is exactly `⟨|θ̂(k)|²⟩ = 1/(βE(k))` per component for `k ≠ 0`, `E(k) = 2Σ_j(1 − cos k_j)`, and the real-space correlation is `G_L(r)/β` with `G_L` the torus Green function; so `βE(k)⟨|θ̂(k)|²⟩ = 1` is the spin-wave value of the normalization.
++- T2 (the transverse sum rule in a field): for the sphere static law on any finite torus with a field `h > 0` along `e_3`, `βh · N⟨(m̂¹)²⟩ = ⟨m̂³⟩` exactly (`m̂ = N^{−1}Σ_x s_x`), by integration by parts on the sphere; hence the transverse response at `k = 0` is `⟨m̂³⟩/(βh)`, unbounded as `h → 0` whenever the magnetization persists: the kernel's soft mode at `k = 0`.
++- T3 (Parseval): `N^{−1}Σ_{k} ⟨|ŝ^⊥(k)|²⟩ = ⟨|s_x^⊥|²⟩` per component, so the transverse structure factor's average is fixed by the local transverse moment `(1 − ⟨(s·û)²⟩)/2`; with block 19's upper bound this is block 19's sum rule.
++- Executed, not proved: the normalization `c(β, k) := βE(k) S_⊥(k)` measured on `16³`, `24³`, `32³` at `β = 0.8, 1, 1.5, 2, 3` for `k` along an axis, against the bounds `(m²/3)²` and `1` and the spin-wave value `1`; the real-space transverse correlation against `G(r)/β`.
++
++**Falsifiers.** A structure factor of the quadratic model other than `1/(βE(k))`; a sum-rule violation on the single-site instance or on random configurations; a measured `c(β, k)` outside `[(m²/3)², 1]` beyond its statistical error.
++
++**Lens pass.** *"Spin-wave theory is textbook."* Yes; it is the reference, named as such, and the measured `c` is the content. *"The bounds are from open PRs."* Cited as evidence addresses and re-quoted; nothing here depends on them as premises — the measurement stands alone. *"Why does the gravity lane care?"* The kernel's normalization is the number that lane would need if the transverse channel were its source; this note gives it as a measured function of `β` with the exact soft-mode anchor at `k = 0`.
++
++**Forbidden phrases:** the standing list plus "Goldstone", "spontaneous symmetry breaking", "converge", "critical", "certified".
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..3e6f98e945 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,12 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-16 block 29 opened for review (supervisor; twelve-hour continuation)
++Independent PR against `main` (`6dda46fc1a`); parent on `main`: block 01. Block 29 = the transverse kernel's normalization in the ordered sphere static law: exact anchors T1 (`βE(k)⟨|θ̂(k)|²⟩ = 1` for the quadratic transverse model — the spin-wave value), T2 (the transverse sum rule in a field `βh·N⟨(m̂¹)²⟩ = ⟨m̂³⟩` on any finite torus, the `k = 0` end of the kernel), T3 (the mode sum); measured: `c(β, k) = βE(k)S_⊥(k)` at `0.86`–`1.01` for the modes `n ≥ 2` on `16³`, `24³`, `32³` at `β = 0.8, 1, 1.5, 2, 3` (averages `0.91`, `0.94`, `0.97`), rising toward `1`; block 19's lower bound `(m²/3)²` is `10`–`100` times below, its upper bound is the kernel up to a tenth. Runner 14 checks, 7 mutations in-family, exact. Refuting pass: the real-space estimator against the torus Green function (same constant), a single-site chain, the sum rule in a field (met within the slowest mode's scatter). Gates: pipeline ×2, changed-evidence, `audit_lint --strict`, `git diff --check`, vocabulary lint clean. Next: the queue refresh at block 29 opening.
++
++## 2026-09-16 block 29 opened for review as PR #8173 (supervisor)
++PR #8173 (base `main`, independent). Records: `RESULTS_block29.md`, `CHECKER_block29_findings.md`, `CLAIM_STATUS_CERTIFICATE_block29.md`, `GOAL_block29.md`; specs with outputs.
++
++## 2026-09-16 twelve-hour continuation — checkpoint at the value gate (supervisor)
++Owner directive (2026-09-16, ~09:50): "keep running the campaign for 12 more hours." Taken in order: block 25 sharpened on its open PR (#8168: threshold `1/(2·96⁴) → 7/10⁶`, `p_0` `339738628 → 285718`); block 26 (#8170: the sphere formation law in level time — exact gain-one theory with the local-limit constant, finite planes forget, the executed algebraic loss of the initial plane's memory against the six-axis law keeping it); block 27 (#8171: the sphere formation law's weak-coupling ergodicity below `1/√3`, completing the four-way uniqueness table); block 28 (#8172: the map of memory — six-axis static `p ∈ (3.6, 3.7)`, six-axis formation `p ∈ (10.5, 11)` at `(p, 1, 2)`, sphere static `β ∈ (0.66, 0.72)`, sphere formation never — with the healing and influence bounds); block 29 (#8173: the transverse kernel's normalization measured at `0.9`–`1.0` of the infrared bound with the sum rule as the `k = 0` anchor). Refuted on the way and recorded: the arrows-point-down lemma (block 25's N1), the twist route in level time (block 26's N1, NO_GO_LEDGER), the arrow-budget item (queue), the naive coupling (block 27's registry). The queue at this checkpoint holds only items without a route (see OPPORTUNITY_QUEUE at block 29 opening); per the campaign rule against filling the budget with implied results, the continuation stops here at the value gate with about five hours of the window unused. Open PRs from the campaign: blocks 12–29 (#8146–#8158, #8168, #8170–#8173), none merged, none commented; the review loop is the owner's.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..488c355e99 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,13 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 29 opening (2026-09-16)
++
++Block 29 opened for review (independent PR against main): the transverse kernel's normalization measured at `0.9`–`1.0` of the infrared bound (rising toward the spin-wave value `1`), with the `k = 0` end fixed exactly by the sum rule `⟨m̂³⟩/(βh)`. The twelve-hour continuation has now taken every item of the queue that had a route or a decisive artifact (blocks 25 sharpened, 26, 27, 28, 29). Remaining, all hard with no route in hand:
++
++1. **The six-axis order threshold toward the located strength** (`285718` proved against `11` located at `(p, 1, 2)`) — a renormalized contour argument; the domination lemma is the obstacle.
++2. **A proof of the loss of memory at strong coupling for the sphere formation law** — the twist argument fails in level time; a dynamical route through the exact one-step identities is untried in depth.
++3. **Spin-wave theory as a theorem** for the sphere static law (`c(β, k) → 1` as `β → ∞` at fixed `k`) — a low-temperature expansion with control of the nonlinearity.
++4. **The six-axis memory time on a torus** — needs a disjoint-trees step.
++5. **The band, the normalization as a theorem, X4** — hard; unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block29.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block29.md
+new file mode 100644
+index 0000000000..e385da4308
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block29.md
+@@ -0,0 +1,17 @@
++# RESULTS — block 29: the transverse kernel's normalization in the ordered sphere static law — measured between the bounds, with the transverse sum rule and the spin-wave reference (2026-09-16)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916`, independent PR against `main` at `6dda46fc1a`; parent on `main`: block 01):** the note `docs/ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md`; the runner `scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py` (14 checks, 7 mutations, exact, under a second); the pinned cache; the controls (`specs/supervisor_control_block29_exact.py`, `specs/supervisor_control_block29_kernel.py`) and the refuting pass (`specs/supervisor_control_block29_refuter.py`) with outputs; `GOAL_block29.md`; `CHECKER_block29_findings.md`; this record. Blocks 06–28 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8158, #8168, #8170–#8172.
++
++**Why this block.** The twelve-hour continuation after block 28: the queue's remaining items were hard as theorems; "the kernel's normalization on `Z³`" — the number that blocks 19–23 left between `(M²/3)²/(βE(k))` and `1/(βE(k))` — is cheap to measure and has two exact anchors (the spin-wave value and the `k = 0` sum rule).
++
++## Result, in one paragraph
++Exact: for the quadratic transverse model on the torus, `βE(k)⟨|θ̂(k)|²⟩ = 1` for every `k ≠ 0` — the spin-wave value of the normalization (T1); for the sphere static law with a field `h` along `e_3` on any finite torus, `βh·N⟨(m̂¹)²⟩ = ⟨m̂³⟩` by integration by parts on the sphere, so the `k = 0` transverse response is `⟨m̂³⟩/(βh)` (T2); the mode sum ties the structure factor's average to the local transverse moment (T3). Measured, not proved: the normalization `c(β, k) = βE(k)S_⊥(k)` on `16³`, `24³`, `32³` at `β = 0.8, 1, 1.5, 2, 3` for `k` along an axis lies at `0.86`–`1.01` for the modes `n ≥ 2` (averages about `0.91` at `β = 0.8`–`1`, `0.94` at `1.5`–`2`, `0.97` at `3`), the longest mode scattering more (`0.65`–`1.05`); the lower bound `(m²/3)²` is `0.008`–`0.08`. **The infrared bound is the kernel up to about a tenth; the lower bound is loose by a factor ten to a hundred; the spin-wave value is approached from below as `β` grows.** The real-space transverse correlation gives the same constant against the torus Green function; a second chain agrees; the sum rule in a field is met within the large scatter of the slowest mode.
++
++## Certificate
++- Runner: `TOTAL: PASS=14 FAIL=0`; 7 mutations each in its family; no floating-point literal or conversion; authors' names only in the allowed sections.
++- Control: the plane-wave eigenvalues on `4³` and the ring modes symbolically; the one-site sum rule and the mode sum exactly; the measurement on three lattices at five couplings (structure factor by FFT in the instantaneous transverse frame; real-space correlation along an axis).
++- Refuting pass (`CHECKER_block29_findings.md`): the constant from the real-space correlation against the torus Green function computed by FFT (`0.91` at `β = 1`, `0.96`–`1.00` at `1.5`, `0.91`–`0.96` at `2`); a single-site proposal chain (`0.80, 1.08, 0.94, 0.94, 1.01, 0.99` for `n = 1 … 6` at `β = 1.5`); the sum rule in a field (`1.01, 0.71, 0.96` against `0.82, 0.83, 0.84` at `h = 0.05, 0.1, 0.2`: the slowest mode's scatter). One name folded out of the theorem sections at the scan.
++- Claim type `bounded_theorem` (T1–T3); trace class `frontier_discovery` (the measurement); status `bounded-support`; audit required.
++
++## Not claimed
++`c(β) → 1` as `β → ∞` as a theorem; the longest mode's finite-size behaviour; whether the gravity lane should use this channel; any reading, menu, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..eb059916ad 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 29 — V1-V5 (supervisor, 2026-09-16)
++- V1: the queue's item "the kernel's normalization on Z^3" (blocks 19–23 left a factor-nine window); cheap to measure with two exact anchors.
++- V2: the lens pass in `GOAL_block29.md` ("spin-wave theory is textbook" — named as the reference, proved for the quadratic model; "the bounds are from open PRs" — evidence addresses, re-quoted, the measurement stands alone; "why the gravity lane cares" — the number with its `k = 0` anchor; names in the allowed sections — one folded at the scan).
++- V3: T1–T3 proved; the skeleton executed exactly (14 checks, 7 mutations); the refuting pass agreed on five routes.
++- V4: no reading, menu, rule or coupling selected; `c → 1` not claimed as a theorem; the longest mode's behaviour not claimed.
++- V5: consumers named — the gravity lane's kernel question (blocks 19–23); the campaign's decision record; the queue.
++
++## block 29 — supervisor controls, primary, refuting pass and fold (2026-09-16)
++Controls: the measurement (`supervisor_control_block29_kernel.py`) on `16³`, `24³`, `32³` at five couplings; the exact control (the plane-wave eigenvalues, the one-site sum rule, the mode sum). Primary: the note and the runner (14 checks, 7 mutations; the identity's author's name folded out of the theorem sections at the scan). Refuting pass (`CHECKER_block29_findings.md`): the real-space estimator against the torus Green function, a single-site chain, the sum rule in a field — consistent; the slowest mode's scatter noted. Author checks only; independent review pending.
++
++## block 29 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-16)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note, all on `main` at `6dda46fc1a`; the sphere law and the static reading declared in the note; the bounds re-quoted as evidence addresses. 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the normalization marked measured; the theorems as stated; the reference values named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..3e289ca5ee 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,13 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++# ---------------------------------------------------------------- block 29 close (2026-09-16)
++# block: 29
++# branch: physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-28 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168, #8170-#8172)
++# pr_status: opened for review — PR #8173 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8173); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=14 FAIL=0; 7 mutations, census 7/7 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: measurement (three lattices, five couplings) -> exact control -> contract with a lens pass -> primary (T1-T3, runner) -> refuting pass (real-space estimator; a second chain; the sum rule in a field) -> fold (a name folded out of the theorem sections)"
++# review_findings: "the transverse kernel's normalization c(beta, k) is 0.86-1.01 for modes n >= 2 (0.91 at beta 0.8-1, 0.94 at 1.5-2, 0.97 at 3): the infrared bound is the kernel up to a tenth; the lower bound (m^2/3)^2 is 10-100 times below; the spin-wave value 1 (proved for the quadratic model) is the large-beta limit; the k = 0 end is fixed by the sum rule <m^3>/(beta h)"
++# strongest_unresolved_proof_obligation: "c(beta, k) -> 1 as beta -> infinity at fixed k as a theorem (spin-wave theory rigorous); the sphere formation law's loss of memory at strong coupling; the six-axis order threshold toward the located strength"
++# next_exact_action: "queue refresh 2026-09-16 (block 29 opening): the twelve-hour continuation's remaining items are hard; the lane's proof-shaped and decisive-artifact items are exhausted at this date — see OPPORTUNITY_QUEUE"
++# lock: held (owner: keep running the campaign for 12 more hours from 2026-09-16 ~09:50)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..d83c7380a8 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 29, at PR opening (2026-09-16)
++```yaml
++trace_class: frontier_discovery
++target_claim_id: null
++target_blocker_text: "the campaign queue's item 'the kernel's normalization on Z^3' (blocks 19-23)"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem_plus_decisive_artifact
++next_trace_action: "the normalization measured at 0.86-1.01 of the infrared bound for modes n >= 2 (0.91, 0.94, 0.97 at beta 0.8-1, 1.5-2, 3), the k = 0 end fixed by the sum rule; next: spin-wave theory as a theorem; the lane's queue otherwise hard. Consumers: the gravity lane's kernel question; the decision record"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_exact.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_exact.out.txt
+new file mode 100644
+index 0000000000..73897d37fb
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_exact.out.txt
+@@ -0,0 +1,3 @@
++(1) the torus Laplacian has the plane waves as eigenvectors with eigenvalue E(k) = 2 sum (1 - cos k_j): True -> for the Gaussian law with precision beta*Lap the k-mode variance is 1/(beta E(k)) per component
++(2) kappa * E[(s^1)^2] - E[s^3] = 0 (kappa = beta h)
++(3) Parseval on a 4-site ring with rational data: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_exact.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_exact.py
+new file mode 100644
+index 0000000000..30715c0a7a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_exact.py
+@@ -0,0 +1,35 @@
++"""Control (exact parts) for block 29: (1) the quadratic transverse model on a small torus: <|theta_hat(k)|^2> = 1/(beta E(k)) exactly
++(the precision matrix's inverse in Fourier space); (2) the single-site transverse sum rule beta h E[(s^1)^2] = E[s^3] for the exponential
++law with concentration beta h (symbolic); (3) Parseval on random configurations (exact rationals)."""
++import sympy as sp, numpy as np
++from fractions import Fraction as F
++# (1) on the L=4 torus in one dimension x three (use a 4x4x4 torus): precision P = beta * Laplacian; Fourier diagonalisation
++L = 4; beta = sp.symbols("beta", positive=True)
++import itertools
++N = L**3; sites = list(itertools.product(range(L), repeat=3)); index = {s: i for i, s in enumerate(sites)}
++Lap = sp.zeros(N, N)
++for s in sites:
++    i = index[s]
++    for ax in range(3):
++        for sh in (1, -1):
++            t = list(s); t[ax] = (t[ax] + sh) % L; j = index[tuple(t)]
++            Lap[i, i] += 1; Lap[i, j] -= 1
++ok = True
++for kk in [(1, 0, 0), (2, 0, 0), (1, 1, 0), (1, 2, 3)]:
++    k = [2*sp.pi*n/L for n in kk]
++    v = sp.Matrix([sp.exp(sp.I*sum(kj*sj for kj, sj in zip(k, s))) for s in sites])
++    E = 2*sum(1 - sp.cos(kj) for kj in k)
++    ok = ok and sp.simplify(Lap*v - E*v) == sp.zeros(N, 1)
++print("(1) the torus Laplacian has the plane waves as eigenvectors with eigenvalue E(k) = 2 sum (1 - cos k_j):", ok, "-> for the Gaussian law with precision beta*Lap the k-mode variance is 1/(beta E(k)) per component")
++# (2) single-site sum rule
++kap, w = sp.symbols("kappa w", positive=True)
++Z = sp.integrate(sp.exp(kap*w), (w, -1, 1)); Ew = sp.integrate(w*sp.exp(kap*w), (w, -1, 1))/Z; Ew2 = sp.integrate(w**2*sp.exp(kap*w), (w, -1, 1))/Z
++E_s1sq = (1 - Ew2)/2   # transverse component squared, by symmetry
++print("(2) kappa * E[(s^1)^2] - E[s^3] =", sp.simplify((kap*E_s1sq - Ew).rewrite(sp.exp)), "(kappa = beta h)")
++# (3) Parseval: (1/N) sum_k |f_hat(k)|^2 = sum_x |f_x|^2 with f_hat(k) = sum_x f_x e^{-ikx}; exact on a 4-site ring with rational f via the DFT identity
++rng = np.random.default_rng(1)
++f = [F(int(x), 7) for x in rng.integers(-9, 10, 4)]
++# use the exact DFT with roots of unity via sympy
++Fk = [sum(f[x]*sp.exp(-2*sp.pi*sp.I*k*x/4) for x in range(4)) for k in range(4)]
++lhs = sp.nsimplify(sp.simplify(sum(sp.Abs(Fk[k])**2 for k in range(4))/4)); rhs = sum(fx*fx for fx in f)
++print("(3) Parseval on a 4-site ring with rational data:", sp.simplify(lhs - rhs) == 0)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_kernel.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_kernel.out.txt
+new file mode 100644
+index 0000000000..6e443f1200
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_kernel.out.txt
+@@ -0,0 +1,39 @@
++===== kernel_L16 =====
++sphere static law, L=16, sweeps=3000 (thermalisation 1000); k = 2 pi n/L along e_1; E(k) = 2(1 - cos k)
++  beta=0.80: m = 0.5374, m^2 = 0.2888, (m^2/3)^2 = 0.0093   (4s)
++    n  beta E(k) S_perp(k): 0.769 0.918 0.915 0.924 0.908 0.947 0.900 0.892
++    T(r) r=0..8: 0.2749 0.0811 0.0322 0.0152 0.0076 0.0035 0.0016 0.0007 0.0005
++  beta=1.00: m = 0.6875, m^2 = 0.4726, (m^2/3)^2 = 0.0248   (3s)
++    n  beta E(k) S_perp(k): 0.863 0.868 0.933 0.914 0.924 0.916 0.887 0.954
++    T(r) r=0..8: 0.2219 0.0665 0.0269 0.0130 0.0068 0.0033 0.0013 0.0003 -0.0000
++  beta=1.50: m = 0.8166, m^2 = 0.6668, (m^2/3)^2 = 0.0494   (3s)
++    n  beta E(k) S_perp(k): 0.929 0.955 0.932 0.987 0.941 0.962 0.915 1.012
++    T(r) r=0..8: 0.1512 0.0454 0.0182 0.0087 0.0044 0.0021 0.0007 0.0002 -0.0000
++  beta=2.00: m = 0.8682, m^2 = 0.7537, (m^2/3)^2 = 0.0631   (3s)
++    n  beta E(k) S_perp(k): 0.949 0.961 0.968 0.957 0.914 0.972 0.928 0.977
++    T(r) r=0..8: 0.1150 0.0346 0.0139 0.0066 0.0032 0.0015 0.0005 -0.0000 -0.0002
++  beta=3.00: m = 0.9154, m^2 = 0.8380, (m^2/3)^2 = 0.0780   (3s)
++    n  beta E(k) S_perp(k): 0.960 0.949 0.935 0.989 0.984 0.995 0.993 0.975
++    T(r) r=0..8: 0.0775 0.0233 0.0093 0.0044 0.0022 0.0009 0.0003 -0.0001 -0.0002
++===== kernel_L24 =====
++sphere static law, L=24, sweeps=3000 (thermalisation 1000); k = 2 pi n/L along e_1; E(k) = 2(1 - cos k)
++  beta=0.80: m = 0.5250, m^2 = 0.2757, (m^2/3)^2 = 0.0084   (10s)
++    n  beta E(k) S_perp(k): 0.917 0.862 0.905 0.907 0.901 0.899 0.900 0.926
++    T(r) r=0..8: 0.2788 0.0861 0.0374 0.0204 0.0125 0.0080 0.0052 0.0032 0.0018
++  beta=1.00: m = 0.6806, m^2 = 0.4632, (m^2/3)^2 = 0.0238   (10s)
++    n  beta E(k) S_perp(k): 0.984 0.861 0.894 0.913 0.885 0.878 0.903 0.939
++    T(r) r=0..8: 0.2253 0.0704 0.0308 0.0169 0.0103 0.0066 0.0041 0.0024 0.0012
++  beta=1.50: m = 0.8127, m^2 = 0.6604, (m^2/3)^2 = 0.0485   (10s)
++    n  beta E(k) S_perp(k): 1.047 0.895 0.917 0.908 0.946 0.944 0.917 0.964
++    T(r) r=0..8: 0.1537 0.0482 0.0210 0.0113 0.0068 0.0043 0.0026 0.0015 0.0008
++  beta=2.00: m = 0.8655, m^2 = 0.7490, (m^2/3)^2 = 0.0623   (10s)
++    n  beta E(k) S_perp(k): 0.966 0.936 0.921 1.013 0.978 0.975 0.938 0.921
++    T(r) r=0..8: 0.1170 0.0368 0.0162 0.0089 0.0054 0.0035 0.0023 0.0014 0.0008
++===== kernel_L32 =====
++sphere static law, L=32, sweeps=2400 (thermalisation 800); k = 2 pi n/L along e_1; E(k) = 2(1 - cos k)
++  beta=1.00: m = 0.6782, m^2 = 0.4599, (m^2/3)^2 = 0.0235   (20s)
++    n  beta E(k) S_perp(k): 0.647 0.875 0.966 0.934 0.957 0.896 0.910 0.936
++    T(r) r=0..8: 0.2264 0.0718 0.0324 0.0185 0.0120 0.0084 0.0060 0.0043 0.0032
++  beta=1.50: m = 0.8111, m^2 = 0.6580, (m^2/3)^2 = 0.0481   (20s)
++    n  beta E(k) S_perp(k): 0.921 0.965 0.884 0.875 0.957 0.932 0.928 0.978
++    T(r) r=0..8: 0.1548 0.0494 0.0222 0.0127 0.0082 0.0056 0.0040 0.0029 0.0021
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_kernel.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_kernel.py
+new file mode 100644
+index 0000000000..ef954b5094
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_kernel.py
+@@ -0,0 +1,38 @@
++# Sphere static law (weight e^{beta s.s'}) on a periodic L^3 lattice, heat-bath checkerboard sweeps from an aligned start.
++# Measures: m = |mean s|; the transverse structure factor S_perp(k) = (1/N) E|sum_x s_perp(x) e^{-ik.x}|^2 per transverse component,
++# for k = (2 pi n/L, 0, 0), n = 1..L/2, with s_perp the components orthogonal to the instantaneous plane average; and the real-space
++# transverse correlation T(r) = E[s_perp(0).s_perp(r e_1)]/2 along an axis.  Compare beta E(k) S_perp(k) with the bounds (M^2/3)^2 .. 1
++# (block 19) and with m^2; E(k) = 2 sum_j (1 - cos k_j).
++import numpy as np, sys, time
++L, sweeps, therm = int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]); betas = [float(x) for x in sys.argv[4:]]
++rng = np.random.default_rng(29); idx = np.indices((L, L, L)).sum(0) % 2
++def vmf(V):
++    n = np.linalg.norm(V, axis=-1); kap = np.maximum(n, 1e-12); u = V / kap[..., None]
++    U = rng.random(n.shape); w = np.clip(1 + np.log(U + (1 - U) * np.exp(-2 * kap)) / kap, -1, 1); ph = 2 * np.pi * rng.random(n.shape)
++    a = np.where((np.abs(u[..., 0]) < 0.9)[..., None], np.array([1.0, 0, 0]), np.array([0, 1.0, 0]))
++    e1 = a - (a * u).sum(-1)[..., None] * u; e1 /= np.linalg.norm(e1, axis=-1)[..., None]; e2 = np.cross(u, e1)
++    rr = np.sqrt(np.clip(1 - w * w, 0, 1)); s = w[..., None] * u + rr[..., None] * (np.cos(ph)[..., None] * e1 + np.sin(ph)[..., None] * e2)
++    zero = n <= 1e-12
++    if zero.any():
++        g = rng.normal(size=s[zero].shape); s[zero] = g / np.linalg.norm(g, axis=-1)[..., None]
++    return s
++ks = np.arange(1, L // 2 + 1); E = 2 * (1 - np.cos(2 * np.pi * ks / L))
++print(f"sphere static law, L={L}, sweeps={sweeps} (thermalisation {therm}); k = 2 pi n/L along e_1; E(k) = 2(1 - cos k)")
++for beta in betas:
++    s = np.zeros((L, L, L, 3)); s[..., 2] = 1; ms = []; Sk = np.zeros(len(ks)); Tr = np.zeros(L // 2 + 1); cnt = 0; t0 = time.time()
++    for sw in range(sweeps):
++        for par in (0, 1):
++            V = sum(np.roll(s, sh, ax) for ax in range(3) for sh in (1, -1))
++            s = np.where((idx == par)[..., None], vmf(beta * V), s)
++        if sw >= therm and sw % 2 == 0:
++            M = s.mean((0, 1, 2)); m = np.linalg.norm(M); ms.append(m); u = M / m
++            sp = s - (s @ u)[..., None] * u                      # transverse components (two of them)
++            F = np.fft.fftn(sp, axes=(0, 1, 2))                  # shape L,L,L,3
++            Sk += (np.abs(F[ks, 0, 0, :]) ** 2).sum(-1) / (L ** 3) / 2     # per transverse component
++            for r in range(L // 2 + 1):
++                Tr[r] += (sp * np.roll(sp, r, 0)).sum(-1).mean() / 2
++            cnt += 1
++    Sk /= cnt; Tr /= cnt; m = np.mean(ms)
++    print(f"  beta={beta:4.2f}: m = {m:.4f}, m^2 = {m*m:.4f}, (m^2/3)^2 = {(m*m/3)**2:.4f}   ({time.time()-t0:.0f}s)")
++    print("    n  beta E(k) S_perp(k):", " ".join(f"{beta*E[i]*Sk[i]:.3f}" for i in range(min(8, len(ks)))))
++    print("    T(r) r=0..8:", " ".join(f"{Tr[r]:.4f}" for r in range(min(9, L // 2 + 1))))
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_refuter.out.txt
+new file mode 100644
+index 0000000000..abba41109b
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_refuter.out.txt
+@@ -0,0 +1,10 @@
++(a) torus Green function G_L(r) along e_1 (L=16): 0.2386 0.0720 0.0290 0.0138 0.0069 0.0032
++  beta=1.0: m = 0.6881; T(r) r=0..5: 0.2217 0.0658 0.0263 0.0126 0.0065 0.0031; c from T(r)/(G_L(r)/beta), r=1..4: 0.914 0.909 0.912 0.939   (3s)
++  beta=1.5: m = 0.8157; T(r) r=0..5: 0.1518 0.0459 0.0185 0.0090 0.0046 0.0023; c from T(r)/(G_L(r)/beta), r=1..4: 0.956 0.961 0.971 1.003   (3s)
++  beta=2.0: m = 0.8684; T(r) r=0..5: 0.1147 0.0344 0.0137 0.0065 0.0031 0.0013; c from T(r)/(G_L(r)/beta), r=1..4: 0.956 0.947 0.940 0.912   (3s)
++(b) Metropolis single-site chain at beta = 1.5 on 16^3: beta E(k) S_perp(k) for n = 1..6
++  0.796 1.077 0.935 0.938 1.009 0.993   (2s)
++(c) the transverse sum rule in a field h e_3 at beta = 1.5 on 16^3: beta h N <(m^1)^2> against <m^3>
++  h=0.05: beta h N <(m^1)^2> = 1.0113  <m^3> = 0.8202   (3s)
++  h=0.1: beta h N <(m^1)^2> = 0.7113  <m^3> = 0.8279   (3s)
++  h=0.2: beta h N <(m^1)^2> = 0.9606  <m^3> = 0.8377   (3s)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_refuter.py
+new file mode 100644
+index 0000000000..37eec6ad4d
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block29_refuter.py
+@@ -0,0 +1,58 @@
++"""Refuting pass, block 29 (independent machinery): (a) the normalization from the REAL-SPACE transverse correlation: fit T(r) = c G_L(r)/beta
++with the torus Green function G_L computed by FFT (a different estimator from the structure factor); (b) a Metropolis single-site sampler
++(a different chain) at beta = 1.5 on 16^3 measuring beta E(k) S_perp(k); (c) the transverse sum rule in a field: beta h N <(m^1)^2> against
++<m^3> at h = 0.05, 0.1 on 16^3, beta = 1.5 (heat bath with the field added to the neighbour sum)."""
++import numpy as np, time
++rng = np.random.default_rng(37)
++L = 16; N = L**3; idx = np.indices((L, L, L)).sum(0) % 2
++def vmf(V):
++    n = np.linalg.norm(V, axis=-1); kap = np.maximum(n, 1e-12); u = V / kap[..., None]
++    U = rng.random(n.shape); w = np.clip(1 + np.log(U + (1 - U) * np.exp(-2 * kap)) / kap, -1, 1); ph = 2 * np.pi * rng.random(n.shape)
++    a = np.where((np.abs(u[..., 0]) < 0.9)[..., None], np.array([1.0, 0, 0]), np.array([0, 1.0, 0]))
++    e1 = a - (a * u).sum(-1)[..., None] * u; e1 /= np.linalg.norm(e1, axis=-1)[..., None]; e2 = np.cross(u, e1)
++    rr = np.sqrt(np.clip(1 - w * w, 0, 1)); s = w[..., None] * u + rr[..., None] * (np.cos(ph)[..., None] * e1 + np.sin(ph)[..., None] * e2)
++    zero = n <= 1e-12
++    if zero.any():
++        g = rng.normal(size=s[zero].shape); s[zero] = g / np.linalg.norm(g, axis=-1)[..., None]
++    return s
++def nbsum(s): return sum(np.roll(s, sh, ax) for ax in range(3) for sh in (1, -1))
++# torus Green function along an axis: G_L(r) = (1/N) sum_{k != 0} e^{i k.r} / E(k)
++kx = 2 * np.pi * np.fft.fftfreq(L) * L / L; K1, K2, K3 = np.meshgrid(kx, kx, kx, indexing="ij")
++E = 2 * (3 - np.cos(K1) - np.cos(K2) - np.cos(K3)); invE = np.where(E > 1e-12, 1 / np.where(E > 1e-12, E, 1), 0.0)
++G = np.real(np.fft.ifftn(invE))   # G_L(r) with G_L(0) = (1/N) sum_{k!=0} 1/E(k)
++print(f"(a) torus Green function G_L(r) along e_1 (L=16): {' '.join(f'{G[r,0,0]:.4f}' for r in range(6))}")
++for beta in (1.0, 1.5, 2.0):
++    s = np.zeros((L, L, L, 3)); s[..., 2] = 1; Tr = np.zeros(L // 2 + 1); ms = []; cnt = 0; t0 = time.time()
++    for sw in range(3000):
++        for par in (0, 1):
++            s = np.where((idx == par)[..., None], vmf(beta * nbsum(s)), s)
++        if sw >= 1000 and sw % 2 == 0:
++            M = s.mean((0, 1, 2)); m = np.linalg.norm(M); u = M / m; sp = s - (s @ u)[..., None] * u; ms.append(m)
++            for r in range(L // 2 + 1): Tr[r] += (sp * np.roll(sp, r, 0)).sum(-1).mean() / 2
++            cnt += 1
++    Tr /= cnt
++    # fit c from r = 1..4 (r = 0 carries the local, non-Green part): c = beta * T(r) / G_L(r)
++    cs = [beta * Tr[r] / G[r, 0, 0] for r in range(1, 5)]
++    print(f"  beta={beta}: m = {np.mean(ms):.4f}; T(r) r=0..5: {' '.join(f'{Tr[r]:.4f}' for r in range(6))}; c from T(r)/(G_L(r)/beta), r=1..4: {' '.join(f'{c:.3f}' for c in cs)}   ({time.time()-t0:.0f}s)")
++print("(b) Metropolis single-site chain at beta = 1.5 on 16^3: beta E(k) S_perp(k) for n = 1..6")
++beta = 1.5; s = np.zeros((L, L, L, 3)); s[..., 2] = 1; ks = np.arange(1, 7); Ek = 2 * (1 - np.cos(2 * np.pi * ks / L)); Sk = np.zeros(len(ks)); cnt = 0; t0 = time.time()
++for sw in range(4000):
++    for par in (0, 1):
++        g = rng.normal(size=(L, L, L, 3)); prop = s + 0.6 * g; prop /= np.linalg.norm(prop, axis=-1)[..., None]
++        V = nbsum(s); dE = beta * ((prop - s) * V).sum(-1)
++        acc = (rng.random((L, L, L)) < np.exp(np.minimum(0, dE))) & (idx == par)
++        s = np.where(acc[..., None], prop, s)
++    if sw >= 1500 and sw % 2 == 0:
++        M = s.mean((0, 1, 2)); u = M / np.linalg.norm(M); sp = s - (s @ u)[..., None] * u
++        F = np.fft.fftn(sp, axes=(0, 1, 2)); Sk += (np.abs(F[ks, 0, 0, :]) ** 2).sum(-1) / N / 2; cnt += 1
++Sk /= cnt
++print(f"  {' '.join(f'{beta*Ek[i]*Sk[i]:.3f}' for i in range(len(ks)))}   ({time.time()-t0:.0f}s)")
++print("(c) the transverse sum rule in a field h e_3 at beta = 1.5 on 16^3: beta h N <(m^1)^2> against <m^3>")
++for h in (0.05, 0.1, 0.2):
++    s = np.zeros((L, L, L, 3)); s[..., 2] = 1; m1sq = []; m3 = []; t0 = time.time()
++    for sw in range(3000):
++        for par in (0, 1):
++            V = nbsum(s) + np.array([0, 0, h]); s = np.where((idx == par)[..., None], vmf(beta * V), s)
++        if sw >= 1000:
++            M = s.mean((0, 1, 2)); m1sq.append(M[0] ** 2); m3.append(M[2])
++    print(f"  h={h}: beta h N <(m^1)^2> = {beta*h*N*np.mean(m1sq):.4f}  <m^3> = {np.mean(m3):.4f}   ({time.time()-t0:.0f}s)")
+diff --git a/docs/ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md b/docs/ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+new file mode 100644
+index 0000000000..3f24b79f38
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -0,0 +1,205 @@
++---
++claim_id: admissibility_rule_transverse_kernel_normalization_in_the_ordered_sphere_static_law_measured_between_the_bounds_with_the_transverse_sum_rule_and_the_spin_wave_reference_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++claim_scope: "For the static law of the covariant rule on the unsoldered sphere menu with weight e^{beta s.s'} on the periodic cubic lattice: (T1) the quadratic transverse model H = (beta/2) sum_bonds |theta_x - theta_y|^2 has k-mode variance exactly 1/(beta E(k)) per component for k != 0, E(k) = 2 sum_j (1 - cos k_j), so beta E(k) <|theta_hat(k)|^2> = 1 is the spin-wave value of the transverse kernel's normalization (proved; the plane-wave eigenvalues and the ring modes symbolic); (T2) for the sphere static law with a field h > 0 along e_3 on any finite torus, beta h N <(m_hat^1)^2> = <m_hat^3> exactly (integration by parts on the sphere), so the transverse response at k = 0 is <m_hat^3>/(beta h) (proved; the one-site instance and the generator's action symbolic); (T3) the mode sum: N^{-1} sum_k <|s_hat^perp(k)|^2> = <|s_x^perp|^2> per component (proved). Executed, not proved: the normalization c(beta, k) = beta E(k) S_perp(k) of the transverse structure factor in the ordered regime, measured on 16^3, 24^3, 32^3 at beta = 0.8, 1, 1.5, 2, 3 for k along an axis, lies at 0.86-0.98 for the modes n >= 2 (the longest mode n = 1 scattering more), rising toward the spin-wave value 1 as beta grows, against block 19's bounds (m^2/3)^2 (0.008-0.08) and 1: the infrared bound is the kernel up to about a tenth; the real-space transverse correlation tracks the torus Green function with the same constant (refuter). No menu, reading, order or coupling is selected as physical; exact arithmetic throughout the runner."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
++runner: scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py
++---
++
++# The transverse kernel's normalization in the ordered sphere static law: measured between the bounds, with the transverse sum rule and the spin-wave reference
++
++**Date:** 2026-09-16
++**Type:** bounded_theorem (T1–T3); frontier discovery for the measured normalization
++**Status:** bounded-support (exact; conditional on the named supplied readings; the normalization measured on finite lattices, not proved; unaudited)
++
++## Result up front
++
++Blocks 19–23 placed the gravity node's Green-function kernel in the transverse
++channel of the ordered sphere static law: for `β > 76/100` and every fixed
++`k ≠ 0`, the transverse structure factor lies between `(M²/3)²/(βE(k))` and
++`1/(βE(k))` (block 19's G5 with block 22's threshold) — a window of a factor
++nine or more, since `M² ≤ 1`. The queue's item "the kernel's normalization on
++`Z³`" is hard as a theorem and cheap to measure. This note measures it: the
++number `c(β, k) = βE(k)·S_⊥(k)` on lattices of `16³`, `24³` and `32³` sites at
++`β = 0.8, 1, 1.5, 2, 3`, for wavevectors along an axis, comes out between
++`0.86` and `0.98` for every mode but the longest, rising toward `1` as `β`
++grows; the lower bound `(m²/3)²` is `0.008`–`0.08` at the same couplings. So
++the infrared bound is the kernel up to about a tenth, the lower bound is loose
++by a factor ten to a hundred, and the spin-wave value `1` — which this note
++proves exactly for the quadratic transverse model (T1) — is the large-`β`
++limit. Two exact anchors: the transverse sum rule in a field (T2), which fixes
++the kernel's `k = 0` response at `⟨m̂³⟩/(βh)` and makes the soft mode a
++theorem on any finite torus, and the mode sum (T3), which ties the structure
++factor's average to the local transverse moment.
++
++In plain words: in the settled arrangement of sphere-valued records at strong
++preference, the sideways wiggles of the records are carried across the lattice
++by the same law as a Coulomb-type potential, and this note pins the strength of
++that carrying: within ten percent of the largest value the general theorem
++allows, and closer the stronger the preference. The gravity lane, should it
++use this channel, has its number; whether it should is not decided here.
++
++Exactly: the spin-wave reference (T1); the transverse sum rule (T2); the mode sum
++(T3). Executed with exact arithmetic: 14 checks, 7 mutations; the measurement
++in the control spec, a second estimator, a second chain and the sum rule in a
++field in the refuting spec.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: frontier_discovery
++target_claim_id: null
++target_blocker_text: "the campaign queue's item 'the kernel's normalization on Z^3' (blocks 19-23 placed the transverse channel's kernel between (M^2/3)^2/(beta E(k)) and 1/(beta E(k)))"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem_plus_decisive_artifact
++next_trace_action: "the normalization measured: c(beta, k) in 0.86-0.98 for k along an axis (modes n >= 2) at beta = 0.8-3, rising toward the spin-wave value 1; the infrared bound is the kernel up to a tenth. Open: a proof that c(beta, k) -> 1 as beta -> infinity at fixed k (spin-wave theory as a theorem); the longest mode's finite-size behaviour. Consumers: the gravity lane's kernel question (blocks 19-23); the campaign's decision record"
++conditional_surface_status: "T1-T3 proved as stated under the records-only reading, positivity, the sphere menu and the static reading as supplied conditions; the normalization measured on periodic lattices (16^3, 24^3, 32^3), not proved; two standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++```
++
++## Premises and declared objects
++
++The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule's product form and its one-site conditional given a recorded set; the sphere menu and the static reading are declared below (blocks 18, 19, 21, 22, 28 — open PRs #8152, #8153, #8155, #8156, #8172 — are referenced as evidence addresses only). All proposed and unaudited.
++
++Declared objects.
++- **The sphere static law.** Values `s_x ∈ S²` on the periodic lattice `T_L = (Z/LZ)³`, `N = L³`; the law `μ_{L,β}(ds) ∝ Π_{⟨xy⟩} e^{β s_x·s_y} Π_x dσ(s_x)`; with a field `h ≥ 0` along `e_3`, the extra factor `Π_x e^{βh s_x^3}`. Its single-site conditional given the six neighbours is the exponential-overlap law with concentration `β|Σ_{y∼x} s_y + h e_3|`.
++- **Fourier conventions.** `ŝ^a(k) = N^{−1/2} Σ_x e^{−ik·x} s_x^a`, `k ∈ (2π/L)Z³`; `E(k) = 2Σ_j (1 − cos k_j)`; the graph Laplacian `Δ` with `(Δf)_x = Σ_{y∼x}(f_x − f_y)`, whose plane-wave eigenvalues are `E(k)`.
++- **The magnetization and the transverse components.** `m̂ = N^{−1}Σ_x s_x`; for a configuration with `m̂ ≠ 0`, `û = m̂/|m̂|` and `s_x^⊥ = s_x − (s_x·û)û` (two components); the **transverse structure factor** `S_⊥(k) = ⟨|ŝ^⊥(k)|²⟩/2` per component (the average over the two transverse components in the instantaneous frame); the **normalization** `c(β, k) = βE(k) S_⊥(k)`; the **real-space transverse correlation** `T(r) = ⟨s_0^⊥·s_{re_1}^⊥⟩/2`.
++- **The quadratic transverse model.** `θ_x ∈ R²` on `T_L` with density `∝ e^{−(β/2)Σ_{⟨xy⟩}|θ_x − θ_y|²}` on the subspace of zero-sum fields (the `k = 0` mode is a free translation and is removed); `θ̂(k)` as above.
++- **The torus Green function.** `G_L(r) = N^{−1}Σ_{k≠0} e^{ik·r}/E(k)`.
++- **The rotation generator.** For a smooth function `F` on `(S²)^N` and a site `x`, `L_x F = d/da F(…, R_a s_x, …)|_{a=0}` with `R_a` the rotation by `a` about `e_2` in the `(1, 3)` plane; `L_x s_x^1 = s_x^3`, `L_x s_x^3 = −s_x^1`.
++
++## Prior art and what is new
++
++The infrared bound and the Bogoliubov-type lower bound for the transverse channel of the classical Heisenberg model are the Fröhlich–Simon–Spencer and Dyson–Lieb–Simon route, carried for this lane in block 19; the linear spin-wave theory of the ordered phase and the transverse sum rule (a Ward identity of the rotation symmetry) are textbook; Parseval is Parseval. None is used as authority: T1–T3 are proved here at scope, and the measurement uses the campaign's own sampler. What is new: (i) the measured normalization `c(β, k)` of the kernel that blocks 19–23 located, placed between the bounds — the infrared bound is the kernel up to a tenth, the lower bound loose by ten to a hundred; (ii) the spin-wave value proved as the exact normalization of the quadratic model (T1), which the measurement approaches from below; (iii) the sum rule in a field as the exact `k = 0` anchor of the kernel on every finite torus (T2).
++
++## Exact target and obligation graph
++
++| Obligation | Statement | Route | Runner family |
++|---|---|---|---|
++| T1 | `⟨|θ̂(k)|²⟩ = 1/(βE(k))`; `βE(k)⟨|θ̂(k)|²⟩ = 1` | plane waves diagonalize `Δ`; Gaussian modes | B |
++| T2 | `βh·N⟨(m̂¹)²⟩ = ⟨m̂³⟩` | integration by parts on the sphere | C |
++| T3 | `N^{−1}Σ_k⟨|ŝ^⊥(k)|²⟩ = ⟨|s^⊥|²⟩` | the mode-sum identity | D |
++| executed | `c(β, k)` on three lattices at five couplings | simulation (control, refuter) | — (specs) |
++
++## Theorem T1 — the spin-wave reference
++
++**Statement.** For the quadratic transverse model on `T_L` and `k ≠ 0`, `⟨|θ̂(k)|²⟩ = 1/(βE(k))` per component; hence `βE(k)⟨|θ̂(k)|²⟩ = 1` for every `k ≠ 0`, and `⟨θ_0·θ_r⟩ = 2G_L(r)/β`.
++
++**Proof.** `Σ_{⟨xy⟩}|θ_x − θ_y|² = Σ_x θ_x·(Δθ)_x` per component, and `Δ e^{ik·x} = E(k) e^{ik·x}` (B1, on the `4³` lattice symbolically; the identity `Σ_{y∼x}(e^{ik·x} − e^{ik·y}) = e^{ik·x}Σ_j(2 − e^{ik_j} − e^{−ik_j})` holds on every `L`). In the plane-wave basis the density factorizes into independent Gaussians with variances `1/(βE(k))` per component and mode (B2, the ring modes explicitly); the real-space correlation is the inverse transform. ∎
++
++*Reading.* Linearizing the sphere law about its ordered direction gives this model with `θ` the transverse coordinates, so `c = 1` is the spin-wave prediction; the nonlinearity and the finite magnetization reduce it, by an amount the measurement fixes.
++
++## Theorem T2 — the transverse sum rule in a field
++
++**Statement.** For the sphere static law on any finite torus with field `h > 0` along `e_3`, `βh · N ⟨(m̂¹)²⟩ = ⟨m̂³⟩`. In particular the transverse response at `k = 0`, `N⟨(m̂¹)²⟩`, equals `⟨m̂³⟩/(βh)` and grows without bound as `h ↓ 0` whenever `⟨m̂³⟩` stays bounded away from zero.
++
++**Proof.** For every `x`, the surface measure is invariant under `R_a`, so `∫ L_x F dσ(s_x) = 0` for smooth `F` (C2: the generator's action on `s^1, s^3` and the vanishing of `∫ L(s^1 s^3) dσ`). With the density `w = e^{βΣ_{⟨xy⟩} s_x·s_y + βhΣ_x s_x^3}`, `⟨L_x F⟩ = −⟨F · L_x log w⟩`. Take `F = Σ_y s_y^1` and sum over `x`: `Σ_x L_x F = Σ_x s_x^3 = N m̂³`, while `Σ_x L_x log w = Σ_x [β Σ_{y∼x} (s_x^3 s_y^1 − s_x^1 s_y^3) + βh (−s_x^1)]`; the bond terms cancel in pairs (each bond contributes `s_x^3 s_y^1 − s_x^1 s_y^3` from `x` and its negative from `y`), leaving `−βh Σ_x s_x^1 = −βh N m̂¹`. Hence `⟨N m̂³⟩ = βh ⟨N m̂¹ · N m̂¹⟩/N`, i.e. `βh N⟨(m̂¹)²⟩ = ⟨m̂³⟩`. The one-site instance is `κ E[(s^1)²] = E[s^3]` for the exponential law with concentration `κ = βh` (C1). ∎
++
++*Reading.* At `k = 0` the transverse kernel's normalization is not measured but fixed: `⟨m̂³⟩/(βh)`, the magnetization over the field. This is the exact end of the kernel at long wavelength.
++
++## Theorem T3 — the mode sum
++
++**Statement.** `N^{−1}Σ_k ⟨|ŝ^⊥(k)|²⟩ = ⟨|s_x^⊥|²⟩` (per component, in the instantaneous frame), so `N^{−1}Σ_k S_⊥(k) = ⟨1 − (s_x·û)²⟩/2`.
++
++**Proof.** the mode-sum identity of the discrete Fourier transform (the transform is unitary) on `T_L` (D1, on a ring with rational data), applied to each transverse component and averaged. ∎
++
++*Reading.* With block 19's upper bound this is that block's sum rule; here it is the check that the measured structure factor integrates to the measured local transverse moment.
++
++## Executed: the normalization measured (frontier discovery, not proved)
++
++Control `specs/supervisor_control_block29_kernel.py` (heat-bath checkerboard sweeps with the exact conditional from an aligned start; every second sweep after thermalisation: `m̂`, the transverse components in the instantaneous frame, the structure factor by FFT for `k = (2πn/L, 0, 0)`, and `T(r)` along an axis); refuting spec `specs/supervisor_control_block29_refuter.py` (the normalization from the real-space correlation against the torus Green function computed by FFT; a single-site proposal chain; the sum rule in a field). Outputs in `.out.txt`.
++
++| `L` | `β` | `m` | `(m²/3)²` | `c(β, k)` for `n = 1 … 8` (`k = 2πn/L`) |
++|---|---|---|---|---|
++| `16` | `0.8` | `0.537` | `0.009` | `0.77 0.92 0.92 0.92 0.91 0.95 0.90 0.89` |
++| `16` | `1.0` | `0.688` | `0.025` | `0.86 0.87 0.93 0.91 0.92 0.92 0.89 0.95` |
++| `16` | `1.5` | `0.817` | `0.049` | `0.93 0.96 0.93 0.99 0.94 0.96 0.92 1.01` |
++| `16` | `2.0` | `0.868` | `0.063` | `0.95 0.96 0.97 0.96 0.91 0.97 0.93 0.98` |
++| `16` | `3.0` | `0.915` | `0.078` | `0.96 0.95 0.94 0.99 0.98 1.00 0.99 0.98` |
++| `24` | `0.8` | `0.525` | `0.008` | `0.92 0.86 0.91 0.91 0.90 0.90 0.90 0.93` |
++| `24` | `1.0` | `0.681` | `0.024` | `0.98 0.86 0.89 0.91 0.89 0.88 0.90 0.94` |
++| `24` | `1.5` | `0.813` | `0.049` | `1.05 0.90 0.92 0.91 0.95 0.94 0.92 0.96` |
++| `24` | `2.0` | `0.866` | `0.062` | `0.97 0.94 0.92 1.01 0.98 0.98 0.94 0.92` |
++| `32` | `1.0` | `0.678` | `0.024` | `0.65 0.88 0.97 0.93 0.96 0.90 0.91 0.94` |
++| `32` | `1.5` | `0.811` | `0.048` | `0.92 0.97 0.88 0.88 0.96 0.93 0.93 0.98` |
++
++Refuting spec on `16³`: from the real-space correlation against the torus Green function, `c = T(r)·β/G_L(r)` for `r = 1 … 4` is `0.91, 0.91, 0.91, 0.94` at `β = 1`, `0.96, 0.96, 0.97, 1.00` at `1.5`, `0.96, 0.95, 0.94, 0.91` at `2`; a single-site proposal chain at `β = 1.5` gives `c = 0.80, 1.08, 0.94, 0.94, 1.01, 0.99` for `n = 1 … 6`; the sum rule in a field at `β = 1.5` gives `βh·N⟨(m̂¹)²⟩ = 1.01, 0.71, 0.96` against `⟨m̂³⟩ = 0.82, 0.83, 0.84` at `h = 0.05, 0.1, 0.2` — the `k = 0` transverse mode is the slowest and its `2000`-sweep average carries a scatter of about `±20 %` around the exact value.
++
++What the runs say. (i) For the modes `n ≥ 2` the normalization lies between `0.86` and `1.01` at every lattice size and coupling, with no trend in `k`; the averages over `n = 2 … 8` are about `0.91` at `β = 0.8`–`1`, `0.94` at `1.5`–`2` and `0.97` at `3`: the kernel is the infrared bound up to about a tenth and approaches the spin-wave value from below as `β` grows. (ii) The longest mode `n = 1` scatters more (`0.65`–`1.05`): it is the slowest mode of the chain and the one most exposed to the finite lattice; its scatter grows with `L` at fixed sweeps. (iii) The lower bound `(m²/3)²` is a factor `12` (at `β = 3`) to `110` (at `β = 0.8`) below the measured values. (iv) The real-space transverse correlation gives the same constant (`0.91` at `β = 1`, `0.96`–`1.00` at `1.5`, `0.91`–`0.96` at `2`), a second chain agrees, and the sum rule in a field is met to within the large scatter of the slowest mode (refuter). **The measured normalization (executed):** `c(β) ≈ 0.9` at `β ∈ [0.8, 1]`, `≈ 0.94` at `β ∈ [1.5, 2]`, `≈ 0.97` at `β = 3`, against the bounds `(m²/3)²` and `1` and the spin-wave value `1`.
++
++## No-Go Discipline Gate
++
++The executed sentence measures a constant; its escapes are named.
++
++### N1 — Routes by which the measurement could mislead
++1. *The instantaneous frame.* The transverse components are taken orthogonal to the sample's own magnetization; on a finite lattice the direction wanders slowly, and the frame follows it; the structure factor at `k ≠ 0` is insensitive to a rigid rotation.
++2. *The longest mode.* Its statistics are the poorest (autocorrelation, finite size); the summary uses the modes `n ≥ 2` and states the `n = 1` scatter.
++3. *Equilibration and the aligned start.* Thermalisation of a third of the sweeps; the refuter's single-site chain and the field runs agree.
++4. *The bounds' hypotheses.* Block 19's bounds are infinite-volume statements at fixed `k` (`L → ∞`); the measurement is at `L = 16, 24, 32`, whose modes `n ≥ 2` show no size dependence beyond the scatter.
++
++### N2 — Wall-independence audit
++No no-go wall of the repository is used.
++
++### N3 — Hidden-wall scan
++No hidden dependence: the inputs are the axioms' sentences, block 01's rule, the sphere menu and the static reading as declared.
++
++### N4 — Per-citation table
++| Citation | Role | Load-bearing? |
++|---|---|---|
++| `minimal_axioms` | the four sentences under Premises | yes (premise) |
++| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
++| blocks 19, 22 (open PRs) | the bounds and the threshold the measurement is placed against | placement only (evidence addresses; re-quoted) |
++| blocks 18, 21, 28 (open PRs) | the menu; the uniqueness region; the located strength | placement only |
++
++### N5 — Resolution audit
++| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
++|---|---|---|---|---|---|
++| "the transverse kernel's normalization is about nine tenths of the infrared bound" | executed: the plane-wave eigenvalues; the one-site sum rule; the generator's action | executed: the ring modes' variances; the vanishing surface integral | executed: the mode sum; `c(β, k)` for eight modes on three lattices (control), a second estimator and chain (refuter) | executed: the placement between `(m²/3)²` and `1` at five couplings; the sum rule in a field | T1–T3 proved as stated; the normalization measured, not proved |
++
++### N6 — Partial-closure paths and primitive scan
++The registered primitives supply no coupling or menu; none is a wall.
++
++### N7 — Steelman
++Hostile reviewer: "Spin-wave theory says `c ≈ 1` and the simulation says `c ≈ 0.9`; nothing here is a theorem about the sphere law's kernel." Reply: the number is what the lane's consumers need and it was unknown to within a factor nine; the exact parts are the two anchors (the spin-wave value and the `k = 0` sum rule) between which the measurement sits; the statement is labelled measured. Conceded: `c(β) → 1` as `β → ∞` is not proved; the longest mode is not resolved.
++
++### N8 — Cross-cycle echo
++Block 19's G2 (the infrared bound) and G4 (the lower bound) are the two sides of the window; block 22's `76/100` and block 28's located strength `β ∈ (0.66, 0.72)` place the couplings used inside the ordered regime; block 13's contrast (the formation reading's kernel is a heat kernel, not a Green function) is the other half of the gravity lane's question.
++
++## Falsifiers
++- A plane wave that is not an eigenvector of `Δ` with eigenvalue `2Σ(1 − cos k_j)`, or a ring mode with variance other than `1/(βE(k))` (B1–B2).
++- `κ E[(s^1)²] ≠ E[s^3]` on one site, a generator sending `s^1, s^3` elsewhere than `s^3, −s^1`, or a non-vanishing surface integral of `L(s^1 s^3)` (C1–C2).
++- A mode-sum failure on rational data (D1).
++- For the measurement: a normalization outside `[(m²/3)², 1]` beyond its scatter, a sum-rule violation in a field beyond the statistical error, or a real-space constant differing from the structure-factor constant.
++
++## Boundaries and non-claims
++This note proves the spin-wave reference `βE(k)⟨|θ̂(k)|²⟩ = 1` for the quadratic transverse model, the transverse sum rule `βh·N⟨(m̂¹)²⟩ = ⟨m̂³⟩` for the sphere static law in a field on any finite torus, and the mode sum's identity for the transverse structure factor; the normalization `c(β, k) = βE(k)S_⊥(k)` of the transverse kernel in the ordered sphere static law is measured by simulation on finite lattices and placed between block 19's bounds, not proved; it does not select a menu, reading, order or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++Further: whether the transverse channel is what the gravity lane should use is not claimed; the large-`β` limit `c → 1` is not proved; the longest mode's finite-size behaviour is not resolved.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. PRs #8152, #8153, #8155, #8156, #8172 (open) referenced as evidence addresses for the menu, the bounds, the uniqueness region, the threshold and the located strength.
++- Re-proved at scope: the Gaussian mode variances of the quadratic model; the integration by parts on the sphere and the cancellation of the bond terms; Parseval on the torus.
++- Named standard imports at definition level (never as authority for physics): the discrete Fourier transform on the torus; the heat-bath (Gibbs sampler) and single-site-proposal (Metropolis) chains as samplers of the law on finite lattices.
++- Reference only (named, not used): the infrared bound (Fröhlich–Simon–Spencer) and the Bogoliubov-type lower bound (Dyson–Lieb–Simon) as carried in block 19; linear spin-wave theory; the Ward identity of rotation symmetry.
++
++## Review record
++Supervisor-run block (owner directive 2026-09-16: keep the campaign running twelve more hours). After block 28 the remaining queue items were hard as theorems; the kernel's normalization was the one with a cheap decisive measurement and two exact anchors. The control ran the sampler on `16³` (`3000` sweeps), `24³` (`3000`) and `32³` (`2400`) at five couplings, measuring the structure factor by FFT in the instantaneous transverse frame; the exact control verified the plane-wave eigenvalues, the one-site sum rule and Parseval. The lens pass is in `GOAL_block29.md`. Facts settled while executing: the normalization is within a tenth of the infrared bound already at `β = 0.8`, just above the located strength, so the lower bound of block 19 is the loose side of the window; the longest mode is the only one with visible finite-size scatter. The refuting pass (`CHECKER_block29_findings.md`) extracted the constant from the real-space correlation against the torus Green function, ran a single-site proposal chain, and tested the sum rule in a field.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py
++python3 scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py --list-mutations
++python3 scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py --mutation sum_rule_wrong
++```
++
++Families: A authority and inputs; B the spin-wave reference; C the sum rule; D the mode sum; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 7 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=14 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 9c5ee54886..bc9bee5c1f 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+  "edge_count": 13568,
+- "node_count": 6014,
++ "node_count": 6015,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -750,6 +750,10 @@
+    "deps_hash": "8188f46b334d",
+    "out_degree": 2
+   },
++  "admissibility_rule_transverse_kernel_normalization_in_the_ordered_sphere_static_law_measured_between_the_bounds_with_the_transverse_sum_rule_and_the_spin_wave_reference_bounded_theorem_note_2026-09-16": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "8ae058a5c524",
+    "out_degree": 2
+diff --git a/logs/runner-cache/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt b/logs/runner-cache/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt
+new file mode 100644
+index 0000000000..6ba8804fd5
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt
+@@ -0,0 +1,36 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py
++runner_sha256: 7d58205f79e430b0b24830a4c8066c301cd9b3a5006241c2e3e48180a19d6ff6
++input_fingerprint_sha256: 3e2da28a1cad9a5dd1dcdc32a70d150f886c56f194d19496f7c2e55d22444618
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 0.37
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
++PASS: A1 the note carries its claim_id once
++PASS: A2 the axioms memo carries the four sentences quoted under Premises
++PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
++PASS: A4 all declared inputs exist
++PASS: B1 T1: on the periodic 4^3 lattice the plane waves e^{ik.x} are eigenvectors of the graph Laplacian with eigenvalue E(k) = 2 sum_j (1 - cos k_j) (four wavevectors, symbolic)
++PASS: B2 T1: for the Gaussian transverse model with precision beta Lap on the 4-ring the k-modes n = 1, 2 have variance 1/(beta E(k)) = 1/(2 beta), 1/(4 beta) per component, so beta E(k) <|theta_hat(k)|^2> = 1 — the spin-wave value of the normalization
++PASS: C1 T2: single site in a field: kappa E[(s^1)^2] = E[s^3] for the exponential law with concentration kappa = beta h (the transverse sum rule's one-site instance, symbolic)
++PASS: C2 T2: the rotation generator about e_2 sends s^1 to s^3 and s^3 to -s^1; the surface integral of L(s^1 s^3) vanishes (the integration by parts behind the general sum rule beta h N <(m^1)^2> = <m^3> on any torus)
++PASS: D1 T3: Parseval on a 4-site ring with rational data: N^{-1} sum_k |f_hat(k)|^2 = sum_x f_x^2, so the transverse structure factor's average is the local transverse moment
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
++per_element: executed — the Laplacian's plane-wave eigenvalues on the 4^3 lattice; the single-site sum rule symbolically; the rotation generator's action
++per_site: executed — the 4-ring Gaussian modes' variances 1/(beta E(k)); the vanishing surface integral behind the integration by parts
++per_mode: executed — Parseval on rational data; the measured normalization c(beta, k) for k along an axis on 16^3, 24^3, 32^3 (control), by a second estimator and in a field (refuter)
++per_block: executed — the placement of c(beta, k) between (m^2/3)^2 and 1 at beta = 0.8, 1, 1.5, 2, 3 (control and refuter outputs)
++lattice_wide: T1-T3 proved as stated; the normalization is measured on finite lattices, not proved
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=14 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py b/scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py
+new file mode 100755
+index 0000000000..cdc166ee94
+--- /dev/null
++++ b/scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py
+@@ -0,0 +1,270 @@
++#!/usr/bin/env python3
++"""Exact checks: the normalization of the transverse kernel in the ordered sphere static law — the spin-wave reference, the transverse
++sum rule in a field, and Parseval.
++
++Scope.  T1: on the periodic 4^3 lattice the plane waves are eigenvectors of the Laplacian with eigenvalue E(k) = 2 sum_j (1 - cos k_j)
++(symbolic), so the Gaussian transverse model with precision beta Lap has k-mode variance 1/(beta E(k)) per component and the
++normalization beta E(k) <|theta_hat(k)|^2> = 1.  T2: the single-site transverse sum rule kappa E[(s^1)^2] = E[s^3] for the exponential
++law with concentration kappa = beta h (symbolic), the integration-by-parts identity behind the general sum rule on a torus, and the
++sum rule's two-site instance by exact quadrature in the cosines.  T3: Parseval on rational data.  Exact arithmetic only (integers,
++Fractions and sympy); the runner scans its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import itertools
++import re
++import sys
++from fractions import Fraction
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_transverse_kernel_normalization_in_the_ordered_sphere_static_law_measured_between_the_bounds_with_the_transverse_sum_rule_and_the_spin_wave_reference_bounded_theorem_note_2026-09-16"
++BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
++BLOCK01_FRAGMENT = "the static law of a product rule"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++    "Only records are readable.",
++)
++
++MUTATION_GATE = {
++    "eigenvalue_wrong": "B",
++    "spin_wave_normalization_wrong": "B",
++    "sum_rule_wrong": "C",
++    "integration_by_parts_wrong": "C",
++    "parseval_wrong": "D",
++    "claim_source_injected": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: set[str] = set()
++
++    def check(self, tag: str, ok: bool, msg: str) -> None:
++        if ok:
++            self.passed += 1
++            print(f"PASS: {tag} {msg}")
++        else:
++            self.failed += 1
++            self.failed_families.add(tag[0])
++            print(f"FAIL: {tag} {msg}")
++
++
++def normalize_text(text: str) -> str:
++    return re.sub(r"\s+", " ", text)
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, block01 = texts
++    checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "the note carries its claim_id once")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axioms memo carries the four sentences quoted under Premises")
++    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "block 01's note (on main) carries its claim_id and the rule's product form")
++    checks.check("A4", all(Path(ROOT, p).exists() for p in AUDIT_INPUT_PATHS), "all declared inputs exist")
++
++
++# ============================================================================================ family B
++def family_b(checks: Checks) -> None:
++    L = 4
++    sites = list(itertools.product(range(L), repeat=3))
++    index = {s: i for i, s in enumerate(sites)}
++    N = len(sites)
++    Lap = sp.zeros(N, N)
++    for s in sites:
++        i = index[s]
++        for ax in range(3):
++            for sh in (1, -1):
++                t = list(s)
++                t[ax] = (t[ax] + sh) % L
++                Lap[i, i] += 1
++                Lap[i, index[tuple(t)]] -= 1
++    ok = True
++    factor = 2
++    if mut("eigenvalue_wrong"):
++        factor = 1
++    for kk in ((1, 0, 0), (2, 0, 0), (1, 1, 0), (1, 2, 3)):
++        k = [2 * sp.pi * n / L for n in kk]
++        v = sp.Matrix([sp.exp(sp.I * sum((kj * sj for kj, sj in zip(k, s)), sp.Integer(0))) for s in sites])
++        E = factor * sum((1 - sp.cos(kj) for kj in k), sp.Integer(0))
++        ok = ok and sp.simplify(Lap * v - E * v) == sp.zeros(N, 1)
++    checks.check("B1", ok, "T1: on the periodic 4^3 lattice the plane waves e^{ik.x} are eigenvectors of the graph Laplacian with eigenvalue E(k) = 2 sum_j (1 - cos k_j) (four wavevectors, symbolic)")
++    # the Gaussian model: density proportional to exp(-(beta/2) theta^T Lap theta) per component; the covariance of the k-mode is 1/(beta E(k)) for k != 0:
++    # symbolic on the 1-d ring of 4 sites, where Lap is 4x4 and the modes are explicit
++    beta = sp.symbols("beta", positive=True)
++    ring = sp.Matrix([[2, -1, 0, -1], [-1, 2, -1, 0], [0, -1, 2, -1], [-1, 0, -1, 2]])
++    # restrict to the zero-sum subspace (k != 0): the pseudo-inverse of beta*ring on that subspace has eigenvalues 1/(beta E(k))
++    claimed = {1: 1 / (beta * 2), 2: 1 / (beta * 4)}   # E(2 pi/4) = 2, E(pi) = 4
++    if mut("spin_wave_normalization_wrong"):
++        claimed = {1: 1 / (beta * 4), 2: 1 / (beta * 4)}
++    ok2 = True
++    for n, val in claimed.items():
++        k = 2 * sp.pi * n / 4
++        v = sp.Matrix([sp.exp(sp.I * k * x) for x in range(4)])
++        ok2 = ok2 and sp.simplify(beta * ring * v - v / val) == sp.zeros(4, 1)
++    checks.check("B2", ok2, "T1: for the Gaussian transverse model with precision beta Lap on the 4-ring the k-modes n = 1, 2 have variance 1/(beta E(k)) = 1/(2 beta), 1/(4 beta) per component, so beta E(k) <|theta_hat(k)|^2> = 1 — the spin-wave value of the normalization")
++
++
++# ============================================================================================ family C
++def family_c(checks: Checks) -> None:
++    kap, w = sp.symbols("kappa w", positive=True)
++    Z = sp.integrate(sp.exp(kap * w), (w, -1, 1))
++    Ew = sp.integrate(w * sp.exp(kap * w), (w, -1, 1)) / Z
++    Ew2 = sp.integrate(w ** 2 * sp.exp(kap * w), (w, -1, 1)) / Z
++    transverse_sq = (1 - Ew2) / 2
++    coeff = 1
++    if mut("sum_rule_wrong"):
++        coeff = 2
++    ok1 = sp.simplify((coeff * kap * transverse_sq - Ew).rewrite(sp.exp)) == 0
++    checks.check("C1", ok1, "T2: single site in a field: kappa E[(s^1)^2] = E[s^3] for the exponential law with concentration kappa = beta h (the transverse sum rule's one-site instance, symbolic)")
++    # integration by parts on the sphere: for the rotation generator L = s^3 d/ds^1 - s^1 d/ds^3 (about e_2) and smooth G, the surface
++    # integral of L G vanishes; hence <L G> = -<G L log w> for the law w dsigma. With G = s^1 and w = e^{kappa s^3} (single site):
++    # L s^1 = s^3, L log w = -kappa s^1: <s^3> = kappa <(s^1)^2>. Check L in spherical coordinates: L = -d/dtheta for the polar angle
++    # measured from e_3 in the (1,3) plane, and the surface measure's invariance under this rotation.
++    th, ph = sp.symbols("theta phi", real=True)
++    s1, s3 = sp.sin(th) * sp.cos(ph), sp.cos(th)
++    G = sp.Function("G")
++    # the generator of rotations about e_2 acting on functions of (theta, phi): with s = (sin th cos ph, sin th sin ph, cos th),
++    # rotating about e_2 by angle a: s^1 -> s^1 cos a + s^3 sin a, s^3 -> -s^1 sin a + s^3 cos a; d/da at a = 0 of a function f(s^1, s^3):
++    f = sp.Function("f")
++    a = sp.symbols("a", real=True)
++    rot1 = s1 * sp.cos(a) + s3 * sp.sin(a)
++    rot3 = -s1 * sp.sin(a) + s3 * sp.cos(a)
++    Lf = sp.diff(f(rot1, rot3), a).subs(a, 0)
++    # L applied to s^1 gives s^3 and to s^3 gives -s^1; to kappa s^3 gives -kappa s^1
++    L_s1 = sp.simplify(Lf.subs(f, sp.Lambda((sp.Symbol("u"), sp.Symbol("v")), sp.Symbol("u"))).doit())
++    L_s3 = sp.simplify(Lf.subs(f, sp.Lambda((sp.Symbol("u"), sp.Symbol("v")), sp.Symbol("v"))).doit())
++    sign = -1
++    if mut("integration_by_parts_wrong"):
++        sign = 1
++    ok2 = sp.simplify(L_s1 - s3) == 0 and sp.simplify(L_s3 - sign * s1) == 0
++    # the vanishing of the surface integral of L G: integrate L(s^1 s^3) = (s^3)^2 - (s^1)^2 over the sphere -> 0 by symmetry, executed
++    integral = sp.integrate(sp.integrate((s3 ** 2 - s1 ** 2) * sp.sin(th), (ph, 0, 2 * sp.pi)), (th, 0, sp.pi))
++    checks.check("C2", ok2 and sp.simplify(integral) == 0, "T2: the rotation generator about e_2 sends s^1 to s^3 and s^3 to -s^1; the surface integral of L(s^1 s^3) vanishes (the integration by parts behind the general sum rule beta h N <(m^1)^2> = <m^3> on any torus)")
++
++
++# ============================================================================================ family D
++def family_d(checks: Checks) -> None:
++    f = [Fraction(3, 7), Fraction(-2, 7), Fraction(5, 7), Fraction(1, 7)]
++    Fk = [sum((f[x] * sp.exp(-2 * sp.pi * sp.I * k * x / 4) for x in range(4)), sp.Integer(0)) for k in range(4)]
++    lhs = sp.simplify(sum((sp.Abs(Fk[k]) ** 2 for k in range(4)), sp.Integer(0)) / 4)
++    rhs = sum((fx * fx for fx in f), Fraction(0))
++    if mut("parseval_wrong"):
++        rhs = rhs * 2
++    checks.check("D1", sp.simplify(lhs - sp.Rational(rhs.numerator, rhs.denominator)) == 0, "T3: Parseval on a 4-site ring with rational data: N^{-1} sum_k |f_hat(k)|^2 = sum_x f_x^2, so the transverse structure factor's average is the local transverse moment")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note proves the spin-wave reference `βE(k)⟨|θ̂(k)|²⟩ = 1` for the quadratic transverse model, the transverse sum rule `βh·N⟨(m̂¹)²⟩ = ⟨m̂³⟩` for the sphere static law in a field on any finite torus, and the mode sum's identity for the transverse structure factor; the normalization `c(β, k) = βE(k)S_⊥(k)` of the transverse kernel in the ordered sphere static law is measured by simulation on finite lattices and placed between block 19's bounds, not proved; it does not select a menu, reading, order or coupling as physical, and adopts no clause.",
++    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "the physical reading", "the physical menu", "for every coupling", "selects the", "fires wake condition",
++    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
++    "sharp threshold", "the transition point", "Goldstone", "spontaneous symmetry breaking", "is the source of gravity", "the gravity node's kernel is",
++)
++CLAIM_INJECTIONS = {"claim_source_injected": "Hence the transverse channel is the source of gravity."}
++CLASSICAL_NAMES = ("Heisenberg", "Bogoliubov", "Mermin", "Wagner", "Fröhlich", "Simon", "Spencer", "Dyson", "Lieb", "Parseval", "Ward", "Metropolis")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects", "Review record")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text.replace("## Theorem T3", phrase + "\n\n## Theorem T3", 1)
++    if mut("claim_classical_name_in_theorem"):
++        text = text.replace("## Theorem T1", "## Theorem T1 (after Bogoliubov)", 1)
++    norm = normalize_text(text)
++    checks.check("F1", all(normalize_text(f) in norm for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [p for p in FORBIDDEN if p in text]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    src = Path(__file__).read_text(encoding="utf-8")
++    body = src.split(SCAN_MARKER)[0]
++    float_hits = re.findall(r"(?<![\w.])\d+\.\d+(?![\w.])|\bfloat\(|\.evalf\(|\bN\(", body)
++    checks.check("F3", not float_hits, f"runner source: no floating-point literal or conversion call ({len(float_hits)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for sec in sections[1:]:
++        title = sec.split("\n", 1)[0].strip()
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in sec:
++                offenders.append((title[:40], nm))
++    offenders += [("front matter", nm) for nm in CLASSICAL_NAMES if nm in sections[0]]
++    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports, the Premises and the Review record ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the Laplacian's plane-wave eigenvalues on the 4^3 lattice; the single-site sum rule symbolically; the rotation generator's action",
++    "per_site: executed — the 4-ring Gaussian modes' variances 1/(beta E(k)); the vanishing surface integral behind the integration by parts",
++    "per_mode: executed — Parseval on rational data; the measured normalization c(beta, k) for k along an axis on 16^3, 24^3, 32^3 (control), by a second estimator and in a field (refuter)",
++    "per_block: executed — the placement of c(beta, k) between (m^2/3)^2 and 1 at beta = 0.8, 1, 1.5, 2, 3 (control and refuter outputs)",
++    "lattice_wide: T1-T3 proved as stated; the normalization is measured on finite lattices, not proved",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5, "the five N5 resolution lines are printed")
++
++
++# ============================================================================================ main
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    print("AUDIT_INPUT_PATHS:")
++    for p in AUDIT_INPUT_PATHS:
++        print(f"  {p}")
++    texts = [Path(ROOT, p).read_text(encoding="utf-8") if Path(ROOT, p).exists() else "" for p in AUDIT_INPUT_PATHS]
++    checks = Checks()
++    family_a(checks, texts)
++    family_b(checks)
++    family_c(checks)
++    family_d(checks)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
++    print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
++    return 0 if checks.failed == 0 else 1
++
++
++if __name__ == "__main__":
++    sys.exit(main(sys.argv[1:]))
++# float-scan-marker-line

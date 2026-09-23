@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "kind": "static-adapter-and-actual-metadata-API-verification-not-execution",
+  "source_manifest_sha256": "70b6331cf48a0da2b64ff88a8f4279758fa48ef8e299b6b3d48ff469f79f75d5",
+  "source_count": 23,
+  "source_hashes_unchanged": true,
+  "index_and_tracked_clean": true,
+  "artifact_compile": {
+    "drain8171-build-staged-draft-v1.py": true,
+    "drain8171-capture-v1.py": true,
+    "drain8171-mutation-capture-v1.py": true
+  },
+  "embedded_worker_compile": true,
+  "primary_imported": false,
+  "adapter_invocations": 0,
+  "builder_invocations": 0,
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "gates": 0,
+  "actual_API": {
+    "tooling": [
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5"
+      }
+    ],
+    "execute_runner_signature": "(runner_path: 'str', timeout_sec: 'int') -> 'dict'",
+    "execute_and_write_cache_signature": "(runner_path: 'str', timeout_sec: 'int') -> 'tuple[dict, Path | None]'",
+    "primary": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+    "claim_id": "sphere_formation_kernel_sensitivity_and_level_contraction_bounded_theorem_note_2026-09-16",
+    "inputs": [
+      "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+    ],
+    "fingerprint": "4d2ca977dfa5db6f07e9072d4d4dd6c8189ad33b465932412a23af2707dd4109",
+    "timeout": 60,
+    "helpers": [],
+    "citations": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/work_history/review_loop/pr8171/README.md"
+    ]
+  },
+  "raw_preservation": "Wrapper records exact actual execute_runner return before returning same object to original execute_and_write_cache; original pre/post content+filesystem-generation identity checks remain unchanged.",
+  "cold_status": "Intentionally fail closed with COLD_CLEARANCE_BINDING=None until actual reviewer report is read and bound in new immutable adapter versions.",
+  "CLI_read": "AST and complete main() inspected; --mutation <name> accepted, all ten literals found; eight mathematical routes proposed, exact expected tag failures and 15/1 output required; no --list-mutations execution.",
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-build-staged-draft-v1.py",
+      "sha256": "2d50cf401cbe3f9baf993d056449ce6ffaee457960162250eba2ef7c62011145"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-capture-v1.py",
+      "sha256": "3ac252adfb2c0eced1b93eb071649e86fc1e581fb07019d5dc99707e5c38c588"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-capture-v1.py",
+      "sha256": "76041434c6e8f7cf393e4a06cf667e94a10a8ede8191395d24ba8290fd1c1f9f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-capture-plan-v1.json",
+      "sha256": "12b72e616fd0579db2e76fbe74c8b18884db853416da60a460bca3662d68b352"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-adapter-bindings-v1.json",
+      "sha256": "308c4d6f5f79e5e6363c92afb4c14593bb41ed68e1a3cb8bf85a0cd65a492d7d"
+    }
+  ]
+}

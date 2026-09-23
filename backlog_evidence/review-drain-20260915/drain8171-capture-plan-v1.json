@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "kind": "proposed-root-owned-capture-and-mathematical-control-plan-not-executed",
+  "primary": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+  "primary_sha256": "e889b37d917e35c63b7a4cc6c439f9a011e870e67ccf66a2b8d42f667c5bd946",
+  "runtime_inputs": [
+    {
+      "path": "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "bcbad1f04d60ba345906cf1d83dc45691bb92516ddd85b2af2318f738f96f54c",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "context only, not mathematical premise"
+    }
+  ],
+  "input_fingerprint": "4d2ca977dfa5db6f07e9072d4d4dd6c8189ad33b465932412a23af2707dd4109",
+  "helpers": [],
+  "cache_destination": "logs/runner-cache/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.txt",
+  "stdout_only": true,
+  "json_outputs": [],
+  "primary_output_writes": [],
+  "runner_cache_result_contract": "Original API merges primary stderr into stdout; result.stderr is empty by design. Raw result is serialized before original source/input generation comparison, unchanged return identity.",
+  "primary_limits": {
+    "wall_seconds": 60,
+    "memory_bytes": 402653184,
+    "enforcement": "External sampled aggregate process-tree RSS including supervisor, worker and descendants; interval .02s plus ps overhead; not an OS hard reservation; kills process group and recorded descendants on violation."
+  },
+  "completed_check_count": 16,
+  "primary_invocations": 1,
+  "all_mutation_definitions": {
+    "variance_identity_wrong": "B",
+    "directional_moment_wrong": "B",
+    "sign_lemma_wrong": "B",
+    "sensitivity_bound_wrong": "B",
+    "contraction_constant_wrong": "C",
+    "one_site_rate_wrong": "C",
+    "reach_wrong": "D",
+    "reach_upper_wrong": "D",
+    "claim_transition_injected": "F",
+    "claim_classical_name_in_theorem": "F"
+  },
+  "mathematical_controls": {
+    "variance_identity_wrong": {
+      "expected_family": "B",
+      "expected_failed_tags": [
+        "B1"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 15,
+        "failed": 1
+      },
+      "mechanism": "Replace the derivative variance target by half its value; independent integrated variance should reject it."
+    },
+    "directional_moment_wrong": {
+      "expected_family": "B",
+      "expected_failed_tags": [
+        "B2"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 15,
+        "failed": 1
+      },
+      "mechanism": "Change the longitudinal coefficient from 3A/kappa to 2A/kappa."
+    },
+    "sign_lemma_wrong": {
+      "expected_family": "B",
+      "expected_failed_tags": [
+        "B3"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 15,
+        "failed": 1
+      },
+      "mechanism": "Change the entire-series coefficient factor m/2 to m/3."
+    },
+    "sensitivity_bound_wrong": {
+      "expected_family": "B",
+      "expected_failed_tags": [
+        "B4"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 15,
+        "failed": 1
+      },
+      "mechanism": "Change the tested mean/variance slope from 1/3 to 1/4 at the unchanged ten rational points."
+    },
+    "contraction_constant_wrong": {
+      "expected_family": "C",
+      "expected_failed_tags": [
+        "C1"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 15,
+        "failed": 1
+      },
+      "mechanism": "Replace sqrt(3) enclosures by 3/2; unchanged two beta boundary fixtures reject the crossing."
+    },
+    "one_site_rate_wrong": {
+      "expected_family": "C",
+      "expected_failed_tags": [
+        "C2"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 15,
+        "failed": 1
+      },
+      "mechanism": "Halve the comparison slope of A(3beta) on unchanged rational fixtures."
+    },
+    "reach_wrong": {
+      "expected_family": "D",
+      "expected_failed_tags": [
+        "D1"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 15,
+        "failed": 1
+      },
+      "mechanism": "Remove the negative quadratic term from the lower comparison; same five enclosures reject it."
+    },
+    "reach_upper_wrong": {
+      "expected_family": "D",
+      "expected_failed_tags": [
+        "D1"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 15,
+        "failed": 1
+      },
+      "mechanism": "Reduce the upper comparison slope from 1/3 to 3/10; same fixtures reject it."
+    }
+  },
+  "mutation_limits": {
+    "wall_seconds_each": 60,
+    "memory_bytes_each": 402653184,
+    "sequence": "Serial individual invocations of --mutation <name>, after preserved primary receipt; no baseline invocation; once-only marker per name; abort on unexpected result, no retry."
+  },
+  "not_proposed_packaging_mutations": [
+    "claim_transition_injected",
+    "claim_classical_name_in_theorem"
+  ],
+  "scientific_scope": "Finite corruption sensitivity only; not execution of compactness, measurable coupling or infinite-plane proofs. Original independent mathematical controls are reused without rerun.",
+  "required_before_execution": [
+    "Exact staged schema2 source and input record",
+    "Cheap mechanical preflight tied to that record/tree",
+    "Original same-session actual cold report clearance, explicitly bound in a new immutable adapter version; v1 deliberately refuses execution",
+    "Root explicit capture dispatch"
+  ],
+  "failure_policy": "Preserve markers, raw result, live merged stream, supervisor log, mutation stdout/stderr, receipt and source/input generations. No automatic retry, baseline repeat, cap increase, evidence replacement or fabricated JSON.",
+  "source_resource_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-resource-plan-v2.json",
+    "sha256": "7ac5e32c604a0fa248fa9f6f6efeadd0c6cf076b4204f2bda218cd528e408350"
+  }
+}

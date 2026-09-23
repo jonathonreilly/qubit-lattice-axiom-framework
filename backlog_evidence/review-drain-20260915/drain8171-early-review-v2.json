@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "same-session-early-source-clearance-not-final-pass",
+  "pr": 8171,
+  "reviewer_session": "/root/review_8171",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "original_head": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "source_revision": 2,
+  "source_clearance": true,
+  "final_pass": false,
+  "landing_pass": false,
+  "negative_certification": "deferred; branch retention required",
+  "material_findings": [],
+  "original_finding_dispositions": {
+    "R8171-1": "resolved",
+    "R8171-2": "resolved",
+    "R8171-3": "positive proof resolved; corrected negative argument deferred",
+    "R8171-4": "source resolved; graph/cache preparation pending",
+    "R8171-5": "source resolved; capture/mutation evidence pending",
+    "R8171-6": "honest deferral; not negative packet PASS"
+  },
+  "verified_source_paths": 23,
+  "verified_original_recoveries": 18,
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "simulation_runs": 0,
+  "gate_runs": 0,
+  "source_edits": 0,
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-early-review-v2.md",
+      "sha256": "322321ab0d0341498bf8f49b9a859080da237bd2590461ff30fabe225ff8ff22"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-handoff-v2.json",
+      "sha256": "0d10265a2831d7a8b04bed9068cce29b59ca2d7ea6b10463127cb0523616f491"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-prepared-v2.json",
+      "sha256": "70b6331cf48a0da2b64ff88a8f4279758fa48ef8e299b6b3d48ff469f79f75d5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-source-input-discovery-v2.json",
+      "sha256": "38103e9bf7c1b25d0645f517b06fd0ff29cab51f3bc5c1bd677b0010d6aa0aea"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-resource-plan-v2.json",
+      "sha256": "7ac5e32c604a0fa248fa9f6f6efeadd0c6cf076b4204f2bda218cd528e408350"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/verify_early_v2.py",
+      "sha256": "fbf258cfd8bae6a14bfd56323a8bcc6f773f3f8f7d833ed8be2a9176f208fb0c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/verify_early_v2.stdout.json",
+      "sha256": "ca8bde41ae5c5c24868ff3b14567b5b4dd093432846f154bfa5604ce315506ac"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/verify_early_v2.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

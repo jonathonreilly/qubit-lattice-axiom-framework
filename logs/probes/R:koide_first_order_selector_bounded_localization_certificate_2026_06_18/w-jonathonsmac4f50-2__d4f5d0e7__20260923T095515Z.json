@@ -1,0 +1,36 @@
+{
+ "task": "R:koide_first_order_selector_bounded_localization_certificate_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_first_order_selector_bounded_localization_certificate_2026_06_18.py",
+ "seed": 57315,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f5d0e7",
+ "started_utc": "20260923T095515Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=54 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "81231f24b90156d7fd0672a42aa072923302e66c517d7d09339c7e5936562837",
+ "stdout_tail": " firewall marker present: discrete `C3` clock index\nPASS: required firewall marker present: native circulant anticommuting operator\nPASS: required firewall marker present: static grading or complex structure\nPASS: required firewall marker present: separate chiral factor\nPASS: required firewall marker present: N2 wall independence\nPASS: required firewall marker present: N3 hidden-wall scan\nPASS: required firewall marker present: N4 residual matching\nPASS: required firewall marker present: N5 rhetoric audit\nPASS: required firewall marker present: N6 partial-closure path scan\nPASS: required firewall marker present: N7 steelman\nPASS: required firewall marker present: N8 cross-cycle echo\nPASS: forbidden overclaim absent: is a retained physical selector\nPASS: forbidden overclaim absent: derives the physical Koide `r=1/2` selector\nPASS: forbidden overclaim absent: AC_phi_lambda supplies the physical\nPASS: forbidden overclaim absent: framework supplies the physical coupling\nPASS: forbidden overclaim absent: is a retained Koide `r=1/2` derivation\nPASS: forbidden overclaim absent: asserts an effective-status change\nPASS: forbidden overclaim absent: only surviving escape requires\nPASS: forbidden overclaim absent: only surviving first-order escape\nPASS: forbidden overclaim absent: only viable first-order escape\nPASS: certificate enumerates five load-bearing statements\nPASS: verification stanza points at this runner\n\nTOTAL: PASS=54 FAIL=1\nVERDICT: bounded localization certificate FAILED.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T095516Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=54 FAIL=1' vs cache 'TOTAL: PASS=55 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "R:common_clifford_context_interpreter_cycle191_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "common",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/common_clifford_context_interpreter_cycle191_2026_07_16.py",
+ "seed": 56937,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0987cb51",
+ "started_utc": "20260923T094857Z",
+ "elapsed_s": 3.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "98800339ed7fe119b00b7ba71a85a682ae134298b7f0e8f4e035528699b32b19",
+ "stdout_tail": "opic nearest-neighbour lattice derivation', 'classical program dispatch remains imported', 'born trace pairing remains imported', 'actuality and frequency remain open', 'no axiom conclusion follows')\n\nACCOUNTING\nCLIFFORD {'full_states': 11520, 'full_diameter': 11, 'real_states': 1152, 'real_diameter': 15}\nPROGRAMS {'R1': (), 'R2': ('H0', 'CX10', 'CX01', 'H0'), 'R3': ('H0', 'CX01', 'H0'), 'C1': ('H1',), 'C2': ('CX01', 'CX10', 'H1'), 'C3': ('CX10', 'H1')}\nCONTEXT_COST {'R1': {'basis_gates': 0, 'instrument_gates': 2, 'instrument_depth': 1, 'program_code': (0, 0, 0)}, 'R2': {'basis_gates': 4, 'instrument_gates': 10, 'instrument_depth': 9, 'program_code': (0, 0, 1)}, 'R3': {'basis_gates': 3, 'instrument_gates': 8, 'instrument_depth': 7, 'program_code': (0, 1, 0)}, 'C1': {'basis_gates': 1, 'instrument_gates': 4, 'instrument_depth': 3, 'program_code': (0, 1, 1)}, 'C2': {'basis_gates': 3, 'instrument_gates': 8, 'instrument_depth': 7, 'program_code': (1, 0, 0)}, 'C3': {'basis_gates': 2, 'instrument_gates': 6, 'instrument_depth': 5, 'program_code': (1, 0, 1)}}\nPREPARATION_COST {'prep:Z0Z0': {'gates': 0, 'depth': 0, 'code': (0,)}, 'prep:X+X+': {'gates': 2, 'depth': 1, 'code': (1,)}}\nPROGRAM_STORAGE {'context_bits': 3, 'preparation_bits': 1, 'basis_tokens': 13, 'legal_context_codes': 7, 'reserved_codes': 1}\nPHASE {'dynamic_phase_gates': 0, 'signs': {'R1': (1, 'ZZ'), 'R2': (1, 'XX'), 'R3': (1, 'YY'), 'C1': (1, 'ZX'), 'C2': (1, 'XZ'), 'C3': (-1, 'YY')}}\nPASS 16 FAIL 1\nRESULT CYCLE191_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T094901Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

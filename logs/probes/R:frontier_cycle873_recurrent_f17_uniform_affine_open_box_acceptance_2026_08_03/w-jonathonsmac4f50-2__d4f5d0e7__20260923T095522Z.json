@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
+ "seed": 57322,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f5d0e7",
+ "started_utc": "20260923T095522Z",
+ "elapsed_s": 32.6,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "035850b56ddeb0fd29908a0666f36d5377a87e6fbd949c8e82533e43f52514f9",
+ "stdout_tail": "{\n  \"base_commit\": \"c73a11d1ea7ddd564c48aa2a5a459a43d94262ef\",\n  \"base_is_ancestor_of_head\": false,\n  \"cycle873_unused_on_base\": true,\n  \"failures\": [\n    \"recorded base is not an ancestor of HEAD\",\n    \"upstream citation hash drift\",\n    \"primary cold return code\",\n    \"primary cold stdout drift\",\n    \"primary cold receipt drift\",\n    \"independent cold return code\",\n    \"independent cold stdout drift\",\n    \"independent cold receipt drift\"\n  ],\n  \"independent_cold_receipt_match\": false,\n  \"package_file_count\": 33,\n  \"primary_cold_receipt_match\": false,\n  \"receipt\": \"outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json\",\n  \"status\": \"fail\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T095555Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '  \"status\": \"fail\"' vs cache '  \"status\": \"pass\"'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.txt against the .txt beside this log"
+  ]
+ }
+}

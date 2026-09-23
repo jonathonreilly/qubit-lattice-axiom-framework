@@ -1,0 +1,41 @@
+AUTHORITY, ROLES, AND CANDIDATE PRICE
+FAIL Cycle-183 review note exists :: 
+PASS the three apparatus roles are fresh and exactly priced :: (frozenset(), Counter({'LITERAL_FRAME': 1525, 'MEMBER5_FRAME': 1214}))
+PASS the compiled local delta and merged law are deterministic :: (21, 330, 102326, 0, 0, 0, 0)
+PASS the intended join graph is local and has no unintended adjacent pair :: (715, 2739)
+
+TESTED REPAIR AND EXACT ENDPOINT-SEAM PROFILES
+PASS the unused endpoint-minus-z face is sterile after the first repair :: Counter({(0, frozenset({'H1'}), None, None, frozenset({'H0'}), None): 5, (1, None, None, None, frozenset({'H1'}), None): 5})
+PASS the remaining seam has one inherited H0-only flip and one all-bit self-copy :: Counter({(0, frozenset({'H1'}), None, None, frozenset({'H0'}), None): 5, (1, None, None, None, frozenset({'H1'}), None): 5})
+PASS both remaining seam signatures and the repaired face are exact in all 24 orientations :: ()
+
+ALL-32 FULL-HISTORY FAILURE CENSUS
+PASS all 32 words fail first at only the two named endpoint-seam classes :: (Counter({666: 32}), ())
+
+SURVIVING BOUNDED JOIN-TREE FACTS
+PASS the intended status tree is value-neutral with all-five final ancestry :: ({(-35, 9, 0), (-35, 33, 0)}, frozenset({0, 1, 2, 3, 4}))
+PASS no 32-valued payload or supplied MEMBER5 is used by the candidate :: 
+
+ENDPOINT EDGE DELETION
+PASS all 320 endpoint-to-leaf edge deletions are exact :: (320, ())
+
+SCOPE AND NO-GO DISCIPLINE
+FAIL the note freezes the narrow obstruction, live routes, and N1-N8 gate :: 
+
+ACCOUNTING
+NEW_ROLES ('LITERAL_FRAME', 'MEMBER5', 'MEMBER5_FRAME')
+SCAFFOLD_RECORDS 2739 Counter({'LITERAL_FRAME': 1525, 'MEMBER5_FRAME': 1214})
+ADDED_DYNAMIC_RECORDS 715
+STATUS_DYNAMIC_RECORDS 320
+LITERAL_DYNAMIC_RECORDS 390
+CONSUMER_RECORDS 5
+COMPILED_CANONICAL_ROWS 21
+NEW_RAW_ROWS 330
+FULL_RAW_ROWS 102326
+SEAM_PROFILES Counter({(0, frozenset({'H1'}), None, None, frozenset({'H0'}), None): 5, (1, None, None, None, frozenset({'H1'}), None): 5})
+FULL_HISTORY_FAILURES 32
+FAILURE_STEPS Counter({666: 32})
+J01 (-35, 9, 0) J23 (-35, 33, 0) J0123 (-50, 21, 0) JFINAL (-65, 40, 0)
+CONSUMER_SITES ((-80, 3, -20), (-80, 15, -20), (-80, 27, -20), (-80, 39, -20), (-80, 51, -20))
+PASS 10 FAIL 2
+RESULT CYCLE183_OPEN

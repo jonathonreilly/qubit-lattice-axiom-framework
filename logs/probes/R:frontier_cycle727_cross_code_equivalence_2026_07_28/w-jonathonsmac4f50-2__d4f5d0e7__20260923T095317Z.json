@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle727_cross_code_equivalence_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py",
+ "seed": 57197,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f5d0e7",
+ "started_utc": "20260923T095317Z",
+ "elapsed_s": 7.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cdf1c54c3b954ba9b73e97fb9ec942e5b93470888d0ca059101d989e1c4e2aa5",
+ "stdout_tail": "\"R\":472,\"dictionary_sha256\":\"c55deffa417b236dc8d98cc55848b4a934d65b4b669f4d43fe44a0aa9e5dfb5f\",\"family_table\":[[72,72,71,0,0],[20,20,20,3,1],[20,20,20,3,1],[180,108,108,0,0],[180,108,108,0,0]],\"generators_sha256\":\"3c5860d43097ace6362b6404d6c16344bbd182dd53a9286f22169a9c092c3196\",\"shape\":[3,2,2],\"supply_counts_sha256\":\"a153fbd0d2edd4e821d6fe50c292b6871532acb74e807016b6587f30b756adc9\"},{\"E\":33,\"N\":18,\"R\":714,\"dictionary_sha256\":\"8214b0b177946978e3093caff08deec409eab384ea1a096d50da0fa5d90ecd89\",\"family_table\":[[108,108,107,0,0],[33,33,33,3,1],[33,33,33,3,1],[270,162,162,0,0],[270,162,162,0,0]],\"generators_sha256\":\"b5034ea7fed08c08b9a870bb619413be4b1b26aab9bdb15bd3c2d91e991fd696\",\"shape\":[3,3,2],\"supply_counts_sha256\":\"ab93f2109967f7fd4b997a1b216caf0872b3fcc30a521d3eca217992724e0f7a\"},{\"E\":59,\"N\":30,\"R\":1198,\"dictionary_sha256\":\"d3d60bdd877d6f8b1d4fe35be6c7ea9fcbf2ee9a203564fe0fd0654f46e7ccf2\",\"family_table\":[[180,180,179,0,0],[59,59,59,3,1],[59,59,59,3,1],[450,270,270,0,0],[450,270,270,0,0]],\"generators_sha256\":\"31d285db9789bfccaf59abcf276874ff0789aadee410f163a8bd84154e0060e0\",\"shape\":[5,3,2],\"supply_counts_sha256\":\"b9d9f50e3900e77e695dd78a699bc73c237a0de3810b9b940089a507009917b6\"}],\"single_fixed_sector_dimension\":{\"certified\":true,\"dimension_ratio\":2,\"exponent_pairs\":{\"2x2x2\":[48,47],\"3x2x2\":[72,71],\"3x3x2\":[108,107],\"5x3x2\":[180,179]},\"two_sector_direct_sum_dimension_match\":true},\"status\":\"CYCLE727_FINITE_BOX_SIGNED_PULLBACK_PASS\",\"supply_predicates\":{\"passed\":13,\"total\":13}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T095325Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"boundary\":{\"channel_scope\":\"separate supplied fixed-parity sectors\",\"coherent_' vs cache '{\"boundary\":{\"channel_scope\":\"separate supplied fixed-parity sectors\",\"coherent_'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle727_cross_code_equivalence_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

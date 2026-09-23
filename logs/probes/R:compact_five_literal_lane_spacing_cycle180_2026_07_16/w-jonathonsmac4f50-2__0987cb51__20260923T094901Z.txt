@@ -1,0 +1,33 @@
+AUTHORITY AND FIXED CONSTRUCTION
+FAIL Cycle-180 review note exists :: 
+PASS the probe keeps the Cycle-178 law and literal alphabet fixed :: (('H0', 'H1'), 12, 288, 101996)
+
+EXACT SPACING SWEEP
+PASS spacing 12 is the first disjoint five-source translation :: (12, {8: 64, 9: 20, 10: 12, 11: 8, 12: 0})
+PASS spacing 11 fails by eight hard adjacent source-role collisions :: (11, Counter({('R_B32', 'L6'): 8}), (((2, 6, -1), ((0, 'R_B32'), (1, 'L6'))), ((2, 7, 0), ((0, 'R_B32'), (1, 'L6'))), ((2, 17, -1), ((1, 'R_B32'), (2, 'L6'))), ((2, 18, 0), ((1, 'R_B32'), (2, 'L6'))), ((2, 28, -1), ((2, 'R_B32'), (3, 'L6'))), ((2, 29, 0), ((2, 'R_B32'), (3, 'L6'))), ((2, 39, -1), ((3, 'R_B32'), (4, 'L6'))), ((2, 40, 0), ((3, 'R_B32'), (4, 'L6')))))
+PASS the compact sources are disjoint but nearest-neighbor adjacent :: 1
+
+ALL-32 COMPACT CAUSAL CERTIFICATES
+PASS all 32 words retain the exact Cycle-178 causal shape at spacing 12 :: (Counter({(1521, 3455, 18, 16, 0, 10): 32}), ())
+PASS all five compact payload lineages remain exact and disjoint :: ((), {((-26, 3, -1), (-26, 15, -1), (-26, 27, -1), (-26, 39, -1), (-26, 51, -1))})
+PASS the compact causal graph has zero cross-lane ancestry :: ((), (), ())
+PASS the five-lane graph factorizes exactly into five single-lane graphs :: (1521, 3455, 18, 16, 0, 10)
+
+COMPACTION AND BINDING STATUS
+PASS transverse source width falls from 813 to 61 sites :: (813, 61, 800, 48)
+PASS compaction generates no common binding or membership target :: (0, 0)
+
+SCOPE AND NO-GO DISCIPLINE
+FAIL the note freezes the construction-bounded scope and N1-N8 gate :: 
+
+ACCOUNTING
+REFERENCE_SPACING 200
+MINIMUM_DISJOINT_SPACING 12
+FIRST_FAILED_SPACING 11
+FIRST_FAILURES (((2, 6, -1), ((0, 'R_B32'), (1, 'L6'))), ((2, 7, 0), ((0, 'R_B32'), (1, 'L6'))), ((2, 17, -1), ((1, 'R_B32'), (2, 'L6'))), ((2, 18, 0), ((1, 'R_B32'), (2, 'L6'))), ((2, 28, -1), ((2, 'R_B32'), (3, 'L6'))), ((2, 29, 0), ((2, 'R_B32'), (3, 'L6'))), ((2, 39, -1), ((3, 'R_B32'), (4, 'L6'))), ((2, 40, 0), ((3, 'R_B32'), (4, 'L6'))))
+COMPACT_OFFSETS ((0, 0, 0), (0, 12, 0), (0, 24, 0), (0, 36, 0), (0, 48, 0))
+BUNDLE_SHAPES Counter({(1521, 3455, 18, 16, 0, 10): 32})
+CROSS_LANE_EDGES 0
+MULTI_LANE_TARGETS 0
+PASS 10 FAIL 2
+RESULT CYCLE180_OPEN

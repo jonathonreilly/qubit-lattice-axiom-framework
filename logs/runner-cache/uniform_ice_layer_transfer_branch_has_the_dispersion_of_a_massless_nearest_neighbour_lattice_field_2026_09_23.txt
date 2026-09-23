@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.py
+runner_sha256: fc2f2006ce21e7dab791ef38c59b01458ff5da098d4fc4d4cbbb00e2a1206187
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 50.67
+status: ok
+----- stdout -----
+== A. Translations ==
+[PASS] transverse translations commute with T on 2 x 8 and on 4 x 4 :: largest relative defect 5.2e-16
+[PASS] the complement v -> 1 - v commutes with T on 2 x 8 and on 4 x 4 :: largest relative defect 4.5e-16
+
+== B. The strip 2 x 8 ==
+[PASS] the wavenumber-0 top equals the full sector's top lam_0, and D at q = pi/4, pi/2, 3 pi/4 is within 1% of the lattice field :: q=0.7854: D=0.7429 field=0.7478, q=1.5708: D=1.3165 field=1.3170, q=2.3562: D=1.6581 field=1.6530
+[PASS] opposite wavenumbers are degenerate on the strip
+
+== C. The square 4 x 4 ==
+[PASS] at q = (pi/2, 0), (pi/2, pi/2), (pi/2, pi) D is within 2% of the lattice field :: (pi/2, 0.0): D=1.2963 field=1.3170, (pi/2, pi/2): D=1.7419 field=1.7627, (pi/2, pi): D=2.0469 field=2.0634
+[PASS] the diagonal-to-axis ratio agrees with the field's within 1%, and (pi/2, 0) and (0, pi/2) are degenerate :: ratio 1.3438 vs field 1.3385
+
+== D. The lowest branch points are the gaps of open PR #8864 ==
+[PASS] on 2 x 8, 8 D(pi/4) is 5.9434; on 4 x 4, D(pi/2, 0) is 1.29627 :: 5.94340, 1.296269
+
+== E. The branch is odd under the complement ==
+[PASS] the vacuum is even with a positive level on both shapes; every branch state computed is odd with a negative level :: 10 branch states, parities in [-1.000000000, -1.000000000]
+
+time 50 s
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

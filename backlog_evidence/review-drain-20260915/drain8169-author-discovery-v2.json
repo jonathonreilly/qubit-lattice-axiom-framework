@@ -1,0 +1,36 @@
+{
+  "status": "ACTUAL_METADATA_DISCOVERY_PASS_NOT_SCIENTIFIC_EXECUTION",
+  "claim_id": "frame_attached_menu_exchange_covariant_probabilities_bounded_theorem_note_2026-09-16",
+  "note": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+  "runner": "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py",
+  "helpers": [],
+  "ordered_inputs": [
+    {
+      "path": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "d9450ac04bcb887168291f0ccbd4fc101456aa180ab3c543effa38254d2a2e6b"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+    }
+  ],
+  "input_fingerprint": "3468a1cbc2fe0348e238d2aa57385e900a3898f084fb84680f0df938964140ca",
+  "timeout": 120,
+  "parents": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+  ],
+  "citations": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/README.md"
+  ],
+  "context_only": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+  "registry_edits_needed": false,
+  "primary_runs": 0,
+  "formula_changes_require_independent_confirmation": true
+}

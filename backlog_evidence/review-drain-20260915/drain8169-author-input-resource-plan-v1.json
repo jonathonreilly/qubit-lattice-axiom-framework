@@ -1,0 +1,30 @@
+{
+  "runner": {
+    "path": "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py",
+    "sha256": "2ea814c607f858b71c16b651d8e6ebe99aae4a3665495307f31176ca3fd4e057"
+  },
+  "ordered_inputs": [
+    {
+      "path": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "7692d4f16a1afb2bb9a437b44340bda48e10c943df22f476a4d90ef470a687cb"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+    }
+  ],
+  "context_only": {
+    "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+  },
+  "timeout_sec": 120,
+  "proposed_external_process_tree_limit_bytes": 268435456,
+  "source_basis": "24 small 3x3 rational matrices, finite four-atom menus and36endpoint pairs, standard-library JSON/hash overhead; no numerical array package or scaling lattice",
+  "json_output": "logs/runner-cache/frame_attached_menu_exchange_probabilities_2026_09_16.json",
+  "execution": "not run",
+  "mutation_plan": "Original reviewer to prescribe/confirm decisive final-source controls; no mutation or primary executed during preparation"
+}

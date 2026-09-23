@@ -1,0 +1,59 @@
+--- v1/docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md
++++ v2/docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md
+@@ -1,8 +1,11 @@
+ # Corrected endpoint-event proof — deferred scientific source
+ 
+ This is a newly corrected full argument, not the exact original source.
+-The exact original note remains byte-for-byte in `kept/`. This proof has not
+-yet received affected-source confirmation or formal negative certification.
++The exact original note remains byte-for-byte in `kept/`. The conditional mathematical proof below is valid under its supplied
++hypotheses. Formal negative certification and active claim promotion are
++deferred because the actual packet is incomplete; the proof is not rejected
++as false or unproved. Independent affected-source confirmation of these
++corrected bytes remains required.
+ It is preserved for review and recovery, not asserted by the live menu row.
+ 
+ ## Supplied process and measurable separator
+--- v1/docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ v2/docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -146,7 +146,7 @@
+ `work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md`.
+ It distinguishes actual joint endpoint laws using |L·R|<1, rather than
+ conditional menus at an endpoint profile unreachable in chain order. The
+-argument is preserved as deferred scientific source; no universal negative
++valid conditional argument is preserved as deferred scientific source; no universal negative
+ process conclusion is asserted as part of this live bounded row. Formal
+ negative certification is not supplied by changing its label. The exact
+ original erroneous argument is separately retained, never overwritten.
+@@ -170,7 +170,10 @@
+ [Exact eight-path original recovery](work_history/repo/review_feedback/pr8169-evidence/README.md)
+ preserves original modes, blobs, hashes, the 21-check historical cache, all
+ original route text and the topology manifest as history only. The original
+-branch remains a recovery handle for deferred negative certification.
++branch remains a recovery handle for deferred negative certification. Reopen
++active promotion only after an honestly complete negative packet and original
++reviewer confirmation; the valid supplied-process proof is not thereby
++rejected as false or unproved.
+ 
+ ## No-Go Discipline Gate
+ 
+--- v1/scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py
++++ v2/scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py
+@@ -9,7 +9,7 @@
+ AUDIT_TIMEOUT_SEC=120
+ AUDIT_MEMORY_MB=256
+ AUDIT_INPUT_PATHS=['docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md']
+-EXPECTED_INPUT_SHA256={'docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md': '7692d4f16a1afb2bb9a437b44340bda48e10c943df22f476a4d90ef470a687cb', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md': '86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a'}
++EXPECTED_INPUT_SHA256={'docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'd9450ac04bcb887168291f0ccbd4fc101456aa180ab3c543effa38254d2a2e6b', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md': '86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a'}
+ ROOT=Path(__file__).resolve().parents[1]
+ 
+ 
+@@ -98,7 +98,7 @@
+     check("exchange-family",all(2*a+2*g==1 and a>=0 and g>=0 and law(q,qp,(a,a,g,g))==law(qp,q,(a,a,g,g)) for a,g in samples),"Original four pairs, including zero weights")
+     check("invalid-family",2*Fraction(1,3)+2*Fraction(1,3)!=1,"Original normalization countercontrol")
+     check("support-not-menu",[sum(v>0 for v in (a,a,g,g)) for a,g in samples]==[4,2,2,4],"Support counts use nonzero masses")
+-    check("singleton-one-record",len({q:Fraction(1)})==1 and all({apply_matrix(M,q):Fraction(1)}=={apply_matrix(M,q):Fraction(1)} for M in rotations),"delta_q is a normalized covariant singleton; covariance also follows from pushforward")
++    check("singleton-one-record",len({q:Fraction(1)})==1 and all({apply_matrix(M,s):v for s,v in {q:Fraction(1)}.items()}=={apply_matrix(M,q):Fraction(1)} for M in rotations),"delta_q is a normalized covariant singleton; covariance also follows from pushforward")
+     check("gibbs-B2",gibbs_copy_mass_at_orthogonal(Fraction(2))==Fraction(1,3),"B=2,t=0: alpha=1/3,gamma=1/6")
+     check("gibbs-B1",gibbs_copy_mass_at_orthogonal(Fraction(1))==Fraction(1,4),"B=1 gives uniform masses")
+     check("original-linear-fixtures",[linear_copy_mass(l,Fraction(0)) for l in (Fraction(0),Fraction(1),Fraction(-1),Fraction(1,2))]==[Fraction(1,4),Fraction(1,2),Fraction(0),Fraction(3,8)],"Original lambda values at t=0 retained")

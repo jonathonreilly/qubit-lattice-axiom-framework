@@ -1,0 +1,35 @@
+{
+  "status": "PROVISIONAL_UNTRACKED_PREPARED_V1_REQUIRES_INDEPENDENT_AFFECTED_REVIEW",
+  "owner": "PR8169-author",
+  "base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+  "original_head": "7e268bd96edda8819250318a3cbdaa1b20e90f35",
+  "original_merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "notes": [
+    {
+      "path": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "7692d4f16a1afb2bb9a437b44340bda48e10c943df22f476a4d90ef470a687cb"
+    }
+  ],
+  "runners": [
+    {
+      "path": "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py",
+      "sha256": "2ea814c607f858b71c16b651d8e6ebe99aae4a3665495307f31176ca3fd4e057"
+    }
+  ],
+  "deferred_corrected_proof": {
+    "path": "docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md",
+    "sha256": "6794cf9c406cf161c8a63f3ec46e090c11ed4527e2f7dc27844c3055abfdbc31"
+  },
+  "archive_manifest": {
+    "path": "docs/work_history/repo/review_feedback/pr8169-evidence/archive-manifest.json",
+    "sha256": "9dfd71d6e8bdb93838a6c9a2297a6bc6dcc6d5003bb8e55b90e9d9e96befa835"
+  },
+  "original_report": {
+    "path": "/private/tmp/review-drain-20260915/drain8169-review-original.json",
+    "sha256": "45ca03069aed000f9627c4471d080d288f8d0665261f19a3ad1914f31a98418d"
+  },
+  "claim_disposition": "Live corrected positive menu classification/identities; full corrected conditional joint-law separator preserved as deferred scientific proof; no formal negative PASS",
+  "originals": 8,
+  "primary_executions": 0,
+  "staged": false
+}

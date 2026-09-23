@@ -1,0 +1,49 @@
+--- docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md@v1
++++ docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md@v2
+@@ -208,7 +208,7 @@
+ lattice_wide: checked and not executed; T4–T7 are written proofs, not a numerical infinite-lattice execution.
+ 
+ ### N6 — Primitive boundary
+-No primitive selects the process, coupling or initial plane.
++No process, coupling or initial plane is selected by a registered primitive.
+ 
+ ### N7 — Unknown threshold and improvements
+ Finite periodic simulations over finite times and floating fixed-point searches on a finite t-grid with a stopping cutoff are exploratory observations. They do not locate the infinite-system threshold or prove optimality of the count or arrow budget. No new simulation is used here.
+@@ -241,6 +241,8 @@
+ 
+ ## Verification
+ 
++[Primary runner](../scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py) and [capture destination](../logs/runner-cache/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.txt). No corrected-source capture has been executed during author preparation.
++
+ ```bash
+ python3 scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py
+ python3 scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py --list-mutations
+--- scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py@v1
++++ scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py@v2
+@@ -3,7 +3,7 @@
+ noise threshold, and six invariant laws.
+ 
+ Scope.  T0: the closed forms of the rule's three-predecessor conditional, the monotonicity of the noise map in p, the noise map as
+-the exact maximum over the16 majority triples among216 candidates for fixed a, the domination inequality.  T2: the increments of M_k, the fork size, the
++the exact maximum over the 16 majority triples among 216 candidates for fixed a, the domination inequality.  T2: the increments of M_k, the fork size, the
+ excuse identity.  T4: the explanation-tree construction (clusters, cause graph, spanning lemma, refinement) executed exhaustively on
+ the depth-2 backward cone, on every depth-3 configuration with at most four noise sites, on random deeper cones (integer
+ randomness) and on line and triangle seeds, with the tree property, the marks, the spanning identity and edges <= 4(n - 1) checked.
+@@ -35,7 +35,7 @@
+     "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+ )
+ ROOT = Path(__file__).resolve().parents[1]
+-EXPECTED_INPUT_SHA256 = {'docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md': '63673aa4e33bd30704faac768ffc4440f71ee428e3562ba6e66e8c534df3898f', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
++EXPECTED_INPUT_SHA256 = {'docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md': '6aaaca9eabc0152bc7083da52a01e1ea74dc1dffd6235d7d66a7cecf8ecb1ab8', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
+ AUDIT_RSS_LIMIT_MIB = 512
+ CLAIM_ID = "admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_of_the_noisy_level_automaton_explicit_threshold_six_invariant_laws_bounded_theorem_note_2026-09-16"
+ BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
+@@ -787,7 +787,7 @@
+ # ============================================================================================ family G
+ N5_LINES = (
+     "per_element: executed — the kernel's closed forms; the increments 1/3 - delta_jk; the fork size; the derivatives of the deviations",
+-    "per_site: executed — the coupling inequality at the16 majority triples among216 candidate triples for fixed a; the exact least couplings p_0 at four weight pairs",
++    "per_site: executed — the coupling inequality at the 16 majority triples among 216 candidate triples for fixed a; the exact least couplings p_0 at four weight pairs",
+     "per_mode: executed — the refinement on all 1024 depth-2 and all 2321 explained depth-3 configurations with at most four noise sites, on 1200 random cones and on structured seeds; the 66103 trees with at most four edges against the recursion's coefficients",
+     "per_block: executed — the super-solution certificate at (91/1000, 1000/107653); the bound (391/100) epsilon <= 3/10^5 at epsilon_0 = 7/10^6; the Cesaro identity on a finite chain",
+     "lattice_wide: checked and not executed; T4-T7 written proofs for every epsilon <= 7/10^6 and every coupling with epsilon(p, q, r) <= epsilon_0; the true threshold not claimed",

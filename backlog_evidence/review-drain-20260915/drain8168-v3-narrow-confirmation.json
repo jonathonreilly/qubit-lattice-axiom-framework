@@ -1,0 +1,19 @@
+{
+  "pr": 8168,
+  "reviewer": "/root/review_8168",
+  "verdict": "CONFIRMED_NARROW_V2_TO_V3",
+  "finding": "8168-E1 resolved",
+  "prepared_v3_sha256": "671224aafc0200851d6e34bc659a222e324b6876d00ba4f0d8d6f2f038e67ba9",
+  "note_sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2",
+  "runner_sha256": "fa674860edc33e9a281e6bc3d07185479e73490957ee15648d93cba1ee497041",
+  "source_files": 31,
+  "only_changes": [
+    "historical capture wording",
+    "own-note SHA256 pin"
+  ],
+  "primary_runs": 0,
+  "gates_run": 0,
+  "final_cold_confirmation": false,
+  "prior_review_sha256": "c021b0da480f41da562b4ba584b506d1c6fd2c331f47737407dfc50714db38de",
+  "md_sha256": "7e638bbd5161eb5ac3b2f123928b8050b38a92d94ba96fc471849fbe8c7d3f1b"
+}

@@ -1,0 +1,28 @@
+{
+  "runner": "scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py",
+  "timeout_seconds": 900,
+  "rss_limit_MiB": 512,
+  "reason": "Original900s limit retained. Historical cache reports1.44s, not new measurement. Peak live structures: up to66103 small frozenset trees and retained word-lift keys with <=5 vertices, plus old/new enumeration generations; Python tuple/set overhead conservatively hundreds of MiB, not dense lattice arrays. SymPy only small kernel identities and3x3 matrices. 512MiB proposed watchdog; no peak measurement inferred. Largest explanation cone depth8 has165 sites,1200 sequential random cases, finite polynomial dict5x5. No primary run.",
+  "json_output": null,
+  "stdout_TOTAL": "PASS=22 FAIL=0",
+  "helpers": [],
+  "runtime_inputs": {
+    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "6aaaca9eabc0152bc7083da52a01e1ea74dc1dffd6235d7d66a7cecf8ecb1ab8",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+  },
+  "mathematical_dependency_closure": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "639c843b0348fe3d108f26435e367083ef83091d3304784592da400189f88a78"
+    }
+  ]
+}

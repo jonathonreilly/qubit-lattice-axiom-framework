@@ -1,0 +1,14 @@
+{
+  "input_paths": [
+    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+  ],
+  "fingerprint": "dfaba9dc581c3cce0047bf12bd8291a724dab92bc9c9e9562b7e67daaaf8210d",
+  "helpers": [],
+  "source_sha256": "4d3cc920fcefa986735a9d6480eb7b596cb77052656f54c8e45838ae133fdc1a",
+  "static_fences_valid": true,
+  "no_primary": true,
+  "tracked_clean": true,
+  "index_clean": true
+}

@@ -1,0 +1,24 @@
+{
+  "unchanged_original_helper_ASTs": [
+    "normalize",
+    "dot",
+    "add",
+    "scale",
+    "neg",
+    "apply_matrix",
+    "proper_cubic_rotations",
+    "four_point_support",
+    "distinct_four",
+    "linear_copy_mass"
+  ],
+  "deliberate_math_repairs": [
+    "F1 full slot/internal exchange stabilizer",
+    "F2 support nonzero subset",
+    "F3 lambda(t) domain and explicitly orthogonal Gibbs function",
+    "F4 complete joint endpoint-event proof in deferred recovery plus finite analogue",
+    "F5 normalized overlap dependence/exchange distinction",
+    "F6 four original routes and withdrawn independence assertion",
+    "F7 remove stale text checks and false menu cardinality evidence; add decisive controls"
+  ],
+  "independent_confirmation": "Required; original reviewer check8169 controls already inform repairs, no self certification"
+}

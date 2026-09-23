@@ -1,0 +1,867 @@
+--- docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,296 +1,198 @@
+ ---
+-claim_id: admissibility_rule_frame_attached_four_point_menu_covariant_weights_gibbs_linear_family_and_sequential_support_obstruction_bounded_theorem_note_2026-09-16
++claim_id: frame_attached_menu_exchange_covariant_probabilities_bounded_theorem_note_2026-09-16
+ claim_type: bounded_theorem
+-claim_scope: "Under the unsoldered reading of possibility covariance, the two-neighbour finite support S={q, q', -q, -q'} for non-collinear unit records q, q' is Aut-covariant as a set (the four points are distinct iff |q·q'|<1). Aut-covariant probabilities on S are the two-function family with copy mass α(t) on {q, q'} and flip mass γ(t) on {-q, -q'}, t=q·q', 2α+2γ=1, because the 180-degree rotation about the bisector swaps the two neighbours and preserves S. Pair-Gibbs weights exp(β s·(q+q')) lie in that family; at t=0 with e^{2β}=2 the copy mass is 1/3 and the flip mass is 1/6. The linear family (1+λ s·(q+q'))/4 is the same family. The two-outcome Born overlap (1+s·q)/2 on the four-point set takes values 1, 1/2, 0, 1/2, sums to 2, and is not a four-point law; it also ignores q' as a recorded neighbour. Sequential formation cannot be order-blind on a three-site path: the middle's support has two points in the chain (the antipodal pair of the unique recorded neighbour) and four in ends-first (the four-point set of two non-collinear ends). No menu, rule, order, or reading is selected."
+-upstream_dependencies:
+-  - minimal_axioms
+-  - possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14
+-runner: scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py
++claim_scope: "Conditional normalized probabilities on a supplied four-point sphere menu, under independent internal rotations and exchangeable cubic slots; exact Gibbs, linear and normalized-overlap identities."
++upstream_dependencies: [minimal_axioms, possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14]
++runner: scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py
+ ---
+ 
+-# Frame-attached four-point menus: the covariant copy/flip family, pair-Gibbs as its one-parameter subfamily, Born is not a four-point law, and sequential formation fails at the support
++# Exchange-covariant probabilities on a frame-attached four-point menu
+ 
+-**Date:** 2026-09-16
+ **Type:** bounded_theorem
+-**Scope:** unsoldered Aut-covariant finite two-neighbour supports of the form `{q, q', -q, -q'}` on the pure-state sphere, their covariant probabilities, and sequential products on a three-site path.
+-**Audit-status authority:** independent audit lane only. This note writes no
+-audit verdict and predicts none.
+-**Primary runner:**
+-[`scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py`](../scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py)
+-**Pinned cache:**
+-[`logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt`](../logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt)
+ 
+-## Result up front
+-
+-The landed possibility-covariance note on `main` leaves two readings of the
+-Qubit automorphism group. Under the unsoldered reading, a finite one-neighbour
+-support is the antipodal pair of the recorded neighbour (any other point
+-sweeps a circle). The smallest two-neighbour finite support that includes both
+-neighbours' axes is the four-point set
+-
+-```text
+-S(q, q') = {q, q', -q, -q'},
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
+ ```
+ 
+-four distinct points whenever `q` and `q'` are non-collinear. That set is
+-Aut-covariant: rotating both neighbours rotates the four points with them.
++## Result and supplied premises
+ 
+-Aut-covariant probabilities on `S` are not free four-vectors. The 180-degree
+-rotation about the bisector of `q` and `q'` swaps the two neighbours and
+-preserves `S`, so the copy masses on `q` and `q'` are equal, and the flip
+-masses on `-q` and `-q'` are equal. What remains is a **copy mass** `α(t)` and
+-a **flip mass** `γ(t)` with `t = q·q'` and `2α + 2γ = 1`.
++For noncollinear unit vectors q,q' and t=q·q', the allowed menu is
++S(q,q')={q,q',-q,-q'}. For a fixed two-slot occupancy stratum, independent
++internal SO(3) covariance together with exchange of the two occupied cubic
++slots gives masses (α(t),α(t),γ(t),γ(t)), where α,γ≥0 and 2α+2γ=1.
++The menu has four points; the probability support has four only if both
++α and γ are positive. Boundary choices have two nonzero atoms.
+ 
+-Pair-Gibbs `exp(β s·(q+q'))` restricted to `S` is that family with one
+-parameter. At orthogonal neighbours (`t = 0`) with `e^{2β}=2` the copy mass is
+-`1/3` and the flip mass is `1/6`. The linear family `(1 + λ s·(q+q'))/4` is
+-the same two-function family; `λ = 0` is uniform, `λ = ±1` at `t = 0` are
+-deterministic copy and deterministic flip.
++The [current axiom memo](MINIMAL_AXIOMS_2026-06-29.md) supplies the finite
++support meaning: nonzero-probability possibilities. It does not select the
++sphere, covariance action, menu, weights, formation order or stochastic
++product model used here. The [conditional covariance parent](POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md)
++supplies the direct product of proper cubic slot permutations and independent
++internal SO(3), as a mathematical representation. This note works in that
++supplied representation, not every interpretation of the full M_2(C) domain.
++No registered primitive supplies these probability choices.
+ 
+-The two-outcome Born overlap `(1 + s·q)/2` is **not a four-point law**. On
+-`S` at the orthogonal reference pair it takes the four values `1, 1/2, 0, 1/2`
+-and **sums to 2**. It is a two-point law on `{q, -q}`, where it is
+-deterministic copying, and it ignores `q'` as a recorded neighbour. A
+-nontrivial Born statistic on a generated finite alphabet therefore cannot be
+-the two-outcome overlap evaluated on this four-point menu.
++## 1. Menu covariance and the one-record boundary
+ 
+-Sequential formation cannot hide the order even at the level of supports.
+-On a three-site path, the chain order gives the middle one recorded neighbour,
+-hence a two-point antipodal support. Ends-first gives the middle two
+-non-collinear recorded neighbours (Haar-empty ends are non-collinear almost
+-surely), hence the four-point support. The middle's support has **two points
+-in the chain and four in ends-first**. The sequential products cannot agree.
++For every rotation R, S(Rq,Rq')=R S(q,q'). The four points are distinct
++exactly when |t|<1. If q'=q or q'=-q, the set collapses to {q,-q}; the
++four-distinct formulas below are stated only on -1<t<1.
+ 
+-The physical formation order is not selected. The note selects neither a
+-menu, a rule, nor a reading. Open PR #8152 classifies generated supports and
+-records Born-on-antipodal as deterministic; it is a sibling, not a landed
+-premise. The four-point set, the weight family, the Gibbs and linear
+-identifications, the Born sum, and the support obstruction are proved here.
++For a single record q, a finite SO(2)-invariant probability support lies
++inside {q,-q}. Indeed, rotations fixing q sweep every other sphere point
++through an infinite circle. A finite invariant support cannot contain such
++an orbit. Conversely a δ_q+(1-a)δ_-q is covariant for every a∈[0,1]. Its
++support is a singleton at a=0 or a=1, and the pair only for 0<a<1.
++This is a complete finite-support statement; it does not require both
++antipodes to have nonzero mass.
+ 
+-## Machine status and trace
++## 2. Ordered covariance versus occupied-slot exchange
+ 
+-```yaml
+-actual_current_surface_status: bounded-support
+-target_claim_type: bounded_theorem
+-claim_type_reason: "Aut-covariant four-point weights, Gibbs/linear identification, Born sum, and path3 support cardinalities are exact. No menu, rule, or reading is selected."
+-trace_class: upstream_support
+-target_claim_id: null
+-target_blocker_text: "the Born form on unsoldered frame-attached supports, and whether sequential formation can be order-blind on generated finite alphabets"
+-source_of_blocker_text: user_goal
+-reachability_to_target: supports
+-artifact_role: theorem
+-next_trace_action: "three-or-more recorded neighbours in special position; mixed-state domains"
+-conditional_surface_status: "exact on the four-point menu and on one three-site path; no infinite-volume statement; no physical-law selection"
+-hypothetical_axiom_status: no edit
+-admitted_observation_status: null
+-audit_required_before_effective_retained: true
+-bare_retained_allowed: false
+-```
++For an ordered noncollinear pair, the internal SO(3) stabilizer is trivial:
++a rotation fixing both vectors fixes their cross product and therefore an
++oriented basis. Two ordered pairs with the same t are related by a unique
++proper rotation, obtained by matching their oriented orthonormal frames.
++Thus internal covariance alone permits any four nonnegative functions
++w_1(t),...,w_4(t) summing to one, attached respectively to q,q',-q,-q'.
++For example (1/2,1/4,1/8,1/8) defines such an internally covariant law.
++It is not symmetric under exchanging the two records.
+ 
+-## Premises and declared objects
++Now include the two occupied spatial slots in the input. For opposite
++slots (+x,-x), rotation by π about y exchanges them. For adjacent slots
++(+x,+y), rotation by π about the x+y axis exchanges them. These are proper
++cubic rotations; every two-slot pair is cubic-equivalent to one of these
++cases. Opposite and adjacent occupancy strata are distinct and may have
++different functions α and γ. No equality across these strata is asserted.
++There is no external slot label distinguishing the two occupied positions.
+ 
+-Scientific dependencies: the current four-axiom memo
+-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+-and the landed possibility-covariance note
+-[`POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md`](POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md).
+-Sentences used, verbatim:
++The internal bisector rotation B, of angle π about (q+q')/|q+q'|, exchanges
++q and q'. It does NOT stabilize the ordered record pair by itself.
++Combine it with the independent cubic slot exchange: each original slot
++then receives its original record, so the complete input is fixed. The
++output transforms by B, forcing the q and q' masses to agree and likewise
++the -q and -q' masses. This proves necessity of (α,α,γ,γ).
++Conversely, these equalities, dependence only on t within the occupancy
++stratum, and normalization give covariance under all the declared actions.
++Equivalently this is the internally covariant classification of an unordered
++record pair. A π rotation about q at t=0 relates the different inputs
++(q,q') and (q,-q'); it does not force α(0)=γ(0).
+ 
+-- Qubit: "No possibility is privileged. Possibilities are distinguished by
+-  the supplied algebraic structure alone."
+-- Admissibility: "There is one fixed nearest-neighbor admissibility rule,
+-  covariant under lattice translations and proper cubic rotations." and
+-  "For each site, the probability distribution over the possibilities is
+-  determined by, and varies with, the nearest-neighbor conditions."
+-- Record: "Records form."
++## 3. Pair-Gibbs and the full valid linear parametrization
+ 
+-The unsoldered reading is the landed note's: internal `SO(3)` acts on
+-possibility values independently of the 24 proper cubic rotations of the
+-lattice. This note does not adopt that reading as physical; it computes
+-inside it.
++For finite real β, the supplied pair-Gibbs formula on S is
+ 
+-Declared scaffolding: unit vectors in `S^2`; the four-point set `S(q, q')`;
+-pair-Gibbs as a named one-parameter subfamily, not as an imported
+-Hamiltonian of the framework; sequential products on a three-site path
+-with the records-only reading.
++    p(s)=exp[β s·(q+q')]/[2exp(β(1+t))+2exp(-β(1+t))],
++    α(t)/γ(t)=exp[2β(1+t)].
+ 
+-## Exact target
++At t=0 and B=exp(2β)=2, α=1/3 and γ=1/6; B=1 gives α=γ=1/4.
++The runner's rational B formula is explicitly restricted to t=0. At finite
++β all four masses are positive. At fixed -1<t<1, β→+∞ or -∞ gives the
++uniform distribution on the two copy or two flip atoms, respectively.
++These are not deterministic single-record choices.
+ 
+-Classify Aut-covariant probabilities on `S(q, q')`, identify pair-Gibbs and
+-the linear family inside that classification, show that the two-outcome Born
+-overlap is not a four-point law, and show that sequential formation on a
+-three-site path fails already at the support.
++A general member of the exchange family has the equivalent form
+ 
+-## Prior art and what is new
++    p(s)=[1+λ(t) s·(q+q')]/4,
++    α(t)=[1+λ(t)(1+t)]/4, γ(t)=[1-λ(t)(1+t)]/4,
++    λ(t)=[4α(t)-1]/(1+t), |λ(t)|(1+t)≤1, -1<t<1.
+ 
+-The landed possibility-covariance note supplies the two readings and the
+-uniform empty-neighbourhood law under unsoldered Aut. The open menus note
+-(PR #8152) classifies one-neighbour finite supports as antipodal, two-neighbour
+-supports as frame-attached, and records that Born on the antipodal pair is
+-deterministic; it lists "the Born form on frame-attached supports" as open
+-and is not a premise of the proofs below.
++Antipodal cancellation makes the four weights sum to one. The displayed
++inequality is exactly their nonnegativity condition. This is a function
++λ(t), potentially different in the two occupancy strata; a fixed constant
++λ is only a subfamily on a domain where its bound holds. For a constant
++valid on all -1<t<1, |λ|≤1/2 suffices and is necessary. At t=0, λ=0 is
++uniform, while λ=±1 gives the two-copy or two-flip boundary law. At t=3/5,
++λ=1 would give γ=-3/20 and is excluded. The parameterization retains all
++zero-mass boundary cases rather than silently assuming four-point support.
+ 
+-New here: the two-function copy/flip family on the four-point menu; the
+-exact Gibbs masses `1/3` and `1/6` at `t = 0`, `e^{2β}=2`; the identification
+-of the linear family; the Born four-tuple summing to 2; the path3 support
+-cardinalities 2 versus 4.
++## 4. Raw overlap and normalized menu identities
+ 
+-## Proof-obligation graph
++For any unit reference a, antipodal cancellation gives
+ 
+-| obligation | disposition |
+-|---|---|
+-| `S(q, q')` is Aut-covariant and four-distinct iff non-collinear | proved; executed at the orthogonal reference pair |
+-| Aut plus the bisector 180-degree swap forces copy=copy, flip=flip | proved; executed |
+-| pair-Gibbs lies in the two-function family | exact masses at `t = 0` |
+-| Born four-tuple sums to 2 | executed |
+-| chain support 2, ends-first support 4 | executed on `q = e_z`, `q' = e_x` |
+-| collinear control collapses to 2 | executed |
+-| select a physical menu or reading | not claimed |
++    sum_(s in S) (1+s·a)/2=2.
+ 
+-## Theorem 1 — the four-point set is Aut-covariant
++For a=q the raw weights in menu order are
+ 
+-Let `q, q'` be unit vectors. The set `S(q, q') = {q, q', -q, -q'}` satisfies
+-`S(g q, g q') = g S(q, q')` for every `g ∈ SO(3)`. The four points are
+-distinct iff `|q · q'| < 1`. Executed: `q = (0,0,1)`, `q' = (1,0,0)` have
+-inner product 0 and four distinct points.
++    (1,(1+t)/2,0,(1-t)/2).
+ 
+-## Theorem 2 — covariant weights are copy mass and flip mass
++They are raw overlap values, not normalized four-menu probabilities. After
++dividing by two they define the normalized internally covariant law
+ 
+-An Aut-covariant probability on `S` is determined by its value at one pair
+-per inner product `t`. The 180-degree rotation about the bisector of `q` and
+-`q'` (for the orthogonal reference: `(x,y,z) ↦ (z, -y, x)`) swaps `q` with
+-`q'` and preserves `S`. Hence the mass at `q` equals the mass at `q'` (the
+-**copy mass** `α(t)`), and the mass at `-q` equals the mass at `-q'` (the
+-**flip mass** `γ(t)`), with `2α + 2γ = 1` and `α, γ ≥ 0`. The 180-degree
+-rotation about `q` sends `q'` to `-q'` at `t = 0` and preserves `S`; it
+-relates the law at `(q, q')` to the law at `(q, -q')` and does not force
+-`α(0) = γ(0)`.
++    (1/2,(1+t)/4,0,(1-t)/4).
+ 
+-## Theorem 3 — pair-Gibbs is the one-parameter subfamily
++It depends on q' through both its atom locations and t. No violation of the
++Admissibility variation sentence follows from the absence of q' as a literal
++symbol in the overlap formula. Under the separately imposed occupied-slot
++exchange this normalized law generally differs from its swapped-input law;
++it is an ordered-reference comparison, not an exchange-family member.
++On {q,-q} the original two-outcome law is (1,0).
+ 
+-The pair-Gibbs assignment `p(s) ∝ exp(β s · (q + q'))` on `S` gives equal
+-mass to `q` and `q'`, equal mass to `-q` and `-q'`, and
++With a=(q+q')/sqrt(2+2t), the raw four-menu sum is again two. Dividing by
++two gives the symmetric linear family with λ(t)=1/sqrt(2+2t), whose bound
++is sqrt((1+t)/2)≤1. This is a normalized four-menu comparison, not a
++claim that a physical Born rule or a replacement Hamiltonian was selected.
+ 
+-```text
+-α(t) / γ(t) = exp(2β (1 + t)).
+-```
++## 5. Scope, preserved process argument and evidence
+ 
+-It lies in the two-function family. At `t = 0` with `e^{2β}=2` one has
+-`α = 1/3`, `γ = 1/6`. At `β = 0` one has `α = γ = 1/4`. The linear assignment
+-`p(s) ∝ 1 + λ s · (q + q')` is `α = (1 + λ(1+t))/4`, the same family; at
+-`t = 0` it interpolates uniform (`λ = 0`), deterministic copy (`λ = 1`), and
+-deterministic flip (`λ = -1`). Pair-Gibbs is a named comparison, not a
+-framework Hamiltonian.
++The complete corrected endpoint-event argument for the supplied three-site
++sequential process is preserved readably in
++`work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md`.
++It distinguishes actual joint endpoint laws using |L·R|<1, rather than
++conditional menus at an endpoint profile unreachable in chain order. The
++valid conditional argument is preserved as deferred scientific source; no universal negative
++process conclusion is asserted as part of this live bounded row. Formal
++negative certification is not supplied by changing its label. The exact
++original erroneous argument is separately retained, never overwritten.
+ 
+-## Theorem 4 — Born is not a four-point law
++The current supplied-record/common-kernel note is relevant comparison
++context, not a parent of the menu theorem:
++`SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md`.
++Its common-kernel and all-order hypotheses remain conditional. No conclusion
++about physical formation or all framework laws is imported.
+ 
+-The two-outcome overlap `(1 + s · q)/2` on `{q, -q}` equals `1` and `0`. On
+-the four-point set at the orthogonal reference it takes the values `1` at
+-`q`, `1/2` at `±q'`, and `0` at `-q`, and **sums to 2**. It is therefore not
+-a probability on `S`. It also does not depend on `q'` as a recorded
+-neighbour, so it fails Admissibility's variation sentence at two recorded
+-neighbours. A nontrivial Born statistic on this generated alphabet is not
+-that overlap.
++Primary runner: `scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py`.
++Exact rational finite controls cover the reference pair, all 24 proper cubic
++rotations, both occupied-slot exchange strata, support boundaries, parameter
++bounds, normalized overlaps and a finite endpoint-event analogue. They are
++not numerical execution of Haar almost-sure or infinite-system statements.
++TOTAL counts actual check calls, including explicitly identified input checks.
++The original 120-second timeout is retained; a 256 MiB external process-tree
++cap is proposed for small exact rational arrays and standard-library overhead.
++JSON diagnostics go to `logs/runner-cache/`. No capture has yet been made.
+ 
+-## Theorem 5 — sequential formation fails at the support
+-
+-On a three-site path, the records-only one-neighbour finite support is the
+-antipodal pair of the unique recorded neighbour (any extra point would sweep
+-a circle under Aut about that neighbour). In the chain order the middle sees
+-one neighbour, so its support has two points. In the ends-first order both
+-ends form empty and are independent Aut-invariant draws; they are
+-non-collinear almost surely, and the middle's support is the four-point set.
+-Executed: `L = e_z`, `R = e_x` gives chain support size 2 and ends-first
+-support size 4. When the ends are collinear the four-point set collapses to
+-the antipodal pair (control). Haar-empty ends realise the non-collinear case
+-almost surely. The sequential products cannot agree as measures: they are
+-not even supported on the same sets.
+-
+-## Boundary and falsifiers
+-
+-Falsified if the bisector 180-degree map fails to swap the reference pair, if
+-pair-Gibbs at `e^{2β}=2`, `t = 0` is not `1/3` and `1/6`, if the Born
+-four-tuple does not sum to 2, or if the chain and ends-first supports of the
+-executed path have equal cardinality.
+-
+-The theorem does not classify mixed-state supports, does not treat three or
+-more recorded neighbours, does not select the unsoldered reading, and does
+-not adopt pair-Gibbs as the physical rule. Open PR #8152 remains the support
+-classification; this note does not rest on it.
+-
+-## Separating clauses, not adopted
+-
+-1. Adopt the soldered reading and a site-independent finite menu (the six-axis
+-   thermodynamics of the induced-law series).
+-2. Keep unsoldered finite supports and accept that sequential formation is
+-   order-dependent already at the support.
+-3. Drop finite supports and use the continuum sphere static law.
+-
+-None is adopted here.
+-
+-## Honest-auditor read
+-
+-The load-bearing step is Theorem 5: the two orders put the middle on
+-different finite sets. Theorems 2–4 are a classification of weights on the
+-four-point set the ends-first order actually uses. The Born sentence is a
+-negative about one named formula, not a derivation of a replacement. Pair-Gibbs
+-is a comparison inside the covariant family, not a TOE Hamiltonian.
++[Exact eight-path original recovery](work_history/repo/review_feedback/pr8169-evidence/README.md)
++preserves original modes, blobs, hashes, the 21-check historical cache, all
++original route text and the topology manifest as history only. The original
++branch remains a recovery handle for deferred negative certification. Reopen
++active promotion only after an honestly complete negative packet and original
++reviewer confirmation; the valid supplied-process proof is not thereby
++rejected as false or unproved.
+ 
+ ## No-Go Discipline Gate
+ 
+-Negative sentences: Born is not a four-point law; sequential products on a
+-three-site path cannot agree at the support.
+-
+-### N1 — Routes that would restore a four-point Born or order-blind sequential formation
+-
+-| route | attempt | disposition |
+-|---|---|---|
+-| 1 renormalise Born's four values to sum to 1 | divide by 2, getting `1/2, 1/4, 0, 1/4` | that assignment ignores `q'` and puts zero on `-q` independently of `q'`; it is not the two-function family unless `γ` is allowed to vanish only at one of the two flips, which Aut about the bisector forbids |
+-| 2 use Born about `(q+q')/|q+q'|` | linear family at a particular `λ` | that is Theorem 3's linear family, not the two-outcome overlap; recorded as such |
+-| 3 force the ends to be collinear | then both orders have two-point support | Haar-empty ends are non-collinear a.s.; the collinear case is the executed control, not the generic one |
+-| 4 drop finite supports | continuum zonal kernels | outside this note; sequential zonal variation is a different object |
+-
+-### N2 — Wall-independence
+-
+-Walls: unsoldered Aut; finite supports; records-only sequential products.
+-Independent.
+-
+-### N3 — Hidden-wall scan
+-
+-No "the framework provides a four-point Born" or "naturally Gibbs" in the
+-theorems. Pair-Gibbs is named as a comparison.
+-
+-### N4 — Per-citation
+-
+-| surface | residual | match |
+-|---|---|---|
+-| possibility-covariance note on `main` | the unsoldered reading; uniform empty law | used as the reading, not as a weight theorem |
+-| PR #8152 (open, not a premise) | generated supports; Born-on-antipodal | sibling; antipodal one-neighbour support re-stated, not cited as authority |
+-
+-### N5 — Resolution
+-
+-The four-point distinctness, the Gibbs masses, the Born sum, and the two
+-support cardinalities are executed on an explicit orthogonal pair.
+-
+-### N6 — Primitives
+-
+-No menu is supplied by a registered primitive.
+-
+-### N7 — Steelman
+-
+-Hostile: "Four points on a sphere is an exercise, and 2 versus 4 is obvious."
+-Reply: the content is what it fixes — the only Aut-covariant finite
+-two-neighbour alphabet that carries both neighbours' axes has a two-function
+-weight family, the named Born overlap is not in it, and sequential formation
+-cannot be order-blind on that alphabet. Conceded: small finite geometry;
+-the TOE movement is the obstruction, not a new census.
+-
+-### N8 — Cross-cycle
+-
+-Does not retire a previous wall. Complements the open menus note's leftover
+-row without depending on it.
+-
+-## Verification
+-
+-```bash
+-python3 scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py
+-```
++N1: The four actual original routes are preserved with corrected dispositions
++in the deferred proof. No fifth route or formal negative PASS is invented.
++N2: The supplied covariance, finite-support and product-process assumptions
++are not declared independent walls; no nonimplication witnesses were proved.
++N3: Slot exchange, nonnegative weights, unordered/ordered inputs, fixed
++occupancy stratum and independent Haar roots are explicit where used.
++N4: The covariance parent supplies an action, not weights or physical
++formation. The common-kernel result is context only; no open sibling is an
++authority or a required runner string.
++N5: Five stdout lines name finite element/site/mode/block checks and the
++unexecuted lattice-wide class. A finite six-axis control is labelled as such.
++N6: No primitive, reading, menu, weighting, physical order or Gibbs rule is
++selected by these conditional identities.
++N7: Ordered unequal weights, singleton support and direction-sensitive
++process hypotheses are substantive alternative inputs; the argument must
++retain its precise exchange and sequential assumptions.
++N8: The read covariance parent distinguishes supplied actions from physical
++selection; the current common-kernel theorem distinguishes joint equality
++from null-profile cancellation. These scope corrections are retained.
+--- scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py
++++ scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py
+@@ -1,85 +1,38 @@
+ #!/usr/bin/env python3
+-"""Exact checks: covariant weights on the unsoldered four-point two-neighbour menu.
+-
+-The support S = {q, q', -q, -q'} is Aut-covariant as a set. Aut-covariant
+-probabilities on it are two functions of t = q·q' (copy mass and flip mass).
+-Pair-Gibbs exp(β s·(q+q')) is that family with one parameter. The two-outcome
+-Born overlap (1+s·q)/2 is not a four-point law. Sequential formation cannot be
+-order-blind: on a three-site path the middle's support has two points in the
+-chain and four in ends-first. Exact rationals; no physical menu or rule is
+-selected.
++"""Exact finite menu/exchange probability checks; no physical-law selection.
++Corrected endpoint controls are finite analogues, not numerical Haar proofs.
+ """
+-
+-from __future__ import annotations
+-
+ from fractions import Fraction
+ from itertools import permutations, product
+ from pathlib import Path
+-
+-
+-AUDIT_TIMEOUT_SEC = 120
+-
+-ROOT = Path(__file__).resolve().parents[1]
+-AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+-    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+-    "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+-)
+-NOTE_PATH = ROOT / AUDIT_INPUT_PATHS[0]
+-AXIOM_PATH = ROOT / AUDIT_INPUT_PATHS[1]
+-PARENT_PATH = ROOT / AUDIT_INPUT_PATHS[2]
+-CLAIM_ID = (
+-    "admissibility_rule_frame_attached_four_point_menu_covariant_weights_"
+-    "gibbs_linear_family_and_sequential_support_obstruction_bounded_theorem_note_2026-09-16"
+-)
+-PARENT_CLAIM_ID = (
+-    "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_"
+-    "and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+-)
++import hashlib, json
++AUDIT_TIMEOUT_SEC=120
++AUDIT_MEMORY_MB=256
++AUDIT_INPUT_PATHS=['docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md']
++EXPECTED_INPUT_SHA256={'docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'd9450ac04bcb887168291f0ccbd4fc101456aa180ab3c543effa38254d2a2e6b', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md': '86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a'}
++ROOT=Path(__file__).resolve().parents[1]
+ 
+ 
+ def normalize(text: str) -> str:
+     return " ".join(text.split())
+ 
+-
+-class Checks:
+-    def __init__(self) -> None:
+-        self.passed = 0
+-        self.failed = 0
+-
+-    def check(self, label: str, condition: bool, detail: str) -> None:
+-        ok = bool(condition)
+-        self.passed += int(ok)
+-        self.failed += int(not ok)
+-        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
+-
+-    def finish(self) -> int:
+-        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
+-        return self.failed
+-
+-
+ def dot(u, v) -> Fraction:
+     return sum((Fraction(a) * Fraction(b) for a, b in zip(u, v, strict=True)), Fraction(0))
+-
+ 
+ def add(u, v):
+     return tuple(Fraction(a) + Fraction(b) for a, b in zip(u, v, strict=True))
+ 
+-
+ def scale(c, u):
+     return tuple(Fraction(c) * Fraction(a) for a in u)
+ 
+-
+ def neg(u):
+     return tuple(-Fraction(a) for a in u)
+-
+ 
+ def apply_matrix(matrix, vector):
+     return tuple(
+         sum((matrix[i][j] * vector[j] for j in range(3)), start=Fraction(0))
+         for i in range(3)
+     )
+-
+ 
+ def proper_cubic_rotations():
+     mats = []
+@@ -98,246 +51,87 @@
+                 mats.append(tuple(tuple(row) for row in matrix))
+     return tuple(mats)
+ 
+-
+ def four_point_support(q, qp):
+     return (q, qp, neg(q), neg(qp))
+-
+ 
+ def distinct_four(q, qp) -> bool:
+     pts = four_point_support(q, qp)
+     return len(set(pts)) == 4
+-
+-
+-def gibbs_copy_mass(beta: Fraction, t: Fraction) -> Fraction:
+-    # α = exp(β(1+t)) / (2 exp(β(1+t)) + 2 exp(−β(1+t)))
+-    # with e^{2β} = 2 this is exact at selected β via integer powers.
+-    # Here β is encoded as e^{2β} = B a positive Fraction, using
+-    # α = 1 / (2 (1 + B^{-(1+t)})) which needs B^{1+t}.
+-    # Restrict to t=0 and integer B: α = 1/(2(1+1/B)) = B/(2B+2)
+-    del t
+-    b = beta  # here beta stands for B = e^{2β} at t=0
+-    return b / (2 * b + 2)
+-
+ 
+ def linear_copy_mass(lam: Fraction, t: Fraction) -> Fraction:
+     # α = (1 + λ(1+t)) / 4
+     return (1 + lam * (1 + t)) / 4
+ 
+ 
+-def main() -> int:
+-    checks = Checks()
+-    note = NOTE_PATH.read_text(encoding="utf-8")
+-    axiom = AXIOM_PATH.read_text(encoding="utf-8")
+-    parent = PARENT_PATH.read_text(encoding="utf-8")
+-    note_flat = normalize(note)
+-    axiom_flat = normalize(axiom)
+-    parent_flat = normalize(parent)
+-
+-    print("AUDIT_INPUT_PATHS:")
+-    for path in AUDIT_INPUT_PATHS:
+-        print(f"  {path}")
+-    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
+-    print("cache_write: false")
+-    print("scientific_dependency: current minimal_axioms and the landed possibility-covariance note")
+-
+-    checks.check(
+-        "A1-inputs",
+-        all((ROOT / path).is_file() for path in AUDIT_INPUT_PATHS)
+-        and len(set(AUDIT_INPUT_PATHS)) == 3,
+-        "the note, axiom memo, and possibility-covariance note are the declared packet",
+-    )
+-    checks.check(
+-        "A2-axioms",
+-        "No possibility is privileged." in axiom_flat
+-        and "one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations"
+-        in axiom_flat
+-        and "determined by, and varies with, the nearest-neighbor conditions" in axiom_flat
+-        and "Records form." in axiom,
+-        "the Qubit, Admissibility, and Record sentences used are present verbatim",
+-    )
+-    checks.check(
+-        "A3-parent",
+-        PARENT_CLAIM_ID in parent
+-        and "unsoldered" in parent_flat
+-        and "soldered" in parent_flat,
+-        "the landed possibility-covariance note supplies the two readings",
+-    )
+-    checks.check(
+-        "A4-note-contract",
+-        CLAIM_ID in note
+-        and "**Type:** bounded_theorem" in note
+-        and "actual_current_surface_status: bounded-support" in note
+-        and "four-point" in note_flat
+-        and "copy mass" in note_flat
+-        and "not a four-point law" in note_flat
+-        and "two points in the chain and four in ends-first" in note_flat,
+-        "the note states the four-point weight family, the Born obstruction, and the support obstruction",
+-    )
+-
+-    q = (Fraction(0), Fraction(0), Fraction(1))
+-    qp = (Fraction(1), Fraction(0), Fraction(0))
+-    t = dot(q, qp)
+-    checks.check(
+-        "B1-orthogonal-four-distinct",
+-        t == 0 and distinct_four(q, qp),
+-        "the reference orthogonal pair has inner product 0 and four distinct support points",
+-    )
+-
+-    # 180° about the bisector of q and q': (x,y,z) -> (z, -y, x) for this pair.
+-    def swap_q_qp(v):
+-        x, y, z = v
+-        return (z, -y, x)
+-
+-    checks.check(
+-        "B2-swap-maps-pair",
+-        swap_q_qp(q) == qp and swap_q_qp(qp) == q
+-        and set(four_point_support(q, qp)) == set(four_point_support(swap_q_qp(q), swap_q_qp(qp))),
+-        "the 180-degree Aut about the bisector swaps the two neighbours and preserves the four-point set",
+-    )
+-
+-    # 180° about q: (x,y,z) -> (-x, -y, z). Sends q' to -q', preserves the set.
+-    def rot_about_q(v):
+-        x, y, z = v
+-        return (-x, -y, z)
+-
+-    checks.check(
+-        "B3-flip-second-preserves-set",
+-        rot_about_q(q) == q
+-        and rot_about_q(qp) == neg(qp)
+-        and set(four_point_support(q, qp))
+-        == set(four_point_support(rot_about_q(q), rot_about_q(qp))),
+-        "the 180-degree Aut about q sends the second neighbour to its opposite and preserves the four-point set",
+-    )
+-
+-    rotations = proper_cubic_rotations()
+-    checks.check(
+-        "B4-cubic-group",
+-        len(rotations) == 24 and len(set(rotations)) == 24,
+-        "the proper cubic group has 24 elements",
+-    )
+-
+-    # Aut-covariant weights at a fixed pair: four masses summing to 1.
+-    # Swap forces copy(q)=copy(q'), flip(q)=flip(q').
+-    # Remaining: copy mass α, flip mass γ, 2α+2γ=1.
+-    def is_two_function_family(alpha, gamma) -> bool:
+-        return 2 * alpha + 2 * gamma == 1 and alpha >= 0 and gamma >= 0
+-
+-    samples = (
+-        (Fraction(1, 4), Fraction(1, 4)),
+-        (Fraction(1, 2), Fraction(0)),
+-        (Fraction(0), Fraction(1, 2)),
+-        (Fraction(3, 8), Fraction(1, 8)),
+-    )
+-    checks.check(
+-        "C1-two-function-family",
+-        all(is_two_function_family(a, g) for a, g in samples)
+-        and not is_two_function_family(Fraction(1, 3), Fraction(1, 3)),
+-        "Aut-plus-swap covariant four-point laws are the copy/flip family 2α+2γ=1",
+-    )
+-
+-    # Gibbs at t=0 with e^{2β}=2: α = 2/(4+2)=2/6=1/3? Wait formula α=B/(2B+2)
+-    # B=2: 2/(4+2)=1/3. Then 2α=2/3, 2γ=1/3, γ=1/6. 2α+2γ=1. Yes.
+-    # But 1/3 + 1/6 wait 2*(1/3)+2*(1/6)=2/3+1/3=1. α=1/3 is NOT <= 1/2... 1/3<1/2 OK.
+-    # 2α+2γ=1 with α=1/3 gives γ=1/6. copy total 2α=2/3, flip total 1/3.
+-    a2 = gibbs_copy_mass(Fraction(2), Fraction(0))
+-    checks.check(
+-        "C2-gibbs-at-orthogonal",
+-        a2 == Fraction(1, 3)
+-        and is_two_function_family(a2, Fraction(1, 2) - a2),
+-        "pair-Gibbs with e^{2β}=2 at t=0 has copy mass 1/3, flip mass 1/6, inside the two-function family",
+-    )
+-    a1 = gibbs_copy_mass(Fraction(1), Fraction(0))
+-    checks.check(
+-        "C3-gibbs-beta-zero-is-uniform",
+-        a1 == Fraction(1, 4),
+-        "pair-Gibbs at B=e^{2β}=1 (β=0) is the uniform four-point law",
+-    )
+-
+-    # Linear family α=(1+λ(1+t))/4. At t=0, α=(1+λ)/4. Equals Gibbs small-β:
+-    # Gibbs α = 1/(2(1+e^{-2β})) at t=0. For β=0, α=1/4, λ=0.
+-    checks.check(
+-        "C4-linear-family",
+-        linear_copy_mass(Fraction(0), Fraction(0)) == Fraction(1, 4)
+-        and linear_copy_mass(Fraction(1), Fraction(0)) == Fraction(1, 2)
+-        and linear_copy_mass(Fraction(-1), Fraction(0)) == Fraction(0)
+-        and linear_copy_mass(Fraction(1, 2), Fraction(0)) == Fraction(3, 8),
+-        "the linear family (1+λ s·(q+q'))/4 interpolates uniform, deterministic copy, and deterministic flip at t=0",
+-    )
+-
+-    # Born (1+s·q)/2 on {q,-q}: 1 and 0. On the four-point set it is not a
+-    # probability: the four values would be (1+1)/2=1, (1+0)/2=1/2, (1-1)/2=0,
+-    # (1+0)/2=1/2, summing to 2, and it ignores q' as a neighbour.
+-    born_values = (
+-        (1 + dot(q, q)) / 2,
+-        (1 + dot(qp, q)) / 2,
+-        (1 + dot(neg(q), q)) / 2,
+-        (1 + dot(neg(qp), q)) / 2,
+-    )
+-    checks.check(
+-        "D1-born-not-four-point",
+-        born_values == (1, Fraction(1, 2), 0, Fraction(1, 2))
+-        and sum(born_values) == 2,
+-        "the two-outcome Born overlap on the four-point set sums to 2 and is not a four-point probability",
+-    )
+-    checks.check(
+-        "D2-born-ignores-second-neighbour",
+-        (1 + dot(q, q)) / 2 == 1 and (1 + dot(q, qp)) / 2 == Fraction(1, 2),
+-        "Born-about-q is deterministic on {q,-q} and does not depend on q' as a recorded neighbour",
+-    )
+-
+-    # Sequential support obstruction on path3.
+-    # Chain: M sees only L = q, support {q,-q}, cardinality 2.
+-    # Ends-first: M sees L=q and R=qp non-collinear, support four points.
+-    chain_support = {q, neg(q)}
+-    ends_support = set(four_point_support(q, qp))
+-    checks.check(
+-        "E1-chain-support-two",
+-        len(chain_support) == 2 and neg(q) in chain_support,
+-        "in the chain order the middle's one-neighbour finite support is the antipodal pair of the left end",
+-    )
+-    checks.check(
+-        "E2-ends-support-four",
+-        len(ends_support) == 4 and chain_support < ends_support,
+-        "in the ends-first order the middle's two-neighbour support is the four-point set, a strict superset",
+-    )
+-    checks.check(
+-        "E3-cardinalities-differ",
+-        len(chain_support) != len(ends_support),
+-        "the middle's support has two points in the chain and four in ends-first, so the sequential products cannot agree",
+-    )
+-
+-    # A collinear control: if R = L, ends-first support collapses to two points.
+-    collinear_ends = set(four_point_support(q, q))
+-    checks.check(
+-        "E4-collinear-control",
+-        len(collinear_ends) == 2 and collinear_ends == chain_support,
+-        "when the two ends are collinear the four-point set collapses to the antipodal pair; the obstruction is for non-collinear ends, which Haar-empty ends realise almost surely",
+-    )
+-
+-    checks.check(
+-        "F1-quotes",
+-        "1/3" in note
+-        and "1/6" in note
+-        and "sums to 2" in note_flat
+-        and "two points in the chain and four in ends-first" in note_flat
+-        and "e^{2β}=2" in note_flat.replace(" ", ""),
+-        "the note quotes the Gibbs masses, the Born sum, and the support cardinalities",
+-    )
+-    checks.check(
+-        "F2-no-selection",
+-        "selects neither" in note_flat
+-        and "not adopted" in note_flat
+-        and "physical formation order is not selected" in note_flat,
+-        "the note selects neither a menu, a rule, nor an order",
+-    )
+-    checks.check(
+-        "F3-open-sibling",
+-        "PR #8152" in note or "PR 8152" in note or "#8152" in note,
+-        "the open menus note is named as a sibling, not used as a landed premise",
+-    )
+-
+-    return checks.finish()
++def gibbs_copy_mass_at_orthogonal(B):
++    """B=exp(2 beta)>0, t=0 only; no silent discarded t argument."""
++    if B <= 0:
++        raise ValueError("B must be positive")
++    return B/(2*B+2)
+ 
+ 
+-if __name__ == "__main__":
++def main():
++    results=[]
++    def check(label, condition, detail):
++        ok=bool(condition)
++        results.append(dict(label=label,passed=ok,detail=detail))
++        print(("PASS" if ok else "FAIL")+": "+label+" "+detail)
++    for path in AUDIT_INPUT_PATHS:
++        check("input-sha:"+path,hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==EXPECTED_INPUT_SHA256[path],"Actual source/parent bytes")
++    q=(Fraction(0),Fraction(0),Fraction(1));qp=(Fraction(1),Fraction(0),Fraction(0))
++    rotations=proper_cubic_rotations()
++    check("orthogonal-menu",dot(q,qp)==0 and distinct_four(q,qp),"Four allowed points, not assumed positive support")
++    swap=lambda v:(v[2],-v[1],v[0])
++    check("bisector-swap",swap(q)==qp and swap(qp)==q,"Internal rotation exchanges ordered records")
++    flip=lambda v:(-v[0],-v[1],v[2])
++    check("different-input",flip(q)==q and flip(qp)==neg(qp),"This relates distinct inputs; no forced alpha=gamma")
++    check("cubic-group",len(rotations)==len(set(rotations))==24,"Original full proper cubic group")
++    check("menu-covariance",all(set(four_point_support(apply_matrix(M,q),apply_matrix(M,qp)))=={apply_matrix(M,s) for s in four_point_support(q,qp)} for M in rotations),"All 24 finite group controls; general SO(3) proof is analytic")
++    slots=((Fraction(1),Fraction(0),Fraction(0)),(Fraction(0),Fraction(1),Fraction(0)))
++    for label,b in (("adjacent",slots[1]),("opposite",neg(slots[0]))):
++        check("slot-exchange:"+label,any(apply_matrix(M,slots[0])==b and apply_matrix(M,b)==slots[0] for M in rotations),"Proper cubic slot exchange exists in this occupancy stratum")
++    weights=(Fraction(1,2),Fraction(1,4),Fraction(1,8),Fraction(1,8))
++    law=lambda x,y,w:dict(zip(four_point_support(x,y),w))
++    check("ordered-unequal-covariance",all({apply_matrix(M,s):v for s,v in law(q,qp,weights).items()}==law(apply_matrix(M,q),apply_matrix(M,qp),weights) for M in rotations),"Unequal masses retain internal covariance")
++    check("ordered-exchange-distinction",law(q,qp,weights)!=law(qp,q,weights),"Exchange is an additional hypothesis")
++    samples=((Fraction(1,4),Fraction(1,4)),(Fraction(1,2),Fraction(0)),(Fraction(0),Fraction(1,2)),(Fraction(3,8),Fraction(1,8)))
++    check("exchange-family",all(2*a+2*g==1 and a>=0 and g>=0 and law(q,qp,(a,a,g,g))==law(qp,q,(a,a,g,g)) for a,g in samples),"Original four pairs, including zero weights")
++    check("invalid-family",2*Fraction(1,3)+2*Fraction(1,3)!=1,"Original normalization countercontrol")
++    check("support-not-menu",[sum(v>0 for v in (a,a,g,g)) for a,g in samples]==[4,2,2,4],"Support counts use nonzero masses")
++    check("singleton-one-record",len({q:Fraction(1)})==1 and all({apply_matrix(M,s):v for s,v in {q:Fraction(1)}.items()}=={apply_matrix(M,q):Fraction(1)} for M in rotations),"delta_q is a normalized covariant singleton; covariance also follows from pushforward")
++    check("gibbs-B2",gibbs_copy_mass_at_orthogonal(Fraction(2))==Fraction(1,3),"B=2,t=0: alpha=1/3,gamma=1/6")
++    check("gibbs-B1",gibbs_copy_mass_at_orthogonal(Fraction(1))==Fraction(1,4),"B=1 gives uniform masses")
++    check("original-linear-fixtures",[linear_copy_mass(l,Fraction(0)) for l in (Fraction(0),Fraction(1),Fraction(-1),Fraction(1,2))]==[Fraction(1,4),Fraction(1,2),Fraction(0),Fraction(3,8)],"Original lambda values at t=0 retained")
++    for t in (Fraction(-3,5),Fraction(0),Fraction(3,5)):
++        r=(Fraction(4,5),Fraction(0),t) if t else qp
++        for lam in (Fraction(0),1/(1+t),-1/(1+t)):
++            vals=[(1+lam*dot(s,add(q,r)))/4 for s in four_point_support(q,r)]
++            check("linear-bound:"+str((t,lam)),sum(vals)==1 and min(vals)>=0,"Exact valid lambda(t) boundary and interior")
++        for alpha in (Fraction(0),Fraction(1,8),Fraction(1,2)):
++            lam=(4*alpha-1)/(1+t)
++            check("lambda-inverse:"+str((t,alpha)),linear_copy_mass(lam,t)==alpha and abs(lam)*(1+t)<=1,"Function parameterization, not a fixed universal lambda")
++        raw=tuple((1+dot(s,q))/2 for s in four_point_support(q,r));norm=tuple(v/2 for v in raw)
++        check("overlap-normalization:"+str(t),sum(raw)==2 and sum(norm)==1 and min(norm)>=0,"Raw sum2, normalized ordered-reference law")
++    check("excluded-lambda",Fraction(1,2)-linear_copy_mass(Fraction(1),Fraction(3,5))==Fraction(-3,20),"lambda=1 at t=3/5 violates nonnegativity")
++    normalized=lambda x,y:law(x,y,tuple((1+dot(s,x))/4 for s in four_point_support(x,y)))
++    check("normalized-exchange",normalized(q,qp)!=normalized(qp,q),"Exchange failure, not blanket framework variation failure")
++    r=(Fraction(4,5),Fraction(0),Fraction(3,5))
++    check("second-record-dependence",normalized(q,qp)!=normalized(q,r),"Moving atoms and t change the normalized law")
++    check("collinear-menu",len(set(four_point_support(q,q)))==2,"Original collinear menu control")
++    check("chain-endpoint-event",all(abs(dot(q,scale(a*b,q)))==1 for a,b in product((-1,1),repeat=2)),"Every one-record sign path is collinear, including singleton choices")
++    axes=tuple(scale(sign,e) for e in (q,qp,(Fraction(0),Fraction(1),Fraction(0))) for sign in (-1,1))
++    check("independent-endpoint-analogue",sum(abs(dot(l,r))<1 for l,r in product(axes,repeat=2))==24,"Finite six-axis analogue:24/36; Haar probability1 is analytic, not this finite test")
++    failed=sum(not r['passed'] for r in results);passed=len(results)-failed
++    output=ROOT/'logs'/'runner-cache'/(Path(__file__).stem+'.json');output.parent.mkdir(parents=True,exist_ok=True)
++    output.write_text(json.dumps(dict(source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),input_sha256=EXPECTED_INPUT_SHA256,checks=results,passed=passed,failed=failed),indent=2)+"\n")
++    print(f"TOTAL: PASS={passed} FAIL={failed}")
++    print("per_element: exact menu atoms, scalar probabilities, support and parameter-bound checks.")
++    print("per_site: one-record singleton/pair cases and both adjacent/opposite occupied-slot strata.")
++    print("per_mode: checked and not executed — no physical spectrum or dynamical modes are defined.")
++    print("per_block: 24 cubic rotations, rational parameter fixtures, four chain sign paths and 36 six-axis endpoint pairs.")
++    print("lattice_wide: checked and not executed — Haar measure and general process statements require analytic proofs; no infinite lattice is simulated.")
++    return int(failed>0)
++
++
++if __name__=='__main__':
+     raise SystemExit(main())

@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-23T02:53:03.204948+00:00",
+  "main": "a9f71131f2772035c55fa4a851c0832a5cb82d00",
+  "closed_since_expanded_scope": 42,
+  "latest_inventory": "open-prs-wave22.json",
+  "open_count": 108,
+  "draft_count": 18,
+  "active_train": "train81",
+  "train_units": [
+    8031,
+    8167
+  ],
+  "train_claims": 3,
+  "train_source_paths": 148,
+  "train_inputs": 175,
+  "prepared_or_in_author_review": [
+    8166,
+    8168,
+    8169
+  ],
+  "new_arrivals_in_scope": [
+    8676,
+    8678,
+    8679,
+    8686,
+    8687,
+    8691
+  ],
+  "model_comparison": "sol-max-astra-low-8158/comparison.md",
+  "review_default": "gpt-6-astra low unchanged",
+  "remote_skill_parity": "review-loop-remote-parity-train80.json",
+  "audit_boundary": "No auditor/worker/apply/verdict; combined compatibility only"
+}

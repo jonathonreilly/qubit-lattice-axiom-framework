@@ -1,0 +1,164 @@
+{
+  "reviewer_session": "/root/review_8169",
+  "stage": "early affected-source review only",
+  "source_assessment": "F1-F5 mathematically corrected on frozen prepared-v2; no new material mathematical finding",
+  "anchors": {
+    "drain8169-author-prepared-v2.json": "0e4251711da8ce11cb206d93c1b351e97429d1506a4b226181b13b5b0dff240a",
+    "drain8169-prepared-v2-source-freeze.json": "aa2ad58e8fc3f117323540cfdde735fac8d4816c52ed08a055eefd2a8914a5b3",
+    "drain8169-author-discovery-v2.json": "d030d5ddc46ee5178b95b4ce12aa9f2df4c0948e0af5da4f0eb29e60a62718f4"
+  },
+  "files": [
+    {
+      "path": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "mode": "0o644",
+      "sha256": "d9450ac04bcb887168291f0ccbd4fc101456aa180ab3c543effa38254d2a2e6b",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md",
+      "mode": "0o644",
+      "sha256": "0e117aa234fb3902c377601e753fe8aa105f263f4adab3b4fbcdd3936ee6d24c",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/README.md",
+      "mode": "0o644",
+      "sha256": "bd08123957786461a0e01c0eda05fb635ce0c03e8061403a5b84efd6a06795fe",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/README.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/archive-manifest.json",
+      "mode": "0o644",
+      "sha256": "9dfd71d6e8bdb93838a6c9a2297a6bc6dcc6d5003bb8e55b90e9d9e96befa835",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/archive-manifest.json"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16-9744b717438183f6.md",
+      "mode": "0o644",
+      "sha256": "ec915e66d82cd8c8b01eb4e0b582f414301b47af234895c2ca4ce494a5828225",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16-9744b717438183f6.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/CLAIM_STATUS_CERTIFICATE-2e1efea5ebfa174e.md",
+      "mode": "0o644",
+      "sha256": "5c8ca22ef22459780e7b2c8f20a522e307546a7b6a212f1e83a77809b9f44074",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/CLAIM_STATUS_CERTIFICATE-2e1efea5ebfa174e.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/HANDOFF-2588781386ad583a.md",
+      "mode": "0o644",
+      "sha256": "ff892d37f027e372a732af407a4912e3f2f01313f95c14c16e0b8e3640712e34",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/HANDOFF-2588781386ad583a.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/OPPORTUNITY_QUEUE-8e0fa176acb36723.md",
+      "mode": "0o644",
+      "sha256": "9ac9e684f62ff643e4a7519bbb5d6e942300644f1b3324937d1eb889cc1797f5",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/OPPORTUNITY_QUEUE-8e0fa176acb36723.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/TRACE_GATE-b16d8ada36906b74.md",
+      "mode": "0o644",
+      "sha256": "41d08bab8e18b31700a50b44e82bac2ddcd0f4ffe060b15cea1a963e9f08585d",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/TRACE_GATE-b16d8ada36906b74.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-4c34d2777f1fd27b.py",
+      "mode": "0o644",
+      "sha256": "5379c584efe47c3787de95bffd6a7c54b5d784540f5b9b380217ad566268fbf1",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-4c34d2777f1fd27b.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt",
+      "mode": "0o644",
+      "sha256": "c7b1ff2af5d1335d5eed15e3bc5d007a10f85b04d9c5830c2f4d8d8e67fb7fff",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/citation_graph_manifest-6a6622bf983c9836.json",
+      "mode": "0o644",
+      "sha256": "01b0ed5a1f65ede1eefa99c96b78ede7a7bf130883eb8674ac6ef452fc4b0b08",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/citation_graph_manifest-6a6622bf983c9836.json"
+    },
+    {
+      "path": "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py",
+      "mode": "0o644",
+      "sha256": "e0b2d51ed782e235975027756785e1fe6da14ce0cfcf8066a16ccdb8b673caf8",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py"
+    }
+  ],
+  "verified_recovery_entries": 8,
+  "verified_original_paths": [
+    ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/CLAIM_STATUS_CERTIFICATE.md",
+    ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/HANDOFF.md",
+    ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/OPPORTUNITY_QUEUE.md",
+    ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/TRACE_GATE.md",
+    "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/audit/data/citation_graph_manifest.json",
+    "logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt",
+    "scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py"
+  ],
+  "identical_helper_function_asts": [
+    "add",
+    "apply_matrix",
+    "distinct_four",
+    "dot",
+    "four_point_support",
+    "linear_copy_mass",
+    "neg",
+    "normalize",
+    "proper_cubic_rotations",
+    "scale"
+  ],
+  "changed_formula_and_logic_scope": "Gibbs t=0 API replaces ignored-t API; main control logic and input pins rewritten; note/deferred proof semantic corrections reviewed directly. Not an AST-identical-runner claim.",
+  "actual_inputs": [
+    {
+      "path": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "d9450ac04bcb887168291f0ccbd4fc101456aa180ab3c543effa38254d2a2e6b",
+      "source": "prepared-v2"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "source": "ed129b committed object"
+    },
+    {
+      "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a",
+      "source": "ed129b committed object"
+    }
+  ],
+  "helper_runners": [],
+  "budget_assessment": "120 seconds retained; proposed256MiB reasonable for standard-library Fraction controls over24 rotations, finite rational fixtures and36 endpoint pairs. No execution result or cap enforcement claimed.",
+  "finding_dispositions": {
+    "8169-F1": "corrected: complete slot/internal input stabilizer, distinct adjacent/opposite strata, ordered counterexample and sufficiency proof",
+    "8169-F2": "corrected: singleton/pair one-record support, four-menu versus positive support, two-atom boundaries",
+    "8169-F3": "corrected: lambda(t) inverse and nonnegative domain, constant bound1/2, finite-beta positivity and limits, restricted rational Gibbs API",
+    "8169-F4": "corrected conditional endpoint theorem preserved fully/readably as deferred science, no inaccessible conditioning; direct proof permits slot-dependent sign probabilities",
+    "8169-F5": "corrected: raw sum2, normalized moving law and exchange asymmetry, no variation-clause inference; normalized bisector included",
+    "8169-F6": "formal negative packet remains deferred, four real routes preserved, no fifth invented or independence asserted; no packet PASS",
+    "8169-F7": "live PR-string dependency removed; new decisive static controls present; final capture, mutations, integration discovery and combined validation remain due"
+  },
+  "independent_math_review": [
+    "Ordered pair has trivial SO(3) stabilizer; fixed-t orbit is transitive. Combining occupied-slot transposition with internal bisector fixes the full two-slot input, forcing copy/flip equality.",
+    "For noncollinear pair, s dot(q+qprime) is \u00b1(1+t). Antipodal cancellation yields partition denominator2exp(b)+2exp(-b), and linear nonnegativity iff |lambda|(1+t)<=1. Inverting alpha gives stated lambda(t); sup(1+t)=2 yields constant bound1/2.",
+    "For bisector reference a=(q+qprime)/sqrt(2+2t), dividing raw overlap by2 gives [1+s dot(q+qprime)/sqrt(2+2t)]/4. Bound lambda(1+t)=sqrt((1+t)/2)<1 on stated domain.",
+    "Every chain sign path has R=\u00b1L; Haar independent endpoint law gives the two collinear points conditional mass0, hence joint event probabilities0 versus1. Final normalized middle kernel cannot alter endpoint marginal.",
+    "Runner finite control families inspect symmetry counterexamples, support, lambda domains/inversion, raw normalization, moving-law dependence and endpoint events; finite cube checks are labelled controls, not proof of continuous covariance/Haar statement."
+  ],
+  "negative_scope": "Substantive split accepted for early review: current row is conditional menu classification and explicit normalization/exchange comparisons; full process separator remains readable deferred proof with valid mathematical status and named certification reopening. Raw sum2 implication is explicit, not concealed. This does not confer formal N1-N8 PASS.",
+  "remaining": [
+    "Final-author cold read and bounded primary/cache on exact frozen final input bytes",
+    "Decisive mutation controls, especially lambda bounds/inversion, slot-exchange/swap, normalization and endpoint separator",
+    "Fresh current-main authority/input interaction check after slot advance",
+    "Final same-session affected confirmation and integrated mechanical gate; no final PASS now"
+  ],
+  "executions": {
+    "original_primary": 0,
+    "corrected_primary": 0,
+    "gates": 0,
+    "source_edits": 0,
+    "staging": 0
+  },
+  "recommendation": "Proceed with bounded author preparation/execution and final review; no final source/landing PASS"
+}

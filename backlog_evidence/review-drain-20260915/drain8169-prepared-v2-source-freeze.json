@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "path": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "mode": "0o644",
+      "sha256": "d9450ac04bcb887168291f0ccbd4fc101456aa180ab3c543effa38254d2a2e6b",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md",
+      "mode": "0o644",
+      "sha256": "0e117aa234fb3902c377601e753fe8aa105f263f4adab3b4fbcdd3936ee6d24c",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/README.md",
+      "mode": "0o644",
+      "sha256": "bd08123957786461a0e01c0eda05fb635ce0c03e8061403a5b84efd6a06795fe",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/README.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/archive-manifest.json",
+      "mode": "0o644",
+      "sha256": "9dfd71d6e8bdb93838a6c9a2297a6bc6dcc6d5003bb8e55b90e9d9e96befa835",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/archive-manifest.json"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16-9744b717438183f6.md",
+      "mode": "0o644",
+      "sha256": "ec915e66d82cd8c8b01eb4e0b582f414301b47af234895c2ca4ce494a5828225",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16-9744b717438183f6.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/CLAIM_STATUS_CERTIFICATE-2e1efea5ebfa174e.md",
+      "mode": "0o644",
+      "sha256": "5c8ca22ef22459780e7b2c8f20a522e307546a7b6a212f1e83a77809b9f44074",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/CLAIM_STATUS_CERTIFICATE-2e1efea5ebfa174e.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/HANDOFF-2588781386ad583a.md",
+      "mode": "0o644",
+      "sha256": "ff892d37f027e372a732af407a4912e3f2f01313f95c14c16e0b8e3640712e34",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/HANDOFF-2588781386ad583a.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/OPPORTUNITY_QUEUE-8e0fa176acb36723.md",
+      "mode": "0o644",
+      "sha256": "9ac9e684f62ff643e4a7519bbb5d6e942300644f1b3324937d1eb889cc1797f5",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/OPPORTUNITY_QUEUE-8e0fa176acb36723.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/TRACE_GATE-b16d8ada36906b74.md",
+      "mode": "0o644",
+      "sha256": "41d08bab8e18b31700a50b44e82bac2ddcd0f4ffe060b15cea1a963e9f08585d",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/TRACE_GATE-b16d8ada36906b74.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-4c34d2777f1fd27b.py",
+      "mode": "0o644",
+      "sha256": "5379c584efe47c3787de95bffd6a7c54b5d784540f5b9b380217ad566268fbf1",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-4c34d2777f1fd27b.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt",
+      "mode": "0o644",
+      "sha256": "c7b1ff2af5d1335d5eed15e3bc5d007a10f85b04d9c5830c2f4d8d8e67fb7fff",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/citation_graph_manifest-6a6622bf983c9836.json",
+      "mode": "0o644",
+      "sha256": "01b0ed5a1f65ede1eefa99c96b78ede7a7bf130883eb8674ac6ef452fc4b0b08",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/docs/work_history/repo/review_feedback/pr8169-evidence/kept/citation_graph_manifest-6a6622bf983c9836.json"
+    },
+    {
+      "path": "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py",
+      "mode": "0o644",
+      "sha256": "e0b2d51ed782e235975027756785e1fe6da14ce0cfcf8066a16ccdb8b673caf8",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8169-prepared-v2-source/scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py"
+    }
+  ],
+  "count": 13
+}

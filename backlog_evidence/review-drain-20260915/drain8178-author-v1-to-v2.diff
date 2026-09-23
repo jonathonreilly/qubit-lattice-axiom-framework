@@ -1,0 +1,11 @@
+--- docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md@v1
++++ docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md@v2
+@@ -8,6 +8,8 @@
+ ---
+ 
+ # Supplied torus auxiliary field: mode variance and a finite bracket
++
++**Type:** bounded_theorem
+ 
+ ## Scope, supplied objects and dependency
+ 

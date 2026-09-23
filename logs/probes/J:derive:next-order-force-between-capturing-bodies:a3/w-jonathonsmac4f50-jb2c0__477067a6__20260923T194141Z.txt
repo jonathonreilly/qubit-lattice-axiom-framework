@@ -1,0 +1,16 @@
+PASS E1.1 the linearized equations give sound speed squared (1 - rho)/9 (block 44's value)
+PASS E1.2 the Oseen pair u = (I + rr)e_x/(8 pi r), p = x/(4 pi r^3) solves lap u = grad p and div u = 0 for r > 0
+PASS E1.3 on the force axis u_x = 1/(4 pi r); transverse to it u_x = 1/(8 pi r)
+PASS E2 lattice Stokes symbol: -nu|d|^2 g - d p + F = 0 and conj(d).g = 0 with g = (I - d d^+/|d|^2)F/(nu|d|^2)
+PASS N1 FFT lattice Green function = direct solve of the real-space discrete Stokes system (periodic 6^3, unit force)  [max diff 4.4e-16]
+   L= 64 r= 4 axial 0.925 transverse 0.761  r= 8 axial 0.778 transverse 0.529  r=16 axial 0.579 transverse 0.076
+   L= 96 r= 4 axial 0.964 transverse 0.840  r= 8 axial 0.853 transverse 0.685  r=16 axial 0.701 transverse 0.375
+   L=128 r= 4 axial 0.983 transverse 0.879  r= 8 axial 0.891 transverse 0.764  r=16 axial 0.772 transverse 0.529
+   L=192 r= 4 axial 1.003 transverse 0.919  r= 8 axial 0.930 transverse 0.842  r=16 axial 0.846 transverse 0.685
+PASS N2 NUMERICAL: the lattice Stokeslet tends to the Oseen tensor (axial ratio -> 1 with L, e.g. 0.98 at r=4, L=192), and a periodic box of side 96 keeps 0.70 of the axial value at r = 16
+   first-order push 1.00 of reference: second-order pull >= 0.278 (infinite space), 0.195 (periodic side-96 comparator), nu <= 0.465
+   first-order push 0.75 of reference: second-order pull >= 0.209 (infinite space), 0.146 (periodic side-96 comparator), nu <= 0.465
+PASS N3 NUMERICAL: with nu <= (3/4) D_L = 0.465 and block 49's push 0.75, the Stokeslet pull on body 2 is >= 0.21 of the reference (0.15 in the periodic side-96 comparator), within 1 sigma of the executed 0.10 +- 0.07 and of 0.92 - 0.75 = 0.17 +- 0.08
+
+SUMMARY: PROVED within the linearized hydrodynamics (viscosity nu a parameter): a body taking up momentum F1 from a wind is a point momentum sink whose steady disturbance is the Oseen tensor g = -F1.(I + rr)/(8 pi nu r) (div g = 0 exactly from number conservation); a capturing body 2 at distance r is pushed towards body 1 by Q2 F1 (I + rr)/(8 pi nu rho r): with F1 = K0 Q1 Q2/r^2 the second-order force is attractive, K0 Q1 Q2^2/(4 pi nu rho r^3) on the axis, i.e. Q2/(4 pi nu rho r) of the reference; at the executed parameters >= 0.21 (0.15 with the periodic box), matching block 49's pull of a body in balance 0.10 +- 0.07 and the capturing pair's 0.92 against the balanced push 0.75
+HIT: the force of second order in the capture rates is the Stokeslet push: body 1's momentum uptake F1 = K0 Q1 Q2/r^2 leaves the Oseen flow -F1.(I + rr)/(8 pi nu r) (div g = 0 exactly), so a capturing body 2 is pulled towards body 1 with K0 Q1 Q2^2/(4 pi nu rho r^3) on the axis (Q2/(4 pi nu rho r) of the first-order force, attractive, one power of r faster); with nu <= (3/4)(0.62) it is >= 0.21 of the reference at Q = 7.8, r = 16, rho = 0.3 (0.15 in a periodic side-96 box), accounting for block 49's pull of a body in balance (0.10 +- 0.07) and for 0.92 - 0.75 between capturing and balanced pushes

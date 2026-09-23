@@ -22,11 +22,18 @@
  "stdout_tail": "ternation threshold <1/|s|>/4 = 0.2276\nnote: conversely an alternation of equal delta on the three axes raises the anisotropy's second-order coefficient (the mass sum_j t_j^2 sinh^2 delta also responds to the anisotropy): delta 0.1: 4.3459 (beta 0.06036); delta 0.3: 4.8841 (beta 0.06784); delta 0.5: 5.8001 (beta 0.08056), against 4.2703 at delta = 0\nruntime 0.4 s\nSUMMARY: PARTIAL the anisotropy balance has no global minimum for any beta (explicit runaway points both ways); a metastable planar state below threshold, none towards chains; the anisotropic walk stays massless and combines with the alternation exactly, whose threshold it raises along its fast axes\nHIT: (a) the balance F(eps) = 36 beta eps^2 - <sqrt(e^{4eps} s_x^2 + e^{-2eps}(s_y^2 + s_z^2))> has a concave sea term and, for every beta, falls below F(0) beyond eps = max(1, (3pi/8)(36beta + sqrt3)) towards chains and below -max(1, 3pi(36beta + sqrt3)) towards planes: no global minimum; its critical points solve R(eps) = 72 beta, R = -E_sea'/eps (executed: a metastable planar state for 0.0360 < beta < 0.0593, none on the chains side).\nHIT: (b, c) the anisotropy keeps all eight species massless at speeds e^{2eps}, e^{-eps}, e^{-eps}; with the alternation E^2 = sum_j t_j^2 (sin^2 k_j + sinh^2 delta_j) exactly; along axis j the alternation sets in below alpha + 2 beta = t_j^2 <1/E_eps>/4, unbounded along the runaway to chains; executed, each instability raises the other's threshold, so they coexist whichever comes first.\n",
  "checked": {
   "by": "w-macbookpro90c72-j5081",
-  "at_utc": "20260923T050647Z",
+  "at_utc": "20260923T050732Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c6ac668c differs from the current HEAD d32adfa4 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that the anisotropy balance has no global minimum for any beta, with explicit runaway points towards chains and planes, that the anisotropic walk stays massless and combines exactly with the alternation, and that the per-axis alternation threshold diverges along the chains; issue #8722.",
+  "by": "w-macbookpro90c72-j5081",
+  "at_utc": "20260923T050732Z"
  }
 }

@@ -22,11 +22,18 @@
  "stdout_tail": "exact cycle sums over random triples of levels: zero for block 19's rule and for the covariant two-body rule gamma sum_d w_d (s'.s_{x+d})^2 (reversible, even in s', so not of block 19's form); -4*gamma for beta s'.h + gamma (s'.h)^2 and beta*(-19448*sqrt(5) - 7480*sqrt(13) - 2210*sqrt(11) + 2145*sqrt(17) + 24310*sqrt(3) + 60775)/12155 ~ 2.7922 beta for beta s'.h/|h|: both irreversible\nruntime 1 s\nSUMMARY: PROVED a positive nearest-neighbour formation rule gives a reversible level chain iff its log-law is a sum of two-body terms symmetric under exchange with the offset reversed (plus terms of one record or of the past alone); block 19's rule is one member, so pairwise-linear is not the only reversible covariant class, and rules with three-body terms are not reversible\nHIT: (a) the level chain K(s -> s') = prod_x exp F(s'_x; eta_x(s))/Z is reversible iff F(s'; eta) = sum_d phi_d(s', eta_d) + psi(s') + c(eta) with phi_{-d}(b, a) = phi_d(a, b) modulo one-record terms (mixed differences in s'_x and s_y must not see the other predecessors); then pi(s) = prod_x Z(eta_x(s)) exp(sum_x psi(s_x)); the reversible dimension equals the two-body family exactly on rings (menus 2 and 3).\nHIT: (b) covariant and reversible but not block 19's rule: gamma sum_d w_d (s'.s_{x+d})^2 (zero cycle sums, even in s'); covariant and irreversible: beta s'.h + gamma (s'.h)^2 (its three-body part leaves a cycle sum proportional to gamma) and beta s'.h/|h|, both exact on the 3^3 torus with the six-axes menu.\n",
  "checked": {
   "by": "w-macbookpro90c72-j622f",
-  "at_utc": "20260923T072718Z",
+  "at_utc": "20260923T072809Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 71dc661b differs from the current HEAD 0618003d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that the reversible level-chain rules on rings are exactly the two-body exchange-symmetric family (ring nullspaces, menus 2 and 3), that the covariant nematic two-body rule is reversible but not block 19's, and that beta s'.h + gamma (s'.h)^2 and beta s'.h/|h| are irreversible (exact cycle sums on the 3^3 torus); the general theorem is proved in the attempt; issue #8738.",
+  "by": "w-macbookpro90c72-j622f",
+  "at_utc": "20260923T072809Z"
  }
 }

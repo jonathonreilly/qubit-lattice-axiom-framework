@@ -1,0 +1,390 @@
+[
+ {
+  "id": "X:formation-3plus1-lro-large",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": "1",
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": "28800",
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "Pin the limit of the plateau |m| in 3+1 (level-ordered sphere formation): the 2026-09-22 scans fit m(L) = m_inf + b/L with m_inf about 0.732 (beta 2) on L = 16-96; larger planes (128) at 1.25, 1.5, 2 and the onset region at 64 and 96. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: one run per point.",
+  "grid": [
+   {
+    "extra": "3 sphere 1.25 128 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 1.25 128 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 1.5 128 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 128 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 128 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 1.15 64 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.15 64 4000 2000 2"
+   },
+   {
+    "extra": "3 sphere 1.15 96 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.15 96 4000 2000 2"
+   },
+   {
+    "extra": "3 sphere 1.2 64 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.2 64 4000 2000 2"
+   },
+   {
+    "extra": "3 sphere 1.2 96 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.2 96 4000 2000 2"
+   },
+   {
+    "extra": "3 sphere 1.25 64 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.25 64 4000 2000 2"
+   },
+   {
+    "extra": "3 sphere 1.25 96 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.25 96 4000 2000 2"
+   }
+  ]
+ },
+ {
+  "id": "X:lightcone-near-the-proved-threshold",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": "1",
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": "28800",
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "Light-cone formation in 3+1 is PROVED to keep memory for beta > 0.5905 (harvest #8631, #8463); the executed onset lies between 0.55 and 0.60. Where exactly? beta 0.56-0.61 on planes 32-96. Arguments: dim menu beta L T T0 seed (dim 3s = symmetric light-cone past). GRID UNITS: one run per point.",
+  "grid": [
+   {
+    "extra": "3s sphere 0.56 32 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.56 48 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.56 64 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.56 96 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.57 32 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.57 48 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.57 64 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.57 96 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.58 32 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.58 48 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.58 64 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.58 96 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.59 32 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.59 48 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.59 64 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.59 96 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.60 32 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.60 48 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.60 64 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.60 96 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.61 32 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.61 48 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.61 64 4000 2000 1"
+   },
+   {
+    "extra": "3s sphere 0.61 96 4000 2000 1"
+   }
+  ]
+ },
+ {
+  "id": "X:formation-4plus1-thresholds",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": "1",
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": "28800",
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "The 4+1 thresholds (level-ordered between beta 0.75 and 1.0; light-cone between 0.3 and 0.4 on 12^4 and 16^4 planes): locate them on three sizes. Arguments: dim menu beta L T T0 seed. GRID UNITS: one run per point.",
+  "grid": [
+   {
+    "extra": "4 sphere 0.8 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.8 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.8 20 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.85 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.85 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.85 20 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.9 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.9 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.9 20 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.95 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.95 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.95 20 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.32 12 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.32 16 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.32 20 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.34 12 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.34 16 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.34 20 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.36 12 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.36 16 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.36 20 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.38 12 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.38 16 2000 1000 1"
+   },
+   {
+    "extra": "4s sphere 0.38 20 2000 1000 1"
+   }
+  ]
+ },
+ {
+  "id": "X:record-gas-chessboard-onset",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": "1",
+  "command": "cd probes/lib && python3 record_gas_stagger.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": "28800",
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "Block 81 (#8626): the record gas makes the chessboard only below the neutral scale c0. Where? Half filling, content-less records (1 1 1) and the line (3,1,2), scale g = c/c0 from 0.30 to 0.50 (the content-less comparator orders below 0.41), sides 8, 12, 16; record_gas_stagger.py = moving_gas.py plus heat-bath content re-draws and the staggered structure factor (SUMMARY stag_over_random: about 1 when disordered, order N/4 for a chessboard). Arguments: p q r scale rho L sweeps seed (scale 'g0.41' = 0.41 c0). GRID UNITS: one run per point.",
+  "grid": [
+   {
+    "extra": "1 1 1 g0.30 0.5 8 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.30 0.5 12 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.30 0.5 16 4000 1"
+   },
+   {
+    "extra": "1 1 1 g0.35 0.5 8 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.35 0.5 12 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.35 0.5 16 4000 1"
+   },
+   {
+    "extra": "1 1 1 g0.38 0.5 8 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.38 0.5 12 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.38 0.5 16 4000 1"
+   },
+   {
+    "extra": "1 1 1 g0.41 0.5 8 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.41 0.5 12 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.41 0.5 16 4000 1"
+   },
+   {
+    "extra": "1 1 1 g0.44 0.5 8 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.44 0.5 12 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.44 0.5 16 4000 1"
+   },
+   {
+    "extra": "1 1 1 g0.47 0.5 8 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.47 0.5 12 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.47 0.5 16 4000 1"
+   },
+   {
+    "extra": "1 1 1 g0.50 0.5 8 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.50 0.5 12 3000 1"
+   },
+   {
+    "extra": "1 1 1 g0.50 0.5 16 4000 1"
+   },
+   {
+    "extra": "3 1 2 g0.30 0.5 8 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.30 0.5 12 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.30 0.5 16 4000 1"
+   },
+   {
+    "extra": "3 1 2 g0.35 0.5 8 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.35 0.5 12 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.35 0.5 16 4000 1"
+   },
+   {
+    "extra": "3 1 2 g0.38 0.5 8 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.38 0.5 12 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.38 0.5 16 4000 1"
+   },
+   {
+    "extra": "3 1 2 g0.41 0.5 8 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.41 0.5 12 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.41 0.5 16 4000 1"
+   },
+   {
+    "extra": "3 1 2 g0.44 0.5 8 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.44 0.5 12 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.44 0.5 16 4000 1"
+   },
+   {
+    "extra": "3 1 2 g0.47 0.5 8 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.47 0.5 12 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.47 0.5 16 4000 1"
+   },
+   {
+    "extra": "3 1 2 g0.50 0.5 8 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.50 0.5 12 3000 1"
+   },
+   {
+    "extra": "3 1 2 g0.50 0.5 16 4000 1"
+   }
+  ]
+ }
+]

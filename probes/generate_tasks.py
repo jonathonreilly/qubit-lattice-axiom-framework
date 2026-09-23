@@ -104,7 +104,7 @@ for f in sorted(glob.glob(os.path.join(ROOT, "docs", "*.md"))):
                   "hit_pattern": r"(?mi)^HIT", "parse": {"summary": r"(?m)^SUMMARY: (.*)"},
                   "what": f"Note on main: docs/{os.path.basename(f)}. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_{stub[:40]}/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_{stub[:40]}/<script>.py\""})
 for f in sorted(glob.glob(os.path.join(ROOT, "probes", "tasks", "*.json"))):
-    tasks.extend(json.load(open(f)))
+    tasks.extend(t for t in json.load(open(f)) if not t.get("retired"))      # retired tasks stay in their files with the reason, out of the queue
 json.dump(tasks, open(os.path.join(ROOT, "probes", "TASKS.json"), "w"), indent=1)
 by = {}
 for t in tasks: by[t["type"]] = by.get(t["type"], 0) + 1

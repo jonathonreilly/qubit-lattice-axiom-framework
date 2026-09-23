@@ -12,7 +12,8 @@
   "parse": {
    "best": "done best=(.*)"
   },
-  "what": "seeded climb from the extremal realization Z_A for a processed site whose cheapest tree costs more than 0 at c = 1 (unrooted, rooted). A HIT refutes block 32's conjecture c* = 1 and raises the tree route's floor. Vary --seed, --box (5x5x8 .. 8x8x10), --minutes (20-120). To start from Z_B, use S:tight-sibling-violation-B."
+  "what": "seeded climb from the extremal realization Z_A for a processed site whose cheapest tree costs more than 0 at c = 1 (unrooted, rooted). A HIT refutes block 32's conjecture c* = 1 and raises the tree route's floor. Vary --seed, --box (5x5x8 .. 8x8x10), --minutes (20-120). To start from Z_B, use S:tight-sibling-violation-B.",
+  "retired": "settled by block 37 (PR #8510): the family constant is exactly 10/9 > 1 and the tight-sibling lemma is false; further climbs cannot change a claim (retired 2026-09-23)"
  },
  {
   "id": "S:tight-sibling-violation-B",
@@ -27,7 +28,8 @@
   "parse": {
    "best": "done best=(.*)"
   },
-  "what": "as S:tight-sibling-violation, seeded from Z_B."
+  "what": "as S:tight-sibling-violation, seeded from Z_B.",
+  "retired": "settled by block 37 (PR #8510): the family constant is exactly 10/9 > 1 and the tight-sibling lemma is false; further climbs cannot change a claim (retired 2026-09-23)"
  },
  {
   "id": "S:tight-sibling-pairs",
@@ -42,7 +44,8 @@
   "parse": {
    "best": "done restarts=\\d+ best=(.*)"
   },
-  "what": "random-start climb maximizing min(v(w1), v(w2)) over sibling processed predecessors of a processed site; a HIT (value 0) is a tight sibling pair, the open case of block 33's lemma; then run S:tight-sibling-violation from it. Vary seed, box, minutes."
+  "what": "random-start climb maximizing min(v(w1), v(w2)) over sibling processed predecessors of a processed site; a HIT (value 0) is a tight sibling pair, the open case of block 33's lemma; then run S:tight-sibling-violation from it. Vary seed, box, minutes.",
+  "retired": "settled by block 37 (PR #8510): the family constant is exactly 10/9 > 1 and the tight-sibling lemma is false; further climbs cannot change a claim (retired 2026-09-23)"
  },
  {
   "id": "S:structural-duplication",
@@ -57,7 +60,8 @@
   "parse": {
    "best": "done best=(.*)"
   },
-  "what": "climb with duplication moves (a band of marks copied beside itself) for a processed site with all predecessors tight (hard > 0) or a rooted value above 0 (vmax > 0); either is a HIT."
+  "what": "climb with duplication moves (a band of marks copied beside itself) for a processed site with all predecessors tight (hard > 0) or a rooted value above 0 (vmax > 0); either is a HIT.",
+  "retired": "settled by block 37 (PR #8510): the family constant is exactly 10/9 > 1 and the tight-sibling lemma is false; further climbs cannot change a claim (retired 2026-09-23)"
  },
  {
   "id": "S:family-constant-climb",
@@ -72,7 +76,8 @@
   "parse": {
    "best": "done restarts=\\d+ best=(.*)"
   },
-  "what": "hill-climb on the family's constant c*(config) (block 32); a HIT is any value above 1 (e.g. '5/4 = 1.250'). Vary seed, box up to 7x7x10, minutes 30-180."
+  "what": "hill-climb on the family's constant c*(config) (block 32); a HIT is any value above 1 (e.g. '5/4 = 1.250'). Vary seed, box up to 7x7x10, minutes 30-180.",
+  "retired": "settled by block 37 (PR #8510): the family constant is exactly 10/9 > 1 and the tight-sibling lemma is false; further climbs cannot change a claim (retired 2026-09-23)"
  },
  {
   "id": "S:restricted-admissibility",
@@ -87,7 +92,8 @@
   "parse": {
    "summary": "SUMMARY: (.*)"
   },
-  "what": "random realizations: is there one where every tree with the budget c = 2 has a node with two processed children (restricted minimum > 0 while the unrestricted is <= 0)? A HIT kills block 33's p >= 2921 route. 300 realizations per run; vary seed and box."
+  "what": "random realizations: is there one where every tree with the budget c = 2 has a node with two processed children (restricted minimum > 0 while the unrestricted is <= 0)? A HIT kills block 33's p >= 2921 route. 300 realizations per run; vary seed and box.",
+  "retired": "settled by block 37 (PR #8510): the family constant is exactly 10/9 > 1 and the tight-sibling lemma is false; further climbs cannot change a claim (retired 2026-09-23)"
  },
  {
   "id": "X:sixaxis-formation-threshold",

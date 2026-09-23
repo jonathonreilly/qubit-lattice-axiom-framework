@@ -400,7 +400,8 @@
   "parse": {
    "line": "(?m)^seed .*$"
   },
-  "what": "block 30's construction on random cones: nodes receiving arrows from two or three processed poles, by kind (block 33 addendum: two happens about once per thousand trees, three never). A HIT is a node with three processed children (it would matter for the count). Vary the seed; 4000 cones per run."
+  "what": "block 30's construction on random cones: nodes receiving arrows from two or three processed poles, by kind (block 33 addendum: two happens about once per thousand trees, three never). A HIT is a node with three processed children (it would matter for the count). Vary the seed; 4000 cones per run.",
+  "retired": "settled by block 37 (PR #8510): the family constant is exactly 10/9 > 1 and the tight-sibling lemma is false; further climbs cannot change a claim (retired 2026-09-23)"
  },
  {
   "id": "L:lints",

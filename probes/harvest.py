@@ -38,7 +38,7 @@ for title, sel in (("HITS NOT TRIAGED (read these first)", lambda L: not verdict
     print(f"\n== {title}: {len(sel_hits)}")
     for L in sorted(sel_hits, key=lambda L: L.get("task", "")):
         print(f"  {L.get('task')}  [{L.get('worker')}, {L.get('model') or '?'}]  {L['_path']}\n      {(L.get('review') or '')[:300]}")
-comp = sorted((t, L) for t, ls in by_task.items() if t.startswith(("C:", "J:derive:")) for L in ls)
+comp = sorted(((t, L) for t, ls in by_task.items() if t.startswith(("C:", "J:derive:")) for L in ls), key=lambda p: (p[0], str(p[1].get("utc") or p[1].get("_path") or "")))
 print(f"\n== derivations and computations logged: {len(comp)}")
 for t, L in comp: print(f"  {t}  [{L.get('worker')}, {L.get('model') or '?'}] {'HIT ' if L.get('hit') else ''}{str(L.get('summary', {}).get('summary', ''))[:260]}")
 stale = []

@@ -45,6 +45,8 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    'gauge_wilson_weak_window_quantitative_bounds_and_haar_contact_fdd_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py'],
+
     'rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16': ['scripts/rotor_tree_slater_dressing_check_2026_09_16.py'],
     'rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16': ['scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py'],
     'rotor_joint_bounded_neutral_matter_dynamics_bounded_theorem_note_2026-09-16': ['scripts/rotor_joint_gauge_propagation_check_2026_09_16.py'],

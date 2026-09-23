@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py
+runner_sha256: a5bd37b25bb607390765714efad1f41a5cbcfba8446163becb43a9fd88186466
+input_fingerprint_sha256: a9c3774799396f4a78f5ba39847084709e9fad7d4ee5ca55b678fda1d770e757
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py
+per_element: 6 checks; three exact exponential-series degree/coefficient certificates
+per_site: 3 checks; weighted Riemann norm bookkeeping
+per_mode: 3 checks; clock-rescaled gap/LR ratio identities
+per_block: 4 checks; wrong degree, wrong clock and missing gap-premise adverse controls
+lattice_wide: 2 checks; fixed-scale LR upper arithmetic and one resource predicate; analytical clustering and limits not executed
+TOTAL: PASS=18 FAIL=0
+seconds: 0.0014896669890731573; rss_MiB: 20.765625
+source_sha256: a5bd37b25bb607390765714efad1f41a5cbcfba8446163becb43a9fd88186466
+
+----- stderr -----
+

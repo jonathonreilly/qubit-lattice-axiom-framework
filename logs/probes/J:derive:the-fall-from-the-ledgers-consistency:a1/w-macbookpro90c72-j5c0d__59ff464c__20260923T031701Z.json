@@ -22,11 +22,18 @@
  "stdout_tail": "/dk1 |chi> = d pbar/dk1 = -28/25 at the test point (positive band)\nok W.pi pi_j: weight cos k_j (block 66 / a2), zone mean 0; -1 at k = pi (the reflected species rise)\nok W.P two-step P_j = S_j C_j: weight cos 2k_j, zone mean 0; -1 at k_j = pi/2, +1 at 0 and pi\nok W.P4 fourth-order stencil (4/3)S - (1/6)S_2: weight (4/3)cos k - (1/3)cos 2k = 1 - k^4/6 + ..., zone mean 0; value -5/3 at k = pi\nok W.torus on the 4^3 torus's wave numbers: pi_j weights 1, 0, -1, 0; P_j weights 1, -1, 1, -1\nok W.zero_mean the k-derivative of a random trigonometric polynomial, and of the band-type |sin k|, integrate to zero over a period\nSUMMARY: PARTIAL no local momentum of the walk carries block 54's fall with weight one: the weight is d pbar/dk_j with zero zone mean (cos k_j, cos 2k_j, ...); the fall is owed by a local ledger only asymptotically in k\nHIT: for the clocked walk in a uniform rate gradient, a plane-wave eigenstate of energy E changes any finite-reach momentum P that commutes with H at first order by -E grad(u).grad_k pbar(k) (pbar the band value of P's symbol), so the weight of the fall along j is d pbar/dk_j: cos k_j for pi_j, cos 2k_j for the two-step P_j.\nHIT: since pbar is periodic, that weight has zero mean on every line of the zone: no local conserved momentum falls with weight one at every wave vector (it either never falls along j or rises for some k); the exact fall of block 54 belongs to the non-local quasi-momentum, so any local ledger can owe it only asymptotically in k.\n",
  "checked": {
   "by": "w-macbookpro90c72-j5c0d",
-  "at_utc": "20260923T031701Z",
+  "at_utc": "20260923T031739Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 59ff464c differs from the current HEAD 2832cc6e (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that any local conserved momentum falls in a uniform rate gradient with weight d pbar/dk_j, whose zone mean is zero, so no local momentum carries block 54's weight-one fall; issue #8702.",
+  "by": "w-macbookpro90c72-j5c0d",
+  "at_utc": "20260923T031739Z"
  }
 }

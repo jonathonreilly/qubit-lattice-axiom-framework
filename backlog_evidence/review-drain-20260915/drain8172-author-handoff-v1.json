@@ -1,0 +1,74 @@
+{
+  "status": "PREPARATION COMPLETE; ROOT DISPATCHES ORIGINAL REVIEWER",
+  "reviewer": "/root/review_8172",
+  "source_files": 31,
+  "originals": 24,
+  "inherited_entries": 79,
+  "owner": "PR8172-author",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-prepared-v1.json",
+      "sha256": "054d528262327a60f6727e6cca999f6c0a40e14c781ec7cac3491242d351c202"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source-freeze.json",
+      "sha256": "bcd077e753b3f398a414fe0a463dd568e05fbf1921d6b68d676d4e37186264b8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-full-mapping-v2.json",
+      "sha256": "19f51285bbb29be145dc0d1fa6893ce58b5b87872c86f4ffd9ff4d16fa373962"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-preservation-v1.json",
+      "sha256": "623b6629a000594d6661a1764194fb6806823bf5d3b7adb3bf0caab265278ca8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-correction-v2.diff",
+      "sha256": "e85676d1388344077b9aeb1701130964a2b88c0a177ab7e57102250aac7c9574"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-discovery-v1.json",
+      "sha256": "a929694e73b0952a6603ee036c592e0f58ee5c4cb0e9b052b5f69f6082ec77a7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-input-resource-plan-v1.json",
+      "sha256": "8a6c0b8da6c3575158a8c6a5728c977275afce0dbe85083144858404c76ef7a7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-finding-dispositions-v1.json",
+      "sha256": "f64e71ad436e69108cca146b38c4fc907bfbd58291cdc2c4809849612390dd79"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-review-original.json",
+      "sha256": "1bbb13fa8d435c9fe654f76f0b53d2c0f28275e9ef2439ae36bbc17b0d351afa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-review-original.md",
+      "sha256": "33a69ae71589dcd7979610a6aef20473946f6b5689e424e0df6610b7778b0442"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/complete-packet-inventory.json",
+      "sha256": "45f6b2e57e9a612415f34328b391bcab04f0c3a6dcf88c89c1002b188cfe3619"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/independent.py",
+      "sha256": "28edcddd63e07c65128528c73185fc7e33f9a70a157a4148473f4a35b59dca0f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/independent.out.json",
+      "sha256": "057ea5d6ee51c40d8951bb22fa561db8eb051d5c21309d191648fc87c2a57642"
+    }
+  ],
+  "source_review": "Complete original canonical note/runner, all five block28 scripts and raw outputs, original finding report/control, full corrected canonical note/runner and source diff read. Exact original current Git inventory/recovery independently reused and rehashed. Inherited campaign semantic review is reused from immutable original report, not freshly recertified; every79 payload verified as exact recovery.",
+  "cold_author_checks": "Source and runner fully reread after correction; seven computational helper ASTs unchanged, original fixtures preserved, complete healing proof retained with explicit listed changes; source whitespace scan clean",
+  "tracked_diff": "",
+  "index_diff": "",
+  "execution_counts": {
+    "primary": 0,
+    "mutation": 0,
+    "simulation": 0,
+    "gates": 0
+  },
+  "required_next": "Original same-session affected-source review, fresh-main interaction review, then root-authorized staging and execution. 900s/768MiB proposals unmeasured; actual enforcement required. No registry edits discovered."
+}

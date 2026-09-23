@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "kind": "same-session-cold-base-identity-confirmation",
+  "reviewer_session": "/root/review_8171",
+  "pr": 8171,
+  "decision": "CLEAR_FOR_BOUNDED_CAPTURE",
+  "source_tree": "17b29cac51564e91ef80d473704db4a441df93c9",
+  "source_base": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "original_head": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+  "source_clearance": true,
+  "capture_plan_clearance": true,
+  "binding_only_adapter_revision_allowed": true,
+  "final_pass": false,
+  "landing_pass": false,
+  "material_findings": [],
+  "source_and_input_bytes_unchanged": true,
+  "conditional_interaction_activated": true,
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "simulation_runs": 0,
+  "source_edits": 0,
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-cold-base-confirmation-v2.md",
+      "sha256": "db9c9fb56199ceb180ccc972384bd1eb050534fbe76b462a085b8b5a5cd82659"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-cold-review-v1.json",
+      "sha256": "91611d46774f9935b5cbaea546b4da4be5946cd11279c26529dda53208800b12"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-train84-activation.json",
+      "sha256": "80659e2a881f0d64eeb3f4618cbc92233eb9ba443be0c139b388f2fbeef5593f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-advance-train84.json",
+      "sha256": "5ae52a90e4be956805a5c86a4befca579f8c50df2d8c247946f39d31f7434c93"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-unit-draft-v2.json",
+      "sha256": "76354de927405c549bf033324c0ff943c47fbae71808c25e7c13bc1f2e1b72ea"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-cheap-v2.json",
+      "sha256": "2f10f9b2969d5a24ba994b509500116cd94506ee25d3a28f2cc88608110601c7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/base_activation_v2.json",
+      "sha256": "d7b6781ab685b30589c87fc1c597c08eb72ddafae27a5156ac2acd91ec79bafc"
+    }
+  ]
+}

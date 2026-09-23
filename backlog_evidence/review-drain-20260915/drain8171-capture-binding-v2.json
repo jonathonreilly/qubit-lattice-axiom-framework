@@ -1,0 +1,34 @@
+{
+  "binding": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-cold-base-confirmation-v2.json",
+    "sha256": "c37fffeef4935247055c8f7ef2836aeb3e6a273684aea4c646d0c76eaa60714c",
+    "verdict_pointer": "/decision",
+    "verdict_value": "CLEAR_FOR_BOUNDED_CAPTURE",
+    "tree_pointer": "/source_tree",
+    "tree": "17b29cac51564e91ef80d473704db4a441df93c9"
+  },
+  "adapters": [
+    {
+      "prior": {
+        "path": "/private/tmp/review-drain-20260915/drain8171-capture-v1.py",
+        "sha256": "3ac252adfb2c0eced1b93eb071649e86fc1e581fb07019d5dc99707e5c38c588"
+      },
+      "actual": {
+        "path": "/private/tmp/review-drain-20260915/drain8171-capture-v2.py",
+        "sha256": "2eb36c05f64e643c39b907552c860862567cd16ca244dddbe428eb4b631fc8cc"
+      },
+      "change": "Only exact accepted cold report identity and pointers bound; all execution logic unchanged"
+    },
+    {
+      "prior": {
+        "path": "/private/tmp/review-drain-20260915/drain8171-mutation-capture-v1.py",
+        "sha256": "76041434c6e8f7cf393e4a06cf667e94a10a8ede8191395d24ba8290fd1c1f9f"
+      },
+      "actual": {
+        "path": "/private/tmp/review-drain-20260915/drain8171-mutation-capture-v2.py",
+        "sha256": "0115cbf49029d065686021f5f863a25a7a09ddd8566e9be7a98338d0b366d203"
+      },
+      "change": "Only exact accepted cold report identity and pointers bound; all execution logic unchanged"
+    }
+  ]
+}

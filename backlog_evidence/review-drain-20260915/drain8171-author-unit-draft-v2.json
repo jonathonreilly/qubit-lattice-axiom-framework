@@ -1,0 +1,369 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8171",
+  "constituents": [
+    {
+      "id": "PR8171",
+      "head": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+      "delta_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8171-author-source-handoff-v2.json",
+        "sha256": "c43cf3da0e25e6fbd712dd8c7bd36e252d95dbecac23ce3ac3cf307e87acc585",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+    "commit": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+    "tree": "17b29cac51564e91ef80d473704db4a441df93c9",
+    "paths": [
+      {
+        "path": "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "bcbad1f04d60ba345906cf1d83dc45691bb92516ddd85b2af2318f738f96f54c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/README.md",
+        "sha256": "a55890710f7479551690bcad8f64e1c4e2bd7ade604777e262aa903d20a5aa3c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/01-APPROACH_REGISTRY.md.gz",
+        "sha256": "76d3c20b414c2314d6963f6dccedd124b2f6401c5cce2aebb6996b269c5fa83a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/02-CHECKER_block27_findings.md.gz",
+        "sha256": "c590bd81bcde21d0c5ceb18e3f4fb7b090d569510d28251887dc9047d1af76cd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/03-CLAIM_STATUS_CERTIFICATE_block27.md.gz",
+        "sha256": "1c883f383f39e3b034c00305181e48aad04e753a4f0a914a538ba8f70fabb455"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/04-GOAL_block27.md.gz",
+        "sha256": "d8740bec7ffcbbb3a0d65415e8cf242cf94280118a66d70c4ec431ec712bd43e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/05-HANDOFF.md.gz",
+        "sha256": "2be7dd11fad72922e9e9b098dac2b442c085f130c9ff0ab280f7cc6697c10882"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/06-OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "3f80ec7582f2890657884ebc63af41a759a8eb11222f873ddee5ba0dc12957a9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/07-RESULTS_block27.md.gz",
+        "sha256": "f27db4a8c985984b7089337fd3608955419ac9cc5dd709b54357ee6c461fb6fe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/08-REVIEW_HISTORY.md.gz",
+        "sha256": "97dbea02b8e795f59ecef875c19f595a7d6372e79449b00e60b5184298bb8519"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/09-STATE.yaml.gz",
+        "sha256": "54e4ee7b2d3999965b7e09ad1ddf6031f92b91ebf378db750af96fceeed36730"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/10-TRACE_GATE.md.gz",
+        "sha256": "343a0d405f721d9ca7ad42093733ea1b1e320f9d31d8d8e754b34928fae0dda0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/11-supervisor_control_block27.out.txt.gz",
+        "sha256": "389affd2a090dd2a783552c023964ad54629e29505e98cc50f1063015a0bd53c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/12-supervisor_control_block27.py.gz",
+        "sha256": "b37c158af52e70bae80b15aa5663ee7e9fb7cc609c8fc86a93bda2888c2c24fe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/13-supervisor_control_block27_refuter.out.txt.gz",
+        "sha256": "8eaf088e9a75d878da0f1329dff595691999f6cc167557407f89c4461b2b6008"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/14-supervisor_control_block27_refuter.py.gz",
+        "sha256": "da711a65d142aa462d4fca5429c99b6209e691f612a7078ffd1cd3f7c5aad3dd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/15-ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz",
+        "sha256": "f33ea4789634912f5dc3a6347749b6772c0e2eb2d2adf73c6965127cd6e5b225"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/16-citation_graph_manifest.json.gz",
+        "sha256": "72d7529e5648010f74b592973f3844f94282708d1fc1878733f59cd19191e66d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/17-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.txt.gz",
+        "sha256": "a68938a16818bbadb7ed22def3e6125fde346b598ce8428aa0e4ba6cb2871449"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/originals/18-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py.gz",
+        "sha256": "0eb4d35b386713c451d47cf66d396d42bb9d043c361d857a6efffafe8d149fe2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/pr8171-deferred-uniform-route-ceiling.txt",
+        "sha256": "0e7c9b8672863b87fcb42fb30fd01bc0eb5b0982d5158f96b08fa0bb4ed16bf2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/pr8171-original-manifest.json",
+        "sha256": "d4fef893d5fe167a4ae8af8e357fe30081fec2b8270b972e6db26733f278f300"
+      },
+      {
+        "path": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+        "sha256": "e889b37d917e35c63b7a4cc6c439f9a011e870e67ccf66a2b8d42f667c5bd946"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "bcbad1f04d60ba345906cf1d83dc45691bb92516ddd85b2af2318f738f96f54c"
+      },
+      {
+        "path": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+        "sha256": "e889b37d917e35c63b7a4cc6c439f9a011e870e67ccf66a2b8d42f667c5bd946"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+        "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+        "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+        "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+        "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+        "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+        "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+        "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+        "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/README.md",
+        "sha256": "a55890710f7479551690bcad8f64e1c4e2bd7ade604777e262aa903d20a5aa3c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/pr8171-deferred-uniform-route-ceiling.txt",
+        "sha256": "0e7c9b8672863b87fcb42fb30fd01bc0eb5b0982d5158f96b08fa0bb4ed16bf2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8171/pr8171-original-manifest.json",
+        "sha256": "d4fef893d5fe167a4ae8af8e357fe30081fec2b8270b972e6db26733f278f300"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8171; staged current-base cold and final evidence confirmation pending",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8171-review-original.json",
+      "sha256": "4bccd0d13a9ee51daca545fbdfeca8acd72126d1896cad6312aa3fb80599bf0a"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-author-prepared-v2.json",
+        "sha256": "70b6331cf48a0da2b64ff88a8f4279758fa48ef8e299b6b3d48ff469f79f75d5"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-author-handoff-v2.json",
+        "sha256": "0d10265a2831d7a8b04bed9068cce29b59ca2d7ea6b10463127cb0523616f491"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-author-dispositions-v1.json",
+        "sha256": "f648a2f9ccc78dbab982be3853c986ac5ddf34e08a2e623d7439a3f91c534c80"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-source-input-discovery-v2.json",
+        "sha256": "38103e9bf7c1b25d0645f517b06fd0ff29cab51f3bc5c1bd677b0010d6aa0aea"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-resource-plan-v2.json",
+        "sha256": "7ac5e32c604a0fa248fa9f6f6efeadd0c6cf076b4204f2bda218cd528e408350"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-disposition-original.json",
+        "sha256": "605be9fe8a2a8c81f999144371bdb9b73008dd6c0169b4dbd95d9488293d0658"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-review-original.json",
+        "sha256": "4bccd0d13a9ee51daca545fbdfeca8acd72126d1896cad6312aa3fb80599bf0a"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-review-original.md",
+        "sha256": "b7cfdf78c9c31453eec2b80e79262b469ae713e1dc82d2b77be48501959bd86a"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-early-review-v2.json",
+        "sha256": "5da6fcfb236143f5a01623be0ec909d7dd4b1fde666b77e8c2c37debd1fd6995"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-early-review-v2.md",
+        "sha256": "322321ab0d0341498bf8f49b9a859080da237bd2590461ff30fabe225ff8ff22"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-preparation-discovery-failures-v1.json",
+        "sha256": "5cf4b23dabbb417fa915ba3741b4f431dfb2dce6c155ccf7cd893498c309867a"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-adapter-bindings-v1.json",
+        "sha256": "308c4d6f5f79e5e6363c92afb4c14593bb41ed68e1a3cb8bf85a0cd65a492d7d"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-build-staged-draft-v1.py",
+        "sha256": "2d50cf401cbe3f9baf993d056449ce6ffaee457960162250eba2ef7c62011145"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-author-cache-api-v2.json",
+        "sha256": "c38f02d65ce2d1873f66611d43db52815a6b486e530a3554df44b5a8d1e1d54f"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8171-author-source-handoff-v2.json",
+        "sha256": "c43cf3da0e25e6fbd712dd8c7bd36e252d95dbecac23ce3ac3cf307e87acc585"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "sphere_formation_kernel_sensitivity_and_level_contraction_bounded_theorem_note_2026-09-16",
+      "declared_claim_id": "sphere_formation_kernel_sensitivity_and_level_contraction_bounded_theorem_note_2026-09-16",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/work_history/review_loop/pr8171/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "dependency_rationale": "Self-contained supplied sphere-kernel/level-order theorem. Current axiom memo fixes framework boundary; finite-menu source is a pinned context read only, not a sphere or infinite-plane mathematical premise. Standard compact probability imports are explicitly stated in source. Full corrected negative argument is deferred recovery, never a supporting premise."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8171/README.md",
+      "rationale": "Recovery index only. Full corrected deferred scientific proof is a separately preserved text artifact, not live supporting proof or premise. Complete positive proofs reside in canonical source; original histories and failures remain exact.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8171-early-review-v2.json",
+        "sha256": "5da6fcfb236143f5a01623be0ec909d7dd4b1fde666b77e8c2c37debd1fd6995"
+      }
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "pr": 8172,
+  "reviewer_session": "/root/review_8172",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "date_utc": "2026-09-23T04:00:11.136391+00:00",
+  "verdict": "EARLY SOURCE CLEARANCE FOR ROOT-OWNED STAGING, COLD FREEZE AND BOUNDED CAPTURE; NOT FINAL PASS",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "original_head": "c8ae4a4622c1aa924ff6c9b3452021022f20746d",
+  "source_files": [
+    {
+      "path": "docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "db64c52383eb094eee873e1f99a7e14643f6f8486c8fb14cc9e9aaf5c7bcf86b",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/DEFERRED_SCIENCE.md",
+      "sha256": "1fc173abb5cf21f5a96180409e275288cbff0b1d7560d2ffcf4af6934fce0f1a",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/DEFERRED_SCIENCE.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/README.md",
+      "sha256": "84a34a38a021069db9d06b291a558914021fe0319dd67503fdf8b1dcdb660d01",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/README.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/archive-manifest.json",
+      "sha256": "8a92ab58a37176397f79df01ba57fc8cb16f8ac90ce2f02ad2a17d65493d3a4d",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/archive-manifest.json"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz",
+      "sha256": "46999660e82d42f50dd35c60e06caf53cd3cb3d20362cd8da4d4f9c7b186b006",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-packet-inventory.json",
+      "sha256": "45f6b2e57e9a612415f34328b391bcab04f0c3a6dcf88c89c1002b188cfe3619",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/complete-packet-inventory.json"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16-f2af9a93a1c168a8.md",
+      "sha256": "b1a4a11040a1dbadbdc5a800960c56df6d59851635006087940bcef7b5809990",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16-f2af9a93a1c168a8.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/APPROACH_REGISTRY-f296aef8bec769dd.md",
+      "sha256": "573f5ed6133f2f043568aa62f69a38e5d9bc2733899f806ea7f985e37d6dbb42",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/APPROACH_REGISTRY-f296aef8bec769dd.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/CHECKER_block28_findings-6fdbdf7ac1bd8d16.md",
+      "sha256": "338982c97dbeea3f1474f8f43da993eea5d67fbf3350255dc6965f998e953762",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/CHECKER_block28_findings-6fdbdf7ac1bd8d16.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/CLAIM_STATUS_CERTIFICATE_block28-bb508f195a32e2e9.md",
+      "sha256": "f4f745e8a159f63162b930a7e5e6c8604ce8c213967009ef3de2b3ae0c42aa72",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/CLAIM_STATUS_CERTIFICATE_block28-bb508f195a32e2e9.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/GOAL_block28-90d0882134e9ee53.md",
+      "sha256": "44feba3aa88bdcd1d6dafeef4979eae970eb71c5cd1e2f3ef223d7c590f14400",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/GOAL_block28-90d0882134e9ee53.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/HANDOFF-44c009a7729b873d.md",
+      "sha256": "36e775394dcead762a03cb6a113e0debd4f7962a5c67d9136a39cdd7db2c62ff",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/HANDOFF-44c009a7729b873d.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/OPPORTUNITY_QUEUE-da597e8270234a27.md",
+      "sha256": "86693056ebc7d831ee15d66876bcdde4e714030f43abc6f883416e887e474f2f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/OPPORTUNITY_QUEUE-da597e8270234a27.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/RESULTS_block28-94bec5337188678b.md",
+      "sha256": "57e7a5d363cb0796d6a8b846c6dd89ce8cca6c30825761c81560a9b866d17a2c",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/RESULTS_block28-94bec5337188678b.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/REVIEW_HISTORY-5de1f2362d5592b4.md",
+      "sha256": "2bb63d9a67822fdd6a7e902a3a419a690a0f5d0609ff93468581be008602e0e0",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/REVIEW_HISTORY-5de1f2362d5592b4.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/STATE-4e45eff3b361f6e3.yaml",
+      "sha256": "42c7d658468ed8f305a075ba44afb666472a984d4c9bbf1f7a5e1d148949b5b2",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/STATE-4e45eff3b361f6e3.yaml"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/TRACE_GATE-e0b88a0cc15db463.md",
+      "sha256": "b49e62bb70fc7cc6d565d67e141f85dc5fa73465e21f12afa92c5ade05f1aab2",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/TRACE_GATE-e0b88a0cc15db463.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-5d81f2535f3c6840.txt.gz",
+      "sha256": "7c9f30ac64d701ee1bcb4788a264e7b7ef94bcce374f99d9aebb933ee931f14e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-5d81f2535f3c6840.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-6411552d4900e6e0.py",
+      "sha256": "cdb2b7e3b0ffce085650a92498dc24f2797360a81e2b9ed38ef1d6f1de5013f6",
+      "mode": "0o755",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-6411552d4900e6e0.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/citation_graph_manifest-3c45f083d588d6d8.json.gz",
+      "sha256": "b9b3be9dbb80e3641ab5bd53d4b0ba561bca2fd96dbb2b9c6936c23baa56e4eb",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/citation_graph_manifest-3c45f083d588d6d8.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact-841cfedbb1c9c00a.py",
+      "sha256": "d2f006d612617e5a7766a2cd65bd3782792ffc2e5aee3f92256139c6d9a5a324",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact-841cfedbb1c9c00a.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact.out-82cb36c9ecb8ead2.txt.gz",
+      "sha256": "e4208dd758e371824106597305fe262c5b562a74692c158dd339431d2414715a",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact.out-82cb36c9ecb8ead2.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter-be8a580c8a49dcc4.py",
+      "sha256": "384bd0c38378dff80e6882de3822ce127fbf6120b43ceea3f38db507b0eef15c",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter-be8a580c8a49dcc4.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter.out-4785cb7bd1bc89bc.txt.gz",
+      "sha256": "301a5b767803b89bd5664723746a227f70c9b6eb11a132197f51c554353929ce",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter.out-4785cb7bd1bc89bc.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis-c7293f468d6cffac.py",
+      "sha256": "06c9db295dc6cae60c0585c23116b47b409c55ab8729bb2f18e8dc094bef80e5",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis-c7293f468d6cffac.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis.out-24388d69821ab568.txt.gz",
+      "sha256": "178659f619a34d127157a62b8dabd7df34ecc8767a4ae1328a10508c5f25a5b9",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis.out-24388d69821ab568.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis-3356d4221aa94000.py",
+      "sha256": "6ab23de4f0290d0473c57e1c0abbdbd9b1758b309fa7d6f219c3c0072d80da21",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis-3356d4221aa94000.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis.out-bac7f37e8a0ea271.txt.gz",
+      "sha256": "c5b1fbdb94f23ddcb1cde3bb7bc34146ff42f97a4577d0f2a3593e9b47c345a8",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis.out-bac7f37e8a0ea271.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere-45845b8cb7ae5b02.py",
+      "sha256": "e609ad1a105c4495e1aed06138b832b2860a7554c5572abb9782a3d0771e439e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere-45845b8cb7ae5b02.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere.out-19a5299c46cab3ee.txt.gz",
+      "sha256": "e3d5289cc163521b5bfdf4d0fb074dbd4347719442e0e1621b22004918b4c584",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere.out-19a5299c46cab3ee.txt.gz"
+    },
+    {
+      "path": "scripts/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.py",
+      "sha256": "1c7cec640e3a24f704d5c3f38989d7237c9d8838171ae682f127ed5fdcb7f640",
+      "mode": "0o755",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source/scripts/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.py"
+    }
+  ],
+  "new_findings": [],
+  "original_finding_dispositions": {
+    "8172-R1": "Addressed: exact three sensitivity points and two deviation evaluations only. Closed forms and all displayed fractions agree with independent original controls; no half-line or monotonicity inferred.",
+    "8172-R2": "Addressed: nonempty island, explicit level-zero recentering at an island point ensures nonnegative maxima. Original complete loose polynomial count retained, with valid lower enumeration limit and exact membership proof. Third-coordinate checker now uses t-a-b. Capped probability and emptiness lower bound correct. Singleton and triangle controls include large translations.",
+    "8172-R3": "Addressed by narrowing: actual supplied nonnegative recurrence and initial upper bound, full induction/path-count proof including g=0 and t=0. Sphere coupling application expressly deferred. No dependency on PR8171.",
+    "8172-R4": "Addressed by narrowing/deferment: full historical scans remain observations with finite protocols, no actual/permanent threshold or universal absence assertion adopted.",
+    "8172-R5": "Addressed: exact parameter-size-algorithm lists, shared random-stream caveat, rectangular healing event and vacuous large bounds explicit. Raw source/output preserved, not rewritten.",
+    "8172-R6": "Addressed: corrected-main static contour gap, sufficient sphere condition and conditional formation result preserved as context only, not proof inputs. No PR8170/8171 authority adopted.",
+    "8172-R7": "Source addressed, execution pending: actual three-file pin closure and no helper source; historical scans are not consumed. N5 scopes current finite controls, historical nonexecution and written general proofs honestly. Capture and actual API gate confirmation remain future.",
+    "8172-R8": "Addressed by deferment: positive supplied-model lemmas remain; broad negative/threshold certification withheld, four genuine historical categories retained without inventing a fifth. No no-go packet PASS granted.",
+    "8172-R9": "Addressed: canonical scientific names, two linked parents, exact recoverable history and explicit branch retention. Generated manifest excluded from source adoption; integration regeneration remains coordinator work."
+  },
+  "proof_review": {
+    "point_arithmetic": "Exhaustive finite conditional definition, positive normalization, TV formula and explicit maximizers consistent with independently enumerated original control; deviation formulas derive from all six output weights. Reused exact results bind unchanged computational function ASTs.",
+    "healing": "Full eroder/coupling/count proof read. Level-zero translation preserves D and noise law; normalized maxima nonnegative imply Mj<=D. Backward cone finite, candidate y membership iff sum(max(i,y))<=D+1. The lower coordinate bound 1-2B is stronger than retained -3B-3, hence enumeration complete. Empty-island exclusion, epsilon endpoints and vacuous bound handled. All original300/120 fixtures and seed28 preserved.",
+    "recurrence": "Full nonnegative induction, finite directed-path count and normalized level sum valid for g>=0; initial upper bound correctly handled, no unproved sphere transport claim."
+  },
+  "independent_checks": {
+    "prior_controls_reused": "Exact sensitivity/deviation controls and direct forward/backward cones and exhaustive step strings from original session; core helper ASTs unchanged.",
+    "new_controls": "45 translated nonempty subsets verify recenter premise and polynomial identity independently of changed runner. All31 source bytes/modes match freeze; all24 decoded originals match original hash/mode/blob; all79 tar payloads match Git blobs and original tar. Restoring Git modes on every member in scratch succeeded.",
+    "runtime": "early_verify_v1 ran1.565sec, exit0, empty stderr. Fixed finite inventory/control work, no explicit wallclock or memory cap. No primary, mutation, simulation, audit or pipeline execution."
+  },
+  "preservation": {
+    "source_loss": "No tracked base file modified/deleted; exact intended untracked31 path set. Original note/full proof/programs and unsuccessful proposals retained, no science discarded in favor of summaries.",
+    "archive_modes": "Tar metadata differs from Git modes as disclosed; unchanged tar bytes + complete path/mode inventory + explicit restore instruction suffice. Independently exercised restoration on all79 members and checked final bytes/modes. No fidelity blocker.",
+    "mode_difference_count": 79,
+    "recovery_branch": "Must remain because sphere application/asymptotic thresholds and broader research are deferred."
+  },
+  "input_plan": {
+    "runtime_count": 3,
+    "helpers": [],
+    "registry_changes": false,
+    "historical_payload_role": "Archive/protocol context only; not current proof or runtime input",
+    "actual_metadata_discovery": "Author actual API receipt read and bound; source imports and literal I/O independently inspected. Coordinator receipt preflight still required after staging."
+  },
+  "resource_assessment": {
+    "timeout_sec": 900,
+    "process_tree_memory_bytes": 805306368,
+    "assessment": "Reasonable conservative ceilings for fixed scalar rational enumerations, 120 original region loops, tiny polynomial and six-step recurrence. No large arrays, subprocesses, simulations or unbounded iteration. Region loops stream candidates, so resident memory is principally Python/SymPy. No measured claim that900seconds or768MiB is necessary, sufficient, or enforced by constants.",
+    "capture_conditions": "Root may authorize one baseline then eight declared mutations sequentially on this exact frozen source after staged/cold checks. Enforce wallclock and process-tree memory externally and record actual limits, elapsed usage, output, source/input hashes and failure. Preserve any timeout/OOM/partial run; no automatic retry or larger limit. Six mathematical mutations retained, two correction-specific added, two prose-policy mutations retired only from live runner and preserved historically."
+  },
+  "remaining_gates": [
+    "Root staging and exact final index/current-main/metadata preflight",
+    "Same-session cold/final binding if source or interactions change",
+    "Authorized baseline/mutations and complete failure/evidence capture",
+    "Combined integrated pipeline/strict/evidence pass and source-loss guard; no audit verdict"
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-handoff-v1.json",
+      "sha256": "f8d2b559198e14560627ff6b0b76afb3a77eb3278ce72640ff11172007dcc47c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-prepared-v1.json",
+      "sha256": "054d528262327a60f6727e6cca999f6c0a40e14c781ec7cac3491242d351c202"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source-freeze.json",
+      "sha256": "bcd077e753b3f398a414fe0a463dd568e05fbf1921d6b68d676d4e37186264b8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-full-mapping-v2.json",
+      "sha256": "19f51285bbb29be145dc0d1fa6893ce58b5b87872c86f4ffd9ff4d16fa373962"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-correction-v2.diff",
+      "sha256": "e85676d1388344077b9aeb1701130964a2b88c0a177ab7e57102250aac7c9574"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-input-resource-plan-v1.json",
+      "sha256": "8a6c0b8da6c3575158a8c6a5728c977275afce0dbe85083144858404c76ef7a7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-discovery-v1.json",
+      "sha256": "a929694e73b0952a6603ee036c592e0f58ee5c4cb0e9b052b5f69f6082ec77a7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-review-original.json",
+      "sha256": "1bbb13fa8d435c9fe654f76f0b53d2c0f28275e9ef2439ae36bbc17b0d351afa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/early_verify_v1.py",
+      "sha256": "28ec1daae9a05d45a5113a644d4e50bb9d7f3103501081913253b46cb8217087"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/early_verify_v1.json",
+      "sha256": "30060e2314b0bd3f519df005b067ba697fb561e92cc7da3ab9cf1af6866a219d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/early_verify_v1.stdout",
+      "sha256": "5355e170b2891df70503415b3d9069b56578acd74da96e8c095f725a34b76f38"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/early_verify_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/independent.py",
+      "sha256": "28edcddd63e07c65128528c73185fc7e33f9a70a157a4148473f4a35b59dca0f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/independent.out.json",
+      "sha256": "057ea5d6ee51c40d8951bb22fa561db8eb051d5c21309d191648fc87c2a57642"
+    }
+  ],
+  "edits_performed": "None to source/index; scratch/evidence only",
+  "final_pass": false
+}

@@ -1,0 +1,39 @@
+{
+  "status": "UNTRACKED AUTHOR PREPARATION; ORIGINAL REVIEWER CONFIRMATION PENDING",
+  "owner": "PR8172-author",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "original_head": "c8ae4a4622c1aa924ff6c9b3452021022f20746d",
+  "original_merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "notes": [
+    {
+      "path": "docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "db64c52383eb094eee873e1f99a7e14643f6f8486c8fb14cc9e9aaf5c7bcf86b"
+    }
+  ],
+  "runners": [
+    {
+      "path": "scripts/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.py",
+      "sha256": "1c7cec640e3a24f704d5c3f38989d7237c9d8838171ae682f127ed5fdcb7f640"
+    }
+  ],
+  "archive_manifest": {
+    "path": "docs/work_history/repo/review_feedback/pr8172-evidence/archive-manifest.json",
+    "sha256": "8a92ab58a37176397f79df01ba57fc8cb16f8ac90ce2f02ad2a17d65493d3a4d"
+  },
+  "deferred_science": {
+    "path": "docs/work_history/repo/review_feedback/pr8172-evidence/DEFERRED_SCIENCE.md",
+    "sha256": "1fc173abb5cf21f5a96180409e275288cbff0b1d7560d2ffcf4af6934fce0f1a"
+  },
+  "source_files": 31,
+  "originals": 24,
+  "inherited_packet_entries": 79,
+  "branch_retention_required": true,
+  "primary_runs": 0,
+  "mutations": 0,
+  "simulations": 0,
+  "staged": false,
+  "original_report": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-review-original.json",
+    "sha256": "1bbb13fa8d435c9fe654f76f0b53d2c0f28275e9ef2439ae36bbc17b0d351afa"
+  }
+}

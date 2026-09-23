@@ -1,0 +1,13 @@
+# PR8171 narrow same-session cold base confirmation
+
+**Decision: CLEAR_FOR_BOUNDED_CAPTURE** on source tree `17b29cac51564e91ef80d473704db4a441df93c9`, base `6332b12b59c83c5b08cc7b4ad90898cb6666050d`. This is an identity/interaction activation addendum to the actual cold review; it is not final source or landing PASS.
+
+Reviewer `/root/review_8171` continues the original session. Independently verified that all 23 source path/hash records and every input dictionary exactly equal draft v1. Disk and index hashes match every binding; staged delta consists exactly of those additions and the working tree has no unstaged changes. The new draft SHA256 is `76354de927405c549bf033324c0ff943c47fbae71808c25e7c13bc1f2e1b72ea`.
+
+Compared the previously conditionally reviewed train84 candidate `a0f8dbe92d402e4aacfa523023690a10c2c6770d` against landed main `6332b12b59c83c5b08cc7b4ad90898cb6666050d`: the sole changed path is `docs/audit/data/citation_graph_manifest.json`. Thus the exact source interaction analyzed in cold-v1 is now activated by the landed bytes. No new theorem dependency, scientific input, helper, premise, authority epoch or source change is introduced. The full original/early/cold proof and recovery conclusions remain applicable without rereview or rerun.
+
+Read the new cheap preflight only after completion confirmation. It reports mechanical_status=ok, exact new tree and draft hash, cache_checked=false, one primary, no helpers, and the same two citations. Receipt SHA256 is `2f10f9b2969d5a24ba994b509500116cd94506ee25d3a28f2cc88608110601c7`. This is mechanical evidence, not science acceptance.
+
+The original cold-v1 capture plan remains cleared unchanged: one bounded primary, then eight serial finite mathematical mutations, each proposed 60 seconds/384 MiB sampled process-tree watch, preserving failures and forbidding baseline repetition or automatic retry. No capture has occurred in this review. Root may produce immutable adapter versions changing only COLD_CLEARANCE_BINDING to this actual JSON report/path/hash, `/decision`=`CLEAR_FOR_BOUNDED_CAPTURE` and `/source_tree`=`17b29cac51564e91ef80d473704db4a441df93c9`. Actual-base, draft, cheap-receipt and source/input guards remain required.
+
+No primary, mutation, simulation, gate, staging or source edit was performed. Only bounded static identity reads/comparisons ran, with evidence in `check8171/base_activation_v2.json`. No existing report or execution receipt was restamped. Fresh capture/evidence review, final same-session binding and combined landing gates remain outstanding. Deferred negative certification and original branch retention remain unchanged.

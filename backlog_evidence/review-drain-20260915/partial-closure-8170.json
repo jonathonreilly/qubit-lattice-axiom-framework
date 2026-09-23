@@ -1,0 +1,21 @@
+{
+  "pr": 8170,
+  "original_head": "f9e1177003afa991ec87831d2be70611068a09ab",
+  "branch": "physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916",
+  "landing": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "source_verified_at": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8170-landing-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T04:00:55Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916",
+    "headRefOid": "f9e1177003afa991ec87831d2be70611068a09ab",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8170,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8170"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "kind": "read-only-source-discovery-not-execution",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "primary": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+  "primary_sha256": "e889b37d917e35c63b7a4cc6c439f9a011e870e67ccf66a2b8d42f667c5bd946",
+  "runtime_inputs": [
+    {
+      "path": "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "bcbad1f04d60ba345906cf1d83dc45691bb92516ddd85b2af2318f738f96f54c",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "context only, not mathematical premise"
+    }
+  ],
+  "input_fingerprint": "4d2ca977dfa5db6f07e9072d4d4dd6c8189ad33b465932412a23af2707dd4109",
+  "declared_timeout": 60,
+  "packet_transitive_helpers": [],
+  "graph_helpers": [],
+  "citations": [
+    "docs/work_history/review_loop/pr8171/README.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "graph_primary": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+  "mathematical_dependencies": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "mathematical_imports": [
+    "countable products and iterated kernels on standard Borel spaces",
+    "compact metrizable countable product of spheres",
+    "weak sequential compactness of probability laws on compact metric spaces",
+    "uniform density of continuous cylinder functions",
+    "finite marginal determination"
+  ],
+  "registry_changes_required": false,
+  "primary_imported": false,
+  "primary_executed": false,
+  "static_compile": true,
+  "original_archives_verified": 18,
+  "tracked_and_index_clean": true,
+  "actual_current_base": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "source_tree": "17b29cac51564e91ef80d473704db4a441df93c9"
+}

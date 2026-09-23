@@ -1,0 +1,79 @@
+{
+  "runner": {
+    "path": "scripts/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.py",
+    "sha256": "1c7cec640e3a24f704d5c3f38989d7237c9d8838171ae682f127ed5fdcb7f640"
+  },
+  "ordered_inputs": [
+    {
+      "path": "docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "db64c52383eb094eee873e1f99a7e14643f6f8486c8fb14cc9e9aaf5c7bcf86b"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    }
+  ],
+  "mathematical_parents": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "Framework/menu/product conditional vocabulary; no phase or coupling theorem imported"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "Framework/menu/product conditional vocabulary; no phase or coupling theorem imported"
+    }
+  ],
+  "mathematical_closure": "Full exact finite conditional enumeration and majority deviations; full eroder/noise coupling with explicit recenter and original complete polynomial count; full supplied nonnegative recurrence comparison. Standard finite counting, induction and union bound only. No simulation data or unlanded sphere contraction premise.",
+  "context_only": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "9632e807157b58cbbbac39d9632f2806b49ec221a664c3dda5f941106833bd16"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2"
+    }
+  ],
+  "timeout_sec": 900,
+  "proposed_external_process_tree_limit_bytes": 805306368,
+  "source_basis": "Inherited900-second primary cap; three finite sensitivities (216 triples times5 alternatives times6 outputs), original300 seeded islands in [-4,4]^2 and original120 region counts, six translated examples, fixed symbolic polynomial, six-step recurrence. Original fixtures unchanged; no lattice simulation or large arrays. 768MiB symbolic/import headroom proposed, unmeasured. Preserve any resource failure.",
+  "json_output": "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.json",
+  "mutation_json_pattern": "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--<mutation>.json",
+  "stdout": "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.txt",
+  "checks_source_derived_not_executed": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B2",
+    "B3",
+    "C1",
+    "C2",
+    "C3",
+    "D1"
+  ],
+  "mutation_names": {
+    "criterion_bracket_wrong": "B",
+    "threshold_p0_wrong": "B",
+    "eroder_bound_wrong": "C",
+    "region_count_wrong": "C",
+    "polynomial_wrong": "C",
+    "influence_wrong": "D",
+    "translation_origin_wrong": "C",
+    "third_coordinate_wrong": "C"
+  },
+  "mutation_status": "Eight pending current mathematical mutations (six originals plus two correction-specific); two original prose-policy mutations retired but preserved exactly in historical source. No outcomes claimed.",
+  "primary_executions": 0,
+  "simulation_executions": 0
+}

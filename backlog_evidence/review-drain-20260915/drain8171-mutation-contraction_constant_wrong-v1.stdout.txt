@@ -1,0 +1,28 @@
+AUDIT_INPUT_PATHS:
+  docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 the context-only finite-menu note carries its identity and product-form heading; no sphere theorem is imported
+PASS: A4 all three declared source/context inputs match literal SHA-256 pins
+PASS: B1 T1(a): Var(w) = A'(kappa) = 1/kappa^2 - 1/sinh^2 kappa for the cosine law proportional to e^{kappa w} on [-1, 1]
+PASS: B2 T1(b): E[((s - A u).d)^2] = A/kappa + (1 - 3A/kappa - A^2) c^2 with c = u.d, from E[s] = A u and E[s s^T] = (A/kappa) I + (1 - 3A/kappa) u u^T
+PASS: B3 T1(c): 1 - 3A/kappa - A^2 = (kappa A' - A)/kappa, and (kappa/2) sinh 2kappa + kappa^2 - 2 sinh^2 kappa = sum_{m>=2} (2^{2m}/(2m)!)(m/2 - 1) kappa^{2m} with the kappa^2 terms cancelling: A(kappa)/kappa is decreasing
+PASS: B4 T1(d): d/dV log f_V = s - A(|V|) V/|V| (symbolic); A(kappa) < kappa/3 at ten rational points by exact enclosure; the written proof supplies the all-parameter variance and sensitivity bounds
+FAIL: C1 T2: the contraction factor is 3 (beta/sqrt3) = sqrt3 beta; it is below 1 at beta = 5773/10^4 and above 1 at beta = 5774/10^4 (sqrt3 enclosed rationally), so the region beta < 1/sqrt3 is the route's
+PASS: C2 T3: A(3 beta) < beta at beta = 1/10, 3/10, 1/2, 577/1000, 1, 3 by exact enclosure; the written conditional-mean recursion and absolute antipodal comparison give the rate bounds
+PASS: D1 T4: A(delta)/delta = 1/3 - delta^2/45 + 2 delta^4/945 - ... and 1/3 - delta^2/45 <= A(delta)/delta < 1/3 at delta = 1/10, 1/4, 1/2, 1, 2 by exact enclosure; these finite checks do not certify a global negative route claim
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — symbolic variance and directional moments, twelve sign coefficients, log-density derivatives and ten rational enclosures
+per_site: executed — six rational one-site rate bounds and five rational mean-map bounds; no stochastic site chains
+per_mode: checked and not executed — no spectral decomposition, quadrature or Monte Carlo is invoked by this symbolic primary
+per_block: executed — contraction-factor arithmetic and its exact boundary enclosures at two rational beta values; no block sampler
+lattice_wide: checked and not executed — infinite-plane compactness, measurable coupling and invariant-law uniqueness are written proofs
+PASS: G1 the five N5 resolution lines are printed
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=15 FAIL=1

@@ -1,0 +1,11 @@
+--- drain8171-capture-v1.py
++++ drain8171-capture-v2.py
+@@ -19,7 +19,7 @@
+ # Deliberately unbound: a new immutable adapter version must bind the ACTUAL
+ # original-reviewer cold report path/hash, exact verdict pointer/value and tree.
+ # Early source clearance is insufficient. No hypothetical verdict is accepted.
+-COLD_CLEARANCE_BINDING = None
++COLD_CLEARANCE_BINDING = {'path': '/private/tmp/review-drain-20260915/drain8171-cold-base-confirmation-v2.json', 'sha256': 'c37fffeef4935247055c8f7ef2836aeb3e6a273684aea4c646d0c76eaa60714c', 'verdict_pointer': '/decision', 'verdict_value': 'CLEAR_FOR_BOUNDED_CAPTURE', 'tree_pointer': '/source_tree', 'tree': '17b29cac51564e91ef80d473704db4a441df93c9'}
+ def confirm_cold(cp,cold,tree):
+     b=COLD_CLEARANCE_BINDING
+     assert isinstance(b,dict), 'BLOCKED: actual same-session cold report schema/clearance has not yet been bound; root must prepare a new immutable adapter version'

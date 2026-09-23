@@ -1,0 +1,885 @@
+{
+  "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+  "mutation": "one_site_rate_wrong",
+  "expected_family": "C",
+  "command": [
+    "/usr/local/bin/python3",
+    "-u",
+    "/private/tmp/review-drain-20260915/author-draft-slot/scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+    "--mutation",
+    "one_site_rate_wrong"
+  ],
+  "exit_code": 1,
+  "error": null,
+  "elapsed_seconds": 0.8398572090081871,
+  "whole_tree_watchdog": {
+    "limit_seconds": 60,
+    "limit_bytes": 402653184,
+    "sampling_interval_seconds": 0.02,
+    "samples": 15,
+    "peak_tree_rss_bytes": 100368384,
+    "violations": [],
+    "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+  },
+  "before": {
+    "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "bcbad1f04d60ba345906cf1d83dc45691bb92516ddd85b2af2318f738f96f54c",
+      "device": 16777231,
+      "inode": 251608828,
+      "size": 19505,
+      "mtime_ns": 1790134888189140605,
+      "ctime_ns": 1790134888189157230
+    },
+    "docs/work_history/review_loop/pr8171/README.md": {
+      "sha256": "a55890710f7479551690bcad8f64e1c4e2bd7ade604777e262aa903d20a5aa3c",
+      "device": 16777231,
+      "inode": 251608826,
+      "size": 1594,
+      "mtime_ns": 1790134888188838189,
+      "ctime_ns": 1790134888188852230
+    },
+    "docs/work_history/review_loop/pr8171/originals/01-APPROACH_REGISTRY.md.gz": {
+      "sha256": "76d3c20b414c2314d6963f6dccedd124b2f6401c5cce2aebb6996b269c5fa83a",
+      "device": 16777231,
+      "inode": 251608803,
+      "size": 1049,
+      "mtime_ns": 1790134887819111051,
+      "ctime_ns": 1790134887819140468
+    },
+    "docs/work_history/review_loop/pr8171/originals/02-CHECKER_block27_findings.md.gz": {
+      "sha256": "c590bd81bcde21d0c5ceb18e3f4fb7b090d569510d28251887dc9047d1af76cd",
+      "device": 16777231,
+      "inode": 251608804,
+      "size": 1474,
+      "mtime_ns": 1790134887835067150,
+      "ctime_ns": 1790134887835136108
+    },
+    "docs/work_history/review_loop/pr8171/originals/03-CLAIM_STATUS_CERTIFICATE_block27.md.gz": {
+      "sha256": "1c883f383f39e3b034c00305181e48aad04e753a4f0a914a538ba8f70fabb455",
+      "device": 16777231,
+      "inode": 251608805,
+      "size": 1097,
+      "mtime_ns": 1790134887855576658,
+      "ctime_ns": 1790134887855635991
+    },
+    "docs/work_history/review_loop/pr8171/originals/04-GOAL_block27.md.gz": {
+      "sha256": "d8740bec7ffcbbb3a0d65415e8cf242cf94280118a66d70c4ec431ec712bd43e",
+      "device": 16777231,
+      "inode": 251608806,
+      "size": 1616,
+      "mtime_ns": 1790134887876593706,
+      "ctime_ns": 1790134887876633081
+    },
+    "docs/work_history/review_loop/pr8171/originals/05-HANDOFF.md.gz": {
+      "sha256": "2be7dd11fad72922e9e9b098dac2b442c085f130c9ff0ab280f7cc6697c10882",
+      "device": 16777231,
+      "inode": 251608807,
+      "size": 4030,
+      "mtime_ns": 1790134887899583126,
+      "ctime_ns": 1790134887899611001
+    },
+    "docs/work_history/review_loop/pr8171/originals/06-OPPORTUNITY_QUEUE.md.gz": {
+      "sha256": "3f80ec7582f2890657884ebc63af41a759a8eb11222f873ddee5ba0dc12957a9",
+      "device": 16777231,
+      "inode": 251608808,
+      "size": 4680,
+      "mtime_ns": 1790134887918234804,
+      "ctime_ns": 1790134887918296929
+    },
+    "docs/work_history/review_loop/pr8171/originals/07-RESULTS_block27.md.gz": {
+      "sha256": "f27db4a8c985984b7089337fd3608955419ac9cc5dd709b54357ee6c461fb6fe",
+      "device": 16777231,
+      "inode": 251608809,
+      "size": 2290,
+      "mtime_ns": 1790134887938366687,
+      "ctime_ns": 1790134887938425520
+    },
+    "docs/work_history/review_loop/pr8171/originals/08-REVIEW_HISTORY.md.gz": {
+      "sha256": "97dbea02b8e795f59ecef875c19f595a7d6372e79449b00e60b5184298bb8519",
+      "device": 16777231,
+      "inode": 251608810,
+      "size": 19615,
+      "mtime_ns": 1790134887967068890,
+      "ctime_ns": 1790134887967141265
+    },
+    "docs/work_history/review_loop/pr8171/originals/09-STATE.yaml.gz": {
+      "sha256": "54e4ee7b2d3999965b7e09ad1ddf6031f92b91ebf378db750af96fceeed36730",
+      "device": 16777231,
+      "inode": 251608811,
+      "size": 6002,
+      "mtime_ns": 1790134887989803893,
+      "ctime_ns": 1790134887989861018
+    },
+    "docs/work_history/review_loop/pr8171/originals/10-TRACE_GATE.md.gz": {
+      "sha256": "343a0d405f721d9ca7ad42093733ea1b1e320f9d31d8d8e754b34928fae0dda0",
+      "device": 16777231,
+      "inode": 251608812,
+      "size": 1629,
+      "mtime_ns": 1790134888006668824,
+      "ctime_ns": 1790134888006724699
+    },
+    "docs/work_history/review_loop/pr8171/originals/11-supervisor_control_block27.out.txt.gz": {
+      "sha256": "389affd2a090dd2a783552c023964ad54629e29505e98cc50f1063015a0bd53c",
+      "device": 16777231,
+      "inode": 251608813,
+      "size": 470,
+      "mtime_ns": 1790134888028557621,
+      "ctime_ns": 1790134888028592704
+    },
+    "docs/work_history/review_loop/pr8171/originals/12-supervisor_control_block27.py.gz": {
+      "sha256": "b37c158af52e70bae80b15aa5663ee7e9fb7cc609c8fc86a93bda2888c2c24fe",
+      "device": 16777231,
+      "inode": 251608814,
+      "size": 1665,
+      "mtime_ns": 1790134888048299130,
+      "ctime_ns": 1790134888048361672
+    },
+    "docs/work_history/review_loop/pr8171/originals/13-supervisor_control_block27_refuter.out.txt.gz": {
+      "sha256": "8eaf088e9a75d878da0f1329dff595691999f6cc167557407f89c4461b2b6008",
+      "device": 16777231,
+      "inode": 251608815,
+      "size": 687,
+      "mtime_ns": 1790134888071748425,
+      "ctime_ns": 1790134888071787633
+    },
+    "docs/work_history/review_loop/pr8171/originals/14-supervisor_control_block27_refuter.py.gz": {
+      "sha256": "da711a65d142aa462d4fca5429c99b6209e691f612a7078ffd1cd3f7c5aad3dd",
+      "device": 16777231,
+      "inode": 251608816,
+      "size": 1934,
+      "mtime_ns": 1790134888093170181,
+      "ctime_ns": 1790134888093201097
+    },
+    "docs/work_history/review_loop/pr8171/originals/15-ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz": {
+      "sha256": "f33ea4789634912f5dc3a6347749b6772c0e2eb2d2adf73c6965127cd6e5b225",
+      "device": 16777231,
+      "inode": 251608817,
+      "size": 9460,
+      "mtime_ns": 1790134888110077152,
+      "ctime_ns": 1790134888110115694
+    },
+    "docs/work_history/review_loop/pr8171/originals/16-citation_graph_manifest.json.gz": {
+      "sha256": "72d7529e5648010f74b592973f3844f94282708d1fc1878733f59cd19191e66d",
+      "device": 16777231,
+      "inode": 251608818,
+      "size": 128203,
+      "mtime_ns": 1790134888146325842,
+      "ctime_ns": 1790134888146366801
+    },
+    "docs/work_history/review_loop/pr8171/originals/17-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.txt.gz": {
+      "sha256": "a68938a16818bbadb7ed22def3e6125fde346b598ce8428aa0e4ba6cb2871449",
+      "device": 16777231,
+      "inode": 251608822,
+      "size": 1832,
+      "mtime_ns": 1790134888170416678,
+      "ctime_ns": 1790134888170447678
+    },
+    "docs/work_history/review_loop/pr8171/originals/18-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py.gz": {
+      "sha256": "0eb4d35b386713c451d47cf66d396d42bb9d043c361d857a6efffafe8d149fe2",
+      "device": 16777231,
+      "inode": 251608824,
+      "size": 6198,
+      "mtime_ns": 1790134888188424564,
+      "ctime_ns": 1790134888188456939
+    },
+    "docs/work_history/review_loop/pr8171/pr8171-deferred-uniform-route-ceiling.txt": {
+      "sha256": "0e7c9b8672863b87fcb42fb30fd01bc0eb5b0982d5158f96b08fa0bb4ed16bf2",
+      "device": 16777231,
+      "inode": 251608827,
+      "size": 3638,
+      "mtime_ns": 1790134888189013397,
+      "ctime_ns": 1790134888189027397
+    },
+    "docs/work_history/review_loop/pr8171/pr8171-original-manifest.json": {
+      "sha256": "d4fef893d5fe167a4ae8af8e357fe30081fec2b8270b972e6db26733f278f300",
+      "device": 16777231,
+      "inode": 251608825,
+      "size": 13654,
+      "mtime_ns": 1790134888188748647,
+      "ctime_ns": 1790134888188769897
+    },
+    "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py": {
+      "sha256": "e889b37d917e35c63b7a4cc6c439f9a011e870e67ccf66a2b8d42f667c5bd946",
+      "device": 16777231,
+      "inode": 251608829,
+      "size": 16692,
+      "mtime_ns": 1790134969967453285,
+      "ctime_ns": 1790134969967453285
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 244263811,
+      "size": 45923,
+      "mtime_ns": 1790111246149710393,
+      "ctime_ns": 1790111246149710393
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244265930,
+      "size": 11333,
+      "mtime_ns": 1790111246425284033,
+      "ctime_ns": 1790111246425284033
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244265458,
+      "size": 4770,
+      "mtime_ns": 1790111246366961050,
+      "ctime_ns": 1790111246366961050
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244266713,
+      "size": 5313,
+      "mtime_ns": 1790111246544954163,
+      "ctime_ns": 1790111246544954163
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244266894,
+      "size": 2581,
+      "mtime_ns": 1790111246565698725,
+      "ctime_ns": 1790111246565698725
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244267842,
+      "size": 6427,
+      "mtime_ns": 1790111246701717172,
+      "ctime_ns": 1790111246701717172
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 244267887,
+      "size": 8247,
+      "mtime_ns": 1790111246706818042,
+      "ctime_ns": 1790111246706818042
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 244267888,
+      "size": 19430,
+      "mtime_ns": 1790111246707197000,
+      "ctime_ns": 1790111246707197000
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 244267892,
+      "size": 23216,
+      "mtime_ns": 1790111246707420541,
+      "ctime_ns": 1790111246707420541
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 244267893,
+      "size": 3829,
+      "mtime_ns": 1790111246707489708,
+      "ctime_ns": 1790111246707489708
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "device": 16777231,
+      "inode": 244267894,
+      "size": 6707,
+      "mtime_ns": 1790111246707554166,
+      "ctime_ns": 1790111246707554166
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 244267895,
+      "size": 28160,
+      "mtime_ns": 1790111246707642583,
+      "ctime_ns": 1790111246707642583
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "device": 16777231,
+      "inode": 244267896,
+      "size": 6185,
+      "mtime_ns": 1790111246707716124,
+      "ctime_ns": 1790111246707716124
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 244267897,
+      "size": 5188,
+      "mtime_ns": 1790111246707782374,
+      "ctime_ns": 1790111246707782374
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "device": 16777231,
+      "inode": 244267898,
+      "size": 10211,
+      "mtime_ns": 1790111246707853041,
+      "ctime_ns": 1790111246707853041
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 244267899,
+      "size": 5009,
+      "mtime_ns": 1790111246707912957,
+      "ctime_ns": 1790111246707912957
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 244267900,
+      "size": 12918,
+      "mtime_ns": 1790111246708012374,
+      "ctime_ns": 1790111246708012374
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 244267901,
+      "size": 14219,
+      "mtime_ns": 1790111246708118082,
+      "ctime_ns": 1790111246708118082
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 244267903,
+      "size": 24983,
+      "mtime_ns": 1790111246709023748,
+      "ctime_ns": 1790111246709023748
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 244267904,
+      "size": 15405,
+      "mtime_ns": 1790111246710354747,
+      "ctime_ns": 1790111246710354747
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244267955,
+      "size": 6416,
+      "mtime_ns": 1790111246723378942,
+      "ctime_ns": 1790111246723378942
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244267971,
+      "size": 6052,
+      "mtime_ns": 1790111246733200849,
+      "ctime_ns": 1790111246733200849
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "device": 16777231,
+      "inode": 250456578,
+      "size": 74385,
+      "mtime_ns": 1790130399930499823,
+      "ctime_ns": 1790130399930499823
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244273138,
+      "size": 12227,
+      "mtime_ns": 1790111247652171344,
+      "ctime_ns": 1790111247652171344
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244273160,
+      "size": 28870,
+      "mtime_ns": 1790111247658631463,
+      "ctime_ns": 1790111247658631463
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "device": 16777231,
+      "inode": 250457161,
+      "size": 39496,
+      "mtime_ns": 1790130400009749328,
+      "ctime_ns": 1790130400009749328
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244323128,
+      "size": 24941,
+      "mtime_ns": 1790111255199616026,
+      "ctime_ns": 1790111255199616026
+    },
+    "logs/runner-cache/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.txt": {
+      "sha256": "bbc022d2de5181c6bd7ac60606499a6d3e0ff0e1fc067e944464f603f3716e07",
+      "device": 16777231,
+      "inode": 252473907,
+      "size": 3348,
+      "mtime_ns": 1790136122585433747,
+      "ctime_ns": 1790136122585433747
+    }
+  },
+  "after": {
+    "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "bcbad1f04d60ba345906cf1d83dc45691bb92516ddd85b2af2318f738f96f54c",
+      "device": 16777231,
+      "inode": 251608828,
+      "size": 19505,
+      "mtime_ns": 1790134888189140605,
+      "ctime_ns": 1790134888189157230
+    },
+    "docs/work_history/review_loop/pr8171/README.md": {
+      "sha256": "a55890710f7479551690bcad8f64e1c4e2bd7ade604777e262aa903d20a5aa3c",
+      "device": 16777231,
+      "inode": 251608826,
+      "size": 1594,
+      "mtime_ns": 1790134888188838189,
+      "ctime_ns": 1790134888188852230
+    },
+    "docs/work_history/review_loop/pr8171/originals/01-APPROACH_REGISTRY.md.gz": {
+      "sha256": "76d3c20b414c2314d6963f6dccedd124b2f6401c5cce2aebb6996b269c5fa83a",
+      "device": 16777231,
+      "inode": 251608803,
+      "size": 1049,
+      "mtime_ns": 1790134887819111051,
+      "ctime_ns": 1790134887819140468
+    },
+    "docs/work_history/review_loop/pr8171/originals/02-CHECKER_block27_findings.md.gz": {
+      "sha256": "c590bd81bcde21d0c5ceb18e3f4fb7b090d569510d28251887dc9047d1af76cd",
+      "device": 16777231,
+      "inode": 251608804,
+      "size": 1474,
+      "mtime_ns": 1790134887835067150,
+      "ctime_ns": 1790134887835136108
+    },
+    "docs/work_history/review_loop/pr8171/originals/03-CLAIM_STATUS_CERTIFICATE_block27.md.gz": {
+      "sha256": "1c883f383f39e3b034c00305181e48aad04e753a4f0a914a538ba8f70fabb455",
+      "device": 16777231,
+      "inode": 251608805,
+      "size": 1097,
+      "mtime_ns": 1790134887855576658,
+      "ctime_ns": 1790134887855635991
+    },
+    "docs/work_history/review_loop/pr8171/originals/04-GOAL_block27.md.gz": {
+      "sha256": "d8740bec7ffcbbb3a0d65415e8cf242cf94280118a66d70c4ec431ec712bd43e",
+      "device": 16777231,
+      "inode": 251608806,
+      "size": 1616,
+      "mtime_ns": 1790134887876593706,
+      "ctime_ns": 1790134887876633081
+    },
+    "docs/work_history/review_loop/pr8171/originals/05-HANDOFF.md.gz": {
+      "sha256": "2be7dd11fad72922e9e9b098dac2b442c085f130c9ff0ab280f7cc6697c10882",
+      "device": 16777231,
+      "inode": 251608807,
+      "size": 4030,
+      "mtime_ns": 1790134887899583126,
+      "ctime_ns": 1790134887899611001
+    },
+    "docs/work_history/review_loop/pr8171/originals/06-OPPORTUNITY_QUEUE.md.gz": {
+      "sha256": "3f80ec7582f2890657884ebc63af41a759a8eb11222f873ddee5ba0dc12957a9",
+      "device": 16777231,
+      "inode": 251608808,
+      "size": 4680,
+      "mtime_ns": 1790134887918234804,
+      "ctime_ns": 1790134887918296929
+    },
+    "docs/work_history/review_loop/pr8171/originals/07-RESULTS_block27.md.gz": {
+      "sha256": "f27db4a8c985984b7089337fd3608955419ac9cc5dd709b54357ee6c461fb6fe",
+      "device": 16777231,
+      "inode": 251608809,
+      "size": 2290,
+      "mtime_ns": 1790134887938366687,
+      "ctime_ns": 1790134887938425520
+    },
+    "docs/work_history/review_loop/pr8171/originals/08-REVIEW_HISTORY.md.gz": {
+      "sha256": "97dbea02b8e795f59ecef875c19f595a7d6372e79449b00e60b5184298bb8519",
+      "device": 16777231,
+      "inode": 251608810,
+      "size": 19615,
+      "mtime_ns": 1790134887967068890,
+      "ctime_ns": 1790134887967141265
+    },
+    "docs/work_history/review_loop/pr8171/originals/09-STATE.yaml.gz": {
+      "sha256": "54e4ee7b2d3999965b7e09ad1ddf6031f92b91ebf378db750af96fceeed36730",
+      "device": 16777231,
+      "inode": 251608811,
+      "size": 6002,
+      "mtime_ns": 1790134887989803893,
+      "ctime_ns": 1790134887989861018
+    },
+    "docs/work_history/review_loop/pr8171/originals/10-TRACE_GATE.md.gz": {
+      "sha256": "343a0d405f721d9ca7ad42093733ea1b1e320f9d31d8d8e754b34928fae0dda0",
+      "device": 16777231,
+      "inode": 251608812,
+      "size": 1629,
+      "mtime_ns": 1790134888006668824,
+      "ctime_ns": 1790134888006724699
+    },
+    "docs/work_history/review_loop/pr8171/originals/11-supervisor_control_block27.out.txt.gz": {
+      "sha256": "389affd2a090dd2a783552c023964ad54629e29505e98cc50f1063015a0bd53c",
+      "device": 16777231,
+      "inode": 251608813,
+      "size": 470,
+      "mtime_ns": 1790134888028557621,
+      "ctime_ns": 1790134888028592704
+    },
+    "docs/work_history/review_loop/pr8171/originals/12-supervisor_control_block27.py.gz": {
+      "sha256": "b37c158af52e70bae80b15aa5663ee7e9fb7cc609c8fc86a93bda2888c2c24fe",
+      "device": 16777231,
+      "inode": 251608814,
+      "size": 1665,
+      "mtime_ns": 1790134888048299130,
+      "ctime_ns": 1790134888048361672
+    },
+    "docs/work_history/review_loop/pr8171/originals/13-supervisor_control_block27_refuter.out.txt.gz": {
+      "sha256": "8eaf088e9a75d878da0f1329dff595691999f6cc167557407f89c4461b2b6008",
+      "device": 16777231,
+      "inode": 251608815,
+      "size": 687,
+      "mtime_ns": 1790134888071748425,
+      "ctime_ns": 1790134888071787633
+    },
+    "docs/work_history/review_loop/pr8171/originals/14-supervisor_control_block27_refuter.py.gz": {
+      "sha256": "da711a65d142aa462d4fca5429c99b6209e691f612a7078ffd1cd3f7c5aad3dd",
+      "device": 16777231,
+      "inode": 251608816,
+      "size": 1934,
+      "mtime_ns": 1790134888093170181,
+      "ctime_ns": 1790134888093201097
+    },
+    "docs/work_history/review_loop/pr8171/originals/15-ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz": {
+      "sha256": "f33ea4789634912f5dc3a6347749b6772c0e2eb2d2adf73c6965127cd6e5b225",
+      "device": 16777231,
+      "inode": 251608817,
+      "size": 9460,
+      "mtime_ns": 1790134888110077152,
+      "ctime_ns": 1790134888110115694
+    },
+    "docs/work_history/review_loop/pr8171/originals/16-citation_graph_manifest.json.gz": {
+      "sha256": "72d7529e5648010f74b592973f3844f94282708d1fc1878733f59cd19191e66d",
+      "device": 16777231,
+      "inode": 251608818,
+      "size": 128203,
+      "mtime_ns": 1790134888146325842,
+      "ctime_ns": 1790134888146366801
+    },
+    "docs/work_history/review_loop/pr8171/originals/17-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.txt.gz": {
+      "sha256": "a68938a16818bbadb7ed22def3e6125fde346b598ce8428aa0e4ba6cb2871449",
+      "device": 16777231,
+      "inode": 251608822,
+      "size": 1832,
+      "mtime_ns": 1790134888170416678,
+      "ctime_ns": 1790134888170447678
+    },
+    "docs/work_history/review_loop/pr8171/originals/18-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py.gz": {
+      "sha256": "0eb4d35b386713c451d47cf66d396d42bb9d043c361d857a6efffafe8d149fe2",
+      "device": 16777231,
+      "inode": 251608824,
+      "size": 6198,
+      "mtime_ns": 1790134888188424564,
+      "ctime_ns": 1790134888188456939
+    },
+    "docs/work_history/review_loop/pr8171/pr8171-deferred-uniform-route-ceiling.txt": {
+      "sha256": "0e7c9b8672863b87fcb42fb30fd01bc0eb5b0982d5158f96b08fa0bb4ed16bf2",
+      "device": 16777231,
+      "inode": 251608827,
+      "size": 3638,
+      "mtime_ns": 1790134888189013397,
+      "ctime_ns": 1790134888189027397
+    },
+    "docs/work_history/review_loop/pr8171/pr8171-original-manifest.json": {
+      "sha256": "d4fef893d5fe167a4ae8af8e357fe30081fec2b8270b972e6db26733f278f300",
+      "device": 16777231,
+      "inode": 251608825,
+      "size": 13654,
+      "mtime_ns": 1790134888188748647,
+      "ctime_ns": 1790134888188769897
+    },
+    "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py": {
+      "sha256": "e889b37d917e35c63b7a4cc6c439f9a011e870e67ccf66a2b8d42f667c5bd946",
+      "device": 16777231,
+      "inode": 251608829,
+      "size": 16692,
+      "mtime_ns": 1790134969967453285,
+      "ctime_ns": 1790134969967453285
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 244263811,
+      "size": 45923,
+      "mtime_ns": 1790111246149710393,
+      "ctime_ns": 1790111246149710393
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244265930,
+      "size": 11333,
+      "mtime_ns": 1790111246425284033,
+      "ctime_ns": 1790111246425284033
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244265458,
+      "size": 4770,
+      "mtime_ns": 1790111246366961050,
+      "ctime_ns": 1790111246366961050
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244266713,
+      "size": 5313,
+      "mtime_ns": 1790111246544954163,
+      "ctime_ns": 1790111246544954163
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244266894,
+      "size": 2581,
+      "mtime_ns": 1790111246565698725,
+      "ctime_ns": 1790111246565698725
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244267842,
+      "size": 6427,
+      "mtime_ns": 1790111246701717172,
+      "ctime_ns": 1790111246701717172
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 244267887,
+      "size": 8247,
+      "mtime_ns": 1790111246706818042,
+      "ctime_ns": 1790111246706818042
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 244267888,
+      "size": 19430,
+      "mtime_ns": 1790111246707197000,
+      "ctime_ns": 1790111246707197000
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 244267892,
+      "size": 23216,
+      "mtime_ns": 1790111246707420541,
+      "ctime_ns": 1790111246707420541
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 244267893,
+      "size": 3829,
+      "mtime_ns": 1790111246707489708,
+      "ctime_ns": 1790111246707489708
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "device": 16777231,
+      "inode": 244267894,
+      "size": 6707,
+      "mtime_ns": 1790111246707554166,
+      "ctime_ns": 1790111246707554166
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 244267895,
+      "size": 28160,
+      "mtime_ns": 1790111246707642583,
+      "ctime_ns": 1790111246707642583
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "device": 16777231,
+      "inode": 244267896,
+      "size": 6185,
+      "mtime_ns": 1790111246707716124,
+      "ctime_ns": 1790111246707716124
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 244267897,
+      "size": 5188,
+      "mtime_ns": 1790111246707782374,
+      "ctime_ns": 1790111246707782374
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "device": 16777231,
+      "inode": 244267898,
+      "size": 10211,
+      "mtime_ns": 1790111246707853041,
+      "ctime_ns": 1790111246707853041
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 244267899,
+      "size": 5009,
+      "mtime_ns": 1790111246707912957,
+      "ctime_ns": 1790111246707912957
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 244267900,
+      "size": 12918,
+      "mtime_ns": 1790111246708012374,
+      "ctime_ns": 1790111246708012374
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 244267901,
+      "size": 14219,
+      "mtime_ns": 1790111246708118082,
+      "ctime_ns": 1790111246708118082
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 244267903,
+      "size": 24983,
+      "mtime_ns": 1790111246709023748,
+      "ctime_ns": 1790111246709023748
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 244267904,
+      "size": 15405,
+      "mtime_ns": 1790111246710354747,
+      "ctime_ns": 1790111246710354747
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244267955,
+      "size": 6416,
+      "mtime_ns": 1790111246723378942,
+      "ctime_ns": 1790111246723378942
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244267971,
+      "size": 6052,
+      "mtime_ns": 1790111246733200849,
+      "ctime_ns": 1790111246733200849
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "device": 16777231,
+      "inode": 250456578,
+      "size": 74385,
+      "mtime_ns": 1790130399930499823,
+      "ctime_ns": 1790130399930499823
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244273138,
+      "size": 12227,
+      "mtime_ns": 1790111247652171344,
+      "ctime_ns": 1790111247652171344
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244273160,
+      "size": 28870,
+      "mtime_ns": 1790111247658631463,
+      "ctime_ns": 1790111247658631463
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "device": 16777231,
+      "inode": 250457161,
+      "size": 39496,
+      "mtime_ns": 1790130400009749328,
+      "ctime_ns": 1790130400009749328
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244323128,
+      "size": 24941,
+      "mtime_ns": 1790111255199616026,
+      "ctime_ns": 1790111255199616026
+    },
+    "logs/runner-cache/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.txt": {
+      "sha256": "bbc022d2de5181c6bd7ac60606499a6d3e0ff0e1fc067e944464f603f3716e07",
+      "device": 16777231,
+      "inode": 252473907,
+      "size": 3348,
+      "mtime_ns": 1790136122585433747,
+      "ctime_ns": 1790136122585433747
+    }
+  },
+  "structured_result": {
+    "parsed_stdout": true,
+    "failed_tags": [
+      "C2"
+    ],
+    "expected_failed_tags": [
+      "C2"
+    ],
+    "completed_checks": 16,
+    "passed": 15,
+    "failed": 1
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-one_site_rate_wrong-v1.stdout.txt",
+      "sha256": "9199e377e687ffc8db74c32064a6607e3804a47db9a58ea9b8ef8965de9d38aa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-one_site_rate_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "primary_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-execution-v2.json",
+    "sha256": "65d06860468f2419c6737ea9e342ddde8ae29095e07560cb72cb904c4890e26c"
+  },
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-author-unit-draft-v2.json",
+    "sha256": "76354de927405c549bf033324c0ff943c47fbae71808c25e7c13bc1f2e1b72ea"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-cold-base-confirmation-v2.json",
+    "sha256": "c37fffeef4935247055c8f7ef2836aeb3e6a273684aea4c646d0c76eaa60714c"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-mutation-capture-v2.py",
+    "sha256": "0115cbf49029d065686021f5f863a25a7a09ddd8566e9be7a98338d0b366d203"
+  },
+  "baseline_runs": 0,
+  "mutation_attempts": 1,
+  "simulation_runs": 0
+}

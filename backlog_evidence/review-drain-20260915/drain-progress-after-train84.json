@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-09-23T04:04:13.595202+00:00",
+  "main": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "closed_since_expanded_scope": 48,
+  "inventory": "backlog-inventory-wave28.json",
+  "open_count": 108,
+  "draft_count": 18,
+  "last_landed_closed": 8170,
+  "final_evidence_review": [
+    8171
+  ],
+  "adapter_preparation": [
+    8172
+  ],
+  "source_preparation": [
+    8173
+  ],
+  "model_comparison": "sol-max-astra-low-8158/comparison.md",
+  "review_default": "gpt-6-astra low unchanged",
+  "remote_skill_parity": "review-loop-remote-parity-train82.json",
+  "audit_boundary": "Compatibility-only; no auditor or verdict"
+}

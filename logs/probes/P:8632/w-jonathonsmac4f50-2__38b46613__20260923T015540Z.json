@@ -1,0 +1,37 @@
+{
+ "task": "P:8632",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block83-altern",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8632",
+ "pr": 8632,
+ "branch": "physics-loop/admissibility-induced-law-block83-alternating-lengths-are-a-relabelling-invisible-and-free-20260922",
+ "git_sha": "38b46613",
+ "started_utc": "20260923T015540Z",
+ "elapsed_s": 18.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_alternating_lengths_are_a_relabelling_invisible_and_free_rest_energy_needs_the_bonds_own_amplitude_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "bc941ae20929587247421499ae07721642791f053bcebb2b046cbbf240ffe3ff",
+ "stdout_tail": "PR #8632: physics-loop: admissibility induced-law block 83 - alternating lengths are a relabelling: invisible to the walk and free for the ledger; a rest energy needs the bond's own amplitude\nbranch physics-loop/admissibility-induced-law-block83-alternating-lengths-are-a-relabelling-invisible-and-free-20260922 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_alternating_lengths_are_a_relabelling_invisible_and_free_rest_energy_needs_the_bonds_own_amplitude_2026_09_22.py: rc=0 PASS=14 FAIL=0\n   mutation alternation_seen_by_the_frame: expected B observed B ok\n   mutation alternation_seen_by_the_strain_coupling: expected B observed B ok\n   mutation alternation_is_not_a_relabelling: expected B observed B ok\n   mutation strain_has_corner_matrix_elements: expected C observed C ok\n   mutation bond_amplitude_coupling_blind_at_corners: expected C observed C ok\n   mutation sea_energy_rises_under_alternation: expected D observed D ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T015558Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

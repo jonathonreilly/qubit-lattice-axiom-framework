@@ -1,0 +1,4 @@
+PR #8646: docs(campaign): record correlators, NN-sentence exclusion, rigidity
+branch claude/record-dynamics-witness-20260922 (base main)
+runners in the PR: 1
+== scripts/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.py: rc=0 PASS=18 FAIL=0

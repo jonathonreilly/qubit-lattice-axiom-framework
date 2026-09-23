@@ -1,0 +1,11 @@
+PR #8652: physics-loop: admissibility induced-law block 84 - bond rates alternate on their own below a threshold stiffness: the sea against block 59's bond law gives every species one rest energy
+branch physics-loop/admissibility-induced-law-block84-bond-rates-alternate-on-their-own-below-a-threshold-stiffness-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_bond_rates_alternate_on_their_own_below_a_threshold_stiffness_sea_against_bond_law_one_rest_energy_2026_09_22.py: rc=0 PASS=17 FAIL=0
+   mutation alternation_enters_through_the_sines: expected B observed B ok
+   mutation alternation_stiffness_has_gamma: expected C observed C ok
+   mutation threshold_is_chi_over_six: expected D observed D ok
+   mutation corner_crossing_at_delta_equals_a: expected E observed E ok
+   mutation walls_bind_no_zero_modes: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

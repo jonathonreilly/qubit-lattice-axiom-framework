@@ -1,0 +1,11 @@
+PR #8615: physics-loop: admissibility induced-law block 80 - many records under exclusion: the source is the projected density; the jammed sea stiffens the clocks the opposite way
+branch physics-loop/admissibility-induced-law-block80-many-records-under-exclusion-the-ledger-and-the-interacting-sea-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_many_records_under_exclusion_source_projected_density_interacting_sea_2026_09_22.py: rc=0 PASS=9 FAIL=0
+   mutation source_is_the_unprojected_density: expected B observed B ok
+   mutation weight_is_two: expected B observed B ok
+   mutation chessboard_seen_under_exclusion: expected C observed C ok
+   mutation exclusion_keeps_the_one_step_momentum: expected C observed C ok
+   mutation exclusion_breaks_the_crystal_momentum: expected C observed C ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,37 @@
+{
+ "task": "P:8615",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block80-many-r",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8615",
+ "pr": 8615,
+ "branch": "physics-loop/admissibility-induced-law-block80-many-records-under-exclusion-the-ledger-and-the-interacting-sea-20260922",
+ "git_sha": "38b46613",
+ "started_utc": "20260923T015404Z",
+ "elapsed_s": 6.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_many_records_under_exclusion_source_projected_density_interacting_sea_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=9 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "18b534d7d136e971c439b57c8b182512d03b6d10248c7c67598a8099ba56e0b3",
+ "stdout_tail": "PR #8615: physics-loop: admissibility induced-law block 80 - many records under exclusion: the source is the projected density; the jammed sea stiffens the clocks the opposite way\nbranch physics-loop/admissibility-induced-law-block80-many-records-under-exclusion-the-ledger-and-the-interacting-sea-20260922 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_many_records_under_exclusion_source_projected_density_interacting_sea_2026_09_22.py: rc=0 PASS=9 FAIL=0\n   mutation source_is_the_unprojected_density: expected B observed B ok\n   mutation weight_is_two: expected B observed B ok\n   mutation chessboard_seen_under_exclusion: expected C observed C ok\n   mutation exclusion_keeps_the_one_step_momentum: expected C observed C ok\n   mutation exclusion_breaks_the_crystal_momentum: expected C observed C ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T015411Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

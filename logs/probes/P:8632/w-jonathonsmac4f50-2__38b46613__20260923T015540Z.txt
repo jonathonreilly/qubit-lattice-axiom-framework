@@ -1,0 +1,12 @@
+PR #8632: physics-loop: admissibility induced-law block 83 - alternating lengths are a relabelling: invisible to the walk and free for the ledger; a rest energy needs the bond's own amplitude
+branch physics-loop/admissibility-induced-law-block83-alternating-lengths-are-a-relabelling-invisible-and-free-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_alternating_lengths_are_a_relabelling_invisible_and_free_rest_energy_needs_the_bonds_own_amplitude_2026_09_22.py: rc=0 PASS=14 FAIL=0
+   mutation alternation_seen_by_the_frame: expected B observed B ok
+   mutation alternation_seen_by_the_strain_coupling: expected B observed B ok
+   mutation alternation_is_not_a_relabelling: expected B observed B ok
+   mutation strain_has_corner_matrix_elements: expected C observed C ok
+   mutation bond_amplitude_coupling_blind_at_corners: expected C observed C ok
+   mutation sea_energy_rises_under_alternation: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

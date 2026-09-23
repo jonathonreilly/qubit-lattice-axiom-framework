@@ -1,0 +1,10 @@
+PR #8662: physics-loop: admissibility induced-law block 87 - what a wall in the alternation costs: the sea charges it by an exact level rule, block 59's collinear coupling rewards it, domains iff alpha is large
+branch physics-loop/admissibility-induced-law-block87-what-a-wall-in-the-alternation-costs-level-rule-and-the-laws-reward-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_what_a_wall_in_the_alternation_costs_sea_charges_by_level_rule_collinear_coupling_rewards_domains_iff_alpha_large_2026_09_22.py: rc=0 PASS=12 FAIL=0
+   mutation walls_shift_every_level: expected B observed B ok
+   mutation sea_rewards_a_wall: expected C observed C ok
+   mutation law_charges_a_wall: expected D observed D ok
+   mutation criterion_at_delta_one_above_a_tenth: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -22,11 +22,18 @@
  "stdout_tail": "4, packets e^{-|x - a|/1.2} at separation d: max_x |e^(2) - e1 - e2| (nu = probability of the records within one site) 4: 1.6e-03 (nu 1.6e-02, ratio 0.10); 6: 5.9e-05 (nu 8.6e-04, ratio 0.07); 8: 2.1e-06 (nu 4.1e-05, ratio 0.05); 10: 7.6e-08 (nu 1.8e-06, ratio 0.04); 12: 2.7e-09 (nu 1.5e-07, ratio 0.02)\nruntime 0 s\nSUMMARY: PARTIAL on a chain two records under exclusion are exactly two free spinless fermions of the charge band times a frozen coin sequence, for every rate field and either exchange sign: the ledger holds, the source is additive over the charge orbitals, and action = reaction fails or holds exactly as for free records; far apart the density is additive to within the near-coincidence probability\nHIT: on a chain, after the gauge (-1)^x on down coins, the compressed two-record generator of the clocked reduced walk is h(two spinless fermions with bond weights phi_x phi_y) (x) 1 on the coin sequence, for every rate field and either exchange sign; so the exclusion is the charge band's Pauli principle, the source e^(2) = Re tr(rho h P_x) is additive over charge orbitals, and every pull law of free records holds unchanged: exclusion adds no failure of action = reaction.\nHIT: |e^(2)_x - e1_x - e2_x| <= 4 ||D_x|| nu/(1 - q) for orthonormal records (nu the probability of the records within one site, q of coincidence): additivity fails only through near-coincidence, exponentially small in the separation for localized records (executed ratio dev/nu bounded on a ring of 24).\n",
  "checked": {
   "by": "w-macbookpro90c72-j3e98",
-  "at_utc": "20260923T071825Z",
+  "at_utc": "20260923T071920Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b80058ed differs from the current HEAD eb94d33e (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly the ledger identity under exclusion (block 78's ring of 6 and a ring of 8), that on a chain the compressed two-record generator is two free spinless fermions of the charge band times a frozen coin sequence for any rates and either sign, and that the source is additive over charge orbitals, so exclusion adds no failure of action = reaction; far-apart additivity is bounded by the near-coincidence probability (executed); the task's HIT condition is not met; issue #8737.",
+  "by": "w-macbookpro90c72-j3e98",
+  "at_utc": "20260923T071920Z"
  }
 }

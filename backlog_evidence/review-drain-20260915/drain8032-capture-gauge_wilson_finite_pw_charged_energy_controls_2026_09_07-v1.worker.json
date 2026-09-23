@@ -1,0 +1,13 @@
+{
+  "result": {
+    "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "PASS gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py\nper_element: 21 checks; 20 exact shell minima for R=1..20 and one scalar generator-normalization discriminator; no site dynamics\nper_site: 0 checks; checked and not executed \u2014 no site-resolved state or dynamical measurement; finite graph incidence is classified per_block\nper_mode: 7 checks; six exact abstract 3-by-3 compression predicates and one 2-by-2 restricted-ground Rayleigh adverse example; not an SU3 spectrum\nper_block: 12 checks; nine finite cubic-box n=2,3,4 incidence/touching/distinct-path predicates and three scalar acceptance/denominator predicates\nlattice_wide: 0 checks; checked and not executed \u2014 finite boxes and scalar controls do not execute arbitrary-volume Hamiltonian energy bounds; the written proof supplies uniformity\nTOTAL: 40\nseconds: 0.2277942500077188; rss_MiB: 60.609375\nsource_sha256: 21ebc8258ba0db6b39f502261bfa416e89ee28d882d46f45aae4ecb0f677e8d7\n",
+    "stderr": "",
+    "elapsed_sec": 0.3070950508117676,
+    "timeout_sec": 180,
+    "live_log": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/.in-progress/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.txt"
+  },
+  "cache": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.txt"
+}

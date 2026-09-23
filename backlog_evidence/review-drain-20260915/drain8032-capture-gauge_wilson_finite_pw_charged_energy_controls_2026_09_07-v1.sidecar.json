@@ -1,0 +1,143 @@
+{
+  "N5_scopes": {
+    "lattice_wide": {
+      "checks": 0,
+      "scope": "checked and not executed \u2014 finite boxes and scalar controls do not execute arbitrary-volume Hamiltonian energy bounds; the written proof supplies uniformity"
+    },
+    "per_block": {
+      "checks": 12,
+      "scope": "nine finite cubic-box n=2,3,4 incidence/touching/distinct-path predicates and three scalar acceptance/denominator predicates"
+    },
+    "per_element": {
+      "checks": 21,
+      "scope": "20 exact shell minima for R=1..20 and one scalar generator-normalization discriminator; no site dynamics"
+    },
+    "per_mode": {
+      "checks": 7,
+      "scope": "six exact abstract 3-by-3 compression predicates and one 2-by-2 restricted-ground Rayleigh adverse example; not an SU3 spectrum"
+    },
+    "per_site": {
+      "checks": 0,
+      "scope": "checked and not executed \u2014 no site-resolved state or dynamical measurement; finite graph incidence is classified per_block"
+    }
+  },
+  "TOTAL": 40,
+  "checks": [
+    "box2_maximum_four_faces",
+    "box2_touch_budget",
+    "box2_distinct_path",
+    "box3_maximum_four_faces",
+    "box3_touch_budget",
+    "box3_distinct_path",
+    "box4_maximum_four_faces",
+    "box4_touch_budget",
+    "box4_distinct_path",
+    "shell_R1",
+    "shell_R2",
+    "shell_R3",
+    "shell_R4",
+    "shell_R5",
+    "shell_R6",
+    "shell_R7",
+    "shell_R8",
+    "shell_R9",
+    "shell_R10",
+    "shell_R11",
+    "shell_R12",
+    "shell_R13",
+    "shell_R14",
+    "shell_R15",
+    "shell_R16",
+    "shell_R17",
+    "shell_R18",
+    "shell_R19",
+    "shell_R20",
+    "full_multiplications_commute",
+    "compression_commutator_identity",
+    "naive_compressed_commutation_rejected",
+    "wrong_compression_sign_rejected",
+    "projection_and_unitary",
+    "positive_face_norm_bound",
+    "R10_normalization_budget",
+    "R1_insufficient_budget_rejected",
+    "denominator_positive",
+    "restricted_ground_replacement_adverse",
+    "generator_normalization_discriminator"
+  ],
+  "compression_commutator": [
+    [
+      "0",
+      "-4/9",
+      "4/9"
+    ],
+    [
+      "4/9",
+      "0",
+      "-4/9"
+    ],
+    [
+      "-4/9",
+      "4/9",
+      "0"
+    ]
+  ],
+  "geometry": {
+    "2": {
+      "faces": 6,
+      "links": 12,
+      "max_incidence": 2,
+      "path": 3,
+      "touching": 4
+    },
+    "3": {
+      "faces": 36,
+      "links": 54,
+      "max_incidence": 4,
+      "path": 6,
+      "touching": 10
+    },
+    "4": {
+      "faces": 108,
+      "links": 144,
+      "max_incidence": 4,
+      "path": 9,
+      "touching": 16
+    }
+  },
+  "input_sha256": {
+    "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+    "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6",
+    "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade"
+  },
+  "resource_limits": {
+    "rss_MiB": 180,
+    "seconds": 180
+  },
+  "rss_MiB": 60.609375,
+  "scope": "Exact geometry, shell, budget and abstract compression controls; not a SU3 spectral trial or proof of the analytical bound.",
+  "seconds": 0.2277942500077188,
+  "shell_energies_R1_to20": [
+    4,
+    9,
+    16,
+    24,
+    34,
+    45,
+    58,
+    72,
+    88,
+    105,
+    124,
+    144,
+    166,
+    189,
+    214,
+    240,
+    268,
+    297,
+    328,
+    360
+  ],
+  "source_sha256": "21ebc8258ba0db6b39f502261bfa416e89ee28d882d46f45aae4ecb0f677e8d7",
+  "theta_R10_a_v_d1": "8/105"
+}

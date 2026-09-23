@@ -1,0 +1,9 @@
+seed 1 6x6x8 from Z_A: start (0, 0, 1)
+seed 1: done best=(0, 0, 1)
+seed 2 6x6x9 from Z_B: start (0, 0, 2)
+seed 2: done best=(0, 0, 2)
+seed 3 7x7x8 from Z_A: start (0, 0, 1)
+seed 3: (hard, vmax, tight) = (0, 0, 2); detail None; zeta=[(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 2), (1, 0, 5), (1, 1, 2), (1, 2, 0), (1, 2, 5), (1, 3, 1), (2, 0, 0), (2, 0, 6), (2, 1, 3), (2, 2, 3), (2, 3, 3), (3, 0, 1), (3, 0, 2), (3, 1, 0), (3, 1, 3), (3, 2, 5), (3, 3, 5), (3, 3, 6), (3, 3, 7), (4, 2, 2)]
+seed 3: done best=(0, 0, 2)
+seed 4 5x5x10 from Z_A: start (0, 0, 1)
+seed 4: done best=(0, 0, 1)

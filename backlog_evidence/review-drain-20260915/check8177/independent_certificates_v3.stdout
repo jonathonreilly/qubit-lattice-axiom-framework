@@ -1,0 +1,9 @@
+certificate 2 2921 1 2 PASS
+certificate 2 1464 1 1 PASS
+certificate 2 5841 2 4 PASS
+certificate 2 4380 1 3 PASS
+certificate 1 405 1 2 PASS
+certificate 1 208 1 1 PASS
+certificate 1 810 2 4 PASS
+certificate 1 605 1 3 PASS
+D entry processed incoming child: exact remaining assignments 4 formula assignments 8 OVERCOUNT CONFIRMED

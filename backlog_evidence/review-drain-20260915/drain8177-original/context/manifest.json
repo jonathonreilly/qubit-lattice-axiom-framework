@@ -1,0 +1,82 @@
+[
+  {
+    "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+    "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "bytes": 2180
+  },
+  {
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "bytes": 11333
+  },
+  {
+    "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+    "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "bytes": 6427
+  },
+  {
+    "path": "docs/audit/data/axiom_premise_nodes.json",
+    "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "bytes": 6416
+  },
+  {
+    "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "bytes": 2581
+  },
+  {
+    "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "bytes": 4770
+  },
+  {
+    "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "bytes": 5313
+  },
+  {
+    "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+    "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+    "bytes": 3694
+  },
+  {
+    "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+    "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+    "bytes": 20824
+  },
+  {
+    "path": "docs/repo/DEFERRED_DECISIONS.md",
+    "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+    "bytes": 10595
+  },
+  {
+    "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+    "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+    "bytes": 39977
+  },
+  {
+    "path": "docs/CANONICAL_HARNESS_INDEX.md",
+    "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+    "bytes": 109354
+  },
+  {
+    "path": "docs/audit/README.md",
+    "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+    "bytes": 35690
+  },
+  {
+    "path": "docs/audit/data/premise_decision_history.json",
+    "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+    "bytes": 11572
+  },
+  {
+    "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+    "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "bytes": 16941
+  },
+  {
+    "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+    "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "bytes": 4975
+  }
+]

@@ -1,0 +1,10 @@
+sanity: unrestricted count at block 30's point (4165,1,2), c=2: (0.099, 7.691556038874724e-08)
+sanity: unrestricted at (4150,1,2) c=2 (should fail): None
+c=2 restriction=none line (p,1,2): least p with a convergent count on the t-grid: 4165  (t, R) = (0.099, 7.691556038874724e-08)
+c=2 restriction=none line (p,1,1): least p with a convergent count on the t-grid: 2085  (t, R) = (0.099, 6.62692407331491e-08)
+c=2 restriction=R12 line (p,1,2): least p with a convergent count on the t-grid: 2887  (t, R) = (0.121, 5.4368842136852e-07)
+c=2 restriction=R12 line (p,1,1): least p with a convergent count on the t-grid: 1447  (t, R) = (0.121, 5.234702414284154e-07)
+c=1 restriction=none line (p,1,2): least p with a convergent count on the t-grid: 453  (t, R) = (0.078, 4.012320654120752e-06)
+c=1 restriction=none line (p,1,1): least p with a convergent count on the t-grid: 232  (t, R) = (0.078, 4.202236911122042e-06)
+c=1 restriction=R12 line (p,1,2): least p with a convergent count on the t-grid: 404  (t, R) = (0.092, 7.152931616715197e-06)
+c=1 restriction=R12 line (p,1,1): least p with a convergent count on the t-grid: 207  (t, R) = (0.092, 7.81692050056495e-06)

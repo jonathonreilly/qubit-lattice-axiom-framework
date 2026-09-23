@@ -1,0 +1,11 @@
+independent edge-subset rooted/full-restriction comparisons 492 PASS
+B-diagnostics: ext_ok=True seed_ok=True ineq_ok=True n_ext=357 n_amp=121 n_seed1=15 n_seed2=78 n_sites=788 n_hard=0
+PASS: B1 T1 (extension lemma, instances): on 140 tiny realizations, v(z) <= 1 + v(u) for every 1-predecessor u of every non-seed site (357 pairs) and v(z) <= -1 + v(u) at every amplified site (121); exact rooted brute force
+PASS: B2 T1 (seed lemma, instances): a processed site with one seed 1-predecessor and another 1-predecessor has v <= -1 (15 cases), with two seed 1-predecessors v <= -2 (78 cases)
+PASS: B3 T1 (the rooted inequality, executed): v <= 0 at seeds, v <= -1 at amplified and v <= 0 at processed sites on all 788 sites; processed sites whose 1-predecessors are all tight processed sites (the one case the lemmas leave open): 0
+PASS: E1 T4 (executed): on 60 tiny realizations at c = 1 and 2, whenever a tree with the budget exists (120 cases) a tree with at most one processed child per node and the budget exists too; the restricted minimum equals the unrestricted one in 120 cases and differs in 0
+B-diagnostics: ext_ok=True seed_ok=False ineq_ok=True n_ext=357 n_amp=121 n_seed1=15 n_seed2=78 n_sites=788 n_hard=0
+PASS: B1 T1 (extension lemma, instances): on 140 tiny realizations, v(z) <= 1 + v(u) for every 1-predecessor u of every non-seed site (357 pairs) and v(z) <= -1 + v(u) at every amplified site (121); exact rooted brute force
+FAIL: B2 T1 (seed lemma, instances): a processed site with one seed 1-predecessor and another 1-predecessor has v <= -1 (15 cases), with two seed 1-predecessors v <= -2 (78 cases)
+PASS: B3 T1 (the rooted inequality, executed): v <= 0 at seeds, v <= -1 at amplified and v <= 0 at processed sites on all 788 sites; processed sites whose 1-predecessors are all tight processed sites (the one case the lemmas leave open): 0
+targeted seed mutation detected PASS

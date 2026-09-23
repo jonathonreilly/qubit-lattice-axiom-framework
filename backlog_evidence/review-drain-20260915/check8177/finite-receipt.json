@@ -1,0 +1,11 @@
+{
+  "exit": 0,
+  "wall_seconds": 0.6819665840012021,
+  "peak_rss_kib_observed": 57568,
+  "limits": {
+    "cpu_seconds": 90,
+    "wall_seconds": 110,
+    "rss_kib": 524288,
+    "rss_poll_seconds": 0.02
+  }
+}

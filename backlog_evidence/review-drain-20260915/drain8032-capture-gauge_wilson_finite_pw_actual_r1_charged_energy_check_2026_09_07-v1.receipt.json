@@ -1,0 +1,1833 @@
+{
+  "status": "CAPTURED; no science verdict",
+  "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+  "error": null,
+  "result": {
+    "result": {
+      "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "status": "ok",
+      "exit_code": 0,
+      "stdout": "PASS gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py\nper_element: 5 checks; five exact Haar Gram/magnetic and source-normalization/isometry predicates on the single supplied plaquette\nper_site: 0 checks; checked and not executed \u2014 neutral 3-by-3 spectral algebra is a representation block calculation, not a site-resolved measurement\nper_mode: 5 checks; two neutral character-matrix identities and three exact neutral/full-carrier ground predicates for this plaquette\nper_block: 12 checks; five accepted-norm/local-budget/finite-excess predicates, four radical-enclosure/local-bound predicates, and three scalar adverse predicates for this fixture; distant-volume arithmetic is not volume execution\nlattice_wide: 0 checks; checked and not executed \u2014 one plaquette and artificial distant-vacuum arithmetic do not execute a lattice-wide Hamiltonian or the analytic uniform bound\nTOTAL: 22\nseconds: 0.03783549997024238; rss_MiB: 21.96875\nsource_sha256: 65be3fa85929ca0cc3562e9cb51047304d2d4620fb49a01e50c018802b5f20b8\n",
+      "stderr": "",
+      "elapsed_sec": 0.0897989273071289,
+      "timeout_sec": 180,
+      "live_log": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/.in-progress/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt"
+    },
+    "cache": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt"
+  },
+  "before": {
+    "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6",
+      "device": 16777231,
+      "inode": 252563390,
+      "size": 27056,
+      "mtime_ns": 1790139247937747927,
+      "ctime_ns": 1790139247937763719
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1",
+      "device": 16777231,
+      "inode": 252520184,
+      "size": 74561,
+      "mtime_ns": 1790140274152205274,
+      "ctime_ns": 1790140274152205274
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/README.md": {
+      "sha256": "b3261309eedab0520e158e15bbf2cb1a3863cfaca419e0d156af40b3c745a3c8",
+      "device": 16777231,
+      "inode": 252563401,
+      "size": 15755,
+      "mtime_ns": 1790139247966313653,
+      "ctime_ns": 1790139247966330862
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_CANONICAL_RESULT-fb588cb555b830c0.json.gz": {
+      "sha256": "0061ead7f119dfb47ea3415d6e0f4c5618219a32212e7030b1f682947809f306",
+      "device": 16777231,
+      "inode": 252563312,
+      "size": 1189,
+      "mtime_ns": 1790139247890084785,
+      "ctime_ns": 1790139247890108244
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_CANONICAL_STDOUT-aeb917d8815282fc.txt.gz": {
+      "sha256": "371207e4214a7adcd8a3b7230824b1ab26f2038338cb76431164dd4c0a02c128",
+      "device": 16777231,
+      "inode": 252563313,
+      "size": 473,
+      "mtime_ns": 1790139247890457413,
+      "ctime_ns": 1790139247890473079
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_DERIVATION-ddcf0e7425c1c81c.md": {
+      "sha256": "ddcf0e7425c1c81c84a79ccbb7c443c311ddef37d2c53269281760c0072e7ef9",
+      "device": 16777231,
+      "inode": 252563367,
+      "size": 4621,
+      "mtime_ns": 1790139247912166011,
+      "ctime_ns": 1790139247912179845
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_PORT_RECEIPT-9cdb1da5696dd949.json.gz": {
+      "sha256": "51c3519b04dc6baafb88d0616d48ca50f27502cc6f7c5c3f0357f8e231e01922",
+      "device": 16777231,
+      "inode": 252563314,
+      "size": 423,
+      "mtime_ns": 1790139247890706081,
+      "ctime_ns": 1790139247890722373
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_PREREGISTRATION-bc048351d5b6482d.md": {
+      "sha256": "bc048351d5b6482d25ce990b787d49fea357eeedae245a3e3677d87c7a3eb100",
+      "device": 16777231,
+      "inode": 252563368,
+      "size": 1924,
+      "mtime_ns": 1790139247912314554,
+      "ctime_ns": 1790139247912327179
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_REVIEW-b68626a8cd92c405.md": {
+      "sha256": "b68626a8cd92c405b3976883d9ecbced510d94908c919dd0d6e2f81609b7437b",
+      "device": 16777231,
+      "inode": 252563352,
+      "size": 2057,
+      "mtime_ns": 1790139247907174563,
+      "ctime_ns": 1790139247907190563
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_REVIEW-e6e33c9855fac926.md": {
+      "sha256": "e6e33c9855fac92659a8d4b4656a6c427c309ac639778706cfb989746e6b64ca",
+      "device": 16777231,
+      "inode": 252563364,
+      "size": 2796,
+      "mtime_ns": 1790139247911554466,
+      "ctime_ns": 1790139247911567132
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ARTIFACT_PLAN-88fe929b75c29baa.md": {
+      "sha256": "88fe929b75c29baae634adc21888a6d89676e2dce3ecffb5387b50642de0aebf",
+      "device": 16777231,
+      "inode": 252563315,
+      "size": 267,
+      "mtime_ns": 1790139247890900416,
+      "ctime_ns": 1790139247890914374
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ASSUMPTIONS_AND_IMPORTS-6fde2a74731cdfd0.md": {
+      "sha256": "6fde2a74731cdfd039493323df244a738bdaca73211fd16a8aaed36f9e193099",
+      "device": 16777231,
+      "inode": 252563316,
+      "size": 343,
+      "mtime_ns": 1790139247891103292,
+      "ctime_ns": 1790139247891116250
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BEFORE_RESTRICTED_MATRIX_STRENGTHENING_check-921454c6f377441e.py": {
+      "sha256": "921454c6f377441e3559da09bcd4b4c4624496b9104cf51cedf8e304cd183ea3",
+      "device": 16777231,
+      "inode": 252563353,
+      "size": 2678,
+      "mtime_ns": 1790139247907417147,
+      "ctime_ns": 1790139247907431314
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result-711299a34d8885ab.json.gz": {
+      "sha256": "717ae4d3d516278078260245416e8c8e0db519fd37363182f785158e5d7f8aef",
+      "device": 16777231,
+      "inode": 252563354,
+      "size": 771,
+      "mtime_ns": 1790139247907704774,
+      "ctime_ns": 1790139247907720358
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BOTH_REGISTRY_AST_RECEIPT-af9c2bed02c98155.json.gz": {
+      "sha256": "310fe89b63bd1535c00405aa3ae4885b445723858562a22ed0275453fb343fb2",
+      "device": 16777231,
+      "inode": 252563317,
+      "size": 320,
+      "mtime_ns": 1790139247891331627,
+      "ctime_ns": 1790139247891345252
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CANONICAL_RESULT-9081851f01852583.json.gz": {
+      "sha256": "794289b6dad084aca5ac37ed6c0412aac5d1f9d6d5ea56606ca420d2ebaaaecf",
+      "device": 16777231,
+      "inode": 252563318,
+      "size": 1020,
+      "mtime_ns": 1790139247892152507,
+      "ctime_ns": 1790139247892196799
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CANONICAL_STDOUT-688278f6aa5cb62d.txt.gz": {
+      "sha256": "82158b8c9f489a8bc62e697a5c91231f8041b33015776ec3a1be0b0ea8736d0a",
+      "device": 16777231,
+      "inode": 252563319,
+      "size": 457,
+      "mtime_ns": 1790139247892520218,
+      "ctime_ns": 1790139247892539468
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CLAIM_STATUS_CERTIFICATE-d197fcba0e77ca60.md": {
+      "sha256": "d197fcba0e77ca60427259fefc9382922895039b36aaa689bc3dcb3cc9e79e98",
+      "device": 16777231,
+      "inode": 252563320,
+      "size": 211,
+      "mtime_ns": 1790139247893451099,
+      "ctime_ns": 1790139247893464807
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CONTROLS_PREREGISTRATION-70f3c106c801b133.md": {
+      "sha256": "70f3c106c801b1338e3bfe5fd795b97da4ad940000a5ad207c628a00525a220d",
+      "device": 16777231,
+      "inode": 252563355,
+      "size": 825,
+      "mtime_ns": 1790139247908559071,
+      "ctime_ns": 1790139247908578155
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-DERIVATION-55f5a4e94d945cc3.md": {
+      "sha256": "55f5a4e94d945cc30ad2d00718378e0f92559106bd94039c40cbfc55dc59955d",
+      "device": 16777231,
+      "inode": 252563356,
+      "size": 7927,
+      "mtime_ns": 1790139247909087366,
+      "ctime_ns": 1790139247909106367
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION-b7ea371b71d19e6d.json.gz": {
+      "sha256": "541d7a829b0d6f910d70aee20e04ae347191a031626717df7197bf1805aed1c6",
+      "device": 16777231,
+      "inode": 252563321,
+      "size": 465,
+      "mtime_ns": 1790139247893704725,
+      "ctime_ns": 1790139247893717851
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_LOCK_RELEASE-25f09ffc3fa01b87.json.gz": {
+      "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+      "device": 16777231,
+      "inode": 252563322,
+      "size": 59,
+      "mtime_ns": 1790139247893935852,
+      "ctime_ns": 1790139247893948560
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_READINESS-da03199a43f726cc.json.gz": {
+      "sha256": "648782aedfb5fd194584d320dab49170b02089bd37277709bdfbbdd7c3782680",
+      "device": 16777231,
+      "inode": 252563323,
+      "size": 1538,
+      "mtime_ns": 1790139247894738524,
+      "ctime_ns": 1790139247894751065
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_STRICT-547d5f47193228f9.log.gz": {
+      "sha256": "eb4b462c673ef580669d092dc1081d67fe080fd462bcebe7e5e7728c487dbc5b",
+      "device": 16777231,
+      "inode": 252563324,
+      "size": 3697,
+      "mtime_ns": 1790139247895120276,
+      "ctime_ns": 1790139247895134276
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_SYNC_RECEIPT-28a1cc4b98844534.json.gz": {
+      "sha256": "b13c9b4794e435e0e6535c47b93e945c361299873a9439bec137329859935603",
+      "device": 16777231,
+      "inode": 252563325,
+      "size": 960,
+      "mtime_ns": 1790139247895369861,
+      "ctime_ns": 1790139247895382486
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_VALIDATION-7924df3dfd482e60.md": {
+      "sha256": "7924df3dfd482e60a5646b5e1205b174ad6512537eb85701cda766477e814ded",
+      "device": 16777231,
+      "inode": 252563326,
+      "size": 753,
+      "mtime_ns": 1790139247895582488,
+      "ctime_ns": 1790139247895595446
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_VALIDATION-61c13e5cae19471f.md": {
+      "sha256": "61c13e5cae19471f93fed9f9ee3d425e4c6f30d0cdd34211319d4e8b5d066b96",
+      "device": 16777231,
+      "inode": 252563327,
+      "size": 1171,
+      "mtime_ns": 1790139247896911371,
+      "ctime_ns": 1790139247896924246
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_VOCAB_LINT-75d6a064729cbe1e.txt.gz": {
+      "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe",
+      "device": 16777231,
+      "inode": 252563328,
+      "size": 94,
+      "mtime_ns": 1790139247897129873,
+      "ctime_ns": 1790139247897146039
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FROZEN_PORT_RECEIPT-fa62849d3c843469.json.gz": {
+      "sha256": "81725a07a5ff6b501dac56cf653eabe44d0c0cac45c32d99073763a58683bf2c",
+      "device": 16777231,
+      "inode": 252563329,
+      "size": 334,
+      "mtime_ns": 1790139247897809002,
+      "ctime_ns": 1790139247897823710
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FULL_PIPELINE-562561a9c5c5690c.log.gz": {
+      "sha256": "e3e0d8717b7b85b3ff986c0c790e80dcbb8d669565aa4b0ecd19215797367fcd",
+      "device": 16777231,
+      "inode": 252563330,
+      "size": 5874,
+      "mtime_ns": 1790139247898337505,
+      "ctime_ns": 1790139247898351589
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOT-cbddff81440b3c19.md": {
+      "sha256": "cbddff81440b3c199dd1bda76db586da489a99dc1dbfe8d192e3dc908646b51b",
+      "device": 16777231,
+      "inode": 252563380,
+      "size": 16259,
+      "mtime_ns": 1790139247916803666,
+      "ctime_ns": 1790139247916819875
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GENERATOR_NORMALIZATION_CORRECTION-3677fe3c989a4b82.md": {
+      "sha256": "3677fe3c989a4b826dd380d3a2043363dbf3d268e098aade83fc36b89504ccc3",
+      "device": 16777231,
+      "inode": 252563369,
+      "size": 492,
+      "mtime_ns": 1790139247912483222,
+      "ctime_ns": 1790139247912498430
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GOAL-ba656aa86e9d2ae9.md": {
+      "sha256": "ba656aa86e9d2ae9b8c9208bc8970cf61d736a7c854be74c36ad01c6d7b20366",
+      "device": 16777231,
+      "inode": 252563331,
+      "size": 142,
+      "mtime_ns": 1790139247898556715,
+      "ctime_ns": 1790139247898570840
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-HANDOFF-8c0cffd89510f74a.md": {
+      "sha256": "8c0cffd89510f74a355f0e4ff89a4e960f1ceb7a69e1ca0bf3d86b0ddc3f81ee",
+      "device": 16777231,
+      "inode": 252563332,
+      "size": 1870,
+      "mtime_ns": 1790139247898970426,
+      "ctime_ns": 1790139247898983426
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-LITERATURE_BRIDGES-ae5f5c8723a6a117.md": {
+      "sha256": "ae5f5c8723a6a117b5cbc527321312662e7c4c0bfc9ece10943ac2040e5eb317",
+      "device": 16777231,
+      "inode": 252563333,
+      "size": 207,
+      "mtime_ns": 1790139247899196511,
+      "ctime_ns": 1790139247899210219
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-NO_GO_DISCIPLINE_CHECKLIST-dc918699e447b583.md": {
+      "sha256": "dc918699e447b583724ac0c27178da01ecabd210bbca57d2b9fd38bde18bf0c8",
+      "device": 16777231,
+      "inode": 252563334,
+      "size": 823,
+      "mtime_ns": 1790139247900167851,
+      "ctime_ns": 1790139247900181726
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-NO_GO_LEDGER-e50f67e1d0650414.md": {
+      "sha256": "e50f67e1d0650414cae94ad7fd663d20fa0d964ae08018490f08f63d439a84f2",
+      "device": 16777231,
+      "inode": 252563335,
+      "size": 671,
+      "mtime_ns": 1790139247900320310,
+      "ctime_ns": 1790139247900332601
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-OPPORTUNITY_QUEUE-2f31dcb0a1a1195c.md": {
+      "sha256": "2f31dcb0a1a1195c83a3e43626dd57f7b13486b45a689c8390b556b962fcf7ca",
+      "device": 16777231,
+      "inode": 252563336,
+      "size": 246,
+      "mtime_ns": 1790139247900470269,
+      "ctime_ns": 1790139247900483019
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PACK_INDEX-4d741e696e366e95.json.gz": {
+      "sha256": "c6b1819ec9bd8693275da5b8d0d2ba8e2bfc9f0ecb3e5d1db96d9f18d77be22b",
+      "device": 16777231,
+      "inode": 252563337,
+      "size": 2892,
+      "mtime_ns": 1790139247900803896,
+      "ctime_ns": 1790139247900819605
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PARENT_VALIDATION_METADATA_CATCHUP-af13a255467d5eb8.md": {
+      "sha256": "af13a255467d5eb82ec76ed81faf3f976cc62b669eba9ac7ee7b24b4f10fd12f",
+      "device": 16777231,
+      "inode": 252563338,
+      "size": 480,
+      "mtime_ns": 1790139247900990606,
+      "ctime_ns": 1790139247901004981
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PORT_RECEIPT-a0bb7d734ff7fddc.json.gz": {
+      "sha256": "04899ecd68ab17f0ccb515d4dbe1a7c59dee5104836f841c3345f4e3cf06bad7",
+      "device": 16777231,
+      "inode": 252563339,
+      "size": 460,
+      "mtime_ns": 1790139247901241024,
+      "ctime_ns": 1790139247901255316
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PREREGISTRATION-39a046d3644d7ade.md": {
+      "sha256": "39a046d3644d7ade83e2c5f49c164b119a9aff25af1f2bd4af656160d9b7323d",
+      "device": 16777231,
+      "inode": 252563370,
+      "size": 1748,
+      "mtime_ns": 1790139247912693681,
+      "ctime_ns": 1790139247912707556
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PREREGISTRATION-ab4d5238c7ab1ad3.md": {
+      "sha256": "ab4d5238c7ab1ad3b5c5a7670c02d29780a2f8e36b4a49f4f7eb325807f702cf",
+      "device": 16777231,
+      "inode": 252563357,
+      "size": 1510,
+      "mtime_ns": 1790139247909446202,
+      "ctime_ns": 1790139247909460577
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PROOF_REVIEW-e640563f3b04a488.md": {
+      "sha256": "e640563f3b04a488931d7eb0253de2d74688f0bcd9535d6fea2da9e713e3a30e",
+      "device": 16777231,
+      "inode": 252563340,
+      "size": 384,
+      "mtime_ns": 1790139247901465359,
+      "ctime_ns": 1790139247901479192
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PR_BACKLOG-fe013018afe4be5d.md": {
+      "sha256": "fe013018afe4be5d8a248b5d3e331c44ad92d77e1f985677e30fc3132ef10f96",
+      "device": 16777231,
+      "inode": 252563341,
+      "size": 177,
+      "mtime_ns": 1790139247902489282,
+      "ctime_ns": 1790139247902513449
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PR_BODY-ff8f204868c63144.md": {
+      "sha256": "ff8f204868c6314477f344e35dc71f506cb016a51270ea99e5f66386607936e7",
+      "device": 16777231,
+      "inode": 252563342,
+      "size": 2327,
+      "mtime_ns": 1790139247902825118,
+      "ctime_ns": 1790139247902845659
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PUBLICATION_RECEIPT-3bb8b3155cc0004c.json.gz": {
+      "sha256": "494cf79ae4abf8fdac5717caeb02082117ea6185626a8a8727b385961ce8476e",
+      "device": 16777231,
+      "inode": 252563343,
+      "size": 372,
+      "mtime_ns": 1790139247903163578,
+      "ctime_ns": 1790139247903184328
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-RESTRICTED_MATRIX_STRENGTHENING-5e080b3fcf704c51.md": {
+      "sha256": "5e080b3fcf704c51f090c6dda46f1e6fd5ef3e6bad5c4ad4d4f662e468556858",
+      "device": 16777231,
+      "inode": 252563358,
+      "size": 389,
+      "mtime_ns": 1790139247910072081,
+      "ctime_ns": 1790139247910088915
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-REVIEW-818868bd22c7c6c1.md": {
+      "sha256": "818868bd22c7c6c1fdbc89267454fc809aeed7e0a5a6cacf6222459845524b68",
+      "device": 16777231,
+      "inode": 252563365,
+      "size": 4192,
+      "mtime_ns": 1790139247911773092,
+      "ctime_ns": 1790139247911785759
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-REVIEW_HISTORY-68ab8fd6caeaa94e.md": {
+      "sha256": "68ab8fd6caeaa94e58090752d631d6972f937060f95738e425e9a85e35fdd508",
+      "device": 16777231,
+      "inode": 252563344,
+      "size": 550,
+      "mtime_ns": 1790139247903854166,
+      "ctime_ns": 1790139247903871499
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_CANONICAL_PORT_REVIEW-086a49565d6feb83.md": {
+      "sha256": "086a49565d6feb83b56d57772ffb66816bdf3af8a739d34784e20de41985daa6",
+      "device": 16777231,
+      "inode": 252563345,
+      "size": 1416,
+      "mtime_ns": 1790139247904040459,
+      "ctime_ns": 1790139247904057251
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_CORRECTION_REVIEW-e914a5c4ee6056e3.md": {
+      "sha256": "e914a5c4ee6056e3c20472cc10526dce6cd9de6de431f12027323e71ee69c797",
+      "device": 16777231,
+      "inode": 252563366,
+      "size": 528,
+      "mtime_ns": 1790139247911922010,
+      "ctime_ns": 1790139247911934677
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_DERIVATION-9ef44bb2da9d373c.md": {
+      "sha256": "9ef44bb2da9d373c72bc79fadf1c283fca6fe7d0fce64416df3c3a3a200913ce",
+      "device": 16777231,
+      "inode": 252563371,
+      "size": 8697,
+      "mtime_ns": 1790139247913092059,
+      "ctime_ns": 1790139247913193435
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_DERIVATION_BEFORE_GENERATOR_NORMALIZATION_224fa648-224fa648db011ab7.md": {
+      "sha256": "224fa648db011ab7f22011949279e523f04cf0d436cbbf1694e91a507dfc8129",
+      "device": 16777231,
+      "inode": 252563372,
+      "size": 8699,
+      "mtime_ns": 1790139247913483103,
+      "ctime_ns": 1790139247913500770
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_NATIVE_REVIEW-4f94cd015b61b7bd.md": {
+      "sha256": "4f94cd015b61b7bd47258415153305dbccf5ac56bb30d3eefcf4ca8dfc154564",
+      "device": 16777231,
+      "inode": 252563373,
+      "size": 1423,
+      "mtime_ns": 1790139247913919814,
+      "ctime_ns": 1790139247913939856
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_REVIEW-007283ac7cbe03a3.md": {
+      "sha256": "007283ac7cbe03a31712e7918b70d63e346b11b529f7681a19ca610e74137814",
+      "device": 16777231,
+      "inode": 252563359,
+      "size": 1424,
+      "mtime_ns": 1790139247910245374,
+      "ctime_ns": 1790139247910259832
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROUTE_PORTFOLIO-9f34935b612d6b7a.md": {
+      "sha256": "9f34935b612d6b7afc5f4b1ba45db268d59fde1a20d396524757bac33489f6a1",
+      "device": 16777231,
+      "inode": 252563346,
+      "size": 256,
+      "mtime_ns": 1790139247904312419,
+      "ctime_ns": 1790139247904326877
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-SCOPED_VALIDATION-3a3215bf937b2b30.md": {
+      "sha256": "3a3215bf937b2b303dbbe422561092713582c8f4e119069539749df3a8b5da01",
+      "device": 16777231,
+      "inode": 252563347,
+      "size": 471,
+      "mtime_ns": 1790139247904497170,
+      "ctime_ns": 1790139247904514420
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STAGING_INDEX-a288fb0054e18d67.json.gz": {
+      "sha256": "33a2754a7e009f43067be4b73e65bdf5fcba73e15cf7641da6a3d7fb599bb526",
+      "device": 16777231,
+      "inode": 252563360,
+      "size": 2291,
+      "mtime_ns": 1790139247910546793,
+      "ctime_ns": 1790139247910563209
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STAGING_VALIDATION-93d467aa30988bb5.json.gz": {
+      "sha256": "990ec5b2fc2491fe7dff66c7671c04a4a8ab54964cb44e286847cd88c65f6973",
+      "device": 16777231,
+      "inode": 252563348,
+      "size": 770,
+      "mtime_ns": 1790139247904732547,
+      "ctime_ns": 1790139247904748589
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STATE-4b4bba442dd9c0f9.yaml.gz": {
+      "sha256": "dcb92efa6cc814188d7c17fba2184988f554dcf14360a5471996e5c5856f63d1",
+      "device": 16777231,
+      "inode": 252563349,
+      "size": 613,
+      "mtime_ns": 1790139247904933923,
+      "ctime_ns": 1790139247904949881
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STRICT_LINT-e6fc7621f090a9ba.log.gz": {
+      "sha256": "09e60992d6fb34d0d60c7228336d409044387284d83dffa2d7207d0f46729969",
+      "device": 16777231,
+      "inode": 252563350,
+      "size": 3448,
+      "mtime_ns": 1790139247905324384,
+      "ctime_ns": 1790139247905340051
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-TRACE_GATE-f6854afb6c690994.md": {
+      "sha256": "f6854afb6c690994192b3d37b0b8b18f7db7b9d6ae79610bec1c465d289b86a2",
+      "device": 16777231,
+      "inode": 252563351,
+      "size": 129,
+      "mtime_ns": 1790139247906200681,
+      "ctime_ns": 1790139247906214681
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-actual_r1_check-27c764ecf14dff29.py": {
+      "sha256": "27c764ecf14dff294a1f47332edfee276b646eb5c8896fbf5fb9379f0bf45b5a",
+      "device": 16777231,
+      "inode": 252563374,
+      "size": 5679,
+      "mtime_ns": 1790139247914112482,
+      "ctime_ns": 1790139247914126774
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-actual_r1_result-decbe9cb033a9863.json.gz": {
+      "sha256": "939144c683bc8b5d4c4aef73c298175c3fe1ab1eb3bc73137a8cbe37a01ef4fc",
+      "device": 16777231,
+      "inode": 252563375,
+      "size": 830,
+      "mtime_ns": 1790139247914387442,
+      "ctime_ns": 1790139247914405276
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-audit_packet_script_deps-5a20df422b36e986.py": {
+      "sha256": "5a20df422b36e986e242c6814e0d991cab5fa81a33b938666ff82a217514e7b3",
+      "device": 16777231,
+      "inode": 252563385,
+      "size": 33123,
+      "mtime_ns": 1790139247930901174,
+      "ctime_ns": 1790139247930917549
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-build_citation_graph-2529a54db0533874.py": {
+      "sha256": "2529a54db0533874752d3d8c15b7aa46e435bbda8fe977d671a996b401d7bed7",
+      "device": 16777231,
+      "inode": 252563382,
+      "size": 68087,
+      "mtime_ns": 1790139247929835209,
+      "ctime_ns": 1790139247929851542
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-check-0bdff133fb9b8426.py": {
+      "sha256": "0bdff133fb9b84260afbd03bef0cf7775c8a7f42776bc70952cd24b97c2be307",
+      "device": 16777231,
+      "inode": 252563361,
+      "size": 2809,
+      "mtime_ns": 1790139247910702877,
+      "ctime_ns": 1790139247910715710
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-citation_graph_manifest-25ec0d2941a91203.json.gz": {
+      "sha256": "0f53aacc9b88f0645f291ed5f5f2b1a598670612260fcfcd424f8d6664f25b97",
+      "device": 16777231,
+      "inode": 252563381,
+      "size": 107435,
+      "mtime_ns": 1790139247929276747,
+      "ctime_ns": 1790139247929294039
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-9d43e55cc41384e4.py": {
+      "sha256": "9d43e55cc41384e4f98398cc599655d881bfdfb2cba545781b501fa9024bdf70",
+      "device": 16777231,
+      "inode": 252563386,
+      "size": 8264,
+      "mtime_ns": 1790139247931169093,
+      "ctime_ns": 1790139247931184759
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-b249b1433a7199be.txt.gz": {
+      "sha256": "3bacf0b7ad57c6174306083f92a24306a5cba2e6e27fa347b5dbfa4b481264bf",
+      "device": 16777231,
+      "inode": 252563383,
+      "size": 564,
+      "mtime_ns": 1790139247930145253,
+      "ctime_ns": 1790139247930159378
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py.live-b15f9bc0d5c28082.json.gz": {
+      "sha256": "de41cc6a4e39ce2ec2bc4d5d8874f38d90211758b89bf7b2d2919491093b1644",
+      "device": 16777231,
+      "inode": 252563376,
+      "size": 1183,
+      "mtime_ns": 1790139247914994321,
+      "ctime_ns": 1790139247915010488
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07-02b74ad5d2baff2f.txt.gz": {
+      "sha256": "ac629feaea736b5106857b2223b31558f2b17e4ed558d4be3762dabb17427e42",
+      "device": 16777231,
+      "inode": 252563384,
+      "size": 542,
+      "mtime_ns": 1790139247930415629,
+      "ctime_ns": 1790139247930429338
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07-2007377e37c26a7e.py": {
+      "sha256": "2007377e37c26a7e2903332fe1c48388b6ac124bc95e7e71e3f9d6fcfb436433",
+      "device": 16777231,
+      "inode": 252563387,
+      "size": 5201,
+      "mtime_ns": 1790139247931427219,
+      "ctime_ns": 1790139247931443220
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py.live-10ced76cb62c47ef.json.gz": {
+      "sha256": "7fd3b311d2afedda586740ceaa3028c29c73d3d2d9cd39b626c607281ee746c2",
+      "device": 16777231,
+      "inode": 252563377,
+      "size": 1015,
+      "mtime_ns": 1790139247915242073,
+      "ctime_ns": 1790139247915256156
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-port_actual_r1-d000880a23aa821b.py": {
+      "sha256": "d000880a23aa821be488c8b9f83959494905b49f5d598d5c6c61bbde8bac779c",
+      "device": 16777231,
+      "inode": 252563362,
+      "size": 2648,
+      "mtime_ns": 1790139247911204005,
+      "ctime_ns": 1790139247911217047
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-result-033490f7a9e4d805.json.gz": {
+      "sha256": "8e50ea93464749a10a5d9545e6c6022853b745a661176080a9a71f1bc78e02f7",
+      "device": 16777231,
+      "inode": 252563363,
+      "size": 772,
+      "mtime_ns": 1790139247911393715,
+      "ctime_ns": 1790139247911407632
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-validated_claims_before_generated_cleanup-64a1ac1c910dd4d0.json.gz": {
+      "sha256": "ff66fa9700b131668020cdce4987744263fd7fec3732436b9f852523cb109f9b",
+      "device": 16777231,
+      "inode": 252563378,
+      "size": 3947,
+      "mtime_ns": 1790139247915951119,
+      "ctime_ns": 1790139247915964953
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-validated_readiness_before_generated_cleanup-ec75eb2ff65c6bc7.json.gz": {
+      "sha256": "88caee7b58c8be99bff1f2b5dfa8488ccb704f13b1492fe6e4871208bab051a8",
+      "device": 16777231,
+      "inode": 252563379,
+      "size": 1537,
+      "mtime_ns": 1790139247916273496,
+      "ctime_ns": 1790139247916288788
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/pr8032-archive-manifest.json": {
+      "sha256": "000c2a9d57c963a20e6d17b7b7ebf2af4825dbb9d105e0573d6002db5c3c23aa",
+      "device": 16777231,
+      "inode": 252563389,
+      "size": 45503,
+      "mtime_ns": 1790139247937402091,
+      "ctime_ns": 1790139247937420216
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/pr8032-original.delta.gz": {
+      "sha256": "721a2da730218c209a8cb210ff8e838a75e98551aaea23eeaa45dc6ac04534d2",
+      "device": 16777231,
+      "inode": 252563388,
+      "size": 72003,
+      "mtime_ns": 1790139247936829171,
+      "ctime_ns": 1790139247936851171
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e",
+      "device": 16777231,
+      "inode": 252560691,
+      "size": 39672,
+      "mtime_ns": 1790140274152553026,
+      "ctime_ns": 1790140274152553026
+    },
+    "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py": {
+      "sha256": "65be3fa85929ca0cc3562e9cb51047304d2d4620fb49a01e50c018802b5f20b8",
+      "device": 16777231,
+      "inode": 252563392,
+      "size": 10261,
+      "mtime_ns": 1790139792235745107,
+      "ctime_ns": 1790139792235745107
+    },
+    "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py": {
+      "sha256": "21ebc8258ba0db6b39f502261bfa416e89ee28d882d46f45aae4ecb0f677e8d7",
+      "device": 16777231,
+      "inode": 252563391,
+      "size": 7172,
+      "mtime_ns": 1790139792227744472,
+      "ctime_ns": 1790139792227744472
+    },
+    "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "device": 16777231,
+      "inode": 252518027,
+      "size": 24452,
+      "mtime_ns": 1790138922187784340,
+      "ctime_ns": 1790138922187784340
+    },
+    "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+      "device": 16777231,
+      "inode": 252518031,
+      "size": 12564,
+      "mtime_ns": 1790138922188927169,
+      "ctime_ns": 1790138922188927169
+    },
+    "docs/CANONICAL_HARNESS_INDEX.md": {
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "device": 16777231,
+      "inode": 244110853,
+      "size": 109354,
+      "mtime_ns": 1790109879574693758,
+      "ctime_ns": 1790109879574693758
+    },
+    "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+      "device": 16777231,
+      "inode": 252518018,
+      "size": 9634,
+      "mtime_ns": 1790138922186581928,
+      "ctime_ns": 1790138922186581928
+    },
+    "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "device": 16777231,
+      "inode": 244111922,
+      "size": 12055,
+      "mtime_ns": 1790109879749406057,
+      "ctime_ns": 1790109879749406057
+    },
+    "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "device": 16777231,
+      "inode": 244111931,
+      "size": 13081,
+      "mtime_ns": 1790109879751542473,
+      "ctime_ns": 1790109879751542473
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244112270,
+      "size": 4770,
+      "mtime_ns": 1790109879796044892,
+      "ctime_ns": 1790109879796044892
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244112742,
+      "size": 11333,
+      "mtime_ns": 1790109879856984311,
+      "ctime_ns": 1790109879856984311
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244113525,
+      "size": 5313,
+      "mtime_ns": 1790109879981595942,
+      "ctime_ns": 1790109879981595942
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244113706,
+      "size": 2581,
+      "mtime_ns": 1790109880004330609,
+      "ctime_ns": 1790109880004330609
+    },
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": {
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "device": 16777231,
+      "inode": 252518265,
+      "size": 12253,
+      "mtime_ns": 1790138922230603960,
+      "ctime_ns": 1790138922230603960
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244114656,
+      "size": 6427,
+      "mtime_ns": 1790109880181297908,
+      "ctime_ns": 1790109880181297908
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252518273,
+      "size": 19430,
+      "mtime_ns": 1790138922231952246,
+      "ctime_ns": 1790138922231952246
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 252518284,
+      "size": 14219,
+      "mtime_ns": 1790138922232735743,
+      "ctime_ns": 1790138922232735743
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252518286,
+      "size": 24983,
+      "mtime_ns": 1790138922232861451,
+      "ctime_ns": 1790138922232861451
+    },
+    "docs/audit/README.md": {
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "device": 16777231,
+      "inode": 244114758,
+      "size": 35690,
+      "mtime_ns": 1790109880198804867,
+      "ctime_ns": 1790109880198804867
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244114769,
+      "size": 6416,
+      "mtime_ns": 1790109880207145909,
+      "ctime_ns": 1790109880207145909
+    },
+    "docs/audit/data/premise_decision_history.json": {
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "device": 16777231,
+      "inode": 244119903,
+      "size": 11572,
+      "mtime_ns": 1790109881196003909,
+      "ctime_ns": 1790109881196003909
+    },
+    "docs/repo/ACTIVE_REVIEW_QUEUE.md": {
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "device": 16777231,
+      "inode": 244120846,
+      "size": 20824,
+      "mtime_ns": 1790109881299155788,
+      "ctime_ns": 1790109881299155788
+    },
+    "docs/repo/CONTROLLED_VOCABULARY.md": {
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "device": 16777231,
+      "inode": 244120847,
+      "size": 39977,
+      "mtime_ns": 1790109881299265039,
+      "ctime_ns": 1790109881299265039
+    },
+    "docs/repo/DEFERRED_DECISIONS.md": {
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "device": 16777231,
+      "inode": 252520193,
+      "size": 10595,
+      "mtime_ns": 1790138922625352544,
+      "ctime_ns": 1790138922625352544
+    },
+    "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md": {
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "device": 16777231,
+      "inode": 244120856,
+      "size": 3694,
+      "mtime_ns": 1790109881301142414,
+      "ctime_ns": 1790109881301142414
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244114785,
+      "size": 6052,
+      "mtime_ns": 1790109880220014618,
+      "ctime_ns": 1790109880220014618
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244119953,
+      "size": 12227,
+      "mtime_ns": 1790109881205985535,
+      "ctime_ns": 1790109881205985535
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244119975,
+      "size": 28870,
+      "mtime_ns": 1790109881209984618,
+      "ctime_ns": 1790109881209984618
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244169838,
+      "size": 24941,
+      "mtime_ns": 1790109890677373100,
+      "ctime_ns": 1790109890677373100
+    }
+  },
+  "after": {
+    "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6",
+      "device": 16777231,
+      "inode": 252563390,
+      "size": 27056,
+      "mtime_ns": 1790139247937747927,
+      "ctime_ns": 1790139247937763719
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1",
+      "device": 16777231,
+      "inode": 252520184,
+      "size": 74561,
+      "mtime_ns": 1790140274152205274,
+      "ctime_ns": 1790140274152205274
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/README.md": {
+      "sha256": "b3261309eedab0520e158e15bbf2cb1a3863cfaca419e0d156af40b3c745a3c8",
+      "device": 16777231,
+      "inode": 252563401,
+      "size": 15755,
+      "mtime_ns": 1790139247966313653,
+      "ctime_ns": 1790139247966330862
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_CANONICAL_RESULT-fb588cb555b830c0.json.gz": {
+      "sha256": "0061ead7f119dfb47ea3415d6e0f4c5618219a32212e7030b1f682947809f306",
+      "device": 16777231,
+      "inode": 252563312,
+      "size": 1189,
+      "mtime_ns": 1790139247890084785,
+      "ctime_ns": 1790139247890108244
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_CANONICAL_STDOUT-aeb917d8815282fc.txt.gz": {
+      "sha256": "371207e4214a7adcd8a3b7230824b1ab26f2038338cb76431164dd4c0a02c128",
+      "device": 16777231,
+      "inode": 252563313,
+      "size": 473,
+      "mtime_ns": 1790139247890457413,
+      "ctime_ns": 1790139247890473079
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_DERIVATION-ddcf0e7425c1c81c.md": {
+      "sha256": "ddcf0e7425c1c81c84a79ccbb7c443c311ddef37d2c53269281760c0072e7ef9",
+      "device": 16777231,
+      "inode": 252563367,
+      "size": 4621,
+      "mtime_ns": 1790139247912166011,
+      "ctime_ns": 1790139247912179845
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_PORT_RECEIPT-9cdb1da5696dd949.json.gz": {
+      "sha256": "51c3519b04dc6baafb88d0616d48ca50f27502cc6f7c5c3f0357f8e231e01922",
+      "device": 16777231,
+      "inode": 252563314,
+      "size": 423,
+      "mtime_ns": 1790139247890706081,
+      "ctime_ns": 1790139247890722373
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_PREREGISTRATION-bc048351d5b6482d.md": {
+      "sha256": "bc048351d5b6482d25ce990b787d49fea357eeedae245a3e3677d87c7a3eb100",
+      "device": 16777231,
+      "inode": 252563368,
+      "size": 1924,
+      "mtime_ns": 1790139247912314554,
+      "ctime_ns": 1790139247912327179
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_REVIEW-b68626a8cd92c405.md": {
+      "sha256": "b68626a8cd92c405b3976883d9ecbced510d94908c919dd0d6e2f81609b7437b",
+      "device": 16777231,
+      "inode": 252563352,
+      "size": 2057,
+      "mtime_ns": 1790139247907174563,
+      "ctime_ns": 1790139247907190563
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ACTUAL_R1_REVIEW-e6e33c9855fac926.md": {
+      "sha256": "e6e33c9855fac92659a8d4b4656a6c427c309ac639778706cfb989746e6b64ca",
+      "device": 16777231,
+      "inode": 252563364,
+      "size": 2796,
+      "mtime_ns": 1790139247911554466,
+      "ctime_ns": 1790139247911567132
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ARTIFACT_PLAN-88fe929b75c29baa.md": {
+      "sha256": "88fe929b75c29baae634adc21888a6d89676e2dce3ecffb5387b50642de0aebf",
+      "device": 16777231,
+      "inode": 252563315,
+      "size": 267,
+      "mtime_ns": 1790139247890900416,
+      "ctime_ns": 1790139247890914374
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ASSUMPTIONS_AND_IMPORTS-6fde2a74731cdfd0.md": {
+      "sha256": "6fde2a74731cdfd039493323df244a738bdaca73211fd16a8aaed36f9e193099",
+      "device": 16777231,
+      "inode": 252563316,
+      "size": 343,
+      "mtime_ns": 1790139247891103292,
+      "ctime_ns": 1790139247891116250
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BEFORE_RESTRICTED_MATRIX_STRENGTHENING_check-921454c6f377441e.py": {
+      "sha256": "921454c6f377441e3559da09bcd4b4c4624496b9104cf51cedf8e304cd183ea3",
+      "device": 16777231,
+      "inode": 252563353,
+      "size": 2678,
+      "mtime_ns": 1790139247907417147,
+      "ctime_ns": 1790139247907431314
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result-711299a34d8885ab.json.gz": {
+      "sha256": "717ae4d3d516278078260245416e8c8e0db519fd37363182f785158e5d7f8aef",
+      "device": 16777231,
+      "inode": 252563354,
+      "size": 771,
+      "mtime_ns": 1790139247907704774,
+      "ctime_ns": 1790139247907720358
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-BOTH_REGISTRY_AST_RECEIPT-af9c2bed02c98155.json.gz": {
+      "sha256": "310fe89b63bd1535c00405aa3ae4885b445723858562a22ed0275453fb343fb2",
+      "device": 16777231,
+      "inode": 252563317,
+      "size": 320,
+      "mtime_ns": 1790139247891331627,
+      "ctime_ns": 1790139247891345252
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CANONICAL_RESULT-9081851f01852583.json.gz": {
+      "sha256": "794289b6dad084aca5ac37ed6c0412aac5d1f9d6d5ea56606ca420d2ebaaaecf",
+      "device": 16777231,
+      "inode": 252563318,
+      "size": 1020,
+      "mtime_ns": 1790139247892152507,
+      "ctime_ns": 1790139247892196799
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CANONICAL_STDOUT-688278f6aa5cb62d.txt.gz": {
+      "sha256": "82158b8c9f489a8bc62e697a5c91231f8041b33015776ec3a1be0b0ea8736d0a",
+      "device": 16777231,
+      "inode": 252563319,
+      "size": 457,
+      "mtime_ns": 1790139247892520218,
+      "ctime_ns": 1790139247892539468
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CLAIM_STATUS_CERTIFICATE-d197fcba0e77ca60.md": {
+      "sha256": "d197fcba0e77ca60427259fefc9382922895039b36aaa689bc3dcb3cc9e79e98",
+      "device": 16777231,
+      "inode": 252563320,
+      "size": 211,
+      "mtime_ns": 1790139247893451099,
+      "ctime_ns": 1790139247893464807
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-CONTROLS_PREREGISTRATION-70f3c106c801b133.md": {
+      "sha256": "70f3c106c801b1338e3bfe5fd795b97da4ad940000a5ad207c628a00525a220d",
+      "device": 16777231,
+      "inode": 252563355,
+      "size": 825,
+      "mtime_ns": 1790139247908559071,
+      "ctime_ns": 1790139247908578155
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-DERIVATION-55f5a4e94d945cc3.md": {
+      "sha256": "55f5a4e94d945cc30ad2d00718378e0f92559106bd94039c40cbfc55dc59955d",
+      "device": 16777231,
+      "inode": 252563356,
+      "size": 7927,
+      "mtime_ns": 1790139247909087366,
+      "ctime_ns": 1790139247909106367
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION-b7ea371b71d19e6d.json.gz": {
+      "sha256": "541d7a829b0d6f910d70aee20e04ae347191a031626717df7197bf1805aed1c6",
+      "device": 16777231,
+      "inode": 252563321,
+      "size": 465,
+      "mtime_ns": 1790139247893704725,
+      "ctime_ns": 1790139247893717851
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_LOCK_RELEASE-25f09ffc3fa01b87.json.gz": {
+      "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+      "device": 16777231,
+      "inode": 252563322,
+      "size": 59,
+      "mtime_ns": 1790139247893935852,
+      "ctime_ns": 1790139247893948560
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_READINESS-da03199a43f726cc.json.gz": {
+      "sha256": "648782aedfb5fd194584d320dab49170b02089bd37277709bdfbbdd7c3782680",
+      "device": 16777231,
+      "inode": 252563323,
+      "size": 1538,
+      "mtime_ns": 1790139247894738524,
+      "ctime_ns": 1790139247894751065
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_STRICT-547d5f47193228f9.log.gz": {
+      "sha256": "eb4b462c673ef580669d092dc1081d67fe080fd462bcebe7e5e7728c487dbc5b",
+      "device": 16777231,
+      "inode": 252563324,
+      "size": 3697,
+      "mtime_ns": 1790139247895120276,
+      "ctime_ns": 1790139247895134276
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_SYNC_RECEIPT-28a1cc4b98844534.json.gz": {
+      "sha256": "b13c9b4794e435e0e6535c47b93e945c361299873a9439bec137329859935603",
+      "device": 16777231,
+      "inode": 252563325,
+      "size": 960,
+      "mtime_ns": 1790139247895369861,
+      "ctime_ns": 1790139247895382486
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_MAIN66_VALIDATION-7924df3dfd482e60.md": {
+      "sha256": "7924df3dfd482e60a5646b5e1205b174ad6512537eb85701cda766477e814ded",
+      "device": 16777231,
+      "inode": 252563326,
+      "size": 753,
+      "mtime_ns": 1790139247895582488,
+      "ctime_ns": 1790139247895595446
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_VALIDATION-61c13e5cae19471f.md": {
+      "sha256": "61c13e5cae19471f93fed9f9ee3d425e4c6f30d0cdd34211319d4e8b5d066b96",
+      "device": 16777231,
+      "inode": 252563327,
+      "size": 1171,
+      "mtime_ns": 1790139247896911371,
+      "ctime_ns": 1790139247896924246
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FINAL_VOCAB_LINT-75d6a064729cbe1e.txt.gz": {
+      "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe",
+      "device": 16777231,
+      "inode": 252563328,
+      "size": 94,
+      "mtime_ns": 1790139247897129873,
+      "ctime_ns": 1790139247897146039
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FROZEN_PORT_RECEIPT-fa62849d3c843469.json.gz": {
+      "sha256": "81725a07a5ff6b501dac56cf653eabe44d0c0cac45c32d99073763a58683bf2c",
+      "device": 16777231,
+      "inode": 252563329,
+      "size": 334,
+      "mtime_ns": 1790139247897809002,
+      "ctime_ns": 1790139247897823710
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-FULL_PIPELINE-562561a9c5c5690c.log.gz": {
+      "sha256": "e3e0d8717b7b85b3ff986c0c790e80dcbb8d669565aa4b0ecd19215797367fcd",
+      "device": 16777231,
+      "inode": 252563330,
+      "size": 5874,
+      "mtime_ns": 1790139247898337505,
+      "ctime_ns": 1790139247898351589
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOT-cbddff81440b3c19.md": {
+      "sha256": "cbddff81440b3c199dd1bda76db586da489a99dc1dbfe8d192e3dc908646b51b",
+      "device": 16777231,
+      "inode": 252563380,
+      "size": 16259,
+      "mtime_ns": 1790139247916803666,
+      "ctime_ns": 1790139247916819875
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GENERATOR_NORMALIZATION_CORRECTION-3677fe3c989a4b82.md": {
+      "sha256": "3677fe3c989a4b826dd380d3a2043363dbf3d268e098aade83fc36b89504ccc3",
+      "device": 16777231,
+      "inode": 252563369,
+      "size": 492,
+      "mtime_ns": 1790139247912483222,
+      "ctime_ns": 1790139247912498430
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-GOAL-ba656aa86e9d2ae9.md": {
+      "sha256": "ba656aa86e9d2ae9b8c9208bc8970cf61d736a7c854be74c36ad01c6d7b20366",
+      "device": 16777231,
+      "inode": 252563331,
+      "size": 142,
+      "mtime_ns": 1790139247898556715,
+      "ctime_ns": 1790139247898570840
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-HANDOFF-8c0cffd89510f74a.md": {
+      "sha256": "8c0cffd89510f74a355f0e4ff89a4e960f1ceb7a69e1ca0bf3d86b0ddc3f81ee",
+      "device": 16777231,
+      "inode": 252563332,
+      "size": 1870,
+      "mtime_ns": 1790139247898970426,
+      "ctime_ns": 1790139247898983426
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-LITERATURE_BRIDGES-ae5f5c8723a6a117.md": {
+      "sha256": "ae5f5c8723a6a117b5cbc527321312662e7c4c0bfc9ece10943ac2040e5eb317",
+      "device": 16777231,
+      "inode": 252563333,
+      "size": 207,
+      "mtime_ns": 1790139247899196511,
+      "ctime_ns": 1790139247899210219
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-NO_GO_DISCIPLINE_CHECKLIST-dc918699e447b583.md": {
+      "sha256": "dc918699e447b583724ac0c27178da01ecabd210bbca57d2b9fd38bde18bf0c8",
+      "device": 16777231,
+      "inode": 252563334,
+      "size": 823,
+      "mtime_ns": 1790139247900167851,
+      "ctime_ns": 1790139247900181726
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-NO_GO_LEDGER-e50f67e1d0650414.md": {
+      "sha256": "e50f67e1d0650414cae94ad7fd663d20fa0d964ae08018490f08f63d439a84f2",
+      "device": 16777231,
+      "inode": 252563335,
+      "size": 671,
+      "mtime_ns": 1790139247900320310,
+      "ctime_ns": 1790139247900332601
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-OPPORTUNITY_QUEUE-2f31dcb0a1a1195c.md": {
+      "sha256": "2f31dcb0a1a1195c83a3e43626dd57f7b13486b45a689c8390b556b962fcf7ca",
+      "device": 16777231,
+      "inode": 252563336,
+      "size": 246,
+      "mtime_ns": 1790139247900470269,
+      "ctime_ns": 1790139247900483019
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PACK_INDEX-4d741e696e366e95.json.gz": {
+      "sha256": "c6b1819ec9bd8693275da5b8d0d2ba8e2bfc9f0ecb3e5d1db96d9f18d77be22b",
+      "device": 16777231,
+      "inode": 252563337,
+      "size": 2892,
+      "mtime_ns": 1790139247900803896,
+      "ctime_ns": 1790139247900819605
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PARENT_VALIDATION_METADATA_CATCHUP-af13a255467d5eb8.md": {
+      "sha256": "af13a255467d5eb82ec76ed81faf3f976cc62b669eba9ac7ee7b24b4f10fd12f",
+      "device": 16777231,
+      "inode": 252563338,
+      "size": 480,
+      "mtime_ns": 1790139247900990606,
+      "ctime_ns": 1790139247901004981
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PORT_RECEIPT-a0bb7d734ff7fddc.json.gz": {
+      "sha256": "04899ecd68ab17f0ccb515d4dbe1a7c59dee5104836f841c3345f4e3cf06bad7",
+      "device": 16777231,
+      "inode": 252563339,
+      "size": 460,
+      "mtime_ns": 1790139247901241024,
+      "ctime_ns": 1790139247901255316
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PREREGISTRATION-39a046d3644d7ade.md": {
+      "sha256": "39a046d3644d7ade83e2c5f49c164b119a9aff25af1f2bd4af656160d9b7323d",
+      "device": 16777231,
+      "inode": 252563370,
+      "size": 1748,
+      "mtime_ns": 1790139247912693681,
+      "ctime_ns": 1790139247912707556
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PREREGISTRATION-ab4d5238c7ab1ad3.md": {
+      "sha256": "ab4d5238c7ab1ad3b5c5a7670c02d29780a2f8e36b4a49f4f7eb325807f702cf",
+      "device": 16777231,
+      "inode": 252563357,
+      "size": 1510,
+      "mtime_ns": 1790139247909446202,
+      "ctime_ns": 1790139247909460577
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PROOF_REVIEW-e640563f3b04a488.md": {
+      "sha256": "e640563f3b04a488931d7eb0253de2d74688f0bcd9535d6fea2da9e713e3a30e",
+      "device": 16777231,
+      "inode": 252563340,
+      "size": 384,
+      "mtime_ns": 1790139247901465359,
+      "ctime_ns": 1790139247901479192
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PR_BACKLOG-fe013018afe4be5d.md": {
+      "sha256": "fe013018afe4be5d8a248b5d3e331c44ad92d77e1f985677e30fc3132ef10f96",
+      "device": 16777231,
+      "inode": 252563341,
+      "size": 177,
+      "mtime_ns": 1790139247902489282,
+      "ctime_ns": 1790139247902513449
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PR_BODY-ff8f204868c63144.md": {
+      "sha256": "ff8f204868c6314477f344e35dc71f506cb016a51270ea99e5f66386607936e7",
+      "device": 16777231,
+      "inode": 252563342,
+      "size": 2327,
+      "mtime_ns": 1790139247902825118,
+      "ctime_ns": 1790139247902845659
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-PUBLICATION_RECEIPT-3bb8b3155cc0004c.json.gz": {
+      "sha256": "494cf79ae4abf8fdac5717caeb02082117ea6185626a8a8727b385961ce8476e",
+      "device": 16777231,
+      "inode": 252563343,
+      "size": 372,
+      "mtime_ns": 1790139247903163578,
+      "ctime_ns": 1790139247903184328
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-RESTRICTED_MATRIX_STRENGTHENING-5e080b3fcf704c51.md": {
+      "sha256": "5e080b3fcf704c51f090c6dda46f1e6fd5ef3e6bad5c4ad4d4f662e468556858",
+      "device": 16777231,
+      "inode": 252563358,
+      "size": 389,
+      "mtime_ns": 1790139247910072081,
+      "ctime_ns": 1790139247910088915
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-REVIEW-818868bd22c7c6c1.md": {
+      "sha256": "818868bd22c7c6c1fdbc89267454fc809aeed7e0a5a6cacf6222459845524b68",
+      "device": 16777231,
+      "inode": 252563365,
+      "size": 4192,
+      "mtime_ns": 1790139247911773092,
+      "ctime_ns": 1790139247911785759
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-REVIEW_HISTORY-68ab8fd6caeaa94e.md": {
+      "sha256": "68ab8fd6caeaa94e58090752d631d6972f937060f95738e425e9a85e35fdd508",
+      "device": 16777231,
+      "inode": 252563344,
+      "size": 550,
+      "mtime_ns": 1790139247903854166,
+      "ctime_ns": 1790139247903871499
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_CANONICAL_PORT_REVIEW-086a49565d6feb83.md": {
+      "sha256": "086a49565d6feb83b56d57772ffb66816bdf3af8a739d34784e20de41985daa6",
+      "device": 16777231,
+      "inode": 252563345,
+      "size": 1416,
+      "mtime_ns": 1790139247904040459,
+      "ctime_ns": 1790139247904057251
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_CORRECTION_REVIEW-e914a5c4ee6056e3.md": {
+      "sha256": "e914a5c4ee6056e3c20472cc10526dce6cd9de6de431f12027323e71ee69c797",
+      "device": 16777231,
+      "inode": 252563366,
+      "size": 528,
+      "mtime_ns": 1790139247911922010,
+      "ctime_ns": 1790139247911934677
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_DERIVATION-9ef44bb2da9d373c.md": {
+      "sha256": "9ef44bb2da9d373c72bc79fadf1c283fca6fe7d0fce64416df3c3a3a200913ce",
+      "device": 16777231,
+      "inode": 252563371,
+      "size": 8697,
+      "mtime_ns": 1790139247913092059,
+      "ctime_ns": 1790139247913193435
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_DERIVATION_BEFORE_GENERATOR_NORMALIZATION_224fa648-224fa648db011ab7.md": {
+      "sha256": "224fa648db011ab7f22011949279e523f04cf0d436cbbf1694e91a507dfc8129",
+      "device": 16777231,
+      "inode": 252563372,
+      "size": 8699,
+      "mtime_ns": 1790139247913483103,
+      "ctime_ns": 1790139247913500770
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_NATIVE_REVIEW-4f94cd015b61b7bd.md": {
+      "sha256": "4f94cd015b61b7bd47258415153305dbccf5ac56bb30d3eefcf4ca8dfc154564",
+      "device": 16777231,
+      "inode": 252563373,
+      "size": 1423,
+      "mtime_ns": 1790139247913919814,
+      "ctime_ns": 1790139247913939856
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROOT_REVIEW-007283ac7cbe03a3.md": {
+      "sha256": "007283ac7cbe03a31712e7918b70d63e346b11b529f7681a19ca610e74137814",
+      "device": 16777231,
+      "inode": 252563359,
+      "size": 1424,
+      "mtime_ns": 1790139247910245374,
+      "ctime_ns": 1790139247910259832
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-ROUTE_PORTFOLIO-9f34935b612d6b7a.md": {
+      "sha256": "9f34935b612d6b7afc5f4b1ba45db268d59fde1a20d396524757bac33489f6a1",
+      "device": 16777231,
+      "inode": 252563346,
+      "size": 256,
+      "mtime_ns": 1790139247904312419,
+      "ctime_ns": 1790139247904326877
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-SCOPED_VALIDATION-3a3215bf937b2b30.md": {
+      "sha256": "3a3215bf937b2b303dbbe422561092713582c8f4e119069539749df3a8b5da01",
+      "device": 16777231,
+      "inode": 252563347,
+      "size": 471,
+      "mtime_ns": 1790139247904497170,
+      "ctime_ns": 1790139247904514420
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STAGING_INDEX-a288fb0054e18d67.json.gz": {
+      "sha256": "33a2754a7e009f43067be4b73e65bdf5fcba73e15cf7641da6a3d7fb599bb526",
+      "device": 16777231,
+      "inode": 252563360,
+      "size": 2291,
+      "mtime_ns": 1790139247910546793,
+      "ctime_ns": 1790139247910563209
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STAGING_VALIDATION-93d467aa30988bb5.json.gz": {
+      "sha256": "990ec5b2fc2491fe7dff66c7671c04a4a8ab54964cb44e286847cd88c65f6973",
+      "device": 16777231,
+      "inode": 252563348,
+      "size": 770,
+      "mtime_ns": 1790139247904732547,
+      "ctime_ns": 1790139247904748589
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STATE-4b4bba442dd9c0f9.yaml.gz": {
+      "sha256": "dcb92efa6cc814188d7c17fba2184988f554dcf14360a5471996e5c5856f63d1",
+      "device": 16777231,
+      "inode": 252563349,
+      "size": 613,
+      "mtime_ns": 1790139247904933923,
+      "ctime_ns": 1790139247904949881
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-STRICT_LINT-e6fc7621f090a9ba.log.gz": {
+      "sha256": "09e60992d6fb34d0d60c7228336d409044387284d83dffa2d7207d0f46729969",
+      "device": 16777231,
+      "inode": 252563350,
+      "size": 3448,
+      "mtime_ns": 1790139247905324384,
+      "ctime_ns": 1790139247905340051
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-TRACE_GATE-f6854afb6c690994.md": {
+      "sha256": "f6854afb6c690994192b3d37b0b8b18f7db7b9d6ae79610bec1c465d289b86a2",
+      "device": 16777231,
+      "inode": 252563351,
+      "size": 129,
+      "mtime_ns": 1790139247906200681,
+      "ctime_ns": 1790139247906214681
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-actual_r1_check-27c764ecf14dff29.py": {
+      "sha256": "27c764ecf14dff294a1f47332edfee276b646eb5c8896fbf5fb9379f0bf45b5a",
+      "device": 16777231,
+      "inode": 252563374,
+      "size": 5679,
+      "mtime_ns": 1790139247914112482,
+      "ctime_ns": 1790139247914126774
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-actual_r1_result-decbe9cb033a9863.json.gz": {
+      "sha256": "939144c683bc8b5d4c4aef73c298175c3fe1ab1eb3bc73137a8cbe37a01ef4fc",
+      "device": 16777231,
+      "inode": 252563375,
+      "size": 830,
+      "mtime_ns": 1790139247914387442,
+      "ctime_ns": 1790139247914405276
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-audit_packet_script_deps-5a20df422b36e986.py": {
+      "sha256": "5a20df422b36e986e242c6814e0d991cab5fa81a33b938666ff82a217514e7b3",
+      "device": 16777231,
+      "inode": 252563385,
+      "size": 33123,
+      "mtime_ns": 1790139247930901174,
+      "ctime_ns": 1790139247930917549
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-build_citation_graph-2529a54db0533874.py": {
+      "sha256": "2529a54db0533874752d3d8c15b7aa46e435bbda8fe977d671a996b401d7bed7",
+      "device": 16777231,
+      "inode": 252563382,
+      "size": 68087,
+      "mtime_ns": 1790139247929835209,
+      "ctime_ns": 1790139247929851542
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-check-0bdff133fb9b8426.py": {
+      "sha256": "0bdff133fb9b84260afbd03bef0cf7775c8a7f42776bc70952cd24b97c2be307",
+      "device": 16777231,
+      "inode": 252563361,
+      "size": 2809,
+      "mtime_ns": 1790139247910702877,
+      "ctime_ns": 1790139247910715710
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-citation_graph_manifest-25ec0d2941a91203.json.gz": {
+      "sha256": "0f53aacc9b88f0645f291ed5f5f2b1a598670612260fcfcd424f8d6664f25b97",
+      "device": 16777231,
+      "inode": 252563381,
+      "size": 107435,
+      "mtime_ns": 1790139247929276747,
+      "ctime_ns": 1790139247929294039
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-9d43e55cc41384e4.py": {
+      "sha256": "9d43e55cc41384e4f98398cc599655d881bfdfb2cba545781b501fa9024bdf70",
+      "device": 16777231,
+      "inode": 252563386,
+      "size": 8264,
+      "mtime_ns": 1790139247931169093,
+      "ctime_ns": 1790139247931184759
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-b249b1433a7199be.txt.gz": {
+      "sha256": "3bacf0b7ad57c6174306083f92a24306a5cba2e6e27fa347b5dbfa4b481264bf",
+      "device": 16777231,
+      "inode": 252563383,
+      "size": 564,
+      "mtime_ns": 1790139247930145253,
+      "ctime_ns": 1790139247930159378
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py.live-b15f9bc0d5c28082.json.gz": {
+      "sha256": "de41cc6a4e39ce2ec2bc4d5d8874f38d90211758b89bf7b2d2919491093b1644",
+      "device": 16777231,
+      "inode": 252563376,
+      "size": 1183,
+      "mtime_ns": 1790139247914994321,
+      "ctime_ns": 1790139247915010488
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07-02b74ad5d2baff2f.txt.gz": {
+      "sha256": "ac629feaea736b5106857b2223b31558f2b17e4ed558d4be3762dabb17427e42",
+      "device": 16777231,
+      "inode": 252563384,
+      "size": 542,
+      "mtime_ns": 1790139247930415629,
+      "ctime_ns": 1790139247930429338
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07-2007377e37c26a7e.py": {
+      "sha256": "2007377e37c26a7e2903332fe1c48388b6ac124bc95e7e71e3f9d6fcfb436433",
+      "device": 16777231,
+      "inode": 252563387,
+      "size": 5201,
+      "mtime_ns": 1790139247931427219,
+      "ctime_ns": 1790139247931443220
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py.live-10ced76cb62c47ef.json.gz": {
+      "sha256": "7fd3b311d2afedda586740ceaa3028c29c73d3d2d9cd39b626c607281ee746c2",
+      "device": 16777231,
+      "inode": 252563377,
+      "size": 1015,
+      "mtime_ns": 1790139247915242073,
+      "ctime_ns": 1790139247915256156
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-port_actual_r1-d000880a23aa821b.py": {
+      "sha256": "d000880a23aa821be488c8b9f83959494905b49f5d598d5c6c61bbde8bac779c",
+      "device": 16777231,
+      "inode": 252563362,
+      "size": 2648,
+      "mtime_ns": 1790139247911204005,
+      "ctime_ns": 1790139247911217047
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-result-033490f7a9e4d805.json.gz": {
+      "sha256": "8e50ea93464749a10a5d9545e6c6022853b745a661176080a9a71f1bc78e02f7",
+      "device": 16777231,
+      "inode": 252563363,
+      "size": 772,
+      "mtime_ns": 1790139247911393715,
+      "ctime_ns": 1790139247911407632
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-validated_claims_before_generated_cleanup-64a1ac1c910dd4d0.json.gz": {
+      "sha256": "ff66fa9700b131668020cdce4987744263fd7fec3732436b9f852523cb109f9b",
+      "device": 16777231,
+      "inode": 252563378,
+      "size": 3947,
+      "mtime_ns": 1790139247915951119,
+      "ctime_ns": 1790139247915964953
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/kept/pr8032-validated_readiness_before_generated_cleanup-ec75eb2ff65c6bc7.json.gz": {
+      "sha256": "88caee7b58c8be99bff1f2b5dfa8488ccb704f13b1492fe6e4871208bab051a8",
+      "device": 16777231,
+      "inode": 252563379,
+      "size": 1537,
+      "mtime_ns": 1790139247916273496,
+      "ctime_ns": 1790139247916288788
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/pr8032-archive-manifest.json": {
+      "sha256": "000c2a9d57c963a20e6d17b7b7ebf2af4825dbb9d105e0573d6002db5c3c23aa",
+      "device": 16777231,
+      "inode": 252563389,
+      "size": 45503,
+      "mtime_ns": 1790139247937402091,
+      "ctime_ns": 1790139247937420216
+    },
+    "docs/work_history/repo/review_feedback/pr8032-evidence/pr8032-original.delta.gz": {
+      "sha256": "721a2da730218c209a8cb210ff8e838a75e98551aaea23eeaa45dc6ac04534d2",
+      "device": 16777231,
+      "inode": 252563388,
+      "size": 72003,
+      "mtime_ns": 1790139247936829171,
+      "ctime_ns": 1790139247936851171
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e",
+      "device": 16777231,
+      "inode": 252560691,
+      "size": 39672,
+      "mtime_ns": 1790140274152553026,
+      "ctime_ns": 1790140274152553026
+    },
+    "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py": {
+      "sha256": "65be3fa85929ca0cc3562e9cb51047304d2d4620fb49a01e50c018802b5f20b8",
+      "device": 16777231,
+      "inode": 252563392,
+      "size": 10261,
+      "mtime_ns": 1790139792235745107,
+      "ctime_ns": 1790139792235745107
+    },
+    "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py": {
+      "sha256": "21ebc8258ba0db6b39f502261bfa416e89ee28d882d46f45aae4ecb0f677e8d7",
+      "device": 16777231,
+      "inode": 252563391,
+      "size": 7172,
+      "mtime_ns": 1790139792227744472,
+      "ctime_ns": 1790139792227744472
+    },
+    "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "device": 16777231,
+      "inode": 252518027,
+      "size": 24452,
+      "mtime_ns": 1790138922187784340,
+      "ctime_ns": 1790138922187784340
+    },
+    "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+      "device": 16777231,
+      "inode": 252518031,
+      "size": 12564,
+      "mtime_ns": 1790138922188927169,
+      "ctime_ns": 1790138922188927169
+    },
+    "docs/CANONICAL_HARNESS_INDEX.md": {
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "device": 16777231,
+      "inode": 244110853,
+      "size": 109354,
+      "mtime_ns": 1790109879574693758,
+      "ctime_ns": 1790109879574693758
+    },
+    "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+      "device": 16777231,
+      "inode": 252518018,
+      "size": 9634,
+      "mtime_ns": 1790138922186581928,
+      "ctime_ns": 1790138922186581928
+    },
+    "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "device": 16777231,
+      "inode": 244111922,
+      "size": 12055,
+      "mtime_ns": 1790109879749406057,
+      "ctime_ns": 1790109879749406057
+    },
+    "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "device": 16777231,
+      "inode": 244111931,
+      "size": 13081,
+      "mtime_ns": 1790109879751542473,
+      "ctime_ns": 1790109879751542473
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244112270,
+      "size": 4770,
+      "mtime_ns": 1790109879796044892,
+      "ctime_ns": 1790109879796044892
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244112742,
+      "size": 11333,
+      "mtime_ns": 1790109879856984311,
+      "ctime_ns": 1790109879856984311
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244113525,
+      "size": 5313,
+      "mtime_ns": 1790109879981595942,
+      "ctime_ns": 1790109879981595942
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244113706,
+      "size": 2581,
+      "mtime_ns": 1790109880004330609,
+      "ctime_ns": 1790109880004330609
+    },
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": {
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "device": 16777231,
+      "inode": 252518265,
+      "size": 12253,
+      "mtime_ns": 1790138922230603960,
+      "ctime_ns": 1790138922230603960
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244114656,
+      "size": 6427,
+      "mtime_ns": 1790109880181297908,
+      "ctime_ns": 1790109880181297908
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252518273,
+      "size": 19430,
+      "mtime_ns": 1790138922231952246,
+      "ctime_ns": 1790138922231952246
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 252518284,
+      "size": 14219,
+      "mtime_ns": 1790138922232735743,
+      "ctime_ns": 1790138922232735743
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252518286,
+      "size": 24983,
+      "mtime_ns": 1790138922232861451,
+      "ctime_ns": 1790138922232861451
+    },
+    "docs/audit/README.md": {
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "device": 16777231,
+      "inode": 244114758,
+      "size": 35690,
+      "mtime_ns": 1790109880198804867,
+      "ctime_ns": 1790109880198804867
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244114769,
+      "size": 6416,
+      "mtime_ns": 1790109880207145909,
+      "ctime_ns": 1790109880207145909
+    },
+    "docs/audit/data/premise_decision_history.json": {
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "device": 16777231,
+      "inode": 244119903,
+      "size": 11572,
+      "mtime_ns": 1790109881196003909,
+      "ctime_ns": 1790109881196003909
+    },
+    "docs/repo/ACTIVE_REVIEW_QUEUE.md": {
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "device": 16777231,
+      "inode": 244120846,
+      "size": 20824,
+      "mtime_ns": 1790109881299155788,
+      "ctime_ns": 1790109881299155788
+    },
+    "docs/repo/CONTROLLED_VOCABULARY.md": {
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "device": 16777231,
+      "inode": 244120847,
+      "size": 39977,
+      "mtime_ns": 1790109881299265039,
+      "ctime_ns": 1790109881299265039
+    },
+    "docs/repo/DEFERRED_DECISIONS.md": {
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "device": 16777231,
+      "inode": 252520193,
+      "size": 10595,
+      "mtime_ns": 1790138922625352544,
+      "ctime_ns": 1790138922625352544
+    },
+    "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md": {
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "device": 16777231,
+      "inode": 244120856,
+      "size": 3694,
+      "mtime_ns": 1790109881301142414,
+      "ctime_ns": 1790109881301142414
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244114785,
+      "size": 6052,
+      "mtime_ns": 1790109880220014618,
+      "ctime_ns": 1790109880220014618
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244119953,
+      "size": 12227,
+      "mtime_ns": 1790109881205985535,
+      "ctime_ns": 1790109881205985535
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244119975,
+      "size": 28870,
+      "mtime_ns": 1790109881209984618,
+      "ctime_ns": 1790109881209984618
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244169838,
+      "size": 24941,
+      "mtime_ns": 1790109890677373100,
+      "ctime_ns": 1790109890677373100
+    }
+  },
+  "whole_tree_watchdog": {
+    "limit_seconds": 180,
+    "limit_bytes": 268435456,
+    "sampling_interval_seconds": 0.02,
+    "samples": 4,
+    "peak_tree_rss_bytes": 75661312,
+    "violations": [],
+    "scope": "Sampled aggregate supervisor, worker and descendants RSS; not OS hard allocation cap"
+  },
+  "elapsed_seconds": 0.3623332080314867,
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-capture-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-v1.sidecar.json",
+      "sha256": "7e139846746d7b5e3887a7c68cba911f9a573388c33e8bb8238dbf700a634cc1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-capture-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-v1.raw-result.json",
+      "sha256": "7cbbb4b685e843be25d22653dc618f151353d32817049ccc51ded5d12e6e6b3e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-capture-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-v1.worker.json",
+      "sha256": "b4e125411c37a5045921e31594033e615dc3e602487400de586153b23040b876"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-capture-gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07-v1.supervisor.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt",
+      "sha256": "4becd960b8a233332738c7ae1be70cdfabce8f075082a957c48c0d446237fea7"
+    }
+  ],
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-author-unit-draft-v2.json",
+    "sha256": "3ed4960ef2ec39fe2896f930dec6d11dda47613bceb76193e2fe2c231383b5f7"
+  },
+  "cheap": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-author-cheap-v2.json",
+    "sha256": "0e00ceb34ac715d770b9601863bddca100f52ddc5274a987e855afc48b92e1f5"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-cold-activation-v2.json",
+    "sha256": "c346fd631222c85b5db47bdebe29b246915e07d954b12fe50c8c72775a0cb79b"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-v3.py",
+    "sha256": "df1b538f1c0c3bae759dea26e371850f9f1284f4376ddb3d6157da6577052ac6"
+  },
+  "program_attempts": 1,
+  "json_reruns": 0,
+  "mutation_runs": 0
+}

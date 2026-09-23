@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "description": "Non-authoritative premise-decision history. This file preserves superseded admission-era statements and dispositions solely for provenance. It is not a premise registry, is never read by chain-closure tooling, and supplies no physics content. The live supplied foundation is exactly the axioms and approved primitives in axiom_premise_nodes.json. Unresolved scientific work lives only in derivation_obligations.json.",
+  "genuine_admitted_input_count": 0,
+  "canonical_ids": [],
+  "derivation_targets": {},
+  "conventions": {
+    "hypercharge_identification_note": {
+      "label": "Y0",
+      "statement": "absolute hypercharge normalization (alpha=1/3); the retained structure fixes ratios, while the overall Y-scale is a Y <-> g' rescaling convention with no physical content by itself",
+      "class": "vacuous normalization convention",
+      "leverage": 18,
+      "basis": "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly (retained_bounded): anomaly fixes ratios not absolute normalization"
+    },
+    "g_bare_rigidity_theorem_note": {
+      "label": "g0",
+      "statement": "bare coupling g_bare = 1",
+      "class": "vacuous rescaling convention (g <-> beta gauge choice)",
+      "leverage": 8,
+      "basis": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10 (retained): g_bare is rescaling-invariant convention, not a number to derive"
+    }
+  },
+  "reclassified_primitives": {
+    "minimal_axioms_record": {
+      "label": "Record axiom",
+      "statement": "fixed locking of exactly one admissible local possibility when a record is present, one-record-per-site uniqueness, record permanence, record-only readability, content-determined readout, and unreadability of a site with no record; registered inside the explicitly approved minimal_axioms node, not as a historical admitted derivation target",
+      "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "prior_no_go_portfolio_context": [
+        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
+      ],
+      "boundary": "does not supply finite additivity, a named scalar collection functional I, I(empty)=0, any readout value for a site with no record, readout-context selection, decomposition, K/CPT structure, sector-generation rule, weighting, normalization, probability, occurrence rule, update law, measurement/decoherence dynamics, record-production dynamics, physical persistence dynamics, time metric, within-sector data, occupancy rule, P2/modulus, log-det, source/action, scale, local observability, or arbitrary observable identification"
+    },
+    "scale_reference_primitive": {
+      "label": "scale-reference primitive",
+      "statement": "the single dimensionful scale reference a^-1, accepted as a framework primitive in axiom_premise_nodes.json; units conversion only, not a Tier-A admitted derivation target and not a status-bounding dependency",
+      "source": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "prior_no_go_portfolio_context": [
+        "planck_finite_response_no_go_note_2026-04-24",
+        "planck_parent_source_hidden_character_no_go_note_2026-04-24",
+        "planck_boundary_orientation_incidence_no_go_note_2026-04-30"
+      ]
+    }
+  },
+  "retired_derivation_targets": {
+    "strong_cp_theta_zero_note": {
+      "label": "theta",
+      "statement": "minimum form (2026-06-11), with theta_bar = theta_gauge + arg det(M_q): (a) gauge side -- theta_gauge = 0 in the topological-sector weighting, residual localized to the multi-plaquette / large-gauge-winding account (within the supplied per-plaquette class the local cross-plane F Ftilde slot is derived-absent; RP, reality, positivity, CPT, parity-measure, and arrow-orientation are tracked in landed source notes as non-forcing/non-sourcing route surfaces); (b) mass side -- the discrete orientation arg det M in {0, pi} -> 0 on the K-real reading, localized onto the named determinant-readout bridge. The mass-side K-real structure is the same C_3 conjugate-symmetric object as AC_phi_lambda sub-admission (i). Also unsolved in the Standard Model.",
+      "class": "naturalness admission",
+      "leverage": 20,
+      "no_go_portfolio": [
+        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
+      ],
+      "minimum_decomposition": [
+        "gauge_side_winding_account",
+        "mass_side_orientation_determinant_readout_bridge"
+      ],
+      "sharpening_sources_status_set_by_audit_lane": [
+        "strong_cp_theta_bar_structured_admission_2026-06-04",
+        "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
+        "strong_cp_gauge_theta_not_forced_by_reality_positivity_or_cpt_bounded_note_2026-06-07",
+        "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
+        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+        "strong_cp_parity_measure_correction_orientation_gate_no_go_note_2026-06-08",
+        "arrow_cpt_orientation_do_not_source_cp_odd_action_coefficients_no_go_note_2026-06-08",
+        "strong_cp_gauge_theta_multiplaquette_ftf_is_admissible_not_clean_closeable_bounded_note_2026-06-07"
+      ],
+      "retirement": {
+        "date": "2026-07-11",
+        "mechanism": "gauge_side_retained_mass_side_conditional_on_two_independent_open_obligations",
+        "current_status": "The gauge-side disposition remains derived. The mass-side K-real reading is conditional on both the charged-lepton occupancy statistical grain and an independent quark-determinant cross-sector readout; closing either one does not close the other.",
+        "open_derivation_obligations": [
+          "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+          "theta_quark_determinant_cross_sector_readout_derivation_obligation"
+        ],
+        "owner_approval": "recorded in the PR #3511 thread (2026-07-05); review-loop must verify the approval comment exists before landing",
+        "discharge_basis_rows_all_retained_grade": {
+          "gauge_side_local": [
+            "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
+            "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
+            "theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11"
+          ],
+          "gauge_side_theta_value_any_emergent_sector_functional": [
+            "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04"
+          ],
+          "mass_side": [
+            "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
+            "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+            "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12"
+          ],
+          "supplied_context_premise_layer": [
+            "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+          ]
+        },
+        "gauge_side_theta_value_cross_confirmation": "explicit second seat, clean-room, confirmed 2026-07-05",
+        "retired_target_source_row": "strong_cp_theta_zero_note remains an ordinary bounded selected-action-surface source row whose current audit status is independent; the historical Tier-A slot supplies no authority",
+        "scope": "canonical imported Wilson + staggered-Wilson class; the mass-side K-real reading is conditional on both ac_orbit_occupancy_statistical_grain_derivation_obligation and theta_quark_determinant_cross_sector_readout_derivation_obligation. The running kappa/counting and G3/angle-readout programs can self-liquidate the AC obligations only; they do not supply or close the independent theta cross-sector bridge. Q-structure lanes (emergent-Q nonvacuous weighting, 4D-carrier model of the emergent OS0 surface, defect closure, W_anomaly_covariant_assembly, SU(3) abelianization) remain open physics outside the gauge-side disposition.",
+        "decision_artifact": "PR #4995 artifact path docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md (2026-07-05 updated verdict; decision artifact not shipped as a live source note in this registry PR)"
+      }
+    },
+    "staggered_dirac_realization_gate_note_2026-05-03": {
+      "label": "AC_phi_lambda",
+      "statement": "minimum form (2026-06-11): three named sub-admissions -- (i) the doublet reading/occupancy selection (one binary: sector-tied vs orbit/holomorphic count, r in {1, 1/2}; the custody K-reality and det_C/equal-power selectors are its two faces); (ii) the delta readout identification R-eta (density-read-as-angle; the magnitude 2/9 is retained-bounded fixed-locus arithmetic conditional on R-eta, not an admitted number); (iii) the abstract-sector to physical-species bridge. Bare e/mu/tau naming remains a vacuous convention, not a derivation target.",
+      "class": "discrete flavor input with labeling convention stripped",
+      "leverage": 41,
+      "no_go_portfolio": [
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24"
+      ],
+      "minimum_decomposition": [
+        "reading_occupancy_selection",
+        "delta_readout_identification_R_eta",
+        "species_bridge"
+      ],
+      "sharpening_sources_status_set_by_audit_lane": [
+        "koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08",
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+        "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "retirement": {
+        "date": "2026-07-11",
+        "mechanism": "historical_governance_retirement_withdrawn_obligations_reopened",
+        "owner_direction": "Only axioms and approved primitives may be supplied physics premises; the prior governance-only AC channel is withdrawn.",
+        "historical_owner_approval": "On 2026-07-05 the owner approved #4991's governance adoption of four Block49 residual candidates. That decision remains provenance only and no longer supplies a physics dependency.",
+        "adoption_source": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
+        "open_derivation_obligations": [
+          "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+          "ac_reta_hclass_hunit_readout_derivation_obligation"
+        ],
+        "boundary": "The historical record supplies no physics content. AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout are open until retained derivations close their exact obligation rows.",
+        "non_laundering": "No governance record, historical admission, or open obligation chain-satisfies a dependency. Source-side theorem/no-go packet statuses remain audit-lane-owned."
+      }
+    }
+  }
+}

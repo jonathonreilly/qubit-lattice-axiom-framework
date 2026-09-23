@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py\nper_element: 5 checks; five exact Haar Gram/magnetic and source-normalization/isometry predicates on the single supplied plaquette\nper_site: 0 checks; checked and not executed \u2014 neutral 3-by-3 spectral algebra is a representation block calculation, not a site-resolved measurement\nper_mode: 5 checks; two neutral character-matrix identities and three exact neutral/full-carrier ground predicates for this plaquette\nper_block: 12 checks; five accepted-norm/local-budget/finite-excess predicates, four radical-enclosure/local-bound predicates, and three scalar adverse predicates for this fixture; distant-volume arithmetic is not volume execution\nlattice_wide: 0 checks; checked and not executed \u2014 one plaquette and artificial distant-vacuum arithmetic do not execute a lattice-wide Hamiltonian or the analytic uniform bound\nTOTAL: 22\nseconds: 0.03783549997024238; rss_MiB: 21.96875\nsource_sha256: 65be3fa85929ca0cc3562e9cb51047304d2d4620fb49a01e50c018802b5f20b8\n",
+  "stderr": "",
+  "elapsed_sec": 0.0897989273071289,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/.in-progress/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt"
+}

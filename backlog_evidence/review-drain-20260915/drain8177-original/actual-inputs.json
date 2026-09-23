@@ -1,0 +1,42 @@
+[
+  {
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "head": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "snapshot": "/private/tmp/review-drain-20260915/drain8177-original/current-inputs/head/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+    },
+    "main": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "snapshot": "/private/tmp/review-drain-20260915/drain8177-original/current-inputs/main/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+    }
+  },
+  {
+    "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "head": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "bytes": 45923,
+      "snapshot": "/private/tmp/review-drain-20260915/drain8177-original/current-inputs/head/docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "blob": "ec3bb81397ea1b136c4040c69832ad1a1bc9ee76"
+    },
+    "main": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "bytes": 45923,
+      "snapshot": "/private/tmp/review-drain-20260915/drain8177-original/current-inputs/main/docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "blob": "ec3bb81397ea1b136c4040c69832ad1a1bc9ee76"
+    }
+  },
+  {
+    "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "head": null,
+    "main": {
+      "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e",
+      "bytes": 29586,
+      "snapshot": "/private/tmp/review-drain-20260915/drain8177-original/current-inputs/main/docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "blob": "2a98be2b259a5fde2db124f0b6bab0fd1cf566a8"
+    }
+  }
+]

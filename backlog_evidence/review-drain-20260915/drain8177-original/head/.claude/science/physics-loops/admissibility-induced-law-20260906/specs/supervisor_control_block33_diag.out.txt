@@ -1,0 +1,11 @@
+iterations 13945 rel diff 9.971594287946886e-14
+{'DP': '3.396e-08', 'DA': '1.68206e-08', 'DS': '1.00842e-09', 'UP': '3.27987', 'UA': '3.27987', 'FP': '5.04449e-08', 'FA': '2.49857e-08', 'FS': '1.49793e-09'}
+root R = 7.693454700131816e-08  eps1*R = 3.5139074874938056e-17
+delta=1/10000: super-solution False; violating ['DP', 'DA', 'FP', 'FA']
+delta=1/1000: super-solution False; violating ['DP', 'DA', 'FP', 'FA']
+delta=1/100: super-solution False; violating ['DP', 'DA', 'FP', 'FA']
+delta=1/20: super-solution False; violating ['DP', 'DA', 'FP', 'FA']
+delta=1/10: super-solution False; violating ['DP', 'DA', 'UP', 'UA']
+delta=1/4: super-solution False; violating ['DP', 'DA', 'UP', 'UA']
+delta=1/2: super-solution False; violating ['DP', 'DA', 'UP', 'UA']
+delta=1: super-solution False; violating ['DP', 'DA', 'UP', 'UA']

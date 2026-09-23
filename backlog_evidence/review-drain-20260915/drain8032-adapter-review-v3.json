@@ -1,0 +1,35 @@
+{
+  "reviewer_session": "/root/review_8032",
+  "verdict": "EXACT_BINDING_ONLY_ADAPTER_CONFIRMED",
+  "capture_authorized": true,
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-v3.py",
+    "sha256": "df1b538f1c0c3bae759dea26e371850f9f1284f4376ddb3d6157da6577052ac6"
+  },
+  "handoff": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-binding-v3.json",
+    "sha256": "5e7f65db1d13ccf6cae8679feb45b93f1dd7649c1ee884278f4fd894f75dc1e7"
+  },
+  "cold_activation": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-cold-activation-v2.json",
+    "sha256": "c346fd631222c85b5db47bdebe29b246915e07d954b12fe50c8c72775a0cb79b"
+  },
+  "source_tree": "d218c35f6ebdc84e6bb8ea8a8b2385ff9ed47ceb",
+  "frozen_base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+  "reviewed_current_main": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+  "exact_reverse_binding_replacement": true,
+  "actual_guard_only_check": "PASS",
+  "scope": "Only activation report path/hash and reviewed main binding changed; all accepted v2 executable logic is byte-identical after reverse literal replacement. Source/input and execution safeguards remain in force.",
+  "limits": {
+    "programs_serial": 2,
+    "attempts_per_program": 1,
+    "wall_seconds_per_program": 180,
+    "sampled_aggregate_rss_mib": 256,
+    "internal_rss_mib": 180,
+    "extra_json_runs": 0
+  },
+  "authorization": "Primary then companion, serial, once each; no extra JSON science runs. Conditional on exact bound identities, owner, markers and guards at execution.",
+  "findings": [],
+  "science_runs": 0,
+  "source_or_stage_mutations": 0
+}

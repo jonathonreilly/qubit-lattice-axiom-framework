@@ -1,0 +1,7 @@
+pauli kernel rank full True
+sense sum 0
+HH^T=8I True
+m1=248876/609875 m2=-239024/609875 chi>0 True pivots 45 all>0 True N>0 True
+matches author masses True
+HIT: confirmed - no nonzero 2x2 anticommutes with the three Paulis; eight senses sum to 0; Hadamard HH^T=8I; the 5x3x3 opposite-charge pair has m1=248876/609875, m2=-239024/609875, positive chi, 45 positive LDL pivots, N>0, walls ledger 0
+SUMMARY: confirmed PARTIAL: local M2(C) terms do not gap one species; staggered pairing and the exact zero-ledger static pair survive independent arithmetic

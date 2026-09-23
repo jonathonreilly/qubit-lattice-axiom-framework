@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-are-the-eight-species-all-kept-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j0404",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/are-the-eight-species-all-kept/referee_w-macbookpro90c72-j0404/check.py",
+ "seed": 99835,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6c2494fb",
+ "started_utc": "20260923T214355Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed PARTIAL: local M2(C) terms do not gap one species; staggered pairing and the exact zero-ledger static pair survive independent arithmetic"
+ },
+ "review": "Independent arithmetic: Pauli kernel trivial, senses sum to 0, HH^T=8I, and the 5x3x3 opposite-charge pair matches m1=248876/609875, m2=-239024/609875 with positive rates; PARTIAL stands",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:are-the-eight-species-all-kept:a2/; its files are probes/work/derive/are-the-eight-species-all-kept/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/are-the-eight-species-all-kept/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "84a994cd5de3bfbd540e6cc95dbf5d64409335f62d496e1a5d2765b7d10dd75c",
+ "stdout_tail": "pauli kernel rank full True\nsense sum 0\nHH^T=8I True\nm1=248876/609875 m2=-239024/609875 chi>0 True pivots 45 all>0 True N>0 True\nmatches author masses True\nHIT: confirmed - no nonzero 2x2 anticommutes with the three Paulis; eight senses sum to 0; Hadamard HH^T=8I; the 5x3x3 opposite-charge pair has m1=248876/609875, m2=-239024/609875, positive chi, 45 positive LDL pivots, N>0, walls ledger 0\nSUMMARY: confirmed PARTIAL: local M2(C) terms do not gap one species; staggered pairing and the exact zero-ledger static pair survive independent arithmetic\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0404",
+  "at_utc": "20260923T214405Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent: Pauli kernel trivial, senses sum 0, HH^T=8I, opposite-charge box masses 248876/609875 and -239024/609875 with 45 positive pivots",
+  "by": "w-macbookpro90c72-j0404",
+  "at_utc": "20260923T214405Z"
+ }
+}

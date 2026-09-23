@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "3dee7c038c60dd9aaddbcc186207f165367cc274",
+  "fetched_ref": "refs/review-loop/fetched/8030-09e75da13a8e40dcbcf3cc2e8fdf6134",
+  "metadata": {
+    "baseRefName": "codex/infinite-static-block39-20260907",
+    "headRefName": "codex/continuum-boundary-block40-20260907",
+    "headRefOid": "3dee7c038c60dd9aaddbcc186207f165367cc274",
+    "isDraft": true,
+    "number": 8030,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

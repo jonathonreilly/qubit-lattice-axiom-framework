@@ -1,0 +1,19 @@
+{
+  "pr": 8160,
+  "original_head": "3210315c2cddeb5b0a9e32c9b35e30c196eaa65a",
+  "branch": "physics-loop/toe-interacting-scale-20260916",
+  "landing": "16574d8f023c06a3ef86fe6d8993a257e0936c81",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/toe-interacting-scale-20260916",
+    "headRefOid": "3210315c2cddeb5b0a9e32c9b35e30c196eaa65a",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8160,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8160"
+  }
+}

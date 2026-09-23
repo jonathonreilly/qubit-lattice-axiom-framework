@@ -1,0 +1,71 @@
+[
+  {
+    "original": "notes/BLOCK02_UNIFORM_TEMPORAL_RESUMMATION_AND_CURL_RESPONSE.md",
+    "canonical": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "indented_formula_lines": 44,
+    "exact_formula_line_sequence_sha256": "8217b34ccd0daaeb1cad7565cd050f8aaf4676fb20608f61cb5efa67af7a7cd4",
+    "preserved": true
+  },
+  {
+    "original": "notes/BLOCK03_EXACT_OPEN_BOUNDARY_FERMION_MODEL_MATCH.md",
+    "canonical": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "indented_formula_lines": 27,
+    "exact_formula_line_sequence_sha256": "6444b9fd4d056f8fa67cdb33a87741cdbfbc5982f2e2ad6be02004dccccce77a",
+    "preserved": true
+  },
+  {
+    "original": "notes/BLOCK04_ACTUAL_GAUGE_MATTER_TRANSFER_AND_STATE_JOIN.md",
+    "canonical": "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "indented_formula_lines": 39,
+    "exact_formula_line_sequence_sha256": "07a038c5be5b550fa9ec2bafa71ff911b87fc2287d21017ebdeb460bc029df96",
+    "preserved": true
+  },
+  {
+    "original": "evidence/block01_temporal_resummation_check.py",
+    "canonical": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+    "all_original_function_ASTs_preserved": true,
+    "exception": "run final print(json.dumps(report)) wrapper replaced by _emit(the identical report expression)",
+    "original_assert_count": 15,
+    "new_assert_count": 15
+  },
+  {
+    "original": "evidence/block02_physical_curl_hessian_check.py",
+    "canonical": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+    "all_original_function_ASTs_preserved": true,
+    "exception": "run final print(json.dumps(report)) wrapper replaced by _emit(the identical report expression)",
+    "original_assert_count": 8,
+    "new_assert_count": 8
+  },
+  {
+    "original": "evidence/block03_open_boundary_hamiltonian_check.py",
+    "canonical": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+    "all_original_function_ASTs_preserved": true,
+    "exception": "run final print(json.dumps(report)) wrapper replaced by _emit(the identical report expression)",
+    "original_assert_count": 14,
+    "new_assert_count": 14
+  },
+  {
+    "original": "evidence/block04_dynamical_gauge_join_check.py",
+    "canonical": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+    "all_original_function_ASTs_preserved": true,
+    "exception": "run final print(json.dumps(report)) wrapper replaced by _emit(the identical report expression)",
+    "original_assert_count": 16,
+    "new_assert_count": 16
+  },
+  {
+    "original": "evidence/block05_integer_local_filling_check.py",
+    "canonical": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+    "all_original_function_ASTs_preserved": true,
+    "exception": "run final print(json.dumps(report)) wrapper replaced by _emit(the identical report expression)",
+    "original_assert_count": 11,
+    "new_assert_count": 11
+  },
+  {
+    "original": "evidence/block06_third_curl_variation_check.py",
+    "canonical": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+    "all_original_function_ASTs_preserved": true,
+    "exception": "run final print(json.dumps(report)) wrapper replaced by _emit(the identical report expression)",
+    "original_assert_count": 6,
+    "new_assert_count": 6
+  }
+]

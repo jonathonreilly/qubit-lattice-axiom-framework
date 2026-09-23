@@ -1,0 +1,45 @@
+--- prepared-v1/docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ prepared-v2/docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -3,7 +3,7 @@
+ claim_type: bounded_theorem
+ runner: scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py
+ claim_scope: "Supplied finite spatial Wilson model; exact open-boundary Fock amplitude and fixed-graph continuous-time match."
+-upstream_dependencies: []
++upstream_dependencies: ["temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16"]
+ ---
+ 
+ # Exact open-boundary determinant and its canonical fermion model
+@@ -24,6 +24,8 @@
+ This is a conditional normalization and boundary-condition join for the supplied Wilson operator. Wilson transfer matrices, dimensional reduction and exterior-power factorization are established machinery. The purpose is to identify exactly which fermionic boundary amplitude the physical curl estimate controls. No audit or compact phase is claimed.
+ 
+ Primary prior art: [Luescher, DESY76/54](https://bib-pubdb1.desy.de/record/396349/files/7611148.pdf?version=1) constructs positive Wilson fermion/gauge transfers and tracks field normalization. [Wenger, arXiv2302.07385](https://arxiv.org/html/2302.07385) explains determinant reduction and canonical minor factorization. [Buividovich-Hind, arXiv2606.20090v1](https://arxiv.org/html/2606.20090v1) gives the anisotropic Wilson-Dirac block transfer and its Hamiltonian expansion; its no-temporal-clover specialization is the same block mechanism used below. Neither generic determinant reduction nor this block mechanism is presented as newly discovered here. The open endpoint prefactor and its connection to the particular temporal-resummation bound are derived explicitly.
++
++Load-bearing model-definition and normalization parent: [TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md](TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md). The parent supplies the spatial Wilson operator and open temporal determinant normalization used here. This algebraic model match requires only m>0; the stronger m>3kappa hypothesis for the parent's uniform physical-curl estimates is not assumed as necessary for this result.
+ 
+ ## 1. Spatial blocks and positive recurrence transfer
+ 
+--- prepared-v1/scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py
++++ prepared-v2/scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py
+@@ -3,9 +3,9 @@
+ The general determinant reduction is prior art; this checks our exact conventions.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=['docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_INPUT_FILES=['docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
+ AUDIT_MEMORY_MB=768
+-EXPECTED_INPUT_SHA256={'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md': '53267149867d9bef81f3bf2778942e8d4a4874d60713f598d5fd00387a6a0ad6'}
++EXPECTED_INPUT_SHA256={'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md': '9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+--- prepared-v1/scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py
++++ prepared-v2/scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py
+@@ -8,7 +8,7 @@
+ AUDIT_TIMEOUT_SEC=180
+ AUDIT_INPUT_FILES=['docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md']
+ AUDIT_MEMORY_MB=768
+-EXPECTED_INPUT_SHA256={'docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md': '8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07', 'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md': '53267149867d9bef81f3bf2778942e8d4a4874d60713f598d5fd00387a6a0ad6', 'docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md': '1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21', 'docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md': '89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537'}
++EXPECTED_INPUT_SHA256={'docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md': '8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07', 'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md': '9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8', 'docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md': '1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21', 'docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md': '89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537'}
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np

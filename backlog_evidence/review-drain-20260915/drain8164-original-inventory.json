@@ -1,0 +1,1426 @@
+[
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/APPROACH_REGISTRY.md",
+    "mode": "100644",
+    "blob": "849a73067fd0d5031804f79768629fd5a419d512",
+    "status": "A",
+    "sha256": "9c860f6e2b0de207e550744ab032b279f1110d991dd0650f67510a79d1605784",
+    "bytes": 1289
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/ARTIFACT_PLAN.md",
+    "mode": "100644",
+    "blob": "bb4d2b7967fad9b6899e391ef7cf24f01e086339",
+    "status": "A",
+    "sha256": "e097b42782e46a6dc93fb153914f65a868490b8856e1d2aaf320ab9468b6a010",
+    "bytes": 459
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/ASSUMPTIONS_AND_IMPORTS.md",
+    "mode": "100644",
+    "blob": "b4633f397e36be87549702f5c2f3f636486eae8a",
+    "status": "A",
+    "sha256": "536dfb21efdc7ec67be386c094dbb262746563734ef93ad7bbc7c576de841abd",
+    "bytes": 3615
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/CLAIM_STATUS_CERTIFICATE.md",
+    "mode": "100644",
+    "blob": "2f6d00af260c04e7fe1839bba17a4a19d49b081a",
+    "status": "A",
+    "sha256": "6d831a271d1b99c8aa8bfda67992acb06a0b929002ca22054a4cb507068a9514",
+    "bytes": 2460
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/GOAL.md",
+    "mode": "100644",
+    "blob": "34d85f9c4bec48cf5a82717dff819f41eca93531",
+    "status": "A",
+    "sha256": "542c56b3ba4c2377f2a527bd23b176f396c670b6fac18c1e6ebc931bc45ead70",
+    "bytes": 907
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/HANDOFF.md",
+    "mode": "100644",
+    "blob": "f6893ce3d936863ab49934f9b2b8d848043908c7",
+    "status": "A",
+    "sha256": "4289bacc11cdd32e9b1e52e3f5d843903b6b61cef0be6bb8c659b9050c3d9a30",
+    "bytes": 9193
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/MANIFEST.sha256",
+    "mode": "100644",
+    "blob": "87d2b96364171bf49781f07e6b703c0b44cf7f17",
+    "status": "A",
+    "sha256": "bf9b9b4b6d41bc19b55539294512048aa5a549fcedc2bb9d8c26f32f48bda502",
+    "bytes": 21077
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/NO_GO_DISCIPLINE_CHECKLIST.md",
+    "mode": "100644",
+    "blob": "bc804feac8b9771d1f40e1d3d4d74896a4ceaa8d",
+    "status": "A",
+    "sha256": "4187b35fd93a1d4b990998ba36ad6e5edde9070bf4c41956ea071cca31441489",
+    "bytes": 9793
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/NO_GO_LEDGER.md",
+    "mode": "100644",
+    "blob": "ef30bfdb906accd9193e1b975ecb70db9ae9d503",
+    "status": "A",
+    "sha256": "f22b3bb11627509666e07248b72ef7c2373939a35058e33786f99d8ae67b6cef",
+    "bytes": 482
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/OPPORTUNITY_QUEUE.md",
+    "mode": "100644",
+    "blob": "d6cda91d3a23e057648bae5b6dd9fe3db940290d",
+    "status": "A",
+    "sha256": "d6b63e626bbf425173c7c77ac07f481b523ab22eed403dca2cd5662a44db4c91",
+    "bytes": 1452
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/READING_LEDGER.md",
+    "mode": "100644",
+    "blob": "8f7ede84c37db7bd84c484bb9d70af7556b9a10c",
+    "status": "A",
+    "sha256": "c135ab74cc668c54ef1563accab4ab8b2902294aaae3f59858554dea8b124318",
+    "bytes": 6454
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/README.md",
+    "mode": "100644",
+    "blob": "5b252a7df752358bc896739fc3f1c577c0d60266",
+    "status": "A",
+    "sha256": "124084bdf4c19af2fbad32dec8f2a98048deec0e0ae5a72bff9c2cab34bf1787",
+    "bytes": 3004
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/REVIEW_HISTORY.md",
+    "mode": "100644",
+    "blob": "293082c6e62292908b94f31911997223a375be12",
+    "status": "A",
+    "sha256": "eb55bd2f556b4f0b0b22754204b7afb7f13d3ed96279c036a954a2b0531b9c66",
+    "bytes": 5014
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/ROUTE_PORTFOLIO.md",
+    "mode": "100644",
+    "blob": "9eff319b4637786a83c8a2dc6960170063d94974",
+    "status": "A",
+    "sha256": "ebe1b658e9ecac0047686bd258415db70d79e6776151c8ddf33551f97d9f6d12",
+    "bytes": 508
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/STATE.yaml",
+    "mode": "100644",
+    "blob": "bfc51fceb2696d52823774dcbf4b5dc0fbcd0d90",
+    "status": "A",
+    "sha256": "c05b65097e65cdf3e819663aae824f2e19b4c5fc001baec01d4d2e80513353d7",
+    "bytes": 2325
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/TRACE_GATE.md",
+    "mode": "100644",
+    "blob": "1219249f0525e3a54fbe411aa7626b9ab2bb3698",
+    "status": "A",
+    "sha256": "678764cf35b5910575a96e1104089b6d34e1ecf50c98407be9171851268d3aaf",
+    "bytes": 1376
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK01_ANISOTROPIC_POISSON_ATTEMPT1.stderr.txt",
+    "mode": "100644",
+    "blob": "7b87f4f25ec753f58fcdc7a547deb222a018ad47",
+    "status": "A",
+    "sha256": "4afdf4885d5fc149e751caffe1b3a2d201587d6ba27732932069c2a8fdd96b3e",
+    "bytes": 1105
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK01_ANISOTROPIC_POISSON_ATTEMPT1.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK01_ANISOTROPIC_POISSON_ATTEMPT2.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK01_ANISOTROPIC_POISSON_ATTEMPT2.stdout.txt",
+    "mode": "100644",
+    "blob": "e9868f848d502d6ea5c9515929c0c90a0ad1b889",
+    "status": "A",
+    "sha256": "ad32f2395c74ff218bf9839b743900ce31832e3e462801446f415c78323024d0",
+    "bytes": 4485
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK01_VARIANCE_RESOLUTION_DIAGNOSTIC.json",
+    "mode": "100644",
+    "blob": "b7f08ef5599228e7c0eb4c305278ec20f5efd7cf",
+    "status": "A",
+    "sha256": "26598a21db3b3209baa2595d88430ab7ed9cb45cd00b4223cc37329545e22d4b",
+    "bytes": 1220
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK02_COUPLED_RESPONSE_ATTEMPT1.stderr.txt",
+    "mode": "100644",
+    "blob": "0277d075dc0b410cb093d6ee9e3faad19168a3dd",
+    "status": "A",
+    "sha256": "5b9a10a7fde6b0a987589e43fb112648abbe88f4e18008033ac3b71f7b3145e4",
+    "bytes": 1001
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK02_COUPLED_RESPONSE_ATTEMPT1.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK02_COUPLED_RESPONSE_ATTEMPT2.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK02_COUPLED_RESPONSE_ATTEMPT2.stdout.txt",
+    "mode": "100644",
+    "blob": "b532ee810368c336a8b81310ff2c50143c1e1661",
+    "status": "A",
+    "sha256": "d317c75bbd11e77cf501c2907f714bd2a40ab82cc762f30027d0692517ed40d5",
+    "bytes": 23165
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK02_FAILURE_AND_SCOPE.md",
+    "mode": "100644",
+    "blob": "64762a264669295afa2627f827b5f18d6f708e21",
+    "status": "A",
+    "sha256": "47609caa139aede1d76b17cad802d6117ad17d919d30a1c5e6e61aef4c30c4db",
+    "bytes": 1468
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK02_TRANSFER_ROUNDOFF_DIAGNOSTIC.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK02_TRANSFER_ROUNDOFF_DIAGNOSTIC.stdout.txt",
+    "mode": "100644",
+    "blob": "e5737efbffa136cff883c4e26b9e6a2bd9234665",
+    "status": "A",
+    "sha256": "2191648e42d03183691a7fcec2483efeb08418a8c58d9bdc64f17c939a4730ee",
+    "bytes": 2397
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK03_04_CHECKS_AND_LIMITS.md",
+    "mode": "100644",
+    "blob": "657c3ba34b71bf5e3d31b0d86d104e1b950a399d",
+    "status": "A",
+    "sha256": "e22692b661c69334ff00f36d9c034e86b6257bd99c25896928f85762b4dc1382",
+    "bytes": 4459
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK05_CHECKS_AND_LIMITS.md",
+    "mode": "100644",
+    "blob": "f8e0def22a1d97bf862f9f6503b97a01eef79d50",
+    "status": "A",
+    "sha256": "c8cd5b8eba5c135ad36e6381442373d8f635bf67f7e5a41a5a97f78fe38a7b8b",
+    "bytes": 2704
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK06_07_CHECKS_AND_LIMITS.md",
+    "mode": "100644",
+    "blob": "56a24e2534cc6e6c5145e702ff792c85ec77eeae",
+    "status": "A",
+    "sha256": "0e4f6a072f5d255a03316ae5e3aa3c427611235dc19501b71bb210898fa931d2",
+    "bytes": 5369
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/BLOCK08_CHECKS_AND_LIMITS.md",
+    "mode": "100644",
+    "blob": "8365a8c59e5192d836230eb5762534d879ab9640",
+    "status": "A",
+    "sha256": "236159f15dc5ac030309c65b5376752030c4eab051b663ee89c51690c43a628a",
+    "bytes": 3689
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/TIMEOUT_METADATA_CHANGES.json",
+    "mode": "100644",
+    "blob": "be750a14f49877ee3cda50264cd6893f9c7a09b9",
+    "status": "A",
+    "sha256": "d4b569ec2fc297ddf08761cbabdd9bcfc3f4c5b0b52a4669fa3db2548e24187f",
+    "bytes": 1142
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block01_anisotropic_conditional_and_poisson_check.ATTEMPT1.py",
+    "mode": "100644",
+    "blob": "bd82d342f869f51f3bd19f49198e42f16e6e6d76",
+    "status": "A",
+    "sha256": "37d77a415c820c22af78a3cb1e024d3429c35a608e6dab4ec320b43ddf76e4f4",
+    "bytes": 4318
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block01_anisotropic_conditional_and_poisson_check.py",
+    "mode": "100644",
+    "blob": "378d26c7bb33b7ed90bffc6acc69d524a7245df3",
+    "status": "A",
+    "sha256": "aea3ae5a0a70098f5da129a35572104f8d915cc523c95f761091f595c8fecc7b",
+    "bytes": 4328
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block02_coupled_jump_and_response_check.ATTEMPT1.py",
+    "mode": "100644",
+    "blob": "202cbc9df9848ac764398a7d74c70a470fb2a9d6",
+    "status": "A",
+    "sha256": "118a1dbd1db6311c8dc23090cf81fcb4df7b99844f84f6ca1b91994dbf686a70",
+    "bytes": 8299
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block02_coupled_jump_and_response_check.py",
+    "mode": "100644",
+    "blob": "087540d042631019b25290eb2d518dd1201d8136",
+    "status": "A",
+    "sha256": "5981a5204073001efa670d996adfb45be698275e5a6ae8914ba88755e70f280b",
+    "bytes": 8765
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block02_transfer_roundoff_diagnostic.py",
+    "mode": "100644",
+    "blob": "9405b9caed83addc5255ddad47d632dc2bcb7536",
+    "status": "A",
+    "sha256": "dcc88ccef864494120843509dd7cf1bdc7fcf5bce9f00d8e4dea3a8eb29a4e4c",
+    "bytes": 8375
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_covariance_roundoff_diagnostic.py",
+    "mode": "100644",
+    "blob": "8675dafbecb61a01a3621133b9997ef8d98edfab",
+    "status": "A",
+    "sha256": "0d6e96f5fe3d8bcdf0fef34559d4f66dc3e18afe239252276a8b4c9d43ad146b",
+    "bytes": 7846
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_covariance_roundoff_diagnostic.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_covariance_roundoff_diagnostic.stdout.txt",
+    "mode": "100644",
+    "blob": "3868788d7878069ee0ba6f8330d8c9bf4ddb6c54",
+    "status": "A",
+    "sha256": "4627506669ab08b4e83a1690ab8052baf454c822d5e0a6451914613fe29754ce",
+    "bytes": 3863
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.ATTEMPT1.py",
+    "mode": "100644",
+    "blob": "c5aa56021299a40ad9b6d5371a5d5490125d65fc",
+    "status": "A",
+    "sha256": "6120226859f1ea3e1a81c78a3561e990a355d31e4cb67ba30a34bc5001a07b7e",
+    "bytes": 7762
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.ATTEMPT1.stderr.txt",
+    "mode": "100644",
+    "blob": "2a62eb2119fe84117f467cc045749e5f726bee94",
+    "status": "A",
+    "sha256": "8ee22598cf8c33025793e37f4fdf542b9b3b6cf7633847efc87d62cd65809e24",
+    "bytes": 1027
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.ATTEMPT1.stdout.json",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.ATTEMPT2.py",
+    "mode": "100644",
+    "blob": "eb4f30fc6a663a6f1633ab908eb9ce725b9c5b88",
+    "status": "A",
+    "sha256": "81dfe534e218aecfa2f8ca215a3cd7b505c56a0eb1c6b513868db8c43ed4d130",
+    "bytes": 8647
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.ATTEMPT2.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.ATTEMPT2.stdout.json",
+    "mode": "100644",
+    "blob": "6cbec18085ee163e5dcea3b3eeeb5594343c264a",
+    "status": "A",
+    "sha256": "09148124b1eca31795904f975275478dcb508265f9961140d5ea8e28408bfe61",
+    "bytes": 10198
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.ATTEMPT3.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.ATTEMPT3.stdout.json",
+    "mode": "100644",
+    "blob": "70e33526716b476ef3762e9708a8c5877dc98717",
+    "status": "A",
+    "sha256": "4ec951a89df5a384654b9f3adb90688c30e564cfb55721fed8609cc54635e1be",
+    "bytes": 10198
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block03_phase_corrector_check.py",
+    "mode": "100644",
+    "blob": "e6feb88cce958e671b646f0a47b33e08e1cf5230",
+    "status": "A",
+    "sha256": "ed9a617e7b3ad75d7854b74d9381ad5f325f7cf10203ae2503a1c02cf30ac58c",
+    "bytes": 8681
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block04_local_heat_and_orthogonality_check.ATTEMPT1.py",
+    "mode": "100644",
+    "blob": "888b8ea4608bb3a9a4ec48228d84018fc8f186dd",
+    "status": "A",
+    "sha256": "8e8b1a59934af2e566b108b6c92b66be0ea0a007eca5aa28327fc09d245c39aa",
+    "bytes": 5949
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block04_local_heat_and_orthogonality_check.ATTEMPT1.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block04_local_heat_and_orthogonality_check.ATTEMPT1.stdout.json",
+    "mode": "100644",
+    "blob": "b4dcfea567abc9a30c3e2e5e5bf7f8a865f72b4d",
+    "status": "A",
+    "sha256": "0f11aa37a01888bae4c62bcfdb7d7a722e5e53b04bee400f2722670ca0406c10",
+    "bytes": 4054
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block04_local_heat_and_orthogonality_check.ATTEMPT2.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block04_local_heat_and_orthogonality_check.ATTEMPT2.stdout.json",
+    "mode": "100644",
+    "blob": "8a7b2a5dfcbc5a87412e72d44cfd633f65eb92eb",
+    "status": "A",
+    "sha256": "01bbfc8ef82a7144277df9f4daafd521c3f1c7a3b0e768dba950fd7d3df35cae",
+    "bytes": 4713
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block04_local_heat_and_orthogonality_check.py",
+    "mode": "100644",
+    "blob": "acea1c0741b4d6a943c26b9b061d6e4011603fe8",
+    "status": "A",
+    "sha256": "b44b81c44689f4833b7b2d8f9f854af2746eda96895052a6db3ff7833398e5b4",
+    "bytes": 7325
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block05_quantum_comparison_check.ATTEMPT1.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block05_quantum_comparison_check.ATTEMPT1.stdout.json",
+    "mode": "100644",
+    "blob": "4f6f95aedf5554c88107236d7ecc71547a654906",
+    "status": "A",
+    "sha256": "8e306028b55c53d131689097a1593b26ec8da994e9809bab45bccc19a034ee24",
+    "bytes": 4128
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block05_quantum_comparison_check.BEFORE_TIMEOUT_METADATA.py",
+    "mode": "100644",
+    "blob": "5cc4d8616545b66b2ee6d24dbdb89197700c66c5",
+    "status": "A",
+    "sha256": "1c65f11cb8e46352c69d23a68de57aa0f9a5679cadded97801d02649698299cb",
+    "bytes": 6453
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block05_quantum_comparison_check.FINAL.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block05_quantum_comparison_check.FINAL.stdout.json",
+    "mode": "100644",
+    "blob": "62e17eb3c408352e174895a4032eb5be83ad1c7f",
+    "status": "A",
+    "sha256": "425d7a7771e005ca397eba85f49935e006fa141906c203d49235563c6c133120",
+    "bytes": 4128
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block05_quantum_comparison_check.py",
+    "mode": "100644",
+    "blob": "bf92c38f432b9fc6f1353da93c2a4680c31dff58",
+    "status": "A",
+    "sha256": "4f574d2448f79a3bed93c884aa8d6ef3508f7100adcdbe7fd1d5284adf91043a",
+    "bytes": 6477
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block06_raw_curl_counterexample.ATTEMPT1.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block06_raw_curl_counterexample.ATTEMPT1.stdout.json",
+    "mode": "100644",
+    "blob": "042d428f49458a46d1fe9ec26d309513728f6911",
+    "status": "A",
+    "sha256": "120d8e41ac8b4d9c774adf9b14871b638a1c58d50a992314dc34b5b713f08c3f",
+    "bytes": 771
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block06_raw_curl_counterexample.BEFORE_TIMEOUT_METADATA.py",
+    "mode": "100644",
+    "blob": "b60789b6bcb14c9e739f61434dfeda89e90be0bd",
+    "status": "A",
+    "sha256": "165e47cec92cdc7228c8df483aebacce99e3c329817672fbe5fc04a7d44ed80c",
+    "bytes": 3216
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block06_raw_curl_counterexample.FINAL.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block06_raw_curl_counterexample.FINAL.stdout.json",
+    "mode": "100644",
+    "blob": "109a83901da34011d9f1609cd87e45d05571ca0f",
+    "status": "A",
+    "sha256": "a33a12cfaf0ae14563a8010199759514856720fbf3d5fd0b55c51a05d2ab07aa",
+    "bytes": 771
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block06_raw_curl_counterexample.py",
+    "mode": "100644",
+    "blob": "40b70fef7078f77264345ac915f8940c568e7e6c",
+    "status": "A",
+    "sha256": "823a8a7e989aba461b3522cbd09fc9ae6c30f37fabc57d85a666fced4997f115",
+    "bytes": 3240
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.ATTEMPT1.py",
+    "mode": "100644",
+    "blob": "90ae2074f5aeac7ffc55b140aca867d0c1bf0e2c",
+    "status": "A",
+    "sha256": "99744cc5c25f6462075d123021c8861561b2639bd07205798cbbf74219d75020",
+    "bytes": 9203
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.ATTEMPT1.stderr.txt",
+    "mode": "100644",
+    "blob": "fca602a591133ca07ce248361d9539e772451f8f",
+    "status": "A",
+    "sha256": "c1026ecb81df6a4146e3ba8b6ac754d896fc213c7259a4f73fd496dcfd25a98c",
+    "bytes": 1020
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.ATTEMPT1.stdout.json",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.ATTEMPT2.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.ATTEMPT2.stdout.json",
+    "mode": "100644",
+    "blob": "97c4d2a863f87117026cd4d62fb7854b26aaa581",
+    "status": "A",
+    "sha256": "250be9defdc6e986e8ef9f40e811584e2a52fe03b7f4a272882300aeab6f2106",
+    "bytes": 17679
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.BEFORE_TIMEOUT_METADATA.py",
+    "mode": "100644",
+    "blob": "a1448ed7bef8eadafb2dcaf5d4ac1dd6a823c343",
+    "status": "A",
+    "sha256": "771a38fcb8977d0b6d6743341cc6ea9949ff18b571a7728a95b9ca4e731787d0",
+    "bytes": 9444
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.FINAL.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.FINAL.stdout.json",
+    "mode": "100644",
+    "blob": "37e9ee7eabcb03c3a57275a2c2ee0a8111f54fd0",
+    "status": "A",
+    "sha256": "b9823a5ab4ed23f2912283e9ea28236152ebc2066b414ca81180e7e0a11eb029",
+    "bytes": 17680
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.py",
+    "mode": "100644",
+    "blob": "3ad71401ba63b69f6b83ea57b22e19b5fdcce30b",
+    "status": "A",
+    "sha256": "f11c894ca38aac8de32d4b05c5a7998354ac0286f3f9d629a3b2aca7984f512e",
+    "bytes": 9485
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_radial_resolution_diagnostic.py",
+    "mode": "100644",
+    "blob": "d775ae27396fa3d66ce9cd6a8c7e6ce4eb147f05",
+    "status": "A",
+    "sha256": "60a278fc6022ed312a177c3db736b811a2fb30548982bdc843b52c9f35f777e6",
+    "bytes": 1128
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_radial_resolution_diagnostic.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_radial_resolution_diagnostic.stdout.json",
+    "mode": "100644",
+    "blob": "50d22498e7ab1479bf8ed3c6f74a3d3b5788b4bd",
+    "status": "A",
+    "sha256": "4a90950c67f2f6d62e4150f6baa8c9d0090baca60af71904f9301ace8275c9ef",
+    "bytes": 9765
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.ATTEMPT1.py",
+    "mode": "100644",
+    "blob": "b705db152216d8ec95628aecc3c1c549906d9f8b",
+    "status": "A",
+    "sha256": "48f456f21c11558be67689d4e6f25979036f7b4a843d06b6651bac352d15e25f",
+    "bytes": 9761
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.ATTEMPT1.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.ATTEMPT1.stdout.json",
+    "mode": "100644",
+    "blob": "fd52e055ed4f873c7b7970654435ca7e0dd1e4c3",
+    "status": "A",
+    "sha256": "5f558558733c4023772f56b66df3b697b45fbb49a66477780e5b33ff440b9de0",
+    "bytes": 9449
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.ATTEMPT2.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.ATTEMPT2.stdout.json",
+    "mode": "100644",
+    "blob": "e56a410c8ff4dfb2b4a85b0ecf9276ca18f131e2",
+    "status": "A",
+    "sha256": "d99e95fc9bdff684d7c7e2dfae7f9ca928209085f56e33e18fb7ef0accca1e4c",
+    "bytes": 9448
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.BEFORE_TIMEOUT_METADATA.py",
+    "mode": "100644",
+    "blob": "5e2044fbcc661698358a952e9a04c1198891bcd1",
+    "status": "A",
+    "sha256": "9cefefd665591e4c2961f42aef1dbd3503bdd476715e8405291e77ec8be02d2f",
+    "bytes": 9937
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.FINAL.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.FINAL.stdout.json",
+    "mode": "100644",
+    "blob": "1138e5da5be267748a3f91365370b3fc301719bc",
+    "status": "A",
+    "sha256": "1ebf0037f520683098dec83023886bc41f4d708c27ff3b24ba53f91a4c7e00a0",
+    "bytes": 9449
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block08_bridge_action_check.py",
+    "mode": "100644",
+    "blob": "15c9523876104806eb69fe2374efe1b9c11ab28a",
+    "status": "A",
+    "sha256": "ed55f86a73921f15240fc21ef3342e0a8d37e7f32250ecfdd893c8ceac641908",
+    "bytes": 9961
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/challenge_formula_faults.ATTEMPT1.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/challenge_formula_faults.ATTEMPT1.stdout.json",
+    "mode": "100644",
+    "blob": "0bfbacc12232ba60b49f68e07e69f5229427aa78",
+    "status": "A",
+    "sha256": "8c9f08a8c260428db1d8361823060b889bee1c2a45e4325f4eabc013dc3c0833",
+    "bytes": 15090
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/challenge_formula_faults.py",
+    "mode": "100644",
+    "blob": "694ec8f91f3550c12161685fc8956066020555f8",
+    "status": "A",
+    "sha256": "712e2c7befe25a81a1264db9119da9d8382cc284ed8df7a3ac12ee2463abdd29",
+    "bytes": 6428
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/anisotropic_wrong_dual_type.py",
+    "mode": "100644",
+    "blob": "5ee5a360bedbfe7402c10c9cc7cedd90f2ea8137",
+    "status": "A",
+    "sha256": "11b0370100a41468d7df127eadf2411bf205519e8f538c19043039a6f714d505",
+    "bytes": 4328
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/anisotropic_wrong_dual_type.stderr.txt",
+    "mode": "100644",
+    "blob": "822b4b8ea4793433c6a773ddb66f246a4d529788",
+    "status": "A",
+    "sha256": "626525b396bf19a255e1b6f1eb4cf77d59254652de83e35f0e30a1baac4ff884",
+    "bytes": 893
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/anisotropic_wrong_dual_type.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/bridge_wrong_covariance_sign.py",
+    "mode": "100644",
+    "blob": "2dc0d7bb4bc4a274ecaac3aa42009f8becf14655",
+    "status": "A",
+    "sha256": "387fd83d34d114a6623f42c625e438d0a5a8c0df104ef312c15ef123ce796eb0",
+    "bytes": 9961
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/bridge_wrong_covariance_sign.stderr.txt",
+    "mode": "100644",
+    "blob": "372cc9471a7d8b5ec923c0c1d05f3c4c667c35e8",
+    "status": "A",
+    "sha256": "a72f123bcc50df9e4df8543f768f95eaff95657747c22b1a0a9ca467a6ecdfd2",
+    "bytes": 886
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/bridge_wrong_covariance_sign.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/bridge_wrong_kinetic_metric.py",
+    "mode": "100644",
+    "blob": "25955dfd5eabc104b24e2ed7e93deeec8f911f2e",
+    "status": "A",
+    "sha256": "d4cf8fcd4455d95d4f1a459438d8d1da5c40f8a197f215256715c969b8149a6f",
+    "bytes": 9957
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/bridge_wrong_kinetic_metric.stderr.txt",
+    "mode": "100644",
+    "blob": "a3bd653bc44a2fbad1b39166d5f805880654df09",
+    "status": "A",
+    "sha256": "b73141cad2c8441acbddc06b80e6e5163754857e483b81d0519c3b47fe0061b0",
+    "bytes": 845
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/bridge_wrong_kinetic_metric.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/character_missing_pair_factor.py",
+    "mode": "100644",
+    "blob": "674550fd2cd8b310fc96347618f69ef263399973",
+    "status": "A",
+    "sha256": "7a1b6f49c28159f3121aa1014b255ca118d6893e3d3e18c7e1514a02b6eea23b",
+    "bytes": 8679
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/character_missing_pair_factor.stderr.txt",
+    "mode": "100644",
+    "blob": "607a6374e30742299763e57dd81424ae4234a4c8",
+    "status": "A",
+    "sha256": "1a12327f0f664e75c81b246eddb66efe700b8532ac60fca62defa53afb8a408a",
+    "bytes": 835
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/character_missing_pair_factor.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/circle_wrong_convolution_power.py",
+    "mode": "100644",
+    "blob": "785e925078d4caf34b2e33a77dc84f9333962918",
+    "status": "A",
+    "sha256": "8486e970f64d86c4de7b79bc277159fedce6ec3e8ba11d79fd5191e43fa8fb59",
+    "bytes": 9489
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/circle_wrong_convolution_power.stderr.txt",
+    "mode": "100644",
+    "blob": "5e17294684c06bfc57faa9827fc3b6929c5ffcdc",
+    "status": "A",
+    "sha256": "8478c4551b5c23433afc7cea532026ae4c33539c1393b678386fd6c74b492691",
+    "bytes": 840
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/circle_wrong_convolution_power.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/conditional_missing_half.py",
+    "mode": "100644",
+    "blob": "3c11abcf152aef484bd0b4a560f62c1b13ce4d33",
+    "status": "A",
+    "sha256": "946f6e3a7e826869678e5f844fdd2c1368508fceb3d87fdbd33315af19f18e6b",
+    "bytes": 4324
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/conditional_missing_half.stderr.txt",
+    "mode": "100644",
+    "blob": "766a45b35063faf4f6aa4251f97cfb73031f862c",
+    "status": "A",
+    "sha256": "0587bc50bdd74d03fc724978692371c53b0761df8adde5fa66d8a9d60e2188b9",
+    "bytes": 846
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/conditional_missing_half.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/cover_trace_drops_parity.py",
+    "mode": "100644",
+    "blob": "b371e7e633f0a7772cb501d8ce48d9c7a6139bd4",
+    "status": "A",
+    "sha256": "a701c9050fac1abf1d72ecc5b7d9b1d6f9cfd769afd045acbb2c605859d4ccd5",
+    "bytes": 6459
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/cover_trace_drops_parity.stderr.txt",
+    "mode": "100644",
+    "blob": "4bf8d1aeeb6ca75d62cb303c06d296a1af71dfc6",
+    "status": "A",
+    "sha256": "9c26817d52b990bc383431c36e01acc7fa471a2ec24de20032e99455e18c87cd",
+    "bytes": 862
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/cover_trace_drops_parity.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/cube_linearizes_cosine.py",
+    "mode": "100644",
+    "blob": "bea5ad3edf49cdfa042a7a67d018bf6cb1472cd6",
+    "status": "A",
+    "sha256": "408b4a401ba2a72287496430c4faccae2fe5c6b29e119c835db18cb5a76ad5d1",
+    "bytes": 8669
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/cube_linearizes_cosine.stderr.txt",
+    "mode": "100644",
+    "blob": "e0e2da4fadb1ed29e6b715193ed7ad608265c6fa",
+    "status": "A",
+    "sha256": "ee0b3671962ce47b8abd4895688dd98529fbbd76d0427862d911c2f0de473e53",
+    "bytes": 802
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/cube_linearizes_cosine.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/cusp_wrong_laplace_order.py",
+    "mode": "100644",
+    "blob": "0549f0fae2b6a50fd2c533e936156eaad82d0528",
+    "status": "A",
+    "sha256": "03276058180f0a4c76bcd105db41f7ee691f86e20db0d8dc88beea97fa188997",
+    "bytes": 9481
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/cusp_wrong_laplace_order.stderr.txt",
+    "mode": "100644",
+    "blob": "16acd899495487562f4ea1e2b600d717a23da72f",
+    "status": "A",
+    "sha256": "6555737ebfc6a0157b65315559b62ab7a399df6b14c61964998992d6e317a614",
+    "bytes": 835
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/cusp_wrong_laplace_order.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/haar_wrong_pair_normalization.py",
+    "mode": "100644",
+    "blob": "70da82e523b27f5f89cd5fdfafa50cbc307e7278",
+    "status": "A",
+    "sha256": "cf2bffae8731abfc32e9fefefe701e997c8b7988bc09389550fc6a020e70645c",
+    "bytes": 7323
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/haar_wrong_pair_normalization.stderr.txt",
+    "mode": "100644",
+    "blob": "a091797554c0f20fb810319b20ee53eacaacdf80",
+    "status": "A",
+    "sha256": "d58ce2365ef78ce69ad0965d519a9222f0cb425a80cc60598142f05f6481ad17",
+    "bytes": 908
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/haar_wrong_pair_normalization.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/kernel_drops_lower_weight.py",
+    "mode": "100644",
+    "blob": "49b31d9b60a5919e97c41d1ebcb3edaf8a77b297",
+    "status": "A",
+    "sha256": "2a04a9c94b532a1686f6a8f96db87663a35c26d70a45da797e677ff54b21c475",
+    "bytes": 7304
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/kernel_drops_lower_weight.stderr.txt",
+    "mode": "100644",
+    "blob": "a35b484ef73219a8b3c08833a997c81a98e80cfd",
+    "status": "A",
+    "sha256": "535b76e6fece523c246f519ad788498100e267ff14579d6c05f6ec3a700cb8f2",
+    "bytes": 887
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/kernel_drops_lower_weight.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/mixture_inverted_partition_tilt.py",
+    "mode": "100644",
+    "blob": "2fdfdcbdd876c75fcbfbf32f3959d2cd98741b10",
+    "status": "A",
+    "sha256": "bb6f7be6cb8841b9c6be0e1ba7c6e03b1cf6497cdc7326bbcff21e322cf0895b",
+    "bytes": 9493
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/mixture_inverted_partition_tilt.stderr.txt",
+    "mode": "100644",
+    "blob": "1448330cdfb4ff040b31183323963bf247d97e5a",
+    "status": "A",
+    "sha256": "0c83e02a4e4ce11ce9388532c1f0d0bba99cffe27fe7754a56454abc0471c4c2",
+    "bytes": 861
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/mixture_inverted_partition_tilt.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/offset_wrong_response_sign.py",
+    "mode": "100644",
+    "blob": "97d518d58fd5b4bb829a7fc2344504027700aa56",
+    "status": "A",
+    "sha256": "99cf480b3d456a92d7c59cb89c3a47d68eed34fa76633ead348f8aa908a12b9c",
+    "bytes": 8765
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/offset_wrong_response_sign.stderr.txt",
+    "mode": "100644",
+    "blob": "bc4661992c39d1f0d4a58b0ea6c11b6e19a655d8",
+    "status": "A",
+    "sha256": "76b5196bf8b90d4aa5f0def8adedad9bb2682c765525e98c8694c7a535385abc",
+    "bytes": 845
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/offset_wrong_response_sign.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/phase_wrong_harmonic_mean.py",
+    "mode": "100644",
+    "blob": "239ca4f3be005bee8d97974a584f5da821ae66a3",
+    "status": "A",
+    "sha256": "3a753003742f15d9275e3cffbb49d42e10aef7dffe4da82ade60a997f8c5a916",
+    "bytes": 8677
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/phase_wrong_harmonic_mean.stderr.txt",
+    "mode": "100644",
+    "blob": "4f58a12b17ff553bd2bfff1ac70d48a0af03f957",
+    "status": "A",
+    "sha256": "532f0c328ab9ef9423b2dff239c9cb736883c648fd8d9f85fc21e95ed35f52d5",
+    "bytes": 871
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/phase_wrong_harmonic_mean.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/poisson_wrong_rate.py",
+    "mode": "100644",
+    "blob": "3f8aa54c3b728dda2667cc48ea4937864a27259e",
+    "status": "A",
+    "sha256": "2f20da9b6f414505bc0afcfc86ba9e8a56621a0c77e85643b5b2e8ed2026f236",
+    "bytes": 4330
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/poisson_wrong_rate.stderr.txt",
+    "mode": "100644",
+    "blob": "31db4a8eb1b282d76e3414172a806ce17b34c752",
+    "status": "A",
+    "sha256": "d8c9037e4c495f2fcc882ccd79fab77eb03abdaa989a79341bbe95ad6ee3de85",
+    "bytes": 807
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/poisson_wrong_rate.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/principal_charge_uses_raw_curl.py",
+    "mode": "100644",
+    "blob": "14003ecb1b16eb1250eede840bfd5cf0fdf12c99",
+    "status": "A",
+    "sha256": "b182bb9d2b3b9cb2c164a44c69b453c963d43a6ad0700d5044ec59c0dc5f7be5",
+    "bytes": 7295
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/principal_charge_uses_raw_curl.stderr.txt",
+    "mode": "100644",
+    "blob": "079735f33a809fedf3e6641285994fa063d2d9cb",
+    "status": "A",
+    "sha256": "9a9b9b2ad0809f98af2700c0fc1dea30eb12ab4d659bd048975a37b6f39364c0",
+    "bytes": 862
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/principal_charge_uses_raw_curl.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/quantum_derivative_missing_two.py",
+    "mode": "100644",
+    "blob": "d15222f0e8aa82520cef3f6f87234906acb146a9",
+    "status": "A",
+    "sha256": "e0ee6642ff470de4b0cc921280af5bb76b4d66b8563ffdf11dca0072aa1a95e8",
+    "bytes": 6473
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/quantum_derivative_missing_two.stderr.txt",
+    "mode": "100644",
+    "blob": "5b8427d5fd92156b11d8d045d576792da89831de",
+    "status": "A",
+    "sha256": "1aefb1f896211e9acb1811574b6613b40e9025aec54aa1a21ca211670ac0e4c7",
+    "bytes": 822
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/quantum_derivative_missing_two.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/quantum_electric_wrong_sign.py",
+    "mode": "100644",
+    "blob": "f41b48397a9429b6bb59516a382d5271a2e9e5cc",
+    "status": "A",
+    "sha256": "871159203f9c219530bcb17940c1725df7ff0dac50a7aed42eb5eb79d4b80a9e",
+    "bytes": 6478
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/quantum_electric_wrong_sign.stderr.txt",
+    "mode": "100644",
+    "blob": "85ba1edf23103dc1ef0aaa50291ce3fdf582efed",
+    "status": "A",
+    "sha256": "8f44c05fd9f82f01378ca53a1b608bf204018168614b9f9adcd6516b2f767a00",
+    "bytes": 845
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/quantum_electric_wrong_sign.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/radial_killing_missing_half.py",
+    "mode": "100644",
+    "blob": "7058ea894e3986cd3428cf17dc0d2bed576e0384",
+    "status": "A",
+    "sha256": "6b587a1177558b5f7659224214ada9d9ae3edd0bb4f0ccc72668728203eeedc0",
+    "bytes": 9481
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/radial_killing_missing_half.stderr.txt",
+    "mode": "100644",
+    "blob": "49b61bde17da4c3714cf690bdf6a4972e8328647",
+    "status": "A",
+    "sha256": "ee9fa464cd2f6efb25a39efe0fd843284663c894e54dcafe53b8fadd48a8bf1e",
+    "bytes": 993
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/radial_killing_missing_half.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/raw_curl_replaced_by_principal.py",
+    "mode": "100644",
+    "blob": "db4870a2fa792641999484b505cb7b16dbae9083",
+    "status": "A",
+    "sha256": "083ee6e7c124e46951962da4d84c48719d5739502ac8dd63eeb08464d6d9808e",
+    "bytes": 3248
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/raw_curl_replaced_by_principal.stderr.txt",
+    "mode": "100644",
+    "blob": "2d150f2eaa0c5470e7f57358df27718c57fd9137",
+    "status": "A",
+    "sha256": "afddc8f91bd2fa18986eb821642c6d686d3d4a652f7641b8463afb8f52bfae8a",
+    "bytes": 873
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/raw_curl_replaced_by_principal.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/sum_rule_missing_half.py",
+    "mode": "100644",
+    "blob": "0ac0fc5783e1f6c8ab78e81576f7b65c7eaa7225",
+    "status": "A",
+    "sha256": "7ad2fab20202a946038b747b4bf85a8417e5fb3f755802ea45927d869f195a01",
+    "bytes": 8763
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/sum_rule_missing_half.stderr.txt",
+    "mode": "100644",
+    "blob": "6f8ec345fa2b82490f276c7c99a51f8ac5a6b176",
+    "status": "A",
+    "sha256": "94c39fa6f1f0240f876bc3dfb7c18352a4b2e66dfeecbe3ac3ef5474db0c870e",
+    "bytes": 834
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/sum_rule_missing_half.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/tail_wrong_factorial_power.py",
+    "mode": "100644",
+    "blob": "bec11bd4ab38ed535b101ee8c8882136d8a34881",
+    "status": "A",
+    "sha256": "3f87aff095f7886e6a5ef09a45e5bef2dd55126356debf9c2e389b61adcc41ac",
+    "bytes": 8763
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/tail_wrong_factorial_power.stderr.txt",
+    "mode": "100644",
+    "blob": "d9ad75917ee08076aa701999b7ac1e2bb9327da9",
+    "status": "A",
+    "sha256": "1a9fcd0958a006bbc9ce541e2771fc4187b5da2ed9e8da64fb7e686750d2f1aa",
+    "bytes": 830
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/tail_wrong_factorial_power.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/transfer_missing_endpoints.py",
+    "mode": "100644",
+    "blob": "edee329b1835d81f35d1f444b0364fd30c8ae4ad",
+    "status": "A",
+    "sha256": "a46619b8dbfc1e7f9643a4135311211b9cc169a9aafb20a987cb0d731e28f008",
+    "bytes": 8769
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/transfer_missing_endpoints.stderr.txt",
+    "mode": "100644",
+    "blob": "eeef220fc10df21b7685673ffa48a173605f158d",
+    "status": "A",
+    "sha256": "bfd6602652e64ef0800d792b22ca1722037f089452da9e2425b3180814946ec5",
+    "bytes": 834
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/transfer_missing_endpoints.stdout.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK01_WORKING_ANISOTROPIC_SELF_ENERGY_AND_TIME_BLOCKING.md",
+    "mode": "100644",
+    "blob": "aedb7cedf6ce82f8d08c81d4ac7f7c743ef02cce",
+    "status": "A",
+    "sha256": "ecbf571b72e45df3dce1eb18686458217bbadcdd0dedf2c3dc19b26d179ba194",
+    "bytes": 12132
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK02_ELECTRIC_RESPONSE_AND_GAUSSIAN_REFERENCE_TESTS.md",
+    "mode": "100644",
+    "blob": "fa5d36e7160e4009cc8bff125d77865a05474fde",
+    "status": "A",
+    "sha256": "1bbb39bbc395e9351468ef31b463fb60e2eadf43ec2eff309e7701ddfd329189",
+    "bytes": 8917
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK03_WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_TESTS.md",
+    "mode": "100644",
+    "blob": "be8ea954f3de7cd647ca767c27188994977e91e1",
+    "status": "A",
+    "sha256": "336a3c2f4414878d568e41ad7778f35b6f87843e7cb37bf6495cf5ef1330fde1",
+    "bytes": 8117
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK04_LOCAL_DENSITY_AND_FINITE_LOOP_TEST_FAMILY_BOUND.md",
+    "mode": "100644",
+    "blob": "324134fc3236bcf53c90af9299ea8adbd2d3533c",
+    "status": "A",
+    "sha256": "6a9179999b25ef05834fd11b0edaa0540a208896e7d0ff3c9f7775a56c94f17f",
+    "bytes": 10304
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK05_GROUND_STATE_CORRELATION_COMPARISON.md",
+    "mode": "100644",
+    "blob": "9da58be520b5109e02cf8c4e0629efef5d6d279c",
+    "status": "A",
+    "sha256": "b85bb8a0f72699b4fdb781f377bc9eea17e1a3cea989b18efadbd04ef26c15b9",
+    "bytes": 9847
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK06_COMPACT_STABILITY_COMPARISON_READING.md",
+    "mode": "100644",
+    "blob": "5786591512e264255e9467c5dac5d5708eaaf719",
+    "status": "A",
+    "sha256": "dcd99bc6c1ae06f97a737a01e5bfc8ce92d14b9e43f7b2f194ee5f9959e7e3fc",
+    "bytes": 5253
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK07_POSITIVE_WILSON_MIXTURE_AND_WEAK_REGION_COMPARISON.md",
+    "mode": "100644",
+    "blob": "bb26b50aaaffd9b268272cf76fe7e98e49f87b29",
+    "status": "A",
+    "sha256": "b08202f40fa55605ebf170554d9fb3672e223a39471d74ee1bb48ba77e138d9b",
+    "bytes": 13208
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/notes/BLOCK08_SHORT_TIME_BRIDGE_AND_ENDPOINT_ACTION.md",
+    "mode": "100644",
+    "blob": "22a1955b6bfe9ad41d3042079bd61d051170930f",
+    "status": "A",
+    "sha256": "28e74ee6f8e6d31b59aa3d3a302a42d98656c2f2c9193d293ea0721e0d922e69",
+    "bytes": 10877
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/review/FOCUSED_VERIFICATION.json",
+    "mode": "100644",
+    "blob": "af35a2bb4786b97ef5ed6b54e3493d5e795eb197",
+    "status": "A",
+    "sha256": "11dae7028aed8f4334b38d46d6f157992f83136e51cce591abd88a60053f7622",
+    "bytes": 8567
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/review/NUMERICAL_HISTORY.md",
+    "mode": "100644",
+    "blob": "129a1033a1068385d26c22a57197bcdd61409cb6",
+    "status": "A",
+    "sha256": "c1db9ad564e7a80da4e42f22a571dea166d0be473f147ff64f95550e0c8e148a",
+    "bytes": 3141
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/review/PERSONAL_PROOF_REVIEW.md",
+    "mode": "100644",
+    "blob": "0efc25148ff58bb1f61cd8f430cd1c93fd7ffa9a",
+    "status": "A",
+    "sha256": "bcd75be328417ac99f8ba7b3806fd36a89585f3a8afd7104b216113af2664989",
+    "bytes": 4768
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/review/VOCAB_FIX.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/review/VOCAB_FIX.stdout.txt",
+    "mode": "100644",
+    "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+    "status": "A",
+    "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+    "bytes": 81
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/review/VOCAB_REPORT.stderr.txt",
+    "mode": "100644",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "status": "A",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/review/VOCAB_REPORT.stdout.txt",
+    "mode": "100644",
+    "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+    "status": "A",
+    "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+    "bytes": 81
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/review/focused_verify.ATTEMPT1.py",
+    "mode": "100644",
+    "blob": "b892dd4280ef11536d2cace08742c09f0da8898c",
+    "status": "A",
+    "sha256": "98bcbf07aa451d5b932a70ac91ad7513902a6d8476545753696adf4516399e32",
+    "bytes": 5228
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/review/focused_verify.py",
+    "mode": "100644",
+    "blob": "52668eab7a93eb6cb077505ac37d90d84453d770",
+    "status": "A",
+    "sha256": "745e8b6c88d65f9e73c4045309e497b0fee3264ab4a799faea63f2ef812fe7e8",
+    "bytes": 5492
+  }
+]

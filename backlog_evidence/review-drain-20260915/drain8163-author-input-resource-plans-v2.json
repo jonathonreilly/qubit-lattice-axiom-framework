@@ -1,0 +1,160 @@
+[
+  {
+    "runner": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+    "owner": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "ordered_inputs": [
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      }
+    ],
+    "timeout_sec": 180,
+    "proposed_external_process_tree_limit_bytes": 805306368,
+    "memory_cap_status": "proposal for coordinator cold-freeze; not execution authorization",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/temporal_wilson_resummation_check_2026_09_16.json",
+    "completed_family_total": 1,
+    "scope": [
+      "finite Wilson matrices, temporal-run inverses and rectangle traces",
+      "two fixed free spatial shapes and open temporal boundaries",
+      "Clifford sandwich and gauge conjugation controls; no physical spectrum",
+      "closed-time sums and leading rectangle continuum diagnostic",
+      "finite diagnostics only; general uniform bounds use the supplied-model proof"
+    ]
+  },
+  {
+    "runner": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+    "owner": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "ordered_inputs": [
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      }
+    ],
+    "timeout_sec": 180,
+    "proposed_external_process_tree_limit_bytes": 805306368,
+    "memory_cap_status": "proposal for coordinator cold-freeze; not execution authorization",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/temporal_wilson_physical_curl_hessian_check_2026_09_16.json",
+    "completed_family_total": 1,
+    "scope": [
+      "analytic finite-matrix Hessians and determinant differences",
+      "fixed three-slice spatial box, with shrinking duration as delta decreases",
+      "gauge null directions and physical-metric quotient spectrum",
+      "three time spacings and five heavy-mass bound evaluations",
+      "no all-direction empirical or infinite-volume state test"
+    ]
+  },
+  {
+    "runner": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+    "owner": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "ordered_inputs": [
+      {
+        "path": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8"
+      },
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      }
+    ],
+    "timeout_sec": 180,
+    "proposed_external_process_tree_limit_bytes": 805306368,
+    "memory_cap_status": "proposal for coordinator cold-freeze; not execution authorization",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/open_boundary_wilson_hamiltonian_check_2026_09_16.json",
+    "completed_family_total": 1,
+    "scope": [
+      "full time-Dirac determinants, Schur and complementary minors",
+      "noncommuting two-site external histories",
+      "70-state CAR sector and exterior-power comparison",
+      "five time resolutions with original ODE tolerances",
+      "fixed-graph boundary amplitude only; no thermal or global ground-state identification"
+    ]
+  },
+  {
+    "runner": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+    "owner": "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "ordered_inputs": [
+      {
+        "path": "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7"
+      },
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      },
+      {
+        "path": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8"
+      },
+      {
+        "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21"
+      },
+      {
+        "path": "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537"
+      }
+    ],
+    "timeout_sec": 180,
+    "proposed_external_process_tree_limit_bytes": 805306368,
+    "memory_cap_status": "proposal for coordinator cold-freeze; not execution authorization",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/open_wilson_dynamical_gauge_join_check_2026_09_16.json",
+    "completed_family_total": 1,
+    "scope": [
+      "27 three-slice clock histories versus an independently assembled transfer",
+      "one spatial edge; no magnetic plaquette or propagating photon",
+      "1296-dimensional physical invariant sector with exact electric-charge energy",
+      "three joint-refinement paths and arbitrary-vector generator controls",
+      "finite-graph diagnostics only; no volume-uniform phase or global ground-state selection"
+    ]
+  },
+  {
+    "runner": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+    "owner": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "ordered_inputs": [
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      }
+    ],
+    "timeout_sec": 180,
+    "proposed_external_process_tree_limit_bytes": 805306368,
+    "memory_cap_status": "proposal for coordinator cold-freeze; not execution authorization",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/temporal_wilson_integer_local_filling_check_2026_09_16.json",
+    "completed_family_total": 1,
+    "scope": [
+      "exact integer boundaries plus physical curl and image-phase checks",
+      "120 sampled closed walks with visited-box support and translations",
+      "all six spatial contraction orders; no physical spectral computation",
+      "three physical time spacings and preserved failed-orientation history",
+      "finite samples challenge orientations; general chain homotopy is proved in the note"
+    ]
+  },
+  {
+    "runner": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+    "owner": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "ordered_inputs": [
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      }
+    ],
+    "timeout_sec": 180,
+    "proposed_external_process_tree_limit_bytes": 805306368,
+    "memory_cap_status": "proposal for coordinator cold-freeze; not execution authorization",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/temporal_wilson_third_curl_variation_check_2026_09_16.json",
+    "completed_family_total": 1,
+    "scope": [
+      "analytic third variations versus determinant finite differences",
+      "fixed physical duration 0.3 and three time resolutions",
+      "sampled physical curl directions and pure-gauge controls",
+      "original Richardson comparison and sufficient general bound",
+      "sampled directions only; no exhaustive all-direction numerical proof"
+    ]
+  }
+]

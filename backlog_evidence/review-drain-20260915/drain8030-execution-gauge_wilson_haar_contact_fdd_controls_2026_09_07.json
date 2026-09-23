@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS gauge_wilson_haar_contact_fdd_controls_2026_09_07.py\nper_element: 4 checks; supplied Haar character moments and normalization\nper_site: 3 checks; actual27-plaquette disjointness and repeated-plaquette adverse\nper_mode: 2 checks; small-argument threshold and Taylor deviation\nper_block: 3 checks; exact logarithmic remainder constants\nlattice_wide: 1 checks; mesh remainder exponent only; analytical FDD limit not executed; resource/interface guards excluded from scientific count\nTOTAL: PASS=13 FAIL=0\nseconds: 0.003375957952812314; rss_MiB: 21.109375\nsource_sha256: 7fc63dbba4190fbd34ae55482834cdf521c5521b4a4b8d07152a6cf6f79e009b\n",
+  "stderr": "",
+  "elapsed_sec": 0.07806205749511719,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_haar_contact_fdd_controls_2026_09_07.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/gauge_wilson_haar_contact_fdd_controls_2026_09_07.json",
+    "sha256": "1bfb8820507973a718189584bc8d89a9cf740e6004da2d514b0e3a62a0a4a587"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 59037,
+    "samples": 3,
+    "peak_tree_rss_bytes": 56180736,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8030-capture.py",
+  "capture_script_sha256": "83cf35a412e1b8b8c743e11503cb76521673e236673a62660ec7fc88462b649f"
+}

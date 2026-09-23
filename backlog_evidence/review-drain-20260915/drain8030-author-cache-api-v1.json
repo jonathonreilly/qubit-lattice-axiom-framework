@@ -1,0 +1,82 @@
+[
+  {
+    "primary": "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "56aea52d08696383ec41d3f87a093c77b26290d078496579f9e603c26f123147"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "2f462acc9d599fca816f320b23c36b0cd8e79f41d50c9dda9980cd245cf95ae0"
+      },
+      {
+        "path": "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+        "sha256": "a5bd37b25bb607390765714efad1f41a5cbcfba8446163becb43a9fd88186466"
+      }
+    ],
+    "declared_input_fingerprint": "a9c3774799396f4a78f5ba39847084709e9fad7d4ee5ca55b678fda1d770e757",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "primary": "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "56aea52d08696383ec41d3f87a093c77b26290d078496579f9e603c26f123147"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "2f462acc9d599fca816f320b23c36b0cd8e79f41d50c9dda9980cd245cf95ae0"
+      },
+      {
+        "path": "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
+        "sha256": "7fc63dbba4190fbd34ae55482834cdf521c5521b4a4b8d07152a6cf6f79e009b"
+      }
+    ],
+    "declared_input_fingerprint": "a9c3774799396f4a78f5ba39847084709e9fad7d4ee5ca55b678fda1d770e757",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  }
+]

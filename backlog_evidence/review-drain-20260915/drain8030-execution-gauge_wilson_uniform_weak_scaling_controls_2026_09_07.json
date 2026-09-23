@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py\nper_element: 6 checks; three exact exponential-series degree/coefficient certificates\nper_site: 3 checks; weighted Riemann norm bookkeeping\nper_mode: 3 checks; clock-rescaled gap/LR ratio identities\nper_block: 4 checks; wrong degree, wrong clock and missing gap-premise adverse controls\nlattice_wide: 2 checks; fixed-scale LR upper arithmetic and one resource predicate; analytical clustering and limits not executed\nTOTAL: PASS=18 FAIL=0\nseconds: 0.0014896669890731573; rss_MiB: 20.765625\nsource_sha256: a5bd37b25bb607390765714efad1f41a5cbcfba8446163becb43a9fd88186466\n",
+  "stderr": "",
+  "elapsed_sec": 0.08406925201416016,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.json",
+    "sha256": "30e502a3c193004a13d5cff4d011dd551937a473bf8ab609459fd1e70688ee9a"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 59037,
+    "samples": 3,
+    "peak_tree_rss_bytes": 52559872,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8030-capture.py",
+  "capture_script_sha256": "83cf35a412e1b8b8c743e11503cb76521673e236673a62660ec7fc88462b649f"
+}

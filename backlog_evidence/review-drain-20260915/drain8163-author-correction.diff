@@ -1,0 +1,567 @@
+--- original/notes/BLOCK02_UNIFORM_TEMPORAL_RESUMMATION_AND_CURL_RESPONSE.md
++++ docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,6 +1,27 @@
++---
++claim_id: temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/temporal_wilson_resummation_check_2026_09_16.py
++claim_scope: "Supplied paired massive Wilson determinant on a free spatial cube and open time interval; heavy-mass physical curl bounds uniform in time step and volume."
++upstream_dependencies: []
++---
++
+ # Temporal Wilson resummation with physical curl bounds uniform in time step
+ 
+-Author theorem proposal, 2026-09-16. Current surface status `conditional-support`; no independent review or audit. The model is a supplied paired massive Wilson determinant on a free spatial cube times an open time interval. The result addresses the temporal-run resummation left open in main's compact determinant/current note. It is not a compact-gauge phase theorem or a derived native matter law.
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++This is a conditional result for a supplied paired massive Wilson determinant on a free spatial cube times an open time interval. It addresses temporal-run resummation in the compact determinant/current context. It establishes neither a compact-gauge phase nor a derived native matter law.
+ 
+ ## 1. Model and statement
+ 
+@@ -170,4 +191,32 @@
+ 
+ This closes a supplied-model uniform-time estimate under an explicit heavy-mass condition. It supplies an extensive action-density bound and an absolute local curl extension; neither implies nonnegative Fourier currents or an independently verified phase. The bounds apply pointwise to both continuous and finite-cyclic gauge links before any gauge averaging.
+ 
+-Open time boundaries are essential to the exact triangular normalization and to the absence of winding loops. Antiperiodic finite-temperature time requires a separate winding analysis. The companion [Block03 model-match proposal](BLOCK03_EXACT_OPEN_BOUNDARY_FERMION_MODEL_MATCH.md) derives the open-boundary Fock transfer and its normalization for the Hermitian one-particle expression gamma_0(mu-K_s). That proposal remains author-checked and does not supply a dynamical gauge phase. The inverse-logarithmic spatial Villain matching of the previous campaign also remains distinct from an isotropic fixed-beta phase theorem. Gapless matter, a fixed-payload photon phase, native-law selection and any axiom-forcing contradiction are not established.
++Open time boundaries are essential to the exact triangular normalization and to the absence of winding loops. Antiperiodic finite-temperature time requires a separate winding analysis. The companion `OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md` (context only) derives the open-boundary Fock transfer and its normalization for the Hermitian one-particle expression gamma_0(mu-K_s). That companion result remains conditional and does not supply a dynamical gauge phase. The inverse-logarithmic spatial Villain matching of the earlier supplied spatial construction also remains distinct from an isotropic fixed-beta phase theorem. Gapless matter, a fixed-payload photon phase, native-law selection and any axiom-forcing contradiction are not established.
++
++## Evidence and execution boundary
++
++Primary runner: `scripts/temporal_wilson_resummation_check_2026_09_16.py`.
++
++Companion diagnostics: `scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py`, `scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py`, `scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py`. They are separate completed diagnostic families with separate captures; none substitutes for the full proof above.
++
++All original arithmetic, assertions, finite domains, seeds and tolerances are preserved. Each program retains its 180-second limit; memory limits and sole sequential captures are coordinator-owned and must be frozen before execution. `TOTAL: PASS=1 FAIL=0` means one complete diagnostic family finished all its original assertions, not one assertion or exhaustive physical coverage. Source and ordered owner/parent notes are read and hash-bound. JSON diagnostics are written under `logs/runner-cache/`.
++
++The [historical recovery packet](work_history/repo/review_feedback/pr8163-evidence/README.md) preserves all original paths, modes, blobs, complete working derivations, two initial failures and 23 final formula-fault outcomes. Those historical runs are not current-source execution evidence.
++
++## No-Go Discipline Gate
++
++**N1 — Actual alternatives.** The preserved finite diagnostics and 23 specified formula faults test the stated algebra. Five future research routes are open alternatives, not completed attacks or exhaustive exclusions.
++
++**N2 — Shared scope.** Results use the supplied massive Wilson/open-boundary model and its explicit finite-graph or physical-curl quantifiers; no independent-wall theorem is asserted.
++
++**N3 — Inputs.** Model parameters, external time, gauge kernel, CAR representation and endpoint state are supplied. No framework premise selects them.
++
++**N4 — Failed attempts.** The slow refinement failed its original factor-three target, and an initially equivalent orientation mutation survived; both failures and their exact subsequent source corrections remain preserved.
++
++**N5 — Resolution.** Completed finite matrices, integer cycles or sampled directions support the corresponding algebra. They do not exhaust all graphs, native laws or physical spectra.
++
++**N6 — Remaining routes.** Periodic winding, gapless matter, thermal identification, global ground-state selection and infinite-volume phase control remain open.
++
++**N7 — Strongest boundary.** Volume-uniform heavy physical-curl estimates differ from fixed-graph state limits; an open amplitude is not a thermal trace or a global ground-state selection.
++
++**N8 — Reopening.** New model matching, sector/overlap proofs or spatial-volume controls could resolve those extensions; the current result does not exclude them.
+--- original/notes/BLOCK03_EXACT_OPEN_BOUNDARY_FERMION_MODEL_MATCH.md
++++ docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,12 +1,33 @@
++---
++claim_id: open_boundary_wilson_fock_model_match_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py
++claim_scope: "Supplied finite spatial Wilson model; exact open-boundary Fock amplitude and fixed-graph continuous-time match."
++upstream_dependencies: []
++---
++
+ # Exact open-boundary determinant and its canonical fermion model
+ 
+-Author model-matching proposal, 2026-09-16; current surface status `conditional-support`. This is a normalization and boundary-condition join for the supplied operator of Block02. Wilson transfer matrices, dimensional reduction and exterior-power factorization are established machinery. The purpose here is to identify exactly which fermionic boundary amplitude our uniform curl bound controls. No independent audit or compact phase is claimed.
++**Type:** bounded_theorem
+ 
+-Primary prior art: [Luescher, DESY76/54](https://bib-pubdb1.desy.de/record/396349/files/7611148.pdf?version=1) constructs positive Wilson fermion/gauge transfers and tracks field normalization. [Wenger, arXiv2302.07385](https://arxiv.org/html/2302.07385) explains determinant reduction and canonical minor factorization. [Buividovich-Hind, arXiv2606.20090v1](https://arxiv.org/html/2606.20090v1) gives the anisotropic Wilson-Dirac block transfer and its Hamiltonian expansion; its no-temporal-clover specialization is the same block mechanism used below. Neither generic determinant reduction nor this block mechanism is presented as newly discovered here. The open endpoint prefactor and its connection to the particular Block02 bound are derived explicitly.
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++This is a conditional normalization and boundary-condition join for the supplied Wilson operator. Wilson transfer matrices, dimensional reduction and exterior-power factorization are established machinery. The purpose is to identify exactly which fermionic boundary amplitude the physical curl estimate controls. No audit or compact phase is claimed.
++
++Primary prior art: [Luescher, DESY76/54](https://bib-pubdb1.desy.de/record/396349/files/7611148.pdf?version=1) constructs positive Wilson fermion/gauge transfers and tracks field normalization. [Wenger, arXiv2302.07385](https://arxiv.org/html/2302.07385) explains determinant reduction and canonical minor factorization. [Buividovich-Hind, arXiv2606.20090v1](https://arxiv.org/html/2606.20090v1) gives the anisotropic Wilson-Dirac block transfer and its Hamiltonian expansion; its no-temporal-clover specialization is the same block mechanism used below. Neither generic determinant reduction nor this block mechanism is presented as newly discovered here. The open endpoint prefactor and its connection to the particular temporal-resummation bound are derived explicitly.
+ 
+ ## 1. Spatial blocks and positive recurrence transfer
+ 
+-Fix a finite free spatial graph as in Block02 and temporal gauge on an open time interval. This gauge can always be reached by successively transporting vertex phases along the open temporal chains. The determinant is unchanged by that gauge conjugation. Let r=2|Lambda_s|; each gamma_0 eigenspace has dimension r. For a supplied spatial gauge history write
++Fix a finite free spatial graph as in the temporal-resummation note and temporal gauge on an open time interval. This gauge can always be reached by successively transporting vertex phases along the open temporal chains. The determinant is unchanged by that gauge conjugation. Let r=2|Lambda_s|; each gamma_0 eigenspace has dimension r. For a supplied spatial gauge history write
+ 
+     mu-K_s(t)=[a_t,b_t;-b_t*,d_t],
+     h_t=gamma_0(mu-K_s(t))=[a_t,b_t;b_t*,-d_t].       (1)
+@@ -65,7 +86,7 @@
+     F_delta(theta_t)=c_delta(theta_t) Gamma(X_t^-1),
+     c_delta(theta_t)=det A_t/(1+mu delta)^(2r)>0.     (6)
+ 
+-The normalization in Block02 is det(delta D_0)=(1+mu delta)^(2rM_t). Equations(5)-(6) prove the exact finite identity
++The normalization in the temporal-resummation note is det(delta D_0)=(1+mu delta)^(2rM_t). Equations(5)-(6) prove the exact finite identity
+ 
+     |det(D_full D_0^-1)|^2
+       =|<Omega_-|F_delta(theta_(M_t-1))...
+@@ -113,6 +134,32 @@
+ 
+ ## 6. What this match closes
+ 
+-Block02's uniform physical-curl bounds concern exactly the boundary weight(7), with its scalar normalization and filled boundary state now identified. They do not yet describe a thermal trace, arbitrary fermionic insertions, a gapless-matter determinant or a large-volume ground-state phase. The companion [Block04 dynamical gauge proposal](BLOCK04_ACTUAL_GAUGE_MATTER_TRANSFER_AND_STATE_JOIN.md) supplies the gauge transfer weights, endpoint factors and physical Gauss restriction explicitly; they are not inferred from the determinant alone. Its fixed-volume regulator/state limits depend on the frozen provisional PR8162 proofs.
++The temporal-resummation note's uniform physical-curl bounds concern exactly the boundary weight(7), with its scalar normalization and filled boundary state now identified. They do not yet describe a thermal trace, arbitrary fermionic insertions, a gapless-matter determinant or a large-volume ground-state phase. The companion `OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md` (context only) supplies the gauge transfer weights, endpoint factors and physical Gauss restriction explicitly; they are not inferred from the determinant alone. Its fixed-volume regulator/state limits depend on the supplied variance-calibrated transfer and all-mode state proofs.
+ 
+-The mathematical machinery in this note is classical and the generic anisotropic block transfer has direct prior art. The bounded campaign outcome is the model/source/boundary match needed to interpret the preceding uniform-time estimate, not a claim to have discovered Wilson transfer theory.
++The mathematical machinery in this note is classical and the generic anisotropic block transfer has direct prior art. The bounded result is the model/source/boundary match needed to interpret the preceding uniform-time estimate, not a claim to have discovered Wilson transfer theory.
++
++## Evidence and execution boundary
++
++Primary runner: `scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py`.
++
++All original arithmetic, assertions, finite domains, seeds and tolerances are preserved. Each program retains its 180-second limit; memory limits and sole sequential captures are coordinator-owned and must be frozen before execution. `TOTAL: PASS=1 FAIL=0` means one complete diagnostic family finished all its original assertions, not one assertion or exhaustive physical coverage. Source and ordered owner/parent notes are read and hash-bound. JSON diagnostics are written under `logs/runner-cache/`.
++
++The [historical recovery packet](work_history/repo/review_feedback/pr8163-evidence/README.md) preserves all original paths, modes, blobs, complete working derivations, two initial failures and 23 final formula-fault outcomes. Those historical runs are not current-source execution evidence.
++
++## No-Go Discipline Gate
++
++**N1 — Actual alternatives.** The preserved finite diagnostics and 23 specified formula faults test the stated algebra. Five future research routes are open alternatives, not completed attacks or exhaustive exclusions.
++
++**N2 — Shared scope.** Results use the supplied massive Wilson/open-boundary model and its explicit finite-graph or physical-curl quantifiers; no independent-wall theorem is asserted.
++
++**N3 — Inputs.** Model parameters, external time, gauge kernel, CAR representation and endpoint state are supplied. No framework premise selects them.
++
++**N4 — Failed attempts.** The slow refinement failed its original factor-three target, and an initially equivalent orientation mutation survived; both failures and their exact subsequent source corrections remain preserved.
++
++**N5 — Resolution.** Completed finite matrices, integer cycles or sampled directions support the corresponding algebra. They do not exhaust all graphs, native laws or physical spectra.
++
++**N6 — Remaining routes.** Periodic winding, gapless matter, thermal identification, global ground-state selection and infinite-volume phase control remain open.
++
++**N7 — Strongest boundary.** Volume-uniform heavy physical-curl estimates differ from fixed-graph state limits; an open amplitude is not a thermal trace or a global ground-state selection.
++
++**N8 — Reopening.** New model matching, sector/overlap proofs or spatial-volume controls could resolve those extensions; the current result does not exclude them.
+--- original/notes/BLOCK04_ACTUAL_GAUGE_MATTER_TRANSFER_AND_STATE_JOIN.md
++++ docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,12 +1,35 @@
++---
++claim_id: open_wilson_gauge_matter_fixed_graph_state_join_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py
++claim_scope: "Supplied paired Wilson matter and variance-calibrated clock gauge transfer; joint regulator and physical-state convergence on a fixed finite graph."
++upstream_dependencies: ["temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16", "open_boundary_wilson_fock_model_match_bounded_theorem_note_2026-09-16", "clock_variance_calibrated_joint_rotor_transfer_bounded_theorem_note_2026-09-16", "clock_all_mode_coercivity_finite_graph_states_bounded_theorem_note_2026-09-16"]
++---
++
+ # The actual gauge-matter transfer and its fixed-volume state join
+ 
+-Author theorem proposal, 2026-09-16; `conditional-support`. This joins the exact open-boundary Wilson determinant of current Block03 to a positive compact gauge transfer. It explicitly depends on the provisional calibration and state-limit proofs in PR8162 at frozen commit0f02dc5127416f347e231bbd8aa7c2a8b58a02fa. No independent audit or phase theorem is asserted.
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++This conditional result joins the exact open-boundary Wilson determinant to a positive compact gauge transfer. It uses the linked canonical model-match, variance-calibrated transfer and all-mode state-limit arguments as supplied mathematical parents. Their landing establishes source availability, not an audit verdict or a phase theorem.
++
++Load-bearing supplied-model parents: [TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md](TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md), [OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md](OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md), [CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md](CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md), [CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md](CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md).
+ 
+ ## 1. Supplied model and exact finite transfer
+ 
+-Fix a finite free spatial cube, its oriented links and plaquettes, and supplied parameters g,kappa,m>0. Put mu=m+3kappa and r=2|Lambda_s|. The heavy-mass curl bound of Block02 additionally requires m>3kappa; the algebraic transfer construction in this note only requires m>0. The spatial lattice spacing is1. Time spacing delta and the clock order N>=3 are external regulators.
++Fix a finite free spatial cube, its oriented links and plaquettes, and supplied parameters g,kappa,m>0. Put mu=m+3kappa and r=2|Lambda_s|. The heavy-mass curl bound of the temporal-resummation note additionally requires m>3kappa; the algebraic transfer construction in this note only requires m>0. The spatial lattice spacing is1. Time spacing delta and the clock order N>=3 are external regulators.
+ 
+-Let F_pair,delta(theta) and Omega_pair be exactly the positive paired Fock multiplier and its neutral filled state from Block03, with all scalar determinants retained. The finite clock Hilbert space has normalized counting measure on (Z/NZ)^E and the full finite paired Fock space. Define the temporal gauge kernel by the normalized integer jumps
++Let F_pair,delta(theta) and Omega_pair be exactly the positive paired Fock multiplier and its neutral filled state from the model-match note, with all scalar determinants retained. The finite clock Hilbert space has normalized counting measure on (Z/NZ)^E and the full finite paired Fock space. Define the temporal gauge kernel by the normalized integer jumps
+ 
+     Q_delta,N=product_links sum_(k in Z) p_c(k) X_l^k,
+     p_c(k)=exp(-c k²)/sum_j exp(-c j²),
+@@ -42,9 +65,9 @@
+        [product_t B_delta(theta_t)]
+        |det(D_full(theta) D_0^-1)|².                (4)
+ 
+-To see every factor, the bra v contributes a leftmost M, followed by the first M of T; at the other end the same happens to the ket. At each interior slice the adjacent T factors likewise produce M²=B F_pair. The matrix matter product therefore has the chronological order F_pair(theta_last)...F_pair(theta_first). Block03 identifies its Omega_pair matrix element exactly with the paired determinant in(4). The single factor N^(-E) is the outer Hilbert inner-product normalization; q already contains its discrete transition probabilities and is not divided by N^E again. For M_t=1, (3) is <v,v> and the same formula applies with no q factors.
++To see every factor, the bra v contributes a leftmost M, followed by the first M of T; at the other end the same happens to the ket. At each interior slice the adjacent T factors likewise produce M²=B F_pair. The matrix matter product therefore has the chronological order F_pair(theta_last)...F_pair(theta_first). the model-match note identifies its Omega_pair matrix element exactly with the paired determinant in(4). The single factor N^(-E) is the outer Hilbert inner-product normalization; q already contains its discrete transition probabilities and is not divided by N^E again. For M_t=1, (3) is <v,v> and the same formula applies with no q factors.
+ 
+-Using Omega_pair itself as both endpoint vectors in(3) would leave half of the endpoint multipliers and would not give(4). No endpoint normalization is dropped. The scalar determinant normalization inside F_pair is also the one in Block03.
++Using Omega_pair itself as both endpoint vectors in(3) would leave half of the endpoint multipliers and would not give(4). No endpoint normalization is dropped. The scalar determinant normalization inside F_pair is also the one in the model-match note.
+ 
+ Omega_pair has zero charge at each site and is constant in theta. It is a physical vector. Gauge covariance of M makes v_delta physical as well; the Gauss projector can consequently be inserted in(3) without changing it. Formula(4) is the temporal-gauge open-slab model. Restoring temporal link variables by normalized gauge averaging gives the same physical amplitude: on an open interval each temporal link is removed recursively by a vertex gauge transformation, with invariant counting measure and neutral endpoints. There is no temporal winding variable to retain. This statement is not applicable to a periodic-time determinant without modification.
+ 
+@@ -52,7 +75,7 @@
+ 
+ It is not generally true that the normalized Fock multiplier is a contraction. A uniform finite-graph scalar shift supplies the hypothesis used by the prior convergence proof.
+ 
+-Let C=mu+3kappa. The spatial blocks in Block03 obey ||a||,||b||,||d||<=C, with a,d>=mI. Inverting its positive block factorization yields
++Let C=mu+3kappa. The spatial blocks in the model-match note obey ||a||,||b||,||d||<=C, with a,d>=mI. Inverting its positive block factorization yields
+ 
+     ||X_delta^-1||
+       <=(1+delta ||b||)² max(||A^-1||,||D||)
+@@ -72,7 +95,7 @@
+ 
+ ## 4. First derivative and the common Fourier core
+ 
+-Block03 proves, uniformly in theta on the fixed graph,
++The model-match note proves, uniformly in theta on the fixed graph,
+ 
+     F_pair,delta=I-delta H_pair(theta)+O_graph(delta²),
+     H_pair=H_F tensor I+I tensor conjugate(H_F),
+@@ -89,7 +112,7 @@
+ 
+     J_N Mhat_delta,N J_N* f=f-delta Wf/2+O_f(delta²).
+ 
+-The calibrated kinetic estimate from prior Block02 gives
++The calibrated kinetic estimate from the variance-calibrated transfer proof gives
+ 
+     J_N Q_delta,N J_N* f=f-delta Kf
+                             +O_f(delta²+delta/N²),
+@@ -105,7 +128,7 @@
+ 
+ ## 5. Joint regulator and physical state limits
+ 
+-All hypotheses actually used in prior PR8162 Block02 sections6-8 and Block03 are now checked for Mhat: positivity and contraction; uniform ||I-Mhat||<=C delta; a finite-Laurent first derivative with O(delta²) multiplier remainder; gauge covariance; and finite-dimensional matter. Its exact formula need not be exp(-delta h/2)B^(1/2). The previous proofs use precisely these properties, so they apply with W in(6).
++All hypotheses actually used in the variance-calibrated transfer proof sections6-8 and the all-mode state proof are now checked for Mhat: positivity and contraction; uniform ||I-Mhat||<=C delta; a finite-Laurent first derivative with O(delta²) multiplier remainder; gauge covariance; and finite-dimensional matter. Its exact formula need not be exp(-delta h/2)B^(1/2). The previous proofs use precisely these properties, so they apply with W in(6).
+ 
+ For clarity, the remaining load-bearing estimates are
+ 
+@@ -124,7 +147,7 @@
+ 
+     Tr exp(-t Ghat_j)<=d_m [sum_(n in Z)exp(-t(2g²/pi²)n²)]^E.
+ 
+-The same majorant controls spectral tails. With norm-resolvent convergence, it yields trace-norm convergence of positive-time heat operators and of normalized physical Gibbs states, exactly as in prior Block03. The actual integer transfer powers have the same limit after accounting for their time rounding. Ground spaces converge as isolated spectral clusters; uniqueness of a ground vector is not assumed. These are all fixed-graph statements. Their constants and the displayed heat-trace majorant do not remain bounded as the spatial graph grows.
++The same majorant controls spectral tails. With norm-resolvent convergence, it yields trace-norm convergence of positive-time heat operators and of normalized physical Gibbs states, exactly as in the all-mode state proof. The actual integer transfer powers have the same limit after accounting for their time rounding. Ground spaces converge as isolated spectral clusters; uniqueness of a ground vector is not assumed. These are all fixed-graph statements. Their constants and the displayed heat-trace majorant do not remain bounded as the spatial graph grows.
+ 
+ Undoing the shift identifies the supplied Hamiltonian
+ 
+@@ -139,8 +162,34 @@
+ 
+ ## 6. Connection to the curl estimate and its limits
+ 
+-For m>3kappa, Block02's local extension and physical-metric Hessian/third-variation bounds apply pointwise to exactly the determinant in(4), before any gauge sum. Thus the heavy-fermion bound, the supplied boundary determinant and the physical Hamiltonian now refer to one explicitly identified construction. This statement does not transfer a Gaussian phase theorem from an isotropic gauge model to the anisotropic clock kernel, or control the spatial-volume limit of the state in(10).
++For m>3kappa, the temporal-resummation note's local extension and physical-metric Hessian/third-variation bounds apply pointwise to exactly the determinant in(4), before any gauge sum. Thus the heavy-fermion bound, the supplied boundary determinant and the physical Hamiltonian now refer to one explicitly identified construction. This statement does not transfer a Gaussian phase theorem from an isotropic gauge model to the anisotropic clock kernel, or control the spatial-volume limit of the state in(10).
+ 
+ The original determinant represents the particular open boundary amplitude(4). Thermal and ground-state conclusions above concern the constructed positive transfer. They do not assert that the open determinant is itself a thermal trace, nor that arbitrary fermionic insertions have been matched. Omega_pair lies in a specified conserved particle-number sector. Taking a long-time boundary amplitude does not identify a global ground state without also proving the necessary sector and overlap statements; no such inference is made here. Gapless matter, a fixed finite-payload photon phase, native action/time selection and an axiom-forcing contradiction remain unproved.
+ 
+ The finite check sums27 actual three-slice clock histories using the original four-component Dirac matrix, and compares the result with a separately assembled1296-dimensional physical Fock transfer. Its one-edge graph tests Gauss reduction and charged hopping but has no magnetic plaquette or propagating photon. Separate joint refinements compare with a sparse CAR Hamiltonian and its exact integer electric energy. They are finite floating diagnostics of this derivation, not general proofs.
++
++## Evidence and execution boundary
++
++Primary runner: `scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py`.
++
++All original arithmetic, assertions, finite domains, seeds and tolerances are preserved. Each program retains its 180-second limit; memory limits and sole sequential captures are coordinator-owned and must be frozen before execution. `TOTAL: PASS=1 FAIL=0` means one complete diagnostic family finished all its original assertions, not one assertion or exhaustive physical coverage. Source and ordered owner/parent notes are read and hash-bound. JSON diagnostics are written under `logs/runner-cache/`.
++
++The [historical recovery packet](work_history/repo/review_feedback/pr8163-evidence/README.md) preserves all original paths, modes, blobs, complete working derivations, two initial failures and 23 final formula-fault outcomes. Those historical runs are not current-source execution evidence.
++
++## No-Go Discipline Gate
++
++**N1 — Actual alternatives.** The preserved finite diagnostics and 23 specified formula faults test the stated algebra. Five future research routes are open alternatives, not completed attacks or exhaustive exclusions.
++
++**N2 — Shared scope.** Results use the supplied massive Wilson/open-boundary model and its explicit finite-graph or physical-curl quantifiers; no independent-wall theorem is asserted.
++
++**N3 — Inputs.** Model parameters, external time, gauge kernel, CAR representation and endpoint state are supplied. No framework premise selects them.
++
++**N4 — Failed attempts.** The slow refinement failed its original factor-three target, and an initially equivalent orientation mutation survived; both failures and their exact subsequent source corrections remain preserved.
++
++**N5 — Resolution.** Completed finite matrices, integer cycles or sampled directions support the corresponding algebra. They do not exhaust all graphs, native laws or physical spectra.
++
++**N6 — Remaining routes.** Periodic winding, gapless matter, thermal identification, global ground-state selection and infinite-volume phase control remain open.
++
++**N7 — Strongest boundary.** Volume-uniform heavy physical-curl estimates differ from fixed-graph state limits; an open amplitude is not a thermal trace or a global ground-state selection.
++
++**N8 — Reopening.** New model matching, sector/overlap proofs or spatial-volume controls could resolve those extensions; the current result does not exclude them.
+--- original/evidence/block01_temporal_resummation_check.py
++++ scripts/temporal_wilson_resummation_check_2026_09_16.py
+@@ -3,7 +3,9 @@
+ All numerical comparisons are floating checks of supplied finite systems.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=[]
++AUDIT_INPUT_FILES=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_MEMORY_MB=768
++EXPECTED_INPUT_SHA256={'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+@@ -109,7 +111,32 @@
+ 
+ def run():
+     start=time.time();spin=spin_checks();matrices=[lattice((3,2,2,2),.1,6.,.5,271),lattice((5,2,1,1),.05,6.,.5,314)]
+-    print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'spin_checks':spin,'finite_matrices':matrices,'time_closure':closure_checks(),'continuum_rectangle':continuum_rectangle(),'seconds':time.time()-start},indent=2))
++    _emit({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'spin_checks':spin,'finite_matrices':matrices,'time_closure':closure_checks(),'continuum_rectangle':continuum_rectangle(),'seconds':time.time()-start})
+ 
+ 
+-if __name__=='__main__':run()
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_FILES:
++        actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
++        if actual != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 1
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2) + "\n")
++    print(json.dumps(report, indent=2))
++    print("TOTAL: PASS=1 FAIL=0")
++    print('per_element: finite Wilson matrices, temporal-run inverses and rectangle traces.')
++    print('per_site: two fixed free spatial shapes and open temporal boundaries.')
++    print('per_mode: Clifford sandwich and gauge conjugation controls; no physical spectrum.')
++    print('per_block: closed-time sums and leading rectangle continuum diagnostic.')
++    print('lattice_wide: finite diagnostics only; general uniform bounds use the supplied-model proof.')
++
++if __name__=='__main__':
++    _check_inputs()
++    run()
+--- original/evidence/block02_physical_curl_hessian_check.py
++++ scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py
+@@ -3,7 +3,9 @@
+ Uses a different Clifford basis and explicit derivatives, not loop enumeration.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=[]
++AUDIT_INPUT_FILES=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_MEMORY_MB=768
++EXPECTED_INPUT_SHA256={'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+@@ -85,7 +87,32 @@
+     for mu in [12.,24.,48.,96.,192.]:
+         loose,sharp=epsilon2(mu,.5);heavy.append({'mu':mu,'loose_bound':loose,'refined_bound':sharp,'mu_cubed_times_refined':mu**3*sharp})
+     assert heavy[-1]['refined_bound']<heavy[0]['refined_bound']/1000
+-    print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'physical_curl_hessians':rows,'heavy_mass_bounds':heavy,'seconds':time.time()-start},indent=2))
++    _emit({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'physical_curl_hessians':rows,'heavy_mass_bounds':heavy,'seconds':time.time()-start})
+ 
+ 
+-if __name__=='__main__':run()
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_FILES:
++        actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
++        if actual != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 1
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2) + "\n")
++    print(json.dumps(report, indent=2))
++    print("TOTAL: PASS=1 FAIL=0")
++    print('per_element: analytic finite-matrix Hessians and determinant differences.')
++    print('per_site: fixed three-slice spatial box, with shrinking duration as delta decreases.')
++    print('per_mode: gauge null directions and physical-metric quotient spectrum.')
++    print('per_block: three time spacings and five heavy-mass bound evaluations.')
++    print('lattice_wide: no all-direction empirical or infinite-volume state test.')
++
++if __name__=='__main__':
++    _check_inputs()
++    run()
+--- original/evidence/block03_open_boundary_hamiltonian_check.py
++++ scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py
+@@ -3,7 +3,9 @@
+ The general determinant reduction is prior art; this checks our exact conventions.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=[]
++AUDIT_INPUT_FILES=['docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_MEMORY_MB=768
++EXPECTED_INPUT_SHA256={'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md': '53267149867d9bef81f3bf2778942e8d4a4874d60713f598d5fd00387a6a0ad6'}
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+@@ -91,7 +93,32 @@
+         rows.append({'Nt':Nt,'delta':delta,'full_matrix_dimension':n*Nt,'normalized_log_determinant':float(exact),'schur_error':abs(exact-schur),'complementary_minor_error':abs(exact-complementary),'noncommuting_slice_norm':comm,'paired_boundary_weight':math.exp(2*exact),'continuum_paired_weight':float(abs(fock_amplitude)**2),'paired_weight_error':abs(math.exp(2*exact)-abs(fock_amplitude)**2),'scalar_log_prefactor':float(logA-norm)})
+     assert rows[-1]['paired_weight_error']<rows[0]['paired_weight_error']/5
+     assert rows[-1]['paired_weight_error']<.003
+-    print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'continuum_fock_amplitude':[float(fock_amplitude.real),float(fock_amplitude.imag)],'one_particle_vs_fock_amplitude_error':float(abs(minor_amplitude-fock_amplitude)),'finite_fock_check':finite_fock,'joint_open_boundary_checks':rows,'seconds':time.time()-start},indent=2))
++    _emit({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'continuum_fock_amplitude':[float(fock_amplitude.real),float(fock_amplitude.imag)],'one_particle_vs_fock_amplitude_error':float(abs(minor_amplitude-fock_amplitude)),'finite_fock_check':finite_fock,'joint_open_boundary_checks':rows,'seconds':time.time()-start})
+ 
+ 
+-if __name__=='__main__':run()
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_FILES:
++        actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
++        if actual != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 1
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2) + "\n")
++    print(json.dumps(report, indent=2))
++    print("TOTAL: PASS=1 FAIL=0")
++    print('per_element: full time-Dirac determinants, Schur and complementary minors.')
++    print('per_site: noncommuting two-site external histories.')
++    print('per_mode: 70-state CAR sector and exterior-power comparison.')
++    print('per_block: five time resolutions with original ODE tolerances.')
++    print('lattice_wide: fixed-graph boundary amplitude only; no thermal or global ground-state identification.')
++
++if __name__=='__main__':
++    _check_inputs()
++    run()
+--- original/evidence/block04_dynamical_gauge_join_check.py
++++ scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py
+@@ -6,7 +6,9 @@
+ amplitude. This is a finite diagnostic, not a phase or thermal-trace test.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=[]
++AUDIT_INPUT_FILES=['docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_MEMORY_MB=768
++EXPECTED_INPUT_SHA256={'docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md': '8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7', 'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07', 'docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md': '53267149867d9bef81f3bf2778942e8d4a4874d60713f598d5fd00387a6a0ad6', 'docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md': '1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21', 'docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md': '89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537'}
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+@@ -162,6 +164,31 @@
+     # Even the slow first path is a small finite-time error here; this is not
+     # a bound for general graphs or a uniform-volume convergence assertion.
+     assert rows[0]['values'][-1]['absolute_error']<.01
+-    print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'physical_invariant_sector_dimension':6**4,'electric_charge_range':[int(min(CHARGE)),int(max(CHARGE))],'exact_finite_path_check':paths,'continuum_hamiltonian_nonzeros':H.nnz,'independent_generator_checks':generators,'joint_refinements':rows,'seconds':time.time()-start},indent=2))
++    _emit({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'physical_invariant_sector_dimension':6**4,'electric_charge_range':[int(min(CHARGE)),int(max(CHARGE))],'exact_finite_path_check':paths,'continuum_hamiltonian_nonzeros':H.nnz,'independent_generator_checks':generators,'joint_refinements':rows,'seconds':time.time()-start})
+ 
+-if __name__=='__main__':run()
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_FILES:
++        actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
++        if actual != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 1
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2) + "\n")
++    print(json.dumps(report, indent=2))
++    print("TOTAL: PASS=1 FAIL=0")
++    print('per_element: 27 three-slice clock histories versus an independently assembled transfer.')
++    print('per_site: one spatial edge; no magnetic plaquette or propagating photon.')
++    print('per_mode: 1296-dimensional physical invariant sector with exact electric-charge energy.')
++    print('per_block: three joint-refinement paths and arbitrary-vector generator controls.')
++    print('lattice_wide: finite-graph diagnostics only; no volume-uniform phase or global ground-state selection.')
++
++if __name__=='__main__':
++    _check_inputs()
++    run()
+--- original/evidence/block05_integer_local_filling_check.py
++++ scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py
+@@ -6,7 +6,9 @@
+ chain-homotopy proof. Floating phases additionally test physical time units.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=[]
++AUDIT_INPUT_FILES=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_MEMORY_MB=768
++EXPECTED_INPUT_SHA256={'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import collections,hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+@@ -102,6 +104,31 @@
+             assert spatial+delta*temp<=3*ell**2+ell*(delta*temporal)
+             phase_errors.append(abs(filled-phase))
+         rows.append({'trial':trial,'walk_steps':2*pairs,'spatial_steps':ell,'temporal_steps':temporal,'surviving_integer_edges':len(chain),'fill_plaquettes':len(fill),'spatial_fill_l1':spatial,'temporal_fill_l1':temp,'largest_phase_error':max(phase_errors)})
+-    print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'spatial_contraction_orders_per_cycle':6,'integer_cycles':rows,'seconds':time.time()-start},indent=2))
++    _emit({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'spatial_contraction_orders_per_cycle':6,'integer_cycles':rows,'seconds':time.time()-start})
+ 
+-if __name__=='__main__':run()
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_FILES:
++        actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
++        if actual != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 1
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2) + "\n")
++    print(json.dumps(report, indent=2))
++    print("TOTAL: PASS=1 FAIL=0")
++    print('per_element: exact integer boundaries plus physical curl and image-phase checks.')
++    print('per_site: 120 sampled closed walks with visited-box support and translations.')
++    print('per_mode: all six spatial contraction orders; no physical spectral computation.')
++    print('per_block: three physical time spacings and preserved failed-orientation history.')
++    print('lattice_wide: finite samples challenge orientations; general chain homotopy is proved in the note.')
++
++if __name__=='__main__':
++    _check_inputs()
++    run()
+--- original/evidence/block06_third_curl_variation_check.py
++++ scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py
+@@ -5,7 +5,9 @@
+ directions test the C3 formula, not the general all-direction estimate.
+ """
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_FILES=[]
++AUDIT_INPUT_FILES=['docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++AUDIT_MEMORY_MB=768
++EXPECTED_INPUT_SHA256={'docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md': '49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07'}
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ import numpy as np
+@@ -76,6 +78,31 @@
+ def run():
+     start=time.time();rows=[check(n) for n in [3,6,12]]
+     assert max(abs(r['third_variation']) for r in rows)>1e-7,'The selected directions did not resolve a third variation'
+-    print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'fixed_duration_checks':rows,'seconds':time.time()-start},indent=2))
++    _emit({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'fixed_duration_checks':rows,'seconds':time.time()-start})
+ 
+-if __name__=='__main__':run()
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_FILES:
++        actual = hashlib.sha256((root / name).read_bytes()).hexdigest()
++        if actual != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 1
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2) + "\n")
++    print(json.dumps(report, indent=2))
++    print("TOTAL: PASS=1 FAIL=0")
++    print('per_element: analytic third variations versus determinant finite differences.')
++    print('per_site: fixed physical duration 0.3 and three time resolutions.')
++    print('per_mode: sampled physical curl directions and pure-gauge controls.')
++    print('per_block: original Richardson comparison and sufficient general bound.')
++    print('lattice_wide: sampled directions only; no exhaustive all-direction numerical proof.')
++
++if __name__=='__main__':
++    _check_inputs()
++    run()

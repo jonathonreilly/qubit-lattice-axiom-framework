@@ -1,0 +1,124 @@
+{
+  "status": "PLAN ONLY; NOT EXECUTED",
+  "concurrency": 1,
+  "order": [
+    {
+      "runner": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+      "source_sha256": "d557a0f7568e5e272e3afe01431a209cdc436714a7cc3cb22c8c979208dc5cc8",
+      "command": [
+        "python3",
+        "scripts/temporal_wilson_resummation_check_2026_09_16.py"
+      ],
+      "timeout_seconds": 180,
+      "process_tree_rss_limit_bytes": 805306368,
+      "expected_total": 1,
+      "count_scope": "One complete diagnostic family; every original assertion must finish. Not a count of assertions or exhaustive physics.",
+      "json_output": "logs/runner-cache/temporal_wilson_resummation_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/temporal_wilson_resummation_check_2026_09_16.txt",
+      "helper_execution": "Standalone program. No sibling run is imported or executed; coordinator captures each of the six exactly once.",
+      "failure_policy": "Preserve stdout/stderr/exit/resources and any partial JSON under a new immutable attempt record; do not retry or raise caps automatically."
+    },
+    {
+      "runner": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+      "source_sha256": "52c730b124f8c4a24179cdc8952962e73d45a1676bb206475b8f8a765a473e7e",
+      "command": [
+        "python3",
+        "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py"
+      ],
+      "timeout_seconds": 180,
+      "process_tree_rss_limit_bytes": 805306368,
+      "expected_total": 1,
+      "count_scope": "One complete diagnostic family; every original assertion must finish. Not a count of assertions or exhaustive physics.",
+      "json_output": "logs/runner-cache/temporal_wilson_physical_curl_hessian_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/temporal_wilson_physical_curl_hessian_check_2026_09_16.txt",
+      "helper_execution": "Standalone program. No sibling run is imported or executed; coordinator captures each of the six exactly once.",
+      "failure_policy": "Preserve stdout/stderr/exit/resources and any partial JSON under a new immutable attempt record; do not retry or raise caps automatically."
+    },
+    {
+      "runner": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+      "source_sha256": "5679b000903a07cd478622fd42d58430d7f7bfbb40f7eb72012a97cfce0215ad",
+      "command": [
+        "python3",
+        "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py"
+      ],
+      "timeout_seconds": 180,
+      "process_tree_rss_limit_bytes": 805306368,
+      "expected_total": 1,
+      "count_scope": "One complete diagnostic family; every original assertion must finish. Not a count of assertions or exhaustive physics.",
+      "json_output": "logs/runner-cache/open_boundary_wilson_hamiltonian_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/open_boundary_wilson_hamiltonian_check_2026_09_16.txt",
+      "helper_execution": "Standalone program. No sibling run is imported or executed; coordinator captures each of the six exactly once.",
+      "failure_policy": "Preserve stdout/stderr/exit/resources and any partial JSON under a new immutable attempt record; do not retry or raise caps automatically."
+    },
+    {
+      "runner": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+      "source_sha256": "f04b76f92f325e302e99e59648b1ad4fb4bed535922580bc65eb6746ca0d2749",
+      "command": [
+        "python3",
+        "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py"
+      ],
+      "timeout_seconds": 180,
+      "process_tree_rss_limit_bytes": 805306368,
+      "expected_total": 1,
+      "count_scope": "One complete diagnostic family; every original assertion must finish. Not a count of assertions or exhaustive physics.",
+      "json_output": "logs/runner-cache/open_wilson_dynamical_gauge_join_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/open_wilson_dynamical_gauge_join_check_2026_09_16.txt",
+      "helper_execution": "Standalone program. No sibling run is imported or executed; coordinator captures each of the six exactly once.",
+      "failure_policy": "Preserve stdout/stderr/exit/resources and any partial JSON under a new immutable attempt record; do not retry or raise caps automatically."
+    },
+    {
+      "runner": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+      "source_sha256": "9f4ae7979e723a6be0535b2e320a1204806265cfe03b8bba05091f4aec724d2b",
+      "command": [
+        "python3",
+        "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py"
+      ],
+      "timeout_seconds": 180,
+      "process_tree_rss_limit_bytes": 805306368,
+      "expected_total": 1,
+      "count_scope": "One complete diagnostic family; every original assertion must finish. Not a count of assertions or exhaustive physics.",
+      "json_output": "logs/runner-cache/temporal_wilson_integer_local_filling_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/temporal_wilson_integer_local_filling_check_2026_09_16.txt",
+      "helper_execution": "Standalone program. No sibling run is imported or executed; coordinator captures each of the six exactly once.",
+      "failure_policy": "Preserve stdout/stderr/exit/resources and any partial JSON under a new immutable attempt record; do not retry or raise caps automatically."
+    },
+    {
+      "runner": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+      "source_sha256": "fc22a65bb2eb260cc273f786288f956ce512106739907b30946df7f534471ede",
+      "command": [
+        "python3",
+        "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py"
+      ],
+      "timeout_seconds": 180,
+      "process_tree_rss_limit_bytes": 805306368,
+      "expected_total": 1,
+      "count_scope": "One complete diagnostic family; every original assertion must finish. Not a count of assertions or exhaustive physics.",
+      "json_output": "logs/runner-cache/temporal_wilson_third_curl_variation_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/temporal_wilson_third_curl_variation_check_2026_09_16.txt",
+      "helper_execution": "Standalone program. No sibling run is imported or executed; coordinator captures each of the six exactly once.",
+      "failure_policy": "Preserve stdout/stderr/exit/resources and any partial JSON under a new immutable attempt record; do not retry or raise caps automatically."
+    }
+  ],
+  "requirements": [
+    "Root explicitly dispatches future builder after PR8030 shared-map landing and current-base advancement.",
+    "Staged candidate cheap schema2 preflight and original reviewer cold confirmation precede any execution.",
+    "External root wrapper enforces180s and768MiB process-tree RSS for each sequential program; source declaration is not enforcement.",
+    "Freeze source, all declared inputs and helper registry bytes before captures. Do not write empty JSON or cache placeholders.",
+    "Use actual runner_cache API to authenticate and save stdout; direct execution alone is not a source/input-bound cache.",
+    "No automatic sibling runs: explicit packet helper registration includes source and evidence, not invocation.",
+    "Keep historical23mutation outcomes and two failures immutable; no mutation reruns are planned.",
+    "Final record must bind new actual output hashes and original reviewer final evidence confirmation, never restamp historical caches."
+  ],
+  "resource_evidence": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-affected-fix-confirmation-v3.json",
+    "sha256": "4191a7f78d80ec0017af5b4975b294427d96d14dad2948fa4c09ad3d2afd89a5"
+  },
+  "prepared_reference": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-author-prepared-v3.json",
+    "sha256": "d4879c87cd2c9244bd33b44b15d3b34c793b2929144a0df4188e505626b9917d"
+  },
+  "prior_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-capture-plan-v1.json",
+    "sha256": "923ef78b20ef7083a9381861fe1901ec70b7fd5b03719daa2e964fb45ad0635c"
+  }
+}

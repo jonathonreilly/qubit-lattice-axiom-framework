@@ -1,0 +1,88 @@
+{
+  "status": "FUTURE_BUILDER_V2_AND_CAPTURE_PLAN_V2_READY_FOR_ROOT_DISPATCH_ONLY",
+  "builder": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-build-staged-draft-v2.py",
+    "sha256": "1df8e3754d3f2053f38e0619339583a01cdfaa3088cae8fa459e49d66fe96083"
+  },
+  "capture_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-capture-plan-v2.json",
+    "sha256": "a979f2f9cb89d5e4b73473c1fe5e0f2f0eff5b5b033a4552ad22e7b381059aa5"
+  },
+  "owned_freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-owned-prepared-v3-freeze.json",
+    "sha256": "89328b3ce6a77692d72e3f16cd8d52e007ff9bc48704df4350a460ecf5a3290f"
+  },
+  "prepared": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-author-prepared-v3.json",
+    "sha256": "d4879c87cd2c9244bd33b44b15d3b34c793b2929144a0df4188e505626b9917d"
+  },
+  "confirmation": {
+    "path": "/private/tmp/review-drain-20260915/drain8163-affected-fix-confirmation-v3.json",
+    "sha256": "4191a7f78d80ec0017af5b4975b294427d96d14dad2948fa4c09ad3d2afd89a5"
+  },
+  "syntax": "compiled in memory; builder not executed",
+  "actual_metadata_checks": [
+    {
+      "runner": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+      "ordered_inputs": [
+        "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "fingerprint": "92685a30703b64333b0f5338c15a8d6255c99ea990bbd30d97d0f8607885ee61",
+      "timeout": 180
+    },
+    {
+      "runner": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+      "ordered_inputs": [
+        "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "fingerprint": "92685a30703b64333b0f5338c15a8d6255c99ea990bbd30d97d0f8607885ee61",
+      "timeout": 180
+    },
+    {
+      "runner": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+      "ordered_inputs": [
+        "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "fingerprint": "a4808769c5b1fc9fe2f902e29e2b29ba1b1bdb3bc1df96b3372a6943907c11f8",
+      "timeout": 180
+    },
+    {
+      "runner": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+      "ordered_inputs": [
+        "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "fingerprint": "f40b1d849781fe29171a8460c658093289b8b463e1903a2b4a69045b21ccd234",
+      "timeout": 180
+    },
+    {
+      "runner": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+      "ordered_inputs": [
+        "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "fingerprint": "92685a30703b64333b0f5338c15a8d6255c99ea990bbd30d97d0f8607885ee61",
+      "timeout": 180
+    },
+    {
+      "runner": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+      "ordered_inputs": [
+        "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "fingerprint": "92685a30703b64333b0f5338c15a8d6255c99ea990bbd30d97d0f8607885ee61",
+      "timeout": 180
+    }
+  ],
+  "original_dispositions": 165,
+  "owned_files": 120,
+  "remaining": "Root current-main advance and explicit guarded staging dispatch, source preflight and original-reviewer cold confirmation before any capture",
+  "executions": {
+    "builder": 0,
+    "primaries": 0,
+    "gates": 0
+  },
+  "mutations": "ROOT artifacts only; no checkout source/registry/index changes"
+}

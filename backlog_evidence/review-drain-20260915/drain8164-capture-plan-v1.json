@@ -1,0 +1,187 @@
+{
+  "status": "PLAN ONLY; NOT EXECUTED",
+  "concurrency": 1,
+  "programs": [
+    {
+      "runner": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "216-link4D curl precision (~0.36MiB square),512 Fourier modes and13 jumps; finite quadrature",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction",
+      "source_sha256": "f565de393364d08d4becee29a48b4b53f09c4ad6e4f3bb37c5d20ab1457bc063",
+      "command": [
+        "python3",
+        "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py"
+      ],
+      "expected_total": 2,
+      "completed_families": [
+        "weighted_gaussian_check",
+        "integer_temporal_blocking"
+      ],
+      "json_destination": "logs/runner-cache/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.txt",
+      "helper_execution": "No local helper import."
+    },
+    {
+      "runner": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "65x65 transfer matrices;625-state sparse eigsh k8 and conjugate gradient;90-digit recurrence160",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction",
+      "source_sha256": "3f87037c9d628e39c04e6b4e532a70df3c09c3b24d940d74880623a12702ca86",
+      "command": [
+        "python3",
+        "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py"
+      ],
+      "expected_total": 3,
+      "completed_families": [
+        "transfer",
+        "electric_response",
+        "ground_tail"
+      ],
+      "json_destination": "logs/runner-cache/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.txt",
+      "helper_execution": "No local helper import."
+    },
+    {
+      "runner": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "73x8192 harmonic grid (~4.6MiB),625-state sparse solve and at most24-character Gram; shared02 definitions only",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction",
+      "source_sha256": "f01b29d46d5d32774326458f3602b3b67cf3c3903ce162b9aa9529bae5029d4c",
+      "command": [
+        "python3",
+        "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py"
+      ],
+      "expected_total": 3,
+      "completed_families": [
+        "one_plaquette",
+        "two_square",
+        "cube"
+      ],
+      "json_destination": "logs/runner-cache/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.txt",
+      "helper_execution": "03 imports02: note01/02 reads and scipy/mpmath initialization;02 run() is guarded and does not execute on import."
+    },
+    {
+      "runner": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "81x81 heat matrices,144-plaquette geometry,4096x12 cube corners (~0.38MiB)",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction",
+      "source_sha256": "735b86f3af718e2b873afe2704b5bad526a5e5da5513ec3d80950111d256867f",
+      "command": [
+        "python3",
+        "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py"
+      ],
+      "expected_total": 4,
+      "completed_families": [
+        "heat_comparison",
+        "geometry",
+        "circle_bounds",
+        "principal_cube_event"
+      ],
+      "json_destination": "logs/runner-cache/local_rotor_density_and_finite_template_bounds_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/local_rotor_density_and_finite_template_bounds_check_2026_09_16.txt",
+      "helper_execution": "No local helper import."
+    },
+    {
+      "runner": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "225x225 full eigensystems retained for finite differences;49x49 lifted kernel",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction",
+      "source_sha256": "958d2496a9f6581bb9f87d5d54f6bc4366057adabbd832fec4585a772600690c",
+      "command": [
+        "python3",
+        "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py"
+      ],
+      "expected_total": 3,
+      "completed_families": [
+        "connected",
+        "covering",
+        "negative_coupling_control"
+      ],
+      "json_destination": "logs/runner-cache/compact_rotor_ground_correlation_comparison_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/compact_rotor_ground_correlation_comparison_check_2026_09_16.txt",
+      "helper_execution": "No local helper import."
+    },
+    {
+      "runner": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "Exact Fraction arithmetic on12 edges and4 faces",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction",
+      "source_sha256": "1aaa604fc5ae5fde96980403a27f9dda2e6abb2ca580dc581589a8a32c575e41",
+      "command": [
+        "python3",
+        "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py"
+      ],
+      "expected_total": 1,
+      "completed_families": [
+        "exact_failure_certificate"
+      ],
+      "json_destination": "logs/runner-cache/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.txt",
+      "helper_execution": "No local helper import."
+    },
+    {
+      "runner": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 1073741824,
+      "basis": "Radial size ceil(8*1024.5)=8196; stebz selects eigenvalues in[-100a,0],vectors8196\u00d7selected modes. Even full real eigenvector array~512MiB;1GiB operational ceiling includes LAPACK/library workspace. Selected count observed only during eventual capture.",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction",
+      "source_sha256": "de138383b921432cd9a25d23bfd8814fc168b81b7302fbd7732d19e6ab1eee19",
+      "command": [
+        "python3",
+        "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py"
+      ],
+      "expected_total": 4,
+      "completed_families": [
+        "radial_heat",
+        "cube_mixture",
+        "circle_convolution",
+        "infinite_mean_cusp"
+      ],
+      "json_destination": "logs/runner-cache/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.txt",
+      "helper_execution": "No local helper import."
+    },
+    {
+      "runner": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+      "timeout_seconds": 180,
+      "process_tree_rss_cap_bytes": 402653184,
+      "basis": "160000 Gaussian points\u00d78 noise entries~9.8MiB; order16 and20 quadratures coexist, several field/trig/gradient arrays (~10MiB each); sequential evaluates, no160000-square matrix.384MiB includes temporary arrays and libraries.",
+      "estimate_kind": "Source-derived operational ceiling, not measured peak or guaranteed bound",
+      "failure_policy": "Sequential bounded capture only after cold/cheap; preserve failure; no fixture/tolerance reduction",
+      "source_sha256": "b27de02473bde563ac318dc5514975e8e9ccdd7ac8d08aef639f9f4c497db0c1",
+      "command": [
+        "python3",
+        "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py"
+      ],
+      "expected_total": 3,
+      "completed_families": [
+        "cosine_bridge",
+        "endpoint_nonconvex_control",
+        "time_limit"
+      ],
+      "json_destination": "logs/runner-cache/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.json",
+      "stdout_cache": "logs/runner-cache/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.txt",
+      "helper_execution": "No local helper import."
+    }
+  ],
+  "requirements": [
+    "Only after guarded staged freeze, cheap preflight and original cold confirmation.",
+    "Whole-process-tree wall/RSS enforcement includes imports; preserve stdout/stderr/JSON/status/resources on failure.",
+    "Do not reduce fixtures/tolerances or fabricate current caches/placeholders.",
+    "Totals count completed finite families, not historical assertion counts or analytical theorems."
+  ]
+}

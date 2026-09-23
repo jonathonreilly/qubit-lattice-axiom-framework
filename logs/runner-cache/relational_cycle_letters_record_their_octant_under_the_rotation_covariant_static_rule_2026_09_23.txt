@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_2026_09_23.py
+runner_sha256: da650e7dce0dd2fb2397be5b814fd77983bca0325377338d7be9dd040f8eb778
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 270.01
+status: ok
+----- stdout -----
+== A. The letters ==
+[PASS] the letters of open PR #8752 decode every difference, and each cycle sums to 0 mod 211
+
+== B. Covariance ==
+[PASS] the covariant rule's stars are closed under all 48 signed axis permutations; the fixed-octant rule's are not closed under a quarter turn :: 24576 covariant stars, 768 fixed-octant stars
+
+== C. The landed ice torus (side 4) ==
+[PASS] the covariant rule's static records are exactly the 24576 oriented cycle spirals :: 6 frames x 8 raw senses x 8 orientations x 64 phases
+
+== D. Readouts ==
+[PASS] every site reads the same frame and the same orientation of each axis, and all 8 octants occur :: the records carry their own octant
+[PASS] every site reads its parity vector x mod 2 up to one global phase: the role pattern
+
+== E. Nearest-neighbour form ==
+[PASS] (U) under the covariant rule: no two allowed stars share their six neighbours; the rule admits one value per site :: 48 sampled records x 64 sites x 211 values; positive control mod 37: 864 shared stars
+
+== F. The fixed-octant records ==
+[PASS] the fixed-octant rule's records are the covariant records with every axis forward and one common sense :: 768 of 24576
+
+== G. Contrast: an open box ==
+[PASS] on the side-2 box each boundary step may go either way, so the covariant rule has more than 100000 records :: the octant is recorded where the lines close, as on the torus
+
+[PASS] budget: every search stayed under its node cap :: 1883006 nodes, 270 s
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

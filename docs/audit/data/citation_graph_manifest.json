@@ -1,6 +1,6 @@
 {
  "edge_count": 14059,
- "node_count": 6490,
+ "node_count": 6491,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -725,6 +725,10 @@
   "admissibility_registered_partition_barycenter_pushforward_bounded_theorem_note_2026-08-12": {
    "deps_hash": "2b42b09047b0",
    "out_degree": 4
+  },
+  "admissibility_rule_a_record_that_cannot_read_the_field_from_its_own_motion_hops_on_its_own_clock_and_with_kept_books_records_attract_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_covariant_frame_constructions_cube_orbits_and_antipodal_kernel_propagation_bounded_theorem_note_2026-09-15": {
    "deps_hash": "d0249e15a42a",

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 97 — author checks (not a review PASS)
+The first draft's principle (block 54's clause read for records) withdrawn after T2 showed it does not decide; the locality principle stated on its own; title and claim id changed before the gates. Census 6/6 in family.

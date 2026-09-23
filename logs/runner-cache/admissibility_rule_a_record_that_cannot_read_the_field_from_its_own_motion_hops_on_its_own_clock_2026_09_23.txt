@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_record_that_cannot_read_the_field_from_its_own_motion_hops_on_its_own_clock_2026_09_23.py
+runner_sha256: e59494ba5dbbbe7958c55d5643418e81455d91fa3096e65a2e820c8c60b1c795
+input_fingerprint_sha256: 723a6b1c534bda9285b3e311f804a8d8917d0a57edd2005c5f0fe62b0e4a3ef9
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_RECORD_THAT_CANNOT_READ_THE_FIELD_FROM_ITS_OWN_MOTION_HOPS_ON_ITS_OWN_CLOCK_AND_WITH_KEPT_BOOKS_RECORDS_ATTRACT_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: every rate w_x^a w_y^(1 - a) is of degree one (no master clock: all rates times t gives the rate times t); the rate per tick of the record's own site is (w_y/w_x)^(1 - a), whose derivative in the neighbour's clock vanishes identically only for a = 1; timed by the bond a record hops sqrt(w_y/w_x) times per own tick, timed by the site entered w_y/w_x times: only when the site it occupies times the hop does a record's own motion carry no trace of the field
+PASS: C1 T2: for an amplitude on a ring of four (hermitian nearest-neighbour H, rates w_0..w_3 symbolic), timing by the site entered (WH), by the bond (sqrt(W) H sqrt(W)) and by the site left (HW) are similar generators - one dynamics in three sets of variables; for one record the three timings have the stationary laws w^(1 - 2a) = 1/w, 1, w (checked exactly) - three different dynamics, the first and last differing by w^2 per record: timing is a matter of variables for amplitudes and of physics for records
+PASS: D1 T3: with a = 1 (T1) and block 55's kept books, log(kappa) = -(gamma/6) E/wbar (gamma, E, wbar > 0), the pair term of block 95 is U(r) = 6 log(kappa) G(r) = -(gamma E/wbar) G(r); on 4^3, U(1,0,0) - U(2,0,0) = -(gamma E/wbar)(G(1,0,0) - G(2,0,0)) = -(gamma E/wbar)(228/7680) < 0: records attract, as amplitudes fall (block 54)
+PASS: E1 T1 (directions): with six empty neighbours at clocks w_n0..w_n5 (symbolic), a record timed by the site it occupies (a = 1) goes to each with probability exactly 1/6 whatever the clocks; timed by the site it enters (a = 0) it goes to neighbour n with probability w_n/sum(w): only the first leaves no trace of the field in where the record goes
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the own-tick rate of the timing family, symbolic in the exponent and both clocks
+per_site: executed - the stationary laws of one record on a ring of four for three timings, symbolic clocks
+per_mode: executed - similarity of the three amplitude generators on a ring of four, symbolic clocks and complex hopping
+per_block: executed - the sign of the pair term on 4^3 with the kept books
+lattice_wide: T1 for every degree-one rate law (the power family symbolic; the general form w_x phi(w_y/w_x) by the same argument); T2 for every finite graph (similarity is algebraic; the laws by block 95 T1); T3 wherever block 95 T4 holds; the local-time principle and the kept books are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: which end of a hop keeps its time - a record's hop rate per own tick is field-free only when the site it occupies times the hop (a = 1); for amplitudes the three timings are one dynamics, for records three laws; with a = 1 and block 55's kept books (log kappa = -(gamma/6)E/wbar) block 95's pair term attracts; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

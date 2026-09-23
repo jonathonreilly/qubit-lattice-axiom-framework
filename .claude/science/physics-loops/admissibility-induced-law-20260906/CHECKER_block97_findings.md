@@ -1,0 +1,5 @@
+# Block 97 — control and findings (2026-09-23)
+
+1. **Correction made while writing.** The first draft took block 54's local-time clause ("the amplitude at a site advances in that site's own time") as the principle fixing a = 1. T2 shows that clause does not decide for records: for amplitudes all three timings are one dynamics, and read as the arrival of a record at a site the clause would give a = 0 (repulsion, a record heading for fast clocks). The note now states its own principle — a record cannot read the field from its own motion — and T1 shows it has the unique solution a = 1. Title and claim id changed accordingly before the gates.
+2. **The alternatives named.** Bond clocks (block 59's bond rates) would give a = 1/2 and no pull; the arrival reading a = 0 and repulsion; both let a record read the field from its own hopping (√(w_y/w_x) or w_y/w_x per own tick).
+3. **Name discipline.** Einstein named only under Prior art and Imports, as motivation; the forbidden phrase for his principle is not used.

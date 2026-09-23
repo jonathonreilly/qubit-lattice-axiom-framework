@@ -78,3 +78,6 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## 2026-09-23 refresh after block 97 (the sign)
+(1) One geometry: the clock field of a condensed clump (block 95) bending a route's waves (block 54's walk) — deflection against the pair law, one number log κ. (2) The delayed clock law: does detailed balance with block 95's law survive a field that follows the records late; does a lagging field trap a record on its own trail? (3) Formation timed by the site's clock: the pair law, the jam. (4) The hypothesis trace of blocks 53–56.

@@ -1,0 +1,191 @@
+[detached HEAD 7ba5bd0fe3] Preserve independently reviewed source unit PR8029
+ Date: Tue Sep 22 20:24:23 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 62 files changed, 1069 insertions(+)
+ create mode 100644 docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_000_ARTIFACT_PLAN.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_001_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_002_CLAIM_STATUS_CERTIFICATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_003_FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_004_FINAL_MAIN66_LOCK_RELEASE.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_005_FINAL_MAIN66_READINESS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_006_FINAL_MAIN66_STRICT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_007_FINAL_MAIN66_SYNC_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_008_FINAL_MAIN66_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_009_FINAL_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_010_FINAL_VOCAB_LINT.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_011_FROZEN_PORT_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_012_FULL_PIPELINE.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_013_GOAL.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_014_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_015_HASHES.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_016_JSON_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_017_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_018_LOCK_RELEASE.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_019_N1_N8.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_020_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_021_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_022_PACK_INDEX.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_023_PARENT_VALIDATION_METADATA_CATCHUP.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_024_PR_BACKLOG.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_025_PR_BODY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_026_PUBLICATION_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_027_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_028_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_029_REVIEWED_UPSTREAM_SYNC_20260907.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_030_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_031_ROOT_CANONICAL_PORT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_032_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_033_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_034_STATUS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_035_STDOUT_RECEIPT.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_036_STRICT_LINT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_037_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_038_UPSTREAM_SYNC_PIPELINE.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_039_UPSTREAM_SYNC_READINESS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_040_UPSTREAM_SYNC_STRICT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_041_UPSTREAM_SYNC_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_042_CONTROL_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_043_DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_044_NATIVE_DOUBLE_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_045_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_046_ROOT_DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_047_ROOT_PRIMARY_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_048_ROOT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_049_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_050_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_051_validated_claims_before_generated_cleanup.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_052_validated_readiness_before_generated_cleanup.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_053_GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_054_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_055_gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/8029_056_gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8029/README.md
+ create mode 100644 docs/work_history/review_loop/pr8029/original-manifest.json
+ create mode 100644 logs/runner-cache/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.txt
+ create mode 100644 scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py
+[detached HEAD caf5b2d5dd] Preserve independently reviewed source unit PR8162
+ Date: Tue Sep 22 20:24:23 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 98 files changed, 3138 insertions(+)
+ create mode 100644 docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/review_loop/pr8162/README.md
+ create mode 100644 docs/work_history/review_loop/pr8162/manifest.json
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/001-CLAIM_STATUS_CERTIFICATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/002-GOAL.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/003-HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/004-MANIFEST.sha256.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/005-OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/006-READING_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/007-README.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/008-STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/009-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT1.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/010-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT1.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/011-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT2.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/012-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT2.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/013-BLOCK03_ALL_MODE_STATES_ATTEMPT1.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/014-BLOCK03_ALL_MODE_STATES_ATTEMPT1.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/015-BLOCK03_ALL_MODE_STATES_ATTEMPT2.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/016-BLOCK03_ALL_MODE_STATES_ATTEMPT2.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/017-BLOCK03_ALL_MODE_STATES_ATTEMPT3.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/018-BLOCK03_ALL_MODE_STATES_ATTEMPT3.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/019-BLOCK03_ALL_MODE_STATES_ATTEMPT4.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/020-BLOCK03_ALL_MODE_STATES_ATTEMPT4.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/021-BLOCK03_COMMUTATOR_DIAGNOSTIC.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/022-BLOCK03_COMMUTATOR_DIAGNOSTIC.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/023-BLOCK03_RESOLUTION_DIAGNOSTIC.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/024-BLOCK03_RESOLUTION_DIAGNOSTIC.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/025-FORMULA_MUTATIONS_ATTEMPT1.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/026-FORMULA_MUTATIONS_ATTEMPT1.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/027-block02_calibrated_transfer_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/028-block03_all_mode_and_states_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/029-BLOCK01_WORKING_TRANSFER_MATCHING.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/030-BLOCK02_CALIBRATED_CLOCK_ROTOR_TRANSFER_THEOREM.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/031-BLOCK02_VARIANCE_CALIBRATED_TEMPORAL_TRANSFER_WORKING.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/032-BLOCK03_ALL_MODE_COERCIVITY_AND_FINITE_VOLUME_STATES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/033-BLOCK03_CHARGED_RING_CHECK_CONVENTIONS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/034-FOCUSED_VERIFICATION.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/035-FOCUSED_VOCAB.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/036-FOCUSED_VOCAB.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/037-NUMERICAL_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/038-OPEN_PR_SOURCE_SNAPSHOT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/039-PERSONAL_PROOF_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/040-PREMISES_AND_BOUNDARIES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/041-block02_calibrated_transfer_attempt1_source.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/042-block03_all_mode_states_attempt1_source.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/043-block03_all_mode_states_attempt2_source.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/044-block03_all_mode_states_attempt3_source.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/045-block03_commutator_diagnostic.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/046-block03_resolution_diagnostic.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/047-02_alias_normalization.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/048-02_alias_normalization.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/049-02_alias_normalization.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/050-02_four_links_as_one.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/051-02_four_links_as_one.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/052-02_four_links_as_one.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/053-02_gauss_basis_normalization.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/054-02_gauss_basis_normalization.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/055-02_gauss_basis_normalization.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/056-02_poisson_variance_factor.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/057-02_poisson_variance_factor.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/058-02_poisson_variance_factor.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/059-02_restore_tiny_gap_roundoff.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/060-02_restore_tiny_gap_roundoff.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/061-02_restore_tiny_gap_roundoff.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/062-02_spatial_factor.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/063-02_spatial_factor.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/064-02_spatial_factor.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/065-02_variance_factor.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/066-02_variance_factor.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/067-02_variance_factor.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/068-03_false_strong_floor.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/069-03_false_strong_floor.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/070-03_false_strong_floor.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/071-03_missing_gibbs_normalization.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/072-03_missing_gibbs_normalization.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/073-03_missing_gibbs_normalization.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/074-03_product_factor.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/075-03_product_factor.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/076-03_product_factor.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/077-03_reversed_charge_offset.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/078-03_reversed_charge_offset.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/079-03_reversed_charge_offset.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/080-03_reversed_winding_hop.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/081-03_reversed_winding_hop.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/082-03_reversed_winding_hop.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/083-03_unsandwiched_transfer.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/084-03_unsandwiched_transfer.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/085-03_unsandwiched_transfer.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/086-03_wrong_gauss_charge.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/087-03_wrong_gauss_charge.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/088-03_wrong_gauss_charge.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/089-RESULTS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8162/originals/090-run_formula_mutations.py.gz
+ create mode 100644 logs/runner-cache/clock_all_mode_finite_graph_states_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/clock_variance_calibrated_transfer_check_2026_09_16.txt
+ create mode 100644 scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py
+ create mode 100644 scripts/clock_variance_calibrated_transfer_check_2026_09_16.py
+FROZEN caf5b2d5ddfe1a6a7890c877d301225e66890f78 sources 160 inputs 169 notes 3

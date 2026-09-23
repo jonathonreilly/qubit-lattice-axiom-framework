@@ -1,0 +1,980 @@
+{
+  "status": "ORIGINAL MATHEMATICS REVIEW COMPLETE; NEGATIVE PACKET LIMITATION / PARTIAL SALVAGE REQUIRED",
+  "reviewer": "/root/review_8012",
+  "head": "3dee7c038c60dd9aaddbcc186207f165367cc274",
+  "delta_base": "c5f58f84246c7ee938152dcc317264f8b1384a3f",
+  "review_base": "48334d7f83137d5a18ffd4962623a32a6778a637",
+  "original_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ARCHIVE_WHITESPACE_RECEIPT.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "abf0895a5421cc15fdbd576446677c719e0246cd",
+      "sha256": "dd8343940ef13a0af4f043adc8d104bb1a75950b5689cd2c2e352fd7a75a670d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ARCHIVE_WHITESPACE_RECEIPT.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ARTIFACT_PLAN.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2f8a11e2584e36c82219d8e5323f906f29ab7be7",
+      "sha256": "d31ace469768ff576b3c23504b5cdf8e836b06f2e048d52554dc65d0d06df2c9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ARTIFACT_PLAN.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5c2f42de61d6d5eaa3306a4b79b85a409b1eefe7",
+      "sha256": "adb8de813b6b2b6cf8905dadff18de545bcd69e35ccdec09fbb1f710c51294c3",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "39cf609c38c078646e7279eb23780c5343a45d30",
+      "sha256": "e328a4b436986c0c33620098be270ba2a5b31283ea34ab4a4fd2357d57caa02a",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7eab0365e435a4bcc28b56aad86e33ad17506551",
+      "sha256": "3d2919222826dfdb35a4394d9732f012b25b51b4205b13b66b8431dbaab1be3a",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_READINESS.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "47e0dd3452113b74dbc89d2c43ef0f111b6c980e",
+      "sha256": "7e28aa8f5847e1512a1403d1314c41f4b3f16af0ebff8aa9d6162c5f1246a412",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_READINESS.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_STRICT.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "de1a59f00ce5309013fa60b9c46b615e489c4980",
+      "sha256": "d85f9e1ec3e8c509885be8796ecd2d388d02e091e08ca833442c2d6d4028acd0",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_STRICT.log",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "e20ff0a0cff1dfc9564228d39756a893e5ea845f",
+      "sha256": "3a063ec33be3c1b58ac7706905ff8176b80ec941ae6d38cccc22bedb9d562c89",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "287a7c8225f00d7b88045ba5ea22a99ae70a8dac",
+      "sha256": "e5573ad9694e915a73a4bdacb39f85f4c1e5656eca62a9f3cb873dc33760e164",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_MAIN66_VALIDATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2906832c0de9bdb12bd547efeebbe97567d02339",
+      "sha256": "68b0e2e54cddfcbd03e4630a6955945a8c7a2342da93b136990f2fa9cd142c4d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_VALIDATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_VOCAB_LINT.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FINAL_VOCAB_LINT.txt",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FROZEN_PORT_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "933ea00794adf8a491b599a0de136b0f83a39a60",
+      "sha256": "57aa0342d24887141cadd81cfee022ae64dc532b6b3b0327a0ee4932de012b0d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FROZEN_PORT_RECEIPT.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FULL_PIPELINE.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "e7ed0ec363db284ef02e9898c3209aee4f57972f",
+      "sha256": "b6fbd9340e024e8de77af79c0d694dfd34c03ae3224ded4e70b13d8f5cbb848a",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/FULL_PIPELINE.log",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/GOAL.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "9db0a5479aca8f0457c20939e9ad0ec41e4d5930",
+      "sha256": "1f259f42d9bcc8a2f2c48e90a56d897d1e0526963ca2e8365868cca6f3afe914",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/GOAL.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/HANDOFF.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "31bcb3877db529d865507c908674a8b63e6024fc",
+      "sha256": "909a0ef169b186829fe9a6fdc5598099a0cdb12840ec8d3eae033ab56b2c3efe",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/HANDOFF.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/LITERATURE_BRIDGES.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "cce16b08dc6031a6cac929feeed3aa17cbc098cd",
+      "sha256": "72c76e8b7d37471e548fcfaaf4c581a0a39ec25512c5139725e6baa2b77bdcea",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/LITERATURE_BRIDGES.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/LOCK_RELEASE.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/LOCK_RELEASE.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2b57643508b10a52dea2c5db275521a00b2bc468",
+      "sha256": "b241ef36a9a3a4d607e6a706826d6edd0ae2ef79a6428c02016b6a7d4c1ea580",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/NO_GO_LEDGER.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b9521a09a6c1fc402d8ee6316f7706885caabaf5",
+      "sha256": "5c866c2fd00004649792720bc168b252109b538886900f0bcf87a71e42a73193",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/NO_GO_LEDGER.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/OPPORTUNITY_QUEUE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7c7be36e3aa8485bb044a3ee5a90da2a6cfd4185",
+      "sha256": "f2f88fb046f5ddc5f3b941fd580e261d9cdb675abec448798e5f02b28ceda84e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/OPPORTUNITY_QUEUE.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PACK_INDEX.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b4a7a55c912a292270e4dca3c1304c757b6449e0",
+      "sha256": "4e19b45617f898932b38515636232119d90cf83313260aa28e44730630f9e2f4",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PACK_INDEX.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "a977e4ac529d6d572d8f26223a69634ac7ed60b9",
+      "sha256": "bb949bd2592ef4099a02d883c0f67fe771e13acbb6c92f26d909e87e0f8711f3",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PORT_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7225fff64ac2bb761e765c24e8c1ad893d1adf99",
+      "sha256": "e543386d9badbd9ef1085d48e9996fb1fbd7b093f75bd5cbebfcd9a1ffdcbaed",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PORT_RECEIPT.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PORT_VOCAB_LINT.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PORT_VOCAB_LINT.txt",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PROOF_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "8d85a18a43ed1d2e8971286f00d3c80aac785f8a",
+      "sha256": "a3dbe09256e77c4bd6064d4f775ce9b9de664e7265651ab03da56a19c2bc1ab7",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PROOF_REVIEW.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PR_BACKLOG.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "aaa36835ec4c436af6beb3e9ab59c064f15e3a3d",
+      "sha256": "3f92e23e3ebf931697d42ef557fb35e33d3c643ff54ad9f20b7c67324188d2fb",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PR_BACKLOG.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PR_BODY.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "fd11b83853dca75b7d213a5c82a920d6928588f2",
+      "sha256": "fb88388e1ca9210de9b29628befc7f9a75baec59a58718b86e0054031be1f95f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PR_BODY.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PUBLICATION_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "3fcc914389ff61597d507d66b2bf35885a9a1f55",
+      "sha256": "089992df402fd34020c236a2f5f10441915f359424b9159ec76f9adee991a4cd",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/PUBLICATION_RECEIPT.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "33fbbf4212d43d4bb0ddf6d97ae7650cb8c3cbf5",
+      "sha256": "531a6f476fe23d8ad88c7680d5083e8879f309be26b399aa6ff5d16e75a9781e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/REVIEW_HISTORY.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "9701333d030625bf8d4126bb5a6344f7fae8c3c1",
+      "sha256": "b76dcff4c9ad668ea8eb7b3ae980b857f2d95d6aca9434f254a30f008fbb025a",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/REVIEW_HISTORY.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "175fe667dbe32f63be0eb5d9c3f7e14a0929db09",
+      "sha256": "dbaec6271b7603ddd96e150b4ad942582adec325ee663849a66b13faa4950690",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ROOT_CANONICAL_PORT_REVIEW_TIMESTAMP_CORRECTED.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "05c97157f287441bd99ea977dfd7b96ead3d09c0",
+      "sha256": "b711e7896c6b4e58c62a488f3ff6c469a66f444f33bf32039f4549e4f5ffb91d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ROOT_CANONICAL_PORT_REVIEW_TIMESTAMP_CORRECTED.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ROOT_REVIEW_TIMESTAMP_CORRECTION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0eac7abe481e83908635e9c0044a626b7deebf8c",
+      "sha256": "8a093922b5fc2f0ca1bb069210ae0232b9409061fe799f43e3551e2bd9d1b5cf",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ROOT_REVIEW_TIMESTAMP_CORRECTION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ROUTE_PORTFOLIO.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5b70c59c751bf5ccd780890b0a1915b9449b4183",
+      "sha256": "116681be19ccd52ecdfd8d05c596659cd2c43227c1b55340875f307a077a090b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/ROUTE_PORTFOLIO.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/SCOPED_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "a2795f3a01d7da80b26a556c3dab0103e10bb9a2",
+      "sha256": "c03640160b65beba6a84154115308043f7f111b1823bdd5a5f9a0725b07744bc",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/SCOPED_VALIDATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/STAGING_VALIDATION.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "002a4670d34dade3847148cc1f9141a3c29ae8a4",
+      "sha256": "d3685cad532cf27bf47303c11134f126dc2d29e084c2a4a1c5bc80784800fd09",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/STAGING_VALIDATION.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/STATE.yaml",
+      "change": "A",
+      "mode": "100644",
+      "blob": "9b94f11aa85e0b4eedc808bfb75efc6eefa3c1a5",
+      "sha256": "f2fe48bc2735be3b5df744806026f5235e13db99c5b1c283df1034b9ae437ec4",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/STATE.yaml",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/STRICT_LINT.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b3874a75cac81a93e4d53b71d867d745fe39bd66",
+      "sha256": "e6049fc871da6b0815945ebaa40a8c1307fc9a2cae9e966228a0053d8b3bd1e9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/STRICT_LINT.log",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/TRACE_GATE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "121449762e67fc4d1367def80c25173e5f2907a4",
+      "sha256": "add0d20ba6beff07cb6e5c4a336dda318b82c4d59f0960a7869fcc61e160a4a4",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/TRACE_GATE.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0ef4247f1e613f75a1b91763075fcfbf558da8e8",
+      "sha256": "2130e73e5a8a4cd7382134fc1415e23637efcf8627d0ab88ff3c2804c06c8a43",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/UPSTREAM_SYNC_READINESS.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "eb346c1dd1196ec0f5e572ea848e1e33ebe13870",
+      "sha256": "f74b16352ef8a227243e83af7ad3d6a1150c9e2586c1c53d6ec179063ddf0bcf",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/UPSTREAM_SYNC_READINESS.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/UPSTREAM_SYNC_STRICT.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "84fcb46433a8785c35ce748299733499e46e76aa",
+      "sha256": "d5f68c2eec49e4f1d9f43425aeacec7966d52d206e6e00ba80dd41565958544e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/UPSTREAM_SYNC_STRICT.log",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "d3f635d14926f83e01b7a68c54f53ba378c41923",
+      "sha256": "5664d780bb2d18bdd7efad1ca4b73aa3d5357668ac1e92243d75d812389aca35",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/CONTACT_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "8d0506ecfd7093fdfe328a6b4079f061d3fb6c78",
+      "sha256": "d45236b5c80f2ed035b41271ab3fa2e139dac246753504944fb859ced1f80ef5",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/CONTACT_REVIEW.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/DERIVATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5c185e914148d001b0a4d6188af17895b71cc5f9",
+      "sha256": "5a681af7ba8c8dcf01fb036a49ef3c5af68f034d7daf7e094c9b07661296fefe",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/DERIVATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/DERIVATION_BEFORE_FDD_SCOPE_CLARIFICATION_0e93e579.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "73d637566e281001d5fd6d689c8007a594cbeb3c",
+      "sha256": "0e93e579bef948dbcbf07020a74140960727fb85f2506ca75a981af877a37484",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/DERIVATION_BEFORE_FDD_SCOPE_CLARIFICATION_0e93e579.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/FDD_SCOPE_CLARIFICATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0e406d1b56412a5db7d2497b96415193092976ca",
+      "sha256": "32660300f769489fa9886a0ef12e25279cc076a964987a205c0d851cbb476f3f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/FDD_SCOPE_CLARIFICATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/FDD_SCOPE_CLARIFICATION.original.base64",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b2f53c170e1074f5be6adb0bd603a296de7053a3",
+      "sha256": "f7ea57b6932e97fec84189a284a73f37d00228e0768b0f8b18c0750312b09b2b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/FDD_SCOPE_CLARIFICATION.original.base64",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/FINITE_CONTROLS_PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "021429123282e973f781b68d64831a1b513f8002",
+      "sha256": "d3904bb8a6758e22dd05f530107a6e4e7e2cd305fdec95d32ca8ec7c1627424a",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/FINITE_CONTROLS_PREREGISTRATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/PORT_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7225fff64ac2bb761e765c24e8c1ad893d1adf99",
+      "sha256": "e543386d9badbd9ef1085d48e9996fb1fbd7b093f75bd5cbebfcd9a1ffdcbaed",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/PORT_RECEIPT.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "f13e169eba0cfcf8ac931cbed03002b79658a401",
+      "sha256": "8e97a3642550f90b128e0cefc925d33a2cea79c25951893fc4c46fa8f94485c9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/PREREGISTRATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/ROOT_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5eeec1692113647b4410cc641e41ad3ad405c430",
+      "sha256": "73b5001522fb0eb09912336bf547f1c2589a70596c662a8baa18f6166dccac95",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/ROOT_REVIEW.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "9d856b7e3b8d724be65fce4065d5bb21e384df4c",
+      "sha256": "1749e37bdbccfef686bfa2fa3106a50a0040813e085dc0f2514b6f57d278a172",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/check.py",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/native_canonical_result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "4a9d1694bd1c705a2fbf12c46f0f9ab68bf1377b",
+      "sha256": "452626876ffebe7011980c218e7f7b6d43c47fcdea161278f55de973cb99dcaa",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/native_canonical_result.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/native_canonical_stdout.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "a97b1a3cf9cd0edd04930f6b1bb9f3f49cf76884",
+      "sha256": "6298b5cc1e72e2a8def8ca52a562253dba64ac65a894a128a7389cb5884e61a6",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/native_canonical_stdout.txt",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/primary_canonical_result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "eb0dfef1050a94a9bbd9d105b2668ef310fc3ad9",
+      "sha256": "90fc7ad0cad91c36b876f95d5d50578320212cca96005a1d9d82acb472fe77ce",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/primary_canonical_result.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/primary_canonical_stdout.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "57572866ff6bcf867caba79fbd864774be8dc071",
+      "sha256": "8fb520dad2267a1e5e6cd88ab294fefe0b652b4b0ae26844c637fca4c98ad25f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/primary_canonical_stdout.txt",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "297df7b3ad81b72d9190bc1a9941e969f5292740",
+      "sha256": "e103142128d72f9adb5df9010b13c5cb42737bfe379b4e076a615403d41dabee",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/native/result.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_contact/DERIVATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "da61cc174522aaa8299daa0234b8d84094ba45e5",
+      "sha256": "db662cb65449029d3889aae8c1d942cc4a132af2bf0120385c563713a7059d5f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_contact/DERIVATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_contact/PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "43176ce9c2ddab0f4f579164b583ee4f6a08e6b4",
+      "sha256": "9403648b03e3f4f74ccd5d185096d4f8f30ba237c77678d961d6b69e4f27c485",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_contact/PREREGISTRATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_contact/check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "79b31492e2257c155183cba7de670a61488cf5d6",
+      "sha256": "05cca1a4199c965c911e005081a681e4598af42d0604c45bc998e49a92115b69",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_contact/check.py",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_contact/result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "d42401425040ab63e6913d2868cf72e67e14d539",
+      "sha256": "8e84b94430601fc15f49cb710a062091c3bc71fe36f024ff5fe290031bef6aa0",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_contact/result.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_reviews/NATIVE_AND_CONTACT_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "64516715f93b148c2cdcf9c6e3fc487abd9068ec",
+      "sha256": "5a390b5e8515f66d8c0ed9937d20f8a528a8cbb549dfdca5c75cc13607e248e0",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_reviews/NATIVE_AND_CONTACT_REVIEW.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_reviews/NATIVE_SCOPE_DELTA_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "db93902462d1e60b1ebf31d296ebfd16770a3ca6",
+      "sha256": "635f6fbacc263d475b296cf4ac163950dd38dd5bc756d588662e1ce0a7b588bc",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_reviews/NATIVE_SCOPE_DELTA_REVIEW.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_reviews/ROOT_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "824a3f49a22163a964ddc7e16f393522bf4d5db3",
+      "sha256": "879cabc0e1637adb2d1f58d621175943defc5ce9735a34b29cf686d1a1733595",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/primary_reviews/ROOT_REVIEW.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/BOUNDARY_SOURCE_ALIGNMENT.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "31d31c8ce9e91279dd6e54fd19cca3314672fe14",
+      "sha256": "8ad088b980cd016508a49fa8cbf6bd2403e196fcff672545a872374d3af389b6",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/BOUNDARY_SOURCE_ALIGNMENT.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5d5c4efb8d1537a8fc268ccf86c16e6dfbf5697b",
+      "sha256": "ddda9fb86f5e298fd7fdf0867e7493edb7d9a89ee6fb7922ee4ca8e4d4358964",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/PREREGISTRATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/ROOT_DERIVATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "955d696cdb6760593c3baa5060324b22febf7d15",
+      "sha256": "86cd75f43cb4cd0f70076e9e7682b1f8fac22ed20205d3517214f92ff03d3fad",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/ROOT_DERIVATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/ROOT_DERIVATION_BEFORE_BOUNDARY_SOURCE_ALIGNMENT_97fe162b.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "3e26a73ffc3d3cc44fc6c9a6eb9c8cfe8ffa48ea",
+      "sha256": "97fe162b7538c278c963a9ebd62dce9c6eb31f802c2bd7f4a67417063d4089cb",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/ROOT_DERIVATION_BEFORE_BOUNDARY_SOURCE_ALIGNMENT_97fe162b.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/ROOT_NATIVE_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2b421001995938d7e4ff91d0008ce89e8146dff7",
+      "sha256": "c88114a20b3e7579bb7e758fa466f850aafcdef2e65df2934c8897b49ff97174",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_boundary/ROOT_NATIVE_REVIEW.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_contact/PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "f3c233193cf79dcff47cb3abaf917c2150cc49e0",
+      "sha256": "58f1630c8475c2a704a7c2395b0133a8d760e14671869cfe69b1d950c91ccc9d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_contact/PREREGISTRATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_contact/ROOT_DERIVATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "d2582214da580aec92b707ab52e5e947cdb28038",
+      "sha256": "59f9ab2b355d4c85b0847998007dc37374f836589f00174a5e06a177b3eb232e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/evidence/root_contact/ROOT_DERIVATION.md",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority. Unique optional third/fourth Haar moments and skew correction checked valid; retain complete proof as supporting evidence, not discard merely noncanonical."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py.live.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5bc84ba9dee15bb50fc1ccd9e4d914fb057fc506",
+      "sha256": "6cedfecb17ea6efa9986c57a90fd19805879a3c5c8ae4d59c7655902b754dc81",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py.live.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py.live.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "042039d8857148d2578e41424df818bce57ee1a7",
+      "sha256": "4fb6d05e850fde0299119fa7fe25391d9a0ba0f6ba3393095a47dc4c9f6c6c1f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py.live.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/native_canonical_result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "4a9d1694bd1c705a2fbf12c46f0f9ab68bf1377b",
+      "sha256": "452626876ffebe7011980c218e7f7b6d43c47fcdea161278f55de973cb99dcaa",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/native_canonical_result.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/native_canonical_stdout.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "a97b1a3cf9cd0edd04930f6b1bb9f3f49cf76884",
+      "sha256": "6298b5cc1e72e2a8def8ca52a562253dba64ac65a894a128a7389cb5884e61a6",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/native_canonical_stdout.txt",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/primary_canonical_result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "eb0dfef1050a94a9bbd9d105b2668ef310fc3ad9",
+      "sha256": "90fc7ad0cad91c36b876f95d5d50578320212cca96005a1d9d82acb472fe77ce",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/primary_canonical_result.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/primary_canonical_stdout.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "57572866ff6bcf867caba79fbd864774be8dc071",
+      "sha256": "8fb520dad2267a1e5e6cd88ab294fefe0b652b4b0ae26844c637fca4c98ad25f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/primary_canonical_stdout.txt",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/validated_claims_before_generated_cleanup.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "48a0d207de19e072639db4351530123f4d52e581",
+      "sha256": "3c5bce4e22f19fd334b19cc49c5e1f6d86a066ec269cce3877f077dc4a0afca1",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/validated_claims_before_generated_cleanup.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": ".claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/validated_readiness_before_generated_cleanup.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5700ffd9cc350636c0052245fe63581e37c7806b",
+      "sha256": "d435a60682a3f2e56fbaeb6614cabd65f8c8438a88b09d827857ab26d0174c51",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/.claude/science/physics-loops/uniform-weak-continuum-boundary-20260907/validated_readiness_before_generated_cleanup.json",
+      "disposition": "Exact historical preservation required; proof and code content reviewed, historical verdicts not currentauthority."
+    },
+    {
+      "path": "docs/GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "1f804b7351d4717a62570b9f3be8284424fc9885",
+      "sha256": "bbf1fd91faa05f3b986eb47d349b3934643d0ae29803722af06291f4fbd5cf18",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/docs/GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "disposition": "Fullquantitative/FDD/conditionalratio mathematics valid; currentnegativepacket certification unavailable, preserve exactoriginal negative conclusions with explicitdeferredstatus if partialsalvage lands."
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "change": "M",
+      "mode": "100644",
+      "blob": "e607cfe655a0dff415e135621cc3f875a5adb7a4",
+      "sha256": "0276fdaa7c95ecdf6365ed3b53c3561269789619301800dad8bc04265a4d9c43",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/docs/audit/data/citation_graph_manifest.json",
+      "disposition": "Generated authority excluded live; exactoriginal preserved."
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "change": "M",
+      "mode": "100755",
+      "blob": "a805f7b1b278d49cf3ed65061a4b644a9e6bc873",
+      "sha256": "3900abe98b2e1649e8a6e129d358f924c39d338a1bdd791b80e5ba7ee1d5a203",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/docs/audit/scripts/build_citation_graph.py",
+      "disposition": "Only original explicit contact-helper mapping may be additiveported; preserve current mappings."
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_haar_contact_fdd_controls_2026_09_07.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "3eb5f1572f59025b82ec853e6134920673627524",
+      "sha256": "227506415735181b19179c29d00ba0c7d746373ab89e60bc3835d03b76cf5fa8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/logs/runner-cache/gauge_wilson_haar_contact_fdd_controls_2026_09_07.txt",
+      "disposition": "Originalcache historical; newcanonicalcache only after scope/cold."
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2fab09d7241ad8f6be188dda60145e2a1e9ad724",
+      "sha256": "7d9a87103828daece6288d88102ab7e186a5bd9e695656b6c95d05e722f3df43",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/logs/runner-cache/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.txt",
+      "disposition": "Originalcache historical; newcanonicalcache only after scope/cold."
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "change": "M",
+      "mode": "100644",
+      "blob": "ef7dc02c4a3a9bd6cbcb3ffe723f6340c6be2747",
+      "sha256": "7bf21cef52a6538056f1b40a26e430b9ae71b1ce936c6ba6c01560c5b5be8d89",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/scripts/audit_packet_script_deps.py",
+      "disposition": "Only original explicit contact-helper mapping may be additiveported; preserve current mappings."
+    },
+    {
+      "path": "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "06c57c62ed428766405c89f798a2d486d191502b",
+      "sha256": "a3c70b423be1b8714bfe823cae5b46dad10c022b8b357b7760f0979fbac42656",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
+      "disposition": "Keep unchanged mathematicalcontrols withinput/footer/scope packaging repairs; not proof ofclustering/continuum."
+    },
+    {
+      "path": "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "871d1954d4666aac954e36c363c0bc4ff818596f",
+      "sha256": "5abcf47d9bccfd37aa18af1edbcac19199bb814993d39f17cd0730e3eb417d44",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8030-originals/scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+      "disposition": "Keep unchanged mathematicalcontrols withinput/footer/scope packaging repairs; not proof ofclustering/continuum."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "scope/procedural blocker",
+      "repair": "Original exact separated-field exclusion is mathematically justified but lacks5distinct in-domain attacks undercurrentN1. Do not grantnegativepacketPASS, inventroutes, relabel sameexclusion positive or inferfalsehood. Fullnegativeclosure unavailable. Forpartialsalvage, expose acceptedquantitative estimates/FDD/conditionalratio vs explicitlydeferred negativecertification acrossfrontmatter/title/lead/conclusions, exactoriginalproof retained andbranchpreserved."
+    },
+    {
+      "id": "F2",
+      "repair": "Both standalone runners need literal ownnote+fouractualparent proofidentitypins; bindactualcorrected8029 source onlyafterlanding or explicitcandidatecontext."
+    },
+    {
+      "id": "F3",
+      "repair": "Canonical TOTAL18/0 and13/0 plusseparatecachelinks; scaling18includes1resourcepredicate, contact13scientificwithseparate resourceguard. Preserve180s/180MiB, two sequentialcaptures onlyaftercold."
+    },
+    {
+      "id": "F4",
+      "repair": "Durably preserveall89originalversions incl81history, earlierboundarymisalignment/FDDwording/base64exactdiff androotoptionalHaarmoment/skewproof; replace.claudelink, historicalframe independence/timing/verdicts, canonical scientificparent names notblockaliases."
+    },
+    {
+      "id": "F5",
+      "repair": "Bothhelpermaps additiveunion/contactentry only; actualdiscovery APIs verify. Honestfive scope lines: analyticalclustering/FDDlimits notnumericallyexecuted; no fabricated convergence checks."
+    }
+  ],
+  "proof_review": {
+    "complete_read": "Fullcanonicalnative+primarycontactproofs (bothverbatimconfirmed), rootboundary/rootcontactproofs, priorversiondeltas andallcrossreviews/preregistrations, originalcanonical/historicalcode read. Structuredpayloads inventoried/hashverified.",
+    "clustering": "Actual0411042eq16 c^(supportsum)epsilon^distance normproduct applies tosamewhole-rangeground; Section2 fixesepsilon byuniformlysmall perturbation. Scaledonsite fixed;u alone changesground.0412040periodicversion separate, notboundaryidentification.",
+    "decay": "Fixedsupportcardinality/radius, positivephysicalseparation andpolynomialnorms yield displayed exponentialbound ando(ell^M). Pairwisesmearing pricesweightedl1budget, notunion-supportexponential. Quantifiedexclusion scientificallyvalid; N1packetrestriction independent.",
+    "contact": "Spacing2unitbox/spacing3whole-spaceactualdisjointplaquettes produceindependentHaarholonomies. Center+Schur givevariance1/18;normalizationcorrect. Taylor/logremainder constantsvalid, sumcubicO(h^1.5), discretequadraticRiemannsums converge. OnlyFDD, nottopologicaltightness/dynamics.",
+    "optional_unique_math": "Root supplementaryEX^3=1/sqrt2, EX^4=3 and -i/(6sqrt2)sum b^3+O(sum|b|^4) valid bySU3Pieri/orthogonality. Fourthcumulantzero compatiblewithcoarserO(h^3) bound. Preserve fullproof, no newcanonicalclaimrequired.",
+    "clock": "Actualcurrentgap2/a andLR32e v linkmetric read. Faceadjacencymidpointdistance<=ell. tau=b t gives H/b, V/G=16e ellu. Boundedactualgap isextra upperpremise. LRupperparameter neveractualspeed.",
+    "limits": "No uniformwindow beyondchosenmajorant; no unboundedfieldswithoutnormbound, contact/tension/QFT/continuumselection/physicalspeed conclusion. Explicitopenhypothesischanges are notprovenalternativeroutes."
+  },
+  "negative_packet": {
+    "packet_status": "NO PASS undercurrentN1",
+    "actual_controls": [
+      "pointwise vsuniformclustering",
+      "union-support vsweightedpairwisebound",
+      "exponential-seriesdegree",
+      "clockrescaling",
+      "missingactualgapupperpremise",
+      "contactFDD",
+      "repeatedplaquetteindependence",
+      "FDD vsdistributiontopology"
+    ],
+    "assessment": "These are actual inference/scopecontrols, notfive distinct failed in-domain mechanisms againstexactclaim. No proceduralcountdisproof ofmathematics."
+  },
+  "inputs": {
+    "repository_parents": {
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+        "revision": "HEAD",
+        "status": "currentmain48334"
+      },
+      "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+        "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+        "revision": "HEAD",
+        "status": "currentmain48334"
+      },
+      "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+        "sha256": "56aea52d08696383ec41d3f87a093c77b26290d078496579f9e603c26f123147",
+        "revision": "HEAD",
+        "status": "currentmain48334"
+      },
+      "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+        "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72",
+        "revision": "541923c",
+        "status": "Reviewed8029source provisional, notyetlanded"
+      }
+    },
+    "authority": {
+      "same": {
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+        "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+        "docs/repo/DEFERRED_DECISIONS.md": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+        "docs/repo/ACTIVE_REVIEW_QUEUE.md": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+        "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+        "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+        "docs/audit/data/premise_decision_history.json": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+        "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+        "docs/ai_methodology/skills/review-loop/SKILL.md": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+        "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+        "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+        "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+        "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+        "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+        "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+        "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+        "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+        "docs/ai_methodology/skills/review-loop/references/LANDING.md": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+        "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7",
+        "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095",
+        "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md": "6dd105641721dc9b5ca47ed69961e912eec3dc2dae3386cb4a72f4e2ee7ba7e0",
+        "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+        "docs/repo/CONTROLLED_VOCABULARY.md": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+        "docs/CANONICAL_HARNESS_INDEX.md": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+        "docs/audit/README.md": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+        "docs/ai_methodology/skills/no-go-discipline/SKILL.md": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+        "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+        "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+        "docs/GAUGE_WILSON_COMPACT_CUBE_ALL_COUPLING_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": "e42e8bd38e71c86ae485dbe50585b8c6a2940e349c848a4ed30bcfd47a114c70",
+        "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+        "docs/GAUGE_WILSON_CUBE_SLAB_EXACT_COVARIANCE_CENTRAL_GAUSSIAN_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-07.md": "c92586ae507a05f6cf0a38a304951f56c0f9af796ee5b3f64d18e6dd914c11cb",
+        "docs/GAUGE_WILSON_CUBE_SLAB_NONLINEAR_SADDLE_DILATED_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md": "21eafab0abb8168e245869b8ffcb0f41823039e67a8843a60877d77f9ce98f32",
+        "docs/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "6323745b5142cae7d054dc5be6eed6a8706abedfcaf616d9a108b3888121ccaf",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+        "docs/GAUGE_WILSON_FULL_CUBE_PHYSICAL_TRANSFER_GEOMETRY_BOUNDED_THEOREM_NOTE_2026-09-07.md": "4f8972c99f4b3b86cf47a430abc242de1219297f9abf49932338560dc0a37bbf",
+        "docs/GAUGE_WILSON_FULL_CUBE_SIMULTANEOUS_TRANSFER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md": "41f0183d5bcab6704c5addbbde117e91ab036511ba05d436b4378cb146470db4",
+        "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py": "9fd599c5040f137ede2ffcf5d219534b8673c9deda086d784b90753b587178ca",
+        "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py": "0cd413d2737d0cc9ee7f4000d682588138b5ff3d2c1de693c854455b8e6129eb",
+        "scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py": "ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5",
+        "scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py": "6c67ca2933d92a18be58872ebb2d47ed55e8eb83f1d2de335cd1510b9f7fb9f4",
+        "scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py": "d0a56e3d6e2dc16a7ee0914588e8f3fc934dc2023433bd3e7f334cf5f90eb19a",
+        "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py": "f58b22c7315cb36eca14cd352e10150b41dc930765c0c2570d61d4c061e0f836",
+        "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py": "3df2d3e77afe46c188700d41cf6bf515f38b828ffa19564bd2c8843e073398b5",
+        "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+        "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+        "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+        "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+      },
+      "changed": {
+        "scripts/audit_packet_script_deps.py": "3d283188b8a1919a869eab92b425a1022eed1b16e544d03419be23666c07463f",
+        "docs/audit/scripts/build_citation_graph.py": "a7cc92e284646e8e499408df34d89f7a89d80be04b7641a3a4f63163de4f467a"
+      },
+      "changed_scope": "Twohelpermappingfiles changed byreviewed additive rotor/8028entries; no premise/lens/skillbyte change. No8030newmapping applied."
+    },
+    "external": {
+      "url": "https://arxiv.org/pdf/math-ph/0411042v1",
+      "pdf": "/private/tmp/review-drain-20260915/check8028/yarotsky.pdf",
+      "pdf_sha256": "b0f7c876b690f0fdc7730a88100c5b841352ed339369fe57fa9497c53d6019f3",
+      "read_scope": "ActualSection2smallparameter convention/eq16 read for8030.0412040separateperiodicversion previouslyread same-session8026; notloadbearing tocurrentwhole-rangetheorem."
+    }
+  },
+  "independent_controls": {
+    "program": "/private/tmp/review-drain-20260915/check8030/control.py",
+    "sha256": "b101d96534ef0059af7aad672cfc163fa4a682c2b9b1613787ed4048467ec6bf",
+    "receipt": "/private/tmp/review-drain-20260915/check8030/control.json",
+    "receipt_sha256": "804a27d6c3f48da5ee3392c96e515227cea6a632ae337138f4606e39f7e9417a",
+    "passed": 11,
+    "boundary": "FiniteexactSU3Pieri moments/metric/clock/logconstant, no sourceprimary import orconvergencesimulation."
+  },
+  "resource_plan": {
+    "seconds_each": 180,
+    "process_tree_rss_MiB_each": 180,
+    "captures_after_cold": 2,
+    "totals": [
+      18,
+      13
+    ],
+    "count_scope": "18includes1resource;13allscientific withseparateresourceguard",
+    "reviewer_primary_execution": false
+  },
+  "closure_disposition": {
+    "full_unqualified_landing_eligible": false,
+    "partial_salvage_available": true,
+    "mathematical_defect_found": false,
+    "branch_preservation_required_if_partial": true,
+    "reason": "Uniqueoriginalnegativecertification remainsprocedurallydeferred; preserve fulloriginalproof andvalidmath, notbroadreject. Rootauthorandoriginalreviewer mustfreeze explicitaccepted/deferredscope beforecapture."
+  },
+  "current_main_preservation": "Newnote/2runners/caches/history andonly2additivehelpermap entries. Originalgeneratedmanifest historicalonly. No parentoverwrite.",
+  "references": {
+    "/private/tmp/review-drain-20260915/drain8030-original-inventory.json": "561ce613d0e82107faec6f8bbffcf76a68afe2d2bb1a2c2980d44082773277ff",
+    "/private/tmp/review-drain-20260915/drain8030-original.patch": "c970962fb6660149c7537c8c20870bda03f17e2869b7557f39c20f7e3bf3c8ad",
+    "/private/tmp/review-drain-20260915/drain8030-review-fetch.json": "b82ea3560ae5d3d226bd7a0591a13973d31c32f629c3eedfd968e87a8dda1c51",
+    "/private/tmp/review-drain-20260915/drain8030-review-acquire.json": "7805fa8932f9afcf25b34abf2578acc5a8af617e1a1d36053d0c47d6cf7d2aa1",
+    "/private/tmp/review-drain-20260915/drain8029-final-review.json": "ded01eb74a7099b99aea455a5c052ebc8295bcac52c6a0dd57fe8f851f9681ce",
+    "/private/tmp/review-drain-20260915/check8030/payload-census.json": "a15fa651a41e815eabdaa4271b9adbab35921092ffc690f7ae3d4ee2c586aed9"
+  },
+  "no_source_edits": true
+}

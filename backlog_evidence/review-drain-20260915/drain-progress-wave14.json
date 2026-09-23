@@ -1,0 +1,32 @@
+{
+  "scope": "All currently open PRs, including drafts and new arrivals, until landed or rejected/closed.",
+  "snapshot": "drain-all-prs-wave14.json",
+  "snapshot_sha256": "d9edf2dfcd6ded7620dd72336cd713779722f52868a4a7e3bb8db710e93ec9bc",
+  "open": 106,
+  "drafts": 21,
+  "new_arrivals_since_wave13": [
+    8662,
+    8663,
+    8664,
+    8665,
+    8666,
+    8667
+  ],
+  "expanded_scope_closed_count": 34,
+  "latest_closed": {
+    "8028": "48334d7f83137d5a18ffd4962623a32a6778a637",
+    "8161": "0b79324946912feca6063851b2b842539b503820"
+  },
+  "in_combined_validation": [
+    8029,
+    8162
+  ],
+  "original_review_active": [
+    8030,
+    8163
+  ],
+  "author_preparation": 8159,
+  "prepared_waiting_tooling_base": 8160,
+  "sol_pilot": "Complete; all findings/cost caveats published; Astra low unchanged.",
+  "skill_sync": "All15 installedfiles matchremote main; drain-skill-sync-wave14.json."
+}

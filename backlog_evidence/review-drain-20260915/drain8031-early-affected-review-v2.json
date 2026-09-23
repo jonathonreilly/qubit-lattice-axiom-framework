@@ -1,0 +1,61 @@
+{
+  "pr": 8031,
+  "reviewer": "same-session /root/review_8031",
+  "stage": "early-affected-review-v2",
+  "verdict": "EARLY SCOPED SOURCE CONFIRMATION; NOT FINAL OR LANDING PASS",
+  "prepared_sha256": "f206fc8429d05078570eb74b21a14b6b7ed025e10ffb5284b3848bba8bcc181d",
+  "verification": {
+    "prepared_sha256": "f206fc8429d05078570eb74b21a14b6b7ed025e10ffb5284b3848bba8bcc181d",
+    "verified_source_paths": 74,
+    "exact_archive_paths": 70,
+    "v1_external_snapshots_verified": 2,
+    "positive_sections_2_through_5_byte_identical": true,
+    "runner_changed_only_note_pin": true,
+    "parent_current_main": "ea403fe1c5e71418c95b976e72a11df375c0a655",
+    "parent_sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+    "runtime_inputs": {
+      "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467"
+    },
+    "runner_sha256": "662523c65e08ac1a73da5a232bd98de5145a21c6e073a9567cc008ed8b01035a",
+    "scope": "read-only hash/archive/AST verification, no primary execution"
+  },
+  "finding_dispositions": {
+    "8031-N1": "v1 semantic issue resolved in v2: live trace statement now arbitrary Hermitian Q and traceless T; no exact covariance plus unitary-similarity contradiction asserted. Original full negative proof and character argument remain exact historical recovery. Formal negative certification stays deferred; branch must be preserved.",
+    "8031-N5": "confirmed source repair unchanged:5/0/4/8/0 accounts16 mathematical checks+1resource; no site/lattice/path/all-R execution",
+    "8031-GOV": "confirmed74 source identities,70 exact archived original paths/modes/blobs/raw hashes; v1 snapshots preserved externally; no historical status promoted",
+    "8031-EVIDENCE": "source input declaration and actual API discovery agree:ownnote+current compact-cutoff source, no helper; changed note pin only. New execution and capture remain pending."
+  },
+  "proof_review": {
+    "section1": "Trace tensor expansion gives3Tr(Q\u00b2)+dim(H)Tr(T\u00b2), mixed term vanishes from Tr(T)=0; valid also T=0. No impossible transporter hypothesis remains.",
+    "sections2_to5": "byte-identical to independently reviewed v1 supplied-model compression, kernel/eigenvalue/norm and energy/distinct-link path proof; no new interaction",
+    "appendixA": "positive inverse-orientation witness, shell ceiling equality/cap, exact interior path, weaker telescoping comparison and normalized pure trace-distance remain correct. Negative character/group-convention argument archived and explicitly outside live row.",
+    "negative_boundary": "No five-route packet or negative PASS claimed; archive retains complete proof rather than implying disproof. Specified-PW norm identity is affirmed under its exact construction; general exclusion/classification is not repromoted."
+  },
+  "resource_review": "v2 resource plan source-derived fixed57x57 exact symbolic matrices, original180s/180MiB bounds, no size-dependent grid or helper. Does not assert unmeasured peak; monitored execution still required. No capture authorized or run here.",
+  "parent_review": "Current-main ea403fe1 compact-cutoff bytes still a707cf0d...; prior partial salvages do not supply negative certification. Static-source theorem remains contextual, not graph premise.",
+  "evidence": [
+    "drain8031-early-affected-review-v1.json",
+    "drain8031-early-verification-v2.json",
+    "drain8031-author-prepared-v2.json",
+    "drain8031-author-corrections-v2.patch",
+    "drain8031-author-discovery-v2.json",
+    "drain8031-resource-plan-v2.json"
+  ],
+  "remaining": "Root base advancement/current-main preservation, staged cold review, supported execution/capture and combined gate, then original same-session final confirmation. No finalPASS or audit verdict.",
+  "executions": {
+    "primary": 0,
+    "capture": 0,
+    "pipeline": 0,
+    "audit": 0
+  },
+  "mutations": "External review evidence only; no source/index/checkout edits.",
+  "evidence_sha256": {
+    "drain8031-early-affected-review-v1.json": "a9a4eb84f601c66c097dc6747e35c272f129641d90234c6340a1a230bbfbe009",
+    "drain8031-early-verification-v2.json": "a125dee01bd8c00d426c5ee2df823c5aee7f08cbfa58e037a05251044294c4f3",
+    "drain8031-author-prepared-v2.json": "f206fc8429d05078570eb74b21a14b6b7ed025e10ffb5284b3848bba8bcc181d",
+    "drain8031-author-corrections-v2.patch": "c6c0be0304555fa7a9104187bec1c938f879b6990b14d929e725eedd1046579f",
+    "drain8031-author-discovery-v2.json": "9c90b7a017da55817f8f56e2500dd508d7623f685d6efb25f498eba395ea0537",
+    "drain8031-resource-plan-v2.json": "907a9f8688faf087a5793329bb2899235be24e3feb79d7d719b8e7ec8a59bb44"
+  }
+}

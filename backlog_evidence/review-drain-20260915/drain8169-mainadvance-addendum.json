@@ -1,0 +1,227 @@
+{
+  "observed_at_utc": "2026-09-23T02:06:52.426179+00:00",
+  "original_report_sha256": "45ca03069aed000f9627c4471d080d288f8d0665261f19a3ad1914f31a98418d",
+  "historical_authority_main": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+  "fresh_remote_main": "ea403fe1c5e71418c95b976e72a11df375c0a655",
+  "pr_head": "7e268bd96edda8819250318a3cbdaa1b20e90f35",
+  "pr_state": "OPEN",
+  "pr_draft": false,
+  "all_bound_authority_and_input_checks": [
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "old_blob": "6aca1f45f18874a028eedb5501a173fc8dcb37d4",
+      "new_blob": "6aca1f45f18874a028eedb5501a173fc8dcb37d4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "old_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "new_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "old_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "new_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "unchanged": true
+    },
+    {
+      "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "old_blob": "eb9f897127d2db9b2f3226abd1e93311188fdcee",
+      "new_blob": "eb9f897127d2db9b2f3226abd1e93311188fdcee",
+      "unchanged": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "old_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "new_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "old_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "new_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "old_blob": "228f3f6590db0e9b929c9e331575cb386b1cad20",
+      "new_blob": "228f3f6590db0e9b929c9e331575cb386b1cad20",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "old_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "new_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "old_blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305",
+      "new_blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "old_blob": "b1b498432c82d68c4e59fb5601df5dbfc73ea72e",
+      "new_blob": "b1b498432c82d68c4e59fb5601df5dbfc73ea72e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/references/case-studies.md",
+      "old_blob": "37e69fa2e8604382297575a5ddfbb1cbbbadf792",
+      "new_blob": "37e69fa2e8604382297575a5ddfbb1cbbbadf792",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "old_blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+      "new_blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "old_blob": "220f819c425cc57c1720088e76e2c1b3ee08b9e8",
+      "new_blob": "220f819c425cc57c1720088e76e2c1b3ee08b9e8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "old_blob": "d2f92d6e168bfb77e1d88087724683d85069ddc8",
+      "new_blob": "d2f92d6e168bfb77e1d88087724683d85069ddc8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+      "old_blob": "d675e6c172b8a4567d9ec9b5d7cceeadfef8c37e",
+      "new_blob": "d675e6c172b8a4567d9ec9b5d7cceeadfef8c37e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "old_blob": "da1bc02c3d9d3ba6b667139762ffa8d66efc73b1",
+      "new_blob": "da1bc02c3d9d3ba6b667139762ffa8d66efc73b1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "old_blob": "ed33c5e9a77be23ebbfeeb7881ae890b89e7916f",
+      "new_blob": "ed33c5e9a77be23ebbfeeb7881ae890b89e7916f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "old_blob": "9d8bab3d36e69334528aec9354a17b2caf14135c",
+      "new_blob": "9d8bab3d36e69334528aec9354a17b2caf14135c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+      "old_blob": "bc875707331374b9f95e420b6f247a7a44a56255",
+      "new_blob": "bc875707331374b9f95e420b6f247a7a44a56255",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "old_blob": "c8763a3376f152dc95fb1021cf3038e870b9cf73",
+      "new_blob": "c8763a3376f152dc95fb1021cf3038e870b9cf73",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "old_blob": "1ec31f6e817cb259df1bdafa4a358b12e0ac15b8",
+      "new_blob": "1ec31f6e817cb259df1bdafa4a358b12e0ac15b8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "old_blob": "54066b6a5671a2ec1bb2eec10825254ae3f0c9f9",
+      "new_blob": "54066b6a5671a2ec1bb2eec10825254ae3f0c9f9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+      "old_blob": "f0e3641abdda250c1d45f7489452f931d4f5da08",
+      "new_blob": "f0e3641abdda250c1d45f7489452f931d4f5da08",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "old_blob": "0fe53898c0383aa5acdc89c13f92a79e7653aa7f",
+      "new_blob": "0fe53898c0383aa5acdc89c13f92a79e7653aa7f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "old_blob": "ddfa5ef7e87f32babf6dcb948c290d1901587c53",
+      "new_blob": "ddfa5ef7e87f32babf6dcb948c290d1901587c53",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "old_blob": "cf3afc4b7e5cb9b562807f7a4c5740ea1e3c5209",
+      "new_blob": "cf3afc4b7e5cb9b562807f7a4c5740ea1e3c5209",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+      "old_blob": "0aa2627f2c9ea8a64475d29b6130fcdedf26e06d",
+      "new_blob": "0aa2627f2c9ea8a64475d29b6130fcdedf26e06d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audit/README.md",
+      "old_blob": "ca590b6141c1440a520c1ef2d777aa74bec41e35",
+      "new_blob": "ca590b6141c1440a520c1ef2d777aa74bec41e35",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "old_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "new_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "old_blob": "9f05a519e90f8ad7eaf0607f6fd00547722944b1",
+      "new_blob": "9f05a519e90f8ad7eaf0607f6fd00547722944b1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "old_blob": "a4b0638649e7f8402cf5f2827e4bf2329f95aea3",
+      "new_blob": "a4b0638649e7f8402cf5f2827e4bf2329f95aea3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "old_blob": "27e61f73c6839c28091947c0056da16b478c0a19",
+      "new_blob": "27e61f73c6839c28091947c0056da16b478c0a19",
+      "unchanged": true
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "old_blob": "4b8954556f59870f204de0709f6bf2f0a2c67a86",
+      "new_blob": "4b8954556f59870f204de0709f6bf2f0a2c67a86",
+      "unchanged": true
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "old_blob": "eaff7bb45b92f647467c2847b5521f6e45a472ae",
+      "new_blob": "eaff7bb45b92f647467c2847b5521f6e45a472ae",
+      "unchanged": true
+    }
+  ],
+  "all_unchanged": true,
+  "context": {
+    "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "blob": "282cc8cb15afa2b18913598321562411437d98cc",
+    "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0",
+    "interaction": "New supplied common-kernel order theorem uses the same endpoint comparison but a general standard-Borel alphabet: all-order equality gives reversible K and K^2=Pi, hence K=Pi a.e. It confirms the need to compare joint endpoint laws and avoid canceling null conditional profiles. Its explicit conditional process/common-slot-kernel assumptions and rejected full-foundation nonselection agree with the original review boundary. No new premise is imported into PR8169 and no finding is withdrawn. Pure-state antipodal-supported K with Haar pi cannot equal pi a.e.; the direct collinearity event proof in F4 remains self-contained."
+  },
+  "tooling_interaction": "Only explicit helper-runner registry entries for PR8159 added in build_citation_graph.py and audit_packet_script_deps.py; no PR8169 mapping, extraction logic, or actual declared inputs changed. Combined validation must use new-main tooling/topology.",
+  "source_preservation": "Original PR8169 note/runner/cache/history additions remain absent at new main. Manifest overlap requires regeneration preserving new PR8159 nodes.",
+  "reopened_findings": [],
+  "status": "Original FIX_REQUIRED preserved; only current-main interaction/freshness context appended. No primary rerun or full review.",
+  "scope_note": "631d6b is immutable historical authority base of original report, not latest-main status."
+}

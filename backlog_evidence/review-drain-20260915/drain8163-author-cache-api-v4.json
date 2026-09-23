@@ -1,0 +1,147 @@
+[
+  {
+    "runner": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      },
+      {
+        "path": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+        "sha256": "d557a0f7568e5e272e3afe01431a209cdc436714a7cc3cb22c8c979208dc5cc8"
+      }
+    ],
+    "declared_input_fingerprint": "92685a30703b64333b0f5338c15a8d6255c99ea990bbd30d97d0f8607885ee61",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "runner": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      },
+      {
+        "path": "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+        "sha256": "52c730b124f8c4a24179cdc8952962e73d45a1676bb206475b8f8a765a473e7e"
+      }
+    ],
+    "declared_input_fingerprint": "92685a30703b64333b0f5338c15a8d6255c99ea990bbd30d97d0f8607885ee61",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "runner": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8"
+      },
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      },
+      {
+        "path": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+        "sha256": "5679b000903a07cd478622fd42d58430d7f7bfbb40f7eb72012a97cfce0215ad"
+      }
+    ],
+    "declared_input_fingerprint": "a4808769c5b1fc9fe2f902e29e2b29ba1b1bdb3bc1df96b3372a6943907c11f8",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "runner": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537"
+      },
+      {
+        "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21"
+      },
+      {
+        "path": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8"
+      },
+      {
+        "path": "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7"
+      },
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      },
+      {
+        "path": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+        "sha256": "f04b76f92f325e302e99e59648b1ad4fb4bed535922580bc65eb6746ca0d2749"
+      }
+    ],
+    "declared_input_fingerprint": "f40b1d849781fe29171a8460c658093289b8b463e1903a2b4a69045b21ccd234",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "runner": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      },
+      {
+        "path": "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+        "sha256": "9f4ae7979e723a6be0535b2e320a1204806265cfe03b8bba05091f4aec724d2b"
+      }
+    ],
+    "declared_input_fingerprint": "92685a30703b64333b0f5338c15a8d6255c99ea990bbd30d97d0f8607885ee61",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "runner": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+      },
+      {
+        "path": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+        "sha256": "fc22a65bb2eb260cc273f786288f956ce512106739907b30946df7f534471ede"
+      }
+    ],
+    "declared_input_fingerprint": "92685a30703b64333b0f5338c15a8d6255c99ea990bbd30d97d0f8607885ee61",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "pr": 8031,
+  "reviewer": "same-session /root/review_8031",
+  "stage": "early-affected-review-v1",
+  "verdict": "NEEDS NARROW SOURCE FIX; NO FINAL PASS",
+  "prepared_sha256": "2c5604f7302b869731bb0a7080b9a20aa48d5e9d7e6e7e0174f27a53087d9d81",
+  "source_sha256": "e5f9b9071129565678e8be8a84e5a20d1dd5c9eac3c4d1dc8fdfa14d2575da1e",
+  "runner_sha256": "be4a2c38d2d76c39d44fb165cacd8327d55aa7227baf2b8bc87f30ee6cccfba0",
+  "findings": [
+    {
+      "id": "8031-N1",
+      "status": "reopened-on-prepared-v1",
+      "path": "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "lines": "33-43; Appendix A first paragraph",
+      "kind": "AUDIT_COMPATIBILITY",
+      "evidence": "Section1 still universally assumes finite exact covariance and matrix unitarity and derives trace-square preservation plus strictly-positive offset; AppendixA character argument repeats the contradiction. The exact negative argument remains asserted by the full live note, although called conditional identities and labelled certification deferred.",
+      "rule": "review-loop SCIENCE_LENSES NoGoDisciplineReviewer, AUDIT_COMPATIBILITY no-go gate, no-go-discipline whole-claim semantics; current-main ACTIVE_REVIEW_QUEUE 2026-07-18 entry warns renaming boundaries does not clear full-note semantic gate.",
+      "narrow_fix": "Keep exact universal contradiction and character argument in70-file historical archive. Live bounded note may give arbitrary finite Hermitian Q / traceless T tensor trace identity without impossible covariance+unitarity implication; do not use deferred historical contradiction as proof premise. Preserve supplied-PW kernel/eigenvalue/norm identity and all energy/path proofs.",
+      "math_verdict": "No mathematical defect identified; packet/classification issue only."
+    }
+  ],
+  "verification": {
+    "prepared_sha256": "2c5604f7302b869731bb0a7080b9a20aa48d5e9d7e6e7e0174f27a53087d9d81",
+    "source_hashes_match": 74,
+    "exact_archive_originals_match": 70,
+    "runner_mathematical_region_exact": true,
+    "n5_counts": {
+      "per_element": 5,
+      "per_site": 0,
+      "per_mode": 4,
+      "per_block": 8,
+      "lattice_wide": 0
+    },
+    "original_display_formula_lines_preserved": 14,
+    "runtime_inputs": [
+      {
+        "path": "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "e5f9b9071129565678e8be8a84e5a20d1dd5c9eac3c4d1dc8fdfa14d2575da1e"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467"
+      }
+    ],
+    "run_scope": "Read-only archive/hash/AST/formula verification; no primary execution",
+    "yaml_dependency_line_also_preserved": true
+  },
+  "dispositions": {
+    "8031-N1": "reopened as above",
+    "8031-N5": "source repair confirmed:5/0/4/8/0 no overcount,16math+1resource, no spatial-site/path/lattice execution asserted",
+    "8031-GOV": "source cleanup and complete70-file recovery confirmed; branch retained for unresolved work",
+    "8031-EVIDENCE": "declared ownnote+actual cutoff source hashes verified; no helper, no primary execution; final binding pending"
+  },
+  "proof_preservation": "All14 original displayed mathematics lines preserved byte-for-byte in v1, plus entire runner mathematical region;70 original payloads decode exactly with path/mode/blob/hash matches. The live universal contradiction must be moved/restricted without deleting original archive content.",
+  "math_review": "Full corrected proof read. Supplied PW compression, fusion shell support, normalized highest-weight kernel, shell energy, distinct-link projector identity with shared color, accepted-output normalization all valid. AppendixA inverse orientation, exact interior path, capped bound, stronger total-energy vs telescoping and pure trace-distance details agree with original root proof.",
+  "actual_parent": "Current-main compact-cutoff note supplies full-irrep cutoff and all-label energy; static-source note contextual only. No full prior negative certificate assumed landed.",
+  "main_freshness": "Read-only git diff631d6b..ea403fe1 shows no changes to actual cutoff premise, review-loop/no-go/proof governance, axiom memo or premise registry. Final root advancement/preservation guard still required.",
+  "execution": "No primary, no capture, no pipeline, no audit, no index/checkout edits. Only external review evidence written."
+}

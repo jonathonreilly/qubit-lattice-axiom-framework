@@ -1,0 +1,56 @@
+--- docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md@v1
++++ docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md@v2
+@@ -29,19 +29,15 @@
+ 
+ # Supplied Peter–Weyl compression, shell identities and energy/path bounds
+ 
+-The full native analytic argument is retained below with explicit supplied-model scope. Historical discovery and review provenance is preserved in the recovery archive; it is not a current certification.
++The complete native positive compression and energy/path argument is retained below with explicit supplied-model scope; its negative argument remains complete in the exact archive. Historical discovery and review provenance is preserved in the recovery archive; it is not a current certification.
+ 
+-## 1. Conditional Cartan trace-square identities
++## 1. Tensor trace-square identity
+ 
+-Let H be a nonzero finite-dimensional Hilbert space carrying the left endpoint SU3 action rho. Suppose a3-by3 matrix of operators U acts unitarily on H tensor C3 and has the exact fundamental pullback covariance. Restrict to g(t)=exp(itT), where T is any nonzero traceless Hermitian Cartan matrix. Write rho(g(t))=exp(itQ). With Qbar=Q tensor I3 and Tbar=I_H tensor T, the convention is
++Let H be a nonzero finite-dimensional Hilbert space, Q any Hermitian operator on H, and T any traceless Hermitian 3-by-3 matrix. Write Qbar=Q tensor I3 and Tbar=I_H tensor T. Direct expansion and factorization of the tensor trace give
+ 
+- exp(itQbar) U exp(−itQbar)=exp(−itTbar) U.
++ Tr(Qbar+Tbar)²=Tr Qbar²+dim(H) Tr T²,
+ 
+-Only this commuting one-parameter subgroup is used, so no reversal of noncommuting group parameters is hidden. Differentiation gives [Qbar,U]=−Tbar U. If U is unitary, rearranging gives U Qbar U*=Qbar+Tbar. Taking finite traces of squares therefore gives
+-
+- Tr Qbar²=Tr(Qbar+Tbar)²=Tr Qbar²+dim(H) Tr T²,
+-
+-because the cross term is2Tr_H(Q)Tr_3(T)=0. The offset dim(H) Tr T² is strictly positive under these hypotheses, whereas the displayed unitary similarity preserves the trace square. A first-trace argument alone would give zero and would fail. The opposite endpoint convention merely changes the sign of Tbar and gives the same positive square term. The original universal exclusion argument and its one-sided-isometry corollary remain exactly archived. Formal negative-classification certification is deferred; this does not refute the trace calculation.
++because the cross term is2Tr_H(Q)Tr_3(T)=0. Replacing Tbar by −Tbar gives the same square contribution. This is a tensor trace identity; no transporter covariance or unitary-similarity hypothesis is imposed in this live statement. The original negative proof, including its conditional similarity and character arguments and one-sided-isometry corollary, is preserved completely in the exact recovery archive. Its formal negative certification is deferred, not mathematically refuted.
+ 
+ ## 2. Actual Haar link and full-irrep cutoff
+ 
+@@ -113,7 +109,7 @@
+ 
+ ## Appendix A. Additional root-verification details
+ 
+-The original root proof also records the exponentiated conditional character identity on the Cartan torus: 3 chi_rho(g)=chi_rho(g) chi_fund(g), with chi_fund(g(t))=1+2cos(t) and chi_rho nonzero sufficiently near identity. This identity follows from the same conditional unitary similarity; its negative-classification certification is deferred with §1. The precise left-pullback convention is rho(g)f(V)=f(g^{-1}V); changing the inverse while retaining that representation would reverse noncommutative group composition.
++The historical root proof's conditional character argument and group-convention discussion remain complete in the exact archive. They are not conclusions of this live bounded row. The following supplied-compression and state-comparison details remain affirmative parts of the result.
+ 
+ For inverse link orientation, antifundamental fusion gives the same shell support, and a conjugate highest-column/row coefficient supplies the corresponding sharp witness. With K=-3 Delta/(2a), the shell energy is equivalently e_R=[ceil(3R²/4)+3R]/a=g_(R−1); the expectation bound can be capped by 1. The norm-one witness moves to increasing energy as R grows.
+ 
+@@ -124,7 +120,7 @@
+ - N1: DEFERRED. No completed five-family negative-certification packet is asserted.
+ - N2: Historical root/native provenance is retained; it does not establish independent wall attacks.
+ - N3: The actual Haar full-irrep projection, supplied energy and distinct-link hypotheses are explicit; broader encodings are outside the positive result.
+-- N4: Conditional trace algebra and the exact supplied-compression norm identity are preserved; universal negative conclusions remain deferred.
++- N4: The tensor trace identity and exact supplied-compression norm identity are retained; the universal negative proof is archived and its certification deferred.
+ - N5: Executed finite evidence is 16 mathematical checks plus one resource check on the 57×57 R=1 one-link fixture. Per-site and lattice-wide execution are not performed. All-R and path statements rely on the written proof.
+ - N6: The original R0 tautological-check failure and corrected vacuum-block check remain archived; no evidence is erased.
+ - N7: No axiom-selected representation, native preparation, repeated-link path bound or unbounded energy-form transfer is asserted.
+--- scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py@v1
++++ scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py@v2
+@@ -44,7 +44,7 @@
+     signal.alarm(0)
+ AUDIT_INPUT_PATHS = ['docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md']
+ _SOURCE_ROOT = Path(__file__).resolve().parents[1]
+-_INPUT_SHA256 = {'docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'e5f9b9071129565678e8be8a84e5a20d1dd5c9eac3c4d1dc8fdfa14d2575da1e', 'docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467'}
++_INPUT_SHA256 = {'docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md': '1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade', 'docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467'}
+ for _input in AUDIT_INPUT_PATHS:
+     assert hashlib.sha256((_SOURCE_ROOT / _input).read_bytes()).hexdigest() == _INPUT_SHA256[_input], _input
+ started=_started

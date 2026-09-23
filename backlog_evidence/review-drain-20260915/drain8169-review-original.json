@@ -1,0 +1,471 @@
+{
+  "reviewer_session": "/root/review_8169",
+  "configuration": "gpt-6-astra low requested by parent/skill; no model override attempted in this session",
+  "pr": 8169,
+  "original_head": "7e268bd96edda8819250318a3cbdaa1b20e90f35",
+  "declared_base": "main",
+  "actual_merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "authority_main": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+  "live_remote_main_verified": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+  "fetch_receipt": "drain8169-fetch.json",
+  "original_delta": "drain8169-original.delta",
+  "iteration": 1,
+  "source_verdict": "FIX_REQUIRED",
+  "recommendation": "NEEDS MANUAL SCIENCE (narrow bounded author repairs identified; no landing PASS)",
+  "findings": [
+    {
+      "id": "8169-F1",
+      "path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        154,
+        166
+      ],
+      "title": "State the complete input symmetry before copy/flip classification",
+      "evidence": "The bisector rotation exchanges ordered records. Internal SO(3) alone permits masses (1/2,1/4,1/8,1/8) on (q,qprime,-q,-qprime). The parent also supplies independent cubic slot permutations; an explicit slot exchange can repair the argument.",
+      "narrow_fix": "State unordered pair or the two occupied slots and their cubic exchange; combine slot swap and internal bisector to stabilize the complete input. At fixed occupancy geometry, orbit t classifies the pair. Distinguish opposite versus adjacent slot strata if both are included.",
+      "disposition": "author_fix_required"
+    },
+    {
+      "id": "8169-F2",
+      "path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        29,
+        33,
+        196,
+        206
+      ],
+      "title": "Finite menu is not always probability support",
+      "evidence": "delta_q is a covariant normalized one-neighbor finite law. Finite SO(2)-invariant support is a nonempty subset of {q,-q}. For copy/flip weights alpha=1/2,gamma=0, the four-point menu has support size2, not4. Current axiom memo explicitly defines finite support by nonzero mass.",
+      "narrow_fix": "Use menu for all four candidate points; actual support4 requires alpha,gamma>0. State singleton/pair one-neighbor possibilities. Preserve boundary cases and replace deterministic copy wording by uniform choice between the two copy atoms where appropriate.",
+      "disposition": "author_fix_required"
+    },
+    {
+      "id": "8169-F3",
+      "path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        177,
+        181
+      ],
+      "title": "Linear family needs parameter domain and functional qualification",
+      "evidence": "At t=3/5, lambda=1 gives flip mass -3/20. Arbitrary alpha(t) corresponds to lambda(t)=(4alpha(t)-1)/(1+t), with |lambda(t)|(1+t)<=1. Fixed lambda is not every t-dependent law. Finite beta Gibbs gives strictly positive weights, approaching endpoints only in limits.",
+      "narrow_fix": "Supply the domain -1<t<1, parameter bound, pointwise/function interpretation, and Gibbs limits. Rename runner beta argument as B at t=0 or implement/restrict it honestly; current gibbs_copy_mass silently deletes t.",
+      "disposition": "author_fix_required"
+    },
+    {
+      "id": "8169-F4",
+      "path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        194,
+        206
+      ],
+      "title": "Replace conditional-cardinality comparison by a joint-event proof",
+      "evidence": "Chain endpoints q and qprime noncollinear are unreachable when all one-neighbor draws lie on the preceding axis. Conditional menus at that configuration do not alone establish different joint measures. However the intended negative result is repairable: E={|L dot R|<1} has probability0 in chain and1 under independent Haar ends-first roots.",
+      "narrow_fix": "State supplied sequential product kernel, independent empty-neighbor draws, Haar sphere domain, and finite antipodal-supported one-neighbor law. Prove the endpoint event separation, including zero-weight cases. Retain original2-vs4 geometry only as a menu illustration; do not discard the negative theorem.",
+      "disposition": "author_fix_required"
+    },
+    {
+      "id": "8169-F5",
+      "path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        184,
+        192,
+        247,
+        248
+      ],
+      "title": "Keep raw Born normalization identity; remove unsupported variation inference",
+      "evidence": "Raw overlap values sum to2 for every noncollinear pair. Once divided by2, the law is normalized, depends on qprime through moving atoms and t, and is internally SO(3)-covariant though not exchange-symmetric. The runner D2 only compares two overlap values and does not test variation. Born about normalized bisector also sums to2 before a factor1/2.",
+      "narrow_fix": "Separate raw two-outcome overlap from a four-effect/normalized menu law. Preserve sum2 and normalized asymmetric counterexample. Do not infer failure of the framework variation clause from absence of qprime as a literal formula parameter; label exchange failure under the explicitly supplied exchange symmetry.",
+      "disposition": "author_fix_required"
+    },
+    {
+      "id": "8169-F6",
+      "path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        238,
+        290
+      ],
+      "title": "Negative packet is incomplete independently of valid mathematics",
+      "evidence": "N1 lists4 routes, lacks required honesty markers; N2 asserts independence without nonimplication witnesses; N3 misses symmetry/positivity/product hypotheses; N5 has no five stdout resolution lines; N7 dismisses triviality instead of testing a concrete counterroute; N8 has no demonstrated prior-scope search.",
+      "narrow_fix": "Preserve four actual routes and their exact dispositions; do not invent a fifth. Correct mathematical claim scope, record formal negative-certification FAIL/deferred explicitly, and preserve negative proofs and recovery. Honest N5 lines can be added, but do not claim packet PASS until the actual contract is satisfied.",
+      "disposition": "author_fix_required"
+    },
+    {
+      "id": "8169-F7",
+      "path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        75,
+        83,
+        126,
+        138,
+        217,
+        218
+      ],
+      "title": "Remove live PR-local authority language and strengthen evidence",
+      "evidence": "Open sibling PR8152 is explicitly not a premise, but live prose/runner F3 requires its PR number. Runner C1 verifies only chosen normalized pairs, not covariance classification; E3 verifies menu lengths, not joint law. Cache reports21 PASS but misses these decisive gaps and all N5 lines.",
+      "narrow_fix": "Keep source at canonical note/runner paths; historical sibling mention belongs in recovery history. Add decisive symmetry, parameter-bound, support, and joint-event controls. Refresh final cache only on frozen final source/actual inputs, with bounded execution and mutation controls; regenerate topology on integration rather than copying stale manifest.",
+      "disposition": "author_fix_required"
+    }
+  ],
+  "proof_judgment": "FAIL as originally framed; useful conditional exact repairs identified, no target-equivalent gap",
+  "nature_retention": "BOUNDED mathematical candidates only; no Nature/physical-law selection or audit standing",
+  "imports": [
+    {
+      "input": "minimal_axioms",
+      "class": "framework premise",
+      "role": "current definitions and boundary, no probability values/order chosen"
+    },
+    {
+      "input": "pure-state sphere, independent internal SO(3), cubic slot action",
+      "class": "explicit normalization/boundary condition",
+      "role": "supplied mathematical representation; parent source is conditional and unaudited"
+    },
+    {
+      "input": "four-point menu, pair-Gibbs beta and B=2, lambda, orthogonal/rational examples",
+      "class": "explicit normalization/boundary condition",
+      "role": "declared mathematical comparisons, no measured/fitted inputs"
+    },
+    {
+      "input": "sequential product, records-only local kernels, independent empty-root draws",
+      "class": "explicit normalization/boundary condition",
+      "role": "supplied process assumption; not formation dynamics derived from axioms"
+    },
+    {
+      "input": "registered scale/kinetic/realized-state primitives",
+      "class": "approved premises read, not used",
+      "role": "none supplies menu, weighting, independence, or typicality"
+    }
+  ],
+  "input_identities": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "blobs": {
+        "head": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+        "base": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+        "main": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "blobs": {
+        "head": "eb9f897127d2db9b2f3226abd1e93311188fdcee",
+        "base": "eb9f897127d2db9b2f3226abd1e93311188fdcee",
+        "main": "eb9f897127d2db9b2f3226abd1e93311188fdcee"
+      },
+      "unchanged": true
+    }
+  ],
+  "authority_files": [
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/references/case-studies.md",
+      "sha256": "bcd62b9f19e0df5557d6a9b034dd3fa294f942da26f66a19f9e88513b708c3e7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+      "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+    },
+    {
+      "path": "docs/audit/README.md",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8"
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+    }
+  ],
+  "claim_dispositions": [
+    {
+      "claim": "four-point equivariance and distinctness iff |t|<1",
+      "disposition": "accepted unchanged",
+      "proof": "CLOSED"
+    },
+    {
+      "claim": "copy/flip classification",
+      "disposition": "narrowed",
+      "proof": "CONDITIONAL on explicit exchange symmetry"
+    },
+    {
+      "claim": "Gibbs masses and ratio",
+      "disposition": "accepted unchanged",
+      "proof": "CLOSED in stated noncollinear menu, finite beta"
+    },
+    {
+      "claim": "linear same-family identification",
+      "disposition": "narrowed",
+      "proof": "CLOSED after lambda(t) domain correction"
+    },
+    {
+      "claim": "Born raw sum2",
+      "disposition": "accepted unchanged",
+      "proof": "CLOSED algebra; formal negative packet deferred"
+    },
+    {
+      "claim": "Born violates variation / ignores qprime",
+      "disposition": "rejected",
+      "proof": "unsupported inference; normalized moving law is counterevidence"
+    },
+    {
+      "claim": "one-neighbor support exactly2 and ends-first exactly4 for all weights",
+      "disposition": "rejected",
+      "proof": "singleton and zero-weight counterexamples"
+    },
+    {
+      "claim": "sequential joint order obstruction",
+      "disposition": "narrowed",
+      "proof": "CONDITIONAL exact endpoint event proof; formal negative packet deferred"
+    },
+    {
+      "claim": "four routes / clauses / future3-neighbor,mixed,DLR work",
+      "disposition": "deferred",
+      "proof": "preserve actual route records; no coverage/closure inferred"
+    }
+  ],
+  "source_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "base": null,
+      "head": "100644 blob 2e1efea5ebfa174ee6ff2d0d73f989be2e5f1c27\t.claude/science/physics-loops/frame-attached-four-point-weights-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "head_sha256": "5c8ca22ef22459780e7b2c8f20a522e307546a7b6a212f1e83a77809b9f44074",
+      "main": null,
+      "recovery_local": "/private/tmp/review-drain-20260915/drain8169-originals/head/.claude/science/physics-loops/frame-attached-four-point-weights-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "recovery_git": "7e268bd96edda8819250318a3cbdaa1b20e90f35:.claude/science/physics-loops/frame-attached-four-point-weights-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "disposition": "deferred",
+      "reason": "Historical process packet, not canonical scientific authority. Preserve full original content with recovery link; HANDOFF science maps to F1-F6 and opportunity queue remains unproved next work."
+    },
+    {
+      "path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/HANDOFF.md",
+      "base": null,
+      "head": "100644 blob 2588781386ad583a427de3b60579aea86c06f0ea\t.claude/science/physics-loops/frame-attached-four-point-weights-20260916/HANDOFF.md",
+      "head_sha256": "ff892d37f027e372a732af407a4912e3f2f01313f95c14c16e0b8e3640712e34",
+      "main": null,
+      "recovery_local": "/private/tmp/review-drain-20260915/drain8169-originals/head/.claude/science/physics-loops/frame-attached-four-point-weights-20260916/HANDOFF.md",
+      "recovery_git": "7e268bd96edda8819250318a3cbdaa1b20e90f35:.claude/science/physics-loops/frame-attached-four-point-weights-20260916/HANDOFF.md",
+      "disposition": "deferred",
+      "reason": "Historical process packet, not canonical scientific authority. Preserve full original content with recovery link; HANDOFF science maps to F1-F6 and opportunity queue remains unproved next work."
+    },
+    {
+      "path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/OPPORTUNITY_QUEUE.md",
+      "base": null,
+      "head": "100644 blob 8e0fa176acb3672320135deef09c1cb869eb53d9\t.claude/science/physics-loops/frame-attached-four-point-weights-20260916/OPPORTUNITY_QUEUE.md",
+      "head_sha256": "9ac9e684f62ff643e4a7519bbb5d6e942300644f1b3324937d1eb889cc1797f5",
+      "main": null,
+      "recovery_local": "/private/tmp/review-drain-20260915/drain8169-originals/head/.claude/science/physics-loops/frame-attached-four-point-weights-20260916/OPPORTUNITY_QUEUE.md",
+      "recovery_git": "7e268bd96edda8819250318a3cbdaa1b20e90f35:.claude/science/physics-loops/frame-attached-four-point-weights-20260916/OPPORTUNITY_QUEUE.md",
+      "disposition": "deferred",
+      "reason": "Historical process packet, not canonical scientific authority. Preserve full original content with recovery link; HANDOFF science maps to F1-F6 and opportunity queue remains unproved next work."
+    },
+    {
+      "path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/TRACE_GATE.md",
+      "base": null,
+      "head": "100644 blob b16d8ada36906b74b6f28e0ec3307bcd0711b3b1\t.claude/science/physics-loops/frame-attached-four-point-weights-20260916/TRACE_GATE.md",
+      "head_sha256": "41d08bab8e18b31700a50b44e82bac2ddcd0f4ffe060b15cea1a963e9f08585d",
+      "main": null,
+      "recovery_local": "/private/tmp/review-drain-20260915/drain8169-originals/head/.claude/science/physics-loops/frame-attached-four-point-weights-20260916/TRACE_GATE.md",
+      "recovery_git": "7e268bd96edda8819250318a3cbdaa1b20e90f35:.claude/science/physics-loops/frame-attached-four-point-weights-20260916/TRACE_GATE.md",
+      "disposition": "deferred",
+      "reason": "Historical process packet, not canonical scientific authority. Preserve full original content with recovery link; HANDOFF science maps to F1-F6 and opportunity queue remains unproved next work."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "base": null,
+      "head": "100644 blob 9744b717438183f6ebc4e40a0c5f868673977250\tdocs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "head_sha256": "ec915e66d82cd8c8b01eb4e0b582f414301b47af234895c2ca4ce494a5828225",
+      "main": null,
+      "recovery_local": "/private/tmp/review-drain-20260915/drain8169-originals/head/docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "recovery_git": "7e268bd96edda8819250318a3cbdaa1b20e90f35:docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "disposition": "narrowed",
+      "reason": "Canonical source/evidence repair required under F1-F7; no final corrected blob yet. Original negative proof and exact identities must be retained with corrected scope.",
+      "final_path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "base": "100644 blob 9c5ee548861f53d42bff5d600652e7391b769f17\tdocs/audit/data/citation_graph_manifest.json",
+      "base_sha256": "a3dcc3d90687ae261e65dc02caec57008d018c514d8ef6cd6fcbfb0d2806f5fb",
+      "head": "100644 blob 6a6622bf983c983605f7c1fd1e6a7d9986f4143e\tdocs/audit/data/citation_graph_manifest.json",
+      "head_sha256": "01b0ed5a1f65ede1eefa99c96b78ede7a7bf130883eb8674ac6ef452fc4b0b08",
+      "main": "100644 blob af5f9a331efc1587e38ad11ea1ab909c03c188a6\tdocs/audit/data/citation_graph_manifest.json",
+      "main_sha256": "c2443d86a323d72cee113f0e351e29614cd88b9c7923e5120b9436cc7521aca5",
+      "recovery_local": "/private/tmp/review-drain-20260915/drain8169-originals/head/docs/audit/data/citation_graph_manifest.json",
+      "recovery_git": "7e268bd96edda8819250318a3cbdaa1b20e90f35:docs/audit/data/citation_graph_manifest.json",
+      "disposition": "superseded",
+      "reason": "Regenerate topology acknowledgment from final integrated source; preserve all current-main nodes/edges and original manifest for recovery."
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt",
+      "base": null,
+      "head": "100644 blob 719bfa0c25e7665f0bd166e71fece9dd57b8502f\tlogs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt",
+      "head_sha256": "c7b1ff2af5d1335d5eed15e3bc5d007a10f85b04d9c5830c2f4d8d8e67fb7fff",
+      "main": null,
+      "recovery_local": "/private/tmp/review-drain-20260915/drain8169-originals/head/logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt",
+      "recovery_git": "7e268bd96edda8819250318a3cbdaa1b20e90f35:logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt",
+      "disposition": "narrowed",
+      "reason": "Canonical source/evidence repair required under F1-F7; no final corrected blob yet. Original negative proof and exact identities must be retained with corrected scope.",
+      "final_path": "logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt"
+    },
+    {
+      "path": "scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py",
+      "base": null,
+      "head": "100644 blob 4c34d2777f1fd27b78ead525a78a7165ca9c3b18\tscripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py",
+      "head_sha256": "5379c584efe47c3787de95bffd6a7c54b5d784540f5b9b380217ad566268fbf1",
+      "main": null,
+      "recovery_local": "/private/tmp/review-drain-20260915/drain8169-originals/head/scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py",
+      "recovery_git": "7e268bd96edda8819250318a3cbdaa1b20e90f35:scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py",
+      "disposition": "narrowed",
+      "reason": "Canonical source/evidence repair required under F1-F7; no final corrected blob yet. Original negative proof and exact identities must be retained with corrected scope.",
+      "final_path": "scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py"
+    }
+  ],
+  "current_main_preservation": {
+    "original_science_paths_on_main": "absent; no overwrite needed",
+    "overlap": "only topology manifest exists and differs; regenerate, never replace with original",
+    "premises": "both actual premise inputs identical base/head/frozen main",
+    "final_candidate": "not yet provided; exact-current-main preservation/final interactions remain due"
+  },
+  "checks": {
+    "independent": "check8169.py and check8169.json:18 successful bounded checks; manual orbit/stabilizer and endpoint-measure proof",
+    "original_primary": "not executed: already preserved original cache and no need to rerun known insufficient checks",
+    "mutations": "not yet executed on final primary; required after correction",
+    "pipeline_count": 0,
+    "combined_gate": "coordinator integration stage; none claimed",
+    "source_changes": 0,
+    "commits": 0
+  },
+  "failures_preserved": [
+    "python command unavailable; switched to python3, no partial original extraction occurred",
+    "broad reverse-side diff --stat generated truncated irrelevant output; used correct base-to-head inventory thereafter",
+    "large governance outputs truncated; applicable exact authority/premise and scientific source read separately, unrelated harness rows not scientific inputs",
+    "initial sharded-row wrapper assumption returned no row; subsequently read exact parent shard and verified unaudited"
+  ],
+  "no_go": {
+    "verdict": "FAIL packet; mathematical truth judged separately",
+    "N1": "4 original routes, no fabricated5th",
+    "N2": "independence unsupported; state assumptions without wall count",
+    "N3": "hidden exchange, positivity and product process resolved in finding scope",
+    "N4": "parent is supplied-action context, not weight/formation theorem; sibling nonauthority",
+    "N5": "missing five-line certificate; only finite orthogonal menu arithmetic executed originally",
+    "N6": "primitives read; no approved primitive supplies weights or stochastic process",
+    "N7": "strong objection: ordered input covariance differs from exchange; zero weights change support; joint conditioning mismatch",
+    "N8": "current parent correction already distinguishes selected actions and physical formation; apply same conditional boundary here"
+  },
+  "remaining": "Original same-session reviewer must cold-read corrected source/actual inputs and confirm final interactions. Preserve complete original mappings, failures and negative proofs. No author self-certification."
+}

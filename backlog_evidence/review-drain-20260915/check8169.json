@@ -1,0 +1,96 @@
+{
+  "checks": [
+    {
+      "name": "ordered_covariance_counterexample",
+      "pass": true,
+      "detail": "Fixed unequal slot weights are SO(3)-equivariant for every rotation; bisector swaps input slots, not a stabilizer."
+    },
+    {
+      "name": "exchange_is_extra",
+      "pass": true,
+      "detail": "The counterexample is not exchange-invariant; no counterexample to SO(3) plus slot-exchange covariance is claimed."
+    },
+    {
+      "name": "linear_-3/5_0",
+      "pass": true,
+      "detail": "Direct pointwise weights, valid lambda bounds; endpoints have two nonzero atoms."
+    },
+    {
+      "name": "linear_-3/5_5/2",
+      "pass": true,
+      "detail": "Direct pointwise weights, valid lambda bounds; endpoints have two nonzero atoms."
+    },
+    {
+      "name": "linear_-3/5_-5/2",
+      "pass": true,
+      "detail": "Direct pointwise weights, valid lambda bounds; endpoints have two nonzero atoms."
+    },
+    {
+      "name": "born_sum_-3/5",
+      "pass": true,
+      "detail": "Antipodal pairs sum to one each at every noncollinear t."
+    },
+    {
+      "name": "linear_0_0",
+      "pass": true,
+      "detail": "Direct pointwise weights, valid lambda bounds; endpoints have two nonzero atoms."
+    },
+    {
+      "name": "linear_0_1",
+      "pass": true,
+      "detail": "Direct pointwise weights, valid lambda bounds; endpoints have two nonzero atoms."
+    },
+    {
+      "name": "linear_0_-1",
+      "pass": true,
+      "detail": "Direct pointwise weights, valid lambda bounds; endpoints have two nonzero atoms."
+    },
+    {
+      "name": "born_sum_0",
+      "pass": true,
+      "detail": "Antipodal pairs sum to one each at every noncollinear t."
+    },
+    {
+      "name": "linear_3/5_0",
+      "pass": true,
+      "detail": "Direct pointwise weights, valid lambda bounds; endpoints have two nonzero atoms."
+    },
+    {
+      "name": "linear_3/5_5/8",
+      "pass": true,
+      "detail": "Direct pointwise weights, valid lambda bounds; endpoints have two nonzero atoms."
+    },
+    {
+      "name": "linear_3/5_-5/8",
+      "pass": true,
+      "detail": "Direct pointwise weights, valid lambda bounds; endpoints have two nonzero atoms."
+    },
+    {
+      "name": "born_sum_3/5",
+      "pass": true,
+      "detail": "Antipodal pairs sum to one each at every noncollinear t."
+    },
+    {
+      "name": "linear_negative_weight",
+      "pass": true,
+      "detail": "lambda=1 at t=3/5 is not a probability."
+    },
+    {
+      "name": "one_neighbor_singleton",
+      "pass": true,
+      "detail": "delta_q is a finite normalized equivariant one-neighbor kernel; antipodal pair need not both have positive mass."
+    },
+    {
+      "name": "gibbs_direct_exp",
+      "pass": true,
+      "detail": "Independent exponential normalization confirms stated rational masses."
+    },
+    {
+      "name": "sequential_joint_event",
+      "pass": true,
+      "detail": "Chain has endpoint noncollinearity probability 0 for every antipodal-supported kernel; independent six-axis endpoints have probability 24/36. Haar analogue is 1 by zero area of two points."
+    }
+  ],
+  "total": 18,
+  "original_primary_executed": false
+}

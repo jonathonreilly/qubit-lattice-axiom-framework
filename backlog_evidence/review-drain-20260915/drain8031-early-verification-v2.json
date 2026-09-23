@@ -1,0 +1,16 @@
+{
+  "prepared_sha256": "f206fc8429d05078570eb74b21a14b6b7ed025e10ffb5284b3848bba8bcc181d",
+  "verified_source_paths": 74,
+  "exact_archive_paths": 70,
+  "v1_external_snapshots_verified": 2,
+  "positive_sections_2_through_5_byte_identical": true,
+  "runner_changed_only_note_pin": true,
+  "parent_current_main": "ea403fe1c5e71418c95b976e72a11df375c0a655",
+  "parent_sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+  "runtime_inputs": {
+    "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+    "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467"
+  },
+  "runner_sha256": "662523c65e08ac1a73da5a232bd98de5145a21c6e073a9567cc008ed8b01035a",
+  "scope": "read-only hash/archive/AST verification, no primary execution"
+}

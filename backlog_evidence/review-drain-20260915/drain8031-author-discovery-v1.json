@@ -1,0 +1,19 @@
+{
+  "stage": "read-only author discovery; no primary execution",
+  "declared_inputs": [
+    "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+  ],
+  "declared_timeout": 180,
+  "input_fingerprint": "2d0d25ed95713765a2e2d4514ae06fdba6b89261a1fb937eda349e1fbd7c11b3",
+  "packet_transitive_helpers": [],
+  "graph_citations": [
+    "/private/tmp/review-drain-20260915/review-draft-slot/docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "/private/tmp/review-drain-20260915/review-draft-slot/docs/work_history/review_loop/pr8031/README.md"
+  ],
+  "original_displayed_math_lines_preserved": 14,
+  "full_correction_diff_read": true,
+  "owned_hashes_valid": true,
+  "tracked_diff": "",
+  "index_diff": ""
+}

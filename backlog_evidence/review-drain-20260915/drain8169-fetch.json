@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "7e268bd96edda8819250318a3cbdaa1b20e90f35",
+  "fetched_ref": "refs/review-loop/fetched/8169-f9e517cde1d64974a7173b5a1aab1bbc",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916",
+    "headRefOid": "7e268bd96edda8819250318a3cbdaa1b20e90f35",
+    "isDraft": false,
+    "number": 8169,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

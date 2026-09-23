@@ -1,0 +1,20 @@
+[
+  {
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "blobs": {
+      "head": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "base": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "main": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+    },
+    "unchanged": true
+  },
+  {
+    "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+    "blobs": {
+      "head": "eb9f897127d2db9b2f3226abd1e93311188fdcee",
+      "base": "eb9f897127d2db9b2f3226abd1e93311188fdcee",
+      "main": "eb9f897127d2db9b2f3226abd1e93311188fdcee"
+    },
+    "unchanged": true
+  }
+]

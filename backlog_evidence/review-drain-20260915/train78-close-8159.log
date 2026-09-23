@@ -1,0 +1,5 @@
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+ * branch                  ai/execution -> FETCH_HEAD
+✓ Closed pull request jonathonreilly/qubit-lattice-axiom-framework#8159 (Personal TOE derivation milestone: rotor limits, native response, and open bridges)
+{"pr": 8159, "state": "CLOSED", "recovery_branch_preserved": true}

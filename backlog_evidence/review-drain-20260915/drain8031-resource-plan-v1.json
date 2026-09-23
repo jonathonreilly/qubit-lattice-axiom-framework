@@ -1,0 +1,16 @@
+{
+  "pr": 8031,
+  "runner": "scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py",
+  "timeout_seconds": 180,
+  "rss_limit_MiB": 180,
+  "basis": "Original declared limits retained; no capture performed. Fixed 57x57 exact SymPy matrices; seven principal square matrices U,Q,Tc,G,D,Pv,shell, each3249 entries, plus symbolic product temporaries; one57-vector and sparse output entries. No size-dependent grid allocation, dynamic helper or imported primary. Symbolic object overhead prevents claiming a numeric peak from entry count alone; watchdog required.",
+  "work": "Fixed nested3-valued construction, finite57-dimensional matrix products/simplifications;16 mathematical checks +1 resource.",
+  "json_destination": "logs/runner-cache/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.json",
+  "cache_destination": "logs/runner-cache/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.txt",
+  "runtime_inputs": {
+    "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md": "e5f9b9071129565678e8be8a84e5a20d1dd5c9eac3c4d1dc8fdfa14d2575da1e",
+    "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467"
+  },
+  "mathematical_dependency": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+  "capture_authorized": false
+}

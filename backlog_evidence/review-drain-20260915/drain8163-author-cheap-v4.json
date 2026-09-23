@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8163",
+  "tree": "b0a6014e85334e890cda852da411cccb0827b273",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/temporal_wilson_resummation_check_2026_09_16.py",
+      "helpers": [
+        "scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py",
+        "scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py",
+        "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/repo/review_feedback/pr8163-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "open_boundary_wilson_fock_model_match_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/repo/review_feedback/pr8163-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "open_wilson_gauge_matter_fixed_graph_state_join_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/repo/review_feedback/pr8163-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8769,
+      "misses": 4512
+    },
+    "packet_imports": {
+      "hits": 8757,
+      "misses": 4510
+    },
+    "declared_inputs": {
+      "hits": 8802,
+      "misses": 4665
+    }
+  },
+  "record_sha256": "e91b0179a847104f1c68c6b65c9b27648ed526832d4eb7d0de47df8489a6a582",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

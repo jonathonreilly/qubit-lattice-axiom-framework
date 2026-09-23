@@ -1,0 +1,26 @@
+{
+  "prepared_sha256": "2c5604f7302b869731bb0a7080b9a20aa48d5e9d7e6e7e0174f27a53087d9d81",
+  "source_hashes_match": 74,
+  "exact_archive_originals_match": 70,
+  "runner_mathematical_region_exact": true,
+  "n5_counts": {
+    "per_element": 5,
+    "per_site": 0,
+    "per_mode": 4,
+    "per_block": 8,
+    "lattice_wide": 0
+  },
+  "original_display_formula_lines_preserved": 14,
+  "runtime_inputs": [
+    {
+      "path": "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "e5f9b9071129565678e8be8a84e5a20d1dd5c9eac3c4d1dc8fdfa14d2575da1e"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467"
+    }
+  ],
+  "run_scope": "Read-only archive/hash/AST/formula verification; no primary execution",
+  "yaml_dependency_line_also_preserved": true
+}

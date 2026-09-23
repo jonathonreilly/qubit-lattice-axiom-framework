@@ -1,0 +1,12 @@
+{
+  "input_paths": [
+    "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+  ],
+  "fingerprint": "ff71620526b4644d9cb6490172505b433481e9e031937f3b17a2145fa5592735",
+  "source_sha256": "662523c65e08ac1a73da5a232bd98de5145a21c6e073a9567cc008ed8b01035a",
+  "note_sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+  "no_execution": true,
+  "tracked_clean": true,
+  "index_clean": true
+}

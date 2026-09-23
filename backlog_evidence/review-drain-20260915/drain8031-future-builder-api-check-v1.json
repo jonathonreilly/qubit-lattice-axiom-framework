@@ -1,0 +1,15 @@
+{
+  "claim_id": "gauge_wilson_pw_compression_shell_and_energy_path_bounds_bounded_theorem_note_2026-09-07",
+  "graph_runner": "scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py",
+  "graph_helpers": [],
+  "packet_helpers": [],
+  "transitive": [],
+  "graph_resolved": [],
+  "inputs": [
+    "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+  ],
+  "builder_executed": false,
+  "tracked_clean": true,
+  "index_clean": true
+}

@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n{\n  \"source_sha256\": \"fc22a65bb2eb260cc273f786288f956ce512106739907b30946df7f534471ede\",\n  \"fixed_duration_checks\": [\n    {\n      \"time_slices\": 3,\n      \"delta\": 0.09999999999999999,\n      \"physical_duration\": 0.3,\n      \"matrix_dimension\": 48,\n      \"first_variation\": -1.8068180020023997e-06,\n      \"second_variation\": 1.3022900863232273e-05,\n      \"third_variation\": 5.523292422431134e-05,\n      \"third_difference_coarse\": 5.4925637982187025e-05,\n      \"third_difference_fine\": 5.515600691182819e-05,\n      \"third_difference_richardson\": 5.5232796555041906e-05,\n      \"third_difference_error\": 1.2766926943663095e-10,\n      \"third_variation_bound\": 10731437.200341381,\n      \"pure_gauge_variations\": [\n        -1.3552527156068805e-19,\n        6.860966872759833e-19,\n        -1.0842021724855044e-19\n      ]\n    },\n    {\n      \"time_slices\": 6,\n      \"delta\": 0.049999999999999996,\n      \"physical_duration\": 0.3,\n      \"matrix_dimension\": 96,\n      \"first_variation\": 4.042415016863689e-06,\n      \"second_variation\": 9.985826820763663e-06,\n      \"third_variation\": 6.002206296664407e-05,\n      \"third_difference_coarse\": 5.968858199191147e-05,\n      \"third_difference_fine\": 5.9938519185981866e-05,\n      \"third_difference_richardson\": 6.002183158400533e-05,\n      \"third_difference_error\": 2.3138263873667296e-10,\n      \"third_variation_bound\": 10731437.200341381,\n      \"pure_gauge_variations\": [\n        -8.131516293641283e-19,\n        -1.4230153513872246e-19,\n        1.0842021724855044e-19\n      ]\n    },\n    {\n      \"time_slices\": 12,\n      \"delta\": 0.024999999999999998,\n      \"physical_duration\": 0.3,\n      \"matrix_dimension\": 192,\n      \"first_variation\": 8.349693956746096e-06,\n      \"second_variation\": 7.971641756708758e-06,\n      \"third_variation\": 6.195395567102513e-05,\n      \"third_difference_coarse\": 6.160995302454485e-05,\n      \"third_difference_fine\": 6.186770047896443e-05,\n      \"third_difference_richardson\": 6.19536162971043e-05,\n      \"third_difference_error\": 3.3937392082499223e-10,\n      \"third_variation_bound\": 10731437.200341381,\n      \"pure_gauge_variations\": [\n        4.336808689942018e-19,\n        -3.4359891505370693e-18,\n        -7.15573433840433e-18\n      ]\n    }\n  ],\n  \"seconds\": 0.02322530746459961,\n  \"input_sha256\": {\n    \"docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md\": \"49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07\"\n  },\n  \"completed_diagnostic_families\": 1\n}\nTOTAL: PASS=1 FAIL=0\nper_element: analytic third variations versus determinant finite differences.\nper_site: fixed physical duration 0.3 and three time resolutions.\nper_mode: sampled physical curl directions and pure-gauge controls.\nper_block: original Richardson comparison and sufficient general bound.\nlattice_wide: sampled directions only; no exhaustive all-direction numerical proof.\n",
+  "stderr": "",
+  "elapsed_sec": 0.14078283309936523,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/.in-progress/temporal_wilson_third_curl_variation_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/temporal_wilson_third_curl_variation_check_2026_09_16.json",
+    "sha256": "51413300e52944752ebb35dffc3f3880a34d65e6159de39df11a928231bd6fc0"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 805306368,
+    "interval_sec": 0.02,
+    "root_pid": 11192,
+    "samples": 4,
+    "peak_tree_rss_bytes": 85753856,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8163-capture.py",
+  "capture_script_sha256": "a90573ff64b112364835bcbce177648584dc231331119491582d370354fd2512"
+}

@@ -1,0 +1,21 @@
+{
+  "pr": 8159,
+  "original_head": "ccca36e505a4cc5d0cd4735b377c15d69042fc41",
+  "branch": "physics-loop/toe-fixed-clock-field-20260915",
+  "landing": "ea403fe1c5e71418c95b976e72a11df375c0a655",
+  "source_verified_at": "ea403fe1c5e71418c95b976e72a11df375c0a655",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8159-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T02:03:37Z",
+    "headRefName": "physics-loop/toe-fixed-clock-field-20260915",
+    "headRefOid": "ccca36e505a4cc5d0cd4735b377c15d69042fc41",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8159,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8159"
+  }
+}

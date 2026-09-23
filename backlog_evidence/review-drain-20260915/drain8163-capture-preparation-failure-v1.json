@@ -1,0 +1,10 @@
+{
+  "operation": "Prepare capture adapter, before any primary execution",
+  "script": "/private/tmp/review-drain-20260915/prepare8163-capture.py",
+  "script_sha256": "d8bd9fc7df68dccba2691989a47dcc5f31a715be8815187766da08a4aa66d5ab",
+  "observed_error": "KeyError: 'status'",
+  "cause": "Original reviewer cold receipt uses verdict field, not status. No source edits or capture adapter was written.",
+  "cold_receipt": "/private/tmp/review-drain-20260915/drain8163-cold-confirmation-v4.json",
+  "cold_sha256": "9f543c83c7bc51f299e60b64e822bd90e74b6d0a66b7bfad90913006f1e040e6",
+  "actual_verdict": "PASS STAGED COLD SOURCE CONFIRMATION"
+}

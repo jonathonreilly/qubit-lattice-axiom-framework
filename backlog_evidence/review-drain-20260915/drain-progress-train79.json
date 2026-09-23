@@ -1,0 +1,42 @@
+{
+  "scope": "All open PRs, drafts and new arrivals; continue until reviewed and landed or explicitly rejected/closed.",
+  "main": "ea403fe1c5e71418c95b976e72a11df375c0a655",
+  "closed_since_expanded_scope": 39,
+  "latest_closed": 8159,
+  "latest_branch_preserved": true,
+  "inventory": "open-prs-wave19.json",
+  "open_at_snapshot": 107,
+  "drafts_at_snapshot": 19,
+  "new_arrivals_included": [
+    8676,
+    8678
+  ],
+  "integration": {
+    "train": "train79",
+    "pr": 8163,
+    "phase": "pipeline then strict then changed-evidence",
+    "shell_session": 35234,
+    "source_commit": "531d1d919addd534f1bfdcb952f86d12bf8d9fe8",
+    "frozen_tree": "e120d6b9af1ec183bc202590b862852048de8aad",
+    "notes": 3
+  },
+  "authoring": {
+    "review-meta-slot": 8167
+  },
+  "prepared_after_early_confirmation": [
+    8164,
+    8165,
+    8031
+  ],
+  "next_stage_strategy": "After train79 lands, advance the three no-registry preparations to fresh main and run their independent cold/preflight/capture/final paths. Collect compatible ready units while coordinator is occupied; never wait for an unfinished tail.",
+  "original_reviews_waiting_author": [
+    8166,
+    8168,
+    8169
+  ],
+  "benchmark": {
+    "report": "sol-max-astra-low-8158/comparison.md",
+    "remote_commit": "40a9c9b48a",
+    "result": "Sol max 52.68% cheaper modeled Standard credits, 58.93% slower, missed averaging restriction; keep Astra low default."
+  }
+}

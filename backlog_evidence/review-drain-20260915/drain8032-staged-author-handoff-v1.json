@@ -1,0 +1,51 @@
+{
+  "status": "84 owned paths staged; proposed capture adapter syntax checked, not executed",
+  "base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+  "tree": "d218c35f6ebdc84e6bb8ea8a8b2385ff9ed47ceb",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-build-staged-draft-v1.py",
+      "sha256": "e1b3350bcaebe417ddb36b8382a7a8d62d27d9f43f87431d5f111c433a36d8fd"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-unit-draft-v1.json",
+      "sha256": "56a1c5f9b789ebc15f14481198df01ca330fe40faed2c64533b40d6f86250b21"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-staged-freeze-v1.json",
+      "sha256": "464d245929f22ab1a2f3d92e93e9cb97505dcf9875d11d58a7128399b7aaeb54"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-source-handoff-v1.json",
+      "sha256": "f331d9abcbf8afa111e2c8999cf4d4c51933b5ab7e89f17494fc5cde5782dd60"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-cache-api-v1.json",
+      "sha256": "19611e8b7147862e8915d74da2670c6e54b58caf1f7b7675af5038a82b992973"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-capture-v1.py",
+      "sha256": "a111b3d73563978b8150f2f5074837ab7d7df885d28a3eba9dd7acfd2813b928"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-input-resource-plan-v2.json",
+      "sha256": "269e4a415fa6316f4922d9c54c136d0414f85b7c2683d6b712f746f3a74a4b6b"
+    }
+  ],
+  "cold_binding": null,
+  "programs": 2,
+  "checks": [
+    40,
+    22
+  ],
+  "limits": {
+    "seconds": 180,
+    "aggregate_rss_bytes": 268435456
+  },
+  "capture_order": "Run primary then companion serially, each once only after actual cold report is bound in a new immutable adapter revision. Keep source/index frozen across both; do not stage first cache before companion finishes.",
+  "output_contract": "AUDIT_RESULT_SIDECAR points to an exclusive external per-program path. The original execute_runner return is saved externally before API identity checks/cache publication. No --json rerun or canonical JSON dependency. Preserve all errors, partial sidecar/stdout/cache, and once-only markers.",
+  "supporting_proofs": "No separate current supporting-proof note: all alternative proof text is inline in canonical note. Exact historical Markdown is explicitly non-authoritative recovery.",
+  "science_executions": 0,
+  "cache_checks": 0,
+  "gates": 0
+}

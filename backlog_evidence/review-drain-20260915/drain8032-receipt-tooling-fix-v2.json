@@ -1,0 +1,59 @@
+{
+  "status": "RECEIPT ONLY; no cheap rerun",
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-author-unit-draft-v2.json",
+    "sha256": "3ed4960ef2ec39fe2896f930dec6d11dda47613bceb76193e2fe2c231383b5f7"
+  },
+  "builder": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-build-staged-draft-v2.py",
+    "sha256": "ba818cfb2e708958cf9a987a1f6c4540331b45d40b22ec32f03c765c4e3c884f"
+  },
+  "previous_record": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-author-unit-draft-v1.json",
+    "sha256": "56a1c5f9b789ebc15f14481198df01ca330fe40faed2c64533b40d6f86250b21"
+  },
+  "failed_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-author-cheap-v1.json",
+    "sha256": "30979b36068cccc08eb01ba7fcef963a12a989a9f22c7145a5a8bb8bff75bcc3"
+  },
+  "required_tooling": [
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/audit/data/doc_authority_registry.json",
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+    },
+    {
+      "path": "docs/audit/scripts/ledger_io.py",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+    },
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    }
+  ],
+  "tree": "d218c35f6ebdc84e6bb8ea8a8b2385ff9ed47ceb",
+  "base": "e46c78efd91d00c8a96ea4f11ea8bc5a8e3ed0e6",
+  "capture_adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8032-capture-v1.py",
+    "sha256": "a111b3d73563978b8150f2f5074837ab7d7df885d28a3eba9dd7acfd2813b928"
+  },
+  "capture_binding": "Adapter accepts explicitly supplied exact record and cheap hashes; use draft v2 and its future cheap receipt. Cold binding remains None; no adapter source change required.",
+  "source_edits": 0,
+  "staging_changes": 0,
+  "science_executions": 0
+}

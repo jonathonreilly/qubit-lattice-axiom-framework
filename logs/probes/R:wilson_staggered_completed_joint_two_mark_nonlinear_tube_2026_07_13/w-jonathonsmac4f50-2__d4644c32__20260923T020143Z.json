@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.py",
+ "seed": 28903,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020143Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5b8e7bfbc834311597ea8484994bd496277d294bdc20a1cb488350fe13595764",
+ "stdout_tail": ".040920026969537, M_delta=88.821698004805114\nPASS conditional_one_horizon_nonlinear_tube_arithmetic: B=3.613463806021123e-05, q=0.904837418035960, delta=0.001000, B+qdelta+(M/2)delta^2=9.853829050985733e-04<delta, margin=1.461709490142675e-05\nPASS separate_center_ledger_gap_eta_and_residual_atom_membership: complete center/output charge=delta+tube+B=2.021517543158784e-03, epsilon_Q=2.262440843396182e-04, gap/m=0.999773755915660, sigma_eta=6.788090441796472e-04, theta_atom=0.426574016916734, expm1(delta)=1.000500166708342e-03<c\nPASS hidden_condition_phrase_scan: pre-N3 note plus pre-scan runner counts={'we assume': 0, 'by construction': 0, 'as is standard': 0, 'the framework provides': 0, 'bridge context': 0, 'background': 1, 'naturally': 0, 'obviously': 0, 'standard qft': 0, 'registered': 0, 'canonical': 0}; sole background hit is the declared finite-sector import\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_JOINT_PRODUCT_REFERENCE_DETERMINANT_COUNTERTERM_OUTER_HAAR_COLORED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_SCALAR_PRODUCT_REFERENCE_COMPLETED_JOINT_OUTER_HAAR_ACTUAL_OUTPUT_ATOM_RETURN_BOUNDED_THEOREM_NOTE_2026-07-13.md', 'WILSON_STAGGERED_SPLIT_DERIVATIVE_AND_UNLOCALIZED_CAUCHY_CERTIFICATE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020143Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

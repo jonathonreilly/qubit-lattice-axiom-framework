@@ -1,0 +1,37 @@
+{
+ "task": "P:8628",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block82-what-c",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8628",
+ "pr": 8628,
+ "branch": "physics-loop/admissibility-induced-law-block82-what-can-gap-the-walk-inside-the-qubit-complete-map-20260922",
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020209Z",
+ "elapsed_s": 28.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_what_can_gap_the_walk_no_invariant_term_any_reach_stripes_alternating_lengths_rest_energy_exclusion_cages_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=18 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "cf017db7c23b4d64add6d7cd8fcb8027378b0d76ecde27e8c948bbb8ab5ea2f0",
+ "stdout_tail": "PR #8628: physics-loop: admissibility induced-law block 82 - what can gap the walk inside the qubit: no invariant term at any reach; chessboard or axis stripes on sites; alternating lengths give one rest energy; exclusion cages\nbranch physics-loop/admissibility-induced-law-block82-what-can-gap-the-walk-inside-the-qubit-complete-map-20260922 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_what_can_gap_the_walk_no_invariant_term_any_reach_stripes_alternating_lengths_rest_energy_exclusion_cages_2026_09_22.py: rc=0 PASS=18 FAIL=0\n   mutation translation_invariant_term_gaps_a_species: expected B observed B ok\n   mutation chessboard_content_anticommutes: expected C observed C ok\n   mutation stripes_commute: expected C observed C ok\n   mutation alternating_lengths_leave_a_zero: expected D observed D ok\n   mutation a_term_adds_to_the_rest_energy: expected D observed D ok\n   mutation exclusion_lets_the_walker_hop_on_a_chessboard: expected E observed E ok\n   mutation zero_modes_below_the_imbalance: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020237Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

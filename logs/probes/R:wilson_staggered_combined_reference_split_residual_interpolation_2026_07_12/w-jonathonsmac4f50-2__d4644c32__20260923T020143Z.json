@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_combined_reference_split_residual_interpolation_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_combined_reference_split_residual_interpolation_2026_07_12.py",
+ "seed": 28903,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020143Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ff4650959d69e60e879db40e52ddb4ca3b96bd8a8cc524894d9cde17d24706bd",
+ "stdout_tail": "551e-17, max_U|Phi_U_prime(0)|=4.032e-03\nPASS two_mark_generating_derivative_t_0.0: numeric=2.000000000000, analytic=2/(1-t)^3=2.000000000000\nPASS two_mark_generating_derivative_t_0.1: numeric=2.743484224660, analytic=2/(1-t)^3=2.743484224966\nPASS two_mark_generating_derivative_t_0.3: numeric=5.830903788695, analytic=2/(1-t)^3=5.830903790087\nPASS two_mark_generating_derivative_t_0.6: numeric=31.249999996597, analytic=2/(1-t)^3=31.250000000000\nPASS conditional_decorated_reference_residual_arithmetic_witness: K_G_tag=1.016554108145300e-01, K_I=3.067847158922814e-10, K_S=4.248381933933497e-06, K_R=4.248688718649390e-06, K_sum=1.016596595032486e-01<c, D=3.740359343746328e+00, tau=3.802436573050462e-01, A_corr=1.335166098756491e-04, q_corr=1.496895387917523e-02, q_split=0.606530659713\nPASS distinguished_red_prefactor_is_linear_at_fixed_envelope: C_2(K_R/2)=6.675830493782453e-05=C_2 K_R/2 at fixed C_2; C_2*0=0\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_FIXED_BACKGROUND_CORRELATED_BEREZIN_CROSS_WICK_CLUSTER_LOCALITY_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020143Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

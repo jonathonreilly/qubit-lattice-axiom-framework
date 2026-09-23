@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_external_shortest_center_tail_quadratic_weyl_reference_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_external_shortest_center_tail_quadratic_weyl_reference_2026_07_12.py",
+ "seed": 28905,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020145Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c5c651fa5ff53d06a413e4ec89a8d65579abc83944bc8ef031c03cd823ae3cac",
+ "stdout_tail": "Q=7.036819657174825e-02; gap_trial/m=0.929631803428252; theta_w=0.0000005<three-pair chart charge=0.218900044560628<theta_d=0.400001\nPASS bipartite_weighted_haar_tail_is_residual_owned_and_tiny: b=2.983652E-92, log10 operator-tail=-321.397940008672, log10 weighted-coefficient-tail=-364.997435900702\nPASS fresh_shortest_center_bond_reference_activity: h3=5.378473479028190e-185, nu3=2.396048814331173e-182, K_B3=3.492715458420906e-181\nPASS fresh_reference_determinant_loop_convergence: C_*h3 exp(L3)=4.676583E-184, log10 K_D3^bd=-366.183021486851\nPASS finite_positive_correlated_reference_normalization: gap=2.092296703857310, det(A3)/det(M3)=0.999238862886154>0, exp(logdet)=0.999238862886154; det(M3)=273.136500000000012, det(M3)*Z3=272.928605672703952=det(A3)=272.928605672703952\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_EXTRACTED_S2_FUTURE_CENTER_PRODUCT_REFERENCE_COUNTERTERM_PERSISTENT_GAP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_FIXED_BACKGROUND_CORRELATED_BEREZIN_CROSS_WICK_CLUSTER_LOCALITY_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_SITE_BLOCK_SYNTACTIC_SUPPORT_TREE_SPAN_MARKED_RESPONSE_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

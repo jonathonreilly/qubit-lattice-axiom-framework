@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_gaussian_adapted_berezin_quadratic_center_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_gaussian_adapted_berezin_quadratic_center_2026_07_12.py",
+ "seed": 28905,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020145Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9a5f41ec61318c72f2fec84b755c56f47a500fd0d8b03c9a4dac618a0fb6dff3",
+ "stdout_tail": "unts=[0, 0, 0], even_return_counts=[16, 640, 34816]\nPASS shortest_quadratic_center_gap: U=1 momentum spectrum min=10000.000000000000, max=10000.000400000001, gap>=10000\nPASS running_mass_chart_torsor: m'=9900, rho=1.005037815259, transformed_mass=9900.000000000004, one_site_identity_cost=1.030610152128\nPASS quadratic_center_residual_activity: K_S2=1.068290846710377e-05, K_S_even>=4=2.536105198800461e-11, K_I=2.113419744695058e-12, K_res=2.747447173269967e-11, old_B=1.197696492987366e-03>old_r_src=9.888280124566245e-04\nPASS residual_marked_attachment: tau=1.010729358519869e-08, A_att=2.021458733802326e-08, q_centered=2.266318968338462e-06, q_split=0.606530659713, B_res=3.080246724392692e-09\nPASS conditional_ball_scalar_feasibility: r_src=9.995003056365085e-04, delta=1.0e-08, M_delta=224454.841239342, lhs=9.156776063580995e-09\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CURRENT_CHART_AUTONOMY_AND_NEXT_SCALE_GRASSMANN_HANDOFF_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

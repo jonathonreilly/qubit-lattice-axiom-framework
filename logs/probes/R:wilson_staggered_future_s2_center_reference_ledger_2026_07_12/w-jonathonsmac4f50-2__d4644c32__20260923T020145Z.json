@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_future_s2_center_reference_ledger_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_future_s2_center_reference_ledger_2026_07_12.py",
+ "seed": 28905,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020145Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f53610536e5c23ab2fa834175e221e0b5abdb7219c13af73cd69a8560eed5c09",
+ "stdout_tail": "-11; nu2=1.125000000000000e-22 vs 9/m=4.500000000000000e-11\nPASS block40_actual_range_residual_factorization: B40=4.064085767704031e-04, B_delta=1.079326085135096e-18, B_star=4.064085767704042e-04, K_P=exp(B_star)-1=4.064911719247879e-04\nPASS strict_future_center_actual_range_joint_witness: theta_s=0.400001, log T_mu=2.121320343559643e-22, theta_2=0.400001, K_G2=3.173399990699913e-20, K_D2^-=2.925685201135800e-84, K_B2=3.173399990699913e-20, K_D2^+=2.925685201135800e-84, K_P=4.064911719247879e-04, K_T2=4.064911719247880e-04<c, D=1.843139501223258e+00, tau=7.492199358731113e-04, A2=1.501812907849134e-03, B2_weak=4.557296362228701e-02, B2_split=4.581946288446844e-02, q2_centered=1.683728202332358e-01, q2_split=0.606530659713\nPASS future_center_colored_response_requires_physical_red_factor: A2(K_R2=0 at fixed envelope)=0.0; K_R2=4.064911719247880e-04<K_T2=4.064911719247880e-04\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_GAUSSIAN_ADAPTED_BEREZIN_HANDOFF_AND_SHORTEST_QUADRATIC_CENTER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_JOINT_BOUNDARY_CANONICAL_FUTURE_ATOM_SUPERSTRONG_STRONG_COARSE_SHADOW_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_JOINT_PRODUCT_REFERENCE_DETERMINANT_COUNTERTERM_OUTER_HAAR_COLORED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

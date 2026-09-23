@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_constrained_fiber_two_layer_kp_source_polymer_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_constrained_fiber_two_layer_kp_source_polymer_2026_07_12.py",
+ "seed": 28904,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020144Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ebc8c5776ef85b53bd8be695de8c331147a8181856b1935f2dbd4d182e145169",
+ "stdout_tail": "PASS wilson_midpoint_centering: centered_sup=0.150000000000, target=0.150000000000\nPASS hidden_plaquette_incidence: 2 footprints * 6 plaquettes=12\nPASS kp_point_m10: K=0.108098237701, c=0.120000, epsilon=0.011901762299, q=0.222703167050\nPASS kp_point_m12: K=0.116429408537, c=0.150000, epsilon=0.033570591463, q=0.175424015123\nPASS kp_point_m16: K=0.112545621909, c=0.140000, epsilon=0.027454378091, q=0.095378484501\nPASS determinant_geometric_envelope: series=0.056142085405, envelope=0.056368134832\nPASS source_radii_m10: r_(1,0)=0.009309432692, r_(4,2)=0.004519610534\nPASS source_radii_m12: r_(1,0)=0.024541233874, r_(4,2)=0.010000608670\nPASS source_radii_m16: r_(1,0)=0.020516914673, r_(4,2)=0.008864814082\nPASS two_layer_factor_to_polymer_identity: direct=1.044832880000000, polymer=1.044832880000000\nPASS fine_path_coarse_anchor_lipschitz: coarse_path=[(0, 0, 0, 0), (0, 0, 0, 0), (1, 0, 0, 0), (1, 0, 0, 0), (1, 1, 0, 0)]\nPASS coarse_anchor_multiplicity: 64 anchored fine links + 4 incoming skeleton endpoints=68\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS sole_repository_dependency: markdown_dependency_set=['WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

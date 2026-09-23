@@ -1,0 +1,10 @@
+PR #8665: physics-loop: admissibility induced-law block 88 - the two instabilities of the uniform bond rates: the alternation breaks translation below alpha + 2 beta = chi/12, the anisotropy breaks rotation below beta = chi_a/72 alone
+branch physics-loop/admissibility-induced-law-block88-the-two-instabilities-of-the-uniform-bond-rates-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_two_instabilities_of_the_uniform_bond_rates_alternation_breaks_translation_anisotropy_breaks_rotation_2026_09_22.py: rc=0 PASS=12 FAIL=0
+   mutation anisotropy_costs_alpha: expected B observed B ok
+   mutation anisotropy_response_odd: expected C observed C ok
+   mutation anisotropy_threshold_depends_on_alpha: expected D observed D ok
+   mutation cost_at_pi_is_alpha: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

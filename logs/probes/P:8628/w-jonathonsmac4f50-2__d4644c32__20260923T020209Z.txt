@@ -1,0 +1,13 @@
+PR #8628: physics-loop: admissibility induced-law block 82 - what can gap the walk inside the qubit: no invariant term at any reach; chessboard or axis stripes on sites; alternating lengths give one rest energy; exclusion cages
+branch physics-loop/admissibility-induced-law-block82-what-can-gap-the-walk-inside-the-qubit-complete-map-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_what_can_gap_the_walk_no_invariant_term_any_reach_stripes_alternating_lengths_rest_energy_exclusion_cages_2026_09_22.py: rc=0 PASS=18 FAIL=0
+   mutation translation_invariant_term_gaps_a_species: expected B observed B ok
+   mutation chessboard_content_anticommutes: expected C observed C ok
+   mutation stripes_commute: expected C observed C ok
+   mutation alternating_lengths_leave_a_zero: expected D observed D ok
+   mutation a_term_adds_to_the_rest_energy: expected D observed D ok
+   mutation exclusion_lets_the_walker_hop_on_a_chessboard: expected E observed E ok
+   mutation zero_modes_below_the_imbalance: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

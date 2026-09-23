@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_enhanced_moment_generated_base_decorated_factor_return_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_enhanced_moment_generated_base_decorated_factor_return_2026_07_12.py",
+ "seed": 28905,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020145Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e6a0d42e35c4cfd1f7ed7d69c5f5548eb58681288ff39d112934499f82e0531f",
+ "stdout_tail": "decorated_factor_membership: one-time atom surcharge=8.813735870195430, decorated (theta,lambda)=(0.400001,1.0), B_split=1.143355691192827e-01, K_dec^bd=exp(B_split)-1=1.211282777967557e-01<c_next=0.2; c_next is unspent\nPASS factor_domain_guard_is_stronger_than_potential_guard: m=6e43: B_split=1.905984137348396e-01<c but K_dec^bd=exp(B_split)-1=2.099734457840686e-01>c\nPASS finite_horizon_backward_moment_identity_40: a_in=40.0, a_out=(a_in-2c)/2-sigma=10.986264129804571, recovered=40.000000000000000\nPASS finite_horizon_backward_moment_identity_80: a_in=80.0, a_out=(a_in-2c)/2-sigma=30.986264129804567, recovered=80.000000000000000\nPASS finite_horizon_backward_moment_identity_160: a_in=160.0, a_out=(a_in-2c)/2-sigma=70.986264129804567, recovered=160.000000000000000\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CURRENT_CHART_AUTONOMY_AND_NEXT_SCALE_GRASSMANN_HANDOFF_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_EXTRACTED_S2_FUTURE_CENTER_PRODUCT_REFERENCE_COUNTERTERM_PERSISTENT_GAP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_JOINT_BOUNDARY_CANONICAL_FUTURE_ATOM_SUPERSTRONG_STRONG_COARSE_SHADOW_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

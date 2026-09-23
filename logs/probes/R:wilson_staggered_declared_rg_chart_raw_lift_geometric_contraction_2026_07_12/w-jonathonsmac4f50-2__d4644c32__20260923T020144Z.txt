@@ -1,0 +1,11 @@
+PASS zero_diameter_projector: rank_fixture=1, complement_terms=3
+PASS extended_raw_lift_geometric_suppression: coarse=0.387258788964, fine_lift=0.568890092245, ratio=0.680726900052, exp(-lambda)=0.794533602503
+PASS factor_two_support_inequalities: checked_supports=3
+PASS field_rescaling_norm_identity: norm_Dz_eta=0.403774047537, norm_eta_over_z=0.403774047537
+PASS field_chart_nonselection: z1_mass=3.000000, z2_mass=0.750000
+PASS joint_raw_lift_identity: action_shift=-0.085100000000, expected=-0.085100000000
+PASS finite_jet_chart_family: jet_A=['onsite', 'vacuum'], jet_B=['onsite', 'plaquette', 'short_bilinear', 'vacuum']
+PASS schur_coordinate_tangent_bounds: m=12:dm=0.138889,dt=0.388889; m=16:dm=0.132812,dt=0.281250; m=20:dm=0.130000,dt=0.220000
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=10 FAIL=0

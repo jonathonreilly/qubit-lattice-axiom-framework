@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py",
+ "seed": 28903,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020143Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e8924964093f09876a5f28f217f5d3e6d9f95d708ef7494199abf2a6ecab6881",
+ "stdout_tail": "PASS Hidden-coordinate footprints partition fine links and have size at most two: coordinates=8, links=12, max footprint=2\nPASS Footprint aggregation bounds the hidden Dobrushin row by twice the fine row: fine=0.370000, hidden=0.709464, ratio=1.917469\nPASS The deep constrained-fiber wedge has the stated exact numerical examples: m0=6.5990796748, beta8=0.0169782141, beta10=0.0238489507\nPASS Sampled deep-wedge fibers have a strict uniform hidden-row margin: 2alpha=0.741116,0.748784,0.861438\nPASS Finite Grassmann logarithm generates a balanced quartic connected coefficient: quartic coefficient=0.060000\nPASS A fiber-measurable perturbation passes exactly through raw integration: maximum residual=2.78e-16\nPASS The common unrescaled sup coefficient norm has an exact directional ratio one: input=0.314353, output=0.314353, ratio=1.000000000000\nPASS The candidate anchored norm is finite on a sampled exponential polymer tail: partial80=0.705417, tail40to80=0.000e+00\nPASS Source-note bounded theorem and N1-N8 contract: missing=[]; missing N2 pairs=[]; attempted=2; partial_live=1; untested_live=5\nSCORECARD PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

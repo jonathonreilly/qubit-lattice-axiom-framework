@@ -1,0 +1,3 @@
+PR #8635: Physics: local field dynamics from hard-core record motion and slow formation
+branch codex/mobile-record-local-field-limit-20260922 (base main)
+runners in the PR: 0

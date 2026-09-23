@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_current_chart_autonomy_grassmann_handoff_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_current_chart_autonomy_grassmann_handoff_2026_07_12.py",
+ "seed": 28904,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020144Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7d7a2f85e5cfeb3db3e8c464db97769116e599f26dabae6f499d30d7dbe7d38a",
+ "stdout_tail": "PASS straight_dyadic_support_semigroup: axes=4, H_2_after_H_4=H_8\nPASS straight_support_size_diameter: q=4, coarse=(size=5,diam=4), lifted=(size=17,diam=16), general_size_cap=65\nPASS origin_cell_saturation_reflection_failure: theta(Sat({0}))=[-1, 0], Sat(theta({0}))=[0, 1]\nPASS current_weak_to_strong_unbounded_family: all_hidden=True, unique=True, |T_L|=|X_L|=4L; center_average=3.701e-17; L=1:ratio=2.740121e+00; L=2:ratio=7.508262e+00; L=4:ratio=5.637400e+01; L=8:ratio=3.178027e+03; L=16:ratio=1.009986e+07; L=32:ratio=1.020071e+14\nPASS gaussian_berezin_eta_norm_handoff: expectations=[1.0, 0.0001, 1e-08, 1e-12], pair_ratios=[1.0, 1e+16, 9.999999999999999e+31, 9.999999999999997e+47], one_site=1.0e+48, fifteen_site=1e720\nPASS one_index_martingale_algebra_boundary: a_h=1/9; J=2:C_alg>=0.444444; J=4:C_alg>=1.77778; J=8:C_alg>=28.4444; J=12:C_alg>=455.111\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

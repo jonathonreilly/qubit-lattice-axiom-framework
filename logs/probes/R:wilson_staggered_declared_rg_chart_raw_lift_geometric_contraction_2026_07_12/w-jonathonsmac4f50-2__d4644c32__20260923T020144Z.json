@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction_2026_07_12.py",
+ "seed": 28904,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020144Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f656b9309ce89660feaa2d3c903a0c530c67df21ea0b4609a36ccf1d92d96f6",
+ "stdout_tail": "PASS zero_diameter_projector: rank_fixture=1, complement_terms=3\nPASS extended_raw_lift_geometric_suppression: coarse=0.387258788964, fine_lift=0.568890092245, ratio=0.680726900052, exp(-lambda)=0.794533602503\nPASS factor_two_support_inequalities: checked_supports=3\nPASS field_rescaling_norm_identity: norm_Dz_eta=0.403774047537, norm_eta_over_z=0.403774047537\nPASS field_chart_nonselection: z1_mass=3.000000, z2_mass=0.750000\nPASS joint_raw_lift_identity: action_shift=-0.085100000000, expected=-0.085100000000\nPASS finite_jet_chart_family: jet_A=['onsite', 'vacuum'], jet_B=['onsite', 'plaquette', 'short_bilinear', 'vacuum']\nPASS schur_coordinate_tangent_bounds: m=12:dm=0.138889,dt=0.388889; m=16:dm=0.132812,dt=0.281250; m=20:dm=0.130000,dt=0.220000\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

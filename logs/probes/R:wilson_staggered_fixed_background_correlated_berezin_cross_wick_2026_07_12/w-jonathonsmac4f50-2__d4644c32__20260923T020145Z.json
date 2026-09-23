@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_fixed_background_correlated_berezin_cross_wick_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_fixed_background_correlated_berezin_cross_wick_2026_07_12.py",
+ "seed": 28905,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4644c32",
+ "started_utc": "20260923T020145Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "591e0561433cb41d85b6e0bbe4a759b1e9af26c07a89e9f637c2fd8f257067a7",
+ "stdout_tail": "_phase_covariance_preserves_edge_majorant: before=7.000000000000001e-02, after=7.000000000000001e-02\nPASS uniform_high_mass_cross_wick_row: kappa0=2.771355194915401e-04, kappa1=7.533669674888438e-04, K_C=7.535757811682538e-04, K_bond=1.385503795927306e-03<c_G=0.01, singleton_d1=2.772634570184197e-04\nPASS product_gaussian_atom_bond_attachment_witness: m=6000000000, C*^3=1.979949493661166e+02, K_G=6.497360655367378e-06, tau=2.405877007902170e-03, A_att=4.821318733636448e-03, q_atom=5.405327309300564e-01, q_split=0.606530659713\nPASS same_lattice_product_centered_attachment_supplier: m=15000, K_G=1.594137503655947e-02<c_G=0.05, tau=1.721753852471211e-01, A_att=4.208213908389765e-01<1\nPASS normalized_expectation_requires_determinant_factor: detA=6.020000000000, G_A[F]=1.006644518272, integral=6.060000000000\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_GAUSSIAN_ADAPTED_BEREZIN_HANDOFF_AND_SHORTEST_QUADRATIC_CENTER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

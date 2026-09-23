@@ -1,0 +1,15 @@
+PASS wilson_midpoint_centering: centered_sup=0.150000000000, target=0.150000000000
+PASS hidden_plaquette_incidence: 2 footprints * 6 plaquettes=12
+PASS kp_point_m10: K=0.108098237701, c=0.120000, epsilon=0.011901762299, q=0.222703167050
+PASS kp_point_m12: K=0.116429408537, c=0.150000, epsilon=0.033570591463, q=0.175424015123
+PASS kp_point_m16: K=0.112545621909, c=0.140000, epsilon=0.027454378091, q=0.095378484501
+PASS determinant_geometric_envelope: series=0.056142085405, envelope=0.056368134832
+PASS source_radii_m10: r_(1,0)=0.009309432692, r_(4,2)=0.004519610534
+PASS source_radii_m12: r_(1,0)=0.024541233874, r_(4,2)=0.010000608670
+PASS source_radii_m16: r_(1,0)=0.020516914673, r_(4,2)=0.008864814082
+PASS two_layer_factor_to_polymer_identity: direct=1.044832880000000, polymer=1.044832880000000
+PASS fine_path_coarse_anchor_lipschitz: coarse_path=[(0, 0, 0, 0), (0, 0, 0, 0), (1, 0, 0, 0), (1, 0, 0, 0), (1, 1, 0, 0)]
+PASS coarse_anchor_multiplicity: 64 anchored fine links + 4 incoming skeleton endpoints=68
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS sole_repository_dependency: markdown_dependency_set=['WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=14 FAIL=0

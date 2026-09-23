@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:the-record-gas-chessboard-threshold:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j2e73",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-record-gas-chessboard-threshold/w-jonathonsmac4f50-j2e73/check.py",
+ "seed": 90665,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6682f939",
+ "started_utc": "20260923T191105Z",
+ "elapsed_s": 58.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (modulo the ASSUMED chessboard-estimate theorem, the torus separation lemma and the connected-set count) chessboard long-range order of the 3D record gas with contents at activity zeta = g^-3 for g < g*(p,q,r): g* = 8.04e-10 content-less (exact half filling), 5.22e-10 (3,1,2), 6.09e-10 (5,2,4), 1.86e-10 (12,1,2); reflection positivity through site planes holds at every g; on p + q = 2r the content factor W is >= 1 and increases with bonds (contents hurt)"
+ },
+ "review": "Own route: reflection positivity through site planes (valid at every scale, since reflections act on positions and the weights see only content relations) + chessboard estimates on 2x2x2 blocks + Peierls sum; contents enter only via W <= Lambda^(cycle rank) (block 81 T1 as a conditional expectation), and on p+q=2r W >= 1 and non-decreasing in bonds by six-axis moment positivity (contents hurt). Explicit g*: 8.0e-10 content-less (exact half filling), 5.2e-10 at (3,1,2); nine orders below the scan window; ASSUMED: chessboard estimate, torus separation lemma, connected-set count.",
+ "what": "DERIVATION, independent attempt 1 of 2: Below the neutral scale the record gas makes the chessboard: a proof, and where. SETTING (source-link direction, blocks 53-89 of the admissibility induced-law campaign: open PRs #8568 #8570 #8571 #8573 #8578 #8579 #8581 #8590 #8591 #8592 #8593 #8595 #8596 #8597 #8598 #8599 #8601 #8602 #8603 #8605 #8606 #8607 #8608 #8611 #8612 #8613 #8614 #8615 #8626 #8628 #8632 #8652 #8657 #8660 #8662 #8665 and block 89 'the unit of rate decides the alternation's thresholds' when opened; decision record #8572 with FORK_PROBE_source_link_20260922.md; the moving-records reading of blocks 39-52; ALL supplied clauses, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>; the 2026-09-23 harvest's issues #8616-#8673 carry the worker results this problem builds on). TASK: block 81 (#8626): at scales c >= c0 the chessboard is a least-weighted arrangement on every window enumerated and the staggered susceptibility is at most random's; below c0 the gas makes the chessboard (control: near perfect at c/c0 = 1/4 on 6^3 and 8^3); the comparator for content-less records is the antiferromagnetic lattice gas, ordered at half filling below c/c0 = e^{-4 x 0.2217} = 0.41. (a) A contour (Peierls) proof of chessboard order in 3D at half filling for c/c0 < g*, with contents: the loop factors 1 + 3 t1 l1 + 2 t2 l2 (block 81 T1) are >= 1 on cycles - do contents help or hurt the chessboard? (b) The best g* the argument gives, against the scan X:record-gas-chessboard-onset. HIT: a proof with an explicit g*. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-record-gas-chessboard-threshold/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-record-gas-chessboard-threshold/<name>/check.py\"",
+ "stdout_sha256": "ad516622b7375637fd42b5eb1b58b48be0d46f6321c63d15ebdc22bfa432e00f",
+ "stdout_tail": "eps = 0.5072, 4 eps + 2 delta < 1\nPASS E6 (5,2,4): at g = t^8, t = 70487/1000000 (g = 6.094e-10), zeta = g^-3: eps = 7.1763e-03, x = 26 e eps = 0.5072, 4 eps + 2 delta < 1\nPASS E6 (12,1,2): at g = t^8, t = 60753/1000000 (g = 1.856e-10), zeta = g^-3: eps = 7.1761e-03, x = 26 e eps = 0.5072, 4 eps + 2 delta < 1\nPASS E7 content-less weight zeta^N g^B is invariant under n -> 1 - n at zeta = g^-3 on the 4^3 torus (200 random arrangements)\nPASS E8 every g* above lies below 10^-9 and so nine orders below the scan window 0.30..0.50 and the comparator 0.41\n\nSUMMARY: PROVED (modulo the ASSUMED chessboard-estimate theorem, the torus separation lemma and the connected-set count) chessboard long-range order of the 3D record gas with contents at activity zeta = g^-3 for g < g*(p,q,r): g* = 8.04e-10 content-less (exact half filling), 5.22e-10 (3,1,2), 6.09e-10 (5,2,4), 1.86e-10 (12,1,2); reflection positivity through site planes holds at every g; on p + q = 2r the content factor W is >= 1 and increases with bonds (contents hurt)\nHIT: a Peierls proof (reflection positivity through site planes, valid at every scale, + chessboard estimates) of chessboard order in the 3D record gas with contents for c/c0 < g* = 5.2e-10 at (3,1,2) (8.0e-10 without contents, at exact half filling), with contents entering only through W <= Lambda^(cycle rank); on the line p + q = 2r contents provably hurt (W >= 1, non-decreasing in bonds); the argument sits nine orders of magnitude below the scan window 0.30-0.50\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2e73",
+  "at_utc": "20260923T191226Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage: the attempt proves chessboard long-range order of the 3D record gas with contents at activity g^-3 for c/c0 < g* (5.2e-10 at (3,1,2), 8.0e-10 content-less at exact half filling) via site-plane reflection positivity (valid at every scale) and chessboard estimates, modulo standard ASSUMED lemmas, and that contents hurt on p+q=2r; to be refereed by another model family. Issue #8834.",
+  "by": "w-jonathonsmac4f50-j2e73",
+  "at_utc": "20260923T191226Z"
+ }
+}

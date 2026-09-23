@@ -1,0 +1,21 @@
+PASS E1.1 the cube {0,1}^3 has 8 sites and 12 bonds; 254 of its 256 occupancy patterns are not a chessboard
+PASS E1.2 the only 4-record patterns without a recorded bond are the two chessboards
+PASS E1.3 minimum recorded bonds per record number n = 5, 6, 7, 8 among non-chessboard patterns is 3, 6, 9, 12
+   (n, b) classes of the bad patterns: [((0, 0), 1), ((1, 0), 8), ((2, 0), 16), ((2, 1), 12), ((3, 0), 8), ((3, 1), 24), ((3, 2), 24), ((4, 2), 30), ((4, 3), 32), ((4, 4), 6), ((5, 3), 8), ((5, 4), 24), ((5, 5), 24), ((6, 6), 16), ((6, 7), 12), ((7, 9), 8), ((8, 12), 1)]
+PASS E2.1 M = J + 6 l1 P1 + 6 l2 P2 with P1 = s.s'/2, P2 = (s.s')^2/2 - 1/6; rows sum to 6; max M = 6 max(p,q,r)/(p+q+4r)
+PASS E2.2 l2 = 0 exactly on the line p + q = 2r (e.g. (3,1,2), (1,3,2)); (3,1,2) has l1 = 1/6, Lambda = 3/2
+PASS E3.1 site-plane reflection: every Gram block is rank one with nonnegative diagonal (PSD) at g = 1/4, 1/100, 1, 4 ((3,1,2), z = 1/3)
+PASS E3.2 bond-plane reflection needs the bond kernel PSD: its occupancy block [[1,1],[1,g]] has determinant g - 1 < 0 at g = 1/4
+PASS E4.1 on the line p + q = 2r: W >= 1 for every arrangement of the cube with n <= 6 records ((3,1,2), (1,3,2))
+PASS E4.2 on the line p + q = 2r: adding a recorded bond never lowers W (every arrangement, every bond, n <= 6)
+PASS E4.3 W <= Lambda^(cycle rank) for (3,1,2), (1,3,2), (12,1,2), (5,2,4) on every arrangement with n <= 6  [988 content sums]
+PASS E4.4 every coordinate monomial has nonnegative mean under the uniform six-axis law (degrees <= 6)
+PASS E6 content-less: at g = t^8, t = 72969/1000000 (g = 8.037e-10), zeta = g^-3: eps = 7.1764e-03, x = 26 e eps = 0.5072, 4 eps + 2 delta < 1
+PASS E6 (3,1,2): at g = t^8, t = 69139/1000000 (g = 5.221e-10), zeta = g^-3: eps = 7.1763e-03, x = 26 e eps = 0.5072, 4 eps + 2 delta < 1
+PASS E6 (5,2,4): at g = t^8, t = 70487/1000000 (g = 6.094e-10), zeta = g^-3: eps = 7.1763e-03, x = 26 e eps = 0.5072, 4 eps + 2 delta < 1
+PASS E6 (12,1,2): at g = t^8, t = 60753/1000000 (g = 1.856e-10), zeta = g^-3: eps = 7.1761e-03, x = 26 e eps = 0.5072, 4 eps + 2 delta < 1
+PASS E7 content-less weight zeta^N g^B is invariant under n -> 1 - n at zeta = g^-3 on the 4^3 torus (200 random arrangements)
+PASS E8 every g* above lies below 10^-9 and so nine orders below the scan window 0.30..0.50 and the comparator 0.41
+
+SUMMARY: PROVED (modulo the ASSUMED chessboard-estimate theorem, the torus separation lemma and the connected-set count) chessboard long-range order of the 3D record gas with contents at activity zeta = g^-3 for g < g*(p,q,r): g* = 8.04e-10 content-less (exact half filling), 5.22e-10 (3,1,2), 6.09e-10 (5,2,4), 1.86e-10 (12,1,2); reflection positivity through site planes holds at every g; on p + q = 2r the content factor W is >= 1 and increases with bonds (contents hurt)
+HIT: a Peierls proof (reflection positivity through site planes, valid at every scale, + chessboard estimates) of chessboard order in the 3D record gas with contents for c/c0 < g* = 5.2e-10 at (3,1,2) (8.0e-10 without contents, at exact half filling), with contents entering only through W <= Lambda^(cycle rank); on the line p + q = 2r contents provably hurt (W >= 1, non-decreasing in bonds); the argument sits nine orders of magnitude below the scan window 0.30-0.50

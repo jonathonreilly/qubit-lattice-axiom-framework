@@ -1,0 +1,22 @@
+
+===============================================================================
+A - Source and scope contract
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/substrate_tournament_decisive_probes_2026_07_13.py", line 345, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/substrate_tournament_decisive_probes_2026_07_13.py", line 331, in main
+    source_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/substrate_tournament_decisive_probes_2026_07_13.py", line 86, in source_contract
+    text = " ".join(NOTE.read_text(encoding="utf-8").lower().split())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/SUBSTRATE_TOURNAMENT_DECISIVE_PROBES_NOTE_2026-07-13.md'

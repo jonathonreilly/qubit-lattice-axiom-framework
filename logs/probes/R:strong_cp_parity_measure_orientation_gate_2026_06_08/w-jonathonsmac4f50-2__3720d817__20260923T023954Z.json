@@ -1,0 +1,34 @@
+{
+ "task": "R:strong_cp_parity_measure_orientation_gate_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "strong",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/strong_cp_parity_measure_orientation_gate_2026_06_08.py",
+ "seed": 31194,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T023954Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a4706fe7bd61f3abeca43fd22a7f94ec1669f1359a96ce4747f2c17889d8d127",
+ "stdout_tail": "ed, since the code transforms the fields without ever permuting the site list, and only L = 4 is run with no size scan and no thermodynamic limit.\nLive figure at print time: the Hermitian C_3 circulant built from the fixed literals 1.7, 0.9 and 0.7 has determinant 0.045934 with imaginary part 2.899e-16 against the 1e-9 reality tolerance. This value involves no random draw, so it is safe to recompute; all sampled quantities are deliberately omitted from this certificate.\nDeterminism: the run draws from a single numpy default_rng seeded with 0, in a fixed order -- 6 antisymmetric 4x4 draws for the P-oddness sweep, then 4 more for the field sum, then 20 SU(3) draws for the Wilson-action leg, then 1 further antisymmetric draw for the proper-versus-improper split. Following the sampling rule this certificate names those draw counts, the seed, the group size 48 with its 24/24 proper-improper split, and the tolerances 1e-9 and 1e-12, and it interpolates no drawn value and consumes no random numbers from that stream.\n\nTOTAL: PASS=7 FAIL=0\nVERDICT: the measure-cancellation objection is refuted: the lattice sum carries no Jacobian and\nthe volume measure is det-even, so a parity-invariant action would forbid the det(R)-odd F-tilde-F\nslot. Proper rotations alone do not forbid it. The local Cl(3) pseudoscalar line has the same\ndet(R) character, so zero coupling to the lattice-orientation character is not derived here.\nThis is a sharpened gauge-action parity gate, not a strong-CP closure.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023954Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

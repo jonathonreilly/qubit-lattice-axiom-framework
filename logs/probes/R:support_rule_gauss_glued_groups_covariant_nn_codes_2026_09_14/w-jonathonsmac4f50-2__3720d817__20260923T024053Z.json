@@ -1,0 +1,35 @@
+{
+ "task": "R:support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "support",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.py",
+ "seed": 31253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T024053Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=38 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bf27ff5dae751bf0442a686f3ed1292f7b5986dd8186ce740118418c2d84c37f",
+ "stdout_tail": "S_Gauss) averaged over 9! orders = 5/8 = 0.625000\n[PASS] S6 plane: 9 sample orders (3 per d), all 512 coins: full-record fraction 2^-d, patterns = S_Gauss, uniform\n[PASS] S6 plane: DP over the 8 V/L sites = 9!-order d-histogram / 9 (P site inert)\nS6 cube (20 V/L sites): d-histogram over 20! orders {0: 135128771002368000, 1: 810772626014208000, 2: 1118564273553408000, 3: 350957366673408000, 4: 17478970933248000}\n[PASS] S6 cube: d <= 4 (double closers = a matching of Q_3), all d occur, sum = 20!, E[d] = 12/7 (7-site unions), E[2^-d] = 924167/2598960 = 0.355591\n[PASS] S6 cube: one sample order per d = 0..4, all 2^20 coins: fully recorded fraction 2^-d, 4096 patterns = S_Gauss (2^12), uniform (2^(8-d) each)\n[PASS] S6 review-added108matching integral: all5cube probabilities equal DP and exact fractions\n[PASS] S6 review-added7matching integral: plane probabilities3/10,3/5,1/10 equal DP\nper_element: GF2/GF3 pattern algebra; binary independent matching integral\nper_site: cube8/box27/plane9; supplied parity roles\nper_mode: specified kernels and unsigned cycle maps; no oriented q3 claim\nper_block: 256cube rules;4box kernels;479Gauss supports;9!/20! order counts;sampled all-coins\nlattice_wide: not executed; finite windows only; no full NN formation or partial-hole law\nSUMMARY selected site codes: binary pair-map rank0; supplied Gauss code:28loops+444paths +7units, link-map rank5; mean failure3/8 (plane),1-924167/2598960 (cube); no partial-history law\nTOTAL: PASS=38 FAIL=0\nelapsed 5.7 s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024059Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

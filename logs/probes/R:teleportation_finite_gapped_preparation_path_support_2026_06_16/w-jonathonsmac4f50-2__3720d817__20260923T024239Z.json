@@ -1,0 +1,35 @@
+{
+ "task": "R:teleportation_finite_gapped_preparation_path_support_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "teleportation",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/teleportation_finite_gapped_preparation_path_support_2026_06_16.py",
+ "seed": 31359,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T024239Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=76 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "626b4f1e60675bb0568cf83412adf10e0873275ff7a61ecc280cfc50b8cc20a7",
+ "stdout_tail": "aste_path: target endpoint has positive logical negativity -- negativity=0.470283099736\n[PASS] 2d_4x4_last_taste_path: target endpoint has high ideal teleportation mean fidelity -- mean=0.980738307895\n\n[PASS] new support note contains firewall snippet: actual_current_surface_status: bounded-support\n[PASS] new support note contains firewall snippet: not a deterministic physical resource theorem\n[PASS] new support note contains firewall snippet: audit_required_before_effective_retained: true\n[PASS] new support note contains firewall snippet: No new axiom, primitive, approved premise, or apparatus theorem is introduced\n[PASS] new support note contains firewall snippet: sampled finite-surface support\n[PASS] new support note avoids bare status line `Status: retained`\n[PASS] new support note avoids bare status line `**Status:** retained`\n[PASS] new support note avoids bare status line `Status: promoted`\n[PASS] parent note records 2026-06-16 finite preparation-path support\n[PASS] parent note keeps apparatus/readout blocker open\n\nSampled path summary\n  1d_N8_last_taste_path: n_sites=8, min_sampled_gap=0.0186832278321 at G=1000, ||W||_2=0.65625, target_Bell=0.997963462171, target_Ftel_mean=0.998633169681\n  2d_4x4_last_taste_path: n_sites=16, min_sampled_gap=0.246378016627 at G=1000, ||W||_2=0.268229166667, target_Bell=0.970283099736, target_Ftel_mean=0.980738307895\n\nTOTAL: PASS=76 FAIL=0\nVERDICT: bounded finite preparation-path support passes; physical apparatus/readout remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024239Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/teleportation_finite_gapped_preparation_path_support_2026_06_16.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:strong_cp_joint_bridge_holomorphic_residual_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "strong",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/strong_cp_joint_bridge_holomorphic_residual_2026_06_04.py",
+ "seed": 31193,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T023953Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "339791dc4a3c95a4042a176b3861ae3f53017b7623af7f1322d23f1a44e80f5a",
+ "stdout_tail": "ocking reason is the one the runner states about itself: the holomorphic and chiral generation structure a global statement would need remains an open residual lead here, and is explicitly not a theorem established by this file.\nLive figures at print time, since determinant phases carry environment-dependent roundoff while the verdicts do not: the axial rotation at alpha = 0.37 shifts arg det M by 1.110000000 against the predicted n*alpha = 1.110000000, and theta_bar moves from 1.100000000 to 1.100000000 under the paired shifts. Both comparisons are taken modulo 2*pi at tolerance 1e-9; the generation count n = 3 is exact.\nDeterminism: no RNG, optimizer, root-finding, grid scan, Monte Carlo, or flow integration appears. Every input is a fixed literal -- the diagonal weight 1.3, the real coupling 0.5, the non-real coupling 0.5 + 0.4j, the axial angle 0.37, and theta_QCD = 1.1 -- and execution is straight-line complex arithmetic over 3x3 and 6x6 matrices, judged by elementwise closeness plus the one explicit 1e-9 phase tolerance.\n\nSCORECARD PASS=6 FAIL=0\nFINDING: the tested joint-basis bridge does not force theta_bar to zero.\nGauge reflection and generation parity are sector-disjoint in this model;\nthe generation density is odd under pure K but even under reflection-composed P;\nand theta_bar is invariant under the paired anomaly bookkeeping shifts.\nA holomorphic/chiral generation structure remains an open residual lead,\nnot a theorem established by this runner. No audit status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023954Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:symmetric_two_qubit_clifford_cubic_matching_qca_classification_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "symmetric",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/symmetric_two_qubit_clifford_cubic_matching_qca_classification_2026_07_11.py",
+ "seed": 31316,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T024156Z",
+ "elapsed_s": 30.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=18 FAIL=5",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e0e9a9346eefd9f0d2da79cafbaeebe00d84369788dcee2c83d257cb6148a44e",
+ "stdout_tail": "lass is one spatial and cyclic orbit with no member fixed by the full translation or proper-cubic group\nPASS C08: all eight-product automorphisms have exact graph radius six and l-infinity radius two\nPASS C09: 96 entangling gates make all 720 schedules distinct\nPASS C10: fully order-faithful classes have 15 spatial and 120 cyclic orbits and no member fixed by the full translation or proper-cubic group\nPASS C11: all fully order-faithful automorphisms have exact graph radius six and l-infinity radius two\nPASS C12: reversed schedules with the inverse gate give exact inverse tableaus with matching forward/inverse radii\nPASS C13: local overlap commutation is sufficient and holds for 36 schedule-independent gates\nPASS C14: 12 further gates are schedule-independent only after complete perfect-matching layers are assembled\nFAIL N01: source note exists\nFAIL N02: source contains boundary marker: Clifford-group automorphism, not the static Clifford algebra\nFAIL N03: source contains boundary marker: does not classify arbitrary qubit QCAs\nFAIL N04: source contains boundary marker: does not establish a common Hamiltonian\nFAIL N05: source contains boundary marker: does not establish that an axiom update is necessary\nBOUNDARY: tensor carrier, symmetric Clifford gate class, parity matchings, exactly-once grammar, and macro-tick are supplied.\nBOUNDARY: the exhaustive result is projective-automorphism level; global unitary phase and physical process selection remain open.\nTOTAL: PASS=18 FAIL=5\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024226Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=18 FAIL=5' vs cache 'TOTAL: PASS=23 FAIL=0'"
+  ]
+ }
+}

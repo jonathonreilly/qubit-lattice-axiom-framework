@@ -1,0 +1,35 @@
+{
+ "task": "R:taste_singlet_second_mass_body_diagonal_hop_vortex_strings_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "taste",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/taste_singlet_second_mass_body_diagonal_hop_vortex_strings_check_2026_09_03.py",
+ "seed": 31346,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T024226Z",
+ "elapsed_s": 12.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1b645e1cc3bdd718ea96923f927808507a56086cd192bee77183bcb52d160a7d",
+ "stdout_tail": " = 0.997: +2 on the string, -2 on the anti-string, the ring vector-like\nPASS G1 [numerical] 24x24, Gaussian flux tube (sigma_B = 2) of the link field, real mass m1 = 0.7, no vortex: (n_phi, plaquette sum/2pi, in-gap count at p = -0.1,0,+0.1, nearest |E|) = (1, 1.0002, [0, 0, 0], 0.702) (2, 2.0004, [0, 0, 0], 0.700): no in-gap state; massless control n_phi = 1, p = +0.1: 12 states with |E| < 0.3 in +-E pairs, the two nearest zero E = -0.1155,+0.1155, <V_z> = -0.864,+0.864, net +0: vector-like\nPASS S1 [1e-9] solver certificate over all 26 transverse windows: |dense LAPACK count - sparse count| max 0, max |dE| 1.2e-14, max eigenpair residual 2.7e-14; the k-th eigenvalue nearest zero lay outside every window\nSUMMARY: the taste-singlet second mass is the body-diagonal imaginary hop X1Y2X3; its declared finite fixtures have core counts 2|n|, signed velocity census 2n and compensating ring/anti-string census; approximate labels are not a global index.  [11.9 s]\nPASS R1 arbitrary-profile anticommutation fails: max 0.140173976408; exact entry formula residual 2.776e-17\nPASS R2 eps conjugation is not full-symbol spatial inversion: residual 0.157878011994\nPASS R3 complete core subspace: X eigenvalues [-1.677589062740966e-16, 5.780386532512138e-17]; -Gamma3 eigenvalues [0.9993072555083926, 0.9993072555083949]; +1-eigenstate residuals [0.03722215715423626, 0.03722215715423573]\nPASS R4 uniform bipartite gap square residual 2.776e-16, min|E| 1.22458830819 >= |m| 0.700\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024239Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/taste_singlet_second_mass_body_diagonal_hop_vortex_strings_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

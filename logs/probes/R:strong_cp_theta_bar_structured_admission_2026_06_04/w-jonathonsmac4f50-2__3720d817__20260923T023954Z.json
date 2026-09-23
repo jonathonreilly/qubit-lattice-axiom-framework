@@ -1,0 +1,35 @@
+{
+ "task": "R:strong_cp_theta_bar_structured_admission_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "strong",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/strong_cp_theta_bar_structured_admission_2026_06_04.py",
+ "seed": 31194,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T023954Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "83878f3a6e73c1605bd504854c7dc04cf8ed5e72d26a8e5ddd5431787e8f5dea",
+ "stdout_tail": "[PASS] form-degree check: C(3,4)=0 and C(4,4)=1\n       bare four-form writing has no components on a three-dimensional slice\n[PASS] O_h pseudoscalar law: R R R epsilon = det(R) epsilon\n       verified on 48 signed-permutation matrices; full gauge-measure premise is not derived\n[PASS] K-real C_3 circulant determinant is real in the tested samples\n       max|Im det| = 1.54e-16\n[PASS] axial rotation shifts arg det by 2*n*alpha and breaks Hermiticity\n       shift=1.8600; expected=1.8600\n[PASS] AC_phi_lambda overlap: same conjugate-symmetric C_3 circulant has Im det = 0\n       max|Im det| over coupling circle = 3.56e-17\n[PASS] holomorphic gate is real: c != conj(b) gives nonzero Im det in this sample\n       Im det = -1.2320\n\nSCORECARD PASS=6 FAIL=0\nFINDING: the runner supports a structured open gate for theta_bar.\nIt verifies finite form-degree, O_h pseudoscalar, and C_3 circulant facts;\nit does not close the Strong-CP open problem or change premise policy,\nor establish a Strong-CP solution. No audit status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023954Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

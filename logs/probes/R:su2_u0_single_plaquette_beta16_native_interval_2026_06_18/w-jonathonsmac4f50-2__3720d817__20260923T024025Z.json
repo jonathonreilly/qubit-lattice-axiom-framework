@@ -1,0 +1,35 @@
+{
+ "task": "R:su2_u0_single_plaquette_beta16_native_interval_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "su2",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/su2_u0_single_plaquette_beta16_native_interval_2026_06_18.py",
+ "seed": 31225,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T024025Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bc92fa8fc27b1c79d2d45ae8337b12ebb38cd0ddf44804c071aa983b71f3d6a1",
+ "stdout_tail": "SU(2) beta=16 one-plaquette u0 native interval certificate\nP_SU2(beta=16) = 0.907814845880750517616655328746266000706212386584219122513458\nu0_SU2(beta=16) = 0.976111254449673255612569608004019655458630927679668157735776\n[PASS] partition function is positive\n[PASS] quadrature expectation lies in (-1, 1)\n[PASS] Bessel ratio matches independent quadrature (abs diff=0.0)\n[PASS] P_SU2(beta=16) lies in [0.9078, 0.9079]\n[PASS] u0_SU2(beta=16) lies in [0.9761, 0.9762]\n[PASS] u0_SU2(beta=16) lies in parent interval [0.96, 0.98]\n[PASS] native tight interval is subset of parent interval\n[PASS] new note carries required status firewall fields\n[PASS] new note excludes observed g2, fitted selector, and literature numerical interval load-bearing roles\n[PASS] parent note routes X1 through the native bridge\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024026Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

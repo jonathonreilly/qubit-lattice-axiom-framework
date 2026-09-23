@@ -1,0 +1,34 @@
+
+===============================================================================
+A - Live source, primitive, authority, and scope contract
+===============================================================================
+FAIL A source exists: TEMPORAL_PROTOCOL_EQUIVALENCE_ALTERNATING_FRAME_CYCLE39_NOTE_2026-07-14.md
+PASS A source exists: MINIMAL_AXIOMS_2026-06-29.md
+PASS A source exists: axiom_premise_nodes.json
+FAIL A source exists: ADAPTIVE_RECORD_PROTOCOL_QCA_FULL_ABSTRACTION_THEOREM_NOTE_2026-07-14.md
+PASS A source exists: FOUNDATION_SITE_NET_RECORD_EQUIVALENCE_CLASSIFICATION_CYCLE21_NOTE_2026-07-14.md
+FAIL A source exists: FOUNDATION_SORT_PRESERVING_EQUIVALENCE_AND_DYNAMICAL_GAUGE_COLLAPSE_NOTE_2026-07-14.md
+FAIL A source exists: MOVING_LOGICAL_APPARATUS_APPEND_FRONT_CYCLE34_NOTE_2026-07-14.md
+FAIL A source exists: FINAL_MISSING_CONTENT_CENSUS_AND_CONSTITUTIONAL_EDIT_GATE_CYCLE35_NOTE_2026-07-14.md
+FAIL A source exists: CUBIC_CZ_EDGE_RULE_UNIQUENESS_SELECTION_CYCLE36_NOTE_2026-07-14.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/temporal_protocol_equivalence_alternating_frame_cycle39_2026_07_14.py", line 426, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/temporal_protocol_equivalence_alternating_frame_cycle39_2026_07_14.py", line 410, in main
+    source_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/temporal_protocol_equivalence_alternating_frame_cycle39_2026_07_14.py", line 63, in source_contract
+    note = normalized(NOTE)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/temporal_protocol_equivalence_alternating_frame_cycle39_2026_07_14.py", line 51, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/TEMPORAL_PROTOCOL_EQUIVALENCE_ALTERNATING_FRAME_CYCLE39_NOTE_2026-07-14.md'

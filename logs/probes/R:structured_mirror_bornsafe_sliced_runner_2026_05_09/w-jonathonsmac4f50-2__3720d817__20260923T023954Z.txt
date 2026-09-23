@@ -1,0 +1,81 @@
+HOSTILE CONTROLS AND INDEPENDENT CHECKS
+  [PASS] deterministic bypass rejects legacy statistic: P0/P=1.406342e-01, legacy/P=1.406342e-01, corrected/P=1.095680e-16
+  [PASS] independent eight-mask recomputation agrees: max probability mismatch=0.000e+00
+  [PASS] explicit no-bypass graph makes seven and eight terms agree: P0=0.000e+00, legacy/P=1.870e-16, corrected/P=1.870e-16
+  [PASS] wrong-sign empty-term mutant is rejected: mutant |I3|/P=2.812684e-01
+  [PASS] analytic linear-amplitude inclusion coefficients cancel exactly: corrected_nonzero=0, legacy_nonzero={('D', 'D'): 1}, mutant_nonzero={('D', 'D'): 2}
+
+====================================================================================================================
+STRUCTURED MIRROR CORRECTED EIGHT-TERM SLICED RUNNER
+Source note: docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md
+Corrected numerical threshold: |I3|/P <= 1e-14
+Seeds per configuration: 6; slice size: 32
+Geometry: original structured mirror, including two-layer-back bypass edges
+====================================================================================================================
+
+  config                                       I3/P mean    I3/P max     legacy       P0/P    d_TV  pur_cl   gravity  ok
+  ----------------------------------------------------------------------------------------------------------------
+  N=40 npl=12 r=3.0 g=1.25 j=0.00              7.978e-18   7.978e-18  8.788e-03  8.788e-03  0.1208  0.9992   +0.3811   6
+  N=25 npl= 8 r=2.5 g=1.25 j=0.00              1.833e-16   1.833e-16  8.070e-02  8.070e-02  0.0620  0.9938   +0.0639   6
+  N=25 npl= 8 r=4.5 g=1.25 j=0.00              3.136e-16   3.136e-16  7.286e-02  7.286e-02  0.0848  0.9836   -1.3918   6
+  N=25 npl=20 r=2.5 g=1.25 j=0.00              4.719e-16   4.719e-16  8.070e-02  8.070e-02  0.1082  0.9992   -1.2168   6
+  N=25 npl=20 r=4.5 g=1.25 j=0.00              5.469e-16   5.469e-16  7.323e-02  7.323e-02  0.1566  0.9869   -0.2639   6
+  N=40 npl= 8 r=2.5 g=1.25 j=0.00              3.299e-16   3.299e-16  7.470e-02  7.470e-02  0.0614  0.9856   +1.2337   6
+  N=40 npl= 8 r=4.5 g=1.25 j=0.00              5.904e-16   5.904e-16  6.747e-02  6.747e-02  0.2839  0.8517   +0.2736   6
+  N=40 npl=20 r=2.5 g=1.25 j=0.00              1.686e-16   1.686e-16  7.488e-02  7.488e-02  0.3315  0.9305   +0.1458   6
+  N=40 npl=20 r=4.5 g=1.25 j=0.00              2.202e-16   2.202e-16  7.144e-02  7.144e-02  0.2175  0.9504   +0.3467   6
+  N=30 npl=12 r=3.5 g=1.25 j=0.00              3.460e-16   3.460e-16  3.237e-02  3.237e-02  0.2644  0.9436   +1.9953   6
+  N=30 npl=16 r=3.5 g=1.25 j=0.00              6.987e-16   6.987e-16  3.237e-02  3.237e-02  0.2685  0.9413   +2.3384   6
+  N=40 npl=12 r=2.5 g=1.25 j=0.00              2.740e-16   2.740e-16  7.488e-02  7.488e-02  0.1906  0.9691   +1.4868   6
+  N=40 npl=12 r=3.5 g=1.25 j=0.00              8.149e-16   8.149e-16  2.117e-02  2.117e-02  0.2935  0.9087   +2.4055   6
+  N=40 npl=12 r=3.0 g=1.00 j=0.00              5.115e-16   5.115e-16  1.381e-01  1.381e-01  0.1574  0.9903   +1.0593   6
+  N=40 npl=12 r=3.0 g=1.50 j=0.00              6.753e-16   6.753e-16  9.648e-02  9.648e-02  0.7312  0.7142   -2.7343   6
+  N=40 npl=16 r=3.0 g=1.25 j=0.00              7.918e-16   7.918e-16  8.790e-03  8.790e-03  0.1509  0.9926   +0.8525   6
+  N=40 npl= 8 r=3.0 g=1.25 j=0.00              3.839e-16   3.839e-16  8.573e-03  8.573e-03  0.2300  0.9250   +0.7813   6
+  N=30 npl=12 r=3.0 g=1.25 j=0.00              1.524e-15   1.524e-15  1.627e-02  1.627e-02  0.1170  0.9962   +0.1839   6
+  N=25 npl= 8 r=2.5 g=1.00 j=0.00              1.636e-16   1.636e-16  1.131e-01  1.131e-01  0.0335  0.9997   -1.0714   6
+  N=25 npl= 8 r=2.5 g=1.50 j=0.00              6.097e-16   6.097e-16  1.556e-02  1.556e-02  0.1895  0.9456   -1.3093   6
+  N=40 npl=20 r=4.5 g=1.00 j=0.00              3.282e-16   3.282e-16  1.553e-01  1.553e-01  0.1073  0.9940   -0.5458   6
+  N=40 npl=20 r=4.5 g=1.50 j=0.00              2.025e-16   2.025e-16  6.685e-02  6.685e-02  0.3697  0.7855   +1.9704   6
+  N=25 npl= 8 r=2.5 g=1.25 j=0.15              3.255e-16   5.241e-16  9.266e-02  9.266e-02  0.1640  0.9465   +1.6123   6
+  N=25 npl= 8 r=2.5 g=1.25 j=0.30              5.237e-16   1.054e-15  8.952e-02  8.952e-02  0.1513  0.9510   +2.7210   6
+  N=40 npl=12 r=3.0 g=1.25 j=0.15              2.597e-16   8.420e-16  1.193e-01  1.193e-01  0.1892  0.9623   +2.4421   6
+  N=40 npl=12 r=3.0 g=1.25 j=0.30              5.985e-16   1.766e-15  3.914e-02  3.914e-02  0.1972  0.9722   +4.1972   6
+  N=40 npl=20 r=4.5 g=1.25 j=0.15              3.261e-16   5.729e-16  8.912e-02  8.912e-02  0.2203  0.9329   +3.8963   6
+  N=40 npl=20 r=4.5 g=1.25 j=0.30              4.969e-16   1.419e-15  6.200e-02  6.200e-02  0.1757  0.9628   +5.3292   6
+  N=30 npl=16 r=3.5 g=1.25 j=0.15              2.320e-16   5.602e-16  8.876e-02  8.876e-02  0.2559  0.9452   +3.0078   6
+  N=30 npl=16 r=3.5 g=1.25 j=0.30              2.750e-16   5.029e-16  2.953e-01  2.953e-01  0.1546  0.9671   +4.2277   6
+  N=25 npl=20 r=4.5 g=1.50 j=0.30              7.367e-16   1.817e-15  2.632e-01  2.632e-01  0.4528  0.8874   +4.6120   6
+  N=40 npl= 8 r=2.5 g=1.00 j=0.15              2.655e-16   4.978e-16  5.021e-02  5.021e-02  0.1453  0.9665   +2.0837   6
+
+APERTURE FALLBACK DISCLOSURE
+  rule: preserve every originally valid upper/lower/middle choice; only an empty middle
+        selects the deterministic nearest +y/-y pair, removes that pair from the
+        outer apertures, and changes no node, position, or graph edge.
+  N=25 npl= 8 r=2.5 g=1.25 j=0.30, seed=38: original counts=(8, 8, 0), final counts=(7, 7, 2), middle y-center=(+2.389710, -2.389710)
+  N=40 npl=12 r=3.0 g=1.25 j=0.30, seed=38: original counts=(12, 12, 0), final counts=(11, 11, 2), middle y-center=(+2.190528, -2.190528)
+  N=40 npl=20 r=4.5 g=1.25 j=0.30, seed=38: original counts=(20, 20, 0), final counts=(19, 19, 2), middle y-center=(+2.190528, -2.190528)
+  N=30 npl=16 r=3.5 g=1.25 j=0.30, seed=38: original counts=(16, 16, 0), final counts=(15, 15, 2), middle y-center=(+2.436350, -2.436350)
+  N=25 npl=20 r=4.5 g=1.50 j=0.30, seed=38: original counts=(20, 20, 0), final counts=(19, 19, 2), middle y-center=(+2.514710, -2.514710)
+  [PASS] fallback inventory is exactly the registered five rows: actual=5, expected=5
+  [PASS] every originally valid aperture choice is preserved: non-fallback selections equal the original threshold selections
+  [PASS] fallback remains disjoint, sign-ordered, and graph-preserving: middle uses one node per sign; helper hard-fails overlap/sign drift
+  [PASS] fallback selection is deterministic: all five fallback measurements reproduce exactly
+
+AGGREGATE
+  valid executions: 192/192
+  maximum corrected |I3|/P: 1.816615e-15 at N=25 npl=20 r=4.5 g=1.50 j=0.30, seed=17
+  maximum |legacy/P - P(empty)/P|: 1.776357e-15
+  dtv range over 192 executions: [+3.354922e-02, +7.400326e-01]
+  pur_cl range over 192 executions: [+7.141848e-01, +9.997359e-01]
+  s_norm range over 192 executions: [+8.930359e-04, +8.629478e-01]
+  gravity range over 192 executions: [-2.734334e+00, +7.563472e+00]
+  grav_k0 range over 192 executions: [+0.000000e+00, +0.000000e+00]
+  configurations meeting the author-defined finite diagnostic screen (mean pur_cl<0.95 and mean gravity>0): 11/32
+
+PASS: all 32 configurations produced ok=6 and the corrected eight-term
+      residual stayed below the explicit 1e-14 numerical threshold.
+      The nonzero legacy residual is the measured P(empty) bypass term.
+      Exact cancellation is conditional on the separately checked
+      fixed-graph linear-amplitude/quadratic-probability identity; floating-
+      point cancellation alone is not presented as an exact proof.

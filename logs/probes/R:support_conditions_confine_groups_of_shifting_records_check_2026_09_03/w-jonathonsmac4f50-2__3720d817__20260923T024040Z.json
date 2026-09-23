@@ -1,0 +1,35 @@
+{
+ "task": "R:support_conditions_confine_groups_of_shifting_records_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "support",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+ "seed": 31240,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T024040Z",
+ "elapsed_s": 13.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6c8e59ca5f43a94ac9616e29ec2dd266d108a9afcf80fac8d8c18515b376c6ca",
+ "stdout_tail": " separated free amplitude is zero\nPASS E2 [numerical, 1e-3 targets, 5e-3 masses] POSTSELECTED modulo-sum PROXY ratio = 0.5016, 0.5075 at tau = 0.5 and 0.1058, 0.1453 at tau = 1 (L = 6, 8) against the reference1/2 (no half-speed theorem); the odds on the admissible set before renormalising, 0.31 and 0.28 (wrap <= 1.5e-02, drift <= 1.0e-02)\nPASS E3 [numerical, 1e-9 stationary/rows, 1e-3 change targets] P(adjacent) = 1 at EVERY tick by construction -- absolute, not statistical (rows sum to 1 to 3.3e-16); the orientation is a 3-state chain on the relative axis, stationary odds exactly (1/3, 1/3, 1/3) (7.8e-16), P(axis changes) 0.475, 0.476 at tau = 0.5 and 0.079, 0.072 at 1\nPASS E4 [numerical, 2e-3 targets, 1e-9 normalization] finite joint-move weights: the joint-move census at L = 8, tau = 0.5 from an axis-1 pair reads one member shifts 0.540, rigid translation 0.239, same sites 0.218, non-rigid 0.002 (sum 1.000000)\nPASS E5 [numerical, 1e-3 endpoints] finite independently redeclared pair contrast: with positive ADJACENT DETUNING g=32 and no support condition P(adjacent) at ticks 1, 2, 5, 10, 20, 40 runs 0.978, 0.957, 0.896, 0.804, 0.648, 0.424 toward uniform 0.0279 -- sampled leakage only, no all-strength claim\nSUMMARY: complete n<=6 CENTROID certificate, named support censuses and explicit probability laws; N=2 union differs from fixed cosets. KT is global postselection with a modulo-sum PROXY rate. No all-strength, arbitrary-n or physical Record theorem.\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024053Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09",
+ "type": "runner-reexecution",
+ "lane": "su3",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py",
+ "seed": 31226,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T024026Z",
+ "elapsed_s": 13.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8102f3fdcf9eb46932070a00bb3c20afcf4e0d9a6439d4b5543f81760088e500",
+ "stdout_tail": "ta=0.75 is PSD within sampling error  (min eig=+7.833473e-03, negative allowance=2.493e-02)\n  [PASS] Full-weight sampling error at beta=0.75 is controlled  (mc_noise=8.311e-03)\n  [PASS] Full-weight Hermiticity residual at beta=0.75 is sampling-sized  (herm_err=1.809e-02, allowance=8.311e-02)\n  [PASS] Direct truncated integral matches independent spectral factorization  (max |direct-factor|=2.218e-02, max violation ratio=0.333)\n  [PASS] Same-stream factorization is a manifest Gram matrix  (min eig=+6.362908e-04)\n  [PASS] Factorization coefficients match independent order-two representation-ring formulas  (bytes=1240, max value residual=0.000e+00)\n  Truncation diagnostic: per-link sup |k-ktilde_2| <= 1.706218549e-02; observed Gram difference=8.666e-03\n  [PASS] Full and truncated composed Grams agree within the Monte Carlo smoke-test tolerance  (observed=8.666e-03, allowance=8.915e-02)\n  [PASS] No-conjugation control is non-PSD  (min eig=-4.825934e-01, mc_noise=1.950e-01)\n  [PASS] Beta=0 Gram matches the exact rank-one anchor  (max residual=6.140e-03, allowance=2.670e-02)\n  [PASS] Beta=0 non-leading spectrum vanishes within sampling error  (second-largest |eig|=1.671e-02, allowance=2.670e-02)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  All exact, discriminating, representation, and composed-integral checks passed.\nTOTAL: PASS=31 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024040Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

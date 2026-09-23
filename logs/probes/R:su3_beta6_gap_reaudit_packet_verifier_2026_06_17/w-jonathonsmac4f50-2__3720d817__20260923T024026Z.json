@@ -1,0 +1,40 @@
+{
+ "task": "R:su3_beta6_gap_reaudit_packet_verifier_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "su3",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py",
+ "seed": 31226,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T024026Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": [
+   "PASS=10 FAIL=0",
+   "PASS=15 FAIL=0",
+   "PASS=6 FAIL=0",
+   "PASS=86 FAIL=1"
+  ],
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ae3a1adc5e2375058880e95c45ea8624da4c7d8beb9f1b3056a9f59d480a52b9",
+ "stdout_tail": "ction_positivity_wilson_temporal_gauge_2026_06_05.txt contains 'integrated three-factor RP Gram PSD'\nPASS scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py exists\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt exists\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt records runner path -- runner=scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt exits zero -- exit_code=0\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt status ok -- status=ok\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt sha matches source -- cache=ef7a0d07c209a0d35a6aff23c131545cfbcf2f75dded4bb7274ff945a8cced8a, live=ef7a0d07c209a0d35a6aff23c131545cfbcf2f75dded4bb7274ff945a8cced8a\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt contains 'TOTAL: 17 PASS / 0 FAIL'\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt contains 'sign is load-bearing'\nPASS restricted packet is non-promotional\nPASS remaining positive route is exactly the bulk-criticality theorem\n============================================================================\nTOTAL: PASS=86 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024026Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=86 FAIL=1' vs cache 'TOTAL: PASS=87 FAIL=0'"
+  ]
+ }
+}

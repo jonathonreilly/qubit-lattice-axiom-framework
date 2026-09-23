@@ -1,0 +1,74 @@
+[PASS] S1: 24 proper rotations, transitive on the six directions, direction stabiliser of order 4
+[PASS] S1 six-neighbour patterns: 10 binary and 57 ternary rotation orbits (Burnside)
+S1 classes (own value x neighbour orbit): binary 20, ternary 171
+[PASS] S1 2x2x2: 8 sites, 12 edges, window degrees {3: 8}
+[PASS] S1 3x3x3: 27 sites, 54 edges, window degrees {3: 8, 4: 12, 5: 6, 6: 1}
+[PASS] S2 q=2: invariant linear checks = a*r_v + b*sum(nbrs) (4 functionals, 3 lines)
+S2 q=2: rotation-invariant subgroups of Z_2^7 by dimension: 0:1, 1:3, 2:2, 3:3, 4:3, 5:2, 6:3, 7:1
+[PASS] S2 q=3: invariant linear checks = a*r_v + b*sum(nbrs) (9 functionals, 4 lines)
+S2 q=3: rotation-invariant subgroups of Z_3^7 by dimension: 0:1, 1:4, 2:2, 3:5, 4:5, 5:2, 6:4, 7:1
+[PASS] S2: every rotation-invariant subgroup (q=2,3) is closed under sums (rref)
+S2 invariant subgroups on the six neighbour slots only: q=2: 7, q=3: 8
+[PASS] S2 cube: visible binary classes are (own value, occupied in-window neighbours): 8
+S2 cube census: 256 rules; 41 group-closed; 5 distinct subgroups realised; orders [1, 2, 4, 16, 256]
+[PASS] S2 cube: every pattern-code rule has a group-closed satisfying set on the cube
+S2 cube: subgroups from pattern codes 5; others from any pattern code 0 (orders [])
+[PASS] S2 cube: every group-closed satisfying set is a linear pattern code (orders 1,2,4,16,256)
+
+== S3: divergence reading, exterior conventions, incidence and flux ==
+[PASS] S3: all 14 divergence kernels (cube/box; q=2,3; A, D+A, I+A, I-A) verified; cube sizes brute-forced
+[PASS] S3 cube (degree 3): exterior-unrecorded rule D+A = I+A for q=2 and = A (exterior-empty) for q=3
+S3 box: exterior-empty vs -unrecorded divergence kernel dims differ: {2: False, 3: True}
+S3 cube kernel dims: q=2 A:0, q=2 D+A:4, q=2 I+A:4, q=3 A:2, q=3 D+A:2, q=3 I+A:3, q=3 I-A:3
+S3 box kernel dims: q=2 A:7, q=2 D+A:7, q=2 I+A:0, q=3 A:9, q=3 D+A:4, q=3 I+A:0, q=3 I-A:0
+[PASS] S3: plain sum rules a*r_v + b*sum(nbrs) = aI + bA under both conventions (only div sees degree)
+[PASS] S3 q=2 (cube, box): incidence rank 7, 26 = |V|-1 (kernel constants); cycle dim 5, 28; pair field exact (C B = 0); flux 0 vs 5, 28
+[PASS] S3 q=3 (cube, box): incidence rank 7, 26 (kernel staggered constants); cycle dim 5, 28; unsigned BFS cycle-sum rank 5, 22; chosen map vs 5, 28
+
+== S4: glued groups as minimal codewords ==
+[PASS] S4 cube graph: cycle code = ker(B^T) over GF(2) has dim 5 (32 words)
+[PASS] S4 cube graph: minimal cycle-code words = the 28 DFS simple cycles
+S4 cube graph: simple cycles by length {4: 6, 6: 16, 8: 6}; nonzero cycle-space elements 31; non-simple 3
+[PASS] S4 cube graph: non-minimal cycle-space elements = unions of two opposite faces (3)
+S4 cube site codes (q=2), glued groups per subgroup order (count, weights): 1:0 {}; 2:1 {8: 1}; 4:2 {4: 2}; 16:14 {4: 14}; 256:8 {1: 8}
+[PASS] S4 cube site codes: order-16 subgroup ker(I+A) has 14 glued groups, all weight 4 (site supports)
+S4 box q=2 ker(A): dim 7, supports 127, glued groups 21, weights 6:11,8:10
+S4 box q=2 ker(D+A): dim 7, supports 127, glued groups 75, weights 6:4,7:1,8:3,9:6,10:6,11:12,12:15,13:12,14:16
+S4 box q=3 ker(A): dim 9, supports 4837, glued groups 106, weights 6:10,7:8,8:34,9:36,10:18
+S4 box q=3 ker(D+A): dim 4, supports 36, glued groups 20, weights 8:1,11:2,12:3,17:14
+[PASS] S4 box: every divergence-reading site code of dim <= 12 was censused for glued groups
+
+== S5: role-carrying Gauss support on 3x3x3 (Model R) ==
+[PASS] S5 box: parity roles V=8, L=12, P=6, C=1; each L has two V neighbours, each V three L neighbours
+[PASS] S5 box: Gauss check matrices coincide under exterior-empty and exterior-unrecorded
+[PASS] S5 box: S_Gauss = ker over GF(2) has dim 19 = 12 links + 6 plaquettes + 1 centre (rank 8)
+[PASS] S5 box: S_Gauss = 2^19 records (graph of div: links and P/C fix the V values); VL subcode dim 12
+[PASS] S5 box: link-only glued groups = the 28 simple loops of the superlattice cube {4: 6, 6: 16, 8: 6}
+[PASS] S5 box: glued groups with matter = the 444 simple paths (dipoles: charge pair + string)
+S5 box: dipole glued groups by number of links {1: 12, 2: 24, 3: 48, 4: 72, 5: 120, 6: 96, 7: 72}
+[PASS] S5 box: the 7 plaquette/centre singletons are codewords (free roles: no check touches them)
+[PASS] S5 box: codewords split (PC)+(VL); glued groups = 7 units + 28 loops + 444 dipoles = 479
+[PASS] S5 box: Model R flux dim 5 (superlattice cycle space) vs 0 for Model P pair field (q=2)
+
+== S6: sequential realisability and hole statistics (Model R) ==
+S6 charge-free sector of Model R on the superlattice cube: dim 5, flux image dim = GF(2) rank of cycle Gram matrix = 2
+[PASS] S6 plane: roles V=4, L=4, P=1, every L in two checks; |S_Gauss| = 32 = 2^(9-4)
+[PASS] S6 plane: rule 'V forms after its L neighbours with forced parity' realises exactly S_Gauss (512)
+S6 plane: d-histogram over 9! orders {0: 108864, 1: 217728, 2: 36288}
+[PASS] S6 plane: d <= 2 (two double closers cannot share a V) and every d in 0..2 occurs
+S6 plane: P(fully recorded and in S_Gauss) averaged over 9! orders = 5/8 = 0.625000
+[PASS] S6 plane: 9 sample orders (3 per d), all 512 coins: full-record fraction 2^-d, patterns = S_Gauss, uniform
+[PASS] S6 plane: DP over the 8 V/L sites = 9!-order d-histogram / 9 (P site inert)
+S6 cube (20 V/L sites): d-histogram over 20! orders {0: 135128771002368000, 1: 810772626014208000, 2: 1118564273553408000, 3: 350957366673408000, 4: 17478970933248000}
+[PASS] S6 cube: d <= 4 (double closers = a matching of Q_3), all d occur, sum = 20!, E[d] = 12/7 (7-site unions), E[2^-d] = 924167/2598960 = 0.355591
+[PASS] S6 cube: one sample order per d = 0..4, all 2^20 coins: fully recorded fraction 2^-d, 4096 patterns = S_Gauss (2^12), uniform (2^(8-d) each)
+[PASS] S6 review-added108matching integral: all5cube probabilities equal DP and exact fractions
+[PASS] S6 review-added7matching integral: plane probabilities3/10,3/5,1/10 equal DP
+per_element: GF2/GF3 pattern algebra; binary independent matching integral
+per_site: cube8/box27/plane9; supplied parity roles
+per_mode: specified kernels and unsigned cycle maps; no oriented q3 claim
+per_block: 256cube rules;4box kernels;479Gauss supports;9!/20! order counts;sampled all-coins
+lattice_wide: not executed; finite windows only; no full NN formation or partial-hole law
+SUMMARY selected site codes: binary pair-map rank0; supplied Gauss code:28loops+444paths +7units, link-map rank5; mean failure3/8 (plane),1-924167/2598960 (cube); no partial-history law
+TOTAL: PASS=38 FAIL=0
+elapsed 5.7 s

@@ -1,0 +1,34 @@
+{
+ "task": "R:structured_mirror_bornsafe_sliced_runner_2026_05_09",
+ "type": "runner-reexecution",
+ "lane": "structured",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py",
+ "seed": 31194,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3720d817",
+ "started_utc": "20260923T023954Z",
+ "elapsed_s": 31.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8074574c74012d824d28a0f7e8a655a9a6c5b63855a0a0a482dcf6fe7b15476e",
+ "stdout_tail": "-2.514710)\n  [PASS] fallback inventory is exactly the registered five rows: actual=5, expected=5\n  [PASS] every originally valid aperture choice is preserved: non-fallback selections equal the original threshold selections\n  [PASS] fallback remains disjoint, sign-ordered, and graph-preserving: middle uses one node per sign; helper hard-fails overlap/sign drift\n  [PASS] fallback selection is deterministic: all five fallback measurements reproduce exactly\n\nAGGREGATE\n  valid executions: 192/192\n  maximum corrected |I3|/P: 1.816615e-15 at N=25 npl=20 r=4.5 g=1.50 j=0.30, seed=17\n  maximum |legacy/P - P(empty)/P|: 1.776357e-15\n  dtv range over 192 executions: [+3.354922e-02, +7.400326e-01]\n  pur_cl range over 192 executions: [+7.141848e-01, +9.997359e-01]\n  s_norm range over 192 executions: [+8.930359e-04, +8.629478e-01]\n  gravity range over 192 executions: [-2.734334e+00, +7.563472e+00]\n  grav_k0 range over 192 executions: [+0.000000e+00, +0.000000e+00]\n  configurations meeting the author-defined finite diagnostic screen (mean pur_cl<0.95 and mean gravity>0): 11/32\n\nPASS: all 32 configurations produced ok=6 and the corrected eight-term\n      residual stayed below the explicit 1e-14 numerical threshold.\n      The nonzero legacy residual is the measured P(empty) bypass term.\n      Exact cancellation is conditional on the separately checked\n      fixed-graph linear-amplitude/quadratic-probability identity; floating-\n      point cancellation alone is not presented as an exact proof.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T024025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

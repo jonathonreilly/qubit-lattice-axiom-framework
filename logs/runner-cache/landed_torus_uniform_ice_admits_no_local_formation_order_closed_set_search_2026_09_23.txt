@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/landed_torus_uniform_ice_admits_no_local_formation_order_closed_set_search_2026_09_23.py
+runner_sha256: 85cd66949108af0a122335485ad85d7e3e9c48b956608255ee3ce49c62390222
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.05
+status: ok
+----- stdout -----
+A. the landed torus measure
+[PASS] the 2 x 2 x 2 torus: 8 vertices, 24 links, 24 plaquette sites, 8 cube sites; 9600 ice states, as in the landed note :: every vertex has 6 links; every state has exactly 3 occupied at every vertex
+B. a control with an order
+[PASS] control: twelve independent fair links with the other twelve fixed are formed in order :: 4 closed sets visited before completion
+C. the uniform ice measure, every coordinator present
+[PASS] no local formation order reproduces the landed measure, with all 24 plaquette and 8 cube sites :: 65 closed sets; the largest formed set has 19 sites: one cube site, its 6 plaquettes and its 12 edges, and no vertex, since every vertex star reaches outside any one cube
+D. coarser records and no coordinators
+[PASS] vertex records carrying nothing, no coordinators, or links alone: no order either :: V nothing: 57 closed sets, largest 27; C+P nothing: 33 closed sets, largest 39; C+P+V nothing: 25 closed sets, largest 41
+per_element: Integer configurations, weights and conditional cross-products are exact within the stated finite alphabets; floating spectral estimates are labelled.
+per_site: Site and unit tests use the declared records, neighbour graph, boundary conditions and fixed formation orders only.
+per_mode: Transfer and walk modes refer to supplied finite matrices; numerical estimates do not establish untested physical or infinite-cross-section limits.
+per_block: This bounded support result retains its explicit controls, parameter values and search caps; alternative rules and records remain outside scope.
+lattice_wide: Finite windows do not establish universal formation impossibility; infinite-height statements apply only to the specified fixed-cross-section transfer model.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

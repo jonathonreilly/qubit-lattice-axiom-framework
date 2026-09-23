@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_joint_cell_units_rows_but_not_the_two_by_two_block_2026_09_23.py
+runner_sha256: 26dd76432cef7e70ee51a7e4e462ddc45a1b7b18123273de95b412e0b1157f92
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 26.17
+status: ok
+----- stdout -----
+A. the windows
+[PASS] uniform ice weights: 10016 (one square), 501632 (2 x 1), 25123328 (3 x 1), 125836800 (2 x 2) :: 1x1: 9 sites, 16 grid patterns; 2x1: 15 sites, 128 grid patterns; 3x1: 21 sites, 1024 grid patterns; 2x2: 25 sites, 3584 grid patterns
+B. rows
+[PASS] one square and two squares: every unit order is exact; a row of three: exactly the orders that do not form both ends first :: row of three: 4 of 6 orders exact; the failing ones form cells 0 and 2 before cell 1
+C. the 2 x 2 block
+[PASS] the 2 x 2 block: no unit order is exact :: all 24 orders fail, first at unit step 2 (counting from 1): the unformed cells close a loop around the centre
+D. row units
+[PASS] row units on the 2 x 3 window: exact in exactly the orders that do not form both end rows first :: 4 of 6 orders exact; 100352 grid patterns; each unit is a whole row of two cells, so the units form a chain, as a sweep's layers do
+E. two cubes
+[PASS] two cubes sharing a face: cell units are exact in both orders :: 614912 grid patterns of weight 3985518592 (as in open PR 8719); the second cube, given the first cube's sites with their full vertex records, depends only on the sites it touches, and does depend on them
+F. the 2 x 2 x 1 slab of cubes
+[PASS] the 2 x 2 x 1 slab: for every ordered pair of first units, the second unit depends on formed sites it does not touch :: 75 sites, 33 grid links; 12 of 12 ordered pairs have two formed patterns that agree on every site adjacent to the second unit and give different exact laws for it (recomputed by vectorised enumeration), so every one of the 24 orders fails at the second unit
+G. rows around a loop
+[PASS] row units around a loop (a cylinder, three rows wrapped): no order is exact :: 21888 grid patterns of weight 15349760; the open 2 x 3 window has 4 exact orders, the wrapped one none: layers must be formed as a chain along an open axis
+per_element: Integer configurations, weights and conditional cross-products are exact within the stated finite alphabets; floating spectral estimates are labelled.
+per_site: Site and unit tests use the declared records, neighbour graph, boundary conditions and fixed formation orders only.
+per_mode: Transfer and walk modes refer to supplied finite matrices; numerical estimates do not establish untested physical or infinite-cross-section limits.
+per_block: This bounded support result retains its explicit controls, parameter values and search caps; alternative rules and records remain outside scope.
+lattice_wide: Finite windows do not establish universal formation impossibility; infinite-height statements apply only to the specified fixed-cross-section transfer model.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

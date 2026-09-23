@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.py
+runner_sha256: aaa250e8865bad926af243221cb00bc22879035aeaa793abe35002733c9405bd
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 10.50
+status: ok
+----- stdout -----
+A. the counts
+[PASS] trace T^2 = 9600 on 2 x 2, and the tori 2 x 2 x 4 and 2 x 2 x 6 agree with transfers along another axis :: 2 x 2 x 4: 23063296; 2 x 2 x 6: 70121226240
+B. flux sectors
+[PASS] every cross-section conserves the size of the flux, and zero flux carries the largest eigenvalue :: 2 x 2: lambda_0 = 60.9137, sectors |S| = 0..4; 2 x 4: lambda_0 = 2401.3316, sectors |S| = 0..8; 2 x 6: lambda_0 = 105338.1323, sectors |S| = 0..12
+C. the flux stiffness
+[PASS] f(S) A / S^2 stays between 0.28 and 0.41 over every flux sector, with smallest-flux values 0.2808, 0.3073, 0.3121 on the three sections :: smallest flux, A = 4, 8, 12: 0.2808, 0.3073, 0.3121; by flux on 2 x 6: |S| = 2: 0.3121, |S| = 4: 0.3165, |S| = 6: 0.3248, |S| = 8: 0.3385, |S| = 10: 0.3609, |S| = 12: 0.4009; at each A the coefficient rises with the flux
+per_element: Integer configurations, weights and conditional cross-products are exact within the stated finite alphabets; floating spectral estimates are labelled.
+per_site: Site and unit tests use the declared records, neighbour graph, boundary conditions and fixed formation orders only.
+per_mode: Transfer and walk modes refer to supplied finite matrices; numerical estimates do not establish untested physical or infinite-cross-section limits.
+per_block: This bounded support result retains its explicit controls, parameter values and search caps; alternative rules and records remain outside scope.
+lattice_wide: Finite windows do not establish universal formation impossibility; infinite-height statements apply only to the specified fixed-cross-section transfer model.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

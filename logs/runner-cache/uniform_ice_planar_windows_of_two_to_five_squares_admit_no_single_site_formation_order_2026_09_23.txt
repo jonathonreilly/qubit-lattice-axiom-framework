@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_planar_windows_of_two_to_five_squares_admit_no_single_site_formation_order_2026_09_23.py
+runner_sha256: 25ab7418dd532e813704f9a8c7596b8222a5c34c6a6fc9a62f0e7fc572f3bc01
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 110.23
+status: ok
+----- stdout -----
+A. the closed-set search against the plain search of open PR 8715
+[PASS] the closed-set search reproduces the plain search: same verdicts and the same largest formed sets :: square: none, 9 closed / 21 plain sets, largest 3; square + P: order, 2 closed / 68 plain sets, largest 9; 2x1 + P: none, 16 closed / 92 plain sets, largest 7; 2x1 + P, V nothing: none, 10 closed / 2560 plain sets, largest 11; L tromino + P: none, 22 closed / 135 plain sets, largest 7
+B. the windows
+[PASS] free polyominoes of 1 to 5 squares number 1, 1, 2, 5, 12, spanning 21 windows; the U pentomino spans the 3 x 2 rectangle :: canonical forms under the 8 symmetries of the square; a window is a vertex set, so the U pentomino's window is the 3 x 2 rectangle with 6 coordinators
+[PASS] every window's total weight equals its generating-function coefficient, with four totals pinned :: one square 10016, 2 x 1 501632, 3 x 1 25123328, 2 x 2 125836800
+C. no order on any window of two to five squares
+[PASS] full local records with every coordinator: the lone square has an order, and none of the 20 larger windows does :: closed sets per search 16 to 36; largest formed set 6 sites in 2 windows, 7 sites in 18 windows
+D. where every search stops
+[PASS] each search records one maximum-size square set with its unshared vertices, for a square with the fewest shared vertices :: in all 20 windows one recorded maximum-size formed set is that square set, and no site outside it has a conditional that depends only on its formed neighbours; every formed set lies in a closed one, so none holds all nine sites of a square
+E. coarser record schemes
+[PASS] vertices record nothing, plaquettes record nothing, or both: no order on any of the 20 windows :: V nothing: none on 20 of 20, at most 24 closed sets, largest 17; P nothing: none on 20 of 20, at most 30 closed sets, largest 11; V nothing,P nothing: none on 20 of 20, at most 18 closed sets, largest 19
+per_element: Integer configurations, weights and conditional cross-products are exact within the stated finite alphabets; floating spectral estimates are labelled.
+per_site: Site and unit tests use the declared records, neighbour graph, boundary conditions and fixed formation orders only.
+per_mode: Transfer and walk modes refer to supplied finite matrices; numerical estimates do not establish untested physical or infinite-cross-section limits.
+per_block: This bounded support result retains its explicit controls, parameter values and search caps; alternative rules and records remain outside scope.
+lattice_wide: Finite windows do not establish universal formation impossibility; infinite-height statements apply only to the specified fixed-cross-section transfer model.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

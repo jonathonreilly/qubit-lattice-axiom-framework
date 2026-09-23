@@ -1,6 +1,6 @@
 {
- "edge_count": 14059,
- "node_count": 6490,
+ "edge_count": 14080,
+ "node_count": 6500,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3186,6 +3186,10 @@
    "deps_hash": "14400756f044",
    "out_degree": 4
   },
+  "coulomb_measure_selection_hard_static_ice_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "ac0c2e0a9b26",
+   "out_degree": 2
+  },
   "coulomb_stability_upper_bound_support_note_2026-05-20": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -5641,6 +5645,14 @@
   "formation_weight_energy_dictionary_underdetermination_bounded_theorem_note_2026-08-13": {
    "deps_hash": "35b37fce2461",
    "out_degree": 3
+  },
+  "formed_flux_as_a_persistent_walk_straight_continuation_gives_ballistic_then_diffusive_transport_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "de51ba5042c2",
+   "out_degree": 2
+  },
+  "formed_flux_transport_for_every_linear_ice_sweep_rule_is_a_markov_walk_damped_or_rigid_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "8e38fd32691d",
+   "out_degree": 2
   },
   "four_cube_cutting_fixed_point_orbit_floor_note_2026-08-11": {
    "deps_hash": "e3b0c44298fc",
@@ -18802,6 +18814,10 @@
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
+  "the_landed_torus_uniform_ice_measure_admits_no_local_formation_order_even_with_every_coordinator_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "2a338d61d68b",
+   "out_degree": 3
+  },
   "the_link_models_pair_update_conserves_plaquette_parity_and_the_2x2x2_gauss_sector_splits_into_937_winding_components_bounded_theorem_note_2026-09-04": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -19289,6 +19305,30 @@
   "uniform_ice_by_formation_the_square_loop_obstruction_the_plaquette_coordinator_and_plans_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "uniform_ice_by_formation_two_adjacent_cubes_admit_no_local_order_even_with_both_cube_sites_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "d16b2736e8e2",
+   "out_degree": 2
+  },
+  "uniform_ice_by_formation_two_planar_squares_admit_no_local_order_and_one_cube_needs_its_cube_site_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "65e604ef558e",
+   "out_degree": 2
+  },
+  "uniform_ice_by_joint_cell_units_rows_yes_the_two_by_two_block_no_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "d16b2736e8e2",
+   "out_degree": 2
+  },
+  "uniform_ice_by_layer_units_on_infinite_prisms_is_exact_in_the_zero_flux_sector_that_long_prisms_select_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "uniform_ice_by_single_sites_no_planar_window_of_two_to_five_squares_admits_a_local_formation_order_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "2a338d61d68b",
+   "out_degree": 3
+  },
+  "uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "0a5a23d65830",
+   "out_degree": 2
   },
   "unit_conversion_is_the_accepted_non_bounding_ruler_reconciliation_note_2026-06-08": {
    "deps_hash": "d292eab310f2",

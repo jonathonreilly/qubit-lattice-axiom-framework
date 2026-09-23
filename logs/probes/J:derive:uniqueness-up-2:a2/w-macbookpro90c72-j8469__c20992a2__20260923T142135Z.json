@@ -22,11 +22,18 @@
  "stdout_tail": " maxima in upward-rounded integers: p = 51/10 (alpha 27/20): K2c <= 0.845071; p = 21/4 (alpha 27/20): K2c <= 0.894864; p = 27/5 (alpha 27/20): K2c <= 0.944946; p = 11/2 (alpha 27/20): K2c <= 0.978358; p = 111/20 (alpha 27/20): K2c <= 0.995052; p = 139/25 (alpha 34/25): K2c <= 0.998429; at p = 139/25 the six positions give 11: 0.11087, 12: 0.22142, 13: 0.21292, 22: 0.12093, 23: 0.22142, 33: 0.11087 (856 s)\nok A5: at p = 139/25: kappa_max = 0.39208, so D_1 <= 3 kappa_max D_0 and D_2k <= 3 kappa_max D_(2k-1); with K2c < 1, D_t <= alpha max(1, 3 kappa_max)^2 K2c^floor((t-1)/2)\nSUMMARY: PARTIAL exact certificates of uniqueness and exponential memory loss for the six-axis formation law on (p,1,2) up to p = 139/25 (round 1: 5.1; a3: 5.26) by a two-level Wasserstein contraction: optimal couplings on odd levels, glued couplings on even levels, switch one grand-predecessor, propagate two levels exactly, average the environment over the level below with each order-group's laws drawn from one configuration; the located threshold 10.5 is not reached\nHIT: the level automaton of the six-axis formation law on (p,1,2) has exactly one invariant law and forgets every initial plane exponentially at p = 139/25 (alpha = 34/25), and at each p of the table: the two-level constant K2c (sum over the six grand-predecessors of the averaged two-level sensitivity with group-consistent environments) is <= 0.998429 < 1 there, an exact upper bound; the one-level criteria stop at 5.11 (round 1) and 5.26 (a3)\n",
  "checked": {
   "by": "w-macbookpro90c72-j8469",
-  "at_utc": "20260923T143635Z",
+  "at_utc": "20260923T143705Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c20992a2 differs from the current HEAD da9096d3 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: a new exact partial result. Certificates of uniqueness and exponential memory loss for the six-axis formation law on (p,1,2) at p = 51/10, 21/4, 27/5, 11/2, 111/20 and 139/25 (largest 5.56; round 1: 5.1; a3: 5.26), by a two-level Wasserstein contraction: optimal couplings on odd levels, glued couplings on even levels along a lexicographic order, one grand-predecessor switched and propagated exactly over two levels, the environment averaged over the level below with the sites before and after the switch each drawn from one configuration (no correction term). The plan is explicit, certified optimal by a dual witness and equivariant under the 48 signed permutations; tables are exact Fractions and the maxima over realisable environments are upward-rounded integers. Round 1's exact constant is reproduced. The criterion's edge lies between 5.56 and 5.57; 10.5 is not reached. a3/a4 summaries were seen at claim; the route was built before opening their files. Same model family as round 1, a3, a4; a cross-family referee is needed.",
+  "by": "w-macbookpro90c72-j8469",
+  "at_utc": "20260923T143705Z"
  }
 }

@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py
+runner_sha256: 4c8d118b9199baf2fea36712b5ef1d2131df90bb80f9f3c98441b4348712dac5
+input_fingerprint_sha256: b984e39092bd1ae3125960ac8cd24ad1449c5b5acf61e0a53f8e3250855ad94a
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+PASS gauge_wilson_static_source_dirichlet_controls_2026_09_07.py
+per_element: PASS 10 checks; eight SU3 generators,64 trace pairings and Casimir
+per_site: PASS 3 checks; three exact SU3 path matrices
+per_mode: PASS 20 checks; two orientations, cross traces and exact electric increments
+per_block: PASS 8 checks; U1 adverse and finite ghost/gauge creation toys
+lattice_wide: checked and not executed — imported coordinate/domain theorem and uniform estimate remain analytical; 1 finite toy/resource controls only; positive resources; no imported-theorem or infinite-volume proof
+TOTAL: PASS=42 FAIL=0
+seconds: 0.31343308300711215; rss_MiB: 62.609375
+source_sha256: 4c8d118b9199baf2fea36712b5ef1d2131df90bb80f9f3c98441b4348712dac5
+
+----- stderr -----
+

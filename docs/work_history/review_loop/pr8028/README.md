@@ -1,0 +1,3 @@
+# PR8028 original recovery
+
+All76 original path versions, including68 historical campaign paths, are preserved byte-exact as deterministic gzip payloads. The manifest records original Git path, mode, blob, head, SHA-256 and stored SHA-256. Decode gzip and verify the original hash. Both complete derivations, original sources, prospective contracts, exposed candidate timing, root syntax-only failure, finite controls and proof reviews are historical evidence. The live note preserves the full equivariant-coordinate, ghost-vacuum, charged-resolvent and Dirichlet-form proofs. Historical generated audit outputs confer no audit authority.

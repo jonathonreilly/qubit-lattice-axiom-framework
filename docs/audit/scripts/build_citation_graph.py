@@ -154,6 +154,7 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     'rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16': ['scripts/rotor_gauss_charged_ring_compression_2026_09_16.py'],
     'rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16': ['scripts/rotor_gauss_affine_theta_check_2026_09_16.py'],
     'gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py'],
+    'gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py'],
     'gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py'],
     'gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py'],
     "gauge_wilson_cube_slab_first_spectral_corrections_bounded_theorem_note_2026-09-07": [

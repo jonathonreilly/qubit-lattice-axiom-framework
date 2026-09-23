@@ -1,0 +1,40 @@
+AUTHORITY, RETAINED GRAMMAR, AND EXACT PRICE
+FAIL Cycle-190 review note exists :: 
+PASS the retained typed cable rows are reused literally :: (96, 0)
+PASS exactly two fresh roles are priced and MEMBER5 is never supplied :: (frozenset(), Counter({'MARK': 2517, 'P0': 465, 'EGRESS_CAP': 34}))
+PASS the compiled delta and merged local law are deterministic :: (16, 342, 102338, 0, 0, 0, 0)
+
+GEOMETRY AND VALUE-NEUTRAL BINDING
+PASS every extension edge is local with no unintended dynamic adjacency :: (768, 3016, ())
+PASS first cross-bit ancestry occurs only at J01 and J23 :: ({(-56, 33, 0), (-56, 9, 0)}, frozenset({0, 1, 2, 3, 4}))
+PASS the final patch is five ordered literals, never a 32-valued payload :: (((-89, 3, -30), (-89, 15, -30), (-89, 27, -30), (-89, 39, -30), (-89, 51, -30)), ('H1', 'H0', 'H1', 'H0', 'H1'))
+
+ALL-32 EXACT FULL-HISTORY CLOSURE AND SCHEDULE CONFLUENCE
+PASS all 32 words have exact full-history closure under both schedules :: (Counter({(2289, 4232, 18, 16, 0, 10): 32}), ())
+PASS all 32 histories realize exactly the intended ancestry :: ()
+
+ALL-24 PROPER-CUBIC COVARIANCE OF THE NEW EGRESS
+PASS the completed-boundary egress closes in all 24 proper-cubic orientations :: (Counter({(769, 772, 6, 6, 0): 16, (769, 772, 10, 6, 0): 4, (769, 772, 6, 10, 0): 4}), ())
+PASS whole-history rotated schedule sensitivity is exactly inherited from Cycle-178 :: Counter({'discovery-alias': 9, 'replay-alias': 8, 'pass': 7})
+
+320 ENDPOINT DELETION / ABSENCE CONTROLS
+PASS all 160 local endpoint-edge deletions are exact :: (160, ())
+PASS all 160 complete-boundary endpoint absences are exact :: (160, ())
+
+ACCOUNTING
+NEW_ROLES ('EGRESS_CAP', 'MEMBER5')
+SUPPLIED_RECORDS 3016 Counter({'MARK': 2517, 'P0': 465, 'EGRESS_CAP': 34})
+EXTENSION_DYNAMIC_RECORDS 768
+CABLE_DYNAMIC_RECORDS 465
+TERMINAL_BIT_RECORDS 5
+STATUS_DYNAMIC_RECORDS 293
+CONSUMER_RECORDS 5
+COMPILED_CANONICAL_ROWS 16 Counter({'status-tree': 6, 'recurrent-adapter': 4, 'terminal-egress': 2, 'status-conversion': 2, 'consumer': 2})
+NEW_RAW_ROWS 342
+FULL_RAW_ROWS 102338
+ALL32_SHAPES Counter({(2289, 4232, 18, 16, 0, 10): 32})
+COVARIANCE_SHAPES Counter({(769, 772, 6, 6, 0): 16, (769, 772, 10, 6, 0): 4, (769, 772, 6, 10, 0): 4})
+J01 (-56, 9, 0) J23 (-56, 33, 0) J0123 (-66, 21, 0) JFINAL (-76, 40, 0)
+CONSUMER_SITES ((-89, 3, -30), (-89, 15, -30), (-89, 27, -30), (-89, 39, -30), (-89, 51, -30))
+PASS 12 FAIL 1
+RESULT CYCLE190_OPEN

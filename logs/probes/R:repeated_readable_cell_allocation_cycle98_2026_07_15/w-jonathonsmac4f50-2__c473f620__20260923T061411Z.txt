@@ -1,0 +1,88 @@
+
+===============================================================================
+A - Minimal final-tap phase repair and all recurrent rows
+===============================================================================
+FAIL A01 Cycle 98 note exists
+PASS A02 recurrent order has exactly B,C,A Hamiltonian rows
+PASS A03 first three actual rows are R_B11,R_B10,R_B00
+PASS A04 phase repair adds exactly two canonical H0-back equality rows
+PASS A05 phase repair has exactly 48 proper-cubic raw rows
+PASS A06 phase repair is disjoint from the Cycle-94 union
+PASS A07 extended mixed union has exactly 5,728 raw inputs
+PASS A08 every mixed raw input remains single-valued
+PASS A09 only recurrent rows 48 and 49 need the H0-back repair :: (48, 49)
+
+===============================================================================
+B - Exact supplied, grown, shared, and certified census
+===============================================================================
+PASS B01 every complete cell has 192 comparator source records
+PASS B02 every complete cell has 89 writer source records
+PASS B03 one safe comparator/writer alias leaves 280 static records
+PASS B04 every cell grows exactly 48+35=83 records after START
+PASS B05 predecessor MATCH is literally successor START
+PASS B06 consecutive complete cells share only MATCH/START
+PASS B07 successor payload is exactly 112 records
+PASS B08 successor fixed frame/cage is exactly 168 records
+PASS B09 successor static source has exactly twelve components :: (123, 82, 65, 2, 1, 1, 1, 1, 1, 1, 1, 1)
+PASS B10 START is distance two from the source and adjacent to none
+PASS B11 predecessor completion grows START but consumes zero successor-static records
+PASS B12 launched comparator consumes 192 source records and writer adds the other 88 :: comparator=192 writer_new=88
+PASS B13 all 280 static records occur in an intended exact signature :: used=280
+PASS B14 equal-path deletion makes 242 records indispensable and leaves 38 H1 guards redundant :: kill=232 flip=10 same=38
+PASS B15 all 11,985 unequal row/reference controls stop at their first mismatch :: controls=11985 failures=[]
+PASS B16 all 38 equal-path-redundant H1 guards block a mismatched H0 append
+PASS B17 completed predecessor alone writes none of the absent successor source :: {}
+
+===============================================================================
+C - Two consecutive actual recurrent-row handoffs with old debris
+===============================================================================
+PASS C01 local source is exactly 280+280+192=752 supplied records
+PASS C02 physical apparatus stays disjoint from the actual Cycle-85 endpoint
+PASS C03 actual endpoint initially enables only the original R_B11 port :: {(2, 5, 0): frozenset({'H1'})}
+PASS C04 all 216 states have their exact singleton-or-terminal frontier :: []
+PASS C05 two full cells and the third comparator grow exactly 215 records
+PASS C06 terminal is quiet and conflict-free
+PASS C07 first verified R_B11 MATCH remains as old debris
+PASS C08 second verified R_B10 MATCH starts the complete R_B00 comparator
+PASS C09 the two completed readable values are exactly R_B11 and R_B10
+
+===============================================================================
+D - All 51 adjacent phase handoffs, schedules, and mixed parasites
+===============================================================================
+PASS D01 all 51 row/geometry phases have exact mixed-union frontiers :: []
+PASS D02 quotient exhausts exactly 4,284 states and 4,233 writes :: states=4284 edges=4233
+PASS D03 every reachable frontier is singleton, so all asynchronous schedules coincide
+PASS D04 all 137,472 proper-cubic raw images retain the same output :: []
+
+===============================================================================
+E - Translation/phase induction and nonlocal-debris exclusion
+===============================================================================
+PASS E01 cell orientation has order exactly three
+PASS E02 every third cell is translated by (49,-49,-49)
+PASS E03 row, orientation, content, and source repeat after 51 cells
+PASS E04 projection advance is exactly 147 and bounds all distant blocks :: intervals=((-2, 64), (47, 113), (96, 162))
+PASS E05 no nonconsecutive residue/block pair can even approach NN range :: []
+PASS E06 the nearest gap-two supports are exactly L1 distance 49 :: 49
+PASS E07 51 phase quotients plus the exact drift form an unbounded conditional induction
+
+===============================================================================
+F - Bounded allocation result and N1-N8 discipline
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/repeated_readable_cell_allocation_cycle98_2026_07_15.py", line 602, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/repeated_readable_cell_allocation_cycle98_2026_07_15.py", line 593, in main
+    scope_and_no_go_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/repeated_readable_cell_allocation_cycle98_2026_07_15.py", line 574, in scope_and_no_go_contract
+    note = NOTE.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/REPEATED_READABLE_CELL_ALLOCATION_CYCLE98_NOTE_2026-07-15.md'

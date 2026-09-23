@@ -1,0 +1,123 @@
+audit_companion_yt_lsp_signed_record_source_readout_dep_resolution_2026_06_04
+parent runner: scripts/frontier_yt_lsp_signed_record_source_readout_support.py
+parent note  : docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md
+companion    : docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_RUNNER_HASH_HYGIENE_COMPANION_NOTE_2026-06-04.md
+dep claim id : lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22
+expected parent-runner SHA-256: a796ff28b71099137ffcc59118f2b240cabdfad5f6b54b5730b3963ce026ad01
+
+================================================================================
+Block 1: Re-run parent runner on current head
+================================================================================
+[PASS] parent runner subprocess returns nonempty stdout
+[FAIL] parent runner PASS=49 (substantive content unchanged): 9
+[PASS] parent runner FAIL=1 (single FAIL = procedural ledger-status watcher): 1
+[PASS] exactly one FAIL line: 1
+[FAIL] FAIL line names the LSP dep: [FAIL] docs/audit/data/audit_ledger.json exists
+[FAIL] FAIL line reports unaudited status (the weakened grade): [FAIL] docs/audit/data/audit_ledger.json exists
+
+================================================================================
+Block 2: Re-verify Pauli algebra independent of any dep grade
+================================================================================
+[PASS] P_+ idempotent
+[PASS] P_- idempotent
+[PASS] P_+ and P_- orthogonal
+[PASS] P_+ + P_- = I (completeness)
+[PASS] signed observable P_+ - P_- = sigma_z
+[PASS] signed spectrum is {-1,+1}: [-1.0, 1.0]
+
+================================================================================
+Block 3: RN origin-score identity independent of any dep grade
+================================================================================
+[PASS] site 0: d log R / dh_x at h=0 equals epsilon_x: 8.22666379463044e-11
+[PASS] site 1: d log R / dh_x at h=0 equals epsilon_x: 8.22666379463044e-11
+[PASS] site 2: d log R / dh_x at h=0 equals epsilon_x: 8.22666379463044e-11
+[PASS] all three sites within tolerance: 8.22666379463044e-11
+
+================================================================================
+Block 4: Source-family uniqueness independent of any dep grade
+================================================================================
+[PASS] normalized source composition implements h+k addition: 2.7755575615628914e-17
+[PASS] log-odds are linear with coefficients epsilon - epsilon^0: 1.1102230246251565e-16
+[PASS] uniquely-reconstructed family equals product RN: 0.0
+
+================================================================================
+Block 5: Static scan of parent runner for ledger grade-field reads
+================================================================================
+[PASS] parent runner contains Part 2 ledger-status function
+[PASS] ledger-read pattern 'row\\.get\\("effective_status"\\)' confined to Part 2 (or absent): 2/2 in Part 2
+[PASS] ledger-read pattern 'row\\.get\\("audit_status"\\)' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] ledger-read pattern 'row\\.get\\("intrinsic_status"\\)' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] ledger-read pattern 'rows\\[.+\\]\\["effective_status"\\]' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] ledger-read pattern 'rows\\.get\\(.+\\)\\.get\\("effective_status"\\)' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] ledger-read pattern 'rows\\.get\\(.+\\)\\.get\\("audit_status"\\)' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] outside Part 2: no ledger row access for 'audit_status': 0
+[PASS] outside Part 2: no ledger row access for 'effective_status': 0
+[PASS] outside Part 2: no ledger row access for 'intrinsic_status': 0
+[PASS] outside Part 2: no ledger row access for 'retained_bounded': 0
+[PASS] outside Part 2: no ledger row access for 'audited_clean': 0
+[PASS] outside Part 2: no ledger row access for 'audited_conditional': 0
+
+================================================================================
+Block 6: Static scan of parent note for grade-dependence claims
+================================================================================
+[PASS] parent note absent of grade-dependence pattern: 'because the dep is retained'
+[PASS] parent note absent of grade-dependence pattern: 'because.*retained_bounded'
+[PASS] parent note absent of grade-dependence pattern: "depends on the dep'?s audit grade"
+[PASS] parent note absent of grade-dependence pattern: "load-bears on the dep'?s audit grade"
+[PASS] parent note absent of grade-dependence pattern: 'requires the dep to be retained'
+[PASS] parent note absent of grade-dependence pattern: 'requires.*audited_clean'
+[PASS] parent note absent of grade-dependence pattern: 'requires the dep grade'
+[PASS] parent note declares direct_effective_status_change_allowed_from_this_note: false
+[FAIL] parent note declares audit_required_before_effective_status_change: true
+
+================================================================================
+Block 7: Counterfactual independence of substantive blocks
+================================================================================
+[PASS] no-ledger Pauli: signed observable identical
+[PASS] no-ledger RN origin-score at site 0 within tolerance: 8.22666379463044e-11
+[PASS] no-ledger two-site readouts commute
+[PASS] no-ledger two-site readouts square to identity
+
+================================================================================
+Block 8: Firewall preservation across the dep weakening
+================================================================================
+[FAIL] required boundary phrase present: does not accept the source-coupled action convention
+[FAIL] required boundary phrase present: does not derive canonical `O_H`
+[PASS] required boundary phrase present: does not fix scalar LSZ normalization
+[FAIL] required boundary phrase present: does not select `kappa_Y = 0`
+[PASS] required boundary phrase present: does not derive `y_t`
+[PASS] required boundary phrase present: claim_type_author_hint: bounded_theorem
+[PASS] required boundary phrase present: direct_effective_status_change_allowed_from_this_note: false
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: positive retained Y_T closure
+[PASS] forbidden overclaim absent: kappa_Y = 0 is derived
+[PASS] forbidden overclaim absent: derive y_t
+[PASS] forbidden overclaim absent: y_t = 
+[PASS] forbidden overclaim absent: m_t = 
+[PASS] forbidden overclaim absent: sqrt(8/9) as an unconditional
+
+================================================================================
+Block 9: Runner-hash continuity since last audited_clean snapshot
+================================================================================
+[FAIL] current parent runner SHA-256 matches last audited_clean snapshot: current=d225eb644de9947f expected=a796ff28b7109913
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_yt_lsp_signed_record_source_readout_dep_resolution_2026_06_04.py", line 712, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_yt_lsp_signed_record_source_readout_dep_resolution_2026_06_04.py", line 699, in main
+    block9_runner_hash_continuity()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_yt_lsp_signed_record_source_readout_dep_resolution_2026_06_04.py", line 559, in block9_runner_hash_continuity
+    rows = json.loads(read_text(LEDGER))["rows"]
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_yt_lsp_signed_record_source_readout_dep_resolution_2026_06_04.py", line 149, in read_text
+    return path.read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/audit_ledger.json'

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_hierarchy_b4_determinant_only_factor_signature_no_go_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_b4_determinant_only_factor_signature_no_go_2026_06_17.py",
+ "seed": 43649,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060729Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=43, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a0b2bcbcffa6e3aaf7d7e67a3ad1ba6ff3f459150c12d0e77cde0fe02e2bb983",
+ "stdout_tail": "n that one element.\nper_site: checked and not executed \u2014 this runner instantiates no lattice and reads no site; the minimal-block determinant enters as the checked support-packet result u_0^16, and the canonical surface is the single supplied mean-field plaquette <P>=0.5934 with u_0=0.877681, so nothing here is resolved site by site.\nper_mode: checked and not executed \u2014 the algebra deliberately strips constants and keeps only integer exponents, so no eigenvalue, no spectral decomposition of the block determinant, and no mode content survives into the bookkeeping; a mode-resolved argument would need the determinant's spectrum, which this exact-exponent method never forms.\nper_block: checked \u2014 the minimal block is the unit of this sweep: 7 whole-block products det^k for k=0..6 give u0_exp running 0,16,...,96, and 13 block quotients det^k for k=-6..6 give -96..96, yet all of them hold alpha_bare_exp at exactly 0. No number of block copies, stacked or inverted, reaches (16, -16).\nlattice_wide: checked and not executed \u2014 no lattice-wide or continuum statement is made or attempted; the note explicitly disclaims exhaustion of every possible future B4 mechanism, and the open-gate note keeps beyond-mean-field link fluctuations, Green-kernel and non-link transport routes alive, so this certificate bounds determinant-only repairs and nothing wider.\n\nCLASS_COUNTS: {'A': 11, 'B': 26, 'C': 6}\nVERDICT: hierarchy B4 determinant-only factor-signature no-go checks pass.\nTOTAL: PASS=43, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060729Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

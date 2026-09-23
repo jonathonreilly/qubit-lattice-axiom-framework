@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_delta0_blocking_single_mode_probe_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_blocking_single_mode_probe_2026_06_11.py",
+ "seed": 43660,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060740Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f2353ff6d1acf6ae95a49a586f1bb641600ba6c391fdd627300f363154c4cc1e",
+ "stdout_tail": "lone' (no 1/u_0) displaces the 16-mode product from alpha_LM^16 by u_0^(-16) = 8.065  (alpha_LM^16/alpha_bare^16 = 8.0651)\n  [PASS][C] F4 basis honesty: decimating one POSITION-basis pair gives factor m (= 1/3 here), NOT sqrt(m^2 + 4 u_0^2); det M = m x det(position Schur complement) still holds exactly \u2014 the single-step factor is basis-dependent, only the full 16-step product is basis-independent  (the '2 u_0 per mode' reading is specific to the taste basis)\n\n--- Terminal class-D fence: external comparators ---\n  (No PDG quantity is needed or consumed by this probe; the per-mode\n   algebra and the normalization residual are internal structure only.)\n  [PASS][D] D1 self-scan: the PDG VEV literal appears ZERO times in this runner's source \u2014 no comparator consumed anywhere\n\n==============================================================================\n Breakdown: A=5 B=3 C=12 D=1 RESIDUAL=3\n TOTAL: PASS=21 FAIL=0\n VERDICT: established (bounded): one taste-mode decimation carries exactly\n   one factor 2 u_0 (per-mode u_0-degree 1, zero induced coupling shift in\n   the taste basis); NOT established: the campaign hypothesis factor alpha_LM\n   per mode \u2014 it would require the per-mode normalization N = alpha_bare/(2 u_0^2)\n   = 1/(8 pi u_0^2), whose 1/(4 pi) VALUE has a landed supplier but whose\n   per-mode attachment and 1/(2 u_0^2) factor do not. DELTA0 stays open;\n   obstruction sharpened, not closed.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

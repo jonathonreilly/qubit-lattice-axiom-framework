@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_2026_06_11.py",
+ "seed": 43662,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060742Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5868ea6f69b0a11acf0383707502f74bffcb5b6434b73812fc9239dacf707c61",
+ "stdout_tail": " proximity.  NUMEROLOGY RISK: no supplier, no mechanism, no claim.\n\n--- Terminal class-D fence: external comparators ---\n  (No PDG quantity is needed or consumed by this probe; all factors and weights\n   are internal structure only.)\n  [PASS][D] H1 self-scan: the PDG VEV literal appears ZERO times in this runner's source \u2014 no comparator consumed anywhere\n\n==============================================================================\n Breakdown: A=11 B=3 C=9 D=1 RESIDUAL=3 OBSERVATION=1\n TOTAL: PASS=24 FAIL=0\n VERDICT: established (bounded): the exact one-link expectation at the fixed\n   E3 saddle bath gives a per-decimation factor 9.68x-10.6x displaced from\n   alpha_s in every declared variant at beta = 6 (the link integral was\n   always exact; the bath is the declared model); at beta = 0 every link-\n   integration constant is an exact rational, so the pi-carrying alpha_s\n   cannot be supplied exactly by beta = 0 link integration at all.  S1\n   STANDALONE is eliminated at its kill criterion; the surviving content\n   REFINES to the composite route S1' = finite-beta link integration x the\n   Green-kernel/Plancherel readout chain (the 4 pi's only landed supplier).\n   NOT claimed: closure, any licensed-surface reproduction, any model-\n   independent statement, or any content for the 1/N_c^2 proximity beyond\n   a numerology-risk-flagged observation.  DELTA0 stays open; the inventory\n   is not modified.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060743Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_2026_06_11.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "task": "R:reta_c3_source_response_spectral_identity_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "reta",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/reta_c3_source_response_spectral_identity_2026_09_02.py",
+ "seed": 44116,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T061516Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=17 FAIL=0",
+   "PASS=3 FAIL=0",
+   "PASS=7 FAIL=0",
+   "PASS=3 FAIL=0",
+   "PASS=1 FAIL=0",
+   "PASS=4 FAIL=0",
+   "PASS=19 FAIL=0",
+   "PASS=15 FAIL=0",
+   "PASS=13 FAIL=0",
+   "PASS=3 FAIL=0",
+   "PASS=85 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ca3e156814ae1cbf34b040ffc1cac0c514592a4af969d171f6b33168f29c7d29",
+ "stdout_tail": "per_element: checked \u2014 C3 projectors, source scale, and flat-character values are exact.\nper_site: checked conditionally \u2014 the finite triplet is not claimed as the physical site carrier.\nper_mode: checked \u2014 singlet and conjugate-doublet Fourier modes are classified exactly.\nper_block: checked \u2014 every C3/K invariant quadratic and projection block is covered.\nlattice_wide: not executed \u2014 no physical lattice action or charged-lepton attachment is supplied.\nN5_SCOPE no-go: only the flat-Z3-character shortcut and free finite action family.\nN5_SCOPE never: no claim against future eta, source/action, or differential-cohomology routes.\nN5_SCOPE impossible: no universal impossibility claim.\nN5_SCOPE forced: only exact finite algebra, character relations, and formula identities.\nN5_SCOPE only: uniqueness is confined to the nonzero K-even singlet-killing projector.\nN5_SCOPE must: closure must meet the registered physical carrier/readout criterion.\nN5_SCOPE cannot: 2/9 cannot be flat holonomy on the order-three generator only.\nCARRIER: PASS=17 FAIL=0\nCHARACTER: PASS=3 FAIL=0\nCLASSIFICATION: PASS=7 FAIL=0\nFOCUSED: PASS=3 FAIL=0\nINPUT_IDENTITY: PASS=1 FAIL=0\nPHASE: PASS=4 FAIL=0\nPUBLICATION: PASS=19 FAIL=0\nRESPONSE: PASS=15 FAIL=0\nSPECTRAL: PASS=13 FAIL=0\nTEXT_COMPARISON: PASS=3 FAIL=0\nTOTAL: PASS=85 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T061517Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

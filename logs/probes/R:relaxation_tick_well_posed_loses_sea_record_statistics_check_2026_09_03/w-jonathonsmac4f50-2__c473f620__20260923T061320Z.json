@@ -1,0 +1,35 @@
+{
+ "task": "R:relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "relaxation",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py",
+ "seed": 44000,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T061320Z",
+ "elapsed_s": 50.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9cc2833ce113561d2f15776c473dde30891a352200194dee08b21524270e1ba2",
+ "stdout_tail": "2, \"difference\": 0.19093219122712046, \"k\": 4, \"lueders_mean\": -4.618802153517011}, {\"MR_mean\": -4.301537450253815, \"difference\": 0.2600855659264347, \"k\": 5, \"lueders_mean\": -4.041451884327381}, {\"MR_mean\": -3.6893112120768623, \"difference\": 0.22520959693910791, \"k\": 6, \"lueders_mean\": -3.4641016151377544}, {\"MR_mean\": -3.146264369941973, \"difference\": 0.2595130239938439, \"k\": 7, \"lueders_mean\": -2.886751345948129}, {\"MR_mean\": -2.690355937288492, \"difference\": 0.38095486052998906, \"k\": 8, \"lueders_mean\": -2.309401076758503}, {\"MR_mean\": -2.133062312708141, \"difference\": 0.4010115051392642, \"k\": 9, \"lueders_mean\": -1.7320508075688767}, {\"MR_mean\": -1.414213562373095, \"difference\": 0.25951302399384346, \"k\": 10, \"lueders_mean\": -1.1547005383792515}, {\"MR_mean\": -0.75, \"difference\": 0.17264973081037416, \"k\": 11, \"lueders_mean\": -0.5773502691896258}, {\"MR_mean\": 0.0, \"difference\": 0.0, \"k\": 12, \"lueders_mean\": 0.0}]\nPASS H1 [numerical, 1e-14] fixed-record reset has complete Kraus normalization and equals Tr(rho)sigma; normalized outcome conditioning is separate\nPASS H2 [exact/numerical] even corner parity holds on all 4096 ambient words; the 128-dimensional face code is a distinct supplied sector, and local Z does not preserve it\nSUMMARY: the stipulated relaxation tick is well posed and memoryless, its state a function of the records alone, and it does not give back the sea's odds: every pattern becomes admissible, the zeros go, the odds depend on the order.\nTOTAL: PASS=29 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T061411Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

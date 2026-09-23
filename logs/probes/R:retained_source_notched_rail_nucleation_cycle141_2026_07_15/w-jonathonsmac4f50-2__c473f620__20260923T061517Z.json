@@ -1,0 +1,31 @@
+{
+ "task": "R:retained_source_notched_rail_nucleation_cycle141_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "retained",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/retained_source_notched_rail_nucleation_cycle141_2026_07_15.py",
+ "seed": 44117,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T061517Z",
+ "elapsed_s": 71.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e85169a502397d6f83276e0e4b6f763723e65eea84e220bf5934977a32b0116",
+ "stdout_tail": "ion has 75 generated records :: 75\nPASS exact factor census :: (260, 499, 1, ())\nPASS factor reaches every declared output :: 75\nPASS factor reaches the first complete recurrent OZ :: (-4, 0, -1)\nPASS all co-enabled factor actions commute :: (296, ())\n\nSTATIC SCREEN AND CAUSAL FIREWALL\nPASS factor compiler has no unexpected target :: ()\nPASS all 48 static wrong warnings are explicit :: 48\nPASS every static warning has a causal contradiction :: (48, 0)\nPASS combined compiler has no unexpected target :: ()\nPASS adapter adds no core wrong-value fingerprint :: ()\nPASS new-output conditions are invariant across core completion :: \nPASS new and core outputs have no nearest-neighbour contact :: ()\n\nEXACT PRODUCT\nPASS product state census :: 19150560\nPASS product edge census :: 148750384\n\nCOVARIANCE AND CORRUPTION\nPASS all 24 proper-cubic factors have the same exact graph :: Counter({(260, 499, 1, 0, 75): 24})\nPASS 917 direct parent corruptions suppress the intended adapter output :: (918, (('guard', (0, 1, -1), None, (((0, 0, 1), 'A_0_1'), ((0, 1, 0), 'T_H3'))),), ())\nPASS the sole survivor is the pre-existing two-parent guard fallback :: (('guard', (0, 1, -1), None, (((0, 0, 1), 'A_0_1'), ((0, 1, 0), 'T_H3'))),)\nPASS no direct parent corruption selects a wrong target value :: ()\n\nACCOUNTING\nCORE_RAW 6968\nRECURRENT_RAW 1320\nADAPTER_RAW 48\nFULL_RAW 8336\nNUCLEATION_OUTPUTS 75\nPRODUCT_STATES 19150560\nPRODUCT_EDGES 148750384\nPASS 24 FAIL 0\nRESULT RETAINED_SOURCE_NOTCHED_RAIL_NUCLEATION\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T061629Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

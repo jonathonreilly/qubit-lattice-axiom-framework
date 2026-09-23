@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_delta0_s2_readout_dressing_leading_order_probe_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_s2_readout_dressing_leading_order_probe_2026_06_11.py",
+ "seed": 43665,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060745Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "25132315beb6db45e1705ac02684813bf799b0cb659a93a645f105e23333ec67",
+ "stdout_tail": "m): unprobed here, declared-open.  The inventory's S2 row is REFINED (leading-order arm eliminated), NOT removed; the inventory itself is not modified.\n  RESIDUAL (declared-open): the DELTA0 magnitude gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: the obstruction is sharpened (the leading-order readout-dressing candidate eliminated), not closed.\n\n==============================================================================\n Breakdown: A=7 B=5 C=6 D=1 RESIDUAL=3\n TOTAL: PASS=19 FAIL=0\n VERDICT: established (bounded, declared models): the undressed kernel\n   reproduces the landed Maradudin 1/(4 pi |r|) normalization on the declared\n   grids (F1), and under the declared resummed-one-loop dressing the\n   per-decimation readout factor is R_S2 = 1 + O(g^2 Pi_1) in every variant\n   at every radius \u2014 a 1-2% shift, an order of magnitude (~9.7x-9.9x) above\n   the required alpha_s per decoupling.  ELIMINATED AT LEADING ORDER (this\n   route): the alpha_s-per-decoupling attachment rule canNOT be leading-order\n   readout-side vacuum-polarization dressing under any declared variant; the\n   inventory's S2 kill criterion fires on its per-threshold-O(1) arm, and S2\n   narrows to genuinely non-perturbative kernel dressing.  NOT claimed:\n   closure, model-independence, removal of S2, or any licensed-surface\n   reproduction.  DELTA0 stays open; obstruction sharpened, not closed.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060747Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

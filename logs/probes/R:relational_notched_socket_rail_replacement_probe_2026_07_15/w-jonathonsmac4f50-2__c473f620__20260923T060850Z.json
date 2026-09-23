@@ -1,0 +1,31 @@
+{
+ "task": "R:relational_notched_socket_rail_replacement_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "relational",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/relational_notched_socket_rail_replacement_probe_2026_07_15.py",
+ "seed": 43730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060850Z",
+ "elapsed_s": 59.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "232c501f161e9c70099b83216daac0fe03a54f3ff6e28bd53b58ec77fdfdc3be",
+ "stdout_tail": "(3, 4, 3), (4, 3, 3), (4, 4, 2), (4, 4, 4), (4, 5, 3), (5, 4, 3)), ('R_A31',)), ((4, 5, 1), ((3, 5, 1), (4, 5, 2)), ((3, 5, 1), (4, 4, 1), (4, 5, 0), (4, 5, 2), (4, 6, 1)), ('BACKSTOP',)), ((4, 5, 1), ((4, 5, 2), (4, 6, 1)), ((3, 5, 1), (4, 4, 1), (4, 5, 0), (4, 5, 2), (4, 6, 1)), ('R_B11',)), ((4, 5, 2), ((4, 5, 3),), ((3, 5, 2), (4, 4, 2), (4, 5, 1), (4, 5, 3), (4, 6, 2), (5, 5, 2)), ('R_A31',)), ((4, 5, 3), ((4, 4, 3), (4, 5, 4)), ((3, 5, 3), (4, 4, 3), (4, 5, 2), (4, 5, 4), (4, 6, 3), (5, 5, 3)), ('T_H2',)), ((4, 5, 3), ((4, 4, 3), (5, 5, 3)), ((3, 5, 3), (4, 4, 3), (4, 5, 2), (4, 5, 4), (4, 6, 3), (5, 5, 3)), ('T_H2',)), ((4, 5, 3), ((4, 5, 2), (5, 5, 3)), ((3, 5, 3), (4, 4, 3), (4, 5, 2), (4, 5, 4), (4, 6, 3), (5, 5, 3)), ('T_H2',)), ((4, 6, 3), ((4, 5, 3),), ((3, 6, 3), (4, 5, 3), (4, 6, 2)), ('R_A31',)))\nCORE_GRAPH 23480 123202 1 (46,) 10 () () 46\nCORE_REPLACEMENT_UNEXPECTED ()\nCORE_REPLACEMENT_WRONG_DELTA 2 (((3, 6, 1), ((3, 5, 1),), ((2, 6, 1), (3, 5, 1), (3, 6, 0), (3, 6, 2), (4, 6, 1)), ('R_B21',)), ((4, 4, 3), ((3, 4, 3), (4, 4, 2)), ((3, 4, 3), (4, 3, 3), (4, 4, 2), (4, 4, 4), (4, 5, 3), (5, 4, 3)), ('OZ',)))\nCORE_REPLACEMENT_GRAPH 73656 430754 1 (69,) 11 () () 69\nCELL_GRAPH {'states': 1096, 'edges': 2701, 'bad_count': 0, 'terminals': ((((8, 2, 1), frozenset({'A_2_1'})),),), 'expected_count': 116, 'ignored': (((8, 2, 1), 'A_2_1'),)}\nCELL_GRAPH_BAD ()\nCELL_COMPILED 117\nCELL_ONLY_UNEXPECTED ()\nCELL_ONLY_WRONG 88\nCELL_UNEXPECTED ()\nCELL_WRONG 88\nCELL_WRONG_DELTA 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060950Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

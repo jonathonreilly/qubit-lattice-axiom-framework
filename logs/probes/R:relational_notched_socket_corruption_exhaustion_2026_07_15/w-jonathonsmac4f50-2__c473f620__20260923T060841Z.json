@@ -1,0 +1,31 @@
+{
+ "task": "R:relational_notched_socket_corruption_exhaustion_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "relational",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/relational_notched_socket_corruption_exhaustion_2026_07_15.py",
+ "seed": 43721,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060841Z",
+ "elapsed_s": 8.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5df6cb6920ab6faae49d7524c4c9fd67e3407a6155e93c23480c4ae074c0d091",
+ "stdout_tail": "DIRECT_ATTEMPTS 2142\nDIRECT_FALSE_POSITIVE_FAILURES 0 ()\nDIRECT_DIAGNOSTIC_ALTERNATES 6 ((0, 'helper', 'root', 'R_C11', frozenset({'GU'})), (0, 'helper', 'b_guard', 'R_B23', frozenset({'B0'})), (0, 'oz', 'h1', 'A_1_0', frozenset({'A_0_0'})), (1, 'helper', 'root', 'R_C11', frozenset({'GU'})), (1, 'helper', 'b_guard', 'R_B23', frozenset({'B0'})), (1, 'oz', 'h1', 'A_1_0', frozenset({'A_0_0'})))\nRECURRENCE_ATTEMPTS 153\nRECURRENCE_FAILURES 0 ()\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060850Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:audit_unlock_keystone_map_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_unlock_keystone_map_2026_06_06.py",
+ "seed": 44247,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T061727Z",
+ "elapsed_s": 2.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=9 FAIL=3",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7fabee5eeeaa106404eaaf22fec632a4bf6d62973464dd11c14463d289377daa",
+ "stdout_tail": "locked backlog\nPASS: the top ready keystones are critical-criticality (foundational)\n--- D: dependency cycles (Tarjan SCCs) -- KEYSTONE cycles block the top keystones ---\n  cyclic SCCs (mutual-dependency clusters; NONE become 'ready' until broken)=11\n    [KEYSTONE, max-fanout  599, size 2] quark_cp_carrier_slot_minimality <-> quark_cp_carrier_completion_note\n    [KEYSTONE, max-fanout  559, size 105] strong_cp_gauge_theta_not_forced <-> strong_cp_theta_zero_audited_sco <-> newphysics_np_strong_cp_theta_no...\n    [minor, max-fanout   27, size 2] area_law_native_car_semantics_ti <-> area_law_primitive_car_edge_iden\n    [minor, max-fanout   15, size 2] hubble_lane5_cosmic_history_rati <-> hubble_lane5_eta_retirement_gate\n    [minor, max-fanout    9, size 2] route_a_radius_one_parity_even_c <-> route_a_fixed_type_atlas_correct\n    [minor, max-fanout    2, size 2] staggered_gbare_trace_surface_br <-> gbare_root_su2_scale_transport_b\nPASS: cyclic SCCs exist (mutual-dep clusters that never become 'ready' until broken)\nPASS: at least one KEYSTONE cycle exists (a top keystone trapped in a cycle => break-first)\nFAIL: the highest-fanout keystones are TRAPPED in cycles (RP / observable-principle / staggered) -> breaking these cycles is the PREREQUISITE for the keystone unlock\n--- D2: gated sources (secondary) ---\n  gated/dropped sources (excluded from audit; review for ungating)=1134\nPASS: gated sources exist and are a (secondary) unlock target (review for ungating)\n\nTOTAL: PASS=9 FAIL=3\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T061729Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=9 FAIL=3' vs cache 'TOTAL: PASS=10 FAIL=2'"
+  ]
+ }
+}

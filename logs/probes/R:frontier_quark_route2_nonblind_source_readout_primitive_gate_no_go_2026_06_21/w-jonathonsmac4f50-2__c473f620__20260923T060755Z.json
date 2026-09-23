@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.py",
+ "seed": 43675,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060755Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=53, FAIL=24",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9ae51aafe584e1d1a191b7a806b66bfe9309e76a829ffe3d6f5f1937ec4d6adc",
+ "stdout_tail": "he arithmetic resolves exactly at every sample; the per-candidate nonblindness column asking whether a surface distinguishes E-center from E-shell is by contrast a declared judgement per row, and is certified only at that strength here.\nper_mode: the E and T1 rows stay distinct at every step -- q_T=5/6 is granted, s_TE=alpha_T/alpha_E=-2 carries the cross-channel scale, and c_TE=s_TE*q_T/q_E is a genuine E-against-T ratio rather than a single-channel number; separately the color channel count gives F_adj(N_c=3)=8/9 and the runner does compute that -F_adj equals the target c_TE=-8/9, while still classifying that coincidence as an untyped bridge and not a derivation.\nper_block: what gets resolved at block granularity is inventory and nothing else -- 8 candidate families are swept against six gate conditions with one named defect string apiece and none clears, and ten named source files are swept for 29 required markers; both sweeps resolve presence and counts, and no field amplitude is evaluated for any block.\nlattice_wide: checked and not executed, and executing it would breach this runner's own premise list -- no lattice, volume or limit appears anywhere in the file, the one candidate carrying volume information is the measured calibration which is admitted as comparator only with exact infinite-volume identification left open, and A_min expressly forbids treating that finite-box calibration as an infinite-volume theorem.\n\nTOTAL: PASS=53, FAIL=24\nVERDICT: gate checks failed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060756Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=53, FAIL=24' vs cache 'TOTAL: PASS=77, FAIL=0'"
+  ]
+ }
+}

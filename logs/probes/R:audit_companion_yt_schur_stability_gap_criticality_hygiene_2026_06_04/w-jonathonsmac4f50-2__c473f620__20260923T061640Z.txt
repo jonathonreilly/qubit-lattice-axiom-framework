@@ -1,0 +1,55 @@
+========================================================================
+YT SCHUR STABILITY GAP — CRITICALITY-BUMP HYGIENE COMPANION
+========================================================================
+Companion source note:
+  docs/YT_SCHUR_STABILITY_GAP_CRITICALITY_BUMP_HYGIENE_COMPANION_NOTE_2026-06-04.md
+Parent ledger row: yt_schur_stability_gap_note
+Parent note path : docs/YT_SCHUR_STABILITY_GAP_NOTE.md
+Parent runner    : scripts/frontier_yt_schur_stability_gap.py
+Ledger snapshot  : docs/audit/data/audit_ledger.json
+Repo root        : /Users/jonBridger/.probe-workers/probes-view/slot-2
+
+
+========================================================================
+Block H1: parent-note hygiene (presence + hash invariance)
+========================================================================
+  PASS H1.1 parent note exists at canonical path :: path=/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/YT_SCHUR_STABILITY_GAP_NOTE.md
+  PASS H1.2 parent note content sha256 matches expected canonical hash :: observed=8119a5c437c4a0c5ddcd4be4c786a34cec2b60ff39aded95df915ed3ad7e83fd, expected=8119a5c437c4a0c5ddcd4be4c786a34cec2b60ff39aded95df915ed3ad7e83fd
+
+========================================================================
+Block H2: parent-runner hygiene (presence + hash invariance + importability)
+========================================================================
+  PASS H2.1 parent runner exists at canonical path :: path=/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_yt_schur_stability_gap.py
+  PASS H2.2 parent runner content sha256 matches expected canonical hash :: observed=b9688ba88dd8dbb7297241ea3163cbd18caeec6f90e99041063ae6f7d7213662, expected=b9688ba88dd8dbb7297241ea3163cbd18caeec6f90e99041063ae6f7d7213662
+  PASS H2.3 parent runner is compile-only importable :: py_compile.compile succeeded
+
+========================================================================
+Block H3: parent-runner substance reproduction (exit code + tally + PASS lines)
+========================================================================
+  exec: /usr/local/bin/python3 /Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_yt_schur_stability_gap.py
+  PASS H3.1 parent runner exits with status 0 :: returncode=0; stderr_tail=''
+  PASS H3.2 parent runner stdout reports `FINAL TALLY: 4 PASS / 0 FAIL` :: observed FINAL TALLY: 4 PASS / 0 FAIL
+  PASS H3.3 parent runner stdout reports PASS line: open stability basin :: fragment='PASS: the admissible Schur class occupies an open stability basin'
+  PASS H3.4 parent runner stdout reports PASS line: first escape beyond unit branch budget :: fragment='PASS: the first escape from the Schur normal-form class occurs beyond the unit branch budget radius'
+  PASS H3.5 parent runner stdout reports PASS line: in-class well-separated :: fragment='PASS: in-class operators remain well separated from the first normal-form escape'
+  PASS H3.6 parent runner stdout reports PASS line: nearest escape is real response-class failure :: fragment='PASS: the nearest escape is marked by a real response-class failure'
+
+========================================================================
+Block H4: ledger-state criticality-bump invariants (post-soft-reset shape)
+========================================================================
+  FAIL H4.1 ledger row exists for `yt_schur_stability_gap_note` :: ledger=docs/audit/data/audit_ledger.json
+  FAIL H4.2 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.3 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.4 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.5 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.6 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.7 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.8 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.9 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.10 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.11 ledger-state invariant :: ledger row missing; cannot evaluate
+  FAIL H4.12 ledger-state invariant :: ledger row missing; cannot evaluate
+
+------------------------------------------------------------------------
+FINAL TALLY: 11 PASS / 12 FAIL  (elapsed 37.15 s)
+------------------------------------------------------------------------

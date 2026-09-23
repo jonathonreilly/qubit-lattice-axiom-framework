@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_delta0_b4_attachment_observable_enumeration_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_b4_attachment_observable_enumeration_2026_06_11.py",
+ "seed": 43650,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060730Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b74990da71a7f164e66caeb40a6d32f1f54d19b237c18a7d3ea62212458c10f7",
+ "stdout_tail": "-K8, and the non-perturbative arms of S2/S3, are untouched).  The route inventory is not modified.\n\n--- Terminal class-D fence: external comparators ---\n  (No PDG quantity is needed or consumed by this enumeration; every comparison\n   target is framework-internal: alpha_s/alpha_LM/alpha_bare from the B1+I2+I3 chain.)\n  [PASS][D] Z1 self-scan: the PDG VEV literal appears ZERO times in this runner's source \u2014 no comparator consumed anywhere\n\n==============================================================================\n Breakdown: A=21 B=4 C=2 D=1 RESIDUAL=2 OBSERVATION=4\n TOTAL: PASS=28 FAIL=0\n VERDICT: established (bounded; exact where exact, declared grids elsewhere):\n   the B4-attachment observable-identification enumeration is COMPLETE for the\n   declared class K1-K8 (91 candidate rows, every normalization declared).\n   The ONLY match-window entries are the two definitional K2 identity cells \u2014\n   the supplier chain alpha_s = (1/(4 pi)) u_0^-2 itself in grid coordinates,\n   zero mechanism content.  NO candidate readout lands in [0.99, 1.01] x\n   alpha_s with a mechanism: block10b's KILL CRITERION FIRES for the\n   enumerated class.  The identification theorem gains the constraint set\n   'not K1-K8'; factor-2 entries are numerology-risk-flagged observations\n   only; the taste-region arm of S1' survives only outside the enumerated\n   readout class.  DELTA0 stays open \u2014 an elimination, not a closure.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060730Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

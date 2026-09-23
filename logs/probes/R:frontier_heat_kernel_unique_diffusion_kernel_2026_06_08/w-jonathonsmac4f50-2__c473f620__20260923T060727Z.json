@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_heat_kernel_unique_diffusion_kernel_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_heat_kernel_unique_diffusion_kernel_2026_06_08.py",
+ "seed": 43647,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060727Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b905bfa169fddf924f14a60791db845add1e2794b009445ff959f16e67c596d8",
+ "stdout_tail": "mong candidates (Parts 1-5): only HK is a diffusion transition kernel.\n   OPEN (record_classical_semigroup_boundary_2026-06-06, RETAINED): Record alone\n     does NOT supply a continuous Markov generator/rate law.  That emergent-time\n     gauge-link evolution IS this Delta-diffusion is the load-bearing open input.\n   => This runner LOCATES the action-selection residual (supply the gauge-link\n      diffusion); it does NOT claim HK is the framework's realized action.\n  [PASS] residual is well-located: generator retained-canonical, dynamics-realization open  (selection reduces to deriving the emergent-time gauge-link diffusion)\n==============================================================================\nTOTAL: PASS=17 FAIL=0\nrunner_check_breakdown = {A: 17, B: 0, C: 0, D: 0, total_pass: 17}\n==============================================================================\nSCOPE: Among {Wilson, HK, Manton}, the heat-kernel is the UNIQUE continuous-time\n  Markov diffusion transition kernel on the gauge group (unique convolution\n  semigroup / heat-equation solution), generator = canonical group Laplacian from\n  the retained Tr-form.  This makes the no-go's Step-3b Brownian criterion EXACT\n  and DISTINGUISHING.  It does NOT claim HK is the framework's action: by the\n  retained record_classical_semigroup_boundary, Record alone does not supply the\n  Markov generator/rate law, so 'emergent time drives THIS diffusion' is the named\n  OPEN residual.  No new axiom/import; no continuum claim.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060728Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

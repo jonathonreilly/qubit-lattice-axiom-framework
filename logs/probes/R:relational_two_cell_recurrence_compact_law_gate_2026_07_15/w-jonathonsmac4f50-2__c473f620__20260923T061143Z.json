@@ -1,0 +1,31 @@
+{
+ "task": "R:relational_two_cell_recurrence_compact_law_gate_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "relational",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/relational_two_cell_recurrence_compact_law_gate_2026_07_15.py",
+ "seed": 43903,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T061143Z",
+ "elapsed_s": 97.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "72417880523fcec0c16cb6fed3e87208f953c738aa816173c9114b6d0395141d",
+ "stdout_tail": " screen has no unexpected target through five periods :: [(1, 58, 91, 32, 0), (2, 116, 205, 88, 0), (3, 174, 319, 144, 0), (4, 232, 433, 200, 0), (5, 290, 547, 256, 0)]\nPASS static condition accounting is affine :: ((1, 91), (2, 205), (3, 319), (4, 433), (5, 547))\nPASS wrong-valued warning accounting is affine :: ((1, 32), (2, 88), (3, 144), (4, 200), (5, 256))\nPASS wrong-warning boundary/interior split :: (41, 56, 56, 47)\nPASS interior warning corpus is translation invariant :: 56\n\nASYNCHRONOUS HISTORY AND CONFLUENCE\nPASS four-period exhaustive graph is clean :: ()\nPASS four-period exhaustive census :: (18856, 73037, 1)\nPASS successive cells genuinely interleave :: 18027\nPASS mixed-cell frontiers occur :: 18027\nPASS every static wrong warning has a causal contradiction :: (200, 0)\nPASS three-period independent graph is clean :: \nPASS every co-enabled action pair commutes :: (17712, 0)\nPASS cross-period action pairs commute :: 13224\n\nCOVARIANCE AND CORRUPTION\nPASS all 24 proper-cubic coimages have the same exact graph :: Counter({(1096, 2701, 0, 1): 24})\nPASS all direct parent perturbations suppress the intended value :: (2142, ())\nPASS all seed-q perturbations suppress the descendant q :: (153, ())\n\nACCOUNTING\nCANONICAL_ROWS 58\nRAW_ROWS 1320\nROLE_ALPHABET_USED 58 OF 153\nPERIOD_RECORDS 58 FORMULA 58*N\nSTATIC_CONDITIONS 114*N-23\nSTATIC_WRONG_WARNINGS 56*N-24 ALL_CAUSALLY_DISCHARGED_AT_N=4\nPASS 33 FAIL 0\nFAILED ()\nRESULT RELATIONAL_TWO_CELL_RECURRENCE_AND_COMPACT_LAW_GATE_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T061320Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

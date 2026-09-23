@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_gravity_sign_tracks_append_only_arrow_orientation_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_gravity_sign_tracks_append_only_arrow_orientation_2026_06_18.py",
+ "seed": 43645,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060725Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "004a508c555b7fef53119284dfa71153378e1ee05158bc5102b4efab078e294b",
+ "stdout_tail": " & antikink carry OPPOSITE chirality; NET label = 0 (the arrow selects no gauge-invariant observable) ==\n   arrow s=+1: near-zero (chir,COM)=[(-1.0, 10.0), (1.0, 30.5)]  NET=-0.00\n   arrow s=-1: near-zero (chir,COM)=[(-1.0, 30.0), (1.0, 10.5)]  NET=+0.00\n[PASS] a domain wall binds a Jackiw-Rebbi chiral mode (|chirality| = 1 at each defect)\n[PASS] kink and antikink carry OPPOSITE chirality (chi(q1) = -chi(q3) at fixed arrow)\n[PASS] the NET near-zero chirality = 0 for BOTH arrow directions (a kink+antikink pair carries no net orientation) => the arrow selects NO gauge-invariant observable :: NET(+)=-0.00, NET(-)=+0.00\n[PASS] injecting s merely RELABELS which defect is the kink: chi(q1) flips with s, and the identical flip is produced at FIXED s by reading q3 instead of q1 :: chi_q1(+)=-1.0, chi_q1(-)=+1.0, chi_q3(+)=+1.0\n\n== D1: uniformly dimerized ring (parity-odd, no wall) binds NO mid-gap mode ==\n[PASS] uniformly dimerized ring is parity-odd (Gamma5 H Gamma5 = -H) and gapped :: min|E| = 1.000\n[PASS] => NO mid-gap mode: a domain WALL is required to bind a chiral mode (the standard Jackiw-Rebbi dichotomy; this isolates 'you need a wall', not selection) :: near-zero modes = 0\n\n== R1: the two arrows are isospectral & net-zero => the arrow is the admitted residual (not derived) ==\n[PASS] the two arrow directions are ISOSPECTRAL (no energetic/spectral datum selects s) => the selection IS the admitted arrow / Past-Hypothesis residual, not a derivation\n\n==== 9 passed, 0 failed ====\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060725Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gravity_sign_tracks_append_only_arrow_orientation_2026_06_18.txt against the .txt beside this log"
+  ]
+ }
+}

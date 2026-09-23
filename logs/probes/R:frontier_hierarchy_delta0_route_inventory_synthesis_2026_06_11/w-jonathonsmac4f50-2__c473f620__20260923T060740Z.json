@@ -1,0 +1,41 @@
+{
+ "task": "R:frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11.py",
+ "seed": 43660,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060740Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=21\\s+FAIL=0",
+   "PASS=19\\s+FAIL=0",
+   "PASS=20\\s+FAIL=0",
+   "PASS=5\\s+FAIL=0",
+   "PASS=27 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0fb92852aac8b8f59f3860e5e8f125459cdc20b8978be4de4bdc561ac0b05d72",
+ "stdout_tail": "atus authority, source-note proposal, bounded_theorem scope fence, what-this-note-does-NOT-claim, non-modification + downstream-refinement rule  (missing = [])\n  [PASS][D] F3 self-scan: the PDG VEV literal appears ZERO times in this runner's source \u2014 no comparator consumed anywhere\n\n==============================================================================\n Breakdown: A=11 B=13 C=2 D=1 RESIDUAL=3\n TOTAL: PASS=27 FAIL=0\n VERDICT: established (bounded): over the declared ratio\n   normalization B4 closure is exactly one landed transport rule\n   away \u2014 one factor alpha_s = alpha_bare/u_0^2 = 0.1033038 per\n   taste decoupling (u_0^16 alpha_s^16 = alpha_LM^16 exactly) \u2014\n   and five routes to that rule are ELIMINATED on their cited\n   surfaces (E1 frozen-link block algebra, E2 bare relabeling,\n   E3 mean-field link feedback, E4 per-step 1-loop beta, E5\n   coupling-independent-c dim-trans rewrite), with all five\n   eliminating runners re-verified.  NOT established: any\n   surviving route (S1 strong-coupling one-link Haar \u2014 leading\n   order already symmetric-phase-constrained by the NJL row; S2\n   Green-kernel readout dressing; S3 direct non-link transport)\n   \u2014 all three are declared-open residuals with kill criteria.\n   Ceiling: any closure is retained_bounded over {axioms +\n   approved primitives + declared conventions} with a substrate-\n   imposed exponent (O1-O3), never regulator-independent.\n   DELTA0 stays open; this synthesis fixes the decomposition and\n   closes nothing.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060742Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11.txt against the .txt beside this log"
+  ]
+ }
+}

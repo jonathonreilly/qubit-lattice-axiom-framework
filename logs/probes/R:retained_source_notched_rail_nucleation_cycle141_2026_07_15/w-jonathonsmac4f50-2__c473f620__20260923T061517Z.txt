@@ -1,0 +1,44 @@
+SOURCE-CONDITIONED ROWS
+PASS lower row has the exact three independent source parents :: (((0, 0, 1), 'A_0_2'), ((0, 1, 0), 'W1'), ((1, 0, 0), 'W3'))
+PASS guard row absorbs the exact retained W4 neighbour :: (((0, 0, 1), 'A_0_1'), ((0, 1, 0), 'T_H3'), ((1, 0, 0), 'W4'))
+PASS each adapter row has 24 proper-cubic images :: 
+PASS adapter signatures are new to the replacement grammar :: 
+PASS full 8336-row raw union is single-valued :: 8336
+
+FACTOR GRAPH
+PASS actual source contributes no output site :: 
+PASS nucleation has 75 generated records :: 75
+PASS exact factor census :: (260, 499, 1, ())
+PASS factor reaches every declared output :: 75
+PASS factor reaches the first complete recurrent OZ :: (-4, 0, -1)
+PASS all co-enabled factor actions commute :: (296, ())
+
+STATIC SCREEN AND CAUSAL FIREWALL
+PASS factor compiler has no unexpected target :: ()
+PASS all 48 static wrong warnings are explicit :: 48
+PASS every static warning has a causal contradiction :: (48, 0)
+PASS combined compiler has no unexpected target :: ()
+PASS adapter adds no core wrong-value fingerprint :: ()
+PASS new-output conditions are invariant across core completion :: 
+PASS new and core outputs have no nearest-neighbour contact :: ()
+
+EXACT PRODUCT
+PASS product state census :: 19150560
+PASS product edge census :: 148750384
+
+COVARIANCE AND CORRUPTION
+PASS all 24 proper-cubic factors have the same exact graph :: Counter({(260, 499, 1, 0, 75): 24})
+PASS 917 direct parent corruptions suppress the intended adapter output :: (918, (('guard', (0, 1, -1), None, (((0, 0, 1), 'A_0_1'), ((0, 1, 0), 'T_H3'))),), ())
+PASS the sole survivor is the pre-existing two-parent guard fallback :: (('guard', (0, 1, -1), None, (((0, 0, 1), 'A_0_1'), ((0, 1, 0), 'T_H3'))),)
+PASS no direct parent corruption selects a wrong target value :: ()
+
+ACCOUNTING
+CORE_RAW 6968
+RECURRENT_RAW 1320
+ADAPTER_RAW 48
+FULL_RAW 8336
+NUCLEATION_OUTPUTS 75
+PRODUCT_STATES 19150560
+PRODUCT_EDGES 148750384
+PASS 24 FAIL 0
+RESULT RETAINED_SOURCE_NOTCHED_RAIL_NUCLEATION

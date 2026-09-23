@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_harmonic_ladder_weight_law_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py",
+ "seed": 43646,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060726Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "781606a4043bafbbfcceec6590631f6082859495b88df34e0c791a9f9d9745fc",
+ "stdout_tail": "103212100531\n   law:      K3:0.366421317544, K4:0.816208843998, K5:0.225421210704, K6:0.0103212100531\n  [PASS] S3 measured full nonfundamental tail T_ge2 table is frozen  (K3:0.919517036237, K4:0.855947795669, K5:0.461324082129, K6:0.0414639470671)\n  [PASS] S3 corrected law reproduces the full nonfundamental tail T_ge2  (K3:0.919517036237, K4:0.855947795669, K5:0.461324082129, K6:0.0414639470671)\n  [PASS] S3 full T_ge2 order is the frozen refutation of the depth-order claim  (order=(6, 5, 4, 3))\n  [PASS] S3 measured depth tail T_ge3 table is frozen  (K3:0.366421317544, K4:0.816208843998, K5:0.225421210704, K6:0.0103212100531)\n  [PASS] S3 corrected law reproduces the depth tail T_ge3  (K3:0.366421317544, K4:0.816208843998, K5:0.225421210704, K6:0.0103212100531)\n  [PASS] S3 T_ge3 ordering reproduces the landed depth order K6,K5,K3,K4  (order=(6, 5, 3, 4))\n==============================================================================\nTOTAL: PASS=21 FAIL=0\n==============================================================================\nSCOPE: exact finite L=3 realized states only.\nFINDING: the single-carrier/single-sideband phase-modulation law is\n  refuted by the measured rho_12 table.  The weights are reproduced by\n  the finite Laurent determinant corrected law\n  Arg(F(e^{i(theta+delta)})/F(e^{i theta})) with principal-branch wrap.\n  The full k>=2 tail does not reproduce the depth order; after separating\n  the nonzero k=2 sideband, the k>=3 tail has the landed order K6,K5,K3,K4.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060727Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_harmonic_ladder_weight_law_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

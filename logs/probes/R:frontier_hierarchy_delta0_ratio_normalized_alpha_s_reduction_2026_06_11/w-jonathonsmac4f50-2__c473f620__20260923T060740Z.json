@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_delta0_ratio_normalized_alpha_s_reduction_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_ratio_normalized_alpha_s_reduction_2026_06_11.py",
+ "seed": 43660,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060740Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dc1877fb41fae959f2e3cadb8c1c09c9f8ac349f678176a7cb97a89ffa6ba731",
+ "stdout_tail": "t)  (displacement x 0.0153738)\n  [PASS][A] F3 consistency with the landed block01 probe: dropping the ratio normalization reproduces block01's per-mode constant N = alpha_LM/(2 u_0) = 1/(8 pi u_0^2) = 0.0516519 = alpha_s/2 \u2014 the reduction changes the bookkeeping, not the landed numbers  (N = 0.0516519081)\n\n--- Terminal class-D fence: external comparators ---\n  (No PDG quantity is needed or consumed by this reduction; the ratio\n   algebra and the supplier ledger are internal structure only.)\n  [PASS][D] G1 self-scan: the PDG VEV literal appears ZERO times in this runner's source \u2014 no comparator consumed anywhere\n\n==============================================================================\n Breakdown: A=7 B=6 C=5 D=1 RESIDUAL=2\n TOTAL: PASS=19 FAIL=0\n VERDICT: established (bounded): over the DECLARED ratio normalization the\n   per-mode decimation factor is u_0 exactly (the bare '2' cancels) and the\n   remaining per-mode gap is exactly alpha_s = alpha_bare/u_0^2 = 0.1033038;\n   the product identity u_0^16 alpha_s^16 = alpha_LM^16 holds exactly, so\n   DELTA0 closure reduces to ONE unsupplied transport rule: one dressed\n   two-link gauge coupling alpha_s per taste threshold.  NOT established:\n   the attachment rule itself; the ratio normalization is a declared choice\n   with a cited precedent, not a derivation.  DELTA0 stays open; obstruction\n   reduced from two unsupplied factors to one, not closed.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

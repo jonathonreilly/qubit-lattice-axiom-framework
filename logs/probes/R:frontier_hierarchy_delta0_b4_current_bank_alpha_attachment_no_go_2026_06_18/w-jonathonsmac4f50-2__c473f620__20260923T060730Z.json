@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_hierarchy_delta0_b4_current_bank_alpha_attachment_no_go_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_b4_current_bank_alpha_attachment_no_go_2026_06_18.py",
+ "seed": 43650,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060730Z",
+ "elapsed_s": 9.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=51, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f7b178dafc41f8f91cff675c9889e028bbb1d411b7a2ea9cf5aeb94081320e34",
+ "stdout_tail": "ed objects some of them summarise (plaquette action costs, Brillouin-zone log-determinant shares) enter as imported declarations from the enumeration source rather than as computations performed here.\nper_mode: checked \u2014 the taste- and mode-resolved families are present and are individually cleared: K6 equal-share mode-sum ratios (5 rows), K8 per-taste BZ log-det shares (4 rows) all carry alpha_exp = 0, so no per-taste or per-mode readout supplies even a single factor of alpha_s = (1, -2); the sixteen-taste target (16, -32) would need one such factor per decoupling, sixteen in all.\nper_block: checked \u2014 the bank is partitioned into 9 named blocks spanning K1-K8, and the closure sampling forms products and quotients over the 7 genuine readout blocks with each exponent ranging over -3..3; the entire sampled family collapses to 1 distinct alpha-signature, alpha_exp = 0, so neither alpha_s nor alpha_s^16 is reachable by any combination of blocks in the readout half of the bank.\nlattice_wide: checked and not executed \u2014 no lattice-wide or continuum object is constructed; the note narrows itself explicitly to the current K1-K8 bank, states it is not a global B4 no-go, and the parent gate keeps outside-K1-K8 routes and beyond-mean-field link fluctuations open, so a lattice-wide attachment statement is outside what this bank can decide.\n\nCLASS_COUNTS: {'A': 6, 'B': 8, 'C': 27, 'D': 10}\nVERDICT: hierarchy DELTA0 B4 current-bank alpha-attachment no-go checks pass.\nTOTAL: PASS=51, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060739Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

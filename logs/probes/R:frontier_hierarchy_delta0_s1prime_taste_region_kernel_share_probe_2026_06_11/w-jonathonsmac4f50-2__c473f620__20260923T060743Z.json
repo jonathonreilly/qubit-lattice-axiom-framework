@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_delta0_s1prime_taste_region_kernel_share_probe_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_s1prime_taste_region_kernel_share_probe_2026_06_11.py",
+ "seed": 43663,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060743Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b22493cbf79a4174b162d0b3b93fc52635a524d35e803da544a1ff3f98e98bc5",
+ "stdout_tail": "s OPEN: this probe is a REFORMULATION-grade advance (values supplied, attachment not), not a closure; the inventory is not modified.\n\n==============================================================================\n Breakdown: A=14 B=5 C=1 D=1 RESIDUAL=3 OBSERVATION=1\n TOTAL: PASS=21 FAIL=0\n VERDICT: established (bounded): the taste partition of the BZ is exact and\n   every taste carries the exact RATIONAL share 1/2^d of every regulated mode\n   sum (equal-share lemma, exact; verified to 1e-11) \u2014 NO 4 pi lives in\n   per-taste shares.  The 4 pi lives exactly where the kernel chain put it:\n   each taste's corner-localized IR kernel subtraction carries m/(4 pi)\n   per unit mass (d = 3; two estimators, < 0.1% achieved), i.e. the per-taste\n   IR kernel slope IS alpha_bare = 1/(4 pi) at g_bare = 1 \u2014 an exact match of\n   values BY CONSTRUCTION (same 4 pi, the d = 3 angular measure), now with a\n   per-taste index; the d = 4 reading instead carries (m^2/(16 pi^2)) ln(1/m^2)\n   \u2014 no per-unit-mass 4 pi: the clean form is d = 3-specific.  The open B4\n   content is hereby its sharpest form: ONLY the observable identification\n   (which readout attaches [1/(4 pi)] x [u_0^-2] multiplicatively per\n   decoupling) remains; every value in that chain is supplied.  NOT claimed:\n   closure, the attachment rule, any new license, or any PDG comparison.\n   DELTA0 stays open; obstruction reformulated and sharpened, not closed.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060745Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

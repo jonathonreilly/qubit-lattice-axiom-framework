@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_delta0_attachment_mean_field_feedback_probe_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_attachment_mean_field_feedback_probe_2026_06_11.py",
+ "seed": 43649,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060729Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f85d1d94c6a76c6a6b71cedad3688737b94406e7537250d2a690776b7aa22f3",
+ "stdout_tail": " (declared-open): the DELTA0 magnitude gate (HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) remains OPEN: the obstruction is sharpened (one named candidate route eliminated), not closed.\n\n--- Terminal class-D fence: external comparators ---\n  (No PDG quantity is needed or consumed by this probe; the declared-model\n   feedback factors and the displacement are internal structure only.)\n  [PASS][D] G1 self-scan: the PDG VEV literal appears ZERO times in this runner's source \u2014 no comparator consumed anywhere\n\n==============================================================================\n Breakdown: A=9 B=3 C=7 D=1 RESIDUAL=3\n TOTAL: PASS=20 FAIL=0\n VERDICT: established (bounded, declared models): the induced action of one\n   decimated taste mode is exactly -ln(2u) per color as a function of the\n   link dressing, and feeding it into the mean-field self-consistency shifts\n   the saddle by an O(1)-with-small-deviation factor R close to 1 in every\n   declared variant \u2014 an order of magnitude (9.7x-10.5x) above the required\n   alpha_s per decoupling.  REFUTED (this route): the alpha_s-per-decoupling attachment\n   rule canNOT be mean-field link feedback under any declared variant or\n   sharing convention.  NOT claimed: closure, any licensed-surface\n   reproduction, or any model-independent statement.  DELTA0 stays open;\n   obstruction sharpened (one candidate route eliminated), not closed.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060730Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,5 @@
+CLEAN_BASELINE {'Fourier normalization': True, 'log derivative distinguished': True, 'Hodge order on x': True}
+PASS Fourier normalization: {'Fourier normalization': False, 'log derivative distinguished': True, 'Hodge order on x': True}; source_sha256=cc906d4541b4adfcc85e4821e2b7a22394046685473aa32c5a49c9bf55ca88c2
+PASS log derivative distinguished: {'Fourier normalization': True, 'log derivative distinguished': False, 'Hodge order on x': True}; source_sha256=1890e3ed0ebae0c2fd5782db3734f7d73b4a46d75afb32b1fd3c0af9ac5263b5
+PASS Hodge order on x: {'Fourier normalization': True, 'log derivative distinguished': True, 'Hodge order on x': False}; source_sha256=037d9f80d4280b1b6dab5af79f12f583f6b6212fa0952b494c085cac87b02715
+TOTAL: PASS=4 FAIL=0

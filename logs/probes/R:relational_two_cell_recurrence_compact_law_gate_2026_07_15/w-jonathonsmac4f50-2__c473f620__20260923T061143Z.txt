@@ -1,0 +1,53 @@
+GRAMMAR
+PASS 58 fixed canonical rows :: 58
+PASS 1320 proper-cubic raw rows :: 1320
+PASS raw table is single-valued :: 
+PASS one canonical output role per row :: 58
+PASS closed 153-role alphabet :: 
+PASS strict nearest-neighbour signatures :: 
+
+RECURRENCE
+PASS period block has no output overlap :: ()
+PASS period block has no output overlap :: ()
+PASS period block has no output overlap :: ()
+PASS period block has no output overlap :: ()
+PASS period block has no output overlap :: ()
+PASS five periods are exact translations :: (290, 290)
+PASS 58 records per period :: 
+PASS one socket per period :: 5
+PASS socket coordinates recur by period translation :: 
+PASS all five sockets have identical oriented signatures :: 
+PASS OZ socket exactly matches Cycle-129 canonical launch :: (((-1, 0, 0), 'H1'), ((0, -1, 0), 'R_B01'))
+
+STATIC SCREEN AND CAUSAL FIREWALL
+PASS static screen has no unexpected target through five periods :: [(1, 58, 91, 32, 0), (2, 116, 205, 88, 0), (3, 174, 319, 144, 0), (4, 232, 433, 200, 0), (5, 290, 547, 256, 0)]
+PASS static condition accounting is affine :: ((1, 91), (2, 205), (3, 319), (4, 433), (5, 547))
+PASS wrong-valued warning accounting is affine :: ((1, 32), (2, 88), (3, 144), (4, 200), (5, 256))
+PASS wrong-warning boundary/interior split :: (41, 56, 56, 47)
+PASS interior warning corpus is translation invariant :: 56
+
+ASYNCHRONOUS HISTORY AND CONFLUENCE
+PASS four-period exhaustive graph is clean :: ()
+PASS four-period exhaustive census :: (18856, 73037, 1)
+PASS successive cells genuinely interleave :: 18027
+PASS mixed-cell frontiers occur :: 18027
+PASS every static wrong warning has a causal contradiction :: (200, 0)
+PASS three-period independent graph is clean :: 
+PASS every co-enabled action pair commutes :: (17712, 0)
+PASS cross-period action pairs commute :: 13224
+
+COVARIANCE AND CORRUPTION
+PASS all 24 proper-cubic coimages have the same exact graph :: Counter({(1096, 2701, 0, 1): 24})
+PASS all direct parent perturbations suppress the intended value :: (2142, ())
+PASS all seed-q perturbations suppress the descendant q :: (153, ())
+
+ACCOUNTING
+CANONICAL_ROWS 58
+RAW_ROWS 1320
+ROLE_ALPHABET_USED 58 OF 153
+PERIOD_RECORDS 58 FORMULA 58*N
+STATIC_CONDITIONS 114*N-23
+STATIC_WRONG_WARNINGS 56*N-24 ALL_CAUSALLY_DISCHARGED_AT_N=4
+PASS 33 FAIL 0
+FAILED ()
+RESULT RELATIONAL_TWO_CELL_RECURRENCE_AND_COMPACT_LAW_GATE_PASS

@@ -1,0 +1,35 @@
+{
+ "task": "R:reta_c3_source_response_independent_check_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "reta",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/reta_c3_source_response_independent_check_2026_09_02.py",
+ "seed": 44115,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T061515Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c0041b3bdbe1785a6f95ad462379bfc538e51bc9b8a91fb5faade4d3616d5fb5",
+ "stdout_tail": "d  tau(A^-1 P_d)=2/3; stipulated density gives 2/9\nPASS response.true_conjugation_average  invariant P_d is returned unchanged, not divided by three\nPASS response.statistics_change_determinant_power  det^-1/2, det^-1, det\nPASS response.source_scale_counterfamily  c=(1,2,-3/2) changes h linearly\nPASS response.action_scale_counterfamily  a_d=(1/2,1,3) changes h inversely\nPASS cyclic.p2.local_vs_lens  F=1/8 E=0 E-F=-1/8\nPASS cyclic.p3.local_vs_lens  F=2/9 E=2/9 E-F=0\nPASS cyclic.p4.local_vs_lens  F=5/16 E=1/2 E-F=3/16\nPASS cyclic.p5.local_vs_lens  F=2/5 E=4/5 E-F=2/5\nPASS cyclic.p6.local_vs_lens  F=35/72 E=10/9 E-F=5/8\nPASS cyclic.p7.local_vs_lens  F=4/7 E=10/7 E-F=6/7\nPASS cyclic.p8.local_vs_lens  F=21/32 E=7/4 E-F=35/32\nPASS cyclic.p9.local_vs_lens  F=20/27 E=56/27 E-F=4/3\nPASS cyclic.p10.local_vs_lens  F=33/40 E=12/5 E-F=63/40\nPASS cyclic.p11.local_vs_lens  F=10/11 E=30/11 E-F=20/11\nPASS cyclic.p12.local_vs_lens  F=143/144 E=55/18 E-F=33/16\nPASS cyclic.gap_polynomial_identity  12p(E-F)=3(p-1)(p-3)\nPASS cyclic.p3.crossing_value  F_3=E_3=2/9\nPASS cyclic.lens_weight_orientation_sign  weights (1,1) and (1,-1) differ by orientation/sign\nPASS cyclic.raw_vs_reduced_eta  h_B=1; reduced eta is 11/18 or 7/18\nPASS cyclic.p3.unique_nontrivial_integer  exact roots {1,3}; p>=2 leaves p=3\nPASS torsion.Z3_characters_enumerated  generator values {0,1/3,2/3}\nPASS torsion.two_ninths_invalid_character  3*(2/9)=2/3 mod 1, not 0\nPASS harness.expected_check_count  declared=34\nTOTAL: PASS=34 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T061515Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

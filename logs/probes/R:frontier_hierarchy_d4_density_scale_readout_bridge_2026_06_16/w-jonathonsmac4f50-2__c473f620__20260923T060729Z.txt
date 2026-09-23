@@ -1,0 +1,61 @@
+Hierarchy D=4 density-scale readout bridge verifier
+Status authority: independent audit lane only.
+No observed target value, fitted coefficient, textbook import, or new axiom is load-bearing.
+
+==============================================================================
+Fixed positive D=4 density algebra
+==============================================================================
+rho=5.000000; A_ref=2.000000; A_new=7.000000
+v_new/v_ref=0.731110445709025; (A_ref/A_new)^(1/4)=0.731110445709025
+PASS: fixed-density equation gives inverse fourth-root coefficient placement
+PASS: reference endpoint normalizes exactly to one
+PASS: larger coefficient gives downward scale compression
+      ratio=0.731110445709025
+PASS: smaller coefficient gives upward scale rescaling
+      ratio=1.189207115002721
+
+==============================================================================
+Exact endpoint applications
+==============================================================================
+PASS: APBC small-m coefficient gives A_2 = 1/(8 u0^2)
+      A_2=0.125000000000000
+PASS: APBC small-m coefficient gives A_4 = 1/(7 u0^2)
+      A_4=0.142857142857143
+PASS: continuum APBC average gives A_inf = 1/(4 sqrt(3) u0^2)
+      A_inf=0.144337567297406
+A_2/A_4 = 7/8
+v_4/v_2 = (7/8)^(1/4) = 0.967168210133835
+direct fourth root (A_4/A_2)^(1/4) = 1.033946307914341
+PASS: A_2/A_4 is locally derived as 7/8 without endpoint-ledger status import
+      A_2/A_4=0.875000000000000
+PASS: L_t=4 endpoint uses inverse placement (7/8)^(1/4), not direct root
+PASS: L_t=4 exact base is the endpoint coefficient ratio A_2/A_4=7/8
+A_inf/A_2 = 2/sqrt(3) = 1.154700538379252
+v_inf/v_2 = (A_inf/A_2)^(-1/4) = 0.964678629960309
+PASS: A_inf/A_2 is locally derived as 2/sqrt(3) without endpoint-ledger status import
+      A_inf/A_2=1.154700538379252
+PASS: temporal-average scalar endpoint has the same inverse-fourth-root placement
+PASS: temporal-average scalar endpoint compresses downward relative to L_t=2
+
+==============================================================================
+Dependency status checks
+==============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py", line 223, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py", line 166, in main
+    rows = ledger_rows()
+           ^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py", line 67, in ledger_rows
+    return json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/audit_ledger.json'

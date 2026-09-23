@@ -1,0 +1,75 @@
+
+===============================================================================
+A - Law integration and finite apparatus
+===============================================================================
+PASS A01 mechanism roles belong to the live alphabet
+PASS A02 protocol bank contains all 236 selected programs
+PASS A03 every protocol is finite and acyclic
+PASS A04 supplied/grown counts are explicit and constant :: 943 supplied / 680 grown
+PASS A05 every supplied and grown content is live
+PASS A06 new table is finite and nonempty :: 123 canonical / 2874 raw
+PASS A07 Cycle95 raw rows are disjoint from Cycle93 :: 0
+PASS A08 mixed Cycle93+95 union is single-valued :: 8554
+PASS A09 every canonical row has all proper-cubic raw images
+
+===============================================================================
+B - Physical geometry, order, and no symbolic bypass
+===============================================================================
+PASS B01 all causal parent edges are strict nearest neighbours
+PASS B02 construction order is one append-only causal chain
+PASS B03 exact compare/transport/validation bit orders hold
+PASS B04 every carried bit reads a physically adjacent prior bit/tag
+PASS B05 sources and grown sites are pairwise disjoint
+PASS B06 first two references mismatch and final reference equals candidate
+PASS B07 selector decisions are AUX, AUX, then ALL
+PASS B08 both validation decisions are ALL on exact copies
+PASS B09 AUX is the immediate physical parent of each transport launch
+PASS B10 ALL immediately enters a physical accept chain before the next comparator
+
+===============================================================================
+C - All-236 exact live frontiers and append-only trails
+===============================================================================
+PASS C01 every one of 236 protocols has its exact live frontier :: 160716 states
+PASS C02 asynchronous scheduler has one enabled record per nonterminal
+PASS C03 parasite census is zero extras/missing/conflicts
+PASS C04 both handoffs preserve all 48 physical bits for all236
+PASS C05 every source and grown record remains in the terminal trail
+PASS C06 third ALL writes the exact selected 17-record output
+PASS C07 transported rails contain 22,656 checked bit records
+
+===============================================================================
+D - Corruption detector: one new AUX and no advance
+===============================================================================
+PASS D01 every bit position is attacked in both handoffs :: 96 single-bit cases
+PASS D02 all-bit and separated mixed corruptions are absorbed :: 4 mixed cases
+PASS D03 all236 terminal-bit corruptions stop in both handoffs :: 472 program/handoff cases
+PASS D04 each perturbation occurs at a correctly enabled law site
+PASS D05 each corrupted validation grows exactly one new AUX
+PASS D06 every AUX detector terminal has an empty live frontier :: 261404 states
+PASS D07 no corruption case teaches the law to make its wrong bit :: each injected site was uniquely enabled with the opposite, correct law output
+
+===============================================================================
+E - All 24 cubic images and mixed-law parasite controls
+===============================================================================
+PASS E01 proper cubic group has exactly 24 images
+PASS E02 every full rotated protocol has the exact frontier :: 16344 rotated states
+PASS E03 every rotated nonterminal frontier remains singleton
+PASS E04 Cycle93+95 mixed roles create no live parasite
+PASS E05 corrected BACKSTOP status cage is absent from Cycle93 inputs
+PASS E06 phase-tagged cable roles are absent from Cycle93 inputs
+
+===============================================================================
+F - Scope and authority
+===============================================================================
+PASS F01 supplied state is explicitly counted :: Counter({'H1': 244, 'T_G1': 240, 'BACKSTOP': 192, 'H0': 156, 'LAUNCH_A': 97, 'T_H3': 9, 'T_H0': 2, 'T_H1': 2, 'T_H2': 1})
+PASS F02 grown state is explicitly phase-counted :: Counter({'h0_accept_carry': 51, 'h0_validate': 49, 'h1_validate': 49, 'c0_compare': 48, 'h0_side0': 48, 'h0_mid': 48, 'h0_side1': 48, 'h0_c1': 48, 'c1_compare': 48, 'h1_mid': 48, 'h1_side2': 48, 'h1_c2': 48, 'c2_compare': 48, 'c2_writer': 17, 'h1_launch': 11, 'h0_launch': 2, 'h0_to_mid': 2, 'h0_to_side1': 2, 'h0_to_c1': 2, 'h0_accept': 2, 'h1_to_side2': 2, 'h1_to_c2': 2, 'h1_accept': 2, 'c0_decision': 1, 'h0_validate_turn': 1, 'h0_validate_decision': 1, 'c1_decision': 1, 'h1_validate_turn': 1, 'h1_validate_decision': 1, 'c2_decision': 1})
+PASS F03 no Cycle94 module is imported
+PASS F04 runner claims no foundation, queue, audit, or git authority
+FAIL F05 companion Cycle95 note exists
+FAIL F06 note contains the complete written N1-N8 gate
+
+NEW_CANONICAL=123 NEW_RAW=2874 OVERLAP=0 UNION=8554
+PROGRAMS=236 SUCCESS_STATES=160716 CUBIC_STATES=16344
+FAULT_CASES=572 FAULT_STATES=261404
+SUPPLIED=943 GROWN=680
+SUMMARY: 43 PASS / 2 FAIL

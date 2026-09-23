@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_delta0_s1prime_action_cost_decomposition_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_s1prime_action_cost_decomposition_2026_06_11.py",
+ "seed": 43663,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060743Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f5421881b4e994a533b05b2a632543ad7148383d1e23b1a9c50da9fda4c4d628",
+ "stdout_tail": "ss on the attachment itself.\n\n--- Terminal class-D fence: external comparators ---\n  (No PDG quantity is needed or consumed by this decomposition; the action\n   bookkeeping and the displacement scan are internal structure only.)\n  [PASS][D] G1 self-scan: the PDG VEV literal appears ZERO times in this runner's source \u2014 no comparator consumed anywhere\n\n==============================================================================\n Breakdown: A=13 B=6 C=1 D=1 RESIDUAL=2\n TOTAL: PASS=21 FAIL=0\n VERDICT: established (bounded, exact arithmetic over declared inputs): the\n   block02 reduced target is EXACTLY the per-decoupling action cost Delta_S\n   = ln(4 pi) + 2 ln(u_0) = ln(4 pi) + (1/2) ln(<P>) = 2.270081, additive\n   with both summands landed as values; the full hierarchy suppression is\n   exact bookkeeping 16 [ln(4 pi) + ln(u_0)] - (1/4) ln(7/8) = 38.4422, of\n   which the kernel normalization alone supplies 40.4964 \u2014 sixteen kernel\n   normalizations, tadpole-corrected; and NO scanned landed supplier matches\n   Delta_S inside 0.01 action units (nearest: ln(N_c^2) at 0.0729, block09's\n   flagged observation restated).  NOT established: the per-threshold\n   attachment theorem (one kernel readout across two dressed links per\n   decoupling) \u2014 declared open with its kill criterion; this is the\n   narrowest posing of B4 to date, a reformulation, NOT progress on the\n   attachment itself.  DELTA0 stays open.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060743Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

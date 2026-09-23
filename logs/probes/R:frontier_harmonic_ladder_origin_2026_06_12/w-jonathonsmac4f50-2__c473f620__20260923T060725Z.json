@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_harmonic_ladder_origin_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_harmonic_ladder_origin_2026_06_12.py",
+ "seed": 43645,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T060725Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a204d16b46e8430707e8d6aa64eb603b8fd9b099807c70cb908470be7176b206",
+ "stdout_tail": "8466\n  K=4: physical w2=0.0397389516712, w2/w1=0.275864933874\n  K=5: physical w2=0.235902871426, w2/w1=0.437930984609\n  K=6: physical w2=0.0311427370139, w2/w1=0.032489896362\n  [PASS] H4 anti-fabrication: physical k=2 ladder weight is nonzero in every state  (K3:0.553095718694, K4:0.0397389516712, K5:0.235902871426, K6:0.0311427370139)\n  [PASS] H4 physical fundamental weights w1 are frozen  (K3:0.0804829538344, K4:0.144052203784, K5:0.538675909484, K6:0.958536052775)\n  [PASS] H4 physical k=2 weights are frozen  (K3:0.553095718694, K4:0.0397389516712, K5:0.235902871426, K6:0.0311427370139)\n  [PASS] H4 physical k=2/fundamental ratios are frozen  (K3:6.87220948466, K4:0.275864933874, K5:0.437930984609, K6:0.032489896362)\n  [PASS] H4 raw nearest-ladder k=2 grouped weights are frozen  (K3:0.693763230988, K4:0.14179591721, K5:0.280326127923, K6:0.034301272387)\n==============================================================================\nTOTAL: PASS=23 FAIL=0\n==============================================================================\nSCOPE: exact finite L=3 realized states only.\nFINDING: the base-angle determinant-phase readout has an integer harmonic\n  ladder and nonzero k=2 in every state.  The raw 256-step FFT used for the\n  landed active-count anchor is not itself an exact ladder display; because\n  3*tau is off the FFT grid, it shows frozen off-ladder leakage.  The landed\n  capture depth is the Hankel-SVD tail order, not the simple coefficient\n  tail beyond the fundamental.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060726Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_harmonic_ladder_origin_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

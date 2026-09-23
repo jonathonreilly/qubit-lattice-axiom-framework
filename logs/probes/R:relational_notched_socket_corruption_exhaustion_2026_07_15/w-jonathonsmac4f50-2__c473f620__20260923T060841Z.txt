@@ -1,0 +1,5 @@
+DIRECT_ATTEMPTS 2142
+DIRECT_FALSE_POSITIVE_FAILURES 0 ()
+DIRECT_DIAGNOSTIC_ALTERNATES 6 ((0, 'helper', 'root', 'R_C11', frozenset({'GU'})), (0, 'helper', 'b_guard', 'R_B23', frozenset({'B0'})), (0, 'oz', 'h1', 'A_1_0', frozenset({'A_0_0'})), (1, 'helper', 'root', 'R_C11', frozenset({'GU'})), (1, 'helper', 'b_guard', 'R_B23', frozenset({'B0'})), (1, 'oz', 'h1', 'A_1_0', frozenset({'A_0_0'})))
+RECURRENCE_ATTEMPTS 153
+RECURRENCE_FAILURES 0 ()

@@ -1,0 +1,35 @@
+{
+ "task": "R:repeated_record_matter_energy_apparatus_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "repeated",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/repeated_record_matter_energy_apparatus_2026_09_05.py",
+ "seed": 44107,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T061507Z",
+ "elapsed_s": 6.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d0e98af6ad5b13077970bb0439d08cd9d57ac8d9ce0db5b6a7d1a52083664bac",
+ "stdout_tail": "rence: coherent_vs_read=0.144338 read_cross=0.000e+00 normalized_choi_distance=0.349349 (not_diamond_bound)\nPASS G5 two events reuse one correlated battery and telescope to total lift: max_res=1.421e-14 Schmidt_rank=3 support_margin=22 declared_margin=24 levels=57\nPASS G5 intermediate and final matter-plus-battery ledger: matter=-1.583929->-0.791965->+0.000000 battery=28.000000->27.208035->26.416071 normalized_choi_distance=0.133631 (not_diamond_bound)\nPASS G6 sine, margins, and fresh/shared error-budget arithmetic probes: max_res=1.819e-12 overlap=0.159154943 fresh=(err=0.080,ref=0.040) shared=(err=0.080,meanE=8493.470)\nPROBE generic_continuity_bound epsilon=0.08 broad_history_ground_excess_difference/M<=0.960; arithmetic_only=no_proof\nSCOPE 216-mode Gaussian rows use the ideal occupation/deletion instrument; energy-conserving battery lifts run only in separate four-mode dimer fixtures\nSCOPE MC +/- are trajectory standard errors, not pass windows; dimer spectra are commensurate; normalized Choi distances are not diamond bounds; sine/scaling rows are arithmetic probes, not continuum proofs\nSCOPE no physical clock/rate, Record compiler, local spectral-gate compiler, battery preparation/renewal, scheduler-memory bound, stationary matter, gravity source, thermodynamic convergence, or photon result is inferred\nPASS G7 execution envelope: elapsed=5.87s limit=180s rss=126.2MiB limit=180MiB BLAS_threads=1\nPASS G7 concise stdout: projected_chars=5318 limit=6000\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T061513Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/repeated_record_matter_energy_apparatus_2026_09_05.txt against the .txt beside this log"
+  ]
+ }
+}

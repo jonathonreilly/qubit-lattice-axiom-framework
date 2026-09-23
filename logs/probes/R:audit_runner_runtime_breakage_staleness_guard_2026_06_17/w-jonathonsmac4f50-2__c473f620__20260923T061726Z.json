@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_runner_runtime_breakage_staleness_guard_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py",
+ "seed": 44246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T061726Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "38bc26d79780099ba756700cbae6880d2de1e47193be497db1be0beb6fe4cb11",
+ "stdout_tail": "xt\n  - nonzero_exit: scripts/frontier_tensor_block_closure_test.py: fresh ok logs/runner-cache/frontier_tensor_block_closure_test.txt\n  - timeout: scripts/frontier_tensor_support_center_excess_law.py: fresh ok logs/runner-cache/frontier_tensor_support_center_excess_law.txt\n  - timeout: scripts/frontier_wilson_mu2_distance_sweep.py: fresh ok logs/runner-cache/frontier_wilson_mu2_distance_sweep.txt\n  - timeout: scripts/frontier_yt_bridge_uv_class_uniqueness.py: fresh ok logs/runner-cache/frontier_yt_bridge_uv_class_uniqueness.txt\n  - timeout: scripts/frontier_yt_qfp_insensitivity.py: fresh ok logs/runner-cache/frontier_yt_qfp_insensitivity.txt\nFAIL: live runtime-failure entries remain:\n  - timeout: scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py: cache_status=execution_error path=logs/runner-cache/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.txt\n  - timeout: scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py: cache_status=execution_error path=logs/runner-cache/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.txt\n  - timeout: scripts/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.py: cache_status=sha_mismatch path=logs/runner-cache/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.txt\n  - nonzero_exit: scripts/frontier_self_consistent_field_equation.py: cache_status=sha_mismatch path=logs/runner-cache/frontier_self_consistent_field_equation.txt\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T061727Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run '  - nonzero_exit: scripts/frontier_self_consistent_field_equation.py: cache_stat' vs cache 'Scope note: missing_runner_file entries are intentionally out of scope for this '",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_runner_runtime_breakage_staleness_guard_2026_06_17.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:reta_c3_source_response_mutation_check_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "reta",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/reta_c3_source_response_mutation_check_2026_09_02.py",
+ "seed": 44115,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c473f620",
+ "started_utc": "20260923T061515Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6868d4f427f79b9385994aaadf4d7f1dd90413828c4bf4f6b8fdfd112af04838",
+ "stdout_tail": "CLEAN_BASELINE {'Fourier normalization': True, 'log derivative distinguished': True, 'Hodge order on x': True}\nPASS Fourier normalization: {'Fourier normalization': False, 'log derivative distinguished': True, 'Hodge order on x': True}; source_sha256=cc906d4541b4adfcc85e4821e2b7a22394046685473aa32c5a49c9bf55ca88c2\nPASS log derivative distinguished: {'Fourier normalization': True, 'log derivative distinguished': False, 'Hodge order on x': True}; source_sha256=1890e3ed0ebae0c2fd5782db3734f7d73b4a46d75afb32b1fd3c0af9ac5263b5\nPASS Hodge order on x: {'Fourier normalization': True, 'log derivative distinguished': True, 'Hodge order on x': False}; source_sha256=037d9f80d4280b1b6dab5af79f12f583f6b6212fa0952b494c085cac87b02715\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T061516Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

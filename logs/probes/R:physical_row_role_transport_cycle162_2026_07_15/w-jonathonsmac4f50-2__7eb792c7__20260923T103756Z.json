@@ -19,14 +19,21 @@
  "stdout_sha256": "d89d054db5eea108440f268cf9e40325dca3f4216e0a8351a07d4a12578d58d9",
  "stdout_tail": " Cycle-160 and predecessor suite remains green :: 1\n\nSCOPE AND NO-GO DISCIPLINE\nFAIL note contains: three physical five-bit row records :: \nFAIL note contains: 14,368 :: \nFAIL note contains: 16,889 :: \nFAIL note contains: 33,806 :: \nFAIL note contains: 17,408 :: \nFAIL note contains: does not complete the payload-row copy or common-output interface :: \nFAIL note contains: no axiom addition follows :: \nFAIL checklist contains: status: fail \u2014 no-go premature :: \nFAIL checklist contains: n1 \u2014 alternative route enumeration :: \nFAIL checklist contains: n2 \u2014 wall-independence audit :: \nFAIL checklist contains: n3 \u2014 hidden-wall scan :: \nFAIL checklist contains: n4 \u2014 residual matching :: \nFAIL checklist contains: n5 \u2014 rhetoric audit :: \nFAIL checklist contains: n6 \u2014 partial-closure path scan :: \nFAIL checklist contains: n7 \u2014 strongest hostile steelman :: \nFAIL checklist contains: n8 \u2014 cross-cycle echo :: \nFAIL checklist contains: positive partial closure :: \n\nTOTAL\nPASS 14 FAIL 20\nRESULT FAIL\nFAIL the complete Cycle-161 and predecessor suite remains green :: \n\nSCOPE\nFAIL note contains: transport, not new foundation content :: \nFAIL note contains: 768 apparatus graphs :: \nFAIL note contains: zero deterministic conflict :: \nFAIL note contains: does not by itself complete that pivot :: \nFAIL note contains: supplies no reason to edit admissibility, record, a primitive, the registry, or policy :: \nFAIL note contains: retained constructive routes remain :: \n\nTOTAL\nPASS 6 FAIL 8\nRESULT FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T105749Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T193841Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7eb792c7 differs from the current HEAD 1b7e0280 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note PHYSICAL_ROW_ROLE_FORK_CABLE_CYCLE162_NOTE_2026-07-15.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (TOTAL; PASS 14 FAIL 0; RESULT PHYSICAL_ROW_ROLE_FORK_CABLE); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T193841Z"
  }
 }

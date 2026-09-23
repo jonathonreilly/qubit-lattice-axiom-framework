@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_formation_gate_relocation_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_formation_gate_relocation_2026_07_12.py",
+ "seed": 45337,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9dbcc5b9",
+ "started_utc": "20260923T063537Z",
+ "elapsed_s": 0.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=15 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a05fb3e8910c934c6088d421ea1e83d3c4d490c4d6e470b4e5efbf634d10237e",
+ "stdout_tail": "content  [verbatim source guard]\nTOTAL: PASS=15 FAIL=1\nVERDICT: EXACT COMPATIBILITY AND FORMATION-GATE RELOCATION (BOUNDED_THEOREM); the tied measure coexists with phi_w, and w is not derived.\nT1: The tied Hermitian-PD two-slice measure extends to every state phi_w on C+C without changing any measure certificate.\nT2: Exact energy matching gives r=(1-w)/(2w), with cell counting w=1/2 -> r=1/2 and real-mode weighting w=1/3 -> r=1.\nT3: The named endpoints are restriction of normalized carrier trace and counting on the quotient's minimal central projections, respectively.\nT4: The relocated formation coordinate is w; formation dynamics remains open, law-expressible-weight classification remains in preparation, and the landed endpoint registration asymmetry does not select or pay w.\nBINDING SURFACE: A landed theorem could have imposed phi_w=F(measure section) in the first-order section fork's does-not-claim surface, the records-only reconstruction's dial residual, or the axioms' open-gates list; none does so at the witnessed grade.\nCHECKS: 15/16 PASS; FAIL=1.\nPROPOSED CLAIM_SCOPE: exact two-level compatibility on the time-homogeneous two-slice C_3 tied corner measure, formation fork r=(1-w)/(2w), and canonical endpoint identifications on A_reg=C+C; no selection of w.\nUNCERTAINTIES A HOSTILE AUDITOR COULD CONTEST: the supplied P-even orbit-clause grade, the energy-to-formation-state bridge, or a formation/measure binding theorem outside the witnessed source-note and axiom surfaces.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063537Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=15 FAIL=1' vs cache 'TOTAL: PASS=16 FAIL=0'"
+  ]
+ }
+}

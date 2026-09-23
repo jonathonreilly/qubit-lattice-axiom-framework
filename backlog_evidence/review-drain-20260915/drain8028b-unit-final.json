@@ -1,0 +1,576 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8028",
+  "constituents": [
+    {
+      "id": "PR8028",
+      "head": "36843ba7b46901269911496f8dfdef6fd5f63cae",
+      "delta_base": "ca0eebe4dffad7a53a201ad7773e804b8c89edef",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8028b-final-review.json",
+        "sha256": "888793ac1f6be5f91c786653658c7732c902ab31d1398c12d004f86ed0992f38",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "e996289670c9cd8c671535f134eddfe291be45f2",
+    "commit": "e996289670c9cd8c671535f134eddfe291be45f2",
+    "tree": "a3a528d4c3bc7d5023bed43f7793166ab7aab31a",
+    "paths": [
+      {
+        "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "a7cc92e284646e8e499408df34d89f7a89d80be04b7641a3a4f63163de4f467a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/README.md",
+        "sha256": "328a4bd99de46c6da1c3a2b647d9c3ec957333bf39c6c9cb1d019b2ef80d9c06"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_000_ARTIFACT_PLAN.md.gz",
+        "sha256": "19c31295a1bc2b0d77bbb3aa9745179190a7df9670589415eb372fdc14a7fde8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_001_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "f29adfa06344bf49cacb4d28e852b0a7c44c13c39cf6c78f94b582c1dbc10779"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_002_CLAIM_STATUS_CERTIFICATE.md.gz",
+        "sha256": "580d757d1bb37e83677c5c2b7098f07997ceaef39096754a1162cbbc14f78d33"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_003_FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz",
+        "sha256": "08a97fb4fc48b169f3029d2c89506685ab1b74f2f1f549fccacd856b0a2ed32c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_004_FINAL_MAIN66_LOCK_RELEASE.json.gz",
+        "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_005_FINAL_MAIN66_READINESS.json.gz",
+        "sha256": "be5009d93ebe70c33e7d785b7bed4670783147cbf7c002cd24fc443f515d40be"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_006_FINAL_MAIN66_STRICT.log.gz",
+        "sha256": "791ae95f412d7c275b784bcda29c306c4189d84baf5b5511f29fe421f84e1d57"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_007_FINAL_MAIN66_SYNC_RECEIPT.json.gz",
+        "sha256": "1914c017e3d1812559b3e937fb1f2b45597b6752bf16e15233bd9ab13366dfb0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_008_FINAL_MAIN66_VALIDATION.md.gz",
+        "sha256": "b5f835204d40a83abd771f398f0f3bbb0938444975d7b434e04b43b26bd7f7b2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_009_FINAL_VALIDATION.md.gz",
+        "sha256": "d3d61835ae0929f1bdfbc57504c8a98987711495c179a8b8f65c8dabdb1bb7cb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_010_FINAL_VOCAB_LINT.txt.gz",
+        "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_011_FROZEN_PORT_RECEIPT.json.gz",
+        "sha256": "793a567b0421e917f3368e9b876afadb4ec39c949dfa9c9a3b2ae4b4af2f706b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_012_FULL_PIPELINE.log.gz",
+        "sha256": "690e7069395b93389a8d67b4cd92386043fe4d249516abbfb35e801c438d0f9a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_013_GOAL.md.gz",
+        "sha256": "47a8fa0bc2cff72214cac3f1770730351ee3f2a3a79cad3209e06fa970973ccd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_014_HANDOFF.md.gz",
+        "sha256": "8ac6c8f7220c5746b0de8048d5d2689e85be8216e90dd9c4a6257e9dd592f9d6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_015_LITERATURE_BRIDGES.md.gz",
+        "sha256": "f1e858ebe5508cb13d5a093186963b9c8c6701f96148007fa271ea5adaf2795c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_016_LOCK_RELEASE.json.gz",
+        "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_017_NO_GO_DISCIPLINE_CHECKLIST.md.gz",
+        "sha256": "ff4c814e64924867d91c306ab77e14a327049db9cd16c6bc71a8e475947835a5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_018_NO_GO_LEDGER.md.gz",
+        "sha256": "cd5f07a58503fece46477a837d54205a86fa0468aaf2cdb8ff5a518d348d6882"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_019_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "260538956732d75898dd97e7f29dd531880ffb80b211d3018779a23c4dfc572a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_020_PACK_INDEX.json.gz",
+        "sha256": "9bf02d8ca7127c38c71941b4ccef5798803054ab8e2232708401c0ed2ca887dd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_021_PARENT_VALIDATION_METADATA_CATCHUP.md.gz",
+        "sha256": "eda62e306eb6ef7cf7d87c56a2094f130b9e7977a073991cecec0d0455bff4e2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_022_PORT_RECEIPT.json.gz",
+        "sha256": "76b0dcd47771eb43960702119ac33e74ede1403734e98addbd120733f2acca72"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_023_PROOF_REVIEW.md.gz",
+        "sha256": "e2db8cc274d48f449c8baa5974bc73c11a7a7dea48ab30504d2e3f4122b93d14"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_024_PR_BACKLOG.md.gz",
+        "sha256": "f91a302a414ce1896106c5bbe50106f0030064c2bb8b5c4bf3d4bd73fbb98d47"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_025_PR_BODY.md.gz",
+        "sha256": "764d18ec272d76030463769c514d87f742e81226c9cfe5016353814fda8c69bd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_026_PUBLICATION_RECEIPT.json.gz",
+        "sha256": "b74fb54ecc2f52e59d06171b10559232ee86833127efa4bb6c4f6ecd6433d1c3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_027_REVIEWED_UPSTREAM_SYNC_20260907.json.gz",
+        "sha256": "6acb6106c299c9a35d7e570930614e7758a76709dfc277e7d4b328dd33901100"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_028_REVIEW_HISTORY.md.gz",
+        "sha256": "e34a11038ae1106d697e5f38c2f9174f2e27e2eef85c5f0ec8aab1e6ac682ee2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_029_ROOT_CANONICAL_PORT_REVIEW.md.gz",
+        "sha256": "5de38423c092a4f1fbbacb656c4956c0dd416fbd9daae8c3275bf33796679a46"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_030_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "b8e4613f78e4de1fc7ad72686ca1a585249a1a2e587a2aedb9240f1c2cfb6f41"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_031_SCOPED_VALIDATION.md.gz",
+        "sha256": "bfcbc3a1e12d65bdf82398b80791c878497332afb8ef4776725f6e83131f1a70"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_032_STAGING_VALIDATION.json.gz",
+        "sha256": "4166f7f909f8faf7f1e26abec290ccb679a59398cbfedfa004ed3a8069372c1a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_033_STATE.yaml.gz",
+        "sha256": "f7f836eef58e127004529f74aadf8d59c420712e1b84cb594d48dd593c3e1a7a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_034_STRICT_LINT.log.gz",
+        "sha256": "300ec056a334d8783ce9b473a8ee0f335f72a3d3deba226472affdbbce5eaef8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_035_TRACE_GATE.md.gz",
+        "sha256": "fee59d64a432735b4210e55f9d6236cd988f6ed745ebd0d4a94f36a630a2bf4f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_036_UPSTREAM_SYNC_PIPELINE.log.gz",
+        "sha256": "faa213cebcada2ef522bf0177daf2f1831a33bd754eaed5cf79f20b23dbfd966"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_037_UPSTREAM_SYNC_READINESS.json.gz",
+        "sha256": "a56c162999ceddd0814d64932ed671d90e5f7f9fa2413117c2261b38dfa4af67"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_038_UPSTREAM_SYNC_STRICT.log.gz",
+        "sha256": "79b78ca1b06e0592da65814f5795a3eb36dedeb8e9e1027013a31777db3b3012"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_039_UPSTREAM_SYNC_VALIDATION.md.gz",
+        "sha256": "f9b62d6ef8c4b1d497b8aeee8bad6ca2941984b74f1a58c85559402b546b1f10"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_040_PRIMARY_REVIEW.md.gz",
+        "sha256": "15adc699f0bf82fdd813611feeabb5321c13c8bd1ee22f385fb3b91361904b50"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_041_DERIVATION.md.gz",
+        "sha256": "e84ea4096fc5c13515c7526d818c29d3bc899ffdf366f9c79246f42807190b6f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_042_FINITE_CONTROLS_PREREGISTRATION.md.gz",
+        "sha256": "ccbfbb4a0aa95ecabb890e96ebda4c62cd23aee92552a2b4ae0ebabb56176161"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_043_PORT_RECEIPT.json.gz",
+        "sha256": "76b0dcd47771eb43960702119ac33e74ede1403734e98addbd120733f2acca72"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_044_PREREGISTRATION.md.gz",
+        "sha256": "459d7fe787c866d645e0d90778cc06618fde354675c37a6124439da1311f598e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_045_ROOT_REVIEW.md.gz",
+        "sha256": "44540ac60fa78c6646eb84c53de67d85860aa5be0bca7237768e0b6825b98405"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_046_SUPPLEMENT_TIMING.md.gz",
+        "sha256": "6df4e6dad47b06747b6aebc86441ce8a415af1a734c6b03a5d3eb5b267842de4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_047_check.py.gz",
+        "sha256": "ba924bc6b4b5d3ef73bb8ad8e168aafbcd1d38aa423cc887b2841abfc9c00e8b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_048_native_canonical_result.json.gz",
+        "sha256": "bcb4416c32aefcd5f89cdbfa0709d6efbb8fb51ccf3b472f690d8759912b6ade"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_049_native_canonical_stdout.txt.gz",
+        "sha256": "f2da8d475dcba717599802822bcb7951704b40990ebe4ee0fba49dbe600bb578"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_050_result.json.gz",
+        "sha256": "87f619408e3f6779eb8a0710e94d10b17c803f2afadadc86346f2a03efd0e973"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_051_root_canonical_result.json.gz",
+        "sha256": "47db2ebdd9f8efd93323c9c21229941335755ca380d3c8ae705849fe806a2ea8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_052_root_canonical_stdout.txt.gz",
+        "sha256": "469197fc4ba956de1b35082b1bc0417e61b895ed5a61a0f5ac1bba866f7e7ce8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_053_FINITE_CONTROLS_PREREGISTRATION.md.gz",
+        "sha256": "e306fa3aec180b3eca0452032a3c7a63d664f699ae1933e2c8858ccd3a0ffac5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_054_PREREGISTRATION.md.gz",
+        "sha256": "396b1e2071123fda3282796ac55a029a30e4622b7cd4e473c5bd70c057d5c56e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_055_ROOT_DERIVATION.md.gz",
+        "sha256": "b9256e391c9485ab9e0485eb86ebc611ecc9eb55eea36f6dcd9c85376d67876d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_056_ROOT_NATIVE_REVIEW.md.gz",
+        "sha256": "a158dc0e821b7d64f20b77640fd6332f0a75f8d561c2bb308541a4720754dae3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_057_SYNTAX_FAILURE.txt.gz",
+        "sha256": "54c3a96bb319c10ed75adb659bee8a2484db43ec4b24c2b5d62850fa23b1ff79"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_058_UPPER_BOUND_PREREGISTRATION.md.gz",
+        "sha256": "8c3e61297b2c1460045ba894249fb531f6d4b5b5fd3def6f4072446f81890ce7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_059_check.py.gz",
+        "sha256": "485f185c48292ea57f2cf753d03bd1be42672a0a33b8b54b5528b0ae1fa66e20"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_060_check_before_syntax_repair.py.gz",
+        "sha256": "2ba5c6e6e02c4393a8722a5215c8e12cc77064766d1baf2af1ae78374d891c77"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_061_result.json.gz",
+        "sha256": "e81605db38416590daafbc6a9c7b2b843f719c86f39e529b7ec1e1925de0fee1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_062_native_canonical_result.json.gz",
+        "sha256": "bcb4416c32aefcd5f89cdbfa0709d6efbb8fb51ccf3b472f690d8759912b6ade"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_063_native_canonical_stdout.txt.gz",
+        "sha256": "f2da8d475dcba717599802822bcb7951704b40990ebe4ee0fba49dbe600bb578"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_064_root_canonical_result.json.gz",
+        "sha256": "47db2ebdd9f8efd93323c9c21229941335755ca380d3c8ae705849fe806a2ea8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_065_root_canonical_stdout.txt.gz",
+        "sha256": "469197fc4ba956de1b35082b1bc0417e61b895ed5a61a0f5ac1bba866f7e7ce8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_066_validated_claims_before_generated_cleanup.json.gz",
+        "sha256": "f54ec619054c5fd78380f5dce6bb121b9e357f04f557213bca41285e371295e3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_067_validated_readiness_before_generated_cleanup.json.gz",
+        "sha256": "714893e1a6b3823897ad18e4d32e4a5980a0c504e4447fe97633b3be1f092e83"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_068_GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz",
+        "sha256": "c01421f1c6d119beeefb7529dd4e1e391860cb98483342a472c4e0594ee8f28b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_069_citation_graph_manifest.json.gz",
+        "sha256": "1445280c32626cf41500502a368b85f49eaf0131106bedf4367c6a041184eaef"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_070_build_citation_graph.py.gz",
+        "sha256": "a1ea0ebc468b88a386a22a5937f5b41de0f1111685843e2cf866a52b08a54efa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_071_gauge_wilson_static_source_dirichlet_controls_2026_09_07.txt.gz",
+        "sha256": "42d2526e95e7e3546528a89d80d919d8dada3ea3adc906439665e330ae2c9756"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_072_gauge_wilson_static_source_sector_controls_2026_09_07.txt.gz",
+        "sha256": "9d4d46523ea073b260ef36e93552509bd5c49a33ea42b163ef4b9ad4c7d7eba6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_073_audit_packet_script_deps.py.gz",
+        "sha256": "f037cb637cdd247d5990a3d4195f8991dc489ca4412bef8910a02a25bcdd46bb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_074_gauge_wilson_static_source_dirichlet_controls_2026_09_07.py.gz",
+        "sha256": "d79db96bcb79276aeb682bf50bf6fde968a9333206ca13613246e89c5e111986"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/8028_075_gauge_wilson_static_source_sector_controls_2026_09_07.py.gz",
+        "sha256": "aadbff999afc7ab03709367dbb389fc0d0986fbc4089d707801af0a90cb6d828"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/README.md",
+        "sha256": "bc28a91e2ecea8e15149a8a4c701f6a63bf38dfdf44d66e9073508d32908f080"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/original-manifest.json",
+        "sha256": "5d995fc68e916faedcd13df68e201b1903e5b17f526f9428d8bbcbd3646ef47e"
+      },
+      {
+        "path": "logs/runner-cache/gauge_wilson_static_source_dirichlet_controls_2026_09_07.txt",
+        "sha256": "5519c0f40dd07ad7ec632bd630b1625f347f980a3f4fe020c8161d26ac966df9"
+      },
+      {
+        "path": "logs/runner-cache/gauge_wilson_static_source_sector_controls_2026_09_07.txt",
+        "sha256": "28f1d1091df2ac89be86af2a5a1849eca47b473ca94a31ad3ee9f3f5781ccedf"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "3d283188b8a1919a869eab92b425a1022eed1b16e544d03419be23666c07463f"
+      },
+      {
+        "path": "scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py",
+        "sha256": "4c8d118b9199baf2fea36712b5ef1d2131df90bb80f9f3c98441b4348712dac5"
+      },
+      {
+        "path": "scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py",
+        "sha256": "436817eaf370cbca3e8e197154ed8b05c8ac6af19e81ccace2e8fdea058d8476"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py",
+        "sha256": "4c8d118b9199baf2fea36712b5ef1d2131df90bb80f9f3c98441b4348712dac5"
+      },
+      {
+        "path": "scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py",
+        "sha256": "436817eaf370cbca3e8e197154ed8b05c8ac6af19e81ccace2e8fdea058d8476"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py",
+        "sha256": "4c8d118b9199baf2fea36712b5ef1d2131df90bb80f9f3c98441b4348712dac5"
+      }
+    ],
+    "parents": [
+      {
+        "path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "98f364441abc618cf7132a9bebfcb07f01b903ea081cf6acf7a37ae3c2a7431b"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "98f364441abc618cf7132a9bebfcb07f01b903ea081cf6acf7a37ae3c2a7431b"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8028/README.md",
+        "sha256": "bc28a91e2ecea8e15149a8a4c701f6a63bf38dfdf44d66e9073508d32908f080"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "a7cc92e284646e8e499408df34d89f7a89d80be04b7641a3a4f63163de4f467a"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "3d283188b8a1919a869eab92b425a1022eed1b16e544d03419be23666c07463f"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8012",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8028b-final-review.json",
+      "sha256": "888793ac1f6be5f91c786653658c7732c902ab31d1398c12d004f86ed0992f38"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-original-review.json",
+        "sha256": "fe87410781d44994d4d7b99b7c0bb0c399b924db48d43f8bc1d9f487d560f197"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-author-source-handoff-v1.json",
+        "sha256": "d8612563b6d2132ff7a7ff3235b24f5bf7f8cfb514ec20dc5960726339c4e458"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-author-cache-api-v1.json",
+        "sha256": "d570f4bbc830d3e7a4a1e37e937d654b3617a604c8892cd0cf384294d243b70b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-author-unit-draft-v1.json",
+        "sha256": "6c25828967c5c65a87923d8f15b687b462c0ac5e62588a1f9aef587135ef8076"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-author-final-freeze.json",
+        "sha256": "ce31d8e4f78feafba24cfaef4412a58ee6757ef184263b8d201eed9bf37628eb"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-capture.py",
+        "sha256": "2cbf9dd806ce34f0d22831c16d5e31ed7c55039fde3ce33e874eb2c5c40faebd"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-execution-primary.json",
+        "sha256": "2c179292b7ffc97f1b429c865aaacb31c1a4895022854b50ddc2ae01ad2829e5"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-execution-helper.json",
+        "sha256": "777111949599b067cfe0b4956fb19669db86e132829a7d2295149452a739ec9d"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-unit-final.json",
+        "sha256": "859a4d8592ac34ba65760e4d20a749b3579741d31afd7546c3d10fc4f397b36d"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/train73a-record.json",
+        "sha256": "ab88da722ce03021c47ce31e8b2d6aed2f9f82c4d154f2a495b834d8f51802da"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028-final-review.json",
+        "sha256": "417007f823514e9c21ef4ebe7b1c9848cf31822ee14be9845a1ca6bf7be46aca"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028b-draft.json",
+        "sha256": "9cd9d8be0d9ffd900e4af79ac920e90c22140dae8066f39c6426dbc6ea206222"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8028b-rebase-freeze.json",
+        "sha256": "fdcfe4b417bd94f0ff7bfa3db1f706b97dd6f247754f2b2fa64856f289e5e622"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "declared_claim_id": "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py",
+      "helpers": [
+        "scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py"
+      ],
+      "citations": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8028/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ],
+      "dependency_rationale": "Supplied compact SU(3) Hamiltonian, all-label Casimir minimum and static source carrier; explicit Yarotsky0411042 quantitative coordinate import mapped to onsite gap1. Equivariance/domain and ghost-vacuum restrictions yield graph-uniform small-coupling energy bounds; exact all-coupling Dirichlet upper bound and nonnegativity. No infinite-volume limit or physical-model selection. Independent source confirmation required."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8027/README.md",
+      "rationale": "Historical recovery instructions; no current science authority or active proof input.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8028b-final-review.json",
+        "sha256": "888793ac1f6be5f91c786653658c7732c902ab31d1398c12d004f86ed0992f38"
+      }
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8028/README.md",
+      "rationale": "Historical recovery instructions; no current science authority or active proof input.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8028b-final-review.json",
+        "sha256": "888793ac1f6be5f91c786653658c7732c902ab31d1398c12d004f86ed0992f38"
+      }
+    }
+  ]
+}

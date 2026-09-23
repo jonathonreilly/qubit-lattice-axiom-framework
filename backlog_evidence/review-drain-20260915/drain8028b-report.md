@@ -1,0 +1,13 @@
+# PR8028 reviewed scope
+
+Accepted complete supplied-model static-source energy bounds on finite actual cubic graphs: uniform small-coupling lower bound, all-coupling upper bound and nonnegativity. The quantitative Yarotsky coordinate theorem is an explicit mathematical import with its hypotheses, onsite gap normalization, finite-dimensional source amplification, equivariance, domain control and ghost-vacuum restriction checked. The exact Dirichlet open-path argument supplies the upper bound. No infinite-volume or continuum construction, physical model selection or retained-grade claim is made.
+
+The original independent reviewer read the complete argument, historical versions, three actual parent notes and the primary imported theorem, and ran16 independent exact controls. Canonical repairs preserve the complete proofs, literal current proof/parent input pins, two additive helper maps, explicit analytical-versus-finite evidence boundaries and full nonnegativity argument. All76 original incremental paths/modes/blobs, including failed syntax and historical timing evidence, remain exact in the recovery archive. The prior PR8027 recovery README now accurately states that recovery is independent of branch retention. No unique substantive scientific content is deferred.
+
+Two sole sequential captures passed32/0 and42/0, each including one resource check, in0.141225100 and0.472414017seconds. Externally sampled supervisor/descendant peaks55,771,136 and94,846,976bytes were within the actual180second/180MiB per-run limits, without watchdog violations. The original reviewer confirmed final source and cache identities in the same session. This is pre-landing review, not an audit verdict.
+
+Final review: drain8028b-final-review.json; canonical receipt: drain8028b-unit-final.json. Close only after combined current-main preservation/validation and landing, immediate frozen-head verification, and child-base preservation. Full content coverage permits exact-lease deletion of the unchanged original head branch after those gates.
+
+## Current-base preservation
+
+The exact reviewed PR8161 source parent is now durable on main at 0b79324946912feca6063851b2b842539b503820. Replaying the PR8028 delta preserved every parent helper-map entry and added only its own entry. The original reviewer reconfirmed both map APIs and all76 original dispositions; all84 non-tooling source paths, scientific inputs and both captured caches are byte-identical. No scientific execution was repeated. Parent finalization changed only the citation manifest; fresh combined validation must bind the current main base before this unit lands.

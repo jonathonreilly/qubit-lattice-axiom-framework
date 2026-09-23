@@ -1,0 +1,7 @@
+{
+  "parent_source": "e996289670c9cd8c671535f134eddfe291be45f2",
+  "landed_main": "0b79324946912feca6063851b2b842539b503820",
+  "only_parent_finalization_delta": "docs/audit/data/citation_graph_manifest.json",
+  "parent_landing_receipt_sha256": "bf86730872e976e317d6f9eef7fb24b54d82c7266fa0eb97fb6a344184fc0c74",
+  "current_main": "0b79324946912feca6063851b2b842539b503820"
+}

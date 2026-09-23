@@ -1,0 +1,56 @@
+========================================================================================
+DM WILSON DIRECT-DESCENDANT TRANSPORT-FIBER SPECTRAL COMPLETION THEOREM
+========================================================================================
+
+========================================================================================
+PART 1: THE TRANSPORT PLATEAU STILL SITS OVER ONE CANONICAL COLUMN ORBIT
+========================================================================================
+  [PASS] The known constructive plateau witnesses remain pairwise distinct in source coordinates  (min source separation=0.417121011663)
+  [PASS] Their favored transport columns still agree up to the canonical orbit  (min sorted-column separation=9.519e-09)
+  [PASS] The projected Hermitian spectra stay simple on the whole plateau sample  (min eigen-gap=0.087044708821)
+  [PASS] Those same-column witnesses already have pairwise separated spectral invariants  (min spectral separation=0.170468624218)
+
+========================================================================================
+PART 2: THE THREE SPECTRAL INVARIANTS SPAN THE LOCAL COLUMN FIBER
+========================================================================================
+  [PASS] The reduced favored-column map has rank 2 with a 3-real local kernel at every plateau witness  (labels=['W0', 'W1', 'W2', 'W3'])
+  [PASS] Restricted to that transport kernel, (Tr(H_e), Tr(H_e^2), det(H_e)) has rank 3  (labels=['W0', 'W1', 'W2', 'W3'])
+  [PASS] The restricted spectral Jacobian stays uniformly nondegenerate across finite-difference scales  (min restricted singular value=1.687867432687e-04)
+
+========================================================================================
+PART 3: COLUMN DATA PLUS SPECTRAL DATA ALREADY FIX THE LOCAL SOURCE
+========================================================================================
+  [PASS] The augmented map (col_1, col_2, Tr(H_e), Tr(H_e^2), det(H_e)) has full rank 5 on the plateau sample  (labels=['W0', 'W1', 'W2', 'W3'])
+  [PASS] Its smallest singular value stays bounded away from 0 across witnesses and finite-difference scales  (min combined singular value=9.891601913505e-05)
+  [PASS] Its Jacobian determinant stays stably nonzero on the plateau sample  (min |det J|=1.649625256818e-05)
+  [PASS] So transport plus three local spectral scalars of H_e locally picks a unique source point  (the canonical 3-real transport fiber is locally a spectral-invariant fiber)
+
+========================================================================================
+PART 4: BOTTOM LINE
+========================================================================================
+  [PASS] The remaining DM selector problem is therefore an explicit 3-scalar microscopic spectral law on H_e, hence on L_e  (the open object is no longer an unspecified 3-real source family)
+
+  W0:
+    source5                = [1.174162 0.462544 0.758741 0.026904 1.882596]
+    sorted favored column  = [0.035644 0.035644 0.928711]
+    spectral invariants    = [2.189906 4.162091 0.000797]
+    spectrum               = [0.00256  0.152971 2.034376]
+  W1:
+    source5                = [0.905339 0.341085 0.775621 0.0043   2.248936]
+    sorted favored column  = [0.035644 0.035644 0.928711]
+    spectral invariants    = [1.753967 2.252397 0.018682]
+    spectrum               = [0.060285 0.208686 1.484996]
+  W2:
+    source5                = [1.108615 0.419912 0.834433 0.003722 1.480589]
+    sorted favored column  = [0.035644 0.035644 0.928711]
+    spectral invariants    = [2.134417 4.000979 0.005654]
+    spectrum               = [0.02522  0.112265 1.996933]
+  W3:
+    source5                = [1.132103 0.528258 0.484235 0.185501 2.930589]
+    sorted favored column  = [0.035644 0.035644 0.928711]
+    spectral invariants    = [1.893118 2.692449 0.00004 ]
+    spectrum               = [0.00009  0.275442 1.617585]
+
+========================================================================================
+SUMMARY: PASS=12 FAIL=0
+========================================================================================

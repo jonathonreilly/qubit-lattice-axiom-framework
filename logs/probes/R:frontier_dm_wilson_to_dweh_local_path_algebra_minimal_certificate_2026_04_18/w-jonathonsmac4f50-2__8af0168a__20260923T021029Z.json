@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_to_dweh_local_path_algebra_minimal_certificate_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_to_dweh_local_path_algebra_minimal_certificate_2026_04_18.py",
+ "seed": 29429,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8af0168a",
+ "started_utc": "20260923T021029Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9f1c21e993c7a5bce8cddb6bb7675288845be0fa11605e0326c90658e2663cbe",
+ "stdout_tail": "iate source-side layer between Phi_chain and a full Herm(3) law  (the same local chain already generates all 9 Hermitian directions)\n\n========================================================================================\nPART 3: ONCE THE DESCENDED IDENTITY HOLDS, THE DM CHAIN IS ALREADY ALGORITHMIC\n========================================================================================\n  [PASS] The descended Hermitian law reconstructs H_e exactly on the full chain-generated basis  (err=0.00e+00)\n  [PASS] That reconstructed H_e fixes the charged packet downstream  (col sums=[1. 1. 1.])\n  [PASS] The exact flavored selector then determines the relevant column algorithmically  (best column=1, eta=[0.820756 0.989513 0.920617])\n\n========================================================================================\nPART 4: BOTTOM LINE\n========================================================================================\n  [PASS] The whole structured Wilson-to-dW_e^H route is exactly one minimal local generator-plus-response certificate  (Phi_chain plus dW_W o Phi_chain = dW_e^H already suffices for the downstream DM chain)\n  [PASS] So the reviewer-facing target is finite, local, and two-layer rather than a diffuse 9-probe search  (generator layer plus descended-response layer)\n\n========================================================================================\nSUMMARY: PASS=11 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021030Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_to_dweh_local_path_algebra_minimal_certificate_2026_04_18.txt against the .txt beside this log"
+  ]
+ }
+}

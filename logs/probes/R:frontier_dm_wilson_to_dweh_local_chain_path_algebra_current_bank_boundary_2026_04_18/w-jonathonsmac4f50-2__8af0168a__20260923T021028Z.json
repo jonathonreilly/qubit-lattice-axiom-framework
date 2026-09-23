@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_wilson_to_dweh_local_chain_path_algebra_current_bank_boundary_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_current_bank_boundary_2026_04_18.py",
+ "seed": 29428,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8af0168a",
+ "started_utc": "20260923T021028Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d1456f8c9be3d2150c60db78e015a22a3ef42b729c7510835e5bdb11972b5965",
+ "stdout_tail": "==================================================================\nPART 3: THERE IS NO HIDDEN PRE-EXISTING LOCAL PATH-ALGEBRA ARTIFACT\n========================================================================================\n  [PASS] No pre-existing doc or script outside the new Wilson/DM stack already combines Phi_chain with dW_e^H under another name  (hits=[])\n  [PASS] No unclassified doc or script outside the new Wilson/DM stack already states a path-algebra route into dW_e^H  (classified_nonclosing=2, unclassified=[])\n  [BOUNDARY] Current main contains classified path-algebra/dW_e^H mentions, but they are status/helper artifacts rather than the local Wilson certificate  (classified_nonclosing=2)\n\n========================================================================================\nPART 4: BOTTOM LINE\n========================================================================================\n  [PASS] The current stack does not already realize the sharpest local Wilson certificate for the DM route  (if it did, it would already realize the excluded generic Wilson-to-dW_e^H source family route)\n  [PASS] So the remaining gap is genuinely constructive even at the sharpest local level  (positive construction of Phi_chain plus the descended identity still remains)\n\n========================================================================================\nSUMMARY: PASS=8 BOUNDARY=1 HARD_ISSUES=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021029Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_to_dweh_adjacent_chain_normal_form_theorem_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_to_dweh_adjacent_chain_normal_form_theorem_2026_04_18.py",
+ "seed": 29424,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8af0168a",
+ "started_utc": "20260923T021024Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "32ae4968d1f1571e35a8c08f36b0111d98cecb269395e7a913d4d8c600fea302",
+ "stdout_tail": "etermine the full 9-dimensional image algebra  (rank=9)\n\n========================================================================================\nPART 3: THE DESCENDED LAW IS EQUIVALENT TO A CHAIN-GENERATED BASIS CHECK\n========================================================================================\n  [PASS] The chain-generated Hermitian basis already spans all 9 real directions of Herm(3)  (rank=9)\n  [PASS] So matching the descended law on that chain basis already reconstructs the full Hermitian target exactly  (err=0.00e+00)\n\n========================================================================================\nPART 4: THE MINIMAL-CERTIFICATE ROUTE IS THEREFORE A NORMAL FORM, NOT AN EXTRA GUESS\n========================================================================================\n  [PASS] The minimal-certificate note already packages the structured route as Phi_chain plus the descended identity into dW_e^H\n  [PASS] Therefore the adjacent-chain attack is without loss inside the structured embedding class  (any rank-3 embedding is determined by its adjacent-chain restriction and basis responses)\n  [PASS] But the script has not proved that every generic 9-channel Wilson family extends to such an embedding  (universal forcing beyond the structured class remains open)\n\n========================================================================================\nSUMMARY: PASS=12 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

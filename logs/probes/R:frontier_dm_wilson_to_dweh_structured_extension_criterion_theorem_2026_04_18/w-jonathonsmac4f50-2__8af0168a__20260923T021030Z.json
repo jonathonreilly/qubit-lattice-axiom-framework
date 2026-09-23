@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_to_dweh_structured_extension_criterion_theorem_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_to_dweh_structured_extension_criterion_theorem_2026_04_18.py",
+ "seed": 29430,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8af0168a",
+ "started_utc": "20260923T021030Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1657ec923904d917a0a54bffcecbe9c74be50a7a42be082626e20185e55a01a9",
+ "stdout_tail": "ASS] Those identities make the complex extension multiplicative on arbitrary complex matrices  (defect=8.78e-15)\n  [PASS] The image of 1_3 has rank 3 for the structured model family  (rank=3)\n\n========================================================================================\nPART 4: AN INJECTIVE HERMITIAN FAMILY CAN STILL FAIL TO EXTEND STRUCTURALLY\n========================================================================================\n  [PASS] A perturbed Hermitian family can remain injective on the 9-dimensional real source space  (rank=9)\n  [PASS] But failing the Jordan criterion already obstructs structured extension  (defect=2.42e-01)\n  [PASS] Failing the Lie criterion also obstructs structured extension  (defect=1.20e-01)\n  [PASS] Accordingly the unique complex *-preserving extension is no longer multiplicative  (defect=8.34e-01)\n\n========================================================================================\nPART 5: FINITE BASIS CHECKING IS ENOUGH\n========================================================================================\n  [PASS] Once the basis-pair Jordan identities hold, random linear combinations satisfy them too  (err=3.31e-16)\n  [PASS] Once the basis-pair Lie identities hold, random linear combinations satisfy them too  (err=4.13e-16)\n\n========================================================================================\nSUMMARY: PASS=15 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021030Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_to_dweh_structured_extension_criterion_theorem_2026_04_18.txt against the .txt beside this log"
+  ]
+ }
+}

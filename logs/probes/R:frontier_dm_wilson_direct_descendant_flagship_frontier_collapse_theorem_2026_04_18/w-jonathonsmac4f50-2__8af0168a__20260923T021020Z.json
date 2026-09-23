@@ -1,0 +1,41 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18.py",
+ "seed": 29420,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8af0168a",
+ "started_utc": "20260923T021020Z",
+ "elapsed_s": 0.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b9415058370bfbc9fec6e29525b85a27dcee706384b2e89306f27cf6251b221f",
+ "stdout_tail": "recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18.py\", line 335, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18.py\", line 176, in main\n    publication_matrix = read(\"docs/publication/ci3_z3/PUBLICATION_MATRIX.md\")\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18.py\", line 66, in read\n    return (ROOT / rel_path).read_text(encoding=\"utf-8\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/publication/ci3_z3/PUBLICATION_MATRIX.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021021Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'DM WILSON DIRECT-DESCENDANT FLAGSHIP FRONTIER COLLAPSE THEOREM' vs cache 'SUMMARY: PASS=12 BOUNDARY=3 HARD_ISSUES=0'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/publication/ci3_z3/PUBLICATION_MATRIX.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021021Z"
+ }
+}

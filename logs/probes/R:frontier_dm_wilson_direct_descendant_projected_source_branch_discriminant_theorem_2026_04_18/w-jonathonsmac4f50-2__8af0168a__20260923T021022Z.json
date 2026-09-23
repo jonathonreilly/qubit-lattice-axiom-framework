@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_projected_source_branch_discriminant_theorem_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_projected_source_branch_discriminant_theorem_2026_04_18.py",
+ "seed": 29422,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8af0168a",
+ "started_utc": "20260923T021022Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4466f582c11e46aae131d07dd90564322551b45bfd407443631d613721cfa654",
+ "stdout_tail": "================\n  [PASS] Basin 1 has positive Delta_src while Basin 2 and Basin X have negative Delta_src  (deltas={Basin 1: 0.959174, Basin 2: -70377.185680, Basin X: -20061.597712})\n  [PASS] All three rival basins carry the same exact projected-source triplet  (triplet=(0.5, 1.632993161855, 0.942809041582))\n\n========================================================================================\nPART 4: THE DISCRIMINANT REALLY USES FINER DATA THAN (gamma, E1, E2)\n========================================================================================\n  [PASS] Two points can share the exact triplet but still differ sharply in the remaining projected-source entries  (max nontriplet change=63.255794)\n  [PASS] On the active affine family the odd side slots A12 and A23 stay zero while A13 stays fixed at one  (active-family CP support sits entirely in A13)\n\n========================================================================================\nPART 5: BOTTOM LINE\n========================================================================================\n  [PASS] The current imposed branch-choice rule has an exact projected-source scalar representative Delta_src(dW_e^H)  (future positive selector work can now target Delta_src > 0 directly rather than only the abstract branch label)\n\n========================================================================================\nSUMMARY: PASS=11 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

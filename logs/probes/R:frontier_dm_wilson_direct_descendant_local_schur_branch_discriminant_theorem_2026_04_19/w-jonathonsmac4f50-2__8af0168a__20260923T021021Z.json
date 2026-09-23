@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_local_schur_branch_discriminant_theorem_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_local_schur_branch_discriminant_theorem_2026_04_19.py",
+ "seed": 29421,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8af0168a",
+ "started_utc": "20260923T021021Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e5f6e5235c6a4f9843d85d7912b2888821740fe18b7b4eeaac78ed66e78706e1",
+ "stdout_tail": "SS] The explicit cubic Delta_src equals det(H_e) on completion 2  (err=1.43e-09)\n  [PASS] The local branch-discriminant sign is ambient-completion invariant once L_e is fixed  (delta_1=+0.02731431, delta_2=+0.02731431)\n\n========================================================================================\nPART 3: THE FROZEN TRIPLET STILL DOES NOT DETERMINE THE BRANCH SIGN\n========================================================================================\n  [PASS] All three live basins carry the same exact triplet (gamma, E1, E2)  (triplet=(0.5, 1.632993161855, 0.942809041582))\n  [PASS] The exact branch-discriminant sign distinguishes Basin 1 from Basin 2 and Basin X  (deltas={Basin 1: +0.959174, Basin 2: -70377.185680, Basin X: -20061.597712})\n  [PASS] So the live positive-branch rule cannot factor only through the frozen triplet channels  (same triplet, opposite Delta_src signs)\n\n========================================================================================\nPART 4: BOTTOM LINE\n========================================================================================\n  [PASS] The current source-branch discriminator is exactly a local sign law on L_e  (positive branch = Delta_src(dW_e^H) = det(H_e(L_e)) > 0; ambient completion cannot change it once L_e is fixed)\n\n========================================================================================\nSUMMARY: PASS=10 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021021Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

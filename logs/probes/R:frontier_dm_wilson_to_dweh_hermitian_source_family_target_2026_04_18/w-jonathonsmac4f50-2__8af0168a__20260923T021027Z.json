@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_to_dweh_hermitian_source_family_target_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_to_dweh_hermitian_source_family_target_2026_04_18.py",
+ "seed": 29427,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8af0168a",
+ "started_utc": "20260923T021027Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "72a8b51bb98f47a5dfd07e27eb2e822c55a94c25be9a179c6e915abf8bd01691",
+ "stdout_tail": " 8 channels leave a nontrivial null direction)\n\n========================================================================================\nPART 4: ONCE H_e IS KNOWN THE REST IS ALGORITHMIC\n========================================================================================\n  [PASS] The reconstructed H_e fixes the charged-lepton-active packet  (col sums=[1. 1. 1.])\n  [PASS] The exact transport selector then fixes the relevant flavored DM column algorithmically  (eta/eta_obs=[0.820756 0.989513 0.920617])\n  [PASS] The selected column reproduces the near-closing PMNS-assisted value  (eta/eta_obs=0.989512704600)\n\n  Therefore the remaining constructive primitive is upstream of H_e:\n  one Wilson-side Hermitian source family whose first variations land on dW_e^H.\n\n========================================================================================\nPART 5: BOTTOM LINE\n========================================================================================\n  [PASS] The weakest honest constructive target is a nine-channel Wilson Hermitian source family for dW_e^H  (sufficient by exact reconstruction and minimal by dimension count)\n  [PASS] This target is strictly upstream of the present imposed source-branch rule  (it changes the information content before the selector is applied)\n\n========================================================================================\nSUMMARY: PASS=14 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021028Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_to_dweh_hermitian_source_family_target_2026_04_18.txt against the .txt beside this log"
+  ]
+ }
+}

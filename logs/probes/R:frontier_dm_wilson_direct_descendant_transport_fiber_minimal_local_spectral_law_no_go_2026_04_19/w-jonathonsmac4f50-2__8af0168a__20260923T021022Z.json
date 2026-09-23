@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_transport_fiber_minimal_local_spectral_law_no_go_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_transport_fiber_minimal_local_spectral_law_no_go_2026_04_19.py",
+ "seed": 29422,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8af0168a",
+ "started_utc": "20260923T021022Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f98582fb8ed1f92d7063c8179c242befe1ea2728eb3439383f5f5e10d009a56e",
+ "stdout_tail": "ked and not executed \u2014 individual Schur eigenvalues are never extracted here. This runner works exclusively at the symmetric-invariant level (T, Q, Delta) = (Tr H_e, Tr H_e^2, det H_e), which is the note's own framing of the completed spectral coordinates; the modes are aggregated into those three invariants before any law is applied.\n  per_block: checked \u2014 rank is certified after restriction to the transport-fiber tangent block, and the certificate is precisely the rank drop across two restrictions: the raw map has shape (3,3) and full rank 3 there, while the scale-normalized pair has shape (2,3) and rank 2, leaving the 1-real local degeneracy that defeats every scale-free law.\n  lattice_wide: checked and not executed \u2014 nothing is extended, scaled or taken to a limit. The searches are finite enumerations over a fixed explicit packet: raw monomials to total degree 3, normalized monomials to total degree 4, and a three-coefficient linear program for the affine class, all at one locality.\n\n  W1 invariants                 = [1.753967 2.252397 0.018682]\n  W1 normalized pair            = [0.732154 0.003462]\n  W1 minimal candidate QDelta   = 0.042079558293\n  best explicit rival QDelta    = 0.038203540297\n  affine W1 weights             = [ 59.49702  -12.124073 211.559217]\n  affine B_major weights        = [  0.        3.30728 930.9973 ]\n  ||P_fiber grad(QDelta)||      = 0.080118232306\n  nearby ascent pack            = [1.05222  0.098778 0.122675 1.348161 0.018669]\n  PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021023Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

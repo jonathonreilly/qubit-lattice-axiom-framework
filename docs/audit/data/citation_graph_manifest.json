@@ -1,6 +1,6 @@
 {
- "edge_count": 13772,
- "node_count": 6286,
+ "edge_count": 13789,
+ "node_count": 6293,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16566,6 +16566,26 @@
    "deps_hash": "f015d82dc5d6",
    "out_degree": 1
   },
+  "rotor_joint_bounded_neutral_matter_dynamics_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5fea79029341",
+   "out_degree": 3
+  },
+  "rotor_joint_equal_time_weyl_car_state_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "20ebe2a5ff8e",
+   "out_degree": 4
+  },
+  "rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5ab50842bad9",
+   "out_degree": 2
+  },
+  "rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "44f4e1882858",
+   "out_degree": 3
+  },
+  "rotor_joint_real_time_gauge_two_point_limit_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "20ebe2a5ff8e",
+   "out_degree": 4
+  },
   "rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16": {
    "deps_hash": "e00146c2daf3",
    "out_degree": 2
@@ -16573,6 +16593,10 @@
   "rotor_reference_vertex_infrared_weighted_norms_bounded_theorem_note_2026-09-16": {
    "deps_hash": "85572dc97c5c",
    "out_degree": 3
+  },
+  "rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "e535a9ace557",
+   "out_degree": 1
   },
   "route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30": {
    "deps_hash": "20e02c11a8d5",
@@ -24567,6 +24591,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8158.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8160.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

@@ -1,0 +1,33 @@
+FAIL A01 note exists
+PASS A02 proper cubic group has 24 rotations
+PASS A03 repaired role census is exact :: Counter({'T': 21, 'A': 12, 'K': 9, 'F': 6, 'J': 3})
+PASS A04 repair reuses the exact Cycle-62 footprint
+PASS A05 every J has exactly two F parents
+PASS A06 every K has a J parent
+PASS A07 every A has F and K parents
+PASS A08 every T has an A parent
+PASS B01 repaired table has 32 canonical rows :: Counter({'F': 12, 'A': 8, 'J': 7, 'K': 3, 'T': 2})
+PASS B02 repaired table has 696 raw rotated rows :: 696
+PASS B03 every repaired raw row is single-valued
+PASS B04 completed-C60 local condition census is 234 :: 234
+PASS B05 arbitrary subsets expose 27 apparent rank inversions :: 27
+PASS C01 exact Cycle-60 reachable-state census is retained :: 242,033
+PASS C02 legacy mixed-context census is exact :: 7687
+PASS C03 legacy feasible-context census is exact :: 2737
+PASS C04 legacy table has six delayed-F wrong-write classes :: [((0, -3, -3), 'PHASE', ('T',), 'F'), ((0, -2, -4), 'PHASE', ('T',), 'F'), ((2, -3, -1), 'PHASE', ('T',), 'F'), ((2, 0, -4), 'PHASE', ('T',), 'F'), ((3, -2, -1), 'PHASE', ('T',), 'F'), ((3, 0, -3), 'PHASE', ('T',), 'F')]
+PASS C05 every legacy wrong write is T stealing F
+PASS C06 legacy scan has no merged-output conflict
+PASS C07 legacy phase cannot block an unfinished comb target
+PASS D01 AB-only table has 34 canonical rows :: Counter({'F': 12, 'A': 10, 'AB': 7, 'T': 5})
+PASS D02 AB-only table has 684 raw rotated rows :: 684
+PASS D03 AB-only feasible bridge-context census is exact :: 204
+PASS D04 AB-only split retains 96 wrong-write contexts :: Counter({((3, 0, -4), 'PHASE', ('A',), 'AB'): 32, ((3, -3, -1), 'PHASE', ('A',), 'AB'): 32, ((0, -3, -4), 'PHASE', ('A',), 'AB'): 32})
+PASS D05 every AB-only wrong write is A stealing AB
+PASS D06 AB-only bridge scan has no merged-output conflict
+PASS E01 repaired mixed-context census is exact :: 8911
+PASS E02 repaired feasible-context census is exact :: 2353
+PASS E03 repaired table has no feasible wrong/off-footprint write :: ()
+PASS E04 repaired table has no feasible merged-output conflict
+PASS E05 repaired phase cannot block an unfinished comb target
+
+SUMMARY: 30 PASS / 1 FAIL

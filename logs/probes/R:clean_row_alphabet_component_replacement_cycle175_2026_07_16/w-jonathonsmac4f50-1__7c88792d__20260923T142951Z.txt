@@ -1,0 +1,48 @@
+AUTHORITY AND CODEBOOK
+FAIL Cycle-175 review note exists :: 
+PASS the replacement codebook is injective and keeps exactly 25 labels :: (((0, 0, 0, 1, 1), 'A_0_1', 'PAIR'), ((0, 0, 1, 0, 0), 'A_0_2', 'Z0'), ((0, 1, 1, 0, 1), 'BTG', 'Z_A'), ((0, 1, 1, 1, 1), 'BTQ', 'Z_C'), ((1, 0, 0, 0, 0), 'B_0_2', 'RING'), ((1, 0, 0, 1, 0), 'COMP6', 'R_A02'), ((1, 0, 1, 1, 1), 'DONE', 'R_A00'))
+PASS all seven replacement labels are Cycle-171 carrier-clean existing roles :: 
+
+COMPONENT REPLACEMENT INVENTORY
+COMPONENT cycle149_tableau_row_gate tableau 3072 1056
+COMPONENT cycle151_commuting_multiplier multiplier 6528 2988
+COMPONENT cycle152_pivot_router router 4896 1008
+COMPONENT cycle153_row_literal_fanout reader 960 210
+COMPONENT cycle155_ported_row_reader reader 3072 672
+COMPONENT cycle158_two_port_row_reader reader 3072 672
+COMPONENT cycle162_row_transport transport 1536 336
+COMPONENT cycle163_mux_gate mux 3840 840
+COMPONENT cycle163_mux_join mux 768 168
+COMPONENT cycle163_mux_terminal mux 768 168
+COMPONENT cycle165_payload_tap tap 768 168
+COMPONENT cycle166_row_splitter update 768 168
+COMPONENT cycle166_integrated_gate update 3840 840
+COMPONENT cycle167_sign_reader sign 768 168
+PASS fourteen atomic row-parametric families are replaced, not duplicated :: ({'component_sum': 33888, 'component_union': 32352, 'component_overlap': 1536, 'removed_signatures': 7926, 'added_signatures': 7926, 'changed_at_same_signature': 1032, 'unchanged_signatures': 23394, 'missing': 0, 'remainder': 68300, 'affected_by_component': {'cycle149_tableau_row_gate': 1056, 'cycle151_commuting_multiplier': 2988, 'cycle152_pivot_router': 1008, 'cycle153_row_literal_fanout': 210, 'cycle155_ported_row_reader': 672, 'cycle158_two_port_row_reader': 672, 'cycle162_row_transport': 336, 'cycle163_mux_gate': 840, 'cycle163_mux_join': 168, 'cycle163_mux_terminal': 168, 'cycle165_payload_tap': 168, 'cycle166_row_splitter': 168, 'cycle166_integrated_gate': 840}, 'mapped_sizes': {'cycle149_tableau_row_gate': 3072, 'cycle151_commuting_multiplier': 6528, 'cycle152_pivot_router': 4896, 'cycle153_row_literal_fanout': 960, 'cycle155_ported_row_reader': 3072, 'cycle158_two_port_row_reader': 3072, 'cycle162_row_transport': 1536, 'cycle163_mux_gate': 3840, 'cycle163_mux_join': 768, 'cycle163_mux_terminal': 768, 'cycle165_payload_tap': 768, 'cycle166_row_splitter': 768, 'cycle166_integrated_gate': 3840}, 'candidate_size': 100652, 'conflicts': {}}, {'component_sum': 34656, 'component_union': 33120, 'component_overlap': 1536, 'removed_signatures': 8094, 'added_signatures': 8094, 'changed_at_same_signature': 1032, 'unchanged_signatures': 23994, 'missing': 0, 'remainder': 68588, 'affected_by_component': {'cycle149_tableau_row_gate': 1056, 'cycle151_commuting_multiplier': 2988, 'cycle152_pivot_router': 1008, 'cycle153_row_literal_fanout': 210, 'cycle155_ported_row_reader': 672, 'cycle158_two_port_row_reader': 672, 'cycle162_row_transport': 336, 'cycle163_mux_gate': 840, 'cycle163_mux_join': 168, 'cycle163_mux_terminal': 168, 'cycle165_payload_tap': 168, 'cycle166_row_splitter': 168, 'cycle166_integrated_gate': 840, 'cycle167_sign_reader': 168}, 'mapped_sizes': {'cycle149_tableau_row_gate': 3072, 'cycle151_commuting_multiplier': 6528, 'cycle152_pivot_router': 4896, 'cycle153_row_literal_fanout': 960, 'cycle155_ported_row_reader': 3072, 'cycle158_two_port_row_reader': 3072, 'cycle162_row_transport': 1536, 'cycle163_mux_gate': 3840, 'cycle163_mux_join': 768, 'cycle163_mux_terminal': 768, 'cycle165_payload_tap': 768, 'cycle166_row_splitter': 768, 'cycle166_integrated_gate': 3840, 'cycle167_sign_reader': 768}, 'candidate_size': 101708, 'conflicts': {}})
+PASS literal membership comparators require fixture replay but no raw rewrite :: 288
+
+RAW DETERMINISM GATE
+PASS the replacement Cycle-166 law is deterministic :: (100652, 0, ())
+PASS the replacement Cycle-169 unified law is deterministic :: (101708, 0, ())
+
+HARD FIXTURE REPRODUCTION
+PASS all four Cycle-166 hard cases reproduce under the replacement codebook :: (((True, (30634, 269149, 16, 379288, 30633, (0, 0), (0, 0), ('L3', 'L5'), ('A_0_2', 'AUXZ'), ('A_0_2', 'AUXZ'), 'A_1_2', {}, 17)), (True, (30638, 268513, 16, 379288, 30637, (0, 1), (0, 1), ('L3', 'L6'), ('A_0_2', 'A_2_1'), ('A_0_2', 'A_2_1'), 'A_1_2', {}, 17)), (True, (30704, 269499, 16, 379288, 30703, (1, 0), (1, 0), ('L4', 'L5'), ('B_0_2', 'AUXZ'), ('B_0_2', 'AUXZ'), 'A_1_2', {}, 17)), (True, (30832, 269435, 16, 379288, 30831, (1, 1), (1, 1), ('L4', 'L7'), ('E', 'A_1_2'), ('E', 'A_1_2'), 'A_1_2', {}, 17))), ((True, (30634, 269149, 16, 379288, 30633, (0, 0), (0, 0), ('L3', 'L5'), ('Z0', 'AUXZ'), ('Z0', 'AUXZ'), 'A_1_2', {}, 17)), (True, (30638, 268513, 16, 379288, 30637, (0, 1), (0, 1), ('L3', 'L6'), ('Z0', 'A_2_1'), ('Z0', 'A_2_1'), 'A_1_2', {}, 17)), (True, (30704, 269499, 16, 379288, 30703, (1, 0), (1, 0), ('L4', 'L5'), ('RING', 'AUXZ'), ('RING', 'AUXZ'), 'A_1_2', {}, 17)), (True, (30832, 269435, 16, 379288, 30831, (1, 1), (1, 1), ('L4', 'L7'), ('E', 'A_1_2'), ('E', 'A_1_2'), 'A_1_2', {}, 17))))
+PASS the Cycle-169 min/max hard fixture reproduces exactly :: (((True, (132542, 2261261, 27, 1587398, 132541, (0, 0, 1), 1, 'H1', ())), (True, (132542, 1685913, 23, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))), ((True, (132542, 2261261, 27, 1587398, 132541, (0, 0, 1), 1, 'H1', ())), (True, (132542, 1685913, 23, 1587398, 132541, (0, 0, 1), 1, 'H1', ()))))
+
+ALL-32 RECURRENT CARRIER GATE
+PASS the replacement carrier delta is deterministic on the Cycle-169 union :: (3168, 104876, ())
+PASS all 32 replacement row values close through G1-G3 :: ()
+
+SCOPE
+FAIL review note prices the table reset and denies axiom pressure :: 
+
+ACCOUNTING
+OLD_ROW_ROLES ('ARM', 'AUXY', 'AUXZ', 'A_0_1', 'A_0_2', 'A_1_0', 'A_1_2', 'A_2_0', 'A_2_1', 'A_2_2', 'A_3_0', 'A_3_1', 'A_3_2', 'BTG', 'BTP', 'BTQ', 'B_0_2', 'B_1_2', 'COMP6', 'COMPLETE', 'C_Q', 'D0', 'D1', 'DONE', 'E', 'F', 'FP', 'G1', 'I1', 'I2', 'JOIN', 'L1')
+NEW_ROW_ROLES ('ARM', 'AUXY', 'AUXZ', 'PAIR', 'Z0', 'A_1_0', 'A_1_2', 'A_2_0', 'A_2_1', 'A_2_2', 'A_3_0', 'A_3_1', 'A_3_2', 'Z_A', 'BTP', 'Z_C', 'RING', 'B_1_2', 'R_A02', 'COMPLETE', 'C_Q', 'D0', 'D1', 'R_A00', 'E', 'F', 'FP', 'G1', 'I1', 'I2', 'JOIN', 'L1')
+ALIAS_REPLACEMENT {'A_0_1': 'PAIR', 'A_0_2': 'Z0', 'BTG': 'Z_A', 'BTQ': 'Z_C', 'B_0_2': 'RING', 'COMP6': 'R_A02', 'DONE': 'R_A00'}
+INVENTORY166 {'component_sum': 33888, 'component_union': 32352, 'component_overlap': 1536, 'removed_signatures': 7926, 'added_signatures': 7926, 'changed_at_same_signature': 1032, 'unchanged_signatures': 23394, 'missing': 0, 'remainder': 68300, 'affected_by_component': {'cycle149_tableau_row_gate': 1056, 'cycle151_commuting_multiplier': 2988, 'cycle152_pivot_router': 1008, 'cycle153_row_literal_fanout': 210, 'cycle155_ported_row_reader': 672, 'cycle158_two_port_row_reader': 672, 'cycle162_row_transport': 336, 'cycle163_mux_gate': 840, 'cycle163_mux_join': 168, 'cycle163_mux_terminal': 168, 'cycle165_payload_tap': 168, 'cycle166_row_splitter': 168, 'cycle166_integrated_gate': 840}, 'mapped_sizes': {'cycle149_tableau_row_gate': 3072, 'cycle151_commuting_multiplier': 6528, 'cycle152_pivot_router': 4896, 'cycle153_row_literal_fanout': 960, 'cycle155_ported_row_reader': 3072, 'cycle158_two_port_row_reader': 3072, 'cycle162_row_transport': 1536, 'cycle163_mux_gate': 3840, 'cycle163_mux_join': 768, 'cycle163_mux_terminal': 768, 'cycle165_payload_tap': 768, 'cycle166_row_splitter': 768, 'cycle166_integrated_gate': 3840}, 'candidate_size': 100652, 'conflicts': {}}
+INVENTORY169 {'component_sum': 34656, 'component_union': 33120, 'component_overlap': 1536, 'removed_signatures': 8094, 'added_signatures': 8094, 'changed_at_same_signature': 1032, 'unchanged_signatures': 23994, 'missing': 0, 'remainder': 68588, 'affected_by_component': {'cycle149_tableau_row_gate': 1056, 'cycle151_commuting_multiplier': 2988, 'cycle152_pivot_router': 1008, 'cycle153_row_literal_fanout': 210, 'cycle155_ported_row_reader': 672, 'cycle158_two_port_row_reader': 672, 'cycle162_row_transport': 336, 'cycle163_mux_gate': 840, 'cycle163_mux_join': 168, 'cycle163_mux_terminal': 168, 'cycle165_payload_tap': 168, 'cycle166_row_splitter': 168, 'cycle166_integrated_gate': 840, 'cycle167_sign_reader': 168}, 'mapped_sizes': {'cycle149_tableau_row_gate': 3072, 'cycle151_commuting_multiplier': 6528, 'cycle152_pivot_router': 4896, 'cycle153_row_literal_fanout': 960, 'cycle155_ported_row_reader': 3072, 'cycle158_two_port_row_reader': 3072, 'cycle162_row_transport': 1536, 'cycle163_mux_gate': 3840, 'cycle163_mux_join': 768, 'cycle163_mux_terminal': 768, 'cycle165_payload_tap': 768, 'cycle166_row_splitter': 768, 'cycle166_integrated_gate': 3840, 'cycle167_sign_reader': 768}, 'candidate_size': 101708, 'conflicts': {}}
+FIXTURE_ROWS (((0, 0, 1, 0, 0), (0, 0, 0, 1, 0), (0, 0, 1, 1, 0)), ((0, 0, 1, 0, 0), (0, 0, 0, 1, 0), (0, 1, 0, 0, 0)), ((0, 0, 1, 0, 0), (0, 0, 0, 1, 0), (1, 0, 0, 0, 0)), ((0, 0, 1, 0, 0), (0, 0, 0, 1, 0), (1, 1, 0, 0, 0))) ((0, 1, 0, 0, 0), (1, 0, 0, 0, 1), (1, 1, 0, 0, 1))
+CARRIER 132 3168 104876 32 0
+PASS 10 FAIL 2
+RESULT CYCLE175_OPEN

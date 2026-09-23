@@ -1,0 +1,20 @@
+
+=== Unit 16: symplectic-leg chi_sgn-covariance of omega=-J_full + omega-pairing census ===
+PASS G-CONSTRUCT-J2 - inherited J_full^2 = -I (Unit 8 total complex structure)
+PASS G-DECOMP-COMPLETE - six Unit-14 constituent projectors are Hermitian/idempotent/orthogonal/H-invariant and resolve I_64 (residuals 0.0e+00/5.3e-16/3.9e-16/1.3e-14/3.6e-15)
+PASS G-DECOMP-RANKS - constituent ranks [8, 8, 12, 12, 12, 12] == [8, 8, 12, 12, 12, 12]
+PASS G-OMEGA-DEF - omega = -J_full antisymmetric (||w+w^T|| = 0.0e+00) and full rank 64 == 64
+PASS G-OMEGA-INV - |G_amb|=768==768 and g^T w g = +w on every element (max dev 0.0e+00); wrong-sign rejector 0.748 > max|w| 0.374
+PASS G-OMEGA-COSET - 768-element disjoint normalized S_eps-coset gives |H|=1536==1536 and c^T w c = -w on every coset element (max dev 0.0e+00); wrong-sign rejector 0.748 > max|w| 0.374
+PASS G-OMEGA-SEPS - S_eps^T w S_eps = -w (dev 0.0e+00); wrong-sign rejector 0.748 > max|w| 0.374
+PASS G-PAIR-INDUCED - induced self-blocks nondegenerate, ranks [8, 8, 12, 12] == [8, 8, 12, 12]
+PASS G-PAIR-ISOTROPIC - omega vanishes within 12+ (||1.3e-14||) and within 12- (||1.2e-14||)
+PASS G-PAIR-CROSS - 12+ <-> 12- cross-pairing nondegenerate, rank 12 == 12
+PASS G-PAIR-OFFDIAG - all remaining pairs vanish (max off-block ||1.4e-13||)
+PASS G-PAIR-RANK - assembled G antisymmetric, rank 64 == 64; accounting 40 + 2*12 = 64 == 64
+PASS G-CONTRAST-SYMVSANTI - 12+: all 12 symmetric-form singular values equal 1 (max dev 4.4e-16); omega self ||1.3e-14|| isotropic
+FAIL G-PIN-U14 - Unit-14 six-constituent pin present in KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md
+PASS G-PIN-U10 - Unit-10 symplectic-leg pins present: 'J_full^T g = -J_full' and 'U^T omega U = omega'
+FAIL G-PIN-SELF - self-note dep edges: total 0==2, U14 0==1, U10 0==1, U9/U13/U15 = 0/0/0==0
+
+TOTAL: PASS=14 FAIL=2

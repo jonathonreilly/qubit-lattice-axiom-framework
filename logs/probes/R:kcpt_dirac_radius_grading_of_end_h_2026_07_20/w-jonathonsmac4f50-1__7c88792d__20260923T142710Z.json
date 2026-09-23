@@ -1,0 +1,36 @@
+{
+ "task": "R:kcpt_dirac_radius_grading_of_end_h_2026_07_20",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_dirac_radius_grading_of_end_h_2026_07_20.py",
+ "seed": 73630,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c88792d",
+ "started_utc": "20260923T142710Z",
+ "elapsed_s": 23.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=13 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ba32157a0fd93bd11b5eec1ddebf8b4c1b74fafd10d0e614564801648a4cde1b",
+ "stdout_tail": "9.8e-15); P block-diagonal (max off-block |Z_i^H P Z_j|=2.0e-14<1e-9)\nPASS G10 - THE COMPUTED ASSIGNMENT: CP-split pair {12+,12-} both at m=[1, 1]==[1,1] (RADIUS-DEGENERATE, lambda=-2); induced 12's at m=[2, 2]==[2,2] (lambda=-2sqrt2); induced 8's at the extreme shells m(set)=[0, 3]=={0,3} (kernel + top). Dirac radius does NOT separate 12+ from 12- -- the quotient-sign-related H-constituents receive the same scalar from P\nPASS G11 - ANTI-FAB: D2 alone has a NONZERO chi_sgn off-block |Z_12+^H D2 Z_12-|=1.227>1 and is NOT block-scalar (max D2-alone |blk-scal|=3.103>1), so P's block-diagonality is NOT inherited from D2; the sqrt(m)->1 proxy gives INTEGER block values -2m [-6, -4, -2, 0]==[-6,-4,-2,0], NOT the irrational -2sqrt m -- no integer proxy fakes it\nFAIL G-PIN-U14 - SOURCE PIN Unit 14: CP-completion note contains `9216 / 1536 = 6` (c_H=6, the six constituents P is block-scalar on)\nPASS G-PIN-U9 - SOURCE PIN Unit 9: common-sign-orbit note contains `S_eps J_full S_eps = -J_full` (with S_eps D2 S_eps=-D2, the two sign reversals that make P chi_sgn-even -> H-invariant)\nFAIL G-PIN-SELF - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 0==2 (Unit14 0==1, Unit9 0==1); Units 8/10/11/12/13 linked 0/0/0/0/0==0 (backticked only, never `](...)`)\nPASS G-MEM - MEMORY-BUDGET: greedy generating sets close exactly -- G_amb 4 gens -> 768==768, H 5 gens -> 1536==1536; commutant kron stacks use these generators, never a per-element stack over 768/1536 (OOM-avoiding)\nTOTAL: PASS=13 FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T142734Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=13 FAIL=2' vs cache 'TOTAL: PASS=15 FAIL=0'"
+  ]
+ }
+}

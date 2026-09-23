@@ -1,0 +1,32 @@
+{
+ "task": "R:monotone_phase_transducer_cycle64_scratch_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "monotone",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/monotone_phase_transducer_cycle64_scratch_2026_07_14.py",
+ "seed": 73422,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c88792d",
+ "started_utc": "20260923T142342Z",
+ "elapsed_s": 1.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eb8c47611cfe5737c39a4620ef8b4ea7a57eaa9706a998f86f45e2781b4b06ec",
+ "stdout_tail": "FAIL A note exists\nPASS A proper cubic group has 24 rotations\nPASS A P continuation boundary has 75 sites\nPASS A complete transducer has 152 additions\nPASS A complete transducer has 142 canonical rows :: Counter({'T': 39, 'A': 33, 'P': 16, 'F': 12, 'L2': 8, 'Q1': 6, 'Q2': 5, 'PHASE_E': 5, 'GUIDE': 4, 'Q0': 4, 'X_B': 4, 'HEAD': 2, 'C_Q': 2, 'Z_A': 1, 'Z_C': 1})\nPASS A official phase sites have exact contents\nPASS A q/a/b/c official sites are role-distinct\nPASS B auxiliaries avoid current official support\nPASS B auxiliaries avoid next translated support\nPASS B next q/a/b/c remain open\nPASS B designated b phase port carries PHASE_E\nPASS C all rotated inputs are single-valued\nPASS C every compiled write stays on footprint\nFAIL C every target has one output\nPASS C every declared target has a compiled condition\nPASS D every non-F target has its lower-rank parent\nPASS D every F has fixed R2/S8 parents\nPASS D rank closure proves a unique complete terminal\nPASS E official order is OPEN_C < C < X < endpoint Z\nPASS E endpoint Z writes are independent peers\nPASS E no builder or next-header site is written\n\nROWS=142 RAW=2,994 CONDITIONS=1,937\nSUMMARY: 19 PASS / 2 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T142344Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

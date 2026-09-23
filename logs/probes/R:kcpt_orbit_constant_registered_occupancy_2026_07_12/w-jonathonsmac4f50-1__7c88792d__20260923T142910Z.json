@@ -1,0 +1,36 @@
+{
+ "task": "R:kcpt_orbit_constant_registered_occupancy_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py",
+ "seed": 73750,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c88792d",
+ "started_utc": "20260923T142910Z",
+ "elapsed_s": 10.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=72 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f9684c27a382b52a63b30eb542074390e6bb5c656d939f365c79a418e050fb90",
+ "stdout_tail": " needs no K-odd input\nV6 PASS admissibility_authority_note_available :: dynamic flattened-whitespace controlled-copy class quotation\nV6 PASS flavor_note_Born_comparator_verbatim\nV6 PASS W1b_supplied_context_quote_verbatim_in_target :: complete blockquote compared after whitespace flattening\nV6 PASS W1b_grain_formula_authority_available :: dynamic flattened-whitespace p_d-to-r derivation\nV6 PASS Born_2block_weights_imply_r_one_exact :: solutions=[1]\nV7 PASS W1b_L2_update_family_source_available :: dynamic flattened-whitespace L2 family definition\nV7 PASS target_imports_W1b_L2_definition_exactly :: same two-sector family text on source and target; no off-surface law\nV7 PASS Koide_doublet_constancy_note_available :: dynamic observable-face boundary quotation\nV7 PASS W1b_common_f_exchange_identity\nV7 PASS W1b_fixed_equation_reproved :: T_f(q)=q iff f(q)(1-q)=q f(1-q); strict sharpening excludes off-center roots\nV7 PASS W1b_power_subfamily_Fix_0_half_1_exact :: {'2': (0, 1/2, 1), '3': (0, 1/2, 1), '5/2': (0, 1/2, 1), '4': (0, 1/2, 1)}\nV7 PASS swap_symmetric_surface_invariance_and_Fix_0_half_1 :: 3-label face is the exact split of W1b's (p_s,p_d) family\nPATH note=docs/KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md\nPATH runner=scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py\nPATH cache=logs/runner-cache/kcpt_orbit_constant_registered_occupancy_2026_07_12.txt\nTOTAL: PASS=72 FAIL=1\nFLAGS: V1:record_additivity\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T142921Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=72 FAIL=1' vs cache 'TOTAL: PASS=73 FAIL=0'"
+  ]
+ }
+}

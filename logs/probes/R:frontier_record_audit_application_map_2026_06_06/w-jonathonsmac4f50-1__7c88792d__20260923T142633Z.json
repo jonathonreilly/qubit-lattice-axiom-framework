@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_record_audit_application_map_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_audit_application_map_2026_06_06.py",
+ "seed": 73593,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c88792d",
+ "started_utc": "20260923T142633Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=38 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4114f7d4e311003bd646fb4ec57fc924d39ba5212abe1e914dd8df9b7bf03720",
+ "stdout_tail": "case: chirality_record_typing\n  classification=record_schema_partial\n  supported=('post_record_label_consumption',)\n  missing=('car_frame', 'carrier_chirality', 'generation_transport', 'signed_readout_choice')\n[PASS] chirality_record_typing: supported gate set matches expectation -- post_record_label_consumption\n[PASS] chirality_record_typing: missing gate set matches expectation -- car_frame,carrier_chirality,generation_transport,signed_readout_choice\ncase: arrow_from_record_formation\n  classification=record_schema_partial\n  supported=('durable_realized_outcome',)\n  missing=('low_record_boundary', 'past_hypothesis', 'record_formation_dynamics')\n[PASS] arrow_from_record_formation: supported gate set matches expectation -- durable_realized_outcome\n[PASS] arrow_from_record_formation: missing gate set matches expectation -- low_record_boundary,past_hypothesis,record_formation_dynamics\n\nC. audit discipline\n[PASS] only the schema artifact itself is fully covered by Record schema -- ['record_unbounded_additivity_schema']\n[PASS] real downstream lanes are partial, not promoted -- ['flavor_det_character_selection', 'darwinism_local_observability', 'dynamics_form_record_preservation', 'color_su3_record_invariance', 'chirality_record_typing', 'arrow_from_record_formation']\n[PASS] forbidden closure claims are absent from classifier outputs\n[PASS] classifier emits only support/gate language\n\nSCORECARD: PASS=38 FAIL=1\nVERDICT: record audit application map failed; do not use this artifact.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T142633Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=38 FAIL=1' vs cache 'PASS=39 FAIL=0'"
+  ]
+ }
+}

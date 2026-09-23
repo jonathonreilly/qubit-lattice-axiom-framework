@@ -1,0 +1,32 @@
+{
+ "task": "R:coherent_orientation_character_car_compiler_cycle272_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "coherent",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/coherent_orientation_character_car_compiler_cycle272_2026_07_17.py",
+ "seed": 74360,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c88792d",
+ "started_utc": "20260923T143920Z",
+ "elapsed_s": 4.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f3164e2bdf37d3e7628b11ff6e115c3c20bccd3684815a2fd6f047daacca5622",
+ "stdout_tail": "nk': 5, 'repetition_group_frame_span_failures': 0, 'logical_leakage': 0, 'maximum_orientation_route': 4, 'one_carrier_total_M2_per_cell': 25, 'two_carrier_total_M2_per_cell': 31}\nPASS all carrier constraint families are translation covariant but no route supplies bounded parity/Wilson preparation :: {'sizes': [{'L': 3, 'translation_failures': 0, 'Wilson_increment': 3, 'maximum_Wilson_support': 21, 'cat_depth_lower_bound': 2}, {'L': 4, 'translation_failures': 0, 'Wilson_increment': 3, 'maximum_Wilson_support': 28, 'cat_depth_lower_bound': 3}, {'L': 5, 'translation_failures': 0, 'Wilson_increment': 3, 'maximum_Wilson_support': 35, 'cat_depth_lower_bound': 3}, {'L': 6, 'translation_failures': 0, 'Wilson_increment': 3, 'maximum_Wilson_support': 42, 'cat_depth_lower_bound': 5}], 'bounded_preparation': False, 'arbitrary_coherent_parity_input': 'not encoded'}\nPASS actual Cycle-230 gates and mass/rank-73 seam remain gated by the surviving parity/preparation walls :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'common_full_Fock_E': False, 'coin_A_B_FSWAP_contact_synthesis': 'not reached', 'mass_and_rank73_seam_intertwining': 'not claimed'}\nPASS the 3D frame character and coherent carriers are not physical time or Records :: {'3D_frame_character_is_spatial_structure_not_physical_time': True, 'orientation_carriers': 'coherent code data, not Records', 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 9 FAIL 1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T143925Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

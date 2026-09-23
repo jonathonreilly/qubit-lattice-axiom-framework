@@ -1,0 +1,264 @@
+{
+  "base": "eadad252feffba1891b5b774822da85b92842578",
+  "owner": "PR8178-author",
+  "files": [
+    {
+      "path": "docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "mode": "100644",
+      "sha256": "aa4070be5d8ac5d476d2e0d4864754f79603c1139f7c52f82c0012dd6960fa2f",
+      "bytes": 10341
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/README.md",
+      "mode": "100644",
+      "sha256": "76688eb9529ea3e929052c5d8f444bdef1becc58b308172e6cf5fd5005609bcd",
+      "bytes": 5457
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-07943770ffcc-a3dcc3d90687.gz",
+      "mode": "100644",
+      "sha256": "ae14760a1852ed969209fa12af6812207ca06808acd0ea85d15dce3e1e0c25da",
+      "bytes": 128143
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-327ac6e1ca83-3cc64ad72621.gz",
+      "mode": "100644",
+      "sha256": "d0ecd2701d918abf5025ee343087b429092aaa6c00b5b12ad0ad34647c7740e9",
+      "bytes": 1412
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-66f933a1bad5-e52898452cca.gz",
+      "mode": "100644",
+      "sha256": "593d137d582ab71380032bb61ee2b7bf5166f9b6168aeb1cd935493fab622ddb",
+      "bytes": 3348
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-944b13dd7067-b02b4a93b36e.gz",
+      "mode": "100644",
+      "sha256": "2e68a5fe865730b2d6c8f6fff3f844aee88ff2adadc61775d9b7fcad1e9e67d3",
+      "bytes": 539
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-b529ca506df9-6b14211f9f8f.gz",
+      "mode": "100644",
+      "sha256": "94b8b6f185fcec1e0788734d17049078ff8d0cc63d640ef11f1ce74e5d8bc7bb",
+      "bytes": 959
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-df964d1a6d40-2b955f847d5c.gz",
+      "mode": "100644",
+      "sha256": "d2c628b347cb82546480126984bdd633ad6dfabe6837b13af0ae5bd759669172",
+      "bytes": 5392
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-ec902e2beec6-7beef809b0e4.gz",
+      "mode": "100644",
+      "sha256": "118548284c2ba330407e85d69a1c864ecfdc834979377ea397bb71918a003e55",
+      "bytes": 18695
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-fe3e1b4225dc-c6e70a8f3682.gz",
+      "mode": "100644",
+      "sha256": "125741d8d3a253ffa442bb8d51b7938fc0202fb9980c9ccbbdb84e8cd3b2510f",
+      "bytes": 4298
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-07943770ffcc-bc65a62a7bea.gz",
+      "mode": "100644",
+      "sha256": "c1248ff0037fdf68ab00b1dbd4e2e93eb998e0a39da1d1dfcddded687887fd08",
+      "bytes": 128212
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-0aad5cea1cef-764089c4e4e6.gz",
+      "mode": "100644",
+      "sha256": "a6e899331d2c9b8e5d98d6be17743d5c4af96b16eaf70dbb8f7c39bbe6415343",
+      "bytes": 1902
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-0d3b66ad3efd-b3dfd4bc1e2a.gz",
+      "mode": "100644",
+      "sha256": "bdac2450b5f202dc420e84373b2716d45699b55e5093efc42b43bda7c23424d6",
+      "bytes": 1248
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-12930a8a236a-f7659e34a120.gz",
+      "mode": "100644",
+      "sha256": "4cd927cb663c47bee377f0ec57bd86d63b20de8e6e2334614e8becb9dce5b247",
+      "bytes": 9545
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-29a2730701e8-280a758f5aa0.gz",
+      "mode": "100644",
+      "sha256": "7a351d2ab3c4eacd184dfdb7097681a6e0e04fd09b02b4ff771bc01a09e634ba",
+      "bytes": 1195
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-327ac6e1ca83-7048634d28f7.gz",
+      "mode": "100644",
+      "sha256": "6c34948a2e2ed8b07303e5f5dce2ee5be972adba2d16ab3e78fdd293fba8037c",
+      "bytes": 1674
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-41504c399763-845be5ac8b9e.gz",
+      "mode": "100644",
+      "sha256": "9d58634debea631df3333a7d4a9734f39b036b0402b552da508bcee943cd7a2c",
+      "bytes": 1331
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-5a4858fc810f-625683367666.gz",
+      "mode": "100644",
+      "sha256": "46a377621dffeeb8f6e7e32e3e711a10d39d72e1dc6dfe6cdce6daceb973af82",
+      "bytes": 1236
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-66f933a1bad5-534a7e59a4c1.gz",
+      "mode": "100644",
+      "sha256": "73c85df9717c2c414e39802ea0082d6aee4102fcedda1fccfe502a767d26db89",
+      "bytes": 4365
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-81876a79ec51-4084ce1a458a.gz",
+      "mode": "100644",
+      "sha256": "dcf0c43a8d30af4864c6339e1bf158440569e42c0743e6e8f3cf1c843761fb34",
+      "bytes": 1677
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-8452648c4627-187759c1edb5.gz",
+      "mode": "100644",
+      "sha256": "e94534adeaf788e1e81e12eca953a573978be3c5cda5d5b325f1712a165e2ad2",
+      "bytes": 2088
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-878770ece116-71a0e1986f00.gz",
+      "mode": "100644",
+      "sha256": "60f21576a0ac9ba66da93fa82eab44e66b3c6fb618cea514fa304ecbc768a94c",
+      "bytes": 712
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-8a18505b1789-eb6bb80f1b71.gz",
+      "mode": "100644",
+      "sha256": "dab423374181d69048fde987b8e1f934d33ec8c12520135ff087d0b241a35e59",
+      "bytes": 2369
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-944b13dd7067-96c984c8fe0a.gz",
+      "mode": "100644",
+      "sha256": "d8641100635474404cdedb3858cf11689561d646da974b96543c10b9818cba17",
+      "bytes": 1230
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-977007e33649-f4429ff85f6a.gz",
+      "mode": "100644",
+      "sha256": "00986fe4612d78b87ef64a24801e99b158e96b9f98663586e15ab3ab800f9e48",
+      "bytes": 7601
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-a436302a2998-2cf183e8f203.gz",
+      "mode": "100644",
+      "sha256": "52ee829b6e00d9bd1a17b8da457c867d4a0c6d9d2b7ffe16ff9085407889bc18",
+      "bytes": 2065
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-b529ca506df9-f083183e7038.gz",
+      "mode": "100644",
+      "sha256": "8e8ee6699446ba199d0da347fd5a8c907eaf89808830500ebf2146986de5a407",
+      "bytes": 1271
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-bf5cc536ccd1-fc228750e334.gz",
+      "mode": "100644",
+      "sha256": "a5cde9a3288f9ce5430fe058e81f3b727a9450ac8179740c8fc00e224446f988",
+      "bytes": 1127
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-df964d1a6d40-caa284104520.gz",
+      "mode": "100644",
+      "sha256": "7086c4024ac56dcd89c6ed99e594afdcfefaaa2ef23cd43168ed617370c64490",
+      "bytes": 6146
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-ec902e2beec6-26f6207b889a.gz",
+      "mode": "100644",
+      "sha256": "2cca0df5e547f2bc59aec1a171db9006f2857b6a9d13d07910b06aa46a5a4f05",
+      "bytes": 19374
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-fe3e1b4225dc-fb80ce345957.gz",
+      "mode": "100644",
+      "sha256": "f4897edd39ffd25b1ce85c188783c7f7e42b65c62619ee7fded444ffac835c41",
+      "bytes": 4697
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-07943770ffcc-65c646580c16.gz",
+      "mode": "100644",
+      "sha256": "773cc9fa2e3c5c4e2277b69eca6408998fe575678c46c6ee577aef721eec87ea",
+      "bytes": 135347
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-327ac6e1ca83-3cc64ad72621.gz",
+      "mode": "100644",
+      "sha256": "d0ecd2701d918abf5025ee343087b429092aaa6c00b5b12ad0ad34647c7740e9",
+      "bytes": 1412
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-66f933a1bad5-e52898452cca.gz",
+      "mode": "100644",
+      "sha256": "593d137d582ab71380032bb61ee2b7bf5166f9b6168aeb1cd935493fab622ddb",
+      "bytes": 3348
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-944b13dd7067-b02b4a93b36e.gz",
+      "mode": "100644",
+      "sha256": "2e68a5fe865730b2d6c8f6fff3f844aee88ff2adadc61775d9b7fcad1e9e67d3",
+      "bytes": 539
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-b529ca506df9-6b14211f9f8f.gz",
+      "mode": "100644",
+      "sha256": "94b8b6f185fcec1e0788734d17049078ff8d0cc63d640ef11f1ce74e5d8bc7bb",
+      "bytes": 959
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-df964d1a6d40-2b955f847d5c.gz",
+      "mode": "100644",
+      "sha256": "d2c628b347cb82546480126984bdd633ad6dfabe6837b13af0ae5bd759669172",
+      "bytes": 5392
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-ec902e2beec6-7beef809b0e4.gz",
+      "mode": "100644",
+      "sha256": "118548284c2ba330407e85d69a1c864ecfdc834979377ea397bb71918a003e55",
+      "bytes": 18695
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-fe3e1b4225dc-c6e70a8f3682.gz",
+      "mode": "100644",
+      "sha256": "125741d8d3a253ffa442bb8d51b7938fc0202fb9980c9ccbbdb84e8cd3b2510f",
+      "bytes": 4298
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/pr8178-deferred-science.md",
+      "mode": "100644",
+      "sha256": "9f3c962bfe5913dab6258a9e1c81c30a0c9a206980a82a830724f544be47759c",
+      "bytes": 28366
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/pr8178-original-identities.json",
+      "mode": "100644",
+      "sha256": "147c5d2ced934327aa1614f395456eba203f054ca35df342dc425b464442d4de",
+      "bytes": 51431
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/pr8178-original.delta.gz",
+      "mode": "100644",
+      "sha256": "8778b3574cd115065c73fb1d025358586ca7dfb81e499afa7a7322a35fe45aa7",
+      "bytes": 33033
+    },
+    {
+      "path": "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py",
+      "mode": "100644",
+      "sha256": "e5b1c1f3917c1e5cc39fc37080560b97e455f60649bdfdfe0d3e00cc744c1b66",
+      "bytes": 18742
+    }
+  ]
+}

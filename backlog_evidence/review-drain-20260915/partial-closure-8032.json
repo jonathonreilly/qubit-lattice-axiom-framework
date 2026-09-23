@@ -1,0 +1,21 @@
+{
+  "pr": 8032,
+  "original_head": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+  "branch": "codex/finite-pw-energy-block42-20260907",
+  "landing": "a1777fd8af3c62caeef8431b8791fa69ababc1ea",
+  "source_verified_at": "a1777fd8af3c62caeef8431b8791fa69ababc1ea",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8032-landing-report.md",
+  "closed": {
+    "baseRefName": "codex/finite-transporter-block41-20260907",
+    "closedAt": "2026-09-23T05:57:52Z",
+    "headRefName": "codex/finite-pw-energy-block42-20260907",
+    "headRefOid": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8032,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8032"
+  }
+}

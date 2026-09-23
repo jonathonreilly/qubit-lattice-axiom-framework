@@ -1,0 +1,15 @@
+{
+  "main": "a1777fd8af3c62caeef8431b8791fa69ababc1ea",
+  "resolved_closed": 55,
+  "inventory": "backlog-inventory-wave36.json",
+  "open_count": 108,
+  "draft_count": 17,
+  "active_units": {
+    "review-loop-efficiency": "Committed accepted four-file source; independent final confirmation pending",
+    "8033": "Early accepted; exact landed8032 parent; awaiting methodology landing before source/input freeze",
+    "8177": "Early accepted; future adapters prepared; awaiting methodology landing",
+    "8178": "Early accepted; execution adapters preparation"
+  },
+  "comparison": "Solmax5of6 vs Astralow6of6; modeled credits53percentlower, time59percentlonger; no reviewer default change",
+  "continue_until": "All open PRs reviewed and landed or explicitly rejected/closed"
+}

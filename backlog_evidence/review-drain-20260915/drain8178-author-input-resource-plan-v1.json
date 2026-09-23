@@ -1,0 +1,105 @@
+{
+  "status": "proposed source plan only; future independent affected and cold clearance required",
+  "unique_primary_programs": 1,
+  "runner": {
+    "path": "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py",
+    "sha256": "e5b1c1f3917c1e5cc39fc37080560b97e455f60649bdfdfe0d3e00cc744c1b66"
+  },
+  "ordered_inputs": [
+    {
+      "path": "docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "sha256": "aa4070be5d8ac5d476d2e0d4864754f79603c1139f7c52f82c0012dd6960fa2f"
+    },
+    {
+      "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+    }
+  ],
+  "helpers": [],
+  "libraries": [
+    "Python standard library",
+    "Sympy"
+  ],
+  "mathematical_premise_closure": "Complete finite recurrence, covariance, stationary-limit, residual, integer-crossing and finite-bracket proofs inline. Supplied L>=1, sigma2>0, gain-one P, iid real centered site/time noise with covariance sigma2 I and zero initial condition. Actual corrected sphere-kernel source supplies optional A(3beta)/(3beta) parameter and nonlinear observable distinction, not an exact gain-one nonlinear recursion. No simulations, static8173 result, archival claims, audit verdicts or new primitives are premises.",
+  "tooling": [
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5"
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+    },
+    {
+      "path": "docs/audit/scripts/ledger_io.py",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+    }
+  ],
+  "limits": {
+    "wall_seconds": 60,
+    "sampled_aggregate_process_tree_rss_bytes": 402653184,
+    "poll_interval_seconds": 0.02,
+    "on_violation": "terminate process group and preserve raw outputs; no implicit retry or cap raise"
+  },
+  "source_basis": "Original same fixed L<=4 exact covariance fixtures, beta<=48 enclosure arithmetic and S64 sum retained; four small exact controls added (16x16 fourth-root transform, tiny-torus residuals, rational ceiling fixtures). No stochastic loop or lattice-size extension. Original declared900-second timeout reduced to measured reviewer60-second policy, subject affected-review acceptance.",
+  "actual_original_measurement": {
+    "receipt": {
+      "path": "/private/tmp/review-drain-20260915/check8178/primary-receipt.json",
+      "sha256": "c421b5d678f67443b06f1830d111b176c86e8cd6c6b36f21fe65d70eee0b8b05"
+    },
+    "elapsed_seconds": 1.125277749961242,
+    "peak_rss_bytes": 91013120,
+    "wall_limit_seconds": 60,
+    "rss_limit_bytes": 402653184,
+    "applicability": "Original primary only; corrected code not run. Measurement is baseline resource evidence, not new success."
+  },
+  "planned_checks": {
+    "total": 16,
+    "mathematical": 11,
+    "metadata": 5,
+    "families": {
+      "A": 4,
+      "B": 2,
+      "C": 2,
+      "D": 3,
+      "F": 4,
+      "G": 1
+    }
+  },
+  "declared_mutations": {
+    "multiplier_wrong": "B",
+    "covariance_recursion_wrong": "C",
+    "memory_time_wrong": "D",
+    "lattice_sum_bounds_wrong": "D",
+    "fourier_sign_wrong": "F",
+    "real_modes_independent_wrong": "F",
+    "zero_start_stationary_wrong": "F",
+    "integer_crossing_floor_wrong": "F"
+  },
+  "future_changed_claim_controls": [
+    "fourier_sign_wrong",
+    "real_modes_independent_wrong",
+    "zero_start_stationary_wrong",
+    "integer_crossing_floor_wrong"
+  ],
+  "original_mutations_reuse": "Original4 mathematical controls were independently executed in check8178; preserve those exact reports and review applicability instead of automatically rerunning. Original2 prose mutations are historical only. New4 mathematical controls require independent review and future once-only execution if accepted; no baseline rerun.",
+  "output_contract": {
+    "stdout": "AUDIT_INPUT_PATHS, per-check PASS/FAIL, five N5 scope lines, TOTAL: PASS=n FAIL=n; mutations also expected/observed family",
+    "expected_baseline": "TOTAL: PASS=16 FAIL=0 (planned, not observed)",
+    "default_filesystem_output": null,
+    "optional_sidecar": "AUDIT_RESULT_SIDECAR: absolute external per-attempt path; existing parent; exclusive creation; JSON contains passed, failed, failed_families, mutation, expected_mutation_family, input_sha256, scope",
+    "json_flag": "No --json contract; do not rerun for JSON",
+    "canonical_stdout_cache": "logs/runner-cache/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.txt",
+    "preservation_requirement": "Future adapter must retain raw execute_runner return before runner_cache post-identity checks/cache publication; retain failed stdout/stderr/sidecar; no retry."
+  },
+  "scientific_execution_count": 0,
+  "branch_retention_required": true
+}

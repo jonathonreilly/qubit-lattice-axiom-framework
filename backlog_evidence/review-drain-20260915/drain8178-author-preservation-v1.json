@@ -1,0 +1,24 @@
+{
+  "ast_only_no_execution": true,
+  "unchanged_helper_asts": {
+    "exp_bounds": true,
+    "A_bounds": true,
+    "pi_bounds": true,
+    "cos_exact": true,
+    "u_mode": true,
+    "site_variance_modes": true,
+    "V_exact": true,
+    "shift_matrix": true,
+    "covariance_recursion": true,
+    "lattice_sum": true
+  },
+  "family_c_unchanged": true,
+  "family_d_arithmetic_ast_unchanged_ignoring_strings": true,
+  "family_b_change": "negative Fourier convention; same modulus/gap identities and fixtures",
+  "family_f_change": "replace four prose-only gates with four corrected-claim mathematical controls; independent reviewer required",
+  "original_recoveries": 21,
+  "all_available_base_head_main_states_preserved": true,
+  "source_count": 43,
+  "tracked_and_index_unchanged": true,
+  "markdown_basename_collisions": []
+}

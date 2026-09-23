@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "kind": "syntax-and-guard-review-only-not-execution",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-build-staged-draft-v1.py",
+      "sha256": "1a6e61b026cfa3fc0e39d1d4bdc30328c965dde1b4fc6e843dc1c9700e9f593d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-capture-v1.py",
+      "sha256": "61d9fd24f265ae2d4e9a55c3b9d38357d6908f63877f35231220eef08ec94a9d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-mutation-capture-v1.py",
+      "sha256": "4e866dc0a5448eab6f50bf9b56063a7eefceffb49163e017a8a354afaf80068b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-capture-plan-v1.json",
+      "sha256": "da15e79ffc0ae9fa67ae11229707b6ba1796b1b8389f516544d61d3edaaca105"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-adapter-bindings-v1.json",
+      "sha256": "743cd93222afc8f31063f65a58314979d9179ac6677608ba66ff445c4cc19b4e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-adapter-authority-v1.json",
+      "sha256": "eba71f0e27b1997fe88120fe684570926f7dec766668ee8debc33984b959cbf7"
+    }
+  ],
+  "source_unchanged": true,
+  "source_count": 56,
+  "original_count": 50,
+  "cold_binding": null,
+  "staging": false,
+  "builder_executed": false,
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "preflight": false,
+  "tooling_rediscovery": "Future current-base APIs and five core tool files plus registries and all review-loop references; actual source/context bytes checked against expected-base Git objects",
+  "dual_base_guard": "Staging requires explicit expected-base==HEAD==origin/main. Capture requires HEAD==record.source.base==cold.frozen_base, origin/main==cold.reviewed_main, ancestral advance and no changed bound source/input path; actual original reviewer must bind semantic current-main clearance. Any methodology/tooling overlap blocks capture for fresh record/review, never silently accepted.",
+  "raw_preservation": "Transparent execute_runner wrapper serializes original full return before execute_and_write_cache postidentity checks and returns unchanged object; exclusive external attempts and full hash/stat snapshots preserved"
+}

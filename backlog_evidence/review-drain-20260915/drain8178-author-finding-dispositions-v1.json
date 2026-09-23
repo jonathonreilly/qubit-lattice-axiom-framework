@@ -1,0 +1,118 @@
+{
+  "findings": [
+    {
+      "original": {
+        "id": "8178-1",
+        "category": "SEMANTIC_BRIDGE",
+        "priority": "P1",
+        "location": "note declarations, headline, result, T1 and all historical summaries",
+        "finding": "Gain-one recursion is a supplied auxiliary field, not exact nonlinear Cartesian linearization. The corrected current-main sphere level-kernel note derives exact mean gain A(3beta)<1 and explicitly separates the auxiliary field.",
+        "repair": "Keep the complete linear theorem under supplied independent additive-noise hypotheses; link corrected current-main context and remove nonlinear exact-linearization identification."
+      },
+      "author_correction": "Complete recurrence proof restricted to explicitly supplied auxiliary model; actual8170 mean gain and optional aligned variance source linked and pinned.",
+      "independent_affected_confirmation": "pending"
+    },
+    {
+      "original": {
+        "id": "8178-2",
+        "category": "BUG",
+        "priority": "P2",
+        "location": "note T1.1, T1.3; headline and RESULTS",
+        "finding": "Fourier sign contradicts declared exp(-ikx) convention. Real conjugate modes are not independent. Nonzero modes from zero initial data are not stationary.",
+        "repair": "Use negative-exponent multiplier, diagonal Hermitian covariance and temporal independence; state convergence to stationary covariance/law with correct noise assumptions."
+      },
+      "author_correction": "Negative Fourier multiplier; complete Hermitian covariance and real conjugacy proof; backward-series stationary-law limit with finite-second-moment hypotheses.",
+      "independent_affected_confirmation": "pending"
+    },
+    {
+      "original": {
+        "id": "8178-3",
+        "category": "OVERCLAIM",
+        "priority": "P2",
+        "location": "note T3.1 and plain-language result",
+        "finding": "Transient of order V_L is false; slow variance relaxation is O(L²). tau is real variance-one scale, not exact integer level or one-radian angular hitting time.",
+        "repair": "State exact V_L(t) residual bound and asymptotic scalar-proxy rate; define first integer crossing ceil(tau), keep angular/nonlinear interpretation deferred."
+      },
+      "author_correction": "Exact finite residual and rho bound, slow O(L²) scale with selected mode, real tau and ceil crossing; no angular interpretation.",
+      "independent_affected_confirmation": "pending"
+    },
+    {
+      "original": {
+        "id": "8178-4",
+        "category": "PROOF_OBLIGATION",
+        "priority": "P2",
+        "location": "note result, prior-art item iii, T3.2, D3 and N5",
+        "finding": "Finite sums and four direct summation values do not establish S_L=2pi logL+O(1), sharp V_L=2gamma logL+constant+o(1), or equality with infinite-plane spread at t=L². The general finite bracket is valid.",
+        "repair": "Preserve complete original sharper arguments and empirical values as deferred; retain exact finite bracket and tested increments. If keeping logarithmic order, give a complete shell/integral comparison proof with the exact stated strength."
+      },
+      "author_correction": "Complete finite bracket and all original finite arithmetic retained. Full sharper original argument readably deferred; no sharp asymptotic claimed.",
+      "independent_affected_confirmation": "pending"
+    },
+    {
+      "original": {
+        "id": "8178-5",
+        "category": "OVERCLAIM",
+        "priority": "P1",
+        "location": "nonlinear heading/result/table interpretation, N7; controls and logs",
+        "finding": "Size-independence is contradicted by reported errors; universal three-percent calibration contradicted by .960 row. Short-lag chordal displacement does not establish memory time |m|²tau, exact diffusion law, stationarity after burn-in, or direction as whole memory loss.",
+        "repair": "Preserve every simulator, raw failed fit and successful-looking MSD row in history. Remove promoted physical/asymptotic conclusions; explicitly retain finite-lag heuristic as unproved/deferred with discrepancies and no new simulation needed."
+      },
+      "author_correction": "All simulations and raw histories retained exactly; concrete contradictory rows explained. No calibration/size independence/nonlinear memory promotion.",
+      "independent_affected_confirmation": "pending"
+    },
+    {
+      "original": {
+        "id": "8178-6",
+        "category": "AUDIT_COMPATIBILITY",
+        "priority": "P2",
+        "location": "frontmatter upstream list, Premises/Imports/N4, runner AUDIT_INPUT_PATHS, citation manifest",
+        "finding": "Load-bearing sources appear as code paths/open PR labels, not graph links; primary inputs omit simulator/log evidence used by headline. Keyword fences and floating-point/name bans pass despite material math and claim errors.",
+        "repair": "Use live corrected mathematical sources only where needed, context-only elsewhere; explicit portable note/runner/cache/recovery links. Bind exact final source/runtime inputs and controls. Regenerate topology only in coordinator lane; no verdict promotion."
+      },
+      "author_correction": "Actual parent Markdown dependency and literal two-input APIs recognized; no helper or registry change. Fences replaced by four targeted mathematical controls, source independently pending.",
+      "independent_affected_confirmation": "pending"
+    },
+    {
+      "original": {
+        "id": "8178-7",
+        "category": "REPO_GOVERNANCE",
+        "priority": "P2",
+        "location": "all campaign metadata and negative estimator conclusion",
+        "finding": "Campaign certificates are author history, not independent review. Original no-go packet lists diagnostics and an estimator failure, not five closed route families; finite noisy estimator behavior does not establish estimator impossibility.",
+        "repair": "Preserve all 21 original paths and full inherited/shared bytes; archive campaign prose as history with readable correction/deferred argument. Retain branch for partial salvage. Mark formal negative certification deferred rather than inventing routes."
+      },
+      "author_correction": "All21paths and all available base/head/main identities plus delta recovered; complete original note readable; no certificate/no-go authority; branch retained.",
+      "independent_affected_confirmation": "pending"
+    }
+  ],
+  "original_review": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-review-original.json",
+    "sha256": "b01afd62cdb927b10f6688c4ae70696fb0955d9f90c7be1f015f3b146c2ab459"
+  },
+  "claim_dispositions": [
+    {
+      "claim": "supplied finite-torus mode/covariance/finite bracket",
+      "disposition": "live complete positive proof with explicit hypotheses; independent affected confirmation pending"
+    },
+    {
+      "claim": "exact nonlinear gain-one linearization",
+      "disposition": "corrected; actual Cartesian mean gain A(3beta), normalized direction differs"
+    },
+    {
+      "claim": "zero-start stationary nonzero modes/transient order V/angular memory time",
+      "disposition": "corrected to stationary limit/exact residual/variance scale and ceiling"
+    },
+    {
+      "claim": "sharp logarithmic coefficient/additive constant/equality with infinite plane at L²",
+      "disposition": "deferred science; full original readable; proof required to reopen"
+    },
+    {
+      "claim": "nonlinear size-independent diffusion and |m|²tau memory scale",
+      "disposition": "deferred science; raw data discrepancies and failed fits retained; observable-specific proof required"
+    },
+    {
+      "claim": "estimator impossibility/formal negative certification",
+      "disposition": "not established; diagnostic attempts preserved, no fabricated routes"
+    }
+  ]
+}

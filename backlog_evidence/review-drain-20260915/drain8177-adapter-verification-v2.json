@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "kind": "external-adapter-hash-manifest-no-execution",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-build-staged-draft-v1.py",
+      "sha256": "1a6e61b026cfa3fc0e39d1d4bdc30328c965dde1b4fc6e843dc1c9700e9f593d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-capture-v1.py",
+      "sha256": "61d9fd24f265ae2d4e9a55c3b9d38357d6908f63877f35231220eef08ec94a9d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-mutation-capture-v2.py",
+      "sha256": "9bbb4ecb5372b21ce63f05a09a0dde8578cfa4abc126d7e28f0a1b6f39e604ce"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-capture-plan-v1.json",
+      "sha256": "da15e79ffc0ae9fa67ae11229707b6ba1796b1b8389f516544d61d3edaaca105"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-adapter-bindings-v1.json",
+      "sha256": "743cd93222afc8f31063f65a58314979d9179ac6677608ba66ff445c4cc19b4e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-adapter-authority-v1.json",
+      "sha256": "eba71f0e27b1997fe88120fe684570926f7dec766668ee8debc33984b959cbf7"
+    }
+  ],
+  "static_correction": "Mutation v1 retained two60s watchdog literals inherited from8176; static review caught mismatch before invocation. Superseded by mutation-capture-v2 with120s throughout. Both original and correction preserved.",
+  "source_unchanged": true,
+  "source_paths": 56,
+  "original_recoveries": 50,
+  "builder_executed": false,
+  "staging": false,
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "cache_runs": 0,
+  "preflight": false,
+  "cold_binding": null
+}

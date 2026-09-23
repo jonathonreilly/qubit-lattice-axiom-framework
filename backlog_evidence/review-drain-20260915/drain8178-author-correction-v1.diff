@@ -1,0 +1,576 @@
+--- docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md
++++ docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md
+@@ -1,203 +1,176 @@
+ ---
+-claim_id: admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_and_the_nonlinear_law_measured_against_it_bounded_theorem_note_2026-09-17
++claim_id: supplied_torus_auxiliary_field_mode_variance_and_finite_bracket_bounded_theorem_note_2026-09-17
+ claim_type: bounded_theorem
+-claim_scope: "For the unsoldered (sphere) formation law of block 26 (PR #8170) in level time on the periodic L x L level plane, linearized about the aligned plane (gain one; per-component transverse noise variance sigma^2 = A(3 beta)/(3 beta), A(kappa) = coth kappa - 1/kappa): (T1) the transverse field theta_{t+1} = P theta_t + xi_t splits into torus modes with multiplier phi(k) = (1 + e^{i k_1} + e^{i k_2})/3, and 1 - |phi(k)|^2 = (4/9)[sin^2(k_1/2) + sin^2(k_2/2) + sin^2((k_1 - k_2)/2)], so |phi| < 1 off the zero mode; a mode of multiplier modulus u^{1/2} < 1 has variance sigma^2 (1 - u^t)/(1 - u) after t levels, the zero mode sigma^2 t, the plane average sigma^2 t / L^2 per component, and the site variance (sigma^2/L^2)[t + sum_{k != 0} (1 - u_k^t)/(1 - u_k)] (proved); (T2) on the tori L = 2, 3, 4 the exact rational covariance recursion Sigma_{t+1} = P Sigma_t P^T + sigma^2 I reproduces the mode formula at every level tested (executed, exact); (T3) the memory time tau_L := L^2/sigma^2 = 3 beta L^2 / A(3 beta), at which the plane average's variance per component reaches one and the proxy exp(-v_t) of the magnetization has fallen by e^{-1} beyond its transient, and the rate A(3 beta)/(3 beta L^2) are enclosed exactly (width below 1/10) at beta = 6, 12, 24, 48 and L = 16, 32, 64 — e.g. tau in [4879, 4880] at (6, 16), [19516, 19517] at (6, 32), [78064, 78065] at (6, 64); the stationary transverse variance V_L = (sigma^2/L^2) sum_{k != 0} 1/(1 - u_k) lies in [3/(4 pi^2), 9/16] sigma^2 S_L with the exact rational lattice sum S_L = sum over nonzero n in the symmetric box of 1/|n|^2, whose consecutive differences lie within one of 2 pi log 2 (proved; the bracket checked on the tiny tori where V_L is rational); so on the torus the linearized proxy decays exponentially at the rate A(3 beta)/(3 beta L^2) after a transient, while on the infinite plane it decays algebraically (block 26, T5). Executed and not claimed: V_L = 2 gamma log L + 0.353 sigma^2 + o(1) by direct summation (gamma = (3 sqrt3/(4 pi)) sigma^2); the nonlinear law's plane-average direction diffuses with a per-component constant D_1 equal to sigma^2/L^2 times 1.34, 1.14, 1.06, 1.02 at beta = 6, 12, 24, 48 (L = 16; 1.42 and 1.18 at L = 32 for beta = 6, 12), tracking 1/|m|^2 of the stationary magnetization within a few percent, with the linear model returning 0.97-1.01 under the same estimator. Not claimed: any statement about the nonlinear law beyond block 26's finite-plane forgetting; the infinite plane; other menus or orders. No reading, rule or coupling is selected as physical; exact arithmetic throughout the runner."
++claim_scope: "For a supplied gain-one additive real two-component field on a finite periodic L by L plane, with iid centered site/level noises of covariance sigma2 I and zero initial field: exact Fourier multiplier, Hermitian mode covariance, plane and site variance, convergence of the nonzero-mode field to its stationary law, exact residual bound, real variance-one scale and integer crossing, scalar-proxy asymptotic rate, and finite lattice-sum variance bracket. The optional sigma2=A(3 beta)/(3 beta) is a supplied parametrization; no nonlinear memory or sharp logarithmic asymptotic follows."
+ upstream_dependencies:
+-  - minimal_axioms
+-  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
+-runner: scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py
++  - sphere_level_kernel_moments_walk_local_limit_and_finite_plane_mixing_bounded_theorem_note_2026-09-16
++runner: scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py
+ ---
+ 
+-# The torus memory time of the sphere formation law: the linearized field's zero mode gives `τ_L = 3βL²/A(3β)` exactly, the other modes are stationary and bracketed, and the nonlinear law's direction diffuses `1/|m|²` faster
++# Supplied torus auxiliary field: mode variance and a finite bracket
+ 
+-**Date:** 2026-09-17
+-**Type:** bounded_theorem
+-**Status:** bounded-support (exact for the linearized field; the nonlinear law executed against it; conditional on the named supplied readings; unaudited)
++## Scope, supplied objects and dependency
+ 
+-## Result up front
++Let L be a positive integer, N=L², and t a nonnegative integer. Sites form
++(Z/LZ)². Independently supply the recurrence θ(t+1)=Pθ(t)+ξ(t), θ(0)=0,
++where θ is real and two-component and
++P f(x)=[f(x)+f(x−e₁)+f(x−e₂)]/3. Noises are iid across sites and levels,
++centered, with finite second moment and covariance σ²I₂, σ²>0. Independence
++between the two components is unnecessary for the componentwise identities.
+ 
+-Block 26 proved that every finite periodic plane of the sphere formation law
+-forgets its initial direction, with a minorization rate useless for the
+-scale, and read off from the gain-one linearization that the memory time
+-should be "of order `βL²`". This note makes that exact. On the `L × L` torus
+-the linearized transverse field splits into modes. The zero mode — the plane
+-average — has multiplier one and performs a random walk: its variance per
+-component is exactly `σ²t/L²` with `σ² = A(3β)/(3β)`. Every other mode has
+-multiplier modulus below one and is stationary. So the memory time is
+-`τ_L = 3βL²/A(3β)`, the level at which the average direction has wandered by
+-one radian, and the magnetization proxy decays exponentially at the rate
+-`A(3β)/(3βL²)` after a transient — against the algebraic decay `t^{−γ}` of
+-the infinite plane. At `β = 6` the memory times are `4879`, `19516`, `78065`
+-levels for `L = 16, 32, 64`, enclosed exactly. The stationary variance of the
+-other modes is bracketed by exact rational lattice sums and grows like
+-`2γ log L`: the finite plane's transverse spread saturates where the infinite
+-plane's keeps growing.
++One optional parametrization is σ²=A(3β)/(3β), β>0,
++A(κ)=coth κ−1/κ. The [sphere kernel moments and finite-plane mixing proof](SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md)
++supplies the aligned raw transverse variance and 0<A(κ)<1. It also proves
++that the exact nonlinear Cartesian mean has derivative
++A(3β)(θ₁+θ₂+θ₃)/3. Only its normalized mean direction has gain one.
++Combining gain one with this additive iid noise is a **supplied auxiliary
++model**, not an exact nonlinear linearization or a derivation of independent
++noise away from alignment. This parent is a mathematical dependency for the
++optional noise parametrization and the observable distinction. All finite
++recurrence arguments below are self-contained for arbitrary σ²>0. No static
++response theorem, physical rule selection, primitive or new axiom is imported.
+ 
+-The nonlinear law is then run on tori and its plane-average direction's
+-angular diffusion measured by a mean-squared displacement estimator that the
+-linear model itself calibrates to within three percent. The nonlinear
+-direction diffuses faster than the zero-mode value by a factor `1.34` at
+-`β = 6`, `1.14` at `12`, `1.06` at `24`, `1.02` at `48` — the same at `L = 16`
+-and `32` within errors — and the factor tracks `1/|m|²` of the stationary
+-magnetization to within a few percent: the average vector is shorter than
+-one, so the same transverse kicks turn it through larger angles. Nothing
+-about the nonlinear law is claimed beyond block 26's theorem; the numbers are
+-executed.
++## Exact characters, covariance and site variance
+ 
+-In plain words: on a finite patch of the plane, the common direction of all
+-the records drifts like a random walk whose step is set by the noise divided
+-by the patch's area, and every other pattern of disagreement settles down.
+-So the patch forgets its starting direction after a number of levels
+-proportional to its area times the stiffness, and we now have that number
+-exactly for the linear theory and measured for the real law, where it is
+-shorter by the square of the shrinkage of the average record.
++Use the unitary transform θ̂(k)=L⁻¹Σₓexp(−ik·x)θ(x),
++k=(2π/L)n. Changing variable y=x−eⱼ in a shift gives
++L⁻¹Σₓexp(−ik·x)θ(x−eⱼ)=exp(−ikⱼ)θ̂(k). Hence
+ 
+-Exactly: the modes (T1); the tiny tori (T2); the memory time and the bracket
+-(T3). Executed with exact arithmetic: 16 checks, 6 mutations. Simulated
+-(controls and refuting spec): the nonlinear law and the linear model on tori
+-with two estimators, an independent sampler, and the direct summation of
+-`V_L`.
++φ(k)=[1+exp(−ik₁)+exp(−ik₂)]/3, u(k)=|φ(k)|²,
+ 
+-## Machine status and trace
++9u=3+2cos k₁+2cos k₂+2cos(k₁−k₂),
+ 
+-```yaml
+-actual_current_surface_status: bounded-support
+-target_claim_type: bounded_theorem
+-trace_class: upstream_support
+-target_claim_id: null
+-target_blocker_text: "block 26's queue: the torus memory time of the sphere formation law (read as 'of order beta L^2' from the gain-one linearization)"
+-source_of_blocker_text: handoff
+-reachability_to_target: supports
+-artifact_role: theorem
+-next_trace_action: "the linearized torus memory time exact (tau_L = 3 beta L^2 / A(3 beta); exponential decay at the zero-mode rate; stationary modes bracketed); the nonlinear law's angular diffusion measured at 1/|m|^2 times the zero-mode value. Next in the sphere lane: the infinite-plane loss of memory as a theorem; spin-wave theory as a theorem (the 1/|m|^2 factor is the first quantitative target for it). Consumers: the campaign's decision record; block 26's open items"
+-conditional_surface_status: "T1 proved (symbolic identities; the mode recursion); T2 exact on the tori L = 2, 3, 4; T3 exact enclosures and a proved bracket with exact lattice sums; the nonlinear comparison executed and not claimed; conditional on the records-only reading, positivity, the unsoldered sphere menu and the monotone order as supplied conditions; the standard mathematical imports named at definition level"
+-hypothetical_axiom_status: null
+-admitted_observation_status: null
+-audit_required_before_effective_retained: true
+-```
++1−u=(4/9)[sin²(k₁/2)+sin²(k₂/2)+sin²((k₁−k₂)/2)].
+ 
+-## Premises and declared objects
++Thus 0≤u≤1 and equality u=1 requires k₁,k₂∈2πZ: only the zero
++mode. Orthogonality of finite roots of unity gives, per component,
++E[ξ̂(k)overline{ξ̂(l)}]=σ²δₖₗ. This is diagonal **Hermitian covariance**.
++Since the field is real, ξ̂(−k)=overline{ξ̂(k)}; conjugate modes are not
++independent complex random variables. Temporal independence suffices below.
+ 
+-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule and its one-site conditional given a recorded set; the sphere formation law in level time, its linearization and the level walk are block 26's objects (PR #8170, an open hand-off referenced as an evidence address; block 13, PR #8147, for the massless causal law), restated here as declared objects and re-executed. All proposed and unaudited.
++Unfolding the recursion gives θ(t)=Σⱼ₌₀ᵗ⁻¹Pʲξ(t−1−j). Each mode's
++Hermitian variance is therefore σ²Σⱼ₌₀ᵗ⁻¹uʲ, namely σ²t at k=0 and
++σ²(1−uᵗ)/(1−u) otherwise. Translation invariance and the unitary transform
++give the component site variance
+ 
+-Declared objects.
+-- **The sphere formation law on the torus.** Records `s_x ∈ S²`; level time with the three predecessors of a site projected onto the plane as `(i, j)`, `(i − 1, j)`, `(i, j − 1)` on the periodic `L × L` plane; the new record drawn from `K_β(· | S) ∝ e^{β s·S}` with `S` the sum of the three predecessors; the aligned initial plane. `A(κ) = coth κ − 1/κ`.
+-- **The linearized field.** Transverse coordinates `θ_x ∈ R²` near the pole; `θ_{t+1} = P θ_t + ξ_t` with `P` the average over the three predecessors (gain one, block 26 T2) and `ξ` i.i.d. centred with variance `σ² = A(3β)/(3β)` per component (block 26 T1(c), T2). **Modes:** for `k ∈ (2π/L)Z_L²`, `θ̂_k = L^{−1} Σ_x e^{−ik·x} θ_x`; `P` acts as multiplication by `φ(k) = (1 + e^{ik₁} + e^{ik₂})/3`; `u(k) := |φ(k)|²`; the noise has `Var(ξ̂_k) = σ²` per component; the **plane average** is `θ̄ = θ̂_0/L`.
+-- **Variances.** The **site variance** `v_t = L^{−2} Σ_k Var θ̂_k(t)`; the **stationary transverse variance** `V_L := (σ²/L²) Σ_{k≠0} 1/(1 − u(k))`; the **magnetization proxy** `e^{−v_t}` (block 26 T5); the **memory time** `τ_L := L²/σ²`.
+-- **The lattice sum.** `S_L := Σ 1/|n|²` over nonzero `n` in the symmetric box of representatives of `Z_L²` (`n_i ∈ (−L/2, L/2]`); `Q(k) = kᵀMk`, `M = (1/9)[[2, −1], [−1, 2]]`.
+-- **The direction's diffusion (executed).** For the nonlinear law, `m_t` the plane-average record, `m̂_t = m_t/|m_t|`; the per-component angular diffusion constant `D_1 := E|m̂_{t+ℓ} − m̂_t|²/(2ℓ)` at lags `ℓ` short against `τ_L`, averaged along trajectories after a transient; for the linear model the same estimator on `θ̄` returns `σ²/L²` exactly in expectation.
++v_t=(σ²/L²)[t+Σₖ≠₀(1−uₖᵗ)/(1−uₖ)].
+ 
+-## Prior art and what is new
++Alternatively averaging the recurrence gives θ̄(t+1)=θ̄(t)+ξ̄(t), since
++both shifts preserve the site sum. Independent site noises imply
++Var ξ̄=σ²/L², hence Var θ̄(t)=σ²t/L². This agrees with θ̄=θ̂(0)/L.
+ 
+-Block 13 (PR #8147) found the gain-one linearization and block 26 (PR #8170) its exact one-step variance, the local-limit constant of the level walk, the finite-plane forgetting by a uniform minorization, and the infinite plane's `v_t = γ log t + O(1)`; the finite-plane memory time was read as "of order `βL²`". What is new: (i) the torus mode decomposition with the exact multiplier identity and the zero mode's random walk, giving the memory time and the exponential rate exactly (T1, T3); (ii) the exact rational check on tiny tori (T2); (iii) the bracket of the stationary transverse variance by exact lattice sums and its `2γ log L` growth (T3); (iv) the angular-diffusion measurement of the nonlinear law with a self-calibrating estimator, and the `1/|m|²` reading of the excess (executed).
++## Stationary limit and exact transient
+ 
+-## Exact target and obligation graph
++Define V_L(t)=(σ²/L²)Σₖ≠₀(1−uₖᵗ)/(1−uₖ) and
++V_L=(σ²/L²)Σₖ≠₀1/(1−uₖ). For L=1 both are zero. For L≥2 let
++ρ_L=maxₖ≠₀uₖ<1. Subtracting the two finite sums proves
+ 
+-| Obligation | Statement | Route | Runner family |
+-|---|---|---|---|
+-| T1 | the multiplier identity; the mode variances; the zero mode | the characters of the torus diagonalize a circulant; a geometric sum | B |
+-| T2 | the mode formula equals the covariance recursion on tiny tori | exact rational linear algebra | C |
+-| T3 | `τ_L` and the rate enclosed; `V_L` bracketed; `S_L` logarithmic | exact enclosures of `coth` and `π`; two sine inequalities; rational lattice sums | D |
++0≤V_L−V_L(t)=(σ²/L²)Σₖ≠₀uₖᵗ/(1−uₖ)≤ρ_LᵗV_L.
+ 
+-## Theorem T1 — the modes
++This is a stationary **limit**, not stationarity of the zero-start field.
++For example a mode u=1/9 and σ²=1 has variances 0,1,10/9,… .
++For existence at the law level, let Q remove the spatial average and extend
++the iid noise sequence to all integer times. The backward sum
++Z_t=Σⱼ≥₀PʲQξ(t−1−j) converges in mean square: the squared tail per
++component, summed over sites in the unitary basis, is
++σ²Σₖ≠₀uₖᵐ/(1−uₖ), which tends to zero. Independent centered time
++increments remove cross terms. The resulting law is time stationary and
++Z_{t+1}=PZ_t+Qξ(t). The zero-start nonzero field has the law of a truncated
++backward sum, so converges in distribution (indeed in this coupling in mean
++square). Gaussianity is asserted only if the supplied noise is Gaussian.
+ 
+-**T1.1.** `P` is a circulant on the torus, diagonalized by the characters: `(Pθ)^_k = φ(k) θ̂_k` with `φ(k) = (1 + e^{ik₁} + e^{ik₂})/3`. *Proof.* `Pθ_x = (θ_x + θ_{x−e₁} + θ_{x−e₂})/3` and each shift multiplies `θ̂_k` by `e^{−ik·e}`; the conjugate convention gives the stated `φ`. ∎
++The finite bracket proved below implies every nonzero gap
++1−uₖ≥16/(9L²), since |k|≥2π/L. Thus
++ρ_Lᵗ≤exp(−16t/(9L²)). Conversely k=(2π/L,0) has
++u=1−(8/9)sin²(π/L). Its variance e-fold scale [−log u]⁻¹ is
++asymptotic to 9L²/(8π²), using sin x/x→1 and −log(1−x)/x→1.
++The slow relaxation scale is therefore of order L², not of order V_L.
++The residual inequality states the additional logarithmic factor needed for
++any chosen relative tolerance; it does not assert a finite exact equilibration time.
+ 
+-**T1.2 (the multiplier identity).** `1 − |φ(k)|² = (4/9)[sin²(k₁/2) + sin²(k₂/2) + sin²((k₁ − k₂)/2)]`; hence `0 ≤ u(k) ≤ 1` with `u = 1` iff `k ∈ 2πZ²`, i.e. only at the zero mode of the torus. *Proof.* `9|φ|² = 3 + 2cos k₁ + 2cos k₂ + 2cos(k₁ − k₂)` and `1 − cos x = 2 sin²(x/2)` (B1, symbolic). ∎
++## Real variance-one scale and scalar proxy
+ 
+-**T1.3 (the mode variances).** With `θ̂_k(t+1) = φ(k) θ̂_k(t) + ξ̂_k(t)` from `θ̂_k(0) = 0`: `Var θ̂_k(t) = σ²(1 − u^t)/(1 − u)` for `u = u(k) < 1` and `σ²t` at the zero mode; so `Var θ̄_t = σ²t/L²` per component and `v_t = (σ²/L²)[t + Σ_{k≠0}(1 − u_k^t)/(1 − u_k)]`. *Proof.* The noises are independent across levels and modes; the variance recursion `V(t+1) = uV(t) + σ²` sums geometrically (B2). ∎
++Define τ_L=L²/σ² as a real scale. The first integer t with
++Var θ̄(t)≥1 is ceil(τ_L), since t/τ_L≥1 exactly when t≥τ_L.
++At real interpolation t=τ_L, each component has variance one, and the
++two-component root mean square norm is √2. This is not an angular hitting time.
++Define the scalar proxy solely by M_t=exp(−v_t). Then exactly
+ 
+-## Theorem T2 — the tiny tori
++M_t=exp(−t/τ_L)exp(−V_L(t)),
+ 
+-On the tori `L = 2, 3, 4` the cosines `cos(2πn/L)` are rational, so `u_k` and the mode formula are rational; the covariance matrix of the field obeys `Σ_{t+1} = PΣ_tPᵀ + σ²I` from `Σ_0 = 0`, with `P` a rational `L² × L²` matrix. The runner iterates the recursion exactly for `t ≤ 12` (`L = 2, 3`) and `t ≤ 8` (`L = 4`) and finds the site variance `tr Σ_t/L²` equal to the mode formula and the plane-average variance `1ᵀΣ_t1/L⁴` equal to `t/L²` at every level (C1); the exact `V_L` of these tori lies inside T3's bracket (C2).
++and exp(t/τ_L)M_t→exp(−V_L). Its asymptotic exponential rate is
++1/τ_L. No equality with a nonlinear magnetization is assumed.
++For the optional parametrization τ_L=3βL²/A(3β). The runner retains the
++original rational enclosures at β∈{6,12,24,48}, L∈{16,32,64}, each of
++width below 1/10. Coarser enclosing intervals include [4879,4880],
++[19516,19517], [78064,78065] for β=6, and [9479,9480],
++[18691,18692], [37121,37122] for L=16 at β=12,24,48. These bound real
++scales; the integer crossing is the ceiling, not a rounded real value.
+ 
+-## Theorem T3 — the memory time and the bracket
++For completeness the exact enclosure method is as follows. For x≥0,
++truncate exp(x) after degree n with x<n+2. The next term is
++xⁿ⁺¹/(n+1)!; all successive term ratios are at most x/(n+2), so the positive
++tail is bounded above by that next term divided by 1−x/(n+2).
++Apply this to x=2κ. The function (E+1)/(E−1)−1/κ decreases for E>1,
++so substituting the upper/lower exp bounds in reverse order encloses A(κ).
++Positive reciprocals then enclose τ_L. The π bounds use
++π=16 arctan(1/5)−4 arctan(1/239) and alternating-series upper/lower
++remainders. These are mathematical enclosures, not fitted constants.
+ 
+-**T3.1 (the memory time).** `τ_L = L²/σ² = 3βL²/A(3β)` is the level at which the plane average's variance per component reaches one; beyond a transient of order `V_L` the proxy is `e^{−v_t} = e^{−V_L(t)} e^{−t/τ_L}` with `V_L(t) ↑ V_L`, so it decays exponentially at the rate `1/τ_L = A(3β)/(3βL²)`. The runner encloses `τ_L` to width below `1/10` at `β = 6, 12, 24, 48` and `L = 16, 32, 64` through the exact enclosure of `A(3β)` (D1): `τ ∈ [4879, 4880]`, `[19516, 19517]`, `[78064, 78065]` at `β = 6`; `[9479, 9480]` at `(12, 16)`; `[18691, 18692]` at `(24, 16)`; `[37121, 37122]` at `(48, 16)`. On the infinite plane the same proxy decays like `t^{−γ}` (block 26 T5); the torus turns the algebraic loss into an exponential one at the zero-mode rate.
++## Complete finite lattice-sum bracket
+ 
+-**T3.2 (the bracket).** `M` has eigenvalues `1/9` and `1/3`; from `sin²(x/2) ≤ x²/4` (all `x`) one has `1 − u ≤ Q(k) ≤ |k|²/3`, and from `sin(x/2) ≥ x/π` on `[0, π]` one has `1 − u ≥ (4/(9π²))|k|²` for the representative with `|k_i| ≤ π`; with `|k|² = (2π/L)²|n|²`,
+-```
+-(3/(4π²)) σ² S_L  ≤  V_L  ≤  (9/16) σ² S_L .
+-```
+-(D2: the eigenvalues symbolically; the sine inequalities on an exact grid; the bracket on the tiny tori.) The lattice sums are rational; `S_16, S_32, S_64` increase and consecutive differences lie within one of `2π log 2` (D3), the discrete counterpart of `S_L = 2π log L + O(1)`. Executed, not claimed: by direct summation `V_L/σ² = 2c₀ log L + 0.353 + o(1)` with `c₀ = 3√3/(4π)`, i.e. `V_L = 2γ log L + 0.353σ²`, the differences to `2c₀ log L` being `0.3514, 0.3525, 0.3527, 0.3528` at `L = 16, 32, 64, 128` (refuting spec, item 4) — the torus's transverse spread equals the infinite plane's at level `t = L²`, as the reading "memory time of order `L²`" requires.
++Choose representatives nᵢ∈(−L/2,L/2], k=2πn/L, and let
++S_L=Σₙ≠₀1/|n|². The matrix M=(1/9)[[2,−1],[−1,2]] has eigenvalues
++1/9 and 1/3. Since |sin y|≤|y| for all real y,
+ 
+-## Executed: the nonlinear law on tori (not proved)
++1−u≤[k₁²+k₂²+(k₁−k₂)²]/9=kᵀMk≤|k|²/3.
+ 
+-Controls `specs/supervisor_control_block34_torus_msd.py` (block 26's exact sampler on the periodic plane; the mean-squared angular displacement of `m̂_t` over lags `25`–`1000` levels, averaged along trajectories after discarding the first fifth; the linear Gaussian model with the same estimator on `θ̄`) and `..._torus_sim.py` (an exponential fit of the ensemble mean of the projection, found too noisy at the seed counts used and kept as the record of that finding). Outputs in `.out.txt`.
++Concavity of sin on [0,π/2] puts it above its endpoint chord:
++sin y≥2y/π. Therefore sin²(kᵢ/2)≥kᵢ²/π² for |kᵢ|≤π.
++Dropping the third nonnegative sine square gives
++1−u≥4|k|²/(9π²). Inverting these positive inequalities for each nonzero
++mode, substituting |k|²=(2π/L)²|n|², summing and multiplying by σ²/L² yields
+ 
+-| `β` | `L` | `σ²/L²` | `τ_L` | `|m|` (stationary) | `D_1/(σ²/L²)` at lags `25, 100, 1000` | linear model, same estimator | `1/|m|²` |
+-|---|---|---|---|---|---|---|---|
+-| 6 | 16 | `2.050·10⁻⁴` | `4879` | `0.844` | `1.34, 1.33, 1.27` | `0.99, 0.98, 1.00` | `1.40` |
+-| 6 | 32 | `5.124·10⁻⁵` | `19516` | `0.809` | `1.42, 1.42, 1.38` | `1.01, 0.99, 0.97` | `1.53` |
+-| 12 | 16 | `1.055·10⁻⁴` | `9479` | `0.924` | `1.14, 1.14, 1.12` | `1.00, 0.99, 1.01` | `1.17` |
+-| 12 | 32 | `2.637·10⁻⁵` | `37917` | `0.908` | `1.17, 1.19, 1.21` | `1.01, 1.00, 0.96` | `1.21` |
+-| 24 | 16 | `5.350·10⁻⁵` | `18692` | `0.963` | `1.06, 1.06, 1.00` | `1.01, 1.00, 1.01` | `1.08` |
+-| 48 | 16 | `2.694·10⁻⁵` | `37122` | `0.982` | `1.02, 1.02, 1.00` | `1.00, 1.00, 0.98` | `1.04` |
++(3/(4π²))σ²S_L ≤ V_L ≤ (9/16)σ²S_L.
+ 
+-What the runs say. (i) The estimator is sound: the linear model returns its exact rate within three percent at every coupling and lag. (ii) The nonlinear direction diffuses faster than the zero-mode value by a factor that falls with `β` — `1.34, 1.14, 1.06, 1.02` — and is the same at `L = 16` and `32` within the errors (`±0.01–0.05`), so it is a property of the law, not of the size. (iii) The factor tracks `1/|m|²` of the stationary magnetization within a few percent (below it by `3–8 %`): the average record is shorter than one, and transverse kicks of the linear size turn a shorter vector through larger angles. So the nonlinear torus memory time is close to `|m|² τ_L`. (iv) The magnitude `|m|` itself is stationary on the torus (block 26 T4), so the direction's diffusion is the whole of the memory loss there. The refuting spec's independent rotated-pole sampler gives `1.28` at `(6, 16)` by the noisy exponential estimator, consistent with the control's `1.36` by the same estimator.
++For L=1 the empty sums make both bounds zero. This proof is uniform in L.
++It does not establish a sharp logarithmic coefficient, additive constant,
++or equality with infinite-plane spread at time L².
+ 
+-## No-Go Discipline Gate
++## Exact finite checks and limits of the evidence
+ 
+-The note's sentences are positive (exact statements about the linearized field) and executed (the nonlinear comparison); the gate is applied to the scope.
++For L=2,3,4 all mode cosines are rational. The exact covariance recurrence
++Σ_{t+1}=PΣ_tPᵀ+I, Σ₀=0, yields component site variance trΣ_t/L² and
++plane variance 1ᵀΣ_t1/L⁴. The preserved finite fixtures compare these to the
++mode sum through t=12 for L=2,3 and t=8 for L=4. Other retained fixtures
++check V_L's bracket, the eigenvalues, a 20-point sine enclosure grid and
++S_16,S_32,S_64. The last two increments are tested against the original
++rational interval around 2πlog2; this is a finite check, not an asymptotic proof.
++The analytic sine proof above supplies all-mode coverage, not the grid.
+ 
+-### N1 — Routes by which the exact sentences could fail, and the executed ones mislead
+-1. *The modes* — a circulant on the torus; the identity is symbolic; the tiny tori check the whole chain exactly (T2).
+-2. *The noise model* — the linearization's noise variance is block 26's exact one-step value at the aligned plane; away from it the nonlinear law's effective noise differs, which is what the executed excess measures.
+-3. *The bracket loose* — by a factor `7`; the asymptotic `2γ log L + 0.353σ²` is executed, not proved; a sharper exact bracket would follow block 26's T3 route (not done).
+-4. *The estimator* — validated on the linear model (item i); the exponential-fit estimator was found unreliable at these seed counts and is recorded as such.
+-5. *The `1/|m|²` reading* — an executed regularity within `8 %`, not a theorem; a second-order derivation (the transverse noise of the average vector divided by its length) is the natural target of "spin-wave theory as a theorem".
++The [runner](../scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py) plans 16 top-level checks: 11 mathematical checks
++and 5 input/reporting checks. Four original mathematical mutation families
++remain; four new mathematical mutations target the corrected sign, conjugacy,
++residual and ceiling. Two original prose-fence mutations are preserved only
++in recovery. None of this corrected runner has been executed during preparation.
++No claim of 16 passes or 8 killed mutations is made. Ordinary output is stdout;
++optional AUDIT_RESULT_SIDECAR writes one exclusively created external JSON.
++A future canonical cache may be generated only by controlled capture.
+ 
+-### N2 — Wall-independence audit
+-No no-go wall of the repository is used.
++N5 scope: per element, symbolic multiplier/geometric identities and exact
++sine-grid fixtures; per site, the stated tiny-torus covariance fixtures;
++per mode, the finite exact conjugacy/residual and bracket fixtures; per block,
++the twelve supplied variance-scale enclosures; lattice-wide, the complete
++conditional finite-L proofs above, with no nonlinear or sharp-asymptotic
++execution claim. These are evidence categories, not five closed negative routes.
+ 
+-### N3 — Hidden-wall scan
+-No hidden dependence: the inputs are the axioms' sentences, block 01's rule, and block 26's law and linearization as declared.
++## History and deferred science
+ 
+-### N4 — Per-citation table
+-| Citation | Role | Load-bearing? |
+-|---|---|---|
+-| `minimal_axioms` | the four sentences under Premises | yes (premise) |
+-| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
+-| block 26 (open PR #8170) | the law in level time, the gain-one linearization, `σ²`, the level walk, finite planes forget, `v_t` on the infinite plane | yes (restated; the sampler reused) |
+-| block 13 (open PR #8147) | the massless causal law | placement only |
+-
+-### N5 — Resolution audit
+-| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+-|---|---|---|---|---|---|
+-| "the linearized torus memory time is `3βL²/A(3β)` exactly" | executed: the multiplier identity and the geometric mode variance symbolically; the eigenvalues of `M`; the sine inequalities | executed: the rational covariance recursion on the tiny tori against the mode sum | executed: `V_L` on the tiny tori inside the bracket; the lattice sums' increments | executed: the memory times enclosed at four couplings and three sizes | T1–T3 for every `L` and `β`; the nonlinear rates executed, not claimed |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling or order; none is a wall.
+-
+-### N7 — Steelman
+-Hostile reviewer: "An exact theorem about a linear model and a simulation of the real one — the gap between them is the content, and it is not proved." Reply: the gap is measured to a few percent with a self-calibrating estimator and has a one-line reading (`1/|m|²`), which is the first quantitative target the lane has for a spin-wave theorem; the exact part fixes the scale and the form of the finite-plane decay, which block 26 only read off. Conceded: nothing about the nonlinear law is proved here.
+-
+-### N8 — Cross-cycle echo
+-Block 26's exponent `γ` reappears as the coefficient of `log L` in the torus's stationary spread; block 13's massless causal law is the same object with the torus's zero mode isolated; the estimator lesson (mean-squared displacement over the exponential fit) echoes block 29's kernel measurement.
+-
+-## Falsifiers
+-- The multiplier identity failing symbolically; a mode variance other than the geometric form; the plane average not `σ²t/L²` (B1–B2).
+-- A tiny torus where the covariance recursion and the mode sum differ, or `V_L` outside the bracket (C1–C2).
+-- A memory time outside its stated enclosure; the eigenvalues of `M` other than `1/9, 1/3`; a sine inequality failing on the grid; the lattice sums' differences outside `2π log 2 ± 1` (D1–D3).
+-
+-## Boundaries and non-claims
+-This note proves that the linearized transverse field of the unsoldered formation law on the periodic `L × L` level plane splits into a zero mode that performs a random walk of variance `σ² t/L²` per component, `σ² = A(3β)/(3β)`, and nonzero modes that are stationary, so that its memory time is `τ_L = 3βL²/A(3β)` exactly and its magnetization proxy decays exponentially at the rate `A(3β)/(3βL²)` after a transient, with the stationary transverse variance bracketed by `[3/(4π²), 9/16]·σ²·S_L`; it measures the nonlinear law's decay against that rate; it does not prove anything about the nonlinear law on the torus beyond block 26's finite-plane forgetting, does not treat the infinite plane, other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
+-
+-## Imports
+-- `minimal_axioms`: the sentences quoted under Premises.
+-- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. Block 26 (PR #8170, open) supplies the law, the linearization, `σ²`, the level walk and the finite-plane theorem, restated; its sampler is reused in the controls. Block 13 (PR #8147, open) referenced as an evidence address.
+-- Named standard imports at definition level (never as authority for physics): the diagonalization of a circulant by the characters of `Z_L²` (Fourier); the Machin series for `π`; the series enclosure of `coth`.
+-- Reference only (named, not used): Mermin–Wagner (1966) for the infinite-plane heuristics of block 26.
+-
+-## Review record
+-Supervisor-run block (continuing the owner's 2026-09-17 directive). Lens: with the six-axis threshold lane capped at the count, the sphere lane's "torus memory time" is the exact target; the zero mode isolates it. Controls: block 26's sampler restated on the torus; a first estimator (an exponential fit of the ensemble mean of the projection, `..._torus_sim.py`) gave ratios scattered from `0.5` to `1.9` and the linear model's own ratios from `0.3` to `1.0` at `8–32` seeds — the fit reads the random walk's fluctuations — and was replaced by the mean-squared angular displacement (`..._torus_msd.py`), which the linear model calibrates to `0.97–1.01`. Lens pass on the contract: the exact sentences confined to the linearized field; the `1/|m|²` reading labelled executed; the bracket's looseness stated with the executed asymptotic. Primary: T1–T3 (runner, 16 checks, 6 mutations). Refuting pass (`CHECKER_block34_findings.md`, `..._refuter.py`): a floating-point covariance recursion on `L = 8` against the mode sum (`10⁻¹³`); the memory times in floating point against the exact enclosures; an independent rotated-pole sampler; `V_L` by direct summation against the bracket and `2γ log L`. Fold: none beyond the estimator replacement.
+-
+-## Verification
+-
+-```bash
+-python3 scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py
+-python3 scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py --list-mutations
+-python3 scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py --mutation memory_time_wrong
+-```
+-
+-Families: A authority and inputs; B the modes; C the tiny tori; D the memory time and the bracket; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 6 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=16 FAIL=0`.
++[PR8178 recovery](history/pr8178-torus-auxiliary-recovery/README.md) contains
++every original path, raw identity and original delta. The [readable deferred
++argument](history/pr8178-torus-auxiliary-recovery/pr8178-deferred-science.md)
++retains the entire original note, nonlinear estimates, sharper asymptotic
++argument, limitations and correction trail. These are historical proposals,
++not premises of this theorem. In particular finite noisy fit failures do not
++prove estimator impossibility, and no formal negative certificate is claimed.
++The original branch remains required for the unlanded science.
+--- scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py
++++ scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py
+@@ -1,21 +1,17 @@
+ #!/usr/bin/env python3
+-"""Exact checks: the torus memory time of the unsoldered (sphere) formation law's linearized field.
+-
+-Scope.  T1: on the periodic L x L level plane the linearized transverse field theta_{t+1} = P theta_t + xi (gain one; per-component noise
+-variance sigma^2 = A(3 beta)/(3 beta)) splits into Fourier modes with multiplier phi(k) = (1 + e^{i k_1} + e^{i k_2})/3; the identity
+-1 - |phi|^2 = (4/9)[sin^2(k_1/2) + sin^2(k_2/2) + sin^2((k_1 - k_2)/2)] (so |phi(k)| < 1 off the zero mode); a mode's variance is
+-sigma^2 (1 - u^t)/(1 - u) (u = |phi|^2 < 1) and sigma^2 t at the zero mode, whence the plane average has variance sigma^2 t / L^2 per
+-component and the site variance is (sigma^2/L^2)[t + sum_{k != 0} (1 - u_k^t)/(1 - u_k)].  T2: the mode sum equals the exact rational
+-covariance recursion Sigma_{t+1} = P Sigma_t P^T + sigma^2 I on the tori L = 2, 3, 4.  T3: the memory time tau_L = L^2/sigma^2 =
+-3 beta L^2 / A(3 beta) and the decay rate sigma^2/L^2 enclosed exactly at beta = 6, 12, 24, 48 and L = 16, 32, 64; the stationary
+-transverse variance V_L = (sigma^2/L^2) sum_{k != 0} 1/(1 - u_k) bracketed by [3/(4 pi^2), 9/16] sigma^2 S_L with the exact rational
+-lattice sum S_L = sum over nonzero n in the symmetric box of 1/|n|^2 (checked against the exact V_L on the tiny tori).  Exact arithmetic only (integers,
+-Fractions and sympy); the runner scans its own source for floating-point literals.
++"""Exact finite checks for a supplied real gain-one additive torus field.
++
++No nonlinear memory theorem or sharp logarithmic asymptotic is claimed.
++Ordinary runs emit stdout; AUDIT_RESULT_SIDECAR optionally requests a unique
++external JSON result. This runner does not execute historical simulators.
+ """
+ 
+ from __future__ import annotations
+ 
+ import re
++import hashlib
++import json
++import os
+ import sys
+ from fractions import Fraction
+ from math import factorial, isqrt
+@@ -23,30 +19,24 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 60
+ AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+-    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+-    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++    'docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md',
++    'docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md',
+ )
+ ROOT = Path(__file__).resolve().parents[1]
+-CLAIM_ID = "admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_and_the_nonlinear_law_measured_against_it_bounded_theorem_note_2026-09-17"
+-BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
+-BLOCK01_FRAGMENT = "the static law of a product rule"
+-AXIOM_NEEDLES = (
+-    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
+-    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
+-    "Records form.",
+-    "Only records are readable.",
+-)
++CLAIM_ID = 'supplied_torus_auxiliary_field_mode_variance_and_finite_bracket_bounded_theorem_note_2026-09-17'
++PARENT_SHA256 = 'bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a'
+ 
+ MUTATION_GATE = {
+     "multiplier_wrong": "B",
+     "covariance_recursion_wrong": "C",
+     "memory_time_wrong": "D",
+     "lattice_sum_bounds_wrong": "D",
+-    "claim_transition_injected": "F",
+-    "claim_classical_name_in_theorem": "F",
++    "fourier_sign_wrong": "F",
++    "real_modes_independent_wrong": "F",
++    "zero_start_stationary_wrong": "F",
++    "integer_crossing_floor_wrong": "F",
+ }
+ ACTIVE_MUTATION: str | None = None
+ 
+@@ -186,24 +176,24 @@
+ 
+ # ============================================================================================ family A
+ def family_a(checks: Checks, texts) -> None:
+-    note, axioms, block01 = texts
+-    checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "the note carries its claim_id once")
+-    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axioms memo carries the four sentences quoted under Premises")
+-    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "block 01's note (on main) carries its claim_id and the rule's product form")
+-    checks.check("A4", all(Path(ROOT, p).exists() for p in AUDIT_INPUT_PATHS), "all declared inputs exist")
++    note, parent = texts
++    checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "one declared claim identity (metadata)")
++    checks.check("A2", hashlib.sha256(parent.encode()).hexdigest() == PARENT_SHA256, "actual corrected sphere-kernel input hash (metadata)")
++    checks.check("A3", Path(AUDIT_INPUT_PATHS[1]).name in note, "direct mathematical parent link present (metadata)")
++    checks.check("A4", all(Path(ROOT, p).is_file() for p in AUDIT_INPUT_PATHS), "all literal declared inputs exist (metadata)")
+ 
+ 
+ # ============================================================================================ family B — the modes (T1)
+ def family_b(checks: Checks) -> None:
+     k1, k2 = sp.symbols("k1 k2", real=True)
+-    phi = (1 + sp.exp(sp.I * k1) + sp.exp(sp.I * k2)) / 3
++    phi = (1 + sp.exp(-sp.I * k1) + sp.exp(-sp.I * k2)) / 3
+     u = sp.simplify(sp.expand(phi * sp.conjugate(phi), complex=True))
+     coeff = sp.Rational(4, 9) if not mut("multiplier_wrong") else sp.Rational(2, 9)
+     target = coeff * (sp.sin(k1 / 2) ** 2 + sp.sin(k2 / 2) ** 2 + sp.sin((k1 - k2) / 2) ** 2)
+     ok = sp.simplify(sp.expand_trig(1 - u - target)) == 0
+     # the zero set: all three sines vanish iff k1, k2 in 2 pi Z; and u <= 1
+     ok = ok and sp.simplify(u.subs({k1: 0, k2: 0})) == 1 and sp.simplify(u.subs({k1: sp.pi, k2: 0})) == sp.Rational(1, 9)
+-    checks.check("B1", ok, "T1: 1 - |phi(k)|^2 = (4/9)[sin^2(k1/2) + sin^2(k2/2) + sin^2((k1 - k2)/2)] for phi = (1 + e^{i k1} + e^{i k2})/3 (symbolic), so 0 <= |phi|^2 <= 1 with equality only at the zero mode; e.g. |phi(pi, 0)|^2 = 1/9")
++    checks.check("B1", ok, "T1: 1 - |phi(k)|^2 = (4/9)[sin^2(k1/2) + sin^2(k2/2) + sin^2((k1 - k2)/2)] for phi = (1 + e^{-i k1} + e^{-i k2})/3 (symbolic), so 0 <= |phi|^2 <= 1 with equality only at the zero mode; e.g. |phi(pi, 0)|^2 = 1/9")
+     uu, s2 = sp.symbols("u sigma2", positive=True)
+     ok2 = True
+     for tt in range(1, 9):
+@@ -256,7 +246,7 @@
+                 ok = ok and lo_t <= tau_lo and tau_hi <= hi_t
+             ok = ok and tau_hi - tau_lo < Fraction(1, 10) and rate_lo > 0
+             rows.append(f"beta={beta} L={L}: tau in [{int(tau_lo)}, {int(tau_hi) + 1}]")
+-    checks.check("D1", ok, "T3.1: the memory time tau_L = 3 beta L^2 / A(3 beta) enclosed exactly (width < 1/10) at beta = 6, 12, 24, 48 and L = 16, 32, 64, e.g. " + "; ".join(rows[:4]) + " ...; the rate sigma^2/L^2 = A(3 beta)/(3 beta L^2) positive")
++    checks.check("D1", ok, "T3.1: the supplied real variance-one scale tau_L = 3 beta L^2 / A(3 beta) enclosed exactly (width < 1/10) at beta = 6, 12, 24, 48 and L = 16, 32, 64, e.g. " + "; ".join(rows[:4]) + " ...; the rate sigma^2/L^2 = A(3 beta)/(3 beta L^2) positive")
+     # D2: the eigenvalues of M and the two sine inequalities behind the bracket
+     M = sp.Matrix([[2, -1], [-1, 2]]) / 9
+     ev = sorted(M.eigenvals().keys())
+@@ -287,61 +277,49 @@
+     S16, S32, S64 = lattice_sum(16), lattice_sum(32), lattice_sum(64)
+     ln2_lo, ln2_hi = Fraction(6931, 10000), Fraction(6932, 10000)
+     ok3 = S16 < S32 < S64 and 2 * PI_LO * ln2_lo - 1 < S32 - S16 < 2 * PI_HI * ln2_hi + 1 and 2 * PI_LO * ln2_lo - 1 < S64 - S32 < 2 * PI_HI * ln2_hi + 1
+-    checks.check("D3", ok3, f"T3.2: the rational lattice sums S_16, S_32, S_64 increase ({S16.numerator // S16.denominator}, {S32.numerator // S32.denominator}, {S64.numerator // S64.denominator} to the integer part) and consecutive differences lie within 1 of 2 pi log 2 (the growth 2 pi log L + O(1))")
++    checks.check("D3", ok3, f"T3.2: the rational lattice sums S_16, S_32, S_64 increase ({S16.numerator // S16.denominator}, {S32.numerator // S32.denominator}, {S64.numerator // S64.denominator} to the integer part) and consecutive differences lie within 1 of 2 pi log 2 (finite fixtures only; no logarithmic asymptotic proved by this check)")
+ 
+ 
+ # ============================================================================================ family F
+-FENCES = (
+-    "This note proves that the linearized transverse field of the unsoldered formation law on the periodic `L × L` level plane splits into a zero mode that performs a random walk of variance `σ² t/L²` per component, `σ² = A(3β)/(3β)`, and nonzero modes that are stationary, so that its memory time is `τ_L = 3βL²/A(3β)` exactly and its magnetization proxy decays exponentially at the rate `A(3β)/(3βL²)` after a transient, with the stationary transverse variance bracketed by `[3/(4π²), 9/16]·σ²·S_L`; it measures the nonlinear law's decay against that rate; it does not prove anything about the nonlinear law on the torus beyond block 26's finite-plane forgetting, does not treat the infinite plane, other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause.",
+-    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
+-)
+-FORBIDDEN = (
+-    "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "the physical reading", "for every coupling", "selects the", "fires wake condition",
+-    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+-    "sharp threshold", "the transition point", "the ordered phase begins at", "has no ordered phase", "does not order",
+-)
+-CLAIM_INJECTIONS = {"claim_transition_injected": "Hence the ordered phase begins at beta = 6."}
+-CLASSICAL_NAMES = ("Toom", "Berman", "Simon", "Gács", "Mermin", "Wagner", "Bramson", "Gray", "Krylov", "Bogolyubov", "Choquet", "Peierls", "Dobrushin", "Fourier", "Parseval")
+-ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects", "Review record")
+-SCAN_MARKER = "float-scan-marker-line"
+-
+-
+ def family_f(checks: Checks, note_text: str) -> None:
+-    text = note_text
+-    for name, phrase in CLAIM_INJECTIONS.items():
+-        if mut(name):
+-            text = text.replace("## Theorem T3", phrase + "\n\n## Theorem T3", 1)
+-    if mut("claim_classical_name_in_theorem"):
+-        text = text.replace("## Theorem T2", "## Theorem T2 (after Mermin)", 1)
+-    norm = normalize_text(text)
+-    checks.check("F1", all(normalize_text(f) in norm for f in FENCES), "the note carries the three fence sentences verbatim")
+-    hits = [p for p in FORBIDDEN if p in text]
+-    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
+-    src = Path(__file__).read_text(encoding="utf-8")
+-    body = src.split(SCAN_MARKER)[0]
+-    float_hits = re.findall(r"(?<![\w.])\d+\.\d+(?![\w.])|\bfloat\(|\.evalf\(|\bN\(", body)
+-    checks.check("F3", not float_hits, f"runner source: no floating-point literal or conversion call ({len(float_hits)} hits)")
+-    sections = re.split(r"^## ", text, flags=re.M)
+-    offenders = []
+-    for sec in sections[1:]:
+-        title = sec.split("\n", 1)[0].strip()
+-        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
+-            continue
+-        for nm in CLASSICAL_NAMES:
+-            if nm in sec:
+-                offenders.append((title[:40], nm))
+-    offenders += [("front matter", nm) for nm in CLASSICAL_NAMES if nm in sections[0]]
+-    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports, the Premises and the Review record ({len(offenders)} offenders)")
++    # A real L=4 torus, with exact fourth roots of unity, tests the convention.
++    L = 4
++    sites = [(a, b) for a in range(L) for b in range(L)]
++    U = sp.Matrix([[sp.I ** (-(a*x+b*y)) / L for x,y in sites] for a,b in sites])
++    P = (sp.eye(L*L) + shift_matrix(L,0) + shift_matrix(L,1))/3
++    sign = 1 if mut("fourier_sign_wrong") else -1
++    D = sp.diag(*[(1+sp.I**(sign*a)+sp.I**(sign*b))/3 for a,b in sites])
++    checks.check("F1", U*P*U.H == D, "negative-character convention verified by exact real-space transform at L=4")
++    conjugation = sp.zeros(L*L,L*L)
++    for i,(a,b) in enumerate(sites):
++        conjugation[i,sites.index(((-a)%L,(-b)%L))] = 1
++    expected = sp.eye(L*L) if mut("real_modes_independent_wrong") else conjugation
++    checks.check("F2", U*U.H == sp.eye(L*L) and U*U.T == expected, "Hermitian covariance diagonal; real-field pseudo-covariance pairs opposite modes")
++    ok = True
++    for L in (2,3,4):
++        modes = [u_mode(L,a,b) for a in range(L) for b in range(L) if (a,b)!=(0,0)]
++        rho = max(modes)
++        V = V_exact(L)
++        for t in (0,1,2,8):
++            residual = V - (site_variance_modes(L,t)-Fraction(t,L*L))
++            exact = sum((u**t/(1-u) for u in modes),Fraction(0))/(L*L)
++            bound = Fraction(0) if mut("zero_start_stationary_wrong") else rho**t*V
++            ok = ok and residual == exact and 0 <= residual <= bound
++    checks.check("F3", ok, "zero-start residual equals finite tail and is bounded by rho^t V on exact tiny tori")
++    ok = True
++    for tau in (Fraction(5,2),Fraction(3),Fraction(7,3)):
++        crossing = tau.numerator//tau.denominator if mut("integer_crossing_floor_wrong") else -(-tau.numerator//tau.denominator)
++        ok = ok and Fraction(crossing-1)/tau < 1 <= Fraction(crossing)/tau
++    checks.check("F4", ok, "first integer variance-one crossing uses ceiling, including noninteger real scales")
+ 
+ 
+ # ============================================================================================ family G
+ N5_LINES = (
+-    "per_element: executed — the multiplier identity and the geometric mode variance symbolically; the eigenvalues of M; the sine inequalities on an exact grid",
+-    "per_site: executed — the rational covariance recursion on the tori L = 2, 3, 4 at every level tested against the mode sum; the plane average t/L^2",
+-    "per_mode: executed — the exact V_L of the tiny tori inside the lattice-sum bracket; the lattice sums S_16, S_32, S_64 and their logarithmic increments",
+-    "per_block: executed — the memory times 3 beta L^2 / A(3 beta) enclosed to width below 1/10 at four couplings and three sizes",
+-    "lattice_wide: T1-T3 hold for every L and beta (the linearized field); the nonlinear law's rates are executed in the controls and not claimed",
++    "per_element: this run checks symbolic multiplier/geometric identities, eigenvalues and exact sine-grid fixtures; outcomes above",
++    "per_site: this run checks exact L=2,3 through t=12 and L=4 through t=8 covariance fixtures; outcomes above",
++    "per_mode: this run checks tiny-torus finite brackets, L=4 real conjugacy and finite residual fixtures; outcomes above",
++    "per_block: this run encloses twelve supplied real variance-one scales and checks integer-crossing fixtures; outcomes above",
++    "lattice_wide: conditional finite-L proof is in the note; no simulation, nonlinear memory or sharp logarithmic asymptotic tested",
+ )
+ 
+ 
+@@ -378,9 +356,21 @@
+         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
+         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
+     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
++    sidecar = os.environ.get("AUDIT_RESULT_SIDECAR")
++    if sidecar:
++        destination = Path(sidecar)
++        if not destination.is_absolute() or destination.resolve().is_relative_to(ROOT.resolve()):
++            raise ValueError("AUDIT_RESULT_SIDECAR must be an absolute external per-attempt path")
++        with destination.open("x", encoding="utf-8") as f:
++            json.dump({"passed": checks.passed, "failed": checks.failed,
++                       "failed_families": sorted(checks.failed_families),
++                       "mutation": ACTIVE_MUTATION,
++                       "expected_mutation_family": MUTATION_GATE.get(ACTIVE_MUTATION),
++                       "input_sha256": {p: hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS},
++                       "scope": "finite auxiliary checks; not universal execution or nonlinear proof"}, f, indent=2)
++            f.write("\n")
+     return 0 if checks.failed == 0 else 1
+ 
+ 
+ if __name__ == "__main__":
+     sys.exit(main(sys.argv[1:]))
+-# float-scan-marker-line

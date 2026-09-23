@@ -228,3 +228,13 @@ After block 94 the owner wrote: "these are not hard decisions - they are guts fo
 | 73 | Is it a force? | No: timed by the leaving site, hops are unbiased (zero mean displacement off contact; two records tick together); the field acts on waiting times only; records linger where clocks are slow. Block 53's "mean velocity follows the gradient" corrected | block 95 T3; corrigendum on #8568 | exact |
 | 74 | Many records | 96 records on `16³` stay spread at `g = 0.5` and condense into one cluster with a vapour from `g = 0.8` (below the mean-field stability limit `1.109`; energy–entropy count `0.887`); centre clocks `e^(−10.6)` to `e^(−11.8)` of the mean | block 95 control W3–W4 | executed |
 | 75 | Still not from records alone | the clock clause; which end of a hop keeps its time (the sign); inertia (nothing orbits; amplitudes fall, block 54); the delay (block 57: nearest-neighbour kinetic terms carry none); waves | — | open; next: the waves cell |
+
+## Eleventh addendum (2026-09-23): the moving-records column's waves (block 96)
+
+Block 96 (#8866) takes the second cell of the owner's request: waves in the moving-records column.
+
+| # | Question | State | Deciding computation | Status |
+|---|---|---|---|---|
+| 76 | Can clocked record motion, or anything slaved to it, carry waves? | No: record motion in detailed balance (block 39; block 95 at every timing, field held or slaved) and every function of its configuration (slaved possibility, the slaved clock field) have a real spectrum — no oscillation, no fronts (block 94 T5), no orbits; a circulation is what oscillates | block 96 T1; control W1 (120 and 2016 states) | exact |
+| 77 | Does a record's own direction memory give waves? | Only short ones that die: on a line non-real iff `\|sin k\| > (1 − p)/p`, density branch diffusive; in 3D the direction modes oscillate while decaying at a rate that does not vanish at long waves; `p → 1` gives free streams along the axes, not an isotropic wave | block 96 T2; control W2 | exact on the line; 3D at two wave vectors and executed |
+| 78 | What do the routes to waves share? | Two conserved things coupled at first order in `k` by a term time reversal flips: density and momentum (block 44), colour moments through the chiral rate `γ` (#8600), links (#8650), the amplitude's two parts (the walk, block 54); content-blind records diffuse under every covariant rule. The same missing piece gives inertia | block 96 T3 | exact for the linear systems; the routes' clauses are theirs |

@@ -1,0 +1,34 @@
+{
+ "task": "R:lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "lattice",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
+ "seed": 45438,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d5fece2",
+ "started_utc": "20260923T063718Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2f4dfd17ea61bfa4715ddb5d807468284fe060aa45c4fc22e4206b2d45382046",
+ "stdout_tail": "er (not naive, not staggered) ---\n  c_mu(x) = 1 + 0.3*cos(pi*sum_{nu!=mu} x_nu / L)\n  (strictly axis-inv, not equal to staggered or naive)\n  ||[T, M]||_max             = 0.000e+00\n  max |partial^L J|          = 8.847e-16\n  E4 verdict: PASS\n--- Exhibit E5: axis-inv class = anti-Hermitian carrier class (sharp) ---\n  Axis-inv carrier  (c_mu = eta_mu)        :\n    ||M_off + M_off^T||_max  = 0.000e+00    (=> anti-Hermitian)\n  Non-axis-inv carrier (c_mu = 1+2*(x_mu%2)):\n    ||M_off + M_off^T||_max  = 1.000e+00    (=> NOT anti-Hermitian)\n  Axis-inv <=> anti-Hermitian carrier class: characterization is sharp.\n  E5 verdict: PASS\n--- Exhibit E6: non-identity internal generator T = sigma_3 ---\n  T = I_lattice (x) sigma_3  :  internal-2 doubled chi\n  ||[T, M_full]||_max        = 0.000e+00\n  max |partial^L J|          = 4.443e-16\n  E6 verdict: PASS\n--- Exhibit E7: algebraic Lie-substitution J4 = i * J5 (generic carrier) ---\n  K random carriers checked  = 4\n  max |J4 - i*J5|            = 0.000e+00\n  E7 verdict: PASS\n--- Exhibit E8: carrier-independence on K = 16 distinct axis-inv carriers ---\n  K = 16 distinct axis-inv carriers, on-shell expectation values\n  worst |partial^L J|_max    = 1.207e-15\n  E8 verdict: PASS\n\n========================================================================\n Summary\n========================================================================\n  E0: PASS\n  E1: PASS\n  E2: PASS\n  E3: PASS\n  E4: PASS\n  E5: PASS\n  E6: PASS\n  E7: PASS\n  E8: PASS\n\n Overall verdict: PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063719Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,15 @@
+KOIDE r=1/2 POLARIZATION WALL -- independent verification scaffold
+======================================================================
+[PASS] W1: weighting (1,2) [vector/real, 2 doublet modes] -> r = 1  (Q = 1/3+2/3 = 1)
+       r(1,2) = 1, Q = 1
+[PASS] W1: weighting (1,1) [holomorphic, 1 doublet mode] -> r = 1/2  (Q = 1/3+1/3 = 2/3, the Koide value)
+       r(1,1) = 1/2, Q = 2/3
+[PASS] W2 (the wall): the doublet CW fluctuation modulus |b|^2 has Hessian over (Re b, Im b) of RANK 2 (two strictly positive eigenvalues) -> TWO real propagating modes -> weighting (1,2) -> r=1, robustly
+       Hessian = [[2, 0], [0, 2]], rank = 2, eigenvalues = [2]
+[PASS] W2 robustness: a general smooth modulus f(|b|^2) has a generically full-rank (rank-2) Hessian over (Re b, Im b) (det not identically zero) -> the modulus reading ALWAYS counts two real doublet modes
+       det Hessian[f(|b|^2)] = 4*(2*b1**2*Subs(Derivative(f(_xi_1), (_xi_1, 2)), _xi_1, b1**2 + b2**2) + 2*b2**2*Subs(Derivative(f(_xi_1), (_xi_1, 2)), _xi_1, b1**2 + b2**2) + Subs(Derivative(f(_xi_1), _xi_1), _xi_1, b1**2 + b2**2))*Subs(Derivative(f(_xi_1), _xi_1), _xi_1, b1**2 + b2**2) (not identically 0 -> rank 2 generically)
+[PASS] W3: a UNIFORM complex recount (1/2,1) is proportional to (1,2) -> STILL r=1 (Frobenius-Schur objection); only the ASYMMETRIC (singlet-real, doublet-holomorphic) = (1,1) split gives r=1/2 -- that asymmetric split IS the unproven selector
+       r(1/2,1) = 1 = r(1,2); the selector must be the ASYMMETRIC (1,1)
+
+TOTAL: PASS=5 FAIL=0
+VERDICT (wall established, not a derivation): the polarization selector is the binary {doublet counted as 2 real modes (modulus/CW, rank-2) -> r=1} vs {doublet counted as 1 holomorphic mode -> r=1/2}. The CW fluctuation modulus ROBUSTLY gives the rank-2 / r=1 count (#2624 wall). Any frame claiming r=1/2 must produce a NON-modulus, ASYMMETRIC, holomorphic count of the doublet that is (a) not the rank-2 modulus, (b) not a uniform complex rescaling, (c) not circular. This scaffold is the test harness for campaign survivors and the ground for a sharpened no-go.

@@ -1,0 +1,17 @@
+J_cs = (C - C^2)/sqrt(3) IS MEASURE-NEUTRAL -> cannot select Koide r=1/2
+========================================================================
+[PASS] J1: J_cs is REAL ANTISYMMETRIC with spectrum {0, +i, -i} (the native complex structure on the doublet)
+       antisym=True, eig(J_cs)=[-1j, 0j, 1j]
+[PASS] J2: J_cs^2 = -(I - P_triv)  (J^2 = -1 on the 2-dim doublet, 0 on the trivial isotype)
+       ||J_cs^2 + (I - P_triv)|| = 3.3e-16
+[PASS] J3: [J_cs, C] = 0 -> [J_cs, M] = 0 for every circulant M (J_cs is a polynomial in C)
+       ||[J_cs, C]|| = 0.0e+00
+[PASS] J3b: [J_cs, M] = 0 for a random circulant M = a I + b C + c C^2
+       ||[J_cs, M]|| = 6.2e-17
+[PASS] J4: exp(theta J_cs) in SO(3) (orthogonal, det +1) and FIXES the trivial axis (1,1,1) -> it is an SO(2) rotation by theta on the doublet plane
+       verified at theta in {0.3,1.0,2.0,pi}
+[PASS] J5 (the wall): under the J_cs flow M -> R(theta) M R(theta)^T, the eigenvalue magnitudes, |det M|, and the M^dag M (modulus) spectrum are ALL theta-INVARIANT -> J_cs preserves every measure (det_R, |det_C|, E_d, r); it rotates only the doublet PHASE (delta), never the magnitude. A measure-neutral static structure cannot SELECT (1,1) over (1,2).
+       invariant tuple constant across theta: True; sample |det|=1.377
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: the framework-native complex structure J_cs commutes with the generation matrix and generates a measure-PRESERVING SO(2) flow on the doublet. It can DEFINE a holomorphic readout but provably cannot SELECT the (1,1) holomorphic count over the (1,2) real count -- both are J_cs-invariant. Hence the native i does NOT derive Koide r=1/2; it carries the delta (phase) channel, not the r (magnitude). With the rank-2 sesquilinear modulus wall, the tested static selector class fails; the dynamical first-order/index opening remains outside this runner. Audit lane sets the verdict.

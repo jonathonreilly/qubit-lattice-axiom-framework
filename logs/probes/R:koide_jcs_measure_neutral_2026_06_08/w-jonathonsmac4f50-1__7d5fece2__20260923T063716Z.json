@@ -1,0 +1,31 @@
+{
+ "task": "R:koide_jcs_measure_neutral_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_jcs_measure_neutral_2026_06_08.py",
+ "seed": 45436,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d5fece2",
+ "started_utc": "20260923T063716Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0ec8b238c31f083b4813e0433fb391fdda88c41c1185df8c5f8ffa4865b7615a",
+ "stdout_tail": "ype)\n       ||J_cs^2 + (I - P_triv)|| = 3.3e-16\n[PASS] J3: [J_cs, C] = 0 -> [J_cs, M] = 0 for every circulant M (J_cs is a polynomial in C)\n       ||[J_cs, C]|| = 0.0e+00\n[PASS] J3b: [J_cs, M] = 0 for a random circulant M = a I + b C + c C^2\n       ||[J_cs, M]|| = 6.2e-17\n[PASS] J4: exp(theta J_cs) in SO(3) (orthogonal, det +1) and FIXES the trivial axis (1,1,1) -> it is an SO(2) rotation by theta on the doublet plane\n       verified at theta in {0.3,1.0,2.0,pi}\n[PASS] J5 (the wall): under the J_cs flow M -> R(theta) M R(theta)^T, the eigenvalue magnitudes, |det M|, and the M^dag M (modulus) spectrum are ALL theta-INVARIANT -> J_cs preserves every measure (det_R, |det_C|, E_d, r); it rotates only the doublet PHASE (delta), never the magnitude. A measure-neutral static structure cannot SELECT (1,1) over (1,2).\n       invariant tuple constant across theta: True; sample |det|=1.377\n\nTOTAL: PASS=6 FAIL=0\nVERDICT: the framework-native complex structure J_cs commutes with the generation matrix and generates a measure-PRESERVING SO(2) flow on the doublet. It can DEFINE a holomorphic readout but provably cannot SELECT the (1,1) holomorphic count over the (1,2) real count -- both are J_cs-invariant. Hence the native i does NOT derive Koide r=1/2; it carries the delta (phase) channel, not the r (magnitude). With the rank-2 sesquilinear modulus wall, the tested static selector class fails; the dynamical first-order/index opening remains outside this runner. Audit lane sets the verdict.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063716Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

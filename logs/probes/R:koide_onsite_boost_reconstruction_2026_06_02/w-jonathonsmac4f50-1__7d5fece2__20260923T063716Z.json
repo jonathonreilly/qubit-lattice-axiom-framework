@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_onsite_boost_reconstruction_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_onsite_boost_reconstruction_2026_06_02.py",
+ "seed": 45436,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d5fece2",
+ "started_utc": "20260923T063716Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "38e079bb06ab76acc9974880bb76e1308a9c7665fed0de2e4df2daa803c5fedc",
+ "stdout_tail": "ONLY spin-0 (excluded for spin-1/2 content)\n[PASS] S5 SELECTION: spin-1/2 numerator forces FAITHFUL chiral Weyl over scalar (little-group)\n[PASS] S6 scalar carrier fails covariance for the spin-1/2 kernel (witness > 0)  (min discrepancy over boosts 2.824e-01)\n[PASS] S7a omega^2 = -1 and omega central (pseudoscalar)  (omega = 0.00+1.00j I (= +i I on this qubit))\n[PASS] S7a single qubit realizes ONE chirality (e_+ = I, e_- = 0)\n[PASS] S7b Dirac H spectrum {-E,-E,+E,+E} (needs FULL 4-comp Dirac)  (E=1.5875)\n[PASS] S7b massive on-shell projector idempotent on Dirac C^4 (P^2=P)\n[PASS] S7b massive projector NOT idempotent on a single chirality C^2 (=(1/2)I2)  (single qubit hosts MASSLESS Weyl; mass needs the partner chirality)\n[PASS] S7c partner chirality via Cl(3,0)->Cl(3,1) doubling: e_4^2=-1, {e_4, spatial}=0  (the named residual = emergent-time/Wick doubling step)\n\nSCORECARD PASS=23 FAIL=0\nVERDICT (honest): REDUCES-TO-NAMED-RESIDUAL. The Grassmann-free so(3,1) boosts from\nCl(3,0) bivectors + the qubit-is-faithful-chiral-Weyl + kernel covariance + the\nfaithful-vs-scalar SELECTION (L1) via the rest-frame little group are resolved\nwithin this bounded claim (no CAR in the forcing). CAR is NOT unconditionally forced: the MASSIVE\nfield satisfying T1's hypothesis reduces to ONE named residual -- the partner chirality\nvia the emergent-time Cl(3,0)->Cl(3,1) doubling as a positive-energy massive field.\nThis runner does not force CAR; it identifies the surface where T1 could later apply.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063716Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/koide_onsite_boost_reconstruction_2026_06_02.txt against the .txt beside this log"
+  ]
+ }
+}

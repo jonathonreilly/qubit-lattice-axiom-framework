@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_q23_block_weight_frontier_2026_05_29",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_q23_block_weight_frontier_2026_05_29.py",
+ "seed": 45437,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d5fece2",
+ "started_utc": "20260923T063717Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c159dc579e4cce39e5ab35cd2a210cde13cce33f8eb071b92c6f2f6e47581d6c",
+ "stdout_tail": "3333333333)\n[PASS] |b|^2/a^2=0.5 gives expected Q  (Q=0.666666666667)\n[PASS] |b|^2/a^2=1 gives expected Q  (Q=1.000000000000)\n[PASS] democratic endpoint  (p_plus=1.000000, Q=0.333333333333)\n[PASS] equal-block rule  (p_plus=0.500000, Q=0.666666666667)\n[PASS] dimension/Plancherel rule  (p_plus=0.333333, Q=1.000000000000)\n\n========================================================================\nDimension-three localization\n========================================================================\n[PASS] R[Z_2] real block count  (B=2)\n[PASS] R[Z_3] real block count  (B=2)\n[PASS] R[Z_4] real block count  (B=3)\n[PASS] R[Z_5] real block count  (B=3)\n[PASS] R[Z_6] real block count  (B=4)\n[PASS] Q_equipartition and range midpoint cross transversally at d=3\n\n========================================================================\nCounting-vs-splitting localization\n========================================================================\n[PASS] C_3-equivariant example commutes with the C_3 generator  (comm=0.00e+00)\n[PASS] same example is not chiral for Gamma_chi  (anti=2.533)\n[PASS] orbit-splitting example anticommutes with Gamma_chi  (anti=1.41e-16)\n[PASS] orbit-splitting example breaks C_3 equivariance  (comm=1.633)\n\n========================================================================\nSummary\n========================================================================\nPASS=19 FAIL=0\nThe equal-block rule gives Q=2/3 exactly, but this runner does not derive or approve that physical rule.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063717Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

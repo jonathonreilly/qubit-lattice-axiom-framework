@@ -1,0 +1,35 @@
+{
+ "task": "R:lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "lattice",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py",
+ "seed": 45437,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d5fece2",
+ "started_utc": "20260923T063718Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a0a6ea59c1d9c0c4a817a982fe70f57643855b88f7c3a4d2bb9bc85cdb18a313",
+ "stdout_tail": "SS] source_marker:dense_helper_source:def make_field(: def make_field( present\n[PASS] source_marker:dense_helper_source:def classify_sign(: def classify_sign( present\n[PASS] source_marker:dense_helper_source:def near_mass_window_gain(: def near_mass_window_gain( present\n[PASS] source_marker:dense_helper_source:def mass_side_channel_bias(: def mass_side_channel_bias( present\n[PASS] cache_runner_matches:endpoint_cache: scripts/lattice_3d_dense_z2_z6_endpoint_check.py == scripts/lattice_3d_dense_z2_z6_endpoint_check.py\n[PASS] cache_sha_fresh:endpoint_cache: f84ca8703702496f2aca40bbefa3732db21f749a20ae4c7cd75d104ff17b6844 == f84ca8703702496f2aca40bbefa3732db21f749a20ae4c7cd75d104ff17b6844\n[PASS] cache_exit_ok:endpoint_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:endpoint_cache: ASSERTIONS: PASS\n[PASS] cache_runner_matches:dense_helper_cache: scripts/lattice_3d_dense_10prop.py == scripts/lattice_3d_dense_10prop.py\n[PASS] cache_sha_fresh:dense_helper_cache: 1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e == 1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e\n[PASS] cache_exit_ok:dense_helper_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:dense_helper_cache: 3D DENSE LATTICE: CANONICAL 10-PROPERTY CARD\n========================================================================================\nSUMMARY: DENSE ENDPOINT SOURCE PACKET PASS=28 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063718Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

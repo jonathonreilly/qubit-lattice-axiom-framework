@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_massive_doubling_reduces_to_transfer_positivity_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_massive_doubling_reduces_to_transfer_positivity_2026_06_02.py",
+ "seed": 45436,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d5fece2",
+ "started_utc": "20260923T063716Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=52 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b057624fc72e3cef323cf6a02cbf0dc38086a31ecee261c824c81def32711238",
+ "stdout_tail": "t>=0, E0=0 (= spectrum cond.)\n  PASS  OS reflected Gram M_ij=<b_i|T^{i+j}|b_j> PSD for all m (=> RP from pos. Herm. T)\n  PASS  CONTROL: non-positive Hermitian T' -> log(T') complex -> Hhat NOT self-adjoint\n  PASS  CONTROL: non-positive T' -> OS reflected functional <v|T'|v> = lambda_- < 0 (RP fails for the negative-energy vector)\n==========================================================================\nBLOCK 5  mass HELPS the gate (det weight > 0, energy floor monotone in m)\n==========================================================================\n  PASS  det(M_KS + m I) real & > 0 & >= m^(2k) for m>0 (retained staggered det positivity)\n  PASS  mass term m>0 FLOORS the fermion measure det >= m^(2k) (positivity enabler)\n  PASS  one-particle energy floor sqrt(|p|^2+m^2) monotone NON-decreasing in m\n==========================================================================\nBLOCK 6  non-circularity + Euclidean-sign control\n==========================================================================\n  PASS  forcing objects are finite c-number matrices, not field-CAR operators\n  PASS  Euclidean control: a square-+1 e_4 (epsilon=+1) is the M_2(H) cell, excluded by retained cl3_to_cl31's epsilon=-1 binary (not by this note)\n  PASS  massive (m>0) positive-energy piece reduces to the same finite T-positivity gate\n==========================================================================\nSCORECARD PASS=52 FAIL=0\n==========================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063716Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

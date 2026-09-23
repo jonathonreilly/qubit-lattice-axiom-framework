@@ -1,0 +1,35 @@
+{
+ "task": "R:law_tournament_6266_6275_independent_check_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "law",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/law_tournament_6266_6275_independent_check_2026_09_09.py",
+ "seed": 45439,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d5fece2",
+ "started_utc": "20260923T063719Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1535dee38b6f3a785109ead4ca23d2fe54d6d9b2a2c604cc47c28b230f667dce",
+ "stdout_tail": "PASS exact-boundary: rank-one boundary accepted; actual negative eigenweight and excess trace rejected exactly\nPASS nonleading-minor-and-type: nonleading 2x2 determinant -7/144, non-Hermitian and float operands refused\nPASS complex-rank-one: exact imaginary coherence and singular PSD boundary retained\nPASS explicit-permuted-columns: a=2P+M canonical columns independently reconstructed; isometry\nPASS changed-basis-operand: same 16-unit/5-branch plus coarse comparator: bridge 1.11e-16, omitted bridge 1\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063719Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

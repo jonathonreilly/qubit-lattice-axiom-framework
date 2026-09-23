@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_q_dred_normalization_freedom_no_go_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py",
+ "seed": 45437,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d5fece2",
+ "started_utc": "20260923T063717Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "84df7e7c9a625f15a20d02d7910606e6506ba2926ab849c9149dc949169d5ce3",
+ "stdout_tail": "e units when k is held fixed\n       c=1 -> 1, c=2 -> 1/2\n\n=== 4. Legendre dual also carries the same normalization freedom ===\n[PASS] dual stationary source has c-dependent scale in plus slot\n       k_+*=-c + 1/y1\n[PASS] dual stationary source has c-dependent scale in perp slot\n       k_perp*=-c + 1/y2\n\n=== 5. Conclusion ===\n[PASS] D_red = I_2 is a normalization bridge, not a consequence of split algebra alone\n       the family D_c=cI_2 satisfies the same reduced determinant shape for all c>0\n[PASS] positive repair must supply a physical response-unit theorem or approved premise\n       more determinant algebra cannot select c=1\n\n========================================================================\nTOTAL: PASS=14 FAIL=0\n========================================================================\nper_element: PASS | the two executed reduced-carrier projectors are exactly orthogonal and resolve the identity element\nper_site: PASS | checked and not executed \u2014 the reduced determinant carrier has two internal slots but no spatial site coordinate or intersite coupling\nper_mode: PASS | the full positive-c normalization mode family reduces to the same dimensionless law after source-coordinate rescaling\nper_block: PASS | both source derivatives and both Legendre-dual stationary blocks retain the arbitrary normalization scale c\nlattice_wide: PASS | checked and not executed \u2014 the exact c-family obstruction is finite reduced-block algebra and defines no lattice-wide normalization response\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063717Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

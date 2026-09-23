@@ -1,0 +1,31 @@
+{
+ "task": "R:koide_polarization_wall_verification_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_polarization_wall_verification_2026_06_08.py",
+ "seed": 45436,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d5fece2",
+ "started_utc": "20260923T063716Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bdf6130b177ff90089f4fbf630415f23253421d281f9f9491703143d9156f356",
+ "stdout_tail": "     Hessian = [[2, 0], [0, 2]], rank = 2, eigenvalues = [2]\n[PASS] W2 robustness: a general smooth modulus f(|b|^2) has a generically full-rank (rank-2) Hessian over (Re b, Im b) (det not identically zero) -> the modulus reading ALWAYS counts two real doublet modes\n       det Hessian[f(|b|^2)] = 4*(2*b1**2*Subs(Derivative(f(_xi_1), (_xi_1, 2)), _xi_1, b1**2 + b2**2) + 2*b2**2*Subs(Derivative(f(_xi_1), (_xi_1, 2)), _xi_1, b1**2 + b2**2) + Subs(Derivative(f(_xi_1), _xi_1), _xi_1, b1**2 + b2**2))*Subs(Derivative(f(_xi_1), _xi_1), _xi_1, b1**2 + b2**2) (not identically 0 -> rank 2 generically)\n[PASS] W3: a UNIFORM complex recount (1/2,1) is proportional to (1,2) -> STILL r=1 (Frobenius-Schur objection); only the ASYMMETRIC (singlet-real, doublet-holomorphic) = (1,1) split gives r=1/2 -- that asymmetric split IS the unproven selector\n       r(1/2,1) = 1 = r(1,2); the selector must be the ASYMMETRIC (1,1)\n\nTOTAL: PASS=5 FAIL=0\nVERDICT (wall established, not a derivation): the polarization selector is the binary {doublet counted as 2 real modes (modulus/CW, rank-2) -> r=1} vs {doublet counted as 1 holomorphic mode -> r=1/2}. The CW fluctuation modulus ROBUSTLY gives the rank-2 / r=1 count (#2624 wall). Any frame claiming r=1/2 must produce a NON-modulus, ASYMMETRIC, holomorphic count of the doublet that is (a) not the rank-2 modulus, (b) not a uniform complex rescaling, (c) not circular. This scaffold is the test harness for campaign survivors and the ground for a sharpened no-go.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063717Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -22,11 +22,18 @@
  "stdout_tail": "04876, 0.004876 -> 0.00488 (local -0.01160)\nok E1: L = 8, q = 2pi/8 along x, dense diagonalisation: periodic: rates +0.0221, TT cross +0.0035 (local -0.0200), TT plus +0.0021 (local -0.0202), stretch +0.0004 (local -0.0088); antiperiodic: rates +0.0247, TT cross +0.0035 (local -0.0166), TT plus +0.0054 (local -0.0309), stretch +0.0052 (local -0.0142); the periodic row is block 76's W1/W2 (gradient part per |q|^2_lat for the rates, per q^2 for strains); the zone limits are I/48 = 0.0249 and D3's\nruntime 18 s\nSUMMARY: PROVED (a)-(c) with the task's HIT not met: Pi(q) = -I/4 + (I/48)|q|^2_lat + (interband part of order q^4 log q), so kappa = I/12 = 0.0994834268 > 0 exactly and the rates' response has no q^2 log q; (d) no reach-three strain mode has one either (vertex zero at the eight zeros; zone sums converge); block 76's numbers are finite-torus values.\nHIT: the free sea's clock stiffness is kappa = I/12 with I = int |s(k)| d^3k/(2pi)^3 = (1/(2 sqrt pi)) int_0^inf t^(-3/2)[1 - (e^(-t/2) I_0(t/2))^3] dt = 1.19380112142979520212, so kappa = 0.0994834268 > 0; the interband part of Pi(q) is O(q^4 log q), so there is no q^2 log q in the rates' response; the reach-three strain vertex vanishes at all eight zeros of s, so no strain mode has one either, with zone-limit q^2 coefficients 0.00502 (TT cross), 0.00529 (TT plus), 0.00488 (isotropic stretch) against block 76's L = 8 values 0.0035, 0.0021, 0.0004; a density coupling, by contrast, carries q^2 log q with coefficient 1/(6 pi^2).\n",
  "checked": {
   "by": "w-macbookpro90c72-jabe7",
-  "at_utc": "20260923T092933Z",
+  "at_utc": "20260923T093007Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha cec62619 differs from the current HEAD 3609787b (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science, with the task's HIT condition NOT met: the log proves kappa = I/12 = 0.0994834268 > 0 exactly (I as a one-dimensional Bessel integral, the interband part O(q^4 log q)), so the rates' response has no q^2 log q, and shows the same for every reach-three strain mode (vertex zero at the eight zeros; zone q^2 coefficients 0.00502, 0.00529, 0.00488), reproduces block 76's L = 8 numbers as periodic-torus values, and detects q^2 log q in a density-coupling control; (a)-(c) overlap the same model's #8716.",
+  "by": "w-macbookpro90c72-jabe7",
+  "at_utc": "20260923T093007Z"
  }
 }

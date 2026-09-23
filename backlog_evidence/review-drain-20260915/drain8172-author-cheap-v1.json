@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8172",
+  "tree": "12b15627de59706ffa788e1014db4ed435029667",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "six_axis_point_sensitivities_finite_island_healing_and_directed_recurrence_bounds_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/work_history/repo/review_feedback/pr8172-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4534
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4532
+    },
+    "declared_inputs": {
+      "hits": 8800,
+      "misses": 4687
+    }
+  },
+  "record_sha256": "283dd6901f4783eaa3b46e0ea4ced0339831330c20b045dfc61452be9d1770ad",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

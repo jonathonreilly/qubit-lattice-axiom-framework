@@ -1,0 +1,43 @@
+{
+  "pr": 8173,
+  "kind": "same-session-early-affected-source-review",
+  "source_revision": 3,
+  "disposition": "stage-cold-capture-clearance",
+  "blockers": [],
+  "final_pass": false,
+  "landing_pass": false,
+  "handoff_sha256": "f52fa47667331a5f90aefb1a0c224dedbd0197beb13e6350208b8fb90d8c7e2b",
+  "prepared_sha256": "d421631aca69cbea3183829f2c18babdd307e54a4fd63101cc68e8d137fb3108",
+  "source_freeze_sha256": "bf0c73da63eb5c4d8868f8675771f6874fc094fd1b062067cf27952e4d317507",
+  "original_manifest_sha256": "73153da44fb0d4b53229c976e5e6aba77a6f471b51cb1e2c3a2e4feda0b89186",
+  "report_sha256": "fb30406d10516b6cf7a1e9053bf101f0e7b738f573ae26d2edb1525fc6f65212",
+  "source_files_verified": 25,
+  "original_payloads_verified": 20,
+  "current_main": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "findings_1_through_5": "resolved in source; final evidence and integrated gates pending",
+  "independent_controls": {
+    "script": "/private/tmp/review-drain-20260915/check8173/affected-v3-controls.py",
+    "sha256": "a95723cfa9810712e9b73993c9b029343a61e8637691a8aeb51c8aa3ebd847ae",
+    "stdout": "/private/tmp/review-drain-20260915/check8173/affected-v3-controls.stdout.json",
+    "stdout_sha256": "666e952c11f66ad8ce80ab37abf6f45a24f1b1fd36a53fd20a84863ac27fa379",
+    "stderr": "/private/tmp/review-drain-20260915/check8173/affected-v3-controls.stderr.txt",
+    "attempts": 1
+  },
+  "proposed_primary_limit": {
+    "seconds": 60,
+    "bytes": 402653184,
+    "measured": false
+  },
+  "primary_runs": 0,
+  "simulation_runs": 0,
+  "mutation_cli_runs": 0,
+  "pipeline_runs": 0,
+  "branch_preservation_required": true,
+  "pending": [
+    "current-main advance/staged preservation",
+    "cold review",
+    "exact-source primary cache and mutation evidence",
+    "combined gates",
+    "same-session final confirmation"
+  ]
+}

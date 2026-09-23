@@ -1,0 +1,20 @@
+{
+  "bond_pairs": 16,
+  "global_rotation_cancellation": true,
+  "wrong_bond_sign_rejected": true,
+  "ward_N_squared_normalization": true,
+  "extra_division_N_rejected": true,
+  "projection_zero_total": [
+    "0",
+    "0",
+    "0"
+  ],
+  "fixed_axis_substitution_rejected": true,
+  "fixed_axis_total": [
+    "8/5",
+    "1",
+    "0"
+  ],
+  "elapsed_sec": 0.0002703749923966825,
+  "limits": "One deterministic standard-library Fraction run; four explicit rational unit spins, 16 pairs. No primary/mutation CLI/simulation execution. No timeout, memory enforcement, stochastic or exhaustive-lattice claim."
+}

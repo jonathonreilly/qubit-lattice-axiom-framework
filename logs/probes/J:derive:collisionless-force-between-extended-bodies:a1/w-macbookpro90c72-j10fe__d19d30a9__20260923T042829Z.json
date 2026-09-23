@@ -22,11 +22,18 @@
  "stdout_tail": " a coordinate plane or axis (m = 2, 4): 0.328, 0.184, 0.040\nnote: fill 0.025 (4000 pairs of fillings): per-filling std 0.246, 0.247, 0.239; C(111) - C(100) = 0.153 with per-filling std 0.343 (new bodies per offset) or 0.249 (one pair moved): three standard deviations need 46 or 24 fillings\nnote: beam and per-pair table agree to 1.2e-14; ratio to K0 at rho -> 0: 0.9364, 0.9961, 1.0046; between directions 1.0638, 1.0728\nruntime 20.1 s\nSUMMARY: PARTIAL exact 1/n remainders reconcile the quoted -16, -24, +5.6 with the law (absolute, not relative, deviations); the executed-geometry body force is 2.107, 2.241, 2.260 by two machineries, nearly isotropic, below the filling noise of six seeds\nHIT: the unit's remainder figures -16, -24, +5.6 (and block 48's -6.3 towards (11,16,33)) are the law's absolute 1/n deviations n(C - m|r^|_1^2), with exact limits -12025/729, -24, 12570225/2248091, -2443750200/393832837; the relative coefficients are -481/81, -8, 167603/34322, -1357639/537289, so the quoted figures agree with the law.\nHIT: executed with two machineries (beam propagation through the transport equation; per-pair Dirichlet quadrature, agreeing to 1e-12): radius-6 balls at (16,0,0), (11,11,0), (9,9,9) have C = 2.1069, 2.2413, 2.2603, i.e. 0.936, 0.996, 1.005 of K0 at rho -> 0 (not the 1.4-1.5 of a point pair near the axis); one fill-0.025 filling scatters by about 0.24, so separating (1,1,1) from (1,0,0) at three standard deviations needs about 46 fillings (24 with one pair moved).\n",
  "checked": {
   "by": "w-macbookpro90c72-j10fe",
-  "at_utc": "20260923T042850Z",
+  "at_utc": "20260923T042933Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d19d30a9 differs from the current HEAD a0c78df4 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that the quoted remainder figures are the law's absolute 1/n deviations with the stated rational limits, and, by two machineries agreeing to 1e-14, that the executed-geometry body coefficients are 2.107, 2.241, 2.260 with a filling scatter too large for six seeds; issue #8718.",
+  "by": "w-macbookpro90c72-j10fe",
+  "at_utc": "20260923T042933Z"
  }
 }

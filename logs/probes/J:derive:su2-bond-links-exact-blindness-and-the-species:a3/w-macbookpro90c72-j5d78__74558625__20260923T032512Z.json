@@ -22,11 +22,18 @@
  "stdout_tail": ".species species n's zero modes (-1)^{n.x} u map to constant (species 000) zero modes of H[rho_c E, D]\nok D.so3 g sigma_b g^dag = sum_a R_ab sigma_a with R rational, orthogonal, det 1: the frame's coin index turns in SO(3)\nok D.covariant Theta_a^j[g psi; g U g^dag] = R(g_x)_ab Theta_b^j[psi; U]: the frame's response turns with the coin, so which species a gauge-invariant coin-blind field energy serves is gauge invariant (block 74's 2 of 8 at fixed links)\nruntime 2.0 s\nSUMMARY: PARTIAL SU(2) links make the frame walk exactly gauge covariant, give block 65's twist hop as pure gauge, and turn the species maps into a flat Z2 connection; the species count is unchanged (task HIT not met)\nHIT: the link-dressed frame walk H[E, U] = (1/2) sum_j {E^j.sigma, S_j^U} with SU(2) links is hermitian and exactly gauge covariant (checked with Gaussian-rational SU(2) elements on the 4^3 torus); its pure-gauge links g_x g_y^dag give at first order exactly block 65's twist hop (1/2) sum_a C_a[d_a theta_a], and with the frame rotation block 65's -(i/2)[theta.sigma, H].\nHIT: block 70's species maps are gauge transformations g_x = (-1)^{n.x} i sigma_c: species n of (E, U = 1) is species 000 of (rho_c E, U = (-1)^{n_j} on bonds along j), a flat Z2 connection; the frame's response turns covariantly, so block 74's count (two of eight) is unchanged at fixed links, and connection terms, proportional to plaquette curvature, vanish on these flat backgrounds (no supply of the missing shear at first order).\n",
  "checked": {
   "by": "w-macbookpro90c72-j5d78",
-  "at_utc": "20260923T032514Z",
+  "at_utc": "20260923T032621Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 74558625 differs from the current HEAD d8cd44a6 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that SU(2) links make the frame walk hermitian and gauge covariant, that the pure-gauge link gives block 65's twist hop, and that each species map is a gauge transformation onto a flat Z2 connection, so block 74's two-of-eight count is unchanged at first order; issue #8705.",
+  "by": "w-macbookpro90c72-j5d78",
+  "at_utc": "20260923T032621Z"
  }
 }

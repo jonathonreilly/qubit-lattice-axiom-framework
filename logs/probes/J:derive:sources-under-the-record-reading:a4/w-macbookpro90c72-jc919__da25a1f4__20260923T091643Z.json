@@ -22,11 +22,18 @@
  "stdout_tail": " -0.013010 (exact rational); the record feels nothing from the packet, so (pull on packet) + (pull on record) = that value: block 55 T3 with S_packet = 0\nok C1: source of energy 1 in two places (0,-2,0), (0,2,0); test line y = -1: kick if the source has formed at one place -0.161235 or +0.033643, unformed under records only 0, under amplitude sourcing -0.063796 = their mean (exact): four distinct values\nruntime 49 s\nSUMMARY: PARTIAL: (b) exact for every amplitude, moving included (linear static law, record ledger E/(1 + k E g_yy), kept-ledger energy); the star's wall-independence in closed form and its failure for larger symmetric amplitudes; (a) the unmatched pull; (c) a two-place discriminator; (d) in ATTEMPT.md.\nHIT: with the simplest bond energy the ledger <H_w> + F is a quadratic form in phi for every amplitude, so the static law with held walls is linear: a record of energy E at y has ledger E/(1 + k E g_yy), k = gamma/12, and formation keeps the ledger iff E' = Lam/(1 - k Lam g_yy), Lam the amplitude's static ledger (hopping energy included), i.e. E' - E = k(E^2 g_yy - <e, g e>) + O(k^2); site-dependent in a box, site-blind on Z^3. The star amplitude sources exactly a point charge outside itself: E' = c/(1 - k c), c = m0/(1 + k m0) + 6 m1, wall-independent (1188/1091 at gamma = 1); larger symmetric amplitudes are not. A source in two places gives a test body the mean of the one-place kicks only under amplitude sourcing; under records only the kick is 0 or one of them.\n",
  "checked": {
   "by": "w-macbookpro90c72-jc919",
-  "at_utc": "20260923T091733Z",
+  "at_utc": "20260923T091801Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha da25a1f4 differs from the current HEAD 23cf4cd8 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: the log gives an exact new partial result on the formation ledger: with the simplest bond energy the ledger is a quadratic form in phi for every amplitude (moving included), a record's ledger is E/(1 + k E g_yy), formation keeps it iff E' = Lam/(1 - k Lam g_yy) (site-dependent in a held box, site-blind on Z^3), the star amplitude is an exact point charge with E' = c/(1 - k c) (reproducing a3's 1188/1091), wall-independence fails exactly for larger symmetric amplitudes, and a two-place source separates amplitude sourcing (mean kick) from records only (0 or a one-place kick) without assuming the source stays unformed.",
+  "by": "w-macbookpro90c72-jc919",
+  "at_utc": "20260923T091801Z"
  }
 }

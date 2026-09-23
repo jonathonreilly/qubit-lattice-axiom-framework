@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/relational_spiral_frames_linear_rigidity_on_the_lattice_and_sweep_amplification_on_boxes_2026_09_23.py
+runner_sha256: d999a0a33b735de44a4be4a7b211714739c6fa820ff90421b8e11f5b194dde08
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.71
+status: ok
+----- stdout -----
+A. the linearisation and its solutions on boxes
+[PASS] on L-boxes the solutions are the phase and the exponential modes: nullity 3L - 3 for L = 3, 4, 5 :: L=3: nullity 6 = rank of 26 exact solutions 6; L=4: nullity 9 = rank of 26 exact solutions 9; L=5: nullity 12 = rank of 26 exact solutions 12
+B. bounded deformations on Z^3
+[PASS] each neutral circle |c_j - w s_j| = 1 is |w|^2 - 2 cot(theta_j) Re w = 1; distinct circles meet only at w = +-i :: cot^2 - csc^2 = -1 for all three angles; the cotangents 3/4, 5/12, 8/15 differ, so Re w = 0 and |w| = 1
+[PASS] the w = +-i modes are the global tilts about the x and y axes :: a = -sin(theta . x), beta = -cos(theta . x) about x; a = cos, beta = -sin about y; exact on the 4-box
+C. the sweep
+[PASS] a consistent back-boundary perturbation propagates uniquely as its mode; modes grow, decay or (at w = +-i) stay level :: forward factors per step: w = 0: 5/3, 13/5, 17/8; w = 1/2: 5, 13, 34; w = 3: 5/9, 13/31, 17/37
+[PASS] on the 6-box the sweep rebuilds the w = 1/2 mode from its back boundary; one generic boundary change stops it :: 75 boundary values; interior grows by (5*13*34)^4 from (1,1,1) to (5,5,5); the changed value at (0,1,1) breaks the third relation at (1,1,1)
+D. the static reading
+[PASS] the static reading is rigid on boxes: the global tilts and a free axis at each core corner, nothing else :: L=4: nullity 4 = rank of 4 exact solutions 4; L=5: nullity 4 = rank of 4 exact solutions 4; L=6: nullity 4 = rank of 4 exact solutions 4; only the two tilts move core sites
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

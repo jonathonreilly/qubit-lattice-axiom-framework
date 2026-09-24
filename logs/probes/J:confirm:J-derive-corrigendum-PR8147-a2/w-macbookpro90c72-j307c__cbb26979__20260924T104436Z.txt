@@ -1,0 +1,7 @@
+PASS symbol: at g=1 the level symbol is 4 sin^2(u/2) = u^2 - u^4/12 + ...
+PASS domain: 1% out to |K|=1.04131910428583, and the zone boundary is wrong by 1 - 4/pi**2
+PASS line 195: 2/pi^2 is sharp on [-pi, pi] and false at 4, 5 and 2pi; 1-cos is nonnegative
+PASS gaussian bound: (2pi)^{-2} integral of exp(-(4n/9 pi^2)|k|^2) is 9 pi/(16 n)
+PASS note lines: line 195 states 1-cos u >= 2u^2/pi^2, and line 350 asks for an expansion other than K^2/9
+HIT: confirmed - at unit weight the level symbol is 4 sin^2(u/2), within 1% of u^2 only for |K|<=1.04132, and wrong by 1-4/pi^2 at u=pi. Note line 195 is a sharp use of 1-cos u >= 2u^2/pi^2 on [-pi,pi], and it stays inside that interval only because the (k1-k2) term is dropped first. Line 350 asks for K^2/9.
+SUMMARY: confirmed the symbol, the three tolerance radii, the sharpness, the Gaussian integral, and the two note lines a1 does not list. The other campaign PRs were not re-audited.

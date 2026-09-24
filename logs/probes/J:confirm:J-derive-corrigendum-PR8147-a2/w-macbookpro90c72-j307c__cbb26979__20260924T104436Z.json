@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8147-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j307c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8147/referee_w-macbookpro90c72-j307c/check.py",
+ "seed": 46676,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cbb26979",
+ "started_utc": "20260924T104436Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the symbol, the three tolerance radii, the sharpness, the Gaussian integral, and the two note lines a1 does not list. The other campaign PRs were not re-audited."
+ },
+ "review": "The level symbol is 4 sin^2(u/2), within 1 percent of u^2 only for |K|<=1.04132, and note line 195 is a sharp bound that needs the (k1-k2) term dropped first.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8147:a2/; its files are probes/work/derive/corrigendum-PR8147/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8147/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "c8db3c3432f5ce095b398dc8864ad54d2581684f280d5176f9a52f60c2a15eb1",
+ "stdout_tail": "PASS symbol: at g=1 the level symbol is 4 sin^2(u/2) = u^2 - u^4/12 + ...\nPASS domain: 1% out to |K|=1.04131910428583, and the zone boundary is wrong by 1 - 4/pi**2\nPASS line 195: 2/pi^2 is sharp on [-pi, pi] and false at 4, 5 and 2pi; 1-cos is nonnegative\nPASS gaussian bound: (2pi)^{-2} integral of exp(-(4n/9 pi^2)|k|^2) is 9 pi/(16 n)\nPASS note lines: line 195 states 1-cos u >= 2u^2/pi^2, and line 350 asks for an expansion other than K^2/9\nHIT: confirmed - at unit weight the level symbol is 4 sin^2(u/2), within 1% of u^2 only for |K|<=1.04132, and wrong by 1-4/pi^2 at u=pi. Note line 195 is a sharp use of 1-cos u >= 2u^2/pi^2 on [-pi,pi], and it stays inside that interval only because the (k1-k2) term is dropped first. Line 350 asks for K^2/9.\nSUMMARY: confirmed the symbol, the three tolerance radii, the sharpness, the Gaussian integral, and the two note lines a1 does not list. The other campaign PRs were not re-audited.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j307c",
+  "at_utc": "20260924T104446Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The level symbol, the 1 percent radius, and note lines 195 and 350 match an independent read of commit 9c364d1d6f75.",
+  "by": "w-macbookpro90c72-j307c",
+  "at_utc": "20260924T104446Z"
+ }
+}

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_filled_seas_energy_as_the_ledgers_field_term_chessboard_clocks_invisible_2026_09_22.py
+runner_sha256: 2f678484c6bd5a1a0f79f66bf0096822cfe88fe215fcf601281e4470d8f9a1c1
+input_fingerprint_sha256: 34c25b22e9c896041939fb684f3c802ed085c3d9a78c471858bb1aafdd2b80a8
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 26.62
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_FILLED_SEAS_ENERGY_AS_THE_LEDGERS_FIELD_TERM_A_CHESSBOARD_OF_CLOCKS_IS_INVISIBLE_THE_SEA_INDUCES_A_CLOCK_STIFFNESS_NOT_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ACTION_AND_REACTION_THE_RATE_FIELDS_SOURCE_IS_THE_AMPLITUDES_ENERGY_DENSITY_MATCHED_PULLS_AND_A_KEPT_LEDGER_FIX_THE_CLOCK_LAWS_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_WHAT_THE_WALK_CONSERVES_MOMENTUM_FLOWS_ON_BONDS_RELABELLINGS_REACH_SECOND_NEIGHBOURS_THE_NEAREST_NEIGHBOUR_FRAME_MISSES_BY_TWO_DIFFERENCES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_EIGHT_SPECIES_ARE_EXCHANGED_BY_SITE_SIGNS_AND_A_HALF_TURN_OF_THE_COIN_WHAT_EACH_VARYING_FIELD_BECOMES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_AMPLITUDES_OF_NEGATIVE_ENERGY_FALL_LIKE_THE_OTHERS_AND_SOURCE_THE_OPPOSITE_FIELD_A_NEGATIVE_BODY_AT_REST_HAS_A_LARGEST_SIZE_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 PR8611 B1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: B2 PR8611 B2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: C1 PR8611 C1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: C2 PR8611 C2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: D1 PR8611 D1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: D2 PR8611 D2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: D3 PR8611 D3: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: Finite supplied Hermitian hopping models: reciprocal bipartite clock factors leave opposite-parity hopping unchanged; the traceless reach-two family has an even negative-level energy. Free antisymmetric-state one-body expectations are additive. A separately declared quadratic comparator has the stated local response signs; it is not the exact sea Hessian. No induced stiffness, force or field-model exclusion is established.
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

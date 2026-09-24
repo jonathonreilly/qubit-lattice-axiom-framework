@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_chessboard_record_background_is_felt_only_as_a_rest_mass_walls_bind_zero_modes_2026_09_22.py
+runner_sha256: 69d73fc2c08e14ff20c0a33cfe81eedb0b2db7b9a03fab573a20558e3ef4cef0
+input_fingerprint_sha256: 98939099611cab3ffda4821330c5d639c4f82608512d65bcc6eb91b2106471a7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.12
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_CHESSBOARD_RECORD_BACKGROUND_IS_FELT_ONLY_AS_A_REST_MASS_AND_A_WALL_BETWEEN_OUT_OF_STEP_DOMAINS_BINDS_EXACT_ZERO_MODES_WHEN_ODD_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_NO_MASTER_CLOCK_A_NEIGHBOUR_DETERMINED_SCALE_COVARIANT_TICK_RATE_OBEYS_THE_LATTICE_LAPLACE_EQUATION_RECORDS_ENTER_AS_ADDITIVE_SOURCES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_FILLED_SEAS_ENERGY_AS_THE_LEDGERS_FIELD_TERM_A_CHESSBOARD_OF_CLOCKS_IS_INVISIBLE_THE_SEA_INDUCES_A_CLOCK_STIFFNESS_NOT_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_THE_AXIOMS_OWN_GENERATOR_THE_SCALAR_HOP_SPLITS_THE_EIGHT_SPECIES_INTO_FOUR_LEVELS_OF_ONE_SENSE_AND_A_STAGGERED_TERM_GIVES_THEM_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 PR8614 B1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: B2 PR8614 B2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: B3 PR8614 B3: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: C1 PR8614 C1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: D1 PR8614 D1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: Under supplied scalar site coupling a checkerboard source decomposes into an offset and a staggered term. Reciprocal clock factors cancel only on hopping edges. Five specified 24-site line matrices have exact nullities 0,4,0,4,0. Bare transverse scalar symbol values are computed; independent-corner wall spectra, localization and a universal thickness rule are not established.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

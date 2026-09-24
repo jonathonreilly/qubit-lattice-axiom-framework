@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_two_step_momentum_is_the_only_one_2026_09_21.py
+runner_sha256: cc89c2bbda1b1697fa57d8eb93fb363488a7c27686801f7be53d357fb91415d1
+input_fingerprint_sha256: 0e0c14ad7da60cbff8361df7a6b0fb1e22712d6fc8f8d41493182eb5a08434ef
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 25.42
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_TWO_STEP_MOMENTUM_IS_THE_ONLY_ONE_AMONG_CONSERVED_COVARIANT_MOMENTA_OF_REACH_TWO_THAT_IS_EVERY_SPECIES_OWN_WAVE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_WHAT_THE_WALK_CONSERVES_MOMENTUM_FLOWS_ON_BONDS_RELABELLINGS_REACH_SECOND_NEIGHBOURS_THE_NEAREST_NEIGHBOUR_FRAME_MISSES_BY_TWO_DIFFERENCES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 PR8606 B1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: C1 PR8606 C1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: D1 PR8606 D1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: D2 PR8606 D2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: E1 PR8606 E1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: In the infinite-lattice polynomial commutant of the supplied free walk, vector coefficients are a scalar polynomial times sin k. Reach-one scalar symbols cannot have unit own-coordinate slopes at every corner. At reach two the normalized scalar solutions have six quadratic freedoms removed by cubic covariance; a permitted term along the walk changes only higher-order dispersion. This classifies the stated normalized momenta, not all field couplings.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

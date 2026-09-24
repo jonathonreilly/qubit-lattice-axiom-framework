@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.py
+runner_sha256: 852a4109debb8b904b19474379f568eef0045997cd27e7218600daf5a8965689
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 343.64
+status: ok
+----- stdout -----
+== A. The exact L = 2 torus ==
+[PASS] all 2^8 arrow patterns give 18 ice configurations, 6 at zero flux, in 9 winding sectors, <W^2> = 16/9 :: 18, 6, 9, 16/9
+[PASS] the loop sampler reproduces <W^2> within 4 standard errors and visits all 9 sectors :: <W^2> 1.7757 +- 0.0029 vs 1.7778; sectors 9
+
+== B. The smallest wavevectors ==
+[PASS] every batch obeys the unit-arrow identity and no vertex carries divergence on the three tori :: L=32: 6.8e-13, L=64: 1.8e-12, L=128: 3.6e-12
+[PASS] the smallest wavevectors imply a stiffness 3% to 6% above K_cont/2 on each torus, by more than 10 standard errors :: L=32: c = 0.26198 +- 0.00043, +4.69% +- 0.17%; L=64: c = 0.26155 +- 0.00054, +4.59% +- 0.22%; L=128: c = 0.26076 +- 0.00061, +4.30% +- 0.25%
+
+== C. The discrete winding fit ==
+[PASS] the winding fit also lies 3% to 6% above K_cont/2 on each torus :: L=32: c_W = 0.26193 +- 0.00061, +4.67%, c_W - c = -0.00003 +- 0.00077 (printed, not claimed); L=64: c_W = 0.26202 +- 0.00080, +4.78%, c_W - c = +0.00051 +- 0.00109 (printed, not claimed); L=128: c_W = 0.26044 +- 0.00075, +4.17%, c_W - c = -0.00030 +- 0.00087 (printed, not claimed)
+
+== D. The zone profile on L = 128 ==
+[PASS] the ratio rises from the innermost shell to the outermost by more than 5%, and the outer half lies above 1 by more than 20 standard errors :: shells 0.9556, 0.9580, 0.9604, 0.9650, 0.9678, 0.9808, 1.0147, 1.1082; outer half 1.03552 +- 0.00006
+
+time 343 s
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

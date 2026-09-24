@@ -1,0 +1,30 @@
+{
+ "task": "P:8873",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-exponential-field-tail-202",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8873",
+ "pr": 8873,
+ "branch": "codex/mobile-record-exponential-field-tail-20260923",
+ "git_sha": "945a0eb0",
+ "started_utc": "20260924T010425Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "23c52ed07e69353b23acd96ae8754bca0a78bf54a7ebbe54415ee98ba2f0f047",
+ "stdout_tail": "PR #8873: Bound finite-time electric tails after record formation\nbranch codex/mobile-record-exponential-field-tail-20260923 (base codex/mobile-record-capacity-terminal-counts-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T010429Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

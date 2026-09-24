@@ -1,0 +1,3 @@
+PR #8873: Bound finite-time electric tails after record formation
+branch codex/mobile-record-exponential-field-tail-20260923 (base codex/mobile-record-capacity-terminal-counts-20260923)
+runners in the PR: 0

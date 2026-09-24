@@ -1,0 +1,30 @@
+{
+ "task": "P:8870",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-energy-spread-20260923",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8870",
+ "pr": 8870,
+ "branch": "codex/mobile-record-energy-spread-20260923",
+ "git_sha": "263a7bf1",
+ "started_utc": "20260924T010351Z",
+ "elapsed_s": 7.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "6397deb24eaf3c5795721d065a08126f828b88df66b0fd5f25aea2c04f8c8d1d",
+ "stdout_tail": "PR #8870: Quantify first-birth energy spread in compensated path target\nbranch codex/mobile-record-energy-spread-20260923 (base codex/mobile-record-capacity-terminal-counts-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T010358Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

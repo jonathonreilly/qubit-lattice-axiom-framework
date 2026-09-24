@@ -1,0 +1,3 @@
+PR #8870: Quantify first-birth energy spread in compensated path target
+branch codex/mobile-record-energy-spread-20260923 (base codex/mobile-record-capacity-terminal-counts-20260923)
+runners in the PR: 0

@@ -1,0 +1,7 @@
+PASS C2 witness: the two-wave state is an exact energy-1 eigenstate, its current is conserved, and the transposed divergence is in {-2,0,2}
+PASS A1 continuity: the continuity equation holds on a non-stationary 2-torus state and on the witness
+PASS B2 not a metric: a uniform bond strain squares to |V|^2, and k_a -> pi - k_a changes it by 4 s_a c_a (B s)_a
+PASS C5 no reweighting: at q=(0, 3pi/2, pi/2) the equal-energy pairs force the two nonzero Fourier weights to vanish
+PASS D2 coin rotation: the coin-rotation response equals the spin-density derivative, hence vanishes on the witness, whose bond torque does not
+SUMMARY: confirmed no-go for a metric member. The bond current is conserved exactly. A uniform bond strain has H[B]^2 = |V|^2, which depends on cos k as well as sin k, so it is a metric form g(s) only at B = 0. On the stationary two-wave state the current divergence vanishes while the transposed divergence takes the values -2, 0 and 2. No translation-invariant reweighting removes that q-component. A coin rotation, whose response is the time derivative of the spin density, is zero on this state and cannot cancel the torque.
+HIT: confirmed - bond placement conserves momentum, but the symmetric metric member fails by the bond torque, and the failure is not removed by a translation-invariant reweighting

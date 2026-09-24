@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-a-bond-placed-stress-for-the-walk-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j632a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/a-bond-placed-stress-for-the-walk/referee_w-macbookpro90c72-j632a/check.py",
+ "seed": 84910,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "24782c68",
+ "started_utc": "20260924T212150Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed no-go for a metric member. The bond current is conserved exactly. A uniform bond strain has H[B]^2 = |V|^2, which depends on cos k as well as sin k, so it is a metric form g(s) only at B = 0. On the stationary two-wave state the current divergence vanishes while the transposed divergence takes the values -2, 0 and 2. No translation-invariant reweighting removes that q-component. A coin rotation, whose response is the time derivative of the spin density, is zero on this state and cannot cancel the torque."
+ },
+ "review": "Independent exact check: the two-wave state is an energy-1 eigenstate whose bond current is conserved while the transposed divergence takes -2, 0 and 2; a uniform strain is a metric only at B=0; the q=(0, 3pi/2, pi/2) shell has rank 2; a coin rotation vanishes on the witness.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:a-bond-placed-stress-for-the-walk:a3/; its files are probes/work/derive/a-bond-placed-stress-for-the-walk/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/a-bond-placed-stress-for-the-walk/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "2b31987ac1b9e882988e718f1985dba782f64adf8058ae7d1c1e8652cecebef4",
+ "stdout_tail": "PASS C2 witness: the two-wave state is an exact energy-1 eigenstate, its current is conserved, and the transposed divergence is in {-2,0,2}\nPASS A1 continuity: the continuity equation holds on a non-stationary 2-torus state and on the witness\nPASS B2 not a metric: a uniform bond strain squares to |V|^2, and k_a -> pi - k_a changes it by 4 s_a c_a (B s)_a\nPASS C5 no reweighting: at q=(0, 3pi/2, pi/2) the equal-energy pairs force the two nonzero Fourier weights to vanish\nPASS D2 coin rotation: the coin-rotation response equals the spin-density derivative, hence vanishes on the witness, whose bond torque does not\nSUMMARY: confirmed no-go for a metric member. The bond current is conserved exactly. A uniform bond strain has H[B]^2 = |V|^2, which depends on cos k as well as sin k, so it is a metric form g(s) only at B = 0. On the stationary two-wave state the current divergence vanishes while the transposed divergence takes the values -2, 0 and 2. No translation-invariant reweighting removes that q-component. A coin rotation, whose response is the time derivative of the spin density, is zero on this state and cannot cancel the torque.\nHIT: confirmed - bond placement conserves momentum, but the symmetric metric member fails by the bond torque, and the failure is not removed by a translation-invariant reweighting\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j632a",
+  "at_utc": "20260924T212159Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed no-go: bond current is conserved, the symmetric divergence on the stationary two-wave state takes -2, 0 and 2, uniform strain is a metric only at B=0, and neither reweighting nor a coin rotation removes the torque.",
+  "by": "w-macbookpro90c72-j632a",
+  "at_utc": "20260924T212159Z"
+ }
+}

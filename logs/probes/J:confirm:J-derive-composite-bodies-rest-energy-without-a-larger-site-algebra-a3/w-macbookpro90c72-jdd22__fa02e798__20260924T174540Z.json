@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-composite-bodies-rest-energy-without-a-larger-site-algebra-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jdd22",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/composite-bodies-rest-energy-without-a-larger-site-algebra/referee_w-macbookpro90c72-jdd22/check.py",
+ "seed": 71940,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa02e798",
+ "started_utc": "20260924T174540Z",
+ "elapsed_s": 58.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed \u2014 1D contact dispersions are exact (co-moving c=1, counter-moving band minimum), nearest-neighbour c^2 is 3/2 and 1/2 at quadratic order only, the 3D contact ground pair is a band minimum, and a timed degree-one interaction obeys H T = \u03bb T H so the at-rest acceleration is -d^2(E^2/2) g (\u2212g, +g, \u22123g/2, 0 untimed); the \u00a71 all-K formula E^2 = V_n^2 + 6 sin^2(K/2) is only the O(K^2) statement of step 5"
+ },
+ "review": "Independent 6-ring and 48-ring spectra match the 1D contact closed forms, NN curvatures are 1.49 and 0.50, a 12^3 contact pair sits at a band minimum near -0.80 g, and the timed identity holds, so the a3 claim survives and free fall is not universal.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a3/; its files are probes/work/derive/composite-bodies-rest-energy-without-a-larger-site-algebra/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/composite-bodies-rest-energy-without-a-larger-site-algebra/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "20b9dda18cbf7082d97430dacd9205b70b08864d00fe9359b874c8c47a3601f7",
+ "stdout_tail": "rms to 2.6e-13\nPASS S5 channel conditions to O(b^2) give c^2 = 3/2 and 1/2; V_n curv 1.4938,0.5005; V_n curv 1.4988,0.4998; at K=1.2, |E^2 - (V_n^2 + 6 sin^2(K/2))| = 0.1835 (not an all-K identity)\nPASS S6 4^3 secular vs ED 1.2e-14; V=-5 E(0)=-6.0284 edge=-3.4641; (E^2-E0^2)/K^2 on 12^3 = -0.793, -0.797, -0.800; V=-8 axis -0.881\nPASS S7 interior commutator contact/timed 2.2e-16, contact/untimed 3.4e-01, nn/timed 5.6e-17, nn/untimed 3.4e-01\nPASS S8a d^2(E^2/2) at K=0 is 1 (co-moving, a=-g) and -1 (counter-moving, a=+g)\nPASS S8b executed a/g co-moving timed -1.089 (rest -1.0); co-moving untimed -0.037 (rest +0.0); counter-moving timed +1.009 (rest +1.0); nn even timed -1.499 (rest -1.5)\nTOTAL: PASS=8 FAIL=0\nSUMMARY: confirmed \u2014 1D contact dispersions are exact (co-moving c=1, counter-moving band minimum), nearest-neighbour c^2 is 3/2 and 1/2 at quadratic order only, the 3D contact ground pair is a band minimum, and a timed degree-one interaction obeys H T = \u03bb T H so the at-rest acceleration is -d^2(E^2/2) g (\u2212g, +g, \u22123g/2, 0 untimed); the \u00a71 all-K formula E^2 = V_n^2 + 6 sin^2(K/2) is only the O(K^2) statement of step 5\nHIT: confirmed - the a3 claim survives: binding supplies a rest energy M=|V| inside M_2(C) per walker for the 1D co-moving contact pair (E^2 = V^2 + 4 sin^2(K/2), c=1), the timed two-walker generator scales as H_w T_a = \u03bb_a T_a H_w, and free fall is not universal (counter-moving and 3D contact ground pairs fall up; an untimed contact pair at rest does not fall)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jdd22",
+  "at_utc": "20260924T174703Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms a3: 1D contact E^2 closed forms, NN c^2 = 3/2 and 1/2 at quadratic order, 12^3 band minimum near -0.80 g, timed H T = lambda T H; free fall is not universal.",
+  "by": "w-macbookpro90c72-jdd22",
+  "at_utc": "20260924T174703Z"
+ }
+}

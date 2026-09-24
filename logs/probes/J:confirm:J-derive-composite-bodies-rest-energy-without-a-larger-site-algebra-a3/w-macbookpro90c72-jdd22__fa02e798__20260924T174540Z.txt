@@ -1,0 +1,11 @@
+PASS S2 D has symbol sin k; co-moving kinetic energy is 2 sin(K/2) cos q; counter-moving is 2 cos(K/2) sin q
+PASS S3 residue lemma max trap error 2.2e-16; co-moving E^2 = V^2 + K^2 - K^4/12; counter-moving E^2 = V^2 + 4 - K^2 at K=0
+PASS S4 6-ring position spectrum matches K-blocks to 3.1e-15; 48-ring closed forms to 2.6e-13
+PASS S5 channel conditions to O(b^2) give c^2 = 3/2 and 1/2; V_n curv 1.4938,0.5005; V_n curv 1.4988,0.4998; at K=1.2, |E^2 - (V_n^2 + 6 sin^2(K/2))| = 0.1835 (not an all-K identity)
+PASS S6 4^3 secular vs ED 1.2e-14; V=-5 E(0)=-6.0284 edge=-3.4641; (E^2-E0^2)/K^2 on 12^3 = -0.793, -0.797, -0.800; V=-8 axis -0.881
+PASS S7 interior commutator contact/timed 2.2e-16, contact/untimed 3.4e-01, nn/timed 5.6e-17, nn/untimed 3.4e-01
+PASS S8a d^2(E^2/2) at K=0 is 1 (co-moving, a=-g) and -1 (counter-moving, a=+g)
+PASS S8b executed a/g co-moving timed -1.089 (rest -1.0); co-moving untimed -0.037 (rest +0.0); counter-moving timed +1.009 (rest +1.0); nn even timed -1.499 (rest -1.5)
+TOTAL: PASS=8 FAIL=0
+SUMMARY: confirmed — 1D contact dispersions are exact (co-moving c=1, counter-moving band minimum), nearest-neighbour c^2 is 3/2 and 1/2 at quadratic order only, the 3D contact ground pair is a band minimum, and a timed degree-one interaction obeys H T = λ T H so the at-rest acceleration is -d^2(E^2/2) g (−g, +g, −3g/2, 0 untimed); the §1 all-K formula E^2 = V_n^2 + 6 sin^2(K/2) is only the O(K^2) statement of step 5
+HIT: confirmed - the a3 claim survives: binding supplies a rest energy M=|V| inside M_2(C) per walker for the 1D co-moving contact pair (E^2 = V^2 + 4 sin^2(K/2), c=1), the timed two-walker generator scales as H_w T_a = λ_a T_a H_w, and free fall is not universal (counter-moving and 3D contact ground pairs fall up; an untimed contact pair at rest does not fall)

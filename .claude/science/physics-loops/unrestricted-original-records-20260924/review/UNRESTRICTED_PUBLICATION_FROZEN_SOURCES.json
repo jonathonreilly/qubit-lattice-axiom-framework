@@ -1,0 +1,25 @@
+{
+  "base_revision": "04dcf088de81990632d869142f30a59e881a8f31",
+  "note": "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+  "runner": "scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py",
+  "result": "outputs/unrestricted_original_records_20260924/UNRESTRICTED_ORIGINAL_RECORD_RESULTS.json",
+  "packet": ".claude/science/physics-loops/unrestricted-original-records-20260924",
+  "files_sha256": {
+    "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b",
+    "scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py": "a58a09da5c9673462c3fad051b37fa921cfdbfebcb4e56a7c633ca00d6549dce",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+    "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b"
+  },
+  "root_function_sha256": {
+    "diagonal_rotor_control": "9d74b6f2b18bffe0a48823a244fdbf4231c575b3abbfd6d573ec18c890ce729b",
+    "local": "76225495767c3c4dc4e93b226c2cd56ae500818c23d1aa6bb64957e99f872c2e",
+    "hermitian_norm": "3329634aaa7e94bf646fa2d29a94edacc9407ac8825538b83a2e758d098bbe5c",
+    "chain_control": "10da20ba976928488599e7d7e57f210645d2f0551c20e0213a6466da41bc023f",
+    "overlap_square": "fb544e360f057eb22bbfead5fb5787f6f2933f0bb12c4e3277867f1d4ff8ec2f",
+    "poisson_moment_controls": "3d45104d52c4a1e6bac2754476df64f2b8b8759fb74cdfefb67b1330b650de84",
+    "bin_pair_bounds": "3114c5995b1e6c8a436b2d60c6d48cfaa3f85b5d810b37d75eb8898b55ec14e0",
+    "register_window_controls": "4e6d9f1f51707245bc99abe4d28ad96c972474e26db8531be27523b06cf924ae"
+  }
+}

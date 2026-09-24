@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_check_evidence.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent",
+  "started_utc": "2026-09-24T20:36:04.058495+00:00",
+  "completed_utc": "2026-09-24T20:36:04.172973+00:00",
+  "wall_seconds": 0.11397170810960233,
+  "exit_code": 0,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "script_sha256": "012c3c99fdd8d39b9e27a71d3926044c165efa3fa94dc310da7eb72ecafda50f",
+  "stdout_sha256": "068de02a43b15672fe0cec88423bf00f70ebd59cb777b5b2659abc2f5c146a7d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_sha256": "ceaad908f81e2ce5a100d21c740e0c3142154c47e482d0237e560737802f88e9"
+}

@@ -1,0 +1,159 @@
+{
+  "phase": "blind independent PRE",
+  "sealed_at_utc": "2026-09-24T20:29:51.607525+00:00",
+  "main_source_commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "scope": "Full common-rotor local formation-background bound and zero-lag ordered factorial intensity with arbitrary other events.",
+  "provenance": "Root candidate and forbidden active packets unread; inherited model/effort retained; no delegation or author control execution.",
+  "status": "Conditional independent reconstruction, no audit verdict or physical selection.",
+  "report_sha256": "82138c721a9bf2784cbc3510efddbfaf6a47cd3eeb5f0138ad08d2382eb12429",
+  "source_record_count": 11,
+  "member_count": 29,
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 2200,
+      "sha256": "c2cadac85bed0351726287afc6af43f0025488724eaa5987248ffcf4a13fa834"
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "bytes": 50832,
+      "sha256": "4da5db176d9a3040460602357a6b6ff338893db6187c12a1c1516fc6a0faf568"
+    },
+    {
+      "path": "EVIDENCE_LOG.md",
+      "bytes": 4636,
+      "sha256": "605a60943b14bc50f943103f475ad95fc0273fdd1acf6553832862ff29166c96"
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION.json",
+      "bytes": 3880,
+      "sha256": "429cc030b0da1082b311f29ca33e190418eb1da4093fe60a826633cf030a835e"
+    },
+    {
+      "path": "EXECUTION.json",
+      "bytes": 971,
+      "sha256": "7ce91e032035a091bd7089e8d53d94606e94ed496f3075246c9fc5162d494093"
+    },
+    {
+      "path": "PRE.md",
+      "bytes": 25998,
+      "sha256": "82138c721a9bf2784cbc3510efddbfaf6a47cd3eeb5f0138ad08d2382eb12429"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 5897,
+      "sha256": "67cfe5dfdf4dffda50b5b4c8d16b1816d231611aa0cfb10a5ff32aeba93b653c"
+    },
+    {
+      "path": "freeze_sources.py",
+      "bytes": 3785,
+      "sha256": "1e4a24fa59f8bff20138c72b51f04aa2159fabff96232d4d782bee833c72c102"
+    },
+    {
+      "path": "freeze_sources.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "freeze_sources.stdout.txt",
+      "bytes": 5467,
+      "sha256": "826dec2fa3ac3a3d9b108b3a3d2d29545a1f4d249acdc5f1d6e7d8e669d13b55"
+    },
+    {
+      "path": "local_background_control.py",
+      "bytes": 7207,
+      "sha256": "fece4745c67b63a0a8dc68c83e0bfd0a49e97e493c3c0bfef5492564ea601bcf"
+    },
+    {
+      "path": "local_background_control.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "local_background_control.stdout.txt",
+      "bytes": 28184,
+      "sha256": "2562804be98bbe3cd1d34f612c119d60ec9e63bbcfbc50a1d1fdbc28714d4f4f"
+    },
+    {
+      "path": "run_control.py",
+      "bytes": 1223,
+      "sha256": "7413681775ba621f50f8e5d551d7ef25d43aff919cf7741cff0745219a132e22"
+    },
+    {
+      "path": "seal_pre.py",
+      "bytes": 2647,
+      "sha256": "9a6fa8ab74632a224abab5dcc1b0b7388b312c8d0fd5bde60bbe1a11eb6b7853"
+    },
+    {
+      "path": "sources/NSY_1810.02428v1.pdf",
+      "bytes": 1216587,
+      "sha256": "dcb0c93a56a81429618a7770a54189337def5b0ab1ecd6712aa963fda4e75195"
+    },
+    {
+      "path": "sources/NSY_required_sections.txt",
+      "bytes": 44297,
+      "sha256": "145c841caef6d97f2d5a1fb57e6d3c3c59f2e11e26dad0a3db2e90eeb0d460b1"
+    },
+    {
+      "path": "sources/agent_pointer.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "sources/electric_magnetic.md",
+      "bytes": 22993,
+      "sha256": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4"
+    },
+    {
+      "path": "sources/local_compensation.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "sources/local_pair_form.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "sources/readout_POST.md",
+      "bytes": 17332,
+      "sha256": "dc217d7ff74cb074998f2f4e92cd02b79e1bdb207c2f4ebfc0e6fd8e8ee96d1c"
+    },
+    {
+      "path": "sources/readout_POST_SEAL.json",
+      "bytes": 5200,
+      "sha256": "f6cc670e09877d631658d8d150f986fecfcd5925b0ecfb7394bdcd17aee7513e"
+    },
+    {
+      "path": "sources/readout_PRE.md",
+      "bytes": 29565,
+      "sha256": "7e5140e5155943d99541efc2e8de7cc25f9cee9ba4d4330b9906def5c3adf76d"
+    },
+    {
+      "path": "sources/readout_PRE_SEAL.json",
+      "bytes": 5264,
+      "sha256": "65ef5734192d3ca88511a992fad2b1788582ad8acf632c2b2d33e866d121cff6"
+    },
+    {
+      "path": "sources/workflow.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "verify_evidence.py",
+      "bytes": 3193,
+      "sha256": "89dfee248922df7aafe8c6ca9875e164f3950d7bba63d1e09fa2c69068f865c7"
+    },
+    {
+      "path": "verify_evidence.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verify_evidence.stdout.txt",
+      "bytes": 2868,
+      "sha256": "a2e33c9940649cad0eff9f71749f1c341cae6738c02de9edaae69ad1aa60687b"
+    }
+  ],
+  "preservation": "One-time SHA256 content ledger. All members and seal set read-only. Prior sealed packets remain separate and unchanged."
+}

@@ -1,0 +1,19 @@
+{
+  "pdf_pages": 8,
+  "sources": [
+    {
+      "frozen_path": "post_sources/reference/barthel_kliesch_1111.4210v2.pdf",
+      "bytes": 497703,
+      "sha256": "8ba41b87f829585840fc0f2547d702ab044783b0b1a5997e77cccab589f81c4d",
+      "url": "https://arxiv.org/pdf/1111.4210v2",
+      "role": "Primary mathematical reference released/cited by root; full extraction frozen; only setting, Theorem 1/proof and propagator appendices used."
+    },
+    {
+      "frozen_path": "post_sources/reference/barthel_kliesch_complete_text.txt",
+      "bytes": 31806,
+      "sha256": "8cb1cc6269285c3cc574a420c9ed54c801b8921961e6a7f2e07a0858bc4fdb08",
+      "url": "https://arxiv.org/pdf/1111.4210v2",
+      "role": "Primary mathematical reference released/cited by root; full extraction frozen; only setting, Theorem 1/proof and propagator appendices used."
+    }
+  ]
+}

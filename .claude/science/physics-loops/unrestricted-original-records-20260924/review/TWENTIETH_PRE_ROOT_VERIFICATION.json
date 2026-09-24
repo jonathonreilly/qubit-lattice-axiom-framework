@@ -1,0 +1,13 @@
+{
+  "members_verified": 29,
+  "source_origins_verified": 17,
+  "pre_sha256": "1fd58a66171c23568841d2527a2091f3992e584cbad970bdb8979a38e4c68e7e",
+  "seal_sha256": "b6e0c33fe1286a876f1230759cb62769d57475d76c2ea1a6aae633064e2ba9d0",
+  "full_proof_control_source_all_four_sign_three_window_four_rate_rows_read": true,
+  "new_PRE_contributions": [
+    "fixed-graph global dissipator O(kappa G t) comparison",
+    "three-four-event variance asymptotic to mean",
+    "fixed-count law total variation and repeated experiment existence diagonal"
+  ],
+  "scope": "Root PRE reading and source validation, not independent rerun."
+}

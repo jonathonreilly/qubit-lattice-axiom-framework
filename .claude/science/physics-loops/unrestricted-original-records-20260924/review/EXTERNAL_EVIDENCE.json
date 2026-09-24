@@ -1,0 +1,260 @@
+{
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/CHECKPOINT.md",
+      "sha256": "c2cadac85bed0351726287afc6af43f0025488724eaa5987248ffcf4a13fa834"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/POST_CHECKPOINT.md",
+      "sha256": "f2834ae1aab952b21cfa634d89406e64d8e46357af4a7447dd527dc863fdbe70"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/author/AUTHOR_CONTROL_SEAL.json",
+      "sha256": "455aaba6c0bd18da70176272ed9df914c04f8101bd8e826a81a78495f9af1b18"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/author/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/author/CONTROL.stdout.txt",
+      "sha256": "28a9f5866a253f2ec4c86b893ff14cbace711a85431aa4877b7ee81444c2dbed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/author/CONTROL_EXECUTION.json",
+      "sha256": "b894d712e5d090d9af5ba775207dc5924aad657eb63307dea85d7ad67ae9ef0f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/author/LOCAL_BACKGROUND_CONTROL_RESULTS.json",
+      "sha256": "28a9f5866a253f2ec4c86b893ff14cbace711a85431aa4877b7ee81444c2dbed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/author/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+      "sha256": "9f21fae1ea269c0316757d7618d3b50161bd26c4da5759325187c64531220843"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/author/SOURCE_PINS.json",
+      "sha256": "5488304eb3c1393d99f7c20846de04f605b576924cc065e1eea7cf88f532ccb4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/author/local_background_controls.py",
+      "sha256": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/reference/barthel_kliesch_1111.4210v2.pdf",
+      "sha256": "8ba41b87f829585840fc0f2547d702ab044783b0b1a5997e77cccab589f81c4d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/post_sources/reference/barthel_kliesch_complete_text.txt",
+      "sha256": "8cb1cc6269285c3cc574a420c9ed54c801b8921961e6a7f2e07a0858bc4fdb08"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/NSY_1810.02428v1.pdf",
+      "sha256": "dcb0c93a56a81429618a7770a54189337def5b0ab1ecd6712aa963fda4e75195"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/NSY_required_sections.txt",
+      "sha256": "145c841caef6d97f2d5a1fb57e6d3c3c59f2e11e26dad0a3db2e90eeb0d460b1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/agent_pointer.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/electric_magnetic.md",
+      "sha256": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/local_compensation.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/local_pair_form.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/readout_POST.md",
+      "sha256": "dc217d7ff74cb074998f2f4e92cd02b79e1bdb207c2f4ebfc0e6fd8e8ee96d1c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/readout_POST_SEAL.json",
+      "sha256": "f6cc670e09877d631658d8d150f986fecfcd5925b0ecfb7394bdcd17aee7513e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/readout_PRE.md",
+      "sha256": "7e5140e5155943d99541efc2e8de7cc25f9cee9ba4d4330b9906def5c3adf76d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/readout_PRE_SEAL.json",
+      "sha256": "65ef5734192d3ca88511a992fad2b1788582ad8acf632c2b2d33e866d121cff6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/sources/workflow.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/PUBLICATION_COUNT_DIFF.diff",
+      "sha256": "6eb2636d952c3a3bedce90f3877e0282b338fa368b75f8d8e3d820d67751141c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/post-prior-source/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "sha256": "a04e25530ccf1dc8df8a27b41523d04703c09ff758664792a9487a8cea0ce60c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/post-released/AUTHOR_SEAL.json",
+      "sha256": "fd268c0ec9d37f68136e81e153d71c7775ac652118f8e2adcf40f8c5776b60d8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/post-released/COUNT_WINDOW.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/post-released/COUNT_WINDOW_RESULTS.json",
+      "sha256": "fa3e44571833d1cf21baa8e78d8ae7d5b1ce5d9107cac3344703339d32252910"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/post-released/EXECUTION.json",
+      "sha256": "5fb5f0a8c3e5005fc0ff42b1f53fcfe532385cfe1318f6373ccf1625ca4628a0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/post-released/ROOT_REVIEW.md",
+      "sha256": "457f243db65bf35d17e10709e4da71f6aa367b0441cfa09e26db94094eb23a33"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/post-released/SOURCE_PINS.json",
+      "sha256": "4b92483d633f215655fd1c917f439840ffc25b357a1208b439a47d5feac8db6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/post-released/UNRESTRICTED_FINITE_BIN_RECORD_CONTRAST_ROOT.md",
+      "sha256": "5ad270f81ab37e1ffb14130937228c6c67b0bdd0858362d76ea6bf5057a8d1cd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/post-released/count_window_controls.py",
+      "sha256": "86243d8f649124e09e52de0061f2b6af23337640fe3a90d0d58d3ad298dcdc6d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/external/UNRESTRICTED_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "fd7f8054951d6ce7babc00c78b78011c5060149deda384bf89edcfbaba28278f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/external/UNRESTRICTED_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "9d87b1dad1716db2ed249efd57d2e5d7559093b02cd2b00802c46d38389a55a5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/local-author/CONTROL_EXECUTION.json",
+      "sha256": "b894d712e5d090d9af5ba775207dc5924aad657eb63307dea85d7ad67ae9ef0f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/local-author/LOCAL_BACKGROUND_CONTROL_RESULTS.json",
+      "sha256": "28a9f5866a253f2ec4c86b893ff14cbace711a85431aa4877b7ee81444c2dbed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/local-author/local_background_controls.py",
+      "sha256": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/protocol/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/publication/docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/publication/logs/runner-cache/local_background_and_unrestricted_original_record_counts_2026_09_24.txt",
+      "sha256": "6fc3d14cdbdb194fb5aef57aa50220bcf0f637d33ae39c1c13a1e3c70c3d7763"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/publication/outputs/unrestricted_original_records_20260924/UNRESTRICTED_ORIGINAL_RECORD_RESULTS.json",
+      "sha256": "937394774f9e5b77753c468d721e24578111860350bcf3835bfb3c24c845dfdf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/publication-released/publication/scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py",
+      "sha256": "a58a09da5c9673462c3fad051b37fa921cfdbfebcb4e56a7c633ca00d6549dce"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/external/local-record-background-personal/AUTHOR_CONTROL_SEAL.json",
+      "sha256": "455aaba6c0bd18da70176272ed9df914c04f8101bd8e826a81a78495f9af1b18"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/external/local-record-background-personal/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+      "sha256": "9f21fae1ea269c0316757d7618d3b50161bd26c4da5759325187c64531220843"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/external/magnetic-lag-photon-personal/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "sha256": "08d178740c897d007a45fea09cde258706bdb5f9ee3756291f20f9af4911662d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/external/microscopic-record-readout-independent/POST.md",
+      "sha256": "c276edf6749f4c03c31faf5912ee60a21f8530defe702105e186f158b587c6c3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/external/microscopic-record-readout-independent/POST_SEAL.json",
+      "sha256": "73dc48a63907c5cbe3f3973723151a84af4b7d55e10959eb62f7c6b042da3545"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/external/microscopic-record-readout-independent/PRE.md",
+      "sha256": "e48f606abebb28c5e60cbd98539284aee214e3f2819597621c6809dc1f5d2ec0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/external/microscopic-record-readout-independent/PRE_SEAL.json",
+      "sha256": "34cbabad0237942680176e23a39bfdd6e9f4f34bbf56f1ff4f50b15178838f41"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/external/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/main/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/main/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/main/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/main/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/main/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/main/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/main/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/main/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/sources/main/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  ]
+}

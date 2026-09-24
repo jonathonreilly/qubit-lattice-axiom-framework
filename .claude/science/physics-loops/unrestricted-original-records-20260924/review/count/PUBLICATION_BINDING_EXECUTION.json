@@ -1,0 +1,15 @@
+{
+  "started_unix": 1790284749.571347,
+  "elapsed_seconds": 0.1700679159257561,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/verify_publication_bindings.py"
+  ],
+  "code_sha256": "6ceba8e1a4e710c3bc83d936a4c62d82227e3d1abd6ab1b188aa94cecd64d455",
+  "stdout_sha256": "5cb4073dfb26e7d8f28ec00e11e3ef5a979e1ac4a7d78397fc63aecb6ff67bb7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 14361,
+  "stderr_bytes": 0,
+  "scope": "Static source/AST, recorded payload, Git parent and cache fingerprint comparison only; zero science executions."
+}

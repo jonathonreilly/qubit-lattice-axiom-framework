@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-09-24T20:12:29.389573+00:00",
+  "completed_utc": "2026-09-24T20:12:33.335183+00:00",
+  "elapsed_wall_seconds": 3.9454514579847455,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/local_background_controls.py"
+  ],
+  "script_sha256": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807"
+}

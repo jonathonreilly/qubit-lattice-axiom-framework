@@ -1,0 +1,9 @@
+{
+  "verified_utc": "2026-09-24T21:14:06.940252+00:00",
+  "directory": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent",
+  "seal": "POST_SEAL.json",
+  "seal_sha256": "da4ec87b40713ab6fa744f4cb6c9fef8dce28faf441f53dd422575256275f2ba",
+  "members": 16,
+  "origins": 7,
+  "status": "All member and source-origin hashes verified; full report and science controls read by root separately."
+}

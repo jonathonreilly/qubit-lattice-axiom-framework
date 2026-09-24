@@ -1,0 +1,302 @@
+{
+  "scope": "Exact Poisson proposal moments and finite-history bin inequalities only. No original cubic dynamics, LR proof, microscopic rate, physical detector, or empirical data comparison is numerically established.",
+  "poisson_proposal_rows": [
+    {
+      "h": 0.4,
+      "b": 0.3,
+      "r_j": 0.02,
+      "r_l": 0.03,
+      "mean": 7.199999999999999e-05,
+      "overlap_square_exact": 0.026999999999999996,
+      "overlap_square_quadrature": 0.026999999999999996,
+      "second_moment": 7.297718399999999e-05,
+      "proposed_second_bound": 7.308518399999998e-05,
+      "variance": 7.297199999999999e-05,
+      "bernoulli_variance_formula": 7.1994816e-05
+    },
+    {
+      "h": 0.4,
+      "b": 0.3,
+      "r_j": 2.0,
+      "r_l": 3.0,
+      "mean": 0.7200000000000001,
+      "overlap_square_exact": 0.026999999999999996,
+      "overlap_square_quadrature": 0.026999999999999996,
+      "second_moment": 2.2104,
+      "proposed_second_bound": 2.3184000000000005,
+      "variance": 1.6919999999999997,
+      "bernoulli_variance_formula": 0.20159999999999997
+    },
+    {
+      "h": 0.4,
+      "b": 0.3,
+      "r_j": 20.0,
+      "r_l": 30.0,
+      "mean": 72.0,
+      "overlap_square_exact": 0.026999999999999996,
+      "overlap_square_quadrature": 0.026999999999999996,
+      "second_moment": 6228.0,
+      "proposed_second_bound": 6336.0,
+      "variance": 1044.0,
+      "bernoulli_variance_formula": -5112.0
+    },
+    {
+      "h": 0.2,
+      "b": 0.7,
+      "r_j": 0.02,
+      "r_l": 0.03,
+      "mean": 8.399999999999998e-05,
+      "overlap_square_exact": 0.025333333333333336,
+      "overlap_square_quadrature": 0.025333333333333333,
+      "second_moment": 8.607505599999998e-05,
+      "proposed_second_bound": 8.694705599999997e-05,
+      "variance": 8.606799999999999e-05,
+      "bernoulli_variance_formula": 8.399294399999999e-05
+    },
+    {
+      "h": 0.2,
+      "b": 0.7,
+      "r_j": 2.0,
+      "r_l": 3.0,
+      "mean": 0.8400000000000001,
+      "overlap_square_exact": 0.025333333333333336,
+      "overlap_square_quadrature": 0.025333333333333333,
+      "second_moment": 3.6136,
+      "proposed_second_bound": 4.485600000000001,
+      "variance": 2.908,
+      "bernoulli_variance_formula": 0.13439999999999994
+    },
+    {
+      "h": 0.2,
+      "b": 0.7,
+      "r_j": 20.0,
+      "r_l": 30.0,
+      "mean": 84.0,
+      "overlap_square_exact": 0.025333333333333336,
+      "overlap_square_quadrature": 0.025333333333333333,
+      "second_moment": 9208.0,
+      "proposed_second_bound": 10080.0,
+      "variance": 2152.0,
+      "bernoulli_variance_formula": -6972.0
+    },
+    {
+      "h": 0.5,
+      "b": 0.5,
+      "r_j": 0.02,
+      "r_l": 0.03,
+      "mean": 0.00015,
+      "overlap_square_exact": 0.08333333333333334,
+      "overlap_square_quadrature": 0.08333333333333333,
+      "second_moment": 0.00015327249999999999,
+      "proposed_second_bound": 0.00015377249999999997,
+      "variance": 0.00015324999999999998,
+      "bernoulli_variance_formula": 0.00014997749999999998
+    },
+    {
+      "h": 0.5,
+      "b": 0.5,
+      "r_j": 2.0,
+      "r_l": 3.0,
+      "mean": 1.5,
+      "overlap_square_exact": 0.08333333333333334,
+      "overlap_square_quadrature": 0.08333333333333333,
+      "second_moment": 7.0,
+      "proposed_second_bound": 7.5,
+      "variance": 4.75,
+      "bernoulli_variance_formula": -0.75
+    },
+    {
+      "h": 0.5,
+      "b": 0.5,
+      "r_j": 20.0,
+      "r_l": 30.0,
+      "mean": 150.0,
+      "overlap_square_exact": 0.08333333333333334,
+      "overlap_square_quadrature": 0.08333333333333333,
+      "second_moment": 25900.0,
+      "proposed_second_bound": 26400.0,
+      "variance": 3400.0,
+      "bernoulli_variance_formula": -22350.0
+    },
+    {
+      "h": 1.0,
+      "b": 0.02,
+      "r_j": 0.02,
+      "r_l": 0.03,
+      "mean": 1.1999999999999999e-05,
+      "overlap_square_exact": 0.00039733333333333336,
+      "overlap_square_quadrature": 0.00039733333333333385,
+      "second_moment": 1.2012112e-05,
+      "proposed_second_bound": 1.2012143999999998e-05,
+      "variance": 1.2011967999999999e-05,
+      "bernoulli_variance_formula": 1.1999855999999998e-05
+    },
+    {
+      "h": 1.0,
+      "b": 0.02,
+      "r_j": 2.0,
+      "r_l": 3.0,
+      "mean": 0.12,
+      "overlap_square_exact": 0.00039733333333333336,
+      "overlap_square_quadrature": 0.00039733333333333385,
+      "second_moment": 0.146368,
+      "proposed_second_bound": 0.1464,
+      "variance": 0.131968,
+      "bernoulli_variance_formula": 0.1056
+    },
+    {
+      "h": 1.0,
+      "b": 0.02,
+      "r_j": 20.0,
+      "r_l": 30.0,
+      "mean": 12.0,
+      "overlap_square_exact": 0.00039733333333333336,
+      "overlap_square_quadrature": 0.00039733333333333385,
+      "second_moment": 167.968,
+      "proposed_second_bound": 168.0,
+      "variance": 23.96799999999999,
+      "bernoulli_variance_formula": -132.0
+    }
+  ],
+  "finite_history_register": {
+    "rows": [
+      {
+        "bins": 4,
+        "mesh": 0.25,
+        "histories_checked": 848,
+        "aggregate_bracket_gap": 856,
+        "aggregate_square_bracket_gap": 1446,
+        "exact_brackets": 227,
+        "maximum_actual_count": 2,
+        "multiple_count_example": {
+          "times": [
+            0.03,
+            0.2,
+            0.29,
+            0.38,
+            0.5,
+            0.6
+          ],
+          "labels": [
+            "other",
+            "j",
+            "other",
+            "l",
+            "j",
+            "l"
+          ],
+          "lower": 0,
+          "actual": 2,
+          "upper": 3
+        }
+      },
+      {
+        "bins": 8,
+        "mesh": 0.125,
+        "histories_checked": 848,
+        "aggregate_bracket_gap": 445,
+        "aggregate_square_bracket_gap": 553,
+        "exact_brackets": 448,
+        "maximum_actual_count": 2,
+        "multiple_count_example": {
+          "times": [
+            0.03,
+            0.2,
+            0.29,
+            0.38,
+            0.5,
+            0.6
+          ],
+          "labels": [
+            "other",
+            "j",
+            "other",
+            "l",
+            "j",
+            "l"
+          ],
+          "lower": 0,
+          "actual": 2,
+          "upper": 3
+        }
+      },
+      {
+        "bins": 16,
+        "mesh": 0.0625,
+        "histories_checked": 848,
+        "aggregate_bracket_gap": 251,
+        "aggregate_square_bracket_gap": 299,
+        "exact_brackets": 617,
+        "maximum_actual_count": 2,
+        "multiple_count_example": {
+          "times": [
+            0.03,
+            0.2,
+            0.29,
+            0.38,
+            0.5,
+            0.6
+          ],
+          "labels": [
+            "other",
+            "j",
+            "other",
+            "l",
+            "j",
+            "l"
+          ],
+          "lower": 1,
+          "actual": 2,
+          "upper": 2
+        }
+      },
+      {
+        "bins": 32,
+        "mesh": 0.03125,
+        "histories_checked": 848,
+        "aggregate_bracket_gap": 218,
+        "aggregate_square_bracket_gap": 266,
+        "exact_brackets": 644,
+        "maximum_actual_count": 2,
+        "multiple_count_example": {
+          "times": [
+            0.03,
+            0.2,
+            0.29,
+            0.38,
+            0.5,
+            0.6
+          ],
+          "labels": [
+            "other",
+            "j",
+            "other",
+            "l",
+            "j",
+            "l"
+          ],
+          "lower": 1,
+          "actual": 2,
+          "upper": 2
+        }
+      }
+    ],
+    "nested_partition_histories": 848,
+    "event_cap": 6,
+    "universal_pair_cap": 15,
+    "interval": [
+      0.2,
+      0.6
+    ],
+    "lag": 0.3
+  },
+  "elapsed_seconds": 0.015973458997905254,
+  "checks_passed": [
+    "piecewise_overlap_integral",
+    "proposal_second_moment_bound",
+    "non_bernoulli_count_example",
+    "count_window_brackets",
+    "square_bracket_bound",
+    "nested_partition_monotonicity"
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "scope": "Scientific comparison of Sections B/C and public scope; Section A proof remains conditional. AST/payload/cache bindings cover the disclosed controls, not independent numerical replication.",
+  "all_correspondence_checks_passed": true,
+  "PRE_members_unchanged": 29,
+  "POST_members_unchanged": 16,
+  "publication_sources": {
+    "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "sha256": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b",
+      "bytes": 38349
+    },
+    "scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py": {
+      "sha256": "a58a09da5c9673462c3fad051b37fa921cfdbfebcb4e56a7c633ca00d6549dce",
+      "bytes": 10800
+    },
+    "outputs/unrestricted_original_records_20260924/UNRESTRICTED_ORIGINAL_RECORD_RESULTS.json": {
+      "sha256": "937394774f9e5b77753c468d721e24578111860350bcf3835bfb3c24c845dfdf",
+      "bytes": 18068
+    },
+    "logs/runner-cache/local_background_and_unrestricted_original_record_counts_2026_09_24.txt": {
+      "sha256": "6fc3d14cdbdb194fb5aef57aa50220bcf0f637d33ae39c1c13a1e3c70c3d7763",
+      "bytes": 18467
+    }
+  },
+  "external_manifest_sha256": "9d87b1dad1716db2ed249efd57d2e5d7559093b02cd2b00802c46d38389a55a5",
+  "external_execution_sha256": "fd7f8054951d6ce7babc00c78b78011c5060149deda384bf89edcfbaba28278f",
+  "all_five_declared_input_bytes_bound": true,
+  "input_fingerprint_sha256": "d367e69856c73a203517e7ff954b427e9f1875ce35df0a31d21c82eaddb3ec4f",
+  "parent_exact_git_bytes": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "04dcf088de81990632d869142f30a59e881a8f31",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "exact_git_bytes_match": true
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "04dcf088de81990632d869142f30a59e881a8f31",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "exact_git_bytes_match": true
+    },
+    {
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "04dcf088de81990632d869142f30a59e881a8f31",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851,
+      "exact_git_bytes_match": true
+    },
+    {
+      "path": "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "04dcf088de81990632d869142f30a59e881a8f31",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966,
+      "exact_git_bytes_match": true
+    }
+  ],
+  "function_comparisons": [
+    {
+      "name": "diagonal_rotor_control",
+      "root_origin": "local-record-background-personal/local_background_controls.py",
+      "root_source_sha256": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807",
+      "source_segment_sha256": "9d74b6f2b18bffe0a48823a244fdbf4231c575b3abbfd6d573ec18c890ce729b",
+      "AST_sha256_without_locations": "937cc28ae7e13a4cf35e4458638fa732131ae29c175af79ce0259e16c8adfbd7",
+      "AST_identical": true,
+      "source_segment_identical": true
+    },
+    {
+      "name": "local",
+      "root_origin": "local-record-background-personal/local_background_controls.py",
+      "root_source_sha256": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807",
+      "source_segment_sha256": "76225495767c3c4dc4e93b226c2cd56ae500818c23d1aa6bb64957e99f872c2e",
+      "AST_sha256_without_locations": "3598615884fd33edcab4596878b8ff5370410f504dcd0d92d517b4001a9dc98f",
+      "AST_identical": true,
+      "source_segment_identical": true
+    },
+    {
+      "name": "hermitian_norm",
+      "root_origin": "local-record-background-personal/local_background_controls.py",
+      "root_source_sha256": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807",
+      "source_segment_sha256": "3329634aaa7e94bf646fa2d29a94edacc9407ac8825538b83a2e758d098bbe5c",
+      "AST_sha256_without_locations": "76a4a71313405bef5287bfea3b8710739683eb895c06b5baa6797dc55de21cce",
+      "AST_identical": true,
+      "source_segment_identical": true
+    },
+    {
+      "name": "chain_control",
+      "root_origin": "local-record-background-personal/local_background_controls.py",
+      "root_source_sha256": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807",
+      "source_segment_sha256": "10da20ba976928488599e7d7e57f210645d2f0551c20e0213a6466da41bc023f",
+      "AST_sha256_without_locations": "402984cd0a554b43a1876a3098e158e9bbbfe5aa39c4b54250ce002d950e0409",
+      "AST_identical": true,
+      "source_segment_identical": true
+    },
+    {
+      "name": "overlap_square",
+      "root_origin": "unrestricted-record-count-personal/count_window_controls.py",
+      "root_source_sha256": "86243d8f649124e09e52de0061f2b6af23337640fe3a90d0d58d3ad298dcdc6d",
+      "source_segment_sha256": "fb544e360f057eb22bbfead5fb5787f6f2933f0bb12c4e3277867f1d4ff8ec2f",
+      "AST_sha256_without_locations": "d8fde56be6eab860a01d768d234ad05dcac5ef4d71ac0de614a0070f527ae9fb",
+      "AST_identical": true,
+      "source_segment_identical": true
+    },
+    {
+      "name": "poisson_moment_controls",
+      "root_origin": "unrestricted-record-count-personal/count_window_controls.py",
+      "root_source_sha256": "86243d8f649124e09e52de0061f2b6af23337640fe3a90d0d58d3ad298dcdc6d",
+      "source_segment_sha256": "3d45104d52c4a1e6bac2754476df64f2b8b8759fb74cdfefb67b1330b650de84",
+      "AST_sha256_without_locations": "ba395859dc2b33a2babda3c3c50aa69da153fd4f700a52c83b506ddec258c228",
+      "AST_identical": true,
+      "source_segment_identical": true
+    },
+    {
+      "name": "bin_pair_bounds",
+      "root_origin": "unrestricted-record-count-personal/count_window_controls.py",
+      "root_source_sha256": "86243d8f649124e09e52de0061f2b6af23337640fe3a90d0d58d3ad298dcdc6d",
+      "source_segment_sha256": "3114c5995b1e6c8a436b2d60c6d48cfaa3f85b5d810b37d75eb8898b55ec14e0",
+      "AST_sha256_without_locations": "15440172064953ac23b1c632cea42a93a0e099b87f5ff566e1559eda2753899f",
+      "AST_identical": true,
+      "source_segment_identical": true
+    },
+    {
+      "name": "register_window_controls",
+      "root_origin": "unrestricted-record-count-personal/count_window_controls.py",
+      "root_source_sha256": "86243d8f649124e09e52de0061f2b6af23337640fe3a90d0d58d3ad298dcdc6d",
+      "source_segment_sha256": "4e6d9f1f51707245bc99abe4d28ad96c972474e26db8531be27523b06cf924ae",
+      "AST_sha256_without_locations": "dea5b52c53d6d5731ba50ce92c8405d270528a602fb562d3d7a5ce9e21f9f3c0",
+      "AST_identical": true,
+      "source_segment_identical": true
+    }
+  ],
+  "four_payload_comparisons": [
+    {
+      "payload": "diagonal_rotor",
+      "exact_parsed_equality": true,
+      "numeric_leaves": 20,
+      "maximum_absolute_numeric_difference": 0.0
+    },
+    {
+      "payload": "chain_rows",
+      "exact_parsed_equality": true,
+      "numeric_leaves": 240,
+      "maximum_absolute_numeric_difference": 0.0
+    },
+    {
+      "payload": "poisson_proposal_rows",
+      "exact_parsed_equality": true,
+      "numeric_leaves": 132,
+      "maximum_absolute_numeric_difference": 0.0
+    },
+    {
+      "payload": "finite_history_register",
+      "exact_parsed_equality": true,
+      "numeric_leaves": 70,
+      "maximum_absolute_numeric_difference": 0.0
+    }
+  ],
+  "all_24_chain_correspondence_rows": [
+    {
+      "sites": 3,
+      "K": 0.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 0.0,
+      "fine_integral_minus_actual_norm": 0.0003996146471055475
+    },
+    {
+      "sites": 3,
+      "K": 0.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 0.0,
+      "fine_integral_minus_actual_norm": 0.005132566481627077
+    },
+    {
+      "sites": 3,
+      "K": 3.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 0.0,
+      "fine_integral_minus_actual_norm": 0.0003996146471055475
+    },
+    {
+      "sites": 3,
+      "K": 3.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 0.0,
+      "fine_integral_minus_actual_norm": 0.005375312505577316
+    },
+    {
+      "sites": 3,
+      "K": 30.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 3.2723303233783696e-13,
+      "fine_integral_minus_actual_norm": 0.0003996290154112212
+    },
+    {
+      "sites": 3,
+      "K": 30.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 5.620087728530621e-13,
+      "fine_integral_minus_actual_norm": 0.005518889529698964
+    },
+    {
+      "sites": 4,
+      "K": 0.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 3.469446951953614e-18,
+      "fine_integral_minus_actual_norm": 0.0004070884308095199
+    },
+    {
+      "sites": 4,
+      "K": 0.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 2.0816681711721685e-17,
+      "fine_integral_minus_actual_norm": 0.005453809210158027
+    },
+    {
+      "sites": 4,
+      "K": 3.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 5.204170427930421e-18,
+      "fine_integral_minus_actual_norm": 0.0005108819087265362
+    },
+    {
+      "sites": 4,
+      "K": 3.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 2.0816681711721685e-17,
+      "fine_integral_minus_actual_norm": 0.009735351334832644
+    },
+    {
+      "sites": 4,
+      "K": 30.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 0.0,
+      "fine_integral_minus_actual_norm": 0.001013906985988331
+    },
+    {
+      "sites": 4,
+      "K": 30.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 1.4327377728662327e-08,
+      "fine_integral_minus_actual_norm": 0.012043517297086817
+    },
+    {
+      "sites": 5,
+      "K": 0.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 3.469446951953614e-18,
+      "fine_integral_minus_actual_norm": 0.0004072376637554685
+    },
+    {
+      "sites": 5,
+      "K": 0.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 1.3877787807814457e-17,
+      "fine_integral_minus_actual_norm": 0.005476076466164818
+    },
+    {
+      "sites": 5,
+      "K": 3.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 0.0,
+      "fine_integral_minus_actual_norm": 0.0005133736759002465
+    },
+    {
+      "sites": 5,
+      "K": 3.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 2.4760610228824476e-12,
+      "fine_integral_minus_actual_norm": 0.010082234387666207
+    },
+    {
+      "sites": 5,
+      "K": 30.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 1.5529440580697162e-11,
+      "fine_integral_minus_actual_norm": 0.0010287080662477951
+    },
+    {
+      "sites": 5,
+      "K": 30.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 9.922633145698079e-09,
+      "fine_integral_minus_actual_norm": 0.012684200593318387
+    },
+    {
+      "sites": 6,
+      "K": 0.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 0.0,
+      "fine_integral_minus_actual_norm": 0.0004072400514869793
+    },
+    {
+      "sites": 6,
+      "K": 0.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 0.0,
+      "fine_integral_minus_actual_norm": 0.005477321101251542
+    },
+    {
+      "sites": 6,
+      "K": 3.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 6.938893903907228e-18,
+      "fine_integral_minus_actual_norm": 0.0005136458982653233
+    },
+    {
+      "sites": 6,
+      "K": 3.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 1.69292357909967e-12,
+      "fine_integral_minus_actual_norm": 0.010214496833235637
+    },
+    {
+      "sites": 6,
+      "K": 30.0,
+      "time": 0.2,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 1.6350995210578922e-11,
+      "fine_integral_minus_actual_norm": 0.0010444485825369526
+    },
+    {
+      "sites": 6,
+      "K": 30.0,
+      "time": 0.7,
+      "root_and_public_payload_exact": true,
+      "quadrature_difference": 1.706341484775109e-09,
+      "fine_integral_minus_actual_norm": 0.01333642938163012
+    }
+  ],
+  "max_chain_quadrature_discrepancy": 1.4327377728662327e-08,
+  "count_proposal_rows": 12,
+  "count_register_rows": 4,
+  "register_bracket_gaps": [
+    856,
+    445,
+    251,
+    218
+  ],
+  "canonical_execution": {
+    "runner": "scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py",
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_sec": 1.7760000228881836,
+    "timeout_sec": 120,
+    "live_log": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/logs/runner-cache/.in-progress/local_background_and_unrestricted_original_record_counts_2026_09_24.txt"
+  },
+  "canonical_stderr_bytes": 0,
+  "canonical_wrapper_seconds": 1.7938620829954743,
+  "canonical_payload_internal_seconds": 0.9744516659993678,
+  "result_plus_pass_line_equals_execution_stdout": true,
+  "cache_matches_execution_and_fingerprint_byte_for_byte": true,
+  "author_control_or_canonical_executions_by_checker": 0,
+  "new_physics_controls_executed": 0,
+  "Section_A_independently_certified": false,
+  "other_active_science_or_checker_packets_read": false,
+  "PUBLICATION_SOURCE_PINS": {
+    "sha256": "49b0071ae12aa09f4798183a5fc8d7dcaa4054bc1ee345163130736d775a1287",
+    "bytes": 10851
+  },
+  "PUBLICATION_COUNT_DIFF": {
+    "sha256": "6eb2636d952c3a3bedce90f3877e0282b338fa368b75f8d8e3d820d67751141c",
+    "bytes": 2299
+  }
+}

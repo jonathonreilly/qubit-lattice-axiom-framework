@@ -1,0 +1,35 @@
+{"name": "PRE_seal_identity", "verified": true}
+{"member_count": 29, "name": "all_PRE_members_preserved", "verified": true}
+{"name": "released_copy_AUTHOR_CONTROL_SEAL.json", "verified": true}
+{"name": "released_copy_CONTROL.stderr.txt", "verified": true}
+{"name": "released_copy_CONTROL.stdout.txt", "verified": true}
+{"name": "released_copy_CONTROL_EXECUTION.json", "verified": true}
+{"name": "released_copy_LOCAL_BACKGROUND_CONTROL_RESULTS.json", "verified": true}
+{"name": "released_copy_LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md", "verified": true}
+{"name": "released_copy_SOURCE_PINS.json", "verified": true}
+{"name": "released_copy_local_background_controls.py", "verified": true}
+{"name": "author_seal_seven_members", "verified": true}
+{"name": "primary_reference_bindings", "pdf_pages": 8, "verified": true}
+{"commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8", "name": "author_git_pin_LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md", "verified": true}
+{"commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8", "name": "author_git_pin_LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md", "verified": true}
+{"commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8", "name": "author_git_pin_WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md", "verified": true}
+{"name": "author_prior_pin_record-photon-readout-personal_TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md", "verified": true}
+{"name": "author_prior_pin_record-photon-readout-independent_PRE.md", "verified": true}
+{"name": "author_prior_pin_record-photon-readout-independent_POST.md", "verified": true}
+{"name": "author_primary_pdf_pin", "verified": true}
+{"name": "complete_stdout_equals_result", "verified": true}
+{"name": "empty_stderr_and_zero_exit", "verified": true}
+{"name": "author_script_fingerprints", "verified": true}
+{"name": "author_command_binding", "verified": true}
+{"name": "author_source_parses_without_execution", "verified": true}
+{"name": "four_rotor_rows", "verified": true}
+{"expected_columns": 12, "expected_near_norm": 0.34427667522519084, "name": "rotor_record_arithmetic_1", "verified": true}
+{"expected_columns": 80, "expected_near_norm": 0.34427667522519084, "name": "rotor_record_arithmetic_2", "verified": true}
+{"expected_columns": 576, "expected_near_norm": 0.34427667522519084, "name": "rotor_record_arithmetic_4", "verified": true}
+{"expected_columns": 4352, "expected_near_norm": 0.34427667522519084, "name": "rotor_record_arithmetic_8", "verified": true}
+{"name": "all_24_declared_chain_rows", "verified": true}
+{"max_local_observable_error": 0.047889640150096766, "max_quadrature_difference": 1.4327377728662327e-08, "min_unadjusted_integral_margin": 0.0003996146471055475, "name": "all_recorded_chain_arithmetic", "verified": true}
+{"internal_seconds": 1.3399165000300854, "name": "declared_author_summary", "numpy": "2.4.4", "scipy": "1.17.1", "verified": true, "wall_seconds": 3.9454514579847455}
+{"name": "frozen_editorial_typo_retained", "verified": true}
+{"name": "no_count_variance_or_lag_rate_import", "verified": true}
+TOTAL 34 POST correspondence checks verified

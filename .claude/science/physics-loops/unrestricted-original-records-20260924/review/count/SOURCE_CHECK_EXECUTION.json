@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-24T20:42:26.668412+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/verify_evidence.py"
+  ],
+  "wall_seconds": 0.4102974170818925,
+  "exit_code": 0,
+  "source_sha256": "d9e72e2e06869fe3549602afadc64dbb5ef93805714b86c202dffbd0328f6c29",
+  "stdout_sha256": "6a8ee238ecfa52dd2f4e5bb94605642aabbeca7b562cf6f1cfd2d0c683e3688c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Evidence bindings only; no science runner executed."
+}

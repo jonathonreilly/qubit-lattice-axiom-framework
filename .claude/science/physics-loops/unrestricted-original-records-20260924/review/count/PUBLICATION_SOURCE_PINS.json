@@ -1,0 +1,173 @@
+{
+  "created_utc": "2026-09-24T21:19:09.734696+00:00",
+  "phase": "Bounded final publication correspondence",
+  "scope": "Scientific comparison of Sections B/C and public scope; Section A proof remains conditional. AST/payload/cache bindings cover the disclosed controls, not independent numerical replication.",
+  "preserved_PRE_seal_sha256": "b6e0c33fe1286a876f1230759cb62769d57475d76c2ea1a6aae633064e2ba9d0",
+  "preserved_POST_seal_sha256": "da4ec87b40713ab6fa744f4cb6c9fef8dce28faf441f53dd422575256275f2ba",
+  "publication_base_revision": "04dcf088de81990632d869142f30a59e881a8f31",
+  "HEAD_at_check": "04dcf088de81990632d869142f30a59e881a8f31",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/UNRESTRICTED_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "publication-released/external/UNRESTRICTED_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "9d87b1dad1716db2ed249efd57d2e5d7559093b02cd2b00802c46d38389a55a5",
+      "bytes": 2256,
+      "scope": "source correspondence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/UNRESTRICTED_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "publication-released/external/UNRESTRICTED_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "fd7f8054951d6ce7babc00c78b78011c5060149deda384bf89edcfbaba28278f",
+      "bytes": 20411,
+      "scope": "source correspondence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication-released/publication/docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b",
+      "bytes": 38349,
+      "scope": "Public note read completely; scientific comparison limited to B/C and scope"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py",
+      "snapshot": "publication-released/publication/scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py",
+      "sha256": "a58a09da5c9673462c3fad051b37fa921cfdbfebcb4e56a7c633ca00d6549dce",
+      "bytes": 10800,
+      "scope": "Public runner read completely, without execution"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication-released/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "scope": "Declared parent byte identity; existing scientific premises are reused, not independently recertified"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication-released/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "scope": "Declared parent byte identity; existing scientific premises are reused, not independently recertified"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication-released/publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851,
+      "scope": "Declared parent byte identity; existing scientific premises are reused, not independently recertified"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication-released/publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966,
+      "scope": "Declared parent byte identity; existing scientific premises are reused, not independently recertified"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/outputs/unrestricted_original_records_20260924/UNRESTRICTED_ORIGINAL_RECORD_RESULTS.json",
+      "snapshot": "publication-released/publication/outputs/unrestricted_original_records_20260924/UNRESTRICTED_ORIGINAL_RECORD_RESULTS.json",
+      "sha256": "937394774f9e5b77753c468d721e24578111860350bcf3835bfb3c24c845dfdf",
+      "bytes": 18068,
+      "scope": "source correspondence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/logs/runner-cache/local_background_and_unrestricted_original_record_counts_2026_09_24.txt",
+      "snapshot": "publication-released/publication/logs/runner-cache/local_background_and_unrestricted_original_record_counts_2026_09_24.txt",
+      "sha256": "6fc3d14cdbdb194fb5aef57aa50220bcf0f637d33ae39c1c13a1e3c70c3d7763",
+      "bytes": 18467,
+      "scope": "source correspondence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-observation-publication/scripts/runner_cache.py",
+      "snapshot": "publication-released/protocol/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941,
+      "scope": "Only declared-input fingerprint and cache serialization definitions inspected; module not imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/local_background_controls.py",
+      "snapshot": "publication-released/local-author/local_background_controls.py",
+      "sha256": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807",
+      "bytes": 5512,
+      "scope": "Released root control evidence only; no Section A theorem certification"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/LOCAL_BACKGROUND_CONTROL_RESULTS.json",
+      "snapshot": "publication-released/local-author/LOCAL_BACKGROUND_CONTROL_RESULTS.json",
+      "sha256": "28a9f5866a253f2ec4c86b893ff14cbace711a85431aa4877b7ee81444c2dbed",
+      "bytes": 11073,
+      "scope": "Released root control evidence only; no Section A theorem certification"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/CONTROL_EXECUTION.json",
+      "snapshot": "publication-released/local-author/CONTROL_EXECUTION.json",
+      "sha256": "b894d712e5d090d9af5ba775207dc5924aad657eb63307dea85d7ad67ae9ef0f",
+      "bytes": 465,
+      "scope": "Released root control evidence only; no Section A theorem certification"
+    }
+  ],
+  "declared_inputs_in_order": [
+    {
+      "path": "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b",
+      "bytes": 38349
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966
+    }
+  ],
+  "input_fingerprint_sha256": "d367e69856c73a203517e7ff954b427e9f1875ce35df0a31d21c82eaddb3ec4f",
+  "parent_exact_git_bytes": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "04dcf088de81990632d869142f30a59e881a8f31",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "exact_git_bytes_match": true
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "04dcf088de81990632d869142f30a59e881a8f31",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "exact_git_bytes_match": true
+    },
+    {
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "04dcf088de81990632d869142f30a59e881a8f31",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851,
+      "exact_git_bytes_match": true
+    },
+    {
+      "path": "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "04dcf088de81990632d869142f30a59e881a8f31",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966,
+      "exact_git_bytes_match": true
+    }
+  ],
+  "reused_local_author_seal": {
+    "snapshot": "sources/external/local-record-background-personal/AUTHOR_CONTROL_SEAL.json",
+    "sha256": "455aaba6c0bd18da70176272ed9df914c04f8101bd8e826a81a78495f9af1b18"
+  },
+  "root_count_evidence": "Unchanged post-released directory bound by POST_SEAL.json",
+  "publication_PARENT_note_scope": "The published readout-parent byte identity is checked, but its science is not newly recertified in this final comparison; prior sealed root/register/lag premises remain explicit."
+}

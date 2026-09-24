@@ -1,0 +1,13 @@
+{
+  "sealed_utc": "2026-09-24T20:13:54.681147+00:00",
+  "status": "Root candidate; independent PRE in progress and not read.",
+  "files": {
+    "CONTROL.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CONTROL.stdout.txt": "28a9f5866a253f2ec4c86b893ff14cbace711a85431aa4877b7ee81444c2dbed",
+    "CONTROL_EXECUTION.json": "b894d712e5d090d9af5ba775207dc5924aad657eb63307dea85d7ad67ae9ef0f",
+    "LOCAL_BACKGROUND_CONTROL_RESULTS.json": "28a9f5866a253f2ec4c86b893ff14cbace711a85431aa4877b7ee81444c2dbed",
+    "LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md": "9f21fae1ea269c0316757d7618d3b50161bd26c4da5759325187c64531220843",
+    "SOURCE_PINS.json": "5488304eb3c1393d99f7c20846de04f605b576924cc065e1eea7cf88f532ccb4",
+    "local_background_controls.py": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent/local_background_control.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-independent",
+  "started_utc": "2026-09-24T20:19:18.013472+00:00",
+  "completed_utc": "2026-09-24T20:19:18.350533+00:00",
+  "wall_seconds": 0.3368644998408854,
+  "exit_code": 0,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "script_sha256": "fece4745c67b63a0a8dc68c83e0bfd0a49e97e493c3c0bfef5492564ea601bcf",
+  "stdout_sha256": "2562804be98bbe3cd1d34f612c119d60ec9e63bbcfbc50a1d1fdbc28714d4f4f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_sha256": "4da5db176d9a3040460602357a6b6ff338893db6187c12a1c1516fc6a0faf568"
+}

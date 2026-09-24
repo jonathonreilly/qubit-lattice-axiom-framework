@@ -1,0 +1,338 @@
+{
+  "scope": "Independent primitive resolved paths plus a separate capped marked pure-birth model. No actual rotor propagation simulated.",
+  "primitive_resolved_pair": {
+    "scope": "Direct original resolved zero-lag primitive path algebra only.",
+    "link_orientation": "A to B",
+    "edges": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          5
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ]
+    ],
+    "cycle": [
+      0,
+      0,
+      -1,
+      0,
+      1,
+      0,
+      1,
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "sigma": -1,
+        "tau": -1,
+        "legal_paths": 23,
+        "distinct_final_matter_words": 22,
+        "identity_coefficient": 23,
+        "oriented_cycle_coefficients": [
+          1,
+          1
+        ],
+        "extra_outward_destination_tag_removes_cross_terms": true
+      },
+      {
+        "sigma": -1,
+        "tau": 1,
+        "legal_paths": 23,
+        "distinct_final_matter_words": 22,
+        "identity_coefficient": 23,
+        "oriented_cycle_coefficients": [
+          1,
+          1
+        ],
+        "extra_outward_destination_tag_removes_cross_terms": true
+      },
+      {
+        "sigma": 1,
+        "tau": -1,
+        "legal_paths": 23,
+        "distinct_final_matter_words": 22,
+        "identity_coefficient": 23,
+        "oriented_cycle_coefficients": [
+          1,
+          1
+        ],
+        "extra_outward_destination_tag_removes_cross_terms": true
+      },
+      {
+        "sigma": 1,
+        "tau": 1,
+        "legal_paths": 23,
+        "distinct_final_matter_words": 22,
+        "identity_coefficient": 23,
+        "oriented_cycle_coefficients": [
+          1,
+          1
+        ],
+        "extra_outward_destination_tag_removes_cross_terms": true
+      }
+    ]
+  },
+  "abstract_model": {
+    "states": "record stages 0 through 4",
+    "marks": [
+      "j",
+      "l",
+      "other"
+    ],
+    "generator": "total rate kappa while stage<4; each mark increments the stage; terminal stage absorbs",
+    "mark_probabilities": [
+      0.4,
+      0.4,
+      0.2
+    ],
+    "field_or_photon_preparation": false
+  },
+  "terminal_word_moments": {
+    "cap": 4,
+    "mean": 0.9599999999999999,
+    "second_moment": 2.1376,
+    "variance": 1.2160000000000002,
+    "three_and_four_event_combinatorics_match_direct_words": true,
+    "variance_exceeds_mean_in_terminal_word_control": true
+  },
+  "finite_window_rows": [
+    {
+      "rate": 3.0,
+      "bins": 4,
+      "mesh": 1.5,
+      "summed_word_states": 3478,
+      "probability_mass": 0.999999999999999,
+      "count_mean_lower": 0.952964553237059,
+      "exact_factorial_count_mean": 0.9570979423767617,
+      "count_mean_upper": 0.9585442925386047,
+      "count_second_moment_lower": 2.1149141639116174,
+      "count_second_moment_upper": 2.13357450708352,
+      "count_variance_bracket": [
+        1.1988776926097864,
+        1.217538035781689
+      ],
+      "proved_second_moment_upper": 262.23069794237693,
+      "first_j_then_next_l_probability": 0.15996051129948907,
+      "positive_probability_of_count_four_lower": 0.025056601950645543,
+      "mean_is_not_first_pair_probability": true
+    },
+    {
+      "rate": 3.0,
+      "bins": 8,
+      "mesh": 0.75,
+      "summed_word_states": 30319,
+      "probability_mass": 1.000000000000039,
+      "count_mean_lower": 0.9553326507954955,
+      "exact_factorial_count_mean": 0.9570979423767617,
+      "count_mean_upper": 0.958478469267453,
+      "count_second_moment_lower": 2.1220673725497843,
+      "count_second_moment_upper": 2.1333517536315703,
+      "count_variance_bracket": [
+        1.2060309012479533,
+        1.2173152823297393
+      ],
+      "proved_second_moment_upper": 262.23069794237693,
+      "first_j_then_next_l_probability": 0.15996051129948907,
+      "positive_probability_of_count_four_lower": 0.025056601950645543,
+      "mean_is_not_first_pair_probability": true
+    },
+    {
+      "rate": 3.0,
+      "bins": 12,
+      "mesh": 0.5,
+      "summed_word_states": 121132,
+      "probability_mass": 1.0000000000003133,
+      "count_mean_lower": 0.9560049127905831,
+      "exact_factorial_count_mean": 0.9570979423767617,
+      "count_mean_upper": 0.9583478892836282,
+      "count_second_moment_lower": 2.124365240475205,
+      "count_second_moment_upper": 2.1328927886471085,
+      "count_variance_bracket": [
+        1.2083287691733742,
+        1.2168563173452775
+      ],
+      "proved_second_moment_upper": 262.23069794237693,
+      "first_j_then_next_l_probability": 0.15996051129948907,
+      "positive_probability_of_count_four_lower": 0.025056601950645543,
+      "mean_is_not_first_pair_probability": true
+    }
+  ],
+  "rare_variance_rows": [
+    {
+      "rate": 0.3,
+      "exact_mean": 0.11976928332299948,
+      "proved_variance_over_mean_interval": [
+        0.8802307166770005,
+        1.79956626703723
+      ]
+    },
+    {
+      "rate": 0.1,
+      "exact_mean": 0.01432828332180315,
+      "proved_variance_over_mean_interval": [
+        0.9856717166781969,
+        1.241345052954673
+      ]
+    },
+    {
+      "rate": 0.03,
+      "exact_mean": 0.0012957846644293131,
+      "proved_variance_over_mean_interval": [
+        0.9987042153355706,
+        1.0720123957822316
+      ]
+    },
+    {
+      "rate": 0.01,
+      "exact_mean": 0.0001439990576136679,
+      "proved_variance_over_mean_interval": [
+        0.9998560009423864,
+        1.0240001589501952
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.16128220898099244,
+  "source_sha256": "07bad4820aa7d504a0266f14ba816ece49528ecc0f8fce11ea8285a73335472f"
+}

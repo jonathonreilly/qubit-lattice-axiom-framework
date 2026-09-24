@@ -1,0 +1,122 @@
+{
+  "utc": "2026-09-24T20:31:33.444010+00:00",
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "matches": true
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "matches": true
+    },
+    {
+      "path": "EVIDENCE_LOG.md",
+      "matches": true
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION.json",
+      "matches": true
+    },
+    {
+      "path": "EXECUTION.json",
+      "matches": true
+    },
+    {
+      "path": "PRE.md",
+      "matches": true
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "matches": true
+    },
+    {
+      "path": "freeze_sources.py",
+      "matches": true
+    },
+    {
+      "path": "freeze_sources.stderr.txt",
+      "matches": true
+    },
+    {
+      "path": "freeze_sources.stdout.txt",
+      "matches": true
+    },
+    {
+      "path": "local_background_control.py",
+      "matches": true
+    },
+    {
+      "path": "local_background_control.stderr.txt",
+      "matches": true
+    },
+    {
+      "path": "local_background_control.stdout.txt",
+      "matches": true
+    },
+    {
+      "path": "run_control.py",
+      "matches": true
+    },
+    {
+      "path": "seal_pre.py",
+      "matches": true
+    },
+    {
+      "path": "sources/NSY_1810.02428v1.pdf",
+      "matches": true
+    },
+    {
+      "path": "sources/NSY_required_sections.txt",
+      "matches": true
+    },
+    {
+      "path": "sources/agent_pointer.md",
+      "matches": true
+    },
+    {
+      "path": "sources/electric_magnetic.md",
+      "matches": true
+    },
+    {
+      "path": "sources/local_compensation.md",
+      "matches": true
+    },
+    {
+      "path": "sources/local_pair_form.md",
+      "matches": true
+    },
+    {
+      "path": "sources/readout_POST.md",
+      "matches": true
+    },
+    {
+      "path": "sources/readout_POST_SEAL.json",
+      "matches": true
+    },
+    {
+      "path": "sources/readout_PRE.md",
+      "matches": true
+    },
+    {
+      "path": "sources/readout_PRE_SEAL.json",
+      "matches": true
+    },
+    {
+      "path": "sources/workflow.md",
+      "matches": true
+    },
+    {
+      "path": "verify_evidence.py",
+      "matches": true
+    },
+    {
+      "path": "verify_evidence.stderr.txt",
+      "matches": true
+    },
+    {
+      "path": "verify_evidence.stdout.txt",
+      "matches": true
+    }
+  ],
+  "report_and_code_read_complete": true
+}

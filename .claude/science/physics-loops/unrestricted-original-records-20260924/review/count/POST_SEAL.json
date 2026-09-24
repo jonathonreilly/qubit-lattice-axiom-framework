@@ -1,0 +1,105 @@
+{
+  "sealed_utc": "2026-09-24T21:03:14.891093+00:00",
+  "phase": "Released-source unrestricted-count POST",
+  "scope": "Complete author proof/code/recorded-output comparison; conditional LR product extension, analytic boundary area, proposal variance and ordered microscopic transfer; no audit verdict or author science rerun.",
+  "preserved_PRE_seal_sha256": "b6e0c33fe1286a876f1230759cb62769d57475d76c2ea1a6aae633064e2ba9d0",
+  "preserved_PRE_member_count": 29,
+  "author_seal_sha256": "fd268c0ec9d37f68136e81e153d71c7775ac652118f8e2adcf40f8c5776b60d8",
+  "author_seal_members_verified": 7,
+  "author_dependency_origins_rechecked": 7,
+  "prior_microscopic_PRE_POST_members_unchanged": {
+    "PRE": 13,
+    "POST": 15
+  },
+  "author_science_executions": 0,
+  "POST_binding_executions": 1,
+  "public_scope_clarification": "Make I=[t0,t0+h_I] with t0>=0 and t0+h_I+b<T explicit; retain imported fixed-graph preparation and stronger parent LR hypotheses. No coefficient/proof correction identified.",
+  "PRE_contributions_preserved": [
+    "fixed-graph global disturbance alternative",
+    "sharper actual-count variance asymptotic",
+    "finite count-law TV and full repeated-experiment diagonal"
+  ],
+  "frozen_member_count": 16,
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "259fc65285a094235becbc5accf4e9348a0364ff5d83639d6fa274d534a65a6e",
+      "bytes": 33451
+    },
+    {
+      "path": "POST_BINDING.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "POST_BINDING.stdout.log",
+      "sha256": "5926cd571a6db4a0c8c3cbf3ec466fc8ab25f98c9f09993f5122f29c442e973b",
+      "bytes": 7157
+    },
+    {
+      "path": "POST_BINDING_EXECUTION.json",
+      "sha256": "c395bfca091f9e4af9b5624f4735214693f9d7facdc715681237c879675e1e74",
+      "bytes": 765
+    },
+    {
+      "path": "POST_EVIDENCE_CHECK.json",
+      "sha256": "5926cd571a6db4a0c8c3cbf3ec466fc8ab25f98c9f09993f5122f29c442e973b",
+      "bytes": 7157
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "20a965c8da0d750b6d8bee28c062c0b721e51a84b27e916981ed08b8716ec1ec",
+      "bytes": 10010
+    },
+    {
+      "path": "post-prior-source/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "sha256": "a04e25530ccf1dc8df8a27b41523d04703c09ff758664792a9487a8cea0ce60c",
+      "bytes": 11201
+    },
+    {
+      "path": "post-released/AUTHOR_SEAL.json",
+      "sha256": "fd268c0ec9d37f68136e81e153d71c7775ac652118f8e2adcf40f8c5776b60d8",
+      "bytes": 1121
+    },
+    {
+      "path": "post-released/COUNT_WINDOW.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post-released/COUNT_WINDOW_RESULTS.json",
+      "sha256": "fa3e44571833d1cf21baa8e78d8ae7d5b1ce5d9107cac3344703339d32252910",
+      "bytes": 7877
+    },
+    {
+      "path": "post-released/EXECUTION.json",
+      "sha256": "5fb5f0a8c3e5005fc0ff42b1f53fcfe532385cfe1318f6373ccf1625ca4628a0",
+      "bytes": 294
+    },
+    {
+      "path": "post-released/ROOT_REVIEW.md",
+      "sha256": "457f243db65bf35d17e10709e4da71f6aa367b0441cfa09e26db94094eb23a33",
+      "bytes": 1312
+    },
+    {
+      "path": "post-released/SOURCE_PINS.json",
+      "sha256": "4b92483d633f215655fd1c917f439840ffc25b357a1208b439a47d5feac8db6b",
+      "bytes": 2257
+    },
+    {
+      "path": "post-released/UNRESTRICTED_FINITE_BIN_RECORD_CONTRAST_ROOT.md",
+      "sha256": "5ad270f81ab37e1ffb14130937228c6c67b0bdd0858362d76ea6bf5057a8d1cd",
+      "bytes": 14968
+    },
+    {
+      "path": "post-released/count_window_controls.py",
+      "sha256": "86243d8f649124e09e52de0061f2b6af23337640fe3a90d0d58d3ad298dcdc6d",
+      "bytes": 5891
+    },
+    {
+      "path": "verify_post_bindings.py",
+      "sha256": "b05e4660c0433aa5cc85880a1f8e1be9c20d54990fd0dc195ba92bd39717a20f",
+      "bytes": 10026
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-gamma-the-one-number-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j92a2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/gamma-the-one-number/referee_w-macbookpro90c72-j92a2/check.py",
+ "seed": 18514,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "989e9912",
+ "started_utc": "20260924T025514Z",
+ "elapsed_s": 12.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the point body, the failed self-consistency, and a gamma-independent ledger all survive exact rational checks; the scale reference fixes no pure number."
+ },
+ "review": "Exact rational re-solve confirms the point body, that the tick-ratio condition does not fix gamma, that the ledger is stationary for every gamma, and that the scale reference supplies no dimensionless number.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:gamma-the-one-number:a2/; its files are probes/work/derive/gamma-the-one-number/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/gamma-the-one-number/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ee54c8c70c62af20c6286d9c6ade454b65876a1d1393113af7563d13862d40c8",
+ "stdout_tail": "ok R1: G0(0) = 1, 22/17, 136/99 on sides 1, 3, 5; the side-3 orbit reduction gives 22/17\nok R2: divided law re-solved in rationals: phi_0 = 1/(1+x), undivided law at every site, neighbours at phi_0(1+gamma m/12); side 1 G0=1, side 3 G0=22/17, side 5 G0=136/99\nok R3: kappa = (1+gamma m/12)^{-2} identically; equating it with w_0 = phi_0^2 has roots m=0 and m=-24/(gamma(1+G0)) only, so no m>0 unless G0=1, where the equation is an identity. It fixes no gamma m\nok R4: m phi_0 -> 12/(gamma G0(0)); the ledger gradient vanishes on the solved field at unrelated gammas on sides 3 and 5, so gamma is a free label\nok R5: the scale-reference primitive states a^{-1}=M_Pl as a units conversion with zero dimensionless content and explicitly does not assert a/l_P=1; gamma=4 pi is that open statement, not a consequence of the primitive\nSUMMARY: confirmed - the point body, the failed self-consistency, and a gamma-independent ledger all survive exact rational checks; the scale reference fixes no pure number.\nHIT: confirmed - on a walled box, phi_0 = 1/(1+(gamma/12) G0(0) m) with G0(0) = 1, 22/17, 136/99 on sides 1, 3, 5, and every neighbour at phi_0(1+gamma m/12); equating the tick ratio with the site rate has no root m>0 except the side-1 identity, and the ledger m w_0+(2/gamma) sum (diff)^2 is stationary for every gamma>0. The scale reference supplies no dimensionless content, so it yields gamma=4 pi only by assuming a=l_P. Nothing in these clauses fixes gamma.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j92a2",
+  "at_utc": "20260924T025526Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

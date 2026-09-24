@@ -1,0 +1,3 @@
+PR #8845: Derive energy-selected actual formation on ring and cube
+branch codex/mobile-record-energy-selection-20260923 (base codex/mobile-record-actual-field-limits-20260923)
+runners in the PR: 0

@@ -1,0 +1,30 @@
+{
+ "task": "P:8845",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-energy-selection-20260923",
+ "worker": "w-jonathonsmac4f50-j57f6",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8845",
+ "pr": 8845,
+ "branch": "codex/mobile-record-energy-selection-20260923",
+ "git_sha": "bb6f5bc0",
+ "started_utc": "20260924T005528Z",
+ "elapsed_s": 4.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "PR re-execution of #8845's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "4875631ef8e02bdab4c7fea77f4ff9a1d1ee710fe17729a9cad264227e8542fb",
+ "stdout_tail": "PR #8845: Derive energy-selected actual formation on ring and cube\nbranch codex/mobile-record-energy-selection-20260923 (base codex/mobile-record-actual-field-limits-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j57f6",
+  "at_utc": "20260924T005533Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

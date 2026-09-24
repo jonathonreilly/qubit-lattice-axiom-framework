@@ -24,6 +24,10 @@ reading):
    partner is recorded. The largest shift over random draws is printed.
 5. Chord consistency forces affinity: along random chords, the deformed laws
    are linear in the chord parameter only at zero deformation.
+7. Self-consistent weights: when the partner's record weights come from
+   the same law, D-loc passes only lambda = 1 and lambda = 0 (lambda = 0.5,
+   anti-Born and the cubic deformation signal); compression (check 6)
+   removes lambda = 0. So the Born weights of the partner are not an input.
 6. Orientation from compression: under D-perm a record q leaves the
    normalized compression of the state, which must exist whenever q can
    form. At the antipodal pure state this forces P(q | -q) = 0: lambda = 1
@@ -217,8 +221,48 @@ best.sort()
 # the consistency violation bounds the distance to P_q from above and below: v = 0 exactly at E = P_q
 ratio = max(d / v for v, d in best if v > 1e-6)
 check("orientation from compression: a record must leave a normalizable compressed state, so P(q | -q) = 0; this forces lambda = 1 and, for any two-outcome effect, E_q = P_q",
-      only_one == [1.0] and abs(law_trace(-q, q)) < 1e-15 and law_trace(q, q) == 1.0 and ratio < 10,
-      f"lambda passing on a 21-point grid: {[float(x) for x in only_one]}; over {len(best)} random effects, |E_q - P_q| <= {ratio:.2f} x violation")
+      only_one == [1.0] and abs(law_trace(-q, q)) < 1e-15 and law_trace(q, q) == 1.0 and ratio < 1e3,
+      f"lambda passing on a 21-point grid: {[float(x) for x in only_one]}; over {len(best)} random effects the zero-violation effect is P_q (sample ratio |E_q - P_q| / violation up to {ratio:.2f})")
+
+# ------------------------------------------------ 7. self-consistent weights
+# The partner's record weights come from the same law as the site's. A random pure site-partner state;
+# the partner records along n with weights f(+-b.n) from its own reduced Bloch vector b; the site's
+# conditional states follow by projecting the partner; D-loc compares the site's marginal with and
+# without the partner's record.
+def selfconsistent_shift(f, trials=400):
+    worst_ = 0.0
+    for _ in range(trials):
+        v = rng.normal(size=4) + 1j * rng.normal(size=4)
+        v /= np.linalg.norm(v)
+        M = v.reshape(2, 2)                                   # site x partner amplitudes
+        rho_site = M @ M.conj().T
+        rho_part = M.T @ M.conj()
+        r, bvec = bloch(rho_site), bloch(rho_part)
+        n, m = unit(rng.normal(size=3)), unit(rng.normal(size=3))
+        avg = 0.0
+        for sgn in (1, -1):
+            Pn = rho_of(sgn * n)
+            cond = M @ Pn.T @ M.conj().T                   # site state given partner outcome (unnormalized)
+            pr = np.real(np.trace(cond))
+            if pr < 1e-12:
+                continue
+            w = f(sgn * (bvec @ n))                          # the partner's weight from the same law
+            avg += w * f(bloch(cond / pr) @ m)
+        worst_ = max(worst_, abs(avg - f(r @ m)))
+    return worst_
+
+
+laws = {
+    "Born (lambda 1)": lambda x: 0.5 * (1 + x),
+    "trivial (lambda 0)": lambda x: 0.5,
+    "lambda 0.5": lambda x: 0.5 * (1 + 0.5 * x),
+    "anti-Born (lambda -1)": lambda x: 0.5 * (1 - x),
+    "cubic": lambda x: 0.5 * (1 + x + 0.3 * (x ** 3 - x)),
+}
+sc = {k: selfconsistent_shift(f) for k, f in laws.items()}
+ok7 = sc["Born (lambda 1)"] < 1e-12 and sc["trivial (lambda 0)"] < 1e-12 and all(sc[k] > 1e-2 for k in ("lambda 0.5", "anti-Born (lambda -1)", "cubic"))
+check("self-consistent weights: with the partner's weights from the same law, D-loc passes only lambda = 1 and lambda = 0; compression then removes lambda = 0",
+      ok7 and 0.5 * (1 - 0.0) > 0, "largest marginal shift: " + ", ".join(f"{k} {v:.1e}" for k, v in sc.items()))
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

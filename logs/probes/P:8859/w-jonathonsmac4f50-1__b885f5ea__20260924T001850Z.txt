@@ -1,0 +1,4 @@
+PR #8859: docs(campaign): ice flux stiffness on a square cross-section
+branch claude/ice-flux-stiffness-square-cross-section-20260923 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.py: rc=0 PASS=5 FAIL=0

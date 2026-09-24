@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260924-species-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3718",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260924-species/referee_w-macbookpro90c72-j3718/check.py",
+ "seed": 77563,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8cf7fb70",
+ "started_utc": "20260924T191923Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the 2x2 corepresentation, the uniform multiplicities 16, 24, 24, 8, and an exact modular certificate of doubling. The larger-grid certificates were not rebuilt."
+ },
+ "review": "The even maps and Theta force even multiplicity and no more; the uniform 4x4x4 spectrum is E^16(E^2-1)^24(E^2-2)^24(E^2-3)^8, and a rate field on 4x2x2 has eight nonzero levels of multiplicity exactly 2.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260924-species:a1/; its files are probes/work/derive/deferred-20260924-species/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260924-species/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ee98417264d47c3f8fa5c7e5eb458b3c7f5d764d1fd65b0564f3e75e7a4f765f",
+ "stdout_tail": "PASS the three even maps square to 1\nPASS the three even maps anticommute\nPASS V_110 V_011 = i V_101\nPASS sigma_y is pure imaginary\nPASS sigma_2 conj(sigma) sigma_2 = -sigma for [[0, 1], [1, 0]]\nPASS sigma_2 conj(sigma) sigma_2 = -sigma for [[0, -I], [I, 0]]\nPASS sigma_2 conj(sigma) sigma_2 = -sigma for [[1, 0], [0, -1]]\nPASS momentum shells {0: 8, 1: 24, 2: 24, 3: 8}\nPASS uniform 4x4x4 characteristic polynomial is E^16 (E^2-1)^24 (E^2-2)^24 (E^2-3)^8\nPASS the multiplicities add to the 128-dimensional space\nPASS eight species points times two coins is 16\nPASS Phi H Phi (Phi^{-1} psi) = Phi H psi, so the rate-field kernel is Phi^{-1} of the free kernel\nPASS free 4x2x2 walk has a zero of order 16\nPASS free 4x2x2 characteristic polynomial is E^16 (E^2-1)^8\nPASS a varying rate field on 4x2x2 still has zero of order exactly 16\nPASS the nonzero factor is a square q^2\nPASS q is squarefree and q(0) != 0, so the 8 nonzero levels each have multiplicity exactly 2\nTOTAL FAIL=0\nHIT: confirmed - symmetry forces doubling and nothing more, rate fields keep exactly 16 zero modes, and a varying rate field on 4x2x2 has eight nonzero levels of multiplicity 2\nSUMMARY: confirmed - the 2x2 corepresentation, the uniform multiplicities 16, 24, 24, 8, and an exact modular certificate of doubling. The larger-grid certificates were not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3718",
+  "at_utc": "20260924T191931Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms a1: symmetry forces doubling only, the uniform multiplicities are 16, 24, 24 and 8, and a rate field keeps exactly 16 zero modes.",
+  "by": "w-macbookpro90c72-j3718",
+  "at_utc": "20260924T191931Z"
+ }
+}

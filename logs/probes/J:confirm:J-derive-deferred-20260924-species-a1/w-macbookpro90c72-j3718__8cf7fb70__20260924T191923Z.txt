@@ -1,0 +1,20 @@
+PASS the three even maps square to 1
+PASS the three even maps anticommute
+PASS V_110 V_011 = i V_101
+PASS sigma_y is pure imaginary
+PASS sigma_2 conj(sigma) sigma_2 = -sigma for [[0, 1], [1, 0]]
+PASS sigma_2 conj(sigma) sigma_2 = -sigma for [[0, -I], [I, 0]]
+PASS sigma_2 conj(sigma) sigma_2 = -sigma for [[1, 0], [0, -1]]
+PASS momentum shells {0: 8, 1: 24, 2: 24, 3: 8}
+PASS uniform 4x4x4 characteristic polynomial is E^16 (E^2-1)^24 (E^2-2)^24 (E^2-3)^8
+PASS the multiplicities add to the 128-dimensional space
+PASS eight species points times two coins is 16
+PASS Phi H Phi (Phi^{-1} psi) = Phi H psi, so the rate-field kernel is Phi^{-1} of the free kernel
+PASS free 4x2x2 walk has a zero of order 16
+PASS free 4x2x2 characteristic polynomial is E^16 (E^2-1)^8
+PASS a varying rate field on 4x2x2 still has zero of order exactly 16
+PASS the nonzero factor is a square q^2
+PASS q is squarefree and q(0) != 0, so the 8 nonzero levels each have multiplicity exactly 2
+TOTAL FAIL=0
+HIT: confirmed - symmetry forces doubling and nothing more, rate fields keep exactly 16 zero modes, and a varying rate field on 4x2x2 has eight nonzero levels of multiplicity 2
+SUMMARY: confirmed - the 2x2 corepresentation, the uniform multiplicities 16, 24, 24, 8, and an exact modular certificate of doubling. The larger-grid certificates were not rebuilt.

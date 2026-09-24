@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.py
+runner_sha256: 94b5e35cfcc4a67abd5ba5a013f4a4da3ab642659c3a1a575f8ca81a88ae665c
+input_fingerprint_sha256: 51343f7f3e9b819d2679180c11770dc5c960ca67b83c3fb8792b4f37b794fc56
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 376.00
+status: ok
+----- stdout -----
+== A. The exact L = 2 torus ==
+[PASS] all 2^24 arrow patterns give 9600 ice configurations, 880 at zero flux, in 125 winding sectors, <W^2> = 76/25 :: 9600, 880, 125, 76/25
+[PASS] the worm reproduces <W^2> and the zero-flux fraction within 4 standard errors and visits all 125 sectors :: <W^2> 3.0367 +- 0.0094 vs 3.04; zero flux 0.09155 +- 0.00065 vs 0.09167; sectors 125
+
+== B. The long-wavelength stiffness on L = 12 and L = 24 ==
+[PASS] every batch obeys the unit-field sum rule on both tori :: L=12: largest deviation 1.1e-11, L=24: largest deviation 7.3e-12
+[PASS] the smallest wavevectors give a stiffness 0.1% to 0.5% above K_L/2, by more than 3 standard errors on each torus :: L=12: 24 wavevectors, c = 0.33490 +- 0.00016 against K_L/2 = 0.333430, +0.44% +- 0.05% (9.1 standard errors); L=24: 24 wavevectors, c = 0.33437 +- 0.00021 against K_L/2 = 0.333345, +0.31% +- 0.06% (4.8 standard errors)
+
+== C. Size and winding ==
+[PASS] the offsets on L = 12 and L = 24 agree within 2 combined standard errors :: difference -0.13% +- 0.08%
+[PASS] each discrete winding fit lies within 1% of K_L/2; its side and its difference to the smallest wavevectors are printed, not claimed :: L=12: c_W = 0.33470 +- 0.00053, +0.38%, 2.4 standard errors; c_W - c = -0.00017 +- 0.00053; L=24: c_W = 0.33554 +- 0.00079, +0.66%, 2.8 standard errors; c_W - c = +0.00124 +- 0.00079
+
+== D. The zone profile on L = 24 ==
+[PASS] the inner half of the zone lies below 1 and the outer half above 1, each by more than 10 standard errors :: inner 0.99836 +- 0.00005, outer 1.00156 +- 0.00004; on L = 12 inner 0.99833 +- 0.00007, outer 1.00148 +- 0.00006
+
+time 376 s
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 14606,
- "node_count": 6645,
+ "edge_count": 14615,
+ "node_count": 6647,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3665,6 +3665,10 @@
   "cubic_ice_long_wavelength_stiffness_lies_measurably_above_the_unit_field_sum_rule_bounded_theorem_note_2026-09-24": {
    "deps_hash": "0be515997244",
    "out_degree": 4
+  },
+  "cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "8444af198b28",
+   "out_degree": 3
   },
   "cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_bounded_theorem_note_2026-09-14": {
    "deps_hash": "ebc2136e3686",
@@ -18369,6 +18373,10 @@
   "square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_bounded_theorem_note_2026-09-24": {
    "deps_hash": "d6f4878b8e48",
    "out_degree": 2
+  },
+  "square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "92ecef26d83f",
+   "out_degree": 6
   },
   "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08": {
    "deps_hash": "819463065356",

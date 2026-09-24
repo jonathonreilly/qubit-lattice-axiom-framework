@@ -1,0 +1,13 @@
+ok E1: int exp(beta cos theta) sin theta dtheta/2 = sinh(beta)/beta, so c0 = beta/sinh beta normalises one bond
+ok E2: phi'' = (sinh^2 x - x^2)/(x^2 sinh^2 x); sinh x - x vanishes with its first derivative at 0 and has second derivative sinh x > 0, so phi''>0
+ok E3: Z_1=1, Z_2=beta coth beta, opposite pair is c0^2<1, and at beta=2 the aligned values are [2.075, 5.637, 17.228, 56.158, 190.685]
+ok E4: the one-step content response along a pinned direction is L = coth beta - 1/beta
+ok E5: at beta=2, rho=1/2 the path amplitudes are [0.2687, 0.0722, 0.0194, 0.0052]
+ok C1: (1/m+1/(m+1))^2 = (2m+1)^2/(m(m+1))^2 <= 4/m^2
+ok C2: E(f_R)/R = 25.74, 24.48, 24.22, 24.12, 24.08, 24.06, 24.04, 24.03, each <= 48 and falling toward 24
+ok P1: all 216 axis-aligned boxes with sides <= 6 have no outside site touching two records
+ok P2: ball pockets (P2,P3) = {4: (24, 0), 25: (84, 56), 64: (228, 120), 144: (528, 272)}
+ok P3: the tree-level face excess starts at 5 rho (beta coth beta - 1) > 0
+ok C3: G(0)-G(e)=1/6, and a nearest pair carries 0.746 of two separate charges
+SUMMARY: confirmed - at the pinned scale no compact candidate has a far field proportional to N: pinned capacity is at most 48 R, a box produces no excess, and a ball's pockets scale as the surface.
+HIT: confirmed - Z = c0^k sinh(beta|S|)/(beta|S|) with c0=beta/sinh beta, Z_k>1 exactly for k>=2 aligned contents, and a pinned set is a Dirichlet condition with Cap(S)<=48 R inside a cube of half-side R; a box has no production pockets and a ball's pockets are O(R^2). Unpinned order, a density excess and a formation-rate region put nothing into the transverse channel.

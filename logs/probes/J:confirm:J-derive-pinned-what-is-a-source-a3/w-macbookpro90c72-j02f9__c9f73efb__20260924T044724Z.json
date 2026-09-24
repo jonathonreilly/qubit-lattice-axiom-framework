@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-pinned-what-is-a-source-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j02f9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/pinned-what-is-a-source/referee_w-macbookpro90c72-j02f9/check.py",
+ "seed": 25244,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c9f73efb",
+ "started_utc": "20260924T044724Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - at the pinned scale no compact candidate has a far field proportional to N: pinned capacity is at most 48 R, a box produces no excess, and a ball's pockets scale as the surface."
+ },
+ "review": "Independent checks confirm the pinned formation factor, the capacity bound Cap at most 48 R, and that a box has no production pockets while a ball has only a surface of them.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:pinned-what-is-a-source:a3/; its files are probes/work/derive/pinned-what-is-a-source/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/pinned-what-is-a-source/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "eba0a90fa34ca176cefe0dd649056e881a9f09d36dc30637a954b5c91fb4104b",
+ "stdout_tail": "x - x^2)/(x^2 sinh^2 x); sinh x - x vanishes with its first derivative at 0 and has second derivative sinh x > 0, so phi''>0\nok E3: Z_1=1, Z_2=beta coth beta, opposite pair is c0^2<1, and at beta=2 the aligned values are [2.075, 5.637, 17.228, 56.158, 190.685]\nok E4: the one-step content response along a pinned direction is L = coth beta - 1/beta\nok E5: at beta=2, rho=1/2 the path amplitudes are [0.2687, 0.0722, 0.0194, 0.0052]\nok C1: (1/m+1/(m+1))^2 = (2m+1)^2/(m(m+1))^2 <= 4/m^2\nok C2: E(f_R)/R = 25.74, 24.48, 24.22, 24.12, 24.08, 24.06, 24.04, 24.03, each <= 48 and falling toward 24\nok P1: all 216 axis-aligned boxes with sides <= 6 have no outside site touching two records\nok P2: ball pockets (P2,P3) = {4: (24, 0), 25: (84, 56), 64: (228, 120), 144: (528, 272)}\nok P3: the tree-level face excess starts at 5 rho (beta coth beta - 1) > 0\nok C3: G(0)-G(e)=1/6, and a nearest pair carries 0.746 of two separate charges\nSUMMARY: confirmed - at the pinned scale no compact candidate has a far field proportional to N: pinned capacity is at most 48 R, a box produces no excess, and a ball's pockets scale as the surface.\nHIT: confirmed - Z = c0^k sinh(beta|S|)/(beta|S|) with c0=beta/sinh beta, Z_k>1 exactly for k>=2 aligned contents, and a pinned set is a Dirichlet condition with Cap(S)<=48 R inside a cube of half-side R; a box has no production pockets and a ball's pockets are O(R^2). Unpinned order, a density excess and a formation-rate region put nothing into the transverse channel.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j02f9",
+  "at_utc": "20260924T044726Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

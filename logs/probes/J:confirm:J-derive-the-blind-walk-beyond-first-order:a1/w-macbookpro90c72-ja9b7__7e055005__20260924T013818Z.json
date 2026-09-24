@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-blind-walk-beyond-first-order:a1",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-ja9b7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-blind-walk-beyond-first-order/referee_w-macbookpro90c72-ja9b7/check.py",
+ "seed": 13898,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7e055005",
+ "started_utc": "20260924T013818Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed covariance, the exact conjugation, the order-2 expansion, the frame-weight gap, and the curl holonomy; the bond-reach parameter count was not re-enumerated"
+ },
+ "review": "The site link is exactly U sigma Udag, the second-order term matches, and the curl holonomy equals linearized R_0101.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "98204125a9842c267d51c8960af52ed3a26c15b9c6daa66900152219d7a2d6b0",
+ "stdout_tail": "ok cov: bond matrix transforms as U_x (M V) U_y^T\nok exact: M V = U_x sigma_a U_y^dag exactly\nok order2: expansion through second order matches the bond-averaged frame plus the stated quadratic term\nok frame: naive theta\u00b7E difference exceeds E(x)\u00b7(theta_y-theta_x) by theta_y\u00b7(E(y)-E(x))\nok curl: plaquette normal equals linearized R_0101 (k0*(k0*s11 - k1*s01) - k1*(k0*s01 - k1*s00))\nHIT: confirmed - the site-link bond is exactly U H Udag, its second-order term is (1/4)(theta_x\u00b7sigma) sigma_a (theta_y\u00b7sigma) minus the squared-angle piece, and -curl(s e_a) reproduces R_0101\nSUMMARY: confirmed covariance, the exact conjugation, the order-2 expansion, the frame-weight gap, and the curl holonomy; the bond-reach parameter count was not re-enumerated\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja9b7",
+  "at_utc": "20260924T013824Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact conjugation, the second-order bond term, and the curl holonomy equal to R_0101 all match independent Pauli algebra.",
+  "by": "w-macbookpro90c72-ja9b7",
+  "at_utc": "20260924T013824Z"
+ }
+}

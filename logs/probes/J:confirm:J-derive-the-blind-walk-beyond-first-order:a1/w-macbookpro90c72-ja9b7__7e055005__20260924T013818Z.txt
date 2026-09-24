@@ -1,0 +1,7 @@
+ok cov: bond matrix transforms as U_x (M V) U_y^T
+ok exact: M V = U_x sigma_a U_y^dag exactly
+ok order2: expansion through second order matches the bond-averaged frame plus the stated quadratic term
+ok frame: naive theta·E difference exceeds E(x)·(theta_y-theta_x) by theta_y·(E(y)-E(x))
+ok curl: plaquette normal equals linearized R_0101 (k0*(k0*s11 - k1*s01) - k1*(k0*s01 - k1*s00))
+HIT: confirmed - the site-link bond is exactly U H Udag, its second-order term is (1/4)(theta_x·sigma) sigma_a (theta_y·sigma) minus the squared-angle piece, and -curl(s e_a) reproduces R_0101
+SUMMARY: confirmed covariance, the exact conjugation, the order-2 expansion, the frame-weight gap, and the curl holonomy; the bond-reach parameter count was not re-enumerated

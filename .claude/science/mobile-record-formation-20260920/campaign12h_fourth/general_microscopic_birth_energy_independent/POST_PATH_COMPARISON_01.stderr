@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_path_compare.py", line 107, in <module>
+    result={'independent_path_engine':'Frozen PRE path_engine.py; author Python not imported or run','author_case_count':len(source['rows']),'independent_rows':rows,'numeric_fields_compared':len(diffs),'largest_absolute_difference':max(x['absolute_difference'] for x in diffs),'largest_relative_difference':max(x['relative_difference'] for x in diffs),'all_numeric_comparisons':diffs,'symbolic':symbolic(),'all_assertions_passed':True}
+                                                                                                                                                                                                                                                                                                                                                                                                           ~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_path_compare.py", line 89, in symbolic
+    assert sp.factor(sp.diff(F0,t))==-24*(t-1)*(4*t-7)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

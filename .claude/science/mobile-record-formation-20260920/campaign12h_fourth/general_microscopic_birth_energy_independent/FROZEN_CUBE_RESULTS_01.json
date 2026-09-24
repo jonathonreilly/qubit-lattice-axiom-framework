@@ -1,0 +1,987 @@
+{
+  "created_utc": "2026-09-24T03:07:33.631789+00:00",
+  "runner_sha256": "5691cef2de71c8257b99045da964f72bd84421e536db3b619721fb65188601ec",
+  "matrix_source_sha256": "3f28827bda4296e29c9a78e9ffc089b6a29465941ca969f1e29ad809451da847",
+  "status": "completed",
+  "checks": [
+    {
+      "name": "weighted u=1.0 sign=-1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=None exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=-1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=None exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=-1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=-1 finite canonical mean",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=-1 finite canonical variance",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=1 finite canonical mean",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=1 finite canonical variance",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=None exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=None finite canonical mean",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 sign=None finite canonical variance",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 resolved full GKLS energy derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 resolved full GKLS variance derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 coherent full GKLS energy derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=1.0 coherent full GKLS variance derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=-1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=None exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=-1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=None exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=-1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=-1 finite canonical mean",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=-1 finite canonical variance",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=1 finite canonical mean",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=1 finite canonical variance",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=None exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=None finite canonical mean",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 sign=None finite canonical variance",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 resolved full GKLS energy derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 resolved full GKLS variance derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 coherent full GKLS energy derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.75 coherent full GKLS variance derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=-1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=None exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=-1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=None exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=-1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=-1 finite canonical mean",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=-1 finite canonical variance",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=1 exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=1 finite canonical mean",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=1 finite canonical variance",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=None exact leading mean identity",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=None finite canonical mean",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 sign=None finite canonical variance",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 resolved full GKLS energy derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 resolved full GKLS variance derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 coherent full GKLS energy derivative",
+      "passed": true
+    },
+    {
+      "name": "weighted u=0.25 coherent full GKLS variance derivative",
+      "passed": true
+    },
+    {
+      "name": "all complete matrix checks passed",
+      "passed": true
+    }
+  ],
+  "scope": "Complete weighted charge Fourier fibers; physical fixed-field and moving-field coefficients separately reconstructed by independent paths.",
+  "conditional_rows": [
+    {
+      "u": 1.0,
+      "epsilon": 0.02,
+      "sign": -1,
+      "expected_mean_scaled": 1.0,
+      "mean_scaled": 0.9887932637446168,
+      "expected_fast_variance_scaled": 1.0,
+      "variance_scaled": 0.9996076206162435,
+      "expected_intensity_over_kappa": 2.0,
+      "intensity_over_kappa": 2.009566213836457
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.02,
+      "sign": 1,
+      "expected_mean_scaled": 2.0,
+      "mean_scaled": 1.9863848203998882,
+      "expected_fast_variance_scaled": 2.0,
+      "variance_scaled": 1.9984044531235374,
+      "expected_intensity_over_kappa": 2.0,
+      "intensity_over_kappa": 2.009566213836457
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.02,
+      "sign": null,
+      "expected_mean_scaled": 1.5,
+      "mean_scaled": 1.487589042072252,
+      "expected_fast_variance_scaled": 1.5,
+      "variance_scaled": 1.4991033207925812,
+      "expected_intensity_over_kappa": 4.0,
+      "intensity_over_kappa": 4.019132427672914
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.01,
+      "sign": -1,
+      "expected_mean_scaled": 1.0,
+      "mean_scaled": 0.9971995722371786,
+      "expected_fast_variance_scaled": 1.0,
+      "variance_scaled": 0.9999004715726243,
+      "expected_intensity_over_kappa": 2.0,
+      "intensity_over_kappa": 2.0023979120947297
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.01,
+      "sign": 1,
+      "expected_mean_scaled": 2.0,
+      "mean_scaled": 1.9965990428048643,
+      "expected_fast_variance_scaled": 2.0,
+      "variance_scaled": 1.9996002720776085,
+      "expected_intensity_over_kappa": 2.0,
+      "intensity_over_kappa": 2.0023979120947297
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.01,
+      "sign": null,
+      "expected_mean_scaled": 1.5,
+      "mean_scaled": 1.496899307521021,
+      "expected_fast_variance_scaled": 1.5,
+      "variance_scaled": 1.499775201885314,
+      "expected_intensity_over_kappa": 4.0,
+      "intensity_over_kappa": 4.0047958241894595
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.005,
+      "sign": -1,
+      "expected_mean_scaled": 1.0,
+      "mean_scaled": 0.9992999731599217,
+      "expected_fast_variance_scaled": 1.0,
+      "variance_scaled": 0.9999750293995738,
+      "expected_intensity_over_kappa": 2.0,
+      "intensity_over_kappa": 2.0005998698764973
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.005,
+      "sign": 1,
+      "expected_mean_scaled": 2.0,
+      "mean_scaled": 1.999149940043772,
+      "expected_fast_variance_scaled": 2.0,
+      "variance_scaled": 1.9999000169074523,
+      "expected_intensity_over_kappa": 2.0,
+      "intensity_over_kappa": 2.0005998698764973
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.005,
+      "sign": null,
+      "expected_mean_scaled": 1.5,
+      "mean_scaled": 1.4992249566018474,
+      "expected_fast_variance_scaled": 1.5,
+      "variance_scaled": 1.4999437625294503,
+      "expected_intensity_over_kappa": 4.0,
+      "intensity_over_kappa": 4.001199739752995
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.02,
+      "sign": -1,
+      "expected_mean_scaled": 1.1428571428571428,
+      "mean_scaled": 1.1319615708857171,
+      "expected_fast_variance_scaled": 0.8571428571428571,
+      "variance_scaled": 0.8567575626506001,
+      "expected_intensity_over_kappa": 1.3124999999999998,
+      "intensity_over_kappa": 1.319665056036828
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.02,
+      "sign": 1,
+      "expected_mean_scaled": 2.0,
+      "mean_scaled": 1.987113964904955,
+      "expected_fast_variance_scaled": 1.7142857142857142,
+      "variance_scaled": 1.712893844030206,
+      "expected_intensity_over_kappa": 1.3124999999999998,
+      "intensity_over_kappa": 1.319665056036828
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.02,
+      "sign": null,
+      "expected_mean_scaled": 1.5714285714285712,
+      "mean_scaled": 1.5595377678953355,
+      "expected_fast_variance_scaled": 1.2857142857142856,
+      "variance_scaled": 1.284897268838775,
+      "expected_intensity_over_kappa": 2.6249999999999996,
+      "intensity_over_kappa": 2.639330112073656
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.01,
+      "sign": -1,
+      "expected_mean_scaled": 1.1428571428571428,
+      "mean_scaled": 1.14013441729148,
+      "expected_fast_variance_scaled": 0.8571428571428571,
+      "variance_scaled": 0.8570452517065563,
+      "expected_intensity_over_kappa": 1.3124999999999998,
+      "intensity_over_kappa": 1.3142937929945482
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.01,
+      "sign": 1,
+      "expected_mean_scaled": 2.0,
+      "mean_scaled": 1.9967808794672663,
+      "expected_fast_variance_scaled": 1.7142857142857142,
+      "variance_scaled": 1.7139368804344732,
+      "expected_intensity_over_kappa": 1.3124999999999998,
+      "intensity_over_kappa": 1.3142937929945482
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.01,
+      "sign": null,
+      "expected_mean_scaled": 1.5714285714285712,
+      "mean_scaled": 1.5684576483793742,
+      "expected_fast_variance_scaled": 1.2857142857142856,
+      "variance_scaled": 1.2855093143301213,
+      "expected_intensity_over_kappa": 2.6249999999999996,
+      "intensity_over_kappa": 2.6285875859890964
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.005,
+      "sign": -1,
+      "expected_mean_scaled": 1.1428571428571428,
+      "mean_scaled": 1.1421765358446339,
+      "expected_fast_variance_scaled": 0.8571428571428571,
+      "variance_scaled": 0.8571183766410809,
+      "expected_intensity_over_kappa": 1.3124999999999998,
+      "intensity_over_kappa": 1.3129486026627164
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.005,
+      "sign": 1,
+      "expected_mean_scaled": 2.0,
+      "mean_scaled": 1.9991953708385477,
+      "expected_fast_variance_scaled": 1.7142857142857142,
+      "variance_scaled": 1.7141984529136787,
+      "expected_intensity_over_kappa": 1.3124999999999998,
+      "intensity_over_kappa": 1.3129486026627164
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.005,
+      "sign": null,
+      "expected_mean_scaled": 1.5714285714285712,
+      "mean_scaled": 1.5706859533415913,
+      "expected_fast_variance_scaled": 1.2857142857142856,
+      "variance_scaled": 1.285662999169725,
+      "expected_intensity_over_kappa": 2.6249999999999996,
+      "intensity_over_kappa": 2.625897205325433
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.02,
+      "sign": -1,
+      "expected_mean_scaled": 1.6,
+      "mean_scaled": 1.5907122893705041,
+      "expected_fast_variance_scaled": 0.4,
+      "variance_scaled": 0.40002301567638726,
+      "expected_intensity_over_kappa": 0.3125,
+      "intensity_over_kappa": 0.31450067799459247
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.02,
+      "sign": 1,
+      "expected_mean_scaled": 2.0,
+      "mean_scaled": 1.9900707631931966,
+      "expected_fast_variance_scaled": 0.8,
+      "variance_scaled": 0.7997670668475356,
+      "expected_intensity_over_kappa": 0.3125,
+      "intensity_over_kappa": 0.31450067799459247
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.02,
+      "sign": null,
+      "expected_mean_scaled": 1.7999999999999998,
+      "mean_scaled": 1.7903915262818497,
+      "expected_fast_variance_scaled": 0.6,
+      "variance_scaled": 0.5999106340601634,
+      "expected_intensity_over_kappa": 0.625,
+      "intensity_over_kappa": 0.6290013559891849
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.01,
+      "sign": -1,
+      "expected_mean_scaled": 1.6,
+      "mean_scaled": 1.59767951460282,
+      "expected_fast_variance_scaled": 0.4,
+      "variance_scaled": 0.4000044356440943,
+      "expected_intensity_over_kappa": 0.3125,
+      "intensity_over_kappa": 0.3130000452843012
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.01,
+      "sign": 1,
+      "expected_mean_scaled": 2.0,
+      "mean_scaled": 1.997519418980796,
+      "expected_fast_variance_scaled": 0.8,
+      "variance_scaled": 0.7999404384308891,
+      "expected_intensity_over_kappa": 0.3125,
+      "intensity_over_kappa": 0.3130000452843012
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.01,
+      "sign": null,
+      "expected_mean_scaled": 1.7999999999999998,
+      "mean_scaled": 1.7975994667918076,
+      "expected_fast_variance_scaled": 0.6,
+      "variance_scaled": 0.5999764115873429,
+      "expected_intensity_over_kappa": 0.625,
+      "intensity_over_kappa": 0.6260000905686024
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.005,
+      "sign": -1,
+      "expected_mean_scaled": 1.6,
+      "mean_scaled": 1.5994199696086138,
+      "expected_fast_variance_scaled": 0.4,
+      "variance_scaled": 0.4000010271834979,
+      "expected_intensity_over_kappa": 0.3125,
+      "intensity_over_kappa": 0.3126250028755483
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.005,
+      "sign": 1,
+      "expected_mean_scaled": 2.0,
+      "mean_scaled": 1.99937996362858,
+      "expected_fast_variance_scaled": 0.8,
+      "variance_scaled": 0.7999850273512588,
+      "expected_intensity_over_kappa": 0.3125,
+      "intensity_over_kappa": 0.3126250028755483
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.005,
+      "sign": null,
+      "expected_mean_scaled": 1.7999999999999998,
+      "mean_scaled": 1.7993999666185976,
+      "expected_fast_variance_scaled": 0.6,
+      "variance_scaled": 0.5999940256767508,
+      "expected_intensity_over_kappa": 0.625,
+      "intensity_over_kappa": 0.6252500057510966
+    }
+  ],
+  "full_GKLS_balances": [
+    {
+      "u": 1.0,
+      "epsilon": 0.02,
+      "instrument": "resolved",
+      "rate_over_kappa": 48.22958913207493,
+      "expected_rate": 48.0,
+      "epsilon2_energy_derivative_over_kappa_delta": 73.83077651477247,
+      "expected_energy_derivative": 72.0,
+      "epsilon6_variance_derivative_over_kappa_delta2": 72.34645364536703,
+      "expected_variance_derivative": 72.0
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.02,
+      "instrument": "coherent",
+      "rate_over_kappa": 48.22958913207493,
+      "expected_rate": 48.0,
+      "epsilon2_energy_derivative_over_kappa_delta": 73.83077651477245,
+      "expected_energy_derivative": 72.0,
+      "epsilon6_variance_derivative_over_kappa_delta2": 72.34634585374492,
+      "expected_variance_derivative": 72.0
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.01,
+      "instrument": "resolved",
+      "rate_over_kappa": 48.05754989027358,
+      "expected_rate": 48.0,
+      "epsilon2_energy_derivative_over_kappa_delta": 72.45642646965742,
+      "expected_energy_derivative": 72.0,
+      "epsilon6_variance_derivative_over_kappa_delta2": 72.086452577072,
+      "expected_variance_derivative": 72.0
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.01,
+      "instrument": "coherent",
+      "rate_over_kappa": 48.05754989027356,
+      "expected_rate": 48.0,
+      "epsilon2_energy_derivative_over_kappa_delta": 72.45642646965743,
+      "expected_energy_derivative": 72.0,
+      "epsilon6_variance_derivative_over_kappa_delta2": 72.08644585274685,
+      "expected_variance_derivative": 72.0
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.005,
+      "instrument": "resolved",
+      "rate_over_kappa": 48.01439687703593,
+      "expected_rate": 48.0,
+      "epsilon2_energy_derivative_over_kappa_delta": 72.1140266993212,
+      "expected_energy_derivative": 72.0,
+      "epsilon6_variance_derivative_over_kappa_delta2": 72.02160327352647,
+      "expected_variance_derivative": 72.0
+    },
+    {
+      "u": 1.0,
+      "epsilon": 0.005,
+      "instrument": "coherent",
+      "rate_over_kappa": 48.01439687703595,
+      "expected_rate": 48.0,
+      "epsilon2_energy_derivative_over_kappa_delta": 72.11402669932119,
+      "expected_energy_derivative": 72.0,
+      "epsilon6_variance_derivative_over_kappa_delta2": 72.02160285345857,
+      "expected_variance_derivative": 72.0
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.02,
+      "instrument": "resolved",
+      "rate_over_kappa": 40.707359740784305,
+      "expected_rate": 40.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 39.12775238008078,
+      "expected_energy_derivative": 37.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 56.523662723683366,
+      "expected_variance_derivative": 56.25
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.02,
+      "instrument": "coherent",
+      "rate_over_kappa": 40.70735974078431,
+      "expected_rate": 40.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 39.12775238008076,
+      "expected_energy_derivative": 37.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 56.52358703237563,
+      "expected_variance_derivative": 56.25
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.01,
+      "instrument": "resolved",
+      "rate_over_kappa": 40.55193852633413,
+      "expected_rate": 40.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 38.09319308622889,
+      "expected_energy_derivative": 37.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 56.31837143228693,
+      "expected_variance_derivative": 56.25
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.01,
+      "instrument": "coherent",
+      "rate_over_kappa": 40.551938526334126,
+      "expected_rate": 40.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 38.093193086228894,
+      "expected_energy_derivative": 37.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 56.31836671395869,
+      "expected_variance_derivative": 56.25
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.005,
+      "instrument": "resolved",
+      "rate_over_kappa": 40.512990683790996,
+      "expected_rate": 40.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 37.83572006049958,
+      "expected_energy_derivative": 37.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 56.2670902012913,
+      "expected_variance_derivative": 56.25
+    },
+    {
+      "u": 0.75,
+      "epsilon": 0.005,
+      "instrument": "coherent",
+      "rate_over_kappa": 40.51299068379099,
+      "expected_rate": 40.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 37.83572006049958,
+      "expected_energy_derivative": 37.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 56.267089906591984,
+      "expected_variance_derivative": 56.25
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.02,
+      "instrument": "resolved",
+      "rate_over_kappa": 28.64895253995003,
+      "expected_rate": 28.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 7.4957650007627326,
+      "expected_energy_derivative": 6.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 38.442202637792995,
+      "expected_variance_derivative": 38.25
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.02,
+      "instrument": "coherent",
+      "rate_over_kappa": 28.648952539950034,
+      "expected_rate": 28.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 7.4957650007627326,
+      "expected_energy_derivative": 6.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 38.442168220384666,
+      "expected_variance_derivative": 38.25
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.01,
+      "instrument": "resolved",
+      "rate_over_kappa": 28.537284808565047,
+      "expected_rate": 28.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 6.935604612736481,
+      "expected_energy_derivative": 6.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 38.29809697675175,
+      "expected_variance_derivative": 38.25
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.01,
+      "instrument": "coherent",
+      "rate_over_kappa": 28.537284808565047,
+      "expected_rate": 28.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 6.935604612736483,
+      "expected_energy_derivative": 6.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 38.29809483349887,
+      "expected_variance_derivative": 38.25
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.005,
+      "instrument": "resolved",
+      "rate_over_kappa": 28.509324054821846,
+      "expected_rate": 28.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 6.796348734354456,
+      "expected_energy_derivative": 6.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 38.26202715393199,
+      "expected_variance_derivative": 38.25
+    },
+    {
+      "u": 0.25,
+      "epsilon": 0.005,
+      "instrument": "coherent",
+      "rate_over_kappa": 28.509324054821846,
+      "expected_rate": 28.5,
+      "epsilon2_energy_derivative_over_kappa_delta": 6.796348734354449,
+      "expected_energy_derivative": 6.75,
+      "epsilon6_variance_derivative_over_kappa_delta2": 38.262027020101826,
+      "expected_variance_derivative": 38.25
+    }
+  ],
+  "matrix_checks": [
+    {
+      "name": "matrix n=8 N=4 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 separated",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "passed": 58,
+    "failed": 0,
+    "supporting_matrix_checks": 60
+  }
+}

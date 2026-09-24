@@ -1,0 +1,503 @@
+{
+  "created_utc": "2026-09-24T03:03:39.181354+00:00",
+  "runner_sha256": "af13f89f9e534c53414e9d56b56f008f03a9e1d3024e8f68aabfb10efa13130f",
+  "status": "completed",
+  "checks": [
+    {
+      "name": "S=1 n=0 leakage grade one",
+      "passed": true
+    },
+    {
+      "name": "S=1 n=0 Gauss",
+      "passed": true
+    },
+    {
+      "name": "S=1 zero flux exact next variance coefficient",
+      "passed": true
+    },
+    {
+      "name": "S=2 n=0 leakage grade one",
+      "passed": true
+    },
+    {
+      "name": "S=2 n=0 Gauss",
+      "passed": true
+    },
+    {
+      "name": "S=2 zero flux exact next variance coefficient",
+      "passed": true
+    },
+    {
+      "name": "S=4 n=0 leakage grade one",
+      "passed": true
+    },
+    {
+      "name": "S=4 n=0 Gauss",
+      "passed": true
+    },
+    {
+      "name": "S=4 zero flux exact next variance coefficient",
+      "passed": true
+    },
+    {
+      "name": "S=8 n=0 leakage grade one",
+      "passed": true
+    },
+    {
+      "name": "S=8 n=0 Gauss",
+      "passed": true
+    },
+    {
+      "name": "S=8 zero flux exact next variance coefficient",
+      "passed": true
+    },
+    {
+      "name": "S=2 n=1 leakage grade one",
+      "passed": true
+    },
+    {
+      "name": "S=2 n=1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "S=4 n=2 leakage grade one",
+      "passed": true
+    },
+    {
+      "name": "S=4 n=2 Gauss",
+      "passed": true
+    },
+    {
+      "name": "symbolic C zero flux higher coefficient",
+      "passed": true
+    },
+    {
+      "name": "symbolic Gauss support",
+      "passed": true
+    },
+    {
+      "name": "normalizable rotor coefficient is two",
+      "passed": true
+    },
+    {
+      "name": "matrix contrast S=1 n=0",
+      "passed": true
+    },
+    {
+      "name": "matrix contrast S=2 n=1",
+      "passed": true
+    },
+    {
+      "name": "matrix contrast S=4 n=2",
+      "passed": true
+    }
+  ],
+  "finite_spin_coefficients": [
+    {
+      "S": 1,
+      "n": 0,
+      "weight": "1",
+      "higher_leakage_squared_over_weight": "1",
+      "support": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "amplitude": "-1"
+        }
+      ]
+    },
+    {
+      "S": 2,
+      "n": 0,
+      "weight": "1",
+      "higher_leakage_squared_over_weight": "5/3",
+      "support": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "amplitude": "-1"
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -2,
+            0,
+            0,
+            1,
+            1
+          ],
+          "amplitude": "-sqrt(6)/3"
+        }
+      ]
+    },
+    {
+      "S": 4,
+      "n": 0,
+      "weight": "1",
+      "higher_leakage_squared_over_weight": "19/10",
+      "support": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "amplitude": "-1"
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -2,
+            0,
+            0,
+            1,
+            1
+          ],
+          "amplitude": "-3*sqrt(10)/10"
+        }
+      ]
+    },
+    {
+      "S": 8,
+      "n": 0,
+      "weight": "1",
+      "higher_leakage_squared_over_weight": "71/36",
+      "support": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "amplitude": "-1"
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -2,
+            0,
+            0,
+            1,
+            1
+          ],
+          "amplitude": "-sqrt(35)/6"
+        }
+      ]
+    },
+    {
+      "S": 2,
+      "n": 1,
+      "weight": "4/9",
+      "higher_leakage_squared_over_weight": "44/27",
+      "support": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -2,
+            0,
+            0,
+            1,
+            1
+          ],
+          "amplitude": "-sqrt(6)/3"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            2,
+            -2,
+            1,
+            0,
+            1,
+            1
+          ],
+          "amplitude": "2/9"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            2,
+            -2,
+            1,
+            1,
+            2,
+            1
+          ],
+          "amplitude": "sqrt(6)/27"
+        }
+      ]
+    },
+    {
+      "S": 4,
+      "n": 2,
+      "weight": "49/100",
+      "higher_leakage_squared_over_weight": "1087/875",
+      "support": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            2,
+            -3,
+            1,
+            1,
+            2,
+            2
+          ],
+          "amplitude": "-81*sqrt(70)/1000"
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            3,
+            -4,
+            2,
+            2,
+            3,
+            3
+          ],
+          "amplitude": "-49*sqrt(10)/500"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            3,
+            -3,
+            2,
+            1,
+            2,
+            2
+          ],
+          "amplitude": "63*sqrt(10)/1000"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            3,
+            -3,
+            2,
+            2,
+            3,
+            2
+          ],
+          "amplitude": "7*sqrt(70)/500"
+        }
+      ]
+    }
+  ],
+  "symbolic_zero_flux": {
+    "substitution": "C=2/(1-t^2), 0<=t<1",
+    "coefficient": "t**2 + 1",
+    "equal_to": "2-2/C",
+    "support": [
+      {
+        "q": [
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "E": [
+          0,
+          -1,
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "amplitude": "-1"
+      },
+      {
+        "q": [
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "E": [
+          1,
+          -2,
+          0,
+          0,
+          1,
+          1
+        ],
+        "amplitude": "-t"
+      }
+    ]
+  },
+  "normalizable_rotor": {
+    "coefficient": "2",
+    "support": [
+      {
+        "q": [
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "E": [
+          0,
+          -1,
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "amplitude": "-1"
+      },
+      {
+        "q": [
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "E": [
+          1,
+          -2,
+          0,
+          0,
+          1,
+          1
+        ],
+        "amplitude": "-1"
+      }
+    ]
+  },
+  "summary": {
+    "passed": 22,
+    "failed": 0
+  }
+}

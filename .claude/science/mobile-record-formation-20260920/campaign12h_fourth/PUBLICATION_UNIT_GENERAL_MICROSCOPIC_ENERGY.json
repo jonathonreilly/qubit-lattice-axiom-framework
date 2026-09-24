@@ -1,0 +1,766 @@
+{
+  "created_utc": "2026-09-24T03:56:50.785233+00:00",
+  "base_pr": 8936,
+  "base_commit": "69462972e8ef9585bdd8d85969e31c7b0b3638c3",
+  "claim_status": "provisional review proposal; no audit verdict",
+  "seals": [
+    {
+      "path": "general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "sha256": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/PRE_SEAL.json",
+      "sha256": "26fd1a7c0a4a5675c357508e6ae70253eebe8ae1d0690743abdcb06ec8c78c5f"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/FINAL_COMPARISON_SEAL.json",
+      "sha256": "9e85bfa3c1f20ababdb5e4b368d865a01c3f5f4d1c0f728deff684f0d3ea6596"
+    }
+  ],
+  "explicit_omissions": [
+    {
+      "path": "general_microscopic_birth_energy_independent/instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "reason": "Historical instruction snapshot; original private seal binding retained."
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/instructions/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "reason": "Historical instruction snapshot; original private seal binding retained."
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/instructions/planning_AGENTS.md",
+      "bytes": 10164,
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "reason": "Historical instruction snapshot; original private seal binding retained."
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/instructions/repository_AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "reason": "Historical instruction snapshot; original private seal binding retained."
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/instructions/workhorse_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "reason": "Historical instruction snapshot; original private seal binding retained."
+    }
+  ],
+  "sources": [
+    {
+      "path": "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "bytes": 12525,
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617"
+    },
+    {
+      "path": "field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "bytes": 2455,
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+    },
+    {
+      "path": "high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md",
+      "bytes": 9237,
+      "sha256": "de24a51431ba27f10d178286da2c95cc69081b06a9058d225d4840e3225388c0"
+    },
+    {
+      "path": "microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "bytes": 9368,
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c"
+    },
+    {
+      "path": "../campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "GENERAL_MICROSCOPIC_ENERGY_PUBLICATION_README.md",
+      "bytes": 2771,
+      "sha256": "80a6c3fcc98488c436e5c432cdc993b0920c90fc8314a20b1eaf1222d74b41c8"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "bytes": 4954,
+      "sha256": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/COMPLETE_TWO_CENTER.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/COMPLETE_TWO_CENTER.stdout",
+      "bytes": 983,
+      "sha256": "ff429e9b274555847d40c252b1a74db038985de78db38f601e0b58abd6b43107"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/COMPLETE_TWO_CENTER_RESULTS.json",
+      "bytes": 195815,
+      "sha256": "aae211583a95b185f09fc5aadba13bf6f8e0712b3bbfc2fb8d546f243e0d00b1"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/DERIVATION_PLAN.md",
+      "bytes": 6765,
+      "sha256": "28c5b295e5869073e62f82f62a5a8136e6d0266b41d167cf28b40e193ac7067a"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/DEVELOPMENT_AND_SCOPE.md",
+      "bytes": 2391,
+      "sha256": "c77ef145c12febcc9df27e660b2f8b18b392611c447a3621df8058aa7dc466b3"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/EXECUTION_RECEIPT.json",
+      "bytes": 1065,
+      "sha256": "c5264dac519fcfbc0df6637d50b2a652fa377926e98ed654b9a98edfd8580302"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "bytes": 14834,
+      "sha256": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/LOCAL_LEAKAGE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/LOCAL_LEAKAGE.stdout",
+      "bytes": 187,
+      "sha256": "fc57a82bcbbac97acc3215465a28c15236f2f5cb4711066aaf14c2c1dacf564b"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/LOCAL_LEAKAGE_RESULTS.json",
+      "bytes": 78503,
+      "sha256": "7bb43ba4f6bf37490c52413eb68f5f2d970c3d095d6be44dbcaa46094b8a3a06"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/complete_two_center_control.py",
+      "bytes": 8515,
+      "sha256": "1417a8ac223f888891d2c19b9796096137a7f75e938a1174e999446082dbf00a"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/local_leakage_control.py",
+      "bytes": 7818,
+      "sha256": "b7d38235d4521f98fc42f23c414649e1e2553b53ec9e3cd9d834a43cdc1c6c00"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/CUBE_FINITE_PART_DIAGNOSTIC_01.log",
+      "bytes": 496,
+      "sha256": "551399fb072f75e637acc0d3dc39f7f5f37e0647a8811188b87cf052f6bc2036"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/CUBE_FINITE_PART_DIAGNOSTIC_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/CUBE_SUBLEADING_RESULTS_01.json",
+      "bytes": 275157,
+      "sha256": "38a0849199bd6649a6ae9524b3fa16480c0901f7508a8d9c85a5086f8f727386"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/CUBE_SUBLEADING_RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/CUBE_SUBLEADING_RUN_01.stdout.log",
+      "bytes": 275,
+      "sha256": "16c5ff164672ec9d8912f4f844d1d959e7b1dd971d85ab2ae19708b0daba4c51"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/CUBE_VARIANCE_PART_DIAGNOSTIC_01.log",
+      "bytes": 363,
+      "sha256": "b3d1609caad959e76d51e24bb5f6749b14c8513d0769d9c5e0151ecca9533edb"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/CUBE_VARIANCE_PART_DIAGNOSTIC_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/DEVELOPMENT_RECORD.md",
+      "bytes": 2606,
+      "sha256": "930b3615400c9e5ce697a607f5553f04d4d427272503a44e53ddb0d11c08e62f"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/EVIDENCE_AUTHENTICATION.json",
+      "bytes": 2289,
+      "sha256": "99665bf5546844e70d3c0fe372d5a3d8df9e50899e16c7debd53f9c32957b6e9"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/FINAL_COMPARISON_SEAL.json",
+      "bytes": 18317,
+      "sha256": "9e85bfa3c1f20ababdb5e4b368d865a01c3f5f4d1c0f728deff684f0d3ea6596"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/FROZEN_CUBE_RESULTS_01.json",
+      "bytes": 28843,
+      "sha256": "aa6c31b3bac73c877f9a49ada80d069450748591782059343944f49bed4c4ec2"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/FROZEN_CUBE_RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/FROZEN_CUBE_RUN_01.stdout.log",
+      "bytes": 303,
+      "sha256": "7570af263f17ed8a6dda77542adb3561cd89881b7dc872dbe3c96d9a02eb8e27"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/INTEGRITY_SELF_TEST.json",
+      "bytes": 214,
+      "sha256": "dfc1b9020cf46cb397c15475c353722e0c03f684b3e89f5c1c2fcff00f24e147"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/MATRIX_RESULTS_01.json",
+      "bytes": 43872,
+      "sha256": "21cd18633703dda9ffd289a186c9477a278b43b5c0cee6b98a2dd1d78e3b9d2e"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/MATRIX_RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/MATRIX_RUN_01.stdout.log",
+      "bytes": 267,
+      "sha256": "e75a946c3317130d794790f70c6d663f015dbbb3120bc9713405286a8e2ecf13"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/PATH_RESULTS_01.json",
+      "bytes": 44711,
+      "sha256": "dea830df206b5d894f48badd5b6fc3f4e62592c4ab35cbb003efe16d2c6a1d4d"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/PATH_RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/PATH_RUN_01.stdout.log",
+      "bytes": 265,
+      "sha256": "9c73e097a3b3b8786088f0ef84133ea4764bd6c8de62dddf5db6643e33d85b34"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_AUTHENTICATION.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_AUTHENTICATION.stdout",
+      "bytes": 1829,
+      "sha256": "a59dfde971b5dc55a65b4313a72e5102d5bab801079e6a4d048a13a86c07169f"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_COMPLETE_K24_01.stderr",
+      "bytes": 2316,
+      "sha256": "6ae3c2bd1c2ab1b7961108a916e4ec7ce5c0111db62ea359b2b4cc5d1a60c4af"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_COMPLETE_K24_01.stdout",
+      "bytes": 7626,
+      "sha256": "cfdccedb10d2453cf7e67b8e2c4b48f4da7242695535b05f38cb603bba96f20c"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_COMPLETE_K24_RESULTS_01.json",
+      "bytes": 2155786,
+      "sha256": "1fd49775e18376697350850b316cafccbb0fd0694fdd8d35057ced55c267ff2d"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_DEVELOPMENT_RECORD.md",
+      "bytes": 4990,
+      "sha256": "0e580ec033ca7a2a86759260a9951438fc1fba95a3e0493400113af87447ab5c"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_EXECUTION_RECEIPT.json",
+      "bytes": 2321,
+      "sha256": "9bed8f61560c76fbbdf4ae5097691210b2a865e8d53fe49f1d86903a69656531"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_GENERAL_MICROSCOPIC_COMPARISON.md",
+      "bytes": 22750,
+      "sha256": "6fc6cbfe124668aaeddca9a5c5f2f1b48166cb817b91bbaf3ed79209c5524959"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_INTEGRITY_SELF_TEST.json",
+      "bytes": 214,
+      "sha256": "dfc1b9020cf46cb397c15475c353722e0c03f684b3e89f5c1c2fcff00f24e147"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_PATH_COMPARISON_01.stderr",
+      "bytes": 1465,
+      "sha256": "17bf9331bb0185f48b2ca6f92425ccb19961add6cafc5dedd2afab8d4ee038ce"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_PATH_COMPARISON_01.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_PATH_COMPARISON_02.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_PATH_COMPARISON_02.stdout",
+      "bytes": 1317,
+      "sha256": "a45a60ae840ac2921005cb5c59d9be3573fe025da467cb73df2dc6f8e236d461"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_PATH_COMPARISON_RESULTS.json",
+      "bytes": 260434,
+      "sha256": "b98174c341ed9e555daa14356d27056a236c28fee9b190e2ee8f0caf3ec61c7c"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_SCOPE_WITNESS.json",
+      "bytes": 1465,
+      "sha256": "be1f8a7bdaeed446689b14e95050d37b6d518e3c97dd090dd528ca15568ea70a"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_SCOPE_WITNESS.stderr",
+      "bytes": 1785,
+      "sha256": "7ae812e5ef6a3a40778a1b53eea4759397169d83c8e0b9e55f885c6bcca28bf6"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_SCOPE_WITNESS.stdout",
+      "bytes": 1465,
+      "sha256": "be1f8a7bdaeed446689b14e95050d37b6d518e3c97dd090dd528ca15568ea70a"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_SOURCE_BINDINGS.json",
+      "bytes": 9643,
+      "sha256": "cfa1692a0388f5acb391f165b274ad5aec18acaa80513cbc86fa042b14de6fb6"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/POST_STATUS.md",
+      "bytes": 2923,
+      "sha256": "f657ab2df42bdd1a5bc05324a8bf11ee3b3687964d264e314ab6950b42682e18"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/PRE_GENERAL_MICROSCOPIC_BIRTH_ENERGY.md",
+      "bytes": 29784,
+      "sha256": "5c60124b606fcf7e0fbca9817a5d7f9f2fbfc3a9c36087e2275890c4da27cfe9"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/PRE_RECEIPT.md",
+      "bytes": 3601,
+      "sha256": "7fbdc5db78654692af80206935d9e732db1f77718233dc24438131ebf5ce5fdb"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/PRE_SEAL.json",
+      "bytes": 9592,
+      "sha256": "26fd1a7c0a4a5675c357508e6ae70253eebe8ae1d0690743abdcb06ec8c78c5f"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/RING_DIAGNOSTIC_01.log",
+      "bytes": 810,
+      "sha256": "c22859afd42fbe1afdd88385be3a94f14282055e67c814919992ceec234f85fc"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/RING_DIAGNOSTIC_01.py",
+      "bytes": 728,
+      "sha256": "57062201c0922f110df6576367b918d48bcc6170830a945cf26807cfd8e987c7"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/RING_DIAGNOSTIC_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/RING_HIGHER_RESULTS_01.json",
+      "bytes": 8237,
+      "sha256": "cb7af34a2647ea7650a96ef8602e16d26d2aeb03f00c74622606f1c3b76cdc9b"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/RING_HIGHER_RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/RING_HIGHER_RUN_01.stdout.log",
+      "bytes": 271,
+      "sha256": "5035ec9903c48de7d5c1d5ef6013d15c7efb41c5c96333b475cf44eb60bb77a9"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/SOURCE_BINDINGS.json",
+      "bytes": 4761,
+      "sha256": "d0072f551431b2d1103057cb8bb3c55d5a523ac7efb50afd79c8fc9696161a3a"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/STATUS.md",
+      "bytes": 2717,
+      "sha256": "f728a7c310aeb0cec9002f2117ed4910b5b07e95854ed49eef6761b66516da99"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/cube_subleading_control.py",
+      "bytes": 6432,
+      "sha256": "ceb45d441bd8295d64d92599482c0636693d0da4c181948e564c44dba39f033e"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/frozen_cube_control.py",
+      "bytes": 4839,
+      "sha256": "5691cef2de71c8257b99045da964f72bd84421e536db3b619721fb65188601ec"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/matrix_control.py",
+      "bytes": 10195,
+      "sha256": "3f28827bda4296e29c9a78e9ffc089b6a29465941ca969f1e29ad809451da847"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/matrix_control_run01.py",
+      "bytes": 10032,
+      "sha256": "bac0bf0db2652d1a4de40557603eb44202a4139fb0f077983e697480aad2f730"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/path_control.py",
+      "bytes": 9329,
+      "sha256": "ba2399d47a2156b19026629969ba1d72c5ef41f10e13786842821a1f3a0a5309"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/path_engine.py",
+      "bytes": 5062,
+      "sha256": "4a31455469d42b6f5e46010dc16ec79e658405b5b03027fa59b20e09c3730071"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_authenticate.py",
+      "bytes": 2328,
+      "sha256": "01d814a284320cd797ec6e2d03c03dd49c12c3839b4c69dbb849ddb08f0cd4c9"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_complete_k24.py",
+      "bytes": 12821,
+      "sha256": "cdf66568b3dadaad1a08437c1855153d28ce620888f1f7bf300801b42d133418"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_path_compare.py",
+      "bytes": 6772,
+      "sha256": "27e43b4bd26749fd43301a7c958084a43fc53d6094833a357c7a693fc3c2bb73"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_path_compare_run01.py",
+      "bytes": 6771,
+      "sha256": "c46dadbdd4e21f8fee39ca19abc33a44d0ac1cb9f58504feb8f5c1687adf7bda"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_scope_witness.py",
+      "bytes": 2149,
+      "sha256": "9f3baaf4341a511fdb235b6ac7fc2d4e6d74ddea6e08eee8f3a48415987ffe8d"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__AUTHOR_SEAL.json",
+      "bytes": 4954,
+      "sha256": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__COMPLETE_TWO_CENTER.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__COMPLETE_TWO_CENTER.stdout",
+      "bytes": 983,
+      "sha256": "ff429e9b274555847d40c252b1a74db038985de78db38f601e0b58abd6b43107"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__COMPLETE_TWO_CENTER_RESULTS.json",
+      "bytes": 195815,
+      "sha256": "aae211583a95b185f09fc5aadba13bf6f8e0712b3bbfc2fb8d546f243e0d00b1"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__DERIVATION_PLAN.md",
+      "bytes": 6765,
+      "sha256": "28c5b295e5869073e62f82f62a5a8136e6d0266b41d167cf28b40e193ac7067a"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__DEVELOPMENT_AND_SCOPE.md",
+      "bytes": 2391,
+      "sha256": "c77ef145c12febcc9df27e660b2f8b18b392611c447a3621df8058aa7dc466b3"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__EXECUTION_RECEIPT.json",
+      "bytes": 1065,
+      "sha256": "c5264dac519fcfbc0df6637d50b2a652fa377926e98ed654b9a98edfd8580302"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "bytes": 14834,
+      "sha256": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__LOCAL_LEAKAGE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__LOCAL_LEAKAGE.stdout",
+      "bytes": 187,
+      "sha256": "fc57a82bcbbac97acc3215465a28c15236f2f5cb4711066aaf14c2c1dacf564b"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__LOCAL_LEAKAGE_RESULTS.json",
+      "bytes": 78503,
+      "sha256": "7bb43ba4f6bf37490c52413eb68f5f2d970c3d095d6be44dbcaa46094b8a3a06"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__complete_two_center_control.py",
+      "bytes": 8515,
+      "sha256": "1417a8ac223f888891d2c19b9796096137a7f75e938a1174e999446082dbf00a"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/author__local_leakage_control.py",
+      "bytes": 7818,
+      "sha256": "b7d38235d4521f98fc42f23c414649e1e2553b53ec9e3cd9d834a43cdc1c6c00"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/source__campaign12h_third__FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/source__field_energy_completion_author__LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "bytes": 12525,
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/source__field_energy_completion_author__ROOT_SCOPE_CORRECTION.md",
+      "bytes": 2455,
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/source__high_flux_energy_extension_author__ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md",
+      "bytes": 9237,
+      "sha256": "de24a51431ba27f10d178286da2c95cc69081b06a9058d225d4840e3225388c0"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/source__local_compensation_author__BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/source__local_compensation_author__LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/source__local_compensation_author__ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/post_sources/source__microscopic_birth_energy_author__EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "bytes": 9368,
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/ring_higher_order.py",
+      "bytes": 4544,
+      "sha256": "af13f89f9e534c53414e9d56b56f008f03a9e1d3024e8f68aabfb10efa13130f"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/field_energy_completion_author__LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "bytes": 12525,
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/field_energy_completion_author__ROOT_SCOPE_CORRECTION.md",
+      "bytes": 2455,
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/high_flux_energy_author__HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD.md",
+      "bytes": 8061,
+      "sha256": "a355623459a0bea115b0874ab03a1f691f55a71fa67785b4f04f68513a3ad472"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/high_flux_energy_author__cube_high_flux_birth.py",
+      "bytes": 2878,
+      "sha256": "c1a13a2c954095fe1fb76272d7f13abe498220ab1e95d167cc150e136e031a9c"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/local_compensation_author__BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/local_compensation_author__LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/local_compensation_author__ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/local_compensation_independent__model.py",
+      "bytes": 4258,
+      "sha256": "686529f4cd3dd5d73e3373f2604e56615c83228b5813a3848f2a194db00ae128"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/microscopic_birth_energy_independent__FINAL_COMPARISON_SEAL.json",
+      "bytes": 9460,
+      "sha256": "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/sources/microscopic_birth_energy_independent__PRE_MICROSCOPIC_STAR_RECONSTRUCTION.md",
+      "bytes": 13949,
+      "sha256": "2aed1ac94f0c929210518020b97a189b58529393b1f58a8ad8946b72809c617c"
+    },
+    {
+      "path": "general_microscopic_birth_energy_independent/verify_pre_seal.py",
+      "bytes": 1955,
+      "sha256": "8f363baf00872931e6cfc2341a94130ebcb99ebca31cbca7dad2565b7c86fcdd"
+    },
+    {
+      "path": "general_microscopic_energy_review/PORTABLE_RUN_RECEIPT.json",
+      "bytes": 7975,
+      "sha256": "ba092477584ee7fd321e6373e363f5098f2c914d97cf0acec8faf07788ed8528"
+    },
+    {
+      "path": "general_microscopic_energy_review/PORTABLE_VALIDATION.md",
+      "bytes": 606,
+      "sha256": "64e2d00161da539c208979b2d39df41ce77b908cd9f4480ac24b2cb15ac4761a"
+    },
+    {
+      "path": "general_microscopic_energy_review/ROOT_REVIEW.md",
+      "bytes": 2633,
+      "sha256": "6b31a3e66d30bee3fde722581605f8994cdbef852366fa25263635ead6a34ede"
+    },
+    {
+      "path": "general_microscopic_energy_review/SCOPE_STRESS_TEST.md",
+      "bytes": 1073,
+      "sha256": "8c4929da4595242d55e0afdd0ba74ac8c3e09607eeb84dcd2a3afa786d8c7bd0"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_1.stdout",
+      "bytes": 187,
+      "sha256": "fc57a82bcbbac97acc3215465a28c15236f2f5cb4711066aaf14c2c1dacf564b"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_10.stderr",
+      "bytes": 1725,
+      "sha256": "621abae2cc7149ca0fcd6b090d66c7e9a39d1e0270ac4586af4be62cf94c10c7"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_10.stdout",
+      "bytes": 1465,
+      "sha256": "be1f8a7bdaeed446689b14e95050d37b6d518e3c97dd090dd528ca15568ea70a"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_2.stdout",
+      "bytes": 983,
+      "sha256": "ff429e9b274555847d40c252b1a74db038985de78db38f601e0b58abd6b43107"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_3.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_3.stdout",
+      "bytes": 251,
+      "sha256": "3098de21f8a6b3d10bdbffec17ebb602135936dd0f0e1b472e3115b80278f4c8"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_4.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_4.stdout",
+      "bytes": 253,
+      "sha256": "7c8ce54ec54eb24a7bf893df8015a14f05a6aa6882a4ffc49ff839d03f3e62c9"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_5.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_5.stdout",
+      "bytes": 257,
+      "sha256": "7323677cbbf639b4de68b3b78ecd73f917591ed2c07a12619fd8372507e0c44a"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_6.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_6.stdout",
+      "bytes": 289,
+      "sha256": "407eb82bc6482e3465b75ca0e8a0e2be35d6164f078d7988e37e328afd942bbd"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_7.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_7.stdout",
+      "bytes": 261,
+      "sha256": "b9204777c2bd570068fbd0b36a1b85611593ad006ae4ae7e440e56636f1a8452"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_8.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_8.stdout",
+      "bytes": 1317,
+      "sha256": "a45a60ae840ac2921005cb5c59d9be3573fe025da467cb73df2dc6f8e236d461"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_9.stderr",
+      "bytes": 2236,
+      "sha256": "e67aa873187b22976ee7261e99400c0bebfb2517e253788246d7279c8cbd0fa2"
+    },
+    {
+      "path": "general_microscopic_energy_review/run_9.stdout",
+      "bytes": 7626,
+      "sha256": "cfdccedb10d2453cf7e67b8e2c4b48f4da7242695535b05f38cb603bba96f20c"
+    },
+    {
+      "path": "reproduce_general_microscopic_energy_publication.py",
+      "bytes": 3676,
+      "sha256": "a6b2175f950b4d8d9054f39bc213926e423f9e85a99f671bf38069a5f2b462fc"
+    },
+    {
+      "path": "verify_general_microscopic_energy_publication.py",
+      "bytes": 1890,
+      "sha256": "998ead77d05db04b418644c009eb0fcdf678c56509b2f36a4b0988b08331383e"
+    }
+  ]
+}

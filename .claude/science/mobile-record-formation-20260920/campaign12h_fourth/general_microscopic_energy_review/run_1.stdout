@@ -1,0 +1,7 @@
+{
+  "all_assertions_passed": true,
+  "cases": 55,
+  "cube_rotor_R_squared_sum": 72.0,
+  "degree_two_rotor_coefficient": 0.0,
+  "symbolic_per_affected_A": "18*u**2 - 36*u + 6*v**2 + 18"
+}

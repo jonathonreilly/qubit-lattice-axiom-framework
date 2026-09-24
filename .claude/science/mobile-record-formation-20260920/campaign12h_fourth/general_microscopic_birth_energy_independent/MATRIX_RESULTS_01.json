@@ -1,0 +1,1731 @@
+{
+  "created_utc": "2026-09-24T02:58:53.786997+00:00",
+  "runner_sha256": "bac0bf0db2652d1a4de40557603eb44202a4139fb0f077983e697480aad2f730",
+  "status": "completed",
+  "checks": [
+    {
+      "name": "matrix n=8 N=4 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) sign=-1 derived leakage",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) sign=-1 marked-center identity",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) sign=1 derived leakage",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) sign=1 marked-center identity",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) sign=None derived leakage",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) sign=None marked-center identity",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon mean sign=-1 phase=(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon variance sign=-1 phase=(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon mean sign=1 phase=(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon variance sign=1 phase=(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon mean sign=None phase=(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon variance sign=None phase=(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=4 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=3 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=5 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=8 N=6 S=None center=6 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) sign=-1 derived leakage",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) sign=-1 marked-center identity",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) sign=1 derived leakage",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) sign=1 marked-center identity",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) sign=None derived leakage",
+      "passed": true
+    },
+    {
+      "name": "cube fiber (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) sign=None marked-center identity",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=1 dim=70 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=36 dim=168 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon mean sign=-1 phase=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon variance sign=-1 phase=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon mean sign=1 phase=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon variance sign=1 phase=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon mean sign=None phase=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)",
+      "passed": true
+    },
+    {
+      "name": "cube final small-epsilon variance sign=None phase=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=2 S=1 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=2 S=1 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=4 S=1 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=4 S=1 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "ring 4 S=1 complete-matrix leakage zero",
+      "passed": true
+    },
+    {
+      "name": "four-ring S=1 entire post Hamiltonian exactly zero",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=13 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=13 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=6 dim=6 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=13 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=13 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=6 dim=6 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=13 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=13 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=6 dim=6 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=13 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=13 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=6 dim=6 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "ring 4 S=1 scaled mean asymptotic",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=2 S=2 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=2 S=2 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=4 S=2 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=4 S=2 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "ring 4 S=2 complete-matrix leakage zero",
+      "passed": true
+    },
+    {
+      "name": "four-ring S=2 entire post Hamiltonian exactly zero",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=25 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=25 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=14 dim=14 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=25 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=25 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=14 dim=14 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=25 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=25 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=14 dim=14 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=25 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=25 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=14 dim=14 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "ring 4 S=2 scaled mean asymptotic",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=2 S=4 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=2 S=4 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=4 S=4 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=4 N=4 S=4 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "ring 4 S=4 complete-matrix leakage zero",
+      "passed": true
+    },
+    {
+      "name": "four-ring S=4 entire post Hamiltonian exactly zero",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=49 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=49 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=30 dim=30 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=49 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=49 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=30 dim=30 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=49 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=49 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=30 dim=30 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=49 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=49 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=30 dim=30 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "ring 4 S=4 scaled mean asymptotic",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=3 S=1 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=3 S=1 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=3 S=1 center=4 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=5 S=1 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=5 S=1 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=5 S=1 center=4 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "ring 6 S=1 complete-matrix leakage zero",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=38 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=38 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=21 dim=39 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=21 dim=39 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=38 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=38 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=21 dim=39 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=21 dim=39 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=38 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=38 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=21 dim=39 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=21 dim=39 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=38 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=3 dim=38 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=21 dim=39 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=21 dim=39 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "ring 6 S=1 scaled mean asymptotic",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=3 S=2 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=3 S=2 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=3 S=2 center=4 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=5 S=2 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=5 S=2 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=5 S=2 center=4 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "ring 6 S=2 complete-matrix leakage zero",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=78 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=78 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=51 dim=99 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=51 dim=99 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=78 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=78 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=51 dim=99 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=51 dim=99 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=78 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=78 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=51 dim=99 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=51 dim=99 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=78 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=5 dim=78 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=51 dim=99 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=51 dim=99 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "ring 6 S=2 scaled mean asymptotic",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=3 S=4 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=3 S=4 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=3 S=4 center=4 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=5 S=4 center=0 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=5 S=4 center=2 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "matrix n=6 N=5 S=4 center=4 commuting occupancy gate",
+      "passed": true
+    },
+    {
+      "name": "ring 6 S=4 complete-matrix leakage zero",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=158 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=158 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=111 dim=219 eps=0.04 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=111 dim=219 eps=0.04 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=158 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=158 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=111 dim=219 eps=0.02 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=111 dim=219 eps=0.02 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=158 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=158 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=111 dim=219 eps=0.01 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=111 dim=219 eps=0.01 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=158 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=9 dim=158 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=111 dim=219 eps=0.005 isometry",
+      "passed": true
+    },
+    {
+      "name": "canonical rank=111 dim=219 eps=0.005 separated",
+      "passed": true
+    },
+    {
+      "name": "ring 6 S=4 scaled mean asymptotic",
+      "passed": true
+    }
+  ],
+  "complete_cube_fourier_fiber_rows": [
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.04,
+      "sign": -1,
+      "intensity_over_kappa": 2.0378350851039184,
+      "epsilon2_mean_over_delta": 0.9550992619761398,
+      "epsilon6_variance_over_delta2": 0.998526749108324,
+      "high_weight_over_epsilon2": 1.0001203754823884,
+      "derived_leakage": 1.0
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.04,
+      "sign": 1,
+      "intensity_over_kappa": 2.0378350851039184,
+      "epsilon2_mean_over_delta": 1.9453660103985917,
+      "epsilon6_variance_over_delta2": 1.993677677260257,
+      "high_weight_over_epsilon2": 2.0000079238730732,
+      "derived_leakage": 2.0
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.04,
+      "sign": null,
+      "intensity_over_kappa": 4.075670170207837,
+      "epsilon2_mean_over_delta": 1.4502326361873663,
+      "epsilon6_variance_over_delta2": 1.4964589622029465,
+      "high_weight_over_epsilon2": 1.5000502756358502,
+      "derived_leakage": 1.5
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.02,
+      "sign": -1,
+      "intensity_over_kappa": 2.009566213836457,
+      "epsilon2_mean_over_delta": 0.9887932637446168,
+      "epsilon6_variance_over_delta2": 0.9996076206162435,
+      "high_weight_over_epsilon2": 1.000007880289644,
+      "derived_leakage": 1.0
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.02,
+      "sign": 1,
+      "intensity_over_kappa": 2.009566213836457,
+      "epsilon2_mean_over_delta": 1.9863848203998882,
+      "epsilon6_variance_over_delta2": 1.9984044531235374,
+      "high_weight_over_epsilon2": 2.0000009629322912,
+      "derived_leakage": 2.0
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.02,
+      "sign": null,
+      "intensity_over_kappa": 4.019132427672914,
+      "epsilon2_mean_over_delta": 1.487589042072252,
+      "epsilon6_variance_over_delta2": 1.4991033207925812,
+      "high_weight_over_epsilon2": 1.5000037240731068,
+      "derived_leakage": 1.5
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.01,
+      "sign": -1,
+      "intensity_over_kappa": 2.0023979120947297,
+      "epsilon2_mean_over_delta": 0.9971995722371786,
+      "epsilon6_variance_over_delta2": 0.9999004715726243,
+      "high_weight_over_epsilon2": 1.0000004981292054,
+      "derived_leakage": 1.0
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.01,
+      "sign": 1,
+      "intensity_over_kappa": 2.0023979120947297,
+      "epsilon2_mean_over_delta": 1.9965990428048643,
+      "epsilon6_variance_over_delta2": 1.9996002720776085,
+      "high_weight_over_epsilon2": 2.000000067542418,
+      "derived_leakage": 2.0
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.01,
+      "sign": null,
+      "intensity_over_kappa": 4.0047958241894595,
+      "epsilon2_mean_over_delta": 1.496899307521021,
+      "epsilon6_variance_over_delta2": 1.499775201885314,
+      "high_weight_over_epsilon2": 1.5000002419340852,
+      "derived_leakage": 1.5
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.005,
+      "sign": -1,
+      "intensity_over_kappa": 2.0005998698764973,
+      "epsilon2_mean_over_delta": 0.9992999731599217,
+      "epsilon6_variance_over_delta2": 0.9999750293995738,
+      "high_weight_over_epsilon2": 1.0000000311238821,
+      "derived_leakage": 1.0
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.005,
+      "sign": 1,
+      "intensity_over_kappa": 2.0005998698764973,
+      "epsilon2_mean_over_delta": 1.999149940043772,
+      "epsilon6_variance_over_delta2": 1.9999000169074523,
+      "high_weight_over_epsilon2": 2.000000003894442,
+      "derived_leakage": 2.0
+    },
+    {
+      "phase_powers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 0.005,
+      "sign": null,
+      "intensity_over_kappa": 4.001199739752995,
+      "epsilon2_mean_over_delta": 1.4992249566018474,
+      "epsilon6_variance_over_delta2": 1.4999437625294503,
+      "high_weight_over_epsilon2": 1.5000000152243231,
+      "derived_leakage": 1.5
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.04,
+      "sign": -1,
+      "intensity_over_kappa": 2.027924114835374,
+      "epsilon2_mean_over_delta": 0.9777355139222702,
+      "epsilon6_variance_over_delta2": 0.9984521835084015,
+      "high_weight_over_epsilon2": 0.9999677622409692,
+      "derived_leakage": 1.0
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.04,
+      "sign": 1,
+      "intensity_over_kappa": 2.027924114835374,
+      "epsilon2_mean_over_delta": 1.9681578881845931,
+      "epsilon6_variance_over_delta2": 1.9937026599776917,
+      "high_weight_over_epsilon2": 1.9998418768723407,
+      "derived_leakage": 2.0
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.04,
+      "sign": null,
+      "intensity_over_kappa": 4.055848229670748,
+      "epsilon2_mean_over_delta": 1.472946701053432,
+      "epsilon6_variance_over_delta2": 1.4964643556564663,
+      "high_weight_over_epsilon2": 1.4999020895611197,
+      "derived_leakage": 1.5
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.02,
+      "sign": -1,
+      "intensity_over_kappa": 2.0071459869306114,
+      "epsilon2_mean_over_delta": 0.9944083573661213,
+      "epsilon6_variance_over_delta2": 0.9996030952916919,
+      "high_weight_over_epsilon2": 0.9999980553132559,
+      "derived_leakage": 1.0
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.02,
+      "sign": 1,
+      "intensity_over_kappa": 2.0071459869306114,
+      "epsilon2_mean_over_delta": 1.9920096671834218,
+      "epsilon6_variance_over_delta2": 1.9984061642916722,
+      "high_weight_over_epsilon2": 1.999990088514536,
+      "derived_leakage": 2.0
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.02,
+      "sign": null,
+      "intensity_over_kappa": 4.014291973861223,
+      "epsilon2_mean_over_delta": 1.4932090122747723,
+      "epsilon6_variance_over_delta2": 1.4991038255520566,
+      "high_weight_over_epsilon2": 1.4999939091170367,
+      "derived_leakage": 1.5
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.01,
+      "sign": -1,
+      "intensity_over_kappa": 2.001796636017419,
+      "epsilon2_mean_over_delta": 0.9986005205836327,
+      "epsilon6_variance_over_delta2": 0.9999001908635708,
+      "high_weight_over_epsilon2": 0.9999998796150766,
+      "derived_leakage": 1.0
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.01,
+      "sign": 1,
+      "intensity_over_kappa": 2.001796636017419,
+      "epsilon2_mean_over_delta": 1.9980006010503588,
+      "epsilon6_variance_over_delta2": 1.9996003813178542,
+      "high_weight_over_epsilon2": 1.9999993802721772,
+      "derived_leakage": 2.0
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.01,
+      "sign": null,
+      "intensity_over_kappa": 4.003593272034838,
+      "epsilon2_mean_over_delta": 1.4983005608169944,
+      "epsilon6_variance_over_delta2": 1.4997752360241512,
+      "high_weight_over_epsilon2": 1.499999619942738,
+      "derived_leakage": 1.5
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.005,
+      "sign": -1,
+      "intensity_over_kappa": 2.0004497899376603,
+      "epsilon2_mean_over_delta": 0.9996500325091189,
+      "epsilon6_variance_over_delta2": 0.9999750118884917,
+      "high_weight_over_epsilon2": 0.999999992359335,
+      "derived_leakage": 1.0
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.005,
+      "sign": 1,
+      "intensity_over_kappa": 2.0004497899376603,
+      "epsilon2_mean_over_delta": 1.9995000375164147,
+      "epsilon6_variance_over_delta2": 1.9999000237705942,
+      "high_weight_over_epsilon2": 1.9999999608177887,
+      "derived_leakage": 2.0
+    },
+    {
+      "phase_powers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "epsilon": 0.005,
+      "sign": null,
+      "intensity_over_kappa": 4.000899579875321,
+      "epsilon2_mean_over_delta": 1.499575035012767,
+      "epsilon6_variance_over_delta2": 1.4999437647035023,
+      "high_weight_over_epsilon2": 1.4999999758957827,
+      "derived_leakage": 1.5
+    }
+  ],
+  "complete_physical_ring_rows": [
+    {
+      "sites": 4,
+      "S": 1,
+      "flux": 0,
+      "epsilon": 0.04,
+      "pre_dimension": 13,
+      "post_dimension": 6,
+      "intensity_over_kappa": 0.996789825450002,
+      "epsilon2_initial_mean_over_delta": -0.006379470726852646,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 1,
+      "flux": 0,
+      "epsilon": 0.02,
+      "pre_dimension": 13,
+      "post_dimension": 6,
+      "intensity_over_kappa": 0.9991993610236396,
+      "epsilon2_initial_mean_over_delta": -0.0015987192315170648,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 1,
+      "flux": 0,
+      "epsilon": 0.01,
+      "pre_dimension": 13,
+      "post_dimension": 6,
+      "intensity_over_kappa": 0.9997999600159966,
+      "epsilon2_initial_mean_over_delta": -0.0003999199879977605,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 1,
+      "flux": 0,
+      "epsilon": 0.005,
+      "pre_dimension": 13,
+      "post_dimension": 6,
+      "intensity_over_kappa": 0.999949997500249,
+      "epsilon2_initial_mean_over_delta": -9.999499981220501e-05,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 2,
+      "flux": 1,
+      "epsilon": 0.04,
+      "pre_dimension": 25,
+      "post_dimension": 14,
+      "intensity_over_kappa": 0.44395816069890004,
+      "epsilon2_initial_mean_over_delta": 0.6585032059048298,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 2,
+      "flux": 1,
+      "epsilon": 0.02,
+      "pre_dimension": 25,
+      "post_dimension": 14,
+      "intensity_over_kappa": 0.4443251618103668,
+      "epsilon2_initial_mean_over_delta": 0.6646231125966641,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 2,
+      "flux": 1,
+      "epsilon": 0.01,
+      "pre_dimension": 25,
+      "post_dimension": 14,
+      "intensity_over_kappa": 0.44441476704215943,
+      "epsilon2_initial_mean_over_delta": 0.6661556111343403,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 2,
+      "flux": 1,
+      "epsilon": 0.005,
+      "pre_dimension": 25,
+      "post_dimension": 14,
+      "intensity_over_kappa": 0.4444370340510039,
+      "epsilon2_initial_mean_over_delta": 0.6665388923614741,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 4,
+      "flux": 2,
+      "epsilon": 0.04,
+      "pre_dimension": 49,
+      "post_dimension": 30,
+      "intensity_over_kappa": 0.4898285779222206,
+      "epsilon2_initial_mean_over_delta": 0.7917568340645157,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 4,
+      "flux": 2,
+      "epsilon": 0.02,
+      "pre_dimension": 49,
+      "post_dimension": 30,
+      "intensity_over_kappa": 0.48995988526743683,
+      "epsilon2_initial_mean_over_delta": 0.7979367976560995,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 4,
+      "flux": 2,
+      "epsilon": 0.01,
+      "pre_dimension": 49,
+      "post_dimension": 30,
+      "intensity_over_kappa": 0.489990142816276,
+      "epsilon2_initial_mean_over_delta": 0.7994840497833904,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 4,
+      "S": 4,
+      "flux": 2,
+      "epsilon": 0.005,
+      "pre_dimension": 49,
+      "post_dimension": 30,
+      "intensity_over_kappa": 0.4899975464258225,
+      "epsilon2_initial_mean_over_delta": 0.7998710031103647,
+      "epsilon2_post_mean_over_delta": 0.0,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 0.0,
+      "epsilon2_variance_over_delta2": 0.0,
+      "high_weight_over_epsilon6": 0.0
+    },
+    {
+      "sites": 6,
+      "S": 1,
+      "flux": 0,
+      "epsilon": 0.04,
+      "pre_dimension": 38,
+      "post_dimension": 39,
+      "intensity_over_kappa": 1.0030822257627778,
+      "epsilon2_initial_mean_over_delta": -0.028691264409185825,
+      "epsilon2_post_mean_over_delta": 5.136856512556366e-06,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 2.5813894144163323e-06,
+      "epsilon2_variance_over_delta2": 1.0083552400063798,
+      "high_weight_over_epsilon6": 1.0003440324815123
+    },
+    {
+      "sites": 6,
+      "S": 1,
+      "flux": 0,
+      "epsilon": 0.02,
+      "pre_dimension": 38,
+      "post_dimension": 39,
+      "intensity_over_kappa": 1.0007926395606268,
+      "epsilon2_initial_mean_over_delta": -0.0071932608513794235,
+      "epsilon2_post_mean_over_delta": 3.2025788224896853e-07,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 1.603235762034039e-07,
+      "epsilon2_variance_over_delta2": 1.0020223512712743,
+      "high_weight_over_epsilon6": 1.0000218155389047
+    },
+    {
+      "sites": 6,
+      "S": 1,
+      "flux": 0,
+      "epsilon": 0.01,
+      "pre_dimension": 38,
+      "post_dimension": 39,
+      "intensity_over_kappa": 1.0001995399922803,
+      "epsilon2_initial_mean_over_delta": -0.0017995797001993542,
+      "epsilon2_post_mean_over_delta": 2.0004007215040454e-08,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 1.0005013992752821e-08,
+      "epsilon2_variance_over_delta2": 1.000501399275282,
+      "high_weight_over_epsilon6": 1.0000013683525228
+    },
+    {
+      "sites": 6,
+      "S": 1,
+      "flux": 0,
+      "epsilon": 0.005,
+      "pre_dimension": 38,
+      "post_dimension": 39,
+      "intensity_over_kappa": 1.000049971249877,
+      "epsilon2_initial_mean_over_delta": -0.000449973745312,
+      "epsilon2_post_mean_over_delta": 1.2500624638584585e-09,
+      "predicted_post_scaled_mean": 0.0,
+      "epsilon6_variance_over_delta2": 6.250781796967914e-10,
+      "epsilon2_variance_over_delta2": 1.0001250875148662,
+      "high_weight_over_epsilon6": 1.0000000856378743
+    },
+    {
+      "sites": 6,
+      "S": 2,
+      "flux": 1,
+      "epsilon": 0.04,
+      "pre_dimension": 78,
+      "post_dimension": 99,
+      "intensity_over_kappa": 0.44676990825195173,
+      "epsilon2_initial_mean_over_delta": 0.9717645271104277,
+      "epsilon2_post_mean_over_delta": 0.33245090893252266,
+      "predicted_post_scaled_mean": 0.3333333333333335,
+      "epsilon6_variance_over_delta2": 4.194243050285334e-06,
+      "epsilon2_variance_over_delta2": 1.6383761915177084,
+      "high_weight_over_epsilon6": 1.6307765089871424
+    },
+    {
+      "sites": 6,
+      "S": 2,
+      "flux": 1,
+      "epsilon": 0.02,
+      "pre_dimension": 78,
+      "post_dimension": 99,
+      "intensity_over_kappa": 0.44503424492533633,
+      "epsilon2_initial_mean_over_delta": 0.9929352207692649,
+      "epsilon2_post_mean_over_delta": 0.33311151433636255,
+      "predicted_post_scaled_mean": 0.3333333333333335,
+      "epsilon6_variance_over_delta2": 2.610845052461981e-07,
+      "epsilon2_variance_over_delta2": 1.6317781577887378,
+      "high_weight_over_epsilon6": 1.6298773178943469
+    },
+    {
+      "sites": 6,
+      "S": 2,
+      "flux": 1,
+      "epsilon": 0.01,
+      "pre_dimension": 78,
+      "post_dimension": 99,
+      "intensity_over_kappa": 0.44459241831740237,
+      "epsilon2_initial_mean_over_delta": 0.9982334503246455,
+      "epsilon2_post_mean_over_delta": 0.33327780296704296,
+      "predicted_post_scaled_mean": 0.3333333333333335,
+      "epsilon6_variance_over_delta2": 1.6301643871637366e-08,
+      "epsilon2_variance_over_delta2": 1.6301643871637364,
+      "high_weight_over_epsilon6": 1.6296891040496961
+    },
+    {
+      "sites": 6,
+      "S": 2,
+      "flux": 1,
+      "epsilon": 0.005,
+      "pre_dimension": 78,
+      "post_dimension": 99,
+      "intensity_over_kappa": 0.44448147059292326,
+      "epsilon2_initial_mean_over_delta": 0.999558340630072,
+      "epsilon2_post_mean_over_delta": 0.3333194460185822,
+      "predicted_post_scaled_mean": 0.3333333333333335,
+      "epsilon6_variance_over_delta2": 1.0186021515396119e-09,
+      "epsilon2_variance_over_delta2": 1.6297634424633787,
+      "high_weight_over_epsilon6": 1.6296446146967734
+    },
+    {
+      "sites": 6,
+      "S": 4,
+      "flux": 2,
+      "epsilon": 0.04,
+      "pre_dimension": 158,
+      "post_dimension": 219,
+      "intensity_over_kappa": 0.4929340929099817,
+      "epsilon2_initial_mean_over_delta": 1.1722756320919994,
+      "epsilon2_post_mean_over_delta": 0.3989807759562899,
+      "predicted_post_scaled_mean": 0.3999999999999999,
+      "epsilon6_variance_over_delta2": 3.190516981701865e-06,
+      "epsilon2_variance_over_delta2": 1.2462956959772908,
+      "high_weight_over_epsilon6": 1.241699201585461
+    },
+    {
+      "sites": 6,
+      "S": 4,
+      "flux": 2,
+      "epsilon": 0.02,
+      "pre_dimension": 158,
+      "post_dimension": 219,
+      "intensity_over_kappa": 0.49074200002656043,
+      "epsilon2_initial_mean_over_delta": 1.1930651664457865,
+      "epsilon2_post_mean_over_delta": 0.3997442982132347,
+      "predicted_post_scaled_mean": 0.3999999999999999,
+      "epsilon6_variance_over_delta2": 1.989207754164174e-07,
+      "epsilon2_variance_over_delta2": 1.2432548463526085,
+      "high_weight_over_epsilon6": 1.242105312895342
+    },
+    {
+      "sites": 6,
+      "S": 4,
+      "flux": 2,
+      "epsilon": 0.01,
+      "pre_dimension": 158,
+      "post_dimension": 219,
+      "intensity_over_kappa": 0.4901860253061398,
+      "epsilon2_initial_mean_over_delta": 1.1982660719557654,
+      "epsilon2_post_mean_over_delta": 0.3999360186342034,
+      "predicted_post_scaled_mean": 0.3999999999999999,
+      "epsilon6_variance_over_delta2": 1.2425259151701576e-08,
+      "epsilon2_variance_over_delta2": 1.2425259151701573,
+      "high_weight_over_epsilon6": 1.2422384911492943
+    },
+    {
+      "sites": 6,
+      "S": 4,
+      "flux": 2,
+      "epsilon": 0.005,
+      "pre_dimension": 158,
+      "post_dimension": 219,
+      "intensity_over_kappa": 0.49004653908640716,
+      "epsilon2_initial_mean_over_delta": 1.199566504482434,
+      "epsilon2_post_mean_over_delta": 0.39998400116457455,
+      "predicted_post_scaled_mean": 0.3999999999999999,
+      "epsilon6_variance_over_delta2": 7.764660215296356e-10,
+      "epsilon2_variance_over_delta2": 1.2423456344474166,
+      "high_weight_over_epsilon6": 1.2422737765676193
+    }
+  ],
+  "summary": {
+    "passed": 201,
+    "failed": 0
+  }
+}

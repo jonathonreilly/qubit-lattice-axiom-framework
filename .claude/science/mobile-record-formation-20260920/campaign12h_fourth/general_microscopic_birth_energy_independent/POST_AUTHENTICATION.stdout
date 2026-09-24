@@ -1,0 +1,11 @@
+{
+  "comparison_started_utc": "2026-09-24T03:31:31.212258+00:00",
+  "prior_PRE_seal_sha256": "26fd1a7c0a4a5675c357508e6ae70253eebe8ae1d0690743abdcb06ec8c78c5f",
+  "prior_PRE_artifacts_authenticated": 52,
+  "author_seal_sha256": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9",
+  "author_artifacts_authenticated": 12,
+  "author_sources_authenticated": 8,
+  "restriction": "No author code imported or executed. Frozen PRE engine may be reused for calculations. Root CHECKPOINT, full_instrument_energy_supply_author and external personal plans remain unread."
+}
+LOCAL_LEAKAGE_RESULTS.json {'fresh_primitives': 'A-to-B oriented normalized spin shifts and hard-core matter; no imported campaign builder', 'exact_symbolic_flux_identity': '18*u**2 - 36*u + 6*v**2 + 18', 'lambda0_limiting_power_polynomial': '-32*u**3 + 132*u**2 - 168*u + 72', 'exact_symbolic_cube_E2_drift': '96 - 128*n**2/C + 48*n**4/C**2', 'rows': 55, 'all_assertions_passed': True, 'limits': 'Rotated-jump coefficient and slow-energy drift controls; actual full-H moment theorem requires the canonical low-band perturbation argument, not these paths alone.'}
+COMPLETE_TWO_CENTER_RESULTS.json {'graph': 'complete bipartite K(2,4), all edges oriented A to B', 'spin': 1, 'complete_Gauss_dimension': 721, 'P_dimension': 309, 'sector_counts': 7, 'exact_all_P_operator_controls': 2, 'rows': 36, 'all_assertions_passed': True, 'actual_two_birth_nonzero_controls': 6, 'capacity': 'The full N=6 sector is included; two formations are possible on this graph. No claim about six-site cycle capacity is changed.', 'scope': 'Direct canonical low-band dressing and original full microscopic H/j moments. Epsilon is varied at fixed S=1 to test the uniform perturbation formulas including the slow Q contribution; this is not a numerical S-to-infinity proof.'}

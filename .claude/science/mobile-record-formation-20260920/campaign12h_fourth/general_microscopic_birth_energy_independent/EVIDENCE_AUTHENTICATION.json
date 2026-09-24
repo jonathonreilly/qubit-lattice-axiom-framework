@@ -1,0 +1,63 @@
+{
+  "verified_utc": "2026-09-24T03:24:13.614480+00:00",
+  "sources_authenticated": 10,
+  "executed_science_controls": [
+    {
+      "result": "PATH_RESULTS_01.json",
+      "result_sha256": "dea830df206b5d894f48badd5b6fc3f4e62592c4ab35cbb003efe16d2c6a1d4d",
+      "runner": "path_control.py",
+      "runner_sha256": "ba2399d47a2156b19026629969ba1d72c5ef41f10e13786842821a1f3a0a5309",
+      "summary": {
+        "passed": 375,
+        "failed": 0
+      }
+    },
+    {
+      "result": "MATRIX_RESULTS_01.json",
+      "result_sha256": "21cd18633703dda9ffd289a186c9477a278b43b5c0cee6b98a2dd1d78e3b9d2e",
+      "runner": "matrix_control_run01.py",
+      "runner_sha256": "bac0bf0db2652d1a4de40557603eb44202a4139fb0f077983e697480aad2f730",
+      "summary": {
+        "passed": 201,
+        "failed": 0
+      }
+    },
+    {
+      "result": "RING_HIGHER_RESULTS_01.json",
+      "result_sha256": "cb7af34a2647ea7650a96ef8602e16d26d2aeb03f00c74622606f1c3b76cdc9b",
+      "runner": "ring_higher_order.py",
+      "runner_sha256": "af13f89f9e534c53414e9d56b56f008f03a9e1d3024e8f68aabfb10efa13130f",
+      "summary": {
+        "passed": 22,
+        "failed": 0
+      }
+    },
+    {
+      "result": "FROZEN_CUBE_RESULTS_01.json",
+      "result_sha256": "aa6c31b3bac73c877f9a49ada80d069450748591782059343944f49bed4c4ec2",
+      "runner": "frozen_cube_control.py",
+      "runner_sha256": "5691cef2de71c8257b99045da964f72bd84421e536db3b619721fb65188601ec",
+      "summary": {
+        "passed": 58,
+        "failed": 0,
+        "supporting_matrix_checks": 60
+      }
+    },
+    {
+      "result": "CUBE_SUBLEADING_RESULTS_01.json",
+      "result_sha256": "38a0849199bd6649a6ae9524b3fa16480c0901f7508a8d9c85a5086f8f727386",
+      "runner": "cube_subleading_control.py",
+      "runner_sha256": "ceb45d441bd8295d64d92599482c0636693d0da4c181948e564c44dba39f033e",
+      "summary": {
+        "passed": 25,
+        "failed": 0
+      }
+    }
+  ],
+  "path_engine_sha256": "4a31455469d42b6f5e46010dc16ec79e658405b5b03027fa59b20e09c3730071",
+  "current_matrix_engine_sha256": "3f28827bda4296e29c9a78e9ffc089b6a29465941ca969f1e29ad809451da847",
+  "forbidden_author_packet_read": false,
+  "control_execution_failures": 0,
+  "operational_packaging_failures": 1,
+  "full_finite_spin_cube_diagonalization_performed": false
+}

@@ -1,0 +1,37 @@
+{
+  "all_assertions_passed": true,
+  "dimension": 721,
+  "P_dimension": 309,
+  "cases": 36,
+  "largest_final_scaled_power_error": 0.08627997721458769,
+  "n0_final_rows": [
+    {
+      "lambda": 0.0,
+      "instrument": "resolved",
+      "predicted_scaled_power": 144.0,
+      "actual_scaled_power": 144.0862799772146,
+      "scaled_power_error": 0.08627997721458769
+    },
+    {
+      "lambda": 0.0,
+      "instrument": "coherent",
+      "predicted_scaled_power": 144.0,
+      "actual_scaled_power": 144.0862799772146,
+      "scaled_power_error": 0.08627997721458769
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "resolved",
+      "predicted_scaled_power": 192.0,
+      "actual_scaled_power": 192.05266465990198,
+      "scaled_power_error": 0.05266465990197844
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "coherent",
+      "predicted_scaled_power": 192.0,
+      "actual_scaled_power": 192.05266465990195,
+      "scaled_power_error": 0.05266465990195002
+    }
+  ]
+}

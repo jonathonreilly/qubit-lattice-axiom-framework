@@ -1,0 +1,28 @@
+{
+  "stage": "personal root final pre-seal controls",
+  "created_utc": "2026-09-24T03:10:31.569095+00:00",
+  "python": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "independent": false,
+  "runs": [
+    {
+      "script": "local_leakage_control.py",
+      "exit_code": 0,
+      "result": "LOCAL_LEAKAGE_RESULTS.json",
+      "stdout": "LOCAL_LEAKAGE.stdout",
+      "stderr": "LOCAL_LEAKAGE.stderr",
+      "cases": 55
+    },
+    {
+      "script": "complete_two_center_control.py",
+      "exit_code": 0,
+      "result": "COMPLETE_TWO_CENTER_RESULTS.json",
+      "stdout": "COMPLETE_TWO_CENTER.stdout",
+      "stderr": "COMPLETE_TWO_CENTER.stderr",
+      "complete_dimension": 721,
+      "cases": 36,
+      "nonzero_two_birth_controls": 6
+    }
+  ],
+  "failure_history": "No scientific assertion failure or tolerance relaxation; coverage extensions and final reruns recorded in DEVELOPMENT_AND_SCOPE.md.",
+  "limits": "First-event microscopic moments and initial-power theorem for canonical dressed preparation; not finite-time cube energy or physical selection."
+}

@@ -1,0 +1,25 @@
+{
+  "independent_path_engine": "Frozen PRE path_engine.py; author Python not imported or run",
+  "author_case_count": 55,
+  "numeric_fields_compared": 1263,
+  "largest_absolute_difference": 2.9103830456733704e-11,
+  "largest_relative_difference": 2.6120434535924393e-15,
+  "symbolic": {
+    "direct_polynomial_sums": {
+      "rate": "8*(6*C**2 - 4*C*n**2 + n**4)/C**2",
+      "r": "12*(6*C**2 - 6*C*n**2 + 3*n**4 + n**2)/C**2",
+      "D_drift": "-16*n**2*(6*C**2 - 6*C*n**2 + C + 2*n**4)/C**2",
+      "E2_drift": "16*(6*C**2 - 8*C*n**2 + 3*n**4)/C**2"
+    },
+    "selected": {
+      "b": "(-2*C + n**2 + n)*(-C + n**2 + n)/C**2",
+      "r": "4*(-C + n**2 + n)**2/C**2",
+      "conditional_D": "-2*C*n**2/(-2*C + n**2 + n)",
+      "conditional_E2": "2*(-4*C*n**2 - 3*C*n - 2*C + 2*n**4 + 4*n**3 + 3*n**2 + n)/(-2*C + n**2 + n)"
+    },
+    "finite_leading_power": "4*(18*C**3 + 24*C**2*lambda*n**2 + 24*C**2*lambda - 42*C**2*n**2 - 24*C*lambda*n**4 - 28*C*lambda*n**2 + 33*C*n**4 - C*n**2 + 8*lambda*n**6 + 12*lambda*n**4 - 8*n**6)/C**3",
+    "F0_derivative": "-24*(t - 1)*(4*t - 7)",
+    "method": "Enumerate actual old destination, marked edge and sign; evaluate diagonal observables on independently updated physical words. R cross histories counted by final charge location."
+  },
+  "all_assertions_passed": true
+}

@@ -1,0 +1,2037 @@
+{
+  "created_utc": "2026-09-24T02:55:37.572882+00:00",
+  "runner_sha256": "ba2399d47a2156b19026629969ba1d72c5ef41f10e13786842821a1f3a0a5309",
+  "status": "completed",
+  "checks": [
+    {
+      "name": "cube n=-3 initial Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 0 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 0 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 -1 local leakage coefficient",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 0 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 0 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 1 local leakage coefficient",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 1 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 1 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 1 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 1 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 2 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 2 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 2 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 2 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 3 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 3 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 3 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 3 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 4 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 4 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 4 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 4 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 5 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 5 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 5 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 5 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 6 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 6 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 6 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 6 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 7 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 7 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 7 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 7 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 8 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 8 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 8 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 8 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 9 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 9 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 9 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 9 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 10 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 10 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 10 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 10 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 11 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 11 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 11 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 resolved 11 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 0 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 0 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 None local leakage coefficient",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 1 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 1 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 2 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 2 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 3 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 3 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 4 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 4 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 5 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 5 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 6 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 6 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 7 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 7 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 8 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 8 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 9 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 9 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 10 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 10 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 11 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube -3 coherent 11 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube n=-3 resolved/coherent sums",
+      "passed": true
+    },
+    {
+      "name": "rotor cube n=-3 allmark rate/leakage/electric",
+      "passed": true
+    },
+    {
+      "name": "cube n=0 initial Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 0 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 0 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 -1 local leakage coefficient",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 0 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 0 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 1 local leakage coefficient",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 1 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 1 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 1 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 1 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 2 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 2 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 2 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 2 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 3 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 3 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 3 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 3 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 4 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 4 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 4 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 4 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 5 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 5 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 5 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 5 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 6 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 6 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 6 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 6 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 7 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 7 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 7 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 7 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 8 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 8 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 8 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 8 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 9 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 9 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 9 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 9 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 10 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 10 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 10 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 10 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 11 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 11 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 11 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 resolved 11 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 0 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 0 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 None local leakage coefficient",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 1 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 1 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 2 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 2 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 3 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 3 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 4 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 4 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 5 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 5 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 6 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 6 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 7 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 7 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 8 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 8 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 9 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 9 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 10 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 10 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 11 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 0 coherent 11 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube n=0 resolved/coherent sums",
+      "passed": true
+    },
+    {
+      "name": "rotor cube n=0 allmark rate/leakage/electric",
+      "passed": true
+    },
+    {
+      "name": "cube n=2 initial Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 0 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 0 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 -1 local leakage coefficient",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 0 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 0 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 1 local leakage coefficient",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 1 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 1 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 1 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 1 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 2 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 2 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 2 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 2 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 3 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 3 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 3 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 3 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 4 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 4 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 4 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 4 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 5 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 5 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 5 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 5 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 6 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 6 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 6 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 6 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 7 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 7 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 7 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 7 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 8 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 8 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 8 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 8 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 9 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 9 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 9 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 9 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 10 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 10 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 10 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 10 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 11 -1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 11 -1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 11 1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 resolved 11 1 Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 0 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 0 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 None local leakage coefficient",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 1 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 1 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 2 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 2 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 3 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 3 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 4 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 4 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 5 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 5 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 6 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 6 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 7 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 7 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 8 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 8 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 9 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 9 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 10 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 10 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 11 None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "rotor cube 2 coherent 11 None Gauss",
+      "passed": true
+    },
+    {
+      "name": "rotor cube n=2 resolved/coherent sums",
+      "passed": true
+    },
+    {
+      "name": "rotor cube n=2 allmark rate/leakage/electric",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=-1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=-1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=-1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=None norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=None leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=1 n=0 sign=None electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=-1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=-1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=-1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=None norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=None leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=-1 sign=None electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=-1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=-1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=-1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=None norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=None leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=3 n=1 sign=None electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=-1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=-1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=-1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=None norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=None leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=-4 sign=None electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=-1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=-1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=-1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=None norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=None leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=9 n=4 sign=None electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=-1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=-1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=-1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=1 norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=1 leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=1 electric mean",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=None norm formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=None leakage formula",
+      "passed": true
+    },
+    {
+      "name": "finite S=17 n=8 sign=None electric mean",
+      "passed": true
+    },
+    {
+      "name": "upper boundary selected plus leading output is zero",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=0 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen selected -1 leakage",
+      "passed": true
+    },
+    {
+      "name": "frozen selected -1 slow mean",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=0 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen selected 1 leakage",
+      "passed": true
+    },
+    {
+      "name": "frozen selected 1 slow mean",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=1 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=1 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=2 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=2 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=3 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=3 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=4 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=4 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=5 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=5 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=6 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=6 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=7 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=7 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=8 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=8 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=9 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=9 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=10 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=10 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=11 sign=-1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved e=11 sign=1 local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved total weight",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved total leakage",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved slow energy change",
+      "passed": true
+    },
+    {
+      "name": "frozen resolved microscopic energy derivative",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=0 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen selected None leakage",
+      "passed": true
+    },
+    {
+      "name": "frozen selected None slow mean",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=1 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=2 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=3 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=4 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=5 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=6 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=7 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=8 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=9 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=10 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent e=11 sign=None local cancellation",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent total weight",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent total leakage",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent slow energy change",
+      "passed": true
+    },
+    {
+      "name": "frozen coherent microscopic energy derivative",
+      "passed": true
+    },
+    {
+      "name": "ring 4 n=0 sign=-1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 4 n=0 sign=1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 4 n=0 sign=None leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 4 n=1 sign=-1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 4 n=1 sign=1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 4 n=1 sign=None leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 6 n=0 sign=-1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 6 n=0 sign=1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 6 n=0 sign=None leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 6 n=1 sign=-1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 6 n=1 sign=1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 6 n=1 sign=None leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 8 n=0 sign=-1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 8 n=0 sign=1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 8 n=0 sign=None leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 8 n=1 sign=-1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 8 n=1 sign=1 leading fast leakage vanishes",
+      "passed": true
+    },
+    {
+      "name": "ring 8 n=1 sign=None leading fast leakage vanishes",
+      "passed": true
+    }
+  ],
+  "rotor_selected_rows": [
+    {
+      "n": -3,
+      "kind": "resolved",
+      "sign": -1,
+      "weight": "2",
+      "leakage": "1",
+      "D_mean": "12",
+      "D_variance": "144"
+    },
+    {
+      "n": -3,
+      "kind": "resolved",
+      "sign": 1,
+      "weight": "2",
+      "leakage": "2",
+      "D_mean": "9",
+      "D_variance": "81"
+    },
+    {
+      "n": -3,
+      "kind": "coherent",
+      "sign": null,
+      "weight": "4",
+      "leakage": "3/2",
+      "D_mean": "21/2",
+      "D_variance": "459/4"
+    },
+    {
+      "n": 0,
+      "kind": "resolved",
+      "sign": -1,
+      "weight": "2",
+      "leakage": "1",
+      "D_mean": "0",
+      "D_variance": "0"
+    },
+    {
+      "n": 0,
+      "kind": "resolved",
+      "sign": 1,
+      "weight": "2",
+      "leakage": "2",
+      "D_mean": "0",
+      "D_variance": "0"
+    },
+    {
+      "n": 0,
+      "kind": "coherent",
+      "sign": null,
+      "weight": "4",
+      "leakage": "3/2",
+      "D_mean": "0",
+      "D_variance": "0"
+    },
+    {
+      "n": 2,
+      "kind": "resolved",
+      "sign": -1,
+      "weight": "2",
+      "leakage": "1",
+      "D_mean": "2",
+      "D_variance": "4"
+    },
+    {
+      "n": 2,
+      "kind": "resolved",
+      "sign": 1,
+      "weight": "2",
+      "leakage": "2",
+      "D_mean": "4",
+      "D_variance": "16"
+    },
+    {
+      "n": 2,
+      "kind": "coherent",
+      "sign": null,
+      "weight": "4",
+      "leakage": "3/2",
+      "D_mean": "3",
+      "D_variance": "11"
+    }
+  ],
+  "finite_spin_rows": [
+    {
+      "S": 1,
+      "n": 0,
+      "sign": -1,
+      "weight": "2",
+      "leakage": "1",
+      "slow_D_mean": "0",
+      "slow_D_variance": "0"
+    },
+    {
+      "S": 1,
+      "n": 0,
+      "sign": 1,
+      "weight": "2",
+      "leakage": "2",
+      "slow_D_mean": "0",
+      "slow_D_variance": "0"
+    },
+    {
+      "S": 1,
+      "n": 0,
+      "sign": null,
+      "weight": "4",
+      "leakage": "3/2",
+      "slow_D_mean": "0",
+      "slow_D_variance": "0"
+    },
+    {
+      "S": 3,
+      "n": -1,
+      "sign": -1,
+      "weight": "5/3",
+      "leakage": "11/12",
+      "slow_D_mean": "2",
+      "slow_D_variance": "4"
+    },
+    {
+      "S": 3,
+      "n": -1,
+      "sign": 1,
+      "weight": "2",
+      "leakage": "2",
+      "slow_D_mean": "1",
+      "slow_D_variance": "1"
+    },
+    {
+      "S": 3,
+      "n": -1,
+      "sign": null,
+      "weight": "11/3",
+      "leakage": "199/132",
+      "slow_D_mean": "16/11",
+      "slow_D_variance": "316/121"
+    },
+    {
+      "S": 3,
+      "n": 1,
+      "sign": -1,
+      "weight": "11/6",
+      "leakage": "1",
+      "slow_D_mean": "0",
+      "slow_D_variance": "0"
+    },
+    {
+      "S": 3,
+      "n": 1,
+      "sign": 1,
+      "weight": "55/36",
+      "leakage": "20/11",
+      "slow_D_mean": "12/11",
+      "slow_D_variance": "120/121"
+    },
+    {
+      "S": 3,
+      "n": 1,
+      "sign": null,
+      "weight": "121/36",
+      "leakage": "166/121",
+      "slow_D_mean": "60/121",
+      "slow_D_variance": "10920/14641"
+    },
+    {
+      "S": 9,
+      "n": -4,
+      "sign": -1,
+      "weight": "196/135",
+      "leakage": "37/42",
+      "slow_D_mean": "150/7",
+      "slow_D_variance": "19500/49"
+    },
+    {
+      "S": 9,
+      "n": -4,
+      "sign": 1,
+      "weight": "364/225",
+      "leakage": "13/7",
+      "slow_D_mean": "120/7",
+      "slow_D_variance": "12480/49"
+    },
+    {
+      "S": 9,
+      "n": -4,
+      "sign": null,
+      "weight": "2072/675",
+      "leakage": "4337/3108",
+      "slow_D_mean": "4965/259",
+      "slow_D_variance": "21937695/67081"
+    },
+    {
+      "S": 9,
+      "n": 4,
+      "sign": -1,
+      "weight": "208/135",
+      "leakage": "37/40",
+      "slow_D_mean": "27/2",
+      "slow_D_variance": "567/4"
+    },
+    {
+      "S": 9,
+      "n": 4,
+      "sign": 1,
+      "weight": "112/81",
+      "leakage": "7/4",
+      "slow_D_mean": "18",
+      "slow_D_variance": "252"
+    },
+    {
+      "S": 9,
+      "n": 4,
+      "sign": null,
+      "weight": "1184/405",
+      "leakage": "3893/2960",
+      "slow_D_mean": "2313/148",
+      "slow_D_variance": "4357647/21904"
+    },
+    {
+      "S": 17,
+      "n": 8,
+      "sign": -1,
+      "weight": "1250/867",
+      "leakage": "121/135",
+      "slow_D_mean": "952/15",
+      "slow_D_variance": "693056/225"
+    },
+    {
+      "S": 17,
+      "n": 8,
+      "sign": 1,
+      "weight": "390/289",
+      "leakage": "26/15",
+      "slow_D_mean": "1088/15",
+      "slow_D_variance": "905216/225"
+    },
+    {
+      "S": 17,
+      "n": 8,
+      "sign": null,
+      "weight": "2420/867",
+      "leakage": "42503/32670",
+      "slow_D_mean": "123148/1815",
+      "slow_D_variance": "11716433456/3294225"
+    }
+  ],
+  "macroscopic_flux": {
+    "u": "1-alpha^2, |alpha|<1",
+    "selected": {
+      "-1": {
+        "weight": "u*(u + 1)",
+        "leakage": "2*u/(u + 1)",
+        "slow_mean_scaled": "2*(1 - u)/(u + 1)",
+        "full_mean_scaled": "2/(u + 1)",
+        "mean_change_scaled": "2*(2*u**2 - 1)/(u + 1)"
+      },
+      "1": {
+        "weight": "u*(u + 1)",
+        "leakage": "4*u/(u + 1)",
+        "slow_mean_scaled": "2*(1 - u)/(u + 1)",
+        "full_mean_scaled": "2",
+        "mean_change_scaled": "4*u - 2"
+      },
+      "None": {
+        "weight": "2*u*(u + 1)",
+        "leakage": "3*u/(u + 1)",
+        "slow_mean_scaled": "2*(1 - u)/(u + 1)",
+        "full_mean_scaled": "(u + 2)/(u + 1)",
+        "mean_change_scaled": "(4*u**2 + u - 2)/(u + 1)"
+      }
+    },
+    "total_rate_over_kappa": "8*u*(u + 1) + 8*u + 24",
+    "total_fast_variance_coefficient": "36*u**2 + 36",
+    "energy_derivative_coefficient": "32*u**3 + 36*u**2 + 4"
+  },
+  "fixed_field_slow_band_rows": [
+    {
+      "n": 0,
+      "sign": -1,
+      "initial_H4_mean": "-84",
+      "initial_H4_variance": "48",
+      "post_H4_mean": "-14",
+      "post_H4_variance": "296",
+      "post_D_mean": "0",
+      "post_D_variance": "0",
+      "symmetrized_D_H4_covariance": "0"
+    },
+    {
+      "n": 0,
+      "sign": 1,
+      "initial_H4_mean": "-84",
+      "initial_H4_variance": "48",
+      "post_H4_mean": "-20",
+      "post_H4_variance": "392",
+      "post_D_mean": "0",
+      "post_D_variance": "0",
+      "symmetrized_D_H4_covariance": "0"
+    },
+    {
+      "n": 0,
+      "sign": null,
+      "initial_H4_mean": "-84",
+      "initial_H4_variance": "48",
+      "post_H4_mean": "-17",
+      "post_H4_variance": "353",
+      "post_D_mean": "0",
+      "post_D_variance": "0",
+      "symmetrized_D_H4_covariance": "0"
+    },
+    {
+      "n": 2,
+      "sign": -1,
+      "initial_H4_mean": "-84",
+      "initial_H4_variance": "48",
+      "post_H4_mean": "-14",
+      "post_H4_variance": "296",
+      "post_D_mean": "2",
+      "post_D_variance": "4",
+      "symmetrized_D_H4_covariance": "0"
+    },
+    {
+      "n": 2,
+      "sign": 1,
+      "initial_H4_mean": "-84",
+      "initial_H4_variance": "48",
+      "post_H4_mean": "-20",
+      "post_H4_variance": "392",
+      "post_D_mean": "4",
+      "post_D_variance": "16",
+      "symmetrized_D_H4_covariance": "0"
+    },
+    {
+      "n": 2,
+      "sign": null,
+      "initial_H4_mean": "-84",
+      "initial_H4_variance": "48",
+      "post_H4_mean": "-17",
+      "post_H4_variance": "353",
+      "post_D_mean": "3",
+      "post_D_variance": "11",
+      "symmetrized_D_H4_covariance": "-3"
+    }
+  ],
+  "degree_two_controls": [
+    {
+      "sites": 4,
+      "n": 0,
+      "sign": -1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 4,
+      "n": 0,
+      "sign": 1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 4,
+      "n": 0,
+      "sign": null,
+      "weight": "2",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 4,
+      "n": 1,
+      "sign": -1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 4,
+      "n": 1,
+      "sign": 1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 4,
+      "n": 1,
+      "sign": null,
+      "weight": "2",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 6,
+      "n": 0,
+      "sign": -1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 6,
+      "n": 0,
+      "sign": 1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 6,
+      "n": 0,
+      "sign": null,
+      "weight": "2",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 6,
+      "n": 1,
+      "sign": -1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 6,
+      "n": 1,
+      "sign": 1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 6,
+      "n": 1,
+      "sign": null,
+      "weight": "2",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 8,
+      "n": 0,
+      "sign": -1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 8,
+      "n": 0,
+      "sign": 1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 8,
+      "n": 0,
+      "sign": null,
+      "weight": "2",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 8,
+      "n": 1,
+      "sign": -1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 8,
+      "n": 1,
+      "sign": 1,
+      "weight": "1",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    },
+    {
+      "sites": 8,
+      "n": 1,
+      "sign": null,
+      "weight": "2",
+      "leakage": "0",
+      "output_grades": [
+        0
+      ]
+    }
+  ],
+  "summary": {
+    "passed": 375,
+    "failed": 0
+  }
+}

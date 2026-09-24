@@ -1,0 +1,29 @@
+[
+  {
+    "sign": -1,
+    "w": "2",
+    "ell": "1",
+    "norm_correction": "14",
+    "numerator6": "-12",
+    "full_finite_part": "-13",
+    "target_H4": "-14"
+  },
+  {
+    "sign": 1,
+    "w": "2",
+    "ell": "2",
+    "norm_correction": "14",
+    "numerator6": "-8",
+    "full_finite_part": "-18",
+    "target_H4": "-20"
+  },
+  {
+    "sign": null,
+    "w": "4",
+    "ell": "3/2",
+    "norm_correction": "28",
+    "numerator6": "-20",
+    "full_finite_part": "-31/2",
+    "target_H4": "-17"
+  }
+]

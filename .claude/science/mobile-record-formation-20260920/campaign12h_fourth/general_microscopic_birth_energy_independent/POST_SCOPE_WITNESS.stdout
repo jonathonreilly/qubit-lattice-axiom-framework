@@ -1,0 +1,82 @@
+{
+  "word": [
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ]
+  ],
+  "edge_order": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "S": 1,
+  "lambda": 0,
+  "initial_population": 2,
+  "initial_D": 8,
+  "rows": [
+    {
+      "instrument": "resolved",
+      "leading_total_rate": 12.0,
+      "leading_fast_energy_gain": 24.0,
+      "leading_slow_gain": 16.0,
+      "leading_slow_loss": 48.0,
+      "leading_scaled_power": -8.0,
+      "actual_scaled_power_at_epsilon_0_01": -7.983970548451441
+    },
+    {
+      "instrument": "coherent",
+      "leading_total_rate": 12.0,
+      "leading_fast_energy_gain": 24.0,
+      "leading_slow_gain": 16.0,
+      "leading_slow_loss": 48.0,
+      "leading_scaled_power": -8.0,
+      "actual_scaled_power_at_epsilon_0_01": -7.983970548451441
+    }
+  ],
+  "scope": "Exact leading finite-spin operator expectation plus direct finite-epsilon microscopic check. Shows that positivity established for the cube single-square family must not be extended to arbitrary graph/flux/input. This is not an S-to-infinity counterexample, a universal negative theorem, or a discrepancy in the released note.",
+  "all_assertions_passed": true
+}

@@ -1,0 +1,214 @@
+{
+  "all_assertions_passed": true,
+  "checks": 8946,
+  "dimension": 721,
+  "P_dimension": 309,
+  "matrix_rows": 54,
+  "operator_rows": [
+    {
+      "lambda": 0.0,
+      "epsilon": 0.04,
+      "instrument": "resolved",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 2.032778443834128,
+      "error_over_epsilon2": 1270.48652739633,
+      "hermiticity_defect": 1.0214329382307596e-12,
+      "minimum_predicted_operator_eigenvalue": -9.462800866581485,
+      "maximum_predicted_operator_eigenvalue": 144.0
+    },
+    {
+      "lambda": 0.0,
+      "epsilon": 0.04,
+      "instrument": "coherent",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 2.032778443829949,
+      "error_over_epsilon2": 1270.4865273937182,
+      "hermiticity_defect": 1.0214329382307596e-12,
+      "minimum_predicted_operator_eigenvalue": -9.462800866581485,
+      "maximum_predicted_operator_eigenvalue": 144.0
+    },
+    {
+      "lambda": 0.0,
+      "epsilon": 0.02,
+      "instrument": "resolved",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.5077493294786755,
+      "error_over_epsilon2": 1269.3733236966887,
+      "hermiticity_defect": 3.1804142652802625e-12,
+      "minimum_predicted_operator_eigenvalue": -9.462800866581485,
+      "maximum_predicted_operator_eigenvalue": 144.0
+    },
+    {
+      "lambda": 0.0,
+      "epsilon": 0.02,
+      "instrument": "coherent",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.507749329478981,
+      "error_over_epsilon2": 1269.3733236974524,
+      "hermiticity_defect": 3.1804142652802625e-12,
+      "minimum_predicted_operator_eigenvalue": -9.462800866581485,
+      "maximum_predicted_operator_eigenvalue": 144.0
+    },
+    {
+      "lambda": 0.0,
+      "epsilon": 0.01,
+      "instrument": "resolved",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.12690883547585807,
+      "error_over_epsilon2": 1269.0883547585806,
+      "hermiticity_defect": 1.581302450093247e-11,
+      "minimum_predicted_operator_eigenvalue": -9.462800866581485,
+      "maximum_predicted_operator_eigenvalue": 144.0
+    },
+    {
+      "lambda": 0.0,
+      "epsilon": 0.01,
+      "instrument": "coherent",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.12690883544449325,
+      "error_over_epsilon2": 1269.0883544449323,
+      "hermiticity_defect": 1.581302450093247e-11,
+      "minimum_predicted_operator_eigenvalue": -9.462800866581485,
+      "maximum_predicted_operator_eigenvalue": 144.0
+    },
+    {
+      "lambda": 0.5,
+      "epsilon": 0.04,
+      "instrument": "resolved",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 2.0012078695776885,
+      "error_over_epsilon2": 1250.7549184860552,
+      "hermiticity_defect": 8.411188412438264e-13,
+      "minimum_predicted_operator_eigenvalue": -6.66342989702843,
+      "maximum_predicted_operator_eigenvalue": 168.0
+    },
+    {
+      "lambda": 0.5,
+      "epsilon": 0.04,
+      "instrument": "coherent",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 2.0012078695758277,
+      "error_over_epsilon2": 1250.7549184848922,
+      "hermiticity_defect": 8.411188412438264e-13,
+      "minimum_predicted_operator_eigenvalue": -6.66342989702843,
+      "maximum_predicted_operator_eigenvalue": 168.0
+    },
+    {
+      "lambda": 0.5,
+      "epsilon": 0.02,
+      "instrument": "resolved",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.50104920178945,
+      "error_over_epsilon2": 1252.6230044736249,
+      "hermiticity_defect": 2.7581270600762764e-12,
+      "minimum_predicted_operator_eigenvalue": -6.66342989702843,
+      "maximum_predicted_operator_eigenvalue": 168.0
+    },
+    {
+      "lambda": 0.5,
+      "epsilon": 0.02,
+      "instrument": "coherent",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.5010492018022071,
+      "error_over_epsilon2": 1252.6230045055179,
+      "hermiticity_defect": 2.7581270600762764e-12,
+      "minimum_predicted_operator_eigenvalue": -6.66342989702843,
+      "maximum_predicted_operator_eigenvalue": 168.0
+    },
+    {
+      "lambda": 0.5,
+      "epsilon": 0.01,
+      "instrument": "resolved",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.12530594073414134,
+      "error_over_epsilon2": 1253.0594073414134,
+      "hermiticity_defect": 1.33836275395538e-11,
+      "minimum_predicted_operator_eigenvalue": -6.66342989702843,
+      "maximum_predicted_operator_eigenvalue": 168.0
+    },
+    {
+      "lambda": 0.5,
+      "epsilon": 0.01,
+      "instrument": "coherent",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.1253059407074367,
+      "error_over_epsilon2": 1253.0594070743668,
+      "hermiticity_defect": 1.33836275395538e-11,
+      "minimum_predicted_operator_eigenvalue": -6.66342989702843,
+      "maximum_predicted_operator_eigenvalue": 168.0
+    },
+    {
+      "lambda": 1.0,
+      "epsilon": 0.04,
+      "instrument": "resolved",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 1.915331702475792,
+      "error_over_epsilon2": 1197.08231404737,
+      "hermiticity_defect": 9.577061366172757e-13,
+      "minimum_predicted_operator_eigenvalue": -5.799373176513777,
+      "maximum_predicted_operator_eigenvalue": 192.0
+    },
+    {
+      "lambda": 1.0,
+      "epsilon": 0.04,
+      "instrument": "coherent",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 1.9153317024756082,
+      "error_over_epsilon2": 1197.082314047255,
+      "hermiticity_defect": 9.577061366172757e-13,
+      "minimum_predicted_operator_eigenvalue": -5.799373176513777,
+      "maximum_predicted_operator_eigenvalue": 192.0
+    },
+    {
+      "lambda": 1.0,
+      "epsilon": 0.02,
+      "instrument": "resolved",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.481004709933131,
+      "error_over_epsilon2": 1202.5117748328273,
+      "hermiticity_defect": 4.586331314726522e-12,
+      "minimum_predicted_operator_eigenvalue": -5.799373176513777,
+      "maximum_predicted_operator_eigenvalue": 192.0
+    },
+    {
+      "lambda": 1.0,
+      "epsilon": 0.02,
+      "instrument": "coherent",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.48100470992353356,
+      "error_over_epsilon2": 1202.511774808834,
+      "hermiticity_defect": 4.586331314726522e-12,
+      "minimum_predicted_operator_eigenvalue": -5.799373176513777,
+      "maximum_predicted_operator_eigenvalue": 192.0
+    },
+    {
+      "lambda": 1.0,
+      "epsilon": 0.01,
+      "instrument": "resolved",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.12038296643869323,
+      "error_over_epsilon2": 1203.8296643869323,
+      "hermiticity_defect": 1.2615242184210729e-11,
+      "minimum_predicted_operator_eigenvalue": -5.799373176513777,
+      "maximum_predicted_operator_eigenvalue": 192.0
+    },
+    {
+      "lambda": 1.0,
+      "epsilon": 0.01,
+      "instrument": "coherent",
+      "all_low_columns": 309,
+      "scaled_power_operator_error_norm": 0.12038296640851265,
+      "error_over_epsilon2": 1203.8296640851265,
+      "hermiticity_defect": 1.2615242184210729e-11,
+      "minimum_predicted_operator_eigenvalue": -5.799373176513777,
+      "maximum_predicted_operator_eigenvalue": 192.0
+    }
+  ],
+  "author_comparison": {
+    "all_36_complete_author_rows_compared": true,
+    "all_6_author_two_birth_rows_compared": true,
+    "numeric_fields": 4014,
+    "maximum_absolute_difference": 9.739267170516541e-10,
+    "maximum_relative_difference": 9.739267170516541e-10
+  }
+}

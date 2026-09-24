@@ -1,0 +1,10 @@
+{
+  "scope": "provenance checks only",
+  "tests": {
+    "genuine_accepted": true,
+    "altered_digest_rejected": true,
+    "missing_file_rejected": true,
+    "outside_packet_rejected": true
+  },
+  "passed": true
+}

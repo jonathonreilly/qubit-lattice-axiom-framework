@@ -1,0 +1,108 @@
+{
+  "created_utc": "2026-09-24T03:57:14.637998+00:00",
+  "temporary_copy": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/campaign12h_fourth",
+  "runs": [
+    {
+      "script": "general_microscopic_birth_energy_author/local_leakage_control.py",
+      "source_sha256": "b7d38235d4521f98fc42f23c414649e1e2553b53ec9e3cd9d834a43cdc1c6c00",
+      "exit_code": 0,
+      "wall_seconds": 0.7731720828451216,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_1.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_1.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "7bb43ba4f6bf37490c52413eb68f5f2d970c3d095d6be44dbcaa46094b8a3a06"
+    },
+    {
+      "script": "general_microscopic_birth_energy_author/complete_two_center_control.py",
+      "source_sha256": "1417a8ac223f888891d2c19b9796096137a7f75e938a1174e999446082dbf00a",
+      "exit_code": 0,
+      "wall_seconds": 3.369290541158989,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_2.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_2.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "aae211583a95b185f09fc5aadba13bf6f8e0712b3bbfc2fb8d546f243e0d00b1"
+    },
+    {
+      "script": "general_microscopic_birth_energy_independent/path_control.py",
+      "source_sha256": "ba2399d47a2156b19026629969ba1d72c5ef41f10e13786842821a1f3a0a5309",
+      "exit_code": 0,
+      "wall_seconds": 6.857764333020896,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_3.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_3.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "8b488254050b8ac9410577972f209c7953aa988fec15598209c2954497a4e393"
+    },
+    {
+      "script": "general_microscopic_birth_energy_independent/matrix_control_run01.py",
+      "source_sha256": "bac0bf0db2652d1a4de40557603eb44202a4139fb0f077983e697480aad2f730",
+      "exit_code": 0,
+      "wall_seconds": 1.0014064579736441,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_4.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_4.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "026115f29ecc5e85ac73975b671a5ca6d1f01c1671534c81c18571083c5c848d"
+    },
+    {
+      "script": "general_microscopic_birth_energy_independent/ring_higher_order.py",
+      "source_sha256": "af13f89f9e534c53414e9d56b56f008f03a9e1d3024e8f68aabfb10efa13130f",
+      "exit_code": 0,
+      "wall_seconds": 2.152889708057046,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_5.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_5.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "5322bdbc2bf4d1cf61ac1f4efef860ce33801751aa25593c66ca3881d7773d89"
+    },
+    {
+      "script": "general_microscopic_birth_energy_independent/frozen_cube_control.py",
+      "source_sha256": "5691cef2de71c8257b99045da964f72bd84421e536db3b619721fb65188601ec",
+      "exit_code": 0,
+      "wall_seconds": 1.1888757499400526,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_6.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_6.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "460a0c186c78951f822828a3d15f2d0a193dc0c35b21cf854090873cd9fc73f8"
+    },
+    {
+      "script": "general_microscopic_birth_energy_independent/cube_subleading_control.py",
+      "source_sha256": "ceb45d441bd8295d64d92599482c0636693d0da4c181948e564c44dba39f033e",
+      "exit_code": 0,
+      "wall_seconds": 2.8575486668851227,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_7.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_7.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "8d8dda2487fb00c8ca2d77e4e19dd707cd11b455f61fee72c169a1a2fc8e11a7"
+    },
+    {
+      "script": "general_microscopic_birth_energy_independent/post_path_compare.py",
+      "source_sha256": "27e43b4bd26749fd43301a7c958084a43fc53d6094833a357c7a693fc3c2bb73",
+      "exit_code": 0,
+      "wall_seconds": 1.670476500177756,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_8.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_8.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "b98174c341ed9e555daa14356d27056a236c28fee9b190e2ee8f0caf3ec61c7c"
+    },
+    {
+      "script": "general_microscopic_birth_energy_independent/post_complete_k24.py",
+      "source_sha256": "cdf66568b3dadaad1a08437c1855153d28ce620888f1f7bf300801b42d133418",
+      "exit_code": 0,
+      "wall_seconds": 2.277420291909948,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_9.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_9.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "815a4a1355b48b51e45b9de7d94d3793ed1b49af0c1bc19c8bd8dc9d5456642d"
+    },
+    {
+      "script": "general_microscopic_birth_energy_independent/post_scope_witness.py",
+      "source_sha256": "9f3baaf4341a511fdb235b6ac7fc2d4e6d74ddea6e08eee8f3a48415987ffe8d",
+      "exit_code": 0,
+      "wall_seconds": 0.8385907500050962,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_10.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/general-microscopic-portable-37uy804x/run_10.stderr",
+      "comparison": "All scientific JSON fields compared; only top-level creation time excluded. Numeric roundoff: rel2e-8, abs2e-10; strings, booleans, keys and sizes exact.",
+      "result_sha256": "be1f8a7bdaeed446689b14e95050d37b6d518e3c97dd090dd528ca15568ea70a"
+    }
+  ],
+  "all_ten_scientific_replays_passed": true,
+  "limits": "Replays test consistency, not new independence; procedural sealing wrappers are not rerun with omitted instruction snapshots."
+}

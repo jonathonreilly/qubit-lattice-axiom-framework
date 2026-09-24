@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-09-24T03:46:32.101177+00:00",
+  "fixed_deadline_utc": "2026-09-24 04:59:48 UTC",
+  "model_reasoning": "Inherited model and reasoning retained throughout; no subagent execution.",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "libraries": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "scientific_commands": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 post_path_compare.py",
+      "attempt": 1,
+      "exit_code": 1,
+      "preserved_runner": "post_path_compare_run01.py",
+      "stdout": "POST_PATH_COMPARISON_01.stdout",
+      "stderr": "POST_PATH_COMPARISON_01.stderr",
+      "failure": "Structural SymPy expression equality; exact identity valid."
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 post_path_compare.py",
+      "attempt": 2,
+      "exit_code": 0,
+      "stdout": "POST_PATH_COMPARISON_02.stdout",
+      "stderr": "POST_PATH_COMPARISON_02.stderr",
+      "result": "POST_PATH_COMPARISON_RESULTS.json"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 post_complete_k24.py",
+      "attempt": 1,
+      "exit_code": 0,
+      "stdout": "POST_COMPLETE_K24_01.stdout",
+      "stderr": "POST_COMPLETE_K24_01.stderr",
+      "result": "POST_COMPLETE_K24_RESULTS_01.json"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 post_scope_witness.py",
+      "attempt": 1,
+      "exit_code": 0,
+      "stdout": "POST_SCOPE_WITNESS.stdout",
+      "stderr": "POST_SCOPE_WITNESS.stderr",
+      "result": "POST_SCOPE_WITNESS.json"
+    }
+  ],
+  "prior_PRE_artifacts_reauthenticated": 52,
+  "author_artifacts_reauthenticated": 12,
+  "author_sources_reauthenticated": 8,
+  "current_instructions": {
+    "AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+  },
+  "post_scientific_assertion_failures_retained": 1,
+  "post_packaging_failures_retained": 1,
+  "status": "Bounded POST reconstruction complete; no correction required in released leading claims under stated premises. No audit or publication verdict."
+}

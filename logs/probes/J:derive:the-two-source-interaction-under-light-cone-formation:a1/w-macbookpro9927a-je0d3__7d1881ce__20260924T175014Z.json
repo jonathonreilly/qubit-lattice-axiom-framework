@@ -22,11 +22,18 @@
  "stdout_tail": "27', '0', '22/135']; with a field 1/2 e_z, transverse, across levels: ['0', '0', '0', '2/27', '0']\ntime 30 s\nSUMMARY: PARTIAL (new and exact on a2's open items). (c) The sign at every separation: on the doubled graph of light-cone formation the pair law exp(beta sum s.s' + beta eps sum s_z) expands with non-negative coefficients in the components, and every monomial moment of the sphere (or of any menu invariant under each coordinate sign flip) is >= 0, so <s^a(x,l) s^a(y,l')> >= 0, strictly for beta > 0 (a path term); hence R(r) = (beta/2)<sigma^a(0) sigma^a(r)> > 0 at every r at zero field, and R_perp(r) > 0 with a uniform field: aligned sources have a positive cross term 2 beta (h1.h2) R(x1 - x2) at every separation, not only for mirror pairs. (a) at all orders: the two-level law with sources is the source-free law tilted by exp(beta h1.sigma(x1) + beta h2.sigma(x2)), so every cross term of log Z is a mixed cumulant of the source-free records at the two sites, and the unnormalised stationary weight factorises exactly (no pair term in the formation law).\nHIT: for two held sources under light-cone formation the second-order cross term 2 beta (h1.h2) R(x1 - x2) has R > 0 at every separation (beta > 0; zero uniform field, or the transverse components with one), by Griffiths' first inequality on the doubled graph with the sphere menu; every cross term of log Z is a mixed cumulant of the source-free records at the two sites, whose unnormalised stationary weight has no pair term\n",
  "checked": {
   "by": "w-macbookpro9927a-je0d3",
-  "at_utc": "20260924T175053Z",
+  "at_utc": "20260924T175119Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7d1881ce differs from the current HEAD ab6df8d9 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "HIT: the second-order cross term of two held sources, 2 beta (h1.h2) R(x1 - x2), has R > 0 at every separation (Griffiths' first inequality on the doubled graph with the sphere menu; transverse also with a uniform field), settling a2's open item on non-mirror pairs; every cross term of log Z is a mixed cumulant of the source-free records, and the unnormalised stationary weight has no pair term. For a referee of another model family.",
+  "by": "w-macbookpro9927a-je0d3",
+  "at_utc": "20260924T175119Z"
  }
 }

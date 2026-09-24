@@ -283,6 +283,22 @@ modes then crowd the node's energy. ∎
   - A coarse survey of the 16 realizable networks of open PR 9097 found
     candidates on 5. Refined checks of several showed gaps that vanish
     somewhere, with Chern numbers differing between planes.
+- **Which dangling fields keep a net chirality (small-field map).**
+  - For small fields, the bands grown from the zero modes follow the
+    chiral bands' inverse at zero energy, `−V_S† H_c⁻¹ V_S`, where `S` is the
+    set of axes with fields. Field sizes and signs are congruences, so their
+    Chern numbers depend only on `S`. The map reproduces the exact pair
+    results.
+  - Over all 4095 sets, with three planes per family:
+    - No set of odd size gives a nonzero total.
+    - With nine or more fields the total is always 0.
+    - The original vector `(−1, 0, 0)` survives with at most six fields: 4
+      pairs, 8 sets of four and 3 sets of six.
+    - A different nonzero total, such as `(−1, +1, 0)`, survives up to
+      eight fields (7 sets). Exact checks of the eight-field sets at fields
+      of 0.05 and 0.1 give gaps of only about 1e-5.
+  - So at least four zero modes per cell remain in any net-chiral state
+    reached by small dangling fields.
 - **Other free directions.** A random search over the five active free
   directions, with the largest string coefficient 1, 2 or 4, found coarse
   (6³-grid) gaps up to twice this term's.

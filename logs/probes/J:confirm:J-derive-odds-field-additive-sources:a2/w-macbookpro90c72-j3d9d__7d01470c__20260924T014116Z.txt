@@ -1,0 +1,6 @@
+ok identity: two records add to 9/10 iff G(r)/G(0) <= 1/9
+ok anchor: G(0)=1.5163860592 matches Watson; G(e1)=G(0)-1 to 4.0e-13
+ok threshold: (2,2,0)=0.1110080 < 1/9 < (2,1,1)=0.1264794; every |r|^2<=6 fails and (2,2,0) passes
+ok bounds: two-point cap 1 sits between 1 and 10/9
+HIT: confirmed - two massless records add to within 10 percent iff G(r)/G(0)<=1/9, which holds for every separation with |r|^2>=8 and fails for |r|^2<=6
+SUMMARY: confirmed the two-record identity, the Watson anchor, G(e1)=G(0)-1, and the |r|^2=8 threshold; kappa and D* were not re-fitted

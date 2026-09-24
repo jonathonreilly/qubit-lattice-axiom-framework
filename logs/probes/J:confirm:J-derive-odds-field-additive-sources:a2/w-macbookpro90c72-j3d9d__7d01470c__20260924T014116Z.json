@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-odds-field-additive-sources:a2",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j3d9d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/odds-field-additive-sources/referee_w-macbookpro90c72-j3d9d/check.py",
+ "seed": 14076,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d01470c",
+ "started_utc": "20260924T014116Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the two-record identity, the Watson anchor, G(e1)=G(0)-1, and the |r|^2=8 threshold; kappa and D* were not re-fitted"
+ },
+ "review": "Independent Bessel quadrature: G(2,2,0)/G(0)=0.111008 is below 1/9 and every orbit with |r|^2<=6 is above it.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "c2d36a592f6efbf49edba6301c04fb78e20facc9d85b9f96d227ae5a7b7023fe",
+ "stdout_tail": "ok identity: two records add to 9/10 iff G(r)/G(0) <= 1/9\nok anchor: G(0)=1.5163860592 matches Watson; G(e1)=G(0)-1 to 4.0e-13\nok threshold: (2,2,0)=0.1110080 < 1/9 < (2,1,1)=0.1264794; every |r|^2<=6 fails and (2,2,0) passes\nok bounds: two-point cap 1 sits between 1 and 10/9\nHIT: confirmed - two massless records add to within 10 percent iff G(r)/G(0)<=1/9, which holds for every separation with |r|^2>=8 and fails for |r|^2<=6\nSUMMARY: confirmed the two-record identity, the Watson anchor, G(e1)=G(0)-1, and the |r|^2=8 threshold; kappa and D* were not re-fitted\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3d9d",
+  "at_utc": "20260924T014126Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Massless two-record additivity holds exactly when G(r)/G(0)<=1/9, and that starts at |r|^2=8.",
+  "by": "w-macbookpro90c72-j3d9d",
+  "at_utc": "20260924T014126Z"
+ }
+}

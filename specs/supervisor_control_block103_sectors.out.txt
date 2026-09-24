@@ -1,0 +1,38 @@
+check K_m against the sphere integral at one pair of points (b=1):
+  m=0: direct 0.862789063614351 bessel 0.862789063614351
+  m=1: direct 0.329081415690338 bessel 0.329081415690338
+  m=2: direct 0.066112530552672 bessel 0.066112530552672
+massless point 6 L = 1 at beta0 = 0.508558061785581
+
+no vacancies: M, per-neighbour tops by sector (x6), longitudinal mass
+ beta     M        6mu(m=1)          6mu(m=1,2nd)  6mu(m=0)  mL^2     6mu(m=2)  6mu(m=3)
+ 0.515  0.135303 0.999999999999964 0.1008        0.9760      0.148  0.1018    0.0074   (m0 top 1.000000000000)
+ 0.52   0.179035 0.999999999999968 0.1006        0.9579      0.263  0.1024    0.0075   (m0 top 1.000000000000)
+ 0.53   0.241666 0.999999999999969 0.1003        0.9234      0.497  0.1036    0.0078   (m0 top 1.000000000000)
+ 0.6    0.456330 0.999999999999969 0.0969        0.7309      2.209  0.1114    0.0092   (m0 top 1.000000000000)
+ 0.8    0.670750 0.999999999999963 0.0840        0.4607      7.023  0.1273    0.0128   (m0 top 1.000000000000)
+ 1.0    0.757716 0.999999999999954 0.0725        0.3595     10.689  0.1368    0.0155   (m0 top 1.000000000000)
+ 2.0    0.891896 0.999999999999908 0.0481        0.2395     19.054  0.1535    0.0217   (m0 top 1.000000000000)
+ 4.0    0.948164 0.999999999999818 0.0374        0.1995     24.073  0.1605    0.0248   (m0 top 1.000000000000)
+
+near the point: mL^2/(12 eps) and M^2 against the third-order law
+ b=0.509: eps=8.399e-04  M^2/law=1.0010  mL^2/(12 eps)=1.0004  screened m^2 at -eps: 5.044e-03
+ b=0.51: eps=2.740e-03  M^2/law=1.0033  mL^2/(12 eps)=1.0013  screened m^2 at -eps: 1.649e-02
+ b=0.512: eps=6.540e-03  M^2/law=1.0078  mL^2/(12 eps)=1.0032  screened m^2 at -eps: 3.950e-02
+ b=0.515: eps=1.224e-02  M^2/law=1.0145  mL^2/(12 eps)=1.0060  screened m^2 at -eps: 7.433e-02
+
+vacancies at g = 1: the point where the lean's birth turns abrupt
+ beta_t = 0.957910880617, rho_t = 0.553095169776
+ b=0.95: ordered branch at rho=1.001 rho_c needs log z - log z_c = +2.91e-05
+ b=0.96: ordered branch at rho=1.001 rho_c needs log z - log z_c = -6.34e-06
+
+vacancies: mass-channel strength (1-rho)(1-<b^5>/<b^6>) against the block's own entry; turn stays 1/6
+ (1.0,0.9): M=0.7263 entry=3.114438e-02 formula=3.114438e-02 6*turn=1.0000000000000 6mu0=0.5640
+ (2.0,0.9): M=0.8852 entry=6.112530e-02 formula=6.112530e-02 6*turn=0.9999999999999 6mu0=0.5093
+ (4.0,0.95): M=0.9474 entry=4.053296e-02 formula=4.053296e-02 6*turn=0.9999999999998 6mu0=0.3194
+ (0.7,0.9): M=0.5077 entry=1.236770e-02 formula=1.236770e-02 6*turn=1.0000000000000 6mu0=0.7491
+
+massless surface of the density-lean block (6 mu0 = 1), and the mass source's share on that mode
+ b=1.0: ordering from rho_c=0.5324; sign of 6mu0-1 at rho_c+ +0.001, at 0.995 -0.631; rho*=0.57228 (M=0.3464, share 0.96)
+ b=2.0: ordering from rho_c=0.3102; sign of 6mu0-1 at rho_c+ +0.039, at 0.995 -0.753; rho*=0.74417 (M=0.8692, share 0.90)
+ b=4.0: ordering from rho_c=0.2220; sign of 6mu0-1 at rho_c+ +0.852, at 0.995 -0.795; rho*=0.79781 (M=0.9445, share 0.95)

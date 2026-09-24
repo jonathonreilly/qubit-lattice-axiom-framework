@@ -1,0 +1,12 @@
+beta=0.6 L=17 grid 480 points; K1 1 - 1 max 3.3e-16
+uniform ordered sea: M = 0.456330
+top per-neighbour eigenvalues x6 (all sectors on the grid): 1.000000 1.000000 0.730872 0.111408 0.111408 0.096920
+
+two misaligned records (content e_x) against one: far-field charge ratio vs the box capacity ratio
+  s0=[1. 0. 0.]: 108 iterations, residual 8.7e-12, 22 s
+  s0=[1. 0. 0.]: 103 iterations, residual 9.4e-12, 19 s
+  adjacent along x: T2/T1 at far sites 1.2794 1.4662 1.4662 1.3329 1.7458 | h2/h1 1.2982 1.4896 1.4896 1.3529 1.7726 | box capacities c2/c1 = 1.5189 (c1 = 0.68303) | T2/h2 far 1.1029 1.1016 1.1016 1.1035 1.1029
+  s0=[1. 0. 0.]: 103 iterations, residual 9.4e-12, 21 s
+  adjacent along z: T2/T1 at far sites 1.4662 1.4662 1.2794 1.4726 1.3705 | h2/h1 1.4896 1.4896 1.2982 1.4954 1.3914 | box capacities c2/c1 = 1.5189 (c1 = 0.68303) | T2/h2 far 1.1016 1.1016 1.1029 1.1029 1.1030
+  s0=[1. 0. 0.]: 102 iterations, residual 9.7e-12, 19 s
+  two apart along y: T2/T1 at far sites 1.5980 1.3004 1.5980 1.3764 1.7000 | h2/h1 1.6324 1.3246 1.6324 1.4031 1.7361 | box capacities c2/c1 = 1.7558 (c1 = 0.68303) | T2/h2 far 1.0956 1.0987 1.0956 1.0986 1.0966

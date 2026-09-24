@@ -1,0 +1,25 @@
+# Block 103 — results (2026-09-23)
+
+- **Runner.** `scripts/admissibility_rule_possibilitys_odds_carry_content_not_record_count_at_long_range_2026_09_23.py`: `TOTAL: PASS=13 FAIL=0` (~10 s). Nine mutations, each failing in its own family.
+- **T1.**
+  - λ_ℓ is the zonal integral; λ₁ = coth β − 1/β.
+  - The ratio identity (the mean of t under e^{βt}(1−t²)^{ℓ−1}) gives the strict ordering.
+  - 5085/10000 < β₀ < 5086/10000, from rational bounds on positive series.
+- **T2.**
+  - B = −10λ₁²/(6λ₂−1) and c₃ = −6λ₁³(38λ₂−3)/(6λ₂−1), which is < 0 at β₀ because λ₂(β₀) < 86/5086.
+  - The size mode has per-neighbour eigenvalue (1−2ε)/6, so m² = 12ε: twice the screened side's.
+- **T3.**
+  - The turn's eigenvalue is exactly 1/6, since 6F K₁δ/g = δ when F = g⁶/⟨g⁶⟩.
+  - A record's first-order source is β s_⊥·s₀⊥.
+  - Aligned records and rotation-invariant sources, such as a count, feed only m = 0.
+- **T4.** Capacities on the 5³ box: 99/136 (one record), 15061186701/13100122654 (two adjacent), 271544816042337/105514222123304 (a 2×2×2 cube). They do not add.
+- **T5.**
+  - At g = 1, λ → ρλ.
+  - The mass channel's strength is (1−ρ)(1−⟨b⁵⟩/⟨b⁶⟩) > 0, in m = 0 only.
+  - At fixed z the cubic coefficient is c₃(ρλ) + 30λ₁³ρ³(1−ρ), which equals Φ/(216λ₁(λ₁−λ₂)) on the ordering line.
+  - Φ changes sign between 9579/10000 and 9580/10000.
+- **Controls** (in `specs/`).
+  - Sectors, by a Bessel-kernel route: every worker number reproduced; the turn at 1/6 to 10⁻¹³.
+  - Nonlinear odds on 17³ and 21³ boxes with one held record. Tilted: T/h flat at 1.1195 and 1.3443. Aligned: T < 10⁻¹⁴, and δM decays with m_L².
+  - Two records: the capacity shape holds to within 2%.
+  - Six-axis menu: the tilt is massive (2.18, 28.7, 278).

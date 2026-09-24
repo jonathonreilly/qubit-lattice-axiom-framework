@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_possibilitys_odds_carry_content_not_record_count_at_long_range_2026_09_23.py
+runner_sha256: f158abc795221f84fc2e6483aa588c22875550b0aad1edb3f95ee6f444828048
+input_fingerprint_sha256: b65c95c0207d2664aa52d39c83bd0ec5ee34dc0e25bbb076e659226b71bea88a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 13.67
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_POSSIBILITYS_ODDS_CARRY_CONTENT_NOT_RECORD_COUNT_AT_LONG_RANGE_A_MASSLESS_TURN_CHANNEL_IN_THE_ORDERED_SEA_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the distribution sentence, no privileged possibility, one record per site, an unrecorded site unreadable (the sentences block 42's reading works from)
+PASS: B1 T1(a): on the sphere menu with pair weight exp(beta s.b), the one-neighbour operator multiplies degree-l harmonics by lambda_l = (1/2) int e^(beta t) P_l(t) dt/(sinh(beta)/beta): lambda_0 = 1, lambda_1 = coth(beta) - 1/beta = beta/3 - beta^3/45 + 2 beta^5/945 - ..., and lambda_(l+1) = lambda_(l-1) - (2l + 1) lambda_l/beta (checked to l = 4, symbolic); summed over six neighbours a wave k in channel l has eigenvalue lambda_l (6 - E(k))
+PASS: B2 T1(b): lambda_l/lambda_(l-1) equals the mean of t under the weight e^(beta t)(1 - t^2)^(l-1) on [-1, 1] (checked to l = 4, symbolic), so 1 > lambda_1 > lambda_2 > ... > 0 for every beta > 0; d lambda_1/d beta = 1/beta^2 - 1/sinh(beta)^2 > 0; rational bounds on lambda_1 give 6 lambda_1 < 1 at beta = 5085/10000 and 6 lambda_1 > 1 at beta = 5086/10000: the lean loses its mass term at exactly one point beta0, which lies strictly between them
+PASS: C1 T2: writing the leaning odds f = 1 + a P_1 + B a^2 P_2 + ..., the exact equation f = (K_1 f)^6/<(K_1 f)^6> gives B = -10 lambda_1^2/(6 lambda_2 - 1) and a = 6 lambda_1 a + c3 a^3 + ..., c3 = -6 lambda_1^3 (38 lambda_2 - 3)/(6 lambda_2 - 1); at the massless point lambda_2 = 1 - 1/(2 beta0) < 86/5086 < 3/38, so c3 < 0 and the lean is born continuously, M^2 = (6 lambda_1 - 1)/(9|c3|) to leading order; the lean's size mode then has per-neighbour eigenvalue (1 - 2 eps)/6 with eps = 6 lambda_1 - 1, mass^2 12 eps, twice the screened side's at the same distance (symbolic)
+PASS: C2 T5: with 'no record' a seventh possibility at the neutral scale, the content map at density rho is the map with every lambda_k -> rho lambda_k; at fixed formation odds the density rises with the lean by 5 rho^3 (1 - rho) lambda_1^2 a^2, which adds 30 lambda_1^3 rho^3 (1 - rho) to the cubic coefficient; on the ordering line 6 rho lambda_1 = 1 that coefficient is Phi/(216 lambda_1 (lambda_1 - lambda_2)) with Phi = 12 lambda_1^2 + 8 lambda_1 lambda_2 - 5 lambda_1 + 5 lambda_2, which changes sign between beta = 9579/10000 and 9580/10000 (rational bounds): the lean's birth turns abrupt there; in the ordered sea a record's own first-order pull on its neighbours' odds of holding a record is (1 - rho)(1 - <b^5>/<b^6>) = (5/3) rho^2 lambda_1^2 a^2 (1 - rho) + ... > 0, zero in the isotropic sea (symbolic)
+PASS: D1 T3: every turn of an ordered solution is a solution, and the turn delta = sqrt(1 - t^2) f'(t) cos(phi) obeys K_1 delta = sqrt(1 - t^2) g'(t) cos(phi) with g = K_1 f, so 6 f (K_1 delta)/g = delta whenever f = g^6/<g^6>, with no mean term (it averages to zero around the lean): the turn is an eigenvector with eigenvalue exactly 1/6 per neighbour at every beta past the massless point, a channel with no mass term; a record of content s0 replaces its neighbour's factor g(t) by e^(beta s.s0), whose part turning once around the lean is exactly beta sqrt(1 - t^2) sqrt(1 - t0^2) cos(phi), zero for every s iff the record is aligned with the lean; P_l^1(+-1) = 0 for l = 1..7; a source unchanged by the rotations about the lean (a record count) has no such part
+PASS: E1 T4: in the massless channel a record held as a boundary value makes each unformed site take the average of its neighbours, so a body's field is its common lean times the probability that a walk reaches it, and its charge is the body's capacity: exactly 99/136 for one record on a 5^3 box, 15061186701/13100122654 for two adjacent records, 271544816042337/105514222123304 for a 2x2x2 cube; per record the capacity falls as the body grows - capacities do not add
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the one-neighbour eigenvalues to degree four, their recurrence and ordering identity (symbolic); rational bounds at four points
+per_site: executed - exact capacities on a 5^3 box (every free site solved in rationals); control: the nonlinear odds at every site of 17^3 and 21^3 boxes
+per_mode: executed - the lean's third-order expansion with and without vacancies; the turn identity; a record's first-order source by azimuthal order; control: the ordered sea's spectrum by sector
+per_block: executed - one record, two adjacent records and a 2x2x2 cube as bodies; control: one and two held records
+lattice_wide: T1-T3 and T5 at every beta within scope (symbolic, rational brackets) on Z^3; T4 on the box; block 42's reading and, for T5, the neutral scale supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: possibility's odds on the sphere menu - lambda_l = i_l/i_0; the lean massless where 6 lambda_1 = 1 and born continuously past it; in the ordered sea the turn channel carries content without a mass term, a record count feeds only massive channels; bodies charge the massless channel by capacity, not by count; nothing adopted
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

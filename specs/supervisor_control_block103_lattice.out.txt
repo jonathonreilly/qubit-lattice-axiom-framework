@@ -1,0 +1,53 @@
+beta=0.6 L=17 grid 480 points; K1 1 - 1 max 3.3e-16
+uniform ordered sea: M = 0.456330
+top per-neighbour eigenvalues x6 (all sectors on the grid): 1.000000 1.000000 0.730872 0.111408 0.111408 0.096920
+
+misaligned record (content perpendicular to the lean): T/h along the axis and the diagonal
+  s0=[1. 0. 0.]: 108 iterations, residual 8.7e-12, 22 s
+   axis x : 1.05056 1.09174 1.10931 1.11581 1.11824 1.11919 1.11954
+   axis y : 1.05056 1.09174 1.10931 1.11581 1.11824 1.11919 1.11954
+   diag   : 1.09533 1.11608 1.11938 1.12003
+   T along x (raw): 3.330e-01 1.529e-01 8.549e-02 5.259e-02 3.303e-02 1.960e-02 9.168e-03
+   dM along x (raw): -1.238e-01 -3.432e-02 -1.098e-02 -4.007e-03 -1.560e-03 -5.842e-04 -1.731e-04
+  s0=[0.7071 0.     0.7071]: 100 iterations, residual 9.4e-12, 22 s
+   axis x : 0.65535 0.64126 0.63832 0.63785 0.63783 0.63786 0.63787
+   axis y : 0.65535 0.64126 0.63832 0.63785 0.63783 0.63786 0.63787
+   diag   : 0.63648 0.63704 0.63762 0.63777
+   T along x (raw): 2.077e-01 8.979e-02 4.919e-02 3.006e-02 1.884e-02 1.117e-02 5.224e-03
+   dM along x (raw): +1.818e-02 -1.804e-03 -1.952e-03 -1.003e-03 -4.479e-04 -1.776e-04 -5.374e-05
+
+aligned record (content along the lean): T and dM along the axis; dM ratios against the massive box function
+  s0=[0. 0. 1.]: 47 iterations, residual 8.6e-12, 10 s
+  m = 0 top (after the normalisation mode) 6mu = 0.730872, mL^2 = 2.2094
+   T along x (should vanish): -5.1e-15 -6.7e-15 -7.1e-15 -7.9e-15 -7.7e-15 -6.9e-15 -6.3e-15
+   dM along x: +7.530e-02 +1.172e-02 +1.996e-03 +3.661e-04 +7.129e-05 +1.451e-05 +2.928e-06
+   dM ratio r/(r-1): 0.1556 0.1703 0.1834 0.1947 0.2036 0.2017
+   massive box G ratio: 0.1579 0.1713 0.1840 0.1951 0.2039 0.2019
+   massless h ratio:    0.4417 0.5504 0.6116 0.6267 0.5929 0.4676
+
+beta=1.0 L=21 grid 480 points; K1 1 - 1 max 3.3e-16
+uniform ordered sea: M = 0.757716
+top per-neighbour eigenvalues x6 (all sectors on the grid): 1.000000 1.000000 0.359509 0.136766 0.136766 0.072530
+
+misaligned record (content perpendicular to the lean): T/h along the axis and the diagonal
+  s0=[1. 0. 0.]: 113 iterations, residual 9.0e-12, 28 s
+   axis x : 1.26656 1.32453 1.33778 1.34171 1.34317 1.34380 1.34410 1.34425 1.34432
+   axis y : 1.26656 1.32453 1.33778 1.34171 1.34317 1.34380 1.34410 1.34425 1.34432
+   diag   : 1.33004 1.34186 1.34372 1.34422 1.34438
+   T along x (raw): 4.076e-01 1.936e-01 1.120e-01 7.260e-02 4.961e-02 3.433e-02 2.319e-02 1.439e-02 6.901e-03
+   dM along x (raw): -1.365e-01 -2.838e-02 -8.826e-03 -3.597e-03 -1.662e-03 -7.942e-04 -3.636e-04 -1.424e-04 -3.551e-05
+  s0=[0.7071 0.     0.7071]: 106 iterations, residual 9.2e-12, 26 s
+   axis x : 0.74667 0.75320 0.75473 0.75522 0.75541 0.75550 0.75555 0.75557 0.75558
+   axis y : 0.74667 0.75320 0.75473 0.75522 0.75541 0.75550 0.75555 0.75557 0.75558
+   diag   : 0.75282 0.75508 0.75545 0.75555 0.75558
+   T along x (raw): 2.403e-01 1.101e-01 6.317e-02 4.087e-02 2.790e-02 1.930e-02 1.303e-02 8.089e-03 3.879e-03
+   dM along x (raw): -2.885e-02 -8.077e-03 -2.736e-03 -1.134e-03 -5.250e-04 -2.509e-04 -1.149e-04 -4.497e-05 -1.122e-05
+
+aligned record (content along the lean): T and dM along the axis; dM ratios against the massive box function
+  s0=[0. 0. 1.]: 66 iterations, residual 7.5e-12, 15 s
+  m = 0 top (after the normalisation mode) 6mu = 0.359509, mL^2 = 10.6894
+   T along x (should vanish): -3.9e-15 -5.3e-15 -5.7e-15 -5.8e-15 -5.6e-15 -5.1e-15 -4.5e-15 -3.6e-15 -2.6e-15
+   dM along x: +1.678e-02 +1.075e-03 +6.885e-05 +4.470e-06 +2.945e-07 +1.968e-08 +1.333e-09 +9.140e-11 +6.350e-12
+   dM ratio r/(r-1): 0.0640 0.0641 0.0649 0.0659 0.0668 0.0677 0.0686 0.0695
+   massive box G ratio: 0.0630 0.0639 0.0649 0.0659 0.0668 0.0677 0.0686 0.0691
+   massless h ratio:    0.4541 0.5727 0.6465 0.6826 0.6917 0.6752 0.6206 0.4795

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py
-runner_sha256: e743d01005d0d9d70a8de7a678b1ecdbdc5f53874b2652836060541147567e00
+runner_sha256: 3dd639d0a800fa8de077d0ae1304be13a4523d73d1d127da60e89b2f9138dfa4
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 45.75
+elapsed_sec: 46.84
 status: ok
 ----- stdout -----
 [PASS] sublattice symmetry: every bond and every dangling-axis field joins opposite classes, so S H(k) S = -H(k) :: both networks, all 24 gauge sectors, random record fields, random momenta: largest |S H S + H| 0e+00
@@ -12,7 +12,7 @@ status: ok
 [PASS] Kitaev's pattern breaks S, yet with two flat zero bands per cell kept, the gap stays open and every weak Chern number stays 0 :: 20-site kappa 0.05: gap 0.6122; 20-site kappa 0.2: gap 0.5405; 20-site kappa 1.0: gap 0.5693; 20-site kappa 4.0: gap 0.3413; 16-site kappa 0.05: gap 0.0337; 16-site kappa 0.2: gap 0.1322; 16-site kappa 1.0: gap 0.4309; 16-site kappa 4.0: gap 0.2100; two exact zero bands per cell at every kappa; Chern numbers 0 on the three k = 0 planes throughout
 [PASS] a gapless start plus Kitaev's pattern gives a Chern number: the 20-site network with decoupled dangling Majoranas :: gap at kappa 0 6e-13; at kappa 0.3 0.0528; weak Chern numbers on planes normal to x, y, z [1, 0, 0] (three planes each); but 7 of its records touch unrecorded sites along all three axes, so zero dangling fields are not realizable there
 [PASS] zero dangling fields are realizable on other three-direction networks, and half of them are gapless :: 16 distinct networks in 3000 solutions on 4x4x4, every record touching at most two axes; 8 have gapless dispersive Majorana bands on an 8^3 grid, sizes [16, 18]
-[PASS] covariant time-reversal-odd star terms reduced by records never give a free same-class bilinear on these networks :: 16 zero-field networks, random zero-field record contents: free covariant subspace dimensions trivial 0-0, sign twist 0-0, axis 2-2, full 0-0, possibility 0-0; same-class bilinears among the free images 0
+[PASS] covariant time-reversal-odd star terms reduced by records never give a free same-class bilinear on these networks :: 16 zero-field networks, random zero-field record contents: free covariant subspace dimensions trivial 0-0, sign twist 0-0, axis 2-2, full 0-0, possibility 0-0; same-class bilinears among the free images 0; criterion: Kitaev's pattern free same-class, bond and dangling field free opposite-class, kept-axis field not free: True
 TOTAL: PASS=7 FAIL=0
 
 ----- stderr -----

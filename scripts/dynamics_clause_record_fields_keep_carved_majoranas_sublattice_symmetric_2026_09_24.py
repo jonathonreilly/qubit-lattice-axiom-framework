@@ -619,11 +619,26 @@ for c in sorted(zf, key=lambda x: (len(x), sorted(x))):
         if N7.shape[1]:
             Y7 = A7 @ N7
             total_sbreak += sum(1 for r_, b in enumerate(cls7) if np.linalg.norm(Y7[r_]) > 1e-9 and len(b) == 2 and b[0] == b[1])
+# the criterion on known cases, on the first network: Kitaev's pattern, a bond, a dangling field, a kept-axis field
+c0 = sorted(zf, key=lambda x: (len(x), sorted(x)))[0]
+kept0 = {s: {ax: t for ax in range(3) for d in (1, -1) for t in [nbr(s, ax, d)] if t in c0} for s in c0}
+par0 = {s: sum(s) % 2 for s in c0}
+m0 = next(s for s in sorted(c0) if len(kept0[s]) >= 2)
+a0, c0ax = sorted(kept0[m0])[:2]
+i0, k0 = kept0[m0][a0], kept0[m0][c0ax]
+dang0 = next((s, ax) for s in sorted(c0) for ax in range(3) if ax not in kept0[s])
+kit0 = free_bilinear({i0: a0, m0: 3 - a0 - c0ax, k0: c0ax}, c0, kept0, par0)
+bond0 = free_bilinear({i0: a0, m0: a0}, c0, kept0, par0)
+dfield0 = free_bilinear({dang0[0]: dang0[1]}, c0, kept0, par0)
+kfield0 = free_bilinear({m0: a0}, c0, kept0, par0)
+criterion_ok = (len(kit0) == 2 and kit0[0] == kit0[1] and len(bond0) == 2 and bond0[0] != bond0[1]
+                and len(dfield0) == 2 and dfield0[0] != dfield0[1] and kfield0 is None)
 check("covariant time-reversal-odd star terms reduced by records never give a free same-class bilinear on these networks",
-      total_sbreak == 0 and all(max(v) == 0 for k, v in free_dims.items() if k != "axis") and len(zf) >= 10,
+      total_sbreak == 0 and all(max(v) == 0 for k, v in free_dims.items() if k != "axis") and len(zf) >= 10 and criterion_ok,
       f"{len(zf)} zero-field networks, random zero-field record contents: free covariant subspace dimensions "
       + ", ".join(f"{k} {min(v)}-{max(v)}" for k, v in free_dims.items())
-      + f"; same-class bilinears among the free images {total_sbreak}")
+      + f"; same-class bilinears among the free images {total_sbreak}; criterion: Kitaev's pattern free same-class, "
+      f"bond and dangling field free opposite-class, kept-axis field not free: {criterion_ok}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

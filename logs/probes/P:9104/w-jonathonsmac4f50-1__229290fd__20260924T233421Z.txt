@@ -1,0 +1,4 @@
+PR #9104: Bound full cube energy variance from continuously renewed births
+branch codex/mobile-record-recent-birth-variance-20260924 (base codex/mobile-record-ordinary-energy-20260924)
+runners in the PR: 1
+== scripts/recent_births_full_cube_energy_variance_2026_09_24.py: rc=0 PASS=2 FAIL=0

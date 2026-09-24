@@ -1,0 +1,4 @@
+PR #9101: Bound cube energy and apparatus coherence before the first birth
+branch codex/mobile-record-no-first-birth-coherence-20260924 (base codex/mobile-record-birth-coherence-20260924)
+runners in the PR: 1
+== scripts/no_first_birth_cube_energy_and_apparatus_coherence_2026_09_24.py: rc=0 PASS=3 FAIL=0

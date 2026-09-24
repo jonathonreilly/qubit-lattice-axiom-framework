@@ -1,0 +1,4 @@
+PR #9102: Extend cube birth energy bounds to mixed low-field preparations
+branch codex/mobile-record-mixed-preparation-energy-20260924 (base codex/mobile-record-birth-coherence-20260924)
+runners in the PR: 1
+== scripts/mixed_low_field_inputs_cube_birth_energy_and_coherence_2026_09_24.py: rc=0 PASS=2 FAIL=0

@@ -1,0 +1,4 @@
+PR #9081: feat(dynamics-clause): bound the qubits an SU(N) gauge link needs
+branch claude/dynamics-clause-h14-non-abelian-links-need-several-qubits-20260924 (base main)
+runners in the PR: 1
+== scripts/dynamics_clause_non_abelian_links_need_several_qubits_2026_09_24.py: rc=0 PASS=5 FAIL=0

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_rules_own_clock_has_no_far_field_2026_09_23.py
 runner_sha256: 2e23d7a3205be279dbc1ea45d23e92ac3d9a2ea2ed27d3ebd216a5c9925fc7f6
-input_fingerprint_sha256: 239dd6fd57f71baaceb9528a774b80736f37def98d577955f49a77eb13671d24
+input_fingerprint_sha256: eb9c19bf4cbaeea3cec79cce0f36d6309bfdf094c164a1bf712fca11e0b50d60
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.62
+elapsed_sec: 0.94
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

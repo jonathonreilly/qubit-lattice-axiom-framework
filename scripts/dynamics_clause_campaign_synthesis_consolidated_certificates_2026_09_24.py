@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the fourteen blocks are exactly the
+L. Ledger: the decision points used by the fifteen blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -47,6 +47,8 @@ L. Ledger: the decision points used by the fourteen blocks are exactly the
 14. (9083) A record on a purifying partner steers a qubit to either end of
    a chord with the chord weights; the trace rule matches the steered
    average and a cubic deformation does not.
+15. (9084) A Weinberg-type precession lets a distant record shift a later
+   marginal; channels do not; the transpose on half a singlet is negative.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -105,6 +107,7 @@ DECLARED = {
     "D-gauss": "a Gauss law on link sites, exact or as a soft vertex-star energy",
     "D-star": "a covariant generator on a plaquette site's four link neighbours",
     "D-loc": "marginal record distributions do not depend on distant record formation",
+    "D-rev": "reversible, continuous-time, nearest-neighbour evolution between records",
 }
 USED = {
     9040: {"D-dyn", "D-pc", "D-sold"},
@@ -121,6 +124,7 @@ USED = {
     9077: {"D-dyn", "D-roles", "D-gauss"},
     9081: {"D-roles", "D-gauss"},
     9083: {"D-dyn", "D-perm", "D-menu", "D-loc"},
+    9084: {"D-loc", "D-perm", "D-rev", "D-pc", "D-sold"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -616,6 +620,44 @@ for _ in range(100):
 check("a distant record steers every chord; the trace rule matches the steered average, a cubic deformation does not",
       worst_steer < 1e-10 and worst_tr < 1e-12 and shift_cub > 1e-2,
       f"steering deviation {worst_steer:.1e}; trace-rule discrepancy {worst_tr:.1e}; cubic shift {shift_cub:.3f}")
+
+# ------------------------------------------ 15: linear dynamics
+print("15. locality of marginals forces linear dynamics")
+
+
+def _rot(ax, ang):
+    ax = ax / np.linalg.norm(ax)
+    K_ = np.array([[0, -ax[2], ax[1]], [ax[2], 0, -ax[0]], [-ax[1], ax[0], 0]])
+    return np.eye(3) + np.sin(ang) * K_ + (1 - np.cos(ang)) * K_ @ K_
+
+
+nax = np.array([1.0, 2.0, 2.0]) / 3.0
+prec = lambda r: _rot(nax, 1.5 * (r @ nax)) @ r
+shift = 0.0
+for _ in range(100):
+    r = rng.normal(size=3)
+    r = r / np.linalg.norm(r) * rng.uniform(0.1, 0.9)
+    d = rng.normal(size=3)
+    d /= np.linalg.norm(d)
+    bb = r @ d
+    disc = np.sqrt(bb * bb - (r @ r - 1))
+    t1, t2 = -bb + disc, -bb - disc
+    n1, n2 = r + t1 * d, r + t2 * d
+    pw = t2 / (t2 - t1)
+    mm = rng.normal(size=3)
+    mm /= np.linalg.norm(mm)
+    shift = max(shift, abs((pw * prec(n1) + (1 - pw) * prec(n2) - prec(r)) @ mm) / 2)
+sing = np.array([0, 1, -1, 0], dtype=complex) / np.sqrt(2)
+rs = np.outer(sing, sing.conj()).reshape(2, 2, 2, 2)
+pt = np.zeros((4, 4), dtype=complex)
+for i in range(2):
+    for j in range(2):
+        E_ = np.zeros((2, 2))
+        E_[i, j] = 1
+        pt += np.kron(E_.T, rs[i, :, j, :])
+negev = np.linalg.eigvalsh(pt).min()
+check("a Weinberg-type precession lets a distant record shift a later marginal; the transpose on half a singlet is negative",
+      shift > 1e-2 and abs(negev + 0.5) < 1e-12, f"precession shift {shift:.3f}; transpose eigenvalue {negev:.3f}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

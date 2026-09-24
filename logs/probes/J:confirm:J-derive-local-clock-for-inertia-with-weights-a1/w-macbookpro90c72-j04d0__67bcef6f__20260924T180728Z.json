@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-local-clock-for-inertia-with-weights-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j04d0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/local-clock-for-inertia-with-weights/referee_w-macbookpro90c72-j04d0/check.py",
+ "seed": 73248,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67bcef6f",
+ "started_utc": "20260924T180728Z",
+ "elapsed_s": 232.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed \u2014 local clock fails at 3168/70200 with defect 3; the radius-one rules balance every three-record configuration on 3^3, 4^3 and 5^3 at c=1 and c=1/2; the local-clock and unit-move witnesses have no exchange class; record-wise and four-record Farkas vectors satisfy A^T y >= 0 with y.(A l)=1; compact rows agree on 6^3 and 9^3"
+ },
+ "review": "Own rows balance every three-record configuration on 3^3, 4^3 and 5^3 at both scales, the local-clock and unit-move witnesses have no exchange class, and the four-record Farkas vectors satisfy A^T y >= 0 with y.(A l)=1 on 3^3 and on clusters identical on 6^3 and 9^3.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:local-clock-for-inertia-with-weights:a1/; its files are probes/work/derive/local-clock-for-inertia-with-weights/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/local-clock-for-inertia-with-weights/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "5b5f83c78fde207136f4f25c7e9b67261e9a0a5a3f8be89fa432cf92fc996afa",
+ "stdout_tail": "ect 2\nPASS S4b unit-move witness (0,1,2)|(0,0,0) has no exchange class and residual 72\nPASS S4c record-wise balance infeasible c1: yAl=1 support 5; c0: yAl=1 support 6\nPASS S3 three-record rules 3^c1:70200 bad 0 missing 0 minmove 1; 3^c0:70200 bad 0 missing 0 minmove 1; 4^c1:421848 bad 0 missing 0 minmove 1; 4^c0:421848 bad 0 missing 0 minmove 1; 5^c1:1647216 bad 0 missing 0 minmove 1; 5^c0:1647216 bad 0 missing 0 minmove 1\nPASS S5 four-record Farkas on 3^3 base/c1: n=81 all-four=81 yAl=1; base/c0: n=83 all-four=83 yAl=1; rot/c1: n=81 all-four=81 yAl=1; rot/c0: n=110 all-four=110 yAl=1\nPASS S6 compact Z^3 certificates base/c1: 74 same=True yAl=1; base/c0: 50 same=True yAl=1; rot/c1: 73 same=True yAl=1; rot/c0: 33 same=True yAl=1\nPASS S7 move/exchange/redraw conserve count and content vector (3, (0, 3, 0)) (2, (0, 0, 0))\nTOTAL: PASS=9 FAIL=0\nSUMMARY: confirmed \u2014 local clock fails at 3168/70200 with defect 3; the radius-one rules balance every three-record configuration on 3^3, 4^3 and 5^3 at c=1 and c=1/2; the local-clock and unit-move witnesses have no exchange class; record-wise and four-record Farkas vectors satisfy A^T y >= 0 with y.(A l)=1; compact rows agree on 6^3 and 9^3\nHIT: confirmed - the a1 claim survives: a radius-one rule keeps pi stationary for three records on the 3^3, 4^3 and 5^3 tori, not by the local clock or by unit moves and not record by record, and no such rule balances the certified four-record clusters on 3^3 or on Z^3, with or without head-on redraws\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j04d0",
+  "at_utc": "20260924T181149Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms a1: three-record rules balance on 3^3, 4^3 and 5^3 at both scales; local-clock and unit-move witnesses have no exchange class; four-record Farkas vectors have y.(A l)=1 and compact rows agree on 6^3 and 9^3.",
+  "by": "w-macbookpro90c72-j04d0",
+  "at_utc": "20260924T181149Z"
+ }
+}

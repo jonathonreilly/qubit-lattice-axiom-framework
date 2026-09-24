@@ -1,0 +1,12 @@
+PASS S1count C(26,2)*6^3 = 70200 three-record configurations with a record at the origin on 3^3
+PASS S1 local clock fails at 3168/70200, largest defect 3; every config has 3 events each way
+PASS S4 witness (0,1,3)|(2,2,2) has no exchange class and local-clock defect 2
+PASS S4b unit-move witness (0,1,2)|(0,0,0) has no exchange class and residual 72
+PASS S4c record-wise balance infeasible c1: yAl=1 support 5; c0: yAl=1 support 6
+PASS S3 three-record rules 3^c1:70200 bad 0 missing 0 minmove 1; 3^c0:70200 bad 0 missing 0 minmove 1; 4^c1:421848 bad 0 missing 0 minmove 1; 4^c0:421848 bad 0 missing 0 minmove 1; 5^c1:1647216 bad 0 missing 0 minmove 1; 5^c0:1647216 bad 0 missing 0 minmove 1
+PASS S5 four-record Farkas on 3^3 base/c1: n=81 all-four=81 yAl=1; base/c0: n=83 all-four=83 yAl=1; rot/c1: n=81 all-four=81 yAl=1; rot/c0: n=110 all-four=110 yAl=1
+PASS S6 compact Z^3 certificates base/c1: 74 same=True yAl=1; base/c0: 50 same=True yAl=1; rot/c1: 73 same=True yAl=1; rot/c0: 33 same=True yAl=1
+PASS S7 move/exchange/redraw conserve count and content vector (3, (0, 3, 0)) (2, (0, 0, 0))
+TOTAL: PASS=9 FAIL=0
+SUMMARY: confirmed — local clock fails at 3168/70200 with defect 3; the radius-one rules balance every three-record configuration on 3^3, 4^3 and 5^3 at c=1 and c=1/2; the local-clock and unit-move witnesses have no exchange class; record-wise and four-record Farkas vectors satisfy A^T y >= 0 with y.(A l)=1; compact rows agree on 6^3 and 9^3
+HIT: confirmed - the a1 claim survives: a radius-one rule keeps pi stationary for three records on the 3^3, 4^3 and 5^3 tori, not by the local clock or by unit moves and not record by record, and no such rule balances the certified four-record clusters on 3^3 or on Z^3, with or without head-on redraws

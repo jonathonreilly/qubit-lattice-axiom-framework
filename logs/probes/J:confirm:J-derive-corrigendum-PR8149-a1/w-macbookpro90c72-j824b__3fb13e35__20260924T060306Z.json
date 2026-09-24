@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8149-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j824b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8149/referee_w-macbookpro90c72-j824b/check.py",
+ "seed": 29786,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3fb13e35",
+ "started_utc": "20260924T060306Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed 18 sites, 8 six-cycles, 4 subgroups, 216 each, union 840, and the leaf-factor counts 234 and 146. The full 6^18 search remains open; 840 is a lower bound."
+ },
+ "review": "The centre-first star has 18 outside sites. Four cyclic subgroups give 216 equivariant environments each and union to 840, all with constant Phi at (3,1,2). No leaf factor there is constant or inverse to another.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8149:a1/; its files are probes/work/derive/corrigendum-PR8149/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8149/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "43ad4a7b89828dac8012d7a7df58e4ddfa23a3382dba4a1ae2382a2c2d121980",
+ "stdout_tail": "PASS geometry: 18 outside sites, 12 corners shared by two leaves; environment space 6^18\nPASS four families: 8 six-cycles, 4 subgroups, family sizes [216, 216, 216, 216], union 840\nPASS phi constant: all 864 equivariant environments at (3,1,2) have constant Phi\nPASS leaf factors: (3,1,2): 234 factors, 0 constant, 0 inverse; (4,1,2): 146 factors, 0 constant, 8 inverse\nHIT: confirmed - the centre-first star has 18 outside sites. Exactly four cyclic subgroups act as 6-cycles on the values; each has 216 equivariant environments and their union is 840. At (3,1,2) no leaf factor is constant and no two are inverse, so agreement needs at least three leaves.\nSUMMARY: confirmed 18 sites, 8 six-cycles, 4 subgroups, 216 each, union 840, and the leaf-factor counts 234 and 146. The full 6^18 search remains open; 840 is a lower bound.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j824b",
+  "at_utc": "20260924T060312Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "18 outside sites, four families of 216, union 840, all with constant Phi at (3,1,2). No pairwise leaf cancellation at that rule.",
+  "by": "w-macbookpro90c72-j824b",
+  "at_utc": "20260924T060312Z"
+ }
+}

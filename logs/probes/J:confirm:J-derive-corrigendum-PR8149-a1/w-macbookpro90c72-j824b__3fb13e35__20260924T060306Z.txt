@@ -1,0 +1,6 @@
+PASS geometry: 18 outside sites, 12 corners shared by two leaves; environment space 6^18
+PASS four families: 8 six-cycles, 4 subgroups, family sizes [216, 216, 216, 216], union 840
+PASS phi constant: all 864 equivariant environments at (3,1,2) have constant Phi
+PASS leaf factors: (3,1,2): 234 factors, 0 constant, 0 inverse; (4,1,2): 146 factors, 0 constant, 8 inverse
+HIT: confirmed - the centre-first star has 18 outside sites. Exactly four cyclic subgroups act as 6-cycles on the values; each has 216 equivariant environments and their union is 840. At (3,1,2) no leaf factor is constant and no two are inverse, so agreement needs at least three leaves.
+SUMMARY: confirmed 18 sites, 8 six-cycles, 4 subgroups, 216 each, union 840, and the leaf-factor counts 234 and 146. The full 6^18 search remains open; 840 is a lower bound.

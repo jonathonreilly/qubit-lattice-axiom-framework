@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of eleven campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector. It also checks that the fourteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
+claim_scope: "Synthesis of twelve campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports a move. It also checks that the fourteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -11,7 +11,7 @@ runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_202
 
 **Date:** 2026-09-24
 **Type:** bounded_theorem
-**Status:** synthesis of eleven open campaign blocks with consolidated re-derivations; unaudited.
+**Status:** synthesis of twelve open campaign blocks with consolidated re-derivations; unaudited.
 
 ## The gap this campaign addressed
 
@@ -46,8 +46,8 @@ one clause generates across the lanes.
 | D-nn | Admissibility conditions: records alone, or states | 9043, 9046 |
 | D-pattern | a record carving and its contents | 9048, 9054 |
 | D-sign | the sign of the Moriya coupling | 9050 |
-| D-roles | doubled-coordinate roles (vertex, link, plaquette, cube sites) | 9066, 9069 |
-| D-gauss | a Gauss law on link sites, exact or as a soft vertex-star energy | 9066, 9069 |
+| D-roles | doubled-coordinate roles (vertex, link, plaquette, cube sites) | 9066, 9069, 9077 |
+| D-gauss | a Gauss law on link sites, exact or as a soft vertex-star energy | 9066, 9069, 9077 |
 | D-star | a covariant generator on a plaquette site's four link neighbours | 9072 |
 
 ## What the clause generates
@@ -84,11 +84,12 @@ one clause generates across the lanes.
      is then forced to: all six.
 5. **Fermions and a gauge field, exactly, in one dimension (open PR 9048).**
    - At the compass point, records carve the medium into Kitaev's model.
-   - With zero fields, every component winds in at most one direction: a
-     general theorem. A zero-field carving is a surface of Euler
-     characteristic (interior sites)/4 ≥ 0, so winding components are strips
-     one square wide. The enumerations on 4x4x4 and 5x5x5 find only cubes
-     and such strips.
+   - With zero fields the components are classified completely, as a
+     general theorem. Each is either the 2x2x2 cube or a strip one square
+     wide that winds along a face diagonal.
+   - The proof goes through a surface of Euler characteristic
+     (interior sites)/4 ≥ 0. An interior site forces a cube, and a strip
+     that does not wind would need a reversal.
    - The staircase tube is gapped (`2|K|`, pi flux).
 6. **A handedness that records see (open PR 9050).**
    - The Moriya bond is an XXZ bond in a turned frame.
@@ -136,6 +137,12 @@ one clause generates across the lanes.
       record uniform ice measures by the trace rule.
     - Unrecorded plaquette qubits instead polarize the ice, so the ring
       needs recorded plaquette sites.
+12. **The landed tensor constraints freeze (open PR 9077).**
+    - The vector constraint `∂_i E_ij = 0` of the landed linear-gravity
+      tensor model sits on link sites, using exactly their six neighbours.
+    - Every two-site generator that respects it conserves the tensor field.
+    - No single site's neighbourhood holds a move. The smallest local
+      moves are 10-slot planar curvature pieces.
 
 ## What it does not generate
 
@@ -152,7 +159,10 @@ one clause generates across the lanes.
   random record contents. No single landed action gives both an oriented
   link field and a dynamical vertex charge. Under the clause, U(1) charges
   are Gauss defects, and they are bosons (open PR 9069).
-- **Gravity.** The clause supplies no long-range rate field.
+- **Gravity.** The clause supplies no long-range rate field. The landed
+  linear-gravity tensor field is frozen by every two-site generator under
+  its vector constraint, and no single neighbourhood moves it (open PR
+  9077). So linearized gravity needs dynamics wider than a photon's.
 - **Parameters and supplied structure.** Generations are not addressed,
   and the values of `J`, `K`, `D` are not fixed. The formation site, time
   and rate, the relaxation profile, and how records come to form a carving
@@ -166,9 +176,9 @@ one clause generates across the lanes.
 ## Consolidated certificates
 
 The runner re-derives one identity per block, independently of that
-block's runner, and checks the ledger. There are twelve checks and all
+block's runner, and checks the ledger. There are thirteen checks and all
 pass in about one second.
-- **L.** The fourteen declared points are exactly those used by the eleven
+- **L.** The fourteen declared points are exactly those used by the twelve
   blocks.
 - **1.** Coupling dimensions 1, 1 and 3.
 - **2.** The projection lemma, the resultant ground state, and the
@@ -188,6 +198,8 @@ pass in about one second.
   `0, 0, 0, 2`, and commuting defect hops.
 - **11.** The frustration-free plaquette solution space: one ray with
   coefficients `(1, 1, 0, 0, 0)`.
+- **12.** Six-neighbour placement of the tensor rows, and null
+  neighbourhood moves for every role.
 
 ## Independent checks
 
@@ -200,6 +212,18 @@ Two checkers wrote separate code and did not read the campaign's runners.
   corrected in open PR 9054:
   - the first 3D headline network is a tree;
   - zero-field dangling Majoranas are decoupled zero modes.
+- **The Gauss-freeze block (9066):** every claim passes, with no gap in the
+  proof.
+  - Corrected since: the printed span dimensions counted redundant zero
+    combinations (true ranks 26 and 18).
+  - Also corrected: `V = 0` needs equal field sizes, and some prose was
+    overstated.
+- **The charges block (9069) and the carving proof (9048):** every claim
+  passes, on 22,972 carving components across nine tori.
+  - The checker supplied the interior-site lemma that completes the
+    carving classification.
+  - It flagged scope in 9069, now corrected: full soldering, supplied Gauss
+    energy, and bosons for bare flips.
 
 ## The state of the candidate after this campaign
 
@@ -220,7 +244,8 @@ dimensions.
 For a U(1) photon the clause needs a companion term of Admissibility
 shape, a plaquette ring or a soft Gauss energy. The two-site clause cannot
 move a field under an exact Gauss law. The charges it then carries are
-bosonic Gauss defects.
+bosonic Gauss defects. Linearized gravity's tensor field needs more still:
+no single neighbourhood moves it.
 
 The Standard Model's gauge group, charged chiral matter, gravity and the
 parameters remain open. So do the owner-level readings the decision points

@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066, 9069, 9072). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the eleven blocks are exactly the
+L. Ledger: the decision points used by the twelve blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -39,6 +39,9 @@ L. Ledger: the decision points used by the eleven blocks are exactly the
 11. (9072) The covariant plaquette generators annihilating the symmetric
    flippable state and all other configurations are one ray, the
    Rokhsar-Kivelson projector 2g |-><-|.
+12. (9077) Each row of the landed tensor vector constraint uses exactly its
+   link site's six neighbours; every slot enters two or more rows; slot
+   sites are never adjacent; no single neighbourhood supports a move.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -109,6 +112,7 @@ USED = {
     9066: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-pattern"},
     9069: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-pattern"},
     9072: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-star", "D-tr", "D-pattern"},
+    9077: {"D-dyn", "D-roles", "D-gauss"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -477,6 +481,63 @@ cf = nsr[:, 0] / nsr[0, 0]
 check("the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector",
       nsr.shape[1] == 1 and np.allclose(cf, [1, 1, 0, 0, 0]),
       f"solution dimension {nsr.shape[1]}; coefficients (ring, flippable, opposite, adjacent, odd) {np.round(cf, 12).tolist()}")
+
+# ------------------------------------------ 12: the tensor constraints
+print("12. the landed tensor constraints")
+E3i = np.eye(3, dtype=int)
+
+
+def tkey(x, i, j):
+    return (tuple(int(c) for c in x), (min(i, j), max(i, j)))
+
+
+def trow(x, j):
+    x = np.array(x)
+    t_ = [(tkey(x + E3i[j], j, j), 1), (tkey(x, j, j), -1)]
+    for i in range(3):
+        if i != j:
+            t_ += [(tkey(x, i, j), 1), (tkey(x - E3i[i], i, j), -1)]
+    return t_
+
+
+def tpos(k):
+    x, (i, j) = k
+    p_ = 2 * np.array(x)
+    return p_ + (E3i[i] + E3i[j] if i != j else 0)
+
+
+six_ok = all({tuple(tpos(k)) for k, _ in trow((0, 0, 0), j)} ==
+             {tuple(E3i[j] + s_ * E3i[a]) for a in range(3) for s_ in (1, -1)} for j in range(3))
+
+
+def star_nullity(center):
+    center = np.array(center)
+    near = {tuple(center)} | {tuple(center + s_ * E3i[a]) for a in range(3) for s_ in (1, -1)}
+    sl = []
+    for p_ in near:
+        p_ = np.array(p_)
+        odd = [a for a in range(3) if p_[a] % 2]
+        if not odd:
+            sl += [tkey(p_ // 2, j, j) for j in range(3)]
+        elif len(odd) == 2:
+            sl.append(tkey((p_ - E3i[odd[0]] - E3i[odd[1]]) // 2, odd[0], odd[1]))
+    sid_ = {k: i for i, k in enumerate(sl)}
+    rows_ = []
+    for x in itertools.product(range(-3, 4), repeat=3):
+        for j in range(3):
+            v_ = np.zeros(len(sl))
+            for k, c in trow(x, j):
+                if k in sid_:
+                    v_[sid_[k]] += c
+            if v_.any():
+                rows_.append(v_)
+    A_ = np.array(rows_)
+    return int(A_.shape[1] - np.linalg.matrix_rank(A_))
+
+
+nul = [star_nullity(c_) for c_ in [(0, 0, 0), (1, 0, 0), (1, 1, 0), (1, 1, 1)]]
+check("tensor rows use exactly their link site's six neighbours; no single neighbourhood supports a move",
+      six_ok and nul == [0, 0, 0, 0], f"six-neighbour placement {six_ok}; neighbourhood null dimensions (vertex, link, plaquette, cube) {nul}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

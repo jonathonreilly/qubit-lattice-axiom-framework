@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.py
+runner_sha256: c9abcf7f2d9ca8424b7753a3218d16f50b993fc78d2b105c71883e9e1dc49346
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 154.11
+status: ok
+----- stdout -----
+== A. The exact L = 2 torus ==
+[PASS] all 2^24 arrow patterns give 9600 ice configurations and the two-defect counts at the seven displacements :: 307968 two-defect patterns: 001: 48000, 010: 48000, 011: 41728, 100: 48000, 101: 41728, 110: 41728, 111: 38784
+[PASS] the backtracking worm reproduces the normalised exact counts at all seven displacements and <W^2> = 76/25, within 4 standard errors :: largest 2.81 standard errors; <W^2> 3.0376 +- 0.0079
+[PASS] the loop worm that never reverses the arrow just reversed reproduces the same counts within 4 standard errors :: largest 2.21 standard errors
+
+== C. L = 8, 2 x 10^6 worms ==
+[PASS] relative to the nearest pair, measured over predicted lies in [0.88, 1.02] at every sampled separation, errors <= 0.025, and the pair attracts :: (1, 1, 0): 0.915+-0.013, (1, 1, 1): 0.946+-0.014, (2, 0, 0): 0.950+-0.011, (2, 1, 0): 0.951+-0.008, (2, 2, 0): 0.960+-0.011, (3, 0, 0): 0.959+-0.009, (2, 2, 2): 0.968+-0.011, (4, 0, 0): 0.967+-0.012, (4, 4, 0): 0.969+-0.010, (4, 4, 4): 0.963+-0.010
+
+== D. L = 16, 10^6 worms ==
+[PASS] along the axis, r = 2 to 8, measured over predicted lies in [0.85, 1.05], errors <= 0.04 :: 2: 0.986+-0.013, 3: 0.972+-0.013, 4: 0.965+-0.017, 5: 0.970+-0.014, 6: 0.968+-0.013, 7: 0.981+-0.015, 8: 0.960+-0.011
+
+time 153 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

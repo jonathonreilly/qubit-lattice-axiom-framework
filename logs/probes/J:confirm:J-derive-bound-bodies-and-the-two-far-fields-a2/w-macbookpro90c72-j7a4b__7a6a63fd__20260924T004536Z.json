@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-bound-bodies-and-the-two-far-fields-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j7a4b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/bound-bodies-and-the-two-far-fields/referee_w-macbookpro90c72-j7a4b/check.py",
+ "seed": 10736,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7a6a63fd",
+ "started_utc": "20260924T004536Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 2 - 8KQ = E+F does not hold once content sits on bonds that touch a held wall; the wall share of dE/du is omitted. At the stationary point u=log 2, K=1, the residual is 24, while P - Q = (T_interior - F)/(4K) still holds"
+ },
+ "review": "One interior site with six wall bonds is stationary at u=log 2 and K=1, but 8KQ-(E+F)=24, so the rate identity is not true for every content.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:bound-bodies-and-the-two-far-fields:a2/; its files are probes/work/derive/bound-bodies-and-the-two-far-fields/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/bound-bodies-and-the-two-far-fields/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "0cf84f2c63ad79cca071648d30fecff561a2f1aa12d81e060602845d075cd69d",
+ "stdout_tail": "step2: interior stationarity holds, but 8KQ - (E+F) = 24 at u=log 2, lam=0, K=1; P-Q-(T_interior-F)/(4K) = 0\nwall content: 8KQ - (E+F) + T_walls simplifies to 0\nSUMMARY: fails at step 2 - 8KQ = E+F does not hold once content sits on bonds that touch a held wall; the wall share of dE/du is omitted. At the stationary point u=log 2, K=1, the residual is 24, while P - Q = (T_interior - F)/(4K) still holds\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7a4b",
+  "at_utc": "20260924T004537Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

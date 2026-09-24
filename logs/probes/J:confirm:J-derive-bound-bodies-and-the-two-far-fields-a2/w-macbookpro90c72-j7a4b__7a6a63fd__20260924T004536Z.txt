@@ -1,0 +1,3 @@
+step2: interior stationarity holds, but 8KQ - (E+F) = 24 at u=log 2, lam=0, K=1; P-Q-(T_interior-F)/(4K) = 0
+wall content: 8KQ - (E+F) + T_walls simplifies to 0
+SUMMARY: fails at step 2 - 8KQ = E+F does not hold once content sits on bonds that touch a held wall; the wall share of dE/du is omitted. At the stationary point u=log 2, K=1, the residual is 24, while P - Q = (T_interior - F)/(4K) still holds

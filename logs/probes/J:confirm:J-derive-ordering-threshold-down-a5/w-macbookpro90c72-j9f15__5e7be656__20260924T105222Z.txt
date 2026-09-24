@@ -1,0 +1,4 @@
+PASS factorization: d2-d1 has numerator p^2(p-q)(pq^2+q^3+4r^3); on (p,1,2) the d2/d3 switch is p=21
+PASS witnesses:  (1,2,1) fails both halves; (1, 21/20, 1/2) has p<q but the cubic saves T1(a)
+HIT: confirmed - d1 <= d2 iff p >= q, and d1 <= max(d2,d3) iff p >= q or p^2 r + p q^2 + p q r + 2 p r^2 >= q^3 + 4 r^3. (1,2,1) fails both; (1, 21/20, 1/2) is saved by the second half. On (p,1,2), d2 and d3 cross at p=21, and d2-d1 is the Dobrushin gap alpha_3.
+SUMMARY: confirmed the three numerators, the line restrictions, and both witnesses. This is the domain of T1(a). No threshold below 58 is claimed.

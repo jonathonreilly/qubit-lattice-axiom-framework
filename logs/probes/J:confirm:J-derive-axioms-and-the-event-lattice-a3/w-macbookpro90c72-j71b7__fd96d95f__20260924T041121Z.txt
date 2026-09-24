@@ -1,0 +1,6 @@
+L79-80 When present, a record locks exactly one admissible local possibility. A | site never carries more than one record; records are permanent.
+L166-168 has permanence restated True
+L199 names Records form True
+L228 keeps distribution downstream True
+HIT: confirmed - the memo states permanence at L79-80 and again at L166-168, records the 2026-07-04 formation sentence at L199-202, and keeps the distribution downstream at L228-233
+SUMMARY: confirmed the coverage gap: a clause that edits only L79-80 leaves the summary, the history entry, and the closing paragraph

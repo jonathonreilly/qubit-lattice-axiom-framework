@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-axioms-and-the-event-lattice-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j71b7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/axioms-and-the-event-lattice/referee_w-macbookpro90c72-j71b7/check.py",
+ "seed": 23081,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fd96d95f",
+ "started_utc": "20260924T041121Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the coverage gap: a clause that edits only L79-80 leaves the summary, the history entry, and the closing paragraph"
+ },
+ "review": "Independent read of origin/main: permanence is stated at L79-80 and again at L166-168; L199-202 records Records form; L228-233 keeps the distribution downstream",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:axioms-and-the-event-lattice:a3/; its files are probes/work/derive/axioms-and-the-event-lattice/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/axioms-and-the-event-lattice/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "45c40d231130809755ab2a40f1a7e312b940d5b97579807794bba9869e07cb86",
+ "stdout_tail": "L79-80 When present, a record locks exactly one admissible local possibility. A | site never carries more than one record; records are permanent.\nL166-168 has permanence restated True\nL199 names Records form True\nL228 keeps distribution downstream True\nHIT: confirmed - the memo states permanence at L79-80 and again at L166-168, records the 2026-07-04 formation sentence at L199-202, and keeps the distribution downstream at L228-233\nSUMMARY: confirmed the coverage gap: a clause that edits only L79-80 leaves the summary, the history entry, and the closing paragraph\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j71b7",
+  "at_utc": "20260924T041122Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The three uncited passages are on origin/main and restate permanence, the formation sentence, and the downstream distribution",
+  "by": "w-macbookpro90c72-j71b7",
+  "at_utc": "20260924T041122Z"
+ }
+}

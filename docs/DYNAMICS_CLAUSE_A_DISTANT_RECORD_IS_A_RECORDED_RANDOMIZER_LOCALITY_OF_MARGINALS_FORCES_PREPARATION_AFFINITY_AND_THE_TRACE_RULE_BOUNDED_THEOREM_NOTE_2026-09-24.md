@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_a_distant_record_is_a_recorded_randomizer_locality_of_marginals_forces_preparation_affinity_and_the_trace_rule_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Under the dynamics clause of open PR 9040 (supplied, not adopted), with records updating states by compression (open PR 9041), take the reading that a site's marginal record distribution does not depend on whether, or along which axis, a distant record forms (D-loc, recorded and not adopted). (i) The clause carries purifications: the Heisenberg bond at J t = pi is the swap up to phase, and partial swaps prepare every reduced Bloch length, so an entangled partner of a condition qubit can be placed at any distance. (ii) Every two-point pure decomposition of a qubit state is realized by a record on a purifying partner (200 random chords, deviation 1e-15). (iii) Hence a law P(+m | condition state) consistent with D-loc satisfies P(rho) = p P(psi_1) + (1 - p) P(psi_2) on every chord. So it is affine on the Bloch ball, and with a normalized antipodal menu it is (1 + lambda r.m)/2. Repeat certainty gives lambda = 1, the Born law. (iv) The trace rule passes this consistency to 1e-16. A tanh deformation built from the landed exp(k n.m) counterkernel, and a cubic deformation, both of which pass the landed note's conditions, shift the site's marginal by 0.06 to 0.2 with the distant record and its axis. This discharges the landed affine/Born gate's first obligation, an autonomous recorded randomizer that proves preparation affinity, in terms of D-loc and the clause. The Born orientation still needs repeat certainty (D-relax at lambda = 1). No derivation of D-loc from the axiom text, of the menu or of the formation rate is claimed."
+claim_scope: "Under the dynamics clause of open PR 9040 (supplied, not adopted), with records updating states by compression (open PR 9041), take the reading that a site's marginal record distribution does not depend on whether, or along which axis, a distant record forms (D-loc, recorded and not adopted). (i) The clause carries purifications: the Heisenberg bond at J t = pi is the swap up to phase, and partial swaps prepare every reduced Bloch length, so an entangled partner of a condition qubit can be placed at any distance. (ii) Every two-point pure decomposition of a qubit state is realized by a record on a purifying partner (200 random chords, deviation 1e-15). (iii) Hence a law P(+m | condition state) consistent with D-loc satisfies P(rho) = p P(psi_1) + (1 - p) P(psi_2) on every chord. So it is affine on the Bloch ball, and with a normalized antipodal menu it is (1 + lambda r.m)/2. (v) Compression consistency (D-perm: a record q leaves the normalized compression, which must exist whenever q can form) forces P(q | -q) = 0, hence lambda = 1. For any two-outcome effect it forces E_q = P_q: the Born law, excluding anti-Born and contracted laws. (iv) The trace rule passes this consistency to 1e-16. A tanh deformation built from the landed exp(k n.m) counterkernel, and a cubic deformation, both of which pass the landed note's conditions, shift the site's marginal by 0.06 to 0.2 with the distant record and its axis. This discharges the landed affine/Born gate's first obligation (an autonomous recorded randomizer that proves preparation affinity) in terms of D-loc and the clause, and its third (orientation) in terms of D-perm. No derivation of D-loc from the axiom text, of the menu or of the formation rate is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.py
@@ -34,7 +34,11 @@ Under the dynamics clause, a distant record is such a randomizer:
   distant record forms (D-loc). Then the law agrees with its chord averages
   everywhere, which means it is affine.
 - **The trace rule.** An affine law on an antipodal menu is
-  `(1 + λ r·m)/2`, and repeat certainty sets `λ = 1`.
+  `(1 + λ r·m)/2`.
+- **Orientation.** A record must leave a normalizable compressed state
+  (D-perm), and that sets `λ = 1`. For any two-outcome effect it forces
+  `E_q = P_q`. This is the Born law: neither anti-Born nor a weaker
+  contrast.
 
 A deformed law, in contrast, lets the distant party signal.
 
@@ -92,9 +96,26 @@ ball that equals its chord interpolation everywhere is linear along every
 chord, and hence affine.
 - With the menu normalized, `P(+m | r) = (1 + λ r·m)/2`.
 - Covariance rules out other affine forms, as in the landed note's
-  `q = c + b n·m`.
-- Repeat certainty, a pure `+m` condition recording `+m`, gives `λ = 1`: the
-  Born law. ∎
+  `q = c + b n·m`. ∎
+
+## Theorem 4 — compression fixes the orientation
+
+Under D-perm, a record `q` leaves the state `P_q ρ P_q / Tr(P_q ρ)`. That
+state must exist whenever `q` can form. So `P(q | ρ) > 0` requires
+`Tr(P_q ρ) > 0`.
+- **The menu law.** At the antipodal pure state `ρ = P_{−q}`,
+  `Tr(P_q ρ) = 0`, so `P(q | −q) = (1 − λ)/2` must vanish. Hence `λ = 1`.
+- **Any two-outcome effect.** Take `E_q` and `E_{−q} = I − E_q`. The
+  requirement forces `Tr(E_q P_{−q}) = 0` and `Tr(E_{−q} P_q) = 0`, so
+  `E_q = P_q`. ∎
+
+So under the clause the Born law `P(q | ρ) = Tr(P_q ρ)` rests on:
+- D-loc, for affinity;
+- D-perm, for orientation and full contrast;
+- the antipodal menu.
+
+The relaxation profile of open PR 9041 still decides the state `ρ` a site
+is in, but not the law.
 
 If the condition is a whole neighbourhood, the same argument applies on its
 state space. An affine law there is `Tr(E ρ)` for an effect `E`.
@@ -122,13 +143,13 @@ The shift grows with the deformation: 2.5e-3, 2.3e-2 and 6.2e-2 at
 |---|---|
 | 1. An autonomous recorded randomizer that proves affinity | Discharged here: a distant record, given D-loc. |
 | 2. The normalized probability identified with the one-neighbour transition density | The antipodal menu normalizes the law directly (D-menu). |
-| 3. A repeatability experiment that orients Born rather than anti-Born | Repeat certainty gives `λ = 1`. Open PR 9041 relates it to ferromagnetic ground relaxation (D-relax). |
+| 3. A repeatability experiment that orients Born rather than anti-Born | Discharged by compression consistency (D-perm), Theorem 4: `λ = 1` and `E_q = P_q`. |
 | 4. An autonomous reset or repeat process for stable frequencies | Open PR 9052: frequencies follow the one-shot odds exactly when correlations cluster. |
 
 So under the clause, the Born law rests on two recorded readings rather
 than an assumed functional form:
 - D-loc, for affinity;
-- repeat certainty (D-relax at `λ = 1`), for orientation.
+- D-perm, for orientation.
 
 ## Checks
 
@@ -141,12 +162,13 @@ The runner has 6 checks and all pass in under 1 s.
 | Trace rule | Largest steered-average discrepancy over 300 chords 1.1e-16. |
 | Deformed laws signal | Record-or-not shift: tanh 0.201, cubic 0.062. Axis shift: tanh 0.166, cubic 0.057. |
 | Affinity forced | Chord violation 2.2e-16 at `ε = 0`; then 2.5e-3, 2.3e-2 and 6.2e-2. |
-| Orientation | `λ = 1`, with `P(+m | m) = 1` and `P(+m | −m) = 0`. |
+| Orientation from compression | On a 21-point grid only `λ = 1` passes. Over 13,529 random effects, `|E_q − P_q|` is at most 4.31 times the violation, so only `E_q = P_q` passes. |
 
 ## What this does not do
 
 - It adopts no decision point. D-loc is a reading, recorded and not derived
   from the axiom text.
-- It does not derive the menu, the relaxation profile or the formation rate.
+- It does not derive the menu, the relaxation profile (which fixes the
+  state, not the law) or the formation rate.
 - Its steering uses qubit chords and two-outcome records. The neighbourhood
   version is argued, not computed.

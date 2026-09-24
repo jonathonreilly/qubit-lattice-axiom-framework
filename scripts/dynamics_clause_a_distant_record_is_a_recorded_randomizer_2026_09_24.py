@@ -24,9 +24,11 @@ reading):
    partner is recorded. The largest shift over random draws is printed.
 5. Chord consistency forces affinity: along random chords, the deformed laws
    are linear in the chord parameter only at zero deformation.
-6. Orientation: an affine covariant law on an antipodal menu is
-   (1 + lambda n.m)/2; repeat certainty (a pure +m site records +m) gives
-   lambda = 1, the Born law.
+6. Orientation from compression: under D-perm a record q leaves the
+   normalized compression of the state, which must exist whenever q can
+   form. At the antipodal pure state this forces P(q | -q) = 0: lambda = 1
+   for the affine menu law, and E_q = P_q for any two-outcome effect. So
+   the Born law follows, with neither anti-Born nor a contracted law.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -190,13 +192,33 @@ check("chord consistency forces affinity: the cubic deformation passes only at z
       nl[0] < 1e-12 and all(x > 1e-4 for x in nl[1:]) and nl[1] < nl[2] < nl[3],
       "largest chord violation " + ", ".join(f"eps {e}: {v:.1e}" for e, v in zip(eps_list, nl)))
 
-# ------------------------------------------------ 6. orientation
-m = np.array([0.0, 0.0, 1.0])
-# affine covariant law on the menu {+m, -m}: P(+m | n) = (1 + lam n.m)/2; repeat certainty P(+m | m) = 1
-lam = 2 * 1.0 - 1
-check("orientation: repeat certainty fixes lambda = 1, the Born law (1 + n.m)/2",
-      abs(lam - 1) < 1e-15 and abs(law_trace(m, m) - 1) < 1e-15 and abs(law_trace(-m, m)) < 1e-15,
-      f"lambda {lam}; P(+m | m) = {law_trace(m, m)}, P(+m | -m) = {law_trace(-m, m)}")
+# ------------------------------------------------ 6. orientation from compression
+# D-perm: a record q leaves the normalized compression P_q rho P_q / Tr(P_q rho), which must exist
+# whenever the record can form. For the affine menu law (1 + lam r.q)/2 at the antipodal pure state
+# r = -q, Tr(P_q rho) = 0, so P(q | -q) = (1 - lam)/2 must vanish.
+q = np.array([0.0, 0.0, 1.0])
+lams = np.linspace(-1, 1, 21)
+viol = [(1 - lam) / 2 for lam in lams]
+only_one = [lam for lam, v in zip(lams, viol) if v < 1e-15]
+# general two-outcome effects E_q = a I + b.sigma/2 (0 <= E <= I), E_{-q} = I - E_q:
+# consistency needs Tr(E_q P_{-q}) = 0 and Tr(E_{-q} P_q) = 0
+Pq, Pmq = rho_of(q), rho_of(-q)
+best = []
+for _ in range(20000):
+    bvec = rng.normal(size=3) * rng.uniform(0, 1)
+    a = rng.uniform(np.linalg.norm(bvec) / 2, 1 - np.linalg.norm(bvec) / 2) if np.linalg.norm(bvec) < 1 else 0.5
+    E = a * I2 + sum(bvec[k] * S[k] for k in range(3))
+    w = np.linalg.eigvalsh(E)
+    if w.min() < -1e-12 or w.max() > 1 + 1e-12:
+        continue
+    v = abs(np.real(np.trace(E @ Pmq))) + abs(np.real(np.trace((I2 - E) @ Pq)))
+    best.append((v, np.linalg.norm(E - Pq)))
+best.sort()
+# the consistency violation bounds the distance to P_q from above and below: v = 0 exactly at E = P_q
+ratio = max(d / v for v, d in best if v > 1e-6)
+check("orientation from compression: a record must leave a normalizable compressed state, so P(q | -q) = 0; this forces lambda = 1 and, for any two-outcome effect, E_q = P_q",
+      only_one == [1.0] and abs(law_trace(-q, q)) < 1e-15 and law_trace(q, q) == 1.0 and ratio < 10,
+      f"lambda passing on a 21-point grid: {[float(x) for x in only_one]}; over {len(best)} random effects, |E_q - P_q| <= {ratio:.2f} x violation")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

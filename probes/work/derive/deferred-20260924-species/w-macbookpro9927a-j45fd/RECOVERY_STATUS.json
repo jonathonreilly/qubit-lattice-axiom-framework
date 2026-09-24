@@ -1,0 +1,215 @@
+{
+ "task": "J:derive:deferred-20260924-species:a1",
+ "worker": "w-macbookpro9927a-j45fd",
+ "model": "claude-opus-5-5",
+ "pass": "first bounded pass; not a claim that batch 8 is exhausted",
+ "origin_main_sha": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+ "landing_snapshot": "c288aa9cfeea8fd2256fe4b71a60c401d64f7ce6",
+ "batch_landed_commit": "7445cc7a50e2c7631d70dc8d9a065d0653ffa6ef",
+ "review_finding": "U8-R1 (PR8599, PR8601, PR8602)",
+ "canonical_note": "docs/ADMISSIBILITY_RULE_THE_EIGHT_SPECIES_ARE_EXCHANGED_BY_SITE_SIGNS_AND_A_HALF_TURN_OF_THE_COIN_WHAT_EACH_VARYING_FIELD_BECOMES_BOUNDED_THEOREM_NOTE_2026-09-21.md (origin/main)",
+ "residual_worked": {
+  "statement": "exact static multiplicity of the walk's levels on even tori in varying real fields of the landed table (rates, reach-three and reach-two strains, frames)",
+  "domain": "finite even tori; Hermitian finite members; real rational fields for the witnesses",
+  "quantifiers": "for every field of each kind: symmetry-forced multiplicity; for the witnessed torus sizes: all fields outside a proper algebraic subset",
+  "premises": "block 54 walk and block 70 maps, Theta, as landed on origin/main; no physical selection, no continuum or infinite-volume claim",
+  "success_witness": "characteristic polynomials over F_1000033: squarefree reduced blocks (rates 4x4x4 after the forced E^8, reach three 6x4x4), Kramers squares of squarefree polynomials (frame, reach two 4x4x4); uniform 4x4x4 E^16 (E^2-1)^24 (E^2-2)^24 (E^2-3)^8",
+  "result": "symmetry forces even multiplicity only (2-dimensional irreducible corepresentation; Theta anticommutes with the even maps); generic nonzero levels exactly doubled; rate fields keep the 16 species zero modes exactly"
+ },
+ "source_groups_inspected": [
+  {
+   "pr": 8602,
+   "head": "8b4eccab5cb0cda8a42b254cd9af8261e2cde203",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block70_findings.md",
+   "sha256": "fbb5fe114b5ba6396c7d9889aad3d1f63ad29f859fa958fa887d5d7292b959fd",
+   "bytes": 1538,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "item 2 (failed expectation of further doubling; executed multiplicity two) recovered as an exact statement with certificates; items 3-6 are folded into the landed note (already-landed)"
+  },
+  {
+   "pr": 8602,
+   "head": "8b4eccab5cb0cda8a42b254cd9af8261e2cde203",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block70.md",
+   "sha256": "c6ac06d3509b91a91a6429956ebdbbf2a622263e7953eade77aa6a00f823ed1f",
+   "bytes": 1388,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "the control line 'multiplicity two for every level in every case' recovered exactly; the T1-T3 identity lines are landed"
+  },
+  {
+   "pr": 8602,
+   "head": "8b4eccab5cb0cda8a42b254cd9af8261e2cde203",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block70_species_exchange.py",
+   "sha256": "de4c3912baff57f30f6a8bfc2841f64ad2160381bcf70c9016eb7e0341255798",
+   "bytes": 6818,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "historical",
+   "note": "floating-point control (dense 432 x 432, random fields); its W2 multiplicity count is superseded by the exact certificates here"
+  },
+  {
+   "pr": 8602,
+   "head": "8b4eccab5cb0cda8a42b254cd9af8261e2cde203",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block70_species_exchange.out.txt",
+   "sha256": "a9eb88ca3f2fcf5600fd866c73efb65d37cc74a2a70fc7f30a7c146669775022",
+   "bytes": 2706,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "W2 '{2: 216}' in all field kinds recovered exactly; W1, W3, W4 are covered by the landed exact identities (T1, T2, T3(d))"
+  },
+  {
+   "pr": 8599,
+   "head": "d297893d4a6d492761723181f00117eb7530eb8d",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block68_findings.md",
+   "sha256": "405e963f2ce9f110d8ce363b1d9b4e10e9d0aea7a0186d6986f80c83e1b6cc30",
+   "bytes": 1562,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "historical",
+   "note": "packet controls and supervisor corrections already folded into the landed block 68 note"
+  },
+  {
+   "pr": 8599,
+   "head": "d297893d4a6d492761723181f00117eb7530eb8d",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block68.md",
+   "sha256": "687044266c11c91ab86ee1390d7dd489a99508745235e0cbde36f0ced405357f",
+   "bytes": 1234,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "already-landed",
+   "note": "T1-T4 lines are the landed block 68 statements"
+  },
+  {
+   "pr": 8599,
+   "head": "d297893d4a6d492761723181f00117eb7530eb8d",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block68_species.out.txt",
+   "sha256": "a58db921fac95268b6a0018455e773d1f4a3b679cfc38d465725796bb93054ee",
+   "bytes": 1269,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "open",
+   "note": "varying-field packet deflection under the reach-two coupling (species (0,0) -12.641, species (1,0) +12.641): a varying-field species statement that would need a ray-limit theorem in a varying strain; review U8-R1 keeps only local axial reference-rate ray comparison"
+  },
+  {
+   "pr": 8601,
+   "head": "40fa4423f2a36eb874c895e430da7139a95ca484",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block69_findings.md",
+   "sha256": "8eeef073bc3b492ba71b27a4cd684f60def2060ce6c10e0ffff6ca7698a00461",
+   "bytes": 1505,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "historical",
+   "note": "supervisor corrections folded into the landed block 69 note"
+  },
+  {
+   "pr": 8601,
+   "head": "40fa4423f2a36eb874c895e430da7139a95ca484",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block69.md",
+   "sha256": "3bd331b851bbd5923bd5a697a6470a1b140c6bc2be0d63e815375db45d4827ed",
+   "bytes": 1612,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "already-landed",
+   "note": "T1-T4 lines are the landed block 69 statements"
+  },
+  {
+   "pr": 8601,
+   "head": "40fa4423f2a36eb874c895e430da7139a95ca484",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block69_reach_three.out.txt",
+   "sha256": "77b01efae3bd2d9875edbfd501c23cda03aeeb689e70d962ff68c2826030bd34",
+   "bytes": 1717,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "historical",
+   "note": "floating controls: packet deflections (reach three equal for both species), conservation of K^j (landed exactly as T3)"
+  }
+ ],
+ "dispositions": {
+  "recovered": [
+   "8602 CHECKER_block70_findings.md item 2",
+   "8602 RESULTS_block70.md multiplicity line",
+   "8602 control .out.txt W2"
+  ],
+  "already_landed": [
+   "8602 CHECKER items 3-6",
+   "8602 control W1, W3, W4",
+   "8599 RESULTS_block68.md",
+   "8601 RESULTS_block69.md"
+  ],
+  "historical": [
+   "8602 control .py",
+   "8599 CHECKER_block68_findings.md",
+   "8601 CHECKER_block69_findings.md",
+   "8601 control .out.txt"
+  ],
+  "duplicate": [],
+  "active_elsewhere": [],
+  "open": [
+   "8599 control .out.txt W1: reach-two varying-field species deflection sign (needs a ray-limit theorem)",
+   "twist fields (block 65) exact multiplicity not certified here",
+   "other even torus sizes",
+   "the exceptional algebraic set of fields with extra degeneracy"
+  ]
+ },
+ "not_inspected": "process-context files of PR8599/8601/8602 (APPROACH_REGISTRY, HANDOFF, OPPORTUNITY_QUEUE, REVIEW_HISTORY, STATE, TRACE_GATE, GOAL, CLAIM_STATUS) and citation_graph_manifest.json: left open",
+ "existing_task_log_links": [
+  {
+   "problem": "are-the-eight-species-all-kept",
+   "log": "logs/probes/J:derive:are-the-eight-species-all-kept:a2",
+   "issue": 8741,
+   "confirm_issue": 8849,
+   "relation": "which clause removes a branch; not the static multiplicity"
+  },
+  {
+   "problem": "the-blind-walk-beyond-first-order",
+   "log": "logs/probes/J:derive:the-blind-walk-beyond-first-order:a1",
+   "issue": 8848,
+   "confirm_issue": 8907,
+   "relation": "blind walk at second order; not the multiplicity"
+  },
+  {
+   "problem": "su2-bond-links-exact-blindness-and-the-species",
+   "log": "logs/probes/J:derive:su2-bond-links-exact-blindness-and-the-species:a3",
+   "issue": 8705,
+   "relation": "species maps as gauge transformations onto flat Z2 links; not the multiplicity"
+  },
+  {
+   "problem": "all-eight-species-under-the-three-couplings",
+   "log": null,
+   "issue": null,
+   "relation": "no attempt or log on ai/probes at claim time"
+  }
+ ],
+ "remaining_ranked_source_groups": [
+  {
+   "rank": 1,
+   "group": "PR8599/8601 varying-field packet controls (reach-two species deflection)",
+   "why": "the one varying-field species statement left in these packets; needs a ray-limit theorem"
+  },
+  {
+   "rank": 2,
+   "group": "U8-R2: PR8603, PR8605, PR8607 (signed weak rays, stress comparators)",
+   "why": "review names omitted coframe stress terms and projector domains"
+  },
+  {
+   "rank": 3,
+   "group": "U8-R4: PR8611, PR8612 (filled-energy Hessian, scalar hop, staggered gap)",
+   "why": "separable exact statements with named corrections"
+  },
+  {
+   "rank": 4,
+   "group": "U8-R5: PR8613, PR8614, PR8615 (exclusion, compression, observable conservation)",
+   "why": "witness replacements named by the review"
+  },
+  {
+   "rank": 5,
+   "group": "U8-R3: PR8606, PR8608 (polynomial range, momentum classification)",
+   "why": "proof corrections already applied in main; lower yield"
+  }
+ ],
+ "next_exact_action": "certify exact doubling for block 65's twist fields and for a second torus size per kind, then take rank 1"
+}

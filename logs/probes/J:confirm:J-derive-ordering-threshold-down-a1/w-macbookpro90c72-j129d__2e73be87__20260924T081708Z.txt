@@ -1,0 +1,7 @@
+PASS line formulas: on (p,1,2), d2-d1 has numerator p^2(p-1)(p+33) and d2-d3 has numerator p^2(21-p)
+PASS ceilings: 27 d3 crosses 1 between p=57 and 58; with w=d_max, 108 e2^3 crosses 1 between p=13 and 14
+PASS binomial: the r^R coefficient is C(3R,R) e2^R (2e2+2w)^{2R} for R<=6, and C(3R,R) sits between (27/4)^R/(3R+1) and (27/4)^R for R<=200
+PASS monotone test: on (p,1,2) for p<80, e1 <= e2 and the step function increases; at (1,2,1), 12/13 > 9/10 and it does not
+PASS shared predecessor: a T2 move that follows y = P-ej and leaves z = P-ei shares c = P-ei-ej, so the price events overlap and do not multiply
+HIT: confirmed - the priced sum converges iff 27 e2 (e2+w)^2 < 1, which at w=1 is stricter than 27 e2 < 1 (that old ceiling is p=58; the floor w=e2 first holds at p=14). The prices do not multiply: the uncharged predecessor shares the followed site's predecessor.
+SUMMARY: confirmed the line formulas, the two ceilings, the binomial bounds, and the overlap that stops the product. The T=4 cone enumeration was not rebuilt.

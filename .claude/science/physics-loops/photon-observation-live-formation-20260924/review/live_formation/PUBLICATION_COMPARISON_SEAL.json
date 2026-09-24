@@ -1,0 +1,130 @@
+{
+  "sealed_utc": "2026-09-24T19:18:00.854155+00:00",
+  "phase": "Final publication comparison, Part II only",
+  "scope": "Four POST corrections, unchanged initial field-response mathematics and existing source/result/cache binding. No primary rerun, new independent physics claim, Part I verdict or audit action.",
+  "prior_frozen_seals": [
+    {
+      "seal": "PRE_SEAL.json",
+      "sha256": "20a5ff20eddc860b016023cca25cb7dcab93abf63dce817a938515682de3fb2d",
+      "members_verified": 22
+    },
+    {
+      "seal": "POST_SEAL.json",
+      "sha256": "92518a7b7a2fa017b26634c7352e8a0e766ad2e74f5e515d16b1ba8da5bc861b",
+      "members_verified": 20
+    }
+  ],
+  "frozen_member_count": 22,
+  "members": [
+    {
+      "path": "PUBLICATION_BINDING_CHECK.json",
+      "sha256": "860d69a61e17c566f8dfc481fa5867fd7c24406cd3fabc543872ff1812ec6120",
+      "bytes": 3900
+    },
+    {
+      "path": "PUBLICATION_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_CHECK.stdout.log",
+      "sha256": "860d69a61e17c566f8dfc481fa5867fd7c24406cd3fabc543872ff1812ec6120",
+      "bytes": 3900
+    },
+    {
+      "path": "PUBLICATION_CHECK_EXECUTION.json",
+      "sha256": "4744360d0adced4771f1c1a7d6fdaa0c288fe3284bb7ce1cfe9acafe9ab8d9f5",
+      "bytes": 686
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "bf4b1f2e7142bed3e8108e2e388100d6ee7bda74d530661c9840268cfcd16516",
+      "bytes": 9680
+    },
+    {
+      "path": "PUBLICATION_PART_II_DELTA.diff",
+      "sha256": "81b6879c74d1403566f352d6c2e299e2f35865ebe871a5fe925e152b2963f48b",
+      "bytes": 2896
+    },
+    {
+      "path": "PUBLICATION_RUNNER_DELTA.diff",
+      "sha256": "fffb5d3cec940efbbe8803b1909161a3e12a6b2c367c111dc286de2d32841d36",
+      "bytes": 2757
+    },
+    {
+      "path": "PUBLICATION_SOURCE_PINS.json",
+      "sha256": "d41360d6683524955866a07d0998424416e3bf70e56dfe2e254654fb3bc65ae5",
+      "bytes": 8129
+    },
+    {
+      "path": "publication_binding_check.py",
+      "sha256": "837c7156fb5763985485306e3f108bada4df237a399f4141f24fda1e4a9a4d53",
+      "bytes": 8482
+    },
+    {
+      "path": "publication_sources/external/FOURTEENTH_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "1da1824272b6db097fcc8400cec948c7f748c6be6d0d11f84dd97f1ea0f9d5d1",
+      "bytes": 741
+    },
+    {
+      "path": "publication_sources/external/FOURTEENTH_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "c6de7bb4dbb333b2748e5699e5d5f68cb7951ed8a8a012e2cb636feff14c1643",
+      "bytes": 26652
+    },
+    {
+      "path": "publication_sources/external/FOURTEENTH_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "f053ee1244c5466345153100458851239787062b49c15bf3b51729d4dd73bf5d",
+      "bytes": 787
+    },
+    {
+      "path": "publication_sources/worktree/docs/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4",
+      "bytes": 22993
+    },
+    {
+      "path": "publication_sources/worktree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "publication_sources/worktree/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "publication_sources/worktree/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "path": "publication_sources/worktree/docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "bytes": 21740
+    },
+    {
+      "path": "publication_sources/worktree/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "publication_sources/worktree/logs/runner-cache/photon_dispersion_observation_and_live_formation_response_2026_09_24.txt",
+      "sha256": "21ec8d09699c6d4a5bfd98a068f32d0e004315df8c3430869bfc5d07649b0bcf",
+      "bytes": 24763
+    },
+    {
+      "path": "publication_sources/worktree/outputs/photon_observation_live_formation_20260924/PHOTON_OBSERVATION_LIVE_FORMATION_RESULTS.json",
+      "sha256": "587bf71a3daf63ac62399b93a8fd4d33ab5bc874b75bcdade55a44d317e968d6",
+      "bytes": 24356
+    },
+    {
+      "path": "publication_sources/worktree/scripts/photon_dispersion_observation_and_live_formation_response_2026_09_24.py",
+      "sha256": "268ee539b5978dca070bbb719eb370b181c63257f9ff5319f76969c8534476c5",
+      "bytes": 8535
+    },
+    {
+      "path": "publication_sources/worktree/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    }
+  ]
+}

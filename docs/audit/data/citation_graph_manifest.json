@@ -1,6 +1,6 @@
 {
- "edge_count": 14619,
- "node_count": 6648,
+ "edge_count": 14624,
+ "node_count": 6649,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15085,6 +15085,10 @@
   "persistent_record_refinement_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "photon_dispersion_observational_constraints_and_live_formation_response_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "79f0c1fc5f30",
+   "out_degree": 5
   },
   "physical_adjacency_admissible_assembly_trade_cycle723_note_2026-08-03": {
    "deps_hash": "eaad6dc5dd30",

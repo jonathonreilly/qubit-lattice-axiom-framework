@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/photon_birth_controls.py", line 167, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/photon_birth_controls.py", line 158, in main
+    'graphs':[graph_control(p) for p in ((2,2,2),(6,6),(6,6,6))],
+              ~~~~~~~~~~~~~^^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/photon_birth_controls.py", line 38, in graph_control
+    mark_outputs=defaultdict(set())
+TypeError: first argument must be callable or None

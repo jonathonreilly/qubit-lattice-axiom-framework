@@ -1,0 +1,107 @@
+{
+  "created_utc": "2026-09-24T19:01:27.714717+00:00",
+  "scope": "Released root Part II comparison only. No other active independent packet accessed; no primary runner rerun.",
+  "frozen_PRE": {
+    "path": "PRE.md",
+    "sha256": "20ef1f7b377c377898cddd62d94111561c871f3ea3838957516f241a7ad1e255",
+    "seal_path": "PRE_SEAL.json",
+    "seal_sha256": "20a5ff20eddc860b016023cca25cb7dcab93abf63dce817a938515682de3fb2d"
+  },
+  "root_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/PHOTON_OBSERVATION_AND_LIVE_BIRTH_ROOT_DERIVATION.md",
+      "snapshot": "post_sources/PHOTON_OBSERVATION_AND_LIVE_BIRTH_ROOT_DERIVATION.md",
+      "sha256": "15c48725d54c95abe43de50de23b62fbf9d983029ee2152c125f361a9ca316ba",
+      "bytes": 14008,
+      "coverage": "Prologue lines 1-10 and complete Part II plus closing bridge, lines 123-end, read. Part I argument lines 11-122 excluded from scientific comparison; complete bytes retained for identity."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/SOURCE_PINS.json",
+      "snapshot": "post_sources/SOURCE_PINS.json",
+      "sha256": "b9b16f37c7236ec8f9886bcf448805be9b744f2e61a5fba14cf5ef6a64e63a23",
+      "bytes": 1735,
+      "coverage": "Read and/or metadata/hash correspondence checked in full within released Part II evidence scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/photon_birth_controls.py",
+      "snapshot": "post_sources/photon_birth_controls.py",
+      "sha256": "b00520addc22448ae3fed5981964b4907a92ebe093a0bee326c5c17b7e0d8bbc",
+      "bytes": 7600,
+      "coverage": "Complete current code read; graph_control and field-response rows reviewed. dispersion_controls read as code context only, with no Part I numerical/observational verdict."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/PHOTON_BIRTH_CONTROL_RESULTS.json",
+      "snapshot": "post_sources/PHOTON_BIRTH_CONTROL_RESULTS.json",
+      "sha256": "5fb7eeea0583f4f59795bb00273dc243bd07fe6c50dae9da571cb87e7a296c76",
+      "bytes": 24247,
+      "coverage": "Complete graph/field-response rows and source/runtime metadata inspected; dispersion rows excluded from scientific comparison."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/CONTROL.stdout.txt",
+      "snapshot": "post_sources/CONTROL.stdout.txt",
+      "sha256": "5fb7eeea0583f4f59795bb00273dc243bd07fe6c50dae9da571cb87e7a296c76",
+      "bytes": 24247,
+      "coverage": "Full bytes equal result; field-response content inspected through parsed result. No Part I numerical verdict."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/CONTROL.stderr.txt",
+      "snapshot": "post_sources/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "coverage": "Read and/or metadata/hash correspondence checked in full within released Part II evidence scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/CONTROL_EXECUTION.json",
+      "snapshot": "post_sources/CONTROL_EXECUTION.json",
+      "sha256": "27d3802370b8a5f3dc6adf2f07a88c20694b6a1190bf0cd196f4872a60852ced",
+      "bytes": 112,
+      "coverage": "Read and/or metadata/hash correspondence checked in full within released Part II evidence scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/history/first_harness_type_error/CONTROL_EXECUTION.json",
+      "snapshot": "post_sources/history/first_harness_type_error/CONTROL_EXECUTION.json",
+      "sha256": "618cc773c0b2b7c7ddc8b6c4f1a559714f369018f60c506bbf8c4d9217d5665e",
+      "bytes": 111,
+      "coverage": "Read and/or metadata/hash correspondence checked in full within released Part II evidence scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/history/first_harness_type_error/photon_birth_controls.py",
+      "snapshot": "post_sources/history/first_harness_type_error/photon_birth_controls.py",
+      "sha256": "238ed31154a72d7f9d4650a9e5e5883f74e417994c7393df9731cd13532489e8",
+      "bytes": 7602,
+      "coverage": "Complete difference against fully read current code inspected: only defaultdict(set()) to defaultdict(set)."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/history/first_harness_type_error/CONTROL.stderr.txt",
+      "snapshot": "post_sources/history/first_harness_type_error/CONTROL.stderr.txt",
+      "sha256": "4830eb11d28563c27c8bbc33be034bbd6b1ca0a6fb5a6f7e72164662596ff98d",
+      "bytes": 733,
+      "coverage": "Read and/or metadata/hash correspondence checked in full within released Part II evidence scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/history/first_harness_type_error/CONTROL.stdout.txt",
+      "snapshot": "post_sources/history/first_harness_type_error/CONTROL.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "coverage": "Read and/or metadata/hash correspondence checked in full within released Part II evidence scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/AUTHOR_CONTROL_SEAL.json",
+      "snapshot": "post_sources/AUTHOR_CONTROL_SEAL.json",
+      "sha256": "2ee41b61dd03f9e20eacd257469cd03bb54c9b96951bc06c0d58e535e0394f05",
+      "bytes": 1557,
+      "coverage": "Read and/or metadata/hash correspondence checked in full within released Part II evidence scope."
+    }
+  ],
+  "necessary_parent_definition_reads": [
+    {
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "post_sources/parents/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851,
+      "coverage": "Only the closing-bridge rate definition and nearby qualifications, lines 288-336, were read substantively, plus a targeted definition search. Equation (26) declares beta=beta0 epsilon^6; the old source labels that schedule provisional. No weak-field theorem, Part I dispersion, or observational conclusion is reviewed or imported."
+    }
+  ]
+}

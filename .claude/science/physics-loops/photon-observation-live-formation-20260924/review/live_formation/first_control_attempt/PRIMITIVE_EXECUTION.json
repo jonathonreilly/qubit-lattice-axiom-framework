@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-24T18:47:38.663677+00:00",
+  "elapsed_seconds": 3.4963465409819037,
+  "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/live-birth-field-response-independent/primitive_initial_response.py"
+  ],
+  "returncode": 0,
+  "stdout_sha256": "2c91ba41825055150e61f5640bf3d4a5b744c70c4cc98e2565a65ffe28389088",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "script_sha256": "b49b00065c2ed05be07a90ef4ff900e78c44537052d40f7758d36adeab4bbec3"
+}

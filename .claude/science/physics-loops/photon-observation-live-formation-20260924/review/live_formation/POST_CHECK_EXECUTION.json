@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-24T19:08:02.728740+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/live-birth-field-response-independent/post_evidence_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/live-birth-field-response-independent",
+  "returncode": 0,
+  "elapsed_seconds": 0.07966062496416271,
+  "source_sha256": "872a8d5507bb2187eea304a60490cd58c72305d41ea35edeaefc1360f2fc53b5",
+  "stdout_sha256": "e0eee7ecdfa76fe66207a04b6dedd5cb27e1a53b3b2d4b0a6a8e7f983760d2ef",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Read-only correspondence checker; no scientific control rerun."
+}

@@ -1,0 +1,116 @@
+{
+  "verified_at_utc": "2026-09-24T19:00:08.637239+00:00",
+  "preserved_PRE_members": 37,
+  "root_seal_members_hash_verified": 11,
+  "root_seal_hash_verification_is_not_Part_II_scientific_review": true,
+  "Part_I_parent_hashes_match_PRE": [
+    "WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "root_authorship_seal_utc": "2026-09-24T18:28:05.213988+00:00",
+  "independent_PRE_seal_utc": "2026-09-24T18:46:45.605233+00:00",
+  "root_authorship_seal_precedes_PRE": true,
+  "complete_Part_I_and_relevant_shared_closure_read": true,
+  "Part_II_body_graph_functions_and_graph_result_rows_reviewed": false,
+  "complete_dispersion_function_and_30_rows_read": true,
+  "source_hash_in_result_matches_released_script": true,
+  "complete_stdout_equals_complete_result_bytes": true,
+  "recorded_control_exit_code": 0,
+  "recorded_wrapper_wall_seconds": 0.5278187920339406,
+  "stderr_bytes": 0,
+  "overlapping_rows_compared_without_rerun": [
+    {
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "x": ".001",
+      "A4_and_remainder_values_equal_at_PRE_output_precision": true
+    },
+    {
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "x": "1",
+      "A4_and_remainder_values_equal_at_PRE_output_precision": true
+    },
+    {
+      "direction": [
+        1,
+        1,
+        0
+      ],
+      "x": ".001",
+      "A4_and_remainder_values_equal_at_PRE_output_precision": true
+    },
+    {
+      "direction": [
+        1,
+        1,
+        0
+      ],
+      "x": "1",
+      "A4_and_remainder_values_equal_at_PRE_output_precision": true
+    },
+    {
+      "direction": [
+        1,
+        1,
+        1
+      ],
+      "x": ".001",
+      "A4_and_remainder_values_equal_at_PRE_output_precision": true
+    },
+    {
+      "direction": [
+        1,
+        1,
+        1
+      ],
+      "x": "1",
+      "A4_and_remainder_values_equal_at_PRE_output_precision": true
+    },
+    {
+      "direction": [
+        1,
+        2,
+        3
+      ],
+      "x": ".001",
+      "A4_and_remainder_values_equal_at_PRE_output_precision": true
+    },
+    {
+      "direction": [
+        1,
+        2,
+        3
+      ],
+      "x": "1",
+      "A4_and_remainder_values_equal_at_PRE_output_precision": true
+    }
+  ],
+  "hbar_c_70_digit_string_matches_PRE": true,
+  "conditional_conversions": [
+    {
+      "root_label": "MAGIC2017_table6_including_systematics",
+      "matching_PRE_label": "MAGIC_quadratic_subluminal_with_systematics",
+      "both_length_conversions_equal_at_PRE_output_precision": true
+    },
+    {
+      "root_label": "LHAASO2024_table1_ML_MINOS",
+      "matching_PRE_label": "LHAASO_v2_quadratic_subluminal_ML_MINOS",
+      "both_length_conversions_equal_at_PRE_output_precision": true
+    }
+  ],
+  "maximum_recorded_radial_remainder_over_x4": 0.0026041666666644964,
+  "maximum_recorded_speed_remainder_over_x4": 0.0026041666666644964,
+  "first_failed_harness_record_preserved_in_root_seal": true,
+  "primary_or_control_functions_imported_or_rerun": false,
+  "printed_LHAASO_inverse_discrepancy_preserved_from_PRE": true,
+  "new_independent_derivation_claim": false,
+  "scope": "Mechanical Part I released-source comparison; mathematical findings are in POST.md."
+}

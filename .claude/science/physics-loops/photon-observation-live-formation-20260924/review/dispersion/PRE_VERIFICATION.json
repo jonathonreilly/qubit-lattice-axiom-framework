@@ -1,0 +1,41 @@
+{
+  "verified_at_utc": "2026-09-24T18:45:41.356059+00:00",
+  "complete_main_note_read": true,
+  "parent_premises_reused_without_recertification": true,
+  "pinned_git_bytes_reverified": true,
+  "source_sha256": "8b45196ba4a106f6f8be0454312602a03abfeedda372dac00be5858f785b8d01",
+  "control_run_count": 1,
+  "control_exit_code": 0,
+  "complete_stdout_equals_result": true,
+  "stderr_bytes": 0,
+  "all_18_control_rows_read": true,
+  "scaled_remainder_maxima": {
+    "phase": 0.000520833330233135,
+    "vector": 0.002604166644965278,
+    "radial": 0.002604166644965278,
+    "speed": 0.002604166644965278,
+    "plane_time": 0.014493927324549122,
+    "ray_time": 0.014493927324549122,
+    "energy_plane_time": 0.029066433311133413,
+    "energy_ray_time": 0.029066433311133413
+  },
+  "analytic_bounds": {
+    "phase": 0.0025,
+    "vector": 0.025,
+    "radial": 0.025,
+    "speed": 0.05,
+    "plane_time": 0.0625,
+    "ray_time": 0.1,
+    "energy_plane_time": 0.1,
+    "energy_ray_time": 0.16666666666666666
+  },
+  "maximum_group_derivative_discrepancy": 3.1342610859727134e-66,
+  "maximum_curl_relative_discrepancy": 5.826364215098753e-16,
+  "reported_table_numbers_preserved_without_false_exact_inverse_claim": true,
+  "source_to_detector_or_empirical_confirmation_claimed": false,
+  "primary_or_parent_runner_executed": false,
+  "author_argument_or_control_opened": false,
+  "other_active_checker_packets_opened": false,
+  "delegation_used": false,
+  "existing_packet_publication_or_audit_state_changed": false
+}

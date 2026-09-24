@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-24T19:15:37.142109+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/live-birth-field-response-independent/publication_binding_check.py"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 0.0554105001501739,
+  "checker_source_sha256": "837c7156fb5763985485306e3f108bada4df237a399f4141f24fda1e4a9a4d53",
+  "stdout_sha256": "860d69a61e17c566f8dfc481fa5867fd7c24406cd3fabc543872ff1812ec6120",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Read-only publication correspondence checker; no scientific primary execution."
+}

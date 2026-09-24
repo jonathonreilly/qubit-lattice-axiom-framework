@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.py
+runner_sha256: b8bdf72c763f2bd88cb23e5a692776e89d12253da9d34fc88ba0ab6848c8e699
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 291.95
+status: ok
+----- stdout -----
+== A. The rise does not follow the wavenumber ==
+[PASS] at |S| = 2 the shifts at the smallest wavenumbers agree within 25% while D_0 grows by at least 60% :: 2x6: d_2 0.01672, 0.01418 (D_0 0.951, 1.563); 2x8: d_2 0.00765, 0.00756, 0.00798 (D_0 0.743, 1.316, 1.658); 2x10: d_2 0.00404, 0.00438 (D_0 0.606, 1.117)
+
+== B. The rise is quadratic in the background ==
+[PASS] d_4 / d_2 lies between 4.0 and 4.5 at every one of those wavenumbers :: 4.39, 4.38, 4.27, 4.27, 4.15, 4.23, 4.21
+
+== C. At fixed density the rise shrinks with the cross-section ==
+[PASS] at rho = 1/4 and q = pi/2 the rise is 0.0436 on 2x4 (|S| = 2) and 0.0323 on 2x8 (|S| = 4) :: 0.04363, 0.03228
+
+== D. A second branch at the zone boundary ==
+[PASS] at q = pi the top of the |S| = 2 sector lies below the zero-flux photon on every strip (shift between -0.19 and -0.11) :: 2x4: -0.1207, 2x6: -0.1592, 2x8: -0.1712, 2x10: -0.1765
+
+== E. The second branch is not a photon ==
+[PASS] on 2x8 at q = pi the |S| = 2 top is even under the complement with a positive level, while the zero-flux photon is odd and negative; at q = pi/4 the |S| = 2 top is odd and negative :: q = pi: flux sector level +, parity +1.000; zero flux level -, parity -1.000; q = pi/4 flux sector parity -1.000
+
+time 292 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

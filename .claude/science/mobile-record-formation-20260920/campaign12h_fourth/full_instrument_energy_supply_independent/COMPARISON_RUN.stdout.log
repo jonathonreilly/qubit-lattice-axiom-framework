@@ -1,0 +1,42 @@
+{
+  "all_assertions_passed": true,
+  "exact_stationary_mixture": true,
+  "nonstationary_counterexample": {
+    "input": [
+      "3/5",
+      "4/5"
+    ],
+    "buffered_battery": [
+      "3/5",
+      "4/5"
+    ],
+    "ideal_ground_probability": "1",
+    "implemented_ground_probability": "11881/15625",
+    "difference": "3744/15625",
+    "stationary_hypothesis_essential": true
+  },
+  "two_step_star_histories": [
+    {
+      "instrument": "resolved",
+      "step_count": 2,
+      "complete_flag_histories": 49,
+      "max_joint_history_energy_probability_error": 5.551115123125783e-16,
+      "total_probability": 0.9999999999999982,
+      "target_energy": 0.20347404752484996,
+      "finite_supply_energy": 0.20347404752485018,
+      "source_builder": "own frozen PRE primitive sixteen-state model only"
+    },
+    {
+      "instrument": "coherent",
+      "step_count": 2,
+      "complete_flag_histories": 16,
+      "max_joint_history_energy_probability_error": 5.551115123125783e-16,
+      "total_probability": 0.9999999999999981,
+      "target_energy": 0.20347404752485002,
+      "finite_supply_energy": 0.2034740475248502,
+      "source_builder": "own frozen PRE primitive sixteen-state model only"
+    }
+  ],
+  "author_collision_rows": 8,
+  "max_author_row_difference": 4.440892098500626e-14
+}

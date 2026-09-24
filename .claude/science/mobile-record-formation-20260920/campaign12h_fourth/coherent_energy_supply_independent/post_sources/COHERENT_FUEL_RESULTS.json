@@ -1,0 +1,160 @@
+{
+  "standing": "Personal exact conditional witness; not a full autonomous instrument",
+  "abstract_unitary": [
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "total_free_energy_diagonal": [
+    "0",
+    "Omega",
+    "0",
+    "Omega",
+    "Omega",
+    "2*Omega"
+  ],
+  "fuel_parameterization": "p=r/(1+r), r>0",
+  "fuel_mean_energy": "Omega*r/(r + 1)",
+  "fuel_and_output_trace_asymmetry": "2*sqrt(r)/(r + 1)",
+  "stationary_output_distance_attained": true,
+  "dephased_fuel_same_energy_different_output": true,
+  "wrong_energy_transfer_detected": true,
+  "physical_star_embeddings": [
+    {
+      "epsilon": "1/2",
+      "mark": "plus",
+      "c": "2",
+      "p_high": "2/7",
+      "fuel_gap": "28",
+      "fuel_energy": "8",
+      "minimum_stationary_trace_norm_distance": "2*sqrt(10)/7",
+      "physical_embedding_verified": true
+    },
+    {
+      "epsilon": "1/2",
+      "mark": "minus",
+      "c": "1",
+      "p_high": "1/7",
+      "fuel_gap": "28",
+      "fuel_energy": "4",
+      "minimum_stationary_trace_norm_distance": "2*sqrt(6)/7",
+      "physical_embedding_verified": true
+    },
+    {
+      "epsilon": "1/2",
+      "mark": "coherent",
+      "c": "3/2",
+      "p_high": "3/14",
+      "fuel_gap": "28",
+      "fuel_energy": "6",
+      "minimum_stationary_trace_norm_distance": "sqrt(33)/7",
+      "physical_embedding_verified": true
+    },
+    {
+      "epsilon": "1/5",
+      "mark": "plus",
+      "c": "2",
+      "p_high": "1/14",
+      "fuel_gap": "700",
+      "fuel_energy": "50",
+      "minimum_stationary_trace_norm_distance": "sqrt(13)/7",
+      "physical_embedding_verified": true
+    },
+    {
+      "epsilon": "1/5",
+      "mark": "minus",
+      "c": "1",
+      "p_high": "1/28",
+      "fuel_gap": "700",
+      "fuel_energy": "25",
+      "minimum_stationary_trace_norm_distance": "3*sqrt(3)/14",
+      "physical_embedding_verified": true
+    },
+    {
+      "epsilon": "1/5",
+      "mark": "coherent",
+      "c": "3/2",
+      "p_high": "3/56",
+      "fuel_gap": "700",
+      "fuel_energy": "75/2",
+      "minimum_stationary_trace_norm_distance": "sqrt(159)/28",
+      "physical_embedding_verified": true
+    },
+    {
+      "epsilon": "1/17",
+      "mark": "plus",
+      "c": "2",
+      "p_high": "1/146",
+      "fuel_gap": "84388",
+      "fuel_energy": "578",
+      "minimum_stationary_trace_norm_distance": "sqrt(145)/73",
+      "physical_embedding_verified": true
+    },
+    {
+      "epsilon": "1/17",
+      "mark": "minus",
+      "c": "1",
+      "p_high": "1/292",
+      "fuel_gap": "84388",
+      "fuel_energy": "289",
+      "minimum_stationary_trace_norm_distance": "sqrt(291)/146",
+      "physical_embedding_verified": true
+    },
+    {
+      "epsilon": "1/17",
+      "mark": "coherent",
+      "c": "3/2",
+      "p_high": "3/584",
+      "fuel_gap": "84388",
+      "fuel_energy": "867/2",
+      "minimum_stationary_trace_norm_distance": "sqrt(1743)/292",
+      "physical_embedding_verified": true
+    }
+  ],
+  "source_sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+}

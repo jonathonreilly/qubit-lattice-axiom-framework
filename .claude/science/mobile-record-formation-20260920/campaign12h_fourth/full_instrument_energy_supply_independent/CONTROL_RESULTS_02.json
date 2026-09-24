@@ -1,0 +1,509 @@
+{
+  "all_assertions_passed": true,
+  "complete_microscopic_star": {
+    "CP_convergence": [
+      {
+        "N": 8,
+        "S": 1,
+        "T": 0.02,
+        "dressed_energy_error": 0.0003173693797360721,
+        "dressed_input_trace_error": 0.0005796588325320715,
+        "dressed_second_moment_error": 0.0022215856581525046,
+        "energy_bound": 0.045696,
+        "exact_CP_remainder_identity_error": 1.368536168251146e-16,
+        "kraus_completeness_error": 4.441205576735516e-16,
+        "maximally_entangled_input_trace_error": 0.00024752275012748944,
+        "second_moment_bound": 0.319872,
+        "tau_gamma": 0.008,
+        "uniform_channel_bound": 0.006528
+      },
+      {
+        "N": 32,
+        "S": 1,
+        "T": 0.02,
+        "dressed_energy_error": 7.902368898680575e-05,
+        "dressed_input_trace_error": 0.0001445773912112859,
+        "dressed_second_moment_error": 0.0005531658229051377,
+        "energy_bound": 0.011424,
+        "exact_CP_remainder_identity_error": 5.072321701734911e-16,
+        "kraus_completeness_error": 3.330823653957058e-16,
+        "maximally_entangled_input_trace_error": 6.172279688662207e-05,
+        "second_moment_bound": 0.079968,
+        "tau_gamma": 0.002,
+        "uniform_channel_bound": 0.001632
+      },
+      {
+        "N": 128,
+        "S": 1,
+        "T": 0.02,
+        "dressed_energy_error": 1.9736118001222436e-05,
+        "dressed_input_trace_error": 3.6123395631691226e-05,
+        "dressed_second_moment_error": 0.00013815282600801307,
+        "energy_bound": 0.002856,
+        "exact_CP_remainder_identity_error": 5.548602575132794e-16,
+        "kraus_completeness_error": 8.233635082939275e-16,
+        "maximally_entangled_input_trace_error": 1.5420893137002728e-05,
+        "second_moment_bound": 0.019992,
+        "tau_gamma": 0.0005,
+        "uniform_channel_bound": 0.000408
+      },
+      {
+        "N": 8,
+        "S": 2,
+        "T": 0.02,
+        "dressed_energy_error": 0.005680737274239968,
+        "dressed_input_trace_error": 0.005744280946796312,
+        "dressed_second_moment_error": 0.21473186896627808,
+        "energy_bound": 3.4401024000000007,
+        "exact_CP_remainder_identity_error": 4.587184369398489e-16,
+        "kraus_completeness_error": 4.848565226298134e-16,
+        "maximally_entangled_input_trace_error": 0.0029216297631994344,
+        "second_moment_bound": 130.03587072,
+        "tau_gamma": 0.024000000000000004,
+        "uniform_channel_bound": 0.09100800000000002
+      },
+      {
+        "N": 32,
+        "S": 2,
+        "T": 0.02,
+        "dressed_energy_error": 0.001396055129040505,
+        "dressed_input_trace_error": 0.0014275621606504715,
+        "dressed_second_moment_error": 0.052770883877736964,
+        "energy_bound": 0.8600256000000002,
+        "exact_CP_remainder_identity_error": 5.513201007448727e-16,
+        "kraus_completeness_error": 4.30052280522634e-16,
+        "maximally_entangled_input_trace_error": 0.000725854412415994,
+        "second_moment_bound": 32.50896768,
+        "tau_gamma": 0.006000000000000001,
+        "uniform_channel_bound": 0.022752000000000005
+      },
+      {
+        "N": 128,
+        "S": 2,
+        "T": 0.02,
+        "dressed_energy_error": 0.0003475336847710768,
+        "dressed_input_trace_error": 0.00035637251478023014,
+        "dressed_second_moment_error": 0.013136773284091123,
+        "energy_bound": 0.21500640000000004,
+        "exact_CP_remainder_identity_error": 5.58582418441157e-16,
+        "kraus_completeness_error": 4.965095296516368e-16,
+        "maximally_entangled_input_trace_error": 0.00018118688224779726,
+        "second_moment_bound": 8.12724192,
+        "tau_gamma": 0.0015000000000000002,
+        "uniform_channel_bound": 0.005688000000000001
+      },
+      {
+        "N": 8,
+        "S": 3,
+        "T": 0.02,
+        "dressed_energy_error": 0.037156029385376155,
+        "dressed_input_trace_error": 0.020642617983400887,
+        "dressed_second_moment_error": 4.681659702557363,
+        "energy_bound": 70.25356799999999,
+        "exact_CP_remainder_identity_error": 4.711391277839816e-16,
+        "kraus_completeness_error": 3.6902377347871447e-16,
+        "maximally_entangled_input_trace_error": 0.011472520954979875,
+        "second_moment_bound": 8851.949567999996,
+        "tau_gamma": 0.04800000000000001,
+        "uniform_channel_bound": 0.5575680000000001
+      },
+      {
+        "N": 32,
+        "S": 3,
+        "T": 0.02,
+        "dressed_energy_error": 0.008599373812489111,
+        "dressed_input_trace_error": 0.005094223371436114,
+        "dressed_second_moment_error": 1.0835211003736256,
+        "energy_bound": 17.563391999999997,
+        "exact_CP_remainder_identity_error": 4.5602910690166096e-17,
+        "kraus_completeness_error": 4.444204749877114e-16,
+        "maximally_entangled_input_trace_error": 0.0028337239748703925,
+        "second_moment_bound": 2212.987391999999,
+        "tau_gamma": 0.012000000000000002,
+        "uniform_channel_bound": 0.13939200000000002
+      },
+      {
+        "N": 128,
+        "S": 3,
+        "T": 0.02,
+        "dressed_energy_error": 0.0021085831468638334,
+        "dressed_input_trace_error": 0.0012697926559661434,
+        "dressed_second_moment_error": 0.26568147650484275,
+        "energy_bound": 4.390847999999999,
+        "exact_CP_remainder_identity_error": 3.424276631659015e-16,
+        "kraus_completeness_error": 7.021993772406634e-16,
+        "maximally_entangled_input_trace_error": 0.0007064710282822513,
+        "second_moment_bound": 553.2468479999998,
+        "tau_gamma": 0.0030000000000000005,
+        "uniform_channel_bound": 0.034848000000000004
+      }
+    ],
+    "at_most_one_birth_matrix_identity": true,
+    "basis": [
+      [
+        -1,
+        0,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        0,
+        1
+      ],
+      [
+        -1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        -1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        -1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        -1
+      ]
+    ],
+    "exact_integer_loss_matrix": true,
+    "spectra": [
+      {
+        "C": 2,
+        "S": 1,
+        "dimension": 16,
+        "gamma": 3.1999999999999997,
+        "grid_gap": 0.7,
+        "h": 7.0,
+        "spectrum_max_error": 4.440892098500626e-15
+      },
+      {
+        "C": 6,
+        "S": 2,
+        "dimension": 16,
+        "gamma": 9.600000000000001,
+        "grid_gap": 0.7,
+        "h": 37.8,
+        "spectrum_max_error": 1.4210854715202004e-14
+      },
+      {
+        "C": 12,
+        "S": 3,
+        "dimension": 16,
+        "gamma": 19.200000000000006,
+        "grid_gap": 0.7,
+        "h": 125.99999999999997,
+        "spectrum_max_error": 5.684341886080802e-14
+      }
+    ]
+  },
+  "exact_rational_block_controls": [
+    {
+      "arithmetic": "fractions.Fraction; exact equality, no numerical tolerance",
+      "charge_conservation": true,
+      "composition": true,
+      "dimension": 14,
+      "model": "integer levels 0,2",
+      "nonzero_entries": 24,
+      "unitarity": true
+    },
+    {
+      "arithmetic": "fractions.Fraction; exact equality, no numerical tolerance",
+      "charge_conservation": true,
+      "composition": true,
+      "dimension": 75,
+      "model": "vector charges, physical levels 0,1,sqrt(2)",
+      "nonzero_entries": 107,
+      "unitarity": true
+    }
+  ],
+  "finite_battery_controls": {
+    "arbitrary_spectrum": [
+      {
+        "L": 3,
+        "isometry_bound": 1.5307337294603591,
+        "isometry_error": 1.0023878905365606,
+        "levels": [
+          0,
+          1,
+          "sqrt(2)"
+        ],
+        "physical_energy_conservation_error": 0.0,
+        "reservoir_dimension": 25
+      },
+      {
+        "L": 7,
+        "isometry_bound": 0.780361288064513,
+        "isometry_error": 0.5309895578164487,
+        "levels": [
+          0,
+          1,
+          "sqrt(2)"
+        ],
+        "physical_energy_conservation_error": 0.0,
+        "reservoir_dimension": 81
+      },
+      {
+        "L": 15,
+        "isometry_bound": 0.3920685613182424,
+        "isometry_error": 0.2693971771530144,
+        "levels": [
+          0,
+          1,
+          "sqrt(2)"
+        ],
+        "physical_energy_conservation_error": 0.0,
+        "reservoir_dimension": 289
+      }
+    ],
+    "integer_grid": [
+      {
+        "L": 3,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          1
+        ],
+        "isometry_bound": 1.5307337294603591,
+        "isometry_error": 0.37945445393476274,
+        "reservoir_dimension": 5,
+        "unitarity_frobenius_error": 5.121637027606911e-16
+      },
+      {
+        "L": 7,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          1
+        ],
+        "isometry_bound": 0.780361288064513,
+        "isometry_error": 0.19344420308732485,
+        "reservoir_dimension": 9,
+        "unitarity_frobenius_error": 7.243088545993919e-16
+      },
+      {
+        "L": 15,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          1
+        ],
+        "isometry_bound": 0.3920685613182424,
+        "isometry_error": 0.09719009843237038,
+        "reservoir_dimension": 17,
+        "unitarity_frobenius_error": 1.0243274055213821e-15
+      },
+      {
+        "L": 31,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          1
+        ],
+        "isometry_bound": 0.19627069730967206,
+        "isometry_error": 0.048653654674018464,
+        "reservoir_dimension": 33,
+        "unitarity_frobenius_error": 1.4486177091987838e-15
+      },
+      {
+        "L": 3,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          0,
+          2
+        ],
+        "isometry_bound": 3.0614674589207183,
+        "isometry_error": 0.9602958120856435,
+        "reservoir_dimension": 7,
+        "unitarity_frobenius_error": 1.2779626727101132e-15
+      },
+      {
+        "L": 7,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          0,
+          2
+        ],
+        "isometry_bound": 1.560722576129026,
+        "isometry_error": 0.5613491742241862,
+        "reservoir_dimension": 11,
+        "unitarity_frobenius_error": 1.7145668453322772e-15
+      },
+      {
+        "L": 15,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          0,
+          2
+        ],
+        "isometry_bound": 0.7841371226364848,
+        "isometry_error": 0.29621753581333565,
+        "reservoir_dimension": 19,
+        "unitarity_frobenius_error": 2.3564467351623457e-15
+      },
+      {
+        "L": 31,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          0,
+          2
+        ],
+        "isometry_bound": 0.3925413946193441,
+        "isometry_error": 0.15128549357604928,
+        "reservoir_dimension": 35,
+        "unitarity_frobenius_error": 3.2831455515627817e-15
+      },
+      {
+        "L": 3,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          1,
+          3
+        ],
+        "isometry_bound": 4.592201188381077,
+        "isometry_error": 0.9896414891632624,
+        "reservoir_dimension": 9,
+        "unitarity_frobenius_error": 1.1477526222844665e-15
+      },
+      {
+        "L": 7,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          1,
+          3
+        ],
+        "isometry_bound": 2.341083864193539,
+        "isometry_error": 0.6189847184325038,
+        "reservoir_dimension": 13,
+        "unitarity_frobenius_error": 1.4817422638912101e-15
+      },
+      {
+        "L": 15,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          1,
+          3
+        ],
+        "isometry_bound": 1.1762056839547272,
+        "isometry_error": 0.3377663846523123,
+        "reservoir_dimension": 21,
+        "unitarity_frobenius_error": 1.987965856317107e-15
+      },
+      {
+        "L": 31,
+        "conservation_frobenius_error": 0.0,
+        "energies": [
+          0,
+          1,
+          3
+        ],
+        "isometry_bound": 0.5888120919290162,
+        "isometry_error": 0.17499701426183473,
+        "reservoir_dimension": 37,
+        "unitarity_frobenius_error": 2.7321977352389642e-15
+      }
+    ]
+  },
+  "rejected_route_controls": {
+    "Euler_Choi_minimum_eigenvalue": -0.005538513813741661,
+    "Euler_amplitude_damping_tau": 0.2,
+    "cyclic_shift_translation_identity_failure_norm": 5.0,
+    "interpretation": "Detected failure of two rejected routes; these are expected negative controls, not failed execution assertions."
+  },
+  "same_reservoir_sequence": {
+    "L": 21,
+    "complete_discrete_flag_history_trace_error": 0.018335629811885544,
+    "composition_frobenius_error": 0.0,
+    "flags": 2,
+    "joint_reference_trace_error": 0.19278829462516364,
+    "reference_dimension": 2,
+    "reservoir_purity_after_first_gate": 0.9735652322586253,
+    "resets_used": false,
+    "system_flags_reservoir_correlation_trace_norm": 0.2563647336400046,
+    "uniform_trace_bound": 0.5707134655938587
+  },
+  "source_bindings": {
+    "microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c",
+    "microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5",
+    "microscopic_birth_energy_independent/FINAL_COMPARISON_SEAL.json": "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50"
+  },
+  "tolerances": "Exact fractions for block identities; all floating thresholds are explicit in this script. Maximally entangled input errors are examples, not numerical certificates of diamond distance; the written proof supplies that bound."
+}

@@ -1,0 +1,119 @@
+{
+  "created_utc": "2026-09-24T01:54:35.071476+00:00",
+  "phase": "PRE sealed before coherent-energy-supply author exposure",
+  "report": "PRE_COHERENT_ENERGY_SUPPLY.md",
+  "author_material_read": false,
+  "model": "Same inherited model/reasoning; independently reconstructed with only the previously checked star inputs.",
+  "scope": "Conditional resource theorem and explicit fixed-input single-output unitary, not full original-instrument or GKLS realization, not audit or landing verdict.",
+  "artifacts": [
+    {
+      "path": "INTEGRITY_SELF_TEST.json",
+      "sha256": "dfc1b9020cf46cb397c15475c353722e0c03f684b3e89f5c1c2fcff00f24e147",
+      "bytes": 214
+    },
+    {
+      "path": "NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "2704c2555b7c72bebaf31a81aaef13f80a6fbb238c30cd2d6f8633168feead26",
+      "bytes": 11252
+    },
+    {
+      "path": "PRE_COHERENT_ENERGY_SUPPLY.md",
+      "sha256": "33420632afe2685ff89ea13ca63d6f0104a06507a218da07adec5700d2bce5ac",
+      "bytes": 13178
+    },
+    {
+      "path": "PRE_RECEIPT.md",
+      "sha256": "1ce58a0d364dc3530f4ec3c8b3ed214aab6d269837512b9523b011c71f053876",
+      "bytes": 2737
+    },
+    {
+      "path": "RESULTS_01.json",
+      "sha256": "744ea3c7aca0d7c71f2fd626a5bb6419130826fa149f64c8c09aefaeba430cc0",
+      "bytes": 18118
+    },
+    {
+      "path": "RUN_01.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "RUN_01.stdout.log",
+      "sha256": "2f71de94e3a508110e713f38a6197b3eeb3712bb403c5f9a4438a41b4977e728",
+      "bytes": 250
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "5fd65b3fb3d9645822cab25cc68b38d769c2cf96e2c199c6b3c039f62b8b51eb",
+      "bytes": 3096
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "8f44c5e5c969cbe0397f88216316f498f0130bf014c3fe614761aed325aaaf73",
+      "bytes": 2296
+    },
+    {
+      "path": "coherent_supply_check.py",
+      "sha256": "361ee06c509b8b43644eeb70ae6e5867d21437bc5d7cd87eea5bec4a77b8979c",
+      "bytes": 13143
+    },
+    {
+      "path": "instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "instructions/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "path": "instructions/no_go_SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941
+    },
+    {
+      "path": "instructions/planning_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164
+    },
+    {
+      "path": "instructions/proof_search_governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    {
+      "path": "instructions/repository_AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "path": "instructions/workhorse_SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "bytes": 13419
+    },
+    {
+      "path": "sources/FINAL_COMPARISON_SEAL.json",
+      "sha256": "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50",
+      "bytes": 9460
+    },
+    {
+      "path": "sources/PRE_MICROSCOPIC_STAR_RECONSTRUCTION.md",
+      "sha256": "2aed1ac94f0c929210518020b97a189b58529393b1f58a8ad8946b72809c617c",
+      "bytes": 13949
+    },
+    {
+      "path": "sources/microscopic_star_complete_matrix_check.py",
+      "sha256": "6652f0c847d478f0db29b3fc4f9f739c309ce4126be69dd48221ab5d9377892b",
+      "bytes": 20932
+    },
+    {
+      "path": "verify_pre_seal.py",
+      "sha256": "867c6f0565f882c0196198c1531c2a984d0807e4d925f3d40b56c6f56fbbfe6e",
+      "bytes": 1965
+    }
+  ],
+  "completed_control": "RESULTS_01.json",
+  "new_execution_failures": [],
+  "gate_status": "N1-N8 scope check recorded; no formal publication/landing-schema PASS claimed under the authorized source-isolation/no-commit task.",
+  "fixed_campaign_deadline_utc": "2026-09-24 04:59:48 UTC"
+}

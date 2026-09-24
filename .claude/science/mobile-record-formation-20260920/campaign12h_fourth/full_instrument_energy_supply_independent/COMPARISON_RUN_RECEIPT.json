@@ -1,0 +1,11 @@
+{
+  "finished_utc": "2026-09-24T02:14:23.070788+00:00",
+  "code_sha256": "ea0dfb98b6ac0030f9181051e1cfe5fb3c65adf46584b01ae330ada95ba38b27",
+  "elapsed_seconds": 0.5530075838323683,
+  "exit_code": 0,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "comparison_control.py"
+  ],
+  "root_builder_import": false
+}

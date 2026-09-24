@@ -1,0 +1,608 @@
+{
+  "created_utc": "2026-09-24T02:41:35.866186+00:00",
+  "base_pr": 8923,
+  "base_commit": "191ad04ad48d64c55d31c34521caec68444bfa64",
+  "claim_status": "provisional review proposal; no audit verdict",
+  "scope": "Fixed-input coherent fuel and separate arbitrary-input finite marked collision supply; supplied resources and external schedule",
+  "seals": [
+    {
+      "path": "coherent_energy_supply_author/AUTHOR_SEAL.json",
+      "bytes": 2000,
+      "sha256": "350648ccf962bf0b225e8c0eb8cbe0e101bd80eefe307e064603d61cddbf7d90"
+    },
+    {
+      "path": "coherent_energy_supply_independent/PRE_SEAL.json",
+      "bytes": 4217,
+      "sha256": "ec6d33b271b05faf74700d9f9346921a5f652fb860c967b631d79b21a8b51d0d"
+    },
+    {
+      "path": "coherent_energy_supply_independent/FINAL_COMPARISON_SEAL.json",
+      "bytes": 7674,
+      "sha256": "38e7d4e369b8bcdbf65861c8b0dbab69be1c04e7959c3c3ad39a54d2f198e5e6"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/AUTHOR_SEAL.json",
+      "bytes": 3356,
+      "sha256": "469d1f35340e2615d7c7e9d4bbad4a18a111fc04bdb49105fb9120cdb0c7ee83"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/PRE_SEAL.json",
+      "bytes": 4051,
+      "sha256": "8b2c02e41a68f0ad9d085e3056031383d92f553cb3b0745bd13654b415a0805d"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/FINAL_SEAL.json",
+      "bytes": 2605,
+      "sha256": "8195b3b79a3ec80c31ba889a75982bd2545e57891c5d2fb79f19b84f376a7372"
+    }
+  ],
+  "explicit_omissions": [
+    {
+      "path": "coherent_energy_supply_independent/instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "reason": "Historical procedural snapshot, not scientific input; unchanged seal retains its binding"
+    },
+    {
+      "path": "coherent_energy_supply_independent/instructions/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "reason": "Historical procedural snapshot, not scientific input; unchanged seal retains its binding"
+    },
+    {
+      "path": "coherent_energy_supply_independent/instructions/no_go_SKILL.md",
+      "bytes": 16941,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "reason": "Historical procedural snapshot, not scientific input; unchanged seal retains its binding"
+    },
+    {
+      "path": "coherent_energy_supply_independent/instructions/planning_AGENTS.md",
+      "bytes": 10164,
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "reason": "Historical procedural snapshot, not scientific input; unchanged seal retains its binding"
+    },
+    {
+      "path": "coherent_energy_supply_independent/instructions/proof_search_governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "reason": "Historical procedural snapshot, not scientific input; unchanged seal retains its binding"
+    },
+    {
+      "path": "coherent_energy_supply_independent/instructions/repository_AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "reason": "Historical procedural snapshot, not scientific input; unchanged seal retains its binding"
+    },
+    {
+      "path": "coherent_energy_supply_independent/instructions/workhorse_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "reason": "Historical procedural snapshot, not scientific input; unchanged seal retains its binding"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/sources/Aberg_1304.1060v3.pdf",
+      "bytes": 3131340,
+      "sha256": "f25314c4d44716b54b2643404f4d646f730400e6ecdb8b4bcf11ac00a2250e2a",
+      "reason": "Private external bibliographic provenance; no public-file-presence requirement"
+    }
+  ],
+  "sources": [
+    {
+      "path": "microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "bytes": 9368,
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c"
+    },
+    {
+      "path": "microscopic_birth_energy_author/exact_star_energy.py",
+      "bytes": 5328,
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "path": "microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "bytes": 8477,
+      "sha256": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5"
+    },
+    {
+      "path": "microscopic_birth_energy_independent/microscopic_star_complete_matrix_check.py",
+      "bytes": 20932,
+      "sha256": "6652f0c847d478f0db29b3fc4f9f739c309ce4126be69dd48221ab5d9377892b"
+    },
+    {
+      "path": "microscopic_birth_energy_independent/FINAL_COMPARISON_SEAL.json",
+      "bytes": 9460,
+      "sha256": "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50"
+    },
+    {
+      "path": "microscopic_electric_robustness_author/STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY.md",
+      "bytes": 6889,
+      "sha256": "a7dfe854f72be6e30b7aa4bbb61e10c5e7876b6cd62698735968af33ae0477c2"
+    },
+    {
+      "path": "microscopic_electric_robustness_independent/PRE_RECONSTRUCTION.md",
+      "bytes": 17655,
+      "sha256": "145bc27edb4a791a89b5d624943ef99102692783b0de5e8cfc7615e0c19c0f40"
+    },
+    {
+      "path": "microscopic_electric_robustness_independent/PRE_SEAL.json",
+      "bytes": 4478,
+      "sha256": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "FINITE_ENERGY_SUPPLY_PUBLICATION_README.md",
+      "bytes": 3012,
+      "sha256": "eb2f259d99ec855eb5895daedab189437f597abefa3e7fbcb85826ed5f96e7cd"
+    },
+    {
+      "path": "coherent_energy_supply_author/AUTHOR_SEAL.json",
+      "bytes": 2000,
+      "sha256": "350648ccf962bf0b225e8c0eb8cbe0e101bd80eefe307e064603d61cddbf7d90"
+    },
+    {
+      "path": "coherent_energy_supply_author/COHERENT_FUEL.log",
+      "bytes": 1320,
+      "sha256": "d6fdec1d2e071a829fb8b8a223bb8a1338eb172e8f66fcd9cc83fa9c45efc0b9"
+    },
+    {
+      "path": "coherent_energy_supply_author/COHERENT_FUEL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "coherent_energy_supply_author/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md",
+      "bytes": 9002,
+      "sha256": "93a93b02a37ecb7c804cb9800e144d321476a101130dacac0bb3b2fdbee20e34"
+    },
+    {
+      "path": "coherent_energy_supply_author/COHERENT_FUEL_RESULTS.json",
+      "bytes": 3448,
+      "sha256": "fe65e6890f46982def70866ccb5ac9d520e5be336539ba81038150d5b8f588a2"
+    },
+    {
+      "path": "coherent_energy_supply_author/DEVELOPMENT_FAILURES.md",
+      "bytes": 380,
+      "sha256": "9675505341218294b82bbabfc8bddeb950316374bb794ecdcb30dc161a6c63e2"
+    },
+    {
+      "path": "coherent_energy_supply_author/FAILED_INITIAL_CONTROL.py",
+      "bytes": 4051,
+      "sha256": "118809baa278bb4743ab5388c013e3bcf2450ea51ffef8271a38d61c83e4950d"
+    },
+    {
+      "path": "coherent_energy_supply_author/coherent_fuel_control.py",
+      "bytes": 4086,
+      "sha256": "025310de415ec4654f03725b9311ab274882d341c02b08307c2dc8ad339d4c67"
+    },
+    {
+      "path": "coherent_energy_supply_independent/FINAL_COMPARISON_SEAL.json",
+      "bytes": 7674,
+      "sha256": "38e7d4e369b8bcdbf65861c8b0dbab69be1c04e7959c3c3ad39a54d2f198e5e6"
+    },
+    {
+      "path": "coherent_energy_supply_independent/FINAL_STATUS.md",
+      "bytes": 2823,
+      "sha256": "fc8831c2908c0bdbc1d20414997c4d0799a6e16d2fd83cf4d31032ea992f44af"
+    },
+    {
+      "path": "coherent_energy_supply_independent/INTEGRITY_SELF_TEST.json",
+      "bytes": 214,
+      "sha256": "dfc1b9020cf46cb397c15475c353722e0c03f684b3e89f5c1c2fcff00f24e147"
+    },
+    {
+      "path": "coherent_energy_supply_independent/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 11252,
+      "sha256": "2704c2555b7c72bebaf31a81aaef13f80a6fbb238c30cd2d6f8633168feead26"
+    },
+    {
+      "path": "coherent_energy_supply_independent/POST_FINAL_COMPARISON.md",
+      "bytes": 18768,
+      "sha256": "583ce3ec4b385d4c1f1d624ebd3c7ca43ed85effbf4bc22af3a71ae15083882f"
+    },
+    {
+      "path": "coherent_energy_supply_independent/POST_RESULTS_01.json",
+      "bytes": 31495,
+      "sha256": "bf4c330fa124c6ced13aa3b79d38144eb166acdeddd41aebf3d670780fb98526"
+    },
+    {
+      "path": "coherent_energy_supply_independent/POST_RESULTS_02.json",
+      "bytes": 35053,
+      "sha256": "d88323cc905cd56ed216997b4a6f47bcc9099c7a5eb86c42b55375a973e718b2"
+    },
+    {
+      "path": "coherent_energy_supply_independent/POST_RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "coherent_energy_supply_independent/POST_RUN_01.stdout.log",
+      "bytes": 255,
+      "sha256": "c394d82c387593ff438690c6e4d4749843a5f51e5ed948ed596e5807a4feae5d"
+    },
+    {
+      "path": "coherent_energy_supply_independent/POST_RUN_02.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "coherent_energy_supply_independent/POST_RUN_02.stdout.log",
+      "bytes": 255,
+      "sha256": "2106d094476ab85a2b9fc29acb99a405fc1e4ec7d2e242219ea46de35d6701a2"
+    },
+    {
+      "path": "coherent_energy_supply_independent/POST_SOURCE_BINDINGS.json",
+      "bytes": 4335,
+      "sha256": "9d1ec30cd6760e9c3c2459f33d63dc18fa764bbc384d6d964fecffa1f67fdc90"
+    },
+    {
+      "path": "coherent_energy_supply_independent/PRE_COHERENT_ENERGY_SUPPLY.md",
+      "bytes": 13178,
+      "sha256": "33420632afe2685ff89ea13ca63d6f0104a06507a218da07adec5700d2bce5ac"
+    },
+    {
+      "path": "coherent_energy_supply_independent/PRE_RECEIPT.md",
+      "bytes": 2737,
+      "sha256": "1ce58a0d364dc3530f4ec3c8b3ed214aab6d269837512b9523b011c71f053876"
+    },
+    {
+      "path": "coherent_energy_supply_independent/PRE_SEAL.json",
+      "bytes": 4217,
+      "sha256": "ec6d33b271b05faf74700d9f9346921a5f652fb860c967b631d79b21a8b51d0d"
+    },
+    {
+      "path": "coherent_energy_supply_independent/RESULTS_01.json",
+      "bytes": 18118,
+      "sha256": "744ea3c7aca0d7c71f2fd626a5bb6419130826fa149f64c8c09aefaeba430cc0"
+    },
+    {
+      "path": "coherent_energy_supply_independent/RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "coherent_energy_supply_independent/RUN_01.stdout.log",
+      "bytes": 250,
+      "sha256": "2f71de94e3a508110e713f38a6197b3eeb3712bb403c5f9a4438a41b4977e728"
+    },
+    {
+      "path": "coherent_energy_supply_independent/SOURCE_BINDINGS.json",
+      "bytes": 3096,
+      "sha256": "5fd65b3fb3d9645822cab25cc68b38d769c2cf96e2c199c6b3c039f62b8b51eb"
+    },
+    {
+      "path": "coherent_energy_supply_independent/STATUS.md",
+      "bytes": 2296,
+      "sha256": "8f44c5e5c969cbe0397f88216316f498f0130bf014c3fe614761aed325aaaf73"
+    },
+    {
+      "path": "coherent_energy_supply_independent/coherent_supply_check.py",
+      "bytes": 13143,
+      "sha256": "361ee06c509b8b43644eeb70ae6e5867d21437bc5d7cd87eea5bec4a77b8979c"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_compare.py",
+      "bytes": 11610,
+      "sha256": "d1baa1a9c3e9c05ef72c081bc70027afacdfb6565ed67561da5f35233ccb472c"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_compare_run01.py",
+      "bytes": 10613,
+      "sha256": "2f4187793d7b918776e180528d682f4332d3607237641492d7a23b5f6892c568"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_sources/AUTHOR_SEAL.json",
+      "bytes": 2000,
+      "sha256": "350648ccf962bf0b225e8c0eb8cbe0e101bd80eefe307e064603d61cddbf7d90"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_sources/COHERENT_FUEL.log",
+      "bytes": 1320,
+      "sha256": "d6fdec1d2e071a829fb8b8a223bb8a1338eb172e8f66fcd9cc83fa9c45efc0b9"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_sources/COHERENT_FUEL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_sources/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md",
+      "bytes": 9002,
+      "sha256": "93a93b02a37ecb7c804cb9800e144d321476a101130dacac0bb3b2fdbee20e34"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_sources/COHERENT_FUEL_RESULTS.json",
+      "bytes": 3448,
+      "sha256": "fe65e6890f46982def70866ccb5ac9d520e5be336539ba81038150d5b8f588a2"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_sources/DEVELOPMENT_FAILURES.md",
+      "bytes": 380,
+      "sha256": "9675505341218294b82bbabfc8bddeb950316374bb794ecdcb30dc161a6c63e2"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_sources/FAILED_INITIAL_CONTROL.py",
+      "bytes": 4051,
+      "sha256": "118809baa278bb4743ab5388c013e3bcf2450ea51ffef8271a38d61c83e4950d"
+    },
+    {
+      "path": "coherent_energy_supply_independent/post_sources/coherent_fuel_control.py",
+      "bytes": 4086,
+      "sha256": "025310de415ec4654f03725b9311ab274882d341c02b08307c2dc8ad339d4c67"
+    },
+    {
+      "path": "coherent_energy_supply_independent/sources/FINAL_COMPARISON_SEAL.json",
+      "bytes": 9460,
+      "sha256": "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50"
+    },
+    {
+      "path": "coherent_energy_supply_independent/sources/PRE_MICROSCOPIC_STAR_RECONSTRUCTION.md",
+      "bytes": 13949,
+      "sha256": "2aed1ac94f0c929210518020b97a189b58529393b1f58a8ad8946b72809c617c"
+    },
+    {
+      "path": "coherent_energy_supply_independent/sources/microscopic_star_complete_matrix_check.py",
+      "bytes": 20932,
+      "sha256": "6652f0c847d478f0db29b3fc4f9f739c309ce4126be69dd48221ab5d9377892b"
+    },
+    {
+      "path": "coherent_energy_supply_independent/verify_pre_seal.py",
+      "bytes": 1965,
+      "sha256": "867c6f0565f882c0196198c1531c2a984d0807e4d925f3d40b56c6f56fbbfe6e"
+    },
+    {
+      "path": "finite_energy_supply_review/NO_GO_SCOPE.md",
+      "bytes": 1570,
+      "sha256": "e2121de5a3866a340f0533f597499ccb9b63b55c3113c19f8244df800dc9b025"
+    },
+    {
+      "path": "finite_energy_supply_review/PORTABLE_RUN_RECEIPT.json",
+      "bytes": 5189,
+      "sha256": "49e7daef6eff72f47337dde1c92d187342e4c318d1b950dfb18406196eb28a7c"
+    },
+    {
+      "path": "finite_energy_supply_review/ROOT_REVIEW.md",
+      "bytes": 4813,
+      "sha256": "9636856900b9a8b0efd00cd0ec2ffdcadc61c2868cbc3be79c9024b2cada4bce"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/AUTHOR_SEAL.json",
+      "bytes": 3356,
+      "sha256": "469d1f35340e2615d7c7e9d4bbad4a18a111fc04bdb49105fb9120cdb0c7ee83"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/DERIVATION_PLAN.md",
+      "bytes": 2997,
+      "sha256": "ca7557bf616cd4d5206f43badf480369cd3bb5f3fef8f446c6bee217efd42e8e"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/DEVELOPMENT_RECORD.md",
+      "bytes": 1084,
+      "sha256": "9bb6ea93057473cd1f9c58d0999a818248033248e644c45a917ee3fc1c23b9a9"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/EXECUTION_RECEIPT.json",
+      "bytes": 726,
+      "sha256": "63f41ce4c550cf9843b8fca60e48a374c3d7808054764129510aeae4788ba131"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/FINITE_BATTERY_RESULTS.json",
+      "bytes": 2514,
+      "sha256": "7419a8d7b20f7fee0051f1e96dff1f6a541738e974a283a1f844a0a2ccb7457d"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/FINITE_BATTERY_RUN.log",
+      "bytes": 2514,
+      "sha256": "7419a8d7b20f7fee0051f1e96dff1f6a541738e974a283a1f844a0a2ccb7457d"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/FINITE_BATTERY_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md",
+      "bytes": 14146,
+      "sha256": "6b9c4ae27ee49754e905f0d990b766be94f2c9ee8a624da01208a6da14b20288"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/MARKED_COLLISION_RESULTS.json",
+      "bytes": 7427,
+      "sha256": "5ad28116cc9e3267a43abc291805a6b839bcdc394e0980e10fb2f82d42ee3b31"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/MARKED_COLLISION_RUN.log",
+      "bytes": 7427,
+      "sha256": "5ad28116cc9e3267a43abc291805a6b839bcdc394e0980e10fb2f82d42ee3b31"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/MARKED_COLLISION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/STAR_SOURCE_IMPORT.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/finite_battery_control.py",
+      "bytes": 5225,
+      "sha256": "79d2e7b5c40bb1a74b5ea808c20e5ba5fc61c4dfddbc81ba384983d0c1e209af"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/marked_collision_control.py",
+      "bytes": 8461,
+      "sha256": "043ff41ec64efce5d52757d99d8dab4ece77441de52f1519340e2e526685c700"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/COMPARISON.md",
+      "bytes": 14649,
+      "sha256": "948df0ebb9da3dc3b0a63ecd080fc5665b459623653866829adb9791db42508d"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/COMPARISON_CONTROL_RESULTS.json",
+      "bytes": 7577,
+      "sha256": "c37691726abb8e2a9eb5ffbf30959c4afd10482f5d49bea630ef684ad7957f04"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/COMPARISON_RUN.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/COMPARISON_RUN.stdout.log",
+      "bytes": 1298,
+      "sha256": "e45a295e84c77a066bd247eb1b792531f039b027173cc5e2bcbe831d42b6c80b"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/COMPARISON_RUN_RECEIPT.json",
+      "bytes": 330,
+      "sha256": "8e16a842603f8a3aeda5c910c696bb0b292adca2e7444f49c79cfdefb6e8202c"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/COMPARISON_SOURCE_BINDINGS.json",
+      "bytes": 4268,
+      "sha256": "4e8462c064ec862c4b9437018e9aab95e3c0ac46030432f37993e6ff6234f371"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/CONTROL_RESULTS_02.json",
+      "bytes": 14462,
+      "sha256": "eaa3f0fd5c17afebf2678d14f7219b63b8ecd1560c5c7b773dcdcd37d1cfe77b"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/FAILED_ROUTES.md",
+      "bytes": 1603,
+      "sha256": "62369ac00d295fa5a52d40faee6a1355d1cc51be165d73863cfd0bab7fe3b9e0"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/FINAL_SEAL.json",
+      "bytes": 2605,
+      "sha256": "8195b3b79a3ec80c31ba889a75982bd2545e57891c5d2fb79f19b84f376a7372"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/FINAL_STATUS.md",
+      "bytes": 1890,
+      "sha256": "85dbb1c120797fbff6e0bb3fa7c315c713f346c95f1461326699f3bbcce4f52b"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/PREMISE_AUTHENTICATION.json",
+      "bytes": 370,
+      "sha256": "300f6491095d9a1ff3e2e2f02a83bc643064a5abe1c3815a527c9a50a602de1c"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/PRESERVATION_AND_PUBLICATION_RECEIPT.json",
+      "bytes": 4724,
+      "sha256": "006311c8dbf9872bb7798f26862734d733101e5b5f9e80c941366e7345908ae5"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/PRE_RECEIPT.json",
+      "bytes": 862,
+      "sha256": "5a0afce8f02d173251adb354066c3a28019bdc0ea4512fc0e92ec26cfab88c77"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/PRE_RECONSTRUCTION.md",
+      "bytes": 24841,
+      "sha256": "06f3e72a3a93493d8587d26f6a7e040d8a0fdde521b68417b266912ac24854cb"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/PRE_SEAL.json",
+      "bytes": 4051,
+      "sha256": "8b2c02e41a68f0ad9d085e3056031383d92f553cb3b0745bd13654b415a0805d"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/PRE_STATUS.md",
+      "bytes": 2649,
+      "sha256": "9895209a70416eb9db0df98345c539aaff2039f848031f3331f1eefe0b1155b8"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/RUN_01.stderr.log",
+      "bytes": 432,
+      "sha256": "a1b19ac8e7d37f94a3a9c383552335689ca3dfbb04245c3df158fb6418c688a2"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/RUN_01.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/RUN_01_RECEIPT.json",
+      "bytes": 331,
+      "sha256": "2c49709503a17e8dde943673dca9b34fe0afea3f1f147d78dc88e65f4963e997"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/RUN_01_control.py",
+      "bytes": 16310,
+      "sha256": "0fea62af27951a81adfa48e7c1bd79a6ac2edbc901ff8074c105ec4e86d2c471"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/RUN_02.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/RUN_02.stdout.log",
+      "bytes": 838,
+      "sha256": "640e11a752f3b5a128600f582501a49112aa693f0cd2848548368f53542a2e59"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/RUN_02_RECEIPT.json",
+      "bytes": 318,
+      "sha256": "16bc57984b7d5d41f08aed55ce5971107589ca8fca33ff2b5fd66585656cde5f"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/RUN_02_control.py",
+      "bytes": 16309,
+      "sha256": "04701d445390b031c8c4399e27d2cba118b41caafc48a12efa1c67f7ec330bbd"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/SOURCE_MANIFEST.json",
+      "bytes": 4500,
+      "sha256": "02610391b15c36f49d136c374191d04be2bb7ec6e5630121ca7e72d1b08f09ac"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/comparison_control.py",
+      "bytes": 11175,
+      "sha256": "ea0dfb98b6ac0030f9181051e1cfe5fb3c65adf46584b01ae330ada95ba38b27"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/control.py",
+      "bytes": 16309,
+      "sha256": "04701d445390b031c8c4399e27d2cba118b41caafc48a12efa1c67f7ec330bbd"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/sources/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "bytes": 9368,
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/sources/FINAL_COMPARISON_SEAL.json",
+      "bytes": 9460,
+      "sha256": "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/sources/FINAL_STATUS.md",
+      "bytes": 2287,
+      "sha256": "d446054d0dbf0b81be696c46e4bf3d8b19ac7b21dca27c2b76c9e58668d94b21"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/sources/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "bytes": 8477,
+      "sha256": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/sources/POST_FINAL_COMPARISON.md",
+      "bytes": 11743,
+      "sha256": "71299e4ff7db884b4fc2c44b7ddfa44b8cd5978a0cca1ca3978fe35e6ea495aa"
+    },
+    {
+      "path": "reproduce_finite_energy_supply_publication.py",
+      "bytes": 3217,
+      "sha256": "a70955478e4611b558e1e77fadffe46c9dde22f2c61b613ba16f6bb0082f5c55"
+    },
+    {
+      "path": "verify_finite_energy_supply_publication.py",
+      "bytes": 2424,
+      "sha256": "058d3061acc5308f96e54d87016037f5986f92a5d761aa2852935e43ed87a1cf"
+    }
+  ]
+}

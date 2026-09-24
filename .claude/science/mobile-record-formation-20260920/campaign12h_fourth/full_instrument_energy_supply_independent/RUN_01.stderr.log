@@ -1,0 +1,4 @@
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/control.py", line 77
+    inds = [a * nr + lookup[tuple(qi - ki for qi, ki in zip(q, k))]] for a, k in enumerate(labels)]
+                                                                                                  ^
+SyntaxError: unmatched ']'

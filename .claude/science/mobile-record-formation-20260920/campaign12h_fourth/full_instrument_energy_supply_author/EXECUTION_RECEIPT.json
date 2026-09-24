@@ -1,0 +1,22 @@
+{
+  "scope": "Author controls; not independent reconstruction",
+  "created_utc": "2026-09-24T01:58:02.048873+00:00",
+  "runs": [
+    {
+      "script": "finite_battery_control.py",
+      "reported_exit_code": 0,
+      "stdout": "FINITE_BATTERY_RUN.log",
+      "stderr": "FINITE_BATTERY_RUN.stderr",
+      "stderr_empty": true
+    },
+    {
+      "script": "marked_collision_control.py",
+      "reported_exit_code": 0,
+      "stdout": "MARKED_COLLISION_RUN.log",
+      "stderr": "MARKED_COLLISION_RUN.stderr",
+      "stderr_empty": true
+    }
+  ],
+  "failures": "No control failures; two rejected documentation patches are recorded separately",
+  "source_import": "Pinned prior root star script executed in an expendable copy"
+}

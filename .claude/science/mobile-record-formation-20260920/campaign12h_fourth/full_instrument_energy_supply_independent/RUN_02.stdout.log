@@ -1,0 +1,20 @@
+{
+  "all_assertions_passed": true,
+  "exact_block_models": 2,
+  "integer_battery_cases": 12,
+  "noncommensurate_battery_cases": 3,
+  "star_CP_cases": 9,
+  "same_reservoir_sequence": {
+    "L": 21,
+    "flags": 2,
+    "reference_dimension": 2,
+    "composition_frobenius_error": 0.0,
+    "reservoir_purity_after_first_gate": 0.9735652322586253,
+    "system_flags_reservoir_correlation_trace_norm": 0.2563647336400046,
+    "joint_reference_trace_error": 0.19278829462516364,
+    "complete_discrete_flag_history_trace_error": 0.018335629811885544,
+    "uniform_trace_bound": 0.5707134655938587,
+    "resets_used": false
+  },
+  "output": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/CONTROL_RESULTS_02.json"
+}

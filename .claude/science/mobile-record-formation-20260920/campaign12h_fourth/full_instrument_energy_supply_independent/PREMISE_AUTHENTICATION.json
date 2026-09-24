@@ -1,0 +1,6 @@
+{
+  "seal_sha256": "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50",
+  "artifacts_authenticated": 50,
+  "failures": [],
+  "scope": "Hash authentication of the complete released prior independent packet. The two complete notes and complete final comparison are reused as checked premises; prior computations are not independently rerun in this task."
+}

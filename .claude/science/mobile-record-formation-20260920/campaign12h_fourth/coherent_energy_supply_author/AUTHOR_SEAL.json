@@ -1,0 +1,51 @@
+{
+  "sealed_utc": "2026-09-24T01:31:19.045894+00:00",
+  "standing": "Personal fixed-input energy/coherence accounting; independent review pending",
+  "files": [
+    {
+      "path": "COHERENT_FUEL.log",
+      "bytes": 1320,
+      "sha256": "d6fdec1d2e071a829fb8b8a223bb8a1338eb172e8f66fcd9cc83fa9c45efc0b9"
+    },
+    {
+      "path": "COHERENT_FUEL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md",
+      "bytes": 9002,
+      "sha256": "93a93b02a37ecb7c804cb9800e144d321476a101130dacac0bb3b2fdbee20e34"
+    },
+    {
+      "path": "COHERENT_FUEL_RESULTS.json",
+      "bytes": 3448,
+      "sha256": "fe65e6890f46982def70866ccb5ac9d520e5be336539ba81038150d5b8f588a2"
+    },
+    {
+      "path": "DEVELOPMENT_FAILURES.md",
+      "bytes": 380,
+      "sha256": "9675505341218294b82bbabfc8bddeb950316374bb794ecdcb30dc161a6c63e2"
+    },
+    {
+      "path": "FAILED_INITIAL_CONTROL.py",
+      "bytes": 4051,
+      "sha256": "118809baa278bb4743ab5388c013e3bcf2450ea51ffef8271a38d61c83e4950d"
+    },
+    {
+      "path": "coherent_fuel_control.py",
+      "bytes": 4086,
+      "sha256": "025310de415ec4654f03725b9311ab274882d341c02b08307c2dc8ad339d4c67"
+    }
+  ],
+  "sources_sha256": {
+    "microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c",
+    "microscopic_birth_energy_author/exact_star_energy.py": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e",
+    "microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5"
+  },
+  "primary_external_context": {
+    "url": "https://arxiv.org/pdf/1410.4572",
+    "section": "III.A",
+    "role": "Stationary environment and energy conservation imply time-translation covariance; particular bounds and witness derived in note"
+  }
+}

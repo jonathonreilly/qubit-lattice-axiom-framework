@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-09-24T01:56:41.503459+00:00",
+  "candidate_head": "c1b518984f4d21400075f43cad788f6c8e9f73f7",
+  "governance_reused_from_previous_read": [
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "AGENTS.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "working_copy_identical": true
+    },
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "working_copy_identical": true
+    },
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "working_copy_identical": true
+    },
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "working_copy_identical": true
+    },
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "working_copy_identical": true
+    }
+  ],
+  "observed_local_origin_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+  "governance_difference": "none; current working tree and observed local origin/main hashes agree with pinned 61fa governance snapshots",
+  "sources": [
+    {
+      "relative_adjacent_path": "../microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c",
+      "bytes": 9368,
+      "snapshot": "sources/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md"
+    },
+    {
+      "relative_adjacent_path": "../microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "sha256": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5",
+      "bytes": 8477,
+      "snapshot": "sources/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md"
+    },
+    {
+      "relative_adjacent_path": "../microscopic_birth_energy_independent/POST_FINAL_COMPARISON.md",
+      "sha256": "71299e4ff7db884b4fc2c44b7ddfa44b8cd5978a0cca1ca3978fe35e6ea495aa",
+      "bytes": 11743,
+      "snapshot": "sources/POST_FINAL_COMPARISON.md"
+    },
+    {
+      "relative_adjacent_path": "../microscopic_birth_energy_independent/FINAL_STATUS.md",
+      "sha256": "d446054d0dbf0b81be696c46e4bf3d8b19ac7b21dca27c2b76c9e58668d94b21",
+      "bytes": 2287,
+      "snapshot": "sources/FINAL_STATUS.md"
+    },
+    {
+      "relative_adjacent_path": "../microscopic_birth_energy_independent/FINAL_COMPARISON_SEAL.json",
+      "sha256": "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50",
+      "bytes": 9460,
+      "snapshot": "sources/FINAL_COMPARISON_SEAL.json"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1304.1060v3",
+      "sha256": "f25314c4d44716b54b2643404f4d646f730400e6ecdb8b4bcf11ac00a2250e2a",
+      "bytes": 3131340,
+      "snapshot": "sources/Aberg_1304.1060v3.pdf",
+      "use": "Attribution for lifted translations and homomorphism; the finite both-boundary sine bound and arbitrary-spectrum construction are derived here."
+    }
+  ],
+  "exposure_boundary": {
+    "withheld": [
+      "full_instrument_energy_supply_author",
+      "coherent_energy_supply_author",
+      "current CHECKPOINT",
+      "EXT/autonomous-reservoir-personal"
+    ],
+    "withheld_read": false,
+    "author_target_read": false,
+    "code_imports_from_other_packets": false,
+    "external_access": "Only public primary paper arxiv1304.1060v3; no private external calculations",
+    "write_scope": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent",
+    "git_mutations": false
+  }
+}

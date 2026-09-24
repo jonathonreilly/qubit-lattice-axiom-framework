@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-24T02:06:53.638784+00:00",
+  "python": "3.13.5",
+  "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "candidate_head": "c1b518984f4d21400075f43cad788f6c8e9f73f7",
+  "full_results": "CONTROL_RESULTS_02.json",
+  "full_stdout": "RUN_02.stdout.log",
+  "full_stderr": "RUN_02.stderr.log",
+  "execution_receipt": "RUN_02_RECEIPT.json",
+  "failed_run_preserved": "RUN_01_RECEIPT.json",
+  "code_sha256": "04701d445390b031c8c4399e27d2cba118b41caafc48a12efa1c67f7ec330bbd",
+  "result_sha256": "eaa3f0fd5c17afebf2678d14f7219b63b8ecd1560c5c7b773dcdcd37d1cfe77b",
+  "author_target_exposed": false,
+  "all_controls_passed": true,
+  "prior_premise_authentication": "PREMISE_AUTHENTICATION.json",
+  "status": "Independent PRE complete; waiting for authorized target source comparison."
+}

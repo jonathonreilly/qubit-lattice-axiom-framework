@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-09-24T02:04:49.785378+00:00",
+  "authorization": "Root explicitly released this author packet after authenticating the independently sealed PRE.",
+  "pre_seal_sha256": "ec6d33b271b05faf74700d9f9346921a5f652fb860c967b631d79b21a8b51d0d",
+  "author_seal_sha256": "350648ccf962bf0b225e8c0eb8cbe0e101bd80eefe307e064603d61cddbf7d90",
+  "sources": [
+    {
+      "role": "released author comparison, never imported or executed",
+      "original": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL.log",
+      "copy": "post_sources/COHERENT_FUEL.log",
+      "sha256": "d6fdec1d2e071a829fb8b8a223bb8a1338eb172e8f66fcd9cc83fa9c45efc0b9",
+      "bytes": 1320
+    },
+    {
+      "role": "released author comparison, never imported or executed",
+      "original": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL.stderr",
+      "copy": "post_sources/COHERENT_FUEL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "role": "released author comparison, never imported or executed",
+      "original": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md",
+      "copy": "post_sources/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md",
+      "sha256": "93a93b02a37ecb7c804cb9800e144d321476a101130dacac0bb3b2fdbee20e34",
+      "bytes": 9002
+    },
+    {
+      "role": "released author comparison, never imported or executed",
+      "original": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL_RESULTS.json",
+      "copy": "post_sources/COHERENT_FUEL_RESULTS.json",
+      "sha256": "fe65e6890f46982def70866ccb5ac9d520e5be336539ba81038150d5b8f588a2",
+      "bytes": 3448
+    },
+    {
+      "role": "released author comparison, never imported or executed",
+      "original": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/DEVELOPMENT_FAILURES.md",
+      "copy": "post_sources/DEVELOPMENT_FAILURES.md",
+      "sha256": "9675505341218294b82bbabfc8bddeb950316374bb794ecdcb30dc161a6c63e2",
+      "bytes": 380
+    },
+    {
+      "role": "released author comparison, never imported or executed",
+      "original": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/FAILED_INITIAL_CONTROL.py",
+      "copy": "post_sources/FAILED_INITIAL_CONTROL.py",
+      "sha256": "118809baa278bb4743ab5388c013e3bcf2450ea51ffef8271a38d61c83e4950d",
+      "bytes": 4051
+    },
+    {
+      "role": "released author comparison, never imported or executed",
+      "original": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/coherent_fuel_control.py",
+      "copy": "post_sources/coherent_fuel_control.py",
+      "sha256": "025310de415ec4654f03725b9311ab274882d341c02b08307c2dc8ad339d4c67",
+      "bytes": 4086
+    },
+    {
+      "role": "released author comparison, never imported or executed",
+      "original": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/AUTHOR_SEAL.json",
+      "copy": "post_sources/AUTHOR_SEAL.json",
+      "sha256": "350648ccf962bf0b225e8c0eb8cbe0e101bd80eefe307e064603d61cddbf7d90",
+      "bytes": 2000
+    }
+  ],
+  "exclusions_not_read": [
+    "current campaign CHECKPOINT",
+    "external autonomous-reservoir-personal files",
+    "full_instrument_energy_supply_author"
+  ],
+  "external_context_citation": "Author cites arXiv:1410.4572 section III.A. No external paper was fetched, imported, or needed for the self-contained reconstruction."
+}

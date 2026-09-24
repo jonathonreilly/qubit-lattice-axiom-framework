@@ -1,0 +1,102 @@
+{
+  "author_seal_sha256": "469d1f35340e2615d7c7e9d4bbad4a18a111fc04bdb49105fb9120cdb0c7ee83",
+  "own_pre_seal_sha256": "8b2c02e41a68f0ad9d085e3056031383d92f553cb3b0745bd13654b415a0805d",
+  "bindings": [
+    {
+      "path": "../full_instrument_energy_supply_author/DERIVATION_PLAN.md",
+      "sha256": "ca7557bf616cd4d5206f43badf480369cd3bb5f3fef8f446c6bee217efd42e8e",
+      "bytes": 2997
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/DEVELOPMENT_RECORD.md",
+      "sha256": "9bb6ea93057473cd1f9c58d0999a818248033248e644c45a917ee3fc1c23b9a9",
+      "bytes": 1084
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/EXECUTION_RECEIPT.json",
+      "sha256": "63f41ce4c550cf9843b8fca60e48a374c3d7808054764129510aeae4788ba131",
+      "bytes": 726
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/FINITE_BATTERY_RESULTS.json",
+      "sha256": "7419a8d7b20f7fee0051f1e96dff1f6a541738e974a283a1f844a0a2ccb7457d",
+      "bytes": 2514
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/FINITE_BATTERY_RUN.log",
+      "sha256": "7419a8d7b20f7fee0051f1e96dff1f6a541738e974a283a1f844a0a2ccb7457d",
+      "bytes": 2514
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/FINITE_BATTERY_RUN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md",
+      "sha256": "6b9c4ae27ee49754e905f0d990b766be94f2c9ee8a624da01208a6da14b20288",
+      "bytes": 14146
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/MARKED_COLLISION_RESULTS.json",
+      "sha256": "5ad28116cc9e3267a43abc291805a6b839bcdc394e0980e10fb2f82d42ee3b31",
+      "bytes": 7427
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/MARKED_COLLISION_RUN.log",
+      "sha256": "5ad28116cc9e3267a43abc291805a6b839bcdc394e0980e10fb2f82d42ee3b31",
+      "bytes": 7427
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/MARKED_COLLISION_RUN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/STAR_SOURCE_IMPORT.log",
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736",
+      "bytes": 1090
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/finite_battery_control.py",
+      "sha256": "79d2e7b5c40bb1a74b5ea808c20e5ba5fc61c4dfddbc81ba384983d0c1e209af",
+      "bytes": 5225
+    },
+    {
+      "path": "../full_instrument_energy_supply_author/marked_collision_control.py",
+      "sha256": "043ff41ec64efce5d52757d99d8dab4ece77441de52f1519340e2e526685c700",
+      "bytes": 8461
+    },
+    {
+      "path": "../microscopic_birth_energy_author/exact_star_energy.py",
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e",
+      "bytes": 5328
+    },
+    {
+      "path": "../microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c",
+      "bytes": 9368
+    },
+    {
+      "path": "../microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "sha256": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5",
+      "bytes": 8477
+    },
+    {
+      "path": "../microscopic_electric_robustness_author/STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY.md",
+      "sha256": "a7dfe854f72be6e30b7aa4bbb61e10c5e7876b6cd62698735968af33ae0477c2",
+      "bytes": 6889
+    },
+    {
+      "path": "../microscopic_electric_robustness_independent/PRE_RECONSTRUCTION.md",
+      "sha256": "145bc27edb4a791a89b5d624943ef99102692783b0de5e8cfc7615e0c19c0f40",
+      "bytes": 17655
+    },
+    {
+      "path": "../microscopic_electric_robustness_independent/PRE_SEAL.json",
+      "sha256": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa",
+      "bytes": 4478
+    }
+  ],
+  "external_bibliographic_provenance": "sources/Aberg_1304.1060v3.pdf remains private. Its SHA binding in PRE is bibliographic provenance; do not stage or publish the PDF or copied third-party text."
+}

@@ -1,0 +1,120 @@
+{
+  "created_utc": "2026-09-24T02:06:53.665163+00:00",
+  "phase": "PRE before any new target-author exposure",
+  "conclusion": "Conditional finite construction supports full discrete marked operations and same-reservoir histories, without a commensurability requirement; explicit CP steps converge to the original reduced GKLS channel with H-dependent energy-moment precision. No autonomy or exact event-time-instrument conclusion.",
+  "current_checkpoint": "PRE_STATUS.md",
+  "proof": "PRE_RECONSTRUCTION.md",
+  "source_manifest": "SOURCE_MANIFEST.json",
+  "artifacts": [
+    {
+      "path": "CONTROL_RESULTS_02.json",
+      "bytes": 14462,
+      "sha256": "eaa3f0fd5c17afebf2678d14f7219b63b8ecd1560c5c7b773dcdcd37d1cfe77b"
+    },
+    {
+      "path": "FAILED_ROUTES.md",
+      "bytes": 1603,
+      "sha256": "62369ac00d295fa5a52d40faee6a1355d1cc51be165d73863cfd0bab7fe3b9e0"
+    },
+    {
+      "path": "PREMISE_AUTHENTICATION.json",
+      "bytes": 370,
+      "sha256": "300f6491095d9a1ff3e2e2f02a83bc643064a5abe1c3815a527c9a50a602de1c"
+    },
+    {
+      "path": "PRE_RECEIPT.json",
+      "bytes": 862,
+      "sha256": "5a0afce8f02d173251adb354066c3a28019bdc0ea4512fc0e92ec26cfab88c77"
+    },
+    {
+      "path": "PRE_RECONSTRUCTION.md",
+      "bytes": 24841,
+      "sha256": "06f3e72a3a93493d8587d26f6a7e040d8a0fdde521b68417b266912ac24854cb"
+    },
+    {
+      "path": "PRE_STATUS.md",
+      "bytes": 2649,
+      "sha256": "9895209a70416eb9db0df98345c539aaff2039f848031f3331f1eefe0b1155b8"
+    },
+    {
+      "path": "RUN_01.stderr.log",
+      "bytes": 432,
+      "sha256": "a1b19ac8e7d37f94a3a9c383552335689ca3dfbb04245c3df158fb6418c688a2"
+    },
+    {
+      "path": "RUN_01.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RUN_01_RECEIPT.json",
+      "bytes": 331,
+      "sha256": "2c49709503a17e8dde943673dca9b34fe0afea3f1f147d78dc88e65f4963e997"
+    },
+    {
+      "path": "RUN_01_control.py",
+      "bytes": 16310,
+      "sha256": "0fea62af27951a81adfa48e7c1bd79a6ac2edbc901ff8074c105ec4e86d2c471"
+    },
+    {
+      "path": "RUN_02.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RUN_02.stdout.log",
+      "bytes": 838,
+      "sha256": "640e11a752f3b5a128600f582501a49112aa693f0cd2848548368f53542a2e59"
+    },
+    {
+      "path": "RUN_02_RECEIPT.json",
+      "bytes": 318,
+      "sha256": "16bc57984b7d5d41f08aed55ce5971107589ca8fca33ff2b5fd66585656cde5f"
+    },
+    {
+      "path": "RUN_02_control.py",
+      "bytes": 16309,
+      "sha256": "04701d445390b031c8c4399e27d2cba118b41caafc48a12efa1c67f7ec330bbd"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4500,
+      "sha256": "02610391b15c36f49d136c374191d04be2bb7ec6e5630121ca7e72d1b08f09ac"
+    },
+    {
+      "path": "control.py",
+      "bytes": 16309,
+      "sha256": "04701d445390b031c8c4399e27d2cba118b41caafc48a12efa1c67f7ec330bbd"
+    },
+    {
+      "path": "sources/Aberg_1304.1060v3.pdf",
+      "bytes": 3131340,
+      "sha256": "f25314c4d44716b54b2643404f4d646f730400e6ecdb8b4bcf11ac00a2250e2a"
+    },
+    {
+      "path": "sources/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "bytes": 9368,
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c"
+    },
+    {
+      "path": "sources/FINAL_COMPARISON_SEAL.json",
+      "bytes": 9460,
+      "sha256": "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50"
+    },
+    {
+      "path": "sources/FINAL_STATUS.md",
+      "bytes": 2287,
+      "sha256": "d446054d0dbf0b81be696c46e4bf3d8b19ac7b21dca27c2b76c9e58668d94b21"
+    },
+    {
+      "path": "sources/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "bytes": 8477,
+      "sha256": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5"
+    },
+    {
+      "path": "sources/POST_FINAL_COMPARISON.md",
+      "bytes": 11743,
+      "sha256": "71299e4ff7db884b4fc2c44b7ddfa44b8cd5978a0cca1ca3978fe35e6ea495aa"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+The initial run stopped at structural comparison of the dephased matrix: 1-r/(1+r) and 1/(1+r) had different expression forms. The revised check simplifies the exact matrix difference; the physical low/high orthogonality check also uses exact simplification. No scientific formula, expected matrix or tolerance was changed. FAILED_INITIAL_CONTROL.py preserves the initial source.

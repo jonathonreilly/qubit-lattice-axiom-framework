@@ -1,0 +1,11 @@
+{
+  "finished_utc": "2026-09-24T02:01:06.840613+00:00",
+  "elapsed_seconds": 0.8231640418525785,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "control.py",
+    "CONTROL_RESULTS_02.json"
+  ],
+  "code_sha256": "04701d445390b031c8c4399e27d2cba118b41caafc48a12efa1c67f7ec330bbd",
+  "exit_code": 0
+}

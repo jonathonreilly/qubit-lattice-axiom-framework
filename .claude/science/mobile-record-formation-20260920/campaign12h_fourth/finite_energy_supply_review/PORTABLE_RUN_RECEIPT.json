@@ -1,0 +1,95 @@
+{
+  "created_utc": "2026-09-24T02:41:42.671815+00:00",
+  "temporary_copy": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/campaign12h_fourth",
+  "runs": [
+    {
+      "script": "coherent_energy_supply_author/coherent_fuel_control.py",
+      "argv": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "coherent_fuel_control.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.3008996660355479,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_1.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_1.stderr",
+      "source_sha256": "025310de415ec4654f03725b9311ab274882d341c02b08307c2dc8ad339d4c67",
+      "comparison": "Complete result JSON exactly matches frozen evidence.",
+      "result_sha256": "fe65e6890f46982def70866ccb5ac9d520e5be336539ba81038150d5b8f588a2"
+    },
+    {
+      "script": "coherent_energy_supply_independent/coherent_supply_check.py",
+      "argv": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "coherent_supply_check.py",
+        "--attempt",
+        "portable"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.4983758749440312,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_2.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_2.stderr",
+      "source_sha256": "361ee06c509b8b43644eeb70ae6e5867d21437bc5d7cd87eea5bec4a77b8979c",
+      "comparison": "Exact generic/physical/check results; creation time and attempt name intentionally differ.",
+      "result_sha256": "6e8afb8dcf31fb40b80e905f7157f4173000cdd1dddbcc6869659cf033d48b73"
+    },
+    {
+      "script": "full_instrument_energy_supply_author/finite_battery_control.py",
+      "argv": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "finite_battery_control.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.7909928329754621,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_3.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_3.stderr",
+      "source_sha256": "79d2e7b5c40bb1a74b5ea808c20e5ba5fc61c4dfddbc81ba384983d0c1e209af",
+      "comparison": "Complete result JSON exactly matches frozen evidence.",
+      "result_sha256": "7419a8d7b20f7fee0051f1e96dff1f6a541738e974a283a1f844a0a2ccb7457d"
+    },
+    {
+      "script": "full_instrument_energy_supply_author/marked_collision_control.py",
+      "argv": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "marked_collision_control.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.6639548330567777,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_4.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_4.stderr",
+      "source_sha256": "043ff41ec64efce5d52757d99d8dab4ece77441de52f1519340e2e526685c700",
+      "comparison": "Complete result JSON exactly matches frozen evidence.",
+      "result_sha256": "5ad28116cc9e3267a43abc291805a6b839bcdc394e0980e10fb2f82d42ee3b31"
+    },
+    {
+      "script": "full_instrument_energy_supply_independent/control.py",
+      "argv": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "control.py",
+        "CONTROL_RESULTS_portable.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.5270926670636982,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_5.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_5.stderr",
+      "source_sha256": "04701d445390b031c8c4399e27d2cba118b41caafc48a12efa1c67f7ec330bbd",
+      "comparison": "Complete result JSON exactly matches frozen evidence.",
+      "result_sha256": "eaa3f0fd5c17afebf2678d14f7219b63b8ecd1560c5c7b773dcdcd37d1cfe77b"
+    },
+    {
+      "script": "full_instrument_energy_supply_independent/comparison_control.py",
+      "argv": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "comparison_control.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.4438219170551747,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_6.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/finite-energy-supply-portable-8onp8sv_/run_6.stderr",
+      "source_sha256": "ea0dfb98b6ac0030f9181051e1cfe5fb3c65adf46584b01ae330ada95ba38b27",
+      "comparison": "Complete result JSON exactly matches frozen evidence.",
+      "result_sha256": "c37691726abb8e2a9eb5ffbf30959c4afd10482f5d49bea630ef684ad7957f04"
+    }
+  ],
+  "all_six_scientific_replays_passed": true,
+  "limits": "Coherent POST procedural-authentication wrapper not rerun with omitted instruction snapshots. Its mathematics, code and frozen comparison were reviewed separately. No private PDF was copied or needed."
+}

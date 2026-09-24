@@ -1,0 +1,974 @@
+{
+  "created_utc": "2026-09-24T02:00:20.952036+00:00",
+  "runner_sha256": "2f4187793d7b918776e180528d682f4332d3607237641492d7a23b5f6892c568",
+  "attempt": "01",
+  "status": "completed",
+  "checks": [
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/PRE_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/INTEGRITY_SELF_TEST.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/PRE_COHERENT_ENERGY_SUPPLY.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/PRE_RECEIPT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/RESULTS_01.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/RUN_01.stderr.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/RUN_01.stdout.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/SOURCE_BINDINGS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/coherent_supply_check.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/no_go_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/planning_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/proof_search_governance.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/repository_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/workhorse_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/sources/FINAL_COMPARISON_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/sources/PRE_MICROSCOPIC_STAR_RECONSTRUCTION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/sources/microscopic_star_complete_matrix_check.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/verify_pre_seal.py",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/AUTHOR_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL.stderr",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/DEVELOPMENT_FAILURES.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/FAILED_INITIAL_CONTROL.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/coherent_fuel_control.py",
+      "passed": true
+    },
+    {
+      "name": "independent star engine pin",
+      "passed": true
+    },
+    {
+      "name": "entire abstract U agrees with independently sealed U",
+      "passed": true
+    },
+    {
+      "name": "author abstract free-energy diagonal",
+      "passed": true
+    },
+    {
+      "name": "author fuel mean",
+      "passed": true
+    },
+    {
+      "name": "author trace coherence",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus c",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus p_high",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus fuel_gap",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus fuel_energy",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus minimum_stationary_trace_norm_distance",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus exact actual star frame",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus exact frame energies",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus full 32-state unitarity",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus full 32-state energy conservation",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus author six-state action matches full embedding",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus full orthogonal complement is identity",
+      "passed": true
+    },
+    {
+      "name": "1/2 plus actual exact output",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus c",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus p_high",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus fuel_gap",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus fuel_energy",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus minimum_stationary_trace_norm_distance",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus exact actual star frame",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus exact frame energies",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus full 32-state unitarity",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus full 32-state energy conservation",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus author six-state action matches full embedding",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus full orthogonal complement is identity",
+      "passed": true
+    },
+    {
+      "name": "1/2 minus actual exact output",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent c",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent p_high",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent fuel_gap",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent fuel_energy",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent minimum_stationary_trace_norm_distance",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent exact actual star frame",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent exact frame energies",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent full 32-state unitarity",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent full 32-state energy conservation",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent author six-state action matches full embedding",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent full orthogonal complement is identity",
+      "passed": true
+    },
+    {
+      "name": "1/2 coherent actual exact output",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus c",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus p_high",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus fuel_gap",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus fuel_energy",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus minimum_stationary_trace_norm_distance",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus exact actual star frame",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus exact frame energies",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus full 32-state unitarity",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus full 32-state energy conservation",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus author six-state action matches full embedding",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus full orthogonal complement is identity",
+      "passed": true
+    },
+    {
+      "name": "1/5 plus actual exact output",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus c",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus p_high",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus fuel_gap",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus fuel_energy",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus minimum_stationary_trace_norm_distance",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus exact actual star frame",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus exact frame energies",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus full 32-state unitarity",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus full 32-state energy conservation",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus author six-state action matches full embedding",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus full orthogonal complement is identity",
+      "passed": true
+    },
+    {
+      "name": "1/5 minus actual exact output",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent c",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent p_high",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent fuel_gap",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent fuel_energy",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent minimum_stationary_trace_norm_distance",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent exact actual star frame",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent exact frame energies",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent full 32-state unitarity",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent full 32-state energy conservation",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent author six-state action matches full embedding",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent full orthogonal complement is identity",
+      "passed": true
+    },
+    {
+      "name": "1/5 coherent actual exact output",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus c",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus p_high",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus fuel_gap",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus fuel_energy",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus minimum_stationary_trace_norm_distance",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus exact actual star frame",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus exact frame energies",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus full 32-state unitarity",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus full 32-state energy conservation",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus author six-state action matches full embedding",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus full orthogonal complement is identity",
+      "passed": true
+    },
+    {
+      "name": "1/17 plus actual exact output",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus c",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus p_high",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus fuel_gap",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus fuel_energy",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus minimum_stationary_trace_norm_distance",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus exact actual star frame",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus exact frame energies",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus full 32-state unitarity",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus full 32-state energy conservation",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus author six-state action matches full embedding",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus full orthogonal complement is identity",
+      "passed": true
+    },
+    {
+      "name": "1/17 minus actual exact output",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent c",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent p_high",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent fuel_gap",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent fuel_energy",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent minimum_stationary_trace_norm_distance",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent exact actual star frame",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent exact frame energies",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent full 32-state unitarity",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent full 32-state energy conservation",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent author six-state action matches full embedding",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent full orthogonal complement is identity",
+      "passed": true
+    },
+    {
+      "name": "1/17 coherent actual exact output",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 1 -1 input block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 1 -1 output block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 1 1 input block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 1 1 output block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 2 -1 input block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 2 -1 output block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 2 1 input block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 2 1 output block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 3 -1 input block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 3 -1 output block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 3 1 input block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved 3 1 output block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector resolved mark weights normalize",
+      "passed": true
+    },
+    {
+      "name": "selector resolved mean energy matches author",
+      "passed": true
+    },
+    {
+      "name": "selector coherent 1 0 input block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector coherent 1 0 output block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector coherent 2 0 input block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector coherent 2 0 output block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector coherent 3 0 input block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector coherent 3 0 output block trace norm",
+      "passed": true
+    },
+    {
+      "name": "selector coherent mark weights normalize",
+      "passed": true
+    },
+    {
+      "name": "selector coherent mean energy matches author",
+      "passed": true
+    },
+    {
+      "name": "author failed structural equality reproduced",
+      "passed": true
+    },
+    {
+      "name": "author corrected symbolic equality valid",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/PRE_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/INTEGRITY_SELF_TEST.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/PRE_COHERENT_ENERGY_SUPPLY.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/PRE_RECEIPT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/RESULTS_01.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/RUN_01.stderr.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/RUN_01.stdout.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/SOURCE_BINDINGS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/coherent_supply_check.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/no_go_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/planning_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/proof_search_governance.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/repository_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/workhorse_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/sources/FINAL_COMPARISON_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/sources/PRE_MICROSCOPIC_STAR_RECONSTRUCTION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/sources/microscopic_star_complete_matrix_check.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/verify_pre_seal.py",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/AUTHOR_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL.stderr",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/DEVELOPMENT_FAILURES.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/FAILED_INITIAL_CONTROL.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/coherent_fuel_control.py",
+      "passed": true
+    },
+    {
+      "name": "final independent star engine pin",
+      "passed": true
+    }
+  ],
+  "author_code_imported": false,
+  "full_instrument_packet_read": false,
+  "exact_author_embedding_comparisons": [
+    {
+      "epsilon": "1/2",
+      "mark": "plus",
+      "c": "2",
+      "p_high": "2/7",
+      "fuel_gap": "28",
+      "fuel_energy": "8",
+      "minimum_stationary_trace_norm_distance": "2*sqrt(10)/7"
+    },
+    {
+      "epsilon": "1/2",
+      "mark": "minus",
+      "c": "1",
+      "p_high": "1/7",
+      "fuel_gap": "28",
+      "fuel_energy": "4",
+      "minimum_stationary_trace_norm_distance": "2*sqrt(6)/7"
+    },
+    {
+      "epsilon": "1/2",
+      "mark": "coherent",
+      "c": "3/2",
+      "p_high": "3/14",
+      "fuel_gap": "28",
+      "fuel_energy": "6",
+      "minimum_stationary_trace_norm_distance": "sqrt(33)/7"
+    },
+    {
+      "epsilon": "1/5",
+      "mark": "plus",
+      "c": "2",
+      "p_high": "1/14",
+      "fuel_gap": "700",
+      "fuel_energy": "50",
+      "minimum_stationary_trace_norm_distance": "sqrt(13)/7"
+    },
+    {
+      "epsilon": "1/5",
+      "mark": "minus",
+      "c": "1",
+      "p_high": "1/28",
+      "fuel_gap": "700",
+      "fuel_energy": "25",
+      "minimum_stationary_trace_norm_distance": "3*sqrt(3)/14"
+    },
+    {
+      "epsilon": "1/5",
+      "mark": "coherent",
+      "c": "3/2",
+      "p_high": "3/56",
+      "fuel_gap": "700",
+      "fuel_energy": "75/2",
+      "minimum_stationary_trace_norm_distance": "sqrt(159)/28"
+    },
+    {
+      "epsilon": "1/17",
+      "mark": "plus",
+      "c": "2",
+      "p_high": "1/146",
+      "fuel_gap": "84388",
+      "fuel_energy": "578",
+      "minimum_stationary_trace_norm_distance": "sqrt(145)/73"
+    },
+    {
+      "epsilon": "1/17",
+      "mark": "minus",
+      "c": "1",
+      "p_high": "1/292",
+      "fuel_gap": "84388",
+      "fuel_energy": "289",
+      "minimum_stationary_trace_norm_distance": "sqrt(291)/146"
+    },
+    {
+      "epsilon": "1/17",
+      "mark": "coherent",
+      "c": "3/2",
+      "p_high": "3/584",
+      "fuel_gap": "84388",
+      "fuel_energy": "867/2",
+      "minimum_stationary_trace_norm_distance": "sqrt(1743)/292"
+    }
+  ],
+  "selector_reconstruction": [
+    {
+      "instrument": "resolved",
+      "epsilon": "1/5",
+      "delta": "1",
+      "branches": [
+        {
+          "edge": 1,
+          "sign": -1,
+          "weight": "1/6",
+          "p": "1/28",
+          "mean_energy": "25/6"
+        },
+        {
+          "edge": 1,
+          "sign": 1,
+          "weight": "1/6",
+          "p": "1/14",
+          "mean_energy": "25/3"
+        },
+        {
+          "edge": 2,
+          "sign": -1,
+          "weight": "1/6",
+          "p": "1/28",
+          "mean_energy": "25/6"
+        },
+        {
+          "edge": 2,
+          "sign": 1,
+          "weight": "1/6",
+          "p": "1/14",
+          "mean_energy": "25/3"
+        },
+        {
+          "edge": 3,
+          "sign": -1,
+          "weight": "1/6",
+          "p": "1/28",
+          "mean_energy": "25/6"
+        },
+        {
+          "edge": 3,
+          "sign": 1,
+          "weight": "1/6",
+          "p": "1/14",
+          "mean_energy": "25/3"
+        }
+      ],
+      "mean_supplied_energy": "75/2",
+      "weighted_trace_coherence": "3*sqrt(3)/28 + sqrt(13)/14",
+      "orthogonal_flag_blocks_saturate_weighted_bound": true
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": "1/5",
+      "delta": "1",
+      "branches": [
+        {
+          "edge": 1,
+          "sign": 0,
+          "weight": "1/3",
+          "p": "3/56",
+          "mean_energy": "25/2"
+        },
+        {
+          "edge": 2,
+          "sign": 0,
+          "weight": "1/3",
+          "p": "3/56",
+          "mean_energy": "25/2"
+        },
+        {
+          "edge": 3,
+          "sign": 0,
+          "weight": "1/3",
+          "p": "3/56",
+          "mean_energy": "25/2"
+        }
+      ],
+      "mean_supplied_energy": "75/2",
+      "weighted_trace_coherence": "sqrt(159)/28",
+      "orthogonal_flag_blocks_saturate_weighted_bound": true
+    }
+  ],
+  "summary": {
+    "passed": 198,
+    "failed": 0
+  }
+}

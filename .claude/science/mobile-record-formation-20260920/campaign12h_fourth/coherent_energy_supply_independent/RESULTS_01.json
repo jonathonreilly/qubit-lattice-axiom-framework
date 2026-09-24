@@ -1,0 +1,757 @@
+{
+  "attempt": "01",
+  "created_utc": "2026-09-24T01:45:45.169981+00:00",
+  "status": "completed",
+  "runner_sha256": "361ee06c509b8b43644eeb70ae6e5867d21437bc5d7cd87eea5bec4a77b8979c",
+  "checks": [
+    {
+      "name": "frozen independent engine pin",
+      "passed": true
+    },
+    {
+      "name": "frozen independent source packet pin",
+      "passed": true
+    },
+    {
+      "name": "generic conserving U is unitary",
+      "passed": true
+    },
+    {
+      "name": "generic conserving U commutes with free total energy",
+      "passed": true
+    },
+    {
+      "name": "generic exact pure output and reservoir vacuum",
+      "passed": true
+    },
+    {
+      "name": "generic input reservoir mean energy",
+      "passed": true
+    },
+    {
+      "name": "generic output system mean energy",
+      "passed": true
+    },
+    {
+      "name": "generic energy variance transferred",
+      "passed": true
+    },
+    {
+      "name": "stationary mixed reservoir produces dephased target",
+      "passed": true
+    },
+    {
+      "name": "sharp-distance difference square",
+      "passed": true
+    },
+    {
+      "name": "sharp-distance difference trace",
+      "passed": true
+    },
+    {
+      "name": "dual witness norm one",
+      "passed": true
+    },
+    {
+      "name": "general stationary matrix including zero-energy coherence",
+      "passed": true
+    },
+    {
+      "name": "dual witness annihilates all stationary matrices",
+      "passed": true
+    },
+    {
+      "name": "dual witness target value",
+      "passed": true
+    },
+    {
+      "name": "reservoir coherence has the same exact trace norm",
+      "passed": true
+    },
+    {
+      "name": "heralded U unitary",
+      "passed": true
+    },
+    {
+      "name": "heralded U conserves energy",
+      "passed": true
+    },
+    {
+      "name": "herald compatible readout",
+      "passed": true
+    },
+    {
+      "name": "heralded exact branch with arbitrary probability",
+      "passed": true
+    },
+    {
+      "name": "heralded failure branch unchanged",
+      "passed": true
+    },
+    {
+      "name": "heralded average energy lower bound saturated",
+      "passed": true
+    },
+    {
+      "name": "heralded coherence lower bound saturated",
+      "passed": true
+    },
+    {
+      "name": "phase-readout example U unitary",
+      "passed": true
+    },
+    {
+      "name": "phase-readout example U conserves energy",
+      "passed": true
+    },
+    {
+      "name": "phase-readout initial reservoir stationary",
+      "passed": true
+    },
+    {
+      "name": "incompatible readout yields exact coherent target",
+      "passed": true
+    },
+    {
+      "name": "incompatible readout is detected",
+      "passed": true
+    },
+    {
+      "name": "actual star dressed input has zero energy",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) actual high weight",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) exact orthonormal energy frame",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) exact low/high energies",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) full 32-state unitary",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) full energy conservation",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) actual output supplied exactly",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) dephased bound attained in full star",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) sharp-distance full-star certificate",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) microscopic mean supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) microscopic variance supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) original jumps kill the other input",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, -1)) fixed-input circuit is not original instrument",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) actual high weight",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) exact orthonormal energy frame",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) exact low/high energies",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) full 32-state unitary",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) full energy conservation",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) actual output supplied exactly",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) dephased bound attained in full star",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) sharp-distance full-star certificate",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) microscopic mean supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) microscopic variance supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) original jumps kill the other input",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (1, 1)) fixed-input circuit is not original instrument",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) actual high weight",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) exact orthonormal energy frame",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) exact low/high energies",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) full 32-state unitary",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) full energy conservation",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) actual output supplied exactly",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) dephased bound attained in full star",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) sharp-distance full-star certificate",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) microscopic mean supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) microscopic variance supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) original jumps kill the other input",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, -1)) fixed-input circuit is not original instrument",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) actual high weight",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) exact orthonormal energy frame",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) exact low/high energies",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) full 32-state unitary",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) full energy conservation",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) actual output supplied exactly",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) dephased bound attained in full star",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) sharp-distance full-star certificate",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) microscopic mean supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) microscopic variance supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) original jumps kill the other input",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (2, 1)) fixed-input circuit is not original instrument",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) actual high weight",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) exact orthonormal energy frame",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) exact low/high energies",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) full 32-state unitary",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) full energy conservation",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) actual output supplied exactly",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) dephased bound attained in full star",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) sharp-distance full-star certificate",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) microscopic mean supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) microscopic variance supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) original jumps kill the other input",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, -1)) fixed-input circuit is not original instrument",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) actual high weight",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) exact orthonormal energy frame",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) exact low/high energies",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) full 32-state unitary",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) full energy conservation",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) actual output supplied exactly",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) dephased bound attained in full star",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) sharp-distance full-star certificate",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) microscopic mean supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) microscopic variance supplied",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) original jumps kill the other input",
+      "passed": true
+    },
+    {
+      "name": "('resolved', (3, 1)) fixed-input circuit is not original instrument",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) actual high weight",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) exact orthonormal energy frame",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) exact low/high energies",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) full 32-state unitary",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) full energy conservation",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) actual output supplied exactly",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) dephased bound attained in full star",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) sharp-distance full-star certificate",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) microscopic mean supplied",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) microscopic variance supplied",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) original jumps kill the other input",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (1, 0)) fixed-input circuit is not original instrument",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) actual high weight",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) exact orthonormal energy frame",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) exact low/high energies",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) full 32-state unitary",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) full energy conservation",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) actual output supplied exactly",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) dephased bound attained in full star",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) sharp-distance full-star certificate",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) microscopic mean supplied",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) microscopic variance supplied",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) original jumps kill the other input",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (2, 0)) fixed-input circuit is not original instrument",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) actual high weight",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) exact orthonormal energy frame",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) exact low/high energies",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) full 32-state unitary",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) full energy conservation",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) actual output supplied exactly",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) dephased bound attained in full star",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) sharp-distance full-star certificate",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) microscopic mean supplied",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) microscopic variance supplied",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) original jumps kill the other input",
+      "passed": true
+    },
+    {
+      "name": "('coherent', (3, 0)) fixed-input circuit is not original instrument",
+      "passed": true
+    },
+    {
+      "name": "final independent engine pin",
+      "passed": true
+    },
+    {
+      "name": "final independent source packet pin",
+      "passed": true
+    }
+  ],
+  "author_packet_read": false,
+  "arithmetic": "Exact SymPy finite matrix identities",
+  "generic": {
+    "domain": "0<p<1, E>0, 0<r<=1",
+    "generic_U": [
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "sharp_distance": "2*sqrt(p*(1-p))",
+    "deterministic_reservoir_energy": "p*E",
+    "deterministic_reservoir_variance": "E**2*p*(1 - p)",
+    "heralded_reservoir_energy": "r*p*E",
+    "heralded_trace_coherence": "2*r*sqrt(p*(1-p))",
+    "phase_readout_success_probability": "1/2"
+  },
+  "actual_star_rows": [
+    {
+      "instrument": "resolved",
+      "edge": 1,
+      "charge": -1,
+      "epsilon": "1/2",
+      "delta": "7/5",
+      "m": "1",
+      "p_high": "1/7",
+      "E_high": "196/5",
+      "energy": "28/5",
+      "variance": "4704/25",
+      "sharp_trace_distance": "2*sqrt(6)/7",
+      "reverse_N1_probability": "6/7"
+    },
+    {
+      "instrument": "resolved",
+      "edge": 1,
+      "charge": 1,
+      "epsilon": "1/2",
+      "delta": "7/5",
+      "m": "2",
+      "p_high": "2/7",
+      "E_high": "196/5",
+      "energy": "56/5",
+      "variance": "1568/5",
+      "sharp_trace_distance": "2*sqrt(10)/7",
+      "reverse_N1_probability": "5/7"
+    },
+    {
+      "instrument": "resolved",
+      "edge": 2,
+      "charge": -1,
+      "epsilon": "1/2",
+      "delta": "7/5",
+      "m": "1",
+      "p_high": "1/7",
+      "E_high": "196/5",
+      "energy": "28/5",
+      "variance": "4704/25",
+      "sharp_trace_distance": "2*sqrt(6)/7",
+      "reverse_N1_probability": "6/7"
+    },
+    {
+      "instrument": "resolved",
+      "edge": 2,
+      "charge": 1,
+      "epsilon": "1/2",
+      "delta": "7/5",
+      "m": "2",
+      "p_high": "2/7",
+      "E_high": "196/5",
+      "energy": "56/5",
+      "variance": "1568/5",
+      "sharp_trace_distance": "2*sqrt(10)/7",
+      "reverse_N1_probability": "5/7"
+    },
+    {
+      "instrument": "resolved",
+      "edge": 3,
+      "charge": -1,
+      "epsilon": "1/2",
+      "delta": "7/5",
+      "m": "1",
+      "p_high": "1/7",
+      "E_high": "196/5",
+      "energy": "28/5",
+      "variance": "4704/25",
+      "sharp_trace_distance": "2*sqrt(6)/7",
+      "reverse_N1_probability": "6/7"
+    },
+    {
+      "instrument": "resolved",
+      "edge": 3,
+      "charge": 1,
+      "epsilon": "1/2",
+      "delta": "7/5",
+      "m": "2",
+      "p_high": "2/7",
+      "E_high": "196/5",
+      "energy": "56/5",
+      "variance": "1568/5",
+      "sharp_trace_distance": "2*sqrt(10)/7",
+      "reverse_N1_probability": "5/7"
+    },
+    {
+      "instrument": "coherent",
+      "edge": 1,
+      "charge": 0,
+      "epsilon": "1/2",
+      "delta": "7/5",
+      "m": "3/2",
+      "p_high": "3/14",
+      "E_high": "196/5",
+      "energy": "42/5",
+      "variance": "6468/25",
+      "sharp_trace_distance": "sqrt(33)/7",
+      "reverse_N1_probability": "11/14"
+    },
+    {
+      "instrument": "coherent",
+      "edge": 2,
+      "charge": 0,
+      "epsilon": "1/2",
+      "delta": "7/5",
+      "m": "3/2",
+      "p_high": "3/14",
+      "E_high": "196/5",
+      "energy": "42/5",
+      "variance": "6468/25",
+      "sharp_trace_distance": "sqrt(33)/7",
+      "reverse_N1_probability": "11/14"
+    },
+    {
+      "instrument": "coherent",
+      "edge": 3,
+      "charge": 0,
+      "epsilon": "1/2",
+      "delta": "7/5",
+      "m": "3/2",
+      "p_high": "3/14",
+      "E_high": "196/5",
+      "energy": "42/5",
+      "variance": "6468/25",
+      "sharp_trace_distance": "sqrt(33)/7",
+      "reverse_N1_probability": "11/14"
+    }
+  ],
+  "summary": {
+    "passed": 139,
+    "failed": 0
+  }
+}

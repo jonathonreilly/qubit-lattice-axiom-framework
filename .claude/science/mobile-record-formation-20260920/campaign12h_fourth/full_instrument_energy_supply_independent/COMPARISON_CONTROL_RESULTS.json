@@ -1,0 +1,217 @@
+{
+  "all_assertions_passed": true,
+  "author_collision_rows_reconstructed": [
+    {
+      "absolute_author_row_differences": {
+        "Choi_trace_norm": 1.609823385706477e-14,
+        "Frobenius_error": 1.8318679906315083e-15,
+        "collision_energy": 3.552713678800501e-15,
+        "exact_energy": 1.7763568394002505e-15
+      },
+      "instrument": "resolved",
+      "lambda": 0.0,
+      "own_collision_energy": 6.524520648507844,
+      "own_exact_energy": 6.1411749074391775,
+      "own_superoperator_Frobenius_error": 0.4150382571541001,
+      "own_unnormalized_Choi_trace_norm": 0.9782402715518923,
+      "steps": 16
+    },
+    {
+      "absolute_author_row_differences": {
+        "Choi_trace_norm": 1.3822276656583199e-14,
+        "Frobenius_error": 9.992007221626409e-16,
+        "collision_energy": 4.440892098500626e-14,
+        "exact_energy": 1.7763568394002505e-15
+      },
+      "instrument": "resolved",
+      "lambda": 0.0,
+      "own_collision_energy": 6.3236457311726095,
+      "own_exact_energy": 6.1411749074391775,
+      "own_superoperator_Frobenius_error": 0.20049809409155592,
+      "own_unnormalized_Choi_trace_norm": 0.47335809326529327,
+      "steps": 32
+    },
+    {
+      "absolute_author_row_differences": {
+        "Choi_trace_norm": 9.048317650695026e-15,
+        "Frobenius_error": 1.817990202823694e-15,
+        "collision_energy": 2.6645352591003757e-14,
+        "exact_energy": 1.7763568394002505e-15
+      },
+      "instrument": "resolved",
+      "lambda": 0.0,
+      "own_collision_energy": 6.230278839713372,
+      "own_exact_energy": 6.1411749074391775,
+      "own_superoperator_Frobenius_error": 0.09863365185674876,
+      "own_unnormalized_Choi_trace_norm": 0.23309978601717735,
+      "steps": 64
+    },
+    {
+      "absolute_author_row_differences": {
+        "Choi_trace_norm": 5.6066262743570405e-15,
+        "Frobenius_error": 3.0253577421035516e-15,
+        "collision_energy": 8.881784197001252e-16,
+        "exact_energy": 1.7763568394002505e-15
+      },
+      "instrument": "resolved",
+      "lambda": 0.0,
+      "own_collision_energy": 6.185213016437799,
+      "own_exact_energy": 6.1411749074391775,
+      "own_superoperator_Frobenius_error": 0.04892889414811762,
+      "own_unnormalized_Choi_trace_norm": 0.11569578864617114,
+      "steps": 128
+    },
+    {
+      "absolute_author_row_differences": {
+        "Choi_trace_norm": 4.9960036108132044e-15,
+        "Frobenius_error": 3.608224830031759e-15,
+        "collision_energy": 1.9539925233402755e-14,
+        "exact_energy": 1.3322676295501878e-14
+      },
+      "instrument": "coherent",
+      "lambda": 1.0,
+      "own_collision_energy": 7.93686611378304,
+      "own_exact_energy": 7.486157169293131,
+      "own_superoperator_Frobenius_error": 0.4280737844731707,
+      "own_unnormalized_Choi_trace_norm": 0.987412681639919,
+      "steps": 16
+    },
+    {
+      "absolute_author_row_differences": {
+        "Choi_trace_norm": 2.1649348980190553e-14,
+        "Frobenius_error": 4.135580766728708e-15,
+        "collision_energy": 2.042810365310288e-14,
+        "exact_energy": 1.3322676295501878e-14
+      },
+      "instrument": "coherent",
+      "lambda": 1.0,
+      "own_collision_energy": 7.700758222053111,
+      "own_exact_energy": 7.486157169293131,
+      "own_superoperator_Frobenius_error": 0.20688601113115956,
+      "own_unnormalized_Choi_trace_norm": 0.4779441396657165,
+      "steps": 32
+    },
+    {
+      "absolute_author_row_differences": {
+        "Choi_trace_norm": 1.9984014443252818e-15,
+        "Frobenius_error": 6.9111383282915995e-15,
+        "collision_energy": 1.7763568394002505e-14,
+        "exact_energy": 1.3322676295501878e-14
+      },
+      "instrument": "coherent",
+      "lambda": 1.0,
+      "own_collision_energy": 7.590976047172758,
+      "own_exact_energy": 7.486157169293131,
+      "own_superoperator_Frobenius_error": 0.10180056773038287,
+      "own_unnormalized_Choi_trace_norm": 0.23539337652360887,
+      "steps": 64
+    },
+    {
+      "absolute_author_row_differences": {
+        "Choi_trace_norm": 2.1774249070460883e-14,
+        "Frobenius_error": 1.7819079545233762e-14,
+        "collision_energy": 4.1744385725905886e-14,
+        "exact_energy": 1.3322676295501878e-14
+      },
+      "instrument": "coherent",
+      "lambda": 1.0,
+      "own_collision_energy": 7.537969430716484,
+      "own_exact_energy": 7.486157169293131,
+      "own_superoperator_Frobenius_error": 0.050506181768369164,
+      "own_unnormalized_Choi_trace_norm": 0.11684272605290542,
+      "steps": 128
+    }
+  ],
+  "complete_star_two_step_histories": [
+    {
+      "complete_flag_histories": 49,
+      "finite_supply_energy": 0.20347404752485018,
+      "instrument": "resolved",
+      "max_joint_history_energy_probability_error": 5.551115123125783e-16,
+      "source_builder": "own frozen PRE primitive sixteen-state model only",
+      "step_count": 2,
+      "target_energy": 0.20347404752484996,
+      "total_probability": 0.9999999999999982
+    },
+    {
+      "complete_flag_histories": 16,
+      "finite_supply_energy": 0.2034740475248502,
+      "instrument": "coherent",
+      "max_joint_history_energy_probability_error": 5.551115123125783e-16,
+      "source_builder": "own frozen PRE primitive sixteen-state model only",
+      "step_count": 2,
+      "target_energy": 0.20347404752485002,
+      "total_probability": 0.9999999999999981
+    }
+  ],
+  "exact_stationary_history": {
+    "arithmetic": "Exact fractions.Fraction; no floating tolerances",
+    "charge_conservation_exact": true,
+    "claim_limit": "Exact probabilities do not imply exact output coherences.",
+    "finite_reservoir_dimension": 16,
+    "flags": 2,
+    "individual_rows": [
+      {
+        "degenerate_ground_coherence": true,
+        "exact_probability_equality": true,
+        "input_energy_label": 0,
+        "joint_energy_flag_probabilities": {
+          "(0, 0)": "14841/105625",
+          "(0, 2)": "11943936/17850625",
+          "(0, 3)": "12544/390625",
+          "(1, 2)": "7056/390625",
+          "(2, 0)": "63504/2640625",
+          "(2, 2)": "82944/714025"
+        }
+      },
+      {
+        "degenerate_ground_coherence": false,
+        "exact_probability_equality": true,
+        "input_energy_label": 1,
+        "joint_energy_flag_probabilities": {
+          "(0, 1)": "16/25",
+          "(1, 0)": "9/25"
+        }
+      },
+      {
+        "degenerate_ground_coherence": false,
+        "exact_probability_equality": true,
+        "input_energy_label": 2,
+        "joint_energy_flag_probabilities": {
+          "(0, 0)": "144/169",
+          "(2, 0)": "25/169"
+        }
+      }
+    ],
+    "largest_detected_cross_energy_coherence_defect": "156/625",
+    "profile": "Normalized rational buffered product state, proving the probability identity does not require a sine profile",
+    "sequence_composition_exact": true,
+    "stationary_mixture_joint_probabilities_exact": true,
+    "stationary_mixture_weights": [
+      "1/2",
+      "1/3",
+      "1/6"
+    ],
+    "system_levels": [
+      "0 with multiplicity 2",
+      "1",
+      "sqrt(2)"
+    ],
+    "total_dimension": 256
+  },
+  "independence": "Only own frozen PRE code imported; released author code read but never imported. Author result numbers are comparison targets after own calculations.",
+  "nonstationary_counterexample": {
+    "buffered_battery": [
+      "3/5",
+      "4/5"
+    ],
+    "difference": "3744/15625",
+    "ideal_ground_probability": "1",
+    "implemented_ground_probability": "11881/15625",
+    "input": [
+      "3/5",
+      "4/5"
+    ],
+    "stationary_hypothesis_essential": true
+  }
+}

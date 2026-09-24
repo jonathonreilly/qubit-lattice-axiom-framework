@@ -1,0 +1,63 @@
+{
+  "scope": "Two arbitrary six-dimensional unitaries, two noncommensurate positive gaps, genuine finite battery boundaries",
+  "exact_small_L": 2,
+  "exact_full_unitarity": true,
+  "exact_composition": true,
+  "exact_energy_commutation": true,
+  "wrong_cyclic_wrap_energy_change": "4*sqrt(2)",
+  "rows": [
+    {
+      "L": 3,
+      "battery_dimension": 25,
+      "total_dimension": 150,
+      "nearest_shift_overlap": 0.7071067811865477,
+      "isometry_operator_norm_error": 0.9826934428918207,
+      "proved_isometry_bound": 1.5307337294603591,
+      "reference_input_trace_norm_error": 0.7791713734874544,
+      "proved_channel_bound": 2.0,
+      "initial_battery_mean": 6.292528739883945,
+      "energy_balance_residual": 1.7763568394002505e-15,
+      "same_battery_composition_residual": 5.551115123125783e-17
+    },
+    {
+      "L": 7,
+      "battery_dimension": 81,
+      "total_dimension": 486,
+      "nearest_shift_overlap": 0.9238795325112867,
+      "isometry_operator_norm_error": 0.5255881079165157,
+      "proved_isometry_bound": 0.780361288064513,
+      "reference_input_trace_norm_error": 0.25372925045988826,
+      "proved_channel_bound": 1.560722576129026,
+      "initial_battery_mean": 12.58505747976789,
+      "energy_balance_residual": 0.0,
+      "same_battery_composition_residual": 2.7755575615628914e-17
+    },
+    {
+      "L": 15,
+      "battery_dimension": 289,
+      "total_dimension": 1734,
+      "nearest_shift_overlap": 0.9807852804032307,
+      "isometry_operator_norm_error": 0.26732678786182523,
+      "proved_isometry_bound": 0.3920685613182424,
+      "reference_input_trace_norm_error": 0.06937501872186745,
+      "proved_channel_bound": 0.7841371226364848,
+      "initial_battery_mean": 25.17011495953578,
+      "energy_balance_residual": 3.552713678800501e-15,
+      "same_battery_composition_residual": 1.3877787807814457e-17
+    },
+    {
+      "L": 31,
+      "battery_dimension": 1089,
+      "total_dimension": 6534,
+      "nearest_shift_overlap": 0.9951847266721969,
+      "isometry_operator_norm_error": 0.13423736423686178,
+      "proved_isometry_bound": 0.19627069730967206,
+      "reference_input_trace_norm_error": 0.017902308518679955,
+      "proved_channel_bound": 0.3925413946193441,
+      "initial_battery_mean": 50.34022991907156,
+      "energy_balance_residual": 1.4210854715202004e-14,
+      "same_battery_composition_residual": 6.938893903907228e-18
+    }
+  ],
+  "claim_status": "Author consistency control; analytic arbitrary-dimension proof is in the note"
+}

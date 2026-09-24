@@ -2098,5 +2098,95 @@
   },
   "problem": "the-sheet-and-line-modes-with-the-scalar-hop",
   "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (source-link direction, blocks 53-89 of the admissibility induced-law campaign: open PRs #8568 #8570 #8571 #8573 #8578 #8579 #8581 #8590 #8591 #8592 #8593 #8595 #8596 #8597 #8598 #8599 #8601 #8602 #8603 #8605 #8606 #8607 #8608 #8611 #8612 #8613 #8614 #8615 #8626 #8628 #8632 #8652 #8657 #8660 #8662 #8665 and block 89 'the unit of rate decides the alternation's thresholds' when opened; decision record #8572 with FORK_PROBE_source_link_20260922.md; the moving-records reading of blocks 39-52; ALL supplied clauses, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>; the 2026-09-23 harvest's issues #8616-#8673 carry the worker results this problem builds on). Block 86's walls with the scalar hop a through the same bonds: dense spectra on 8^3 and 12^3 tori with walls across one, two, three axes, a = 0, 1/10, 1/4, delta = 0.3, 0.5 (linear and log parametrisations); zero-mode counts, least |E|, the sheet and line bands against block 86's separable values. DELIVERABLE in your unit worktree: probes/work/compute/the-sheet-and-line-modes-with-the-scalar-hop/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/the-sheet-and-line-modes-with-the-scalar-hop/<name>/run.py\""
+ },
+ {
+  "id": "C:the-delayed-clock-two-records:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-delayed-clock-two-records",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). Two records on a ring of 12 and on 8^3, clock field relaxing at rate Gamma (du_z/dt = Gamma w_z((1/6) sum_e u_(z+e) - u_z + log(kappa)(n_z - nbar)); log(kappa) = -1/2 and -1), hops timed by the site left (rate w_x/6): for Gamma = 100, 10, 1, 0.1 times the bare hop rate, the time-weighted law of the separation against block 95's pair law exp(-6 log(kappa) G(d)) (total variation), and one record's mean-square displacement against time (self-trapping). EXPECTATION: the pair law returns as Gamma grows; for small Gamma the record's diffusion slows. HIT if the pair law fails at large Gamma or diffusion is faster than bare. DELIVERABLE in your unit worktree: probes/work/compute/the-delayed-clock-two-records/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/the-delayed-clock-two-records/<name>/run.py\""
+ },
+ {
+  "id": "C:the-delayed-clock-two-records:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-delayed-clock-two-records",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). Two records on a ring of 12 and on 8^3, clock field relaxing at rate Gamma (du_z/dt = Gamma w_z((1/6) sum_e u_(z+e) - u_z + log(kappa)(n_z - nbar)); log(kappa) = -1/2 and -1), hops timed by the site left (rate w_x/6): for Gamma = 100, 10, 1, 0.1 times the bare hop rate, the time-weighted law of the separation against block 95's pair law exp(-6 log(kappa) G(d)) (total variation), and one record's mean-square displacement against time (self-trapping). EXPECTATION: the pair law returns as Gamma grows; for small Gamma the record's diffusion slows. HIT if the pair law fails at large Gamma or diffusion is faster than bare. DELIVERABLE in your unit worktree: probes/work/compute/the-delayed-clock-two-records/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/the-delayed-clock-two-records/<name>/run.py\""
+ },
+ {
+  "id": "C:formation-with-the-clock-fill:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-with-the-clock-fill",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). Records forming at empty sites at rate z w_x (block 95's clock field slaved to all records, log(kappa) = -g) and hopping at w_x/6 on a 16^3 torus from empty: record count, largest cluster share, and the fraction of formation events within distance 2 of the largest cluster, against time, for z = 1e-3, 1e-4 and g = 0.5, 1. EXPECTATION: new records form mostly in voids (fast clocks) and join clusters; the lattice jams eventually. HIT if formation concentrates at clusters or the count saturates below jamming. DELIVERABLE in your unit worktree: probes/work/compute/formation-with-the-clock-fill/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/formation-with-the-clock-fill/<name>/run.py\""
+ },
+ {
+  "id": "C:formation-with-the-clock-fill:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-with-the-clock-fill",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). Records forming at empty sites at rate z w_x (block 95's clock field slaved to all records, log(kappa) = -g) and hopping at w_x/6 on a 16^3 torus from empty: record count, largest cluster share, and the fraction of formation events within distance 2 of the largest cluster, against time, for z = 1e-3, 1e-4 and g = 0.5, 1. EXPECTATION: new records form mostly in voids (fast clocks) and join clusters; the lattice jams eventually. HIT if formation concentrates at clusters or the count saturates below jamming. DELIVERABLE in your unit worktree: probes/work/compute/formation-with-the-clock-fill/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/formation-with-the-clock-fill/<name>/run.py\""
+ },
+ {
+  "id": "C:walk-turned-by-a-condensed-clump:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "walk-turned-by-a-condensed-clump",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). The clocked walk (block 54's H_w = sqrt(W) H sqrt(W)) in the clock field of a condensed clump taken from probes/lib/clocked_gas.py (L = 16, N = 96, g = 1, run to condensation, positions saved), embedded in an 80^3 box: packets (k0 = 0.8, width 4) at impact parameters 10-30 from the clump's centre; turn of the mean sin k_y against block 98's first-order 2|U(b)| summed over the clump and against rays of E = w|sin k| in the same field. EXPECTATION: agreement with rays; first-order formula good at large b. HIT if the walk departs from its rays by much more than its spreads allow. DELIVERABLE in your unit worktree: probes/work/compute/walk-turned-by-a-condensed-clump/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/walk-turned-by-a-condensed-clump/<name>/run.py\""
+ },
+ {
+  "id": "C:walk-turned-by-a-condensed-clump:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "walk-turned-by-a-condensed-clump",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). The clocked walk (block 54's H_w = sqrt(W) H sqrt(W)) in the clock field of a condensed clump taken from probes/lib/clocked_gas.py (L = 16, N = 96, g = 1, run to condensation, positions saved), embedded in an 80^3 box: packets (k0 = 0.8, width 4) at impact parameters 10-30 from the clump's centre; turn of the mean sin k_y against block 98's first-order 2|U(b)| summed over the clump and against rays of E = w|sin k| in the same field. EXPECTATION: agreement with rays; first-order formula good at large b. HIT if the walk departs from its rays by much more than its spreads allow. DELIVERABLE in your unit worktree: probes/work/compute/walk-turned-by-a-condensed-clump/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/walk-turned-by-a-condensed-clump/<name>/run.py\""
  }
 ]

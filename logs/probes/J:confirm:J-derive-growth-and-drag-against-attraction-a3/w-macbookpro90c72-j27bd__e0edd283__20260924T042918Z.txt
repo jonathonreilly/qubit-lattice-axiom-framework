@@ -1,0 +1,3 @@
+L, spiral, period, carried True turns/half 0.4349604207872798
+HIT: confirmed - L = L0 e^{-q1 t}, a circular orbit shrinks as e^{-3 q1 t} with period e^{-5 q1 t}, about 0.435/eps turns per halving, and the carried radius obeys r^3 = r0^3 - (3 mu0/q1^2)(e^{q1 t}-1)
+SUMMARY: confirmed the exact dragged Kepler reductions; the numerical integrations were not re-run

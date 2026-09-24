@@ -1,0 +1,10 @@
+PR #8872: physics-loop: admissibility induced-law block 97 - a record that cannot read the field from its own motion hops on its own clock, and with kept books records attract
+branch physics-loop/admissibility-induced-law-block97-a-record-that-cannot-read-the-field-hops-on-its-own-clock-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_a_record_that_cannot_read_the_field_from_its_own_motion_hops_on_its_own_clock_2026_09_23.py: rc=0 PASS=11 FAIL=0
+   mutation arrival_clock_called_own: expected B observed B ok
+   mutation record_timings_merged: expected C observed C ok
+   mutation ledger_sign_flipped: expected D observed D ok
+   mutation direction_read_from_clocks: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

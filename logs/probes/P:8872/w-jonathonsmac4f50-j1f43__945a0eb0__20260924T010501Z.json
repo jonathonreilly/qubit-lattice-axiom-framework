@@ -1,0 +1,37 @@
+{
+ "task": "P:8872",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block97-a-reco",
+ "worker": "w-jonathonsmac4f50-j1f43",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8872",
+ "pr": 8872,
+ "branch": "physics-loop/admissibility-induced-law-block97-a-record-that-cannot-read-the-field-hops-on-its-own-clock-20260923",
+ "git_sha": "945a0eb0",
+ "started_utc": "20260924T010501Z",
+ "elapsed_s": 7.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_a_record_that_cannot_read_the_field_from_its_own_motion_hops_on_its_own_clock_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #8872's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "064c2031f103d4f8fcd4d8fd8d86fe97d28c8cb636e7b28724680f73aa1a161c",
+ "stdout_tail": "PR #8872: physics-loop: admissibility induced-law block 97 - a record that cannot read the field from its own motion hops on its own clock, and with kept books records attract\nbranch physics-loop/admissibility-induced-law-block97-a-record-that-cannot-read-the-field-hops-on-its-own-clock-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_a_record_that_cannot_read_the_field_from_its_own_motion_hops_on_its_own_clock_2026_09_23.py: rc=0 PASS=11 FAIL=0\n   mutation arrival_clock_called_own: expected B observed B ok\n   mutation record_timings_merged: expected C observed C ok\n   mutation ledger_sign_flipped: expected D observed D ok\n   mutation direction_read_from_clocks: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1f43",
+  "at_utc": "20260924T010508Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

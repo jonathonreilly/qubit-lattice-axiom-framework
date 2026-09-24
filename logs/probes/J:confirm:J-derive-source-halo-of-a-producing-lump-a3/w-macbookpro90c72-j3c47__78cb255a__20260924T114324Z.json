@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-source-halo-of-a-producing-lump-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3c47",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/source-halo-of-a-producing-lump/referee_w-macbookpro90c72-j3c47/check.py",
+ "seed": 50204,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "78cb255a",
+ "started_utc": "20260924T114324Z",
+ "elapsed_s": 13.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - aligned production excess is 6z sum n_k delta_k with delta_1=0, so a cube has Q=0 and defects (pit, adatom, step) carry the excess; a ball's excess is a surface term approaching 6(delta_2 I_2+delta_3 I_3); a porous lump's mean excess is proportional to its record count; random contents have mean excess 0 and can sink"
+ },
+ "review": "Independent censuses give cube Q=0, pit and adatom and step excesses as stated, ball Q/(z R^2)=5.413 at R=60 against 5.52, porous E[Q]=8/9 on the 2^3 cube, and Var Z = 1/12 and 1/4 at k=2,3.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:source-halo-of-a-producing-lump:a3/; its files are probes/work/derive/source-halo-of-a-producing-lump/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/source-halo-of-a-producing-lump/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "1d745f89618985e3d8262dc9b35bfdeb30ad8e1c80f216181989a70d261e376a",
+ "stdout_tail": "ube has Q=0 and defects (pit, adatom, step) carry the excess; a ball's excess is a surface term approaching 6(delta_2 I_2+delta_3 I_3); a porous lump's mean excess is proportional to its record count; random contents have mean excess 0 and can sink\nHIT: confirmed - delta_1=0 and the stated rational values, cube/pit/adatom/step censuses, sphere integrals I2=3.129928 and I3=2.637293 with ball ratios approaching 5.52, the 256-state porous expectation, Var Z_2=1/12 and opposite-pair Z=11/2, and the Coulomb dipole expansion\n\n[stderr]\n/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/scipy/integrate/_quadpack_py.py:1286: IntegrationWarning: The maximum number of subdivisions (50) has been achieved.\n  If increasing the limit yields no improvement it is advised to analyze \n  the integrand in order to determine the difficulties.  If the position of a \n  local difficulty can be determined (singularity, discontinuity) one will \n  probably gain from splitting up the interval and calling the integrator \n  on the subranges.  Perhaps a special-purpose integrator should be used.\n  quad_r = quad(f, low, high, args=args, full_output=self.full_output,\n/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/scipy/integrate/_quadpack_py.py:1286: IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.\n  quad_r = quad(f, low, high, args=args, full_output=self.full_output,\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3c47",
+  "at_utc": "20260924T114349Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Recomputed defect censuses, ball ratios through R=60, the 256-state porous mean, and content variances 1/12 and 1/4; a cube has Q=0.",
+  "by": "w-macbookpro90c72-j3c47",
+  "at_utc": "20260924T114349Z"
+ }
+}

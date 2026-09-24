@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_records_carve_kitaev_models_at_the_compass_point_2026_09_24.py
-runner_sha256: 4da3de320f141bbc560f2c70fdd4a2ccc4045e9fc2158452b0fb1b15cb62d6a6
+runner_sha256: 773a74b2c6554627430bd37b1926be6b2e77ea3505a6afd4a39245eee6aff162
 input_fingerprint_sha256: 15f6ceeb94f32b4ec1bed774a0c029f28cc5bc8ded652c8855530f636db5e77b
 timeout_sec: 900
-exit_code: 1
-elapsed_sec: 15.29
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 15.44
+status: ok
 ----- stdout -----
 A. carvings of the lattice by records
 [PASS] zero-field carvings: every component is finite or winds in one direction :: 4x4x4: 112 (complete), ranks [0, 1]; 5x5x5: 1984 (complete), ranks [0, 1]; 6x6x6: 1500 sampled, ranks [0, 1]
 [PASS] proof steps: every carved site has >= 2 closed squares; chi = interior/4; finite components are 2x2x2 cubes; winding components are strips with no interior site along a face diagonal :: finite component types (sites, interior, chi, rank) [(8, 8, 2.0, 0)]; tube (interior, chi, rank) [(0, 0.0, 1)]
 [PASS] without zero fields, three-direction networks occur and each forces a record touching all three axes :: 101 carvings with a three-direction component; sizes 4x4x4: [32]; 5x5x5: [40]
 B. contents that cancel every field
-[FAIL] staircase tube (16 sites on 4^3) and cube: contents orthogonal to touched axes cancel every field :: largest residual field 0.0
+[PASS] staircase tube (16 sites on 4^3) and cube: contents orthogonal to touched axes cancel every field :: largest residual field 0.0
 C. exact solvability
 [PASS] loop operators commute with H and each other :: cube: 6 loops, E0 -6.92820323; tube, 8 sites: 6 loops; tube, 12 sites: 6 loops
 [PASS] exact ground energy = least free-Majorana ground energy over Z2 gauge configurations :: cube: 6 loops, E0 -6.92820323; tube, 8 sites: 6 loops, E0 -6.92820323; tube, 12 sites: 6 loops, E0 -10.12899020
@@ -21,7 +21,7 @@ D. Majorana bands of the infinite staircase tube
 [PASS] each flux sector's Majorana ground energy and gap are gauge invariant :: largest spread over configurations 0.0e+00
 [PASS] lowest Majorana ground energy per cell has pi flux through both plaquette types, with gap 2|K| :: E0/cell -3.35522 (pi, pi), -3.055342 (0, pi), -2.871982 (0, 0); gap 2.0
 [PASS] the zero-flux sector is gapless :: smallest |eps| on a 4000-point grid 0.000907
-TOTAL: PASS=9 FAIL=1
+TOTAL: PASS=10 FAIL=0
 
 ----- stderr -----
 

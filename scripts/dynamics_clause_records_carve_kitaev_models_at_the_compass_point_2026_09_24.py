@@ -269,7 +269,7 @@ def one_per_axis(U, Ls):
 
 
 E = np.eye(3)
-fields_ok = one_per_axis(tube_U, L4) and components(tube_U, L4) == [(16, 1)]
+fields_ok = one_per_axis(tube_U, L4) and [(n, r) for n, r, _ in components(tube_U, L4)] == [(16, 1)]
 worst = 0.0
 for U, Ls in ((tube_U, L4), (frozenset(itertools.product((0, 1), repeat=3)), (4, 4, 4))):
     ta = touched_axes(U, Ls)

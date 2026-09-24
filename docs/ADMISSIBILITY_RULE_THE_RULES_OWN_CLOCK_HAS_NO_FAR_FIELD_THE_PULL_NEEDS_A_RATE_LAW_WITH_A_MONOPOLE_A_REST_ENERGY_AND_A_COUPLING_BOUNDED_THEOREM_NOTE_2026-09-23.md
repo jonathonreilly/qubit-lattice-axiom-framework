@@ -30,7 +30,7 @@ Block 95 (#8860) found that records on their own clocks attract with a one-over-
   - Its field is `u = −log π`, which stays on the records that have neighbours.
 - **T3: what the pull needs instead.**
   - In block 55's supplied point-force model, equal and opposite pulls need the ratio of source to energy to be universal. If a packet's source is identified with block 55's linearized field law, that ratio is `−γ/6` and a record needs `log κ = −(γ/6)E_rec`, so `κ` gives way to the record's energy. The landed block 55 keeps its point-force coupling separate from `γ` and does not make this identification.
-  - No on-site `2×2` term anticommutes with the walk's `σ₁, σ₂, σ₃`. A walker at rest therefore has `E_rec = 0` and `κ = 1`, as T2's isolated record does. A rest energy needs a term like block 77's staggered one.
+  - No on-site `2×2` term anticommutes with the walk's `σ₁, σ₂, σ₃`. A walker at rest therefore has `E_rec = 0` and `κ = 1`, as T2's isolated record does. A rest energy needs a term like block 77's staggered one, whose corner energies the landed block 77 does not establish as rest masses.
   - The coupling `γ` meets every clause of blocks 53–56 at every positive value, and the pull depends on it. So `γ` is a free physical number.
 
 **Executed control (not claimed).**
@@ -99,7 +99,7 @@ In plain terms: under the rule's own odds, a record whose neighbours it likes ti
 
 *Statement.*
 - (a) In block 55's point-force model, take a body with source `S_A` and energy `E_A`, and one with `S_B`, `E_B`. The pulls on them sum to `−(E_A S_B − E_B S_A)∇G`, which is zero at every separation where `∇G ≠ 0` if and only if `S/E` is the same for both. If a packet's source is identified with block 55's linearized law, `S/E = −γ/6`, and then a record needs `log κ = −(γ/6)E_rec`. The landed block 55 does not make that identification: its point-force coupling is its own.
-- (b) No `2×2` on-site term anticommutes with `σ₁`, `σ₂` and `σ₃`. So the walk has no on-site rest energy: a walker at rest has `E_rec = 0` and `κ = 1`, in agreement with T2(a). A rest energy needs a term outside the on-site `2×2` class, such as block 77's staggered `mε`, which gives `κ = e^{−γm/6}`.
+- (b) No `2×2` on-site term anticommutes with `σ₁`, `σ₂` and `σ₃`. So the walk has no on-site rest energy: a walker at rest has `E_rec = 0` and `κ = 1`, in agreement with T2(a). A rest energy needs a term outside the on-site `2×2` class. Block 77's staggered `mε` is such a term: as landed on main (7445cc7a50), at zero scalar hop its corner energies all equal `|m|`, but they are not established as rest masses. So `κ = e^{−γm/6}` holds only if `m` is read as the record's rest energy, a reading the landed block 77 does not make.
 - (c) The field energy `(2/γ)Σ(√w_x − √w_y)²` has weight one under `w → tw` for every `γ > 0`. The weak-field pull `−(γ/4π)E_AE_B/R` depends on `γ`. Every clause of blocks 53–56 holds for the whole family `γ > 0`, so `γ` is a free physical number.
 
 *Proof.*
@@ -151,7 +151,7 @@ audit_required_before_effective_retained: true
 - **Block 53** (#8568; landed in c3f8c47a58): T3 showed that only the zero-sum part of a source enters on a torus, and T4 introduced records as a ratio `κ`. The PR text's remark that block 50's local clock is such a ratio at contact is qualified here: at contact it is, but its sources sum to zero, so it has no far field. The landed version omits the remark.
 - **Block 50** (#8562) gave the local clock.
 - **Block 55** (#8571; landed in c3f8c47a58 with its point-force model separated from the ledger's `γ` and no exact packet force established): the PR text's corollary gave `log κ = −(γ/6)E/w̄`. **Block 97** (#8872) used it for the sign of the pull.
-- **Block 54** (#8570) gave the walk. **Block 77** (#8612) gave the staggered rest term. **Block 76** (#8611) found `γ_ind ≈ 10.5` under an induced reading, not adopted, which is repulsive once the volume term is kept.
+- **Block 54** (#8570) gave the walk. **Block 77** (#8612; landed in 7445cc7a50, where its corner energies are not established as rest masses) gave the staggered term. **Block 76** (#8611) found `γ_ind ≈ 10.5` under an induced reading, not adopted, which is repulsive once the volume term is kept.
 - **Blocks 40 and 41** (#8546, #8547) found that at `c₀` a single record leaves an empty neighbour's formation rate unchanged, a neighbouring neutral-scale fact.
 - The weak-field law is the lattice form of Einstein's second static theory of 1912 (block 55's placement).
 - **New here:**
@@ -261,3 +261,7 @@ Expected: `TOTAL: PASS=12 FAIL=0`.
 ## Corrigendum 2026-09-23 (after the owner's landings)
 
 Blocks 53, 54 and 55 were landed on main in c3f8c47a58 with review changes. This note now cites them as landed: block 53's remark about block 50's clock is in its PR text only; block 54's exact packet force is withdrawn; block 55's point-force model carries its own coupling, so T3(a)'s link to `γ` is stated as an identification the landed note does not make. T1 and T2, and every check, are unchanged.
+
+## Corrigendum 2026-09-23, second (after the owner's landing 7445cc7a50)
+
+Block 77 was landed with its corner energies not established as rest masses. T3(b)'s example `κ = e^{−γm/6}` is therefore stated as conditional on reading `m` as a rest energy. T1–T3's theorems, and every check, are unchanged.

@@ -22,11 +22,18 @@
  "stdout_tail": " part D.rhat/(8 pi) with no decay (force ~ 1/r), and grad(B * Delta e) = (D - (D.rhat) rhat)/(8 pi r)\nok   F: floating point, periodic 96^3 box, lattice kernel 1/p^4 with p^2 = sum 4 sin^2(k/2): the transverse gradient of B * (dipole) at distance d, times 8 pi d, is 0.840, 0.768, 0.698 at d = 8, 12, 16; the images of the long-range kernel shift it linearly in d/L, and the line through the three points meets d/L = 0 at 0.981 (continuum value 1)\nchecks: 5 ok, 0 fail\nSUMMARY: PARTIAL exact: (1) solving block 62's full pencil without a mode split, the clock's transfer function is u/e = -1/(4K wbar p^2) + C s^2/p^4, C = alpha(alpha + 3beta)/(K^2 wbar^3 (alpha + beta)), a polynomial in s: no retarded part; (2) for a formation event that keeps the ledger (block 67: no monopole, dipole jump D = Q'(y - Xbar)), a slow packet at distance r feels at once the dipole force of the Poisson part (~ r^-3), and while the content is being rearranged the C-term's force ~ E C Ddd/(8 pi r), which leaves a permanent displacement -(E C/m*)(D - (D.rhat)rhat)/(8 pi r): a memory falling only as 1/r, all before any transverse wave arrives\nHIT: with block 62's kinetic term the curvature member's clock law is u = -e/(4K wbar p^2) + C ddot(e)/p^4 with no retarded part (re-derived from the full pencil); even a formation event that keeps the ledger moves every distant slow packet at once - through its dipole jump D = Q'(y - Xbar) - and leaves a permanent 1/r displacement -(E C/m*)(D - (D.rhat) rhat)/(8 pi r)\n",
  "checked": {
   "by": "w-macbookpro9927a-j6a3f",
-  "at_utc": "20260924T090746Z",
+  "at_utc": "20260924T090823Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8d89f7eb differs from the current HEAD e259d868 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: T1 (no retarded part; the clock law re-derived from the full pencil, symbolic plus rotation invariance) agrees with attempt 1 by another route; the new part is the ledger-kept formation event: the dipole moves distant packets at once and the C-term leaves a 1/r displacement memory. First order only; the packet law is block 54's as restated by the task; the lattice 1/p^4 check is floating point. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-j6a3f",
+  "at_utc": "20260924T090823Z"
  }
 }

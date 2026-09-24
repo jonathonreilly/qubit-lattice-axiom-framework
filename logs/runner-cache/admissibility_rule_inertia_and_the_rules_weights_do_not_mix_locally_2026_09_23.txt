@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_inertia_and_the_rules_weights_do_not_mix_locally_2026_09_23.py
+runner_sha256: 8847e044350144e2da350164ea2430e38e616701b9663a9b3bb1907a0c6d3264
+input_fingerprint_sha256: bac3192393a5e7e8de70780896dbc7d02fc3963f91508f2d0346c42b2ecd011a
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 36.17
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_INERTIA_AND_THE_RULES_WEIGHTS_DO_NOT_MIX_LOCALLY_STREAMING_RECORDS_KEEP_THE_RULES_LAW_AT_THREE_RECORDS_NEVER_AT_FOUR_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  scripts/admissibility_rule_inertia_and_the_rules_weights_certificates_2026_09_23.json
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: block 50 (#8562) reproduced on 3^3 at (3,1,2), c = 1: 70200 three-record configurations with a record at the origin, three events out and three in each (global clock), the local clock 1/pi_x failing at 3168 with largest defect 3; exact Farkas certificates show that with every move at the local clock, or at rate one, no exchange rates balance the three-record sector (c = 1 and the neutral scale c0 = 1/2), and that no rule balances each record against its own predecessor
+PASS: C1 T2: rates depending only on the sites within distance one of an event exist that keep the rule's law stationary on the three-record sector: exact rational rules, moves >= 1, exchanges >= 0, every configuration balanced (3^3 c1: 274 classes, 70200 configurations; 3^3 c0: 274 classes, 70200 configurations; 4^3 c1: 353 classes, 421848 configurations; 4^3 c0: 353 classes, 421848 configurations)
+PASS: D1 T3: exact Farkas certificates (A^T y >= 0 on every rate class, y.(A l) > 0 with l = 1 on moves) show that no radius-one rule keeps the rule's law stationary on the four-record sector of 3^3, for streaming alone and with head-on pairs re-drawing on their momentum class; every certificate uses four-record rows only (streaming c1: 81 four-record rows; streaming c0: 83 four-record rows; with re-draws c1: 81 four-record rows; with re-draws c0: 110 four-record rows)
+PASS: E1 T3 on Z^3: compact four-record clusters (a record at the origin, the others in [0,2]^3) have the same balance equations on the 6^3 and 9^3 tori, hence are equations of the problem on Z^3, and exact certificates show them infeasible (streaming c1: 74 clusters; streaming c0: 50 clusters; with re-draws c1: 73 clusters; with re-draws c0: 33 clusters); every event keeps the number of records and the total content vector (sampled predecessors on 3^3)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - every three-record configuration of 3^3 and 4^3 against the exact rules; every row of every certificate
+per_site: executed - block 50's local-clock defects at all 70200 configurations of 3^3
+per_mode: not applicable - no mode decomposition is used
+per_block: executed - compact clusters compared on the 6^3 and 9^3 tori
+lattice_wide: T1-T2 on the stated tori; T3 on 3^3 and on Z^3 through compact clusters; the locality class (radius one) and block 50's clauses are supplied; certificates proposed by a solver and verified exactly
+PASS: G1 the five N5 resolution lines are printed
+scope: inertia and the rule's weights - radius-one local rates keep the rule's law stationary for streaming records at three records (exact rules on 3^3, 4^3), never with the local clock or unit moves, never record by record; at four records no radius-one rule exists, on 3^3 and on Z^3, with or without momentum-class re-draws; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

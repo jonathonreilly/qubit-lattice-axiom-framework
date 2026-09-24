@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 100 (2026-09-23)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 50 (#8562): does any local rule keep pi stationary at all densities?"
+source_of_blocker_text: block 50; probes derivation J:derive:local-clock-for-inertia-with-weights
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "radius one settled; next: radius two at four records; the three-record sector on Z^3; inertia from possibility"
+```

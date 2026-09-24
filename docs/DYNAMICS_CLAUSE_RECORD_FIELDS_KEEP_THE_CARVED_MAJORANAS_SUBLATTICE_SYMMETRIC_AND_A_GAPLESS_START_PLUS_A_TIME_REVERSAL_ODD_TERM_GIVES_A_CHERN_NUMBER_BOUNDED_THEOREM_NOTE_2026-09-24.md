@@ -225,8 +225,8 @@ needs. ∎
   - A realizable gapless carving, which exists (Theorem 6).
   - A same-class time-reversal-odd bilinear that covariance allows. At
     weight at most three there is none, even with record reductions
-    (Theorem 7). Longer star terms, other covariances or interacting
-    routes remain open.
+    (Theorem 7). Open PR 9112 finds one at weights 5 and 7 on a realizable
+    carving, and a Chern number with it.
   - The two meeting in a gapped phase, which is not found yet.
 - **Prior art.** Kitaev (2006) gaps his model's gapless phase with the
   three-spin term into a chiral phase. In three dimensions, breaking the

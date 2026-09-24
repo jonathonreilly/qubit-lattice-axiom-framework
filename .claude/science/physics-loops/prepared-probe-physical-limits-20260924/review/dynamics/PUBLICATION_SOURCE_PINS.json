@@ -1,0 +1,97 @@
+{
+  "scope": "Byte identities for narrow public A/B/context comparison. Section C, unit_control and unit_rows are outside the scientific review; their bytes participate only in the shared source/cache binding. Extra declared public parents were hashed for the fingerprint without reopening their scientific claims.",
+  "records": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "copy": "publication_sources/repo/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7b7814246e22731aac2538422d95035b60f6f1c23cf6035ade93c43dc137cce8",
+      "bytes": 30680
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "copy": "publication_sources/repo/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "copy": "publication_sources/repo/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "copy": "publication_sources/repo/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "copy": "publication_sources/repo/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "copy": "publication_sources/repo/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "copy": "publication_sources/repo/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py",
+      "copy": "publication_sources/repo/scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py",
+      "sha256": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676",
+      "bytes": 10702
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "copy": "publication_sources/repo/outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "sha256": "9e43d561fb8a01e806b8e64e11028da0de4af33e085c29ac5304402a164ee78d",
+      "bytes": 3173
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "copy": "publication_sources/repo/logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "sha256": "5a31469c3bc0659f530d6527e3aae7128c6b6df514f354701090c2fb45c80aa4",
+      "bytes": 3576
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/scripts/runner_cache.py",
+      "copy": "publication_sources/repo/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_6.json",
+      "copy": "publication_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_6.json",
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795",
+      "bytes": 925914
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_16.json",
+      "copy": "publication_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_16.json",
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318",
+      "bytes": 961608
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "copy": "publication_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "d80880656dbe908a900cc3e43d3b2f48b156993729ef1dc7a33d00bcfa65c04b",
+      "bytes": 2144
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "copy": "publication_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "54b05c8d2e36496944f42a149f7c55dd5f868f299c8acb692c2fc5bdb9be174a",
+      "bytes": 4205
+    }
+  ],
+  "input_fingerprint_sha256": "db13fab459c02568f752d565d5e9540cd498da1b492e10b40e29f1786d8396f3",
+  "checker_sha256": "44d31ed13c7c4191bbd0407a786c17b41ce607fba6c4fa20c628902de7e14ea9"
+}

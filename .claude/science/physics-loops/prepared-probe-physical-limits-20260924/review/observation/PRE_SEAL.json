@@ -1,0 +1,80 @@
+{
+  "sealed_utc": "2026-09-24T22:17:48.408306+00:00",
+  "phase": "blind_PRE",
+  "scope": "Conditional initial selected-mark rate ratios, full-process positive-window at-least-one ratios, ordered microscopic moments, and common-clock SI conversion of an existing sufficient time window.",
+  "parent_source_count": 3,
+  "parent_status": "Named supplied/published conditional results reused, not recertified.",
+  "author_candidate_or_controls_read": false,
+  "other_active_packets_read": false,
+  "own_control_runs": 1,
+  "parent_or_author_runner_runs": 0,
+  "new_primary_retrievals": 0,
+  "delegation": false,
+  "publication_audit_or_existing_packet_mutations": false,
+  "central_quantifiers": [
+    "Fixed graph, rate, positive tau and positive transverse-mode variance.",
+    "Initial target ratio tends to 1+2|chi|^2/v in [1,3].",
+    "At-least-one probability ratio has that limit for b=o(tau*g^3), with all background marks retained.",
+    "No exact finite-window upper bound of 3 inferred from the available moments.",
+    "Microscopic point rates are zero initially; only ordered positive-window moment transfer/selected diagonals used.",
+    "SI ceilings conditional on the timing hypotheses and common physical clock; sufficient regime is not necessary bandwidth."
+  ],
+  "members": [
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "ac051a2f4c2d091e7e41082a9050b4ca0e7a2d14ef8648f8bfb6444ec6e90df5",
+      "bytes": 662
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "6379617e494029744796bf40574d3abc9f8202cd2d62ef7622bf5757dc289b3b",
+      "bytes": 21310
+    },
+    {
+      "path": "CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_STDOUT.log",
+      "sha256": "6379617e494029744796bf40574d3abc9f8202cd2d62ef7622bf5757dc289b3b",
+      "bytes": 21310
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "1df863cca91858875c0fb84743f6fcf9a706ebde3a3e799b733bf2d1b8ac2a64",
+      "bytes": 20530
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "72437293d3b565d8910de46ca9071db5d5082accb5025ecfc00708ba299b440d",
+      "bytes": 2692
+    },
+    {
+      "path": "VERIFICATION_REPORT.json",
+      "sha256": "c05c0412f31e2cbf909db3df5bd136e12412ff0e797e2bd9eb9fd64dcc9a951e",
+      "bytes": 1435
+    },
+    {
+      "path": "sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "path": "sources/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "path": "sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "bytes": 11027
+    },
+    {
+      "path": "unit_bridge_controls.py",
+      "sha256": "3ac5d3789979efe54c15ed2532b477ea01f5c6136787e7148b775f4ba3477ecd",
+      "bytes": 6949
+    }
+  ],
+  "read_only_policy": "All members and this seal chmod 0444. Any released POST must be separate."
+}

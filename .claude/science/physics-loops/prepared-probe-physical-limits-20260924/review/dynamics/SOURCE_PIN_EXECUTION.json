@@ -1,0 +1,14 @@
+{
+  "started_unix": 1790287152.9372349,
+  "wall_seconds": 0.1922915840987116,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/pin_sources.py"
+  ],
+  "code_sha256": "89943e595a3457000414b3fff664a741ffba1751dae2cd1b813c7b2305789568",
+  "stdout_sha256": "ee19e1ca0614a3709a1c16a76604ca569fa59d2ae6c8e9ae1c2b88d273b7b609",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 5224,
+  "stderr_bytes": 0
+}

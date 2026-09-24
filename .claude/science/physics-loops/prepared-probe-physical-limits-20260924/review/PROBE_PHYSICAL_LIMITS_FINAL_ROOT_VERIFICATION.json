@@ -1,0 +1,20 @@
+{
+  "reviews": [
+    {
+      "folder": "prepared-probe-dynamics-independent",
+      "report_sha256": "6bf791b000ebd53a4869bc7ce65096b4fe47a7fbaffe78d0d7062b9ab50f9e14",
+      "seal_sha256": "3741a7c4bdc6d078e34fb64f7770fd44bad0b8d6b9629351bbe88994b2c9a300",
+      "members_verified": 48,
+      "current_origins_verified": 16,
+      "read_scope": "Complete final A/B report, both binding codes, every compact scientific correspondence row; PRE/POST scope preserved. Historical first-generation snapshots verified as sealed, not claimed current origins."
+    },
+    {
+      "folder": "observation-unit-bridge-independent",
+      "report_sha256": "34ca4e7ddf096f9601503677f6a70472d3f1d6586ca115977d9d5ba78f38f924",
+      "seal_sha256": "5c95af5b3b15e562106b7c575fa4fcc0b89f88bcf33f02e8a91961f4324ffc63",
+      "members_verified": 28,
+      "origins_verified": 20,
+      "read_scope": "Complete Part C final comparison, verifier and all stored verification rows read. Exact sole front delta, seven unit arithmetic statements and full cache binding. No A/B science scope."
+    }
+  ]
+}

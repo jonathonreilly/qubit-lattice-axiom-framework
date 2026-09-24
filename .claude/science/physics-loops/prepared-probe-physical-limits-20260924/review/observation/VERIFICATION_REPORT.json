@@ -1,0 +1,29 @@
+{
+  "verified_utc": "2026-09-24T22:16:54.550751+00:00",
+  "scope": "Read-only source/log checks and inventories; independently written scientific control executed once.",
+  "source_origins_and_snapshots_verified": 3,
+  "instruction_hashes_unchanged": 3,
+  "control_first_run_exit_code": 0,
+  "control_stderr_bytes": 0,
+  "control_stdout_equals_result_bytes": true,
+  "script_sha256": "3ac5d3789979efe54c15ed2532b477ea01f5c6136787e7148b775f4ba3477ecd",
+  "result_sha256": "6379617e494029744796bf40574d3abc9f8202cd2d62ef7622bf5757dc289b3b",
+  "complete_rows_read": {
+    "reference": 24,
+    "finite_count_law": 4,
+    "SI": 6,
+    "total": 34
+  },
+  "max_reference_quadrature_error": 5.551115123125783e-17,
+  "max_quadrature_refinement": 6.938893903907228e-17,
+  "count_example_is_original_dynamics": false,
+  "SI_values_are_conditional_parameter_scales": true,
+  "initial_reference_ratio_formula": "1+2*(|chi|^2/v)*z/(exp(z)-1), z=g^2*v/2",
+  "positive_window_probability_ratio_claim": "1+2*|chi|^2/v+o(1) for b=o(tau*g^3), fixed graph/rate/tau; not exact finite-window <=3",
+  "microscopic_probability_claim": "Ordered moment convergence then a selected diagonal; no point-intensity or uniform microscopic intensity statement.",
+  "parent_or_author_runner_executions": 0,
+  "author_or_other_active_packets_read": false,
+  "new_primary_retrievals": 0,
+  "publication_audit_or_existing_packet_mutations": false,
+  "delegation": false
+}

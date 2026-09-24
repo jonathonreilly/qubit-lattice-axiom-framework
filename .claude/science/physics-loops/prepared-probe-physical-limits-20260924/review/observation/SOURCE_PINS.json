@@ -1,0 +1,43 @@
+{
+  "captured_utc": "2026-09-24T22:05:23.534956+00:00",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "snapshot": "sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "bytes": 11027
+    }
+  ],
+  "premise_status": "Named published/supplied parents reused conditionally, not recertified.",
+  "author_or_other_active_packets_read": false,
+  "instructions_reused": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "status": "Previously read in this coherent campaign; current unchanged hash reverified and instructions reused."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "status": "Previously read in this coherent campaign; current unchanged hash reverified and instructions reused."
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "status": "Previously read in this coherent campaign; current unchanged hash reverified and instructions reused."
+    }
+  ],
+  "primary_benchmark_status": "Imported only from the named photon note, including physical/cosmological/likelihood and printed-rounding qualifications; no new primary retrieval."
+}

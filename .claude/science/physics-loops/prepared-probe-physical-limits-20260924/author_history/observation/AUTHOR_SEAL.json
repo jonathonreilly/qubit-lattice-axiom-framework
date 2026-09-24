@@ -1,0 +1,41 @@
+{
+  "sealed_utc": "2026-09-24T22:04:16.319907+00:00",
+  "independent_status": "No independent PRE read; pending.",
+  "members": [
+    {
+      "path": "CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL.stdout",
+      "sha256": "d474ba3d5812cfc755de0e81908bb202f11686db53fb7308ba1f98e0a564212e",
+      "bytes": 1081
+    },
+    {
+      "path": "EXECUTION.json",
+      "sha256": "c41e3dda93649cfdbabe4868bb7e17e6aa631e6c3473e43eb1ed6f5ec4c9dcfe",
+      "bytes": 309
+    },
+    {
+      "path": "OBSERVATION_RESPONSE_AND_CLOCK_SCOPE_ROOT.md",
+      "sha256": "91fd6c3df5063dcbbbc999bd1e3a4817b286ae6ce8448156550cb957fd2d709b",
+      "bytes": 8360
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "852b90181a7aa93e0742cfa144ee1abba784d5fc46c22a84b4c08ea04ce4a0db",
+      "bytes": 1132
+    },
+    {
+      "path": "UNIT_CONVERSIONS.json",
+      "sha256": "d474ba3d5812cfc755de0e81908bb202f11686db53fb7308ba1f98e0a564212e",
+      "bytes": 1081
+    },
+    {
+      "path": "unit_conversions.py",
+      "sha256": "cad001b23a6fd9c896ee978a34e7320f6cb0e3ae98d8f46f6ad61652a1af5fb7",
+      "bytes": 953
+    }
+  ]
+}

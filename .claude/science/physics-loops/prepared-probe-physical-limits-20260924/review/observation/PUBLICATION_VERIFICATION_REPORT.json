@@ -1,0 +1,42 @@
+{
+  "verified_utc": "2026-09-24T22:35:05.166130+00:00",
+  "frozen_sources_verified": 8,
+  "declared_inputs": [
+    "docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "declared_input_count": 7,
+  "current_input_fingerprint_sha256": "dc62c22b7a87a8ff5fdca3f56fbf160676814b07c96976e7194e87f2bbce7f6b",
+  "prior_input_fingerprint_sha256": "db13fab459c02568f752d565d5e9540cd498da1b492e10b40e29f1786d8396f3",
+  "final_source_hashes": {
+    "docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+    "scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676",
+    "outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json": "790a2a72d86f4ecf72395c400ee93ba981e854a1a19a7d25d1adc15d79692e7e",
+    "logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt": "a13f49a4bc999f280335dd0351f44a483a80d632d1d94db734d5d0870b6e9cb6"
+  },
+  "sole_note_delta": {
+    "before": "In the controlled small-background window, vacuum click probability remains",
+    "after": "In Part C's regime b=o(tau g\u00b3), vacuum click probability remains"
+  },
+  "unit_core_AST_exact": true,
+  "unit_core_statement_count": 7,
+  "unit_core_AST_sha256": "c524ef222a09e67f57da39e2bd66ee79ff43f7256c3592741ba31a5a13d89813",
+  "unit_rows_exact_to_sealed_author": 2,
+  "complete_result_stdout_exact": true,
+  "cache_complete_bytes_match_receipt_and_sources": true,
+  "nonruntime_payload_equal_to_prior_run": true,
+  "primary_elapsed_seconds": 2.2022247314453125,
+  "primary_exit_code": 0,
+  "primary_stderr_bytes": 0,
+  "primary_reruns_by_checker": 0,
+  "author_programs_imported_or_executed": 0,
+  "root_AB_AST_and_source_equivalence_independently_checked": false,
+  "root_AB_science_checked": false,
+  "snapshots": 20,
+  "PRE_and_POST_members_preserved": true
+}

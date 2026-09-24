@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-09-24T22:35:05.171614+00:00",
+  "elapsed_seconds": 0.06024400005117059,
+  "exit_code": 0,
+  "scope": "Mechanical AST/hash/result/cache comparisons only; no primary imported or executed.",
+  "verifier_sha256": "31b046e476e2d2d35883369aea13ce1c68f2f3d22d2eda0b5846e19ccb5c6df0"
+}

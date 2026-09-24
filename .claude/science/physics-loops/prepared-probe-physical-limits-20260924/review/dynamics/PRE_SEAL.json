@@ -1,0 +1,231 @@
+{
+  "sealed_utc": "2026-09-24T22:11:11.562355+00:00",
+  "phase": "Blind prepared-probe dynamics and selected-output energy PRE",
+  "scope": "Admitted Root22 preparation; full H4/Gauss/harmonic-fiber reconstruction, strict instability and exact energy coefficients on sides six/eight, controlled positive short count windows and selected resolved-output moments. Bare-P microscopic identities are distinguished from actual microscopic post-jump energy and heat. No new author candidate or forbidden active packet read.",
+  "source_snapshot_count": 11,
+  "source_origins": {
+    "exact_git": 8,
+    "authorized_external": 3
+  },
+  "prior_packets_unchanged": true,
+  "new_science_control_execution_count": 4,
+  "author_or_parent_science_execution_count": 0,
+  "bookkeeping_execution_count": 2,
+  "new_delegations": 0,
+  "excluded_transient_paths": [
+    "__pycache__/"
+  ],
+  "frozen_member_count": 42,
+  "members": [
+    {
+      "path": "CONTROL.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL.stdout.log",
+      "sha256": "99fc9bc4fe2ba955786ef7c4568530115e2c27106e32643cc6500e621c429da2",
+      "bytes": 243226
+    },
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "b01282822f7edd14779996f5e63cb89d6e6bbdd45297b6fbd76bff9de35faf72",
+      "bytes": 609
+    },
+    {
+      "path": "EVIDENCE_CHECK.json",
+      "sha256": "9eaa4851783d4215f1d504d911ccea2142e5aaf078aa2ddcee4bb890686d894f",
+      "bytes": 7315
+    },
+    {
+      "path": "EVIDENCE_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "EVIDENCE_CHECK.stdout.log",
+      "sha256": "9eaa4851783d4215f1d504d911ccea2142e5aaf078aa2ddcee4bb890686d894f",
+      "bytes": 7315
+    },
+    {
+      "path": "EVIDENCE_CHECK_EXECUTION.json",
+      "sha256": "581901ff8d9ac307a77b7319d0e42da9a40134e2fdedb7d5c8815529f223db19",
+      "bytes": 597
+    },
+    {
+      "path": "OUTPUT_ENERGY.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "OUTPUT_ENERGY.stdout.log",
+      "sha256": "da454f116779c0a47aeb110aa2042f68a44a2a5a822940fa01e043116b8aca86",
+      "bytes": 9306
+    },
+    {
+      "path": "OUTPUT_ENERGY_EXECUTION.json",
+      "sha256": "e42e6295b6447a6386409c852941c3b760aa481f318ee34061f414cad3aa0fb3",
+      "bytes": 601
+    },
+    {
+      "path": "OUTPUT_ENERGY_RESULTS.json",
+      "sha256": "da454f116779c0a47aeb110aa2042f68a44a2a5a822940fa01e043116b8aca86",
+      "bytes": 9306
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "3f9bae4b8de40697dce8ddd0d12382fd7b505156922ed8f713cc26de5e3a9a27",
+      "bytes": 37575
+    },
+    {
+      "path": "PRIMITIVE_DYNAMICS_RESULTS.json",
+      "sha256": "99fc9bc4fe2ba955786ef7c4568530115e2c27106e32643cc6500e621c429da2",
+      "bytes": 243226
+    },
+    {
+      "path": "SINGLE_HOP.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "SINGLE_HOP.stdout.log",
+      "sha256": "effde2b7c1d9f171410cfeb977c3a9b56518b47efe373bf33f672872a216477c",
+      "bytes": 5726
+    },
+    {
+      "path": "SINGLE_HOP_ENERGY_RESULTS.json",
+      "sha256": "effde2b7c1d9f171410cfeb977c3a9b56518b47efe373bf33f672872a216477c",
+      "bytes": 5726
+    },
+    {
+      "path": "SINGLE_HOP_EXECUTION.json",
+      "sha256": "fb1a87f86e30d68f20d6fb2e5c63aecad9694662f8a4d8299f7e2a25e712d96f",
+      "bytes": 608
+    },
+    {
+      "path": "SOURCE_PIN.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "SOURCE_PIN.stdout.log",
+      "sha256": "ee19e1ca0614a3709a1c16a76604ca569fa59d2ae6c8e9ae1c2b88d273b7b609",
+      "bytes": 5224
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "ee19e1ca0614a3709a1c16a76604ca569fa59d2ae6c8e9ae1c2b88d273b7b609",
+      "bytes": 5224
+    },
+    {
+      "path": "SOURCE_PIN_EXECUTION.json",
+      "sha256": "767beb77b7d75a57b7a185bc1859b45a2b34f7a5e04b0846d3aa3a7c6f2d048e",
+      "bytes": 593
+    },
+    {
+      "path": "TOPOLOGY.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "TOPOLOGY.stdout.log",
+      "sha256": "12b5f76860d94008911e3d6bbe252f737373f6c0e20b4227b459420273dca42e",
+      "bytes": 390242
+    },
+    {
+      "path": "TOPOLOGY_EXECUTION.json",
+      "sha256": "295a7a5276f015809d5d4958605d476cb7673388986009e9d5ae999c429d0501",
+      "bytes": 607
+    },
+    {
+      "path": "TOPOLOGY_GRAM_RESULTS.json",
+      "sha256": "12b5f76860d94008911e3d6bbe252f737373f6c0e20b4227b459420273dca42e",
+      "bytes": 390242
+    },
+    {
+      "path": "check_evidence.py",
+      "sha256": "85ceedcbd687ea0d5bd26fb4ad09f1918f92ed7d7e10bc24076c8012332ef1dd",
+      "bytes": 9183
+    },
+    {
+      "path": "output_energy_control.py",
+      "sha256": "2953f3d05511572527fe345ea79f501eabe773b8950268d36c23c74b1f030794",
+      "bytes": 3391
+    },
+    {
+      "path": "pin_sources.py",
+      "sha256": "89943e595a3457000414b3fff664a741ffba1751dae2cd1b813c7b2305789568",
+      "bytes": 3595
+    },
+    {
+      "path": "primitive_dynamics_control.py",
+      "sha256": "f24031d1dc29abecae15dc47adf5a7eb1cadd83957f241fbc7a9bcdd321d8e2c",
+      "bytes": 9105
+    },
+    {
+      "path": "single_hop_energy_control.py",
+      "sha256": "97a5ac743c1ac534ec673fb3cdac212010f278a375d01ee0f33afdcd9137e41e",
+      "bytes": 3301
+    },
+    {
+      "path": "sources/external/prepared-matter-probe-personal/PREPARED_MATTER_INTERFERENCE_PROBE_ROOT.md",
+      "sha256": "ab3c1883b032e571efdeb52330d7665c262f70e3f303b3236f32f89accbcd7bf",
+      "bytes": 12776
+    },
+    {
+      "path": "sources/external/unrestricted-record-count-independent/PRE.md",
+      "sha256": "1fd58a66171c23568841d2527a2091f3992e584cbad970bdb8979a38e4c68e7e",
+      "bytes": 38484
+    },
+    {
+      "path": "sources/external/unrestricted-record-count-independent/PRE_SEAL.json",
+      "sha256": "b6e0c33fe1286a876f1230759cb62769d57475d76c2ea1a6aae633064e2ba9d0",
+      "bytes": 6284
+    },
+    {
+      "path": "sources/main/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "path": "sources/main/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/main/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "sources/main/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "sources/main/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "sources/main/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "path": "sources/main/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    },
+    {
+      "path": "sources/main/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    {
+      "path": "topology_and_gram_control.py",
+      "sha256": "3ec0cdf6beb3e46f1129c272c0eef558a2df202e10035959daa04add36e204e9",
+      "bytes": 3796
+    }
+  ]
+}

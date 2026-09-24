@@ -1,0 +1,282 @@
+{
+  "scope": "Independent exact initial M=sum F_a^* F_a polynomial, with no H4 rerun.\n\nThis small extra check supports the explicitly separate bare-P microscopic\nordinary-energy identity. It does not compute a microscopic post-jump state.\n",
+  "rows": [
+    {
+      "side": 6,
+      "edges": 648,
+      "outward_paths_from_two_branches": 1248,
+      "polynomial": [
+        {
+          "coefficient": {
+            "numerator": 624,
+            "denominator": 1
+          },
+          "shifts": []
+        },
+        {
+          "coefficient": {
+            "numerator": -1,
+            "denominator": 2
+          },
+          "shifts": [
+            {
+              "A": [
+                0,
+                0,
+                0
+              ],
+              "B": [
+                1,
+                0,
+                0
+              ],
+              "power": -1
+            },
+            {
+              "A": [
+                0,
+                0,
+                0
+              ],
+              "B": [
+                0,
+                1,
+                0
+              ],
+              "power": 1
+            },
+            {
+              "A": [
+                1,
+                1,
+                0
+              ],
+              "B": [
+                0,
+                1,
+                0
+              ],
+              "power": -1
+            },
+            {
+              "A": [
+                1,
+                1,
+                0
+              ],
+              "B": [
+                1,
+                0,
+                0
+              ],
+              "power": 1
+            }
+          ]
+        },
+        {
+          "coefficient": {
+            "numerator": -1,
+            "denominator": 2
+          },
+          "shifts": [
+            {
+              "A": [
+                0,
+                0,
+                0
+              ],
+              "B": [
+                1,
+                0,
+                0
+              ],
+              "power": 1
+            },
+            {
+              "A": [
+                0,
+                0,
+                0
+              ],
+              "B": [
+                0,
+                1,
+                0
+              ],
+              "power": -1
+            },
+            {
+              "A": [
+                1,
+                1,
+                0
+              ],
+              "B": [
+                0,
+                1,
+                0
+              ],
+              "power": 1
+            },
+            {
+              "A": [
+                1,
+                1,
+                0
+              ],
+              "B": [
+                1,
+                0,
+                0
+              ],
+              "power": -1
+            }
+          ]
+        }
+      ],
+      "flat_mean_M": 623,
+      "selected_output_mean_M": 612,
+      "flat_output_minus_input_M": -11
+    },
+    {
+      "side": 8,
+      "edges": 1536,
+      "outward_paths_from_two_branches": 3024,
+      "polynomial": [
+        {
+          "coefficient": {
+            "numerator": 1512,
+            "denominator": 1
+          },
+          "shifts": []
+        },
+        {
+          "coefficient": {
+            "numerator": -1,
+            "denominator": 2
+          },
+          "shifts": [
+            {
+              "A": [
+                0,
+                0,
+                0
+              ],
+              "B": [
+                1,
+                0,
+                0
+              ],
+              "power": -1
+            },
+            {
+              "A": [
+                0,
+                0,
+                0
+              ],
+              "B": [
+                0,
+                1,
+                0
+              ],
+              "power": 1
+            },
+            {
+              "A": [
+                1,
+                1,
+                0
+              ],
+              "B": [
+                0,
+                1,
+                0
+              ],
+              "power": -1
+            },
+            {
+              "A": [
+                1,
+                1,
+                0
+              ],
+              "B": [
+                1,
+                0,
+                0
+              ],
+              "power": 1
+            }
+          ]
+        },
+        {
+          "coefficient": {
+            "numerator": -1,
+            "denominator": 2
+          },
+          "shifts": [
+            {
+              "A": [
+                0,
+                0,
+                0
+              ],
+              "B": [
+                1,
+                0,
+                0
+              ],
+              "power": 1
+            },
+            {
+              "A": [
+                0,
+                0,
+                0
+              ],
+              "B": [
+                0,
+                1,
+                0
+              ],
+              "power": -1
+            },
+            {
+              "A": [
+                1,
+                1,
+                0
+              ],
+              "B": [
+                0,
+                1,
+                0
+              ],
+              "power": 1
+            },
+            {
+              "A": [
+                1,
+                1,
+                0
+              ],
+              "B": [
+                1,
+                0,
+                0
+              ],
+              "power": -1
+            }
+          ]
+        }
+      ],
+      "flat_mean_M": 1511,
+      "selected_output_mean_M": 1500,
+      "flat_output_minus_input_M": -11
+    }
+  ],
+  "source_sha256": "97a5ac743c1ac534ec673fb3cdac212010f278a375d01ee0f33afdcd9137e41e",
+  "primitive_source_sha256": "f24031d1dc29abecae15dc47adf5a7eb1cadd83957f241fbc7a9bcdd321d8e2c",
+  "elapsed_seconds": 0.033255333080887794
+}

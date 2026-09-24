@@ -1,0 +1,468 @@
+{
+  "scope": "Full-H4 first/second moments for each normalized selected-output matter word.\n\nThe weak-field normalization supplies a different rescaled field packet,\nnot a division of a flat zero vector. Only this independent primitive module\nis reused. Values below are flat-fiber coefficients of rotor h, not heat.\n",
+  "rows": [
+    {
+      "side": 6,
+      "sigma": -1,
+      "matter_records": 114,
+      "matter_deviations": [
+        {
+          "site": [
+            0,
+            0,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            0,
+            0,
+            1
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            0,
+            5
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            1,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            5,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            1,
+            0,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            1,
+            1,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            2,
+            2,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            5,
+            0,
+            0
+          ],
+          "charge": 1
+        }
+      ],
+      "H4_four_hop_paths": 46773,
+      "H4_Laurent_terms": 6328,
+      "all_H4_terms_Gauss_checked": 6328,
+      "flat_moments": {
+        "harmonic_averaged": {
+          "mean_H4": {
+            "numerator": -62190,
+            "denominator": 1
+          },
+          "second_H4": {
+            "numerator": 3874573900,
+            "denominator": 1
+          },
+          "variance_H4": {
+            "numerator": 6977800,
+            "denominator": 1
+          },
+          "groups": 2100
+        },
+        "all_angles_zero": {
+          "mean_H4": {
+            "numerator": -62190,
+            "denominator": 1
+          },
+          "second_H4": {
+            "numerator": 3874592764,
+            "denominator": 1
+          },
+          "variance_H4": {
+            "numerator": 6996664,
+            "denominator": 1
+          },
+          "groups": 2034
+        }
+      },
+      "sum_positive_Gram_norms": {
+        "numerator": 31095,
+        "denominator": 1
+      },
+      "M_rotor_mean_exact_for_any_field_in_this_matter_word": 612
+    },
+    {
+      "side": 6,
+      "sigma": 1,
+      "matter_records": 114,
+      "matter_deviations": [
+        {
+          "site": [
+            0,
+            0,
+            1
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            0,
+            5
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            1,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            5,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            1,
+            0,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            1,
+            1,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            2,
+            2,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            5,
+            0,
+            0
+          ],
+          "charge": -1
+        }
+      ],
+      "H4_four_hop_paths": 46773,
+      "H4_Laurent_terms": 6328,
+      "all_H4_terms_Gauss_checked": 6328,
+      "flat_moments": {
+        "harmonic_averaged": {
+          "mean_H4": {
+            "numerator": -62190,
+            "denominator": 1
+          },
+          "second_H4": {
+            "numerator": 3873977172,
+            "denominator": 1
+          },
+          "variance_H4": {
+            "numerator": 6381072,
+            "denominator": 1
+          },
+          "groups": 2353
+        },
+        "all_angles_zero": {
+          "mean_H4": {
+            "numerator": -62190,
+            "denominator": 1
+          },
+          "second_H4": {
+            "numerator": 3873992308,
+            "denominator": 1
+          },
+          "variance_H4": {
+            "numerator": 6396208,
+            "denominator": 1
+          },
+          "groups": 2293
+        }
+      },
+      "sum_positive_Gram_norms": {
+        "numerator": 31095,
+        "denominator": 1
+      },
+      "M_rotor_mean_exact_for_any_field_in_this_matter_word": 612
+    },
+    {
+      "side": 8,
+      "sigma": -1,
+      "matter_records": 262,
+      "matter_deviations": [
+        {
+          "site": [
+            0,
+            0,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            0,
+            0,
+            1
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            0,
+            7
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            1,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            7,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            1,
+            0,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            1,
+            1,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            2,
+            2,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            7,
+            0,
+            0
+          ],
+          "charge": 1
+        }
+      ],
+      "H4_four_hop_paths": 94242,
+      "H4_Laurent_terms": 8038,
+      "all_H4_terms_Gauss_checked": 8038,
+      "flat_moments": {
+        "harmonic_averaged": {
+          "mean_H4": {
+            "numerator": -157200,
+            "denominator": 1
+          },
+          "second_H4": {
+            "numerator": 24718856504,
+            "denominator": 1
+          },
+          "variance_H4": {
+            "numerator": 7016504,
+            "denominator": 1
+          },
+          "groups": 2044
+        },
+        "all_angles_zero": {
+          "mean_H4": {
+            "numerator": -157200,
+            "denominator": 1
+          },
+          "second_H4": {
+            "numerator": 24718856584,
+            "denominator": 1
+          },
+          "variance_H4": {
+            "numerator": 7016584,
+            "denominator": 1
+          },
+          "groups": 2034
+        }
+      },
+      "sum_positive_Gram_norms": {
+        "numerator": 78600,
+        "denominator": 1
+      },
+      "M_rotor_mean_exact_for_any_field_in_this_matter_word": 1500
+    },
+    {
+      "side": 8,
+      "sigma": 1,
+      "matter_records": 262,
+      "matter_deviations": [
+        {
+          "site": [
+            0,
+            0,
+            1
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            0,
+            7
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            1,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            0,
+            7,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            1,
+            0,
+            0
+          ],
+          "charge": 1
+        },
+        {
+          "site": [
+            1,
+            1,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            2,
+            2,
+            0
+          ],
+          "charge": -1
+        },
+        {
+          "site": [
+            7,
+            0,
+            0
+          ],
+          "charge": -1
+        }
+      ],
+      "H4_four_hop_paths": 94242,
+      "H4_Laurent_terms": 8038,
+      "all_H4_terms_Gauss_checked": 8038,
+      "flat_moments": {
+        "harmonic_averaged": {
+          "mean_H4": {
+            "numerator": -157200,
+            "denominator": 1
+          },
+          "second_H4": {
+            "numerator": 24718256696,
+            "denominator": 1
+          },
+          "variance_H4": {
+            "numerator": 6416696,
+            "denominator": 1
+          },
+          "groups": 2294
+        },
+        "all_angles_zero": {
+          "mean_H4": {
+            "numerator": -157200,
+            "denominator": 1
+          },
+          "second_H4": {
+            "numerator": 24718256760,
+            "denominator": 1
+          },
+          "variance_H4": {
+            "numerator": 6416760,
+            "denominator": 1
+          },
+          "groups": 2286
+        }
+      },
+      "sum_positive_Gram_norms": {
+        "numerator": 78600,
+        "denominator": 1
+      },
+      "M_rotor_mean_exact_for_any_field_in_this_matter_word": 1500
+    }
+  ],
+  "source_sha256": "2953f3d05511572527fe345ea79f501eabe773b8950268d36c23c74b1f030794",
+  "primitive_source_sha256": "f24031d1dc29abecae15dc47adf5a7eb1cadd83957f241fbc7a9bcdd321d8e2c",
+  "elapsed_seconds": 5.874375666026026
+}

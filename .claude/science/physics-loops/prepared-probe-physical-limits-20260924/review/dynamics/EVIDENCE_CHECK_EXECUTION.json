@@ -1,0 +1,14 @@
+{
+  "started_unix": 1790287272.535715,
+  "wall_seconds": 0.059730084147304296,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/check_evidence.py"
+  ],
+  "code_sha256": "85ceedcbd687ea0d5bd26fb4ad09f1918f92ed7d7e10bc24076c8012332ef1dd",
+  "stdout_sha256": "9eaa4851783d4215f1d504d911ccea2142e5aaf078aa2ddcee4bb890686d894f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 7315,
+  "stderr_bytes": 0
+}

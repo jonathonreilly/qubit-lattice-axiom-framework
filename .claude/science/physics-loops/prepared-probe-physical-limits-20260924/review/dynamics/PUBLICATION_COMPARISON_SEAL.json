@@ -1,0 +1,262 @@
+{
+  "sealed_utc": "2026-09-24T22:35:09.938564+00:00",
+  "phase": "Final narrow public A/B correspondence after front precision edit",
+  "scope": "Sections A/B and relevant front/D only; Section C and unit arithmetic outside scientific review. Exact AST adaptation, payload/certificate equality, declared-input fingerprint and final source/result/cache/execution binding. Initial public run retained as history. No primary rerun or new frontier derivation.",
+  "PRE_seal_sha256": "c6686cc03d195af4487e3df90cd64e152869c608d5170cd70c5dd81f544b9fdc",
+  "POST_seal_sha256": "60736b57d4e82d4803bae3f1b260fd00f330c277010eda990089034f81762217",
+  "prior_frozen_members_unchanged": [
+    42,
+    25
+  ],
+  "public_source_snapshot_generations": [
+    15,
+    16
+  ],
+  "own_binding_check_executions": 2,
+  "author_or_primary_executions": 0,
+  "final_note_sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+  "final_input_fingerprint_sha256": "dc62c22b7a87a8ff5fdca3f56fbf160676814b07c96976e7194e87f2bbce7f6b",
+  "frozen_member_count": 48,
+  "members": [
+    {
+      "path": "FINAL_PUBLICATION_A_CORRESPONDENCE.diff",
+      "sha256": "3c517be49c11a116098cdb19ecc4cdcec9e0a8a26b838b1e23ec46f1c87de1e3",
+      "bytes": 2013
+    },
+    {
+      "path": "FINAL_PUBLICATION_B_CORRESPONDENCE.diff",
+      "sha256": "e7f846850c55d31a718f4d74d773806e5a79b0dc86181aa6b07893fe4ec7f8bb",
+      "bytes": 1775
+    },
+    {
+      "path": "FINAL_PUBLICATION_CHECK.json",
+      "sha256": "7a59680e329a31ab4625608dfc20aefc1fdfaf3733b18e37f72e91d6bcbfc39c",
+      "bytes": 3317
+    },
+    {
+      "path": "FINAL_PUBLICATION_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "FINAL_PUBLICATION_CHECK.stdout.log",
+      "sha256": "7a59680e329a31ab4625608dfc20aefc1fdfaf3733b18e37f72e91d6bcbfc39c",
+      "bytes": 3317
+    },
+    {
+      "path": "FINAL_PUBLICATION_CHECK_EXECUTION.json",
+      "sha256": "43811f8b52d1a476e9e96d63715375b5021961ba18a465abb012056ecdc0837b",
+      "bytes": 614
+    },
+    {
+      "path": "FINAL_PUBLICATION_SOURCE_PINS.json",
+      "sha256": "d66a3ac059a80df8c5caf84f8755d70fcfab8fd06e5af45a8a8b2697a9d53651",
+      "bytes": 7512
+    },
+    {
+      "path": "PUBLICATION_A_CORRESPONDENCE.diff",
+      "sha256": "3c517be49c11a116098cdb19ecc4cdcec9e0a8a26b838b1e23ec46f1c87de1e3",
+      "bytes": 2013
+    },
+    {
+      "path": "PUBLICATION_B_CORRESPONDENCE.diff",
+      "sha256": "e7f846850c55d31a718f4d74d773806e5a79b0dc86181aa6b07893fe4ec7f8bb",
+      "bytes": 1775
+    },
+    {
+      "path": "PUBLICATION_CHECK.json",
+      "sha256": "f5fc47909db56ff4c9fccaeac4f644f8d40a52425b05f40a4da0cfabb001544b",
+      "bytes": 3187
+    },
+    {
+      "path": "PUBLICATION_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_CHECK.stdout.log",
+      "sha256": "f5fc47909db56ff4c9fccaeac4f644f8d40a52425b05f40a4da0cfabb001544b",
+      "bytes": 3187
+    },
+    {
+      "path": "PUBLICATION_CHECK_EXECUTION.json",
+      "sha256": "77a2758242f406820648e3140d8a8cb182a429549abd7afc87c00b491f1d984d",
+      "bytes": 608
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "6bf791b000ebd53a4869bc7ce65096b4fe47a7fbaffe78d0d7062b9ab50f9e14",
+      "bytes": 9840
+    },
+    {
+      "path": "PUBLICATION_SOURCE_PINS.json",
+      "sha256": "a7d21036e5b00a12383249f7dfbddff2ccfd7b394213633ee94ca34a1cfc905a",
+      "bytes": 7065
+    },
+    {
+      "path": "publication_binding_check.py",
+      "sha256": "44d31ed13c7c4191bbd0407a786c17b41ce607fba6c4fa20c628902de7e14ea9",
+      "bytes": 10038
+    },
+    {
+      "path": "publication_final_binding_check.py",
+      "sha256": "acb53289791868249e842c6b842e7470b1abb59780eddf3370fd03bc87faf52e",
+      "bytes": 11352
+    },
+    {
+      "path": "publication_final_sources/external/PROBE_PHYSICAL_LIMITS_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "948111c494396643e5c79827ab71b0f59978542a0ae985f8bf490ced267e9d92",
+      "bytes": 1237
+    },
+    {
+      "path": "publication_final_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "6bc0a19c2b4bd8787048072b81a9a5a485523c94491617c6a1bf3e3fa6f08d65",
+      "bytes": 4205
+    },
+    {
+      "path": "publication_final_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "9c2fa71f055ceecaa9bb3a3ef6929c9be3772f8bd7a10a2e83480c8641217c69",
+      "bytes": 2144
+    },
+    {
+      "path": "publication_final_sources/repo/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "publication_final_sources/repo/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "publication_final_sources/repo/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966
+    },
+    {
+      "path": "publication_final_sources/repo/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "path": "publication_final_sources/repo/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "path": "publication_final_sources/repo/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+      "bytes": 30670
+    },
+    {
+      "path": "publication_final_sources/repo/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "publication_final_sources/repo/logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "sha256": "a13f49a4bc999f280335dd0351f44a483a80d632d1d94db734d5d0870b6e9cb6",
+      "bytes": 3576
+    },
+    {
+      "path": "publication_final_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_16.json",
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318",
+      "bytes": 961608
+    },
+    {
+      "path": "publication_final_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_6.json",
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795",
+      "bytes": 925914
+    },
+    {
+      "path": "publication_final_sources/repo/outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "sha256": "790a2a72d86f4ecf72395c400ee93ba981e854a1a19a7d25d1adc15d79692e7e",
+      "bytes": 3173
+    },
+    {
+      "path": "publication_final_sources/repo/scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py",
+      "sha256": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676",
+      "bytes": 10702
+    },
+    {
+      "path": "publication_final_sources/repo/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "publication_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "54b05c8d2e36496944f42a149f7c55dd5f868f299c8acb692c2fc5bdb9be174a",
+      "bytes": 4205
+    },
+    {
+      "path": "publication_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "d80880656dbe908a900cc3e43d3b2f48b156993729ef1dc7a33d00bcfa65c04b",
+      "bytes": 2144
+    },
+    {
+      "path": "publication_sources/repo/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "publication_sources/repo/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "publication_sources/repo/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966
+    },
+    {
+      "path": "publication_sources/repo/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "path": "publication_sources/repo/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "path": "publication_sources/repo/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7b7814246e22731aac2538422d95035b60f6f1c23cf6035ade93c43dc137cce8",
+      "bytes": 30680
+    },
+    {
+      "path": "publication_sources/repo/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "publication_sources/repo/logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "sha256": "5a31469c3bc0659f530d6527e3aae7128c6b6df514f354701090c2fb45c80aa4",
+      "bytes": 3576
+    },
+    {
+      "path": "publication_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_16.json",
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318",
+      "bytes": 961608
+    },
+    {
+      "path": "publication_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_6.json",
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795",
+      "bytes": 925914
+    },
+    {
+      "path": "publication_sources/repo/outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "sha256": "9e43d561fb8a01e806b8e64e11028da0de4af33e085c29ac5304402a164ee78d",
+      "bytes": 3173
+    },
+    {
+      "path": "publication_sources/repo/scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py",
+      "sha256": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676",
+      "bytes": 10702
+    },
+    {
+      "path": "publication_sources/repo/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    }
+  ]
+}

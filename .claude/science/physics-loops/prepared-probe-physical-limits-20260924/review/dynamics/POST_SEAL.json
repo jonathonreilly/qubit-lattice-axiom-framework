@@ -1,0 +1,141 @@
+{
+  "sealed_utc": "2026-09-24T22:25:46.858491+00:00",
+  "phase": "Released prepared-probe dynamics/output POST, before public candidate comparison",
+  "scope": "Side16 low-moment harmonic justification; complete root proof/source/result review; direct arithmetic and selected-mark check of both prepared-action certificates; full rotor energy, critical count-window and restricted-beta optimization. Output action certificate absent, with precise verification limits. Two accepted public wording corrections and control-assertion qualification retained.",
+  "PRE_seal_sha256": "c6686cc03d195af4487e3df90cd64e152869c608d5170cd70c5dd81f544b9fdc",
+  "PRE_members_verified_unchanged": 42,
+  "released_source_copies": 18,
+  "author_sealed_members_verified": 15,
+  "author_execution_count_during_POST": 0,
+  "new_H4_pair_enumeration_count": 0,
+  "independent_certificate_and_binding_execution_count": 1,
+  "publication_read_during_this_POST": false,
+  "frozen_member_count": 25,
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "0c78eb924bf08264f85c9cda41fc8b90dc0a30f4bc9f52a783dc73549098bfb8",
+      "bytes": 24542
+    },
+    {
+      "path": "POST_CHECK.json",
+      "sha256": "814b0f623ca4b486cb3662e81e7f53d29c8695efe7cf6c81c5884964caf11fd2",
+      "bytes": 4533
+    },
+    {
+      "path": "POST_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "POST_CHECK.stdout.log",
+      "sha256": "814b0f623ca4b486cb3662e81e7f53d29c8695efe7cf6c81c5884964caf11fd2",
+      "bytes": 4533
+    },
+    {
+      "path": "POST_CHECK_EXECUTION.json",
+      "sha256": "eb76f6549feadd924fee9a055f3b2d3dd27c17551d6cd96cbd1f5c1458419777",
+      "bytes": 616
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "f7fed053b3f567fdc8fff2dc3a8a25bce07b05bf1b95e7d18b38eb068d6026a9",
+      "bytes": 7004
+    },
+    {
+      "path": "post_binding_and_certificate_check.py",
+      "sha256": "3fa9ca6f53fd976206f90d40804dc97a0a1b2e52f1fc5269fc4d4a3e929c1f5a",
+      "bytes": 12592
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/AUTHOR_SEAL.json",
+      "sha256": "70c96cb1ce304408760dbf698a119a8468d9ca466438b4ce1aa8fd5f5ce42af4",
+      "bytes": 1432
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/EXECUTION.json",
+      "sha256": "94e7d99cd3b114a8c91cff2158250517e89f15a9d6bc57c65d7098ce5efc34cf",
+      "bytes": 247
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/FLAT_ACTION_SIDE_16.json",
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318",
+      "bytes": 961608
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/FLAT_ACTION_SIDE_6.json",
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795",
+      "bytes": 925914
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/FLAT_MATTER.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/FLAT_MATTER_RESULTS.json",
+      "sha256": "aaa4ee6e9f84d7e7aa065bb68747165c3fe7257d1f4366028d7770d8f9a5aeca",
+      "bytes": 1693
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/PREPARED_PROBE_ENERGY_AND_FINITE_SCALE_WINDOW_ROOT.md",
+      "sha256": "867d9b04e2023cdf3280382840e1f98fe1cd9061bf529ca94a84390c888bedc1",
+      "bytes": 10545
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/ROOT_REVIEW.md",
+      "sha256": "f010a6dd57e764adb06a560a3f124732b3157b2d02f750af670dd8c64fd8217a",
+      "bytes": 1305
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/SOURCE_PINS.json",
+      "sha256": "cd24ee55a929037415ca1dd1b645391154bf0743f85661fb0d1d5c13b9b7d8ee",
+      "bytes": 1396
+    },
+    {
+      "path": "post_sources/prepared-probe-dynamics-personal/flat_matter_controls.py",
+      "sha256": "ce3c7aa5e31bfb78231b4cd4ae746a97878fa39da6ae08fc24ab63d14db3c7d9",
+      "bytes": 5061
+    },
+    {
+      "path": "post_sources/prepared-probe-output-energy-personal/AUTHOR_SEAL.json",
+      "sha256": "51b08bce5a0bbfefff5b6125164cf9a00510deda5fe0da11acb06b25623941bb",
+      "bytes": 1010
+    },
+    {
+      "path": "post_sources/prepared-probe-output-energy-personal/EXECUTION.json",
+      "sha256": "6ac7d2289a12b3957afbfcd026eec5f0a4746a669a8948c2d324b57c639292e6",
+      "bytes": 341
+    },
+    {
+      "path": "post_sources/prepared-probe-output-energy-personal/OUTPUT_ENERGY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/prepared-probe-output-energy-personal/OUTPUT_ENERGY_RESULTS.json",
+      "sha256": "ce61deef4a687cc851fd19b12a35cfbdc32a34f70b35fe274a45ce882957e659",
+      "bytes": 1143
+    },
+    {
+      "path": "post_sources/prepared-probe-output-energy-personal/ROOT_EDITORIAL_QUALIFICATION.md",
+      "sha256": "9463799001beacfe35f5dacfc6260e360397bfce4ab1c11b36df130196468cda",
+      "bytes": 563
+    },
+    {
+      "path": "post_sources/prepared-probe-output-energy-personal/SELECTED_PROBE_OUTPUT_ENERGY_ROOT.md",
+      "sha256": "57d3e1c06396db01957536224d7c03d0b3a04908a34ae01bb56a37ea5250ff35",
+      "bytes": 6955
+    },
+    {
+      "path": "post_sources/prepared-probe-output-energy-personal/SOURCE_PINS.json",
+      "sha256": "9bff76ca71e18ba6787cd01311af0702ffbd92362834f810fdcf3af018b8e8fd",
+      "bytes": 1044
+    },
+    {
+      "path": "post_sources/prepared-probe-output-energy-personal/output_energy_controls.py",
+      "sha256": "8d70c1821496c04cf98b066e0186fc6aa544c5f3f06bc97b312dabcc1e9a0eee",
+      "bytes": 4101
+    }
+  ]
+}

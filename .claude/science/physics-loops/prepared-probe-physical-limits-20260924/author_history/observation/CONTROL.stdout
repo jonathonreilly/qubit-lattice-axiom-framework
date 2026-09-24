@@ -1,0 +1,21 @@
+{
+  "scope": "SI arithmetic only; inequalities proved analytically in the root note.",
+  "rows": [
+    {
+      "benchmark": "MAGIC2017",
+      "E_QG2_lower_GeV": "5.9e10",
+      "orientation_independent_necessary_a_upper_m": "2.006715055518330161602316015458180715870569866674404073860346786241745e-26",
+      "necessary_tau_upper_seconds": "6.693680918144812574312046287229082713850559464956266757919396311970414e-35",
+      "status": "Conditional published timing conversion; no selected scale or new fit."
+    },
+    {
+      "benchmark": "LHAASO2024_v2_ML_MINOS",
+      "E_QG2_lower_GeV": "6.9e11",
+      "orientation_independent_necessary_a_upper_m": "1.71588678660263013818169050597148785849802350918536000518493420852555e-27",
+      "necessary_tau_upper_seconds": "5.723582234355709302672619289079940291553376933803184619090498295742818e-36",
+      "status": "Conditional published timing conversion; no selected scale or new fit."
+    }
+  ],
+  "source_sha256": "cad001b23a6fd9c896ee978a34e7320f6cb0e3ae98d8f46f6ad61652a1af5fb7",
+  "elapsed_seconds": 0.0011515410151332617
+}

@@ -1,0 +1,240 @@
+{
+  "scope": "Complete saved-payload/binding inspection and exact arithmetic checks; no repeated H4 computation and no author controls read or executed.",
+  "bindings": [
+    {
+      "source": "primitive_dynamics_control.py",
+      "result": "PRIMITIVE_DYNAMICS_RESULTS.json",
+      "source_sha256": "f24031d1dc29abecae15dc47adf5a7eb1cadd83957f241fbc7a9bcdd321d8e2c",
+      "result_sha256": "99fc9bc4fe2ba955786ef7c4568530115e2c27106e32643cc6500e621c429da2",
+      "wall_seconds": 1.6946813750546426,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "source": "topology_and_gram_control.py",
+      "result": "TOPOLOGY_GRAM_RESULTS.json",
+      "source_sha256": "3ec0cdf6beb3e46f1129c272c0eef558a2df202e10035959daa04add36e204e9",
+      "result_sha256": "12b5f76860d94008911e3d6bbe252f737373f6c0e20b4227b459420273dca42e",
+      "wall_seconds": 8.516209915978834,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "source": "output_energy_control.py",
+      "result": "OUTPUT_ENERGY_RESULTS.json",
+      "source_sha256": "2953f3d05511572527fe345ea79f501eabe773b8950268d36c23c74b1f030794",
+      "result_sha256": "da454f116779c0a47aeb110aa2042f68a44a2a5a822940fa01e043116b8aca86",
+      "wall_seconds": 5.925221249926835,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "source": "single_hop_energy_control.py",
+      "result": "SINGLE_HOP_ENERGY_RESULTS.json",
+      "source_sha256": "97a5ac743c1ac534ec673fb3cdac212010f278a375d01ee0f33afdcd9137e41e",
+      "result_sha256": "effde2b7c1d9f171410cfeb977c3a9b56518b47efe373bf33f672872a216477c",
+      "wall_seconds": 0.06178129091858864,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "source": "pin_sources.py",
+      "result": "SOURCE_PINS.json",
+      "source_sha256": "89943e595a3457000414b3fff664a741ffba1751dae2cd1b813c7b2305789568",
+      "result_sha256": "ee19e1ca0614a3709a1c16a76604ca569fa59d2ae6c8e9ae1c2b88d273b7b609",
+      "wall_seconds": 0.1922915840987116,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    }
+  ],
+  "source_records_checked": 11,
+  "prepared_rows": [
+    {
+      "side": 6,
+      "edges": 648,
+      "H4_Laurent_terms": 9760,
+      "H4_four_hop_paths": 89673,
+      "correct_moments": {
+        "mean_H4": -64199,
+        "second_H4": 4127007446,
+        "variance_H4": 5495845
+      },
+      "all_angles_zero_moments": {
+        "mean_H4": -64199,
+        "second_H4": 4127014498,
+        "variance_H4": 5502897
+      },
+      "selected_birth_rows": [
+        {
+          "sigma": -1,
+          "gamma": 7956600,
+          "gamma_all_zero": 8133884,
+          "BH4_Laurent_terms": 16338,
+          "witness": {
+            "terms_checked": 44,
+            "coefficient_sum": -1100,
+            "witness_norm_contribution": {
+              "numerator": 1210000,
+              "denominator": 2
+            },
+            "all_shifts_adjacent_A_to_B": true,
+            "all_term_Gauss_and_harmonic_signatures_match": true
+          }
+        },
+        {
+          "sigma": 1,
+          "gamma": 7956600,
+          "gamma_all_zero": 8133884,
+          "BH4_Laurent_terms": 16338,
+          "witness": {
+            "terms_checked": 44,
+            "coefficient_sum": -1100,
+            "witness_norm_contribution": {
+              "numerator": 1210000,
+              "denominator": 2
+            },
+            "all_shifts_adjacent_A_to_B": true,
+            "all_term_Gauss_and_harmonic_signatures_match": true
+          }
+        }
+      ]
+    },
+    {
+      "side": 8,
+      "edges": 1536,
+      "H4_Laurent_terms": 13246,
+      "H4_four_hop_paths": 184650,
+      "correct_moments": {
+        "mean_H4": -159212,
+        "second_H4": 25353977392,
+        "variance_H4": 5516448
+      },
+      "all_angles_zero_moments": {
+        "mean_H4": -159212,
+        "second_H4": 25353977404,
+        "variance_H4": 5516460
+      },
+      "selected_birth_rows": [
+        {
+          "sigma": -1,
+          "gamma": 7982020,
+          "gamma_all_zero": 7984376,
+          "BH4_Laurent_terms": 19689,
+          "witness": {
+            "terms_checked": 44,
+            "coefficient_sum": -1100,
+            "witness_norm_contribution": {
+              "numerator": 1210000,
+              "denominator": 2
+            },
+            "all_shifts_adjacent_A_to_B": true,
+            "all_term_Gauss_and_harmonic_signatures_match": true
+          }
+        },
+        {
+          "sigma": 1,
+          "gamma": 7982020,
+          "gamma_all_zero": 7984376,
+          "BH4_Laurent_terms": 19689,
+          "witness": {
+            "terms_checked": 44,
+            "coefficient_sum": -1100,
+            "witness_norm_contribution": {
+              "numerator": 1210000,
+              "denominator": 2
+            },
+            "all_shifts_adjacent_A_to_B": true,
+            "all_term_Gauss_and_harmonic_signatures_match": true
+          }
+        }
+      ]
+    }
+  ],
+  "normalized_output_rows": [
+    {
+      "side": 6,
+      "sigma": -1,
+      "correct_moments": {
+        "mean_H4": -62190,
+        "second_H4": 3874573900,
+        "variance_H4": 6977800
+      },
+      "all_angles_zero_moments": {
+        "mean_H4": -62190,
+        "second_H4": 3874592764,
+        "variance_H4": 6996664
+      },
+      "output_minus_input_mean_H4": 2009,
+      "exact_mean_M": 612
+    },
+    {
+      "side": 6,
+      "sigma": 1,
+      "correct_moments": {
+        "mean_H4": -62190,
+        "second_H4": 3873977172,
+        "variance_H4": 6381072
+      },
+      "all_angles_zero_moments": {
+        "mean_H4": -62190,
+        "second_H4": 3873992308,
+        "variance_H4": 6396208
+      },
+      "output_minus_input_mean_H4": 2009,
+      "exact_mean_M": 612
+    },
+    {
+      "side": 8,
+      "sigma": -1,
+      "correct_moments": {
+        "mean_H4": -157200,
+        "second_H4": 24718856504,
+        "variance_H4": 7016504
+      },
+      "all_angles_zero_moments": {
+        "mean_H4": -157200,
+        "second_H4": 24718856584,
+        "variance_H4": 7016584
+      },
+      "output_minus_input_mean_H4": 2012,
+      "exact_mean_M": 1500
+    },
+    {
+      "side": 8,
+      "sigma": 1,
+      "correct_moments": {
+        "mean_H4": -157200,
+        "second_H4": 24718256696,
+        "variance_H4": 6416696
+      },
+      "all_angles_zero_moments": {
+        "mean_H4": -157200,
+        "second_H4": 24718256760,
+        "variance_H4": 6416760
+      },
+      "output_minus_input_mean_H4": 2012,
+      "exact_mean_M": 1500
+    }
+  ],
+  "single_hop_rows": [
+    {
+      "side": 6,
+      "edges": 648,
+      "outward_paths_from_two_branches": 1248,
+      "flat_mean_M": 623,
+      "selected_output_mean_M": 612,
+      "flat_output_minus_input_M": -11
+    },
+    {
+      "side": 8,
+      "edges": 1536,
+      "outward_paths_from_two_branches": 3024,
+      "flat_mean_M": 1511,
+      "selected_output_mean_M": 1500,
+      "flat_output_minus_input_M": -11
+    }
+  ],
+  "witness_terms_traversed_including_original_and_compact_copies": 264,
+  "failure_history": "No execution failed. The tempting all-link-angles-zero replacement gives different second moments and instability coefficients; those unfavorable comparator rows are preserved in full. Harmonic Haar averaging is the stated physical coefficient.",
+  "checker_sha256": "85ceedcbd687ea0d5bd26fb4ad09f1918f92ed7d7e10bc24076c8012332ef1dd"
+}

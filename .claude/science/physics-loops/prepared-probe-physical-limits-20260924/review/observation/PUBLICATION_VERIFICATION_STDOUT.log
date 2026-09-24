@@ -1,0 +1,11 @@
+{
+  "frozen_sources": 8,
+  "declared_inputs": 7,
+  "unit_AST_exact": true,
+  "unit_rows_exact": 2,
+  "full_stdout_cache_exact": true,
+  "prior_nonruntime_payload_exact": true,
+  "new_input_fingerprint": "dc62c22b7a87a8ff5fdca3f56fbf160676814b07c96976e7194e87f2bbce7f6b",
+  "snapshots": 20,
+  "primary_reruns": 0
+}

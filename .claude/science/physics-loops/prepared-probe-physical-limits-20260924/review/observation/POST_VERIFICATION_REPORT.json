@@ -1,0 +1,48 @@
+{
+  "verified_utc": "2026-09-24T22:30:59.696997+00:00",
+  "unchanged_PRE_members": 11,
+  "author_seal_members_verified": 7,
+  "released_snapshots": 9,
+  "author_controls_executed": 0,
+  "scientific_control_rows_read": 2,
+  "all_author_stdout_equals_result": true,
+  "empty_author_stderr": true,
+  "metadata_qualification": "started_utc is a receipt/completion timestamp, not the exact start. Supplemental qualification pinned separately.",
+  "stored_SI_comparisons": [
+    {
+      "benchmark": "MAGIC2017",
+      "quantity": "necessary_tau_upper_seconds",
+      "independent_PRE_value": "6.693680918144812574312046287229082713850559464956266755E-35",
+      "root_value": "6.693680918144812574312046287229082713850559464956266757919396311970414e-35",
+      "relative_difference": "4.361421387829671767029509249566E-55",
+      "difference_explanation": "Stored 55-digit Decimal PRE computation compared with stored 70-digit mpmath author arithmetic; no rerun."
+    },
+    {
+      "benchmark": "MAGIC2017",
+      "quantity": "orientation_independent_necessary_a_upper_m",
+      "independent_PRE_value": "2.006715055518330161602316015458180715870569866674404073E-26",
+      "root_value": "2.006715055518330161602316015458180715870569866674404073860346786241745e-26",
+      "relative_difference": "4.287339071264003073095898922877E-55",
+      "difference_explanation": "Stored 55-digit Decimal PRE computation compared with stored 70-digit mpmath author arithmetic; no rerun."
+    },
+    {
+      "benchmark": "LHAASO2024_v2_ML_MINOS",
+      "quantity": "necessary_tau_upper_seconds",
+      "independent_PRE_value": "5.723582234355709302672619289079940291553376933803184615E-36",
+      "root_value": "5.723582234355709302672619289079940291553376933803184619090498295742818e-36",
+      "relative_difference": "7.146745042273820207792926130507E-55",
+      "difference_explanation": "Stored 55-digit Decimal PRE computation compared with stored 70-digit mpmath author arithmetic; no rerun."
+    },
+    {
+      "benchmark": "LHAASO2024_v2_ML_MINOS",
+      "quantity": "orientation_independent_necessary_a_upper_m",
+      "independent_PRE_value": "1.715886786602630138181690505971487858498023509185360004E-27",
+      "root_value": "1.71588678660263013818169050597148785849802350918536000518493420852555e-27",
+      "relative_difference": "6.905666607944807133573633639861E-55",
+      "difference_explanation": "Stored 55-digit Decimal PRE computation compared with stored 70-digit mpmath author arithmetic; no rerun."
+    }
+  ],
+  "primary_sources_retrieved_again": 0,
+  "other_active_packets_read": false,
+  "publication_or_audit_mutation": false
+}

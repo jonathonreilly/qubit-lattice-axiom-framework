@@ -1,0 +1,14 @@
+{
+  "started_unix": 1790285641.822172,
+  "wall_seconds": 8.516209915978834,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/topology_and_gram_control.py"
+  ],
+  "code_sha256": "3ec0cdf6beb3e46f1129c272c0eef558a2df202e10035959daa04add36e204e9",
+  "stdout_sha256": "12b5f76860d94008911e3d6bbe252f737373f6c0e20b4227b459420273dca42e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 390242,
+  "stderr_bytes": 0
+}

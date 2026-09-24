@@ -1,0 +1,117 @@
+{
+  "scope": "Released-source POST binding and independent saved-certificate arithmetic.\n\nDoes not import or execute either author control. Reads every root certificate\nword and applies only the selected original mark using a new sparse charge map.\nThe full H4 pair enumeration is not repeated. All PRE members stay unchanged.\n",
+  "PRE_members_hash_verified_unchanged": 42,
+  "source_copies": 18,
+  "author_seals": [
+    {
+      "folder": "prepared-probe-dynamics-personal",
+      "seal_sha256": "70c96cb1ce304408760dbf698a119a8468d9ca466438b4ce1aa8fd5f5ce42af4",
+      "sealed_members_checked": 9,
+      "created_utc": "2026-09-24T21:30:07.242305+00:00"
+    },
+    {
+      "folder": "prepared-probe-output-energy-personal",
+      "seal_sha256": "51b08bce5a0bbfefff5b6125164cf9a00510deda5fe0da11acb06b25623941bb",
+      "sealed_members_checked": 6,
+      "created_utc": "2026-09-24T21:38:32.097934+00:00"
+    }
+  ],
+  "certificate_arithmetic": [
+    {
+      "side": 6,
+      "certificate_words_read": 1788,
+      "shifted_mean": "5137",
+      "shifted_second": "31891666",
+      "variance": "5502897",
+      "all_B_empty_scalar": -69336,
+      "pair_types": {
+        "r=1": 324,
+        "r=2": 648
+      },
+      "birth_rows": [
+        {
+          "sigma": -1,
+          "gamma": 8133884,
+          "output_words": 1798,
+          "initial_dark_map_directly_zero": true,
+          "all_output_charge_and_record_counts_checked": true
+        },
+        {
+          "sigma": 1,
+          "gamma": 8133884,
+          "output_words": 1798,
+          "initial_dark_map_directly_zero": true,
+          "all_output_charge_and_record_counts_checked": true
+        }
+      ],
+      "all_rows_unique_P_words_with_correct_global_charge_and_record_count": true
+    },
+    {
+      "side": 16,
+      "certificate_words_read": 1846,
+      "shifted_mean": "5140",
+      "shifted_second": "31936048",
+      "variance": "5516448",
+      "all_B_empty_scalar": -1314816,
+      "pair_types": {
+        "r=1": 6144,
+        "r=2": 12288
+      },
+      "birth_rows": [
+        {
+          "sigma": -1,
+          "gamma": 7982020,
+          "output_words": 1792,
+          "initial_dark_map_directly_zero": true,
+          "all_output_charge_and_record_counts_checked": true
+        },
+        {
+          "sigma": 1,
+          "gamma": 7982020,
+          "output_words": 1792,
+          "initial_dark_map_directly_zero": true,
+          "all_output_charge_and_record_counts_checked": true
+        }
+      ],
+      "all_rows_unique_P_words_with_correct_global_charge_and_record_count": true
+    }
+  ],
+  "side6_comparison": "Root flat moments and both leakage norms equal the PRE all-zero-angle comparator, not the PRE physical harmonic average.",
+  "side16_vs_PRE_side8": "Variance and both leakage norms agree with the PRE side-eight harmonic averages. This cross-graph agreement is corroboration, not an independently proved universal volume formula.",
+  "normalized_output_comparison": [
+    {
+      "sigma": -1,
+      "root_side16_variance": 7016504,
+      "PRE_side8_harmonic_variance": 7016504,
+      "mean_shift_above_empty": 7152,
+      "output_minus_input_mean": 2012
+    },
+    {
+      "sigma": 1,
+      "root_side16_variance": 6416696,
+      "PRE_side8_harmonic_variance": 6416696,
+      "mean_shift_above_empty": 7152,
+      "output_minus_input_mean": 2012
+    }
+  ],
+  "AST_identical_reused_nested_functions": [
+    "near",
+    "location",
+    "hop",
+    "step",
+    "pair_action"
+  ],
+  "root_dynamics_assertions": [
+    "actions[0].get(initial[1], 0) == actions[1].get(initial[0], 0)",
+    "not mark({initial[0]: 1, initial[1]: -1}, 1)",
+    "out.get(q, 0) == sum((w * w for w in forward.values()))"
+  ],
+  "root_output_assertions": [
+    "(p | n).bit_count() == len(A) + 6 and p.bit_count() - n.bit_count() == len(A)",
+    "out.get(q, 0) == sum((w * w for w in forward.values()))"
+  ],
+  "editorial_qualification": "Only the diagonal-norm assertion is retained from the old assertions. Two-input Hermiticity and initial-dark-map assertions were removed; a new output charge/record-count assertion was added.",
+  "beta_to_PRE_eta": "beta=4 eta; beta^2/48=eta^2/3 and beta^2/24=2 eta^2/3.",
+  "limits": "No author runner execution; no new H4 pair enumeration. Output root has no saved full action certificate, so its moments are reviewed from complete source/result plus PRE side-eight agreement, not reconstructed from an output certificate.",
+  "checker_sha256": "3fa9ca6f53fd976206f90d40804dc97a0a1b2e52f1fc5269fc4d4a3e929c1f5a"
+}

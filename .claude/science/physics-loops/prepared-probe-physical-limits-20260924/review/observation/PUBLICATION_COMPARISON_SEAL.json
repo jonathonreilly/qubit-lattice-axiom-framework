@@ -1,0 +1,152 @@
+{
+  "sealed_utc": "2026-09-24T22:36:57.926620+00:00",
+  "phase": "released-source final publication comparison",
+  "science_scope": "Complete Part C and related front/D qualifications, unit arithmetic only; no A/B science or root23/24 packets.",
+  "finding": "No material discrepancy in scoped final source. Front regime clarification corrected; exact arithmetic/source/result/cache binding verified.",
+  "primary_runs_by_checker": 0,
+  "PRE_seal_sha256": "6e08c4d893c9f40eabdb0b296c37bf1b850d48b88a2ec5dd10e2f939e866dce3",
+  "POST_seal_sha256": "e7121548b9b0372773a21dd88db53684327ed6a8f88b4a8e99c08919b7cd09fd",
+  "members": [
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "34ca4e7ddf096f9601503677f6a70472d3f1d6586ca115977d9d5ba78f38f924",
+      "bytes": 8028
+    },
+    {
+      "path": "PUBLICATION_SOURCE_PINS.json",
+      "sha256": "8fa4ffd6dede02f90f4a209074c108ba6723971647ef4305604c5fa989be16b2",
+      "bytes": 11020
+    },
+    {
+      "path": "PUBLICATION_VERIFICATION_REPORT.json",
+      "sha256": "a6e6f4ebfec0acbba42db2b53759e82dde1debc926eb677a34af280753cf530a",
+      "bytes": 2701
+    },
+    {
+      "path": "PUBLICATION_FRONT_DELTA.diff",
+      "sha256": "db0435b410cffdf689bfa806651f6580e9354a2c116136c591c5c3bac35bd1f4",
+      "bytes": 678
+    },
+    {
+      "path": "verify_publication_bindings.py",
+      "sha256": "31b046e476e2d2d35883369aea13ce1c68f2f3d22d2eda0b5846e19ccb5c6df0",
+      "bytes": 10264
+    },
+    {
+      "path": "PUBLICATION_VERIFICATION_STDOUT.log",
+      "sha256": "f9ed2940ea3645aa6797fa2a732c18a497207f69a00adfbee2c28e83b9bf7af1",
+      "bytes": 314
+    },
+    {
+      "path": "PUBLICATION_VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_VERIFICATION_EXECUTION.json",
+      "sha256": "01ba3f56ee01453279fb79adb57d5892e524ec3ba6bf32004cbb2d7463ed98cb",
+      "bytes": 304
+    },
+    {
+      "path": "publication_sources/infrastructure/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "publication_sources/prior_run/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7b7814246e22731aac2538422d95035b60f6f1c23cf6035ade93c43dc137cce8",
+      "bytes": 30680
+    },
+    {
+      "path": "publication_sources/prior_run/PROBE_PHYSICAL_LIMITS_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "e3a458300c9e9b2e57dac999f2c38ddb02ea54a736c2489778fce584e12dd379",
+      "bytes": 1237
+    },
+    {
+      "path": "publication_sources/prior_run/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "54b05c8d2e36496944f42a149f7c55dd5f868f299c8acb692c2fc5bdb9be174a",
+      "bytes": 4205
+    },
+    {
+      "path": "publication_sources/prior_run/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "d80880656dbe908a900cc3e43d3b2f48b156993729ef1dc7a33d00bcfa65c04b",
+      "bytes": 2144
+    },
+    {
+      "path": "publication_sources/prior_run/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "sha256": "9e43d561fb8a01e806b8e64e11028da0de4af33e085c29ac5304402a164ee78d",
+      "bytes": 3173
+    },
+    {
+      "path": "publication_sources/prior_run/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "sha256": "5a31469c3bc0659f530d6527e3aae7128c6b6df514f354701090c2fb45c80aa4",
+      "bytes": 3576
+    },
+    {
+      "path": "publication_sources/receipts/PROBE_PHYSICAL_LIMITS_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "948111c494396643e5c79827ab71b0f59978542a0ae985f8bf490ced267e9d92",
+      "bytes": 1237
+    },
+    {
+      "path": "publication_sources/receipts/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "6bc0a19c2b4bd8787048072b81a9a5a485523c94491617c6a1bf3e3fa6f08d65",
+      "bytes": 4205
+    },
+    {
+      "path": "publication_sources/receipts/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "9c2fa71f055ceecaa9bb3a3ef6929c9be3772f8bd7a10a2e83480c8641217c69",
+      "bytes": 2144
+    },
+    {
+      "path": "publication_sources/tree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "publication_sources/tree/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "publication_sources/tree/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966
+    },
+    {
+      "path": "publication_sources/tree/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "path": "publication_sources/tree/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "path": "publication_sources/tree/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+      "bytes": 30670
+    },
+    {
+      "path": "publication_sources/tree/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "publication_sources/tree/logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "sha256": "a13f49a4bc999f280335dd0351f44a483a80d632d1d94db734d5d0870b6e9cb6",
+      "bytes": 3576
+    },
+    {
+      "path": "publication_sources/tree/outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "sha256": "790a2a72d86f4ecf72395c400ee93ba981e854a1a19a7d25d1adc15d79692e7e",
+      "bytes": 3173
+    },
+    {
+      "path": "publication_sources/tree/scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py",
+      "sha256": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676",
+      "bytes": 10702
+    }
+  ],
+  "read_only_policy": "All members and this seal chmod0444; prior PRE/POST preserved unchanged."
+}

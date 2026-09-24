@@ -1,0 +1,65 @@
+{
+  "scope": "Final A/B public correspondence after the front precision edit; no rerun.\n\nSection C and unit_control are outside the scientific review. Their bytes are\nbound only as part of the shared public source/result/cache. No private unit\nbridge root or independent packet is opened.\n",
+  "PRE_and_POST_members_verified_unchanged": [
+    42,
+    25
+  ],
+  "note_sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+  "runner_sha256": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676",
+  "result_sha256": "790a2a72d86f4ecf72395c400ee93ba981e854a1a19a7d25d1adc15d79692e7e",
+  "cache_sha256": "a13f49a4bc999f280335dd0351f44a483a80d632d1d94db734d5d0870b6e9cb6",
+  "declared_inputs": [
+    "docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "input_fingerprint_sha256": "dc62c22b7a87a8ff5fdca3f56fbf160676814b07c96976e7194e87f2bbce7f6b",
+  "snapshot_count": 16,
+  "canonical_primary_elapsed_seconds": 2.2022247314453125,
+  "canonical_internal_elapsed_seconds": 2.0789280829485506,
+  "source_fingerprint_result_stdout_cache_execution_all_match": true,
+  "public_input_rows_exactly_match_root_rows": true,
+  "public_output_rows_exactly_match_root_rows": true,
+  "input_AST_equal_except_name_and_disclosed_path": true,
+  "output_AST_equal_except_name": true,
+  "input_path_adaptation": [
+    {
+      "source": "root",
+      "statement": "path = Path(__file__).with_name(f'FLAT_ACTION_SIDE_{side}.json')"
+    },
+    {
+      "source": "public",
+      "statement": "path = Path(__file__).resolve().parents[1] / 'outputs/prepared_probe_physical_limits_20260924' / f'FLAT_ACTION_SIDE_{side}.json'"
+    }
+  ],
+  "certificates": [
+    {
+      "side": 6,
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795",
+      "bytes": 925914,
+      "exactly_equal_POST_checked_certificate": true
+    },
+    {
+      "side": 16,
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318",
+      "bytes": 961608,
+      "exactly_equal_POST_checked_certificate": true
+    }
+  ],
+  "two_public_wording_corrections_present": true,
+  "assertion_reuse_qualification_present": true,
+  "review_exclusions": [
+    "Section C scientific argument",
+    "unit_control scientific arithmetic",
+    "unit_rows scientific interpretation",
+    "private observation-unit-bridge root/checker packets"
+  ],
+  "final_note_diff_is_only_the_disclosed_front_phrase": true,
+  "all_public_result_fields_identical_except_elapsed_seconds": true,
+  "no_primary_or_author_execution": true,
+  "checker_sha256": "acb53289791868249e842c6b842e7470b1abb59780eddf3370fd03bc87faf52e"
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "Exact integer action of the original pair-form H4 at zero link angles.\n\nThis reuses disclosed root23 pair-action machinery for new definite output words.\nIt is a finite matter-fiber coefficient computation, not rotor propagation.\nH4=-2 sum S_ac^* S_ac. Full hard-core signs, occupied B sites and all local\noverlapping pairs are retained. Scalar far pairs are evaluated analytically.\n",
+  "rows": [
+    {
+      "side": 16,
+      "vertices": 4096,
+      "overlap_pairs": 18432,
+      "all_B_empty_flat_scalar": -1314816,
+      "selected_output_matter_rows": [
+        {
+          "sigma": -1,
+          "mean_H4": -1307664,
+          "mean_minus_empty": 7152,
+          "variance_H4": 7016504,
+          "nonzero_output_words": 2044,
+          "active_pair_count": 279,
+          "record_number": 2054
+        },
+        {
+          "sigma": 1,
+          "mean_H4": -1307664,
+          "mean_minus_empty": 7152,
+          "variance_H4": 6416696,
+          "nonzero_output_words": 2294,
+          "active_pair_count": 279,
+          "record_number": 2054
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.5359760830178857
+}

@@ -1,0 +1,10 @@
+c0 magnitude matches (3+3*sqrt2+sqrt3)/8: True 1.1218364368360203
+(1, 0, 0) formula 0.8333333333333334 bond/site 0.8333333333333333 want 0.8333333333333334
+(1, 1, 0) formula 0.6666666666666667 bond/site 0.6666666666666666 want 0.6666666666666666
+(1, 1, 1) formula 0.5000000000000002 bond/site 0.5000000000000001 want 0.5
+(2, 0, 0) formula 0.6666666666666667 bond/site 0.6666666666666666 want 0.6666666666666666
+(2, 1, 1) formula 0.33333333333333337 bond/site 0.33333333333333337 want 0.3333333333333333
+(2, 2, 2) formula 0.0 bond/site 3.749399456654644e-33 want 0.0
+chessboard R positive for c0<0 True
+HIT: confirmed - c0(4)=-(3+3*sqrt(2)+sqrt(3))/8, and the per-bond versus per-site quadratic symbols are 1-|q|^2_lat/12 on the six tested 4^3 modes
+SUMMARY: confirmed the exact sea constant and the counter-term family factor; A and C fix the uniform value and not the site-versus-bond split

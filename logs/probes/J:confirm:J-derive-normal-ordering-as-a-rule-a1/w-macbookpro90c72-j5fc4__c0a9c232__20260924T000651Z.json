@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-normal-ordering-as-a-rule-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j5fc4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/normal-ordering-as-a-rule/referee_w-macbookpro90c72-j5fc4/check.py",
+ "seed": 8411,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0a9c232",
+ "started_utc": "20260924T000651Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the exact sea constant and the counter-term family factor; A and C fix the uniform value and not the site-versus-bond split"
+ },
+ "review": "Independent: c0(4)=-(3+3*sqrt(2)+sqrt(3))/8 and per-bond/per-site symbols are 1-|q|^2_lat/12 on six 4^3 modes, so A and C do not choose the counter-term",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:normal-ordering-as-a-rule:a1/; its files are probes/work/derive/normal-ordering-as-a-rule/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/normal-ordering-as-a-rule/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "555884a8ba41b1e811bb04d2c2a6a4f2f8e529405d8c3f7dcb06e9a69723387a",
+ "stdout_tail": "c0 magnitude matches (3+3*sqrt2+sqrt3)/8: True 1.1218364368360203\n(1, 0, 0) formula 0.8333333333333334 bond/site 0.8333333333333333 want 0.8333333333333334\n(1, 1, 0) formula 0.6666666666666667 bond/site 0.6666666666666666 want 0.6666666666666666\n(1, 1, 1) formula 0.5000000000000002 bond/site 0.5000000000000001 want 0.5\n(2, 0, 0) formula 0.6666666666666667 bond/site 0.6666666666666666 want 0.6666666666666666\n(2, 1, 1) formula 0.33333333333333337 bond/site 0.33333333333333337 want 0.3333333333333333\n(2, 2, 2) formula 0.0 bond/site 3.749399456654644e-33 want 0.0\nchessboard R positive for c0<0 True\nHIT: confirmed - c0(4)=-(3+3*sqrt(2)+sqrt(3))/8, and the per-bond versus per-site quadratic symbols are 1-|q|^2_lat/12 on the six tested 4^3 modes\nSUMMARY: confirmed the exact sea constant and the counter-term family factor; A and C fix the uniform value and not the site-versus-bond split\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5fc4",
+  "at_utc": "20260924T000652Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "c0(4) and the six mode ratios 1-|q|^2/12 match, so site and bond counter-terms are distinct",
+  "by": "w-macbookpro90c72-j5fc4",
+  "at_utc": "20260924T000652Z"
+ }
+}

@@ -1,0 +1,17 @@
+ok: W at +e1 is (T/6)(1 + 3 l1 v + 2 l2 D)
+ok: W at e2 is (T/6)(1 - l2 D)
+ok: third-order map matches the exact product at three neighbourhoods
+ok: local cubic is -90 l1^3 v^3 + 60 l1 l2 v D
+ok: u = 90 l1^2 (1-36 l2)/(1-6 l2)
+ok: on 5p = 7q+4r, l1 = 1/6
+ok: on the surface u = (5/2)(4r-7q)/(r-q)
+ok: at (3,1,2), l2 = 0 and u = 5/2
+ok: in the w = 3v units the coefficient is 5/18
+ok: at q=2, r=1 one has 4r<7q but u=25
+ok: Lap(A/r) = A''(r)/r
+ok: with tau = log r, A_rr = (A_tt - A_t)/r^2, so A_tt - A_t = u A^3
+ok: h = -u A^3 + 3 u^2 A^5 - 24 u^3 A^7 solves the centre manifold through order 7
+ok: (A^{-2})_tau = 2u - 6 u^2 A^2 + ..., whose integral is 2u log r - 3u log log r
+TOTAL FAIL = 0
+HIT: confirmed - the cubic coefficient is u = 90 l1^2 (1-36 l2)/(1-6 l2). On 5p = 7q+4r it is (5/2)(4r-7q)/(r-q), and at (3,1,2) it is 5/2. The massless radial law A_tt - A_t = u A^3 has centre manifold -u A^3 + 3 u^2 A^5 - 24 u^3 A^7, so A^{-2} = 2u log r - 3u log log r + C + ...
+SUMMARY: confirmed - the expansion and the value of u survive. u is positive when (4r-7q)/(r-q) is positive, including the region r<q where 4r<7q. The torus control and the shooting solution were not rebuilt.

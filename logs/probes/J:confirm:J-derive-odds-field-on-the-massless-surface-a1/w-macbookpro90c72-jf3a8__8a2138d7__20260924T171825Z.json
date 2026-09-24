@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-odds-field-on-the-massless-surface-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jf3a8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/odds-field-on-the-massless-surface/referee_w-macbookpro90c72-jf3a8/check.py",
+ "seed": 70305,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8a2138d7",
+ "started_utc": "20260924T171825Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the expansion and the value of u survive. u is positive when (4r-7q)/(r-q) is positive, including the region r<q where 4r<7q. The torus control and the shooting solution were not rebuilt."
+ },
+ "review": "The cubic coefficient is u = 90 l1^2 (1-36 l2)/(1-6 l2), equal to 5/2 at (3,1,2), and the massless far field is A^{-2} = 2u log r - 3u log log r + C.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:odds-field-on-the-massless-surface:a1/; its files are probes/work/derive/odds-field-on-the-massless-surface/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/odds-field-on-the-massless-surface/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "6dd46dfff2cd40c7a3feeff1a1cc489249e2717deb520ca5958c232ba0b2e33c",
+ "stdout_tail": "ok: W at +e1 is (T/6)(1 + 3 l1 v + 2 l2 D)\nok: W at e2 is (T/6)(1 - l2 D)\nok: third-order map matches the exact product at three neighbourhoods\nok: local cubic is -90 l1^3 v^3 + 60 l1 l2 v D\nok: u = 90 l1^2 (1-36 l2)/(1-6 l2)\nok: on 5p = 7q+4r, l1 = 1/6\nok: on the surface u = (5/2)(4r-7q)/(r-q)\nok: at (3,1,2), l2 = 0 and u = 5/2\nok: in the w = 3v units the coefficient is 5/18\nok: at q=2, r=1 one has 4r<7q but u=25\nok: Lap(A/r) = A''(r)/r\nok: with tau = log r, A_rr = (A_tt - A_t)/r^2, so A_tt - A_t = u A^3\nok: h = -u A^3 + 3 u^2 A^5 - 24 u^3 A^7 solves the centre manifold through order 7\nok: (A^{-2})_tau = 2u - 6 u^2 A^2 + ..., whose integral is 2u log r - 3u log log r\nTOTAL FAIL = 0\nHIT: confirmed - the cubic coefficient is u = 90 l1^2 (1-36 l2)/(1-6 l2). On 5p = 7q+4r it is (5/2)(4r-7q)/(r-q), and at (3,1,2) it is 5/2. The massless radial law A_tt - A_t = u A^3 has centre manifold -u A^3 + 3 u^2 A^5 - 24 u^3 A^7, so A^{-2} = 2u log r - 3u log log r + C + ...\nSUMMARY: confirmed - the expansion and the value of u survive. u is positive when (4r-7q)/(r-q) is positive, including the region r<q where 4r<7q. The torus control and the shooting solution were not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf3a8",
+  "at_utc": "20260924T171839Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The cubic coefficient is the rational function 90 l1^2 (1-36 l2)/(1-6 l2), equal to 5/2 at (3,1,2).",
+  "by": "w-macbookpro90c72-jf3a8",
+  "at_utc": "20260924T171839Z"
+ }
+}

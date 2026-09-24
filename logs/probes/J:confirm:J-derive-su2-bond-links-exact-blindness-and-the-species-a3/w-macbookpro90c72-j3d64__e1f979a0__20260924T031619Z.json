@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-su2-bond-links-exact-blindness-and-the-species-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3d64",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/su2-bond-links-exact-blindness-and-the-species/referee_w-macbookpro90c72-j3d64/check.py",
+ "seed": 19779,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e1f979a0",
+ "started_utc": "20260924T031619Z",
+ "elapsed_s": 6.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the link-dressed frame walk is hermitian and gauge covariant, the pure-gauge link reproduces the twist hop at first order, and the species maps are a flat Z2 connection, so a coin-blind connection does not change the species count at first order."
+ },
+ "review": "Exact SU(2) arithmetic on the 4^3 torus confirms gauge covariance, the first-order twist hop, and that the species are a flat Z2 connection, so the served count stays two of eight at first order.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:su2-bond-links-exact-blindness-and-the-species:a3/; its files are probes/work/derive/su2-bond-links-exact-blindness-and-the-species/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/su2-bond-links-exact-blindness-and-the-species/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "63968ae78b732142dc708510ca29c8342c41adbfc0458991f7cf6ee2f6b702be",
+ "stdout_tail": "ok R1: inverse stereographic images of rational points are SU(2)\nok R2: conjugation by these SU(2) elements is a rational rotation, det 1\nok R3: H[E, U] is hermitian on the 4^3 torus for this rational frame and these links\nok R4: H[g E g\u2020, g_x U g_y\u2020] g \u03c8 = g H[E, U] \u03c8 at every site of the 4^3 torus\nok R5: at first order the pure-gauge link is the twist hop, and link plus rotated frame equals -(i/2)[\u03b8\u00b7\u03c3, H]\nok R6: g_x = (-1)^{n\u00b7x} i \u03c3_c is SU(2); U'=(-1)^{n_j} is a flat Z2 connection; species-n zero modes map to constant zero modes of the rotated background\nok R7: the frame response \u0398_a^j = Re \u03c8\u2020 \u03c3_a S_j \u03c8 turns by the SO(3) image of g_x\nSUMMARY: confirmed - the link-dressed frame walk is hermitian and gauge covariant, the pure-gauge link reproduces the twist hop at first order, and the species maps are a flat Z2 connection, so a coin-blind connection does not change the species count at first order.\nHIT: confirmed - on the 4^3 torus with Gaussian-rational SU(2), H[gEg\u2020, gUg\u2020]=gHg\u2020, the first-order pure-gauge link equals the scalar twist hop and together with the rotated frame equals -(i/2)[\u03b8\u00b7\u03c3, H], and each species n is species 000 of a flat Z2 background (\u03c1_c E, (-1)^{n_j}); the served-species count is therefore unchanged at fixed links and, because those backgrounds are flat, at first order in a dynamical connection.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3d64",
+  "at_utc": "20260924T031625Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

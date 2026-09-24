@@ -1,0 +1,251 @@
+{
+ "task": "J:derive:deferred-20260924-star-packets:a1",
+ "worker": "w-macbookpro9927a-j8cdc",
+ "model": "claude-opus-5-5",
+ "batch": 14,
+ "pass": "first bounded pass; not an exhaustion of the bundle",
+ "origin_main": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+ "landing_snapshot_in_bundle_readme": "c288aa9cfeea8fd2256fe4b71a60c401d64f7ce6",
+ "frozen_heads": {
+  "8923": "191ad04ad48d64c55d31c34521caec68444bfa64",
+  "8929": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+  "8936": "69462972e8ef9585bdd8d85969e31c7b0b3638c3"
+ },
+ "review_findings_touched": {
+  "U14-R4": "uniform-in-lambda Duhamel estimate used as landed (attributed section of STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY)",
+  "U14-R6": "exact buffered battery operation taken as landed; not re-litigated"
+ },
+ "landed_baseline": [
+  {
+   "pr": 8923,
+   "path_on_main": "docs/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+   "disposition": "already-landed (baseline read on origin/main)"
+  },
+  {
+   "pr": 8923,
+   "path_on_main": "docs/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+   "disposition": "already-landed (baseline read on origin/main)"
+  },
+  {
+   "pr": 8923,
+   "path_on_main": "docs/STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+   "disposition": "already-landed (baseline read on origin/main)"
+  },
+  {
+   "pr": 8929,
+   "path_on_main": "docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+   "disposition": "already-landed (baseline read on origin/main)"
+  },
+  {
+   "pr": 8936,
+   "path_on_main": "docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+   "disposition": "already-landed (baseline read on origin/main)"
+  }
+ ],
+ "inspected_sources": [
+  {
+   "pr": 8923,
+   "head": "191ad04ad48d64c55d31c34521caec68444bfa64",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_author/DERIVATION_PLAN.md",
+   "sha256": "85983aa0e5801fb81d2be29c99287542979a5352d07d09197418f7977ff9a77d",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "already-landed",
+   "note": "plan of the electric-family bridge; the Duhamel section is attributed in STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY"
+  },
+  {
+   "pr": 8929,
+   "head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md",
+   "sha256": "93a93b02a37ecb7c804cb9800e144d321476a101130dacac0bb3b2fdbee20e34",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "recovered-and-extended",
+   "note": "the deferred statement worked here: stationary-output bound (2), two-level coherent fuel (4), coherence inequality (5); fixed-input preparation only; this pass derives the occurrence side"
+  },
+  {
+   "pr": 8929,
+   "head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/coherent_fuel_control.py",
+   "sha256": "025310de415ec4654f03725b9311ab274882d341c02b08307c2dc8ad339d4c67",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "author control of the fuel witness; not re-run; the claims it covers are re-derived in ATTEMPT.md step 5 at the scope used"
+  },
+  {
+   "pr": 8929,
+   "head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/POST_FINAL_COMPARISON.md",
+   "sha256": "583ce3ec4b385d4c1f1d624ebd3c7ca43ed85effbf4bc22af3a71ae15083882f",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "author/independent comparison of the fuel packets; scope sentences only read"
+  },
+  {
+   "pr": 8929,
+   "head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/PRE_COHERENT_ENERGY_SUPPLY.md",
+   "sha256": "33420632afe2685ff89ea13ca63d6f0104a06507a218da07adec5700d2bce5ac",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "recovered-same-group",
+   "note": "independent reconstruction of the fuel statement; heralded bounds (13)-(14), readout-premise escape (section 6), fixed-input preparation is not the GKLS process (section 7)"
+  },
+  {
+   "pr": 8929,
+   "head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_author/DERIVATION_PLAN.md",
+   "sha256": "ca7557bf616cd4d5206f43badf480369cd3bb5f3fef8f446c6bee217efd42e8e",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "already-landed",
+   "note": "plan of the finite buffered battery, landed as FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS"
+  },
+  {
+   "pr": 8929,
+   "head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/COMPARISON.md",
+   "sha256": "948df0ebb9da3dc3b0a63ecd080fc5665b459623653866829adb9791db42508d",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "comparison of the battery packets; scope table read"
+  },
+  {
+   "pr": 8929,
+   "head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/FAILED_ROUTES.md",
+   "sha256": "62369ac00d295fa5a52d40faee6a1355d1cc51be165d73863cfd0bab7fe3b9e0",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "rejected routes (cyclic shift, fresh reservoir, Euler map, trace error for energy, autonomy) preserved; consistent with the landed scope"
+  },
+  {
+   "pr": 8929,
+   "head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/PRE_RECONSTRUCTION.md",
+   "sha256": "06f3e72a3a93493d8587d26f6a7e040d8a0fdde521b68417b266912ac24854cb",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "already-landed",
+   "note": "independent reconstruction of the landed battery construction; headings and scope sections read"
+  },
+  {
+   "pr": 8936,
+   "head": "69462972e8ef9585bdd8d85969e31c7b0b3638c3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_author/DERIVATION_PLAN.md",
+   "sha256": "5a1858bfa202ee25325b32fdf4f1e3d94309301eef709ec8d896db1bb97fb3a6",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "already-landed",
+   "note": "plan of the autonomous finite clock, landed as AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS"
+  },
+  {
+   "pr": 8936,
+   "head": "69462972e8ef9585bdd8d85969e31c7b0b3638c3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_author/DEVELOPMENT_AND_LIMITS.md",
+   "sha256": "f749134c6a6d9b9e109f8f66645d6ed24e530e198eff474662059b9807359f50",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "already-landed",
+   "note": "limits N1-N8 match the landed scope; no optimal cost or necessity claimed"
+  },
+  {
+   "pr": 8936,
+   "head": "69462972e8ef9585bdd8d85969e31c7b0b3638c3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/COMPARISON.md",
+   "sha256": "5840d57c80b2583d5d19ffc7b911b14e0c5bf0fcfa3cbb1f499ab668cbd3b071",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "comparison of the clock packets; scope sentences read"
+  },
+  {
+   "pr": 8936,
+   "head": "69462972e8ef9585bdd8d85969e31c7b0b3638c3",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/PRE_RECONSTRUCTION.md",
+   "sha256": "5a931332a160a0dd773a353a0002ac983e55c63de01b875d7b3a2d2364ae0ec9",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "already-landed",
+   "note": "independent reconstruction of the landed clock; headings and resource sections read"
+  }
+ ],
+ "selected_statement": {
+  "source": "PR8929 coherent_energy_supply_author/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md (sha256 93a93b02...)",
+  "why_beyond_baseline": "no landed note bounds the energy coherence a supply must provide; the fuel note does so only for fixed-input preparation of one conditional output",
+  "residual": "coherence an energy-stationary supply must provide for the physical GKLS occurrence at a fixed time, across the electric family",
+  "result": "born branch = prepared eps-free first-event ensemble times the birth-time characteristic function at each Bohr frequency; lambda = 0: best stationary-supply error exactly C_H = 4 sqrt3 (kappa/delta) eps^3 e^{-12 kappa t}(1 + O(eps^2)) versus 2 sqrt(p(1-p)) per prepared output; lambda in (0,1]: error tends to (1 - e^{-12 kappa t}) 2 sqrt2/9 (resolved) or 4 sqrt2/9 (coherent), discontinuous at lambda = 0",
+  "first_open_step": "a frequency-resolved (finite-horizon) stationarity notion under which the lambda > 0 obstruction at Bohr frequency ~3 K lambda eps^2 can be stated uniformly"
+ },
+ "related_problems": [
+  {
+   "problem": "composite-bodies-rest-energy-without-a-larger-site-algebra",
+   "logs": [
+    "logs/probes/J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a3/w-jonathonsmac4f50-j8f94__a9b46e79__20260923T031209Z.json",
+    "logs/probes/J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a4/w-macbookpro90c72-j16c3__a5094169__20260923T065420Z.json",
+    "logs/probes/J:confirm:J-derive-composite-bodies-rest-energy-without-a-larger-site-algebra-a3/w-macbookpro90c72-jdd22__fa02e798__20260924T174540Z.json",
+    "logs/probes/J:confirm:J-derive-composite-bodies-rest-energy-without-a-larger-site-algebra-a4/w-macbookpro90c72-j5f00__5e764d16__20260924T183014Z.json"
+   ],
+   "disposition": "distinct question (contact-bound walkers, rest energy in M2(C)); a4 is this machine; nothing reused"
+  },
+  {
+   "problem": "the-rest-energy-of-a-record",
+   "logs": [
+    "logs/probes/J:derive:the-rest-energy-of-a-record:a1/w-macbookpro9927a-j7968__ef301a76__20260924T050822Z.json"
+   ],
+   "disposition": "distinct question (record bare energy under the formation clause); this machine; nothing reused"
+  }
+ ],
+ "active_elsewhere": "no other claim, log or probes/work attempt on this batch-14 question was found",
+ "remaining_ranked": [
+  {
+   "rank": 1,
+   "group": "PR8929 coherent-fuel group, heralded / time-stamped version",
+   "why": "conditioning on the birth time restores 2 sqrt(p(1-p)) per output; how much coherence a time-stamping clock (the landed clock) consumes is open"
+  },
+  {
+   "rank": 2,
+   "group": "PR8946 GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER (51 source candidates)",
+   "why": "general graphs and repeated births: the one-jump Dyson factorization no longer terminates"
+  },
+  {
+   "rank": 3,
+   "group": "PR8953 ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE (47)",
+   "why": "cube birth energy; fast-scale coherence"
+  },
+  {
+   "rank": 4,
+   "group": "PR8891 HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD / ROTOR_DRIFT (19)",
+   "why": "energy spread of actual births; U14-R5 control strength"
+  },
+  {
+   "rank": 5,
+   "group": "PR8870 FIRST_BIRTH_ENERGY_SPREAD_ON_SEVEN_SITE_PATH (2)",
+   "why": "small; first-birth spread on a path"
+  },
+  {
+   "rank": 6,
+   "group": "PR8898 LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE (9)",
+   "why": "U14-R3 hypotheses; post-birth phase under the electric completion"
+  },
+  {
+   "rank": 7,
+   "group": "PR8845 ENERGY_FILTERS_AND_ACTUAL_REPEATED_FORMATION (19)",
+   "why": "repeated formation"
+  },
+  {
+   "rank": 8,
+   "group": "PR8841, PR8852, PR8865, PR8873 compensation/volume/balance/moment packets",
+   "why": "U14-R2 adjoint scope, U14-R5 moments; not inspected"
+  },
+  {
+   "rank": 9,
+   "group": "PR8923 microscopic_birth_energy_independent and electric_robustness controls; PR8936 clock controls (traveling packet, uniformity)",
+   "why": "uninspected source candidates of the three starting PRs; the landed notes cover their statements"
+  }
+ ]
+}

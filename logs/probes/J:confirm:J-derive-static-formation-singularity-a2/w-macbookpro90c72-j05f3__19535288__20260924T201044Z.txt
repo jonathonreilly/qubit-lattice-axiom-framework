@@ -1,0 +1,11 @@
+PASS S0 constants: Nf(empty)=6, Nf(one)=12, pairs 22/24/26, N3 in [44,60], N4 in [80,146]
+PASS S1 fixed orders: Z=20784; every order has nu=W/Y; min TV 455/31176, max TV 37/1299
+PASS S3 2x2 hull: TV(mu,H)=30457/2431728, attained by the corner mixture; Bellman sup of 1_E is 1619/5616
+PASS S4 disjoint threshold: TV(Bin) >= 1/2 at m=2410 (k=710) and not at 2409; BC gives TV<1/2 through m=952; 1-beta >= 9.43777e-5
+PASS S5 path sanity: a path has r2=1 and K=1
+PASS S5 strip certificates: 2xL: 1-r2>=605795792 e-12, K<=874027/849490, TV>=1/2 vs one corner from L=2336 and vs the hull from L=4624; 3xL: 1-r2>=1245343112 e-12, K<=1052457/994480, TV>=1/2 vs one corner from L=1159 and vs the hull from L=2272; tube: 1-r2>=3511679839 e-12, K<=808177/720074, TV>=1/2 vs one corner from L=428 and vs the hull from L=1019
+PASS S6 cube: one corner TV=1182193085/23402354976; monotone hull TV=3205622113713065/81441318629518848
+PASS S8 2x3 hull: fixed-order TV=812090431/41067000000; full hull TV=4120449306433/238517136000000
+PASS S7 envelope: the pointwise envelope on the 2x2 is 2555/810576, strictly below the hull distance
+SUMMARY: confirmed. At (3,1,2) the static law's total variation to the adapted hull is 30457/2431728 on the 2x2 and 4120449306433/238517136000000 on the 2x3, below the fixed-order value. On m disjoint plaquettes the E-count bound crosses 1/2 between m=953 and m=2410. Corner orders on the 2xL, 3xL and 2x2xL windows are singular to the static law, with total variation at least 1/2 against the monotone hull from L=4624, 2272 and 1019. The 2x2x2 monotone hull is at 3205622113713065/81441318629518848. The pointwise envelope decays on 2xL and does not bound the full hull.
+HIT: confirmed - the adapted hull is at total variation 30457/2431728 on the 2x2 and 4120449306433/238517136000000 on the 2x3, the disjoint-plaquette threshold lies in [953,2410], and corner orders on the strips and the tube are singular to the static law

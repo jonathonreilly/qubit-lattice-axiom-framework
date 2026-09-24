@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-static-formation-singularity-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j05f3",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/static-formation-singularity/referee_w-macbookpro90c72-j05f3/check.py",
+ "seed": 80644,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "19535288",
+ "started_utc": "20260924T201044Z",
+ "elapsed_s": 23.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed. At (3,1,2) the static law's total variation to the adapted hull is 30457/2431728 on the 2x2 and 4120449306433/238517136000000 on the 2x3, below the fixed-order value. On m disjoint plaquettes the E-count bound crosses 1/2 between m=953 and m=2410. Corner orders on the 2xL, 3xL and 2x2xL windows are singular to the static law, with total variation at least 1/2 against the monotone hull from L=4624, 2272 and 1019. The 2x2x2 monotone hull is at 3205622113713065/81441318629518848. The pointwise envelope decays on 2xL and does not bound the full hull."
+ },
+ "review": "The adapted hull is at total variation 30457/2431728 on the 2x2 and 4120449306433/238517136000000 on the 2x3, the disjoint-plaquette threshold lies in [953,2410], and corner orders on the strips and tube are singular to the static law.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:static-formation-singularity:a2/; its files are probes/work/derive/static-formation-singularity/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/static-formation-singularity/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "06f871402f8b8a70b11e67405cdf58d89255fed28dc094f42e4f4c7d7d36ad2b",
+ "stdout_tail": "r2=1 and K=1\nPASS S5 strip certificates: 2xL: 1-r2>=605795792 e-12, K<=874027/849490, TV>=1/2 vs one corner from L=2336 and vs the hull from L=4624; 3xL: 1-r2>=1245343112 e-12, K<=1052457/994480, TV>=1/2 vs one corner from L=1159 and vs the hull from L=2272; tube: 1-r2>=3511679839 e-12, K<=808177/720074, TV>=1/2 vs one corner from L=428 and vs the hull from L=1019\nPASS S6 cube: one corner TV=1182193085/23402354976; monotone hull TV=3205622113713065/81441318629518848\nPASS S8 2x3 hull: fixed-order TV=812090431/41067000000; full hull TV=4120449306433/238517136000000\nPASS S7 envelope: the pointwise envelope on the 2x2 is 2555/810576, strictly below the hull distance\nSUMMARY: confirmed. At (3,1,2) the static law's total variation to the adapted hull is 30457/2431728 on the 2x2 and 4120449306433/238517136000000 on the 2x3, below the fixed-order value. On m disjoint plaquettes the E-count bound crosses 1/2 between m=953 and m=2410. Corner orders on the 2xL, 3xL and 2x2xL windows are singular to the static law, with total variation at least 1/2 against the monotone hull from L=4624, 2272 and 1019. The 2x2x2 monotone hull is at 3205622113713065/81441318629518848. The pointwise envelope decays on 2xL and does not bound the full hull.\nHIT: confirmed - the adapted hull is at total variation 30457/2431728 on the 2x2 and 4120449306433/238517136000000 on the 2x3, the disjoint-plaquette threshold lies in [953,2410], and corner orders on the strips and the tube are singular to the static law\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j05f3",
+  "at_utc": "20260924T201113Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent recomputation agrees: the 2x2 and 2x3 hull distances, the [953,2410] threshold, and the strip and tube certificates all hold.",
+  "by": "w-macbookpro90c72-j05f3",
+  "at_utc": "20260924T201113Z"
+ }
+}

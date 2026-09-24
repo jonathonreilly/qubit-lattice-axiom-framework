@@ -12,7 +12,11 @@ runner: scripts/no_first_birth_cube_energy_and_apparatus_coherence_2026_09_24.py
 
 # Energy and apparatus coherence before the first cube birth
 
-**Status:** conditional bounded theorem; selective independent reconstruction,
+**Type:** bounded_theorem
+
+**Status:** proposed_retained
+
+Conditional bounded theorem; selective independent reconstruction,
 not a retained audit verdict. The quantum model, local compensation, time,
 preparation, scaling and original formation instrument remain supplied.
 

@@ -852,7 +852,7 @@
           "orthogonality_error": 2.4861098695852932e-14,
           "minimum_overlap_eigenvalue": 0.8756259506515022
         },
-        "elapsed_seconds": 28.95672870799899
+        "elapsed_seconds": 26.152121040970087
       },
       {
         "epsilon": 0.06,
@@ -880,7 +880,7 @@
           "orthogonality_error": 2.2593935646549448e-14,
           "minimum_overlap_eigenvalue": 0.9560482179105989
         },
-        "elapsed_seconds": 27.634882083162665
+        "elapsed_seconds": 25.251188792055473
       },
       {
         "epsilon": 0.035,
@@ -908,12 +908,12 @@
           "orthogonality_error": 2.8237698924061415e-14,
           "minimum_overlap_eigenvalue": 0.9852050115922633
         },
-        "elapsed_seconds": 28.86675341706723
+        "elapsed_seconds": 23.296650500036776
       }
     ],
     "builder_sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
     "scope": "Actual canonical N=4 input and all five exact-cluster contour approximations at fixed S=1. No independent builder or joint-scaling numerical proof."
   },
-  "elapsed_seconds": 85.60208804206923,
+  "elapsed_seconds": 74.89411845779978,
   "source_sha256": "3d0e581de398f11cae0986b18c425e699b7b78f5269a85857eadb0151d1a0d77"
 }

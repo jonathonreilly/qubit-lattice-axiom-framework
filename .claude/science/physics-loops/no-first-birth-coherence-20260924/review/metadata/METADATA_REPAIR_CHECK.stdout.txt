@@ -1,0 +1,178 @@
+{
+  "reports": {
+    "SEVENTH": {
+      "publication_tree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication",
+      "comparison_base_and_observed_HEAD": "918fbe18619667017c56c29677f9f02363368d89",
+      "prior_comparison_anchor_seal_sha256": "5d2676e7ead04a5e67d709d2ef2d6a9dbcbfb83468fac6acb6bb5c9083d1a318",
+      "prior_anchor_members_preserved": 19,
+      "committed_note_result_and_cache_match_prior_scientific_comparison": true,
+      "only_note_delta_is_exact_visible_metadata_replacement": true,
+      "all_mathematics_and_conditional_audit_caveats_unchanged": true,
+      "runner_byte_identical_to_committed_source": true,
+      "declared_inputs": [
+        {
+          "path": "docs/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "ab8234682ea61bff35fbd18685f65ac0b853aa20e0d3600304b9004076bd147a",
+          "after_sha256": "f8e82e59a7a58eb2de853830af9c9ab6d97e743a396878d46eec882bf2395f2d"
+        },
+        {
+          "path": "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+          "after_sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718"
+        },
+        {
+          "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+          "after_sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+        },
+        {
+          "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+          "after_sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+        },
+        {
+          "path": "docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7",
+          "after_sha256": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7"
+        }
+      ],
+      "only_changed_declared_input": "docs/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "old_declared_input_fingerprint_sha256": "ca3ca68a57c5f8c6ffec44b5efd6cb04e3409d753a648f77e7620d144d60da5a",
+      "fresh_declared_input_fingerprint_sha256": "f3deeef2f0cd8e59b466fc3915e959f7397dba42bcdde390446538b8f7e7b219",
+      "full_cache_byte_reconstruction_matches": true,
+      "cache_bytes": 20893,
+      "execution_status": "ok",
+      "execution_exit_code": 0,
+      "execution_elapsed_seconds": 75.59323716163635,
+      "timeout_seconds": 300,
+      "complete_merged_stdout_characters": 20513,
+      "complete_merged_stdout_sha256": "936a8da79b9c17fbfbc50ca34c720589cc77fd72a0307a1fe4d74352adc7f9c8",
+      "complete_stdout_JSON_objects": 4,
+      "progress_object_count": 3,
+      "progress_objects_match_final_rows": true,
+      "final_stdout_JSON_plus_newline_byte_identical_to_result": true,
+      "complete_stream_remainder": "TOTAL: PASS=3 FAIL=0",
+      "API_separate_stderr_field_bytes": 0,
+      "API_merges_process_stderr_into_stdout": true,
+      "scientific_values_exactly_unchanged": true,
+      "complete_recursive_result_differences": [
+        {
+          "path": [
+            "actual_spin_one",
+            "rows",
+            0,
+            "elapsed_seconds"
+          ],
+          "before": 28.95672870799899,
+          "after": 26.152121040970087
+        },
+        {
+          "path": [
+            "actual_spin_one",
+            "rows",
+            1,
+            "elapsed_seconds"
+          ],
+          "before": 27.634882083162665,
+          "after": 25.251188792055473
+        },
+        {
+          "path": [
+            "actual_spin_one",
+            "rows",
+            2,
+            "elapsed_seconds"
+          ],
+          "before": 28.86675341706723,
+          "after": 23.296650500036776
+        },
+        {
+          "path": [
+            "elapsed_seconds"
+          ],
+          "before": 85.60208804206923,
+          "after": 74.89411845779978
+        }
+      ],
+      "physics_primary_rerun_by_checker": false
+    },
+    "EIGHTH": {
+      "publication_tree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/mixed-preparation-publication",
+      "comparison_base_and_observed_HEAD": "cfac353eedae504627196bf9e48009f1b4177f94",
+      "prior_comparison_anchor_seal_sha256": "1cd9b2465460ea2be9a8e488895eac9c9e09125b8669ec0df6b563cc94985147",
+      "prior_anchor_members_preserved": 5,
+      "committed_note_result_and_cache_match_prior_scientific_comparison": true,
+      "only_note_delta_is_exact_visible_metadata_replacement": true,
+      "all_mathematics_and_conditional_audit_caveats_unchanged": true,
+      "runner_byte_identical_to_committed_source": true,
+      "declared_inputs": [
+        {
+          "path": "docs/MIXED_LOW_FIELD_INPUTS_RETAIN_CUBE_BIRTH_ENERGY_AND_COHERENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "04bf4ad2def6a5d8e7a0ab711d4e6e52d1933eb9d28366b1cdb5dee1383d9726",
+          "after_sha256": "79a66e29604172997b9b7f73b42f042acd7ea2e01e6f43285cf462cc84b2566c"
+        },
+        {
+          "path": "docs/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "9e13c659e9a418e9e77e619a3cbd82d371f8219003a92e49fb2cc9ac5f87d6c7",
+          "after_sha256": "9e13c659e9a418e9e77e619a3cbd82d371f8219003a92e49fb2cc9ac5f87d6c7"
+        },
+        {
+          "path": "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+          "after_sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718"
+        },
+        {
+          "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+          "after_sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+        },
+        {
+          "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+          "after_sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+        },
+        {
+          "path": "docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "before_sha256": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7",
+          "after_sha256": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7"
+        }
+      ],
+      "only_changed_declared_input": "docs/MIXED_LOW_FIELD_INPUTS_RETAIN_CUBE_BIRTH_ENERGY_AND_COHERENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "old_declared_input_fingerprint_sha256": "dde9bf0b61f22fd12c6b927c0deb2f8d9da890b9e64bdb8e528b84689622dc77",
+      "fresh_declared_input_fingerprint_sha256": "d095f445456eb9e704659751bed5fd5ecc64c4803c89a874dca2403d4c25662d",
+      "full_cache_byte_reconstruction_matches": true,
+      "cache_bytes": 64168,
+      "execution_status": "ok",
+      "execution_exit_code": 0,
+      "execution_elapsed_seconds": 0.41100001335144043,
+      "timeout_seconds": 120,
+      "complete_merged_stdout_characters": 63785,
+      "complete_merged_stdout_sha256": "dd12660b6da89f9cf7c5a982735cb14382479f3883c3b1cbf03207a735e6a23e",
+      "complete_stdout_JSON_objects": 1,
+      "progress_object_count": 0,
+      "progress_objects_match_final_rows": null,
+      "final_stdout_JSON_plus_newline_byte_identical_to_result": true,
+      "complete_stream_remainder": "TOTAL: PASS=2 FAIL=0",
+      "API_separate_stderr_field_bytes": 0,
+      "API_merges_process_stderr_into_stdout": true,
+      "scientific_values_exactly_unchanged": true,
+      "complete_recursive_result_differences": [
+        {
+          "path": [
+            "elapsed_seconds"
+          ],
+          "before": 0.11676933383569121,
+          "after": 0.13325958396308124
+        }
+      ],
+      "physics_primary_rerun_by_checker": false
+    }
+  },
+  "new_blind_scientific_review_claim": false,
+  "physics_primaries_executed_or_imported": false,
+  "prior_seals_changed": false,
+  "publication_or_audit_state_changed": false,
+  "other_active_scientific_packets_read": false,
+  "citation_manifest_review_in_scope": false,
+  "writes_confined_to_new_assigned_directory": true
+}

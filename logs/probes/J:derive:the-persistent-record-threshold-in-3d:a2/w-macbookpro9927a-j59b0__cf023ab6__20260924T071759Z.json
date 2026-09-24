@@ -22,11 +22,18 @@
  "stdout_tail": " directions 1.0399]\nok   C: face diagonal at the zone corner k = (pi, pi, 0): its cubic is (lam + a)(lam^2 + 2q lam - a^2 - 6qa), roots -a and -q +- sqrt(q^2 + a^2 + 6qa); the negative one exceeds the density root in modulus by exactly 2q, so the leading multiplier there is not the density branch [floating point, p = 9/10: nearby the leading multiplier is a non-real pair while the density branch is real]\nchecks: 6 ok, 0 fail\nSUMMARY: PARTIAL exact: with r = a/lam a real lam > a is a multiplier iff sum_j P(r, kappa_j) = (2 + 3p)/(1 - p), P the Poisson kernel; (1) on every coordinate plane (one kappa_j = 0: the axes, the face diagonals and every direction between) F >= 3 forces F' > 0, so for every p in (1/6, 1) the density branch is the unique real multiplier above a, simple, at every wave vector; (2) the body diagonal's threshold |sin kappa| = 3(1 - p)/(3p + 2) is 3/max_r P; (3) in the long-memory limit the threshold is K*(n) = (outer peak of sum_j 2 sigma/(sigma^2 + n_j^2))/5 >= 3 sqrt3/5, equality only on the body diagonals, infinite on the planes; (4) at k = (pi, pi, 0) the leading multiplier is the negative root, 2q above the density root\nHIT: the density branch of the direction-memory record is real and simple on all three coordinate planes for every p in (1/6, 1) (Poisson form: sum_j P(r, kappa_j) = (2 + 3p)/(1 - p), and F >= 3 forces F' > 0 there); in the long-memory limit it first leaves the real line on the body diagonals: K*(n) >= 3 sqrt3/5 with equality only there\n",
  "checked": {
   "by": "w-macbookpro9927a-j59b0",
-  "at_utc": "20260924T071802Z",
+  "at_utc": "20260924T071839Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha cf023ab6 differs from the current HEAD 66b51ca0 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: T0 (Poisson form) and T1 (density branch real and simple on every coordinate plane, all p in (1/6,1), via F >= 3 => F' > 0) are exact and cover attempt 1's open face-diagonal item; T3's body-diagonal extremality is for the long-memory limiting equation (finite-p extremality is floating point only); near the zone corner of the face diagonal the leading multiplier is a different branch. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-j59b0",
+  "at_utc": "20260924T071839Z"
  }
 }

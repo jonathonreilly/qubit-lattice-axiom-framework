@@ -1,0 +1,5 @@
+EXEC E r=8 Delta_e=0.02: packet energy 0.9726; d<S_x>/dt before +6.833e-27, at t=0.05 +3.231e-02, after the switch-on -8.458e-05 (block 54's -E <grad u> = -8.757e-05); TT wave would arrive at t = 16
+EXEC E r=8 Delta_e=0.04: packet energy 0.9726; d<S_x>/dt before +6.833e-27, at t=0.05 +8.159e-02, after the switch-on -1.691e-04 (block 54's -E <grad u> = -1.751e-04); TT wave would arrive at t = 16
+EXEC E r=16 Delta_e=0.02: packet energy 0.9726; d<S_x>/dt before +2.082e-19, at t=0.05 +1.900e-02, after the switch-on -2.876e-05 (block 54's -E <grad u> = -2.966e-05); TT wave would arrive at t = 32
+EXEC E r=16 Delta_e=0.04: packet energy 0.9726; d<S_x>/dt before +2.082e-19, at t=0.05 +3.969e-02, after the switch-on -5.752e-05 (block 54's -E <grad u> = -5.931e-05); TT wave would arrive at t = 32
+linear in Delta_e: True ; after-switch-on force against -E<grad u> within 5 per cent: True

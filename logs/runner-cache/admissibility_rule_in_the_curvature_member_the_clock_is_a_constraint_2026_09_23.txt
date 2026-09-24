@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_in_the_curvature_member_the_clock_is_a_constraint_2026_09_23.py
+runner_sha256: ddb7f3642d3d658386eaba897b98adbcc7763b16ea51e2b00270edf8a1233911
+input_fingerprint_sha256: af17fe30db551c9af5a26c275d1c1c9afee2d39a63a0c63d0409f8db5ac46447
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_IN_THE_CURVATURE_MEMBER_THE_CLOCK_IS_A_CONSTRAINT_A_BODYS_CHANGE_OF_ENERGY_ACTS_AT_ONCE_UNLESS_FORMATION_KEEPS_ENERGY_LOCAL_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: block 62's second-order member (R1 = -(p.h.p - p^2 tr h), R2 its quadratic partner) is unchanged by every relabelling h -> h + p xi + xi p; on the scalar h = (1 - p p/p^2) phi it gives R1 = 2 p^2 phi and R2 = p^2 phi^2/2 in every direction; for isotropic stretch it reproduces block 60's law p^2 lambda = e/(4 K wbar)
+PASS: C1 T2: with block 62's kinetic term (alpha h'_ij h'_ij + beta (tr h')^2)/wbar and no rate of change of a rate, the rate's equation is K wbar R1 = e, i.e. 2 K wbar p^2 phi = e(t): a constraint at each label time; the two transverse traceless strains obey (4 alpha/wbar) a'' = -K wbar p^2 a (speed^2 = K wbar^2/(4 alpha), block 62 T4) and a body at rest does not source them; the longitudinal relabelling obeys d/dt[(alpha + beta) xi' + beta phi'] = 0
+PASS: D1 T3: eliminating the scalar length and the relabelling gives u(k,t) = -e(k,t)/(4 K wbar p^2) + alpha(alpha + 3 beta) e''(k,t)/(K^2 wbar^3 (alpha + beta) p^4): the clock is fixed at each label time by the content and its second derivative, with block 60's static law as the limit, and exactly the instantaneous Poisson field when alpha + 3 beta = 0
+PASS: E1 T4: a smooth switch-on of Delta_e over tau_r moves the clock at label time 0+ at every wave vector by 6 alpha(alpha + 3 beta) Delta_e/(K^2 wbar^3 (alpha + beta) p^4 tau_r^2), and after the switch-on the clock has jumped by the Poisson field of Delta_e, whatever alpha and beta: nothing waits for the strains; at alpha + beta = 0 the relabelling equation reads beta phi' = constant, so the energy of a body at rest can change only at a constant rate and cannot jump
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the member's relabelling blindness for symbolic h, p and xi
+per_site: not applicable - the statements are per wave vector
+per_mode: executed - the reduced equations at a general wave vector (rotated to one axis), symbolic in K, wbar, alpha, beta, p; control: packets on a plane slice
+per_block: executed - a smooth switch-on of a body's energy, series at label time zero
+lattice_wide: every lattice wave vector at second order about the uniform state (O(3)-covariant member and kinetic term); blocks 60 and 62's clauses supplied; no statement beyond second order or for moving bodies
+PASS: G1 the five N5 resolution lines are printed
+scope: in the curvature member with block 62's kinetic term the clock is a constraint - u = -e/(4 K wbar p^2) + alpha(alpha + 3 beta) e''/(K^2 wbar^3 (alpha + beta) p^4); only transverse traceless strains travel; a change of a body's energy acts at once; at alpha + beta = 0 a body at rest cannot change its energy by a jump; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

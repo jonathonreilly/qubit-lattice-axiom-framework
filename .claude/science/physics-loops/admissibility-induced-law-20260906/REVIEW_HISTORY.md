@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 101 — author checks (not a review PASS)
+Built from a probes worker's result; its check re-run (14/14) and ported; prior art placed (blocks 57, 60 T5, 62 T4, 58, 67); names kept out of theorem sections; census 6/6 in family.

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_records_carve_kitaev_models_at_the_compass_point_2026_09_24.py
 runner_sha256: 773a74b2c6554627430bd37b1926be6b2e77ea3505a6afd4a39245eee6aff162
-input_fingerprint_sha256: 15f6ceeb94f32b4ec1bed774a0c029f28cc5bc8ded652c8855530f636db5e77b
+input_fingerprint_sha256: 98d1862afbf149e17cc8e001c12020e45b502dd8559e4facc83a0a5c87db9d84
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 15.44
+elapsed_sec: 16.33
 status: ok
 ----- stdout -----
 A. carvings of the lattice by records

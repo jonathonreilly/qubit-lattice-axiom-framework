@@ -1,0 +1,7 @@
+PASS step1 lattice law: Hamilton acc equals the mixture law and the step-1 intermediate form, for arbitrary a(x), c(x)
+PASS step3 limits: slow fall -c^2 dlog a, transverse massless bend -c^2 dlog c; a=w, c=w^2 is -w^4 and -2 w^4 (hence -du and -2 du at w=1); a=c=w is block 54
+PASS step2 rational points: 72 jets off the origin, including a three-direction gradient and m=0
+PASS step4 scale covariance: degree-1 monomials of the two endpoints stay at ratio 1 on a uniform gradient; c=w^2/wbar has ratio 2 and is not depth-free
+PASS finite difference: central difference of v along the Hamilton field, worst abs error 1.371e-10
+HIT: confirmed - the lattice family E^2 = a^2 m^2 + c^2 sum sin^2 k has the ray law dv_j/dt = -c^2 cos(2k_j)[a^2 m^2 d_j log a + c^2 S d_j log c]/E^2 + 2 v_j(v . grad log c); slow bodies fall at -c^2 grad log a and a transverse massless ray bends at -c^2 grad log c; a degree-1 bond rate of the two endpoint rates keeps that ratio at 1
+SUMMARY: confirmed the Hamilton identity, the rational jets, the two limits (unit-scale coefficients -1 and -2, and -81 and -162 at w=3), the block-54 reduction, and the scale-covariance exclusion. The 40x64 slab was not re-executed.

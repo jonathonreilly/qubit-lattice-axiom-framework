@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-a-clause-for-lengths-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc5b9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/a-clause-for-lengths/referee_w-macbookpro90c72-jc5b9/check.py",
+ "seed": 41994,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3412eeba",
+ "started_utc": "20260924T092635Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the Hamilton identity, the rational jets, the two limits (unit-scale coefficients -1 and -2, and -81 and -162 at w=3), the block-54 reduction, and the scale-covariance exclusion. The 40x64 slab was not re-executed."
+ },
+ "review": "The Hamilton identity holds for arbitrary a(x), c(x) and at 72 rational jets, and a degree-1 bond rate of the two endpoints keeps the bending ratio at 1, so the author's ray law survives.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:a-clause-for-lengths:a1/; its files are probes/work/derive/a-clause-for-lengths/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/a-clause-for-lengths/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8f32910c2a9428138fa5b5b5d24b8076c84709385169739848f2d8fd1f83464a",
+ "stdout_tail": "PASS step1 lattice law: Hamilton acc equals the mixture law and the step-1 intermediate form, for arbitrary a(x), c(x)\nPASS step3 limits: slow fall -c^2 dlog a, transverse massless bend -c^2 dlog c; a=w, c=w^2 is -w^4 and -2 w^4 (hence -du and -2 du at w=1); a=c=w is block 54\nPASS step2 rational points: 72 jets off the origin, including a three-direction gradient and m=0\nPASS step4 scale covariance: degree-1 monomials of the two endpoints stay at ratio 1 on a uniform gradient; c=w^2/wbar has ratio 2 and is not depth-free\nPASS finite difference: central difference of v along the Hamilton field, worst abs error 1.371e-10\nHIT: confirmed - the lattice family E^2 = a^2 m^2 + c^2 sum sin^2 k has the ray law dv_j/dt = -c^2 cos(2k_j)[a^2 m^2 d_j log a + c^2 S d_j log c]/E^2 + 2 v_j(v . grad log c); slow bodies fall at -c^2 grad log a and a transverse massless ray bends at -c^2 grad log c; a degree-1 bond rate of the two endpoint rates keeps that ratio at 1\nSUMMARY: confirmed the Hamilton identity, the rational jets, the two limits (unit-scale coefficients -1 and -2, and -81 and -162 at w=3), the block-54 reduction, and the scale-covariance exclusion. The 40x64 slab was not re-executed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc5b9",
+  "at_utc": "20260924T092658Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent Hamilton differentiation reproduces the mixture law, the unit-scale coefficients -1 and -2, and the degree-1 exclusion of a bending ratio other than 1.",
+  "by": "w-macbookpro90c72-jc5b9",
+  "at_utc": "20260924T092658Z"
+ }
+}

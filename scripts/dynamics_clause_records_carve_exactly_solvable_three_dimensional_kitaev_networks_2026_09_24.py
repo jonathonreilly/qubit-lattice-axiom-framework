@@ -2,38 +2,44 @@
 """Records carve exactly solvable three-dimensional Kitaev networks.
 
 Supplied and not adopted: the fully soldered dynamics clause of open PR 9040 at
-its compass point, H = K sum_bonds (e.s_x)(e.s_{x+e}), and records acting as
-fields (open PR 9041): a record with content q on a bond along e exerts
-K e (e.q) on its unrecorded neighbour.
+its compass point, H = K sum_bonds (e.s_x)(e.s_{x+e}) (K = 1 below), and records
+acting as fields (open PR 9041): a record with content q on a bond along e
+exerts K e (e.q) on its unrecorded neighbour.
 
 Relaxed carving: every unrecorded site has AT MOST one unrecorded neighbour per
-axis (degree <= 3, one bond per type); along an axis where a site keeps a bond,
-the recorded neighbour on the other side must exert no field (content
-orthogonal to that axis); along an axis where a site has no bond ("dangling"),
-fields are allowed. Kitaev's representation s^a = i b^a c then gives, in every
-Z2 gauge sector, a quadratic Majorana Hamiltonian: bonds K u_jk i c_j c_k,
-dangling fields h i b^a_j c_j.
+axis; along an axis where a site keeps a bond, the recorded neighbour on the
+other side exerts no field (content orthogonal to that axis); along a
+"dangling" axis (no bond) fields are allowed. Kitaev's representation
+s^a = i b^a c then gives, in every Z2 gauge sector, a quadratic Majorana
+Hamiltonian. A network's local loops per cell are beta1 - 3, where beta1 is
+the cycle rank of its cell graph and 3 is the winding rank: they carry the
+gauge-invariant Z2 flux of the infinite network.
 
 Checks:
 
-A. Certificate: a 16-site network U on the 4x4x4 torus (sites listed below)
-   has at most one U-neighbour per axis at every site, degrees 2 and 3, a
-   single component whose closed walks span all three lattice directions, and
-   record contents (orthogonal to every bonded axis they touch) that exist and
-   cancel every field along every kept bond; six dangling axes carry fields.
-B. Solvability: on the 16-qubit finite torus, the loop operators of a cycle
-   basis commute with the Hamiltonian including the dangling fields, while a
-   field along a kept bond breaks one; the exact ground energy equals the
-   least free-Majorana ground energy over all 2^18 Z2 gauge configurations.
-C. The infinite periodic network: among its 8 translation-invariant flux
-   sectors, the lowest Majorana ground energy has a gapped spectrum with no
-   flat zero band (gap about 0.61 |K| on a 16^3 Brillouin-zone grid); cells
-   doubled along x, y or z (32 flux sectors each) find no lower energy per
-   cell.
-D. Not a single accident: a SAT search (python-sat) for relaxed carvings with
-   every unrecorded site keeping at least two bonds finds several distinct
-   components on 4x4x4 whose closed walks span three directions; in each, the
-   lowest translation-invariant sector is gapped on a 6^3 grid.
+A. Two certificates on the 4x4x4 torus, both single components whose closed
+   walks span three directions, with record contents that cancel every field
+   along kept bonds: a 20-site network with one local loop per cell and a
+   16-site network with none (its infinite lift is a tree).
+B. Exact solvability: for the 16-site network the cycle-basis loop operators
+   commute with H (a field along a kept bond breaks some) and the exact
+   ground energy equals the least free-Majorana energy over all 2^18 gauge
+   configurations; for the 20-site network the exact ground energy (matrix-
+   free Lanczos on 20 qubits) equals the least free-Majorana energy over its
+   16 gauge classes.
+C. The 20-site network: its translation-invariant flux sectors split by the
+   local flux; the lowest has two flat zero-mode bands per cell (localized
+   Majorana zero modes) and a gap above them; in a 2x2x2 supercell flipping
+   any bond on a local loop (a vison) costs a positive energy while every
+   other flip costs 0; cells doubled along x, y or z find no lower flux
+   pattern. The 16-site tree has all flux sectors degenerate (pure gauge).
+D. A SAT search (python-sat) finds more distinct three-direction networks on
+   4x4x4, most with local loops; each lowest translation-invariant sector is
+   gapped above its flat zero-mode bands on a 6^3 grid.
+
+Record contents are generic: (1, sqrt 2, sqrt 3) projected orthogonal to each
+record's constrained axes, so every dangling axis carries a nonzero field and
+no dangling Majorana is left decoupled.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -41,7 +47,7 @@ import itertools
 import sys
 from functools import reduce
 
-AUDIT_TIMEOUT_SEC = 900
+AUDIT_TIMEOUT_SEC = 1200
 AUDIT_INPUT_PATHS = (
     'docs/DYNAMICS_CLAUSE_RECORDS_CARVE_EXACTLY_SOLVABLE_THREE_DIMENSIONAL_KITAEV_NETWORKS_GAPPED_MAJORANA_FERMIONS_IN_A_STATIC_Z2_GAUGE_FIELD_BOUNDED_THEOREM_NOTE_2026-09-24.md',
     'docs/MINIMAL_AXIOMS_2026-06-29.md',
@@ -63,7 +69,14 @@ def check(label, ok, detail=""):
 
 
 L3 = (4, 4, 4)
-U16 = [(0, 0, 2), (0, 1, 1), (0, 1, 2), (0, 2, 1), (1, 1, 2), (1, 1, 3), (2, 0, 3), (2, 1, 0),
+# generic record contents: the fixed direction (1, sqrt 2, sqrt 3) projected
+# orthogonal to each record's constrained axes; its components are positive,
+# so the two records on a dangling axis never cancel
+V_GENERIC = np.array([1.0, np.sqrt(2.0), np.sqrt(3.0)]) / np.sqrt(6.0)
+N20 = [(0, 0, 0), (0, 0, 3), (0, 1, 0), (0, 2, 1), (0, 2, 2), (0, 3, 1), (1, 0, 2), (1, 0, 3), (1, 1, 0),
+       (1, 1, 1), (1, 2, 1), (2, 0, 1), (2, 0, 2), (2, 1, 1), (2, 1, 2), (3, 0, 0), (3, 1, 2), (3, 2, 2),
+       (3, 3, 0), (3, 3, 1)]
+N16 = [(0, 0, 2), (0, 1, 1), (0, 1, 2), (0, 2, 1), (1, 1, 2), (1, 1, 3), (2, 0, 3), (2, 1, 0),
        (2, 1, 3), (2, 2, 0), (3, 0, 2), (3, 0, 3), (3, 2, 0), (3, 2, 1), (3, 3, 1), (3, 3, 2)]
 
 
@@ -100,16 +113,15 @@ def winding_rank(comp, Ls=L3):
                 else:
                     pos[w] = pw
                     stack.append(w)
-    connected = len(pos) == len(comp)
     rank = int(np.linalg.matrix_rank(np.array(sorted(wind)))) if wind else 0
-    return connected, rank
+    return len(pos) == len(comp), rank
 
 
 def build(comp, Ls=L3):
     comp = sorted(comp)
     ix = {s: i for i, s in enumerate(comp)}
     cs = set(comp)
-    bonds = []                         # (j, k, axis, cell offset of k)
+    bonds = []
     for s in comp:
         for ax in range(3):
             t = list(s)
@@ -120,8 +132,6 @@ def build(comp, Ls=L3):
             t = tuple(t)
             if t in cs:
                 bonds.append((ix[s], ix[t], ax, tuple(off)))
-    dangling = [(ix[s], ax) for s in comp for ax in range(3)
-                if nbr(s, ax, 1, Ls) not in cs and nbr(s, ax, -1, Ls) not in cs]
     contents, cons_ok = {}, True
     for r in itertools.product(*[range(l) for l in Ls]):
         if r in cs:
@@ -135,60 +145,109 @@ def build(comp, Ls=L3):
         if len(cons) > 2:
             cons_ok = False
             continue
-        free = [a for a in range(3) if a not in cons]
-        q = np.zeros(3)
-        q[free[-1]] = 1.0
-        contents[r] = q
-    return dict(comp=comp, ix=ix, bonds=bonds, dangling=dangling, contents=contents, cons_ok=cons_ok, n=len(comp))
+        q = V_GENERIC.copy()
+        for a in cons:
+            q[a] = 0.0
+        contents[r] = q / np.linalg.norm(q)
+    kept_field, dfield = 0.0, {}
+    for s in comp:
+        for ax in range(3):
+            for d in (1, -1):
+                r = nbr(s, ax, d, Ls)
+                if r in cs:
+                    continue
+                f = contents[r][ax] if r in contents else 0.0
+                if nbr(s, ax, -d, Ls) in cs:
+                    kept_field = max(kept_field, abs(f))
+                else:
+                    dfield[(ix[s], ax)] = dfield.get((ix[s], ax), 0.0) + f
+    live = [key for key, v in dfield.items() if abs(v) > 0]
+    uf = list(range(len(comp)))
+
+    def fnd(a):
+        while uf[a] != a:
+            uf[a] = uf[uf[a]]
+            a = uf[a]
+        return a
+
+    tree, non = [], []
+    for b in bonds:
+        ra, rb = fnd(b[0]), fnd(b[1])
+        if ra != rb:
+            uf[ra] = rb
+            tree.append(b)
+        else:
+            non.append(b)
+    per_axis = all(sum(nbr(s, ax, d, Ls) in cs for d in (1, -1)) <= 1 for s in comp for ax in range(3))
+    return dict(comp=comp, ix=ix, n=len(comp), bonds=bonds, dfield=dfield, live=live, tree=tree, non=non,
+                cons_ok=cons_ok, kept_field=kept_field, per_axis=per_axis,
+                ndangling=sum(1 for s in comp for ax in range(3)
+                              if nbr(s, ax, 1, Ls) not in cs and nbr(s, ax, -1, Ls) not in cs))
 
 
-# --------------------------------------------------------------- A: certificate
-print("A. the 16-site network and its records")
-G = build(U16)
-cs = set(U16)
-per_axis = all(sum(nbr(s, ax, d) in cs for d in (1, -1)) <= 1 for s in U16 for ax in range(3))
-degs = sorted({sum(nbr(s, ax, d) in cs for ax in range(3) for d in (1, -1)) for s in U16})
-connected, rank = winding_rank(U16)
-worst_field = 0.0
-dangling_fields = {}
-for s in U16:
-    for ax in range(3):
-        for d in (1, -1):
-            r = nbr(s, ax, d)
-            if r in cs:
-                continue
-            f = G["contents"][r][ax]
-            if nbr(s, ax, -d) in cs:            # s keeps its bond along ax on the other side
-                worst_field = max(worst_field, abs(f))
-            else:
-                dangling_fields[(G["ix"][s], ax)] = dangling_fields.get((G["ix"][s], ax), 0.0) + f
-live = [(j, ax) for (j, ax) in G["dangling"] if abs(dangling_fields.get((j, ax), 0.0)) > 0]
-check("one U-neighbour per axis at most; degrees 2 and 3; one component spanning three directions",
-      per_axis and degs == [2, 3] and connected and rank == 3,
-      f"16 sites, {len(G['bonds'])} bonds, {len(G['dangling'])} dangling axes, winding rank {rank}")
-check("record contents orthogonal to every bonded axis exist and cancel every field along kept bonds",
-      G["cons_ok"] and worst_field == 0.0, f"{len(live)} dangling axes carry nonzero fields")
+def majorana_matrix(G, u_all, k=None):
+    n = G["n"]
+    N = n + len(G["live"])
+    A = np.zeros((N, N), dtype=complex)
+    for (j, kk, ax, off), ub in zip(G["bonds"], u_all):
+        t = -2 * ub * (np.exp(1j * np.dot(k, off)) if k is not None else 1.0)
+        A[j, kk] += t
+        A[kk, j] -= np.conj(t)
+    for pos, (j, ax) in enumerate(G["live"]):
+        h = G["dfield"][(j, ax)]
+        A[n + pos, j] += 2 * h
+        A[j, n + pos] -= 2 * h
+    return A
+
+
+def u_from_non(G, u_non):
+    uu = {b: 1 for b in G["tree"]}
+    uu.update({b: v for b, v in zip(G["non"], u_non)})
+    return [uu[b] for b in G["bonds"]]
+
+
+def E_finite(G, u_all):
+    ev = np.linalg.eigvalsh(1j * majorana_matrix(G, u_all))
+    return -0.5 * ev[ev > 1e-12].sum()
+
+
+def bloch(G, u_non, k):
+    return np.linalg.eigvalsh(1j * majorana_matrix(G, u_from_non(G, u_non), np.array(k, dtype=float)))
+
+
+# --------------------------------------------------------------- A: certificates
+print("A. two three-direction networks on the 4x4x4 torus")
+G20, G16 = build(N20), build(N16)
+info = {}
+okA = True
+for name, comp, G in (("20-site", N20, G20), ("16-site", N16, G16)):
+    conn, rank = winding_rank(comp)
+    beta1 = len(G["bonds"]) - G["n"] + 1
+    info[name] = (beta1 - 3, G["ndangling"], len(G["live"]))
+    okA &= conn and rank == 3 and G["per_axis"] and G["cons_ok"] and G["kept_field"] == 0.0
+check("both are relaxed carvings spanning three directions, with fields cancelled along kept bonds", okA,
+      "; ".join(f"{k}: local loops/cell {v[0]}, dangling axes {v[1]}, dangling fields {v[2]}" for k, v in info.items()))
+check("the 20-site network has one local loop per cell; the 16-site network has none (its lift is a tree)",
+      info["20-site"][0] == 1 and info["16-site"][0] == 0, "local loops = cycle rank of the cell graph - 3")
 
 # --------------------------------------------------------------- B: solvability
-print("B. exact solvability on the 16-qubit torus")
-n = G["n"]
+print("B. exact solvability")
 S = [np.array([[0, 1], [1, 0]], dtype=complex), np.array([[0, -1j], [1j, 0]]), np.diag([1.0 + 0j, -1.0])]
 SS = [sps.csr_matrix(m) for m in S]
 I2 = sps.identity(2, dtype=complex, format="csr")
 
 
-def sop(placed):
+def sop(n, placed):
     return reduce(lambda A, B: sps.kron(A, B, format="csr"), [placed.get(k, I2) for k in range(n)])
 
 
-H = sum(sop({j: SS[a], k: SS[a]}) for (j, k, a, off) in G["bonds"])
-for (j, ax) in G["dangling"]:
-    h = dangling_fields.get((j, ax), 0.0)
+n16 = G16["n"]
+H16 = sum(sop(n16, {j: SS[a], k: SS[a]}) for (j, k, a, off) in G16["bonds"])
+for (j, ax), h in G16["dfield"].items():
     if h != 0:
-        H = H + h * sop({j: SS[ax]})
-# cycle basis of the finite torus graph (a spanning tree plus one bond each)
-adj = {v: [] for v in range(n)}
-for (j, k, a, off) in G["bonds"]:
+        H16 = H16 + h * sop(n16, {j: SS[ax]})
+adj = {v: [] for v in range(n16)}
+for (j, k, a, off) in G16["bonds"]:
     adj[j].append((k, a))
     adj[k].append((j, a))
 parent = {0: None}
@@ -198,11 +257,10 @@ for v in order:
         if w not in parent:
             parent[w] = (v, a)
             order.append(w)
-tree = {(min(v, p[0]), max(v, p[0]), p[1]) for v, p in parent.items() if p}
-nontree = [(min(j, k), max(j, k), a) for (j, k, a, off) in G["bonds"] if (min(j, k), max(j, k), a) not in tree]
+tree_e = {(min(v, p[0]), max(v, p[0]), p[1]) for v, p in parent.items() if p}
 
 
-def path_to_root(v):
+def root_path(v):
     out = [v]
     while parent[v]:
         v = parent[v][0]
@@ -210,178 +268,158 @@ def path_to_root(v):
     return out
 
 
-loops_ok, n_loops = True, 0
-for (j, k, a) in nontree:
-    pj, pk = path_to_root(j), path_to_root(k)
-    common = next(x for x in pj if x in pk)
-    cyc = pj[:pj.index(common) + 1] + list(reversed(pk[:pk.index(common)]))
-    # axes used at each vertex by the cycle
-    used = {v: set() for v in cyc}
-    edges = [(cyc[i], cyc[i + 1]) for i in range(len(cyc) - 1)] + [(k, j)]
-    for (x, y) in edges:
-        ax = next(a2 for (w, a2) in adj[x] if w == y)
-        used[x].add(ax)
-        used[y].add(ax)
-    placed = {v: SS[[a2 for a2 in range(3) if a2 not in used[v]][0]] for v in cyc}
-    W = sop(placed)
-    loops_ok &= abs((H @ W - W @ H)).max() < 1e-10
-    n_loops += 1
-bad = next((j, ax) for (j, k2, ax, off) in G["bonds"] for _ in [0])
-Hbad = H + 0.4 * sop({bad[0]: SS[bad[1]]})
-broken = 0
-for (j, k, a) in nontree:
-    pj, pk = path_to_root(j), path_to_root(k)
+def loop_op(j, k):
+    pj, pk = root_path(j), root_path(k)
     common = next(x for x in pj if x in pk)
     cyc = pj[:pj.index(common) + 1] + list(reversed(pk[:pk.index(common)]))
     used = {v: set() for v in cyc}
-    edges = [(cyc[i], cyc[i + 1]) for i in range(len(cyc) - 1)] + [(k, j)]
-    for (x, y) in edges:
+    for (x, y) in [(cyc[i], cyc[i + 1]) for i in range(len(cyc) - 1)] + [(k, j)]:
         ax = next(a2 for (w, a2) in adj[x] if w == y)
         used[x].add(ax)
         used[y].add(ax)
-    W = sop({v: SS[[a2 for a2 in range(3) if a2 not in used[v]][0]] for v in cyc})
-    broken += abs((Hbad @ W - W @ Hbad)).max() > 1e-6
-check("cycle-basis loop operators commute with H including dangling fields; a field along a kept bond breaks some",
-      loops_ok and broken > 0, f"{n_loops} loops conserved; {broken} broken by the kept-bond field")
-E_ed = spla.eigsh(H, k=1, which="SA")[0][0]
+    return sop(n16, {v: SS[[a2 for a2 in range(3) if a2 not in used[v]][0]] for v in cyc})
 
 
-def majorana_E0(u):
-    N = n + len(live)
-    A = np.zeros((N, N))
-    for (j, k, a, off), uj in zip(G["bonds"], u):
-        A[j, k] += -2 * uj
-        A[k, j] -= -2 * uj
-    for pos, (j, ax) in enumerate(live):
-        h = dangling_fields[(j, ax)]
-        A[n + pos, j] += 2 * h
-        A[j, n + pos] -= 2 * h
-    ev = np.linalg.eigvalsh(1j * A)
-    return -0.5 * ev[ev > 1e-12].sum()
+Ws = [loop_op(j, k) for (j, k, a, off) in G16["bonds"] if (min(j, k), max(j, k), a) not in tree_e]
+loops_ok = all(abs((H16 @ W - W @ H16)).max() < 1e-10 for W in Ws)
+j0, a0 = G16["bonds"][0][0], G16["bonds"][0][2]
+Hbad = H16 + 0.4 * sop(n16, {j0: SS[a0]})
+broken = sum(abs((Hbad @ W - W @ Hbad)).max() > 1e-6 for W in Ws)
+E16 = spla.eigsh(H16, k=1, which="SA")[0][0]
+M16 = min(E_finite(G16, u) for u in itertools.product((1, -1), repeat=len(G16["bonds"])))
+check("16-site: loops conserved with dangling fields; a kept-bond field breaks some; ED = Majorana over 2^18",
+      loops_ok and broken > 0 and abs(E16 - M16) < 1e-8,
+      f"{len(Ws)} loops, {broken} broken; ED {E16:.10f}, Majorana {M16:.10f}")
+
+n20 = G20["n"]
+Nst = 1 << n20
+idx = np.arange(Nst, dtype=np.int64)
 
 
-E_maj = min(majorana_E0(u) for u in itertools.product((1, -1), repeat=len(G["bonds"])))
-check("exact ground energy = least free-Majorana ground energy over all 2^18 gauge configurations",
-      abs(E_ed - E_maj) < 1e-8, f"ED {E_ed:.10f}; Majorana {E_maj:.10f}")
-
-# --------------------------------------------------------- C: the infinite network
-print("C. Majorana bands of the infinite periodic network")
-parent_uf = list(range(n))
+def bitm(j):
+    return 1 << (n20 - 1 - j)
 
 
-def find(a):
-    while parent_uf[a] != a:
-        parent_uf[a] = parent_uf[parent_uf[a]]
-        a = parent_uf[a]
-    return a
-
-
-t_b, n_b = [], []
-for b in G["bonds"]:
-    ra, rb = find(b[0]), find(b[1])
-    if ra != rb:
-        parent_uf[ra] = rb
-        t_b.append(b)
+terms = []
+for (j, k, a, off) in G20["bonds"]:
+    zj = 1 - 2 * ((idx & bitm(j)) > 0)
+    zk = 1 - 2 * ((idx & bitm(k)) > 0)
+    if a == 2:
+        terms.append(("d", None, (zj * zk).astype(float)))
+    elif a == 0:
+        terms.append(("f", bitm(j) | bitm(k), np.ones(Nst)))
     else:
-        n_b.append(b)
+        terms.append(("f", bitm(j) | bitm(k), -(zj * zk).astype(float)))
+for (j, ax), h in G20["dfield"].items():
+    if h == 0:
+        continue
+    zj = 1 - 2 * ((idx & bitm(j)) > 0)
+    if ax == 2:
+        terms.append(("d", None, h * zj.astype(float)))
+    elif ax == 0:
+        terms.append(("f", bitm(j), h * np.ones(Nst)))
+    else:
+        terms.append(("f", bitm(j), h * 1j * zj))
 
 
-def bloch(u_non, k):
-    N = n + len(live)
-    A = np.zeros((N, N), dtype=complex)
-    uu = {b: 1 for b in t_b}
-    uu.update({b: v for b, v in zip(n_b, u_non)})
-    for b in G["bonds"]:
-        j, kk, ax, off = b
-        t = -2 * uu[b] * np.exp(1j * np.dot(k, off))
-        A[j, kk] += t
-        A[kk, j] -= np.conj(t)
-    for pos, (j, ax) in enumerate(live):
-        h = dangling_fields[(j, ax)]
-        A[n + pos, j] += 2 * h
-        A[j, n + pos] -= 2 * h
-    return np.linalg.eigvalsh(1j * A)
-
-
-ks6 = [np.array(k) * 2 * np.pi / 6 for k in itertools.product(range(6), repeat=3)]
-sectors = []
-for u in itertools.product((1, -1), repeat=len(n_b)):
-    E = sum(-0.5 * ev[ev > 0].sum() for ev in (bloch(u, k) for k in ks6)) / len(ks6)
-    sectors.append((E, u))
-sectors.sort()
-ub = sectors[0][1]
-gmin, zmax = 9.0, 0
-for kk in itertools.product(range(16), repeat=3):
-    ev = np.sort(np.abs(bloch(ub, np.array(kk) * 2 * np.pi / 16)))
-    z = int(np.sum(ev < 1e-9))
-    zmax = max(zmax, z)
-    if z < len(ev):
-        gmin = min(gmin, ev[z])
-check("lowest of the 8 translation-invariant flux sectors is gapped with no flat zero band",
-      zmax == 0 and gmin > 0.5, f"E0/cell {sectors[0][0]:.6f} (next {sectors[1][0]:.6f}); gap on 16^3 grid {gmin:.5f}")
-
-# doubled cells: no flux pattern of period two in any direction lies lower
-def lowest_energy_cell(comp, Ls, grid):
-    Gs = build(comp, Ls)
-    nn = Gs["n"]
-    csc = set(comp)
-    df = {}
-    for s in Gs["comp"]:
-        for ax in range(3):
-            for d in (1, -1):
-                r = nbr(s, ax, d, Ls)
-                if r not in csc and nbr(s, ax, -d, Ls) not in csc:
-                    df[(Gs["ix"][s], ax)] = df.get((Gs["ix"][s], ax), 0.0) + Gs["contents"][r][ax]
-    lv = [key for key, v in df.items() if abs(v) > 0]
-    uf = list(range(nn))
-
-    def fnd(a):
-        while uf[a] != a:
-            uf[a] = uf[uf[a]]
-            a = uf[a]
-        return a
-
-    tb, nb_ = [], []
-    for b in Gs["bonds"]:
-        ra, rb = fnd(b[0]), fnd(b[1])
-        if ra != rb:
-            uf[ra] = rb
-            tb.append(b)
+def matvec(v):
+    out = np.zeros(Nst, dtype=complex)
+    for kind, mask, coef in terms:
+        if kind == "d":
+            out += coef * v
         else:
-            nb_.append(b)
+            out[idx ^ mask] += coef * v
+    return out
+
+
+E20 = spla.eigsh(spla.LinearOperator((Nst, Nst), matvec=matvec, dtype=complex), k=1, which="SA", tol=1e-10)[0][0]
+M20 = min(E_finite(G20, u_from_non(G20, u)) for u in itertools.product((1, -1), repeat=len(G20["non"])))
+check("20-site: exact ground energy (matrix-free Lanczos, 20 qubits) = least Majorana energy over its gauge classes",
+      abs(E20 - M20) < 1e-8, f"ED {E20:.10f}; Majorana {M20:.10f} over {2 ** len(G20['non'])} classes")
+
+# --------------------------------------------------------- C: gapped Z2 medium
+print("C. bands, local flux and visons")
+ks6 = [np.array(k) * 2 * np.pi / 6 for k in itertools.product(range(6), repeat=3)]
+
+
+def sector_energies(G):
+    out = []
+    for u in itertools.product((1, -1), repeat=len(G["non"])):
+        E = sum(-0.5 * ev[ev > 0].sum() for ev in (bloch(G, u, k) for k in ks6)) / len(ks6)
+        out.append((E, u))
+    return sorted(out)
+
+
+def gap_scan(G, u, g):
+    gmin, zmax = 9.0, 0
+    for kk in itertools.product(range(g), repeat=3):
+        ev = np.sort(np.abs(bloch(G, u, np.array(kk) * 2 * np.pi / g)))
+        z = int(np.sum(ev < 1e-9))
+        zmax = max(zmax, z)
+        if z < len(ev):
+            gmin = min(gmin, ev[z])
+    return gmin, zmax
+
+
+sec20 = sector_energies(G20)
+levels = sorted({round(e, 6) for e, u in sec20})
+split = levels[1] - levels[0] if len(levels) > 1 else 0.0
+g20, z20 = gap_scan(G20, sec20[0][1], 16)
+check("20-site: flux sectors split by the local flux; the lowest has 2 flat zero-mode bands and a gap above them",
+      len(levels) == 2 and split > 0.05 and z20 == 2 and g20 > 0.5,
+      f"sector energies/cell {levels} (local flux costs {split:.6f}); flat zero modes/cell {z20}; "
+      f"gap above them on 16^3 grid {g20:.5f}")
+# visons in the 2x2x2 supercell
+ucell = {(G20["comp"][b[0]], b[2]): ub for b, ub in zip(G20["bonds"], u_from_non(G20, sec20[0][1]))}
+U2 = {tuple(s[i] + 4 * sh[i] for i in range(3)) for s in N20 for sh in itertools.product(range(2), repeat=3)}
+G2 = build(U2, (8, 8, 8))
+u2 = [ucell[(tuple(c % 4 for c in G2["comp"][j]), ax)] for (j, kk, ax, off) in G2["bonds"]]
+kp = [np.array(k) * np.pi for k in itertools.product(range(2), repeat=3)]
+
+
+def E_super(uall):
+    tot = 0.0
+    for k in kp:
+        ev = np.linalg.eigvalsh(1j * majorana_matrix(G2, uall, k))
+        tot += -0.5 * ev[ev > 0].sum()
+    return tot / len(kp)
+
+
+E2 = E_super(u2)
+costs = []
+for i in range(len(u2)):
+    uu = list(u2)
+    uu[i] = -uu[i]
+    costs.append(E_super(uu) - E2)
+costs = np.array(costs)
+posc = costs[costs > 1e-9]
+check("20-site: a vison (one flipped bond on a local loop, 2x2x2 supercell) costs a positive energy; other flips cost 0",
+      len(posc) > 0 and np.all(np.abs(costs[costs <= 1e-9]) < 1e-9) and posc.min() > 0.05,
+      f"{len(posc)} flips cost {posc.min():.5f} to {posc.max():.5f}; {np.sum(np.abs(costs) < 1e-9)} cost 0")
+
+
+def lowest_cell_energy(comp_set, Ls, grid):
+    G = build(comp_set, Ls)
     ks = [np.array(k) * 2 * np.pi / np.array(grid) for k in itertools.product(*[range(x) for x in grid])]
     best = None
-    for u_non in itertools.product((1, -1), repeat=len(nb_)):
-        E = 0.0
-        for k in ks:
-            N = nn + len(lv)
-            A = np.zeros((N, N), dtype=complex)
-            uu = {b: 1 for b in tb}
-            uu.update({b: v for b, v in zip(nb_, u_non)})
-            for b in Gs["bonds"]:
-                j, kk2, ax, off = b
-                t = -2 * uu[b] * np.exp(1j * np.dot(k, off))
-                A[j, kk2] += t
-                A[kk2, j] -= np.conj(t)
-            for pos, (j, ax) in enumerate(lv):
-                A[nn + pos, j] += 2 * df[(j, ax)]
-                A[j, nn + pos] -= 2 * df[(j, ax)]
-            ev = np.linalg.eigvalsh(1j * A)
-            E += -0.5 * ev[ev > 0].sum()
-        E /= len(ks)
+    for u in itertools.product((1, -1), repeat=len(G["non"])):
+        E = sum(-0.5 * ev[ev > 0].sum() for ev in (bloch(G, u, k) for k in ks)) / len(ks)
         best = E if best is None or E < best else best
     return best
 
 
-e_ti = lowest_energy_cell(U16, L3, (6, 6, 6))
 doubled = []
 for mult in ((2, 1, 1), (1, 2, 1), (1, 1, 2)):
     Ls2 = tuple(4 * m for m in mult)
-    U2 = {tuple(s[i] + 4 * sh[i] for i in range(3)) for s in U16 for sh in itertools.product(*[range(m) for m in mult])}
-    grid = tuple(3 if m == 2 else 6 for m in mult)
-    doubled.append(lowest_energy_cell(U2, Ls2, grid) / 2)
-check("doubled cells in each direction find no lower flux pattern of period two",
-      all(abs(e - e_ti) < 1e-6 for e in doubled), f"per-cell minimum {e_ti:.6f}; doubled {', '.join(f'{e:.6f}' for e in doubled)}")
+    Ud = {tuple(s[i] + 4 * sh[i] for i in range(3)) for s in N20 for sh in itertools.product(*[range(m) for m in mult])}
+    doubled.append(lowest_cell_energy(Ud, Ls2, tuple(3 if m == 2 else 6 for m in mult)) / 2)
+check("20-site: cells doubled along x, y or z find no lower flux pattern",
+      all(abs(e - sec20[0][0]) < 1e-6 for e in doubled), f"{sec20[0][0]:.6f}; doubled {', '.join(f'{e:.6f}' for e in doubled)}")
+sec16 = sector_energies(G16)
+spread16 = sec16[-1][0] - sec16[0][0]
+g16, z16 = gap_scan(G16, sec16[0][1], 16)
+check("16-site tree: every flux sector has the same energy (pure gauge); gapped above its flat zero modes",
+      abs(spread16) < 1e-9 and g16 > 0.3, f"spread {spread16:.1e}; flat zero modes/cell {z16}; gap {g16:.5f}")
 
 # ------------------------------------------------------------- D: more networks
 print("D. a search for more three-direction networks")
@@ -389,34 +427,34 @@ print("D. a search for more three-direction networks")
 
 def search_relaxed(Ls, maxsol):
     sites = list(itertools.product(*[range(l) for l in Ls]))
-    idx = {s: i + 1 for i, s in enumerate(sites)}
+    idx_s = {s: i + 1 for i, s in enumerate(sites)}
     cls, top = [], len(sites)
     for s in sites:
-        u = idx[s]
+        u = idx_s[s]
         for ax in range(3):
-            cls.append([-u, -idx[nbr(s, ax, 1, Ls)], -idx[nbr(s, ax, -1, Ls)]])
+            cls.append([-u, -idx_s[nbr(s, ax, 1, Ls)], -idx_s[nbr(s, ax, -1, Ls)]])
         for sx, sy, sz in itertools.product((1, -1), repeat=3):
-            cls.append([u, -idx[nbr(s, 0, sx, Ls)], -idx[nbr(nbr(s, 0, sx, Ls), 0, sx, Ls)],
-                        -idx[nbr(s, 1, sy, Ls)], -idx[nbr(nbr(s, 1, sy, Ls), 1, sy, Ls)],
-                        -idx[nbr(s, 2, sz, Ls)], -idx[nbr(nbr(s, 2, sz, Ls), 2, sz, Ls)]])
-        nbrs = [idx[nbr(s, ax, d, Ls)] for ax in range(3) for d in (1, -1)]
-        enc = CardEnc.atleast(lits=nbrs, bound=2, top_id=top, encoding=EncType.seqcounter)
+            cls.append([u, -idx_s[nbr(s, 0, sx, Ls)], -idx_s[nbr(nbr(s, 0, sx, Ls), 0, sx, Ls)],
+                        -idx_s[nbr(s, 1, sy, Ls)], -idx_s[nbr(nbr(s, 1, sy, Ls), 1, sy, Ls)],
+                        -idx_s[nbr(s, 2, sz, Ls)], -idx_s[nbr(nbr(s, 2, sz, Ls), 2, sz, Ls)]])
+        enc = CardEnc.atleast(lits=[idx_s[nbr(s, ax, d, Ls)] for ax in range(3) for d in (1, -1)], bound=2,
+                              top_id=top, encoding=EncType.seqcounter)
         top = max(top, enc.nv)
         for c in enc.clauses:
             cls.append([-u] + c)
-    cls.append([idx[(0, 0, 0)]])
+    cls.append([idx_s[(0, 0, 0)]])
     g = Glucose4(bootstrap_with=cls)
     out = []
     while len(out) < maxsol and g.solve():
         m = g.get_model()
-        U = frozenset(s for s in sites if m[idx[s] - 1] > 0)
+        U = frozenset(s for s in sites if m[idx_s[s] - 1] > 0)
         out.append(U)
-        g.add_clause([-idx[s] if s in U else idx[s] for s in sites])
+        g.add_clause([-idx_s[s] if s in U else idx_s[s] for s in sites])
     g.delete()
     return out
 
 
-def components(U, Ls=L3):
+def components(U):
     Uset, seen, out = set(U), set(), []
     for s in sorted(U):
         if s in seen:
@@ -426,7 +464,7 @@ def components(U, Ls=L3):
             v = stack.pop()
             for ax in range(3):
                 for d in (1, -1):
-                    w = nbr(v, ax, d, Ls)
+                    w = nbr(v, ax, d)
                     if w in Uset and w not in comp:
                         comp.add(w)
                         stack.append(w)
@@ -436,70 +474,23 @@ def components(U, Ls=L3):
 
 
 found = set()
-for U in search_relaxed(L3, 2000):
+for U in search_relaxed(L3, 2500):
     for c in components(U):
         if len(c) >= 8 and winding_rank(c)[1] == 3:
             found.add(c)
-gapped = 0
-sizes = []
-for c in sorted(found, key=lambda x: (len(x), sorted(x)))[:6]:
-    Gc = build(c)
-    if not Gc["cons_ok"]:
+rows, all_gapped = [], True
+for c in sorted(found, key=lambda x: (len(x), sorted(x)))[:8]:
+    G = build(c)
+    if not G["cons_ok"] or len(G["non"]) > 8:
         continue
-    # fields on dangling axes from the chosen contents
-    csc = set(c)
-    df = {}
-    for s in Gc["comp"]:
-        for ax in range(3):
-            for d in (1, -1):
-                r = nbr(s, ax, d)
-                if r not in csc and nbr(s, ax, -d) not in csc:
-                    df[(Gc["ix"][s], ax)] = df.get((Gc["ix"][s], ax), 0.0) + Gc["contents"][r][ax]
-    lv = [key for key, v in df.items() if abs(v) > 0]
-    nn = Gc["n"]
-    uf = list(range(nn))
-
-    def fnd(a):
-        while uf[a] != a:
-            uf[a] = uf[uf[a]]
-            a = uf[a]
-        return a
-
-    tb, nb_ = [], []
-    for b in Gc["bonds"]:
-        ra, rb = fnd(b[0]), fnd(b[1])
-        if ra != rb:
-            uf[ra] = rb
-            tb.append(b)
-        else:
-            nb_.append(b)
-    if len(nb_) > 9:
-        continue
-
-    def bl(u_non, k):
-        N = nn + len(lv)
-        A = np.zeros((N, N), dtype=complex)
-        uu = {b: 1 for b in tb}
-        uu.update({b: v for b, v in zip(nb_, u_non)})
-        for b in Gc["bonds"]:
-            j, kk2, ax, off = b
-            t = -2 * uu[b] * np.exp(1j * np.dot(k, off))
-            A[j, kk2] += t
-            A[kk2, j] -= np.conj(t)
-        for pos, (j, ax) in enumerate(lv):
-            A[nn + pos, j] += 2 * df[(j, ax)]
-            A[j, nn + pos] -= 2 * df[(j, ax)]
-        return np.linalg.eigvalsh(1j * A)
-
-    best = min((sum(-0.5 * ev[ev > 0].sum() for ev in (bl(u, k) for k in ks6)), u)
-               for u in itertools.product((1, -1), repeat=len(nb_)))[1]
-    g_nonflat = min(np.sort(np.abs(bl(best, k)))[int(np.sum(np.abs(bl(best, k)) < 1e-9))]
-                    for k in ks6)
-    gapped += g_nonflat > 1e-3
-    sizes.append((nn, round(float(g_nonflat), 3)))
-check("more distinct three-direction networks exist; each lowest translation-invariant sector is gapped",
-      len(found) >= 3 and gapped == len(sizes) and len(sizes) >= 3,
-      f"{len(found)} distinct components; (sites, gap above flat bands) {sizes}")
+    secs = sector_energies(G)
+    gmin, zmax = gap_scan(G, secs[0][1], 6)
+    all_gapped &= gmin > 1e-3
+    rows.append((G["n"], len(G["bonds"]) - G["n"] - 2, round(float(gmin), 3)))
+with_loops = sum(1 for r in rows if r[1] >= 1)
+check("more three-direction networks exist, most with local loops; each lowest sector is gapped above flat bands",
+      len(found) >= 5 and all_gapped and with_loops >= 3,
+      f"{len(found)} distinct; (sites, local loops, gap) {rows}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

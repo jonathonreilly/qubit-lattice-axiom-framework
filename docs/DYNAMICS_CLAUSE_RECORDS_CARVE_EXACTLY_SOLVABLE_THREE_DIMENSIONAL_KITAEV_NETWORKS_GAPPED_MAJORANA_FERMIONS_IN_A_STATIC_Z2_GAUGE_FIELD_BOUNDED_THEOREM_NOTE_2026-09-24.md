@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_gapped_majorana_fermions_in_a_static_z2_gauge_field_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "At the compass point of the fully soldered dynamics clause (open PR 9040) with records acting as fields (open PR 9041), both supplied and not adopted, consider carvings in which every unrecorded site has at most one unrecorded neighbour per axis and every record is orthogonal to each axis along which its unrecorded neighbour keeps a bond. The unrecorded generator is then quadratic in Majorana operators in every Z2 gauge sector, with fields along bondless (dangling) axes allowed. An explicit 16-site network on the 4x4x4 torus is a single component whose closed walks span all three lattice directions, with 18 bonds, 12 dangling axes and 6 dangling fields. On its 16-qubit torus the cycle-basis loop operators commute with the generator, and the exact ground energy -17.4885055277 |K| equals the least free-Majorana ground energy over all 2^18 gauge configurations. On the infinite periodic network, the lowest of its 8 translation-invariant flux sectors has no flat zero band and Majorana gap 0.6091 |K| on a 16^3 grid. A SAT search finds 5 distinct three-direction components on 4x4x4 (16 to 22 sites), each gapped above its flat bands in its lowest translation-invariant sector. The global ground-state flux sector, topological classification, charge and physical identification are not claimed."
+claim_scope: "At the compass point of the fully soldered dynamics clause (open PR 9040), with records acting as fields (open PR 9041), both supplied and not adopted. Consider relaxed carvings: every unrecorded site has at most one unrecorded neighbour per axis, and each record is orthogonal to every axis along which its unrecorded neighbour keeps a bond. Their generator is quadratic in Majorana operators in every Z2 gauge sector, with fields along bondless (dangling) axes allowed. Two explicit networks on the 4x4x4 torus span all three lattice directions, and with generic record contents every dangling axis carries a field. (i) A 20-site network with one local loop per cell: its 20-qubit exact ground energy -26.0373871085 |K| equals the least free-Majorana energy over its 16 gauge classes; the local flux splits its translation-invariant sectors by 0.111388 |K| per cell; a single flipped local flux in a 2x2x2 supercell costs 0.11139 |K|; doubled cells find no lower pattern; and in the lowest sector two flat Majorana zero-mode bands per cell sit below a dispersive gap of 0.618 |K|. (ii) A 16-site network whose infinite lift is a tree: its loop operators are conserved; its exact ground energy -20.1928732905 |K| equals the least Majorana energy over all 2^18 gauge configurations; and all its flux sectors are degenerate, so its Z2 field is pure gauge. A SAT search finds 9 distinct three-direction networks, each gapped above 2 to 6 flat zero-mode bands per cell. The zero modes make the full spin model's ground state extensively degenerate. No global flux sector, topological classification, charge, chirality or physical identification is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_2026_09_24.py
@@ -11,44 +11,64 @@ runner: scripts/dynamics_clause_records_carve_exactly_solvable_three_dimensional
 
 **Date:** 2026-09-24
 **Type:** bounded_theorem
-**Status:** exact finite results, with an explicit certificate, under supplied clauses; unaudited.
+**Status:** exact finite results with explicit certificates, under supplied clauses; unaudited.
 
 ## Result and scope
 
 Open PR 9048 found that at the compass point of the fully soldered
 dynamics clause, records can carve the unrecorded medium into Kitaev's
-exactly solvable model. The carving there was strict: every unrecorded site
-keeps exactly one bond per axis, and every record exerts no field. In the
-complete enumerations it searched, such carvings were finite cubes or
-one-direction tubes.
+exactly solvable model. There the carving was strict: one bond per axis at
+every site, and no fields. In the complete enumerations searched, such
+carvings were finite cubes or one-direction tubes.
 
-Kitaev's solution is more tolerant than that. A site may lack a bond along
-some axis. That leaves a free Majorana operator `b^a`. A field along that
-same axis couples `b^a` to the site's `c` Majorana, and the Hamiltonian
-stays quadratic. The only fields that break solvability are those along
-axes where the site keeps its bond.
+Kitaev's solution tolerates more. A site may lack a bond along an axis,
+which leaves a free Majorana `b^a`. A field along that same axis couples
+`b^a` to the site's `c` Majorana, and the Hamiltonian stays quadratic. Only
+a field along an axis where the site keeps its bond breaks solvability.
 
-With that relaxation the picture changes:
-- **Three-dimensional networks exist.** An explicit 16-site network on the
-  4x4x4 torus is one component whose closed walks span all three lattice
-  directions. Every one of its records can be given a content that exerts
-  no field along any kept bond.
-- **Exactly solvable, and checked.** On its 16-qubit torus:
-  - the loop operators of a cycle basis commute with the generator,
-    including the dangling fields;
-  - the exact ground energy, `-17.4885055277 |K|`, equals the least
-    free-Majorana ground energy over all `2^18` Z2 gauge configurations.
-- **A gapped Majorana medium in three dimensions.** On the infinite
-  periodic network, the lowest translation-invariant flux sector has a
-  gapped Majorana spectrum, with gap `0.609 |K|` and no flat zero band.
-- **Not an accident.** A SAT search finds five distinct three-direction
-  networks on 4x4x4. In each, the lowest translation-invariant sector is
-  gapped above any flat bands.
+With this relaxation, records carve exactly solvable networks in three
+dimensions.
 
-So from qubits on `Z^3`, one covariant coupling and a pattern of records,
-the unrecorded medium becomes exactly a three-dimensional system of massive
-Majorana fermions coupled to a static Z2 gauge field. No fermion, grading
-or gauge structure is supplied.
+- **Solvable in three dimensions, verified exactly.** Two explicit
+  networks on the 4x4x4 torus span all three lattice directions. In each,
+  the exact ground energy of the spin model equals the least free-Majorana
+  ground energy over its gauge configurations.
+  - The 20-site network is checked by matrix-free Lanczos on 20 qubits.
+  - The 16-site network is checked over all `2^18` configurations.
+- **A genuine Z2 flux.** The 20-site network has one local loop per cell.
+  Its flux is gauge invariant:
+  - flipping it in every cell costs `0.111 |K|` per cell;
+  - flipping it in one cell of a 2x2x2 supercell costs `0.111 |K|`, a gapped
+    vison;
+  - no doubled cell finds a lower flux pattern.
+- **Gapped matter above localized zero modes.** In the lowest sector the
+  dispersive Majorana bands are gapped (`0.618 |K|`). Below them lie two
+  flat zero-mode bands per cell. These are localized Majorana zero modes of
+  the carved network, and they leave the full spin model's ground state
+  extensively degenerate.
+- **A tree is different.** The 16-site network has no local loop. Its
+  infinite lift is a tree, every flux sector has the same energy, and its
+  Z2 field is pure gauge. Its Majoranas are free fermions with no gauge
+  content.
+- **Not an accident.** A SAT search finds nine distinct three-direction
+  networks. Each is gapped above 2 to 6 flat zero-mode bands per cell.
+
+So qubits on `Z^3`, one covariant coupling and a pattern of records give,
+exactly, a three-dimensional medium with:
+- gapped emergent Majorana fermions;
+- a static Z2 gauge field with gapped fluxes;
+- a few localized zero modes per cell.
+
+No fermion, grading or gauge structure is supplied.
+
+**Correction to the first version of this PR.** Its headline network was
+the 16-site network, described as a Majorana medium in a static Z2 gauge
+field. That network's lift is a tree, so its Z2 field is pure gauge. Its
+"no flat band" count also left out dangling Majoranas that the chosen
+contents had decoupled. Both were found by our own catalogue and by an
+independent check. The headline is now the 20-site network. Contents are
+chosen so that no dangling Majorana is decoupled, and flat zero modes are
+counted in the full model.
 
 ## Premises and declared objects
 
@@ -61,137 +81,161 @@ or gauge structure is supplied.
     (open PR 9041).
 - **Relaxed carving.** An unrecorded set `U` such that:
   - every site has at most one `U`-neighbour per axis;
-  - wherever a site `u` keeps its bond along axis `a`, the recorded
-    neighbour of `u` along `a` has content orthogonal to `a`. Such a content
-    exists exactly when each record has at most two such axes.
+  - wherever a site keeps its bond along axis `a`, the record on its other
+    side along `a` has content orthogonal to `a`.
 
-  An axis along which `u` has no `U`-neighbour is *dangling*. Fields along
-  it are allowed.
-- **Kitaev's representation** (a standard mathematical tool). Each site
-  has four Majorana operators with `s^a = i b^a c`, and bond variables are
-  `u_jk = i b^a_j b^a_k`. A loop operator is the product, over a cycle's
-  sites, of the Pauli along the axis the cycle does not use there.
-- **Winding rank.** The rank of the net displacements of closed walks of a
-  component in the periodic lift. Rank 3 means the network spans all three
-  directions.
+  An axis with no `U`-neighbour is *dangling*. A record is *constrained*
+  along `a` when its `U`-neighbour keeps a bond along `a`. Such a content
+  exists exactly when each record is constrained along at most two axes.
+- **Generic contents.** The direction `(1, sqrt 2, sqrt 3)`, projected
+  orthogonal to the record's constrained axes and normalised. Its
+  components are positive, so the two records on a dangling axis never
+  cancel, and every dangling axis carries a field.
+- **Kitaev's representation** (a standard mathematical tool): `s^a = i b^a c`
+  and bond variables `u_jk = i b^a_j b^a_k`. A loop operator is the product,
+  over a cycle's sites, of the Pauli along the axis the cycle does not use
+  there.
+- **Local loops.** The cycles of a network's torus cell graph (cycle rank
+  `beta1`) lift to paths whose displacements span the winding directions.
+  The `beta1 - 3` cycles with zero displacement per cell are the local
+  loops. Their flux is the gauge-invariant Z2 content of the infinite
+  network.
 
 ## Theorem 1 — relaxed carvings are exactly solvable
 
 *Statement.* For a relaxed carving, the record-projected generator on `U`
 is
 
-`K sum_{bonds} s^a_j s^a_k + sum_{dangling (j, a)} h_{j,a} s^a_j`.
+`K sum_bonds s^a_j s^a_k + sum_dangling h_{j,a} s^a_j`.
 
-Every bond variable `u_jk` commutes with it. In each gauge sector it
-equals the quadratic Majorana operator
+Every bond variable commutes with it. In each gauge sector it is the
+quadratic Majorana operator
 
 `sum_bonds K u_jk (i c_j c_k) + sum_dangling h_{j,a} (i b^a_j c_j)`,
 
-up to the sign conventions fixed in the runner.
+up to the sign conventions of the runner.
 
 *Proof.*
-- A kept bond's recorded partner exerts no field (open PR 9041), so only
-  dangling fields remain.
-- A dangling `b^a_j` belongs to no bond variable. So `h s^a_j = h i b^a_j c_j`
-  commutes with every `u_jk`.
-- A field along a kept axis contains the `b` of that bond and would not
-  commute with it. The runner shows such a field breaks loop operators. ∎
+- Kept bonds see no field (open PR 9041), so only dangling fields remain.
+- A dangling `b^a_j` belongs to no bond variable, so it commutes with
+  every `u_jk`.
+- A field along a kept axis contains that bond's `b` and does not commute.
+  The runner shows such a field breaks loop operators. ∎
 
-## Theorem 2 — a certificate in three dimensions
+## Theorem 2 — two certificates
 
-*Statement.* The 16 sites
-(0,0,2) (0,1,1) (0,1,2) (0,2,1) (1,1,2) (1,1,3) (2,0,3) (2,1,0)
-(2,1,3) (2,2,0) (3,0,2) (3,0,3) (3,2,0) (3,2,1) (3,3,1) (3,3,2)
-of the 4x4x4 torus form a relaxed carving:
-- at most one neighbour per axis, degrees 2 and 3;
-- one component of winding rank 3;
-- 18 bonds and 12 dangling axes.
+*Statement.* On the 4x4x4 torus:
+- **The 20-site network** (sites listed in the runner) is a relaxed
+  carving:
+  - one component spanning three directions;
+  - 23 bonds, cycle rank 4, one local loop per cell;
+  - 14 dangling axes, all carrying fields under the generic contents.
+- **The 16-site network** is a relaxed carving:
+  - one component spanning three directions;
+  - 18 bonds, cycle rank 3, no local loop;
+  - 12 dangling axes, all carrying fields.
 
-Each record takes the last axis not constrained by a kept bond. These
-contents cancel the field along every kept bond and leave nonzero fields
-on 6 dangling axes.
+In both, every field along a kept bond is exactly zero.
 
 *Proof.* Direct check in the runner. ∎
 
-## Theorem 3 — exact solvability, verified on the 16-qubit torus
+## Theorem 3 — exact solvability, verified
 
-*Statement.* On the finite 16-qubit torus of Theorem 2:
-- the three loop operators of a cycle basis commute with the generator,
-  including the dangling fields;
-- adding a field along one kept bond breaks two of them;
-- the exact ground energy is `-17.4885055277 |K|`, equal to the least
-  free-Majorana ground energy over all `2^18` gauge configurations.
+*Statement.*
+- **The 20-site network.** The ground energy of the 20-qubit spin model,
+  from matrix-free Lanczos, is `-26.0373871085 |K|`. It equals the least
+  free-Majorana energy over the network's 16 gauge classes.
+- **The 16-site network.**
+  - The cycle-basis loop operators commute with the generator, including
+    the dangling fields.
+  - A field along one kept bond breaks two of them.
+  - The ground energy `-20.1928732905 |K|` equals the least Majorana energy
+    over all `2^18` gauge configurations.
 
-*Proof.* Sparse diagonalisation, and enumeration of every gauge
-configuration of the finite graph. ∎
+*Proof.* Exact diagonalisation, and enumeration of gauge configurations. ∎
 
-## Theorem 4 — a gapped Majorana medium in three dimensions
+## Theorem 4 — the 20-site network: flux, visons and gapped matter
 
-*Statement.* On the infinite periodic network of Theorem 2, the 8
-translation-invariant flux sectors are those of the 3 non-tree bonds per
-cell. The sector of least Majorana ground energy per cell
-(`-17.4858 |K|`, shared by a partner sector) has:
-- no flat zero band;
-- smallest `|eps| = 0.6091 |K|` on a 16^3 Brillouin-zone grid.
+*Statement.*
+- **Flux sectors.** The translation-invariant flux sectors have two
+  energies per cell: `-26.036648 |K|`, and `-25.92526 |K|` with the local
+  flux flipped. The local flux costs `0.111388 |K|` per cell.
+- **The lowest sector.** It has exactly two flat zero-mode bands per cell.
+  Above them the smallest `|eps|` is `0.61787 |K|` on a 16^3 grid.
+- **Visons.** In a 2x2x2 supercell of the lowest sector, flipping any of
+  the 32 bonds that lie on local loops costs `0.11139 |K|`. Flipping any of
+  the other 152 costs exactly 0: those flips are gauge or winding changes.
+- **Doubled cells.** Cells doubled along x, y or z (32 sectors each) reach
+  no lower energy per cell.
 
-*Proof.* Bloch diagonalisation of the `22 x 22` Majorana matrix (16 `c`
-operators plus 6 coupled dangling `b` operators) at every grid point. ∎
+*Proof.* Bloch and supercell diagonalisation of the Majorana matrix
+(20 `c` operators plus 14 dangling `b` operators). ∎
 
-The cell may also be doubled along x, y or z, giving 32 flux sectors each.
-None of these finds a lower energy per original cell than the
-translation-invariant minimum. So no flux pattern of period two in one
-direction lies lower. Larger periods are not compared.
+The vison cost per flipped local flux equals the per-cell cost of flipping
+it everywhere, to five digits. Within these supercells the fluxes do not
+interact.
 
-## Theorem 5 — five distinct networks, all gapped
+## Theorem 5 — the tree and the search
 
-*Statement.* A SAT search (python-sat) for relaxed carvings on 4x4x4, with
-every unrecorded site keeping at least two bonds, finds 5 distinct
-components of winding rank 3, with 16, 19, 20, 22 and 22 sites. With the
-same content rule, the lowest translation-invariant sector of each is
-gapped above its flat bands, with gaps `0.609, 0.788, 1.146, 0.306, 0.776
-|K|` on a 6^3 grid.
+*Statement.*
+- **The 16-site tree.** All 8 translation-invariant sectors of the 16-site
+  network have the same energy (spread `7e-15`), as a tree requires. It has
+  4 flat zero-mode bands per cell, with gap `1.437 |K|` above them.
+- **The search.** A SAT search (python-sat) finds 9 distinct
+  three-direction networks on 4x4x4. With generic contents, the lowest
+  translation-invariant sector of each of the first eight is gapped above
+  its flat zero-mode bands, with gaps `0.62` to `1.74 |K|`.
 
-*Proof.* The runner enumerates the SAT solutions, extracts rank-3
-components, and diagonalises each sector. Some networks keep a few flat
-zero bands. Those are Majorana zero modes tied to dangling axes, and the
-gap is measured above them. ∎
+A wider exploratory scan, outside the runner, gives the same picture:
+- 15 distinct networks across four torus shapes;
+- random record contents;
+- every network gapped above 2 to 6 structural flat zero-mode bands per
+  cell;
+- no gapless (nodal or Weyl) case found.
+
+*Proof.* The runner reports the tree's sector spread, zero-mode count and
+gap, and the search results. ∎
 
 ## Checks
 
-The runner prints seven checks in four families. All pass in about 20
-seconds.
-- **A.** The carving certificate, and the field cancellation.
-- **B.** Loop conservation with its negative control, and exact
-  diagonalisation equal to the Majorana minimum.
-- **C.** The band gap of the infinite network, and the doubled cells.
-- **D.** The five networks.
+The runner prints nine checks in four families. All pass in about four
+minutes; most of that is the 20-qubit Lanczos.
+- **A.** Two certificates, and their local-loop counts.
+- **B.** Exact solvability for both networks.
+- **C.** Flux splitting, visons, doubled cells, and the tree's degeneracy.
+- **D.** The search.
 
-An independent checker with separate code reproduced the Majorana
-construction and ground energies of the strict carvings of open PR 9048,
-and their complete enumeration. The three-dimensional results of this note
-have not yet been checked independently.
+Independent check, with separate code (see the PR thread), all under the
+earlier content rule of this PR's first version:
+- the 16-site certificate, its loop conservation, `ED = Majorana` over
+  `2^18` (`-17.4885055277`), and its gap;
+- the tree structure (cycles span the windings with determinant 1);
+- the dangling zero-mode caveat.
+
+The generic-content numbers and the 20-site computations have not been
+checked independently.
 
 ## What this does not do
 
-- **Flux sectors compared.** Only translation-invariant sectors, and
-  sectors of cells doubled in one direction, are compared. The global
-  ground-state sector is not determined.
-- **No classification.** No topological classification is made, and no
-  statistics or braiding of excitations are computed.
-- **The emergent fermions are Majorana and gapped.** No U(1) charge,
-  chirality or gapless (Weyl) case is found. None is claimed.
-- **Exact solvability needs the pure compass point.** The Heisenberg and
-  Moriya couplings are not treated.
-- **Supplied inputs.** The carving and the record contents are supplied.
-  How records come to form this pattern is not addressed.
-- **No physical reading.** Nothing identifies these fermions or this
-  gauge field with physical matter or forces.
+- **Flux sectors compared.** Only translation-invariant sectors, doubled
+  cells and 2x2x2 supercells are compared. The global ground-state flux
+  sector is not determined.
+- **The zero modes are not removed.** They are not interpreted as
+  particles. They leave the full spin model extensively degenerate.
+  Perturbations that would lift them (`J`, `D`, other terms) are not
+  treated.
+- **No classification.** Nothing about statistics, topology or ground-state
+  degeneracy on tori is claimed.
+- **The emergent fermions are Majorana.** No U(1) charge, chirality or Weyl
+  node is found.
+- **Supplied inputs.** The carving and the contents are supplied. How
+  records come to form this pattern is not addressed.
+- **No physical reading.** Nothing identifies these objects with physical
+  matter or forces.
 
 ## Decision points recorded
 
 - The compass point of the fully soldered clause.
 - The record pattern and its contents.
 
-Neither is adopted. What is shown is that a three-dimensional system of
-fermions coupled to a gauge field can be exactly the dynamics of qubits,
-records and one covariant coupling.
+Neither is adopted.

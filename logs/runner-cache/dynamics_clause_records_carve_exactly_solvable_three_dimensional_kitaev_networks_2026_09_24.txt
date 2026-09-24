@@ -1,24 +1,26 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_2026_09_24.py
-runner_sha256: c3648d7490158df0458926d5f75a7f39588c4966849785840c48910e316650d8
-input_fingerprint_sha256: ff12c3b8fcebb8ad32c40b8b2703397db848ea46be7626432adc1ab1ba8b5040
-timeout_sec: 900
+runner_sha256: 23f5370206de2a7cdfa9af7a8fe4fd3251ab5ecbfe042dc74d3f1bc171e2989b
+input_fingerprint_sha256: fb61c9f723236f4c2046311114979fa1f2453a6f990f42d7f0d966faf63a84fd
+timeout_sec: 1200
 exit_code: 0
-elapsed_sec: 22.86
+elapsed_sec: 246.16
 status: ok
 ----- stdout -----
-A. the 16-site network and its records
-[PASS] one U-neighbour per axis at most; degrees 2 and 3; one component spanning three directions :: 16 sites, 18 bonds, 12 dangling axes, winding rank 3
-[PASS] record contents orthogonal to every bonded axis exist and cancel every field along kept bonds :: 6 dangling axes carry nonzero fields
-B. exact solvability on the 16-qubit torus
-[PASS] cycle-basis loop operators commute with H including dangling fields; a field along a kept bond breaks some :: 3 loops conserved; 2 broken by the kept-bond field
-[PASS] exact ground energy = least free-Majorana ground energy over all 2^18 gauge configurations :: ED -17.4885055277; Majorana -17.4885055277
-C. Majorana bands of the infinite periodic network
-[PASS] lowest of the 8 translation-invariant flux sectors is gapped with no flat zero band :: E0/cell -17.485797 (next -17.485797); gap on 16^3 grid 0.60910
-[PASS] doubled cells in each direction find no lower flux pattern of period two :: per-cell minimum -17.485797; doubled -17.485797, -17.485797, -17.485797
+A. two three-direction networks on the 4x4x4 torus
+[PASS] both are relaxed carvings spanning three directions, with fields cancelled along kept bonds :: 20-site: local loops/cell 1, dangling axes 14, dangling fields 14; 16-site: local loops/cell 0, dangling axes 12, dangling fields 12
+[PASS] the 20-site network has one local loop per cell; the 16-site network has none (its lift is a tree) :: local loops = cycle rank of the cell graph - 3
+B. exact solvability
+[PASS] 16-site: loops conserved with dangling fields; a kept-bond field breaks some; ED = Majorana over 2^18 :: 3 loops, 2 broken; ED -20.1928732905, Majorana -20.1928732905
+[PASS] 20-site: exact ground energy (matrix-free Lanczos, 20 qubits) = least Majorana energy over its gauge classes :: ED -26.0373871085; Majorana -26.0373871085 over 16 classes
+C. bands, local flux and visons
+[PASS] 20-site: flux sectors split by the local flux; the lowest has 2 flat zero-mode bands and a gap above them :: sector energies/cell [np.float64(-26.036648), np.float64(-25.92526)] (local flux costs 0.111388); flat zero modes/cell 2; gap above them on 16^3 grid 0.61787
+[PASS] 20-site: a vison (one flipped bond on a local loop, 2x2x2 supercell) costs a positive energy; other flips cost 0 :: 32 flips cost 0.11139 to 0.11139; 152 cost 0
+[PASS] 20-site: cells doubled along x, y or z find no lower flux pattern :: -26.036648; doubled -26.036648, -26.036648, -26.036648
+[PASS] 16-site tree: every flux sector has the same energy (pure gauge); gapped above its flat zero modes :: spread 7.1e-15; flat zero modes/cell 4; gap 1.43679
 D. a search for more three-direction networks
-[PASS] more distinct three-direction networks exist; each lowest translation-invariant sector is gapped :: 5 distinct components; (sites, gap above flat bands) [(16, 0.609), (19, 0.788), (20, 1.146), (22, 0.306), (22, 0.776)]
-TOTAL: PASS=7 FAIL=0
+[PASS] more three-direction networks exist, most with local loops; each lowest sector is gapped above flat bands :: 9 distinct; (sites, local loops, gap) [(16, 0, 1.437), (19, 1, 1.736), (20, 1, 1.365), (20, 1, 0.618), (21, 1, 1.101), (22, 2, 0.799), (22, 4, 1.066), (22, 2, 0.621)]
+TOTAL: PASS=9 FAIL=0
 
 ----- stderr -----
 

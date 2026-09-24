@@ -42,6 +42,8 @@ from fractions import Fraction
 import numpy as np
 from numba import njit
 
+AUDIT_TIMEOUT_SEC = 1800
+
 PASS = FAIL = 0
 T0 = time.time()
 

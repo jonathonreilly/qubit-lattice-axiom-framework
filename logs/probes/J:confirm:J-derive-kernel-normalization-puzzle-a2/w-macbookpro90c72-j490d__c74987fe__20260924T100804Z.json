@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-kernel-normalization-puzzle-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j490d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/kernel-normalization-puzzle/referee_w-macbookpro90c72-j490d/check.py",
+ "seed": 44484,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c74987fe",
+ "started_utc": "20260924T100804Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 3 - three seeds give a standard error 0.022 on the lowest shell, one seed is 0.9846, and the mean is not resolved above 1"
+ },
+ "review": "W and the shell counts match, but the lowest-shell mean 1.020 has standard error 0.022 and one seed below 1, so the longer window does not show that shell sits above 1.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:kernel-normalization-puzzle:a2/; its files are probes/work/derive/kernel-normalization-puzzle/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/kernel-normalization-puzzle/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "55ac0f40468a89d7bf8680c912c775ee17b2c481708caeca7441e012f1ed1235",
+ "stdout_tail": "PASS step1 prediction: W=1.762474; R=1+sigma^2(2-W) is 1.025979, 1.009485, 1.002448 at beta=2,6,24\nPASS step2 mode counts: lowest shell 56 modes, top shell 49450, and the bins partition every nonzero mode\nFAIL step3 not below 1: mean 1.0197, sample s.d. 0.0388, s.e. 0.0224; one of three seeds is 0.9846 < 1, and (mean-1)/s.e. = 0.88, so the shell is not shown to sit above 1\nSUMMARY: fails at step 3 - three seeds give a standard error 0.022 on the lowest shell, one seed is 0.9846, and the mean is not resolved above 1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j490d",
+  "at_utc": "20260924T100804Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

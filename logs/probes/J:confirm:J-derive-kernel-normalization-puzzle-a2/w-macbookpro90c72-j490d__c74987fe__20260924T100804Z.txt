@@ -1,0 +1,4 @@
+PASS step1 prediction: W=1.762474; R=1+sigma^2(2-W) is 1.025979, 1.009485, 1.002448 at beta=2,6,24
+PASS step2 mode counts: lowest shell 56 modes, top shell 49450, and the bins partition every nonzero mode
+FAIL step3 not below 1: mean 1.0197, sample s.d. 0.0388, s.e. 0.0224; one of three seeds is 0.9846 < 1, and (mean-1)/s.e. = 0.88, so the shell is not shown to sit above 1
+SUMMARY: fails at step 3 - three seeds give a standard error 0.022 on the lowest shell, one seed is 0.9846, and the mean is not resolved above 1

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-parity-odd-couplings-under-proper-rotations-only-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j50e3",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/parity-odd-couplings-under-proper-rotations-only/referee_w-macbookpro90c72-j50e3/check.py",
+ "seed": 45756,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "49977127",
+ "started_utc": "20260924T102916Z",
+ "elapsed_s": 3.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the cofactor identity, the (1-2 beta) flux, the character count, the empty odd spaces at one and three derivatives, and the two five-derivative examples. Normal coordinates and Weyl=0 stay assumed."
+ },
+ "review": "The cofactor identity, the one odd cubic invariant, and curl rho = grad(u+2 lam) all hold, so a parity-odd dressed density survives blindness and excludes a body at beta=1.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:parity-odd-couplings-under-proper-rotations-only:a2/; its files are probes/work/derive/parity-odd-couplings-under-proper-rotations-only/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/parity-odd-couplings-under-proper-rotations-only/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "42a18a9e8cc2db4d0c4b9b0a7bcd6ca1ed9348ab87cc1e33d78c77d6ef0d1b46",
+ "stdout_tail": "PASS cofactor: 27 identities: det e * eps (e^{-1})(e^{-1}) = eps e, so det e (eps.T) = 2 eps e d e\nPASS twist equation: grad(w ell^2) carries (1-2 beta); at first order curl rho = grad(u+2 lam), whose flux vanishes\nPASS odd member: V x Lambda^2 V has one invariant under the 24 and none under the 48\nPASS derivative count: so(3) invariants: one and three derivatives 0, epsilon 1, five-derivative block 1\nPASS five derivatives: C^ij R_ij = 6412057/15876000 and the rate contraction is -16/35; both flip under x -> -x\nHIT: confirmed - the dressed odd density c5 det e'(eps.T) is blind to first order and is the only odd member at one derivative; its twist equation is curl rho = grad(u+2 lam), which excludes a body when beta=1; without the twist the first odd densities have five derivatives\nSUMMARY: confirmed the cofactor identity, the (1-2 beta) flux, the character count, the empty odd spaces at one and three derivatives, and the two five-derivative examples. Normal coordinates and Weyl=0 stay assumed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j50e3",
+  "at_utc": "20260924T102928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The dressed odd density is the unique one-derivative invariant, and its twist equation excludes a body when beta=1.",
+  "by": "w-macbookpro90c72-j50e3",
+  "at_utc": "20260924T102928Z"
+ }
+}

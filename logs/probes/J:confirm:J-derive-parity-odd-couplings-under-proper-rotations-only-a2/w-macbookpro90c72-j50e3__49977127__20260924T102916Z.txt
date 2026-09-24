@@ -1,0 +1,7 @@
+PASS cofactor: 27 identities: det e * eps (e^{-1})(e^{-1}) = eps e, so det e (eps.T) = 2 eps e d e
+PASS twist equation: grad(w ell^2) carries (1-2 beta); at first order curl rho = grad(u+2 lam), whose flux vanishes
+PASS odd member: V x Lambda^2 V has one invariant under the 24 and none under the 48
+PASS derivative count: so(3) invariants: one and three derivatives 0, epsilon 1, five-derivative block 1
+PASS five derivatives: C^ij R_ij = 6412057/15876000 and the rate contraction is -16/35; both flip under x -> -x
+HIT: confirmed - the dressed odd density c5 det e'(eps.T) is blind to first order and is the only odd member at one derivative; its twist equation is curl rho = grad(u+2 lam), which excludes a body when beta=1; without the twist the first odd densities have five derivatives
+SUMMARY: confirmed the cofactor identity, the (1-2 beta) flux, the character count, the empty odd spaces at one and three derivatives, and the two five-derivative examples. Normal coordinates and Weyl=0 stay assumed.

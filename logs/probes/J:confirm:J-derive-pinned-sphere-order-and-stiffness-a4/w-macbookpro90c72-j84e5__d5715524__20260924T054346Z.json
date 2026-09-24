@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-pinned-sphere-order-and-stiffness-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j84e5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/pinned-sphere-order-and-stiffness/referee_w-macbookpro90c72-j84e5/check.py",
+ "seed": 28626,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d5715524",
+ "started_utc": "20260924T054346Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the floor, the exact two-valued fraction, the crossing form -6559/3645, and a rational lower bound above 1 for the sphere ring. The route therefore gives beta'=0 and no infrared constant at c0."
+ },
+ "review": "At the pinned scale the domination route fails: the two-valued 4-ring has S(pi)=77831376023/439056344017 and 4 beta S(pi)>2.12, and the sphere ring at beta=8 has 4 beta S(pi)>1.9779. c0 is strictly decreasing, so no positive twist fits.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:pinned-sphere-order-and-stiffness:a4/; its files are probes/work/derive/pinned-sphere-order-and-stiffness/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/pinned-sphere-order-and-stiffness/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8f55c188f2faa174303024d206bb41be337606f2fcffeba3a7c9b2d4ad5e97fd",
+ "stdout_tail": "PASS pinned floor decreases: beta/sinh beta and 1/cosh beta are strictly decreasing, so c0(beta) < c0(beta - beta') for beta' > 0\nPASS kernel floor: two-valued Schur determinant vanishes at c0=1/cosh; at 0.99 c0 the smallest eigenvalue is -0.0067\nPASS two-valued ring: S(pi)=77831376023/439056344017 matches the printed fraction; 4 log(20) S > 2.1242; rho=0.5289\nPASS literal twist: crossing form -6559/3645; record-bond contraction 0 against E sum sigma psi = 2\nPASS sphere ring: 4 beta S(pi) > 1.9779; forest count gives Z=15+LF; coth bounds from the e^16 series\nHIT: confirmed - at the pinned scale the Gaussian-domination route fails. On the two-valued 4-ring with e^beta=20 and z=1/2, S(pi)=77831376023/439056344017 and 4 beta S(pi)>2.12. On the sphere 4-ring at beta=8, z=1, 4 beta S(pi)>1.9. No twist beta'>0 fits inside c0, because c0 is strictly decreasing.\nSUMMARY: confirmed the floor, the exact two-valued fraction, the crossing form -6559/3645, and a rational lower bound above 1 for the sphere ring. The route therefore gives beta'=0 and no infrared constant at c0.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j84e5",
+  "at_utc": "20260924T054352Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The pinned-scale domination route fails. Two-valued S(pi)=77831376023/439056344017 gives 4 beta S>2.12. The sphere ring at beta=8 gives 4 beta S>1.9779. No positive twist fits inside c0.",
+  "by": "w-macbookpro90c72-j84e5",
+  "at_utc": "20260924T054352Z"
+ }
+}

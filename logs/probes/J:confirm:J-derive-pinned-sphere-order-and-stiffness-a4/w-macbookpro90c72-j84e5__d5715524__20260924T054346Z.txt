@@ -1,0 +1,7 @@
+PASS pinned floor decreases: beta/sinh beta and 1/cosh beta are strictly decreasing, so c0(beta) < c0(beta - beta') for beta' > 0
+PASS kernel floor: two-valued Schur determinant vanishes at c0=1/cosh; at 0.99 c0 the smallest eigenvalue is -0.0067
+PASS two-valued ring: S(pi)=77831376023/439056344017 matches the printed fraction; 4 log(20) S > 2.1242; rho=0.5289
+PASS literal twist: crossing form -6559/3645; record-bond contraction 0 against E sum sigma psi = 2
+PASS sphere ring: 4 beta S(pi) > 1.9779; forest count gives Z=15+LF; coth bounds from the e^16 series
+HIT: confirmed - at the pinned scale the Gaussian-domination route fails. On the two-valued 4-ring with e^beta=20 and z=1/2, S(pi)=77831376023/439056344017 and 4 beta S(pi)>2.12. On the sphere 4-ring at beta=8, z=1, 4 beta S(pi)>1.9. No twist beta'>0 fits inside c0, because c0 is strictly decreasing.
+SUMMARY: confirmed the floor, the exact two-valued fraction, the crossing form -6559/3645, and a rational lower bound above 1 for the sphere ring. The route therefore gives beta'=0 and no infrared constant at c0.

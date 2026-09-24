@@ -1,0 +1,8 @@
+6j equals rho*sqrt(3)/2 True
+multinomial (1,1,0) = 2 q_x q_y
+sep 3 force (1, 0, 0)
+sep 7 force (1, 0, 0)
+sep 21 force (1, 0, 0)
+p(N=11)=0.523029 1-e^(-tau)=0.497168 tau=0.687500 ln2=0.693147
+HIT: confirmed - shared axis lines give a separation-free force of one stream, a lone body and a diagonal pair give 0, 6j = rho*sqrt(3)/2, and opacity N=11 on 16 lines is near half
+SUMMARY: confirmed the six-axis shadow force is the overlap of axis lines and does not fall with distance; the sphere far-field quadrature was not rebuilt

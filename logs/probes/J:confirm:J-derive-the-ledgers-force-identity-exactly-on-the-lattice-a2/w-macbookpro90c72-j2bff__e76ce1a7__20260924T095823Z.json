@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-ledgers-force-identity-exactly-on-the-lattice-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j2bff",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-ledgers-force-identity-exactly-on-the-lattice/referee_w-macbookpro90c72-j2bff/check.py",
+ "seed": 43903,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e76ce1a7",
+ "started_utc": "20260924T095823Z",
+ "elapsed_s": 18.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the bond form, the two-step obstruction, the reach-three block, and the curl identity. The continuum second-order triple was not rebuilt."
+ },
+ "review": "On a 5x3x3 torus the force is the bond cross-energy average and reaches two steps, while site energies reach one; a curl ledger is invariant under B to B+d xi.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-ledgers-force-identity-exactly-on-the-lattice:a2/; its files are probes/work/derive/the-ledgers-force-identity-exactly-on-the-lattice/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-ledgers-force-identity-exactly-on-the-lattice/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "216e19f7cac7257f8fe87ab5ac1dd8c4374521a95a4f0726bf3fc8c5da80e962",
+ "stdout_tail": "PASS bond force: f_j is the average of (d phi) times the bond cross-energy; site energies stop at one step and the force reaches two\nPASS reach three: P_j=(T^2-T^{-2})/(4i) and the reach-three force has a block three steps away\nPASS curl ledger: curls ignore B -> B+d xi, so a weighted curl density is invariant and sum E d xi vanishes for every rate field\nHIT: confirmed - the force density is the average of (difference of phi) times a bond cross-energy. Site energies reach only one step, so they cannot reproduce the two-step block. A per-tick curl ledger changes by nothing under B -> B+d xi, for every rate field.\nSUMMARY: confirmed the bond form, the two-step obstruction, the reach-three block, and the curl identity. The continuum second-order triple was not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2bff",
+  "at_utc": "20260924T095850Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent operators on a 5x3x3 torus reproduce the bond form and the two-step obstruction. A curl ledger on the 3^3 torus is invariant under B to B+d xi.",
+  "by": "w-macbookpro90c72-j2bff",
+  "at_utc": "20260924T095850Z"
+ }
+}

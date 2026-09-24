@@ -1,0 +1,5 @@
+PASS bond force: f_j is the average of (d phi) times the bond cross-energy; site energies stop at one step and the force reaches two
+PASS reach three: P_j=(T^2-T^{-2})/(4i) and the reach-three force has a block three steps away
+PASS curl ledger: curls ignore B -> B+d xi, so a weighted curl density is invariant and sum E d xi vanishes for every rate field
+HIT: confirmed - the force density is the average of (difference of phi) times a bond cross-energy. Site energies reach only one step, so they cannot reproduce the two-step block. A per-tick curl ledger changes by nothing under B -> B+d xi, for every rate field.
+SUMMARY: confirmed the bond form, the two-step obstruction, the reach-three block, and the curl identity. The continuum second-order triple was not rebuilt.

@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_records_only_admissibility_leaves_the_dynamics_unreadable_2026_09_24.py
+runner_sha256: d16d9505e0f436faf9148e8e191c8bdf78058862733e36d7cbd6f20bbfc1de5c
+input_fingerprint_sha256: 7fdf3e07fc0659f918170185603997cc5baab33a7180d6ec0223a4745dbbf514
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 3.66
+status: ok
+----- stdout -----
+A. a site forming beside an unrecorded neighbour
+[PASS] two states of the unrecorded neighbour, same records, give different site states :: 20 random cases; smallest Bloch-vector gap at t = 0.3: 0.215
+[PASS] exact first derivative d r_x/dt = 2 (h_x + M r_y) x r_x carries the dependence on r_y :: Heisenberg and random J, K, D
+B. which forming sets admit an isolated order
+[PASS] on Q3 an isolated order exists exactly when F is independent and N(F) is inside R0 :: 6561 assignments of 8 sites to R0/F/N, all orders of F
+[PASS] 4x4x4 torus: a sublattice forms with the other as initial records; no forming set exceeds 32 :: even sites have all neighbours odd; a perfect matching of 32 bonds bounds independence
+C. the record-projected generator on a 2x2x3 window
+[PASS] P H P = fields on each forming site + terms on never-recorded sites; nothing couples F :: 12 qubits (sparse); max deviation 7.8e-16
+D. the forming records' joint odds
+[PASS] joint odds of the forming records = product of isolated-site laws, for every time and N state :: 4 random N states x 3 times x 4 outcomes; max deviation 8.3e-16
+[PASS] sequential formation in either order gives the same product law :: max deviation 1.1e-16
+E. two adjacent unrecorded sites
+[PASS] an adjacent unrecorded pair (J > 0) has the singlet ground state and correlated odds E = -a.b :: fidelity 1.000000000000; max |E + a.b| 2.2e-16
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

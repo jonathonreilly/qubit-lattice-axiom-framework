@@ -1,0 +1,11 @@
+PASS U1 the Green matrix of the killed 7-point operator is symmetric and A has row sum 1/10
+PASS U2 n=2 pins at 1 and (I-P)m vanishes off the line
+PASS U2 n=3 pins at 1 and (I-P)m vanishes off the line
+PASS U2 n=4 pins at 1 and (I-P)m vanishes off the line
+PASS U3 n=3 is symmetric and the interior charge is strictly smaller than the ends
+PASS U3 n=4 wraps the 4-torus, so all four charges are equal
+PASS U4 total charge rises with length while charge per source falls below the isolated cost
+PASS U4 the printed nine-decimal charges match the exact rationals
+TOTAL FAIL=0
+HIT: confirmed - on the 4-torus with killing 1/10, c = M^{-1} alpha pins a collinear line of 2, 3 or 4 sources. At n=3 the interior charge is strictly below the ends. At n=4 the line wraps and all four charges are equal. Charge per source falls from the isolated value through n=2, 3 and 4.
+SUMMARY: confirmed the line solve. The numbers are for this killed finite torus, not for Z^3. Interior 0.447653871 against ends 0.528563241; per source 0.692647018, 0.562325833, 0.501593451, 0.439033578.

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-persistent-sources-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3271",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/persistent-sources/referee_w-macbookpro90c72-j3271/check.py",
+ "seed": 61785,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ca9c79d7",
+ "started_utc": "20260924T145625Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the line solve. The numbers are for this killed finite torus, not for Z^3. Interior 0.447653871 against ends 0.528563241; per source 0.692647018, 0.562325833, 0.501593451, 0.439033578."
+ },
+ "review": "The exact Green inverse confirms that a collinear line pins, that the interior source at n=3 is lighter than the ends, and that charge per source falls through n=4, where the line wraps.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:persistent-sources:a1/; its files are probes/work/derive/persistent-sources/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/persistent-sources/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "3aa3d42079884a4aad80bf44620384d0cc8fa80b73b249c5339548067f272137",
+ "stdout_tail": "PASS U1 the Green matrix of the killed 7-point operator is symmetric and A has row sum 1/10\nPASS U2 n=2 pins at 1 and (I-P)m vanishes off the line\nPASS U2 n=3 pins at 1 and (I-P)m vanishes off the line\nPASS U2 n=4 pins at 1 and (I-P)m vanishes off the line\nPASS U3 n=3 is symmetric and the interior charge is strictly smaller than the ends\nPASS U3 n=4 wraps the 4-torus, so all four charges are equal\nPASS U4 total charge rises with length while charge per source falls below the isolated cost\nPASS U4 the printed nine-decimal charges match the exact rationals\nTOTAL FAIL=0\nHIT: confirmed - on the 4-torus with killing 1/10, c = M^{-1} alpha pins a collinear line of 2, 3 or 4 sources. At n=3 the interior charge is strictly below the ends. At n=4 the line wraps and all four charges are equal. Charge per source falls from the isolated value through n=2, 3 and 4.\nSUMMARY: confirmed the line solve. The numbers are for this killed finite torus, not for Z^3. Interior 0.447653871 against ends 0.528563241; per source 0.692647018, 0.562325833, 0.501593451, 0.439033578.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3271",
+  "at_utc": "20260924T145632Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The line solve is science for this killed torus: the interior source is lighter than the ends, and charge per source falls as the line lengthens.",
+  "by": "w-macbookpro90c72-j3271",
+  "at_utc": "20260924T145632Z"
+ }
+}

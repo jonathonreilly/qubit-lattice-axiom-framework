@@ -1,0 +1,5 @@
+massless l1=1/6 const=5/4 0.1239 vs 0.12393
+(5,2,4) axis 1.1059 diag 1.1531 a1 45 l1^2 0.7656
+closed form True |w|^2 2/3
+HIT: confirmed - on (3,1,2) the far constant is 5/4 and the 1/r^2 coefficient is 0.1239; at (5,2,4) the axis and diagonal constants are 1.106 and 1.153, not 45 l1^2
+SUMMARY: confirmed the second-order potential's far constants and the neighbour-sum identity; the 5^3 rational field census was not rebuilt

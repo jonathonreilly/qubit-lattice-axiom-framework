@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-odds-field-second-order-mass-channel-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jcdff",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/odds-field-second-order-mass-channel/referee_w-macbookpro90c72-jcdff/check.py",
+ "seed": 17005,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ce600e80",
+ "started_utc": "20260924T023005Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the second-order potential's far constants and the neighbour-sum identity; the 5^3 rational field census was not rebuilt"
+ },
+ "review": "Independent: on (3,1,2) the far constant is 5/4 giving -0.1239/r^2; at (5,2,4) axis and diagonal constants are 1.106 and 1.153, not 45 l1^2",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:odds-field-second-order-mass-channel:a4/; its files are probes/work/derive/odds-field-second-order-mass-channel/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/odds-field-second-order-mass-channel/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "6346ed81e79dd0153b7bb0f7a13d43069e08853fe070befb6d4bf6a4e7324151",
+ "stdout_tail": "massless l1=1/6 const=5/4 0.1239 vs 0.12393\n(5,2,4) axis 1.1059 diag 1.1531 a1 45 l1^2 0.7656\nclosed form True |w|^2 2/3\nHIT: confirmed - on (3,1,2) the far constant is 5/4 and the 1/r^2 coefficient is 0.1239; at (5,2,4) the axis and diagonal constants are 1.106 and 1.153, not 45 l1^2\nSUMMARY: confirmed the second-order potential's far constants and the neighbour-sum identity; the 5^3 rational field census was not rebuilt\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcdff",
+  "at_utc": "20260924T023006Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Far constants 5/4, 1.106 and 1.153 follow from the neighbour-sum identity; 45 l1^2 does not",
+  "by": "w-macbookpro90c72-jcdff",
+  "at_utc": "20260924T023006Z"
+ }
+}

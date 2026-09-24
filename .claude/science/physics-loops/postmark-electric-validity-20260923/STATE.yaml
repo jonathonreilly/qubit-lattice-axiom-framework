@@ -37,7 +37,11 @@ open_imports:
   - Selected bounded observable and scaling are explicit target choices, not framework-derived
 no_go_routes: No no-go claim is made; the interior coefficient is reported as a sequence-specific positive witness.
 review_findings: Ten selection reviews chose this route after comparing alternatives; execution and scientific author checks were done by the primary agent. No independent review-loop or audit verdict is present.
-pr_status: Ready for focused review as a stacked conditional milestone; integrated gates and landing await source dependency #8831.
+pr_status: Open, ready for focused review as a stacked conditional milestone; integrated gates and landing await source dependency #8831.
+pr_number: 8943
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8943
+pr_science_checkpoint_commit: 3eff3c83fbe03592c0ebca300f2dcd84abdceea0
+pr_base_commit: b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953
 next_exact_action: Starting from eta_S(t)=exp(-it M_S^2)|0>, derive a uniform long-T=Ct estimate for the two mod-3 Fourier expectations under exp(i T M_S), retaining position-dependent coefficients and boundaries; determine whether fixed laboratory times force a common limit or a certified subsequence discrepancy.
 stop_condition: Continue until a controlled fixed-time convergence theorem, certified bounded-observable discrepancy, exact equality for the tested observable, or the user-authorized runtime is exhausted; record any remaining route as open rather than force closure.
 files_touched:

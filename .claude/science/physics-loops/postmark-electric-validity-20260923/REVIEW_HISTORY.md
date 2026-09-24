@@ -20,3 +20,7 @@ The ten selection reviews are selection input, not independent verification of t
 ## Independent review and audit
 
 No independent review-loop or audit verdict has been received for this block. The ten reviewers selected a campaign and did not review its implementation. Formal audit remains required after source dependencies land.
+
+## Review checkpoint
+
+The coherent conditional milestone was opened ready for focused review as PR [#8943](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8943), stacked on open parent #8831. The science checkpoint commit is `3eff3c83fbe03592c0ebca300f2dcd84abdceea0`; integrated-current-main gates, merge, and formal retention remain pending on the parent chain.

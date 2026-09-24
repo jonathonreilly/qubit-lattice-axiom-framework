@@ -1,0 +1,12 @@
+PASS S6 alpha fixes 1 and i sigma, negates sigma and i, and a pure state has both parities
+PASS S6 no linear or antilinear involution of C^2 makes all three sigma odd
+PASS S6 the C^4 module grades Cl(3,0), and the pseudoscalar squares to -1
+PASS S6 six anticommuting Majoranas give 64 distinct monomials, the real rank of Cl(6,0)
+PASS S7 orders 2 and 3 vanish, and tr(P (2H)^4) per site is -128 on Z^2 and -384 on Z^3
+PASS S7 coin-summed (2H)^4 exchange is -32, -16, 0, so the physical amplitudes are -2, -1, 0
+PASS S7 on even rings tr(P (2H)^k) vanishes below order N and equals 128, -1248, 7680 at order N
+PASS S7 at N=4 the hard-core second moment is 2/3 and the sector fourth moments are 5/6 and 7/6
+PASS S7 on rings of 5 and 7 sites, U H U* = H and U P U* = -P
+TOTAL FAIL=0
+HIT: confirmed - both hard-core sectors are closed and one-record-per-site, and no involution of C^2 makes the three Pauli matrices odd, so the exchange sign is not fixed by the stated axioms. Under exclusion it first appears at order 4: -8 per plaquette, and at order N on even rings.
+SUMMARY: confirmed the counterexample. Orders 2 and 3 vanish on Z^2 and Z^3. tr(P (2H)^4) per site is -128 and -384, i.e. -8 and -24 for the physical generator. Even rings give 128, -1248, 7680; odd rings of 5 and 7 sites are unitarily equivalent. The graded composite Cl(6,0) has 64 monomials and is not forced by the one-site sentences.

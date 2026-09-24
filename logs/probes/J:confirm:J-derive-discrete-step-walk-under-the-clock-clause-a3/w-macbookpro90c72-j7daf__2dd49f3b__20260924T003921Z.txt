@@ -1,0 +1,9 @@
+ok S2: tr U/2 = 1 - 2 sin^2(eps) cos^2 k, det = 1, so sin^2(omega/2) = sin^2(eps) cos^2 k
+ok S3: omega = 2 eps |cos k| (1 - eps^2 sin^2 k / 6) + O(eps^5); eps d_eps omega / omega = 1 - (eps^2/3) sin^2 k + O(eps^4)
+ok S1-S6: ring 4: unitary=True, range<=2=True; <up,4|U^2|up,0> equals the product of four sines, while U at doubled angles still has range 2
+ok S1ii: (S R(pi/2 - eps))^2 = -G U G^{-1} on a ring of 4
+ok S4: separable ray identity holds; at eps=0.35, k=0.8 the closed Psi matches Hamilton to 8.26e-06
+ok S5: the range-1 involution H(k) = [[0, e^{-ik}],[e^{ik}, 0]] squares to 1, so the clock group stays range 1 and is not a trivial band
+ok S1iii: layer sum has symbol 2 cos(k) sigma_x; k -> k+pi/2 turns cos into -sin, i.e. twice sigma_x D up to sign
+HIT: confirmed - partial-swap U is unitary of range 2, sin(omega/2)=sin(eps)|cos k|, U[2w] is not U[w]^2 because U^2 reaches site +4, and the separable ray law is block 54's line law
+SUMMARY: confirmed S1-S4 and the S6 counterexample to an exact discrete clock; S5's flat-band argument (interpolation, trace powers, Vandermonde, constant characteristic polynomial) has no broken step

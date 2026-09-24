@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-discrete-step-walk-under-the-clock-clause-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j7daf",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/discrete-step-walk-under-the-clock-clause/referee_w-macbookpro90c72-j7daf/check.py",
+ "seed": 10361,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2dd49f3b",
+ "started_utc": "20260924T003921Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed S1-S4 and the S6 counterexample to an exact discrete clock; S5's flat-band argument (interpolation, trace powers, Vandermonde, constant characteristic polynomial) has no broken step"
+ },
+ "review": "Independent ring-4 and ring-8 matrices give a unitary range-2 partial-swap, sin(omega/2)=sin(eps)|cos k|, and U^2 reaches site +4 while U at doubled angles does not.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:discrete-step-walk-under-the-clock-clause:a3/; its files are probes/work/derive/discrete-step-walk-under-the-clock-clause/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/discrete-step-walk-under-the-clock-clause/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "2899c9f1b1d5ca2cce910147421b2678b52c685cf7e433cdc1959c06f476b99d",
+ "stdout_tail": "ok S2: tr U/2 = 1 - 2 sin^2(eps) cos^2 k, det = 1, so sin^2(omega/2) = sin^2(eps) cos^2 k\nok S3: omega = 2 eps |cos k| (1 - eps^2 sin^2 k / 6) + O(eps^5); eps d_eps omega / omega = 1 - (eps^2/3) sin^2 k + O(eps^4)\nok S1-S6: ring 4: unitary=True, range<=2=True; <up,4|U^2|up,0> equals the product of four sines, while U at doubled angles still has range 2\nok S1ii: (S R(pi/2 - eps))^2 = -G U G^{-1} on a ring of 4\nok S4: separable ray identity holds; at eps=0.35, k=0.8 the closed Psi matches Hamilton to 8.26e-06\nok S5: the range-1 involution H(k) = [[0, e^{-ik}],[e^{ik}, 0]] squares to 1, so the clock group stays range 1 and is not a trivial band\nok S1iii: layer sum has symbol 2 cos(k) sigma_x; k -> k+pi/2 turns cos into -sin, i.e. twice sigma_x D up to sign\nHIT: confirmed - partial-swap U is unitary of range 2, sin(omega/2)=sin(eps)|cos k|, U[2w] is not U[w]^2 because U^2 reaches site +4, and the separable ray law is block 54's line law\nSUMMARY: confirmed S1-S4 and the S6 counterexample to an exact discrete clock; S5's flat-band argument (interpolation, trace powers, Vandermonde, constant characteristic polynomial) has no broken step\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7daf",
+  "at_utc": "20260924T003929Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Partial-swap is unitary of range 2 with sin(omega/2)=sin(eps)|cos k|, and U squared reaches site +4 so the exact clock fails.",
+  "by": "w-macbookpro90c72-j7daf",
+  "at_utc": "20260924T003929Z"
+ }
+}

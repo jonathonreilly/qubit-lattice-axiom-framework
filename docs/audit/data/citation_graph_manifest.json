@@ -1,6 +1,6 @@
 {
- "edge_count": 14615,
- "node_count": 6647,
+ "edge_count": 14619,
+ "node_count": 6648,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19841,6 +19841,10 @@
   "uniform_ice_by_layer_units_on_infinite_prisms_is_exact_in_the_zero_flux_sector_that_long_prisms_select_bounded_theorem_note_2026-09-23": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "uniform_ice_by_single_sites_no_planar_window_of_six_squares_admits_a_local_formation_order_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "d82180aa2e28",
+   "out_degree": 4
   },
   "uniform_ice_by_single_sites_no_planar_window_of_two_to_five_squares_admits_a_local_formation_order_bounded_theorem_note_2026-09-23": {
    "deps_hash": "2a338d61d68b",

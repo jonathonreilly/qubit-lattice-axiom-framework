@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_planar_windows_of_six_squares_admit_no_single_site_formation_order_2026_09_24.py
+runner_sha256: a1121b87cd6a53217c1cb9b5892cc647a542151f61be840f4e7718b1c3f0843b
+input_fingerprint_sha256: 1fc2bc1cebcf540bf9feb54a1eb61ddd118cd74874674c2a0417cc122c3b9738
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 1203.56
+status: ok
+----- stdout -----
+A. the closed-set search against the plain search of open PR 8715
+[PASS] the closed-set search reproduces the plain search: same verdicts and the same largest formed sets :: square: none, 9 closed / 21 plain sets, largest 3; square + P: order, 2 closed / 68 plain sets, largest 9; 2x1 + P: none, 16 closed / 92 plain sets, largest 7; 2x1 + P, V nothing: none, 10 closed / 2560 plain sets, largest 11; L tromino + P: none, 22 closed / 135 plain sets, largest 7
+B. the six-square windows
+[PASS] free hexominoes number 35 and span 32 windows that no smaller polyomino spans, with 13 or 14 vertices and 6 or 7 coordinators :: 35 free hexominoes, 32 new windows; 29 with 6 coordinators, 3 with 7 coordinators
+[PASS] every window's total weight equals its generating-function coefficient :: 32 of 32; totals from 315644174336 to 3156272283648
+C. no order on any six-square window
+[PASS] full local records with every coordinator: none of the 32 windows admits an order, and every search finishes :: closed sets per search 38 to 42; largest formed set 7 sites in 32 windows
+D. where every search stops
+[PASS] each search records one maximum-size square set with its unshared corners, for a square with the fewest shared corners :: in 32 of 32 windows one recorded maximum-size formed set is that square set, and no site outside it has a conditional that depends only on its formed neighbours
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

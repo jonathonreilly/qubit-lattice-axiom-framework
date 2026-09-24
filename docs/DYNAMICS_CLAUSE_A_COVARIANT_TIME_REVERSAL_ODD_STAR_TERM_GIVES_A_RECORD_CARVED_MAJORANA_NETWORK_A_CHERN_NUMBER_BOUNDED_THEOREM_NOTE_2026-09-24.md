@@ -160,8 +160,10 @@ planes requires. ∎
 - **The route into the phase.** At `λ = 0` the zero-field network is gapped
   (0.78, above 16 zero modes) and non-chiral.
   - Between `λ = 0.1` and 0.8 the gap vanishes somewhere. The `k_x = π`
-    plane already has Chern number −1 while `k_x = 0` has 0, so band
-    touchings carrying Chern charge sit between them.
+    plane already has Chern number −1 while `k_x = 0` has 0.
+  - At `λ = 0.5` the dispersive gap vanishes on every `k_x` slice from 0.39
+    to 2.36. So the zero-energy set spreads over a range of `k_x`, as a
+    Majorana Fermi surface would, not at isolated Weyl points.
   - From `λ = 0.9` the phase is gapped with `(−1, 0, 0)`, as the
     certified window at 1 to 4 shows.
 - **Other carvings.** A coarse-grid survey covered the 16 realizable

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_in_an_exponential_clock_field_the_walks_dynamics_needs_a_boundary_condition_at_the_fast_clock_end_2026_09_23.py
+runner_sha256: 0607f07551c5eb4c93dbb8767a8e8b75a290b13881ca9c6e7b8bbb1b8ff29df5
+input_fingerprint_sha256: 7b155594dba17c6b48d3660983b92fea1f65b7d7691ec6a38884cc81c641941e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_IN_AN_EXPONENTIAL_CLOCK_FIELD_THE_WALKS_DYNAMICS_NEEDS_A_BOUNDARY_CONDITION_AT_THE_FAST_CLOCK_END_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities; Admissibility is not a dynamics axiom and does not define a time metric (the walk and its clock are supplied clauses)
+PASS: B1 T1: for w = lambda^x the clocked line walk H_w = W^(1/2) sigma_x D W^(1/2) is hermitian and splits into two independent chains, A = {(up, even), (down, odd)} and B = {(up, odd), (down, even)} (no entry joins them, exact on a window); on finitely supported vectors H_w T_a = lambda^a T_a H_w for a = 1, 2 (exact, symbolic lambda)
+PASS: C1 T2: the four one-component, one-parity sequences with value lambda^(-m) at x = 2m or 2m + 1 solve H_w psi = 0 at every interior site (exact); each has squared norm lambda^2/(lambda^2 - 1) on the fast side (x -> +infinity) and grows on the slow side; each chain is, in the gauge psi_n -> i^n psi_n, the real Jacobi matrix with zero diagonal and bonds b_n = lambda^(n + 1/2)/2, whose Carleman sum of 1/b_n diverges on the slow side and converges on the fast side (exact at lambda = 2 for the sums)
+PASS: D1 T3: for the real chain the summation-by-parts identity sum_(k=1..N) [(J u)_k v_k - u_k (J v)_k] = W_0(u, v) - W_N(u, v) holds exactly, with W_k(u, v) = b_k (u_k v_(k+1) - u_(k+1) v_k): the symmetric operator's boundary form sits at the ends; since the slow end is limit point, only the fast end's limit of W remains, and the self-adjoint realizations are the conditions lim W_n(psi, v_theta) = 0 there, v_theta = cos(theta) chi + sin(theta) phi a real zero-energy solution (symbolic)
+PASS: E1 T4: the shift by two multiplies every zero-energy solution by the same number lambda, so it preserves every real line of solutions: every self-adjoint realization (every boundary condition at the fast end) keeps H_w T_2 = lambda^2 T_2 H_w and hence the evolution identity U(t) T_2 = T_2 U(lambda^2 t); the shift by one carries chain A's solutions (up on even, down on odd) onto chain B's (up on odd, down on even), so a boundary condition pair is kept by it exactly when chain B's condition is the image of chain A's - a circle of realizations keeps the identity for every translation; and the fast end is reached in finite time: sum over x >= x0 of 1/w_x = lambda^(-x0)/(1 - 1/lambda) (3/2 at lambda = 3, x0 = 0)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the bond entries, the chain split and the gauge to a real chain (symbolic lambda)
+per_site: executed - the four zero-energy solutions at every interior site of a window; the scaling identity at every site of a window for a = 1, 2
+per_mode: executed - the square sums and Carleman sums on both sides; the summation-by-parts identity
+per_block: executed - the action of the shifts by one and two on the zero-energy solution spaces of both chains
+lattice_wide: T1-T4 on the infinite line for w = lambda^x, lambda > 1, with the limit-point/limit-circle theory imported at definition level; block 54 as landed supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: the clocked line walk in an exponential clock field - two chains, each limit point at the slow end and limit circle at the fast end, so deficiency indices (2,2); the dynamics needs a boundary condition at the fast end; every condition keeps the even-translation identity, a circle of them keeps it for every translation; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

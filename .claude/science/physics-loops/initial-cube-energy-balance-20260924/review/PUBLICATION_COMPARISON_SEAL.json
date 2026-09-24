@@ -1,0 +1,33 @@
+{
+  "kind": "milestone_11_final_released_source_publication_comparison",
+  "sealed_at_utc": "2026-09-24T18:13:10.343451+00:00",
+  "files": {
+    "PUBLICATION_COMPARISON.md": "684a4b41dedc4c2fc4bdbf91a601e80cc14f268627b3952992ea7b14e2f3365e",
+    "PUBLICATION_SOURCE_PINS.json": "85477e6e3331dacff590c53e4d186abfed07298088577111cef33311256b9d77",
+    "PUBLICATION_VERIFICATION.json": "56721546e8a9d79bfe914c27ad29df7e72b794fa3da904c392eb2edf20d2a804",
+    "publication_binding_verification.py": "67d95aa366e9e57afabaad28a949098d3e511c5b82e2d6b44b5b9c166525e2f2",
+    "PUBLICATION_BINDING_CHECK.stdout.txt": "56721546e8a9d79bfe914c27ad29df7e72b794fa3da904c392eb2edf20d2a804",
+    "PUBLICATION_BINDING_CHECK.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PUBLICATION_BINDING_CHECK_EXECUTION.json": "937adf1fad8fd066bbc0e322e795a2278464f26086c4ceb4acb36888953fe9fb"
+  },
+  "preserved_PRE_sha256": "785f3c87cec7db2d00f2548745b22fd68e74afa09a307081446fc80763555b3a",
+  "preserved_PRE_seal_sha256": "f459870253083462c9448a0f1ca2ea50beb9b954b34bdffd783fe27a08f060f8",
+  "preserved_POST_sha256": "1b8a71eedd1d014e22b23a87e7658cd01fd0645f932b8292dce08ddc645c42c4",
+  "preserved_POST_seal_sha256": "0c13e98f9aed198fa3079179d8fe03e288c61fa7035aad4e2e824482f7d64075",
+  "publication_note_sha256": "e9d858a9a4c456c42496159c0ec75ce085957641870dc98cdb8cd69aed04629c",
+  "publication_runner_sha256": "3acb32fac4d5de45177fab8b7ca728545e733a1eb44ce7d6ab2778c5c28da34a",
+  "root_matched_density_addendum_sha256": "663c2b5f5961e5bc10d8c1e268bd4dd49f8b56be65d74ca1e41d146fcdd279cb",
+  "material_discrepancies": [],
+  "corrections_requested": [],
+  "POST_loss_positivity_clarification_resolved": true,
+  "matched_density_extension_and_iff_criterion_supported_under_stated_parent_hypotheses": true,
+  "full_cache_and_payload_correspondence_verified": true,
+  "all_49_source_evidence_pins_rechecked_before_seal": true,
+  "primary_or_physics_controls_rerun": false,
+  "new_blind_derivation_claim": false,
+  "previous_seals_publication_or_audit_state_changed": false,
+  "other_active_checker_packets_opened": false,
+  "delegation_used": false,
+  "disposition": "Supported as the stated conditional publication; no audit or retained-status determination.",
+  "immutable_policy": "Preserve this seal and all members unchanged; later changes require a separate comparison."
+}

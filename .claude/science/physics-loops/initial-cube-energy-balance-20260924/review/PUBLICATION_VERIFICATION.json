@@ -1,0 +1,97 @@
+{
+  "verified_at_utc": "2026-09-24T18:10:44.476841+00:00",
+  "kind": "read_only_publication_binding_comparison",
+  "base_revision": "28965d2737ee32b01bba972273fa51d399c594e4",
+  "git_status_at_check": "?? docs/INITIAL_CUBE_ENERGY_LAYER_AND_EXACT_BAND_BALANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md\n?? logs/runner-cache/initial_cube_energy_layer_and_exact_band_balance_2026_09_24.txt\n?? outputs/initial_cube_energy_balance_20260924/\n?? scripts/initial_cube_energy_layer_and_exact_band_balance_2026_09_24.py\n",
+  "all_dispatched_hashes_match": true,
+  "source_pin_count": 49,
+  "all_seal_members_unchanged": {
+    "PRE": 19,
+    "POST": 3,
+    "root_author": 2,
+    "root_control": 5,
+    "root_addendum": 1
+  },
+  "declared_input_count": 7,
+  "six_transitive_inputs_equal_base_revision": true,
+  "five_old_scientific_notes_equal_PRE_snapshots": true,
+  "declared_input_fingerprint_sha256": "e69945c2ed29c1e45d80532e6645281408194e8a25ac50253d7d6b1f1cfbd6c7",
+  "cache_bytes_exactly_reconstructed": true,
+  "copied_functions": [
+    {
+      "function": "legal",
+      "source": "preserved_PRE_primitive",
+      "source_and_AST_identical": true
+    },
+    {
+      "function": "combine",
+      "source": "preserved_PRE_primitive",
+      "source_and_AST_identical": true
+    },
+    {
+      "function": "hop",
+      "source": "preserved_PRE_primitive",
+      "source_and_AST_identical": true
+    },
+    {
+      "function": "mark",
+      "source": "preserved_PRE_primitive",
+      "source_and_AST_identical": true
+    },
+    {
+      "function": "norm2",
+      "source": "preserved_PRE_primitive",
+      "source_and_AST_identical": true
+    },
+    {
+      "function": "primitive_words",
+      "source": "preserved_PRE_primitive",
+      "source_and_AST_identical": true
+    },
+    {
+      "function": "phi_laplace",
+      "source": "released_root_cascade",
+      "source_and_AST_identical": true
+    },
+    {
+      "function": "mean",
+      "source": "released_root_cascade",
+      "source_and_AST_identical": true
+    },
+    {
+      "function": "controls",
+      "source": "released_root_cascade",
+      "source_and_AST_identical": true
+    }
+  ],
+  "primitive_global_ASTs_equal": [
+    "A",
+    "B",
+    "EDGES",
+    "OMEGA"
+  ],
+  "four_level_PRE_toy_present_in_public_runner": false,
+  "full_primitive_payload_equals_PRE": true,
+  "full_cascade_payload_equals_root_original": true,
+  "only_removed_cascade_original_metadata": [
+    "elapsed_seconds",
+    "source_sha256"
+  ],
+  "compared_rows": {
+    "primitive": 36,
+    "initial_profile": 25,
+    "physical_flow": 15,
+    "distribution": 5
+  },
+  "complete_stdout_is_one_exact_result_plus_TOTAL": true,
+  "stdout_characters": 26012,
+  "recorded_api_elapsed_sec": 0.19647526741027832,
+  "recorded_exit_code": 0,
+  "separate_stderr_field_bytes": 0,
+  "stderr_scope": "The API merged child stderr into stdout; the complete merged stream has only the exact result JSON and TOTAL summary.",
+  "primary_or_controls_rerun": false,
+  "new_independent_derivation_claim": false,
+  "read_only_verifier_imported_any_primary": false,
+  "all_pins_rechecked_before_write": true,
+  "scientific_review": "See separate PUBLICATION_COMPARISON.md; hash and payload identities are not a new proof or audit verdict."
+}

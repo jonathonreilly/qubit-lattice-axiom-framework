@@ -1,0 +1,11 @@
+{
+  "sealed_utc": "2026-09-24T17:18:37.723377+00:00",
+  "scope": "Author normalization controls for separate trace-one scalar cascade and sign of coherent band-loss term; full output/code read; not actual cube, independent evidence or interval certificate",
+  "files": {
+    "initial_energy_balance_controls.py": "b86de88159b5593cb16c749edf2966499670a838a562b4de2857a9a2bf956d65",
+    "INITIAL_ENERGY_BALANCE_CONTROL_RESULTS.json": "2bf3bc82e37e1d5e2a9886ad362c48ff9332dc1c682d64113191eb55c56d4bfe",
+    "CONTROL.stdout.txt": "2bf3bc82e37e1d5e2a9886ad362c48ff9332dc1c682d64113191eb55c56d4bfe",
+    "CONTROL.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CONTROL_EXECUTION.json": "d3d70a0fbd6586ef6c41a8e6d55c02868b54fcf31bd68ae0a61fc46880959446"
+  }
+}

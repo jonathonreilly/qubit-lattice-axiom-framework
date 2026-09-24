@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/FULL_CUBE_ENERGY_ANOMALY_PERSONAL_DERIVATION.md",
+      "sha256": "42570c118387059b66ad7a76c4b57bfdc7acdcb8c0c58aa2a5f0c622bd9cc723"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/AUTHOR_SEAL.json",
+      "sha256": "b1911b15a9271cedd3f75f5291ce26b145af79ec3d0b81f33ac5daca1e414efd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent/PRE.md",
+      "sha256": "3996a4a5d128545470b8636d88aef2d6b29e424eff8672bd3be125dc372258df"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent/PRE_SEAL.json",
+      "sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "336545d7612288a176d8f1a44f05e157b3f196ec25da0a59154d4ed9ec22f4a6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/sharp-rotor-tail-publication/docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f"
+    }
+  ],
+  "prior_full_ensemble_POST": "pending; provisional dependency",
+  "scope": "Supplied original compensated model only"
+}

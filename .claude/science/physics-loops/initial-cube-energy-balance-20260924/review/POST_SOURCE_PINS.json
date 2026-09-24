@@ -1,0 +1,17 @@
+{
+  "reviewed_source_and_evidence_sha256": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/INITIAL_ENERGY_LAYER_AND_BAND_POWER_PERSONAL_DERIVATION.md": "f93139735be333d46cb7b5d7d0882beaa341532df0a76d24d61676b93514d844",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/AUTHOR_SEAL.json": "498705aaeac3f6cd542ceabe0d0042fc7f301ef6b4e6402c4b56152c8c113513",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/initial_energy_balance_controls.py": "b86de88159b5593cb16c749edf2966499670a838a562b4de2857a9a2bf956d65",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/CONTROL_SEAL.json": "97be508f590b9ad739d3fe9805dd2fdcbebfeceab9d859cc105de195c646a7ec",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/SOURCE_PINS.json": "68d5eade6d8d4fe006176ba0900ad8115ab76f78866b78b655a95a725a512557",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/INITIAL_ENERGY_BALANCE_CONTROL_RESULTS.json": "2bf3bc82e37e1d5e2a9886ad362c48ff9332dc1c682d64113191eb55c56d4bfe",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/CONTROL.stdout.txt": "2bf3bc82e37e1d5e2a9886ad362c48ff9332dc1c682d64113191eb55c56d4bfe",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/CONTROL.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/CONTROL_EXECUTION.json": "d3d70a0fbd6586ef6c41a8e6d55c02868b54fcf31bd68ae0a61fc46880959446",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-independent/PRE.md": "785f3c87cec7db2d00f2548745b22fd68e74afa09a307081446fc80763555b3a",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-independent/PRE_SEAL.json": "f459870253083462c9448a0f1ca2ea50beb9b954b34bdffd783fe27a08f060f8",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-independent/SOURCE_PINS.json": "d6ce826578f3dfa513e0c83f423c38097d611714fe3507724d45ba854cee2824"
+  },
+  "scope": "Released initial-energy-layer and band-balance packet only, compared with preserved PRE; external full-ensemble candidate named in author source manifest was not opened."
+}

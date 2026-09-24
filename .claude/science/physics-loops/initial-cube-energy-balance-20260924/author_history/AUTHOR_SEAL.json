@@ -1,0 +1,9 @@
+{
+  "sealed_utc": "2026-09-24T17:13:58.879484+00:00",
+  "stage": "personal-root-before-new-independent-PRE",
+  "claims": "Initial energy profile, distributional net power including endpoint impulse, exact band-power identity and leading opposing terms; conditional on named full-ensemble estimates",
+  "files": {
+    "INITIAL_ENERGY_LAYER_AND_BAND_POWER_PERSONAL_DERIVATION.md": "f93139735be333d46cb7b5d7d0882beaa341532df0a76d24d61676b93514d844",
+    "SOURCE_PINS.json": "68d5eade6d8d4fe006176ba0900ad8115ab76f78866b78b655a95a725a512557"
+  }
+}

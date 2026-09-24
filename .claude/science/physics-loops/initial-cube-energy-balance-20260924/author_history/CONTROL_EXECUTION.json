@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-09-24T17:16:10.923419+00:00",
+  "seconds": 0.14947279100306332,
+  "exit_code": 0,
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/initial_energy_balance_controls.py"
+  ],
+  "stdout": "CONTROL.stdout.txt",
+  "stderr": "CONTROL.stderr.txt"
+}

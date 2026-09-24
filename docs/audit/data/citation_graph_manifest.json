@@ -1,6 +1,6 @@
 {
- "edge_count": 14634,
- "node_count": 6652,
+ "edge_count": 14640,
+ "node_count": 6653,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -11357,6 +11357,10 @@
   "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03": {
    "deps_hash": "7680adde7def",
    "out_degree": 2
+  },
+  "initial_cube_energy_layer_and_exact_band_balance_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "9f43c36cc8bb",
+   "out_degree": 6
   },
   "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20": {
    "deps_hash": "13a354b49fb5",

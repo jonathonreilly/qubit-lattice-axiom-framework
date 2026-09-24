@@ -1,0 +1,10 @@
+{
+  "base_revision": "28965d2737ee32b01bba972273fa51d399c594e4",
+  "files_sha256": {
+    "docs/INITIAL_CUBE_ENERGY_LAYER_AND_EXACT_BAND_BALANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "e9d858a9a4c456c42496159c0ec75ce085957641870dc98cdb8cd69aed04629c",
+    "scripts/initial_cube_energy_layer_and_exact_band_balance_2026_09_24.py": "3acb32fac4d5de45177fab8b7ca728545e733a1eb44ce7d6ab2778c5c28da34a"
+  },
+  "PRE": "785f3c87cec7db2d00f2548745b22fd68e74afa09a307081446fc80763555b3a",
+  "POST": "1b8a71eedd1d014e22b23a87e7658cd01fd0645f932b8292dce08ddc645c42c4",
+  "root_matched_density_addendum": "663c2b5f5961e5bc10d8c1e268bd4dd49f8b56be65d74ca1e41d146fcdd279cb"
+}

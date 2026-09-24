@@ -1,0 +1,8 @@
+ok logmean: d phi = (1/2) Lambda d u exactly
+ok polar: Re[(d psi)^dag (d chi)] = rho_x + rho_y - 2 eps
+ok sublattice: even support has energy density 0 and bond cross energy 0.625
+ok upwind: upwind transport cancels the volume identity, residual 0
+ok waves: equal energy density 2, forces along e1 are 0 and 2
+ok parity: a nearest-neighbour hop anticommutes with Gamma; a two-step hop commutes
+HIT: confirmed - the force is a bond cross energy times d phi, not a function of the energy density, and the two energy-1 waves with the same e and zero current have forces 0 and 2
+SUMMARY: confirmed the logarithmic mean, the polarization identity, the even-sublattice counterexample, the upwind cancellation, and the plane-wave no-go at first order

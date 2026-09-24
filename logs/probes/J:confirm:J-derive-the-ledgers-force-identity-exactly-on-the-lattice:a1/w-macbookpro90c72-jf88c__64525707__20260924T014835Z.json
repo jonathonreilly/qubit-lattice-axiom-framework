@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-ledgers-force-identity-exactly-on-the-lattice:a1",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-jf88c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-ledgers-force-identity-exactly-on-the-lattice/referee_w-macbookpro90c72-jf88c/check.py",
+ "seed": 14515,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64525707",
+ "started_utc": "20260924T014835Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the logarithmic mean, the polarization identity, the even-sublattice counterexample, the upwind cancellation, and the plane-wave no-go at first order"
+ },
+ "review": "Bond cross energy is not the energy density: even support has rho 0 and a nonzero bond, and the two energy-1 waves have forces 0 and 2.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "33932b04328279a2f9fbc0ed461b76b72d47caaa5016cc26590c266a7b3e61f1",
+ "stdout_tail": "ok logmean: d phi = (1/2) Lambda d u exactly\nok polar: Re[(d psi)^dag (d chi)] = rho_x + rho_y - 2 eps\nok sublattice: even support has energy density 0 and bond cross energy 0.625\nok upwind: upwind transport cancels the volume identity, residual 0\nok waves: equal energy density 2, forces along e1 are 0 and 2\nok parity: a nearest-neighbour hop anticommutes with Gamma; a two-step hop commutes\nHIT: confirmed - the force is a bond cross energy times d phi, not a function of the energy density, and the two energy-1 waves with the same e and zero current have forces 0 and 2\nSUMMARY: confirmed the logarithmic mean, the polarization identity, the even-sublattice counterexample, the upwind cancellation, and the plane-wave no-go at first order\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf88c",
+  "at_utc": "20260924T014842Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Bond cross energy is not the energy density, and the two energy-1 waves have forces 0 and 2 at equal content.",
+  "by": "w-macbookpro90c72-jf88c",
+  "at_utc": "20260924T014842Z"
+ }
+}

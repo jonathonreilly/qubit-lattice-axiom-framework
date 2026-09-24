@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.py
-runner_sha256: 49da9cc6ba8b107de55c5c61673906b5fd97eb74f2879bc22425473027357a43
+runner_sha256: 5a70e78ff573291b7814ca5a3aec87d4849002df711a5b27eec372aa517309e5
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.84
+elapsed_sec: 1.05
 status: ok
 ----- stdout -----
 [PASS] the clause carries purifications: the Heisenberg bond at J t = pi is the swap, and partial swaps give every reduced Bloch length :: |U - phase * SWAP| 3.4e-16; reduced Bloch lengths along the partial swap [1.0, 0.966, 0.866, 0.707, 0.5, 0.259, 0.0]

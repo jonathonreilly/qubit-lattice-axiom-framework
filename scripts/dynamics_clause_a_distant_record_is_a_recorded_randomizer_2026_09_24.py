@@ -24,15 +24,15 @@ reading):
    partner is recorded. The largest shift over random draws is printed.
 5. Chord consistency forces affinity: along random chords, the deformed laws
    are linear in the chord parameter only at zero deformation.
-7. Self-consistent weights: when the partner's record weights come from
-   the same law, D-loc passes only lambda = 1 and lambda = 0 (lambda = 0.5,
-   anti-Born and the cubic deformation signal); compression (check 6)
-   removes lambda = 0. So the Born weights of the partner are not an input.
 6. Orientation from compression: under D-perm a record q leaves the
    normalized compression of the state, which must exist whenever q can
    form. At the antipodal pure state this forces P(q | -q) = 0: lambda = 1
    for the affine menu law, and E_q = P_q for any two-outcome effect. So
    the Born law follows, with neither anti-Born nor a contracted law.
+7. Self-consistent weights: when the partner's record weights come from
+   the same law, D-loc passes only lambda = 1 and lambda = 0 (lambda = 0.5,
+   anti-Born and the cubic deformation signal); compression (check 6)
+   removes lambda = 0. So the Born weights of the partner are not an input.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -262,7 +262,7 @@ laws = {
 sc = {k: selfconsistent_shift(f) for k, f in laws.items()}
 ok7 = sc["Born (lambda 1)"] < 1e-12 and sc["trivial (lambda 0)"] < 1e-12 and all(sc[k] > 1e-2 for k in ("lambda 0.5", "anti-Born (lambda -1)", "cubic"))
 check("self-consistent weights: with the partner's weights from the same law, D-loc passes only lambda = 1 and lambda = 0; compression then removes lambda = 0",
-      ok7 and 0.5 * (1 - 0.0) > 0, "largest marginal shift: " + ", ".join(f"{k} {v:.1e}" for k, v in sc.items()))
+      ok7, "largest marginal shift: " + ", ".join(f"{k} {v:.1e}" for k, v in sc.items()))
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

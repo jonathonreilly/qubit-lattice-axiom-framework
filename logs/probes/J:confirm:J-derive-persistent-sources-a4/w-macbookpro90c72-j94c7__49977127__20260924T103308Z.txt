@@ -1,0 +1,5 @@
+PASS sigma identity: A(x)/x = 1/x - 1/x^2 + 2 e^{-2x}/(x(1-e^{-2x}))
+PASS grid arithmetic: h-split at beta>=2 is at most 0.0034; within-seed spread 0.022; across-seed 0.178; mean plateau 0.380
+PASS live point: beta=6, h=0.125, seed 1 gives 0.9927
+HIT: confirmed - the deviation scales as sigma^2 = A(7 beta)/(7 beta), not with the source strength. On the published grid the two field strengths differ by at most 0.0034 for beta>=2, and within a seed the coefficient is flat from beta=3 to 12 while the seeds disagree. The mean plateau is about 0.39. One cell, beta=6 and h=0.125 and seed 1, reruns to 0.9927.
+SUMMARY: confirmed the sigma identity, the arithmetic of the thirty published ratios, and one live rerun. The other twenty-nine simulator runs were not repeated, so the seed interval is that grid's. The prose bound 0.0006 is smaller than the table.

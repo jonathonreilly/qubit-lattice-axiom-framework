@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-persistent-sources-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j94c7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/persistent-sources/referee_w-macbookpro90c72-j94c7/check.py",
+ "seed": 45988,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "49977127",
+ "started_utc": "20260924T103308Z",
+ "elapsed_s": 13.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the sigma identity, the arithmetic of the thirty published ratios, and one live rerun. The other twenty-nine simulator runs were not repeated, so the seed interval is that grid's. The prose bound 0.0006 is smaller than the table."
+ },
+ "review": "The sigma identity holds, the published grid is flat within a seed and split across seeds, and the beta=6 seed-1 cell reruns to 0.9927.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:persistent-sources:a4/; its files are probes/work/derive/persistent-sources/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/persistent-sources/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "4eadd163fee2ed2475d7ac94313e6b4ae49c6ddac81d584963e1d6a86b69b1f8",
+ "stdout_tail": "PASS sigma identity: A(x)/x = 1/x - 1/x^2 + 2 e^{-2x}/(x(1-e^{-2x}))\nPASS grid arithmetic: h-split at beta>=2 is at most 0.0034; within-seed spread 0.022; across-seed 0.178; mean plateau 0.380\nPASS live point: beta=6, h=0.125, seed 1 gives 0.9927\nHIT: confirmed - the deviation scales as sigma^2 = A(7 beta)/(7 beta), not with the source strength. On the published grid the two field strengths differ by at most 0.0034 for beta>=2, and within a seed the coefficient is flat from beta=3 to 12 while the seeds disagree. The mean plateau is about 0.39. One cell, beta=6 and h=0.125 and seed 1, reruns to 0.9927.\nSUMMARY: confirmed the sigma identity, the arithmetic of the thirty published ratios, and one live rerun. The other twenty-nine simulator runs were not repeated, so the seed interval is that grid's. The prose bound 0.0006 is smaller than the table.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j94c7",
+  "at_utc": "20260924T103333Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The sigma identity is exact. The published grid is flat within a seed, and the beta=6 seed-1 cell reruns to 0.9927.",
+  "by": "w-macbookpro90c72-j94c7",
+  "at_utc": "20260924T103333Z"
+ }
+}

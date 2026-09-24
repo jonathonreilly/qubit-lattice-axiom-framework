@@ -590,12 +590,14 @@ same_kitaev = sum(1 for i in same_idx if is_kitaev_pattern(klist[i]))
 other = [(klist[i], round(float(Amat[i] @ v), 4)) for i in acting if i not in same_idx]
 maj_rows = [i for i, im in enumerate(img_fold) if im is not None and im[1] is not None]
 active_dirs = int(np.linalg.matrix_rank((Amat @ Nf)[maj_rows], tol=1e-9))
+span_rows = [i for i in maj_rows if np.linalg.norm((Amat @ Nf)[i]) > 1e-9]      # strings reached by any free term
 check("the free covariant subspace, and the projection of the weight-5 orbit onto it",
       Nf.shape[1] == 41 and cancel < 1e-9 and weights_used == [5, 7] and len(same_idx) == 27 and same_kitaev == 27
-      and len(other) == 1 and len(other[0][0]) == 1,
+      and len(other) == 1 and len(other[0][0]) == 1 and len(span_rows) == 28,
       f"free subspace dimension {Nf.shape[1]} of {len(VECS)}, of which {active_dirs} directions act on the Majoranas here; "
       f"projected term uses {int(np.sum(np.abs(v) > 1e-9))} orbits of weights {weights_used}; non-free strings cancel to {cancel:.0e}; "
-      f"its free image is {len(same_idx)} Kitaev patterns at corners plus the dangling-axis field {other[0][0][0]} with coefficient {other[0][1]}")
+      f"its free image is {len(same_idx)} Kitaev patterns at corners plus the dangling-axis field {other[0][0][0]} with coefficient {other[0][1]}; "
+      f"every free covariant term acts through these same {len(span_rows)} strings")
 
 
 # ------------------------------------------------ 5. the chiral phase

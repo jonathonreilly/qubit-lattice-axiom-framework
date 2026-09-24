@@ -128,7 +128,11 @@ recorded sites by the record values.
   - Its non-free reduced strings cancel exactly, to 1e-15.
   - Its free image is 27 Kitaev patterns at corners of the carving, which
     are same-class couplings, plus the field `σ^x` at `(2,2,2)` on a
-    dangling axis. The field has the largest coefficient, −1.18. ∎
+    dangling axis. The field has the largest coefficient, −1.18.
+- **Every free term acts through the same 28 strings.** No free covariant
+  term couples the other 12 dangling `b` Majoranas. So on this carving the
+  12 zero modes per cell of Theorem 5 cannot be removed by any free
+  covariant star term of weight at most seven. ∎
 
 ## Theorem 5 — the chiral phase
 
@@ -254,7 +258,7 @@ The runner has 8 checks and all pass in about a minute.
 | The carving | Connected, winding rank 3, 22 bonds; records touch at most 2 axes; largest field on an unrecorded site 0. |
 | Covariant terms | 37 lattice terms at weights 1 and 3, 325 at weights 1 to 7. |
 | Majorana images | Bond matrix exact; three-site clusters to 5e-15; 30 random tree clusters to 1e-14; the free and not-free cases. |
-| The term | Free subspace 41, of which 5 act; 23 orbits of weights 5 and 7; non-free strings cancel to 1e-15; image of 27 Kitaev patterns plus the field at `(2,2,2)`. |
+| The term | Free subspace 41, of which 5 act, all through the same 28 strings; 23 orbits of weights 5 and 7; non-free strings cancel to 1e-15; image of 27 Kitaev patterns plus the field at `(2,2,2)`. |
 | The chiral phase | The table above. |
 | Surface modes | 64 top and 31 bottom in-gap surface states, 4 others; signed crossings of ±0.01, top +1 and bottom −1. |
 | Zero fields needed | Zero modes all on dangling `b`'s; dangling fields of 0.1 leave 2 zero modes and Chern number 0; generic contents leave no free term. |

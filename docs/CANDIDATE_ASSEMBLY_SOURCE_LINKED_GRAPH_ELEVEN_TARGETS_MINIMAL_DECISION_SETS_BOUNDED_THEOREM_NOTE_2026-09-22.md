@@ -1,7 +1,7 @@
 ---
 claim_id: candidate_assembly_source_linked_graph_eleven_targets_minimal_decision_sets_bounded_theorem_note_2026-09-22
 claim_type: bounded_theorem
-claim_scope: "Fifteenth edition of the campaign's source-linked graph: 109 nodes (2 sources, 61 landed results cited by note path and verified on disk, 9 open results of the campaign's pull requests marked open, 12 decision groups with 40 recorded candidate clauses, 6 route choices, 8 routes, and the design note's 11 preserved targets), evaluated with AND semantics for results, routes and targets and OR semantics for choices. Verified: well-formedness, acyclicity with a negative control, source linking, the exact minimal decision sets of every target. Downstream gravity has exactly four minimal decision sets: {alphabet, order law}, {alphabet, reading}, {soldering, reading, roles}, {soldering, joint units, order law, roles}; every formation set holds the order law and every static set the reading. Every one contains a frame source, soldering or the coordinate-letter alphabet: the formation routes need one (PR 8676) and so does the static route (PR 8679), which also rests on a supplied Hamiltonian, an open edge. Single-site formation reaches the uniform ice measure beyond one top cell only with plan letters (PRs 8715, 8719; plans, PR 8686), which removes {soldering, order law, roles}; beyond rows exact joint formation needs units unbounded along an axis formed as a chain, so the joint-unit route needs an order law too (PR 8720). Without the layer order the sets return to the seventh edition's, without the plan letters as well to the sixth edition's five, and without the static frame source as well to the third edition's. With relational letters only, as under possibility covariance (fixed letters unavailable, no relational first formation, roles not registered), letters in alternating pairs record the role pattern under the static reading away from the side-4 torus (PR 8750) and four-angle cycles record it on the landed ice torus (PR 8752), which needs the static reading since under the sweep reading they record none (PR 8756), so gravity's sets are {alphabet, reading}, {soldering, reading, roles}, {soldering, joint units, order law, roles} and {alphabet, order law, roles, soldering}, and the one unsoldered set is {alphabet, reading}; with single-angle relational letters only (PR 8743) it is {alphabet, reading, roles}. That route needs no supplied octant: under the rotation-covariant rule that the Admissibility text asks for, cycle letters record their octant on the landed torus (PR 8854), strong cycle letters record the frame and the roles on every window (PR 8856), and strong letters are generic (PR 8857). The formed photon route reaches the uniform ice measure only through a coordinator (PR 8686; otherwise formed ice is directed, PR 8687), and the letters may be fixed or relational (PR 8691); a positive static rule selects the equal-time Coulomb law, so the supplied Hamiltonian is needed only for dynamics (PR 8698), and formed flux moves as a persistent walk (PR 8701); relational spirals are linearly rigid on the lattice and under the static reading but amplified by the sweep (PR 8717), and locally rigid under the static reading in the full nonlinear relations (PR 8724); the landed torus ice measure has no local formation order (PR 8727), linear ice sweep rules move flux by a linear transfer, damped when strictly positive and rigid for permutations, with mixed cases beyond both (PR 8726), seven relational letters carry the frame (PR 8729), no planar window of two to five squares admits a single-site order (PR 8735), under local formation multi-qubit units leave relational first formations a fair coin (PR 8731), under the static reading with its fixed octant relational frames with Sidon angles are globally rigid, carrying the frame but no role pattern (PR 8743), that rigidity needs a global octant, since site and line orientations leave the letters flexible (PR 8744), and layer units form uniform ice on infinite prisms in the zero-flux sector (PR 8740), whose flux sectors carry a Gaussian stiffness (PR 8746); these leave the minimal sets unchanged. Thirty-five of the cited pull requests have landed, and landed ones are cited as PR N. The photon lane joins record dynamics: by row transfer the flux stiffness is Gaussian on the square cross-section (PR 8859), the zero-flux layer chain is gapless (PR 8864) and its branch has the dispersion of a massless nearest-neighbour lattice field (open PR 8869), the unit link field fixes one stiffness for the flux cost and the correlations (open PR 8871), and test defects interact through the lattice Green's function at that stiffness (open PR 8875); these leave the minimal sets unchanged. Ten more cited pull requests have since landed. On cubic tori to side 24 the winding stiffness and the correlations carry the sum-rule stiffness, with a long-wavelength value 0.5% above 1/3 (open PR 8881), and the static photon has two degenerate transverse polarizations with one stiffness (open PR 8890); these leave the minimal sets unchanged. The layer vacuum is a Gaussian flux functional, so the layer-unit law is local transfer times a 1/r flux interaction (open PR 8896); at the RK point of the supplied Hamiltonian the photon's single-mode bound is quadratic (open PR 8905); worms sample test-defect pairs exactly, and the pair free energy follows the Green function on tori (open PR 8913); and uniform ice carries the lattice Green function only in its charged sector, its neutral scalar records being short-ranged, which answers the design note's seam for this measure and feeds gravity (open PR 8918). These leave the minimal sets unchanged. The first edition's locality group is withdrawn (Admissibility text) and the order-law group lists no order-blind rule. No completion percentage, no identification, no clause adopted."
+claim_scope: "Sixteenth edition of the campaign's source-linked graph: 113 nodes (2 sources, 61 landed results cited by note path and verified on disk, 13 open results of the campaign's pull requests marked open, 12 decision groups with 40 recorded candidate clauses, 6 route choices, 8 routes, and the design note's 11 preserved targets), evaluated with AND semantics for results, routes and targets and OR semantics for choices. Verified: well-formedness, acyclicity with a negative control, source linking, the exact minimal decision sets of every target. Downstream gravity has exactly four minimal decision sets: {alphabet, order law}, {alphabet, reading}, {soldering, reading, roles}, {soldering, joint units, order law, roles}; every formation set holds the order law and every static set the reading. Every one contains a frame source, soldering or the coordinate-letter alphabet: the formation routes need one (PR 8676) and so does the static route (PR 8679), which also rests on a supplied Hamiltonian, an open edge. Single-site formation reaches the uniform ice measure beyond one top cell only with plan letters (PRs 8715, 8719; plans, PR 8686), which removes {soldering, order law, roles}; beyond rows exact joint formation needs units unbounded along an axis formed as a chain, so the joint-unit route needs an order law too (PR 8720). Without the layer order the sets return to the seventh edition's, without the plan letters as well to the sixth edition's five, and without the static frame source as well to the third edition's. With relational letters only, as under possibility covariance (fixed letters unavailable, no relational first formation, roles not registered), letters in alternating pairs record the role pattern under the static reading away from the side-4 torus (PR 8750) and four-angle cycles record it on the landed ice torus (PR 8752), which needs the static reading since under the sweep reading they record none (PR 8756), so gravity's sets are {alphabet, reading}, {soldering, reading, roles}, {soldering, joint units, order law, roles} and {alphabet, order law, roles, soldering}, and the one unsoldered set is {alphabet, reading}; with single-angle relational letters only (PR 8743) it is {alphabet, reading, roles}. That route needs no supplied octant: under the rotation-covariant rule that the Admissibility text asks for, cycle letters record their octant on the landed torus (PR 8854), strong cycle letters record the frame and the roles on every window (PR 8856), and strong letters are generic (PR 8857). The formed photon route reaches the uniform ice measure only through a coordinator (PR 8686; otherwise formed ice is directed, PR 8687), and the letters may be fixed or relational (PR 8691); a positive static rule selects the equal-time Coulomb law, so the supplied Hamiltonian is needed only for dynamics (PR 8698), and formed flux moves as a persistent walk (PR 8701); relational spirals are linearly rigid on the lattice and under the static reading but amplified by the sweep (PR 8717), and locally rigid under the static reading in the full nonlinear relations (PR 8724); the landed torus ice measure has no local formation order (PR 8727), linear ice sweep rules move flux by a linear transfer, damped when strictly positive and rigid for permutations, with mixed cases beyond both (PR 8726), seven relational letters carry the frame (PR 8729), no planar window of two to five squares admits a single-site order (PR 8735), under local formation multi-qubit units leave relational first formations a fair coin (PR 8731), under the static reading with its fixed octant relational frames with Sidon angles are globally rigid, carrying the frame but no role pattern (PR 8743), that rigidity needs a global octant, since site and line orientations leave the letters flexible (PR 8744), and layer units form uniform ice on infinite prisms in the zero-flux sector (PR 8740), whose flux sectors carry a Gaussian stiffness (PR 8746); these leave the minimal sets unchanged. Thirty-five of the cited pull requests have landed, and landed ones are cited as PR N. The photon lane joins record dynamics: by row transfer the flux stiffness is Gaussian on the square cross-section (PR 8859), the zero-flux layer chain is gapless (PR 8864) and its branch has the dispersion of a massless nearest-neighbour lattice field (open PR 8869), the unit link field fixes one stiffness for the flux cost and the correlations (open PR 8871), and test defects interact through the lattice Green's function at that stiffness (open PR 8875); these leave the minimal sets unchanged. Ten more cited pull requests have since landed. On cubic tori to side 24 the winding stiffness and the correlations carry the sum-rule stiffness, with a long-wavelength value 0.5% above 1/3 (open PR 8881), and the static photon has two degenerate transverse polarizations with one stiffness (open PR 8890); these leave the minimal sets unchanged. The layer vacuum is a Gaussian flux functional, so the layer-unit law is local transfer times a 1/r flux interaction (open PR 8896); at the RK point of the supplied Hamiltonian the photon's single-mode bound is quadratic (open PR 8905); worms sample test-defect pairs exactly, and the pair free energy follows the Green function on tori (open PR 8913); and uniform ice carries the lattice Green function only in its charged sector, its neutral scalar records being short-ranged, which answers the design note's seam for this measure and feeds gravity (open PR 8918). These leave the minimal sets unchanged. The static photon stiffens in a background flux and saturation leaves square ice (open PR 8928); the unit-field sum rule is ten times closer for three-dimensional ice than for square ice (open PR 8930); in a flux sector the photon's rise is wavenumber-independent and a second branch crosses below it (open PR 8949); and test-defect pairs follow the charge-squared law (open PR 8951). These join record dynamics and leave the minimal sets unchanged. The first edition's locality group is withdrawn (Admissibility text) and the order-law group lists no order-blind rule. No completion percentage, no identification, no clause adopted."
 
 upstream_dependencies:
   - minimal_axioms
@@ -20,7 +20,7 @@ upstream_dependencies:
 runner: scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py
 ---
 
-# Candidate assembly, fifteenth edition: the source-linked graph and its minimal decision sets
+# Candidate assembly, sixteenth edition: the source-linked graph and its minimal decision sets
 
 **Date:** 2026-09-22
 **Type:** bounded_theorem
@@ -168,14 +168,29 @@ The fifteenth edition adds four results and updates three open edges:
 
 The minimal sets are unchanged.
 
+The sixteenth edition adds four photon-lane results to record dynamics:
+- the static photon stiffens in a background flux, and at saturation each
+  layer is exactly square ice (open PR 8928);
+- the unit-field sum rule is ten times closer for three-dimensional ice
+  than for square ice, which misses it by about 4.6% (open PR 8930);
+- in a flux sector the photon's rate rises by a wavenumber-independent
+  amount that shrinks at fixed density with size, and a complement-even
+  branch crosses below it (open PR 8949);
+- test-defect pairs follow the charge-squared law, exactly for the string
+  up to the flux cost, with a core correction that grows with charge (open
+  PR 8951).
+
+The continuum-bridge edge now records these. The minimal sets are
+unchanged.
+
 ## Result up front
 
-1. **The graph.** 109 nodes, each edge a cited result, a recorded
+1. **The graph.** 113 nodes, each edge a cited result, a recorded
    decision, or a route choice:
    - 2 sources (the axioms, the primitives);
    - 61 landed results, cited by note path and verified on disk at this
      revision;
-   - 9 open results of the campaign's pull requests, marked open;
+   - 13 open results of the campaign's pull requests, marked open;
    - 12 decision groups carrying 40 recorded candidate clauses. The
      soldering group lists the four actions of PR 8671; the
      alphabet group lists fixed and relational coordinate letters and
@@ -342,7 +357,7 @@ open, decision, choice, route, target) with provenance; directed edges;
 candidate menus per decision group; open edges per target; the design
 note's target list. Landed provenance is a docs/ path checked on disk;
 open provenance names one of the campaign's open pull requests (8869,
-8871, 8875, 8881, 8890, 8896, 8905, 8913, 8918). Semantics: a decision
+8871, 8875, 8881, 8890, 8896, 8905, 8913, 8918, 8928, 8930, 8949, 8951). Semantics: a decision
 group's minimal set is itself; a choice takes the union of its inputs'
 minimal families; every other node takes all pairwise unions of its
 inputs' families. Families are kept minimal by removing supersets. Every
@@ -360,7 +375,7 @@ superseded, and the withdrawn entries are recorded with their sources.
 
 ## Theorem 1 — Well-formedness and source linking
 
-The ledger is 2 + 61 + 9 + 12 + 6 + 8 + 11 = 109 nodes. Every edge
+The ledger is 2 + 61 + 13 + 12 + 6 + 8 + 11 = 113 nodes. Every edge
 endpoint is declared. No edge enters a source or a decision group, and
 edges leaving targets go to targets. Every landed path exists on disk.
 Every open provenance names a campaign pull request, and the locality
@@ -370,7 +385,7 @@ design note's.
 
 ## Theorem 2 — Acyclicity and minimal decision sets
 
-A depth-first topological order covers all 109 nodes, and the same sorter
+A depth-first topological order covers all 113 nodes, and the same sorter
 rejects a two-node cycle. The minimal decision sets are as stated in
 items 3 and 4. They are computed by closure over the declared edges and
 compared with independently written expected families. Every minimal set
@@ -426,7 +441,7 @@ primitive, no new comparator and no new framing is imported.
 
 ## Review record
 
-- **Seat:** first edition by one Fable 5.1 seat; second to fifteenth
+- **Seat:** first edition by one Fable 5.1 seat; second to sixteenth
   editions by one Opus 5.5 seat; no subagents.
 - **Corrections before landing (2026-09-22).** (1) The first edition
   carried a locality decision group and a conjunctive four-group account
@@ -481,6 +496,9 @@ primitive, no new comparator and no new framing is imported.
   photon-dynamics, layer-unit and record-statistic edges. It also corrects
   the layer-unit edge, which still cited PRs 8715, 8719, 8720, 8735 and
   8740 as open after they had landed. The minimal sets are unchanged.
+  (16) The sixteenth edition adds open PRs 8928, 8930, 8949 and 8951 to
+  record dynamics and updates the continuum-bridge edge. The minimal sets
+  are unchanged.
 - **Independence sources:** (i) landed provenance checked against the
   files at this revision; (ii) minimal sets computed by closure and
   compared with separately written expected families; (iii) the sorter
@@ -542,12 +560,13 @@ primitive, no new comparator and no new framing is imported.
 | fifteenth-edition photon result edge dropped | result edge deleted | caught |
 | seam result moved from gravity to record dynamics | result edge moved | caught |
 | seam result attached to the photon-route choice | result edge moved into a choice | caught |
+| sixteenth-edition photon result edge dropped | result edge deleted | caught |
 
-  Fifty-one of fifty-one defect mutants are caught; the cycle-guard mutant is the diagnosed non-defect.
+  Fifty-two of fifty-two defect mutants are caught; the cycle-guard mutant is the diagnosed non-defect.
 - **Vacuity guard:** every family is compared with an independently
   written expected family; provenance is checked on disk.
-- **Budget:** 22 checks, stdout 4189 characters (ceiling 6000),
-  under a second; a 109-node graph.
+- **Budget:** 22 checks, stdout 4190 characters (ceiling 6000),
+  under a second; a 113-node graph.
 
 ## Verification
 

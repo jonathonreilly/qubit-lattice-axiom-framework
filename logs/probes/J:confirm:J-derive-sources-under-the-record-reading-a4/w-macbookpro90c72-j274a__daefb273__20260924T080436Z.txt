@@ -1,0 +1,4 @@
+PASS closed form: uniform star at gamma=1 has kept-ledger energy 1188/1091
+PASS star and walls: box 7 uniform star matches 1188/1091; 19-site ball differs by +7.855e-04 between boxes 5 and 7
+HIT: confirmed - the static law is linear, a record of energy E keeps ledger E/(1+k E g_yy), and formation keeps the ledger iff E' = Lambda/(1 - k Lambda g_yy). A star sources a point charge outside itself, with kept energy c/(1-k c); at gamma=1 the uniform star is 1188/1091, the same in every symmetric box. A 19-site ball is not wall-independent.
+SUMMARY: confirmed the closed form, the box-7 star, the Green identities behind it, and that the 19-site ball changes between boxes 5 and 7. The box-9 kicks and the moving-amplitude ratio were not rebuilt.

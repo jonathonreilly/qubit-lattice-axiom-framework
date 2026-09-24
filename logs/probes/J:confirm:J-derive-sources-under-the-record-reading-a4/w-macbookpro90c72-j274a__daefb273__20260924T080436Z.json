@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-sources-under-the-record-reading-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j274a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/sources-under-the-record-reading/referee_w-macbookpro90c72-j274a/check.py",
+ "seed": 37076,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "daefb273",
+ "started_utc": "20260924T080436Z",
+ "elapsed_s": 3.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the closed form, the box-7 star, the Green identities behind it, and that the 19-site ball changes between boxes 5 and 7. The box-9 kicks and the moving-amplitude ratio were not rebuilt."
+ },
+ "review": "The uniform star at gamma=1 keeps the ledger at 1188/1091, and the side-7 box reproduces that closed form. A 19-site ball changes between the side-5 and side-7 boxes, so wall-independence stops at the star.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:sources-under-the-record-reading:a4/; its files are probes/work/derive/sources-under-the-record-reading/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/sources-under-the-record-reading/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "87eefbd53484965ea5747d4aeec1ba5cf42d1bf2e92cff45714033e46de03926",
+ "stdout_tail": "PASS closed form: uniform star at gamma=1 has kept-ledger energy 1188/1091\nPASS star and walls: box 7 uniform star matches 1188/1091; 19-site ball differs by +7.855e-04 between boxes 5 and 7\nHIT: confirmed - the static law is linear, a record of energy E keeps ledger E/(1+k E g_yy), and formation keeps the ledger iff E' = Lambda/(1 - k Lambda g_yy). A star sources a point charge outside itself, with kept energy c/(1-k c); at gamma=1 the uniform star is 1188/1091, the same in every symmetric box. A 19-site ball is not wall-independent.\nSUMMARY: confirmed the closed form, the box-7 star, the Green identities behind it, and that the 19-site ball changes between boxes 5 and 7. The box-9 kicks and the moving-amplitude ratio were not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j274a",
+  "at_utc": "20260924T080447Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Uniform star at gamma=1 is 1188/1091 and matches the side-7 box. The 19-site ball changes between boxes 5 and 7.",
+  "by": "w-macbookpro90c72-j274a",
+  "at_utc": "20260924T080447Z"
+ }
+}

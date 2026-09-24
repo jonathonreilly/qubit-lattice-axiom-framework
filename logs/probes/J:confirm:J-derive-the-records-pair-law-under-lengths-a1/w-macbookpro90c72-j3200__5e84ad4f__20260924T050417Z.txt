@@ -1,0 +1,6 @@
+PASS held field: generic hop balances for any symmetric bond factor; own-site length leaves chi_y^2/chi_x^2; ring of 4, two records, 16 hops, 0 failures
+PASS slaved field: L=2 exhaustive: two-record failures 0/288, three-record 0/720; non-product bond failures 288; double-counted 1/w failures 288
+PASS evenness: odd kernel 2/3 -> 2/9; even kernel 2/3 -> 2/3
+PASS turn: line integral is -2/(4 pi b); log w_1=-2Qg, log l_1=+2Qg; delta = 4 log g at beta=1, 2(1+beta) log g in general; own-site reading gives 2 log g; per volume l^3, log g_vol = -delta/2
+HIT: confirmed - hops timed by the occupied site and crossing a bond at any function of chi_x chi_y have stationary law W(C) prod 1/w in a held field, and pair law W(C) exp(-sum_pairs log w_1) in an even first-order slaved field. Under block 60, beta=1, the turn is 4 log g; a hop that reads its own site's length gives 2 log g.
+SUMMARY: confirmed on a generic hop, a ring of 4, and every hop of two and three records on the L=2 torus. The author's 3^3 sample was not replayed. An odd length kernel does not cancel, so evenness is necessary. Second order in the slaved field was left open by the attempt and was not claimed.

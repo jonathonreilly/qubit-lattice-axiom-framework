@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-records-pair-law-under-lengths-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3200",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-records-pair-law-under-lengths/referee_w-macbookpro90c72-j3200/check.py",
+ "seed": 26257,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e84ad4f",
+ "started_utc": "20260924T050417Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed on a generic hop, a ring of 4, and every hop of two and three records on the L=2 torus. The author's 3^3 sample was not replayed. An odd length kernel does not cancel, so evenness is necessary. Second order in the slaved field was left open by the attempt and was not claimed."
+ },
+ "review": "Independent balance checks confirm the lengths drop out of the stationary law for any symmetric function of chi_x chi_y, and under block 60 the wave's turn is 4 log g; a hop that reads its own site's length gives 2 log g.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-records-pair-law-under-lengths:a1/; its files are probes/work/derive/the-records-pair-law-under-lengths/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-records-pair-law-under-lengths/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "88377b327b16f177286ce9f4ae4f39e0b3e21da7e6607de23f30a7dcc5244b71",
+ "stdout_tail": "PASS held field: generic hop balances for any symmetric bond factor; own-site length leaves chi_y^2/chi_x^2; ring of 4, two records, 16 hops, 0 failures\nPASS slaved field: L=2 exhaustive: two-record failures 0/288, three-record 0/720; non-product bond failures 288; double-counted 1/w failures 288\nPASS evenness: odd kernel 2/3 -> 2/9; even kernel 2/3 -> 2/3\nPASS turn: line integral is -2/(4 pi b); log w_1=-2Qg, log l_1=+2Qg; delta = 4 log g at beta=1, 2(1+beta) log g in general; own-site reading gives 2 log g; per volume l^3, log g_vol = -delta/2\nHIT: confirmed - hops timed by the occupied site and crossing a bond at any function of chi_x chi_y have stationary law W(C) prod 1/w in a held field, and pair law W(C) exp(-sum_pairs log w_1) in an even first-order slaved field. Under block 60, beta=1, the turn is 4 log g; a hop that reads its own site's length gives 2 log g.\nSUMMARY: confirmed on a generic hop, a ring of 4, and every hop of two and three records on the L=2 torus. The author's 3^3 sample was not replayed. An odd length kernel does not cancel, so evenness is necessary. Second order in the slaved field was left open by the attempt and was not claimed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3200",
+  "at_utc": "20260924T050422Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Lengths cancel for any symmetric function of chi_x chi_y. Under block 60 the turn is 4 log g; an own-site length gives 2 log g.",
+  "by": "w-macbookpro90c72-j3200",
+  "at_utc": "20260924T050422Z"
+ }
+}

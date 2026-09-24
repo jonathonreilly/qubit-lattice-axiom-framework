@@ -1,0 +1,8 @@
+ok cost: cost depends only on the node weights
+ok sweep: 37 one-sites, {'seed': 1, 'amp': 9, 'proc': 27}, 333 processed
+ok preds: three predecessors [(2, 3, 3), (3, 2, 3), (3, 3, 2)] are processed
+ok values: v(333)=1, predecessors {(2, 3, 3): 0, (3, 2, 3): 0, (3, 3, 2): 0}
+ok budget: frontier [(6, 5), (7, 6), (8, 7), (9, 8), (10, 9)], c* = 10/9
+ok nonlocal: same cone at levels >= 5, v(233) 0 -> -1
+HIT: confirmed - the vacuity conjecture is false: 333 is processed, its three predecessors are tight, and v(333)=1
+SUMMARY: confirmed the closed-set costs 0,0,0,1, the frontier c*=10/9, and a depth-3 cone that does not determine tightness

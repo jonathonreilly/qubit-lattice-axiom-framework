@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-tight-sibling-vacuity:a4",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-ja48f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/tight-sibling-vacuity/referee_w-macbookpro90c72-ja48f/check.py",
+ "seed": 15131,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f40ceeb2",
+ "started_utc": "20260924T015851Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the closed-set costs 0,0,0,1, the frontier c*=10/9, and a depth-3 cone that does not determine tightness"
+ },
+ "review": "Own closed-set sweep: v(333)=1 while its three processed predecessors are tight, and the budget frontier gives c*=10/9.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "f3dedb8041535b3377b1dfff24368c22d533251213ffe162c648e29f108b0e82",
+ "stdout_tail": "ok cost: cost depends only on the node weights\nok sweep: 37 one-sites, {'seed': 1, 'amp': 9, 'proc': 27}, 333 processed\nok preds: three predecessors [(2, 3, 3), (3, 2, 3), (3, 3, 2)] are processed\nok values: v(333)=1, predecessors {(2, 3, 3): 0, (3, 2, 3): 0, (3, 3, 2): 0}\nok budget: frontier [(6, 5), (7, 6), (8, 7), (9, 8), (10, 9)], c* = 10/9\nok nonlocal: same cone at levels >= 5, v(233) 0 -> -1\nHIT: confirmed - the vacuity conjecture is false: 333 is processed, its three predecessors are tight, and v(333)=1\nSUMMARY: confirmed the closed-set costs 0,0,0,1, the frontier c*=10/9, and a depth-3 cone that does not determine tightness\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja48f",
+  "at_utc": "20260924T015857Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Closed-set costs pin v(333)=1 with three tight processed predecessors, so the vacuity conjecture is false and c*=10/9.",
+  "by": "w-macbookpro90c72-ja48f",
+  "at_utc": "20260924T015857Z"
+ }
+}

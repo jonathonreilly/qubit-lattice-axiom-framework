@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-source-response-inside-a-halo-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j0f5f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/source-response-inside-a-halo/referee_w-macbookpro90c72-j0f5f/check.py",
+ "seed": 45479,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7024def",
+ "started_utc": "20260924T102439Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the enumeration, the four neutral values, the reversal ratios, and the cube scaling. The gas is an imposed independent gradient. A bound cluster was not in the attempt."
+ },
+ "review": "The one-record enumeration reproduces the rational drift, including -52/45 at (3,1,2) and c0, and blocking alone is -1.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:source-response-inside-a-halo:a3/; its files are probes/work/derive/source-response-inside-a-halo/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/source-response-inside-a-halo/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "bb5f3e3bbd67e48ce74c85e96b059bf55b59ebd2464d817ebad8535266dd95b6",
+ "stdout_tail": "PASS blocking: occupied targets alone contribute -1\nPASS closed form: the enumeration is the stated rational function\nPASS neutral scale: all four triples are negative at c0, and phi/(1+phi) is concave\nPASS reversal: c*/c0 is 1.4059, 2.0901, 1.3862, 1.3775\nPASS cube and halo: a held cube drifts at kappa g m/2; inside a halo that is Q m/(8 pi R^2)\nHIT: confirmed - the first-order drift is the stated rational function. Blocking contributes -1. At c0=6/(p+q+4r) the drift is negative on (3,1,2), (12,1,2), (5,2,4) and (7,3,5). A held cube of side m drifts up the gradient at kappa g m/2, which is not symmetric in two bodies.\nSUMMARY: confirmed the enumeration, the four neutral values, the reversal ratios, and the cube scaling. The gas is an imposed independent gradient. A bound cluster was not in the attempt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0f5f",
+  "at_utc": "20260924T102440Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent enumeration gives the stated drift, negative at c0 on all four triples, with blocking equal to -1.",
+  "by": "w-macbookpro90c72-j0f5f",
+  "at_utc": "20260924T102440Z"
+ }
+}

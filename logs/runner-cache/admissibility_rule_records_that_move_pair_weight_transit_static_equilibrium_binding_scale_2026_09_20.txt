@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_records_that_move_pair_weight_transit_static_equilibrium_binding_scale_2026_09_20.py
+runner_sha256: 59727fdcf64618f1ce9322827056dcd515d7940671ea073e55e8eceac9c1d713
+input_fingerprint_sha256: 02d0ccc879ac5bcd3eb93b250805ad62c5ddaae4e9884395e116203dd73a49e5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentences used: the distribution sentence, 'Records form.', the one-record sentence, and the open gates for update laws and persistence dynamics
+PASS: A3 block 01 on main carries its claim id and the static law of a product rule
+PASS: B1 T1: on the 2x3 window with two vacancies and contents (+z, +z, -z, +x), every move of the pair-weight transit (heat-bath and min(1, ratio) acceptance) is in detailed balance with the static law on the occupied set; three weight and scale choices; all 180 arrangements
+PASS: B2 T1: the moves connect all 180 arrangements, so the static law on the occupied set is the only stationary law there (180 reached)
+PASS: C1 T2: the rule's normalized distribution is unchanged by the scale c, for every neighbourhood of one, two or three records (two weight triples, three scales)
+PASS: C2 T2: the motion probabilities at scale 1 and scale 1/2 agree exactly on the 288 moves that keep the number of record-record bonds and differ on the 384 moves that change it
+PASS: C3 T2: a record with k agreeing neighbours moves to an isolated empty position with probability 1/(1 + (c p)^k), decreasing in k when c p > 1 (p = 3; c = 1/2, 1, 2; k = 1..5)
+PASS: D1 T3: with the rule's normalized probability as acceptance, every move has the same probability at scale 1 and scale 1/2: that reading is blind to the binding scale
+PASS: D2 T3: a cycle of four moves (record A hops, record B hops, A hops back, B hops back) has unequal products of rates around its two directions: from (0, 0, 1, 2, None, None), moves (3, 4) and (2, 5): 1/2592 against 1/2376; by the cycle criterion no law is reversible for that chain
+PASS: D3 T3 (control): the pair-weight transit passes the same two-move test against the static law
+PASS: E1 T4: on the four-cycle, formation at an empty site at rate z Z_x with content drawn from the rule, against removal at rate 1, is in detailed balance with the static law with fugacity z (all 2401 configurations, two scales); the content given formation is the axioms' distribution
+PASS: E2 T4: at the neutral scale c_0 = 6/(p + q + 4r) = 1/2 for (3,1,2), an empty site next to ONE record forms at the rate of an isolated empty site (mean pair weight 1); next to two agreeing records the rate is multiplied by 13/12, next to two orthogonal ones by 1, next to two opposite ones by 11/12
+PASS: E3 T5: the complement of the empty state in the bond kernel has eigenvalues c(p + q + 4r) - 6 (once), c(p + q - 2r) (twice), c(p - q) (three times), so the kernel is positive semidefinite exactly when p >= q, p + q >= 2r and c >= 6/(p + q + 4r); at (3,1,2) the function v (x) w on the four-site ring has reflection form -18 at c = 1/4, 0 at the neutral scale 1/2, 36 at c = 1
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — detailed balance of every pair-weight move with the static law; the scale cancelling from the rule; the escape probability 1/(1 + (c p)^k)
+per_site: executed — all 180 arrangements of four records and two vacancies on the 2x3 window, three weight and scale choices; all 2401 configurations of the four-cycle for the birth-death pair
+per_mode: not applicable — finite windows; the clumping map is executed in the controls
+per_block: executed — the connectedness of the moves; the four-move cycle with unequal products of rates for the normalized reading; the spectrum of the bond kernel with the empty state and the negative reflection form below the neutral scale
+lattice_wide: T1, T2 and T4 give conditional finite identities; T3 nonreversibility is the stated example, not a universal weight claim; historical clumping and jamming reports are not fresh evidence or limiting theorems; the motion clause and the binding scale are not in the axioms and are not adopted
+PASS: G1 the five N5 resolution lines are printed
+scope: records that move — pair-weight transit is in detailed balance with the static law on the occupied set; the binding scale cancels from the rule and enters the motion; the normalized reading is blind to it and the stated example is not reversible; the formation rate that fits; exact
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

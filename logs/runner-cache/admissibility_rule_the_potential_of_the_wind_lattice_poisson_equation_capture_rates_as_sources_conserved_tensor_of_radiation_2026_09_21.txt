@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_potential_of_the_wind_lattice_poisson_equation_capture_rates_as_sources_conserved_tensor_of_radiation_2026_09_21.py
+runner_sha256: 4a894ca302fa09d9a4f54216004aa57f77df45649e1803a7570faaca77fe7b6c
+input_fingerprint_sha256: 5b05e5c95a6ff77a9ca6038fe0cf362003af721e99dc6e9b941ff8d2b30c5d42
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_POTENTIAL_OF_THE_WIND_SOLVES_THE_LATTICE_POISSON_EQUATION_WITH_CAPTURE_RATES_AS_SOURCES_INERTIAL_GAS_HAS_THE_CONSERVED_TENSOR_OF_RADIATION_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentence used
+PASS: B1 T1: on the 4^3 torus (192 bonds, 64 divergence and 192 plaquette constraints) the fields with zero divergence and zero circulation are exactly the three constant fields: the constraint rank is at least 189 (computed modulo a prime, a lower bound for the rational rank) and the three constants lie in the kernel, so the kernel has dimension 3
+PASS: B2 T1: for two sinks capturing 7 and 3 on the 4^3 torus, J(x->y) = Phi(x) - Phi(y) with Phi = -G_L * (Q - mean Q) has divergence -(Q - mean Q) at all 64 sites, zero circulation around all 192 plaquettes and no constant part: by B1 it is the only such field; the potential of the wind solves the lattice Poisson equation with the capture rates as sources
+PASS: C1 T2: the momentum density generated from rest by the linearized conservation equations, -grad(rho/3), is a lattice gradient and has zero circulation around every plaquette (5 random density fields on the 4^3 torus): the wind that builds up from rest satisfies the hypothesis of T1
+PASS: D1 T3: in product states at rest the momentum flux is (rho/3) times the identity at rho = 1/10, 3/10, 1/2, 9/10, so the density minus three times the pressure vanishes at every density: the inertial gas has the equation of state of radiation; and the mass current is (1 - rho) times the momentum density: mixed components are generically unequal at nonzero g and finite density, but both vanish at rest
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the momentum flux of product states at four densities; the mass current against the momentum density in a tilted state
+per_site: executed — the divergence of the potential's current at all 64 sites of the 4^3 torus; the circulation around all 192 plaquettes
+per_mode: executed — the lattice Green function as a mode sum with the zero mode removed
+per_block: executed — the rank of the 256 divergence and circulation constraints on the 192 bonds of the 4^3 torus; five random density fields
+lattice_wide: T1's uniqueness is proved for every torus by the same counting (three constant fields) ; the infinite-lattice extension is deferred; T2 is an identity of lattice gradients; T3 is exact for product states at rest; that the stationary wind has zero circulation is an assumption where it is not derived from T2
+PASS: G1 the five N5 resolution lines are printed
+scope: the potential of the wind solves the lattice Poisson equation with the capture rates as sources (unique among divergence-matched, circulation-free fields); the inertial gas has the equation of state of radiation at every density and a symmetric conserved tensor only in the dilute limit; exact
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_streaming_clause_with_an_isotropic_second_order_term_content_as_a_bias_on_a_symmetric_walk_2026_09_21.py
+runner_sha256: 608535810fd20301170a02b49aec2da915e5a209122f4320fc140afea695538e
+input_fingerprint_sha256: 92510914d35b00c413368b7592456f01581dace735620fbc05cd4f85bcedf1d6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_STREAMING_CLAUSE_WITH_AN_ISOTROPIC_SECOND_ORDER_TERM_CONTENT_AS_A_BIAS_ON_A_SYMMETRIC_WALK_UNBIASED_CAPTURE_AND_ITS_PRICE_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentence used
+PASS: B1 T1: the biased walk (alpha + c s.e)/2 has non-negative rates, total rate 3 alpha, first moment c s and second moment alpha delta_kl for every one of 150 rational unit contents: the second moment does not depend on the content
+PASS: B2 T1: for any non-negative axis-hop law with first moment c s the second moment along an axis is at least c |s_k|, with equality only for block 44's forward hops; a second moment that does not depend on the content must therefore be at least c = 1/3: the biased walk with alpha = c is the least diffusive such clause
+PASS: C1 T2: on a field of degree two the streaming operator of the biased walk is exactly -c s.grad + (alpha/2) Laplacian, the same second-order term for every content: in local equilibrium the momentum equation gets (alpha/2) Laplacian g_i and nothing of cubic symmetry, so a potential flow (whose Laplacian vanishes) meets no viscous stress at this order
+PASS: D1 T3: a site captures every content at the rate 3 alpha, and a body of any shape (cube, 2x2x1 plate, ball of radius 3) with total weight alpha/2 times the exposed-face count, under a homogeneous product reservoir, because opposite faces are equally many: captured records are a fair sample of the gas (for block 48's two contents the captured mean is the gas mean (1/5, -2/5, 0), where the forward clause gave (1/15, -7/15, 0))
+PASS: E1 T4: with exchange of contents on occupied targets the flow into every configuration of two records on the 3x3x3 torus equals the flow out of it (1755 configurations, three pairs of rational contents): the uniform measure is stationary; hops move contents or exchange them, so number and momentum are conserved
+PASS: E2 T5: the share of a record's hops that go against its content, and across it (at alpha = c): |s|_1 = 1: against 0, across 2/3; |s|_1 = 7/5: against 1/10, across 1/3; |s|_1 = 5/3: against 2/9, across 0; |s|_1 = 11/7: against 5/21, across 0: a record moving along an axis makes one hop in three forwards and two in three sideways; one along a body diagonal makes (3 - sqrt 3)/6 of its hops backwards
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — rates, first and second moments of the biased walk for 150 rational unit contents; the lower bound c |s_k| on the second moment of any axis-hop law and its attainment by forward hops
+per_site: executed — capture at the rate 3 alpha by a site and alpha/2 per exposed face by a cube, a plate and a ball; the two-content witness
+per_mode: not applicable — the retained finite identities concern local rates and integrated flux, not a mode spectrum
+per_block: executed — the streaming operator on fields of degree two; the balance of flows at every two-record configuration of the 3x3x3 torus for three pairs of contents; the shares of hops against and across the content
+lattice_wide: T1 to T3 and T5 are exact for the clause; T4 is checked in the two-record sector and argued in general by the pairing of every hop with a predecessor of the same rate; the lattice's symmetry returns at fourth order in gradients, which the note does not compute; the wind by direction under the clause is an executed control, not a proof
+PASS: G1 the five N5 resolution lines are printed
+scope: a streaming clause with an isotropic second-order term — content as a bias on a symmetric walk: content-independent second moment, least diffusion alpha = c, isotropic viscous term, unbiased capture by any body, stationary uniform measure, and the share of hops that go against or across the content
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_records_with_inertia_conserved_momentum_structureless_equilibrium_sound_speed_forces_need_capture_2026_09_20.py
+runner_sha256: b19110c289b3111bc4b497d1022fbe2dbcb49289930c4b3b528016fc61586207
+input_fingerprint_sha256: 162fced5f782ace3c17fe069246739a4ce4f61f4243c2b6ba4cbc8ac2d1ee497
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_RECORDS_WITH_INERTIA_CONTENT_AS_DIRECTION_OF_TRAVEL_CONSERVED_MOMENTUM_STRUCTURELESS_EQUILIBRIUM_SOUND_SPEED_FORCES_NEED_CAPTURE_OR_EMISSION_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentences used
+PASS: B1 T1: every streaming event (42 local cases) and every scattering event (36 pairs) conserves the number of records and the momentum, the sum of the unit vectors of the contents
+PASS: B2 T1: streaming and scattering both commute with the 24 proper rotations of the cube acting on sites and contents together
+PASS: C1 T2: on the 3^3 torus with two records, all contents (12636 configurations), every configuration receives exactly as much as it sends under streaming with exchange and bond scattering: the uniform measure is stationary (0 unbalanced)
+PASS: C2 T2: it is not stationary if blocked attempts do nothing (1458 unbalanced configurations) nor under a head-on rule triggered by blocked attempts (486): the exchange and the bond clock are what make the equilibrium structureless
+PASS: D1 T3: in a product state with content densities rho_d the mass current is (1 - rho) times the momentum density, for three sets of densities
+PASS: D2 T3: at isotropy the momentum flux is (rho/3) times the identity at rho = 3/10, 1/2, 9/10 (the exchange term rho^2/3 restores what exclusion removes from rho(1 - rho)/3), the bond scattering carries no net momentum, and the linearized wave speed squared (1 - rho)/3 is 7/30 at rho = 3/10
+PASS: E1 T4: on the 4^3 torus with two separate reflecting solid sites and two records (68076 configurations) the uniform measure is still stationary and the mean force on each solid is exactly zero: bodies that neither capture nor emit records feel no force
+PASS: E2 T5: for the sphere menu, re-drawing a pair on its momentum class (P/2 +- r w, w orthogonal to P, r^2 = 1 - |P|^2/4) keeps both contents of unit length and keeps their sum, on three rational instances; and the streaming probabilities max(0, s.e_k)/sqrt 3 carry the mean displacement s/sqrt 3, which gives the speed squared (1 - rho)/9
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the 42 local streaming cases and the 36 scattering pairs; the 24 rotations
+per_site: executed — inflow against outflow at every one of the 12636 two-record configurations of the 3^3 torus, and of the 4^3 torus with two reflecting solid sites; the mean force on each solid
+per_mode: not applicable to the exact part; the executed sound waves are in the controls
+per_block: executed — the mass current and the momentum flux of product states at three densities; three rational instances of the sphere menu's pair re-drawing
+lattice_wide: T1 holds event by event on every lattice; T2 and T4 are proved by a counting argument for finite tori, with balanced exposed faces for the zero-force statement and checked exhaustively on small tori; T3's currents are exact for product states, and the speed is that of the linearized conservation equations built on them; the forces between capturing or emitting bodies are executed, not proved
+PASS: G1 the five N5 resolution lines are printed
+scope: records with inertia — number and momentum conserved event by event, a structureless equilibrium, mass current (1 - rho) g and pressure rho/3 in product states, wave speed squared (1 - rho)/3 (six axes) and (1 - rho)/9 (sphere), no force on bodies that neither capture nor emit; exact
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

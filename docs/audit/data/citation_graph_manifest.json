@@ -1,6 +1,6 @@
 {
- "edge_count": 14091,
- "node_count": 6510,
+ "edge_count": 14157,
+ "node_count": 6524,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -726,6 +726,14 @@
    "deps_hash": "2b42b09047b0",
    "out_degree": 4
   },
+  "admissibility_rule_a_streaming_clause_with_an_isotropic_second_order_term_content_as_a_bias_on_a_symmetric_walk_unbiased_capture_and_its_price_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "f6441c3f8815",
+   "out_degree": 5
+  },
+  "admissibility_rule_binding_scale_pinned_at_the_neutral_value_pair_weight_is_the_rules_likelihood_ratio_no_binding_without_a_cycle_all_binding_is_agreement_around_loops_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "f6e4ac704374",
+   "out_degree": 3
+  },
   "admissibility_rule_covariant_frame_constructions_cube_orbits_and_antipodal_kernel_propagation_bounded_theorem_note_2026-09-15": {
    "deps_hash": "d0249e15a42a",
    "out_degree": 2
@@ -762,6 +770,10 @@
    "deps_hash": "a95e40c6cf02",
    "out_degree": 3
   },
+  "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "617561b49ce2",
+   "out_degree": 6
+  },
   "admissibility_rule_gravity_node_kernel_under_the_formation_reading_a_heat_kernel_in_level_time_times_a_plane_green_function_not_the_comparators_three_dimensional_green_function_bounded_theorem_note_2026-09-18": {
    "deps_hash": "0447028c8504",
    "out_degree": 2
@@ -774,9 +786,17 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "admissibility_rule_inertia_joined_with_the_rules_pair_weights_by_a_clock_global_clock_exact_local_clock_exact_for_pairs_defect_at_three_records_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "4b6bc2865f56",
+   "out_degree": 5
+  },
   "admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06": {
    "deps_hash": "0447028c8504",
    "out_degree": 2
+  },
+  "admissibility_rule_interaction_through_the_odds_of_unformed_sites_field_equation_massless_surface_content_charge_no_first_order_mass_channel_at_neutral_scale_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "4dc09ea51d9d",
+   "out_degree": 5
   },
   "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1b3132f0c69b",
@@ -786,9 +806,21 @@
    "deps_hash": "7fff3dc3d206",
    "out_degree": 1
   },
+  "admissibility_rule_record_layer_fields_arrive_by_diffusion_establishment_time_grows_as_the_square_of_the_range_transit_halo_and_massless_odds_field_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "8f3ba4362142",
+   "out_degree": 4
+  },
   "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15": {
    "deps_hash": "903559348f92",
    "out_degree": 3
+  },
+  "admissibility_rule_records_that_move_pair_weight_transit_has_the_static_law_as_equilibrium_the_binding_scale_is_a_new_constant_clumping_and_jamming_executed_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "0447028c8504",
+   "out_degree": 2
+  },
+  "admissibility_rule_records_with_inertia_content_as_direction_of_travel_conserved_momentum_structureless_equilibrium_sound_speed_forces_need_capture_or_emission_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "0d65efd1af96",
+   "out_degree": 4
   },
   "admissibility_rule_six_axis_formation_threshold_the_unit_budget_is_false_one_seed_witness_with_family_constant_ten_ninths_tight_sibling_lemma_refuted_bounded_theorem_note_2026-09-20": {
    "deps_hash": "e3b0c44298fc",
@@ -822,6 +854,22 @@
    "deps_hash": "f1c14f0e732c",
    "out_degree": 5
   },
+  "admissibility_rule_the_attraction_is_tied_to_growth_a_body_in_balance_draws_no_wind_pull_proportional_to_net_uptake_growth_rate_fixed_by_the_force_coefficient_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "0dfbd75fe94e",
+   "out_degree": 6
+  },
+  "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "50f0b383a81d",
+   "out_degree": 5
+  },
+  "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "f6441c3f8815",
+   "out_degree": 5
+  },
+  "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "3ed373819056",
+   "out_degree": 6
+  },
   "admissibility_rule_three_body_term_exceptional_locus_exact_classification_bounded_theorem_note_2026-09-15": {
    "deps_hash": "4837d2020a34",
    "out_degree": 4
@@ -838,6 +886,10 @@
    "deps_hash": "68507e789d0e",
    "out_degree": 4
   },
+  "admissibility_rule_transparent_bodies_capture_rate_is_the_record_count_and_the_force_is_the_product_of_record_counts_over_distance_squared_predicted_coefficient_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "fa6e80d079e8",
+   "out_degree": 6
+  },
   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8ae058a5c524",
    "out_degree": 2
@@ -845,6 +897,10 @@
   "admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_and_the_nonlinear_law_measured_against_it_bounded_theorem_note_2026-09-17": {
    "deps_hash": "0447028c8504",
    "out_degree": 2
+  },
+  "admissibility_rule_what_a_source_is_when_records_move_one_mass_per_record_no_action_across_empty_space_screened_density_potential_signed_tilt_channel_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "998c58e176f7",
+   "out_degree": 4
   },
   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "f21f2489334d",

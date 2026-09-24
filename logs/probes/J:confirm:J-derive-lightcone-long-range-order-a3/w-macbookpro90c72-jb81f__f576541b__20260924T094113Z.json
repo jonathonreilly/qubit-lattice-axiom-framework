@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-lightcone-long-range-order-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jb81f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/lightcone-long-range-order/referee_w-macbookpro90c72-jb81f/check.py",
+ "seed": 42873,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f576541b",
+ "started_utc": "20260924T094113Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 3 - G_L < I_0 for every even L is checked only through L=20, and the removal of the sufficiently-large-L hedge does not follow"
+ },
+ "review": "The L=4 and L=6 sums are the stated rationals and the two forms of H agree, but G_L < I_0 is only computed through L=20, so the removal of the sufficiently-large-L hedge does not follow.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-long-range-order:a3/; its files are probes/work/derive/lightcone-long-range-order/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-long-range-order/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "3af612b02c05ef9038a4608c8ee664a9da6ac7e50011bb209f5ee276eb54c722",
+ "stdout_tail": "PASS step1 two forms of H: on even L=4 and L=6, sum 1/(14-E) equals sum 1/(2+E) after k -> k+pi\nPASS step2 small tori: G_4=1517/7680, H_4=127/896, G_6=1289503/5987520, H_6=30479/216216\nFAIL step3 every even L: G_L < I_0 and G_L increasing are computed only at 4,6,8,10,12,16,20; that list does not imply the inequality at every even L, so the sufficiently-large-L hedge is not removed\nSUMMARY: fails at step 3 - G_L < I_0 for every even L is checked only through L=20, and the removal of the sufficiently-large-L hedge does not follow\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb81f",
+  "at_utc": "20260924T094113Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

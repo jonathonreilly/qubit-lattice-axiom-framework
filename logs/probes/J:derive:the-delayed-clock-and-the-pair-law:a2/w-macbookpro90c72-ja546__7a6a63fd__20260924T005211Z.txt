@@ -1,0 +1,6 @@
+L=4 u0=-5/8 u1=1/8 mean0=True
+L=6 u0=-35/36 u1=-5/36 mean0=True
+L=12 u0=-143/72 u1=-77/72 mean0=True
+L=4 stale affinity u0-u1=-3/4
+SUMMARY: PARTIAL one record's embedded jump chain is simple random walk at every Gamma (departure timing does not bias direction); the slaved clock on a ring is slow at the record by exp((log kappa)(L^2-1)/(6L)) in the mean-zero gauge; no stationary product of a position law and one deterministic field exists for log kappa != 0, because a flat field is not invariant and the equilibrium bump is not invariant under a hop
+HIT: no joint law of product form (a law of the records times one deterministic clock field) is stationary at finite Gamma when log kappa != 0; a single record does not trap its direction

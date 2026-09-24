@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:the-delayed-clock-and-the-pair-law:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-ja546",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-delayed-clock-and-the-pair-law/w-macbookpro90c72-ja546/check.py",
+ "seed": 11131,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7a6a63fd",
+ "started_utc": "20260924T005211Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL one record's embedded jump chain is simple random walk at every Gamma (departure timing does not bias direction); the slaved clock on a ring is slow at the record by exp((log kappa)(L^2-1)/(6L)) in the mean-zero gauge; no stationary product of a position law and one deterministic field exists for log kappa != 0, because a flat field is not invariant and the equilibrium bump is not invariant under a hop"
+ },
+ "review": "Embedded jump chain is SRW at every Gamma; ring slaved clock at the record is (log kappa)(L^2-1)/(6L); no product of a position law and one deterministic field is stationary",
+ "what": "DERIVATION, independent attempt 2 of 2: A clock field that follows the records late: does block 95's pair law survive, and does a record trap itself?. SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). TASK: block 95 assumes the clock field follows the records at once (P4): log w = 6 log(kappa) sum_r G(z - r), and then departure-timed hopping is in detailed balance with W(C) exp(6 log(kappa) sum_pairs G). Let the field relax instead: du_z/dt = Gamma w_z ((1/6) sum_e u_(z+e) - u_z + log(kappa)(n_z - nbar)) (the local clock times the relaxation; block 57 shows nearest-neighbour KINETIC terms carry no delay, so this first-order relaxation is a separate supplied clause). (a) For one record on a ring or torus: its effective hop rate (or diffusion constant) in the stationary state of the joint (record, field) process, exactly or to first order in 1/Gamma - does it trap itself on its own trail (sites it has visited keep slow clocks)? (b) For two records: the first-order correction to the pair law in 1/Gamma; is the joint process reversible for any finite Gamma? HIT: (a) or (b) exact, or an exact proof that no joint law of product form is stationary. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-delayed-clock-and-the-pair-law/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-delayed-clock-and-the-pair-law/<name>/check.py\"",
+ "stdout_sha256": "aa1ddf9b97cf9666a9ebab74b68fc91c58012636b679fe8128da61c023978c4a",
+ "stdout_tail": "L=4 u0=-5/8 u1=1/8 mean0=True\nL=6 u0=-35/36 u1=-5/36 mean0=True\nL=12 u0=-143/72 u1=-77/72 mean0=True\nL=4 stale affinity u0-u1=-3/4\nSUMMARY: PARTIAL one record's embedded jump chain is simple random walk at every Gamma (departure timing does not bias direction); the slaved clock on a ring is slow at the record by exp((log kappa)(L^2-1)/(6L)) in the mean-zero gauge; no stationary product of a position law and one deterministic field exists for log kappa != 0, because a flat field is not invariant and the equilibrium bump is not invariant under a hop\nHIT: no joint law of product form (a law of the records times one deterministic clock field) is stationary at finite Gamma when log kappa != 0; a single record does not trap its direction\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja546",
+  "at_utc": "20260924T005221Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "SRW embedded chain; ring on-site clock (log kappa)(L^2-1)/(6L); product of position law and one deterministic field is not stationary",
+  "by": "w-macbookpro90c72-ja546",
+  "at_utc": "20260924T005221Z"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-kernel-normalization-puzzle:a3",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-ja9f1",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/kernel-normalization-puzzle/referee_w-macbookpro90c72-ja9f1/check.py",
+ "seed": 16220,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f4cdf48e",
+ "started_utc": "20260924T021700Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed E1-E4; the executed plateaus were not re-parsed, and the one-loop closure stays assumed"
+ },
+ "review": "E[delta] equals n sigma^2, the 1/beta gain cancels, and the one-loop factor is 1+sigma^2(2-W), with the light-cone exchange Delta/343.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "9600c60269c3c95e8f18cd6f57bcbe29e6ac1eddb8c87e3d9143bc9fc0c22e9f",
+ "stdout_tail": "ok E1: pair sum (n^2/2)(1-|phi|^2) on the n=3,4,7 stencils, so E[delta]=n sigma^2\nok E2: Hartree gain is 1 - 2x^2 + x^3; the order 1/beta cancels\nok simplex: ordered pair differences of a simplex are one orbit, so the exchange term vanishes\nok E3: Gamma(0)-mean = -(6/7) Delta and Gamma(e)-mean = Delta/7\nok E4: noise factor 1+sigma^2(2-W); light-cone R(0+) divides by 1+sigma^2 Delta_c/49\nHIT: confirmed - E[delta]=n sigma^2, the 1/beta gain cancels, simplex exchange vanishes, and the one-loop factor is 1+sigma^2(2-W)\nSUMMARY: confirmed E1-E4; the executed plateaus were not re-parsed, and the one-loop closure stays assumed\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja9f1",
+  "at_utc": "20260924T021708Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "E[delta]=n sigma^2, the 1/beta gain cancels, and the one-loop factor is 1+sigma^2(2-W).",
+  "by": "w-macbookpro90c72-ja9f1",
+  "at_utc": "20260924T021708Z"
+ }
+}

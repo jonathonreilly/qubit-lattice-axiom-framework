@@ -1,0 +1,7 @@
+ok E1: pair sum (n^2/2)(1-|phi|^2) on the n=3,4,7 stencils, so E[delta]=n sigma^2
+ok E2: Hartree gain is 1 - 2x^2 + x^3; the order 1/beta cancels
+ok simplex: ordered pair differences of a simplex are one orbit, so the exchange term vanishes
+ok E3: Gamma(0)-mean = -(6/7) Delta and Gamma(e)-mean = Delta/7
+ok E4: noise factor 1+sigma^2(2-W); light-cone R(0+) divides by 1+sigma^2 Delta_c/49
+HIT: confirmed - E[delta]=n sigma^2, the 1/beta gain cancels, simplex exchange vanishes, and the one-loop factor is 1+sigma^2(2-W)
+SUMMARY: confirmed E1-E4; the executed plateaus were not re-parsed, and the one-loop closure stays assumed

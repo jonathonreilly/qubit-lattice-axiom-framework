@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_soft_tensor_constraint_generates_curvature_moves_2026_09_24.py
+runner_sha256: f372bcf31584c751bf4891c773bdef43bacaa7632f07a747ca60017afb237d79
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 68.85
+status: ok
+----- stdout -----
+[PASS] the leading moves have L1 norm 12 and are exactly the planar pieces: 6 through a diagonal slot, 4 through a face slot :: smallest L1 through a diagonal and a face slot [12, 12]; moves of L1 12 found 6 and 4, all planar pieces
+[PASS] the order-12 path sum is A = 111150053/31850496; the U(1) ring's is 5/2, matching open PR 9066's 5/32 :: A = 111150053/31850496 = 3.489743 over 2304 partial moves, none constraint-satisfying; ring 5/2, (h/2)^4 form 5/32
+[PASS] exact diagonalization on the 2304-state path box: the splitting over 2 A (h/U)^12 tends to 1 :: zero-energy configurations 2; ratio at h/U = 0.1, 0.15, 0.2: 0.9847, 0.9660, 0.9408; extrapolated to h = 0: 1.0000
+[PASS] qubit slots allow only unit changes: the smallest unit moves have 20 slots, so they appear at order 20 :: unit-move supports through a diagonal and a face slot 20, 20 (optimal, spatial [True, True]); path sums 0.9265 and 0.9265; a planar 20-slot unit move has path sum 510.6; no constraint-satisfying partial move
+[PASS] qubit slots get fourth-order diagonal potentials: the end configurations of a 20-slot move differ by order h^4/U^3 :: 248 slot pairs across the move's edge; change over 100 random surroundings from -2.95 to 2.54 h^4/U^3 (unit step), against a move amplitude of order h^20/U^19
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

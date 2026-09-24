@@ -173,7 +173,7 @@ are as stated. No limit beyond L = 128 is claimed.
   8 of 8 are caught. A second set of seeds (control) passes all six
   checks.
 - **Budget:** 6 checks, stdout 1457 characters (ceiling 6000), about
-  340 s (ceiling 900 s), peak about 105 MB.
+  340 s (declared audit timeout 1800 s), peak about 105 MB.
 
 ## Verification
 

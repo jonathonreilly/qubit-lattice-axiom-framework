@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/record_readout_locality_as_local_tomography_selects_ordinary_composite_2026_09_24.py
+runner_sha256: 3986209b4236bb5349e9720fbfbe250a9d41fa4ce6daef1fffe99e63882d5193
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+[PASS] the ordinary composite passes the reading: local record menus along four axes reconstruct every two-site state :: 20 random states rebuilt from 16 joint menu frequencies to 1e-16 and from 16 Pauli products to 6e-17; traceless dimensions 15 = 3 + 3 + 9; three sites 63 = 9 + 27 + 27
+[PASS] the words in the commuting local copies span the whole composite algebra: 16 for two sites, 64 for three :: local copies commute exactly (0e+00); span of two-letter words 16, of three-letter words 64
+[PASS] the graded composite fails the reading: two odd-sector states share every local-product statistic :: local readable products {1, n1, n2, n1 n2} fix 3 of 7 real parameters; (|01>+|10>)/sqrt2 and (|01>-|10>)/sqrt2 agree on them to 0e+00 with trace distance 1; the mode operators anticommute (0e+00); sigma^x_1 anticommutes with the mode-1 parity so it is not local there; read as two qubits, sigma^x sigma^x separates them by 2
+[PASS] the reading alone leaves the state set open: W = (1 + XX + YY + ZZ)/4 is positive on every product effect yet not a state :: smallest eigenvalue -0.50; marginals I/2 to 0e+00; <ab|W|ab> = (1 + a.b)/4 on 4000 random product states to 1e-16, zero at antiparallel axes (0e+00); W is half the swap operator; 4 nonzero local-product coordinates
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

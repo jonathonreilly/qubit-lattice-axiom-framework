@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.py
-runner_sha256: 852a4109debb8b904b19474379f568eef0045997cd27e7218600daf5a8965689
-timeout_sec: 900
+runner_sha256: b160ce159fe483a521155317c5da2c7a19725017950f339d14448c2ac045130e
+timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 343.64
+elapsed_sec: 293.62
 status: ok
 ----- stdout -----
 == A. The exact L = 2 torus ==
@@ -20,7 +20,7 @@ status: ok
 == D. The zone profile on L = 128 ==
 [PASS] the ratio rises from the innermost shell to the outermost by more than 5%, and the outer half lies above 1 by more than 20 standard errors :: shells 0.9556, 0.9580, 0.9604, 0.9650, 0.9678, 0.9808, 1.0147, 1.1082; outer half 1.03552 +- 0.00006
 
-time 343 s
+time 293 s
 TOTAL: PASS=6 FAIL=0
 
 ----- stderr -----

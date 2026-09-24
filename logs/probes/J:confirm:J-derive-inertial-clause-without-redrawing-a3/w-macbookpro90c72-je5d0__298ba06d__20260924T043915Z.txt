@@ -1,0 +1,6 @@
+A after +x pass (2, 0) B has no x-push of +y True
+J+x 33/175 pred 33/175
+J-x -37/245 pred -37/245
+J+y -2/385 pred -2/385
+HIT: confirmed - a +x record passing a +y record moves +y one step backward, and the product currents are r+(1-r++r-), -r-(1-r-+r+), and -r_d(r+-r-)
+SUMMARY: confirmed (a) is false as six independent streams; the streams are coupled by the exchange

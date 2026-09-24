@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-inertial-clause-without-redrawing-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-je5d0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/inertial-clause-without-redrawing/referee_w-macbookpro90c72-je5d0/check.py",
+ "seed": 24755,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "298ba06d",
+ "started_utc": "20260924T043915Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed (a) is false as six independent streams; the streams are coupled by the exchange"
+ },
+ "review": "Independent: a +x record passing +y moves +y one step back; product currents are r+(1-r++r-), -r-(1-r-+r+), and -r_d(r+-r-)",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:inertial-clause-without-redrawing:a3/; its files are probes/work/derive/inertial-clause-without-redrawing/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/inertial-clause-without-redrawing/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8e5e91d6b515477e5b42b4fe841d6adcacc91914c37e55f7557e63ea7d840a97",
+ "stdout_tail": "A after +x pass (2, 0) B has no x-push of +y True\nJ+x 33/175 pred 33/175\nJ-x -37/245 pred -37/245\nJ+y -2/385 pred -2/385\nHIT: confirmed - a +x record passing a +y record moves +y one step backward, and the product currents are r+(1-r++r-), -r-(1-r-+r+), and -r_d(r+-r-)\nSUMMARY: confirmed (a) is false as six independent streams; the streams are coupled by the exchange\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je5d0",
+  "at_utc": "20260924T043915Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The exchange couples the streams; the product-current formulas match an enumeration of all 49 pairs",
+  "by": "w-macbookpro90c72-je5d0",
+  "at_utc": "20260924T043915Z"
+ }
+}

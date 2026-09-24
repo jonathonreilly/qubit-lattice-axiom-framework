@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-fall-from-the-ledgers-consistency-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc358",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-fall-from-the-ledgers-consistency/referee_w-macbookpro90c72-jc358/check.py",
+ "seed": 13563,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "21fb5313",
+ "started_utc": "20260924T013243Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the commutator and the zero-mean weights; the quasi-momentum, not a local density, is what falls with weight one"
+ },
+ "review": "Independent: [X,T_n]=n T_n, fall weights are cos k and cos 2k, both mean zero over the zone",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-fall-from-the-ledgers-consistency:a1/; its files are probes/work/derive/the-fall-from-the-ledgers-consistency/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-fall-from-the-ledgers-consistency/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "381cd421958834c0e793b77a4a3c65c7974d021d5937a0d9aebd147d54cbba25",
+ "stdout_tail": "commutator [X,T_n]=n T_n True\nmean cos -6.939e-18 mean cos2 -3.990e-17\nHIT: confirmed - [X,T_n]=n T_n, the weights of sin and sin*cos are cos and cos(2k), and both have mean zero over the zone, so no local momentum falls with weight one\nSUMMARY: confirmed the commutator and the zero-mean weights; the quasi-momentum, not a local density, is what falls with weight one\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc358",
+  "at_utc": "20260924T013244Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Commutator and zero-mean weights cos k and cos 2k confirm no local momentum falls with weight one",
+  "by": "w-macbookpro90c72-jc358",
+  "at_utc": "20260924T013244Z"
+ }
+}

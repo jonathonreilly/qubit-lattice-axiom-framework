@@ -1,0 +1,4 @@
+commutator [X,T_n]=n T_n True
+mean cos -6.939e-18 mean cos2 -3.990e-17
+HIT: confirmed - [X,T_n]=n T_n, the weights of sin and sin*cos are cos and cos(2k), and both have mean zero over the zone, so no local momentum falls with weight one
+SUMMARY: confirmed the commutator and the zero-mean weights; the quasi-momentum, not a local density, is what falls with weight one

@@ -1,0 +1,9 @@
+PASS plaquettes: Z=20784=12^4+3*2^4, D in {22464,24336}, pi_s=81/3464, pi_f=9/416, 9/416<9/400<81/3464, A^400<1 and B^400<1 by integer comparison; A^m+B^m<1/2 at m=80237 (rates 1.745566e-5, 1.727769e-5); the sum crosses 1/2 at m=79827
+PASS colours: anti-diagonals change (x-y) mod 3; face diagonals change x+2y+3z mod 4; blocks on 4Z^3 share no dependency edge
+PASS z2-min: N is 26, 24, 22; the 2D conditional ratio is constant in s on every boundary; min Var(g)/(2 gmax^2) = 19/4604256
+PASS z3: 600 flat face-diagonal boundaries (216 antipodal, 384 orthogonal), none with a1=b1; min gamma=1/986; min (gmax-gmin)^2/(4 gmax^2) on a1=b1 is 4/28561; c3=1/6941722489; 3D conditional ratio constant in s on 40 boundaries
+PASS window-2d: TV=455/31176=169/866-13/72, optimal event is the anti-diagonal equality, constant-indicator gap is 8.35 times smaller, equal-bond count 1.01155 against 1
+PASS window-3d: Z=6982520832, TV=1182193085/23402354976=0.05052, constant 0.000457 vs 0.000292, one face-diagonal 0.19754 vs 0.18056
+TOTAL: PASS=5 FAIL=0
+SUMMARY: confirmed - disjoint plaquettes separate the static law from every adapted formation law (TV at least max(81/3464-9/416, 1-A^m-B^m), above 1/2 from m=80237), and on Z^2 and Z^3 the specific relative entropy is at least (19/4604256)/3 and (1/986)^2*(4/28561)/4, so the measures are singular; on the 2x2 window the anti-diagonal equality is the exact total-variation event
+HIT: confirmed - the a3 bounds survive independent enumeration: plaquette constants 81/3464 and 9/416, integer A^400<1 and B^400<1, A^m+B^m<1/2 at the stated m=80237 (the sum crosses at 79827), Z^2 minimum 19/4604256, 600 flat Z^3 boundaries with constants 1/986 and 4/28561, 2x2 TV 455/31176, and 2x2x2 TV 1182193085/23402354976

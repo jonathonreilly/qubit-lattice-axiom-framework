@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-static-formation-singularity-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-ja800",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/static-formation-singularity/referee_w-macbookpro90c72-ja800/check.py",
+ "seed": 49893,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8428a35",
+ "started_utc": "20260924T113813Z",
+ "elapsed_s": 7.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - disjoint plaquettes separate the static law from every adapted formation law (TV at least max(81/3464-9/416, 1-A^m-B^m), above 1/2 from m=80237), and on Z^2 and Z^3 the specific relative entropy is at least (19/4604256)/3 and (1/986)^2*(4/28561)/4, so the measures are singular; on the 2x2 window the anti-diagonal equality is the exact total-variation event"
+ },
+ "review": "Independent enumeration reproduces Z=20784, pi_s=81/3464, pi_f=9/416, the Z^2 minimum 19/4604256, 600 flat Z^3 boundaries, 2x2 TV 455/31176 and 2x2x2 TV 1182193085/23402354976; A^m+B^m is below 1/2 at m=80237.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:static-formation-singularity:a3/; its files are probes/work/derive/static-formation-singularity/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/static-formation-singularity/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "41c133f419ba375202ba064424c2348950e4f46d0c5cc00921e9fdefaaa842d2",
+ "stdout_tail": "nti-diagonals change (x-y) mod 3; face diagonals change x+2y+3z mod 4; blocks on 4Z^3 share no dependency edge\nPASS z2-min: N is 26, 24, 22; the 2D conditional ratio is constant in s on every boundary; min Var(g)/(2 gmax^2) = 19/4604256\nPASS z3: 600 flat face-diagonal boundaries (216 antipodal, 384 orthogonal), none with a1=b1; min gamma=1/986; min (gmax-gmin)^2/(4 gmax^2) on a1=b1 is 4/28561; c3=1/6941722489; 3D conditional ratio constant in s on 40 boundaries\nPASS window-2d: TV=455/31176=169/866-13/72, optimal event is the anti-diagonal equality, constant-indicator gap is 8.35 times smaller, equal-bond count 1.01155 against 1\nPASS window-3d: Z=6982520832, TV=1182193085/23402354976=0.05052, constant 0.000457 vs 0.000292, one face-diagonal 0.19754 vs 0.18056\nTOTAL: PASS=5 FAIL=0\nSUMMARY: confirmed - disjoint plaquettes separate the static law from every adapted formation law (TV at least max(81/3464-9/416, 1-A^m-B^m), above 1/2 from m=80237), and on Z^2 and Z^3 the specific relative entropy is at least (19/4604256)/3 and (1/986)^2*(4/28561)/4, so the measures are singular; on the 2x2 window the anti-diagonal equality is the exact total-variation event\nHIT: confirmed - the a3 bounds survive independent enumeration: plaquette constants 81/3464 and 9/416, integer A^400<1 and B^400<1, A^m+B^m<1/2 at the stated m=80237 (the sum crosses at 79827), Z^2 minimum 19/4604256, 600 flat Z^3 boundaries with constants 1/986 and 4/28561, 2x2 TV 455/31176, and 2x2x2 TV 1182193085/23402354976\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja800",
+  "at_utc": "20260924T113833Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Recomputed plaquette constants, the Z^2 minimum 19/4604256, the 600 flat Z^3 boundaries, and both window total variations; the Chernoff sum is below 1/2 at m=80237.",
+  "by": "w-macbookpro90c72-ja800",
+  "at_utc": "20260924T113833Z"
+ }
+}

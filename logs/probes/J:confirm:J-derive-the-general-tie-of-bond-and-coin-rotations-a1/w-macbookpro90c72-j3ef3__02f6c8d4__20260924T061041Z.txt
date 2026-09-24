@@ -1,0 +1,11 @@
+PASS a second prime 1 mod 24 embeds i, sqrt2, sqrt3, and a primitive sixth root  [p=1048633]
+PASS twelve sites within one step of either bond end, 108 unknowns  [rows 125184]
+PASS 21 independent relabelling ties lie in the 6^3 kernel, and the mod-p rank is 87  [rel 21 rank6 87 rank4 81]
+PASS the forward-bond tie of issue 8659 is not in the kernel  [[70144, 70144, 70912]]
+PASS bond rotations drop out of the density iff (c1,c2,c3) is along (1,2,-4)
+PASS static eigenvalues are kappa^2 times 2c1-c2, 2c1+c2 twice, 2c1+c2+c3 twice, 2c1+c2+2c3
+PASS the blind ratio has rank 3
+PASS beta = c4/(2(2c1+c2+2c3)) and beta=1 is one hyperplane
+
+SUMMARY: confirmed - over a second prime the 6^3 constraint rank is 87 against 21 relabelling solutions, and the 4^3 rank is 81; beta stays free.
+HIT: confirmed - the only reach-one ties with T dagger J = 0 on stationary states of the 6^3 torus are the 21 relabellings per component; the quadratic form sees bond rotations off (1,2,-4) and is nondegenerate iff (2c1-c2)(2c1+c2)(2c1+c2+c3)(2c1+c2+2c3) != 0, with beta free.

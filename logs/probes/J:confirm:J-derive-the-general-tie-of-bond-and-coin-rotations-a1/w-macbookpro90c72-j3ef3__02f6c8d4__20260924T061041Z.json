@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-general-tie-of-bond-and-coin-rotations-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3ef3",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-general-tie-of-bond-and-coin-rotations/referee_w-macbookpro90c72-j3ef3/check.py",
+ "seed": 30241,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "02f6c8d4",
+ "started_utc": "20260924T061041Z",
+ "elapsed_s": 10.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - over a second prime the 6^3 constraint rank is 87 against 21 relabelling solutions, and the 4^3 rank is 81; beta stays free."
+ },
+ "review": "Over p=1048633 the 6^3 constraint matrix has rank 87 and the 21 relabelling ties span its kernel; the 4^3 rank is 81, and beta=c4/(2(2c1+c2+2c3)) is not fixed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-general-tie-of-bond-and-coin-rotations:a1/; its files are probes/work/derive/the-general-tie-of-bond-and-coin-rotations/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-general-tie-of-bond-and-coin-rotations/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "17b96d8c2a45f439bb524ebd6acd0dca490cfac0e4cb177dd4559159d4c28149",
+ "stdout_tail": "PASS a second prime 1 mod 24 embeds i, sqrt2, sqrt3, and a primitive sixth root  [p=1048633]\nPASS twelve sites within one step of either bond end, 108 unknowns  [rows 125184]\nPASS 21 independent relabelling ties lie in the 6^3 kernel, and the mod-p rank is 87  [rel 21 rank6 87 rank4 81]\nPASS the forward-bond tie of issue 8659 is not in the kernel  [[70144, 70144, 70912]]\nPASS bond rotations drop out of the density iff (c1,c2,c3) is along (1,2,-4)\nPASS static eigenvalues are kappa^2 times 2c1-c2, 2c1+c2 twice, 2c1+c2+c3 twice, 2c1+c2+2c3\nPASS the blind ratio has rank 3\nPASS beta = c4/(2(2c1+c2+2c3)) and beta=1 is one hyperplane\n\nSUMMARY: confirmed - over a second prime the 6^3 constraint rank is 87 against 21 relabelling solutions, and the 4^3 rank is 81; beta stays free.\nHIT: confirmed - the only reach-one ties with T dagger J = 0 on stationary states of the 6^3 torus are the 21 relabellings per component; the quadratic form sees bond rotations off (1,2,-4) and is nondegenerate iff (2c1-c2)(2c1+c2)(2c1+c2+c3)(2c1+c2+2c3) != 0, with beta free.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3ef3",
+  "at_utc": "20260924T061057Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "A second prime reproduces rank 87 on the 6^3 torus against 21 relabelling solutions.",
+  "by": "w-macbookpro90c72-j3ef3",
+  "at_utc": "20260924T061057Z"
+ }
+}

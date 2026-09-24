@@ -174,7 +174,7 @@ This is not proved for every `β`.
 | two adjacent records | `15061186701/13100122654` | `1.1497` | `0.5748` |
 | a `2×2×2` cube | `271544816042337/105514222123304` | `2.5735` | `0.3217` |
 
-*Proof.* This is block 42 T6(a)–(c) with the killing rate `1 − 6λ` set to zero, since T3(a) gives the per-neighbour eigenvalue `1/6`. The capacities come from an exact rational solve at every free site (family E). ∎
+*Proof.* This is block 42 T6's hitting-probability argument with no killing, since T3(a) gives the per-neighbour eigenvalue `1/6`; the box makes it well posed, because the field is held at zero beyond it and the walk is stopped on leaving it. On a finite torus the massless problem degenerates (every nonempty body gives `u = 1` everywhere), as block 42 T6 notes in the version landed on main. The capacities come from an exact rational solve at every free site (family E). ∎
 
 *Executed (worker a1, infinite lattice, not re-derived here).* Capacities:
 - `0.65946` for one record (the inverse of the walk's return sum at the origin);
@@ -252,7 +252,7 @@ audit_required_before_effective_retained: true
   - no first-order mass channel at the neutral scale;
   - records as boundary values with capacities.
 
-  T4 here is its T6 with no mass term.
+  T4 here is its T6 with no mass term, on a box. Block 42 landed on main in 6bf62ae06c, with T6 restricted to `0 < 6λ₁ < 1` and the massless torus case noted as degenerate.
 - **Block 41** (#8547) T4 proved that, for any law unchanged by rotating all contents, a record count has no charge in the long-range tilt channel. T3(c) here is that lemma under the residual rotations of an ordered sea.
 - **The same channel in other laws.**
   - Blocks 19 (#8153) and 29 (#8173) found the sphere static law's ordered side carrying a transverse kernel between multiples of `1/(βE(k))`. That is where the gravity lane's node kernel was placed.
@@ -395,3 +395,7 @@ PYTHONPATH=scripts python3 scripts/admissibility_rule_possibilitys_odds_carry_co
 ```
 
 Expected: `TOTAL: PASS=13 FAIL=0`.
+
+## Corrigendum 2026-09-23 (after the owner's landings)
+
+Block 42 was landed on main in 6bf62ae06c with T6 restricted to `0 < 6λ₁ < 1` and the massless torus case noted as degenerate. T4 here is on a box with the field held at zero outside, where the massless problem is well posed; the proof now says so. Every check is unchanged.

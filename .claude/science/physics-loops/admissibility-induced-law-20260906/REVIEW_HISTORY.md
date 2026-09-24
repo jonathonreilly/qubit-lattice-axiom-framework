@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 98 — author checks (not a review PASS)
+The control's first design (wide packets passing close) failed and was replaced before any comparison entered the note; torus backgrounds removed in W1. Census 6/6 in family.

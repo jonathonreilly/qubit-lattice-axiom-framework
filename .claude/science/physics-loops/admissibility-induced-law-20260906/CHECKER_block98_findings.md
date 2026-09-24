@@ -1,0 +1,5 @@
+# Block 98 — control and findings (2026-09-23)
+
+1. **The control's first design failed and was replaced.** Wide packets (σ = 5, k₀ = 0.25, 0.4) passing at b = 6–14 spread transversely by more than b over the passage; their mean turn was washed out and at b = 6 the walk and its cloud of rays disagreed in sign (+0.0013 against −0.0023). Replaced by narrower relative spreads (σ = 4, k₀ = 0.5, 0.8) at b = 12, 18: walk/cloud 1.053, 0.994, 1.083. No number from the first design enters the note.
+2. **Torus backgrounds.** The zero-mean kernels carry r²/(6V) (3D) and r²/(4A) (plane) backgrounds; W1 removes them and aligns the 3D constant with the lattice value at the origin (literature value, used only for alignment). Without removal the ratio drifts to 3 at b = 24.
+3. **Prior art.** Block 54 (walk, ray law, fall (3|log κ|/2π)N/r²), blocks 95/97 (pair law, timing, sign); the first-order deflection by a central 1/r potential is classical (Soldner). New: the counted relation δ = 2|U(b)| = 2 log g(b) and the walk checked in a point source's field.

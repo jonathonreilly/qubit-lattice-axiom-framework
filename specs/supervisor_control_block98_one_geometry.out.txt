@@ -1,0 +1,11 @@
+W1: straight-line kick against twice the pair energy (per unit |6 log kappa|), 128-torus, backgrounds removed
+  b =  2: kick 0.09014 (1/(2 pi b) = 0.07958); G(b) 0.04289 (1/(4 pi b) = 0.03979); kick / G(b) = 2.1017
+  b =  4: kick 0.04131 (1/(2 pi b) = 0.03979); G(b) 0.02029 (1/(4 pi b) = 0.01989); kick / G(b) = 2.0361
+  b =  8: kick 0.02006 (1/(2 pi b) = 0.01989); G(b) 0.00999 (1/(4 pi b) = 0.00995); kick / G(b) = 2.0080
+  b = 12: kick 0.01331 (1/(2 pi b) = 0.01326); G(b) 0.00664 (1/(4 pi b) = 0.00663); kick / G(b) = 2.0030
+  b = 16: kick 0.00996 (1/(2 pi b) = 0.00995); G(b) 0.00498 (1/(4 pi b) = 0.00497); kick / G(b) = 2.0002
+  b = 24: kick 0.00661 (1/(2 pi b) = 0.00663); G(b) 0.00332 (1/(4 pi b) = 0.00332); kick / G(b) = 1.9916
+W2: walk packets past one record, 6 log(kappa) = -3.0, box 80^3, width 4, travel time 50
+  k0 = 0.80, b = 12: change of mean sin(k_y): walk -0.01706, cloud of rays with the packet's spreads -0.01620 (ratio 1.053); one ray on the straight line -0.03815, its velocity angle 0.0763 against 2|U(b)|/cos^2(k0) = 0.0821 (2|U(b)| = 0.0399); packet end x = 43.2; 9 s
+  k0 = 0.80, b = 18: change of mean sin(k_y): walk -0.01334, cloud of rays with the packet's spreads -0.01342 (ratio 0.994); one ray on the straight line -0.02279, its velocity angle 0.0456 against 2|U(b)|/cos^2(k0) = 0.0547 (2|U(b)| = 0.0266); packet end x = 43.4; 9 s
+  k0 = 0.50, b = 18: change of mean sin(k_y): walk -0.00905, cloud of rays with the packet's spreads -0.00836 (ratio 1.083); one ray on the straight line -0.01209, its velocity angle 0.0287 against 2|U(b)|/cos^2(k0) = 0.0345 (2|U(b)| = 0.0266); packet end x = 50.5; 9 s

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_records_act_as_fields_isolated_site_law_2026_09_24.py
+runner_sha256: 0570223d23742c9117da28a37280f356dd2a1a16174144d26482b9b2276c03c5
+input_fingerprint_sha256: a09bb3dff3159ea5888ac2ee42f0599e40d0f9c416dfed074952e4d3a9a19634
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.00
+status: ok
+----- stdout -----
+A. projection lemma
+[PASS] P_q s_a P_q = q_a P_q for unit q :: symbolic on the unit sphere; numeric max 1.2e-16
+B. compression on the seven-qubit star
+[PASS] P H P = (h(N).s_0) (x) P_N with h(N) = sum_f M_f q_f :: 12 random cases (Heisenberg and J,K,D); max deviation 6.7e-16
+C. isolation of a site with six recorded neighbours
+[PASS] the compressed generator is h_x.s_x + h_y.s_y with no x-y coupling :: max deviation 4.7e-16
+D. stationary states of the isolated site
+[PASS] [h.s, rho] = 0 exactly on the line rho = (1 + lam h^.s)/2 :: 20 random fields; commutant = span{1, h^.s}
+[PASS] time averages of random states land on the line with lam = r0.h^ :: max deviation 2.0e-15
+E. odds read from a stationary state
+[PASS] w(p|N) = (1 + lam p.h^)/2 on every antipodal menu; Husimi density normalised :: 200 random menus, max 2.2e-16; sphere mean 1.00000
+F. Heisenberg with one effective neighbour
+[PASS] ground state, J < 0: f(t) = (1 + t)/2 (repeat certainty f(1) = 1); J > 0: f(t) = (1 - t)/2 :: resultant = q1; deviations 2.2e-16, 2.2e-16
+[PASS] thermal relaxation: f(t) = (1 + tanh(beta|J|) t)/2 for J < 0, affine at every beta :: max 2.2e-16
+[PASS] the landed non-affine witnesses have degree 3 in t; every stationary state gives degree <= 1 :: midpoint values 9/16, 51/64 against 3/4
+G. full soldering: the field of six records
+[PASS] h(N) = J sum q_f + K sum f (f.q_f) + D sum q_f x f; the Moriya part turns h away from the resultant :: max deviation 8.9e-16; turn at D/J = 0.8: 21.7 degrees
+H. scope: a site with an unrecorded neighbour
+[PASS] two stationary pair states with the same records give different odds at x :: odds of the four pair eigenstates on {p,-p}: 0.013, 0.709, 0.332, 0.946
+[PASS] ground-state odds at x change with records two steps away (beyond x's neighbours) :: x's five records cancel; six draws of y's other records: odds 0.105 to 0.896
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

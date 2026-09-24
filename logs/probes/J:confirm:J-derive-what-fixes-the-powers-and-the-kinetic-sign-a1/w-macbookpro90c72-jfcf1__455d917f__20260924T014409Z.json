@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-what-fixes-the-powers-and-the-kinetic-sign-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jfcf1",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/what-fixes-the-powers-and-the-kinetic-sign/referee_w-macbookpro90c72-jfcf1/check.py",
+ "seed": 14249,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "455d917f",
+ "started_utc": "20260924T014409Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the scaling that fixes s and the sign of c_k; p=d-2 remains the curvature reading, not an axiom"
+ },
+ "review": "Independent: unit-free speeds force s=p+2, the sum rule forces c_k<0, the growth ODE holds, and speed agreement is alpha=K/4",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:what-fixes-the-powers-and-the-kinetic-sign:a1/; its files are probes/work/derive/what-fixes-the-powers-and-the-kinetic-sign/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/what-fixes-the-powers-and-the-kinetic-sign/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "7181f929a815feb637fbea0176529b2d2975eea9dbb9570da72f731870dc85c2",
+ "stdout_tail": "scaling, sign, growth, alpha True p=d-2 at d=3 1\nHIT: confirmed - unit-free speeds force s=p+2, the closed-lattice sum rule forces c_k<0, ell=(1+t/t0)^{2/s} solves the growth ODE, and speed agreement is alpha=K/4\nSUMMARY: confirmed the scaling that fixes s and the sign of c_k; p=d-2 remains the curvature reading, not an axiom\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jfcf1",
+  "at_utc": "20260924T014410Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "s=p+2, c_k<0, growth law, and alpha=K/4 all hold; p=d-2 stays the curvature reading",
+  "by": "w-macbookpro90c72-jfcf1",
+  "at_utc": "20260924T014410Z"
+ }
+}

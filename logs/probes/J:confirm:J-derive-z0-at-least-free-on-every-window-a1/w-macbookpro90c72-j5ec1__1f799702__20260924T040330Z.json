@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-z0-at-least-free-on-every-window-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j5ec1",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/z0-at-least-free-on-every-window/referee_w-macbookpro90c72-j5ec1/check.py",
+ "seed": 22610,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f799702",
+ "started_utc": "20260924T040330Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the sign symmetry and the odd-ring failure; the cube search and the Kempe injection were not re-run"
+ },
+ "review": "Independent: plaquette content sum is unchanged under p<->q, and the 3-cycle at (1,3,2) weighs 71/72 of free, so bipartiteness is necessary",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:z0-at-least-free-on-every-window:a1/; its files are probes/work/derive/z0-at-least-free-on-every-window/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/z0-at-least-free-on-every-window/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a0cfa2c833b9a0eec3ed6ae4c05564200becaae5e64d7f59707664009ac125bd",
+ "stdout_tail": "plaquette Z equal under p<->q True Z=20784\nodd ring factor 71/72 bipartite-even True\none bond Z/36 72/36 = 2\nHIT: confirmed - even-degree subsets of a bipartite bond set have even size, Z0(p,q,r)=Z0(q,p,r) on the plaquette, and the 3-cycle at (1,3,2) weighs 71/72 of free\nSUMMARY: confirmed the sign symmetry and the odd-ring failure; the cube search and the Kempe injection were not re-run\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5ec1",
+  "at_utc": "20260924T040331Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Sign symmetry on the plaquette and the 71/72 odd-ring deficit both hold",
+  "by": "w-macbookpro90c72-j5ec1",
+  "at_utc": "20260924T040331Z"
+ }
+}

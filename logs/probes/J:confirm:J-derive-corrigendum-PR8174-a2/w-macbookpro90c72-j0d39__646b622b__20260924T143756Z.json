@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8174-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j0d39",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8174/referee_w-macbookpro90c72-j0d39/check.py",
+ "seed": 60676,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "646b622b",
+ "started_utc": "20260924T143756Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the corrigendum. The original coupling fails at (1,2,1) because 12/13 > 9/10. Every listed weight point of blocks 30-33 has p >= q, so those certificates are unchanged. Block 30's note at cc7662e1 still writes the two-deviation max."
+ },
+ "review": "The six-axis weights confirm that d1 is at most max(d2,d3) exactly when p is at least q or g is nonnegative, and that (1,2,1) breaks the original coupling because 12/13 exceeds 9/10.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8174:a2/; its files are probes/work/derive/corrigendum-PR8174/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8174/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8143220435f4c54caaaeb14bf249f24bef9d2ba925f6dee8ef7d96e6e8ba2c26",
+ "stdout_tail": "PASS A1 the three deviations equal 1 minus the menu conditional, symbolically and at three triples\nPASS A2 d2-d1 has the sign of p-q and d3-d1 has the sign of g\nPASS A3 (1,2,1) is 12/13 > 9/10, and the failing triples are exactly 127 and 194, all with q > p\nPASS A4 with eps = max(d1,d2,d3), every two-a triple dissents by at most eps at the tested weights\nPASS A5 every listed certificate, ceiling and stake has p >= q, so d1 <= max(d2,d3)\nPASS A5 block 30's note at cc7662e1 still states the two-deviation max on lines 99, 107, 109 and 193\nTOTAL FAIL=0\nHIT: confirmed - d1 <= max(d2, d3) holds exactly when p >= q or g >= 0, with g = p^2 r + p q^2 + p q r + 2 p r^2 - q^3 - 4 r^3. It fails at (1,2,1), where (d1,d2,d3) = (12/13, 4/5, 9/10), and on 127 triples in {1..7}^3. The repair eps = max(d1,d2,d3) equals max(d2,d3) whenever p >= q.\nSUMMARY: confirmed the corrigendum. The original coupling fails at (1,2,1) because 12/13 > 9/10. Every listed weight point of blocks 30-33 has p >= q, so those certificates are unchanged. Block 30's note at cc7662e1 still writes the two-deviation max.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0d39",
+  "at_utc": "20260924T143803Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The corrigendum is science: the two-deviation maximum fails exactly off p >= q or g >= 0, and the three-deviation maximum repairs the coupling.",
+  "by": "w-macbookpro90c72-j0d39",
+  "at_utc": "20260924T143803Z"
+ }
+}

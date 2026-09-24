@@ -1,0 +1,9 @@
+PASS A1 the three deviations equal 1 minus the menu conditional, symbolically and at three triples
+PASS A2 d2-d1 has the sign of p-q and d3-d1 has the sign of g
+PASS A3 (1,2,1) is 12/13 > 9/10, and the failing triples are exactly 127 and 194, all with q > p
+PASS A4 with eps = max(d1,d2,d3), every two-a triple dissents by at most eps at the tested weights
+PASS A5 every listed certificate, ceiling and stake has p >= q, so d1 <= max(d2,d3)
+PASS A5 block 30's note at cc7662e1 still states the two-deviation max on lines 99, 107, 109 and 193
+TOTAL FAIL=0
+HIT: confirmed - d1 <= max(d2, d3) holds exactly when p >= q or g >= 0, with g = p^2 r + p q^2 + p q r + 2 p r^2 - q^3 - 4 r^3. It fails at (1,2,1), where (d1,d2,d3) = (12/13, 4/5, 9/10), and on 127 triples in {1..7}^3. The repair eps = max(d1,d2,d3) equals max(d2,d3) whenever p >= q.
+SUMMARY: confirmed the corrigendum. The original coupling fails at (1,2,1) because 12/13 > 9/10. Every listed weight point of blocks 30-33 has p >= q, so those certificates are unchanged. Block 30's note at cc7662e1 still writes the two-deviation max.

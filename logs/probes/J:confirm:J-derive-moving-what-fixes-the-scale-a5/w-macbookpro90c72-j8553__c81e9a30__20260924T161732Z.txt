@@ -1,0 +1,31 @@
+ok: all-ones is the eigenvalue p+q+4r
+ok: three odd vectors have eigenvalue p-q
+ok: two even vectors orthogonal to all-ones have eigenvalue p+q-2r
+ok: trace of Omega is 6p
+ok: the six eigenvectors are a basis
+ok: at c = 6/(p+q+4r) the kernel contains (1,1,1,1,1,1,-6)
+ok: det of the 2x2 block is c A1 - 6
+ok: T sends the content all-ones to c A1 on contents and 6 on empty
+ok: T sends empty to 1 on every state
+ok: det T = c^5 (p-q)^3 (p+q-2r)^2 (c(p+q+4r)-6)
+ok: (3, 1, 2): negative eigenvalue at c0=1/2 exactly when a scale-free factor is negative
+ok: (3,1,2) has c0 = 1/2
+ok: at (3,1,2) and c0, rank T = 4
+ok: at (3,1,2) and c=1, rank T = 5
+ok: (5, 2, 4): negative eigenvalue at c0=6/23 exactly when a scale-free factor is negative
+ok: (5,2,4) has p+q < 2r
+ok: (5,2,4) at c=1/10 is not positive type
+ok: (5,2,4) at c=6/23 is not positive type
+ok: (5,2,4) at c=1 is not positive type
+ok: (5,2,4) at c=5 is not positive type
+ok: (7, 3, 5): negative eigenvalue at c0=1/5 exactly when a scale-free factor is negative
+ok: (4, 1, 1): negative eigenvalue at c0=2/3 exactly when a scale-free factor is negative
+ok: at (4,1,1) and c0 the only drop is the one kernel direction, rank 6
+ok: t |-> c t/(1+c t) has positive derivative for c > 0
+ok: equal-axis and orthogonal branches agree only if p=r
+ok: at (3,1,2) and c0 the two content laws differ by 7/132
+ok: at (5,2,4) and c0 the total variation is 12995/257322 > 0
+  (5,2,4) total variation = 12995/257322
+TOTAL FAIL = 0
+HIT: confirmed - the vacancy couples only through the all-ones direction, so det T = c^5 (p-q)^3 (p+q-2r)^2 (c(p+q+4r)-6), and c0 = 6/(p+q+4r) is the unique scale that makes T singular when the scale-free factors are nonzero. The kernel is the uniform content vector minus six times the empty state. T is positive type iff c >= c0 and p >= q and p+q >= 2r; (5,2,4) fails the last at every positive scale. Formation-then-motion and formation-in-place agree for no c > 0 unless p=q=r, and at (3,1,2), c0 their total variation is 7/132.
+SUMMARY: confirmed - c0 is the determinant zero of the 2x2 vacancy block; the scale-free factors p-q and p+q-2r are required for positive type; (d) constrains the weights, not c. The reduction from bond-plane reflection positivity to T positive-type was not re-derived.

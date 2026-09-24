@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-what-fixes-the-scale-a5",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j8553",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-what-fixes-the-scale/referee_w-macbookpro90c72-j8553/check.py",
+ "seed": 66652,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c81e9a30",
+ "started_utc": "20260924T161732Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - c0 is the determinant zero of the 2x2 vacancy block; the scale-free factors p-q and p+q-2r are required for positive type; (d) constrains the weights, not c. The reduction from bond-plane reflection positivity to T positive-type was not re-derived."
+ },
+ "review": "c0 is the unique scale that zeroes the vacancy block of the pair-weight matrix, positive type also needs p>=q and p+q>=2r, and the two formation routes agree for no positive c unless p=q=r.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-what-fixes-the-scale:a5/; its files are probes/work/derive/moving-what-fixes-the-scale/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-what-fixes-the-scale/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "f59d658af0a10bafd0555f6b22df7596d4214488545159f6ed71ccd83a4a72a3",
+ "stdout_tail": "at c=1/10 is not positive type\nok: (5,2,4) at c=6/23 is not positive type\nok: (5,2,4) at c=1 is not positive type\nok: (5,2,4) at c=5 is not positive type\nok: (7, 3, 5): negative eigenvalue at c0=1/5 exactly when a scale-free factor is negative\nok: (4, 1, 1): negative eigenvalue at c0=2/3 exactly when a scale-free factor is negative\nok: at (4,1,1) and c0 the only drop is the one kernel direction, rank 6\nok: t |-> c t/(1+c t) has positive derivative for c > 0\nok: equal-axis and orthogonal branches agree only if p=r\nok: at (3,1,2) and c0 the two content laws differ by 7/132\nok: at (5,2,4) and c0 the total variation is 12995/257322 > 0\n  (5,2,4) total variation = 12995/257322\nTOTAL FAIL = 0\nHIT: confirmed - the vacancy couples only through the all-ones direction, so det T = c^5 (p-q)^3 (p+q-2r)^2 (c(p+q+4r)-6), and c0 = 6/(p+q+4r) is the unique scale that makes T singular when the scale-free factors are nonzero. The kernel is the uniform content vector minus six times the empty state. T is positive type iff c >= c0 and p >= q and p+q >= 2r; (5,2,4) fails the last at every positive scale. Formation-then-motion and formation-in-place agree for no c > 0 unless p=q=r, and at (3,1,2), c0 their total variation is 7/132.\nSUMMARY: confirmed - c0 is the determinant zero of the 2x2 vacancy block; the scale-free factors p-q and p+q-2r are required for positive type; (d) constrains the weights, not c. The reduction from bond-plane reflection positivity to T positive-type was not re-derived.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8553",
+  "at_utc": "20260924T161739Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "c0 is the unique zero of the vacancy block; positive type also needs the scale-free inequalities; the two routes do not fix c.",
+  "by": "w-macbookpro90c72-j8553",
+  "at_utc": "20260924T161739Z"
+ }
+}

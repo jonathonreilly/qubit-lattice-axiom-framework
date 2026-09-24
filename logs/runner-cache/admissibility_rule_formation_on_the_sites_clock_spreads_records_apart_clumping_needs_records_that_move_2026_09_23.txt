@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_formation_on_the_sites_clock_spreads_records_apart_clumping_needs_records_that_move_2026_09_23.py
+runner_sha256: b75d6a262989e91ab641c3c1823b4e0c26407cb419d21f687929ffcc7a0966c8
+input_fingerprint_sha256: 1126f20fefc538e70fb716789e12e8abaac5235fa6c763e4634b8ba076f24db0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_FORMATION_ON_THE_SITES_CLOCK_SPREADS_RECORDS_APART_BY_THE_INVERSE_OF_MOTIONS_PAIR_EXCESS_CLUMPING_NEEDS_RECORDS_THAT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: with one record present and its clock field slaved (block 53), a second record formed at an empty site at the rate of that site's clock lands at offset d in proportion to w(d) = exp(U(d)); block 95's motion finds it there in proportion to exp(-U(d)) (a = 1); the two laws are exact inverses (ring of six with base-4 clocks, all offsets; 4^3 with symbolic log kappa, all 63 offsets)
+PASS: C1 T2: forming a set of records one at a time, each at the rate of its site's clock in the field of those already present, every order gives the same unnormalized weight exp(6 log(kappa) sum_pairs G) = exp(sum_pairs U): exact on 4^3 for two sets of three and one of four records (36 orders), log kappa symbolic - the formation law is exp(+sum U) up to the per-step normalizations
+PASS: D1 T2: the per-step normalization sum over empty y of w_y(C) is N - |C| - 6 log(kappa) sum_(y, r in C) G(y - r) + O(log^2 kappa) (the zero-mean kernel sums to zero over all sites): at first order it depends on the occupied set only through the set's own pair sum, small at low density (exact on 4^3 for three records)
+PASS: E1 T3: with records that slow clocks (log kappa < 0), a record forms next to another at a lower rate than at the far corner of 4^3 (log w(1,0,0) - log w(2,2,2) = 6 log(kappa)(G(1,0,0) - G(2,2,2)) < 0), while block 95's motion finds it next to another more often (the same number with the opposite sign): formation on the site's clock spreads records, motion on it gathers them
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the second record's formation and motion laws at every offset of a ring of six and of 4^3
+per_site: executed - the per-step normalization over all empty sites of 4^3 at first order
+per_mode: executed - the zero-mean kernel from its modes on 4^3; control: records formed one at a time on 16^3, contacts against coupling
+per_block: executed - every order of forming sets of three and four records
+lattice_wide: T1 and T2's order identity on every torus (algebra); the normalization statement at first order; T3 wherever block 95 T4 holds; formation timed by the site's clock is supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: formation on the site's clock places records in proportion to exp(+U) (every order the same weight exp(sum_pairs U)); motion on it finds them in proportion to exp(-U); for kappa < 1 formation spreads records, motion gathers them; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

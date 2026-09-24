@@ -1,0 +1,6 @@
+W1: 96 records formed one at a time on 16^3, each at an empty site in proportion to its clock; 60 formed sets per coupling
+  uniform placement: expected contacts 6.68
+  g = 0.0: contacts 6.07 +- 0.34; low-density prediction uniform x exp(U(1)) = 6.68
+  g = 0.5: contacts 5.63 +- 0.29; low-density prediction uniform x exp(U(1)) = 5.38
+  g = 1.0: contacts 4.57 +- 0.28; low-density prediction uniform x exp(U(1)) = 4.34
+  g = 2.0: contacts 3.65 +- 0.26; low-density prediction uniform x exp(U(1)) = 2.82

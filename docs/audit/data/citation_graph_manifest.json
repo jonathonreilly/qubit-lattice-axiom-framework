@@ -1,6 +1,6 @@
 {
  "edge_count": 14080,
- "node_count": 6500,
+ "node_count": 6501,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -753,6 +753,10 @@
   "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06": {
    "deps_hash": "e54933eecd76",
    "out_degree": 2
+  },
+  "admissibility_rule_formation_on_the_sites_clock_spreads_records_apart_by_the_inverse_of_motions_pair_excess_clumping_needs_records_that_move_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_formation_rate_identities_and_finite_window_witnesses_bounded_theorem_note_2026-09-15": {
    "deps_hash": "a95e40c6cf02",

@@ -22,11 +22,18 @@
  "stdout_tail": "g directions p(x)eta + eta(x)p; a source orthogonal to them is solvable at that wave vector\nTOTAL: PASS=12 FAIL=0  (4.0s)\nSUMMARY: PARTIAL exact, for block 62's symmetric member and the walk H = sum sigma_a S_a (identity frame, first order, every stationary state): (1) at every axis q = (t,0,0), cos(t/2) != 0, stationary 'reflection' pairs make the site responses span Sym(3) and the S-currents span all conserved currents U(q)(x)C^3; hence no local site-to-face transfer and no local realisation B = R h with Lambda R(0) = 1 keeps the member compatible (they would be blind to uniform strain, resp. shear), and no q-only symbol serves every equal-energy pair (exact, rational witnesses; also at a generic rational q); (2) block 73's two-step current obeys the exact transposed law sum_j prod_(l!=j) C_l [K_a^j(x+e_j) - K_a^j(x-e_j)] = 0 on stationary states, and B_i^j = -(1/2) phi_j h_ij is a local realisation (exact for uniform fields) under which the member's compatibility holds on every stationary state. 15 deferred sources inspected; first pass.\nHIT: the walk's site response and the bond current of the momentum S_j cannot source block 62's symmetric member compatibly on all stationary states through any local transfer (both spans are full at every axis wave vector), while block 73's two-step current satisfies an exact transposed conservation law and admits an explicit local realisation B_i^j = -(1/2) phi_j h_ij that makes the member's compatibility exact on every stationary state\n",
  "checked": {
   "by": "w-macbookpro9927a-j2f0e",
-  "at_utc": "20260924T132517Z",
+  "at_utc": "20260924T132612Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 203905b1 differs from the current HEAD 78e2bc0d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee: check.py (PASS=12 FAIL=0, exact: Gaussian rationals, sympy) verifies the axis reflection states (k1 = pi/2 +- theta, one coin) as exact eigenstates with Theta = s(x)s rho/E, J_1 = 0, J_a = s_a s cos k_a rho/E; the spanning determinants (c^2 and c^4 multiples) behind Sym(3) and U(q)(x)C^3; exact W3 at axis and generic rational q; plain-transfer and plain-realisation witnesses; the couplings' responses J and K for random bond fields; block 73's two-step current's transposed law on an exact energy-1 superposition; the phi-realisation's exact compatibility; block 62's R_2 kernel at three p. The no-transfer and no-realisation statements (limit q -> 0) and the transposed-law derivation are proofs in ATTEMPT.md for the referee. Boundary stated: axis species-0 pairs pass.",
+  "by": "w-macbookpro9927a-j2f0e",
+  "at_utc": "20260924T132612Z"
  }
 }

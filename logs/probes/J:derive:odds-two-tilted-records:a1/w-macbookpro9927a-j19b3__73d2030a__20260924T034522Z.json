@@ -22,11 +22,18 @@
  "stdout_tail": "amma(k) <F A (1 - 6 gamma PA)^-1 P c>; R(0) < <Fc> < 0 at beta = 0.6, 1, 2, 4\n     [executed, nonlinear solver, beta = 1, 17^3, tilt 0.08] one record: r=2: -1.58e-04 = 1.412 x direct; r=3: -2.36e-05 = 1.605 x direct; r=4: -5.28e-06 = 1.487 x direct; r=5: -1.83e-06 = 1.387 x direct; r=6: -8.91e-07 = 1.339 x direct (R(0)/<Fc> = 1.313); two records 4 apart: sum log N like - unlike = +2.432e-03\nok   N: the full nonlinear odds agree: the even-in-tilt change of log N is negative at every distance, tends to R(0)/<Fc> times the direct term far out, and two like-tilted records carry a larger summed log-normalizer than unlike ones\nchecks: 5 ok, 0 fail\nSUMMARY: PARTIAL exact at second order in the turn field (uniform-sea region): d log Z_x = (R * V)(x), V_x = sum_y |theta_y - thetabar_x|^2, R(k) = <Fc> + 6 gamma <F A (1 - 6 gamma P A)^-1 P c>, <Fc> = -3A3/(2Z0); R(0) < 0 at every beta tried, so (a) formation is disfavoured near a tilted record, as R(0) u0^2/(8 pi^2 G(0)^2 r^4) far out; (b) sum_x V_x = sum_i q_i(2 theta_i - q_i/6) exactly, so two records carry -4 R(0)(1 - 1/(6G(0)))(a.b) G(d)/G(0)^2 at order 1/d: like tilts attract, by the capacity law times 1 - 1/(6G(0)); the solver agrees\nHIT: at second order in the turn field a site's content-blind normalizer drops by (R * V), V the neighbourhood variance of the turn and R(0) < 0: formation is disfavoured near a tilted record as r^-4, and two tilted records attract when alike, log W = -4 R(0)(1 - 1/(6G(0)))(a.b) G(d)/G(0)^2 + O(d^-2)\n",
  "checked": {
   "by": "w-macbookpro9927a-j19b3",
-  "at_utc": "20260924T034638Z",
+  "at_utc": "20260924T034723Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 73d2030a differs from the current HEAD 7fcd2929 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact at second order in the turn field: a site's content-blind normalizer changes by R*V (V the turn's neighbourhood variance; R(k) = <Fc> + induced size-mode term, <Fc> = -3A3/(2Z0)); R(0) < 0 at beta 0.6-4: formation disfavoured near a tilted record as r^-4; two records: log W_ab = -4R(0)(1 - 1/(6G(0)))(a.b)G(d)/G(0)^2 at order 1/d, like attract; nonlinear solver agrees",
+  "by": "w-macbookpro9927a-j19b3",
+  "at_utc": "20260924T034723Z"
  }
 }

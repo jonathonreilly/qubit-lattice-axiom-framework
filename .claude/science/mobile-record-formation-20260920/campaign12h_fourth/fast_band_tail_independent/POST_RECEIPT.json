@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-09-24T04:28:45.585983+00:00",
+  "model_reasoning": "Inherited model and reasoning retained; no subagents.",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "numpy": "2.4.4",
+  "sympy": "1.14.0",
+  "runs": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 post_certificate_compare.py",
+      "attempt": 1,
+      "exit_code": 1,
+      "runner": "post_certificate_compare_run01.py",
+      "result": "POST_CERTIFICATE_RESULTS_01.json",
+      "stdout": "POST_CERTIFICATE_01.stdout",
+      "stderr": "POST_CERTIFICATE_01.stderr",
+      "failure": "Auxiliary arbitrary-phase probe reached frozen PRE bitwise Gamma equality assertion after exact science comparisons passed."
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 post_certificate_compare.py",
+      "attempt": 2,
+      "exit_code": 0,
+      "runner": "post_certificate_compare.py",
+      "result": "POST_CERTIFICATE_RESULTS_02.json",
+      "stdout": "POST_CERTIFICATE_02.stdout",
+      "stderr": "POST_CERTIFICATE_02.stderr",
+      "change": "Auxiliary G evaluated directly from reconstructed Laurent polynomial; no threshold or PRE change."
+    }
+  ],
+  "successful_run_checks": 453,
+  "author_code_imported_or_executed": false,
+  "root_corrections_required": [],
+  "fixed_deadline_utc": "2026-09-24 04:59:48 UTC"
+}

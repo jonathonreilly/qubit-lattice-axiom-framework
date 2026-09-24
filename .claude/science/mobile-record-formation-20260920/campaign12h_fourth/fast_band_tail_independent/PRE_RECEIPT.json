@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-09-24T04:15:18.113291+00:00",
+  "fixed_deadline_utc": "2026-09-24 04:59:48 UTC",
+  "model_reasoning": "Inherited model and reasoning; no subagents.",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "numpy": "2.4.4",
+  "sympy": "1.14.0",
+  "runs": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 initial_rank_scan.py",
+      "exit_code": 0,
+      "stdout": "INITIAL_RANK_SCAN.stdout",
+      "stderr": "INITIAL_RANK_SCAN.stderr",
+      "role": "exploratory only; numerical rank is not the proof certificate"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 exact_fiber_control.py",
+      "exit_code": 0,
+      "stdout": "EXACT_FIBER_01.stdout",
+      "stderr": "EXACT_FIBER_01.stderr",
+      "result": "EXACT_FIBER_RESULTS_01.json",
+      "role": "exact Gaussian-integer and independent modular rank certificate plus full physical Gauss coordinate checks"
+    }
+  ],
+  "failed_executions": 0,
+  "discarded_physical_cases": 0,
+  "tolerance_changes": 0,
+  "root_tail_material_read": false,
+  "provisional_microscopic_compact_theorem_not_certified_here": true,
+  "result": "All physical normalizable rotor states in the specified sector decay strongly; zero-phase generalized dark vector survives but is not l2. No uniform operator-norm decay."
+}

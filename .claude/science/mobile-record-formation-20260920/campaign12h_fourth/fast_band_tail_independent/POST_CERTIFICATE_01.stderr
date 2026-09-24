@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_certificate_compare.py", line 150, in <module>
+    result=run();out.write_text(json.dumps(result,indent=2,default=int)+'\n')
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_certificate_compare.py", line 131, in run
+    g,_,_=matrices(phases);coupling=g[np.ix_(BRIGHT,DARK)];sv=np.linalg.svd(coupling,compute_uv=False)
+          ~~~~~~~~^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/fiber_engine.py", line 68, in matrices
+    assert np.array_equal(resolved,coherent)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError

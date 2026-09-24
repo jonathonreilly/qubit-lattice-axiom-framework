@@ -1,0 +1,11 @@
+{
+  "scope": "integrity only",
+  "tests": {
+    "genuine_accepted": true,
+    "changed_digest_rejected": true,
+    "changed_size_rejected": true,
+    "missing_rejected": true,
+    "escape_rejected": true
+  },
+  "passed": true
+}

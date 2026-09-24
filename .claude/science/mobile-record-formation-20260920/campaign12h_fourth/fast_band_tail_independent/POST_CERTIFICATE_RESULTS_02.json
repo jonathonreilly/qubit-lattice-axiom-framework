@@ -1,0 +1,6957 @@
+{
+  "created_utc": "2026-09-24T04:25:07.877867+00:00",
+  "runner_sha256": "753f059e40e56b115de875d1d7816d60db4efd68712fd98d23230e469c05cef6",
+  "method": "Complete polynomial matrix products in frozen PRE cycle coordinates, then exact integral tree/gauge change; independent physical integer birth paths. No author code imported or run.",
+  "cycle_change_M": [
+    [
+      1,
+      1,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      -1,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "cycle_change_determinant": 1,
+  "author_cycles_from_PRE_cycles": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      -1,
+      0,
+      -1
+    ],
+    [
+      -1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      -1,
+      -1,
+      -1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      -1,
+      0,
+      -1,
+      0
+    ]
+  ],
+  "all_168_reference_offsets": [
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -2,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "all_Laurent_entries_compared": 288,
+  "reconstructed_Laurent_entries": [
+    {
+      "bright_row": 0,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 0,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 0,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 0,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 1,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 1,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 1,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 1,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 2,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 2,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 2,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 2,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 3,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 3,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 3,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 3,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 4,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 4,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 4,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 4,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 5,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 5,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 5,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 5,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 6,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 6,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 6,
+      "dark_column": 18,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 6,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 7,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 7,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 7,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 7,
+      "dark_column": 22,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 8,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 8,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 8,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 8,
+      "dark_column": 19,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 9,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 9,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 9,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 9,
+      "dark_column": 20,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 10,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 10,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 10,
+      "dark_column": 21,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 10,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 11,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 11,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 11,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 11,
+      "dark_column": 23,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 12,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 12,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 12,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 12,
+      "dark_column": 15,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 13,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 13,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 13,
+      "dark_column": 12,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 13,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 14,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 14,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 14,
+      "dark_column": 13,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 14,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 15,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 15,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 15,
+      "dark_column": 14,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 15,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 16,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 16,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 16,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 16,
+      "dark_column": 16,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 17,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 17,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 17,
+      "dark_column": 17,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 17,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 18,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 18,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 18,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 18,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 19,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 19,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 19,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 19,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 20,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 20,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 20,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 20,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 21,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 21,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 21,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 21,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 22,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 22,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 22,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 22,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 23,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 23,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 23,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 23,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 24,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 24,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 24,
+      "dark_column": 18,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 24,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 25,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 25,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 25,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 25,
+      "dark_column": 20,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 26,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 26,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 26,
+      "dark_column": 19,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 26,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 27,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 27,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 27,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 27,
+      "dark_column": 21,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 28,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 28,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 28,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 28,
+      "dark_column": 22,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 29,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 29,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 29,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 29,
+      "dark_column": 23,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 30,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 30,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 30,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 30,
+      "dark_column": 13,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 31,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 31,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 31,
+      "dark_column": 12,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 31,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 32,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 32,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 32,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 32,
+      "dark_column": 14,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 33,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 33,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 33,
+      "dark_column": 15,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 33,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 34,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 34,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 34,
+      "dark_column": 16,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 34,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 35,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 35,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 35,
+      "dark_column": 17,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 35,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 36,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 36,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 36,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 36,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 37,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 37,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 37,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 37,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 38,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 38,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 38,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 38,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 39,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 39,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 39,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 39,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 40,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 40,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 40,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 40,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 41,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 41,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 41,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 41,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 42,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 42,
+      "dark_column": 7,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 42,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 42,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 43,
+      "dark_column": 6,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 43,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 43,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 43,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 44,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 44,
+      "dark_column": 8,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 44,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 44,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 45,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 45,
+      "dark_column": 9,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 45,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 45,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 46,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 46,
+      "dark_column": 10,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 46,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 46,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 47,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 47,
+      "dark_column": 11,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 47,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 47,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 48,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 48,
+      "dark_column": 1,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 48,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 48,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 49,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 49,
+      "dark_column": 2,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 49,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 49,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 50,
+      "dark_column": 0,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 50,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 50,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 50,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 51,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 51,
+      "dark_column": 3,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 51,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 51,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 52,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 52,
+      "dark_column": 4,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 52,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 52,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 53,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 53,
+      "dark_column": 5,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 53,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 53,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 54,
+      "dark_column": 0,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 54,
+      "dark_column": 1,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 54,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 54,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 55,
+      "dark_column": 0,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 55,
+      "dark_column": 2,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 55,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 55,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 56,
+      "dark_column": 1,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 56,
+      "dark_column": 2,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 56,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 56,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 57,
+      "dark_column": 3,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 57,
+      "dark_column": 3,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 57,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 57,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 58,
+      "dark_column": 4,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 58,
+      "dark_column": 4,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 58,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 58,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 59,
+      "dark_column": 5,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 59,
+      "dark_column": 5,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 59,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 59,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 60,
+      "dark_column": 6,
+      "cycle_exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 60,
+      "dark_column": 7,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 60,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 60,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 61,
+      "dark_column": 8,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 61,
+      "dark_column": 8,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 61,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 61,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 62,
+      "dark_column": 6,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 62,
+      "dark_column": 9,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 62,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 62,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 63,
+      "dark_column": 7,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 63,
+      "dark_column": 9,
+      "cycle_exponent": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 63,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 63,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 64,
+      "dark_column": 10,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 64,
+      "dark_column": 10,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 64,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 64,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 65,
+      "dark_column": 11,
+      "cycle_exponent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 65,
+      "dark_column": 11,
+      "cycle_exponent": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 65,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 65,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 66,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 66,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 66,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 66,
+      "dark_column": 19,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 67,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 67,
+      "dark_column": 14,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 67,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 67,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 68,
+      "dark_column": 12,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 68,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 68,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 68,
+      "dark_column": 21,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 69,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 69,
+      "dark_column": 16,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 69,
+      "dark_column": 18,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 69,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 70,
+      "dark_column": 13,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 70,
+      "dark_column": 15,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 70,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 70,
+      "dark_column": 23,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 71,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 71,
+      "dark_column": 17,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 1
+    },
+    {
+      "bright_row": 71,
+      "dark_column": 20,
+      "cycle_exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": -1
+    },
+    {
+      "bright_row": 71,
+      "dark_column": 22,
+      "cycle_exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1
+    }
+  ],
+  "author_integer_minor_determinant": "-768",
+  "author_Gram_determinant": "4688333314034185078308864",
+  "author_minor_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    24,
+    42
+  ],
+  "root_witness_powers_in_PRE_chart": [
+    2,
+    2,
+    0,
+    0,
+    2
+  ],
+  "root_witness_gauge_diagonal": [
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+  ],
+  "actual_first_mark_residuals": [
+    {
+      "mark": 1,
+      "b": 2,
+      "r": 4,
+      "flat_fiber_surviving_normalized_weight": "1/12",
+      "physical_R": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": -2
+        }
+      ],
+      "initial_flat_normalized_squared_norm": "2",
+      "sum_flat_amplitudes": -2
+    },
+    {
+      "mark": -1,
+      "b": 2,
+      "r": 2,
+      "flat_fiber_surviving_normalized_weight": "1/12",
+      "physical_R": [
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": -1
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": -1
+        }
+      ],
+      "initial_flat_normalized_squared_norm": "1",
+      "sum_flat_amplitudes": -2
+    },
+    {
+      "mark": 0,
+      "b": 4,
+      "r": 6,
+      "flat_fiber_surviving_normalized_weight": "1/6",
+      "physical_R": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": -2
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": -1
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": -1
+        }
+      ],
+      "initial_flat_normalized_squared_norm": "3/2",
+      "sum_flat_amplitudes": -4
+    }
+  ],
+  "exploratory_probe_comparison": [
+    {
+      "trial": 0,
+      "maximum_singular_value_difference": 0.0,
+      "dark_block_difference": 0.0
+    },
+    {
+      "trial": 1,
+      "maximum_singular_value_difference": 1.7763568394002505e-15,
+      "dark_block_difference": 0.0
+    },
+    {
+      "trial": 2,
+      "maximum_singular_value_difference": 2.6645352591003757e-15,
+      "dark_block_difference": 0.0
+    },
+    {
+      "trial": 3,
+      "maximum_singular_value_difference": 1.7763568394002505e-15,
+      "dark_block_difference": 0.0
+    },
+    {
+      "trial": 4,
+      "maximum_singular_value_difference": 1.7763568394002505e-15,
+      "dark_block_difference": 0.0
+    },
+    {
+      "trial": 5,
+      "maximum_singular_value_difference": 1.7763568394002505e-15,
+      "dark_block_difference": 4.440892098500626e-16
+    },
+    {
+      "trial": 6,
+      "maximum_singular_value_difference": 1.7763568394002505e-15,
+      "dark_block_difference": 4.440892098500626e-16
+    },
+    {
+      "trial": 7,
+      "maximum_singular_value_difference": 2.6645352591003757e-15,
+      "dark_block_difference": 4.440892098500626e-16
+    }
+  ],
+  "single_edge_probe_absolute_differences": [
+    0.0,
+    6.661338147750939e-16,
+    1.5543122344752192e-15,
+    2.220446049250313e-16
+  ],
+  "checks": [
+    {
+      "check": "complete charge ordering",
+      "passed": true
+    },
+    {
+      "check": "complete edge ordering",
+      "passed": true
+    },
+    {
+      "check": "dark ordering",
+      "passed": true
+    },
+    {
+      "check": "bright ordering",
+      "passed": true
+    },
+    {
+      "check": "W dimensions",
+      "passed": true
+    },
+    {
+      "check": "cycle change unimodular",
+      "passed": true
+    },
+    {
+      "check": "all author cycle entries reconstructed",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, -1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, -1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 1, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 1, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, -1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, -1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 1, 0, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 1, 0, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, -1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, -1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 1, 0, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 1, 0, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 0, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 0, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 0, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 0, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, -1, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, -1, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "dark-dark Laurent block exactly zero",
+      "passed": true
+    },
+    {
+      "check": "every author Laurent monomial and coefficient matches",
+      "passed": true
+    },
+    {
+      "check": "entire author integer witness reconstructed",
+      "passed": true
+    },
+    {
+      "check": "entire author Gram matrix reconstructed",
+      "passed": true
+    },
+    {
+      "check": "exact root Gram determinant reconstructed",
+      "passed": true
+    },
+    {
+      "check": "exact root minor determinant reconstructed",
+      "passed": true
+    },
+    {
+      "check": "complete rank-witness block equals PRE engine after gauge",
+      "passed": true
+    },
+    {
+      "check": "zero phase dark kernel one dimensional",
+      "passed": true
+    },
+    {
+      "check": "flat vector killed by G and Gamma",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 0, 1, 0, 1, 1, 0), (-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 1, 1, 0, 1, 1, 0), (0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 0, 1, 1, 1, 1, 0), (0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 0, 0, 1, 1, 0), (0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 0, 0, 1, 1, 0), (0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 0, 0, 1, 1, 1), (0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 1, 0, 0, 1, 0), (0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 0, 1, 0), (0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 0, 1, 1), (0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 1, 0, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 1, 0, 1), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((1, -1, 1, 1, 0, 1, 1, 0), (1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((1, -1, 0, 1, 1, 1, 1, 0), (1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, -1, 1, 1, 1, 1, 1, 0), (1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, -1, 1, 1, 1, 1, 1, 0), (1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "all physical R entries and exact flat overlap for mark 1",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 0, 1, 0, 1, 1, 0), (-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 1, 1, 0, 1, 1, 0), (0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 0, 1, 1, 1, 1, 0), (0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 0, 0, 1, 1, 0), (0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 0, 0, 1, 1, 0), (0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 0, 0, 1, 1, 1), (0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 1, 0, 0, 1, 0), (0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 0, 1, 0), (0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 0, 1, 1), (0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 1, 0, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 1, 0, 1), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((-1, 1, 1, 1, 0, 1, 1, 0), (-1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((-1, 1, 0, 1, 1, 1, 1, 0), (-1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 1, 1, -1, 1, 1, 0), (-1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, -1, 1, 1, 1, 1, 0), (-1, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "all physical R entries and exact flat overlap for mark -1",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 0, 1, 0, 1, 1, 0), (-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 1, 1, 0, 1, 1, 0), (0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 0, 1, 1, 1, 1, 0), (0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 0, 0, 1, 1, 0), (0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 0, 0, 1, 1, 0), (0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 0, 0, 1, 1, 1), (0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 1, 0, 0, 1, 0), (0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 0, 1, 0), (0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 0, 1, 1), (0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 1, 0, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 1, 0, 1), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((1, -1, 1, 1, 0, 1, 1, 0), (1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((-1, 1, 1, 1, 0, 1, 1, 0), (-1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((1, -1, 0, 1, 1, 1, 1, 0), (1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((-1, 1, 0, 1, 1, 1, 1, 0), (-1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, -1, 1, 1, 1, 1, 1, 0), (1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 1, 1, -1, 1, 1, 0), (-1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, -1, 1, 1, 1, 1, 1, 0), (1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, -1, 1, 1, 1, 1, 0), (-1, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "all physical R entries and exact flat overlap for mark 0",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 0",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 0",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 0",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 0",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 1",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 1",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 1",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 1",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 2",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 2",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 2",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 2",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 3",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 3",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 3",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 3",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 4",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 4",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 4",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 4",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 5",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 5",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 5",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 5",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 6",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 6",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 6",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 6",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 7",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 7",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 7",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 7",
+      "passed": true
+    },
+    {
+      "check": "single-edge exploratory rank {'edge': 0, 'phase': '-1', 'rank': 24, 'smin': 1.3152130970858933}",
+      "passed": true
+    },
+    {
+      "check": "single-edge exploratory minimum value {'edge': 0, 'phase': '-1', 'rank': 24, 'smin': 1.3152130970858933}",
+      "passed": true
+    },
+    {
+      "check": "single-edge exploratory rank {'edge': 1, 'phase': '-1', 'rank': 24, 'smin': 1.315213097085893}",
+      "passed": true
+    },
+    {
+      "check": "single-edge exploratory minimum value {'edge': 1, 'phase': '-1', 'rank': 24, 'smin': 1.315213097085893}",
+      "passed": true
+    },
+    {
+      "check": "single-edge exploratory rank {'edge': 0, 'phase': '1j', 'rank': 24, 'smin': 1.1864980288940663}",
+      "passed": true
+    },
+    {
+      "check": "single-edge exploratory minimum value {'edge': 0, 'phase': '1j', 'rank': 24, 'smin': 1.1864980288940663}",
+      "passed": true
+    },
+    {
+      "check": "single-edge exploratory rank {'edge': 1, 'phase': '1j', 'rank': 24, 'smin': 1.1864980288940679}",
+      "passed": true
+    },
+    {
+      "check": "single-edge exploratory minimum value {'edge': 1, 'phase': '1j', 'rank': 24, 'smin': 1.1864980288940679}",
+      "passed": true
+    }
+  ],
+  "all_assertions_passed": true,
+  "scope": "Flat residuals are squared norms in one exceptional fiber, not survival probabilities in physical l2. Strong physical decay and order-of-limits restrictions remain those proved in PRE."
+}

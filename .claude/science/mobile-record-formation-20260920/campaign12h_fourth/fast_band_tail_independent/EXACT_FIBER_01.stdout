@@ -1,0 +1,357 @@
+{
+  "all_assertions_passed": true,
+  "checks": 641,
+  "certificate_determinant": "-222208",
+  "determinant_mod_5": 2,
+  "zero_fiber": {
+    "phase_powers_of_i": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "coupling_rank": 23,
+    "dark_eigenvalue": 0,
+    "integer_vector_norm_squared": 24,
+    "nonzero_components": [
+      {
+        "W1_index": 30,
+        "charge_word": [
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 31,
+        "charge_word": [
+          1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 32,
+        "charge_word": [
+          1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 33,
+        "charge_word": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 34,
+        "charge_word": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 35,
+        "charge_word": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          -1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 42,
+        "charge_word": [
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 43,
+        "charge_word": [
+          1,
+          -1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 44,
+        "charge_word": [
+          1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 45,
+        "charge_word": [
+          1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 46,
+        "charge_word": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 47,
+        "charge_word": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          -1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 54,
+        "charge_word": [
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 55,
+        "charge_word": [
+          1,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 56,
+        "charge_word": [
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 57,
+        "charge_word": [
+          1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 58,
+        "charge_word": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 59,
+        "charge_word": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 72,
+        "charge_word": [
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 73,
+        "charge_word": [
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 74,
+        "charge_word": [
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 75,
+        "charge_word": [
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 76,
+        "charge_word": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          0
+        ],
+        "coefficient": 1
+      },
+      {
+        "W1_index": 77,
+        "charge_word": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          0
+        ],
+        "coefficient": 1
+      }
+    ]
+  },
+  "scope": "Exact finite fiber certificate plus physical Gauss-coordinate intertwining. Physical strong stability requires the analytic zero-set and dominated-convergence proof; zero-fiber vector alone is not normalizable in l2(Z^5)."
+}

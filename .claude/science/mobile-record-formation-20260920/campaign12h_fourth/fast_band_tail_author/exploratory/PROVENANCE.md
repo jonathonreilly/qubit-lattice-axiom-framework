@@ -1,0 +1,1 @@
+The first floating rank probe was run directly from fiber_probe.py. The single-edge screen was an inline Python command importing that builder and testing edge indices0,1 with phases-1,i while all other phases were1. It selected an exact integer witness to test; neither floating rank threshold proves the theorem. The exact final runner is self-contained and imports no probe code.

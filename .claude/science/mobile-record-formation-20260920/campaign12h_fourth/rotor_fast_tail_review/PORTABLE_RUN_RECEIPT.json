@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-09-24T04:37:26.416990+00:00",
+  "temporary_copy": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/campaign12h_fourth",
+  "runs": [
+    {
+      "script": "fast_band_tail_author/exact_tail_control.py",
+      "source_sha256": "7fb623f63f1d0eeef7b51c619e3f9cd8165e7810eb254f876846c79afcc468b8",
+      "exit_code": 0,
+      "wall_seconds": 0.5060320000629872,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/run_1.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/run_1.stderr",
+      "result_path": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/run_1.RESULT.json",
+      "result_sha256": "9761680bde05c651c01a421e80b8aeac358ae9b24da717cc7b0b05d48d186a0b",
+      "comparison": "All scientific JSON, exact discrete fields and floating tolerance2e-12; only creation time excluded. Original assertions unchanged."
+    },
+    {
+      "script": "fast_band_tail_independent/exact_fiber_control.py",
+      "source_sha256": "8c30f380e57a7397e488873b7dd1d7d291e79bcf0e1e06db538f48b360406460",
+      "exit_code": 0,
+      "wall_seconds": 0.7693624580278993,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/run_2.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/run_2.stderr",
+      "result_path": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/run_2.RESULT.json",
+      "result_sha256": "bbd1d2a7d4af1959275b799ad41f4aa18df59e6fb7000cb327e95652132568d4",
+      "comparison": "All scientific JSON, exact discrete fields and floating tolerance2e-12; only creation time excluded. Original assertions unchanged."
+    },
+    {
+      "script": "fast_band_tail_independent/post_certificate_compare.py",
+      "source_sha256": "753f059e40e56b115de875d1d7816d60db4efd68712fd98d23230e469c05cef6",
+      "exit_code": 0,
+      "wall_seconds": 0.549947916995734,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/run_3.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/run_3.stderr",
+      "result_path": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/rotor-fast-tail-portable-pivng2bl/run_3.RESULT.json",
+      "result_sha256": "db2ae167012a10111dc248aa8db114b222b395d3cfb2aa2525a2800aef64d181",
+      "comparison": "All scientific JSON, exact discrete fields and floating tolerance2e-12; only creation time excluded. Original assertions unchanged."
+    }
+  ],
+  "all_three_scientific_replays_passed": true,
+  "limits": "Replays are consistency checks, not new independent evidence; historical failed attempts remain failed."
+}

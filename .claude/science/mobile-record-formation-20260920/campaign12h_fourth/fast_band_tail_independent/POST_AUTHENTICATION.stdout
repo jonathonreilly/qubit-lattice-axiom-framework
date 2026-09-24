@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-24T04:21:49.168543+00:00",
+  "PRE_artifacts_authenticated": 22,
+  "PRE_seal_sha256": "070337f415cd81ddafa7178790863a2ecc542bcb23d6a142b681e10f4cec853e",
+  "author_artifacts_authenticated": 18,
+  "author_bound_sources_authenticated": 6,
+  "author_seal_sha256": "646d5a33082c0d44a8af5a25a22b61da9b8ca89275651f80458c2a9c7f7f02e6",
+  "compact_dependency_scope": "Only released complete comparison report and final seal were read/authenticated here. Root separately reports full review/authentication of all 80; this packet does not claim to repeat that work.",
+  "compact_dependency_artifacts_in_its_seal": 80,
+  "compact_dependency_seal_sha256": "5824c37555272e57a1b5b0b1214bcb5441a86dd9362f18bb157bbeec960a4ef5",
+  "restriction": "No author code imported or executed; only own frozen PRE engine may be reused. No external personal plan, current CHECKPOINT, or other current peer material read."
+}
+certificate fields {'all_assertions_passed': True, 'edge_order': 12, 'tree_edge_indices': 7, 'chord_edge_indices': 5, 'integer_cycle_matrix': 12, 'charge_words': 168, 'W_dimensions': 3, 'dark_words': 24, 'bright_words': 72, 'dark_dark_Laurent_block_exactly_zero': True, 'bright_dark_Laurent_entries': 288, 'phase_witness': 'z_01=-1; all other edge phases=1', 'Q_witness': 72, 'Gram_witness': 24, 'Gram_determinant': '4688333314034185078308864', 'full_rank_minor_rows': 24, 'full_rank_minor_determinant': '-768', 'flat_phase_exact_rank': 23, 'flat_phase_uniform_dark_kernel_dimension': 1, 'actual_first_mark_flat_fiber_weights': 3, 'scope': 'Exact finite Laurent and physical Gauss-coordinate certificates. Almost-everywhere stability and strong decay follow from the separate analytic proof; a single Fourier fiber is not a normalizable physical state.'}

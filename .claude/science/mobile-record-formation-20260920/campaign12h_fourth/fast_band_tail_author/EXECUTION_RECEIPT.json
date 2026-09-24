@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-24T04:11:30.759051+00:00",
+  "final_exact_control_passed": true,
+  "failed_attempts_preserved": 1,
+  "final_stderr_bytes": 0,
+  "claim_basis": "Exact Laurent/integer certificate and full analytic proof; floating phase screen not used as proof.",
+  "independent_status": "Separate bounded PRE task started before root proof completion; no PRE result has been received and no root tail result sent."
+}

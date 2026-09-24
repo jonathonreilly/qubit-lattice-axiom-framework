@@ -1,0 +1,38 @@
+{
+  "all_assertions_passed": true,
+  "W_dimensions": [
+    36,
+    96,
+    36
+  ],
+  "dark_dark_Laurent_block_exactly_zero": true,
+  "Gram_determinant": "4688333314034185078308864",
+  "full_rank_minor_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    24,
+    42
+  ],
+  "full_rank_minor_determinant": "-768",
+  "flat_phase_exact_rank": 23
+}

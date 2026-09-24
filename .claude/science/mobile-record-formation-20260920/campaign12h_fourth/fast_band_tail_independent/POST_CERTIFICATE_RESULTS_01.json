@@ -1,0 +1,1743 @@
+{
+  "all_assertions_passed": false,
+  "exception": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_certificate_compare.py\", line 150, in <module>\n    result=run();out.write_text(json.dumps(result,indent=2,default=int)+'\\n')\n  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_certificate_compare.py\", line 131, in run\n    g,_,_=matrices(phases);coupling=g[np.ix_(BRIGHT,DARK)];sv=np.linalg.svd(coupling,compute_uv=False)\n          ~~~~~~~~^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/fiber_engine.py\", line 68, in matrices\n    assert np.array_equal(resolved,coherent)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "checks": [
+    {
+      "check": "complete charge ordering",
+      "passed": true
+    },
+    {
+      "check": "complete edge ordering",
+      "passed": true
+    },
+    {
+      "check": "dark ordering",
+      "passed": true
+    },
+    {
+      "check": "bright ordering",
+      "passed": true
+    },
+    {
+      "check": "W dimensions",
+      "passed": true
+    },
+    {
+      "check": "cycle change unimodular",
+      "passed": true
+    },
+    {
+      "check": "all author cycle entries reconstructed",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, -1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, -1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 1, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 1, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, -1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, -1, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 1, 0, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 1, 0, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, -1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, -1, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 1, 0, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 1, 0, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 0, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 0, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, -1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, -1, 0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 1, 0, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 1, 0, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 0, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 0, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 0, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, -1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, -1, 0, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 1, 0, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 1, 0, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 1, 0, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 1, 0, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, -1, 0, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, -1, 0, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 1, 0, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 1, 0, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, -1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, -1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 1, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 1, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (-1, 0, 0, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (-1, 0, 0, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (1, 0, 0, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (1, 0, 0, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, -1, 1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, -1, 1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, -1, 1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, -1, 1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, -1, 1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, -1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, 0, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, -1, 0, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 0, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 0, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 1, 0, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, -1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, -1, 0, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 0, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 0, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 0, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 1, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 1, 0, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, -1, 0, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, -1, 0, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 1, 0, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 1, 0, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, -1, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, -1, 1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, -1, 1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, 1, -1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, 1, 1, -1, 1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, 1, 1, 1, -1, 1)",
+      "passed": true
+    },
+    {
+      "check": "new reference satisfies Gauss (0, 0, 1, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "new reference has zero author chords (0, 0, 1, 1, 1, 1, 1, -1)",
+      "passed": true
+    },
+    {
+      "check": "dark-dark Laurent block exactly zero",
+      "passed": true
+    },
+    {
+      "check": "every author Laurent monomial and coefficient matches",
+      "passed": true
+    },
+    {
+      "check": "entire author integer witness reconstructed",
+      "passed": true
+    },
+    {
+      "check": "entire author Gram matrix reconstructed",
+      "passed": true
+    },
+    {
+      "check": "exact root Gram determinant reconstructed",
+      "passed": true
+    },
+    {
+      "check": "exact root minor determinant reconstructed",
+      "passed": true
+    },
+    {
+      "check": "complete rank-witness block equals PRE engine after gauge",
+      "passed": true
+    },
+    {
+      "check": "zero phase dark kernel one dimensional",
+      "passed": true
+    },
+    {
+      "check": "flat vector killed by G and Gamma",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 0, 1, 0, 1, 1, 0), (-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 1, 1, 0, 1, 1, 0), (0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 0, 1, 1, 1, 1, 0), (0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 0, 0, 1, 1, 0), (0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 0, 0, 1, 1, 0), (0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 0, 0, 1, 1, 1), (0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 1, 0, 0, 1, 0), (0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 0, 1, 0), (0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 0, 1, 1), (0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 1, 0, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 1, 0, 1), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((1, -1, 1, 1, 0, 1, 1, 0), (1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((1, -1, 0, 1, 1, 1, 1, 0), (1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, -1, 1, 1, 1, 1, 1, 0), (1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, -1, 1, 1, 1, 1, 1, 0), (1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "all physical R entries and exact flat overlap for mark 1",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 0, 1, 0, 1, 1, 0), (-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 1, 1, 0, 1, 1, 0), (0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 0, 1, 1, 1, 1, 0), (0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 0, 0, 1, 1, 0), (0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 0, 0, 1, 1, 0), (0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 0, 0, 1, 1, 1), (0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 1, 0, 0, 1, 0), (0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 0, 1, 0), (0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 0, 1, 1), (0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 1, 0, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 1, 0, 1), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((-1, 1, 1, 1, 0, 1, 1, 0), (-1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((-1, 1, 0, 1, 1, 1, 1, 0), (-1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 1, 1, -1, 1, 1, 0), (-1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, -1, 1, 1, 1, 1, 0), (-1, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "all physical R entries and exact flat overlap for mark -1",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 0, 1, 0, 1, 1, 0), (-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 1, 1, 0, 1, 1, 0), (0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 0, 0, 1, 1, 1, 1, 0), (0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 0, 0, 1, 1, 0), (0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 0, 0, 1, 1, 0), (0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 0, 0, 1, 1, 1), (0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 1, 0, 1, 0, 0, 1, 0), (0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 0, 1, 0), (0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 0, 1, 1), (0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 1, 1, 0, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 1, 1, 0, 0), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((1, 0, 0, 1, 0, 1, 0, 1), (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((1, -1, 1, 1, 0, 1, 1, 0), (1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((-1, 1, 1, 1, 0, 1, 1, 0), (-1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((1, -1, 0, 1, 1, 1, 1, 0), (1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical birth target Gauss ((-1, 1, 0, 1, 1, 1, 1, 0), (-1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, -1, 1, 1, 1, 1, 1, 0), (1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, 1, 1, -1, 1, 1, 0), (-1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, -1, 1, 1, 1, 1, 1, 0), (1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "physical F target Gauss ((0, 1, -1, 1, 1, 1, 1, 0), (-1, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0))",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "R physical word dark",
+      "passed": true
+    },
+    {
+      "check": "all physical R entries and exact flat overlap for mark 0",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 0",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 0",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 0",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 0",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 1",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 1",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 1",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 1",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 2",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 2",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 2",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 2",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 3",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 3",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 3",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 3",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 4",
+      "passed": true
+    },
+    {
+      "check": "exploratory singular values reproduced 4",
+      "passed": true
+    },
+    {
+      "check": "exploratory ranks reproduced 4",
+      "passed": true
+    },
+    {
+      "check": "exploratory dark diagonal reproduced 4",
+      "passed": true
+    },
+    {
+      "check": "recorded exploratory phase exponents 5",
+      "passed": true
+    }
+  ]
+}

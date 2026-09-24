@@ -1,0 +1,20 @@
+PASS A1 one record, held (w, chi): rate w_x/(chi_x chi_y): stationary law 1/w (lengths cancel)
+PASS A1 one record: any function s of the bond length chi_x chi_y: law 1/w
+PASS A1 two and three records with exclusion and block 39-type pair weights W: law W(C) prod 1/w
+PASS A1 remark: per own tick the hop rate is 1/(chi_x chi_y), its direction odds depend on the lengths (biased to short bonds)
+PASS A1 control: rate w_x / l_x (occupied site's own length l = chi^2) gives law l/w instead (lengths enter)
+PASS A1 control: ... and then 1/w alone is NOT stationary
+PASS A2 slaved first-order field, rate w_x(C)/(chi_x(C) chi_y(C)): pair law prod over pairs exp(-om(r - s)) (4050 moves of two records, 6870 of three)
+PASS A2 the bond length is the same before and after the move (product form, even one-body factor): it cancels
+PASS A2 control: a symmetric but non-product bond factor 1/(chi_x + chi_y) breaks the pair law in the slaved field
+PASS A2 control: the fixed-field factor prod_z 1/w_z(C) (pairs counted twice) is not stationary
+PASS A3 variant: a hop that reads its own site's length (rate w_x / l_x): slaved pair law prod exp(log l_1 - log w_1) over pairs
+PASS B1 block 98 T2: the line integral of the transverse gradient of 1/(4 pi r) at impact b is -2/(4 pi b)
+PASS B2 first order: log w_1 = -2 Q g(b), log l_1 = +2 Q g(b) (so l = 1/w: beta = 1, block 60 T3/T4)
+PASS B3 the wave's turn is delta(b) = 8 Q g(b) = 4 log g(b): the pair law is unchanged, the turn doubles
+PASS B4 for lengths l = (wbar/w)^beta: log c = (1 + beta) log w, turn = 2(1 + beta) log g: 2 log g at beta = 0, 4 log g at beta = 1
+PASS B4 variant A3 (own site's length): log g = 4 Q g(b) and delta = 2 log g: the answer is fixed by how a hop sees a length
+PASS B5 remark: referred to physical volume l^3 per site, log g_vol = -4 Q g(b) = -(1/2) delta: the relation depends on the measure
+
+SUMMARY: PROVED for record hops timed by the occupied site and crossing a bond of block 60's length chi_x chi_y (any function of it): the stationary law in any held (w, l) field is W(C) prod 1/w, and in the first-order slaved field the pair law is W(C) exp(-sum_pairs log w_1(r - s)), with no trace of the lengths; under block 60 (beta = 1) the wave's turn is 4 log g(b) at first order (2(1 + beta) log g in general)
+HIT: (a) the lengths cancel from the records' stationary law exactly (held field, any number of records) and from the pair law in the first-order slaved field (bond length unchanged by the move); (b) hence delta(b) = 4 log g(b) under block 60's curvature member, as the corrigendum of block 98 conjectured (2(1+beta) log g in general); a hop that reads its own site's length instead gives 2 log g; per physical volume log g_vol = -delta/2

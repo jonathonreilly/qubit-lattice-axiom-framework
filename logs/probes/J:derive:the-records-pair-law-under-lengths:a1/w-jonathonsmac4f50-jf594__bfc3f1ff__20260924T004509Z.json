@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:the-records-pair-law-under-lengths:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-jf594",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-records-pair-law-under-lengths/w-jonathonsmac4f50-jf594/check.py",
+ "seed": 10709,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bfc3f1ff",
+ "started_utc": "20260924T004509Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED for record hops timed by the occupied site and crossing a bond of block 60's length chi_x chi_y (any function of it): the stationary law in any held (w, l) field is W(C) prod 1/w, and in the first-order slaved field the pair law is W(C) exp(-sum_pairs log w_1(r - s)), with no trace of the lengths; under block 60 (beta = 1) the wave's turn is 4 log g(b) at first order (2(1 + beta) log g in general)"
+ },
+ "review": "Hops timed by the occupied site crossing a bond of length chi_x chi_y (any function s of it): held field law W prod 1/w (lengths cancel, symbolic ring of five, 1-3 records); first-order slaved field (superposed even one-body factors) pair law W prod exp(-log w_1): bond length unchanged by the move (4050+6870 exact moves on 3^3); controls: non-product bond factor and own-site length break it. Block 60 first order: log w_1 = -2Qg, log l_1 = 2Qg, crossing log c = -4Qg -> delta = 8Qg = 4 log g (2(1+beta) log g general); own-site-length hop gives 2 log g; per volume log g_vol = -delta/2. Same-family provenance.",
+ "what": "DERIVATION, independent attempt 1 of 2: Do block 60's lengths change the records' pair law, so that a wave passing a record turns by 4 log g(b)?. SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). TASK: block 98 (#8878, with its corrigendum): a long wave of block 54's product-form walk passing a record turns by 2|U(b)| = 2 log g(b), U and g block 95's pair energy and pair excess; with block 60's curvature member (lengths l = chi^2 stretched by the source; bending over fall 1 + beta, beta = 1) the wave's turn doubles. Whether the records' pair law changes too depends on how a record's hop sees a stretched bond (block 59: crossing rate c_b = sqrt(w_x w_y)/l_b). (a) With hops of records at c_b-type rates timed by the occupied site (block 97's locality principle: per own tick field-free), the exact stationary law of one and two records in a held (w, l) field and in the field slaved to the records (block 60 T4's one-body field at first order); (b) the relation between the wave's turn and the pair excess under block 60: 4 log g, 2 log g, or other. HIT: (a) exact with (b). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-records-pair-law-under-lengths/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-records-pair-law-under-lengths/<name>/check.py\"",
+ "stdout_sha256": "f7cab9511940eb84122be5c341cb52f276d56d573a672b7467caf0f9835094a1",
+ "stdout_tail": "adient of 1/(4 pi r) at impact b is -2/(4 pi b)\nPASS B2 first order: log w_1 = -2 Q g(b), log l_1 = +2 Q g(b) (so l = 1/w: beta = 1, block 60 T3/T4)\nPASS B3 the wave's turn is delta(b) = 8 Q g(b) = 4 log g(b): the pair law is unchanged, the turn doubles\nPASS B4 for lengths l = (wbar/w)^beta: log c = (1 + beta) log w, turn = 2(1 + beta) log g: 2 log g at beta = 0, 4 log g at beta = 1\nPASS B4 variant A3 (own site's length): log g = 4 Q g(b) and delta = 2 log g: the answer is fixed by how a hop sees a length\nPASS B5 remark: referred to physical volume l^3 per site, log g_vol = -4 Q g(b) = -(1/2) delta: the relation depends on the measure\n\nSUMMARY: PROVED for record hops timed by the occupied site and crossing a bond of block 60's length chi_x chi_y (any function of it): the stationary law in any held (w, l) field is W(C) prod 1/w, and in the first-order slaved field the pair law is W(C) exp(-sum_pairs log w_1(r - s)), with no trace of the lengths; under block 60 (beta = 1) the wave's turn is 4 log g(b) at first order (2(1 + beta) log g in general)\nHIT: (a) the lengths cancel from the records' stationary law exactly (held field, any number of records) and from the pair law in the first-order slaved field (bond length unchanged by the move); (b) hence delta(b) = 4 log g(b) under block 60's curvature member, as the corrigendum of block 98 conjectured (2(1+beta) log g in general); a hop that reads its own site's length instead gives 2 log g; per physical volume log g_vol = -delta/2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf594",
+  "at_utc": "20260924T004528Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #8886. Lengths (bond factor chi_x chi_y, hop on occupied site's clock) cancel from the stationary law (held field) and the first-order slaved pair law; delta = 4 log g under block 60 (2(1+beta) log g); own-site-length hop gives 2 log g; per-volume log g_vol = -delta/2.",
+  "by": "w-jonathonsmac4f50-jf594",
+  "at_utc": "20260924T004528Z"
+ }
+}

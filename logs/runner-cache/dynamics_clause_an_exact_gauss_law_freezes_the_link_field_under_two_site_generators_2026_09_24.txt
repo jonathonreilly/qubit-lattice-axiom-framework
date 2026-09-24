@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_two_site_generators_2026_09_24.py
+runner_sha256: e621d453abefaa2c33a8c4e8a83d25e102bece3c41c6b176ba2bd43042076c6e
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 4.03
+status: ok
+----- stdout -----
+[PASS] roles: neighbours differ by one role; links are independent; vertex 6 links, link 2 vertices + 4 plaquettes, plaquette 4 links + 2 cubes :: role steps [1]; link-link bonds 0; neighbour role counts [[(0, 6, 0, 0)], [(2, 0, 4, 0)], [(0, 4, 0, 2)], [(0, 0, 6, 0)]]
+[PASS] freeze (U(1)): two-site generators commuting with the Gauss operators at both ends commute with E_l :: static: invariant two-site span 38, max |[H, E_l]| 1.9e-14; dynamical: invariant two-site span 30, max |[H, E_l]| 9.1e-15
+[PASS] freeze (Z2): two-site generators commuting with tau^x_v X_l and tau^x_w X_l commute with X_l; tau^z_v Z_l tau^z_w moves it :: invariant two-site span 30, max |[H, X_l]| 2.3e-14; three-site mover norm 11.314
+[PASS] freeze (compression): P H P commutes with E_l in every Gauss sector, for random two-site H :: 7 sectors; max |[P H P, E_l]| 0.0e+00; |[H, E_l]| 53.35
+[PASS] hops: with dynamical vertex charges some vertex-link-vertex operators are Gauss-invariant field movers; with static charges none :: max |[O, E_l]|: static 3.4e-15, dynamical 5.657
+[PASS] rings: the coarse torus is bipartite and simple; its 4-cycles are exactly the plaquette boundaries; on a plaquette the divergence-free changes are +-(ring) :: bipartite True; simple True; 4-cycles 648 (plaquettes 648); all plaquettes True; divergence-free [(-1, -1, 1, 1), (1, 1, -1, -1)]
+[PASS] soldered vertex: sum_l s_l . n(v->l) is invariant under the 24 rotations; invariant one-qubit operators = multiples of 1; a fixed axis with trivial action is not covariant :: max deviation 1.3e-14; invariant one-qubit dimension 1; trivial action fails for 21 of 24 rotations
+[PASS] soldered plaquette: 8 rotations fix it; Gauss-commuting operators dim 18 with 2 movers; covariant Hermitian dim 5 with one real ring coupling :: stabilizer 8; corner covariance 3.3e-15; Gauss-commuting 18, movers 2; covariant Hermitian 5, movers 1
+[PASS] soft Gauss ring (ED, one plaquette): half-splitting of the ice doublet -> 5 h^4 / (32 U^3) :: ratio 0.999440 at h/U = 0.04, 0.999860 at h/U = 0.02
+[PASS] soft Gauss diagonal (coarse L = 6 torus): the fourth-order diagonal energy is the same on random ice configurations; ring element -5 h^4/(32 U^3) :: diagonal (units h^4/U^3) -18.5625000000, spread 0.0e+00 over 5 configurations (min Hamming distance 308); ring element -0.156250 vs -0.156250
+[PASS] transverse record fields at K = -J, D = 0: vertex records, and plaquette records along the normal, give link fields with no component along the link :: max longitudinal component 0.0e+00
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

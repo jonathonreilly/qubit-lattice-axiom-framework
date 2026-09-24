@@ -128,7 +128,7 @@ bilinear too weak to make their gap vanish. ∎
     his gapless phase.
   - Or leaves with kept-axis fields, which break `S`. Their effect on Chern
     numbers is not computed here.
-  - Or a term strong enough to close the gap.
+  - Or a term strong enough to make the gap vanish.
 
   Open PR 9054's scan found no gapless network.
 - **Prior art.** Kitaev (2006) gaps his model's gapless phase with the

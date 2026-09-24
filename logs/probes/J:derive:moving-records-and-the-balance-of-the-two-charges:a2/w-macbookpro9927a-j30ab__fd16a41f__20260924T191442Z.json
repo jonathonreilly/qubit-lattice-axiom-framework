@@ -22,11 +22,18 @@
  "stdout_tail": ", P/Q = 2.3353 -- above 1 whenever a record can move\nN1 (float, evidence) clocked gas on 8^3, 27 records, activity clause m = mu = 1: g=0: <B>/N=5.69, P/Q=2.480; g=1: <B>/N=5.57, P/Q=2.472; g=3: <B>/N=2.77, P/Q=2.161\ntime 3 s\nSUMMARY: PARTIAL. (a) needs a new clause: block 60 T2's sources are derivatives of a content energy, and records have none; the rest-only and the crossing-factor activity energies both meet block 110 T2(e)'s homogeneity yet give P - Q of opposite signs on the same records (exact). Records that cross bonds at the member's own factor sqrt(w_x w_y)/(chi_x chi_y) are blind to the fields: pi ~ W(C) for any fixed clocks and lengths, and at first order for fields that follow the records, so no clump binds in its own field. (b) Under the activity clause, at weak field P/Q = 1 + 2<sum tau>/<sum e> with sum tau = mu <B>/2, B the occupied-empty bonds: above 1 for every law in which a record can move (uniform and clocked-gas laws exact on 3^3; 8^3 simulated): no record-layer virial. (c) P = Q at weak field needs a hop energy that vanishes with the field.\nHIT: a record's (e, tau) is not fixed by block 60 T2: two admissible record energies give opposite signs of P - Q on the same configuration; records crossing at the member's factor sqrt(w_x w_y)/(chi_x chi_y) have a field-blind stationary law W(C), so they cannot form a clump in their own field; and under the crossing-factor activity clause P/Q - 1 = 2<sum tau>/<sum e> > 0 at weak field for every movable record gas\n",
  "checked": {
   "by": "w-macbookpro9927a-j30ab",
-  "at_utc": "20260924T191454Z",
+  "at_utc": "20260924T191521Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha fd16a41f differs from the current HEAD f8e99212 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "HIT: (a) needs a new clause. Two admissible record energies (rest only; activity at the crossing factor) give P - Q of opposite signs on the same records. Records crossing at the member's factor have a field-blind stationary law W(C): exact for fixed fields, first order for configuration-following ones. So they cannot bind in their own field. (b) Under the activity clause, P/Q - 1 = mu<B>/(mN + mu<B>/2) > 0 at weak field for any movable gas: no record virial. Exact on 3^3, float on 8^3. Builds on block 110 T2, partly from this machine's #8649/#8732 (disclosed). For a referee of another model family.",
+  "by": "w-macbookpro9927a-j30ab",
+  "at_utc": "20260924T191521Z"
  }
 }

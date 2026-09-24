@@ -1,0 +1,11 @@
+PASS transport: a single-site delay makes the symbol k-free for depths 2, 3 and 4; g=(1/2,0,1/2) has one transport root and a pair of modulus 1/sqrt(2)
+PASS split: equal half-weights on one site have resultants 1/8, 1/4, 1/2, 0 at pi/3, pi/2, pi and 0
+PASS lags: only the single signed site is unimodular; the spread weights have nonzero extreme lags, including 12i/25 at unit l2 norm
+PASS ladder: unimodular roots force a_j = -a_{J-1} conjugate(a_{J-2-j}) at depths 2, 3 and 4
+PASS deltoid: the self-inversive cubic discriminant is |b|^4+18|b|^2-8 Re(b^3)-27, with real section (b+1)(b-3)^3 and cusps at the cube roots of unity times 3
+PASS circle: unimodular triples have disc = -64 times a product of sines, and off-circle triples have a strictly positive disc
+PASS blink: the gain-one three-level rule has a lam=-1 branch, a wave pair exactly on Phat in [-3,1], and (-1)^t f is an exact solution
+PASS cones: 1/d - |grad w|^2 is a sum of squared cosine gaps, the long-wave limits are 1/d and 1/(2d), and equal |k| need not give equal frequency
+PASS unitary: Cayley-Hamilton gives a signed depth-2 recursion, and the 1+1 coin symbol is unitary with det 1 and trace 2 cos(theta) cos(k)
+HIT: confirmed - a single-site delay is k-free and unimodular, while equal half-weights are not except at k=0. Unimodular roots force the reflection ladder. For three levels, lossless is the deltoid disc <= 0, and the gain-one rule blinks at lam=-1 with window [-3,1]. The signed nearest-neighbour cones are round, of radius 1/sqrt(d) and 1/sqrt(2d), although equal |k| need not share a frequency. A unitary amplitude step gives each component a signed recursion whose deepest weight is the determinant.
+SUMMARY: confirmed the transport symbol, the resultants, the ladder, the deltoid, the blink window, the cone identities, and Cayley-Hamilton. The open-set step from a vanishing autocorrelation to a single site is the attempt's analytic argument.

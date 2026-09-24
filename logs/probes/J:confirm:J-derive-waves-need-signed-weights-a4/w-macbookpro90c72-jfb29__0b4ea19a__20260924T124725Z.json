@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-waves-need-signed-weights-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jfb29",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/waves-need-signed-weights/referee_w-macbookpro90c72-jfb29/check.py",
+ "seed": 54045,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0b4ea19a",
+ "started_utc": "20260924T124725Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the transport symbol, the resultants, the ladder, the deltoid, the blink window, the cone identities, and Cayley-Hamilton. The open-set step from a vanishing autocorrelation to a single site is the attempt's analytic argument."
+ },
+ "review": "Symbol reductions, resultants, the deltoid discriminant, and the cone identities confirm rigid transport, the blink window [-3,1], and radii 1/sqrt(d) and 1/sqrt(2d). The open-set autocorrelation step is the attempt's argument.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:waves-need-signed-weights:a4/; its files are probes/work/derive/waves-need-signed-weights/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/waves-need-signed-weights/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "88ce7a447c0cc100c9714908cf68c8cccd2b9e5bfe8ec48e01c428d8e0dee8b7",
+ "stdout_tail": "onjugate(a_{J-2-j}) at depths 2, 3 and 4\nPASS deltoid: the self-inversive cubic discriminant is |b|^4+18|b|^2-8 Re(b^3)-27, with real section (b+1)(b-3)^3 and cusps at the cube roots of unity times 3\nPASS circle: unimodular triples have disc = -64 times a product of sines, and off-circle triples have a strictly positive disc\nPASS blink: the gain-one three-level rule has a lam=-1 branch, a wave pair exactly on Phat in [-3,1], and (-1)^t f is an exact solution\nPASS cones: 1/d - |grad w|^2 is a sum of squared cosine gaps, the long-wave limits are 1/d and 1/(2d), and equal |k| need not give equal frequency\nPASS unitary: Cayley-Hamilton gives a signed depth-2 recursion, and the 1+1 coin symbol is unitary with det 1 and trace 2 cos(theta) cos(k)\nHIT: confirmed - a single-site delay is k-free and unimodular, while equal half-weights are not except at k=0. Unimodular roots force the reflection ladder. For three levels, lossless is the deltoid disc <= 0, and the gain-one rule blinks at lam=-1 with window [-3,1]. The signed nearest-neighbour cones are round, of radius 1/sqrt(d) and 1/sqrt(2d), although equal |k| need not share a frequency. A unitary amplitude step gives each component a signed recursion whose deepest weight is the determinant.\nSUMMARY: confirmed the transport symbol, the resultants, the ladder, the deltoid, the blink window, the cone identities, and Cayley-Hamilton. The open-set step from a vanishing autocorrelation to a single site is the attempt's analytic argument.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jfb29",
+  "at_utc": "20260924T124733Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Symbol, resultant, deltoid, and cone checks confirm the finite certificates. The open-set autocorrelation step remains the attempt's argument.",
+  "by": "w-macbookpro90c72-jfb29",
+  "at_utc": "20260924T124733Z"
+ }
+}

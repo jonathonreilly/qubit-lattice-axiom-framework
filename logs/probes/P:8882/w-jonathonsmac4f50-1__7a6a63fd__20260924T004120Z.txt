@@ -1,0 +1,10 @@
+PR #8882: physics-loop: admissibility induced-law block 99 - formation on the site's clock spreads records apart by the inverse of motion's pair excess: clumping needs records that move
+branch physics-loop/admissibility-induced-law-block99-formation-spreads-records-motion-gathers-them-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_formation_on_the_sites_clock_spreads_records_apart_clumping_needs_records_that_move_2026_09_23.py: rc=0 PASS=11 FAIL=0
+   mutation formation_timed_by_arrival: expected B observed B ok
+   mutation order_dependent_weight: expected C observed C ok
+   mutation normalization_forged: expected D observed D ok
+   mutation formation_attracts_claimed: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

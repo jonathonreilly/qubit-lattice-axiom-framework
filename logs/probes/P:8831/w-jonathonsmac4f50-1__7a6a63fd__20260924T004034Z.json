@@ -1,0 +1,30 @@
+{
+ "task": "P:8831",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-post-formation-clock-20260",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8831",
+ "pr": 8831,
+ "branch": "codex/mobile-record-post-formation-clock-20260923",
+ "git_sha": "7a6a63fd",
+ "started_utc": "20260924T004034Z",
+ "elapsed_s": 5.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "c1ef58f878690200b482651d36af3a05ba26da7c6f61f7f74599d44badd331f7",
+ "stdout_tail": "PR #8831: Resolve post-formation rotor spectra and second-formation clocks\nbranch codex/mobile-record-post-formation-clock-20260923 (base codex/mobile-record-repeated-formation-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T004039Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

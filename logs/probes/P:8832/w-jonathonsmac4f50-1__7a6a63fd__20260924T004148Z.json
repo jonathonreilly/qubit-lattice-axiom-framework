@@ -1,0 +1,30 @@
+{
+ "task": "P:8832",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-prepared-electric-formatio",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8832",
+ "pr": 8832,
+ "branch": "codex/mobile-record-prepared-electric-formation-20260923",
+ "git_sha": "7a6a63fd",
+ "started_utc": "20260924T004148Z",
+ "elapsed_s": 4.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "92b2b65fe653fe3825c881bf24085490a07638b618a22bdc2bf7f065ccc18114",
+ "stdout_tail": "PR #8832: Retain electric dynamics and another formation in a prepared ring sector\nbranch codex/mobile-record-prepared-electric-formation-20260923 (base codex/mobile-record-post-formation-clock-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T004152Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

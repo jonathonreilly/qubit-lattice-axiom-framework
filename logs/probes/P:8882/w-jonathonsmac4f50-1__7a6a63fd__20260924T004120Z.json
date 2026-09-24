@@ -1,0 +1,37 @@
+{
+ "task": "P:8882",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block99-format",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8882",
+ "pr": 8882,
+ "branch": "physics-loop/admissibility-induced-law-block99-formation-spreads-records-motion-gathers-them-20260923",
+ "git_sha": "7a6a63fd",
+ "started_utc": "20260924T004120Z",
+ "elapsed_s": 6.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_formation_on_the_sites_clock_spreads_records_apart_clumping_needs_records_that_move_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "51965d1304c2979832fd1574211897e517529968b77ffa152ace98bdc8adaf14",
+ "stdout_tail": "PR #8882: physics-loop: admissibility induced-law block 99 - formation on the site's clock spreads records apart by the inverse of motion's pair excess: clumping needs records that move\nbranch physics-loop/admissibility-induced-law-block99-formation-spreads-records-motion-gathers-them-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_formation_on_the_sites_clock_spreads_records_apart_clumping_needs_records_that_move_2026_09_23.py: rc=0 PASS=11 FAIL=0\n   mutation formation_timed_by_arrival: expected B observed B ok\n   mutation order_dependent_weight: expected C observed C ok\n   mutation normalization_forged: expected D observed D ok\n   mutation formation_attracts_claimed: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T004127Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

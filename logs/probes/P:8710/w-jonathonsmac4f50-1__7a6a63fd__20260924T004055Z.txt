@@ -1,0 +1,12 @@
+PR #8710: physics-loop: admissibility induced-law block 93 - covariance forces a reversible formation law: three covariant pasts, and the six-neighbour past settles into two copies of the static law
+branch physics-loop/admissibility-induced-law-block93-covariance-forces-a-reversible-formation-law-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_covariance_forces_a_reversible_formation_law_three_covariant_pasts_six_neighbour_past_two_static_laws_2026_09_23.py: rc=0 PASS=14 FAIL=0
+   mutation group_without_half_turns: expected B observed B ok
+   mutation level_ordered_past_counted_covariant: expected B observed B ok
+   mutation weights_break_the_orbit: expected C observed C ok
+   mutation six_neighbour_rungs_kept: expected D observed D ok
+   mutation copy_past_keeps_a_direction: expected D observed D ok
+   mutation threshold_without_the_rung_weight: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

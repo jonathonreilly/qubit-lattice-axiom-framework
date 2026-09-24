@@ -1,0 +1,3 @@
+PR #8832: Retain electric dynamics and another formation in a prepared ring sector
+branch codex/mobile-record-prepared-electric-formation-20260923 (base codex/mobile-record-post-formation-clock-20260923)
+runners in the PR: 0

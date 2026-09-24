@@ -1,0 +1,36 @@
+{
+ "task": "P:8875",
+ "type": "pr-reexecution",
+ "lane": "ice-test-defects-coulomb-20260923",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8875",
+ "pr": 8875,
+ "branch": "claude/ice-test-defects-coulomb-20260923",
+ "git_sha": "7a6a63fd",
+ "started_utc": "20260924T004213Z",
+ "elapsed_s": 30.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "74605e702d8010dbd8966ef1c08fc094f12408c7821be9020d9362933a875e44",
+ "stdout_tail": "PR #8875: docs(ice): test defects interact through the lattice Green's function\nbranch claude/ice-test-defects-coulomb-20260923 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.py: rc=0 PASS=7 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T004243Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

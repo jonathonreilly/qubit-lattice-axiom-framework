@@ -1,0 +1,11 @@
+PASS P multiplies e_k by conj(phi) and P^T by phi on every mode of L=3,4,6
+PASS phi is real iff k1+k2 in 2pi Z or k1-k2 in pi+2pi Z; nonreal modes 6/9, 10/16, 24/36  [{3: (6, 9), 4: (10, 16), 6: (24, 36)}]
+PASS display and gloss agree on 8/24, 19/45, 47/105 pairs  [{3: (8, 24), 4: (19, 45), 6: (47, 105)}]
+PASS Im phi = (2/3) sin((k1+k2)/2) cos((k1-k2)/2)
+PASS 3|1-z|^2 = E - 3(1-u) and u = |z|^2
+PASS Hess E = 2I and Hess 3D = (2/3) 11^T at the origin
+PASS 3D = eps^4 (3b^2 + |a|^4/12) + O(eps^5) and E = eps^2 |a|^2 + O(eps^3) for a perpendicular to (1,1,1)
+PASS on L=4 the mode (1,0) is an eigenvector of P with eigenvalue conj(phi), and phi is not real
+
+SUMMARY: confirmed - with the minus transform P multiplies by conj(phi) while the covariance display is phi^s; the two differ on the non-real pairs, 16 of 24 on L=3, 26 of 45 on L=4 and 58 of 105 on L=6; E is elliptic and the formation symbol is parabolic along (1,1,1).
+HIT: confirmed - block 35's display phi^s Var matches the minus transform and the pairing E[X conj Y]; the evolution multiplier is conj(phi); E and the formation symbol are separated by Hessian rank 3 against rank 1, and 3D = eps^4 (3b^2 + |a_perp|^4/12) along the cone.

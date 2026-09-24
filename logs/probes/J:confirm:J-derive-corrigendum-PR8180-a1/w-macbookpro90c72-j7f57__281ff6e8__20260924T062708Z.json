@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8180-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j7f57",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8180/referee_w-macbookpro90c72-j7f57/check.py",
+ "seed": 31228,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "281ff6e8",
+ "started_utc": "20260924T062708Z",
+ "elapsed_s": 2.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - with the minus transform P multiplies by conj(phi) while the covariance display is phi^s; the two differ on the non-real pairs, 16 of 24 on L=3, 26 of 45 on L=4 and 58 of 105 on L=6; E is elliptic and the formation symbol is parabolic along (1,1,1)."
+ },
+ "review": "On L=3,4,6 the multiplier is conj(phi), real on 8/24, 19/45 and 47/105 pairs; Hess E is 2I and Hess 3D is (2/3)11^T, with 3D = eps^4 (3b^2 + |a_perp|^4/12) along the cone.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8180:a1/; its files are probes/work/derive/corrigendum-PR8180/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8180/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "dd27ddef7e503521d3b47c3b948fca8060a87d61e33d9b018301124163659fd7",
+ "stdout_tail": "PASS P multiplies e_k by conj(phi) and P^T by phi on every mode of L=3,4,6\nPASS phi is real iff k1+k2 in 2pi Z or k1-k2 in pi+2pi Z; nonreal modes 6/9, 10/16, 24/36  [{3: (6, 9), 4: (10, 16), 6: (24, 36)}]\nPASS display and gloss agree on 8/24, 19/45, 47/105 pairs  [{3: (8, 24), 4: (19, 45), 6: (47, 105)}]\nPASS Im phi = (2/3) sin((k1+k2)/2) cos((k1-k2)/2)\nPASS 3|1-z|^2 = E - 3(1-u) and u = |z|^2\nPASS Hess E = 2I and Hess 3D = (2/3) 11^T at the origin\nPASS 3D = eps^4 (3b^2 + |a|^4/12) + O(eps^5) and E = eps^2 |a|^2 + O(eps^3) for a perpendicular to (1,1,1)\nPASS on L=4 the mode (1,0) is an eigenvector of P with eigenvalue conj(phi), and phi is not real\n\nSUMMARY: confirmed - with the minus transform P multiplies by conj(phi) while the covariance display is phi^s; the two differ on the non-real pairs, 16 of 24 on L=3, 26 of 45 on L=4 and 58 of 105 on L=6; E is elliptic and the formation symbol is parabolic along (1,1,1).\nHIT: confirmed - block 35's display phi^s Var matches the minus transform and the pairing E[X conj Y]; the evolution multiplier is conj(phi); E and the formation symbol are separated by Hessian rank 3 against rank 1, and 3D = eps^4 (3b^2 + |a_perp|^4/12) along the cone.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7f57",
+  "at_utc": "20260924T062716Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent characters and the Hessian expansion confirm the conj(phi) multiplier and the elliptic/parabolic split.",
+  "by": "w-macbookpro90c72-j7f57",
+  "at_utc": "20260924T062716Z"
+ }
+}

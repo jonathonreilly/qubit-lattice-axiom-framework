@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_a_covariant_time_reversal_odd_star_term_gives_a_record_carved_majorana_network_a_chern_number_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Setting, all supplied and none adopted: the compass point of the fully soldered dynamics clause (open PR 9040), records acting as fields (open PR 9041), a record pattern with record contents, and a covariant time-reversal-odd star term. The clause and the star term are covariant under full soldering. The record pattern and its contents are supplied, non-covariant choices. (i) A 19-site relaxed three-direction network on the 4x4x4 cell (from open PR 9097's zero-field search) has no record touching unrecorded sites along all three axes. Each record points along the last axis that avoids its unrecorded neighbours, with sign (-1)^(x+y+z), so every field on an unrecorded site vanishes. (ii) Covariant odd star terms under full soldering, built as signed orbits of the 24 proper rotations, give 37 lattice terms at weights 1 and 3 (open PR 9088's count) and 325 at weights 1, 3, 5 and 7. (iii) Pauli strings on the carving, with records replaced by their values, are mapped exactly to Kitaev's Majoranas. The map reproduces the bond matrix, and matches exact spin spectra on three-site clusters and on 30 random tree clusters with multi-site strings to 1e-14. (iv) The covariant terms whose reduced strings are all free Majorana bilinears form a 41-dimensional subspace here; 5 of its directions act on the Majoranas. The projection onto it of the weight-5 orbit s^x_{+x} s^y_{-x} s^y_{+y} s^z_{-y} s^z_{+z} is a covariant term of weights 5 and 7. Its non-free strings cancel exactly, and its free image is 27 Kitaev patterns at corners plus the dangling-axis field s^x at (2,2,2), with the largest coefficient. (v) The compass bonds plus lambda times that term, in the 16 translation-invariant flux sectors of the cell: at lambda = 1, 2 and 4 the lowest (8 degenerate) have 12 exact zero modes per cell, a gap above them (0.019, 0.035, 0.017), and weak Chern numbers (-1, 0, 0). The phase is a window: the gap vanishes at lambda = 0.5 and 10 and is open at 0.9 and 8. (vi) A slab 12 cells thick, open along z, carries one chiral Majorana mode on each surface, of opposite chirality. (vii) The field term is essential: without it the gap vanishes. Time reversal (lambda -> -lambda) and uniform instead of staggered record signs both give (+1, 0, 0). (viii) Dangling fields decide the net chirality. With fields on all 13 dangling axes, of sizes 0.5 to 1.5 times 0.1 (three draws) or 0.2, 2 exact zero modes per cell remain, the chiral bands stay separated from the 12 bands grown from the zero modes and keep Chern number -1 on the k_x planes, and the negative zero-mode bands take +1, so the total vanishes. With fields of 0.1 on only the z axis at (2,1,2) and the x axis at (2,2,1), 10 exact zero modes remain, the other bands stay gapped at zero energy and the total C_x stays -1; on the y axis at (0,0,1) and the x axis at (0,1,0) the total is 0. With generic record contents no covariant term stays free. (ix) Another free term, with coefficients (-1.928, -1.492, 4.792, -0.488, -0.316) on the sign-fixed principal directions of the free subspace's action on the Majoranas, at lambda = 1 in a lowest flux sector: the 20 coupled Majoranas have exactly two band touchings (24 seeds), a particle-hole pair at k* and -k*, at energies -0.0071 and +0.0071, with Berry monopole charges -1 and +1 and linear splitting; C_x jumps by the charges at the nodes. At low energy this pair is one neutral two-component Weyl fermion. No chiral phase of the full lattice, no charged fermion and no physical identification is claimed."
+claim_scope: "Setting, all supplied and none adopted: the compass point of the fully soldered dynamics clause (open PR 9040), records acting as fields (open PR 9041), a record pattern with record contents, and a covariant time-reversal-odd star term. The clause and the star term are covariant under full soldering. The record pattern and its contents are supplied, non-covariant choices. (i) A 19-site relaxed three-direction network on the 4x4x4 cell (from open PR 9097's zero-field search) has no record touching unrecorded sites along all three axes. Each record points along the last axis that avoids its unrecorded neighbours, with sign (-1)^(x+y+z), so every field on an unrecorded site vanishes. (ii) Covariant odd star terms under full soldering, built as signed orbits of the 24 proper rotations, give 37 lattice terms at weights 1 and 3 (open PR 9088's count) and 325 at weights 1, 3, 5 and 7. (iii) Pauli strings on the carving, with records replaced by their values, are mapped exactly to Kitaev's Majoranas. The map reproduces the bond matrix, and matches exact spin spectra on three-site clusters and on 30 random tree clusters with multi-site strings to 1e-14. (iv) The covariant terms whose reduced strings are all free Majorana bilinears form a 41-dimensional subspace here; 5 of its directions act on the Majoranas. The projection onto it of the weight-5 orbit s^x_{+x} s^y_{-x} s^y_{+y} s^z_{-y} s^z_{+z} is a covariant term of weights 5 and 7. Its non-free strings cancel exactly, and its free image is 27 Kitaev patterns at corners plus the dangling-axis field s^x at (2,2,2), with the largest coefficient. (v) The compass bonds plus lambda times that term, in the 16 translation-invariant flux sectors of the cell: at lambda = 1, 2 and 4 the lowest (8 degenerate) have 12 exact zero modes per cell, a gap above them (0.019, 0.035, 0.017), and weak Chern numbers (-1, 0, 0). The phase is a window: the gap vanishes at lambda = 0.5 and 10 and is open at 0.9 and 8. (vi) A slab 12 cells thick, open along z, carries one chiral Majorana mode on each surface, of opposite chirality. (vii) The field term is essential: without it the gap vanishes. Time reversal (lambda -> -lambda) and uniform instead of staggered record signs both give (+1, 0, 0). (viii) Dangling fields decide the net chirality. With fields on all 13 dangling axes, of sizes 0.5 to 1.5 times 0.1 (three draws) or 0.2, 2 exact zero modes per cell remain, the chiral bands stay separated from the 12 bands grown from the zero modes and keep Chern number -1 on the k_x planes, and the negative zero-mode bands take +1, so the total vanishes. With fields of 0.1 on only the z axis at (2,1,2) and the x axis at (2,2,1), 10 exact zero modes remain, the other bands stay gapped at zero energy and the total C_x stays -1; on the y axis at (0,0,1) and the x axis at (0,1,0) the total is 0. With generic record contents no covariant term stays free. (ix) Another free term, with coefficients (-1.928, -1.492, 4.792, -0.488, -0.316) on the sign-fixed principal directions of the free subspace's action on the Majoranas, at lambda = 1 in a lowest flux sector: the middle two of the 20 coupled bands touch at exactly two momenta (24 seeds here; a 64^3-grid search in the independent check), a particle-hole pair at k* and -k*, at energies -0.0071 and +0.0071, so each node sits in a small Majorana pocket; the lower ten bands carry Berry monopole charges -1 and +1 around them (in the runner's link-variable convention), the splitting is linear, and C_x of the lower ten bands jumps by the charges at the nodes. Above the pocket scale this pair is one neutral two-component Weyl fermion; the 12 flat zero modes stay at zero energy. No chiral phase of the full lattice, no charged fermion and no physical identification is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.py
@@ -39,9 +39,9 @@ This note goes to higher weight, on a supplied record pattern.
 - **The surfaces show it.** A slab carries one chiral Majorana mode on each
   surface, with opposite chirality.
 - **Another direction gives a Weyl pair.** A second free covariant term on
-  the same carving leaves the bands gapless at exactly one particle–hole
-  pair of Weyl nodes, of charges −1 and +1. At low energy that is one
-  neutral Weyl fermion.
+  the same carving leaves the middle bands touching at exactly one
+  particle–hole pair of Weyl nodes, of charges −1 and +1, each in a small
+  pocket. Above the pocket scale that is one neutral Weyl fermion.
 
 So the clause and a covariant star term, one Admissibility neighbourhood
 wide, give chiral Majorana bands on a supplied record pattern. This is the
@@ -243,19 +243,21 @@ The five active free directions give other phases too.
 - **Two nodes.** The 12 zero modes stay decoupled; drop them, leaving 20
   coupled Majoranas. A search from 24 seeds finds the middle two bands
   touching at exactly two momenta, `k* ≈ (5.172, 6.197, 6.074)` and `−k*`
-  (mod `2π`).
-- **Weyl charges.** The lower bands carry Berry flux −1 through a small
-  sphere around `k*`, and +1 around `−k*`. The touchings sit at energies
-  −0.0071 and +0.0071, so each node sits in a small pocket.
+  (mod `2π`). Other adjacent bands touch elsewhere, away from zero energy.
+- **Weyl charges.** The lower ten bands carry Berry flux −1 through a small
+  sphere around `k*`, and +1 around `−k*`, in the runner's link-variable
+  convention. The touchings sit at energies −0.0071 and +0.0071, so each
+  node sits in a small Majorana pocket.
 - **Linear splitting.** Away from the node the splitting grows linearly,
   with slopes 0.31 to 1.39 along six directions. The slopes agree at
   `|q| = 10⁻³` and `10⁻²`.
-- **Planes.** Over 13 planes, `C_x` jumps by the node charges at the nodes'
-  `k_x` and is otherwise constant.
+- **Planes.** Over 13 planes, the Chern number `C_x` of the lower ten bands
+  jumps by the node charges at the nodes' `k_x` and is otherwise constant.
 
 The two nodes are a particle–hole pair. The modes near `−k*` are the
-conjugates of those near `k*`, so at low energy the pair is one
-two-component Weyl fermion (prior art: Hermanns, O'Brien and Trebst 2015).
+conjugates of those near `k*`, so above the pocket scale, 0.0071, the pair
+is one two-component Weyl fermion (prior art: Hermanns, O'Brien and Trebst
+2015). A Majorana mass would carry momentum `2k* ≠ 0`.
 It is neutral. No exact U(1) counts it: the number of excitations near `k*`
 is conserved only at low energy. The 12 decoupled zero modes remain beside
 it. Like the rest of this note it uses the zero-field contents. What
@@ -374,6 +376,27 @@ Hamiltonian.
   the total at −1 over a range of sizes, and an odd number of fields (one or
   three) lets the bands reach zero energy. Theorem 7 now states the
   all-axis result and the pair cases.
+
+## Third independent check (the Weyl pair)
+
+A third checker rebuilt the term and wrote its own node search, monopole
+and Chern code. It used the runner only for the model.
+- **Confirmed globally.** On a 64³ grid the gap between the middle bands
+  has only two local minima, both nodes, at `k*` and `−k*` to 2e-15. The
+  charges are ∓1 on spheres of radius 0.002 to 0.3. The splitting matches
+  the linear form, with principal slopes 1.40, 0.44 and 0.27 (a type-I
+  cone). On 32 planes `C_x` jumps within 0.005 of each node.
+- **All lowest sectors.** Each of the 8 lowest sectors, 0.020 below the
+  next, has the same pair shifted by π along some axes.
+- **Robust pair, movable energy.** For `λ` from 0.6 to 1.5 and 16 changes
+  of the coefficients by 1 to 5%, the pair stays, with charges ∓1 and no
+  partners. The node energy is not protected: ∓0.0101 at `λ = 0.8`,
+  ∓0.0042 at 1.2, and the opposite sign at 1.5.
+- **Wording corrected.** The first claim said the 20 coupled bands touch at
+  exactly two points; it is the middle two bands. The pocket scale, the
+  flat zero modes and the sign convention are now stated, and `C_x` is
+  computed for the lower ten bands, since two of the planes cut the
+  pockets.
 
 ## What this does not do
 

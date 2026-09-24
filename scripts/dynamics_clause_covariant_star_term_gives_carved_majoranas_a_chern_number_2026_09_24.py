@@ -984,7 +984,20 @@ dirsW = rngW.normal(size=(6, 3))
 dirsW /= np.linalg.norm(dirsW, axis=1)[:, None]
 velW = [[splitW(nodesW[0] + q * u) / q for u in dirsW] for q in (1e-3, 1e-2)] if nodesW else [[0.0], [1.0]]
 kxW = np.linspace(0.1, 2 * np.pi - 0.1, 13)
-cxW = [chern(uvW, enW, cvW, LW, 0, kf) for kf in kxW]
+
+
+def chern_lower(kf, N=24):
+    """Chern number on the k_x = kf plane of the lower half of the coupled bands (by index, so the small pockets
+    around the nodes do not matter)."""
+    ks = np.linspace(0, 2 * np.pi, N, endpoint=False)
+    U = {(i1, i2): np.linalg.eigh(HrW(np.array([kf, k1, k2])))[1][:, :mW] for i1, k1 in enumerate(ks) for i2, k2 in enumerate(ks)}
+    tot = sum(np.angle(np.prod([np.linalg.det(q[a].conj().T @ q[(a + 1) % 4]) for a in range(4)]))
+              for i1 in range(N) for i2 in range(N)
+              for q in [[U[(i1, i2)], U[((i1 + 1) % N, i2)], U[((i1 + 1) % N, (i2 + 1) % N)], U[(i1, (i2 + 1) % N)]]])
+    return tot / (2 * np.pi)
+
+
+cxW = [chern_lower(kf) for kf in kxW]
 cxWr = [None if c_ is None else int(round(c_)) for c_ in cxW]
 jumps_ok = partnerW and all(c_ is not None for c_ in cxW) and all(
     (cxWr[i + 1] - cxWr[i]) == sum(int(round(ch)) for q, ch in zip(nodesW, chargesW) if kxW[i] < q[0] < kxW[i + 1])
@@ -995,7 +1008,7 @@ check("another free direction gives one particle-hole pair of Majorana-Weyl node
       f"direction {CW} on the principal directions: {len(keepW)} coupled Majoranas; touchings from 24 seeds: "
       f"{[tuple(float(x_) for x_ in np.round(q, 3)) for q in nodesW]} at energies {[round(e_, 4) for e_ in energiesW]}, charges "
       f"{[int(round(c_)) for c_ in chargesW]}; splitting/|q| {min(velW[0]):.3f}-{max(velW[0]):.3f}, the same at q = 1e-3 and 1e-2; "
-      f"C_x on 13 planes {cxWr}, jumping by the charges at the nodes")
+      f"C_x of the lower half of the coupled bands on 13 planes {cxWr}, jumping by the charges at the nodes")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

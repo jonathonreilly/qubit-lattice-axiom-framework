@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-09-24T12:46:25.730467+00:00",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/PUBLICATION_sources/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "bytes": 27264,
+      "lines": 519
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/scripts/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/PUBLICATION_sources/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py",
+      "sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+      "bytes": 11444,
+      "lines": 215
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/AGENTS.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/PUBLICATION_sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "lines": 19
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/PUBLICATION_sources/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "lines": 194
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRD_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/PUBLICATION_sources/THIRD_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "05a845742f0212797e322210e6232be3210569e9d75fa4c1310c6695e3d53e2b",
+      "bytes": 12109,
+      "lines": 13
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/outputs/ordinary_cube_birth_energy_20260924/ORDINARY_ENERGY_CONTROL_RESULTS.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/PUBLICATION_sources/ORDINARY_ENERGY_CONTROL_RESULTS.json",
+      "sha256": "5d7f7f36dfef97c069bd3b25c3a03a9ff5df584ad93f7a53c84c24ed93fc2eb1",
+      "bytes": 6318,
+      "lines": 198
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/logs/runner-cache/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.txt",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/PUBLICATION_sources/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.txt",
+      "sha256": "253575fa7c36ed5cf40a5a9dc09f4059d6f96ebf2b2ab9b91517ab6b63e0421d",
+      "bytes": 11069,
+      "lines": 304
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/sources/01_SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967",
+      "bytes": 12076,
+      "lines": 258,
+      "read_coverage": "Complete PRE source, unchanged publication bytes."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/sources/02_ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317,
+      "lines": 320,
+      "read_coverage": "Complete PRE source, unchanged publication bytes."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/sources/04_BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011,
+      "lines": 201,
+      "read_coverage": "Complete PRE source, unchanged publication bytes."
+    }
+  ],
+  "observed_repository_head": "0648cc1c37137fe23a581ec2c5e40ea3a56c7493",
+  "final_live_revalidation_utc": "2026-09-24T12:53:07.710622+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "runner": "scripts/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py",
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_seconds": 131.29512786865234,
+  "timeout_seconds": 900,
+  "source_sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+  "result_sha256": "5d7f7f36dfef97c069bd3b25c3a03a9ff5df584ad93f7a53c84c24ed93fc2eb1",
+  "cache_record": "logs/runner-cache/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.txt",
+  "seal_entries_reverified": {
+    "PRE_SEAL.json": 20,
+    "POST_SEAL.json": 18,
+    "PUBLICATION_COMPARISON_SEAL.json": 14
+  },
+  "scope": "Root primary execution; independent analytic reconstruction and final source/result comparison are documented separately. The expensive finite matrix run was not independently repeated."
+}

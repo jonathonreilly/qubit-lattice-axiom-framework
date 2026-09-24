@@ -1,0 +1,29 @@
+{
+  "sealed_utc": "2026-09-24T12:38:06.632489+00:00",
+  "pre_seal_sha256": "45e99a264a1411c1038e79cd74c2df45827a755448e1718f74c0c5433d7f9e42",
+  "pre_files_verified_unchanged": 20,
+  "root_derivation_sha256": "d03bf3b34e120d7c85dd7636de9317c2c44b59a2da70aa43d4499c2b698d92ae",
+  "root_supplement_sha256": "27d130bb494f1a7dde240c88e00f669961a07539b59890274655afda38e096d7",
+  "disposition": "No consequential mathematical defect found within conditional declared scope; no fixed-positive-time variance conclusion or audit status.",
+  "files_sha256": {
+    "POST.md": "3d22aba04df68f2112613baedb53697e8e8eade79f4ed6c47a35601bbb5e92b5",
+    "POST_ALGEBRA_RESULTS.json": "606f6982b59513a079e7d9fccba52cd5989693966316144b06aabfebf271d06c",
+    "POST_CHECKPOINT.md": "ff01f11dbc1e756e478be048ec014aced719fc515d3fe27c5675a1522a7f7df5",
+    "POST_COMMAND_LOG.md": "2678c5bb0eb95ac57c40cb4a3489a79bb0196c2693fb39f14862e8aa7d425f53",
+    "POST_SOURCE_PINS.json": "c671c5da4aec1e058779fee417e5e98533a59dfdcebd6910d4f21420b13d4ddf",
+    "POST_SOURCE_VALIDATION.log": "38118fa164eee897d4c1ca6b332898040155901badcf874387f732a4858c18b3",
+    "POST_sources/AUTHOR_SEAL.json": "c534b757eb1ce28601ec6a5c93d6ba1de3aa03ea6e7bac4e9ee94b4c1413d4bb",
+    "POST_sources/MESOSCOPIC_ENERGY_LAYER_PERSONAL.md": "27d130bb494f1a7dde240c88e00f669961a07539b59890274655afda38e096d7",
+    "POST_sources/MESOSCOPIC_SUPPLEMENT_SEAL.json": "1b937e6e4a79f93a511d479e9bdbf689a916da576e3553ee2be005a7db147cff",
+    "POST_sources/SECOND_BAND_CONTROL.json": "29d7901dcc08acc615654f5a5641293d1bef704d0c6d6ba59ca2ff15ac22b903",
+    "POST_sources/SECOND_BAND_CONTROL.stderr": "5aaf048812e0af6ef06e16f25dc186e79bdf225cb733079399d5900c64593440",
+    "POST_sources/SECOND_BAND_CONTROL.stdout": "7b6fdf742f53c323e78f00334ec08ca80e38d3667b90f4484a996fe676d9bf89",
+    "POST_sources/UNSCALED_MEAN_PERSONAL_DERIVATION.md": "d03bf3b34e120d7c85dd7636de9317c2c44b59a2da70aa43d4499c2b698d92ae",
+    "POST_sources/second_band_control.py": "ce7aba131edb6ac6edf8c87dd46a3b2f43ee86fc0d1a5a25cad2c1c359cc6711",
+    "post_algebra_check.log": "a791d6b623c153d30da563ce621099cfc7233094a02493ade058377b7e5b7241",
+    "post_algebra_check.py": "f0157f736b87461dc3ef2b5cb40912c854fdecd31ec0b530c541e1dc16d9a934",
+    "post_algebra_check_initial.log": "be868f235557d4d764b4cd501effe5bb025493b438324bdd51cb04b05ef177ac",
+    "post_algebra_check_initial.py": "e65748e3f9207ebed0fe942881fba1c7f5288e8ac19318aaeb3b8b6d417386d0"
+  },
+  "post_sha256": "3d22aba04df68f2112613baedb53697e8e8eade79f4ed6c47a35601bbb5e92b5"
+}

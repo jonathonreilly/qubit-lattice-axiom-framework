@@ -1,0 +1,65 @@
+{
+  "primitive_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "tested_first_marks": 36,
+  "checks": 253,
+  "failures": 0,
+  "load_bearing_identity": "j F^3/6 - F j F^2/2 + F^2 j F/2 = 0 on Omega",
+  "scope": "Exact primitive rotor paths, all 36 cube marks; conditional finite-spin extension from unit 0-to-+/-1 transitions.",
+  "generic_ladder_counterexample": [
+    "0",
+    "0",
+    "-3",
+    "0",
+    "0"
+  ]
+}
+TOTAL: PASS=253 FAIL=0

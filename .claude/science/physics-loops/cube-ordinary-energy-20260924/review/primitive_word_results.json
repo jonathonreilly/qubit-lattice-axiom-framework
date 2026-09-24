@@ -1,0 +1,1076 @@
+{
+  "primitive_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "tested_first_marks": 36,
+  "checks": 253,
+  "failures": 0,
+  "load_bearing_identity": "j F^3/6 - F j F^2/2 + F^2 j F/2 = 0 on Omega",
+  "scope": "Exact primitive rotor paths, all 36 cube marks; conditional finite-spin extension from unit 0-to-+/-1 transitions.",
+  "generic_ladder_counterexample": [
+    "0",
+    "0",
+    "-3",
+    "0",
+    "0"
+  ],
+  "rows": [
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": [
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "R_words": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": -2,
+          "denominator": 1
+        }
+      ]
+    },
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": [
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "R_words": [
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": -1,
+          "denominator": 1
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": -1,
+          "denominator": 1
+        }
+      ]
+    },
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": [
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "R_words": [
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": -2,
+          "denominator": 1
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": -1,
+          "denominator": 1
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": -1,
+          "denominator": 1
+        }
+      ]
+    },
+    {
+      "edge": [
+        0,
+        2
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        0,
+        2
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        0,
+        2
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        0,
+        4
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        0,
+        4
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        0,
+        4
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        3,
+        1
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        3,
+        1
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        3,
+        1
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        3,
+        2
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        3,
+        2
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        3,
+        2
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        3,
+        7
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        3,
+        7
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        3,
+        7
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        5,
+        1
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        5,
+        1
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        5,
+        1
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        5,
+        4
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        5,
+        4
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        5,
+        4
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        5,
+        7
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        5,
+        7
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        5,
+        7
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        6,
+        2
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        6,
+        2
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        6,
+        2
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        6,
+        4
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        6,
+        4
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        6,
+        4
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        6,
+        7
+      ],
+      "mark": "plus",
+      "b": "2",
+      "R_norm2": "4",
+      "cubic_terms_before_cancel": [
+        8,
+        11,
+        11
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        6,
+        7
+      ],
+      "mark": "minus",
+      "b": "2",
+      "R_norm2": "2",
+      "cubic_terms_before_cancel": [
+        8,
+        14,
+        14
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    },
+    {
+      "edge": [
+        6,
+        7
+      ],
+      "mark": "coherent",
+      "b": "4",
+      "R_norm2": "6",
+      "cubic_terms_before_cancel": [
+        16,
+        25,
+        25
+      ],
+      "cubic_support_after_cancel": 0,
+      "B_words": null,
+      "R_words": null
+    }
+  ]
+}

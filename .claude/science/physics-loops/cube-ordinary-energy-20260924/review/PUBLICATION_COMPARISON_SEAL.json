@@ -1,0 +1,26 @@
+{
+  "sealed_utc": "2026-09-24T12:53:07.713198+00:00",
+  "pre_seal_sha256": "45e99a264a1411c1038e79cd74c2df45827a755448e1718f74c0c5433d7f9e42",
+  "post_seal_sha256": "37afa4221b9733f0d2dec971c261be5f785f5185df369cd652ff2362f96d92c4",
+  "prior_sealed_members_verified_unchanged": 38,
+  "disposition": "Final-source scientific comparison PASS within declared conditional scope; no formal audit verdict.",
+  "note_sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+  "runner_sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+  "comparison_sha256": "914f9e19d28b84a0993b9eba0daa6f32ba8c6e1797e49d442ef43ad5eed9519f",
+  "files_sha256": {
+    "PUBLICATION_CHECKPOINT.md": "22dd5a9fea7bafd4cdbbfdf1fe19837d59971e329e2715cfe4f288104d918631",
+    "PUBLICATION_COMMAND_LOG.md": "809a824cd6c8b049285706cf0e378c595f1569e1a09a8ce54d8cb703d1d1164a",
+    "PUBLICATION_COMPARISON.md": "914f9e19d28b84a0993b9eba0daa6f32ba8c6e1797e49d442ef43ad5eed9519f",
+    "PUBLICATION_EVIDENCE_CHECK.log": "633d523f0adb28f23d21c415fcd0678ddd55ac7fc89ce8d4f04f69f9e8054296",
+    "PUBLICATION_EVIDENCE_CHECK.py": "943bc2231c0fe05b8f644080abf3a7dcb769c7101c51cb5429548bf93a9a2616",
+    "PUBLICATION_EVIDENCE_VALIDATION.json": "633d523f0adb28f23d21c415fcd0678ddd55ac7fc89ce8d4f04f69f9e8054296",
+    "PUBLICATION_SOURCE_PINS.json": "4d652872abb2168be5d5e55254d56d5700c1de437d1caf19aa4363e80f1381ca",
+    "PUBLICATION_sources/AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "PUBLICATION_sources/ORDINARY_ENERGY_CONTROL_RESULTS.json": "5d7f7f36dfef97c069bd3b25c3a03a9ff5df584ad93f7a53c84c24ed93fc2eb1",
+    "PUBLICATION_sources/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+    "PUBLICATION_sources/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "PUBLICATION_sources/THIRD_PUBLICATION_CACHE_EXECUTION.json": "05a845742f0212797e322210e6232be3210569e9d75fa4c1310c6695e3d53e2b",
+    "PUBLICATION_sources/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+    "PUBLICATION_sources/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.txt": "253575fa7c36ed5cf40a5a9dc09f4059d6f96ebf2b2ab9b91517ab6b63e0421d"
+  }
+}

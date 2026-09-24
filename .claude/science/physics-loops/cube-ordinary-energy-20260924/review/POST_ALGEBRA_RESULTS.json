@@ -1,0 +1,45 @@
+{
+  "contour": "Exact residue of (z-W-epsilon T-epsilon^2 Ceff)^(-1) at z=2, generic three-grade coefficients.",
+  "projector_row_coefficients_through_order_four": [
+    [
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "-b",
+      "0"
+    ],
+    [
+      "a*b/2",
+      "0",
+      "-b**2"
+    ],
+    [
+      "0",
+      "-a**2*b/2 + 2*b**3 - b*c1 + b*c2 + I*b*g",
+      "0"
+    ],
+    [
+      "a**3*b/4 - 5*a*b**3/4 + a*b*c0/4 + a*b*c1/2 - 3*a*b*c2/4 - I*a*b*g/2",
+      "0",
+      "-5*a**2*b**2/4 + 3*b**4 - 2*b**2*c1 + 2*b**2*c2 + 2*I*b**2*g"
+    ]
+  ],
+  "leading_row": "Pi2 E2 Pi0 = epsilon^2 ba/2; Pi2 E2 Pi1 = -epsilon b; Pi2 E2 Pi2=1+O(epsilon^2)",
+  "exponents_for_tau_epsilon_minus_alpha": {
+    "relative_spin_error": "2 - 2*alpha",
+    "relative_coordinate_error": "2 - 5*alpha/4",
+    "mean_high": "5*alpha/2 - 2",
+    "second_moment_high": "5*alpha/2 - 6",
+    "second_high_to_first_high_second_moment": "4 - 5*alpha/2",
+    "mean_square_ratio_fast_term": "5*alpha/2 + 2",
+    "mean_square_ratio_slow_term": "6 - 5*alpha/2"
+  },
+  "crossover_alpha": "4/5",
+  "crossover_physical_exponent": "6/5",
+  "crossover_variance_exponent": "-4",
+  "fixed_physical_time_alpha_two_relative_error_exponent": "-2 (does not tend to zero)",
+  "scope": "Exact symbolic coefficient and exponent arithmetic; not a substitute for the full operator proof or actual finite-spin propagation."
+}

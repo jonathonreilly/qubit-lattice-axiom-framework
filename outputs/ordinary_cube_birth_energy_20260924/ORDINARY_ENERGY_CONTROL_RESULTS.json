@@ -1,0 +1,198 @@
+{
+  "structural": {
+    "phase_kernel_checks": [
+      {
+        "phase": "00000",
+        "kernel_dimension": 1,
+        "exact_kernel_gram_determinant": "24",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "00011",
+        "kernel_dimension": 1,
+        "exact_kernel_gram_determinant": "24",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "01101",
+        "kernel_dimension": 2,
+        "exact_kernel_gram_determinant": "144",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "01110",
+        "kernel_dimension": 1,
+        "exact_kernel_gram_determinant": "24",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "10100",
+        "kernel_dimension": 1,
+        "exact_kernel_gram_determinant": "24",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "10111",
+        "kernel_dimension": 2,
+        "exact_kernel_gram_determinant": "144",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "11001",
+        "kernel_dimension": 4,
+        "exact_kernel_gram_determinant": "1296",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "11010",
+        "kernel_dimension": 2,
+        "exact_kernel_gram_determinant": "144",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      }
+    ],
+    "spin_shift_weight_checks": [
+      {
+        "spin": 1,
+        "max_source_field": 3,
+        "interior_and_box_boundary_checked": true
+      },
+      {
+        "spin": 2,
+        "max_source_field": 4,
+        "interior_and_box_boundary_checked": true
+      },
+      {
+        "spin": 5,
+        "max_source_field": 7,
+        "interior_and_box_boundary_checked": true
+      },
+      {
+        "spin": 20,
+        "max_source_field": 22,
+        "interior_and_box_boundary_checked": true
+      }
+    ],
+    "linear_weight_mutation_witness": [
+      5,
+      -7,
+      -1,
+      30.0
+    ],
+    "scope": "Exact dark-block/kernel algebra and finite scalar boundary controls, not a numerical proof of Sobolev decay or the joint limit."
+  },
+  "second_high_band": {
+    "complete_physical_dimensions": {
+      "4": 3197,
+      "6": 5604,
+      "8": 672
+    },
+    "leading_cancellation": [
+      {
+        "integer_residual_nonzeros": 0,
+        "changed_middle_coefficient_norm": 13.2664991614216
+      },
+      {
+        "integer_residual_nonzeros": 0,
+        "changed_middle_coefficient_norm": 12.328828005937952
+      },
+      {
+        "integer_residual_nonzeros": 0,
+        "changed_middle_coefficient_norm": 18.110770276274835
+      }
+    ],
+    "projector_rows": [
+      {
+        "epsilon": 0.12,
+        "norm": [
+          0.0013216677074926837,
+          0.0011243449051967793,
+          0.0012273189431433159
+        ],
+        "norm_over_epsilon_fourth": [
+          6.373783311596663,
+          5.422188007314716,
+          5.918783483522936
+        ],
+        "quadrature_difference": 1.2751626413589563e-14,
+        "preparation": {
+          "eigen_residual": 1.5642536388640448e-14,
+          "orthogonality_error": 2.5721852271156482e-14,
+          "minimum_overlap_eigenvalue": 0.8200883219823357
+        },
+        "elapsed_seconds": 32.58799554081634
+      },
+      {
+        "epsilon": 0.08,
+        "norm": [
+          0.0002865597620053316,
+          0.00024211661513650354,
+          0.0002652781690645592
+        ],
+        "norm_over_epsilon_fourth": [
+          6.9960879395832904,
+          5.911050174231043,
+          6.4765177994277146
+        ],
+        "quadrature_difference": 6.870169294891497e-16,
+        "preparation": {
+          "eigen_residual": 1.5137334085616307e-14,
+          "orthogonality_error": 2.0649100374085282e-14,
+          "minimum_overlap_eigenvalue": 0.9210809304629294
+        },
+        "elapsed_seconds": 34.24677966698073
+      },
+      {
+        "epsilon": 0.05,
+        "norm": [
+          4.6224004707061845e-05,
+          3.887020551944163e-05,
+          4.270506703741014e-05
+        ],
+        "norm_over_epsilon_fourth": [
+          7.395840753129894,
+          6.21923288311066,
+          6.832810725985621
+        ],
+        "quadrature_difference": 2.9755335208802574e-16,
+        "preparation": {
+          "eigen_residual": 1.523526586605375e-14,
+          "orthogonality_error": 1.9877181229404755e-14,
+          "minimum_overlap_eigenvalue": 0.9696220911034524
+        },
+        "elapsed_seconds": 33.91694441600703
+      },
+      {
+        "epsilon": 0.03,
+        "norm": [
+          6.1420050375772235e-06,
+          5.15378525567747e-06,
+          5.669413452134987e-06
+        ],
+        "norm_over_epsilon_fourth": [
+          7.582722268613858,
+          6.362697846515395,
+          6.999275866833318
+        ],
+        "quadrature_difference": 1.697637893790961e-16,
+        "preparation": {
+          "eigen_residual": 8.864703408053019e-15,
+          "orthogonality_error": 2.6632456782152876e-14,
+          "minimum_overlap_eigenvalue": 0.9891481452973061
+        },
+        "elapsed_seconds": 29.39742958289571
+      }
+    ],
+    "scope": "Complete finite S=1 actual-preparation/projector consistency check. The written parity/analytic proof, not these four samples, supplies the uniform estimate."
+  },
+  "elapsed_seconds": 130.34018570790067,
+  "source_sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+  "scope": "Finite author controls. Uniform Sobolev, weighted-analytic, growing-time, mean and mesoscopic-variance conclusions require the written proof and separate independent reconstruction."
+}

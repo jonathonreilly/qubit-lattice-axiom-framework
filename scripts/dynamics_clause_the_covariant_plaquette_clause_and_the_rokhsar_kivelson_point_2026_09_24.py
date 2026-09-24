@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The covariant plaquette clause: its frustration-free point and what records must do.
+"""The covariant plaquette clause: where it annihilates uniform ice, and what plaquette records do.
 
 Doubled coordinates with soldered link fields E_l = s_l . e_l (open PR 9066).
 A plaquette clause is a covariant generator on the four link sites around a
@@ -10,10 +10,11 @@ plaquette site that commutes with the corner Gauss sums. The runner certifies
    configurations into four orbits (flippable 2, opposite 2, adjacent 4,
    odd 8). With the ring U + U^dag this gives the five covariant generators
    of open PR 9066.
-2. Frustration-free point: the covariant plaquette generators that
-   annihilate the symmetric flippable state and every non-flippable
-   configuration form one ray, g (P_flip - U - U^dag) = 2g |-><-|, which is
-   positive for g >= 0: the Rokhsar-Kivelson projector.
+2. Uniform-ice point: the covariant plaquette generators that annihilate
+   the equal-amplitude flippable state (ring element -g) and every
+   non-flippable configuration form a line through zero,
+   g (P_flip - U - U^dag) = 2g |-><-|, positive for g >= 0: the
+   Rokhsar-Kivelson projector.
 3. Its ground states: on the coarse 2x2x2 torus the ice states split into
    classes connected by plaquette flips. The summed projector is the
    Laplacian of the flip graph, so its zero-energy states are exactly the
@@ -127,7 +128,7 @@ ns = null_space(A)
 coef = ns[:, 0] / ns[0, 0] if ns.shape[1] == 1 else None
 Hrk = sum(coef[i] * gens[i] for i in range(5)) if coef is not None else None
 ev = np.linalg.eigvalsh(Hrk) if Hrk is not None else [np.nan]
-check("frustration-free point: the covariant plaquette generators annihilating the symmetric flippable state and all other configurations are one ray, g (P_flip - U - U^dag) >= 0",
+check("uniform-ice point: the covariant plaquette generators annihilating the equal-amplitude flippable state and all other configurations are the line g (P_flip - U - U^dag), positive for g >= 0",
       ns.shape[1] == 1 and np.allclose(coef, [1, 1, 0, 0, 0]) and min(ev) > -1e-12,
       f"solution dimension {ns.shape[1]}; coefficients (ring, flippable, opposite, adjacent, odd) {np.round(coef, 12).tolist()}; eigenvalues {sorted(set(float(x) for x in np.round(ev, 12)))}")
 
@@ -271,7 +272,7 @@ pot = np.array([sum(expect[plaq_kind(c, pl)] for pl in plaqs) for c in ice])
 mins = np.where(pot < pot.min() + 1e-9)[0]
 uniform = all(len({ice[i][k] * (1) for k in range(nL) if links[k][2] == a}) == 1 for i in mins for a in range(3))
 nflip_min = max(sum(1 for pl in plaqs if flippable_at(ice[i], pl)) for i in mins)
-check("unrecorded plaquettes: under Gauss compression the link field vanishes on flippable and opposite plaquettes (highest energy); the potential's minimizers on 2x2x2 are the 8 uniformly polarized ice states, with no flippable plaquette",
+check("unrecorded plaquettes at D = 0 with normal fields: under Gauss compression the link field vanishes on flippable and opposite plaquettes (highest energy); the potential's minimizers on 2x2x2 are the 8 uniformly polarized ice states, with no flippable plaquette",
       ok_orb and len(mins) == 8 and uniform and nflip_min == 0,
       f"orbit energies (B/J = 4) {dict((k, round(float(v[0]), 5)) for k, v in orbit_e.items())}; minimizers {len(mins)}, uniform along each axis: {uniform}; flippable plaquettes in them {nflip_min}")
 

@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.py
+runner_sha256: 9fa5d14eed33066226fc81a583a31f2a322f2168bb4e285496c93de89a13d1a5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 128.02
+status: ok
+----- stdout -----
+== A. The arrows at one vertex, and a sampler control ==
+[PASS] the six outward arrows at a vertex have no invariant combination but their sum, the divergence: group average of rank 1 for 48 and 24 elements :: ranks [1, 1]
+[PASS] on the exact L = 2 torus <f> = 39/25, and the worm reproduces it within 4 standard errors :: 39/25; worm 1.5641 +- 0.0049
+
+== B. The lattice Green function ==
+[PASS] G(0) - G(e) = (1 - 1/N)/6 within 1e-12 (zero mode removed), and G(r)/G(1) along an axis stays above 0.1 for r = 2 to 8 :: G(r)/G(1): 2: 0.491, 3: 0.310, 4: 0.224, 5: 0.175, 6: 0.143, 7: 0.120, 8: 0.103
+
+== C. A neutral scalar record, L = 16, 5 x 10^5 worms ==
+[PASS] f has resolved correlation at r = 1, 2 with C(2)/C(1) below a third of G(2)/G(1); for r = 3 to 8 it is zero within 4 errors and bounded below G(r)/G(1) :: C(1)/C(0) = 0.00521, C(2)/C(1) = 0.0718 (G: 0.491); bounds on C(r)/C(1): 3: 0.034, 4: 0.022, 5: 0.023, 6: 0.025, 7: 0.031, 8: 0.028
+
+time 128 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

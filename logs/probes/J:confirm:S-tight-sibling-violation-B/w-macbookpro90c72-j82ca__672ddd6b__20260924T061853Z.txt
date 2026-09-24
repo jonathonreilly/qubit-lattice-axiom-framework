@@ -1,0 +1,3 @@
+PASS witness cost 1, root kind proc, ones 78
+SUMMARY: confirmed - the logged 41-mark configuration on the 6x6x9 box has exact min cost 1 at (5,4,4), both unrooted and rooted, since the component has one seed and nothing above the root.
+HIT: confirmed - seed 44 from Z_B reaches max cost (1, 1) at (5, 4, 4); an independent level DP gives cost 1, so c* > 1 and the rooted value is positive.

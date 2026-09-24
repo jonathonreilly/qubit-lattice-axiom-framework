@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:S-tight-sibling-violation-B",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j82ca",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/tight-sibling-violation-B/check.py",
+ "seed": 30733,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "672ddd6b",
+ "started_utc": "20260924T061853Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the logged 41-mark configuration on the 6x6x9 box has exact min cost 1 at (5,4,4), both unrooted and rooted, since the component has one seed and nothing above the root."
+ },
+ "review": "The logged 41-mark configuration on 6x6x9 has one seed below (5,4,4) and an exact level-DP cost of 1, so both the unrooted and rooted minima are 1.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "edb01506fb06bb09e8a8bd76b891ac866b692eb883b6186e3f6e30d627fe4468",
+ "stdout_tail": "PASS witness cost 1, root kind proc, ones 78\nSUMMARY: confirmed - the logged 41-mark configuration on the 6x6x9 box has exact min cost 1 at (5,4,4), both unrooted and rooted, since the component has one seed and nothing above the root.\nHIT: confirmed - seed 44 from Z_B reaches max cost (1, 1) at (5, 4, 4); an independent level DP gives cost 1, so c* > 1 and the rooted value is positive.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j82ca",
+  "at_utc": "20260924T061858Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Level DP on the logged configuration returns cost 1 at (5,4,4), matching the search hit.",
+  "by": "w-macbookpro90c72-j82ca",
+  "at_utc": "20260924T061858Z"
+ }
+}

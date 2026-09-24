@@ -1,0 +1,6 @@
+PASS Q forms: on even tori the edge forms equal (h, -Delta sigma) and 2(h, -Delta h)
+PASS E cap: a spherical cap of half-angle delta has mass (1-cos delta)/2, and dots inside it are at least cos 2 delta
+PASS Q mode: a cosine mode has norm N/2 and Rayleigh quotient E(k), so one component is bounded by 2N/(beta E(k))
+PASS E threshold: I0 <= 0.256631; the infinite-volume bound is -0.0838 at beta=6 and 0.0489 at beta=7; at beta=10, L=24,48,100 give 0.2794, 0.2865, 0.2914
+SUMMARY: confirmed. Route (ii) gives <|m0|^2> >= (1/4)[2 + 2(7e-6) - (6/beta) G_L], with e the cap lower bound on the average edge correlation. The layer-sum infrared bound is 6N/(beta E(k)). With I0 <= 0.256631 the right side is positive for beta >= 7 in infinite volume and at beta = 10 on tori of side 24, 48 and 100. The rung reflection is not used. The threshold is coarser than the reflection route.
+HIT: confirmed - long-range order of the light-cone layer holds for beta >= 7 by the energy bound on the vertical correlation, without the rung reflection

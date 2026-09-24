@@ -1,0 +1,8 @@
+ok forms: D1, D2, D3 and the dissent masses match the six-axis kernel
+ok signs: p D2 - q D1 = (p-q)(q^2(p+q)+4r^3) and p D3 - r D1 = r g
+ok boundary: g(q)=2r(q+2r)(q-r) and g(q-2r)=-4r^2(q+r)
+ok root: g increases from a negative value at p=0, so it has one positive root
+ok point: at (1,2,1), d1=12/13 > 9/10 = max(d2,d3)
+ok census: 127 of 343 triples fail, exactly where p<q and g<0
+HIT: confirmed - d1 > max(d2,d3) exactly when p<q and g<0, so the clause holds on p >= min(q,p*)
+SUMMARY: confirmed the kernel closed forms, both sign identities, g(q) and g(q-2r), the point (1,2,1), and the count 127/343

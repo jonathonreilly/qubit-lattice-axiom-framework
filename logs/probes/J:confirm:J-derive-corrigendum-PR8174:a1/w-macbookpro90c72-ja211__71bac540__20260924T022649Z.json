@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8174:a1",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-ja211",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8174/referee_w-macbookpro90c72-ja211/check.py",
+ "seed": 16809,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "71bac540",
+ "started_utc": "20260924T022649Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the kernel closed forms, both sign identities, g(q) and g(q-2r), the point (1,2,1), and the count 127/343"
+ },
+ "review": "d1 exceeds max(d2,d3) exactly when p<q and g<0; 127 of 343 triples in 1..7 fail, including (1,2,1) where d1=12/13.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "1c062fac5c00112a2252ee0c015b99a741637e7d7b2a3f009ef9424fbe6ee17c",
+ "stdout_tail": "ok forms: D1, D2, D3 and the dissent masses match the six-axis kernel\nok signs: p D2 - q D1 = (p-q)(q^2(p+q)+4r^3) and p D3 - r D1 = r g\nok boundary: g(q)=2r(q+2r)(q-r) and g(q-2r)=-4r^2(q+r)\nok root: g increases from a negative value at p=0, so it has one positive root\nok point: at (1,2,1), d1=12/13 > 9/10 = max(d2,d3)\nok census: 127 of 343 triples fail, exactly where p<q and g<0\nHIT: confirmed - d1 > max(d2,d3) exactly when p<q and g<0, so the clause holds on p >= min(q,p*)\nSUMMARY: confirmed the kernel closed forms, both sign identities, g(q) and g(q-2r), the point (1,2,1), and the count 127/343\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja211",
+  "at_utc": "20260924T022655Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "d1 exceeds max(d2,d3) exactly on p<q and g<0; 127 of 343 triples fail, including (1,2,1).",
+  "by": "w-macbookpro90c72-ja211",
+  "at_utc": "20260924T022655Z"
+ }
+}

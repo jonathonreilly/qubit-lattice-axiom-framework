@@ -121,6 +121,13 @@ This block asks what sets the stiffness.
 
 - Open PRs 8746 and 8859: the flux cost and its near-Gaussian form.
 - Open PRs 8864 and 8869: the gapless chain and its massless branch.
+- The landed note
+  `SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md`
+  sampled the same uniform ice measure (the equal-time law of the RK
+  state) by seeded Monte Carlo on zero-flux tori of side 6 to 12. It found
+  a longitudinal null and finite transverse weights with polarization
+  splits of 2% to 4%, but did not fix the transverse amplitude. Here the
+  amplitude is fixed by the sum rule and tied to the flux cost.
 - New here: the sum-rule stiffness K_A; the flux cost as K_A/2 on every
   computed shape; the correlations with the same constant; the value
   K = 2/3 from the projector trace.

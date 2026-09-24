@@ -137,3 +137,25 @@ V5 is not a one-step variant of the first-order band correction or the Weyl
 count, because it expands the determinant-one actual transfer product and
 tracks the second coefficient. Final answers depend on source and runner
 checks and will be recorded before any PR is opened.
+
+## Current-head route selection at the Airy boundary — 2026-09-24
+
+Ten read-only route reviewers inspected candidate head
+2d36bafc9ba85a2cd1e5e588d7892a79aa086903 against main
+0e6ad8285096ed668816f18caaa6fbbfbd9c50e8. Seven selected finite-endpoint
+selection of the decaying Airy mode first; two selected a direct
+prepared-weighted phase/readout estimate; one selected central-detuning
+uniformity. No reviewer edited source or ran the selected campaign, and route
+agreement is not independent proof validation.
+
+| Lens | Highest-value result | Remaining mathematical obligation |
+|---|---|---|
+| Exact boundary / forbidden propagation | Terminal row gives an explicit positive seed; strict row dominance suggests backward positivity and monotonicity | Prove induction on every five-residue row and transfer the cone into the Airy projective coordinates |
+| Airy/Jordan matching | A nonnegative decreasing Airy solution on the whole forbidden half-line should exclude the growing mode | Derive how the Jordan first coordinate depends on adjacent staggered values; prove normalized limits are nonzero |
+| Central layer | Detuning scale is S^-2/3 around the positive turn with no leading order-one mode conversion | Lower priority than endpoint selection; uniform central energies may be excised for qualitative scalar control only |
+| Prepared scalar | Observable-aware phase bound weights each pair by the magnitude of c_j c_k V_jk, removing the need for full state-norm accuracy | Must bound macroscopic lags and every reciprocal alias; finite low-lag samples give no asymptotic estimate |
+| Axiom boundary | Supplied dynamics and preparation are not fixed by the native axioms | No contradiction and no axiom update; require an explicit model bridge or incompatible axiom-compatible models |
+
+The route review is rank-selection evidence only. The personally executed
+campaign must derive the recurrence inequalities and either prove the
+branch-selection estimate or record the exact failed passage.

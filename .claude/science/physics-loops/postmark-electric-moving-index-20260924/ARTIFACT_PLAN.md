@@ -2,15 +2,24 @@
 
 ## Current candidate
 
-The current review candidate is the five-note Airy transfer milestone, based
-on the pushed non-draft #9091 head
-`c734332ca227c4371f3c188f96227c494b43f533`. Its source notes, runners,
-receipts, caches, campaign records, and citation manifest are staged on
-`physics-loop/postmark-electric-phase-correlation-20260924`. The exact-tree
-combined gates and PR delivery remain pending. The bounded results and their
-limits are recorded in the dated Airy milestone section below.
+The five-note Airy transfer candidate is committed on
+physics-loop/postmark-electric-phase-correlation-20260924 at source revision
+2d36bafc9ba85a2cd1e5e588d7892a79aa086903 and is based on non-draft PR #9091
+at c734332ca227c4371f3c188f96227c494b43f533. The complete source and cache
+set is in the proposed delta. The source candidate passed its exact-tree
+combined gates; the current packet records those results and the final
+package-tree rerun before PR creation. The delivered child PR is intended to
+be ready for review, with formal audit and independent review pending.
+
+The candidate is the third milestone in the postmark-electric parent row.
+Its distinct mathematical object is transfer across the regular, Bragg,
+central-contact, and positive Airy layers, not global quantization or the
+readout. See the dated five-note section below for its limits and the
+current-head route-selection result.
 
 ## Historical packet from the earlier four-note candidate
+
+
 
 The following inventory and promotion gate describe an earlier proposal. They
 are retained to preserve campaign history and are superseded for current

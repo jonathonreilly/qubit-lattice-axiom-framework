@@ -1,47 +1,55 @@
 # Ranked opportunity queue
 
-## Current re-rank after the Airy-scale turning-point derivation — 2026-09-24 19:48 UTC
+## Current re-rank after ten route reviews — 2026-09-24 21:17 UTC
 
-The ten route reviewers selected phase-accurate global propagation and
-prepared-overlap transport before the all-alias two-index estimate. The
-personal local block now supplies the exact S^-2 cell phase, regular
-O(S)-cell transport, one simple Bragg crossing, the four fixed central double
-contacts, and the positive simple-turning-point Airy connection. The latter
-matches the oscillatory principal frame in an ordered limit but leaves the
-finite-chain boundary condition and the remote forbidden tail uncontrolled.
-The highest remaining leverage is to decide whether the finite endpoint
-selects the decaying Airy branch with an error strong enough to feed global
-quantization and prepared-overlap transport.
+The candidate source is at 2d36bafc9ba85a2cd1e5e588d7892a79aa086903
+against origin/main 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8. Seven of ten
+read-only reviewers rank finite-endpoint selection of the decaying Airy mode
+as the next leverage point. Two prefer direct prepared-weighted phase/readout
+control; one prefers central-detuning uniformity. These are route
+recommendations, not independent reviews of candidate theorem proofs.
 
-1. **Forbidden-tail selection of the Airy branch.** For compact
-   `Lambda subset (0,4)`, start from the exact finite Jacobi boundary equation
-   and control the transfer on `u>a_lambda` far enough to show whether the
-   physical endpoint suppresses the growing Airy mode. First test a discrete
-   Riccati or cone-contraction estimate on a fixed forbidden subinterval,
-   then match it to the Airy window with the existing `O(R^-3/2)` outer
-   remainder. The decisive output is a uniform bound on the forbidden-mode
-   coefficient relative to the allowed WKB amplitude; finite eigenvectors
-   alone cannot certify it.
-2. **Two-turning-point quantization and prepared-overlap transport.** Carry
-   the selected mode through both turns and all four simple/central Bragg
-   layers. Determine whether the resulting phase remainder is `o(S^-2)` or
-   whether a weaker phase norm is sufficient for the exact scalar readout.
-3. **Joint all-alias two-index estimate.** Use the actual period-three matrix
-   elements and prepared coefficients to sum both spectral indices and every
-   reciprocal alias, retaining resonant strips, diagonal terms, and terminal
-   pairs. A frozen stationary-phase set or a fixed-lag bound is not enough.
-4. **Spectral-edge energy window.** Extend estimates uniformly as lambda
-   approaches 0 or 4; the existing prepared-state endpoint-strip bound does
-   not control the eigenphase expansion at those spectral edges. Reopen early
-   if the turning-tail estimate loses its constants there.
-5. **Native axiom-to-model bridge.** Remains a separate upstream question.
-   Current facts show that supplied dynamics are imported, not contradicted;
-   no axiom revision is supported unless a derivation failure is proved at
-   the precise needed scope.
+1. **Finite-boundary selection of the decaying Airy mode — active campaign.**
+   For compact Lambda subset (0,4), start from the exact right boundary of
+   the five-site Jacobi family. Prove that backward recurrence enters and
+   stays in a positive monotonicity cone on a fixed forbidden interval, then
+   map that cone into the Airy Jordan coordinates at
+   u=a_lambda+R S^-2/3. The decisive conclusion is a uniform estimate
+   showing the growing Airy coefficient is zero in the limit (or is bounded
+   relative to the decaying coefficient strongly enough for matching).
+   First prove the terminal coefficient, five-residue signs, strict row
+   dominance, and compact-energy uniformity. The cone alone does not prove
+   Ai selection until its relation to the Airy coordinates and projective
+   normalization are controlled.
+2. **Prepared-weighted phase stability for the actual scalar.** Use the
+   observable-sensitive bound on delta q with the actual |c_j c_k V_jk|
+   and phase differences. The finite low-lag diagnostics are small but do not
+   control all lags; avoid an unweighted operator-norm phase approximation.
+   This route can bypass full eigenvector norm accuracy only if every
+   macroscopic lag and reciprocal alias is bounded.
+3. **Two-turn quantization and prepared-overlap transport.** After endpoint
+   mode selection, carry amplitudes/phases through the opposite turn and
+   every simple/central Bragg layer. Determine whether termwise o(S^-2)
+   eigenvalue control is obtainable or replace it with a proved weighted
+   stability estimate for the readout.
+4. **Central and spectral-edge uniformity.** The fixed-energy central
+   transfer cannot be made energy-uniform from its present note. A fixed
+   central energy window can be removed from the qualitative scalar at
+   O(sqrt(delta)) using the prepared arcsine spectral law; this supplies
+   no shrinking-window rate. Reopen this route if a global quantization
+   theorem requires such a rate or if the forbidden constants degenerate
+   near lambda=0,4.
+5. **Native axiom-to-model bridge.** The four axioms leave supplier dynamics,
+   preparation, and readout downstream. No incompatibility has been shown.
+   Reopen only with a constructive bridge failure or two axiom-compatible
+   models giving incompatible target behavior; current evidence does not
+   warrant an axiom revision.
 
-Re-rank after the first Airy-scale discriminator. Do not repeat the central
-or simple-root finite samples unless the turning construction changes their
-error scale or identifies a new resonance.
+The forbidden-tail reviewer derived the exact terminal relation and a
+row-dominance estimate; it remains a proposed lemma until the entire backward
+induction and cone-to-Airy passage are proved with uniform constants. The
+other reviewers identify the next alternate scalar route and rule out
+repeating finite central scans as a substitute for uniform estimates.
 
 ## Re-ranked after ten current-head reviews — 2026-09-24 17:10 UTC
 

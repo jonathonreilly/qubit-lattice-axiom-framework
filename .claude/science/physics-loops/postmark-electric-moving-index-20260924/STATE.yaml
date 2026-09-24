@@ -6,9 +6,9 @@ runtime:
   authorized: "continue until the campaign is complete or the usage limit is reached"
   started_utc: "2026-09-24T17:09:58Z"
   deadline_utc: "2026-09-25T05:09:58Z"
-  checkpoint_utc: "2026-09-24T20:30:58Z"
-  runtime_used_at_checkpoint: "about 201m; continue until campaign completion or usage limit"
-  usage_snapshot: "47% of the weekly window used at 2026-09-24T20:30:58Z; reset credit not consumed"
+  checkpoint_utc: "2026-09-24T21:17:00Z"
+  runtime_used_at_checkpoint: "about 247m; continue until campaign completion or usage limit"
+  usage_snapshot: "50% of the weekly window used at 2026-09-24T21:17:00Z; reset credit not consumed"
 cycle_count: 7
 block_count: 7
 source:
@@ -17,16 +17,16 @@ source:
   base_revision: 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8
   branch: physics-loop/postmark-electric-phase-correlation-20260924
   worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-electric-phase-correlation-20260924-c1
-  head_revision: "20251000c51d7bd23573d36f091eb1c88ebde92a plus the staged five-note transfer candidate"
+  head_revision: "science sources at 2d36bafc9ba85a2cd1e5e588d7892a79aa086903; final packet tip is in the external validation receipt"
   parent_review_branch: physics-loop/postmark-electric-weighted-phase-20260924
-active_route: "complete exact-tree validation and non-draft review delivery of the five-note local/regular/simple-Bragg/central-Bragg/Airy transfer milestone; then attack finite-endpoint selection of the decaying Airy branch in the forbidden region"
+active_route: "final exact-tree validation and non-draft review delivery of the five-note transfer/Airy milestone; then personally prove or delimit finite-endpoint selection of the decaying Airy branch"
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
 conditional_surface_status: "conditional on the supplied six-site path, integer-spin hop factors, generator, first-mark preparation, and period-three readout"
-provisional_dependency_check_state: "current origin/main is 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8; the five new transfer notes define and depend on source files in the proposed delta or on main; all five runner caches are fresh; the regenerated citation manifest acknowledges five added note nodes and eight intended edges with no removals or rewires; the combined exact-tree pipeline is pending"
-independent_check_state: "Ten route-selection reviews chose phase-accurate propagation and prepared-overlap transport toward the alias-complete two-index estimate at parent head c734332ca227c4371f3c188f96227c494b43f533 against main 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8. They did not review these final artifacts. The author personally derived and checked five modules: S^-2 local phase, O(S^-1) regular transport, O(S^-1/3) simple Bragg transfer, O(S^-1/2) transfer at four fixed central contacts, and the positive simple-turning-point Airy limit/match. The new Airy runner rejects factor-of-two slope and edge-shift sign mutations. Exact-tree and combined conformance gates remain pending. No independent final-source review has occurred."
+provisional_dependency_check_state: "origin/main is 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8; five notes/runners and caches are on the pushed science candidate at 2d36bafc9ba85a2cd1e5e588d7892a79aa086903; the citation manifest has five added nodes/eight intended edges/no removals or rewires; final packet-tree gate outputs and exact tip are recorded in the external validation receipt"
+independent_check_state: "Ten read-only route reviewers at candidate 2d36bafc9ba85a2cd1e5e588d7892a79aa086903 ranked the next attack: seven favored finite-endpoint selection of the decaying Airy mode, two favored direct prepared-weighted phase/readout control, and one favored central-detuning uniformity. They selected work only; they did not inspect the final note proofs as independent reviewers. The author personally derived and checked five modules: S^-2 local phase, O(S^-1) regular transport, O(S^-1/3) simple Bragg transfer, O(S^-1/2) four fixed central contacts, and the positive simple-turning-point Airy window/match. Their runners reject the recorded tested Airy mutations. No independent final-source review or formal audit has occurred."
 formal_audit_state: not_requested
-next_milestone: "finish cold-diff review and combined validation for the five-note transfer/Airy package; push and open one ready-for-review PR; then prove or delimit forbidden-tail selection of the decaying Airy branch"
+next_milestone: "finish exact-tree validation of the corrected five-note package; open a non-draft child PR if gates pass; personally prove or sharply delimit finite-endpoint Airy branch selection"
 strongest_unresolved_proof_obligation: "prove Re(q_S(1/4))->0 for the exact prepared-profile two-energy sum, including its small diagonal term, all mod-three crossing pairs, the central layer, macroscopic lags h=Theta(S), and their discrete aliases; alternatively certify separated actual-readout subsequences"
 hard_residual_being_attacked: "energy-uniform O(S^2)-phase-accurate propagation and prepared-overlap transport through all Bragg, central, turning, and endpoint layers, sufficient to control the interior all-alias two-index sum in Re(q_S(1/4))"
 open_imports:
@@ -40,9 +40,9 @@ trace_gate:
   source_of_blocker_text: handoff
   reachability_to_target: supports
   artifact_role: theorem
-  next_trace_action: "finish five-note review delivery; then prove forbidden-tail selection of the decaying Airy branch and carry phase/amplitude through both turns before preparing the all-alias estimate"
-review_findings: "Ten route-selection reviews chose the fixed-time q_S(1/4) target and phase-accurate propagation with prepared overlaps before alias summation; no axiom update is supported. The author checked local S^-2 phase expansion, regular O(S) transport, simple-root O(S^-1/3) Bragg transfer, O(S^-1/2) transfer at four fixed central contacts, and the positive k=pi Airy limit with its ordered allowed-side match. The Airy exact identities and edge shift pass; scratch mutations to the Airy coefficient and shift sign are rejected. These are author checks, not independent final-source review. Remote forbidden propagation, endpoint selection, two-turning quantization, prepared overlaps, and the actual alias sum remain open."
-pr_status: "PR #9078 (main base) and dependent non-draft PR #9091 are open. The current candidate is on physics-loop/postmark-electric-phase-correlation-20260924, based on #9091 head c734332ca227c4371f3c188f96227c494b43f533; it contains two checkpoint commits plus uncommitted science. No PR yet for the five-note Airy transfer milestone; combined exact-tree validation and final review delivery remain pending."
+  next_trace_action: "finish exact-tree review delivery of the five-note milestone; then prove or sharply delimit finite-endpoint selection of the decaying Airy branch before two-turn quantization and the prepared-overlap all-alias estimate"
+review_findings: "Ten current-head route reviewers selected finite-endpoint decaying-Airy branch selection first (7/10), direct prepared-weighted phase control second (2/10), and central-detuning uniformity third (1/10). Fixed central energy windows can be excised for the qualitative scalar at O(sqrt(delta)) under the supplied arcsine spectral law, but this gives no shrinking energy scale. Exact terminal recurrence and a row-dominance monotone cone are promising; the cone-to-Airy-projective-coordinate passage and uniform growing-mode bound remain obligations. The author source checks cover S^-2 local phase, regular O(S) transport, simple-root O(S^-1/3), fixed central O(S^-1/2), and the positive Airy window/match. No independent final-source review or axiom change is supported."
+pr_status: "PR #9078 (main base) and dependent non-draft PR #9091 are open. The five-note Airy science candidate at 2d36bafc9ba85a2cd1e5e588d7892a79aa086903 is on physics-loop/postmark-electric-phase-correlation-20260924, based on #9091 head c734332ca227c4371f3c188f96227c494b43f533. Final packet-tip gates are recorded in the external validation receipt; create one non-draft child PR if they pass. No merge or audit verdict is requested."
 files_touched:
   - docs/POSTMARK_ELECTRIC_MOVING_INDEX_CELL_SYMBOL_BOUNDED_THEOREM_NOTE_2026-09-24.md
   - docs/POSTMARK_ELECTRIC_TWO_BAND_CENTRAL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-24.md
@@ -91,5 +91,5 @@ files_touched:
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/central_bragg_crossing_transfer_author_check.md
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/airy_turning_point_current_main_search.md
   - .claude/science/physics-loops/postmark-electric-moving-index-20260924/
-next_exact_action: "cold-read the complete final candidate diff; verify the five-node/eight-edge citation acknowledgment; run the review-only combined pipeline, strict audit lint, and changed-evidence on the frozen exact candidate; push/open one non-draft PR if gates pass; then begin the forbidden-tail boundary-selection campaign"
+next_exact_action: "finish section-by-section five-note conformance record; run the combined pipeline, strict audit lint, and changed-evidence on the final packet tree; open a non-draft PR if gates pass; then begin the personally executed forbidden-tail boundary-selection campaign"
 stop_condition: "continue through useful ranked science blocks until the user-requested campaign is complete or the available usage limit is reached; stop earlier only for documented global quality/tooling exhaustion"

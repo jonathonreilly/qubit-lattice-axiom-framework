@@ -1,37 +1,51 @@
 # Handoff
 
-## Current checkpoint — 2026-09-24 20:30 UTC
+## Current checkpoint — 2026-09-24 21:17 UTC
 
-Ten current-head route reviewers selected phase-accurate global propagation
-and prepared-overlap transport, then the all-alias two-index estimate. The
-author executed the selected transfer block personally. The current source
-base is refreshed `origin/main` `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`;
-the candidate is staged on
-`physics-loop/postmark-electric-phase-correlation-20260924` at
-`20251000c51d7bd23573d36f091eb1c88ebde92a`, based on pushed non-draft #9091
-head `c734332ca227c4371f3c188f96227c494b43f533`. The five-note candidate has
-not yet been committed or opened as a PR. The worktree is
-`/Users/jonreilly/Projects/Physics-worktrees/postmark-electric-phase-correlation-20260924-c1`;
-37 GiB was free. Usage was 47% of the weekly window at this checkpoint; the
-reset credit remains unused.
+Ten current-head reviewers compared the next routes using candidate source
+2d36bafc9ba85a2cd1e5e588d7892a79aa086903 against refreshed origin/main
+0e6ad8285096ed668816f18caaa6fbbfbd9c50e8. Seven ranked finite-endpoint
+selection of the decaying Airy branch first; two preferred direct
+prepared-weighted phase/readout control; one preferred central-detuning
+uniformity. Their work was read-only route selection, not a review of the
+five candidate notes. They did not edit or compute campaign science.
 
-The full cold read found no mathematical counterexample in the five notes
-and runners. Package review caught an invalid indentation in the trace-gate
-YAML and staged Markdown trailing whitespace; both were corrected. All five
-runners were rerun against the resulting note bytes, their receipts were
-checked against current input hashes, and all five canonical caches are fresh.
-The Airy symbolic checks have zero slope/shift residuals, the scratch
-factor-of-two and edge-shift-sign mutations are rejected, and the largest
-scaled-cell determinant error in the finite diagnostics is `1.16e-14`.
-The citation manifest contains five new theorem-note nodes and eight intended
-edges, with no removed nodes or rewired old edges. A focused current-main
-search found no matching five-site turning/Airy transfer source.
+The five-note science sources are committed and pushed on
+physics-loop/postmark-electric-phase-correlation-20260924 at
+2d36bafc9ba85a2cd1e5e588d7892a79aa086903, based on pushed non-draft #9091
+head c734332ca227c4371f3c188f96227c494b43f533. The prior exact-tree
+pipeline, strict lint, and changed-evidence run passed at that science
+source commit; the final packet tip and its validation receipt are
+/Users/jonreilly/Documents/Codex/research_runs/postmark_campaign_20260924/final_validation_receipt.md.
+This checkpoint packet corrects stale status/conformance entries. The final
+packet-tree combined run is completed before opening its non-draft child PR. PRs #9078 and #9091 remain open and non-draft; neither has
+an independent review. No PR exists yet for the five-note Airy milestone.
 
-The exact-tree combined pipeline, strict audit lint, and changed-evidence
-check are still pending. Independent science review and formal audit remain
-pending. PRs #9078 and #9091 remain open and non-draft. No axiom change or
-actual-readout conclusion is supported. After packaging, continue with the
-finite-endpoint forbidden-tail selection estimate stated below.
+The five paired notes/runners prove conditional bounded results for the
+displayed scalar Jacobi family: local five-site phase through S^-2,
+regular O(S^-1) macroscopic transfer, one simple Bragg layer
+O(S^-1/3), four fixed central contacts O(S^-1/2), and the positive
+simple-turning-point Airy window and ordered allowed-side match. The
+finite-endpoint forbidden tail, mode selection, other turn, global
+quantization, prepared overlaps, and actual fixed-time readout remain open.
+The supplied Hamiltonian, preparation, and readout remain imports; the
+four-axiom review found no contradiction and supports no axiom update.
+
+The next science campaign is finite-boundary mode selection. Its first
+analytic discriminator is the exact terminal recurrence followed by a
+uniform positivity/monotonicity cone on a fixed forbidden interval for compact
+Lambda subset (0,4). The target is to prove that this cone forces the
+coefficient of the growing Airy solution to vanish (or obtain a quantitative
+bound) when transported into the fixed Airy window. I will derive and check
+that argument personally. A finite scan can check the terminal coefficients
+but cannot prove the uniform limit. If the cone does not control the
+Jordan/Airy projective coordinates, record that precise gap and move next to
+the prepared-weighted phase route selected by two reviewers.
+
+Disk was 31 GiB free at this checkpoint, above the 20 GiB worktree guard; no
+new worktree is needed for the personal derivation. The user-authorized
+12-hour campaign window expires at 2026-09-25T05:09:58Z; usage was last
+reported at 50% of the weekly window, and the reset credit remains unused.
 
 ## Earlier checkpoint — 2026-09-24 20:06 UTC
 

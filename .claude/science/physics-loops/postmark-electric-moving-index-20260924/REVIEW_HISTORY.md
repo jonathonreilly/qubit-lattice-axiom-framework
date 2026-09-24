@@ -167,3 +167,56 @@ The five-note candidate still needs the exact-tree combined pipeline,
 run in the isolated review copy; if the packet is updated to record its result,
 rerun the gates on that resulting exact tree. Independent science review and
 formal audit remain pending.
+
+## Current-head route review and five-note conformance — 2026-09-24 21:17 UTC
+
+Ten read-only reviewers compared candidate head
+2d36bafc9ba85a2cd1e5e588d7892a79aa086903 to main
+0e6ad8285096ed668816f18caaa6fbbfbd9c50e8 to rank the next campaign.
+Seven preferred finite-endpoint selection of the decaying Airy mode, two
+preferred direct prepared-weighted phase/readout control, and one preferred
+central-detuning uniformity. None edited science source or reviewed the
+five final note proofs. Their bounded route findings are recorded here:
+
+| Reviewer | Route-only result | Limitation |
+|---|---|---|
+| campaign_rank_core | Rank boundary-selected prepared quantization/Ai selection first; test stable backward Riccati and the Ai/Bi coefficient | A route hypothesis; projective conversion remains open |
+| campaign_rank_endpoint | Put energy-uniform central/coalescing control above endpoint work | Competing priority; no proof that this route closes the current wall |
+| campaign_rank_axioms | Rank finite-endpoint Ai selection first | Axiom boundary remains an import, not a contradiction |
+| campaign_rank_phase | Rank endpoint selection first and test a projective estimate | Fixed central windows can be excised only qualitatively |
+| campaign_rank_data | Prefer an observable-aware prepared-weighted phase estimate before all-lag cancellation | Low-lag samples are small but do not control untested lags; keep the sum of absolute lag weights distinct from the absolute value of the signed lag sum |
+| campaign_rank_central | Rank endpoint Airy selection above central detuning | Its scale reduction has no order-one mode conversion but does not solve the boundary |
+| campaign_rank_energy_windows | Fixed central energy intervals cost O(sqrt(delta)) in the qualitative scalar under the prepared arcsine law | No S-shrinking window or phase-uniform quantization rate |
+| campaign_rank_forbidden | Derived exact terminal coefficient and a proposed strict row-dominance cone on fixed forbidden intervals | Must prove the complete five-residue induction and cone-to-Airy/Jordan projective passage |
+| campaign_rank_observable | Rank the prepared scalar stability inequality | Every macroscopic lag and reciprocal alias still requires control |
+| campaign_rank_framework | Rank finite-boundary selection; no axiom revision follows | Supplied dynamics/preparation/output remain imported; no incompatibility witness |
+
+The proposed first lemma uses the exact terminal staggered recurrence and
+row-sum dominance on x >= a_lambda+R S^-2/3. It is not yet a theorem.
+In particular, positivity of adjacent values must be connected to the
+Jordan-scaled Airy coordinate, and normalized projective limits must be
+nonzero before the growing Airy coefficient can be excluded. No global
+quantization, readout limit, separated subsequence, or axiom revision is
+claimed.
+
+### Five-note candidate conformance against REVIEW_LOOP_PR_CONFORMANCE_SPEC
+
+This is the author's preflight, not an independent review or audit verdict.
+The source revision is candidate 2d36bafc9ba85a2cd1e5e588d7892a79aa086903
+over base 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8.
+
+1. **Self-containment:** each of five theorem notes pairs with a primary runner; declared source dependencies are on this candidate or the named main base. The current-hash changed-evidence check covers the final claims.
+2. **Cache/execution discipline:** all five caches bind declared source hashes and use canonical runner output; all five runners compile and execute. Caches are machine output, not hand-edited evidence.
+3. **Claim scope:** notes claim bounded conditional results only for the displayed Jacobi family, with compact-energy/gap/turning hypotheses stated. They do not claim global propagation or the actual fixed-time readout.
+4. **Negative-claim discipline:** N1-N8 is not triggered. No note asserts a no-go, route foreclosure, or bounded result that names an excluded route as impossible.
+5. **Proof obligations:** each note states premises, definitions, target, proof, boundary scope, and open dependencies. Remote forbidden propagation and finite-boundary mode selection are still explicit obligations.
+6. **Runner validity:** runner identities/results/cache hashes were refreshed against the candidate sources; Airy slope and edge-shift sign mutations are rejected. These are author checks and finite corroboration, not independent proof review.
+7. **Packet completeness:** all five source/result/cache tuples and the matching handoff/trace/claim-status records are identified; attempt logs preserve diagnostic-only limits and failed code paths.
+8. **Generated artifacts:** the citation manifest adds five theorem-note nodes and eight intended edges without removal or rewiring. No audit verdict, ledger authority, or publication status is authored here.
+9. **Note structure and status fields:** all five notes use the repository's bounded conditional-support structure and machine trace metadata; the trace gate YAML parses with next action at top level.
+10. **Proposal/ratification boundary:** this candidate requests review only. It contains no author-authored audit verdict, retained status, effective-status edit, or audit-rationale claim.
+11. **Sourced statements:** mathematical claims and source counts were read from the complete changed notes/runners; route reviewers selected the next work only. Reported graph counts are tied to the regenerated citation manifest.
+12. **Combined exact-tree gates:** the source candidate at 2d36bafc9ba85a2cd1e5e588d7892a79aa086903 passed the 18-stage citation/audit pipeline (checkpoint 436803671a5c), strict audit lint (OK: no errors; 23 warnings and 1,485 notices remain in existing corpus), changed-evidence (10 checked, zero failures/control failures), diff-check, and runner/cache checks. The current packet adds only conformance and route-selection metadata; rerun the combined gates on this final packaged tree before PR creation. Complete logs and prior-pass SHA-256 values are in /Users/jonreilly/Documents/Codex/research_runs/postmark_campaign_20260924/final_validation_receipt.md. Independent science review and formal audit remain pending.
+
+No section is marked independently passed. The candidate is ready for
+non-draft PR delivery only after the final packet-tree gates pass.

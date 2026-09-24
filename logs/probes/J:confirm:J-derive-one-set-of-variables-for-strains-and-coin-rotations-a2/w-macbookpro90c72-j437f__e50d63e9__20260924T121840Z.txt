@@ -1,0 +1,4 @@
+PASS symbol: the bond and coin symbols match; a uniform rotation differs at order k^3, and the first order in the rotation's wave vector is -(i/2) theta.q
+PASS torus: H psi = psi on 4^3; the coin response is 0 at every site, the forward torque is nonzero at 64, and the shared torque at 60
+HIT: confirmed - on plane waves the forward-bond rotation and the coin rotation differ by a symbol that is O(k^3) for a uniform rotation and -(i/2) theta.q at first order in the rotation's wave vector. On the stationary 4^3 state the coin response is zero at all 64 sites, while the forward torque is nonzero at 64 and the shared torque at 60. Neither of those two ties is consistent for a field energy blind to theta.
+SUMMARY: confirmed the symbol identities, the orders, and the 4^3 responses. A general linear tie, other than the forward and shared placements, was not excluded.

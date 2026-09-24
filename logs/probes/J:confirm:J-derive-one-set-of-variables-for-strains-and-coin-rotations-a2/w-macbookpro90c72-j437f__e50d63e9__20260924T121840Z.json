@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-one-set-of-variables-for-strains-and-coin-rotations-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j437f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/one-set-of-variables-for-strains-and-coin-rotations/referee_w-macbookpro90c72-j437f/check.py",
+ "seed": 52320,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e50d63e9",
+ "started_utc": "20260924T121840Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the symbol identities, the orders, and the 4^3 responses. A general linear tie, other than the forward and shared placements, was not excluded."
+ },
+ "review": "Plane-wave series and an exact 4^3 sum confirm the bond and coin rotations differ by the twist hop, and neither the forward nor the shared tie has a vanishing torque on the stationary state.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:one-set-of-variables-for-strains-and-coin-rotations:a2/; its files are probes/work/derive/one-set-of-variables-for-strains-and-coin-rotations/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/one-set-of-variables-for-strains-and-coin-rotations/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "02d73f060552dc5b2436c4955a49186232b9b3522b90de17c335d0407f1b5a7c",
+ "stdout_tail": "PASS symbol: the bond and coin symbols match; a uniform rotation differs at order k^3, and the first order in the rotation's wave vector is -(i/2) theta.q\nPASS torus: H psi = psi on 4^3; the coin response is 0 at every site, the forward torque is nonzero at 64, and the shared torque at 60\nHIT: confirmed - on plane waves the forward-bond rotation and the coin rotation differ by a symbol that is O(k^3) for a uniform rotation and -(i/2) theta.q at first order in the rotation's wave vector. On the stationary 4^3 state the coin response is zero at all 64 sites, while the forward torque is nonzero at 64 and the shared torque at 60. Neither of those two ties is consistent for a field energy blind to theta.\nSUMMARY: confirmed the symbol identities, the orders, and the 4^3 responses. A general linear tie, other than the forward and shared placements, was not excluded.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j437f",
+  "at_utc": "20260924T121849Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact series and a Gaussian-rational 4^3 sum confirm the twist-hop difference and the two failed ties. A general linear tie was not excluded.",
+  "by": "w-macbookpro90c72-j437f",
+  "at_utc": "20260924T121849Z"
+ }
+}

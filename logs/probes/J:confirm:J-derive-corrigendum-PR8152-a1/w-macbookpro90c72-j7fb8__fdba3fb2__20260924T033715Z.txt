@@ -1,0 +1,3 @@
+t=3/5 det=4/5 third=(Fraction(0, 1), Fraction(0, 1), Fraction(4, 5)) gram=[[Fraction(1, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(1, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1), Fraction(16, 25)]]
+HIT: confirmed - the written frame at q2=(3/5,4/5,0) has det 4/5 and sends e_z to (0,0,4/5), so it is a rotation only when q1·q2=0
+SUMMARY: confirmed the corrigendum: line 91's third column is short by sqrt(1-t^2); the corrected column is the unit cross product

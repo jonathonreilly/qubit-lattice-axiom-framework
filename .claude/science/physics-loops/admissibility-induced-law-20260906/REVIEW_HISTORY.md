@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 107 — author checks (not a review PASS)
+Built from a probes worker's result with a Grok referee, and checked against blocks 62, 64 and 65 as landed. Exact checks ported, with the curvature added from its definition; one weak mutation replaced. Names kept out of the theorem sections; census 6/6 in family.

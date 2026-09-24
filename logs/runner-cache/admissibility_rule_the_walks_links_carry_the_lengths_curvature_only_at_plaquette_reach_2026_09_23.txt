@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_walks_links_carry_the_lengths_curvature_only_at_plaquette_reach_2026_09_23.py
+runner_sha256: cb47f63a4c4e36d98421474f0bc1543350e37ca603db0e31d2ee2d0cd1232052
+input_fingerprint_sha256: 17737097981841a6e0c1334daa656d9f6e9ec8ef07eb492d95f96b017d5b567f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.41
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_WALKS_LINKS_BUILT_FROM_THE_FRAME_CARRY_THE_LENGTHS_CURVATURE_ONLY_AT_PLAQUETTE_REACH_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities; Admissibility is not a dynamics axiom and does not define a time metric (the walk, the frame and the links are supplied clauses)
+PASS: B1 T1: the generator sum_x (1/2i)[psi_x^+ M_a(x) V_a(x) psi_(x+e_a) - h.c.], with M_a a 2x2 matrix at the bond's first site and V_a in SU(2) on the bond, is hermitian and exactly covariant under psi -> U psi, M -> U M U^+, V_a -> U_x V_a U_(x+e_a)^+ (random rational unit quaternions on a ring of three, exact); at M_a = sigma_a, V = 1 it is block 54's walk
+PASS: C1 T2: with M_a(x) = U_x sigma_a U_x^+ and links V_a = U_x U_(x+e_a)^+ the generator is exactly U H U^+ to all orders (ring of three); its first order is block 65's blind walk - the bond-averaged frame rotation [((th_x + th_y)/2) x e_a].sigma and the scalar hop (i/2)(th_y - th_x)_a, which is the link's twist about its own bond; its second order is (1/4)(th_x.sigma) sigma_a (th_y.sigma) - (|th_x|^2 + |th_y|^2)/8 sigma_a, which block 65's truncated walk omits; with a frame E at the bond's first end the scalar weight is E(x).(th_y - th_x), not the naive bond difference of th.E (symbolic)
+PASS: D1 T3: with the frame split as E = R_E S (rotation times stretch), a link fixed by the frame alone has the form Uhat_x f Uhat_y^+, and M_a V_a = Uhat_x [(S_x e_a).sigma f] Uhat_y^+: the frame's rotation part is only a change of coin basis (exact); among rules at bond reach - linear in the stretch s = S - 1 at the bond's two ends, covariant under the rotations about the bond, vanishing on uniform stretch, a four-parameter family - the plaquette holonomy is blind to every relabelling s -> s + (i/2)(k xi^T + xi k^T) only for the zero rule (long-wavelength symbols; solutions [{kap1: 0, kap2: 0, kap3: 0, kap4: 0}])
+PASS: E1 T4: the plaquette-reach rule omega_a = -curl(s e_a), the curl of the a-th column of the stretch, equals -(1/2) eps_cbd F^a_bd with F^a_bd = d_b s_da - d_d s_ba (block 64's curls with the stretch in place of the strain); its plaquette holonomy is blind to every relabelling, and in the plane (0,1) its normal component is k_0^2 s_11 - 2 k_0 k_1 s_01 + k_1^2 s_00, which is the linearized curvature R_0101 of the metric g = 1 + 2s computed from its definition (long-wavelength symbols, symbolic)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the bond matrix and link identities with random rational unit quaternions; the first- and second-order expansions (symbolic)
+per_site: executed - the whole generator on a ring of three: hermiticity, covariance, and U H U^+ with links from the sites' rotations
+per_mode: executed - the long-wavelength symbols: the four-parameter bond-reach family, the plaquette-reach rule, and the linearized curvature from its definition
+per_block: executed - plaquette holonomies in the three coordinate planes
+lattice_wide: T1-T2 exact for every link and rotation field; T3-T4 in long-wavelength symbols at first order in the stretch; blocks 54, 62, 64, 65 supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: bond links for the walk - exact covariance; links from the sites' rotations give U H U^+ with block 65 as first order and an exact second-order term; links fixed by the frame carry curvature only at plaquette reach, where block 64's curls give the linearized curvature of g = 1 + 2s; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

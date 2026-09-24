@@ -121,6 +121,14 @@ test sources into the layer measure and measures how they interact.
 - The landed notes of PRs 8740 and 8746: layer units and flux sectors.
 - Open PRs 8859, 8864, 8869 and 8871: the row transfer, the gapless
   chain, the massless branch and the one stiffness.
+- The landed note
+  `SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_CHARGE_COULOMB_FLUX_STIFFNESS_JOIN_BOUNDED_THEOREM_NOTE_2026-09-03.md`
+  fitted charge-pair energies of the supplied quantum ring Hamiltonian at
+  finite detuning with U [G(0) − G(d)], as a conditional model coordinate.
+  That is an energetic stiffness of a supplied Hamiltonian, and it is
+  fitted. Here the free energy of test defects in the static measure is
+  compared with the prism's Green's function at the stiffness taken from
+  the flux cost, with nothing fitted.
 - New here: test defects as charges 2; their pair free energy by layer
   transfer; its agreement with the prism's lattice Green's function at the
   flux-cost stiffness; the four-cube symmetry of the 4 × 4 section; the

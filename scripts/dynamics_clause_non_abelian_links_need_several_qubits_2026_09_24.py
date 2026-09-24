@@ -121,10 +121,25 @@ for n in (2, 3):
         A -= np.einsum("xz,yw,ik,jl->xyijzwkl", OL, OR.conj(), np.eye(d), np.eye(d))
         rows.append(A.reshape(n * n * d * d, n * n * d * d))
     dyn.append((n, d, null_dim(np.vstack(rows))))
+# the mixed pairing (N, 1) + (1, Nbar) for SU(3): no covariant link operator
+n, d = 3, 6
+rows = []
+for _ in range(3):
+    OL, OR = random_su(n), random_su(n)
+    V = np.block([[OL, np.zeros((n, n))], [np.zeros((n, n)), OR.conj()]])
+    T1 = np.einsum("ki,lj->ijkl", V.conj(), V)
+    A = np.zeros((n, n, d, d, n, n, d, d), dtype=complex)
+    for a_ in range(n):
+        for b_ in range(n):
+            A[a_, b_, :, :, a_, b_, :, :] += T1
+    A -= np.einsum("xz,yw,ik,jl->xyijzwkl", OL, OR.conj(), np.eye(d), np.eye(d))
+    rows.append(A.reshape(n * n * d * d, n * n * d * d))
+mixed = null_dim(np.vstack(rows))
 check("the floor 2N is reached: (N, 1) + (1, N) carries commuting nontrivial left and right SU(N) actions (N = 2, 3)",
       floor_ok, "dimensions " + ", ".join(f"SU({n}): {d}" for n, d, _ in dyn))
-check("it is dynamical: a covariant link operator (V^dag U V = Omega_L U Omega_R^dag) exists on the 2N-dimensional link",
-      all(k >= 1 for _, _, k in dyn), "; ".join(f"SU({n}): covariant solution space dimension {k}" for n, _, k in dyn))
+check("it is dynamical: a covariant link operator (V^dag U V = Omega_L U Omega_R^dag) exists on the 2N-dimensional link; the SU(3) mixed pairing has none",
+      all(k >= 1 for _, _, k in dyn) and mixed == 0,
+      "; ".join(f"SU({n}): covariant solution space dimension {k}" for n, _, k in dyn) + f"; SU(3) mixed (N, 1) + (1, Nbar): {mixed}")
 
 # ------------------------------------------------------ 5. qubit counts
 dims = {"U(1)": 2, "SU(2)": 4, "SU(3)": 6}

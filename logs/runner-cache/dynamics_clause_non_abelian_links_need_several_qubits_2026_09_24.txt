@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_non_abelian_links_need_several_qubits_2026_09_24.py
-runner_sha256: 41e59994defd84c0953a6a592f5378e7cef18e8121cf969f626b54092b91a897
+runner_sha256: 44893cf01e7a547a61ab2a108fdb963314b7a5e4cd44a79cda117ac745bd9390
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 [PASS] one qubit carries a U(1) link: left and right actions commute, s^+ is covariant with charge 1 :: covariance defect 1.1e-16
 [PASS] one qubit carries no non-Abelian link: the commutant of the SU(2) action on C^2 is the scalars :: commutant dimension 1
 [PASS] the floor 2N is reached: (N, 1) + (1, N) carries commuting nontrivial left and right SU(N) actions (N = 2, 3) :: dimensions SU(2): 4, SU(3): 6
-[PASS] it is dynamical: a covariant link operator (V^dag U V = Omega_L U Omega_R^dag) exists on the 2N-dimensional link :: SU(2): covariant solution space dimension 2; SU(3): covariant solution space dimension 1
+[PASS] it is dynamical: a covariant link operator (V^dag U V = Omega_L U Omega_R^dag) exists on the 2N-dimensional link; the SU(3) mixed pairing has none :: SU(2): covariant solution space dimension 2; SU(3): covariant solution space dimension 1; SU(3) mixed (N, 1) + (1, Nbar): 0
 [PASS] qubit counts per link: U(1) 1, SU(2) 2, SU(3) 3; independent SU(3) x SU(2) x U(1) fields need dimension >= 48, i.e. >= 6 qubits :: minimal link dimensions {'U(1)': 2, 'SU(2)': 4, 'SU(3)': 6}; product 48; qubits 6
 TOTAL: PASS=5 FAIL=0
 

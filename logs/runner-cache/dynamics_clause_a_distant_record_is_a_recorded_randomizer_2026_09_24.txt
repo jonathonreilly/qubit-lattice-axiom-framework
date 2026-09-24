@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.py
+runner_sha256: 5336b3450bd6b58064b8e82773b93afce813a2ea9ad3180e853c4810ef3c0fd9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+[PASS] the clause carries purifications: the Heisenberg bond at J t = pi is the swap, and partial swaps give every reduced Bloch length :: |U - phase * SWAP| 3.4e-16; reduced Bloch lengths along the partial swap [1.0, 0.966, 0.866, 0.707, 0.5, 0.259, 0.0]
+[PASS] steering realizes every chord: a record on a purifying partner leaves the site in either endpoint with the chord weights :: 200 random chords; largest deviation 1.1e-15
+[PASS] the trace rule is consistent: the steered average equals the law at the reduced state :: largest |sum_b p_b P(rho_b) - P(rho)| over 300 chords 1.1e-16
+[PASS] nonlinear laws signal: a tanh deformation of the landed exp counterkernel and a cubic deformation change the site's marginal with the distant record and its axis :: record-or-not shift: tanh 0.201, cubic 0.062; axis-choice shift: tanh 0.166, cubic 0.057
+[PASS] chord consistency forces affinity: the cubic deformation passes only at zero deformation, and fails in proportion to it :: largest chord violation eps 0.0: 2.2e-16, eps 0.01: 2.5e-03, eps 0.1: 2.3e-02, eps 0.3: 6.2e-02
+[PASS] orientation: repeat certainty fixes lambda = 1, the Born law (1 + n.m)/2 :: lambda 1.0; P(+m | m) = 1.0, P(+m | -m) = 0.0
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

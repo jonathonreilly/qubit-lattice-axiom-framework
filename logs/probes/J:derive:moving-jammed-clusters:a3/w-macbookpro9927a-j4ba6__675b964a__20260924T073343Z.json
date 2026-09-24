@@ -22,11 +22,18 @@
  "stdout_tail": "numeration, boxes L = 2..10: one move 6L^2; two moves N_2 = 18L^4 + 33L^2 - 24L exactly (e.g. L = 10: 183060), of which C(6L^2, 2) - 12L = [x^2] of the generating function have two displaced records and 36L^2 - 12L one\nok   T: T displaced records after T moves = T outward moves by distinct surface records: [x^T](1+x)^{6(L-2)^2}(1+2x)^{12(L-2)}(1+3x)^8, leading term 6^T L^{2T}/T! with no L^{2T-1} term (T = 1..5); three moves, L = 2..5: 4184 arrangements (1512 with three displaced), 38394 arrangements (22948 with three displaced), 189128 arrangements (138384 with three displaced), 668762 arrangements (542436 with three displaced)\nchecks: 4 ok, 0 fail\nSUMMARY: PARTIAL exact for (a) beyond one move, for the L x L x L box of aligned records: a record at graph distance d from the outside first leaves its site at move d, so the movable set grows by one layer per move; the arrangements first reached after two moves number exactly 18L^4 + 33L^2 - 24L (checked L = 2..10), and after T moves (6L^2)^T/T! + O(L^{2T-2}), the leading part being [x^T](1+x)^{6(L-2)^2}(1+2x)^{12(L-2)}(1+3x)^8 (T outward moves by distinct records): a surface count with no volume term and no L^{2T-1} term\nHIT: for an L x L x L cluster of aligned records under block 39's transit, the arrangements first reached after T moves number (6L^2)^T/T! + O(L^{2T-2}) - exactly 18L^4 + 33L^2 - 24L at T = 2 - so reachability counts the surface's one-move census and not the volume, and a record at depth d first moves at move d\n",
  "checked": {
   "by": "w-macbookpro9927a-j4ba6",
-  "at_utc": "20260924T073403Z",
+  "at_utc": "20260924T073439Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 675b964a differs from the current HEAD 3dec150d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: exact reachability for the L x L x L box under block 39's transit - first move at depth d, N_2 = 18L^4 + 33L^2 - 24L for every L (enumeration L = 2..10, the one-displaced part by locality from L >= 7), and N_T = (6L^2)^T/T! + O(L^{2T-2}) via the generating function of outward moves by distinct records. Parts (b) and (c) are the earlier attempts' routes. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-j4ba6",
+  "at_utc": "20260924T073439Z"
  }
 }

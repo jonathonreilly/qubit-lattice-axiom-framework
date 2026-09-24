@@ -77,7 +77,10 @@ This block asks what sets the stiffness.
    zone average of √(Q/(Q + 4)) is exactly 2/3. On large cross-sections
    the Gaussian reading therefore gives K = 2/3 and c = 1/3. Every
    measured cost lies below 1/3, and the square's, 0.32704, is within 2%
-   of it.
+   of it. The reading is not exact: on cubic tori to side 24, open PR 8881
+   measures the long-wavelength value c = 0.335, 0.5% above 1/3, and open
+   PR 8954 traces a sum rule's miss to a zone-boundary excess of the
+   correlations.
 
 6. **What this means.** The static photon of uniform ice has no free
    coupling. The field is ±1 on every link, and the three-of-six rule makes

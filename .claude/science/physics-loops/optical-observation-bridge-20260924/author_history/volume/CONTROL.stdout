@@ -1,0 +1,37 @@
+{
+  "scope": "Conditional arithmetic; no actual charged spectrum, empirical fit or independent verification.",
+  "benchmark_EQG_lower_eV": "690000000000000000000.0",
+  "fixed_volume_rows": [
+    {
+      "L": 6,
+      "reference_energy_necessary_lower_eV": "115000000000000000000.0",
+      "strict_inequality": true
+    },
+    {
+      "L": 8,
+      "reference_energy_necessary_lower_eV": "88017189443970647497.545796326991739355109249371694219529774146194",
+      "strict_inequality": true
+    },
+    {
+      "L": 16,
+      "reference_energy_necessary_lower_eV": "44870774063709501605.105519749715115413369072082949605783535480584",
+      "strict_inequality": true
+    }
+  ],
+  "optical_rows": [
+    {
+      "supplied_reference_energy_eV": "1",
+      "necessary_L_strict_lower": "722566310325652444846.40797815428566336534668533985869404652822533"
+    },
+    {
+      "supplied_reference_energy_eV": "2",
+      "necessary_L_strict_lower": "361283155162826222423.20398907714283168266992789530587985670056631"
+    },
+    {
+      "supplied_reference_energy_eV": "3",
+      "necessary_L_strict_lower": "240855436775217481615.46932605142855445510949106951117860828532604"
+    }
+  ],
+  "source_sha256": "a3122d014e37d26850d9f4bab7352e0de81ef7d32396c690d2314afab84385ed",
+  "elapsed_seconds": 0.0006910408847033978
+}

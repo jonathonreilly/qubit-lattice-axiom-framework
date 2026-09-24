@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-24T23:25:34.438711+00:00",
+  "files_sha256": {
+    "docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+    "scripts/optical_reference_energy_limits_for_original_record_counts_2026_09_24.py": "38e5e61368fd007a024135ceafa3f487daeaa86607eb8e4c4847bb01caa7e250",
+    "outputs/optical_observation_bridge_20260924/OPTICAL_OBSERVATION_RESULTS.json": "1bda47c735eb58b0019b24068c4f9d404734675130f3bf47b6be357ecf34b373",
+    "logs/runner-cache/optical_reference_energy_limits_for_original_record_counts_2026_09_24.txt": "e148f6e8712bd79f0866b58b692128ae75e150aa9c4511f680e665b132fb16b9"
+  },
+  "checks": [
+    "control AST exact after one declared result-key rename",
+    "volume_checks full arithmetic AST exact, serialization replaced with return",
+    "band_checks full arithmetic AST exact, serialization replaced with return",
+    "experiment_checks full arithmetic AST exact, serialization replaced with return",
+    "volume scientific payload exact after declared metadata/key adaptation",
+    "band scientific payload exact after declared metadata/key adaptation",
+    "experiment scientific payload exact after declared metadata/key adaptation"
+  ],
+  "differences": [],
+  "primary_seconds": 0.23541903495788574,
+  "exit_code": 0,
+  "stderr_bytes": 0
+}

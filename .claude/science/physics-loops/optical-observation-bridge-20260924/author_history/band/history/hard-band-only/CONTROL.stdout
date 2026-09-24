@@ -1,0 +1,501 @@
+{
+  "scope": "Finite Fourier consistency checks and conditional SI arithmetic; no full dynamics or interval certificate.",
+  "lattice_rows": [
+    {
+      "L": 6,
+      "vertices": 216,
+      "plaquette_norm_squared": 4.0,
+      "v_p": 0.7954185754891872,
+      "v_p_lower": 0.5773502691896258,
+      "rows": [
+        {
+          "epsilon": 0.1,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 0,
+          "v_low": 0.0,
+          "v_low_upper": 2.1093750000000005e-05,
+          "max_eta": 0.0,
+          "eta_upper": 3.6535446722156006e-05,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 0.2,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 0,
+          "v_low": 0.0,
+          "v_low_upper": 0.00033750000000000007,
+          "max_eta": 0.0,
+          "eta_upper": 0.0005845671475544961,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 0.4,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 0,
+          "v_low": 0.0,
+          "v_low_upper": 0.005400000000000001,
+          "max_eta": 0.0,
+          "eta_upper": 0.009353074360871938,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 0.7,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 26,
+          "v_low": 0.0,
+          "v_low_upper": 0.05064609374999999,
+          "max_eta": 0.0,
+          "eta_upper": 0.08772160757989654,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 1.0,
+          "nonzero_momenta_in_band": 6,
+          "cube_count_upper": 26,
+          "v_low": 0.009259259259259259,
+          "v_low_upper": 0.2109375,
+          "max_eta": 0.01164073802722643,
+          "eta_upper": 0.36535446722156,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.5,
+          "nonzero_momenta_in_band": 18,
+          "cube_count_upper": 124,
+          "v_low": 0.03544839930320546,
+          "v_low_upper": 1.06787109375,
+          "max_eta": 0.04456571721549812,
+          "eta_upper": 1.8496069903091474,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 2.0,
+          "nonzero_momenta_in_band": 59,
+          "cube_count_upper": 342,
+          "v_low": 0.15620258341734786,
+          "v_low_upper": 3.375,
+          "max_eta": 0.19637784209563164,
+          "eta_upper": 5.84567147554496,
+          "normalized_band_packet_available": true
+        }
+      ]
+    },
+    {
+      "L": 8,
+      "vertices": 512,
+      "plaquette_norm_squared": 3.9999999999999996,
+      "v_p": 0.795728204724553,
+      "v_p_lower": 0.5773502691896258,
+      "rows": [
+        {
+          "epsilon": 0.1,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 0,
+          "v_low": 0.0,
+          "v_low_upper": 2.1093750000000005e-05,
+          "max_eta": 0.0,
+          "eta_upper": 3.6535446722156006e-05,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 0.2,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 0,
+          "v_low": 0.0,
+          "v_low_upper": 0.00033750000000000007,
+          "max_eta": 0.0,
+          "eta_upper": 0.0005845671475544961,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 0.4,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 0,
+          "v_low": 0.0,
+          "v_low_upper": 0.005400000000000001,
+          "max_eta": 0.0,
+          "eta_upper": 0.009353074360871938,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 0.7,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 26,
+          "v_low": 0.0,
+          "v_low_upper": 0.05064609374999999,
+          "max_eta": 0.0,
+          "eta_upper": 0.08772160757989654,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 1.0,
+          "nonzero_momenta_in_band": 6,
+          "cube_count_upper": 124,
+          "v_low": 0.002989714315352264,
+          "v_low_upper": 0.2109375,
+          "max_eta": 0.0037572054095872786,
+          "eta_upper": 0.36535446722156,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.5,
+          "nonzero_momenta_in_band": 32,
+          "cube_count_upper": 342,
+          "v_low": 0.02387462456723132,
+          "v_low_upper": 1.06787109375,
+          "max_eta": 0.030003491676527532,
+          "eta_upper": 1.8496069903091474,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 2.0,
+          "nonzero_momenta_in_band": 125,
+          "cube_count_upper": 728,
+          "v_low": 0.1348257006810249,
+          "v_low_upper": 3.375,
+          "max_eta": 0.16943687540608893,
+          "eta_upper": 5.84567147554496,
+          "normalized_band_packet_available": true
+        }
+      ]
+    },
+    {
+      "L": 16,
+      "vertices": 4096,
+      "plaquette_norm_squared": 4.0,
+      "v_p": 0.7958588527704434,
+      "v_p_lower": 0.5773502691896258,
+      "rows": [
+        {
+          "epsilon": 0.1,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 0,
+          "v_low": 0.0,
+          "v_low_upper": 2.1093750000000005e-05,
+          "max_eta": 0.0,
+          "eta_upper": 3.6535446722156006e-05,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 0.2,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 0,
+          "v_low": 0.0,
+          "v_low_upper": 0.00033750000000000007,
+          "max_eta": 0.0,
+          "eta_upper": 0.0005845671475544961,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 0.4,
+          "nonzero_momenta_in_band": 6,
+          "cube_count_upper": 26,
+          "v_low": 0.00019051789259387524,
+          "v_low_upper": 0.005400000000000001,
+          "max_eta": 0.0002393865343467229,
+          "eta_upper": 0.009353074360871938,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 0.7,
+          "nonzero_momenta_in_band": 26,
+          "cube_count_upper": 124,
+          "v_low": 0.0011693660940539298,
+          "v_low_upper": 0.05064609374999999,
+          "max_eta": 0.001469313421573788,
+          "eta_upper": 0.08772160757989654,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.0,
+          "nonzero_momenta_in_band": 80,
+          "cube_count_upper": 728,
+          "v_low": 0.005063833313979616,
+          "v_low_upper": 0.2109375,
+          "max_eta": 0.006362727883659318,
+          "eta_upper": 0.36535446722156,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.5,
+          "nonzero_momenta_in_band": 280,
+          "cube_count_upper": 2196,
+          "v_low": 0.02617431586506904,
+          "v_low_upper": 1.06787109375,
+          "max_eta": 0.03288813810885475,
+          "eta_upper": 1.8496069903091474,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 2.0,
+          "nonzero_momenta_in_band": 909,
+          "cube_count_upper": 4912,
+          "v_low": 0.1187594059775059,
+          "v_low_upper": 3.375,
+          "max_eta": 0.14922169372633806,
+          "eta_upper": 5.84567147554496,
+          "normalized_band_packet_available": true
+        }
+      ]
+    },
+    {
+      "L": 32,
+      "vertices": 32768,
+      "plaquette_norm_squared": 4.0,
+      "v_p": 0.7958668811554087,
+      "v_p_lower": 0.5773502691896258,
+      "rows": [
+        {
+          "epsilon": 0.1,
+          "nonzero_momenta_in_band": 0,
+          "cube_count_upper": 0,
+          "v_low": 0.0,
+          "v_low_upper": 2.1093750000000005e-05,
+          "max_eta": 0.0,
+          "eta_upper": 3.6535446722156006e-05,
+          "normalized_band_packet_available": false
+        },
+        {
+          "epsilon": 0.2,
+          "nonzero_momenta_in_band": 6,
+          "cube_count_upper": 26,
+          "v_low": 1.1964982950385816e-05,
+          "v_low_upper": 0.00033750000000000007,
+          "max_eta": 1.5033899806228295e-05,
+          "eta_upper": 0.0005845671475544961,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 0.4,
+          "nonzero_momenta_in_band": 32,
+          "cube_count_upper": 342,
+          "v_low": 9.72537463576353e-05,
+          "v_low_upper": 0.005400000000000001,
+          "max_eta": 0.00012219850914822096,
+          "eta_upper": 0.009353074360871938,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 0.7,
+          "nonzero_momenta_in_band": 202,
+          "cube_count_upper": 1330,
+          "v_low": 0.0010989237441500063,
+          "v_low_upper": 0.05064609374999999,
+          "max_eta": 0.0013807883832967535,
+          "eta_upper": 0.08772160757989654,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.0,
+          "nonzero_momenta_in_band": 610,
+          "cube_count_upper": 4912,
+          "v_low": 0.004731950902736167,
+          "v_low_upper": 0.2109375,
+          "max_eta": 0.005945656258326146,
+          "eta_upper": 0.36535446722156,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.5,
+          "nonzero_momenta_in_band": 2300,
+          "cube_count_upper": 15624,
+          "v_low": 0.027010269150483053,
+          "v_low_upper": 1.06787109375,
+          "max_eta": 0.033938174574208425,
+          "eta_upper": 1.8496069903091474,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 2.0,
+          "nonzero_momenta_in_band": 7005,
+          "cube_count_upper": 35936,
+          "v_low": 0.11313608549590459,
+          "v_low_upper": 3.375,
+          "max_eta": 0.14215453384824608,
+          "eta_upper": 5.84567147554496,
+          "normalized_band_packet_available": true
+        }
+      ]
+    },
+    {
+      "L": 64,
+      "vertices": 262144,
+      "plaquette_norm_squared": 4.0,
+      "v_p": 0.7958673809958539,
+      "v_p_lower": 0.5773502691896258,
+      "rows": [
+        {
+          "epsilon": 0.1,
+          "nonzero_momenta_in_band": 6,
+          "cube_count_upper": 26,
+          "v_low": 7.48713292349518e-07,
+          "v_low_upper": 2.1093750000000005e-05,
+          "max_eta": 9.407513239362407e-07,
+          "eta_upper": 3.6535446722156006e-05,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 0.2,
+          "nonzero_momenta_in_band": 32,
+          "cube_count_upper": 342,
+          "v_low": 6.091096429422527e-06,
+          "v_low_upper": 0.00033750000000000007,
+          "max_eta": 7.65340630219177e-06,
+          "eta_upper": 0.0005845671475544961,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 0.4,
+          "nonzero_momenta_in_band": 256,
+          "cube_count_upper": 2196,
+          "v_low": 9.446378061639927e-05,
+          "v_low_upper": 0.005400000000000001,
+          "max_eta": 0.00011869286626397293,
+          "eta_upper": 0.009353074360871938,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 0.7,
+          "nonzero_momenta_in_band": 1574,
+          "cube_count_upper": 12166,
+          "v_low": 0.0010557977216290775,
+          "v_low_upper": 0.05064609374999999,
+          "max_eta": 0.0013266000678504725,
+          "eta_upper": 0.08772160757989654,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.0,
+          "nonzero_momenta_in_band": 4792,
+          "cube_count_upper": 35936,
+          "v_low": 0.00461060795506365,
+          "v_low_upper": 0.2109375,
+          "max_eta": 0.005793186233232078,
+          "eta_upper": 0.36535446722156,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.5,
+          "nonzero_momenta_in_band": 18330,
+          "cube_count_upper": 117648,
+          "v_low": 0.026866201290367597,
+          "v_low_upper": 1.06787109375,
+          "max_eta": 0.033757133326346944,
+          "eta_upper": 1.8496069903091474,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 2.0,
+          "nonzero_momenta_in_band": 55797,
+          "cube_count_upper": 274624,
+          "v_low": 0.11249310445300155,
+          "v_low_upper": 3.375,
+          "max_eta": 0.14134654483796164,
+          "eta_upper": 5.84567147554496,
+          "normalized_band_packet_available": true
+        }
+      ]
+    },
+    {
+      "L": 96,
+      "vertices": 884736,
+      "plaquette_norm_squared": 4.0,
+      "v_p": 0.7958674077116866,
+      "v_p_lower": 0.5773502691896258,
+      "rows": [
+        {
+          "epsilon": 0.1,
+          "nonzero_momenta_in_band": 18,
+          "cube_count_upper": 124,
+          "v_low": 5.663276917485211e-07,
+          "v_low_upper": 2.1093750000000005e-05,
+          "max_eta": 7.115854805222539e-07,
+          "eta_upper": 3.6535446722156006e-05,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 0.2,
+          "nonzero_momenta_in_band": 122,
+          "cube_count_upper": 728,
+          "v_low": 7.028823716915737e-06,
+          "v_low_upper": 0.00033750000000000007,
+          "max_eta": 8.831651665602596e-06,
+          "eta_upper": 0.0005845671475544961,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 0.4,
+          "nonzero_momenta_in_band": 948,
+          "cube_count_upper": 6858,
+          "v_low": 0.00010670575504996595,
+          "v_low_upper": 0.005400000000000001,
+          "max_eta": 0.00013407478936318184,
+          "eta_upper": 0.009353074360871938,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 0.7,
+          "nonzero_momenta_in_band": 5328,
+          "cube_count_upper": 35936,
+          "v_low": 0.0010590038522062671,
+          "v_low_upper": 0.05064609374999999,
+          "max_eta": 0.0013306284965873426,
+          "eta_upper": 0.08772160757989654,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.0,
+          "nonzero_momenta_in_band": 16180,
+          "cube_count_upper": 117648,
+          "v_low": 0.004613103228748255,
+          "v_low_upper": 0.2109375,
+          "max_eta": 0.005796321326955773,
+          "eta_upper": 0.36535446722156,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 1.5,
+          "nonzero_momenta_in_band": 61490,
+          "cube_count_upper": 389016,
+          "v_low": 0.026653979730913494,
+          "v_low_upper": 1.06787109375,
+          "max_eta": 0.03349047777638012,
+          "eta_upper": 1.8496069903091474,
+          "normalized_band_packet_available": true
+        },
+        {
+          "epsilon": 2.0,
+          "nonzero_momenta_in_band": 188349,
+          "cube_count_upper": 912672,
+          "v_low": 0.11251617258497036,
+          "v_low_upper": 3.375,
+          "max_eta": 0.14137552498660785,
+          "eta_upper": 5.84567147554496,
+          "normalized_band_packet_available": true
+        }
+      ]
+    }
+  ],
+  "SI_rows": [
+    {
+      "supplied_E_lab_eV": "1",
+      "epsilon_strict_upper": "0.000000000000000000008695652173913043478260869565217391304347826086956521739130434782608695652173913043478",
+      "limiting_relative_probability_excess_strict_upper": "4.177852048516808377367956377072923008731363689816742092608551681597960221745348340771e-81",
+      "status": "Conditional reference-band bound, not a measured detector rate or finite-g error certificate."
+    },
+    {
+      "supplied_E_lab_eV": "2",
+      "epsilon_strict_upper": "0.00000000000000000001739130434782608695652173913043478260869565217391304347826086956521739130434782608696",
+      "limiting_relative_probability_excess_strict_upper": "6.684563277626893403788730203316676813970181903706787348173682690556736354792557345234e-80",
+      "status": "Conditional reference-band bound, not a measured detector rate or finite-g error certificate."
+    },
+    {
+      "supplied_E_lab_eV": "3",
+      "epsilon_strict_upper": "0.00000000000000000002608695652173913043478260869565217391304347826086956521739130434782608695652173913043",
+      "limiting_relative_probability_excess_strict_upper": "3.384060159298614785668044665429067637072404588751561095012926862094347779613732156025e-79",
+      "status": "Conditional reference-band bound, not a measured detector rate or finite-g error certificate."
+    }
+  ],
+  "source_sha256": "58d4809f8042a301cfb6c95146890bad3a286a891966dcb444ff1d831153754b",
+  "elapsed_seconds": 0.02408608398400247
+}

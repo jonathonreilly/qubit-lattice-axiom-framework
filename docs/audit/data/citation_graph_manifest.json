@@ -1,6 +1,6 @@
 {
- "edge_count": 14644,
- "node_count": 6653,
+ "edge_count": 14648,
+ "node_count": 6654,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14836,6 +14836,10 @@
   },
   "openreference_patchgraph_four_rail_signed_clifford_equivalence_cycle706_note_2026-07-26": {
    "deps_hash": "a9cb5a27b029",
+   "out_degree": 4
+  },
+  "optical_reference_energy_limits_for_original_record_counts_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "22cb2090cd64",
    "out_degree": 4
   },
   "optimized_clock_loop_dressing_fidelity_and_defect_path_gaps_bounded_theorem_note_2026-09-14": {

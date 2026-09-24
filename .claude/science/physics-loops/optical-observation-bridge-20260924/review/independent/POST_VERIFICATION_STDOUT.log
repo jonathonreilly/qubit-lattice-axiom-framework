@@ -1,0 +1,335 @@
+{
+  "completed_utc": "2026-09-24T23:32:17.026757+00:00",
+  "scope": "Released-source POST verification, static stored-output comparison, independent Decimal unit/normalization arithmetic.",
+  "source_sha256": "8082a0f4ed9130af436d34c44cadf9ed840b97e29f27848d61d10e2582c77b48",
+  "author_code_executions_or_imports": 0,
+  "PRE_seal_sha256": "0931fe9b88d147fcb9994ea87a0cb48b47cf0215055a8fe9a4780f51ef38666c",
+  "PRE_members_unchanged": 23,
+  "released_origin_and_snapshot_bindings_verified": 33,
+  "live_PRE_parent_origins_verified": 4,
+  "author_declared_parent_origins_verified": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/literature-photodetection/brouri-quant-ph-0007032v1.pdf": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md": "892598ff8c260bad16fe1fe36d6a3b5e4ba5dcb0b247f394853360f44d4b901b",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/OBSERVATION_RESPONSE_AND_CLOCK_SCOPE_ROOT.md": "91fd6c3df5063dcbbbc999bd1e3a4817b286ae6ce8448156550cb957fd2d709b"
+  },
+  "author_evidence": [
+    {
+      "name": "finite-volume-observation-personal",
+      "seal_sha256": "4bfc4024aba417878501140db6a2fda47d4251cc0f922a55002939a799848c6e",
+      "member_count": 7,
+      "receipt": {
+        "started_utc": "2026-09-24T22:40:42.123286+00:00",
+        "seconds": 0.08224912500008941,
+        "exit_code": 0,
+        "code_sha256": "a3122d014e37d26850d9f4bab7352e0de81ef7d32396c690d2314afab84385ed",
+        "stdout_sha256": "9837ccc76e51a9485d93f1b30d2d2ee037f239aa48b18bf6718b9bedd5d5a40b",
+        "stderr_bytes": 0
+      },
+      "code_and_result_source_match": true,
+      "stdout_result_byte_identical": true,
+      "executed_by_reviewer": false
+    },
+    {
+      "name": "optical-band-response-personal",
+      "seal_sha256": "0207294ccd5079745d0d6915a5060fb74b482eeedabf944a0180174631adba80",
+      "member_count": 15,
+      "receipt": {
+        "started_utc": "2026-09-24T22:51:02.682820+00:00",
+        "seconds": 0.17222879105247557,
+        "exit_code": 0,
+        "code_sha256": "e938b4a2ab11be9c82b4dbd2ec628ab3a2823d1d137b0a7950dc6621d6d2b9ab",
+        "stdout_sha256": "a90635555e9c1fead1a4535cadec7fee910397d3106dcb214fddddfcf46a0ee5",
+        "stderr_bytes": 0
+      },
+      "code_and_result_source_match": true,
+      "stdout_result_byte_identical": true,
+      "executed_by_reviewer": false
+    },
+    {
+      "name": "optical-experiment-scope-personal",
+      "seal_sha256": "7a809dd2ca14265b8659fbd5eea19e6377cb4864ab04a35645c9489854a92e01",
+      "member_count": 7,
+      "receipt": {
+        "started_utc": "2026-09-24T22:58:24.815951+00:00",
+        "seconds": 0.08014420815743506,
+        "exit_code": 0,
+        "code_sha256": "0b3fa19a85d696aea138375530e750a6f660eceea30b425bda86b22495b92e26",
+        "stdout_sha256": "b3870c7b400b6efbca83dd080fac190df2a3c1e59c708809746a18c323393965",
+        "stderr_bytes": 0
+      },
+      "code_and_result_source_match": true,
+      "stdout_result_byte_identical": true,
+      "executed_by_reviewer": false
+    }
+  ],
+  "historical_control_receipt": {
+    "started_utc": "2026-09-24T22:49:15.504060+00:00",
+    "seconds": 0.21015833294950426,
+    "exit_code": 0,
+    "code_sha256": "58d4809f8042a301cfb6c95146890bad3a286a891966dcb444ff1d831153754b",
+    "stdout_sha256": "e5e1148d487249574eedf718a2f3259f98fb0e5f953fb2337da3441fa1b32d16",
+    "stderr_bytes": 0
+  },
+  "historical_payload_exact_after_explicit_mean_additions_and_runtime_source_removal": true,
+  "historical_band_rows_compared": 42,
+  "historical_SI_rows_compared": 3,
+  "stored_PRE_root_spectral_comparisons": [
+    {
+      "L": 6,
+      "v_absolute_difference": 2.220446049250313e-16,
+      "w_absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "L": 8,
+      "v_absolute_difference": 0.0,
+      "w_absolute_difference": 0.0
+    },
+    {
+      "L": 16,
+      "v_absolute_difference": 1.1102230246251565e-16,
+      "w_absolute_difference": 0.0
+    },
+    {
+      "L": 32,
+      "v_absolute_difference": 1.1102230246251565e-16,
+      "w_absolute_difference": 0.0
+    },
+    {
+      "L": 64,
+      "v_absolute_difference": 0.0,
+      "w_absolute_difference": 0.0
+    }
+  ],
+  "empty_band_label_findings": [
+    {
+      "L": 6,
+      "epsilon": 0.1,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 6,
+      "epsilon": 0.2,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 6,
+      "epsilon": 0.4,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 6,
+      "epsilon": 0.7,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 8,
+      "epsilon": 0.1,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 8,
+      "epsilon": 0.2,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 8,
+      "epsilon": 0.4,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 8,
+      "epsilon": 0.7,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 16,
+      "epsilon": 0.1,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 16,
+      "epsilon": 0.2,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    },
+    {
+      "L": 32,
+      "epsilon": 0.1,
+      "stored_max_eta": 0.0,
+      "finding": "Projected weight zero is correct; normalized-band optimum is infeasible, not attained zero."
+    }
+  ],
+  "Decimal_precision": 110,
+  "Decimal_arithmetic_comparisons": [
+    {
+      "quantity": "reference gap lower eV L=6",
+      "independent_decimal": "114999999999999999999.99999999999999999999999999999999999999999999999999999999999999999999999999999999999999998",
+      "stored_author_value": "115000000000000000000.0",
+      "relative_difference": "1.7391304347826086956521739130434782608695652173913043478260869565217391304347826086956521739130434782608695655E-109",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "reference gap lower eV L=8",
+      "independent_decimal": "88017189443970647497.545796326991739355109249371694219529774146194335587810820629214513170628725215844137586377",
+      "stored_author_value": "88017189443970647497.545796326991739355109249371694219529774146194",
+      "relative_difference": "3.8127530876710770373679573208662467137018125572876046631845102095905954510205652736380956636210327734297520998E-66",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "reference gap lower eV L=16",
+      "independent_decimal": "44870774063709501605.105519749715115413369072082949605783535480583795563320762653451824821123840787798128176117",
+      "stored_author_value": "44870774063709501605.105519749715115413369072082949605783535480584",
+      "relative_difference": "4.5561210721945278994551446632377603840028404566343733608901536157899881328488691812762124213968115768800758989E-66",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "strict L threshold E=1",
+      "independent_decimal": "722566310325652444846.40797815428566336534668533985869404652822532979539699446270940457424114269150552685574061",
+      "stored_author_value": "722566310325652444846.40797815428566336534668533985869404652822533",
+      "relative_difference": "2.8316156263233244332691143322189162629735575941290177558303274080223473129923031466196287917968594237967289663E-67",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "strict L threshold E=2",
+      "independent_decimal": "361283155162826222423.20398907714283168266992789530587985670056631339413382018331420931809501690607996560703231",
+      "stored_author_value": "361283155162826222423.20398907714283168266992789530587985670056631",
+      "relative_difference": "9.3946639130009163406153267306485779161232713523496930610422065661164401746211174384219496527718347257607884198E-66",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "strict L threshold E=3",
+      "independent_decimal": "240855436775217481615.46932605142855445510949106951117860828532604059212846117994209589454044978987768112962547",
+      "stored_author_value": "240855436775217481615.46932605142855445510949106951117860828532604",
+      "relative_difference": "2.4584392576222236723610266029306848276707502139104273564843723135639495549548201242240350811991064189232467484E-66",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root27 dimensionless ceiling E=1",
+      "independent_decimal": "8.6956521739130434782608695652173913043478260869565217391304347826086956521739130434782608695652173913043478261E-21",
+      "stored_author_value": "8.695652173913043478260869565217391304347826086956521739130434782608695652173913043478E-21",
+      "relative_difference": "3.0000000000000000000000001500000000000000000000000000000000000000000000000000000000000000000000000000000000000E-86",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root27 hard-band excess E=1",
+      "independent_decimal": "4.1778520485168083773679563770729230087313636898167420926085516815979602217453483407712725299764608780737906362E-81",
+      "stored_author_value": "4.177852048516808377367956377072923008731363689816742092608551681597960221745348340771E-81",
+      "relative_difference": "6.5232079378595933633369849626387948239064786375313540886397291793799645135866609806968556964969876863727991731E-86",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root27 mean-energy excess E=1",
+      "independent_decimal": "1.0040874246776100252333022269599260098219160891654380452497431764938742127007536446847224271056513482177542849E-20",
+      "stored_author_value": "1.004087424677610025233302226959926009821916089165438045249743176493874212700753644685E-20",
+      "relative_difference": "2.7644295459409246102423396719972644127677457937714433070237832404735178894305858936226049468028926195982520308E-85",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root27 dimensionless ceiling E=2",
+      "independent_decimal": "1.7391304347826086956521739130434782608695652173913043478260869565217391304347826086956521739130434782608695652E-20",
+      "stored_author_value": "1.739130434782608695652173913043478260869565217391304347826086956521739130434782608696E-20",
+      "relative_difference": "2.0000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000E-85",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root27 hard-band excess E=2",
+      "independent_decimal": "6.6845632776268934037887302033166768139701819037067873481736826905567363547925573452340360479623374049180650178E-80",
+      "stored_author_value": "6.684563277626893403788730203316676813970181903706787348173682690556736354792557345234E-80",
+      "relative_difference": "5.3927176451536878681829043099689554856945673091673407210622557161110158951267194481600000401734059873951215950E-87",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root27 mean-energy excess E=2",
+      "independent_decimal": "2.0081748493552200504666044539198520196438321783308760904994863529877484254015072893694448542113026964355085698E-20",
+      "stored_author_value": "2.008174849355220050466604453919852019643832178330876090499486352987748425401507289369E-20",
+      "relative_difference": "2.2152165258195976086490685598321186421928193109334009986366618254507895341822142129856903401241970354691731257E-85",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root27 dimensionless ceiling E=3",
+      "independent_decimal": "2.6086956521739130434782608695652173913043478260869565217391304347826086956521739130434782608695652173913043478E-20",
+      "stored_author_value": "2.608695652173913043478260869565217391304347826086956521739130434782608695652173913043E-20",
+      "relative_difference": "1.8333333333333333333333332333333333333333333333333333333333333333333333333333333333333333333333333333333333334E-85",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root27 hard-band excess E=3",
+      "independent_decimal": "3.3840601592986147856680446654290676370724045887515610950129268620943477796137321560247307492809333112397704153E-79",
+      "stored_author_value": "3.384060159298614785668044665429067637072404588751561095012926862094347779613732156025E-79",
+      "relative_difference": "7.9564400865289006736712104571760643212148481249603582593627782729687957676299802546926303777885645045265310794E-86",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root27 mean-energy excess E=3",
+      "independent_decimal": "3.0122622740328300756999066808797780294657482674963141357492295294816226381022609340541672813169540446532628546E-20",
+      "stored_author_value": "3.012262274032830075699906680879778029465748267496314135749229529481622638102260934054E-20",
+      "relative_difference": "5.5533450189942353568526548391258617317114968327123744145764313943834674598832713341992084952800557626002429969E-86",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "wavelength endpoint eV 637 nm",
+      "independent_decimal": "1.9463767414945096112677039961989993285980841869763914797309036661050578886806674410272678701801230122910789738",
+      "stored_author_value": "1.9463767414945096112677039961989993285980841869763914797309036661",
+      "relative_difference": "2.5986175095700034841183702205052249138353653685507691851662247753139414462806083964307662256663667757885441135E-66",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "wavelength endpoint eV 800 nm",
+      "independent_decimal": "1.5498024804150032779719093069734532153962245338799517157357320441361523438619814499179620416309229485367716329",
+      "stored_author_value": "1.5498024804150032779719093069734532153962245338799517157357320441",
+      "relative_difference": "2.3327065428557477401665718803072590698903122977343144041727665424083468001794272119947934420711427454243568660E-65",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root28 supplied 2 eV mean excess",
+      "independent_decimal": "2.0081748493552200504666044539198520196438321783308760904994863529877484254015072893694448542113026964355085697E-20",
+      "stored_author_value": "2.008174849355220050466604453919852019643832178330876090499486353E-20",
+      "relative_difference": "6.1008505322265223712143154471068872767900678876009897029489563867858817166351452953305850449905109889807636674E-66",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root28 conditional clock upper s",
+      "independent_decimal": "5.7235822343557093026726192890799402915533769338031846190904982957428178662122146324800541616212172987995305685E-36",
+      "stored_author_value": "5.7235822343557093026726192890799402915533769338031846190904982957E-36",
+      "relative_difference": "7.4809558872415751645648208543821874240777346776405032600047757781593861439735853213652656675935760229831343620E-66",
+      "relative_tolerance": "1e-59"
+    },
+    {
+      "quantity": "root28 1 ns over conditional clock upper",
+      "independent_decimal": "174715756506042013143777021.65286899910124735276795703890306563760198872989506931163862585344577502475658593114",
+      "stored_author_value": "174715756506042013143777021.6528689991012473527679570389030656376",
+      "relative_difference": "1.1382659096350806017627659128115237273781042843222287759389410377952445460277929741076197432867155378607716860E-65",
+      "relative_tolerance": "1e-59"
+    }
+  ],
+  "primary_normalization_arithmetic": {
+    "scope": "Primary equations 1/2 and Figure 3 caption arithmetic; no fitted or digitized coincidence count.",
+    "rho_definition": "S/(S+B)",
+    "rho": "0.34",
+    "rho_squared": "0.1156",
+    "estimated_detector_factor": ".7",
+    "estimated_overall_per_detector_efficiency": "0.0014000",
+    "N1_N2_bin_T": "396.424190000",
+    "raw_normalized_coincidence_if_corrected_g2_is_exactly_zero": "0.8844",
+    "raw_count_if_corrected_g2_is_exactly_zero": "350.5975536360000",
+    "interpretation": "The source background is not the model vacuum; these cannot calibrate an original local-mark probability."
+  },
+  "limitations": [
+    "No interval certificate for transcendental arithmetic or floating cutoff membership.",
+    "No author or parent runner execution; receipts checked as retained evidence only.",
+    "No source-to-detector theorem, finite-g or volume-uniform dynamics claim, empirical fit or exclusion."
+  ]
+}

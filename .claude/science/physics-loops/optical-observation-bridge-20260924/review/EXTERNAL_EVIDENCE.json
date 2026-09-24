@@ -1,0 +1,315 @@
+{
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_HISTORY_DIFF.txt",
+      "sha256": "15d8a4142765cf0b82a997993be6a17468ab0cec8b818848e959d84b124d73bf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_PRIMARY_WEB_RETRIEVAL.json",
+      "sha256": "fe4492b002e061c7223f74e48a2cefe4a6698a2bb6607c01be59fec1826fbf07"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_attempt01_schema_key_failure/POST_VERIFICATION_EXECUTION.json",
+      "sha256": "755f759c9dce63f063fa0aab407fd785ed7f1248994167a5e621469e15d67074"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_attempt01_schema_key_failure/POST_VERIFICATION_STDERR.log",
+      "sha256": "c413108172970be7888a3d5fa28a05ec734465d1f86d78374712df7aed7b02a7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_attempt01_schema_key_failure/POST_VERIFICATION_STDOUT.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_attempt01_schema_key_failure/PRESERVATION.json",
+      "sha256": "bd34d3cb897e99f9ea51d9c929d3e0fd60efd6fade0402291b37fc09268be693"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_attempt01_schema_key_failure/post_verify_and_arithmetic.py",
+      "sha256": "23b4379d8ec59a929c89950d03a75e75f9305be74e8bb615a00f129c1789ff04"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_pdf_render/brouri-1.png",
+      "sha256": "aafa90db6c16f8d9e85d60376d4410e65fd513acd6de6361f42f5f6e9af113eb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_pdf_render/brouri-2.png",
+      "sha256": "ba5b301b933c67eaee84e09d5890d52ebcc0393ea1aab71d239ef2588d91bb41"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_pdf_render/brouri-3.png",
+      "sha256": "264e1fba0c01ee8f57f9cc71a2ee8902527d93215bfa91d989592c54153a8b20"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_pdf_render/brouri-4.png",
+      "sha256": "10c92ba8f3939a5286d38a99965a8fbee2069f54246b5f17670cd3fbc16a0d27"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_pdf_render/brouri-5.png",
+      "sha256": "b84f26c10b36ecb6d84c3ad40ff51c39ac9eaff65dd054ef8cdc534c579c1ed3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_pdf_render/brouri-6.png",
+      "sha256": "8b4b0ec7f900ec0ba371267c012af7dd84fe66c0c5dbba23f3f40d500f5b4d2f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_pdf_render/brouri-7.png",
+      "sha256": "6d836785df96df4f9f64a06e0f5c51c9570786c4a74748ed6a47b34dbac64e54"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_pdf_render/brouri-8.png",
+      "sha256": "2cb056c80baa445b13aee2680c1155046b62a9a9f0495b5f131151a398079cca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/finite-volume-observation-personal/AUTHOR_SEAL.json",
+      "sha256": "4bfc4024aba417878501140db6a2fda47d4251cc0f922a55002939a799848c6e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/finite-volume-observation-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/finite-volume-observation-personal/CONTROL.stdout",
+      "sha256": "9837ccc76e51a9485d93f1b30d2d2ee037f239aa48b18bf6718b9bedd5d5a40b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/finite-volume-observation-personal/EXECUTION.json",
+      "sha256": "68edadf09a47c2735b56e9351c5ec9d6f9b87dfacdb01f6fc3c45eb642a44a46"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/finite-volume-observation-personal/FINITE_VOLUME_OPTICAL_SCALE_DIAGNOSTIC_ROOT.md",
+      "sha256": "f28a1e685cf74050230f123a074c34ea87ddf7f088ad663b7755fd43756b3e1c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/finite-volume-observation-personal/FINITE_VOLUME_UNITS.json",
+      "sha256": "9837ccc76e51a9485d93f1b30d2d2ee037f239aa48b18bf6718b9bedd5d5a40b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/finite-volume-observation-personal/SOURCE_PINS.json",
+      "sha256": "7b239abe193531f39d617ae5b1c8fb3904df34d15b2a8f853fbb47f107f76821"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/finite-volume-observation-personal/finite_volume_units.py",
+      "sha256": "a3122d014e37d26850d9f4bab7352e0de81ef7d32396c690d2314afab84385ed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/AUTHOR_SEAL.json",
+      "sha256": "0207294ccd5079745d0d6915a5060fb74b482eeedabf944a0180174631adba80"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/CONTROL.stdout",
+      "sha256": "a90635555e9c1fead1a4535cadec7fee910397d3106dcb214fddddfcf46a0ee5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/EXECUTION.json",
+      "sha256": "a24d6644a1483366de5f9b7752881f6e3ea7c84a1a8a4dfbafc623bc2e72d11d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "sha256": "892598ff8c260bad16fe1fe36d6a3b5e4ba5dcb0b247f394853360f44d4b901b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/OPTICAL_BAND_RESULTS.json",
+      "sha256": "a90635555e9c1fead1a4535cadec7fee910397d3106dcb214fddddfcf46a0ee5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/ROOT_REVIEW.md",
+      "sha256": "b37904eb273b8dc4ecca744a41fd84962e3b3bfcd5bba95ad5da9d8ae51d76d2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/SOURCE_PINS.json",
+      "sha256": "bf31cc4d8361d25407755036c7b44bd72593e8071085740085fbaecfd1a02909"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/history/hard-band-only/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/history/hard-band-only/CONTROL.stdout",
+      "sha256": "e5e1148d487249574eedf718a2f3259f98fb0e5f953fb2337da3441fa1b32d16"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/history/hard-band-only/EXECUTION.json",
+      "sha256": "811b8d9d771a692b14a6e8aa975cb216237278dca979cfeaae67ce59ecb01ab4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/history/hard-band-only/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "sha256": "dfb982a3e25645c79c3f2d6c645e7bb65d2cafb768ca01270b125dd40b3dee98"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/history/hard-band-only/OPTICAL_BAND_RESULTS.json",
+      "sha256": "e5e1148d487249574eedf718a2f3259f98fb0e5f953fb2337da3441fa1b32d16"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/history/hard-band-only/SOURCE_PINS.json",
+      "sha256": "bf31cc4d8361d25407755036c7b44bd72593e8071085740085fbaecfd1a02909"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/history/hard-band-only/optical_band_controls.py",
+      "sha256": "58d4809f8042a301cfb6c95146890bad3a286a891966dcb444ff1d831153754b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-band-response-personal/optical_band_controls.py",
+      "sha256": "e938b4a2ab11be9c82b4dbd2ec628ab3a2823d1d137b0a7950dc6621d6d2b9ab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-experiment-scope-personal/AUTHOR_SEAL.json",
+      "sha256": "7a809dd2ca14265b8659fbd5eea19e6377cb4864ab04a35645c9489854a92e01"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-experiment-scope-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-experiment-scope-personal/CONTROL.stdout",
+      "sha256": "b3870c7b400b6efbca83dd080fac190df2a3c1e59c708809746a18c323393965"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-experiment-scope-personal/EXECUTION.json",
+      "sha256": "5d5e4a881f7d79f0290721f6c1bb3b0d4f26f5bfc12725e74826ecd407d6dbce"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-experiment-scope-personal/EXPERIMENT_UNITS.json",
+      "sha256": "b3870c7b400b6efbca83dd080fac190df2a3c1e59c708809746a18c323393965"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-experiment-scope-personal/OPTICAL_EXPERIMENT_COMPARISON_SCOPE_ROOT.md",
+      "sha256": "2f34fa36a2d7da31be5cf78beaf4c1800ed91051dfdc9a542f1bacd09251def0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-experiment-scope-personal/SOURCE_PINS.json",
+      "sha256": "96f541f85637f19c0622ea98bcc57b0b4bf39541b5d1b6b53fde087212355685"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/optical-experiment-scope-personal/experiment_units.py",
+      "sha256": "0b3fa19a85d696aea138375530e750a6f660eceea30b425bda86b22495b92e26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/external/OPTICAL_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "e355c9640d7ec7b72027333141d482cae419785f17e22b2c3f65321c5f946654"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/external/OPTICAL_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "d365ab9473afcf1e9a54fbc4d18dc6005ef0efa3d6861a419c81b036ebd5f4f7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/external/OPTICAL_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "dd431ab59a1f92686dc34024da42740b9c5b004abfd8a0195019a597f3807b95"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/external/TWENTY_SEVENTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "a5fb21a87822225eb99b5225d9554558b1d3b6c1d56ab4bfee6c48240aaa5bea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/publication/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/publication/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/publication/logs/runner-cache/optical_reference_energy_limits_for_original_record_counts_2026_09_24.txt",
+      "sha256": "e148f6e8712bd79f0866b58b692128ae75e150aa9c4511f680e665b132fb16b9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/publication/outputs/optical_observation_bridge_20260924/OPTICAL_OBSERVATION_RESULTS.json",
+      "sha256": "1bda47c735eb58b0019b24068c4f9d404734675130f3bf47b6be357ecf34b373"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/publication/scripts/optical_reference_energy_limits_for_original_record_counts_2026_09_24.py",
+      "sha256": "38e5e61368fd007a024135ceafa3f487daeaa86607eb8e4c4847bb01caa7e250"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_sources/publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/sources/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/sources/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-history-before-primary-wording/OPTICAL_OBSERVATION_CITATION_BUILD.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "Preserved complete earlier publication generation before primary-source wording precision."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-history-before-primary-wording/OPTICAL_OBSERVATION_CITATION_BUILD.stdout",
+      "sha256": "85be20cc188876b263aefbed9bf4bb1f0b71ea162353603267181c65dee0ab4a",
+      "status": "Preserved complete earlier publication generation before primary-source wording precision."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-history-before-primary-wording/OPTICAL_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "89070e2062a16a6b48c914f8e994b23b131514bb3231ad6593a85c8659d60365",
+      "status": "Preserved complete earlier publication generation before primary-source wording precision."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-history-before-primary-wording/OPTICAL_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "5e1c14930567a5bf29ada514b792d0222deecd040d2643212f6417b6479cfa09",
+      "status": "Preserved complete earlier publication generation before primary-source wording precision."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-history-before-primary-wording/OPTICAL_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "8eaf57c072d7f71e524e659530dad85eea0aaceddfa25c884d6349a6096f818c",
+      "status": "Preserved complete earlier publication generation before primary-source wording precision."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-history-before-primary-wording/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "5d8460dc1053dc244b5b35e7ad7919d7d6b6369ea0d5d42a64d22d6868756766",
+      "status": "Preserved complete earlier publication generation before primary-source wording precision."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-history-before-primary-wording/logs/runner-cache/optical_reference_energy_limits_for_original_record_counts_2026_09_24.txt",
+      "sha256": "d11176f4d02b1a926c61adb740a3d5e6bdf36877e90bec0cbe6b0c5e84516710",
+      "status": "Preserved complete earlier publication generation before primary-source wording precision."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-history-before-primary-wording/outputs/optical_observation_bridge_20260924/OPTICAL_OBSERVATION_RESULTS.json",
+      "sha256": "d0613f870bb8f994e9beb2e7ebeb4eccfe6e2f48afe35f254ef13676ece24bd0",
+      "status": "Preserved complete earlier publication generation before primary-source wording precision."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-history-before-primary-wording/scripts/optical_reference_energy_limits_for_original_record_counts_2026_09_24.py",
+      "sha256": "38e5e61368fd007a024135ceafa3f487daeaa86607eb8e4c4847bb01caa7e250",
+      "status": "Preserved complete earlier publication generation before primary-source wording precision."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/literature-photodetection/brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a",
+      "url": "https://arxiv.org/pdf/quant-ph/0007032v1",
+      "status": "Primary PDF external only; never staged."
+    }
+  ]
+}

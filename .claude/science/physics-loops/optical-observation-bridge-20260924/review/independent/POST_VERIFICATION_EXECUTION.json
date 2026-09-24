@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-24T23:32:16.960970+00:00",
+  "elapsed_seconds": 0.07064787507988513,
+  "exit_code": 0,
+  "code_sha256": "8082a0f4ed9130af436d34c44cadf9ed840b97e29f27848d61d10e2582c77b48",
+  "stdout_sha256": "3e0e7a42846945e8225ed392842da0575ea57e352559d30df62c28bbb8f473df",
+  "stderr_bytes": 0,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "post_verify_and_arithmetic.py"
+  ]
+}

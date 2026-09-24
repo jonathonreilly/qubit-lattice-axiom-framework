@@ -1,0 +1,34 @@
+{
+  "verified_utc": "2026-09-24T23:16:04.725648+00:00",
+  "source_origins_and_snapshots_verified": 4,
+  "own_control_runs": 2,
+  "parent_or_author_runners_executed": 0,
+  "both_runs_exit_zero_empty_stderr": true,
+  "complete_stdout_equals_results_for_both_runs": true,
+  "preserved_first_run_members": 5,
+  "empty_band_label_correction": {
+    "rows": 10,
+    "meaning": "No normalized one-particle state exists below the reference gap; optimum and ratio are null.",
+    "other_scientific_values_exact_between_runs": true
+  },
+  "complete_scientific_rows_read": {
+    "spectral_rows": 7,
+    "hard_band_rows": 56,
+    "finite_volume_enclosure_rows": 17,
+    "exact_mean_constraint_rows": 9,
+    "mean_tail_counterexamples_to_band_substitution": 3,
+    "SI_rows": 6,
+    "small_graph_reference_gap_rows": 4
+  },
+  "group_row_total": 102,
+  "direct_real_curl_record_read": true,
+  "direct_real_vs_Fourier_optimizer_comparisons": 3,
+  "max_squared_frequency_error": 1.2434497875801753e-14,
+  "max_real_vs_Fourier_eta_difference": 4.718447854656915e-16,
+  "volume_scope": "Static spectral bounds proved uniformly; full count errors remain fixed-graph with ordered limits.",
+  "mean_vs_hard_band_distinction": "Exact mean optimizer and explicit high-energy-tail states preserve the failure of a fourth-power mean-only inference.",
+  "numerical_scope": "Finite floating corroboration and rounded SI arithmetic, not interval certification or a full-process simulation.",
+  "author_or_other_active_packets_read": false,
+  "delegation": false,
+  "publication_audit_or_existing_packet_mutation": false
+}

@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-24T23:49:09.845494+00:00",
+  "seal_sha256": "821c8916b22e267c19129e8e8806e8c3c566875f602ee839e4d54b2bc7763911",
+  "members_verified": 20,
+  "live_origins_verified": 13,
+  "read_scope": [
+    "Complete final correspondence report, new verifier code, verification report and execution receipt",
+    "Full scientific leaf counts and11 empty-band entries; argument and source/cache binding",
+    "No author or primary rerun by checker"
+  ],
+  "judgment": "All3 POST repairs applied; scoped mathematics and primary comparison preserved; no further repair identified. No empirical identification or applied audit verdict.",
+  "candidate_hashes": {
+    "note_sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+    "runner_sha256": "38e5e61368fd007a024135ceafa3f487daeaa86607eb8e4c4847bb01caa7e250",
+    "result_sha256": "1bda47c735eb58b0019b24068c4f9d404734675130f3bf47b6be357ecf34b373",
+    "cache_sha256": "e148f6e8712bd79f0866b58b692128ae75e150aa9c4511f680e665b132fb16b9"
+  },
+  "primary_seconds": 0.23541903495788574,
+  "input_fingerprint": "66c490ac9fc6548c714cc2475ab01d8efc5fdcf348230cb43dfaab529ff08a07",
+  "packaging_limit": "Primary PDF and full parsed third-party web retrieval remain external; only hashes and source URLs are packaged.",
+  "bookkeeping_event": "One attempted read used nonexistent publication_compare.py; correct publication_verify.py subsequently read completely."
+}

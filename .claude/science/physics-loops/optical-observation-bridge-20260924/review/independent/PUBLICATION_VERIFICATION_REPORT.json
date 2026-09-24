@@ -1,0 +1,160 @@
+{
+  "completed_utc": "2026-09-24T23:45:29.045378+00:00",
+  "scope": "Final publication correspondence, not new scientific derivation or primary execution.",
+  "verifier_sha256": "a7d4cd3086282c948fd8aa040708664f1a827264d62048be52b5d992fecfc745",
+  "PRE_and_POST_member_counts_unchanged": [
+    23,
+    58
+  ],
+  "publication_source_origins_and_snapshots_verified": 13,
+  "declared_input_paths": [
+    {
+      "path": "docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+      "bytes": 21012
+    },
+    {
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "path": "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "path": "docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+      "bytes": 30670
+    }
+  ],
+  "computed_input_fingerprint_sha256": "66c490ac9fc6548c714cc2475ab01d8efc5fdcf348230cb43dfaab529ff08a07",
+  "runner_sha256": "38e5e61368fd007a024135ceafa3f487daeaa86607eb8e4c4847bb01caa7e250",
+  "note_sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+  "result_sha256": "1bda47c735eb58b0019b24068c4f9d404734675130f3bf47b6be357ecf34b373",
+  "cache_sha256": "e148f6e8712bd79f0866b58b692128ae75e150aa9c4511f680e665b132fb16b9",
+  "primary_receipt_seconds": 0.23541903495788574,
+  "cache_rounded_seconds": "0.24",
+  "complete_stdout_result_and_cache_identity": true,
+  "complete_empty_stderr_correspondence": true,
+  "three_wrapper_AST_checks": [
+    {
+      "wrapper": "volume_checks",
+      "complete_arithmetic_statement_count": 8,
+      "arithmetic_AST_exact": true,
+      "only_final_serialization_replaced_with_return": true
+    },
+    {
+      "wrapper": "band_checks",
+      "complete_arithmetic_statement_count": 7,
+      "arithmetic_AST_exact": true,
+      "only_final_serialization_replaced_with_return": true
+    },
+    {
+      "wrapper": "experiment_checks",
+      "complete_arithmetic_statement_count": 10,
+      "arithmetic_AST_exact": true,
+      "only_final_serialization_replaced_with_return": true
+    }
+  ],
+  "control_AST_exact_after_one_declared_key_rename": true,
+  "complete_scientific_payload_comparisons": [
+    {
+      "group": "volume",
+      "all_nonruntime_nonsource_payload_exact": true,
+      "declared_key_renames": 0
+    },
+    {
+      "group": "band",
+      "all_nonruntime_nonsource_payload_exact": true,
+      "declared_key_renames": 42
+    },
+    {
+      "group": "experiment",
+      "all_nonruntime_nonsource_payload_exact": true,
+      "declared_key_renames": 0
+    }
+  ],
+  "compared_payload_leaf_counts": {
+    "float": 240,
+    "int": 99,
+    "bool": 45,
+    "str": 37,
+    "null": 0
+  },
+  "eleven_empty_band_field_repairs": [
+    {
+      "L": 6,
+      "epsilon": 0.1,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 6,
+      "epsilon": 0.2,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 6,
+      "epsilon": 0.4,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 6,
+      "epsilon": 0.7,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 8,
+      "epsilon": 0.1,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 8,
+      "epsilon": 0.2,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 8,
+      "epsilon": 0.4,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 8,
+      "epsilon": 0.7,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 16,
+      "epsilon": 0.1,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 16,
+      "epsilon": 0.2,
+      "projected_weight_fraction": 0.0
+    },
+    {
+      "L": 32,
+      "epsilon": 0.1,
+      "projected_weight_fraction": 0.0
+    }
+  ],
+  "note_part_A_exact_after_even_L_scope_and_removed_prepublication_check_paragraph": true,
+  "note_part_B_exact_after_heading_and_evidence_status_changes": true,
+  "note_part_C_exact_after_headings_crossreference_and_two_wording_repairs": true,
+  "front_and_part_D_read_completely_for_scope_and_attribution": true,
+  "primary_or_author_runner_executions_or_imports": 0,
+  "canonical_cache_rewrites_or_restamps": 0,
+  "new_physics_claim_or_audit_verdict": false,
+  "limitations": [
+    "Inherited premises and archival timing identification remain conditional.",
+    "Static estimates do not supply full charged spectra, simultaneous large-volume dynamics or finite laboratory-time accuracy.",
+    "No empirical source/detector/count identification or exclusion; primary paper not newly refit or rerun."
+  ]
+}

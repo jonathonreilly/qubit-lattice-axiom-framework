@@ -1,0 +1,316 @@
+{
+  "sealed_utc": "2026-09-24T23:37:57.897666+00:00",
+  "phase": "released-source POST after blind PRE",
+  "scope": "Root26/27 comparison to frozen independent PRE; root28 primary Brouri scope/units comparison after release; no full charged spectrum, source-to-detector, empirical or finite-g claim.",
+  "PRE_seal_sha256": "0931fe9b88d147fcb9994ea87a0cb48b47cf0215055a8fe9a4780f51ef38666c",
+  "PRE_members_unchanged": 23,
+  "released_origin_snapshot_count": 33,
+  "unique_live_origins_verified": 38,
+  "author_code_executions_or_imports": 0,
+  "independent_new_verifier_runs": 2,
+  "failed_verifier_preserved": "post_attempt01_schema_key_failure",
+  "primary_pdf_visual_pages_read": 8,
+  "delegation": false,
+  "model_or_effort_override": false,
+  "forbidden_active_packets_or_checkpoint_read": false,
+  "publication_author_audit_or_PRE_mutations": false,
+  "findings": [
+    "No material root26/27 proof or unit-arithmetic discrepancy.",
+    "Eleven empty-band max_eta values require infeasible/null labeling or projected-weight naming.",
+    "Root28 rho must be written S/(S+B)=0.34; quoted efficiency is an estimate.",
+    "No matched empirical count mapping or finite-g/large-volume/long-time error bound supplied."
+  ],
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "10cfd38cd042db2bde69a305cb9b412efd97c2ff9f4ffe14606fb0f7abfafcd5",
+      "bytes": 15736
+    },
+    {
+      "path": "POST_HISTORY_DIFF.txt",
+      "sha256": "15d8a4142765cf0b82a997993be6a17468ab0cec8b818848e959d84b124d73bf",
+      "bytes": 4853
+    },
+    {
+      "path": "POST_PDF_RENDER_EXECUTION.json",
+      "sha256": "3e23e8e169cbbc460b6062312481e0d95e11041f392f9ac773dcf8edcda2a0fa",
+      "bytes": 1539
+    },
+    {
+      "path": "POST_PRIMARY_WEB_RETRIEVAL.json",
+      "sha256": "fe4492b002e061c7223f74e48a2cefe4a6698a2bb6607c01be59fec1826fbf07",
+      "bytes": 18793
+    },
+    {
+      "path": "POST_READ_AND_FAILURE_LOG.md",
+      "sha256": "82a953f0e7535fc09b98e36522e9862356c724cb94980ce8d2c4ae58fd83485d",
+      "bytes": 3413
+    },
+    {
+      "path": "POST_SOURCE_PINS_FINAL.json",
+      "sha256": "b844fb306164649bd631ace3b1116a8f15503f45f19e851b38d30b75cee9553a",
+      "bytes": 20411
+    },
+    {
+      "path": "POST_SOURCE_PINS_INITIAL.json",
+      "sha256": "1500c303bd7f25b6f255c562be2dbea67c01de82924e5ec39a10f49ea2f028f6",
+      "bytes": 11685
+    },
+    {
+      "path": "POST_VERIFICATION_EXECUTION.json",
+      "sha256": "6493252cdb1420e2394bb271f6516ee91aa8fb9a033902edea23ccccdb3dc2fc",
+      "bytes": 414
+    },
+    {
+      "path": "POST_VERIFICATION_REPORT.json",
+      "sha256": "3e0e7a42846945e8225ed392842da0575ea57e352559d30df62c28bbb8f473df",
+      "bytes": 18622
+    },
+    {
+      "path": "POST_VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "POST_VERIFICATION_STDOUT.log",
+      "sha256": "3e0e7a42846945e8225ed392842da0575ea57e352559d30df62c28bbb8f473df",
+      "bytes": 18622
+    },
+    {
+      "path": "post_attempt01_schema_key_failure/POST_VERIFICATION_EXECUTION.json",
+      "sha256": "755f759c9dce63f063fa0aab407fd785ed7f1248994167a5e621469e15d67074",
+      "bytes": 416
+    },
+    {
+      "path": "post_attempt01_schema_key_failure/POST_VERIFICATION_STDERR.log",
+      "sha256": "c413108172970be7888a3d5fa28a05ec734465d1f86d78374712df7aed7b02a7",
+      "bytes": 371
+    },
+    {
+      "path": "post_attempt01_schema_key_failure/POST_VERIFICATION_STDOUT.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_attempt01_schema_key_failure/PRESERVATION.json",
+      "sha256": "bd34d3cb897e99f9ea51d9c929d3e0fd60efd6fade0402291b37fc09268be693",
+      "bytes": 666
+    },
+    {
+      "path": "post_attempt01_schema_key_failure/post_verify_and_arithmetic.py",
+      "sha256": "23b4379d8ec59a929c89950d03a75e75f9305be74e8bb615a00f129c1789ff04",
+      "bytes": 11066
+    },
+    {
+      "path": "post_pdf_render/brouri-1.png",
+      "sha256": "aafa90db6c16f8d9e85d60376d4410e65fd513acd6de6361f42f5f6e9af113eb",
+      "bytes": 333272
+    },
+    {
+      "path": "post_pdf_render/brouri-2.png",
+      "sha256": "ba5b301b933c67eaee84e09d5890d52ebcc0393ea1aab71d239ef2588d91bb41",
+      "bytes": 350933
+    },
+    {
+      "path": "post_pdf_render/brouri-3.png",
+      "sha256": "264e1fba0c01ee8f57f9cc71a2ee8902527d93215bfa91d989592c54153a8b20",
+      "bytes": 280302
+    },
+    {
+      "path": "post_pdf_render/brouri-4.png",
+      "sha256": "10c92ba8f3939a5286d38a99965a8fbee2069f54246b5f17670cd3fbc16a0d27",
+      "bytes": 58178
+    },
+    {
+      "path": "post_pdf_render/brouri-5.png",
+      "sha256": "b84f26c10b36ecb6d84c3ad40ff51c39ac9eaff65dd054ef8cdc534c579c1ed3",
+      "bytes": 52312
+    },
+    {
+      "path": "post_pdf_render/brouri-6.png",
+      "sha256": "8b4b0ec7f900ec0ba371267c012af7dd84fe66c0c5dbba23f3f40d500f5b4d2f",
+      "bytes": 43086
+    },
+    {
+      "path": "post_pdf_render/brouri-7.png",
+      "sha256": "6d836785df96df4f9f64a06e0f5c51c9570786c4a74748ed6a47b34dbac64e54",
+      "bytes": 52893
+    },
+    {
+      "path": "post_pdf_render/brouri-8.png",
+      "sha256": "2cb056c80baa445b13aee2680c1155046b62a9a9f0495b5f131151a398079cca",
+      "bytes": 52447
+    },
+    {
+      "path": "post_sources/brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a",
+      "bytes": 164208
+    },
+    {
+      "path": "post_sources/finite-volume-observation-personal/AUTHOR_SEAL.json",
+      "sha256": "4bfc4024aba417878501140db6a2fda47d4251cc0f922a55002939a799848c6e",
+      "bytes": 1115
+    },
+    {
+      "path": "post_sources/finite-volume-observation-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/finite-volume-observation-personal/CONTROL.stdout",
+      "sha256": "9837ccc76e51a9485d93f1b30d2d2ee037f239aa48b18bf6718b9bedd5d5a40b",
+      "bytes": 1308
+    },
+    {
+      "path": "post_sources/finite-volume-observation-personal/EXECUTION.json",
+      "sha256": "68edadf09a47c2735b56e9351c5ec9d6f9b87dfacdb01f6fc3c45eb642a44a46",
+      "bytes": 301
+    },
+    {
+      "path": "post_sources/finite-volume-observation-personal/FINITE_VOLUME_OPTICAL_SCALE_DIAGNOSTIC_ROOT.md",
+      "sha256": "f28a1e685cf74050230f123a074c34ea87ddf7f088ad663b7755fd43756b3e1c",
+      "bytes": 3100
+    },
+    {
+      "path": "post_sources/finite-volume-observation-personal/FINITE_VOLUME_UNITS.json",
+      "sha256": "9837ccc76e51a9485d93f1b30d2d2ee037f239aa48b18bf6718b9bedd5d5a40b",
+      "bytes": 1308
+    },
+    {
+      "path": "post_sources/finite-volume-observation-personal/SOURCE_PINS.json",
+      "sha256": "7b239abe193531f39d617ae5b1c8fb3904df34d15b2a8f853fbb47f107f76821",
+      "bytes": 302
+    },
+    {
+      "path": "post_sources/finite-volume-observation-personal/finite_volume_units.py",
+      "sha256": "a3122d014e37d26850d9f4bab7352e0de81ef7d32396c690d2314afab84385ed",
+      "bytes": 870
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/AUTHOR_SEAL.json",
+      "sha256": "0207294ccd5079745d0d6915a5060fb74b482eeedabf944a0180174631adba80",
+      "bytes": 2445
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/CONTROL.stdout",
+      "sha256": "a90635555e9c1fead1a4535cadec7fee910397d3106dcb214fddddfcf46a0ee5",
+      "bytes": 17836
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/EXECUTION.json",
+      "sha256": "a24d6644a1483366de5f9b7752881f6e3ea7c84a1a8a4dfbafc623bc2e72d11d",
+      "bytes": 301
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "sha256": "892598ff8c260bad16fe1fe36d6a3b5e4ba5dcb0b247f394853360f44d4b901b",
+      "bytes": 10472
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/OPTICAL_BAND_RESULTS.json",
+      "sha256": "a90635555e9c1fead1a4535cadec7fee910397d3106dcb214fddddfcf46a0ee5",
+      "bytes": 17836
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/ROOT_REVIEW.md",
+      "sha256": "b37904eb273b8dc4ecca744a41fd84962e3b3bfcd5bba95ad5da9d8ae51d76d2",
+      "bytes": 1715
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/SOURCE_PINS.json",
+      "sha256": "bf31cc4d8361d25407755036c7b44bd72593e8071085740085fbaecfd1a02909",
+      "bytes": 1247
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/history/hard-band-only/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/history/hard-band-only/CONTROL.stdout",
+      "sha256": "e5e1148d487249574eedf718a2f3259f98fb0e5f953fb2337da3441fa1b32d16",
+      "bytes": 16908
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/history/hard-band-only/EXECUTION.json",
+      "sha256": "811b8d9d771a692b14a6e8aa975cb216237278dca979cfeaae67ce59ecb01ab4",
+      "bytes": 301
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/history/hard-band-only/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "sha256": "dfb982a3e25645c79c3f2d6c645e7bb65d2cafb768ca01270b125dd40b3dee98",
+      "bytes": 8414
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/history/hard-band-only/OPTICAL_BAND_RESULTS.json",
+      "sha256": "e5e1148d487249574eedf718a2f3259f98fb0e5f953fb2337da3441fa1b32d16",
+      "bytes": 16908
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/history/hard-band-only/SOURCE_PINS.json",
+      "sha256": "bf31cc4d8361d25407755036c7b44bd72593e8071085740085fbaecfd1a02909",
+      "bytes": 1247
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/history/hard-band-only/optical_band_controls.py",
+      "sha256": "58d4809f8042a301cfb6c95146890bad3a286a891966dcb444ff1d831153754b",
+      "bytes": 2107
+    },
+    {
+      "path": "post_sources/optical-band-response-personal/optical_band_controls.py",
+      "sha256": "e938b4a2ab11be9c82b4dbd2ec628ab3a2823d1d137b0a7950dc6621d6d2b9ab",
+      "bytes": 2353
+    },
+    {
+      "path": "post_sources/optical-experiment-scope-personal/AUTHOR_SEAL.json",
+      "sha256": "7a809dd2ca14265b8659fbd5eea19e6377cb4864ab04a35645c9489854a92e01",
+      "bytes": 1130
+    },
+    {
+      "path": "post_sources/optical-experiment-scope-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/optical-experiment-scope-personal/CONTROL.stdout",
+      "sha256": "b3870c7b400b6efbca83dd080fac190df2a3c1e59c708809746a18c323393965",
+      "bytes": 972
+    },
+    {
+      "path": "post_sources/optical-experiment-scope-personal/EXECUTION.json",
+      "sha256": "5d5e4a881f7d79f0290721f6c1bb3b0d4f26f5bfc12725e74826ecd407d6dbce",
+      "bytes": 301
+    },
+    {
+      "path": "post_sources/optical-experiment-scope-personal/EXPERIMENT_UNITS.json",
+      "sha256": "b3870c7b400b6efbca83dd080fac190df2a3c1e59c708809746a18c323393965",
+      "bytes": 972
+    },
+    {
+      "path": "post_sources/optical-experiment-scope-personal/OPTICAL_EXPERIMENT_COMPARISON_SCOPE_ROOT.md",
+      "sha256": "2f34fa36a2d7da31be5cf78beaf4c1800ed91051dfdc9a542f1bacd09251def0",
+      "bytes": 3828
+    },
+    {
+      "path": "post_sources/optical-experiment-scope-personal/SOURCE_PINS.json",
+      "sha256": "96f541f85637f19c0622ea98bcc57b0b4bf39541b5d1b6b53fde087212355685",
+      "bytes": 919
+    },
+    {
+      "path": "post_sources/optical-experiment-scope-personal/experiment_units.py",
+      "sha256": "0b3fa19a85d696aea138375530e750a6f660eceea30b425bda86b22495b92e26",
+      "bytes": 959
+    },
+    {
+      "path": "post_verify_and_arithmetic.py",
+      "sha256": "8082a0f4ed9130af436d34c44cadf9ed840b97e29f27848d61d10e2582c77b48",
+      "bytes": 11115
+    }
+  ],
+  "read_only_policy": "This seal and all POST members chmod0444; PRE members preserved unchanged."
+}

@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/literature-photodetection/brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "sha256": "892598ff8c260bad16fe1fe36d6a3b5e4ba5dcb0b247f394853360f44d4b901b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/OBSERVATION_RESPONSE_AND_CLOCK_SCOPE_ROOT.md",
+      "sha256": "91fd6c3df5063dcbbbc999bd1e3a4817b286ae6ce8448156550cb957fd2d709b"
+    }
+  ],
+  "primary_url": "https://arxiv.org/pdf/quant-ph/0007032v1",
+  "read_scope": "Full methods, normalization, results and captions in primary PDF; not a new fit."
+}

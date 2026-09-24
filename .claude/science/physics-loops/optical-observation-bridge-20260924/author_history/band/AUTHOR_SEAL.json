@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-09-24T22:52:38.374158+00:00",
+  "status": "personally authored candidate, sealed before independent disclosure",
+  "files": {
+    "CONTROL.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "CONTROL.stdout": {
+      "sha256": "a90635555e9c1fead1a4535cadec7fee910397d3106dcb214fddddfcf46a0ee5",
+      "bytes": 17836
+    },
+    "EXECUTION.json": {
+      "sha256": "a24d6644a1483366de5f9b7752881f6e3ea7c84a1a8a4dfbafc623bc2e72d11d",
+      "bytes": 301
+    },
+    "OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md": {
+      "sha256": "892598ff8c260bad16fe1fe36d6a3b5e4ba5dcb0b247f394853360f44d4b901b",
+      "bytes": 10472
+    },
+    "OPTICAL_BAND_RESULTS.json": {
+      "sha256": "a90635555e9c1fead1a4535cadec7fee910397d3106dcb214fddddfcf46a0ee5",
+      "bytes": 17836
+    },
+    "ROOT_REVIEW.md": {
+      "sha256": "b37904eb273b8dc4ecca744a41fd84962e3b3bfcd5bba95ad5da9d8ae51d76d2",
+      "bytes": 1715
+    },
+    "SOURCE_PINS.json": {
+      "sha256": "bf31cc4d8361d25407755036c7b44bd72593e8071085740085fbaecfd1a02909",
+      "bytes": 1247
+    },
+    "history/hard-band-only/CONTROL.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "history/hard-band-only/CONTROL.stdout": {
+      "sha256": "e5e1148d487249574eedf718a2f3259f98fb0e5f953fb2337da3441fa1b32d16",
+      "bytes": 16908
+    },
+    "history/hard-band-only/EXECUTION.json": {
+      "sha256": "811b8d9d771a692b14a6e8aa975cb216237278dca979cfeaae67ce59ecb01ab4",
+      "bytes": 301
+    },
+    "history/hard-band-only/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md": {
+      "sha256": "dfb982a3e25645c79c3f2d6c645e7bb65d2cafb768ca01270b125dd40b3dee98",
+      "bytes": 8414
+    },
+    "history/hard-band-only/OPTICAL_BAND_RESULTS.json": {
+      "sha256": "e5e1148d487249574eedf718a2f3259f98fb0e5f953fb2337da3441fa1b32d16",
+      "bytes": 16908
+    },
+    "history/hard-band-only/SOURCE_PINS.json": {
+      "sha256": "bf31cc4d8361d25407755036c7b44bd72593e8071085740085fbaecfd1a02909",
+      "bytes": 1247
+    },
+    "history/hard-band-only/optical_band_controls.py": {
+      "sha256": "58d4809f8042a301cfb6c95146890bad3a286a891966dcb444ff1d831153754b",
+      "bytes": 2107
+    },
+    "optical_band_controls.py": {
+      "sha256": "e938b4a2ab11be9c82b4dbd2ec628ab3a2823d1d137b0a7950dc6621d6d2b9ab",
+      "bytes": 2353
+    }
+  }
+}

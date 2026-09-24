@@ -1,0 +1,16 @@
+{
+  "attempt": 2,
+  "reason": "Correct explicitly infeasible empty-band optimization labels; first source and run preserved unchanged.",
+  "started_utc": "2026-09-24T23:05:23.993349+00:00",
+  "completed_utc": "2026-09-24T23:05:24.219339+00:00",
+  "wrapper_elapsed_seconds": 0.2258941251784563,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/optical_band_controls.py"
+  ],
+  "source_sha256": "56a189c0d7463c5cf6ae90a72209a0881e8a14d1a3b0100abe5b37f48b34cfb8",
+  "stdout_sha256": "740c8d9cd1e04e58d097d3718ba657cd2768ea6499c97313fdc30bcb23234c57",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0
+}

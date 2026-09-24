@@ -1,0 +1,10 @@
+m=2 columns=252 candidates=63504 symbol_unitary=208 dispersive=32 non_monomial=0 transports={'eps': 0, 'eps K': 0, 'P': 8, 'P K': 8} eps_not_dimer=0
+  PK phases [((-2, 0), (-2, 0)), ((0, -2), (0, -2)), ((0, 2), (0, 2)), ((2, 0), (2, 0))]
+  P phases [((-2, 0), (-2, 0)), ((0, -2), (0, 2)), ((0, 2), (0, -2)), ((2, 0), (2, 0))]
+m=3 columns=12 candidates=1728 symbol_unitary=384 dispersive=128 non_monomial=0 transports={'eps': 0, 'eps K': 0, 'P': 16, 'P K': 32} eps_not_dimer=0
+m=4 columns=12 candidates=20736 symbol_unitary=2304 dispersive=512 non_monomial=0 transports={'eps': 0, 'eps K': 0, 'P': 32, 'P K': 32} eps_not_dimer=0
+PASS exact symbol census matches the reported counts: no dispersive tick carries eps or eps o K, and P / P o K match
+PASS m=2 dispersive P o K shifts have equal hop phases, and P shifts have conjugate hop phases
+TOTAL FAIL=0
+HIT: confirmed - on radius-1 unitary ticks, tested by the Bloch symbol rather than the ring, no dispersive tick at periods 2, 3, 4 carries the eps or eps o K transport (32, 128, 512 dispersive ticks, all monomial). The transports that survive are P o K and P: (8, 8), (32, 16), (32, 32).
+SUMMARY: confirmed the falsifier. The C-reading through eps or eps o K is empty on this strict-tick class. Line unitarity was the Laurent identity U(z)^dagger U(z) = 4 I, and the same counts reappear. The theorem's forward and converse directions were not re-proved.

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-note-TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026_06_10",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j9905",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/tick-unitarity-spectrum/check.py",
+ "seed": 57787,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "25a6eb4f",
+ "started_utc": "20260924T134947Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the falsifier. The C-reading through eps or eps o K is empty on this strict-tick class. Line unitarity was the Laurent identity U(z)^dagger U(z) = 4 I, and the same counts reappear. The theorem's forward and converse directions were not re-proved."
+ },
+ "review": "An exact Bloch-symbol census reproduces the falsifier: no dispersive radius-1 unitary tick at periods 2, 3 or 4 carries eps or eps o K, and the surviving transports are P and P o K.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:note:TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026_06_10/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "92ae52dfaa27ebcdbbaee208b682e5de178c18dbf184b880d7eb741f51a4b5ee",
+ "stdout_tail": "m=2 columns=252 candidates=63504 symbol_unitary=208 dispersive=32 non_monomial=0 transports={'eps': 0, 'eps K': 0, 'P': 8, 'P K': 8} eps_not_dimer=0\n  PK phases [((-2, 0), (-2, 0)), ((0, -2), (0, -2)), ((0, 2), (0, 2)), ((2, 0), (2, 0))]\n  P phases [((-2, 0), (-2, 0)), ((0, -2), (0, 2)), ((0, 2), (0, -2)), ((2, 0), (2, 0))]\nm=3 columns=12 candidates=1728 symbol_unitary=384 dispersive=128 non_monomial=0 transports={'eps': 0, 'eps K': 0, 'P': 16, 'P K': 32} eps_not_dimer=0\nm=4 columns=12 candidates=20736 symbol_unitary=2304 dispersive=512 non_monomial=0 transports={'eps': 0, 'eps K': 0, 'P': 32, 'P K': 32} eps_not_dimer=0\nPASS exact symbol census matches the reported counts: no dispersive tick carries eps or eps o K, and P / P o K match\nPASS m=2 dispersive P o K shifts have equal hop phases, and P shifts have conjugate hop phases\nTOTAL FAIL=0\nHIT: confirmed - on radius-1 unitary ticks, tested by the Bloch symbol rather than the ring, no dispersive tick at periods 2, 3, 4 carries the eps or eps o K transport (32, 128, 512 dispersive ticks, all monomial). The transports that survive are P o K and P: (8, 8), (32, 16), (32, 32).\nSUMMARY: confirmed the falsifier. The C-reading through eps or eps o K is empty on this strict-tick class. Line unitarity was the Laurent identity U(z)^dagger U(z) = 4 I, and the same counts reappear. The theorem's forward and converse directions were not re-proved.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9905",
+  "at_utc": "20260924T134955Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The falsifier is science: the strict-tick C-reading through eps or eps o K is empty, and only P and P o K transport.",
+  "by": "w-macbookpro90c72-j9905",
+  "at_utc": "20260924T134955Z"
+ }
+}

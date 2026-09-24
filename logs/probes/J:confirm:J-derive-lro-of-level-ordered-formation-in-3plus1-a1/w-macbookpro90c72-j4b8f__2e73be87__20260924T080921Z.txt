@@ -1,0 +1,10 @@
+S5 COUNTS FOLLOW: for L=3..8, backward |S|^2 is 4 on 10 sites and 16 elsewhere, forward is 0 on 3, 4 on 6, 16 elsewhere; sum |S|^4 differs by 192
+S5 RATIO FOLLOWS: rho(iota s)/rho(s) = Z(4 beta)/Z(2 beta)^4 = u^3 cosh u/sinh^3 u < 1 for u>0, since the odd Taylor coefficients vanish at n=3,5 and stay positive from n=7
+S7 FOLLOWS: the 3-cycle of all e_z, e_x at 0, e_y at e_1 has exponent sum 1 for L=3..6 (ratio e^beta) and 0 for L=2
+S11 FOLLOWS: 1-|phi|^2 = (3/4)(1-lambda_FCC), so the linear stationary covariance is even in k
+  census L=4 stencil=4 free=191 weak=0 fixed-vertex involutions=73
+  census L=4 stencil=7 free=621 weak=7 fixed-vertex involutions=99
+  census L=6 stencil=4 free=475 weak=0 fixed-vertex involutions=145
+S9 FOLLOWS: Aff(N4)=24, Aff(N7)=48; no fixed-point-free affine involution of the diamond doubled graph at L=4 or 6 has a PSD-compatible crossing (0 pass the necessary condition)
+SUMMARY: confirmed - K is the diamond-lattice reversible chain Q followed by inversion; rho_L is not inversion-symmetric for any beta>0 and L>=3 (ratio u^3 cosh u/sinh^3 u<1 at s_F); K is not reversible (a 3-cycle has ratio e^beta); each named long-range-order route fails at that step
+HIT: confirmed - no inversion-symmetric stationary law, pi_L is not rho_L, and the four routes fail: the layer marginal is not stationary, no affine reflection of the diamond graph gives Gaussian domination, tilted islands are not eroded, and the infrared bound is not supplied

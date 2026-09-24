@@ -1,0 +1,7 @@
+ok K1: |P|/2 = P-hat · s1 = sqrt((1+t)/2); P-s is the opposite point of the same circle
+ok K2: mu_l = 4 int_0^1 u P_l(u)^2 du equals 2 c_floor(l/2) c_ceil(l/2) for l=1..12, with the eight printed values
+ok K3: momentum is conserved, the stress is halved, and it relaxes at 3 gamma rho; l=3,4 at 15 gamma rho/4 and 69 gamma rho/16
+ok K4: the isotropic contractions give a=1/5, b=1/30, and a traceless quadrupole is halved
+ok K5: l mu_l approaches 4/pi: 40:1.2574, 80:1.2653, 160:1.2693
+SUMMARY: confirmed - clause (C) multiplies a degree-l harmonic by mu_l = 4 int_0^1 u P_l^2 du, with mu_1=1 and mu_2=1/2, so the stress relaxes at 3 gamma rho.
+HIT: confirmed - the re-draw is uniform on the circle |s|=1, s·P=|P|^2/2; mu_l = 2 c_floor(l/2) c_ceil(l/2) equals 1, 1/2, 3/8, 9/32, 15/64, 25/128, 175/1024, 1225/8192 for l=1..8 and ~4/(pi l); in the product closure the stress rate is 3 gamma rho. The flow past the sphere is not part of this result.

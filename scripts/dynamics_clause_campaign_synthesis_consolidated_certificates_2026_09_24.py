@@ -2,7 +2,8 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088,
+9095, 9097). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +11,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the eighteen blocks are exactly the
+L. Ledger: the decision points used by the twenty blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -60,6 +61,12 @@ L. Ledger: the decision points used by the eighteen blocks are exactly the
    the centre vanish, while the orientation-weighted octant chirality is
    invariant; the tripod is a product of three bond operators, so its
    Majorana degree is 4.
+19. (9095) The path sum of a planar piece of the tensor constraint is
+   111150053/31850496 over its 2304 monotone partial moves; the same sum for
+   the U(1) plaquette ring is 5/2.
+20. (9097) A chain of Kitaev sites with record fields on its dangling axes
+   has a bipartite Majorana coupling graph (S H S = -H); a field along a
+   leaf's kept axis matches the exact spin spectrum and breaks S.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -122,6 +129,8 @@ DECLARED = {
     "D-chan": "the evolution of a finite region between records is a channel",
     "D-onlyrec": "records are the only irreversible events",
     "D-chir": "a time-reversal-odd star term of weight at most three",
+    "D-tsoft": "a soft vector-constraint energy on link sites with one-site slot fields",
+    "D-slot": "the tensor slot type: rotor (unbounded) or qubit",
 }
 USED = {
     9040: {"D-dyn", "D-pc", "D-sold"},
@@ -142,6 +151,8 @@ USED = {
     9085: {"D-dyn", "D-loc", "D-perm", "D-tr", "D-menu"},
     9086: {"D-chan", "D-onlyrec"},
     9088: {"D-pc", "D-sold", "D-chir", "D-pattern"},
+    9095: {"D-roles", "D-tsoft", "D-slot"},
+    9097: {"D-dyn", "D-sold", "D-pattern"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -783,6 +794,94 @@ check("possibility covariance: star sums through the centre vanish, the octant c
       zero_all and oct_inv and len(octs) == 48 and np.linalg.norm(trip + 1j * kkk) < 1e-12 and odd_sites == 4,
       f"through-centre coefficients 0; det-weighted octant coefficients invariant on {len(octs)} ordered triples; "
       f"tripod = -i K_x K_y K_z residual {np.linalg.norm(trip + 1j * kkk):.0e}, odd-degree sites {odd_sites}")
+
+# ------------------------------------------ 19: the tensor path sum
+print("19. the tensor field's twelfth-order path sum")
+from fractions import Fraction as _Fr
+_E = np.eye(3, dtype=int)
+
+
+def _row(x, j):
+    x = np.array(x)
+    t = [((tuple(x + _E[j]), (j, j)), 1), ((tuple(x), (j, j)), -1)]
+    for i in range(3):
+        if i != j:
+            t += [((tuple(x), tuple(sorted((i, j)))), 1), ((tuple(x - _E[i]), tuple(sorted((i, j)))), -1)]
+    return t
+
+
+_piece = {((0, 1, 0), (0, 0)): 1, ((0, -1, 0), (0, 0)): 1, ((0, 0, 0), (0, 0)): -2,
+          ((1, 0, 0), (1, 1)): 1, ((-1, 0, 0), (1, 1)): 1, ((0, 0, 0), (1, 1)): -2,
+          ((0, 0, 0), (0, 1)): -1, ((-1, 0, 0), (0, 1)): 1, ((0, -1, 0), (0, 1)): 1, ((-1, -1, 0), (0, 1)): -1}
+_sl = list(_piece)
+_rows = []
+for x in itertools.product(range(-2, 3), repeat=3):
+    for j in range(3):
+        r = [(_sl.index(k), c) for k, c in _row(x, j) if k in _piece]
+        if r:
+            _rows.append(r)
+_Gt = np.zeros((len(_rows), len(_sl)), dtype=int)
+for n_, r in enumerate(_rows):
+    for a_, c_ in r:
+        _Gt[n_, a_] += c_
+
+
+def _psum(Gm, d):
+    mags, sg = np.abs(d), np.sign(d)
+    A_, zero_ = {}, 0
+    for idx in sorted(itertools.product(*[range(m + 1) for m in mags]), key=sum):
+        if not sum(idx):
+            A_[idx] = _Fr(1)
+            continue
+        tot = sum((A_[tuple(v - (q == s_) for q, v in enumerate(idx))] for s_ in range(len(d)) if idx[s_]), _Fr(0))
+        En = int(np.sum((Gm @ (sg * np.array(idx))) ** 2))
+        if sum(idx) == mags.sum():
+            A_[idx] = tot
+        else:
+            zero_ += En == 0
+            A_[idx] = tot / En
+    return A_[tuple(mags)], zero_
+
+
+_d = np.array([_piece[k] for k in _sl])
+A_t, z_t = _psum(_Gt, _d)
+A_r, _ = _psum(np.array([[1, 0, 0, -1], [-1, 1, 0, 0], [0, -1, 1, 0], [0, 0, -1, 1]]), np.array([1, 1, 1, 1]))
+check("the planar piece's twelfth-order path sum is 111150053/31850496; the U(1) ring's is 5/2",
+      not np.any(_Gt @ _d) and z_t == 0 and A_t == _Fr(111150053, 31850496) and A_r == _Fr(5, 2),
+      f"A = {A_t} (about {float(A_t):.4f}); ring {A_r}")
+
+# ------------------------------------------ 20: sublattice symmetry of carved Majoranas
+print("20. record fields keep the carved Majoranas sublattice-symmetric")
+_n = 6                                   # a ring of sites along x; y and z axes dangling with record fields
+_Am = np.zeros((3 * _n, 3 * _n))          # Majoranas: c_j (0..n-1), b^y_j (n..2n-1), b^z_j (2n..3n-1)
+for j in range(_n):
+    _Am[j, (j + 1) % _n] += -2.0 * rng.choice([1, -1])
+    _Am[_n + j, j] += 2 * rng.normal()
+    _Am[2 * _n + j, j] += 2 * rng.normal()
+_Am = _Am - _Am.T
+_S = np.diag([(-1) ** j for j in range(_n)] + [-(-1) ** j for j in range(_n)] * 2)
+sub_viol = np.linalg.norm(_S @ (1j * _Am) @ _S + 1j * _Am)
+_h = rng.normal(size=(2, 3))
+_I = np.eye(2)
+_Hs = np.kron(Pm[2], Pm[2]) + sum(_h[0][a] * np.kron(Pm[a], _I) + _h[1][a] * np.kron(_I, Pm[a]) for a in range(3))
+_AL = np.zeros((6, 6))
+_AL[0, 1] = -2.0
+for j, (c_, bx, by) in enumerate(((0, 2, 3), (1, 4, 5))):
+    _AL[bx, c_] += 2 * _h[j][0]
+    _AL[by, c_] += 2 * _h[j][1]
+    _AL[bx, by] += -2 * _h[j][2]
+_AL = _AL - _AL.T
+_eps = np.sort(np.linalg.eigvalsh(1j * _AL))[3:]
+_lev = {0: [], 1: []}
+for occ in itertools.product((0, 1), repeat=3):
+    _lev[sum(occ) % 2].append(-0.5 * _eps.sum() + np.dot(occ, _eps))
+_spin = np.sort(np.linalg.eigvalsh(_Hs))
+leaf_dev = min(np.max(np.abs(np.sort(_lev[p_]) - _spin)) for p_ in (0, 1))
+_SL = np.diag([1.0, -1.0, -1.0, -1.0, 1.0, 1.0])
+leaf_break = np.linalg.norm(_SL @ (1j * _AL) @ _SL + 1j * _AL)
+check("dangling-axis record fields keep S H S = -H; a leaf's kept-axis field is solvable and breaks it",
+      sub_viol < 1e-12 and leaf_dev < 1e-12 and leaf_break > 1e-3,
+      f"ring |S H S + H| {sub_viol:.0e}; leaf pair spectrum match {leaf_dev:.0e}, |S H S + H| {leaf_break:.2f}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

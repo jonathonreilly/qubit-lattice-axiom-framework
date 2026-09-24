@@ -1,0 +1,10 @@
+ok 1: c0=1/2, weights 3/2,1/2,1, mean pair weight 1
+ok 2: one neighbour 12/17, 12/7, 1
+ok 2b: two-neighbour table matches 1/2, 6/5, 12/17, 3, 12/7, 1
+ok 2c: at (3,1,2), kappa<1 only next to equal contents
+ok 3: uniform average 382/357, stationary-pair average 352/357
+ok 3b: mean log kappa geometric: uniform 0.040, stationary -0.036
+ok 4: sum of (1-A)f over the 3^3 torus is 0, so block 50 sources have no net monopole
+ok 5: pulls cancel for every separation iff S/E is the same number
+HIT: confirmed - at (3,1,2) an isolated record has kappa 1; one neighbour gives 12/17, 12/7, 1; the torus sources of w=1/pi sum to 0, so this clock has no far field
+SUMMARY: confirmed the pair weights, both neighbour tables, the two averages 382/357 and 352/357, and the zero total of the rate-field source; gamma remains a free positive coefficient of blocks 53-55

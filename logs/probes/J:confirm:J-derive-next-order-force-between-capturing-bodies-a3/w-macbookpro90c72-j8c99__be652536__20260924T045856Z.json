@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-next-order-force-between-capturing-bodies-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j8c99",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/next-order-force-between-capturing-bodies/referee_w-macbookpro90c72-j8c99/check.py",
+ "seed": 25936,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "be652536",
+ "started_utc": "20260924T045856Z",
+ "elapsed_s": 3.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the Stokeslet force law, the 6^3 real-space match, and the lattice-to-Oseen ratios. The factor (4/3) in nu <= (3/4) D_L does not follow from the momentum equation that was written; the consistent floor is 0.156 rather than the printed 0.21."
+ },
+ "review": "Independent arithmetic confirms the Oseen Stokeslet and the attractive on-axis force K0 Q1 Q2^2/(4 pi nu rho r^3); the written PDE gives diffusivity nu+nu_b, so the 0.75-push floor is 0.156 of the reference and sits inside 0.10\u00b10.07, rather than the printed 0.21 from a 4/3 factor that does not follow.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:next-order-force-between-capturing-bodies:a3/; its files are probes/work/derive/next-order-force-between-capturing-bodies/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/next-order-force-between-capturing-bodies/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "0ff7b30971b300a84caf60fc972c0b0b7279711933b45fc240c87bf1fa593f08",
+ "stdout_tail": "e reference, while (3/4)D gives 0.2086 (below the printed 0.21)\nPASS lattice symbol: g = (I - d d^+/|d|^2) F / (nu |d|^2) solves -nu|d|^2 g - d p + F = 0 and conj(d).g = 0\nPASS small box: periodic 6^3 FFT Stokeslet matches a real-space least-squares solve, max diff 3.3e-16\n   L=64 r=4 0.925/0.761 r=8 0.778/0.529 r=16 0.579/0.076\n   L=96 r=4 0.964/0.840 r=8 0.853/0.685 r=16 0.701/0.375\n   L=128 r=4 0.983/0.879 r=8 0.891/0.764 r=16 0.772/0.529\n   L=192 r=4 1.003/0.919 r=8 0.930/0.842 r=16 0.846/0.685\nPASS continuum ratios: author's axial/transverse ratios reproduced within 0.0005; side-96 axial fraction at r=16 is 0.701\nPASS executed size: consistent free-space floor 0.156 is inside 0.10\u00b10.07 and inside 0.17\u00b10.08; times the side-96 axial fraction it is 0.110\nauthor floor at (3/4) of the diffusivity: 0.2086\nHIT: confirmed - a point momentum sink in the written hydrodynamics is an Oseen Stokeslet, and the on-axis force on a second capturing body is attractive, K0 Q1 Q2^2 / (4 pi nu rho r^3), equal to Q2/(4 pi nu rho r) of the inverse-square reference. The same PDE damps sound at rate (nu+nu_b) k^2/2, so the diffusivity is nu+nu_b. With nu <= 0.62, the 0.75-push floor is 0.156 of the reference, inside the executed 0.10\u00b10.07.\nSUMMARY: confirmed the Stokeslet force law, the 6^3 real-space match, and the lattice-to-Oseen ratios. The factor (4/3) in nu <= (3/4) D_L does not follow from the momentum equation that was written; the consistent floor is 0.156 rather than the printed 0.21.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8c99",
+  "at_utc": "20260924T045924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Stokeslet force law holds. The written momentum equation gives diffusivity nu+nu_b, so the 0.75-push floor is 0.156 of the reference and lies inside 0.10\u00b10.07. The printed 4/3 bound does not follow.",
+  "by": "w-macbookpro90c72-j8c99",
+  "at_utc": "20260924T045924Z"
+ }
+}

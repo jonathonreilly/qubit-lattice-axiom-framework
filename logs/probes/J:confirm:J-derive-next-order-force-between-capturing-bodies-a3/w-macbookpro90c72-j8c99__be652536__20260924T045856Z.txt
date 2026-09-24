@@ -1,0 +1,14 @@
+PASS dispersion: written PDE gives omega^2 + i (nu+nu_b) k^2 omega - k^2 (1-rho)/9 = 0, so the sound diffusivity in alpha = D k^2/2 is nu+nu_b, not (4/3) nu + nu_b
+PASS oseen: u = (I + rhat rhat) e_x / (8 pi r), p = x/(4 pi r^3) solves lap u = grad p and div u = 0; axial 1/(4 pi r), transverse 1/(8 pi r)
+PASS force coefficient: on-axis factor 1/(4 pi nu r); D from 0.0030/tick at wavelength 64 is 0.6225 so nu<=D gives a 0.75-push floor 0.1564 of the reference, while (3/4)D gives 0.2086 (below the printed 0.21)
+PASS lattice symbol: g = (I - d d^+/|d|^2) F / (nu |d|^2) solves -nu|d|^2 g - d p + F = 0 and conj(d).g = 0
+PASS small box: periodic 6^3 FFT Stokeslet matches a real-space least-squares solve, max diff 3.3e-16
+   L=64 r=4 0.925/0.761 r=8 0.778/0.529 r=16 0.579/0.076
+   L=96 r=4 0.964/0.840 r=8 0.853/0.685 r=16 0.701/0.375
+   L=128 r=4 0.983/0.879 r=8 0.891/0.764 r=16 0.772/0.529
+   L=192 r=4 1.003/0.919 r=8 0.930/0.842 r=16 0.846/0.685
+PASS continuum ratios: author's axial/transverse ratios reproduced within 0.0005; side-96 axial fraction at r=16 is 0.701
+PASS executed size: consistent free-space floor 0.156 is inside 0.10±0.07 and inside 0.17±0.08; times the side-96 axial fraction it is 0.110
+author floor at (3/4) of the diffusivity: 0.2086
+HIT: confirmed - a point momentum sink in the written hydrodynamics is an Oseen Stokeslet, and the on-axis force on a second capturing body is attractive, K0 Q1 Q2^2 / (4 pi nu rho r^3), equal to Q2/(4 pi nu rho r) of the inverse-square reference. The same PDE damps sound at rate (nu+nu_b) k^2/2, so the diffusivity is nu+nu_b. With nu <= 0.62, the 0.75-push floor is 0.156 of the reference, inside the executed 0.10±0.07.
+SUMMARY: confirmed the Stokeslet force law, the 6^3 real-space match, and the lattice-to-Oseen ratios. The factor (4/3) in nu <= (3/4) D_L does not follow from the momentum equation that was written; the consistent floor is 0.156 rather than the printed 0.21.

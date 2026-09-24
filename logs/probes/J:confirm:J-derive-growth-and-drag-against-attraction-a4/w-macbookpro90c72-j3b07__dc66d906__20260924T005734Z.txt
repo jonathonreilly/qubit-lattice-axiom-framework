@@ -1,0 +1,7 @@
+ok 1: <|s_z|>=1/2 so <|s|_1>=3/2; <|s|_1 s_i^2>=1/2 by the trace, and captured content is u
+ok 2: sum_e e max(0, s.e)/sqrt(3) = s/sqrt(3) on positive, negative and zero components
+ok 3-4: dsolve: constant wind relaxes to w; a wind growing at q_1 entrains at exactly 1/2
+ok 5: fall coefficient 8/(3*pi**2) = 8/(3 pi^2), orbit 1/(12*pi**2), N_orbit/N_fall = 32
+ok 5b: 8/(3 pi^2) = 0.270190, which is 1.621 times the supervisor's 1/6
+HIT: confirmed - dp/dt = q1(<s>-p), velocity p/sqrt(3), fall threshold (4 pi/3) rho r^3 = 8 N1/(3 pi^2 (1-rho)), orbit 32 times stricter, and a growing source entrains at 1/2
+SUMMARY: confirmed the sphere moments by symmetry, both ODE solutions by dsolve, and the fall and orbit coefficients; the half-wind correction replaces the task's anticipated full wind

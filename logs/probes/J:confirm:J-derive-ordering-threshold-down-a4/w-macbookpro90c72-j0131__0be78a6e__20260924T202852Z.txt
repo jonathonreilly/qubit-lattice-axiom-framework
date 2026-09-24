@@ -1,0 +1,9 @@
+PASS D1 domination: d2-d1 and d3-d1 have nonnegative numerators for integer p >= 1, so d1 <= max(d2, d3)
+PASS D2 threshold: eps2 = max(d2, d3) drops through 1/27 between p = 57 and p = 58, and stays below afterwards
+PASS G1 pattern weights: the 27 patterns split 8,12,6,1 by bad-pair count, and the generating function is (2+r)^3
+PASS G2 blocks: block counts match brute force at m=1,2,3, and the balanced term is at least 27^m/(m+1)^6
+PASS G3 separation: each move changes ell = X1-X2 by -1, +1 or 0, so a balanced block returns every pole's ell
+PASS G4 divergence: at p=57, 27 eps2 = 3375/3374 and m=251802 is the least multiple of 3 with 3375^m > 3374^m (m+1)^6
+PASS G5 prefix: the separating prefix opens ell-gaps of at least 7, a balanced block restores them, and the chain budget has B=R
+SUMMARY: confirmed no-go. On (p, 1, 2), eps2 = max(d2, d3) is at least 1/27 for every p <= 57 and drops below it at p = 58. Any history sum that still contains the fork-free separated-pole chains is then infinite, because those chains grow like 27^R up to a (m+1)^{6/m} factor that can be brought below 27 eps2. No threshold below 58 is obtained from this grammar. Whether the chains are realized by configurations is not decided.
+HIT: confirmed - the refinement-history route cannot prove a threshold below 58, because its fork-free chains diverge for every p <= 57

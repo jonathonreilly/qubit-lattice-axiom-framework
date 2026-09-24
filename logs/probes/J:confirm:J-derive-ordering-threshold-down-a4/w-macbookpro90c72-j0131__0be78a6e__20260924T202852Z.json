@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-ordering-threshold-down-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j0131",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/ordering-threshold-down/referee_w-macbookpro90c72-j0131/check.py",
+ "seed": 81732,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0be78a6e",
+ "started_utc": "20260924T202852Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed no-go. On (p, 1, 2), eps2 = max(d2, d3) is at least 1/27 for every p <= 57 and drops below it at p = 58. Any history sum that still contains the fork-free separated-pole chains is then infinite, because those chains grow like 27^R up to a (m+1)^{6/m} factor that can be brought below 27 eps2. No threshold below 58 is obtained from this grammar. Whether the chains are realized by configurations is not decided."
+ },
+ "review": "The history grammar cannot prove a threshold below 58: eps2 stays at least 1/27 through p=57, and the fork-free chains diverge there.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:ordering-threshold-down:a4/; its files are probes/work/derive/ordering-threshold-down/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/ordering-threshold-down/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "7756a6faeb6f626b6bc0e33a3f13f9bc1c5efa657bd69d674748ca074b098d6e",
+ "stdout_tail": "PASS D1 domination: d2-d1 and d3-d1 have nonnegative numerators for integer p >= 1, so d1 <= max(d2, d3)\nPASS D2 threshold: eps2 = max(d2, d3) drops through 1/27 between p = 57 and p = 58, and stays below afterwards\nPASS G1 pattern weights: the 27 patterns split 8,12,6,1 by bad-pair count, and the generating function is (2+r)^3\nPASS G2 blocks: block counts match brute force at m=1,2,3, and the balanced term is at least 27^m/(m+1)^6\nPASS G3 separation: each move changes ell = X1-X2 by -1, +1 or 0, so a balanced block returns every pole's ell\nPASS G4 divergence: at p=57, 27 eps2 = 3375/3374 and m=251802 is the least multiple of 3 with 3375^m > 3374^m (m+1)^6\nPASS G5 prefix: the separating prefix opens ell-gaps of at least 7, a balanced block restores them, and the chain budget has B=R\nSUMMARY: confirmed no-go. On (p, 1, 2), eps2 = max(d2, d3) is at least 1/27 for every p <= 57 and drops below it at p = 58. Any history sum that still contains the fork-free separated-pole chains is then infinite, because those chains grow like 27^R up to a (m+1)^{6/m} factor that can be brought below 27 eps2. No threshold below 58 is obtained from this grammar. Whether the chains are realized by configurations is not decided.\nHIT: confirmed - the refinement-history route cannot prove a threshold below 58, because its fork-free chains diverge for every p <= 57\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0131",
+  "at_utc": "20260924T202900Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "eps2 stays at least 1/27 through p=57, and the fork-free chain sum diverges there, so this grammar does not prove a threshold below 58.",
+  "by": "w-macbookpro90c72-j0131",
+  "at_utc": "20260924T202900Z"
+ }
+}

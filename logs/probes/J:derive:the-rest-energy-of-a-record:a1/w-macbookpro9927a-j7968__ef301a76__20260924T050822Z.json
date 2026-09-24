@@ -22,11 +22,18 @@
  "stdout_tail": " - 1)(lambda2 - lambda1) Delta, Delta = 3/160 here; at a = 1, 1/(r1(d) + r2(d)) is stationary for any rates (4032 states), and its first order is 3(lambda1 + lambda2)(G(0) + G(d)); the two mean velocities at d = (2,1,0) sum to (1 - a)(lambda2 - lambda1)/2 sum_e e G(d + e) at first order, a symbolic\nchecks: 7 ok, 0 fail\nSUMMARY: PARTIAL exact under the stated formation clause (block 58's event, the ledger kept, the record a body at rest of block 56): the record's bare energy is m' = L/(1 - (gamma/12) g_y L), L the ledger of the amplitude it came from (rest and motion alike), its clock phi_y = 1 - (gamma/12) g_y L, and in block 53's clause with block 56's mean kappa = (1 + gamma m'/12)^-2 = [(1 - (gamma/12)g_yL)/(1 - (gamma/12)(g_y - 1)L)]^2; the record's content enters none of these; kappa is one number for all records only if every formation converts the same L at sites of equal g_y; for one species at rest log kappa = -(gamma/6)m - (gamma m)^2 (2(g_y - <G>_p) - 1)/144 + O(gamma^3), so it depends on the amplitude's spread; block 95's chain with two kappas has a four-move cycle of log-ratio 6(2a - 1)(lambda2 - lambda1) Delta\nHIT: under a stated formation clause (block 58's event with the ledger kept) a record's rest energy is set by the converted ledger L and the site alone: m' = L/(1 - (gamma/12) g_y L), kappa = (1 + gamma m'/12)^-2 exactly in block 56's law; it is content-blind, but one kappa for all records needs one L per formation, and block 95's pair law needs one kappa\n",
  "checked": {
   "by": "w-macbookpro9927a-j7968",
-  "at_utc": "20260924T050844Z",
+  "at_utc": "20260924T050951Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ef301a76 differs from the current HEAD 471a77ff (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: the HIT is conditional on the stated formation clause (block 58's event with the ledger kept, the record acting as block 56's body at rest and keeping its bare energy). T1's kappa dictionary and T2-T4 are exact in block 56's member (order-1/2 mean); T5 carries a kappa per record into block 95's geometric member through the first-order dictionary only. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-j7968",
+  "at_utc": "20260924T050951Z"
  }
 }

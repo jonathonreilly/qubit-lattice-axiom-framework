@@ -1,0 +1,30 @@
+{
+ "task": "P:8852",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-local-volume-20260923",
+ "worker": "w-jonathonsmac4f50-j369a",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8852",
+ "pr": 8852,
+ "branch": "codex/mobile-record-local-volume-20260923",
+ "git_sha": "403dea49",
+ "started_utc": "20260924T011029Z",
+ "elapsed_s": 5.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "PR re-execution of #8852's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "9d668542e041c65f5eddc3e19ee10d8f8e9f1a8b488a3a366e3bad7e24a28f64",
+ "stdout_tail": "PR #8852: Construct local volume dynamics with actual record formation\nbranch codex/mobile-record-local-volume-20260923 (base codex/mobile-record-local-compensation-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j369a",
+  "at_utc": "20260924T011034Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_a_record_updates_the_rest_of_the_lattice_by_compression_locality_of_marginals_forces_product_projector_joint_laws_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Take locality of marginals (D-loc) and the one-site Born law P(q | rho) = Tr(P_q rho) of open PR 9083, whose orientation uses only the lock: a record q leaves its own site in P_q. Consider records at two sites whose joint law is affine (effects E_qr >= 0) and whose marginals are each site's Born law whatever the other does. (i) Then E_qr = P_q (x) P_r: the ranges of P_q (x) I and I (x) P_r meet in one line, and E_(-q,-r) >= 0 forces full weight on it. (ii) Requiring that the partner's state after record q reproduce the joint law along every axis then gives the Lueders conditional state Tr_i[(P_q (x) I) rho (P_q (x) I)] / p_q (200 random pairs, deviation 1e-15). A reset update, which leaves the partner unchanged, misses the joint law by up to 0.243 on a singlet. (iii) With three qubits, two-qubit tomography of the rest after a record reproduces the rest's Lueders compression (deviation 3e-15). So the global compression update of open PR 9041 (D-perm), the 'collapse' at distant sites, follows from D-loc and the site-local lock. No derivation of D-loc, of the lock or of joint affinity beyond the steering argument of open PR 9083 is claimed."
+claim_scope: "Take locality of marginals (D-loc) and the one-site Born law P(q | rho) = Tr(P_q rho) of open PR 9083, whose orientation uses only the lock: a record q leaves its own site in P_q. Consider records at two sites whose joint law is affine (effects E_qr >= 0) and whose marginals are each site's Born law whatever the other does. (i) Then E_qr = P_q (x) P_r: the ranges of P_q (x) I and I (x) P_r meet in one line, and E_(-q,-r) >= 0 forces full weight on it. (ii) Requiring that the partner's state after record q reproduce the joint law along every axis then gives the Lueders conditional state Tr_i[(P_q (x) I) rho (P_q (x) I)] / p_q (200 random pairs, deviation 1e-15). A reset update, which leaves the partner unchanged, misses the joint law by up to 0.243 on a singlet. (iii) With three qubits, two-qubit tomography of the rest after a record reproduces the rest's Lueders compression (deviation 3e-15). So the global compression update of open PR 9041 (D-perm), the 'collapse' at distant sites, follows from D-loc and the site-local lock. (iv) Compression consistency puts each effect of a two-possibility menu on its possibility. Completeness e1 P1 + e2 P2 = I then holds only for antipodal possibilities, with e1 = e2 = 1, so two-possibility menus are projective and antipodal. No derivation of D-loc, of the lock or of joint affinity beyond the steering argument of open PR 9083 is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_collapse_from_locality_of_marginals_2026_09_24.py
@@ -85,16 +85,29 @@ singlet this differs from `Tr((P_q ⊗ P_r) ρ)` by up to 0.243 (the bound is
 1/4). So the distant update cannot be skipped. That same update is what
 gives the Bell values of open PR 9043.
 
+## Theorem 3 — two-possibility menus are antipodal
+
+Let a qubit record have two possibilities `q₁`, `q₂`, with effects `E₁`, `E₂`.
+- The lock with compression consistency (open PR 9083, Theorem 4) puts
+  each effect on its possibility: `E_k = e_k P_{q_k}`.
+- Completeness then requires `e₁ P₁ + e₂ P₂ = I`. That holds only when
+  `P₁ ⊥ P₂`, that is, antipodal Bloch vectors, and then `e₁ = e₂ = 1`. ∎
+
+The runner shows the completeness residual is zero at 180°. It is 0.219,
+0.816 and 0.975 at 162°, 90° and 36°. So two-possibility menus are
+projective and antipodal. The antipodal part of D-menu follows. Menus with
+three or more possibilities, such as trines, are not treated.
+
 ## What this means for the lanes
 
 - **Born lane.** With open PR 9083, the quantum-probability rules of the
   campaign rest on:
   - D-loc;
   - the lock (the recorded site holds its possibility);
-  - the antipodal menu.
+  - two-possibility menus.
 
-  The trace rule, the Born orientation and the collapse at distant sites
-  all follow. Open PR 9084 adds that the evolution between records is
+  The trace rule, the Born orientation, the collapse at distant sites and
+  the antipodal menus all follow. Open PR 9084 adds that the evolution between records is
   linear, and unitary under D-rev.
 - **Record axiom.** The lock is close to the axiom's own text. What the
   campaign supplied as compression (D-perm) is its site-local part plus
@@ -102,7 +115,7 @@ gives the Bell values of open PR 9043.
 
 ## Checks
 
-The runner has 4 checks and all pass in under 1 s.
+The runner has 5 checks and all pass in under 1 s.
 
 | Check | Result |
 |---|---|
@@ -110,11 +123,12 @@ The runner has 4 checks and all pass in under 1 s.
 | Compression on the partner | 200 random pairs, largest deviation 1.1e-15. |
 | Reset fails | Largest `|joint − p_q p_r|` on a singlet is 0.243. |
 | The whole rest | 100 random three-qubit states, largest deviation 3.3e-15. |
+| Antipodal menus | Completeness residual 0 at 180°; 0.219, 0.816 and 0.975 at 162°, 90° and 36°. |
 
 ## What this does not do
 
 - It adopts no decision point, and does not derive D-loc or the lock.
-- It uses projective, two-outcome records on qubits. More general menus
-  are not treated.
+- It uses two-possibility records on qubits. Menus with three or more
+  possibilities are not treated.
 - Joint affinity rests on the steering argument of open PR 9083, applied
   to pairs. That step is argued, not separately computed.

@@ -21,6 +21,9 @@ every other site (supplied models, finite diagnostics, no physical reading):
 4. The whole rest: for three qubits, full two-qubit tomography of the rest
    after a record on the first reproduces the Lueders compression of the
    rest.
+5. Two-possibility menus are antipodal: compression consistency puts each
+   effect on its possibility, and completeness e1 P1 + e2 P2 = I is solvable
+   only for antipodal possibilities, with e1 = e2 = 1.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -147,6 +150,21 @@ for _ in range(100):
     worst3 = max(worst3, np.linalg.norm(tomography_rest(rho, P) - lueders_rest(rho, P)))
 check("the whole rest: two-qubit tomography of the rest after a record reproduces its Lueders compression",
       worst3 < 1e-12, f"100 random three-qubit states; largest deviation {worst3:.1e}")
+
+# ------------------------------------------------ 5. two-possibility menus are antipodal
+# compression consistency puts each effect on its possibility, E_k = e_k P_k; completeness e1 P1 + e2 P2 = I
+# has a solution exactly when P1 and P2 are orthogonal (antipodal Bloch vectors), with e1 = e2 = 1
+res_ = []
+for ang in (np.pi, 0.9 * np.pi, 0.5 * np.pi, 0.2 * np.pi):
+    n1 = np.array([0.0, 0.0, 1.0])
+    n2 = np.array([np.sin(ang), 0.0, np.cos(ang)])
+    A = np.array([proj(n1, 1).ravel(), proj(n2, 1).ravel()]).T
+    e, resid, _, _ = np.linalg.lstsq(A, I2.ravel(), rcond=None)
+    err = np.linalg.norm(A @ e - I2.ravel())
+    res_.append((round(float(np.degrees(ang)), 1), round(float(err), 12), np.round(np.real(e), 6).tolist()))
+check("two-possibility menus are antipodal: e1 P1 + e2 P2 = I is solvable only for antipodal possibilities, with e1 = e2 = 1",
+      res_[0][1] < 1e-12 and res_[0][2] == [1.0, 1.0] and all(r[1] > 1e-3 for r in res_[1:]),
+      "angle between possibilities (deg), completeness residual, weights: " + "; ".join(f"{r[0]}: {r[1]:.3f} {r[2]}" for r in res_))
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

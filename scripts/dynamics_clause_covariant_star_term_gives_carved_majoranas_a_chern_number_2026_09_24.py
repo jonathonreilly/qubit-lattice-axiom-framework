@@ -41,7 +41,9 @@ diagnostics, no physical reading):
 7. The phase needs zero dangling fields: its 12 zero modes sit entirely on
    dangling b Majoranas. Tilting the records to give dangling fields of
    size 0.1 couples them in, leaves 2 exact zero modes per cell, and the
-   negative bands' Chern number on the k_x planes becomes 0.
+   negative bands' Chern number on the k_x planes becomes 0. With open PR
+   9054's generic record contents no covariant odd star term stays free at
+   all on this carving.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -701,10 +703,50 @@ def chern_tilted(eps, p, kf, N=24):
 
 
 cx7 = [chern_tilted(0.1, 0, kf) for kf in (0.5, 2.5)]
+# generic contents (open PR 9054's rule: a fixed direction projected orthogonal to the kept axes of unrecorded
+# neighbours), which leave fields on the dangling axes: how many covariant terms stay free?
+gcontent = {}
+for r in itertools.product(range(4), repeat=3):
+    if r in CS:
+        continue
+    cons = {ax for ax in range(3) for d in (1, -1) if nbr(r, ax, d) in CS and nbr(nbr(r, ax, d), ax, d) in CS}
+    qv = np.array([1.0, np.sqrt(2.0), np.sqrt(3.0)])
+    for a_ in cons:
+        qv[a_] = 0.0
+    gcontent[r] = qv / np.linalg.norm(qv)
+g_reduced = {}
+for si, (sup, labs) in enumerate(STR):
+    for m in itertools.product(range(4), repeat=3):
+        Pm, coef = {}, 1.0
+        for s_, lab in zip(sup, labs):
+            x = tuple(np.array(m) + POS[s_])
+            if fold(x) in CS:
+                Pm[x] = lab
+            else:
+                coef *= gcontent[fold(x)][lab]
+                if abs(coef) < 1e-15:
+                    break
+        if abs(coef) > 1e-15:
+            g_reduced[(si, m)] = (tuple(sorted((fold(x), l) for x, l in Pm.items())), coef, Pm)
+g_keys = sorted({v_[0] for v_ in g_reduced.values()})
+g_kid = {k_: i for i, k_ in enumerate(g_keys)}
+g_pm = {v_[0]: v_[2] for v_ in g_reduced.values()}
+g_A = np.zeros((len(g_keys), len(VECS)))
+for vi, orb in enumerate(VECS):
+    for si, sg in orb.items():
+        for m in itertools.product(range(4), repeat=3):
+            if (si, m) in g_reduced:
+                fk, coef, _ = g_reduced[(si, m)]
+                g_A[g_kid[fk], vi] += sg * coef
+g_bad = np.array([(car.image(g_pm[k_]) is None) if g_pm[k_] else False for k_ in g_keys])
+_, g_sv, _ = np.linalg.svd(g_A[g_bad])
+g_free = len(VECS) - int(np.sum(g_sv > 1e-9))
 check("the phase needs zero dangling fields: its zero modes sit on dangling b's, and tilted records of size 0.1 remove the Chern number",
-      zm.shape[1] == 12 and abs(b_weight - 12) < 1e-9 and nz7 < 12 and all(c is not None and abs(c) < 1e-6 for c in cx7),
+      zm.shape[1] == 12 and abs(b_weight - 12) < 1e-9 and nz7 < 12 and all(c is not None and abs(c) < 1e-6 for c in cx7)
+      and g_free == 0,
       f"zero modes {zm.shape[1]}, weight on dangling b's {b_weight:.3f}; with dangling fields of size 0.1 (random signs): "
-      f"exact zero modes {nz7}, Chern numbers on two k_x planes {[float(round(c, 6)) + 0.0 for c in cx7]}")
+      f"exact zero modes {nz7}, Chern numbers on two k_x planes {[float(round(c, 6)) + 0.0 for c in cx7]}; "
+      f"with open PR 9054's generic contents no covariant term stays free (free dimension {g_free})")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

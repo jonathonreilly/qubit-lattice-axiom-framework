@@ -203,9 +203,9 @@ def vmc(L, alpha, sweeps, therm, seed):
                 seen[v] = len(path_v)
                 path_v.append(v)
             affected = sorted({p for l in cyc for p in pol[l]})
-            before = int(np.abs((sigma[plaq[affected]] * ps[affected]).sum(axis=1) == 4).sum())
+            before = int((np.abs((sigma[plaq[affected]] * ps[affected]).sum(axis=1)) == 4).sum())
             sigma[cyc] *= -1
-            after = int(np.abs((sigma[plaq[affected]] * ps[affected]).sum(axis=1) == 4).sum())
+            after = int((np.abs((sigma[plaq[affected]] * ps[affected]).sum(axis=1)) == 4).sum())
             tried += 1
             if r.random() < np.exp(2 * alpha * (after - before)):
                 accepted += 1
@@ -218,9 +218,9 @@ def vmc(L, alpha, sweeps, therm, seed):
             kin = 0.0
             for p in np.flatnonzero(fl):
                 aff = sorted({q for l in plaq[p] for q in pol[l]})
-                b = int(np.abs((sigma[plaq[aff]] * ps[aff]).sum(axis=1) == 4).sum())
+                b = int((np.abs((sigma[plaq[aff]] * ps[aff]).sum(axis=1)) == 4).sum())
                 sigma[plaq[p]] *= -1
-                a_ = int(np.abs((sigma[plaq[aff]] * ps[aff]).sum(axis=1) == 4).sum())
+                a_ = int((np.abs((sigma[plaq[aff]] * ps[aff]).sum(axis=1)) == 4).sum())
                 sigma[plaq[p]] *= -1
                 kin += np.exp(alpha * (a_ - b))
             energies.append(-kin / ice.np_)

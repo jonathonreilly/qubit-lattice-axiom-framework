@@ -1,7 +1,7 @@
 ---
 claim_id: ring_model_between_the_rokhsar_kivelson_and_pure_ring_points_small_torus_and_variational_diagnostics_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Setting, all supplied and none adopted: spin-1/2 link fields on the cubic lattice in doubled coordinates with the exact vertex Gauss law (three arrows in, three out: cubic ice), the covariant plaquette clause -g (U + U^dag) and the Rokhsar-Kivelson potential V counting flippable plaquettes (open PRs 9066, 9072). Finite diagnostics. (i) The fine Z_4^3 torus has 9600 ice states in 937 flip classes with a largest class of 864 (open PR 9072's counts reproduced), and the global ground state at V = 0 lies in that class. In it, along V/g = 0, 1/4, 1/2, 3/4, 1: ground energy per plaquette -0.3761, -0.2738, -0.1773, -0.0861, 0; gap 2.2258, 1.9417, 1.5934, 1.2758, 0.9696; fidelity with the uniform state 0.807, 0.885, 0.945, 0.984, 1; mean flippable number 10.12, 9.53, 9.01, 8.52, 8.00; total variation of the record measure from uniform 0.345, 0.263, 0.184, 0.099, 0. (ii) On the same class the Jastrow family exp(alpha N_flip) has, at V = 0, its optimum at alpha = 0.14 with energy per plaquette -0.3704 against the exact -0.3761 (relative excess 0.0153) and fidelity 0.9689 with the exact ground state; the uniform state has -0.3333. (iii) Loop-update variational Monte Carlo at V = 0 on the coarse 4^3, 6^3 and 8^3 tori: energy per plaquette at alpha = 0 is -0.2568(5), -0.2589(5), -0.2597(10), equal to minus the flippable density as it must be; the optimum is alpha = 0.2 on 4^3 (-0.2682(6)) and on 6^3 (-0.2703(4)), with -0.2701(7) on 8^3; the flippable density rises from 0.257-0.260 to 0.276-0.279; the connected flippable-plaquette structure factor per plaquette at (pi, pi, pi) is 0.315/0.310, 0.299/0.309, 0.303/0.294 at alpha = 0 / optimum on 4^3, 6^3, 8^3, and on 8^3 at the optimum it is 0, 0.077, 0.178, 0.294 at (0,0,0), (pi,0,0), (pi,pi,0), (pi,pi,pi). No phase of the pure-ring point is claimed; the Rokhsar-Kivelson point's Coulomb-class correlations are those of the uniform ice measure in the landed cubic-ice notes; no physical identification is made."
+claim_scope: "Setting, all supplied and none adopted: spin-1/2 link fields on the cubic lattice in doubled coordinates with the exact vertex Gauss law (three arrows in, three out: cubic ice), the covariant plaquette clause -g (U + U^dag) and the Rokhsar-Kivelson potential V counting flippable plaquettes (open PRs 9066, 9072). Finite diagnostics. (i) The fine Z_4^3 torus has 9600 ice states in 937 flip classes with a largest class of 864 (open PR 9072's counts reproduced), and the global ground state at V = 0 lies in that class. In it, along V/g = 0, 1/4, 1/2, 3/4, 1: ground energy per plaquette -0.3761, -0.2738, -0.1773, -0.0861, 0; gap 2.2258, 1.9417, 1.5934, 1.2758, 0.9696; fidelity with the uniform state 0.807, 0.885, 0.945, 0.984, 1; mean flippable number 10.12, 9.53, 9.01, 8.52, 8.00; total variation of the record measure from uniform 0.345, 0.263, 0.184, 0.099, 0. (ii) On the same class the Jastrow family exp(alpha N_flip) has, at V = 0, its optimum at alpha = 0.14 with energy per plaquette -0.3704 against the exact -0.3761 (relative excess 0.0153) and fidelity 0.9689 with the exact ground state; the uniform state has -0.3333. (iii) Loop-update variational Monte Carlo at V = 0 on the coarse 4^3, 6^3 and 8^3 tori: energy per plaquette at alpha = 0 is -0.2568(5), -0.2589(5), -0.2597(10), equal to minus the flippable density as it must be; the optimum is alpha = 0.2 on 4^3 (-0.2776(4)) and on 6^3 (-0.2796(3)), with -0.2797(3) on 8^3; the flippable density rises from 0.257-0.260 to 0.298-0.299; the connected flippable-plaquette structure factor per plaquette at (pi, pi, pi) is 0.315/0.298, 0.299/0.306, 0.303/0.263 at alpha = 0 / optimum on 4^3, 6^3, 8^3, and on 8^3 at the optimum it is 0, 0.091, 0.200, 0.263 at (0,0,0), (pi,0,0), (pi,pi,0), (pi,pi,pi). No phase of the pure-ring point is claimed; the Rokhsar-Kivelson point's Coulomb-class correlations are those of the uniform ice measure in the landed cubic-ice notes; no physical identification is made."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.py
@@ -34,9 +34,9 @@ finite diagnostics say about the interval between the two points.
   `α = 0.14`, within 1.5% in energy.
 - **On larger tori the family's optimum is size-stable and shows no
   ordering signal.** Variational Monte Carlo on the 4³, 6³ and 8³ coarse tori
-  puts the optimum at `α = 0.2` with energy per plaquette −0.268, −0.270,
-  −0.270, a flippable density of 0.28, and a connected flippable-plaquette
-  structure factor at `(π, π, π)` of 0.29–0.32 per plaquette on all three
+  puts the optimum at `α = 0.2` with energy per plaquette −0.278, −0.280,
+  −0.280, a flippable density of 0.30, and a connected flippable-plaquette
+  structure factor at `(π, π, π)` of 0.26–0.31 per plaquette on all three
   sizes, with no growth.
 
 So, as far as a weighted-ice variational family can see, the pure-ring
@@ -93,20 +93,20 @@ energy estimator sums, over flippable plaquettes, the amplitude ratio of the
 flipped configuration. At `α = 0` the estimator must equal minus the
 flippable density, and does: −0.2568(5), −0.2589(5), −0.2597(10) on 4³, 6³,
 8³.
-- **Energy against `α` on 4³**: −0.2568(5), −0.2632(5), −0.2682(6),
-  −0.2679(8), −0.2677(6), −0.2644(7), −0.2622(8), −0.2374(22) at
+- **Energy against `α` on 4³**: −0.2568(5), −0.2719(5), −0.2776(4),
+  −0.2768(8), −0.2712(6), −0.2632(22), −0.2363(52), −0.0297(92) at
   `α = 0, 0.1, 0.2, 0.25, 0.3, 0.35, 0.4, 0.6`. Optimum `α = 0.2`.
-- **6³**: −0.2589(5), −0.2703(4), −0.2634(9) at `α = 0, 0.2, 0.4`; optimum
-  0.2. **8³** at `α = 0.2`: −0.2701(7).
-- **Flippable density** at `α = 0` / optimum: 0.257 / 0.276 (4³),
-  0.260 / 0.279 (8³).
+- **6³**: −0.2589(5), −0.2796(3), −0.2547(18) at `α = 0, 0.2, 0.4`; optimum
+  0.2. **8³** at `α = 0.2`: −0.2797(3).
+- **Flippable density** at `α = 0` / optimum: 0.257 / 0.298 (4³),
+  0.260 / 0.299 (8³).
 - **Connected structure factor per plaquette of the flippable indicator**, on
-  8³ at the optimum: 0, 0.077, 0.178, 0.294 at `(0,0,0), (π,0,0), (π,π,0),
-  (π,π,π)`. At `(π,π,π)`, `α = 0` / optimum by size: 0.315 / 0.310 (4³),
-  0.299 / 0.309 (6³), 0.303 / 0.294 (8³).
+  8³ at the optimum: 0, 0.091, 0.200, 0.263 at `(0,0,0), (π,0,0), (π,π,0),
+  (π,π,π)`. At `(π,π,π)`, `α = 0` / optimum by size: 0.315 / 0.298 (4³),
+  0.299 / 0.306 (6³), 0.303 / 0.263 (8³).
 
 A Bragg peak would grow with the number of plaquettes; these values do not
-grow between 4³ and 8³. Loop acceptance at the optimum is 0.76.
+grow between 4³ and 8³. Loop acceptance at the optimum is 0.64.
 
 ## What this means for the lanes
 
@@ -149,13 +149,23 @@ The runner has 3 checks and all pass in about 45 seconds, single-threaded.
 |---|---|
 | Fine torus | 9600 / 937 / 864; global `V = 0` ground state in the 864 class; the table above. |
 | Jastrow, exact | `α* = 0.14`; −0.3704 vs −0.3761; fidelity 0.9689; uniform −0.3333. |
-| Monte Carlo | Energies above; optimum 0.2 on 4³ and 6³; densities 0.257 → 0.276, 0.260 → 0.279; `S(π,π,π)/N_p` 0.29–0.32 on all sizes; acceptance 0.76. |
+| Monte Carlo | Energies above; optimum 0.2 on 4³ and 6³; densities 0.257 → 0.298, 0.260 → 0.299; `S(π,π,π)/N_p` 0.26–0.31 on all sizes; acceptance 0.64. |
 
 ## Independent check
 
 None yet. The runner was rerun from a clean shell; seeded Monte Carlo
 reproduces the cached numbers; no independent checker has reviewed this
 block.
+
+**Correction (same day).** The first version's loop sampler counted only
+counter-clockwise flippable plaquettes in its acceptance step and kinetic
+estimator (`np.abs(c == 4)` where `np.abs(c) == 4` was meant). The `α = 0`
+numbers were unaffected; the `α > 0` energies, densities and structure
+factors were wrong and are corrected above. The optimum `α = 0.2` and the
+absence of growth in `S(π,π,π)` stand. The error was found by comparing this
+sampler with a second, independently written one against the exact
+all-states average on the fine torus at `α = 0.2` (0.3339; the corrected
+sampler gives 0.326, the old one 0.268).
 
 ## What this does not do
 

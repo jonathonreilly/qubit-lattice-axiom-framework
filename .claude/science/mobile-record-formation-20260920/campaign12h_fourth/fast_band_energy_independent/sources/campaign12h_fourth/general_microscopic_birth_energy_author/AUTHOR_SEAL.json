@@ -1,0 +1,111 @@
+{
+  "stage": "personal root candidate, independent PRE still isolated",
+  "sealed_utc": "2026-09-24T03:10:48.264135+00:00",
+  "private_branch": "codex/mobile-record-post-formation-campaign-20260923",
+  "private_HEAD": "c1b518984f4d21400075f43cad788f6c8e9f73f7",
+  "sources": [
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md",
+      "sha256": "de24a51431ba27f10d178286da2c95cc69081b06a9058d225d4840e3225388c0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "COMPLETE_TWO_CENTER.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COMPLETE_TWO_CENTER.stdout",
+      "bytes": 983,
+      "sha256": "ff429e9b274555847d40c252b1a74db038985de78db38f601e0b58abd6b43107"
+    },
+    {
+      "path": "COMPLETE_TWO_CENTER_RESULTS.json",
+      "bytes": 195815,
+      "sha256": "aae211583a95b185f09fc5aadba13bf6f8e0712b3bbfc2fb8d546f243e0d00b1"
+    },
+    {
+      "path": "DERIVATION_PLAN.md",
+      "bytes": 6765,
+      "sha256": "28c5b295e5869073e62f82f62a5a8136e6d0266b41d167cf28b40e193ac7067a"
+    },
+    {
+      "path": "DEVELOPMENT_AND_SCOPE.md",
+      "bytes": 2391,
+      "sha256": "c77ef145c12febcc9df27e660b2f8b18b392611c447a3621df8058aa7dc466b3"
+    },
+    {
+      "path": "EXECUTION_RECEIPT.json",
+      "bytes": 1065,
+      "sha256": "c5264dac519fcfbc0df6637d50b2a652fa377926e98ed654b9a98edfd8580302"
+    },
+    {
+      "path": "GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "bytes": 14834,
+      "sha256": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322"
+    },
+    {
+      "path": "LOCAL_LEAKAGE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "LOCAL_LEAKAGE.stdout",
+      "bytes": 187,
+      "sha256": "fc57a82bcbbac97acc3215465a28c15236f2f5cb4711066aaf14c2c1dacf564b"
+    },
+    {
+      "path": "LOCAL_LEAKAGE_RESULTS.json",
+      "bytes": 78503,
+      "sha256": "7bb43ba4f6bf37490c52413eb68f5f2d970c3d095d6be44dbcaa46094b8a3a06"
+    },
+    {
+      "path": "complete_two_center_control.py",
+      "bytes": 8515,
+      "sha256": "1417a8ac223f888891d2c19b9796096137a7f75e938a1174e999446082dbf00a"
+    },
+    {
+      "path": "local_leakage_control.py",
+      "bytes": 7818,
+      "sha256": "b7d38235d4521f98fc42f23c414649e1e2553b53ec9e3cd9d834a43cdc1c6c00"
+    }
+  ],
+  "scope": "Uniform fixed-graph full microscopic first-event moments and initial power; original instruments, supplied compensation/electric family and canonical dressed preparation.",
+  "independent_status": "Independent PRE remains unexposed. Progress messages containing preliminary independent formulas arrived after this root note and its final controls were completed, but before the metadata seal. No root mathematical argument, formula, result or tolerance was changed in response; completed PRE and post-source comparison remain pending.",
+  "excluded_claims": [
+    "finite-time cube energy accumulation",
+    "native physical selection",
+    "new axioms",
+    "audit verdict",
+    "TOE completion"
+  ]
+}

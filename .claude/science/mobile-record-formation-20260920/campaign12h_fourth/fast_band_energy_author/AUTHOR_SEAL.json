@@ -1,0 +1,107 @@
+{
+  "sealed_utc": "2026-09-24T03:40:20.409660+00:00",
+  "status": "personal root conditional candidate; independent PRE not exposed",
+  "artifacts": [
+    {
+      "path": "ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "bytes": 14352,
+      "sha256": "f71515321246fd2900b1ca801eb12e816b0a7ab2a1d8f820ae75bb87e28df02a"
+    },
+    {
+      "path": "COMPLETE_SPIN_ONE_CUBE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COMPLETE_SPIN_ONE_CUBE.stdout",
+      "bytes": 608,
+      "sha256": "a2a854814edfa677ecbecc2259b0230c597359a6f19aded9d296e74d5ec882df"
+    },
+    {
+      "path": "COMPLETE_SPIN_ONE_CUBE_RESULTS.json",
+      "bytes": 17964,
+      "sha256": "0cd6f347859d87e97bf65acc75895603634bebefa043a28bcff63c071ff55255"
+    },
+    {
+      "path": "DERIVATION_PLAN.md",
+      "bytes": 4192,
+      "sha256": "eec5a97cfd001f22f57bd7a10a44e22cd1d7d15adff2c0e99fdf3db2bbbc41e6"
+    },
+    {
+      "path": "DEVELOPMENT_AND_LIMITS.md",
+      "bytes": 2242,
+      "sha256": "100067fdbf19955d90d16420b33d2b29f61eaf514e4d1d06986b459acb2b62c7"
+    },
+    {
+      "path": "EXACT_FAST_BAND_PATHS.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EXACT_FAST_BAND_PATHS.stdout",
+      "bytes": 198,
+      "sha256": "132941b03f68376d0ec4d9d7359dd45b3792378282c8a63b35c9df6d2bab25df"
+    },
+    {
+      "path": "EXACT_FAST_BAND_PATHS_RESULTS.json",
+      "bytes": 206154,
+      "sha256": "91f592e1b29da011368584e3cb267597f9d408d4406eee3e4396ade76ba00c75"
+    },
+    {
+      "path": "EXECUTION_RECEIPT.json",
+      "bytes": 1270,
+      "sha256": "784e9daf4270d096a4721c985e438688f315b824e619a89b28ab62821695feca"
+    },
+    {
+      "path": "complete_spin_one_cube_control.py",
+      "bytes": 7249,
+      "sha256": "d2048de6b12bdedc2e1fc1c20af3e8185bbcbea5d513b5be177cd6bca7d978f3"
+    },
+    {
+      "path": "exact_fast_band_paths.py",
+      "bytes": 3979,
+      "sha256": "afc2ba027bd86b568ee6427f70d01593272e70ac8ba1bbabe62c73bb19c3467c"
+    },
+    {
+      "path": "initial_eigensolver_start/COMPLETE_SPIN_ONE_CUBE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial_eigensolver_start/COMPLETE_SPIN_ONE_CUBE.stdout",
+      "bytes": 608,
+      "sha256": "4f3bfe7c3866a4a64ac426fbd12214c3360cfd6cd33b84036c6ba3cd4caabc05"
+    },
+    {
+      "path": "initial_eigensolver_start/COMPLETE_SPIN_ONE_CUBE_RESULTS.json",
+      "bytes": 17916,
+      "sha256": "c56f039efab63b72180598fe3c6e362ab5ba4a0adc1c1566aa0866fe9fc5915b"
+    },
+    {
+      "path": "initial_eigensolver_start/complete_spin_one_cube_control.py",
+      "bytes": 7183,
+      "sha256": "f9269461eba1f403c83e326246ab66f398bcde57eaa2b529cf41c70d5f1671f6"
+    }
+  ],
+  "sources_sha256": {
+    "general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322",
+    "general_microscopic_birth_energy_author/AUTHOR_SEAL.json": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9",
+    "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+    "local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0",
+    "local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9",
+    "post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md": "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5"
+  },
+  "provisional_dependency": "The prior general microscopic jump coefficient is separately under completed-PRE/current-POST checking; this root uses that explicit conditional premise.",
+  "provenance": "Root derivation plan and initial primitive probe preceded an independent preliminary formula message. This final argument and metadata seal follow that message. No mathematical correction or target was taken from it; completed PRE and source comparison remain pending.",
+  "scope": "Actual original cube birth, lambda0, zero circulation, supplied canonical dressing. Uniform bounded fast time t=epsilon\u00b2tau energy and second-event probability; original instruments retained.",
+  "not_claimed": [
+    "finite positive physical time limit",
+    "permanent storage",
+    "complete eventual decay",
+    "heat or reservoir transfer",
+    "physical selection",
+    "audit verdict",
+    "new axiom",
+    "TOE completion"
+  ]
+}

@@ -1,0 +1,13 @@
+Exact polynomial paths and complete author certificates agree.
+{"epsilon": 0.04, "max_energy_error": 0.028781024638927066, "max_count_error": 0.01541405296195042}
+{"epsilon": 0.02, "max_energy_error": 0.007308379794755515, "max_count_error": 0.0021579962186843993}
+{"epsilon": 0.01, "max_energy_error": 0.0018315713737726558, "max_count_error": 0.0005305245531959102}
+{
+  "all_assertions_passed": true,
+  "path_cases": 36,
+  "certificate_entries": 444,
+  "matrix_rows": 36,
+  "compared_fields": 360,
+  "max_author_row_difference": 3.824496275228739e-08,
+  "elapsed_seconds": 8.054863542085513
+}

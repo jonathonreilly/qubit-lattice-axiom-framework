@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-24T03:40:20.407934+00:00",
+  "stage": "personal root final pre-seal controls",
+  "independent": false,
+  "python": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "runs": [
+    {
+      "script": "complete_spin_one_cube_control.py",
+      "exit_code": 0,
+      "result": "COMPLETE_SPIN_ONE_CUBE_RESULTS.json",
+      "stdout": "COMPLETE_SPIN_ONE_CUBE.stdout",
+      "stderr": "COMPLETE_SPIN_ONE_CUBE.stderr",
+      "environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1"
+      },
+      "actual_complete_physical_dimensions": [
+        3197,
+        5604,
+        672
+      ]
+    },
+    {
+      "script": "exact_fast_band_paths.py",
+      "exit_code": 0,
+      "result": "EXACT_FAST_BAND_PATHS_RESULTS.json",
+      "stdout": "EXACT_FAST_BAND_PATHS.stdout",
+      "stderr": "EXACT_FAST_BAND_PATHS.stderr"
+    }
+  ],
+  "failure_history": "Both initial scientific executions passed. Complete matrix control rerun after adding deterministic eigensolver initial vector; first successful source/results preserved. No relaxed threshold or scientific assertion change.",
+  "limits": "Fast physical time t=epsilon\u00b2tau after an actual birth; no fixed-positive-physical-time, heat or eventual complete-decay theorem."
+}

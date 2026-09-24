@@ -1,0 +1,28 @@
+{
+  "all_assertions_passed": true,
+  "dimensions": {
+    "N4": 3197,
+    "N6": 5604,
+    "N8": 672,
+    "P_N4": 69,
+    "W1_N6": 3168
+  },
+  "errors": [
+    {
+      "epsilon": 0.04,
+      "max_energy_error": 0.028781024638925734,
+      "max_second_birth_error": 0.015414053334222189
+    },
+    {
+      "epsilon": 0.02,
+      "max_energy_error": 0.007308379791806985,
+      "max_second_birth_error": 0.0021579950779302415
+    },
+    {
+      "epsilon": 0.01,
+      "max_energy_error": 0.001831571386323061,
+      "max_second_birth_error": 0.0005305299355571336
+    }
+  ],
+  "wall_seconds": 6.561172959161922
+}

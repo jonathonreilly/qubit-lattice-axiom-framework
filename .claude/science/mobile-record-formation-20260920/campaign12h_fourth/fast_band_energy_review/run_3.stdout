@@ -1,0 +1,19 @@
+Exact primitive rotor paths complete.
+Complete spin-one physical matrices built.
+{
+  "all_assertions_passed": true,
+  "primitive_mark_cases": 36,
+  "basis_dimensions": {
+    "4": 3197,
+    "6": 5604,
+    "8": 672
+  },
+  "epsilon_rows": 3,
+  "max_error_over_epsilon_squared": 18.08364016272295,
+  "finite_spin_one_cubic_forms": [
+    35.99999999999999,
+    17.999999999999996,
+    27.0
+  ],
+  "elapsed_seconds": 2.144718582974747
+}

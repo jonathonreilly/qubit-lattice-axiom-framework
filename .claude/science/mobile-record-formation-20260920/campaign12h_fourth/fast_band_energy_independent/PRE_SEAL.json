@@ -1,0 +1,110 @@
+{
+  "sealed_utc": "2026-09-24T03:46:13.081139+00:00",
+  "stage": "Independent PRE; no new fast-band author comparison",
+  "full_argument": "PRE_RECONSTRUCTION.md",
+  "current_checkpoint": "PRE_STATUS.md",
+  "provisional_prior_initial_coefficient_seal": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9",
+  "conclusion": "Leading full microscopic cube energy evolves on t=epsilon^2 tau under the bounded lossy W=1 band. The zero-field first-mark leakage is initially dark but becomes bright; leading loss begins cubically. Positive leading energy remains at every finite tau. Later physical time and infinite tau are not settled.",
+  "artifacts": [
+    {
+      "path": "CONTROL_RESULTS.json",
+      "bytes": 322532,
+      "sha256": "a57eb87544915359fe034316dea824266ac35c333e3ad193ae6e7f4b5c16c0d9"
+    },
+    {
+      "path": "FAILED_ROUTES_AND_LIMITS.md",
+      "bytes": 1945,
+      "sha256": "eb57e51cf1560ada8e28aac65ed877f4278285b53902b5fe227121a6fe5cb79e"
+    },
+    {
+      "path": "PRE_RECEIPT.json",
+      "bytes": 1035,
+      "sha256": "27e58dd6468ac3ab0acdf9751f645dc316850ecbe91dc14030859baa38280f50"
+    },
+    {
+      "path": "PRE_RECONSTRUCTION.md",
+      "bytes": 20611,
+      "sha256": "0373738ef7e30378d349f7fab57d4b74993b2a73addc1e3b96abe3c25ea9f634"
+    },
+    {
+      "path": "PRE_STATUS.md",
+      "bytes": 2330,
+      "sha256": "7018c958a939174565044280b71a056d0aa4efb6189312f5460739f9d0e576cb"
+    },
+    {
+      "path": "RUN_01.stderr.log",
+      "bytes": 1062,
+      "sha256": "766c7051dd92cef7c77ed438e0822c744a4e1c7b7df8ffd520f0e1edad758da2"
+    },
+    {
+      "path": "RUN_01.stdout.log",
+      "bytes": 431,
+      "sha256": "72b575c4717339aae93d5a47dfa3d656bfa5224929c02ed9575b71be51c6809d"
+    },
+    {
+      "path": "RUN_01_RECEIPT.json",
+      "bytes": 291,
+      "sha256": "600180fdaaa9ff8b371be89ecb09e256285df88c058985700286faeb7a21bb5b"
+    },
+    {
+      "path": "RUN_01_cube_control.py",
+      "bytes": 10594,
+      "sha256": "cf51bc234d72cb26667b740dddf9f29b27b3c43826dac74df941401a113df125"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 6289,
+      "sha256": "a658199cb0cc804e24fc4e4c640103b6a390ed31cb02918cb4d81e0f4ceec3db"
+    },
+    {
+      "path": "cube_control.py",
+      "bytes": 10594,
+      "sha256": "cf51bc234d72cb26667b740dddf9f29b27b3c43826dac74df941401a113df125"
+    },
+    {
+      "path": "sources/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "bytes": 12525,
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617"
+    },
+    {
+      "path": "sources/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "bytes": 2455,
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+    },
+    {
+      "path": "sources/campaign12h_fourth/general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "bytes": 4954,
+      "sha256": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9"
+    },
+    {
+      "path": "sources/campaign12h_fourth/general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "bytes": 14834,
+      "sha256": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322"
+    },
+    {
+      "path": "sources/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "sources/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "sources/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "sources/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "sources/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "bytes": 16828,
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    }
+  ]
+}

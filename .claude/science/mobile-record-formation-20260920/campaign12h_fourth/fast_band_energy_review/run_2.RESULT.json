@@ -1,0 +1,512 @@
+{
+  "scope": "Complete physical spin-one cube; exact canonical low spectral preparation, actual original first mark, complete postbirth no-event evolution and exact terminal energy zero. Fixed-S epsilon refinement, not numerical S-to-infinity proof.",
+  "dimensions": {
+    "N4": 3197,
+    "N6": 5604,
+    "N8": 672,
+    "P_N4": 69,
+    "W1_N6": 3168
+  },
+  "delta": 1.0,
+  "kappa": 0.7,
+  "both_original_instruments_have_identical_Gamma": true,
+  "initial_band_norms": [
+    4.0,
+    2.0,
+    6.0
+  ],
+  "initial_jump_norms": [
+    2.0,
+    2.0,
+    4.0
+  ],
+  "next_slow_rates": [
+    8.0,
+    8.0,
+    8.0
+  ],
+  "spin_one_normalized_Gamma_G1R": [
+    35.99999999999999,
+    17.999999999999996,
+    27.0
+  ],
+  "spectral_checks": [
+    {
+      "epsilon": 0.04,
+      "low_rank": 69,
+      "dimension": 3197,
+      "minimum_overlap_eigenvalue": 0.9806400823598697,
+      "first_excluded_eigenvalue": 0.9810290954345526,
+      "max_low_eigenvector_residual": 3.5177156203614737e-15
+    },
+    {
+      "epsilon": 0.02,
+      "low_rank": 69,
+      "dimension": 3197,
+      "minimum_overlap_eigenvalue": 0.9951895806531995,
+      "first_excluded_eigenvalue": 0.9952146251903956,
+      "max_low_eigenvector_residual": 3.709949607386857e-15
+    },
+    {
+      "epsilon": 0.01,
+      "low_rank": 69,
+      "dimension": 3197,
+      "minimum_overlap_eigenvalue": 0.9987993421949398,
+      "first_excluded_eigenvalue": 0.9988009350351406,
+      "max_low_eigenvector_residual": 3.887819743502347e-15
+    }
+  ],
+  "rows": [
+    {
+      "epsilon": 0.04,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9712189753610738,
+      "fast_survival_prediction": 1.9999999999999996,
+      "energy_error": 0.028781024638925734,
+      "second_birth_probability_over_epsilon2": -6.938893903907228e-13,
+      "second_birth_prediction": 4.440892098500626e-16,
+      "second_birth_error": 6.943334796005729e-13
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.979225155566418,
+      "fast_survival_prediction": 0.9999999999999998,
+      "energy_error": 0.020774844433581796,
+      "second_birth_probability_over_epsilon2": -4.163336342344337e-13,
+      "second_birth_prediction": 2.220446049250313e-16,
+      "second_birth_error": 4.1655567883935873e-13
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4752233547794573,
+      "fast_survival_prediction": 1.5,
+      "energy_error": 0.02477664522054268,
+      "second_birth_probability_over_epsilon2": -1.2490009027033011e-12,
+      "second_birth_prediction": 0.0,
+      "second_birth_error": 1.2490009027033011e-12
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.09999999999999999,
+      "physical_time": 0.00015999999999999999,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9644453756693412,
+      "fast_survival_prediction": 1.9922420950220234,
+      "energy_error": 0.027796719352682242,
+      "second_birth_probability_over_epsilon2": 0.5629066152001982,
+      "second_birth_prediction": 0.5677579049779766,
+      "second_birth_error": 0.004851289777778378
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.09999999999999999,
+      "physical_time": 0.00015999999999999999,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9758437136270689,
+      "fast_survival_prediction": 0.9961218820826224,
+      "energy_error": 0.020278168455553525,
+      "second_birth_probability_over_epsilon2": 0.5608337282533155,
+      "second_birth_prediction": 0.5638781179173776,
+      "second_birth_error": 0.003044389664062175
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.09999999999999999,
+      "physical_time": 0.00015999999999999999,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4701473739616187,
+      "fast_survival_prediction": 1.4941836576955403,
+      "energy_error": 0.024036283733921637,
+      "second_birth_probability_over_epsilon2": 0.5618680926465502,
+      "second_birth_prediction": 0.5658163423044598,
+      "second_birth_error": 0.003948249657909519
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.19999999999999998,
+      "physical_time": 0.00031999999999999997,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.919765197269342,
+      "fast_survival_prediction": 1.9464999104481129,
+      "energy_error": 0.026734713178770964,
+      "second_birth_probability_over_epsilon2": 1.163387795868262,
+      "second_birth_prediction": 1.1735000895518872,
+      "second_birth_error": 0.010112293683625317
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.19999999999999998,
+      "physical_time": 0.00031999999999999997,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9535192291090288,
+      "fast_survival_prediction": 0.9732713528689402,
+      "energy_error": 0.019752123759911422,
+      "second_birth_probability_over_epsilon2": 1.1401206797996555,
+      "second_birth_prediction": 1.1467286471310598,
+      "second_birth_error": 0.006607967331404341
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.19999999999999998,
+      "physical_time": 0.00031999999999999997,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4366863180391962,
+      "fast_survival_prediction": 1.459928426948277,
+      "energy_error": 0.02324210890908085,
+      "second_birth_probability_over_epsilon2": 1.1517112581532762,
+      "second_birth_prediction": 1.160071573051723,
+      "second_birth_error": 0.008360314898446797
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.3,
+      "physical_time": 0.00048,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.8277850420418493,
+      "fast_survival_prediction": 1.853630335120946,
+      "energy_error": 0.025845293079096665,
+      "second_birth_probability_over_epsilon2": 1.8109556115448315,
+      "second_birth_prediction": 1.8263696648790537,
+      "second_birth_error": 0.015414053334222189
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.3,
+      "physical_time": 0.00048,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9076075503310359,
+      "fast_survival_prediction": 0.926930789405346,
+      "energy_error": 0.019323239074310106,
+      "second_birth_probability_over_epsilon2": 1.7425487329585791,
+      "second_birth_prediction": 1.7530692105946537,
+      "second_birth_error": 0.010520477636074554
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.3,
+      "physical_time": 0.00048,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.3679339025508577,
+      "fast_survival_prediction": 1.3905118059528971,
+      "energy_error": 0.022577903402039468,
+      "second_birth_probability_over_epsilon2": 1.7765167583374402,
+      "second_birth_prediction": 1.7894881940471026,
+      "second_birth_error": 0.012971435709662416
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.992801016024791,
+      "fast_survival_prediction": 1.9999999999999996,
+      "energy_error": 0.007198983975208462,
+      "second_birth_probability_over_epsilon2": -5.551115123125783e-13,
+      "second_birth_prediction": 4.440892098500626e-16,
+      "second_birth_error": 5.555556015224283e-13
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.994801472581092,
+      "fast_survival_prediction": 0.9999999999999998,
+      "energy_error": 0.005198527418907806,
+      "second_birth_probability_over_epsilon2": -1.1102230246251565e-12,
+      "second_birth_prediction": 2.220446049250313e-16,
+      "second_birth_error": 1.1104450692300816e-12
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4938013244593549,
+      "fast_survival_prediction": 1.5,
+      "energy_error": 0.006198675540645127,
+      "second_birth_probability_over_epsilon2": 8.326672684688674e-13,
+      "second_birth_prediction": 0.0,
+      "second_birth_error": 8.326672684688674e-13
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.09999999999999999,
+      "physical_time": 3.9999999999999996e-05,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9851577698518155,
+      "fast_survival_prediction": 1.9922420950220234,
+      "energy_error": 0.007084325170207961,
+      "second_birth_probability_over_epsilon2": 0.5668084050072797,
+      "second_birth_prediction": 0.5677579049779766,
+      "second_birth_error": 0.000949499970696932
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.09999999999999999,
+      "physical_time": 3.9999999999999996e-05,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9909809271343855,
+      "fast_survival_prediction": 0.9961218820826224,
+      "energy_error": 0.005140954948236964,
+      "second_birth_probability_over_epsilon2": 0.5632506818203931,
+      "second_birth_prediction": 0.5638781179173776,
+      "second_birth_error": 0.0006274360969845683
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.09999999999999999,
+      "physical_time": 3.9999999999999996e-05,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4880710787857052,
+      "fast_survival_prediction": 1.4941836576955403,
+      "energy_error": 0.006112578909835076,
+      "second_birth_probability_over_epsilon2": 0.5650278734864456,
+      "second_birth_prediction": 0.5658163423044598,
+      "second_birth_error": 0.0007884688180141985
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.19999999999999998,
+      "physical_time": 7.999999999999999e-05,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9391962950656063,
+      "fast_survival_prediction": 1.9464999104481129,
+      "energy_error": 0.0073036153825065675,
+      "second_birth_probability_over_epsilon2": 1.1722082485424168,
+      "second_birth_prediction": 1.1735000895518872,
+      "second_birth_error": 0.0012918410094704402
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.19999999999999998,
+      "physical_time": 7.999999999999999e-05,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.968022235057808,
+      "fast_survival_prediction": 0.9732713528689402,
+      "energy_error": 0.005249117811132131,
+      "second_birth_probability_over_epsilon2": 1.1456911723234375,
+      "second_birth_prediction": 1.1467286471310598,
+      "second_birth_error": 0.001037474807622285
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.19999999999999998,
+      "physical_time": 7.999999999999999e-05,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.453652616478231,
+      "fast_survival_prediction": 1.459928426948277,
+      "energy_error": 0.006275810470045995,
+      "second_birth_probability_over_epsilon2": 1.1589061808581214,
+      "second_birth_prediction": 1.160071573051723,
+      "second_birth_error": 0.0011653921936016776
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.3,
+      "physical_time": 0.00012,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.846321955329139,
+      "fast_survival_prediction": 1.853630335120946,
+      "energy_error": 0.007308379791806985,
+      "second_birth_probability_over_epsilon2": 1.8242116698011235,
+      "second_birth_prediction": 1.8263696648790537,
+      "second_birth_error": 0.0021579950779302415
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.3,
+      "physical_time": 0.00012,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.921683385015727,
+      "fast_survival_prediction": 0.926930789405346,
+      "energy_error": 0.005247404389619015,
+      "second_birth_probability_over_epsilon2": 1.7512665486871248,
+      "second_birth_prediction": 1.7530692105946537,
+      "second_birth_error": 0.0018026619075288686
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.3,
+      "physical_time": 0.00012,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.3842365075374599,
+      "fast_survival_prediction": 1.3905118059528971,
+      "energy_error": 0.00627529841543728,
+      "second_birth_probability_over_epsilon2": 1.7875047060172955,
+      "second_birth_prediction": 1.7894881940471026,
+      "second_birth_error": 0.001983488029807079
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9982000608735178,
+      "fast_survival_prediction": 1.9999999999999996,
+      "energy_error": 0.0017999391264817977,
+      "second_birth_probability_over_epsilon2": -4.440892098500626e-12,
+      "second_birth_prediction": 4.440892098500626e-16,
+      "second_birth_error": 4.441336187710476e-12
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9987000905071898,
+      "fast_survival_prediction": 0.9999999999999998,
+      "energy_error": 0.001299909492810003,
+      "second_birth_probability_over_epsilon2": -2.220446049250313e-12,
+      "second_birth_prediction": 2.220446049250313e-16,
+      "second_birth_error": 2.220668093855238e-12
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.498450080692842,
+      "fast_survival_prediction": 1.5,
+      "energy_error": 0.0015499193071579764,
+      "second_birth_probability_over_epsilon2": 1.1102230246251565e-12,
+      "second_birth_prediction": 0.0,
+      "second_birth_error": 1.1102230246251565e-12
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.09999999999999999,
+      "physical_time": 9.999999999999999e-06,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9904726930404775,
+      "fast_survival_prediction": 1.9922420950220234,
+      "energy_error": 0.0017694019815459594,
+      "second_birth_probability_over_epsilon2": 0.5675171850538785,
+      "second_birth_prediction": 0.5677579049779766,
+      "second_birth_error": 0.0002407199240981317
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.09999999999999999,
+      "physical_time": 9.999999999999999e-06,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9948371919388158,
+      "fast_survival_prediction": 0.9961218820826224,
+      "energy_error": 0.0012846901438066105,
+      "second_birth_probability_over_epsilon2": 0.5637197741958921,
+      "second_birth_prediction": 0.5638781179173776,
+      "second_birth_error": 0.0001583437214854877
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.09999999999999999,
+      "physical_time": 9.999999999999999e-06,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4926566125644605,
+      "fast_survival_prediction": 1.4941836576955403,
+      "energy_error": 0.0015270451310798183,
+      "second_birth_probability_over_epsilon2": 0.5656167995671257,
+      "second_birth_prediction": 0.5658163423044598,
+      "second_birth_error": 0.00019954273733402417
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.19999999999999998,
+      "physical_time": 1.9999999999999998e-05,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9446794348883756,
+      "fast_survival_prediction": 1.9464999104481129,
+      "energy_error": 0.0018204755597373001,
+      "second_birth_probability_over_epsilon2": 1.1731662471770044,
+      "second_birth_prediction": 1.1735000895518872,
+      "second_birth_error": 0.0003338423748828756
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.19999999999999998,
+      "physical_time": 1.9999999999999998e-05,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9719613427767299,
+      "fast_survival_prediction": 0.9732713528689402,
+      "energy_error": 0.001310010092210323,
+      "second_birth_probability_over_epsilon2": 1.1464642910352651,
+      "second_birth_prediction": 1.1467286471310598,
+      "second_birth_error": 0.0002643560957946711
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.19999999999999998,
+      "physical_time": 1.9999999999999998e-05,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.458363293527587,
+      "fast_survival_prediction": 1.459928426948277,
+      "energy_error": 0.0015651334206900902,
+      "second_birth_probability_over_epsilon2": 1.1597723473399935,
+      "second_birth_prediction": 1.160071573051723,
+      "second_birth_error": 0.00029922571172957824
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.3,
+      "physical_time": 3e-05,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.851798763734623,
+      "fast_survival_prediction": 1.853630335120946,
+      "energy_error": 0.001831571386323061,
+      "second_birth_probability_over_epsilon2": 1.8258391349434966,
+      "second_birth_prediction": 1.8263696648790537,
+      "second_birth_error": 0.0005305299355571336
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.3,
+      "physical_time": 3e-05,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9256163352551713,
+      "fast_survival_prediction": 0.926930789405346,
+      "energy_error": 0.0013144541501747264,
+      "second_birth_probability_over_epsilon2": 1.7526231852604823,
+      "second_birth_prediction": 1.7530692105946537,
+      "second_birth_error": 0.0004460253341713738
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.3,
+      "physical_time": 3e-05,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.3889394760646259,
+      "fast_survival_prediction": 1.3905118059528971,
+      "energy_error": 0.0015723298882712733,
+      "second_birth_probability_over_epsilon2": 1.7889990638253472,
+      "second_birth_prediction": 1.7894881940471026,
+      "second_birth_error": 0.0004891302217553406
+    }
+  ],
+  "errors": [
+    {
+      "epsilon": 0.04,
+      "max_energy_error": 0.028781024638925734,
+      "max_second_birth_error": 0.015414053334222189
+    },
+    {
+      "epsilon": 0.02,
+      "max_energy_error": 0.007308379791806985,
+      "max_second_birth_error": 0.0021579950779302415
+    },
+    {
+      "epsilon": 0.01,
+      "max_energy_error": 0.001831571386323061,
+      "max_second_birth_error": 0.0005305299355571336
+    }
+  ],
+  "all_assertions_passed": true,
+  "wall_seconds": 6.026121832896024
+}

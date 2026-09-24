@@ -1,0 +1,18 @@
+{
+  "start_utc": "2026-09-24T04:04:58.493755+00:00",
+  "completed_utc": "2026-09-24T04:05:08.083988+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "post_compare.py"
+  ],
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "elapsed_seconds": 9.589953875169158,
+  "script_sha256": "0ecdfe92821b472c391dac193df9af1194eabcf0663cf591a8da6c05260e3daa",
+  "stdout": "POST_RUN_01.stdout.log",
+  "stderr": "POST_RUN_01.stderr.log",
+  "result_exists": false
+}

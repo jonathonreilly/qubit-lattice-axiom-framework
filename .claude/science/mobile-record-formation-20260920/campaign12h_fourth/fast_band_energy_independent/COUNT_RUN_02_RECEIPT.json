@@ -1,0 +1,9 @@
+{
+  "finished_utc": "2026-09-24T03:55:57.645115+00:00",
+  "elapsed_seconds": 0.6232033339329064,
+  "exit_code": 0,
+  "code_sha256": "7391a8ff3363bb374b75412a7b7c27a65ab4d7bb6c325098081ecbd8c095d66e",
+  "derivation_sha256": "054d9af740eceb6e0948eceba291375b125ed92150138eefde174fa34517207b",
+  "author_proof_code_rows_read": false,
+  "author_metadata_and_proposed_formula_known": true
+}

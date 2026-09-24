@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/count_control.py", line 40, in <module>
+    result={'all_assertions_passed':True,'exact_primitive_cases':rows,'own_PRE_full_generator_count_comparison':numerical,'author_proof_code_or_rows_read':False,'source_sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
+                                                                                                                                                                                                ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'read_bytes'

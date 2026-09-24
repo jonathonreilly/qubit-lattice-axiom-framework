@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-09-24T04:18:39.517193+00:00",
+  "temporary_copy": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/campaign12h_fourth",
+  "runs": [
+    {
+      "script": "fast_band_energy_author/exact_fast_band_paths.py",
+      "source_sha256": "afc2ba027bd86b568ee6427f70d01593272e70ac8ba1bbabe62c73bb19c3467c",
+      "exit_code": 0,
+      "wall_seconds": 0.48256758297793567,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_1.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_1.stderr",
+      "result_path": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_1.RESULT.json",
+      "result_sha256": "91f592e1b29da011368584e3cb267597f9d408d4406eee3e4396ade76ba00c75",
+      "comparison": "All scientific JSON fields; absolute floating tolerance5e-8; only top-level creation/runtime metadata excluded. Primary runner assertions unchanged."
+    },
+    {
+      "script": "fast_band_energy_author/complete_spin_one_cube_control.py",
+      "source_sha256": "d2048de6b12bdedc2e1fc1c20af3e8185bbcbea5d513b5be177cd6bca7d978f3",
+      "exit_code": 0,
+      "wall_seconds": 6.574458500137553,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_2.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_2.stderr",
+      "result_path": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_2.RESULT.json",
+      "result_sha256": "0e36e35ff5fd2d27a0162af9dd6284058a56c22b8d6edbc311b0e991db2b3bfa",
+      "comparison": "All scientific JSON fields; absolute floating tolerance5e-8; only top-level creation/runtime metadata excluded. Primary runner assertions unchanged."
+    },
+    {
+      "script": "fast_band_energy_independent/cube_control.py",
+      "source_sha256": "cf51bc234d72cb26667b740dddf9f29b27b3c43826dac74df941401a113df125",
+      "exit_code": 0,
+      "wall_seconds": 2.6137014171108603,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_3.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_3.stderr",
+      "result_path": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_3.RESULT.json",
+      "result_sha256": "2ec431eb6efd8ec6a5c1616f6fd655156c6242ac20fc32215f1cfa4547a2e5c4",
+      "comparison": "All scientific JSON fields; absolute floating tolerance5e-8; only top-level creation/runtime metadata excluded. Primary runner assertions unchanged."
+    },
+    {
+      "script": "fast_band_energy_independent/count_control.py",
+      "source_sha256": "7391a8ff3363bb374b75412a7b7c27a65ab4d7bb6c325098081ecbd8c095d66e",
+      "exit_code": 0,
+      "wall_seconds": 0.3002404998987913,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_4.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_4.stderr",
+      "result_path": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_4.RESULT.json",
+      "result_sha256": "66aa17020535ae2abd7016b2f33b1ad04228d7a56245cb8c1c5e8a0d392cd6ea",
+      "comparison": "All scientific JSON fields; absolute floating tolerance5e-8; only top-level creation/runtime metadata excluded. Primary runner assertions unchanged."
+    },
+    {
+      "script": "fast_band_energy_independent/post_compare.py",
+      "source_sha256": "5f3cfa4384b8911afbe974fffa530e5e6cebc3b69b401c3226d4647f069ef49d",
+      "exit_code": 0,
+      "wall_seconds": 8.60130591597408,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_5.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_5.stderr",
+      "result_path": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/fast-band-portable-p0ae3jb9/run_5.RESULT.json",
+      "result_sha256": "2e376ffa608a72f253544bf221d8853d82d972814d68cf9db8534b260c179bf4",
+      "comparison": "All scientific JSON fields; absolute floating tolerance5e-8; only top-level creation/runtime metadata excluded. Primary runner assertions unchanged."
+    }
+  ],
+  "all_five_primary_scientific_replays_passed": true,
+  "historical_author_pair_precision_failure_remains_false_in_evidence": true,
+  "limits": "Historical provenance flags in replayed JSON describe the original derivation. Replays are not new independent evidence or new blind PREs."
+}

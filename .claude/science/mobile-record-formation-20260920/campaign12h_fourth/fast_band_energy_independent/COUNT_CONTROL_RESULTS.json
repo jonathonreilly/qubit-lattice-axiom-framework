@@ -1,0 +1,2430 @@
+{
+  "all_assertions_passed": true,
+  "exact_primitive_cases": [
+    {
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        0,
+        4,
+        4,
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        2,
+        4,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        2,
+        4,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        4,
+        4,
+        4,
+        8,
+        0,
+        4,
+        4
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        4,
+        2,
+        0,
+        2,
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        4,
+        2,
+        0,
+        2,
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        0,
+        4,
+        4,
+        8,
+        4,
+        0,
+        4,
+        4,
+        0,
+        4
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        1
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        1
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        1
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        1
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        1
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        1
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        8,
+        4
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        2
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        2
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        4,
+        2,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        2
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        2
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        4,
+        2,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        2
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        4,
+        4,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        2
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        4,
+        0,
+        4,
+        0,
+        0,
+        0,
+        4,
+        8,
+        4,
+        0,
+        4,
+        4
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        4,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        4,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        4,
+        4,
+        8,
+        0,
+        0,
+        0,
+        4,
+        4,
+        0,
+        4,
+        4,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        1
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        1
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        1
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        1
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        1
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        1
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        0,
+        4,
+        4,
+        0,
+        4,
+        4,
+        0,
+        0,
+        0,
+        8,
+        4,
+        4
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        4
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        4
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        0,
+        2,
+        4,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        4
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        4
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        0,
+        2,
+        4,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        4
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        4,
+        4,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        4
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        4,
+        4,
+        0,
+        4,
+        8,
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        4
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        4,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        4,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        4,
+        8,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        2
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        2
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        4,
+        2,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        2
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        2
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        4,
+        2,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        2
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        2
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        4,
+        0,
+        4,
+        4,
+        0,
+        4,
+        8,
+        4,
+        4,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        4
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        4
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        0,
+        4,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        4
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        4
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        0,
+        4,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        4
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        4
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        4,
+        4,
+        0,
+        8,
+        4,
+        4,
+        4,
+        0,
+        4,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_mark": "plus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_mark": "plus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_mark": "minus",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_mark": "minus",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 2,
+      "second_source_norm_squared": 16,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "resolved",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_mark": "coherent",
+      "future_instrument": "coherent",
+      "first_B_norm_squared": 4,
+      "second_source_norm_squared": 32,
+      "normalized_exact_coefficient": 8,
+      "all_individual_mark_weights": [
+        8,
+        4,
+        4,
+        4,
+        4,
+        0,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "own_PRE_full_generator_count_comparison": [
+    {
+      "epsilon": 0.025,
+      "max_difference": 0.0005809613263883517,
+      "max_difference_over_epsilon_squared": 0.9295381222213626,
+      "rows": [
+        {
+          "tau": 0.0,
+          "actual_P8_over_epsilon_squared": [
+            3.5527136788005e-12,
+            8.88178419700125e-13,
+            1.77635683940025e-12
+          ],
+          "fast_prediction": [
+            4.440892098500626e-16,
+            2.220446049250313e-16,
+            0.0
+          ],
+          "max_difference": 3.55226958959065e-12
+        },
+        {
+          "tau": 0.02,
+          "actual_P8_over_epsilon_squared": [
+            0.11173917312650158,
+            0.11183139449180143,
+            0.11178526569146638
+          ],
+          "fast_prediction": [
+            0.11206651863168093,
+            0.1120332590212677,
+            0.11204988823733153
+          ],
+          "max_difference": 0.00032734550517934946
+        },
+        {
+          "tau": 0.04,
+          "actual_P8_over_epsilon_squared": [
+            0.2239895564239091,
+            0.22391302655542228,
+            0.22395125657208576
+          ],
+          "fast_prediction": [
+            0.22452524100628368,
+            0.2242626112455366,
+            0.22439390761069244
+          ],
+          "max_difference": 0.0005356845823745737
+        },
+        {
+          "tau": 0.06,
+          "actual_P8_over_epsilon_squared": [
+            0.337163718684863,
+            0.33645129628645515,
+            0.33680736654808635
+          ],
+          "fast_prediction": [
+            0.33774468001125135,
+            0.33687227125921126,
+            0.3373083381424289
+          ],
+          "max_difference": 0.0005809613263883517
+        }
+      ]
+    },
+    {
+      "epsilon": 0.0175,
+      "max_difference": 0.00040405092535689136,
+      "max_difference_over_epsilon_squared": 1.3193499603490328,
+      "rows": [
+        {
+          "tau": 0.0,
+          "actual_P8_over_epsilon_squared": [
+            -2.1751308237554085e-12,
+            0.0,
+            2.5376526277146433e-12
+          ],
+          "fast_prediction": [
+            4.440892098500626e-16,
+            2.220446049250313e-16,
+            0.0
+          ],
+          "max_difference": 2.5376526277146433e-12
+        },
+        {
+          "tau": 0.02,
+          "actual_P8_over_epsilon_squared": [
+            0.1120147487447684,
+            0.11198825094543952,
+            0.11200150564345895
+          ],
+          "fast_prediction": [
+            0.11206651863168093,
+            0.1120332590212677,
+            0.11204988823733153
+          ],
+          "max_difference": 5.176988691253659e-05
+        },
+        {
+          "tau": 0.04,
+          "actual_P8_over_epsilon_squared": [
+            0.22426432132012136,
+            0.22409258087911463,
+            0.22417844112682442
+          ],
+          "fast_prediction": [
+            0.22452524100628368,
+            0.2242626112455366,
+            0.22439390761069244
+          ],
+          "max_difference": 0.00026091968616231975
+        },
+        {
+          "tau": 0.06,
+          "actual_P8_over_epsilon_squared": [
+            0.33734062908589446,
+            0.33660738170199545,
+            0.3369738717986786
+          ],
+          "fast_prediction": [
+            0.33774468001125135,
+            0.33687227125921126,
+            0.3373083381424289
+          ],
+          "max_difference": 0.00040405092535689136
+        }
+      ]
+    },
+    {
+      "epsilon": 0.0125,
+      "max_difference": 0.0002418451377471098,
+      "max_difference_over_epsilon_squared": 1.5478088815815025,
+      "rows": [
+        {
+          "tau": 0.0,
+          "actual_P8_over_epsilon_squared": [
+            -4.2632564145606e-12,
+            -1.4210854715202002e-12,
+            7.8159700933611e-12
+          ],
+          "fast_prediction": [
+            4.440892098500626e-16,
+            2.220446049250313e-16,
+            0.0
+          ],
+          "max_difference": 7.8159700933611e-12
+        },
+        {
+          "tau": 0.02,
+          "actual_P8_over_epsilon_squared": [
+            0.11203721308206124,
+            0.11200904654984353,
+            0.11202312631084507
+          ],
+          "fast_prediction": [
+            0.11206651863168093,
+            0.1120332590212677,
+            0.11204988823733153
+          ],
+          "max_difference": 2.930554961969034e-05
+        },
+        {
+          "tau": 0.04,
+          "actual_P8_over_epsilon_squared": [
+            0.22441159009076722,
+            0.22418566407438328,
+            0.224298603531281
+          ],
+          "fast_prediction": [
+            0.22452524100628368,
+            0.2242626112455366,
+            0.22439390761069244
+          ],
+          "max_difference": 0.00011365091551646112
+        },
+        {
+          "tau": 0.06,
+          "actual_P8_over_epsilon_squared": [
+            0.33750283487350424,
+            0.3367194462505551,
+            0.33711100070163974
+          ],
+          "fast_prediction": [
+            0.33774468001125135,
+            0.33687227125921126,
+            0.3373083381424289
+          ],
+          "max_difference": 0.0002418451377471098
+        }
+      ]
+    }
+  ],
+  "author_proof_code_or_rows_read": false,
+  "source_sha256": "cf51bc234d72cb26667b740dddf9f29b27b3c43826dac74df941401a113df125"
+}

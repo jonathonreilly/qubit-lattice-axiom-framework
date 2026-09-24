@@ -1,0 +1,655 @@
+{
+  "created_utc": "2026-09-24T04:18:20.437456+00:00",
+  "base_pr": 8946,
+  "base_commit": "bb4462598a2a9e9d9d2fddb229ea5152cc8b4d28",
+  "claim_status": "provisional review proposal; no audit verdict",
+  "seals": [
+    {
+      "path": "fast_band_energy_author/AUTHOR_SEAL.json",
+      "sha256": "409ed3831825ab6fd90b9fae16ac074995bacdd2af760727bf7e3a9f3111efc2"
+    },
+    {
+      "path": "fast_band_energy_independent/PRE_SEAL.json",
+      "sha256": "b17570e736b8a496ae76f71d918087c5c301f3abb05b21733b9204ee3b2239db"
+    },
+    {
+      "path": "fast_band_energy_independent/FINAL_SEAL.json",
+      "sha256": "5824c37555272e57a1b5b0b1214bcb5441a86dd9362f18bb157bbeec960a4ef5"
+    }
+  ],
+  "explicit_omissions": [],
+  "sources": [
+    {
+      "path": "general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "bytes": 14834,
+      "sha256": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322"
+    },
+    {
+      "path": "general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "bytes": 4954,
+      "sha256": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9"
+    },
+    {
+      "path": "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md",
+      "bytes": 14532,
+      "sha256": "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "FAST_BAND_ENERGY_PUBLICATION_README.md",
+      "bytes": 3144,
+      "sha256": "16484415f4df72355644f820834a105281384434521696243487ec79a06787a8"
+    },
+    {
+      "path": "fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "bytes": 14352,
+      "sha256": "f71515321246fd2900b1ca801eb12e816b0a7ab2a1d8f820ae75bb87e28df02a"
+    },
+    {
+      "path": "fast_band_energy_author/AUTHOR_SEAL.json",
+      "bytes": 4736,
+      "sha256": "409ed3831825ab6fd90b9fae16ac074995bacdd2af760727bf7e3a9f3111efc2"
+    },
+    {
+      "path": "fast_band_energy_author/COMPLETE_SPIN_ONE_CUBE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_author/COMPLETE_SPIN_ONE_CUBE.stdout",
+      "bytes": 608,
+      "sha256": "a2a854814edfa677ecbecc2259b0230c597359a6f19aded9d296e74d5ec882df"
+    },
+    {
+      "path": "fast_band_energy_author/COMPLETE_SPIN_ONE_CUBE_RESULTS.json",
+      "bytes": 17964,
+      "sha256": "0cd6f347859d87e97bf65acc75895603634bebefa043a28bcff63c071ff55255"
+    },
+    {
+      "path": "fast_band_energy_author/DERIVATION_PLAN.md",
+      "bytes": 4192,
+      "sha256": "eec5a97cfd001f22f57bd7a10a44e22cd1d7d15adff2c0e99fdf3db2bbbc41e6"
+    },
+    {
+      "path": "fast_band_energy_author/DEVELOPMENT_AND_LIMITS.md",
+      "bytes": 2242,
+      "sha256": "100067fdbf19955d90d16420b33d2b29f61eaf514e4d1d06986b459acb2b62c7"
+    },
+    {
+      "path": "fast_band_energy_author/EXACT_FAST_BAND_PATHS.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_author/EXACT_FAST_BAND_PATHS.stdout",
+      "bytes": 198,
+      "sha256": "132941b03f68376d0ec4d9d7359dd45b3792378282c8a63b35c9df6d2bab25df"
+    },
+    {
+      "path": "fast_band_energy_author/EXACT_FAST_BAND_PATHS_RESULTS.json",
+      "bytes": 206154,
+      "sha256": "91f592e1b29da011368584e3cb267597f9d408d4406eee3e4396ade76ba00c75"
+    },
+    {
+      "path": "fast_band_energy_author/EXECUTION_RECEIPT.json",
+      "bytes": 1270,
+      "sha256": "784e9daf4270d096a4721c985e438688f315b824e619a89b28ab62821695feca"
+    },
+    {
+      "path": "fast_band_energy_author/complete_spin_one_cube_control.py",
+      "bytes": 7249,
+      "sha256": "d2048de6b12bdedc2e1fc1c20af3e8185bbcbea5d513b5be177cd6bca7d978f3"
+    },
+    {
+      "path": "fast_band_energy_author/exact_fast_band_paths.py",
+      "bytes": 3979,
+      "sha256": "afc2ba027bd86b568ee6427f70d01593272e70ac8ba1bbabe62c73bb19c3467c"
+    },
+    {
+      "path": "fast_band_energy_author/initial_eigensolver_start/COMPLETE_SPIN_ONE_CUBE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_author/initial_eigensolver_start/COMPLETE_SPIN_ONE_CUBE.stdout",
+      "bytes": 608,
+      "sha256": "4f3bfe7c3866a4a64ac426fbd12214c3360cfd6cd33b84036c6ba3cd4caabc05"
+    },
+    {
+      "path": "fast_band_energy_author/initial_eigensolver_start/COMPLETE_SPIN_ONE_CUBE_RESULTS.json",
+      "bytes": 17916,
+      "sha256": "c56f039efab63b72180598fe3c6e362ab5ba4a0adc1c1566aa0866fe9fc5915b"
+    },
+    {
+      "path": "fast_band_energy_author/initial_eigensolver_start/complete_spin_one_cube_control.py",
+      "bytes": 7183,
+      "sha256": "f9269461eba1f403c83e326246ab66f398bcde57eaa2b529cf41c70d5f1671f6"
+    },
+    {
+      "path": "fast_band_energy_independent/COMPARISON.md",
+      "bytes": 18762,
+      "sha256": "b410adb5ef459052023e8deb5090ecc76913974bc3d2c9792db1f471c5d141bf"
+    },
+    {
+      "path": "fast_band_energy_independent/CONTROL_RESULTS.json",
+      "bytes": 322532,
+      "sha256": "a57eb87544915359fe034316dea824266ac35c333e3ad193ae6e7f4b5c16c0d9"
+    },
+    {
+      "path": "fast_band_energy_independent/COUNT_CONTROL_RESULTS.json",
+      "bytes": 40829,
+      "sha256": "66aa17020535ae2abd7016b2f33b1ad04228d7a56245cb8c1c5e8a0d392cd6ea"
+    },
+    {
+      "path": "fast_band_energy_independent/COUNT_RUN_01.stderr.log",
+      "bytes": 732,
+      "sha256": "a70f4d0d80a35a7c39c2ca66fd1c16949f28c15adc0f0dfb21038dc4d97e3875"
+    },
+    {
+      "path": "fast_band_energy_independent/COUNT_RUN_01.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_independent/COUNT_RUN_01_RECEIPT.json",
+      "bytes": 386,
+      "sha256": "629611788d6b05ffc990e3f96ff38b5619c1bd740b8511b57e6041bf4491909a"
+    },
+    {
+      "path": "fast_band_energy_independent/COUNT_RUN_01_count_control.py",
+      "bytes": 2879,
+      "sha256": "3a68e4b3bd54504f15b8563ee1404ee96d7468cb943dff51f7e143c87cc927d3"
+    },
+    {
+      "path": "fast_band_energy_independent/COUNT_RUN_02.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_independent/COUNT_RUN_02.stdout.log",
+      "bytes": 534,
+      "sha256": "12c0278c0f0ae3209d18532c0bb30997e4e5aeddf56f213c9dd53cfa82b0b441"
+    },
+    {
+      "path": "fast_band_energy_independent/COUNT_RUN_02_RECEIPT.json",
+      "bytes": 386,
+      "sha256": "4e649aac4b67b7845e1bac5e1c2a666682c6e307c399aa5d2d5995ea5ae28785"
+    },
+    {
+      "path": "fast_band_energy_independent/FAILED_ROUTES_AND_LIMITS.md",
+      "bytes": 1945,
+      "sha256": "eb57e51cf1560ada8e28aac65ed877f4278285b53902b5fe227121a6fe5cb79e"
+    },
+    {
+      "path": "fast_band_energy_independent/FINAL_SEAL.json",
+      "bytes": 15942,
+      "sha256": "5824c37555272e57a1b5b0b1214bcb5441a86dd9362f18bb157bbeec960a4ef5"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_AUTHENTICATION.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_AUTHENTICATION.stdout.log",
+      "bytes": 165,
+      "sha256": "509d42eda02d54546a66a4e5d95f10e93a435f025aa9129669bcc1a1a4f07fbe"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_CONTROL_RESULTS.json",
+      "bytes": 348506,
+      "sha256": "504c594b207578c2deb5eac8393729962168bef98f62559977a40c64cfce651e"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_COUNT_DERIVATION_BEFORE_ROWS.md",
+      "bytes": 3368,
+      "sha256": "054d9af740eceb6e0948eceba291375b125ed92150138eefde174fa34517207b"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_DEVELOPMENT_RECORD.md",
+      "bytes": 3204,
+      "sha256": "fbeb5900b6ff1cf8fbdcac58e3e92fcaeecfe043fe0d57d09dedcdf2472fd739"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_GOVERNANCE.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_GOVERNANCE.stdout.log",
+      "bytes": 2319,
+      "sha256": "e8f4824543743162307d51e7fe89317d81ed10ca2e046e00af37e499880eba4e"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_GOVERNANCE_FAILURE.md",
+      "bytes": 728,
+      "sha256": "b0205752a47a76f8dcbb77e0c7c5d482f97ddd416c253f1bab6e47d9e91b6067"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_GOVERNANCE_RECEIPT.json",
+      "bytes": 2319,
+      "sha256": "e8f4824543743162307d51e7fe89317d81ed10ca2e046e00af37e499880eba4e"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_RECEIPT.json",
+      "bytes": 1545,
+      "sha256": "ba3e88fdd343a46b00d0847c4a92d33ff5883a70920be735b6c149740def19f5"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_RUN_01.stderr.log",
+      "bytes": 666,
+      "sha256": "18461f08ca7a1fa9342ecd60a03b011496d7482a5595cd1ff37fced0deacc759"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_RUN_01.stdout.log",
+      "bytes": 368,
+      "sha256": "0973c923ab8aa756a8e80e264a7056ba0f627113af80d231da6be7aecfed8534"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_RUN_01_RECEIPT.json",
+      "bytes": 544,
+      "sha256": "c5b21918c226ea1f9182aaabec6d6154cd6ff37f0b75f25ab05173a166648c40"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_RUN_01_post_compare.py",
+      "bytes": 12176,
+      "sha256": "0ecdfe92821b472c391dac193df9af1194eabcf0663cf591a8da6c05260e3daa"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_RUN_02.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_RUN_02.stdout.log",
+      "bytes": 595,
+      "sha256": "390700b6e13b752454d59b00f4dde2e49c27f52d8b32a60edddca64430e18b01"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_RUN_02_RECEIPT.json",
+      "bytes": 735,
+      "sha256": "69f89b8e9f2d87e6c194e78f9f8c9b967af121241d2d8ebf5b7cf4e33e79c420"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_RUN_02_post_compare.py",
+      "bytes": 12721,
+      "sha256": "5f3cfa4384b8911afbe974fffa530e5e6cebc3b69b401c3226d4647f069ef49d"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_SOURCE_BINDINGS.json",
+      "bytes": 60010,
+      "sha256": "7b8ff20b80493a832e9deaf6850144a4bc56b69a764ba1a9c8f89d57d9042af4"
+    },
+    {
+      "path": "fast_band_energy_independent/POST_STATUS.md",
+      "bytes": 1199,
+      "sha256": "cd110f051dd60d403dee391383fbe0bbe48777c50cd59d7f2b6ce0c2d19e80ad"
+    },
+    {
+      "path": "fast_band_energy_independent/PRE_RECEIPT.json",
+      "bytes": 1035,
+      "sha256": "27e58dd6468ac3ab0acdf9751f645dc316850ecbe91dc14030859baa38280f50"
+    },
+    {
+      "path": "fast_band_energy_independent/PRE_RECONSTRUCTION.md",
+      "bytes": 20611,
+      "sha256": "0373738ef7e30378d349f7fab57d4b74993b2a73addc1e3b96abe3c25ea9f634"
+    },
+    {
+      "path": "fast_band_energy_independent/PRE_SEAL.json",
+      "bytes": 4411,
+      "sha256": "b17570e736b8a496ae76f71d918087c5c301f3abb05b21733b9204ee3b2239db"
+    },
+    {
+      "path": "fast_band_energy_independent/PRE_STATUS.md",
+      "bytes": 2330,
+      "sha256": "7018c958a939174565044280b71a056d0aa4efb6189312f5460739f9d0e576cb"
+    },
+    {
+      "path": "fast_band_energy_independent/RUN_01.stderr.log",
+      "bytes": 1062,
+      "sha256": "766c7051dd92cef7c77ed438e0822c744a4e1c7b7df8ffd520f0e1edad758da2"
+    },
+    {
+      "path": "fast_band_energy_independent/RUN_01.stdout.log",
+      "bytes": 431,
+      "sha256": "72b575c4717339aae93d5a47dfa3d656bfa5224929c02ed9575b71be51c6809d"
+    },
+    {
+      "path": "fast_band_energy_independent/RUN_01_RECEIPT.json",
+      "bytes": 291,
+      "sha256": "600180fdaaa9ff8b371be89ecb09e256285df88c058985700286faeb7a21bb5b"
+    },
+    {
+      "path": "fast_band_energy_independent/RUN_01_cube_control.py",
+      "bytes": 10594,
+      "sha256": "cf51bc234d72cb26667b740dddf9f29b27b3c43826dac74df941401a113df125"
+    },
+    {
+      "path": "fast_band_energy_independent/SOURCE_MANIFEST.json",
+      "bytes": 6289,
+      "sha256": "a658199cb0cc804e24fc4e4c640103b6a390ed31cb02918cb4d81e0f4ceec3db"
+    },
+    {
+      "path": "fast_band_energy_independent/count_control.py",
+      "bytes": 2919,
+      "sha256": "7391a8ff3363bb374b75412a7b7c27a65ab4d7bb6c325098081ecbd8c095d66e"
+    },
+    {
+      "path": "fast_band_energy_independent/cube_control.py",
+      "bytes": 10594,
+      "sha256": "cf51bc234d72cb26667b740dddf9f29b27b3c43826dac74df941401a113df125"
+    },
+    {
+      "path": "fast_band_energy_independent/post_authenticate.py",
+      "bytes": 3006,
+      "sha256": "8158025c8af5b6048b5b666a93413a326c88ab16a1e92fe5b986e24a57f71914"
+    },
+    {
+      "path": "fast_band_energy_independent/post_compare.py",
+      "bytes": 12721,
+      "sha256": "5f3cfa4384b8911afbe974fffa530e5e6cebc3b69b401c3226d4647f069ef49d"
+    },
+    {
+      "path": "fast_band_energy_independent/post_governance.py",
+      "bytes": 1356,
+      "sha256": "ce94833a04dc946ee554bd0a6ddcde8ec3ccc0c2262d62d645ec52554a2e8a97"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "bytes": 14352,
+      "sha256": "f71515321246fd2900b1ca801eb12e816b0a7ab2a1d8f820ae75bb87e28df02a"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/AUTHOR_SEAL.json",
+      "bytes": 4736,
+      "sha256": "409ed3831825ab6fd90b9fae16ac074995bacdd2af760727bf7e3a9f3111efc2"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/COMPLETE_SPIN_ONE_CUBE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/COMPLETE_SPIN_ONE_CUBE.stdout",
+      "bytes": 608,
+      "sha256": "a2a854814edfa677ecbecc2259b0230c597359a6f19aded9d296e74d5ec882df"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/COMPLETE_SPIN_ONE_CUBE_RESULTS.json",
+      "bytes": 17964,
+      "sha256": "0cd6f347859d87e97bf65acc75895603634bebefa043a28bcff63c071ff55255"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/DERIVATION_PLAN.md",
+      "bytes": 4192,
+      "sha256": "eec5a97cfd001f22f57bd7a10a44e22cd1d7d15adff2c0e99fdf3db2bbbc41e6"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/DEVELOPMENT_AND_LIMITS.md",
+      "bytes": 2242,
+      "sha256": "100067fdbf19955d90d16420b33d2b29f61eaf514e4d1d06986b459acb2b62c7"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/EXACT_FAST_BAND_PATHS.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/EXACT_FAST_BAND_PATHS.stdout",
+      "bytes": 198,
+      "sha256": "132941b03f68376d0ec4d9d7359dd45b3792378282c8a63b35c9df6d2bab25df"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/EXACT_FAST_BAND_PATHS_RESULTS.json",
+      "bytes": 206154,
+      "sha256": "91f592e1b29da011368584e3cb267597f9d408d4406eee3e4396ade76ba00c75"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/EXECUTION_RECEIPT.json",
+      "bytes": 1270,
+      "sha256": "784e9daf4270d096a4721c985e438688f315b824e619a89b28ab62821695feca"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/complete_spin_one_cube_control.py",
+      "bytes": 7249,
+      "sha256": "d2048de6b12bdedc2e1fc1c20af3e8185bbcbea5d513b5be177cd6bca7d978f3"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/exact_fast_band_paths.py",
+      "bytes": 3979,
+      "sha256": "afc2ba027bd86b568ee6427f70d01593272e70ac8ba1bbabe62c73bb19c3467c"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/initial_eigensolver_start/COMPLETE_SPIN_ONE_CUBE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/initial_eigensolver_start/COMPLETE_SPIN_ONE_CUBE.stdout",
+      "bytes": 608,
+      "sha256": "4f3bfe7c3866a4a64ac426fbd12214c3360cfd6cd33b84036c6ba3cd4caabc05"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/initial_eigensolver_start/COMPLETE_SPIN_ONE_CUBE_RESULTS.json",
+      "bytes": 17916,
+      "sha256": "c56f039efab63b72180598fe3c6e362ab5ba4a0adc1c1566aa0866fe9fc5915b"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/fast_band_energy_author/initial_eigensolver_start/complete_spin_one_cube_control.py",
+      "bytes": 7183,
+      "sha256": "f9269461eba1f403c83e326246ab66f398bcde57eaa2b529cf41c70d5f1671f6"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "bytes": 4954,
+      "sha256": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "bytes": 14834,
+      "sha256": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/general_microscopic_birth_energy_independent/FINAL_COMPARISON_SEAL.json",
+      "bytes": 18317,
+      "sha256": "9e85bfa3c1f20ababdb5e4b368d865a01c3f5f4d1c0f728deff684f0d3ea6596"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/general_microscopic_birth_energy_independent/POST_GENERAL_MICROSCOPIC_COMPARISON.md",
+      "bytes": 22750,
+      "sha256": "6fc6cbfe124668aaeddca9a5c5f2f1b48166cb817b91bbaf3ed79209c5524959"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "fast_band_energy_independent/post_sources/post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md",
+      "bytes": 14532,
+      "sha256": "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5"
+    },
+    {
+      "path": "fast_band_energy_independent/sources/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "bytes": 12525,
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617"
+    },
+    {
+      "path": "fast_band_energy_independent/sources/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "bytes": 2455,
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+    },
+    {
+      "path": "fast_band_energy_independent/sources/campaign12h_fourth/general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "bytes": 4954,
+      "sha256": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9"
+    },
+    {
+      "path": "fast_band_energy_independent/sources/campaign12h_fourth/general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "bytes": 14834,
+      "sha256": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322"
+    },
+    {
+      "path": "fast_band_energy_independent/sources/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "fast_band_energy_independent/sources/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "fast_band_energy_independent/sources/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "fast_band_energy_independent/sources/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "fast_band_energy_independent/sources/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "bytes": 16828,
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    },
+    {
+      "path": "fast_band_energy_independent/verify_packet.py",
+      "bytes": 881,
+      "sha256": "7b9d7580d2bbd6076653aa488079ecf4a56ab044ba5234e9633d48de0f94bc85"
+    },
+    {
+      "path": "fast_band_energy_review/PORTABLE_RUN_RECEIPT.json",
+      "bytes": 4648,
+      "sha256": "5e672b28eea55f94ce6ee787b632492bc02d59aa78c5205fa2c82969336a7489"
+    },
+    {
+      "path": "fast_band_energy_review/PORTABLE_VALIDATION.md",
+      "bytes": 702,
+      "sha256": "a1d2282e59bc75301f18f2a4717976fda0fc73dfe9eab09ac20a558b97486028"
+    },
+    {
+      "path": "fast_band_energy_review/ROOT_REVIEW.md",
+      "bytes": 2499,
+      "sha256": "237770f6f86967a3dbbe3f551a55076818372515995dae4583a30a61a58c4a94"
+    },
+    {
+      "path": "fast_band_energy_review/SCOPE_STRESS_TEST.md",
+      "bytes": 856,
+      "sha256": "7fe4b27b56dbd723a012d9a861184a1f588cfcb805ef39acfab97496b769785e"
+    },
+    {
+      "path": "fast_band_energy_review/run_1.RESULT.json",
+      "bytes": 206154,
+      "sha256": "91f592e1b29da011368584e3cb267597f9d408d4406eee3e4396ade76ba00c75"
+    },
+    {
+      "path": "fast_band_energy_review/run_1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_review/run_1.stdout",
+      "bytes": 198,
+      "sha256": "132941b03f68376d0ec4d9d7359dd45b3792378282c8a63b35c9df6d2bab25df"
+    },
+    {
+      "path": "fast_band_energy_review/run_2.RESULT.json",
+      "bytes": 17964,
+      "sha256": "0e36e35ff5fd2d27a0162af9dd6284058a56c22b8d6edbc311b0e991db2b3bfa"
+    },
+    {
+      "path": "fast_band_energy_review/run_2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_review/run_2.stdout",
+      "bytes": 608,
+      "sha256": "06b7bd4fb7d0496d6a458b4eda84acf57d68a83a9c6f6d435ef4e16faa97b608"
+    },
+    {
+      "path": "fast_band_energy_review/run_3.RESULT.json",
+      "bytes": 322530,
+      "sha256": "2ec431eb6efd8ec6a5c1616f6fd655156c6242ac20fc32215f1cfa4547a2e5c4"
+    },
+    {
+      "path": "fast_band_energy_review/run_3.stderr",
+      "bytes": 1002,
+      "sha256": "28f903af79dbf0e1509cc389b101733719f693608ca2837c493c1c0af9994ece"
+    },
+    {
+      "path": "fast_band_energy_review/run_3.stdout",
+      "bytes": 431,
+      "sha256": "bf2b27f419300cf7aa37dccde01feeb6b191c807460e410aafa277cde476550a"
+    },
+    {
+      "path": "fast_band_energy_review/run_4.RESULT.json",
+      "bytes": 40829,
+      "sha256": "66aa17020535ae2abd7016b2f33b1ad04228d7a56245cb8c1c5e8a0d392cd6ea"
+    },
+    {
+      "path": "fast_band_energy_review/run_4.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_review/run_4.stdout",
+      "bytes": 534,
+      "sha256": "12c0278c0f0ae3209d18532c0bb30997e4e5aeddf56f213c9dd53cfa82b0b441"
+    },
+    {
+      "path": "fast_band_energy_review/run_5.RESULT.json",
+      "bytes": 348506,
+      "sha256": "2e376ffa608a72f253544bf221d8853d82d972814d68cf9db8534b260c179bf4"
+    },
+    {
+      "path": "fast_band_energy_review/run_5.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_energy_review/run_5.stdout",
+      "bytes": 595,
+      "sha256": "123d6d587942ecea06bfce94174804eed119027791ea76279150a2943fb57a0f"
+    },
+    {
+      "path": "reproduce_fast_band_energy_publication.py",
+      "bytes": 3301,
+      "sha256": "d61dc5ca5fd10dfa4474efef37f3ead444917c0f2c86053b4b3a249c68da351f"
+    },
+    {
+      "path": "verify_fast_band_energy_publication.py",
+      "bytes": 1862,
+      "sha256": "de0689c6aa82570d991f6b5ec51aebe301d97a97a915e5c2b8069dce01940786"
+    }
+  ]
+}

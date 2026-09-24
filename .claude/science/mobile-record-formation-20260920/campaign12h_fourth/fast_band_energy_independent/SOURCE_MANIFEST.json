@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-09-24T03:36:22.137306+00:00",
+  "candidate_HEAD": "b0b3d88a92fd670b09441fe3358685a6c148d5f3",
+  "sources": [
+    {
+      "path": "campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "snapshot": "sources/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e",
+      "bytes": 17730,
+      "role": "supplied model/general bounded cluster-rotation premises"
+    },
+    {
+      "path": "campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "snapshot": "sources/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d",
+      "bytes": 16828,
+      "role": "supplied model/general bounded cluster-rotation premises"
+    },
+    {
+      "path": "campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "snapshot": "sources/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+      "bytes": 11637,
+      "role": "supplied model/general bounded cluster-rotation premises"
+    },
+    {
+      "path": "campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "snapshot": "sources/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0",
+      "bytes": 6721,
+      "role": "supplied model/general bounded cluster-rotation premises"
+    },
+    {
+      "path": "campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "snapshot": "sources/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9",
+      "bytes": 1289,
+      "role": "supplied model/general bounded cluster-rotation premises"
+    },
+    {
+      "path": "campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "snapshot": "sources/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617",
+      "bytes": 12525,
+      "role": "supplied model/general bounded cluster-rotation premises"
+    },
+    {
+      "path": "campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "snapshot": "sources/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa",
+      "bytes": 2455,
+      "role": "supplied model/general bounded cluster-rotation premises"
+    },
+    {
+      "path": "campaign12h_fourth/general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "snapshot": "sources/campaign12h_fourth/general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "sha256": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322",
+      "bytes": 14834,
+      "role": "provisional initial dressed jump coefficient dependency only"
+    },
+    {
+      "path": "campaign12h_fourth/general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "snapshot": "sources/campaign12h_fourth/general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "sha256": "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9",
+      "bytes": 4954,
+      "role": "provisional initial dressed jump coefficient dependency only"
+    }
+  ],
+  "governance_reused": [
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "AGENTS.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "working_copy_identical": true
+    },
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "working_copy_identical": true
+    },
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "working_copy_identical": true
+    },
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "working_copy_identical": true
+    },
+    {
+      "observed_main": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "pinned_main": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "working_copy_identical": true
+    }
+  ],
+  "governance_working_bytes_unchanged": true,
+  "exposure_boundary": {
+    "withheld": [
+      "EXT/fast-band-personal",
+      "all forthcoming fast_band_energy author packets",
+      "current campaign CHECKPOINT",
+      "root progress science"
+    ],
+    "withheld_read": false,
+    "builder_imports": [],
+    "provisional_dependency_status": "New general microscopic initial coefficient is not independently reconstructed by its reuse; separate independent comparison still pending at dispatch.",
+    "coordination": "A preliminary independent result was sent to root before PRE; root replied with status only and requested further formulas stay sealed until PRE. No root mathematical result or new author source was received.",
+    "git_mutations": false,
+    "publication_edits": false
+  }
+}

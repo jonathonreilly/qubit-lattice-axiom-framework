@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-24T03:46:13.048744+00:00",
+  "candidate_HEAD": "6dbc48ed2c5918fbb00fdf0c20543b4d0e8936d3",
+  "observed_origin_main": "7445cc7a50e2c7631d70dc8d9a065d0653ffa6ef",
+  "governance_difference_from_pinned_sources": "None in the five relevant instruction/workflow sources.",
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "completed_run": "RUN_01_RECEIPT.json",
+  "control_sha256": "cf51bc234d72cb26667b740dddf9f29b27b3c43826dac74df941401a113df125",
+  "result_sha256": "a57eb87544915359fe034316dea824266ac35c333e3ad193ae6e7f4b5c16c0d9",
+  "all_science_assertions_passed": true,
+  "failed_execution_count": 0,
+  "stderr_scope": "Two retained SciPy dtype FutureWarnings; no scientific assertion or execution failure.",
+  "dependency_status": "Initial dressed-jump coefficient is provisional prior reuse, not new independent reconstruction.",
+  "author_exposure": false,
+  "scope": "Uniform compact fast-time leading microscopic energy; no infinite tau or fixed-positive-physical-time conclusion."
+}

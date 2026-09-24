@@ -1,0 +1,34 @@
+{
+  "PRE_artifacts_unchanged": 20,
+  "author_artifacts_authenticated_again": 16,
+  "author_certificate_entries_compared": 444,
+  "author_or_PRE_edits": false,
+  "completed_count_control_cases": 72,
+  "completed_exact_POST_cases": 36,
+  "count_derivation_before_author_proof_code_rows": true,
+  "created_utc": "2026-09-24T04:13:33.319330+00:00",
+  "git_mutations": false,
+  "historical_author_pair_comparison_passed": false,
+  "historical_author_pair_max_difference": 6.867062474213981e-08,
+  "independent_final_author_tolerance": 5e-08,
+  "initial_coefficient_dependency": "Completed separate scoped independent comparison, not rederived by reuse here; supplied model and canonical preparation remain hypotheses.",
+  "matrix_numeric_fields_compared": 360,
+  "matrix_rows_compared": 36,
+  "max_final_author_comparison_difference": 3.824496275228739e-08,
+  "new_external_research": false,
+  "no_author_science_correction_required": true,
+  "phase": "bounded source-released comparison",
+  "proposed_count_formula_known_from_brief": true,
+  "retained_failed_executions": {
+    "author_historical_pair_auxiliary_numeric_comparison": 1,
+    "count_metadata_variable_shadowing": 1,
+    "governance_path_guard": 1
+  },
+  "scope": "lambda=0 fixed cube, zero field, actual canonical first output, compact fast time. No audit/publication/commit/retained status. Optional PRE lambda/window/lower-bound findings remain separately attributed.",
+  "versions": {
+    "numpy": "2.4.4",
+    "python": "3.13.5",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  }
+}

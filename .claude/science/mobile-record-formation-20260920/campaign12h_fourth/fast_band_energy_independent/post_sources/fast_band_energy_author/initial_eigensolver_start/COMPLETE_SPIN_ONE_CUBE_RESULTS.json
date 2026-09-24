@@ -1,0 +1,512 @@
+{
+  "scope": "Complete physical spin-one cube; exact canonical low spectral preparation, actual original first mark, complete postbirth no-event evolution and exact terminal energy zero. Fixed-S epsilon refinement, not numerical S-to-infinity proof.",
+  "dimensions": {
+    "N4": 3197,
+    "N6": 5604,
+    "N8": 672,
+    "P_N4": 69,
+    "W1_N6": 3168
+  },
+  "delta": 1.0,
+  "kappa": 0.7,
+  "both_original_instruments_have_identical_Gamma": true,
+  "initial_band_norms": [
+    4.0,
+    2.0,
+    6.0
+  ],
+  "initial_jump_norms": [
+    2.0,
+    2.0,
+    4.0
+  ],
+  "next_slow_rates": [
+    8.0,
+    8.0,
+    8.0
+  ],
+  "spin_one_normalized_Gamma_G1R": [
+    35.99999999999999,
+    17.999999999999996,
+    27.0
+  ],
+  "spectral_checks": [
+    {
+      "epsilon": 0.04,
+      "low_rank": 69,
+      "dimension": 3197,
+      "minimum_overlap_eigenvalue": 0.980640082359869,
+      "first_excluded_eigenvalue": 0.9810290954345515,
+      "max_low_eigenvector_residual": 3.739676463150906e-15
+    },
+    {
+      "epsilon": 0.02,
+      "low_rank": 69,
+      "dimension": 3197,
+      "minimum_overlap_eigenvalue": 0.9951895806531967,
+      "first_excluded_eigenvalue": 0.9952146251903987,
+      "max_low_eigenvector_residual": 3.6296470007559755e-15
+    },
+    {
+      "epsilon": 0.01,
+      "low_rank": 69,
+      "dimension": 3197,
+      "minimum_overlap_eigenvalue": 0.9987993421949448,
+      "first_excluded_eigenvalue": 0.9988009350351416,
+      "max_low_eigenvector_residual": 3.2854891415649322e-15
+    }
+  ],
+  "rows": [
+    {
+      "epsilon": 0.04,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9712189753610747,
+      "fast_survival_prediction": 1.9999999999999996,
+      "energy_error": 0.028781024638924846,
+      "second_birth_probability_over_epsilon2": -5.551115123125783e-13,
+      "second_birth_prediction": 4.440892098500626e-16,
+      "second_birth_error": 5.555556015224283e-13
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9792251555664176,
+      "fast_survival_prediction": 0.9999999999999998,
+      "energy_error": 0.02077484443358213,
+      "second_birth_probability_over_epsilon2": -4.163336342344337e-13,
+      "second_birth_prediction": 2.220446049250313e-16,
+      "second_birth_error": 4.1655567883935873e-13
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.475223354779458,
+      "fast_survival_prediction": 1.5,
+      "energy_error": 0.024776645220542015,
+      "second_birth_probability_over_epsilon2": -1.2490009027033011e-12,
+      "second_birth_prediction": 0.0,
+      "second_birth_error": 1.2490009027033011e-12
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.09999999999999999,
+      "physical_time": 0.00015999999999999999,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9644453756707831,
+      "fast_survival_prediction": 1.9922420950220234,
+      "energy_error": 0.027796719351240284,
+      "second_birth_probability_over_epsilon2": 0.5629066154082263,
+      "second_birth_prediction": 0.5677579049779766,
+      "second_birth_error": 0.004851289569750339
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.09999999999999999,
+      "physical_time": 0.00015999999999999999,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9758437136284334,
+      "fast_survival_prediction": 0.9961218820826224,
+      "energy_error": 0.02027816845418906,
+      "second_birth_probability_over_epsilon2": 0.5608337284675191,
+      "second_birth_prediction": 0.5638781179173776,
+      "second_birth_error": 0.00304438944985852
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.09999999999999999,
+      "physical_time": 0.00015999999999999999,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4701473739590198,
+      "fast_survival_prediction": 1.4941836576955403,
+      "energy_error": 0.024036283736520447,
+      "second_birth_probability_over_epsilon2": 0.5618680928286268,
+      "second_birth_prediction": 0.5658163423044598,
+      "second_birth_error": 0.003948249475832943
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.19999999999999998,
+      "physical_time": 0.00031999999999999997,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9197651972690333,
+      "fast_survival_prediction": 1.9464999104481129,
+      "energy_error": 0.026734713179079606,
+      "second_birth_probability_over_epsilon2": 1.163387796525861,
+      "second_birth_prediction": 1.1735000895518872,
+      "second_birth_error": 0.010112293026026231
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.19999999999999998,
+      "physical_time": 0.00031999999999999997,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9535192291098857,
+      "fast_survival_prediction": 0.9732713528689402,
+      "energy_error": 0.01975212375905444,
+      "second_birth_probability_over_epsilon2": 1.1401206801937152,
+      "second_birth_prediction": 1.1467286471310598,
+      "second_birth_error": 0.006607966937344667
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.19999999999999998,
+      "physical_time": 0.00031999999999999997,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.436686318036299,
+      "fast_survival_prediction": 1.459928426948277,
+      "energy_error": 0.023242108911978088,
+      "second_birth_probability_over_epsilon2": 1.1517112584442935,
+      "second_birth_prediction": 1.160071573051723,
+      "second_birth_error": 0.008360314607429586
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.3,
+      "physical_time": 0.00048,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.827785042040278,
+      "fast_survival_prediction": 1.853630335120946,
+      "energy_error": 0.025845293080668075,
+      "second_birth_probability_over_epsilon2": 1.8109556115340764,
+      "second_birth_prediction": 1.8263696648790537,
+      "second_birth_error": 0.015414053344977363
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.3,
+      "physical_time": 0.00048,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9076075503320112,
+      "fast_survival_prediction": 0.926930789405346,
+      "energy_error": 0.019323239073334775,
+      "second_birth_probability_over_epsilon2": 1.742548733688204,
+      "second_birth_prediction": 1.7530692105946537,
+      "second_birth_error": 0.01052047690644975
+    },
+    {
+      "epsilon": 0.04,
+      "tau": 0.3,
+      "physical_time": 0.00048,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.3679339025488093,
+      "fast_survival_prediction": 1.3905118059528971,
+      "energy_error": 0.02257790340408783,
+      "second_birth_probability_over_epsilon2": 1.7765167590047537,
+      "second_birth_prediction": 1.7894881940471026,
+      "second_birth_error": 0.012971435042348878
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9928010160247913,
+      "fast_survival_prediction": 1.9999999999999996,
+      "energy_error": 0.00719898397520824,
+      "second_birth_probability_over_epsilon2": -5.551115123125783e-13,
+      "second_birth_prediction": 4.440892098500626e-16,
+      "second_birth_error": 5.555556015224283e-13
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9948014725810913,
+      "fast_survival_prediction": 0.9999999999999998,
+      "energy_error": 0.005198527418908472,
+      "second_birth_probability_over_epsilon2": -1.1102230246251565e-12,
+      "second_birth_prediction": 2.220446049250313e-16,
+      "second_birth_error": 1.1104450692300816e-12
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.493801324459356,
+      "fast_survival_prediction": 1.5,
+      "energy_error": 0.006198675540644016,
+      "second_birth_probability_over_epsilon2": 8.326672684688674e-13,
+      "second_birth_prediction": 0.0,
+      "second_birth_error": 8.326672684688674e-13
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.09999999999999999,
+      "physical_time": 3.9999999999999996e-05,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9851577698552387,
+      "fast_survival_prediction": 1.9922420950220234,
+      "energy_error": 0.0070843251667847,
+      "second_birth_probability_over_epsilon2": 0.5668083992735329,
+      "second_birth_prediction": 0.5677579049779766,
+      "second_birth_error": 0.0009495057044437427
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.09999999999999999,
+      "physical_time": 3.9999999999999996e-05,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9909809271320034,
+      "fast_survival_prediction": 0.9961218820826224,
+      "energy_error": 0.005140954950619059,
+      "second_birth_probability_over_epsilon2": 0.563250681959726,
+      "second_birth_prediction": 0.5638781179173776,
+      "second_birth_error": 0.0006274359576515787
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.09999999999999999,
+      "physical_time": 3.9999999999999996e-05,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.488071078782888,
+      "fast_survival_prediction": 1.4941836576955403,
+      "energy_error": 0.006112578912652378,
+      "second_birth_probability_over_epsilon2": 0.5650278790145236,
+      "second_birth_prediction": 0.5658163423044598,
+      "second_birth_error": 0.0007884632899362032
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.19999999999999998,
+      "physical_time": 7.999999999999999e-05,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9391962950740185,
+      "fast_survival_prediction": 1.9464999104481129,
+      "energy_error": 0.007303615374094408,
+      "second_birth_probability_over_epsilon2": 1.1722082439602488,
+      "second_birth_prediction": 1.1735000895518872,
+      "second_birth_error": 0.0012918455916384186
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.19999999999999998,
+      "physical_time": 7.999999999999999e-05,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9680222350575468,
+      "fast_survival_prediction": 0.9732713528689402,
+      "energy_error": 0.005249117811393367,
+      "second_birth_probability_over_epsilon2": 1.1456911739629594,
+      "second_birth_prediction": 1.1467286471310598,
+      "second_birth_error": 0.0010374731681004334
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.19999999999999998,
+      "physical_time": 7.999999999999999e-05,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4536526164731247,
+      "fast_survival_prediction": 1.459928426948277,
+      "energy_error": 0.006275810475152355,
+      "second_birth_probability_over_epsilon2": 1.1589061880967755,
+      "second_birth_prediction": 1.160071573051723,
+      "second_birth_error": 0.001165384954947557
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.3,
+      "physical_time": 0.00012,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.8463219553278085,
+      "fast_survival_prediction": 1.853630335120946,
+      "energy_error": 0.007308379793137476,
+      "second_birth_probability_over_epsilon2": 1.8242116704197953,
+      "second_birth_prediction": 1.8263696648790537,
+      "second_birth_error": 0.002157994459258461
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.3,
+      "physical_time": 0.00012,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9216833850154728,
+      "fast_survival_prediction": 0.926930789405346,
+      "energy_error": 0.005247404389873256,
+      "second_birth_probability_over_epsilon2": 1.751266550460151,
+      "second_birth_prediction": 1.7530692105946537,
+      "second_birth_error": 0.0018026601345026982
+    },
+    {
+      "epsilon": 0.02,
+      "tau": 0.3,
+      "physical_time": 0.00012,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.3842365075326744,
+      "fast_survival_prediction": 1.3905118059528971,
+      "energy_error": 0.006275298420222786,
+      "second_birth_probability_over_epsilon2": 1.7875047132759336,
+      "second_birth_prediction": 1.7894881940471026,
+      "second_birth_error": 0.001983480771168944
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9982000608735175,
+      "fast_survival_prediction": 1.9999999999999996,
+      "energy_error": 0.0017999391264820197,
+      "second_birth_probability_over_epsilon2": -4.440892098500626e-12,
+      "second_birth_prediction": 4.440892098500626e-16,
+      "second_birth_error": 4.441336187710476e-12
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9987000905071886,
+      "fast_survival_prediction": 0.9999999999999998,
+      "energy_error": 0.0012999094928112243,
+      "second_birth_probability_over_epsilon2": -4.440892098500626e-12,
+      "second_birth_prediction": 2.220446049250313e-16,
+      "second_birth_error": 4.441114143105551e-12
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.0,
+      "physical_time": 0.0,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4984500806928407,
+      "fast_survival_prediction": 1.5,
+      "energy_error": 0.0015499193071593087,
+      "second_birth_probability_over_epsilon2": 0.0,
+      "second_birth_prediction": 0.0,
+      "second_birth_error": 0.0
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.09999999999999999,
+      "physical_time": 9.999999999999999e-06,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9904726930601706,
+      "fast_survival_prediction": 1.9922420950220234,
+      "energy_error": 0.0017694019618528234,
+      "second_birth_probability_over_epsilon2": 0.5675171547392388,
+      "second_birth_prediction": 0.5677579049779766,
+      "second_birth_error": 0.0002407502387378191
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.09999999999999999,
+      "physical_time": 9.999999999999999e-06,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9948371919421538,
+      "fast_survival_prediction": 0.9961218820826224,
+      "energy_error": 0.001284690140468614,
+      "second_birth_probability_over_epsilon2": 0.5637197921781745,
+      "second_birth_prediction": 0.5638781179173776,
+      "second_birth_error": 0.00015832573920315784
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.09999999999999999,
+      "physical_time": 9.999999999999999e-06,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.4926566125614558,
+      "fast_survival_prediction": 1.4941836576955403,
+      "energy_error": 0.001527045134084526,
+      "second_birth_probability_over_epsilon2": 0.565616851350148,
+      "second_birth_prediction": 0.5658163423044598,
+      "second_birth_error": 0.0001994909543117096
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.19999999999999998,
+      "physical_time": 1.9999999999999998e-05,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.9446794349084306,
+      "fast_survival_prediction": 1.9464999104481129,
+      "energy_error": 0.0018204755396822314,
+      "second_birth_probability_over_epsilon2": 1.173166241789092,
+      "second_birth_prediction": 1.1735000895518872,
+      "second_birth_error": 0.0003338477627952141
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.19999999999999998,
+      "physical_time": 1.9999999999999998e-05,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9719613427867754,
+      "fast_survival_prediction": 0.9732713528689402,
+      "energy_error": 0.001310010082164803,
+      "second_birth_probability_over_epsilon2": 1.146464341581499,
+      "second_birth_prediction": 1.1467286471310598,
+      "second_birth_error": 0.000264305549560806
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.19999999999999998,
+      "physical_time": 1.9999999999999998e-05,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.458363293515196,
+      "fast_survival_prediction": 1.459928426948277,
+      "energy_error": 0.0015651334330810673,
+      "second_birth_probability_over_epsilon2": 1.1597723967526896,
+      "second_birth_prediction": 1.160071573051723,
+      "second_birth_error": 0.00029917629903342124
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.3,
+      "physical_time": 3e-05,
+      "first_mark": 1,
+      "scaled_ensemble_energy": 1.8517987637532476,
+      "fast_survival_prediction": 1.853630335120946,
+      "energy_error": 0.0018315713676984036,
+      "second_birth_probability_over_epsilon2": 1.8258391216319225,
+      "second_birth_prediction": 1.8263696648790537,
+      "second_birth_error": 0.0005305432471311988
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.3,
+      "physical_time": 3e-05,
+      "first_mark": -1,
+      "scaled_ensemble_energy": 0.9256163352684703,
+      "fast_survival_prediction": 0.926930789405346,
+      "energy_error": 0.001314454136875698,
+      "second_birth_probability_over_epsilon2": 1.752623253931107,
+      "second_birth_prediction": 1.7530692105946537,
+      "second_birth_error": 0.00044595666354663166
+    },
+    {
+      "epsilon": 0.01,
+      "tau": 0.3,
+      "physical_time": 3e-05,
+      "first_mark": 0,
+      "scaled_ensemble_energy": 1.3889394760631177,
+      "fast_survival_prediction": 1.3905118059528971,
+      "energy_error": 0.0015723298897794002,
+      "second_birth_probability_over_epsilon2": 1.7889991274600003,
+      "second_birth_prediction": 1.7894881940471026,
+      "second_birth_error": 0.0004890665871022382
+    }
+  ],
+  "errors": [
+    {
+      "epsilon": 0.04,
+      "max_energy_error": 0.028781024638924846,
+      "max_second_birth_error": 0.015414053344977363
+    },
+    {
+      "epsilon": 0.02,
+      "max_energy_error": 0.007308379793137476,
+      "max_second_birth_error": 0.002157994459258461
+    },
+    {
+      "epsilon": 0.01,
+      "max_energy_error": 0.0018315713676984036,
+      "max_second_birth_error": 0.0005305432471311988
+    }
+  ],
+  "all_assertions_passed": true,
+  "wall_seconds": 8.936133792158216
+}

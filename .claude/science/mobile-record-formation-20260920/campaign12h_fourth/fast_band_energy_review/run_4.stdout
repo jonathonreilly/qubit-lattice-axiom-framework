@@ -1,0 +1,22 @@
+{
+  "all_assertions_passed": true,
+  "exact_case_count": 72,
+  "normalized_coefficient": 8,
+  "own_PRE_count_error_rows": [
+    {
+      "epsilon": 0.025,
+      "max_error": 0.0005809613263883517,
+      "error_over_epsilon_squared": 0.9295381222213626
+    },
+    {
+      "epsilon": 0.0175,
+      "max_error": 0.00040405092535689136,
+      "error_over_epsilon_squared": 1.3193499603490328
+    },
+    {
+      "epsilon": 0.0125,
+      "max_error": 0.0002418451377471098,
+      "error_over_epsilon_squared": 1.5478088815815025
+    }
+  ]
+}

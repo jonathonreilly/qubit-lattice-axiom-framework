@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.py
+runner_sha256: 90f2ac1b3ef770da929f7ae8f4769ef5d678d28b1cb2dca0427a7000eb49d587
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 29.69
+status: ok
+----- stdout -----
+== A. Symmetry ==
+[PASS] the charge-4 pair free energy depends only on the four-cube distance, and the complement leaves it unchanged :: spread 0.0e+00, complement 0.0e+00
+
+== B. The charge-squared law in the layer ==
+[PASS] relative to the nearest pair, charge-4 differences are 3.4 to 3.7 times the charge-2 ones at distances 2, 3, 4, rising :: distance 2: 3.449, distance 3: 3.577, distance 4: 3.623
+
+== C. Along the prism ==
+[PASS] beyond the contact pair, relative to z = 2, the ratio at z = 4 and 8 lies in [3.9, 4.05]; at z = 8 the charge-4 step equals ln(lam_0/lam_4) and its ratio to the charge-2 step equals 4 c(4)/c(2), both within 1% :: z=4: 3.960, z=8: 4.007; step ratio 4.0361 vs 4 c(4)/c(2) = 4.0362
+
+== D. The core correction grows with the charge ==
+[PASS] against K Q^2 Delta G the in-layer ratios are 0.96 to 0.98 for charge 2 and 0.82 to 0.90 for charge 4 :: charge 2: 0.9614, 0.9738, 0.9781; charge 4: 0.8290, 0.8708, 0.8860
+
+time 29 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

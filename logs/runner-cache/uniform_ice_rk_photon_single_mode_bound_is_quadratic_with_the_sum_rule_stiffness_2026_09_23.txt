@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py
+runner_sha256: 1820216d5ebe18b94f09d9e300eecda3dd77724a229beed451641787a3eef790
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 127.34
+status: ok
+----- stdout -----
+== A. The exact L = 2 torus ==
+[PASS] n_f = 13/60, and <0|O^+ (D - A) O|0> = 2 n_f (s_x^2 + s_y^2) exactly at all 8 wavevectors :: 9600 configurations, 49920 flips, n_f = 13/60
+[PASS] the worm reproduces n_f = 13/60 on L = 2 within 4 standard errors :: 0.21693 +- 0.00037 vs 0.21667
+
+== C. L = 8, 10^6 worms ==
+[PASS] omega_SMA / (2 n_f K_L |s|^2) lies within 1.5% of 1 at every k with P_zz > 0.05 :: R in [0.9914, 1.0083], n_f = 0.25934 +- 0.00002, 2 n_f K_L = 0.3461
+
+== D. The bound is soft ==
+[PASS] on L = 16 at (2 pi/16, 0, 0) omega_SMA / |s|^2 agrees with 2 n_f K_L within 2%; from L = 8 to 16 omega_SMA / |k| falls by the quadratic factor within 1% :: omega_SMA = 0.0531 at |k| = 0.3927; ratio to 2 n_f K_L |s|^2 1.0071; omega/|k| 0.2586 (L=8) -> 0.1352 (L=16), factor 0.5227 vs |s|^2/|k| factor 0.5198 (a linear branch gives 1)
+
+time 127 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

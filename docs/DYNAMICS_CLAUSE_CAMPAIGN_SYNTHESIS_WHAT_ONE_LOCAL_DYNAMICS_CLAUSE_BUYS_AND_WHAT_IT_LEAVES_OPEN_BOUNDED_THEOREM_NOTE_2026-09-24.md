@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of fifteen campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports a move; and, for the non-Abelian block, that one qubit's SU(2) commutant is the scalars and that the 4-dimensional SU(2) link carries a covariant link operator; and, for the randomizer block, that a distant record steers every chord and that the trace rule, but not a cubic deformation, matches the steered average; and, for the dynamics block, that a Weinberg-type precession lets a distant record shift a later marginal and that the transpose on half a singlet is negative. It also checks that the sixteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
+claim_scope: "Synthesis of sixteen campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports a move; and, for the non-Abelian block, that one qubit's SU(2) commutant is the scalars and that the 4-dimensional SU(2) link carries a covariant link operator; and, for the randomizer block, that a distant record steers every chord and that the trace rule, but not a cubic deformation, matches the steered average; and, for the dynamics block, that a Weinberg-type precession lets a distant record shift a later marginal and that the transpose on half a singlet is negative; and, for the collapse block, that joint record effects with Born marginals are product projectors and that a record leaves its partner in the Lueders state. It also checks that the sixteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -11,7 +11,7 @@ runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_202
 
 **Date:** 2026-09-24
 **Type:** bounded_theorem
-**Status:** synthesis of fifteen open campaign blocks with consolidated re-derivations; unaudited.
+**Status:** synthesis of sixteen open campaign blocks with consolidated re-derivations; unaudited.
 
 ## The gap this campaign addressed
 
@@ -38,7 +38,7 @@ one clause generates across the lanes.
 | D-dyn | a covariant nearest-neighbour two-site Hermitian generator | 9040 |
 | D-pc | possibility covariance (every internal rotation) | 9040 |
 | D-sold | full soldering of the rotations to the Bloch vector | 9040 |
-| D-perm | permanence as compression onto record projectors | 9041 |
+| D-perm | permanence as compression onto record projectors; its distant part follows from D-loc (9085) | 9041 |
 | D-tr | odds read from the site's state by the trace rule | 9041 |
 | D-relax | relaxation profile; which state records form from | 9041, 9052 |
 | D-menu | antipodal menus | 9041 |
@@ -167,6 +167,12 @@ one clause generates across the lanes.
       unitary.
     - With continuous time and nearest-neighbour range, it has the form of
       the clause. The clause's content reduces to D-rev and covariance.
+16. **A record updates the rest of the lattice by compression (open PR 9085).**
+    - Joint record effects whose marginals stay Born are product
+      projectors.
+    - So a record leaves every other site in its Lüders conditional state.
+    - The distant part of D-perm, the collapse, follows from D-loc and the
+      site-local lock.
 
 **The ladder.** What each sector needs from the dynamics and the lattice:
 
@@ -211,10 +217,10 @@ one clause generates across the lanes.
 ## Consolidated certificates
 
 The runner re-derives one identity per block, independently of that
-block's runner, and checks the ledger. There are sixteen checks and all
+block's runner, and checks the ledger. There are seventeen checks and all
 pass in about two seconds.
 - **L.** The sixteen declared points are exactly those used by the
-  fifteen blocks.
+  sixteen blocks.
 - **1.** Coupling dimensions 1, 1 and 3.
 - **2.** The projection lemma, the resultant ground state, and the
   pentagon law `(1 + t)/2`.
@@ -241,6 +247,8 @@ pass in about two seconds.
   average, and a cubic deformation's shift.
 - **15.** A Weinberg-type precession's signalling shift, and the negative
   partial transpose of a singlet.
+- **16.** The one-line range intersection, and tomography matching the
+  Lüders state.
 
 ## Independent checks
 
@@ -268,11 +276,13 @@ Two checkers wrote separate code and did not read the campaign's runners.
 
 ## The state of the candidate after this campaign
 
-One locality reading, D-loc, now does double duty (open PRs 9083 and 9084).
-It makes both the record law and the evolution between records linear. So
-the quantum-probability sector's decision points reduce to:
+One locality reading, D-loc, now does triple duty (open PRs 9083, 9084 and
+9085). It makes the record law and the evolution between records linear,
+and it fixes how a record updates distant sites. So the
+quantum-probability sector's decision points reduce to:
 - D-loc;
-- compression (D-perm);
+- the lock (a record leaves its own site in its possibility);
+- the antipodal menu;
 - reversibility, time structure and range (D-rev);
 - covariance.
 

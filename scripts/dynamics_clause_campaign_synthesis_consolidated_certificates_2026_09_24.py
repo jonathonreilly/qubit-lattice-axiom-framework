@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the fifteen blocks are exactly the
+L. Ledger: the decision points used by the sixteen blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -49,6 +49,8 @@ L. Ledger: the decision points used by the fifteen blocks are exactly the
    average and a cubic deformation does not.
 15. (9084) A Weinberg-type precession lets a distant record shift a later
    marginal; channels do not; the transpose on half a singlet is negative.
+16. (9085) Joint record effects with Born marginals are product projectors,
+   so a record updates its partner to the Lueders conditional state.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -125,6 +127,7 @@ USED = {
     9081: {"D-roles", "D-gauss"},
     9083: {"D-dyn", "D-perm", "D-menu", "D-loc"},
     9084: {"D-loc", "D-perm", "D-rev", "D-pc", "D-sold"},
+    9085: {"D-loc", "D-perm", "D-menu"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -658,6 +661,36 @@ for i in range(2):
 negev = np.linalg.eigvalsh(pt).min()
 check("a Weinberg-type precession lets a distant record shift a later marginal; the transpose on half a singlet is negative",
       shift > 1e-2 and abs(negev + 0.5) < 1e-12, f"precession shift {shift:.3f}; transpose eigenvalue {negev:.3f}")
+
+# ------------------------------------------ 16: collapse from locality
+print("16. collapse from locality of marginals")
+Pm_ = [np.array([[0, 1], [1, 0]], dtype=complex), np.array([[0, -1j], [1j, 0]]), np.diag([1.0 + 0j, -1.0])]
+
+
+def prj(n, sgn):
+    return 0.5 * (np.eye(2) + sgn * sum(n[k] * Pm_[k] for k in range(3)))
+
+
+a_ = np.array([0.3, -0.5, 0.8]); a_ /= np.linalg.norm(a_)
+b_ = np.array([-0.6, 0.2, 0.7]); b_ /= np.linalg.norm(b_)
+inter_ = int(np.sum(np.abs(np.linalg.eigvalsh(np.kron(prj(a_, 1), np.eye(2)) + np.kron(np.eye(2), prj(b_, 1))) - 2) < 1e-9))
+dev_ = 0.0
+for _ in range(50):
+    G_ = rng.normal(size=(4, 3)) + 1j * rng.normal(size=(4, 3))
+    rho_ = G_ @ G_.conj().T
+    rho_ /= np.trace(rho_)
+    P_ = prj(a_, 1)
+    M_ = np.kron(P_, np.eye(2)) @ rho_ @ np.kron(P_, np.eye(2))
+    lued = np.einsum("ijik->jk", M_.reshape(2, 2, 2, 2))
+    lued /= np.trace(lued)
+    pq_ = np.real(np.trace(np.kron(P_, np.eye(2)) @ rho_))
+    tom = 0.5 * np.eye(2, dtype=complex)
+    for k in range(3):
+        pp = np.real(np.trace(np.kron(P_, prj(np.eye(3)[k], 1)) @ rho_)) / pq_
+        tom = tom + 0.5 * (2 * pp - 1) * Pm_[k]
+    dev_ = max(dev_, np.linalg.norm(tom - lued))
+check("joint record effects with Born marginals are product projectors; the partner's post-record state is the Lueders state",
+      inter_ == 1 and dev_ < 1e-12, f"range intersection dimension {inter_}; tomography vs Lueders deviation {dev_:.1e}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

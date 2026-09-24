@@ -1,0 +1,7 @@
+PASS mirror moments: E[z]=A(k), the perpendicular second moment is A/k, Var(z)=A', and equal-norm vectors are mirrors
+PASS A/k decreases: k A' - A = g(2k)/(k sinh^2 k) with g's series negative for m>=3, so A/k falls from 1/3
+PASS series coefficients: d1=1/36, d2=1/225, and d_j>0 through j=24
+PASS region: 15 intervals, sup bound 0.47580 < 10/21, so 7 beta L < 1 for every beta <= 3/10
+PASS ceilings: TV cost is tanh(beta/2), so 7 tanh(beta/2)=1 at ln(4/3); e^{3/10}>4/3, and block 27 stops at sqrt(3)/7
+HIT: confirmed - for equal-norm moves W1 = (A(k)/k)|V-V'|, and A/k falls from 1/3. Every direction at |V|<=21/10 has influence below 10/21, so 7 beta L < 1 for every beta <= 3/10. No total-variation argument passes ln(4/3), and 3/10 is past that.
+SUMMARY: confirmed the mirror moments, the decrease of A/k, the rational sweep below 10/21, and the two ceilings. The directional lemma that would reach 3/7 was not proved, as the attempt says.

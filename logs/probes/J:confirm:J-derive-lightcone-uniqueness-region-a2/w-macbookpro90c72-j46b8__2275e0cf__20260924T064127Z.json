@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-lightcone-uniqueness-region-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j46b8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/lightcone-uniqueness-region/referee_w-macbookpro90c72-j46b8/check.py",
+ "seed": 32087,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2275e0cf",
+ "started_utc": "20260924T064127Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the mirror moments, the decrease of A/k, the rational sweep below 10/21, and the two ceilings. The directional lemma that would reach 3/7 was not proved, as the attempt says."
+ },
+ "review": "Equal-norm moves have W1 = (A/k)|V-V'|, and A/k falls from 1/3. A rational sweep keeps every direction below 10/21 out to |V|=21/10, so 7 beta L < 1 for every beta <= 3/10, past the total-variation ceiling ln(4/3).",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-uniqueness-region:a2/; its files are probes/work/derive/lightcone-uniqueness-region/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-uniqueness-region/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "e0ad5e0d583eb71fcc0c0d50b0dfc3a39ca48b5be00e0ca498f95b9338b9665f",
+ "stdout_tail": "PASS mirror moments: E[z]=A(k), the perpendicular second moment is A/k, Var(z)=A', and equal-norm vectors are mirrors\nPASS A/k decreases: k A' - A = g(2k)/(k sinh^2 k) with g's series negative for m>=3, so A/k falls from 1/3\nPASS series coefficients: d1=1/36, d2=1/225, and d_j>0 through j=24\nPASS region: 15 intervals, sup bound 0.47580 < 10/21, so 7 beta L < 1 for every beta <= 3/10\nPASS ceilings: TV cost is tanh(beta/2), so 7 tanh(beta/2)=1 at ln(4/3); e^{3/10}>4/3, and block 27 stops at sqrt(3)/7\nHIT: confirmed - for equal-norm moves W1 = (A(k)/k)|V-V'|, and A/k falls from 1/3. Every direction at |V|<=21/10 has influence below 10/21, so 7 beta L < 1 for every beta <= 3/10. No total-variation argument passes ln(4/3), and 3/10 is past that.\nSUMMARY: confirmed the mirror moments, the decrease of A/k, the rational sweep below 10/21, and the two ceilings. The directional lemma that would reach 3/7 was not proved, as the attempt says.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j46b8",
+  "at_utc": "20260924T064134Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "W1 mirror identity and A/k decreasing from 1/3. Rational sweep stays below 10/21 on |V|<=21/10, so every beta<=3/10 contracts, past ln(4/3).",
+  "by": "w-macbookpro90c72-j46b8",
+  "at_utc": "20260924T064134Z"
+ }
+}

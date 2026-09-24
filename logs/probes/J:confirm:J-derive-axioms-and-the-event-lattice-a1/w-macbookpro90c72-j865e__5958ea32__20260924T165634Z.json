@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-axioms-and-the-event-lattice-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j865e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/axioms-and-the-event-lattice/referee_w-macbookpro90c72-j865e/check.py",
+ "seed": 68994,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5958ea32",
+ "started_utc": "20260924T165634Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the citation map matches the pinned commit. The text does not choose among one-record orders, and it excludes per-tick records at one site."
+ },
+ "review": "At main abb98a12 the cited sentences match: sites are Z^3, a site never carries more than one record, and formation order is not supplied.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:axioms-and-the-event-lattice:a1/; its files are probes/work/derive/axioms-and-the-event-lattice/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/axioms-and-the-event-lattice/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8bbc9fd1ab6af1ceaa3077999a17ab552041d736c649114f26d382d6163d6bad",
+ "stdout_tail": "ITIVE_NOTE.md has 57 lines at abb98a122eb7 (attempt says 57)\nok: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md has 110 lines at abb98a122eb7 (attempt says 110)\nok: docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md has 153 lines at abb98a122eb7 (attempt says 153)\nok: docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md has 714 lines at abb98a122eb7 (attempt says 714)\nok: docs/ANOMALY_FORCES_TIME_THEOREM.md has 470 lines at abb98a122eb7 (attempt says 470)\nok: docs/PAST_HYPOTHESIS_EXISTENCE_REDUCTION_APPEND_ONLY_WELL_FOUNDEDNESS_BOUNDED_THEOREM_NOTE_2026-06-11.md has 122 lines at abb98a122eb7 (attempt says 122)\nok: canonical premise ids are ['minimal_axioms', 'scale_reference_primitive', 'kinetic_isotropy_primitive', 'realized_state_primitive']\nok: one record per site is the sentence that excludes a second record at the same site\nTOTAL FAIL = 0\nHIT: confirmed - at main abb98a12 the axiom text places sites at the points of Z^3 and says a site never carries more than one record. Every one-record-per-site formation order, including the level order x1+x2+x3, is a named conditional. A structure that writes a new record at the same site on a later tick contradicts that sentence. Z^3 x Z_tau in the kinetic-isotropy note is a loop regulator, not a lattice of record sites.\nSUMMARY: confirmed - the citation map matches the pinned commit. The text does not choose among one-record orders, and it excludes per-tick records at one site.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j865e",
+  "at_utc": "20260924T165641Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Pinned main abb98a12 matches the citation map: one record per site excludes a per-tick record lattice, and formation order is open.",
+  "by": "w-macbookpro90c72-j865e",
+  "at_utc": "20260924T165641Z"
+ }
+}

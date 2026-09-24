@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_in_three_dimensions_the_clocked_walk_needs_a_fast_end_condition_exactly_in_small_transverse_sectors_2026_09_23.py
+runner_sha256: 0db385546e50e0539ab29cfeac8241d46624f7beb59b4a365235e3be9f597536
+input_fingerprint_sha256: 227cf4f8defa4571b5544e74c81471a98e64b3f003e57c6fbd04d37603ae7434
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.27
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_IN_THREE_DIMENSIONS_THE_CLOCKED_WALK_NEEDS_A_FAST_END_CONDITION_EXACTLY_IN_THE_SECTORS_WITH_SMALL_TRANSVERSE_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities; Admissibility is not a dynamics axiom and does not define a time metric (the walk and its clock are supplied clauses)
+PASS: B1 T1: for w = lambda^(x1) and a plane wave exp(i(k2 x2 + k3 x3)) across the gradient, the clocked 3D walk acts as the line operator J_k = (sigma_1 D_1)_w + w(x1)(sin k2 sigma_2 + sin k3 sigma_3): the transverse hops become an on-site term that grows with the clock (exact for all 16 transverse wave numbers of a side-4 torus, symbolic lambda)
+PASS: C1 T2: in a transverse sector with |(sin k2, sin k3)| = m, J_k psi = 0 divided by lambda^n is the constant recurrence -(i/2) sqrt(lambda) sigma_1 psi(n+1) + (i/2) sigma_1 psi(n-1)/sqrt(lambda) + M psi(n) = 0; its solutions are exactly psi(n) = (r/sqrt(lambda))^n v with r - 1/r = +-2m, so |r| = sqrt(1 + m^2) + m or its inverse sqrt(1 + m^2) - m (exact at (sin k2, sin k3) = (3/5, 4/5), m = 1, at five sites, symbolic lambda)
+PASS: D1 T3: at the fast end the two solutions with |r| = sqrt(1 + m^2) - m are always square-summable (|r|^2 < lambda); the two with |r| = sqrt(1 + m^2) + m are square-summable exactly when m < m* = (lambda - 1)/(2 sqrt(lambda)) = sinh(g/2) for lambda = exp(g) (exact); at lambda = 4, m* = 3/4: m = 1/4 has four, m = 1 has two; every sector has four once sqrt(3) + sqrt(2) <= sqrt(lambda), i.e. lambda >= 5 + 2 sqrt(6)
+PASS: E1 T4: along a ray in a static field the energy E = w sqrt(sin^2 k1 + m^2) is kept with m fixed, so a ray with m > 0 turns back before w exceeds E/m and never reaches the fast end, while at m = 0 all four roots have modulus one (block 108's line) and the fast end is reached in finite time (sum of 1/w finite, 3/2 at lambda = 3): the sectors 0 < m < m* need a boundary condition though no ray with that m reaches the end (symbolic)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the characteristic roots, their product and the threshold (symbolic)
+per_site: executed - the 3D walk on a 5 x 4 x 4 box against the reduced line operator for 16 transverse wave numbers; exact solutions at five sites
+per_mode: executed - the square-summable count by sector; the ray turning point
+per_block: executed - the whole zone beyond lambda = 5 + 2 sqrt(6)
+lattice_wide: T1-T4 on Z^3 with w = lambda^(x1), sector by sector, with the limit-point/limit-circle theory for matrix three-term operators imported at definition level; block 54 as landed supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: the clocked 3D walk in an exponential clock field - sector by sector across the gradient, a fast-end boundary condition is needed exactly when |(sin k2, sin k3)| < sinh(g/2); the ray picture turns back every such ray with nonzero transverse momentum; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

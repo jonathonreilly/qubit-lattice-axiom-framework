@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-dewitt-ratio-and-local-conservation-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j2fa4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-dewitt-ratio-and-local-conservation/referee_w-macbookpro90c72-j2fa4/check.py",
+ "seed": 34800,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "675b964a",
+ "started_utc": "20260924T072640Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - at alpha+beta=0 the relabelling identity is e''=-(K wbar^2/(4 alpha)) p.Theta.p at every lattice wave vector, the second time derivative of continuity for J=(K wbar^2/(4 alpha)) P, not continuity or momentum balance themselves; a stationary two-wave content of block 54's walk has e''=0 and p.Theta.p=128 eps(1-i)/65^3 != 0"
+ },
+ "review": "At alpha+beta=0 the longitudinal relabelling reduces to e''=-(K wbar^2/(4 alpha)) p.Theta.p, and the equal-energy walk pair with sin a=3/5, sin b=5/13 has e''=0 but p.Theta.p=128 eps(1-i)/65^3.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-dewitt-ratio-and-local-conservation:a2/; its files are probes/work/derive/the-dewitt-ratio-and-local-conservation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-dewitt-ratio-and-local-conservation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "02501e3c6f1c7a85ca433811b25864968787e3c19294453ccda3ac56a5ae2e45",
+ "stdout_tail": "STEP S2-S5 FOLLOWS: R1 and R2 are unchanged by h -> h + p xi^T + xi p^T; along z, K wbar R1 = e is 2 K wbar p^2 phi = e; at alpha+beta=0 the xi equation is -(4 alpha/(K wbar^2 p^2)) e'' = Theta_zz; transverse (4 alpha/wbar) c'' = Theta_xz\nSTEP S6 FOLLOWS: e'' = -c p.Theta.p from e' + i p.J = 0 and P' + i p.Theta = 0 with J = c P, and this is the relabelling identity iff c = K wbar^2/(4 alpha). A constant e' is invisible to e''\nSTEP S7 FOLLOWS: the two positive-branch waves have energy squared 2146/4225 and chi-norm squared 4292/4225; with Theta_a^j = (1/2) chi1^dag sigma_a chi2 (sin k1+sin k2)_j, p.Theta.p = 128 eps (1-i)/65^3 != 0 while e''=0. Dividing both spinors by their common norm leaves the stress nonzero\nSTEP S8 FOLLOWS: at rest Theta=0 forces e''=0 at every p, while block 101's switch-on has e''(0)=6 Delta_e/tau^2\nSUMMARY: confirmed - at alpha+beta=0 the relabelling identity is e''=-(K wbar^2/(4 alpha)) p.Theta.p at every lattice wave vector, the second time derivative of continuity for J=(K wbar^2/(4 alpha)) P, not continuity or momentum balance themselves; a stationary two-wave content of block 54's walk has e''=0 and p.Theta.p=128 eps(1-i)/65^3 != 0\nHIT: confirmed - alpha+beta=0 imposes e''=-(K wbar^2/(4 alpha)) p.Theta.p, conservation's second derivative for that current, and block 54's equal-energy superposition violates it\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2fa4",
+  "at_utc": "20260924T072650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Cross-family referee: the relabelling identity at alpha+beta=0 and the stationary walk counterexample both reproduce. p.Theta.p=128 eps(1-i)/65^3 for the un-normalized equal-energy pair.",
+  "by": "w-macbookpro90c72-j2fa4",
+  "at_utc": "20260924T072650Z"
+ }
+}

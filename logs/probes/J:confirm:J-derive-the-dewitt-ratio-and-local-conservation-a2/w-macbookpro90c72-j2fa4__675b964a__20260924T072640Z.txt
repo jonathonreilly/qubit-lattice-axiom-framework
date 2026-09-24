@@ -1,0 +1,6 @@
+STEP S2-S5 FOLLOWS: R1 and R2 are unchanged by h -> h + p xi^T + xi p^T; along z, K wbar R1 = e is 2 K wbar p^2 phi = e; at alpha+beta=0 the xi equation is -(4 alpha/(K wbar^2 p^2)) e'' = Theta_zz; transverse (4 alpha/wbar) c'' = Theta_xz
+STEP S6 FOLLOWS: e'' = -c p.Theta.p from e' + i p.J = 0 and P' + i p.Theta = 0 with J = c P, and this is the relabelling identity iff c = K wbar^2/(4 alpha). A constant e' is invisible to e''
+STEP S7 FOLLOWS: the two positive-branch waves have energy squared 2146/4225 and chi-norm squared 4292/4225; with Theta_a^j = (1/2) chi1^dag sigma_a chi2 (sin k1+sin k2)_j, p.Theta.p = 128 eps (1-i)/65^3 != 0 while e''=0. Dividing both spinors by their common norm leaves the stress nonzero
+STEP S8 FOLLOWS: at rest Theta=0 forces e''=0 at every p, while block 101's switch-on has e''(0)=6 Delta_e/tau^2
+SUMMARY: confirmed - at alpha+beta=0 the relabelling identity is e''=-(K wbar^2/(4 alpha)) p.Theta.p at every lattice wave vector, the second time derivative of continuity for J=(K wbar^2/(4 alpha)) P, not continuity or momentum balance themselves; a stationary two-wave content of block 54's walk has e''=0 and p.Theta.p=128 eps(1-i)/65^3 != 0
+HIT: confirmed - alpha+beta=0 imposes e''=-(K wbar^2/(4 alpha)) p.Theta.p, conservation's second derivative for that current, and block 54's equal-energy superposition violates it

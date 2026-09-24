@@ -1,0 +1,17 @@
+Source: explicit --runners.  Runners under consideration: 1
+  fresh:           0
+  stale to refresh:1
+  missing on disk: 0
+
+Executing 1 runner(s) with concurrency=1...
+Live logs available under logs/runner-cache/.in-progress/<stem>.txt — `tail -F` any one to watch a specific runner mid-execution.
+  [  1/1] OK          6.5s  postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py
+
+Done in 6.5s.
+  ok             1
+  nonzero_exit   0
+  timeout        0
+  error          0
+  missing        0
+
+Cache layout: logs/runner-cache/<runner-stem>.txt

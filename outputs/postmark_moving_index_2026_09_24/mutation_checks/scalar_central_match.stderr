@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-gwlq5ob_/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 455, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-gwlq5ob_/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 442, in main
+    "scalar_outer_to_inner_match": verify_scalar_central_match(),
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-gwlq5ob_/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 353, in verify_scalar_central_match
+    raise ArithmeticError(("exact-to-outer central scalar match", difference))
+ArithmeticError: ('exact-to-outer central scalar match', -h**2)

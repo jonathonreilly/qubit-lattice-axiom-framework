@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-c14yuo5c/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 455, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-c14yuo5c/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 443, in main
+    "coefficientwise_core_limit_check": verify_core_coefficient_limit(),
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-c14yuo5c/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 381, in verify_core_coefficient_limit
+    raise ArithmeticError((spin, "independent physical-state core comparison",
+                           max_diag, max_off))
+ArithmeticError: (64, 'independent physical-state core comparison', 8192.0, 4096.0)

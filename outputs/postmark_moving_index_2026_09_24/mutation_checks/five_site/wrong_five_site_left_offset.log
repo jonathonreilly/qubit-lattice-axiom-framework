@@ -1,0 +1,12 @@
+
+--- stderr ---
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_wrong_five_site_left_offset_otopdq7j/scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py", line 474, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_wrong_five_site_left_offset_otopdq7j/scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py", line 437, in main
+    bragg_crossings = verify_bragg_crossing_compressions()
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_wrong_five_site_left_offset_otopdq7j/scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py", line 312, in verify_bragg_crossing_compressions
+    raise ArithmeticError(("five-cell crossing compression",
+                           str(theta), pair, sample, minimal))
+ArithmeticError: ('five-cell crossing compression', '0', (1, 4), 1, 5*_algebraic_zero**2 + 5*_algebraic_zero + 1)

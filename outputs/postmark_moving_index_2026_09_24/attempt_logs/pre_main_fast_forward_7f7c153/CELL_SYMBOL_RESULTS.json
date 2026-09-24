@@ -1,0 +1,158 @@
+{
+  "claim_status": "conditional local-cell symbol theorem; no full propagator asymptotic is claimed",
+  "source_revision": "7f7c153fdaef62db8efdc6bd238bfcbc7379f57b",
+  "source_note": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+  "source_note_sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+  "read_inventory": {
+    "scientific_inputs": [
+      "the supplied signed 15-residue hop-label arrays recorded in the cited zero-mode source note",
+      "R_m=C-m(m+1) and the one-vacancy Jacobi entry rule in the cited supplied-model notes"
+    ],
+    "package_integrity_reads": [
+      "scripts/runner_cache.py binds this runner SHA-256 and the declared source-note fingerprint; the runner does not read external data files at execution time"
+    ]
+  },
+  "operator": "N_S=J M_S J with M_S=A_S^* A_S and J|n>=(-1)^n|n>",
+  "cell_coordinates": "n=15k+r with signed k=floor(n/15), x=3k/S, r=0,...,14; the signed label tables reduce to one Casimir coefficient family",
+  "casimir_factor": "R_m/C with R_m=C-m(m+1), C=S(S+1)",
+  "exact_scalar_expansion": "R_(uS+a)/C = (1-u^2) + S^-1*(u^2-u*(2a+1)) - S^-2*(u-a)*(u-a-1)/(1+S^-1)",
+  "principal_cell_symbol": "2*(1-u^2)-2*(1-u^2)*cos(q)",
+  "folded_bands": "nu_l(u,theta)=2*(1-u^2)-2*(1-u^2)*cos((theta+2*pi*l)/15), l=0,...,14",
+  "mod3_character": "V|n>=exp(2*pi*i*n/3)|n>; in a 15-cell it maps band l to l+5 modulo 15",
+  "principal_mod3_band_gap": "2*sqrt(3)*(1-u^2)*sin(q_l+pi/3)",
+  "principal_phase_stationary_set": "the only interior critical points in signed x are x=0 and q=pi/6 or 7*pi/6; their Hessian determinant is 8/75. The exact Casimir-reflected labels give one coefficient family across x=0; its order-one central phase still requires the second-order central expansion",
+  "first_subprincipal_arrays": {
+    "positive_diagonal": "d1_r=alpha(L_r^+)+alpha(R_(r-1)^+), with R_(-1)^+=R_14^+-3",
+    "negative_diagonal": "d1_r=alpha(L_r^-)+alpha(R_(r-1)^-), with R_(-1)^-=R_14^-+3",
+    "both_offdiagonal": "b1_r=(alpha(L_r)+alpha(R_r))/2",
+    "alpha": "alpha(a)=u^2-u*(2a+1); N_S has offdiagonal -b1/S"
+  },
+  "mod3_resonant_crossings": [
+    {
+      "side": "+",
+      "reduced_zone_boundary": "theta=0",
+      "bands": [
+        5,
+        10
+      ],
+      "projected_first_order_matrix": [
+        [
+          "u*(3*u - 11)",
+          "2*u*(1 + sqrt(3)*I)/5"
+        ],
+        [
+          "2*u*(1 - sqrt(3)*I)/5",
+          "u*(3*u - 11)"
+        ]
+      ],
+      "coupling_magnitude": "4*Abs(u)/5",
+      "local_eigenvalue_gap_coefficient_before_1_over_S": "8*Abs(u)/5"
+    },
+    {
+      "side": "-",
+      "reduced_zone_boundary": "theta=0",
+      "bands": [
+        5,
+        10
+      ],
+      "projected_first_order_matrix": [
+        [
+          "u*(3*u + 11)",
+          "-2*u*(1 + sqrt(3)*I)/5"
+        ],
+        [
+          "2*u*(-1 + sqrt(3)*I)/5",
+          "u*(3*u + 11)"
+        ]
+      ],
+      "coupling_magnitude": "4*Abs(u)/5",
+      "local_eigenvalue_gap_coefficient_before_1_over_S": "8*Abs(u)/5"
+    },
+    {
+      "side": "+",
+      "reduced_zone_boundary": "theta=pi",
+      "bands": [
+        12,
+        2
+      ],
+      "projected_first_order_matrix": [
+        [
+          "u*(5*u - 17)/5",
+          "2*u*(3 - sqrt(3)*I)/15"
+        ],
+        [
+          "2*u*(3 + sqrt(3)*I)/15",
+          "u*(5*u - 17)/5"
+        ]
+      ],
+      "coupling_magnitude": "4*sqrt(3)*Abs(u)/15",
+      "local_eigenvalue_gap_coefficient_before_1_over_S": "8*sqrt(3)*Abs(u)/15"
+    },
+    {
+      "side": "-",
+      "reduced_zone_boundary": "theta=pi",
+      "bands": [
+        12,
+        2
+      ],
+      "projected_first_order_matrix": [
+        [
+          "u*(5*u + 17)/5",
+          "2*u*(-3 + sqrt(3)*I)/15"
+        ],
+        [
+          "-2*u*(3 + sqrt(3)*I)/15",
+          "u*(5*u + 17)/5"
+        ]
+      ],
+      "coupling_magnitude": "4*sqrt(3)*Abs(u)/15",
+      "local_eigenvalue_gap_coefficient_before_1_over_S": "8*sqrt(3)*Abs(u)/15"
+    }
+  ],
+  "finite_spin_coefficient_expansion_check": {
+    "spins": [
+      {
+        "S": 64,
+        "max_S2_scaled_remainder_by_side": {
+          "+": 18.165865384615245,
+          "-": 29.79663461538439
+        }
+      },
+      {
+        "S": 128,
+        "max_S2_scaled_remainder_by_side": {
+          "+": 18.30668604651146,
+          "-": 30.027616279068752
+        }
+      },
+      {
+        "S": 256,
+        "max_S2_scaled_remainder_by_side": {
+          "+": 18.23446619650349,
+          "-": 30.32785141050408
+        }
+      },
+      {
+        "S": 512,
+        "max_S2_scaled_remainder_by_side": {
+          "+": 18.341808296798263,
+          "-": 30.29502467106795
+        }
+      },
+      {
+        "S": 1024,
+        "max_S2_scaled_remainder_by_side": {
+          "+": 18.32375190546736,
+          "-": 30.370581173803657
+        }
+      }
+    ],
+    "global_max_S2_scaled_remainder": 30.370581173803657
+  },
+  "principal_bloch_matrix_check": {
+    "samples": 15,
+    "maximum_eigenvalue_error": 3.1086244689504383e-15
+  },
+  "phase_scale": "the local avoided-crossing gap is kappa(u)/S+O(S^-2); under exp(-it*(N_S^2-C*N_S)) its phase splitting is t*kappa(u)*S+O(1) for fixed u>0",
+  "limits": "The subprincipal resonance contributes at fixed laboratory time. This local frozen-cell calculation is not a full-operator gap theorem, WKB estimate, initial-state propagation result, or fixed-time limit. The central stationary layer u=O(1/S), boundaries u near 1, electric tails, and H4/output/domain comparison remain open."
+}

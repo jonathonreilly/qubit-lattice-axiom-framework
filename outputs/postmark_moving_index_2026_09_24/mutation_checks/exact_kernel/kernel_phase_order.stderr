@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_kernel_phase_order_lgqcg3uu/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 617, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_kernel_phase_order_lgqcg3uu/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 570, in main
+    dense = verify_small_dense_identities(limit_profile)
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_kernel_phase_order_lgqcg3uu/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 512, in verify_small_dense_identities
+    raise ArithmeticError(("dense identity check", echo_error,
+    ...<3 lines>...
+                           readout_error, diagonal_term_error))
+ArithmeticError: ('dense identity check', 2.4771182072877383e-15, 0.0, 3.3228424179391444e-15, 1.5841484482597525e-15, 6.039829538330028e-15, 0.411382108905646, 6.662783593823664e-16, 1.0408340855860843e-17)

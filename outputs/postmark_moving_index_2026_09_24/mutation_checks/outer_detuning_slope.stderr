@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-697libo6/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 455, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-697libo6/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 440, in main
+    "outer_two_band_crossings": verify_crossing_normal_forms(),
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-697libo6/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 264, in verify_crossing_normal_forms
+    raise ArithmeticError((side, label, slope0, slope1, slope))
+ArithmeticError: ('+', 'theta=0', sqrt(3)*(1 - u**2)/15, sqrt(3)*(u**2 - 1)/15, sqrt(3)*(1 - u**2)/16)

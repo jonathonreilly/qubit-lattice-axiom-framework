@@ -1,0 +1,12 @@
+
+--- stderr ---
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_wrong_period_three_fiber_index_oabymby9/scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py", line 474, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_wrong_period_three_fiber_index_oabymby9/scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py", line 461, in main
+    "period_three_character_action": verify_character_fiber_shift(),
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_wrong_period_three_fiber_index_oabymby9/scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py", line 360, in verify_character_fiber_shift
+    raise ArithmeticError(("period-three Bloch-fiber shift", maximum_error))
+ArithmeticError: ('period-three Bloch-fiber shift', 1.7320508075688779)

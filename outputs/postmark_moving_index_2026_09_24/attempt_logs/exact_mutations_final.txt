@@ -1,0 +1,6 @@
+{
+  "runner_sha256": "3590df8b03d7660c7f4d4540b6d95e7b826e1bce7dbd3913248124ec0e1901a9",
+  "all_detected": true,
+  "mutations": 9,
+  "failed_to_detect": []
+}

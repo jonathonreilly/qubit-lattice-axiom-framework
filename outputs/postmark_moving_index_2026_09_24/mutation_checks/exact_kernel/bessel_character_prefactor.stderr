@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_bessel_character_prefactor_8msg3yh0/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 617, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_bessel_character_prefactor_8msg3yh0/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 568, in main
+    homogeneous = verify_homogeneous_bessel_kernel()
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_bessel_character_prefactor_8msg3yh0/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 551, in verify_homogeneous_bessel_kernel
+    raise ArithmeticError(("homogeneous Fourier/Bessel kernel", max_error))
+ArithmeticError: ('homogeneous Fourier/Bessel kernel', 1.7320508075688767)

@@ -1,0 +1,36 @@
+S=32 dim=317
+  phase_increment_range= 0.06005297558303388 6.479100058966651
+  wrapped_increment_fraction<0.1= 0.04746835443037975
+  wrapped_increment_fraction<0.01= 0.00949367088607595
+  second_difference_range= -2.1874805331411835 2.126728785434011
+  second_difference_median_abs= 0.14967519395383988
+S=64 dim=637
+  phase_increment_range= 0.06001345670089226 12.879550047394332
+  wrapped_increment_fraction<0.1= 0.03459119496855346
+  wrapped_increment_fraction<0.01= 0.0031446540880503146
+  second_difference_range= -2.967600550598945 3.091318518051139
+  second_difference_median_abs= 0.2533632479741641
+S=128 dim=1277
+  phase_increment_range= 0.060003391081395914 25.679775015734776
+  wrapped_increment_fraction<0.1= 0.03761755485893417
+  wrapped_increment_fraction<0.01= 0.0023510971786833857
+  second_difference_range= -4.404580973583506 4.361230846692706
+  second_difference_median_abs= 0.3387566949918437
+S=256 dim=2557
+  phase_increment_range= 0.06000085113798378 51.27988750433724
+  wrapped_increment_fraction<0.1= 0.027386541471048513
+  wrapped_increment_fraction<0.01= 0.003129890453834116
+  second_difference_range= -6.227930910332361 6.212930339068407
+  second_difference_median_abs= 0.4674408797063734
+S=512 dim=5117
+  phase_increment_range= 0.06000021320150248 102.47994375106646
+  wrapped_increment_fraction<0.1= 0.030297107114933542
+  wrapped_increment_fraction<0.01= 0.0029319781078967944
+  second_difference_range= -8.840576864080504 8.86842117906781
+  second_difference_median_abs= 0.6813548236373208
+S=768 dim=7677
+  phase_increment_range= 0.06000009482171935 153.67996250011493
+  wrapped_increment_fraction<0.1= 0.035174570088587806
+  wrapped_increment_fraction<0.01= 0.003778009379885357
+  second_difference_range= -10.856373030866962 10.900609299656935
+  second_difference_median_abs= 0.8180404655722668

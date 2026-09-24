@@ -1,0 +1,56 @@
+schema_version: 1
+loop_slug: postmark-electric-moving-index-20260924
+current_goal: "At t=1/4, prove a limit for the actual supplied finite-spin period-three readout, or exhibit rigorously separated actual-readout subsequences."
+delivery_mode: milestone
+runtime:
+  authorized: 12h
+  started_utc: "2026-09-24T04:38:00Z"
+  deadline_utc: "2026-09-24T16:38:00Z"
+  checkpoint_utc: "2026-09-24T14:26:00Z"
+  runtime_used_at_checkpoint: "about 9h48m"
+cycle_count: 2
+block_count: 2
+source:
+  repo: /Users/jonreilly/Projects/Physics
+  base_ref: origin/main
+  base_revision: 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8
+  branch: physics-loop/postmark-moving-index-central-match-20260924
+  worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924
+active_route: "pole-safe spectral reconstruction from the two-energy anchor Schur/Weyl pencil, followed by prepared-weighted phase control"
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+conditional_surface_status: "conditional on the supplied six-site path, integer-spin hop factors, generator, first-mark preparation, and period-three readout"
+provisional_dependency_check_state: "prior supporting notes were authored against c288aa9 and their source hashes remain unchanged at current origin/main 0e6ad828; this new block starts on 0e6ad828"
+independent_check_state: "Next-route review comprised seven isolated worker reports and three root-only exact route checks after the platform thread cap. The author has now cold-read all four candidate theorem notes and all four runners; no independent final-source review has been performed. Personal execution has no subagents."
+formal_audit_state: not_requested
+next_milestone: "freeze and deliver the author-checked conditional-support milestone in a non-draft review PR; continue the pole-aware two-energy Schur/Weyl route personally within the remaining authorized runtime"
+strongest_unresolved_proof_obligation: "the current Schur reconstruction excludes energies at poles of H_II; derive and test an exact all-energy reconstruction including pole eigenspaces, then seek a uniform prepared-weighted O(S^2)-time phase bound"
+hard_residual_being_attacked: "the finite-spin conjugated period-three observable over time theta=C/4"
+open_imports:
+  - "supplied one-vacancy Hamiltonian and first-mark state are not derived from framework axioms"
+  - "fixed-time global finite-spin propagation and physical interpretation remain open"
+no_go_routes: []
+trace_gate:
+  trace_class: upstream_support
+  target_claim_id: postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24
+  target_blocker_text: "joint finite-spin electric limit"
+  source_of_blocker_text: handoff
+  reachability_to_target: supports
+  artifact_role: theorem
+  next_trace_action: "control the interior phase of q_S(1/4), or prove separated actual-readout subsequences; the prepared-state endpoint strip is controlled"
+review_findings: "Ten route passes selected the exact five-site cross-fiber route: seven isolated worker reports plus three root-only checks after the platform thread cap. Personal execution derived and runner-checked the five-site geometry, endpoint support bound, and weighted finite-lag diagnostics. The follow-on Schur probe verifies the four-site rational pencil and two-energy character-overlap identity at S=1,2,3,5 to floating errors below 5e-14; it proves no phase cancellation. A final read strengthened the five-site slope check to sample nonzero u; all current-source mutation receipts and four caches now match. No independent source review has been performed."
+pr_status: "author-preflighted conditional-support milestone is being frozen for a non-draft review PR; independent science review and formal audit remain pending"
+files_touched:
+  - docs/POSTMARK_ELECTRIC_MOVING_INDEX_CELL_SYMBOL_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - docs/POSTMARK_ELECTRIC_TWO_BAND_CENTRAL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - docs/POSTMARK_ELECTRIC_EXACT_SIDE_FIXED_INDEX_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - docs/POSTMARK_ELECTRIC_FIVE_SITE_INTER_FIBER_PHASE_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py
+  - scripts/postmark_electric_two_band_central_match_2026_09_24.py
+  - scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py
+  - scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py
+  - outputs/postmark_moving_index_2026_09_24/
+  - logs/runner-cache/postmark_electric_*
+  - .claude/science/physics-loops/postmark-electric-moving-index-20260924/
+next_exact_action: "complete the section-by-section author conformance check, run final exact-candidate validation in the disposable copy, commit/push and open the non-draft support PR; then personally test pole-safe Schur reconstruction at S=8,16,32,64 before the 16:38 UTC deadline"
+stop_condition: "complete the authorized 12h runtime, or exhaust mathematically distinct routes with explicit reopen conditions"

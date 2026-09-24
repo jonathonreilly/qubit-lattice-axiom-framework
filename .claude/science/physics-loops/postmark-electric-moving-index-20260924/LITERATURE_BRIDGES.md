@@ -1,0 +1,14 @@
+# Literature bridges
+
+These primary sources provide candidate proof templates. Their stated theorem scopes identify the extra work needed to relate them to this finite 15-residue Jacobi family at propagation time `theta ~ S^2`.
+
+| Source | Relevant method | Hypothesis gap here |
+|---|---|---|
+Klopp and Fedotov, [The complex WKB method for difference equations and Airy functions](https://arxiv.org/abs/1810.04918) | Uniform local turning-point analysis for scalar analytic second-order difference equations | Applying the scalar recurrence method requires a reduction of the crossing-coupled 15-cell system and uniform control at the campaign time scale |
+Geronimo, [WKB and Turning Point Theory for Second Order Difference Equations](https://arxiv.org/abs/0905.1684) | WKB for three-term recurrences with monotone coefficients and turning points | The supplied family has residue-periodic coefficients and multiple coupled bands; a matrix-valued extension is needed |
+Yafaev, [Semiclassical asymptotic behavior of orthogonal polynomials](https://arxiv.org/abs/1811.09254) | Asymptotics for orthonormal polynomials with recurrence coefficients slowly stabilizing at infinity | A finite family varying over O(S) sites needs uniform two-parameter estimates in S and mode index |
+Delvaux and Dette, [Zeros and ratio asymptotics for matrix orthogonal polynomials](https://arxiv.org/abs/1108.5155) | Ratio asymptotics for matrix recurrences with asymptotically periodic or slowly varying coefficients | Their zero-distribution and recurrence asymptotics would need a separate eigenphase estimate for this readout |
+Bleher and Its, [Semiclassical asymptotics of orthogonal polynomials, Riemann-Hilbert problem, and universality in the matrix model](https://annals.math.princeton.edu/1999/150-1/p06) | Period-two recurrence coefficients drifting with a parameter, analyzed by a matrix Riemann-Hilbert problem | Their two-cut double-well random-matrix setting differs from this spin-dependent propagator; a transfer theorem would be needed |
+Stiepan and Teufel, [Semiclassical approximations for Hamiltonians with operator-valued symbols](https://arxiv.org/abs/1201.4608) | Operator-valued symbol calculus and an Egorov theorem with `O(epsilon^2)` error for an isolated nondegenerate band with a uniform spectral gap, on bounded semiclassical time intervals | The present two-band crossings close the gap; `exp(i theta N_S)` with `theta ~ S^2` corresponds to time of order `S` in their `exp(-i H t/epsilon)` convention. A localized band decomposition and long-time extension are open |
+
+The next literature pass should target matrix-valued discrete WKB with multiple avoided crossings, uniform eigenvalue quantization for slowly varying periodic Jacobi matrices, and decay of Fourier coefficients of discrete semiclassical spectral measures. Check each theorem's full hypotheses before importing it.

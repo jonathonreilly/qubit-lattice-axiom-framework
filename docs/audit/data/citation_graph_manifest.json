@@ -1,6 +1,6 @@
 {
- "edge_count": 14619,
- "node_count": 6648,
+ "edge_count": 14634,
+ "node_count": 6652,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16157,6 +16157,22 @@
   "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24": {
    "deps_hash": "3342d3e60ba5",
    "out_degree": 3
+  },
+  "postmark_electric_exact_side_fixed_index_kernel_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c964a5d7d978",
+   "out_degree": 4
+  },
+  "postmark_electric_five_site_inter_fiber_phase_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "b4cc71e5e003",
+   "out_degree": 5
+  },
+  "postmark_electric_moving_index_cell_symbol_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "92d2475ff387",
+   "out_degree": 2
+  },
+  "postmark_electric_two_band_central_match_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "931389bef13c",
+   "out_degree": 4
   },
   "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
    "deps_hash": "c8eee4235fc9",

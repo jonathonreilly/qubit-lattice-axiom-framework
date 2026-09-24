@@ -1,0 +1,83 @@
+{
+  "source_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "runner_sha256": {
+    "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py": "b577641c74bd6d9f6a3fed209973786594c8354d1eba0dafba5054f0168a49f2",
+    "scripts/postmark_electric_two_band_central_match_2026_09_24.py": "c63441d90c7373cabe1e0ea78704a474b077bcd7a106cae372b91cf26bc4d795"
+  },
+  "mutations": [
+    {
+      "runner": "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py",
+      "mutation": "cell_wrong_signed_residue",
+      "exit_code": 1,
+      "expected_failure_observed": true,
+      "failure_signature": "[2*u*(1 - sqrt(3)*I)/5,          u*(3*u - 11)]]))",
+      "log": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_wrong_signed_residue.log"
+    },
+    {
+      "runner": "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py",
+      "mutation": "cell_wrong_principal_diagonal",
+      "exit_code": 1,
+      "expected_failure_observed": true,
+      "failure_signature": "ArithmeticError: ('principal Bloch bands', 0.009831000000002366)",
+      "log": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_wrong_principal_diagonal.log"
+    },
+    {
+      "runner": "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py",
+      "mutation": "cell_wrong_first_order_diagonal",
+      "exit_code": 1,
+      "expected_failure_observed": true,
+      "failure_signature": "ArithmeticError: (128, '+', '1/S cell expansion', 146.30668604651146)",
+      "log": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_wrong_first_order_diagonal.log"
+    },
+    {
+      "runner": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": "central_wrong_projected_derivative",
+      "exit_code": 1,
+      "expected_failure_observed": true,
+      "failure_signature": "[         0, -sqrt(3)/16]]))",
+      "log": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_projected_derivative.log"
+    },
+    {
+      "runner": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": "central_wrong_outer_detuning",
+      "exit_code": 1,
+      "expected_failure_observed": true,
+      "failure_signature": "ArithmeticError: ('+', 'theta=0', sqrt(3)*(1 - u**2)/15, sqrt(3)*(u**2 - 1)/15, sqrt(3)*(1 - u**2)/16)",
+      "log": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_outer_detuning.log"
+    },
+    {
+      "runner": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": "central_wrong_projection_coefficient",
+      "exit_code": 1,
+      "expected_failure_observed": true,
+      "failure_signature": "[6*k/5 - 6*sqrt(3)*I*(k + 1)/5 + 4/5,              -27*k**2 - 33*k - 62/5]]))",
+      "log": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_projection_coefficient.log"
+    },
+    {
+      "runner": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": "central_wrong_casimir_second_order",
+      "exit_code": 1,
+      "expected_failure_observed": true,
+      "failure_signature": "ArithmeticError: ('exact-to-outer central scalar match', -h**2)",
+      "log": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_casimir_second_order.log"
+    },
+    {
+      "runner": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": "central_wrong_interface_identity",
+      "exit_code": 1,
+      "expected_failure_observed": true,
+      "failure_signature": "ArithmeticError: R_m=C-m(m+1) is not invariant under m -> -m-1 at the seam",
+      "log": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_interface_identity.log"
+    },
+    {
+      "runner": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": "central_wrong_physical_hop_helper",
+      "exit_code": 1,
+      "expected_failure_observed": true,
+      "failure_signature": "ArithmeticError: (64, 'independent physical-state core comparison', 8192.0, 4096.0)",
+      "log": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_physical_hop_helper.log"
+    }
+  ],
+  "all_expected_failures_observed": true,
+  "interpretation": "Scratch-copy checks only; not independent validation."
+}

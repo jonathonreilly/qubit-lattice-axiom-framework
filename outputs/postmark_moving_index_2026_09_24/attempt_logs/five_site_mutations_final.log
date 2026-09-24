@@ -1,0 +1,6 @@
+{
+  "source_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "runner_sha256": "c97d432af7b2ff457ca5fca28b758bba8fa9d61cfb48638cddea4112e8e71230",
+  "note_sha256": "5ef36c0b2c0ef3a873d077308ef596c2e4e10042dcc43ed6ad6d4388cb1e16fb",
+  "all_expected_failures_observed": true
+}

@@ -1,0 +1,13 @@
+
+--- stderr ---
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_physical_hop_helper_gpf8e47h/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 502, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_physical_hop_helper_gpf8e47h/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 490, in main
+    "coefficientwise_core_limit_check": verify_core_coefficient_limit(),
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_physical_hop_helper_gpf8e47h/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 427, in verify_core_coefficient_limit
+    raise ArithmeticError((spin, "independent physical-state core comparison",
+                           max_diag, max_off))
+ArithmeticError: (64, 'independent physical-state core comparison', 8192.0, 4096.0)

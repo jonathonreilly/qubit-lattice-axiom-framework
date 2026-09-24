@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py
+runner_sha256: 9eb1cee1f7ea4c878523a6643f62b28f355df2727b2fac0901a9828b5fa53c1f
+input_fingerprint_sha256: 6a13ff42a38fb92231f40a439e39dfd7831aec5d0f2b5025ba3b0b37f76d1846
+timeout_sec: 3600
+exit_code: 1
+elapsed_sec: 0.57
+status: nonzero_exit
+----- stdout -----
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 419, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 378, in main
+    homogeneous = verify_homogeneous_bessel_kernel()
+  File "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 361, in verify_homogeneous_bessel_kernel
+    raise ArithmeticError(("homogeneous Fourier/Bessel kernel", max_error))
+ArithmeticError: ('homogeneous Fourier/Bessel kernel', 1.7320508075688776)
+
+----- stderr -----

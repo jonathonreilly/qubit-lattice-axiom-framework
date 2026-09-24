@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.py
+runner_sha256: 900f0448699df5e020f43761e8a08800be5122a04723f7b8f597593eb09d5af2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 48.48
+status: ok
+----- stdout -----
+[PASS] the carving: a 19-site relaxed three-direction network whose zero-field records are realizable :: connected True, winding rank 3, bonds 22; every record touches at most 2 axes; largest field on an unrecorded site 0
+[PASS] covariant odd star terms under full soldering, as signed rotation orbits :: weights 1 and 3: 37 (open PR 9088's full-soldering count); weights 1, 3, 5, 7: 325
+[PASS] exact Majorana images: the bond matrix is reproduced, and three-site clusters match the spin spectrum :: bond matrix deviation 0e+00; 12 clusters with bonds, Kitaev's pattern and dangling fields: largest spectral deviation 5e-15; on the carving Kitaev's pattern is a free same-class c-c bilinear and a kept-axis field is not free
+[PASS] the free covariant subspace, and the projection of the weight-5 orbit onto it :: free subspace dimension 41 of 325; projected term uses 23 orbits of weights [5, 7]; non-free strings cancel to 1e-15; same-class free bilinears 27, all Kitaev's pattern at corners
+[PASS] the chiral phase: in every lowest flux sector, a gapped band structure with weak Chern numbers (-1, 0, 0) :: lambda 1.0: 8 lowest sectors (next 0.0120 up), 12 zero modes, gap 0.0190, weak Chern numbers (-1, 0, 0); lambda 2.0: 8 lowest sectors (next 0.0242 up), 12 zero modes, gap 0.0351, weak Chern numbers (-1, 0, 0); lambda 4.0: 8 lowest sectors (next 0.0388 up), 12 zero modes, gap 0.0174, weak Chern numbers (-1, 0, 0)
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

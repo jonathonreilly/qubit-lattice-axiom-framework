@@ -1,0 +1,23 @@
+E exact (rationals, line of 11, walls held): 0 < phi <= 1; ledger = sum m phi = (6/Gam)(2 - phi_1 - phi_n) (wall term); one body phi_0 = 1/(1 + x) with x = (Gam/6) G_L(z0,z0) m; phi = 1 - (Gam/6) sum_i (m_i phi_i) G_L(., z_i): PASS
+N  line n = 240, walls held at phi = 1, walkers A (m = 2.0) at 90 and B (m = 3.0) at 150, width 6, both at rest; x_A = (Gam/6) G_L(zA,zA) m_A
+N    x_A       Gam |          L0       drift |     phi_A     phi_B |     dkA/dt    charges       bare |     dkB/dt    charges
+N    0.1 5.297e-03 | 4.18050e+00   -1.90e-12 |   0.84334   0.82903 | +3.391e-03 +3.381e-03 +4.821e-03 | -4.193e-03 -4.179e-03
+N    0.5 2.648e-02 | 2.52714e+00   -3.25e-12 |   0.52370   0.48653 | +6.318e-03 +6.225e-03 +2.410e-02 | -7.604e-03 -7.476e-03
+N    1.0 5.297e-02 | 1.69276e+00   -4.03e-13 |   0.35862   0.31626 | +5.766e-03 +5.599e-03 +4.821e-02 | -6.773e-03 -6.548e-03
+N    2.0 1.059e-01 | 1.02095e+00   -1.53e-14 |   0.22145   0.18212 | +4.283e-03 +4.039e-03 +9.641e-02 | -4.876e-03 -4.560e-03
+N    5.0 2.648e-01 | 4.67614e-01   -5.55e-17 |   0.10251   0.07592 | +2.304e-03 +1.994e-03 +2.410e-01 | -2.519e-03 -2.136e-03
+N1 ledger drift / ledger over the run: max 1.3e-12 (dt = 0.25, midpoint step; the integrator's level)
+N2 pull / (charge prediction, q = m phi): A 1.003, 1.015, 1.030, 1.060, 1.156   B 1.003, 1.017, 1.034, 1.069, 1.179
+N2 pull / (bare-energy prediction):       A 0.703, 0.262, 0.120, 0.044, 0.010
+N2 pull / (smeared bilinear form (Gam/3) sum_z q(z) d[G_L(q_A + q_B)](z), q = K_zz phi_z): A 1.0000, 1.0001, 1.0002, 1.0003, 1.0008   B 1.0001, 1.0002, 1.0004, 1.0006, 1.0012
+N2 check: at rest K has no bond entries (max 0.0e+00) and the solved phi equals 1 - (Gam/6) G_L(q_A + q_B) to 7.1e-14
+N3 moving packets at large energy (m = 0.05, k0 = 1.2, bare energy 0.933): M = (12/Gam)(1 - A) + K is an M-matrix while every bond entry K_{z,z+1} <= 6/Gam; single packet, scan of Gam
+N3   width 1: max bond entry 0.1592 -> M-matrix lost at Gam = 37.7; min phi < 0 from Gam ~ 37.7; lambda_min(M) < 0 from Gam ~ 85.1
+N3   width 2: max bond entry 0.1158 -> M-matrix lost at Gam = 51.8; min phi < 0 from Gam ~ 52.4; lambda_min(M) < 0 from Gam ~ 124.5
+N3   width 4: max bond entry 0.0636 -> M-matrix lost at Gam = 94.3; min phi < 0 from Gam ~ 94.4; lambda_min(M) < 0 from Gam ~ 212.8
+N3   run, two packets k = +-1.2, width 1, Gam = 13.2 (inside the positive region): min phi over the run +0.0063, min lambda(M) +2.648e-03, ledger drift/ledger -3.1e-16
+N3   run, two packets k = +-1.2, width 1, Gam = 60.0 (past the phi-positivity loss (width 1)): min phi over the run -0.0055, min lambda(M) +6.017e-04, ledger drift/ledger 0.0e+00
+N4 x_A = 1, drift/ledger -3.1e-10: t=  0.0 sep  60.00: w at A 0.1321 (static 0.1284), at B 0.1041 (static 0.0991) | t= 40.0 sep  59.53: w at A 0.1302 (static 0.1284), at B 0.1027 (static 0.0991) | t= 80.0 sep  58.41: w at A 0.1258 (static 0.1263), at B 0.0999 (static 0.0979) | t=120.0 sep  57.21: w at A 0.1213 (static 0.1248), at B 0.0979 (static 0.0976) | t=160.0 sep  56.33: w at A 0.1186 (static 0.1234), at B 0.0974 (static 0.0973)
+N4 x_A = 5, drift/ledger -1.1e-12: t=  0.0 sep  60.00: w at A 0.0124 (static 0.0113), at B 0.0073 (static 0.0065) | t= 40.0 sep  59.99: w at A 0.0123 (static 0.0113), at B 0.0073 (static 0.0065) | t= 80.0 sep  59.91: w at A 0.0122 (static 0.0113), at B 0.0073 (static 0.0065) | t=120.0 sep  59.83: w at A 0.0120 (static 0.0113), at B 0.0072 (static 0.0065) | t=160.0 sep  59.74: w at A 0.0118 (static 0.0113), at B 0.0071 (static 0.0065)
+
+SUMMARY: simplest clock law at strong field (x = 0.1..5) on a walled line: ledger conserved to 1e-12 of itself; the pull on each heavy walker follows block 54's law with charges m*phi (smeared bilinear form: ratio 1.000..1.001), not bare energies (ratio 0.01 at x = 5); exact: ledger = sum m phi = wall term, phi = 1 - (Gam/6) sum q G_L; clocks at the walkers slow as they approach, tracking the static two-body law

@@ -1,0 +1,4 @@
+PR #9041: docs(dynamics): records act as fields and the isolated site's law points along them
+branch claude/dynamics-clause-h2-records-act-as-fields-20260924 (base main)
+runners in the PR: 1
+== scripts/dynamics_clause_records_act_as_fields_isolated_site_law_2026_09_24.py: rc=0 PASS=12 FAIL=0

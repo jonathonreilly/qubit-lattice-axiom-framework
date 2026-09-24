@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-clumping-bounds-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j9347",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-clumping-bounds/referee_w-macbookpro90c72-j9347/check.py",
+ "seed": 76931,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fd16a41f",
+ "started_utc": "20260924T190851Z",
+ "elapsed_s": 5.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - neighbour ratios cancel z, total variation is at most (M-m)/(M+m), neutral uniform weights are independent, and the PSD modes are p-q and p+q-2r. The Peierls count was not claimed."
+ },
+ "review": "Neighbour ratios cancel z, so C is at most (M-m)/(M+m); (1,1,1) and (9,8,8) are unique up to c/c0=5/4, and (5,2,4) has p+q-2r=-1 so it is never reflection positive.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-clumping-bounds:a1/; its files are probes/work/derive/moving-clumping-bounds/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-clumping-bounds/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "1047921512c27c72cdb18311039149c04fc598f6da6d7a004f3563587c9104fb",
+ "stdout_tail": "PASS c0((3, 1, 2)) = 1/2 averages an occupied neighbour to an empty one\nPASS c0((5, 2, 4)) = 6/23 averages an occupied neighbour to an empty one\nPASS c0((1, 1, 1)) = 1 averages an occupied neighbour to an empty one\nPASS changing one neighbour cancels z and the other five neighbours\nPASS every two-point reweighting has total variation <= (M-m)/(M+m)\nPASS  (1,1,1) and (9,8,8) satisfy 6(M-m)/(M+m) < 1 up to c/c0 = 5/4\nPASS (3, 1, 2) at c=1/2: 6C = [1.4133293697210176, 1.6171076124005843, 1.6320602896730385]\nPASS (1, 1, 1) at c=2: 6C = [1.0227272727272727, 0.3956043956043956, 0.04877387887820078]\nPASS content channel at z=0.1 is about 1.4133\nPASS uniform weights at c0=1 have Dobrushin coefficient 0 at two fugacities\nPASS quoted K_c gives c/c0 = 2.4269\nPASS uniform mode of the content matrix is p+q+4r\nPASS odd mode is p-q, so p>=q is needed\nPASS axis-difference mode is p+q-2r\nPASS (5,2,4) has p+q-2r = -1, so the pair matrix is indefinite at every scale\nTOTAL FAIL=0\nHIT: confirmed - the z-free bound (M-m)/(M+m) gives uniqueness for (1,1,1) and (9,8,8) up to c/c0=5/4, and (5,2,4) is never reflection positive\nSUMMARY: confirmed - neighbour ratios cancel z, total variation is at most (M-m)/(M+m), neutral uniform weights are independent, and the PSD modes are p-q and p+q-2r. The Peierls count was not claimed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9347",
+  "at_utc": "20260924T190901Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms a1: the z-free bound gives uniqueness for (1,1,1) and (9,8,8) up to c/c0=5/4, and (5,2,4) is never reflection positive.",
+  "by": "w-macbookpro90c72-j9347",
+  "at_utc": "20260924T190901Z"
+ }
+}

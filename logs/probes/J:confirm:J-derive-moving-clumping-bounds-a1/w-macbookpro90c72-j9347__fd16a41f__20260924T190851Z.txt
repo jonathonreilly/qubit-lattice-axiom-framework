@@ -1,0 +1,18 @@
+PASS c0((3, 1, 2)) = 1/2 averages an occupied neighbour to an empty one
+PASS c0((5, 2, 4)) = 6/23 averages an occupied neighbour to an empty one
+PASS c0((1, 1, 1)) = 1 averages an occupied neighbour to an empty one
+PASS changing one neighbour cancels z and the other five neighbours
+PASS every two-point reweighting has total variation <= (M-m)/(M+m)
+PASS  (1,1,1) and (9,8,8) satisfy 6(M-m)/(M+m) < 1 up to c/c0 = 5/4
+PASS (3, 1, 2) at c=1/2: 6C = [1.4133293697210176, 1.6171076124005843, 1.6320602896730385]
+PASS (1, 1, 1) at c=2: 6C = [1.0227272727272727, 0.3956043956043956, 0.04877387887820078]
+PASS content channel at z=0.1 is about 1.4133
+PASS uniform weights at c0=1 have Dobrushin coefficient 0 at two fugacities
+PASS quoted K_c gives c/c0 = 2.4269
+PASS uniform mode of the content matrix is p+q+4r
+PASS odd mode is p-q, so p>=q is needed
+PASS axis-difference mode is p+q-2r
+PASS (5,2,4) has p+q-2r = -1, so the pair matrix is indefinite at every scale
+TOTAL FAIL=0
+HIT: confirmed - the z-free bound (M-m)/(M+m) gives uniqueness for (1,1,1) and (9,8,8) up to c/c0=5/4, and (5,2,4) is never reflection positive
+SUMMARY: confirmed - neighbour ratios cancel z, total variation is at most (M-m)/(M+m), neutral uniform weights are independent, and the PSD modes are p-q and p+q-2r. The Peierls count was not claimed.

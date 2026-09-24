@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_a_soft_vector_constraint_and_slot_fields_generate_the_landed_tensor_field_s_curvature_moves_at_twelfth_order_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Setting, all supplied and none adopted: the landed tensor slots and vector rows of open PR 9077 (diagonal slots on vertex sites, face slots on plaquette sites, rows (G E)_j = d_i E_ij on link sites); a soft constraint energy U sum_rows (G v)_row^2, where v is the change from a constraint-satisfying configuration; and one-site slot fields -h sum_s (X_s + X_s^dag), with X_s shifting slot s by one. Each row is a one-neighbourhood term on its link site. (i) The smallest L1 norm of a nonzero integer change with G v = 0 is 12, through a diagonal and through a face slot. The changes that reach it are exactly the planar pieces of the landed scalar-gauge pattern: 6 through a diagonal slot and 4 through a face slot (mixed-integer programs in a radius-2 box; an independent box-free search agrees). (ii) No monotone partial move satisfies the constraint, so the leading off-diagonal amplitude is the path sum g = A h^12 / U^11, with A = 111150053/31850496 (about 3.490). The same sum for the U(1) plaquette ring gives 5/2, which is open PR 9066's 5h^4/(32U^3) for fields h s^x. (iii) Exact diagonalization on the 2304-state path box gives splittings whose ratio to 2 A (h/U)^12 is 0.985, 0.966 and 0.941 at h/U = 0.1, 0.15 and 0.2, extrapolating to 1.000. (iv) For unbounded (rotor) slots with an integer constraint, the excitation energies depend only on the change v, so every constraint-satisfying configuration has the same diagonal energy at every order. The leading effective Hamiltonian is therefore a constant minus g times the sum of the planar-piece shifts and their inverses, with nothing depending on E. Each shift is the exponential of the stencil d_a^2 q_bb + d_b^2 q_aa - d_a d_b q_ab of the conjugate slots, which equals -2 R_abab if q is read as a metric perturbation with q_ab = 2 h_ab (not adopted). (v) Two-level (qubit) slots allow only unit changes. The smallest unit moves have 20 slots (boxes of radius 2 and 3; box-free independently), at order 20, with path sums 0.926 (spatial) and 510.6 (planar). On zero-charge surroundings the fourth-order diagonal energy changes across the planar move by exactly (201/960) dN_A h^4/U^3 (unit step), where N_A counts rows whose two diagonal slots differ. dN_A takes even values including 0. (vi) With a supplied one-site electric energy (J/2) E^2, the Gaussian spectrum of the rotor model has three branches with omega^2 = J g lambda(k), lambda of order |k|^4. One branch vanishes on the coordinate planes k_a = 0, and the landed scalar constraint leaves two. (vii) Modulo 2 the face slots and rows form the dual lattice's Z2 gauge structure, with the six-face cube move as its star. No gravitational phase, graviton, scalar constraint dynamics or physical identification is claimed."
+claim_scope: "Setting, all supplied and none adopted: the landed tensor slots and vector rows of open PR 9077 (diagonal slots on vertex sites, face slots on plaquette sites, rows (G E)_j = d_i E_ij on link sites); a soft constraint energy U sum_rows (G v)_row^2, where v is the change from a constraint-satisfying configuration; and one-site slot fields -h sum_s (X_s + X_s^dag), with X_s shifting slot s by one. Each row is a one-neighbourhood term on its link site. (i) The smallest L1 norm of a nonzero integer change with G v = 0 is 12, through a diagonal and through a face slot. The changes that reach it are exactly the planar pieces of the landed scalar-gauge pattern: 6 through a diagonal slot and 4 through a face slot (mixed-integer programs in a radius-2 box; an independent box-free search agrees). (ii) No monotone partial move satisfies the constraint, so the leading off-diagonal amplitude is the path sum g = A h^12 / U^11, with A = 111150053/31850496 (about 3.490). The same sum for the U(1) plaquette ring gives 5/2, which is open PR 9066's 5h^4/(32U^3) for fields h s^x. (iii) Exact diagonalization on the 2304-state path box gives splittings whose ratio to 2 A (h/U)^12 is 0.985, 0.966 and 0.941 at h/U = 0.1, 0.15 and 0.2, extrapolating to 1.000. (iv) For unbounded (rotor) slots with an integer constraint, the excitation energies depend only on the change v, so every constraint-satisfying configuration has the same diagonal energy at every order. The leading effective Hamiltonian is therefore a constant minus g times the sum of the planar-piece shifts and their inverses, with nothing depending on E. Each shift is the exponential of the stencil d_a^2 q_bb + d_b^2 q_aa - d_a d_b q_ab of the conjugate slots, which equals -2 R_abab if q is read as a metric perturbation with q_ab = 2 h_ab (not adopted). (v) Two-level (qubit) slots allow only unit changes. The smallest unit moves have 20 slots (boxes of radius 2 and 3; box-free independently), at order 20, with path sums 0.926 (spatial) and 510.6 (planar). On zero-charge surroundings the fourth-order diagonal energy changes across the planar move by exactly (201/960) dN_A h^4/U^3 (unit step), where N_A counts rows whose two diagonal slots differ. dN_A takes even values including 0. (vi) With a supplied one-site electric energy (J/2) E^2, the Gaussian spectrum of the rotor model has three branches with omega^2 = J g lambda(k), lambda of order |k|^4. One branch vanishes on the coordinate planes k_a = 0. Restricting the conjugate slots to the landed scalar constraint surface S q = 0 leaves two; this is a count on that surface, since the one-site E^2 does not commute with the landed scalar stabilizers. With the vector constraint alone, the landed note's zeroth- and first-moment argument bounds every frequency of compact law-preserving dynamics by O(|k|^2), which these branches saturate. (vii) Modulo 2 the face slots and rows form the dual lattice's Z2 gauge structure, with the six-face cube move as its star. No gravitational phase, graviton, scalar constraint dynamics or physical identification is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_soft_tensor_constraint_generates_curvature_moves_2026_09_24.py
@@ -194,8 +194,19 @@ piece.
   `k_a = 0`. It is 3e-17 there and 5e-4 just off them. The planar pieces fix
   only the diagonal curvature components. Whether the off-diagonal
   curvature rows, of higher L1 norm, lift it is not computed.
-- **The scalar constraint.** Adding the landed scalar constraint leaves two
-  branches.
+- **The scalar constraint.** Restricting the conjugate slots to the landed
+  scalar constraint surface `S q = 0` leaves two branches. This is a count
+  on that surface. The one-site `E²` does not commute with the landed
+  scalar stabilizers. In the landed note, the invariant electric term `C2`
+  with the full curvature energy gives `ω² = J g k⁶`.
+- **Why not linear.** The landed note shows that every law-preserving
+  phase has zero zeroth and first spatial moments, so it is `O(|k|²)`. With
+  the vector constraint alone, electric terms are unconstrained and of
+  order 1, so every frequency of compact law-preserving dynamics is
+  `O(|k|²)`. These
+  branches saturate that bound. With both constraints the landed bound is
+  `O(|k|³)`. The landed noncompact comparator, whose energy is not periodic
+  in the slots, gives linear branches.
 
 A quadratic dispersion of this kind is known from lattice tensor gauge
 theories (prior art: Xu and Hořava 2010; Pretko 2017). ∎
@@ -227,7 +238,9 @@ structure is lost. ∎
     generate them at twelfth order, as planar curvature cosines of the
     conjugate slots.
   - With a supplied electric energy, the generated model has three
-    branches with `ω ∝ k²`.
+    branches with `ω ∝ k²`. By the landed note's moment argument no compact
+    law-preserving dynamics does better than `O(k²)` with the vector
+    constraint alone, or `O(k³)` with both.
   - Whether a gapless tensor phase follows is not settled. That needs the
     electric energy, the scalar constraint and a phase analysis.
 - **The ladder of the synthesis.**
@@ -258,7 +271,7 @@ The runner has 7 checks and all pass in about 2 minutes, peak about 0.6 GB.
 | Exact diagonalization | Two zero-energy configurations. Ratios 0.9847, 0.9660 and 0.9408, extrapolating to 1.0000. |
 | Qubit unit moves | Support 20 through a diagonal and a face slot; path sums 0.9265 (spatial) and 510.6 (planar). |
 | Qubit potentials | 192 slot pairs across the planar move. On 12 SAT-sampled zero-charge surroundings the change equals `(201/960) ΔN_A` to 5e-16, with `ΔN_A` from −8 to 4. |
-| Electric energy | Gauge invariance 2e-15; three branches with `ω²/(Jg|k|⁴)` in 0–0.19, 0.26–0.96 and 0.56–0.98; the lowest vanishes on the coordinate planes; two branches with the scalar constraint. |
+| Electric energy | Gauge invariance 2e-15; three branches with `ω²/(Jg|k|⁴)` in 0–0.19, 0.26–0.96 and 0.56–0.98; the lowest vanishes on the coordinate planes; two branches on the scalar-constraint surface `S q = 0`. |
 | Modulo 2 | Every row meets 4 face slots and each face slot 4 rows. Face-slot moves 29 = 26 cube moves + 3 windings. A planar piece modulo 2 is an 8-slot move. |
 
 ## Independent check

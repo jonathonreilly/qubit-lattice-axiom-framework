@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_soft_tensor_constraint_generates_curvature_moves_2026_09_24.py
-runner_sha256: bbf0b12624acea0a6d773f5ee66d868dca05b295ef6056b8b7981ffaabb3b3b1
+runner_sha256: 187464f6213f9770712a32588cdda94d81a6d7573486e6b02a86e9c4cc7c4835
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 83.64
+elapsed_sec: 87.52
 status: ok
 ----- stdout -----
 [PASS] the leading moves have L1 norm 12 and are exactly the planar pieces: 6 through a diagonal slot, 4 through a face slot :: smallest L1 through a diagonal and a face slot [12, 12]; moves of L1 12 found 6 and 4, all planar pieces
@@ -11,7 +11,7 @@ status: ok
 [PASS] exact diagonalization on the 2304-state path box: the splitting over 2 A (h/U)^12 tends to 1 :: zero-energy configurations 2; ratio at h/U = 0.1, 0.15, 0.2: 0.9847, 0.9660, 0.9408; extrapolated to h = 0: 1.0000
 [PASS] qubit slots allow only unit changes: the smallest unit moves have 20 slots, so they appear at order 20 :: unit-move supports through a diagonal and a face slot 20, 20 (optimal, spatial [True, True]); path sums 0.9265 and 0.9265; a planar 20-slot unit move has path sum 510.6; no constraint-satisfying partial move
 [PASS] qubit slots get fourth-order diagonal potentials across a move: exactly (201/960) dN_A h^4/U^3 on balanced surroundings :: 192 slot pairs across the planar move's edge; 12 SAT-sampled zero-charge surroundings: largest deviation from (201/960) dN_A 5e-16, dN_A values [-8, -4, -2, 0, 2, 4] (N_A counts rows whose two diagonal slots differ)
-[PASS] with an electric energy the generated curvature cosines give three branches with omega^2 ~ k^4; one vanishes on the planes k_a = 0 :: pieces gauge invariant to 2e-15; all three branches nonzero at 60 random k; omega^2/(J g |k|^4) at small k: 0.000-0.187, 0.260-0.963, 0.557-0.976; lowest branch 3e-17 on the coordinate planes, 5.4e-04 off them; with the scalar constraint two branches remain
+[PASS] with an electric energy the generated curvature cosines give three branches with omega^2 ~ k^4; one vanishes on the planes k_a = 0 :: pieces gauge invariant to 2e-15; all three branches nonzero at 60 random k; omega^2/(J g |k|^4) at small k: 0.000-0.187, 0.260-0.963, 0.557-0.976; lowest branch 3e-17 on the coordinate planes, 5.4e-04 off them; on the scalar-constraint surface S q = 0 two branches remain
 [PASS] modulo 2 the face slots and rows form the dual lattice's Z2 gauge structure; the six-face cube move is its star :: L = 3 torus: every row meets 4 face slots and every face slot 4 rows; face-slot moves 29 = cube moves 26 + 3 windings; a planar piece modulo 2 is an 8-slot move through diagonal slots
 TOTAL: PASS=7 FAIL=0
 

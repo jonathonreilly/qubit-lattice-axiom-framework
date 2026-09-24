@@ -38,8 +38,8 @@ shifts slot s by one. Each row is a one-neighbourhood term on its link site.
    of the generated curvature cosines has three branches with
    omega^2 = J g lambda(k), lambda ~ |k|^4 at small k (quadratic dispersion);
    one branch vanishes on the coordinate planes k_a = 0, since the planar
-   pieces fix only the diagonal curvature components. With the landed
-   scalar constraint two branches remain.
+   pieces fix only the diagonal curvature components. On the landed scalar
+   constraint surface S q = 0 two branches remain.
 7. Modulo 2 (a parity constraint on qubit slots) the face slots and rows form
    the dual lattice's Z2 gauge structure: each row is a dual plaquette of four
    face slots, each face slot sits in four rows, and the face-slot moves are
@@ -400,7 +400,8 @@ def branches(k, scalar=False):
     V = np.array([piece_k(k, n_) for n_ in range(3)])
     K = np.linalg.svd(Gk)[2][3:].conj().T
     if scalar:
-        w = K.conj().T @ V.sum(axis=0).conj()
+        # the landed scalar constraint S q = 0 on the conjugate slots: the phase of the summed pieces vanishes
+        w = V.sum(axis=0) @ K
         K = K @ np.linalg.svd(w[None, :])[2][1:].conj().T
     return np.linalg.eigvalsh(K.conj().T @ V.conj().T @ V @ K), np.linalg.norm(V @ Gk.conj().T)
 
@@ -425,7 +426,7 @@ check("with an electric energy the generated curvature cosines give three branch
       f"pieces gauge invariant to {gauge:.0e}; all three branches nonzero at 60 random k; omega^2/(J g |k|^4) at small k: "
       f"{small[:, 0].min():.3f}-{small[:, 0].max():.3f}, {small[:, 1].min():.3f}-{small[:, 1].max():.3f}, "
       f"{small[:, 2].min():.3f}-{small[:, 2].max():.3f}; lowest branch {abs(on_plane):.0e} on the coordinate planes, "
-      f"{off_plane:.1e} off them; with the scalar constraint two branches remain")
+      f"{off_plane:.1e} off them; on the scalar-constraint surface S q = 0 two branches remain")
 
 # ------------------------------------------------ 7. modulo 2 the tensor rows are a Z2 gauge structure
 def rank_mod2(M):

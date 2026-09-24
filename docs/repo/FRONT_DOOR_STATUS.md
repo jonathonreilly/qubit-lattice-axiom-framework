@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 4988 |
+| Ledger rows | 5171 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
@@ -39,12 +39,12 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
 | Open gates | 0 |
-| Unaudited rows | 4612 |
+| Unaudited rows | 4795 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
 | Audited numerical-match rows | 0 |
-| Citation cycles detected | 60 |
+| Citation cycles detected | 68 |
 
 Source: tracked shards under `docs/audit/data/ledger/` and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 4612 |
-| Ready rows | 1689 |
-| Cycle-break targets | 72 |
-| Critical pending | 720 |
-| High pending | 325 |
-| Medium pending | 1164 |
-| Leaf pending | 2403 |
+| Total pending rows | 4795 |
+| Ready rows | 1713 |
+| Cycle-break targets | 80 |
+| Critical pending | 724 |
+| High pending | 349 |
+| Medium pending | 1227 |
+| Leaf pending | 2495 |
 
 Next ready rows by queue order:
 
@@ -88,7 +88,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest state | ok |
 | Manifest pending additions | 0 |
 | Manifest pending removals | 0 |
-| Unmanifested candidates (need pending entries) | 5 |
+| Unmanifested candidates (need pending entries) | 10 |
 | Admitted ids absent from lane candidates | 565 |
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 0 |
@@ -98,8 +98,13 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Non-lane rows deferred by simulated interleave | 0 |
 
 Unmanifested candidates (visible gaming surface; need review-landed pending entries before admission):
+- `admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21`
+- `admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21`
+- `admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20`
 - `compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14`
+- `local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24`
 - `massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14`
+- `postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24`
 - `record_law_exact_domain_and_channel_bridge_6275_bounded_theorem_note_2026-09-09`
 - `route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30`
 - `spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_bounded_theorem_note_2026-09-14`
@@ -691,19 +696,19 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 6465 |
-| Critical nodes | 752 |
-| High nodes | 348 |
-| Medium nodes | 1385 |
-| Leaf nodes | 3980 |
+| Citation-graph nodes | 6648 |
+| Critical nodes | 756 |
+| High nodes | 372 |
+| Medium nodes | 1449 |
+| Leaf nodes | 4071 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2347 descendants; score 388.697
-- `three_generation_observable_theorem_note` - critical; 1208 descendants; score 57.240
+- `minimal_axioms` - critical; 2524 descendants; score 474.802
+- `three_generation_observable_theorem_note` - critical; 1215 descendants; score 57.248
 - `observable_principle_from_axiom_note` - critical; 1002 descendants; score 53.970
-- `graph_first_su3_integration_note` - critical; 1560 descendants; score 52.108
+- `graph_first_su3_integration_note` - critical; 1567 descendants; score 52.115
 - `kinetic_isotropy_primitive` - critical; 904 descendants; score 48.822
-- `plaquette_self_consistency_note` - critical; 1236 descendants; score 47.773
+- `plaquette_self_consistency_note` - critical; 1243 descendants; score 47.781
 - `minimal_axioms_2026-05-03` - critical; 1030 descendants; score 43.510
-- `key_terminology` - critical; 1288 descendants; score 43.332
+- `key_terminology` - critical; 1295 descendants; score 43.340

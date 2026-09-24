@@ -33,7 +33,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.5,
+  "load_bearing_score": 2.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
   "title": "Finite-volume static-source geodesic perturbation",
-  "transitive_descendants": 3,
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

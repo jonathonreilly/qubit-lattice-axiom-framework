@@ -26,7 +26,7 @@
     "gauge_wilson_pw_compression_shell_and_energy_path_bounds_bounded_theorem_note_2026-09-07",
     "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -34,7 +34,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
   "title": "Volume-uniform finite-PW charged trial upper bound",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

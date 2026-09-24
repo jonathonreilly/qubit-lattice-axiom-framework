@@ -1,5 +1,5 @@
 {
-  "cycle_count": 72,
+  "cycle_count": 80,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -8636,6 +8636,43 @@
       "decision": null,
       "edges": [
         {
+          "from": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+          "to": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24"
+        },
+        {
+          "from": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+          "to": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 19,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "A local compensation that gives a common field/record limit",
+          "transitive_descendants": 19
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "Local pair form of the compensated Hamiltonian",
+          "transitive_descendants": 19
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0055",
+      "decision": null,
+      "edges": [
+        {
           "from": "route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30",
           "to": "route_a_radius_one_parity_even_compiler_cycle822_note_2026-07-30"
         },
@@ -8669,7 +8706,292 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0055",
+      "cycle_id": "cycle-0056",
+      "decision": null,
+      "edges": [
+        {
+          "from": "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20"
+        },
+        {
+          "from": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20",
+          "to": "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 6,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_FREE_CAPTURING_BODIES_ARE_CARRIED_BY_THE_WIND_CAPTURE_LAW_ANISOTROPIC_COLLISIONLESS_SHADOW_DILUTION_LAW_OF_MOTION_AND_ITS_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "Free capturing bodies are carried by the wind: the capture law, the anisotropic collisionless shadow, and the dilution law of motion with its window",
+          "transitive_descendants": 6
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_LAW_FLUX_THEOREMS_INVERSE_SQUARE_WIND_OF_A_CAPTURING_BODY_SECOND_ORDER_MOMENTUM_FLUX_FORCE_PROPORTIONAL_TO_PRODUCT_OF_CAPTURE_RATES_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+          "title": "Finite flux identities and conditional wind-force coefficients for the supplied inertial gas",
+          "transitive_descendants": 6
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0057",
+      "decision": null,
+      "edges": [
+        {
+          "from": "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_transparent_bodies_capture_rate_is_the_record_count_and_the_force_is_the_product_of_record_counts_over_distance_squared_predicted_coefficient_bounded_theorem_note_2026-09-21"
+        },
+        {
+          "from": "admissibility_rule_transparent_bodies_capture_rate_is_the_record_count_and_the_force_is_the_product_of_record_counts_over_distance_squared_predicted_coefficient_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 6,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_FREE_CAPTURING_BODIES_ARE_CARRIED_BY_THE_WIND_CAPTURE_LAW_ANISOTROPIC_COLLISIONLESS_SHADOW_DILUTION_LAW_OF_MOTION_AND_ITS_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "Free capturing bodies are carried by the wind: the capture law, the anisotropic collisionless shadow, and the dilution law of motion with its window",
+          "transitive_descendants": 6
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_transparent_bodies_capture_rate_is_the_record_count_and_the_force_is_the_product_of_record_counts_over_distance_squared_predicted_coefficient_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_TRANSPARENT_BODIES_CAPTURE_RATE_IS_THE_RECORD_COUNT_AND_THE_FORCE_IS_THE_PRODUCT_OF_RECORD_COUNTS_OVER_DISTANCE_SQUARED_PREDICTED_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "Kinetic capture by exposed faces and a conditional transparent-body force coefficient",
+          "transitive_descendants": 6
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0058",
+      "decision": null,
+      "edges": [
+        {
+          "from": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20",
+          "to": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21"
+        },
+        {
+          "from": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 6,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_LAW_FLUX_THEOREMS_INVERSE_SQUARE_WIND_OF_A_CAPTURING_BODY_SECOND_ORDER_MOMENTUM_FLUX_FORCE_PROPORTIONAL_TO_PRODUCT_OF_CAPTURE_RATES_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+          "title": "Finite flux identities and conditional wind-force coefficients for the supplied inertial gas",
+          "transitive_descendants": 6
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_OF_A_CAPTURING_BODY_IS_NOT_ISOTROPIC_LATTICE_STREAMING_GIVES_A_VISCOUS_TERM_OF_CUBIC_SYMMETRY_DIRECTION_DEPENDENCE_DOES_NOT_DECAY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "The wind of a capturing body is not isotropic: the lattice's streaming gives the gas a viscous term of cubic symmetry, and the direction dependence of the creeping inflow does not decay with distance",
+          "transitive_descendants": 6
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0059",
+      "decision": null,
+      "edges": [
+        {
+          "from": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21"
+        },
+        {
+          "from": "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 6,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_OF_A_CAPTURING_BODY_IS_NOT_ISOTROPIC_LATTICE_STREAMING_GIVES_A_VISCOUS_TERM_OF_CUBIC_SYMMETRY_DIRECTION_DEPENDENCE_DOES_NOT_DECAY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "The wind of a capturing body is not isotropic: the lattice's streaming gives the gas a viscous term of cubic symmetry, and the direction dependence of the creeping inflow does not decay with distance",
+          "transitive_descendants": 6
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_POTENTIAL_OF_THE_WIND_SOLVES_THE_LATTICE_POISSON_EQUATION_WITH_CAPTURE_RATES_AS_SOURCES_INERTIAL_GAS_HAS_THE_CONSERVED_TENSOR_OF_RADIATION_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "Finite periodic potential currents and rest-state tensor identities in the supplied inertial gas",
+          "transitive_descendants": 6
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0060",
+      "decision": null,
+      "edges": [
+        {
+          "from": "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20"
+        },
+        {
+          "from": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20",
+          "to": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21"
+        },
+        {
+          "from": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 6,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_FREE_CAPTURING_BODIES_ARE_CARRIED_BY_THE_WIND_CAPTURE_LAW_ANISOTROPIC_COLLISIONLESS_SHADOW_DILUTION_LAW_OF_MOTION_AND_ITS_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "Free capturing bodies are carried by the wind: the capture law, the anisotropic collisionless shadow, and the dilution law of motion with its window",
+          "transitive_descendants": 6
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_LAW_FLUX_THEOREMS_INVERSE_SQUARE_WIND_OF_A_CAPTURING_BODY_SECOND_ORDER_MOMENTUM_FLUX_FORCE_PROPORTIONAL_TO_PRODUCT_OF_CAPTURE_RATES_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+          "title": "Finite flux identities and conditional wind-force coefficients for the supplied inertial gas",
+          "transitive_descendants": 6
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_OF_A_CAPTURING_BODY_IS_NOT_ISOTROPIC_LATTICE_STREAMING_GIVES_A_VISCOUS_TERM_OF_CUBIC_SYMMETRY_DIRECTION_DEPENDENCE_DOES_NOT_DECAY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "The wind of a capturing body is not isotropic: the lattice's streaming gives the gas a viscous term of cubic symmetry, and the direction dependence of the creeping inflow does not decay with distance",
+          "transitive_descendants": 6
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0061",
+      "decision": null,
+      "edges": [
+        {
+          "from": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20",
+          "to": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21"
+        },
+        {
+          "from": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21"
+        },
+        {
+          "from": "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21",
+          "to": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 6,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_LAW_FLUX_THEOREMS_INVERSE_SQUARE_WIND_OF_A_CAPTURING_BODY_SECOND_ORDER_MOMENTUM_FLUX_FORCE_PROPORTIONAL_TO_PRODUCT_OF_CAPTURE_RATES_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+          "title": "Finite flux identities and conditional wind-force coefficients for the supplied inertial gas",
+          "transitive_descendants": 6
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_OF_A_CAPTURING_BODY_IS_NOT_ISOTROPIC_LATTICE_STREAMING_GIVES_A_VISCOUS_TERM_OF_CUBIC_SYMMETRY_DIRECTION_DEPENDENCE_DOES_NOT_DECAY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "The wind of a capturing body is not isotropic: the lattice's streaming gives the gas a viscous term of cubic symmetry, and the direction dependence of the creeping inflow does not decay with distance",
+          "transitive_descendants": 6
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ADMISSIBILITY_RULE_THE_POTENTIAL_OF_THE_WIND_SOLVES_THE_LATTICE_POISSON_EQUATION_WITH_CAPTURE_RATES_AS_SOURCES_INERTIAL_GAS_HAS_THE_CONSERVED_TENSOR_OF_RADIATION_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "title": "Finite periodic potential currents and rest-state tensor identities in the supplied inertial gas",
+          "transitive_descendants": 6
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0062",
+      "decision": null,
+      "edges": [
+        {
+          "from": "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24",
+          "to": "short_time_scaling_bounded_theorem_note_2026-09-24"
+        },
+        {
+          "from": "short_time_scaling_bounded_theorem_note_2026-09-24",
+          "to": "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 2,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/POSTMARK_ELECTRIC_CORE_AND_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "Post-mark finite-spin correction and interior edge limit",
+          "transitive_descendants": 2
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "short_time_scaling_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/SHORT_TIME_SCALING_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "Exact short-time scaling limit of the post-mark vacancy observable",
+          "transitive_descendants": 2
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0063",
       "decision": null,
       "edges": [
         {
@@ -8706,7 +9028,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0056",
+      "cycle_id": "cycle-0064",
       "decision": null,
       "edges": [
         {
@@ -8743,7 +9065,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0057",
+      "cycle_id": "cycle-0065",
       "decision": null,
       "edges": [
         {
@@ -8780,7 +9102,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0058",
+      "cycle_id": "cycle-0066",
       "decision": null,
       "edges": [
         {
@@ -8817,7 +9139,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0059",
+      "cycle_id": "cycle-0067",
       "decision": null,
       "edges": [
         {
@@ -8854,7 +9176,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0060",
+      "cycle_id": "cycle-0068",
       "decision": null,
       "edges": [
         {
@@ -8891,7 +9213,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0061",
+      "cycle_id": "cycle-0069",
       "decision": null,
       "edges": [
         {
@@ -8928,7 +9250,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0062",
+      "cycle_id": "cycle-0070",
       "decision": null,
       "edges": [
         {
@@ -8965,7 +9287,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0063",
+      "cycle_id": "cycle-0071",
       "decision": null,
       "edges": [
         {
@@ -9002,7 +9324,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0064",
+      "cycle_id": "cycle-0072",
       "decision": null,
       "edges": [
         {
@@ -9039,7 +9361,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0065",
+      "cycle_id": "cycle-0073",
       "decision": null,
       "edges": [
         {
@@ -9076,7 +9398,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0066",
+      "cycle_id": "cycle-0074",
       "decision": null,
       "edges": [
         {
@@ -9113,7 +9435,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0067",
+      "cycle_id": "cycle-0075",
       "decision": null,
       "edges": [
         {
@@ -9150,7 +9472,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0068",
+      "cycle_id": "cycle-0076",
       "decision": null,
       "edges": [
         {
@@ -9200,7 +9522,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0069",
+      "cycle_id": "cycle-0077",
       "decision": null,
       "edges": [
         {
@@ -9250,7 +9572,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0070",
+      "cycle_id": "cycle-0078",
       "decision": null,
       "edges": [
         {
@@ -9313,7 +9635,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0071",
+      "cycle_id": "cycle-0079",
       "decision": null,
       "edges": [
         {
@@ -9376,7 +9698,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0072",
+      "cycle_id": "cycle-0080",
       "decision": null,
       "edges": [
         {
@@ -9457,8 +9779,8 @@
     "12": 2,
     "13": 16,
     "14": 11,
-    "2": 17,
-    "3": 3,
+    "2": 23,
+    "3": 5,
     "30": 1,
     "31": 1,
     "32": 1,

@@ -22,11 +22,18 @@
  "stdout_tail": "867, 0.3613); planes: shell count exact for even L = 4..24, and the sum rule gives M^2 <= (3/2)(pi^2 beta + 1/6)/H_{L/2-1} (block 92: M^4 <= (6 pi^2 beta + 1/2)/H), below 1 from L = 8 at beta = 0.1 and L = 124 at beta = 0.3\nok   M1: executed (floating heat bath, 500 sweeps, not a proof): d=3 L=4 beta=1.0: u=0.347, M^2=0.629, new floor 0.139, block 92 0.0219; d=2 L=8 beta=1.0: u=1.288, M^2=0.315, new floor 0.235, block 92 0.0187\nTOTAL: PASS=7 FAIL=0  (5 s)\nSUMMARY: PROVED (zero field, finite volume, every beta >= 0, every k != 0, any rung coupling): u(k) >= (4/9) M^2 / (beta E(k) + 4/(3V)) on block 90's bilayer, linear in M^2. Route: the weight w = |m|^2 sits inside Cauchy-Schwarz, not in the measure; the second integration by parts produces <(Dbar w) DH> = -(2/V)<F DH>, which is again <DF>, and the algebra closes with no remainder. Equality at beta = 0 for every V. Consequences: in 3+1 E(k)R(k) >= (4/9)M^2 >= (4/9)(1 - beta_L/beta) up to 4/(3 beta V) (limit (4/9)(1 - beta_0/beta), against block 92's ((1 - beta_0/beta)/3)^2); on planes M^2 <= (3/2)(pi^2 beta + 1/6)/H_{L/2-1}. The coefficient 4/9 in front of beta E is not shown to be best.\nHIT: at zero field on block 90's formation bilayer, for every finite volume, beta >= 0 and k != 0, u(k) >= (4/9) M^2/(beta E(k) + 4/(3V)) - linear in M^2 and an equality at beta = 0; hence a held source's response in 3+1 is at least (4/9)(1 - beta_0/beta) of the inverse lattice Laplacian, and on planes M^2 <= (3/2)(pi^2 beta + 1/6)/H_{L/2-1}\n",
  "checked": {
   "by": "w-macbookpro9927a-ja8d2",
-  "at_utc": "20260924T144321Z",
+  "at_utc": "20260924T144404Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha aee69973 differs from the current HEAD d7b11a8d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee: check.py (PASS=7 FAIL=0; exact sympy/fractions, one floating MC control) verifies the derivation identities (DA, Dm, DF, Dbar|m|^2 = -2F/V, Dbar D H = -sum|c_u-c_v|^2 s_perp.s_perp) on a symbolic bilayer, the Schur rotation average, the algebra closing to u >= (4/9)M^2/(beta E + 4/(3V)) and the block-92-F variant (M^2/3)/(beta E + 1/V), equality at beta = 0, the plane shell count and algebra. The two integrations by parts and the weighted Cauchy-Schwarz are proofs in ATTEMPT.md for the referee (sign conventions of (IP) especially).",
+  "by": "w-macbookpro9927a-ja8d2",
+  "at_utc": "20260924T144404Z"
  }
 }

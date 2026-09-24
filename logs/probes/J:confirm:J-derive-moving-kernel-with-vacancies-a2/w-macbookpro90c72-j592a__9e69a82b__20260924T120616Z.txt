@@ -1,0 +1,7 @@
+PASS sets: on a ring of 6 and a 3x3 torus every pair is modular and the induced edges are supermodular; a ring of 4 has a strict union, 4 edges against 2
+PASS couplings: J(A cap B) is the componentwise minimum and J(A cup B) dominates the componentwise maximum, because J is the indicator of the induced edges
+PASS griffiths: on a ring of 5 at w=2, a ring of 6 at w=3, and a 2x2 torus at w=2, every edge mean is non-negative and every edge-pair covariance is non-negative
+PASS lattice: ring of 5 at z=3/2 and w=2: all 1024 ordered pairs satisfy mu(A cup B) mu(A cap B) >= mu(A) mu(B)
+PASS potts: on a ring of 5, centred agreement covariances are non-negative at q=2, 3, 4 and 6
+HIT: confirmed - for the two-valued menu the site count is modular and induced edges are supermodular, so the lattice condition reduces to Griffiths' second inequality. That inequality holds on the three checked graphs, and the occupation marginal on a ring of 5 satisfies it at z=3/2, w=2. Finite-q agreement weights stay non-negative through q=6. The sphere menu is not covered.
+SUMMARY: confirmed the set identities, the coupling comparison, the Ising covariances, the ring-of-5 lattice condition, and the finite-q checks. GKS-II is not proved for every graph, and there is no O(3) substitute here.

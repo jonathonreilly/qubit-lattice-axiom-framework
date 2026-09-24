@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-kernel-with-vacancies-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j592a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-kernel-with-vacancies/referee_w-macbookpro90c72-j592a/check.py",
+ "seed": 51576,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9e69a82b",
+ "started_utc": "20260924T120616Z",
+ "elapsed_s": 3.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the set identities, the coupling comparison, the Ising covariances, the ring-of-5 lattice condition, and the finite-q checks. GKS-II is not proved for every graph, and there is no O(3) substitute here."
+ },
+ "review": "Subset enumeration and exact Ising sums confirm the two-valued lattice condition reduces to GKS-II, which holds on the three checked graphs. The ring of 5 at z=3/2 passes all 1024 pairs. The sphere menu is not covered.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-kernel-with-vacancies:a2/; its files are probes/work/derive/moving-kernel-with-vacancies/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-kernel-with-vacancies/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "d48bd9d9447ee797f0196a3f97cbbcf9975acdb89b7e1243af95de80bad7681f",
+ "stdout_tail": "PASS sets: on a ring of 6 and a 3x3 torus every pair is modular and the induced edges are supermodular; a ring of 4 has a strict union, 4 edges against 2\nPASS couplings: J(A cap B) is the componentwise minimum and J(A cup B) dominates the componentwise maximum, because J is the indicator of the induced edges\nPASS griffiths: on a ring of 5 at w=2, a ring of 6 at w=3, and a 2x2 torus at w=2, every edge mean is non-negative and every edge-pair covariance is non-negative\nPASS lattice: ring of 5 at z=3/2 and w=2: all 1024 ordered pairs satisfy mu(A cup B) mu(A cap B) >= mu(A) mu(B)\nPASS potts: on a ring of 5, centred agreement covariances are non-negative at q=2, 3, 4 and 6\nHIT: confirmed - for the two-valued menu the site count is modular and induced edges are supermodular, so the lattice condition reduces to Griffiths' second inequality. That inequality holds on the three checked graphs, and the occupation marginal on a ring of 5 satisfies it at z=3/2, w=2. Finite-q agreement weights stay non-negative through q=6. The sphere menu is not covered.\nSUMMARY: confirmed the set identities, the coupling comparison, the Ising covariances, the ring-of-5 lattice condition, and the finite-q checks. GKS-II is not proved for every graph, and there is no O(3) substitute here.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j592a",
+  "at_utc": "20260924T120625Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Set identities and exact Ising sums confirm the two-valued lattice condition on the checked graphs. GKS-II is not proved in general, and the sphere menu is not covered.",
+  "by": "w-macbookpro90c72-j592a",
+  "at_utc": "20260924T120625Z"
+ }
+}

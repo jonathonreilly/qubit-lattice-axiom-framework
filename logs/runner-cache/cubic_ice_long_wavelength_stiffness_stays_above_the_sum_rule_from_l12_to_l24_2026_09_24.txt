@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.py
-runner_sha256: aa1e862065bb3a417dc811c8de1b5995a720284fed2b36e710f9c55e29841e65
-timeout_sec: 900
+runner_sha256: 712ff4ac91c1e16dc993c716f9d6672f82e7fcdc7b6a8ebdd6a017dda87226fe
+timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 656.76
+elapsed_sec: 371.50
 status: ok
 ----- stdout -----
 == A. The exact L = 2 torus ==
@@ -21,7 +21,7 @@ status: ok
 == D. The zone profile on L = 24 ==
 [PASS] the inner half of the zone lies below 1 and the outer half above 1, each by more than 10 standard errors :: inner 0.99836 +- 0.00005, outer 1.00156 +- 0.00004; on L = 12 inner 0.99833 +- 0.00007, outer 1.00148 +- 0.00006
 
-time 656 s
+time 371 s
 TOTAL: PASS=7 FAIL=0
 
 ----- stderr -----

@@ -1,0 +1,4 @@
+PR #9069: feat(dynamics-clause): show U(1) charges under the clause are Gauss defects
+branch claude/dynamics-clause-h11-charges-are-gauss-defects-20260924 (base main)
+runners in the PR: 1
+== scripts/dynamics_clause_charges_are_gauss_defects_2026_09_24.py: rc=0 PASS=6 FAIL=0

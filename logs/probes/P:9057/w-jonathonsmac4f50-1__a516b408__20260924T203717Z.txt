@@ -1,0 +1,4 @@
+PR #9057: Prove ordinary cube energy convergence after the birth layer
+branch codex/mobile-record-ordinary-energy-20260924 (base codex/mobile-record-sharp-rotor-tail-20260924)
+runners in the PR: 1
+== scripts/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py: rc=0 PASS=4 FAIL=0

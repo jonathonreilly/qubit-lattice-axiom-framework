@@ -1,0 +1,7 @@
+PR #9078: [physics-loop] postmark-electric-moving-index milestone 02: bounded_theorem conditional-support
+branch physics-loop/postmark-moving-index-central-match-20260924 (base main)
+runners in the PR: 4
+== scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/postmark_electric_two_band_central_match_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)

@@ -1,0 +1,4 @@
+PR #9086: feat(dynamics-clause): show records-as-only-irreversible-events restates reversibility and gives unitarity
+branch claude/dynamics-clause-h18-closure-gives-unitarity-20260924 (base main)
+runners in the PR: 1
+== scripts/dynamics_clause_records_as_the_only_irreversible_events_restate_reversibility_2026_09_24.py: rc=0 PASS=5 FAIL=0

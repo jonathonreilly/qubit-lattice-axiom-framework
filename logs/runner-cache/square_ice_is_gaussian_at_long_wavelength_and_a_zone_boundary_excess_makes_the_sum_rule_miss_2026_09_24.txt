@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.py
+runner_sha256: e5671d8df2caee15c31772a2727bf9a5afd47200c335579cdc2138f51cf377ba
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 26.47
+status: ok
+----- stdout -----
+== A. The transfer ==
+[PASS] the 4 x 4 torus count is 2970, and the flux costs on widths 8 to 20 reproduce open PR 8930 :: count 2970; 8: 0.25641, 12: 0.25933, 16: 0.26040, 20: 0.26090
+
+== B. Long wavelength ==
+[PASS] R at the smallest wavenumber is 0.9901, 0.9949, 0.9970, 0.9981 for a = 8 to 20, rising toward 1 :: 8: 0.9901, 12: 0.9949, 16: 0.9970, 20: 0.9981
+
+== C. The zone boundary ==
+[PASS] R(pi) lies between 1.09 and 1.11 on every width, and R rises monotonically from the smallest wavenumber to pi :: 8: 1.1067, 12: 1.0999, 16: 1.0971, 20: 1.0957
+
+== D. The excess is the sum rule's miss ==
+[PASS] the g-weighted mean of R equals K / K_a within 1e-9 on every width, between 1.041 and 1.047 :: 8: 1.04290 vs 1.04290, 12: 1.04497 vs 1.04497, 16: 1.04588 vs 1.04588, 20: 1.04633 vs 1.04633
+
+time 26 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

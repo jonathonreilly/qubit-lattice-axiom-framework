@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_around_a_body_the_walks_rays_and_the_two_charges_of_the_curvature_member_2026_09_24.py
-runner_sha256: a528837492c2b44e05ad7043b7bbbd9c3959efbba9c25b2b65c1fe1c720f5484
-input_fingerprint_sha256: 61f860c2dfcf316bab1667e7c14ff51000cbd813708d04283d398566c0d695c1
+runner_sha256: 17ec89a164e2c1e01c0a1d92ee365ef173ad847362946d6374a0f790080000bd
+input_fingerprint_sha256: 5a35974f316bf51a2aff4a7cd48005bc2eb90c900fbd12ef74bb74892f754fe8
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 39.62
+elapsed_sec: 36.63
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -20,6 +20,7 @@ PASS: C2 T2: one body at rest (tau = 0, e = m w) in a 7x7x7 box, 8K = 6: every s
 PASS: C3 T2: content on one bond (rest parts 3.531, 0.304 and hop energy 6.767 shared by its ends, clocks 0.379, 0.455): every site equation holds; the walls see Q = 3.000 and P = 2.790; P - Q = -0.210 = (1/8K) sum [2 tau - e(1 - w)/w]/chi exactly
 PASS: C4 T2: equal charges with hop energy: charges (1, 3/4) with sum sigma = sum Q give P = Q = 1.750 exactly, with positive rest parts 3.079, 2.063, hop energy 2.679, clocks 0.577, 0.614, and the balance 2 sum tau/chi = sum e(1 - w)/(w chi); with charges (2, 2) the clocks run at 0.264, 0.267 < 1/3 and balance needs a negative rest part
 PASS: C5 T2: one content site has P = Q exactly when w = e/(e + 2 tau), which is at least 1/3 whenever 0 <= tau <= e (nonnegative rest part) and equals 1/3 for content with no rest energy; at weak field P/Q = sum (r + 3 tau)/sum (r + tau) = 1 + 2 sum tau/sum e, between 1 (content at rest) and 3 (no rest energy)
+PASS: C6 T2(e): for all three configurations the ledger H + F = 8KQ, 4K(P + Q) = H_rest + 2 H_hop and 4K(P - Q) = H_hop - F hold exactly (field energies 4.003, 7.398, 2.679; hop energies 0.000, 6.767, 2.679): the charges agree exactly when the member's field energy equals the content's hop energy, as in the balanced content (2.679 = 2.679)
 PASS: D1 T3: f(r) = r n(r) = (r + a)^3/(r(r - p)) has f'/f = 3/(r + a) - 1/r - 1/(r - p), which vanishes exactly at the roots of r^2 - 2(a + p) r + ap; the larger, r* = a + p + sqrt(a^2 + ap + p^2) = p + a + sqrt(...), lies outside r = p and the smaller inside, so on r > p (where N > 0) f falls to its one minimum at r* and rises to infinity at both ends: a ray with b < f(r*) never turns and reaches the body if the body lies inside r*, b = f(r*) winds onto the circular ray r = r*, b > f(r*) escapes
 PASS: D2 T3: at equal charges, a = p = M/2 (first-order turn 4M/b): the circular ray sits at r* = (2 + sqrt 3) M/2 and the capture threshold is b_c = 3 sqrt(3) M = 5.196 M, the comparator's values
 PASS: D3 T3: at a fixed first-order turn 4M/b (3a + p = 2M) and charge ratio rho = p/a = P/Q, b_c/M = 2(rho + s + 2)^3/((rho + 3)(s + 1)(rho + s + 1)), s = sqrt(rho^2 + rho + 1): 9/2 at rho = 0, 4 sqrt 7 - 40/7 = 4.869 at 1/2, 3 sqrt 3 at 1, (70 + 26 sqrt 13)/27 = 6.065 at 3, tending to 8; its rho-derivative is (6M f/(3 + rho)^2)(1/(r* - p) - 1/(r* + a)) > 0 at r* (the minimum moves only through a and p): the threshold rises with the charge ratio
@@ -33,13 +34,13 @@ PASS: F2 the note contains no forbidden phrase (0 hits)
 PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
 PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
 per_element: executed - the exterior fields, the index and the ray invariants (symbolic); the site equations from the member's bond form and a walker's energy on a side-4 box (symbolic)
-per_site: executed - every site equation at all 125 interior sites of a 7x7x7 box for a body at rest and for content on one bond, generic and balanced; the charges as wall fluxes
+per_site: executed - every site equation at all 125 interior sites of a 7x7x7 box for a body at rest and for content on one bond, generic and balanced; the charges as wall fluxes; the ledger and the global identities
 per_mode: executed - the turn's coefficients to fourth order for the curvature member and to sixth for the log-linear completion; the comparator's series at equal charges
 per_block: executed - the capture threshold in closed form against the charge ratio, its derivative, its values and limit; the second-order coefficient against the charge ratio
 lattice_wide: T2 on any box with walls held at w = l = 1 for any content with fixed-state derivatives e and tau; T1, T3-T5 in the continuum exterior of a spherical body in the long-wave ray model of E = (w/l)|k|; the member, its number K, the ray model and the content are supplied, and whether bound walkers balance their charges is not derived
 PASS: G1 the five N5 resolution lines are printed
 scope: around a body the curvature member bends long-wave rays with the index chi^3/N = (r + a)^3/(r^2 (r - p)); at equal charges p = a this is the comparator's index at every order (capture 3 sqrt(3) M, 15 pi/4 at second order); P - Q = (1/8K) sum [2 tau - e(1 - w)/w]/chi exactly, so a body at rest has P < Q and equal charges need hop energy to balance the slowed clocks; the log-linear completion gives capture e k A and 4 pi at second order with lengths; nothing adopted
-TOTAL: PASS=23 FAIL=0
+TOTAL: PASS=24 FAIL=0
 
 ----- stderr -----
 

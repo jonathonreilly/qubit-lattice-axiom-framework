@@ -226,6 +226,28 @@ def wall_flux(field):
     return tot
 
 
+def bond_form(nfield, chi):
+    """The member's field energy: -8K times the sum over bonds with an interior end of (N_y - N_x)(chi_y - chi_x)."""
+    tot = ZERO
+    for s in ALL_SITES:
+        for e in E3:
+            t = add(s, e)
+            if max(t) >= SIDE or (s not in INDEX and t not in INDEX):
+                continue
+            tot += (val(nfield, t) - val(nfield, s)) * (val(chi, t) - val(chi, s))
+    return -8 * K * tot
+
+
+def global_identities(chi, nf, e, tau):
+    """Ledger 8KQ = H + F; 4K(P + Q) = H_rest + 2 H_hop; 4K(P - Q) = H_hop - F (homogeneity in the rates and in chi)."""
+    pp, qq = -wall_flux(nf), wall_flux(chi)
+    h_hop = sum(tau.values(), ZERO)
+    h_rest = sum((e[s] - tau[s] for s in INTERIOR), ZERO)
+    fld = bond_form(nf, chi)
+    ok = (h_rest + h_hop + fld == 8 * K * qq and 4 * K * (pp + qq) == h_rest + 2 * h_hop and 4 * K * (pp - qq) == h_hop - fld)
+    return ok, fld, h_hop, h_rest
+
+
 def configuration(g, qx, qy, sx, sy):
     """chi and N from the charges at the two content sites; the content's derivatives e and tau read off the site equations."""
     chi = {s: 1 + qx * g[SITE_X][s] + qy * g[SITE_Y][s] for s in INTERIOR}
@@ -351,6 +373,14 @@ def family_c(checks: Checks) -> None:
     bound_ok = one_site == [e_ / (e_ + 2 * t_)] and above_third and massless == [sp.Rational(1, 3)] and sp.simplify(weak - 1 - 2 * t_ / (r_ + t_)) == 0
     checks.check("C5", bound_ok,
                  "T2: one content site has P = Q exactly when w = e/(e + 2 tau), which is at least 1/3 whenever 0 <= tau <= e (nonnegative rest part) and equals 1/3 for content with no rest energy; at weak field P/Q = sum (r + 3 tau)/sum (r + tau) = 1 + 2 sum tau/sum e, between 1 (content at rest) and 3 (no rest energy)")
+
+    gids = []
+    for cfg in (configuration(g, q, ZERO, q / (1 + 2 * q * g0), ZERO), configuration(g, F(2), F(1), *solve_for(F(2), F(1), sp.Eq(sx_, sp.Rational(3, 2)))),
+                configuration(g, F(1), F(3, 4), *solve_for(F(1), F(3, 4), sp.Eq(sx_ + sy_, F(7, 4))))):
+        gids.append(global_identities(cfg[0], cfg[1], cfg[3], cfg[4]))
+    bal = gids[2]
+    checks.check("C6", all(x[0] for x in gids) and bal[1] == bal[2],
+                 f"T2(e): for all three configurations the ledger H + F = 8KQ, 4K(P + Q) = H_rest + 2 H_hop and 4K(P - Q) = H_hop - F hold exactly (field energies {', '.join(about(x[1]) for x in gids)}; hop energies {', '.join(about(x[2]) for x in gids)}): the charges agree exactly when the member's field energy equals the content's hop energy, as in the balanced content ({about(bal[1])} = {about(bal[2])})")
 
 
 # ============================================================================================ family D
@@ -515,7 +545,7 @@ def family_f(checks: Checks, note_text: str) -> None:
 # ============================================================================================ family G
 N5_LINES = (
     "per_element: executed - the exterior fields, the index and the ray invariants (symbolic); the site equations from the member's bond form and a walker's energy on a side-4 box (symbolic)",
-    "per_site: executed - every site equation at all 125 interior sites of a 7x7x7 box for a body at rest and for content on one bond, generic and balanced; the charges as wall fluxes",
+    "per_site: executed - every site equation at all 125 interior sites of a 7x7x7 box for a body at rest and for content on one bond, generic and balanced; the charges as wall fluxes; the ledger and the global identities",
     "per_mode: executed - the turn's coefficients to fourth order for the curvature member and to sixth for the log-linear completion; the comparator's series at equal charges",
     "per_block: executed - the capture threshold in closed form against the charge ratio, its derivative, its values and limit; the second-order coefficient against the charge ratio",
     "lattice_wide: T2 on any box with walls held at w = l = 1 for any content with fixed-state derivatives e and tau; T1, T3-T5 in the continuum exterior of a spherical body in the long-wave ray model of E = (w/l)|k|; the member, its number K, the ray model and the content are supplied, and whether bound walkers balance their charges is not derived",

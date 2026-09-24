@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_around_a_body_the_walks_rays_match_the_comparators_at_every_order_exactly_when_its_two_charges_agree_and_they_agree_only_when_hop_energy_balances_the_slowed_clocks_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 60's curvature member (p = 1, c = 8K; landed on main) for lengths l = chi^2 and rates w = N/chi, the rates of crossing of block 59 (landed), and the long-wave ray model of massless walkers, E = (w/l)|k|; all supplied. Exact: (T1) outside a spherical body chi = 1 + a/r and N = 1 - p/r, and the rays see the index n = chi^3/N = (r + a)^3/(r^2 (r - p)); at equal charges p = a = M/2 this is the comparator's index identically. (T2) On any box with walls held at w = l = 1 and any content with fixed-state derivatives e (rates) and tau (half the hop energies at a site), a static configuration has (Lap chi) = -e/(8K w chi) and (Lap N) = (e + 2 tau)/(8K chi) at every site, so the two charges seen by the walls are Q = sum e/(8K w chi) and P = sum (e + 2 tau)/(8K chi), and P - Q = (1/8K) sum [2 tau - e(1 - w)/w]/chi. A body at rest has P < Q. Equal charges need the hop energy to balance the rest energy's clock deficit, 2 sum tau/chi = sum e(1 - w)/(w chi); with 0 <= tau <= e this is impossible when every content clock runs slower than 1/3. At weak field P/Q = 1 + 2 sum tau/sum e, between 1 and 3. (T3) Capture: rays with b below min_r r n(r) = f(r*), r* = a + p + sqrt(a^2 + ap + p^2), reach a body inside r*; at a fixed first-order turn 4M/b the threshold b_c/M rises with the charge ratio rho = P/Q from 9/2 through 3 sqrt(3) at rho = 1 towards 8. (T4) The turn is 2 nu1/b + pi(nu2 + nu1^2/2)/b^2 + (4/3)(nu1^3 + 6 nu1 nu2 + 3 nu3)/b^3 + ... for n = 1 + nu1/r + nu2/r^2 + ...; at a fixed first-order turn the second-order term is 6 pi (5 + 4 rho + rho^2)/(3 + rho)^2 (M/b)^2, the comparator's 15 pi/4 exactly at rho = 1. (T5) The log-linear completion, index e^(kA/r), has capture threshold e k A and the tree-function series (refereed probes result); with lengths (k = 2) it gives 4 pi (M/b)^2 at second order. Supervisor's derivation with one refereed probes result. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 60's curvature member (p = 1, c = 8K; landed on main) for lengths l = chi^2 and rates w = N/chi, the rates of crossing of block 59 (landed), and the long-wave ray model of massless walkers, E = (w/l)|k|; all supplied. Exact: (T1) outside a spherical body chi = 1 + a/r and N = 1 - p/r, and the rays see the index n = chi^3/N = (r + a)^3/(r^2 (r - p)); at equal charges p = a = M/2 this is the comparator's index identically. (T2) On any box with walls held at w = l = 1 and any content with fixed-state derivatives e (rates) and tau (half the hop energies at a site), a static configuration has (Lap chi) = -e/(8K w chi) and (Lap N) = (e + 2 tau)/(8K chi) at every site, so the two charges seen by the walls are Q = sum e/(8K w chi) and P = sum (e + 2 tau)/(8K chi), and P - Q = (1/8K) sum [2 tau - e(1 - w)/w]/chi. A body at rest has P < Q. Equal charges need the hop energy to balance the rest energy's clock deficit, 2 sum tau/chi = sum e(1 - w)/(w chi); with 0 <= tau <= e this is impossible when every content clock runs slower than 1/3. At weak field P/Q = 1 + 2 sum tau/sum e, between 1 and 3. Globally, the ledger is 8KQ = H + F and 4K(P + Q) = H_rest + 2 H_hop, so P = Q exactly when the member's field energy F equals the content's hop energy. (T3) Capture: rays with b below min_r r n(r) = f(r*), r* = a + p + sqrt(a^2 + ap + p^2), reach a body inside r*; at a fixed first-order turn 4M/b the threshold b_c/M rises with the charge ratio rho = P/Q from 9/2 through 3 sqrt(3) at rho = 1 towards 8. (T4) The turn is 2 nu1/b + pi(nu2 + nu1^2/2)/b^2 + (4/3)(nu1^3 + 6 nu1 nu2 + 3 nu3)/b^3 + ... for n = 1 + nu1/r + nu2/r^2 + ...; at a fixed first-order turn the second-order term is 6 pi (5 + 4 rho + rho^2)/(3 + rho)^2 (M/b)^2, the comparator's 15 pi/4 exactly at rho = 1. (T5) The log-linear completion, index e^(kA/r), has capture threshold e k A and the tree-function series (refereed probes result); with lengths (k = 2) it gives 4 pi (M/b)^2 at second order. Supervisor's derivation with one refereed probes result. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_around_a_body_the_walks_rays_and_the_two_charges_of_the_curvature_member_2026_09_24.py
@@ -30,6 +30,7 @@ Block 98 (#8878, landed in 8cc5f114f0) computed the first-order transverse kick 
   - Equal charges need the hop energy to pay exactly for the rest energy's slowed clocks: `2Σ τ/χ = Σ e(1 − w)/(wχ)`. An exact lattice example with positive rest energy and clocks near 0.6 has `P = Q`.
   - If no content site has negative rest or hop energy, equal charges are impossible when every content clock runs slower than `1/3`.
   - At weak field `P/Q = 1 + 2Στ/Σe`, between `1` (content at rest) and `3` (content with no rest energy).
+  - Two global identities hold for any content: the ledger `8KQ = H + F`, and `4K(P + Q) = H_rest + 2H_hop`. So `P = Q` exactly when the member's field energy `F` equals the content's hop energy.
 - **T3: capture.** Rays with impact parameter below the smallest value of `r n(r)` reach a body lying inside the circular ray. At a fixed first-order turn `4M/b`, the threshold rises with the charge ratio `ρ = P/Q`: `9/2 M` as `ρ → 0`, `3√3 M` at `ρ = 1`, `(70 + 26√13)/27 M ≈ 6.06 M` at `ρ = 3`, tending to `8M`.
 - **T4: the turn at every order.** An index `n = 1 + ν₁/r + ν₂/r² + …` turns a ray by `2ν₁/b + π(ν₂ + ν₁²/2)/b² + …`. At a fixed first-order turn the second-order term is `6π(5 + 4ρ + ρ²)/(3 + ρ)² (M/b)²`. That is `10π/3` for a body at rest with very slow clocks, the comparator's `15π/4` exactly at `ρ = 1`, and `13π/3` for content with no rest energy at weak field.
 - **T5: another completion.** If the logarithms of the rates and lengths are the fields that obey the linear law, the index is `e^{kA/r}`, `k = 1 + β`. Then the capture threshold is `ekA` and the turn is a tree-function series; this is the refereed probes result, re-derived here by another route. With block 59's lengths (`k = 2`) it gives `4π(M/b)²` at second order, not `15π/4`.
@@ -75,17 +76,20 @@ In plain terms: around a lump, the walker's waves bend the way light bends aroun
 - (d) **Balance.** `P = Q` exactly when `2Σ τ/χ = Σ e(1 − w)/(wχ)`.
   - If `0 ≤ τ_z ≤ e_z` at every site (no negative rest part), balance forces `Σ (e_z/χ_z)(1 − 3w_z)/w_z ≤ 0`, so not every content clock can run slower than `1/3`.
   - One content site balances exactly when `w = e/(e + 2τ)`, which is `1/3` for content with no rest energy.
+- (e) **Global form.** For content away from the walls, the ledger is `8KQ = H + F`, and `4K(P + Q) = H_rest + 2H_hop`, where `H = H_rest + H_hop` is the content's energy. So `4K(P − Q) = H_hop − F`, and `P = Q` exactly when `F = H_hop`.
 
 *Proof.*
 - (a) By differentiation. `w_z ∂(⟨H⟩ + F)/∂w_z = e_z + 8Kw_zχ_z(Δχ)_z`, and `∂(⟨H⟩ + F)/∂χ_z = 8K(w_z(Δχ)_z + (ΔN)_z) − 2τ_z/χ_z`. The second holds because each bond at `z` is crossed at a rate proportional to `1/χ_z`. The runner checks both symbolically on a side-4 box, for arbitrary rates, lengths, rest parts and hop amplitudes (C1). Setting both to zero gives (a).
 - (b) Summing `Δχ` or `ΔN` over the interior leaves only the bonds into the walls. Then subtract.
 - (c) `τ = 0`, `e = mw`, or `w = χ = 1`.
 - (d) With `τ ≤ e`, `Σ e(1 − w)/(wχ) = Σ 2τ/χ ≤ Σ 2e/χ`.
+- (e) By homogeneity. `H + F` has degree one in the rates, so the interior stationarity leaves `H + F` equal to the walls' rate derivative, `8KQ` (block 60 T1(c)). In `χ`, the hop energy has degree `−2`, the rest energy `0` and `F` degree `2`. So the interior stationarity leaves `2F − 2H_hop` equal to the walls' `χ`-derivative, `8K(Q − P)`. Subtracting gives the second identity.
 - Executed exactly on a `7 × 7 × 7` box (C2–C5):
   - one body at rest, `Q = 5/2`: `P = 1.166`;
   - content on one bond: `P − Q = −0.210` equals the sum;
   - a balanced content: charges `(1, 3/4)`, positive rest parts, clocks `0.577` and `0.614`, and `P = Q = 7/4` exactly;
-  - the same construction with charges `(2, 2)`: clocks `0.264` and `0.267`, below `1/3`, where balance needs a negative rest part. ∎
+  - the same construction with charges `(2, 2)`: clocks `0.264` and `0.267`, below `1/3`, where balance needs a negative rest part;
+  - the global identities of (e) in all three configurations, with `F = H_hop = 2.679` in the balanced one (C6). ∎
 
 ## Theorem T3 — capture
 
@@ -180,12 +184,13 @@ audit_required_before_effective_retained: true
 - **The probes attempt** `strong-field-turning-by-a-clump` a2 (worker `w-macbookpro9927a-j72ca`, Claude Opus 5.5) found the capture threshold `eA` and the Lambert series for the index `e^{A/r}`. A Grok model refereed it (`referee_w-macbookpro90c72-jd58b`, confirmed).
 - **In the literature.**
   - The comparator's constraint and lapse equations for a conformally flat static metric are `∇²ψ = −2πρψ⁵` (Lichnerowicz, York) and `∇²(αψ) = 2παψ⁵(ρ + 2S)`, `S` the trace of the stress. The site equations of T2(a) have this form with `e ↔ αρψ⁶`, `τ ↔ αSψ⁶` and `8K ↔ 1/(2π)`. A massless walker, `e = τ`, then has `S = ρ`, the stress of radiation.
+  - `8KQ` and `4K(P + Q)` are the lattice counterparts of the comparator's masses of Arnowitt, Deser and Misner and of Komar. `H_rest + 2H_hop` is the lattice form of Tolman's integrand `ρ + S`.
   - That the two masses agree for a static body in equilibrium is Beig's theorem. Its local form is the virial identity (Tolman). Buchdahl's bound puts the surface clock of a static fluid ball, with density not increasing outward, above `1/3`.
   - The comparator's series `4, 15π/4, 128/3, 3465π/64` is Keeton and Petters's. Its second-order term is the post-post-Newtonian light deflection, and its capture threshold `3√3 M` follows from its circular light orbit.
   - The invariant is Bouguer's, the tree function Lambert's.
 - **New here:**
   - the exterior index `χ³/N` and its identity with the comparator's at equal charges;
-  - the exact charge identity for any content on a box, with the balance condition and the bound at clocks `1/3`;
+  - the exact charge identity for any content on a box, its global form `4K(P + Q) = H_rest + 2H_hop` with the ledger `8KQ = H + F`, the balance condition `F = H_hop`, and the bound at clocks `1/3`;
   - the capture threshold and the second-order turn as exact functions of the charge ratio;
   - the log-linear completion's threshold `ekA` and series, re-derived by series inversion, and its departure at second order.
 
@@ -232,7 +237,7 @@ The comparator's values are computed from its index here. Its masses are named, 
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
 |---|---|---|---|---|---|
-| "the rays are the comparator's at every order exactly when the charges agree; equal charges need hop energy to balance the slowed clocks" | executed: the exterior fields, the index and the ray invariants; the site equations from the bond form and a walker's energy on a side-4 box (symbolic) | executed: every site equation at all 125 interior sites of a `7 × 7 × 7` box for a body at rest and for content on one bond, generic and balanced; the charges as wall fluxes | executed: the turn's coefficients to fourth order for the member and to sixth for the log-linear completion; the comparator's series at equal charges | executed: the capture threshold against the charge ratio, its derivative, values and limit; the second-order term against the charge ratio | T2 on any box with held walls for any content with fixed-state derivatives; T1, T3–T5 in the continuum exterior of a spherical body in the long-wave ray model; the member, `K`, the ray model and the content supplied; whether bound walkers balance is not derived |
+| "the rays are the comparator's at every order exactly when the charges agree; equal charges need hop energy to balance the slowed clocks" | executed: the exterior fields, the index and the ray invariants; the site equations from the bond form and a walker's energy on a side-4 box (symbolic) | executed: every site equation at all 125 interior sites of a `7 × 7 × 7` box for a body at rest and for content on one bond, generic and balanced; the charges as wall fluxes; the ledger and the global identities | executed: the turn's coefficients to fourth order for the member and to sixth for the log-linear completion; the comparator's series at equal charges | executed: the capture threshold against the charge ratio, its derivative, values and limit; the second-order term against the charge ratio | T2 on any box with held walls for any content with fixed-state derivatives; T1, T3–T5 in the continuum exterior of a spherical body in the long-wave ray model; the member, `K`, the ray model and the content supplied; whether bound walkers balance is not derived |
 
 ### N6 — Partial-closure paths and primitive scan
 No registered primitive is used. Nothing is proposed for registration.
@@ -287,4 +292,4 @@ No registered primitive is used. Nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_around_a_body_the_walks_rays_and_the_two_charges_of_the_curvature_member_2026_09_24.py
 ```
 
-Expected: `TOTAL: PASS=23 FAIL=0`.
+Expected: `TOTAL: PASS=24 FAIL=0`.

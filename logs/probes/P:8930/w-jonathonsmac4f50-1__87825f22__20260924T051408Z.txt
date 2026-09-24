@@ -1,0 +1,4 @@
+PR #8930: docs(ice): the unit-field sum rule is ten times closer in three dimensions
+branch claude/ice-sum-rule-ten-times-closer-in-three-dimensions-20260923 (base main)
+runners in the PR: 1
+== scripts/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.py: rc=0 PASS=4 FAIL=0

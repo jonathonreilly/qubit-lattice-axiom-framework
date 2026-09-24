@@ -1,0 +1,30 @@
+{
+ "task": "P:8946",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-general-microscopic-energy",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8946",
+ "pr": 8946,
+ "branch": "codex/mobile-record-general-microscopic-energy-20260924",
+ "git_sha": "54766960",
+ "started_utc": "20260924T050900Z",
+ "elapsed_s": 4.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "225fdc05962426bf48f6220f28410cce23e10ae4322078f4557fcfa72faeeda3",
+ "stdout_tail": "PR #8946: Derive microscopic birth energy and the scoped cube power law\nbranch codex/mobile-record-general-microscopic-energy-20260924 (base codex/mobile-record-autonomous-finite-clock-20260924)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T050905Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

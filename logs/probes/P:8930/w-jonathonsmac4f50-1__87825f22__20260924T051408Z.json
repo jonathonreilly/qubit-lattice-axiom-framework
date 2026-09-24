@@ -1,0 +1,36 @@
+{
+ "task": "P:8930",
+ "type": "pr-reexecution",
+ "lane": "ice-sum-rule-ten-times-closer-in-three-d",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8930",
+ "pr": 8930,
+ "branch": "claude/ice-sum-rule-ten-times-closer-in-three-dimensions-20260923",
+ "git_sha": "87825f22",
+ "started_utc": "20260924T051408Z",
+ "elapsed_s": 53.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "04c044ff9a878e5007e412df03e443eab2061a6493e758f997b93fec35d8203a",
+ "stdout_tail": "PR #8930: docs(ice): the unit-field sum rule is ten times closer in three dimensions\nbranch claude/ice-sum-rule-ten-times-closer-in-three-dimensions-20260923 (base main)\nrunners in the PR: 1\n== scripts/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T051501Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

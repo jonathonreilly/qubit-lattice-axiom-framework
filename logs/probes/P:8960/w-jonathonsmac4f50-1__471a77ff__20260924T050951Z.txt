@@ -1,0 +1,10 @@
+PR #8960: physics-loop: admissibility induced-law block 110 - around a body the walk's rays match the comparator's at every order exactly when its two charges agree; equal charges need hop energy to balance the slowed clocks
+branch physics-loop/admissibility-induced-law-block110-the-walks-rays-around-a-body-and-the-two-charges-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_around_a_body_the_walks_rays_and_the_two_charges_of_the_curvature_member_2026_09_24.py: rc=0 PASS=24 FAIL=0
+   mutation index_power_forged: expected B observed B ok
+   mutation hop_energy_counted_once: expected C observed C ok
+   mutation capture_root_sign_forged: expected D observed D ok
+   mutation second_order_ignores_the_square: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

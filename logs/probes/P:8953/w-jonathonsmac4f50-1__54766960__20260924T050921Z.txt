@@ -1,0 +1,3 @@
+PR #8953: Track actual cube energy and second formation on fast time
+branch codex/mobile-record-fast-band-energy-20260924 (base codex/mobile-record-general-microscopic-energy-20260924)
+runners in the PR: 0

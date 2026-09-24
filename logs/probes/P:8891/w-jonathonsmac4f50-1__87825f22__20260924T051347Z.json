@@ -1,0 +1,30 @@
+{
+ "task": "P:8891",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-high-flux-energy-20260924",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8891",
+ "pr": 8891,
+ "branch": "codex/mobile-record-high-flux-energy-20260924",
+ "git_sha": "87825f22",
+ "started_utc": "20260924T051347Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "bdc4b104ee7888c2194a4bbd49996eb105e7e57d7a74240eae1ee37ce4d5a926",
+ "stdout_tail": "PR #8891: Derive actual cube-birth energy spread and finite-spin balance\nbranch codex/mobile-record-high-flux-energy-20260924 (base codex/mobile-record-energy-spread-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T051352Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "task": "P:8953",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-fast-band-energy-20260924",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8953",
+ "pr": 8953,
+ "branch": "codex/mobile-record-fast-band-energy-20260924",
+ "git_sha": "54766960",
+ "started_utc": "20260924T050921Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "19829bb2f15145cc4cf4dced92d9009297b74175ce93148531e4d4a71f4b5055",
+ "stdout_tail": "PR #8953: Track actual cube energy and second formation on fast time\nbranch codex/mobile-record-fast-band-energy-20260924 (base codex/mobile-record-general-microscopic-energy-20260924)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T050926Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

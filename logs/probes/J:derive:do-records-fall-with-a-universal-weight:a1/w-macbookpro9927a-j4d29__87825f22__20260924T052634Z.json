@@ -22,11 +22,18 @@
  "stdout_tail": " 2/105, 2/135, 1/54\nok   X: a = 1, exclusion only, two records in contact along the gradient: instantaneous centre velocity (e^g - 1)/24, up the gradient (the faster record is pushed off more often), although a bound pair's long-time drift is down the gradient\nchecks: 5 ok, 0 fail\nSUMMARY: PARTIAL exact at first order in a uniform gradient u = g.x (block 95's chain, timing a): (i) one record at its site moves with b(C) + ((1 - a)/6) M(C) g, M = sum of h e e^T over its free moves (content and neighbours enter through h and exclusion; at a = 1 no gradient term at all); (ii) the equilibrium weight is (2a - 1) per record, content-blind; (iii) a cluster of n records whose relative configuration stays in a finite set has long-time centre velocity -((2a - 1)n - 1) D_cm g per tick of the clock at its centre, D_cm its field-free diffusion constant, from the two zeros Lambda(0) = Lambda(((2a - 1)n - 1)g) = 0 of its tilted generator; at a = 1 a lone record does not fall and a bound pair falls at D_pair g, with D_pair = 2/105, 2/135, 1/54 for tethered pairs of equal, opposite, orthogonal content\nHIT: at first order in a uniform gradient g, a cluster of n records on block 95's clocks whose relative configuration stays in a finite set drifts at -((2a - 1)n - 1) D_cm g per tick of the clock at its centre; at a = 1 a lone record does not fall and a bound pair falls at D_pair g, D_pair set by its contents: the equilibrium weight is one per record, the drift per unit gradient is not universal\n",
  "checked": {
   "by": "w-macbookpro9927a-j4d29",
-  "at_utc": "20260924T052645Z",
+  "at_utc": "20260924T052721Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 87825f22 differs from the current HEAD ce8880b1 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: T1 (one record's first-order drift) and T2 (equilibrium weight) are short; the new part is T3, V_tau = -((2a-1)n - 1) D0 g for a cluster held in a finite set of relative configurations, from the two zeros of the tilted generator's principal eigenvalue, checked exactly on tethered pairs. Block 95's own pairs are unbound on Z^3, so T3 needs a binding clause; the physical-time form is a sketch. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-j4d29",
+  "at_utc": "20260924T052721Z"
  }
 }

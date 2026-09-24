@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_around_a_body_the_walks_rays_and_the_two_charges_of_the_curvature_member_2026_09_24.py
 runner_sha256: 17ec89a164e2c1e01c0a1d92ee365ef173ad847362946d6374a0f790080000bd
-input_fingerprint_sha256: 3034845dbc8dc0d46259fbe36c19d21b5e17f1c2da8d4c931200348cf62d494b
+input_fingerprint_sha256: 05a8707fc10c5f7ce20d04c082292d8e087901a266de304c272eafa016a72014
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 32.01
+elapsed_sec: 31.19
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

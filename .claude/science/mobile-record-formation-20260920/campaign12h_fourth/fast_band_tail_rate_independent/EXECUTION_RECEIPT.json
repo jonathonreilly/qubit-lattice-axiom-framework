@@ -1,0 +1,24 @@
+{
+  "completed_utc": "2026-09-24T04:37:09.123504+00:00",
+  "python": "3.13.5",
+  "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "libraries": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "script": "local_rate_control.py",
+  "script_sha256": "789b249649900eb64b055967d65e045f7f03a1fecd85630a3d3ab82c3b9815ad",
+  "exit_code": 0,
+  "wall_seconds": 1.2852433328516781,
+  "stdout_sha256": "170c1f823d0ff335e5a333f38c5679864dd2e06e96a22585ef762b32ef956614",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_sha256": "fda8b92b110c039ea2ea4494aa662ba950a7c7774495a2c865627320a7173e33",
+  "all_1728_prior_flat_certificate_entries_match_new_local_matrix": true,
+  "actual_physical_first_mark_certificates_match": true,
+  "actual_physical_Gauss_checks_pass": true,
+  "relative_minus_input_discriminator_projection_squared": "0",
+  "prior_values_known_before_control": true,
+  "author_new_rate_sources_accessed": false,
+  "unresolved_execution_failures": []
+}

@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-24T04:44:27.241360+00:00",
+  "script_sha256": "789b249649900eb64b055967d65e045f7f03a1fecd85630a3d3ab82c3b9815ad",
+  "exit_code": 0,
+  "wall_seconds": 0.8884214172139764,
+  "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/actual-energy-tail-portable-es7zxvgk/CONTROL.stdout",
+  "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/actual-energy-tail-portable-es7zxvgk/CONTROL.stderr",
+  "result_path": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/actual-energy-tail-portable-es7zxvgk/CONTROL.RESULT.json",
+  "result_sha256": "fda8b92b110c039ea2ea4494aa662ba950a7c7774495a2c865627320a7173e33",
+  "all_scientific_JSON_compared": true,
+  "comparison": "Discrete fields exact; floating rel1e-10/abs2e-11. No field excluded. Original assertions unchanged.",
+  "flat_entries_checked": 1728,
+  "physical_Gauss_checks": true,
+  "limits": "Numerical samples illustrate the local structure, not the analytic decay exponent. Replay is not new independent evidence."
+}

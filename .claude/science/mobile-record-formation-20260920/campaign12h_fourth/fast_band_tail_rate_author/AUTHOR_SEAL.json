@@ -1,0 +1,31 @@
+{
+  "sealed_utc": "2026-09-24T04:26:43.767899+00:00",
+  "status": "personal root analytic corollary before dispatch of independent rate check",
+  "scope": "Non-sharp algebraic lower bound for three actual limiting rotor first-mark energy curves; no fixed-physical-time or rate-upper-bound claim.",
+  "artifacts": [
+    {
+      "path": "ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND.md",
+      "bytes": 6560,
+      "sha256": "a8cbb5fa4f71f4fde6644a1242ef1741799c701c2ce8835b5da42b46c5075745"
+    }
+  ],
+  "sources": [
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_author/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY.md",
+      "sha256": "9d73530905763400ce31f66188c5eb9c5c1a0336e0c444bbe4f1c23c0c19fc7a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_author/AUTHOR_SEAL.json",
+      "sha256": "646d5a33082c0d44a8af5a25a22b61da9b8ca89275651f80458c2a9c7f7f02e6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_author/EXACT_TAIL_RESULTS.json",
+      "sha256": "9761680bde05c651c01a421e80b8aeac358ae9b24da717cc7b0b05d48d186a0b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "sha256": "f71515321246fd2900b1ca801eb12e816b0a7ab2a1d8f820ae75bb87e28df02a"
+    }
+  ],
+  "independent_status": "Not yet dispatched; root proof completed without independent rate results."
+}

@@ -1,0 +1,293 @@
+{
+  "created_utc": "2026-09-24T04:44:26.061896+00:00",
+  "base_pr": 8957,
+  "base_commit": "fb9edf315aed8192ea03873fe8e83882dbaf1502",
+  "claim_status": "Provisional review proposal; independent PRE and bounded POST complete, no formal audit verdict.",
+  "seals": [
+    {
+      "path": "fast_band_tail_rate_author/AUTHOR_SEAL.json",
+      "sha256": "3a8305a55aaef7feb91ab07499b3c2c70059d1f3b7bf9a66d84fe5863f2082a4"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/PRE_SEAL.json",
+      "sha256": "84f629be9deb702e119a333fc8ae85d940586f4493ebd86405a0a215f61600d7"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/FINAL_SEAL.json",
+      "sha256": "793e05ffa3a352f63839a2b0129ef13ee836b464c094a6c1df2c873d0fce6b05"
+    }
+  ],
+  "explicit_omissions": [
+    {
+      "path": "fast_band_tail_rate_independent/sources/instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "reason": "Historical instruction snapshot; original private binding retained."
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/instructions/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "reason": "Historical instruction snapshot; original private binding retained."
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/instructions/no-go-discipline_SKILL.md",
+      "bytes": 16941,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "reason": "Historical instruction snapshot; original private binding retained."
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/instructions/physics-claim-reviewer_SKILL_read_only.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "reason": "Historical instruction snapshot; original private binding retained."
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/instructions/planning_AGENTS.md",
+      "bytes": 10164,
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "reason": "Historical instruction snapshot; original private binding retained."
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/instructions/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "reason": "Historical instruction snapshot; original private binding retained."
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/instructions/repository_AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "reason": "Historical instruction snapshot; original private binding retained."
+    }
+  ],
+  "sources": [
+    {
+      "path": "fast_band_tail_author/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY.md",
+      "bytes": 10779,
+      "sha256": "9d73530905763400ce31f66188c5eb9c5c1a0336e0c444bbe4f1c23c0c19fc7a"
+    },
+    {
+      "path": "fast_band_tail_author/AUTHOR_SEAL.json",
+      "bytes": 4781,
+      "sha256": "646d5a33082c0d44a8af5a25a22b61da9b8ca89275651f80458c2a9c7f7f02e6"
+    },
+    {
+      "path": "fast_band_tail_author/EXACT_TAIL_RESULTS.json",
+      "bytes": 99901,
+      "sha256": "9761680bde05c651c01a421e80b8aeac358ae9b24da717cc7b0b05d48d186a0b"
+    },
+    {
+      "path": "fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "bytes": 14352,
+      "sha256": "f71515321246fd2900b1ca801eb12e816b0a7ab2a1d8f820ae75bb87e28df02a"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "ACTUAL_ENERGY_TAIL_PUBLICATION_README.md",
+      "bytes": 3033,
+      "sha256": "5aa1381ef3014a68647d57d91e5ea2b8bae825ee435401bd050ac7ca967b75ff"
+    },
+    {
+      "path": "actual_energy_tail_review/CONTROL.RESULT.json",
+      "bytes": 102652,
+      "sha256": "fda8b92b110c039ea2ea4494aa662ba950a7c7774495a2c865627320a7173e33"
+    },
+    {
+      "path": "actual_energy_tail_review/CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "actual_energy_tail_review/CONTROL.stdout",
+      "bytes": 6107,
+      "sha256": "170c1f823d0ff335e5a333f38c5679864dd2e06e96a22585ef762b32ef956614"
+    },
+    {
+      "path": "actual_energy_tail_review/PORTABLE_RUN_RECEIPT.json",
+      "bytes": 1007,
+      "sha256": "ad15c2f4b3d3624557e933068816defeb0155fb26b5682af8f32c4f278f7c847"
+    },
+    {
+      "path": "actual_energy_tail_review/ROOT_REVIEW.md",
+      "bytes": 2233,
+      "sha256": "38b4ee3ff69eb89dcac5cc023d0a6246de93f20c10a163ebaa9ad0da067de243"
+    },
+    {
+      "path": "fast_band_tail_rate_author/ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND.md",
+      "bytes": 6560,
+      "sha256": "a8cbb5fa4f71f4fde6644a1242ef1741799c701c2ce8835b5da42b46c5075745"
+    },
+    {
+      "path": "fast_band_tail_rate_author/AUTHOR_SEAL.json",
+      "bytes": 1600,
+      "sha256": "3a8305a55aaef7feb91ab07499b3c2c70059d1f3b7bf9a66d84fe5863f2082a4"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/BIND_SOURCES.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/BIND_SOURCES.stdout",
+      "bytes": 71,
+      "sha256": "87632a06d92308f3c068911b8b980983d715e259244e11e7aa475218e40e7a2b"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/DEVELOPMENT_AND_STATUS.md",
+      "bytes": 3321,
+      "sha256": "36632216acd29bfcbcea3a81876f6b43eb3d859d20821f4e90fc67b655457087"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/EXECUTION_RECEIPT.json",
+      "bytes": 1050,
+      "sha256": "ebc80d69dfbc0b969653aecfe62e65a71974bdeb93f0bccda3f754622e8bbd7e"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/FINAL_SEAL.json",
+      "bytes": 8712,
+      "sha256": "793e05ffa3a352f63839a2b0129ef13ee836b464c094a6c1df2c873d0fce6b05"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/LOCAL_RATE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/LOCAL_RATE.stdout",
+      "bytes": 6107,
+      "sha256": "170c1f823d0ff335e5a333f38c5679864dd2e06e96a22585ef762b32ef956614"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/LOCAL_RATE_RESULTS.json",
+      "bytes": 102652,
+      "sha256": "fda8b92b110c039ea2ea4494aa662ba950a7c7774495a2c865627320a7173e33"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 6748,
+      "sha256": "39de93c2206e0a9af0afe1d1e84f1d91c3bea912958cde81cbf375bd1b7ee712"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/POST_COMPARISON.md",
+      "bytes": 9844,
+      "sha256": "7869775dcccb93db8442c0c7f35741f9207e9964246146083a2d66292dde972a"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/POST_RECEIPT.json",
+      "bytes": 635,
+      "sha256": "cdac3d408d6d4b809ffd8aada387022aefcef44690ba373b30f73363ce92d3c9"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/POST_SOURCE_BINDINGS.json",
+      "bytes": 3273,
+      "sha256": "65ba8ee5a1d6be104eae355ff8661f52dcb45348cc16f0c68898ab27099181d6"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/POST_STATUS.md",
+      "bytes": 1099,
+      "sha256": "0824aaae808563a713992c42b434961007e8db691981c17512c6dc9fbb04d2aa"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/PRE_RATE_ARGUMENT.md",
+      "bytes": 12569,
+      "sha256": "86e49c18c7ec0f97006316a6bd9c4fcfa5cb7381208049e52a8aa9e5a8ca9d93"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/PRE_SEAL.json",
+      "bytes": 7013,
+      "sha256": "84f629be9deb702e119a333fc8ae85d940586f4493ebd86405a0a215f61600d7"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/SOURCE_BINDINGS.json",
+      "bytes": 5658,
+      "sha256": "b88bb50b2308c406c052ec03aa72e7aaa3e152fca89ed0cc340f9a79b286378d"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/bind_and_seal_POST.py",
+      "bytes": 6658,
+      "sha256": "e47dec1e3b16f3de02a18db895b419bf7916d7605d527eaeef6f04754fd08511"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/bind_sources.py",
+      "bytes": 3973,
+      "sha256": "1a76ccc1db90a747b66099fc1fcd6c40aa361a57b43012d85f2b0eaf141cafaf"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/local_rate_control.py",
+      "bytes": 6752,
+      "sha256": "789b249649900eb64b055967d65e045f7f03a1fecd85630a3d3ab82c3b9815ad"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/post_sources/fast_band_tail_independent/FINAL_SEAL.json",
+      "bytes": 13190,
+      "sha256": "f3922528290f8f2f8d72e0b5cd230ab9586b1400d6b2cd8e90e7d55ae36c5fff"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/post_sources/fast_band_tail_independent/POST_COMPARISON.md",
+      "bytes": 14284,
+      "sha256": "bf40d648eedecf994ad8668cbb9c647f36323940c03b43674f99061c06f2ef75"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/post_sources/fast_band_tail_rate_author/ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND.md",
+      "bytes": 6560,
+      "sha256": "a8cbb5fa4f71f4fde6644a1242ef1741799c701c2ce8835b5da42b46c5075745"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/post_sources/fast_band_tail_rate_author/AUTHOR_SEAL.json",
+      "bytes": 1600,
+      "sha256": "3a8305a55aaef7feb91ab07499b3c2c70059d1f3b7bf9a66d84fe5863f2082a4"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/reproduce_and_seal_PRE.py",
+      "bytes": 6246,
+      "sha256": "fff11f2509120d5ccee9289d4e0857971f27eee77a447f12fdd0c0d7f169078b"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "bytes": 14352,
+      "sha256": "f71515321246fd2900b1ca801eb12e816b0a7ab2a1d8f820ae75bb87e28df02a"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/fast_band_energy_independent/FINAL_SEAL.json",
+      "bytes": 15942,
+      "sha256": "5824c37555272e57a1b5b0b1214bcb5441a86dd9362f18bb157bbeec960a4ef5"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/fast_band_tail_author/AUTHOR_SEAL.json",
+      "bytes": 4781,
+      "sha256": "646d5a33082c0d44a8af5a25a22b61da9b8ca89275651f80458c2a9c7f7f02e6"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/fast_band_tail_author/EXACT_TAIL_RESULTS.json",
+      "bytes": 99901,
+      "sha256": "9761680bde05c651c01a421e80b8aeac358ae9b24da717cc7b0b05d48d186a0b"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/fast_band_tail_author/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY.md",
+      "bytes": 10779,
+      "sha256": "9d73530905763400ce31f66188c5eb9c5c1a0336e0c444bbe4f1c23c0c19fc7a"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/fast_band_tail_author/exact_tail_control.py",
+      "bytes": 6274,
+      "sha256": "7fb623f63f1d0eeef7b51c619e3f9cd8165e7810eb254f876846c79afcc468b8"
+    },
+    {
+      "path": "fast_band_tail_rate_independent/sources/fast_band_tail_independent/PRE_ROTOR_FAST_BAND_TAIL.md",
+      "bytes": 14912,
+      "sha256": "4fac5d28f39bfe747f50c2a8ca083353a92f6a58bddaf46456127d9770d0e5de"
+    },
+    {
+      "path": "reproduce_actual_energy_tail_publication.py",
+      "bytes": 3127,
+      "sha256": "a48f099fd2736c1bbc1f454111061fe89d0f5495e2902425f87b21da7f6c55b8"
+    },
+    {
+      "path": "verify_actual_energy_tail_publication.py",
+      "bytes": 1359,
+      "sha256": "d53cd616a020f9d988d67a5401e2e0585093f1edfd82b2297e176b4d7bac106f"
+    }
+  ]
+}

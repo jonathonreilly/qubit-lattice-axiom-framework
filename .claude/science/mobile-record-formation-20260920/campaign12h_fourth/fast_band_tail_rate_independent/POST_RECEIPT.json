@@ -1,0 +1,11 @@
+{
+  "completed_utc": "2026-09-24T04:41:27.688061+00:00",
+  "PRE_files_authenticated_unchanged": 27,
+  "root_rate_artifacts_authenticated": 1,
+  "root_rate_dependencies_authenticated": 4,
+  "new_release_snapshots_authenticated": 4,
+  "source_binding_sha256": "65ba8ee5a1d6be104eae355ff8661f52dcb45348cc16f0c68898ab27099181d6",
+  "scientific_activity": "Full analytic comparison of algebraic simplicity, complete derivative cancellation, quadratic eigenvalue bound, bounded projection and physical five-ball integral. No new numerics or author replay.",
+  "mathematical_corrections_required": [],
+  "unresolved_execution_failures": []
+}

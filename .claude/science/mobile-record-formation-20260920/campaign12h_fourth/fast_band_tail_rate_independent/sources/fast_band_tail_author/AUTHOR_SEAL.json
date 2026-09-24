@@ -1,0 +1,124 @@
+{
+  "sealed_utc": "2026-09-24T04:11:30.759658+00:00",
+  "private_HEAD": "65275cf2c98e4a0db6f8712804235431dbf2bc95",
+  "stage": "personal root candidate; independent PRE isolated",
+  "scope": "Strong rotor fast-semigroup decay for every normalizable N6 charge4 cube input, without operator-norm decay; sequential limit only.",
+  "sources": [
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "sha256": "f71515321246fd2900b1ca801eb12e816b0a7ab2a1d8f820ae75bb87e28df02a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_author/AUTHOR_SEAL.json",
+      "sha256": "409ed3831825ab6fd90b9fae16ac074995bacdd2af760727bf7e3a9f3111efc2"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "sha256": "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "DEVELOPMENT.md",
+      "bytes": 577,
+      "sha256": "0a1b3265b3fea3de10d22b3c289e2e757e3c5390d89098113ba16c93aa486302"
+    },
+    {
+      "path": "EXACT_TAIL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EXACT_TAIL.stdout",
+      "bytes": 469,
+      "sha256": "95d31d5839e291aad0f9573ca5f056dcf248ba63d5ebb12f7f2a6edb37e81058"
+    },
+    {
+      "path": "EXACT_TAIL_RESULTS.json",
+      "bytes": 99901,
+      "sha256": "9761680bde05c651c01a421e80b8aeac358ae9b24da717cc7b0b05d48d186a0b"
+    },
+    {
+      "path": "EXECUTION_RECEIPT.json",
+      "bytes": 428,
+      "sha256": "fdb4e1e2ff2ddd916a531fdd4783d92a150ebb2e06c190318ad24f75687dc01d"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 1772,
+      "sha256": "f751313599d6e1f73972be64c884122c6b7a83220860914e78ac3f0023b836c9"
+    },
+    {
+      "path": "ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY.md",
+      "bytes": 10779,
+      "sha256": "9d73530905763400ce31f66188c5eb9c5c1a0336e0c444bbe4f1c23c0c19fc7a"
+    },
+    {
+      "path": "SCOPE_STRESS_TEST.md",
+      "bytes": 956,
+      "sha256": "c121bbda5361e1da77c126c01af9a76652208e670ac132387fd52c98e019343c"
+    },
+    {
+      "path": "exact_tail_control.py",
+      "bytes": 6274,
+      "sha256": "7fb623f63f1d0eeef7b51c619e3f9cd8165e7810eb254f876846c79afcc468b8"
+    },
+    {
+      "path": "exploratory/FIBER_PROBE.json",
+      "bytes": 7281,
+      "sha256": "d8142bb033205bc61b675a16dd283b7be534853289aa28c08f4532d78adc4bd2"
+    },
+    {
+      "path": "exploratory/FIBER_PROBE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "exploratory/FIBER_PROBE.stdout",
+      "bytes": 7281,
+      "sha256": "d8142bb033205bc61b675a16dd283b7be534853289aa28c08f4532d78adc4bd2"
+    },
+    {
+      "path": "exploratory/PROVENANCE.md",
+      "bytes": 383,
+      "sha256": "a4ab2d4bdd8ea640824f617d3e19269588461b77c3b368fa715be7b1ee23cf97"
+    },
+    {
+      "path": "exploratory/SINGLE_EDGE_PROBE.json",
+      "bytes": 362,
+      "sha256": "13e262849bcfaa77a5926d9d1111f2554c811eb12b1ce82353b33d9f0b1c9bff"
+    },
+    {
+      "path": "exploratory/fiber_probe.py",
+      "bytes": 1792,
+      "sha256": "e58d0bbf46471c178dbc3ab366731ecbf5702570079074baf86db160a18b4e36"
+    },
+    {
+      "path": "initial_integer_power_attempt/EXACT_TAIL.stderr",
+      "bytes": 265,
+      "sha256": "5827b98babbd95052193a1f62733e10dffcedcbb8bb82d0eee2de7df3e751608"
+    },
+    {
+      "path": "initial_integer_power_attempt/EXACT_TAIL.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial_integer_power_attempt/exact_tail_control.py",
+      "bytes": 6358,
+      "sha256": "27941d3820a7028394d90116d60e993336f030444e685511f6cb999da1ffb14f"
+    }
+  ]
+}

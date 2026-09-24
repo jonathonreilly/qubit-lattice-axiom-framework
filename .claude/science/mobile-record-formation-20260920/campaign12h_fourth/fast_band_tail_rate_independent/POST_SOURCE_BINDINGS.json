@@ -1,0 +1,60 @@
+{
+  "stage": "bounded POST analytic source comparison",
+  "created_utc": "2026-09-24T04:41:27.687772+00:00",
+  "PRE_seal_sha256": "84f629be9deb702e119a333fc8ae85d940586f4493ebd86405a0a215f61600d7",
+  "PRE_files_authenticated_unchanged": 27,
+  "released_sources": [
+    {
+      "source_alias": "fast_band_tail_rate_author/ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND.md",
+      "snapshot": "post_sources/fast_band_tail_rate_author/ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND.md",
+      "sha256": "a8cbb5fa4f71f4fde6644a1242ef1741799c701c2ce8835b5da42b46c5075745",
+      "bytes": 6560,
+      "role": "released analytic rate proof, read in full"
+    },
+    {
+      "source_alias": "fast_band_tail_rate_author/AUTHOR_SEAL.json",
+      "snapshot": "post_sources/fast_band_tail_rate_author/AUTHOR_SEAL.json",
+      "sha256": "3a8305a55aaef7feb91ab07499b3c2c70059d1f3b7bf9a66d84fe5863f2082a4",
+      "bytes": 1600,
+      "role": "released rate-author seal, read in full"
+    },
+    {
+      "source_alias": "fast_band_tail_independent/POST_COMPARISON.md",
+      "snapshot": "post_sources/fast_band_tail_independent/POST_COMPARISON.md",
+      "sha256": "bf40d648eedecf994ad8668cbb9c647f36323940c03b43674f99061c06f2ef75",
+      "bytes": 14284,
+      "role": "completed full-fiber comparison report, read in full; complete source audit reused"
+    },
+    {
+      "source_alias": "fast_band_tail_independent/FINAL_SEAL.json",
+      "snapshot": "post_sources/fast_band_tail_independent/FINAL_SEAL.json",
+      "sha256": "f3922528290f8f2f8d72e0b5cd230ab9586b1400d6b2cd8e90e7d55ae36c5fff",
+      "bytes": 13190,
+      "role": "completed full-fiber comparison seal identity/scope"
+    }
+  ],
+  "root_bound_dependencies_reused_from_PRE": [
+    {
+      "source_alias": "fast_band_tail_author/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY.md",
+      "PRE_snapshot": "sources/fast_band_tail_author/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY.md",
+      "sha256": "9d73530905763400ce31f66188c5eb9c5c1a0336e0c444bbe4f1c23c0c19fc7a"
+    },
+    {
+      "source_alias": "fast_band_tail_author/AUTHOR_SEAL.json",
+      "PRE_snapshot": "sources/fast_band_tail_author/AUTHOR_SEAL.json",
+      "sha256": "646d5a33082c0d44a8af5a25a22b61da9b8ca89275651f80458c2a9c7f7f02e6"
+    },
+    {
+      "source_alias": "fast_band_tail_author/EXACT_TAIL_RESULTS.json",
+      "PRE_snapshot": "sources/fast_band_tail_author/EXACT_TAIL_RESULTS.json",
+      "sha256": "9761680bde05c651c01a421e80b8aeac358ae9b24da717cc7b0b05d48d186a0b"
+    },
+    {
+      "source_alias": "fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "PRE_snapshot": "sources/fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "sha256": "f71515321246fd2900b1ca801eb12e816b0a7ab2a1d8f820ae75bb87e28df02a"
+    }
+  ],
+  "verification_scope": "Authenticate this PRE, the complete one-note rate-author packet, all four root-bound source identities, and the newly released predecessor comparison report/seal. Does not repeat all68 predecessor evidence bindings.",
+  "portability": "Relative scientific aliases plus exact hashes are authoritative. Public projection omissions of historical instructions require explicit provenance omissions."
+}

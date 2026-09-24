@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-a-lattice-ledger-that-transports-the-rates-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j4f8b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/a-lattice-ledger-that-transports-the-rates/referee_w-macbookpro90c72-j4f8b/check.py",
+ "seed": 31011,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "672ddd6b",
+ "started_utc": "20260924T062331Z",
+ "elapsed_s": 20.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the first-order force on all 48 energy-one waves, the opposite-species pair, and that the augmented rank exceeds the coefficient rank in every direction."
+ },
+ "review": "The clocked force is e cos k_j times the centred gradient on all 48 energy-one waves. The waves (pi/2,0,0) and (pi/2,pi,0) share energy and strain response and have opposite f_2. The 48-wave system has ranks (3, 4) in every direction.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:a-lattice-ledger-that-transports-the-rates:a1/; its files are probes/work/derive/a-lattice-ledger-that-transports-the-rates/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/a-lattice-ledger-that-transports-the-rates/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a20ab687975f473500d557f65efc63433e889df8fa829e0cad7eb1d05dfcb1bd",
+ "stdout_tail": "PASS force formula: 48 waves, 3 directions, 64 sites\nPASS opposite species: k=(pi/2,0,0) and (pi/2,pi,0) share energy and strain response; f_2 flips sign\nPASS no linear solution: ranks (coefficients, augmented) j=1:(3, 4), j=2:(3, 4), j=3:(3, 4)\nPASS two senses: cos(pi n_j)=(-1)^{n_j} takes both signs among the eight zeros, so one transport cannot serve both\nHIT: confirmed - a content-independent rate transport owes one force from the energy density and the strain response, but the clocked walk's force is e cos k_j times the centred gradient. The waves (pi/2,0,0) and (pi/2,pi,0) share those densities and have opposite f_2. The 48-wave linear system has no solution.\nSUMMARY: confirmed the first-order force on all 48 energy-one waves, the opposite-species pair, and that the augmented rank exceeds the coefficient rank in every direction.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4f8b",
+  "at_utc": "20260924T062359Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "No content-independent rate transport matches the clocked force. The waves (pi/2,0,0) and (pi/2,pi,0) share densities and have opposite f_2. Ranks are (3, 4).",
+  "by": "w-macbookpro90c72-j4f8b",
+  "at_utc": "20260924T062359Z"
+ }
+}

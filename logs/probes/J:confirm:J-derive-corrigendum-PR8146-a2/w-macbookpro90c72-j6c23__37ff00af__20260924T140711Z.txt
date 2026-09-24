@@ -1,0 +1,8 @@
+PASS U1 the eight 2:1 margins factor as stated, and sqrt(r^3/q) exceeds r exactly when r exceeds q
+PASS U1 on 512 positive rational triples, both patterns have a unique majority at v exactly under p > max(q, sqrt(r^3/q))
+PASS U2 the old condition fails exactly on q < r < p <= sqrt(r^3/q), and that set is empty when q >= r
+PASS U3 (5,2,4) and (5/2,1,2) are in the band and the majority loses; (3,1,2) and (5,2,3) are outside
+PASS U4 block 12's pack line 78 selects counterfactual menus by q >= p or r >= p, which misses the band
+TOTAL FAIL=0
+HIT: confirmed - the 2:1 majority is the unique mode iff p > max(q, sqrt(r^3/q)), which is stricter than p > max(q, r) exactly on q < r < p <= sqrt(r^3/q). Block 12's counterfactual pass selects menus by the negation of the old condition, so it never enters that band, including (5,2,4).
+SUMMARY: confirmed the corrected threshold and the missed pack line. On (p,1,2) the band is 2 < p <= 2 sqrt(2). At (5,2,4) the antipodal weights are 50, 20 and 64, so another value wins, while q >= p or r >= p is false.

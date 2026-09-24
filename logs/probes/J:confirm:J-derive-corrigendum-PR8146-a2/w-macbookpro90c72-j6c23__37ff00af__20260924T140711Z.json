@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8146-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j6c23",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8146/referee_w-macbookpro90c72-j6c23/check.py",
+ "seed": 58831,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "37ff00af",
+ "started_utc": "20260924T140711Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the corrected threshold and the missed pack line. On (p,1,2) the band is 2 < p <= 2 sqrt(2). At (5,2,4) the antipodal weights are 50, 20 and 64, so another value wins, while q >= p or r >= p is false."
+ },
+ "review": "The 2:1 weights confirm that the majority is the unique mode exactly when p exceeds max(q, sqrt(r^3/q)), and block 12's pack line 78 still selects counterfactual menus by the old negation, which misses the band including (5,2,4).",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8146:a2/; its files are probes/work/derive/corrigendum-PR8146/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8146/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "7f10dbce4626d6a941f1c41a720bd20d28ff68e33ac33235b02a761b40818216",
+ "stdout_tail": "PASS U1 the eight 2:1 margins factor as stated, and sqrt(r^3/q) exceeds r exactly when r exceeds q\nPASS U1 on 512 positive rational triples, both patterns have a unique majority at v exactly under p > max(q, sqrt(r^3/q))\nPASS U2 the old condition fails exactly on q < r < p <= sqrt(r^3/q), and that set is empty when q >= r\nPASS U3 (5,2,4) and (5/2,1,2) are in the band and the majority loses; (3,1,2) and (5,2,3) are outside\nPASS U4 block 12's pack line 78 selects counterfactual menus by q >= p or r >= p, which misses the band\nTOTAL FAIL=0\nHIT: confirmed - the 2:1 majority is the unique mode iff p > max(q, sqrt(r^3/q)), which is stricter than p > max(q, r) exactly on q < r < p <= sqrt(r^3/q). Block 12's counterfactual pass selects menus by the negation of the old condition, so it never enters that band, including (5,2,4).\nSUMMARY: confirmed the corrected threshold and the missed pack line. On (p,1,2) the band is 2 < p <= 2 sqrt(2). At (5,2,4) the antipodal weights are 50, 20 and 64, so another value wins, while q >= p or r >= p is false.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j6c23",
+  "at_utc": "20260924T140720Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The corrected threshold and the missed pack line are science: the counterfactual pass cannot enter the band where the old majority condition fails.",
+  "by": "w-macbookpro90c72-j6c23",
+  "at_utc": "20260924T140720Z"
+ }
+}

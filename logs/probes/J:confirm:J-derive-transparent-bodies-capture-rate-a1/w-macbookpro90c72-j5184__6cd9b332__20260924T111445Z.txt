@@ -1,0 +1,6 @@
+PASS one record: enumeration matches the forward transport on 3 bodies x 3 step laws; the first is 7/9
+PASS faces: face moment 1/4, <|s|_1>=3/2, q1=rho*sqrt(3)/2, balls 33/123/257/515 sites and 78/174/294/486 faces
+PASS chords: chord density integrates to 1 with mean 4R/3; N*=(2*pi/3)R^2 = 50*pi/3 at R=5; Q/(N q1)=1-(9/16)tau+O(tau^2)
+PASS numbers: Q_loc rounds to 3.26, 7.28, 12.31, 20.34 (within 7% of the task values); R-scaling from 21.8 gives 218/25 at R=2; porous additive rates 12.81 and 41.19; expected local rates 11.76 and 30.18 from 1302 internal bonds
+HIT: confirmed - one streaming record is captured with the forward-walk probability (7/9 on the first body). A site's rate is rho*sqrt(3)/2, six faces times rho/(4*sqrt(3)). Lattice balls of radius 2..5 have 78, 174, 294, 486 exposed faces, so at rho=0.29 the local kinetic rates are 3.26, 7.28, 12.31, 20.34 against the task's 3.2, 7.8, 13.2, 21.8. A single diffusivity fitted at R=5 predicts 8.72 at R=2. The chord model has mean 4R/3, optical depth 2*R*phi, and N*=(2*pi/3)*R^2, with screening 1-(9/16)*tau.
+SUMMARY: confirmed the enumeration, the face identity, the ball counts, the chord expansion, and the failure of one R-scaling on the task's solid-ball numbers. The porous collisionless brackets were not re-integrated. The inflow correction was not derived.

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-transparent-bodies-capture-rate-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j5184",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/transparent-bodies-capture-rate/referee_w-macbookpro90c72-j5184/check.py",
+ "seed": 48485,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6cd9b332",
+ "started_utc": "20260924T111445Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the enumeration, the face identity, the ball counts, the chord expansion, and the failure of one R-scaling on the task's solid-ball numbers. The porous collisionless brackets were not re-integrated. The inflow correction was not derived."
+ },
+ "review": "Independent enumeration gives capture probability 7/9, the face identity q1=rho*sqrt(3)/2, ball face counts 78, 174, 294, 486, and local rates within 7% of the task's solid balls; one R-scaling fitted at R=5 predicts 8.72 at R=2. Porous collisionless brackets were not re-integrated.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:transparent-bodies-capture-rate:a1/; its files are probes/work/derive/transparent-bodies-capture-rate/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/transparent-bodies-capture-rate/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "c7b5544721be26eda04ddc30cde641aaf816c6a0ce42ad8badf51b22d0c47fcb",
+ "stdout_tail": "PASS one record: enumeration matches the forward transport on 3 bodies x 3 step laws; the first is 7/9\nPASS faces: face moment 1/4, <|s|_1>=3/2, q1=rho*sqrt(3)/2, balls 33/123/257/515 sites and 78/174/294/486 faces\nPASS chords: chord density integrates to 1 with mean 4R/3; N*=(2*pi/3)R^2 = 50*pi/3 at R=5; Q/(N q1)=1-(9/16)tau+O(tau^2)\nPASS numbers: Q_loc rounds to 3.26, 7.28, 12.31, 20.34 (within 7% of the task values); R-scaling from 21.8 gives 218/25 at R=2; porous additive rates 12.81 and 41.19; expected local rates 11.76 and 30.18 from 1302 internal bonds\nHIT: confirmed - one streaming record is captured with the forward-walk probability (7/9 on the first body). A site's rate is rho*sqrt(3)/2, six faces times rho/(4*sqrt(3)). Lattice balls of radius 2..5 have 78, 174, 294, 486 exposed faces, so at rho=0.29 the local kinetic rates are 3.26, 7.28, 12.31, 20.34 against the task's 3.2, 7.8, 13.2, 21.8. A single diffusivity fitted at R=5 predicts 8.72 at R=2. The chord model has mean 4R/3, optical depth 2*R*phi, and N*=(2*pi/3)*R^2, with screening 1-(9/16)*tau.\nSUMMARY: confirmed the enumeration, the face identity, the ball counts, the chord expansion, and the failure of one R-scaling on the task's solid-ball numbers. The porous collisionless brackets were not re-integrated. The inflow correction was not derived.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5184",
+  "at_utc": "20260924T111457Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent enumeration, face counts, and the chord expansion confirm the kinetic rate and the failure of one R-scaling. The porous collisionless brackets were not re-integrated.",
+  "by": "w-macbookpro90c72-j5184",
+  "at_utc": "20260924T111457Z"
+ }
+}

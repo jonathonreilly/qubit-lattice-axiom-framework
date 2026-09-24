@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_the_covariant_plaquette_clause_and_the_rokhsar_kivelson_point_2026_09_24.py
+runner_sha256: 4336c278ab7f0117cb206e0b7e7d88db8ecac9f1eb6f60519ed2a4619b97fa27
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.06
+status: ok
+----- stdout -----
+[PASS] orbits: eight rotations split the 16 link configurations into flippable 2, opposite 2, adjacent 4, odd 8 (with the ring: 5 covariant generators) :: stabilizer 8; orbit sizes {'adjacent': 4, 'odd': 8, 'flippable': 2, 'opposite': 2}
+[PASS] frustration-free point: the covariant plaquette generators annihilating the symmetric flippable state and all other configurations are one ray, g (P_flip - U - U^dag) >= 0 :: solution dimension 1; coefficients (ring, flippable, opposite, adjacent, odd) [1.0, 1.0, 0.0, 0.0, 0.0]; eigenvalues [0.0, 2.0]
+[PASS] ground states on the 2x2x2 torus: the summed projector is the flip-graph Laplacian, so its zero-energy states are the uniform states of the flip classes; the pure ring ground state is not uniform :: 9600 ice states, 937 flip classes (largest 864, 760 frozen states); Laplacian row sums 0e+00; largest-class spectrum starts 8.6e-16, 0.9696; pure-ring ground amplitude spread 2.738
+[PASS] unrecorded plaquettes: under Gauss compression the link field vanishes on flippable and opposite plaquettes (highest energy); the potential's minimizers on 2x2x2 are the 8 uniformly polarized ice states, with no flippable plaquette :: orbit energies (B/J = 4) {'adjacent': -2.12132, 'odd': -2.06155, 'flippable': -2.0, 'opposite': -2.0}; minimizers 8, uniform along each axis: True; flippable plaquettes in them 0
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

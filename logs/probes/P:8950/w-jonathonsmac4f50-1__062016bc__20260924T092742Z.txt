@@ -1,0 +1,10 @@
+PR #8950: physics-loop: admissibility induced-law block 109 - in three dimensions the clocked walk needs a fast-end boundary condition exactly in the sectors with small transverse momentum: |(sin k2, sin k3)| < sinh(g/2), including waves the ray picture turns back
+branch physics-loop/admissibility-induced-law-block109-the-3d-clocked-walk-needs-fast-end-conditions-in-small-transverse-sectors-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_in_three_dimensions_the_clocked_walk_needs_a_fast_end_condition_exactly_in_small_transverse_sectors_2026_09_23.py: rc=0 PASS=11 FAIL=0
+   mutation transverse_term_unscaled: expected B observed B ok
+   mutation root_modulus_forged: expected C observed C ok
+   mutation threshold_direction_flipped: expected D observed D ok
+   mutation ray_turning_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

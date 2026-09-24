@@ -1,0 +1,3 @@
+PR #8958: Bound the actual first-formation rotor energy tail from below
+branch codex/mobile-record-actual-energy-tail-20260924 (base codex/mobile-record-rotor-fast-tail-20260924)
+runners in the PR: 0

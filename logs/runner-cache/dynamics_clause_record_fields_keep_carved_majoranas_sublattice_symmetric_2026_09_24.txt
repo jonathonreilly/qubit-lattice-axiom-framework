@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py
+runner_sha256: 3038a1a3246e96a5c2eb9ba4795c4573bde3f898c0e91589ed5bd5c3e68a5a09
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.50
+status: ok
+----- stdout -----
+[PASS] sublattice symmetry: every bond and every dangling-axis field joins opposite classes, so S H(k) S = -H(k) :: both networks, all 24 gauge sectors, random record fields, random momenta: largest |S H S + H| 0e+00
+[PASS] so every weak Chern number of the lowest sector's negative bands vanishes :: planes k_a = 0, pi for each axis, both networks: largest |Chern number| 5e-16; highest negative band -0.618
+[PASS] the leaf exception: a field along a leaf's kept axis stays free-Majorana solvable and breaks the sublattice symmetry :: two-site leaf pair, 20 random field sets: spin spectrum = one parity sector of the Majorana spectrum to 6e-15; |S H S + H| up to 12.60
+[PASS] gapped networks stay non-chiral: Kitaev's pattern breaks S, the gap stays open and every weak Chern number stays 0 :: 20-site kappa 0.2: |SHS+H| 6.8, gap 0.541; 20-site kappa 1.0: |SHS+H| 33.9, gap 0.570; 20-site kappa 4.0: |SHS+H| 135.8, gap 0.342; 16-site kappa 0.2: |SHS+H| 5.5, gap 0.132; 16-site kappa 1.0: |SHS+H| 27.7, gap 0.432; 16-site kappa 4.0: |SHS+H| 110.9, gap 0.212; Chern numbers 0 on the three k = 0 planes throughout
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

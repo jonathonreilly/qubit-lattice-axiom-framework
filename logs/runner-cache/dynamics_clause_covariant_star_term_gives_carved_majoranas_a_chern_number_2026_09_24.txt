@@ -3,7 +3,7 @@ runner: scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_che
 runner_sha256: 53f66220095e6add62afb3f305d5aa70b5c424092f22c4c2cdb4679ebb9c576c
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 130.41
+elapsed_sec: 121.49
 status: ok
 ----- stdout -----
 [PASS] the carving: a 19-site relaxed three-direction network whose zero-field records are realizable :: connected True, winding rank 3, bonds 22; every record touches at most 2 axes; largest field on an unrecorded site 0

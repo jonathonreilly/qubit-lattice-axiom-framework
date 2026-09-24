@@ -283,6 +283,11 @@ modes then crowd the node's energy. ∎
   - A coarse survey of the 16 realizable networks of open PR 9097 found
     candidates on 5. Refined checks of several showed gaps that vanish
     somewhere, with Chern numbers differing between planes.
+  - All 16 networks have 12 to 14 dangling axes per cell, so their zero
+    modes are not special to this carving. Their free covariant subspaces
+    have dimensions 29 to 67, with 0 to 7 active directions. A short random
+    search, 36 terms per network, found no gapped chiral phase. It also
+    missed this carving's, so it is inconclusive.
 - **Which dangling fields keep a net chirality (small-field map).**
   - For small fields, the bands grown from the zero modes follow the
     chiral bands' inverse at zero energy, `−V_S† H_c⁻¹ V_S`, where `S` is the

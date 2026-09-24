@@ -1,0 +1,13 @@
+{
+  "saved_rotor_moments_compared": 252,
+  "spin_paths_compared": 48,
+  "boundary_instrument_cases": 10,
+  "symbolic_spin_sums": {
+    "rate": "8*(6*C**2 - 4*C*n**2 + n**4)/C**2",
+    "post_D_weighted": "-16*n**2*(-6*C + 2*n**2 + 1)/C",
+    "D_drift_over_kappa": "-16*n**2*(6*C**2 - 6*C*n**2 + C + 2*n**4)/C**2",
+    "post_E2_weighted": "16*(12*C**2*n**2 + 6*C**2 - 8*C*n**4 - 8*C*n**2 + 2*n**6 + 3*n**4)/C**2",
+    "E2_drift_over_kappa": "16*(6*C**2 - 8*C*n**2 + 3*n**4)/C**2"
+  },
+  "all_checks_completed": true
+}

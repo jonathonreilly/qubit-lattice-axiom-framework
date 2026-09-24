@@ -1,0 +1,56 @@
+{
+  "recorded_utc": "2026-09-24T00:45:41.322033+00:00",
+  "observed_HEAD": "723dacc0eee0ed9897f5c9445be72cdfbc71389d",
+  "PRE_seal_sha256": "3bf5577d8caf04c9f446f46dca570d43565ab4e58f775984ce479233ac9089a4",
+  "all_20_PRE_bound_files_unchanged": true,
+  "author_source_hashes_still_match": true,
+  "comparison_control_runs": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/comparison_full_h4_control.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2",
+      "observed_exit_code": 0,
+      "receipt_basis": "successful exec/write_stdin tool completion observed",
+      "script_sha256": "e9c6fa05166b7f6b7cfb9b152f5541bd0e2577dff64b72b4889d3355ebcda097",
+      "full_log": "COMPARISON_FULL_H4.log",
+      "log_sha256": "308da8a9530a15a32a9a099d86b6e78dd4f98694edcea8fd1f2927227867eaed"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/comparison_authenticate_and_reproduce.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2",
+      "observed_exit_code": 0,
+      "receipt_basis": "successful exec/write_stdin tool completion observed",
+      "script_sha256": "2a1c77c6d7d8c3a6ac1aad8fd78827b084727cb3237bcaf519926c8db65d2ee9",
+      "full_log": "COMPARISON_REPRODUCTION.log",
+      "log_sha256": "5c831aaababc7499a9922939870cf173012430585abcf677e8beb4405f226c6d"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/comparison_exact_claims.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2",
+      "observed_exit_code": 0,
+      "receipt_basis": "successful exec/write_stdin tool completion observed",
+      "script_sha256": "412a35b398d1d17625bcf6a6edbbf45f8546ee28956fc8d3c0130c9c749dadd9",
+      "full_log": "COMPARISON_EXACT_CLAIMS.log",
+      "log_sha256": "8d175e16ba555680c6a1d45e9072e74d49d5603481850d73e30010a0855ff1d1"
+    }
+  ],
+  "failed_comparison_executions": [],
+  "scientific_discrepancies": [],
+  "deliberate_mutation": "Diagonal-only H4 replacement has variance zero instead of 392 and is rejected.",
+  "disposition": "Scoped conditional calculation supported; no landing/audit verdict.",
+  "excluded": [
+    "microscopic energy-moment transfer",
+    "autonomous reservoir or heat identification",
+    "all-time heating",
+    "native selection",
+    "empirical identification"
+  ]
+}

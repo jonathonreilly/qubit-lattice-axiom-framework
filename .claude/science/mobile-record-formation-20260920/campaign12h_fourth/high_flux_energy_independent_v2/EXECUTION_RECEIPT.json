@@ -1,0 +1,41 @@
+{
+  "stage": "PRE before any comparison with withheld author or prior independent attempt",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "runs": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/independent_exact_control.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2",
+      "started_utc": "2026-09-24T00:34:16.859604+00:00",
+      "finished_utc": "2026-09-24T00:34:18.169542+00:00",
+      "elapsed_seconds": 1.309851884841919,
+      "exit_code": 0,
+      "script_sha256": "8b9c819019b47ad51b9dc0a60c2ae953e693b8d91774c9b78a58cc01252b441c",
+      "full_log": "exact_control.log",
+      "log_sha256": "bbf2aa5c8c4bc2162e81088eb2cc125b19ffeaa02d8d6e3e5d7e3f59e4be38ea"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/direct_matrix_action_control.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2",
+      "started_utc": "2026-09-24T00:34:18.170087+00:00",
+      "finished_utc": "2026-09-24T00:34:19.390508+00:00",
+      "elapsed_seconds": 1.2204418182373047,
+      "exit_code": 0,
+      "script_sha256": "3523e5e79b181b82502bd71049daf99bc5dcf9eb1dce4facccf79b11c0600a6b",
+      "full_log": "direct_action_control.log",
+      "log_sha256": "f7628839b79d7cf1f04558ab953e54a7e025c9f2cc3fa85e2983b90e9674915d"
+    }
+  ],
+  "current_sources_match_bound_snapshots": true,
+  "science_status": "conditional exact reconstruction; no audit or retained verdict",
+  "failure_history": [
+    "INITIAL_EXECUTION_FAILURE.log: first tool-mediated file creation did not produce script; execution reported missing file."
+  ],
+  "external_actions": [],
+  "git_mutations": []
+}

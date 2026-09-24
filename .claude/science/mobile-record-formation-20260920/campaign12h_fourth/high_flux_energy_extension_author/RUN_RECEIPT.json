@@ -1,0 +1,26 @@
+[
+  {
+    "script": "full_rotor_energy_control.py",
+    "started_utc": "2026-09-24T00:28:19.702203+00:00",
+    "finished_utc": "2026-09-24T00:28:20.163752+00:00",
+    "returncode": 0,
+    "matches_external_scientific_result": true,
+    "result": "FULL_ROTOR_ENERGY_RESULTS.json"
+  },
+  {
+    "script": "symbolic_spin_energy_balance.py",
+    "started_utc": "2026-09-24T00:28:20.163765+00:00",
+    "finished_utc": "2026-09-24T00:28:20.667515+00:00",
+    "returncode": 0,
+    "matches_external_scientific_result": true,
+    "result": "SYMBOLIC_SPIN_ENERGY_BALANCE_RESULTS.json"
+  },
+  {
+    "script": "finite_spin_path_comparison.py",
+    "started_utc": "2026-09-24T00:28:20.667529+00:00",
+    "finished_utc": "2026-09-24T00:28:20.846261+00:00",
+    "returncode": 0,
+    "matches_external_scientific_result": true,
+    "result": "FINITE_SPIN_PATH_COMPARISON_RESULTS.json"
+  }
+]

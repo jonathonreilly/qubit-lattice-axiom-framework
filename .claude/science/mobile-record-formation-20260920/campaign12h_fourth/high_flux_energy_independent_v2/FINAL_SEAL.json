@@ -1,0 +1,367 @@
+{
+  "stage": "FINAL source comparison, no audit verdict",
+  "sealed_utc": "2026-09-24T00:45:41.342234+00:00",
+  "PRE_seal_sha256": "3bf5577d8caf04c9f446f46dca570d43565ab4e58f775984ce479233ac9089a4",
+  "PRE_bound_bytes_unchanged": true,
+  "author_seal_sha256": {
+    "initial": "92272978616462937a76398eb2a1a1af03c08de92c59abc73f5de3ed84496d8f",
+    "extension": "2163902fc70b3077356c0097e61746f617ede94a5283ccb961270d48d4b091ea"
+  },
+  "scope": "The two pinned author notes, scientific implementations and transitive path builder; exact resolved H4 second moment reconstructed with own frozen PRE implementation.",
+  "supported": "Conditional compensated-cube rotor and effective finite-spin claims specified in COMPARISON.md.",
+  "excluded_claims": [
+    "microscopic energy-moment transfer",
+    "autonomous reservoir or heat identification",
+    "all-time heating",
+    "native selection",
+    "empirical identification"
+  ],
+  "failures": [],
+  "files": [
+    {
+      "path": "COMPARISON.md",
+      "bytes": 15225,
+      "sha256": "df7c7b17969f20411a2551cc0e53f6d515904c4eb389b52740d6ed0eaf06da9e"
+    },
+    {
+      "path": "COMPARISON_EXACT_CLAIMS.log",
+      "bytes": 516,
+      "sha256": "8d175e16ba555680c6a1d45e9072e74d49d5603481850d73e30010a0855ff1d1"
+    },
+    {
+      "path": "COMPARISON_EXACT_CLAIMS_RESULTS.json",
+      "bytes": 3419,
+      "sha256": "91abfc47cb873d75a25d43e4028855ecaff19f1275b1bb14d5d63972c88b429b"
+    },
+    {
+      "path": "COMPARISON_EXECUTION_RECEIPT.json",
+      "bytes": 3261,
+      "sha256": "fbe274bc560c42fd5b13fb13be5dac44d234092a585451b0eb45a485fdeba22a"
+    },
+    {
+      "path": "COMPARISON_FULL_H4.log",
+      "bytes": 1910,
+      "sha256": "308da8a9530a15a32a9a099d86b6e78dd4f98694edcea8fd1f2927227867eaed"
+    },
+    {
+      "path": "COMPARISON_H4_CERTIFICATE_RESULT.json",
+      "bytes": 579,
+      "sha256": "eea3dfa4de186cfa9918a4b122e6da9fcc1ccc99ca0da7dbc5a5d8756c0ed422"
+    },
+    {
+      "path": "COMPARISON_OWN_H4_MOMENTS.json",
+      "bytes": 21720,
+      "sha256": "df5b9b2886c167f058500856fa9efa872db22b100bdc57aed53c8fa02b00e232"
+    },
+    {
+      "path": "COMPARISON_RECEIPT.json",
+      "bytes": 10625,
+      "sha256": "8fe4f02f64ebb51a5e247b843c73a4c07f86cd1a660554195de311b86b28082f"
+    },
+    {
+      "path": "COMPARISON_REPRODUCED_ALL_MARK_HIGH_FLUX_RESULTS.json",
+      "bytes": 12104,
+      "sha256": "c5f5d8705f65b289234619eff07743cb5533bcef8f58e9f54f4d30bae25214d0"
+    },
+    {
+      "path": "COMPARISON_REPRODUCED_CROSS_CHECK_RESULTS.json",
+      "bytes": 1260,
+      "sha256": "5d9fa8a5f32847a4c8c02b25ae4ab45c0c829aa078b31cf045538c89b7df1747"
+    },
+    {
+      "path": "COMPARISON_REPRODUCED_CUBE_HIGH_FLUX_RESULTS.json",
+      "bytes": 8189,
+      "sha256": "f4e16c3c89c09e45d63a4fffd34861f3a97b96cd4f5eb253b67413f6791335ae"
+    },
+    {
+      "path": "COMPARISON_REPRODUCED_FINITE_SPIN_PATH_COMPARISON_RESULTS.json",
+      "bytes": 34283,
+      "sha256": "f002cc949a718f9f3ce5b7aa9c2e0fad22d83c44beba53752679e980a127f3cd"
+    },
+    {
+      "path": "COMPARISON_REPRODUCED_FULL_ROTOR_ENERGY_RESULTS.json",
+      "bytes": 17419,
+      "sha256": "21155b05cc6d8d890225f9263dd51c73ca288fdaa29f5e68fb103ed19ee145c3"
+    },
+    {
+      "path": "COMPARISON_REPRODUCED_SYMBOLIC_SPIN_ENERGY_BALANCE_RESULTS.json",
+      "bytes": 23286,
+      "sha256": "b55c92f66b56fb4185bcb30458aeb8b3191ad7e82f8149325caac35f228b9144"
+    },
+    {
+      "path": "COMPARISON_REPRODUCTION.log",
+      "bytes": 177,
+      "sha256": "5c831aaababc7499a9922939870cf173012430585abcf677e8beb4405f226c6d"
+    },
+    {
+      "path": "COMPARISON_all_mark_high_flux_check.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COMPARISON_cross_check_existing_independent_paths.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COMPARISON_cube_high_flux_birth.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COMPARISON_finite_spin_path_comparison.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COMPARISON_full_rotor_energy_control.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COMPARISON_symbolic_spin_energy_balance.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "DIRECT_ACTION_RESULTS.json",
+      "bytes": 3584,
+      "sha256": "6208a06ec773a93df93dd57ad747bc22ce7a45d8d2c8ced24b9bc2fa736b6d82"
+    },
+    {
+      "path": "EXACT_RESULTS.json",
+      "bytes": 22823,
+      "sha256": "ebb2889270bd044aa4373e0a941a2ed602993fa86eb988ab1bf17f5260c0f5d8"
+    },
+    {
+      "path": "EXECUTION_RECEIPT.json",
+      "bytes": 2312,
+      "sha256": "745f8161a573efc9626830f9cd41f88982eda5451c9e826bfb4c97a556e02a55"
+    },
+    {
+      "path": "INITIAL_EXECUTION_FAILURE.log",
+      "bytes": 376,
+      "sha256": "2b997444d4a427cd38cd1a993c529eb3bdbddd574a6aa598f3ec0afce001a4fa"
+    },
+    {
+      "path": "PRE_RECONSTRUCTION.md",
+      "bytes": 20627,
+      "sha256": "9513f5495602f54e89d6ad8d352243551eabfb34948b3143a98a61ee967483fa"
+    },
+    {
+      "path": "PRE_SEAL.json",
+      "bytes": 3441,
+      "sha256": "3bf5577d8caf04c9f446f46dca570d43565ab4e58f775984ce479233ac9089a4"
+    },
+    {
+      "path": "PRE_SEAL.sha256",
+      "bytes": 80,
+      "sha256": "bc0ed5e446b697aa08471e1ce73fa67563c56ac01183ed1ca6b45b1ec77b368b"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 3881,
+      "sha256": "ae2b74f195f875603eab3c0f778fe8913822ae1735f314b6a525cf465d25ee59"
+    },
+    {
+      "path": "comparison_authenticate_and_reproduce.py",
+      "bytes": 4615,
+      "sha256": "2a1c77c6d7d8c3a6ac1aad8fd78827b084727cb3237bcaf519926c8db65d2ee9"
+    },
+    {
+      "path": "comparison_exact_claims.py",
+      "bytes": 5817,
+      "sha256": "412a35b398d1d17625bcf6a6edbbf45f8546ee28956fc8d3c0130c9c749dadd9"
+    },
+    {
+      "path": "comparison_full_h4_control.py",
+      "bytes": 4938,
+      "sha256": "e9c6fa05166b7f6b7cfb9b152f5541bd0e2577dff64b72b4889d3355ebcda097"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_author/ALL_MARK_HIGH_FLUX_RESULTS.json",
+      "bytes": 12104,
+      "sha256": "c5f5d8705f65b289234619eff07743cb5533bcef8f58e9f54f4d30bae25214d0"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_author/AUTHOR_SEAL.json",
+      "bytes": 2264,
+      "sha256": "92272978616462937a76398eb2a1a1af03c08de92c59abc73f5de3ed84496d8f"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_author/CROSS_CHECK_RESULTS.json",
+      "bytes": 1260,
+      "sha256": "5d9fa8a5f32847a4c8c02b25ae4ab45c0c829aa078b31cf045538c89b7df1747"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_author/CUBE_HIGH_FLUX_RESULTS.json",
+      "bytes": 8189,
+      "sha256": "f4e16c3c89c09e45d63a4fffd34861f3a97b96cd4f5eb253b67413f6791335ae"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_author/HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD.md",
+      "bytes": 8061,
+      "sha256": "a355623459a0bea115b0874ab03a1f691f55a71fa67785b4f04f68513a3ad472"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_author/all_mark_high_flux_check.py",
+      "bytes": 2129,
+      "sha256": "b0a369ee7d029a14244027bd8e0cb16c4853091443cae7a7f7ed985d2d998d49"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_author/cross_check_existing_independent_paths.py",
+      "bytes": 1863,
+      "sha256": "f6a92f2416b42cd3df74fd2059885ae94065c5ba54d8a0ba43b64cd9c5260136"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_author/cube_high_flux_birth.py",
+      "bytes": 2878,
+      "sha256": "c1a13a2c954095fe1fb76272d7f13abe498220ab1e95d167cc150e136e031a9c"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/AUTHOR_SEAL.json",
+      "bytes": 2722,
+      "sha256": "2163902fc70b3077356c0097e61746f617ede94a5283ccb961270d48d4b091ea"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/FINITE_SPIN_PATH_COMPARISON_RESULTS.json",
+      "bytes": 34283,
+      "sha256": "f002cc949a718f9f3ce5b7aa9c2e0fad22d83c44beba53752679e980a127f3cd"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/FULL_ROTOR_ENERGY_RESULTS.json",
+      "bytes": 17419,
+      "sha256": "21155b05cc6d8d890225f9263dd51c73ca288fdaa29f5e68fb103ed19ee145c3"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md",
+      "bytes": 9237,
+      "sha256": "de24a51431ba27f10d178286da2c95cc69081b06a9058d225d4840e3225388c0"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/RUN_RECEIPT.json",
+      "bytes": 875,
+      "sha256": "9313876663d92b7ec2b8a729f5a0a69b5963790e2cdd51ed036c9fef118b331c"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/SELECTED_H4_IMAGE_CERTIFICATE.json",
+      "bytes": 15359,
+      "sha256": "e2266dbcb0de8faddfcd265a6e7c3c995bb66cc9d9ce17f84826f360af676b39"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/SYMBOLIC_SPIN_ENERGY_BALANCE_RESULTS.json",
+      "bytes": 23286,
+      "sha256": "b55c92f66b56fb4185bcb30458aeb8b3191ad7e82f8149325caac35f228b9144"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/finite_spin_path_comparison.py",
+      "bytes": 4067,
+      "sha256": "c5e7d9dbc3d5d77da400077c41820e366af4b9bac19145e409e305d546b225bc"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/finite_spin_path_comparison.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/full_rotor_energy_control.py",
+      "bytes": 6297,
+      "sha256": "be79312d8557f025e3505429f768504e723dc811cd5d320192043f2b098cbdf4"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/full_rotor_energy_control.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/symbolic_spin_energy_balance.py",
+      "bytes": 3197,
+      "sha256": "f3f0d3f48c63c2190edb364cbc65682183b065b0a327a269594ee9a48b5b9a0c"
+    },
+    {
+      "path": "comparison_sources/high_flux_energy_extension_author/symbolic_spin_energy_balance.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "comparison_sources/local_compensation_independent/model.py",
+      "bytes": 4258,
+      "sha256": "686529f4cd3dd5d73e3373f2604e56615c83228b5813a3848f2a194db00ae128"
+    },
+    {
+      "path": "direct_action_control.log",
+      "bytes": 2455,
+      "sha256": "f7628839b79d7cf1f04558ab953e54a7e025c9f2cc3fa85e2983b90e9674915d"
+    },
+    {
+      "path": "direct_matrix_action_control.py",
+      "bytes": 5800,
+      "sha256": "3523e5e79b181b82502bd71049daf99bc5dcf9eb1dce4facccf79b11c0600a6b"
+    },
+    {
+      "path": "exact_control.log",
+      "bytes": 4115,
+      "sha256": "bbf2aa5c8c4bc2162e81088eb2cc125b19ffeaa02d8d6e3e5d7e3f59e4be38ea"
+    },
+    {
+      "path": "finalize_comparison.py",
+      "bytes": 3699,
+      "sha256": "8cff9d736da2085fa38cc7e2d2c79dc547abb7cb1462a9cd986d360afa1f1eb4"
+    },
+    {
+      "path": "independent_exact_control.py",
+      "bytes": 9914,
+      "sha256": "8b9c819019b47ad51b9dc0a60c2ae953e693b8d91774c9b78a58cc01252b441c"
+    },
+    {
+      "path": "reproduce_and_seal.py",
+      "bytes": 2427,
+      "sha256": "9c3d2c8ef39c800b5e7938bbc49b73c92fac800d06df62744a25a6f8cd2a322f"
+    },
+    {
+      "path": "seal_sources.py",
+      "bytes": 2923,
+      "sha256": "50cb7a74475ed2e6a598e6c81e5990d18eabc748bcd2eaa9dfcd1f6ba876fc55"
+    },
+    {
+      "path": "sources/planning_agents.md",
+      "bytes": 10164,
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7"
+    },
+    {
+      "path": "sources/repository_agent_pointer.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "sources/science_fourth_order_parent.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "sources/science_general_target.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "sources/science_general_target_correction.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "sources/science_local_compensation.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "sources/science_operator_definitions.md",
+      "bytes": 16828,
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    },
+    {
+      "path": "sources/science_workflow.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    }
+  ]
+}

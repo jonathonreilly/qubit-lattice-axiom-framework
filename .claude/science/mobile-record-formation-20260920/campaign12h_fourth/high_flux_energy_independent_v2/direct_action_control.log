@@ -1,0 +1,14 @@
+{'n': 0, 'S': None, 'instrument': 'resolved', 'rate': 48, 'D_drift': 0, 'H4_drift': 3216, 'input_H4': -84, 'loss_action_is_scalar': True, 'selected': {'norm': 2, 'D': 0, 'H4': -40}}
+{'n': 0, 'S': None, 'instrument': 'coherent', 'rate': 48, 'D_drift': 0, 'H4_drift': 3216, 'input_H4': -84, 'loss_action_is_scalar': True, 'selected': {'norm': 4, 'D': 0, 'H4': -68}}
+{'n': 3, 'S': None, 'instrument': 'resolved', 'rate': 48, 'D_drift': -864, 'H4_drift': 3216, 'input_H4': -84, 'loss_action_is_scalar': True, 'selected': {'norm': 2, 'D': 18, 'H4': -40}}
+{'n': 3, 'S': None, 'instrument': 'coherent', 'rate': 48, 'D_drift': -864, 'H4_drift': 3216, 'input_H4': -84, 'loss_action_is_scalar': True, 'selected': {'norm': 4, 'D': 30, 'H4': -68}}
+{'n': 0, 'S': 2, 'instrument': 'resolved', 'rate': 48, 'D_drift': 0, 'H4_drift': 3216, 'input_H4': -84, 'loss_action_is_scalar': True, 'selected': {'norm': 2, 'D': 0, 'H4': -40}}
+{'n': 0, 'S': 2, 'instrument': 'coherent', 'rate': 48, 'D_drift': 0, 'H4_drift': 3216, 'input_H4': -84, 'loss_action_is_scalar': True, 'selected': {'norm': 4, 'D': 0, 'H4': -68}}
+{'n': 1, 'S': 2, 'instrument': 'resolved', 'rate': 386/9, 'D_drift': -752/9, 'H4_drift': 226730/81, 'input_H4': -742/9, 'loss_action_is_scalar': True, 'selected': {'norm': 10/9, 'D': 4/3, 'H4': -566/27}}
+{'n': 1, 'S': 2, 'instrument': 'coherent', 'rate': 386/9, 'D_drift': -752/9, 'H4_drift': 226730/81, 'input_H4': -742/9, 'loss_action_is_scalar': True, 'selected': {'norm': 25/9, 'D': 4/3, 'H4': -1196/27}}
+{'n': -2, 'S': 3, 'instrument': 'resolved', 'rate': 344/9, 'D_drift': -2480/9, 'H4_drift': 195062/81, 'input_H4': -721/9, 'loss_action_is_scalar': True, 'selected': {'norm': 55/36, 'D': 20/3, 'H4': -1655/54}}
+{'n': -2, 'S': 3, 'instrument': 'coherent', 'rate': 344/9, 'D_drift': -2480/9, 'H4_drift': 195062/81, 'input_H4': -721/9, 'loss_action_is_scalar': True, 'selected': {'norm': 22/9, 'D': 38/3, 'H4': -1174/27}}
+{'n': 2, 'S': 3, 'instrument': 'resolved', 'rate': 344/9, 'D_drift': -2480/9, 'H4_drift': 195062/81, 'input_H4': -721/9, 'loss_action_is_scalar': True, 'selected': {'norm': 3/4, 'D': 4, 'H4': -245/18}}
+{'n': 2, 'S': 3, 'instrument': 'coherent', 'rate': 344/9, 'D_drift': -2480/9, 'H4_drift': 195062/81, 'input_H4': -721/9, 'loss_action_is_scalar': True, 'selected': {'norm': 2, 'D': 22/3, 'H4': -845/27}}
+interference mutation {'full_selected_H4_gain': '-40', 'dephased_wrong_gain': '-28', 'detected': True}
+elapsed 0.8923048973083496

@@ -1,0 +1,26 @@
+{
+  "sealed_utc": "2026-09-24T00:28:20.846588+00:00",
+  "standing": "root author result; new independent reconstruction not yet compared",
+  "artifacts_sha256": {
+    "high_flux_energy_extension_author/FINITE_SPIN_PATH_COMPARISON_RESULTS.json": "f002cc949a718f9f3ce5b7aa9c2e0fad22d83c44beba53752679e980a127f3cd",
+    "high_flux_energy_extension_author/FULL_ROTOR_ENERGY_RESULTS.json": "21155b05cc6d8d890225f9263dd51c73ca288fdaa29f5e68fb103ed19ee145c3",
+    "high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md": "de24a51431ba27f10d178286da2c95cc69081b06a9058d225d4840e3225388c0",
+    "high_flux_energy_extension_author/RUN_RECEIPT.json": "9313876663d92b7ec2b8a729f5a0a69b5963790e2cdd51ed036c9fef118b331c",
+    "high_flux_energy_extension_author/SELECTED_H4_IMAGE_CERTIFICATE.json": "e2266dbcb0de8faddfcd265a6e7c3c995bb66cc9d9ce17f84826f360af676b39",
+    "high_flux_energy_extension_author/SYMBOLIC_SPIN_ENERGY_BALANCE_RESULTS.json": "b55c92f66b56fb4185bcb30458aeb8b3191ad7e82f8149325caac35f228b9144",
+    "high_flux_energy_extension_author/finite_spin_path_comparison.py": "c5e7d9dbc3d5d77da400077c41820e366af4b9bac19145e409e305d546b225bc",
+    "high_flux_energy_extension_author/finite_spin_path_comparison.py.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "high_flux_energy_extension_author/full_rotor_energy_control.py": "be79312d8557f025e3505429f768504e723dc811cd5d320192043f2b098cbdf4",
+    "high_flux_energy_extension_author/full_rotor_energy_control.py.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "high_flux_energy_extension_author/symbolic_spin_energy_balance.py": "f3f0d3f48c63c2190edb364cbc65682183b065b0a327a269594ee9a48b5b9a0c",
+    "high_flux_energy_extension_author/symbolic_spin_energy_balance.py.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "sources_sha256": {
+    "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+    "local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0",
+    "local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9",
+    "high_flux_energy_author/HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD.md": "a355623459a0bea115b0874ab03a1f691f55a71fa67785b4f04f68513a3ad472",
+    "high_flux_energy_author/cube_high_flux_birth.py": "c1a13a2c954095fe1fb76272d7f13abe498220ab1e95d167cc150e136e031a9c",
+    "local_compensation_independent/model.py": "686529f4cd3dd5d73e3373f2604e56615c83228b5813a3848f2a194db00ae128"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "compared_utc": "2026-09-24T00:39:41.132400+00:00",
+  "PRE_seal_sha256": "3bf5577d8caf04c9f446f46dca570d43565ab4e58f775984ce479233ac9089a4",
+  "all_PRE_bound_bytes_unchanged": true,
+  "all_author_seal_bindings_authenticated": {
+    "high_flux_energy_author/HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD.md": "a355623459a0bea115b0874ab03a1f691f55a71fa67785b4f04f68513a3ad472",
+    "high_flux_energy_author/cube_high_flux_birth.py": "c1a13a2c954095fe1fb76272d7f13abe498220ab1e95d167cc150e136e031a9c",
+    "high_flux_energy_author/CUBE_HIGH_FLUX_RESULTS.json": "f4e16c3c89c09e45d63a4fffd34861f3a97b96cd4f5eb253b67413f6791335ae",
+    "high_flux_energy_author/all_mark_high_flux_check.py": "b0a369ee7d029a14244027bd8e0cb16c4853091443cae7a7f7ed985d2d998d49",
+    "high_flux_energy_author/ALL_MARK_HIGH_FLUX_RESULTS.json": "c5f5d8705f65b289234619eff07743cb5533bcef8f58e9f54f4d30bae25214d0",
+    "high_flux_energy_author/cross_check_existing_independent_paths.py": "f6a92f2416b42cd3df74fd2059885ae94065c5ba54d8a0ba43b64cd9c5260136",
+    "high_flux_energy_author/CROSS_CHECK_RESULTS.json": "5d9fa8a5f32847a4c8c02b25ae4ab45c0c829aa078b31cf045538c89b7df1747",
+    "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+    "local_compensation_author/UNGATED_SUM_OF_SQUARES_AND_TUNING.md": "d67499010fcd7659b7e245bb05c33f64069db1691f57446477506cfcad11fa16",
+    "local_compensation_independent/model.py": "686529f4cd3dd5d73e3373f2604e56615c83228b5813a3848f2a194db00ae128",
+    "local_compensation_review/SYNTHESIS.md": "4f034f1460ee92aee5d6a45dfdf892bbeca5eb90cd4184c1d71e8c41a74e6a4c",
+    "post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md": "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5",
+    "cube_point_spectrum_author/CUBE_SIX_RECORD_ROTOR_POINT_SPECTRUM.md": "a5e50bdc9df668219f7c375788a172f8060beacb7cb20f3ebf990e66c710c838",
+    "high_flux_energy_author/AUTHOR_SEAL.json": "92272978616462937a76398eb2a1a1af03c08de92c59abc73f5de3ed84496d8f",
+    "high_flux_energy_extension_author/FINITE_SPIN_PATH_COMPARISON_RESULTS.json": "f002cc949a718f9f3ce5b7aa9c2e0fad22d83c44beba53752679e980a127f3cd",
+    "high_flux_energy_extension_author/FULL_ROTOR_ENERGY_RESULTS.json": "21155b05cc6d8d890225f9263dd51c73ca288fdaa29f5e68fb103ed19ee145c3",
+    "high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md": "de24a51431ba27f10d178286da2c95cc69081b06a9058d225d4840e3225388c0",
+    "high_flux_energy_extension_author/RUN_RECEIPT.json": "9313876663d92b7ec2b8a729f5a0a69b5963790e2cdd51ed036c9fef118b331c",
+    "high_flux_energy_extension_author/SELECTED_H4_IMAGE_CERTIFICATE.json": "e2266dbcb0de8faddfcd265a6e7c3c995bb66cc9d9ce17f84826f360af676b39",
+    "high_flux_energy_extension_author/SYMBOLIC_SPIN_ENERGY_BALANCE_RESULTS.json": "b55c92f66b56fb4185bcb30458aeb8b3191ad7e82f8149325caac35f228b9144",
+    "high_flux_energy_extension_author/finite_spin_path_comparison.py": "c5e7d9dbc3d5d77da400077c41820e366af4b9bac19145e409e305d546b225bc",
+    "high_flux_energy_extension_author/finite_spin_path_comparison.py.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "high_flux_energy_extension_author/full_rotor_energy_control.py": "be79312d8557f025e3505429f768504e723dc811cd5d320192043f2b098cbdf4",
+    "high_flux_energy_extension_author/full_rotor_energy_control.py.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "high_flux_energy_extension_author/symbolic_spin_energy_balance.py": "f3f0d3f48c63c2190edb364cbc65682183b065b0a327a269594ee9a48b5b9a0c",
+    "high_flux_energy_extension_author/symbolic_spin_energy_balance.py.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0",
+    "local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9",
+    "high_flux_energy_extension_author/AUTHOR_SEAL.json": "2163902fc70b3077356c0097e61746f617ede94a5283ccb961270d48d4b091ea"
+  },
+  "full_scientific_note_and_script_reads": [
+    "high_flux_energy_author/HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD.md",
+    "high_flux_energy_author/cube_high_flux_birth.py",
+    "high_flux_energy_author/all_mark_high_flux_check.py",
+    "high_flux_energy_author/cross_check_existing_independent_paths.py",
+    "local_compensation_independent/model.py",
+    "high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md",
+    "high_flux_energy_extension_author/finite_spin_path_comparison.py",
+    "high_flux_energy_extension_author/full_rotor_energy_control.py",
+    "high_flux_energy_extension_author/symbolic_spin_energy_balance.py"
+  ],
+  "authority_boundary": "Conditional source comparison and calculation only, no landing or audit verdict",
+  "other_seal_bound_historical_context_not_mathematically_reviewed": [
+    "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+    "local_compensation_author/UNGATED_SUM_OF_SQUARES_AND_TUNING.md",
+    "local_compensation_review/SYNTHESIS.md",
+    "post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md",
+    "cube_point_spectrum_author/CUBE_SIX_RECORD_ROTOR_POINT_SPECTRUM.md",
+    "local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+    "local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md"
+  ],
+  "runs": [
+    {
+      "script": "high_flux_energy_author/cube_high_flux_birth.py",
+      "script_sha256": "c1a13a2c954095fe1fb76272d7f13abe498220ab1e95d167cc150e136e031a9c",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_author/cube_high_flux_birth.py"
+      ],
+      "started_utc": "2026-09-24T00:39:39.780187+00:00",
+      "completed_utc": "2026-09-24T00:39:39.812450+00:00",
+      "exit_code": 0,
+      "output": "COMPARISON_REPRODUCED_CUBE_HIGH_FLUX_RESULTS.json",
+      "stderr": "COMPARISON_cube_high_flux_birth.py.stderr",
+      "matches_sealed_JSON_semantically": true,
+      "matches_sealed_bytes": true
+    },
+    {
+      "script": "high_flux_energy_author/all_mark_high_flux_check.py",
+      "script_sha256": "b0a369ee7d029a14244027bd8e0cb16c4853091443cae7a7f7ed985d2d998d49",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_author/all_mark_high_flux_check.py"
+      ],
+      "started_utc": "2026-09-24T00:39:39.812502+00:00",
+      "completed_utc": "2026-09-24T00:39:39.846270+00:00",
+      "exit_code": 0,
+      "output": "COMPARISON_REPRODUCED_ALL_MARK_HIGH_FLUX_RESULTS.json",
+      "stderr": "COMPARISON_all_mark_high_flux_check.py.stderr",
+      "matches_sealed_JSON_semantically": true,
+      "matches_sealed_bytes": true
+    },
+    {
+      "script": "high_flux_energy_author/cross_check_existing_independent_paths.py",
+      "script_sha256": "f6a92f2416b42cd3df74fd2059885ae94065c5ba54d8a0ba43b64cd9c5260136",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_author/cross_check_existing_independent_paths.py"
+      ],
+      "started_utc": "2026-09-24T00:39:39.846340+00:00",
+      "completed_utc": "2026-09-24T00:39:39.999456+00:00",
+      "exit_code": 0,
+      "output": "COMPARISON_REPRODUCED_CROSS_CHECK_RESULTS.json",
+      "stderr": "COMPARISON_cross_check_existing_independent_paths.py.stderr",
+      "matches_sealed_JSON_semantically": true,
+      "matches_sealed_bytes": true
+    },
+    {
+      "script": "high_flux_energy_extension_author/full_rotor_energy_control.py",
+      "script_sha256": "be79312d8557f025e3505429f768504e723dc811cd5d320192043f2b098cbdf4",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_extension_author/full_rotor_energy_control.py"
+      ],
+      "started_utc": "2026-09-24T00:39:39.999513+00:00",
+      "completed_utc": "2026-09-24T00:39:40.495093+00:00",
+      "exit_code": 0,
+      "output": "COMPARISON_REPRODUCED_FULL_ROTOR_ENERGY_RESULTS.json",
+      "stderr": "COMPARISON_full_rotor_energy_control.py.stderr",
+      "matches_sealed_JSON_semantically": true,
+      "matches_sealed_bytes": true
+    },
+    {
+      "script": "high_flux_energy_extension_author/symbolic_spin_energy_balance.py",
+      "script_sha256": "f3f0d3f48c63c2190edb364cbc65682183b065b0a327a269594ee9a48b5b9a0c",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_extension_author/symbolic_spin_energy_balance.py"
+      ],
+      "started_utc": "2026-09-24T00:39:40.495157+00:00",
+      "completed_utc": "2026-09-24T00:39:40.983640+00:00",
+      "exit_code": 0,
+      "output": "COMPARISON_REPRODUCED_SYMBOLIC_SPIN_ENERGY_BALANCE_RESULTS.json",
+      "stderr": "COMPARISON_symbolic_spin_energy_balance.py.stderr",
+      "matches_sealed_JSON_semantically": true,
+      "matches_sealed_bytes": true
+    },
+    {
+      "script": "high_flux_energy_extension_author/finite_spin_path_comparison.py",
+      "script_sha256": "c5e7d9dbc3d5d77da400077c41820e366af4b9bac19145e409e305d546b225bc",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_extension_author/finite_spin_path_comparison.py"
+      ],
+      "started_utc": "2026-09-24T00:39:40.983701+00:00",
+      "completed_utc": "2026-09-24T00:39:41.129554+00:00",
+      "exit_code": 0,
+      "output": "COMPARISON_REPRODUCED_FINITE_SPIN_PATH_COMPARISON_RESULTS.json",
+      "stderr": "COMPARISON_finite_spin_path_comparison.py.stderr",
+      "matches_sealed_JSON_semantically": true,
+      "matches_sealed_bytes": true
+    }
+  ],
+  "external_actions": [],
+  "git_mutations": []
+}

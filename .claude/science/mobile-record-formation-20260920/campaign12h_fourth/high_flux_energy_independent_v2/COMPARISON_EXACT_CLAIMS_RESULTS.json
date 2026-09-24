@@ -1,0 +1,127 @@
+{
+  "saved_author_rotor_moments_compared": 252,
+  "all_48_spin_paths_match_symbolically": true,
+  "all_saved_rotor_instrument_rows_match": true,
+  "all_twelve_symbolic_Z_cross_terms_zero": true,
+  "own_symbolic_spin_sums": {
+    "rate": "8*(6*C**2 - 4*C*n**2 + n**4)/C**2",
+    "post_D_weighted": "-16*n**2*(-6*C + 2*n**2 + 1)/C",
+    "D_drift_over_kappa": "-16*n**2*(6*C**2 - 6*C*n**2 + C + 2*n**4)/C**2",
+    "post_E2_weighted": "16*(12*C**2*n**2 + 6*C**2 - 8*C*n**4 - 8*C*n**2 + 2*n**6 + 3*n**4)/C**2",
+    "E2_drift_over_kappa": "16*(6*C**2 - 8*C*n**2 + 3*n**4)/C**2"
+  },
+  "own_actual_boundary_cases": [
+    {
+      "n": "-1",
+      "S": "1",
+      "instrument": "resolved",
+      "rate": "34",
+      "D_drift": "-64",
+      "H4_drift": "2070",
+      "input_H4": "-78",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 2, 'D': 2, 'H4': -42}"
+    },
+    {
+      "n": "-1",
+      "S": "1",
+      "instrument": "coherent",
+      "rate": "34",
+      "D_drift": "-64",
+      "H4_drift": "2070",
+      "input_H4": "-78",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 2, 'D': 2, 'H4': -42}"
+    },
+    {
+      "n": "0",
+      "S": "1",
+      "instrument": "resolved",
+      "rate": "48",
+      "D_drift": "0",
+      "H4_drift": "3216",
+      "input_H4": "-84",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 2, 'D': 0, 'H4': -40}"
+    },
+    {
+      "n": "0",
+      "S": "1",
+      "instrument": "coherent",
+      "rate": "48",
+      "D_drift": "0",
+      "H4_drift": "3216",
+      "input_H4": "-84",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 4, 'D': 0, 'H4': -68}"
+    },
+    {
+      "n": "1",
+      "S": "1",
+      "instrument": "resolved",
+      "rate": "34",
+      "D_drift": "-64",
+      "H4_drift": "2070",
+      "input_H4": "-78",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 0, 'D': 0, 'H4': 0}"
+    },
+    {
+      "n": "1",
+      "S": "1",
+      "instrument": "coherent",
+      "rate": "34",
+      "D_drift": "-64",
+      "H4_drift": "2070",
+      "input_H4": "-78",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 1, 'D': 0, 'H4': -14}"
+    },
+    {
+      "n": "-2",
+      "S": "2",
+      "instrument": "resolved",
+      "rate": "272/9",
+      "D_drift": "-1760/9",
+      "H4_drift": "140744/81",
+      "input_H4": "-664/9",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 10/9, 'D': 16/3, 'H4': -584/27}"
+    },
+    {
+      "n": "-2",
+      "S": "2",
+      "instrument": "coherent",
+      "rate": "272/9",
+      "D_drift": "-1760/9",
+      "H4_drift": "140744/81",
+      "input_H4": "-664/9",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 10/9, 'D': 16/3, 'H4': -584/27}"
+    },
+    {
+      "n": "2",
+      "S": "2",
+      "instrument": "resolved",
+      "rate": "272/9",
+      "D_drift": "-1760/9",
+      "H4_drift": "140744/81",
+      "input_H4": "-664/9",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 0, 'D': 0, 'H4': 0}"
+    },
+    {
+      "n": "2",
+      "S": "2",
+      "instrument": "coherent",
+      "rate": "272/9",
+      "D_drift": "-1760/9",
+      "H4_drift": "140744/81",
+      "input_H4": "-664/9",
+      "loss_action_is_scalar": "True",
+      "selected": "{'norm': 2/3, 'D': 8/3, 'H4': -256/27}"
+    }
+  ],
+  "failures": [],
+  "scope": "Comparison only; own PRE scientific implementation bytes unchanged."
+}

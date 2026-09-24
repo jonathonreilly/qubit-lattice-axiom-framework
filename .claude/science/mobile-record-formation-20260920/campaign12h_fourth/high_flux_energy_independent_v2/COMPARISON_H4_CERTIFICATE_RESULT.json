@@ -1,0 +1,11 @@
+{
+  "author_certificate_sha256": "e2266dbcb0de8faddfcd265a6e7c3c995bb66cc9d9ce17f84826f360af676b39",
+  "every_input_and_H4_image_word_matches": true,
+  "matched_image_words": 47,
+  "wrong_diagonal_H4_variance": "0",
+  "actual_H4_variance": "392",
+  "diagonal_replacement_mutation_detected": true,
+  "symbolic_selected_h_variance": "K**2*n**4 + 392*delta**2",
+  "symbolic_selected_covariance": "0",
+  "covariance_explanation": "On the two input-support words H4 v has the same multiple of the input coefficient; diagonal D never brings other image words into the cross moment."
+}

@@ -1,0 +1,80 @@
+{
+  "status": "Publication copy reproduced; no new independent review implied",
+  "recorded_utc": "2026-09-24T00:59:22.100178+00:00",
+  "scratch_full_logs": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/cube-energy-portable-_yw99kov",
+  "author_runs": [
+    {
+      "script": "high_flux_energy_author/cube_high_flux_birth.py",
+      "sha256": "c1a13a2c954095fe1fb76272d7f13abe498220ab1e95d167cc150e136e031a9c",
+      "exit_code": 0,
+      "source_lookup": "adjacent copied publication files; no raw fallback needed",
+      "JSON_matches": true,
+      "bytes_match": true,
+      "started_utc": "2026-09-24T00:59:19.962806+00:00",
+      "completed_utc": "2026-09-24T00:59:19.999371+00:00"
+    },
+    {
+      "script": "high_flux_energy_author/all_mark_high_flux_check.py",
+      "sha256": "b0a369ee7d029a14244027bd8e0cb16c4853091443cae7a7f7ed985d2d998d49",
+      "exit_code": 0,
+      "source_lookup": "adjacent copied publication files; no raw fallback needed",
+      "JSON_matches": true,
+      "bytes_match": true,
+      "started_utc": "2026-09-24T00:59:19.963915+00:00",
+      "completed_utc": "2026-09-24T00:59:20.005769+00:00"
+    },
+    {
+      "script": "high_flux_energy_author/cross_check_existing_independent_paths.py",
+      "sha256": "f6a92f2416b42cd3df74fd2059885ae94065c5ba54d8a0ba43b64cd9c5260136",
+      "exit_code": 0,
+      "source_lookup": "adjacent copied publication files; no raw fallback needed",
+      "JSON_matches": true,
+      "bytes_match": true,
+      "started_utc": "2026-09-24T00:59:19.965374+00:00",
+      "completed_utc": "2026-09-24T00:59:20.086492+00:00"
+    },
+    {
+      "script": "high_flux_energy_extension_author/full_rotor_energy_control.py",
+      "sha256": "be79312d8557f025e3505429f768504e723dc811cd5d320192043f2b098cbdf4",
+      "exit_code": 0,
+      "source_lookup": "adjacent copied publication files; no raw fallback needed",
+      "JSON_matches": true,
+      "bytes_match": true,
+      "started_utc": "2026-09-24T00:59:19.999432+00:00",
+      "completed_utc": "2026-09-24T00:59:20.516063+00:00"
+    },
+    {
+      "script": "high_flux_energy_extension_author/symbolic_spin_energy_balance.py",
+      "sha256": "f3f0d3f48c63c2190edb364cbc65682183b065b0a327a269594ee9a48b5b9a0c",
+      "exit_code": 0,
+      "source_lookup": "adjacent copied publication files; no raw fallback needed",
+      "JSON_matches": true,
+      "bytes_match": true,
+      "started_utc": "2026-09-24T00:59:20.005811+00:00",
+      "completed_utc": "2026-09-24T00:59:20.519875+00:00"
+    },
+    {
+      "script": "high_flux_energy_extension_author/finite_spin_path_comparison.py",
+      "sha256": "c5e7d9dbc3d5d77da400077c41820e366af4b9bac19145e409e305d546b225bc",
+      "exit_code": 0,
+      "source_lookup": "adjacent copied publication files; no raw fallback needed",
+      "JSON_matches": true,
+      "bytes_match": true,
+      "started_utc": "2026-09-24T00:59:20.086533+00:00",
+      "completed_utc": "2026-09-24T00:59:20.239725+00:00"
+    }
+  ],
+  "independent_comparison_controls": [
+    {
+      "script": "comparison_full_h4_control.py",
+      "exit_code": 0,
+      "result_identical": true
+    },
+    {
+      "script": "comparison_exact_claims.py",
+      "exit_code": 0,
+      "result_identical": true
+    }
+  ],
+  "failures": []
+}

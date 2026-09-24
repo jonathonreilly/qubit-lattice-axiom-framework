@@ -1,0 +1,31 @@
+{
+  "sealed_utc": "2026-09-24T00:03:07.360606+00:00",
+  "claim_status": "root conditional exact finite-cube calculation; independent comparison pending",
+  "science_sources_and_artifacts_sha256": {
+    "high_flux_energy_author/HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD.md": "a355623459a0bea115b0874ab03a1f691f55a71fa67785b4f04f68513a3ad472",
+    "high_flux_energy_author/cube_high_flux_birth.py": "c1a13a2c954095fe1fb76272d7f13abe498220ab1e95d167cc150e136e031a9c",
+    "high_flux_energy_author/CUBE_HIGH_FLUX_RESULTS.json": "f4e16c3c89c09e45d63a4fffd34861f3a97b96cd4f5eb253b67413f6791335ae",
+    "high_flux_energy_author/all_mark_high_flux_check.py": "b0a369ee7d029a14244027bd8e0cb16c4853091443cae7a7f7ed985d2d998d49",
+    "high_flux_energy_author/ALL_MARK_HIGH_FLUX_RESULTS.json": "c5f5d8705f65b289234619eff07743cb5533bcef8f58e9f54f4d30bae25214d0",
+    "high_flux_energy_author/cross_check_existing_independent_paths.py": "f6a92f2416b42cd3df74fd2059885ae94065c5ba54d8a0ba43b64cd9c5260136",
+    "high_flux_energy_author/CROSS_CHECK_RESULTS.json": "5d9fa8a5f32847a4c8c02b25ae4ab45c0c829aa078b31cf045538c89b7df1747",
+    "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+    "local_compensation_author/UNGATED_SUM_OF_SQUARES_AND_TUNING.md": "d67499010fcd7659b7e245bb05c33f64069db1691f57446477506cfcad11fa16",
+    "local_compensation_independent/model.py": "686529f4cd3dd5d73e3373f2604e56615c83228b5813a3848f2a194db00ae128",
+    "local_compensation_review/SYNTHESIS.md": "4f034f1460ee92aee5d6a45dfdf892bbeca5eb90cd4184c1d71e8c41a74e6a4c",
+    "post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md": "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5",
+    "cube_point_spectrum_author/CUBE_SIX_RECORD_ROTOR_POINT_SPECTRUM.md": "a5e50bdc9df668219f7c375788a172f8060beacb7cb20f3ebf990e66c710c838"
+  },
+  "commands_verified_exit_zero": [
+    "python3.13 cube_high_flux_birth.py",
+    "python3.13 all_mark_high_flux_check.py",
+    "python3.13 cross_check_existing_independent_paths.py"
+  ],
+  "counts": {
+    "selected_n": 7,
+    "all_mark_n": 12,
+    "resolved_channels_per_n": 24,
+    "paths_per_n": 48,
+    "cross_check_n": 7
+  }
+}

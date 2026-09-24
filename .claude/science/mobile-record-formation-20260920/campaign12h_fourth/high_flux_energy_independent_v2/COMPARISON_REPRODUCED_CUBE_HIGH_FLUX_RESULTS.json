@@ -1,0 +1,516 @@
+{
+  "graph": "cube",
+  "oriented_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "marked_edge": [
+    0,
+    1
+  ],
+  "birth_charge_at_0": 1,
+  "claim": "exact diagonal electric energies for an actual resolved first mark",
+  "rows": [
+    {
+      "n": 0,
+      "initial_D": 0,
+      "resolved_first_mark_squared_norm": 2,
+      "conditional_post_D_mean": 0,
+      "conditional_post_D_variance": 0,
+      "outputs": [
+        {
+          "old_destination": 2,
+          "D": 0,
+          "charges": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "old_destination": 4,
+          "D": 0,
+          "charges": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "n": 1,
+      "initial_D": 4,
+      "resolved_first_mark_squared_norm": 2,
+      "conditional_post_D_mean": 1,
+      "conditional_post_D_variance": 1,
+      "outputs": [
+        {
+          "old_destination": 2,
+          "D": 0,
+          "charges": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            2,
+            -2,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "old_destination": 4,
+          "D": 2,
+          "charges": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            2,
+            -1,
+            -1,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "initial_D": 16,
+      "resolved_first_mark_squared_norm": 2,
+      "conditional_post_D_mean": 4,
+      "conditional_post_D_variance": 16,
+      "outputs": [
+        {
+          "old_destination": 2,
+          "D": 0,
+          "charges": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            3,
+            -3,
+            0,
+            2,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "old_destination": 4,
+          "D": 8,
+          "charges": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            3,
+            -2,
+            -1,
+            2,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "initial_D": 36,
+      "resolved_first_mark_squared_norm": 2,
+      "conditional_post_D_mean": 9,
+      "conditional_post_D_variance": 81,
+      "outputs": [
+        {
+          "old_destination": 2,
+          "D": 0,
+          "charges": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            4,
+            -4,
+            0,
+            3,
+            0,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "old_destination": 4,
+          "D": 18,
+          "charges": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            4,
+            -3,
+            -1,
+            3,
+            0,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "initial_D": 196,
+      "resolved_first_mark_squared_norm": 2,
+      "conditional_post_D_mean": 49,
+      "conditional_post_D_variance": 2401,
+      "outputs": [
+        {
+          "old_destination": 2,
+          "D": 0,
+          "charges": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            8,
+            -8,
+            0,
+            7,
+            0,
+            -7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "old_destination": 4,
+          "D": 98,
+          "charges": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            8,
+            -7,
+            -1,
+            7,
+            0,
+            -7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "n": 19,
+      "initial_D": 1444,
+      "resolved_first_mark_squared_norm": 2,
+      "conditional_post_D_mean": 361,
+      "conditional_post_D_variance": 130321,
+      "outputs": [
+        {
+          "old_destination": 2,
+          "D": 0,
+          "charges": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            20,
+            -20,
+            0,
+            19,
+            0,
+            -19,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "old_destination": 4,
+          "D": 722,
+          "charges": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            20,
+            -19,
+            -1,
+            19,
+            0,
+            -19,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "n": 100,
+      "initial_D": 40000,
+      "resolved_first_mark_squared_norm": 2,
+      "conditional_post_D_mean": 10000,
+      "conditional_post_D_variance": 100000000,
+      "outputs": [
+        {
+          "old_destination": 2,
+          "D": 0,
+          "charges": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            101,
+            -101,
+            0,
+            100,
+            0,
+            -100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "old_destination": 4,
+          "D": 20000,
+          "charges": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field": [
+            101,
+            -100,
+            -1,
+            100,
+            0,
+            -100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

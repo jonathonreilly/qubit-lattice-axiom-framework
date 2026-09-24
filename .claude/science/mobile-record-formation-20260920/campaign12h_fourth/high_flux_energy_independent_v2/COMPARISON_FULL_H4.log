@@ -1,0 +1,60 @@
+{
+  "moments": {
+    "input": {
+      "norm": "1",
+      "D_mean": "4*n**2",
+      "D_variance": "0",
+      "H4_mean": "-84",
+      "H4_second_moment": "7104",
+      "H4_variance": "48",
+      "symmetrized_D_H4_covariance": "0",
+      "h_mean": "4*(K*n**2 - 21*delta)",
+      "h_variance": "48*delta**2",
+      "H4_image_words": 13
+    },
+    "selected_resolved": {
+      "norm": "2",
+      "D_mean": "n**2",
+      "D_variance": "n**4",
+      "H4_mean": "-20",
+      "H4_second_moment": "792",
+      "H4_variance": "392",
+      "symmetrized_D_H4_covariance": "0",
+      "h_mean": "K*n**2 - 20*delta",
+      "h_variance": "K**2*n**4 + 392*delta**2",
+      "H4_image_words": 47
+    },
+    "selected_coherent": {
+      "norm": "4",
+      "D_mean": "n*(2*n - 1)/2",
+      "D_variance": "n**2*(4*n**2 - 4*n + 3)/4",
+      "H4_mean": "-17",
+      "H4_second_moment": "642",
+      "H4_variance": "353",
+      "symmetrized_D_H4_covariance": "-3*n/2",
+      "h_mean": "(2*K*n**2 - K*n - 34*delta)/2",
+      "h_variance": "(4*K**2*n**4 - 4*K**2*n**3 + 3*K**2*n**2 - 12*K*delta*n + 1412*delta**2)/4",
+      "H4_image_words": 109
+    },
+    "H4_image_histogram": {
+      "-12": 1,
+      "-2": 28,
+      "-20": 2,
+      "-4": 8,
+      "-6": 4,
+      "-8": 4
+    },
+    "H4_image_norm_squared": "1584"
+  },
+  "comparison": {
+    "author_certificate_sha256": "e2266dbcb0de8faddfcd265a6e7c3c995bb66cc9d9ce17f84826f360af676b39",
+    "every_input_and_H4_image_word_matches": true,
+    "matched_image_words": 47,
+    "wrong_diagonal_H4_variance": "0",
+    "actual_H4_variance": "392",
+    "diagonal_replacement_mutation_detected": true,
+    "symbolic_selected_h_variance": "K**2*n**4 + 392*delta**2",
+    "symbolic_selected_covariance": "0",
+    "covariance_explanation": "On the two input-support words H4 v has the same multiple of the input coefficient; diagonal D never brings other image words into the cross moment."
+  }
+}

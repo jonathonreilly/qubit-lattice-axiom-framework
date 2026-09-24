@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_bond_rates_alternate_on_their_own_below_a_threshold_stiffness_sea_against_bond_law_one_rest_energy_2026_09_22.py
+runner_sha256: 71c5941095780dacc65052b62b74db8ae3c2759b5cef4e2e7e886b7c8f14e1cb
+input_fingerprint_sha256: ec399a18d924b29c53460d35fb6b10f25f4db45582cfe496c3a3ae4fc5dd4b04
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.33
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_BOND_RATES_ALTERNATE_ON_THEIR_OWN_BELOW_A_THRESHOLD_STIFFNESS_THE_SEA_AGAINST_BLOCK_59S_BOND_LAW_GIVES_EVERY_SPECIES_ONE_REST_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_WHAT_CAN_GAP_THE_WALK_NO_INVARIANT_TERM_AT_ANY_REACH_CHESSBOARD_OR_AXIS_STRIPES_ON_SITES_ALTERNATING_LENGTHS_GIVE_ONE_REST_ENERGY_EXCLUSION_CAGES_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_ALTERNATING_LENGTHS_ARE_A_RELABELLING_INVISIBLE_TO_THE_WALK_AND_FREE_FOR_THE_LEDGER_A_REST_ENERGY_NEEDS_THE_BONDS_OWN_AMPLITUDE_NO_STRAIN_GAPS_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_THE_FILLED_SEAS_ENERGY_AS_THE_LEDGERS_FIELD_TERM_A_CHESSBOARD_OF_CLOCKS_IS_INVISIBLE_THE_SEA_INDUCES_A_CLOCK_STIFFNESS_NOT_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-22.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 Scoped exact check B1: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: B2 Scoped exact check B2: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: C1 Scoped exact check C1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: C2 Scoped exact check C2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: C3 Scoped exact check C3: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D1 Scoped exact check D1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D2 Scoped exact check D2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D4 Scoped exact check D4: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D3 Scoped exact check D3: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E1 Scoped exact check E1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E2 Scoped exact check E2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: Exact alternating bond symbol and linear bond-law costs; a restricted continuum-zone variational threshold, corner exceptions and one literal wall-ring nullity. Rates and minimization are supplied.
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

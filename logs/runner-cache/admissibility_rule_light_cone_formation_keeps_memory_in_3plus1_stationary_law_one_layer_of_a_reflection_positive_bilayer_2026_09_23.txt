@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_light_cone_formation_keeps_memory_in_3plus1_stationary_law_one_layer_of_a_reflection_positive_bilayer_2026_09_23.py
+runner_sha256: a1e5aff51dca03acdb32dc3df8eef0a3ca0f8c3746ad7ad5a5a413e6071199cc
+input_fingerprint_sha256: f5730771e7fe43296b845cccc97604f10337e957bee9f61c3e9baeb497542d44
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.75
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_LIGHT_CONE_FORMATION_KEEPS_MEMORY_IN_3PLUS1_ITS_STATIONARY_LAW_IS_ONE_LAYER_OF_A_REFLECTION_POSITIVE_BILAYER_ORDERED_ABOVE_BETA_0P5905_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 Scoped exact check B1: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: B3 Scoped exact check B3: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: B2 Scoped exact check B2: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: C1 Scoped exact check C1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: C2 Scoped exact check C2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D1 Scoped exact check D1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D2 Scoped exact check D2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E1 Scoped exact check E1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E2 Scoped exact check E2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: Under an explicitly excluded re-recording clause: positive symmetric-stencil update kernels, even-grid bilayer geometry, sphere reflection bounds and finite stationary moments. No temporal-memory theorem or certified numerical onset.
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

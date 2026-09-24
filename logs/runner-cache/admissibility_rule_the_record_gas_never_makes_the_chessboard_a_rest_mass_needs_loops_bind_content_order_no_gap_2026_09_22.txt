@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_record_gas_never_makes_the_chessboard_a_rest_mass_needs_loops_bind_content_order_no_gap_2026_09_22.py
+runner_sha256: d8ebc49fb6fa87d0b0fd591da412aab57399e7a0d91dad8f8b363f59802e3339
+input_fingerprint_sha256: 5842626121b5de10654e135c5d9cb147bc6aef8553448f9673feac44703f3e9e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 18.79
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_RECORD_GAS_NEVER_MAKES_THE_CHESSBOARD_A_REST_MASS_NEEDS_BINDING_GROWS_ONLY_AROUND_LOOPS_CONTENT_ORDER_GIVES_THE_WALK_NO_GAP_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MENUS_AND_BORN_STABILIZER_DEGENERATE_SUPPORTS_ANTIPODAL_WEIGHT_CLASS_AND_NON_AFFINE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/CLOCK_AND_RATE_COVARIANT_EXPONENTIAL_RACES_RECORD_LEVEL_INVISIBILITY_FOR_ORDER_BLIND_RULES_AND_CLOCK_SENSITIVE_HOLE_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_A_CHESSBOARD_RECORD_BACKGROUND_IS_FELT_ONLY_AS_A_REST_MASS_AND_A_WALL_BETWEEN_OUT_OF_STEP_DOMAINS_BINDS_EXACT_ZERO_MODES_WHEN_ODD_BOUNDED_THEOREM_NOTE_2026-09-22.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 Scoped exact check B1: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: B2 Scoped exact check B2: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: B3 Scoped exact check B3: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: C1 Scoped exact check C1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: C2 Scoped exact check C2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: C3 Scoped exact check C3: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D1 Scoped exact check D1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D2 Scoped exact check D2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D3 Scoped exact check D3: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D4 Scoped exact check D4: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E1 Scoped exact check E1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E2 Scoped exact check E2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E3 Scoped exact check E3: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E4 Scoped exact check E4: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: Conditional six-content positive finite graph weights, exact finite occupancy enumerations, and three supplied coin symbols. No thermodynamic ordering or universal gap exclusion follows.
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

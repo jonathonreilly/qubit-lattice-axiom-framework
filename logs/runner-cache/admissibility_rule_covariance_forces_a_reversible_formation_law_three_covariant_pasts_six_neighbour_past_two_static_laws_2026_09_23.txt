@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_covariance_forces_a_reversible_formation_law_three_covariant_pasts_six_neighbour_past_two_static_laws_2026_09_23.py
+runner_sha256: 9816da709f5497c83e120e4c6876a78996d266cd552f0274022c4618c81207ed
+input_fingerprint_sha256: e5df666be934f53ac0ba613f6e3e4b188cd3edfa3bb52bd61cd44f6e13937814
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_COVARIANCE_FORCES_A_REVERSIBLE_FORMATION_LAW_THREE_COVARIANT_PASTS_AND_THE_SIX_NEIGHBOUR_PAST_SETTLES_INTO_TWO_COPIES_OF_THE_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/ADMISSIBILITY_RULE_LIGHT_CONE_FORMATION_KEEPS_MEMORY_IN_3PLUS1_ITS_STATIONARY_LAW_IS_ONE_LAYER_OF_A_REFLECTION_POSITIVE_BILAYER_ORDERED_ABOVE_BETA_0P5905_BOUNDED_THEOREM_NOTE_2026-09-23.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 Scoped exact check B1: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: B2 Scoped exact check B2: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: C1 Scoped exact check C1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D1 Scoped exact check D1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D2 Scoped exact check D2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D3 Scoped exact check D3: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E1 Scoped exact check E1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: Excluded re-recording comparator with fixed scalar nearest-offset weights and an exponential pair rule: orbit classification, detailed balance and stationary graph decompositions. Covariance alone does not classify every update law.
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_what_can_gap_the_walk_no_invariant_term_any_reach_stripes_alternating_lengths_rest_energy_exclusion_cages_2026_09_22.py
+runner_sha256: 55cde84f6fd61892a0ed5a4e5338d34f82121f4334938de64ae7c35c540b0d8a
+input_fingerprint_sha256: 451d815691ad689383de316357d3001ce2ba2fc15c5357554f21d57ea751a0c6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.41
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WHAT_CAN_GAP_THE_WALK_NO_INVARIANT_TERM_AT_ANY_REACH_CHESSBOARD_OR_AXIS_STRIPES_ON_SITES_ALTERNATING_LENGTHS_GIVE_ONE_REST_ENERGY_EXCLUSION_CAGES_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_AXIOMS_OWN_GENERATOR_THE_SCALAR_HOP_SPLITS_THE_EIGHT_SPECIES_INTO_FOUR_LEVELS_OF_ONE_SENSE_AND_A_STAGGERED_TERM_GIVES_THEM_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_A_CHESSBOARD_RECORD_BACKGROUND_IS_FELT_ONLY_AS_A_REST_MASS_AND_A_WALL_BETWEEN_OUT_OF_STEP_DOMAINS_BINDS_EXACT_ZERO_MODES_WHEN_ODD_BOUNDED_THEOREM_NOTE_2026-09-22.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 Scoped exact check B1: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: B2 Scoped exact check B2: stated algebraic or finite fixture. General conclusions and exceptions are in the companion note.
+PASS: C4 Scoped exact check C4: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: C1 Scoped exact check C1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: C2 Scoped exact check C2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: C3 Scoped exact check C3: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D1 Scoped exact check D1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D5 Scoped exact check D5: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D2 Scoped exact check D2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D3 Scoped exact check D3: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: D4 Scoped exact check D4: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E1 Scoped exact check E1: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: E2 Scoped exact check E2: stated finite or symbolic comparison. General conclusions and exceptions are in the companion note.
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: Conditional two-coin cubic-covariant symbols, site-field recurrence on nonaliased even grids, supplied bond hopping, and fixed-vacancy projections. No complete classification of physical gap mechanisms.
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

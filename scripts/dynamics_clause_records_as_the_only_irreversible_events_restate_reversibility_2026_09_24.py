@@ -1,26 +1,29 @@
 #!/usr/bin/env python3
-"""A closed lattice whose only irreversible events are records evolves unitarily between them.
+"""Records as the only irreversible events restate reversibility: a channel that keeps pure states pure and distinguishable is unitary.
 
-Open PR 9084 reduced the dynamics clause to linear, completely positive
-evolution (from locality of marginals) plus reversibility, continuous time
-and nearest-neighbour range (D-rev). This runner treats reversibility.
-Suppose the lattice is closed (nothing outside it) and records are its only
-irreversible events. Then evolution between records must keep pure states
-pure (a closed pure state has nothing to entangle with) and keep them
-distinguishable (losing distinguishability is an unrecorded irreversible
-change). The runner certifies (supplied readings, finite diagnostics, no
-physical reading):
+Open PR 9084 left reversibility between records supplied (D-rev). A reading
+in record language is that records are the only irreversible events
+(D-onlyrec): between records no pure state becomes mixed and no two pure
+states become less distinguishable. For a channel on a finite system this
+is Wigner's condition, so D-onlyrec restates reversibility rather than
+deriving it; what the theorem adds is the unitary form. The whole finite
+region's evolution between records is taken to be a channel (a premise:
+open PR 9084 treats one site with a decoupled partner). The runner
+certifies (supplied readings, finite diagnostics, no physical reading):
 
 1. Purity: random non-unitary channels (2 and 3 Kraus operators, qubit and
    qutrit) send some pure state to a mixed one; unitary channels never do.
 2. The replacement channel (every state to one pure state) keeps purity but
    sends orthogonal states to the same output, erasing distinguishability.
-3. The theorem's mechanism: for a channel that keeps purity, each Kraus
-   operator's output is parallel to the first's for every input, so they
-   are proportional (or of rank one); a channel built from proportional
-   Kraus operators is a unitary conjugation.
+3. The mechanism: a channel built from proportional Kraus operators is a
+   unitary conjugation; a generic channel has non-parallel Kraus outputs.
 4. Distinguishability: random non-unitary channels strictly lower the trace
    distance of some pair of pure states; unitaries keep every pair's.
+5. The lemma behind 3: two linear maps with parallel outputs on every input
+   are proportional, or both have rank at most one with a common range.
+   Two rank-one maps with a common range are parallel but not
+   proportional; a rank-two and a rank-one map have fully non-parallel
+   outputs on some input.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -123,6 +126,31 @@ for _ in range(40):
         worst_unit = max(worst_unit, abs(trace_dist(a, b) - trace_dist(U @ a @ U.conj().T, U @ b @ U.conj().T)))
 check("distinguishability: random non-unitary channels lower the trace distance of some pure pair; unitaries keep every pair's",
       worst_drop > 1e-2 and worst_unit < 1e-12, f"largest drop {worst_drop:.3f}; unitary change {worst_unit:.1e}")
+
+# ------------------------------------------------ 5. the lemma: proportional, or rank at most one with a common range
+def worst_nonparallel(A, B, trials=400):
+    worst_ = 0.0
+    for _ in range(trials):
+        v = rng.normal(size=A.shape[1]) + 1j * rng.normal(size=A.shape[1])
+        a1, a2 = A @ v, B @ v
+        if np.linalg.norm(a1) < 1e-12 or np.linalg.norm(a2) < 1e-12:
+            continue
+        worst_ = max(worst_, 1 - abs(np.vdot(a1, a2)) / (np.linalg.norm(a1) * np.linalg.norm(a2)))
+    return worst_
+
+
+w_, u_, v_ = [rng.normal(size=3) + 1j * rng.normal(size=3) for _ in range(3)]
+R1a, R1b = np.outer(w_, u_.conj()), np.outer(w_, v_.conj())
+rank1_common = worst_nonparallel(R1a, R1b)
+rank1_prop = np.linalg.matrix_rank(np.array([R1a.ravel(), R1b.ravel()]), tol=1e-9)
+G = rng.normal(size=(3, 3)) + 1j * rng.normal(size=(3, 3))
+Uu, sv, Vh = np.linalg.svd(G)
+R2 = Uu[:, :2] @ np.diag(sv[:2]) @ Vh[:2]
+mixed = worst_nonparallel(R2, R1a, trials=4000)
+check("the lemma: parallel outputs on every input mean proportional maps, or two rank-one maps with a common range",
+      rank1_common < 1e-12 and rank1_prop == 2 and mixed > 0.99,
+      f"rank-one pair with a common range: non-parallelism {rank1_common:.0e}, not proportional (rank {rank1_prop}); "
+      f"rank-two with rank-one: non-parallelism up to {mixed:.3f}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

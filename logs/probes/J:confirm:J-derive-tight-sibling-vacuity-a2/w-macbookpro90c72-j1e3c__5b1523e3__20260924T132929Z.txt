@@ -1,0 +1,12 @@
+PASS S1-S2 the same 37 one-sites appear in [0,3]^3, [-1,4]^3 and [-2,6]^3, all inside the unit box
+PASS S2 one seed, nine amplified, 27 processed; 333 has three processed 1-predecessors
+PASS S2 the marks and the one-set are invariant under (a,b,c) -> (c,a,b)
+PASS S4 rooted values v(z) match the 37-site table; the only tight sites are 233, 323, 332, and v(333)=1
+PASS S5 the six upper amplified sites inject into Pi, and levels 6..9 are processed and disjoint from Pi
+PASS S6 the exhibited trees are legal: cost 0 at 233 with (E,A)=(5,5), cost 1 at 333 with (E,A)=(10,9)
+PASS S8 over all 184 attainable pairs at 333, min E/A = 10/9, so the budget E <= c A holds iff c >= 10/9
+PASS S9 g is strictly log-concave, the maximum is at t=40/513, and d3 is strictly decreasing for p>0
+PASS S9 on the assumed T4.2 inputs, c>=10/9 fails for every p<=488 and holds for 489..5000; the c=1 control crosses between 367 and 368
+TOTAL FAIL=0
+HIT: confirmed - (Q) is false. Marks {000,001,010,100,021,102,210,113,131,311} give a one-seed realization whose site 333 is processed with three tight processed 1-predecessors (v=0) and rooted value v(333)=1. Every one-seed tree there has E/A >= 10/9, attained at (E,A,S)=(10,9,1), so c*(eta,333)=10/9 and the unit budget fails. Conditional on block 32 T4.2's inputs the (p,1,2) floor moves from 367 to 488.
+SUMMARY: confirmed the counterexample to (Q), the tight-sibling lemma, and (H). The 37 rooted values and the ratio 10/9 were recomputed by an independent dynamic program. Block 30's upper bound c*=2 and the T4.2 inputs eps2 >= d3 stay assumed. Coexistence thresholds were not re-derived.

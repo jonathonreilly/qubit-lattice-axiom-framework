@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-tight-sibling-vacuity-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j1e3c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/tight-sibling-vacuity/referee_w-macbookpro90c72-j1e3c/check.py",
+ "seed": 56569,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5b1523e3",
+ "started_utc": "20260924T132929Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the counterexample to (Q), the tight-sibling lemma, and (H). The 37 rooted values and the ratio 10/9 were recomputed by an independent dynamic program. Block 30's upper bound c*=2 and the T4.2 inputs eps2 >= d3 stay assumed. Coexistence thresholds were not re-derived."
+ },
+ "review": "An independent dynamic program confirms the counterexample: site 333 is processed with three tight processed predecessors and rooted value 1, and c-star at that root is exactly 10/9, so the unit budget fails.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:tight-sibling-vacuity:a2/; its files are probes/work/derive/tight-sibling-vacuity/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/tight-sibling-vacuity/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "529a736f7ed5f528c1a34c64be2c00ddefd1abb75572262ba1e79335119fa261",
+ "stdout_tail": "plified, 27 processed; 333 has three processed 1-predecessors\nPASS S2 the marks and the one-set are invariant under (a,b,c) -> (c,a,b)\nPASS S4 rooted values v(z) match the 37-site table; the only tight sites are 233, 323, 332, and v(333)=1\nPASS S5 the six upper amplified sites inject into Pi, and levels 6..9 are processed and disjoint from Pi\nPASS S6 the exhibited trees are legal: cost 0 at 233 with (E,A)=(5,5), cost 1 at 333 with (E,A)=(10,9)\nPASS S8 over all 184 attainable pairs at 333, min E/A = 10/9, so the budget E <= c A holds iff c >= 10/9\nPASS S9 g is strictly log-concave, the maximum is at t=40/513, and d3 is strictly decreasing for p>0\nPASS S9 on the assumed T4.2 inputs, c>=10/9 fails for every p<=488 and holds for 489..5000; the c=1 control crosses between 367 and 368\nTOTAL FAIL=0\nHIT: confirmed - (Q) is false. Marks {000,001,010,100,021,102,210,113,131,311} give a one-seed realization whose site 333 is processed with three tight processed 1-predecessors (v=0) and rooted value v(333)=1. Every one-seed tree there has E/A >= 10/9, attained at (E,A,S)=(10,9,1), so c*(eta,333)=10/9 and the unit budget fails. Conditional on block 32 T4.2's inputs the (p,1,2) floor moves from 367 to 488.\nSUMMARY: confirmed the counterexample to (Q), the tight-sibling lemma, and (H). The 37 rooted values and the ratio 10/9 were recomputed by an independent dynamic program. Block 30's upper bound c*=2 and the T4.2 inputs eps2 >= d3 stay assumed. Coexistence thresholds were not re-derived.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1e3c",
+  "at_utc": "20260924T132938Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The counterexample is a science result: the tight-sibling hypothesis is realized at site 333 with rooted value 1, and c-star there is 10/9, so the unit budget does not hold.",
+  "by": "w-macbookpro90c72-j1e3c",
+  "at_utc": "20260924T132938Z"
+ }
+}

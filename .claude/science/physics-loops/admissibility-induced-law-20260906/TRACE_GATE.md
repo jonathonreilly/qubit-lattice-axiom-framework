@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 104 (2026-09-23)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 95: the pull needs block 53's kappa; block 53 T4's remark on block 50's clock"
+source_of_blocker_text: blocks 50, 53, 55, 95; probes derivation J:derive:kappa-from-the-rule (refereed by another family)
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "the rule's clock supplies no monopole; next: a clause fixing gamma; a record's rest energy"
+```

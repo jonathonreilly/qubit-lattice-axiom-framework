@@ -25,3 +25,11 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
 Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
 
 Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
+
+## 2026-09-23 block 104 opened for review (supervisor; independent vs main; from probes worker w-macbookpro90c72-j9337, Grok referee)
+The rule's own clock (block 50's 1/π_x) has no far field. Indeed, no clock set by nearby records has one: its sources sum to zero and its field stops at the records. So block 95's pull needs three things records do not supply:
+- a rate law in which rates condition rates (block 53: the monopole);
+- a rest energy (the walk has no on-site one; block 77's staggered term);
+- γ, which nothing yet fixes.
+
+Block 53 T4's remark about block 50's clock is qualified accordingly.

@@ -1,0 +1,14 @@
+rule's clock: total source -8.88e-16; field nonzero at 25 sites (all inside the clump); records' mean source +0.0980
+block 53's clock: total source -5.55e-16 after the mean is removed; monopole n log kappa = -2.70
+ r   u_rule      u_53       r*u_53     pull_rule   pull_53 (x-component of -grad u at the test site)
+ 2  +0.000e+00  -4.6166e-01  -0.9233   +2.88e-01   -2.690e-01
+ 3  +0.000e+00  -2.7829e-01  -0.8349   -0.00e+00   -1.431e-01
+ 4  +0.000e+00  -1.7546e-01  -0.7019   -0.00e+00   -8.280e-02
+ 5  +0.000e+00  -1.1270e-01  -0.5635   -0.00e+00   -5.187e-02
+ 6  +0.000e+00  -7.1728e-02  -0.4304   -0.00e+00   -3.445e-02
+ 7  +0.000e+00  -4.3792e-02  -0.3065   -0.00e+00   -2.368e-02
+ 8  +0.000e+00  -2.4367e-02  -0.1949   -0.00e+00   -1.641e-02
+ 9  +0.000e+00  -1.0967e-02  -0.0987   -0.00e+00   -1.110e-02
+10  +0.000e+00  -2.1721e-03  -0.0217   -0.00e+00   -6.897e-03
+block 39's law at density 0.05: mean source at records -0.0066, at empty sites +0.00035, total over all sites +4.2e-15; mean u at records -0.0081
+block 39's law at density 0.2: mean source at records -0.0328, at empty sites +0.00820, total over all sites +3.0e-14; mean u at records -0.0499

@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_rules_own_clock_has_no_far_field_2026_09_23.py
+runner_sha256: 2e23d7a3205be279dbc1ea45d23e92ac3d9a2ea2ed27d3ebd216a5c9925fc7f6
+input_fingerprint_sha256: 239dd6fd57f71baaceb9528a774b80736f37def98d577955f49a77eb13671d24
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.62
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_RULES_OWN_CLOCK_HAS_NO_FAR_FIELD_THE_PULL_NEEDS_A_RATE_LAW_WITH_A_MONOPOLE_A_REST_ENERGY_AND_A_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the distribution sentence; Admissibility is not a dynamics axiom and does not define a time metric (rates are supplied clauses)
+PASS: B1 T1: for ANY rate field on a torus the sources u_x - (1/6) sum u_(x+e) of block 53's law sum to zero (symbolic u at all 64 sites of 4^3); a clock whose rate at x is any function of the records within distance R (R = 1, 2; arbitrary symbolic values per local pattern on 9^3) is ambient beyond distance R, so its field and its sources vanish beyond R + 1 and have zero total: no monopole and no tail; block 53's clock gives an n-record body the total source n log kappa, which no such clock can
+PASS: C1 T2: at (3,1,2) and c0 = 1/2 the pair weights are 3/2, 1/2, 1 with mean 1; the rule's clock 1/pi_x gives an isolated record kappa = 1 exactly; one record neighbour 12/17, 12/7, 1 (equal, opposite, orthogonal); two: 1/2, 6/5, 12/17, 3, 12/7, 1; averaged over the partner's content 382/357 > 1 uniformly and 352/357 < 1 under the pair law; in block 53's geometric form kappa = pi_x^(-5/6) when each neighbour's only record neighbour is x: below one exactly where the record's own pair weights are favoured
+PASS: C2 T2: read as block 53's rate field, the rule's clock is u = -log pi exactly; on 40 random configurations of the 3^3 torus its sources sum to zero and vanish wherever the site and its neighbours carry no pair weight: the slowing stays on the records that have neighbours
+PASS: D1 T3(a): the pulls between a body of source S_A and energy E_A and one of S_B, E_B sum to -(E_A S_B - E_B S_A) grad G, zero at every separation iff S/E is universal; with block 55's packet S/E = -gamma/6 a record needs log kappa = -(gamma/6) E_rec: kappa gives way to the record's energy (symbolic)
+PASS: E1 T3(b): no 2x2 on-site term anticommutes with sigma_1, sigma_2 and sigma_3, so the walk has no on-site rest energy: E_rec = 0 and kappa = 1, as for T2's isolated record, and a rest energy needs a term such as block 77's staggered one; the field energy (2/gamma) sum (sqrt(w_x) - sqrt(w_y))^2 has weight one under w -> t w for every gamma, and the weak-field pull -(gamma/4 pi) E_A E_B/R depends on gamma: a free physical number that no present clause fixes (symbolic)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the pair weights, the kappa table for one and two neighbours and its averages, exact
+per_site: executed - symbolic rates at every site of 4^3; range-one and range-two clocks at every site of 9^3; the rule's clock on 40 configurations of 3^3
+per_mode: executed - the anticommutation equations for an on-site rest term; control: a clump's field and pull under both clocks
+per_block: executed - bodies of up to six records; the pair identity for two bodies (symbolic)
+lattice_wide: T1 for every rate field and every finite-range clock on any torus or finite cluster of Z^3; T2 at (3,1,2); T3 symbolic; blocks 50, 53, 55 supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: the rule's own clock (block 50) as block 53's kappa - no far field for any clock set by the records within a fixed range; the pull needs a rate law with a monopole (block 53), a rest energy (not on-site in the walk; block 77's staggered term) and a coupling gamma that no present clause fixes; nothing adopted
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

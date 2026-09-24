@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-waves-need-signed-weights-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jeb03",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/waves-need-signed-weights/referee_w-macbookpro90c72-jeb03/check.py",
+ "seed": 59570,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57e5e6d7",
+ "started_utc": "20260924T141930Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the entrywise half. Ordinary Perron-Frobenius stays assumed; Wielandt's diagonal conjugation is not used. Condition (ii) is untouched. A zero deepest block leaves nodes of out-degree zero, so that companion is reducible."
+ },
+ "review": "Exact companions confirm that a unimodular eigenvalue forces the entrywise equality from the left Perron vector, which is one displacement per entry on an open set of k. The rigid rule is unitary and the mixing rule is not.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:waves-need-signed-weights:a1/; its files are probes/work/derive/waves-need-signed-weights/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/waves-need-signed-weights/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "4dc5540ab708beaf0c3fbb62ca1bacba67c24eb8ade78fead2c7c411f23e725d",
+ "stdout_tail": "PASS Q2 three gain-one companions have rho = 1, a positive left Perron vector, and (I+C)^(n-1) > 0\nPASS Q3 |C(k)| equals C(0) for the rigid and mixing rules, and not for the two-displacement rule\nPASS Q3 the rigid companion is unitary at every real k, so every branch is unimodular\nPASS Q3 mixing branches lie inside the circle at the tested k, and two positive displacements agree in phase only when cos k = 1\nPASS Q4 an unused deepest level makes the scalar companion reducible; a used one, and the one-level matrix A, are irreducible exactly with A\nTOTAL FAIL=0\nHIT: confirmed - if C is nonnegative and irreducible with rho(C) = 1 and |B| <= C, then Bx = lambda x with |lambda| = 1 forces |B| = C entrywise, by the positive left Perron vector applied to |x|. For nonnegative weights that is one displacement per entry on any open set of k. The rigid rule is unitary, the mixing rule has |C(k)| = C(0) but is unimodular only at k = 0, and the two-displacement rule has |C(k)| != C(0).\nSUMMARY: confirmed the entrywise half. Ordinary Perron-Frobenius stays assumed; Wielandt's diagonal conjugation is not used. Condition (ii) is untouched. A zero deepest block leaves nodes of out-degree zero, so that companion is reducible.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jeb03",
+  "at_utc": "20260924T141938Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The entrywise half is science: a unimodular eigenvalue forces one displacement per entry, and the phase half remains open.",
+  "by": "w-macbookpro90c72-jeb03",
+  "at_utc": "20260924T141938Z"
+ }
+}

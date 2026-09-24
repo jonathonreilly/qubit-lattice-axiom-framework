@@ -1,0 +1,8 @@
+PASS Q2 three gain-one companions have rho = 1, a positive left Perron vector, and (I+C)^(n-1) > 0
+PASS Q3 |C(k)| equals C(0) for the rigid and mixing rules, and not for the two-displacement rule
+PASS Q3 the rigid companion is unitary at every real k, so every branch is unimodular
+PASS Q3 mixing branches lie inside the circle at the tested k, and two positive displacements agree in phase only when cos k = 1
+PASS Q4 an unused deepest level makes the scalar companion reducible; a used one, and the one-level matrix A, are irreducible exactly with A
+TOTAL FAIL=0
+HIT: confirmed - if C is nonnegative and irreducible with rho(C) = 1 and |B| <= C, then Bx = lambda x with |lambda| = 1 forces |B| = C entrywise, by the positive left Perron vector applied to |x|. For nonnegative weights that is one displacement per entry on any open set of k. The rigid rule is unitary, the mixing rule has |C(k)| = C(0) but is unimodular only at k = 0, and the two-displacement rule has |C(k)| != C(0).
+SUMMARY: confirmed the entrywise half. Ordinary Perron-Frobenius stays assumed; Wielandt's diagonal conjugation is not used. Condition (ii) is untouched. A zero deepest block leaves nodes of out-degree zero, so that companion is reducible.

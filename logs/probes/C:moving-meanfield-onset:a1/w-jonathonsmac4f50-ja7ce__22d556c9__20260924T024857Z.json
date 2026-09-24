@@ -1,0 +1,32 @@
+{
+ "task": "C:moving-meanfield-onset:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-ja7ce",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/compute/moving-meanfield-onset/w-jonathonsmac4f50-ja7ce/run.py",
+ "seed": 18137,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "22d556c9",
+ "started_utc": "20260924T024857Z",
+ "elapsed_s": 64.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "Bragg-Williams (variational product-law) mean field for the six-axis gas with vacancies, rho = 0.3, (p,1,2): c=neutral: MF 6.23 vs executed (11.0, 12.0) (-46% of 11.5); c=1: MF 3.74 vs executed (4.0, 6.0) (-25% of 5.0); c=1/2: MF 5.51 vs executed (7.0, 8.0) (-27% of 7.5); MF onset order (low to high): 1 < 1/2 < neutral"
+ },
+ "review": "Bragg-Williams variational mean field: exact spinodals (density 6rho(1-rho)Lbar=1, alignment rho log(p/q)=1, quadrupole rho log(pq/r^2)=1); coexistence onset by convex hull at rho=0.3 on (p,1,2): neutral 6.23, c=1 3.74, c=1/2 5.51 vs executed brackets from 121 X logs 11-12, 4-6, 7-8: too low by 25-46%, same ordering in c; first-order (dense aligned vs dilute). No HIT. Same-family provenance.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). A first theory of the clumping onset. For the six-axis gas with vacancies (weights c * (p, q, r); empty bonds 1) write the mean-field free energy per site as a function of the density rho and the content distribution (six occupation fractions), find where the uniform disordered state loses stability to (i) a density modulation and (ii) alignment, and where a dense aligned phase coexists with a dilute one. Give the onset p*(c, rho) on the line (p,1,2) at c = neutral, 1, 1/2 and rho = 0.3 and compare with the executed brackets (neutral: 8-12, near 10; scale 1: 5-6; scale 1/2: 8-12) and with the logs under logs/probes/X:moving-clumping-line-p12/ when present. Expectation: mean field puts the onset too low by tens of percent, with the right ordering in c. DELIVERABLE in your unit worktree: probes/work/compute/moving-meanfield-onset/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-meanfield-onset/<name>/run.py\"",
+ "stdout_sha256": "694973a1aa0007961aff85afc94ed67c4ba2803e0083e2c93c5eb06e6ba920c1",
+ "stdout_tail": "ole p = 4 e^(1/0.3) = 112.1\nM (p,1,2), c = neutral rho = 0.3: mean-field coexistence onset p* = 6.23; just above it the tie line joins rho = 0.292 (dilute) and 0.933 (dense, aligned)\nM (p,1,2), c = 1       rho = 0.3: mean-field coexistence onset p* = 3.74; just above it the tie line joins rho = 0.258 (dilute) and 0.975 (dense, aligned)\nM (p,1,2), c = 1/2     rho = 0.3: mean-field coexistence onset p* = 5.51; just above it the tie line joins rho = 0.288 (dilute) and 0.954 (dense, aligned)\nE executed X logs found: 121 (clumped := nbrs/random > 1.5)\nE c = neutral rho = 0.3: nbrs/random by p: 7:1.02 8:1.03 9:1.05 10:1.17 11:1.43 12:1.54 14:1.69 16:1.81 20:1.92 -> onset bracket (11.0, 12.0)\nE c = 1       rho = 0.3: nbrs/random by p: 4:1.49 6:2.28 7:2.42 8:2.46 9:2.54 10:2.54 11:2.52 12:2.56 14:2.52 16:2.54 20:2.50 -> onset bracket (4.0, 6.0)\nE c = 1/2     rho = 0.3: nbrs/random by p: 4:1.05 6:1.13 7:1.18 8:1.60 9:1.96 10:2.10 11:2.18 12:2.24 14:2.30 16:2.35 20:2.35 -> onset bracket (7.0, 8.0)\nE task's first-look brackets: neutral 8-12 (near 10); scale 1: 5-6; scale 1/2: 8-12\n\nSUMMARY: Bragg-Williams (variational product-law) mean field for the six-axis gas with vacancies, rho = 0.3, (p,1,2): c=neutral: MF 6.23 vs executed (11.0, 12.0) (-46% of 11.5); c=1: MF 3.74 vs executed (4.0, 6.0) (-25% of 5.0); c=1/2: MF 5.51 vs executed (7.0, 8.0) (-27% of 7.5); MF onset order (low to high): 1 < 1/2 < neutral\nE executed onset order (low to high): 1 < 1/2 < neutral; same as mean field: True\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-ja7ce",
+  "at_utc": "20260924T025001Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

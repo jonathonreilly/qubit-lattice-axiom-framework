@@ -1,0 +1,13 @@
+PR #8860: physics-loop: admissibility induced-law block 95 - records that move on their own clocks and slow the clocks around them attract with a 1/r potential, equal both ways
+branch physics-loop/admissibility-induced-law-block95-records-on-their-own-clocks-attract-one-over-r-equal-both-ways-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_records_that_move_on_their_own_clocks_and_slow_the_clocks_around_them_attract_one_over_r_equal_both_ways_2026_09_23.py: rc=0 PASS=11 FAIL=0
+   mutation bond_clock_taken_to_fall: expected B observed B ok
+   mutation departure_factor_inverted: expected B observed B ok
+   mutation field_not_slaved: expected C observed C ok
+   mutation pair_counted_twice: expected C observed C ok
+   mutation jumps_biased_by_the_clock: expected D observed D ok
+   mutation pair_potential_sign_flipped: expected E observed E ok
+   mutation drifted_kernel: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

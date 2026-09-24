@@ -1,0 +1,37 @@
+{
+ "task": "P:8860",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block95-record",
+ "worker": "w-jonathonsmac4f50-jf7b6",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8860",
+ "pr": 8860,
+ "branch": "physics-loop/admissibility-induced-law-block95-records-on-their-own-clocks-attract-one-over-r-equal-both-ways-20260923",
+ "git_sha": "080bbf4f",
+ "started_utc": "20260924T005633Z",
+ "elapsed_s": 16.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_records_that_move_on_their_own_clocks_and_slow_the_clocks_around_them_attract_one_over_r_equal_both_ways_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #8860's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "100dc431f4eb75fc08081f7806351edf9aaff77a0ce8bb7657ac81a63221cbaf",
+ "stdout_tail": "PR #8860: physics-loop: admissibility induced-law block 95 - records that move on their own clocks and slow the clocks around them attract with a 1/r potential, equal both ways\nbranch physics-loop/admissibility-induced-law-block95-records-on-their-own-clocks-attract-one-over-r-equal-both-ways-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_records_that_move_on_their_own_clocks_and_slow_the_clocks_around_them_attract_one_over_r_equal_both_ways_2026_09_23.py: rc=0 PASS=11 FAIL=0\n   mutation bond_clock_taken_to_fall: expected B observed B ok\n   mutation departure_factor_inverted: expected B observed B ok\n   mutation field_not_slaved: expected C observed C ok\n   mutation pair_counted_twice: expected C observed C ok\n   mutation jumps_biased_by_the_clock: expected D observed D ok\n   mutation pair_potential_sign_flipped: expected E observed E ok\n   mutation drifted_kernel: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf7b6",
+  "at_utc": "20260924T005649Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8178-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jb1e0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8178/referee_w-macbookpro90c72-jb1e0/check.py",
+ "seed": 38404,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9d8c8201",
+ "started_utc": "20260924T082644Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - PR #8178 T1.1's defect is one sentence with two repairs: phi to phi_c in ten lines, three of them executed or frozen, or the transform to e^{+ik.x} in two clauses, which leaves the runner, the cache and both of block 35's controls (they measure phi, not phi_c) untouched"
+ },
+ "review": "Under e^{-ik.x} the backward average has multiplier phi_c, and note line 85 states both that transform and phi; the PR's formula lines are a1's nine plus HANDOFF.md:30, so the cheaper repair is the transform.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8178:a2/; its files are probes/work/derive/corrigendum-PR8178/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8178/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "9c741e4140a7a5eef969d8e78a207bee7af4bfe4e5ae2f6dd0542556a7a0dd25",
+ "stdout_tail": "S1-S5 FOLLOW: under e^{-ik.x} the backward average has multiplier phi_c, and under e^{+ik.x} it has the stated phi; phi-phi_c=(2i/3)(sin k1+sin k2) and |phi|=|phi_c|; on L=3,4 every mode satisfies P e_k = phi_c e_k and P^T e_k = phi e_k for e_x=e^{+ik.x}; conj(phi_c)=phi, so an fft2 coefficient that steps by phi_c is measured as phi\nS6 FOLLOWS at the pinned head e6ffae5b460b: note line 85 states both the e^{-ik.x} transform and the multiplier phi in one sentence; T1.1's proof says the conjugate convention gives the stated phi; HANDOFF.md:30 carries the formula and is outside a1's nine lines; the runner writes phi with +i, so changing the transform is two clauses of prose and changing the formula touches executed code\nSUMMARY: confirmed - PR #8178 T1.1's defect is one sentence with two repairs: phi to phi_c in ten lines, three of them executed or frozen, or the transform to e^{+ik.x} in two clauses, which leaves the runner, the cache and both of block 35's controls (they measure phi, not phi_c) untouched\nHIT: confirmed - the transform clause is the cheaper repair of PR #8178 T1.1; a1's formula repair is also correct but its line list omits HANDOFF.md:30\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb1e0",
+  "at_utc": "20260924T082651Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Cross-family referee: the minus transform pairs with phi_c, note line 85 states both halves, and the formula lines are a1's nine plus HANDOFF.md:30.",
+  "by": "w-macbookpro90c72-jb1e0",
+  "at_utc": "20260924T082651Z"
+ }
+}

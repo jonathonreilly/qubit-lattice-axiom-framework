@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-persistent-sources-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jd78b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/persistent-sources/referee_w-macbookpro90c72-jd78b/check.py",
+ "seed": 82802,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0cfde5d",
+ "started_utc": "20260924T204642Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed. For the linear light-cone process a pinned set has stationary mean m(y) = sum_i c_i G(y-x_i) with c = M^{-1} alpha. The one-source formula is the case of one pin and does not superpose: the naive sum overshoots by the other charge's tail. Equal charges are screened by G(0)/(G(0)+G(d)) and opposite charges are enlarged by G(0)/(G(0)-G(d)). On the 4x4x4 torus with killing 1/10 these factors are exact rationals; they are not the transient Z^3 Green function, and the nonlinear law is untouched."
+ },
+ "review": "Two pinned sources are the 2x2 Green solve c = M^{-1} alpha, so the one-source formula does not superpose; like charges are screened and opposite charges are enlarged.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:persistent-sources:a3/; its files are probes/work/derive/persistent-sources/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/persistent-sources/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "49075660da3c54b912ba430c4e01031cc93577c05fcab7963a5a6cd08b22d68f",
+ "stdout_tail": "PASS T0 symbol: the 7-point stencil has 1 - P(k) = E(k)/7\nPASS T4 two-source algebra: equal charges are alpha/(G0+Gd), opposite charges alpha/(G0-Gd), and the naive sum overshoots by beta*Gd/G0\nPASS T1 Green values: G(0)=3337205782/2311505635 and G(2 e1)=380959524/2311505635\nPASS T2-T5 pinning: the naive sum overshoots by 95239881/1668602891; like charges are screened and opposite charges are not\nSUMMARY: confirmed. For the linear light-cone process a pinned set has stationary mean m(y) = sum_i c_i G(y-x_i) with c = M^{-1} alpha. The one-source formula is the case of one pin and does not superpose: the naive sum overshoots by the other charge's tail. Equal charges are screened by G(0)/(G(0)+G(d)) and opposite charges are enlarged by G(0)/(G(0)-G(d)). On the 4x4x4 torus with killing 1/10 these factors are exact rationals; they are not the transient Z^3 Green function, and the nonlinear law is untouched.\nHIT: confirmed - two pinned sources are the 2x2 Green solve c = M^{-1} alpha, so the one-source formula does not superpose\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd78b",
+  "at_utc": "20260924T204650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The one-source formula is the one-pin case of c = M^{-1} alpha. On the killed 4-torus the overshoot is 95239881/1668602891.",
+  "by": "w-macbookpro90c72-jd78b",
+  "at_utc": "20260924T204650Z"
+ }
+}

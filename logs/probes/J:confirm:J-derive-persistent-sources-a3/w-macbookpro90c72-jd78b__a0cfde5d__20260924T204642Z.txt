@@ -1,0 +1,6 @@
+PASS T0 symbol: the 7-point stencil has 1 - P(k) = E(k)/7
+PASS T4 two-source algebra: equal charges are alpha/(G0+Gd), opposite charges alpha/(G0-Gd), and the naive sum overshoots by beta*Gd/G0
+PASS T1 Green values: G(0)=3337205782/2311505635 and G(2 e1)=380959524/2311505635
+PASS T2-T5 pinning: the naive sum overshoots by 95239881/1668602891; like charges are screened and opposite charges are not
+SUMMARY: confirmed. For the linear light-cone process a pinned set has stationary mean m(y) = sum_i c_i G(y-x_i) with c = M^{-1} alpha. The one-source formula is the case of one pin and does not superpose: the naive sum overshoots by the other charge's tail. Equal charges are screened by G(0)/(G(0)+G(d)) and opposite charges are enlarged by G(0)/(G(0)-G(d)). On the 4x4x4 torus with killing 1/10 these factors are exact rationals; they are not the transient Z^3 Green function, and the nonlinear law is untouched.
+HIT: confirmed - two pinned sources are the 2x2 Green solve c = M^{-1} alpha, so the one-source formula does not superpose

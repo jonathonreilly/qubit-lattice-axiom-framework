@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_every_two_site_generator_the_field_moves_by_rings_and_hops_inside_one_neighbourhood_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Setting: doubled coordinates (vertex, link, plaquette and cube sites have 0, 1, 2 and 3 odd coordinates). A Gauss law puts each link site's field into the Gauss operators of both of its end vertices. (i) Nearest neighbours differ by one role, so no two link sites are adjacent. Hence every generator that is a sum of nearest-neighbour two-site terms and commutes with every Gauss operator also commutes with every link field; every compression of such a generator onto a Gauss sector does too. This holds for additive (U(1)-type) Gauss laws with static or dynamical vertex charges, and for Z2 Gauss laws. (ii) The smallest Gauss-invariant operators that move the field are vertex-link-vertex hops (only with dynamical vertex charges) and four-link rings around a plaquette. Each lies inside one site's closed neighbourhood; a vertex site's neighbourhood holds no mover. (iii) Under full soldering, the Gauss law sum_l s_l . n(v->l) is covariant, and a covariant vertex charge is a constant. The Gauss-invariant covariant operators on a plaquette site's four links have one real ring coupling. (iv) Take a vertex-star Gauss energy U sum_v (div E)^2 and transverse link fields of equal size h. Through fourth order, the ice space then has ring coupling g = 5 h^4/(32 U^3) and no configuration-dependent diagonal term. At K = -J, D = 0, vertex records and plaquette records along the normal give transverse link fields. Finite certificates: a five-site window, one plaquette and the L = 6 coarse torus. The dynamics clause (open PR 9040), the Gauss law, the soft Gauss energy and the record contents are supplied, not adopted. No photon phase, charge assignment or physical identification is claimed."
+claim_scope: "Setting: doubled coordinates (vertex, link, plaquette and cube sites have 0, 1, 2 and 3 odd coordinates). A Gauss law puts each link site's field into the Gauss operators of both of its end vertices. (i) Nearest neighbours differ by one role, so no two link sites are adjacent. Hence every generator that is a sum of nearest-neighbour two-site terms and commutes with every Gauss operator also commutes with every link field; every compression of such a generator onto a Gauss sector does too. This holds for additive (U(1)-type) Gauss laws with static or dynamical vertex charges, and for Z2 Gauss laws. (ii) The smallest Gauss-invariant operators that move the field are vertex-link-vertex hops (only with dynamical vertex charges) and four-link rings around a plaquette. Each lies inside one site's closed neighbourhood; a vertex site's neighbourhood holds no mover. (iii) Among the four landed actions of the rotations on the Bloch vector, a covariant oriented link field (an intertwiner from the spatial rotation representation) exists for full soldering alone, and it is then the Bloch component along the link. A nonconstant covariant vertex charge exists for the trivial action and the sign twist alone, so no single action has both. Under full soldering the Gauss law sum_l s_l . n(v->l) is covariant, and the covariant Gauss-invariant operators on a plaquette site's four links have one real ring coupling; the flippability projector is covariant too. (iv) Take a vertex-star Gauss energy U sum_v (div E)^2 and transverse link fields of equal size h. Through fourth order, the ice space then has ring coupling g = 5 h^4/(32 U^3) and no configuration-dependent diagonal term. At K = -J, D = 0, vertex records and plaquette records along the normal give transverse link fields. Finite certificates: a five-site window, one plaquette and the L = 6 coarse torus. The dynamics clause (open PR 9040), the Gauss law, the soft Gauss energy and the record contents are supplied, not adopted. No photon phase, charge assignment or physical identification is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_two_site_generators_2026_09_24.py
@@ -32,10 +32,14 @@ Each lies inside one site's neighbourhood: a hop inside a link site's, a
 ring inside a plaquette site's. Admissibility conditions each site on
 exactly this set.
 
-Under full soldering:
-- the Gauss law is the outward sum of link Bloch components;
-- a vertex charge must be a constant;
-- the covariant ring has one real coupling.
+Among the four landed rotation actions:
+- an oriented link field is covariant under full soldering alone, where it
+  is the Bloch component along the link;
+- a dynamical vertex charge is covariant under the trivial action and the
+  sign twist alone.
+
+No single action has both. Under full soldering the covariant ring has one
+real coupling, and the Rokhsar–Kivelson potential is covariant too.
 
 With a soft Gauss energy in place of the exact law, record fields on the
 links generate that ring at fourth order, with `g = 5h⁴/(32U³)` and no
@@ -117,6 +121,27 @@ changes are `±(ring)`.
 
 ## Theorem 3 — what soldering allows
 
+**Which action.** The landed soldering menu
+(`THE_SOLDERING_MENU_FOUR_ACTIONS_OF_THE_PROPER_CUBIC_ROTATIONS_ON_QUBIT_POSSIBILITIES_AND_WHAT_EACH_LETS_FORMATION_BUILD_BOUNDED_THEOREM_NOTE_2026-09-22.md`)
+lists four actions of the rotations on the Bloch vector:
+- trivial;
+- the sign twist `diag(1, s, s)`;
+- axis soldering `s|g|`;
+- full soldering `g`.
+
+Two requirements pull these apart:
+- **Oriented link field.** Links along one axis share a field
+  `E_l = e_a · s`. Covariance with orientation signs says that
+  `ê_a ↦ e_a` intertwines the spatial rotation with the action. That
+  needs a `T1` component, which only full soldering has. Schur's lemma
+  then makes `e_a` a multiple of `ê_a`.
+- **Nonconstant vertex charge.** A vertex site's stabilizer is the whole
+  group, so its charge needs an invariant axis. The trivial action has
+  three; the sign twist has one; axis and full soldering have none.
+
+No single action gives both an oriented field and a dynamical vertex
+charge.
+
 Under full soldering the natural link field is `E_l = s_l · ê_l`, and the
 Gauss operator becomes `G_v = Σ_l s_l · n(v→l)`, the outward Bloch
 components.
@@ -136,6 +161,9 @@ components.
     form a space of dimension 18. Their movers span `{U_p, U_p†}`.
   - The covariant Hermitian ones form a space of dimension 5, with a
     one-dimensional mover part: one real ring coupling.
+  - The flippability projector is in that space. So the ring and the
+    Rokhsar–Kivelson potential `V` are both covariant, and a plaquette
+    ring clause can reach `V = g`.
 
 ## Theorem 4 — a soft Gauss law makes the ring
 
@@ -191,19 +219,22 @@ Neither is fixed here.
   - Theorem 1 shows why the one two-site clause cannot stand in: under an
     exact Gauss law it moves nothing.
   - What moves the field is a term of Admissibility shape:
-    - a ring clause at plaquette sites (Theorem 3: one real coupling);
+    - a ring clause at plaquette sites (Theorem 3: one real coupling, and
+      the Rokhsar–Kivelson point is covariant);
     - or a soft Gauss energy at vertex sites (Theorem 4: the ring at fourth
-      order from record fields).
-- **Charged matter.** Under full soldering there is no dynamical charge on
-  a vertex qubit, and so no hop. Charges then appear only as defects of a
-  soft Gauss law.
+      order from record fields, with `V = 0` at that order).
+- **Charged matter.** No single landed action gives both an oriented link
+  field and a dynamical vertex charge. Charged matter therefore needs one of:
+  - a role-dependent action, for example soldered links with twisted
+    vertices;
+  - charges that are defects of a soft Gauss law.
 - **Kitaev gauge field.** The exact Z2 field of open PRs 9048 and 9054
   evades Theorem 1. Its bond variables `u_jk = i b_j b_k` are shared by two
   sites and are not the field of a separate link site.
 
 ## Checks
 
-The runner has 11 checks and all pass in about 4 s.
+The runner has 12 checks and all pass in about 4 s.
 
 | Check | Result |
 |---|---|
@@ -214,10 +245,11 @@ The runner has 11 checks and all pass in about 4 s.
 | Hops | Movers exist with dynamical charges (norm 5.66) and not with static charges (3e-15). |
 | Rings | The L = 6 coarse torus is bipartite and simple. It has 648 four-cycles, all plaquettes, and the divergence-free changes are `±(1, 1, −1, −1)`. |
 | Soldered vertex | Invariant to 1e-14. The invariant one-qubit space has dimension 1. The trivial action fails for 21 of 24 rotations. |
-| Soldered plaquette | Stabilizer of order 8. Gauss-commuting space of dimension 18 with 2 movers; covariant Hermitian space of dimension 5 with 1 mover. |
+| Soldered plaquette | Stabilizer of order 8. Gauss-commuting space of dimension 18 with 2 movers; covariant Hermitian space of dimension 5 with 1 mover. The flippability projector is covariant. |
 | Soft Gauss ring (ED) | Half-splitting / `5h⁴/(32U³)` = 0.99944 at h/U = 0.04 and 0.99986 at 0.02. |
 | Soft Gauss diagonal | The fourth-order diagonal energy is equal to machine precision on 5 ice configurations; the four sampled ones differ from the reference on at least 308 of 648 links. The ring element is exactly `−5/32`. |
 | Transverse fields | Largest longitudinal component 0. |
+| Four actions | Each is a homomorphism with determinant 1. Intertwiner dimensions (trivial, sign twist, axis, full): 0, 0, 0, 1. Invariant axes: 3, 1, 0, 0. |
 
 ## What this does not do
 
@@ -226,4 +258,5 @@ The runner has 11 checks and all pass in about 4 s.
   zero Rokhsar–Kivelson potential, is not determined here.
 - It does not treat record-supplied field phases or unequal magnitudes.
 - It does not treat vertex qubits that stay unrecorded under the soft law.
+- It does not treat role-dependent actions.
 - It makes no claim about non-Abelian Gauss laws or larger link spaces.

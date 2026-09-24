@@ -41,6 +41,12 @@ diagnostics, no physical reading):
 11. Transverse record fields: at K = -J, D = 0 of the soldered clause, a
     vertex record's field on a link is transverse to it, and so is a
     plaquette record's field when the record lies along the plaquette normal.
+12. The four landed actions of the rotations on the Bloch vector (trivial,
+    sign twist, axis, full): a covariant oriented link field is an
+    intertwiner from the spatial representation, and exists for full
+    soldering alone (intertwiner dimensions 0, 0, 0, 1); a nonconstant
+    covariant vertex charge needs an invariant axis (dimensions 3, 1, 0, 0).
+    No single action has both.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -362,9 +368,14 @@ for c in range(ns_gs.shape[1]):
 Hmat = np.array([np.concatenate([M.ravel().real, M.ravel().imag]) for M in herm])
 hdim = np.linalg.matrix_rank(Hmat, tol=1e-9)
 hmov = np.linalg.matrix_rank(np.array([np.concatenate([offdiag(M).real, offdiag(M).imag]) for M in herm]), tol=1e-9)
-check("soldered plaquette: 8 rotations fix it; Gauss-commuting operators dim 18 with 2 movers; covariant Hermitian dim 5 with one real ring coupling",
-      len(stab) == 8 and gcov < 1e-10 and ns_g.shape[1] == 18 and mov_g == 2 and hdim == 5 and hmov == 1,
-      f"stabilizer {len(stab)}; corner covariance {gcov:.1e}; Gauss-commuting {ns_g.shape[1]}, movers {mov_g}; covariant Hermitian {hdim}, movers {hmov}")
+# the flippability projector (the ring pair) lies in the covariant span, so U + U^dag and the
+# Rokhsar-Kivelson potential are both covariant
+ring_pair = [k for k in range(16) if np.allclose([np.real(Bq[:, k].conj() @ Cv @ Bq[:, k]) for Cv in C], 0)]
+Pflip = sum(np.outer(Bq[:, k], Bq[:, k].conj()) for k in ring_pair)
+in_span = np.linalg.matrix_rank(np.vstack([Hmat, np.concatenate([Pflip.ravel().real, Pflip.ravel().imag])]), tol=1e-9) == hdim
+check("soldered plaquette: 8 rotations fix it; Gauss-commuting operators dim 18 with 2 movers; covariant Hermitian dim 5 with one real ring coupling and the flippability projector",
+      len(stab) == 8 and gcov < 1e-10 and ns_g.shape[1] == 18 and mov_g == 2 and hdim == 5 and hmov == 1 and len(ring_pair) == 2 and in_span,
+      f"stabilizer {len(stab)}; corner covariance {gcov:.1e}; Gauss-commuting {ns_g.shape[1]}, movers {mov_g}; covariant Hermitian {hdim}, movers {hmov}; flippable pair {len(ring_pair)} states, projector covariant {in_span}")
 
 # ------------------------------------------------ 9-10. soft Gauss law
 Uen = 1.0
@@ -492,6 +503,30 @@ for a in range(3):                       # link axis
         worst = max(worst, abs((M @ qn)[a]))
 check("transverse record fields at K = -J, D = 0: vertex records, and plaquette records along the normal, give link fields with no component along the link",
       worst < 1e-12, f"max longitudinal component {worst:.1e}")
+
+# ------------------------------------------- 12. the four landed actions
+def perm_sign(R):
+    P = np.abs(R)
+    return round(np.linalg.det(P))
+
+
+ACTIONS = {
+    "trivial": lambda R: np.eye(3),
+    "sign twist": lambda R: np.diag([1.0, perm_sign(R), perm_sign(R)]),
+    "axis": lambda R: perm_sign(R) * np.abs(R),
+    "full": lambda R: R,
+}
+homs, dets, intertw, invar = [], [], [], []
+for name, rho in ACTIONS.items():
+    homs.append(max(np.abs(rho(R1 @ R2) - rho(R1) @ rho(R2)).max() for R1 in rots for R2 in rots))
+    dets.append(min(np.linalg.det(rho(R)) for R in rots))
+    # intertwiners T with rho(R) T = T R for all R (vectorized row-major)
+    rows = np.vstack([np.kron(rho(R), np.eye(3)) - np.kron(np.eye(3), R.T) for R in rots])
+    intertw.append(null_space(rows).shape[1])
+    invar.append(null_space(np.vstack([rho(R) - np.eye(3) for R in rots])).shape[1])
+check("four landed actions: oriented link field (intertwiner from the spatial rotation) exists for full soldering alone; nonconstant vertex charge needs an invariant axis",
+      max(homs) < 1e-12 and min(dets) > 0.5 and intertw == [0, 0, 0, 1] and invar == [3, 1, 0, 0],
+      f"homomorphism defect {max(homs):.0e}; det 1; intertwiner dims (trivial, sign twist, axis, full) {intertw}; invariant axes {invar}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

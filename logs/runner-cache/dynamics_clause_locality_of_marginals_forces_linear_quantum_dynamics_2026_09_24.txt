@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_locality_of_marginals_forces_linear_quantum_dynamics_2026_09_24.py
-runner_sha256: a3eb0ab7f655f7beafa288c961e59674bdb7c3f349b17350ce81e80933c3280a
+runner_sha256: 94800b68795954adf1336502cb7e7432497d519755209ab7b6986da03fff4d0e
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.71
 status: ok
 ----- stdout -----
 [PASS] nonlinear evolutions signal: the site's marginal after evolution depends on whether and how a distant partner was recorded :: largest marginal shift: state-dependent precession 0.572, purity-dependent contraction 0.074
 [PASS] linear channels do not signal: random completely positive channels give the same marginal for every steering choice :: largest shift over 50 random channels 2.2e-16
 [PASS] chord consistency forces affinity: the precession passes only at zero nonlinearity, failing more as it grows :: largest chord violation g 0.0: 2.8e-16, g 0.05: 2.4e-02, g 0.5: 2.4e-01, g 1.5: 6.9e-01
-[PASS] complete positivity is forced: the transpose on one half of a singlet gives a negative joint eigenvalue; channels never do :: transpose: smallest joint eigenvalue -0.500; random channels: smallest -2.2e-16
-[PASS] reversibility leaves unitaries: a unitary channel's inverse is a channel; a non-unitary channel's inverse is not completely positive :: smallest Choi eigenvalue of the inverse: unitary -5.5e-16; worst of 20 random channels -4.061
+[PASS] complete positivity is forced: the transpose on half a singlet, then a field rotation and a Heisenberg bond, gives a negative product-record probability; channels never go negative :: transpose: smallest joint eigenvalue -0.500; most negative product-record probability after rotation and bond -0.430; random channels: smallest eigenvalue -2.2e-16
+[PASS] reversibility leaves unitaries: a unitary channel's inverse is a channel; a non-unitary channel's inverse is not completely positive :: smallest Choi eigenvalue of the inverse: unitary -2.1e-16; worst of 20 random channels -10.180
 TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----

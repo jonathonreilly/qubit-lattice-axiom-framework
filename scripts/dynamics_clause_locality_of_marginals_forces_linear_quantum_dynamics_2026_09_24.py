@@ -17,8 +17,10 @@ steering applies to the evolution between records. The runner certifies
    violation vanishes only at zero nonlinearity.
 4. Complete positivity is forced: the transpose (positive, not completely
    positive) applied to one half of a singlet gives a joint operator with
-   eigenvalue -1/2, so joint record probabilities would go negative; random
-   channels keep every joint state positive.
+   eigenvalue -1/2. Through the clause's own operations (a record-field
+   rotation of the site, then a Heisenberg bond with the partner) some
+   product-record probability becomes negative. Random channels keep every
+   joint state positive.
 5. Reversibility leaves unitaries: a random unitary channel's inverse is a
    channel; a random non-unitary channel's inverse is not completely
    positive (negative Choi eigenvalue).
@@ -170,10 +172,26 @@ worst_pos = 0.0
 for _ in range(50):
     kr = random_channel()
     worst_pos = min(worst_pos, np.linalg.eigvalsh(partial_map_on_first(rho_s, lambda A: apply(kr, A))).min())
-check("complete positivity is forced: the transpose on one half of a singlet gives a negative joint eigenvalue; channels never do",
-      abs(neg + 0.5) < 1e-12 and worst_pos > -1e-12,
-      f"transpose: smallest joint eigenvalue {neg:.3f}; random channels: smallest {worst_pos:.1e}")
-
+# The negative eigenvalue becomes a negative record probability through the clause's own operations: a
+# record-supplied field rotates the site (open PR 9041), the partner is brought next to it by swaps, and a
+# Heisenberg bond acts on the pair; then both form product records. (Product records straight after a
+# partial transpose are never negative, and every clause bond leaves |Phi+> invariant, so the rotation is
+# needed.)
+S2 = [PX / 2, PY / 2, PZ / 2]
+SS2 = sum(np.kron(s_, s_) for s_ in S2)
+most_neg = 0.0
+for _ in range(300):
+    ax = unit(rng.normal(size=3))
+    V = expm(-1j * rng.uniform(0, np.pi) * sum(ax[k] * PAULI[k] for k in range(3)) / 2)
+    U2 = expm(-1j * rng.uniform(0, 2 * np.pi) * SS2) @ np.kron(V, I2)
+    Y2 = U2 @ transposed @ U2.conj().T
+    for _ in range(40):
+        pa = 0.5 * (I2 + sum(v * P for v, P in zip(unit(rng.normal(size=3)), PAULI)))
+        pb = 0.5 * (I2 + sum(v * P for v, P in zip(unit(rng.normal(size=3)), PAULI)))
+        most_neg = min(most_neg, np.real(np.trace(np.kron(pa, pb) @ Y2)))
+check("complete positivity is forced: the transpose on half a singlet, then a field rotation and a Heisenberg bond, gives a negative product-record probability; channels never go negative",
+      abs(neg + 0.5) < 1e-12 and worst_pos > -1e-12 and most_neg < -0.05,
+      f"transpose: smallest joint eigenvalue {neg:.3f}; most negative product-record probability after rotation and bond {most_neg:.3f}; random channels: smallest eigenvalue {worst_pos:.1e}")
 
 # ------------------------------------------------ 5. reversibility leaves unitaries
 def transfer(kraus):

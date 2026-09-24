@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-waves-need-signed-weights-a5",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jb01b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/waves-need-signed-weights/referee_w-macbookpro90c72-jb01b/check.py",
+ "seed": 39156,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e2ea87cc",
+ "started_utc": "20260924T083916Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the gauge identity, the three exact null sets, and the four-point front. The 61-point grid and its 'single point k=0' were not used: two of the three breakers are also unimodular at k=pi. The J-level and reducible bookkeeping were not in the attempt."
+ },
+ "review": "The gauge identities and the exact null sets reproduce the characterization: mixing and half-step velocities qualify, and the two-site and mismatched rules are unimodular only on lattices, including k=pi.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:waves-need-signed-weights:a5/; its files are probes/work/derive/waves-need-signed-weights/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/waves-need-signed-weights/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "c9085c5f53bd5dd3f0aa7a1d7b69cb473bfcb924844f2b9bced07c9455b77978",
+ "stdout_tail": "PASS exceptional rules: mixing at one velocity, the gauge pair y=0 and y=2, and the half-step v=3/2 are similarities of a stochastic matrix, and the mixer is not a permutation\nPASS breakers: the two-site block has |lambda|=|cos k|, equal to 1 exactly on pi Z; the persistent walk only on 2 pi Z; the mismatched cycles at both 0 and pi\nPASS fronts: four chiral copies on Z^2 have velocities +-e1 and +-e2; a nonzero displacement difference has finitely many phases in one period\nHIT: confirmed - nonnegative matrix weights are unimodular on an open set only when every block is one site and the displacements are one velocity plus a gauge. Stochastic mixing and the pairs (y=0,y=2) and (y=0,y=3) qualify and are not permutations. A two-site block is unimodular exactly on pi Z, not merely at 0; mismatched cycle means are unimodular at 0 and pi; the persistent walk only on 2 pi Z. Four chiral copies give four velocities.\nSUMMARY: confirmed the gauge identity, the three exact null sets, and the four-point front. The 61-point grid and its 'single point k=0' were not used: two of the three breakers are also unimodular at k=pi. The J-level and reducible bookkeeping were not in the attempt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb01b",
+  "at_utc": "20260924T083922Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Gauge identities confirm mixing and half-step velocities. The two-site block and the mismatched cycles are unimodular on pi Z, so the grid's single point k=0 is too small. Four chiral copies give four velocities.",
+  "by": "w-macbookpro90c72-jb01b",
+  "at_utc": "20260924T083922Z"
+ }
+}

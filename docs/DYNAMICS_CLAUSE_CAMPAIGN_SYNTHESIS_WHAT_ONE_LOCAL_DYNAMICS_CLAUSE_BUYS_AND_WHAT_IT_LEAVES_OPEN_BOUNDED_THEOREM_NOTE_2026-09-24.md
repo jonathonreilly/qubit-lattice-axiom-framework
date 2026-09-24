@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of thirteen campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports a move; and, for the non-Abelian block, that one qubit's SU(2) commutant is the scalars and that the 4-dimensional SU(2) link carries a covariant link operator. It also checks that the fourteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
+claim_scope: "Synthesis of fourteen campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports a move; and, for the non-Abelian block, that one qubit's SU(2) commutant is the scalars and that the 4-dimensional SU(2) link carries a covariant link operator; and, for the randomizer block, that a distant record steers every chord and that the trace rule, but not a cubic deformation, matches the steered average. It also checks that the fifteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -11,7 +11,7 @@ runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_202
 
 **Date:** 2026-09-24
 **Type:** bounded_theorem
-**Status:** synthesis of thirteen open campaign blocks with consolidated re-derivations; unaudited.
+**Status:** synthesis of fourteen open campaign blocks with consolidated re-derivations; unaudited.
 
 ## The gap this campaign addressed
 
@@ -49,6 +49,7 @@ one clause generates across the lanes.
 | D-roles | doubled-coordinate roles (vertex, link, plaquette, cube sites) | 9066, 9069, 9077, 9081 |
 | D-gauss | a Gauss law on link sites, exact or as a soft vertex-star energy | 9066, 9069, 9077, 9081 |
 | D-star | a covariant generator on a plaquette site's four link neighbours | 9072 |
+| D-loc | marginal record distributions do not depend on distant record formation | 9083 |
 
 ## What the clause generates
 
@@ -149,12 +150,19 @@ one clause generates across the lanes.
       reaches that with a covariant link operator.
     - So SU(2) needs 2 qubits per link, SU(3) 3, and independent Standard
       Model fields 6.
+14. **A distant record is a recorded randomizer (open PR 9083).**
+    - The clause carries a condition qubit's purification to any distance.
+    - Recording the partner steers the qubit to either end of any chord.
+    - Under D-loc (marginals do not depend on distant record formation), the
+      law is affine: the trace rule. Repeat certainty then orients it to
+      the Born law.
+    - This discharges the landed affine/Born gate's first obligation.
 
 **The ladder.** What each sector needs from the dynamics and the lattice:
 
 | Sector | Needs | Blocks |
 |---|---|---|
-| Quantum probability (Born form, frequencies, Bell) | the two-site clause and the trace rule | 9041, 9043, 9046, 9052 |
+| Quantum probability (Born form, frequencies, Bell) | the two-site clause; the trace rule follows from locality of marginals (D-loc) | 9041, 9043, 9046, 9052, 9083 |
 | Z2 gauge field and Majorana fermions | the two-site clause at the compass point, plus a record carving | 9048, 9054 |
 | U(1) photon | one neighbourhood: a plaquette ring, or a soft vertex Gauss energy | 9066, 9069, 9072 |
 | Linearized-gravity tensor field | more than one neighbourhood: the smallest moves span a vertex's second neighbourhood | 9077 |
@@ -193,10 +201,10 @@ one clause generates across the lanes.
 ## Consolidated certificates
 
 The runner re-derives one identity per block, independently of that
-block's runner, and checks the ledger. There are fourteen checks and all
+block's runner, and checks the ledger. There are fifteen checks and all
 pass in about two seconds.
-- **L.** The fourteen declared points are exactly those used by the
-  thirteen blocks.
+- **L.** The fifteen declared points are exactly those used by the
+  fourteen blocks.
 - **1.** Coupling dimensions 1, 1 and 3.
 - **2.** The projection lemma, the resultant ground state, and the
   pentagon law `(1 + t)/2`.
@@ -219,6 +227,8 @@ pass in about two seconds.
   neighbourhood moves for every role.
 - **13.** Scalar SU(2) commutant on a qubit, and covariant link operators
   on the 4-dimensional SU(2) link.
+- **14.** Steering of random chords, the trace rule's exact steered
+  average, and a cubic deformation's shift.
 
 ## Independent checks
 
@@ -248,7 +258,8 @@ Two checkers wrote separate code and did not read the campaign's runners.
 
 A candidate built on the four axioms plus one local dynamics clause holds
 together in its quantum-probability sector:
-- the Born form, from the trace rule;
+- the Born form, from the trace rule, which locality of marginals forces
+  (open PR 9083);
 - frequencies, through clustering;
 - Bell values, which reach the quantum bound and no further.
 

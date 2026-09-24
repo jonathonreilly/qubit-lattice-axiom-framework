@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
-runner_sha256: 7c4b3aa633c24be6f96434c66b0a1cb211c9842c31c5c3270f42f8dc5b76ec4a
-input_fingerprint_sha256: 34f60299a31ad92076fc9888e99f4705aaee67b684e2cc2f3aa85531aa371fdb
+runner_sha256: 4e91db5a551cebbe28268333530ef334d5567068dfbbcfaebcdec3117cfed1f6
+input_fingerprint_sha256: 1604ce4030c079726d3b7c368cc03ae97bdcb5ad0312c71a3b4d8135873bb321
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.98
+elapsed_sec: 0.97
 status: ok
 ----- stdout -----
-[PASS] ledger: the decision points used are exactly the declared ones :: 14 declared, 14 used across 13 blocks
+[PASS] ledger: the decision points used are exactly the declared ones :: 15 declared, 15 used across 14 blocks
 1. the covariant nearest-neighbour couplings
 [PASS] possibility covariance leaves one coupling (Heisenberg); full soldering leaves three :: dims 1, 1, 3
 2. records act as fields
@@ -34,7 +34,9 @@ status: ok
 [PASS] tensor rows use exactly their link site's six neighbours; no single neighbourhood supports a move :: six-neighbour placement True; neighbourhood null dimensions (vertex, link, plaquette, cube) [0, 0, 0, 0]
 13. non-Abelian links
 [PASS] one qubit's SU(2) commutant is the scalars; the 4-dimensional SU(2) link carries a covariant link operator :: commutant dimension 1; covariant link operators on (2, 1) + (1, 2): 2
-TOTAL: PASS=14 FAIL=0
+14. a distant record is a recorded randomizer
+[PASS] a distant record steers every chord; the trace rule matches the steered average, a cubic deformation does not :: steering deviation 9.0e-16; trace-rule discrepancy 1.1e-16; cubic shift 0.072
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

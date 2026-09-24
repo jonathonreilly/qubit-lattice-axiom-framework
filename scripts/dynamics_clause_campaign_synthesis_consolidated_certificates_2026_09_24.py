@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the thirteen blocks are exactly the
+L. Ledger: the decision points used by the fourteen blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -44,6 +44,9 @@ L. Ledger: the decision points used by the thirteen blocks are exactly the
    sites are never adjacent; no single neighbourhood supports a move.
 13. (9081) The SU(2) action on one qubit has scalar commutant; the
    2N-dimensional link (N, 1) + (1, N) carries a covariant link operator.
+14. (9083) A record on a purifying partner steers a qubit to either end of
+   a chord with the chord weights; the trace rule matches the steered
+   average and a cubic deformation does not.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -101,6 +104,7 @@ DECLARED = {
     "D-roles": "doubled-coordinate roles (vertex, link, plaquette, cube sites)",
     "D-gauss": "a Gauss law on link sites, exact or as a soft vertex-star energy",
     "D-star": "a covariant generator on a plaquette site's four link neighbours",
+    "D-loc": "marginal record distributions do not depend on distant record formation",
 }
 USED = {
     9040: {"D-dyn", "D-pc", "D-sold"},
@@ -116,6 +120,7 @@ USED = {
     9072: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-star", "D-tr", "D-pattern"},
     9077: {"D-dyn", "D-roles", "D-gauss"},
     9081: {"D-roles", "D-gauss"},
+    9083: {"D-dyn", "D-perm", "D-menu", "D-loc", "D-relax"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -571,6 +576,46 @@ gw_ = np.linalg.eigvalsh(G_.conj().T @ G_)
 nlink = int(np.sum(gw_ < 1e-9 * max(1.0, gw_.max())))
 check("one qubit's SU(2) commutant is the scalars; the 4-dimensional SU(2) link carries a covariant link operator",
       cm == 1 and nlink >= 1, f"commutant dimension {cm}; covariant link operators on (2, 1) + (1, 2): {nlink}")
+
+# ------------------------------------------ 14: the distant randomizer
+print("14. a distant record is a recorded randomizer")
+Pm = [np.array([[0, 1], [1, 0]], dtype=complex), np.array([[0, -1j], [1j, 0]]), np.diag([1.0 + 0j, -1.0])]
+
+
+def rho_r(r):
+    return 0.5 * (np.eye(2) + sum(r[k] * Pm[k] for k in range(3)))
+
+
+def bl(rho):
+    return np.real(np.array([np.trace(rho @ P) for P in Pm]))
+
+
+worst_steer, worst_tr, shift_cub = 0.0, 0.0, 0.0
+for _ in range(100):
+    r = rng.normal(size=3)
+    r = r / np.linalg.norm(r) * rng.uniform(0.05, 0.95)
+    d = rng.normal(size=3)
+    d /= np.linalg.norm(d)
+    bb = r @ d
+    disc = np.sqrt(bb * bb - (r @ r - 1))
+    t1, t2 = -bb + disc, -bb - disc
+    n1, n2 = r + t1 * d, r + t2 * d
+    pw = t2 / (t2 - t1)
+    k1 = np.linalg.eigh(rho_r(n1))[1][:, 1]
+    k2 = np.linalg.eigh(rho_r(n2))[1][:, 1]
+    Psi = np.sqrt(pw) * np.kron(k1, [1, 0]) + np.sqrt(1 - pw) * np.kron(k2, [0, 1])
+    v0 = Psi.reshape(2, 2)[:, 0]
+    p0 = np.real(v0.conj() @ v0)
+    worst_steer = max(worst_steer, abs(p0 - pw), np.linalg.norm(bl(np.outer(v0, v0.conj()) / p0) - n1))
+    mm = rng.normal(size=3)
+    mm /= np.linalg.norm(mm)
+    tr = lambda x: 0.5 * (1 + x)
+    cub = lambda x: 0.5 * (1 + x + 0.3 * (x ** 3 - x))
+    worst_tr = max(worst_tr, abs(pw * tr(n1 @ mm) + (1 - pw) * tr(n2 @ mm) - tr(r @ mm)))
+    shift_cub = max(shift_cub, abs(pw * cub(n1 @ mm) + (1 - pw) * cub(n2 @ mm) - cub(r @ mm)))
+check("a distant record steers every chord; the trace rule matches the steered average, a cubic deformation does not",
+      worst_steer < 1e-10 and worst_tr < 1e-12 and shift_cub > 1e-2,
+      f"steering deviation {worst_steer:.1e}; trace-rule discrepancy {worst_tr:.1e}; cubic shift {shift_cub:.3f}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

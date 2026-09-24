@@ -1,0 +1,505 @@
+===== runner cache v1 =====
+runner: scripts/homogeneous_field_star_penalty_for_mobile_records_2026_09_24.py
+runner_sha256: c517265b26fa32fec00bc1eed432b1bb9b6811832279b6b9efd42ac396ec8772
+input_fingerprint_sha256: 09df1c866554f0606a9ae1f8a185e3a93893592764ed64e20d30bc5a89cad1c9
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+Evidence boundary: supplied models; finite controls do not establish native physics, limit interchange or audit status.
+[PASS] component homogeneous_field_star_record_check.py; stdout sha256=006fff0c3267db472fba274717c952039a9099268d6a253c713ab97ae237f259
+RESULT HOMOGENEOUS_FIELD_STAR_RECORD_RESULTS.json
+{
+  "status": "PASS",
+  "dependencies": {
+    "record_density_and_fast_defect_check.py": "81678c2d9256e88b7854bb02fae492345f183b8e2171d6b870c80bda168a88fc",
+    "hardcore_record_ring_and_formation_check.py": "1fcb36a522dddc70b4b51edc4f4a20d713dd3c8fb1e292e2cdc5ff07bcb59649"
+  },
+  "local_star_identities": [
+    {
+      "geometry": "same_edge",
+      "full_dimension": 18,
+      "refinement": "plus_coherent",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "same_edge",
+      "full_dimension": 18,
+      "refinement": "minus_coherent",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "same_edge",
+      "full_dimension": 18,
+      "refinement": "charge_resolved",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "shared_A",
+      "full_dimension": 108,
+      "refinement": "plus_coherent",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "shared_A",
+      "full_dimension": 108,
+      "refinement": "minus_coherent",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "shared_A",
+      "full_dimension": 108,
+      "refinement": "charge_resolved",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "shared_B",
+      "full_dimension": 108,
+      "refinement": "plus_coherent",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "shared_B",
+      "full_dimension": 108,
+      "refinement": "minus_coherent",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "shared_B",
+      "full_dimension": 108,
+      "refinement": "charge_resolved",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "disjoint",
+      "full_dimension": 324,
+      "refinement": "plus_coherent",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "disjoint",
+      "full_dimension": 324,
+      "refinement": "minus_coherent",
+      "exact_birth_star_energy_identities": true
+    },
+    {
+      "geometry": "disjoint",
+      "full_dimension": 324,
+      "refinement": "charge_resolved",
+      "exact_birth_star_energy_identities": true
+    }
+  ],
+  "bulk_first_excursions": [
+    {
+      "shape": [
+        6,
+        6
+      ],
+      "configuration_hex": "0x111bbb111bbb111bbb",
+      "first_hops": 36,
+      "each_first_excursion_energy_over_Delta": 1,
+      "birth_targets_with_star_energy_1": 2,
+      "birth_targets_with_star_energy_3": 1,
+      "mean_bare_target_energy_over_Delta": 1.6666666666666667,
+      "all_first_hops_checked": true
+    },
+    {
+      "shape": [
+        6,
+        6
+      ],
+      "configuration_hex": "0x6fa85b669ba7911590",
+      "first_hops": 36,
+      "each_first_excursion_energy_over_Delta": 1,
+      "birth_targets_with_star_energy_1": 2,
+      "birth_targets_with_star_energy_3": 1,
+      "mean_bare_target_energy_over_Delta": 1.6666666666666667,
+      "all_first_hops_checked": true
+    },
+    {
+      "shape": [
+        6,
+        6
+      ],
+      "configuration_hex": "0x5e0efa6f885e644946",
+      "first_hops": 36,
+      "each_first_excursion_energy_over_Delta": 1,
+      "birth_targets_with_star_energy_1": 2,
+      "birth_targets_with_star_energy_3": 1,
+      "mean_bare_target_energy_over_Delta": 1.6666666666666667,
+      "all_first_hops_checked": true
+    },
+    {
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "configuration_hex": "0xf3cf11451f3cf11451f3cf1145128a2a79e728a2a79e728a2a79e7f3cf11451f3cf11451f3cf1145128a2a79e728a2a79e728a2a79e7f3cf11451f3cf11451f3cf1145128a2a79e728a2a79e728a2a79e7",
+      "first_hops": 324,
+      "each_first_excursion_energy_over_Delta": 1,
+      "birth_targets_with_star_energy_1": 3,
+      "birth_targets_with_star_energy_3": 2,
+      "mean_bare_target_energy_over_Delta": 1.8,
+      "all_first_hops_checked": true
+    },
+    {
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "configuration_hex": "0xd1436faae0993a6def85a7eace2296c993bcd8cd6796328e24c2de9e23eec4bad0393c0bbf5da6d770c18ea26e66009cf2127591428b85065b71c7a696ab0b41a9246494a6a9da99b334dc5ab7ac4f13e6",
+      "first_hops": 324,
+      "each_first_excursion_energy_over_Delta": 1,
+      "birth_targets_with_star_energy_1": 3,
+      "birth_targets_with_star_energy_3": 2,
+      "mean_bare_target_energy_over_Delta": 1.8,
+      "all_first_hops_checked": true
+    },
+    {
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "configuration_hex": "0x68981a07cd617e1fa6774b3c70329e0af88e2e42762534c271eb636add1df73d37db1ba5c5329a499f03d13b8d49faccdb6b135aabe9ab4314465be12d2401b0d94ea4c2b38a07139552cfaa1b914e26e7",
+      "first_hops": 324,
+      "each_first_excursion_energy_over_Delta": 1,
+      "birth_targets_with_star_energy_1": 3,
+      "birth_targets_with_star_energy_3": 2,
+      "mean_bare_target_energy_over_Delta": 1.8,
+      "all_first_hops_checked": true
+    }
+  ],
+  "finite_square": {
+    "physical_dimension": 9,
+    "basis": [
+      [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "star_penalty_over_Delta": [
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "number_of_created_pairs": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "fixed_number_penalty_equals_original": true,
+    "live_controls": [
+      {
+        "Delta": 4096.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.25,
+        "epsilon": 0.10511205190671431,
+        "star_energy_density_over_Delta": 0.005876787906494362,
+        "mean_births_per_vertex": 0.0024186441442583433,
+        "uniform_density_upper": 0.13810679320049754,
+        "trace_error": 5.3102349086351973e-14
+      },
+      {
+        "Delta": 4096.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.5,
+        "epsilon": 0.10511205190671431,
+        "star_energy_density_over_Delta": 0.012698090433415903,
+        "mean_births_per_vertex": 0.004591485927795321,
+        "uniform_density_upper": 0.1988737822087165,
+        "trace_error": 1.0771919781571458e-13
+      },
+      {
+        "Delta": 4096.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 1.0,
+        "epsilon": 0.10511205190671431,
+        "star_energy_density_over_Delta": 0.01238941658811454,
+        "mean_births_per_vertex": 0.008390344428965756,
+        "uniform_density_upper": 0.35355339059327373,
+        "trace_error": 2.2919428073650027e-13
+      },
+      {
+        "Delta": 16384.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.25,
+        "epsilon": 0.07432544468767006,
+        "star_energy_density_over_Delta": 0.0029740435032990535,
+        "mean_births_per_vertex": 0.0012538640841570578,
+        "uniform_density_upper": 0.06905339660024877,
+        "trace_error": 1.972321131599315e-13
+      },
+      {
+        "Delta": 16384.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.5,
+        "epsilon": 0.07432544468767006,
+        "star_energy_density_over_Delta": 0.007385307352325336,
+        "mean_births_per_vertex": 0.0023787964283265295,
+        "uniform_density_upper": 0.09943689110435824,
+        "trace_error": 3.73767162911233e-13
+      },
+      {
+        "Delta": 16384.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 1.0,
+        "epsilon": 0.07432544468767006,
+        "star_energy_density_over_Delta": 0.011039394929937465,
+        "mean_births_per_vertex": 0.004346232532484446,
+        "uniform_density_upper": 0.17677669529663687,
+        "trace_error": 6.097406034117048e-13
+      },
+      {
+        "Delta": 65536.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.25,
+        "epsilon": 0.052556025953357156,
+        "star_energy_density_over_Delta": 0.0024760476409947723,
+        "mean_births_per_vertex": 0.0006386786588740017,
+        "uniform_density_upper": 0.034526698300124385,
+        "trace_error": 3.130138613225669e-14
+      },
+      {
+        "Delta": 65536.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.5,
+        "epsilon": 0.052556025953357156,
+        "star_energy_density_over_Delta": 0.0050489360063901935,
+        "mean_births_per_vertex": 0.0012113441492506527,
+        "uniform_density_upper": 0.04971844555217912,
+        "trace_error": 1.4641967517627378e-14
+      },
+      {
+        "Delta": 65536.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 1.0,
+        "epsilon": 0.052556025953357156,
+        "star_energy_density_over_Delta": 0.003598134662559249,
+        "mean_births_per_vertex": 0.002212847885321757,
+        "uniform_density_upper": 0.08838834764831843,
+        "trace_error": 2.90519408497232e-13
+      },
+      {
+        "Delta": 262144.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.25,
+        "epsilon": 0.03716272234383503,
+        "star_energy_density_over_Delta": 0.001677720266192593,
+        "mean_births_per_vertex": 0.00032233483079430024,
+        "uniform_density_upper": 0.017263349150062193,
+        "trace_error": 1.0518610474336527e-12
+      },
+      {
+        "Delta": 262144.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.5,
+        "epsilon": 0.03716272234383503,
+        "star_energy_density_over_Delta": 0.0018713577072010906,
+        "mean_births_per_vertex": 0.0006112663726617108,
+        "uniform_density_upper": 0.02485922277608956,
+        "trace_error": 1.841470657251157e-12
+      },
+      {
+        "Delta": 262144.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 1.0,
+        "epsilon": 0.03716272234383503,
+        "star_energy_density_over_Delta": 0.002727814179310739,
+        "mean_births_per_vertex": 0.0011166375700942719,
+        "uniform_density_upper": 0.044194173824159216,
+        "trace_error": 1.9478077128825333e-12
+      }
+    ],
+    "energy_ledger_controls": [
+      {
+        "Delta": 4096.0,
+        "low_eigenenergy": -90.48829481556382,
+        "birth_rate": 0.02160432732665978,
+        "mean_power_supplied_by_formation": 90.4462634704253,
+        "energy_per_birth_over_Delta": 1.0220918688514573,
+        "exact_power_identity_residual_over_Delta": 1.2975731600306517e-15
+      },
+      {
+        "Delta": 16384.0,
+        "low_eigenenergy": -181.00846950719034,
+        "birth_rate": 0.010925857230278106,
+        "mean_power_supplied_by_formation": 180.9869175561832,
+        "energy_per_birth_over_Delta": 1.0110478802189447,
+        "exact_power_identity_residual_over_Delta": -7.28583859910259e-17
+      },
+      {
+        "Delta": 65536.0,
+        "low_eigenenergy": -362.03319334401453,
+        "birth_rate": 0.0054936735449014635,
+        "mean_power_supplied_by_formation": 362.0222816153117,
+        "energy_per_birth_over_Delta": 1.0055241881308574,
+        "exact_power_identity_residual_over_Delta": -2.175343238874916e-15
+      },
+      {
+        "Delta": 262144.0,
+        "low_eigenenergy": -724.0745932273373,
+        "birth_rate": 0.00275449616445276,
+        "mean_power_supplied_by_formation": 724.0691032241261,
+        "energy_per_birth_over_Delta": 1.002762125370892,
+        "exact_power_identity_residual_over_Delta": -8.144526719711109e-16
+      }
+    ]
+  },
+  "runtime_seconds": 0.030314916977658868,
+  "scope": "The Hamiltonian is homogeneous; the selected external Gauss-charge sector and initial checkerboard remain supplied. Uniform mean density control is not uniform field-dynamics convergence."
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

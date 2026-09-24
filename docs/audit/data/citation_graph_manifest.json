@@ -1,6 +1,6 @@
 {
- "edge_count": 14091,
- "node_count": 6510,
+ "edge_count": 14503,
+ "node_count": 6607,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -726,6 +726,78 @@
    "deps_hash": "2b42b09047b0",
    "out_degree": 4
   },
+  "admissibility_rule_a_chessboard_record_background_is_felt_only_as_a_rest_mass_and_a_wall_between_out_of_step_domains_binds_exact_zero_modes_when_odd_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "abb2d320a578",
+   "out_degree": 5
+  },
+  "admissibility_rule_a_closed_lattice_at_rest_never_in_the_curvature_member_whatever_the_signs_in_the_simplest_member_only_with_bodies_of_both_signs_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "ff4ecd57b717",
+   "out_degree": 5
+  },
+  "admissibility_rule_a_delay_for_the_rate_field_neighbour_referred_motion_does_not_propagate_a_reference_to_distant_clocks_does_at_a_speed_set_by_the_local_rate_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "b426b43ab210",
+   "out_degree": 4
+  },
+  "admissibility_rule_a_formation_event_in_the_curvature_member_the_ledger_can_always_be_kept_and_then_the_clocks_far_field_jumps_at_second_order_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "4ceb963f0842",
+   "out_degree": 4
+  },
+  "admissibility_rule_a_ledger_linear_in_the_rates_every_clock_a_multiplier_the_ledger_a_wall_term_and_the_curvature_member_doubles_the_bending_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "8151e8a2bc05",
+   "out_degree": 6
+  },
+  "admissibility_rule_a_phase_timed_by_the_local_clock_every_packet_falls_towards_slow_clocks_force_is_energy_times_gradient_weight_and_inertia_tied_by_the_walk_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "2ab57d7cb8cd",
+   "out_degree": 3
+  },
+  "admissibility_rule_a_pinned_source_under_light_cone_formation_is_answered_by_the_inverse_lattice_laplacian_within_a_factor_between_m_squared_and_one_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "b9de14cf60ea",
+   "out_degree": 3
+  },
+  "admissibility_rule_a_record_that_cannot_read_the_field_from_its_own_motion_hops_on_its_own_clock_and_with_kept_books_records_attract_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "580e77df8c80",
+   "out_degree": 5
+  },
+  "admissibility_rule_a_streaming_clause_with_an_isotropic_second_order_term_content_as_a_bias_on_a_symmetric_walk_unbiased_capture_and_its_price_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "f6441c3f8815",
+   "out_degree": 5
+  },
+  "admissibility_rule_action_and_reaction_the_rate_fields_source_is_the_amplitudes_energy_density_matched_pulls_and_a_kept_ledger_fix_the_clock_laws_second_order_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "5ec70685512e",
+   "out_degree": 4
+  },
+  "admissibility_rule_alternating_lengths_are_a_relabelling_invisible_to_the_walk_and_free_for_the_ledger_a_rest_energy_needs_the_bonds_own_amplitude_no_strain_gaps_at_first_order_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "ae219f2a5bc3",
+   "out_degree": 6
+  },
+  "admissibility_rule_amplitudes_of_negative_energy_fall_like_the_others_and_source_the_opposite_field_a_negative_body_at_rest_has_a_largest_size_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "8873febe8114",
+   "out_degree": 6
+  },
+  "admissibility_rule_angles_are_the_tilt_of_the_coins_frame_with_them_two_disturbances_travel_at_one_direction_free_speed_and_the_price_is_a_conserved_stress_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "6448e4b5fec7",
+   "out_degree": 5
+  },
+  "admissibility_rule_binding_scale_pinned_at_the_neutral_value_pair_weight_is_the_rules_likelihood_ratio_no_binding_without_a_cycle_all_binding_is_agreement_around_loops_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "f6e4ac704374",
+   "out_degree": 3
+  },
+  "admissibility_rule_bond_rates_alternate_on_their_own_below_a_threshold_stiffness_the_sea_against_block_59s_bond_law_gives_every_species_one_rest_energy_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "ae2e28684684",
+   "out_degree": 5
+  },
+  "admissibility_rule_bond_rates_and_lengths_a_body_at_rest_sources_no_length_and_the_bending_of_rays_carries_one_more_free_number_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "7c02b91f5a9a",
+   "out_degree": 6
+  },
+  "admissibility_rule_bond_strains_and_plaquette_curls_a_field_energy_per_local_tick_that_does_not_see_the_coins_axes_is_the_curvature_member_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "12d740df3e0b",
+   "out_degree": 7
+  },
+  "admissibility_rule_covariance_forces_a_reversible_formation_law_three_covariant_pasts_and_the_six_neighbour_past_settles_into_two_copies_of_the_static_law_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "b9de14cf60ea",
+   "out_degree": 3
+  },
   "admissibility_rule_covariant_frame_constructions_cube_orbits_and_antipodal_kernel_propagation_bounded_theorem_note_2026-09-15": {
    "deps_hash": "d0249e15a42a",
    "out_degree": 2
@@ -734,9 +806,17 @@
    "deps_hash": "0dcde35e339b",
    "out_degree": 4
   },
+  "admissibility_rule_defects_of_the_alternation_are_separable_walls_carry_sheets_of_lower_mass_lines_lower_still_and_three_crossing_walls_bind_exact_zero_modes_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "a97ae19af00a",
+   "out_degree": 4
+  },
   "admissibility_rule_directed_gaussian_propagator_overlap_covariance_gain_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "dd8925c4e04e",
    "out_degree": 2
+  },
+  "admissibility_rule_eight_species_of_the_walk_the_nearest_neighbour_frame_shows_them_the_same_lengths_the_relabellings_coupling_shows_them_different_lengths_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "2e36a66177dc",
+   "out_degree": 6
   },
   "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06": {
    "deps_hash": "1b3132f0c69b",
@@ -754,6 +834,10 @@
    "deps_hash": "e54933eecd76",
    "out_degree": 2
   },
+  "admissibility_rule_formation_on_the_sites_clock_spreads_records_apart_by_the_inverse_of_motions_pair_excess_clumping_needs_records_that_move_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "6807c91c6ae7",
+   "out_degree": 4
+  },
   "admissibility_rule_formation_rate_identities_and_finite_window_witnesses_bounded_theorem_note_2026-09-15": {
    "deps_hash": "a95e40c6cf02",
    "out_degree": 3
@@ -761,6 +845,10 @@
   "admissibility_rule_formation_unit_conditional_identities_and_finite_witnesses_bounded_theorem_note_2026-09-15": {
    "deps_hash": "a95e40c6cf02",
    "out_degree": 3
+  },
+  "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "617561b49ce2",
+   "out_degree": 6
   },
   "admissibility_rule_gravity_node_kernel_under_the_formation_reading_a_heat_kernel_in_level_time_times_a_plane_green_function_not_the_comparators_three_dimensional_green_function_bounded_theorem_note_2026-09-18": {
    "deps_hash": "0447028c8504",
@@ -774,21 +862,93 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "admissibility_rule_in_an_exponential_clock_field_the_walks_dynamics_needs_a_boundary_condition_at_the_fast_clock_end_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "6d7a2520c540",
+   "out_degree": 3
+  },
+  "admissibility_rule_in_discrete_ticks_a_local_clock_is_exact_only_for_walks_that_do_not_move_the_flat_band_theorem_and_a_walk_clocked_to_relative_eps_squared_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "6d7a2520c540",
+   "out_degree": 3
+  },
+  "admissibility_rule_in_the_curvature_member_the_clock_is_a_constraint_a_bodys_change_of_energy_acts_at_once_unless_formation_keeps_energy_local_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "43bf322d0386",
+   "out_degree": 4
+  },
+  "admissibility_rule_inertia_and_the_rules_weights_do_not_mix_locally_streaming_records_keep_the_rules_law_at_three_records_never_at_four_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "d8d7e22f14de",
+   "out_degree": 5
+  },
+  "admissibility_rule_inertia_joined_with_the_rules_pair_weights_by_a_clock_global_clock_exact_local_clock_exact_for_pairs_defect_at_three_records_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "4b6bc2865f56",
+   "out_degree": 5
+  },
   "admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06": {
    "deps_hash": "0447028c8504",
    "out_degree": 2
+  },
+  "admissibility_rule_interaction_through_the_odds_of_unformed_sites_field_equation_massless_surface_content_charge_no_first_order_mass_channel_at_neutral_scale_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "4dc09ea51d9d",
+   "out_degree": 5
+  },
+  "admissibility_rule_light_cone_formation_keeps_memory_in_3plus1_its_stationary_law_is_one_layer_of_a_reflection_positive_bilayer_ordered_above_beta_0p5905_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "0d5c7b17d50e",
+   "out_degree": 2
+  },
+  "admissibility_rule_many_records_under_exclusion_source_is_the_projected_density_chessboard_invisible_interacting_sea_stiffens_clocks_oppositely_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "d76207766a3a",
+   "out_degree": 6
   },
   "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
   },
+  "admissibility_rule_no_local_momentum_falls_with_weight_one_on_the_lattice_the_walks_force_is_a_bond_energy_times_a_clock_difference_and_no_ledger_can_demand_it_exactly_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "09240f3eec74",
+   "out_degree": 6
+  },
+  "admissibility_rule_no_master_clock_a_neighbour_determined_scale_covariant_tick_rate_obeys_the_lattice_laplace_equation_records_enter_as_additive_sources_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "06f885407e5f",
+   "out_degree": 3
+  },
+  "admissibility_rule_one_field_for_records_and_waves_a_wave_passing_a_record_turns_by_twice_the_pair_energy_at_that_distance_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "19b6f620cc91",
+   "out_degree": 5
+  },
+  "admissibility_rule_one_record_per_site_is_an_interaction_not_a_free_sea_two_records_under_exclusion_against_free_antisymmetric_and_symmetric_pairs_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "179af22a604e",
+   "out_degree": 5
+  },
+  "admissibility_rule_possibilitys_odds_carry_content_not_record_count_at_long_range_a_massless_turn_channel_in_the_ordered_sea_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "b7002d5b27d6",
+   "out_degree": 4
+  },
   "admissibility_rule_re_recording_at_every_tick_static_law_stationary_light_cone_bilayer_long_range_order_green_function_response_conditional_on_an_excluded_clause_bounded_theorem_note_2026-09-20": {
    "deps_hash": "7fff3dc3d206",
    "out_degree": 1
   },
+  "admissibility_rule_reach_three_a_momentum_that_is_the_same_for_all_eight_species_gives_a_coupling_with_the_exact_current_and_one_geometry_for_all_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "f18c3ca1f676",
+   "out_degree": 6
+  },
+  "admissibility_rule_record_layer_fields_arrive_by_diffusion_establishment_time_grows_as_the_square_of_the_range_transit_halo_and_massless_odds_field_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "8f3ba4362142",
+   "out_degree": 4
+  },
   "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15": {
    "deps_hash": "903559348f92",
    "out_degree": 3
+  },
+  "admissibility_rule_records_that_move_on_their_own_clocks_and_slow_the_clocks_around_them_attract_with_a_one_over_r_potential_equal_both_ways_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "5aff028d2293",
+   "out_degree": 3
+  },
+  "admissibility_rule_records_that_move_pair_weight_transit_has_the_static_law_as_equilibrium_the_binding_scale_is_a_new_constant_clumping_and_jamming_executed_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "0447028c8504",
+   "out_degree": 2
+  },
+  "admissibility_rule_records_with_inertia_content_as_direction_of_travel_conserved_momentum_structureless_equilibrium_sound_speed_forces_need_capture_or_emission_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "0d65efd1af96",
+   "out_degree": 4
   },
   "admissibility_rule_six_axis_formation_threshold_the_unit_budget_is_false_one_seed_witness_with_family_constant_ten_ninths_tight_sibling_lemma_refuted_bounded_theorem_note_2026-09-20": {
    "deps_hash": "e3b0c44298fc",
@@ -822,6 +982,78 @@
    "deps_hash": "f1c14f0e732c",
    "out_degree": 5
   },
+  "admissibility_rule_the_attraction_is_tied_to_growth_a_body_in_balance_draws_no_wind_pull_proportional_to_net_uptake_growth_rate_fixed_by_the_force_coefficient_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "0dfbd75fe94e",
+   "out_degree": 6
+  },
+  "admissibility_rule_the_axioms_own_generator_the_scalar_hop_splits_the_eight_species_into_four_levels_of_one_sense_and_a_staggered_term_gives_them_mass_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "aa395c5a3af4",
+   "out_degree": 7
+  },
+  "admissibility_rule_the_blind_walk_a_scalar_hop_weighted_by_the_twist_of_the_coin_along_the_bond_makes_a_varying_rotation_of_the_coin_axes_a_symmetry_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "3e4e7ca971c8",
+   "out_degree": 5
+  },
+  "admissibility_rule_the_crowd_under_exclusion_also_gains_from_an_alternation_of_the_bond_rates_its_ground_energy_never_rises_the_jam_is_blind_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "cc5c0040b8c9",
+   "out_degree": 5
+  },
+  "admissibility_rule_the_eight_species_are_exchanged_by_site_signs_and_a_half_turn_of_the_coin_what_each_varying_field_becomes_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "82ae1f8811b0",
+   "out_degree": 8
+  },
+  "admissibility_rule_the_fall_is_owed_by_the_ledger_a_field_energy_per_local_tick_requires_the_contents_stress_gradient_to_equal_its_weight_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "45b2892ddd79",
+   "out_degree": 7
+  },
+  "admissibility_rule_the_filled_seas_energy_as_the_ledgers_field_term_a_chessboard_of_clocks_is_invisible_the_sea_induces_a_clock_stiffness_not_the_curvature_member_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "6e1ffffdff47",
+   "out_degree": 7
+  },
+  "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "50f0b383a81d",
+   "out_degree": 5
+  },
+  "admissibility_rule_the_record_gas_never_makes_the_chessboard_a_rest_mass_needs_binding_grows_only_around_loops_content_order_gives_the_walk_no_gap_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "fbf90fd56811",
+   "out_degree": 5
+  },
+  "admissibility_rule_the_rules_own_clock_has_no_far_field_the_pull_needs_a_rate_law_with_a_monopole_a_rest_energy_and_a_coupling_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "c62fec83271d",
+   "out_degree": 6
+  },
+  "admissibility_rule_the_strong_field_exactly_bodies_at_rest_make_the_clock_law_linear_in_the_root_of_the_rate_the_ledger_is_a_surface_term_bounded_by_a_capacity_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "e83c880e1b8b",
+   "out_degree": 4
+  },
+  "admissibility_rule_the_two_instabilities_of_the_uniform_bond_rates_the_alternation_breaks_translation_below_alpha_plus_2beta_the_anisotropy_breaks_rotation_below_beta_alone_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "6ab1329f28cb",
+   "out_degree": 4
+  },
+  "admissibility_rule_the_two_step_momentum_is_the_only_one_among_conserved_covariant_momenta_of_reach_two_that_is_every_species_own_wave_number_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "0ec6c68e6dcb",
+   "out_degree": 4
+  },
+  "admissibility_rule_the_unit_of_rate_decides_the_alternations_thresholds_in_log_rates_an_exact_mass_a_convexity_term_and_no_global_minimum_under_a_quadratic_law_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "8512a390dd54",
+   "out_degree": 8
+  },
+  "admissibility_rule_the_walks_links_built_from_the_frame_carry_the_lengths_curvature_only_at_plaquette_reach_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "00936abbd730",
+   "out_degree": 5
+  },
+  "admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "f6441c3f8815",
+   "out_degree": 5
+  },
+  "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "3ed373819056",
+   "out_degree": 6
+  },
+  "admissibility_rule_the_zero_field_bound_on_the_formation_bilayer_a_held_sources_kernel_without_a_field_in_3plus1_and_no_memory_on_planes_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "b168726672fb",
+   "out_degree": 4
+  },
   "admissibility_rule_three_body_term_exceptional_locus_exact_classification_bounded_theorem_note_2026-09-15": {
    "deps_hash": "4837d2020a34",
    "out_degree": 4
@@ -838,6 +1070,22 @@
    "deps_hash": "68507e789d0e",
    "out_degree": 4
   },
+  "admissibility_rule_three_lengths_per_site_a_body_at_rest_stretches_them_alike_hop_energy_drives_whole_columns_and_the_delays_speed_depends_on_direction_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "d2c64696adcf",
+   "out_degree": 4
+  },
+  "admissibility_rule_three_readings_of_records_form_against_known_physics_the_spacetime_reading_is_two_dimensional_skewed_and_irreversible_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "9f0843583dde",
+   "out_degree": 3
+  },
+  "admissibility_rule_three_responses_eight_species_the_frames_site_stress_has_the_wrong_sign_in_shear_for_six_species_only_the_two_step_current_serves_all_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "22eddb1f8496",
+   "out_degree": 8
+  },
+  "admissibility_rule_transparent_bodies_capture_rate_is_the_record_count_and_the_force_is_the_product_of_record_counts_over_distance_squared_predicted_coefficient_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "fa6e80d079e8",
+   "out_degree": 6
+  },
   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8ae058a5c524",
    "out_degree": 2
@@ -845,6 +1093,38 @@
   "admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_and_the_nonlinear_law_measured_against_it_bounded_theorem_note_2026-09-17": {
    "deps_hash": "0447028c8504",
    "out_degree": 2
+  },
+  "admissibility_rule_waves_among_moving_records_need_a_coupling_that_time_reversal_flips_clocked_record_motion_never_oscillates_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "72f114ec07ca",
+   "out_degree": 5
+  },
+  "admissibility_rule_what_a_formation_event_does_to_the_ledger_and_to_the_far_field_the_monopole_never_jumps_the_dipole_does_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "786a0b747078",
+   "out_degree": 4
+  },
+  "admissibility_rule_what_a_source_is_when_records_move_one_mass_per_record_no_action_across_empty_space_screened_density_potential_signed_tilt_channel_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "998c58e176f7",
+   "out_degree": 4
+  },
+  "admissibility_rule_what_a_wall_in_the_alternation_costs_the_sea_charges_it_by_an_exact_level_rule_block_59s_collinear_coupling_rewards_it_domains_iff_alpha_large_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "ba8e5b2caddc",
+   "out_degree": 5
+  },
+  "admissibility_rule_what_can_gap_the_walk_no_invariant_term_at_any_reach_chessboard_or_axis_stripes_on_sites_alternating_lengths_give_one_rest_energy_exclusion_cages_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "a88bf6165015",
+   "out_degree": 5
+  },
+  "admissibility_rule_what_the_walk_conserves_momentum_flows_on_bonds_relabellings_reach_second_neighbours_the_nearest_neighbour_frame_misses_by_two_differences_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "31b2b61094f5",
+   "out_degree": 3
+  },
+  "admissibility_rule_where_moving_records_cannot_clump_a_sharp_one_site_bound_gives_uniqueness_below_a_ratio_spread_of_49_over_25_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "6eda16d0e29f",
+   "out_degree": 2
+  },
+  "admissibility_rule_which_species_fall_the_ledger_owes_under_reach_two_a_reflected_species_has_minus_its_weight_under_reach_three_all_eight_agree_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "b8e5863a0982",
+   "out_degree": 7
   },
   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "f21f2489334d",
@@ -2373,6 +2653,10 @@
   "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17": {
    "deps_hash": "a7f22af043f4",
    "out_degree": 7
+  },
+  "charged_record_exchange_band_field_response_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "d9ab9949d61b",
+   "out_degree": 2
   },
   "charged_ring_slow_spectrum_bounded_theorem_note_2026-09-15": {
    "deps_hash": "2b126dc35e8a",
@@ -4822,6 +5106,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "electric_and_magnetic_dynamics_from_record_motion_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "75cdf76e07ed",
+   "out_degree": 3
+  },
   "electric_sign_law_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -5138,6 +5426,10 @@
    "deps_hash": "974af8052d05",
    "out_degree": 1
   },
+  "fast_vacancy_motion_after_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c4303103ee6b",
+   "out_degree": 2
+  },
   "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -5282,6 +5574,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_formation_with_retained_fourth_order_dynamics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1c6a1605e119",
+   "out_degree": 4
+  },
   "finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15": {
    "deps_hash": "dcddb9da6de9",
    "out_degree": 4
@@ -5302,9 +5598,17 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_rate_repeated_record_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "finite_step_gaussian_gauge_canonical_logarithm_and_coulomb_cost_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "first_event_instrument_corollary_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c4303103ee6b",
+   "out_degree": 2
   },
   "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
    "deps_hash": "e3b0c44298fc",
@@ -7241,6 +7545,10 @@
   "hard_geometry_local_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "hardcore_record_motion_generates_gauge_rings_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",
@@ -10742,6 +11050,14 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "homogeneous_field_star_penalty_for_mobile_records_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "31d4f2248ab9",
+   "out_degree": 3
+  },
+  "homogeneous_mobile_charged_records_and_field_dynamics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1ab84217dcde",
+   "out_degree": 3
+  },
   "homogeneous_z3_pi_flux_parity_dark_local_record_separator_bounded_theorem_note_2026-09-02": {
    "deps_hash": "9b4b0f8332f7",
    "out_degree": 6
@@ -10901,6 +11217,10 @@
   "ice_support_under_nearest_neighbour_formation_vertex_bound_soldered_vertex_records_order_dependent_defects_and_uniform_ice_only_by_conditioning_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "eb13053ecda9",
+   "out_degree": 4
   },
   "impact_parameter_lensing_note": {
    "deps_hash": "bbfa07daa875",
@@ -12753,6 +13073,10 @@
   "local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14": {
    "deps_hash": "8ec463c38283",
    "out_degree": 1
+  },
+  "local_finite_rate_formation_and_rotor_limit_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "27e90abeafb7",
+   "out_degree": 2
   },
   "local_frame_orbit_flat_sector_exact_converse_holonomy_frame_unreachable_residual_bounded_theorem_note_2026-06-10": {
    "deps_hash": "902cbaf48a4c",
@@ -17902,6 +18226,10 @@
    "deps_hash": "6bc83b0be0e8",
    "out_degree": 3
   },
+  "square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "d6f4878b8e48",
+   "out_degree": 2
+  },
   "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08": {
    "deps_hash": "819463065356",
    "out_degree": 7
@@ -19334,6 +19662,10 @@
    "deps_hash": "dd9fd64aa659",
    "out_degree": 22
   },
+  "uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "0ffd9d5029a6",
+   "out_degree": 3
+  },
   "uniform_ice_by_formation_the_square_loop_obstruction_the_plaquette_coordinator_and_plans_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -19358,17 +19690,69 @@
    "deps_hash": "2a338d61d68b",
    "out_degree": 3
   },
+  "uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "120f3dcede1b",
+   "out_degree": 2
+  },
+  "uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "1af231500171",
+   "out_degree": 5
+  },
   "uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_bounded_theorem_note_2026-09-23": {
    "deps_hash": "4583c70c3ab5",
    "out_degree": 3
+  },
+  "uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "ae0f3b2cd726",
+   "out_degree": 4
   },
   "uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_bounded_theorem_note_2026-09-23": {
    "deps_hash": "0a5a23d65830",
    "out_degree": 2
   },
+  "uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "b89600f9c617",
+   "out_degree": 4
+  },
+  "uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "421cfbe28c5c",
+   "out_degree": 3
+  },
+  "uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "120f3dcede1b",
+   "out_degree": 2
+  },
+  "uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "08e9c9ed2b19",
+   "out_degree": 4
+  },
+  "uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "8fcab9015bb9",
+   "out_degree": 3
+  },
+  "uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "b89600f9c617",
+   "out_degree": 4
+  },
+  "uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "1f45a7f9bb63",
+   "out_degree": 3
+  },
   "uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_bounded_theorem_note_2026-09-23": {
    "deps_hash": "1f45a7f9bb63",
    "out_degree": 3
+  },
+  "uniform_local_ring_dynamics_with_slow_record_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "56b61ef12165",
+   "out_degree": 3
+  },
+  "uniform_record_density_with_live_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "b6ef350ba20a",
+   "out_degree": 2
   },
   "unit_conversion_is_the_accepted_non_bounding_ruler_reconciliation_note_2026-06-08": {
    "deps_hash": "d292eab310f2",
@@ -19921,6 +20305,10 @@
   "weak_coupling_sign_sensitivity_note_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "weak_field_wave_packets_from_mobile_record_dynamics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1ab84217dcde",
+   "out_degree": 3
   },
   "weighted_gaussian_damping_and_integer_time_blocking_bounded_theorem_note_2026-09-16": {
    "deps_hash": "2fcf27dbac88",

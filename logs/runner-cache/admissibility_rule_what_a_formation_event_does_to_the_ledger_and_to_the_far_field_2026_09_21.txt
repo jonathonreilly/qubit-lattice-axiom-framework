@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_what_a_formation_event_does_to_the_ledger_and_to_the_far_field_2026_09_21.py
+runner_sha256: 2ef5f9316ecff21ebb5aa9b10dbbf82faec887be05afd703e44e0179bba20827
+input_fingerprint_sha256: 32f2d9c4101c54bcf67d34a390b4e83b5c37ebe32a57895ecce3d0fe5ae8ab65
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 19.59
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, Admissibility does not define a time metric, and a record is permanent
+PASS: B1 T1: an amplitude at rest of bare energy 4 spread over five sites (weights 1/2 and four times 1/8) has the ledger about 3.595; a record at the centre keeps it iff its bare energy is E/(1 - (gamma/12) g_y E) = about 4.774 (more than 4: a point slows its own clock more than a spread does); with the bare energy kept at 4 the ledger would fall by about 0.457
+PASS: B2 T1: an amplitude of bare energy 420 spread over a site and its six neighbours has the ledger about 46.831, above 12/(gamma g_y) = 495/34, the supremum at the tested central site: no record AT THAT SITE keeps this ledger
+PASS: C1 T2: the sum over wall sites of dF/du equals the ledger before and after the event: with the ledger kept, the total flux through the walls does not change when the record forms, wherever it forms: the monopole never jumps
+PASS: C2 T2: the first moment of the wall flux, sum over wall bonds of (1 - phi_inside) x_wall, equals six times the dipole sum_x q_x x, q_x = (gamma/12) m_x phi_x, exactly, for each coordinate, before and after (a coordinate is a discrete-harmonic function): the dipole is something the walls see
+PASS: C3 T2: exact quadratic and cubic harmonic boundary moments before and after; the identity does not require each moment to change
+PASS: D1 T3: the dipole goes from Q Xbar to Q y: it jumps by Q (y - Xbar) = (0.039, -0.024, -0.023) here, with Q = (gamma/12) E unchanged and Xbar the centre weighted by q_x, that is by |chi_x|^2 phi_x; no choice of the bare energy of the record avoids it unless y = Xbar
+PASS: D2 T3: for any odds p_y the mean jump is Q (sum p_y y - Xbar).  All targets in this tested support are feasible; odds proportional to q_x = |chi_x|^2 phi_x give exactly zero; odds proportional to |chi_x|^2 give Q times (-30.592, -6.464, -5.187) thousandths of a site here and odds proportional to the energy density |chi_x|^2 phi_x^2 give (30.706, 6.589, 5.197) thousandths, on the other side, neither zero: the field of the amplitude itself makes the rate differ across it (phi from about 0.865 to 0.945 on its support), so the probability centre is not the centre the walls see.  No rule of formation is assumed or proposed
+PASS: E1 T4: if the amplitude sources nothing, the rates are ambient and the scaled wall response (2/gamma times flux) is zero before the event, and about 3.595 after: without other sources or compensation the records-only convention changes this static boundary response; under the reading of block 55 with the ledger kept the monopole never changes
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the exact rates of a five-site amplitude at rest and of the record that replaces it, in a 7x7x7 box with walls at the ambient rate
+per_site: executed — the bare energy of the record that keeps the ledger; the fall of the ledger when the bare energy is kept; a seven-site amplitude whose ledger the tested central site cannot show
+per_mode: executed — the total flux through the walls and its three first moments, before and after the event, against the ledger and six times the dipole
+per_block: executed — the jump of the dipole against Q (y - Xbar); the mean jump for odds proportional to the charge density and to the probability density; the records-only flux before and after
+lattice_wide: T1 to T3 hold for any amplitude at rest and any site of formation in any box with walls at the ambient rate, for the simplest bond energy; the flux identities of T2 hold for every discrete-harmonic weight; the statement about odds is a statement about ANY odds and assumes none; whether an amplitude that has formed no record sources anything, whether a formation event keeps the ledger, and where records form are not decided; bodies at rest are supplied; nothing moves in this note
+PASS: G1 the five N5 resolution lines are printed
+scope: finite static diagonal-source model; target-specific capacity and unique ledger-preserving mass; conditional preservation of total boundary flux; harmonic moment changes, possibly zero; centroid condition for feasible odds, without a formation rule
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

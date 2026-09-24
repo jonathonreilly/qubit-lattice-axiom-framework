@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_closed_lattice_at_rest_curvature_member_never_simplest_member_both_signs_2026_09_21.py
+runner_sha256: ea7483f8e3af9bfc351ee265db802657964be07b899a3efa64097e32b6d4cb93
+input_fingerprint_sha256: fb2403c92b3bccfe5287f55d7b2791d06ed30cc409af642cc61a47545f0af414
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.92
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_CLOSED_LATTICE_AT_REST_NEVER_IN_THE_CURVATURE_MEMBER_WHATEVER_THE_SIGNS_IN_THE_SIMPLEST_MEMBER_ONLY_WITH_BODIES_OF_BOTH_SIGNS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_ACTION_AND_REACTION_THE_RATE_FIELDS_SOURCE_IS_THE_AMPLITUDES_ENERGY_DENSITY_MATCHED_PULLS_AND_A_KEPT_LEDGER_FIX_THE_CLOCK_LAWS_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_STRONG_FIELD_EXACTLY_BODIES_AT_REST_MAKE_THE_CLOCK_LAW_LINEAR_IN_THE_ROOT_OF_THE_RATE_THE_LEDGER_IS_A_SURFACE_TERM_BOUNDED_BY_A_CAPACITY_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_AMPLITUDES_OF_NEGATIVE_ENERGY_FALL_LIKE_THE_OTHERS_AND_SOURCE_THE_OPPOSITE_FIELD_A_NEGATIVE_BODY_AT_REST_HAS_A_LARGEST_SIZE_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 PR8608 B1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: B2 PR8608 B2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: B3 PR8608 B3: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: C1 PR8608 C1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: C2 PR8608 C2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: D1 PR8608 D1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: On a finite connected closed symmetric graph the positive-function divided-difference identity excludes nonzero net diagonal sources in the supplied curvature equations, with uniform zero-source fields as an explicit exception. Nonconstant positive solutions of the simplest supplied equation require both source signs. A distinct-site pair on a translation-invariant torus has the stated exact tuning condition.
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

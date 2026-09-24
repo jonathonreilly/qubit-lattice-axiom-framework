@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_2026_09_21.py
+runner_sha256: 2c5434393cee99d501052f0a3eba536135b589d617d15f2d8a0562716b0191c4
+input_fingerprint_sha256: 1470de084610d2e67bf61077f6cd78493d354ae919fea1ef4f2ed5cff4eaf3b9
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_FREE_CAPTURING_BODIES_ARE_CARRIED_BY_THE_WIND_CAPTURE_LAW_ANISOTROPIC_COLLISIONLESS_SHADOW_DILUTION_LAW_OF_MOTION_AND_ITS_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentence used
+PASS: B1 T1: sum over the six directions of max(0, s.e_k) is |s|_1 for 174 rational unit contents, and 1 <= |s|_1^2 <= 3 (largest here 25/9): a record is captured in proportion to |s|_1
+PASS: B2 T1: for the two contents (1,0,0) and (-3/5,-4/5,0), equally likely, the gas has mean content ('1/5', '-2/5', '0') and the captured records ('1/15', '-7/15', '0'): capture is a biased sample
+PASS: B3 T2: over the uniform sphere <|s|_1> = 3/2 and <|s|_1 s_i s_j> = (1/2) delta_ij, so in a wind with content law (1 + 3 u.s)/(4 pi) a capturing site takes up q_1 = (sqrt 3/2) rho records and the momentum q_1 u per tick: every captured record brings u on average (ratio 1)
+PASS: B4 T2: a face entered along an axis responds to a wind with diag(1/16, 1/16, 1/8); a body with equally many exposed faces along the three axes (cube (8, 8, 8), ball of radius 3 (58, 58, 58)) takes up momentum parallel to the wind, a 2x2x1 plate (4, 4, 8) does not (('5/4', '5/4', '3/2'))
+PASS: C1 T3: for independent records of one content the deficit behind a capturing site, h(x) = multinomial(x; w) with step frequencies w_k = |s_k|/|s|_1, is one at the site and satisfies h(x) = sum_k w_k h(x - e_k) elsewhere, the stationary transport equation (checked on a 5x5x5 block for four rational contents)
+PASS: C2 T3: the deficit sums to one over every shell |x|_1 = n: the shadow carries the whole capture through every shell, and the force summed over a shell is the capture-weighted content |s|_1 s whatever the distance
+PASS: C3 T3: integrated over the simplex of step frequencies the deficit at a site of the shell n is 1/((n+1)(n+2)), the same for all 56 sites with n <= 5 (term-by-term polynomial integration)
+PASS: C4 T3: the octants of contents that reach a site number 1 off the coordinate planes, 2 on a plane and 4 on an axis
+PASS: C5 T3: the collisionless force on a transparent site has the coefficient |r|_1^2 in units of rho/(4 pi sqrt 3 r^2): (84, 12, 5): 10201/7225; (2, 3, 6): 121/49; (1, 2, 2): 25/9; (6, 6, 7): 361/121; between 1 (near an axis) and 3 (the body diagonal), against 9/4 in every direction for the collisional law; the remainder is at most 675 times the summed variance of the step frequencies, below 1/1000 at n of order 10^7
+PASS: D1 T4: in a product state with a first-harmonic wind both capture channels bring the wind's mean content per captured record, so the expected momentum gain is u times the expected mass gain (in units of rho/sqrt 3: mass 162/25, momentum ('81/125', '-81/250', '162/625')) whatever the body's own content
+PASS: D2 T4: in the product closure the content of a body after a fixed number m of captures has expected value equal to the mixture (1 - f) p_0 + f u with f = m/(M_0 + m) the captured fraction of its mass: half way to the wind when it has doubled its mass
+PASS: E1 T5: with block 47's wind u = 3 N_1/(8 pi (1 - rho) r^2) in the N=M active-site idealization, a body at rest gains velocity at the rate q_1 u/sqrt 3 = 3 rho N_1/(16 pi (1 - rho) r^2), the same within this additional closure
+PASS: E2 T5: the fall from rest lasts t with (q_1 t)^2 = (pi^3/2) rho (1 - rho) r^3/N_1, which is the number of gas records inside the radius, (4 pi/3) rho r^3, over 8 N_1/(3 pi^2 (1 - rho)): the fall is accelerated throughout only when that ratio is small
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the identity sum_k max(0, s.e_k) = |s|_1 and the range of |s|_1 for 174 rational unit contents; the sphere moments 3/2 and 1/2; the face response diag(1/16, 1/16, 1/8)
+per_site: executed — the multinomial deficit and its transport equation on a 5x5x5 block for four contents; the simplex integral at all 56 sites with n <= 5; the octant multiplicities 1, 2, 4
+per_mode: not applicable — the retained finite identities concern local rates and integrated flux, not a mode spectrum
+per_block: executed — shell sums for n <= 6; the collisionless coefficients 10201/7225, 121/49, 25/9, 361/121 and the remainder bound; the dilution identity for both capture channels; the window algebra
+lattice_wide: T1, T2 and T4 are exact expectations in a product state, which neglects what the body does to the gas around it; T3 is exact for independent records (no exchange, no scattering) and its large-distance coefficient carries an explicit remainder; T5 is a closure; the executed runs are controls, not proofs
+PASS: G1 the five N5 resolution lines are printed
+scope: free capturing bodies in the inertial record gas — the capture law, first-harmonic winds, the collisionless shadow and its anisotropic force, the dilution law of a free body and the window of accelerated fall; exact expectations in product states and for independent records
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

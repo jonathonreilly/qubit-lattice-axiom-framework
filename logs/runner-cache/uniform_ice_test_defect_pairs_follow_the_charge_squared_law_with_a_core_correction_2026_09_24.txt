@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.py
+runner_sha256: 96986bab8847da940081299829289f84ee794298c8583b8789fdfeca2a852fe1
+input_fingerprint_sha256: 1fa3f75d686246b680807491543c5632a9d017887c3e2e204d1b04f1d0efbcc9
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 46.31
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. Symmetry ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: spread 0.0e+00, complement 0.0e+00
+
+== B. The charge-squared law in the layer ==
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: distance 2: 3.449, distance 3: 3.577, distance 4: 3.623
+
+== C. Along the prism ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: z=4: 3.960, z=8: 4.007; step ratio 4.0361 vs 4 c(4)/c(2) = 4.0362
+
+== D. The core correction grows with the charge ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: charge 2: 0.9614, 0.9738, 0.9781; charge 4: 0.8290, 0.8708, 0.8860
+
+maximum checked relative eigenpair residual: 2.2428140867109524e-15
+time 46 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

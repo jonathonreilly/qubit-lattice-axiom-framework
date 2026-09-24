@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_blind_walk_a_scalar_hop_weighted_by_the_twist_of_the_coin_along_the_bond_2026_09_21.py
+runner_sha256: dd239192ae24c72c58ab34497c3fa4a067884cc87faaa799f037fe0a28523f40
+input_fingerprint_sha256: 8e681e73e89c8fac893e99a95ab90521f695c7215ca3541f0d445e884554bc56
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 7.89
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_BLIND_WALK_A_SCALAR_HOP_WEIGHTED_BY_THE_TWIST_OF_THE_COIN_ALONG_THE_BOND_MAKES_A_VARYING_ROTATION_OF_THE_COIN_AXES_A_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a 5x4x3 torus, for a rational rotation field theta(x) and a rational state, -(i/2)[theta.sigma, H] psi = (1/2) sum_j {(theta x e_j).sigma, S_j} psi + (1/2) sum_a C_a[d_a theta_a] psi exactly at all 60 sites: a varying rotation of the coin axes is a rotation of the frame at every site PLUS a coin-independent symmetric hop on every bond, weighted by the difference along the bond of the rotation about the bond's own axis
+PASS: B2 T1: the scalar hop vanishes for a uniform rotation (block 62 T1) and for a rotation about axis 1 that does not change along axis 1: only the TWIST of the coin along a bond, the change along the bond of the rotation about that bond's axis, is felt
+PASS: C1 T2: with a rotation vartheta(x) at every site coupled as H[vartheta] = H + (1/2) sum_j {(vartheta x e_j).sigma, S_j} + (1/2) sum_a C_a[d_a vartheta_a], the first-order change of the walk under psi -> exp(-i theta.sigma/2) psi is exactly the change vartheta -> vartheta + theta; H[vartheta] is hermitian and reaches nearest neighbours only: a walk that does not see a varying rotation of its coin axes, at first order, within nearest-neighbour hops
+PASS: D1 T3: the derivative of <H[vartheta]> in the rotation at one site about one axis, by an exact difference, equals (1/2) d(psi^dagger sigma_c psi)/dt there, for a rational state in motion: the content's response to a rotation of its coin axes is the rate of change of the coin's own density, nothing else
+PASS: D2 T3: on the exactly stationary state of the 4x4x4 torus (H psi = psi) the response to a rotation of the coin axes is ZERO at every sampled site and axis with the scalar hop (39 samples), and non-zero at every one of them without it: the necessary coin-rotation response at zero background vanishes; block 64's distinct bond torque and full static solvability remain unresolved
+PASS: E1 T4: for a frame 1 + strain the inversion-odd scalar eps.T of the co-frame is 2 eps^jkl d_k B_jl at first order: zero for every symmetric strain, and -4 div vartheta for the rotation of T1; at long wavelength the scalar hop (1/2) sum_a (d_a vartheta_a) cos k_a is (1/2) div vartheta = -(1/8) eps.T: the scalar that blindness removed from the FIELD's energy (block 64 T2, c5 = 0) is what the CONTENT needs
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the operator identity for -(i/2)[theta.sigma, H] at all 60 sites of a 5x4x3 torus for a rational rotation field and state; the vanishing of the scalar hop for a uniform rotation and for a rotation without twist
+per_site: executed — the first-order change of H[vartheta] under a rotation of the coin against the shift of vartheta, site by site; hermiticity; nearest-neighbour reach; the derivative of <H[vartheta]> in one site's rotation against the rate of change of the coin's density
+per_mode: executed — the inversion-odd scalar of a frame's curl at first order: for a general strain, for a symmetric strain, for the rotation of T1 (exact symbolic algebra)
+per_block: executed — the exactly stationary state of the 4x4x4 torus: the response to a rotation of the coin axes with and without the scalar hop at 39 sampled sites and axes
+lattice_wide: T1 is a local operator identity; infinite-lattice summed statements require suitable domains and small-torus aliases qualify the vanishing iff; T2 and T3 hold at first order in the rotation around the identity frame, for every state, their consequence at zero rotation background for stationary states of H; T4 is a continuum identity at first order in the strain; a walk blind beyond first order, around a frame that is not the identity, or together with block 64's bond strains is not constructed; that sites carry a rotation field and that the walk has the scalar hop are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: the blind walk — a rotation of the coin axes that varies from site to site acts on the walk, at first order, as a rotation of the frame at every site plus a coin-independent symmetric hop weighted by the twist of the coin along each bond; with that hop the truncated walk is covariant to joint first order about the identity frame, the response to it is half the rate of change of the coin's density and vanishes on stationary states of the unperturbed walk at zero rotation background; at long wavelength the leading hop is minus one eighth of the inversion-odd scalar of the frame's curl
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

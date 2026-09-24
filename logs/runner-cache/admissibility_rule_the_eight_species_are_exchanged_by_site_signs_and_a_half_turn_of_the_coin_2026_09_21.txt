@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_eight_species_are_exchanged_by_site_signs_and_a_half_turn_of_the_coin_2026_09_21.py
+runner_sha256: d670d08badf7dfa2f78286346902c1537d13c7c4854a4803ddf7d5d98c59d7a3
+input_fingerprint_sha256: e081ede1a6dc4f59f11c60755c88fcdbf75450905eb7228a3fb5ea7e9fb2b6cd
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 37.68
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_EIGHT_SPECIES_ARE_EXCHANGED_BY_SITE_SIGNS_AND_A_HALF_TURN_OF_THE_COIN_WHAT_EACH_VARYING_FIELD_BECOMES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_WHAT_THE_WALK_CONSERVES_MOMENTUM_FLOWS_ON_BONDS_RELABELLINGS_REACH_SECOND_NEIGHBOURS_THE_NEAREST_NEIGHBOUR_FRAME_MISSES_BY_TWO_DIFFERENCES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_BOND_STRAINS_AND_PLAQUETTE_CURLS_A_FIELD_ENERGY_PER_LOCAL_TICK_THAT_DOES_NOT_SEE_THE_COINS_AXES_IS_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_BLIND_WALK_A_SCALAR_HOP_WEIGHTED_BY_THE_TWIST_OF_THE_COIN_ALONG_THE_BOND_MAKES_A_VARYING_ROTATION_OF_THE_COIN_AXES_A_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_EIGHT_SPECIES_OF_THE_WALK_THE_NEAREST_NEIGHBOUR_FRAME_SHOWS_THEM_THE_SAME_LENGTHS_THE_RELABELLINGS_COUPLING_SHOWS_THEM_DIFFERENT_LENGTHS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 PR8602 B1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: B2 PR8602 B2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: C1 PR8602 C1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: C2 PR8602 C2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: D1 PR8602 D1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: D2 PR8602 D2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: E1 PR8602 E1: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: E2 PR8602 E2: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: E3 PR8602 E3: exact stated finite fixture or symbolic identity; scope and exceptions are in the companion note
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: exact matrix or algebraic elements in the specified fixtures
+per_site: site identities in the explicitly stated finite fixtures
+per_mode: only the modes or finite spectral invariants actually checked below
+per_block: the stated finite operator and state comparisons
+lattice_wide: general conclusions rely on the scoped written proofs; historical simulations are deferred
+PASS: G1 the five N5 resolution lines are printed
+scope: On even finite tori, site-sign and coin maps obey the stated operator transformation table for real supplied rates, frames, linearized twists and strains. Antiunitary symmetry doubles finite static eigenlevels; odd hopping gives spectral reversal. A varying reach-two example lacks spectral symmetry. Formal uniform branch-label orbits do not establish eightfold degeneracy in arbitrary varying fields.
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

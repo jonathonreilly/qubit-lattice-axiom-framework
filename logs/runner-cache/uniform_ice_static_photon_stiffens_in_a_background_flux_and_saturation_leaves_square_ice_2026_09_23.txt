@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.py
+runner_sha256: e97128c0873a195b2aa6789fd3050ab8fa06ec9a35d729b9c7d9cfa8c009bf2b
+input_fingerprint_sha256: fe6d924692bca68ea190a25343c7e95551f65a0c736782bb0aa0caafd37ac249
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 264.52
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. Saturation leaves square ice ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: 2x2: 18.0 vs 18, 2x4: 114.0 vs 114, 2x6: 858.0 vs 858, 2x8: 7074.0 vs 7074, 4x4: 2970.0 vs 2970
+
+== B. The equation of state on 4 x 4 ==
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: 2: 0.3270, 4: 0.3300, 6: 0.3352, 8: 0.3430, 10: 0.3543, 12: 0.3705, 14: 0.3950, 16: 0.4373
+
+== C. The photon in a background flux ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: 0: 1.29627, 2: 1.30814, 4: 1.34515, 6: 1.41195, 8: 1.51835, 10: 1.68456; shift ratio 4.118
+
+== D. A local quartic cost ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: c_2 = 0.3261, d = 0.0631; fraction explained 0.660, 0.641
+
+Anisotropic lattice comparator 2 shift 0.006826750626814038 measured 0.011870418212465594
+Anisotropic lattice comparator 4 shift 0.026518501350803803 measured 0.048877769784864356
+== E. The shift does not scale with the wavenumber ==
+[PASS] Finite diagnostic 5; scope and exceptions are in the companion note :: D_0 1.29627 vs 1.74193; shifts 0.01187, 0.04888 vs 0.01179, 0.04858; quartic fraction at (0, pi) 0.893, 0.867
+
+maximum checked relative eigenpair residual: 5.525821369408887e-15
+time 264 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

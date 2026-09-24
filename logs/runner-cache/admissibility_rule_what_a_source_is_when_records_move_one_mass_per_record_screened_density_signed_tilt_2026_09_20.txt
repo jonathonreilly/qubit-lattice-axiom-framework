@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_what_a_source_is_when_records_move_one_mass_per_record_screened_density_signed_tilt_2026_09_20.py
+runner_sha256: 70e336cfce96d54f12aa6b799c7e61300915486419a715cdd820311020e6ec0d
+input_fingerprint_sha256: cdd06f69aa98167ed750f2986d23f9591b53a47191bfda9af0e8ac1311c69cf2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.23
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WHAT_A_SOURCE_IS_WHEN_RECORDS_MOVE_ONE_MASS_PER_RECORD_NO_ACTION_ACROSS_EMPTY_SPACE_SCREENED_DENSITY_POTENTIAL_SIGNED_TILT_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentences used
+PASS: A3 the gravity lane's weak-field bridge note on main states the requirements on a source density that T1 applies to records
+PASS: B1 T1: the proper rotations of the cube (24) carry the axis +z to all six axes, and a one-site density averaged over them is constant on contents (14/3): an invariant, additive density vanishing on empty sites is a constant times the occupancy
+PASS: B2 T2: two clusters of 2 and 3 records on a line weigh w(A) w(B) at every gap of 1 to 4 empty sites, at the neutral scale and at scale 1 for (12,1,2): no interaction across empty sites; touching multiplies the weight by 1 (neutral scale) and 7/2 (scale 1)
+PASS: B3 T2: given the occupancy, the contents of two components separated by an empty site are independent (all 1296 contents of two pairs)
+PASS: C1 T3: on the periodic 2 x 8 ladder at (12,1,2), the neutral scale and z = 1/12 (density 338/1000), the field of a held record, g(r) - 1, is positive and falls by more than a factor of three on steps 1-to-2 and 2-to-3 (r=1: 161179/10^7, r=2: 12151/10^7, r=3: 1249/10^7, r=4: 502/10^7): short range
+PASS: C2 T3: on an open line of five sites (no cycle) the field of a held record is exactly zero at the neutral scale (block 40's tree law) and positive at scale 1 (Cov(n_0, n_1) = 2511/10^5)
+PASS: D1 T4: on the occupied plaquette at (3,1,2) the mean content vector at the far corner, given the content a at a corner, is 24/433 times the vector of a for each of the six contents, and it is zero for a record whose content is not read: the charge of the content channel is the content vector, odd and of zero mean; the occupancy carries none
+PASS: D2 T4: on the 4^3 and 6^3 tori the lattice Green function has G(0) > G(1) > G(2) and G(1) > 0, and two held tilts a, b one step apart have cross energy term -kappa a b G/(G(0)^2 - G^2): negative for like tilts, positive for opposite ones; the charge of this channel is signed
+PASS: D3 T4: the mean field around a held tilt a is a G(y)/G(0); around two held tilts it is linear in (a, b), each term the field of one tilt with the other site held at zero, and it is not the sum of the two one-tilt fields
+PASS: E1 T5: under symmetric transit with one record per site the generator applied to the occupancy of a site equals the lattice Laplacian of the occupancy, on all 256 arrangements of the cube graph: the exclusion cancels in the mean, and the mean occupancy obeys the lattice heat equation
+PASS: E2 T5: on the 4^3 torus minus the lattice Laplacian of G equals the point source minus its mean at all 64 sites: a production profile j held fixed carries the stationary field G * (j - mean j)/kappa, the operator of the gravity lane's field equation with production as its source
+PASS: E3 T5: at the neutral scale the formation rate of block 39 next to one, two or three records of independent uniform contents equals the rate in the void on average, exactly, and next to two and three agreeing records it is larger by the factors (3,1,2): 13/12, 5/4; (12,1,2): 46/21, 2348/343: agreement raises local formation relative to void; mixed patterns can also raise it
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the 24 rotations and the orbit of an axis; the invariant one-site density; the formation rate next to one, two and three records of every content
+per_site: executed — two clusters on a line at gaps of 1 to 4 empty sites and touching, two scales; the independence of the contents of separated components; the closure of the mean on all 256 arrangements of the cube graph
+per_mode: executed — the lattice Green function on the 4^3 and 6^3 tori; the cross term and full quadratic energy of two held tilts, the linearity of the mean field, and the field equation at all 64 sites
+per_block: executed — the exact field of a held record on the periodic 2 x 8 ladder and on the open line of five sites; the content field on the occupied plaquette
+lattice_wide: T1, T2, the symmetry part of T4 and the closure of T5 hold on every finite window; T3 is exact only on the finite ladder; historical cubic simulations are not fresh evidence and no universal force or infinite-volume range is proved
+PASS: G1 the five N5 resolution lines are printed
+scope: what a source is when records move — one mass per record; no interaction across empty sites; finite ladder pair correlations; supplied quadratic channel with a signed cross term; the transit Laplacian is sourced by production; exact
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

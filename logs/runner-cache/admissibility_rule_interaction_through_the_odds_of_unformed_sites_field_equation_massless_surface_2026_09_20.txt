@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_interaction_through_the_odds_of_unformed_sites_field_equation_massless_surface_2026_09_20.py
+runner_sha256: b9ebc1f5e62c3ed531234c7d01eef560b7a21c3ebd9bfb601f0ae8c94f85f663
+input_fingerprint_sha256: 506bab00cccf2c6edd673229c270b7b42bca112a8b2de33fda505360ba93ac10
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 17.19
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_INTERACTION_THROUGH_THE_ODDS_OF_UNFORMED_SITES_FIELD_EQUATION_MASSLESS_SURFACE_CONTENT_CHARGE_NO_FIRST_ORDER_MASS_CHANNEL_AT_NEUTRAL_SCALE_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentences used
+PASS: B1 T1: an unformed site summed as one unknown content: across a straight gap of n = 1..6 bonds two records weigh, against chance, 1 + 3 l1^n + 2 l2^n (equal), 1 - 3 l1^n + 2 l2^n (opposite), 1 - l2^n (orthogonal) at three triples, and the average over contents is exactly 1
+PASS: B2 T1: on the plaquette at (3,1,2) every one of the 16 arrangements of records weighs Z once contents are summed (no weight attaches to where the records are: masses do not interact), while the contents of two records across unformed sites are correlated
+PASS: C1 T2: the odds of an unformed site factorize exactly as (T/6)^6 prod_y (1 + 6 (K_1 delta_y)(s)) over its six neighbours, delta_y the departure of neighbour y's odds from the uniform ones
+PASS: C2 T2: the exact derivative of the odds map at the uniform field, with respect to one neighbour's odds, is K_1(s,b) - 1/6 (all 36 entries, by exact differentiation): on departures of zero sum, delta_x = sum over neighbours of K_1 delta_y
+PASS: C3 T2: K_1 has the vector eigenvalue l1 and the quadrupole eigenvalue l2, and the sum over the six neighbours multiplies a cosine wave by 6 - E(k): the linearized map has the spectrum l_i (6 - E(k)), so the uniform field is linearly stable iff 6 |l_i| < 1
+PASS: C4 T2: the vector channel is massless, 6 l1 = 1, exactly on 5p = 7q + 4r; the declared triple (3,1,2) lies on it; (5,2,4) and (7,3,5) are screened with m^2 = (1 - 6 l1)/l1 = 5/3 and 3/2; at (12,1,2) 6 l1 = 22/7 > 1 and the uniform field is unstable
+PASS: C5 T2: on the 4^3 torus at (5,2,4) the exact solution of v_x - l1 (sum of the six neighbours) = point source equals the mode sum of 1/(1 - l1 (6 - E(k))) at all 64 sites, positive and decreasing along an axis: the response is the screened lattice Green function with m^2 = (1 - 6 l1)/l1; at (3,1,2) the constant field is in the kernel (no mass term)
+PASS: D1 T3: one neighbour's factor contracts the ratio metric: R(omega x, omega y) <= R/((1 - kappa) + kappa R), kappa the least min/max ratio of two rows of omega, on 1600 exact random pairs and 20 adversarial pairs at four triples (tightest case 999/1000 of the bound); hence log R shrinks by 1 - kappa
+PASS: D2 T3: the odds of a site move by at most the product over its six neighbours of their contracted ratios (200 exact cases, half of them with a single differing neighbour); at (21,20,20) kappa = 400/441 and 6 (1 - kappa) = 82/147 < 1: there the odds exist, are unique for every arrangement of records, and the influence of a record decays geometrically; at (5,2,4) the criterion is silent
+PASS: E1 T4: the odds map is covariant under the 24 rotations of all contents, records included: the vector projection of the record source is its content vector, odd and of zero mean, and no rotation-invariant (mass) source exists in the six-outcome odds, whose only invariant component is fixed by normalization
+PASS: E2 T4: the content-averaged weight of a site against the void, as a polynomial in the neighbours' leans m_y, has no first-order term and the second-order term 3 l1^2 sum_{y<y'} m_y.m_y' (exact interpolation): what is blind to content enters at second order
+PASS: E3 T5: with 'no record' among the possibilities the uniform field of density rho is a fixed point for z = rho/(6 (1-rho)(1+rho(g-1))^6), and the exact derivative of the seven-outcome map has the scalar (mass) eigenvalue rho (1-rho)(g-1)/(1+rho(g-1)) and the vector eigenvalue rho g l1/(1+rho(g-1)) per neighbour: (rho 1/2, g 1): scalar 0, vector 3/46; (rho 3/10, g 1): scalar 0, vector 9/230; (rho 1/2, g 2): scalar 1/6, vector 2/23; (rho 3/10, g 3/2): scalar 21/230, vector 27/529: at the neutral scale g = 1 the mass channel has no first-order strength
+PASS: H2 T6 boundary: on the massless 3^3 torus a held point gives constant field one and zero charge; no full periodic inverse exists
+PASS: H1 T6: on the 5^3 torus the field of a body of agreeing records (u = 1 on the body, the linear field equation off it) has the charge 1 - 6 l1 on a record surrounded by records and no smaller charge anywhere, a capacity per record that falls for the displayed nested cubes, and is monotone and subadditive in the body: l1 = 3/23: capacity per record 872, 520, 399 thousandths for cubes of 1, 8, 27 records, interior charge 5/23; l1 = 19/119: capacity per record 713, 277, 140 thousandths for cubes of 1, 8, 27 records, interior charge 5/119: a record enters as a boundary value, and the source strength of a body is its capacity, not its number of records
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the gap weights for the three relations of two contents at n = 1..6; the 36 entries of the derivative of the odds map; the 24 rotations
+per_site: executed — all 16 arrangements of records on the plaquette; the field equation solved exactly at all 64 sites of the 4^3 torus
+per_mode: executed — the vector and quadrupole eigenvalues of K_1; cosine waves under the neighbour sum; the mode sum of the screened Green function
+per_block: executed — the contraction inequality on 1600 random and 20 adversarial exact pairs and the product bound on 200 exact cases; the seven-outcome derivative at four points (rho, g); the exact field, charges and capacity of cubes of 1, 8 and 27 records on the 5^3 torus at two strengths
+lattice_wide: T1 and the symmetry statement hold on every finite window; the linearization, its spectrum and the massless surface are exact on every torus; T3 proves existence, uniqueness and geometric decay for 6 (1 - kappa) < 1 on every graph of degree six; nothing is claimed about the nonlinear field on the massless surface or beyond it
+PASS: G1 the five N5 resolution lines are printed
+scope: records interacting through the odds of unformed sites — contents interact across empty sites, masses do not under exact summation; field equation, massless surface, proved screened regime, content as first-order charge, no first-order mass channel at the neutral scale, records as boundary values (capacity, not record count); exact
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.py
+runner_sha256: c21e98bab10bd79ab136f8212cc2a06e109a5a24ad3ee527b1d46fe7d92f67af
+input_fingerprint_sha256: c4d279ec6538540d366144f855e38865adc39d8118fbe73bf5e0d8db387a80a3
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 190.00
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The exact L = 2 torus ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: 9600 configurations; sum rule 1; (pi,pi,0): 86/75, 38/25
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: largest deviation 2.39 standard errors over 57 fluctuating entries
+
+== C. L = 8, 2 x 10^6 worms ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: largest residual 2.6e-13
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: K_L lambda in [0.9934, 1.0088], K_L = 0.667318
+
+== D. The splits ==
+[PASS] Finite diagnostic 5; scope and exceptions are in the companion note :: 28 wavevectors, 84 linear tests; largest 1.94 standard errors
+[PASS] Finite diagnostic 6; scope and exceptions are in the companion note :: largest 0.60% +- 0.04% at (1, 3, 4) 2pi/8; (pi,pi,0): 0.55% +- 0.13%
+
+time 188 s
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.py
+runner_sha256: 35856692d5b137cec74964d2ba30e8915fd13e439f650baad649345cfb75cc7c
+input_fingerprint_sha256: d6a4819e3012a1b7a0c0a516fc4a6571d7b750481fd1ac24f882cbef6d1f117e
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 435.14
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The rise does not follow the wavenumber ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: 2x6: d_2 0.01672, 0.01418 (D_0 0.951, 1.563); 2x8: d_2 0.00765, 0.00756, 0.00798 (D_0 0.743, 1.316, 1.658); 2x10: d_2 0.00404, 0.00438 (D_0 0.606, 1.117)
+
+== B. The rise is quadratic in the background ==
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: 4.39, 4.38, 4.27, 4.27, 4.15, 4.23, 4.21
+
+== C. At fixed density the rise shrinks with the cross-section ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: 0.04363, 0.03228
+
+== D. A second branch at the zone boundary ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: 2x4: -0.1207, 2x6: -0.1592, 2x8: -0.1712, 2x10: -0.1765
+
+== E. The second branch is not a photon ==
+[PASS] Finite diagnostic 5; scope and exceptions are in the companion note :: q = pi: flux sector level +, parity +1.000; zero flux level -, parity -1.000; q = pi/4 flux sector parity -1.000
+
+maximum checked relative eigenpair residual: 6.558073399862723e-13
+time 435 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

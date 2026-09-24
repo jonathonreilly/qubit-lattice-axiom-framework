@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.py
+runner_sha256: 561bf73ee0490b7d1887bd4b5fe26843d2a2797ae4f31923d09dc2185abcea8f
+input_fingerprint_sha256: 6eaae4151702a8676391096139f39cef0036afe459a05ec3bcbe8284f6cc6664
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 166.52
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The exact L = 2 torus ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: 307968 two-defect patterns: 001: 48000, 010: 48000, 011: 41728, 100: 48000, 101: 41728, 110: 41728, 111: 38784
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: largest 2.82 standard errors; <W^2> 3.0376 +- 0.0079
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: largest 2.21 standard errors
+
+== C. L = 8, 2 x 10^6 worms ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: (1, 1, 0): 0.915+-0.013, (1, 1, 1): 0.946+-0.014, (2, 0, 0): 0.950+-0.011, (2, 1, 0): 0.951+-0.008, (2, 2, 0): 0.960+-0.011, (3, 0, 0): 0.959+-0.009, (2, 2, 2): 0.968+-0.011, (4, 0, 0): 0.967+-0.012, (4, 4, 0): 0.969+-0.010, (4, 4, 4): 0.963+-0.010
+
+== D. L = 16, 10^6 worms ==
+[PASS] Finite diagnostic 5; scope and exceptions are in the companion note :: 2: 0.986+-0.013, 3: 0.972+-0.013, 4: 0.965+-0.017, 5: 0.970+-0.014, 6: 0.968+-0.013, 7: 0.981+-0.015, 8: 0.960+-0.011
+
+time 166 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

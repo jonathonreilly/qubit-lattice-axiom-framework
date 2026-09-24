@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.py
+runner_sha256: 287353d9d76a9c22196e1ac3c40144c800994bc4b58bac35bd95d377a1fa61f1
+input_fingerprint_sha256: a684f153e9a67278b5f34ec9800b5187a82164b8b5a04e82ee249eee1a12d037
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 72.07
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The square-ice transfer ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: 4x4: 2970, 4x6: 98466, 6x4: 98466, 6x6: 16448400
+
+== B. The planar sum rule ==
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: average 0.500000000000
+
+== C. Square ice ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: 4: 0.24252 (+4.21%), 6: 0.25255 (+4.11%), 8: 0.25641 (+4.29%), 10: 0.25829 (+4.42%), 12: 0.25933 (+4.50%), 14: 0.25998 (+4.55%), 16: 0.26040 (+4.59%), 18: 0.26069 (+4.61%), 20: 0.26090 (+4.63%)
+
+== D. Three-dimensional ice ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: 2x8: 0.31374 (-0.40%), 4x4: 0.32704 (-0.02%)
+
+maximum checked relative eigenpair residual: 5.010562870324693e-13
+time 72 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

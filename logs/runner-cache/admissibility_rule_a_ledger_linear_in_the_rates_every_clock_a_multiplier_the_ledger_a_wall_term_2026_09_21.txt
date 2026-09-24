@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_ledger_linear_in_the_rates_every_clock_a_multiplier_the_ledger_a_wall_term_2026_09_21.py
+runner_sha256: c94abd9953a74e79f3a330be5019afe4eeebbf4357f606ef385a75651162c34f
+input_fingerprint_sha256: fafc04b54eff56c74816d4febcbca9487477fd97d0292ec3edc7bac092d42084
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.93
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: both ledgers (a hopping amplitude with on-site energies, 27 interior sites, rational rates and lengths) are of weight one in the rates, and the sum over ALL sites of w_x dE/dw_x, taken by exact differences, is the ledger itself: a stationary point in every rate has ledger zero; with held walls the ledger is the walls' own share of that sum
+PASS: B2 T1: block 56's field energy is a sum of squares, so with positive content its ledger is positive at every configuration (1164.001, 1173.604, 1400.671 at three): it has no stationary point once the unit of rate is varied; the field energy linear in the rates takes both signs (-9.000 for a stretched site among even clocks, 11.250 when that site's clock is slow) and can balance the content
+PASS: B3 T2: the bilinear field energy is ADDITIVE in the vector of rates at fixed lengths (block 56's is not): every rate is a multiplier, dF/dw_x = 8K chi_x (Lap chi)_x holds no rate at all, the FIELD contribution to length stationarity is linear in rates; hopping content generally is not
+PASS: B4 T2: on a closed lattice (3x3x4 torus, rational chi) the sum of (Lap chi)_x is zero, while the constraint asks (Lap chi)_x = -e_x/(8K w_x chi_x), whose sum is negative for positive content (here -0.599): no static solution; a reference (held walls) or motion of the lengths is needed
+PASS: B5 T2: a single hopping coefficient sqrt(wx*wy) has nonzero mixed rate derivative; linear field energy does not make the full ledger rate-linear
+PASS: C1 T3: for six members K l^p (a Lap lam + b q) on a periodic cell, exact second-order jets give K[a u.Lap lam + (ap - b) lam.Lap lam]; with the lengths unstretched the form vanishes for every u: the rates have no term of their own
+PASS: C2 T3: with no hop energy the lengths' stationarity at second order is solved by lam = -beta (u - ubar), beta = a/(2(ap - b)) (exact differences of the quadratic form at three sites, six members: beta = 1, 1/3, 2/3, 1/4, -1/2, 1); the member (4, 2, 1) has beta = 1; (4, 8, 1) has ap < b: its lengths stretch near a body like the others', and its clocks run FAST there
+PASS: C3 T3: the bilinear members c X Lap X, X = l^(p/2), agree at second order with (a, b) = (cp/2, cp^2/4): b = ap/2 and beta = 1/p (p = 1, 2, 3)
+PASS: C4 T3: in the continuum, for the metric l^2 delta in three dimensions, (volume density) x (scalar curvature) = -8 chi Lap chi = -l (4 Lap lam + 2 |grad lam|^2), chi = sqrt(l) (exact symbolic algebra): the bilinear member with p = 1 is K x rate x volume x curvature with a minus sign, and the power p = 1 is three (the volume) minus two (the curvature)
+PASS: C5 T3: for the member (4, 2, 1) the second-order form's gradients are 4K Lap lam in u and 4K (Lap u + Lap lam) in lam (exact differences); the content's energy falls as 1/chi_z on the bonds at z, so its derivative in lam_z is minus half the hop energy there, tau_z: at weak field Lap lam = -e/(4K wbar) and Lap u = (e + tau)/(4K wbar): the clock source is e+tau in this linear scalar ansatz; arbitrary hop density need not be positive
+PASS: D1 T4: one body at the centre of the 7x7x7 box (Q = 5/2, 8K = 6, g_0 = 0.229, bare energy 23.586): chi = 1 + Q g and N = 1 - P g, P = Q/(1 + 2Qg_0), satisfy BOTH stationarity conditions at all 125 interior sites exactly; the body's clock runs at 1/(1 + 2Qg_0) = 0.466
+PASS: D2 T4: the ledger of the box (content plus the bond form) equals the walls' term 8K x (flux of chi into the walls) = 8KQ = m/chi_0 = 15.000, below the bare energy 23.586
+PASS: D3 T4: three bodies (Q = 3/2, 1/3, 4): both conditions hold at all 125 sites; 0 < N <= 1 and 0 < w <= 1 everywhere; N = 1 - sum P_i g_i with P_i = Q_i w_i exactly (clocks at 0.572, 0.823, 0.371), so sum P = 2.617 < sum Q = 5.833; ledger = 8K sum Q = sum m_i/chi_i = 35.000 of bare 58.850
+PASS: D4 T4: the charges are the minimum of the strictly convex function sum Q + (1/2) Q.G Q - sum mu_i log Q_i (gradient zero, Hessian's leading minors 1.146, 4.096, 2.732): the positive solution is unique; each body alone would carry a larger charge (the pair shows the walls less than its parts), and at fixed diagonal entries and bare masses the total charge falls as the mutual inverse entry rises (slope -0.717 for two bodies)
+PASS: D5 T4: at the same bare energy the walls see 15.000 here against 12.413 under block 56's bond energy (same first correction, gamma = 1/(4K)); block 56's bound is 8K/g_0 = 26.206, while here Q = 1000 shows the walls 6000.000: what is seen obeys M + M^2 g_0/(8K) = m and grows without bound, as the root of the bare energy
+PASS: D6 T4: far from the body chi - 1 = Q g and 1 - N = P g: the lengths carry 2Q and the rates P + Q, equal only to first order (P = 1.166 against Q = 2.500); the leading weak-exterior local transverse ray coefficient ratio is 1 + 2Q/(P + Q) = 1 + (1 + 2Qg_0)/(1 + Qg_0) = 2.364 here, within 1/1000 of 2 for Q = 1/1000, and below 3 at any strength
+PASS: D7 T4: the rates' equation is block 53's form at every strength: w_z = kappa_z x (the mean of the six neighbours' rates weighted by their chi), kappa_z = 1/(1 + m_z/(4K chi_z sum_y chi_y)): 1 in empty space, 0.693, 0.905, 0.468 at the three bodies; at weak field log kappa = -m/(24K), block 55's -(gamma/6) m with gamma = 1/(4K)
+PASS: E1 T5: at second order the field energy is affine in u for every member, and a kinetic term c_k l^s (dlam/dt)^2/w holds no rate of change of u: the rates stay multipliers and the constraint 4K Lap lam = -e/wbar holds at each label time; a source of 1/100 switched on at one corner of the box changes the length at the far corner by 0.185 millionths at the SAME label time: the grounded linearized constraint is instantaneous; nonlinear dynamics and other backgrounds are not tested
+PASS: E2 T5: a closed lattice with content at rest and c_k = -kappa < 0 (label with w = 1): l = (1 + t/t_0)^(2/s), t_0 = (2/s) sqrt(kappa/m), solves the constraint m = kappa l^s (dlam/dt)^2 and the lengths' equation 2 lam'' + s lam'^2 = 0 (exact symbolic algebra), and the rate of change of the constraint is -(dlam/dt) times the lengths' equation: it is kept; for c_k > 0 the constraint m + c_k l^s (dlam/dt)^2 = 0 has no solution with m > 0
+PASS: E3 T5: the omitted s=0 case has lambda=lambda0 +/-sqrt(m/kappa)t, an exponential positive length, satisfying constraint and length equation
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — both ledgers on a 5x5x5 box with a hopping rational amplitude: weight one, the sum over all sites of w dE/dw by exact differences, additivity of the linear field energy in the rates
+per_site: executed — both stationarity conditions at all 125 interior sites of a 7x7x7 box for one body and for three bodies; the rate at each body; P_i = Q_i w_i
+per_mode: executed — exact second-order jets of six nearest-neighbour members and three bilinear members on a periodic cell; the exponent beta by exact differences; the continuum curvature identity by exact symbolic algebra
+per_block: executed — the ledger against the wall term, against the bare energies and against block 56 at the same bare energy; convexity and uniqueness; the far-field coefficients; the closed lattice; the uniform motion of the lengths and the keeping of its constraint
+lattice_wide: T1 holds for every ledger of weight one; T2 for every field energy linear in the rates (the closed-lattice statement for the bilinear members); T3 for the nearest-neighbour members named, at second order; T4 for bodies at rest in any box with walls held at w = l = 1, for the bilinear member with p = 1 and isotropic stretching only; T5 at second order for every local kinetic term of the stated form, and for uniform configurations; that lengths exist, that the field energy is linear in the rates, the member, its number K, the powers p and s, the sign of c_k, and whether the anisotropic parts of block 59 can stay at rest are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: homogeneous stationary boundary identity; field-only rate linearity; stated weak-field exponent; positive finite diagonal-source solution; restricted static-background kinetic constraint and uniform power-law/exponential solutions
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

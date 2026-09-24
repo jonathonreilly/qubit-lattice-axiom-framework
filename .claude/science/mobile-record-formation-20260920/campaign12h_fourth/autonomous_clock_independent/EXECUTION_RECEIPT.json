@@ -1,0 +1,59 @@
+{
+  "stage": "author-blind independent clock PRE",
+  "completed_utc": "2026-09-24T02:34:14.991835+00:00",
+  "python": "3.13.5",
+  "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "libraries": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "source_bindings_sha256": "1584f73ea26767967af7e16a2e45ab9a416edd5de8a9eea2b0537d9500ee1447",
+  "source_files_authenticated": 17,
+  "runs": [
+    {
+      "script": "exact_clock_control.py",
+      "script_sha256": "e5f578b5cba20d31ea5e41dba23323c721735d1f7e826a2c9b98785f6d91016c",
+      "exit_code": 0,
+      "wall_seconds": 14.5665605829563,
+      "stdout": "exact_clock_control.stdout",
+      "stdout_sha256": "59f3bbe3a6a2fa2f790cc620c450ab2cb413f93cdeae2c3ff5af6721375a582b",
+      "stderr": "exact_clock_control.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "EXACT_CLOCK_RESULTS.json",
+      "result_sha256": "59f3bbe3a6a2fa2f790cc620c450ab2cb413f93cdeae2c3ff5af6721375a582b"
+    },
+    {
+      "script": "finite_clock_dynamics_control.py",
+      "script_sha256": "03c1eea263ef3141d9350617729ed9512e593221063a68788f9d0bee046a0c4c",
+      "exit_code": 0,
+      "wall_seconds": 1.8391710000578314,
+      "stdout": "finite_clock_dynamics_control.stdout",
+      "stdout_sha256": "cfbfd1144543ee3be27ceec5167017da9613c232bcb400823567a3c822b5c08f",
+      "stderr": "finite_clock_dynamics_control.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "FINITE_CLOCK_DYNAMICS_RESULTS.json",
+      "result_sha256": "17b6599f73a991380a733c6e56962ab4496f445556812ad257d577f7826b8d43"
+    },
+    {
+      "script": "clock_uniformity_control.py",
+      "script_sha256": "0044450508a0e00c05450c3775c13f59651702ed2ce09ce20e789abb0dee2dc8",
+      "exit_code": 0,
+      "wall_seconds": 1.3394865000154823,
+      "stdout": "clock_uniformity_control.stdout",
+      "stdout_sha256": "b737b864eb9a05101b8a4c3fb20011c3674bfce38300cdda831b17f48f51ce61",
+      "stderr": "clock_uniformity_control.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "CLOCK_UNIFORMITY_RESULTS.json",
+      "result_sha256": "7b8135d1ff55d15229205e923dba81295c95170f20c83b0dd6aa5cac6ddebd4c"
+    }
+  ],
+  "scope": "Three new independent implementations; no campaign builders imported. The full-instrument finite-battery/collision source is an admitted premise.",
+  "unresolved_execution_failures": [],
+  "retained_mathematical_failed_routes": [
+    "Equal collision durations on the nonlinear spin clock retain nonzero interior-time error",
+    "Omitting the free-evolution counterphase retains an extra endpoint free rotation",
+    "Endpoint-only transfer does not prove uniform physical-time convergence",
+    "Uniform one-time channel convergence does not transfer derivatives or multitime intervention processes"
+  ]
+}

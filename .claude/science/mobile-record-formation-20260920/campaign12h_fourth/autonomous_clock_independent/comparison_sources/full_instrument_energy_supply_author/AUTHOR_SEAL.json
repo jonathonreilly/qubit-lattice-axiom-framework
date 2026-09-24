@@ -1,0 +1,85 @@
+{
+  "sealed_utc": "2026-09-24T01:58:02.051584+00:00",
+  "status": "Personal conditional construction; independent PRE pending",
+  "files": [
+    {
+      "path": "DERIVATION_PLAN.md",
+      "bytes": 2997,
+      "sha256": "ca7557bf616cd4d5206f43badf480369cd3bb5f3fef8f446c6bee217efd42e8e"
+    },
+    {
+      "path": "DEVELOPMENT_RECORD.md",
+      "bytes": 1084,
+      "sha256": "9bb6ea93057473cd1f9c58d0999a818248033248e644c45a917ee3fc1c23b9a9"
+    },
+    {
+      "path": "EXECUTION_RECEIPT.json",
+      "bytes": 726,
+      "sha256": "63f41ce4c550cf9843b8fca60e48a374c3d7808054764129510aeae4788ba131"
+    },
+    {
+      "path": "FINITE_BATTERY_RESULTS.json",
+      "bytes": 2514,
+      "sha256": "7419a8d7b20f7fee0051f1e96dff1f6a541738e974a283a1f844a0a2ccb7457d"
+    },
+    {
+      "path": "FINITE_BATTERY_RUN.log",
+      "bytes": 2514,
+      "sha256": "7419a8d7b20f7fee0051f1e96dff1f6a541738e974a283a1f844a0a2ccb7457d"
+    },
+    {
+      "path": "FINITE_BATTERY_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md",
+      "bytes": 14146,
+      "sha256": "6b9c4ae27ee49754e905f0d990b766be94f2c9ee8a624da01208a6da14b20288"
+    },
+    {
+      "path": "MARKED_COLLISION_RESULTS.json",
+      "bytes": 7427,
+      "sha256": "5ad28116cc9e3267a43abc291805a6b839bcdc394e0980e10fb2f82d42ee3b31"
+    },
+    {
+      "path": "MARKED_COLLISION_RUN.log",
+      "bytes": 7427,
+      "sha256": "5ad28116cc9e3267a43abc291805a6b839bcdc394e0980e10fb2f82d42ee3b31"
+    },
+    {
+      "path": "MARKED_COLLISION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "STAR_SOURCE_IMPORT.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "finite_battery_control.py",
+      "bytes": 5225,
+      "sha256": "79d2e7b5c40bb1a74b5ea808c20e5ba5fc61c4dfddbc81ba384983d0c1e209af"
+    },
+    {
+      "path": "marked_collision_control.py",
+      "bytes": 8461,
+      "sha256": "043ff41ec64efce5d52757d99d8dab4ece77441de52f1519340e2e526685c700"
+    }
+  ],
+  "sources_sha256": {
+    "microscopic_birth_energy_author/exact_star_energy.py": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e",
+    "microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c",
+    "microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5",
+    "microscopic_electric_robustness_author/STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY.md": "a7dfe854f72be6e30b7aa4bbb61e10c5e7876b6cd62698735968af33ae0477c2",
+    "microscopic_electric_robustness_independent/PRE_RECONSTRUCTION.md": "145bc27edb4a791a89b5d624943ef99102692783b0de5e8cfc7615e0c19c0f40",
+    "microscopic_electric_robustness_independent/PRE_SEAL.json": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa"
+  },
+  "literature_context": [
+    {
+      "url": "https://arxiv.org/pdf/1304.1060",
+      "used": "energy-translation lift equation (1), time-control statement after equation (2); no catalytic theorem imported"
+    }
+  ]
+}

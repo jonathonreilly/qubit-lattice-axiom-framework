@@ -1,0 +1,83 @@
+{
+  "stage": "post-PRE source comparison",
+  "completed_utc": "2026-09-24T02:54:31.221709+00:00",
+  "PRE_seal_sha256": "d015c9245087ce39c102c61d859171c58ccd5b4a2ea4d25ea2b9bc37a61493ad",
+  "PRE_files_authenticated_before": 38,
+  "PRE_files_authenticated_after": 38,
+  "PRE_bytes_unchanged": true,
+  "comparison_source_bindings_sha256": "1e40f618e53d19a45f6c43df9ab54d714696eb6c03b2c4ab587cf11944b62358",
+  "python": "3.13.5",
+  "libraries": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "runs": [
+    {
+      "name": "traveling_packet_identity_control",
+      "script": "traveling_packet_identity_control.py",
+      "script_sha256": "b3dd1213dda189bbe1df6cf11d18b439f27c83a9f7bc2c3cd7c50907596f823f",
+      "exit_code": 0,
+      "wall_seconds": 2.5440443330444396,
+      "stdout": "traveling_packet_identity_control.stdout",
+      "stdout_sha256": "1ddcc124adc3da2e1beaac10118cb0a8c52fbc48cd1978c7dcf2fdcba678708f",
+      "stderr": "traveling_packet_identity_control.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "traveling_program_and_star_control",
+      "script": "traveling_program_and_star_control.py",
+      "script_sha256": "f6dccd2ae74a30d65102a7bf0b93d02b2464a2e10d0b716b6d8a4220bee3afc7",
+      "exit_code": 0,
+      "wall_seconds": 0.516399750020355,
+      "stdout": "traveling_program_and_star_control.stdout",
+      "stdout_sha256": "586f82be2a34afde626211f4cf58d45749a88451727e72a4b0cd8b005b412a7f",
+      "stderr": "traveling_program_and_star_control.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "author_clock_replay",
+      "script": "comparison_runtime/author/autonomous_clock_author/clock_control.py",
+      "script_sha256": "7896f38c8d66196cfc8261f324bd73587c92f80f8afed98df053d623de5e14db",
+      "exit_code": 0,
+      "wall_seconds": 0.650505542056635,
+      "stdout": "author_clock_replay.stdout",
+      "stdout_sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7",
+      "stderr": "author_clock_replay.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "author_original_star_replay",
+      "script": "comparison_runtime/author/autonomous_clock_author/original_star_clock_control.py",
+      "script_sha256": "4a19c73122cef6060138fab9e5eb5bba86ee4902a0baf5fdade0ebfb29f0f463",
+      "exit_code": 0,
+      "wall_seconds": 2.708478417014703,
+      "stdout": "author_original_star_replay.stdout",
+      "stdout_sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d",
+      "stderr": "author_original_star_replay.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "author_runtime_copies": [
+    {
+      "snapshot": "comparison_sources/autonomous_clock_author/clock_control.py",
+      "runtime": "comparison_runtime/author/autonomous_clock_author/clock_control.py",
+      "sha256": "7896f38c8d66196cfc8261f324bd73587c92f80f8afed98df053d623de5e14db"
+    },
+    {
+      "snapshot": "comparison_sources/autonomous_clock_author/original_star_clock_control.py",
+      "runtime": "comparison_runtime/author/autonomous_clock_author/original_star_clock_control.py",
+      "sha256": "4a19c73122cef6060138fab9e5eb5bba86ee4902a0baf5fdade0ebfb29f0f463"
+    },
+    {
+      "snapshot": "comparison_sources/microscopic_birth_energy_author/exact_star_energy.py",
+      "runtime": "comparison_runtime/author/microscopic_birth_energy_author/exact_star_energy.py",
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    }
+  ],
+  "author_replay_result_and_stdout_byte_identical": true,
+  "independence": "First two controls are independently written new calculations. Last two runs are frozen author consistency replay only. No author builder is imported by independent controls.",
+  "temporary_path_policy": "TMPDIR and every source/runtime/output path remain under this packet; operational source paths are relative aliases resolved by hashes.",
+  "unresolved_execution_failures": []
+}

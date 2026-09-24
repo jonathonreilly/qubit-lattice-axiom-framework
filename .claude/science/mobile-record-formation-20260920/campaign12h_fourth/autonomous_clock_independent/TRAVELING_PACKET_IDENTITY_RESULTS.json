@@ -1,0 +1,200 @@
+{
+  "scope": "New independent traveling-packet identities, on top of the frozen distinct spin-clock PRE",
+  "exact_packet_rows": [
+    {
+      "w": 2,
+      "velocity_residual_support": [
+        -3,
+        0
+      ],
+      "velocity_variance_J1": "1",
+      "second_neighbor_overlap": "0",
+      "energy_mean_J1": "sqrt(2*sqrt(5) + 10)/2",
+      "energy_variance_J1": "2",
+      "finite_velocity_commutator_is_boundary_force": true
+    },
+    {
+      "w": 3,
+      "velocity_residual_support": [
+        -4,
+        0
+      ],
+      "velocity_variance_J1": "1/2",
+      "second_neighbor_overlap": "1/4",
+      "energy_mean_J1": "2*cos(pi/11)",
+      "energy_variance_J1": "3/2",
+      "finite_velocity_commutator_is_boundary_force": true
+    },
+    {
+      "w": 5,
+      "velocity_residual_support": [
+        -6,
+        0
+      ],
+      "velocity_variance_J1": "1/6",
+      "second_neighbor_overlap": "7/12",
+      "energy_mean_J1": "2*cos(pi/13)",
+      "energy_variance_J1": "5/6",
+      "finite_velocity_commutator_is_boundary_force": true
+    },
+    {
+      "w": 7,
+      "velocity_residual_support": [
+        -8,
+        0
+      ],
+      "velocity_variance_J1": "1/4 - sqrt(2)/8",
+      "second_neighbor_overlap": "1/8 + 7*sqrt(2)/16",
+      "energy_mean_J1": "-1/4 + sqrt(5)/4 + sqrt(6*sqrt(5) + 30)/4",
+      "energy_variance_J1": "7/4 - 7*sqrt(2)/8",
+      "finite_velocity_commutator_is_boundary_force": true
+    },
+    {
+      "w": 11,
+      "velocity_residual_support": [
+        -12,
+        0
+      ],
+      "velocity_variance_J1": "1/6 - sqrt(3)/12",
+      "second_neighbor_overlap": "1/12 + 11*sqrt(3)/24",
+      "energy_mean_J1": "2*cos(pi/19)",
+      "energy_variance_J1": "11/6 - 11*sqrt(3)/12",
+      "finite_velocity_commutator_is_boundary_force": true
+    }
+  ],
+  "local_walk_power_rows": [
+    {
+      "R": 1,
+      "orders_0_through_R_match": true,
+      "first_nonzero_order": 2
+    },
+    {
+      "R": 2,
+      "orders_0_through_R_match": true,
+      "first_nonzero_order": 3
+    },
+    {
+      "R": 4,
+      "orders_0_through_R_match": true,
+      "first_nonzero_order": 5
+    }
+  ],
+  "Bessel_vs_finite_rows": [
+    {
+      "R": 1,
+      "finite_dimension": 7,
+      "finite_infinite_phase_aligned_vector_error_on_enlarged_window": 0.07907918641639368,
+      "proved_channel_tail_bound": 2.0,
+      "finite_clipped_time_mismatch": 0.9773011448096617,
+      "infinite_uniform_time_bound": 3.5,
+      "numerical_note": "The Bessel tail outside the extra 40 sites is far below working precision; exact Taylor/power argument, not this sample, proves the global bound."
+    },
+    {
+      "R": 3,
+      "finite_dimension": 11,
+      "finite_infinite_phase_aligned_vector_error_on_enlarged_window": 0.0039182400063100704,
+      "proved_channel_tail_bound": 2.0,
+      "finite_clipped_time_mismatch": 0.9772938133344365,
+      "infinite_uniform_time_bound": 3.5,
+      "numerical_note": "The Bessel tail outside the extra 40 sites is far below working precision; exact Taylor/power argument, not this sample, proves the global bound."
+    },
+    {
+      "R": 6,
+      "finite_dimension": 17,
+      "finite_infinite_phase_aligned_vector_error_on_enlarged_window": 7.316427627538292e-06,
+      "proved_channel_tail_bound": 0.1828111279459077,
+      "finite_clipped_time_mismatch": 0.9772938130973821,
+      "infinite_uniform_time_bound": 3.5,
+      "numerical_note": "The Bessel tail outside the extra 40 sites is far below working precision; exact Taylor/power argument, not this sample, proves the global bound."
+    },
+    {
+      "R": 8,
+      "finite_dimension": 21,
+      "finite_infinite_phase_aligned_vector_error_on_enlarged_window": 5.263484223670128e-08,
+      "proved_channel_tail_bound": 0.0065289688552109875,
+      "finite_clipped_time_mismatch": 0.9772938130973821,
+      "infinite_uniform_time_bound": 3.5,
+      "numerical_note": "The Bessel tail outside the extra 40 sites is far below working precision; exact Taylor/power argument, not this sample, proves the global bound."
+    },
+    {
+      "R": 12,
+      "finite_dimension": 29,
+      "finite_infinite_phase_aligned_vector_error_on_enlarged_window": 7.988102920768976e-13,
+      "proved_channel_tail_bound": 2.1983060118555525e-06,
+      "finite_clipped_time_mismatch": 0.9772938130973823,
+      "infinite_uniform_time_bound": 3.5,
+      "numerical_note": "The Bessel tail outside the extra 40 sites is far below working precision; exact Taylor/power argument, not this sample, proves the global bound."
+    }
+  ],
+  "positive_tail_rows": [
+    {
+      "w": 3,
+      "n": 3,
+      "R": 34,
+      "a": "4.24264068711928514640506617263",
+      "log_channel_tail_bound": "-33.815572609723703270856109684529842",
+      "positive_channel_tail_bound": "2.061025728197904078917766e-15",
+      "looser_bound_4exp_minus7a": "5.060249347298539912155059e-13",
+      "underflows_binary64_normal_range": false
+    },
+    {
+      "w": 4,
+      "n": 64,
+      "R": 633,
+      "a": "79.1083505599865405701871147988",
+      "log_channel_tail_bound": "-607.06936589027013416725520532598433",
+      "positive_channel_tail_bound": "2.254884292612067321388733e-264",
+      "looser_bound_4exp_minus7a": "1.281796692571985991403068e-240",
+      "underflows_binary64_normal_range": false
+    },
+    {
+      "w": 8,
+      "n": 256,
+      "R": 2180,
+      "a": "272.429509753833508047250074169",
+      "log_channel_tail_bound": "-2084.6932685040091030313898888473189",
+      "positive_channel_tail_bound": "4.258111484947695624689467e-906",
+      "looser_bound_4exp_minus7a": "2.509749841297624597048349e-828",
+      "underflows_binary64_normal_range": true
+    },
+    {
+      "w": 16,
+      "n": 256,
+      "R": 2084,
+      "a": "260.434390404297785647464020802",
+      "log_channel_tail_bound": "-1993.0004316917208564319449112908257",
+      "positive_channel_tail_bound": "2.824295184118863324324848e-866",
+      "looser_bound_4exp_minus7a": "7.337184473485130168051613e-792",
+      "underflows_binary64_normal_range": true
+    },
+    {
+      "w": 8,
+      "n": 256,
+      "R": 2180,
+      "a": "272.429509753833508047250074169",
+      "log_channel_tail_bound": "-2084.6932685040091030313898888473189",
+      "positive_channel_tail_bound": "4.258111484947695624689467e-906",
+      "looser_bound_4exp_minus7a": "2.509749841297624597048349e-828",
+      "underflows_binary64_normal_range": true
+    },
+    {
+      "w": 16,
+      "n": 1024,
+      "R": 8334,
+      "a": "1041.73756161719114258985608321",
+      "log_channel_tail_bound": "-7958.4744579763649168455037545230414",
+      "positive_channel_tail_bound": "4.769342735236000696253361e-3457",
+      "looser_bound_4exp_minus7a": "4.528326987849362286168182e-3167",
+      "underflows_binary64_normal_range": true
+    }
+  ],
+  "general_resource_identities": {
+    "finite_clock_ground_energy": "2J(1-cos(pi/(M+1)))",
+    "clock_program_mean_above_ground": "2J cos(pi/(M+1))",
+    "clock_program_norm": "4J cos(pi/(M+1))",
+    "bare_clock_plus_interaction_split_bound": "||H_int|| <= 4J cos(pi/(M+1))",
+    "initial_clock_energy_variance": "4J^2 w sin^2(pi/(w+1))/(w+1)"
+  },
+  "scientific_discrepancies": [],
+  "author_builder_imported": false
+}

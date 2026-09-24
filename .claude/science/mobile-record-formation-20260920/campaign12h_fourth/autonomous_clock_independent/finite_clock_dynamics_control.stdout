@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "T": 1.2,
+    "omega": 0.83,
+    "gamma": 0.7,
+    "jump": "sqrt(gamma)|+><0|"
+  },
+  "wall_seconds": 0.35009949980303645,
+  "summaries": [
+    {
+      "N": 2,
+      "battery_width": 5,
+      "full_dimension": 168,
+      "max_full_H_history_residual": 9.992165195126016e-16,
+      "max_reference_input_trace_error": 0.14100946056888214,
+      "prepared_clock_mean": 2.6179938779914944,
+      "interaction_norm_upper_bound": 5.235987755982989
+    },
+    {
+      "N": 4,
+      "battery_width": 9,
+      "full_dimension": 1760,
+      "max_full_H_history_residual": 2.9976022072459107e-15,
+      "max_reference_input_trace_error": 0.08380834691760725,
+      "prepared_clock_mean": 5.235987755982989,
+      "interaction_norm_upper_bound": 10.471975511965978
+    },
+    {
+      "N": 6,
+      "battery_width": 17,
+      "full_dimension": 17024,
+      "max_full_H_history_residual": 3.7747598018884706e-15,
+      "max_reference_input_trace_error": 0.06449670127662441,
+      "prepared_clock_mean": 7.853981633974483,
+      "interaction_norm_upper_bound": 15.707963267948966
+    }
+  ]
+}

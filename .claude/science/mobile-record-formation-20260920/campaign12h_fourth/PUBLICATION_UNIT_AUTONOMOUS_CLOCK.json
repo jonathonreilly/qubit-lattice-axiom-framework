@@ -1,0 +1,711 @@
+{
+  "created_utc": "2026-09-24T03:16:05.322802+00:00",
+  "base_pr": 8929,
+  "base_commit": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+  "claim_status": "provisional review proposal; no audit verdict",
+  "scope": "Finite-horizon one-time autonomous reduced-channel approximation and quantitative energy sequence; initial derivatives excluded.",
+  "seals": [
+    {
+      "path": "autonomous_clock_author/AUTHOR_SEAL.json",
+      "sha256": "dcff32f98d26b2cddfdcfa8feeb4dc8907b9174f54f0b51f3ec0cda0a9fa6c4e"
+    },
+    {
+      "path": "autonomous_clock_independent/PRE_SEAL.json",
+      "sha256": "d015c9245087ce39c102c61d859171c58ccd5b4a2ea4d25ea2b9bc37a61493ad"
+    },
+    {
+      "path": "autonomous_clock_independent/FINAL_SEAL.json",
+      "sha256": "9fca8fe4f2e3a687fc47155cffba4258d1d222ee4c195f651ac7679b8b7886e3"
+    }
+  ],
+  "explicit_omissions": [
+    {
+      "path": "autonomous_clock_independent/sources/instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "reason": "Historical procedural snapshot; unchanged private binding retained."
+    },
+    {
+      "path": "autonomous_clock_independent/sources/instructions/planning_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164,
+      "reason": "Historical procedural snapshot; unchanged private binding retained."
+    },
+    {
+      "path": "autonomous_clock_independent/sources/instructions/repository_AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "reason": "Historical procedural snapshot; unchanged private binding retained."
+    },
+    {
+      "path": "autonomous_clock_independent/author_underflow_reporting_fix.diff",
+      "sha256": "d22604276e301ea01486c61940460f3c5e66b9ab40c6636a59f6c39eb0b42966",
+      "bytes": 611,
+      "reason": "Redundant generated display diff has preserved context-line whitespace. Complete before/after code, results and reporting comparison remain included; no scientific bytes omitted."
+    }
+  ],
+  "sources": [
+    {
+      "path": "full_instrument_energy_supply_author/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md",
+      "bytes": 14146,
+      "sha256": "6b9c4ae27ee49754e905f0d990b766be94f2c9ee8a624da01208a6da14b20288"
+    },
+    {
+      "path": "full_instrument_energy_supply_author/AUTHOR_SEAL.json",
+      "bytes": 3356,
+      "sha256": "469d1f35340e2615d7c7e9d4bbad4a18a111fc04bdb49105fb9120cdb0c7ee83"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/COMPARISON.md",
+      "bytes": 14649,
+      "sha256": "948df0ebb9da3dc3b0a63ecd080fc5665b459623653866829adb9791db42508d"
+    },
+    {
+      "path": "full_instrument_energy_supply_independent/FINAL_SEAL.json",
+      "bytes": 2605,
+      "sha256": "8195b3b79a3ec80c31ba889a75982bd2545e57891c5d2fb79f19b84f376a7372"
+    },
+    {
+      "path": "microscopic_birth_energy_author/exact_star_energy.py",
+      "bytes": 5328,
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "path": "microscopic_electric_robustness_independent/PRE_RECONSTRUCTION.md",
+      "bytes": 17655,
+      "sha256": "145bc27edb4a791a89b5d624943ef99102692783b0de5e8cfc7615e0c19c0f40"
+    },
+    {
+      "path": "microscopic_electric_robustness_independent/PRE_SEAL.json",
+      "bytes": 4478,
+      "sha256": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "AUTONOMOUS_CLOCK_PUBLICATION_README.md",
+      "bytes": 3259,
+      "sha256": "efa8e9ca82b5905d76ea67f6afc43c6ad597c507703ff85361096fed655c380d"
+    },
+    {
+      "path": "autonomous_clock_author/AUTHOR_SEAL.json",
+      "bytes": 4747,
+      "sha256": "dcff32f98d26b2cddfdcfa8feeb4dc8907b9174f54f0b51f3ec0cda0a9fa6c4e"
+    },
+    {
+      "path": "autonomous_clock_author/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS.md",
+      "bytes": 13369,
+      "sha256": "bf11561362dfd8d4f0298be946efa9ec8c8e198a0f3b2b01e4b811537120ff5f"
+    },
+    {
+      "path": "autonomous_clock_author/CLOCK_CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_author/CLOCK_CONTROL.stdout",
+      "bytes": 8596,
+      "sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7"
+    },
+    {
+      "path": "autonomous_clock_author/CLOCK_CONTROL_RESULTS.json",
+      "bytes": 8596,
+      "sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7"
+    },
+    {
+      "path": "autonomous_clock_author/DERIVATION_PLAN.md",
+      "bytes": 4988,
+      "sha256": "5a1858bfa202ee25325b32fdf4f1e3d94309301eef709ec8d896db1bb97fb3a6"
+    },
+    {
+      "path": "autonomous_clock_author/DEVELOPMENT_AND_LIMITS.md",
+      "bytes": 2972,
+      "sha256": "f749134c6a6d9b9e109f8f66645d6ed24e530e198eff474662059b9807359f50"
+    },
+    {
+      "path": "autonomous_clock_author/EXECUTION_RECEIPT.json",
+      "bytes": 938,
+      "sha256": "64a401c035bad5ffb56a20833f92b70b8c2c8d3cb056df33e47d792db77d9c5c"
+    },
+    {
+      "path": "autonomous_clock_author/ORIGINAL_STAR_CLOCK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_author/ORIGINAL_STAR_CLOCK.stdout",
+      "bytes": 16787,
+      "sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d"
+    },
+    {
+      "path": "autonomous_clock_author/ORIGINAL_STAR_CLOCK_RESULTS.json",
+      "bytes": 16787,
+      "sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d"
+    },
+    {
+      "path": "autonomous_clock_author/STAR_SOURCE_IMPORT.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "autonomous_clock_author/clock_control.py",
+      "bytes": 9598,
+      "sha256": "7896f38c8d66196cfc8261f324bd73587c92f80f8afed98df053d623de5e14db"
+    },
+    {
+      "path": "autonomous_clock_author/initial_underflow_reporting/CLOCK_CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_author/initial_underflow_reporting/CLOCK_CONTROL.stdout",
+      "bytes": 8396,
+      "sha256": "42f34e882d9b59be98e20f9c10997350b4989d507e38dabf9225b8370cd31919"
+    },
+    {
+      "path": "autonomous_clock_author/initial_underflow_reporting/CLOCK_CONTROL_RESULTS.json",
+      "bytes": 8396,
+      "sha256": "42f34e882d9b59be98e20f9c10997350b4989d507e38dabf9225b8370cd31919"
+    },
+    {
+      "path": "autonomous_clock_author/initial_underflow_reporting/ORIGINAL_STAR_CLOCK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_author/initial_underflow_reporting/ORIGINAL_STAR_CLOCK.stdout",
+      "bytes": 16387,
+      "sha256": "627d96ee499f986a8fd2846a4abb7e44cbc2c8200b78c5715e277b239cc0ee9d"
+    },
+    {
+      "path": "autonomous_clock_author/initial_underflow_reporting/ORIGINAL_STAR_CLOCK_RESULTS.json",
+      "bytes": 16387,
+      "sha256": "627d96ee499f986a8fd2846a4abb7e44cbc2c8200b78c5715e277b239cc0ee9d"
+    },
+    {
+      "path": "autonomous_clock_author/initial_underflow_reporting/clock_control.py",
+      "bytes": 9414,
+      "sha256": "09fff4946c0c24cda698b64158faca46278be8aa08bd9307da4e99ef20af3a94"
+    },
+    {
+      "path": "autonomous_clock_author/original_star_clock_control.py",
+      "bytes": 6343,
+      "sha256": "4a19c73122cef6060138fab9e5eb5bba86ee4902a0baf5fdade0ebfb29f0f463"
+    },
+    {
+      "path": "autonomous_clock_independent/CLOCK_UNIFORMITY_RESULTS.json",
+      "bytes": 505125,
+      "sha256": "7b8135d1ff55d15229205e923dba81295c95170f20c83b0dd6aa5cac6ddebd4c"
+    },
+    {
+      "path": "autonomous_clock_independent/COMPARISON.md",
+      "bytes": 17853,
+      "sha256": "5840d57c80b2583d5d19ffc7b911b14e0c5bf0fcfa3cbb1f499ab668cbd3b071"
+    },
+    {
+      "path": "autonomous_clock_independent/COMPARISON_EXECUTION_RECEIPT.json",
+      "bytes": 4210,
+      "sha256": "efa05a9ec21f34aebbe5ec73856db06565e7b08e7d3c437927a365a5d1d2d607"
+    },
+    {
+      "path": "autonomous_clock_independent/COMPARISON_SOURCE_BINDINGS.json",
+      "bytes": 11620,
+      "sha256": "1e40f618e53d19a45f6c43df9ab54d714696eb6c03b2c4ab587cf11944b62358"
+    },
+    {
+      "path": "autonomous_clock_independent/COMPARISON_STATUS.md",
+      "bytes": 2060,
+      "sha256": "e17a183f4299f32f80eb38d90099d511f4734d0fa38a9463628a368e34ea69bb"
+    },
+    {
+      "path": "autonomous_clock_independent/DEVELOPMENT_RECORD.md",
+      "bytes": 1661,
+      "sha256": "76f4142a17bacf72b0a5adf32a69b64c8c35721fffd6d9bb22b8fba4972a8b2a"
+    },
+    {
+      "path": "autonomous_clock_independent/EXACT_CLOCK_RESULTS.json",
+      "bytes": 1163,
+      "sha256": "59f3bbe3a6a2fa2f790cc620c450ab2cb413f93cdeae2c3ff5af6721375a582b"
+    },
+    {
+      "path": "autonomous_clock_independent/EXECUTION_RECEIPT.json",
+      "bytes": 2968,
+      "sha256": "884ef48a1eb0953a236ef8e2515885da1a9c9e5fec7cbe5b236b52d82227f561"
+    },
+    {
+      "path": "autonomous_clock_independent/FINAL_SEAL.json",
+      "bytes": 23164,
+      "sha256": "9fca8fe4f2e3a687fc47155cffba4258d1d222ee4c195f651ac7679b8b7886e3"
+    },
+    {
+      "path": "autonomous_clock_independent/FINITE_CLOCK_DYNAMICS_RESULTS.json",
+      "bytes": 34246,
+      "sha256": "17b6599f73a991380a733c6e56962ab4496f445556812ad257d577f7826b8d43"
+    },
+    {
+      "path": "autonomous_clock_independent/PRE_RECONSTRUCTION.md",
+      "bytes": 20040,
+      "sha256": "5a931332a160a0dd773a353a0002ac983e55c63de01b875d7b3a2d2364ae0ec9"
+    },
+    {
+      "path": "autonomous_clock_independent/PRE_SEAL.json",
+      "bytes": 8844,
+      "sha256": "d015c9245087ce39c102c61d859171c58ccd5b4a2ea4d25ea2b9bc37a61493ad"
+    },
+    {
+      "path": "autonomous_clock_independent/PRE_SEAL.sha256",
+      "bytes": 80,
+      "sha256": "4b7dfecc4f3e31b22a31eb7fe6f3a54b9b9d227a4605476233b38790f66f3b6c"
+    },
+    {
+      "path": "autonomous_clock_independent/PUBLICATION_PROVENANCE.md",
+      "bytes": 1490,
+      "sha256": "af16fe325d2a038fa35c1f297239d988eaa1597a2c7b50c3b7ac0cdb10b7a5f4"
+    },
+    {
+      "path": "autonomous_clock_independent/RECONSTRUCTION_PLAN.md",
+      "bytes": 2341,
+      "sha256": "5dd865600f35eb2a5b22ea22b2204ac0f2455bd55a9bcea79f7eef9c4b5aebb1"
+    },
+    {
+      "path": "autonomous_clock_independent/REPORTING_CORRECTION_CHECK.json",
+      "bytes": 4472,
+      "sha256": "902e3cb6a18802f32eb5f793348d182a4dc31b0bdd19e6c87a4c72f55ad8a3ee"
+    },
+    {
+      "path": "autonomous_clock_independent/SOURCE_BINDINGS.json",
+      "bytes": 7190,
+      "sha256": "1584f73ea26767967af7e16a2e45ab9a416edd5de8a9eea2b0537d9500ee1447"
+    },
+    {
+      "path": "autonomous_clock_independent/TRAVELING_PACKET_IDENTITY_RESULTS.json",
+      "bytes": 7172,
+      "sha256": "1ddcc124adc3da2e1beaac10118cb0a8c52fbc48cd1978c7dcf2fdcba678708f"
+    },
+    {
+      "path": "autonomous_clock_independent/TRAVELING_PROGRAM_AND_STAR_RESULTS.json",
+      "bytes": 17179,
+      "sha256": "fb64745719261becfb53c32e352cb069373fbd7119b483d83e022de86dbfe670"
+    },
+    {
+      "path": "autonomous_clock_independent/WORKING_STATUS.md",
+      "bytes": 958,
+      "sha256": "86b073ecb74cc337894fa61c2f8d8f110a7fdf080e9f22e5be7990e0f1456966"
+    },
+    {
+      "path": "autonomous_clock_independent/author_clock_replay.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/author_clock_replay.stdout",
+      "bytes": 8596,
+      "sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7"
+    },
+    {
+      "path": "autonomous_clock_independent/author_original_star_replay.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/author_original_star_replay.stdout",
+      "bytes": 16787,
+      "sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d"
+    },
+    {
+      "path": "autonomous_clock_independent/bind_PRE_sources.log",
+      "bytes": 219,
+      "sha256": "99ec654cdebdeba09f988de648a9f94d7ce025747ded9fdaca4b06ede85a2d31"
+    },
+    {
+      "path": "autonomous_clock_independent/bind_PRE_sources.py",
+      "bytes": 2580,
+      "sha256": "c098ca2ff09ad798b3db26e14f961895115608ba8a68aeeb3a6910fd73123a26"
+    },
+    {
+      "path": "autonomous_clock_independent/bind_clock_comparison_sources.py",
+      "bytes": 2768,
+      "sha256": "ec1fc338c58d61c13ffc1b8acdd69ac0ff31f2bc938de1064484e057298d53ec"
+    },
+    {
+      "path": "autonomous_clock_independent/bind_clock_comparison_sources.stdout",
+      "bytes": 152,
+      "sha256": "60237e38fdcc4fc8872d51a1bba3f52bd049939fdb06efb173b69c230b749af4"
+    },
+    {
+      "path": "autonomous_clock_independent/clock_uniformity_control.py",
+      "bytes": 4929,
+      "sha256": "0044450508a0e00c05450c3775c13f59651702ed2ce09ce20e789abb0dee2dc8"
+    },
+    {
+      "path": "autonomous_clock_independent/clock_uniformity_control.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/clock_uniformity_control.stdout",
+      "bytes": 4917,
+      "sha256": "b737b864eb9a05101b8a4c3fb20011c3674bfce38300cdda831b17f48f51ce61"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_runtime/author/autonomous_clock_author/CLOCK_CONTROL_RESULTS.json",
+      "bytes": 8596,
+      "sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_runtime/author/autonomous_clock_author/ORIGINAL_STAR_CLOCK_RESULTS.json",
+      "bytes": 16787,
+      "sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_runtime/author/autonomous_clock_author/STAR_SOURCE_IMPORT.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_runtime/author/autonomous_clock_author/clock_control.py",
+      "bytes": 9598,
+      "sha256": "7896f38c8d66196cfc8261f324bd73587c92f80f8afed98df053d623de5e14db"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_runtime/author/autonomous_clock_author/original_star_clock_control.py",
+      "bytes": 6343,
+      "sha256": "4a19c73122cef6060138fab9e5eb5bba86ee4902a0baf5fdade0ebfb29f0f463"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_runtime/author/microscopic_birth_energy_author/exact_star_energy.py",
+      "bytes": 5328,
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/AUTHOR_SEAL.json",
+      "bytes": 4747,
+      "sha256": "dcff32f98d26b2cddfdcfa8feeb4dc8907b9174f54f0b51f3ec0cda0a9fa6c4e"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS.md",
+      "bytes": 13369,
+      "sha256": "bf11561362dfd8d4f0298be946efa9ec8c8e198a0f3b2b01e4b811537120ff5f"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/CLOCK_CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/CLOCK_CONTROL.stdout",
+      "bytes": 8596,
+      "sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/CLOCK_CONTROL_RESULTS.json",
+      "bytes": 8596,
+      "sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/DERIVATION_PLAN.md",
+      "bytes": 4988,
+      "sha256": "5a1858bfa202ee25325b32fdf4f1e3d94309301eef709ec8d896db1bb97fb3a6"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/DEVELOPMENT_AND_LIMITS.md",
+      "bytes": 2972,
+      "sha256": "f749134c6a6d9b9e109f8f66645d6ed24e530e198eff474662059b9807359f50"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/EXECUTION_RECEIPT.json",
+      "bytes": 938,
+      "sha256": "64a401c035bad5ffb56a20833f92b70b8c2c8d3cb056df33e47d792db77d9c5c"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/ORIGINAL_STAR_CLOCK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/ORIGINAL_STAR_CLOCK.stdout",
+      "bytes": 16787,
+      "sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/ORIGINAL_STAR_CLOCK_RESULTS.json",
+      "bytes": 16787,
+      "sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/STAR_SOURCE_IMPORT.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/clock_control.py",
+      "bytes": 9598,
+      "sha256": "7896f38c8d66196cfc8261f324bd73587c92f80f8afed98df053d623de5e14db"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/initial_underflow_reporting/CLOCK_CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/initial_underflow_reporting/CLOCK_CONTROL.stdout",
+      "bytes": 8396,
+      "sha256": "42f34e882d9b59be98e20f9c10997350b4989d507e38dabf9225b8370cd31919"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/initial_underflow_reporting/CLOCK_CONTROL_RESULTS.json",
+      "bytes": 8396,
+      "sha256": "42f34e882d9b59be98e20f9c10997350b4989d507e38dabf9225b8370cd31919"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/initial_underflow_reporting/ORIGINAL_STAR_CLOCK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/initial_underflow_reporting/ORIGINAL_STAR_CLOCK.stdout",
+      "bytes": 16387,
+      "sha256": "627d96ee499f986a8fd2846a4abb7e44cbc2c8200b78c5715e277b239cc0ee9d"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/initial_underflow_reporting/ORIGINAL_STAR_CLOCK_RESULTS.json",
+      "bytes": 16387,
+      "sha256": "627d96ee499f986a8fd2846a4abb7e44cbc2c8200b78c5715e277b239cc0ee9d"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/initial_underflow_reporting/clock_control.py",
+      "bytes": 9414,
+      "sha256": "09fff4946c0c24cda698b64158faca46278be8aa08bd9307da4e99ef20af3a94"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/autonomous_clock_author/original_star_clock_control.py",
+      "bytes": 6343,
+      "sha256": "4a19c73122cef6060138fab9e5eb5bba86ee4902a0baf5fdade0ebfb29f0f463"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/full_instrument_energy_supply_author/AUTHOR_SEAL.json",
+      "bytes": 3356,
+      "sha256": "469d1f35340e2615d7c7e9d4bbad4a18a111fc04bdb49105fb9120cdb0c7ee83"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/full_instrument_energy_supply_author/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md",
+      "bytes": 14146,
+      "sha256": "6b9c4ae27ee49754e905f0d990b766be94f2c9ee8a624da01208a6da14b20288"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/full_instrument_energy_supply_independent/COMPARISON.md",
+      "bytes": 14649,
+      "sha256": "948df0ebb9da3dc3b0a63ecd080fc5665b459623653866829adb9791db42508d"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/full_instrument_energy_supply_independent/FINAL_SEAL.json",
+      "bytes": 2605,
+      "sha256": "8195b3b79a3ec80c31ba889a75982bd2545e57891c5d2fb79f19b84f376a7372"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/microscopic_birth_energy_author/exact_star_energy.py",
+      "bytes": 5328,
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/microscopic_electric_robustness_independent/EXACT_STAR_MATRIX_RESULTS.json",
+      "bytes": 28702,
+      "sha256": "8b26fca39e618219ed263cdd4e15ebac084a22359abeb62144c67e41b359922f"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/microscopic_electric_robustness_independent/PRE_RECONSTRUCTION.md",
+      "bytes": 17655,
+      "sha256": "145bc27edb4a791a89b5d624943ef99102692783b0de5e8cfc7615e0c19c0f40"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/microscopic_electric_robustness_independent/PRE_SEAL.json",
+      "bytes": 4478,
+      "sha256": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa"
+    },
+    {
+      "path": "autonomous_clock_independent/comparison_sources/microscopic_electric_robustness_independent/star_local_matrix_control.py",
+      "bytes": 8637,
+      "sha256": "1d99b207b028f191961331b0c79662f9fe13e93dc145ce53c38da00deed81254"
+    },
+    {
+      "path": "autonomous_clock_independent/exact_clock_control.py",
+      "bytes": 4300,
+      "sha256": "e5f578b5cba20d31ea5e41dba23323c721735d1f7e826a2c9b98785f6d91016c"
+    },
+    {
+      "path": "autonomous_clock_independent/exact_clock_control.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/exact_clock_control.stdout",
+      "bytes": 1163,
+      "sha256": "59f3bbe3a6a2fa2f790cc620c450ab2cb413f93cdeae2c3ff5af6721375a582b"
+    },
+    {
+      "path": "autonomous_clock_independent/finite_clock_dynamics_control.py",
+      "bytes": 7914,
+      "sha256": "03c1eea263ef3141d9350617729ed9512e593221063a68788f9d0bee046a0c4c"
+    },
+    {
+      "path": "autonomous_clock_independent/finite_clock_dynamics_control.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/finite_clock_dynamics_control.stdout",
+      "bytes": 1102,
+      "sha256": "cfbfd1144543ee3be27ceec5167017da9613c232bcb400823567a3c822b5c08f"
+    },
+    {
+      "path": "autonomous_clock_independent/reproduce_and_seal_PRE.py",
+      "bytes": 5955,
+      "sha256": "f6e630f257330ee4a6a0d0abfbe6946a83804b59c69a73660872f6a2faed0c01"
+    },
+    {
+      "path": "autonomous_clock_independent/reproduce_clock_comparison.py",
+      "bytes": 5741,
+      "sha256": "56cca10fb293288b219556079058df087db4d4f22cc9968e8746963e8ad0e054"
+    },
+    {
+      "path": "autonomous_clock_independent/seal_clock_comparison.py",
+      "bytes": 8983,
+      "sha256": "42236d8911c91158ed1c5239a6d3b4cde4eed795b4954e30fdb169ba2f5d20dc"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/AUTHOR_SEAL.json",
+      "bytes": 3356,
+      "sha256": "469d1f35340e2615d7c7e9d4bbad4a18a111fc04bdb49105fb9120cdb0c7ee83"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/DERIVATION_PLAN.md",
+      "bytes": 2997,
+      "sha256": "ca7557bf616cd4d5206f43badf480369cd3bb5f3fef8f446c6bee217efd42e8e"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/DEVELOPMENT_RECORD.md",
+      "bytes": 1084,
+      "sha256": "9bb6ea93057473cd1f9c58d0999a818248033248e644c45a917ee3fc1c23b9a9"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/EXECUTION_RECEIPT.json",
+      "bytes": 726,
+      "sha256": "63f41ce4c550cf9843b8fca60e48a374c3d7808054764129510aeae4788ba131"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/FINITE_BATTERY_RESULTS.json",
+      "bytes": 2514,
+      "sha256": "7419a8d7b20f7fee0051f1e96dff1f6a541738e974a283a1f844a0a2ccb7457d"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/FINITE_BATTERY_RUN.log",
+      "bytes": 2514,
+      "sha256": "7419a8d7b20f7fee0051f1e96dff1f6a541738e974a283a1f844a0a2ccb7457d"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/FINITE_BATTERY_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md",
+      "bytes": 14146,
+      "sha256": "6b9c4ae27ee49754e905f0d990b766be94f2c9ee8a624da01208a6da14b20288"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/MARKED_COLLISION_RESULTS.json",
+      "bytes": 7427,
+      "sha256": "5ad28116cc9e3267a43abc291805a6b839bcdc394e0980e10fb2f82d42ee3b31"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/MARKED_COLLISION_RUN.log",
+      "bytes": 7427,
+      "sha256": "5ad28116cc9e3267a43abc291805a6b839bcdc394e0980e10fb2f82d42ee3b31"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/MARKED_COLLISION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/STAR_SOURCE_IMPORT.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/finite_battery_control.py",
+      "bytes": 5225,
+      "sha256": "79d2e7b5c40bb1a74b5ea808c20e5ba5fc61c4dfddbc81ba384983d0c1e209af"
+    },
+    {
+      "path": "autonomous_clock_independent/sources/full_instrument_energy_supply_author/marked_collision_control.py",
+      "bytes": 8461,
+      "sha256": "043ff41ec64efce5d52757d99d8dab4ece77441de52f1519340e2e526685c700"
+    },
+    {
+      "path": "autonomous_clock_independent/traveling_packet_identity_control.py",
+      "bytes": 6219,
+      "sha256": "b3dd1213dda189bbe1df6cf11d18b439f27c83a9f7bc2c3cd7c50907596f823f"
+    },
+    {
+      "path": "autonomous_clock_independent/traveling_packet_identity_control.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/traveling_packet_identity_control.stdout",
+      "bytes": 7172,
+      "sha256": "1ddcc124adc3da2e1beaac10118cb0a8c52fbc48cd1978c7dcf2fdcba678708f"
+    },
+    {
+      "path": "autonomous_clock_independent/traveling_program_and_star_control.py",
+      "bytes": 12237,
+      "sha256": "f6dccd2ae74a30d65102a7bf0b93d02b2464a2e10d0b716b6d8a4220bee3afc7"
+    },
+    {
+      "path": "autonomous_clock_independent/traveling_program_and_star_control.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "autonomous_clock_independent/traveling_program_and_star_control.stdout",
+      "bytes": 1741,
+      "sha256": "586f82be2a34afde626211f4cf58d45749a88451727e72a4b0cd8b005b412a7f"
+    },
+    {
+      "path": "autonomous_clock_review/INITIAL_PORTABLE_WRAPPER.py",
+      "bytes": 2585,
+      "sha256": "84f379f7ddde3eee782006e2028442b1bad442d566322796afd23cf665bb6e40"
+    },
+    {
+      "path": "autonomous_clock_review/NO_GO_SCOPE.md",
+      "bytes": 1146,
+      "sha256": "89da2ad7794c21649a719856d89244af64f2b38c00af43d7c579ba7c6aed14ee"
+    },
+    {
+      "path": "autonomous_clock_review/PORTABLE_DEVELOPMENT.md",
+      "bytes": 822,
+      "sha256": "734acd3d569a43c965e3450af096717b3ebf229eec5209eddf4fe6aecc53aaa9"
+    },
+    {
+      "path": "autonomous_clock_review/PORTABLE_RUN_RECEIPT.json",
+      "bytes": 4971,
+      "sha256": "a224cd3b31d3af684ae809252fe28155b5db0c20d7b1105aab1a17b1e07de128"
+    },
+    {
+      "path": "autonomous_clock_review/ROOT_REVIEW.md",
+      "bytes": 3100,
+      "sha256": "f21b7784b8235bb721b60ee1f2101180ea2a34d505710f41cdb2e70c1da8743d"
+    },
+    {
+      "path": "reproduce_autonomous_clock_publication.py",
+      "bytes": 3095,
+      "sha256": "f91e9896d2a361964653dc1039347a06b98212a368f4fba02dbbcd889dc97083"
+    },
+    {
+      "path": "verify_autonomous_clock_publication.py",
+      "bytes": 1934,
+      "sha256": "8cbea5b96b631d79190e5b276da116bff71b0f1429bd1aea7b772fb5c52f7f93"
+    }
+  ]
+}

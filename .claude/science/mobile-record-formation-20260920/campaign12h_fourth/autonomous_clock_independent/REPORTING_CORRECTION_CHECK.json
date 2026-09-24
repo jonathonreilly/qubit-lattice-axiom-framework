@@ -1,0 +1,159 @@
+{
+  "scope": "Only displayed finite-boundary tail fields changed; all other recorded scientific outputs are byte-value equal after JSON parsing.",
+  "changes": {
+    "CLOCK_CONTROL_RESULTS.json": [
+      {
+        "path": "/physical_time_position_controls/5/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/physical_time_position_controls/6/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/physical_time_position_controls/7/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/physical_time_position_controls/8/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/physical_time_position_controls/9/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/physical_time_position_controls/10/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/physical_time_position_controls/11/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/physical_time_position_controls/12/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/physical_time_position_controls/13/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/physical_time_position_controls/14/proved_boundary_trace_bound",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      }
+    ],
+    "ORIGINAL_STAR_CLOCK_RESULTS.json": [
+      {
+        "path": "/rows/0/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/1/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/2/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/3/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/4/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/5/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/6/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/7/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/8/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/9/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/10/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/11/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/12/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/13/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/14/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/15/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/16/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/17/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/18/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      },
+      {
+        "path": "/rows/19/error_terms/finite_boundary",
+        "old": 0.0,
+        "new": 2.2250738585072626e-308
+      }
+    ]
+  }
+}

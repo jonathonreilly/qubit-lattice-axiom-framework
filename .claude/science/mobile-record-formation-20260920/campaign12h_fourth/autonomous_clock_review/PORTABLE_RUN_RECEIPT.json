@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-09-24T03:18:18.278121+00:00",
+  "temporary_copy": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/campaign12h_fourth",
+  "runs": [
+    {
+      "script": "autonomous_clock_author/clock_control.py",
+      "source_sha256": "7896f38c8d66196cfc8261f324bd73587c92f80f8afed98df053d623de5e14db",
+      "exit_code": 0,
+      "wall_seconds": 1.4864468749146909,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_1.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_1.stderr",
+      "comparison": "Complete result JSON exactly equals frozen evidence.",
+      "result_sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7"
+    },
+    {
+      "script": "autonomous_clock_author/original_star_clock_control.py",
+      "source_sha256": "4a19c73122cef6060138fab9e5eb5bba86ee4902a0baf5fdade0ebfb29f0f463",
+      "exit_code": 0,
+      "wall_seconds": 3.383659749990329,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_2.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_2.stderr",
+      "comparison": "Complete result JSON exactly equals frozen evidence.",
+      "result_sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d"
+    },
+    {
+      "script": "autonomous_clock_independent/exact_clock_control.py",
+      "source_sha256": "e5f578b5cba20d31ea5e41dba23323c721735d1f7e826a2c9b98785f6d91016c",
+      "exit_code": 0,
+      "wall_seconds": 13.409717041999102,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_3.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_3.stderr",
+      "comparison": "Complete result JSON exactly equals frozen evidence.",
+      "result_sha256": "59f3bbe3a6a2fa2f790cc620c450ab2cb413f93cdeae2c3ff5af6721375a582b"
+    },
+    {
+      "script": "autonomous_clock_independent/finite_clock_dynamics_control.py",
+      "source_sha256": "03c1eea263ef3141d9350617729ed9512e593221063a68788f9d0bee046a0c4c",
+      "exit_code": 0,
+      "wall_seconds": 2.1304507080931216,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_4.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_4.stderr",
+      "comparison": "Every scientific result exactly equals frozen evidence; wall_seconds is execution metadata.",
+      "result_sha256": "8beb5b70295fea186664d601acf9bbfeab91527284e2840bdb030dd544a739c0"
+    },
+    {
+      "script": "autonomous_clock_independent/clock_uniformity_control.py",
+      "source_sha256": "0044450508a0e00c05450c3775c13f59651702ed2ce09ce20e789abb0dee2dc8",
+      "exit_code": 0,
+      "wall_seconds": 1.427846707869321,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_5.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_5.stderr",
+      "comparison": "Complete result JSON exactly equals frozen evidence.",
+      "result_sha256": "7b8135d1ff55d15229205e923dba81295c95170f20c83b0dd6aa5cac6ddebd4c"
+    },
+    {
+      "script": "autonomous_clock_independent/traveling_packet_identity_control.py",
+      "source_sha256": "b3dd1213dda189bbe1df6cf11d18b439f27c83a9f7bc2c3cd7c50907596f823f",
+      "exit_code": 0,
+      "wall_seconds": 3.0237238330300897,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_6.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_6.stderr",
+      "comparison": "Complete result JSON exactly equals frozen evidence.",
+      "result_sha256": "1ddcc124adc3da2e1beaac10118cb0a8c52fbc48cd1978c7dcf2fdcba678708f"
+    },
+    {
+      "script": "autonomous_clock_independent/traveling_program_and_star_control.py",
+      "source_sha256": "f6dccd2ae74a30d65102a7bf0b93d02b2464a2e10d0b716b6d8a4220bee3afc7",
+      "exit_code": 0,
+      "wall_seconds": 0.5774021248798817,
+      "stdout": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_7.stdout",
+      "stderr": "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/autonomous-clock-portable-gxb6_95o/run_7.stderr",
+      "comparison": "Complete result JSON exactly equals frozen evidence.",
+      "result_sha256": "fb64745719261becfb53c32e352cb069373fbd7119b483d83e022de86dbfe670"
+    }
+  ],
+  "all_seven_scientific_replays_passed": true,
+  "limits": "Scientific controls rerun directly. Historical instruction-authentication/sealing wrappers are not rerun with omitted provenance snapshots. No private PDF or display diff needed."
+}

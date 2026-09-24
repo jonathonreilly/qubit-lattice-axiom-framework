@@ -1,0 +1,116 @@
+{
+  "created_utc": "2026-09-24T02:33:11.356387+00:00",
+  "status": "Sealed root conditional autonomous finite-horizon reduced-channel construction; independent reconstruction pending",
+  "artifacts": [
+    {
+      "path": "AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS.md",
+      "sha256": "bf11561362dfd8d4f0298be946efa9ec8c8e198a0f3b2b01e4b811537120ff5f",
+      "bytes": 13369
+    },
+    {
+      "path": "CLOCK_CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CLOCK_CONTROL.stdout",
+      "sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7",
+      "bytes": 8596
+    },
+    {
+      "path": "CLOCK_CONTROL_RESULTS.json",
+      "sha256": "14083e64cb3ca8a8250bb9163f66b38e022304f3f69918992b7e52d9e0d527d7",
+      "bytes": 8596
+    },
+    {
+      "path": "DERIVATION_PLAN.md",
+      "sha256": "5a1858bfa202ee25325b32fdf4f1e3d94309301eef709ec8d896db1bb97fb3a6",
+      "bytes": 4988
+    },
+    {
+      "path": "DEVELOPMENT_AND_LIMITS.md",
+      "sha256": "f749134c6a6d9b9e109f8f66645d6ed24e530e198eff474662059b9807359f50",
+      "bytes": 2972
+    },
+    {
+      "path": "EXECUTION_RECEIPT.json",
+      "sha256": "64a401c035bad5ffb56a20833f92b70b8c2c8d3cb056df33e47d792db77d9c5c",
+      "bytes": 938
+    },
+    {
+      "path": "ORIGINAL_STAR_CLOCK.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "ORIGINAL_STAR_CLOCK.stdout",
+      "sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d",
+      "bytes": 16787
+    },
+    {
+      "path": "ORIGINAL_STAR_CLOCK_RESULTS.json",
+      "sha256": "7c39e60053b9e3431e4f46c8c07f8c83744f99c30d7d8b890be915bb8c66b92d",
+      "bytes": 16787
+    },
+    {
+      "path": "STAR_SOURCE_IMPORT.log",
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736",
+      "bytes": 1090
+    },
+    {
+      "path": "clock_control.py",
+      "sha256": "7896f38c8d66196cfc8261f324bd73587c92f80f8afed98df053d623de5e14db",
+      "bytes": 9598
+    },
+    {
+      "path": "initial_underflow_reporting/CLOCK_CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "initial_underflow_reporting/CLOCK_CONTROL.stdout",
+      "sha256": "42f34e882d9b59be98e20f9c10997350b4989d507e38dabf9225b8370cd31919",
+      "bytes": 8396
+    },
+    {
+      "path": "initial_underflow_reporting/CLOCK_CONTROL_RESULTS.json",
+      "sha256": "42f34e882d9b59be98e20f9c10997350b4989d507e38dabf9225b8370cd31919",
+      "bytes": 8396
+    },
+    {
+      "path": "initial_underflow_reporting/ORIGINAL_STAR_CLOCK.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "initial_underflow_reporting/ORIGINAL_STAR_CLOCK.stdout",
+      "sha256": "627d96ee499f986a8fd2846a4abb7e44cbc2c8200b78c5715e277b239cc0ee9d",
+      "bytes": 16387
+    },
+    {
+      "path": "initial_underflow_reporting/ORIGINAL_STAR_CLOCK_RESULTS.json",
+      "sha256": "627d96ee499f986a8fd2846a4abb7e44cbc2c8200b78c5715e277b239cc0ee9d",
+      "bytes": 16387
+    },
+    {
+      "path": "initial_underflow_reporting/clock_control.py",
+      "sha256": "09fff4946c0c24cda698b64158faca46278be8aa08bd9307da4e99ef20af3a94",
+      "bytes": 9414
+    },
+    {
+      "path": "original_star_clock_control.py",
+      "sha256": "4a19c73122cef6060138fab9e5eb5bba86ee4902a0baf5fdade0ebfb29f0f463",
+      "bytes": 6343
+    }
+  ],
+  "sources_sha256": {
+    "full_instrument_energy_supply_author/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md": "6b9c4ae27ee49754e905f0d990b766be94f2c9ee8a624da01208a6da14b20288",
+    "full_instrument_energy_supply_author/AUTHOR_SEAL.json": "469d1f35340e2615d7c7e9d4bbad4a18a111fc04bdb49105fb9120cdb0c7ee83",
+    "full_instrument_energy_supply_independent/COMPARISON.md": "948df0ebb9da3dc3b0a63ecd080fc5665b459623653866829adb9791db42508d",
+    "full_instrument_energy_supply_independent/FINAL_SEAL.json": "8195b3b79a3ec80c31ba889a75982bd2545e57891c5d2fb79f19b84f376a7372",
+    "microscopic_birth_energy_author/exact_star_energy.py": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e",
+    "microscopic_electric_robustness_independent/PRE_RECONSTRUCTION.md": "145bc27edb4a791a89b5d624943ef99102692783b0de5e8cfc7615e0c19c0f40",
+    "microscopic_electric_robustness_independent/PRE_SEAL.json": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa"
+  },
+  "scope": "Finite programmed Hamiltonian with supplied coherent battery, clock and flags. No native selection, exact event-time or process-tensor claim."
+}

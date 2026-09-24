@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-09-24T02:19:16.692648+00:00",
+  "stage": "Completed independent PRE and authorized source comparison",
+  "conclusion": "No required mathematical correction at the frozen author note stated scope. Exact stationary-input energy/flag probabilities independently confirmed; coherent-input counterexample preserves the hypothesis. No audit or landing verdict.",
+  "pre_seal_sha256": "8b2c02e41a68f0ad9d085e3056031383d92f553cb3b0745bd13654b415a0805d",
+  "all_22_private_PRE_artifacts_unchanged": true,
+  "author_seal_sha256": "469d1f35340e2615d7c7e9d4bbad4a18a111fc04bdb49105fb9120cdb0c7ee83",
+  "author_note_sha256": "6b9c4ae27ee49754e905f0d990b766be94f2c9ee8a624da01208a6da14b20288",
+  "current_checkpoint": "FINAL_STATUS.md",
+  "full_disposition": "COMPARISON.md",
+  "external_bibliographic_binding": {
+    "url": "https://arxiv.org/pdf/1304.1060v3",
+    "sha256": "f25314c4d44716b54b2643404f4d646f730400e6ecdb8b4bcf11ac00a2250e2a",
+    "publication": "Private PRE provenance only. PDF explicitly excluded from public artifact set; no public-file-presence requirement. Do not publish third-party PDF or extracts."
+  },
+  "artifacts": [
+    {
+      "path": "COMPARISON.md",
+      "bytes": 14649,
+      "sha256": "948df0ebb9da3dc3b0a63ecd080fc5665b459623653866829adb9791db42508d"
+    },
+    {
+      "path": "COMPARISON_SOURCE_BINDINGS.json",
+      "bytes": 4268,
+      "sha256": "4e8462c064ec862c4b9437018e9aab95e3c0ac46030432f37993e6ff6234f371"
+    },
+    {
+      "path": "comparison_control.py",
+      "bytes": 11175,
+      "sha256": "ea0dfb98b6ac0030f9181051e1cfe5fb3c65adf46584b01ae330ada95ba38b27"
+    },
+    {
+      "path": "COMPARISON_CONTROL_RESULTS.json",
+      "bytes": 7577,
+      "sha256": "c37691726abb8e2a9eb5ffbf30959c4afd10482f5d49bea630ef684ad7957f04"
+    },
+    {
+      "path": "COMPARISON_RUN.stdout.log",
+      "bytes": 1298,
+      "sha256": "e45a295e84c77a066bd247eb1b792531f039b027173cc5e2bcbe831d42b6c80b"
+    },
+    {
+      "path": "COMPARISON_RUN.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COMPARISON_RUN_RECEIPT.json",
+      "bytes": 330,
+      "sha256": "8e16a842603f8a3aeda5c910c696bb0b292adca2e7444f49c79cfdefb6e8202c"
+    },
+    {
+      "path": "PRESERVATION_AND_PUBLICATION_RECEIPT.json",
+      "bytes": 4724,
+      "sha256": "006311c8dbf9872bb7798f26862734d733101e5b5f9e80c941366e7345908ae5"
+    },
+    {
+      "path": "FINAL_STATUS.md",
+      "bytes": 1890,
+      "sha256": "85dbb1c120797fbff6e0bb3fa7c315c713f346c95f1461326699f3bbcce4f52b"
+    }
+  ]
+}

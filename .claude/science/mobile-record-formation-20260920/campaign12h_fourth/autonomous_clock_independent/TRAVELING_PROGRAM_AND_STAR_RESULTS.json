@@ -1,0 +1,405 @@
+{
+  "complete_non_covariant_program": {
+    "system_jump": "sqrt(gamma)|+><0|; not H-covariant",
+    "clock_dimension": 75,
+    "total_dimension": 4800,
+    "rows": [
+      {
+        "t": 0.0,
+        "direct_H_vs_spectral_clock_isometry_error": 3.500142796890853e-16,
+        "system_vs_full_Q_counterphase_reduced_Choi_error": 0.0,
+        "free_energy_balance_error": 4.440892098500626e-16,
+        "clock_program_energy": 14.130054822988729
+      },
+      {
+        "t": 0.13,
+        "direct_H_vs_spectral_clock_isometry_error": 5.900471882332365e-16,
+        "system_vs_full_Q_counterphase_reduced_Choi_error": 3.874561364251766e-18,
+        "free_energy_balance_error": 1.3322676295501878e-15,
+        "clock_program_energy": 14.130054822988733
+      },
+      {
+        "t": 0.3,
+        "direct_H_vs_spectral_clock_isometry_error": 1.748170464365561e-15,
+        "system_vs_full_Q_counterphase_reduced_Choi_error": 6.663080566775339e-16,
+        "free_energy_balance_error": 4.440892098500626e-16,
+        "clock_program_energy": 14.130054822988724
+      }
+    ],
+    "initial_reduced_derivative_equals_A": true,
+    "initial_system_power": 0.0,
+    "original_GKLS_initial_ground_power": 0.28284271247461906,
+    "initial_interaction_action_zero_on_product_preparation": true,
+    "counterphase_difference": "Controlled battery-only phase; full states differ, reduced system/reference channels agree."
+  },
+  "original_star_comparison": {
+    "independent_origin": "Frozen source-blind local operator matrix data; independent spectral DST clock propagation and explicit finite battery translation Gram matrix",
+    "comparison_rows": [
+      {
+        "instrument": "resolved",
+        "steps": 256,
+        "t": 0.0,
+        "state_trace_norm_error": 2.45053673424618e-16,
+        "autonomous_system_energy": -9.318205648691295e-16,
+        "original_GKLS_system_energy": -9.318205648691297e-16,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 2.427550819487204e-16,
+          "autonomous_system_energy": 2.3271877716874077e-15,
+          "original_GKLS_system_energy": 2.3271877716874073e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "resolved",
+        "steps": 256,
+        "t": 0.025,
+        "state_trace_norm_error": 0.0038224208224473394,
+        "autonomous_system_energy": 0.17151166328648765,
+        "original_GKLS_system_energy": 0.18419018628080314,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 9.167406417320834e-14,
+          "autonomous_system_energy": 1.2045919817182948e-14,
+          "original_GKLS_system_energy": 6.38378239159465e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "resolved",
+        "steps": 256,
+        "t": 0.05,
+        "state_trace_norm_error": 0.0037525084666896955,
+        "autonomous_system_energy": 0.3550720138910275,
+        "original_GKLS_system_energy": 0.3670054886018168,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 1.700618812439103e-13,
+          "autonomous_system_energy": 6.611378111642807e-14,
+          "original_GKLS_system_energy": 4.107825191113079e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "resolved",
+        "steps": 256,
+        "t": 0.07500000000000001,
+        "state_trace_norm_error": 0.003504052735927667,
+        "autonomous_system_energy": 0.5247245941295443,
+        "original_GKLS_system_energy": 0.5356634456510161,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 2.5497442698863004e-13,
+          "autonomous_system_energy": 1.7075230118734908e-13,
+          "original_GKLS_system_energy": 3.9968028886505635e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "resolved",
+        "steps": 256,
+        "t": 0.1,
+        "state_trace_norm_error": 0.006719370126205668,
+        "autonomous_system_energy": 0.6716004415132484,
+        "original_GKLS_system_energy": 0.6943627907577844,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 3.8852168010583554e-13,
+          "autonomous_system_energy": 3.042011087472929e-13,
+          "original_GKLS_system_energy": 1.5543122344752192e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "resolved",
+        "steps": 1024,
+        "t": 0.0,
+        "state_trace_norm_error": 1.6652731941898312e-16,
+        "autonomous_system_energy": -9.318205648691295e-16,
+        "original_GKLS_system_energy": -9.318205648691297e-16,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 5.551942006941359e-17,
+          "autonomous_system_energy": 2.327187771687407e-15,
+          "original_GKLS_system_energy": 2.3271877716874073e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "resolved",
+        "steps": 1024,
+        "t": 0.025,
+        "state_trace_norm_error": 0.001774997891149747,
+        "autonomous_system_energy": 0.1780692980791475,
+        "original_GKLS_system_energy": 0.18419018628080314,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 3.970823236193466e-13,
+          "autonomous_system_energy": 5.007105841059456e-14,
+          "original_GKLS_system_energy": 6.38378239159465e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "resolved",
+        "steps": 1024,
+        "t": 0.05,
+        "state_trace_norm_error": 0.0017726834257133805,
+        "autonomous_system_energy": 0.36121824756391296,
+        "original_GKLS_system_energy": 0.3670054886018168,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 7.28953789691511e-13,
+          "autonomous_system_energy": 2.489120021209601e-13,
+          "original_GKLS_system_energy": 4.107825191113079e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "resolved",
+        "steps": 1024,
+        "t": 0.07500000000000001,
+        "state_trace_norm_error": 0.0016944231355185359,
+        "autonomous_system_energy": 0.5303831927604683,
+        "original_GKLS_system_energy": 0.5356634456510161,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 1.0850068673379232e-12,
+          "autonomous_system_energy": 6.31272811801864e-13,
+          "original_GKLS_system_energy": 3.9968028886505635e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "resolved",
+        "steps": 1024,
+        "t": 0.1,
+        "state_trace_norm_error": 0.0022087472600102087,
+        "autonomous_system_energy": 0.6872510897780162,
+        "original_GKLS_system_energy": 0.6943627907577844,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 1.5000461810188437e-12,
+          "autonomous_system_energy": 1.1668443988810395e-12,
+          "original_GKLS_system_energy": 1.5543122344752192e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 256,
+        "t": 0.0,
+        "state_trace_norm_error": 2.45053673424618e-16,
+        "autonomous_system_energy": -9.318205648691295e-16,
+        "original_GKLS_system_energy": -9.318205648691297e-16,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 2.427550819487204e-16,
+          "autonomous_system_energy": 2.3271877716874077e-15,
+          "original_GKLS_system_energy": 2.3271877716874073e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 256,
+        "t": 0.025,
+        "state_trace_norm_error": 0.0038291682707396603,
+        "autonomous_system_energy": 0.17151166328648773,
+        "original_GKLS_system_energy": 0.18419018628080314,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 9.216412355517178e-14,
+          "autonomous_system_energy": 1.2434497875801753e-14,
+          "original_GKLS_system_energy": 6.38378239159465e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 256,
+        "t": 0.05,
+        "state_trace_norm_error": 0.0037616609497546473,
+        "autonomous_system_energy": 0.35507201389102744,
+        "original_GKLS_system_energy": 0.36700548860181686,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 1.6992136864235619e-13,
+          "autonomous_system_energy": 6.705747068735946e-14,
+          "original_GKLS_system_energy": 4.107825191113079e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 256,
+        "t": 0.07500000000000001,
+        "state_trace_norm_error": 0.0035086912476241594,
+        "autonomous_system_energy": 0.5247245941295435,
+        "original_GKLS_system_energy": 0.5356634456510161,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 2.544479384136711e-13,
+          "autonomous_system_energy": 1.709743457922741e-13,
+          "original_GKLS_system_energy": 3.9968028886505635e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 256,
+        "t": 0.1,
+        "state_trace_norm_error": 0.0067193701262061355,
+        "autonomous_system_energy": 0.6716004415132459,
+        "original_GKLS_system_energy": 0.6943627907577845,
+        "clock_dimension": 4625,
+        "clock_program_energy_above_ground": 2724.294469317081,
+        "proved_uniform_diamond_bound": 0.48760163210193647,
+        "author_field_differences": {
+          "state_trace_norm_error": 3.8799866097782854e-13,
+          "autonomous_system_energy": 3.0386804183990535e-13,
+          "original_GKLS_system_energy": 1.7763568394002505e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 1024,
+        "t": 0.0,
+        "state_trace_norm_error": 1.6652731941898312e-16,
+        "autonomous_system_energy": -9.318205648691295e-16,
+        "original_GKLS_system_energy": -9.318205648691297e-16,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 5.551942006941359e-17,
+          "autonomous_system_energy": 2.327187771687407e-15,
+          "original_GKLS_system_energy": 2.3271877716874073e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 1024,
+        "t": 0.025,
+        "state_trace_norm_error": 0.0017763186873708103,
+        "autonomous_system_energy": 0.17806929807914845,
+        "original_GKLS_system_energy": 0.18419018628080314,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 3.9553560080007877e-13,
+          "autonomous_system_energy": 5.0959236830294685e-14,
+          "original_GKLS_system_energy": 6.38378239159465e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 1024,
+        "t": 0.05,
+        "state_trace_norm_error": 0.001774934850030575,
+        "autonomous_system_energy": 0.3612182475639144,
+        "original_GKLS_system_energy": 0.36700548860181686,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 7.267110090775075e-13,
+          "autonomous_system_energy": 2.5079938126282286e-13,
+          "original_GKLS_system_energy": 4.107825191113079e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 1024,
+        "t": 0.07500000000000001,
+        "state_trace_norm_error": 0.0016947559801920766,
+        "autonomous_system_energy": 0.5303831927604661,
+        "original_GKLS_system_energy": 0.5356634456510161,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 1.0830531350231043e-12,
+          "autonomous_system_energy": 6.323830348264892e-13,
+          "original_GKLS_system_energy": 3.9968028886505635e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      },
+      {
+        "instrument": "coherent",
+        "steps": 1024,
+        "t": 0.1,
+        "state_trace_norm_error": 0.002208747260017838,
+        "autonomous_system_energy": 0.6872510897780066,
+        "original_GKLS_system_energy": 0.6943627907577845,
+        "clock_dimension": 17709,
+        "clock_program_energy_above_ground": 10417.375452267383,
+        "proved_uniform_diamond_bound": 0.13289068385637856,
+        "author_field_differences": {
+          "state_trace_norm_error": 1.4928852425100114e-12,
+          "autonomous_system_energy": 1.1670664434859646e-12,
+          "original_GKLS_system_energy": 1.7763568394002505e-15,
+          "clock_program_energy_above_ground": 0.0,
+          "proved_uniform_diamond_bound": 0.0
+        }
+      }
+    ],
+    "max_author_field_difference": 1.5000461810188437e-12,
+    "row_count": 20,
+    "scope": "Actual lambda=0 stationary dressed star, both original instruments; no assertion that this input-specific Gram reduction holds for arbitrary nonstationary input."
+  },
+  "author_implementation_imported": false,
+  "scientific_discrepancies": []
+}

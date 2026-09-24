@@ -1,0 +1,257 @@
+{
+  "exact_clock_moments": [
+    {
+      "width": 2,
+      "mean_X": "-3/2",
+      "mean_velocity_at_J1": "1",
+      "variance_velocity_at_J1": "1",
+      "arithmetic": "exact SymPy"
+    },
+    {
+      "width": 3,
+      "mean_X": "-2",
+      "mean_velocity_at_J1": "sqrt(2)",
+      "variance_velocity_at_J1": "1/2",
+      "arithmetic": "exact SymPy"
+    },
+    {
+      "width": 5,
+      "mean_X": "-3",
+      "mean_velocity_at_J1": "sqrt(3)",
+      "variance_velocity_at_J1": "1/6",
+      "arithmetic": "exact SymPy"
+    }
+  ],
+  "physical_time_position_controls": [
+    {
+      "width": 4,
+      "steps": 64,
+      "t": 0.0,
+      "clock_dimension": 1335,
+      "mean_position_error": 0.0,
+      "mean_time_mismatch": 0.0,
+      "proved_uniform_time_bound": 0.38741969623290634,
+      "clock_energy_above_ground": 79.10813184478826,
+      "proved_boundary_trace_bound": 2.2548842926131885e-264,
+      "boundary_buffer": 633
+    },
+    {
+      "width": 4,
+      "steps": 64,
+      "t": 0.25,
+      "clock_dimension": 1335,
+      "mean_position_error": 2.842170943040401e-14,
+      "mean_time_mismatch": 0.04783220341362142,
+      "proved_uniform_time_bound": 0.38741969623290634,
+      "clock_energy_above_ground": 79.1081318447886,
+      "proved_boundary_trace_bound": 2.2548842926131885e-264,
+      "boundary_buffer": 633
+    },
+    {
+      "width": 4,
+      "steps": 64,
+      "t": 0.5,
+      "clock_dimension": 1335,
+      "mean_position_error": 9.592326932761353e-14,
+      "mean_time_mismatch": 0.09411390519511892,
+      "proved_uniform_time_bound": 0.38741969623290634,
+      "clock_energy_above_ground": 79.10813184478877,
+      "proved_boundary_trace_bound": 2.2548842926131885e-264,
+      "boundary_buffer": 633
+    },
+    {
+      "width": 4,
+      "steps": 64,
+      "t": 0.75,
+      "clock_dimension": 1335,
+      "mean_position_error": 1.7053025658242404e-13,
+      "mean_time_mismatch": 0.14531941543930377,
+      "proved_uniform_time_bound": 0.38741969623290634,
+      "clock_energy_above_ground": 79.10813184479059,
+      "proved_boundary_trace_bound": 2.2548842926131885e-264,
+      "boundary_buffer": 633
+    },
+    {
+      "width": 4,
+      "steps": 64,
+      "t": 1.0,
+      "clock_dimension": 1335,
+      "mean_position_error": 8.384404281969182e-13,
+      "mean_time_mismatch": 0.11222895216750169,
+      "proved_uniform_time_bound": 0.38741969623290634,
+      "clock_energy_above_ground": 79.10813184479352,
+      "proved_boundary_trace_bound": 2.2548842926131885e-264,
+      "boundary_buffer": 633
+    },
+    {
+      "width": 8,
+      "steps": 256,
+      "t": 0.0,
+      "clock_dimension": 4625,
+      "mean_position_error": 0.0,
+      "mean_time_mismatch": 0.0,
+      "proved_uniform_time_bound": 0.15257341142206743,
+      "clock_energy_above_ground": 272.4294469317082,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2180
+    },
+    {
+      "width": 8,
+      "steps": 256,
+      "t": 0.25,
+      "clock_dimension": 4625,
+      "mean_position_error": 3.552713678800501e-14,
+      "mean_time_mismatch": 0.018816029926726104,
+      "proved_uniform_time_bound": 0.15257341142206743,
+      "clock_energy_above_ground": 272.4294469317072,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2180
+    },
+    {
+      "width": 8,
+      "steps": 256,
+      "t": 0.5,
+      "clock_dimension": 4625,
+      "mean_position_error": 3.126388037344441e-13,
+      "mean_time_mismatch": 0.026362671800842057,
+      "proved_uniform_time_bound": 0.15257341142206743,
+      "clock_energy_above_ground": 272.42944693170637,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2180
+    },
+    {
+      "width": 8,
+      "steps": 256,
+      "t": 0.75,
+      "clock_dimension": 4625,
+      "mean_position_error": 6.536993168992922e-13,
+      "mean_time_mismatch": 0.0402537663093111,
+      "proved_uniform_time_bound": 0.15257341142206743,
+      "clock_energy_above_ground": 272.42944693170523,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2180
+    },
+    {
+      "width": 8,
+      "steps": 256,
+      "t": 1.0,
+      "clock_dimension": 4625,
+      "mean_position_error": 1.5063505998114124e-12,
+      "mean_time_mismatch": 0.03586362375477298,
+      "proved_uniform_time_bound": 0.15257341142206743,
+      "clock_energy_above_ground": 272.4294469317039,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2180
+    },
+    {
+      "width": 16,
+      "steps": 256,
+      "t": 0.0,
+      "clock_dimension": 4441,
+      "mean_position_error": 1.7763568394002505e-15,
+      "mean_time_mismatch": 0.0,
+      "proved_uniform_time_bound": 0.10783776577212324,
+      "clock_energy_above_ground": 260.434325269817,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2084
+    },
+    {
+      "width": 16,
+      "steps": 256,
+      "t": 0.25,
+      "clock_dimension": 4441,
+      "mean_position_error": 1.3500311979441904e-13,
+      "mean_time_mismatch": 0.03318185530317569,
+      "proved_uniform_time_bound": 0.10783776577212324,
+      "clock_energy_above_ground": 260.43432526981763,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2084
+    },
+    {
+      "width": 16,
+      "steps": 256,
+      "t": 0.5,
+      "clock_dimension": 4441,
+      "mean_position_error": 3.694822225952521e-13,
+      "mean_time_mismatch": 0.0332743446432394,
+      "proved_uniform_time_bound": 0.10783776577212324,
+      "clock_energy_above_ground": 260.4343252698177,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2084
+    },
+    {
+      "width": 16,
+      "steps": 256,
+      "t": 0.75,
+      "clock_dimension": 4441,
+      "mean_position_error": 7.673861546209082e-13,
+      "mean_time_mismatch": 0.0334847896860067,
+      "proved_uniform_time_bound": 0.10783776577212324,
+      "clock_energy_above_ground": 260.4343252698179,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2084
+    },
+    {
+      "width": 16,
+      "steps": 256,
+      "t": 1.0,
+      "clock_dimension": 4441,
+      "mean_position_error": 1.0800249583553523e-12,
+      "mean_time_mismatch": 0.03340805190644438,
+      "proved_uniform_time_bound": 0.10783776577212324,
+      "clock_energy_above_ground": 260.4343252698179,
+      "proved_boundary_trace_bound": 2.2250738585072626e-308,
+      "boundary_buffer": 2084
+    }
+  ],
+  "complete_autonomous_matrix_control": {
+    "scope": "Complete finite qubit, three flags, one battery, and clock; two input columns include a reference-uniform isometry comparison",
+    "joint_dimension": 4800,
+    "clock_dimension": 75,
+    "battery_dimension": 4,
+    "Hermiticity_residual": 9.001134055872365e-16,
+    "free_energy_commutator_residual": 0.0,
+    "prefix_telescoping_residuals": [
+      0.0,
+      7.639012235549662e-16,
+      6.470645411186566e-16
+    ],
+    "naive_double_counting_isometry_defect": 0.4446957572536518,
+    "initial_resource_energies": {
+      "battery": 2.1213203435596433,
+      "clock_program_above_ground": 14.130054822988729
+    },
+    "rows": [
+      {
+        "t": 0.0,
+        "direct_full_exponential_vs_gauge_isometry_error": 0.0,
+        "system_energy": 0.7071067811865477,
+        "battery_energy": 2.1213203435596433,
+        "clock_program_energy": 14.130054822988729,
+        "free_energy_balance_residual": 4.440892098500626e-16,
+        "clock_program_energy_change": 0.0
+      },
+      {
+        "t": 0.13,
+        "direct_full_exponential_vs_gauge_isometry_error": 7.841916358674495e-16,
+        "system_energy": 0.7091021910633231,
+        "battery_energy": 2.119324933682867,
+        "clock_program_energy": 14.13005482298873,
+        "free_energy_balance_residual": 1.3322676295501878e-15,
+        "clock_program_energy_change": 1.7763568394002505e-15
+      },
+      {
+        "t": 0.3,
+        "direct_full_exponential_vs_gauge_isometry_error": 1.7119365270194971e-15,
+        "system_energy": 0.7421510460929298,
+        "battery_energy": 2.08627607865326,
+        "clock_program_energy": 14.130054822988729,
+        "free_energy_balance_residual": 1.3322676295501878e-15,
+        "clock_program_energy_change": 0.0
+      }
+    ],
+    "positivity_basis": "Exact unitary gauge of a positive path Hamiltonian plus nonnegative diagonal free energy; no numerical eigenvalue assertion substitutes for this argument"
+  },
+  "all_assertions_passed": true,
+  "independence": "Author consistency controls, not independent evidence"
+}

@@ -1,0 +1,41 @@
+{
+  "complete_non_covariant_program": {
+    "system_jump": "sqrt(gamma)|+><0|; not H-covariant",
+    "clock_dimension": 75,
+    "total_dimension": 4800,
+    "rows": [
+      {
+        "t": 0.0,
+        "direct_H_vs_spectral_clock_isometry_error": 3.500142796890853e-16,
+        "system_vs_full_Q_counterphase_reduced_Choi_error": 0.0,
+        "free_energy_balance_error": 4.440892098500626e-16,
+        "clock_program_energy": 14.130054822988729
+      },
+      {
+        "t": 0.13,
+        "direct_H_vs_spectral_clock_isometry_error": 5.900471882332365e-16,
+        "system_vs_full_Q_counterphase_reduced_Choi_error": 3.874561364251766e-18,
+        "free_energy_balance_error": 1.3322676295501878e-15,
+        "clock_program_energy": 14.130054822988733
+      },
+      {
+        "t": 0.3,
+        "direct_H_vs_spectral_clock_isometry_error": 1.748170464365561e-15,
+        "system_vs_full_Q_counterphase_reduced_Choi_error": 6.663080566775339e-16,
+        "free_energy_balance_error": 4.440892098500626e-16,
+        "clock_program_energy": 14.130054822988724
+      }
+    ],
+    "initial_reduced_derivative_equals_A": true,
+    "initial_system_power": 0.0,
+    "original_GKLS_initial_ground_power": 0.28284271247461906,
+    "initial_interaction_action_zero_on_product_preparation": true,
+    "counterphase_difference": "Controlled battery-only phase; full states differ, reduced system/reference channels agree."
+  },
+  "original_star_summary": {
+    "max_author_field_difference": 1.5000461810188437e-12,
+    "row_count": 20,
+    "scope": "Actual lambda=0 stationary dressed star, both original instruments; no assertion that this input-specific Gram reduction holds for arbitrary nonstationary input."
+  },
+  "scientific_discrepancies": []
+}

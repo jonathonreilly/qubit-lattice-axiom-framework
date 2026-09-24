@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-24T02:33:11.352108+00:00",
+  "python": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "commands": [
+    "python3 clock_control.py > CLOCK_CONTROL.stdout 2> CLOCK_CONTROL.stderr",
+    "python3 original_star_clock_control.py > ORIGINAL_STAR_CLOCK.stdout 2> ORIGINAL_STAR_CLOCK.stderr"
+  ],
+  "exit_codes": [
+    0,
+    0
+  ],
+  "assertion_failures": [],
+  "reporting_correction": "Initial positive boundary-tail values underflowed to zero. Preserved initial evidence; current code rounds the bound upward to the smallest normal float. No mathematical formula or tolerance changed.",
+  "clock_control_sha256": "7896f38c8d66196cfc8261f324bd73587c92f80f8afed98df053d623de5e14db",
+  "star_control_sha256": "4a19c73122cef6060138fab9e5eb5bba86ee4902a0baf5fdade0ebfb29f0f463",
+  "evidence_scope": "Own proof and author consistency controls; independent clock reconstruction not yet exposed to this author packet."
+}

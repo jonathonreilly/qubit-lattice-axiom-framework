@@ -1,0 +1,114 @@
+{
+  "clock_summaries": [
+    {
+      "N": 16,
+      "max_grid_step": 0.19303349581239898,
+      "max_sampled_clock_time_error": 0.1128553913744913,
+      "proved_uniform_clock_time_bound": 0.21213203435596423,
+      "max_sampled_reference_trace_error": 0.040508559318067225,
+      "max_sampled_diamond_upper": 0.08101711863613445,
+      "proved_uniform_ideal_battery_channel_bound": 2.0
+    },
+    {
+      "N": 64,
+      "max_grid_step": 0.09574341041944374,
+      "max_sampled_clock_time_error": 0.05618957887091453,
+      "proved_uniform_clock_time_bound": 0.10606601717798211,
+      "max_sampled_reference_trace_error": 0.021238179446202314,
+      "max_sampled_diamond_upper": 0.04247635889240463,
+      "proved_uniform_ideal_battery_channel_bound": 1.184212424049175
+    },
+    {
+      "N": 256,
+      "max_grid_step": 0.04777762264629337,
+      "max_sampled_clock_time_error": 0.02791943571670285,
+      "proved_uniform_clock_time_bound": 0.05303300858899106,
+      "max_sampled_reference_trace_error": 0.010849243894075737,
+      "max_sampled_diamond_upper": 0.021698487788151474,
+      "proved_uniform_ideal_battery_channel_bound": 0.5921062120245875
+    },
+    {
+      "N": 1024,
+      "max_grid_step": 0.023877128791052655,
+      "max_sampled_clock_time_error": 0.013953305143304964,
+      "proved_uniform_clock_time_bound": 0.02651650429449553,
+      "max_sampled_reference_trace_error": 0.005478786706007655,
+      "max_sampled_diamond_upper": 0.01095757341201531,
+      "proved_uniform_ideal_battery_channel_bound": 0.29605310601229373
+    },
+    {
+      "N": 4096,
+      "max_grid_step": 0.011937106487601736,
+      "max_sampled_clock_time_error": 0.006976214357629455,
+      "proved_uniform_clock_time_bound": 0.013258252147247764,
+      "max_sampled_reference_trace_error": 0.002634425459907117,
+      "max_sampled_diamond_upper": 0.005268850919814234,
+      "proved_uniform_ideal_battery_channel_bound": 0.14802655300614687
+    },
+    {
+      "N": 16384,
+      "max_grid_step": 0.005968371080406376,
+      "max_sampled_clock_time_error": 0.0034880524467665354,
+      "proved_uniform_clock_time_bound": 0.006629126073623882,
+      "max_sampled_reference_trace_error": 0.001322406294968864,
+      "max_sampled_diamond_upper": 0.002644812589937728,
+      "proved_uniform_ideal_battery_channel_bound": 0.07401327650307343
+    }
+  ],
+  "retained_failed_routes": [
+    {
+      "N": 16,
+      "naive_equal_steps_test_time": 0.3,
+      "naive_equal_steps_ground_input_trace_error": 0.14649160515406057,
+      "nonlinear_wrong_simulated_time": 0.1757359312880715,
+      "persistent_naive_limit_trace_error": 0.1473320368321802,
+      "omitted_counterphase_endpoint_reference_trace_error": 0.6296552830646728,
+      "persistent_counterphase_limit_reference_error": 0.6277023411483157
+    },
+    {
+      "N": 64,
+      "naive_equal_steps_test_time": 0.3,
+      "naive_equal_steps_ground_input_trace_error": 0.14712270094441116,
+      "nonlinear_wrong_simulated_time": 0.1757359312880715,
+      "persistent_naive_limit_trace_error": 0.1473320368321802,
+      "omitted_counterphase_endpoint_reference_trace_error": 0.6282575483091264,
+      "persistent_counterphase_limit_reference_error": 0.6277023411483157
+    },
+    {
+      "N": 256,
+      "naive_equal_steps_test_time": 0.3,
+      "naive_equal_steps_ground_input_trace_error": 0.1472797508606094,
+      "nonlinear_wrong_simulated_time": 0.1757359312880715,
+      "persistent_naive_limit_trace_error": 0.1473320368321802,
+      "omitted_counterphase_endpoint_reference_trace_error": 0.6278614181790354,
+      "persistent_counterphase_limit_reference_error": 0.6277023411483157
+    },
+    {
+      "N": 1024,
+      "naive_equal_steps_test_time": 0.3,
+      "naive_equal_steps_ground_input_trace_error": 0.14731896833539726,
+      "nonlinear_wrong_simulated_time": 0.1757359312880715,
+      "persistent_naive_limit_trace_error": 0.1473320368321802,
+      "omitted_counterphase_endpoint_reference_trace_error": 0.6277475306296703,
+      "persistent_counterphase_limit_reference_error": 0.6277023411483157
+    },
+    {
+      "N": 4096,
+      "naive_equal_steps_test_time": 0.3,
+      "naive_equal_steps_ground_input_trace_error": 0.14732876989517485,
+      "nonlinear_wrong_simulated_time": 0.1757359312880715,
+      "persistent_naive_limit_trace_error": 0.1473320368321802,
+      "omitted_counterphase_endpoint_reference_trace_error": 0.6277150316001885,
+      "persistent_counterphase_limit_reference_error": 0.6277023411483157
+    },
+    {
+      "N": 16384,
+      "naive_equal_steps_test_time": 0.3,
+      "naive_equal_steps_ground_input_trace_error": 0.147331220110426,
+      "nonlinear_wrong_simulated_time": 0.1757359312880715,
+      "persistent_naive_limit_trace_error": 0.1473320368321802,
+      "omitted_counterphase_endpoint_reference_trace_error": 0.6277058663382609,
+      "persistent_counterphase_limit_reference_error": 0.6277023411483157
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "construction": "Independent exact full finite conserving clock with coherent qubit jump, not a campaign import",
+  "clock_positions": 3,
+  "collision_flags": 2,
+  "each_flag_dimension": 2,
+  "battery_dimension": 4,
+  "work_dimension": 32,
+  "full_dimension": 96,
+  "duration_T": "2",
+  "omega_and_clock_spacing_nu": "pi/2",
+  "collision_gamma": "1/4",
+  "jump_shape": "|+><0|; not an eigenoperator of H",
+  "identities": {
+    "full_gate_unitarity": true,
+    "full_gate_free_energy_commutation": true,
+    "program_gauge_conjugation": true,
+    "total_H_free_energy_commutation": true,
+    "positive_program_by_exact_clock_spectrum": true,
+    "initial_interaction_mean_zero_for_every_system_input": true,
+    "endpoint_free_counterphase_cancellation": true,
+    "uncorrected_endpoint_not_equal": true
+  },
+  "clock_spectrum": [
+    "0",
+    "pi/2",
+    "pi"
+  ],
+  "clock_initial_mean": "pi/2",
+  "clock_initial_variance": "pi**2/8",
+  "interaction_norm_upper_bound": "pi",
+  "prepared_battery_mean": "3*pi/4",
+  "interpretation": "Exact finite-space operator identities. General convergence and resource hypotheses are proved in PRE_RECONSTRUCTION.md."
+}

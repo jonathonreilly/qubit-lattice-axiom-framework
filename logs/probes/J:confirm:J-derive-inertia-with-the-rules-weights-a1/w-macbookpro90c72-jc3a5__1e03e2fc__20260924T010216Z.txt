@@ -1,0 +1,8 @@
+ok weights: c0=3/7, W_eq=15/7, W_orth=6/7, W_opp=3/7
+ok T1: departure clause balances all 12636 two-record configurations on 3^3 at four triples
+ok T1plain: plain two-record defect 32/273, unbalanced 5832
+ok T2: three-record departure: 34344/631800 unbalanced, witness in 20/7 out 4, defect 176/20475
+ok T3: plain three-record defect 192896/1003977
+ok scatter: heat-bath flux mu(c)*mu(c')/Z is symmetric, so scattering cannot repair a streaming defect
+HIT: confirmed - departure rates 1/W_hat balance every two-record configuration on 3^3, the witness inflow is 20/7 against outflow 4, and the defects are 0 and 176/20475
+SUMMARY: confirmed Theorems 1 and 2's witness and the four defect fractions; record-by-record balance forces W=1 once a passer leaves two records newly adjacent; the three-record LP was not re-solved

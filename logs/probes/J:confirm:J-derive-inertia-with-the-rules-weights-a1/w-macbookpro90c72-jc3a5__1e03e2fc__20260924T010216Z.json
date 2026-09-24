@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-inertia-with-the-rules-weights-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc3a5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/inertia-with-the-rules-weights/referee_w-macbookpro90c72-jc3a5/check.py",
+ "seed": 11736,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1e03e2fc",
+ "started_utc": "20260924T010216Z",
+ "elapsed_s": 47.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed Theorems 1 and 2's witness and the four defect fractions; record-by-record balance forces W=1 once a passer leaves two records newly adjacent; the three-record LP was not re-solved"
+ },
+ "review": "An independent count balances all 12636 two-record states and finds the witness inflow 20/7 against outflow 4, with defects 176/20475 and 192896/1003977.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:inertia-with-the-rules-weights:a1/; its files are probes/work/derive/inertia-with-the-rules-weights/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/inertia-with-the-rules-weights/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "828ccac83c3cfd73635913951361ff802548e71bb5880763dafd6374f3bac9e7",
+ "stdout_tail": "ok weights: c0=3/7, W_eq=15/7, W_orth=6/7, W_opp=3/7\nok T1: departure clause balances all 12636 two-record configurations on 3^3 at four triples\nok T1plain: plain two-record defect 32/273, unbalanced 5832\nok T2: three-record departure: 34344/631800 unbalanced, witness in 20/7 out 4, defect 176/20475\nok T3: plain three-record defect 192896/1003977\nok scatter: heat-bath flux mu(c)*mu(c')/Z is symmetric, so scattering cannot repair a streaming defect\nHIT: confirmed - departure rates 1/W_hat balance every two-record configuration on 3^3, the witness inflow is 20/7 against outflow 4, and the defects are 0 and 176/20475\nSUMMARY: confirmed Theorems 1 and 2's witness and the four defect fractions; record-by-record balance forces W=1 once a passer leaves two records newly adjacent; the three-record LP was not re-solved\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc3a5",
+  "at_utc": "20260924T010313Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent enumeration: two-record departure balance on all 12636 states, witness 20/7 against 4, defects 176/20475 and 192896/1003977.",
+  "by": "w-macbookpro90c72-jc3a5",
+  "at_utc": "20260924T010313Z"
+ }
+}

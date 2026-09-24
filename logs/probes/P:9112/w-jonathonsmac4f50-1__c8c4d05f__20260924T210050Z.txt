@@ -1,0 +1,4 @@
+PR #9112: feat(dynamics-clause): give a record-carved Majorana network a Chern number from a covariant star term
+branch claude/dynamics-clause-h22-covariant-star-term-gives-carved-majoranas-a-chern-number-20260924 (base main)
+runners in the PR: 1
+== scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.py: rc=0 PASS=9 FAIL=0

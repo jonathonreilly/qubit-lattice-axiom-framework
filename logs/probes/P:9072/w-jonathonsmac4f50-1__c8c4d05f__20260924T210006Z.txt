@@ -1,0 +1,4 @@
+PR #9072: feat(dynamics-clause): characterize the covariant plaquette clause and where it annihilates uniform ice
+branch claude/dynamics-clause-h12-rk-point-and-plaquette-records-20260924 (base main)
+runners in the PR: 1
+== scripts/dynamics_clause_the_covariant_plaquette_clause_and_the_rokhsar_kivelson_point_2026_09_24.py: rc=0 PASS=4 FAIL=0

@@ -1,0 +1,4 @@
+PR #9040: docs(dynamics): classify the covariant nearest-neighbour two-qubit generators
+branch claude/dynamics-clause-h1-covariant-two-qubit-generators-20260924 (base main)
+runners in the PR: 1
+== scripts/dynamics_clause_covariant_nearest_neighbour_two_qubit_generators_2026_09_24.py: rc=0 PASS=15 FAIL=0

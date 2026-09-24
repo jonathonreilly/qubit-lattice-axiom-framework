@@ -34,6 +34,10 @@ diagnostics, no physical reading):
    at lambda = 1, 2 and 4 the lowest flux sectors (8 of 16, degenerate) each
    have 12 exact zero modes per cell, a gap above them, and weak Chern
    numbers (-1, 0, 0) on four k_x planes.
+6. Chiral surface modes: on a slab 12 cells thick with open boundaries along
+   z (lambda = 2, k_x = 1), the in-gap states sit on the two surfaces, and as
+   k_y winds once they cross energies -0.01 and 0.01 once upward on one
+   surface and once downward on the other.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -586,6 +590,8 @@ for lam in (1.0, 2.0, 4.0):
         gaps.append((nz, gp))
         cx_all.add(round(chern(uvals, ent, carv, lam, 0, 1.0), 6))
     E, u, uvals, carv, ent = lowest[0]
+    if lam == 2.0:
+        slab_setup = (uvals, carv, ent, min(g for _, g in gaps))
     planes = {p: sorted({round(chern(uvals, ent, carv, lam, p, kf), 6) for kf in (0.5, 2.0, 3.5, 5.0)}) for p in range(3)}
     ok5 &= (len(lowest) == 8 and all(nz == 12 and gp > 0.01 for nz, gp in gaps) and cx_all == {-1.0}
             and planes == {0: [-1.0], 1: [0.0], 2: [0.0]})
@@ -593,6 +599,62 @@ for lam in (1.0, 2.0, 4.0):
                  f"{min(g for _, g in gaps):.4f}, weak Chern numbers ({int(planes[0][0])}, {int(planes[1][0])}, {int(planes[2][0])})")
 check("the chiral phase: in every lowest flux sector, a gapped band structure with weak Chern numbers (-1, 0, 0)",
       ok5, "; ".join(rows5))
+
+# ------------------------------------------------ 6. chiral surface modes on a slab
+uvals, carv, ent, bulk_gap = slab_setup
+bonds_img = [carv.image({tuple(np.array(G19["comp"][j])): ax, tuple(np.array(G19["comp"][kk]) + 4 * np.array(off)): ax})
+             for (j, kk, ax, off) in G19["bonds"]]
+all_terms = [(cf, g1, g2, 1.0) for cf, g1, g2 in bonds_img] + [(cf, g1, g2, 2.0) for cf, g1, g2 in ent]
+nm = len(carv.majs)
+Nl = 12                                                   # cells along z, open boundary; k_x and k_y stay good
+
+
+def slab(kx, ky):
+    A = np.zeros((Nl * nm, Nl * nm), dtype=complex)
+    for cf, (m1, c1), (m2, c2), w in all_terms:
+        tau = (w * cf / 1j).real
+        d = np.array(c2) - np.array(c1)
+        ph = np.exp(1j * (kx * d[0] + ky * d[1]))
+        for n in range(Nl):
+            if 0 <= n + d[2] < Nl:
+                i1, i2 = n * nm + carv.mid[m1], (n + d[2]) * nm + carv.mid[m2]
+                A[i1, i2] += 2 * tau * ph
+                A[i2, i1] -= 2 * tau * np.conj(ph)
+    return 1j * A
+
+
+surf = {"bottom": {}, "top": {}}
+n_bulklike = 0
+kys = np.linspace(0, 2 * np.pi, 121, endpoint=False)
+for ky in kys:
+    w, V = np.linalg.eigh(slab(1.0, ky))
+    sel = (np.abs(w) > 1e-6) & (np.abs(w) < 0.8 * bulk_gap)
+    for e, vec in zip(w[sel], V[:, sel].T):
+        wts = np.array([np.sum(np.abs(vec[n * nm:(n + 1) * nm]) ** 2) for n in range(Nl)])
+        side = "bottom" if wts[:2].sum() > 0.7 else ("top" if wts[-2:].sum() > 0.7 else None)
+        if side:
+            surf[side].setdefault(ky, []).append(e)
+        else:
+            n_bulklike += 1
+
+
+def signed_crossings(branch, E0):
+    tot = 0
+    for i in range(len(kys)):
+        a, b = kys[i], kys[(i + 1) % len(kys)]
+        if len(branch.get(a, [])) == 1 and len(branch.get(b, [])) == 1:
+            ea, eb = branch[a][0] - E0, branch[b][0] - E0
+            if np.sign(ea) != np.sign(eb):
+                tot += int(np.sign(eb - ea))
+    return tot
+
+
+flow = {side: [signed_crossings(surf[side], E0) for E0 in (-0.01, 0.01)] for side in surf}
+check("chiral surface modes: on a slab open along z the in-gap states sit on the surfaces and cross the gap with opposite chirality",
+      flow["top"] in ([1, 1], [-1, -1]) and flow["bottom"] == [-flow["top"][0]] * 2 and n_bulklike <= 8,
+      f"12-cell slab at k_x = 1, lambda = 2, 121 values of k_y: surface-localized in-gap states top {sum(len(x) for x in surf['top'].values())}, "
+      f"bottom {sum(len(x) for x in surf['bottom'].values())}, other {n_bulklike}; signed crossings of E = -0.01 and 0.01: "
+      f"top {flow['top']}, bottom {flow['bottom']}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

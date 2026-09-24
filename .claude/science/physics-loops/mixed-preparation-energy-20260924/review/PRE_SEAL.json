@@ -1,0 +1,45 @@
+{
+  "kind": "independent_preparation_uniform_pre_before_author_release",
+  "sealed_at_utc": "2026-09-24T15:48:38.014036+00:00",
+  "files": {
+    "PRE.md": "b0820179fddd987438afbe69acef5912813d93530050a8ef67156292a4f21647",
+    "SOURCE_PINS.json": "75d2a5fdc11f4d3ea6dab99a66a4a66a59caefd03f83024ff3b6ce51333060bb",
+    "independent_preparation_checks.py": "362ff70752a3cfe855c4b8a1008fa4ad8e8c93338f069b3c8b6576c81969f8b8",
+    "FINITE_CHECKS.json": "fdffed7dd37b2f78cf832c2bf46f3ee5a881ff56caf0afdab12da79addf0cb32",
+    "FINITE_CHECKS.log": "fdffed7dd37b2f78cf832c2bf46f3ee5a881ff56caf0afdab12da79addf0cb32"
+  },
+  "source_hashes": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "9e13c659e9a418e9e77e619a3cbd82d371f8219003a92e49fb2cc9ac5f87d6c7",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+  },
+  "observed_repository_heads": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working": "034a099b54194c57e45a852afed83ba8cc8c118d",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication": "e846ee9d4133f65d3778fa4dc36524a9ada6db6b"
+  },
+  "new_author_argument_read": false,
+  "preparation_uniform_personal_read": false,
+  "current_campaign_checkpoint_read": false,
+  "continuous_coherence_personal_read": false,
+  "delegation_used": false,
+  "finite_control_exit_code": 0,
+  "complete_control_log_inspected": true,
+  "finite_control_scope": "Primitive finite-spin/rotor physical-word operator checks plus an explicitly limited leading two-cluster mixed-state control. No full cube builder or apparatus simulation.",
+  "conclusions": [
+    "On each fixed finite physical N=4 low word span, B_i*B_i=b_i I and R_i*R_i=r_i I in the rotor, with explicit finite-spin diagonal weights and O(epsilon^2) corrections.",
+    "Initial actual birth mean and variance/second-moment leading coefficients remain uniform for arbitrary varying densities on that span.",
+    "A density-independent isometry commutator witness proves the same probability-weighted apparatus Fisher bound at subnormalized error o(epsilon^3), without using variance as a mixed-state Fisher lower bound.",
+    "The matching low/high coherence witness proves the same leading apparatus frequency-range requirement.",
+    "A mixed input-specific preloaded-state relaxation retains the leading Fisher/range coefficients with bounded mean, but does not implement the mark uniformly on other inputs."
+  ],
+  "edge_limits": [
+    "The input word span is fixed; no growing-flux or spin-boundary extension.",
+    "The apparatus hypotheses are the stated finite-dimensional additive-covariance hypotheses, with all references counted and an initially independent apparatus.",
+    "No new later-time, continuous-process, uniform-instrument sufficiency or physical selection claim."
+  ],
+  "formal_audit_or_retained_status_changed": false
+}

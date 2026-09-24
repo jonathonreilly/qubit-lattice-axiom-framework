@@ -1,0 +1,79 @@
+{
+  "kind": "mixed_preparation_publication_read_only_correspondence_checks",
+  "publication_HEAD": "e846ee9d4133f65d3778fa4dc36524a9ada6db6b",
+  "preserved_seals": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-independent/PRE_SEAL.json": {
+      "member_count": 5,
+      "all_member_hashes_match": true
+    },
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-independent/POST_SEAL.json": {
+      "member_count": 3,
+      "all_member_hashes_match": true
+    },
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/AUTHOR_SEAL.json": {
+      "member_count": 1,
+      "all_member_hashes_match": true
+    },
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/CONTROL_SEAL.json": {
+      "member_count": 4,
+      "all_member_hashes_match": true
+    }
+  },
+  "publication_expected_hashes_match": true,
+  "all_five_unchanged_parent_hashes_match_PRE_sources": true,
+  "declared_input_paths": [
+    "docs/MIXED_LOW_FIELD_INPUTS_RETAIN_CUBE_BIRTH_ENERGY_AND_COHERENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "recomputed_input_fingerprint_sha256": "dde9bf0b61f22fd12c6b927c0deb2f8d9da890b9e64bdb8e528b84689622dc77",
+  "cache_header": {
+    "runner": "scripts/mixed_low_field_inputs_cube_birth_energy_and_coherence_2026_09_24.py",
+    "runner_sha256": "ec6abee27fc084839d8c50f8d386ffc20010668bbcb681044ff8be0827bfb802",
+    "input_fingerprint_sha256": "dde9bf0b61f22fd12c6b927c0deb2f8d9da890b9e64bdb8e528b84689622dc77",
+    "timeout_sec": "120",
+    "exit_code": "0",
+    "elapsed_sec": "0.30",
+    "status": "ok"
+  },
+  "stdout_characters_in_cache": 63786,
+  "complete_stdout_json_byte_matches_result_without_terminal_newline": true,
+  "stdout_json_object_count": 1,
+  "stdout_tail": "TOTAL: PASS=2 FAIL=0",
+  "cache_stderr_whitespace_only": true,
+  "root_receipt_matching_report": {
+    "EIGHTH": {
+      "elapsed_sec": 0.29747700691223145,
+      "stdout_objects": 1,
+      "scientific_values_identical_to_sealed_author_except_timings": true,
+      "output_sha256": "60d3ee81cc9a35b6e396a383f93c95a400b4dd803f3984779d0fe4d178c2d6e1",
+      "stderr_bytes": 0
+    }
+  },
+  "all_scientific_values_exactly_match_frozen_author_result": true,
+  "only_ignored_result_fields": [
+    "elapsed_seconds",
+    "source_sha256"
+  ],
+  "canonical_scientific_values_sha256": "c968f5554f85d6bc9e2edcdda3e3c94e8829bfbf17feb6f0b6e01d32a9b8797b",
+  "AST_identical_computational_functions": [
+    "charges",
+    "weight",
+    "hop",
+    "mark",
+    "combine",
+    "dot",
+    "cycle",
+    "coefficient_controls",
+    "fisher",
+    "mixed_witness_controls"
+  ],
+  "main_AST_identical_after_removing_output_mkdir_and_TOTAL_print": true,
+  "physics_controls_rerun": false,
+  "runner_imported_or_executed": false,
+  "other_active_scientific_packets_read": false,
+  "writes_confined_to_assigned_independent_directory": true
+}

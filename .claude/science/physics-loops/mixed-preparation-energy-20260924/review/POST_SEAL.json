@@ -1,0 +1,23 @@
+{
+  "kind": "preparation_uniform_scoped_POST",
+  "sealed_at_utc": "2026-09-24T15:58:52.913237+00:00",
+  "files": {
+    "POST.md": "52df4b1f7dd3a94dcf7f27e41548d11d141893f646e6df220ed5b42502da2c46",
+    "POST_SOURCE_PINS.json": "4c6a8dea4123ac427f8ef6a017e00263e7fd261c39742022e7a68812595c4747",
+    "POST_EVIDENCE_VERIFICATION.json": "e5cdc3bdf87c8a8fb483dc3b4303fefe8c7a01f62cf4f869f73d86cb2d48072a"
+  },
+  "preserved_PRE_sha256": "b0820179fddd987438afbe69acef5912813d93530050a8ef67156292a4f21647",
+  "preserved_PRE_seal_sha256": "5acf2efb724fe89e525b25fcadf5b2d27bad3da4a2ca88b7392b1efae9accff1",
+  "reviewed_author_proof_sha256": "8dacfedaf587d85c5063042e6630ebe44403effaa7ca4590d8d66f277f507dd2",
+  "reviewed_author_seal_sha256": "5699fe83bc73bf6947f0b91f80de26bb32c66e6c665b2487ef19361e971c0235",
+  "reviewed_control_seal_sha256": "0ad1f74ffe289698693788f0483dcf7fa5b3baecf5263093cf8f6f5c0e2bb477",
+  "material_mathematical_discrepancies": [],
+  "material_source_evidence_discrepancies": [],
+  "disposition": "Supported conditional fixed-finite-span mixed-input birth-energy, Fisher/frequency, and input-specific attaining-relaxation statements; no material correction identified.",
+  "controls_not_rerun": true,
+  "PRE_preserved": true,
+  "sources_read_only_after_PRE_seal": true,
+  "new_unreleased_candidates_read": false,
+  "delegation_used": false,
+  "publication_retained_or_audit_status_changed": false
+}

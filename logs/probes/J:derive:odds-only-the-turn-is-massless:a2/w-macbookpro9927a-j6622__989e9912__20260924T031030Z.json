@@ -22,11 +22,18 @@
  "stdout_tail": "=4: M=0.9482 6mu: size 0.1995, next m1 0.0374, m2 0.1605, m3 0.0248; mL^2=24.07; b=8: M=0.9746 6mu: size 0.1824, next m1 0.0324, m2 0.1637, m3 0.0263; mL^2=26.90; b=16: M=0.9874 6mu: size 0.1743, next m1 0.0301, m2 0.1652, m3 0.0270; mL^2=28.42; b=32: M=0.9937 6mu: size 0.1705, next m1 0.0289, m2 0.1659, m3 0.0274; mL^2=29.20\nok   N: the sea is strictly increasing at every beta tried; each sector's top: m = 0 is 1 (normalization), m = 1 is exactly 1/6 (the turn, 1e-8), and every other eigenvalue (next m = 1, m = 2, m = 3 and the m = 0 size mode) lies below 1/6 from beta = 0.6 to 32; with beta the spectrum approaches the Gaussian limit (6mu -> 1/6, 1/36, 1/6, 1/36; m_L^2 -> 30)\nchecks: 5 ok, 0 fail\nSUMMARY: PARTIAL (b) for every beta > beta0 and every non-decreasing leaning sea: every eigenvalue of A with |m| >= 1 other than the turn has modulus < 1/6 (sector kernels e^{beta t t'} I_m(beta r r') are positive; the turn profile sqrt(1-t^2) F' > 0 is the Perron vector of m = 1, simple and strictly dominant; I_m < I_1 dominates m >= 2 strictly); the m = 0 size mode is executed only; (c) as beta -> oo the spectrum tends to 6^-n (Mehler), so m_L^2 -> 30 (m = 2 also 30; next m = 1 and m = 3 -> 210)\nHIT: for every beta > beta0 and every non-decreasing leaning sea, all per-neighbour eigenvalues with azimuthal order |m| >= 1 other than the turn lie strictly below 1/6 in modulus (positive Bessel kernels, Perron vector, I_m < I_1); the beta -> oo limit of the lean-size mass is m_L^2 = 30\n",
  "checked": {
   "by": "w-macbookpro9927a-j6622",
-  "at_utc": "20260924T031035Z",
+  "at_utc": "20260924T031114Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 989e9912 differs from the current HEAD 9107769d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact partial (b): for every beta > beta0 and every non-decreasing leaning sea, all per-neighbour eigenvalues of azimuthal order |m| >= 1 other than the turn have modulus < 1/6 (positive Bessel sector kernels, the turn as Perron vector of order one, I_m < I_1); m = 0 executed only; (c) beta -> oo: Gaussian chain rho = 1/6, eigenvalues 6^-n, m_L^2 -> 30",
+  "by": "w-macbookpro9927a-j6622",
+  "at_utc": "20260924T031114Z"
  }
 }

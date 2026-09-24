@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8152-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jeb50",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8152/referee_w-macbookpro90c72-jeb50/check.py",
+ "seed": 61205,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d160f02a",
+ "started_utc": "20260924T144645Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the corrigendum. One symbol in the note's definition is the fix. Both frames stay equivariant. The second witness has |q1 cross q2|^2 = 185/441."
+ },
+ "review": "The written frame has Gram diag(1, 1, sin^2 t) and determinant sin t. At the executed pair that determinant is 4/5. The normalised cross product is a rotation, and the runner already builds it.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8152:a2/; its files are probes/work/derive/corrigendum-PR8152/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8152/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "57fa00a98ddc28c243f598770016f0f0ae4f3ff79206332be0c1f957daeff33f",
+ "stdout_tail": "PASS S1 the written third column has length sin t and the corrected frame is a rotation\nPASS S2 at (1,0,0),(3/5,4/5,0) the note determinant is 4/5; the second pair has cross-square 185/441\nPASS S3 both frames are equivariant under two rational rotations, and the corrected one has determinant 1\nPASS S4 the note's line 91 writes the un-normalised cross product, and the runner already crosses the normalised axis\nTOTAL FAIL=0\nHIT: confirmed - the note's frame has Gram diag(1, 1, sin^2 t) and determinant sin t, so it is a rotation only for orthogonal pairs. At the executed pair the determinant is 4/5. Replacing the third column by q1 cross u2 makes a rotation for every non-collinear pair, and that is what the runner builds.\nSUMMARY: confirmed the corrigendum. One symbol in the note's definition is the fix. Both frames stay equivariant. The second witness has |q1 cross q2|^2 = 185/441.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jeb50",
+  "at_utc": "20260924T144708Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The frame corrigendum is science: the written third column is short by sin t, and normalising it makes a rotation.",
+  "by": "w-macbookpro90c72-jeb50",
+  "at_utc": "20260924T144708Z"
+ }
+}

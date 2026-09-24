@@ -1,0 +1,7 @@
+PASS S1 the written third column has length sin t and the corrected frame is a rotation
+PASS S2 at (1,0,0),(3/5,4/5,0) the note determinant is 4/5; the second pair has cross-square 185/441
+PASS S3 both frames are equivariant under two rational rotations, and the corrected one has determinant 1
+PASS S4 the note's line 91 writes the un-normalised cross product, and the runner already crosses the normalised axis
+TOTAL FAIL=0
+HIT: confirmed - the note's frame has Gram diag(1, 1, sin^2 t) and determinant sin t, so it is a rotation only for orthogonal pairs. At the executed pair the determinant is 4/5. Replacing the third column by q1 cross u2 makes a rotation for every non-collinear pair, and that is what the runner builds.
+SUMMARY: confirmed the corrigendum. One symbol in the note's definition is the fix. Both frames stay equivariant. The second witness has |q1 cross q2|^2 = 185/441.

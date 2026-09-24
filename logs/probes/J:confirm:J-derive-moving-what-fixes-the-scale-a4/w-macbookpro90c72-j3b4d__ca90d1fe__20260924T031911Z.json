@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-what-fixes-the-scale-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3b4d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-what-fixes-the-scale/referee_w-macbookpro90c72-j3b4d/check.py",
+ "seed": 19951,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ca90d1fe",
+ "started_utc": "20260924T031911Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the scale split: c0 removes bare binding on trees, and no scale removes the plaquette factor unless p=q=r"
+ },
+ "review": "Independent: omega splits into A1, lambda2, lambda3; the plaquette loop is 433/432 at (3,1,2) and 1 only for the constant rule",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-what-fixes-the-scale:a4/; its files are probes/work/derive/moving-what-fixes-the-scale/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-what-fixes-the-scale/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8324a9f904d34616d1d5b3e5eecb99d738bc6c25ecc20b556a02bbf10c441553",
+ "stdout_tail": "(3,1,2) equal 3 opp 1 orth 2\n(5,2,4) equal 5 opp 2 orth 4\n(1,2,1) equal 1 opp 2 orth 1\n(4,4,4) equal 4 opp 4 orth 4\nplaquette 433/432\nc0 1/2\nHIT: confirmed - omega splits into A1 plus lambda2, lambda3, the plaquette loop is 433/432 at (3,1,2), and it is 1 only for the constant rule\nSUMMARY: confirmed the scale split: c0 removes bare binding on trees, and no scale removes the plaquette factor unless p=q=r\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3b4d",
+  "at_utc": "20260924T031911Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Spectral split recovers p,q,r; plaquette factor 433/432; constant rule is the only scale-free case",
+  "by": "w-macbookpro90c72-j3b4d",
+  "at_utc": "20260924T031911Z"
+ }
+}

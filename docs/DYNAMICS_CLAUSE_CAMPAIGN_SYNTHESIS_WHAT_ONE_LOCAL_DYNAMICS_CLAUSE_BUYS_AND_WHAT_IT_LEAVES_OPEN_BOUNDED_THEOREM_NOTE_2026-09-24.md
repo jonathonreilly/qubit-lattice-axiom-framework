@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of eighteen campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the covariant plaquette clause annihilating uniform ice is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports an integer move; and, for the non-Abelian block, that one qubit's SU(2) commutant is the scalars and that the 4-dimensional SU(2) link carries a covariant link operator; and, for the randomizer block, that a distant record steers every chord and that the trace rule, but not a cubic deformation, matches the steered average; and, for the dynamics block, that a Weinberg-type precession lets a distant record shift a later marginal and that the transpose on half a singlet is negative; and, for the collapse block, that joint record effects with Born marginals are product projectors and that a record leaves its partner in the Lueders state; and, for the unitarity block, that proportional Kraus operators give a unitary conjugation while a random non-unitary channel mixes some pure state; and, for the time-reversal block, that the covariant scalar-chirality star sum vanishes under possibility covariance. It also checks that the nineteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
+claim_scope: "Synthesis of eighteen open campaign blocks (PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088), all built on one supplied and unadopted local dynamics clause, with nineteen recorded decision points. Three findings. (a) Quantum rules and dynamics: under locality of marginals (D-loc), the lock (a record leaves its own site in its possibility), two-possibility menus, a closed lattice whose only irreversible events are records, continuous time-homogeneous nearest-neighbour evolution and covariance, the following all follow: the Born law Tr(P_q rho), the compression update at distant sites, antipodal menus, and linear, completely positive, unitary evolution of the clause's two-site form. (b) Exact emergent content: under full soldering, record carvings give exactly solvable Kitaev models: Majorana fermions in a Z2 gauge field, in one dimension and, with relaxed carvings, in three. Zero-field carving components are exactly 2x2x2 cubes or face-diagonal strips. (c) What further sectors need: U(1) link fields freeze under every two-site generator with an exact Gauss law, and move by a one-neighbourhood plaquette ring or a soft vertex Gauss energy. The landed linear-gravity tensor field is moved by no single neighbourhood (integer slots). SU(N) links need 2N states, so composite links. Time-reversal-odd star terms need soldering and break the carvings' solvability. U(1) charges under the clause are bosonic Gauss defects. The runner re-derives one identity per block and checks that the declared decision points are exactly those used. No decision point is adopted, no block is audited, and no physical identification is made."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -13,231 +13,175 @@ runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_202
 **Type:** bounded_theorem
 **Status:** synthesis of eighteen open campaign blocks with consolidated re-derivations; unaudited.
 
-## The gap this campaign addressed
+## Result
 
 A review of main at `0e6ad82850` found one gap shared by every lane that
-moves content: the dynamics is supplied. Examples:
-- the two-component walk of the eight-species notes;
-- the positive local rates, clocked walk and ledger of the rate-field
-  notes;
-- the finite clock and Villain laws of the Maxwell-scaling notes;
-- the ring and Rokhsar–Kivelson Hamiltonians of the ice notes;
-- the stochastic generators of the mobile-record notes.
+moves content: the dynamics is supplied. The axioms memo says Admissibility
+"is not a dynamics axiom". This campaign supplied the smallest candidate, a
+covariant nearest-neighbour two-site generator, as a decision point. It did
+not adopt it, and it asked what that clause generates and what each other
+sector needs beyond it.
 
-The axioms memo says that Admissibility "is not a dynamics axiom" and does
-not "choose a Hamiltonian or transfer operator".
+1. **The quantum rules follow from a few readings.** Given the readings
+   below, the following all follow (open PRs 9083–9086):
+   - the Born law `Tr(P_q ρ)`;
+   - the compression update of distant sites ("collapse");
+   - antipodal record menus;
+   - linear, completely positive, unitary evolution between records, with
+     the clause's two-site form.
 
-This campaign did not try to derive a dynamics from the axioms. It took
-the smallest local dynamics clause as a decision point and asked what that
-one clause generates across the lanes.
+   The readings are:
+   - locality of marginals (D-loc);
+   - the lock (a record leaves its own site in its possibility);
+   - two-possibility menus;
+   - a closed lattice whose only irreversible events are records;
+   - continuous time-homogeneous nearest-neighbour evolution;
+   - covariance.
+2. **Exact emergent matter and gauge content.**
+   - Under full soldering, records carve the medium into exactly solvable
+     Kitaev models (open PRs 9048, 9054). These are Majorana fermions in a
+     Z2 gauge field, with genuine flux, in one and three dimensions.
+   - Zero-field carvings are classified completely: 2x2x2 cubes, or strips
+     one square wide that wind along a face diagonal.
+3. **A ladder of what the other sectors need.**
 
-## Decision points (none adopted)
+   | Sector | What it needs beyond the two-site clause | Blocks |
+   |---|---|---|
+   | Quantum probability: Born law, frequencies, Bell values | nothing further; the readings above | 9041, 9043, 9046, 9052, 9083–9086 |
+   | Z2 gauge field and Majorana fermions | full soldering at the compass point, plus a record carving | 9048, 9054 |
+   | U(1) photon | one neighbourhood: a plaquette ring, or a soft vertex Gauss energy | 9066, 9069, 9072 |
+   | Landed linear-gravity tensor field (E-slot moves, integer slots) | more than one neighbourhood | 9077 |
+   | SU(2), SU(3) gauge fields | composite links of at least 2 and 3 qubits (6 for independent Standard Model fields, 4 for one joint link) | 9081 |
+   | Time-reversal-odd (chiral) content | a star term under soldering, which breaks the carvings' solvability | 9088 |
 
-| Point | Content | First used |
-|---|---|---|
-| D-dyn | a covariant nearest-neighbour two-site Hermitian generator | 9040 |
-| D-pc | possibility covariance (every internal rotation) | 9040 |
-| D-sold | full soldering of the rotations to the Bloch vector | 9040 |
-| D-perm | permanence as compression onto record projectors; its distant part follows from D-loc (9085) | 9041 |
-| D-tr | odds read from the site's state by the trace rule | 9041 |
-| D-relax | relaxation profile; which state records form from | 9041, 9052 |
-| D-menu | antipodal menus | 9041 |
-| D-set | independently formed setting records | 9043 |
-| D-nn | Admissibility conditions: records alone, or states | 9043, 9046 |
-| D-pattern | a record carving and its contents | 9048, 9054 |
-| D-sign | the sign of the Moriya coupling | 9050 |
-| D-roles | doubled-coordinate roles (vertex, link, plaquette, cube sites) | 9066, 9069, 9077, 9081 |
-| D-gauss | a Gauss law on link sites, exact or as a soft vertex-star energy | 9066, 9069, 9077, 9081 |
-| D-star | a covariant generator on a plaquette site's four link neighbours | 9072 |
-| D-loc | marginal record distributions do not depend on distant record formation | 9083, 9084 |
-| D-rev | reversible, continuous-time, nearest-neighbour evolution between records; its reversibility follows from D-closed and D-onlyrec (9086) | 9084 |
-| D-closed | the lattice is the whole system | 9086 |
-| D-onlyrec | records are the only irreversible events | 9086 |
-| D-chir | a time-reversal-odd three-spin star term | 9088 |
+## Decision points
 
-## What the clause generates
+These are recorded so each result names what it rests on. None is adopted.
+Some are now derived from others, as marked.
 
-1. **The clause is finite (open PR 9040).**
-   - Covariant nearest-neighbour two-qubit couplings form spaces of
-     dimension 6, 4, 4 and 3 under the four landed rotation actions.
-   - Possibility covariance leaves the Heisenberg coupling alone,
-     `J s.s = J(2 SWAP - 1)`.
-   - Full soldering leaves the Heisenberg, compass and Moriya couplings.
-   - The Moriya coupling is odd under the improper inversion, which the
-     axioms omit.
-2. **Records act as fields, and the law gets a form (open PR 9041).**
-   - A recorded neighbour enters the dynamics through its content,
-     `P_q s P_q = q P_q`.
-   - A site with six recorded neighbours is a qubit in their field.
-   - Odds that depend on the records alone point along that field,
-     `(1 + lam p.h^)/2`.
-   - The Born lane's two decision points relocate. Affinity becomes the
-     trace rule, and repeat certainty becomes ferromagnetic ground
-     relaxation.
-3. **Quantum correlations need quantum conditions (open PR 9043).**
-   - Formation laws that condition on records alone, with independent
-     settings, are local causal models: CHSH is at most 2.
-   - The clause reaches `2 sqrt 2` and goes no further.
-   - A record carrying a setting across the wings gives 4, and static
-     conditioning exceeds `2 sqrt 2`.
-4. **Records-only admissibility leaves the dynamics unreadable (open PR 9046).**
-   - If odds are fixed by the six neighbour records, every record forms
-     isolated.
-   - The forming sites are then independent, they never interact, and no
-     readable trace of the dynamics remains.
-   - The formation lane's question "which neighbours are already written"
-     is then forced to: all six.
-5. **Fermions and a gauge field, exactly, in one dimension (open PR 9048).**
-   - At the compass point, records carve the medium into Kitaev's model.
-   - With zero fields the components are classified completely, as a
-     general theorem. Each is either the 2x2x2 cube or a strip one square
-     wide that winds along a face diagonal.
-   - The proof goes through a surface of Euler characteristic
-     (interior sites)/4 ≥ 0. An interior site forces a cube, and a strip
-     that does not wind would need a reversal.
-   - The staircase tube is gapped (`2|K|`, pi flux).
-6. **A handedness that records see (open PR 9050).**
-   - The Moriya bond is an XXZ bond in a turned frame.
-   - Along a straight line the turn is a gauge. Where bond directions meet
-     it has curvature.
-   - Records register it as the parity-odd statistic
-     `E(a,b) - E(b,a) = -2 sin(phi) (a x b).e`.
-7. **Frequencies follow the odds exactly when correlations cluster (open PR 9052).**
-   - The sequence law is the joint trace rule.
-   - The firewall's IID and locked laws are a product state and a cat
-     state.
-   - Unique gapped ground states cluster.
-8. **Fermions and a gauge field, exactly, in three dimensions (open PR 9054).**
-   - Allowing dangling axes, relaxed carvings reach three dimensions.
-   - A 20-site network with one local loop per cell is exactly solvable:
-     20-qubit ED equals the least Majorana energy.
-   - Its flux is genuine, and a vison costs `0.111 |K|`.
-   - Its Majorana fermions are gapped (`0.618 |K|`) above two localized
-     zero modes per cell.
-9. **An exact Gauss law freezes the link field (open PR 9066).**
-   - In doubled coordinates no two link sites are adjacent. So every
-     two-site generator that respects an exact U(1) or Z2 Gauss law leaves
-     every link field conserved.
-   - The field moves by vertex–link–vertex hops or plaquette rings. Each
-     lies inside one site's neighbourhood, the set Admissibility conditions
-     on.
-   - Among the four landed rotation actions, an oriented link field is
-     covariant under full soldering alone. A dynamical vertex charge needs
-     the trivial action or the sign twist.
-   - A soft vertex-star Gauss energy lets record fields generate the ring
-     at fourth order: `g = 5h⁴/(32U³)`, with no diagonal term at that order.
-10. **Charges are Gauss defects (open PR 9069).**
-    - Under full soldering, no site of any role has a covariant charge.
-    - No covariant two-site term moves charge between a vertex qubit and
-      a soldered link, under any landed vertex action.
-    - With a soft Gauss energy the charges are defects of the Gauss law.
-      They are gapped, hop at first order by record-field flips, and
-      exchange as bosons.
-    - Record-field phases are pure gauge: the ring is `−5/(2U³)` times the
-      product of the flip amplitudes, so only magnitudes matter.
-11. **The covariant plaquette clause (open PR 9072).**
-    - It is a ring plus four orbit potentials.
-    - The member that annihilates uniform ice is the Rokhsar–Kivelson
-      projector. Summed over plaquettes, that is the flip-graph Laplacian.
-      Its ground states record the uniform measure of each flip class by
-      the trace rule.
-    - At `D = 0` with normal fields, unrecorded plaquette qubits polarize
-      the ice. So the ring needs plaquette sites that add no such
-      potential, such as recorded ones.
-12. **The landed tensor constraints freeze (open PR 9077).**
-    - The vector constraint `∂_i E_ij = 0` of the landed linear-gravity
-      tensor model sits on link sites, using exactly their six neighbours.
-    - Every two-site generator that respects it conserves the tensor field.
-    - For integer (or odd-N) slots, no single site's neighbourhood holds a
-      move of the E slots.
-    - The smallest local moves are 10-slot planar curvature pieces. That
-      is the minimum on the whole lattice (independent check).
-13. **Non-Abelian links need several qubits (open PR 9081).**
-    - One qubit carries U(1) and Z2 links but no SU(N) link.
-    - An SU(N) link needs at least 2N states, and `(N, 1) ⊕ (1, N)`
-      reaches that with a covariant link operator.
-    - So SU(2) needs 2 qubits per link and SU(3) 3. Independent Standard
-      Model fields need 6, and one joint `(3, 2)_Y` link needs 4.
-14. **A distant record is a recorded randomizer (open PR 9083).**
-    - The clause carries a condition qubit's purification to any distance.
-    - Recording the partner steers the qubit to either end of any chord.
-    - Under D-loc (marginals do not depend on distant record formation), the
-      law is affine: the trace rule. This holds even with the partner's
-      weights from the same law, where D-loc leaves `λ ∈ {0, 1}`.
-    - Compression consistency (D-perm) then forces `E_q = P_q`, the Born
-      orientation with full contrast.
-    - This reduces the landed affine/Born gate's first obligation to D-loc
-      and settles its third by D-perm. D-tr is now derived, given D-loc,
-      D-perm, the menu, and the law being a function of the conditional
-      state.
-15. **Locality of marginals forces linear dynamics (open PR 9084).**
-    - Under D-loc, the evolution between records is affine, for a partner
-      decoupled during the evolution; otherwise a distant record signals.
-    - Joint positivity makes it completely positive. The clause's own field
-      rotation and bond expose any failure as a negative record
-      probability. Reversibility makes it unitary.
-    - With continuous time and nearest-neighbour range, it has the form of
-      the clause. The clause's content reduces to D-rev and covariance.
-16. **A record updates the rest of the lattice by compression (open PR 9085).**
-    - Joint record effects whose marginals stay Born are product
-      projectors.
-    - So a record leaves every other site in its Lüders conditional state.
-    - The distant part of D-perm, the collapse, follows from D-loc and the
-      site-local lock.
-    - Two-possibility menus are forced to be antipodal.
-17. **A closed lattice evolves unitarily between records (open PR 9086).**
-    - Suppose the lattice is closed and records are its only irreversible
-      events. Then evolution between records keeps pure states pure and
-      distinguishable, which makes it unitary.
-18. **Covariant time-reversal breaking never keeps a carving solvable (open PR 9088).**
-    - Possibility covariance allows no time-reversal-odd three-spin star
-      term.
-    - Under the landed actions such terms exist, but none has Kitaev's
-      solvable pattern. On the cube, none preserves the loop operators.
-    - In exactly solvable carvings, time reversal is broken only by
-      records.
+| Point | Content | Used by | Status |
+|---|---|---|---|
+| D-dyn | a covariant nearest-neighbour two-site Hermitian generator | 9040–9077, 9083 | form follows from D-loc, D-closed, D-onlyrec, D-rev and covariance (9084, 9086) |
+| D-pc | possibility covariance (every internal rotation) | 9040, 9084, 9088 | supplied |
+| D-sold | full soldering of the rotations to the Bloch vector | 9040, 9048, 9050, 9054, 9066, 9069, 9072, 9084, 9088 | supplied |
+| D-perm | records update by compression | 9041, 9043, 9046, 9048, 9054, 9083, 9084, 9085 | distant part follows from D-loc and the lock (9085) |
+| D-tr | odds read from the state by the trace rule | 9041, 9043, 9046, 9050, 9052, 9072 | follows from D-loc, D-perm and the menu (9083) |
+| D-relax | relaxation profile: which state records form from | 9041, 9052 | supplied (it fixes the state, not the law) |
+| D-menu | antipodal menus | 9041, 9043, 9050, 9052, 9083, 9085 | antipodal follows for two-possibility menus (9085) |
+| D-set | independently formed setting records | 9043 | supplied |
+| D-nn | Admissibility conditions: records alone, or states | 9043, 9046 | records alone leave the dynamics unreadable (9046) |
+| D-pattern | a record carving and its contents | 9048, 9054, 9066, 9069, 9072, 9088 | supplied |
+| D-sign | the sign of the Moriya coupling | 9050 | supplied |
+| D-roles | doubled-coordinate roles (vertex, link, plaquette, cube sites) | 9066, 9069, 9072, 9077, 9081 | supplied |
+| D-gauss | a Gauss law on link sites, exact or as a soft vertex-star energy | 9066, 9069, 9072, 9077, 9081 | supplied |
+| D-star | a covariant generator on a plaquette site's four link neighbours | 9072 | supplied |
+| D-loc | marginal record distributions do not depend on distant record formation | 9083, 9084, 9085, 9086 | supplied reading of physical locality |
+| D-rev | reversible, continuous-time, nearest-neighbour evolution between records | 9084 | reversibility follows from D-closed and D-onlyrec (9086) |
+| D-closed | the lattice is the whole system | 9086 | supplied reading |
+| D-onlyrec | records are the only irreversible events | 9086 | supplied reading of the Record axiom |
+| D-chir | a time-reversal-odd three-spin star term | 9088 | supplied |
 
-**The ladder.** What each sector needs from the dynamics and the lattice:
+## The blocks
 
-| Sector | Needs | Blocks |
-|---|---|---|
-| Quantum probability (Born form, frequencies, Bell) | the two-site clause; the Born law follows from locality of marginals (D-loc) and compression (D-perm) | 9041, 9043, 9046, 9052, 9083 |
-| Z2 gauge field and Majorana fermions | the two-site clause at the compass point, plus a record carving | 9048, 9054 |
-| U(1) photon | one neighbourhood: a plaquette ring (Rokhsar–Kivelson at uniform ice), or a soft vertex Gauss energy | 9066, 9069, 9072 |
-| Linearized-gravity tensor field (landed discretization, E-slot moves) | more than one neighbourhood: the smallest moves span a vertex's second neighbourhood | 9077 |
-| SU(2), SU(3) gauge fields | composite links of 2 and 3 qubits (6 for independent Standard Model fields, 4 for one joint link) | 9081 |
-| Time-reversal-odd (chiral) content | a star term under soldering, which then breaks the carvings' solvability; within solvable carvings, only records break it | 9088 |
+**Quantum rules and dynamics.**
+- **9041 — records act as fields.** A recorded neighbour enters the dynamics
+  through its content, `P_q s P_q = q P_q`. A site with six recorded
+  neighbours is a qubit in their field, and odds that depend on records
+  alone point along that field.
+- **9043 — Bell values.** Records-only formation laws with independent
+  settings keep CHSH at most 2. The clause reaches `2√2` and goes no
+  further.
+- **9046 — records-only admissibility.** If odds are fixed by the six
+  neighbour records alone, every record forms isolated, and the dynamics
+  leaves no readable trace.
+- **9052 — frequencies.** The sequence law is the joint trace rule, and
+  frequencies follow the one-shot odds exactly when correlations cluster.
+- **9083 — the Born law.**
+  - A distant record is a recorded randomizer. The clause can carry a
+    purification to any distance, and recording the partner steers the site
+    to either end of any chord.
+  - Under D-loc the law is affine. That holds even with the partner's
+    weights from the same law, where D-loc leaves `λ ∈ {0, 1}`.
+  - Compression consistency then forces `E_q = P_q`.
+  - This reduces the landed affine/Born gate's first obligation to D-loc
+    and settles its third.
+- **9084 — linear dynamics.** Under D-loc, the evolution between records is
+  affine for a partner decoupled during it. Positivity of joint records
+  after the clause's own rotations and bonds makes it completely positive.
+  With reversibility it is unitary, with the clause's two-site form.
+- **9085 — the collapse.** Joint record effects whose marginals stay Born
+  are product projectors. So a record leaves every other site in its Lüders
+  conditional state, and two-possibility menus are antipodal.
+- **9086 — unitarity.** In a closed lattice whose only irreversible events
+  are records, evolution between records keeps pure states pure and
+  distinguishable, and so it is unitary.
 
-## What it does not generate
+**Exact emergent content.**
+- **9040 — the couplings.** Covariant two-site couplings have dimension 6,
+  4, 4 and 3 under the four landed actions. Possibility covariance leaves
+  Heisenberg alone. Full soldering allows Heisenberg, compass and Moriya.
+- **9048 — Kitaev carvings.**
+  - At the compass point, records carve Kitaev's model.
+  - Zero-field components are exactly 2x2x2 cubes or face-diagonal strips.
+    The proof uses a surface of Euler characteristic (interior sites)/4 ≥ 0.
+  - The staircase tube is gapped (`2|K|`, π flux).
+- **9050 — handedness.** The Moriya bond is an XXZ bond in a turned frame.
+  Records see it as `E(a,b) − E(b,a) = −2 sin φ (a×b)·e`.
+- **9054 — three dimensions.** A 20-site relaxed network is exactly
+  solvable, with genuine flux (vison `0.111|K|`). Its Majoranas are gapped
+  at `0.618|K|` above two flat zero modes per cell.
+- **9088 — time-reversal breaking.**
+  - Possibility covariance allows no T-odd three-spin star term.
+  - Under the landed actions such terms exist, but none has Kitaev's
+    solvable pattern, and on the cube none preserves the loop operators.
 
-- **U(1), SU(2) or SU(3) gauge fields.** The exact gauge field found is
-  Z2. SU(2) and SU(3) links need at least 2 and 3 qubits (open PR 9081),
-  so they cannot sit on one-qubit link sites. A U(1) field on link sites needs one of two terms of Admissibility
-  shape (open PR 9066):
-  - a plaquette ring clause, whose covariant family contains the
-    Rokhsar–Kivelson point;
-  - a soft vertex Gauss energy, which gives the pure ring at fourth order.
+**What further sectors need.**
+- **9066 — the Gauss freeze.**
+  - Link sites are never adjacent in doubled coordinates. So every
+    two-site generator that respects an exact U(1) or Z2 Gauss law freezes
+    the link field.
+  - Hops and rings move it, each inside one neighbourhood. An oriented
+    link field is covariant under full soldering alone.
+  - A soft vertex Gauss energy with equal record fields gives the ring at
+    fourth order, `g = 5h⁴/(32U³)`, with no diagonal term at that order.
+- **9069 — charges.** Under full soldering no qubit carries a covariant
+  charge. With a soft Gauss law, charges are gapped bosonic defects, and
+  record-field phases are pure gauge.
+- **9072 — the plaquette clause.**
+  - It is a ring plus four orbit potentials.
+  - The member that annihilates uniform ice is the Rokhsar–Kivelson
+    projector, whose ground states record uniform class measures.
+  - At `D = 0` with normal fields, unrecorded plaquettes polarize the ice.
+- **9077 — the tensor constraints.**
+  - The landed vector constraint `∂_i E_ij = 0` sits on link sites.
+    Two-site generators respecting it freeze the tensor field.
+  - For integer slots, no single neighbourhood moves it. The smallest moves
+    are 10-slot planar curvature pieces.
+- **9081 — non-Abelian links.** One qubit carries no SU(N) link. An SU(N)
+  link needs `2N` states, reached by `(N, 1) ⊕ (1, N)` with a covariant link
+  operator.
 
-  The two-site clause alone freezes the field.
-- **Charged or chiral fermions.** The emergent fermions are Majorana. No
-  gapless or Weyl case appears among 15 three-direction networks with
-  random record contents. No single landed action gives both an oriented
-  link field and a dynamical vertex charge. Under the clause, U(1) charges
-  are Gauss defects, and they are bosons (open PR 9069).
-- **Gravity.** The clause supplies no long-range rate field. The landed
-  linear-gravity tensor field is frozen by every two-site generator under
-  its vector constraint. For integer slots, no single neighbourhood moves
-  its E slots (open PR 9077). So in that discretization, moving the
-  tensor field takes dynamics wider than a photon's.
-- **Parameters and supplied structure.** Generations are not addressed,
-  and the values of `J`, `K`, `D` are not fixed. The formation site, time
-  and rate, the relaxation profile, and how records come to form a carving
-  are all still supplied.
-- **Soldering is needed for the fermion and gauge content.** Under
-  possibility covariance only the Heisenberg coupling remains, and the
-  Kitaev route (blocks 5 and 8) is not available.
-- **The full spin model of a carved network is extensively degenerate.**
-  The degeneracy comes from its localized zero modes.
+## What stays open
+
+- **Gauge group.** The exact gauge field found is Z2. U(1) needs a
+  companion term of Admissibility shape. SU(2) and SU(3) need composite
+  links, and no superlattice is chosen.
+- **Charged chiral fermions.** The emergent fermions are Z2-charged
+  Majoranas, and the clause's U(1) charges are bosons. No gapless or Weyl
+  case appeared among 15 three-direction networks. Covariant time-reversal
+  breaking destroys the carvings' solvability.
+- **Gravity.** No long-range rate field is generated. The landed tensor
+  field needs dynamics wider than one neighbourhood.
+- **Parameters and supplied structure.**
+  - The coupling values `J`, `K`, `D`.
+  - Generations.
+  - Where, when and how fast records form, and the relaxation profile.
+  - How records come to form a carving.
+- **The photon phase.** Not placed, either for the Rokhsar–Kivelson family
+  or for the pure-ring point where the soft route lands.
+- **The readings themselves.** D-loc, the lock, D-closed, D-onlyrec,
+  continuous time, the range and covariance are recorded readings, not
+  derived from the axiom text.
 
 ## Consolidated certificates
 
@@ -247,29 +191,29 @@ pass in about two seconds.
 - **L.** The nineteen declared points are exactly those used by the
   eighteen blocks.
 - **1.** Coupling dimensions 1, 1 and 3.
-- **2.** The projection lemma, the resultant ground state, and the
-  pentagon law `(1 + t)/2`.
+- **2.** The projection lemma, the resultant ground state, and the pentagon
+  law `(1 + t)/2`.
 - **3.** 3000 random shared-source records-only models (largest `1.857`)
   against the singlet's `2.828427`.
 - **4.** All 6561 cube-graph labellings.
-- **5.** `eps^2 = 12 + 8 cos k` on the pi-flux tube, to `2e-14`.
-- **6.** `c = -1.1469246887 = -2 sin(atan 0.7)`.
+- **5.** `ε² = 12 + 8 cos k` on the π-flux tube, to `2e-14`.
+- **6.** `c = −1.1469246887 = −2 sin(atan 0.7)`.
 - **7.** The variance identity on a random 5-qubit state.
-- **8.** The 20-site network's two sector levels, its two flat zero modes
-  and its gap `0.618`.
+- **8.** The 20-site network's two sector levels, two flat zero modes and
+  gap `0.618`.
 - **9.** The Gauss freeze on a vertex–link–vertex window, the intertwiner
   dimensions `0, 0, 0, 1` and invariant axes `3, 1, 0, 0`, and the ring
   element `−5/32`.
 - **10.** No fixed Bloch axis for any role, the vertex–link flip dimensions
   `0, 0, 0, 2`, and commuting defect hops.
-- **11.** The frustration-free plaquette solution space: one ray with
-  coefficients `(1, 1, 0, 0, 0)`.
-- **12.** Six-neighbour placement of the tensor rows, and null
-  neighbourhood moves for every role.
-- **13.** Scalar SU(2) commutant on a qubit, and covariant link operators
-  on the 4-dimensional SU(2) link.
-- **14.** Steering of random chords, the trace rule's exact steered
-  average, and a cubic deformation's shift.
+- **11.** The uniform-ice plaquette solution, with coefficients
+  `(1, 1, 0, 0, 0)`.
+- **12.** Six-neighbour placement of the tensor rows, and no integer
+  neighbourhood move for any role.
+- **13.** The scalar SU(2) commutant on a qubit, and covariant link
+  operators on the 4-dimensional SU(2) link.
+- **14.** Steering of random chords, the trace rule's exact steered average,
+  and a cubic deformation's shift.
 - **15.** A Weinberg-type precession's signalling shift, and the negative
   partial transpose of a singlet.
 - **16.** The one-line range intersection, and tomography matching the
@@ -279,85 +223,41 @@ pass in about two seconds.
 
 ## Independent checks
 
-Two checkers wrote separate code and did not read the campaign's runners.
-- **Blocks 2–5:** 10 of 10 claims pass. Their additions:
-  - "pi flux" means an oriented bond-variable product of `-1`, which is
-    loop eigenvalue `W = +1`;
-  - a closed form for the tube energy.
-- **Blocks 6–8:** 6 of 6 claims pass. They flagged two things, both now
-  corrected in open PR 9054:
-  - the first 3D headline network is a tree;
-  - zero-field dangling Majoranas are decoupled zero modes.
-- **The Gauss-freeze block (9066):** every claim passes, with no gap in the
-  proof.
-  - Corrected since: the printed span dimensions counted redundant zero
-    combinations (true ranks 26 and 18).
-  - Also corrected: `V = 0` needs equal field sizes, and some prose was
-    overstated.
-- **The Born, dynamics and link blocks (9081, 9083, 9084):** every
-  computation passes.
-  - Corrected since: the partner's Born weights are no longer assumed; the
-    self-consistent version leaves `λ ∈ {0, 1}`.
-  - The complete-positivity step now uses an entangling operation from
-    the clause.
-  - D-loc is scoped to decoupled partners.
-  - The link count adds the 4-qubit joint link.
-- **The plaquette and tensor blocks (9072, 9077):** every computation
-  passes, and the tensor block's 10-slot minimum holds without a box.
-  - Corrected since: the Rokhsar–Kivelson projector is characterized by
-    annihilating uniform ice, not by term-by-term positivity.
-  - Also corrected: the polarization result needs `D = 0` and normal
-    fields. Even-N clocks admit a one-neighbourhood cube move, and the
-    landed `C2` terms fit in one neighbourhood.
-- **The charges block (9069) and the carving proof (9048):** every claim
-  passes, on 22,972 carving components across nine tori.
-  - The checker supplied the interior-site lemma that completes the
-    carving classification.
-  - It flagged scope in 9069, now corrected: full soldering, supplied Gauss
-    energy, and bosons for bare flips.
-
-## The state of the candidate after this campaign
-
-One locality reading, D-loc, now does triple duty (open PRs 9083, 9084 and
-9085). It makes the record law and the evolution between records linear,
-and it fixes how a record updates distant sites. So the
-quantum-probability sector's decision points reduce to:
-- D-loc;
-- the lock (a record leaves its own site in its possibility);
-- two-possibility menus (that they are antipodal follows, open PR 9085);
-- a closed lattice whose only irreversible events are records (D-closed,
-  D-onlyrec), which gives unitarity;
-- continuous time and nearest-neighbour range;
-- covariance.
-
-A candidate built on the four axioms plus one local dynamics clause holds
-together in its quantum-probability sector:
-- the Born law `Tr(P_q ρ)`: locality of marginals forces affinity and
-  compression forces the orientation (open PR 9083);
-- frequencies, through clustering;
-- Bell values, which reach the quantum bound and no further.
-
-Records-only readings cannot supply quantum correlations or readable
-dynamics, so the Admissibility conditions must include the states of
-unrecorded neighbours.
-
-Under full soldering, the same clause and a pattern of records produce
-emergent Majorana fermions and a Z2 gauge field, exactly, in three
-dimensions.
-
-For a U(1) photon the clause needs a companion term of Admissibility
-shape, a plaquette ring or a soft Gauss energy. The two-site clause cannot
-move a field under an exact Gauss law. The charges it then carries are
-bosonic Gauss defects. Linearized gravity's tensor field needs more still:
-no single neighbourhood moves it.
-
-The Standard Model's gauge group, charged chiral matter, gravity and the
-parameters remain open. So do the owner-level readings the decision points
-name.
+Separate checkers wrote their own code without reading the campaign's
+runners. Every computation they repeated agreed. Where the prose went
+further than the theorems, it has been corrected.
+- **Blocks 2–5.** 10 of 10 claims pass. "π flux" means an oriented
+  bond-variable product of `−1`, which is loop eigenvalue `W = +1`.
+- **Blocks 6–8.** All claims pass. They flagged two things, both corrected:
+  the first 3D headline network was a tree, and zero-field dangling
+  Majoranas are decoupled zero modes.
+- **The Gauss freeze (9066).** Every claim passes, with no gap in the proof.
+  Corrected since:
+  - the true span ranks are 26 and 18;
+  - `V = 0` needs equal field sizes.
+- **Charges and the carving proof (9069, 9048).** All pass, on 22,972
+  carving components across nine tori. The checker supplied the
+  interior-site lemma that completes the classification. Corrected since:
+  9069's scope, to full soldering and bare flips.
+- **The plaquette and tensor blocks (9072, 9077).** All pass, and the
+  10-slot minimum holds on the whole lattice. Corrected since:
+  - the Rokhsar–Kivelson projector is characterized by annihilating uniform
+    ice;
+  - polarization needs `D = 0` and normal fields;
+  - even-N clocks and the landed `C2` terms are one-neighbourhood
+    exceptions.
+- **The link, Born and dynamics blocks (9081, 9083, 9084).** All pass.
+  Corrected since:
+  - the partner's Born weights are no longer assumed;
+  - complete positivity uses the clause's own entangling step;
+  - D-loc is scoped to decoupled partners;
+  - a joint Standard Model link needs 4 qubits.
+- **The collapse, unitarity and time-reversal blocks (9085, 9086, 9088).**
+  The check is still running.
 
 ## What this does not do
 
-- It adopts no decision point and derives no dynamics.
+- It adopts no decision point and derives no dynamics from the axiom text.
 - It does not audit, land or promote any block. The blocks are open PRs.
 - Its checks re-derive identities and do not replace the blocks' own
   runners.

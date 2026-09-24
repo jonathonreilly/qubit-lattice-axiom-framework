@@ -1,0 +1,6 @@
+PASS first order: heat bath at c0 is -52/45, -21002/9207, -13866/12455, -79/72; Metropolis is -26/9, -3337/504, -974/345, -284/105, all negative
+PASS reversal: heat bath changes sign once, at 1.38 to 2.09 times c0; Metropolis stays negative from c=1/1000 through c=1000
+PASS density: at c0 the heat-bath polynomial on (3,1,2) is -52/45 + (317/1755) rho0 + ... and no triple changes sign on (0,1) for either acceptance
+PASS formation: a row of pair weights sums to 6 at c0, and the shell moment is -z g m^2 (m+1)(5m+1); shells of side 1..4 have one cube neighbour each
+HIT: confirmed - at the neutral scale a free record drifts down the gradient: heat bath -52/45, -21002/9207, -13866/12455, -79/72 and Metropolis -26/9, -3337/504, -974/345, -284/105. The all-orders density polynomial stays negative on (0,1). Heat bath reverses at 1.38 to 2.09 times c0; Metropolis does not, because its coefficient is at most -2 E min(1, 1/W). Formation on a held cube has first moment -z g m^2 (m+1)(5m+1).
+SUMMARY: confirmed the two acceptances, the sign on (0,1), the reversal split, and the cube moment. The independent-site gas and the halo profile 1/R^2 are the attempt's assumptions. Retention of formed records was not derived.

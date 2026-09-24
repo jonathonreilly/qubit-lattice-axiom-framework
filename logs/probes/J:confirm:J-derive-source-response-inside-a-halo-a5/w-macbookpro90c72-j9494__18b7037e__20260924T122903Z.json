@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-source-response-inside-a-halo-a5",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j9494",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/source-response-inside-a-halo/referee_w-macbookpro90c72-j9494/check.py",
+ "seed": 52943,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "18b7037e",
+ "started_utc": "20260924T122903Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the two acceptances, the sign on (0,1), the reversal split, and the cube moment. The independent-site gas and the halo profile 1/R^2 are the attempt's assumptions. Retention of formed records was not derived."
+ },
+ "review": "Exact class averages confirm both acceptances drift down the gradient at c0, the density polynomial stays negative on (0,1), and the cube formation moment is -z g m^2 (m+1)(5m+1). Metropolis does not reverse. The product gas and the 1/R^2 halo are assumed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:source-response-inside-a-halo:a5/; its files are probes/work/derive/source-response-inside-a-halo/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/source-response-inside-a-halo/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "5916ffa10499f0c579a386ddd4a11c122c4522e8ab2764f27cec4e3c1bb1e886",
+ "stdout_tail": "PASS first order: heat bath at c0 is -52/45, -21002/9207, -13866/12455, -79/72; Metropolis is -26/9, -3337/504, -974/345, -284/105, all negative\nPASS reversal: heat bath changes sign once, at 1.38 to 2.09 times c0; Metropolis stays negative from c=1/1000 through c=1000\nPASS density: at c0 the heat-bath polynomial on (3,1,2) is -52/45 + (317/1755) rho0 + ... and no triple changes sign on (0,1) for either acceptance\nPASS formation: a row of pair weights sums to 6 at c0, and the shell moment is -z g m^2 (m+1)(5m+1); shells of side 1..4 have one cube neighbour each\nHIT: confirmed - at the neutral scale a free record drifts down the gradient: heat bath -52/45, -21002/9207, -13866/12455, -79/72 and Metropolis -26/9, -3337/504, -974/345, -284/105. The all-orders density polynomial stays negative on (0,1). Heat bath reverses at 1.38 to 2.09 times c0; Metropolis does not, because its coefficient is at most -2 E min(1, 1/W). Formation on a held cube has first moment -z g m^2 (m+1)(5m+1).\nSUMMARY: confirmed the two acceptances, the sign on (0,1), the reversal split, and the cube moment. The independent-site gas and the halo profile 1/R^2 are the attempt's assumptions. Retention of formed records was not derived.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9494",
+  "at_utc": "20260924T123008Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Class averages and the shell sum confirm the two acceptances, the sign on (0,1), and the cube moment. The product gas and the halo profile are assumed.",
+  "by": "w-macbookpro90c72-j9494",
+  "at_utc": "20260924T123008Z"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-what-fixes-the-scale-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j1ae2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-what-fixes-the-scale/referee_w-macbookpro90c72-j1ae2/check.py",
+ "seed": 38146,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b9d7633f",
+ "started_utc": "20260924T082226Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the logged sums, the pendant uniqueness, and the average factorization. The markdown fractions 17/6 and 17/3 are not those sums. The blanket no-go fails on p=q=r, where c0 works pointwise. (d) and (e) were not attempted."
+ },
+ "review": "The four scales at (3,1,2), the unique pendant solution, the 36 pair sums, and the averaged normalizer match the log; off p=q=r no scale matches every pair, and on that locus c0 does.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-what-fixes-the-scale:a1/; its files are probes/work/derive/moving-what-fixes-the-scale/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-what-fixes-the-scale/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "e880779fa67e17551a4b2ac40af68dfebbd9ca80df3fb4d4e207b8a92d6c15e3",
+ "stdout_tail": "PASS four readings: at (3,1,2) the scales are 1/2, 2^(1/3)*3^(5/6)/6, 5/9 and 1/3; each sixth power differs\nPASS pendant: c(p+q+4r)/6 = 1 has the unique solution c = 6/(p+q+4r)\nPASS two-neighbour branches: 36 pairs give 13/3, 11/3 and 4 at (3,1,2); the branches meet for every pair only at p=q=r, where each sum is p^2\nPASS average normalizer: averaged Z_2 is 6(c/c0)^2, so c=2 c0 gives 4; at (3,1,2) the pointwise values are 13/2, 11/2 and 6; at p=q=r they are 6\nHIT: confirmed - the four readings at (3,1,2) are 1/2, 2^(1/3)*3^(5/6)/6, 5/9 and 1/3. A pendant site matches the vacancy only at c0. Two occupied neighbours give 13/3, 11/3 and 4, so no single c matches every pair there, and the averaged normalizer is 6(c/c0)^k. The three branches are the same function of the pair only when p=q=r, and then c0 makes the normalizer 6 for every neighbourhood.\nSUMMARY: confirmed the logged sums, the pendant uniqueness, and the average factorization. The markdown fractions 17/6 and 17/3 are not those sums. The blanket no-go fails on p=q=r, where c0 works pointwise. (d) and (e) were not attempted.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1ae2",
+  "at_utc": "20260924T082234Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent enumeration reproduces the logged sums at (3,1,2) and the average factorization. The no-go is the complement of p=q=r; on that locus c0 works pointwise. The markdown fractions are not the sums.",
+  "by": "w-macbookpro90c72-j1ae2",
+  "at_utc": "20260924T082234Z"
+ }
+}

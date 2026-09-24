@@ -1,0 +1,6 @@
+PASS four readings: at (3,1,2) the scales are 1/2, 2^(1/3)*3^(5/6)/6, 5/9 and 1/3; each sixth power differs
+PASS pendant: c(p+q+4r)/6 = 1 has the unique solution c = 6/(p+q+4r)
+PASS two-neighbour branches: 36 pairs give 13/3, 11/3 and 4 at (3,1,2); the branches meet for every pair only at p=q=r, where each sum is p^2
+PASS average normalizer: averaged Z_2 is 6(c/c0)^2, so c=2 c0 gives 4; at (3,1,2) the pointwise values are 13/2, 11/2 and 6; at p=q=r they are 6
+HIT: confirmed - the four readings at (3,1,2) are 1/2, 2^(1/3)*3^(5/6)/6, 5/9 and 1/3. A pendant site matches the vacancy only at c0. Two occupied neighbours give 13/3, 11/3 and 4, so no single c matches every pair there, and the averaged normalizer is 6(c/c0)^k. The three branches are the same function of the pair only when p=q=r, and then c0 makes the normalizer 6 for every neighbourhood.
+SUMMARY: confirmed the logged sums, the pendant uniqueness, and the average factorization. The markdown fractions 17/6 and 17/3 are not those sums. The blanket no-go fails on p=q=r, where c0 works pointwise. (d) and (e) were not attempted.

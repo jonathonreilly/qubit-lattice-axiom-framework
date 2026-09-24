@@ -1,0 +1,142 @@
+[
+  {
+    "exact": {
+      "S": 24,
+      "C": 600,
+      "epsilon": 0.040824829046386304,
+      "P_dimension_in_component": 237,
+      "path_domain": [
+        -120,
+        116
+      ],
+      "H2_hermitian_defect": 0.0,
+      "H4_hermitian_defect": 0.0,
+      "observable": [
+        0.2960663763907474,
+        0.36033467282517473,
+        0.3583245335982522
+      ],
+      "tail_probability_outside_physical_domain": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "candidate_cutoffs": [
+      {
+        "S": 24,
+        "C": 600,
+        "rotor_path_cutoff": 576,
+        "candidate_H2_hermitian_defect": 0.0,
+        "candidate_D_hermitian_defect": 0.0,
+        "candidate_H4_hermitian_defect": 0.0,
+        "observable": [
+          0.3119245956236091,
+          0.34360127825500786,
+          0.3171407627214876
+        ],
+        "tail_probability_outside_physical_domain": [
+          9.163838588427321e-07,
+          0.004904594601370375,
+          0.021555660513497454
+        ],
+        "physical_spin_path_domain": [
+          -120,
+          116
+        ]
+      },
+      {
+        "S": 24,
+        "C": 600,
+        "rotor_path_cutoff": 1152,
+        "candidate_H2_hermitian_defect": 0.0,
+        "candidate_D_hermitian_defect": 0.0,
+        "candidate_H4_hermitian_defect": 0.0,
+        "observable": [
+          0.3119245956233048,
+          0.34360127825432457,
+          0.3171407627201915
+        ],
+        "tail_probability_outside_physical_domain": [
+          9.163838588427004e-07,
+          0.004904594601360159,
+          0.021555660513410825
+        ],
+        "physical_spin_path_domain": [
+          -120,
+          116
+        ]
+      }
+    ]
+  },
+  {
+    "exact": {
+      "S": 32,
+      "C": 1056,
+      "epsilon": 0.03077287274483318,
+      "P_dimension_in_component": 317,
+      "path_domain": [
+        -160,
+        156
+      ],
+      "H2_hermitian_defect": 0.0,
+      "H4_hermitian_defect": 0.0,
+      "observable": [
+        0.33061495819728937,
+        0.3141095553469124,
+        0.3465597963898085
+      ],
+      "tail_probability_outside_physical_domain": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "candidate_cutoffs": [
+      {
+        "S": 32,
+        "C": 1056,
+        "rotor_path_cutoff": 768,
+        "candidate_H2_hermitian_defect": 0.0,
+        "candidate_D_hermitian_defect": 0.0,
+        "candidate_H4_hermitian_defect": 0.0,
+        "observable": [
+          0.34366895200466496,
+          0.296753893950241,
+          0.3716780364180399
+        ],
+        "tail_probability_outside_physical_domain": [
+          6.124112974728294e-05,
+          0.005775446504133594,
+          0.0123729280194389
+        ],
+        "physical_spin_path_domain": [
+          -160,
+          156
+        ]
+      },
+      {
+        "S": 32,
+        "C": 1056,
+        "rotor_path_cutoff": 1536,
+        "candidate_H2_hermitian_defect": 0.0,
+        "candidate_D_hermitian_defect": 0.0,
+        "candidate_H4_hermitian_defect": 0.0,
+        "observable": [
+          0.34366895200401365,
+          0.29675389395110274,
+          0.37167803641692626
+        ],
+        "tail_probability_outside_physical_domain": [
+          6.124112974715679e-05,
+          0.005775446504148557,
+          0.01237292801940284
+        ],
+        "physical_spin_path_domain": [
+          -160,
+          156
+        ]
+      }
+    ]
+  }
+]

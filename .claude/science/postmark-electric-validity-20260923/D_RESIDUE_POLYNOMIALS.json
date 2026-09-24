@@ -1,0 +1,690 @@
+{
+  "status": "exact rational path-coefficient identity checked across cycle windings",
+  "coordinate": "n increases by one vacancy hop; 15 steps shift every E by +3",
+  "basis": "D[n,n] and D[n,n+1], each quadratic in k where n=r+15k",
+  "rows": [
+    {
+      "n_mod_15": 0,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "0",
+          "0"
+        ],
+        "samples_k0_to3": [
+          "0",
+          "18",
+          "72",
+          "162"
+        ],
+        "sample_k_minus1": "18"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "3",
+          "0"
+        ],
+        "samples_k0_to3": [
+          "0",
+          "12",
+          "42",
+          "90"
+        ],
+        "sample_k_minus1": "6"
+      }
+    },
+    {
+      "n_mod_15": 1,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "12",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "32",
+          "98",
+          "200"
+        ],
+        "sample_k_minus1": "8"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "6",
+          "1"
+        ],
+        "samples_k0_to3": [
+          "1",
+          "16",
+          "49",
+          "100"
+        ],
+        "sample_k_minus1": "4"
+      }
+    },
+    {
+      "n_mod_15": 2,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "6",
+          "0"
+        ],
+        "samples_k0_to3": [
+          "0",
+          "24",
+          "84",
+          "180"
+        ],
+        "sample_k_minus1": "12"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "3",
+          "0"
+        ],
+        "samples_k0_to3": [
+          "0",
+          "12",
+          "42",
+          "90"
+        ],
+        "sample_k_minus1": "6"
+      }
+    },
+    {
+      "n_mod_15": 3,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "12",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "32",
+          "98",
+          "200"
+        ],
+        "sample_k_minus1": "8"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "9",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "20",
+          "56",
+          "110"
+        ],
+        "sample_k_minus1": "2"
+      }
+    },
+    {
+      "n_mod_15": 4,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "18",
+          "4"
+        ],
+        "samples_k0_to3": [
+          "4",
+          "40",
+          "112",
+          "220"
+        ],
+        "sample_k_minus1": "4"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "6",
+          "1"
+        ],
+        "samples_k0_to3": [
+          "1",
+          "16",
+          "49",
+          "100"
+        ],
+        "sample_k_minus1": "4"
+      }
+    },
+    {
+      "n_mod_15": 5,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "12",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "32",
+          "98",
+          "200"
+        ],
+        "sample_k_minus1": "8"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "9",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "20",
+          "56",
+          "110"
+        ],
+        "sample_k_minus1": "2"
+      }
+    },
+    {
+      "n_mod_15": 6,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "24",
+          "8"
+        ],
+        "samples_k0_to3": [
+          "8",
+          "50",
+          "128",
+          "242"
+        ],
+        "sample_k_minus1": "2"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "12",
+          "4"
+        ],
+        "samples_k0_to3": [
+          "4",
+          "25",
+          "64",
+          "121"
+        ],
+        "sample_k_minus1": "1"
+      }
+    },
+    {
+      "n_mod_15": 7,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "18",
+          "4"
+        ],
+        "samples_k0_to3": [
+          "4",
+          "40",
+          "112",
+          "220"
+        ],
+        "sample_k_minus1": "4"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "9",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "20",
+          "56",
+          "110"
+        ],
+        "sample_k_minus1": "2"
+      }
+    },
+    {
+      "n_mod_15": 8,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "24",
+          "8"
+        ],
+        "samples_k0_to3": [
+          "8",
+          "50",
+          "128",
+          "242"
+        ],
+        "sample_k_minus1": "2"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "15",
+          "6"
+        ],
+        "samples_k0_to3": [
+          "6",
+          "30",
+          "72",
+          "132"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 9,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "30",
+          "12"
+        ],
+        "samples_k0_to3": [
+          "12",
+          "60",
+          "144",
+          "264"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "12",
+          "4"
+        ],
+        "samples_k0_to3": [
+          "4",
+          "25",
+          "64",
+          "121"
+        ],
+        "sample_k_minus1": "1"
+      }
+    },
+    {
+      "n_mod_15": 10,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "24",
+          "8"
+        ],
+        "samples_k0_to3": [
+          "8",
+          "50",
+          "128",
+          "242"
+        ],
+        "sample_k_minus1": "2"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "15",
+          "6"
+        ],
+        "samples_k0_to3": [
+          "6",
+          "30",
+          "72",
+          "132"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 11,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "36",
+          "18"
+        ],
+        "samples_k0_to3": [
+          "18",
+          "72",
+          "162",
+          "288"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "18",
+          "9"
+        ],
+        "samples_k0_to3": [
+          "9",
+          "36",
+          "81",
+          "144"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 12,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "30",
+          "12"
+        ],
+        "samples_k0_to3": [
+          "12",
+          "60",
+          "144",
+          "264"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "15",
+          "6"
+        ],
+        "samples_k0_to3": [
+          "6",
+          "30",
+          "72",
+          "132"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 13,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "36",
+          "18"
+        ],
+        "samples_k0_to3": [
+          "18",
+          "72",
+          "162",
+          "288"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "21",
+          "12"
+        ],
+        "samples_k0_to3": [
+          "12",
+          "42",
+          "90",
+          "156"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 14,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "42",
+          "24"
+        ],
+        "samples_k0_to3": [
+          "24",
+          "84",
+          "180",
+          "312"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "18",
+          "9"
+        ],
+        "samples_k0_to3": [
+          "9",
+          "36",
+          "81",
+          "144"
+        ],
+        "sample_k_minus1": "0"
+      }
+    }
+  ],
+  "weighted_laplacian_remainder": [
+    {
+      "n_mod_15": 0,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "0"
+      ],
+      "samples_k_minus1_to3": [
+        "3",
+        "0",
+        "-3",
+        "-6",
+        "-9"
+      ]
+    },
+    {
+      "n_mod_15": 1,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "1"
+      ],
+      "samples_k_minus1_to3": [
+        "-2",
+        "1",
+        "4",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "n_mod_15": 2,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-1"
+      ],
+      "samples_k_minus1_to3": [
+        "2",
+        "-1",
+        "-4",
+        "-7",
+        "-10"
+      ]
+    },
+    {
+      "n_mod_15": 3,
+      "remainder_alpha_k_plus_beta": [
+        "0",
+        "0"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "n_mod_15": 4,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "1"
+      ],
+      "samples_k_minus1_to3": [
+        "-2",
+        "1",
+        "4",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "n_mod_15": 5,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-1"
+      ],
+      "samples_k_minus1_to3": [
+        "2",
+        "-1",
+        "-4",
+        "-7",
+        "-10"
+      ]
+    },
+    {
+      "n_mod_15": 6,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "2"
+      ],
+      "samples_k_minus1_to3": [
+        "-1",
+        "2",
+        "5",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "n_mod_15": 7,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-2"
+      ],
+      "samples_k_minus1_to3": [
+        "1",
+        "-2",
+        "-5",
+        "-8",
+        "-11"
+      ]
+    },
+    {
+      "n_mod_15": 8,
+      "remainder_alpha_k_plus_beta": [
+        "0",
+        "0"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "n_mod_15": 9,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "2"
+      ],
+      "samples_k_minus1_to3": [
+        "-1",
+        "2",
+        "5",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "n_mod_15": 10,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-2"
+      ],
+      "samples_k_minus1_to3": [
+        "1",
+        "-2",
+        "-5",
+        "-8",
+        "-11"
+      ]
+    },
+    {
+      "n_mod_15": 11,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "3"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "3",
+        "6",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "n_mod_15": 12,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-3"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "-3",
+        "-6",
+        "-9",
+        "-12"
+      ]
+    },
+    {
+      "n_mod_15": 13,
+      "remainder_alpha_k_plus_beta": [
+        "0",
+        "0"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "n_mod_15": 14,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "3"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "3",
+        "6",
+        "9",
+        "12"
+      ]
+    }
+  ],
+  "cell_sums": {
+    "alpha_sum": "0",
+    "beta_sum": "3"
+  },
+  "weights_nonnegative_all_integer_k": true,
+  "weights_at_least_k_squared_for_abs_k_ge_3": true
+}

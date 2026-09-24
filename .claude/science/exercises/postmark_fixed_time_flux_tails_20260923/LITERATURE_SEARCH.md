@@ -1,0 +1,13 @@
+# Literature search
+
+Search scope: primary or author-hosted material on unbounded Jacobi operators, convergence of unitary dynamics, and fast/averaged dynamics. These sources suggest theorem forms; none is imported as a result for this model.
+
+| Source | Relevant result | Match and limit |
+|---|---|---|
+| Bouten, Gohm, Gough & Nurdin, “A Trotter-Kato theorem for quantum Markov limits,” [EPJ Quantum Technology](https://link.springer.com/article/10.1140/epjqt/s40507-015-0024-2) | Core/graph convergence for self-adjoint generators yields strong uniform convergence of unitary groups on compact time intervals under its hypotheses | Our proposed generator itself contains C H2,infinity with C varying as S grows; this theorem is not directly applicable until a fixed-generator or interaction-picture limit is proved |
+| Gerald Teschl, *Jacobi Operators and Completely Integrable Nonlinear Lattices*, [author-hosted book](https://www.mat.univie.ac.at/~gerald/ftp/book-jac/) | Jacobi operators, self-adjoint extensions, Weyl theory and moment problems | Supplies the right operator-theory setting, not the needed domain classification for these 15-periodic quadratic weights |
+| Jaouad Sahbani, “On the spectrum of periodic perturbations of certain unbounded Jacobi operators,” [Opuscula Mathematica PDF](https://journals.bg.agh.edu.pl/OPUSCULA/2016.36.6/OpMath.2016.36.6.807.pdf) | Studies essential self-adjointness for specific unbounded periodic Jacobi coefficients, including critical quadratic growth | Coefficients and hypotheses differ; Carleman's sufficient hypothesis is not met because the off-diagonal weights grow quadratically and the reciprocal series converges. That fact alone does not decide essential self-adjointness. |
+| Arenz, Burgarth, Facchi & Hillier, “Dynamical Decoupling of Unbounded Hamiltonians,” [arXiv:1704.06143](https://arxiv.org/abs/1704.06143) | Shows that averaging claims for unbounded interactions need careful hypotheses and may fail | A warning and possible proof-template search; our fast term is a hopping generator, not a pulse decoupling setup |
+| “Dynamical Decoupling and Homogenization of continuous variable systems,” [arXiv:1605.05908](https://arxiv.org/abs/1605.05908) | Quadratic continuous-variable homogenization under a specialized setting | The model here is a discrete path with flux-dependent coefficients; no direct theorem transferred |
+
+The strongest immediate mathematical lead is a spectral or semiclassical analysis of the exact Jacobi polynomial `G_S=M_S^2-C M_S` from its localized initial vector. The macroscopic edge comparison is already explicit; what remains is a statewise propagation theorem. Any use of a source must restate and check its hypotheses for the actual operators and embeddings.

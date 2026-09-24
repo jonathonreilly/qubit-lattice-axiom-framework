@@ -1,0 +1,290 @@
+{
+  "status": "exact path-polynomial identities and a proved macroscopic interior edge limit",
+  "edge_polynomials": [
+    {
+      "residue": 0,
+      "x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "difference_slope": "0"
+    },
+    {
+      "residue": 1,
+      "x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "difference_slope": "6"
+    },
+    {
+      "residue": 2,
+      "x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "difference_slope": "0"
+    },
+    {
+      "residue": 3,
+      "x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "difference_slope": "0"
+    },
+    {
+      "residue": 4,
+      "x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "difference_slope": "6"
+    },
+    {
+      "residue": 5,
+      "x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "difference_slope": "0"
+    },
+    {
+      "residue": 6,
+      "x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "difference_slope": "6"
+    },
+    {
+      "residue": 7,
+      "x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "difference_slope": "0"
+    },
+    {
+      "residue": 8,
+      "x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "difference_slope": "0"
+    },
+    {
+      "residue": 9,
+      "x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "difference_slope": "6"
+    },
+    {
+      "residue": 10,
+      "x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "difference_slope": "0"
+    },
+    {
+      "residue": 11,
+      "x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "difference_slope": "6"
+    },
+    {
+      "residue": 12,
+      "x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "difference_slope": "0"
+    },
+    {
+      "residue": 13,
+      "x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "difference_slope": "0"
+    },
+    {
+      "residue": 14,
+      "x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "difference_slope": "6"
+    }
+  ],
+  "witness_return_polynomials": {
+    "0": [
+      [
+        "9",
+        "-3",
+        "0"
+      ],
+      [
+        "9",
+        "3",
+        "0"
+      ]
+    ],
+    "1": [
+      [
+        "9",
+        "9",
+        "2"
+      ],
+      [
+        "9",
+        "3",
+        "0"
+      ]
+    ]
+  },
+  "macroscopic_sequence": "S=15k, n=15k, so n/S=1 and both endpoints are physical for k>=1",
+  "full_generator_edge_difference_limit": "-196/625",
+  "general_residue_limit_formula": "gamma^2*xi^2/(1800*(1-xi^2/25)) - 8*xi^2/25 + 4*xi^4/625",
+  "gamma_rule": "gamma=6 for residues 1,4,6,9,11,14; gamma=0 otherwise",
+  "finite_sequence_samples": [
+    {
+      "k": 1,
+      "S": 15,
+      "n": 15,
+      "finite_minus_candidate_edge": "-191/480",
+      "decimal": -0.39791666666666664
+    },
+    {
+      "k": 2,
+      "S": 30,
+      "n": 30,
+      "finite_minus_candidate_edge": "-1024/2883",
+      "decimal": -0.35518557058619493
+    },
+    {
+      "k": 5,
+      "S": 75,
+      "n": 75,
+      "finite_minus_candidate_edge": "-89371/270750",
+      "decimal": -0.33008679593721146
+    },
+    {
+      "k": 10,
+      "S": 150,
+      "n": 150,
+      "finite_minus_candidate_edge": "-2751664/8550375",
+      "decimal": -0.32181793196204844
+    },
+    {
+      "k": 50,
+      "S": 750,
+      "n": 750,
+      "finite_minus_candidate_edge": "-333366304/1057501875",
+      "decimal": -0.31523944484732
+    },
+    {
+      "k": 100,
+      "S": 1500,
+      "n": 1500,
+      "finite_minus_candidate_edge": "-1328226302/4224376875",
+      "decimal": -0.31441946145015764
+    }
+  ],
+  "scope": "matrix-entry mismatch at macroscopic-flux states; it does not establish that the frozen n=0 state reaches these states at a declared time"
+}

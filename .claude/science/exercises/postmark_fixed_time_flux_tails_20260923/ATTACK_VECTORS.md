@@ -1,0 +1,9 @@
+# Ranked attack vectors
+
+1. **Two-mode propagation bound.** The vacancy observable is `1[n mod 3=0]=(I+V+V*)/3`, so only two nontrivial mod-3 Fourier expectations from the frozen initial vector need control. Seek a 3-step transfer representation or a uniform oscillatory-sum estimate for them; retain electric-tail, fourth-order, boundary and domain obligations. This is the most direct remaining path to the declared fixed-time claim.
+2. **State-dependent tail estimate for the Friedrichs evolution.** Bound probability outside the physical interval I_S uniformly on the declared fixed time range, including sensitivity to extension choice. This directly addresses the target but may fail because generator coefficients grow with S and n.
+3. **Interaction-picture / secular analysis.** Separate the fast C H2 component and derive the effective observable dynamics, tracking whether D and H4 averages exist for the normalizable initial vector. Standard fixed-generator Trotter-Kato cannot be invoked without resolving the C-dependent fast generator.
+4. **Certified finite-S interval propagation.** Use interval arithmetic or a rigorous Krylov residual and a mathematically justified infinite-tail enclosure. This could certify a finite-S difference; it alone would not establish an asymptotic nonzero gap.
+5. **Finite-time cube loop readout.** Treat two-mark loop-sensitive readout in a normalizable state including intervening motion. This is a distinct conditional bridge and the queue's fallback; it does not settle finite-spin electric tails.
+6. **Two-model axiom compatibility test.** Specify two full models satisfying the same minimal axioms but with distinct forced local formation outcomes, or prove equivalence. Current evidence does not furnish either witness.
+7. **Short-time weakened scaling.** Set t=O(C^-1) only as a separately labeled question. It cannot answer the frozen fixed-lab-time target and must not be presented as closure.

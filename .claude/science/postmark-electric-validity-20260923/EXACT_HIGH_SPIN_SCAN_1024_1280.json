@@ -1,0 +1,119 @@
+{
+  "status": "double-precision exact finite-matrix diagnostics only; no fixed-time limit or discrepancy theorem",
+  "source_revision": "b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953",
+  "dependency_pr": 8831,
+  "operator": "G_S=M_S^2-CM_S from supplied integer-spin one-vacancy Jacobi matrix",
+  "times": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "results": [
+    {
+      "S": 1024,
+      "C": 1049600,
+      "path_domain": [
+        -5120,
+        5116
+      ],
+      "dimension": 10237,
+      "observable": [
+        {
+          "time": 0.25,
+          "vacancy_B3": 0.32857056452887945,
+          "path_class_probabilities_mod_3": [
+            0.32857056452887945,
+            0.33054494976634236,
+            0.3408844857047782
+          ],
+          "vacancy_character_mod_3": [
+            -0.007144153206680798,
+            -0.008954300786027602
+          ],
+          "norm_squared": 1.0
+        },
+        {
+          "time": 0.5,
+          "vacancy_B3": 0.33116828339569593,
+          "path_class_probabilities_mod_3": [
+            0.33116828339569593,
+            0.3317504010155309,
+            0.3370813155887732
+          ],
+          "vacancy_character_mod_3": [
+            -0.00324757490645608,
+            -0.004616707445832535
+          ],
+          "norm_squared": 0.9999999999999996
+        },
+        {
+          "time": 1.0,
+          "vacancy_B3": 0.3259129039239715,
+          "path_class_probabilities_mod_3": [
+            0.3259129039239715,
+            0.33835780707926333,
+            0.335729288996765
+          ],
+          "vacancy_character_mod_3": [
+            -0.01113064411404266,
+            0.002276363433750317
+          ],
+          "norm_squared": 0.9999999999999993
+        }
+      ]
+    },
+    {
+      "S": 1280,
+      "C": 1639680,
+      "path_domain": [
+        -6400,
+        6396
+      ],
+      "dimension": 12797,
+      "observable": [
+        {
+          "time": 0.25,
+          "vacancy_B3": 0.3311386781692721,
+          "path_class_probabilities_mod_3": [
+            0.3311386781692721,
+            0.33538530204517064,
+            0.3334760197855584
+          ],
+          "vacancy_character_mod_3": [
+            -0.003291982746092381,
+            0.0016534869398191487
+          ],
+          "norm_squared": 1.000000000000002
+        },
+        {
+          "time": 0.5,
+          "vacancy_B3": 0.3314301505446151,
+          "path_class_probabilities_mod_3": [
+            0.33143015054461517,
+            0.32731107918731456,
+            0.34125877026807133
+          ],
+          "vacancy_character_mod_3": [
+            -0.0028547741830777518,
+            -0.012079054800072986
+          ],
+          "norm_squared": 1.0000000000000002
+        },
+        {
+          "time": 1.0,
+          "vacancy_B3": 0.33359118306269303,
+          "path_class_probabilities_mod_3": [
+            0.33359118306269303,
+            0.33185742155322573,
+            0.3345513953840823
+          ],
+          "vacancy_character_mod_3": [
+            0.00038677459403904657,
+            -0.0023330497746522627
+          ],
+          "norm_squared": 1.0000000000000004
+        }
+      ]
+    }
+  ]
+}

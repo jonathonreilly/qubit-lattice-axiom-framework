@@ -1,0 +1,222 @@
+{
+  "status": "double-precision diagnostics only; theorem is the strong-operator argument in SHORT_TIME_SCALING_NOTE_2026-09-23.md",
+  "spins": [
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "taus": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "results": [
+    {
+      "S": 8,
+      "C": 72,
+      "dimension": 77,
+      "p_second_derivative_over_C2": -3.570119896452522,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8930111406205643,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.012272416094759597,
+          "norm_squared": 0.9999999999999993
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.6230306296804208,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.03673767965182628,
+          "norm_squared": 0.9999999999999993
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.10757931473990776,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.024196618902114497,
+          "norm_squared": 0.9999999999999998
+        }
+      ]
+    },
+    {
+      "S": 12,
+      "C": 156,
+      "dimension": 117,
+      "p_second_derivative_over_C2": -3.7979852711826245,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8864891106620576,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.005750386136252894,
+          "norm_squared": 1.0000000000000022
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.6033332066981075,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.017040256669513032,
+          "norm_squared": 1.000000000000002
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.093228036677695,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.00984534083990174,
+          "norm_squared": 1.0000000000000022
+        }
+      ]
+    },
+    {
+      "S": 16,
+      "C": 272,
+      "dimension": 157,
+      "p_second_derivative_over_C2": -3.8833784028329137,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8840547354506607,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.0033160109248560055,
+          "norm_squared": 1.0
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.5960819189440958,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.009788968915501295,
+          "norm_squared": 1.0000000000000004
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.08874813168825049,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.005365435850457234,
+          "norm_squared": 1.0000000000000009
+        }
+      ]
+    },
+    {
+      "S": 24,
+      "C": 600,
+      "dimension": 237,
+      "p_second_derivative_over_C2": -3.9468776111728396,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8822479680498095,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.001509243524004833,
+          "norm_squared": 0.9999999999999998
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.5907356237068159,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.004442673678221376,
+          "norm_squared": 1.0
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.08572080404780158,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.0023381082100083217,
+          "norm_squared": 1.0000000000000004
+        }
+      ]
+    },
+    {
+      "S": 32,
+      "C": 1056,
+      "dimension": 317,
+      "p_second_derivative_over_C2": -3.969765092254456,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8815974655644365,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.0008587410386318162,
+          "norm_squared": 1.000000000000001
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.5888181817778647,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.002525231749270218,
+          "norm_squared": 1.0000000000000013
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.0846919396389172,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.0013092438011239466,
+          "norm_squared": 1.0000000000000016
+        }
+      ]
+    },
+    {
+      "S": 48,
+      "C": 2352,
+      "dimension": 477,
+      "p_second_derivative_over_C2": -3.986408293545102,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8811246774438465,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.00038595291804177645,
+          "norm_squared": 1.0000000000000009
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.5874270433143298,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.001134093285735327,
+          "norm_squared": 1.0000000000000009
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.08396425297142014,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.0005815571336268838,
+          "norm_squared": 1.0000000000000009
+        }
+      ]
+    },
+    {
+      "S": 64,
+      "C": 4160,
+      "dimension": 637,
+      "p_second_derivative_over_C2": -3.9923120834496713,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8809570155734413,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.00021829104763659846,
+          "norm_squared": 0.999999999999998
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.586934211578532,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.0006412615499374885,
+          "norm_squared": 0.9999999999999983
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.08371024371554034,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.00032754787774708083,
+          "norm_squared": 0.9999999999999989
+        }
+      ]
+    }
+  ]
+}

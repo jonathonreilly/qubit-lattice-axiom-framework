@@ -1,0 +1,54 @@
+{
+  "status": "independent finite-sector dense matrix check",
+  "construction": "full physical (q,E) basis and dense T block products; separately compared to local path assembly",
+  "results": [
+    {
+      "S": 2,
+      "full_sector_dimension": 99,
+      "P_dimension": 51,
+      "component_dimension": 17,
+      "H2_submatrix_max_error": 2.220446049250313e-16,
+      "H4_submatrix_max_error": 8.881784197001252e-16,
+      "H2_cross_component_max": 0.0,
+      "H4_cross_component_max": 0.0,
+      "H2_norm": 3.8604278231049376,
+      "H4_norm": 14.902902977402725
+    },
+    {
+      "S": 3,
+      "full_sector_dimension": 159,
+      "P_dimension": 81,
+      "component_dimension": 27,
+      "H2_submatrix_max_error": 0.0,
+      "H4_submatrix_max_error": 8.881784197001252e-16,
+      "H2_cross_component_max": 0.0,
+      "H4_cross_component_max": 0.0,
+      "H2_norm": 3.895301361474323,
+      "H4_norm": 15.173372696703728
+    },
+    {
+      "S": 4,
+      "full_sector_dimension": 219,
+      "P_dimension": 111,
+      "component_dimension": 37,
+      "H2_submatrix_max_error": 2.220446049250313e-16,
+      "H4_submatrix_max_error": 8.881784197001252e-16,
+      "H2_cross_component_max": 0.0,
+      "H4_cross_component_max": 0.0,
+      "H2_norm": 3.9167686518734395,
+      "H4_norm": 15.34107667229849
+    },
+    {
+      "S": 6,
+      "full_sector_dimension": 339,
+      "P_dimension": 171,
+      "component_dimension": 57,
+      "H2_submatrix_max_error": 2.220446049250313e-16,
+      "H4_submatrix_max_error": 8.881784197001252e-16,
+      "H2_cross_component_max": 0.0,
+      "H4_cross_component_max": 0.0,
+      "H2_norm": 3.9411705125561722,
+      "H4_norm": 15.532825009042233
+    }
+  ]
+}

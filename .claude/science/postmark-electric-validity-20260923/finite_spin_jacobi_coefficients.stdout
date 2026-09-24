@@ -1,0 +1,356 @@
+{
+  "status": "exact legal-hop path polynomials; all 15 residue classes checked at k=-1,0,1,2,3",
+  "coordinate": "n=15k+r; one P-state per integer n in this connected component",
+  "finite_spin_matrix": "M_S=-H2,S is tridiagonal on I_S=[-5S,5S-4]",
+  "entry_form": "M_S[n,n+1]=sqrt((1-x1/C)(1-x2/C)); M_S[n,n]=2-(y1+y2)/C, with C=S(S+1)",
+  "boundary": "an outward edge has a factor x_i=C and therefore vanishes",
+  "generator_identity": "G_S=C H2,S+H4,S=M_S^2-C M_S because the two-A-vacancy block is zero",
+  "rows": [
+    {
+      "residue": 0,
+      "edge_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "-3",
+        "0"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ]
+    },
+    {
+      "residue": 1,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ]
+    },
+    {
+      "residue": 2,
+      "edge_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ]
+    },
+    {
+      "residue": 3,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 4,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 5,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 6,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 7,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 8,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 9,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 10,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 11,
+      "edge_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ]
+    },
+    {
+      "residue": 12,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 13,
+      "edge_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 14,
+      "edge_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ]
+    }
+  ],
+  "scope": "integer S, supplied five-record one-vacancy sector; identities are conditional on the #8831 model"
+}

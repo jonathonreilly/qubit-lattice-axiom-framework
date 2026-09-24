@@ -1,0 +1,41 @@
+[
+  {
+    "S": 8,
+    "C": 72,
+    "rotor_path_cutoff": 192,
+    "candidate_H2_hermitian_defect": 0.0,
+    "candidate_D_hermitian_defect": 0.0,
+    "candidate_H4_hermitian_defect": 0.0,
+    "observable": [
+      0.3164783658156416,
+      0.37945208483544873,
+      0.29261211164880113
+    ]
+  },
+  {
+    "S": 8,
+    "C": 72,
+    "rotor_path_cutoff": 384,
+    "candidate_H2_hermitian_defect": 0.0,
+    "candidate_D_hermitian_defect": 0.0,
+    "candidate_H4_hermitian_defect": 0.0,
+    "observable": [
+      0.31647836581571104,
+      0.3794520848354024,
+      0.29261211164870654
+    ]
+  },
+  {
+    "S": 8,
+    "C": 72,
+    "rotor_path_cutoff": 768,
+    "candidate_H2_hermitian_defect": 0.0,
+    "candidate_D_hermitian_defect": 0.0,
+    "candidate_H4_hermitian_defect": 0.0,
+    "observable": [
+      0.31647836581566774,
+      0.37945208483560433,
+      0.29261211164901474
+    ]
+  }
+]

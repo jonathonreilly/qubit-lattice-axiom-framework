@@ -1,0 +1,46 @@
+# Route portfolio and source search
+
+## Selection record
+
+Ten campaign-selection reviews compared the current fixed-interaction, post-formation, rotor/readout, and axiom-selection fronts. The synthesis selected a simultaneous finite-spin post-mark validity test on #8831's actual six-site output. One reviewer ranked the cube finite-time loop readout first for tractability; the adversarial ranking and synthesis kept the finite-spin test first because it checks whether the post-mark fast motion and electric correction coexist on the same laboratory scale. The cube remains the next independent fallback. This is route selection, not ten independent proofs.
+
+Selection source: `/Users/jonreilly/Documents/Codex/next_campaign_review_2026-09-17/review_2026-09-23/SYNTHESIS_AND_SELECTION.md` and `worker_01_rotor_latest.md` through `worker_10_adversarial_rank.md`. The review files remain in that local directory; the scientific source identities and selection rationale are summarized here. Current source main during selection was `5efa36e7c357ae2a62ee586a5407f90982f6ded9`.
+
+## Distinct mathematical routes
+
+| Family | Object/formulation | Mechanism or invariant | Concrete result / exact terminal obligation | Status; strength against frozen target |
+|---|---|---|---|---|
+| Fixed-support path expansion | Ordered `P -> Pi1 -> P` legal-hop matrix elements | Taylor expand each normalized link amplitude and retain all returns/endpoints | Exact coefficient `D` on every fixed finite-support entry; needs statewise tail propagation | provisional; weaker |
+| Independent finite-sector reconstruction | Full physical charge/flux matrices | Construct hops from Gauss-admissible states, compare `H2,H4` to path formulas | Dense checks at `S=2,3,4,6`; not an independent analytic limit | provisional; weaker |
+| Weighted Jacobi form | 15-cell form for the formal correction | Gauge transform plus cell Poincare bound and zero-sum residue slopes | Semibounded form and a Friedrichs extension; uniqueness/finite-spin selection remain | provisional; weaker |
+| Macroscopic coefficient sequence | Exact complete-generator edge at `n/S -> xi`, fixed residue | Exact two-link radical identity plus `H4=M^2` | Interior sequence `S=n=15k` has difference limit `-196/625`; does not establish state propagation | candidate-complete for this coefficient claim; weaker |
+| Spectral residue propagation | Exact `G_S=M_S^2-CM_S`; candidate pentadiagonal operator | Spectral diagonalization and residue projector identity | Exact/candidate values through `S=384`; exact-only values through `S=1280`; prove/certify fixed-time observable comparison | active; weaker |
+| Shrinking-time strong limit | Zero-extended finite Jacobi matrices at `t=tau/C` | Uniform norm bound, strong coefficient convergence, bounded functional calculus | Exact Bessel vacancy curve; derive uniform long-`tau` control to reach fixed laboratory time | proved conditional for a separate shrinking-time target; supports but does not close |
+| Interaction-picture or secular limit | Fast `C H2` evolution with remaining terms | Degenerate spectral projection and controlled averaged generator | No verified common-space averaging theorem for the changing operators | unexplored; unknown/comparable |
+| Certified finite-spin dynamics | Finite matrices plus interval/Krylov residuals | Rigorous propagation residual and infinite-tail enclosure | Could certify a finite-spin discrepancy but not an asymptotic limit by itself | unexplored; weaker |
+| Cube normalizable readout | Two fixed loop-sensitive preparations on eight-vertex cube | Full degenerate spectral pinching and compact-time survival statistic | Strong fallback for a conditional observable bridge; it removes the finite-spin electric mechanism under test | unexplored here; weaker and separate |
+| Axiom model pair | Two full models of the same four axioms and registered primitives | Explicitly construct different forced outcomes or derive a contradiction | No pair or contradiction supplied by this conditional Hamiltonian | unexplored; target-equivalent only to the axiom question |
+
+## Novelty and open-PR search
+
+At selection main `5efa36e7c357ae2a62ee586a5407f90982f6ded9`, the focused source search was:
+
+```text
+git grep -n -iE 'post.?mark.*(finite|spin|flux|Jacobi)|finite.?spin.*(post.?mark|macroscopic|vacancy)|macroscopic.?flux|H2,infinity.*D|D_RESIDUE_POLYNOMIALS' origin/main -- 'docs/**/*.md' '.claude/science/**/*.md'
+```
+
+It returned no matching note on `origin/main` at that revision. The focused open-PR comparison found #8832's eight-site prepared flat-sector theorem; #8839's eight-site actual-output field limits with a different ring/observable; and #8873's size-uniform one-link moment bound for a supplied compensated rotor target, which does not provide microscopic spin-uniform tails. None supplies the present six-site Jacobi coefficient or fixed-time residue theorem. PR #8831 is the exact imported model/output and remains an open dependency.
+
+## Reassessment after main advanced
+
+During execution, `origin/main` advanced to `6bf62ae06ccbea85255e791d7e57b2b800ef4710`, landing fourteen bounded notes and paired runners about moving-record transit, capture, inertial-gas closures, and self-consistent odds on unformed sites. I checked the full claim-scope/status and result-up-front surfaces for those additions, and read the odds-field note's exact finite claims and the walk-relaxation note's stated bounds. All fourteen source-note machine statuses are `bounded-support`; each imports a supplied record-motion, capture, pair-weight, or unformed-odds reading, and none changes the minimal-axiom file or primitive registry. The odds-field note proves conditional finite-window/mode results, including a tuned massless surface; it explicitly leaves the nonlinear field there, infinite-volume behavior, and any force identification open. The walk-relaxation note bounds setup time for its supplied discrete walk, not a physical clock. These are live conditional alternatives for a later campaign, but they neither modify the #8831 six-site Hamiltonian nor provide its fixed-spin output propagation. The ten-review choice therefore remains the best next step for the stated post-mark scale wall.
+
+The same focused `git grep` query was rerun at `6bf62ae06ccbea85255e791d7e57b2b800ef4710`; it found no matching six-site post-mark/Jacobi coefficient note. PR #8672 remains OPEN at `fe6dc2c5ef061fa1e0051063d49178f23b872c13`, with #8831 OPEN above it. Both stay explicit stack dependencies.
+
+After that refresh, `origin/main` advanced to `c3f8c47a58bfba48c1d9e030d6d79ecda00a294e`, adding fifteen bounded theorem notes and their runners on local-rate covariance, static field sources, clocked walks, frames/tensors, and stationary formation replacements. I screened the full scope/status and result-up-front sections for all fifteen notes. They are conditional on supplied mathematical models, retain physical and axiom bridges as open, and do not derive #8831's six-site spin Hamiltonian, first-mark state, or Jacobi propagation. The minimal-axiom document, primitive registry, and science workflow did not change in this advance. A focused search at this main revision for post-mark finite-spin/Jacobi coefficient work again found no matching result. The new notes may support later independent campaigns but do not change the present route ranking.
+
+PR #8672 remains OPEN at `fe6dc2c5ef061fa1e0051063d49178f23b872c13`, with #8831 OPEN at `b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953` above it. Their source branch remains the intended base of this campaign's checkpoint; published parent refs are not being rewritten while those dependencies remain open.
+
+A further current-main refresh at `7445cc7a50e2c7631d70dc8d9a065d0653ffa6ef` added thirteen bounded notes on signed sources, staggered spectra, reach-two currents, and finite-particle/exclusion models. I screened all thirteen claim scopes and statuses and read the complete theorem scope and limitations for the supplied staggered-spectrum and filled-sea results. They explicitly stop short of deriving the amplitude dynamics, filling/composition rule, or an eight-species selection from the axioms. They provide possible future model-comparison inputs, but no new premise for the current six-site Jacobi propagation. The focused post-mark/Jacobi query remained empty, and the four-axiom text, primitive registry, and science workflow are unchanged.
+
+Search scope was the two named main revisions, these source terms, the fourteen intervening note additions at claim-summary level, and the four directly relevant open PRs. This is not a repository-wide novelty proof or a full audit of the new moving-record results.

@@ -1,0 +1,239 @@
+{
+  "status": "floating-point state-tail diagnostic; chosen after exact macro-edge mismatch; not a certified limit",
+  "initial_state": "actual supplied output at n=0",
+  "operator": "exact finite-spin C H2,S + H4,S",
+  "results": [
+    {
+      "S": 8,
+      "C": 72,
+      "dimension": 77,
+      "physical_interval": [
+        -40,
+        36
+      ],
+      "postselected_diagnostic": "positive path-coordinate projector 1[n>=S]; also 1[n>=S/2]",
+      "times": [
+        {
+          "time": 0.25,
+          "vacancy_B3": 0.30288136581153924,
+          "prob_n_ge_S": 0.3806686516870443,
+          "prob_n_ge_S_over_2": 0.4314739605284697,
+          "norm_squared": 1.0000000000000735
+        },
+        {
+          "time": 0.5,
+          "vacancy_B3": 0.34021135440626626,
+          "prob_n_ge_S": 0.27966731372328507,
+          "prob_n_ge_S_over_2": 0.3262326130287677,
+          "norm_squared": 1.0000000000000087
+        },
+        {
+          "time": 1.0,
+          "vacancy_B3": 0.44401026741618643,
+          "prob_n_ge_S": 0.3138009583969638,
+          "prob_n_ge_S_over_2": 0.40592752523016645,
+          "norm_squared": 1.0000000000001124
+        }
+      ]
+    },
+    {
+      "S": 12,
+      "C": 156,
+      "dimension": 117,
+      "physical_interval": [
+        -60,
+        56
+      ],
+      "postselected_diagnostic": "positive path-coordinate projector 1[n>=S]; also 1[n>=S/2]",
+      "times": [
+        {
+          "time": 0.25,
+          "vacancy_B3": 0.3912129099002046,
+          "prob_n_ge_S": 0.36191013617315937,
+          "prob_n_ge_S_over_2": 0.41786832055664225,
+          "norm_squared": 1.0000000000002407
+        },
+        {
+          "time": 0.5,
+          "vacancy_B3": 0.35238370027624744,
+          "prob_n_ge_S": 0.35859036732163724,
+          "prob_n_ge_S_over_2": 0.42991997210195004,
+          "norm_squared": 1.000000000000495
+        },
+        {
+          "time": 1.0,
+          "vacancy_B3": 0.2697607333819133,
+          "prob_n_ge_S": 0.2936382337347759,
+          "prob_n_ge_S_over_2": 0.3411556553031234,
+          "norm_squared": 1.0000000000010034
+        }
+      ]
+    },
+    {
+      "S": 16,
+      "C": 272,
+      "dimension": 157,
+      "physical_interval": [
+        -80,
+        76
+      ],
+      "postselected_diagnostic": "positive path-coordinate projector 1[n>=S]; also 1[n>=S/2]",
+      "times": [
+        {
+          "time": 0.25,
+          "vacancy_B3": 0.30100276160051004,
+          "prob_n_ge_S": 0.28600674459109704,
+          "prob_n_ge_S_over_2": 0.3268519418968957,
+          "norm_squared": 1.0000000000002671
+        },
+        {
+          "time": 0.5,
+          "vacancy_B3": 0.4035990600986252,
+          "prob_n_ge_S": 0.30303718428629617,
+          "prob_n_ge_S_over_2": 0.35409581746389235,
+          "norm_squared": 1.0000000000004943
+        },
+        {
+          "time": 1.0,
+          "vacancy_B3": 0.3392288425389507,
+          "prob_n_ge_S": 0.34983258325439204,
+          "prob_n_ge_S_over_2": 0.38062113497638556,
+          "norm_squared": 1.0000000000005758
+        }
+      ]
+    },
+    {
+      "S": 24,
+      "C": 600,
+      "dimension": 237,
+      "physical_interval": [
+        -120,
+        116
+      ],
+      "postselected_diagnostic": "positive path-coordinate projector 1[n>=S]; also 1[n>=S/2]",
+      "times": [
+        {
+          "time": 0.25,
+          "vacancy_B3": 0.2960663763907474,
+          "prob_n_ge_S": 0.3748747130969139,
+          "prob_n_ge_S_over_2": 0.43346750562381753,
+          "norm_squared": 1.0000000000012639
+        },
+        {
+          "time": 0.5,
+          "vacancy_B3": 0.36033467282517473,
+          "prob_n_ge_S": 0.31797416416129987,
+          "prob_n_ge_S_over_2": 0.355855081039834,
+          "norm_squared": 1.0000000000032743
+        },
+        {
+          "time": 1.0,
+          "vacancy_B3": 0.3583245335982522,
+          "prob_n_ge_S": 0.35821156276527,
+          "prob_n_ge_S_over_2": 0.40669903262957285,
+          "norm_squared": 1.0000000000071085
+        }
+      ]
+    },
+    {
+      "S": 32,
+      "C": 1056,
+      "dimension": 317,
+      "physical_interval": [
+        -160,
+        156
+      ],
+      "postselected_diagnostic": "positive path-coordinate projector 1[n>=S]; also 1[n>=S/2]",
+      "times": [
+        {
+          "time": 0.25,
+          "vacancy_B3": 0.33061495819728937,
+          "prob_n_ge_S": 0.31072093877083906,
+          "prob_n_ge_S_over_2": 0.3542718245970085,
+          "norm_squared": 0.9999999999988913
+        },
+        {
+          "time": 0.5,
+          "vacancy_B3": 0.3141095553469124,
+          "prob_n_ge_S": 0.33595083211399457,
+          "prob_n_ge_S_over_2": 0.3779905239957594,
+          "norm_squared": 0.9999999999977128
+        },
+        {
+          "time": 1.0,
+          "vacancy_B3": 0.3465597963898085,
+          "prob_n_ge_S": 0.31723693079217896,
+          "prob_n_ge_S_over_2": 0.37266213745342164,
+          "norm_squared": 0.9999999999947944
+        }
+      ]
+    },
+    {
+      "S": 48,
+      "C": 2352,
+      "dimension": 477,
+      "physical_interval": [
+        -240,
+        236
+      ],
+      "postselected_diagnostic": "positive path-coordinate projector 1[n>=S]; also 1[n>=S/2]",
+      "times": [
+        {
+          "time": 0.25,
+          "vacancy_B3": 0.34152193892021115,
+          "prob_n_ge_S": 0.32137195008545333,
+          "prob_n_ge_S_over_2": 0.36713442347555725,
+          "norm_squared": 0.9999999999976972
+        },
+        {
+          "time": 0.5,
+          "vacancy_B3": 0.32384037266258064,
+          "prob_n_ge_S": 0.3293770744188362,
+          "prob_n_ge_S_over_2": 0.3872839577578197,
+          "norm_squared": 0.9999999999953524
+        },
+        {
+          "time": 1.0,
+          "vacancy_B3": 0.31311946344816893,
+          "prob_n_ge_S": 0.32534056762320457,
+          "prob_n_ge_S_over_2": 0.3634831435463027,
+          "norm_squared": 0.9999999999908573
+        }
+      ]
+    },
+    {
+      "S": 64,
+      "C": 4160,
+      "dimension": 637,
+      "physical_interval": [
+        -320,
+        316
+      ],
+      "postselected_diagnostic": "positive path-coordinate projector 1[n>=S]; also 1[n>=S/2]",
+      "times": [
+        {
+          "time": 0.25,
+          "vacancy_B3": 0.332376912084993,
+          "prob_n_ge_S": 0.3345637434852047,
+          "prob_n_ge_S_over_2": 0.37544920323358805,
+          "norm_squared": 1.0000000000029658
+        },
+        {
+          "time": 0.5,
+          "vacancy_B3": 0.3584826854530861,
+          "prob_n_ge_S": 0.33338162468635174,
+          "prob_n_ge_S_over_2": 0.38362570823246517,
+          "norm_squared": 1.0000000000132023
+        },
+        {
+          "time": 1.0,
+          "vacancy_B3": 0.342161379303728,
+          "prob_n_ge_S": 0.3444726895841853,
+          "prob_n_ge_S_over_2": 0.39805353226021434,
+          "norm_squared": 0.9999999999587185
+        }
+      ]
+    }
+  ],
+  "interpretation": "tests actual finite-spin amplitude near the n/S=1 witness region; cannot alone settle the limit or the rotor comparison"
+}

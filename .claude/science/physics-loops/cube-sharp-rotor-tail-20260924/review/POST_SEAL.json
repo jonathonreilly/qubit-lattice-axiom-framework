@@ -1,0 +1,28 @@
+{
+  "sealed_utc": "2026-09-24T12:14:06.541181+00:00",
+  "stage": "POST-after-released-source-and-publication-result-comparison",
+  "result": "PASS within the bounded independent scientific scope recorded in POST.md; no audit verdict or retention status.",
+  "pre_seal_sha256": "e39379df569d84a86374aad4a1a2bf3ee0857fca52dd1c125907221d3fab226b",
+  "files": {
+    "POST.md": "241f5a0b701d6704d301c2d2f831d362f8404c9827d1ea56f4c10d94b5db8284",
+    "POST_INPUTS.json": "cbd413f4ddf7da6f25c9c124e4d95fdacac57e4814ba81f6f7edff0726d46cc7",
+    "POST_REFERENCE_PINS.json": "673091ab46c720d227ed6c68fabec4f90bafb67c4e81213f92d003ae67ae8651",
+    "verify_released_laurent.py": "31c50f07dc7b5f007cf4de545a8402ad4f8de304d518f49029be6e9664b833a8",
+    "POST_VERIFIER.log": "be985bcdd4652ca1ba87882d36417d96f5cb4b11438ab2a611e2228f9f0fa898",
+    "INDEPENDENT_PRIMITIVE_Q.json": "e0b8b5216272ee21bb1473f26a692fc733f28d6617b2e36c11f7ff9a9528a9dc",
+    "INDEPENDENT_IDENTITY_RESULTS.json": "063f4d9a1e82037ba2587c685c876cd52cbd371b092153a5ee7066d6bfa2eb0b",
+    "INDEPENDENT_SIGN_RANKS.json": "3e0dcab2221e49d22c4735af3328dd63a3bdfd7004967eb23e42bfe1dfbd7c3c",
+    "POST_CHECK_RESULTS.json": "21b1188a23b78efe3e397d23c5922d2d0522dd8afef45f54c6081eb9e65d8ed9",
+    "compare_publication_result.py": "254ad2cbfeeb6f152fe6871301c77205259258443aaa499696f0062e8e48493d",
+    "PUBLICATION_COMPARISON.json": "b94168ceea55a0c0c9eb6dfc27c0eb50f0f07844ba9615b35e208b083ccbb571",
+    "PUBLICATION_COMPARISON.log": "b94168ceea55a0c0c9eb6dfc27c0eb50f0f07844ba9615b35e208b083ccbb571",
+    "released_sources/INCIDENCE_PROBE.json": "e37436d844449d4ae58223ec2ff608bd4375e8fdca70d75f9eda50d882c96aa3",
+    "released_sources/MODULE_EXACT_CERTIFICATES_ALL.json": "87421a8bd223addf919cbaa43b224961981bce7c716844a1a7266466ca6f07b2",
+    "released_sources/RATIONAL_LAURENT_CERTIFICATES.json": "efed9ff85c39626b132bb897a743bd77d2117757249a9becfcb828f51358cdec",
+    "released_sources/SECOND_PUBLICATION_CACHE_EXECUTION.json": "d997161013d44532da390c40c6200dbe39112904065351b94f12f53e0d4cd2a1",
+    "released_sources/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967",
+    "released_sources/SHARP_TAIL_PERSONAL_DERIVATION.md": "f9999677697678620dff4b32a9d4f560d182b53eb973d26192324d892604e0f8",
+    "released_sources/SHARP_TAIL_RESULTS.json": "afdf975511fd04331d91b51829e2d80078b2ea200b60a9cdd11be6f44742b87b",
+    "released_sources/sharp_actual_rotor_cube_energy_tail_2026_09_24.py": "3374ba47eabe22030e2efabab7111187fe78f899e761cd296b1f6b88d617ca7f"
+  }
+}

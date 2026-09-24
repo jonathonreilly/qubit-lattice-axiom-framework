@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-09-24T11:53:09.615887+00:00",
+  "head": "21ba8460d67c896a54cab5922e7ffde05f43786a",
+  "main": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "execution_instructions": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "live_main_read_only": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8\trefs/heads/main",
+  "sources": [
+    {
+      "path": "docs/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "072d6024923f05c00f5fd1e80e1dc3952a77c773b48886bd59b7be97adc28133",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/sources/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "working_copy_equal": true
+    },
+    {
+      "path": "docs/ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "7f6f2dbb4444f69dcc29c29b812e517074ebde65c4725317ccf2f0f2f4ea8d28",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/sources/ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "working_copy_equal": true
+    },
+    {
+      "path": "AGENTS.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/sources/AGENTS.md",
+      "working_copy_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/sources/SCIENCE_WORKFLOW.md",
+      "working_copy_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/sources/SKILL_FRESHNESS_CHECK.md",
+      "working_copy_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/workhorse/SKILL.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/sources/SKILL.md",
+      "working_copy_equal": true
+    },
+    {
+      "path": "AGENTS.md",
+      "revision": "eb1f1ca8338848cf2046582e13aef372d8540937",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/sources/AI_EXECUTION_AGENTS.md"
+    }
+  ],
+  "prior_exposure": "Only assigned already-main science notes and applicable instructions; no campaign checkpoint, rotor-tail-personal directory, or new root derivation read.",
+  "first_observed_head": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "head_at_seal": "21ba8460d67c896a54cab5922e7ffde05f43786a",
+  "science_working_bytes_reverified_before_seal": true,
+  "local_skill_reads": {
+    "/Users/jonreilly/.codex/skills/workhorse/SKILL.md": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+    "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+  },
+  "local_skill_scope": "Workhorse applied after verifying current-main source; physics-claim-reviewer inspected for applicability but its candidate-review workflow not invoked before release."
+}

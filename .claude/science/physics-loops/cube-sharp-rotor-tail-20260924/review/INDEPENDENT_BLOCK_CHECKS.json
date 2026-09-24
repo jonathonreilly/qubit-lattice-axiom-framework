@@ -1,0 +1,315 @@
+{
+  "source_snapshots_verified": true,
+  "exact_checks": {
+    "B_is_Hermitian": true,
+    "declared_Q_bound_by_Frobenius": true,
+    "declared_B_bound_by_Frobenius": true,
+    "differential_identity_exact": true,
+    "H_ge_three_quarters_I_exact": true,
+    "H_le_five_quarters_I_exact": true,
+    "dissipation_inequality_exact": true,
+    "wrong_cross_sign_rejected_exact": true,
+    "defective_generator_exact": true,
+    "scalar_slow_branch_through_fourth_order_exact": true
+  },
+  "numerical_checks": {
+    "cases": [
+      {
+        "dark_dim": 1,
+        "bright_dim": 1,
+        "singular_values": [
+          0.0
+        ],
+        "delta": 0.1,
+        "kappa": 3.0,
+        "residual_max_eigenvalue": 0.0,
+        "metric_min": 1.0,
+        "metric_max": 1.0,
+        "largest_ratio_to_claimed_bound": 0.6,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 0.0
+      },
+      {
+        "dark_dim": 1,
+        "bright_dim": 1,
+        "singular_values": [
+          0.0
+        ],
+        "delta": 1.0,
+        "kappa": 1.0,
+        "residual_max_eigenvalue": 0.0,
+        "metric_min": 1.0,
+        "metric_max": 1.0,
+        "largest_ratio_to_claimed_bound": 0.6,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 0.0
+      },
+      {
+        "dark_dim": 1,
+        "bright_dim": 1,
+        "singular_values": [
+          0.0
+        ],
+        "delta": 7.0,
+        "kappa": 0.2,
+        "residual_max_eigenvalue": 0.0,
+        "metric_min": 1.0,
+        "metric_max": 1.0,
+        "largest_ratio_to_claimed_bound": 0.6,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 0.0
+      },
+      {
+        "dark_dim": 1,
+        "bright_dim": 1,
+        "singular_values": [
+          0.5
+        ],
+        "delta": 0.1,
+        "kappa": 3.0,
+        "residual_max_eigenvalue": -0.0002081573944197784,
+        "metric_min": 0.991680051292217,
+        "metric_max": 1.0083199487077834,
+        "largest_ratio_to_claimed_bound": 0.6000411714400986,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 0.30000000000000004
+      },
+      {
+        "dark_dim": 1,
+        "bright_dim": 1,
+        "singular_values": [
+          0.5
+        ],
+        "delta": 1.0,
+        "kappa": 1.0,
+        "residual_max_eigenvalue": -0.03359142994622085,
+        "metric_min": 0.8978701871374899,
+        "metric_max": 1.10212981286251,
+        "largest_ratio_to_claimed_bound": 0.6067233777689519,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 1.0000000000000002
+      },
+      {
+        "dark_dim": 1,
+        "bright_dim": 1,
+        "singular_values": [
+          0.5
+        ],
+        "delta": 7.0,
+        "kappa": 0.2,
+        "residual_max_eigenvalue": -0.01373497755254083,
+        "metric_min": 0.995069407784936,
+        "metric_max": 1.0049305922150644,
+        "largest_ratio_to_claimed_bound": 0.6000825946666161,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 1.3999999999999997
+      },
+      {
+        "dark_dim": 2,
+        "bright_dim": 3,
+        "singular_values": [
+          0.0,
+          1.0
+        ],
+        "delta": 0.1,
+        "kappa": 3.0,
+        "residual_max_eigenvalue": -2.228568133084774e-16,
+        "metric_min": 0.9834558250037153,
+        "metric_max": 1.0165441749962847,
+        "largest_ratio_to_claimed_bound": 0.6000000000000015,
+        "kernel_reduction_residual": 1.5259620269445017e-17,
+        "nonnormal_commutator_norm": 0.6
+      },
+      {
+        "dark_dim": 2,
+        "bright_dim": 3,
+        "singular_values": [
+          0.0,
+          1.0
+        ],
+        "delta": 1.0,
+        "kappa": 1.0,
+        "residual_max_eigenvalue": 9.843214473992898e-17,
+        "metric_min": 0.9347558623158053,
+        "metric_max": 1.0652441376841943,
+        "largest_ratio_to_claimed_bound": 0.6000000000000005,
+        "kernel_reduction_residual": 1.3374636837898776e-16,
+        "nonnormal_commutator_norm": 2.0
+      },
+      {
+        "dark_dim": 2,
+        "bright_dim": 3,
+        "singular_values": [
+          0.0,
+          1.0
+        ],
+        "delta": 7.0,
+        "kappa": 0.2,
+        "residual_max_eigenvalue": 1.2241511988991335e-17,
+        "metric_min": 0.9978563947699758,
+        "metric_max": 1.0021436052300239,
+        "largest_ratio_to_claimed_bound": 0.6000000000000021,
+        "kernel_reduction_residual": 7.372334247679192e-16,
+        "nonnormal_commutator_norm": 2.800000000000001
+      },
+      {
+        "dark_dim": 2,
+        "bright_dim": 3,
+        "singular_values": [
+          1e-05,
+          1.0
+        ],
+        "delta": 0.1,
+        "kappa": 3.0,
+        "residual_max_eigenvalue": -8.29639919733435e-14,
+        "metric_min": 0.9834395192434691,
+        "metric_max": 1.0165604807565312,
+        "largest_ratio_to_claimed_bound": 0.6000000000000162,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 0.6000000000000001
+      },
+      {
+        "dark_dim": 2,
+        "bright_dim": 3,
+        "singular_values": [
+          1e-05,
+          1.0
+        ],
+        "delta": 1.0,
+        "kappa": 1.0,
+        "residual_max_eigenvalue": -4.3181089598828186e-12,
+        "metric_min": 0.9261535463351831,
+        "metric_max": 1.073846453664817,
+        "largest_ratio_to_claimed_bound": 0.600000000000799,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 2.0
+      },
+      {
+        "dark_dim": 2,
+        "bright_dim": 3,
+        "singular_values": [
+          1e-05,
+          1.0
+        ],
+        "delta": 7.0,
+        "kappa": 0.2,
+        "residual_max_eigenvalue": -1.0185245146098552e-12,
+        "metric_min": 0.997524835502964,
+        "metric_max": 1.0024751644970353,
+        "largest_ratio_to_claimed_bound": 0.6000000000000083,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 2.800000000000001
+      },
+      {
+        "dark_dim": 3,
+        "bright_dim": 5,
+        "singular_values": [
+          0.1,
+          0.7,
+          1.0
+        ],
+        "delta": 0.1,
+        "kappa": 3.0,
+        "residual_max_eigenvalue": -8.296183377275905e-06,
+        "metric_min": 0.9835430603287495,
+        "metric_max": 1.0164569396712502,
+        "largest_ratio_to_claimed_bound": 0.6000016205282775,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 0.6000000000000001
+      },
+      {
+        "dark_dim": 3,
+        "bright_dim": 5,
+        "singular_values": [
+          0.1,
+          0.7,
+          1.0
+        ],
+        "delta": 1.0,
+        "kappa": 1.0,
+        "residual_max_eigenvalue": -0.00030675572587282357,
+        "metric_min": 0.9599024399724667,
+        "metric_max": 1.0400975600275335,
+        "largest_ratio_to_claimed_bound": 0.6000312985434063,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 2.0
+      },
+      {
+        "dark_dim": 3,
+        "bright_dim": 5,
+        "singular_values": [
+          0.1,
+          0.7,
+          1.0
+        ],
+        "delta": 7.0,
+        "kappa": 0.2,
+        "residual_max_eigenvalue": -6.848391366275553e-05,
+        "metric_min": 0.9987545586418697,
+        "metric_max": 1.00124544135813,
+        "largest_ratio_to_claimed_bound": 0.6000004086747702,
+        "kernel_reduction_residual": 0.0,
+        "nonnormal_commutator_norm": 2.7999999999999994
+      },
+      {
+        "dark_dim": 5,
+        "bright_dim": 8,
+        "singular_values": [
+          0.0,
+          0.0,
+          0.01,
+          0.1,
+          1.0
+        ],
+        "delta": 0.1,
+        "kappa": 3.0,
+        "residual_max_eigenvalue": -3.1698115325951277e-17,
+        "metric_min": 0.9837700972554628,
+        "metric_max": 1.0162299027445376,
+        "largest_ratio_to_claimed_bound": 0.6000000000000029,
+        "kernel_reduction_residual": 1.1236722596080065e-17,
+        "nonnormal_commutator_norm": 0.6000000000000002
+      },
+      {
+        "dark_dim": 5,
+        "bright_dim": 8,
+        "singular_values": [
+          0.0,
+          0.0,
+          0.01,
+          0.1,
+          1.0
+        ],
+        "delta": 1.0,
+        "kappa": 1.0,
+        "residual_max_eigenvalue": -1.620631247488107e-17,
+        "metric_min": 0.9801744301005844,
+        "metric_max": 1.0198255698994148,
+        "largest_ratio_to_claimed_bound": 0.6000000000000005,
+        "kernel_reduction_residual": 1.2216714129368124e-16,
+        "nonnormal_commutator_norm": 2.0000000000000004
+      },
+      {
+        "dark_dim": 5,
+        "bright_dim": 8,
+        "singular_values": [
+          0.0,
+          0.0,
+          0.01,
+          0.1,
+          1.0
+        ],
+        "delta": 7.0,
+        "kappa": 0.2,
+        "residual_max_eigenvalue": -1.6412653362305268e-18,
+        "metric_min": 0.999410187499014,
+        "metric_max": 1.0005898125009864,
+        "largest_ratio_to_claimed_bound": 0.6000000000000367,
+        "kernel_reduction_residual": 6.917077261113511e-16,
+        "nonnormal_commutator_norm": 2.8000000000000003
+      }
+    ],
+    "wrong_coupling_sign_positive_metric_derivative": 0.48062484748656975,
+    "scope": "Finite sanity checks, not proof of all matrices or of the physical phase geometry."
+  }
+}

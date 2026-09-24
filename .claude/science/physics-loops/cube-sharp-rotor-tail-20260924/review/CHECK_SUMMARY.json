@@ -1,0 +1,10 @@
+{
+  "all_exact_checks": true,
+  "numerical_cases": 18,
+  "max_dissipation_residual_eigenvalue": 9.843214473992898e-17,
+  "min_metric_eigenvalue": 0.8978701871374899,
+  "max_metric_eigenvalue": 1.10212981286251,
+  "max_exponential_bound_ratio": 0.6067233777689519,
+  "max_kernel_reduction_residual": 7.372334247679192e-16,
+  "max_nonnormality_commutator": 2.800000000000001
+}

@@ -1,0 +1,13 @@
+{
+  "sealed_utc": "2026-09-24T11:59:31.605370+00:00",
+  "stage": "PRE-before-root-release",
+  "independence": "Separate-context inherited-model proof derivation; assigned main sources only. No root candidate/certificate or excluded campaign paths read.",
+  "files": {
+    "PRE.md": "baaad7bad64e16616ed028120280cd191355c69f3807bee9224a3f0027e3fd45",
+    "SOURCE_PINS.json": "2db213e32300eb76bdfbe51e3632c35d2a01f2eb71fcbd33f6ba247ce80307d7",
+    "independent_block_checks.py": "b266a85b93549564c4c94e0d24062e768d94a9786101d6ad7d0a78029cef0bcc",
+    "INDEPENDENT_BLOCK_CHECKS.json": "e1015350a01730c7d58af237f24578d3495c1ae80bff66ba7c44981bf6f8f09d",
+    "INDEPENDENT_BLOCK_CHECKS.log": "43075b7315afa9124cd991785ab1bd8bfc5d6f2e3d56d71a875cd36e4c2351e7",
+    "CHECK_SUMMARY.json": "a298c66008f8a62d14c12c97bb4e1b92343283d0035626b109e7e6ef365eaf80"
+  }
+}

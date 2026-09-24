@@ -1,0 +1,17 @@
+{
+  "source_snapshots_verified": true,
+  "exact_checks": {
+    "B_is_Hermitian": true,
+    "declared_Q_bound_by_Frobenius": true,
+    "declared_B_bound_by_Frobenius": true,
+    "differential_identity_exact": true,
+    "H_ge_three_quarters_I_exact": true,
+    "H_le_five_quarters_I_exact": true,
+    "dissipation_inequality_exact": true,
+    "wrong_cross_sign_rejected_exact": true,
+    "defective_generator_exact": true,
+    "scalar_slow_branch_through_fourth_order_exact": true
+  },
+  "numerical_cases": 18,
+  "wrong_coupling_sign_positive_metric_derivative": 0.48062484748656975
+}

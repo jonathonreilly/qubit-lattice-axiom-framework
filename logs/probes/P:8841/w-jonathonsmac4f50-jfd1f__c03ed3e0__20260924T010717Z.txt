@@ -1,0 +1,3 @@
+PR #8841: Construct local field dynamics through actual record formation
+branch codex/mobile-record-local-compensation-20260923 (base codex/mobile-record-actual-field-limits-20260923)
+runners in the PR: 0

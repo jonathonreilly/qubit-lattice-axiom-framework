@@ -1,0 +1,30 @@
+{
+ "task": "P:8841",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-local-compensation-2026092",
+ "worker": "w-jonathonsmac4f50-jfd1f",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8841",
+ "pr": 8841,
+ "branch": "codex/mobile-record-local-compensation-20260923",
+ "git_sha": "c03ed3e0",
+ "started_utc": "20260924T010717Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "PR re-execution of #8841's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "1fb15784bef02c7c884ddef27c8f6ae898fdee50305ef8e7eaa61c057cd2065a",
+ "stdout_tail": "PR #8841: Construct local field dynamics through actual record formation\nbranch codex/mobile-record-local-compensation-20260923 (base codex/mobile-record-actual-field-limits-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jfd1f",
+  "at_utc": "20260924T010721Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

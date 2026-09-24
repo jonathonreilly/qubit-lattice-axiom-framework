@@ -154,7 +154,7 @@ limit beyond L = 24 is claimed.
   7 of 7 are caught. A second pair of seeds (control) passes all seven
   checks of this form.
 - **Budget:** 7 checks, stdout 1667 characters (ceiling 6000), about
-  330 s unloaded and up to 660 s under load (ceiling 900 s), peak about
+  330 s unloaded and up to 660 s under load (declared audit timeout 1800 s), peak about
   385 MB.
 
 ## Verification

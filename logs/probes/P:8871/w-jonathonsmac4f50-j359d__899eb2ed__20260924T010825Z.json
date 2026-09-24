@@ -1,0 +1,36 @@
+{
+ "task": "P:8871",
+ "type": "pr-reexecution",
+ "lane": "ice-rule-fixes-one-stiffness-20260923",
+ "worker": "w-jonathonsmac4f50-j359d",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8871",
+ "pr": 8871,
+ "branch": "claude/ice-rule-fixes-one-stiffness-20260923",
+ "git_sha": "899eb2ed",
+ "started_utc": "20260924T010825Z",
+ "elapsed_s": 60.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #8871's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "010ed82d7c5f00e949718c17a6d379a0100ebe98b424b01b49abaa45fa0ed0eb",
+ "stdout_tail": "PR #8871: docs(ice): the unit link field fixes one stiffness for flux and correlations\nbranch claude/ice-rule-fixes-one-stiffness-20260923 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.py: rc=0 PASS=7 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j359d",
+  "at_utc": "20260924T010925Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+PR #8871: docs(ice): the unit link field fixes one stiffness for flux and correlations
+branch claude/ice-rule-fixes-one-stiffness-20260923 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.py: rc=0 PASS=7 FAIL=0

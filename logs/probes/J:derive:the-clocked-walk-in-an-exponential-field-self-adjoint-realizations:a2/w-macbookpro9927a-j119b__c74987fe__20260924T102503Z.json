@@ -22,11 +22,18 @@
  "stdout_tail": " sin k3) (0 and 90 degrees differ, both Lagrangian); for every m > 0 the roots m + s, m - s, s - m, -m - s (s = sqrt(1 + m^2)) are distinct, none squares to 1, and r_i r_j = 1 only for a-c and b-d\nfamilies Q G A B C (all exact): 5/5 ok, 1 s\nSUMMARY: PARTIAL (a) the line walk's solutions at every energy are entire series, all square-summable at the fast end, giving (2,2) with a bounded slow end; (b) T_2 acts on the boundary space as the scalar lambda, so every realization keeps the even-shift identity, and the T_1-invariant ones form a torus containing block 108's circle, none kept by the half-turn sigma_1; (c) sectors 0 < m < m* have exactly four T_1-invariant realizations, rotation-covariant, each with a direction-dependent limit at m = 0\nHIT: for block 108's line walk every self-adjoint realization, chain-mixing ones included, keeps U(t)T_2 = T_2U(lambda^2 t); those keeping U(t)T_a = T_aU(lambda^a t) for every a are exactly span(v1 at r = +1, v2 at r = -1), v1 and v2 on the isotropic circle (1, it): a torus whose chain-separate part (t2 = -t1) is block 108's circle; in block 109's 3D sectors with 0 < m < m* exactly four realizations keep the identity for every x1-shift (the isotropic pairs of the Floquet solutions); the half-turn about x1 fixes the four m = 0 sectors and keeps none of their torus, and each of the four choices has a direction-dependent limit at m = 0, so no choice continuous in (k2, k3) or covariant under the half-turn serves every sector with m < sinh(g/2)\n",
  "checked": {
   "by": "w-macbookpro9927a-j119b",
-  "at_utc": "20260924T102512Z",
+  "at_utc": "20260924T102550Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c74987fe differs from the current HEAD 2cfb3373 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: exact boundary-space algebra (four zero-energy solutions, boundary form, the shift's eigenspaces) classifies the realizations: on the line every realization keeps the shift-by-two identity and those keeping it for every shift are a torus containing block 108's circle, none compatible with the content's half-turn; in 3D sectors 0 < m < m* exactly four keep it, with direction-dependent limits at m = 0, so no continuous or half-turn-covariant choice serves every sector; the limit-point/limit-circle and extension theory are imported at definition level. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-j119b",
+  "at_utc": "20260924T102550Z"
  }
 }

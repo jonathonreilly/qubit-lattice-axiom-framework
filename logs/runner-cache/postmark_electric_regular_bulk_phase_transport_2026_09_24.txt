@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/postmark_electric_regular_bulk_phase_transport_2026_09_24.py
+runner_sha256: 9177c16a77544d9cf28d01c79d2e522019ee2176d18cf9b8deff01c32ddd3363
+input_fingerprint_sha256: c06a09addc6077f853e83614643b9ac26f544c6714f97e067694fae85da45332
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+{
+  "actual_current_surface_status": "conditional-support",
+  "finite_interval_checks": {
+    "energy_lambda": 0.9193953882637205,
+    "finite_sample_count": 4,
+    "regular_interval_targets": [
+      -0.1,
+      0.3
+    ],
+    "sample_rows": [
+      {
+        "S": 120,
+        "accumulated_phase_asymptotic_residual": 0.008683807044057234,
+        "basis_det_error": 1.3425386427725573e-15,
+        "cells": 48,
+        "diagonal_product_magnitude": 1.0000778068859302,
+        "discrete_overlap_phase": 0.0030493684593152306,
+        "max_eigenvector_residual": 1.4475537224895361e-15,
+        "max_su11_overlap_identity_error": 1.3322676295501878e-15,
+        "min_abs_sin_local_phase": 0.8544100771431612,
+        "negative_connection_integral": 0.0015375166138446156,
+        "overlap_phase_connection_residual": 0.001511851845470615,
+        "product_diagonal_approximation_error": 0.0029495194151084037,
+        "product_error_times_S": 0.35394232981300844,
+        "u_interval": [
+          -0.1,
+          0.3
+        ]
+      },
+      {
+        "S": 240,
+        "accumulated_phase_asymptotic_residual": 0.004345057748813872,
+        "basis_det_error": 1.3425386427725573e-15,
+        "cells": 96,
+        "diagonal_product_magnitude": 1.0000389275442636,
+        "discrete_overlap_phase": 0.0022924409992207697,
+        "max_eigenvector_residual": 1.5632082117998628e-15,
+        "max_su11_overlap_identity_error": 1.3322676295501878e-15,
+        "min_abs_sin_local_phase": 0.8526177658556194,
+        "negative_connection_integral": 0.0015375166138446156,
+        "overlap_phase_connection_residual": 0.0007549243853761541,
+        "product_diagonal_approximation_error": 0.0027118998105458703,
+        "product_error_times_S": 0.6508559545310089,
+        "u_interval": [
+          -0.1,
+          0.3
+        ]
+      },
+      {
+        "S": 480,
+        "accumulated_phase_asymptotic_residual": 0.0021733582158768175,
+        "basis_det_error": 1.3425386427725573e-15,
+        "cells": 192,
+        "diagonal_product_magnitude": 1.0000194718377138,
+        "discrete_overlap_phase": 0.0019147627523048063,
+        "max_eigenvector_residual": 1.7208456881689926e-15,
+        "max_su11_overlap_identity_error": 1.3322676295501878e-15,
+        "min_abs_sin_local_phase": 0.8516999818474834,
+        "negative_connection_integral": 0.0015375166138446156,
+        "overlap_phase_connection_residual": 0.00037724613846019077,
+        "product_diagonal_approximation_error": 0.0010489785714236435,
+        "product_error_times_S": 0.5035097142833489,
+        "u_interval": [
+          -0.1,
+          0.3
+        ]
+      },
+      {
+        "S": 960,
+        "accumulated_phase_asymptotic_residual": 0.001086891559388335,
+        "basis_det_error": 1.3425386427725573e-15,
+        "cells": 384,
+        "diagonal_product_magnitude": 1.0000097381808593,
+        "discrete_overlap_phase": 0.0017260899762216676,
+        "max_eigenvector_residual": 1.7208456881689926e-15,
+        "max_su11_overlap_identity_error": 1.3322676295501878e-15,
+        "min_abs_sin_local_phase": 0.8512355843077984,
+        "negative_connection_integral": 0.0015375166138446156,
+        "overlap_phase_connection_residual": 0.00018857336237705202,
+        "product_diagonal_approximation_error": 0.0003122471188574047,
+        "product_error_times_S": 0.2997572341031085,
+        "u_interval": [
+          -0.1,
+          0.3
+        ]
+      }
+    ],
+    "scope": "finite float64 corroboration only; no rate constant is inferred from these samples"
+  },
+  "numpy": "2.4.4",
+  "scope_limit": "macroscopic product only on compact nonturning and non-Bragg intervals; no layer matching, global quantization, or prepared-readout estimate",
+  "source_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "source_sha256": {
+    "docs/POSTMARK_ELECTRIC_FIVE_SITE_TRANSFER_PHASE_EXPANSION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f5646a8ee9dca0c813e1978f498bf1036d971b5c854a29aaf7dca6808f917173",
+    "docs/POSTMARK_ELECTRIC_REGULAR_BULK_PHASE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "a0e922d40a0d1f887ce8975537925b4811e8922eabb0c7ed42ee10edb414742c"
+  },
+  "symbolic_connection_checks": {
+    "berry_connection_formula": "0",
+    "principal_frame_determinant": "0"
+  },
+  "sympy": "1.14.0",
+  "target_claim_type": "bounded_theorem"
+}
+
+----- stderr -----
+

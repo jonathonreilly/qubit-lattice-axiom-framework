@@ -54,4 +54,86 @@ singularities, and a normalized-overlap contraction yields no phase bound.
 | Larger actual-readout sample | Direct finite-spin eigendecomposition of G_S=N_S^2-CN_S at t=1/4 | For S=512,640,768,896,1024, the period-three observable is 0.341669,0.337053,0.337260,0.336208,0.328571; generator factorization agrees at <=6.4e-13 in state/readout checks | Float64 finite samples only; neither convergence to 1/3 nor separated limiting subsequences follows |
 | Principal Weyl spectral measure | Fixed moments of the exact tridiagonal N_S from local closed walks and the five-site frozen symbol | Author proof gives weak convergence to density 1/(4 sqrt(lambda)) on (0,4), CDF sqrt(lambda)/2, quantiles 4 rho^2, and normalized phase profile theta/S^2 -> rho^2 | Bounded conditional support theorem; no adjacent gaps or phase modulo 2pi, so the O(S) alias weights remain open |
 
+## Personal transfer-phase execution after the ten-worker selection
+
+The selected local-transfer block now has five derived and author-checked
+modules in the current worktree. The exact S^-2 local phase, regular O(S)-cell
+transport, simple Bragg crossing, central double contacts, and positive
+simple-turning-point Airy match have distinct analytic proofs and paired
+deterministic runners. They concern the same explicit scalar Jacobi family
+and make no physical axiom claim.
+
+| Route | Mechanism and first discriminator | Result | Strength / remaining wall |
+|---|---|---|---|
+| Regular local phase and product | Exact second-order five-site coefficient convolution plus moving eigenbasis overlap | Exact symbolic trace/phase identities; shifted 15-site product; regular product error O(S^-1) with the Berry connection; canonical caches pass | Bounded on regular compact arcs; no crossing, turn, endpoint, or readout conclusion |
+| One simple Bragg root | Shrinking layer rho=S^-2/3 and an outer homological equation with gap proportional to distance | Exact moving-frame phase identity; opposite Berry sign and additive g1 mutations rejected; eight exact finite products decrease in norm error; the tested crossing cell is hyperbolic at every sampled S | Bounded O(S^-1/3) for one simple interior root away from u=0; no energy-uniform result |
+| Central double contact | Exact first-order suppression A1(0)=0, quadratic detuning, inner rho=S^-1/2 and outer correction O(1/u) | Exact symbolic vanishing and all four quadratic contact identities; constant off-diagonal mutation rejected; 32 finite exact-transfer products over four energies | Bounded O(S^-1/2) at four fixed energies; not uniform in energy, turning, endpoints, overlaps, or aliases |
+| Positive simple turning point | Parabolic Jordan reduction of the exact five-site transfer at k=pi; first discriminator is the signed lower-left slope and its Airy scale | Fixed-window Airy system q''=b_lambda tau q, b_lambda=800 a_lambda/lambda; finite-edge shift is O(S^-1); ordered allowed-side match has outer error C R^-3/2 | Bounded local theorem for compact energies and fixed scaled windows; the finite forbidden tail and boundary-selected branch remain open |
+| Forbidden-tail boundary selection — next | Exact finite Jacobi eigenvector on u>a_lambda matched to the positive-turn Airy window | Test whether a cone or Riccati contraction controls the growing Airy coefficient relative to the allowed WKB mode | Highest remaining local-to-global leverage; no theorem or negative result yet |
+| Prepared-overlap and joint aliases | Use turning-matched eigenfunctions to derive the period-three overlap weights and sum every reciprocal alias in the actual double sum | Open; finite quadratic and one-lag routes remain insufficient | Still the decisive actual-readout obligation |
+
+The first symbolic phase-identity attempt omitted the fixed-cell similarity
+conjugation between the per-site expansion and the principal frame. The exact
+runner exposed a nonzero residual; conjugating the five-site first-order
+coefficient by D on both sides reduced it to zero. This was a diagnostic
+coordinate error caught before relying on the result. The first central route
+probe also had an import-root path mistake; no calculation ran until that path
+was corrected. Full details and outputs are in the attempt logs.
+
+No axiom update follows from these results. The supplied finite-spin model
+and preparation remain conditional inputs, and no actual-readout limit or
+separated subsequence has been established.
+
 Mathematical sectors searched or queued: discrete and matrix-valued WKB; stationary phase and exponential sums; Jacobi operators and orthogonal polynomials; commutator equations; spectral measures and harmonic analysis; operator/Fourier methods; semiclassical propagation and matrix-valued Egorov; finite-group character selection; endpoint weighted forms; exact Schur complements; imaginary-time Markov kernels. Number-theoretic revival analysis is useful only when tied to the actual eigenphase and overlap weights. No route supplies an axiom update: the supplied dynamics and output remain imported premises.
+
+## Current-head route selection and source search — 2026-09-24
+
+**Target state:** open after matching-hit review. The target is not the full
+fixed-time readout theorem here; this block targets the actual-index local
+five-site transfer trace and phase through order `S^-2`, a missing input to
+global phase-accurate quantization and overlap transport.
+
+**Source revisions reviewed:** current main
+`0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`; parent source/PR head
+`c734332ca227c4371f3c188f96227c494b43f533`; phase-accuracy checkpoint
+`20251000c51`.
+
+**Statement search on refreshed `origin/main` and relevant candidate heads:**
+
+```bash
+git fetch origin main:refs/remotes/origin/main
+git rev-parse origin/main
+git ls-tree -r --name-only origin/main -- docs | rg -i 'postmark.*electric.*(five.site|transfer|phase|quantization)'
+git grep -n -i -E 'second.order.{0,40}(five.site|transfer|trace|eigenphase)|((five.site|transfer|trace|eigenphase).{0,40}second.order)|tau_2|τ_2|phase expansion through S.?\^?2' origin/main -- 'docs/POSTMARK_ELECTRIC*' 'scripts/postmark_electric*'
+git grep -n -i -E 'second.order.{0,40}(five.site|transfer|trace|eigenphase)|((five.site|transfer|trace|eigenphase).{0,40}second.order)|tau_2|τ_2|phase expansion through S.?\^?2' HEAD -- 'docs/POSTMARK_ELECTRIC*' 'scripts/postmark_electric*'
+git grep -n -i -E 'second.order.{0,40}(five.site|transfer|trace|eigenphase)|((five.site|transfer|trace|eigenphase).{0,40}second.order)|tau_2|τ_2|phase expansion through S.?\^?2' origin/physics-loop/postmark-electric-quantization-phase-20260924 -- 'docs/POSTMARK_ELECTRIC*' 'scripts/postmark_electric*'
+```
+
+Main has no five-site electric transfer source title; the matching proposal
+heads contain the existing five-site coefficient and first-order frozen-band
+correction but no `tau_2` or second-order local eigenphase. The prior phase
+branch adds a finite phase-accuracy gate only, which has been fast-forwarded
+into this campaign at `20251000c51`; it is not duplicated by the new analytic
+transfer derivation. Parent PR #9078 and stacked PR #9091 were checked through
+their bodies and review records; both are open, non-draft, and have no
+independent reviews or comments.
+
+**Ten-worker route decision:** retain the exact fixed-time scalar target;
+first derive the regular-arc transfer phase through `S^-2` with a uniform
+remainder and exact shifted 15-site regrouping. Then attempt global
+quantization and prepared-overlap transport; only after that is the
+alias-complete two-index sum a viable decisive target. A one-row terminal
+estimate is a useful side lemma but not the main blockage. Axiomatic
+underdetermination is not a contradiction and does not warrant revising the
+four axioms.
+
+**Promotion Value Gate (prospective):** V1 is the unresolved global phase and
+overlap input to `Re(q_S(1/4))`; V2 is the previously absent second-order
+actual-index cell trace/phase coefficient, established by the source search
+above; V3 requires exact symbolic coefficient identities and a proved compact
+uniform remainder, with the global transport gap named; V4 is the new
+second-order local phase data needed to attempt `o(S^-2)` eigenvalue control;
+V5 is not a one-step variant of the first-order band correction or the Weyl
+count, because it expands the determinant-one actual transfer product and
+tracks the second coefficient. Final answers depend on source and runner
+checks and will be recorded before any PR is opened.

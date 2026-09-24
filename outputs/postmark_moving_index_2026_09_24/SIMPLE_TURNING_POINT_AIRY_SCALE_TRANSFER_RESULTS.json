@@ -1,0 +1,317 @@
+{
+  "claim_id": "postmark_electric_simple_turning_point_airy_scale_transfer_2026_09_24",
+  "finite_checks": {
+    "energies": [
+      1.6,
+      2.4,
+      3.2
+    ],
+    "finite_products_are_diagnostics_only": true,
+    "frozen_edge_shift_rows": [
+      {
+        "S": 10000,
+        "S_times_shift": -0.4626466501589377,
+        "absolute_error": 5.5015220320808744e-05,
+        "lambda": 1.6,
+        "predicted_limit": -0.4627016653792585
+      },
+      {
+        "S": 40000,
+        "S_times_shift": -0.4626879090618985,
+        "absolute_error": 1.3756317360003045e-05,
+        "lambda": 1.6,
+        "predicted_limit": -0.4627016653792585
+      },
+      {
+        "S": 160000,
+        "S_times_shift": -0.4626982261513035,
+        "absolute_error": 3.4392279549821936e-06,
+        "lambda": 1.6,
+        "predicted_limit": -0.4627016653792585
+      },
+      {
+        "S": 640000,
+        "S_times_shift": -0.46270080559907,
+        "absolute_error": 8.597801884890899e-07,
+        "lambda": 1.6,
+        "predicted_limit": -0.4627016653792585
+      },
+      {
+        "S": 10000,
+        "S_times_shift": -0.5337483239109542,
+        "absolute_error": 2.391007220781116e-05,
+        "lambda": 2.4,
+        "predicted_limit": -0.533772233983162
+      },
+      {
+        "S": 40000,
+        "S_times_shift": -0.5337662555904288,
+        "absolute_error": 5.978392733196891e-06,
+        "lambda": 2.4,
+        "predicted_limit": -0.533772233983162
+      },
+      {
+        "S": 160000,
+        "S_times_shift": -0.5337707393415769,
+        "absolute_error": 1.4946415850536354e-06,
+        "lambda": 2.4,
+        "predicted_limit": -0.533772233983162
+      },
+      {
+        "S": 640000,
+        "S_times_shift": -0.5337718602760333,
+        "absolute_error": 3.7370712868689537e-07,
+        "lambda": 2.4,
+        "predicted_limit": -0.533772233983162
+      },
+      {
+        "S": 10000,
+        "S_times_shift": -0.6263873340872639,
+        "absolute_error": 5.868162757161066e-06,
+        "lambda": 3.2,
+        "predicted_limit": -0.626393202250021
+      },
+      {
+        "S": 40000,
+        "S_times_shift": -0.6263917349258463,
+        "absolute_error": 1.4673241747198418e-06,
+        "lambda": 3.2,
+        "predicted_limit": -0.626393202250021
+      },
+      {
+        "S": 160000,
+        "S_times_shift": -0.6263928353966719,
+        "absolute_error": 3.668533491429926e-07,
+        "lambda": 3.2,
+        "predicted_limit": -0.626393202250021
+      },
+      {
+        "S": 640000,
+        "S_times_shift": -0.6263931105365828,
+        "absolute_error": 9.171343828828782e-08,
+        "lambda": 3.2,
+        "predicted_limit": -0.626393202250021
+      }
+    ],
+    "max_scaled_cell_determinant_error": 1.1546319456101628e-14,
+    "one_step_rows": [
+      {
+        "S": 10000,
+        "error_over_step_squared": 1774.3464629156852,
+        "lambda": 1.6,
+        "max_euler_step_error": 3.822713571840924
+      },
+      {
+        "S": 40000,
+        "error_over_step_squared": 1176.8511415895769,
+        "lambda": 1.6,
+        "max_euler_step_error": 1.0061935724685946
+      },
+      {
+        "S": 160000,
+        "error_over_step_squared": 881.7019101829595,
+        "lambda": 1.6,
+        "max_euler_step_error": 0.2991633996982508
+      },
+      {
+        "S": 640000,
+        "error_over_step_squared": 692.8918894947479,
+        "lambda": 1.6,
+        "max_euler_step_error": 0.0932993951980765
+      },
+      {
+        "S": 10000,
+        "error_over_step_squared": 615.2533968919682,
+        "lambda": 2.4,
+        "max_euler_step_error": 1.3255232614240116
+      },
+      {
+        "S": 40000,
+        "error_over_step_squared": 457.8942948158811,
+        "lambda": 2.4,
+        "max_euler_step_error": 0.3914941151278226
+      },
+      {
+        "S": 160000,
+        "error_over_step_squared": 373.06146310567095,
+        "lambda": 2.4,
+        "max_euler_step_error": 0.12658057594083805
+      },
+      {
+        "S": 640000,
+        "error_over_step_squared": 320.2607551717069,
+        "lambda": 2.4,
+        "max_euler_step_error": 0.043123805049858355
+      },
+      {
+        "S": 10000,
+        "error_over_step_squared": 250.49186395474794,
+        "lambda": 3.2,
+        "max_euler_step_error": 0.5396683612748563
+      },
+      {
+        "S": 40000,
+        "error_over_step_squared": 202.7367218030937,
+        "lambda": 3.2,
+        "max_euler_step_error": 0.17333745889568775
+      },
+      {
+        "S": 160000,
+        "error_over_step_squared": 173.3407026930655,
+        "lambda": 3.2,
+        "max_euler_step_error": 0.05881488213287467
+      },
+      {
+        "S": 640000,
+        "error_over_step_squared": 158.48756284822596,
+        "lambda": 3.2,
+        "max_euler_step_error": 0.02134069395867666
+      }
+    ],
+    "propagator_error_decreases_by_energy": {
+      "1.6": {
+        "first_edge_shift_error": 5.5015220320808744e-05,
+        "last_edge_shift_error": 8.597801884890899e-07,
+        "maximum_error_over_S_minus_one_third": 103.97515621657617
+      },
+      "2.4": {
+        "first_edge_shift_error": 2.391007220781116e-05,
+        "last_edge_shift_error": 3.7370712868689537e-07,
+        "maximum_error_over_S_minus_one_third": 10.69000268636272
+      },
+      "3.2": {
+        "first_edge_shift_error": 5.868162757161066e-06,
+        "last_edge_shift_error": 9.171343828828782e-08,
+        "maximum_error_over_S_minus_one_third": 6.59194272162387
+      }
+    },
+    "propagator_rows": [
+      {
+        "R": 0.35,
+        "S": 10000,
+        "lambda": 1.6,
+        "propagator_error": 2.87236560849076
+      },
+      {
+        "R": 0.35,
+        "S": 40000,
+        "lambda": 1.6,
+        "propagator_error": 2.13836135724433
+      },
+      {
+        "R": 0.35,
+        "S": 160000,
+        "lambda": 1.6,
+        "propagator_error": 1.639380242868794
+      },
+      {
+        "R": 0.35,
+        "S": 640000,
+        "lambda": 1.6,
+        "propagator_error": 1.206524810170011
+      },
+      {
+        "R": 0.35,
+        "S": 10000,
+        "lambda": 2.4,
+        "propagator_error": 0.2873543908942615
+      },
+      {
+        "R": 0.35,
+        "S": 40000,
+        "lambda": 2.4,
+        "propagator_error": 0.26995797237500785
+      },
+      {
+        "R": 0.35,
+        "S": 160000,
+        "lambda": 2.4,
+        "propagator_error": 0.1969115330855531
+      },
+      {
+        "R": 0.35,
+        "S": 640000,
+        "lambda": 2.4,
+        "propagator_error": 0.12337544235632025
+      },
+      {
+        "R": 0.35,
+        "S": 10000,
+        "lambda": 3.2,
+        "propagator_error": 0.29120346275854914
+      },
+      {
+        "R": 0.35,
+        "S": 40000,
+        "lambda": 3.2,
+        "propagator_error": 0.17209358821915943
+      },
+      {
+        "R": 0.35,
+        "S": 160000,
+        "lambda": 3.2,
+        "propagator_error": 0.1214246231184779
+      },
+      {
+        "R": 0.35,
+        "S": 640000,
+        "lambda": 3.2,
+        "propagator_error": 0.05645831541406654
+      }
+    ],
+    "spins": [
+      10000,
+      40000,
+      160000,
+      640000
+    ],
+    "tau_samples": [
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0
+    ]
+  },
+  "input_sha256": {
+    "docs/POSTMARK_ELECTRIC_FIVE_SITE_TRANSFER_PHASE_EXPANSION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f5646a8ee9dca0c813e1978f498bf1036d971b5c854a29aaf7dca6808f917173",
+    "docs/POSTMARK_ELECTRIC_REGULAR_BULK_PHASE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "a0e922d40a0d1f887ce8975537925b4811e8922eabb0c7ed42ee10edb414742c",
+    "docs/POSTMARK_ELECTRIC_SIMPLE_BRAGG_CROSSING_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "6d7d3470593caa53c2d6148e1e73959b9bb6140eb97d600b728d3e23ac9abdd9",
+    "docs/POSTMARK_ELECTRIC_SIMPLE_TURNING_POINT_AIRY_SCALE_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "93b7e366491ea4d92027d683e85e776fd7f0d8b287148ee2000cb6b817bd8799"
+  },
+  "read_inventory": {
+    "description": "The calculation uses only the exact coefficients and equations defined in the paired note and its linked transfer notes.",
+    "external_scientific_inputs": [],
+    "package_integrity_reads": [
+      "this runner for its source SHA-256",
+      "docs/POSTMARK_ELECTRIC_FIVE_SITE_TRANSFER_PHASE_EXPANSION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "docs/POSTMARK_ELECTRIC_REGULAR_BULK_PHASE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "docs/POSTMARK_ELECTRIC_SIMPLE_BRAGG_CROSSING_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "docs/POSTMARK_ELECTRIC_SIMPLE_TURNING_POINT_AIRY_SCALE_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    ]
+  },
+  "runner_sha256": "1a20dc6f58240b90ea6e6e51431bb4f02d0af0bb0b9a42dcabb79883409af92e",
+  "scope": {
+    "not_proved_by_runner": [
+      "uniform analytic remainders",
+      "outer WKB error bounds",
+      "endpoint conditions, eigenvalue quantization, or prepared readout"
+    ],
+    "proved_by_note": [
+      "the parabolic Jordan coefficient and Airy-scale cell limit",
+      "the fixed-R inner product convergence to q''=b*tau*q",
+      "the match of the inner oscillatory modes to the adjacent principal-cell basis"
+    ]
+  },
+  "source_base_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "symbolic_checks": {
+    "airy_coefficient": "800*a/lambda",
+    "edge_shift_residual": "0",
+    "factor_of_two_mutation_residual": "-100*a/(a**2 - 1)",
+    "factored_cell_at_edge_in_jordan_basis": "Matrix([[1, 1], [0, 1]])",
+    "first_finite_spin_edge_shift": "-lambda*g1(a,-1)/(80*a)",
+    "g1_at_edge": "u*(10*u - 17)/(u**2 - 1)",
+    "jordan_lower_left_slope_residual": "0",
+    "trace_slope_residual": "0"
+  }
+}

@@ -1,5 +1,96 @@
 # Ranked opportunity queue
 
+## Current re-rank after the Airy-scale turning-point derivation — 2026-09-24 19:48 UTC
+
+The ten route reviewers selected phase-accurate global propagation and
+prepared-overlap transport before the all-alias two-index estimate. The
+personal local block now supplies the exact S^-2 cell phase, regular
+O(S)-cell transport, one simple Bragg crossing, the four fixed central double
+contacts, and the positive simple-turning-point Airy connection. The latter
+matches the oscillatory principal frame in an ordered limit but leaves the
+finite-chain boundary condition and the remote forbidden tail uncontrolled.
+The highest remaining leverage is to decide whether the finite endpoint
+selects the decaying Airy branch with an error strong enough to feed global
+quantization and prepared-overlap transport.
+
+1. **Forbidden-tail selection of the Airy branch.** For compact
+   `Lambda subset (0,4)`, start from the exact finite Jacobi boundary equation
+   and control the transfer on `u>a_lambda` far enough to show whether the
+   physical endpoint suppresses the growing Airy mode. First test a discrete
+   Riccati or cone-contraction estimate on a fixed forbidden subinterval,
+   then match it to the Airy window with the existing `O(R^-3/2)` outer
+   remainder. The decisive output is a uniform bound on the forbidden-mode
+   coefficient relative to the allowed WKB amplitude; finite eigenvectors
+   alone cannot certify it.
+2. **Two-turning-point quantization and prepared-overlap transport.** Carry
+   the selected mode through both turns and all four simple/central Bragg
+   layers. Determine whether the resulting phase remainder is `o(S^-2)` or
+   whether a weaker phase norm is sufficient for the exact scalar readout.
+3. **Joint all-alias two-index estimate.** Use the actual period-three matrix
+   elements and prepared coefficients to sum both spectral indices and every
+   reciprocal alias, retaining resonant strips, diagonal terms, and terminal
+   pairs. A frozen stationary-phase set or a fixed-lag bound is not enough.
+4. **Spectral-edge energy window.** Extend estimates uniformly as lambda
+   approaches 0 or 4; the existing prepared-state endpoint-strip bound does
+   not control the eigenphase expansion at those spectral edges. Reopen early
+   if the turning-tail estimate loses its constants there.
+5. **Native axiom-to-model bridge.** Remains a separate upstream question.
+   Current facts show that supplied dynamics are imported, not contradicted;
+   no axiom revision is supported unless a derivation failure is proved at
+   the precise needed scope.
+
+Re-rank after the first Airy-scale discriminator. Do not repeat the central
+or simple-root finite samples unless the turning construction changes their
+error scale or identifies a new resonance.
+
+## Re-ranked after ten current-head reviews — 2026-09-24 17:10 UTC
+
+The ten read-only reviews used `c734332ca227c4371f3c188f96227c494b43f533`
+and current main `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`. They preserve the
+actual fixed-time interior scalar as the principal target. The active first
+block is the exact five-site transfer trace and local eigenphase through
+`S^-2`, with a uniform `O(S^-3)` remainder on compact regular bulk arcs and
+exact regrouping into three shifted five-site cells. This is a feed-in to
+global quantization, not a readout theorem.
+
+1. **Actual-index transfer phase through `S^-2` (active block).** New
+   derivation of the determinant-one cell transfer, its second trace
+   coefficient, and the locally oriented phase with an explicit regular-arc
+   remainder. First checks: independent coefficient convolution, finite
+   exact-cell comparisons, and equality of the direct 15-site product with
+   three genuinely shifted five-site factors. A wrong product order,
+   incorrect `tau_2`, failed determinant, or product regrouping mismatch
+   rejects the derivation. Even a pass leaves the global `O(S)`-cell
+   accumulated phase, crossings, and prepared overlaps open.
+2. **Global phase and prepared-overlap transport.** Establish a phase-accurate
+   global quantization law (uniform eigenvalue `o(S^-2)` error is sufficient
+   for an `o(1)` termwise phase error) or a proved weighted approximation for
+   the exact bilinear readout. Must handle the true shifted cells, Bragg,
+   central, turning and boundary layers. The present local block is useful
+   only if it yields a construction across those layers.
+3. **Joint alias-complete interior two-index estimate.** Bound the prepared
+   weighted sum across both spectral indices and all reciprocal aliases,
+   retaining diagonal, crossings, central mass and any terminal terms. A
+   fixed-lag alias condition does not imply coordinatewise nonresonance.
+   The first missing bound is weighted mass/variation on joint-resonance
+   strips; a surviving coherently weighted bulk patch falsifies a proposed
+   cancellation mechanism.
+4. **Exact terminal spectral row (small support route).** Nonatomic prepared
+   spectral-measure convergence implies the largest atom tends to zero, so
+   one terminal row (or a fixed number of rows) has vanishing total absolute
+   contribution. This can simplify the double-sum boundary bookkeeping but
+   has no rate and does not control a growing strip or interior aliases.
+5. **Framework-to-model comparison.** Current axioms leave the Hamiltonian and
+   physical readout downstream. A pair of compatible models would show
+   underdetermination only; no contradiction or axiom change is supported.
+   Defer unless a concrete supplier/observable bridge is identified.
+
+The existing phase-accuracy gate and the source search were read before this
+block. Do not repeat them without a changed mathematical object or error
+scale. The transfer source search at main and the relevant proposal heads
+found the existing first-order frozen five-site correction, but no matching
+actual-index trace/phase expansion through `S^-2`.
+
 1. **Joint discrete stationary phase across macroscopic spectral lags.** Write
    the exact profile scalar as its diagonal term plus positive lag sums
    (L_{S,h}=sum_j W_{S,j,h}e^{iC(\lambda_{j+h}-\lambda_j)/4}). The new

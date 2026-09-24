@@ -3,31 +3,32 @@ loop_slug: postmark-electric-moving-index-20260924
 current_goal: "At t=1/4, prove a limit for the actual supplied finite-spin period-three readout, or exhibit rigorously separated actual-readout subsequences."
 delivery_mode: milestone
 runtime:
-  authorized: 12h
-  started_utc: "2026-09-24T04:38:00Z"
-  deadline_utc: "2026-09-24T16:38:00Z"
-  checkpoint_utc: "2026-09-24T16:34:00Z"
-  runtime_used_at_checkpoint: "about 11h56m"
-cycle_count: 4
-block_count: 4
+  authorized: "continue until the campaign is complete or the usage limit is reached"
+  started_utc: "2026-09-24T17:09:58Z"
+  deadline_utc: "2026-09-25T05:09:58Z"
+  checkpoint_utc: "2026-09-24T20:30:58Z"
+  runtime_used_at_checkpoint: "about 201m; continue until campaign completion or usage limit"
+  usage_snapshot: "47% of the weekly window used at 2026-09-24T20:30:58Z; reset credit not consumed"
+cycle_count: 7
+block_count: 7
 source:
   repo: /Users/jonreilly/Projects/Physics
   base_ref: origin/main
   base_revision: 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8
-  branch: physics-loop/postmark-electric-quantization-phase-20260924
-  worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-electric-quantization-phase-20260924
-  head_revision: 461bd9bcd1bf2b61a96bd93f0adcc2c6f847709c
+  branch: physics-loop/postmark-electric-phase-correlation-20260924
+  worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-electric-phase-correlation-20260924-c1
+  head_revision: "20251000c51d7bd23573d36f091eb1c88ebde92a plus the staged five-note transfer candidate"
   parent_review_branch: physics-loop/postmark-electric-weighted-phase-20260924
-active_route: "observable-aware deterministic cancellation across macroscopic spectral lags and all reciprocal phase aliases"
+active_route: "complete exact-tree validation and non-draft review delivery of the five-note local/regular/simple-Bragg/central-Bragg/Airy transfer milestone; then attack finite-endpoint selection of the decaying Airy branch in the forbidden region"
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
 conditional_surface_status: "conditional on the supplied six-site path, integer-spin hop factors, generator, first-mark preparation, and period-three readout"
-provisional_dependency_check_state: "prior supporting notes were authored against c288aa9 and their source hashes remain unchanged at current origin/main 0e6ad828; this new block starts on 0e6ad828"
-independent_check_state: "The ten-route selection comprised seven isolated worker reports and three root-only exact checks after the platform thread cap. Three focused follow-up lenses independently recommended direct deterministic weighted-phase cancellation over pole regularization. The author corrected the finite probe phases and checked them against dense expm for S=1,2,3,5. These workers selected and reviewed routes/probes; none independently reviewed the final authored theorem sources. The current science execution is personal, without subagents."
+provisional_dependency_check_state: "current origin/main is 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8; the five new transfer notes define and depend on source files in the proposed delta or on main; all five runner caches are fresh; the regenerated citation manifest acknowledges five added note nodes and eight intended edges with no removals or rewires; the combined exact-tree pipeline is pending"
+independent_check_state: "Ten route-selection reviews chose phase-accurate propagation and prepared-overlap transport toward the alias-complete two-index estimate at parent head c734332ca227c4371f3c188f96227c494b43f533 against main 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8. They did not review these final artifacts. The author personally derived and checked five modules: S^-2 local phase, O(S^-1) regular transport, O(S^-1/3) simple Bragg transfer, O(S^-1/2) transfer at four fixed central contacts, and the positive simple-turning-point Airy limit/match. The new Airy runner rejects factor-of-two slope and edge-shift sign mutations. Exact-tree and combined conformance gates remain pending. No independent final-source review has occurred."
 formal_audit_state: not_requested
-next_milestone: "derive a uniform observable-weighted two-index oscillatory estimate for macroscopic lags and reciprocal aliases, or identify a quantified obstruction"
+next_milestone: "finish cold-diff review and combined validation for the five-note transfer/Airy package; push and open one ready-for-review PR; then prove or delimit forbidden-tail selection of the decaying Airy branch"
 strongest_unresolved_proof_obligation: "prove Re(q_S(1/4))->0 for the exact prepared-profile two-energy sum, including its small diagonal term, all mod-three crossing pairs, the central layer, macroscopic lags h=Theta(S), and their discrete aliases; alternatively certify separated actual-readout subsequences"
-hard_residual_being_attacked: "cancellation of growing finite absolute overlap mass at lags h>D/4 under order-one spectral phase errors and O(S) reciprocal aliases, after the prepared-state endpoint strip is removed"
+hard_residual_being_attacked: "energy-uniform O(S^2)-phase-accurate propagation and prepared-overlap transport through all Bragg, central, turning, and endpoint layers, sufficient to control the interior all-alias two-index sum in Re(q_S(1/4))"
 open_imports:
   - "supplied one-vacancy Hamiltonian and first-mark state are not derived from framework axioms"
   - "fixed-time global finite-spin propagation and physical interpretation remain open"
@@ -39,9 +40,9 @@ trace_gate:
   source_of_blocker_text: handoff
   reachability_to_target: supports
   artifact_role: theorem
-  next_trace_action: "control the interior phase of q_S(1/4), or prove separated actual-readout subsequences; the prepared-state endpoint strip is controlled"
-review_findings: "The ten-route selection comprised seven isolated worker reports and three root-only exact checks after the platform thread cap; three focused route lenses preferred deterministic weighted-phase cancellation. Root personally executed the science. Corrected finite probes use the exact G_S phase and agree with dense expm for S=1,2,3,5. A conditional fixed-moment theorem now proves the supplied Jacobi family's density 1/(4 sqrt(lambda)) on (0,4), CDF sqrt(lambda)/2, and macroscopic quantiles, but no local-gap control. The exact phase-accuracy identity bounds delta q by prepared-weighted pair phase errors; the operator-norm version cancels a common phase. In the quadratic-fit probe, prepared-state phase distance is 0.976--1.194 and the operator bound is trivial, while actual q error ranges nonmonotonically from 0.00030 to 0.0232. Pair-weight L1 divided by sqrt(S) is 1.197--1.209 at S=96,192,384,512, below the exact Cauchy envelope ||V|| ||c||_2 ||c||_1; this is a finite-size pattern only. By lag, pair-weight L1 is 0.26--0.58 for h<=32, 7.54--17.06 for h>D/4, and diagonal 0.0038--0.0089. A primary-literature check found that continuous periodic-medium band-crossing work retains off-diagonal coherence but does not address this O(S^2) finite-Jacobi phase sum. No asymptotic statement or target limit follows. The remaining route is an overlap-weighted two-index estimate across macroscopic lags and every alias. Workers selected routes and reviewed probes, not the final theorem source; root's source review is author-only."
-pr_status: "PR #9078 and stacked bounded-theorem PR #9091 are open and non-draft. Formal independent review/audit remain pending. Current phase-accuracy campaign is on a separate child branch based on #9091 and has no PR yet."
+  next_trace_action: "finish five-note review delivery; then prove forbidden-tail selection of the decaying Airy branch and carry phase/amplitude through both turns before preparing the all-alias estimate"
+review_findings: "Ten route-selection reviews chose the fixed-time q_S(1/4) target and phase-accurate propagation with prepared overlaps before alias summation; no axiom update is supported. The author checked local S^-2 phase expansion, regular O(S) transport, simple-root O(S^-1/3) Bragg transfer, O(S^-1/2) transfer at four fixed central contacts, and the positive k=pi Airy limit with its ordered allowed-side match. The Airy exact identities and edge shift pass; scratch mutations to the Airy coefficient and shift sign are rejected. These are author checks, not independent final-source review. Remote forbidden propagation, endpoint selection, two-turning quantization, prepared overlaps, and the actual alias sum remain open."
+pr_status: "PR #9078 (main base) and dependent non-draft PR #9091 are open. The current candidate is on physics-loop/postmark-electric-phase-correlation-20260924, based on #9091 head c734332ca227c4371f3c188f96227c494b43f533; it contains two checkpoint commits plus uncommitted science. No PR yet for the five-note Airy transfer milestone; combined exact-tree validation and final review delivery remain pending."
 files_touched:
   - docs/POSTMARK_ELECTRIC_MOVING_INDEX_CELL_SYMBOL_BOUNDED_THEOREM_NOTE_2026-09-24.md
   - docs/POSTMARK_ELECTRIC_TWO_BAND_CENTRAL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-24.md
@@ -62,14 +63,32 @@ files_touched:
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/actual_readout_extended_sizes.py
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/weyl_alias_scaling_probe.py
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/quadratic_phase_resonant_lag_probe.py
-  - outputs/postmark_moving_index_2026_09_24/attempt_logs/weyl_alias_scaling_probe.py
-  - outputs/postmark_moving_index_2026_09_24/attempt_logs/actual_readout_extended_sizes.py
   - outputs/postmark_moving_index_2026_09_24/principal_weyl_count_2026_09_24.json
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_accuracy_gate_probe.py
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_accuracy_gate_probe.json
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_accuracy_gate_probe.stdout
   - logs/runner-cache/postmark_electric_principal_weyl_count_2026_09_24.txt
   - logs/runner-cache/postmark_electric_*
+  - docs/POSTMARK_ELECTRIC_FIVE_SITE_TRANSFER_PHASE_EXPANSION_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - docs/POSTMARK_ELECTRIC_REGULAR_BULK_PHASE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - docs/POSTMARK_ELECTRIC_SIMPLE_BRAGG_CROSSING_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - docs/POSTMARK_ELECTRIC_CENTRAL_BRAGG_CROSSING_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - docs/POSTMARK_ELECTRIC_SIMPLE_TURNING_POINT_AIRY_SCALE_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - scripts/postmark_electric_five_site_transfer_phase_expansion_2026_09_24.py
+  - scripts/postmark_electric_regular_bulk_phase_transport_2026_09_24.py
+  - scripts/postmark_electric_simple_bragg_crossing_transfer_2026_09_24.py
+  - scripts/postmark_electric_central_bragg_crossing_transfer_2026_09_24.py
+  - scripts/postmark_electric_simple_turning_point_airy_scale_transfer_2026_09_24.py
+  - outputs/postmark_moving_index_2026_09_24/SIMPLE_TURNING_POINT_AIRY_SCALE_TRANSFER_RESULTS.json
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/simple_turning_point_mutation_check.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/simple_turning_point_mutation_check.stdout
+  - logs/runner-cache/postmark_electric_simple_turning_point_airy_scale_transfer_2026_09_24.txt
+  - outputs/postmark_moving_index_2026_09_24/CENTRAL_BRAGG_CROSSING_TRANSFER_RESULTS.json
+  - outputs/postmark_moving_index_2026_09_24/SIMPLE_BRAGG_CROSSING_TRANSFER_RESULTS.json
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/central_bragg_route_probe.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/central_bragg_route_probe.json
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/central_bragg_crossing_transfer_runner.stdout
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/central_bragg_crossing_transfer_author_check.md
   - .claude/science/physics-loops/postmark-electric-moving-index-20260924/
-next_exact_action: "derive an observable-aware two-index stationary-phase/Poisson estimate on macroscopic h>D/4, retaining all reciprocal aliases and Bragg/central connection data; determine whether the observed sqrt(S) absolute overlap scale has a structural bound, and prove cancellation rather than substituting fitted phases or extrapolating finite oscillations"
-stop_condition: "complete the authorized 12h runtime, or exhaust mathematically distinct routes with explicit reopen conditions"
+next_exact_action: "cold-read the complete final candidate diff; verify the five-node/eight-edge citation acknowledgment; run the review-only combined pipeline, strict audit lint, and changed-evidence on the frozen exact candidate; push/open one non-draft PR if gates pass; then begin the forbidden-tail boundary-selection campaign"
+stop_condition: "continue through useful ranked science blocks until the user-requested campaign is complete or the available usage limit is reached; stop earlier only for documented global quality/tooling exhaustion"

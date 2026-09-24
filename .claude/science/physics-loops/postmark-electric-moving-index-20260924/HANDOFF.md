@@ -1,27 +1,142 @@
 # Handoff
 
-The campaign is on branch `physics-loop/postmark-moving-index-central-match-20260924`, fast-forwarded to `origin/main` revision `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`, in worktree `/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924`. The earlier supporting notes remain hash-identical to their recorded sources; their recorded source base is `c288aa9cfeea8fd2256fe4b71a60c401d64f7ce6`.
+## Current checkpoint — 2026-09-24 20:30 UTC
 
-The strongest proved new result is the quantitative prepared-profile bound
+Ten current-head route reviewers selected phase-accurate global propagation
+and prepared-overlap transport, then the all-alias two-index estimate. The
+author executed the selected transfer block personally. The current source
+base is refreshed `origin/main` `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`;
+the candidate is staged on
+`physics-loop/postmark-electric-phase-correlation-20260924` at
+`20251000c51d7bd23573d36f091eb1c88ebde92a`, based on pushed non-draft #9091
+head `c734332ca227c4371f3c188f96227c494b43f533`. The five-note candidate has
+not yet been committed or opened as a PR. The worktree is
+`/Users/jonreilly/Projects/Physics-worktrees/postmark-electric-phase-correlation-20260924-c1`;
+37 GiB was free. Usage was 47% of the weekly window at this checkpoint; the
+reset credit remains unused.
 
+The full cold read found no mathematical counterexample in the five notes
+and runners. Package review caught an invalid indentation in the trace-gate
+YAML and staged Markdown trailing whitespace; both were corrected. All five
+runners were rerun against the resulting note bytes, their receipts were
+checked against current input hashes, and all five canonical caches are fresh.
+The Airy symbolic checks have zero slope/shift residuals, the scratch
+factor-of-two and edge-shift-sign mutations are rejected, and the largest
+scaled-cell determinant error in the finite diagnostics is `1.16e-14`.
+The citation manifest contains five new theorem-note nodes and eight intended
+edges, with no removed nodes or rewired old edges. A focused current-main
+search found no matching five-site turning/Airy transfer source.
+
+The exact-tree combined pipeline, strict audit lint, and changed-evidence
+check are still pending. Independent science review and formal audit remain
+pending. PRs #9078 and #9091 remain open and non-draft. No axiom change or
+actual-readout conclusion is supported. After packaging, continue with the
+finite-endpoint forbidden-tail selection estimate stated below.
+
+## Earlier checkpoint — 2026-09-24 20:06 UTC
+
+The ten route-selection reviews chose phase-accurate propagation and
+prepared-overlap transport toward the exact fixed-time scalar
+`Re(q_S(1/4))`. Their scope was route selection at the parent source; they did
+not review the notes authored afterward. Execution remains personal, with no
+subagents. The current source base is `origin/main`
+`0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`. The active branch is
+`physics-loop/postmark-electric-phase-correlation-20260924` at committed head
+`20251000c51d7bd23573d36f091eb1c88ebde92a`, two commits above the pushed
+non-draft #9091 head `c734332ca227c4371f3c188f96227c494b43f533`; the five-note
+transfer candidate is still uncommitted. The existing worktree is
+`/Users/jonreilly/Projects/Physics-worktrees/postmark-electric-phase-correlation-20260924-c1`.
+Disk was 37 GiB free at the last check; no additional worktree has been made.
+
+The current coherent support block contains five note/runner pairs: the exact
+`S^-2` five-site phase expansion, regular `O(S^-1)` macroscopic transport,
+one simple Bragg crossing at `O(S^-1/3)`, four fixed central contacts at
+`O(S^-1/2)`, and the positive simple-turning-point Airy match. The new turning
+note derives the parabolic Jordan coefficient `b_lambda=800 a_lambda/lambda`,
+the fixed-window limit `q''=b_lambda tau q`, the first finite-spin edge shift
+`-lambda g_1(a_lambda,-1)/(80 a_lambda S)`, and the ordered allowed-side WKB
+match with outer error `C R^-3/2`. The remote forbidden tail, endpoint-selected
+decay, the opposite turn, energy-uniform quantization, prepared overlaps, and
+the actual readout remain open. These are conditional theorems for the
+displayed scalar Jacobi family; the supplied model is not derived from the
+four axioms and no axiom change is indicated.
+
+All five runner caches are fresh; `py_compile` and changed-note vocabulary
+lint pass. The citation graph has been rebuilt at 6,658 nodes and 14,643
+edges. The manifest acknowledges exactly five added theorem-note nodes and
+eight intended citation edges; no nodes were removed and no existing edges
+were rewired. The Airy runner rejects factor-of-two slope and edge-shift sign
+mutations on scratch copies. The candidate still needs cold-diff review and
+the exact-tree combined pipeline, strict lint, and changed-evidence checks.
+Independent review and formal audit remain pending.
+PRs #9078 and #9091 are open and non-draft; this candidate has no PR yet.
+
+**Next campaign, to execute after packaging this milestone:** control the
+finite-chain boundary line through a fixed forbidden interval `u>a_lambda`
+and compare it with the Airy basis at `u=a_lambda+R S^-2/3`. First derive a
+uniform cone/Riccati contraction from the exact five-residue recurrence on a
+compact forbidden subinterval; determine whether it forces the growing Airy
+coefficient to be small relative to the allowed WKB amplitude. Carry the
+proof only as far as its uniform constants permit. A pass must give a
+quantitative branch-selection and phase/amplitude error; a fail must isolate
+the precise boundary/energy regime where endpoint selection is not obtained.
+This is support toward quantization and overlap transport, not by itself a
+readout result or axiom discrepancy.
+
+## Earlier checkpoint — 2026-09-24 18:53 UTC, before the Airy derivation
+
+The campaign remains on the conditional fixed-time readout target after the
+ten-worker route review. Execution is personal, with no subagents. The active
+checkout is branch
+`physics-loop/postmark-electric-phase-correlation-20260924` in
+`/Users/jonreilly/Projects/Physics-worktrees/postmark-electric-phase-correlation-20260924-c1`,
+currently at `20251000c51d7bd23573d36f091eb1c88ebde92a` plus uncommitted
+science. Current `origin/main` is `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`.
+No new worktree was spawned; the last disk check showed 39 GiB free.
+
+Two prior science PRs remain open and non-draft: #9078 on `main` and #9091
+stacked on #9078. Both lack independent reviews. This candidate is the next
+review milestone; it has not been pushed or opened as a PR. The local branch
+also contains the phase-accuracy checkpoint commits that remain recoverable on
+their original remote branch.
+
+The personal derivation now has four coherent pieces: (1) the exact local
+five-site transfer trace and phase through `S^-2` on regular arcs; (2)
+regular macroscopic transport with its eigenvector-overlap phase and
+`O(S^-1)` product error; (3) an `O(S^-1/3)` principal-frame transfer
+estimate through one simple interior Bragg crossing; and (4) an
+`O(S^-1/2)` estimate through each of the four fixed central double Bragg
+contacts. The Bragg runner detects one hyperbolic local cell in all eight
+sampled sizes while the full transfer error falls from 0.1225 to 0.00708.
+The central symbolic runner proves `A1(0)=0` and the quadratic contact
+coefficient exactly; its finite products span four resonant energies and
+eight sizes, with largest tested `sqrt(S)`-scaled product error below 0.68.
+These checks support the displayed derivations; they are not independent
+reviews, a formal audit, global quantization, or a readout result.
+
+The exact prepared-profile result and endpoint-strip bound recorded below
+still remove only the endpoint contribution. The decisive interior
+prepared-weighted alias sum remains open. No supplied-model-to-axiom bridge,
+contradiction, or axiom update is supported.
+
+Current next action: inspect the citation-graph delta, complete section-by-
+section conformance and exact-tree review, and run the complete pipeline,
+strict lint, and changed-evidence checks. All four canonical runner caches
+are fresh, and their `--check-only` gate passes. Open the coherent non-draft
+milestone PR if the remaining gates pass. After delivery, attack the
+ordinary turning-point and endpoint transfer layers, then prepared-overlap
+transport and the alias-complete readout. Continue until the user-requested
+campaign is complete or usage is exhausted. Usage was at 40% of its weekly
+window at the last check; one reset credit remains unused.
+
+The prior profile approximation bound is
 \[
 \|\widehat\eta_S(1/4)-\eta_\infty(1/4)\|_2<1.12\times10^4/S^2,
 \]
-
-which yields an actual-readout reduction error below (1.50\times10^4/S^2). The work also establishes exact path reflection and an energy-buffered endpoint eigenfunction barrier. The radius-24 Cauchy profile tail is below (6\times10^{-12}). These are conditional results for the supplied model.
-
-The endpoint barrier now combines with the prepared state's spectral measure to give
-
-    limsup_{S->infinity} sup_{theta in R} ||1_{E_(S,delta)} exp(i theta N_S) eta_S(t)||_2^2
-      <= arccos(1-8 delta)/pi,  0 < delta <= 1/4.
-
-The proof uses strong convergence of the zero-extended Jacobi matrices, the arcsine spectral law of N_infinity, and the fixed-energy endpoint barrier. Since the readout is diagonal in the path basis, this removes the endpoint-strip contribution after delta tends to zero, uniformly in the long phase. It does not control the interior phase sum.
-
-The final exact-side note also transfers this endpoint bound to the endpoint term in the reduced scalar q_S(1/4): truncate eta_infinity to I_S, use (11) to show the truncated profile differs from eta_S by o(1), and evolve both by the same unitary. The endpoint/interior split then has no cross terms because V commutes with the spatial strip projector. Thus the endpoint part of q_S vanishes in the double limit; the interior part remains the target.
-
-The remaining target is the real part of one profile scalar. Its finite spectral diagonal/off-diagonal split is emitted by the exact runner. At S=512, the diagonal term is much smaller than the off-diagonal term, but this finite diagnostic does not show convergence. The exact open obligation is a uniform bound on off-diagonal near-resonant phases in the interior, including the two mod-three crossings and the central layer. Endpoint mass is now reduced to the strip bound above.
-
-An earlier ten-worker campaign-selection review chose the fixed-time scalar/readout target. That selection was not scientific review. No axiom or primitive update is supported. The supplied model remains an import.
+with actual-readout reduction error below `1.50e4/S^2`. The
+energy-buffered endpoint barrier and arcsine spectral law remove the
+prepared-state endpoint strip uniformly over the long phase. They do not
+control the interior scalar phase sum.
 
 ## 2026-09-24 next-route selection checkpoint
 
@@ -423,3 +538,44 @@ object for a split proof: discrete WKB away from repeated roots and turning
 points, matched matrix connections at the Bragg/central layers, then a
 phase-accurate two-index Poisson estimate that keeps the prepared overlaps.
 The transfer identity itself gives no uniform remainder or readout limit.
+
+## Ten-worker route selection and personal execution checkpoint — 2026-09-24 17:10 UTC
+
+The user requested ten workers to select the next campaign at the wall, then
+personal execution. Ten current-head read-only workers reviewed proposal head
+`c734332ca227c4371f3c188f96227c494b43f533` against current main
+`0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`. Their consensus is to keep the
+actual fixed-time prepared scalar `Re(q_S(1/4))` as the target; derive
+phase-accurate global quantization with prepared-overlap transport; then
+control the joint two-index sum over all reciprocal aliases. They reject
+repeating finite quadratic fits, one-lag triangle/Abel bounds, or an axiom
+underdetermination exercise as the immediate next campaign. No axiom change is
+supported.
+
+The first bounded block is the actual-index determinant-one five-site transfer
+trace and local eigenphase through `S^-2`, uniformly on compact bulk arcs away
+from endpoints and `sin(5k)=0`. Its falsifiers are a wrong second-order trace
+coefficient, an incorrect transfer order/determinant, a failed exact grouping
+of three shifted cells into the real 15-site product, or failure of the
+claimed compact remainder. Passing it will provide a local input only. The
+global accumulated phase over `O(S)` cells, Bragg and central matching,
+turning and boundary layers, prepared overlaps, and the weighted alias sum
+remain open.
+
+The current-main novelty sweep is bound to `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`.
+It found no main-source five-site transfer title; #9078 and #9091 were read
+through their bodies and review records and remain open, non-draft, with no
+independent reviews or discussion comments. The existing five-site note has
+the first-order scalar band correction; the separate phase branch contributes
+an exact finite stability gate, not the second-order transfer expansion. The
+phase-checkpoint branch was fast-forwarded into this clean child worktree at
+`20251000c51`; all of its commits remain recoverable on their original remote
+branch.
+
+The ten workers were route reviewers only: none changed files or ran the
+campaign probe. One independently re-derived the proposed transfer
+coefficients as a review lens; the author is reproducing all coefficients
+again in a deterministic runner and performs the science execution without
+subagents. A scratch coefficient-convolution error was caught before any
+artifact was run or relied upon; the corrected recurrence includes both
+`M1_s P1` and `M2_s P0` in the second-order term.

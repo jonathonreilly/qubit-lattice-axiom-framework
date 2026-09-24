@@ -1,5 +1,34 @@
 # Review history
 
+## Airy turning-point author preflight — 2026-09-24 20:06 UTC
+
+The complete new Airy note and paired runner were cold-read together. The
+proof fixes the Jordan orientation and Airy coefficient by two exact slope
+calculations, derives the finite-edge shift from the same trace expansion,
+uses a fixed-window discrete Gronwall comparison, and matches the allowed
+principal modes with an ordered outer WKB estimate. Its scope remains local
+to compact energies and the positive turn; it does not choose a finite-end
+boundary condition. The four preceding theorem notes/runners are unchanged
+since their recorded author checks. Their assumptions and the shared scalar
+coefficient definition were checked against the current five-site note.
+
+Review-loop source checks: the five notes define or depend only on files in
+this candidate delta or on current `main`; each primary runner is paired in
+the note and no helper runner is declared. The author-side claim scope is
+bounded and conditional, and no negative or impossibility claim triggers the
+N1-N8 gate. The Airy runner cache is fresh, all five runners compile, changed
+science/pack vocabulary lint reports zero findings, the state YAML parses,
+and two scratch source mutations (factor-of-two Airy slope and edge-shift
+sign) are both rejected. The regenerated graph has 6,658 nodes and 14,643
+edges; the manifest adds the five candidate theorem-note nodes and eight
+intended citation edges, with no removals or existing-edge rewirings.
+
+This is author preflight only. The frozen full candidate diff, disposable
+review-only pipeline, strict audit lint, changed-evidence gate, and final
+source/hash receipt are still pending. The route-selection workers did not
+review these source files; no independent science review or audit verdict is
+claimed.
+
 | Pass | Scope and identity | Result | Limits |
 |---|---|---|---|
 | Campaign-selection review | Ten workers compared next routes at the wall | Selected exact-side fixed-time electric scalar reduction | Selection only; did not review final authored content |
@@ -16,6 +45,36 @@
 | Personal final-source read and Schur/Weyl discriminator | Four new theorem notes, four paired runners, and `outputs/postmark_moving_index_2026_09_24/attempt_logs/schur_weyl_two_energy_probe.py` | Cold-read the note proofs; fixed the exact-side runner so the echo check exponentiates the conjugated generator independently. Derived the exact anchor pencil and the two-energy character weight; finite reconstructions agree below `5e-14` for S=1,2,3,5 | Author-only; no independent source review. The Schur identity is valid away from eliminated-block poles, and finite algebra checks do not bound the selected-time phase sum |
 
 The exact runner had earlier author-code failures preserved in the full attempt log; they were repaired before the latest successful run. They were not scientific counterexamples. The author cold-read all four current theorem notes and all four primary runners. The dense echo check exponentiates `V N V*` independently, with nine deliberate mutations detected; the five-site slope check samples `u=1/2`, with its three mutations detected. All four canonical caches and all current-source mutation receipts match. An isolated disposable copy was verified against the author candidate at base `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`: all 129 changed paths had matching bytes and modes. On that copy, full-pipeline pass 1 completed all 18 stages using `--stage-citation-manifest`; strict audit lint reported no errors, and changed-evidence checked four rows with zero failures or control failures. Its complete logs and hashes are preserved outside both worktrees under `/Users/jonreilly/Documents/Codex/research_runs/postmark_campaign_20260924/`. This pass predates the present checkpoint edits; the final frozen packaged-candidate pass is recorded as `combined_pipeline_pass_final.log`, `strict_audit_lint_pass_final.log`, and `changed_evidence_pass_final.log` in that same directory. No independent scientific review or formal audit is claimed.
+
+## Current-head next-campaign review — 2026-09-24 17:10 UTC
+
+Ten read-only science workers inspected the latest relevant proposal head
+`c734332ca227c4371f3c188f96227c494b43f533` against current main
+`0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`. They selected global
+phase-accurate quantization plus prepared-overlap transport, followed by an
+alias-complete two-index estimate of the actual interior `q_S(1/4)`. They
+recommended a local second-order five-site transfer derivation as the first
+bounded block, with exact shifted-cell regrouping and an explicit `O(S^-3)`
+remainder away from endpoints and repeated roots.
+
+| Worker pass | Review focus | Finding and limit |
+|---|---|---|
+| `live_route_selection` | Rank next wall attack | Global quantization + prepared overlaps precede the joint alias sum; demand eigenvalue `o(S^-2)` or a proved weighted substitute. |
+| `live_quantization_route` | Phase accuracy and transfer route | Derive actual-index transfer through `S^-2`; eigenvalue error `o(S^-2)` gives `o(1)` phase, not phase error `o(S^-2)`. |
+| `live_alias_sum_review` | Exact aliases and boundary terms | Fixed-lag aliases differ from joint coordinate aliases; one terminal spectral row is `o(1)` under nonatomic prepared spectral convergence; two-index summation by parts needs amplitude variation. |
+| `live_terminal_strip` | Terminal-row lemma | Confirms one row or fixed-width rows vanish; a growing strip requires a rate or a total-mass estimate. |
+| `live_transfer_expansion` | Independent local coefficient check | Re-derived determinant one and the trace coefficients through `S^-2`; local phase only, no global quantization. |
+| `live_global_quantization` | Global missing obligations | Bragg, central, turning, and overlap transport remain; a local expansion cannot estimate the readout by itself. |
+| `live_two_index_summation` | Two-coordinate oscillatory estimate | Requires prepared-weighted mass control on joint alias strips and amplitude regularity; a persistent coherent patch would falsify cancellation. |
+| `live_axiom_bridge` | Compare model bridge with current wall | Four axioms leave dynamics open; underdetermination is not contradiction or a forced axiom update; current fixed-time wall is more discriminating. |
+| `live_phase_convention` | Sign and phase units | Confirms exact finite-S phase convention and two-index signs; uniform eigenvalue `o(S^-2)` is the sufficient phase threshold. |
+| `live_opportunity_rank` | Queue and PR dependency check | Confirms this is the best next campaign and first local witness; new milestone should stack on #9091 at `c734...`. |
+
+These passes selected and scrutinized the route; they did not edit source or
+run the campaign's repo probes. One worker independently reproduced the
+candidate transfer algebra, which the author is now deriving and checking
+again in a new deterministic runner. No worker reviewed the resulting source
+note or runner. No axiom change is supported.
 
 ## Review-loop conformance sections — author preflight
 
@@ -60,3 +119,51 @@ four-note/four-runner parent candidate and does not cover this follow-up
 theorem, diagnostics, or loop-pack edits. The present expanded candidate still
 needs its own exact-tree validation before any new review PR is opened. No
 independent final-source review or formal audit has occurred.
+
+## Personal transfer-phase and crossing review — 2026-09-24 18:42 UTC
+
+| Artifact | Author check | Result | Limit |
+|---|---|---|---|
+| Exact five-site local expansion | Re-read the complete note and runner; reproduced determinant, coefficient convolution, phase inversion, finite exact-cell products, and actual-index 15-site regrouping | Symbolic identities vanish exactly; finite remainder diagnostics and regrouping match; canonical cache refreshed | Regular local cell only |
+| Regular macroscopic transport | Re-read complete proof and runner; checked SU(1,1) overlap form, moving-frame connection, off-diagonal homological equation, and accumulated O(S^-1) remainder | Berry identity is exact; finite product/phase diagnostics pass; cache refreshed | Uniform gap excludes Bragg, central, turning, and endpoint regions |
+| One simple Bragg crossing | Derived the moving-frame coefficient with the required D similarity conjugation and fixed-lambda derivative; checked inner rho=S^-2/3 and outer eps/rho normal form | Exact symbolic phase identity is zero; wrong Berry sign and additive g1 mutations are rejected; eight exact transfer products show decreasing error, with one hyperbolic cell at every sampled S; cache refreshed | Author check only; one simple root away from center |
+| Four central double contacts | Derived A1(0)=0 from exact residue coefficients and R0'(0)=0; checked quadratic detuning, inner rho=S^-1/2 and outer eps/rho balance | Four exact contact-coefficient residuals and the central matrix are zero; a fixed off-diagonal mutation is rejected; 32 finite products and SU(1,1) checks pass; cache refreshed | Four fixed energies only; finite tests are corroboration |
+
+The first simple-crossing symbolic run exposed a missing similarity
+conjugation in the diagnostic: the per-site matrices were in fixed-cell
+similar coordinates but the principal frame was in physical coordinates.
+After inserting \(M_1=D\widetilde M_1D^{-1}\), the exact moving-frame
+residual reduced to zero. The code-coordinate correction and its original
+nonzero residual are documented in the attempt log. The first central route
+probe had an import-root mistake; it ran no calculation until corrected.
+Neither event is an unresolved physics counterexample.
+
+The local cluster-cap evaluator returned **OPEN** for the proposed third PR
+in the parent-row family after #9078 and #9091. The 200–400-word reasoning is
+in `ARTIFACT_PLAN.md`; the verdict gates PR opening only. Promotion Value Gate
+V1–V5 is also recorded there, with the exact refreshed-main/parent source
+search and PR search receipt at
+`outputs/postmark_moving_index_2026_09_24/attempt_logs/promotion_value_gate_transfer_search.md`.
+
+This is an author-only science and conformance-preparation pass. The ten route
+reviewers selected the route; none reviewed these four final source notes or
+runners. The four canonical caches have just been force-refreshed and passed.
+Final citation-manifest inspection, section-by-section review-loop
+conformance, exact-tree combined pipeline, strict lint, changed-evidence, and
+remote PR creation remain pending. No audit verdict or axiom change is
+claimed.
+
+## Five-note Airy milestone source cold-read and preflight — 2026-09-24 20:30 UTC
+
+| Scope | Author check | Result | Limit |
+|---|---|---|---|
+| Five theorem notes and primary runners | Cold-read the exact note and runner sources, checked the stated transfer conventions, normal forms, error scales, and declared open boundaries; examined the paired result receipts | No new algebraic discrepancy found. The regular, Bragg, central, and Airy claims remain conditional bounded support; the remote forbidden tail, selected boundary mode, quantization, prepared overlaps, and readout are open | Author-only; not an independent review or formal audit |
+| Campaign records and machine fields | Re-read the current handoff, route, assumptions, opportunity, PR, claim-status, and state records; parsed the YAML | Found and fixed an extra indentation in `TRACE_GATE.md`; updated the packet to identify the Airy candidate and its current source search | Exact-tree repository gates still pending |
+| Source and runner identity | Removed trailing whitespace rejected by `git diff --check`, then reran all five primary runners and forced their canonical caches | All five exits were zero; result input hashes match current note bytes; cache freshness reports five fresh and none stale; the Airy slope/shift scratch mutations are rejected | Finite transfer products corroborate but do not prove the analytic rates |
+| Citation graph and current-main novelty | Inspected the regenerated manifest delta and searched `origin/main` `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8` for matching Airy, turning, and five-site transfer sources | Five note nodes and eight intended edges added with no removals or old-edge rewires; no matching source found | Physical model identification remains imported; no axiom update or readout conclusion follows |
+
+The five-note candidate still needs the exact-tree combined pipeline,
+`audit_lint.py --strict`, and changed-evidence checks. The full pipeline must
+run in the isolated review copy; if the packet is updated to record its result,
+rerun the gates on that resulting exact tree. Independent science review and
+formal audit remain pending.

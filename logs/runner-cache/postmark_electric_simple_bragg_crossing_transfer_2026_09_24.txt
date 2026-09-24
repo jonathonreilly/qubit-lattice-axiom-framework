@@ -1,0 +1,240 @@
+===== runner cache v1 =====
+runner: scripts/postmark_electric_simple_bragg_crossing_transfer_2026_09_24.py
+runner_sha256: fe91d8d7167f20bc36ddd7ef30817d95a6400c45d648d1b254c90c58b0c73473
+input_fingerprint_sha256: 9c2f2c2398bc9ff4fe631fee1afaaebc4a76ca2b284f68b261ccc779593b2367
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 4.38
+status: ok
+----- stdout -----
+{
+  "actual_current_surface_status": "conditional-support",
+  "finite_crossing": {
+    "bragg_index_m": 1,
+    "bragg_root_u": 0.75,
+    "endpoint_local_momenta": [
+      0.53266381811748,
+      0.8549006951235802
+    ],
+    "energy_lambda": 0.16711012992192098,
+    "finite_sample_count": 8,
+    "sample_rows": [
+      {
+        "S": 120,
+        "cells": 28,
+        "crossing_phase": 3.141592653589793,
+        "crossing_u": 0.75,
+        "error_times_S_1_3": 0.604155122144783,
+        "hyperbolic_local_cells": 1,
+        "inner_error_times_S_1_3": 1.467660275175031,
+        "inner_layer_cells": 9,
+        "inner_layer_width": 0.041103534572174506,
+        "inner_scalar_product_error": 0.297553541816446,
+        "max_endpoint_k": 0.8549006951235802,
+        "max_local_determinant_error": 8.881784197001252e-16,
+        "max_moving_frame_su11_identity_error": 1.3322676295501878e-15,
+        "max_principal_frame_determinant_error": 5.715599094183297e-16,
+        "min_endpoint_k": 0.53266381811748,
+        "off_diagonal_mixing": 0.09869304668951594,
+        "principal_frame_product_error": 0.12248644965149635,
+        "principal_phase_residual": 0.023236257474980582,
+        "u_interval": [
+          0.6333333333333333,
+          0.8666666666666667
+        ]
+      },
+      {
+        "S": 240,
+        "cells": 56,
+        "crossing_phase": 3.141592653589793,
+        "crossing_u": 0.75,
+        "error_times_S_1_3": 0.5268660119096884,
+        "hyperbolic_local_cells": 1,
+        "inner_error_times_S_1_3": 1.3501397419848118,
+        "inner_layer_cells": 13,
+        "inner_layer_width": 0.025893604216282163,
+        "inner_scalar_product_error": 0.21725759810342,
+        "max_endpoint_k": 0.8549006951235802,
+        "max_local_determinant_error": 1.1102230246251565e-15,
+        "max_moving_frame_su11_identity_error": 1.5543122344752192e-15,
+        "max_principal_frame_determinant_error": 8.89035296437187e-16,
+        "min_endpoint_k": 0.53266381811748,
+        "off_diagonal_mixing": 0.07243757635374148,
+        "principal_frame_product_error": 0.08478059026805125,
+        "principal_phase_residual": 0.012046006201188673,
+        "u_interval": [
+          0.6333333333333333,
+          0.8666666666666667
+        ]
+      },
+      {
+        "S": 480,
+        "cells": 114,
+        "crossing_phase": 3.141592653589793,
+        "crossing_u": 0.75,
+        "error_times_S_1_3": 0.3668993216594776,
+        "hyperbolic_local_cells": 1,
+        "inner_error_times_S_1_3": 0.902295433341663,
+        "inner_layer_cells": 15,
+        "inner_layer_width": 0.016311948504870267,
+        "inner_scalar_product_error": 0.11523958356255748,
+        "max_endpoint_k": 0.8549006951235802,
+        "max_local_determinant_error": 1.7763568394002505e-15,
+        "max_moving_frame_su11_identity_error": 1.9984014443252818e-15,
+        "max_principal_frame_determinant_error": 9.246704366601657e-16,
+        "min_endpoint_k": 0.53266381811748,
+        "off_diagonal_mixing": 0.04069281799749754,
+        "principal_frame_product_error": 0.046859735154409,
+        "principal_phase_residual": 0.00610861377204965,
+        "u_interval": [
+          0.63125,
+          0.86875
+        ]
+      },
+      {
+        "S": 960,
+        "cells": 230,
+        "crossing_phase": 3.141592653589793,
+        "crossing_u": 0.75,
+        "error_times_S_1_3": 0.3434647058301275,
+        "hyperbolic_local_cells": 1,
+        "inner_error_times_S_1_3": 0.6934849247364555,
+        "inner_layer_cells": 19,
+        "inner_layer_width": 0.010275883643043628,
+        "inner_scalar_product_error": 0.07029858988553565,
+        "max_endpoint_k": 0.8549006951235802,
+        "max_local_determinant_error": 1.6653345369377348e-15,
+        "max_moving_frame_su11_identity_error": 1.4432899320127035e-15,
+        "max_principal_frame_determinant_error": 9.246704366601657e-16,
+        "min_endpoint_k": 0.53266381811748,
+        "off_diagonal_mixing": 0.03150366381315039,
+        "principal_frame_product_error": 0.03481702865348388,
+        "principal_phase_residual": 0.0032752010490149676,
+        "u_interval": [
+          0.6302083333333334,
+          0.8697916666666666
+        ]
+      },
+      {
+        "S": 1920,
+        "cells": 460,
+        "crossing_phase": 3.141592653589793,
+        "crossing_u": 0.75,
+        "error_times_S_1_3": 0.3006146808829575,
+        "hyperbolic_local_cells": 1,
+        "inner_error_times_S_1_3": 0.5625524501917941,
+        "inner_layer_cells": 25,
+        "inner_layer_width": 0.006473401054070541,
+        "inner_scalar_product_error": 0.04526153491200538,
+        "max_endpoint_k": 0.8549006951235802,
+        "max_local_determinant_error": 1.5543122344752192e-15,
+        "max_moving_frame_su11_identity_error": 1.9984014443252818e-15,
+        "max_principal_frame_determinant_error": 9.998051602329566e-16,
+        "min_endpoint_k": 0.53266381811748,
+        "off_diagonal_mixing": 0.02256899746195153,
+        "principal_frame_product_error": 0.024186690270758704,
+        "principal_phase_residual": 0.0015973213675065491,
+        "u_interval": [
+          0.6302083333333334,
+          0.8697916666666666
+        ]
+      },
+      {
+        "S": 3840,
+        "cells": 920,
+        "crossing_phase": 3.141592653589793,
+        "crossing_u": 0.75,
+        "error_times_S_1_3": 0.24302331992107698,
+        "hyperbolic_local_cells": 1,
+        "inner_error_times_S_1_3": 0.4251915435073245,
+        "inner_layer_cells": 31,
+        "inner_layer_width": 0.004077987126217568,
+        "inner_scalar_product_error": 0.027152357530303053,
+        "max_endpoint_k": 0.8549006951235802,
+        "max_local_determinant_error": 1.7763568394002505e-15,
+        "max_moving_frame_su11_identity_error": 1.7763568394002505e-15,
+        "max_principal_frame_determinant_error": 1.112838332428697e-15,
+        "min_endpoint_k": 0.53266381811748,
+        "off_diagonal_mixing": 0.01471009628728345,
+        "principal_frame_product_error": 0.015519255195593117,
+        "principal_phase_residual": 0.0008018503931550469,
+        "u_interval": [
+          0.6302083333333334,
+          0.8697916666666666
+        ]
+      },
+      {
+        "S": 7680,
+        "cells": 1842,
+        "crossing_phase": 3.141592653589793,
+        "crossing_u": 0.75,
+        "error_times_S_1_3": 0.19474744427404772,
+        "hyperbolic_local_cells": 1,
+        "inner_error_times_S_1_3": 0.32907063960360683,
+        "inner_layer_cells": 39,
+        "inner_layer_width": 0.002568970910760907,
+        "inner_scalar_product_error": 0.016678950840680606,
+        "max_endpoint_k": 0.8549006951235802,
+        "max_local_determinant_error": 2.220446049250313e-15,
+        "max_moving_frame_su11_identity_error": 2.4424906541753444e-15,
+        "max_principal_frame_determinant_error": 1.112838332428697e-15,
+        "min_endpoint_k": 0.53266381811748,
+        "off_diagonal_mixing": 0.00946861635659772,
+        "principal_frame_product_error": 0.009870777451636939,
+        "principal_phase_residual": 0.00039964607824136925,
+        "u_interval": [
+          0.630078125,
+          0.869921875
+        ]
+      },
+      {
+        "S": 15360,
+        "cells": 3686,
+        "crossing_phase": 3.141592653589793,
+        "crossing_u": 0.75,
+        "error_times_S_1_3": 0.17600813734362988,
+        "hyperbolic_local_cells": 1,
+        "inner_error_times_S_1_3": 0.2554316045928225,
+        "inner_layer_cells": 49,
+        "inner_layer_width": 0.0016183502635176354,
+        "inner_scalar_product_error": 0.010275687613631367,
+        "max_endpoint_k": 0.8549006951235802,
+        "max_local_determinant_error": 2.3314683517128287e-15,
+        "max_moving_frame_su11_identity_error": 3.1086244689504383e-15,
+        "max_principal_frame_determinant_error": 1.3854315956123123e-15,
+        "min_endpoint_k": 0.53266381811748,
+        "off_diagonal_mixing": 0.006879855602221627,
+        "principal_frame_product_error": 0.00708058284206185,
+        "principal_phase_residual": 0.0001993248812053377,
+        "u_interval": [
+          0.6300130208333333,
+          0.8699869791666667
+        ]
+      }
+    ],
+    "scope": "exact scalar-Jacobi finite products in float64; corroboration only, not proof of the uniform O(S^-1/3) rate",
+    "test_interval": [
+      0.63,
+      0.87
+    ]
+  },
+  "numpy": "2.4.4",
+  "source_revision": "20251000c51d7bd23573d36f091eb1c88ebde92a",
+  "source_sha256": {
+    "docs/POSTMARK_ELECTRIC_FIVE_SITE_TRANSFER_PHASE_EXPANSION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f5646a8ee9dca0c813e1978f498bf1036d971b5c854a29aaf7dca6808f917173",
+    "docs/POSTMARK_ELECTRIC_REGULAR_BULK_PHASE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "a0e922d40a0d1f887ce8975537925b4811e8922eabb0c7ed42ee10edb414742c",
+    "docs/POSTMARK_ELECTRIC_SIMPLE_BRAGG_CROSSING_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "6d7d3470593caa53c2d6148e1e73959b9bb6140eb97d600b728d3e23ac9abdd9"
+  },
+  "symbolic": {
+    "additive_g1_mutation_rejected": "-2*(u - 1)*(u + 1)*(16*I*q*z**4 - 12*I*q*z**2 + I*q + 16*z**5 - 20*z**3 + 5*z)",
+    "identity": "-i*(A1[0,0]/exp(5ik)) = g1/sin(k) - B, with lambda held fixed while differentiating u",
+    "moving_frame_phase_identity_mod_sine_square_plus_cosine_square": "0",
+    "opposite_connection_sign_mutation_rejected": "-4*u*(2*z - 1)*(16*I*q*z**4 - 12*I*q*z**2 + I*q + 16*z**5 - 20*z**3 + 5*z)",
+    "principal_frame_determinant_residual": "0"
+  },
+  "sympy": "1.14.0",
+  "target_claim_type": "bounded_theorem"
+}
+
+----- stderr -----
+

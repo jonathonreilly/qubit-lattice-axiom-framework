@@ -1,0 +1,2 @@
+PASS factor-of-two Airy slope: rejected with ('Airy coefficient', -100*a/(a**2 - 1), -100*a/(a**2 - 1))
+PASS finite-spin edge-shift sign: rejected with ('finite-spin edge shift', a - 17/10)

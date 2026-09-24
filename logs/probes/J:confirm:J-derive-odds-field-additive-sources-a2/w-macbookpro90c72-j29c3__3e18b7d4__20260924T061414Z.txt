@@ -1,0 +1,5 @@
+PASS two-record identity: cap/(2 c1) = G(0)/(G(0)+G(r)); within 10 percent iff G(r)/G(0) <= 1/9; no lattice vector has |r|^2 = 7
+PASS massless threshold: 6 G(0)=1.516386059; (2,2,0)=0.111008 < 1/9 < 0.126479=(2,1,1); failing (1, 0, 0):0.3405 (1, 1, 0):0.2184 (1, 1, 1):0.1724 (2, 0, 0):0.1697 (2, 1, 0):0.1422 (2, 1, 1):0.1265
+PASS torus anchor: 7-torus m^2=5, G(e)/G(0)=0.09895102
+HIT: confirmed - two massless records add to within 10 percent iff G(r)/G(0) <= 1/9, which holds for every lattice separation with |r|^2 >= 8 and for none with |r|^2 <= 6. (2,2,0) is 0.1110 and (2,1,1) is 0.1265. There is no vector of squared length 7.
+SUMMARY: confirmed the two-record identity, the massless threshold, and the 7-torus anchor at m^2=5. The cube constant kappa and the D* fit were not re-fitted.

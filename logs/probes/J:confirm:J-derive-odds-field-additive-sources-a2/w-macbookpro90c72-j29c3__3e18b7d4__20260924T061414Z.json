@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-odds-field-additive-sources-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j29c3",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/odds-field-additive-sources/referee_w-macbookpro90c72-j29c3/check.py",
+ "seed": 30454,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3e18b7d4",
+ "started_utc": "20260924T061414Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the two-record identity, the massless threshold, and the 7-torus anchor at m^2=5. The cube constant kappa and the D* fit were not re-fitted."
+ },
+ "review": "Two massless records add to within 10 percent iff G(r)/G(0) <= 1/9. That holds for |r|^2 >= 8 and fails for |r|^2 <= 6; (2,2,0) is 0.111008 and (2,1,1) is 0.126479. There is no vector of squared length 7.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:odds-field-additive-sources:a2/; its files are probes/work/derive/odds-field-additive-sources/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/odds-field-additive-sources/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "692978309909c8c501c0ba69a4fc2a25ae80c36b5d41a5064940c918bcecc0e2",
+ "stdout_tail": "PASS two-record identity: cap/(2 c1) = G(0)/(G(0)+G(r)); within 10 percent iff G(r)/G(0) <= 1/9; no lattice vector has |r|^2 = 7\nPASS massless threshold: 6 G(0)=1.516386059; (2,2,0)=0.111008 < 1/9 < 0.126479=(2,1,1); failing (1, 0, 0):0.3405 (1, 1, 0):0.2184 (1, 1, 1):0.1724 (2, 0, 0):0.1697 (2, 1, 0):0.1422 (2, 1, 1):0.1265\nPASS torus anchor: 7-torus m^2=5, G(e)/G(0)=0.09895102\nHIT: confirmed - two massless records add to within 10 percent iff G(r)/G(0) <= 1/9, which holds for every lattice separation with |r|^2 >= 8 and for none with |r|^2 <= 6. (2,2,0) is 0.1110 and (2,1,1) is 0.1265. There is no vector of squared length 7.\nSUMMARY: confirmed the two-record identity, the massless threshold, and the 7-torus anchor at m^2=5. The cube constant kappa and the D* fit were not re-fitted.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j29c3",
+  "at_utc": "20260924T061421Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Massless two records add to within 10 percent iff |r|^2 >= 8. (2,2,0) is below 1/9 and (2,1,1) is above. No vector has squared length 7.",
+  "by": "w-macbookpro90c72-j29c3",
+  "at_utc": "20260924T061421Z"
+ }
+}

@@ -1,0 +1,7 @@
+ok A1: 24 rotations, 12 orbits fixed by the four invariants, 9 after end-exchange, Burnside (216+9*8)/24 = 12
+ok A2: line ends point at the middle by (t-1)(3t^2+27t+40)/(3t^3+50t^2+179t+200), -53/391 at t=2; plaquette corners point inward; fields vanish at t=1
+ok A3: sum_{c=x,y} D_c G D_c^T = delta - 1/N + Delta_z G on the 2^3 and 4^3 tori; a full divergence leaves only the contact term
+ok A3b: partial_zz (1/r) = (3 cos^2 theta - 1)/r^3, so the far kernel is +2 along the order and -1 across it
+ok A4: isolated record is isotropic; dimer, plaquette and cube corners lean out when a>c; cube corner 89734618/506936397
+SUMMARY: confirmed - a covariant pair weight has 12 values, the hedgehog field is dipolar through Lap_z G, and there is no universal 1/r.
+HIT: confirmed - proper rotations give 12 orbits of (a,b,d) and 9 if ends may be exchanged; on the line of 3 the ends point at the middle by (t-1)(3t^2+27t+40)/(3t^3+50t^2+179t+200); the ordered-medium pair kernel is delta-1/N+Delta_z G, whose far part is (3 cos^2 theta-1)/(4 pi r^3), never 1/r; a lump's corners form a radial hedgehog.

@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-source-direction-dependent-rules-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3541",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/source-direction-dependent-rules/referee_w-macbookpro90c72-j3541/check.py",
+ "seed": 23542,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a73a63f7",
+ "started_utc": "20260924T041902Z",
+ "elapsed_s": 16.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - a covariant pair weight has 12 values, the hedgehog field is dipolar through Lap_z G, and there is no universal 1/r."
+ },
+ "review": "Independent orbit counts, window fields and lump enumerations confirm 12 covariant weights, the line-of-three hedgehog 53/391 at t=2, and a pair kernel delta minus 1/N plus Delta_z G, which is not 1/r.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:source-direction-dependent-rules:a3/; its files are probes/work/derive/source-direction-dependent-rules/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/source-direction-dependent-rules/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "d571b6796fb54492d0b81304dae8311a1e886c220c8ddd6458cf8c3274e19f53",
+ "stdout_tail": "ok A1: 24 rotations, 12 orbits fixed by the four invariants, 9 after end-exchange, Burnside (216+9*8)/24 = 12\nok A2: line ends point at the middle by (t-1)(3t^2+27t+40)/(3t^3+50t^2+179t+200), -53/391 at t=2; plaquette corners point inward; fields vanish at t=1\nok A3: sum_{c=x,y} D_c G D_c^T = delta - 1/N + Delta_z G on the 2^3 and 4^3 tori; a full divergence leaves only the contact term\nok A3b: partial_zz (1/r) = (3 cos^2 theta - 1)/r^3, so the far kernel is +2 along the order and -1 across it\nok A4: isolated record is isotropic; dimer, plaquette and cube corners lean out when a>c; cube corner 89734618/506936397\nSUMMARY: confirmed - a covariant pair weight has 12 values, the hedgehog field is dipolar through Lap_z G, and there is no universal 1/r.\nHIT: confirmed - proper rotations give 12 orbits of (a,b,d) and 9 if ends may be exchanged; on the line of 3 the ends point at the middle by (t-1)(3t^2+27t+40)/(3t^3+50t^2+179t+200); the ordered-medium pair kernel is delta-1/N+Delta_z G, whose far part is (3 cos^2 theta-1)/(4 pi r^3), never 1/r; a lump's corners form a radial hedgehog.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3541",
+  "at_utc": "20260924T041919Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

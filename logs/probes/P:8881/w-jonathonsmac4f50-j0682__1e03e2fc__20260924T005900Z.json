@@ -1,0 +1,36 @@
+{
+ "task": "P:8881",
+ "type": "pr-reexecution",
+ "lane": "ice-winding-stiffness-one-third-20260923",
+ "worker": "w-jonathonsmac4f50-j0682",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8881",
+ "pr": 8881,
+ "branch": "claude/ice-winding-stiffness-one-third-20260923",
+ "git_sha": "1e03e2fc",
+ "started_utc": "20260924T005900Z",
+ "elapsed_s": 111.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=8 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #8881's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "afa62f003089c65a9106837c6c0894b5bd2650360e5f21085a028ffa55e7a35f",
+ "stdout_tail": "PR #8881: docs(ice): winding stiffness and correlations carry the sum-rule stiffness\nbranch claude/ice-winding-stiffness-one-third-20260923 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py: rc=0 PASS=8 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0682",
+  "at_utc": "20260924T010051Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

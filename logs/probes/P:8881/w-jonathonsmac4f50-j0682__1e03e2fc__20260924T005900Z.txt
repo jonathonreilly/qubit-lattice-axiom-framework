@@ -1,0 +1,4 @@
+PR #8881: docs(ice): winding stiffness and correlations carry the sum-rule stiffness
+branch claude/ice-winding-stiffness-one-third-20260923 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py: rc=0 PASS=8 FAIL=0

@@ -193,7 +193,7 @@ def star_null(center):
 
 stars = {"vertex": (0, 0, 0), "link": (1, 0, 0), "plaquette": (1, 1, 0), "cube": (1, 1, 1)}
 res = {name: star_null(c) for name, c in stars.items()}
-check("no single neighbourhood: no nonzero Gauss-invariant slot change fits in any site's closed neighbourhood",
+check("no single neighbourhood (integer slots): no nonzero Gauss-invariant slot change fits in any site's closed neighbourhood",
       all(nul == 0 for n_, nul in res.values()),
       "; ".join(f"{name}: {n_} slots, null dimension {nul}" for name, (n_, nul) in res.items()))
 

@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_tensor_constraints_freeze_under_two_site_generators_2026_09_24.py
-runner_sha256: 5e635b1700423aea2d5bdd5f00cb3d69536ba36cde4b4c415aa0e51d19f603b9
+runner_sha256: cf82be5096c148d5c488c519c3d6740ee97ae7862a31625df085af891efac611
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 40.82
+elapsed_sec: 40.91
 status: ok
 ----- stdout -----
 [PASS] placement: each row uses exactly its link site's six neighbours with coefficients +-1; each slot enters rows at >= 2 distinct link sites; slot sites are never adjacent :: 192 rows on the L = 4 torus; fewest link sites per slot 2 (diagonal 2, face 4); adjacent slot-site pairs 0
 [PASS] freeze: on a Z2 window, two-site operators commuting with every row's window part commute with every slot :: invariant operator span of rank 27; max |[H, X_slot]| 0.0e+00
-[PASS] no single neighbourhood: no nonzero Gauss-invariant slot change fits in any site's closed neighbourhood :: vertex: 3 slots, null dimension 0; link: 10 slots, null dimension 0; plaquette: 1 slots, null dimension 0; cube: 6 slots, null dimension 0
+[PASS] no single neighbourhood (integer slots): no nonzero Gauss-invariant slot change fits in any site's closed neighbourhood :: vertex: 3 slots, null dimension 0; link: 10 slots, null dimension 0; plaquette: 1 slots, null dimension 0; cube: 6 slots, null dimension 0
 [PASS] smallest local moves: 10 slots on 9 sites, planar, coefficients 1 and 2; a planar piece of the landed scalar-gauge pattern, which is the sum of the three pieces :: through a diagonal slot: support 10 on 9 sites, doubled extent [0, 4, 4]; through a face slot: support 10 on 9 sites; solver optimal True; planar pieces in the kernel True; sum of pieces = S^T delta True; face-slot optimum is a planar piece True
 TOTAL: PASS=4 FAIL=0
 

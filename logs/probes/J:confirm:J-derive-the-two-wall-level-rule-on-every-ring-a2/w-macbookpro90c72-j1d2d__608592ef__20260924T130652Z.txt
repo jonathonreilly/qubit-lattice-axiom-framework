@@ -1,0 +1,5 @@
+PASS chebyshev: B^k matches the Chebyshev block through k=12, the two-defect trace holds for M=3..8, and D^2-4C^2=eta^2
+PASS levels: on rings of length 4, 8, 12 and 16 the odd block is the bare ring plus antipodal defects, and only the band edges move
+PASS mod4: lengths 6, 10 and 14 have no bare level 1, two strong walls, and no surviving squared level; L=6 loses {9/100: 2, 309/400: 4} and gains {387/400: 4, 0: 2}; t=e^(+-delta) sends sinh^2 and cosh^2 to 0 and cosh 2 delta
+HIT: confirmed - on rings whose length is a multiple of 4, the two antipodal walls are opposite defects on one sublattice, and the squared spectrum replaces (t_s-t_w)^2/4 and (t_s+t_w)^2/4 by 0 and (t_s^2+t_w^2)/2. For t=e^(+-delta) those edges are sinh^2 and cosh^2, sent to 0 and cosh 2 delta. When the length is 2 mod 4 there is no bare level 1, both walls are strong, and every squared level moves.
+SUMMARY: confirmed the Chebyshev trace, the level rule on lengths 4, 8, 12 and 16, and the 2 mod 4 obstruction. The M=32 sea and the random-bond determinant survey were not rebuilt.

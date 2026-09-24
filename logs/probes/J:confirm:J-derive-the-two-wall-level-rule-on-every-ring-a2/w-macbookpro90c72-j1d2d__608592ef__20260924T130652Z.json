@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-two-wall-level-rule-on-every-ring-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j1d2d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-two-wall-level-rule-on-every-ring/referee_w-macbookpro90c72-j1d2d/check.py",
+ "seed": 55212,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "608592ef",
+ "started_utc": "20260924T130652Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the Chebyshev trace, the level rule on lengths 4, 8, 12 and 16, and the 2 mod 4 obstruction. The M=32 sea and the random-bond determinant survey were not rebuilt."
+ },
+ "review": "Chebyshev traces and exact spectra on lengths 4, 8, 12 and 16 confirm the antipodal wall rule. Lengths 6, 10 and 14 have no bare level 1 and both walls strong. The M=32 sea was not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-two-wall-level-rule-on-every-ring:a2/; its files are probes/work/derive/the-two-wall-level-rule-on-every-ring/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-two-wall-level-rule-on-every-ring/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "d40bfb500bba0f5f8a213d7365ba45ef813906a07c45bf6ac6b949427191139f",
+ "stdout_tail": "PASS chebyshev: B^k matches the Chebyshev block through k=12, the two-defect trace holds for M=3..8, and D^2-4C^2=eta^2\nPASS levels: on rings of length 4, 8, 12 and 16 the odd block is the bare ring plus antipodal defects, and only the band edges move\nPASS mod4: lengths 6, 10 and 14 have no bare level 1, two strong walls, and no surviving squared level; L=6 loses {9/100: 2, 309/400: 4} and gains {387/400: 4, 0: 2}; t=e^(+-delta) sends sinh^2 and cosh^2 to 0 and cosh 2 delta\nHIT: confirmed - on rings whose length is a multiple of 4, the two antipodal walls are opposite defects on one sublattice, and the squared spectrum replaces (t_s-t_w)^2/4 and (t_s+t_w)^2/4 by 0 and (t_s^2+t_w^2)/2. For t=e^(+-delta) those edges are sinh^2 and cosh^2, sent to 0 and cosh 2 delta. When the length is 2 mod 4 there is no bare level 1, both walls are strong, and every squared level moves.\nSUMMARY: confirmed the Chebyshev trace, the level rule on lengths 4, 8, 12 and 16, and the 2 mod 4 obstruction. The M=32 sea and the random-bond determinant survey were not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1d2d",
+  "at_utc": "20260924T130659Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Chebyshev traces and spectra on lengths 4 through 16 confirm the antipodal rule. Lengths 2 mod 4 obstruct it. The M=32 sea was not rebuilt.",
+  "by": "w-macbookpro90c72-j1d2d",
+  "at_utc": "20260924T130659Z"
+ }
+}

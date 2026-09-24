@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the sixteen blocks are exactly the
+L. Ledger: the decision points used by the seventeen blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -51,6 +51,8 @@ L. Ledger: the decision points used by the sixteen blocks are exactly the
    marginal; channels do not; the transpose on half a singlet is negative.
 16. (9085) Joint record effects with Born marginals are product projectors,
    so a record updates its partner to the Lueders conditional state.
+17. (9086) Proportional Kraus operators give a unitary conjugation; random
+   non-unitary channels mix some pure state.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -110,6 +112,8 @@ DECLARED = {
     "D-star": "a covariant generator on a plaquette site's four link neighbours",
     "D-loc": "marginal record distributions do not depend on distant record formation",
     "D-rev": "reversible, continuous-time, nearest-neighbour evolution between records",
+    "D-closed": "the lattice is the whole system (nothing outside it)",
+    "D-onlyrec": "records are the only irreversible events",
 }
 USED = {
     9040: {"D-dyn", "D-pc", "D-sold"},
@@ -128,6 +132,7 @@ USED = {
     9083: {"D-dyn", "D-perm", "D-menu", "D-loc"},
     9084: {"D-loc", "D-perm", "D-rev", "D-pc", "D-sold"},
     9085: {"D-loc", "D-perm", "D-menu"},
+    9086: {"D-loc", "D-closed", "D-onlyrec"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -691,6 +696,25 @@ for _ in range(50):
     dev_ = max(dev_, np.linalg.norm(tom - lued))
 check("joint record effects with Born marginals are product projectors; the partner's post-record state is the Lueders state",
       inter_ == 1 and dev_ < 1e-12, f"range intersection dimension {inter_}; tomography vs Lueders deviation {dev_:.1e}")
+
+# ------------------------------------------ 17: unitarity from closure
+print("17. a closed lattice evolves unitarily between records")
+from scipy.linalg import expm as _expm2
+H_ = rng.normal(size=(3, 3)) + 1j * rng.normal(size=(3, 3))
+U_ = _expm2(-1j * (H_ + H_.conj().T))
+cc = rng.normal(size=3) + 1j * rng.normal(size=3)
+cc /= np.linalg.norm(cc)
+vv = rng.normal(size=3) + 1j * rng.normal(size=3)
+vv /= np.linalg.norm(vv)
+rr = np.outer(vv, vv.conj())
+dev_u = np.linalg.norm(sum(abs(c_) ** 2 * U_ @ rr @ U_.conj().T for c_ in cc) - U_ @ rr @ U_.conj().T)
+Gk = rng.normal(size=(6, 3)) + 1j * rng.normal(size=(6, 3))
+Qk, _ = np.linalg.qr(Gk)
+Ks = [Qk[:3, :], Qk[3:, :]]
+low = min(np.real(np.trace(np.linalg.matrix_power(sum(K @ np.outer(w_, w_.conj()) @ K.conj().T for K in Ks), 2)))
+          for w_ in [(lambda z: z / np.linalg.norm(z))(rng.normal(size=3) + 1j * rng.normal(size=3)) for _ in range(30)])
+check("proportional Kraus operators give a unitary conjugation; a random non-unitary channel mixes some pure state",
+      dev_u < 1e-12 and low < 0.99, f"proportional-Kraus deviation {dev_u:.1e}; lowest output purity {low:.3f}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

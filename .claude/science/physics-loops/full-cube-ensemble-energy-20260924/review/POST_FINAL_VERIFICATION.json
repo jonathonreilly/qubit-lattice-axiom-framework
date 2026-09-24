@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-09-24T17:18:35.286977+00:00",
+  "PRE_seal_sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+  "PRE_unchanged_members": 34,
+  "released_live_source_and_snapshot_matches": 10,
+  "author_seal_members_verified": 8,
+  "procedural_snapshots_verified": 3,
+  "new_control_returncode": 0,
+  "new_control_stdout_matches_result": true,
+  "new_control_stderr_bytes": 0,
+  "new_source_sha_matches_execution_and_result": true,
+  "report_sha256": "8d9dcbec4f90d8acdc5bf2e50c90851a0e1aa51634d8d1c09661eeefed9af327",
+  "source_pins_sha256": "7c788022b1baa52c1c7b3ad7bf6fb843da48fc8fa55b87d51bf120e2ffa9d2f9",
+  "new_control_result_sha256": "4f044023af611650884e73af7666294620bea20edfecfd870912184fa0c79c6c",
+  "disposition": "No material correction identified on checked conditional premises; not an audit verdict.",
+  "writes_limited_to": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent"
+}

@@ -1,0 +1,84 @@
+{
+  "verified_utc": "2026-09-24T16:54:51.171936+00:00",
+  "scope": "Exact source identity and complete evidence verification; no author source or primary control execution",
+  "scientific_git_sources": [
+    {
+      "git_source": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8:docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317
+    },
+    {
+      "git_source": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8:docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "git_source": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8:docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "git_source": "c234d47c9d99b7fd5590957ec08d9083877d25e6:docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "bytes": 27264
+    },
+    {
+      "git_source": "0648cc1c37137fe23a581ec2c5e40ea3a56c7493:docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967",
+      "bytes": 12076
+    },
+    {
+      "git_source": "918fbe18619667017c56c29677f9f02363368d89:docs/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "ab8234682ea61bff35fbd18685f65ac0b853aa20e0d3600304b9004076bd147a",
+      "bytes": 31883
+    },
+    {
+      "git_source": "cfac353eedae504627196bf9e48009f1b4177f94:docs/MIXED_LOW_FIELD_INPUTS_RETAIN_CUBE_BIRTH_ENERGY_AND_COHERENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "04bf4ad2def6a5d8e7a0ab711d4e6e52d1933eb9d28366b1cdb5dee1383d9726",
+      "bytes": 18577
+    }
+  ],
+  "supplied_prior_PRE_and_seal_bytes_verified": true,
+  "prior_historical_packet_members_not_reverified": true,
+  "instruction_sources_verified": 3,
+  "own_evidence_files_verified": 14,
+  "control_executions": [
+    {
+      "attempt": 1,
+      "exit_code": 0,
+      "elapsed_seconds": 0.14879808318801224,
+      "result": "CONTROL_ATTEMPT_1_RESULTS.json",
+      "result_sha256": "0b35c5c182b17c3592d66a2ff90439c0532505bc85db091c68baa8af074fb047",
+      "stderr_bytes": 0
+    },
+    {
+      "attempt": 2,
+      "exit_code": 0,
+      "elapsed_seconds": 0.2333932090550661,
+      "result": "INDEPENDENT_SOURCE_AGE_RESULTS.json",
+      "result_sha256": "0d13f5dd9cc4fab0f761897ab5504e5f21697180f23864aac494a5cddba1d4ca",
+      "stderr_bytes": 0
+    }
+  ],
+  "primitive_rows": 12,
+  "scalar_age_rows": 12,
+  "envelope_rows": 5,
+  "maximum_scalar_age_quadrature_error": 5.575040429306455e-12,
+  "control_imports": [
+    "collections",
+    "functools",
+    "fractions",
+    "itertools",
+    "math",
+    "pathlib",
+    "hashlib",
+    "json",
+    "time"
+  ],
+  "PRE_sha256": "3996a4a5d128545470b8636d88aef2d6b29e424eff8672bd3be125dc372258df",
+  "SOURCE_PINS_sha256": "9b9711a430ecf9bbcc62629ea1e6c8f78828b4fd56540d9085b2c79ed43adcf0",
+  "current_root_candidate_read": false,
+  "delegation_used": false,
+  "large_parent_calculation_repeated": false,
+  "audit_verdict": null
+}

@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-09-24T17:41:56.728613+00:00",
+  "prior_packets_preserved": [
+    {
+      "path": "PRE_SEAL.json",
+      "sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+      "unchanged_members": 34
+    },
+    {
+      "path": "POST_SEAL.json",
+      "sha256": "72d73d581716f85e7f47521aa7acfc40707b46a8bcc119933dcc0d8eeaf975fa",
+      "unchanged_members": 23
+    }
+  ],
+  "live_source_and_snapshot_matches": 17,
+  "declared_input_count": 7,
+  "input_fingerprint_sha256": "bf1190766f15bae5d1cb10d49a68d0a7773c999b3a56699846bfc301351904e7",
+  "scientific_payloads_exactly_equal_to_author": true,
+  "cache_reconstructed_byte_for_byte": true,
+  "bounded_correspondence_executions": 2,
+  "primary_executions_by_checker": 0,
+  "both_correspondence_exits_zero_and_stderr_empty": true,
+  "attempt1_result_differs_only_in_timestamp_and_checker_source_hash": true,
+  "report": {
+    "path": "PUBLICATION_COMPARISON.md",
+    "sha256": "6684246b8751ac36768d445c6f85d675aff31eade37bbbf3e669d1becfc8ab5e",
+    "bytes": 16295
+  },
+  "source_pins": {
+    "path": "PUBLICATION_SOURCE_PINS.json",
+    "sha256": "61e539824ded8ce46687205fa280541ea09d2b43c5e19087aee164282ffcfbfb",
+    "bytes": 9972
+  },
+  "disposition": "No source/premise/limit/control/cache correction identified on checked conditional premises; not an audit verdict.",
+  "writes_limited_to": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent"
+}

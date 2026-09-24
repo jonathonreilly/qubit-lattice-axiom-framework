@@ -1,0 +1,14 @@
+{
+  "verified_utc": "2026-09-24T17:28:55.737079+00:00",
+  "result_sha256": "603bf4ed4fcb27c1c53d3cbf85a962880a1c6ef38a3e7f2375e1b6ab4a82d35e",
+  "cache_sha256": "2803e5776faaa9ddf4e33648596386e83021264337c861f52e25b10b5aca93e9",
+  "note_sha256": "b2fe61b2a821fea5cc99e4e87b2d28536673a10cab5c2bed5b51daffa6cc2d9d",
+  "runner_sha256": "ff2af3a1caa0a0e4f4bdef7739a2ecc7cc56024990af0c82312f60d2f033ce9b",
+  "seconds": 1.1261796951293945,
+  "all_scientific_payloads_identical_to_sealed_author": true,
+  "stdout_fully_bound": true,
+  "provenance": {
+    "embedded_author_word_helpers": "8f4320e1cb333098bb3a609b0a95366380ffc7f1c693cffb8342d757fbc7a09a",
+    "reused_author_control": "7354476b7b253e966f66bfe0b3d6cca32f3949b18c4208470de27951e33ad7c7"
+  }
+}

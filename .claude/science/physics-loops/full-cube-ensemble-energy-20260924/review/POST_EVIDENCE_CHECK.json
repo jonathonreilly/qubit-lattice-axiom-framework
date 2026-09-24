@@ -1,0 +1,294 @@
+{
+  "created_utc": "2026-09-24T17:12:08.544721+00:00",
+  "source_sha256": "576cc58b8803cd07163363832da5f9c55d07e30f17d7076f9defceed8422c425",
+  "source_and_seal_checks": {
+    "PRE_seal_sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+    "PRE_unchanged_member_count": 34,
+    "released_snapshots": [
+      {
+        "snapshot": "POST_sources/AUTHOR_SEAL.json",
+        "sha256": "b1911b15a9271cedd3f75f5291ce26b145af79ec3d0b81f33ac5daca1e414efd",
+        "bytes": 505,
+        "live_source_matches": true
+      },
+      {
+        "snapshot": "POST_sources/CONTROL_SEAL.json",
+        "sha256": "a8e9e3a9df291663235b06bcb5bff26b61b902ca37f6be6058de035aeb043fe2",
+        "bytes": 877,
+        "live_source_matches": true
+      },
+      {
+        "snapshot": "POST_sources/FULL_CUBE_ENERGY_ANOMALY_PERSONAL_DERIVATION.md",
+        "sha256": "42570c118387059b66ad7a76c4b57bfdc7acdcb8c0c58aa2a5f0c622bd9cc723",
+        "bytes": 21226,
+        "live_source_matches": true
+      },
+      {
+        "snapshot": "POST_sources/full_ensemble_energy_controls.py",
+        "sha256": "7354476b7b253e966f66bfe0b3d6cca32f3949b18c4208470de27951e33ad7c7",
+        "bytes": 9619,
+        "live_source_matches": true
+      },
+      {
+        "snapshot": "POST_sources/SOURCE_PINS.json",
+        "sha256": "632ce908212e6a48321f54e0dfd5c9acccb4ade62bd37797c013159db2ccedfa",
+        "bytes": 4547,
+        "live_source_matches": true
+      },
+      {
+        "snapshot": "POST_sources/FULL_ENSEMBLE_CONTROL_RESULTS.json",
+        "sha256": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+        "bytes": 19002,
+        "live_source_matches": true
+      },
+      {
+        "snapshot": "POST_sources/CONTROL.stdout.txt",
+        "sha256": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+        "bytes": 19002,
+        "live_source_matches": true
+      },
+      {
+        "snapshot": "POST_sources/CONTROL.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "live_source_matches": true
+      },
+      {
+        "snapshot": "POST_sources/CONTROL_EXECUTION.json",
+        "sha256": "fa76d60015c0827e61cd7033f5cd926804050cb3267b4c156e1ca454314501aa",
+        "bytes": 245,
+        "live_source_matches": true
+      },
+      {
+        "snapshot": "POST_sources/CONTROL_SCOPE.md",
+        "sha256": "de65966a2f7f25ee0d3de0c00d6358facbbaf210ce42ec514bb49e01b2eb1fab",
+        "bytes": 1761,
+        "live_source_matches": true
+      }
+    ],
+    "author_sealed_member_counts": {
+      "AUTHOR_SEAL.json": 2,
+      "CONTROL_SEAL.json": 6
+    },
+    "procedural_snapshot_count": 3,
+    "stdout_identical_to_complete_result": true,
+    "stderr_empty": true,
+    "author_execution": {
+      "started_utc": "2026-09-24T16:37:00.589449+00:00",
+      "ended_utc": "2026-09-24T16:37:01.667533+00:00",
+      "seconds": 1.0780968328472227,
+      "exit_code": 0,
+      "script_sha256": "7354476b7b253e966f66bfe0b3d6cca32f3949b18c4208470de27951e33ad7c7"
+    },
+    "shared_scientific_source_pin_count": 9,
+    "root_only_declared_sources_not_imported": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/RECENT_BIRTH_FULL_ENSEMBLE_ENERGY_PERSONAL_DERIVATION.md",
+        "sha256": "5d462335236e20329c9fecac8970cf8ee6393f3af7506ee7db9dbe560e94d74e",
+        "status": "prior sealed lower-bound source, PRE improvement attributed"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-independent/POST.md",
+        "sha256": "c6abb14d3ba48f748441941ad9aca16e5d3d6ad73df55677f0e1d483dafd4be3",
+        "status": "prior sealed lower-bound source, PRE improvement attributed"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-independent/POST_SEAL.json",
+        "sha256": "3152d1e7a2bacd06f615f97ec0de54d0dc0f7f109af1347e25d31771b0373b38",
+        "status": "prior sealed lower-bound source, PRE improvement attributed"
+      }
+    ],
+    "reused_helper": {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/mixed_preparation_controls.py",
+      "sha256": "8f4320e1cb333098bb3a609b0a95366380ffc7f1c693cffb8342d757fbc7a09a",
+      "current_bytes_match": true,
+      "scope": "Byte pin only; body not re-reviewed or executed. The root word controls remain author evidence."
+    }
+  },
+  "released_author_result_checks": {
+    "source_algebra_case_count": 1260,
+    "source_algebra_mutant_nonzero_count": 1239,
+    "max_author_source_identity_residual_squared": 6.310887241768095e-30,
+    "author_toy_row_count": 15,
+    "toy_scope": "Exact diagonal density blocks of a supplied ten-state GKLS cascade with a rotating two-state initial input, born low doublet, four fast matter states and terminal doublet. A coherent first jump has low amplitude sqrt(kappa b)I and high amplitude sqrt(kappa) epsilon R; the second jump absorbs bright states at rate 2 kappa/epsilon^2. Off-diagonal density blocks are unnecessary for these block-diagonal Hermitian energy moments and are not approximated here. This toy has an exponential fast gap, unlike the cube rotor. No cube limit, QFI or conserving-apparatus claim.",
+    "toy_maximum_real_fast_eigenvalue_reported_not_recomputed": -0.06490027702708749,
+    "target_checks": [
+      {
+        "t": 0.4,
+        "literal_array_Lyapunov_residual_frobenius": 2.3417159360667652e-15,
+        "Hermitian_residual_frobenius": 3.6887253973555445e-16,
+        "floating_LDL_pivots": [
+          0.9587361891740801,
+          1.1671853825915364,
+          0.8261890375869099,
+          0.6689497764546177
+        ],
+        "Sigma_trace": 3.8725137671763803,
+        "bright_trace": 1.7456852649774361,
+        "bright_trace_target": 1.7456852649774386,
+        "finest_epsilon": 0.01,
+        "finest_mean_absolute_error": 0.0017298878605203072,
+        "finest_scaled_variance_absolute_error": 0.0019228527712291665,
+        "finest_scaled_high_density_trace_distance": 0.003117061350703635,
+        "author_wrong_unevolved_source_trace_distance": 1.7870471047753183
+      },
+      {
+        "t": 1.1,
+        "literal_array_Lyapunov_residual_frobenius": 2.2473560706701013e-15,
+        "Hermitian_residual_frobenius": 5.899488241153451e-16,
+        "floating_LDL_pivots": [
+          0.9373342588032172,
+          0.302316604728214,
+          0.8581816956171398,
+          0.2632553947353264
+        ],
+        "Sigma_trace": 2.6978588986120826,
+        "bright_trace": 1.3759538236579585,
+        "bright_trace_target": 1.3759538236579587,
+        "finest_epsilon": 0.01,
+        "finest_mean_absolute_error": 0.0007890266548056246,
+        "finest_scaled_variance_absolute_error": 0.0008697173710632278,
+        "finest_scaled_high_density_trace_distance": 0.0009374339883582355,
+        "author_wrong_unevolved_source_trace_distance": 3.4752332482879944
+      },
+      {
+        "t": 2.3,
+        "literal_array_Lyapunov_residual_frobenius": 1.2092892226214453e-15,
+        "Hermitian_residual_frobenius": 6.51609799162406e-16,
+        "floating_LDL_pivots": [
+          0.36745864435825165,
+          0.5308418279106767,
+          0.3326009728086638,
+          0.46495251521294306
+        ],
+        "Sigma_trace": 1.8219738720156713,
+        "bright_trace": 0.9149802309674653,
+        "bright_trace_target": 0.9149802309674663,
+        "finest_epsilon": 0.01,
+        "finest_mean_absolute_error": 0.0003239508336656538,
+        "finest_scaled_variance_absolute_error": 0.0003509924536819753,
+        "finest_scaled_high_density_trace_distance": 0.0014177980643346924,
+        "author_wrong_unevolved_source_trace_distance": 1.5584910048410243
+      }
+    ],
+    "minimum_reported_diagonal_block_eigenvalue": -6.903658457278705e-14,
+    "scope_prose_rounding_checked": true,
+    "scope": "Complete reported result and source correspondence. Literal-array matrix residuals recomputed; author cascade propagations and imported word helper not executed. No independent cube numerical claim."
+  },
+  "independent_exact_balance_check": {
+    "model": "Independent two-state supplied dark/bright generator L=[[0,-ig],[-ig,-kappa]], Gamma=2|bright><bright|; source kappa*a|dark><dark|.",
+    "rows": [
+      {
+        "g": "2/3",
+        "kappa": "1/5",
+        "source_squared_norm": "7/4",
+        "Sigma_Gaussian_rational_entries": [
+          [
+            [
+              "763/800",
+              "0"
+            ],
+            [
+              "0",
+              "21/80"
+            ]
+          ],
+          [
+            [
+              "0",
+              "-21/80"
+            ],
+            [
+              "7/8",
+              "0"
+            ]
+          ]
+        ],
+        "Lyapunov_residual_squared": "0",
+        "determinant": "49/64",
+        "trace": "1463/800",
+        "Gamma_trace": "7/4",
+        "bright_trace": "7/8",
+        "missing_kappa_mutant_residual_squared": "49/25",
+        "reversed_current_mutant_residual_squared": "20041/20000"
+      },
+      {
+        "g": "3/2",
+        "kappa": "4/7",
+        "source_squared_norm": "5/9",
+        "Sigma_Gaussian_rational_entries": [
+          [
+            [
+              "2525/7938",
+              "0"
+            ],
+            [
+              "0",
+              "20/189"
+            ]
+          ],
+          [
+            [
+              "0",
+              "-20/189"
+            ],
+            [
+              "5/18",
+              "0"
+            ]
+          ]
+        ],
+        "Lyapunov_residual_squared": "0",
+        "determinant": "25/324",
+        "trace": "2365/3969",
+        "Gamma_trace": "5/9",
+        "bright_trace": "5/18",
+        "missing_kappa_mutant_residual_squared": "25/441",
+        "reversed_current_mutant_residual_squared": "1462400/1750329"
+      },
+      {
+        "g": "1/10",
+        "kappa": "3/5",
+        "source_squared_norm": "2",
+        "Sigma_Gaussian_rational_entries": [
+          [
+            [
+              "37",
+              "0"
+            ],
+            [
+              "0",
+              "6"
+            ]
+          ],
+          [
+            [
+              "0",
+              "-6"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "Lyapunov_residual_squared": "0",
+        "determinant": "1",
+        "trace": "38",
+        "Gamma_trace": "2",
+        "bright_trace": "1",
+        "missing_kappa_mutant_residual_squared": "16/25",
+        "reversed_current_mutant_residual_squared": "576/5"
+      }
+    ],
+    "integrability_hypothesis_control": {
+      "g_zero": "L leaves the dark source unchanged; its integrated density has trace kappa*a*age and diverges.",
+      "Lyapunov_obstruction": "For g=0 every matrix has (L Sigma+Sigma L*)_00=0; the required right side is -kappa*a != 0.",
+      "scope": "Shows bounded dissipativity alone cannot replace the cube decay/tightness premise. It is not a counterexample under that premise."
+    },
+    "scope": "Exact rational signs, source factor, bright trace and positivity in a separate stable two-state mechanism. No cube tail, finite-spin limit or apparatus claim."
+  },
+  "author_code_imported_or_executed": false,
+  "expensive_primary_or_parent_run_repeated": false,
+  "audit_verdict_applied": false
+}

@@ -1,0 +1,11 @@
+{
+  "base_revision": "55dfb1a8c7924d345d961a7e4763b11f20f1786a",
+  "files_sha256": {
+    "docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md": "b2fe61b2a821fea5cc99e4e87b2d28536673a10cab5c2bed5b51daffa6cc2d9d",
+    "scripts/full_original_cube_ensemble_energy_and_rare_density_2026_09_24.py": "ff2af3a1caa0a0e4f4bdef7739a2ecc7cc56024990af0c82312f60d2f033ce9b"
+  },
+  "root_candidate": "42570c118387059b66ad7a76c4b57bfdc7acdcb8c0c58aa2a5f0c622bd9cc723",
+  "PRE": "3996a4a5d128545470b8636d88aef2d6b29e424eff8672bd3be125dc372258df",
+  "POST": "8d9dcbec4f90d8acdc5bf2e50c90851a0e1aa51634d8d1c09661eeefed9af327",
+  "scope": "Publication proof uses the rate-free PRE and POST density proof, with source grading and Gram identities explicit; primary embeds unchanged named author helpers."
+}

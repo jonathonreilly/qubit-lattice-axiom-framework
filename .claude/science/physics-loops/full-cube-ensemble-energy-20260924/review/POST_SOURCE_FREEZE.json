@@ -1,0 +1,91 @@
+{
+  "frozen_utc": "2026-09-24T17:02:23.020014+00:00",
+  "released_sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/AUTHOR_SEAL.json",
+      "snapshot": "POST_sources/AUTHOR_SEAL.json",
+      "sha256": "b1911b15a9271cedd3f75f5291ce26b145af79ec3d0b81f33ac5daca1e414efd",
+      "bytes": 505
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL_SEAL.json",
+      "snapshot": "POST_sources/CONTROL_SEAL.json",
+      "sha256": "a8e9e3a9df291663235b06bcb5bff26b61b902ca37f6be6058de035aeb043fe2",
+      "bytes": 877
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/FULL_CUBE_ENERGY_ANOMALY_PERSONAL_DERIVATION.md",
+      "snapshot": "POST_sources/FULL_CUBE_ENERGY_ANOMALY_PERSONAL_DERIVATION.md",
+      "sha256": "42570c118387059b66ad7a76c4b57bfdc7acdcb8c0c58aa2a5f0c622bd9cc723",
+      "bytes": 21226
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/full_ensemble_energy_controls.py",
+      "snapshot": "POST_sources/full_ensemble_energy_controls.py",
+      "sha256": "7354476b7b253e966f66bfe0b3d6cca32f3949b18c4208470de27951e33ad7c7",
+      "bytes": 9619
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/SOURCE_PINS.json",
+      "snapshot": "POST_sources/SOURCE_PINS.json",
+      "sha256": "632ce908212e6a48321f54e0dfd5c9acccb4ade62bd37797c013159db2ccedfa",
+      "bytes": 4547
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/FULL_ENSEMBLE_CONTROL_RESULTS.json",
+      "snapshot": "POST_sources/FULL_ENSEMBLE_CONTROL_RESULTS.json",
+      "sha256": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+      "bytes": 19002
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL.stdout.txt",
+      "snapshot": "POST_sources/CONTROL.stdout.txt",
+      "sha256": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+      "bytes": 19002
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL.stderr.txt",
+      "snapshot": "POST_sources/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL_EXECUTION.json",
+      "snapshot": "POST_sources/CONTROL_EXECUTION.json",
+      "sha256": "fa76d60015c0827e61cd7033f5cd926804050cb3267b4c156e1ca454314501aa",
+      "bytes": 245
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL_SCOPE.md",
+      "snapshot": "POST_sources/CONTROL_SCOPE.md",
+      "sha256": "de65966a2f7f25ee0d3de0c00d6358facbbaf210ce42ec514bb49e01b2eb1fab",
+      "bytes": 1761
+    }
+  ],
+  "procedural_sources": [
+    {
+      "source": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8:docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "snapshot": "POST_sources/PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    },
+    {
+      "source": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "snapshot": "POST_sources/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "source": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "snapshot": "POST_sources/PROOF_SEARCH_GOVERNANCE.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    }
+  ],
+  "PRE_dependency": {
+    "seal": "PRE_SEAL.json",
+    "sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+    "unchanged_members": 34
+  },
+  "scope": "Separate released-source POST; preserve every prior PRE member and every author source; no large primary rerun or audit verdict."
+}

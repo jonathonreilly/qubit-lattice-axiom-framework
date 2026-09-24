@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-24T16:31:08.757346+00:00",
+  "scope": "Root conditional full N4-start energy, sharp variance and rare high-density candidate before independent reconstruction. No claim of review or numerical controls.",
+  "files_sha256": {
+    "FULL_CUBE_ENERGY_ANOMALY_PERSONAL_DERIVATION.md": "42570c118387059b66ad7a76c4b57bfdc7acdcb8c0c58aa2a5f0c622bd9cc723",
+    "SOURCE_PINS.json": "632ce908212e6a48321f54e0dfd5c9acccb4ade62bd37797c013159db2ccedfa"
+  },
+  "independent_PRE_read": false
+}

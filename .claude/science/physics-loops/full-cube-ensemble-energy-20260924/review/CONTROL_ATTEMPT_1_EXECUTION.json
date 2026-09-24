@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent/independent_source_age_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent",
+  "started_utc": "2026-09-24T16:42:47.911279+00:00",
+  "finished_utc": "2026-09-24T16:42:48.060483+00:00",
+  "elapsed_seconds": 0.14879808318801224,
+  "returncode": 0,
+  "files": {
+    "CONTROL_ATTEMPT_1_SOURCE.py": {
+      "sha256": "b1d8270f48b6f376a67bed334c2421915078b0613048d6b6bce37852472090b0",
+      "bytes": 10833
+    },
+    "CONTROL_ATTEMPT_1.stdout.txt": {
+      "sha256": "0b35c5c182b17c3592d66a2ff90439c0532505bc85db091c68baa8af074fb047",
+      "bytes": 10079
+    },
+    "CONTROL_ATTEMPT_1.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "INDEPENDENT_SOURCE_AGE_RESULTS.json": {
+      "sha256": "0b35c5c182b17c3592d66a2ff90439c0532505bc85db091c68baa8af074fb047",
+      "bytes": 10079
+    }
+  }
+}

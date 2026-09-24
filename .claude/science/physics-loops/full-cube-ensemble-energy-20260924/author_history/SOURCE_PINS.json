@@ -1,0 +1,73 @@
+{
+  "main": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "created_utc": "2026-09-24T16:31:08.756413+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "status": "conditional source, no retained promotion"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "status": "conditional source, no retained promotion"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "status": "conditional source, no retained promotion"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "status": "conditional source, no retained promotion"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/sharp-rotor-tail-publication/docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "0648cc1c37137fe23a581ec2c5e40ea3a56c7493",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967",
+      "status": "conditional source, no retained promotion"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/docs/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "918fbe18619667017c56c29677f9f02363368d89",
+      "sha256": "ab8234682ea61bff35fbd18685f65ac0b853aa20e0d3600304b9004076bd147a",
+      "status": "conditional source, no retained promotion"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/mixed-preparation-publication/docs/MIXED_LOW_FIELD_INPUTS_RETAIN_CUBE_BIRTH_ENERGY_AND_COHERENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "cfac353eedae504627196bf9e48009f1b4177f94",
+      "sha256": "04bf4ad2def6a5d8e7a0ab711d4e6e52d1933eb9d28366b1cdb5dee1383d9726",
+      "status": "conditional source, no retained promotion"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/RECENT_BIRTH_FULL_ENSEMBLE_ENERGY_PERSONAL_DERIVATION.md",
+      "sha256": "5d462335236e20329c9fecac8970cf8ee6393f3af7506ee7db9dbe560e94d74e",
+      "status": "prior sealed lower-bound source, PRE improvement attributed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-independent/PRE.md",
+      "sha256": "82b7a4734b2fcfba45022c11859abdaa2239468e8b6a6ddc93f15481b1a41a25",
+      "status": "prior sealed lower-bound source, PRE improvement attributed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-independent/PRE_SEAL.json",
+      "sha256": "71ed041319a34f1a58a53bddbf1e7686094cb7fc7a0ca92886dbb6209868828f",
+      "status": "prior sealed lower-bound source, PRE improvement attributed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-independent/POST.md",
+      "sha256": "c6abb14d3ba48f748441941ad9aca16e5d3d6ad73df55677f0e1d483dafd4be3",
+      "status": "prior sealed lower-bound source, PRE improvement attributed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-independent/POST_SEAL.json",
+      "sha256": "3152d1e7a2bacd06f615f97ec0de54d0dc0f7f109af1347e25d31771b0373b38",
+      "status": "prior sealed lower-bound source, PRE improvement attributed"
+    }
+  ]
+}

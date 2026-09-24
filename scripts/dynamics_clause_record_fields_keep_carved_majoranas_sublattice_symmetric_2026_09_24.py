@@ -36,6 +36,14 @@ chirality (supplied models, finite diagnostics, no physical reading):
 6. Zero dangling fields are realizable on other three-direction networks: a
    SAT search finds 16 on 4x4x4 in which no record touches unrecorded sites
    along all three axes; 8 of them have gapless dispersive Majorana bands.
+7. The missing ingredient is not supplied by covariance: on those networks,
+   with random zero-field record contents, the covariant time-reversal-odd
+   star terms of weight at most three (open PR 9088), with factors on
+   recorded sites replaced by the record values, never reduce to a free
+   same-class bilinear. Under the trivial, sign-twist and full actions and
+   possibility covariance no nonzero covariant term reduces to free strings
+   at all; under the axis action a small family does, and every bilinear in
+   it joins opposite classes.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -463,6 +471,159 @@ check("zero dangling fields are realizable on other three-direction networks, an
       len(zf) >= 10 and all(z[1] for z in zstats) and ngapless >= 4,
       f"{len(zf)} distinct networks in 3000 solutions on 4x4x4, every record touching at most two axes; "
       f"{ngapless} have gapless dispersive Majorana bands on an 8^3 grid, sizes {sorted({z[0] for z in zstats if z[2] < 1e-6})}")
+
+# ------------------------------------------------ 7. covariant time-reversal-odd star terms, reduced by records
+# The covariant odd star terms of weight <= 3 (open PR 9088): the centre field and every three-spin string in a star.
+ROTS = []
+for perm in itertools.permutations(range(3)):
+    for signs in itertools.product([1, -1], repeat=3):
+        R = np.zeros((3, 3))
+        for i in range(3):
+            R[i, perm[i]] = signs[i]
+        if np.isclose(np.linalg.det(R), 1):
+            ROTS.append(R)
+
+
+def perm_sign(R):
+    return round(np.linalg.det(np.abs(R)))
+
+
+ACTS = {"trivial": lambda R: np.eye(3), "sign twist": lambda R: np.diag([1.0, perm_sign(R), perm_sign(R)]),
+        "axis": lambda R: perm_sign(R) * np.abs(R), "full": lambda R: R}
+POS = [np.zeros(3, dtype=int)] + [np.array(v) for v in [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]]
+
+
+def sidx(v):
+    return [k for k, u in enumerate(POS) if np.array_equal(u, v)][0]
+
+
+sbasis = {}
+for sup in [(0,)] + list(itertools.combinations(range(7), 3)):
+    for labs in itertools.product(range(3), repeat=len(sup)):
+        sbasis[(sup, labs)] = len(sbasis)
+nb = len(sbasis)
+
+
+def rot_matrix(R, r):
+    M = np.zeros((nb, nb))
+    for (sup, labs), col in sbasis.items():
+        new = [sidx(R @ POS[s]) for s in sup]
+        for labs2 in itertools.product(range(3), repeat=len(sup)):
+            coef = np.prod([r[b, a] for a, b in zip(labs, labs2)])
+            if abs(coef) > 1e-12:
+                order = sorted(range(len(sup)), key=lambda t: new[t])
+                M[sbasis[(tuple(new[t] for t in order), tuple(labs2[t] for t in order))], col] += coef
+    return M
+
+
+def invariant(Ms):
+    P = sum(Ms) / len(Ms)
+    w, v = np.linalg.eigh((P + P.T) / 2)
+    return v[:, w > 0.5]
+
+
+COVS = {name: invariant([rot_matrix(R, rho(R)) for R in ROTS]) for name, rho in ACTS.items()}
+GEN = [np.array([[0, 0, 0], [0, 0, -1], [0, 1, 0]]), np.array([[0, 0, 1], [0, 0, 0], [-1, 0, 0]]),
+       np.array([[0, -1, 0], [1, 0, 0], [0, 0, 0]])]
+
+
+def gen_matrix(Lg):
+    Gm = np.zeros((nb, nb))
+    for (sup, labs), col in sbasis.items():
+        for t in range(len(sup)):
+            for b in range(3):
+                if Lg[b, labs[t]]:
+                    labs2 = list(labs)
+                    labs2[t] = b
+                    Gm[sbasis[(sup, tuple(labs2))], col] += Lg[b, labs[t]]
+    return Gm
+
+
+_, sv, vt = np.linalg.svd(np.vstack([gen_matrix(Lg) @ COVS["trivial"] for Lg in GEN]))
+COVS["possibility"] = COVS["trivial"] @ vt[int(np.sum(sv > 1e-9)):].T
+
+
+def free_bilinear(P, Cset, kept, par):
+    """Smallest Majorana degree of the Pauli string P (site -> label) on the carving, with D insertions on its support."""
+    sites = list(P)
+    best = None
+    for d in itertools.product((0, 1), repeat=len(sites)):
+        dd = dict(zip(sites, d))
+        maj, ok = [], True
+        for s in sites:
+            if 1 ^ dd[s]:
+                maj.append(par[s])
+            for a in range(3):
+                if not ((P[s] == a) ^ dd[s]):
+                    continue
+                if a in kept[s]:
+                    t = kept[s][a]
+                    if not (t in P and ((P[t] == a) ^ dd[t])):
+                        ok = False
+                        break
+                else:
+                    maj.append(1 - par[s])
+            if not ok:
+                break
+        if ok and (best is None or len(maj) < len(best)):
+            best = maj
+    return best
+
+
+RNG7 = np.random.default_rng(7)
+rows7, total_sbreak, free_dims = [], 0, {name: [] for name in COVS}
+for c in sorted(zf, key=lambda x: (len(x), sorted(x))):
+    kept = {}
+    for s in c:
+        kept[s] = {}
+        for ax in range(3):
+            for d in (1, -1):
+                t = nbr(s, ax, d)
+                if t in c:
+                    kept[s][ax] = t
+    par = {s: sum(s) % 2 for s in c}
+    content = {}
+    for r in itertools.product(range(4), repeat=3):
+        if r in c:
+            continue
+        avoid = {ax for ax in range(3) for d in (1, -1) if nbr(r, ax, d) in c}
+        opts = [a for a in range(3) if a not in avoid]
+        content[r] = (opts[RNG7.integers(len(opts))], int(RNG7.choice([1, -1])))
+    for name, Cv in COVS.items():
+        img = {}
+        for m in itertools.product(range(4), repeat=3):
+            for (sup, labs), col in sbasis.items():
+                if not np.any(np.abs(Cv[col]) > 1e-12):
+                    continue
+                P, coef = {}, 1.0
+                for s_, lab in zip(sup, labs):
+                    site = tuple(int(q) % 4 for q in np.array(m) + POS[s_])
+                    if site in c:
+                        P[site] = lab
+                    else:
+                        coef *= content[site][1] if content[site][0] == lab else 0.0
+                if coef:
+                    kP = tuple(sorted(P.items()))
+                    img.setdefault(kP, np.zeros(Cv.shape[1]))
+                    img[kP] += Cv[col] * coef
+        strs = [k for k, v in img.items() if np.linalg.norm(v) > 1e-12]
+        A7 = np.array([img[k] for k in strs])
+        cls7 = [free_bilinear(dict(k), c, kept, par) if k else [] for k in strs]
+        bad = np.array([b is None or len(b) > 2 for b in cls7])
+        if bad.any():
+            _, sv7, vt7 = np.linalg.svd(A7[bad])
+            N7 = vt7[int(np.sum(sv7 > 1e-9)):].T
+        else:
+            N7 = np.eye(Cv.shape[1])
+        free_dims[name].append(N7.shape[1])
+        if N7.shape[1]:
+            Y7 = A7 @ N7
+            total_sbreak += sum(1 for r_, b in enumerate(cls7) if np.linalg.norm(Y7[r_]) > 1e-9 and len(b) == 2 and b[0] == b[1])
+check("covariant time-reversal-odd star terms reduced by records never give a free same-class bilinear on these networks",
+      total_sbreak == 0 and all(max(v) == 0 for k, v in free_dims.items() if k != "axis") and len(zf) >= 10,
+      f"{len(zf)} zero-field networks, random zero-field record contents: free covariant subspace dimensions "
+      + ", ".join(f"{k} {min(v)}-{max(v)}" for k, v in free_dims.items())
+      + f"; same-class bilinears among the free images {total_sbreak}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

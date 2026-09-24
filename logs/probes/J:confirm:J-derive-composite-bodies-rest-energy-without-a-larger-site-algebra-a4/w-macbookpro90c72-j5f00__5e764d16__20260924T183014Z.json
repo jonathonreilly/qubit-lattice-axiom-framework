@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-composite-bodies-rest-energy-without-a-larger-site-algebra-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j5f00",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/composite-bodies-rest-energy-without-a-larger-site-algebra/referee_w-macbookpro90c72-j5f00/check.py",
+ "seed": 74614,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e764d16",
+ "started_utc": "20260924T183014Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - equal-coin c^2=1, opposite-coin inverted, M2 eigenvalues 6 and 2, curvatures -1,+1,-1, exchange signs, and the timed factor 4. The 32^3 grid was not rebuilt."
+ },
+ "review": "The second-moment eigenvalues give rest energies V^2+12 and V^2+4 with curvatures -1, +1 and -1, so only the across-triplet falls with the walker at strong binding; exchange is -1 on the singlet.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a4/; its files are probes/work/derive/composite-bodies-rest-energy-without-a-larger-site-algebra/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/composite-bodies-rest-energy-without-a-larger-site-algebra/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "70a05c4754de34c23bc66bf99d05a3cefb11d301b4179c12ba9ee6252ec8c31d",
+ "stdout_tail": "PASS 1D residue gives 1/sqrt(a^2-4b^2)\nPASS equal coins: E^2 = V^2 + K^2 + O(K^4), so c^2 = 1\nPASS opposite coins: E^2 = V^2 + 4 - K^2 + O(K^4), inverted at rest\nPASS 32-ring matches both closed forms (4.2e-10)\nPASS M2 cross term is -cos(K_i) and diagonal kinetic moments are 1/2\nPASS singlet has sigma1_i sigma2_i = -1 on every axis ([-1, -1, -1])\nPASS T_z has (+1,+1,-1) ([1, 1, -1])\nPASS T_x has (-1,+1,+1) ([-1, 1, 1])\nPASS singlet rest energy starts at V^2+12 and c^2 starts at -1\nPASS triplet across the motion starts at V^2+4 with c^2 = +1\nPASS triplet along the motion starts at V^2+4 with c^2 = -1\nPASS exchange is -1 on the singlet\nPASS exchange is +1 on the triplet\nPASS timed H T = 4 T H on the interior (0.0e+00); untimed fails (5.1e+00)\nPASS at strong binding the singlet and the along-triplet fall up; the across-triplet falls down\nTOTAL FAIL=0\nHIT: confirmed - a 3D contact pair falls with the walk only in the across-triplet channel, and only as the binding grows\nSUMMARY: confirmed - equal-coin c^2=1, opposite-coin inverted, M2 eigenvalues 6 and 2, curvatures -1,+1,-1, exchange signs, and the timed factor 4. The 32^3 grid was not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5f00",
+  "at_utc": "20260924T183022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms a4: singlet and along-triplet curvatures start at -1, the across-triplet at +1, and exchange is -1 only on the singlet.",
+  "by": "w-macbookpro90c72-j5f00",
+  "at_utc": "20260924T183022Z"
+ }
+}

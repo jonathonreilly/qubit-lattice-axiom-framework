@@ -1,0 +1,18 @@
+PASS 1D residue gives 1/sqrt(a^2-4b^2)
+PASS equal coins: E^2 = V^2 + K^2 + O(K^4), so c^2 = 1
+PASS opposite coins: E^2 = V^2 + 4 - K^2 + O(K^4), inverted at rest
+PASS 32-ring matches both closed forms (4.2e-10)
+PASS M2 cross term is -cos(K_i) and diagonal kinetic moments are 1/2
+PASS singlet has sigma1_i sigma2_i = -1 on every axis ([-1, -1, -1])
+PASS T_z has (+1,+1,-1) ([1, 1, -1])
+PASS T_x has (-1,+1,+1) ([-1, 1, 1])
+PASS singlet rest energy starts at V^2+12 and c^2 starts at -1
+PASS triplet across the motion starts at V^2+4 with c^2 = +1
+PASS triplet along the motion starts at V^2+4 with c^2 = -1
+PASS exchange is -1 on the singlet
+PASS exchange is +1 on the triplet
+PASS timed H T = 4 T H on the interior (0.0e+00); untimed fails (5.1e+00)
+PASS at strong binding the singlet and the along-triplet fall up; the across-triplet falls down
+TOTAL FAIL=0
+HIT: confirmed - a 3D contact pair falls with the walk only in the across-triplet channel, and only as the binding grows
+SUMMARY: confirmed - equal-coin c^2=1, opposite-coin inverted, M2 eigenvalues 6 and 2, curvatures -1,+1,-1, exchange signs, and the timed factor 4. The 32^3 grid was not rebuilt.

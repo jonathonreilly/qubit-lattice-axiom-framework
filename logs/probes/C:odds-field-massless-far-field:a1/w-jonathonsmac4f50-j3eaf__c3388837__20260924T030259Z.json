@@ -1,0 +1,38 @@
+{
+ "task": "C:odds-field-massless-far-field:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j3eaf",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/compute/odds-field-massless-far-field/w-jonathonsmac4f50-j3eaf/run.py",
+ "seed": 18979,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c3388837",
+ "started_utc": "20260924T030259Z",
+ "elapsed_s": 1445.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "the unpolarised odds field on the massless surface is stable only for l2 < 1/36 (exact: effective cubic u = 5/2 - 75 l2/(1 - 6 l2)); (3,1,2) (l2 = 0, u = 5/2, 2u = 5): the lattice field obeys Lap v = (5/2) v^3 site by site (max rel. deviation 0.055), the cube fits b = 0.89, 1.04 match the continuum law with the same wall (0.89 at R = 30) and b -> 5 only for r << R; tori are dominated by images; (14,6,7) (u = -35) and (11,5,5) (massless quadrupole) order spontaneously (one-site map runs to lean ~0.9): no Coulomb-plus-log far field there"
+ },
+ "review": "Exact third-order expansion with the generated quadrupole: Lap v = u v^3, u = 5/2 - 75 l2/(1-6 l2), 2u = b; stable (u>0) iff l2 < 1/36; one-site map (40 digits): (3,1,2) stable, (14,6,7) and (11,5,5) order spontaneously; (3,1,2) lattice obeys the reduced law site by site; cube fits b ~ 1 reproduced by the continuum law with the same wall (b -> 5 only for r << R); tori image-dominated; other triples no fixed point. Same-family provenance.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (blocks 41 and 42; open PRs titled 'ail41: what a source is when records move' and 'ail42: records interacting through the odds of unformed sites'): six-axis rule with pair weight omega = (p, q, r) for equal, opposite, orthogonal contents, T = p+q+4r, K_1 = omega/T, l1 = (p-q)/T, l2 = (p+q-2r)/T. READING (supplied by the owner, not adopted): an unformed site carries its probability distribution over the six contents, and that distribution is a condition for its neighbours. SELF-CONSISTENT ODDS: pi_x(s) proportional to the product over the six neighbours y of sum_b omega(s,b) pi_y(b); a record enters as the point mass at its content. BLOCK 42 PROVED: the derivative of the map at the uniform field is K_1 - 1/6 per neighbour; linearized, delta_x = sum_y K_1 delta_y, spectrum l_i (6 - E(k)); the lean v obeys (-Lap + m^2) v = source/l1 with m^2 = (1 - 6 l1)/l1; NO MASS TERM exactly on 5p = 7q + 4r (the triple (3,1,2) lies on it); beyond it the uniform field is unstable; existence, uniqueness and geometric decay proved for 6(1-kappa) < 1 by a contraction of the ratio metric R(x,y) = max(x/y)/min(x/y), with R(omega x, omega y) <= R/((1-kappa)+kappa R); the first-order charge a record feeds in is its content vector; with 'no record' as a seventh possibility the density channel has first-order strength rho(1-rho)(g-1)/(1+rho(g-1)), g = c/c_0, zero at the neutral scale; a record is a BOUNDARY VALUE (its odds are fixed), so the linear field of a body of agreeing records is the reaching probability of a walk killed at rate 1 - 6 l1, interior records carry the charge 1 - 6 l1, and a body's strength is its capacity, not its record count. EXECUTED: the nonlinear lean around one record follows the screened lattice Green function to four digits at range 0.77; on the massless surface r v(r) is flat at 0.28-0.30 for r = 1..5 on a 27^3 torus. The far field on the massless surface, measured against the logarithmic prediction. Iterate the full self-consistent six-outcome map around one held record at (3,1,2) on tori of side 27, 41, 61 (and, to remove the periodic images, inside a cube with the odds held uniform on the boundary). Report r v(r) for r up to a third of the side, fit A(r)^-2 = a + b log r, and compare b with 2u from the third-order expansion (derive u yourself or take it from the derivation problem odds-field-on-the-massless-surface if a refereed attempt exists). Repeat at two other triples on the surface, (11,5,5) (both channels without a mass term) and (14,6,7).  DELIVERABLE in your unit worktree: probes/work/compute/odds-field-massless-far-field/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/odds-field-massless-far-field/<name>/run.py\"",
+ "stdout_sha256": "622782c6cbb27cfbda7fee8a37e5d599b791560d155fa5a2a5d25abd403bd095",
+ "stdout_tail": "0.250 -0.256\nN (14,6,7) cube 41: NO fixed point reached in 3000 iterations; |lean| median over the interior 0.001, max 1.000; r v(r) along the axis: 0.300 0.169 0.080 0.048 0.037 0.033 0.030\nN (11,5,5) torus 21: NO fixed point reached in 3000 iterations; |lean| median over the torus 0.005, max 1.000; r v(r) along the axis: 0.284 0.090 -0.010 -0.038 -0.047 -0.047 -0.049\nN (11,5,5) cube 41: NO fixed point reached in 3000 iterations; |lean| median over the interior 0.002, max 1.000; r v(r) along the axis: 0.506 0.324 0.125 0.040 0.007 -0.007 -0.010\n\nSUMMARY: the unpolarised odds field on the massless surface is stable only for l2 < 1/36 (exact: effective cubic u = 5/2 - 75 l2/(1 - 6 l2)); (3,1,2) (l2 = 0, u = 5/2, 2u = 5): the lattice field obeys Lap v = (5/2) v^3 site by site (max rel. deviation 0.055), the cube fits b = 0.89, 1.04 match the continuum law with the same wall (0.89 at R = 30) and b -> 5 only for r << R; tori are dominated by images; (14,6,7) (u = -35) and (11,5,5) (massless quadrupole) order spontaneously (one-site map runs to lean ~0.9): no Coulomb-plus-log far field there\nHIT: on the massless surface the log far field exists only where l2 < 1/36; at (14,6,7) the quadrupole the lean creates feeds it back (u = 5/2 - 75 l2/(1 - 6 l2) = -35 < 0) and at (11,5,5) the massless quadrupole is unstable at second order: the unpolarised field orders spontaneously (one-site map: lean 0.01 -> 0.90 and 0.94), contrary to the task's premise of a far field at all three triples\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3eaf",
+  "at_utc": "20260924T032926Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #8937. Log far field only for l2 < 1/36 (u = 5/2 - 75 l2/(1-6 l2)); (14,6,7) u=-35 and (11,5,5) massless quadrupole: unpolarised field orders spontaneously; (3,1,2) lattice obeys Lap v = (5/2)v^3, small fitted b is the box wall.",
+  "by": "w-jonathonsmac4f50-j3eaf",
+  "at_utc": "20260924T032926Z"
+ }
+}

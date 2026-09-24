@@ -1,0 +1,20 @@
+X exact: lean' = 2x + 20 a x - (10/3) x^3 and 3 alpha' = 18 a + 15 x^2 (+ higher), x = 3 l1 v, a = l2 alpha: PASS
+X slaved quadrupole alpha = 5x^2/(1 - 6 l2): Lap v = u v^3 with u = 5/2 - 75 l2/(1 - 6 l2): PASS; u = 0 at l2 = [1/36]
+X (3,1,2): on 5p = 7q + 4r: True; l1 = 1/6; l2 = 0 (6 l2 = 0); u = 5/2; predicted b = 2u = 5
+X (11,5,5): on 5p = 7q + 4r: True; l1 = 1/6; l2 = 1/6 (6 l2 = 1); u = nan; predicted b = 2u = undefined (quadrupole also massless)
+X (14,6,7): on 5p = 7q + 4r: True; l1 = 1/6; l2 = 1/8 (6 l2 = 3/4); u = -35; predicted b = 2u = -70
+O (3,1,2) one-site map, 4000 iterations from a uniform lean 0.01 -> lean 0.00866; from quadrupole +0.01 -> lean 0, quad 0; from quadrupole -0.01 -> quad 0: unpolarised field stable (decays, marginally)
+O (11,5,5) one-site map, 4000 iterations from a uniform lean 0.01 -> lean 0.9353; from quadrupole +0.01 -> lean -0.9353, quad 0.9353; from quadrupole -0.01 -> quad -0.0005644: unpolarised field UNSTABLE (runs to an ordered state)
+O (14,6,7) one-site map, 4000 iterations from a uniform lean 0.01 -> lean 0.8982; from quadrupole +0.01 -> lean -1.722e-40, quad 1.148e-41; from quadrupole -0.01 -> quad 0: unpolarised field UNSTABLE (runs to an ordered state)
+N (3,1,2) torus 27 (437 iterations, 11 s): r v(r) = 0.2992 0.2883 0.2812 0.2864 0.2984 0.3143 0.3330 0.3540 0.3773 ; fit over r = 3..9: A^-2 = 19.167 + -5.282 log r; mean lean over the torus 3.92e-02
+N (3,1,2) torus 41 (862 iterations, 77 s): r v(r) = 0.2966 0.2803 0.2665 0.2643 0.2680 0.2749 0.2837 0.2939 0.3052 0.3176 0.3309 0.3451 0.3602 ; fit over r = 3..13: A^-2 = 20.856 + -4.757 log r; mean lean over the torus 2.54e-02
+N (3,1,2) torus 61 (1649 iterations, 474 s): r v(r) = 0.2952 0.2758 0.2584 0.2521 0.2514 0.2534 0.2571 0.2619 0.2675 0.2738 0.2807 0.2881 0.2959 0.3041 0.3127 0.3218 0.3312 0.3409 0.3511 0.3616 ; fit over r = 3..20: A^-2 = 22.903 + -4.629 log r; mean lean over the torus 1.69e-02
+N (3,1,2) cube 41, uniform odds held on the boundary (467 iterations, 29 s): A(r) = v/(4 pi G_D) = 0.2797 0.2634 0.2551 0.2508 0.2483 0.2468 0.2459 0.2453 0.2449 0.2446 0.2444 0.2443 0.2442 ; fit r = 3..13: A^-2 = 14.667 + 0.886 log r
+N (3,1,2) cube 61, uniform odds held on the boundary (1090 iterations, 263 s): A(r) = v/(4 pi G_D) = 0.2769 0.2592 0.2497 0.2445 0.2413 0.2393 0.2379 0.2369 0.2362 0.2356 0.2352 0.2349 0.2346 0.2344 0.2343 0.2342 0.2341 0.2340 0.2340 0.2340 ; fit r = 3..20: A^-2 = 15.422 + 1.039 log r
+N (14,6,7) torus 21: NO fixed point reached in 3000 iterations; |lean| median over the torus 0.019, max 1.000; r v(r) along the axis: 0.085 -0.147 -0.233 -0.247 -0.247 -0.250 -0.256
+N (14,6,7) cube 41: NO fixed point reached in 3000 iterations; |lean| median over the interior 0.001, max 1.000; r v(r) along the axis: 0.300 0.169 0.080 0.048 0.037 0.033 0.030
+N (11,5,5) torus 21: NO fixed point reached in 3000 iterations; |lean| median over the torus 0.005, max 1.000; r v(r) along the axis: 0.284 0.090 -0.010 -0.038 -0.047 -0.047 -0.049
+N (11,5,5) cube 41: NO fixed point reached in 3000 iterations; |lean| median over the interior 0.002, max 1.000; r v(r) along the axis: 0.506 0.324 0.125 0.040 0.007 -0.007 -0.010
+
+SUMMARY: the unpolarised odds field on the massless surface is stable only for l2 < 1/36 (exact: effective cubic u = 5/2 - 75 l2/(1 - 6 l2)); (3,1,2) (l2 = 0, u = 5/2, b = 5): cube fits b = 0.89, 1.04; (14,6,7) (u = -35) and (11,5,5) (massless quadrupole) order spontaneously (one-site map runs to lean ~0.9): no Coulomb-plus-log far field there
+HIT: on the massless surface the log far field exists only where l2 < 1/36; at (14,6,7) the quadrupole the lean creates feeds it back (u = 5/2 - 75 l2/(1 - 6 l2) = -35 < 0) and at (11,5,5) the massless quadrupole is unstable at second order: the unpolarised field orders spontaneously (one-site map: lean 0.01 -> 0.90 and 0.94), contrary to the task's premise of a far field at all three triples

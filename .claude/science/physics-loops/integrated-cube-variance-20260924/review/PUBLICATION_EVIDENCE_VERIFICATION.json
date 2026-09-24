@@ -1,0 +1,39 @@
+{
+  "kind": "source_and_completed_cache_comparison_not_new_blind_reconstruction",
+  "publication_note_sha256": "f667f03f5b6b9fd1e50e3c01f800e19d754dae8281354ff2d0196d97ddbd44ae",
+  "publication_runner_sha256": "1482440722ca5c91dea2067b0c0ba2024c1c2a31ea93bf1736fe62c5fcaa48bc",
+  "source_fingerprint_independently_recomputed": "7cf998c03e1131be4115269ca68c9279ce49544e944d3c6e74d95f5ba9e3332b",
+  "declared_input_sha256": {
+    "docs/TIME_INTEGRATED_MICROSCOPIC_CUBE_BIRTH_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f667f03f5b6b9fd1e50e3c01f800e19d754dae8281354ff2d0196d97ddbd44ae",
+    "docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+    "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+  },
+  "cache_sha256": "798d06fc344c941c72841aee55de266044d3e83771c9faebad6edc36c2416406",
+  "result_sha256": "4a6501b933299c5ac6a658b615725b8bc47ebdfaa613bb9fe6b3947137ff7958",
+  "cache_status": "fresh_success",
+  "primary_exit_code": 0,
+  "primary_elapsed_seconds_recorded": 47.67,
+  "complete_stdout_json_objects": 4,
+  "all_stdout_objects_match_result": true,
+  "complete_stdout_without_truncation": true,
+  "stderr_empty": true,
+  "post_execution_wrapper_exception_preserved": true,
+  "unchanged_builder_function_ASTs": [
+    "complete_spin_one",
+    "jump_matrix",
+    "canonical_preparation",
+    "riesz_action"
+  ],
+  "toy_functions_AST_unchanged": true,
+  "reused_word_and_toy_scientific_results_identical": true,
+  "reused_cube_scientific_results_identical_except_timings": true,
+  "new_author_local_star_control_replay_matches_cache": true,
+  "local_Gram_spectra_match_preserved_PRE": true,
+  "all_36_local_cover_rows_match_preserved_PRE": true,
+  "primary_or_cube_controls_rerun": false,
+  "publication_or_cache_mutated": false,
+  "PRE_POST_and_sealed_evidence_unchanged": true,
+  "verification_script_sha256": "37952b1b6107fb362aef2b083b2720164526ad11781e5218520028801288e259"
+}

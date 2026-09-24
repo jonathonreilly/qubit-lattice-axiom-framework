@@ -1,0 +1,12 @@
+{
+  "sealed_utc": "2026-09-24T14:30:53.025575+00:00",
+  "files": {
+    "AVERAGED_VARIANCE_PERSONAL_DERIVATION.md": "00e05d4918d58840e78f9bd3fb4326dcfb12ade7e5a2db8ca18d1dfc39f63eb0",
+    "second_birth_word_controls.py": "17226795e43c89fd0a4022044a28384adcb69d339cb8d512adf526ef06867869",
+    "SECOND_BIRTH_WORD_RESULTS.json": "be87a6249db1eb2c8679b76b3a03310470615863619b99e00efae830ef039254",
+    "SECOND_BIRTH_WORD.stdout": "be87a6249db1eb2c8679b76b3a03310470615863619b99e00efae830ef039254",
+    "SECOND_BIRTH_WORD.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SOURCE_PINS.json": "ec3afcade682f757c348ff7c6472e5512dd62f56309215a460cd9ea929af00f4"
+  },
+  "scope": "Personal root proof and exact integer word controls sealed before reading the independent PRE; conditional on stated provisional parents. No independent confirmation yet."
+}

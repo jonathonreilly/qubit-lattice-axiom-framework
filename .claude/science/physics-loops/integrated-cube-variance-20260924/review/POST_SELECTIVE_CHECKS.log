@@ -1,0 +1,56 @@
+{
+  "original_word_rows": [
+    {
+      "mark": "plus",
+      "b": 2,
+      "loss_expectation": "8",
+      "Gamma_F_norm_squared": "16",
+      "resolved_second_sum": "8",
+      "coherent_second_sum": "8"
+    },
+    {
+      "mark": "minus",
+      "b": 2,
+      "loss_expectation": "8",
+      "Gamma_F_norm_squared": "16",
+      "resolved_second_sum": "8",
+      "coherent_second_sum": "8"
+    },
+    {
+      "mark": "coherent",
+      "b": 4,
+      "loss_expectation": "8",
+      "Gamma_F_norm_squared": "16",
+      "resolved_second_sum": "8",
+      "coherent_second_sum": "8"
+    }
+  ],
+  "rectangular_Sylvester_rows": [
+    {
+      "epsilon": 0.25,
+      "shape": [
+        2,
+        3
+      ],
+      "Sylvester_residual": 2.2887833992611187e-16,
+      "solution_operator_norm": 0.0066473765309189616,
+      "Neumann_operator_norm_bound": 0.009297903066140143,
+      "independent_quadrature_endpoint_error": 0.0,
+      "wrong_missing_adjoint_error": 0.0004274407908989149
+    },
+    {
+      "epsilon": 0.125,
+      "shape": [
+        2,
+        3
+      ],
+      "Sylvester_residual": 4.775635757868166e-16,
+      "solution_operator_norm": 0.00041833847864308657,
+      "Neumann_operator_norm_bound": 0.0004508508566468628,
+      "independent_quadrature_endpoint_error": 2.958558893711352e-19,
+      "wrong_missing_adjoint_error": 4.83847953544084e-06
+    }
+  ],
+  "scope": "Exact physical charge/field words plus a separate 2x3 nonnormal finite-matrix diagnostic; no new joint-limit simulation.",
+  "source_sha256": "cbc3e1b47693108d556448bbffee54472ffb51c52aa72b74386c6d28e42e92ee"
+}

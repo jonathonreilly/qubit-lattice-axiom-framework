@@ -1,0 +1,43 @@
+{
+  "unit_id": "finite-planar-cubic-ice-two-20260924",
+  "reviewed_prs": [
+    {
+      "id": "PR8984",
+      "head": "e4c1992b085d8f807876b5bdabba604266ec8ed3",
+      "delta_base": "8cc5f114f0d703100d6a7a764a1c689c7a56d65f",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8984",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit16-v1.json",
+        "sha256": "4d97f62507b11e278d2581e788a29d7b11a7695f485e365a5f7a228553efda9d"
+      }
+    },
+    {
+      "id": "PR8985",
+      "head": "a0133a50d99aee6bd4598e42391a543f34201588",
+      "delta_base": "9d8596c758f116c572bcc5ee46cfe58ec07701da",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8985",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit16-v1.json",
+        "sha256": "4d97f62507b11e278d2581e788a29d7b11a7695f485e365a5f7a228553efda9d"
+      }
+    }
+  ],
+  "base": "1cb2a082bfa4cebc01c0f61b4e366a6daa48a82d",
+  "tree": "b795f8129da03de2d2b97304e84ae0e92bcb9ef4",
+  "candidate_commit": "7f7c153fdaef62db8efdc6bd238bfcbc7379f57b",
+  "confirmation_sha256": "90dbff951ca409c3ec679fb800fb906ebaf41529453fb307c441b680db059cd9",
+  "source_record_sha256": "fb142ce5de93d16309b476a3da97b446c57fb3f7f8a183d8cf77af4e12377015",
+  "logs": {
+    "pipeline-unit16-v1.log": "6f137231f3eadf6f50add03c6050055b8abe69388401f959c20aadc25b3e6e02",
+    "strict-unit16-v1.log": "b8d270ab86ba9c0b088dd25e6d5a199056da2e13e8b5081b645d0b8e2777d801",
+    "changed-evidence-unit16-v1.log": "eb0311193e0251f1d6c2a5b46fa8d1ed6889c59a32032273b4a3f6f1223e43ea",
+    "cleanup-unit16-v1.log": "fab41c20b87b58846f6eba68fdd704f4cb4a175cc6ba3239af84adc3ba6a0191",
+    "final-graph-unit16-v1.log": "0f21a2bd63a6e7253482ad636839586bc7cf9fd477292e22360c2f2d670dc274"
+  },
+  "validation": "PASS; pipeline exit 0; strict lint exit 0; changed evidence checked 2, failures 0, control_failures 0",
+  "push_status": "landed and all 6 final source/evidence blobs verified on origin/main",
+  "additional_controls": {
+    "independent-unit16.json": "dc3681cb08a2c92b9aea8326e881818350a5e4f2e7096ec904c84518f38f1b96",
+    "mutations-unit16-results.json": "3a12efe1300a6b9afdc3afeb5f1adf3fe7e664a17ab39985958e11e3d728ffd9"
+  }
+}

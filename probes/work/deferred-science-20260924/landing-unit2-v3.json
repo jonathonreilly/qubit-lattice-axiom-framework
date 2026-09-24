@@ -1,0 +1,59 @@
+{
+  "unit_id": "frames-and-ice-four-20260923",
+  "reviewed_prs": [
+    {
+      "id": "PR8676",
+      "head": "b68cf70d9d330f563d0f22a624b3cf96200f3ef3",
+      "delta_base": "6b9c6183f24c01651d5a98394061bd88a52aef63",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8676",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit2-v3.json",
+        "sha256": "ecdec80e5c52429c840fe7d04612d846446b96971650992f046712fbe059bec0"
+      }
+    },
+    {
+      "id": "PR8679",
+      "head": "16abf2925d9fb897feb27fe3477353492e483524",
+      "delta_base": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8679",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit2-v3.json",
+        "sha256": "ecdec80e5c52429c840fe7d04612d846446b96971650992f046712fbe059bec0"
+      }
+    },
+    {
+      "id": "PR8686",
+      "head": "b650036ea7c055066a8f2034fb6c1c6e982111b1",
+      "delta_base": "ea403fe1c5e71418c95b976e72a11df375c0a655",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8686",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit2-v3.json",
+        "sha256": "ecdec80e5c52429c840fe7d04612d846446b96971650992f046712fbe059bec0"
+      }
+    },
+    {
+      "id": "PR8687",
+      "head": "d07822fa6381db1ee466e0e1b0ff1d156f53a357",
+      "delta_base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8687",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit2-v3.json",
+        "sha256": "ecdec80e5c52429c840fe7d04612d846446b96971650992f046712fbe059bec0"
+      }
+    }
+  ],
+  "base": "cb2e2e6132b9dac501a24662496b74cd2dee12bb",
+  "tree": "6fccf32969a2a0b52ce634a28c80e95366fb55a2",
+  "candidate_commit": "e5b39ea4e232e1181acfa49b25f7b22a39912489",
+  "confirmation_sha256": "938adfbec85c7639405a25a0bc6012ba3c07339e67c71243425ec59f0a280a0e",
+  "source_record_sha256": "37c89f71f6e4ba0671a8c060a0d981718f877f688c404bd4d2f6fd16080da8f9",
+  "logs": {
+    "pipeline-unit2-v3.log": "6a33f226c328443ddaad2b106b28810e858583ebb48bae6606ece9276aed3b40",
+    "strict-unit2-v3.log": "5a51e7036188a2dde7915b7cc78df5b1c66a149fa599549d3a18280a236e8407",
+    "changed-evidence-unit2-v3.log": "e10943922cd6b7aba81469f2c3b8a2bffc8a06cc0a1179c7db899fe11b0bfead",
+    "cleanup-unit2-v3.log": "07a0d05b8db2819db9deb592920b66333cd18eb75bc610e106bec2a6c82d1b9a",
+    "final-graph-unit2-v3.log": "036c97fef2d03d1a7a08f7a91e371c71eb5d6572a4dc3fedac9831d2dc966450"
+  },
+  "validation": "PASS; pipeline exit 0; strict lint exit 0; changed evidence checked 4, failures 0, control_failures 0",
+  "push_status": "landed and all 12 final source/evidence blobs verified on origin/main"
+}

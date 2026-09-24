@@ -1,0 +1,576 @@
+{
+  "unit_id": "relational-records-thirteen-20260923",
+  "reviewer": "Current primary Codex session; user prohibits subagents. Original authors separate; same-session focused fix confirmation, no separate fix reviewer or audit.",
+  "verdict": "FINAL VERDICT: PASS",
+  "skill_commit": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "status": "science source confirmed; mechanical preflight and combined gate pending",
+  "findings": [
+    {
+      "id": "U3-R1",
+      "prs": [
+        8691,
+        8717,
+        8724,
+        8729,
+        8731,
+        8743,
+        8744,
+        8750,
+        8752,
+        8756,
+        8854,
+        8856,
+        8857
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Abstract record models and supplied covariant rules do not establish physical encoding, gravity sets or unique consequences of the axioms.",
+      "resolution": "Keep conditional mathematical proofs and finite results; remove campaign authority conclusions; declare supplied domains, rules, boundaries, measures and readout phases."
+    },
+    {
+      "id": "U3-R2",
+      "prs": [
+        8691,
+        8731
+      ],
+      "class": "IMPORTED_VALUE",
+      "finding": "Stabilizer covariance alone does not exclude initial nonpolar pairs or supply conditional independence for a product bound.",
+      "resolution": "Declare full real sphere, fixed finite candidate targets after two formed values, local conditional laws and face-connected sequential growth from one seed; preserve the valid symmetry bound."
+    },
+    {
+      "id": "U3-R3",
+      "prs": [
+        8717,
+        8724,
+        8729
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Mode singularities, linear/nonlinear scope and transfer between angle sets needed precision.",
+      "resolution": "Exclude singular w, retain Fourier-distribution proof with bounded exponential-polynomial argument, restrict rank/IFT statements to tested sizes and angles, distinguish sufficiency from degenerate uniqueness necessity."
+    },
+    {
+      "id": "U3-R4",
+      "prs": [
+        8743,
+        8744
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Sidon necessity and universal need for a global octant exceeded sufficiency and finite contrast counts.",
+      "resolution": "State Sidon sufficiency, additive-support contrasts and failure of a class-wide guarantee; retain all finite counts without classifying every nonglobal field."
+    },
+    {
+      "id": "U3-R5",
+      "prs": [
+        8691,
+        8743,
+        8756,
+        8856
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Core-value rigidity does not fix outer-neighbour views; readout failure is not exclusion of every decoder.",
+      "resolution": "Disclose supplied normals, restrict identical-view corollary to complete spirals/deep core, distinguish internal shared walks from independent outer faces, and limit sweep failure to canonical phase/parity readout."
+    },
+    {
+      "id": "U3-R6",
+      "prs": [
+        8750,
+        8752,
+        8854
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Fixed background and selected covariant extension were conflated; bounded/sampled searches overstated.",
+      "resolution": "Define rules locally, make extension a supplied choice, distinguish all-star uniqueness from sampled site checks, and report the capped open-box count as at least 100000. The newer oriented classification corrects earlier flexibility rhetoric."
+    },
+    {
+      "id": "U3-R7",
+      "prs": [
+        8857
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Genericity statement conflated containment with equality, strong with strong-plus-U, and uniform finite-field probability with conditioned samples.",
+      "resolution": "Retain nonzero character-kernel proof, define U separately, require nonzero coefficient reduction modulo p, and label conditioned sample counts and factor-four band empirical."
+    },
+    {
+      "id": "U3-R8",
+      "prs": [
+        8691,
+        8717,
+        8724,
+        8729,
+        8731,
+        8743,
+        8744,
+        8750,
+        8752,
+        8756,
+        8854,
+        8856,
+        8857
+      ],
+      "class": "EVIDENCE",
+      "finding": "Some printed exact counts were only weakly asserted; field square-root helper description and evidence metadata needed correction.",
+      "resolution": "Strengthen modulus/count/parity assertions, use integer isqrt, declare exact-witness normalization and 900-second budgets, add five canonical resolution lines, actual dependency links and support-only trace metadata. Capture all runners fresh."
+    }
+  ],
+  "coverage": "Reviewed all thirteen full runner implementations, claim scopes, mathematical arguments and consequential revisions. Preserved proofs, finite calculations and counterexamples; replaced repetitive unsupported implications and historical author-review narratives with current scoped statements. All thirteen fresh runners pass. Independent checks cover the full nonlinear Jacobian with a second prime, direct alphabet outputs, an explicit outer-face counterexample, closed walks and the small-prime caveat. Thirteen focused mutations triggered original FAIL checks. One earlier square-sign mutation was equivalent on the tested odd moduli, retained as equivalent and replaced by a consequential mixed-sign mutation; malformed mutation setup attempts and the corrected missing-domain premise in an independent test are preserved, not counted as source failures.",
+  "original_dispositions": {
+    "8691": [
+      {
+        "original_path": "docs/RELATIONAL_FRAMES_IN_ONE_QUBIT_SPIRAL_RECORDS_UNDER_POSSIBILITY_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "66d164aa0e30c94ee9d8f72388d12296aed1577f3fc9ebc1b19a5f9c88140bb0",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_FRAMES_IN_ONE_QUBIT_SPIRAL_RECORDS_UNDER_POSSIBILITY_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "fa6011cb3e07a47f6193c1daa03a3b364bb5b2975742b6dd3fcdc1f55528f318",
+        "recovery": "33a1714a8efbcc0bf136b58523248f5d3660b293:docs/RELATIONAL_FRAMES_IN_ONE_QUBIT_SPIRAL_RECORDS_UNDER_POSSIBILITY_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8691/docs/RELATIONAL_FRAMES_IN_ONE_QUBIT_SPIRAL_RECORDS_UNDER_POSSIBILITY_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-22.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.txt",
+        "original_sha256": "914d2fed812626bcc228ef370cbc1760beb20107d3cd2787ef960e2b71b2aaa6",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.txt",
+        "final_sha256": "0e176b5294cfca32a44adf579743e1b288762725c3c3119d03d9261b2fe2330b",
+        "recovery": "33a1714a8efbcc0bf136b58523248f5d3660b293:logs/runner-cache/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8691/logs/runner-cache/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.txt"
+      },
+      {
+        "original_path": "scripts/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.py",
+        "original_sha256": "763e87a66329f3922f40256feaf9d44969485340f27de3360b41387140680856",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.py",
+        "final_sha256": "ace419a8585aefe97999730e0f722cfbee65c0356256dde3a659d40f7af4d6a9",
+        "recovery": "33a1714a8efbcc0bf136b58523248f5d3660b293:scripts/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8691/scripts/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.py"
+      }
+    ],
+    "8717": [
+      {
+        "original_path": "docs/RELATIONAL_SPIRAL_FRAMES_ARE_RIGID_ON_THE_LATTICE_AND_UNDER_THE_STATIC_READING_BUT_FLEXIBLE_AND_AMPLIFIED_UNDER_THE_SWEEP_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "d7797bcc3b6cf2d339627ed4794312453b72a6679656de1d157853484b1ad410",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_SPIRAL_FRAMES_ARE_RIGID_ON_THE_LATTICE_AND_UNDER_THE_STATIC_READING_BUT_FLEXIBLE_AND_AMPLIFIED_UNDER_THE_SWEEP_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "52e5f38802587b78b0027cf713ce4c040d717f4cc9b935f799314ea19ba227c1",
+        "recovery": "5ec96d5faaf426909aa011338448f57dc2bc30eb:docs/RELATIONAL_SPIRAL_FRAMES_ARE_RIGID_ON_THE_LATTICE_AND_UNDER_THE_STATIC_READING_BUT_FLEXIBLE_AND_AMPLIFIED_UNDER_THE_SWEEP_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8717/docs/RELATIONAL_SPIRAL_FRAMES_ARE_RIGID_ON_THE_LATTICE_AND_UNDER_THE_STATIC_READING_BUT_FLEXIBLE_AND_AMPLIFIED_UNDER_THE_SWEEP_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_spiral_frames_linear_rigidity_on_the_lattice_and_sweep_amplification_on_boxes_2026_09_23.txt",
+        "original_sha256": "4009f17a690e7bd92e23d0a358c327d7ae6e6e3c7d5e293cd2a04dc6fc6e1ef0",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_spiral_frames_linear_rigidity_on_the_lattice_and_sweep_amplification_on_boxes_2026_09_23.txt",
+        "final_sha256": "c2c9ad38207a45edac127a862a7b853aac6a424903c2e45869cd399c9217b220",
+        "recovery": "5ec96d5faaf426909aa011338448f57dc2bc30eb:logs/runner-cache/relational_spiral_frames_linear_rigidity_on_the_lattice_and_sweep_amplification_on_boxes_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8717/logs/runner-cache/relational_spiral_frames_linear_rigidity_on_the_lattice_and_sweep_amplification_on_boxes_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_spiral_frames_linear_rigidity_on_the_lattice_and_sweep_amplification_on_boxes_2026_09_23.py",
+        "original_sha256": "d999a0a33b735de44a4be4a7b211714739c6fa820ff90421b8e11f5b194dde08",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_spiral_frames_linear_rigidity_on_the_lattice_and_sweep_amplification_on_boxes_2026_09_23.py",
+        "final_sha256": "5ec16f695ad383478d5673289cfc330b2a65afbda305e8504cdefe736f872d87",
+        "recovery": "5ec96d5faaf426909aa011338448f57dc2bc30eb:scripts/relational_spiral_frames_linear_rigidity_on_the_lattice_and_sweep_amplification_on_boxes_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8717/scripts/relational_spiral_frames_linear_rigidity_on_the_lattice_and_sweep_amplification_on_boxes_2026_09_23.py"
+      }
+    ],
+    "8724": [
+      {
+        "original_path": "docs/RELATIONAL_SPIRAL_FRAMES_ARE_LOCALLY_RIGID_UNDER_THE_STATIC_READING_NONLINEAR_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "458427e45aa5ab3fa39a44540f5dd0030be219b544bb94fe5756e961c803e8a9",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_SPIRAL_FRAMES_ARE_LOCALLY_RIGID_UNDER_THE_STATIC_READING_NONLINEAR_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "e0dcaf26984e171b9cdfe188eede7e1c4cee6d5ec4604f973ff37f1a7ba0854c",
+        "recovery": "9eda29530c6d0d6e757e3259df992319f7a2afa6:docs/RELATIONAL_SPIRAL_FRAMES_ARE_LOCALLY_RIGID_UNDER_THE_STATIC_READING_NONLINEAR_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8724/docs/RELATIONAL_SPIRAL_FRAMES_ARE_LOCALLY_RIGID_UNDER_THE_STATIC_READING_NONLINEAR_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_spiral_frames_locally_rigid_under_the_static_reading_nonlinear_2026_09_23.txt",
+        "original_sha256": "5c369a0f65255213486aee3f0bc2a4a51e61a9fd6296bd4069a205b8e258fa1f",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_spiral_frames_locally_rigid_under_the_static_reading_nonlinear_2026_09_23.txt",
+        "final_sha256": "67674b1863f26f616b17997547808d39762689ee5940e44bd9c239a684f1ab4d",
+        "recovery": "9eda29530c6d0d6e757e3259df992319f7a2afa6:logs/runner-cache/relational_spiral_frames_locally_rigid_under_the_static_reading_nonlinear_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8724/logs/runner-cache/relational_spiral_frames_locally_rigid_under_the_static_reading_nonlinear_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_spiral_frames_locally_rigid_under_the_static_reading_nonlinear_2026_09_23.py",
+        "original_sha256": "26a0bda599d572259a945f67de5428932f4ef78b29e512486b19b9fd9587a90f",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_spiral_frames_locally_rigid_under_the_static_reading_nonlinear_2026_09_23.py",
+        "final_sha256": "15479e5e59c720fa85ef057330e2394c1a99008e2af4e4539c4720f865c71c91",
+        "recovery": "9eda29530c6d0d6e757e3259df992319f7a2afa6:scripts/relational_spiral_frames_locally_rigid_under_the_static_reading_nonlinear_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8724/scripts/relational_spiral_frames_locally_rigid_under_the_static_reading_nonlinear_2026_09_23.py"
+      }
+    ],
+    "8729": [
+      {
+        "original_path": "docs/RELATIONAL_SPIRAL_LETTERS_WITH_FINITELY_MANY_VALUES_SEVEN_SUFFICE_AND_ARE_THE_FEWEST_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "ae73fa654b2900db3c55aad98b67ad82b73a93efd9c829e13800a078f6cd744b",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_SPIRAL_LETTERS_WITH_FINITELY_MANY_VALUES_SEVEN_SUFFICE_AND_ARE_THE_FEWEST_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "03c4824425a935fc064e588b1b04dfa4765491fdc8ea063b8059e0fdbca2fdaa",
+        "recovery": "c447d85ccf15bb1bc0508d804f533fc91f7d5995:docs/RELATIONAL_SPIRAL_LETTERS_WITH_FINITELY_MANY_VALUES_SEVEN_SUFFICE_AND_ARE_THE_FEWEST_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8729/docs/RELATIONAL_SPIRAL_LETTERS_WITH_FINITELY_MANY_VALUES_SEVEN_SUFFICE_AND_ARE_THE_FEWEST_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_spiral_letters_with_finitely_many_values_seven_suffice_2026_09_23.txt",
+        "original_sha256": "4c69ff6b9b614a2f563009443b00fa74964e73741c594f11168773bc87ca7cd2",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_spiral_letters_with_finitely_many_values_seven_suffice_2026_09_23.txt",
+        "final_sha256": "22a482288a4ae3b2311ed9401301b2ee2145fb913bcbb5078db861e4d30802bc",
+        "recovery": "c447d85ccf15bb1bc0508d804f533fc91f7d5995:logs/runner-cache/relational_spiral_letters_with_finitely_many_values_seven_suffice_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8729/logs/runner-cache/relational_spiral_letters_with_finitely_many_values_seven_suffice_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_spiral_letters_with_finitely_many_values_seven_suffice_2026_09_23.py",
+        "original_sha256": "071c79753ffe362410d476bf4c04235fe70c6315c23e692cf82ebd7d2637ff14",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_spiral_letters_with_finitely_many_values_seven_suffice_2026_09_23.py",
+        "final_sha256": "80666368990fc306ba781f40e8f68c1bc6d885227a9cbd15171dc9a2d6771ae2",
+        "recovery": "c447d85ccf15bb1bc0508d804f533fc91f7d5995:scripts/relational_spiral_letters_with_finitely_many_values_seven_suffice_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8729/scripts/relational_spiral_letters_with_finitely_many_values_seven_suffice_2026_09_23.py"
+      }
+    ],
+    "8731": [
+      {
+        "original_path": "docs/RELATIONAL_LETTERS_FORMED_BY_MULTI_QUBIT_UNITS_EVERY_SINGLE_FACE_ATTACHMENT_IS_AT_BEST_A_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "0d3a1799438a2891b196e2c59d524c2c871008e97f45c6f89565817fbedb0df8",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_LETTERS_FORMED_BY_MULTI_QUBIT_UNITS_EVERY_SINGLE_FACE_ATTACHMENT_IS_AT_BEST_A_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "2183768c07c1df484a7e4662ba8851e42806b22e6e2f628a952fe7da6b83d466",
+        "recovery": "2bdf1a26bae8b368e76d4e48f47d77c1e8952613:docs/RELATIONAL_LETTERS_FORMED_BY_MULTI_QUBIT_UNITS_EVERY_SINGLE_FACE_ATTACHMENT_IS_AT_BEST_A_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8731/docs/RELATIONAL_LETTERS_FORMED_BY_MULTI_QUBIT_UNITS_EVERY_SINGLE_FACE_ATTACHMENT_IS_AT_BEST_A_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_letters_multi_qubit_units_single_face_attachment_is_a_fair_coin_2026_09_23.txt",
+        "original_sha256": "072ec234626c228541aae9fa8816c0907adfc14198cfe296390cbe34c6fc8475",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_letters_multi_qubit_units_single_face_attachment_is_a_fair_coin_2026_09_23.txt",
+        "final_sha256": "1c7ced66b09fdf9993fd283bd9aa604a6d3910c5e0735486915888eecde2ea62",
+        "recovery": "2bdf1a26bae8b368e76d4e48f47d77c1e8952613:logs/runner-cache/relational_letters_multi_qubit_units_single_face_attachment_is_a_fair_coin_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8731/logs/runner-cache/relational_letters_multi_qubit_units_single_face_attachment_is_a_fair_coin_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_letters_multi_qubit_units_single_face_attachment_is_a_fair_coin_2026_09_23.py",
+        "original_sha256": "d2579d8fc67c005e957430ad583206227c21b264e41bb12b3c7792d9d40b2541",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_letters_multi_qubit_units_single_face_attachment_is_a_fair_coin_2026_09_23.py",
+        "final_sha256": "d9adb010016b279f460166f7c2459ccf2b0c60573c994ed9e245c08cbd2a14ec",
+        "recovery": "2bdf1a26bae8b368e76d4e48f47d77c1e8952613:scripts/relational_letters_multi_qubit_units_single_face_attachment_is_a_fair_coin_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8731/scripts/relational_letters_multi_qubit_units_single_face_attachment_is_a_fair_coin_2026_09_23.py"
+      }
+    ],
+    "8743": [
+      {
+        "original_path": "docs/RELATIONAL_LETTERS_UNDER_THE_STATIC_READING_ARE_GLOBALLY_RIGID_EXACTLY_FOR_SIDON_ANGLE_SETS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "7a0506c36922a12a2cd3aa3e9cd419cd0c62afd2d6ac3ef76ea12b9fc14201d4",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_LETTERS_UNDER_THE_STATIC_READING_ARE_GLOBALLY_RIGID_EXACTLY_FOR_SIDON_ANGLE_SETS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "1c58282b36a0773bb8952334a7d64b718919d388e57555bb51c5810172436702",
+        "recovery": "34007c67010b932ac3ad12ef368af798d5a55359:docs/RELATIONAL_LETTERS_UNDER_THE_STATIC_READING_ARE_GLOBALLY_RIGID_EXACTLY_FOR_SIDON_ANGLE_SETS_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8743/docs/RELATIONAL_LETTERS_UNDER_THE_STATIC_READING_ARE_GLOBALLY_RIGID_EXACTLY_FOR_SIDON_ANGLE_SETS_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_letters_static_reading_globally_rigid_exactly_for_sidon_angle_sets_2026_09_23.txt",
+        "original_sha256": "b9fb39e3ce637f5800911971dfcd370438efed4b582f84020a09fef1cebde3dc",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_letters_static_reading_globally_rigid_exactly_for_sidon_angle_sets_2026_09_23.txt",
+        "final_sha256": "e026a03227dda0f5497b55b704b16e54287f54b38a69208b5d93f98d8148f15c",
+        "recovery": "34007c67010b932ac3ad12ef368af798d5a55359:logs/runner-cache/relational_letters_static_reading_globally_rigid_exactly_for_sidon_angle_sets_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8743/logs/runner-cache/relational_letters_static_reading_globally_rigid_exactly_for_sidon_angle_sets_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_letters_static_reading_globally_rigid_exactly_for_sidon_angle_sets_2026_09_23.py",
+        "original_sha256": "d3406ee8869cb282c99e94c073458a56ef7f392b83d1e6a1ba479075d6697d33",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_letters_static_reading_globally_rigid_exactly_for_sidon_angle_sets_2026_09_23.py",
+        "final_sha256": "eb8a471d66502a17090a34edb1125f5914177218ed594915071df065f940ef4e",
+        "recovery": "34007c67010b932ac3ad12ef368af798d5a55359:scripts/relational_letters_static_reading_globally_rigid_exactly_for_sidon_angle_sets_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8743/scripts/relational_letters_static_reading_globally_rigid_exactly_for_sidon_angle_sets_2026_09_23.py"
+      }
+    ],
+    "8744": [
+      {
+        "original_path": "docs/RELATIONAL_LETTERS_STATIC_RIGIDITY_NEEDS_A_GLOBAL_OCTANT_SITE_AND_LINE_ORIENTATIONS_LEAVE_THE_LETTERS_FLEXIBLE_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "e1748e078d715377ecf6612a3236605afc20a1d273383df4f20b80baf5518fb6",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_LETTERS_STATIC_RIGIDITY_NEEDS_A_GLOBAL_OCTANT_SITE_AND_LINE_ORIENTATIONS_LEAVE_THE_LETTERS_FLEXIBLE_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "f05ddb6e1100aff52ce8d332e631bc8c2d3d9b297090c2729b74dbcaa00e3dc5",
+        "recovery": "c0afc50df943309a01d67dba6b2e0a880bc67ea4:docs/RELATIONAL_LETTERS_STATIC_RIGIDITY_NEEDS_A_GLOBAL_OCTANT_SITE_AND_LINE_ORIENTATIONS_LEAVE_THE_LETTERS_FLEXIBLE_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8744/docs/RELATIONAL_LETTERS_STATIC_RIGIDITY_NEEDS_A_GLOBAL_OCTANT_SITE_AND_LINE_ORIENTATIONS_LEAVE_THE_LETTERS_FLEXIBLE_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.txt",
+        "original_sha256": "b345274be0c438d8f033a8f0cf6e374d2186ddf5f519da505b9bf1cfc474e9aa",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.txt",
+        "final_sha256": "9797e53cacde4dd77a5a3f65c01b87b53792de7aa93cee105532633e298d6ae7",
+        "recovery": "c0afc50df943309a01d67dba6b2e0a880bc67ea4:logs/runner-cache/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8744/logs/runner-cache/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.py",
+        "original_sha256": "7c361c7bee5dee8be34eeceea7e7e6f30b1b5209918984aa380b3b55f3a895f8",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.py",
+        "final_sha256": "a4385f31f0c5f1bb727cb3c53d559e3c4700e6303e71959415d62851d119ab8a",
+        "recovery": "c0afc50df943309a01d67dba6b2e0a880bc67ea4:scripts/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8744/scripts/relational_letters_static_rigidity_needs_a_global_octant_line_orientations_are_flexible_2026_09_23.py"
+      }
+    ],
+    "8750": [
+      {
+        "original_path": "docs/RELATIONAL_LETTERS_IN_ALTERNATING_PAIRS_RECORD_THE_ROLE_PATTERN_UNDER_THE_STATIC_READING_BUT_NOT_ON_THE_SIDE_FOUR_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "457d5152d982182e2a950895e89e8f64af14959d636f38bfe0ab493581670a5a",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_LETTERS_IN_ALTERNATING_PAIRS_RECORD_THE_ROLE_PATTERN_UNDER_THE_STATIC_READING_BUT_NOT_ON_THE_SIDE_FOUR_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "1df2383f061bc7dd568bf64cdfc61f2e3fbf2f8dca1fc02ef64133070b53f9b4",
+        "recovery": "d07529c6b548484ad01c46e8a0b3599cd5462bde:docs/RELATIONAL_LETTERS_IN_ALTERNATING_PAIRS_RECORD_THE_ROLE_PATTERN_UNDER_THE_STATIC_READING_BUT_NOT_ON_THE_SIDE_FOUR_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8750/docs/RELATIONAL_LETTERS_IN_ALTERNATING_PAIRS_RECORD_THE_ROLE_PATTERN_UNDER_THE_STATIC_READING_BUT_NOT_ON_THE_SIDE_FOUR_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_2026_09_23.txt",
+        "original_sha256": "86475b836109f436118e1028d04efd9c200b80a3e5e10715c8b6b399953141d5",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_2026_09_23.txt",
+        "final_sha256": "346191bd8103fc0f893033e6fe04859e4eb43c134f855461be3db0e26cd28c11",
+        "recovery": "d07529c6b548484ad01c46e8a0b3599cd5462bde:logs/runner-cache/relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8750/logs/runner-cache/relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_2026_09_23.py",
+        "original_sha256": "fa08129d5a68392dffdb84a8c92a11b4f5db6f605b3b4a93933f400601c12498",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_2026_09_23.py",
+        "final_sha256": "cd539396ad2c306723dd09995e26f5327d442e73189f55ec8daa688474a1b8b0",
+        "recovery": "d07529c6b548484ad01c46e8a0b3599cd5462bde:scripts/relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8750/scripts/relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_2026_09_23.py"
+      }
+    ],
+    "8752": [
+      {
+        "original_path": "docs/RELATIONAL_LETTERS_IN_FOUR_ANGLE_CYCLES_RECORD_THE_ROLE_PATTERN_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "a5b20db7da0670ec69f263b4217eb61abd5dcf3ec81591da7c4b359c7cd4b2d1",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_LETTERS_IN_FOUR_ANGLE_CYCLES_RECORD_THE_ROLE_PATTERN_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "630bfe1d4063763a9582578d376fc5acc83ecb2e1d9cd5905f51f43b0f1f17d9",
+        "recovery": "3b7e8e38d677744a782f5fd533e5ea10eafa199f:docs/RELATIONAL_LETTERS_IN_FOUR_ANGLE_CYCLES_RECORD_THE_ROLE_PATTERN_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8752/docs/RELATIONAL_LETTERS_IN_FOUR_ANGLE_CYCLES_RECORD_THE_ROLE_PATTERN_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_2026_09_23.txt",
+        "original_sha256": "c892dc2bb9000f2b8b52d8f4a2decc3d2b491c0c6e35ff02ac5dee91392b3603",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_2026_09_23.txt",
+        "final_sha256": "6111a224291ec53d7d757ae53a78ee79f030992186d0ada5ef78b8c7f8944df4",
+        "recovery": "3b7e8e38d677744a782f5fd533e5ea10eafa199f:logs/runner-cache/relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8752/logs/runner-cache/relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_2026_09_23.py",
+        "original_sha256": "3c840a38eeb1b4c8839e020db6f8d9eeaed175148e13c3e569a58851e944d7f0",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_2026_09_23.py",
+        "final_sha256": "08857c9f19431be4fb1978e85c6b545c11da6c123aea04bae2fe7ee05978e9c2",
+        "recovery": "3b7e8e38d677744a782f5fd533e5ea10eafa199f:scripts/relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8752/scripts/relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_2026_09_23.py"
+      }
+    ],
+    "8756": [
+      {
+        "original_path": "docs/RELATIONAL_CYCLE_LETTERS_UNDER_THE_SWEEP_READING_RECORD_NO_ROLE_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "ad5b40c824b9ddee5519e0ce67a8fe3b5f7c3f1afacb7a74fae22ad7df551824",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_CYCLE_LETTERS_UNDER_THE_SWEEP_READING_RECORD_NO_ROLE_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "c0fb7722b8b1c71e91fc66f0cc36690b157148094c66c52b7e419099578f4424",
+        "recovery": "528d4ee96c75035b4c748e8de690f2e8ba6eef03:docs/RELATIONAL_CYCLE_LETTERS_UNDER_THE_SWEEP_READING_RECORD_NO_ROLE_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8756/docs/RELATIONAL_CYCLE_LETTERS_UNDER_THE_SWEEP_READING_RECORD_NO_ROLE_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_2026_09_23.txt",
+        "original_sha256": "a38f05653be5e11fcbde19ec51f5df0820922447d6a6844fe29d9fd5d289541c",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_2026_09_23.txt",
+        "final_sha256": "284e97472109b6956a8ed95268c0aaaac73a29ea5a34b80c5f833be367c9cc3e",
+        "recovery": "528d4ee96c75035b4c748e8de690f2e8ba6eef03:logs/runner-cache/relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8756/logs/runner-cache/relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_2026_09_23.py",
+        "original_sha256": "42c95c8f812bd18ff88c6a0c49792dd0705845b6a711b7542e3713174db3f962",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_2026_09_23.py",
+        "final_sha256": "31e14babbb961e7ade71e1cb3055d857cccfeb44729ceaefd204e8ed92342e14",
+        "recovery": "528d4ee96c75035b4c748e8de690f2e8ba6eef03:scripts/relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8756/scripts/relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_2026_09_23.py"
+      }
+    ],
+    "8854": [
+      {
+        "original_path": "docs/RELATIONAL_CYCLE_LETTERS_RECORD_THEIR_OCTANT_UNDER_THE_ROTATION_COVARIANT_STATIC_RULE_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "1ee287d62572e88496325ca1e228fe20c9213db1a55fcfe87f10145279eba401",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/RELATIONAL_CYCLE_LETTERS_RECORD_THEIR_OCTANT_UNDER_THE_ROTATION_COVARIANT_STATIC_RULE_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "d1ab93bcaa4c85d92719857ec67cf8e399033c0656952456a0743105d5e0d641",
+        "recovery": "02c757deb620e65f3df014f18fb687d2359b5072:docs/RELATIONAL_CYCLE_LETTERS_RECORD_THEIR_OCTANT_UNDER_THE_ROTATION_COVARIANT_STATIC_RULE_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8854/docs/RELATIONAL_CYCLE_LETTERS_RECORD_THEIR_OCTANT_UNDER_THE_ROTATION_COVARIANT_STATIC_RULE_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_2026_09_23.txt",
+        "original_sha256": "5da6e4e3af258233104e4d9882e6a8ab1f720f11b62c90f477845b8eeae42edd",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_2026_09_23.txt",
+        "final_sha256": "87a041d2f507248320be7a9a27c9450088685d7d8eb6cf48697b6ad5d424312d",
+        "recovery": "02c757deb620e65f3df014f18fb687d2359b5072:logs/runner-cache/relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8854/logs/runner-cache/relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_2026_09_23.py",
+        "original_sha256": "da650e7dce0dd2fb2397be5b814fd77983bca0325377338d7be9dd040f8eb778",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_2026_09_23.py",
+        "final_sha256": "606d0a555afe9b2090a0f40f506d9446ccbbb2c516a24826f51770cbc823a23c",
+        "recovery": "02c757deb620e65f3df014f18fb687d2359b5072:scripts/relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8854/scripts/relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_2026_09_23.py"
+      }
+    ],
+    "8856": [
+      {
+        "original_path": "docs/STRONG_CYCLE_LETTERS_RECORD_FRAME_AND_ROLES_UNDER_THE_ROTATION_COVARIANT_RULE_ON_EVERY_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "85e8e0d1973381af7844b63971aa16a0d5bee1b19d6cfc83dd6fda78e87c5f6e",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/STRONG_CYCLE_LETTERS_RECORD_FRAME_AND_ROLES_UNDER_THE_ROTATION_COVARIANT_RULE_ON_EVERY_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "54bbdf2187358116f0499271098edc40db0c80d7ad434903567b48adcbce20e9",
+        "recovery": "ce60d9d1b14b9da8ec16cfc227eb096ed7886d89:docs/STRONG_CYCLE_LETTERS_RECORD_FRAME_AND_ROLES_UNDER_THE_ROTATION_COVARIANT_RULE_ON_EVERY_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8856/docs/STRONG_CYCLE_LETTERS_RECORD_FRAME_AND_ROLES_UNDER_THE_ROTATION_COVARIANT_RULE_ON_EVERY_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_2026_09_23.txt",
+        "original_sha256": "cd800373ece054d0bbee3f85ec6b69d3c20085cd489a40c0cb1b6b09e813a62d",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_2026_09_23.txt",
+        "final_sha256": "04691da476b62b9d65663bb93d07c87affdefe657b068551d1d9c819170446d6",
+        "recovery": "ce60d9d1b14b9da8ec16cfc227eb096ed7886d89:logs/runner-cache/strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8856/logs/runner-cache/strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_2026_09_23.py",
+        "original_sha256": "b6f56f87c679a2f637d0c200f1e60a9d81c4df8864f9f7b1c4d7e7a5885adea0",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_2026_09_23.py",
+        "final_sha256": "a75596a65d46ad88bc00c402e207f70fdf5c2a5b1b422f3ad35fe39ca9b10f51",
+        "recovery": "ce60d9d1b14b9da8ec16cfc227eb096ed7886d89:scripts/strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8856/scripts/strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_2026_09_23.py"
+      }
+    ],
+    "8857": [
+      {
+        "original_path": "docs/STRONG_CYCLE_LETTERS_ARE_GENERIC_EVERY_OBSTRUCTION_IS_A_NONTRIVIAL_ANGLE_RELATION_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "eb62a83418d7397afda3e783b0c84e7ed37ebab2244883aa1c72f03f0ba02172",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/STRONG_CYCLE_LETTERS_ARE_GENERIC_EVERY_OBSTRUCTION_IS_A_NONTRIVIAL_ANGLE_RELATION_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "389a04e7468529b515e841d89f7ddccf30efa5f7211f1bdbe2ec7c0def6ebd01",
+        "recovery": "86437e690bab3c39d1cc139b01ea53a2788820db:docs/STRONG_CYCLE_LETTERS_ARE_GENERIC_EVERY_OBSTRUCTION_IS_A_NONTRIVIAL_ANGLE_RELATION_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8857/docs/STRONG_CYCLE_LETTERS_ARE_GENERIC_EVERY_OBSTRUCTION_IS_A_NONTRIVIAL_ANGLE_RELATION_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.txt",
+        "original_sha256": "c7b211cdb096d38a617d6542276bf6149a4fa7a2f0c599701429a5dd407a855f",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.txt",
+        "final_sha256": "034dbb9e60e65c16aea7bf5ff7e10053b35de73dc0ea6c8dd19218c4367adf3e",
+        "recovery": "86437e690bab3c39d1cc139b01ea53a2788820db:logs/runner-cache/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8857/logs/runner-cache/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.py",
+        "original_sha256": "93f89ab37986952415ca0abdb94299932d305b2cd272055c889abae5ab866db3",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.py",
+        "final_sha256": "d5862fe558e0c256af22e20d29f4f44a36ca13a184fbdd5088aaa15912224741",
+        "recovery": "86437e690bab3c39d1cc139b01ea53a2788820db:scripts/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit3-originals/8857/scripts/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.py"
+      }
+    ]
+  },
+  "claim_dispositions": {
+    "8691": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R2",
+        "U3-R5",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8717": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R3",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8724": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R3",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8729": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R3",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8731": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R2",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8743": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R4",
+        "U3-R5",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8744": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R4",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8750": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R6",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8752": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R6",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8756": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R5",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8854": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R6",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8856": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R5",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8857": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U3-R1",
+        "U3-R7",
+        "U3-R8"
+      ],
+      "deferred_content": "Physical encoding/selection, unproved necessity and off-domain extensions are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    }
+  }
+}

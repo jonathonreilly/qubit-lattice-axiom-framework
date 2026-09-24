@@ -1,0 +1,101 @@
+{
+  "unit_id": "finite-planar-cubic-ice-two-20260924",
+  "reviewer": "Current primary session separate from source authors; user prohibits subagents. Same-session fix confirmation; no formal audit or separate fix reviewer.",
+  "verdict": "FINAL VERDICT: PASS",
+  "status": "Science confirmed; mechanical and shared gates pending",
+  "skill_commit": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "coverage": "Two complete notes and full runner bodies. Fresh full fixed-seed experiments; independent exact planar multigraph census,1152 reversed first-return loop paths and Fourier calibration. Two focused L4/400loop normalization mutations execute the actual sample/measure code with the identity predicate. Prior reviewed cubic sampler and definitions reused with canonical citations. No mixing, thermodynamic limit or physical-law claim.",
+  "findings": [
+    {
+      "prs": [
+        8984,
+        8985
+      ],
+      "finding": "Frontmatter compared stiffness c to K_cont instead of K_cont/2; prose citations had no canonical input binding.",
+      "resolution": "Correct the denominator in scope prose and add current canonical dependencies with complete source input hashes. Preserve all finite numerical observations and historical failed author expectations."
+    },
+    {
+      "prs": [
+        8984
+      ],
+      "finding": "Claim that no offset shrinks conflicts with the L12-to-L24 central values.",
+      "resolution": "Describe nonmonotonic finite-size values without an established trend; no statistical or limiting conclusion added."
+    }
+  ],
+  "original_dispositions": {
+    "8984": [
+      {
+        "original_path": "docs/CUBIC_ICE_LONG_WAVELENGTH_STIFFNESS_STAYS_ABOVE_THE_SUM_RULE_FROM_L12_TO_L24_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "original_sha256": "1123b54356001411598bef2df29b899171a05cfcf7cde98a33dae11e876f99b8",
+        "recovery": "e4c1992b085d8f807876b5bdabba604266ec8ed3:docs/CUBIC_ICE_LONG_WAVELENGTH_STIFFNESS_STAYS_ABOVE_THE_SUM_RULE_FROM_L12_TO_L24_BOUNDED_THEOREM_NOTE_2026-09-24.md; /private/tmp/cl3-review-evidence-20260923/unit16-originals/8984/docs/CUBIC_ICE_LONG_WAVELENGTH_STIFFNESS_STAYS_ABOVE_THE_SUM_RULE_FROM_L12_TO_L24_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "recovery_branch": "claude/cubic-ice-stiffness-offset-across-sizes-20260924",
+        "final_path": "docs/CUBIC_ICE_LONG_WAVELENGTH_STIFFNESS_STAYS_ABOVE_THE_SUM_RULE_FROM_L12_TO_L24_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "final_sha256": "9f0e6623a8c5ba59bb92c7143590683aa032e538b8cb5a6be1ae78c03f4c8539",
+        "disposition": "selected argument/control retained with canonical packaging and recorded narrow fixes"
+      },
+      {
+        "original_path": "logs/runner-cache/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.txt",
+        "original_sha256": "ceeeecb2f0320daab5dcd467f5e3e21c848a0f3a57c081ed6a34a8f46a0f55a8",
+        "recovery": "e4c1992b085d8f807876b5bdabba604266ec8ed3:logs/runner-cache/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.txt; /private/tmp/cl3-review-evidence-20260923/unit16-originals/8984/logs/runner-cache/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.txt",
+        "recovery_branch": "claude/cubic-ice-stiffness-offset-across-sizes-20260924",
+        "final_path": "logs/runner-cache/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.txt",
+        "final_sha256": "32ad5773ed9b3e98ba664382ac706cf9e174d57ca19cb205a7226b14a5db140c",
+        "disposition": "selected argument/control retained with canonical packaging and recorded narrow fixes"
+      },
+      {
+        "original_path": "scripts/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.py",
+        "original_sha256": "712ff4ac91c1e16dc993c716f9d6672f82e7fcdc7b6a8ebdd6a017dda87226fe",
+        "recovery": "e4c1992b085d8f807876b5bdabba604266ec8ed3:scripts/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.py; /private/tmp/cl3-review-evidence-20260923/unit16-originals/8984/scripts/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.py",
+        "recovery_branch": "claude/cubic-ice-stiffness-offset-across-sizes-20260924",
+        "final_path": "scripts/cubic_ice_long_wavelength_stiffness_stays_above_the_sum_rule_from_l12_to_l24_2026_09_24.py",
+        "final_sha256": "94b5e35cfcc4a67abd5ba5a013f4a4da3ab642659c3a1a575f8ca81a88ae665c",
+        "disposition": "selected argument/control retained with canonical packaging and recorded narrow fixes"
+      }
+    ],
+    "8985": [
+      {
+        "original_path": "docs/SQUARE_ICE_ON_TORI_SMALLEST_WAVEVECTORS_SIT_ABOVE_THE_CONTINUOUS_CALIBRATION_AS_ON_THE_STRIPS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "original_sha256": "e7ae9c1f0315984b5a4596d99d02c82a6043810ccff35ac11aabfdf5b0b16b6e",
+        "recovery": "a0133a50d99aee6bd4598e42391a543f34201588:docs/SQUARE_ICE_ON_TORI_SMALLEST_WAVEVECTORS_SIT_ABOVE_THE_CONTINUOUS_CALIBRATION_AS_ON_THE_STRIPS_BOUNDED_THEOREM_NOTE_2026-09-24.md; /private/tmp/cl3-review-evidence-20260923/unit16-originals/8985/docs/SQUARE_ICE_ON_TORI_SMALLEST_WAVEVECTORS_SIT_ABOVE_THE_CONTINUOUS_CALIBRATION_AS_ON_THE_STRIPS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "recovery_branch": "claude/square-ice-tori-offset-above-continuous-calibration-20260924",
+        "final_path": "docs/SQUARE_ICE_ON_TORI_SMALLEST_WAVEVECTORS_SIT_ABOVE_THE_CONTINUOUS_CALIBRATION_AS_ON_THE_STRIPS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "final_sha256": "ad82b78faee5b572f021b9c59ef41c2ca263f550c98577d5c0b171c588952c54",
+        "disposition": "selected argument/control retained with canonical packaging and recorded narrow fixes"
+      },
+      {
+        "original_path": "logs/runner-cache/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.txt",
+        "original_sha256": "7a8869fe47eb617f4ee5437f54a26280a3fd967195ceb8085c2168f40765addb",
+        "recovery": "a0133a50d99aee6bd4598e42391a543f34201588:logs/runner-cache/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.txt; /private/tmp/cl3-review-evidence-20260923/unit16-originals/8985/logs/runner-cache/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.txt",
+        "recovery_branch": "claude/square-ice-tori-offset-above-continuous-calibration-20260924",
+        "final_path": "logs/runner-cache/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.txt",
+        "final_sha256": "3aee945f4a611d2383564eb41dce48817926b2f513d6a060596b463f44536788",
+        "disposition": "selected argument/control retained with canonical packaging and recorded narrow fixes"
+      },
+      {
+        "original_path": "scripts/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.py",
+        "original_sha256": "b160ce159fe483a521155317c5da2c7a19725017950f339d14448c2ac045130e",
+        "recovery": "a0133a50d99aee6bd4598e42391a543f34201588:scripts/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.py; /private/tmp/cl3-review-evidence-20260923/unit16-originals/8985/scripts/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.py",
+        "recovery_branch": "claude/square-ice-tori-offset-above-continuous-calibration-20260924",
+        "final_path": "scripts/square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_2026_09_24.py",
+        "final_sha256": "78e262ab49059e46d104900f8a990b48d09aa218c81978b415f4d72e56ab6718",
+        "disposition": "selected argument/control retained with canonical packaging and recorded narrow fixes"
+      }
+    ]
+  },
+  "claim_dispositions": {
+    "8984": {
+      "accepted": [
+        "docs/CUBIC_ICE_LONG_WAVELENGTH_STIFFNESS_STAYS_ABOVE_THE_SUM_RULE_FROM_L12_TO_L24_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "boundary": "Only the stated conditional arguments and finite or numerical controls are accepted; no physical-model selection, continuum theorem, retained grade or audit verdict.",
+      "deferred": "No deferred source paths. Complete science and runners retained with narrow fixes; historical cache replaced by fresh authenticated output. Frozen originals remain archived."
+    },
+    "8985": {
+      "accepted": [
+        "docs/SQUARE_ICE_ON_TORI_SMALLEST_WAVEVECTORS_SIT_ABOVE_THE_CONTINUOUS_CALIBRATION_AS_ON_THE_STRIPS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "boundary": "Only the stated conditional arguments and finite or numerical controls are accepted; no physical-model selection, continuum theorem, retained grade or audit verdict.",
+      "deferred": "No deferred source paths. Complete science and runners retained with narrow fixes; historical cache replaced by fresh authenticated output. Frozen originals remain archived."
+    }
+  }
+}

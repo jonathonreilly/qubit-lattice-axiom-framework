@@ -1,0 +1,95 @@
+{
+  "unit_id": "rotor-clock-ice-graph-static-seven-20260924",
+  "reviewed_prs": [
+    {
+      "id": "PR8957",
+      "head": "fb9edf315aed8192ea03873fe8e83882dbaf1502",
+      "delta_base": "733bfa16316ca7f98d413d27cf4678a0accbbb31",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8957",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit15-v2.json",
+        "sha256": "692e58752f02ae71cc38809cff639bb07a72dae721eb3923dd430d1b8ce27466"
+      }
+    },
+    {
+      "id": "PR8958",
+      "head": "1aec3ad3e499ffe5b4145a5aa3b1098855be9ef0",
+      "delta_base": "fb9edf315aed8192ea03873fe8e83882dbaf1502",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8958",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit15-v2.json",
+        "sha256": "692e58752f02ae71cc38809cff639bb07a72dae721eb3923dd430d1b8ce27466"
+      }
+    },
+    {
+      "id": "PR8950",
+      "head": "888d7ca8217e00ba96bc7e41066b0205ba18f1d3",
+      "delta_base": "7445cc7a50e2c7631d70dc8d9a065d0653ffa6ef",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8950",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit15-v2.json",
+        "sha256": "692e58752f02ae71cc38809cff639bb07a72dae721eb3923dd430d1b8ce27466"
+      }
+    },
+    {
+      "id": "PR8960",
+      "head": "2fa29b2394217f6174209bb8c99e70df356d7450",
+      "delta_base": "8cc5f114f0d703100d6a7a764a1c689c7a56d65f",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8960",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit15-v2.json",
+        "sha256": "692e58752f02ae71cc38809cff639bb07a72dae721eb3923dd430d1b8ce27466"
+      }
+    },
+    {
+      "id": "PR8968",
+      "head": "33e1d20b8d5028ac73e626f45d3e0b8f2bb0e8b1",
+      "delta_base": "fbe9f0f0154402d8afa07a8d12c920df2d9d0848",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8968",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit15-v2.json",
+        "sha256": "692e58752f02ae71cc38809cff639bb07a72dae721eb3923dd430d1b8ce27466"
+      }
+    },
+    {
+      "id": "PR8648",
+      "head": "fe1e7a925c5b66b669b69afe57581cac0e60b404",
+      "delta_base": "9d8596c758f116c572bcc5ee46cfe58ec07701da",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8648",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit15-v2.json",
+        "sha256": "692e58752f02ae71cc38809cff639bb07a72dae721eb3923dd430d1b8ce27466"
+      }
+    },
+    {
+      "id": "PR8033",
+      "head": "d041b83a507226feae9713662767dd34d2ffb4a8",
+      "delta_base": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8033",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit15-v2.json",
+        "sha256": "692e58752f02ae71cc38809cff639bb07a72dae721eb3923dd430d1b8ce27466"
+      }
+    }
+  ],
+  "base": "1c9a243e9b393520183bb06600dec3da9182371a",
+  "tree": "ae96e4c409188c8e929cb95a58e46f12a88433a5",
+  "candidate_commit": "1cb2a082bfa4cebc01c0f61b4e366a6daa48a82d",
+  "confirmation_sha256": "18314305700e1e56404197629a302cb0cd995bbacbfc0523023324b424c805e1",
+  "source_record_sha256": "88099f09fb920c214edf32cf3f85432c0eaa25f7478d53e1d531ad18c38ff586",
+  "logs": {
+    "pipeline-unit15-v1.log": "7a5909cd3be70129673b9c650047491566b6e6abdcc3081ac02f87dc8df2e349",
+    "strict-unit15-v1.log": "00cf505fe57d234c87d5036d1e0b4c3cb5c32de06dc6cdc27fabab3ba3ab206c",
+    "changed-evidence-unit15-v1.log": "fbd59615dfdf9dde115f7fddaeb0a4a0b66cb5e192f278400541ac16f900c46a",
+    "cleanup-unit15-v1.log": "331e4a6fd300b8c8577e94f285ff941cc04006740d5cc9b7d1907b6b7387f5d1",
+    "final-graph-unit15-v1.log": "11a3d08a0e0ce3c7ae27f11865e694d93a6711b251ff3ddbbdbfa8ebbd2d8871"
+  },
+  "validation": "PASS; pipeline exit 0; strict lint exit 0; changed evidence checked 7, failures 0, control_failures 0",
+  "push_status": "landed and all 24 final source/evidence blobs verified on origin/main",
+  "additional_controls": {
+    "independent-unit15.json": "8307f550330228a96ac18b8efff1bf22f7c9ad480dd5c000235ca74cd9a45c31",
+    "independent-unit15-endpoint.json": "1b17368627621ec92a1af067a3d723da8d7047cbefd2a3f133513dc1629cf2f0",
+    "independent-unit15-assembly-refresh.json": "77338bb64f25b63415a053dea2373873cfd53f68e875b0d1f6bfb6a367f9b5d9",
+    "mutations-unit15-results.json": "358de0fc7f3e8aaccc3d889834450c810b322c39a5cc93b918886b4525d62044"
+  }
+}

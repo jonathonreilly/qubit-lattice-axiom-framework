@@ -1,0 +1,99 @@
+{
+  "unit_id": "formation-eight-20260923",
+  "reviewed_prs": [
+    {
+      "id": "PR8643",
+      "head": "7a91226fcb050781657c717c3bf84257c23e0b39",
+      "delta_base": "9ff59dc9caf61444b8bf3bd3d0d13ea53ace1dac",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8643",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-v1.json",
+        "sha256": "db709751eb097cf92bd62c621c3c59aaf227df9e0f0f30e13f4eef23bb446890"
+      }
+    },
+    {
+      "id": "PR8663",
+      "head": "7754a0010f19d1ab417749fb7fa838298cb2bfb1",
+      "delta_base": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8663",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-v1.json",
+        "sha256": "db709751eb097cf92bd62c621c3c59aaf227df9e0f0f30e13f4eef23bb446890"
+      }
+    },
+    {
+      "id": "PR8664",
+      "head": "8c400e65f929e6b33c9ae268a70a6efbc969ae35",
+      "delta_base": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8664",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-v1.json",
+        "sha256": "db709751eb097cf92bd62c621c3c59aaf227df9e0f0f30e13f4eef23bb446890"
+      }
+    },
+    {
+      "id": "PR8666",
+      "head": "3fabd0e9fe96bfa40d9fd8fee1f0d5684d6756cb",
+      "delta_base": "0b79324946912feca6063851b2b842539b503820",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8666",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-v1.json",
+        "sha256": "db709751eb097cf92bd62c621c3c59aaf227df9e0f0f30e13f4eef23bb446890"
+      }
+    },
+    {
+      "id": "PR8667",
+      "head": "00ab89679274df1f33a95929ae1c976a8f4b88ad",
+      "delta_base": "48334d7f83137d5a18ffd4962623a32a6778a637",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8667",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-v1.json",
+        "sha256": "db709751eb097cf92bd62c621c3c59aaf227df9e0f0f30e13f4eef23bb446890"
+      }
+    },
+    {
+      "id": "PR8669",
+      "head": "616ba568037e6676bbfd29288a13bbe73170e283",
+      "delta_base": "48334d7f83137d5a18ffd4962623a32a6778a637",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8669",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-v1.json",
+        "sha256": "db709751eb097cf92bd62c621c3c59aaf227df9e0f0f30e13f4eef23bb446890"
+      }
+    },
+    {
+      "id": "PR8670",
+      "head": "0945593a2c8137d75f53a073c03a7defe3ad0f29",
+      "delta_base": "48334d7f83137d5a18ffd4962623a32a6778a637",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8670",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-v1.json",
+        "sha256": "db709751eb097cf92bd62c621c3c59aaf227df9e0f0f30e13f4eef23bb446890"
+      }
+    },
+    {
+      "id": "PR8671",
+      "head": "a9acb94bf0479b80b59aa35295477b66a9edf8cd",
+      "delta_base": "6b9c6183f24c01651d5a98394061bd88a52aef63",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8671",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-v1.json",
+        "sha256": "db709751eb097cf92bd62c621c3c59aaf227df9e0f0f30e13f4eef23bb446890"
+      }
+    }
+  ],
+  "base": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "tree": "34d288ecca216f95e301891784a86f264b0a7016",
+  "candidate_commit": "cb2e2e6132b9dac501a24662496b74cd2dee12bb",
+  "confirmation_sha256": "73e46534dc3ebb8aa1757ceda2c365c25f5cad7956ecdec90f275cede35c594c",
+  "source_record_sha256": "3c023b997c69e2a4f292cdab7be5ea48104bbff817c36c5b7530f2fb070adfe9",
+  "logs": {
+    "pipeline-v1.log": "e45c25d0ca38f6695f1af7a8df61ed0b398e327cf625fa0cc7b95f926a203762",
+    "strict-v1.log": "c9fe86a71f7e473cdae18f4427ba07a4de4d00e788561d10047222ddeda8e90e",
+    "changed-evidence-v1.log": "024e609313cccf50bd017ad70befbc626aea4603965722d7eabd3e78de5b8a1e",
+    "cleanup-v1.log": "64a963360e8ddf53d3502b8cd07cbf317d0fcb5da649d543481178f35c9be9ad",
+    "final-graph-v1.log": "1751ac9256712f60671c821eb6e42194762a76422f653ca0734b4957ddf6d5da"
+  },
+  "validation": "PASS; pipeline exit 0; strict lint exit 0; changed evidence checked 8, failures 0, control_failures 0",
+  "push_status": "landed and all 24 final source/evidence blobs verified on origin/main"
+}

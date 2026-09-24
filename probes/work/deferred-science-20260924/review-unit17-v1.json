@@ -1,0 +1,64 @@
+{
+  "unit_id": "six-square-formation-one-20260924",
+  "reviewer": "Current primary session separate from source author; no subagents. Same-session fix confirmation; no formal audit or separate fix reviewer.",
+  "verdict": "FINAL VERDICT: PASS",
+  "status": "Science confirmed; mechanical and shared gates pending",
+  "skill_commit": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "coverage": "Complete new finite theorem and primary runner; all15core function ASTs identical to reviewed PR8735. Closure lemma re-read. Fresh complete32window search, independent216fixed/35free generator enumeration, all32vertex-frontier partition totals,1280exact conditional tests and40weighted-law subset searches. Two broken admissibility/closure primaries rejected by the initial exact search checks.",
+  "findings": [
+    {
+      "prs": [
+        8993
+      ],
+      "finding": "Six-square generators can induce seven enclosed plaquettes; wording could imply a geometric-size classification.",
+      "resolution": "Clarify generator size versus induced-window size and the untested seven-or-more-generator boundary. Keep fixed-order and one-attaining-set scope explicit."
+    },
+    {
+      "prs": [
+        8993
+      ],
+      "finding": "Several exact counts and the7-site maximum were printed but not explicitly asserted.",
+      "resolution": "Assert the29/3coordinator split and38..42closed sets plus7-site maximum in all32completed searches. Preserve full algorithms, proof and historical records; bind all canonical inputs."
+    }
+  ],
+  "original_dispositions": {
+    "8993": [
+      {
+        "original_path": "docs/UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_SIX_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "original_sha256": "21d97200c457ebc6bdea46d32564d22f9c1b4f484b383ccd02bb6825a0d84973",
+        "recovery": "abdc89cb6cf967fa32e32762b250144bfd88a1b0:docs/UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_SIX_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md; /private/tmp/cl3-review-evidence-20260923/unit17-originals/8993/docs/UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_SIX_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "recovery_branch": "claude/planar-windows-six-squares-no-single-site-order-20260924",
+        "final_path": "docs/UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_SIX_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "final_sha256": "24e30cd531f3fda4f860352e1529571b58a06ed138461d99100211c939afa442",
+        "disposition": "selected argument/control retained with canonical packaging and recorded narrow fixes"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_planar_windows_of_six_squares_admit_no_single_site_formation_order_2026_09_24.txt",
+        "original_sha256": "5653309b27fb3a596c207bc464480dc71300643cbc57a5ea943fe786ed1ccbc9",
+        "recovery": "abdc89cb6cf967fa32e32762b250144bfd88a1b0:logs/runner-cache/uniform_ice_planar_windows_of_six_squares_admit_no_single_site_formation_order_2026_09_24.txt; /private/tmp/cl3-review-evidence-20260923/unit17-originals/8993/logs/runner-cache/uniform_ice_planar_windows_of_six_squares_admit_no_single_site_formation_order_2026_09_24.txt",
+        "recovery_branch": "claude/planar-windows-six-squares-no-single-site-order-20260924",
+        "final_path": "logs/runner-cache/uniform_ice_planar_windows_of_six_squares_admit_no_single_site_formation_order_2026_09_24.txt",
+        "final_sha256": "aec1ef5d35de75a311256f77ea35d0c978111369118a590f442deec7df7bdca1",
+        "disposition": "selected argument/control retained with canonical packaging and recorded narrow fixes"
+      },
+      {
+        "original_path": "scripts/uniform_ice_planar_windows_of_six_squares_admit_no_single_site_formation_order_2026_09_24.py",
+        "original_sha256": "aaec2bc72311c6d361ab1a910e07e48ac7e97aba1a95cd499704a50646b819c1",
+        "recovery": "abdc89cb6cf967fa32e32762b250144bfd88a1b0:scripts/uniform_ice_planar_windows_of_six_squares_admit_no_single_site_formation_order_2026_09_24.py; /private/tmp/cl3-review-evidence-20260923/unit17-originals/8993/scripts/uniform_ice_planar_windows_of_six_squares_admit_no_single_site_formation_order_2026_09_24.py",
+        "recovery_branch": "claude/planar-windows-six-squares-no-single-site-order-20260924",
+        "final_path": "scripts/uniform_ice_planar_windows_of_six_squares_admit_no_single_site_formation_order_2026_09_24.py",
+        "final_sha256": "a1121b87cd6a53217c1cb9b5892cc647a542151f61be840f4e7718b1c3f0843b",
+        "disposition": "selected argument/control retained with canonical packaging and recorded narrow fixes"
+      }
+    ]
+  },
+  "claim_dispositions": {
+    "8993": {
+      "accepted": [
+        "docs/UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_SIX_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "boundary": "Only the stated conditional arguments and finite or numerical controls are accepted; no physical-model selection, continuum theorem, retained grade or audit verdict.",
+      "deferred": "No deferred source paths. Complete science and runners retained with narrow fixes; historical cache replaced by fresh authenticated output. Frozen originals remain archived."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "task_count": 11,
+  "claimable_J_units": 11,
+  "unique_task_ids": true,
+  "generator_matches_extension": true,
+  "unrelated_catalog_entries_preserved": 4144,
+  "deferred_blob_hashes_verified": 3249,
+  "all_17_receipt_hashes_verified": true,
+  "semantic_only_PR8648_remote_recovery_verified": true,
+  "note": "Catalog generator also refreshed unrelated open-PR tasks; those changes were excluded. Existing catalog plus validated extension published. claim.units also produces ten fixed F seed units with empty runs when supplied only J tasks; validation counts J units only."
+}

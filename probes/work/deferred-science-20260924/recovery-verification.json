@@ -1,0 +1,618 @@
+{
+  "verified_original_blob_count": 3249,
+  "preserved_branches": [
+    {
+      "branch": "codex/finite-pw-confinement-block43-20260907",
+      "remote_head": "d041b83a507226feae9713662767dd34d2ffb4a8",
+      "frozen_head": "d041b83a507226feae9713662767dd34d2ffb4a8",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-actual-energy-tail-20260924",
+      "remote_head": "1aec3ad3e499ffe5b4145a5aa3b1098855be9ef0",
+      "frozen_head": "1aec3ad3e499ffe5b4145a5aa3b1098855be9ef0",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-actual-field-limits-20260923",
+      "remote_head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+      "frozen_head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-autonomous-finite-clock-20260924",
+      "remote_head": "69462972e8ef9585bdd8d85969e31c7b0b3638c3",
+      "frozen_head": "69462972e8ef9585bdd8d85969e31c7b0b3638c3",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-capacity-terminal-counts-20260923",
+      "remote_head": "79ab61e5aee8945bf96924815c7e0f9dd4d256a5",
+      "frozen_head": "79ab61e5aee8945bf96924815c7e0f9dd4d256a5",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-energy-selection-20260923",
+      "remote_head": "579577555dee1be53055423c046538ff9057e45a",
+      "frozen_head": "579577555dee1be53055423c046538ff9057e45a",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-energy-spread-20260923",
+      "remote_head": "4f5f210ecc33a8eba817fcfb153c9f43f81b96a6",
+      "frozen_head": "4f5f210ecc33a8eba817fcfb153c9f43f81b96a6",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-exponential-field-tail-20260923",
+      "remote_head": "a7e3dae5c667e9ba0c9561a9bcf87b0401e21a5a",
+      "frozen_head": "a7e3dae5c667e9ba0c9561a9bcf87b0401e21a5a",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-fast-band-energy-20260924",
+      "remote_head": "733bfa16316ca7f98d413d27cf4678a0accbbb31",
+      "frozen_head": "733bfa16316ca7f98d413d27cf4678a0accbbb31",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-finite-energy-supply-20260924",
+      "remote_head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+      "frozen_head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-general-microscopic-energy-20260924",
+      "remote_head": "bb4462598a2a9e9d9d2fddb229ea5152cc8b4d28",
+      "frozen_head": "bb4462598a2a9e9d9d2fddb229ea5152cc8b4d28",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-high-flux-energy-20260924",
+      "remote_head": "432edb3bfdb12f8471955b4de344826cee45ed4f",
+      "frozen_head": "432edb3bfdb12f8471955b4de344826cee45ed4f",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-homogeneous-charged-20260922",
+      "remote_head": "a5e06800ed56708c370ebaa4830bf203c96c9656",
+      "frozen_head": "a5e06800ed56708c370ebaa4830bf203c96c9656",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-local-compensation-20260923",
+      "remote_head": "fed8422aaaaff35c4da1ae613d6e889a989613b4",
+      "frozen_head": "fed8422aaaaff35c4da1ae613d6e889a989613b4",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-local-field-limit-20260922",
+      "remote_head": "ff1edc030d8a2aaec9aab16a2354e7cc113ef8cf",
+      "frozen_head": "ff1edc030d8a2aaec9aab16a2354e7cc113ef8cf",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-local-volume-20260923",
+      "remote_head": "a78c6b8c002051a1ae4d47d94eeac94e562cff3d",
+      "frozen_head": "a78c6b8c002051a1ae4d47d94eeac94e562cff3d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-microscopic-energy-20260924",
+      "remote_head": "191ad04ad48d64c55d31c34521caec68444bfa64",
+      "frozen_head": "191ad04ad48d64c55d31c34521caec68444bfa64",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-post-formation-clock-20260923",
+      "remote_head": "b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953",
+      "frozen_head": "b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-postbirth-electric-completion-20260924",
+      "remote_head": "99cfdfb105bd2b64715622093b2a7bf7accacaf9",
+      "frozen_head": "99cfdfb105bd2b64715622093b2a7bf7accacaf9",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-prepared-electric-formation-20260923",
+      "remote_head": "7013db3809221268780ffff04b716075d1e53626",
+      "frozen_head": "7013db3809221268780ffff04b716075d1e53626",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-repeated-formation-20260923",
+      "remote_head": "fe6dc2c5ef061fa1e0051063d49178f23b872c13",
+      "frozen_head": "fe6dc2c5ef061fa1e0051063d49178f23b872c13",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-rotor-fast-tail-20260924",
+      "remote_head": "fb9edf315aed8192ea03873fe8e83882dbaf1502",
+      "frozen_head": "fb9edf315aed8192ea03873fe8e83882dbaf1502",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "codex/mobile-record-rotor-waves-20260922",
+      "remote_head": "1ca7b4c2ee69d0840bd9196766e3b77c4251bcc0",
+      "frozen_head": "1ca7b4c2ee69d0840bd9196766e3b77c4251bcc0",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block100-inertia-and-the-rules-weights-do-not-mix-locally-20260923",
+      "remote_head": "bb4df55f188da140d1446b4a5aaf0a75b5d42f14",
+      "frozen_head": "bb4df55f188da140d1446b4a5aaf0a75b5d42f14",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block101-the-clock-is-a-constraint-20260923",
+      "remote_head": "a0cf3d4a41ef8443bfe161012e3c178e80151807",
+      "frozen_head": "a0cf3d4a41ef8443bfe161012e3c178e80151807",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block102-where-moving-records-cannot-clump-20260923",
+      "remote_head": "d3c8f4f96278b395f7b92c61679b0533faf15305",
+      "frozen_head": "d3c8f4f96278b395f7b92c61679b0533faf15305",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block103-possibilitys-odds-carry-content-not-count-20260923",
+      "remote_head": "e299fffbb69ea91f23c1c790ab00ce1b4e708d80",
+      "frozen_head": "e299fffbb69ea91f23c1c790ab00ce1b4e708d80",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block104-the-rules-own-clock-has-no-far-field-20260923",
+      "remote_head": "fd92c37695798b92e0903309352b39698442b9cb",
+      "frozen_head": "fd92c37695798b92e0903309352b39698442b9cb",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block105-in-discrete-ticks-a-local-clock-is-exact-only-for-walks-that-do-not-move-20260923",
+      "remote_head": "6cad973f8d12f3385529a197247b5a54f5c33a2f",
+      "frozen_head": "6cad973f8d12f3385529a197247b5a54f5c33a2f",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block106-no-local-momentum-falls-with-weight-one-20260923",
+      "remote_head": "b8a4e01b96d95638866a503384757084d9103247",
+      "frozen_head": "b8a4e01b96d95638866a503384757084d9103247",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block107-the-walks-links-carry-the-lengths-curvature-20260923",
+      "remote_head": "26ad00872889164f5c8c5d3dc6b1ae586a6b7dbe",
+      "frozen_head": "26ad00872889164f5c8c5d3dc6b1ae586a6b7dbe",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block108-the-walks-dynamics-needs-a-boundary-condition-at-the-fast-clock-end-20260923",
+      "remote_head": "305272de6f7f3c3b44c91174231444d34209cfde",
+      "frozen_head": "305272de6f7f3c3b44c91174231444d34209cfde",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block109-the-3d-clocked-walk-needs-fast-end-conditions-in-small-transverse-sectors-20260924",
+      "remote_head": "888d7ca8217e00ba96bc7e41066b0205ba18f1d3",
+      "frozen_head": "888d7ca8217e00ba96bc7e41066b0205ba18f1d3",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block110-the-walks-rays-around-a-body-and-the-two-charges-20260924",
+      "remote_head": "2fa29b2394217f6174209bb8c99e70df356d7450",
+      "frozen_head": "2fa29b2394217f6174209bb8c99e70df356d7450",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "remote_head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "frozen_head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "remote_head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "frozen_head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "remote_head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "frozen_head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "remote_head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "frozen_head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "remote_head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "frozen_head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920",
+      "remote_head": "31e5d0300e07357ef4de73c210288fe6615d6f19",
+      "frozen_head": "31e5d0300e07357ef4de73c210288fe6615d6f19",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920",
+      "remote_head": "361166e7eaccd7d80cd1e3d4cb94b4ad7fcdbc21",
+      "frozen_head": "361166e7eaccd7d80cd1e3d4cb94b4ad7fcdbc21",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block41-what-a-source-is-when-records-move-20260920",
+      "remote_head": "93efe618fa94d4607f762a698b7cfa2c8f00a000",
+      "frozen_head": "93efe618fa94d4607f762a698b7cfa2c8f00a000",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block42-interaction-through-the-odds-of-unformed-sites-20260920",
+      "remote_head": "cf6aae77d7ffdda9463f71469ede2744c2e6b7b2",
+      "frozen_head": "cf6aae77d7ffdda9463f71469ede2744c2e6b7b2",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block43-record-layer-fields-arrive-by-diffusion-20260920",
+      "remote_head": "a6af3f2d571cc23aed9674ab44f999fc55de94a5",
+      "frozen_head": "a6af3f2d571cc23aed9674ab44f999fc55de94a5",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block44-records-with-inertia-sound-and-forces-between-bodies-20260920",
+      "remote_head": "502a7a2149a88543c2507b42ce7eec265e6b840e",
+      "frozen_head": "502a7a2149a88543c2507b42ce7eec265e6b840e",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block45-the-wind-law-of-capturing-bodies-20260920",
+      "remote_head": "e07ae767d484763bd9446eb2d5c4c9b05643dd1c",
+      "frozen_head": "e07ae767d484763bd9446eb2d5c4c9b05643dd1c",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block46-the-potential-of-the-wind-and-the-conserved-tensor-20260921",
+      "remote_head": "b9398e0fec91a0e238f4770aba99daf988746928",
+      "frozen_head": "b9398e0fec91a0e238f4770aba99daf988746928",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block47-transparent-bodies-force-is-the-product-of-record-counts-20260921",
+      "remote_head": "d03857c2ae4ee23e6fc54d51e65df370698b6d6d",
+      "frozen_head": "d03857c2ae4ee23e6fc54d51e65df370698b6d6d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block48-free-capturing-bodies-law-of-motion-20260921",
+      "remote_head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+      "frozen_head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block49-the-attraction-is-tied-to-growth-20260921",
+      "remote_head": "589280e3798ef2e39433fad5248c37cc89aed712",
+      "frozen_head": "589280e3798ef2e39433fad5248c37cc89aed712",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block50-inertia-joined-with-the-rules-weights-by-a-clock-20260921",
+      "remote_head": "e21017edf0e5a6738584c29532e6d383e87887a8",
+      "frozen_head": "e21017edf0e5a6738584c29532e6d383e87887a8",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block51-the-wind-is-not-isotropic-cubic-lattice-viscosity-20260921",
+      "remote_head": "031d6e9da47044d650d054568d303f410760fb96",
+      "frozen_head": "031d6e9da47044d650d054568d303f410760fb96",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block52-isotropic-streaming-clause-content-as-a-bias-20260921",
+      "remote_head": "b1111c0288030c50f3bf5b608e7de1c8ea1a6d9f",
+      "frozen_head": "b1111c0288030c50f3bf5b608e7de1c8ea1a6d9f",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block53-no-master-clock-forces-the-lattice-laplace-equation-20260921",
+      "remote_head": "c4e6a23f6c24c7f5de6d94bedbd749458452c604",
+      "frozen_head": "c4e6a23f6c24c7f5de6d94bedbd749458452c604",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block54-phase-timed-by-the-local-clock-every-packet-falls-towards-slow-clocks-20260921",
+      "remote_head": "664e733aa21f0288cdb49d1d474d56bdafdda362",
+      "frozen_head": "664e733aa21f0288cdb49d1d474d56bdafdda362",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block55-action-and-reaction-the-rate-fields-source-is-the-amplitudes-energy-density-20260921",
+      "remote_head": "525c6500c56b178a241a2e17cbf18a46485e57f2",
+      "frozen_head": "525c6500c56b178a241a2e17cbf18a46485e57f2",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block56-the-strong-field-exactly-linear-in-root-rate-ledger-and-capacity-20260921",
+      "remote_head": "d6c6e2572de656c33fdb78a0c3b14b28d18d9c5c",
+      "frozen_head": "d6c6e2572de656c33fdb78a0c3b14b28d18d9c5c",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921",
+      "remote_head": "621c0c56378574c17622f21ebd69e9294639909b",
+      "frozen_head": "621c0c56378574c17622f21ebd69e9294639909b",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921",
+      "remote_head": "e526d22c1841c4d53170ad945fdb46b968832bff",
+      "frozen_head": "e526d22c1841c4d53170ad945fdb46b968832bff",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921",
+      "remote_head": "7ff9b1540a3f53ff0072f6102d01968c127d151d",
+      "frozen_head": "7ff9b1540a3f53ff0072f6102d01968c127d151d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921",
+      "remote_head": "ec3a6abdf004d9fa5accbbcf4464b23812cc2aac",
+      "frozen_head": "ec3a6abdf004d9fa5accbbcf4464b23812cc2aac",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921",
+      "remote_head": "084fd809f9457d942576714dd8b9f98d91844d9d",
+      "frozen_head": "084fd809f9457d942576714dd8b9f98d91844d9d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921",
+      "remote_head": "aada579459b89a9c7179442140a90a809e2d696c",
+      "frozen_head": "aada579459b89a9c7179442140a90a809e2d696c",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block63-what-the-walk-conserves-momentum-flows-on-bonds-20260921",
+      "remote_head": "3b0ed2b08180bda9b2174f61edf57b8ac2e8a71d",
+      "frozen_head": "3b0ed2b08180bda9b2174f61edf57b8ac2e8a71d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block64-bond-strains-and-plaquette-curls-blindness-to-the-coins-axes-forces-the-curvature-member-20260921",
+      "remote_head": "e5688665736b60adf84e9eb84276e8c4169c2a17",
+      "frozen_head": "e5688665736b60adf84e9eb84276e8c4169c2a17",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block65-the-blind-walk-a-scalar-hop-weighted-by-the-twist-of-the-coin-20260921",
+      "remote_head": "fb37a985ba166358495f7878d06a41776f60744d",
+      "frozen_head": "fb37a985ba166358495f7878d06a41776f60744d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block66-the-fall-is-owed-by-the-ledger-20260921",
+      "remote_head": "c4afb022c22e1f4e677675fab6326b0f839e55e3",
+      "frozen_head": "c4afb022c22e1f4e677675fab6326b0f839e55e3",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block67-a-formation-event-in-the-curvature-member-20260921",
+      "remote_head": "3bea45f6d8dddddd0ce44e94e083bb597b86967a",
+      "frozen_head": "3bea45f6d8dddddd0ce44e94e083bb597b86967a",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block68-eight-species-of-the-walk-one-set-of-lengths-or-eight-20260921",
+      "remote_head": "d297893d4a6d492761723181f00117eb7530eb8d",
+      "frozen_head": "d297893d4a6d492761723181f00117eb7530eb8d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block69-reach-three-exact-books-and-one-geometry-for-all-eight-species-20260921",
+      "remote_head": "40fa4423f2a36eb874c895e430da7139a95ca484",
+      "frozen_head": "40fa4423f2a36eb874c895e430da7139a95ca484",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block70-species-exchange-maps-what-each-varying-field-becomes-20260921",
+      "remote_head": "8b4eccab5cb0cda8a42b254cd9af8261e2cde203",
+      "frozen_head": "8b4eccab5cb0cda8a42b254cd9af8261e2cde203",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block71-amplitudes-of-negative-energy-as-sources-20260921",
+      "remote_head": "e7ef26762e497345834dacc1c70f978fbd7242fc",
+      "frozen_head": "e7ef26762e497345834dacc1c70f978fbd7242fc",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block72-which-species-fall-the-ledger-owes-20260921",
+      "remote_head": "a57dbbaba2aca4607a5ece3a4247f4cc546d82af",
+      "frozen_head": "a57dbbaba2aca4607a5ece3a4247f4cc546d82af",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block73-the-two-step-momentum-is-the-only-one-20260921",
+      "remote_head": "69f3c13dd5891a18016bb99941fe0eaeadcb2b9f",
+      "frozen_head": "69f3c13dd5891a18016bb99941fe0eaeadcb2b9f",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block74-three-responses-eight-species-20260921",
+      "remote_head": "c331c7f282e422c209816553d8d703b6a03ef78b",
+      "frozen_head": "c331c7f282e422c209816553d8d703b6a03ef78b",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block75-a-closed-lattice-at-rest-20260921",
+      "remote_head": "7fcef163e2cc2499ebe16a9aa2da54c42371aa0e",
+      "frozen_head": "7fcef163e2cc2499ebe16a9aa2da54c42371aa0e",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block76-the-filled-seas-energy-as-the-ledgers-field-term-20260922",
+      "remote_head": "2fc37b9f66dd04517137a7addadfeeb7f416d114",
+      "frozen_head": "2fc37b9f66dd04517137a7addadfeeb7f416d114",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block77-the-axioms-own-generator-and-a-staggered-rest-term-20260922",
+      "remote_head": "a2c138c297024d90879cca1eb58336216ff8cfd0",
+      "frozen_head": "a2c138c297024d90879cca1eb58336216ff8cfd0",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block78-one-record-per-site-is-an-interaction-not-a-free-sea-20260922",
+      "remote_head": "88a8e6752e01205879181758e70b2a47f2bad275",
+      "frozen_head": "88a8e6752e01205879181758e70b2a47f2bad275",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block79-a-chessboard-record-background-and-its-walls-20260922",
+      "remote_head": "d5d68066d3733ee77b57675a6734ea771c1475fb",
+      "frozen_head": "d5d68066d3733ee77b57675a6734ea771c1475fb",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block80-many-records-under-exclusion-the-ledger-and-the-interacting-sea-20260922",
+      "remote_head": "c7e551d185c9874915f2605740fc04a302914d11",
+      "frozen_head": "c7e551d185c9874915f2605740fc04a302914d11",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block81-the-record-gas-never-makes-the-chessboard-a-rest-mass-needs-20260922",
+      "remote_head": "3b67807c6eed5cc368a90684656af7a3e749c05d",
+      "frozen_head": "3b67807c6eed5cc368a90684656af7a3e749c05d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block82-what-can-gap-the-walk-inside-the-qubit-complete-map-20260922",
+      "remote_head": "5923e87f141cd4431b540234e4a4fad910bd95cb",
+      "frozen_head": "5923e87f141cd4431b540234e4a4fad910bd95cb",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block83-alternating-lengths-are-a-relabelling-invisible-and-free-20260922",
+      "remote_head": "3944a9633f3ef9e209645753d93109f834089d10",
+      "frozen_head": "3944a9633f3ef9e209645753d93109f834089d10",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block84-bond-rates-alternate-on-their-own-below-a-threshold-stiffness-20260922",
+      "remote_head": "cff4568de1a1733d54221f9d018211afe89d8004",
+      "frozen_head": "cff4568de1a1733d54221f9d018211afe89d8004",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block85-the-crowd-under-exclusion-also-gains-from-the-alternation-20260922",
+      "remote_head": "ccc2fb1c7138c67734d3839e94f25e97cc6a9307",
+      "frozen_head": "ccc2fb1c7138c67734d3839e94f25e97cc6a9307",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block86-defects-of-the-alternation-are-separable-sheets-lines-and-zero-modes-20260922",
+      "remote_head": "45b3da7dc01fd01d1cea8dfc5073d979dc817907",
+      "frozen_head": "45b3da7dc01fd01d1cea8dfc5073d979dc817907",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block87-what-a-wall-in-the-alternation-costs-level-rule-and-the-laws-reward-20260922",
+      "remote_head": "2e638c320e815d4e8d22ef12382005bae0af0d88",
+      "frozen_head": "2e638c320e815d4e8d22ef12382005bae0af0d88",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block88-the-two-instabilities-of-the-uniform-bond-rates-20260922",
+      "remote_head": "12042bb076d906acc91f8aa6d54c27ea1a0a4f9f",
+      "frozen_head": "12042bb076d906acc91f8aa6d54c27ea1a0a4f9f",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block89-the-unit-of-rate-decides-the-alternations-thresholds-20260923",
+      "remote_head": "e7b0c1dfe24724bcdb792a8b95f247ad7c188a53",
+      "frozen_head": "e7b0c1dfe24724bcdb792a8b95f247ad7c188a53",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block90-light-cone-formation-keeps-memory-in-3plus1-20260923",
+      "remote_head": "c3412ce59542e2edfaef2ae45d19cca9d390c194",
+      "frozen_head": "c3412ce59542e2edfaef2ae45d19cca9d390c194",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block91-a-held-source-under-light-cone-formation-20260923",
+      "remote_head": "036826ac2e7b7ff8c3b2529c25db4839e7e4748d",
+      "frozen_head": "036826ac2e7b7ff8c3b2529c25db4839e7e4748d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block92-zero-field-bound-on-the-formation-bilayer-20260923",
+      "remote_head": "3e26092f3c43921e0096c930dad5a8ad1362d4b6",
+      "frozen_head": "3e26092f3c43921e0096c930dad5a8ad1362d4b6",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block93-covariance-forces-a-reversible-formation-law-20260923",
+      "remote_head": "fa522a87d1307efc24eb0e03ccfd060d0281a70d",
+      "frozen_head": "fa522a87d1307efc24eb0e03ccfd060d0281a70d",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block94-three-readings-against-known-physics-20260923",
+      "remote_head": "33ca79b8a3590973c1ad00306f88dd765893bbdf",
+      "frozen_head": "33ca79b8a3590973c1ad00306f88dd765893bbdf",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block95-records-on-their-own-clocks-attract-one-over-r-equal-both-ways-20260923",
+      "remote_head": "f9b34475df1a567d2e1abc2f69b7f259483b728f",
+      "frozen_head": "f9b34475df1a567d2e1abc2f69b7f259483b728f",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block96-waves-among-moving-records-need-a-coupling-time-reversal-flips-20260923",
+      "remote_head": "111143f765d15adac61fa33554fbf8749136754b",
+      "frozen_head": "111143f765d15adac61fa33554fbf8749136754b",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block97-a-record-that-cannot-read-the-field-hops-on-its-own-clock-20260923",
+      "remote_head": "f6c81d4a73f6b0547340749e1d1655b2f92a7ef8",
+      "frozen_head": "f6c81d4a73f6b0547340749e1d1655b2f92a7ef8",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block98-one-field-for-records-and-waves-20260923",
+      "remote_head": "6672f80380772bc01bbeda5a1cd7cf6db2d456c0",
+      "frozen_head": "6672f80380772bc01bbeda5a1cd7cf6db2d456c0",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/admissibility-induced-law-block99-formation-spreads-records-motion-gathers-them-20260923",
+      "remote_head": "87e166dbec1eeddc6aec3158b26d378e1effe34e",
+      "frozen_head": "87e166dbec1eeddc6aec3158b26d378e1effe34e",
+      "frozen_is_ancestor": true
+    },
+    {
+      "branch": "physics-loop/postmark-electric-validity-20260923",
+      "remote_head": "a82d245904a22c2942718d4115ffedea390c2b19",
+      "frozen_head": "2687409722dd5e559177015c80db339508f51b18",
+      "frozen_is_ancestor": true
+    }
+  ],
+  "semantic_only_recovery": {
+    "pr": 8648,
+    "branch": "claude/assembly-graph-witness-20260922",
+    "frozen_head": "fe1e7a925c5b66b669b69afe57581cac0e60b404",
+    "remote_head": "6c33178463918e6ad42b539d2488019018208083",
+    "frozen_is_ancestor": true
+  }
+}

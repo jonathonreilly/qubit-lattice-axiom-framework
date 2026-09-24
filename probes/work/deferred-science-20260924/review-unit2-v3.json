@@ -1,0 +1,218 @@
+{
+  "unit_id": "frames-and-ice-four-20260923",
+  "reviewer": "current primary Codex session, user prohibits subagents; original authors separate; same-session fix confirmation, no separate fix reviewer or audit",
+  "verdict": "FINAL VERDICT: PASS",
+  "skill_commit": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "status": "science source confirmed; mechanical preflight and combined gate pending",
+  "findings": [
+    {
+      "id": "U2-R1",
+      "prs": [
+        8676,
+        8686,
+        8687
+      ],
+      "class": "IMPORTED_VALUE",
+      "finding": "Covariance alone supplies neither fresh independent draws nor a fixed external order nor skip-and-continue semantics.",
+      "resolution": "Declare the actual stochastic factorization and failure convention; restrict the DAG exclusion to fixed orders and keep mixtures/adaptive orders open."
+    },
+    {
+      "id": "U2-R2",
+      "prs": [
+        8676,
+        8679,
+        8686,
+        8687
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Finite abstract alphabets and local models do not establish qubit encodings, exhaustive physical requirements, or infinite phases.",
+      "resolution": "Remove physical decision/phase conclusions; retain conditional mathematics, finite domains, and explicit open encoding/limit questions."
+    },
+    {
+      "id": "U2-R3",
+      "prs": [
+        8676
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Sweep rigidity needs K=3; an explicit nonaffine K=4 label field is a counterexample to extension. Designed-order checks cover five boxes only.",
+      "resolution": "State K=3 in the scope, theorem and runner; retain K=4 corner counting separately; restrict designed-order claim to tested boxes."
+    },
+    {
+      "id": "U2-R4",
+      "prs": [
+        8676
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Sampled Maclaurin bound and ambiguous parity phase needed source explanation.",
+      "resolution": "Supply simplex averaging argument and declare shifted role phase for the emulated star."
+    },
+    {
+      "id": "U2-R5",
+      "prs": [
+        8679
+      ],
+      "class": "EVIDENCE",
+      "finding": "Initial count assertion only required nonempty output; partial rotation sampling was not explicit; arbitrary independent-record extension ambiguous.",
+      "resolution": "Assert 9600; disclose rotation subsampling and source covariance proof; require joint independence for auxiliary-record extension; explain why full link conditionals are point masses."
+    },
+    {
+      "id": "U2-R6",
+      "prs": [
+        8686
+      ],
+      "class": "EVIDENCE",
+      "finding": "Plan evidence only reweighted input configurations; single-vertex bound was misapplied to all partial record schemes.",
+      "resolution": "Run actual plan propagation through the connected formation order; remove unsupported partial-record exclusion."
+    },
+    {
+      "id": "U2-R7",
+      "prs": [
+        8687
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Finite m tests do not establish asymptotics; variance notation confused coordinate and total spread; Fourier zeros repeat periodically.",
+      "resolution": "Give Stirling/ratio proof, per-coordinate 2n/9 and total 2n/3, reciprocal periodicity, and distinct-arrow covariance scope."
+    },
+    {
+      "id": "U2-R8",
+      "prs": [
+        8676,
+        8679,
+        8686,
+        8687
+      ],
+      "class": "AUDIT_COMPATIBILITY",
+      "finding": "Trace enums/dependency links/timeouts/resolution certificates needed correction.",
+      "resolution": "Use native trace metadata, actual axiom links, declared 120-second budgets and explicit finite resolution certificates; the failed v1 changed-evidence check identified missing canonical resolution markers in the square-loop runner, corrected in v2 and freshly recaptured."
+    }
+  ],
+  "coverage": "Complete original notes/runners and consequential fixes checked. Shared premises are explicit finite laws and nearest-neighbour graphs, not imported physical authority. Fresh runners and independent mathematical controls pass; four consequential mutations caught. Final two runner changes were docstring narrowing only, followed by fresh cache capture. V2 additionally corrects only square-loop output certificate markers after the preserved v1 gate failure; same-session confirmation covers those five accurate output lines. Mathematical source/control checks remain unchanged.",
+  "original_dispositions": {
+    "8676": [
+      {
+        "original_path": "docs/REGISTERED_FRAMES_COORDINATE_LABELS_SWEEP_RIGIDITY_CORNER_PRICE_AND_SOLDERED_EMULATION_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "c9cdc2acc5cd1a3caca8cb139d834a3710ee7ec5eb850bf4b0feed0ed69dc2fa",
+        "disposition": "narrowed",
+        "final_path": "docs/REGISTERED_FRAMES_COORDINATE_LABELS_SWEEP_RIGIDITY_CORNER_PRICE_AND_SOLDERED_EMULATION_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "92e337b99f5babfaf2fb20c520f4e047ba028d84337388dc93f5f5ce23a383f9",
+        "recovery": "b68cf70d9d330f563d0f22a624b3cf96200f3ef3:docs/REGISTERED_FRAMES_COORDINATE_LABELS_SWEEP_RIGIDITY_CORNER_PRICE_AND_SOLDERED_EMULATION_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/originals/8676/docs/REGISTERED_FRAMES_COORDINATE_LABELS_SWEEP_RIGIDITY_CORNER_PRICE_AND_SOLDERED_EMULATION_BOUNDED_THEOREM_NOTE_2026-09-22.md"
+      },
+      {
+        "original_path": "logs/runner-cache/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.txt",
+        "original_sha256": "e0e5273f648b822c0bb3c1647d82fecece7e53a76c77ea02706d20e9a6161fc8",
+        "disposition": "corrected runner and recaptured evidence",
+        "final_path": "logs/runner-cache/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.txt",
+        "final_sha256": "acc3aa2598d2c7a5eed6bb7cb42b11546ba91e47e25b6673a23b92dc2e1a5d6b",
+        "recovery": "b68cf70d9d330f563d0f22a624b3cf96200f3ef3:logs/runner-cache/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/originals/8676/logs/runner-cache/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.txt"
+      },
+      {
+        "original_path": "scripts/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.py",
+        "original_sha256": "e1b47e6fd22273a31b3d79fe5775e5bcabcf201891b78008e237b9a36310e2e2",
+        "disposition": "corrected runner and recaptured evidence",
+        "final_path": "scripts/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.py",
+        "final_sha256": "59d25f42b1e35914fbd998bd1a5333703762ce0a0d8b01af373ec26d9594f5c1",
+        "recovery": "b68cf70d9d330f563d0f22a624b3cf96200f3ef3:scripts/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/originals/8676/scripts/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.py"
+      }
+    ],
+    "8679": [
+      {
+        "original_path": "docs/STATIC_ICE_MEASURE_NEAREST_NEIGHBOUR_ADMISSIBILITY_NEEDS_A_FRAME_SOURCE_SOLDERED_VERTEX_RECORDS_OR_COORDINATE_LETTERS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "399236d3f70e027b235cf4a7e277bd2203e6f06c58ceb8ac14baa8878b4339ab",
+        "disposition": "narrowed",
+        "final_path": "docs/STATIC_ICE_MEASURE_NEAREST_NEIGHBOUR_ADMISSIBILITY_NEEDS_A_FRAME_SOURCE_SOLDERED_VERTEX_RECORDS_OR_COORDINATE_LETTERS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "9c7308514c794420854256854577a64220b7a979c7cfc2b1b994a32df036e410",
+        "recovery": "16abf2925d9fb897feb27fe3477353492e483524:docs/STATIC_ICE_MEASURE_NEAREST_NEIGHBOUR_ADMISSIBILITY_NEEDS_A_FRAME_SOURCE_SOLDERED_VERTEX_RECORDS_OR_COORDINATE_LETTERS_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/originals/8679/docs/STATIC_ICE_MEASURE_NEAREST_NEIGHBOUR_ADMISSIBILITY_NEEDS_A_FRAME_SOURCE_SOLDERED_VERTEX_RECORDS_OR_COORDINATE_LETTERS_BOUNDED_THEOREM_NOTE_2026-09-22.md"
+      },
+      {
+        "original_path": "logs/runner-cache/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.txt",
+        "original_sha256": "314e0d53579dac11b1fed9784cd33556c8a3a4eb6e9f47a03c2cb9e265078fe0",
+        "disposition": "corrected runner and recaptured evidence",
+        "final_path": "logs/runner-cache/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.txt",
+        "final_sha256": "00edacb6fd9de29f6a56032f32db0a78732bcf537c2c52071b990416977bdfa0",
+        "recovery": "16abf2925d9fb897feb27fe3477353492e483524:logs/runner-cache/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/originals/8679/logs/runner-cache/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.txt"
+      },
+      {
+        "original_path": "scripts/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.py",
+        "original_sha256": "22456effe707e99456990c19b52b98c90e6a7913d28b028973cc7fa4507500b6",
+        "disposition": "corrected runner and recaptured evidence",
+        "final_path": "scripts/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.py",
+        "final_sha256": "d9747510dd18310cfb42093bd7aa7d2474116c888dacd752b9b872469ed66d84",
+        "recovery": "16abf2925d9fb897feb27fe3477353492e483524:scripts/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/originals/8679/scripts/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.py"
+      }
+    ],
+    "8686": [
+      {
+        "original_path": "docs/UNIFORM_ICE_BY_FORMATION_THE_SQUARE_LOOP_OBSTRUCTION_THE_PLAQUETTE_COORDINATOR_AND_PLANS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "7d851c43b32653cb407ce19a9b3f7149b8f23fd0d70dafc39879527125dc4cf5",
+        "disposition": "narrowed",
+        "final_path": "docs/UNIFORM_ICE_BY_FORMATION_THE_SQUARE_LOOP_OBSTRUCTION_THE_PLAQUETTE_COORDINATOR_AND_PLANS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "ada946f20c97f5f9c36c5c013c6b3d23b2a5ee364f06a32ef360640a63f8f87c",
+        "recovery": "b650036ea7c055066a8f2034fb6c1c6e982111b1:docs/UNIFORM_ICE_BY_FORMATION_THE_SQUARE_LOOP_OBSTRUCTION_THE_PLAQUETTE_COORDINATOR_AND_PLANS_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/originals/8686/docs/UNIFORM_ICE_BY_FORMATION_THE_SQUARE_LOOP_OBSTRUCTION_THE_PLAQUETTE_COORDINATOR_AND_PLANS_BOUNDED_THEOREM_NOTE_2026-09-22.md"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.txt",
+        "original_sha256": "619e3f10ccad367b3954b717720b427398406c308f5f3d31ea0aabef00e6a2d6",
+        "disposition": "corrected runner and recaptured evidence",
+        "final_path": "logs/runner-cache/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.txt",
+        "final_sha256": "dea3b4eeb5af8a03c81f449bd5e5e87cb0f3cabb3f9445c9440fcd3eabeac27e",
+        "recovery": "b650036ea7c055066a8f2034fb6c1c6e982111b1:logs/runner-cache/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/originals/8686/logs/runner-cache/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.txt"
+      },
+      {
+        "original_path": "scripts/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.py",
+        "original_sha256": "a19c7df82061465244b6901687e30a3bc482c209b235eb4d19b05a679beae750",
+        "disposition": "corrected runner and recaptured evidence",
+        "final_path": "scripts/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.py",
+        "final_sha256": "b14de01a0345b218cbf156a3dde2f322bba11aecc84d8cea9912544117a2acd0",
+        "recovery": "b650036ea7c055066a8f2034fb6c1c6e982111b1:scripts/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/originals/8686/scripts/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.py"
+      }
+    ],
+    "8687": [
+      {
+        "original_path": "docs/DIRECTED_ICE_SWEEP_FORMATION_MAKES_ICE_CORRELATIONS_CAUSAL_FLUX_PROPAGATES_AS_A_DIRECTED_RANDOM_WALK_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "baa0f9e8aae39214af5738d2c210d1511ee1b61fec652926166e6c8f23096709",
+        "disposition": "narrowed",
+        "final_path": "docs/DIRECTED_ICE_SWEEP_FORMATION_MAKES_ICE_CORRELATIONS_CAUSAL_FLUX_PROPAGATES_AS_A_DIRECTED_RANDOM_WALK_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "6d2bd97bc18f95942f01c711dc231cf6e9e23dbddca3dc34a4aa061d76c16046",
+        "recovery": "d07822fa6381db1ee466e0e1b0ff1d156f53a357:docs/DIRECTED_ICE_SWEEP_FORMATION_MAKES_ICE_CORRELATIONS_CAUSAL_FLUX_PROPAGATES_AS_A_DIRECTED_RANDOM_WALK_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/originals/8687/docs/DIRECTED_ICE_SWEEP_FORMATION_MAKES_ICE_CORRELATIONS_CAUSAL_FLUX_PROPAGATES_AS_A_DIRECTED_RANDOM_WALK_BOUNDED_THEOREM_NOTE_2026-09-22.md"
+      },
+      {
+        "original_path": "logs/runner-cache/directed_ice_sweep_formation_flux_propagates_as_a_directed_random_walk_2026_09_22.txt",
+        "original_sha256": "cd49b23339ea323ce392d71d02dbb707d8c7d130be2d2f4aeee8e3110839213a",
+        "disposition": "corrected runner and recaptured evidence",
+        "final_path": "logs/runner-cache/directed_ice_sweep_formation_flux_propagates_as_a_directed_random_walk_2026_09_22.txt",
+        "final_sha256": "afb3e151dab8ac8cadffc1e087619f17627904c2026d79e1079ac4b1a065c2e5",
+        "recovery": "d07822fa6381db1ee466e0e1b0ff1d156f53a357:logs/runner-cache/directed_ice_sweep_formation_flux_propagates_as_a_directed_random_walk_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/originals/8687/logs/runner-cache/directed_ice_sweep_formation_flux_propagates_as_a_directed_random_walk_2026_09_22.txt"
+      },
+      {
+        "original_path": "scripts/directed_ice_sweep_formation_flux_propagates_as_a_directed_random_walk_2026_09_22.py",
+        "original_sha256": "46844d745ed0798663cf6d5bf47e3eac8bd4e18f000ce81e8454477a4fb277fd",
+        "disposition": "corrected runner and recaptured evidence",
+        "final_path": "scripts/directed_ice_sweep_formation_flux_propagates_as_a_directed_random_walk_2026_09_22.py",
+        "final_sha256": "5682d63ce59c18b640f1368843bc9d34cfe49e543170916539995c977603a5c8",
+        "recovery": "d07822fa6381db1ee466e0e1b0ff1d156f53a357:scripts/directed_ice_sweep_formation_flux_propagates_as_a_directed_random_walk_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/originals/8687/scripts/directed_ice_sweep_formation_flux_propagates_as_a_directed_random_walk_2026_09_22.py"
+      }
+    ]
+  },
+  "claim_dispositions": {
+    "8676": {
+      "accepted": "All independent useful finite calculations/arguments in final source",
+      "rejected_or_narrowed": "Unsupported consequences explicitly corrected by U2-R1 through U2-R8",
+      "deferred_content": "No independent source result dropped; extensions and physical realization remain open questions rather than claimed results."
+    },
+    "8679": {
+      "accepted": "All independent useful finite calculations/arguments in final source",
+      "rejected_or_narrowed": "Unsupported consequences explicitly corrected by U2-R1 through U2-R8",
+      "deferred_content": "No independent source result dropped; extensions and physical realization remain open questions rather than claimed results."
+    },
+    "8686": {
+      "accepted": "All independent useful finite calculations/arguments in final source",
+      "rejected_or_narrowed": "Unsupported consequences explicitly corrected by U2-R1 through U2-R8",
+      "deferred_content": "No independent source result dropped; extensions and physical realization remain open questions rather than claimed results."
+    },
+    "8687": {
+      "accepted": "All independent useful finite calculations/arguments in final source",
+      "rejected_or_narrowed": "Unsupported consequences explicitly corrected by U2-R1 through U2-R8",
+      "deferred_content": "No independent source result dropped; extensions and physical realization remain open questions rather than claimed results."
+    }
+  }
+}

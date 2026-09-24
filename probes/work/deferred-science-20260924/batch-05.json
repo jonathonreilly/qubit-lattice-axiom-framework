@@ -1,0 +1,1308 @@
+{
+  "batch": 5,
+  "sources": [
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "sha256": "96c984c8fe0ac6bc8dc6f7f5d812acbd14ef8f2448763e6f2486a60c3d1b65bf",
+      "bytes": 2188,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "96c984c8fe0ac6bc8dc6f7f5d812acbd14ef8f2448763e6f2486a60c3d1b65bf",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block34_findings.md",
+      "sha256": "280a758f5aa00fc0c7d6bf79ba32fc6356d68ec2bad40ad75ec7843892d7602a",
+      "bytes": 2225,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "280a758f5aa00fc0c7d6bf79ba32fc6356d68ec2bad40ad75ec7843892d7602a",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block34.md",
+      "sha256": "625683367666facdd3ed2768aff1e53c77e93797228863cbf11e7e87c39e0719",
+      "bytes": 2390,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "625683367666facdd3ed2768aff1e53c77e93797228863cbf11e7e87c39e0719",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block34.md",
+      "sha256": "fc228750e3345b7ce9be9684e707561c537ab796e5cbdfd67bf5bd83543bea96",
+      "bytes": 2048,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "fc228750e3345b7ce9be9684e707561c537ab796e5cbdfd67bf5bd83543bea96",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "sha256": "534a7e59a4c18404c13ddaf3c55d7f68754977539d5e07f520fcdb73d1053c31",
+      "bytes": 10568,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "534a7e59a4c18404c13ddaf3c55d7f68754977539d5e07f520fcdb73d1053c31",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "sha256": "f083183e70380367623f157c16a0b5ae812b78e36ad3a59d45f739c581ff728f",
+      "bytes": 2280,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "f083183e70380367623f157c16a0b5ae812b78e36ad3a59d45f739c581ff728f",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "sha256": "fb80ce345957987de86dde53552c6d0043aaa9a74921760d5481ca9900a9e3c5",
+      "bytes": 11857,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "fb80ce345957987de86dde53552c6d0043aaa9a74921760d5481ca9900a9e3c5",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block34.md",
+      "sha256": "764089c4e4e69ee2d8d80d3d5a41691baa6ac2481c6103a391ce1523f8c6f28f",
+      "bytes": 3490,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "764089c4e4e69ee2d8d80d3d5a41691baa6ac2481c6103a391ce1523f8c6f28f",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "sha256": "26f6207b889a91621ad5f4cdeac568defe5f048ab441de644b139af9e1056ccd",
+      "bytes": 56260,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "26f6207b889a91621ad5f4cdeac568defe5f048ab441de644b139af9e1056ccd",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "sha256": "caa2841045208740d0e7e3d9d340f24bff7319cd848a73f42cf6363f992e5beb",
+      "bytes": 16677,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "caa2841045208740d0e7e3d9d340f24bff7319cd848a73f42cf6363f992e5beb",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "sha256": "7048634d28f7ecb149f48ac0e15edb8497b2dfc0ead70d3d6f3287c6ec7269ca",
+      "bytes": 5182,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "7048634d28f7ecb149f48ac0e15edb8497b2dfc0ead70d3d6f3287c6ec7269ca",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.out.txt",
+      "sha256": "71a0e1986f004b32abdcb0e73a35b719d6d72f849a7357dbd35cc78d32ee07d2",
+      "bytes": 1889,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "71a0e1986f004b32abdcb0e73a35b719d6d72f849a7357dbd35cc78d32ee07d2",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.py",
+      "sha256": "eb6bb80f1b71276590c52c86caf55f5ae8d4c36012b4a525ecfa9736316e9bf2",
+      "bytes": 5337,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "eb6bb80f1b71276590c52c86caf55f5ae8d4c36012b4a525ecfa9736316e9bf2",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.out.txt",
+      "sha256": "b3dfd4bc1e2ae5cfe296b9c4234188b2f481e11eb5d79648a6e674700e8a9309",
+      "bytes": 6112,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "b3dfd4bc1e2ae5cfe296b9c4234188b2f481e11eb5d79648a6e674700e8a9309",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.py",
+      "sha256": "845be5ac8b9e23df9ba5a1f5088dabd92fb94dbd3f2fc028da9479ab9dd53ec7",
+      "bytes": 3132,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "845be5ac8b9e23df9ba5a1f5088dabd92fb94dbd3f2fc028da9479ab9dd53ec7",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.out.txt",
+      "sha256": "2cf183e8f2036760386e1f529ae30e775799fc8447b6c17c7cb6f56102e2520c",
+      "bytes": 8540,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "2cf183e8f2036760386e1f529ae30e775799fc8447b6c17c7cb6f56102e2520c",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.py",
+      "sha256": "4084ce1a458ac09ffd0ecbde953a467ab2f73f8e6a9b234d10768a0567063c37",
+      "bytes": 3993,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "4084ce1a458ac09ffd0ecbde953a467ab2f73f8e6a9b234d10768a0567063c37",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8178,
+      "batch": 5,
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "bc65a62a7bea3f614f30ce5d5b826da0a4f8d464291687c60a79ddeb4f0e3486",
+      "bytes": 834851,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+      "category": "historical-evidence",
+      "original_disposition": "regenerated shared citation manifest",
+      "content_group": "bc65a62a7bea3f614f30ce5d5b826da0a4f8d464291687c60a79ddeb4f0e3486",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "sha256": "a492d8de1f5d8e1e2a337c655bc1fff2819c7af7198e67e7de018a54d9002abd",
+      "bytes": 1604,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "a492d8de1f5d8e1e2a337c655bc1fff2819c7af7198e67e7de018a54d9002abd",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block35_findings.md",
+      "sha256": "0084e10ae216f98dcd68c28deccb9f8ec61f8a5f953d54136e3d555466aa9b65",
+      "bytes": 1881,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "0084e10ae216f98dcd68c28deccb9f8ec61f8a5f953d54136e3d555466aa9b65",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block35.md",
+      "sha256": "6f85e24720950ded0d3130aae66f458d9e275ccba0d56b3adf93cc0af639decf",
+      "bytes": 2076,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "6f85e24720950ded0d3130aae66f458d9e275ccba0d56b3adf93cc0af639decf",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block35.md",
+      "sha256": "6a3b59fe741d9fced039ce3a3402a7072391fd3b112ff33ec2c70d5242f1349a",
+      "bytes": 1695,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "6a3b59fe741d9fced039ce3a3402a7072391fd3b112ff33ec2c70d5242f1349a",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "sha256": "eb731be158452237e26381bb517b12593b0522851cdbe6f3779e945c8b66ac11",
+      "bytes": 10253,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "eb731be158452237e26381bb517b12593b0522851cdbe6f3779e945c8b66ac11",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "sha256": "5c2ac9e21af52f27d5d086f500375cf2120df5fdf4f8139fe027bffe6728ca26",
+      "bytes": 2402,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "5c2ac9e21af52f27d5d086f500375cf2120df5fdf4f8139fe027bffe6728ca26",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "sha256": "916d73132886f64ae14d56fa1091462f3ac7a13884a468bef79dc47198c86de4",
+      "bytes": 11824,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "916d73132886f64ae14d56fa1091462f3ac7a13884a468bef79dc47198c86de4",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block35.md",
+      "sha256": "44b39c69c20b67b9cf94cf161750834136da587b8d66125f4f28bf64d9d68ed4",
+      "bytes": 3435,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "44b39c69c20b67b9cf94cf161750834136da587b8d66125f4f28bf64d9d68ed4",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "sha256": "dcb5f9f32985bf6ac9e6b4019ca81144b91c669078a4493afda771343e3c98df",
+      "bytes": 56057,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "dcb5f9f32985bf6ac9e6b4019ca81144b91c669078a4493afda771343e3c98df",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "sha256": "135aac9d8b3ec47ee5a115ff55eeed74e02f90a8640a80f108e74b4e6ff15d9a",
+      "bytes": 16316,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "135aac9d8b3ec47ee5a115ff55eeed74e02f90a8640a80f108e74b4e6ff15d9a",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "sha256": "671ab64d4ee321cf247b98454715de02670136aaaf89e6bd2cab114ea27c6676",
+      "bytes": 5191,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "671ab64d4ee321cf247b98454715de02670136aaaf89e6bd2cab114ea27c6676",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.out.txt",
+      "sha256": "5c0b5a21edbd92503ad41ece72146624d096800c0a0a1e811e86a27e27cda235",
+      "bytes": 6893,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "5c0b5a21edbd92503ad41ece72146624d096800c0a0a1e811e86a27e27cda235",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.py",
+      "sha256": "9ee7b05a56ca8a820bf73b8b47557f60dae93891dbdc76c767efb13d6823fcb9",
+      "bytes": 4440,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "9ee7b05a56ca8a820bf73b8b47557f60dae93891dbdc76c767efb13d6823fcb9",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.out.txt",
+      "sha256": "b2b983f47fda43d965790f8b89824c3ea37bc28fd41d7fb20631802e0c3e48c3",
+      "bytes": 1133,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "b2b983f47fda43d965790f8b89824c3ea37bc28fd41d7fb20631802e0c3e48c3",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.py",
+      "sha256": "2e7d28a9c6b8b3928ff56e7c06a5b1f93ecd9add2c67bdc19b937392d84e001d",
+      "bytes": 4924,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "2e7d28a9c6b8b3928ff56e7c06a5b1f93ecd9add2c67bdc19b937392d84e001d",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8180,
+      "batch": 5,
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "a43c4f0a13f1efec862bbc87a04870671e432b7690ddd5f87b94a6fa58a5095a",
+      "bytes": 834874,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+      "category": "historical-evidence",
+      "original_disposition": "regenerated shared citation manifest",
+      "content_group": "a43c4f0a13f1efec862bbc87a04870671e432b7690ddd5f87b94a6fa58a5095a",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "sha256": "764dd893b6a249d588ccad739845588921f16dba4553ae970ab436de7caaee0c",
+      "bytes": 1148,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "764dd893b6a249d588ccad739845588921f16dba4553ae970ab436de7caaee0c",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block36_findings.md",
+      "sha256": "afc9d3303d1e09d571bde221abe9f485dc630853d444a7616af7ee1db1a7622a",
+      "bytes": 1726,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "afc9d3303d1e09d571bde221abe9f485dc630853d444a7616af7ee1db1a7622a",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block36.md",
+      "sha256": "9549d1e25de3fb051ebaf5323795cedeca5550b9fa4e0e33baab23298fdac01d",
+      "bytes": 830,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "9549d1e25de3fb051ebaf5323795cedeca5550b9fa4e0e33baab23298fdac01d",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block36.md",
+      "sha256": "7c274951e6d01cd4de9f47b2dbf9ad72c6b91370cd5cdcd51d2a72c7b470667e",
+      "bytes": 2173,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "7c274951e6d01cd4de9f47b2dbf9ad72c6b91370cd5cdcd51d2a72c7b470667e",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "sha256": "d1098c5bca96086a84be93ef726fb93ca136a558870b8875eb6bd444090c61a2",
+      "bytes": 9123,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "d1098c5bca96086a84be93ef726fb93ca136a558870b8875eb6bd444090c61a2",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "sha256": "9c8fb87119d9c34d638c642e3bad47ecb58ded8763d74b35495e1c164058f6fb",
+      "bytes": 2032,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "9c8fb87119d9c34d638c642e3bad47ecb58ded8763d74b35495e1c164058f6fb",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "sha256": "052aaf8ca83992ff9bc19ddddadf675ffed71ed82d0167b7665c0fbdb0bb202c",
+      "bytes": 11818,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "052aaf8ca83992ff9bc19ddddadf675ffed71ed82d0167b7665c0fbdb0bb202c",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block36.md",
+      "sha256": "ba605df6935f408af0655e02736ec3b270163547054d06667650c657acd4515d",
+      "bytes": 1576,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "ba605df6935f408af0655e02736ec3b270163547054d06667650c657acd4515d",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "sha256": "3db0902cdedc44b8528bd6dda8ab94eb1d44babbf3992ee53960c509238f831c",
+      "bytes": 55080,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "3db0902cdedc44b8528bd6dda8ab94eb1d44babbf3992ee53960c509238f831c",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "sha256": "b6ace40741aeaf383d495908d46201afe3495d51bc2f45aa5edb683400e24fe9",
+      "bytes": 14906,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "b6ace40741aeaf383d495908d46201afe3495d51bc2f45aa5edb683400e24fe9",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "sha256": "82700b76f15c12fe9befecdfc0ddbb8a364bbcff23858cc3cf866c8ef1c43eeb",
+      "bytes": 4860,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "82700b76f15c12fe9befecdfc0ddbb8a364bbcff23858cc3cf866c8ef1c43eeb",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_memory.out.txt",
+      "sha256": "3bcd3480fc1bff6ee7ec60bdeec3794dc195ff989d9684a697bac7bd28ea854f",
+      "bytes": 10036,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "3bcd3480fc1bff6ee7ec60bdeec3794dc195ff989d9684a697bac7bd28ea854f",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_memory.py",
+      "sha256": "bdd28bde6715840f1866c5beb5e7ce9dd1b12f1f331dc51cd0f23cf1d1163b49",
+      "bytes": 7262,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "bdd28bde6715840f1866c5beb5e7ce9dd1b12f1f331dc51cd0f23cf1d1163b49",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_refuter.out.txt",
+      "sha256": "f520ec7686b03ec5e9b76bb470fc06191f341d7a538bbaef0beb737f3d4fd2e7",
+      "bytes": 921,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "f520ec7686b03ec5e9b76bb470fc06191f341d7a538bbaef0beb737f3d4fd2e7",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_refuter.py",
+      "sha256": "8347e145bc13dbfe31d13380c09c647978490d0ff15173d006fd0f561da19d31",
+      "bytes": 3806,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "8347e145bc13dbfe31d13380c09c647978490d0ff15173d006fd0f561da19d31",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_response.out.txt",
+      "sha256": "abd368ee56d80a648e94781626574a5e45580457755471746da41f3405d7fdf3",
+      "bytes": 3411,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "abd368ee56d80a648e94781626574a5e45580457755471746da41f3405d7fdf3",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_response.py",
+      "sha256": "dfd7752b576df12c5ff75f886b9eb787f9846c4dc21ac5d9b51e3b5b47277a74",
+      "bytes": 4068,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "dfd7752b576df12c5ff75f886b9eb787f9846c4dc21ac5d9b51e3b5b47277a74",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8507,
+      "batch": 5,
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "7cd76305532fce0cad03405257e943db5e22a92bfe205801332fa7bb3d9835d7",
+      "bytes": 834859,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+      "category": "historical-evidence",
+      "original_disposition": "regenerated shared citation manifest",
+      "content_group": "7cd76305532fce0cad03405257e943db5e22a92bfe205801332fa7bb3d9835d7",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "sha256": "f61bbcbe95d7d5c2690fed75c0a6e6ed8b4004378e03059e284b6176244b44ff",
+      "bytes": 1035,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "f61bbcbe95d7d5c2690fed75c0a6e6ed8b4004378e03059e284b6176244b44ff",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block37_findings.md",
+      "sha256": "1d7419ce0e0a15fe2db37ca7484ae71621b523280375de7886dd6535c50b5a86",
+      "bytes": 832,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "1d7419ce0e0a15fe2db37ca7484ae71621b523280375de7886dd6535c50b5a86",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block37.md",
+      "sha256": "439c6f413d0aad907a249fb8f1aa77c063d9bad48730951a24bc3452c5a417fa",
+      "bytes": 606,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "439c6f413d0aad907a249fb8f1aa77c063d9bad48730951a24bc3452c5a417fa",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block37.md",
+      "sha256": "d2e8f69abf7c83a28d3cb04456f9e3d6975dc5bc0f724e6bda350fed1ec3aa2f",
+      "bytes": 1113,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "d2e8f69abf7c83a28d3cb04456f9e3d6975dc5bc0f724e6bda350fed1ec3aa2f",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "sha256": "deffb27035e398d742529ef969214fb06e1615738c3532f38c037d357628a311",
+      "bytes": 8698,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "deffb27035e398d742529ef969214fb06e1615738c3532f38c037d357628a311",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "sha256": "cef8e7aba040ad74d2483e6cfe30fa8b241ae856c0a02eda117baaf5ee0a08ad",
+      "bytes": 2011,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "cef8e7aba040ad74d2483e6cfe30fa8b241ae856c0a02eda117baaf5ee0a08ad",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "sha256": "ccb43b5766edc9d617b15efeb79580a8311280bec375d3262cc1a6b0025c3c1d",
+      "bytes": 11137,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "ccb43b5766edc9d617b15efeb79580a8311280bec375d3262cc1a6b0025c3c1d",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block37.md",
+      "sha256": "c00d177c45bff14aaab0d62f8251748705e85b47b4467b6992993ff0c6608b0f",
+      "bytes": 811,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "c00d177c45bff14aaab0d62f8251748705e85b47b4467b6992993ff0c6608b0f",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "sha256": "d40da2e26bdbd7d4913c8d2a048c393526e3819297906c62259116c7a84b26b9",
+      "bytes": 54706,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "d40da2e26bdbd7d4913c8d2a048c393526e3819297906c62259116c7a84b26b9",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "sha256": "22e0bfca3f7ca56875be8b117104e585b867c04517a0b71d8772ae79d0197763",
+      "bytes": 14786,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "22e0bfca3f7ca56875be8b117104e585b867c04517a0b71d8772ae79d0197763",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "sha256": "6db8fa5d5d4dbe0f23b7e3868a5e4084fe7a344f8f08dc7304e20e446d4446cd",
+      "bytes": 4788,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "6db8fa5d5d4dbe0f23b7e3868a5e4084fe7a344f8f08dc7304e20e446d4446cd",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_family.py",
+      "sha256": "658de0dc9d2bf0801af49c40db87c293771643d9fa8c000e3cdc23732b31edf4",
+      "bytes": 11882,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "658de0dc9d2bf0801af49c40db87c293771643d9fa8c000e3cdc23732b31edf4",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_mintree.py",
+      "sha256": "b14467ba39166134cdcc2959838ca661c8dffee669085bbf1a5ae66f1f2fdbd0",
+      "bytes": 8820,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "b14467ba39166134cdcc2959838ca661c8dffee669085bbf1a5ae66f1f2fdbd0",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_refuter.out.txt",
+      "sha256": "70d000a63cf27d1144a2403e3b20072989d2766474278db6cef1656d9dcc9a29",
+      "bytes": 411,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "70d000a63cf27d1144a2403e3b20072989d2766474278db6cef1656d9dcc9a29",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_refuter.py",
+      "sha256": "1b2ae49df6b50b54e06dee97e10d887a788cafd252567cb2b4ba91745c2f488c",
+      "bytes": 2458,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "1b2ae49df6b50b54e06dee97e10d887a788cafd252567cb2b4ba91745c2f488c",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_rooted.py",
+      "sha256": "c055937ca72967cfd51270046a71cac02f0af77bda52c47ed38419f477cd2d52",
+      "bytes": 1564,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "c055937ca72967cfd51270046a71cac02f0af77bda52c47ed38419f477cd2d52",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8510,
+      "batch": 5,
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "b785a629924e48e45d27e7d37799ba15539acf2feac2a2017d10ce3965ac9618",
+      "bytes": 834847,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+      "category": "historical-evidence",
+      "original_disposition": "regenerated shared citation manifest",
+      "content_group": "b785a629924e48e45d27e7d37799ba15539acf2feac2a2017d10ce3965ac9618",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "sha256": "b5b6574552c5b9a0256acffe8dfb1241b0fabc524d033e41c3f63ba4d55cf091",
+      "bytes": 1085,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "b5b6574552c5b9a0256acffe8dfb1241b0fabc524d033e41c3f63ba4d55cf091",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block38_findings.md",
+      "sha256": "4893db42464444cb6dda71f3e380489411effadc08b258c74e06dade1031c7f1",
+      "bytes": 951,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "4893db42464444cb6dda71f3e380489411effadc08b258c74e06dade1031c7f1",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block38.md",
+      "sha256": "614554d75bc0e1bc50b9df4edd6fd3dda3f08d24f9a83a07907cfd388b3f80de",
+      "bytes": 464,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "614554d75bc0e1bc50b9df4edd6fd3dda3f08d24f9a83a07907cfd388b3f80de",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block38.md",
+      "sha256": "7960e149e546f7ba02783d9f702167e708f9d2e8af4c16dda19abeaf64f99266",
+      "bytes": 1126,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "7960e149e546f7ba02783d9f702167e708f9d2e8af4c16dda19abeaf64f99266",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "sha256": "d47d0035ca5138926cd4b745caa3553d891099b8a91b7816137b06a1534e5efc",
+      "bytes": 8875,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "d47d0035ca5138926cd4b745caa3553d891099b8a91b7816137b06a1534e5efc",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "sha256": "d17a450d6813c85e66c67193a763af444c1f83ee0dd3e58be5e3703ce16e9fd6",
+      "bytes": 1944,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "d17a450d6813c85e66c67193a763af444c1f83ee0dd3e58be5e3703ce16e9fd6",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "sha256": "d1b7a2d9d18b825c3ae8df2b66c2db5609c3648c56c51a5077d1d95bedf9724c",
+      "bytes": 11428,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "d1b7a2d9d18b825c3ae8df2b66c2db5609c3648c56c51a5077d1d95bedf9724c",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block38.md",
+      "sha256": "0f6cab5ee581eba5e57cd421f7bc711eb85ee260941cdbeb3243e637582ded11",
+      "bytes": 1083,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "0f6cab5ee581eba5e57cd421f7bc711eb85ee260941cdbeb3243e637582ded11",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "sha256": "f1e1ff6925fee8fc6eb7a689fea79a380345e7d40feb2294f3d98a291938237f",
+      "bytes": 54769,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "f1e1ff6925fee8fc6eb7a689fea79a380345e7d40feb2294f3d98a291938237f",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "sha256": "a7c03d25b1be7727372e09a87d84012d6c3b4de026ec05ee2a315af414235eea",
+      "bytes": 14827,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "a7c03d25b1be7727372e09a87d84012d6c3b4de026ec05ee2a315af414235eea",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "sha256": "10f00b60ca165f3826b25a071a45fd3ad3321dbc8d31dfb3e59654257fef425d",
+      "bytes": 4837,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "process-context",
+      "original_disposition": "campaign process state excluded; preserve branch",
+      "content_group": "10f00b60ca165f3826b25a071a45fd3ad3321dbc8d31dfb3e59654257fef425d",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block38_refuter.out.txt",
+      "sha256": "316b62856ebd9fc06437aae42fbb46eee2193a9cd3db0db6b45544a168f63716",
+      "bytes": 589,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "historical-evidence",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "316b62856ebd9fc06437aae42fbb46eee2193a9cd3db0db6b45544a168f63716",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block38_refuter.py",
+      "sha256": "a090954248259dd4fe06fdd0cd2847645e151bba607eb5fe337874ced4cf70a7",
+      "bytes": 4401,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "source-candidate",
+      "original_disposition": "deferred historical calculation/support; preserve branch",
+      "content_group": "a090954248259dd4fe06fdd0cd2847645e151bba607eb5fe337874ced4cf70a7",
+      "first_content_occurrence": true
+    },
+    {
+      "pr": 8512,
+      "batch": 5,
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "d74ec717c82e65482fac92d2cf0f316334c2080184d4dc3994526bcbbf682788",
+      "bytes": 834845,
+      "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+      "category": "historical-evidence",
+      "original_disposition": "regenerated shared citation manifest",
+      "content_group": "d74ec717c82e65482fac92d2cf0f316334c2080184d4dc3994526bcbbf682788",
+      "first_content_occurrence": true
+    }
+  ],
+  "prs": {
+    "8178": {
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R1",
+          "U5-R3",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    },
+    "8180": {
+      "head": "7c844adf7555a3558729be69179646f6a83a1539",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R1",
+          "U5-R2",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    },
+    "8507": {
+      "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R1",
+          "U5-R4",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    },
+    "8510": {
+      "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R5",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    },
+    "8512": {
+      "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R5",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    },
+    "8637": {
+      "head": "c8939d0f53417ac3945382d67676dba5f0c403a7",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R6",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    },
+    "8641": {
+      "head": "10f826fc3793f35b5da7884531d048566494e871",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R6",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    },
+    "8646": {
+      "head": "30fc512cb7c76d877f023fa8c94cad9851b7fa4c",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R6",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    },
+    "8859": {
+      "head": "d860c230eeefea9ea53ab534e823892d1c1a9f98",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R7",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    },
+    "8864": {
+      "head": "985cacab05523f44fded04e8a3e0ac594edfb1c4",
+      "batch": 5,
+      "claim_disposition": {
+        "accepted": "Scoped conditional proofs and finite results in final source",
+        "rejected_or_narrowed": [
+          "U5-R7",
+          "U5-R8"
+        ],
+        "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+      },
+      "landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9"
+    }
+  },
+  "findings": [
+    {
+      "id": "U5-R1",
+      "prs": [
+        8178,
+        8180,
+        8507
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Gain-one recurrence is not the exact finite-beta Cartesian mean derivative.",
+      "resolution": "Declare supplied linear comparator; derive sphere mean derivative A(n beta)/n separately from aligned noise variance. Historical simulations do not prove limits or physical laws."
+    },
+    {
+      "id": "U5-R2",
+      "prs": [
+        8180
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "False non-product proof and missing conjugation in complex covariance.",
+      "resolution": "Static Green kernel also equals plane amplitude times layer propagator; replace proof with exact recurrence and distinguish linear versus quadratic wavenumber decay. Add complex L4 phase check; state oblique coordinates and explicit symmetry subgroup."
+    },
+    {
+      "id": "U5-R3",
+      "prs": [
+        8178
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Mode independence, variance-as-transient-time, universal lattice-sum increments and nonlinear scaling claims unsupported.",
+      "resolution": "Temporal noise independence suffices; define exact proxy and spectral transient. Restrict increments to16,32,64; derive log2 interval; preserve historical data without asymptotic conclusions."
+    },
+    {
+      "id": "U5-R4",
+      "prs": [
+        8507
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Uniqueness assumptions absent, component independence overstated, reflection halves wrong and source zero mode unprojected.",
+      "resolution": "Positive site selection and bounded sphere or finite alphabet minorization; factorized initial data for independence; correct bilayer-layer halves; project mean and exclude staggered pole. Import only scalar bound from current cubic-walk parent."
+    },
+    {
+      "id": "U5-R5",
+      "prs": [
+        8510,
+        8512
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Unlanded equivalence dependency, box-support gap, antichain factorization and same-level displacement errors.",
+      "resolution": "Self-contained counterexample, causal ancestry excludes negative coordinates; fixed read sets and explicitly factorized joint kernel; zero coordinate-sum displacement; exact table/control assertions."
+    },
+    {
+      "id": "U5-R6",
+      "prs": [
+        8637,
+        8641,
+        8646
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Finite samples substituted for proofs, rational/Haar domain mismatch, parity-rule prose mismatch and overbroad locality conclusions.",
+      "resolution": "Real-sphere analytic domain with rational controls; orbit/infinite-order proofs and exact census. Last-site parity rule plus general per-order uniformity proof. Verify all512 dual characters and LR formed-neighbour conditional; scope exclusions to supplied conditionals."
+    },
+    {
+      "id": "U5-R7",
+      "prs": [
+        8859,
+        8864
+      ],
+      "class": "EVIDENCE",
+      "finding": "Unproved spectral limits and insufficient requested levels for multiplicity; silent symmetrization.",
+      "resolution": "Finite estimates only, seeded solvers, symmetry/residual checks and levels beyond cluster; independent exact small transfer contractions."
+    },
+    {
+      "id": "U5-R8",
+      "prs": [
+        8178,
+        8180,
+        8507,
+        8510,
+        8512,
+        8637,
+        8641,
+        8646,
+        8859,
+        8864
+      ],
+      "class": "EVIDENCE",
+      "finding": "Original campaign state, historical certificates and weak scope/cache coverage.",
+      "resolution": "Canonical science only; fresh caches and consequential mutations; five AIL branches preserved for deferred auxiliary calculations. No audit verdict."
+    }
+  ]
+}

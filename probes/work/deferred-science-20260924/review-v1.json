@@ -1,0 +1,367 @@
+{
+  "unit_id": "formation-eight-20260923",
+  "reviewer": "current Codex primary session; user explicitly prohibits subagents; original PR authors are separate. Same-session fixes and review; no separate fix reviewer or audit claimed.",
+  "skill_commit": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "status": "source review complete with bounded claims; combined gate pending",
+  "findings": [
+    {
+      "id": "R1",
+      "prs": [
+        8666,
+        8667,
+        8669,
+        8671
+      ],
+      "class": "IMPORTED_VALUE",
+      "finding": "Unreadability and covariance do not supply skip-and-continue semantics or independent sampling.",
+      "resolution": "Declare those conditions; preserve correlated draws and retry/history alternatives."
+    },
+    {
+      "id": "R2",
+      "prs": [
+        8663,
+        8664,
+        8666
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Positive-mass variance proofs do not give pointwise constancy for every atomless alphabet or exclude variation off reached support.",
+      "resolution": "Finite support/reach restrictions; separate explicit Haar construction; no physical variation-clause exclusion."
+    },
+    {
+      "id": "R3",
+      "prs": [
+        8670
+      ],
+      "class": "NO_GO_OVERCLAIM",
+      "finding": "Positive stationary nucleation intensity does not imply independent trials or completion decay. Half sweep/half iid mixture counterexample.",
+      "resolution": "Withdraw broad exclusion; preserve iid bound; no infinite process existence claim from a non-well-founded order."
+    },
+    {
+      "id": "R4",
+      "prs": [
+        8667,
+        8669,
+        8671
+      ],
+      "class": "SEMANTIC_BRIDGE",
+      "finding": "Abstract directional alphabets and kernel feasibility do not construct equivariant one-qubit formation laws.",
+      "resolution": "Conditional mathematical encodings and necessary kernel bounds only; no physical sufficiency."
+    },
+    {
+      "id": "R5",
+      "prs": [
+        8667
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Two conditioned protocols and one biased sweep do not prove uniform ice requires conditioning in every process.",
+      "resolution": "Restrict to named protocols; correct plaquette distinct-link count from 24 to 20."
+    },
+    {
+      "id": "R6",
+      "prs": [
+        8669,
+        8671
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Finite rational-grid maxima alone do not establish continuous bounds.",
+      "resolution": "Add continuous derivative, parity and p(1-p) proofs."
+    },
+    {
+      "id": "R7",
+      "prs": [
+        8643
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Listed sequential comparisons do not exclude all sequential constructions; fixed quoted numbers were unasserted.",
+      "resolution": "Restrict comparison; assert exact agreement expectations."
+    },
+    {
+      "id": "R8",
+      "prs": [
+        8663,
+        8666,
+        8667,
+        8669
+      ],
+      "class": "BUG",
+      "finding": "Rank-one shortcut and several weak numeric assertions needed tightening.",
+      "resolution": "Exact nullspace rank and exact law/histogram/statistic values; independent symbolic verification."
+    },
+    {
+      "id": "R9",
+      "prs": [
+        8643,
+        8663,
+        8664,
+        8666,
+        8667,
+        8669,
+        8670,
+        8671
+      ],
+      "class": "AUDIT_COMPATIBILITY",
+      "finding": "Missing declared timeouts, resolution certificates, proper dependency links, and invalid trace enums/campaign framing.",
+      "resolution": "120-second declared limits, honest certificates, current axiom link, self-contained proofs, native trace metadata."
+    }
+  ],
+  "coverage": {
+    "notes": 8,
+    "runners": 8,
+    "caches": 8,
+    "source_read": "Complete original notes and runners read; all surviving arguments and correction changes checked. Source proof checks cover finite-support variance/exchange, product law bounds, exact finite enumeration, cubic representation completeness, and explicit sweep-mixture counterexample.",
+    "premises": "Current minimal axioms and registry inspected. No approved primitive used as missing input; supplied models do not gain framework authority.",
+    "mathematical_checks": "Independent fixed-final-configuration backward subset recurrence; transfer matrices; symbolic parity identity and cap integrals; S4 permutation representation; exact small-orbit rank/definiteness; targeted mutation per runner."
+  },
+  "claim_dispositions": {
+    "8643": {
+      "accepted": "finite mathematical arguments and reproductions in final source",
+      "narrowed_or_rejected": "unsupported global, physical or off-domain consequences corrected by listed findings; no independent scientific result silently dropped",
+      "deferred": "physical formation selection/encoding and generalizations explicitly open; original source recovered above"
+    },
+    "8663": {
+      "accepted": "finite mathematical arguments and reproductions in final source",
+      "narrowed_or_rejected": "unsupported global, physical or off-domain consequences corrected by listed findings; no independent scientific result silently dropped",
+      "deferred": "physical formation selection/encoding and generalizations explicitly open; original source recovered above"
+    },
+    "8664": {
+      "accepted": "finite mathematical arguments and reproductions in final source",
+      "narrowed_or_rejected": "unsupported global, physical or off-domain consequences corrected by listed findings; no independent scientific result silently dropped",
+      "deferred": "physical formation selection/encoding and generalizations explicitly open; original source recovered above"
+    },
+    "8666": {
+      "accepted": "finite mathematical arguments and reproductions in final source",
+      "narrowed_or_rejected": "unsupported global, physical or off-domain consequences corrected by listed findings; no independent scientific result silently dropped",
+      "deferred": "physical formation selection/encoding and generalizations explicitly open; original source recovered above"
+    },
+    "8667": {
+      "accepted": "finite mathematical arguments and reproductions in final source",
+      "narrowed_or_rejected": "unsupported global, physical or off-domain consequences corrected by listed findings; no independent scientific result silently dropped",
+      "deferred": "physical formation selection/encoding and generalizations explicitly open; original source recovered above"
+    },
+    "8669": {
+      "accepted": "finite mathematical arguments and reproductions in final source",
+      "narrowed_or_rejected": "unsupported global, physical or off-domain consequences corrected by listed findings; no independent scientific result silently dropped",
+      "deferred": "physical formation selection/encoding and generalizations explicitly open; original source recovered above"
+    },
+    "8670": {
+      "accepted": "finite mathematical arguments and reproductions in final source",
+      "narrowed_or_rejected": "unsupported global, physical or off-domain consequences corrected by listed findings; no independent scientific result silently dropped",
+      "deferred": "physical formation selection/encoding and generalizations explicitly open; original source recovered above"
+    },
+    "8671": {
+      "accepted": "finite mathematical arguments and reproductions in final source",
+      "narrowed_or_rejected": "unsupported global, physical or off-domain consequences corrected by listed findings; no independent scientific result silently dropped",
+      "deferred": "physical formation selection/encoding and generalizations explicitly open; original source recovered above"
+    }
+  },
+  "original_dispositions": {
+    "8643": [
+      {
+        "original_path": "docs/FORMATION_UNIT_SEQUENTIAL_VS_JOINT_COVARIANT_SETS_BLOCK_CHAIN_EQUALITY_PRODUCT_FILL_VISIBILITY_AND_GLUED_UNIT_HOLE_DISSOLUTION_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "fede30ea50b9cbfe05a684d5df39f1153a3f19874fc2de4bb10a8bcb8e2b3b6a",
+        "disposition": "narrowed",
+        "recovery": "7a91226fcb050781657c717c3bf84257c23e0b39:docs/FORMATION_UNIT_SEQUENTIAL_VS_JOINT_COVARIANT_SETS_BLOCK_CHAIN_EQUALITY_PRODUCT_FILL_VISIBILITY_AND_GLUED_UNIT_HOLE_DISSOLUTION_BOUNDED_THEOREM_NOTE_2026-09-22.md; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8643/docs/FORMATION_UNIT_SEQUENTIAL_VS_JOINT_COVARIANT_SETS_BLOCK_CHAIN_EQUALITY_PRODUCT_FILL_VISIBILITY_AND_GLUED_UNIT_HOLE_DISSOLUTION_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_path": "docs/FORMATION_UNIT_SEQUENTIAL_VS_JOINT_COVARIANT_SETS_BLOCK_CHAIN_EQUALITY_PRODUCT_FILL_VISIBILITY_AND_GLUED_UNIT_HOLE_DISSOLUTION_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "99753a2e1d026c878d28d3cdc39644c2f33c31e6bc8f7c4ed5e7b71f16bb4996"
+      },
+      {
+        "original_path": "logs/runner-cache/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.txt",
+        "original_sha256": "9879a6580b0e799bc52ae2b32e67672739d8be8039b404332d41cf504092c514",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "7a91226fcb050781657c717c3bf84257c23e0b39:logs/runner-cache/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.txt; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8643/logs/runner-cache/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.txt",
+        "final_path": "logs/runner-cache/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.txt",
+        "final_sha256": "76e6463673af9caf7f6b046e0ad35c1cf2935c1fd0fefa431fb85f8b6c4ca70a"
+      },
+      {
+        "original_path": "scripts/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.py",
+        "original_sha256": "6b7774a037d1a89ebc9b70d8add8447cf33250c48b864479789185626b955af6",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "7a91226fcb050781657c717c3bf84257c23e0b39:scripts/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.py; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8643/scripts/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.py",
+        "final_path": "scripts/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.py",
+        "final_sha256": "1321aaff947645686959b3e0be2973373bd7b2cd2435d6690ee7fd5c1edfdd8d"
+      }
+    ],
+    "8663": [
+      {
+        "original_path": "docs/ORDER_BLIND_NEAREST_NEIGHBOUR_FORMATION_INDEPENDENCE_BEYOND_NEIGHBOURS_UNSOLDERED_CONSTANCY_AND_SOLDERED_ESCAPE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "d3bb0deed2ebc715cade4cc2500561c6026a498685be6ded98b839b414f2c08c",
+        "disposition": "narrowed",
+        "recovery": "7754a0010f19d1ab417749fb7fa838298cb2bfb1:docs/ORDER_BLIND_NEAREST_NEIGHBOUR_FORMATION_INDEPENDENCE_BEYOND_NEIGHBOURS_UNSOLDERED_CONSTANCY_AND_SOLDERED_ESCAPE_BOUNDED_THEOREM_NOTE_2026-09-22.md; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8663/docs/ORDER_BLIND_NEAREST_NEIGHBOUR_FORMATION_INDEPENDENCE_BEYOND_NEIGHBOURS_UNSOLDERED_CONSTANCY_AND_SOLDERED_ESCAPE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_path": "docs/ORDER_BLIND_NEAREST_NEIGHBOUR_FORMATION_INDEPENDENCE_BEYOND_NEIGHBOURS_UNSOLDERED_CONSTANCY_AND_SOLDERED_ESCAPE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "ca4710a426132cd76fe0c627ed4787cc82601ee02495277f1f2fd0ebb6aa67b1"
+      },
+      {
+        "original_path": "logs/runner-cache/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.txt",
+        "original_sha256": "57f491311e3b98975ae83daef356f3327ea819137621fd070b19c076ef326e81",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "7754a0010f19d1ab417749fb7fa838298cb2bfb1:logs/runner-cache/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.txt; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8663/logs/runner-cache/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.txt",
+        "final_path": "logs/runner-cache/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.txt",
+        "final_sha256": "2c88ee81f664543d9dac2d4169d045d7d7e69756378178b32c4cc62457c0060d"
+      },
+      {
+        "original_path": "scripts/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.py",
+        "original_sha256": "13481d9abad043d6c052deb1c0d7884214283449da5dbdfa83fcde7d76060395",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "7754a0010f19d1ab417749fb7fa838298cb2bfb1:scripts/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.py; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8663/scripts/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.py",
+        "final_path": "scripts/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.py",
+        "final_sha256": "0e22e9717b7e64d0691e1c538dc6ed9c6347a2e24e501a5efa8797c9ce080345"
+      }
+    ],
+    "8664": [
+      {
+        "original_path": "docs/ORDER_BLIND_FORMATION_WITH_ZEROS_AND_HOLES_NEVER_FAILING_UNSOLDERED_RULES_ARE_CONSTANT_AND_HOLE_RULES_HAVE_PAIR_FORM_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "f4ddb4f02268ee46ff033957288d5a9057171b1ebda26193b2d8735783c3c1b6",
+        "disposition": "narrowed",
+        "recovery": "8c400e65f929e6b33c9ae268a70a6efbc969ae35:docs/ORDER_BLIND_FORMATION_WITH_ZEROS_AND_HOLES_NEVER_FAILING_UNSOLDERED_RULES_ARE_CONSTANT_AND_HOLE_RULES_HAVE_PAIR_FORM_BOUNDED_THEOREM_NOTE_2026-09-22.md; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8664/docs/ORDER_BLIND_FORMATION_WITH_ZEROS_AND_HOLES_NEVER_FAILING_UNSOLDERED_RULES_ARE_CONSTANT_AND_HOLE_RULES_HAVE_PAIR_FORM_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_path": "docs/ORDER_BLIND_FORMATION_WITH_ZEROS_AND_HOLES_NEVER_FAILING_UNSOLDERED_RULES_ARE_CONSTANT_AND_HOLE_RULES_HAVE_PAIR_FORM_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "0fe1306e9e8c15424d7a2427e1ac6a7d87d919b7ea6c677430eb90d8fea5712f"
+      },
+      {
+        "original_path": "logs/runner-cache/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.txt",
+        "original_sha256": "88be416e56d9332cbbbea6282880186d4ec3adbe58a869c5f1e94052fdfe4462",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "8c400e65f929e6b33c9ae268a70a6efbc969ae35:logs/runner-cache/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.txt; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8664/logs/runner-cache/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.txt",
+        "final_path": "logs/runner-cache/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.txt",
+        "final_sha256": "86bc44e166d2d7b4f7b5121a01500a17cacd43a68e88443cf8b82769e9504185"
+      },
+      {
+        "original_path": "scripts/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.py",
+        "original_sha256": "d7adeec694fe00b8f646e4a26b72cadb01f508a3eecb9f1dd048e52c8439ed4e",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "8c400e65f929e6b33c9ae268a70a6efbc969ae35:scripts/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.py; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8664/scripts/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.py",
+        "final_path": "scripts/order_blind_formation_zeros_and_holes_unsoldered_pair_form_2026_09_22.py",
+        "final_sha256": "874d53cef03f97f16b76f8be001f279040594b4494dbd7d488d3f574456a8558"
+      }
+    ],
+    "8666": [
+      {
+        "original_path": "docs/HOLES_AS_UNRECORDED_SITES_UNSOLDERED_ORDER_BLIND_RULES_ARE_CONSTANT_AND_THE_FORMATION_ORDER_IS_VISIBLE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "8a61e3b960ff439cd8b5f5ee2cdcf6dd2098912de1ade11dff10ab3f49e3f169",
+        "disposition": "narrowed",
+        "recovery": "3fabd0e9fe96bfa40d9fd8fee1f0d5684d6756cb:docs/HOLES_AS_UNRECORDED_SITES_UNSOLDERED_ORDER_BLIND_RULES_ARE_CONSTANT_AND_THE_FORMATION_ORDER_IS_VISIBLE_BOUNDED_THEOREM_NOTE_2026-09-22.md; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8666/docs/HOLES_AS_UNRECORDED_SITES_UNSOLDERED_ORDER_BLIND_RULES_ARE_CONSTANT_AND_THE_FORMATION_ORDER_IS_VISIBLE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_path": "docs/HOLES_AS_UNRECORDED_SITES_UNSOLDERED_ORDER_BLIND_RULES_ARE_CONSTANT_AND_THE_FORMATION_ORDER_IS_VISIBLE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "bab5e5ac07715e0c43ddbc86854492f46133c80ee8f6ed3519be207a844262e6"
+      },
+      {
+        "original_path": "logs/runner-cache/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.txt",
+        "original_sha256": "e72c471a16d9ce3bef1eff9b78ac7611354f9b7609a89906e63d423201d89256",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "3fabd0e9fe96bfa40d9fd8fee1f0d5684d6756cb:logs/runner-cache/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.txt; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8666/logs/runner-cache/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.txt",
+        "final_path": "logs/runner-cache/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.txt",
+        "final_sha256": "5a9c84e44ebcdd7d8a5e3361ac395cb21abf701df4f4d4e95e741e258240819a"
+      },
+      {
+        "original_path": "scripts/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.py",
+        "original_sha256": "755fc63e07e8e2d16fbded0d5c51104d05cc9c9ac6db7a7d0508e97ecdd2b87c",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "3fabd0e9fe96bfa40d9fd8fee1f0d5684d6756cb:scripts/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.py; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8666/scripts/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.py",
+        "final_path": "scripts/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.py",
+        "final_sha256": "4dd53d8ba471d9319e3a332952335fdbfdefc5c13aec65bd35442502288b418b"
+      }
+    ],
+    "8667": [
+      {
+        "original_path": "docs/ICE_SUPPORT_UNDER_NEAREST_NEIGHBOUR_FORMATION_VERTEX_BOUND_SOLDERED_VERTEX_RECORDS_ORDER_DEPENDENT_DEFECTS_AND_UNIFORM_ICE_ONLY_BY_CONDITIONING_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "40870da68909b8326f329fbb3fbccdc93917ea6b86d26910bb7d8806d529ed56",
+        "disposition": "narrowed",
+        "recovery": "00ab89679274df1f33a95929ae1c976a8f4b88ad:docs/ICE_SUPPORT_UNDER_NEAREST_NEIGHBOUR_FORMATION_VERTEX_BOUND_SOLDERED_VERTEX_RECORDS_ORDER_DEPENDENT_DEFECTS_AND_UNIFORM_ICE_ONLY_BY_CONDITIONING_BOUNDED_THEOREM_NOTE_2026-09-22.md; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8667/docs/ICE_SUPPORT_UNDER_NEAREST_NEIGHBOUR_FORMATION_VERTEX_BOUND_SOLDERED_VERTEX_RECORDS_ORDER_DEPENDENT_DEFECTS_AND_UNIFORM_ICE_ONLY_BY_CONDITIONING_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_path": "docs/ICE_SUPPORT_UNDER_NEAREST_NEIGHBOUR_FORMATION_VERTEX_BOUND_SOLDERED_VERTEX_RECORDS_ORDER_DEPENDENT_DEFECTS_AND_UNIFORM_ICE_ONLY_BY_CONDITIONING_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "c890e5ad0a9e916855ded849f365563706d970239cc6f85b1605f1e606b7998b"
+      },
+      {
+        "original_path": "logs/runner-cache/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.txt",
+        "original_sha256": "c51a78178fdee6ea065f6471738bfb36ad0fde85fbed9be7f761125b267d83ae",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "00ab89679274df1f33a95929ae1c976a8f4b88ad:logs/runner-cache/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.txt; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8667/logs/runner-cache/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.txt",
+        "final_path": "logs/runner-cache/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.txt",
+        "final_sha256": "acc8a7df04f9d5fc81bd43312a0d3b438126b1302885cf4e9323c625084e5969"
+      },
+      {
+        "original_path": "scripts/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.py",
+        "original_sha256": "237cae4915f4ade3e4d008812c737fb9a89e63df8c367f61af323b3125b9c279",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "00ab89679274df1f33a95929ae1c976a8f4b88ad:scripts/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.py; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8667/scripts/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.py",
+        "final_path": "scripts/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.py",
+        "final_sha256": "86e143e96adb85ad2cce304590cb1fee3a6a94705180ef58f9797be61e8aa30d"
+      }
+    ],
+    "8669": [
+      {
+        "original_path": "docs/STAR_CONSTRAINTS_UNDER_NEAREST_NEIGHBOUR_FORMATION_UNSOLDERED_BROADCAST_BOUNDS_AND_SOLDERED_REGISTRATION_OF_THE_PARITY_ROLE_SKELETON_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "7262617dd4f023014d538bdde58b139529dfa572f6cc696dbc2dd99be7680642",
+        "disposition": "narrowed",
+        "recovery": "616ba568037e6676bbfd29288a13bbe73170e283:docs/STAR_CONSTRAINTS_UNDER_NEAREST_NEIGHBOUR_FORMATION_UNSOLDERED_BROADCAST_BOUNDS_AND_SOLDERED_REGISTRATION_OF_THE_PARITY_ROLE_SKELETON_BOUNDED_THEOREM_NOTE_2026-09-22.md; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8669/docs/STAR_CONSTRAINTS_UNDER_NEAREST_NEIGHBOUR_FORMATION_UNSOLDERED_BROADCAST_BOUNDS_AND_SOLDERED_REGISTRATION_OF_THE_PARITY_ROLE_SKELETON_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_path": "docs/STAR_CONSTRAINTS_UNDER_NEAREST_NEIGHBOUR_FORMATION_UNSOLDERED_BROADCAST_BOUNDS_AND_SOLDERED_REGISTRATION_OF_THE_PARITY_ROLE_SKELETON_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "939b543636dc9fbb8571ec220f468ff5ebe1d5769b72a1b43c56c7326ea9adec"
+      },
+      {
+        "original_path": "logs/runner-cache/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.txt",
+        "original_sha256": "781d2cca151ca1d93a06c6e5503b71198dbc7abc561d5472615c41b7aa5aa7fa",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "616ba568037e6676bbfd29288a13bbe73170e283:logs/runner-cache/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.txt; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8669/logs/runner-cache/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.txt",
+        "final_path": "logs/runner-cache/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.txt",
+        "final_sha256": "feeedacce42dacb1424013cb624658dc47eac070e60eeebfa8cf0261fe3fb637"
+      },
+      {
+        "original_path": "scripts/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.py",
+        "original_sha256": "a0d20e269dc8c1120c790a3197338671bdc45f4d87fb9aac59379f134069cc4b",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "616ba568037e6676bbfd29288a13bbe73170e283:scripts/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.py; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8669/scripts/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.py",
+        "final_path": "scripts/star_constraints_under_nn_formation_broadcast_bounds_and_soldered_role_registration_2026_09_22.py",
+        "final_sha256": "981a282a8b6f20860bb053454c97cd46cbd10c7289c336fc771aaaea53b8408f"
+      }
+    ],
+    "8670": [
+      {
+        "original_path": "docs/ORDER_LAWS_FOR_EXTENDED_SOLDERED_SUPPORTS_INDEPENDENT_CLOCKS_NUCLEATE_AT_POSITIVE_DENSITY_AND_SWEEPS_HAVE_NO_FIRST_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "03056baea673768fe6a808b99c77432695631dae95692c767407d7efb623aad3",
+        "disposition": "narrowed",
+        "recovery": "0945593a2c8137d75f53a073c03a7defe3ad0f29:docs/ORDER_LAWS_FOR_EXTENDED_SOLDERED_SUPPORTS_INDEPENDENT_CLOCKS_NUCLEATE_AT_POSITIVE_DENSITY_AND_SWEEPS_HAVE_NO_FIRST_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-22.md; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8670/docs/ORDER_LAWS_FOR_EXTENDED_SOLDERED_SUPPORTS_INDEPENDENT_CLOCKS_NUCLEATE_AT_POSITIVE_DENSITY_AND_SWEEPS_HAVE_NO_FIRST_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_path": "docs/ORDER_LAWS_FOR_EXTENDED_SOLDERED_SUPPORTS_INDEPENDENT_CLOCKS_NUCLEATE_AT_POSITIVE_DENSITY_AND_SWEEPS_HAVE_NO_FIRST_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "30165edef32a6f1011121c7d981864866e7fed8e45c2638e171a85b95ccf1ae0"
+      },
+      {
+        "original_path": "logs/runner-cache/order_laws_nucleation_density_and_sweep_laws_2026_09_22.txt",
+        "original_sha256": "c6924465e407485e5ec8e8fb06f6bd033e3fb41925f04c0b8b56ec8617fbfaaf",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "0945593a2c8137d75f53a073c03a7defe3ad0f29:logs/runner-cache/order_laws_nucleation_density_and_sweep_laws_2026_09_22.txt; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8670/logs/runner-cache/order_laws_nucleation_density_and_sweep_laws_2026_09_22.txt",
+        "final_path": "logs/runner-cache/order_laws_nucleation_density_and_sweep_laws_2026_09_22.txt",
+        "final_sha256": "f18e6461e5b747272e440781420187103fb5fc8a97a363da0eb062471638a159"
+      },
+      {
+        "original_path": "scripts/order_laws_nucleation_density_and_sweep_laws_2026_09_22.py",
+        "original_sha256": "a2f956aec1179030319629fbdd9c47457ac5e3c5e73844575e5797f9b01152a7",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "0945593a2c8137d75f53a073c03a7defe3ad0f29:scripts/order_laws_nucleation_density_and_sweep_laws_2026_09_22.py; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8670/scripts/order_laws_nucleation_density_and_sweep_laws_2026_09_22.py",
+        "final_path": "scripts/order_laws_nucleation_density_and_sweep_laws_2026_09_22.py",
+        "final_sha256": "2a7c3627e28146cc71695a565f0eec35bb1ecdae38a4a125815086bfc8c7387d"
+      }
+    ],
+    "8671": [
+      {
+        "original_path": "docs/THE_SOLDERING_MENU_FOUR_ACTIONS_OF_THE_PROPER_CUBIC_ROTATIONS_ON_QUBIT_POSSIBILITIES_AND_WHAT_EACH_LETS_FORMATION_BUILD_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "a7d6368fc30e8756c51b23e18eca5f2a55ba5d36196317b5d13e687038257235",
+        "disposition": "narrowed",
+        "recovery": "a9acb94bf0479b80b59aa35295477b66a9edf8cd:docs/THE_SOLDERING_MENU_FOUR_ACTIONS_OF_THE_PROPER_CUBIC_ROTATIONS_ON_QUBIT_POSSIBILITIES_AND_WHAT_EACH_LETS_FORMATION_BUILD_BOUNDED_THEOREM_NOTE_2026-09-22.md; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8671/docs/THE_SOLDERING_MENU_FOUR_ACTIONS_OF_THE_PROPER_CUBIC_ROTATIONS_ON_QUBIT_POSSIBILITIES_AND_WHAT_EACH_LETS_FORMATION_BUILD_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_path": "docs/THE_SOLDERING_MENU_FOUR_ACTIONS_OF_THE_PROPER_CUBIC_ROTATIONS_ON_QUBIT_POSSIBILITIES_AND_WHAT_EACH_LETS_FORMATION_BUILD_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "ae3941d448ad96666febb8b877dd19aeee6af4bb2af612905946764510d16f64"
+      },
+      {
+        "original_path": "logs/runner-cache/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.txt",
+        "original_sha256": "da2aeb372d57435f9f2e73350d546f429199ce678e8d5c1482e466bbb91bba29",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "a9acb94bf0479b80b59aa35295477b66a9edf8cd:logs/runner-cache/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.txt; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8671/logs/runner-cache/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.txt",
+        "final_path": "logs/runner-cache/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.txt",
+        "final_sha256": "fb875880962f43b1b930e4e334e96f6106911eb74432afba6f3ae2c10d7ef517"
+      },
+      {
+        "original_path": "scripts/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.py",
+        "original_sha256": "65bad91768809d0f55b26d138505552cac5f541dd4eb3f29f8b15b5d59e7c075",
+        "disposition": "corrected runner and recaptured evidence",
+        "recovery": "a9acb94bf0479b80b59aa35295477b66a9edf8cd:scripts/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.py; snapshot /private/tmp/cl3-review-evidence-20260923/originals/8671/scripts/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.py",
+        "final_path": "scripts/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.py",
+        "final_sha256": "ccc6713d28a2688941f2c10e9afafaf5bb3bcee54db6f51cf0b30b9ac787027b"
+      }
+    ]
+  }
+}

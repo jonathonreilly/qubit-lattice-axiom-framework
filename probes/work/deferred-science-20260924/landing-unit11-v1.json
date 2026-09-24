@@ -1,0 +1,163 @@
+{
+  "unit_id": "ice-transfer-sampling-fourteen-20260924",
+  "reviewed_prs": [
+    {
+      "id": "PR8869",
+      "head": "54723beb4e4b95b68b1afe545fafcb3cabcffe47",
+      "delta_base": "e5b39ea4e232e1181acfa49b25f7b22a39912489",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8869",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8871",
+      "head": "6bad0fbbbcfe5abbfa5fe296c04e3ed904798a31",
+      "delta_base": "b7d460034a13bf660b1d9bf8aa3fc4fb0322f744",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8871",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8875",
+      "head": "970731556520cf4ac3bb4bc5a2562b60dbd30931",
+      "delta_base": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8875",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8881",
+      "head": "539a262e01734296c2ca7968380576d952af83f6",
+      "delta_base": "61fa847f032d25c90bca2c1273b7edb5713fe160",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8881",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8890",
+      "head": "7df6510fd36ff39b090ca952c09d68a47c2140a7",
+      "delta_base": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8890",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8896",
+      "head": "281e2ca9f6f987ae2df5424566aa3e4435129d57",
+      "delta_base": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8896",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8905",
+      "head": "1cd7fb19070eb7a57b5648ae623446245de6a644",
+      "delta_base": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8905",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8913",
+      "head": "bfce588b8e5d94f4912c5e8030e07a8c09a51b0e",
+      "delta_base": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8913",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8918",
+      "head": "25cbda1f1a9a91ffff5798fae46913ba68938949",
+      "delta_base": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8918",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8928",
+      "head": "f90c3da5fa2acfbf4072fc279e09b55eb6f2fc43",
+      "delta_base": "6bf62ae06ccbea85255e791d7e57b2b800ef4710",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8928",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8930",
+      "head": "b1da59092cefdb8ffca504da2397291dd4dfb3e6",
+      "delta_base": "6bf62ae06ccbea85255e791d7e57b2b800ef4710",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8930",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8949",
+      "head": "61a6c8baeb0545de6f975f87cc65b45737520178",
+      "delta_base": "c3f8c47a58bfba48c1d9e030d6d79ecda00a294e",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8949",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8951",
+      "head": "53cddd234a792d5cf4eca6e72bb01941acb03f97",
+      "delta_base": "fbe9f0f0154402d8afa07a8d12c920df2d9d0848",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8951",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    },
+    {
+      "id": "PR8954",
+      "head": "441f9d37519ac51a99997d147039da8c860753fb",
+      "delta_base": "fbe9f0f0154402d8afa07a8d12c920df2d9d0848",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8954",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit11-v1.json",
+        "sha256": "7f2a4681b83c2c26f3d3dab909722af18fe70b26d9d8f04a2f974832477ce292"
+      }
+    }
+  ],
+  "base": "8cc5f114f0d703100d6a7a764a1c689c7a56d65f",
+  "tree": "2eec78e5f41e9e74c69a8eada31b5f5df90e9508",
+  "candidate_commit": "f131dcf77de58e95a1373e9f923fbfb32cddb136",
+  "confirmation_sha256": "9e036f45c58436d884b1361e6f7a57056c16be084aca298d3790dac5b9c39fa6",
+  "source_record_sha256": "500010ee07ff38a03ff87e6474dccd832897d671c93399a6b80f8d9fdfb10dd4",
+  "logs": {
+    "pipeline-unit11-v1.log": "f5a73f2cfb576b0952019413d3515d9e2426f6cec131de99b4af5187f32d8402",
+    "strict-unit11-v1.log": "8b3aacd6c1e33b54de3ddb310904f94eb8c9f06f3fec6e781135038620ee2300",
+    "changed-evidence-unit11-v1.log": "8fdcf8b5e917d8ecd62ddbc966de6a9f0f4826955dfc603c3a84602a01bb33c3",
+    "cleanup-unit11-v1.log": "6984344fe6eafd498f71896bef37f74b5c2ed164cdb689eeaaf0d20b9957eeda",
+    "final-graph-unit11-v1.log": "eff8311b4db83a961ebbdb5b95d93090f9a7125ac70e5765204188a064e31660"
+  },
+  "validation": "PASS; pipeline exit 0; strict lint exit 0; changed evidence checked 14, failures 0, control_failures 0",
+  "push_status": "landed and all 42 final source/evidence blobs verified on origin/main",
+  "additional_controls": {
+    "independent-unit11-results.json": "b134482094fc4d74e3a0003cbff3552bc0dffd69c7be8e9ecb504962a40dcbfe",
+    "mutations-unit11-results.json": "57d2701f4bd88c950c841dbd6f023f3fd0d76a2508bac7027e43d5fb4b5977c4"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "unit_id": "bond-alternation-bilayer-thirteen-20260923",
+  "reviewed_prs": [
+    {
+      "id": "PR8626",
+      "head": "3b67807c6eed5cc368a90684656af7a3e749c05d",
+      "delta_base": "59024639572d6d3a1091c727297b18c350d3f484",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8626",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8628",
+      "head": "5923e87f141cd4431b540234e4a4fad910bd95cb",
+      "delta_base": "59024639572d6d3a1091c727297b18c350d3f484",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8628",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8632",
+      "head": "3944a9633f3ef9e209645753d93109f834089d10",
+      "delta_base": "59024639572d6d3a1091c727297b18c350d3f484",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8632",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8652",
+      "head": "cff4568de1a1733d54221f9d018211afe89d8004",
+      "delta_base": "d0e809a52de34a6e1f086dee7b341dc1f96a07c7",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8652",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8657",
+      "head": "ccc2fb1c7138c67734d3839e94f25e97cc6a9307",
+      "delta_base": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8657",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8660",
+      "head": "45b3da7dc01fd01d1cea8dfc5073d979dc817907",
+      "delta_base": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8660",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8662",
+      "head": "2e638c320e815d4e8d22ef12382005bae0af0d88",
+      "delta_base": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8662",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8665",
+      "head": "12042bb076d906acc91f8aa6d54c27ea1a0a4f9f",
+      "delta_base": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8665",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8678",
+      "head": "e7b0c1dfe24724bcdb792a8b95f247ad7c188a53",
+      "delta_base": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8678",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8692",
+      "head": "c3412ce59542e2edfaef2ae45d19cca9d390c194",
+      "delta_base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8692",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8696",
+      "head": "036826ac2e7b7ff8c3b2529c25db4839e7e4748d",
+      "delta_base": "a9f71131f2772035c55fa4a851c0832a5cb82d00",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8696",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8703",
+      "head": "3e26092f3c43921e0096c930dad5a8ad1362d4b6",
+      "delta_base": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8703",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    },
+    {
+      "id": "PR8710",
+      "head": "fa522a87d1307efc24eb0e03ccfd060d0281a70d",
+      "delta_base": "012c276a64c80cf5256d68fa7dbb06939586153b",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8710",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit9-v1.json",
+        "sha256": "4fdb7c70a117945890f4c7f6f39ba0b8c63b1f88823a8ef75a2e2f4dc57a20f2"
+      }
+    }
+  ],
+  "base": "7445cc7a50e2c7631d70dc8d9a065d0653ffa6ef",
+  "tree": "acb3430d0bb7686986f9ab171f333a6833df8f76",
+  "candidate_commit": "fbe9f0f0154402d8afa07a8d12c920df2d9d0848",
+  "confirmation_sha256": "529186ebcac5df6d5db8bd6eb7f8c2adec564acbc71cb099d8ee6ac3d5434741",
+  "source_record_sha256": "1be8bd1c3381a12bc8811ccc42f0532309f7b1bb7d7f9545c9b995b813bb9fa2",
+  "logs": {
+    "pipeline-unit9-v1.log": "ffaf588c7f94e5d8d7bd3ddb55f75d9a94ae76e211bb5617f46ccafee867758e",
+    "strict-unit9-v1.log": "a092415276a59d917fde0f5431d5c2920e136f2bcec1d7a5d1e7038b1757186e",
+    "changed-evidence-unit9-v1.log": "af2defdc133aa24824af6842fbb49634cc9ccac21b9bcaad4e25ddb5247f45cb",
+    "cleanup-unit9-v1.log": "50481b14189f9166210af858118bfad5effebf03ee88c59b1c2bc9fa93a1c56e",
+    "final-graph-unit9-v1.log": "9fd91dbd3c5e718bfc8b16e480bcff2611843c19d1319aff990cdde1ab2d00d8"
+  },
+  "validation": "PASS; pipeline exit 0; strict lint exit 0; changed evidence checked 13, failures 0, control_failures 0",
+  "push_status": "landed and all 39 final source/evidence blobs verified on origin/main",
+  "additional_controls": {
+    "independent-unit9-results.json": "5cd8ef13446ef68212d0ddb156d84224d5005334644100974a20557657963907",
+    "mutations-unit9-results.json": "1cf4ab5e536c11955da769c8e89856725ff558a9b874e96df945729930ea2cf6"
+  }
+}

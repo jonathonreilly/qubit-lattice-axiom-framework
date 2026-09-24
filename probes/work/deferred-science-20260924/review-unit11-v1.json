@@ -1,0 +1,576 @@
+{
+  "unit_id": "ice-transfer-sampling-fourteen-20260924",
+  "reviewer": "Current primary Codex session; original authors separate. User prohibits subagents. Same-session focused fix confirmation, no separate fix reviewer or formal audit.",
+  "verdict": "FINAL VERDICT: PASS",
+  "skill_commit": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "status": "Science confirmed; mechanical preflight and combined gate pending",
+  "findings": [
+    {
+      "id": "U11-R1",
+      "prs": [
+        8869,
+        8871,
+        8875,
+        8881,
+        8890,
+        8896,
+        8905,
+        8913,
+        8918,
+        8928,
+        8930,
+        8949,
+        8951,
+        8954
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Finite spectral fits, Monte Carlo diagnostics and parity labels promoted to exact Gaussian laws, particles, stiffnesses or infinite-volume mechanisms.",
+      "resolution": "Retain explicit conditional structural mathematics and finite computational observations. State domains, supplied models, approximations and unresolved limits; no particle interpretation from complement parity, no universal Gaussian law from covariance agreement."
+    },
+    {
+      "id": "U11-R2",
+      "prs": [
+        8881,
+        8890,
+        8913
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Continuous zero-mode variance and discrete bounded winding fit treated as one exact finite Gaussian calibration.",
+      "resolution": "Separate K_cont=(2N+1)/(3N) from the bounded even-winding law; write the correct sum rule with <W\u00b2>/(LN). Exact L2 counts and finite comparisons retained, no exact ice stiffness inferred."
+    },
+    {
+      "id": "U11-R3",
+      "prs": [
+        8881,
+        8890,
+        8913,
+        8918
+      ],
+      "class": "EVIDENCE",
+      "finding": "Correlated momenta treated as independent; connected-correlation and ratio errors omitted the estimated mean and denominator; bias treated as a confidence bound.",
+      "resolution": "Compute symmetry averages within each bin, recompute connected statistics and ratios in delete-bin samples, use consistent ratio jackknife, label errors descriptive without mixing or simultaneous coverage guarantees. Upward eigenvalue sorting bias is not a samplewise upper bound."
+    },
+    {
+      "id": "U11-R4",
+      "prs": [
+        8905
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Nonzero momentum assumed orthogonal to every ground state of a disconnected flip graph.",
+      "resolution": "Require removal of the full kernel for a positive-excitation variational bound. Independent enumeration gives937 components and nonzero ground projection14/75 at (pi,0,0), reproduced in the canonical runner. Preserve exact f-sum and finite unprojected quotient."
+    },
+    {
+      "id": "U11-R5",
+      "prs": [
+        8869,
+        8871,
+        8875,
+        8896,
+        8928,
+        8930,
+        8949,
+        8951,
+        8954
+      ],
+      "class": "EVIDENCE",
+      "finding": "Iterative tolerance treated as proof, tensor contractions called local boundary laws, continuum scaling used at lattice momenta and finite pair steps called exact strings.",
+      "resolution": "Add seeded iterative starts and explicit eigenpair residual tests without claiming rigorous enclosures; use integer count powers; state hidden-variable contraction nonlocality, sampled-column TV scope, correct lattice anisotropic comparator and finite-sector normalization. Preserve listed finite ratios."
+    },
+    {
+      "id": "U11-R6",
+      "prs": [
+        8913,
+        8918
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Interior nonbacktracking transition argument omitted boundary balance; one local scalar observation generalized to every neutral record and gravity input.",
+      "resolution": "Prove the backtracking augmented-chain stationary weights with creation and annihilation. Keep nonbacktracking occupation claim only as finite validation. Retain exact one-vertex invariant lemma and one alignment statistic; state shifted reference kernel and finite volumes, withdraw universal scalar and physical exclusions."
+    }
+  ],
+  "coverage": "All14 complete original notes and unique mathematical runners read; shared functions compared by AST. Final changed claims, statistics, residual wrapper and exact controls confirmed in the same primary session. Fourteen targeted independent helper controls and caught defect mutations; independent constraint enumeration verifies9600 orientations,49920 directed flips,937 components and307968 two-defect states. Full numerical runners separately reproduced; targeted mutations do not claim full Monte Carlo mutant reruns. No separate fix reviewer or formal audit.",
+  "original_dispositions": {
+    "8869": [
+      {
+        "original_path": "docs/UNIFORM_ICE_LAYER_TRANSFER_BRANCH_HAS_THE_DISPERSION_OF_A_MASSLESS_NEAREST_NEIGHBOUR_LATTICE_FIELD_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "c4694e7d511c3b53076c98ee607fa6dc8280ee39dfd93873741c2b2b6d22a7d4",
+        "recovery": "54723beb4e4b95b68b1afe545fafcb3cabcffe47:docs/UNIFORM_ICE_LAYER_TRANSFER_BRANCH_HAS_THE_DISPERSION_OF_A_MASSLESS_NEAREST_NEIGHBOUR_LATTICE_FIELD_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8869/docs/UNIFORM_ICE_LAYER_TRANSFER_BRANCH_HAS_THE_DISPERSION_OF_A_MASSLESS_NEAREST_NEIGHBOUR_LATTICE_FIELD_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_LAYER_TRANSFER_BRANCH_HAS_THE_DISPERSION_OF_A_MASSLESS_NEAREST_NEIGHBOUR_LATTICE_FIELD_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "c762cd27c2dfb4a03b32002eff68723558455d1d930e70f3fc7e5d3f9264cf2a"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.txt",
+        "original_sha256": "b73de4a4c7bb0411b09a409976ae65d0fc2b52c306c05fe9f4e3cba9e157c900",
+        "recovery": "54723beb4e4b95b68b1afe545fafcb3cabcffe47:logs/runner-cache/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8869/logs/runner-cache/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.txt",
+        "final_sha256": "55aefc7a0e22f3c635961437e8eaa5c503fcc5fbf1e1fca36fac8968446b7aae"
+      },
+      {
+        "original_path": "scripts/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.py",
+        "original_sha256": "fc2f2006ce21e7dab791ef38c59b01458ff5da098d4fc4d4cbbb00e2a1206187",
+        "recovery": "54723beb4e4b95b68b1afe545fafcb3cabcffe47:scripts/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8869/scripts/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.py",
+        "final_sha256": "8201fed8eb3ba66b8e36dc4f2d491d2e05fe87884e565046bce8aaefe6ed68e6"
+      }
+    ],
+    "8871": [
+      {
+        "original_path": "docs/UNIFORM_ICE_UNIT_LINK_FIELD_FIXES_ONE_STIFFNESS_FOR_THE_FLUX_COST_AND_THE_FIELD_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "ee3dcbf59e79b4bcbe900044e856eba70aa75ab1caebdb85fc6c727477895f22",
+        "recovery": "6bad0fbbbcfe5abbfa5fe296c04e3ed904798a31:docs/UNIFORM_ICE_UNIT_LINK_FIELD_FIXES_ONE_STIFFNESS_FOR_THE_FLUX_COST_AND_THE_FIELD_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8871/docs/UNIFORM_ICE_UNIT_LINK_FIELD_FIXES_ONE_STIFFNESS_FOR_THE_FLUX_COST_AND_THE_FIELD_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_UNIT_LINK_FIELD_FIXES_ONE_STIFFNESS_FOR_THE_FLUX_COST_AND_THE_FIELD_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "cbda2a233eeca3195a1ed3f062b007a5420348d5b3614aa902153c120f5d4855"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.txt",
+        "original_sha256": "c0a144bb229590696ea6262cdd8f3ef675e7234a967b798a1363410f883964c3",
+        "recovery": "6bad0fbbbcfe5abbfa5fe296c04e3ed904798a31:logs/runner-cache/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8871/logs/runner-cache/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.txt",
+        "final_sha256": "4366b73cd104ae3fa66151558cc71cfc350f2458a1bd01823eb562c658f56cc0"
+      },
+      {
+        "original_path": "scripts/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.py",
+        "original_sha256": "3efda0b4c4132e2cfb3139fbad7cea0109417874390fcdca0ec9e58fdab61146",
+        "recovery": "6bad0fbbbcfe5abbfa5fe296c04e3ed904798a31:scripts/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8871/scripts/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.py",
+        "final_sha256": "23cec79292e9113f625b5fe47a6799f1b51bb467e57f218811328fd9bf617204"
+      }
+    ],
+    "8875": [
+      {
+        "original_path": "docs/UNIFORM_ICE_TEST_DEFECTS_INTERACT_THROUGH_THE_LATTICE_GREEN_FUNCTION_WITH_THE_FLUX_COST_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "49eec314f690fdbeb53fcf66462d430dab925e2843bb2574e69059f9898d46bf",
+        "recovery": "970731556520cf4ac3bb4bc5a2562b60dbd30931:docs/UNIFORM_ICE_TEST_DEFECTS_INTERACT_THROUGH_THE_LATTICE_GREEN_FUNCTION_WITH_THE_FLUX_COST_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8875/docs/UNIFORM_ICE_TEST_DEFECTS_INTERACT_THROUGH_THE_LATTICE_GREEN_FUNCTION_WITH_THE_FLUX_COST_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_TEST_DEFECTS_INTERACT_THROUGH_THE_LATTICE_GREEN_FUNCTION_WITH_THE_FLUX_COST_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "e9289619f87680adef9e9bff371d36eaf5fb237fab866230157259e98d990185"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.txt",
+        "original_sha256": "7500d0e058b7b60e64630511612685571cd3971c73a7c21050aaa5b6be8ec84c",
+        "recovery": "970731556520cf4ac3bb4bc5a2562b60dbd30931:logs/runner-cache/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8875/logs/runner-cache/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.txt",
+        "final_sha256": "5c97a27e984aff38d09b21d7feec127944c5ec49f7d26e4614c5e4b220fc1cf4"
+      },
+      {
+        "original_path": "scripts/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.py",
+        "original_sha256": "2f4d4b63e94e025b4792571f115859d1c76bfa94a406d04f3f6392a71dcc9d52",
+        "recovery": "970731556520cf4ac3bb4bc5a2562b60dbd30931:scripts/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8875/scripts/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.py",
+        "final_sha256": "a2b5ab089d6682681a3ab488d1a7c8601720b2c0b7acae25b1e78fd9a4aeaa16"
+      }
+    ],
+    "8881": [
+      {
+        "original_path": "docs/UNIFORM_ICE_ON_CUBIC_TORI_WINDING_STIFFNESS_AND_CORRELATIONS_CARRY_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "0f8ce520c3585d4fd09456c55107c73fcc778f7dc6bca3f2705032c7e18b0647",
+        "recovery": "539a262e01734296c2ca7968380576d952af83f6:docs/UNIFORM_ICE_ON_CUBIC_TORI_WINDING_STIFFNESS_AND_CORRELATIONS_CARRY_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8881/docs/UNIFORM_ICE_ON_CUBIC_TORI_WINDING_STIFFNESS_AND_CORRELATIONS_CARRY_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_ON_CUBIC_TORI_WINDING_STIFFNESS_AND_CORRELATIONS_CARRY_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "ccdc711030079d4d6d5a8ca5bfc8f191b54386bb57a34c79cd40b2363e292e36"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.txt",
+        "original_sha256": "8bb8107f4d34a6c51cd26068ea2e6487bab93fd75d5a7f7c7f1c787c75671b16",
+        "recovery": "539a262e01734296c2ca7968380576d952af83f6:logs/runner-cache/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8881/logs/runner-cache/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.txt",
+        "final_sha256": "25f4e387c80425cfdf69871bb79b9d543ee3480d54d5bb03839644980e646803"
+      },
+      {
+        "original_path": "scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py",
+        "original_sha256": "cfdddf43078e520f1e9f355af44adedef6686a8916b9a48d9347029bd049cae0",
+        "recovery": "539a262e01734296c2ca7968380576d952af83f6:scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8881/scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py",
+        "final_sha256": "10f861d870e923a706f94480af069d33f1b58a9fb8bbfe5c9fa1fafa4401a866"
+      }
+    ],
+    "8890": [
+      {
+        "original_path": "docs/UNIFORM_ICE_STATIC_PHOTON_HAS_TWO_DEGENERATE_TRANSVERSE_POLARIZATIONS_WITH_ONE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "ec6796232dcff80004b25699ab097af370b0e1b4abfd3ab67c97e24f37a46f4e",
+        "recovery": "7df6510fd36ff39b090ca952c09d68a47c2140a7:docs/UNIFORM_ICE_STATIC_PHOTON_HAS_TWO_DEGENERATE_TRANSVERSE_POLARIZATIONS_WITH_ONE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8890/docs/UNIFORM_ICE_STATIC_PHOTON_HAS_TWO_DEGENERATE_TRANSVERSE_POLARIZATIONS_WITH_ONE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_STATIC_PHOTON_HAS_TWO_DEGENERATE_TRANSVERSE_POLARIZATIONS_WITH_ONE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "4926fad935f5b891ddd9f3786ca335ab6bf6cbf03cd270464ffc635e90355abb"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.txt",
+        "original_sha256": "60a47bd4dd246696631d64c96feb22737b3e567fe4b03482cba008a3678c1875",
+        "recovery": "7df6510fd36ff39b090ca952c09d68a47c2140a7:logs/runner-cache/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8890/logs/runner-cache/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.txt",
+        "final_sha256": "c1fb8eb2823d353d5033f1f90a7e8f0c0f0a65b68d4c45743ae86bf0aa2b51a3"
+      },
+      {
+        "original_path": "scripts/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.py",
+        "original_sha256": "4242d0f3c60b8adab931c4eaf2751f38009f810e8c821dc0618f4f5d07abe6aa",
+        "recovery": "7df6510fd36ff39b090ca952c09d68a47c2140a7:scripts/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8890/scripts/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.py",
+        "final_sha256": "c21e98bab10bd79ab136f8212cc2a06e109a5a24ad3ee527b1d46fe7d92f67af"
+      }
+    ],
+    "8896": [
+      {
+        "original_path": "docs/UNIFORM_ICE_LAYER_VACUUM_IS_A_GAUSSIAN_FLUX_FUNCTIONAL_AND_THE_LAYER_UNIT_LAW_CARRIES_A_ONE_OVER_R_FLUX_INTERACTION_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "8876c5cc1910bb49c29b78570b3e98a8b4ba17e33655819c8703b403c5f962db",
+        "recovery": "281e2ca9f6f987ae2df5424566aa3e4435129d57:docs/UNIFORM_ICE_LAYER_VACUUM_IS_A_GAUSSIAN_FLUX_FUNCTIONAL_AND_THE_LAYER_UNIT_LAW_CARRIES_A_ONE_OVER_R_FLUX_INTERACTION_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8896/docs/UNIFORM_ICE_LAYER_VACUUM_IS_A_GAUSSIAN_FLUX_FUNCTIONAL_AND_THE_LAYER_UNIT_LAW_CARRIES_A_ONE_OVER_R_FLUX_INTERACTION_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_LAYER_VACUUM_IS_A_GAUSSIAN_FLUX_FUNCTIONAL_AND_THE_LAYER_UNIT_LAW_CARRIES_A_ONE_OVER_R_FLUX_INTERACTION_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "9b5841e377e8ac7917bba33434ce3bc2e7c1f90fbb2bf9668b8fb9953b9d6625"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.txt",
+        "original_sha256": "01e345fe04285fcc9b69696b2f65b576a9ea991a2e15e6370e2591d4a6d246fb",
+        "recovery": "281e2ca9f6f987ae2df5424566aa3e4435129d57:logs/runner-cache/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8896/logs/runner-cache/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.txt",
+        "final_sha256": "619948b505f700b3d85d2468ef608bd396253319070f3e19372a17b396ba93fd"
+      },
+      {
+        "original_path": "scripts/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.py",
+        "original_sha256": "ab96b93aed38e0230ecc286cdb5e39feb3a733365354b1183983fda1ff2152a1",
+        "recovery": "281e2ca9f6f987ae2df5424566aa3e4435129d57:scripts/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8896/scripts/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.py",
+        "final_sha256": "f8446f33dca657dee45e5eb8ff3f483e1e05933e288b784f31c4259aec2c878c"
+      }
+    ],
+    "8905": [
+      {
+        "original_path": "docs/UNIFORM_ICE_RK_PHOTON_SINGLE_MODE_BOUND_IS_QUADRATIC_WITH_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "6b6b7e3a618462c46d7a757539376db76b13912644d5dfda30160b0e0ab16414",
+        "recovery": "1cd7fb19070eb7a57b5648ae623446245de6a644:docs/UNIFORM_ICE_RK_PHOTON_SINGLE_MODE_BOUND_IS_QUADRATIC_WITH_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8905/docs/UNIFORM_ICE_RK_PHOTON_SINGLE_MODE_BOUND_IS_QUADRATIC_WITH_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_RK_PHOTON_SINGLE_MODE_BOUND_IS_QUADRATIC_WITH_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "d547a6b6b7dbce74b65ec7ef2e12f8c51470e45b796d445227aa8e877d4c6add"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.txt",
+        "original_sha256": "4a9e396bc5344434490b504d56d3fe7848e659f663d2ab901ef053e298318cf9",
+        "recovery": "1cd7fb19070eb7a57b5648ae623446245de6a644:logs/runner-cache/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8905/logs/runner-cache/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.txt",
+        "final_sha256": "2ad1ef841b7e673bd01557aafe31aba6dcb4aa3deb535c99163762a3fc360446"
+      },
+      {
+        "original_path": "scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py",
+        "original_sha256": "1820216d5ebe18b94f09d9e300eecda3dd77724a229beed451641787a3eef790",
+        "recovery": "1cd7fb19070eb7a57b5648ae623446245de6a644:scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8905/scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py",
+        "final_sha256": "2837b436d57017a1cea933e3b36a7adb4d99f5330c8a0c393bc06ca5e4152e5d"
+      }
+    ],
+    "8913": [
+      {
+        "original_path": "docs/UNIFORM_ICE_BACKTRACKING_WORM_SAMPLES_TEST_DEFECT_PAIRS_EXACTLY_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "c3b2ff9976721ecf375d301e3c10a45440cd61ff21cba8923e2fe206ab9ad7a1",
+        "recovery": "bfce588b8e5d94f4912c5e8030e07a8c09a51b0e:docs/UNIFORM_ICE_BACKTRACKING_WORM_SAMPLES_TEST_DEFECT_PAIRS_EXACTLY_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8913/docs/UNIFORM_ICE_BACKTRACKING_WORM_SAMPLES_TEST_DEFECT_PAIRS_EXACTLY_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_BACKTRACKING_WORM_SAMPLES_TEST_DEFECT_PAIRS_EXACTLY_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "66b1b0cbfdef7559a22f95ad88b4388d75487ab065e6aea0274d812cda168a11"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.txt",
+        "original_sha256": "66c476e072db3075aa790da2c78b91e4f8e98adb9bc899f7456150555f6f1e98",
+        "recovery": "bfce588b8e5d94f4912c5e8030e07a8c09a51b0e:logs/runner-cache/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8913/logs/runner-cache/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.txt",
+        "final_sha256": "42f04d0e666b79e312546c11fc6d0e89eb4d24fd7c5a9921ebcf66a5689914fd"
+      },
+      {
+        "original_path": "scripts/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.py",
+        "original_sha256": "c9abcf7f2d9ca8424b7753a3218d16f50b993fc78d2b105c71883e9e1dc49346",
+        "recovery": "bfce588b8e5d94f4912c5e8030e07a8c09a51b0e:scripts/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8913/scripts/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.py",
+        "final_sha256": "561bf73ee0490b7d1887bd4b5fe26843d2a2797ae4f31923d09dc2185abcea8f"
+      }
+    ],
+    "8918": [
+      {
+        "original_path": "docs/UNIFORM_ICE_CARRIES_THE_LATTICE_GREEN_FUNCTION_IN_ITS_CHARGED_SECTOR_WHILE_NEUTRAL_SCALAR_RECORDS_ARE_SHORT_RANGED_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "5c16caced0396100bd7758fd92d4d413371687ed54af5f2cdcaa083fadd9fdea",
+        "recovery": "25cbda1f1a9a91ffff5798fae46913ba68938949:docs/UNIFORM_ICE_CARRIES_THE_LATTICE_GREEN_FUNCTION_IN_ITS_CHARGED_SECTOR_WHILE_NEUTRAL_SCALAR_RECORDS_ARE_SHORT_RANGED_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8918/docs/UNIFORM_ICE_CARRIES_THE_LATTICE_GREEN_FUNCTION_IN_ITS_CHARGED_SECTOR_WHILE_NEUTRAL_SCALAR_RECORDS_ARE_SHORT_RANGED_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_CARRIES_THE_LATTICE_GREEN_FUNCTION_IN_ITS_CHARGED_SECTOR_WHILE_NEUTRAL_SCALAR_RECORDS_ARE_SHORT_RANGED_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "dfb13e3d414b40d08fd4946be67ee7aca9f0f8ad07371b6720dd0011497b4e31"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.txt",
+        "original_sha256": "7b1edf6c35c968f64daa345e7d09d7fdf2841fff769de19bce3a8885e274914a",
+        "recovery": "25cbda1f1a9a91ffff5798fae46913ba68938949:logs/runner-cache/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8918/logs/runner-cache/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.txt",
+        "final_sha256": "b3b8ada5faac7dae8d40e6954e80762af68e881d07b22e91e044ee9c9131ab59"
+      },
+      {
+        "original_path": "scripts/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.py",
+        "original_sha256": "9fa5d14eed33066226fc81a583a31f2a322f2168bb4e285496c93de89a13d1a5",
+        "recovery": "25cbda1f1a9a91ffff5798fae46913ba68938949:scripts/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8918/scripts/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.py",
+        "final_sha256": "564e3a4dac8a7ecfb55c267d00d9054564eae708740819a07a08abe6ea6bc5d8"
+      }
+    ],
+    "8928": [
+      {
+        "original_path": "docs/UNIFORM_ICE_STATIC_PHOTON_STIFFENS_IN_A_BACKGROUND_FLUX_AND_SATURATION_LEAVES_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "a67fd516f9c7933ca3db489a4aa7f02d6ce7a1dc34a01075d55d9e6f64ffe6a1",
+        "recovery": "f90c3da5fa2acfbf4072fc279e09b55eb6f2fc43:docs/UNIFORM_ICE_STATIC_PHOTON_STIFFENS_IN_A_BACKGROUND_FLUX_AND_SATURATION_LEAVES_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8928/docs/UNIFORM_ICE_STATIC_PHOTON_STIFFENS_IN_A_BACKGROUND_FLUX_AND_SATURATION_LEAVES_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_STATIC_PHOTON_STIFFENS_IN_A_BACKGROUND_FLUX_AND_SATURATION_LEAVES_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "1c39b5dc2f508267d007dc180928eea25e18cb30717e49fd3099aeef2bcbcd05"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.txt",
+        "original_sha256": "f3389a4692552623a493f44c969e9dfc7a367bac2f1615b632bdfb5dabcff22d",
+        "recovery": "f90c3da5fa2acfbf4072fc279e09b55eb6f2fc43:logs/runner-cache/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8928/logs/runner-cache/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.txt",
+        "final_sha256": "4bc31fd7fa29e488eeed1d452ee9b4c7a9324e3bf0a4ed887022e3f91fc1d482"
+      },
+      {
+        "original_path": "scripts/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.py",
+        "original_sha256": "0c2acd1357cb2b70dc7385c404c9d1f7e8ecf5de92c940a076353ab7d64de44b",
+        "recovery": "f90c3da5fa2acfbf4072fc279e09b55eb6f2fc43:scripts/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8928/scripts/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.py",
+        "final_sha256": "e97128c0873a195b2aa6789fd3050ab8fa06ec9a35d729b9c7d9cfa8c009bf2b"
+      }
+    ],
+    "8930": [
+      {
+        "original_path": "docs/ICE_UNIT_FIELD_SUM_RULE_IS_TEN_TIMES_CLOSER_IN_THREE_DIMENSIONS_THAN_IN_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "de4ef04f6e79c6ebc7b9c7d1c02b353b7d4f1277cf3a9c33a1371797cf8ed82d",
+        "recovery": "b1da59092cefdb8ffca504da2397291dd4dfb3e6:docs/ICE_UNIT_FIELD_SUM_RULE_IS_TEN_TIMES_CLOSER_IN_THREE_DIMENSIONS_THAN_IN_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8930/docs/ICE_UNIT_FIELD_SUM_RULE_IS_TEN_TIMES_CLOSER_IN_THREE_DIMENSIONS_THAN_IN_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/ICE_UNIT_FIELD_SUM_RULE_IS_TEN_TIMES_CLOSER_IN_THREE_DIMENSIONS_THAN_IN_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "bc3818386e6ca4efac982f9bdaea890aa6d7360b8868e0f3f6c8ab9a51b123e3"
+      },
+      {
+        "original_path": "logs/runner-cache/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.txt",
+        "original_sha256": "1e96b7843eef96837bb20e3ed0a1751685c622a41c0d70e79c375f6203dbfb38",
+        "recovery": "b1da59092cefdb8ffca504da2397291dd4dfb3e6:logs/runner-cache/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8930/logs/runner-cache/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.txt",
+        "final_sha256": "4bd200c78a663e07d0f813b576ed9c557ff712ec5834a86423e4cb6be6a8a869"
+      },
+      {
+        "original_path": "scripts/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.py",
+        "original_sha256": "a6b811c606c82959fefc9bb6cb60ab178255b043d76c1bb326e559dddd94c797",
+        "recovery": "b1da59092cefdb8ffca504da2397291dd4dfb3e6:scripts/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8930/scripts/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.py",
+        "final_sha256": "287353d9d76a9c22196e1ac3c40144c800994bc4b58bac35bd95d377a1fa61f1"
+      }
+    ],
+    "8949": [
+      {
+        "original_path": "docs/UNIFORM_ICE_FLUX_SECTOR_PHOTON_RISE_IS_WAVENUMBER_INDEPENDENT_AND_A_SECOND_BRANCH_CROSSES_BELOW_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "a86c37ea31f3ee19c621b967a0478e56af317c792ef3c53d771b11c57da34ed1",
+        "recovery": "61a6c8baeb0545de6f975f87cc65b45737520178:docs/UNIFORM_ICE_FLUX_SECTOR_PHOTON_RISE_IS_WAVENUMBER_INDEPENDENT_AND_A_SECOND_BRANCH_CROSSES_BELOW_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8949/docs/UNIFORM_ICE_FLUX_SECTOR_PHOTON_RISE_IS_WAVENUMBER_INDEPENDENT_AND_A_SECOND_BRANCH_CROSSES_BELOW_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_FLUX_SECTOR_PHOTON_RISE_IS_WAVENUMBER_INDEPENDENT_AND_A_SECOND_BRANCH_CROSSES_BELOW_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "50f5a72b4c6b12bc3e399304dbfc95888a98ee51221d835b4200377669582ea5"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.txt",
+        "original_sha256": "2c404ba6737df4e056a64c92b610517f964f0b858f67089054f5542770472896",
+        "recovery": "61a6c8baeb0545de6f975f87cc65b45737520178:logs/runner-cache/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8949/logs/runner-cache/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.txt",
+        "final_sha256": "6d339bc74f5f40de306a28d834901d8a65147bc28617762851cd23826c8e312e"
+      },
+      {
+        "original_path": "scripts/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.py",
+        "original_sha256": "b8bdf72c763f2bd88cb23e5a692776e89d12253da9d34fc88ba0ab6848c8e699",
+        "recovery": "61a6c8baeb0545de6f975f87cc65b45737520178:scripts/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8949/scripts/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.py",
+        "final_sha256": "35856692d5b137cec74964d2ba30e8915fd13e439f650baad649345cfb75cc7c"
+      }
+    ],
+    "8951": [
+      {
+        "original_path": "docs/UNIFORM_ICE_TEST_DEFECT_PAIRS_FOLLOW_THE_CHARGE_SQUARED_LAW_WITH_A_CORE_CORRECTION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "original_sha256": "059d1f36d2970ca90ac807e6c82069c3b05588ec40d2843f1abc6e2c2e51e47a",
+        "recovery": "53cddd234a792d5cf4eca6e72bb01941acb03f97:docs/UNIFORM_ICE_TEST_DEFECT_PAIRS_FOLLOW_THE_CHARGE_SQUARED_LAW_WITH_A_CORE_CORRECTION_BOUNDED_THEOREM_NOTE_2026-09-24.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8951/docs/UNIFORM_ICE_TEST_DEFECT_PAIRS_FOLLOW_THE_CHARGE_SQUARED_LAW_WITH_A_CORE_CORRECTION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_TEST_DEFECT_PAIRS_FOLLOW_THE_CHARGE_SQUARED_LAW_WITH_A_CORE_CORRECTION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "final_sha256": "c8188766231ada0a342be70b5a39632a757be82b813f1e0002d0344a36fd6c7a"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.txt",
+        "original_sha256": "d51cbb7c0de71c914307634d46110ae1f3d28716f02321680b590b44951f3026",
+        "recovery": "53cddd234a792d5cf4eca6e72bb01941acb03f97:logs/runner-cache/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8951/logs/runner-cache/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.txt",
+        "final_sha256": "53f84a8f3af5d304dd64a9f8de57e6778668b9e1f1924ff46cb12b8f4bce697c"
+      },
+      {
+        "original_path": "scripts/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.py",
+        "original_sha256": "90f2ac1b3ef770da929f7ae8f4769ef5d678d28b1cb2dca0427a7000eb49d587",
+        "recovery": "53cddd234a792d5cf4eca6e72bb01941acb03f97:scripts/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8951/scripts/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_test_defect_pairs_follow_the_charge_squared_law_with_a_core_correction_2026_09_24.py",
+        "final_sha256": "96986bab8847da940081299829289f84ee794298c8583b8789fdfeca2a852fe1"
+      }
+    ],
+    "8954": [
+      {
+        "original_path": "docs/SQUARE_ICE_IS_GAUSSIAN_AT_LONG_WAVELENGTH_AND_A_ZONE_BOUNDARY_EXCESS_MAKES_THE_SUM_RULE_MISS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "original_sha256": "918b01094f7cd117a2e886e97be68db1a930b050ffb423401d45b64b0605212d",
+        "recovery": "441f9d37519ac51a99997d147039da8c860753fb:docs/SQUARE_ICE_IS_GAUSSIAN_AT_LONG_WAVELENGTH_AND_A_ZONE_BOUNDARY_EXCESS_MAKES_THE_SUM_RULE_MISS_BOUNDED_THEOREM_NOTE_2026-09-24.md; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8954/docs/SQUARE_ICE_IS_GAUSSIAN_AT_LONG_WAVELENGTH_AND_A_ZONE_BOUNDARY_EXCESS_MAKES_THE_SUM_RULE_MISS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/SQUARE_ICE_IS_GAUSSIAN_AT_LONG_WAVELENGTH_AND_A_ZONE_BOUNDARY_EXCESS_MAKES_THE_SUM_RULE_MISS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "final_sha256": "a9442a000c8d0011d7dd570860adeea5e43b637b850982eb5c1c53c0160fed37"
+      },
+      {
+        "original_path": "logs/runner-cache/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.txt",
+        "original_sha256": "f96dd7cfc0964061f21d5eabc240e4351ab27dc1a1147778b340460e083fdacf",
+        "recovery": "441f9d37519ac51a99997d147039da8c860753fb:logs/runner-cache/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.txt; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8954/logs/runner-cache/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.txt",
+        "final_sha256": "0d2d2f958b757074e214f36ae42fa37122c5cbba5670cbeece9eaf5103223867"
+      },
+      {
+        "original_path": "scripts/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.py",
+        "original_sha256": "e5671d8df2caee15c31772a2727bf9a5afd47200c335579cdc2138f51cf377ba",
+        "recovery": "441f9d37519ac51a99997d147039da8c860753fb:scripts/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.py; /private/tmp/cl3-review-evidence-20260923/unit11-originals/8954/scripts/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.py",
+        "final_sha256": "abfb761a2fc1aa4cab6d80ee33d9a47726fe80150cafad2369dfdb80e0786a9b"
+      }
+    ]
+  },
+  "claim_dispositions": {
+    "8869": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R5"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8871": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R5"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8875": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R5"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8881": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R2",
+        "U11-R3"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8890": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R2",
+        "U11-R3"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8896": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R5"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8905": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R4"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8913": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R2",
+        "U11-R3",
+        "U11-R6"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8918": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R3",
+        "U11-R6"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8928": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R5"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8930": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R5"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8949": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R5"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8951": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R5"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    },
+    "8954": {
+      "accepted": "Scoped conditional proofs and finite numerical observations in final source",
+      "rejected_or_narrowed": [
+        "U11-R1",
+        "U11-R5"
+      ],
+      "deferred_content": "No original file omitted. Unsupported extensions are explicitly withdrawn or conditional; original PR commits and archived originals preserve history. No unlanded auxiliary file requires branch preservation."
+    }
+  }
+}

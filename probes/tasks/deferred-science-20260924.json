@@ -1,0 +1,178 @@
+[
+ {
+  "id": "J:derive:deferred-20260924-formation:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-formation",
+  "title": "Formation laws and nonlinear scaling",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Formation laws and nonlinear scaling. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-05.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8178: separate the corrected linear transient proxy from the still-unproved nonlinear memory/scaling law. Recover auxiliary calculations only if they bear on an explicit gap in that distinction. Before calculating, inspect existing attempts/logs for these related problems: corrigendum-PR8178, corrigendum-PR8180, formation-response-kernel, plane-memory-loss-2. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-formation/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-transport:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-transport",
+  "title": "Record transport, capture and anisotropy",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Record transport, capture and anisotropy. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-06.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8558: determine whether a deferred collision calculation supplies an actual isotropization mechanism under the stated streaming law, or an exact counterexample. Preserve the landed cubic-viscosity correction. Before calculating, inspect existing attempts/logs for these related problems: collisional-viscosity-and-eta, isotropic-streaming-clause, inertial-gas-viscosity-and-damping. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-transport/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-ledger:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-ledger",
+  "title": "Local energy ledgers and source closure",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Local energy ledgers and source closure. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-07.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8593/8595/8596: inspect the deferred q-only no-go and the missing site-to-face transfer. Choose one literal finite identity or obstruction that is still missing; do not infer field existence from divergence compatibility. Before calculating, inspect existing attempts/logs for these related problems: a-bond-placed-stress-for-the-walk, the-ledgers-force-identity-exactly-on-the-lattice, a-ledger-that-reads-bond-energies. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-ledger/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-species:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-species",
+  "title": "Species, signed rays and field compatibility",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Species, signed rays and field compatibility. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-08.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8599/8601/8602: test the gap between a uniform-symbol branch-label symmetry and varying-field spectral degeneracy. Recover a deferred finite construction or demonstrate precisely why it does not extend. Before calculating, inspect existing attempts/logs for these related problems: are-the-eight-species-all-kept, all-eight-species-under-the-three-couplings, the-blind-walk-beyond-first-order. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-species/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-stability:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-stability",
+  "title": "Stability, crowd thresholds and wall spectra",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Stability, crowd thresholds and wall spectra. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-09.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with the review finding on restricted Hessians and unexamined directions. Extract one exact omitted direction or endpoint from the frozen source and establish its sign or a counterexample; a finite fit is not a global stability theorem. Before calculating, inspect existing attempts/logs for these related problems: the-record-gas-chessboard-threshold, the-two-wall-level-rule-on-every-ring, the-reach-three-coupling-beyond-first-order. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-stability/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-clock:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-clock",
+  "title": "Clocked walks, topology and endpoint domains",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Clocked walks, topology and endpoint domains. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-10.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with the endpoint-domain material: identify what auxiliary source contributes beyond the corrected imported endpoint theorem and finite-stencil checks. Work one missing infinite-domain hypothesis or report the exact remaining supplier; do not treat finite stencils as self-adjointness proofs. Before calculating, inspect existing attempts/logs for these related problems: the-clocked-walk-in-an-exponential-field-self-adjoint-realizations, the-alternations-walls-under-the-scalar-hop. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-clock/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-formation-packets:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-formation-packets",
+  "title": "Mobile-record formation and excluded cooling source",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Mobile-record formation and excluded cooling source. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-12.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8635 excluded cooling calculations. Recover the stated cooling model and the specific finite control, distinguish it from the landed geometry/divergence proof, and derive or falsify one scoped claim using explicit assumptions. Before calculating, inspect existing attempts/logs for these related problems: formation-events-for-amplitudes-of-negative-energy, re-recording. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-formation-packets/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-spin-packets:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-spin-packets",
+  "title": "Finite-spin tails and saved-vector evidence",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Finite-spin tails and saved-vector evidence. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-13.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8839 saved-vector replay. Recover the high-spin input provenance, reproduce one actual-output claim independently, and state what it adds beyond the landed analytic bounds. Historical vectors alone do not establish a uniform theorem. Before calculating, inspect existing attempts/logs for these related problems: composite-bodies-rest-energy-without-a-larger-site-algebra. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-spin-packets/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-star-packets:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-star-packets",
+  "title": "Electric-star preparation and uniform supply",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Electric-star preparation and uniform supply. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-14.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8923/8929/8936 auxiliary supply and clock work. Identify one statement beyond the landed common-preparation Duhamel bound and exact buffered battery operation. Derive its missing condition or an exact finite obstruction, keeping preparation and physical occurrence distinct. Before calculating, inspect existing attempts/logs for these related problems: composite-bodies-rest-energy-without-a-larger-site-algebra, the-rest-energy-of-a-record. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-star-packets/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-residuals:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-residuals",
+  "title": "Rotor tails and ray/body physical identifications",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Rotor tails and ray/body physical identifications. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-15.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8960: isolate the unsupported GR mass/stress identification or unproved lattice-error order from the valid conditional two-charge ray theorem. Choose one explicit missing step and establish a bounded result or counterexample; alternatively recover a genuinely distinct rotor-tail residual from PR8957/8958. Before calculating, inspect existing attempts/logs for these related problems: internal-hop-energy-and-the-two-masses, p-equals-q-for-compact-and-strong-bodies, bending-over-fall-at-strong-field. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-residuals/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ },
+ {
+  "id": "J:derive:deferred-20260924-assembly:a1",
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "deferred-20260924-assembly",
+  "title": "Assembly graph versus physical necessity",
+  "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Assembly graph versus physical necessity. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-15.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. PR8648 has no unmapped files, but stronger physical necessity/completion assertions were deferred. Choose one arrow in its frozen 117-node/40-menu graph: inspect its cited source and derive the required physical implication with premises explicit, or exhibit the missing premise. Boolean reachability itself is already landed. Before calculating, inspect existing attempts/logs for these related problems: axioms-and-the-event-lattice. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-assembly/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing."
+ }
+]

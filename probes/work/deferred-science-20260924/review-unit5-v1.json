@@ -1,0 +1,1274 @@
+{
+  "unit_id": "conditional-kernels-formation-transfer-ten-20260923",
+  "reviewer": "Current primary Codex session; original authors separate. User prohibits subagents. Same-session focused fix confirmation, no separate fix reviewer or formal audit.",
+  "verdict": "FINAL VERDICT: PASS",
+  "skill_commit": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "status": "Science confirmed; mechanical preflight and combined gate pending",
+  "findings": [
+    {
+      "id": "U5-R1",
+      "prs": [
+        8178,
+        8180,
+        8507
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Gain-one recurrence is not the exact finite-beta Cartesian mean derivative.",
+      "resolution": "Declare supplied linear comparator; derive sphere mean derivative A(n beta)/n separately from aligned noise variance. Historical simulations do not prove limits or physical laws."
+    },
+    {
+      "id": "U5-R2",
+      "prs": [
+        8180
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "False non-product proof and missing conjugation in complex covariance.",
+      "resolution": "Static Green kernel also equals plane amplitude times layer propagator; replace proof with exact recurrence and distinguish linear versus quadratic wavenumber decay. Add complex L4 phase check; state oblique coordinates and explicit symmetry subgroup."
+    },
+    {
+      "id": "U5-R3",
+      "prs": [
+        8178
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Mode independence, variance-as-transient-time, universal lattice-sum increments and nonlinear scaling claims unsupported.",
+      "resolution": "Temporal noise independence suffices; define exact proxy and spectral transient. Restrict increments to16,32,64; derive log2 interval; preserve historical data without asymptotic conclusions."
+    },
+    {
+      "id": "U5-R4",
+      "prs": [
+        8507
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Uniqueness assumptions absent, component independence overstated, reflection halves wrong and source zero mode unprojected.",
+      "resolution": "Positive site selection and bounded sphere or finite alphabet minorization; factorized initial data for independence; correct bilayer-layer halves; project mean and exclude staggered pole. Import only scalar bound from current cubic-walk parent."
+    },
+    {
+      "id": "U5-R5",
+      "prs": [
+        8510,
+        8512
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Unlanded equivalence dependency, box-support gap, antichain factorization and same-level displacement errors.",
+      "resolution": "Self-contained counterexample, causal ancestry excludes negative coordinates; fixed read sets and explicitly factorized joint kernel; zero coordinate-sum displacement; exact table/control assertions."
+    },
+    {
+      "id": "U5-R6",
+      "prs": [
+        8637,
+        8641,
+        8646
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Finite samples substituted for proofs, rational/Haar domain mismatch, parity-rule prose mismatch and overbroad locality conclusions.",
+      "resolution": "Real-sphere analytic domain with rational controls; orbit/infinite-order proofs and exact census. Last-site parity rule plus general per-order uniformity proof. Verify all512 dual characters and LR formed-neighbour conditional; scope exclusions to supplied conditionals."
+    },
+    {
+      "id": "U5-R7",
+      "prs": [
+        8859,
+        8864
+      ],
+      "class": "EVIDENCE",
+      "finding": "Unproved spectral limits and insufficient requested levels for multiplicity; silent symmetrization.",
+      "resolution": "Finite estimates only, seeded solvers, symmetry/residual checks and levels beyond cluster; independent exact small transfer contractions."
+    },
+    {
+      "id": "U5-R8",
+      "prs": [
+        8178,
+        8180,
+        8507,
+        8510,
+        8512,
+        8637,
+        8641,
+        8646,
+        8859,
+        8864
+      ],
+      "class": "EVIDENCE",
+      "finding": "Original campaign state, historical certificates and weak scope/cache coverage.",
+      "resolution": "Canonical science only; fresh caches and consequential mutations; five AIL branches preserved for deferred auxiliary calculations. No audit verdict."
+    }
+  ],
+  "coverage": "All10 canonical runners and retained premise/proof surfaces read; shared AIL boilerplate structurally compared and changed functions read. Independent exact sphere derivative, Green recurrence and complex phase; integer transfer contractions; five binary optimization minima with exact witnesses; full-pattern sums/all-order products at two weight triples; Burnside census;120 new orders with512 coin vectors each; bilayer reflections. Ten consequential science mutations caught. Historical auxiliary programs are explicitly deferred and preserved, not certified or freshly executed.",
+  "original_dispositions": {
+    "8178": [
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "original_sha256": "96c984c8fe0ac6bc8dc6f7f5d812acbd14ef8f2448763e6f2486a60c3d1b65bf",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block34_findings.md",
+        "original_sha256": "280a758f5aa00fc0c7d6bf79ba32fc6356d68ec2bad40ad75ec7843892d7602a",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block34_findings.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block34_findings.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block34.md",
+        "original_sha256": "625683367666facdd3ed2768aff1e53c77e93797228863cbf11e7e87c39e0719",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block34.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block34.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block34.md",
+        "original_sha256": "fc228750e3345b7ce9be9684e707561c537ab796e5cbdfd67bf5bd83543bea96",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block34.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block34.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "original_sha256": "534a7e59a4c18404c13ddaf3c55d7f68754977539d5e07f520fcdb73d1053c31",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "original_sha256": "f083183e70380367623f157c16a0b5ae812b78e36ad3a59d45f739c581ff728f",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "original_sha256": "fb80ce345957987de86dde53552c6d0043aaa9a74921760d5481ca9900a9e3c5",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block34.md",
+        "original_sha256": "764089c4e4e69ee2d8d80d3d5a41691baa6ac2481c6103a391ce1523f8c6f28f",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block34.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block34.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "original_sha256": "26f6207b889a91621ad5f4cdeac568defe5f048ab441de644b139af9e1056ccd",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "original_sha256": "caa2841045208740d0e7e3d9d340f24bff7319cd848a73f42cf6363f992e5beb",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "original_sha256": "7048634d28f7ecb149f48ac0e15edb8497b2dfc0ead70d3d6f3287c6ec7269ca",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.out.txt",
+        "original_sha256": "71a0e1986f004b32abdcb0e73a35b719d6d72f849a7357dbd35cc78d32ee07d2",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.py",
+        "original_sha256": "eb6bb80f1b71276590c52c86caf55f5ae8d4c36012b4a525ecfa9736316e9bf2",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.out.txt",
+        "original_sha256": "b3dfd4bc1e2ae5cfe296b9c4234188b2f481e11eb5d79648a6e674700e8a9309",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.py",
+        "original_sha256": "845be5ac8b9e23df9ba5a1f5088dabd92fb94dbd3f2fc028da9479ab9dd53ec7",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.out.txt",
+        "original_sha256": "2cf183e8f2036760386e1f529ae30e775799fc8447b6c17c7cb6f56102e2520c",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.py",
+        "original_sha256": "4084ce1a458ac09ffd0ecbde953a467ab2f73f8e6a9b234d10768a0567063c37",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+        "original_sha256": "f7659e34a12094faf02f25d7adccb782d33d81a67b3cb31436588624bcc4f43e",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+        "final_sha256": "407e07d95da723167ea96d1d7a7d564c5e17b830d4e6f3dd3482a175bf41ee55"
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_sha256": "bc65a62a7bea3f614f30ce5d5b826da0a4f8d464291687c60a79ddeb4f0e3486",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:docs/audit/data/citation_graph_manifest.json; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/docs/audit/data/citation_graph_manifest.json",
+        "disposition": "regenerated shared citation manifest",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "logs/runner-cache/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.txt",
+        "original_sha256": "187759c1edb59cc348b1c99b45f0c24c4aae18368a3dcc31a9d85f12fc816ea8",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:logs/runner-cache/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/logs/runner-cache/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.txt",
+        "final_sha256": "21305247648a7af0a39fe392c19f616c51fb63791e68308bcc3d42abd20901ae"
+      },
+      {
+        "original_path": "scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py",
+        "original_sha256": "f4429ff85f6aef207e4c75e10ecd8313af90af6c5190323723a300d5e4f5c312",
+        "recovery": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd:scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8178/scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py",
+        "final_sha256": "7ad8113537da9de6623881d0a3ce9a9967109513b6bcc241970e4dcad71d13b3"
+      }
+    ],
+    "8180": [
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "original_sha256": "a492d8de1f5d8e1e2a337c655bc1fff2819c7af7198e67e7de018a54d9002abd",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block35_findings.md",
+        "original_sha256": "0084e10ae216f98dcd68c28deccb9f8ec61f8a5f953d54136e3d555466aa9b65",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block35_findings.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block35_findings.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block35.md",
+        "original_sha256": "6f85e24720950ded0d3130aae66f458d9e275ccba0d56b3adf93cc0af639decf",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block35.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block35.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block35.md",
+        "original_sha256": "6a3b59fe741d9fced039ce3a3402a7072391fd3b112ff33ec2c70d5242f1349a",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block35.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block35.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "original_sha256": "eb731be158452237e26381bb517b12593b0522851cdbe6f3779e945c8b66ac11",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "original_sha256": "5c2ac9e21af52f27d5d086f500375cf2120df5fdf4f8139fe027bffe6728ca26",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "original_sha256": "916d73132886f64ae14d56fa1091462f3ac7a13884a468bef79dc47198c86de4",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block35.md",
+        "original_sha256": "44b39c69c20b67b9cf94cf161750834136da587b8d66125f4f28bf64d9d68ed4",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block35.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block35.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "original_sha256": "dcb5f9f32985bf6ac9e6b4019ca81144b91c669078a4493afda771343e3c98df",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "original_sha256": "135aac9d8b3ec47ee5a115ff55eeed74e02f90a8640a80f108e74b4e6ff15d9a",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "original_sha256": "671ab64d4ee321cf247b98454715de02670136aaaf89e6bd2cab114ea27c6676",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.out.txt",
+        "original_sha256": "5c0b5a21edbd92503ad41ece72146624d096800c0a0a1e811e86a27e27cda235",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.py",
+        "original_sha256": "9ee7b05a56ca8a820bf73b8b47557f60dae93891dbdc76c767efb13d6823fcb9",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_kernel_sim.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.out.txt",
+        "original_sha256": "b2b983f47fda43d965790f8b89824c3ea37bc28fd41d7fb20631802e0c3e48c3",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.py",
+        "original_sha256": "2e7d28a9c6b8b3928ff56e7c06a5b1f93ecd9add2c67bdc19b937392d84e001d",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block35_refuter.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "docs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md",
+        "original_sha256": "485e742b2cda2a8acd1db2890f9df2efe92a569a427e77f46c1eb16dd9b964e9",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:docs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/docs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md",
+        "final_sha256": "d1472ecde9fadfe58032a88e0aae7ec61fb3187781fad1a7e3542e9da4eb79df"
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_sha256": "a43c4f0a13f1efec862bbc87a04870671e432b7690ddd5f87b94a6fa58a5095a",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:docs/audit/data/citation_graph_manifest.json; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/docs/audit/data/citation_graph_manifest.json",
+        "disposition": "regenerated shared citation manifest",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "logs/runner-cache/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.txt",
+        "original_sha256": "477fb9f7bf75d035becd14806c753630a279ac414ffb61c5cfbe94426142ae26",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:logs/runner-cache/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/logs/runner-cache/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.txt",
+        "final_sha256": "5b8355b65904657a7845ed80f4d6f0c32dd8ba2d8c1f581f8c3da153abad4ac6"
+      },
+      {
+        "original_path": "scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py",
+        "original_sha256": "32935c6c56367443f7b913bd5bd4519b52b7c6d033978668fe64a44d259e7700",
+        "recovery": "7c844adf7555a3558729be69179646f6a83a1539:scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8180/scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py",
+        "final_sha256": "70ffeac92d67ffb3ced1bf790154b56b7d91a14ba6798b1261ff1a2412b064ba"
+      }
+    ],
+    "8507": [
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "original_sha256": "764dd893b6a249d588ccad739845588921f16dba4553ae970ab436de7caaee0c",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block36_findings.md",
+        "original_sha256": "afc9d3303d1e09d571bde221abe9f485dc630853d444a7616af7ee1db1a7622a",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block36_findings.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block36_findings.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block36.md",
+        "original_sha256": "9549d1e25de3fb051ebaf5323795cedeca5550b9fa4e0e33baab23298fdac01d",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block36.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block36.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block36.md",
+        "original_sha256": "7c274951e6d01cd4de9f47b2dbf9ad72c6b91370cd5cdcd51d2a72c7b470667e",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block36.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block36.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "original_sha256": "d1098c5bca96086a84be93ef726fb93ca136a558870b8875eb6bd444090c61a2",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "original_sha256": "9c8fb87119d9c34d638c642e3bad47ecb58ded8763d74b35495e1c164058f6fb",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "original_sha256": "052aaf8ca83992ff9bc19ddddadf675ffed71ed82d0167b7665c0fbdb0bb202c",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block36.md",
+        "original_sha256": "ba605df6935f408af0655e02736ec3b270163547054d06667650c657acd4515d",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block36.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block36.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "original_sha256": "3db0902cdedc44b8528bd6dda8ab94eb1d44babbf3992ee53960c509238f831c",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "original_sha256": "b6ace40741aeaf383d495908d46201afe3495d51bc2f45aa5edb683400e24fe9",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "original_sha256": "82700b76f15c12fe9befecdfc0ddbb8a364bbcff23858cc3cf866c8ef1c43eeb",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_memory.out.txt",
+        "original_sha256": "3bcd3480fc1bff6ee7ec60bdeec3794dc195ff989d9684a697bac7bd28ea854f",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_memory.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_memory.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_memory.py",
+        "original_sha256": "bdd28bde6715840f1866c5beb5e7ce9dd1b12f1f331dc51cd0f23cf1d1163b49",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_memory.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_memory.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_refuter.out.txt",
+        "original_sha256": "f520ec7686b03ec5e9b76bb470fc06191f341d7a538bbaef0beb737f3d4fd2e7",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_refuter.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_refuter.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_refuter.py",
+        "original_sha256": "8347e145bc13dbfe31d13380c09c647978490d0ff15173d006fd0f561da19d31",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_refuter.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_refuter.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_response.out.txt",
+        "original_sha256": "abd368ee56d80a648e94781626574a5e45580457755471746da41f3405d7fdf3",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_response.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_response.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_response.py",
+        "original_sha256": "dfd7752b576df12c5ff75f886b9eb787f9846c4dc21ac5d9b51e3b5b47277a74",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_response.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block36_response.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+        "original_sha256": "25702cef2a6418fc600f25592a5624e574f77132824cda05475562a70c41e905",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+        "final_sha256": "2a48708ba534cee105abed3bf28203128e43013e1adb29a3b211671def4505a0"
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_sha256": "7cd76305532fce0cad03405257e943db5e22a92bfe205801332fa7bb3d9835d7",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:docs/audit/data/citation_graph_manifest.json; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/docs/audit/data/citation_graph_manifest.json",
+        "disposition": "regenerated shared citation manifest",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "logs/runner-cache/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.txt",
+        "original_sha256": "bd59d0930cbb74154b9b6d8de4396dd0d92e40c716d58b47aa14daf4ad2b6e3a",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:logs/runner-cache/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/logs/runner-cache/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.txt",
+        "final_sha256": "f85e0b95bdd0aee87669733a499c3463a1955122e44f968321dfb506f887109f"
+      },
+      {
+        "original_path": "scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py",
+        "original_sha256": "2c5f9d7531dfb82d08607f3b75ef4a0fc5d0cb6f6d7dc5fe4eb7e29166779797",
+        "recovery": "0b4d93c55133d72002408e095399cb5c13ce56ee:scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8507/scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py",
+        "final_sha256": "a417c0e5cb0717e04fbc0824e3e3ce1702735e3111b2cf4eb40e8e4979a9df94"
+      }
+    ],
+    "8510": [
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "original_sha256": "f61bbcbe95d7d5c2690fed75c0a6e6ed8b4004378e03059e284b6176244b44ff",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block37_findings.md",
+        "original_sha256": "1d7419ce0e0a15fe2db37ca7484ae71621b523280375de7886dd6535c50b5a86",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block37_findings.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block37_findings.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block37.md",
+        "original_sha256": "439c6f413d0aad907a249fb8f1aa77c063d9bad48730951a24bc3452c5a417fa",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block37.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block37.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block37.md",
+        "original_sha256": "d2e8f69abf7c83a28d3cb04456f9e3d6975dc5bc0f724e6bda350fed1ec3aa2f",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block37.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block37.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "original_sha256": "deffb27035e398d742529ef969214fb06e1615738c3532f38c037d357628a311",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "original_sha256": "cef8e7aba040ad74d2483e6cfe30fa8b241ae856c0a02eda117baaf5ee0a08ad",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "original_sha256": "ccb43b5766edc9d617b15efeb79580a8311280bec375d3262cc1a6b0025c3c1d",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block37.md",
+        "original_sha256": "c00d177c45bff14aaab0d62f8251748705e85b47b4467b6992993ff0c6608b0f",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block37.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block37.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "original_sha256": "d40da2e26bdbd7d4913c8d2a048c393526e3819297906c62259116c7a84b26b9",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "original_sha256": "22e0bfca3f7ca56875be8b117104e585b867c04517a0b71d8772ae79d0197763",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "original_sha256": "6db8fa5d5d4dbe0f23b7e3868a5e4084fe7a344f8f08dc7304e20e446d4446cd",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_family.py",
+        "original_sha256": "658de0dc9d2bf0801af49c40db87c293771643d9fa8c000e3cdc23732b31edf4",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_family.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_family.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_mintree.py",
+        "original_sha256": "b14467ba39166134cdcc2959838ca661c8dffee669085bbf1a5ae66f1f2fdbd0",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_mintree.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_mintree.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_refuter.out.txt",
+        "original_sha256": "70d000a63cf27d1144a2403e3b20072989d2766474278db6cef1656d9dcc9a29",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_refuter.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_refuter.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_refuter.py",
+        "original_sha256": "1b2ae49df6b50b54e06dee97e10d887a788cafd252567cb2b4ba91745c2f488c",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_refuter.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_refuter.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_rooted.py",
+        "original_sha256": "c055937ca72967cfd51270046a71cac02f0af77bda52c47ed38419f477cd2d52",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_rooted.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block37_rooted.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_UNIT_BUDGET_IS_FALSE_ONE_SEED_WITNESS_WITH_FAMILY_CONSTANT_TEN_NINTHS_TIGHT_SIBLING_LEMMA_REFUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+        "original_sha256": "b248d44d48c32caec21bfca7653d29b0afec7ed7b9238df91362251fbfa995a4",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_UNIT_BUDGET_IS_FALSE_ONE_SEED_WITNESS_WITH_FAMILY_CONSTANT_TEN_NINTHS_TIGHT_SIBLING_LEMMA_REFUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_UNIT_BUDGET_IS_FALSE_ONE_SEED_WITNESS_WITH_FAMILY_CONSTANT_TEN_NINTHS_TIGHT_SIBLING_LEMMA_REFUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_UNIT_BUDGET_IS_FALSE_ONE_SEED_WITNESS_WITH_FAMILY_CONSTANT_TEN_NINTHS_TIGHT_SIBLING_LEMMA_REFUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+        "final_sha256": "46bfb2cc1e7051f7c7e0947e8ee9cec992f7361f458aae57746e46259af1fb96"
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_sha256": "b785a629924e48e45d27e7d37799ba15539acf2feac2a2017d10ce3965ac9618",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:docs/audit/data/citation_graph_manifest.json; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/docs/audit/data/citation_graph_manifest.json",
+        "disposition": "regenerated shared citation manifest",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "logs/runner-cache/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.txt",
+        "original_sha256": "a7be0293a1ed47d7c4b3ec5a16b1d496fd60c626ece2a96fe0d99c003f027bcd",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:logs/runner-cache/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/logs/runner-cache/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.txt",
+        "final_sha256": "6685fd2e6ca0324480d6715d1615b9887e5f0a5bef1f33f1b6d9f66b0e110682"
+      },
+      {
+        "original_path": "scripts/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.py",
+        "original_sha256": "7f18da4ed122b2be5f315a3af6623e2d2d84a26a73e07df2f9ee6e6587944822",
+        "recovery": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d:scripts/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8510/scripts/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.py",
+        "final_sha256": "114f926a6fe64df796b1442483ddef1c603df064620bd0928e081adbb95ef3d0"
+      }
+    ],
+    "8512": [
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "original_sha256": "b5b6574552c5b9a0256acffe8dfb1241b0fabc524d033e41c3f63ba4d55cf091",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block38_findings.md",
+        "original_sha256": "4893db42464444cb6dda71f3e380489411effadc08b258c74e06dade1031c7f1",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block38_findings.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block38_findings.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block38.md",
+        "original_sha256": "614554d75bc0e1bc50b9df4edd6fd3dda3f08d24f9a83a07907cfd388b3f80de",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block38.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block38.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block38.md",
+        "original_sha256": "7960e149e546f7ba02783d9f702167e708f9d2e8af4c16dda19abeaf64f99266",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block38.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block38.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "original_sha256": "d47d0035ca5138926cd4b745caa3553d891099b8a91b7816137b06a1534e5efc",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "original_sha256": "d17a450d6813c85e66c67193a763af444c1f83ee0dd3e58be5e3703ce16e9fd6",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "original_sha256": "d1b7a2d9d18b825c3ae8df2b66c2db5609c3648c56c51a5077d1d95bedf9724c",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block38.md",
+        "original_sha256": "0f6cab5ee581eba5e57cd421f7bc711eb85ee260941cdbeb3243e637582ded11",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block38.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block38.md",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "original_sha256": "f1e1ff6925fee8fc6eb7a689fea79a380345e7d40feb2294f3d98a291938237f",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "original_sha256": "a7c03d25b1be7727372e09a87d84012d6c3b4de026ec05ee2a315af414235eea",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "original_sha256": "10f00b60ca165f3826b25a071a45fd3ad3321dbc8d31dfb3e59654257fef425d",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "disposition": "campaign process state excluded; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block38_refuter.out.txt",
+        "original_sha256": "316b62856ebd9fc06437aae42fbb46eee2193a9cd3db0db6b45544a168f63716",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block38_refuter.out.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block38_refuter.out.txt",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block38_refuter.py",
+        "original_sha256": "a090954248259dd4fe06fdd0cd2847645e151bba607eb5fe337874ced4cf70a7",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block38_refuter.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block38_refuter.py",
+        "disposition": "deferred historical calculation/support; preserve branch",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "docs/ADMISSIBILITY_RULE_HOW_RECORDS_FORM_STATIC_LAW_OUTSIDE_THE_HULL_OF_ADAPTED_FORMATION_LAWS_AND_CLAUSE_INDEPENDENCE_ON_A_CAUSAL_PREDECESSOR_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+        "original_sha256": "0f5f233b823a5ac997a38a11eee14ccc14d8d6ed8fed4414dee2cf6f901b0f69",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:docs/ADMISSIBILITY_RULE_HOW_RECORDS_FORM_STATIC_LAW_OUTSIDE_THE_HULL_OF_ADAPTED_FORMATION_LAWS_AND_CLAUSE_INDEPENDENCE_ON_A_CAUSAL_PREDECESSOR_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-09-20.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/docs/ADMISSIBILITY_RULE_HOW_RECORDS_FORM_STATIC_LAW_OUTSIDE_THE_HULL_OF_ADAPTED_FORMATION_LAWS_AND_CLAUSE_INDEPENDENCE_ON_A_CAUSAL_PREDECESSOR_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/ADMISSIBILITY_RULE_HOW_RECORDS_FORM_STATIC_LAW_OUTSIDE_THE_HULL_OF_ADAPTED_FORMATION_LAWS_AND_CLAUSE_INDEPENDENCE_ON_A_CAUSAL_PREDECESSOR_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+        "final_sha256": "aff1a5827ab733c9581dac6fdc49859adfedf589b29eead87f45aa248e8fa294"
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_sha256": "d74ec717c82e65482fac92d2cf0f316334c2080184d4dc3994526bcbbf682788",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:docs/audit/data/citation_graph_manifest.json; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/docs/audit/data/citation_graph_manifest.json",
+        "disposition": "regenerated shared citation manifest",
+        "final_path": null,
+        "final_sha256": null,
+        "recovery_branch": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+        "note": "Not certified by this canonical review; no useful calculation silently discarded."
+      },
+      {
+        "original_path": "logs/runner-cache/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.txt",
+        "original_sha256": "5df73e398f8255b32a5f67eaa6fccee3c3e26481f78d8a1296441dcc8deacc50",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:logs/runner-cache/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/logs/runner-cache/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.txt",
+        "final_sha256": "4b3a6e8572874459355424b198a8237578da8e55f0073c64df1b11fdcf7107ab"
+      },
+      {
+        "original_path": "scripts/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.py",
+        "original_sha256": "8aad6f4f0bb486de5f987cc94c5b063258aa2988c8be9be5ea853d575c7869e3",
+        "recovery": "94a63b77f61a88f787f3a03b939bc79986231d15:scripts/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8512/scripts/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.py",
+        "final_sha256": "c92d9d02679eb93d85d4648b2a08bbf5247ccbcecbe64f39e5b3738a9965d8b4"
+      }
+    ],
+    "8637": [
+      {
+        "original_path": "docs/MENUS_AND_BORN_STABILIZER_DEGENERATE_SUPPORTS_ANTIPODAL_WEIGHT_CLASS_AND_NON_AFFINE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "86dbd72a529a5c0c6645cb75547a6f2ae23695ba48f1735a95324c8f0d2fbe1a",
+        "recovery": "c8939d0f53417ac3945382d67676dba5f0c403a7:docs/MENUS_AND_BORN_STABILIZER_DEGENERATE_SUPPORTS_ANTIPODAL_WEIGHT_CLASS_AND_NON_AFFINE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8637/docs/MENUS_AND_BORN_STABILIZER_DEGENERATE_SUPPORTS_ANTIPODAL_WEIGHT_CLASS_AND_NON_AFFINE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/MENUS_AND_BORN_STABILIZER_DEGENERATE_SUPPORTS_ANTIPODAL_WEIGHT_CLASS_AND_NON_AFFINE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "c871fd6103ce347060c91fc707638b86f5def648bf5c3b44eb74049ccbeed35d"
+      },
+      {
+        "original_path": "logs/runner-cache/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.txt",
+        "original_sha256": "437d327f528c2d3b9b59d5d1c00a1477949f5b79f391d127465c249da814ecd2",
+        "recovery": "c8939d0f53417ac3945382d67676dba5f0c403a7:logs/runner-cache/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8637/logs/runner-cache/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.txt",
+        "final_sha256": "ad70488c53c40044f0620a56e74d16d9ae88f747ec788773f0e7244dd8977a0e"
+      },
+      {
+        "original_path": "scripts/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.py",
+        "original_sha256": "0e79ffcd0424c433fd8601f5b15d0008cd903f0f3affc5fc4466d09015f4d2fd",
+        "recovery": "c8939d0f53417ac3945382d67676dba5f0c403a7:scripts/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8637/scripts/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.py",
+        "final_sha256": "396a2cfddd13465dfdad5f00fef4ac970a704fba7829c421c37742445fdfb696"
+      }
+    ],
+    "8641": [
+      {
+        "original_path": "docs/CLOCK_AND_RATE_COVARIANT_EXPONENTIAL_RACES_RECORD_LEVEL_INVISIBILITY_FOR_ORDER_BLIND_RULES_AND_CLOCK_SENSITIVE_HOLE_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "a16855f218d1397262afde639594cc1d897960b55a37bb3db8d9b8f6d38eb7bc",
+        "recovery": "10f826fc3793f35b5da7884531d048566494e871:docs/CLOCK_AND_RATE_COVARIANT_EXPONENTIAL_RACES_RECORD_LEVEL_INVISIBILITY_FOR_ORDER_BLIND_RULES_AND_CLOCK_SENSITIVE_HOLE_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8641/docs/CLOCK_AND_RATE_COVARIANT_EXPONENTIAL_RACES_RECORD_LEVEL_INVISIBILITY_FOR_ORDER_BLIND_RULES_AND_CLOCK_SENSITIVE_HOLE_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/CLOCK_AND_RATE_COVARIANT_EXPONENTIAL_RACES_RECORD_LEVEL_INVISIBILITY_FOR_ORDER_BLIND_RULES_AND_CLOCK_SENSITIVE_HOLE_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "912fc564bd59fc0928a902589a284b579603c747aecd4d35dd26a5b9c261b606"
+      },
+      {
+        "original_path": "logs/runner-cache/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.txt",
+        "original_sha256": "dd64faef6aaf65827139e7129100d0aadf6dec6c027a70cba94c05f1389a2d2a",
+        "recovery": "10f826fc3793f35b5da7884531d048566494e871:logs/runner-cache/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8641/logs/runner-cache/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.txt",
+        "final_sha256": "0c4546189acf1ef8568f776528622e9189b28380311d3c3cbdd03d7d0e7f9afe"
+      },
+      {
+        "original_path": "scripts/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.py",
+        "original_sha256": "99f8ddc195aaad8955973eeff20b108dc45ad11e7e492db30a863655d58811a1",
+        "recovery": "10f826fc3793f35b5da7884531d048566494e871:scripts/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8641/scripts/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.py",
+        "final_sha256": "91510cb6a11ef8db7c323226f8874d60c0792d7c7268ebf742e9f9d870a76d28"
+      }
+    ],
+    "8646": [
+      {
+        "original_path": "docs/RECORD_DYNAMICS_FINISHED_RECORD_CORRELATORS_AGAINST_PROPAGATION_KERNELS_NEAREST_NEIGHBOUR_SENTENCE_EXCLUDES_LONG_RANGE_PAIRS_AND_GLUED_SUPPORT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "f1ae0cd8b621812e6eb93ddab6e269e24d3454bff83ceb89e5be32e604f06ab5",
+        "recovery": "30fc512cb7c76d877f023fa8c94cad9851b7fa4c:docs/RECORD_DYNAMICS_FINISHED_RECORD_CORRELATORS_AGAINST_PROPAGATION_KERNELS_NEAREST_NEIGHBOUR_SENTENCE_EXCLUDES_LONG_RANGE_PAIRS_AND_GLUED_SUPPORT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8646/docs/RECORD_DYNAMICS_FINISHED_RECORD_CORRELATORS_AGAINST_PROPAGATION_KERNELS_NEAREST_NEIGHBOUR_SENTENCE_EXCLUDES_LONG_RANGE_PAIRS_AND_GLUED_SUPPORT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/RECORD_DYNAMICS_FINISHED_RECORD_CORRELATORS_AGAINST_PROPAGATION_KERNELS_NEAREST_NEIGHBOUR_SENTENCE_EXCLUDES_LONG_RANGE_PAIRS_AND_GLUED_SUPPORT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "d861e135f5e05a04663b9421ecdbccce16561672cfe81818588e3efd66d92f22"
+      },
+      {
+        "original_path": "logs/runner-cache/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.txt",
+        "original_sha256": "2b9b18ee16bf86f86415a6eca97b61044b51b43d8ebec30c966dd0d1db9dce4a",
+        "recovery": "30fc512cb7c76d877f023fa8c94cad9851b7fa4c:logs/runner-cache/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8646/logs/runner-cache/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.txt",
+        "final_sha256": "be81865a0b951cc2473491ef3a08fc7b1d7b63c78933e458ff7cd54ada835988"
+      },
+      {
+        "original_path": "scripts/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.py",
+        "original_sha256": "ddea90335e042e884d93225be33772c76fc84a0f9a046f6281305d9026236a17",
+        "recovery": "30fc512cb7c76d877f023fa8c94cad9851b7fa4c:scripts/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8646/scripts/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.py",
+        "final_sha256": "402bddbe507bd62d91f3c8da8aa86b5d714cb1ad00f168f3a3d8e2f1cda061c7"
+      }
+    ],
+    "8859": [
+      {
+        "original_path": "docs/UNIFORM_ICE_FLUX_STIFFNESS_ON_A_SQUARE_CROSS_SECTION_BY_ROW_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "92c6033273c166ff4579e2150a3f7683ed0231b47147ec30d6202ded10ea7b22",
+        "recovery": "d860c230eeefea9ea53ab534e823892d1c1a9f98:docs/UNIFORM_ICE_FLUX_STIFFNESS_ON_A_SQUARE_CROSS_SECTION_BY_ROW_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8859/docs/UNIFORM_ICE_FLUX_STIFFNESS_ON_A_SQUARE_CROSS_SECTION_BY_ROW_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_FLUX_STIFFNESS_ON_A_SQUARE_CROSS_SECTION_BY_ROW_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "e983842e4e127a11fdc5bbf357271c2dc63a59f352f714b4dad423b325895f22"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.txt",
+        "original_sha256": "50a94e939bb870f57a42db0410e72f820f678c4f142c4103458cc6ae76aeb529",
+        "recovery": "d860c230eeefea9ea53ab534e823892d1c1a9f98:logs/runner-cache/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8859/logs/runner-cache/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.txt",
+        "final_sha256": "87b21fc763dd98aadd5818a25e72e4737fde77469540fcbea731e02207e0da3f"
+      },
+      {
+        "original_path": "scripts/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.py",
+        "original_sha256": "d9c93dcc96136036a3544c35bdfd07f49c3279c8e63304e616058def2c9e44db",
+        "recovery": "d860c230eeefea9ea53ab534e823892d1c1a9f98:scripts/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8859/scripts/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.py",
+        "final_sha256": "a5156ceab3982becf41e2cc4d24abd2c7de96294fb555d9bef62150c6c04b722"
+      }
+    ],
+    "8864": [
+      {
+        "original_path": "docs/UNIFORM_ICE_ZERO_FLUX_LAYER_CHAIN_GAP_CLOSES_AS_THE_SMALLEST_TRANSVERSE_WAVENUMBER_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "f34b3e6a342d450d8fc8efdb40b48d18352eb2f57bde00f1002dddf606875f0e",
+        "recovery": "985cacab05523f44fded04e8a3e0ac594edfb1c4:docs/UNIFORM_ICE_ZERO_FLUX_LAYER_CHAIN_GAP_CLOSES_AS_THE_SMALLEST_TRANSVERSE_WAVENUMBER_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8864/docs/UNIFORM_ICE_ZERO_FLUX_LAYER_CHAIN_GAP_CLOSES_AS_THE_SMALLEST_TRANSVERSE_WAVENUMBER_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "disposition": "narrowed with useful proofs/results retained",
+        "final_path": "docs/UNIFORM_ICE_ZERO_FLUX_LAYER_CHAIN_GAP_CLOSES_AS_THE_SMALLEST_TRANSVERSE_WAVENUMBER_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "e72e15dd129c24dc9220916733f1dcce7049eddff3b681e7aa8ae1e7ff29d161"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_2026_09_23.txt",
+        "original_sha256": "2095ae446367d35be1f3ec0a361235f67791dff8901e440f7557735aca4a50c1",
+        "recovery": "985cacab05523f44fded04e8a3e0ac594edfb1c4:logs/runner-cache/uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8864/logs/runner-cache/uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_2026_09_23.txt",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_2026_09_23.txt",
+        "final_sha256": "5a56707c296f9737eba8c7c8ebf0626f62ef3a81c4a4b61a6e1bda27b8563bac"
+      },
+      {
+        "original_path": "scripts/uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_2026_09_23.py",
+        "original_sha256": "35abd1ec98ea9c9ebb7d9e528d1d9198f3f8da52d5eeaffddb91a3e94b43f67e",
+        "recovery": "985cacab05523f44fded04e8a3e0ac594edfb1c4:scripts/uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit5-originals/8864/scripts/uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_2026_09_23.py",
+        "disposition": "corrected controls and fresh evidence",
+        "final_path": "scripts/uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_2026_09_23.py",
+        "final_sha256": "e688de2e38c6a9501a763ae2aac9afca2044a7fd8a31fda69c4d8bc2ce2a362e"
+      }
+    ]
+  },
+  "claim_dispositions": {
+    "8178": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R1",
+        "U5-R3",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    },
+    "8180": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R1",
+        "U5-R2",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    },
+    "8507": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R1",
+        "U5-R4",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    },
+    "8510": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R5",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    },
+    "8512": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R5",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    },
+    "8637": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R6",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    },
+    "8641": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R6",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    },
+    "8646": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R6",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    },
+    "8859": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R7",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    },
+    "8864": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U5-R7",
+        "U5-R8"
+      ],
+      "deferred_content": "Historical auxiliary calculations, nonlinear/physical/asymptotic extensions are deferred. Original AIL branches preserved for explicit recovery; no auxiliary result certified by this review."
+    }
+  }
+}

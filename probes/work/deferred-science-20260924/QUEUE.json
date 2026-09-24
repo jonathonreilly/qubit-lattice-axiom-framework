@@ -1,0 +1,224 @@
+[
+  {
+    "task": "J:derive:deferred-20260924-formation:a1",
+    "batch": 5,
+    "title": "Formation laws and nonlinear scaling",
+    "target": "Start with PR8178: separate the corrected linear transient proxy from the still-unproved nonlinear memory/scaling law. Recover auxiliary calculations only if they bear on an explicit gap in that distinction.",
+    "related_problem_names": [
+      "corrigendum-PR8178",
+      "corrigendum-PR8180",
+      "formation-response-kernel",
+      "plane-memory-loss-2"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:formation-response-kernel:a1",
+      "J:derive:formation-response-kernel:a2",
+      "J:derive:formation-response-kernel:a3",
+      "J:derive:formation-response-kernel:a4",
+      "J:derive:formation-response-kernel:a5",
+      "J:derive:formation-response-kernel:a6",
+      "J:derive:plane-memory-loss-2:a1",
+      "J:derive:plane-memory-loss-2:a2",
+      "J:derive:plane-memory-loss-2:a3",
+      "J:derive:plane-memory-loss-2:a4",
+      "J:derive:corrigendum-PR8178:a1",
+      "J:derive:corrigendum-PR8178:a2",
+      "J:derive:corrigendum-PR8180:a1",
+      "J:derive:corrigendum-PR8180:a2"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-transport:a1",
+    "batch": 6,
+    "title": "Record transport, capture and anisotropy",
+    "target": "Start with PR8558: determine whether a deferred collision calculation supplies an actual isotropization mechanism under the stated streaming law, or an exact counterexample. Preserve the landed cubic-viscosity correction.",
+    "related_problem_names": [
+      "collisional-viscosity-and-eta",
+      "isotropic-streaming-clause",
+      "inertial-gas-viscosity-and-damping"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:inertial-gas-viscosity-and-damping:a1",
+      "J:derive:inertial-gas-viscosity-and-damping:a2",
+      "J:derive:inertial-gas-viscosity-and-damping:a3",
+      "J:derive:inertial-gas-viscosity-and-damping:a4",
+      "J:derive:collisional-viscosity-and-eta:a1",
+      "J:derive:collisional-viscosity-and-eta:a2",
+      "J:derive:collisional-viscosity-and-eta:a3",
+      "J:derive:isotropic-streaming-clause:a1",
+      "J:derive:isotropic-streaming-clause:a2",
+      "J:derive:isotropic-streaming-clause:a3"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-ledger:a1",
+    "batch": 7,
+    "title": "Local energy ledgers and source closure",
+    "target": "Start with PR8593/8595/8596: inspect the deferred q-only no-go and the missing site-to-face transfer. Choose one literal finite identity or obstruction that is still missing; do not infer field existence from divergence compatibility.",
+    "related_problem_names": [
+      "a-bond-placed-stress-for-the-walk",
+      "the-ledgers-force-identity-exactly-on-the-lattice",
+      "a-ledger-that-reads-bond-energies"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:a-bond-placed-stress-for-the-walk:a1",
+      "J:derive:a-bond-placed-stress-for-the-walk:a2",
+      "J:derive:a-bond-placed-stress-for-the-walk:a3",
+      "J:derive:the-ledgers-force-identity-exactly-on-the-lattice:a1",
+      "J:derive:the-ledgers-force-identity-exactly-on-the-lattice:a2",
+      "J:derive:a-ledger-that-reads-bond-energies:a1",
+      "J:derive:a-ledger-that-reads-bond-energies:a2"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-species:a1",
+    "batch": 8,
+    "title": "Species, signed rays and field compatibility",
+    "target": "Start with PR8599/8601/8602: test the gap between a uniform-symbol branch-label symmetry and varying-field spectral degeneracy. Recover a deferred finite construction or demonstrate precisely why it does not extend.",
+    "related_problem_names": [
+      "are-the-eight-species-all-kept",
+      "all-eight-species-under-the-three-couplings",
+      "the-blind-walk-beyond-first-order"
+    ],
+    "related_existing_task_ids": [
+      "C:all-eight-species-under-the-three-couplings:a1",
+      "C:all-eight-species-under-the-three-couplings:a2",
+      "J:derive:the-blind-walk-beyond-first-order:a1",
+      "J:derive:the-blind-walk-beyond-first-order:a2",
+      "J:derive:are-the-eight-species-all-kept:a1",
+      "J:derive:are-the-eight-species-all-kept:a2",
+      "J:derive:are-the-eight-species-all-kept:a3"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-stability:a1",
+    "batch": 9,
+    "title": "Stability, crowd thresholds and wall spectra",
+    "target": "Start with the review finding on restricted Hessians and unexamined directions. Extract one exact omitted direction or endpoint from the frozen source and establish its sign or a counterexample; a finite fit is not a global stability theorem.",
+    "related_problem_names": [
+      "the-record-gas-chessboard-threshold",
+      "the-two-wall-level-rule-on-every-ring",
+      "the-reach-three-coupling-beyond-first-order"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:the-reach-three-coupling-beyond-first-order:a1",
+      "J:derive:the-reach-three-coupling-beyond-first-order:a2",
+      "J:derive:the-reach-three-coupling-beyond-first-order:a3",
+      "J:derive:the-two-wall-level-rule-on-every-ring:a1",
+      "J:derive:the-two-wall-level-rule-on-every-ring:a2",
+      "J:derive:the-record-gas-chessboard-threshold:a1",
+      "J:derive:the-record-gas-chessboard-threshold:a2"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-clock:a1",
+    "batch": 10,
+    "title": "Clocked walks, topology and endpoint domains",
+    "target": "Start with the endpoint-domain material: identify what auxiliary source contributes beyond the corrected imported endpoint theorem and finite-stencil checks. Work one missing infinite-domain hypothesis or report the exact remaining supplier; do not treat finite stencils as self-adjointness proofs.",
+    "related_problem_names": [
+      "the-clocked-walk-in-an-exponential-field-self-adjoint-realizations",
+      "the-alternations-walls-under-the-scalar-hop"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:the-alternations-walls-under-the-scalar-hop:a1",
+      "J:derive:the-alternations-walls-under-the-scalar-hop:a2",
+      "J:derive:the-clocked-walk-in-an-exponential-field-self-adjoint-realizations:a1",
+      "J:derive:the-clocked-walk-in-an-exponential-field-self-adjoint-realizations:a2"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-formation-packets:a1",
+    "batch": 12,
+    "title": "Mobile-record formation and excluded cooling source",
+    "target": "Start with PR8635 excluded cooling calculations. Recover the stated cooling model and the specific finite control, distinguish it from the landed geometry/divergence proof, and derive or falsify one scoped claim using explicit assumptions.",
+    "related_problem_names": [
+      "formation-events-for-amplitudes-of-negative-energy",
+      "re-recording"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:re-recording:a1",
+      "J:derive:re-recording:a2",
+      "J:derive:re-recording:a3",
+      "J:derive:re-recording:a4",
+      "J:derive:formation-events-for-amplitudes-of-negative-energy:a1",
+      "J:derive:formation-events-for-amplitudes-of-negative-energy:a2"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-spin-packets:a1",
+    "batch": 13,
+    "title": "Finite-spin tails and saved-vector evidence",
+    "target": "Start with PR8839 saved-vector replay. Recover the high-spin input provenance, reproduce one actual-output claim independently, and state what it adds beyond the landed analytic bounds. Historical vectors alone do not establish a uniform theorem.",
+    "related_problem_names": [
+      "composite-bodies-rest-energy-without-a-larger-site-algebra"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a1",
+      "J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a2",
+      "J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a3",
+      "J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a4"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-star-packets:a1",
+    "batch": 14,
+    "title": "Electric-star preparation and uniform supply",
+    "target": "Start with PR8923/8929/8936 auxiliary supply and clock work. Identify one statement beyond the landed common-preparation Duhamel bound and exact buffered battery operation. Derive its missing condition or an exact finite obstruction, keeping preparation and physical occurrence distinct.",
+    "related_problem_names": [
+      "composite-bodies-rest-energy-without-a-larger-site-algebra",
+      "the-rest-energy-of-a-record"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a1",
+      "J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a2",
+      "J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a3",
+      "J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a4",
+      "J:derive:the-rest-energy-of-a-record:a1",
+      "J:derive:the-rest-energy-of-a-record:a2"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-residuals:a1",
+    "batch": 15,
+    "title": "Rotor tails and ray/body physical identifications",
+    "target": "Start with PR8960: isolate the unsupported GR mass/stress identification or unproved lattice-error order from the valid conditional two-charge ray theorem. Choose one explicit missing step and establish a bounded result or counterexample; alternatively recover a genuinely distinct rotor-tail residual from PR8957/8958.",
+    "related_problem_names": [
+      "internal-hop-energy-and-the-two-masses",
+      "p-equals-q-for-compact-and-strong-bodies",
+      "bending-over-fall-at-strong-field"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:internal-hop-energy-and-the-two-masses:a1",
+      "J:derive:internal-hop-energy-and-the-two-masses:a2",
+      "J:derive:bending-over-fall-at-strong-field:a1",
+      "J:derive:bending-over-fall-at-strong-field:a2",
+      "J:derive:p-equals-q-for-compact-and-strong-bodies:a1",
+      "J:derive:p-equals-q-for-compact-and-strong-bodies:a2"
+    ],
+    "status": "queued-first-pass"
+  },
+  {
+    "task": "J:derive:deferred-20260924-assembly:a1",
+    "batch": 15,
+    "title": "Assembly graph versus physical necessity",
+    "target": "PR8648 has no unmapped files, but stronger physical necessity/completion assertions were deferred. Choose one arrow in its frozen 117-node/40-menu graph: inspect its cited source and derive the required physical implication with premises explicit, or exhibit the missing premise. Boolean reachability itself is already landed.",
+    "related_problem_names": [
+      "axioms-and-the-event-lattice"
+    ],
+    "related_existing_task_ids": [
+      "J:derive:axioms-and-the-event-lattice:a1",
+      "J:derive:axioms-and-the-event-lattice:a2",
+      "J:derive:axioms-and-the-event-lattice:a3"
+    ],
+    "status": "queued-first-pass"
+  }
+]

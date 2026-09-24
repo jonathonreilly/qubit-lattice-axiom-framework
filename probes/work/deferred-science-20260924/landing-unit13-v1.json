@@ -1,0 +1,65 @@
+{
+  "unit_id": "postbirth-rings-cube-and-spin-four-20260924",
+  "reviewed_prs": [
+    {
+      "id": "PR8831",
+      "head": "b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953",
+      "delta_base": "fe6dc2c5ef061fa1e0051063d49178f23b872c13",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8831",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit13-v1.json",
+        "sha256": "10b6e59facdc65b6fa6fd55584bd164de0dcfc33da2377aeec5d4213698bd0cf"
+      }
+    },
+    {
+      "id": "PR8832",
+      "head": "7013db3809221268780ffff04b716075d1e53626",
+      "delta_base": "a3e590014f4ce1887e5d60d592a0faa28e024ec7",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8832",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit13-v1.json",
+        "sha256": "10b6e59facdc65b6fa6fd55584bd164de0dcfc33da2377aeec5d4213698bd0cf"
+      }
+    },
+    {
+      "id": "PR8839",
+      "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+      "delta_base": "7013db3809221268780ffff04b716075d1e53626",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8839",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit13-v1.json",
+        "sha256": "10b6e59facdc65b6fa6fd55584bd164de0dcfc33da2377aeec5d4213698bd0cf"
+      }
+    },
+    {
+      "id": "PR8943",
+      "head": "2687409722dd5e559177015c80db339508f51b18",
+      "delta_base": "b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953",
+      "dispositions": {
+        "json_pointer": "/original_dispositions/8943",
+        "path": "/private/tmp/cl3-review-evidence-20260923/review-unit13-v1.json",
+        "sha256": "10b6e59facdc65b6fa6fd55584bd164de0dcfc33da2377aeec5d4213698bd0cf"
+      }
+    }
+  ],
+  "base": "9d8596c758f116c572bcc5ee46cfe58ec07701da",
+  "tree": "c9beff1b8887423d210de8eab841e5ba95ec7127",
+  "candidate_commit": "d7a3aa92b0b2f99e9a451efbbccda77de4625f68",
+  "confirmation_sha256": "73f14fb116afcb934408f2f1208c66d9985bd16565e902031b1785136eedee7d",
+  "source_record_sha256": "8e793cb14225a779656372e4f626e32c341c2a667e3b6bfb405a953289c39bbd",
+  "logs": {
+    "pipeline-unit13-v1.log": "98b0f1bf36e62f90b473293e7a984e4e1a0fe4a09dc162112fb86a9dc347d144",
+    "strict-unit13-v1.log": "2072a21166057be7d7091f395fac9c1da18e104ff088c823c8838b8faea214c1",
+    "changed-evidence-unit13-v1.log": "fb816e2ed8a1a516472c888eb74740b02239c2b8ebcd19c47f2febe66af8a700",
+    "cleanup-unit13-v1.log": "2e0422aa970858d0abfc2bdfd6d7fad446d2a9667c02185ea2f555b5bec98022",
+    "final-graph-unit13-v1.log": "6da1720034ec0857b8551556d62a8eda0c7347a507778d111bab004966434388"
+  },
+  "validation": "PASS; pipeline exit 0; strict lint exit 0; changed evidence checked 11, failures 0, control_failures 0",
+  "push_status": "landed and all 57 final source/evidence blobs verified on origin/main",
+  "additional_controls": {
+    "independent-unit13-tensor.json": "9697bcf79bedd9ca47ec7d71267a124c1a074de7405ae4f8d9755944c22320ea",
+    "independent-unit13-flat.json": "b607bdca5a576fe2ad56caeba19387ba52070779b5b27c1284283cc3d762109e",
+    "independent-unit13-postmark.json": "ffbecfdf4c72f789518340741ded4bc2c9d3c0eba713686db411bfc48aaa4f03",
+    "mutations-unit13-results.json": "3c710691476d1ad7c9d726555b286a009b5794c118a6dbf65a29ca16f9b456c0"
+  }
+}

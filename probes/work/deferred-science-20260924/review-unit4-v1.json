@@ -1,0 +1,460 @@
+{
+  "unit_id": "ice-formation-transfer-ten-20260923",
+  "reviewer": "Current primary Codex session; user prohibits subagents. Original authors separate; same-session focused fix confirmation, no separate fix reviewer or audit.",
+  "verdict": "FINAL VERDICT: PASS",
+  "skill_commit": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "status": "science source confirmed; mechanical preflight and combined gate pending",
+  "findings": [
+    {
+      "id": "U4-R1",
+      "prs": [
+        8746,
+        8740,
+        8735,
+        8727,
+        8726,
+        8720,
+        8719,
+        8715,
+        8701,
+        8698
+      ],
+      "class": "OVERCLAIM",
+      "finding": "Finite supplied ice models do not establish physical selection, photons or infinite-cross-section behavior.",
+      "resolution": "Retain explicit conditional proofs and finite counts, narrow unsupported campaign implications, distinguish coarse layer model from fine-site scheduling."
+    },
+    {
+      "id": "U4-R2",
+      "prs": [
+        8698
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Hard specification at null events, variance versus second moment, finite eps ratio and incorrect locality test count.",
+      "resolution": "State support-wise compatibility; prove positive finite-joint uniqueness and limiting concentration, label ratio empirical, assert second moment76/25 and count2880."
+    },
+    {
+      "id": "U4-R3",
+      "prs": [
+        8701,
+        8726
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Finite occupation checks alone do not prove slope; damped-or-rigid rhetoric excludes mixed reducible matrices incorrectly.",
+      "resolution": "Give stationary covariance plus summable transient proof; state fresh draws and fair inflow; add exact diag(1,J2/2) mixed-mode counterexample and narrow spectral cases."
+    },
+    {
+      "id": "U4-R4",
+      "prs": [
+        8715,
+        8719,
+        8720,
+        8727,
+        8735
+      ],
+      "class": "IMPORTED_VALUE",
+      "finding": "Local conditional criterion does not supply a universal covariant rule or classify adaptive orders/hidden private leaves.",
+      "resolution": "Explicit fixed orders, fresh conditional draws, possibly site/stage-specific kernels and marginal grid-record target. No hidden-scheme or adaptive-order exclusion."
+    },
+    {
+      "id": "U4-R5",
+      "prs": [
+        8715,
+        8719,
+        8720,
+        8727,
+        8735
+      ],
+      "class": "OVERCLAIM",
+      "finding": "One maximizing witness is not a classification of every maximum; one cylinder failure is not universal open-axis necessity; U pentomino induces six squares.",
+      "resolution": "Retain size bounds and an attaining witness; scope cylinder and coordinator variants; distinguish20 larger induced windows from actual square counts. Five plain-search comparisons plus a sixth known-order control."
+    },
+    {
+      "id": "U4-R6",
+      "prs": [
+        8740,
+        8746
+      ],
+      "class": "PROOF_OBLIGATION",
+      "finding": "Even transverse bipartiteness, stationary initialization, uniform completions, exact versus numeric eigenvalues, and three-point asymptotic inference.",
+      "resolution": "Declare premises, include phi-squared initialization and uniform completions, add exact nonzero-sector Newton certificates, distinguish numerical estimates and finite coefficient pattern. Independent exact Collatz bounds certify radius ordering and broad coefficient bounds."
+    },
+    {
+      "id": "U4-R7",
+      "prs": [
+        8746,
+        8740,
+        8735,
+        8727,
+        8726,
+        8720,
+        8719,
+        8715,
+        8701,
+        8698
+      ],
+      "class": "EVIDENCE",
+      "finding": "Weakly asserted table values, unchecked integer limits and missing canonical cache scope.",
+      "resolution": "Add key count/max/second-step assertions, integer accumulation guards, explicit900-second budgets and five scope lines, resolve actual dependency links, recapture every runner."
+    }
+  ],
+  "coverage": "Reviewed all ten full runner implementations (shared planar/cube core verified identical), claim scopes, retained proofs and consequential revisions. Kept useful finite computations and proofs; replaced unsupported campaign implications and historical author-review narrative with current scope. Ten fresh runners pass. Independent1280 integer conditional tests on40 weighted laws check closure against exhaustive reachable sets; conditional second moments use new interior p values; scalar enumeration checks every2x2 transfer entry; exact positive-vector Collatz bounds check all sectors of all three cross-sections. Ten consequential mutations trigger original FAIL checks; bounded-prefix exit0 does not mean survival. No other historical mutation claims are adopted.",
+  "original_dispositions": {
+    "8746": [
+      {
+        "original_path": "docs/UNIFORM_ICE_LAYER_TRANSFER_FLUX_SECTORS_CARRY_A_GAUSSIAN_STIFFNESS_INVERSE_IN_THE_CROSS_SECTION_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "7e2e84cf3eb34ebedc237f5f5f6db9e827b3c749d37f66acc5f9f5a260751a0e",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/UNIFORM_ICE_LAYER_TRANSFER_FLUX_SECTORS_CARRY_A_GAUSSIAN_STIFFNESS_INVERSE_IN_THE_CROSS_SECTION_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "b5df40c7e262779f559837827f0d755789bbbf6180b0118fdc023a2937d69c15",
+        "recovery": "d6115a174248ab9c6ff5ee92ba38787c6ae1b849:docs/UNIFORM_ICE_LAYER_TRANSFER_FLUX_SECTORS_CARRY_A_GAUSSIAN_STIFFNESS_INVERSE_IN_THE_CROSS_SECTION_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8746/docs/UNIFORM_ICE_LAYER_TRANSFER_FLUX_SECTORS_CARRY_A_GAUSSIAN_STIFFNESS_INVERSE_IN_THE_CROSS_SECTION_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.txt",
+        "original_sha256": "0d1fc557f073d2f11d20639c13307e6db647bdebbf00e35a32de1f936e5debba",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.txt",
+        "final_sha256": "30745cb6f078d91233d3d5949d7dc55b11e2f2225275710fc8b455a8faba1837",
+        "recovery": "d6115a174248ab9c6ff5ee92ba38787c6ae1b849:logs/runner-cache/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8746/logs/runner-cache/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.py",
+        "original_sha256": "5990e60c225fbc95e883c7350881de954ada38558f3032debfccd90b9b3e11ed",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.py",
+        "final_sha256": "aaa250e8865bad926af243221cb00bc22879035aeaa793abe35002733c9405bd",
+        "recovery": "d6115a174248ab9c6ff5ee92ba38787c6ae1b849:scripts/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8746/scripts/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.py"
+      }
+    ],
+    "8740": [
+      {
+        "original_path": "docs/UNIFORM_ICE_BY_LAYER_UNITS_ON_INFINITE_PRISMS_IS_EXACT_IN_THE_ZERO_FLUX_SECTOR_THAT_LONG_PRISMS_SELECT_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "4d5001c3bddfed224a4b20405558197aadf1a78f9d68510936d424f3c10fdeb5",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/UNIFORM_ICE_BY_LAYER_UNITS_ON_INFINITE_PRISMS_IS_EXACT_IN_THE_ZERO_FLUX_SECTOR_THAT_LONG_PRISMS_SELECT_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "945b2af3c2062e8b40657c57cee7a122b90cefec71de8a9a71aad955137491f7",
+        "recovery": "97defcf6046e89e6deb9ed9a99c8d25c562a2cbe:docs/UNIFORM_ICE_BY_LAYER_UNITS_ON_INFINITE_PRISMS_IS_EXACT_IN_THE_ZERO_FLUX_SECTOR_THAT_LONG_PRISMS_SELECT_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8740/docs/UNIFORM_ICE_BY_LAYER_UNITS_ON_INFINITE_PRISMS_IS_EXACT_IN_THE_ZERO_FLUX_SECTOR_THAT_LONG_PRISMS_SELECT_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_layer_units_on_infinite_prisms_zero_flux_transfer_chain_2026_09_23.txt",
+        "original_sha256": "84f580b0582be55eac68be8a174daf214c218b0e44fa5770ded981a285deeef2",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_layer_units_on_infinite_prisms_zero_flux_transfer_chain_2026_09_23.txt",
+        "final_sha256": "29370553cc33146ba2f02773375d2b78fd26573ec3577ce29fbb1c2f07888226",
+        "recovery": "97defcf6046e89e6deb9ed9a99c8d25c562a2cbe:logs/runner-cache/uniform_ice_layer_units_on_infinite_prisms_zero_flux_transfer_chain_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8740/logs/runner-cache/uniform_ice_layer_units_on_infinite_prisms_zero_flux_transfer_chain_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/uniform_ice_layer_units_on_infinite_prisms_zero_flux_transfer_chain_2026_09_23.py",
+        "original_sha256": "f26c3d40371a504e2cc6813e1d6922bed6ebbd05048e57d3fc94618ea563ab9d",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/uniform_ice_layer_units_on_infinite_prisms_zero_flux_transfer_chain_2026_09_23.py",
+        "final_sha256": "79a60cb056c75ae42c3d840881ba6253cf6104f0d30266c915610bdb2045085f",
+        "recovery": "97defcf6046e89e6deb9ed9a99c8d25c562a2cbe:scripts/uniform_ice_layer_units_on_infinite_prisms_zero_flux_transfer_chain_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8740/scripts/uniform_ice_layer_units_on_infinite_prisms_zero_flux_transfer_chain_2026_09_23.py"
+      }
+    ],
+    "8735": [
+      {
+        "original_path": "docs/UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_TWO_TO_FIVE_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "f1988e0c0af0a53c6b72fb95f5bbfdca4f84139b1bc389a245e556ad56313ef6",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_TWO_TO_FIVE_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "39a1ea5537c70835dee6e71ed12339c0ca1bfc919a625c514e631d233e18837b",
+        "recovery": "e9d8d195e5751d477f9be59363dd4c7910bb2069:docs/UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_TWO_TO_FIVE_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8735/docs/UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_TWO_TO_FIVE_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_planar_windows_of_two_to_five_squares_admit_no_single_site_formation_order_2026_09_23.txt",
+        "original_sha256": "bd8aae03c2f3db693411c353a373a1fad23e1984bf7fd75d039c8f2c65d4257b",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_planar_windows_of_two_to_five_squares_admit_no_single_site_formation_order_2026_09_23.txt",
+        "final_sha256": "462ec9a80ad9362b6b78f01b9b2b22b0869eab4e23fc1f851e39f920b3261645",
+        "recovery": "e9d8d195e5751d477f9be59363dd4c7910bb2069:logs/runner-cache/uniform_ice_planar_windows_of_two_to_five_squares_admit_no_single_site_formation_order_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8735/logs/runner-cache/uniform_ice_planar_windows_of_two_to_five_squares_admit_no_single_site_formation_order_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/uniform_ice_planar_windows_of_two_to_five_squares_admit_no_single_site_formation_order_2026_09_23.py",
+        "original_sha256": "2ce6ab9f3650521b7eaa5f02c3609c6e985dfe9cd0d216addfb884a56e1e1ee9",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/uniform_ice_planar_windows_of_two_to_five_squares_admit_no_single_site_formation_order_2026_09_23.py",
+        "final_sha256": "25ab7418dd532e813704f9a8c7596b8222a5c34c6a6fc9a62f0e7fc572f3bc01",
+        "recovery": "e9d8d195e5751d477f9be59363dd4c7910bb2069:scripts/uniform_ice_planar_windows_of_two_to_five_squares_admit_no_single_site_formation_order_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8735/scripts/uniform_ice_planar_windows_of_two_to_five_squares_admit_no_single_site_formation_order_2026_09_23.py"
+      }
+    ],
+    "8727": [
+      {
+        "original_path": "docs/THE_LANDED_TORUS_UNIFORM_ICE_MEASURE_ADMITS_NO_LOCAL_FORMATION_ORDER_EVEN_WITH_EVERY_COORDINATOR_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "0236e267c73039f91d77e29ceeff1b528bdb91ac6b17bcc10e86d6296842ea84",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/THE_LANDED_TORUS_UNIFORM_ICE_MEASURE_ADMITS_NO_LOCAL_FORMATION_ORDER_EVEN_WITH_EVERY_COORDINATOR_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "c8dcdd455fc4dc6c813bce05e1d35d092c5886a351cc70d0fd326d9aeb494527",
+        "recovery": "61e22b8d0d7ea8f3433a9b8e7770a17377672d85:docs/THE_LANDED_TORUS_UNIFORM_ICE_MEASURE_ADMITS_NO_LOCAL_FORMATION_ORDER_EVEN_WITH_EVERY_COORDINATOR_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8727/docs/THE_LANDED_TORUS_UNIFORM_ICE_MEASURE_ADMITS_NO_LOCAL_FORMATION_ORDER_EVEN_WITH_EVERY_COORDINATOR_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/landed_torus_uniform_ice_admits_no_local_formation_order_closed_set_search_2026_09_23.txt",
+        "original_sha256": "522d783fcb465e6d625adf02a5db43032ca64ab3faceb7873e981a636cf42ff4",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/landed_torus_uniform_ice_admits_no_local_formation_order_closed_set_search_2026_09_23.txt",
+        "final_sha256": "8f277e2812f1436d4aee7a6036711f61b36164a2452e3562dd92c026dc706c59",
+        "recovery": "61e22b8d0d7ea8f3433a9b8e7770a17377672d85:logs/runner-cache/landed_torus_uniform_ice_admits_no_local_formation_order_closed_set_search_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8727/logs/runner-cache/landed_torus_uniform_ice_admits_no_local_formation_order_closed_set_search_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/landed_torus_uniform_ice_admits_no_local_formation_order_closed_set_search_2026_09_23.py",
+        "original_sha256": "65cf3bbc66dbaf706303b843e360012da8a19acbd4facbf095f1efeb98cfac60",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/landed_torus_uniform_ice_admits_no_local_formation_order_closed_set_search_2026_09_23.py",
+        "final_sha256": "85cd66949108af0a122335485ad85d7e3e9c48b956608255ee3ce49c62390222",
+        "recovery": "61e22b8d0d7ea8f3433a9b8e7770a17377672d85:scripts/landed_torus_uniform_ice_admits_no_local_formation_order_closed_set_search_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8727/scripts/landed_torus_uniform_ice_admits_no_local_formation_order_closed_set_search_2026_09_23.py"
+      }
+    ],
+    "8726": [
+      {
+        "original_path": "docs/FORMED_FLUX_TRANSPORT_FOR_EVERY_LINEAR_ICE_SWEEP_RULE_IS_A_MARKOV_WALK_DAMPED_OR_RIGID_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "212004caf07b96bfa17f314db8592e0873bb0e16ee0286411849a03d1ed0bf79",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/FORMED_FLUX_TRANSPORT_FOR_EVERY_LINEAR_ICE_SWEEP_RULE_IS_A_MARKOV_WALK_DAMPED_OR_RIGID_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "ff0082214575ed252ccae20e2fd457bc93946b8daa975252a52acb7b59cc5394",
+        "recovery": "21d8762b873b204cb6a66711704e17262babe469:docs/FORMED_FLUX_TRANSPORT_FOR_EVERY_LINEAR_ICE_SWEEP_RULE_IS_A_MARKOV_WALK_DAMPED_OR_RIGID_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8726/docs/FORMED_FLUX_TRANSPORT_FOR_EVERY_LINEAR_ICE_SWEEP_RULE_IS_A_MARKOV_WALK_DAMPED_OR_RIGID_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/formed_flux_transport_for_every_linear_ice_sweep_rule_birkhoff_markov_walks_2026_09_23.txt",
+        "original_sha256": "4b4ed50d8e03a850c3ddeda303a2a960932bcef6e19559475b4ae6cba1a59d9e",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/formed_flux_transport_for_every_linear_ice_sweep_rule_birkhoff_markov_walks_2026_09_23.txt",
+        "final_sha256": "8c0505451a71a684c10c3f37cb00cba019347bdd381ece2b4019dbb678eb074b",
+        "recovery": "21d8762b873b204cb6a66711704e17262babe469:logs/runner-cache/formed_flux_transport_for_every_linear_ice_sweep_rule_birkhoff_markov_walks_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8726/logs/runner-cache/formed_flux_transport_for_every_linear_ice_sweep_rule_birkhoff_markov_walks_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/formed_flux_transport_for_every_linear_ice_sweep_rule_birkhoff_markov_walks_2026_09_23.py",
+        "original_sha256": "d5665863c4b2ad0dbb87d4aaf9ae772b5f7a2e20914b38246b186404cc1efff1",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/formed_flux_transport_for_every_linear_ice_sweep_rule_birkhoff_markov_walks_2026_09_23.py",
+        "final_sha256": "d16e4b5983bbff467c7d14ae02235f2076ac231b343d80f5c7d9d6bf31ba4c63",
+        "recovery": "21d8762b873b204cb6a66711704e17262babe469:scripts/formed_flux_transport_for_every_linear_ice_sweep_rule_birkhoff_markov_walks_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8726/scripts/formed_flux_transport_for_every_linear_ice_sweep_rule_birkhoff_markov_walks_2026_09_23.py"
+      }
+    ],
+    "8720": [
+      {
+        "original_path": "docs/UNIFORM_ICE_BY_JOINT_CELL_UNITS_ROWS_YES_THE_TWO_BY_TWO_BLOCK_NO_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "c5f2998398af96e4959d3793db061f1bc691d4a283794d181b8e2fbc53238cbd",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/UNIFORM_ICE_BY_JOINT_CELL_UNITS_ROWS_YES_THE_TWO_BY_TWO_BLOCK_NO_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "35bb22f12282e212d751a710eb247d7ca82bb101cd0844adc962784cd3c26253",
+        "recovery": "05a5a16fb4367b84b3562ec37142b69353c61b34:docs/UNIFORM_ICE_BY_JOINT_CELL_UNITS_ROWS_YES_THE_TWO_BY_TWO_BLOCK_NO_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8720/docs/UNIFORM_ICE_BY_JOINT_CELL_UNITS_ROWS_YES_THE_TWO_BY_TWO_BLOCK_NO_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_joint_cell_units_rows_but_not_the_two_by_two_block_2026_09_23.txt",
+        "original_sha256": "5df83fae18cc7b59074c9827ebbc27621f87c02a23443c2aacc2cd0b4b32dde5",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_joint_cell_units_rows_but_not_the_two_by_two_block_2026_09_23.txt",
+        "final_sha256": "ed702965f21e5e26e3550fe84dc61903bf90c9a5add283e70aa309e145eb9895",
+        "recovery": "05a5a16fb4367b84b3562ec37142b69353c61b34:logs/runner-cache/uniform_ice_joint_cell_units_rows_but_not_the_two_by_two_block_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8720/logs/runner-cache/uniform_ice_joint_cell_units_rows_but_not_the_two_by_two_block_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/uniform_ice_joint_cell_units_rows_but_not_the_two_by_two_block_2026_09_23.py",
+        "original_sha256": "04c6be2b8b036a40b51937ef70ce354cdf76813eb161becf8461ce5e6b4fe7c5",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/uniform_ice_joint_cell_units_rows_but_not_the_two_by_two_block_2026_09_23.py",
+        "final_sha256": "26dd76432cef7e70ee51a7e4e462ddc45a1b7b18123273de95b412e0b1157f92",
+        "recovery": "05a5a16fb4367b84b3562ec37142b69353c61b34:scripts/uniform_ice_joint_cell_units_rows_but_not_the_two_by_two_block_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8720/scripts/uniform_ice_joint_cell_units_rows_but_not_the_two_by_two_block_2026_09_23.py"
+      }
+    ],
+    "8719": [
+      {
+        "original_path": "docs/UNIFORM_ICE_BY_FORMATION_TWO_ADJACENT_CUBES_ADMIT_NO_LOCAL_ORDER_EVEN_WITH_BOTH_CUBE_SITES_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "original_sha256": "c303155d1d73743efb430609a9686a97fc1d598b288466fd4e51e810a1f3563b",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/UNIFORM_ICE_BY_FORMATION_TWO_ADJACENT_CUBES_ADMIT_NO_LOCAL_ORDER_EVEN_WITH_BOTH_CUBE_SITES_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+        "final_sha256": "f792564de7db3a8fdf198d545724edd4d5b1d784ee167d85c23962cd03fdac7d",
+        "recovery": "d57f2984c89b7668093207e45f0a49310bbb7e65:docs/UNIFORM_ICE_BY_FORMATION_TWO_ADJACENT_CUBES_ADMIT_NO_LOCAL_ORDER_EVEN_WITH_BOTH_CUBE_SITES_BOUNDED_THEOREM_NOTE_2026-09-23.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8719/docs/UNIFORM_ICE_BY_FORMATION_TWO_ADJACENT_CUBES_ADMIT_NO_LOCAL_ORDER_EVEN_WITH_BOTH_CUBE_SITES_BOUNDED_THEOREM_NOTE_2026-09-23.md"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_two_adjacent_cubes_no_local_formation_order_closed_set_search_2026_09_23.txt",
+        "original_sha256": "4be9fd3716d3f96f7ef7a58b80f42506824a39a0f8da6312914f4c522e76a1b5",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_two_adjacent_cubes_no_local_formation_order_closed_set_search_2026_09_23.txt",
+        "final_sha256": "ed319aca5cccfeba7e834e696754fa24848357a72314ad943ccba8b783cab994",
+        "recovery": "d57f2984c89b7668093207e45f0a49310bbb7e65:logs/runner-cache/uniform_ice_two_adjacent_cubes_no_local_formation_order_closed_set_search_2026_09_23.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8719/logs/runner-cache/uniform_ice_two_adjacent_cubes_no_local_formation_order_closed_set_search_2026_09_23.txt"
+      },
+      {
+        "original_path": "scripts/uniform_ice_two_adjacent_cubes_no_local_formation_order_closed_set_search_2026_09_23.py",
+        "original_sha256": "ce8ba9f0986f228bf72df79cbfef134400c71cc09cc6cdaffad10170fcad15af",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/uniform_ice_two_adjacent_cubes_no_local_formation_order_closed_set_search_2026_09_23.py",
+        "final_sha256": "274359fde1e3ed9db9948c22f7b0683fb0156b2c19c9502b7d0571816b3d3f17",
+        "recovery": "d57f2984c89b7668093207e45f0a49310bbb7e65:scripts/uniform_ice_two_adjacent_cubes_no_local_formation_order_closed_set_search_2026_09_23.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8719/scripts/uniform_ice_two_adjacent_cubes_no_local_formation_order_closed_set_search_2026_09_23.py"
+      }
+    ],
+    "8715": [
+      {
+        "original_path": "docs/UNIFORM_ICE_BY_FORMATION_TWO_PLANAR_SQUARES_ADMIT_NO_LOCAL_ORDER_AND_ONE_CUBE_NEEDS_ITS_CUBE_SITE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "3f09daf3caef086722ffa8e56cd8d8ff5d2022293a685dfb7e6eb7f2669fa3bd",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/UNIFORM_ICE_BY_FORMATION_TWO_PLANAR_SQUARES_ADMIT_NO_LOCAL_ORDER_AND_ONE_CUBE_NEEDS_ITS_CUBE_SITE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "01519015beb20fb9ffcac1be16dd8d42f38479b22951c460fc698dede6aec802",
+        "recovery": "47619bb8890c5c7a465c85fbba46c19c22bbd505:docs/UNIFORM_ICE_BY_FORMATION_TWO_PLANAR_SQUARES_ADMIT_NO_LOCAL_ORDER_AND_ONE_CUBE_NEEDS_ITS_CUBE_SITE_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8715/docs/UNIFORM_ICE_BY_FORMATION_TWO_PLANAR_SQUARES_ADMIT_NO_LOCAL_ORDER_AND_ONE_CUBE_NEEDS_ITS_CUBE_SITE_BOUNDED_THEOREM_NOTE_2026-09-22.md"
+      },
+      {
+        "original_path": "logs/runner-cache/uniform_ice_two_squares_no_local_formation_order_complete_order_search_2026_09_22.txt",
+        "original_sha256": "964ce88d9cdac6d795436d8b8c1da8f8d9ab4de66e9a93268a82e23e7f69e923",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/uniform_ice_two_squares_no_local_formation_order_complete_order_search_2026_09_22.txt",
+        "final_sha256": "958f9cda8a303b3d33308af65e89700ba25313fcb746f419612922b10c541c75",
+        "recovery": "47619bb8890c5c7a465c85fbba46c19c22bbd505:logs/runner-cache/uniform_ice_two_squares_no_local_formation_order_complete_order_search_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8715/logs/runner-cache/uniform_ice_two_squares_no_local_formation_order_complete_order_search_2026_09_22.txt"
+      },
+      {
+        "original_path": "scripts/uniform_ice_two_squares_no_local_formation_order_complete_order_search_2026_09_22.py",
+        "original_sha256": "400f8ad99027b583ede9f5d6ff28063112d0c0e99744e84810fe5cfa7f883c57",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/uniform_ice_two_squares_no_local_formation_order_complete_order_search_2026_09_22.py",
+        "final_sha256": "db65ca111d0f0604a698d7a43a3a59fdc6f5a15053fb9260f52069eb0314dcb5",
+        "recovery": "47619bb8890c5c7a465c85fbba46c19c22bbd505:scripts/uniform_ice_two_squares_no_local_formation_order_complete_order_search_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8715/scripts/uniform_ice_two_squares_no_local_formation_order_complete_order_search_2026_09_22.py"
+      }
+    ],
+    "8701": [
+      {
+        "original_path": "docs/FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "76118d1e5ddda8949fefc334eaff970f2f55727c503d1ff1a827a675158f7a3c",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "9a8eec36146cc3e5e2c9fdb2f9592044b8fb3c8b6caa1ed2784862ca01aae3e1",
+        "recovery": "552b3d89e3305ef2d6c31ff93234ad18af04d1ff:docs/FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8701/docs/FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md"
+      },
+      {
+        "original_path": "logs/runner-cache/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.txt",
+        "original_sha256": "27bdf2f3cd93fd4c03ee956a27597d8ccdb563ae477de10b05ca1188ce505e8e",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.txt",
+        "final_sha256": "0bb21fa8ed288e559a12656fe88398462f06701be81bebe94b935f5205ddc51d",
+        "recovery": "552b3d89e3305ef2d6c31ff93234ad18af04d1ff:logs/runner-cache/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8701/logs/runner-cache/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.txt"
+      },
+      {
+        "original_path": "scripts/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.py",
+        "original_sha256": "07e1412ca5aed9500cdc12403fcde0f6c548234b426d83285a8142f54b52fdd1",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.py",
+        "final_sha256": "ee36d581aa15561c95bbb87c36dede003189fb59e8c776dd8dabbd88c4285d2f",
+        "recovery": "552b3d89e3305ef2d6c31ff93234ad18af04d1ff:scripts/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8701/scripts/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.py"
+      }
+    ],
+    "8698": [
+      {
+        "original_path": "docs/COULOMB_MEASURE_SELECTION_HARD_STATIC_ICE_RULES_ADMIT_EVERY_ICE_MEASURE_POSITIVE_RULES_SELECT_THE_UNIFORM_ONE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "original_sha256": "53ac51fedf16eec7da969a579ac294105f5c5034f0bf29cfa600e0a49129453a",
+        "disposition": "narrowed, proofs and useful finite results retained",
+        "final_path": "docs/COULOMB_MEASURE_SELECTION_HARD_STATIC_ICE_RULES_ADMIT_EVERY_ICE_MEASURE_POSITIVE_RULES_SELECT_THE_UNIFORM_ONE_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+        "final_sha256": "0ba56b5e6399e6472d0761cb46b49918f3b9fb2af98917b3c99397ad20cfe74f",
+        "recovery": "8408efbe4e4d71aba749b2d790701dd6af4cd0f9:docs/COULOMB_MEASURE_SELECTION_HARD_STATIC_ICE_RULES_ADMIT_EVERY_ICE_MEASURE_POSITIVE_RULES_SELECT_THE_UNIFORM_ONE_BOUNDED_THEOREM_NOTE_2026-09-22.md; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8698/docs/COULOMB_MEASURE_SELECTION_HARD_STATIC_ICE_RULES_ADMIT_EVERY_ICE_MEASURE_POSITIVE_RULES_SELECT_THE_UNIFORM_ONE_BOUNDED_THEOREM_NOTE_2026-09-22.md"
+      },
+      {
+        "original_path": "logs/runner-cache/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.txt",
+        "original_sha256": "3fe546ff45f336fc19fde0a483f838f0d6c426ea0d2c23a295cf8dda3f7b5210",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "logs/runner-cache/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.txt",
+        "final_sha256": "6e998bfbac28a345308ad0bf737fcab501081875c4d59278855a6d252d555e77",
+        "recovery": "8408efbe4e4d71aba749b2d790701dd6af4cd0f9:logs/runner-cache/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.txt; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8698/logs/runner-cache/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.txt"
+      },
+      {
+        "original_path": "scripts/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.py",
+        "original_sha256": "cdafcc356084182df0eeb50271b729a8c66b2254ec2cf15e5d245f0869b42e6c",
+        "disposition": "scope/check correction and fresh evidence",
+        "final_path": "scripts/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.py",
+        "final_sha256": "e97413da2ef163ac3a01af2a48af927c4b6567398af374c74471193915d22d81",
+        "recovery": "8408efbe4e4d71aba749b2d790701dd6af4cd0f9:scripts/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.py; /private/tmp/cl3-review-evidence-20260923/unit4-originals/8698/scripts/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.py"
+      }
+    ]
+  },
+  "claim_dispositions": {
+    "8746": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R6",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8740": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R6",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8735": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R4",
+        "U4-R5",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8727": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R4",
+        "U4-R5",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8726": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R3",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8720": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R4",
+        "U4-R5",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8719": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R4",
+        "U4-R5",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8715": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R4",
+        "U4-R5",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8701": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R3",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    },
+    "8698": {
+      "accepted": "Scoped conditional proofs and finite results in final source",
+      "rejected_or_narrowed": [
+        "U4-R1",
+        "U4-R2",
+        "U4-R7"
+      ],
+      "deferred_content": "Physical selection, unproved universal necessity, adaptive/hidden-state extensions and limiting stiffness are open. Original campaign and author-review narratives preserved at the frozen head; no independent useful calculation silently dropped."
+    }
+  }
+}

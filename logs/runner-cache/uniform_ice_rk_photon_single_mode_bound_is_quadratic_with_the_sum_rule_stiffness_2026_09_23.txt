@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py
+runner_sha256: 2837b436d57017a1cea933e3b36a7adb4d99f5330c8a0c393bc06ca5e4152e5d
+input_fingerprint_sha256: 66d2f1603f041011fd00d4c7efa52a988b2425460934eabdb222c79434ead4d0
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 132.13
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The exact L = 2 torus ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: 9600 configurations, 49920 flips, n_f = 13/60
+[PASS] Exact nonzero-momentum ground-space counterexample :: components 937, projected norm 14/75
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: 0.21693 +- 0.00037 vs 0.21667
+
+== C. L = 8, 10^6 worms ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: R in [0.9914, 1.0083], n_f = 0.25934 +- 0.00002, 2 n_f K_L = 0.3461
+
+== D. The bound is soft ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: omega_SMA = 0.0531 at |k| = 0.3927; ratio to 2 n_f K_L |s|^2 1.0071; omega/|k| 0.2586 (L=8) -> 0.1352 (L=16), factor 0.5227 vs |s|^2/|k| factor 0.5198 (a linear branch gives 1)
+
+time 132 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

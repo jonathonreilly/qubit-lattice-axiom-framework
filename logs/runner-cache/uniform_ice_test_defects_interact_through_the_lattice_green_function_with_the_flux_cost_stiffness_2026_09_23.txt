@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_test_defects_interact_through_the_lattice_green_function_with_the_flux_cost_stiffness_2026_09_23.py
+runner_sha256: a2b5ab089d6682681a3ab488d1a7c8601720b2c0b7acae25b1e78fd9a4aeaa16
+input_fingerprint_sha256: 5b249bdb951848f09c7be6c84d29e05379980c434bd8958209ca2d6edb0130ec
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 40.79
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. Symmetry ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: distance 1..4: 0.46195, 0.53561, 0.56358, 0.57797
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: largest change 4.4e-16
+
+== B. The string ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: 4x4: step 0.08176, Gaussian 0.08176, ln(lam0/lam2) 0.08176; 2x8: step 0.07869, Gaussian 0.07869, ln(lam0/lam2) 0.07844
+
+== C. The square 4 x 4 ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: ratios 0.9614, 0.9738, 0.9781; from distance 2: 1.0080, 1.0085
+[PASS] Finite diagnostic 5; scope and exceptions are in the companion note :: ratios 0.967, 0.978, 0.986, 0.989, 0.991, 0.993, 0.994, 0.994, 0.995
+
+== D. The strip 2 x 8 ==
+[PASS] Finite diagnostic 6; scope and exceptions are in the companion note :: length 0.981, 0.985, 0.986, 0.993, 0.988, 0.987; prism 0.973, 0.983, 0.988, 0.991, 0.992, 0.993, 0.994, 0.995, 0.995
+[PASS] Finite diagnostic 7; scope and exceptions are in the companion note :: (1, 0): 0.9252, (1, 1): 1.0563
+
+K = 2 c(2): 4x4 0.65407, 2x8 0.62749
+maximum checked relative eigenpair residual: 2.2428140867109524e-15
+time 39 s
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

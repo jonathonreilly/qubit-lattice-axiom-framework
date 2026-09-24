@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_unit_link_field_fixes_one_stiffness_for_the_flux_cost_and_the_field_correlations_2026_09_23.py
+runner_sha256: 23cec79292e9113f625b5fe47a6799f1b51bb467e57f218811328fd9bf617204
+input_fingerprint_sha256: 6e3bdece8fe2119e0de757bf17e1f5c86fbce0c7bf0a2a48ce505eaa43f78e32
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 77.66
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The flux costs of open PR #8859 and the vacuum's sum rule ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: 2x2: 0.28082, 2x4: 0.30726, 2x6: 0.31210, 2x8: 0.31374, 2x10: 0.31451, 4x4: 0.32704
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note
+
+== B. The flux cost is the stiffness fixed by the sum rule ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: 2x2: 0.27884 (+0.71%), 2x4: 0.30841 (-0.37%), 2x6: 0.31336 (-0.40%), 2x8: 0.31501 (-0.40%), 2x10: 0.31576 (-0.40%), 4x4: 0.32709 (-0.02%)
+
+== C. The same stiffness sets the correlations ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: largest deviation 0.64%
+[PASS] Finite diagnostic 5; scope and exceptions are in the companion note :: 2x2: 9.0% at (1, 1), 2x4: 4.1% at (1, 0), 2x6: 4.5% at (1, 0), 2x8: 4.6% at (1, 0), 2x10: 4.7% at (1, 0)
+
+== D. The large-section value ==
+[PASS] Finite diagnostic 6; scope and exceptions are in the companion note :: average 0.6666666660
+[PASS] Finite diagnostic 7; scope and exceptions are in the companion note :: square 0.32704 vs 1/3
+
+maximum checked relative eigenpair residual: 1.0113789630773044e-14
+time 77 s
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

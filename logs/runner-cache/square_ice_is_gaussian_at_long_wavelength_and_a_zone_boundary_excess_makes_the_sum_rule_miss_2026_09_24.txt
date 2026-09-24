@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_2026_09_24.py
+runner_sha256: abfb761a2fc1aa4cab6d80ee33d9a47726fe80150cafad2369dfdb80e0786a9b
+input_fingerprint_sha256: ac4523a52a8fcb0bbc74606f0c74b38d58d4a3504efd93a40b8089077070209e
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 41.54
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The transfer ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: count 2970; 8: 0.25641, 12: 0.25933, 16: 0.26040, 20: 0.26090
+
+== B. Long wavelength ==
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: 8: 0.9901, 12: 0.9949, 16: 0.9970, 20: 0.9981
+
+== C. The zone boundary ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: 8: 1.1067, 12: 1.0999, 16: 1.0971, 20: 1.0957
+
+== D. The excess is the sum rule's miss ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: 8: 1.04290 vs 1.04290, 12: 1.04497 vs 1.04497, 16: 1.04588 vs 1.04588, 20: 1.04633 vs 1.04633
+
+maximum checked relative eigenpair residual: 9.321913011328555e-14
+time 41 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

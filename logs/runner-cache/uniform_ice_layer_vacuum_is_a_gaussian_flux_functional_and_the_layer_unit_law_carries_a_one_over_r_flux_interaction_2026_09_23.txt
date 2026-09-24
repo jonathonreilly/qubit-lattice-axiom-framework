@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.py
+runner_sha256: f8446f33dca657dee45e5eb8ff3f483e1e05933e288b784f31c4259aec2c878c
+input_fingerprint_sha256: abda6bdbaa276a3bda9d87df67bef32f32834c2871f4e3c728cbd7db790857a1
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 78.82
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The layer-unit law ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: largest deviation 4.4e-15
+
+== B. The layer vacuum is Gaussian (measured kernel) ==
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: 2x4: slope -0.2318, R2 0.9974, 2x6: slope -0.2415, R2 0.9984, 2x8: slope -0.2441, R2 0.9988, 4x4: slope -0.2464, R2 0.9989
+
+== C. The predicted kernel, from K = 2 c(2) alone ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: 2x4: slope -0.2431, R2 0.9795, 2x6: slope -0.2428, R2 0.9874, 2x8: slope -0.2433, R2 0.9901, 4x4: slope -0.2553, R2 0.9989
+
+== D. The formation law ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: 2x4: mean 0.0065, max 0.0072, 2x6: mean 0.0090, max 0.0100, 2x8: mean 0.0114, max 0.0123, 4x4: mean 0.0020, max 0.0024
+
+== E. The kernel's tail ==
+[PASS] Finite diagnostic 5; scope and exceptions are in the companion note :: axis 1.00006, 1.00000, 0.99995; diagonal 0.99576, 0.99892, 0.99959
+
+maximum checked relative eigenpair residual: 2.2428140867109524e-15
+time 78 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

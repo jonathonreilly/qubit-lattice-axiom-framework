@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.py
+runner_sha256: 564e3a4dac8a7ecfb55c267d00d9054564eae708740819a07a08abe6ea6bc5d8
+input_fingerprint_sha256: 0348807268c533bc4e2b0c2e8e64ad8e3c649cab6ba558ab50143a088d5c8880
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 191.31
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The arrows at one vertex, and a sampler control ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: ranks [1, 1]
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: 39/25; worm 1.5641 +- 0.0049
+
+== B. The lattice Green function ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: G(r)/G(1): 2: 0.491, 3: 0.310, 4: 0.224, 5: 0.175, 6: 0.143, 7: 0.120, 8: 0.103
+
+== C. A neutral scalar record, L = 16, 5 x 10^5 worms ==
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: C(1)/C(0) = 0.00521, C(2)/C(1) = 0.0718 (G: 0.491); absolute ratio plus three estimated bin errors (not confidence bounds): 3: 0.026, 4: 0.014, 5: 0.015, 6: 0.016, 7: 0.019, 8: 0.019
+
+time 191 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

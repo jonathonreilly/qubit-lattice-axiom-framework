@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.py
+runner_sha256: 8201fed8eb3ba66b8e36dc4f2d491d2e05fe87884e565046bce8aaefe6ed68e6
+input_fingerprint_sha256: cffc7736ca56882fe91f4884c437d7a6bdbca0d30cc2934dc4f13881fce6fe98
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 95.88
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. Translations ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: largest relative defect 5.2e-16
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: largest relative defect 4.5e-16
+
+== B. The strip 2 x 8 ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: q=0.7854: D=0.7429 field=0.7478, q=1.5708: D=1.3165 field=1.3170, q=2.3562: D=1.6581 field=1.6530
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note
+
+== C. The square 4 x 4 ==
+[PASS] Finite diagnostic 5; scope and exceptions are in the companion note :: (pi/2, 0.0): D=1.2963 field=1.3170, (pi/2, pi/2): D=1.7419 field=1.7627, (pi/2, pi): D=2.0469 field=2.0634
+[PASS] Finite diagnostic 6; scope and exceptions are in the companion note :: ratio 1.3438 vs field 1.3385
+
+== D. The lowest branch points are the gaps of open PR #8864 ==
+[PASS] Finite diagnostic 7; scope and exceptions are in the companion note :: 5.94340, 1.296269
+
+== E. The branch is odd under the complement ==
+[PASS] Finite diagnostic 8; scope and exceptions are in the companion note :: 10 branch states, parities in [-1.000000000, -1.000000000]
+
+maximum checked relative eigenpair residual: 4.095103679091914e-15
+time 95 s
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

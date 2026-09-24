@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py
+runner_sha256: 10f861d870e923a706f94480af069d33f1b58a9fb8bbfe5c9fa1fafa4401a866
+input_fingerprint_sha256: 4bf700bca8a48a307158b98b1b02d4ad71e23578b1dee6b6476034be0f0196fc
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 123.38
+status: ok
+----- stdout -----
+Evidence boundary: finite computations and bin diagnostics; no certified spectral enclosure, confidence coverage, particle claim or limit theorem.
+== A. The exact L = 2 torus ==
+[PASS] Finite diagnostic 1; scope and exceptions are in the companion note :: 9600, 880, 125, 76/25
+[PASS] Finite diagnostic 2; scope and exceptions are in the companion note :: <W^2> 3.0367 +- 0.0094 vs 3.04; zero flux 0.09155 +- 0.00065 vs 0.09167; sectors 125
+
+== B. The winding stiffness ==
+[PASS] Finite diagnostic 3; scope and exceptions are in the companion note :: L=8: 0.667318, L=12: 0.666860, L=16: 0.666748, L=24: 0.666691
+[PASS] Finite diagnostic 4; scope and exceptions are in the companion note :: L=8: 0.3329 +- 0.0013 (K_L/2 0.3337), L=12: 0.3350 +- 0.0011 (K_L/2 0.3334), L=16: 0.3356 +- 0.0013 (K_L/2 0.3334), L=24: 0.3350 +- 0.0024 (K_L/2 0.3333)
+[PASS] Finite diagnostic 5; scope and exceptions are in the companion note :: c_W = 0.3352 +- 0.0008, +0.56% from 1/3
+
+== C. The correlations on L = 8, 10^6 worms ==
+[PASS] Finite diagnostic 6; scope and exceptions are in the companion note :: 70 classes; largest deviation +0.70% +- 0.27% at k = (4, 4, 4) 2pi/8
+[PASS] Finite diagnostic 7; scope and exceptions are in the companion note :: r = 0.9969 +- 0.0006 over 4 classes; c = 0.3347 +- 0.0002 vs winding 0.3352
+
+== D. The longitudinal null and the divergence ==
+[PASS] Finite diagnostic 8; scope and exceptions are in the companion note :: largest 1.2e-32, defects 0
+
+time 123 s
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

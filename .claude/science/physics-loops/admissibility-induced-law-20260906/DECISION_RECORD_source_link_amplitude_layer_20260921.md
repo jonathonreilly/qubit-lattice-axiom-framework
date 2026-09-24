@@ -258,3 +258,13 @@ Block 96 (#8866) takes the second cell of the owner's request: waves in the movi
 | # | Question | State | Deciding computation | Status |
 |---|---|---|---|---|
 | 83 | Where does formation on the site's clock put records? | With one record present the second forms at offset `d` in proportion to `e^(U(d))`; motion finds it there in proportion to `e^(−U(d))` — exact inverses; every formation order weighs `e^(Σ_pairs U)`; for records that slow clocks formation spreads records and motion gathers them. Long-range clumping in the owner's reading comes from motion; the fourth reading's fixed records would be spread apart by the same field | block 99 T1–T3 (#8882); control: formed contacts 6.07 → 3.65 as `g` goes 0 → 2 (uniform 6.68) | exact within the formation clause |
+
+## Fifteenth addendum (2026-09-23): blocks from the evening probe harvest (blocks 100, 101) and block 98's corrigendum
+
+The owner asked: "are you writing blocks from the opus probe work?" Blocks 95–99 were the supervisor's own. The evening harvest (1495 logs since refill b; 78 same-family derivation hits; 8 referee units by grok-4.6, another family) gave blocks 100 and 101 and a corrigendum on block 98.
+
+| # | Question | State | Deciding computation | Status |
+|---|---|---|---|---|
+| 84 | Can records that carry momentum keep the rule's weights with local rates? (block 50's open question) | Radius-one rules exist at three records (exact rules on 3³, 4³); the local clock and unit moves fail there; no rule balances record by record; at four records none exists on 3³ or Z³ (compact clusters), with or without momentum-class re-draws: inertia and the rule's weights do not mix locally | block 100 T1–T3 (#8889), from probes worker w-macbookpro90c72-j5257 | exact; same family, referee pending |
+| 85 | When does a change of a body's energy reach the clocks, with lengths? | In the curvature member with block 62's kinetic term the rate is a constraint; only transverse traceless strains travel; u = −e/(4Kw̄p²) + α(α+3β)ë/(K²w̄³(α+β)p⁴); a formation event at rest changes every clock at once; at α + β = 0 a body at rest cannot change its energy by a jump — formation must keep energy local (blocks 58, 67) or move it by currents | block 101 T1–T4 (#8895), from probes worker w-jonathonsmac4f50-j03c0 (#8844) | exact at second order; same family, referee pending |
+| 86 | Correction to row 81 | Block 98's relation δ = 2 log g(b) is for block 54's product-form walk (lengths one); blocks 59/60 had shown bending over fall 1 + β with β = 1 for the curvature member, doubling the turn to 4 log g(b) at first order if the records' pair law is unchanged (not worked) | block 98 corrigendum 6672f80380; worker #8862 | corrected |

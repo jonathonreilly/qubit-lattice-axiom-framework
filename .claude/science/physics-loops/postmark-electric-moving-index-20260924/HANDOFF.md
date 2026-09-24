@@ -324,3 +324,102 @@ it is corroboration only. The note is
 Current source remains 5171af0 over origin/main 0e6ad82. Root review found
 the normalization, endpoint rank, moment identity, and quantile consequence
 consistent; this is author-only, not the independent review or audit.
+
+## 2026-09-24 prepared-phase accuracy gate (16:18 UTC)
+
+The fixed-time scalar is an expectation of a diagonal spectral phase followed
+by the period-three observable. If `c_j` are the prepared spectral
+coefficients, `V_jk` are the observable overlaps, and `e_j` is an approximate
+phase error, then the exact finite-dimensional estimate is
+
+    |delta q| <= sum_jk |c_j c_k V_jk| min(2, |e_k-e_j|).
+
+A second, dimension-free bound uses invariance under a common phase. With
+`D_e=diag(exp(i e_j))`,
+
+    |delta q| <= 2 ||V|| ||c||_2 min_a ||(D_e-exp(i a)I)c||_2.
+
+Thus a uniform phase approximation is a sufficient route, but the exact
+observable can remain accurate through structured cancellation even when the
+prepared state itself is not close. For a 0.01 target error, the uniform
+centered phase tolerance is about 0.005 radians when `||V||=||c||_2=1`; for
+`e_j=(C/4) delta_lambda_j`, this requires centered eigenvalue error at most
+about `0.02/C`. The paired finite probe evaluates both exact bounds and the
+actual error from the best quadratic phase fit.
+
+At S=96,192,384,512, the quadratic fit's actual q error is
+0.02318,0.00030,0.02207,0.00417, while its prepared-state phase distance is
+0.976,1.151,1.194,1.176 and the dimension-free bound is correspondingly
+trivial (1.95,2,2,2). The finite absolute pair-weight mass is concentrated at
+macroscopic spectral lags: the diagonal is 0.0038--0.0089, lags 1--32 carry
+0.26--0.58, and lags above D/4 carry 7.54,10.55,14.81,17.06. These are
+finite float64 diagnostics only; they do not establish that the mass grows,
+that q converges, or that any subsequences separate. They show why the next
+estimate must retain the observable overlaps and correlated phase errors
+across macroscopic lags; a uniform phase norm or an unweighted lag argument
+does not close the target. The total pair-weight L1 values divided by sqrt(S)
+are 1.209,1.203,1.198,1.197, while `||c||_1/sqrt(S)` is about 2.725. The
+exact Cauchy bound `sum_jk |c_j c_k V_jk| <= ||V|| ||c||_2 ||c||_1` therefore
+has the observed square-root scale but does not expose the signed cancellation.
+The measured pair-weight total is 0.439--0.444 of that envelope at the four
+spins, and both phase-sensitivity bounds passed numerical containment checks
+against the direct q difference. This is a finite-size pattern, not a proved
+asymptotic law.
+
+Evidence is in
+`outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_accuracy_gate_probe.py`,
+its JSON receipt, and captured stdout. The next attack is an observable-aware
+two-index oscillatory estimate on `h>D/4`, resolving every reciprocal alias
+and the crossing/central layers. Script SHA256 is
+`dac05fbf02814ef39cb6ddf1aa48feb61ac42256c742065bf751c2c632c87fb6`; JSON
+SHA256 is `3d869c62194bf30a34f286c583a3b1973e67536f8a91e01cddb673856535a834`;
+the source revision embedded in the receipt is `c734332ca227c4371f3c188f96227c494b43f533`.
+No change to the framework axioms follows.
+
+## 2026-09-24 literature scope check (16:30 UTC)
+
+The adjacent semiclassical literature confirms the crossing issue but does not
+close this target. Chai, Jin, and Li's [Wigner-Bloch model for periodic
+Schrodinger dynamics with band crossings](https://www.math.umd.edu/~tadmor/ki_net/pubs/files/qcl.pdf)
+retains off-diagonal band coherences near crossings and reduces to uncoupled
+band Liouville flow away from them in a weak semiclassical limit. That supports
+a matrix-valued crossing layer, but it treats a continuous periodic medium and
+does not establish our finite Jacobi two-energy sum. Qi, Wang, and Watson's
+[coupled transport treatment of periodic media with band crossings](https://doi.org/10.1137/24M1638082)
+is likewise adjacent support for retaining band coupling. Sukhatme and
+Sergeenko's [periodic-potential WKB quantization](https://arxiv.org/abs/quant-ph/9911026)
+targets band edges in a smooth periodic differential problem and notes a
+turning-point/energy-range limitation; it does not give global moving-index
+phases or observable-overlap estimates here.
+
+Inference from the scalings: the usual fixed semiclassical-time Schrödinger
+form `i h partial_t psi=H psi` carries phase `O(h^-1)` for `t=O(1)`, whereas
+this campaign samples `exp(i C N_S/4)` with `h=1/S` and `C~S^2`, so its phase
+is `O(h^-2)`. The cited crossing/transport methods motivate the structure of
+a possible calculation but do not supply the extra quantization precision or
+alias-uniform error needed here. Keep this route open as a derivation problem;
+do not import its conclusions.
+
+A closer discrete analogue is Fedotov and Klopp's [complex WKB construction for
+a scalar difference Schrödinger equation](https://doi.org/10.1137/18M1228694): under analytic-coefficient and simple-turning-point hypotheses it gives uniform local expansions near characteristic-root collisions. This may supply a turning-point module after reduction to the cell transfer equation. It does not address the residue-driven Bragg layers, the closing central gaps, the prepared overlap weights, or the `O(S^2)` accumulated phase, so applicability still requires a separate derivation.
+
+## Next campaign's exact transfer object
+
+For a bulk eigenpair of the exact Jacobi family, write `a_n=(N_S)_{n,n+1}`
+and `b_n=(N_S)_{n,n}`. Where `a_n` is nonzero, the eigenvalue recurrence
+has the exact unimodular transfer form
+
+    (psi_(n+1), a_n psi_n)^T
+      = T_(n,S)(lambda) (psi_n, a_(n-1) psi_(n-1))^T,
+    T_(n,S)(lambda) = [[(lambda-b_n)/a_n, -1/a_n], [a_n, 0]],
+    det T_(n,S)=1.
+
+Freezing the leading bulk coefficients `a=-w`, `b=2w`,
+`w=1-u^2`, gives one-site multipliers `exp(+-i k)` with
+`lambda=2w(1-cos k)`; the five-site monodromy has trace `2 cos(5k)`. Its
+repeated-root points `5k in pi Z` are the Bragg layers already identified in
+the five-site note. This exact scalar transfer product is the right starting
+object for a split proof: discrete WKB away from repeated roots and turning
+points, matched matrix connections at the Bragg/central layers, then a
+phase-accurate two-index Poisson estimate that keeps the prepared overlaps.
+The transfer identity itself gives no uniform remainder or readout limit.

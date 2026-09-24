@@ -6,28 +6,28 @@ runtime:
   authorized: 12h
   started_utc: "2026-09-24T04:38:00Z"
   deadline_utc: "2026-09-24T16:38:00Z"
-  checkpoint_utc: "2026-09-24T15:48:00Z"
-  runtime_used_at_checkpoint: "about 11h10m"
-cycle_count: 3
-block_count: 3
+  checkpoint_utc: "2026-09-24T16:33:00Z"
+  runtime_used_at_checkpoint: "about 11h55m"
+cycle_count: 4
+block_count: 4
 source:
   repo: /Users/jonreilly/Projects/Physics
   base_ref: origin/main
   base_revision: 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8
-  branch: physics-loop/postmark-electric-weighted-phase-20260924
-  worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-electric-weighted-phase-20260924
-  head_revision: 5171af01191cc2db9d5bad0f8eca2185114ebbe3
-  parent_review_branch: physics-loop/postmark-moving-index-central-match-20260924
-active_route: "deterministic prepared-weighted phase cancellation for the actual fixed-time readout, with Weyl-predicted quadratic phase, all reciprocal aliases, and phase-accuracy analysis"
+  branch: physics-loop/postmark-electric-quantization-phase-20260924
+  worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-electric-quantization-phase-20260924
+  head_revision: c734332ca227c4371f3c188f96227c494b43f533
+  parent_review_branch: physics-loop/postmark-electric-weighted-phase-20260924
+active_route: "observable-aware deterministic cancellation across macroscopic spectral lags and all reciprocal phase aliases"
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
 conditional_surface_status: "conditional on the supplied six-site path, integer-spin hop factors, generator, first-mark preparation, and period-three readout"
 provisional_dependency_check_state: "prior supporting notes were authored against c288aa9 and their source hashes remain unchanged at current origin/main 0e6ad828; this new block starts on 0e6ad828"
 independent_check_state: "The ten-route selection comprised seven isolated worker reports and three root-only exact checks after the platform thread cap. Three focused follow-up lenses independently recommended direct deterministic weighted-phase cancellation over pole regularization. The author corrected the finite probe phases and checked them against dense expm for S=1,2,3,5. These workers selected and reviewed routes/probes; none independently reviewed the final authored theorem sources. The current science execution is personal, without subagents."
 formal_audit_state: not_requested
-next_milestone: "derive phase-accurate global quantization beyond the principal Weyl action and estimate the prepared-weighted two-index sum over all aliases, or isolate a quantified obstruction"
+next_milestone: "derive a uniform observable-weighted two-index oscillatory estimate for macroscopic lags and reciprocal aliases, or identify a quantified obstruction"
 strongest_unresolved_proof_obligation: "prove Re(q_S(1/4))->0 for the exact prepared-profile two-energy sum, including its small diagonal term, all mod-three crossing pairs, the central layer, macroscopic lags h=Theta(S), and their discrete aliases; alternatively certify separated actual-readout subsequences"
-hard_residual_being_attacked: "order-one phase corrections to the nearly quadratic Weyl phase and weighted cancellation across O(S) reciprocal aliases in the interior two-index sum, after the prepared-state endpoint strip is removed"
+hard_residual_being_attacked: "cancellation of growing finite absolute overlap mass at lags h>D/4 under order-one spectral phase errors and O(S) reciprocal aliases, after the prepared-state endpoint strip is removed"
 open_imports:
   - "supplied one-vacancy Hamiltonian and first-mark state are not derived from framework axioms"
   - "fixed-time global finite-spin propagation and physical interpretation remain open"
@@ -40,8 +40,8 @@ trace_gate:
   reachability_to_target: supports
   artifact_role: theorem
   next_trace_action: "control the interior phase of q_S(1/4), or prove separated actual-readout subsequences; the prepared-state endpoint strip is controlled"
-review_findings: "The ten-route selection comprised seven isolated worker reports and three root-only exact checks after the platform thread cap. Three focused follow-up lenses recommended direct deterministic weighted-phase cancellation over pole regularization. Corrected finite probes use the exact G_S phase and agree with dense expm for S=1,2,3,5. The all-lag weighted diagnostic at S=96,192,384,512 shows sum of individual lag magnitudes near 0.37 but signed totals from -0.0141 to +0.0062; fixed and sampled macroscopic lags do not dominate. The root-only alias census separates alpha_j from alpha_(j+h)-alpha_j, finds 4,7,13,17 distinct one-index alias integers and increasing all-lag near-alias L1 0.0193,0.0260,0.0371,0.0424 at 0.01 rad. A new author-proved fixed-moment theorem gives the conditional empirical spectral density 1/(4 sqrt(lambda)) on (0,4), CDF sqrt(lambda)/2, and macroscopic quantiles, using the supplied finite Jacobi coefficients. The exact principal action predicts a nearly quadratic phase and O(S) aliases; finite gap-slope correlation is 0.985--0.997 and alias counts match, but best-quadratic phase residuals reach 3.56--7.88 radians and alter q_S by up to 0.0232. Direct actual readouts at S=640,768,896,1024 are 0.33705,0.33726,0.33621,0.32857; float64 samples prove neither convergence nor separation. The next obligation is phase-accurate global quantization plus a uniform sum over all aliases and actual overlap weights. Workers reviewed routes/probes, not final theorem sources; science execution is personal, without subagents."
-pr_status: "PR #9078 is open and non-draft on the parent branch; independent science review and formal audit remain pending. The current weighted-phase follow-up is a separate dependent campaign branch with no new PR yet."
+review_findings: "The ten-route selection comprised seven isolated worker reports and three root-only exact checks after the platform thread cap; three focused route lenses preferred deterministic weighted-phase cancellation. Root personally executed the science. Corrected finite probes use the exact G_S phase and agree with dense expm for S=1,2,3,5. A conditional fixed-moment theorem now proves the supplied Jacobi family's density 1/(4 sqrt(lambda)) on (0,4), CDF sqrt(lambda)/2, and macroscopic quantiles, but no local-gap control. The exact phase-accuracy identity bounds delta q by prepared-weighted pair phase errors; the operator-norm version cancels a common phase. In the quadratic-fit probe, prepared-state phase distance is 0.976--1.194 and the operator bound is trivial, while actual q error ranges nonmonotonically from 0.00030 to 0.0232. Pair-weight L1 divided by sqrt(S) is 1.197--1.209 at S=96,192,384,512, below the exact Cauchy envelope ||V|| ||c||_2 ||c||_1; this is a finite-size pattern only. By lag, pair-weight L1 is 0.26--0.58 for h<=32, 7.54--17.06 for h>D/4, and diagonal 0.0038--0.0089. A primary-literature check found that continuous periodic-medium band-crossing work retains off-diagonal coherence but does not address this O(S^2) finite-Jacobi phase sum. No asymptotic statement or target limit follows. The remaining route is an overlap-weighted two-index estimate across macroscopic lags and every alias. Workers selected routes and reviewed probes, not the final theorem source; root's source review is author-only."
+pr_status: "PR #9078 and stacked bounded-theorem PR #9091 are open and non-draft. Formal independent review/audit remain pending. Current phase-accuracy campaign is on a separate child branch based on #9091 and has no PR yet."
 files_touched:
   - docs/POSTMARK_ELECTRIC_MOVING_INDEX_CELL_SYMBOL_BOUNDED_THEOREM_NOTE_2026-09-24.md
   - docs/POSTMARK_ELECTRIC_TWO_BAND_CENTRAL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-24.md
@@ -65,8 +65,11 @@ files_touched:
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/weyl_alias_scaling_probe.py
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/actual_readout_extended_sizes.py
   - outputs/postmark_moving_index_2026_09_24/principal_weyl_count_2026_09_24.json
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_accuracy_gate_probe.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_accuracy_gate_probe.json
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_accuracy_gate_probe.stdout
   - logs/runner-cache/postmark_electric_principal_weyl_count_2026_09_24.txt
   - logs/runner-cache/postmark_electric_*
   - .claude/science/physics-loops/postmark-electric-moving-index-20260924/
-next_exact_action: "derive the global subprincipal quantization and weighted overlap transport beyond the principal quadratic Weyl phase, then bound the full alias-summed bilinear form; keep the actual G_S readout and q_S distinct and do not extrapolate finite oscillations"
+next_exact_action: "derive an observable-aware two-index stationary-phase/Poisson estimate on macroscopic h>D/4, retaining all reciprocal aliases and Bragg/central connection data; determine whether the observed sqrt(S) absolute overlap scale has a structural bound, and prove cancellation rather than substituting fitted phases or extrapolating finite oscillations"
 stop_condition: "complete the authorized 12h runtime, or exhaust mathematically distinct routes with explicit reopen conditions"

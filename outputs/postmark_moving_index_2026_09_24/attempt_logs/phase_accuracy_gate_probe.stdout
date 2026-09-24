@@ -1,0 +1,177 @@
+{
+  "source_revision": "c734332ca227c4371f3c188f96227c494b43f533",
+  "exact_side_runner_sha256": "a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+  "exact_identity": "q(theta)=sum_jk conj(c_j)c_k V_jk exp(i(theta_k-theta_j)); for phase errors e_j, |q(theta+e)-q(theta)| <= sum_jk |c_j c_k V_jk| min(2,|e_k-e_j|)",
+  "uniform_sufficient_condition": "if R=min_a max_j |e_j-a|, then |delta q| <= min(2,2R) sum_jk |c_j c_k V_jk|",
+  "operator_sufficient_condition": "q is invariant under a common phase; after optimizing that phase, |delta q| <= 2 ||V|| ||c|| min_a ||(diag(exp(i e_j))-exp(i a)I)c||_2",
+  "rows": [
+    {
+      "S": 96,
+      "dimension": 957,
+      "pair_weight_l1": 11.848390894786585,
+      "pair_weight_cauchy_envelope": 26.67802981638936,
+      "pair_weight_over_cauchy_envelope": 0.44412540867270695,
+      "pair_weight_l1_over_sqrt_S": 1.209271331886056,
+      "prepared_coefficient_l1": 26.67802981638937,
+      "prepared_coefficient_l1_over_sqrt_S": 2.7228150163712317,
+      "lag_pair_weight_and_error_bound": {
+        "diagonal": {
+          "pair_weight_l1": 0.0088896229223388,
+          "pair_error_bound": 0.0
+        },
+        "local_1_to_32": {
+          "pair_weight_l1": 0.5820712347508408,
+          "pair_error_bound": 0.5598874728017514
+        },
+        "mesoscopic_33_to_D_over_4": {
+          "pair_weight_l1": 3.719411457368439,
+          "pair_error_bound": 4.369733409955442
+        },
+        "macroscopic_above_D_over_4": {
+          "pair_weight_l1": 7.538018579744966,
+          "pair_error_bound": 9.78152161524857
+        }
+      },
+      "quadratic_fit_optimal_circular_phase_radius_rad": 3.0713215683457733,
+      "prepared_state_norm": 0.9999999999999996,
+      "prepared_weighted_phase_state_distance": 0.9755596701982782,
+      "operator_stability_bound": 1.9511193403965554,
+      "operator_centered_phase_tolerance_for_q_error_0.01": 0.0050000000000000044,
+      "operator_centered_eigenvalue_tolerance_for_q_error_0.01": 2.147766323024057e-06,
+      "exact_weighted_phase_error_bound": 14.711142498005765,
+      "actual_q_fit_error": 0.023182538533665607,
+      "both_finite_bound_checks_passed": true,
+      "q_exact_real": -0.02775343983454769,
+      "q_fit_real": -0.004570901300882082,
+      "uniform_centered_phase_tolerance_for_q_error_0.01": 0.0004219982311859792,
+      "uniform_centered_eigenvalue_tolerance_for_q_error_0.01": 1.812707178633931e-07,
+      "scope": "finite float64 diagnostic; uniform stability bound is sufficient, not necessary"
+    },
+    {
+      "S": 192,
+      "dimension": 1917,
+      "pair_weight_l1": 16.668834714539464,
+      "pair_weight_cauchy_envelope": 37.749590694264654,
+      "pair_weight_over_cauchy_envelope": 0.44156332315073243,
+      "pair_weight_l1_over_sqrt_S": 1.2029695261895923,
+      "prepared_coefficient_l1": 37.749590694264626,
+      "prepared_coefficient_l1_over_sqrt_S": 2.7243420436414842,
+      "lag_pair_weight_and_error_bound": {
+        "diagonal": {
+          "pair_weight_l1": 0.006304594494996925,
+          "pair_error_bound": 0.0
+        },
+        "local_1_to_32": {
+          "pair_weight_l1": 0.4160372825032427,
+          "pair_error_bound": 0.45936812514013226
+        },
+        "mesoscopic_33_to_D_over_4": {
+          "pair_weight_l1": 5.699681573903189,
+          "pair_error_bound": 7.676597418228134
+        },
+        "macroscopic_above_D_over_4": {
+          "pair_weight_l1": 10.546811263638038,
+          "pair_error_bound": 15.957093353878893
+        }
+      },
+      "quadratic_fit_optimal_circular_phase_radius_rad": 3.1260044942874963,
+      "prepared_state_norm": 1.0000000000000007,
+      "prepared_weighted_phase_state_distance": 1.1512508105483257,
+      "operator_stability_bound": 2.0000000000000027,
+      "operator_centered_phase_tolerance_for_q_error_0.01": 0.004999999999999993,
+      "operator_centered_eigenvalue_tolerance_for_q_error_0.01": 5.397236614853188e-07,
+      "exact_weighted_phase_error_bound": 24.09305889724716,
+      "actual_q_fit_error": 0.00030329925086977107,
+      "both_finite_bound_checks_passed": true,
+      "q_exact_real": 0.009589238342634535,
+      "q_fit_real": 0.009285939091764764,
+      "uniform_centered_phase_tolerance_for_q_error_0.01": 0.0002999609802140955,
+      "uniform_centered_eigenvalue_tolerance_for_q_error_0.01": 3.237920770877542e-08,
+      "scope": "finite float64 diagnostic; uniform stability bound is sufficient, not necessary"
+    },
+    {
+      "S": 384,
+      "dimension": 3837,
+      "pair_weight_l1": 23.477411310351876,
+      "pair_weight_cauchy_envelope": 53.398492992443934,
+      "pair_weight_over_cauchy_envelope": 0.43966430501463794,
+      "pair_weight_l1_over_sqrt_S": 1.1980766289960145,
+      "prepared_coefficient_l1": 53.398492992443934,
+      "prepared_coefficient_l1_over_sqrt_S": 2.724980434688976,
+      "lag_pair_weight_and_error_bound": {
+        "diagonal": {
+          "pair_weight_l1": 0.004402000074793536,
+          "pair_error_bound": 0.0
+        },
+        "local_1_to_32": {
+          "pair_weight_l1": 0.2962477838180563,
+          "pair_error_bound": 0.36608795159743834
+        },
+        "mesoscopic_33_to_D_over_4": {
+          "pair_weight_l1": 8.368546356757587,
+          "pair_error_bound": 12.698822651372062
+        },
+        "macroscopic_above_D_over_4": {
+          "pair_weight_l1": 14.808215169701436,
+          "pair_error_bound": 24.6753789225968
+        }
+      },
+      "quadratic_fit_optimal_circular_phase_radius_rad": 3.131686575042874,
+      "prepared_state_norm": 1.0,
+      "prepared_weighted_phase_state_distance": 1.1941936325502955,
+      "operator_stability_bound": 2.0,
+      "operator_centered_phase_tolerance_for_q_error_0.01": 0.005,
+      "operator_centered_eigenvalue_tolerance_for_q_error_0.01": 1.352813852813853e-07,
+      "exact_weighted_phase_error_bound": 37.7402895255663,
+      "actual_q_fit_error": 0.02207386776012999,
+      "both_finite_bound_checks_passed": true,
+      "q_exact_real": 0.023642224388823692,
+      "q_fit_real": 0.0015683566286937012,
+      "uniform_centered_phase_tolerance_for_q_error_0.01": 0.00021297066929160772,
+      "uniform_centered_eigenvalue_tolerance_for_q_error_0.01": 5.762193433214495e-09,
+      "scope": "finite float64 diagnostic; uniform stability bound is sufficient, not necessary"
+    },
+    {
+      "S": 512,
+      "dimension": 5117,
+      "pair_weight_l1": 27.074461428496605,
+      "pair_weight_cauchy_envelope": 61.66162717761961,
+      "pair_weight_over_cauchy_envelope": 0.43908120281203694,
+      "pair_weight_l1_over_sqrt_S": 1.196533454566473,
+      "prepared_coefficient_l1": 61.661627177619614,
+      "prepared_coefficient_l1_over_sqrt_S": 2.725084669768221,
+      "lag_pair_weight_and_error_bound": {
+        "diagonal": {
+          "pair_weight_l1": 0.003835627646610985,
+          "pair_error_bound": 0.0
+        },
+        "local_1_to_32": {
+          "pair_weight_l1": 0.2576518817142205,
+          "pair_error_bound": 0.3303429408135182
+        },
+        "mesoscopic_33_to_D_over_4": {
+          "pair_weight_l1": 9.754427521776746,
+          "pair_error_bound": 15.244246028306828
+        },
+        "macroscopic_above_D_over_4": {
+          "pair_weight_l1": 17.058546397359027,
+          "pair_error_bound": 29.24229357136746
+        }
+      },
+      "quadratic_fit_optimal_circular_phase_radius_rad": 3.1341356619049066,
+      "prepared_state_norm": 0.9999999999999999,
+      "prepared_weighted_phase_state_distance": 1.1760093952097959,
+      "operator_stability_bound": 1.9999999999999996,
+      "operator_centered_phase_tolerance_for_q_error_0.01": 0.005000000000000001,
+      "operator_centered_eigenvalue_tolerance_for_q_error_0.01": 7.614522417153998e-08,
+      "exact_weighted_phase_error_bound": 44.8168825404878,
+      "actual_q_fit_error": 0.00416984576449924,
+      "both_finite_bound_checks_passed": true,
+      "q_exact_real": 0.012503551074628472,
+      "q_fit_real": 0.008333705310129232,
+      "uniform_centered_phase_tolerance_for_q_error_0.01": 0.00018467588037549527,
+      "uniform_centered_eigenvalue_tolerance_for_q_error_0.01": 2.812437262053717e-09,
+      "scope": "finite float64 diagnostic; uniform stability bound is sufficient, not necessary"
+    }
+  ]
+}

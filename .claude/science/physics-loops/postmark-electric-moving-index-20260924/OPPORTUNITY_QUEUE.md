@@ -46,6 +46,23 @@
    is `1/(4 sqrt(lambda))` on `(0,4)`. Its quantile profile proves only
    `lambda_(j,S)->4 rho^2` when `j/D_S->rho`; it gives no rate on individual
    gaps. Use it as the principal phase scale, not as a spacing theorem.
+   The new phase-accuracy probe gives an exact finite stability gate. For
+   spectral phase errors `e_j`,
+   `|delta q| <= sum_jk |c_j c_k V_jk| min(2,|e_k-e_j|)`; common phase cancels,
+   and an operator-norm bound controls the change by twice the prepared-state
+   phase-vector error. A best quadratic fit leaves the prepared state at
+   distance 0.98--1.19 from its exact phased version at S=96--512, so uniform
+   state accuracy does not certify the readout. Its actual q error is
+   nonmonotone, 0.00030--0.0232. Absolute overlap weight is dominated by
+   macroscopic lags `h>D/4` (7.5--17.1), while lags `h<=32` carry only
+   0.26--0.58 and the diagonal is below 0.009. These finite scans do not prove
+   asymptotic growth or a readout limit. Refine the campaign toward a joint
+   overlap-weighted oscillatory estimate over macroscopic lags and every
+   reciprocal alias; pointwise quantization accuracy and fixed-lag bounds
+   remain only sufficient/support routes. Total pair-weight L1 divided by
+   `sqrt(S)` is 1.197--1.209 at the four tested spins, consistent with the
+   exact envelope `||V|| ||c||_2 ||c||_1 <= O(sqrt(S))`; the Cauchy envelope
+   itself gives no signed cancellation.
 2. **Phase-accuracy gate for quantized WKB.** Local eigenvalue expansions with
    an O(S^-2) remainder are not automatically accurate at time C/4 because
    the leading phase sensitivity is O(S^2). Derive the sharp tolerance and

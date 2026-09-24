@@ -57,3 +57,20 @@ five-site fiber count reduces to the physical momentum symbol, the normalized
 trace factor is `1/2` over the signed cell coordinate, and the limiting
 moments are `4^m/(2m+1)`. The result does not differentiate the Weyl law into
 an adjacent-gap estimate. Independent review and formal audit remain pending.
+
+## Observable-aware phase accuracy checkpoint (personal follow-up branch)
+
+Branch `physics-loop/postmark-electric-quantization-phase-20260924` is based
+on `physics-loop/postmark-electric-weighted-phase-20260924`, whose bounded
+Weyl-count milestone is open as non-draft PR #9091 stacked on #9078. The new
+finite probe
+`outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_accuracy_gate_probe.py`
+records an exact phase-perturbation inequality, the operator-norm alternative
+that removes a common phase, and actual pair-weight mass by lag. At S=96,192,
+384,512, the total pair-weight L1 divided by sqrt(S) is 1.209,1.203,1.198,1.197;
+most absolute mass is at h>D/4. The best quadratic phase fit has nonmonotone
+actual q error 0.00030--0.0232 and does not approximate the prepared state in
+norm. All outputs are finite diagnostics, not evidence of a limit or separated
+subsequences. The next proof obligation is an observable-aware estimate of the
+macroscopic-lag sum with every reciprocal alias; no new theorem or PR is
+claimed by this checkpoint.

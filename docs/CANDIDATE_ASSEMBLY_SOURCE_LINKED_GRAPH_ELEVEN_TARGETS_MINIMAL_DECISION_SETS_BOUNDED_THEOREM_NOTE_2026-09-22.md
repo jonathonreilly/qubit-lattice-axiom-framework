@@ -1,7 +1,7 @@
 ---
 claim_id: candidate_assembly_source_linked_graph_eleven_targets_minimal_decision_sets_bounded_theorem_note_2026-09-22
 claim_type: bounded_theorem
-claim_scope: "Seventeenth edition of the campaign's source-linked graph: 117 nodes (2 sources, 75 landed results cited by note path and verified on disk, 3 open results of the campaign's pull requests marked open, 12 decision groups with 40 recorded candidate clauses, 6 route choices, 8 routes, and the design note's 11 preserved targets), evaluated with AND semantics for results, routes and targets and OR semantics for choices. Verified: well-formedness, acyclicity with a negative control, source linking, the exact minimal decision sets of every target. Downstream gravity has exactly four minimal decision sets: {alphabet, order law}, {alphabet, reading}, {soldering, reading, roles}, {soldering, joint units, order law, roles}; every formation set holds the order law and every static set the reading. Every one contains a frame source, soldering or the coordinate-letter alphabet: the formation routes need one (PR 8676) and so does the static route (PR 8679), which also rests on a supplied Hamiltonian, an open edge. Single-site formation reaches the uniform ice measure beyond one top cell only with plan letters (PRs 8715, 8719; plans, PR 8686), which removes {soldering, order law, roles}; beyond rows exact joint formation needs units unbounded along an axis formed as a chain, so the joint-unit route needs an order law too (PR 8720). Without the layer order the sets return to the seventh edition's, without the plan letters as well to the sixth edition's five, and without the static frame source as well to the third edition's. With relational letters only, as under possibility covariance (fixed letters unavailable, no relational first formation, roles not registered), letters in alternating pairs record the role pattern under the static reading away from the side-4 torus (PR 8750) and four-angle cycles record it on the landed ice torus (PR 8752), which needs the static reading since under the sweep reading they record none (PR 8756), so gravity's sets are {alphabet, reading}, {soldering, reading, roles}, {soldering, joint units, order law, roles} and {alphabet, order law, roles, soldering}, and the one unsoldered set is {alphabet, reading}; with single-angle relational letters only (PR 8743) it is {alphabet, reading, roles}. That route needs no supplied octant: under the rotation-covariant rule that the Admissibility text asks for, cycle letters record their octant on the landed torus (PR 8854), strong cycle letters record the frame and the roles on every window (PR 8856), and strong letters are generic (PR 8857). The formed photon route reaches the uniform ice measure only through a coordinator (PR 8686; otherwise formed ice is directed, PR 8687), and the letters may be fixed or relational (PR 8691); a positive static rule selects the equal-time Coulomb law, so the supplied Hamiltonian is needed only for dynamics (PR 8698), and formed flux moves as a persistent walk (PR 8701); relational spirals are linearly rigid on the lattice and under the static reading but amplified by the sweep (PR 8717), and locally rigid under the static reading in the full nonlinear relations (PR 8724); the landed torus ice measure has no local formation order (PR 8727), linear ice sweep rules move flux by a linear transfer, damped when strictly positive and rigid for permutations, with mixed cases beyond both (PR 8726), seven relational letters carry the frame (PR 8729), no planar window of two to five squares admits a single-site order (PR 8735), under local formation multi-qubit units leave relational first formations a fair coin (PR 8731), under the static reading with its fixed octant relational frames with Sidon angles are globally rigid, carrying the frame but no role pattern (PR 8743), that rigidity needs a global octant, since site and line orientations leave the letters flexible (PR 8744), and layer units form uniform ice on infinite prisms in the zero-flux sector (PR 8740), whose flux sectors carry a Gaussian stiffness (PR 8746); these leave the minimal sets unchanged. Landed pull requests are cited as PR N. The ice-model lane joins record dynamics: results on the supplied ice model, landed as finite diagnostics and exact conditional identities (PRs 8859 and 8864, and the fourteen PRs 8869 to 8954 in narrowed form), and two open ones, an exact weighted identity for the cubic covariance with finite L = 16 diagnostics 0.29% above the continuous calibration (open PR 8968) the same diagnostics on L = 12 and L = 24 (open PR 8984), and their planar counterpart on square-ice tori, 4.3% to 4.7% above as on the strips (open PR 8985); one-vertex scalar invariants for one neutral statistic feed gravity (PR 8918). Uniform ice and the Gaussian comparisons are supplied models, and no Gaussian law, limiting stiffness or physical field is established. These leave the minimal sets unchanged. The first edition's locality group is withdrawn (Admissibility text) and the order-law group lists no order-blind rule. No completion percentage, no identification, no clause adopted."
+claim_scope: "Eighteenth edition of the campaign's source-linked graph: 118 nodes (2 sources, 75 landed results cited by note path and verified on disk, 4 open results of the campaign's pull requests marked open, 12 decision groups with 40 recorded candidate clauses, 6 route choices, 8 routes, and the design note's 11 preserved targets), evaluated with AND semantics for results, routes and targets and OR semantics for choices. Verified: well-formedness, acyclicity with a negative control, source linking, the exact minimal decision sets of every target. Downstream gravity has exactly four minimal decision sets: {alphabet, order law}, {alphabet, reading}, {soldering, reading, roles}, {soldering, joint units, order law, roles}; every formation set holds the order law and every static set the reading. Every one contains a frame source, soldering or the coordinate-letter alphabet: the formation routes need one (PR 8676) and so does the static route (PR 8679), which also rests on a supplied Hamiltonian, an open edge. Single-site formation reaches the uniform ice measure beyond one top cell only with plan letters (PRs 8715, 8719; plans, PR 8686), which removes {soldering, order law, roles}; beyond rows exact joint formation needs units unbounded along an axis formed as a chain, so the joint-unit route needs an order law too (PR 8720). Without the layer order the sets return to the seventh edition's, without the plan letters as well to the sixth edition's five, and without the static frame source as well to the third edition's. With relational letters only, as under possibility covariance (fixed letters unavailable, no relational first formation, roles not registered), letters in alternating pairs record the role pattern under the static reading away from the side-4 torus (PR 8750) and four-angle cycles record it on the landed ice torus (PR 8752), which needs the static reading since under the sweep reading they record none (PR 8756), so gravity's sets are {alphabet, reading}, {soldering, reading, roles}, {soldering, joint units, order law, roles} and {alphabet, order law, roles, soldering}, and the one unsoldered set is {alphabet, reading}; with single-angle relational letters only (PR 8743) it is {alphabet, reading, roles}. That route needs no supplied octant: under the rotation-covariant rule that the Admissibility text asks for, cycle letters record their octant on the landed torus (PR 8854), strong cycle letters record the frame and the roles on every window (PR 8856), and strong letters are generic (PR 8857). The formed photon route reaches the uniform ice measure only through a coordinator (PR 8686; otherwise formed ice is directed, PR 8687), and the letters may be fixed or relational (PR 8691); a positive static rule selects the equal-time Coulomb law, so the supplied Hamiltonian is needed only for dynamics (PR 8698), and formed flux moves as a persistent walk (PR 8701); relational spirals are linearly rigid on the lattice and under the static reading but amplified by the sweep (PR 8717), and locally rigid under the static reading in the full nonlinear relations (PR 8724); the landed torus ice measure has no local formation order (PR 8727), linear ice sweep rules move flux by a linear transfer, damped when strictly positive and rigid for permutations, with mixed cases beyond both (PR 8726), seven relational letters carry the frame (PR 8729), no planar window of two to five squares admits a single-site order (PR 8735), nor any induced window of six squares (open PR 8993), under local formation multi-qubit units leave relational first formations a fair coin (PR 8731), under the static reading with its fixed octant relational frames with Sidon angles are globally rigid, carrying the frame but no role pattern (PR 8743), that rigidity needs a global octant, since site and line orientations leave the letters flexible (PR 8744), and layer units form uniform ice on infinite prisms in the zero-flux sector (PR 8740), whose flux sectors carry a Gaussian stiffness (PR 8746); these leave the minimal sets unchanged. Landed pull requests are cited as PR N. The ice-model lane joins record dynamics: results on the supplied ice model, landed as finite diagnostics and exact conditional identities (PRs 8859 and 8864, and the fourteen PRs 8869 to 8954 in narrowed form), and two open ones, an exact weighted identity for the cubic covariance with finite L = 16 diagnostics 0.29% above the continuous calibration (open PR 8968) the same diagnostics on L = 12 and L = 24 (open PR 8984), and their planar counterpart on square-ice tori, 4.3% to 4.7% above as on the strips (open PR 8985); one-vertex scalar invariants for one neutral statistic feed gravity (PR 8918). Uniform ice and the Gaussian comparisons are supplied models, and no Gaussian law, limiting stiffness or physical field is established. These leave the minimal sets unchanged. The first edition's locality group is withdrawn (Admissibility text) and the order-law group lists no order-blind rule. No completion percentage, no identification, no clause adopted."
 
 upstream_dependencies:
   - minimal_axioms
@@ -20,7 +20,7 @@ upstream_dependencies:
 runner: scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py
 ---
 
-# Candidate assembly, seventeenth edition: the source-linked graph and its minimal decision sets
+# Candidate assembly, eighteenth edition: the source-linked graph and its minimal decision sets
 
 **Date:** 2026-09-22
 **Type:** bounded_theorem
@@ -165,16 +165,20 @@ titles. Three open results join the lane:
   smallest wavevectors sit 4.3% to 4.7% above the planar calibration, in
   the range the strips of PR 8930 record (open PR 8985).
 
+The eighteenth edition adds that no induced window of six squares admits a
+fixed single-site order (open PR 8993). The result joins the single-site
+route, and that open edge narrows to planar windows beyond six squares.
+
 In every edition the minimal sets are unchanged.
 
 ## Result up front
 
-1. **The graph.** 117 nodes, each edge a cited result, a recorded
+1. **The graph.** 118 nodes, each edge a cited result, a recorded
    decision, or a route choice:
    - 2 sources (the axioms, the primitives);
    - 75 landed results, cited by note path and verified on disk at this
      revision;
-   - 3 open results of the campaign's pull requests, marked open;
+   - 4 open results of the campaign's pull requests, marked open;
    - 12 decision groups carrying 40 recorded candidate clauses. The
      soldering group lists the four actions of PR 8671; the
      alphabet group lists fixed and relational coordinate letters and
@@ -300,13 +304,14 @@ In every edition the minimal sets are unchanged.
      orders beyond corner growth, broadcast and the designed order (not
      classified; PR 8676), and exact formation of the uniform ice
      measure by layer units with an infinite cross-section, or by single
-     sites on planar windows beyond five squares or three-dimensional
+     sites on planar windows beyond six squares or three-dimensional
      windows beyond two cubes. Neither is searched. Finite cell units fail
      around blocks, and chains of units work (PR 8720). On prisms of
      cross-section 2 x 2, layer units are exact in the zero-flux sector
      (PR 8740). No planar window of
      two to five squares and no pair of adjacent cubes admits a
-     single-site order (PRs 8715, 8719, 8735). The static reading's
+     single-site order (PRs 8715, 8719, 8735), nor does any induced
+     window of six squares (open PR 8993). The static reading's
      nearest-neighbour admissibility of the ice measure is settled by open
      PR 8679.
    - Matter: the record/role bridge to physical fermions.
@@ -341,7 +346,7 @@ open, decision, choice, route, target) with provenance; directed edges;
 candidate menus per decision group; open edges per target; the design
 note's target list. Landed provenance is a docs/ path checked on disk;
 open provenance names one of the campaign's open pull requests (8968,
-8984 and 8985). Semantics: a decision
+8984, 8985 and 8993). Semantics: a decision
 group's minimal set is itself; a choice takes the union of its inputs'
 minimal families; every other node takes all pairwise unions of its
 inputs' families. Families are kept minimal by removing supersets. Every
@@ -359,7 +364,7 @@ superseded, and the withdrawn entries are recorded with their sources.
 
 ## Theorem 1 — Well-formedness and source linking
 
-The ledger is 2 + 75 + 3 + 12 + 6 + 8 + 11 = 117 nodes. Every edge
+The ledger is 2 + 75 + 4 + 12 + 6 + 8 + 11 = 118 nodes. Every edge
 endpoint is declared. No edge enters a source or a decision group, and
 edges leaving targets go to targets. Every landed path exists on disk.
 Every open provenance names a campaign pull request, and the locality
@@ -369,7 +374,7 @@ design note's.
 
 ## Theorem 2 — Acyclicity and minimal decision sets
 
-A depth-first topological order covers all 117 nodes, and the same sorter
+A depth-first topological order covers all 118 nodes, and the same sorter
 rejects a two-node cycle. The minimal decision sets are as stated in
 items 3 and 4. They are computed by closure over the declared edges and
 compared with independently written expected families. Every minimal set
@@ -425,7 +430,7 @@ primitive, no new comparator and no new framing is imported.
 
 ## Review record
 
-- **Seat:** first edition by one Fable 5.1 seat; second to seventeenth
+- **Seat:** first edition by one Fable 5.1 seat; second to eighteenth
   editions by one Opus 5.5 seat; no subagents.
 - **Corrections before landing (2026-09-22).** (1) The first edition
   carried a locality decision group and a conjunctive four-group account
@@ -489,7 +494,10 @@ primitive, no new comparator and no new framing is imported.
   landed title, restates the record-statistic, photon-dynamics, layer-unit
   and continuum-bridge edges and the edition texts in the landed wording,
   and renames the lane the ice-model lane. It adds open PRs 8968, 8984
-  and 8985 to the lane. The minimal sets are unchanged.
+  and 8985 to the lane. The minimal sets are unchanged. (18) The
+  eighteenth edition adds open PR 8993, no order on any induced window of
+  six squares, to the single-site route and narrows that open edge to
+  windows beyond six squares. The minimal sets are unchanged.
 - **Independence sources:** (i) landed provenance checked against the
   files at this revision; (ii) minimal sets computed by closure and
   compared with separately written expected families; (iii) the sorter
@@ -556,12 +564,13 @@ primitive, no new comparator and no new framing is imported.
 | landed ice-model node left open | provenance kind reverted | caught |
 | open result attached to the photon-route choice | result edge moved into a choice | caught |
 | planar torus result edge dropped | result edge deleted | caught |
+| six-square window result edge dropped | result edge deleted | caught |
 
-  Fifty-six of fifty-six defect mutants are caught; the cycle-guard mutant is the diagnosed non-defect.
+  Fifty-seven of fifty-seven defect mutants are caught; the cycle-guard mutant is the diagnosed non-defect.
 - **Vacuity guard:** every family is compared with an independently
   written expected family; provenance is checked on disk.
-- **Budget:** 22 checks, stdout 4143 characters (ceiling 6000),
-  under a second; a 117-node graph.
+- **Budget:** 22 checks, stdout 4143 characters (ceiling 6000; declared audit timeout 120 s),
+  under a second; a 118-node graph.
 
 ## Verification
 

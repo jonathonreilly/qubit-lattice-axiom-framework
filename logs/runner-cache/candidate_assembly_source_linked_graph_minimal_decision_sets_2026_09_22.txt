@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py
-runner_sha256: 30f37f120fa5536b26e36203311edefad4ee41d3be0da7221cdca5a6112d573d
-timeout_sec: 900
+runner_sha256: 2d4ee30a39dc635857b418f558694c765facd9870bf7de10d7582f8b038093ef
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 == 1. Well-formedness and source linking ==
-[PASS] node ledger: 2 sources, 75 landed, 3 open, 12 decision groups, 6 choices, 8 routes, 11 targets
+[PASS] node ledger: 2 sources, 75 landed, 4 open, 12 decision groups, 6 choices, 8 routes, 11 targets
 [PASS] every edge endpoint is declared; no edge enters a source or a decision; target edges go to targets
 [PASS] every landed node's provenance is a note path present on this revision of the repository
 [PASS] every open node names a campaign pull request; the withdrawn locality group is absent
@@ -15,7 +15,7 @@ status: ok
 [PASS] the eleven targets are exactly the design note's preserved list
 
 == 2. Acyclicity and minimal decision sets ==
-[PASS] the graph is acyclic over all 117 nodes, and the same sorter rejects a two-node cycle
+[PASS] the graph is acyclic over all 118 nodes, and the same sorter rejects a two-node cycle
 [PASS] gravity has exactly four minimal decision sets: every formation set holds the order law, every static set the reading :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {ORDER_LAW,ROLES,SOLDER,UNIT} | {READING,ROLES,SOLDER}
 [PASS] control: without the layer order, gravity's sets return to the seventh edition's :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {READING,ROLES,SOLDER} | {ROLES,SOLDER,UNIT}
 [PASS] single-site formation of the uniform measure needs plan letters, so soldering with an order law alone no longer reaches gravity :: single-site route: {ALPHABET,ORDER_LAW}

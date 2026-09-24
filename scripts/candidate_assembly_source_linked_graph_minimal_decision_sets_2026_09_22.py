@@ -80,12 +80,17 @@ an exact weighted identity for the cubic covariance, with finite L = 16
 diagnostics 0.29% above the continuous calibration (open PR #8968), the
 same diagnostics on L = 12 and L = 24 (open PR #8984), and their planar
 counterpart on square-ice tori, 4.3% to 4.7% above as on the strips (open
-PR #8985).  In every edition the minimal sets are unchanged.
+PR #8985).  Eighteenth edition: no induced window of six squares admits a
+fixed single-site order (open PR #8993), so the single-site open edge
+narrows to windows beyond six squares.  In every edition the minimal sets
+are unchanged.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
 import os
 import sys
+
+AUDIT_TIMEOUT_SEC = 120
 
 RESULTS = []
 
@@ -182,6 +187,7 @@ NODES = {
     "CUBIC_WEIGHTED_IDENTITY": (OP, "open PR #8968 (an exact weighted identity for the unit-arrow covariance on cubic tori; finite L = 16 diagnostics above the continuous calibration)"),
     "OFFSET_ACROSS_SIZES": (OP, "open PR #8984 (finite L = 12 and L = 24 diagnostics: the smallest wavevectors stay above the continuous calibration)"),
     "PLANAR_TORUS_OFFSET": (OP, "open PR #8985 (square ice on L x L tori: the smallest wavevectors sit 4.3% to 4.7% above the continuous calibration, as the strips do)"),
+    "SIX_SQUARE_WINDOWS": (OP, "open PR #8993 (no induced window of six squares admits a fixed single-site formation order)"),
     "DEC_SOLDER": ("decision", "recorded in SOLDER_CENSUS and SOLDER_MENU"),
     "DEC_MIRROR": ("decision", "recorded in HANDED_CENSUS"),
     "DEC_ALPHABET": ("decision", "recorded in READABILITY, ROLES_REGISTERED, FRAME_REGISTRATION, STATIC_ICE_RECORDS and UNIFORM_ICE_COORDINATION"),
@@ -264,6 +270,7 @@ EDGES = [("AX", n) for n, (k, p) in NODES.items() if k in (L, OP)] + [
     ("SPIRAL_RIGIDITY", "RELATIONAL_FRAMES"), ("STATIC_SPIRAL_RIGIDITY", "RELATIONAL_FRAMES"),
     ("FINITE_RELATIONAL_LETTERS", "RELATIONAL_FRAMES"), ("TORUS_NO_ORDER", "SINGLE_SITE_ROUTE"),
     ("LINEAR_SWEEP_TRANSPORT", "T_RECORD_DYNAMICS"), ("POLYOMINO_NO_ORDER", "SINGLE_SITE_ROUTE"),
+    ("SIX_SQUARE_WINDOWS", "SINGLE_SITE_ROUTE"),
     ("UNIT_FAIR_COIN", "RELATIONAL_FRAMES"), ("STATIC_GLOBAL_RIGIDITY", "RELATIONAL_FRAMES"),
     ("LAYER_UNITS_PRISMS", "JOINT_UNIT_ROUTE"), ("GLOBAL_OCTANT", "RELATIONAL_FRAMES"),
     ("FLUX_STIFFNESS", "JOINT_UNIT_ROUTE"),
@@ -306,7 +313,7 @@ OPEN_EDGES = {
     "T_RECORD_DYNAMICS": ["photon dynamics rests on the landed quantum Hamiltonian (supplied bridge; the equal-time law is selected by a positive static rule, PR #8698, landed; linear sweep rules move flux by a linear transfer, damped when strictly positive and rigid for permutations, with mixed cases beyond both, PR #8726, landed; for the supplied flip Hamiltonian an exact flip-graph energy identity gives finite Rayleigh quotients, and a positive-excitation bound additionally requires removing all ground-space components, PR #8905, landed)",
                           "defect densities of front-like order laws on large windows (not computed)",
                           "first-formation orders beyond corner growth, broadcast and the designed order (not classified)",
-                          "exact formation of the uniform ice measure by layer units with an infinite cross-section, or by single sites on planar windows beyond five squares or three-dimensional windows beyond two cubes (single sites not searched; finite cell units fail around blocks and chains of units work, PR #8720, landed; layer units are exact on every infinite prism in the zero-flux sector, PR #8740, landed, and their law has an exact positive-eigenvector Markov form, with finite fits to a Gaussian layer functional, PR #8896, landed; no planar window of two to five squares and no pair of adjacent cubes admits a single-site order, PRs #8715, #8719, #8735, landed)"],
+                          "exact formation of the uniform ice measure by layer units with an infinite cross-section, or by single sites on planar windows beyond six squares or three-dimensional windows beyond two cubes (single sites not searched; finite cell units fail around blocks and chains of units work, PR #8720, landed; layer units are exact on every infinite prism in the zero-flux sector, PR #8740, landed, and their law has an exact positive-eigenvector Markov form, with finite fits to a Gaussian layer functional, PR #8896, landed; no planar window of two to five squares and no pair of adjacent cubes admits a single-site order, PRs #8715, #8719, #8735, landed, and no induced window of six squares does either, open PR #8993)"],
     "T_MATTER": ["record/role bridge to physical fermions (unconstructed, per the support-rule note)"],
 }
 TARGET_BRIEF = ["formation law", "possibility domain and menus", "handedness", "Born weights", "readability",
@@ -368,8 +375,8 @@ def topo_order(nodes, parents):
 
 print("== 1. Well-formedness and source linking ==")
 kinds = {k: sum(1 for n, (kk, p) in NODES.items() if kk == k) for k in ("source", L, OP, "decision", "choice", "route", "target")}
-check("node ledger: 2 sources, 75 landed, 3 open, 12 decision groups, 6 choices, 8 routes, 11 targets",
-      kinds == {"source": 2, L: 75, OP: 3, "decision": 12, "choice": 6, "route": 8, "target": 11} and len(NODES) == 117)
+check("node ledger: 2 sources, 75 landed, 4 open, 12 decision groups, 6 choices, 8 routes, 11 targets",
+      kinds == {"source": 2, L: 75, OP: 4, "decision": 12, "choice": 6, "route": 8, "target": 11} and len(NODES) == 118)
 check("every edge endpoint is declared; no edge enters a source or a decision; target edges go to targets",
       all(u in NODES and v in NODES for u, v in EDGES)
       and all(NODES[v][0] not in ("source", "decision") for u, v in EDGES)
@@ -389,8 +396,8 @@ check("the eleven targets are exactly the design note's preserved list",
 print()
 print("== 2. Acyclicity and minimal decision sets ==")
 ACYC, ORD = topo_order(list(NODES), PARENTS)
-check("the graph is acyclic over all 117 nodes, and the same sorter rejects a two-node cycle",
-      ACYC and len(ORD) == 117 and topo_order(("a", "b"), {"a": ["b"], "b": ["a"]})[0] is False)
+check("the graph is acyclic over all 118 nodes, and the same sorter rejects a two-node cycle",
+      ACYC and len(ORD) == 118 and topo_order(("a", "b"), {"a": ["b"], "b": ["a"]})[0] is False)
 SETS = {t: decision_sets(t) for t in NODES if NODES[t][0] == "target"}
 fmt = lambda fam: " | ".join(sorted("{" + ",".join(sorted(x.replace("DEC_", "") for x in s)) + "}" for s in fam))
 EXPECT_GRAVITY = {frozenset(s) for s in (
@@ -464,7 +471,7 @@ check("the formed photon route passes through the coordinator result; directed i
       and "SPIRAL_RIGIDITY" in PARENTS["RELATIONAL_FRAMES"] and "JOINT_CELL_UNITS" in PARENTS["JOINT_UNIT_ROUTE"]
       and "DEC_ORDER_LAW" in PARENTS["JOINT_UNIT_ROUTE"] and "STATIC_SPIRAL_RIGIDITY" in PARENTS["RELATIONAL_FRAMES"]
       and "FINITE_RELATIONAL_LETTERS" in PARENTS["RELATIONAL_FRAMES"] and "TORUS_NO_ORDER" in PARENTS["SINGLE_SITE_ROUTE"]
-      and "LINEAR_SWEEP_TRANSPORT" in PARENTS["T_RECORD_DYNAMICS"] and "POLYOMINO_NO_ORDER" in PARENTS["SINGLE_SITE_ROUTE"]
+      and "LINEAR_SWEEP_TRANSPORT" in PARENTS["T_RECORD_DYNAMICS"] and "POLYOMINO_NO_ORDER" in PARENTS["SINGLE_SITE_ROUTE"] and "SIX_SQUARE_WINDOWS" in PARENTS["SINGLE_SITE_ROUTE"]
       and "UNIT_FAIR_COIN" in PARENTS["RELATIONAL_FRAMES"] and "STATIC_GLOBAL_RIGIDITY" in PARENTS["RELATIONAL_FRAMES"]
       and "LAYER_UNITS_PRISMS" in PARENTS["JOINT_UNIT_ROUTE"] and "GLOBAL_OCTANT" in PARENTS["RELATIONAL_FRAMES"]
       and "FLUX_STIFFNESS" in PARENTS["JOINT_UNIT_ROUTE"] and "PAIR_LETTER_ROLES" in PARENTS["ROLES_PAIR_LETTERS"]

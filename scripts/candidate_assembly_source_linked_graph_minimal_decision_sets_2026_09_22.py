@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Candidate assembly, twelfth edition: the source-linked graph from the axioms
+"""Candidate assembly, thirteenth edition: the source-linked graph from the axioms
 to the eleven preserved targets, with results as AND nodes, route choices as
 OR nodes, and the exact minimal decision sets of every target.
 
@@ -53,7 +53,17 @@ route needs the static reading.  Twelfth edition: that route needs no
 supplied octant.  Under the rotation-covariant rule the cycle letters record
 their octant on the landed torus (open PR #8854), strong cycle letters record
 the frame and the roles on every window (open PR #8856), and strong letters
-are generic (open PR #8857); the minimal sets are unchanged.
+are generic (open PR #8857); the minimal sets are unchanged.  Thirteenth
+edition: thirty-five of the cited pull requests have landed, so thirty-eight
+nodes now link to their landed notes and thirteen stay open.  The photon
+lane joins record dynamics.  By row transfer the flux stiffness is Gaussian
+on the square cross-section (open PR #8859).  The zero-flux layer chain is
+gapless, its gap falling as the smallest transverse wavenumber (open PR
+#8864), and its branch has the dispersion of a massless nearest-neighbour
+lattice field (open PR #8869).  The unit link field fixes one stiffness for
+the flux cost and the correlations (open PR #8871), and test defects
+interact through the lattice Green's function at that stiffness (open PR
+#8875).  The minimal sets are unchanged.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -95,47 +105,52 @@ NODES = {
     "AFFINE_REDUCTION": (OP, "open PR #8637 (menus-and-Born)"),
     "CLOCK_INVISIBILITY": (OP, "open PR #8641 (clock-and-rate)"),
     "HOLE_READS_CLOCK": (OP, "open PR #8641 (clock-and-rate)"),
-    "BLOCK_CHAIN_EQUALITY": (OP, "open PR #8643 (formation-unit)"),
-    "UNIT_DIAL": (OP, "open PR #8643 (formation-unit)"),
+    "BLOCK_CHAIN_EQUALITY": (L, D + "FORMATION_UNIT_SEQUENTIAL_VS_JOINT_COVARIANT_SETS_BLOCK_CHAIN_EQUALITY_PRODUCT_FILL_VISIBILITY_AND_GLUED_UNIT_HOLE_DISSOLUTION_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "UNIT_DIAL": (L, D + "FORMATION_UNIT_SEQUENTIAL_VS_JOINT_COVARIANT_SETS_BLOCK_CHAIN_EQUALITY_PRODUCT_FILL_VISIBILITY_AND_GLUED_UNIT_HOLE_DISSOLUTION_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
     "KERNEL_MISMATCH": (OP, "open PR #8646 (record-dynamics)"),
     "NN_EXCLUSION": (OP, "open PR #8646 (record-dynamics)"),
     "CODE_RIGIDITY": (OP, "open PR #8646 (record-dynamics)"),
-    "ORDER_BLIND_RANGE": (OP, "open PR #8663 (order-blind formation)"),
-    "UNSOLDERED_CONSTANCY": (OP, "open PR #8664 (zeros and holes)"),
-    "PAIR_FORM_HOLES": (OP, "open PR #8664 (zeros and holes)"),
-    "ORDER_VISIBLE": (OP, "open PR #8666 (holes as unrecorded sites)"),
-    "ICE_FORMATION": (OP, "open PR #8667 (ice support under formation)"),
-    "STAR_BROADCAST": (OP, "open PR #8669 (star constraints)"),
-    "ROLES_REGISTERED": (OP, "open PR #8669 (star constraints)"),
-    "ORDER_LAW_FRONTS": (OP, "open PR #8670 (order laws)"),
-    "SOLDER_MENU": (OP, "open PR #8671 (soldering menu)"),
-    "FRAME_REGISTRATION": (OP, "open PR #8676 (registered frames)"),
-    "STATIC_ICE_RECORDS": (OP, "open PR #8679 (static ice needs a frame source)"),
-    "UNIFORM_ICE_COORDINATION": (OP, "open PR #8686 (uniform ice by formation needs a coordinator)"),
-    "DIRECTED_ICE": (OP, "open PR #8687 (directed ice from sweep formation)"),
-    "RELATIONAL_FRAMES": (OP, "open PR #8691 (relational frames in one qubit)"),
-    "COULOMB_SELECTION": (OP, "open PR #8698 (positive static rules select the Coulomb measure)"),
-    "FLUX_TRANSPORT": (OP, "open PR #8701 (formed flux as a persistent walk)"),
-    "TWO_SQUARES_NO_ORDER": (OP, "open PR #8715 (two planar squares admit no local formation order; one cube needs its cube site)"),
-    "TWO_CUBES_NO_ORDER": (OP, "open PR #8719 (two adjacent cubes admit no local formation order)"),
-    "SPIRAL_RIGIDITY": (OP, "open PR #8717 (relational spirals rigid on the lattice and statically, amplified by the sweep)"),
-    "JOINT_CELL_UNITS": (OP, "open PR #8720 (joint cell units: rows yes, blocks no, in the plane and in three dimensions)"),
-    "STATIC_SPIRAL_RIGIDITY": (OP, "open PR #8724 (relational spirals locally rigid under the static reading, nonlinear)"),
-    "LINEAR_SWEEP_TRANSPORT": (OP, "open PR #8726 (every linear ice sweep rule moves flux as a damped or rigid Markov walk)"),
-    "TORUS_NO_ORDER": (OP, "open PR #8727 (the landed torus ice measure has no local formation order)"),
-    "FINITE_RELATIONAL_LETTERS": (OP, "open PR #8729 (seven relational letters carry the lattice frame)"),
-    "POLYOMINO_NO_ORDER": (OP, "open PR #8735 (no planar window of two to five squares admits a single-site order)"),
-    "UNIT_FAIR_COIN": (OP, "open PR #8731 (multi-qubit units leave relational first formations a fair coin)"),
-    "STATIC_GLOBAL_RIGIDITY": (OP, "open PR #8743 (static relational frames with a fixed octant are globally rigid for Sidon angles)"),
-    "LAYER_UNITS_PRISMS": (OP, "open PR #8740 (layer units form uniform ice on infinite prisms at zero flux)"),
-    "GLOBAL_OCTANT": (OP, "open PR #8744 (static relational rigidity needs a global octant)"),
-    "FLUX_STIFFNESS": (OP, "open PR #8746 (layer flux sectors carry a Gaussian stiffness)"),
-    "PAIR_LETTER_ROLES": (OP, "open PR #8750 (relational letters in alternating pairs record the role pattern, not on the side-4 torus)"),
-    "CYCLE_LETTER_ROLES": (OP, "open PR #8752 (relational letters in four-angle cycles record the role pattern on the landed ice torus)"),
-    "SWEEP_NO_ROLES": (OP, "open PR #8756 (under the sweep reading cycle letters record no role pattern)"),
-    "OCTANT_RECORDED": (OP, "open PR #8854 (under the rotation-covariant rule cycle letters record their octant on the landed torus)"),
-    "FOLDED_ROLES": (OP, "open PR #8856 (strong cycle letters record frame and roles on every window under the covariant rule)"),
-    "GENERIC_LETTERS": (OP, "open PR #8857 (strong cycle letters are generic)"),
+    "ORDER_BLIND_RANGE": (L, D + "ORDER_BLIND_NEAREST_NEIGHBOUR_FORMATION_INDEPENDENCE_BEYOND_NEIGHBOURS_UNSOLDERED_CONSTANCY_AND_SOLDERED_ESCAPE_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "UNSOLDERED_CONSTANCY": (L, D + "ORDER_BLIND_FORMATION_WITH_ZEROS_AND_HOLES_NEVER_FAILING_UNSOLDERED_RULES_ARE_CONSTANT_AND_HOLE_RULES_HAVE_PAIR_FORM_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "PAIR_FORM_HOLES": (L, D + "ORDER_BLIND_FORMATION_WITH_ZEROS_AND_HOLES_NEVER_FAILING_UNSOLDERED_RULES_ARE_CONSTANT_AND_HOLE_RULES_HAVE_PAIR_FORM_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "ORDER_VISIBLE": (L, D + "HOLES_AS_UNRECORDED_SITES_UNSOLDERED_ORDER_BLIND_RULES_ARE_CONSTANT_AND_THE_FORMATION_ORDER_IS_VISIBLE_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "ICE_FORMATION": (L, D + "ICE_SUPPORT_UNDER_NEAREST_NEIGHBOUR_FORMATION_VERTEX_BOUND_SOLDERED_VERTEX_RECORDS_ORDER_DEPENDENT_DEFECTS_AND_UNIFORM_ICE_ONLY_BY_CONDITIONING_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "STAR_BROADCAST": (L, D + "STAR_CONSTRAINTS_UNDER_NEAREST_NEIGHBOUR_FORMATION_UNSOLDERED_BROADCAST_BOUNDS_AND_SOLDERED_REGISTRATION_OF_THE_PARITY_ROLE_SKELETON_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "ROLES_REGISTERED": (L, D + "STAR_CONSTRAINTS_UNDER_NEAREST_NEIGHBOUR_FORMATION_UNSOLDERED_BROADCAST_BOUNDS_AND_SOLDERED_REGISTRATION_OF_THE_PARITY_ROLE_SKELETON_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "ORDER_LAW_FRONTS": (L, D + "ORDER_LAWS_FOR_EXTENDED_SOLDERED_SUPPORTS_INDEPENDENT_CLOCKS_NUCLEATE_AT_POSITIVE_DENSITY_AND_SWEEPS_HAVE_NO_FIRST_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "SOLDER_MENU": (L, D + "THE_SOLDERING_MENU_FOUR_ACTIONS_OF_THE_PROPER_CUBIC_ROTATIONS_ON_QUBIT_POSSIBILITIES_AND_WHAT_EACH_LETS_FORMATION_BUILD_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "FRAME_REGISTRATION": (L, D + "REGISTERED_FRAMES_COORDINATE_LABELS_SWEEP_RIGIDITY_CORNER_PRICE_AND_SOLDERED_EMULATION_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "STATIC_ICE_RECORDS": (L, D + "STATIC_ICE_MEASURE_NEAREST_NEIGHBOUR_ADMISSIBILITY_NEEDS_A_FRAME_SOURCE_SOLDERED_VERTEX_RECORDS_OR_COORDINATE_LETTERS_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "UNIFORM_ICE_COORDINATION": (L, D + "UNIFORM_ICE_BY_FORMATION_THE_SQUARE_LOOP_OBSTRUCTION_THE_PLAQUETTE_COORDINATOR_AND_PLANS_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "DIRECTED_ICE": (L, D + "DIRECTED_ICE_SWEEP_FORMATION_MAKES_ICE_CORRELATIONS_CAUSAL_FLUX_PROPAGATES_AS_A_DIRECTED_RANDOM_WALK_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "RELATIONAL_FRAMES": (L, D + "RELATIONAL_FRAMES_IN_ONE_QUBIT_SPIRAL_RECORDS_UNDER_POSSIBILITY_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "COULOMB_SELECTION": (L, D + "COULOMB_MEASURE_SELECTION_HARD_STATIC_ICE_RULES_ADMIT_EVERY_ICE_MEASURE_POSITIVE_RULES_SELECT_THE_UNIFORM_ONE_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "FLUX_TRANSPORT": (L, D + "FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "TWO_SQUARES_NO_ORDER": (L, D + "UNIFORM_ICE_BY_FORMATION_TWO_PLANAR_SQUARES_ADMIT_NO_LOCAL_ORDER_AND_ONE_CUBE_NEEDS_ITS_CUBE_SITE_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "TWO_CUBES_NO_ORDER": (L, D + "UNIFORM_ICE_BY_FORMATION_TWO_ADJACENT_CUBES_ADMIT_NO_LOCAL_ORDER_EVEN_WITH_BOTH_CUBE_SITES_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "SPIRAL_RIGIDITY": (L, D + "RELATIONAL_SPIRAL_FRAMES_ARE_RIGID_ON_THE_LATTICE_AND_UNDER_THE_STATIC_READING_BUT_FLEXIBLE_AND_AMPLIFIED_UNDER_THE_SWEEP_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "JOINT_CELL_UNITS": (L, D + "UNIFORM_ICE_BY_JOINT_CELL_UNITS_ROWS_YES_THE_TWO_BY_TWO_BLOCK_NO_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "STATIC_SPIRAL_RIGIDITY": (L, D + "RELATIONAL_SPIRAL_FRAMES_ARE_LOCALLY_RIGID_UNDER_THE_STATIC_READING_NONLINEAR_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "LINEAR_SWEEP_TRANSPORT": (L, D + "FORMED_FLUX_TRANSPORT_FOR_EVERY_LINEAR_ICE_SWEEP_RULE_IS_A_MARKOV_WALK_DAMPED_OR_RIGID_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "TORUS_NO_ORDER": (L, D + "THE_LANDED_TORUS_UNIFORM_ICE_MEASURE_ADMITS_NO_LOCAL_FORMATION_ORDER_EVEN_WITH_EVERY_COORDINATOR_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "FINITE_RELATIONAL_LETTERS": (L, D + "RELATIONAL_SPIRAL_LETTERS_WITH_FINITELY_MANY_VALUES_SEVEN_SUFFICE_AND_ARE_THE_FEWEST_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "POLYOMINO_NO_ORDER": (L, D + "UNIFORM_ICE_BY_SINGLE_SITES_NO_PLANAR_WINDOW_OF_TWO_TO_FIVE_SQUARES_ADMITS_A_LOCAL_FORMATION_ORDER_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "UNIT_FAIR_COIN": (L, D + "RELATIONAL_LETTERS_FORMED_BY_MULTI_QUBIT_UNITS_EVERY_SINGLE_FACE_ATTACHMENT_IS_AT_BEST_A_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "STATIC_GLOBAL_RIGIDITY": (L, D + "RELATIONAL_LETTERS_UNDER_THE_STATIC_READING_ARE_GLOBALLY_RIGID_EXACTLY_FOR_SIDON_ANGLE_SETS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "LAYER_UNITS_PRISMS": (L, D + "UNIFORM_ICE_BY_LAYER_UNITS_ON_INFINITE_PRISMS_IS_EXACT_IN_THE_ZERO_FLUX_SECTOR_THAT_LONG_PRISMS_SELECT_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "GLOBAL_OCTANT": (L, D + "RELATIONAL_LETTERS_STATIC_RIGIDITY_NEEDS_A_GLOBAL_OCTANT_SITE_AND_LINE_ORIENTATIONS_LEAVE_THE_LETTERS_FLEXIBLE_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "FLUX_STIFFNESS": (L, D + "UNIFORM_ICE_LAYER_TRANSFER_FLUX_SECTORS_CARRY_A_GAUSSIAN_STIFFNESS_INVERSE_IN_THE_CROSS_SECTION_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "PAIR_LETTER_ROLES": (L, D + "RELATIONAL_LETTERS_IN_ALTERNATING_PAIRS_RECORD_THE_ROLE_PATTERN_UNDER_THE_STATIC_READING_BUT_NOT_ON_THE_SIDE_FOUR_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "CYCLE_LETTER_ROLES": (L, D + "RELATIONAL_LETTERS_IN_FOUR_ANGLE_CYCLES_RECORD_THE_ROLE_PATTERN_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "SWEEP_NO_ROLES": (L, D + "RELATIONAL_CYCLE_LETTERS_UNDER_THE_SWEEP_READING_RECORD_NO_ROLE_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "OCTANT_RECORDED": (L, D + "RELATIONAL_CYCLE_LETTERS_RECORD_THEIR_OCTANT_UNDER_THE_ROTATION_COVARIANT_STATIC_RULE_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "FOLDED_ROLES": (L, D + "STRONG_CYCLE_LETTERS_RECORD_FRAME_AND_ROLES_UNDER_THE_ROTATION_COVARIANT_RULE_ON_EVERY_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "GENERIC_LETTERS": (L, D + "STRONG_CYCLE_LETTERS_ARE_GENERIC_EVERY_OBSTRUCTION_IS_A_NONTRIVIAL_ANGLE_RELATION_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "ROW_TRANSFER_SQUARE": (OP, "open PR #8859 (the flux stiffness is Gaussian on the square cross-section, by row transfer)"),
+    "GAPLESS_CHAIN": (OP, "open PR #8864 (the zero-flux layer chain's gap falls as the smallest transverse wavenumber)"),
+    "MASSLESS_BRANCH": (OP, "open PR #8869 (the layer transfer's branch has the dispersion of a massless nearest-neighbour lattice field)"),
+    "ONE_STIFFNESS": (OP, "open PR #8871 (the unit link field fixes one stiffness for the flux cost and the correlations)"),
+    "TEST_DEFECT_COULOMB": (OP, "open PR #8875 (test defects interact through the lattice Green's function at the flux-cost stiffness)"),
     "DEC_SOLDER": ("decision", "recorded in SOLDER_CENSUS and SOLDER_MENU"),
     "DEC_MIRROR": ("decision", "recorded in HANDED_CENSUS"),
     "DEC_ALPHABET": ("decision", "recorded in READABILITY, ROLES_REGISTERED, FRAME_REGISTRATION, STATIC_ICE_RECORDS and UNIFORM_ICE_COORDINATION"),
@@ -179,8 +194,8 @@ CANDIDATES = {
     "DEC_MIRROR": ["covariance under improper rotations", "mirror sense as registered content", "parity fix clause"],
     "DEC_ALPHABET": ["continuum Bloch alphabet", "finite orbit alphabet", "eight axis-labelled role letters",
                      "coordinate letters (Z_4^3 labels with tags)",
-                     "relational spiral letters (Bloch sphere, possibility covariance; seven values suffice, open PR #8729)",
-                     "plan letters carrying a window configuration (open PR #8686)"],
+                     "relational spiral letters (Bloch sphere, possibility covariance; seven values suffice, PR #8729, landed)",
+                     "plan letters carrying a window configuration (PR #8686, landed)"],
     "DEC_GRADING": ["graded composition", "ordinary composition with a supplied encoding"],
     "DEC_ROLES": ["window extension", "sector clause", "supplied next-nearest-neighbour role pattern"],
     "DEC_AFFINITY": ["affinity/mixture-linearity in the neighbour state", "leave the non-affine class open"],
@@ -189,12 +204,12 @@ CANDIDATES = {
     "DEC_ORDER_LAW": ["independent identical clocks", "eagerness (count) clock", "value clock",
                       "front-like law with no first formation", "time as record count"],
     "DEC_UNIT": ["single-site unit", "covariant set with product fill", "covariant set with block-chain fill", "support-aligned glued units",
-                 "units unbounded along an axis, formed as a chain (open PR #8720)"],
+                 "units unbounded along an axis, formed as a chain (PR #8720, landed)"],
     "DEC_RULE": ["order-sensitive nearest-neighbour rule", "soldered order-blind rule of nearest-neighbour reach", "support rule with holes"],
     "DEC_READING": ["formation reading of the distribution sentence", "static reading of the distribution sentence"],
 }
 WITHDRAWN = {"DEC_LOCALITY": "nearest-neighbour locality is Admissibility text (open PR #8646, corrected)",
-             "order-blind physical rule": "excluded under the unsoldered reading by the text (open PRs #8663, #8664, #8666)"}
+             "order-blind physical rule": "excluded under the unsoldered reading by the text (PRs #8663, #8664, #8666, landed)"}
 EDGES = [("AX", n) for n, (k, p) in NODES.items() if k in (L, OP)] + [
     ("PRIM", "ORDER_LAW"), ("PRIM", "ORDER_VISIBLE"), ("PRIM", "ORDER_LAW_FRONTS"),
     ("STAR_BROADCAST", "ROLES_REGISTERED"), ("FRAME_SOURCE", "ROLES_REGISTERED"),
@@ -224,6 +239,8 @@ EDGES = [("AX", n) for n, (k, p) in NODES.items() if k in (L, OP)] + [
     ("PAIR_LETTER_ROLES", "ROLES_PAIR_LETTERS"), ("DEC_READING", "ROLES_PAIR_LETTERS"), ("DEC_ALPHABET", "ROLES_PAIR_LETTERS"),
     ("CYCLE_LETTER_ROLES", "ROLES_PAIR_LETTERS"), ("SWEEP_NO_ROLES", "ROLES_PAIR_LETTERS"),
     ("OCTANT_RECORDED", "ROLES_PAIR_LETTERS"), ("FOLDED_ROLES", "ROLES_PAIR_LETTERS"), ("GENERIC_LETTERS", "ROLES_PAIR_LETTERS"),
+    ("ROW_TRANSFER_SQUARE", "T_RECORD_DYNAMICS"), ("GAPLESS_CHAIN", "T_RECORD_DYNAMICS"), ("MASSLESS_BRANCH", "T_RECORD_DYNAMICS"),
+    ("ONE_STIFFNESS", "T_RECORD_DYNAMICS"), ("TEST_DEFECT_COULOMB", "T_RECORD_DYNAMICS"),
     ("ROLES_PAIR_LETTERS", "ROLES_SOURCE"),
     ("STATIC_ICE_ROUTE", "PHOTON_ROUTE"), ("FORMED_ICE_ROUTE", "PHOTON_ROUTE"),
     ("ORDER_LAW", "T_FORMATION_LAW"), ("ORDER_VISIBLE", "T_FORMATION_LAW"), ("UNSOLDERED_CONSTANCY", "T_FORMATION_LAW"),
@@ -247,8 +264,8 @@ EDGES = [("AX", n) for n, (k, p) in NODES.items() if k in (L, OP)] + [
 ]
 OPEN_EDGES = {
     "T_GRAVITY": ["record-statistic bridge from a supported source to a curvature response (unproved)",
-                  "continuum bridge (unproved)"],
-    "T_RECORD_DYNAMICS": ["photon dynamics rests on the landed quantum Hamiltonian (supplied bridge; the equal-time law is selected by a positive static rule, open PR #8698; every linear sweep rule moves flux as a damped or rigid Markov walk, open PR #8726)",
+                  "continuum bridge (unproved; on the computed prisms the uniform ice flux behaves as one massless Gaussian lattice field with its stiffness fixed by the unit link field and lattice-Coulomb test charges, open PRs #8859, #8864, #8869, #8871, #8875)"],
+    "T_RECORD_DYNAMICS": ["photon dynamics rests on the landed quantum Hamiltonian (supplied bridge; the equal-time law is selected by a positive static rule, PR #8698, landed; linear sweep rules move flux by a linear transfer, damped when strictly positive and rigid for permutations, with mixed cases beyond both, PR #8726, landed)",
                           "defect densities of front-like order laws on large windows (not computed)",
                           "first-formation orders beyond corner growth, broadcast and the designed order (not classified)",
                           "exact formation of the uniform ice measure by layer units with an infinite cross-section, or by single sites on planar windows beyond five squares or three-dimensional windows beyond two cubes (not searched; finite cell units fail around blocks, chains of units work, open PR #8720; on prisms of cross-section 2 x 2 layer units are exact in the zero-flux sector, open PR #8740; no planar window of two to five squares and no pair of adjacent cubes admits a single-site order, open PRs #8715, #8719, #8735)"],
@@ -313,8 +330,8 @@ def topo_order(nodes, parents):
 
 print("== 1. Well-formedness and source linking ==")
 kinds = {k: sum(1 for n, (kk, p) in NODES.items() if kk == k) for k in ("source", L, OP, "decision", "choice", "route", "target")}
-check("node ledger: 2 sources, 13 landed, 46 open, 12 decision groups, 6 choices, 8 routes, 11 targets",
-      kinds == {"source": 2, L: 13, OP: 46, "decision": 12, "choice": 6, "route": 8, "target": 11} and len(NODES) == 98)
+check("node ledger: 2 sources, 51 landed, 13 open, 12 decision groups, 6 choices, 8 routes, 11 targets",
+      kinds == {"source": 2, L: 51, OP: 13, "decision": 12, "choice": 6, "route": 8, "target": 11} and len(NODES) == 103)
 check("every edge endpoint is declared; no edge enters a source or a decision; target edges go to targets",
       all(u in NODES and v in NODES for u, v in EDGES)
       and all(NODES[v][0] not in ("source", "decision") for u, v in EDGES)
@@ -334,8 +351,8 @@ check("the eleven targets are exactly the design note's preserved list",
 print()
 print("== 2. Acyclicity and minimal decision sets ==")
 ACYC, ORD = topo_order(list(NODES), PARENTS)
-check("the graph is acyclic over all 98 nodes, and the same sorter rejects a two-node cycle",
-      ACYC and len(ORD) == 98 and topo_order(("a", "b"), {"a": ["b"], "b": ["a"]})[0] is False)
+check("the graph is acyclic over all 103 nodes, and the same sorter rejects a two-node cycle",
+      ACYC and len(ORD) == 103 and topo_order(("a", "b"), {"a": ["b"], "b": ["a"]})[0] is False)
 SETS = {t: decision_sets(t) for t in NODES if NODES[t][0] == "target"}
 fmt = lambda fam: " | ".join(sorted("{" + ",".join(sorted(x.replace("DEC_", "") for x in s)) + "}" for s in fam))
 EXPECT_GRAVITY = {frozenset(s) for s in (
@@ -381,9 +398,9 @@ check("control: with relational letters only, as under possibility covariance, g
       decision_sets("T_GRAVITY", parents=PC) == PC_GRAVITY
       and {s for s in PC_GRAVITY if "DEC_SOLDER" not in s} == {frozenset({"DEC_ALPHABET", "DEC_READING"})},
       fmt(decision_sets("T_GRAVITY", parents=PC)) + "; fixed letters are unavailable and relational letters have no first "
-      "formation (open PRs 8691, 8731), so the letter scheme is empty; registered roles need fixed parity letters, and "
-      "relational letters record the role pattern: pairs away from the side-4 torus (open PR #8750), four-angle cycles on it "
-      "(open PR #8752)")
+      "formation (PRs 8691, 8731, landed), so the letter scheme is empty; registered roles need fixed parity letters, and "
+      "relational letters record the role pattern: pairs away from the side-4 torus (PR #8750, landed), four-angle cycles on it "
+      "(PR #8752, landed)")
 PC0 = {k: list(v) for k, v in PC.items()}
 PC0["ROLES_SOURCE"] = [p for p in PC["ROLES_SOURCE"] if p != "ROLES_PAIR_LETTERS"]
 PC0_GRAVITY = {frozenset(s) for s in (
@@ -391,7 +408,7 @@ PC0_GRAVITY = {frozenset(s) for s in (
     {"DEC_SOLDER", "DEC_UNIT", "DEC_ORDER_LAW", "DEC_ROLES"}, {"DEC_ALPHABET", "DEC_ORDER_LAW", "DEC_ROLES", "DEC_SOLDER"})}
 check("control: with single-angle relational letters only, the unsoldered set is {alphabet, reading, roles}",
       decision_sets("T_GRAVITY", parents=PC0) == PC0_GRAVITY,
-      fmt(decision_sets("T_GRAVITY", parents=PC0)) + "; a single-angle static record carries no role pattern (open PR #8743)")
+      fmt(decision_sets("T_GRAVITY", parents=PC0)) + "; a single-angle static record carries no role pattern (PR #8743, landed)")
 check("record dynamics: a frame source in every set (static or formed; soldering or letters)",
       SETS["T_RECORD_DYNAMICS"] == {frozenset({"DEC_READING", "DEC_SOLDER"}), frozenset({"DEC_READING", "DEC_ALPHABET"}),
                                     frozenset({"DEC_SOLDER", "DEC_UNIT", "DEC_ORDER_LAW"}), frozenset({"DEC_ALPHABET", "DEC_ORDER_LAW"})},
@@ -416,6 +433,12 @@ check("the formed photon route passes through the coordinator result; directed i
       and "CYCLE_LETTER_ROLES" in PARENTS["ROLES_PAIR_LETTERS"] and "SWEEP_NO_ROLES" in PARENTS["ROLES_PAIR_LETTERS"]
       and all(n in PARENTS["ROLES_PAIR_LETTERS"] for n in ("OCTANT_RECORDED", "FOLDED_ROLES", "GENERIC_LETTERS")),
       "the window results carry plan letters into single-site formation, the unit results carry the layer order into joint units, and the spiral, letter and multi-qubit unit results join the relational letters")
+PHOTON_LANE = ("ROW_TRANSFER_SQUARE", "GAPLESS_CHAIN", "MASSLESS_BRANCH", "ONE_STIFFNESS", "TEST_DEFECT_COULOMB")
+NOPH = {k: [q for q in v if q not in PHOTON_LANE] for k, v in PARENTS.items()}
+check("the photon-lane results feed record dynamics only and change no minimal set",
+      all([v for u, v in EDGES if u == n] == ["T_RECORD_DYNAMICS"] for n in PHOTON_LANE)
+      and all(decision_sets(t, parents=NOPH) == SETS[t] for t in SETS),
+      "a massless Gaussian lattice field with a fixed stiffness and lattice-Coulomb test charges on the computed prisms supports the photon route without adding a decision")
 check("formation law {rule, order law}; clock/rate {order law}; no target is decision-free",
       SETS["T_FORMATION_LAW"] == {frozenset({"DEC_RULE", "DEC_ORDER_LAW"})}
       and SETS["T_CLOCK_RATE"] == {frozenset({"DEC_ORDER_LAW"})}

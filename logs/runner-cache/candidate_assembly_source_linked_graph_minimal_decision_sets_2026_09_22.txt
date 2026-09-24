@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py
-runner_sha256: c9a0010136d359c48ad378a7c50bd1206dd19521cd7010ea3957b971f3639b7a
+runner_sha256: fc1162d3e07b90fde5cef0ac232c5bd675f3b3ee3a11dbafd71da905afe9d733
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 == 1. Well-formedness and source linking ==
-[PASS] node ledger: 2 sources, 13 landed, 46 open, 12 decision groups, 6 choices, 8 routes, 11 targets
+[PASS] node ledger: 2 sources, 51 landed, 13 open, 12 decision groups, 6 choices, 8 routes, 11 targets
 [PASS] every edge endpoint is declared; no edge enters a source or a decision; target edges go to targets
 [PASS] every landed node's provenance is a note path present on this revision of the repository
 [PASS] every open node names a campaign pull request; the withdrawn locality group is absent
@@ -15,22 +15,23 @@ status: ok
 [PASS] the eleven targets are exactly the design note's preserved list
 
 == 2. Acyclicity and minimal decision sets ==
-[PASS] the graph is acyclic over all 98 nodes, and the same sorter rejects a two-node cycle
+[PASS] the graph is acyclic over all 103 nodes, and the same sorter rejects a two-node cycle
 [PASS] gravity has exactly four minimal decision sets: every formation set holds the order law, every static set the reading :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {ORDER_LAW,ROLES,SOLDER,UNIT} | {READING,ROLES,SOLDER}
 [PASS] control: without the layer order, gravity's sets return to the seventh edition's :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {READING,ROLES,SOLDER} | {ROLES,SOLDER,UNIT}
 [PASS] single-site formation of the uniform measure needs plan letters, so soldering with an order law alone no longer reaches gravity :: single-site route: {ALPHABET,ORDER_LAW}
 [PASS] control: without the layer order and the plan letters, gravity's sets return to the sixth edition's five :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {ORDER_LAW,ROLES,SOLDER} | {READING,ROLES,SOLDER} | {ROLES,SOLDER,UNIT}
 [PASS] every minimal set of gravity contains a frame source: soldering or the alphabet :: the static route's supplied Hamiltonian remains an open edge
 [PASS] control: without those and the static frame source, gravity's sets return to the third edition's :: {ALPHABET,ORDER_LAW} | {ORDER_LAW,ROLES,SOLDER} | {READING,ROLES} | {ROLES,SOLDER,UNIT}
-[PASS] control: with relational letters only, as under possibility covariance, gravity's one unsoldered minimal set is {alphabet, reading} :: {ALPHABET,ORDER_LAW,ROLES,SOLDER} | {ALPHABET,READING} | {ORDER_LAW,ROLES,SOLDER,UNIT} | {READING,ROLES,SOLDER}; fixed letters are unavailable and relational letters have no first formation (open PRs 8691, 8731), so the letter scheme is empty; registered roles need fixed parity letters, and relational letters record the role pattern: pairs away from the side-4 torus (open PR #8750), four-angle cycles on it (open PR #8752)
-[PASS] control: with single-angle relational letters only, the unsoldered set is {alphabet, reading, roles} :: {ALPHABET,ORDER_LAW,ROLES,SOLDER} | {ALPHABET,READING,ROLES} | {ORDER_LAW,ROLES,SOLDER,UNIT} | {READING,ROLES,SOLDER}; a single-angle static record carries no role pattern (open PR #8743)
+[PASS] control: with relational letters only, as under possibility covariance, gravity's one unsoldered minimal set is {alphabet, reading} :: {ALPHABET,ORDER_LAW,ROLES,SOLDER} | {ALPHABET,READING} | {ORDER_LAW,ROLES,SOLDER,UNIT} | {READING,ROLES,SOLDER}; fixed letters are unavailable and relational letters have no first formation (PRs 8691, 8731, landed), so the letter scheme is empty; registered roles need fixed parity letters, and relational letters record the role pattern: pairs away from the side-4 torus (PR #8750, landed), four-angle cycles on it (PR #8752, landed)
+[PASS] control: with single-angle relational letters only, the unsoldered set is {alphabet, reading, roles} :: {ALPHABET,ORDER_LAW,ROLES,SOLDER} | {ALPHABET,READING,ROLES} | {ORDER_LAW,ROLES,SOLDER,UNIT} | {READING,ROLES,SOLDER}; a single-angle static record carries no role pattern (PR #8743, landed)
 [PASS] record dynamics: a frame source in every set (static or formed; soldering or letters) :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {ORDER_LAW,SOLDER,UNIT} | {READING,SOLDER}
 [PASS] gauge: supplied roles, or roles read from coordinate letters under formation or the static reading :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {ROLES}
 [PASS] the formed photon route passes through the coordinator result; directed ice feeds record dynamics; letters are fixed or relational :: the window results carry plan letters into single-site formation, the unit results carry the layer order into joint units, and the spiral, letter and multi-qubit unit results join the relational letters
+[PASS] the photon-lane results feed record dynamics only and change no minimal set :: a massless Gaussian lattice field with a fixed stiffness and lattice-Coulomb test charges on the computed prisms supports the photon route without adding a decision
 [PASS] formation law {rule, order law}; clock/rate {order law}; no target is decision-free
 [PASS] every decision group appears in some target's minimal sets; open edges are declared
 
-TOTAL: PASS=20 FAIL=0
+TOTAL: PASS=21 FAIL=0
 
 ----- stderr -----
 

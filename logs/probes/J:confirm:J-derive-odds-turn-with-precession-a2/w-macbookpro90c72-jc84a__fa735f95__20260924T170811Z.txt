@@ -1,0 +1,26 @@
+ok: neighbour average gamma satisfies 1 - gamma = E/6
+ok: ordered circular eigenvalue matches omega = (+Omega - i Gamma) E/6
+ok: ordered turn has real part -Gamma E/6 <= 0 for Gamma >= 0
+ok: ordered circular eigenvalue matches omega = (-Omega - i Gamma) E/6
+ok: ordered turn has real part -Gamma E/6 <= 0 for Gamma >= 0
+ok: staggered turns obey lambda^2 + 2 Gamma lambda + (Gamma^2+Omega^2)(1-gamma^2) = 0
+ok: product of staggered roots is (Gamma^2+Omega^2)(1-gamma^2)
+ok: at Gamma = 0 the frequency is Omega times sqrt(1-gamma^2)
+ok: along an axis, sqrt(1-gamma^2) = |kappa|/sqrt(3) + O(kappa^3)
+ok: axis expansion starts at |k|/sqrt(3)
+ok: overdamped slow root is -(Gamma^2+Omega^2)(1-gamma^2)/(2 Gamma) + O(eps^2)
+ok: diffusion constant is (Gamma^2+Omega^2)/(6 Gamma)
+ok: oscillation starts near |k| = sqrt(3) Gamma / sqrt(Gamma^2+Omega^2)
+ok: precession about n kills every axial function F(s·n)
+ok: on the sea F = c (K F)^6, one neighbour's log derivative is one sixth of the site's
+legendre
+ok: Z(beta) = sinh(beta)/beta is even
+ok: Legendre multiplier lambda_0(-beta) = (-1)^0 lambda_0(beta)
+ok: Legendre multiplier lambda_1(-beta) = (-1)^1 lambda_1(beta)
+ok: Legendre multiplier lambda_2(-beta) = (-1)^2 lambda_2(beta)
+ok: Legendre multiplier lambda_3(-beta) = (-1)^3 lambda_3(beta)
+ok: Legendre multiplier lambda_4(-beta) = (-1)^4 lambda_4(beta)
+ok: Legendre multiplier lambda_5(-beta) = (-1)^5 lambda_5(beta)
+TOTAL FAIL = 0
+HIT: confirmed - the ordered sea's turns have omega = (+-Omega - i Gamma) E(k)/6, with real part -Gamma E/6. The staggered sea's turns obey lambda^2 + 2 Gamma lambda + (Gamma^2+Omega^2)(1-gamma^2) = 0. They are linear, c = Omega/sqrt(3), only at Gamma = 0; for Gamma > 0 the long waves are overdamped with diffusion constant (Gamma^2+Omega^2)/(6 Gamma). Both turn channels have non-positive real part for every Omega/Gamma. The sublattice flip is the sign (-1)^ell of the Legendre multipliers.
+SUMMARY: confirmed - precession oscillates the turn channel, and a sound-like omega proportional to |k| needs the staggered sea and Gamma = 0. The numerical bracket on beta_0 and the 60-profile scan were not rebuilt. Stability of the complement modes is the attempt's argument, not this check.

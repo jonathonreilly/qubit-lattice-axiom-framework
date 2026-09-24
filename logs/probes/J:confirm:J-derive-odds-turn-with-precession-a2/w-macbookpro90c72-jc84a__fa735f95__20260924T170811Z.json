@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-odds-turn-with-precession-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc84a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/odds-turn-with-precession/referee_w-macbookpro90c72-jc84a/check.py",
+ "seed": 69691,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa735f95",
+ "started_utc": "20260924T170811Z",
+ "elapsed_s": 3.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - precession oscillates the turn channel, and a sound-like omega proportional to |k| needs the staggered sea and Gamma = 0. The numerical bracket on beta_0 and the 60-profile scan were not rebuilt. Stability of the complement modes is the attempt's argument, not this check."
+ },
+ "review": "Ordered turns have omega = (+-Omega - i Gamma) E/6; staggered turns are linear with speed Omega/sqrt(3) only when Gamma = 0, and otherwise the long waves diffuse.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:odds-turn-with-precession:a2/; its files are probes/work/derive/odds-turn-with-precession/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/odds-turn-with-precession/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "058bc99570f933fe9d50e7650c3a35a3a55e7b2ffb3cfd208121b18c38d622ed",
+ "stdout_tail": "iffusion constant is (Gamma^2+Omega^2)/(6 Gamma)\nok: oscillation starts near |k| = sqrt(3) Gamma / sqrt(Gamma^2+Omega^2)\nok: precession about n kills every axial function F(s\u00b7n)\nok: on the sea F = c (K F)^6, one neighbour's log derivative is one sixth of the site's\nlegendre\nok: Z(beta) = sinh(beta)/beta is even\nok: Legendre multiplier lambda_0(-beta) = (-1)^0 lambda_0(beta)\nok: Legendre multiplier lambda_1(-beta) = (-1)^1 lambda_1(beta)\nok: Legendre multiplier lambda_2(-beta) = (-1)^2 lambda_2(beta)\nok: Legendre multiplier lambda_3(-beta) = (-1)^3 lambda_3(beta)\nok: Legendre multiplier lambda_4(-beta) = (-1)^4 lambda_4(beta)\nok: Legendre multiplier lambda_5(-beta) = (-1)^5 lambda_5(beta)\nTOTAL FAIL = 0\nHIT: confirmed - the ordered sea's turns have omega = (+-Omega - i Gamma) E(k)/6, with real part -Gamma E/6. The staggered sea's turns obey lambda^2 + 2 Gamma lambda + (Gamma^2+Omega^2)(1-gamma^2) = 0. They are linear, c = Omega/sqrt(3), only at Gamma = 0; for Gamma > 0 the long waves are overdamped with diffusion constant (Gamma^2+Omega^2)/(6 Gamma). Both turn channels have non-positive real part for every Omega/Gamma. The sublattice flip is the sign (-1)^ell of the Legendre multipliers.\nSUMMARY: confirmed - precession oscillates the turn channel, and a sound-like omega proportional to |k| needs the staggered sea and Gamma = 0. The numerical bracket on beta_0 and the 60-profile scan were not rebuilt. Stability of the complement modes is the attempt's argument, not this check.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc84a",
+  "at_utc": "20260924T170823Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Ordered turns diffuse while they precess; staggered turns are linear only at Gamma = 0, and otherwise the long waves are overdamped.",
+  "by": "w-macbookpro90c72-jc84a",
+  "at_utc": "20260924T170823Z"
+ }
+}

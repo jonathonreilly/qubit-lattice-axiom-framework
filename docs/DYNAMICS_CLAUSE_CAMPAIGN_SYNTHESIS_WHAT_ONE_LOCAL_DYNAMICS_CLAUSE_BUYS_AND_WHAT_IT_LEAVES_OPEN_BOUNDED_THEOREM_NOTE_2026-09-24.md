@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of seventeen campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports a move; and, for the non-Abelian block, that one qubit's SU(2) commutant is the scalars and that the 4-dimensional SU(2) link carries a covariant link operator; and, for the randomizer block, that a distant record steers every chord and that the trace rule, but not a cubic deformation, matches the steered average; and, for the dynamics block, that a Weinberg-type precession lets a distant record shift a later marginal and that the transpose on half a singlet is negative; and, for the collapse block, that joint record effects with Born marginals are product projectors and that a record leaves its partner in the Lueders state; and, for the unitarity block, that proportional Kraus operators give a unitary conjugation while a random non-unitary channel mixes some pure state. It also checks that the eighteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
+claim_scope: "Synthesis of seventeen campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the covariant plaquette clause annihilating uniform ice is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports an integer move; and, for the non-Abelian block, that one qubit's SU(2) commutant is the scalars and that the 4-dimensional SU(2) link carries a covariant link operator; and, for the randomizer block, that a distant record steers every chord and that the trace rule, but not a cubic deformation, matches the steered average; and, for the dynamics block, that a Weinberg-type precession lets a distant record shift a later marginal and that the transpose on half a singlet is negative; and, for the collapse block, that joint record effects with Born marginals are product projectors and that a record leaves its partner in the Lueders state; and, for the unitarity block, that proportional Kraus operators give a unitary conjugation while a random non-unitary channel mixes some pure state. It also checks that the eighteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -136,17 +136,21 @@ one clause generates across the lanes.
       product of the flip amplitudes, so only magnitudes matter.
 11. **The covariant plaquette clause (open PR 9072).**
     - It is a ring plus four orbit potentials.
-    - Its frustration-free member is the Rokhsar–Kivelson projector. Summed
-      over plaquettes, that is the flip-graph Laplacian, whose ground states
-      record uniform ice measures by the trace rule.
-    - Unrecorded plaquette qubits instead polarize the ice, so the ring
-      needs recorded plaquette sites.
+    - The member that annihilates uniform ice is the Rokhsar–Kivelson
+      projector. Summed over plaquettes, that is the flip-graph Laplacian.
+      Its ground states record the uniform measure of each flip class by
+      the trace rule.
+    - At `D = 0` with normal fields, unrecorded plaquette qubits polarize
+      the ice. So the ring needs plaquette sites that add no such
+      potential, such as recorded ones.
 12. **The landed tensor constraints freeze (open PR 9077).**
     - The vector constraint `∂_i E_ij = 0` of the landed linear-gravity
       tensor model sits on link sites, using exactly their six neighbours.
     - Every two-site generator that respects it conserves the tensor field.
-    - No single site's neighbourhood holds a move. The smallest local
-      moves are 10-slot planar curvature pieces.
+    - For integer (or odd-N) slots, no single site's neighbourhood holds a
+      move of the E slots.
+    - The smallest local moves are 10-slot planar curvature pieces. That
+      is the minimum on the whole lattice (independent check).
 13. **Non-Abelian links need several qubits (open PR 9081).**
     - One qubit carries U(1) and Z2 links but no non-Abelian link.
     - An SU(N) link needs at least 2N states, and `(N, 1) ⊕ (1, N)`
@@ -187,8 +191,8 @@ one clause generates across the lanes.
 |---|---|---|
 | Quantum probability (Born form, frequencies, Bell) | the two-site clause; the Born law follows from locality of marginals (D-loc) and compression (D-perm) | 9041, 9043, 9046, 9052, 9083 |
 | Z2 gauge field and Majorana fermions | the two-site clause at the compass point, plus a record carving | 9048, 9054 |
-| U(1) photon | one neighbourhood: a plaquette ring, or a soft vertex Gauss energy | 9066, 9069, 9072 |
-| Linearized-gravity tensor field | more than one neighbourhood: the smallest moves span a vertex's second neighbourhood | 9077 |
+| U(1) photon | one neighbourhood: a plaquette ring (Rokhsar–Kivelson at uniform ice), or a soft vertex Gauss energy | 9066, 9069, 9072 |
+| Linearized-gravity tensor field (landed discretization, E-slot moves) | more than one neighbourhood: the smallest moves span a vertex's second neighbourhood | 9077 |
 | SU(2), SU(3) gauge fields | composite links of 2 and 3 qubits (6 for the full group) | 9081 |
 
 ## What it does not generate
@@ -209,8 +213,9 @@ one clause generates across the lanes.
   are Gauss defects, and they are bosons (open PR 9069).
 - **Gravity.** The clause supplies no long-range rate field. The landed
   linear-gravity tensor field is frozen by every two-site generator under
-  its vector constraint, and no single neighbourhood moves it (open PR
-  9077). So linearized gravity needs dynamics wider than a photon's.
+  its vector constraint. For integer slots, no single neighbourhood moves
+  its E slots (open PR 9077). So in that discretization, moving the
+  tensor field takes dynamics wider than a photon's.
 - **Parameters and supplied structure.** Generations are not addressed,
   and the values of `J`, `K`, `D` are not fixed. The formation site, time
   and rate, the relaxation profile, and how records come to form a carving
@@ -275,6 +280,13 @@ Two checkers wrote separate code and did not read the campaign's runners.
     combinations (true ranks 26 and 18).
   - Also corrected: `V = 0` needs equal field sizes, and some prose was
     overstated.
+- **The plaquette and tensor blocks (9072, 9077):** every computation
+  passes, and the tensor block's 10-slot minimum holds without a box.
+  - Corrected since: the Rokhsar–Kivelson projector is characterized by
+    annihilating uniform ice, not by term-by-term positivity.
+  - Also corrected: the polarization result needs `D = 0` and normal
+    fields. Even-N clocks admit a one-neighbourhood cube move, and the
+    landed `C2` terms fit in one neighbourhood.
 - **The charges block (9069) and the carving proof (9048):** every claim
   passes, on 22,972 carving components across nine tori.
   - The checker supplied the interior-site lemma that completes the

@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
-runner_sha256: edc0f3cbbdfc8b86f36bbb3b2e802b3164c9b8adb475b01f10fc8faffe400db6
-input_fingerprint_sha256: 69ee4048583aba031abe1c8da02d6789e675c7e69b4d6860b9a5efdbc22d5faa
+runner_sha256: c8a69913e4bbd2abe4dac1bc066b97071ff5fc682fea74191446829042968964
+input_fingerprint_sha256: 911bced000111d451a4728bdf9861579555d41c59c6c0cd61249a12f8061afad
 timeout_sec: 600
 exit_code: 0
 elapsed_sec: 0.96
@@ -29,9 +29,9 @@ status: ok
 10. where charge can live
 [PASS] no role fixes a Bloch axis; soldered links flip only against fully soldered vertices; defect hops commute :: fixed axes (vertex, link, plaquette, cube) [0, 0, 0, 0]; link-flip dims (trivial, sign twist, axis, full) [0, 0, 0, 2]; Levin-Wen 0e+00
 11. the covariant plaquette clause
-[PASS] the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector :: solution dimension 1; coefficients (ring, flippable, opposite, adjacent, odd) [1.0, 1.0, 0.0, 0.0, 0.0]
+[PASS] the covariant plaquette clause that annihilates uniform ice is the Rokhsar-Kivelson projector :: solution dimension 1; coefficients (ring, flippable, opposite, adjacent, odd) [1.0, 1.0, 0.0, 0.0, 0.0]
 12. the landed tensor constraints
-[PASS] tensor rows use exactly their link site's six neighbours; no single neighbourhood supports a move :: six-neighbour placement True; neighbourhood null dimensions (vertex, link, plaquette, cube) [0, 0, 0, 0]
+[PASS] tensor rows use exactly their link site's six neighbours; no single neighbourhood supports an integer move :: six-neighbour placement True; neighbourhood null dimensions (vertex, link, plaquette, cube) [0, 0, 0, 0]
 13. non-Abelian links
 [PASS] one qubit's SU(2) commutant is the scalars; the 4-dimensional SU(2) link carries a covariant link operator :: commutant dimension 1; covariant link operators on (2, 1) + (1, 2): 2
 14. a distant record is a recorded randomizer

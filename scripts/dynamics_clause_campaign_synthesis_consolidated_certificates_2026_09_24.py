@@ -36,8 +36,8 @@ L. Ledger: the decision points used by the seventeen blocks are exactly the
    a soldered link, covariant vertex-link terms flip the link only for a
    fully soldered vertex (dimensions 0, 0, 0, 2); single-link flips commute
    (Levin-Wen exchange phase 1).
-11. (9072) The covariant plaquette generators annihilating the symmetric
-   flippable state and all other configurations are one ray, the
+11. (9072) The covariant plaquette generators annihilating the equal-amplitude
+   flippable state and all other configurations are the line of the
    Rokhsar-Kivelson projector 2g |-><-|.
 12. (9077) Each row of the landed tensor vector constraint uses exactly its
    link site's six neighbours; every slot enters two or more rows; slot
@@ -498,7 +498,7 @@ sv[ix[flp[0]]] = sv[ix[flp[1]]] = 1
 tg = [sv] + [np.eye(16)[ix[c]] for c in confs4 if c not in flp]
 nsr = _ns(np.array([np.concatenate([G_ @ t_ for t_ in tg]) for G_ in gens_]).T)
 cf = nsr[:, 0] / nsr[0, 0]
-check("the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector",
+check("the covariant plaquette clause that annihilates uniform ice is the Rokhsar-Kivelson projector",
       nsr.shape[1] == 1 and np.allclose(cf, [1, 1, 0, 0, 0]),
       f"solution dimension {nsr.shape[1]}; coefficients (ring, flippable, opposite, adjacent, odd) {np.round(cf, 12).tolist()}")
 
@@ -556,7 +556,7 @@ def star_nullity(center):
 
 
 nul = [star_nullity(c_) for c_ in [(0, 0, 0), (1, 0, 0), (1, 1, 0), (1, 1, 1)]]
-check("tensor rows use exactly their link site's six neighbours; no single neighbourhood supports a move",
+check("tensor rows use exactly their link site's six neighbours; no single neighbourhood supports an integer move",
       six_ok and nul == [0, 0, 0, 0], f"six-neighbour placement {six_ok}; neighbourhood null dimensions (vertex, link, plaquette, cube) {nul}")
 
 # ------------------------------------------------ 13: non-Abelian links

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260924-formation-packets-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jd310",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260924-formation-packets/referee_w-macbookpro90c72-jd310/check.py",
+ "seed": 79153,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "83c086d8",
+ "started_utc": "20260924T194553Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed. On all 82872 flip components (d up to 30) of the nine open and periodic boxes, F2 separates with a nonzero constant plaquette displacement, the pair graph is connected, and the uniform vector is cyclic for the transposed jumps. For every positive rate vector and every Hermitian H killing that vector, the normalized RK projector is then the unique stationary state and a simple eigenvalue of the Lindbladian. The frozen single-parameter nullity-one controls on the open 2x2, 3x2, and 2x2x2 boxes reproduce (d = 2, 3, 9), including a Hamiltonian outside the plaquette projectors. The four-state alternating cycle is stationary and not cyclic. The general implication from a separating F to cyclicity is still open, and the frozen numerical transients were not rebuilt."
+ },
+ "review": "All 82872 flip components have a separating F2 and a cyclic uniform vector, and the frozen nullity-one controls reproduce, so the RK projector is the unique stationary state for every positive rate and every Hermitian H that kills it.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260924-formation-packets:a1/; its files are probes/work/derive/deferred-20260924-formation-packets/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260924-formation-packets/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "4e4f58f745a98ee0eb5d9a6921e4f0c2ead0db7b506f54ebe0aaaeea9635f384",
+ "stdout_tail": "components d=[2, 3, 9]; frozen rates and H=v v^T (v orthogonal to the uniform vector) each give nullity one; nonempty reindexing matches the frozen face order\nPASS K1 two-level kernel: on one flip pair the leading minor is -64 g (g^2+4 h^2), so the nullity is one for every real g != 0 and every real h\nPASS C1 alternating cycle: connected, unique common dark vector, cyclic span of dimension 2, and (v v^T + w w^T)/2 stationary; a separating F is forced to identify opposite states\ntime 3 s\nSUMMARY: confirmed. On all 82872 flip components (d up to 30) of the nine open and periodic boxes, F2 separates with a nonzero constant plaquette displacement, the pair graph is connected, and the uniform vector is cyclic for the transposed jumps. For every positive rate vector and every Hermitian H killing that vector, the normalized RK projector is then the unique stationary state and a simple eigenvalue of the Lindbladian. The frozen single-parameter nullity-one controls on the open 2x2, 3x2, and 2x2x2 boxes reproduce (d = 2, 3, 9), including a Hamiltonian outside the plaquette projectors. The four-state alternating cycle is stationary and not cyclic. The general implication from a separating F to cyclicity is still open, and the frozen numerical transients were not rebuilt.\nHIT: confirmed - the RK projector is the unique stationary state of this local cooling, for every positive rate vector and every Hermitian H that kills the uniform vector, on all 82872 flip components of the nine boxes\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd310",
+  "at_utc": "20260924T194600Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent census agrees: 82872 components, cyclic uniform vector, separating F2, and nullity one at the frozen controls, so the RK uniqueness claim stands.",
+  "by": "w-macbookpro90c72-jd310",
+  "at_utc": "20260924T194600Z"
+ }
+}

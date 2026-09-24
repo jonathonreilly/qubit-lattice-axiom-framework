@@ -1,0 +1,21 @@
+PASS V1 frozen sources: origin/main 0e6ad8285096; helper, README, and landed extract match the manifest pins; the landed file keeps geometry and gauss only
+PASS A1 local algebra: L = |+><-| is a partial isometry, L^2 = 0; Phi_a Phi_b = Phi_(ab); half the derivative at 1 is D[L]; m^T v = 2 κ P^- v on a pair
+PASS F0 base-3 lemma: F2 = sum_j 3^j s_j, s_j = ±1, is injective on every cube of dimension < 40; a signed sum of distinct powers of 3 cannot vanish
+  census 2x2o components=1 max_d=2 links=4 faces=1 skipped=0 0.0s
+  census 3x2o components=14 max_d=3 links=7 faces=2 skipped=0 0.0s
+  census 2x2x2o components=778 max_d=9 links=12 faces=6 skipped=0 0.0s
+  census 3x3o components=702 max_d=7 links=12 faces=4 skipped=0 0.0s
+  census 4x2o components=150 max_d=5 links=10 faces=3 skipped=0 0.0s
+  census 4x3o components=27078 max_d=17 links=17 faces=6 skipped=0 0.5s
+  census 2x2p components=35 max_d=6 links=8 faces=4 skipped=0 0.0s
+  census 3x2p components=710 max_d=12 links=12 faces=6 skipped=0 0.0s
+  census 3x3p components=53404 max_d=30 links=18 faces=9 skipped=0 1.8s
+PASS F1 separating function: F2 injective with a nonzero constant displacement on all 82872 components; 2x2o:1(max 2), 3x2o:14(max 3), 2x2x2o:778(max 9), 3x3o:702(max 7), 4x2o:150(max 5), 4x3o:27078(max 17), 2x2p:35(max 6), 3x2p:710(max 12), 3x3p:53404(max 30)
+PASS U1 cyclic uniform vector: pair graph connected and the uniform vector cyclic (mod 1000003, retry 1000033) on every component, d up to 30
+PASS G1 divergence: every retained plaquette flip changes the lattice divergence by zero, so each component is one Gauss sector (41 faces)
+PASS R1 frozen nullity: largest open 2x2, 3x2, 2x2x2 components d=[2, 3, 9]; frozen rates and H=v v^T (v orthogonal to the uniform vector) each give nullity one; nonempty reindexing matches the frozen face order
+PASS K1 two-level kernel: on one flip pair the leading minor is -64 g (g^2+4 h^2), so the nullity is one for every real g != 0 and every real h
+PASS C1 alternating cycle: connected, unique common dark vector, cyclic span of dimension 2, and (v v^T + w w^T)/2 stationary; a separating F is forced to identify opposite states
+time 3 s
+SUMMARY: confirmed. On all 82872 flip components (d up to 30) of the nine open and periodic boxes, F2 separates with a nonzero constant plaquette displacement, the pair graph is connected, and the uniform vector is cyclic for the transposed jumps. For every positive rate vector and every Hermitian H killing that vector, the normalized RK projector is then the unique stationary state and a simple eigenvalue of the Lindbladian. The frozen single-parameter nullity-one controls on the open 2x2, 3x2, and 2x2x2 boxes reproduce (d = 2, 3, 9), including a Hamiltonian outside the plaquette projectors. The four-state alternating cycle is stationary and not cyclic. The general implication from a separating F to cyclicity is still open, and the frozen numerical transients were not rebuilt.
+HIT: confirmed - the RK projector is the unique stationary state of this local cooling, for every positive rate vector and every Hermitian H that kills the uniform vector, on all 82872 flip components of the nine boxes

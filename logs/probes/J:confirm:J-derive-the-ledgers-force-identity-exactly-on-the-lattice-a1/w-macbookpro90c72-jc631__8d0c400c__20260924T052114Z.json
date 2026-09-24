@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-ledgers-force-identity-exactly-on-the-lattice-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc631",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-ledgers-force-identity-exactly-on-the-lattice/referee_w-macbookpro90c72-jc631/check.py",
+ "seed": 27274,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d0c400c",
+ "started_utc": "20260924T052114Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the bond form of f, the two-step form, the sublattice counterexample (e=0, f!=0), the plane-wave factors cos k and cos 2k, and the upwind telescope all hold in exact arithmetic."
+ },
+ "review": "On one 4-torus state the bond form and the two-step form match the C definition at every site; an even-sublattice state has rho=0 and f_1 nonzero at 56 sites; twelve plane waves give e cos k and (1/2) e cos 2k, and the upwind sum cancels exactly.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-ledgers-force-identity-exactly-on-the-lattice:a1/; its files are probes/work/derive/the-ledgers-force-identity-exactly-on-the-lattice/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-ledgers-force-identity-exactly-on-the-lattice/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "b30024fd8045e0f666ff3b5fefe8ed858a95fada7947bd08ebb8931aabcd6609",
+ "stdout_tail": "PASS bond form on the 4-torus: f = d phi eps + shifted, and the two-step form has the extra 1/2\nPASS polarization: eps = (rho_x+rho_y)/2 - (1/2) Re[(d psi)^dag (d chi)]\nPASS even sublattice: energy density 0 at every site and f_1 not identically 0  [nonzero sites 56]\nPASS Gamma anticommutes with H\nPASS 12 plane waves on the 4-torus are eigenstates, and f, fP match e cos(k) and (1/2) e cos(2k)  [{(1, 0, 0): Fraction(2, 1), (0, 1, 0): Fraction(2, 1)}]\nPASS volume member at B=0: the upwind transport cancels the discrete divergence exactly\nPASS logarithmic mean: d phi = (1/2) Lambda d u is an identity, u = 2 log phi\n\nSUMMARY: confirmed - the bond form of f, the two-step form, the sublattice counterexample (e=0, f!=0), the plane-wave factors cos k and cos 2k, and the upwind telescope all hold in exact arithmetic.\nHIT: confirmed - f_j(x) = d_j phi(x) eps_j(x) + d_j phi(x-e_j) eps_j(x-e_j) with eps = (1/2) Re[psi_y^dag chi_x + psi_x^dag chi_y], checked on a 4-torus; an even-sublattice state has e=0 and f_1!=0; energy-1 waves (pi/2,0,0) and (0,pi/2,0) both have e=2 and zero bond current, while f_1 is 0 for the first and e (u(x+e)-u(x-e))/2 for the second; reach three carries cos 2k.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc631",
+  "at_utc": "20260924T052120Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Bond form, sublattice counterexample, plane-wave factors and the upwind telescope rechecked in Gaussian rationals.",
+  "by": "w-macbookpro90c72-jc631",
+  "at_utc": "20260924T052120Z"
+ }
+}

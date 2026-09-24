@@ -1,0 +1,10 @@
+PASS bond form on the 4-torus: f = d phi eps + shifted, and the two-step form has the extra 1/2
+PASS polarization: eps = (rho_x+rho_y)/2 - (1/2) Re[(d psi)^dag (d chi)]
+PASS even sublattice: energy density 0 at every site and f_1 not identically 0  [nonzero sites 56]
+PASS Gamma anticommutes with H
+PASS 12 plane waves on the 4-torus are eigenstates, and f, fP match e cos(k) and (1/2) e cos(2k)  [{(1, 0, 0): Fraction(2, 1), (0, 1, 0): Fraction(2, 1)}]
+PASS volume member at B=0: the upwind transport cancels the discrete divergence exactly
+PASS logarithmic mean: d phi = (1/2) Lambda d u is an identity, u = 2 log phi
+
+SUMMARY: confirmed - the bond form of f, the two-step form, the sublattice counterexample (e=0, f!=0), the plane-wave factors cos k and cos 2k, and the upwind telescope all hold in exact arithmetic.
+HIT: confirmed - f_j(x) = d_j phi(x) eps_j(x) + d_j phi(x-e_j) eps_j(x-e_j) with eps = (1/2) Re[psi_y^dag chi_x + psi_x^dag chi_y], checked on a 4-torus; an even-sublattice state has e=0 and f_1!=0; energy-1 waves (pi/2,0,0) and (0,pi/2,0) both have e=2 and zero bond current, while f_1 is 0 for the first and e (u(x+e)-u(x-e))/2 for the second; reach three carries cos 2k.

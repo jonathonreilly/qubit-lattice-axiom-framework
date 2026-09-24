@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-the-delayed-clock-and-the-pair-law-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jd141",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-delayed-clock-and-the-pair-law/referee_w-macbookpro90c72-jd141/check.py",
+ "seed": 12488,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa909cad",
+ "started_utc": "20260924T011448Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step S3 - S3 covers the flat field and the slaved bump (itself not a product law) but no other fixed field; the narrow claim does hold after a one-line repair (a fixed field is an equilibrium of at most one configuration, R3), but section 1 weakens the task's product form (records independent of an arbitrary field law) to one deterministic field, and (a)'s hop rate, (b)'s pair-law correction and reversibility are not derived; the rate does move at order 1/Gamma (R4)"
+ },
+ "review": "Referee of a2: fails at S3 - the case split covers the flat field and the slaved bump but no other fixed field (narrow claim true after a one-line repair: a fixed field is an equilibrium of at most one configuration); section 1 weakens the task's product form to one deterministic field; (a) hop rate, (b) pair-law correction and reversibility not derived; side computation: first-order hop rate R_inf(1 - q log kappa G(0)/(2 Gamma))",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-delayed-clock-and-the-pair-law:a2/; its files are probes/work/derive/the-delayed-clock-and-the-pair-law/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-delayed-clock-and-the-pair-law/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "631f0593fb73f31e8812cce87800d4d2621dcce425f8208ac7141ca768919086",
+ "stdout_tail": "ree side computation for task (a), exact ingredients: G2(0) - G2(e) = G(0)/q with G2 = G*G (rings 3-12, q = 2; 4^3 torus, q = 6, G(0) = 1517/7680) and (-M)^+ = q G, so after a hop the linearised lag gives int (u_x - u*_x) dt = -q log(kappa) G(0)/Gamma at the new site: mean wait (1 - H)/R_inf, H = -q log(kappa) G(0)/(2 Gamma), block 95's r0 = 1/(2q)\nok   R4b: [float, executed] ring of 8, nonlinear relaxation integrated (RK4, ds = 0.01, s = Gamma t to 150): odd part of int (w_x - w*) ds per log kappa = -1.31256 vs -q G(0) = -1.31250; even part -1.1e-04; at log kappa = -0.5 the ratio is -0.9100 (nonlinear); final field within 5e-12 of the new equilibrium\nok   R5: task text vs block 95: with a = 1 on the ring of 6 (two records, every move, symbolic log kappa) detailed balance holds for exp(-2 log(kappa) sum_pairs G) = block 95's (1 - 2a) law, and fails for the task text's exp(+2 log(kappa) sum_pairs G); a2 uses block 95 only as a comparison (S4), so this does not touch its steps\nchecks: 7 ok, 0 fail\nSUMMARY: fails at step S3 - S3 covers the flat field and the slaved bump (itself not a product law) but no other fixed field; the narrow claim does hold after a one-line repair (a fixed field is an equilibrium of at most one configuration, R3), but section 1 weakens the task's product form (records independent of an arbitrary field law) to one deterministic field, and (a)'s hop rate, (b)'s pair-law correction and reversibility are not derived; the rate does move at order 1/Gamma (R4)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd141",
+  "at_utc": "20260924T011454Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

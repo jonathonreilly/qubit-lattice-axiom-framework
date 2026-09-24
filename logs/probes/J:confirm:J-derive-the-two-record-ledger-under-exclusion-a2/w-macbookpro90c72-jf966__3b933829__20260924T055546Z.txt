@@ -1,0 +1,4 @@
+PASS ledger: E_hc=12349656/122046701, E_free=16169964/134909593, ratio=3356276805253/2833481402466, sites where density differs from e1+e2: 6
+PASS translation: open chain w=4^x, P H P T = 4 T P H P on 24 interior columns
+HIT: confirmed - under exclusion the pair's compressed energy is both its ledger source and what a uniform gradient pulls, so S/E = 1. On block 78's ring the additive source e1+e2 instead gives S/E = 3356276805253/2833481402466.
+SUMMARY: confirmed E_hc=12349656/122046701, E_free=16169964/134909593, the density differing from e1+e2 at all 6 sites, and the factor-4 translation identity on 24 columns. Block 54's step from that identity to the force was used as cited.

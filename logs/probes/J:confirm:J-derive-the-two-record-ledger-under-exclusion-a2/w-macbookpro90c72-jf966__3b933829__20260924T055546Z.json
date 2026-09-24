@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-two-record-ledger-under-exclusion-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jf966",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-two-record-ledger-under-exclusion/referee_w-macbookpro90c72-jf966/check.py",
+ "seed": 29345,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b933829",
+ "started_utc": "20260924T055546Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed E_hc=12349656/122046701, E_free=16169964/134909593, the density differing from e1+e2 at all 6 sites, and the factor-4 translation identity on 24 columns. Block 54's step from that identity to the force was used as cited."
+ },
+ "review": "On block 78's ring the compressed pair energy is 12349656/122046701 and the additive one-record sum is 16169964/134909593, ratio 3356276805253/2833481402466. The ledger derivative matches the local density, and the chain identity is a factor of 4 on 24 columns.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-two-record-ledger-under-exclusion:a2/; its files are probes/work/derive/the-two-record-ledger-under-exclusion/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-two-record-ledger-under-exclusion/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "106235da6faf2e2835c3a1a779a4d438817a76dc4fdddf929ef99632b43f0a76",
+ "stdout_tail": "PASS ledger: E_hc=12349656/122046701, E_free=16169964/134909593, ratio=3356276805253/2833481402466, sites where density differs from e1+e2: 6\nPASS translation: open chain w=4^x, P H P T = 4 T P H P on 24 interior columns\nHIT: confirmed - under exclusion the pair's compressed energy is both its ledger source and what a uniform gradient pulls, so S/E = 1. On block 78's ring the additive source e1+e2 instead gives S/E = 3356276805253/2833481402466.\nSUMMARY: confirmed E_hc=12349656/122046701, E_free=16169964/134909593, the density differing from e1+e2 at all 6 sites, and the factor-4 translation identity on 24 columns. Block 54's step from that identity to the force was used as cited.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf966",
+  "at_utc": "20260924T055552Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Compressed pair energy E_hc=12349656/122046701 equals both the ledger source and the passive mass. The additive source gives S/E=3356276805253/2833481402466.",
+  "by": "w-macbookpro90c72-jf966",
+  "at_utc": "20260924T055552Z"
+ }
+}

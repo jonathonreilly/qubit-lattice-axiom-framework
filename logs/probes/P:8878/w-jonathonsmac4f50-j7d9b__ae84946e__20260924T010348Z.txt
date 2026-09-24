@@ -1,0 +1,10 @@
+PR #8878: physics-loop: admissibility induced-law block 98 - one field for records and waves: a wave passing a record turns by twice the record's pair energy at that distance
+branch physics-loop/admissibility-induced-law-block98-one-field-for-records-and-waves-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_one_field_for_records_and_waves_wave_turns_by_twice_the_pair_energy_2026_09_23.py: rc=0 PASS=11 FAIL=0
+   mutation kernel_line_sum_forged: expected B observed B ok
+   mutation deflection_halved: expected C observed C ok
+   mutation log_pair_dropped: expected D observed D ok
+   mutation anisotropic_long_waves: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

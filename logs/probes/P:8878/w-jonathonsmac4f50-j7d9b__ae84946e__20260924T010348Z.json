@@ -1,0 +1,37 @@
+{
+ "task": "P:8878",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block98-one-fi",
+ "worker": "w-jonathonsmac4f50-j7d9b",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8878",
+ "pr": 8878,
+ "branch": "physics-loop/admissibility-induced-law-block98-one-field-for-records-and-waves-20260923",
+ "git_sha": "ae84946e",
+ "started_utc": "20260924T010348Z",
+ "elapsed_s": 13.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_one_field_for_records_and_waves_wave_turns_by_twice_the_pair_energy_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #8878's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "138f1d8ea20a5baedeb259022c1d8d04cb471a599ee2ad5d2c952e4006adae3d",
+ "stdout_tail": "PR #8878: physics-loop: admissibility induced-law block 98 - one field for records and waves: a wave passing a record turns by twice the record's pair energy at that distance\nbranch physics-loop/admissibility-induced-law-block98-one-field-for-records-and-waves-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_one_field_for_records_and_waves_wave_turns_by_twice_the_pair_energy_2026_09_23.py: rc=0 PASS=11 FAIL=0\n   mutation kernel_line_sum_forged: expected B observed B ok\n   mutation deflection_halved: expected C observed C ok\n   mutation log_pair_dropped: expected D observed D ok\n   mutation anisotropic_long_waves: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7d9b",
+  "at_utc": "20260924T010401Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

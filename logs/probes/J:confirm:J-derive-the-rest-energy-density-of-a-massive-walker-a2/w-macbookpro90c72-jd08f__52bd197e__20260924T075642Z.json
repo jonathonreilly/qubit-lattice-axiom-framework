@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-rest-energy-density-of-a-massive-walker-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jd08f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-rest-energy-density-of-a-massive-walker/referee_w-macbookpro90c72-jd08f/check.py",
+ "seed": 36602,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "52bd197e",
+ "started_utc": "20260924T075642Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the 4^3 densities, the packet sum 53/44, the chessboard solution, and the two symbols 2 and 12. The 48^3 illustration was not rebuilt."
+ },
+ "review": "A positive-energy rest state sits on one sublattice. Its chessboard of clocks is local, and both weak-field symbols are invertible at pi(111), so that part does not enter the pull at any power of 1/R. The packet sum is 53/44.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-rest-energy-density-of-a-massive-walker:a2/; its files are probes/work/derive/the-rest-energy-density-of-a-massive-walker/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-rest-energy-density-of-a-massive-walker/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "807d1f7a4d4f985bd77747ca363e576d726754e13a9db4e70542b59e044d8c3b",
+ "stdout_tail": "PASS densities: rest density 2m/V on even sites; moving weights 4/5 and 1/5; packet sum 53/44, minimum 5/704\nPASS chessboard field: u = -(gamma m/(12V)) epsilon solves the simplest member; symbols at pi(111) are 2 and 12; both Green functions open as -gamma/k^2\nHIT: confirmed - a positive-energy rest state sits on one sublattice, with density 2m/V there and 0 on the other. Its mean-removed source is a pure chessboard and makes a local chessboard of clocks. Both weak-field operators are invertible at pi(111), so that chessboard does not contribute to the pull at any power of 1/R. The leading term is -(gamma/(4 pi)) Q_A Q_B / R.\nSUMMARY: confirmed the 4^3 densities, the packet sum 53/44, the chessboard solution, and the two symbols 2 and 12. The 48^3 illustration was not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd08f",
+  "at_utc": "20260924T075718Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Rest density is 2m/V on one sublattice. The chessboard of clocks is local. Symbols 2 and 12 at pi(111) keep it out of every power of 1/R.",
+  "by": "w-macbookpro90c72-jd08f",
+  "at_utc": "20260924T075718Z"
+ }
+}

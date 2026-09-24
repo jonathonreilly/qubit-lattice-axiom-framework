@@ -1,0 +1,4 @@
+PASS densities: rest density 2m/V on even sites; moving weights 4/5 and 1/5; packet sum 53/44, minimum 5/704
+PASS chessboard field: u = -(gamma m/(12V)) epsilon solves the simplest member; symbols at pi(111) are 2 and 12; both Green functions open as -gamma/k^2
+HIT: confirmed - a positive-energy rest state sits on one sublattice, with density 2m/V there and 0 on the other. Its mean-removed source is a pure chessboard and makes a local chessboard of clocks. Both weak-field operators are invertible at pi(111), so that chessboard does not contribute to the pull at any power of 1/R. The leading term is -(gamma/(4 pi)) Q_A Q_B / R.
+SUMMARY: confirmed the 4^3 densities, the packet sum 53/44, the chessboard solution, and the two symbols 2 and 12. The 48^3 illustration was not rebuilt.

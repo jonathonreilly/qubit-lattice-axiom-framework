@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-anisotropic-state-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jd93f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-anisotropic-state/referee_w-macbookpro90c72-jd93f/check.py",
+ "seed": 35104,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bd8c1224",
+ "started_utc": "20260924T073144Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the concavity, the runaway bounds, the quadrature mass, and the alternation derivative. The midpoint-grid window 0.036 < beta < 0.059 for a metastable planar state was not rebuilt."
+ },
+ "review": "The anisotropy balance has no global minimum: F falls below F(0) toward chains past max(1,(3 pi/8)(36 beta+sqrt3)) and toward planes past the matching negative bound. The sea is concave, the walk stays massless, and the alternation mass on the 4^3 torus is 1105/144.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-anisotropic-state:a1/; its files are probes/work/derive/the-anisotropic-state/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-anisotropic-state/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "15e88d5eeb24eb43c7b011cd71bfb15677073433b936828c2221b0766395daa5",
+ "stdout_tail": "PASS concave sea: sqrt(a e^{4e}+b e^{-2e}) is convex, the epsilon=0 integrand is (4a^2+14ab+b^2)/|s|^3, and the cyclic remainder sums to 0\nPASS no global minimum: F drops below F(0) past max(1,(3pi/8)(36 beta+sqrt3)) toward chains and past -max(1,3pi(36 beta+sqrt3)) toward planes\nPASS mass in quadrature: lowest H^2 eigenvalue 7.67361111 equals 1105/144; the axis operators commute\nPASS alternation threshold: d^2 E_sea / d delta^2 = -t^2/E at delta=0, and t_x^2 times the sin-k bound is (2/pi) e^{2e} log(1+pi e^{3e}/(2 sqrt2))\nPASS massless speeds: the eight zeros stay at k in {0, pi}^3 and the three speeds multiply to 1\nHIT: confirmed - F has no global minimum for any beta: it falls below F(0) toward chains past max(1,(3 pi/8)(36 beta+sqrt3)) and toward planes past -max(1,3 pi(36 beta+sqrt3)). The sea is concave. The walk stays massless, and with alternation E^2 = sum t_j^2 (sin^2 k_j + sinh^2 delta_j); on the 4^3 torus that mass is 1105/144.\nSUMMARY: confirmed the concavity, the runaway bounds, the quadrature mass, and the alternation derivative. The midpoint-grid window 0.036 < beta < 0.059 for a metastable planar state was not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd93f",
+  "at_utc": "20260924T073154Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "No global minimum for any beta. The sea is concave. The walk stays massless and the alternation mass on the 4^3 torus is 1105/144.",
+  "by": "w-macbookpro90c72-jd93f",
+  "at_utc": "20260924T073154Z"
+ }
+}

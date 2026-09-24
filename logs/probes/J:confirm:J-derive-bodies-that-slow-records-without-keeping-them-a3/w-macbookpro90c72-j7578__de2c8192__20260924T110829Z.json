@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-bodies-that-slow-records-without-keeping-them-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j7578",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/bodies-that-slow-records-without-keeping-them/referee_w-macbookpro90c72-j7578/check.py",
+ "seed": 48109,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "de2c8192",
+ "started_utc": "20260924T110829Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the box sweep, the three pair configurations, the binomial means (13/15)^7 and (37/45)^7, the half-magnitude bound, and the healing factor 5/6. No 1/r^2 force beyond the healing length is argued, not proved. Block 52's biased walk was not computed."
+ },
+ "review": "Independent sweep on [-4,4]^3 confirms unchanged number flux, shell sum 1, equal-and-opposite pair pull with the (2,1,1) fractions in units of 1/sqrt(3), binomial means (13/15)^7 and (37/45)^7, and healing q=5/6; screening past the healing length is not proved.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:bodies-that-slow-records-without-keeping-them:a3/; its files are probes/work/derive/bodies-that-slow-records-without-keeping-them/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/bodies-that-slow-records-without-keeping-them/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "880d66cdd1374b1f3b6eb9e7f68caca6985e6c5d0288c2aeb89f0eb31dcf1c7d",
+ "stdout_tail": "PASS one site: 54 directions on [-4,4]^3: slowed flux is h, every shell carries flux 1, and the number flux is 1\nPASS two sites: joint solution at three separations: action equals reaction, a lone site takes nothing, and at (2,1,1) the pull is (-1/675,-8/6075,-8/6075)\nPASS price: after 7 steps at density 1/5 and kappa 1/3, E[kappa^K]=(13/15)^7 and E[kappa^(2K)]=(37/45)^7\nPASS scalings: the run-down solves the ODE, half the magnitude by T needs (1-kappa) <= sqrt(3)/(n_b |s|_1 m0 T), the sphere bound is 4<m^2>|F|/(3 n_b^2 <m>^2 T^2), and q=5/6 with q^n = [5/6, 3125/7776, 9765625/60466176, 95367431640625/3656158440062976]\nHIT: confirmed - one slowing site leaves the number flux unchanged, and the slowed flux through every shell is 1. Two sites pull with (1-k1)(1-k2)<m^2> times the collisionless force, equal and opposite. At (2,1,1), in units of 1/sqrt(3), that pull is (-1/675,-8/6075,-8/6075). The run-down is linear in (1-kappa) and the pull is quadratic.\nSUMMARY: confirmed the box sweep, the three pair configurations, the binomial means (13/15)^7 and (37/45)^7, the half-magnitude bound, and the healing factor 5/6. No 1/r^2 force beyond the healing length is argued, not proved. Block 52's biased walk was not computed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7578",
+  "at_utc": "20260924T110841Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent exact sweep confirms the number flux, the shell sum, the equal-and-opposite pair pull, the binomial moments, and the half-magnitude bound. Screening past the healing length is not a proof.",
+  "by": "w-macbookpro90c72-j7578",
+  "at_utc": "20260924T110841Z"
+ }
+}

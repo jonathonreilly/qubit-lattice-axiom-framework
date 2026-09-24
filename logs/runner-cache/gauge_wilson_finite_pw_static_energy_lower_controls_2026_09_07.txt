@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py
+runner_sha256: 2a369e9d56dc377600d90fb537961d82c1bba017a77a40db1994742daf2b0555
+input_fingerprint_sha256: acb2b56a354de723e1b3229247bdad9f0579cbe444b19f92dc1057313c688a19
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+PASS gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py
+per_element: 8 checks; two actual cube endpoint pairs: all243 center flows, connectivity and minimal occupied energies
+per_site: 3 checks; ghost shortcut and exact ghost-vacuum recovery
+per_mode: 2 checks; missing versus complete boundary Gauss control
+per_block: 4 checks; positive-perturbation Ritz subtraction counterexample with commuting cutoff
+lattice_wide: 1 checks; R1 retains both bare path orientations; finite flows are necessary center controls, not all-SU3 admissibility or imported-theorem proof
+TOTAL: PASS=18 FAIL=0
+seconds: 0.1532021249877289; rss_MiB: 62.296875
+source_sha256: 2a369e9d56dc377600d90fb537961d82c1bba017a77a40db1994742daf2b0555
+
+----- stderr -----
+

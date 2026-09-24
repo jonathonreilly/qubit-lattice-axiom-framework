@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py
+runner_sha256: f3a036bc0726ead2117f44916cb027235983ce1fbca16b47e27f4cf5ebf2433b
+input_fingerprint_sha256: 57e8f9d6af5b6a944698ddd72b551666b10bd7e4a5a970851b546ac9449b013c
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+== 1. Well-formedness and source linking ==
+[PASS] Encoded graph predicate 1
+[PASS] Encoded graph predicate 2
+[PASS] Encoded graph predicate 3
+[PASS] Encoded graph predicate 4
+[PASS] Encoded graph predicate 5
+[PASS] Encoded graph predicate 6
+
+== 2. Acyclicity and minimal decision sets ==
+[PASS] Encoded graph predicate 7
+[PASS] Encoded graph predicate 8
+[PASS] Encoded graph predicate 9
+[PASS] Encoded graph predicate 10
+[PASS] Encoded graph predicate 11
+[PASS] Encoded graph predicate 12
+[PASS] Encoded graph predicate 13
+[PASS] Encoded graph predicate 14
+[PASS] Encoded graph predicate 15
+[PASS] Encoded graph predicate 16
+[PASS] Encoded graph predicate 17
+[PASS] Encoded graph predicate 18
+[PASS] Encoded graph predicate 19
+[PASS] Encoded graph predicate 20
+[PASS] Encoded graph predicate 21
+[PASS] Encoded graph predicate 22
+
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

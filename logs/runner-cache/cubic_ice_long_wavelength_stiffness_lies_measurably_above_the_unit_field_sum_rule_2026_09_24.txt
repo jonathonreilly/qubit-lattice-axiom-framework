@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/cubic_ice_long_wavelength_stiffness_lies_measurably_above_the_unit_field_sum_rule_2026_09_24.py
+runner_sha256: c9256758734efe355b2b00339bdaa745f15a0e339589c374c641cbbb5f6cf0d6
+input_fingerprint_sha256: 29c1c38aaf8802ae090ccd2bf2b68c989dd1d089f3053125b94856b198b94b12
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 197.47
+status: ok
+----- stdout -----
+== A. The exact L = 2 torus ==
+[PASS] all 2^24 arrow patterns give 9600 ice configurations, 880 at zero flux, in 125 winding sectors, <W^2> = 76/25 :: 9600, 880, 125, 76/25
+[PASS] the worm reproduces <W^2> and the zero-flux fraction within 4 standard errors and visits all 125 sectors :: <W^2> 3.0367 +- 0.0094 vs 3.04; zero flux 0.09155 +- 0.00065 vs 0.09167; sectors 125
+
+== B. The long-wavelength stiffness on L = 16 ==
+[PASS] every batch obeys the unit-field sum rule: the structure factor sums to N over the zone :: 40 batches of 25000 worms; largest deviation 9.1e-13
+[PASS] the smallest wavevectors give a stiffness 0.1% to 0.5% above the torus sum-rule value K_L/2, by more than 5 standard errors :: 24 wavevectors, K_L S_zz / P_zz = 0.99711 +- 0.00048; c = 0.33434 +- 0.00016 against K_L/2 = 0.333374: +0.29%, 6.0 standard errors (+0.30% from 1/3)
+
+== C. The winding ==
+[PASS] the winding stiffness also lies above the torus sum-rule value, by more than 2 standard errors and within 1% :: c_W = 0.33513 +- 0.00056, +0.53%; batch difference to the smallest wavevectors c_W - c = +0.00082 +- 0.00054 (printed, not claimed)
+
+== D. The zone profile ==
+[PASS] the ratio rises from the innermost shell to the outermost by more than 10 standard errors, the inner half of the zone lies below 1 and the outer half above 1, each by more than 20 standard errors :: shells 0.9969 +- 0.0004, 0.9970 +- 0.0003, 0.9972 +- 0.0002, 0.9980 +- 0.0001, 0.9991 +- 0.0001, 1.0005 +- 0.0001, 1.0018 +- 0.0001, 1.0034 +- 0.0001, 1.0046 +- 0.0002; inner 0.99825 +- 0.00005, outer 1.00163 +- 0.00005
+
+time 197 s
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,1 @@
+PASS P7 line (executed): packet at k = pi/3 in eps = 0.6 exp(0.001 (x - 500)), 400 steps: centroid moved -326.59 sites; exact discrete rays -326.80 (off 0.213); block 54's separable law -324.47 (off 2.118): the O(eps^2) of P3 and P5 is seen

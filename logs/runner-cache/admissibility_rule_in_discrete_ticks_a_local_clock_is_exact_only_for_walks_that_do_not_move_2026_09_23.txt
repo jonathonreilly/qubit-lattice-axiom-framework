@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_in_discrete_ticks_a_local_clock_is_exact_only_for_walks_that_do_not_move_2026_09_23.py
+runner_sha256: d26861a3f4137a13ce5211ececbd9058cd8c4551cb899d6ae777c7e166c0f073
+input_fingerprint_sha256: ed4ba6adc682154c1c34fd815f36c6f004088504a8591b3c91c14354c5c5db76
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.39
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_IN_DISCRETE_TICKS_A_LOCAL_CLOCK_IS_EXACT_ONLY_FOR_WALKS_THAT_DO_NOT_MOVE_THE_FLAT_BAND_THEOREM_AND_A_WALK_CLOCKED_TO_RELATIVE_EPS_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities; Admissibility is not a dynamics axiom and does not define a time metric (steps and clocks are supplied clauses)
+PASS: B1 T1: rotations exp(-i eps_b sigma_x) on the pairs {(up,x),(down,x+1)}, then {(down,x),(up,x+1)}, with bond angle the bond clock: U^+ U = 1 and range 2 exactly for six different angles on a ring of 6 (every clock field is allowed); U = -G^-1 (S R)^2 G, two ticks of the coined walk at theta_x = pi/2 - eps_x, and U = V^2 with V of range 1; the first-order generator has symbol 2 cos k sigma_x, which the gauge psi_x -> i^x psi_x makes 2 sin k sigma_x: twice block 54's line walk, so to first order the step is block 54's clocked walk
+PASS: C1 T2: at a uniform angle tr U/2 = 1 - 2 sin^2 eps cos^2 k and det U = 1, so sin(omega/2) = sin eps |cos k|; omega = 2 eps |cos k| (1 - (eps^2/6) sin^2 k) + O(eps^5) and eps d omega/d eps = omega (1 - (eps^2/3) sin^2 k + ...): with eps = eps0 w every frequency follows the local clock up to a relative eps^2; any separable omega = w f(k) gives exactly block 54's ray law, and the walk's own rays obey dv/dt = (2 v^2 + Psi) d_x log w with Psi in closed form (both branches), Psi = 4 eps^2 cos 2k + (eps^4/3)(2 cos 2k + 3 cos 4k - 1) + O(eps^6): block 54's law plus a term of order eps^4 (symbolic)
+PASS: D1 T3: doubling every bond angle is not two steps: tr U(2 eps)/2 - cos 2 omega(eps) = 8 sin^4 eps cos^2 k sin^2 k = 2 sin^4 eps sin^2 2k, nonzero off sin eps sin 2k = 0 (exact identity); for any field <up,x+4|U[w]^2|up,x> = sin eps_x sin eps_(x+1) sin eps_(x+2) sin eps_(x+3) (ten different angles on a ring of 10), while U[2w] reaches only two sites
+PASS: E1 T4 (the flat-band theorem, proof in the note): its interpolation step holds - evaluation at 2R + 1 distinct points of the unit circle is a bijection of the trigonometric polynomials of degree R (R = 1, 2, 3 at rational points of the circle, exact determinants); its conclusion is attained, so it cannot be strengthened: H = [[0, e^-ik], [e^ik, 0]] has H^2 = 1 and eigenvalues -1, 1 at every k, and e^(-icH) = cos c - i sin c H is a group of range-1 steps with exact clock scaling that moves nothing beyond one site; a walk that moves packets escapes the hypothesis at once: at the uniform angle with cos = 3/5 the ranges of U, U^2, U^3 are 2, 4, 6 on a ring of 12
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the one-bond rotations and the two-by-two symbols; the dispersion, its series and the ray law (symbolic)
+per_site: executed - the step on rings of 6, 10 and 12 with exact rational angles: unitarity, range, the two-tick identity, the four-site element
+per_mode: executed - the doubling defect 2 sin^4 eps sin^2 2k; the interpolation determinants for R = 1, 2, 3; control: a packet in a clock gradient
+per_block: executed - the sharp flat-band example; the ranges of U, U^2, U^3 of a moving walk
+lattice_wide: T1-T3 for every clock field on the line; T4 for every finite-range translation-invariant unitary in any dimension (proof); block 54 supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: discrete ticks and block 54's clock clause - the partial-swap walk is unitary and local for every clock field and a clock to relative eps^2 with block 54's ray law plus O(eps^4); no finite-range unitary that moves packets can follow a local clock exactly (flat-band theorem); nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

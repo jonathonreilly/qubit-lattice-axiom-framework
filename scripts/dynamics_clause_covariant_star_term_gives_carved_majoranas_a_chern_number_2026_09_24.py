@@ -38,6 +38,10 @@ diagnostics, no physical reading):
    z (lambda = 2, k_x = 1), the in-gap states sit on the two surfaces, and as
    k_y winds once they cross energies -0.01 and 0.01 once upward on one
    surface and once downward on the other.
+7. The phase needs zero dangling fields: its 12 zero modes sit entirely on
+   dangling b Majoranas. Tilting the records to give dangling fields of
+   size 0.1 couples them in, leaves 2 exact zero modes per cell, and the
+   negative bands' Chern number on the k_x planes becomes 0.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -655,6 +659,52 @@ check("chiral surface modes: on a slab open along z the in-gap states sit on the
       f"12-cell slab at k_x = 1, lambda = 2, 121 values of k_y: surface-localized in-gap states top {sum(len(x) for x in surf['top'].values())}, "
       f"bottom {sum(len(x) for x in surf['bottom'].values())}, other {n_bulklike}; signed crossings of E = -0.01 and 0.01: "
       f"top {flow['top']}, bottom {flow['bottom']}")
+
+# ------------------------------------------------ 7. the phase needs zero dangling fields
+zero_modes = None
+w0, V0 = np.linalg.eigh(H_of(uvals, ent, carv, np.array([0.3, 0.7, 1.1]), 2.0))
+zm = V0[:, np.abs(w0) < 1e-9]
+b_weight = sum(float(np.sum(np.abs(zm[carv.mid[m], :]) ** 2)) for m in carv.majs if m[0] == "b")
+rng7 = np.random.default_rng(4)
+dangling_terms = [carv.image({s_: a}) for s_ in carv.comp for a in carv.dangling[s_]]
+tilt = rng7.choice([1, -1], size=len(dangling_terms)) * rng7.uniform(0.5, 1.5, size=len(dangling_terms))
+
+
+def H_tilted(k, eps):
+    A = np.zeros((nm, nm), dtype=complex)
+    add_terms(A, [(eps * t * cf, g1, g2) for (cf, g1, g2), t in zip(dangling_terms, tilt)], k, 1.0, carv)
+    return H_of(uvals, ent, carv, k, 2.0) + 1j * A
+
+
+grid7 = [np.array(q) * 2 * np.pi / 6 for q in itertools.product(range(6), repeat=3)]
+nz7 = min(int(np.sum(np.abs(np.linalg.eigvalsh(H_tilted(k, 0.1))) < 1e-9)) for k in grid7)
+
+
+def chern_tilted(eps, p, kf, N=24):
+    a1, a2 = [a for a in range(3) if a != p]
+    ks = np.linspace(0, 2 * np.pi, N, endpoint=False)
+    vec = {}
+    for i1, k1 in enumerate(ks):
+        for i2, k2 in enumerate(ks):
+            k = np.zeros(3)
+            k[a1], k[a2], k[p] = k1, k2, kf
+            w, V = np.linalg.eigh(H_tilted(k, eps))
+            vec[(i1, i2)] = V[:, w < -1e-7]
+    if len({x.shape[1] for x in vec.values()}) != 1:
+        return None
+    tot = 0.0
+    for i1 in range(N):
+        for i2 in range(N):
+            q = [vec[(i1, i2)], vec[((i1 + 1) % N, i2)], vec[((i1 + 1) % N, (i2 + 1) % N)], vec[(i1, (i2 + 1) % N)]]
+            tot += np.angle(np.prod([np.linalg.det(q[j].conj().T @ q[(j + 1) % 4]) for j in range(4)]))
+    return tot / (2 * np.pi)
+
+
+cx7 = [chern_tilted(0.1, 0, kf) for kf in (0.5, 2.5)]
+check("the phase needs zero dangling fields: its zero modes sit on dangling b's, and tilted records of size 0.1 remove the Chern number",
+      zm.shape[1] == 12 and abs(b_weight - 12) < 1e-9 and nz7 < 12 and all(c is not None and abs(c) < 1e-6 for c in cx7),
+      f"zero modes {zm.shape[1]}, weight on dangling b's {b_weight:.3f}; with dangling fields of size 0.1 (random signs): "
+      f"exact zero modes {nz7}, Chern numbers on two k_x planes {[float(round(c, 6)) + 0.0 for c in cx7]}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

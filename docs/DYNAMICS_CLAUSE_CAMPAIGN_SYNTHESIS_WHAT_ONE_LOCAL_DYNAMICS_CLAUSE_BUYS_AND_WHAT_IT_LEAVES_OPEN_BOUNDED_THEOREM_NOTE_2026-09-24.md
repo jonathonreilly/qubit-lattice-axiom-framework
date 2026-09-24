@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of eight campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; and the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands. It also checks that the eleven declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
+claim_scope: "Synthesis of nine campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3). It also checks that the thirteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -11,7 +11,7 @@ runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_202
 
 **Date:** 2026-09-24
 **Type:** bounded_theorem
-**Status:** synthesis of eight open campaign blocks with consolidated re-derivations; unaudited.
+**Status:** synthesis of nine open campaign blocks with consolidated re-derivations; unaudited.
 
 ## The gap this campaign addressed
 
@@ -46,6 +46,8 @@ one clause generates across the lanes.
 | D-nn | Admissibility conditions: records alone, or states | 9043, 9046 |
 | D-pattern | a record carving and its contents | 9048, 9054 |
 | D-sign | the sign of the Moriya coupling | 9050 |
+| D-roles | doubled-coordinate roles (vertex, link, plaquette, cube sites) | 9066 |
+| D-gauss | a Gauss law on link sites, exact or as a soft vertex-star energy | 9066 |
 
 ## What the clause generates
 
@@ -102,13 +104,34 @@ one clause generates across the lanes.
    - Its flux is genuine, and a vison costs `0.111 |K|`.
    - Its Majorana fermions are gapped (`0.618 |K|`) above two localized
      zero modes per cell.
+9. **An exact Gauss law freezes the link field (open PR 9066).**
+   - In doubled coordinates no two link sites are adjacent. So every
+     two-site generator that respects an exact U(1) or Z2 Gauss law leaves
+     every link field conserved.
+   - The field moves by vertex–link–vertex hops or plaquette rings. Each
+     lies inside one site's neighbourhood, the set Admissibility conditions
+     on.
+   - Among the four landed rotation actions, an oriented link field is
+     covariant under full soldering alone. A dynamical vertex charge needs
+     the trivial action or the sign twist.
+   - A soft vertex-star Gauss energy lets record fields generate the ring
+     at fourth order: `g = 5h⁴/(32U³)`, with no diagonal term at that order.
 
 ## What it does not generate
 
-- **U(1), SU(2) or SU(3) gauge fields.** The gauge field found is Z2.
+- **U(1), SU(2) or SU(3) gauge fields.** The exact gauge field found is
+  Z2. A U(1) field on link sites needs one of two terms of Admissibility
+  shape (open PR 9066):
+  - a plaquette ring clause, whose covariant family contains the
+    Rokhsar–Kivelson point;
+  - a soft vertex Gauss energy, which gives the pure ring at fourth order.
+
+  The two-site clause alone freezes the field.
 - **Charged or chiral fermions.** The emergent fermions are Majorana. No
   gapless or Weyl case appears among 15 three-direction networks with
-  random record contents.
+  random record contents. No single landed action gives both an oriented
+  link field and a dynamical vertex charge. Charges then need a
+  role-dependent action, or must be defects of a soft Gauss law.
 - **Gravity.** The clause supplies no long-range rate field.
 - **Parameters and supplied structure.** Generations are not addressed,
   and the values of `J`, `K`, `D` are not fixed. The formation site, time
@@ -123,9 +146,9 @@ one clause generates across the lanes.
 ## Consolidated certificates
 
 The runner re-derives one identity per block, independently of that
-block's runner, and checks the ledger. There are nine checks and all pass
+block's runner, and checks the ledger. There are ten checks and all pass
 in about one second.
-- **L.** The eleven declared points are exactly those used by the eight
+- **L.** The thirteen declared points are exactly those used by the nine
   blocks.
 - **1.** Coupling dimensions 1, 1 and 3.
 - **2.** The projection lemma, the resultant ground state, and the
@@ -138,6 +161,9 @@ in about one second.
 - **7.** The variance identity on a random 5-qubit state.
 - **8.** The 20-site network's two sector levels, its two flat zero modes
   and its gap `0.618`.
+- **9.** The Gauss freeze on a vertex–link–vertex window, the intertwiner
+  dimensions `0, 0, 0, 1` and invariant axes `3, 1, 0, 0`, and the ring
+  element `−5/32`.
 
 ## Independent checks
 
@@ -166,6 +192,10 @@ unrecorded neighbours.
 Under full soldering, the same clause and a pattern of records produce
 emergent Majorana fermions and a Z2 gauge field, exactly, in three
 dimensions.
+
+For a U(1) photon the clause needs a companion term of Admissibility
+shape, a plaquette ring or a soft Gauss energy. The two-site clause cannot
+move a field under an exact Gauss law.
 
 The Standard Model's gauge group, charged chiral matter, gravity and the
 parameters remain open. So do the owner-level readings the decision points

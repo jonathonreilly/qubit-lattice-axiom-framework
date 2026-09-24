@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the eight blocks are exactly the
+L. Ledger: the decision points used by the nine blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -27,6 +27,11 @@ L. Ledger: the decision points used by the eight blocks are exactly the
 8. (9054) The 20-site three-direction network has one local loop per cell;
    its local flux splits the sector energies and its dispersive Majorana
    bands are gapped above two flat zero-mode bands per cell.
+9. (9066) Two-site terms on a vertex-link-vertex window that commute with
+   both Gauss operators commute with the link field; among the four landed
+   rotation actions an oriented link field is covariant for full soldering
+   alone and a vertex charge needs an invariant axis; the soft-Gauss ring
+   element is -5 h^4 / (32 U^3).
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -81,6 +86,8 @@ DECLARED = {
     "D-set": "independently formed setting records",
     "D-pattern": "record carving and contents",
     "D-sign": "sign of the Moriya coupling (handedness)",
+    "D-roles": "doubled-coordinate roles (vertex, link, plaquette, cube sites)",
+    "D-gauss": "a Gauss law on link sites, exact or as a soft vertex-star energy",
 }
 USED = {
     9040: {"D-dyn", "D-pc", "D-sold"},
@@ -91,6 +98,7 @@ USED = {
     9050: {"D-dyn", "D-sold", "D-tr", "D-menu", "D-sign"},
     9052: {"D-dyn", "D-tr", "D-menu", "D-relax"},
     9054: {"D-dyn", "D-sold", "D-perm", "D-pattern"},
+    9066: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-pattern"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -354,6 +362,41 @@ for kk in itertools.product(range(8), repeat=3):
 check("one local loop per cell; sectors split by the local flux; two flat zero modes per cell, gap above them",
       len(bonds) - 20 + 1 - 3 == 1 and len(levels) == 2 and z == 2 and g > 0.5,
       f"sector energies {levels[0]:.5f}, {levels[1]:.5f}; flat zero modes {z}; gap on 8^3 grid {g:.4f}")
+
+# ------------------------------------------------------ 9: the Gauss freeze
+print("9. an exact Gauss law and the two-site clause")
+PA = [I2, S[0], S[1], S[2]]
+# window v (vertex), l (link), w (vertex); dynamical charges s^z on v and w
+Ew = np.kron(np.kron(I2, S[2] / 2), I2)
+Qv_ = np.kron(np.kron(S[2] / 2, I2), I2)
+Qw_ = np.kron(np.kron(I2, I2), S[2] / 2)
+gauss = [Ew - Qv_, -Ew - Qw_]
+basis = [np.kron(np.kron(A, B), I2) for A in PA for B in PA] + [np.kron(np.kron(I2, A), B) for A in PA for B in PA]
+cols = [np.concatenate([(b @ g - g @ b).ravel() for g in gauss]) for b in basis]
+from scipy.linalg import null_space as _ns
+nsp = _ns(np.array(cols).T)
+frozen = max(np.linalg.norm(Hc @ Ew - Ew @ Hc) for Hc in
+             [sum(nsp[k, c] * basis[k] for k in range(len(basis))) for c in range(nsp.shape[1])])
+psign = lambda R: round(np.linalg.det(np.abs(R)))
+acts = [lambda R: np.eye(3), lambda R: np.diag([1.0, psign(R), psign(R)]), lambda R: psign(R) * np.abs(R), lambda R: R]
+itw = [_ns(np.vstack([np.kron(a(R), np.eye(3)) - np.kron(np.eye(3), R.T) for R in O])).shape[1] for a in acts]
+inv = [_ns(np.vstack([a(R) - np.eye(3) for R in O])).shape[1] for a in acts]
+# ring element: flips of the four plaquette links in all 24 orders, charges at the corners
+corner_of = [(0, 1), (1, 2), (2, 3), (3, 0)]   # link k joins corners corner_of[k]
+amp = 0.0
+for order in itertools.permutations(range(4)):
+    den = 1.0
+    ch = [0, 0, 0, 0]
+    for m in range(3):
+        a_, b_ = corner_of[order[m]]
+        ch[a_] += 1
+        ch[b_] -= 1
+        den *= -sum(c * c for c in ch)
+    amp += 1 / den
+amp /= 16
+check("two-site Gauss-invariant terms freeze E_l; oriented link field covariant for full soldering alone; ring element -5/32",
+      frozen < 1e-10 and itw == [0, 0, 0, 1] and inv == [3, 1, 0, 0] and abs(amp + 5 / 32) < 1e-12,
+      f"max |[H, E_l]| {frozen:.1e} over {nsp.shape[1]} invariant terms; intertwiners {itw}; invariant axes {inv}; ring element {amp:.6f} h^4/U^3")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

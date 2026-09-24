@@ -1,0 +1,9 @@
+PASS spectrum: lambda_1 = coth b - 1/b and lambda_2 = 1 - 3 lambda_1/b match the stated series
+PASS ordering: for beta in {0.3,1,4}, 1 > lambda_1 > ... > lambda_5 > 0 and each ratio i_l/i_{l-1} lies in (0,1)
+PASS critical value: 6 L(beta)=1 only inside the stated interval; the root is 0.5085580617855821231439599
+PASS landau: the tricritical condition is the stated quadratic, m_L^2 = 12(6L-1)+..., and lambda_2(beta_c)=0.01682809187122937965444593 < 3/38
+PASS tricritical point: beta_t=0.9579108806174962636762941, rho_t=0.5530951697762286299315705
+PASS mass strength: with mean 1, <b^6> > <b^5> > 1, so (1-rho)(1-<b^5>/<b^6>) is positive
+PASS capacities: G(0)=1.516386059151976174118382, one=0.6594626704490016591291212, adjacent=0.9838781150091256498453289, distance2=1.127572449589579153340068, cube=1.851654612328024433610886
+HIT: confirmed - lambda_1 = coth beta - 1/beta, the eigenvalues decrease, and 6 L(beta)=1 only in the stated interval. The ordered lean is continuous at beta_c because lambda_2 < 3/38. At the neutral scale the tricritical point is beta_t=0.957910880617496, rho_t=0.553095169776. One record has capacity 1/G(0); two adjacent records and the 2^3 cube match the stated capacities.
+SUMMARY: confirmed the series, the critical interval, the Landau algebra, the tricritical root, and the capacities of one site, two sites and the 2^3 cube. The sector-mass grid, the spinodal densities and the 3^3 cube were not rebuilt.

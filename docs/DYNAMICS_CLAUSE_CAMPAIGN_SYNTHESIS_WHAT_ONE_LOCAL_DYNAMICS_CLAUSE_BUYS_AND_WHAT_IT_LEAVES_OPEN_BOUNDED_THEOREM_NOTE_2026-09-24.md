@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of ten campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute. It also checks that the thirteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
+claim_scope: "Synthesis of eleven campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector. It also checks that the fourteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -11,7 +11,7 @@ runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_202
 
 **Date:** 2026-09-24
 **Type:** bounded_theorem
-**Status:** synthesis of ten open campaign blocks with consolidated re-derivations; unaudited.
+**Status:** synthesis of eleven open campaign blocks with consolidated re-derivations; unaudited.
 
 ## The gap this campaign addressed
 
@@ -48,6 +48,7 @@ one clause generates across the lanes.
 | D-sign | the sign of the Moriya coupling | 9050 |
 | D-roles | doubled-coordinate roles (vertex, link, plaquette, cube sites) | 9066, 9069 |
 | D-gauss | a Gauss law on link sites, exact or as a soft vertex-star energy | 9066, 9069 |
+| D-star | a covariant generator on a plaquette site's four link neighbours | 9072 |
 
 ## What the clause generates
 
@@ -128,6 +129,13 @@ one clause generates across the lanes.
       exchange as bosons.
     - Record-field phases are pure gauge: the ring is `−5/(2U³)` times the
       product of the flip amplitudes, so only magnitudes matter.
+11. **The covariant plaquette clause (open PR 9072).**
+    - It is a ring plus four orbit potentials.
+    - Its frustration-free member is the Rokhsar–Kivelson projector. Summed
+      over plaquettes, that is the flip-graph Laplacian, whose ground states
+      record uniform ice measures by the trace rule.
+    - Unrecorded plaquette qubits instead polarize the ice, so the ring
+      needs recorded plaquette sites.
 
 ## What it does not generate
 
@@ -158,9 +166,9 @@ one clause generates across the lanes.
 ## Consolidated certificates
 
 The runner re-derives one identity per block, independently of that
-block's runner, and checks the ledger. There are eleven checks and all
+block's runner, and checks the ledger. There are twelve checks and all
 pass in about one second.
-- **L.** The thirteen declared points are exactly those used by the ten
+- **L.** The fourteen declared points are exactly those used by the eleven
   blocks.
 - **1.** Coupling dimensions 1, 1 and 3.
 - **2.** The projection lemma, the resultant ground state, and the
@@ -178,6 +186,8 @@ pass in about one second.
   element `−5/32`.
 - **10.** No fixed Bloch axis for any role, the vertex–link flip dimensions
   `0, 0, 0, 2`, and commuting defect hops.
+- **11.** The frustration-free plaquette solution space: one ray with
+  coefficients `(1, 1, 0, 0, 0)`.
 
 ## Independent checks
 

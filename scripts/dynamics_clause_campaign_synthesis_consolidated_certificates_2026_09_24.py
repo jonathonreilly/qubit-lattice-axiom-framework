@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066, 9069). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069, 9072). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the ten blocks are exactly the
+L. Ledger: the decision points used by the eleven blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -36,6 +36,9 @@ L. Ledger: the decision points used by the ten blocks are exactly the
    a soldered link, covariant vertex-link terms flip the link only for a
    fully soldered vertex (dimensions 0, 0, 0, 2); single-link flips commute
    (Levin-Wen exchange phase 1).
+11. (9072) The covariant plaquette generators annihilating the symmetric
+   flippable state and all other configurations are one ray, the
+   Rokhsar-Kivelson projector 2g |-><-|.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -92,6 +95,7 @@ DECLARED = {
     "D-sign": "sign of the Moriya coupling (handedness)",
     "D-roles": "doubled-coordinate roles (vertex, link, plaquette, cube sites)",
     "D-gauss": "a Gauss law on link sites, exact or as a soft vertex-star energy",
+    "D-star": "a covariant generator on a plaquette site's four link neighbours",
 }
 USED = {
     9040: {"D-dyn", "D-pc", "D-sold"},
@@ -104,6 +108,7 @@ USED = {
     9054: {"D-dyn", "D-sold", "D-perm", "D-pattern"},
     9066: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-pattern"},
     9069: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-pattern"},
+    9072: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-star", "D-tr", "D-pattern"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -446,6 +451,32 @@ lw = np.linalg.norm(t3[0] @ t3[1].conj().T @ t3[2] - t3[2] @ t3[1].conj().T @ t3
 check("no role fixes a Bloch axis; soldered links flip only against fully soldered vertices; defect hops commute",
       fixed_axes == [0, 0, 0, 0] and fd == [0, 0, 0, 2] and lw < 1e-12,
       f"fixed axes (vertex, link, plaquette, cube) {fixed_axes}; link-flip dims (trivial, sign twist, axis, full) {fd}; Levin-Wen {lw:.0e}")
+
+# ------------------------------------------------ 11: the plaquette clause
+print("11. the covariant plaquette clause")
+confs4 = list(itertools.product([1, -1], repeat=4))
+cr = np.array([[1, 0, 0, 1], [-1, 1, 0, 0], [0, -1, -1, 0], [0, 0, 1, -1]])
+flp = [c for c in confs4 if not np.any(cr @ np.array(c))]
+ix = {c: i for i, c in enumerate(confs4)}
+
+
+def circ_kind(c):
+    cc = (c[0], c[1], -c[2], -c[3])
+    w_ = sum(1 for x in cc if x > 0)
+    return "flip" if w_ in (0, 4) else ("odd" if w_ in (1, 3) else ("opp" if cc[0] == cc[2] else "adj"))
+
+
+rg = np.zeros((16, 16))
+rg[ix[flp[0]], ix[flp[1]]] = rg[ix[flp[1]], ix[flp[0]]] = 1.0
+gens_ = [-rg] + [np.diag([1.0 if circ_kind(c) == k else 0.0 for c in confs4]) for k in ("flip", "opp", "adj", "odd")]
+sv = np.zeros(16)
+sv[ix[flp[0]]] = sv[ix[flp[1]]] = 1
+tg = [sv] + [np.eye(16)[ix[c]] for c in confs4 if c not in flp]
+nsr = _ns(np.array([np.concatenate([G_ @ t_ for t_ in tg]) for G_ in gens_]).T)
+cf = nsr[:, 0] / nsr[0, 0]
+check("the frustration-free covariant plaquette clause is the Rokhsar-Kivelson projector",
+      nsr.shape[1] == 1 and np.allclose(cf, [1, 1, 0, 0, 0]),
+      f"solution dimension {nsr.shape[1]}; coefficients (ring, flippable, opposite, adjacent, odd) {np.round(cf, 12).tolist()}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

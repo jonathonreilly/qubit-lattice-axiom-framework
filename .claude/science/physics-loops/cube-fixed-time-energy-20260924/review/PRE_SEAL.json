@@ -1,0 +1,27 @@
+{
+  "kind": "independent_pre_author_release_reconstruction",
+  "sealed_at_utc": "2026-09-24T11:15:52.904015+00:00",
+  "base_commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "planning_instruction_commit": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "pre_file": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-energy-independent/PRE.md",
+  "pre_sha256": "1681b7333d6244bcad00b8b287b6fd0e621c466a0d1b61d0c53295edd1576e58",
+  "new_author_argument_read": false,
+  "new_fifth_checkpoint_read": false,
+  "delegation_used": false,
+  "formal_audit_status_applied": false,
+  "source_hashes_verified_at_seal": {
+    "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "docs/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY_BOUNDED_THEOREM_NOTE_2026-09-24.md": "072d6024923f05c00f5fd1e80e1dc3952a77c773b48886bd59b7be97adc28133",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "docs/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "9e13c659e9a418e9e77e619a3cbd82d371f8219003a92e49fb2cc9ac5f87d6c7"
+  },
+  "evidence_hashes": {
+    "independent_primitives.py": "54f61f0f2997e3c74fe881236b6d18662d2fa49688b75b1187ae995831fffb1b",
+    "PRIMITIVE_RESULTS.json": "c7434c06b5fa799064056a50127bfdb1f302b6b0bdfaf12f381e56130f0c1bd1",
+    "independent_primitives.log": "e6e9d89e512095e156d30cd7ab2ca6f515f9591e333ad5adab39e813c8a810ec"
+  },
+  "control_execution_exit_code": 0,
+  "control_complete_output_inspected": true,
+  "conclusion": "Conditional joint-limit vanishing of the birth-scaled microscopic mean, second moment and variance at positive physical times; no unscaled boundedness or decay rate established."
+}

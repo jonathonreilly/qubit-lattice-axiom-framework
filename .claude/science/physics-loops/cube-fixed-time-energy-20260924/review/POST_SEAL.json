@@ -1,0 +1,31 @@
+{
+  "kind": "released_author_post_comparison",
+  "sealed_at_utc": "2026-09-24T11:22:57.700325+00:00",
+  "post_file": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-energy-independent/POST.md",
+  "post_sha256": "31728208ff3c1fe813f418c891d0592803de33a4a87c52ad09d7f397612a7a11",
+  "prior_pre_sha256": "1681b7333d6244bcad00b8b287b6fd0e621c466a0d1b61d0c53295edd1576e58",
+  "prior_pre_seal_sha256": "ab8add60721daeb55da75a082dd6c94e958ab9747c8543f9f7cd40a9be19b288",
+  "pre_preserved_unchanged": true,
+  "author_root": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/.claude/science/physics-loops/mobile-record-next-gaps-20260924/fixed_time_energy_author",
+  "reviewed_hashes": {
+    "FIXED_TIME_ACTUAL_BIRTH_ENERGY.md": "083a916c73714a687d1cee0ec93c91594e6aa8e7a135ec12b50a60c238b9bb35",
+    "cube_control.py": "cf51bc234d72cb26667b740dddf9f29b27b3c43826dac74df941401a113df125",
+    "control_attempt01/fixed_time_controls.py": "abd7a07671cb482547a3e0d172c244331c1ca9ed55e767fac20e6c2176b6599b",
+    "control_attempt01/FIXED_TIME_CONTROL_RESULTS.json": "fed0d1015a74d6c9292359b861736fb661175f22113899a815558e2f9a94f7bf",
+    "control_attempt01/CONTROL.stdout": "4098d28d68eca33bb83ac347369bc78022cec0228fe1e8fc39e41b27c1ae8050",
+    "control_attempt01/CONTROL.stderr": "26795562885d164bc471d4962d6ff38ea439b39ba1f625199c1a33d63da3263c",
+    "control_attempt01/CUBE_CONTROL_epsilon_0.1.json": "b69b94689c4c78fc5c97d1134cf2b2c6ad2f8cd2d95278ef3d4e2735f6f7da88",
+    "control_attempt01/CUBE_CONTROL_epsilon_0.075.json": "17efeec10160a02434a73c9e3b6b175e3fd7b863ff28370a26f915672c1b98d5",
+    "control_attempt01/CUBE_CONTROL_epsilon_0.05.json": "454d4bc58dbfa1ac4b0a6d69729dc3fb6fc96a9f4b9807ca7749af6b9e9e50d7"
+  },
+  "material_mathematical_findings": [],
+  "evidence_limitations": [
+    "First frozen numerical attempt is consistency evidence, not a joint-limit proof.",
+    "Commutation and propagated norm decrease alone do not identify the spectral projector.",
+    "Historical attempt snapshot requires staging its exact builder for reproduction.",
+    "Unsealed revised control source and normalization family not reviewed."
+  ],
+  "mathematical_disposition": "Released source agrees with independent reconstruction under the same supplied-model hypotheses. No theorem correction requested.",
+  "numerical_runs_repeated": false,
+  "formal_audit_status_applied": false
+}

@@ -1,0 +1,83 @@
+{
+  "source_sha256": "62bbf596ac7db4455fc4e6ddea393bd9d105a4625e24d4b34433db5dec66912f",
+  "rows": [
+    {
+      "name": "loss_sign",
+      "source_sha256": "62bbf596ac7db4455fc4e6ddea393bd9d105a4625e24d4b34433db5dec66912f",
+      "mutant_sha256": "e1158816ba947e3b62790974f90bc1c40b6a1ff66f17625077ccc7f10a7f1166",
+      "change_before": "heff=h-.5j*kappa*eps**2*Gamma",
+      "change_after": "heff=h+.5j*kappa*eps**2*Gamma",
+      "invoked": "small_controls",
+      "returncode": 1,
+      "expected_assertion": "assert np.max(np.diff(oblique))<2e-13",
+      "failed_as_expected": true,
+      "elapsed_seconds": 0.6048817920964211,
+      "observed_traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/loss_sign/driver.py\", line 4, in <module>\n    mutant.small_controls()\n    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/loss_sign/scripts/mutant.py\", line 89, in small_controls\n    assert np.max(np.diff(oblique))<2e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "observed_stdout": ""
+    },
+    {
+      "name": "wrong_grade",
+      "source_sha256": "62bbf596ac7db4455fc4e6ddea393bd9d105a4625e24d4b34433db5dec66912f",
+      "mutant_sha256": "80b055d6be61935c25b137375828be736626e28b6290ea30c8e720fb2f3b5578",
+      "change_before": "riesz_action(heff,X,1,",
+      "change_after": "riesz_action(heff,X,0,",
+      "invoked": "complete_cube_controls",
+      "returncode": 1,
+      "expected_assertion": "assert np.max(abs(normcols(e32)/epsilon**2-ell))<40*epsilon**2",
+      "failed_as_expected": true,
+      "elapsed_seconds": 21.694952708901837,
+      "observed_traceback": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/wrong_grade/scripts/mutant.py:101: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.\n  h=diags(m4['W'])-epsilon*(m4['F']+m4['F'].T)+epsilon**2*m4['C']\n/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/wrong_grade/scripts/mutant.py:123: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.\n  h=(diags(m6['W'])-epsilon*(F+F.T)+epsilon**2*m6['C']).tocsc()\nTraceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/wrong_grade/driver.py\", line 4, in <module>\n    mutant.complete_cube_controls()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/wrong_grade/scripts/mutant.py\", line 129, in complete_cube_controls\n    assert np.max(abs(normcols(e32)/epsilon**2-ell))<40*epsilon**2\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "observed_stdout": "Complete spin-one spaces built: {4: 3197, 6: 5604, 8: 672}\n"
+    },
+    {
+      "name": "mean_scale",
+      "source_sha256": "62bbf596ac7db4455fc4e6ddea393bd9d105a4625e24d4b34433db5dec66912f",
+      "mutant_sha256": "9a5b29b4578c6101640fe6fd4ce5d3e126a9a38bbc5a7bdaba8b7ca8ab84d2c9",
+      "change_before": "(h@x),axis=0).real/epsilon**2",
+      "change_after": "(h@x),axis=0).real/epsilon**4",
+      "invoked": "complete_cube_controls",
+      "returncode": 1,
+      "expected_assertion": "assert np.max(abs(scaled_mean[0]-ell))<30*epsilon**2",
+      "failed_as_expected": false,
+      "elapsed_seconds": 49.84562533395365,
+      "observed_traceback": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/mean_scale/scripts/mutant.py:101: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.\n  h=diags(m4['W'])-epsilon*(m4['F']+m4['F'].T)+epsilon**2*m4['C']\n/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/mean_scale/scripts/mutant.py:123: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.\n  h=(diags(m6['W'])-epsilon*(F+F.T)+epsilon**2*m6['C']).tocsc()\nTraceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/mean_scale/driver.py\", line 4, in <module>\n    mutant.complete_cube_controls()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/mean_scale/scripts/mutant.py\", line 144, in complete_cube_controls\n    assert scaled_second.min()>=0 and scaled_variance.min()>-2e-9\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "observed_stdout": "Complete spin-one spaces built: {4: 3197, 6: 5604, 8: 672}\n"
+    },
+    {
+      "name": "canonical_overlap",
+      "source_sha256": "62bbf596ac7db4455fc4e6ddea393bd9d105a4625e24d4b34433db5dec66912f",
+      "mutant_sha256": "3e876d1ca96063ad701d2294410fdb73dbf694d5d2c06ef87423a342dc9dc68e",
+      "change_before": "(q/np.sqrt(w))",
+      "change_after": "(q*np.sqrt(w))",
+      "invoked": "complete_cube_controls",
+      "returncode": 1,
+      "expected_assertion": "assert abs(np.vdot(v,v).real-1)<2e-10",
+      "failed_as_expected": true,
+      "elapsed_seconds": 2.3187929580453783,
+      "observed_traceback": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/canonical_overlap/scripts/mutant.py:101: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.\n  h=diags(m4['W'])-epsilon*(m4['F']+m4['F'].T)+epsilon**2*m4['C']\nTraceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/canonical_overlap/driver.py\", line 4, in <module>\n    mutant.complete_cube_controls()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/canonical_overlap/scripts/mutant.py\", line 120, in complete_cube_controls\n    start=time.monotonic();dressed,prep=canonical_preparation(m4,epsilon)\n                                        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/canonical_overlap/scripts/mutant.py\", line 110, in canonical_preparation\n    assert abs(np.vdot(v,v).real-1)<2e-10\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "observed_stdout": "Complete spin-one spaces built: {4: 3197, 6: 5604, 8: 672}\n"
+    },
+    {
+      "name": "mean_scale_down",
+      "source_sha256": "62bbf596ac7db4455fc4e6ddea393bd9d105a4625e24d4b34433db5dec66912f",
+      "mutant_sha256": "c131f89783cd5f2ed902a8297c86e5ac6aabd204b10d978d1c0a24ba70981d5e",
+      "change_before": "(h@x),axis=0).real/epsilon**2",
+      "change_after": "(h@x),axis=0).real",
+      "returncode": 1,
+      "expected_assertion": "assert np.max(abs(scaled_mean[0]-ell))<30*epsilon**2",
+      "failed_as_expected": true,
+      "elapsed_seconds": 42.473753166850656,
+      "reason": "The first upward normalization mutation was rejected earlier by variance positivity. This downward mutation isolates the leading mean normalization gate; the original failed expectation record is preserved.",
+      "observed_traceback": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/mean_scale_down/scripts/mutant.py:101: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.\n  h=diags(m4['W'])-epsilon*(m4['F']+m4['F'].T)+epsilon**2*m4['C']\n/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/mean_scale_down/scripts/mutant.py:123: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.\n  h=(diags(m6['W'])-epsilon*(F+F.T)+epsilon**2*m6['C']).tocsc()\nTraceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/mean_scale_down/driver.py\", line 4, in <module>\n    mutant.complete_cube_controls()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-publication-mutations/mean_scale_down/scripts/mutant.py\", line 148, in complete_cube_controls\n    assert np.max(abs(scaled_mean[0]-ell))<30*epsilon**2\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "observed_stdout": "Complete spin-one spaces built: {4: 3197, 6: 5604, 8: 672}\n"
+    }
+  ],
+  "summary": "Every deliberate source error was rejected. The original upward mean-scale mutant hit variance positivity before its predicted assertion, so that harness exited 1; the result is preserved. A separate downward mean-scale mutation then failed the intended coefficient gate. No primary assertion or tolerance was changed.",
+  "family_coverage": [
+    "dissipative sign and component contraction",
+    "actual selected spectral grade",
+    "mean moment normalization",
+    "canonical positive-overlap preparation"
+  ],
+  "independent_reconstruction": false
+}

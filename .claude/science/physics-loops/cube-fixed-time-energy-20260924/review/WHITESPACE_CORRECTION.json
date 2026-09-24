@@ -1,0 +1,7 @@
+{
+  "path": "docs/FIXED_TIME_MICROSCOPIC_CUBE_BIRTH_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+  "before_sha256": "89be54537211698ae1b2036475e348d1905e75bb9767b6e47da99aeaff9ebaf3",
+  "after_sha256": "6a360b08dd7371e50be678b8e852de4d9b3f0120ce2f21317879f65c3f5188fa",
+  "exact_change": "Replace the two-space Markdown hard break after the Type line with an empty line. No scientific or runner bytes change.",
+  "reason": "git diff --cached --check rejects trailing whitespace; declared-input cache must be regenerated."
+}

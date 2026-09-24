@@ -22,11 +22,18 @@
  "stdout_tail": "   [executed, float] half-rise times at r = 8, 12, 16: wbar = 1: 8.25, 12.55, 16.05 (speed 1.026); wbar = 2: 4.12, 6.25, 8.03 (speed 2.051); ratio 2.000\nchecks: 6 ok, 0 fail\nSUMMARY: PROVED - (a) the on-site kinetic term of weight one is unique, (1/(2 gamma c^2)) sum udot^2/w; it survives a change of parameter only with the rates referred to one clock of the system; weak field u'' = c^2 wbar^2 Lap u - gamma c^2 wbar (e - mu), Lap = sum_y (u_y - u_x) (constant 6), about any static background local speed c w_x (executed: fronts at 1.03 and 2.05 sites per ambient tick at wbar = 1, 2). (b) c is not fixed by covariance or scale covariance: a second pure number; no wake for smooth bodies needs c >= 1; on the lattice the field's phase velocity has the floor (2/pi) c and a hopping point source radiates for every c. (c) slow sources give the static law, first lattice corrections -lam/(4 pi), -lam^3 (|x|^2 - 3/4)/(24 pi); monopole and dipole silent; quadrupole power (16/15) G^4 mu^2 M^3/(c^5 d^5), G = gamma/(4 pi). (d) added: the kinetic term, c, and a reference clock.\nHIT: the rate field's motion: unique weight-one on-site kinetic term (needs a reference clock), weak-field wave law with constant 6 and local speed c w_x, c a second pure number (c >= 1 for smooth bodies; on the lattice a hopping point source radiates for every c), and two circling bodies radiate only through the scalar quadrupole with trace, (16/15) G^4 mu^2 M^3/(c^5 d^5) times (1 + 99e^2/32 + 51e^4/128)/(1-e^2)^(7/2).\n",
  "checked": {
   "by": "w-macbookpro90c72-jec4a",
-  "at_utc": "20260924T002347Z",
+  "at_utc": "20260924T002420Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5eec5961 differs from the current HEAD 10787a24 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The rate field's motion: the weight-one on-site kinetic term (1/(2 gamma c^2)) sum udot^2/w is unique and survives a change of parameter only referred to one clock of the system; weak-field wave law u'' = c^2 wbar^2 Lap u - gamma c^2 wbar (e - mu) (constant 6), local speed c w_x (executed fronts 1.03 and 2.05 at wbar = 1, 2); c a second pure number, c >= 1 for smooth bodies; on the lattice the field's phase velocity has the floor (2/pi)c and a hopping point source radiates for every c; scalar quadrupole power (16/15)G^4 mu^2 M^3/(c^5 d^5), eccentric factor checked at five e. Agrees with a4 on (a), continuum (b), (c); adds the lattice (b).",
+  "by": "w-macbookpro90c72-jec4a",
+  "at_utc": "20260924T002420Z"
  }
 }

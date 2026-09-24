@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-uniqueness-up-2-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j96b9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/uniqueness-up-2/referee_w-macbookpro90c72-j96b9/check.py",
+ "seed": 15423,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "69180d5a",
+ "started_utc": "20260924T020343Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the exact coupling-failure rates; the measured percolation window 0.425 to 0.43 was not re-simulated, and the ceiling near p=5.9 follows if that window is right"
+ },
+ "review": "Independent: alpha_3 is 950/2449, 49381/117348, 435/1003 and 399/611 at p=5, 23/4, 6 and 21/2, increasing, so p=10.5 already has disagreement rate 0.653",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:uniqueness-up-2:a4/; its files are probes/work/derive/uniqueness-up-2/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/uniqueness-up-2/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "90ced8f0d533e07816b96488121187309640cdc1c241cabda5b46c410a6ea25a",
+ "stdout_tail": "p=5 alpha3=0.38791 exact=950/2449 stated 0.38791\np=23/4 alpha3=0.42081 exact=49381/117348 stated 0.42081\np=6 alpha3=0.43370 exact=435/1003 stated 0.43370\np=21/2 alpha3=0.65303 exact=399/611 stated 0.65303\nincreasing True\nHIT: confirmed - alpha_3(p,1,2) matches the stated values at p=5, 23/4, 6 and 21/2 and increases with p, so the disagreement rate at p=10.5 is about 0.653\nSUMMARY: confirmed the exact coupling-failure rates; the measured percolation window 0.425 to 0.43 was not re-simulated, and the ceiling near p=5.9 follows if that window is right\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j96b9",
+  "at_utc": "20260924T020345Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact alpha_3 fractions match the stated decimals and increase through p=10.5",
+  "by": "w-macbookpro90c72-j96b9",
+  "at_utc": "20260924T020345Z"
+ }
+}

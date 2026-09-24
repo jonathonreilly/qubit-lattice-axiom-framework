@@ -1,0 +1,7 @@
+p=5 alpha3=0.38791 exact=950/2449 stated 0.38791
+p=23/4 alpha3=0.42081 exact=49381/117348 stated 0.42081
+p=6 alpha3=0.43370 exact=435/1003 stated 0.43370
+p=21/2 alpha3=0.65303 exact=399/611 stated 0.65303
+increasing True
+HIT: confirmed - alpha_3(p,1,2) matches the stated values at p=5, 23/4, 6 and 21/2 and increases with p, so the disagreement rate at p=10.5 is about 0.653
+SUMMARY: confirmed the exact coupling-failure rates; the measured percolation window 0.425 to 0.43 was not re-simulated, and the ceiling near p=5.9 follows if that window is right

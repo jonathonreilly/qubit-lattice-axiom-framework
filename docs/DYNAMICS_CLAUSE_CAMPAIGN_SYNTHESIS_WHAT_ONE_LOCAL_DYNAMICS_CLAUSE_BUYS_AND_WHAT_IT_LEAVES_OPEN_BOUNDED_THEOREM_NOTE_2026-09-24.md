@@ -153,25 +153,29 @@ one clause generates across the lanes.
     - The smallest local moves are 10-slot planar curvature pieces. That
       is the minimum on the whole lattice (independent check).
 13. **Non-Abelian links need several qubits (open PR 9081).**
-    - One qubit carries U(1) and Z2 links but no non-Abelian link.
+    - One qubit carries U(1) and Z2 links but no SU(N) link.
     - An SU(N) link needs at least 2N states, and `(N, 1) ⊕ (1, N)`
       reaches that with a covariant link operator.
-    - So SU(2) needs 2 qubits per link, SU(3) 3, and independent Standard
-      Model fields 6.
+    - So SU(2) needs 2 qubits per link and SU(3) 3. Independent Standard
+      Model fields need 6, and one joint `(3, 2)_Y` link needs 4.
 14. **A distant record is a recorded randomizer (open PR 9083).**
     - The clause carries a condition qubit's purification to any distance.
     - Recording the partner steers the qubit to either end of any chord.
     - Under D-loc (marginals do not depend on distant record formation), the
-      law is affine: the trace rule.
+      law is affine: the trace rule. This holds even with the partner's
+      weights from the same law, where D-loc leaves `λ ∈ {0, 1}`.
     - Compression consistency (D-perm) then forces `E_q = P_q`, the Born
       orientation with full contrast.
-    - This discharges the landed affine/Born gate's first and third
-      obligations. D-tr is now derived from D-loc and D-perm, not supplied.
+    - This reduces the landed affine/Born gate's first obligation to D-loc
+      and settles its third by D-perm. D-tr is now derived, given D-loc,
+      D-perm, the menu, and the law being a function of the conditional
+      state.
 15. **Locality of marginals forces linear dynamics (open PR 9084).**
-    - Under D-loc, the evolution between records is affine; otherwise a
-      distant record signals.
-    - Joint positivity makes it completely positive; reversibility makes it
-      unitary.
+    - Under D-loc, the evolution between records is affine, for a partner
+      decoupled during the evolution; otherwise a distant record signals.
+    - Joint positivity makes it completely positive. The clause's own field
+      rotation and bond expose any failure as a negative record
+      probability. Reversibility makes it unitary.
     - With continuous time and nearest-neighbour range, it has the form of
       the clause. The clause's content reduces to D-rev and covariance.
 16. **A record updates the rest of the lattice by compression (open PR 9085).**
@@ -201,7 +205,7 @@ one clause generates across the lanes.
 | Z2 gauge field and Majorana fermions | the two-site clause at the compass point, plus a record carving | 9048, 9054 |
 | U(1) photon | one neighbourhood: a plaquette ring (Rokhsar–Kivelson at uniform ice), or a soft vertex Gauss energy | 9066, 9069, 9072 |
 | Linearized-gravity tensor field (landed discretization, E-slot moves) | more than one neighbourhood: the smallest moves span a vertex's second neighbourhood | 9077 |
-| SU(2), SU(3) gauge fields | composite links of 2 and 3 qubits (6 for the full group) | 9081 |
+| SU(2), SU(3) gauge fields | composite links of 2 and 3 qubits (6 for independent Standard Model fields, 4 for one joint link) | 9081 |
 | Time-reversal-odd (chiral) content | a star term under soldering, which then breaks the carvings' solvability; within solvable carvings, only records break it | 9088 |
 
 ## What it does not generate
@@ -290,6 +294,14 @@ Two checkers wrote separate code and did not read the campaign's runners.
     combinations (true ranks 26 and 18).
   - Also corrected: `V = 0` needs equal field sizes, and some prose was
     overstated.
+- **The Born, dynamics and link blocks (9081, 9083, 9084):** every
+  computation passes.
+  - Corrected since: the partner's Born weights are no longer assumed; the
+    self-consistent version leaves `λ ∈ {0, 1}`.
+  - The complete-positivity step now uses an entangling operation from
+    the clause.
+  - D-loc is scoped to decoupled partners.
+  - The link count adds the 4-qubit joint link.
 - **The plaquette and tensor blocks (9072, 9077):** every computation
   passes, and the tensor block's 10-slot minimum holds without a box.
   - Corrected since: the Rokhsar–Kivelson projector is characterized by

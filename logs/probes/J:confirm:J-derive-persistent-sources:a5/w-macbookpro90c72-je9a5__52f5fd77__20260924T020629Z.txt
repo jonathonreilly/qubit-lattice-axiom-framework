@@ -1,0 +1,12 @@
+ok kernel: (I-P) annihilates constants; L3 = 7(I-P)
+ok profile: (I-P) of the G2 dipole is the G dipole
+ok gap: pin gap is 2D (5.932382 vs 5.932382)
+ok norm: ||G dipole||^2 = 2D (5.932382 vs 5.932382)
+ok rate: normalized action 0.16856635 = 1/(2D)
+ok decrease: D(e1), D(2e1), D(3e1) = 1.7588, 2.9662, 3.3687
+ok coef: 1/r coefficient 0.128228 = 2 pi/49
+ok integral: int (q-sin q)/q^3 = pi/4
+ok cross: ((I+P)G)(r) = 2G(r) off the origin, so the cross term is -(2/sigma^2) h1 h2 G(r)
+ok path: two field sources cost (h1^2 + h2^2)/(2 sigma^2); the cross term averages to zero
+HIT: confirmed - unlike pins cost (a-b)^2/(4 sigma^2 D(r)) with D=G^2(0)-G^2(r), like pins cost nothing, and the field-source path rate has no interaction
+SUMMARY: confirmed the minimal-action identity on the 6-torus, D increasing in r, the 2 pi/49 coefficient, and the stationary cross term -(2/sigma^2) h1 h2 G(r)

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-persistent-sources:a5",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-je9a5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/persistent-sources/referee_w-macbookpro90c72-je9a5/check.py",
+ "seed": 15589,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "52f5fd77",
+ "started_utc": "20260924T020629Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the minimal-action identity on the 6-torus, D increasing in r, the 2 pi/49 coefficient, and the stationary cross term -(2/sigma^2) h1 h2 G(r)"
+ },
+ "review": "On the 6-torus the pin rate is (a-b)^2/(4 sigma^2 D) with D increasing in r, and the field-source path rate has no cross term.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "31ed263969e738aa5bacbbd0ebd224b6e1e237e16796761a6677338c959528df",
+ "stdout_tail": "ok kernel: (I-P) annihilates constants; L3 = 7(I-P)\nok profile: (I-P) of the G2 dipole is the G dipole\nok gap: pin gap is 2D (5.932382 vs 5.932382)\nok norm: ||G dipole||^2 = 2D (5.932382 vs 5.932382)\nok rate: normalized action 0.16856635 = 1/(2D)\nok decrease: D(e1), D(2e1), D(3e1) = 1.7588, 2.9662, 3.3687\nok coef: 1/r coefficient 0.128228 = 2 pi/49\nok integral: int (q-sin q)/q^3 = pi/4\nok cross: ((I+P)G)(r) = 2G(r) off the origin, so the cross term is -(2/sigma^2) h1 h2 G(r)\nok path: two field sources cost (h1^2 + h2^2)/(2 sigma^2); the cross term averages to zero\nHIT: confirmed - unlike pins cost (a-b)^2/(4 sigma^2 D(r)) with D=G^2(0)-G^2(r), like pins cost nothing, and the field-source path rate has no interaction\nSUMMARY: confirmed the minimal-action identity on the 6-torus, D increasing in r, the 2 pi/49 coefficient, and the stationary cross term -(2/sigma^2) h1 h2 G(r)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je9a5",
+  "at_utc": "20260924T020636Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Unlike pins cost (a-b)^2/(4 sigma^2 D) with D increasing in r; the field-source path rate has no cross term.",
+  "by": "w-macbookpro90c72-je9a5",
+  "at_utc": "20260924T020636Z"
+ }
+}

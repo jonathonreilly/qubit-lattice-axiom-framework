@@ -1,0 +1,30 @@
+{
+ "task": "P:8865",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-capacity-terminal-counts-2",
+ "worker": "w-jonathonsmac4f50-j3cd8",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8865",
+ "pr": 8865,
+ "branch": "codex/mobile-record-capacity-terminal-counts-20260923",
+ "git_sha": "582558cd",
+ "started_utc": "20260924T010148Z",
+ "elapsed_s": 4.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "PR re-execution of #8865's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "691594b40f7474b4ce43a1989fc39b113b6fbeff95b090aa612137d72435820e",
+ "stdout_tail": "PR #8865: Resolve formation capacity and seven-site terminal counts\nbranch codex/mobile-record-capacity-terminal-counts-20260923 (base codex/mobile-record-local-volume-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3cd8",
+  "at_utc": "20260924T010152Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

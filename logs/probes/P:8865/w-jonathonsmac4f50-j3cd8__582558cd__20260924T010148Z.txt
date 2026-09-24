@@ -1,0 +1,3 @@
+PR #8865: Resolve formation capacity and seven-site terminal counts
+branch codex/mobile-record-capacity-terminal-counts-20260923 (base codex/mobile-record-local-volume-20260923)
+runners in the PR: 0

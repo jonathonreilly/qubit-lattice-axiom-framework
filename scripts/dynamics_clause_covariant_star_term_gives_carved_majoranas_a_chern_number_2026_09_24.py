@@ -28,12 +28,13 @@ diagnostics, no physical reading):
    is a free (gauge-invariant, bilinear) Majorana term. It is 41-dimensional
    here. The projection onto it of the weight-5 orbit
    s^x_{+x} s^y_{-x} s^y_{+y} s^z_{-y} s^z_{+z} is a covariant term of
-   weights 5 and 7 whose non-free strings cancel exactly and whose free
-   strings include same-class bilinears.
+   weights 5 and 7 whose non-free strings cancel exactly. Its free image is
+   27 Kitaev patterns at corners plus one dangling-axis field; only 5 of the
+   41 free directions act on the Majoranas here.
 5. The chiral phase: with the compass-point bonds plus lambda times that term,
-   at lambda = 1, 2 and 4 the lowest flux sectors (8 of 16, degenerate) each
-   have 12 exact zero modes per cell, a gap above them, and weak Chern
-   numbers (-1, 0, 0) on four k_x planes.
+   at lambda = 1, 2 and 4 the lowest translation-invariant flux sectors (8 of
+   16, degenerate) each have 12 exact zero modes per cell, a gap above them,
+   and weak Chern numbers (-1, 0, 0) on four k_x planes.
 6. Chiral surface modes: on a slab 12 cells thick with open boundaries along
    z (lambda = 2, k_x = 1), the in-gap states sit on the two surfaces, and as
    k_y winds once they cross energies -0.01 and 0.01 once upward on one
@@ -44,6 +45,10 @@ diagnostics, no physical reading):
    negative bands' Chern number on the k_x planes becomes 0. With open PR
    9054's generic record contents no covariant odd star term stays free at
    all on this carving.
+8. A window and a handedness: the gap vanishes at lambda = 0.5 and 10 and
+   is open at 0.9 and 8; without the dangling-axis field the gap vanishes;
+   lambda -> -lambda (time reversal of the odd-weight term) gives (+1, 0, 0),
+   and so do uniform instead of staggered record signs.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -507,43 +512,51 @@ check("exact Majorana images: the bond matrix is reproduced, and three-site clus
       f"on the carving Kitaev's pattern is a free same-class c-c bilinear and a kept-axis field is not free")
 
 # ------------------------------------------------ 4. the free covariant subspace on this carving
-reduced = {}                       # (string index, centre) -> (unwrapped reduced string, record factor)
-for si, (sup, labs) in enumerate(STR):
-    for m in itertools.product(range(4), repeat=3):
-        Pm, coef = {}, 1
-        for s_, lab in zip(sup, labs):
-            x = tuple(np.array(m) + POS[s_])
-            if fold(x) in CS:
-                Pm[x] = lab
-            elif content[fold(x)][0] != lab:
-                coef = 0
-                break
-            else:
-                coef *= content[fold(x)][1]
-        if coef:
-            reduced[(si, m)] = (Pm, coef)
-fkey = {}
-by_string = {}
-for (si, m), (Pm, coef) in reduced.items():
-    fk = tuple(sorted((fold(x), l) for x, l in Pm.items()))
-    fkey.setdefault(fk, Pm)
-    by_string.setdefault(si, []).append((fk, coef, m))
-klist = sorted(fkey)
-kid = {k_: i for i, k_ in enumerate(klist)}
-Amat = np.zeros((len(klist), len(VECS)))
-for vi, orb in enumerate(VECS):
-    for si, sg in orb.items():
-        for fk, coef, m in by_string.get(si, []):
-            Amat[kid[fk], vi] += sg * coef
-img_fold = [car.image(fkey[k_]) if fkey[k_] else (1.0, None, None) for k_ in klist]
-bad = np.array([im is None for im in img_fold])
-nzr = np.linalg.norm(Amat, axis=1) > 1e-12
-_, sv, vt = np.linalg.svd(Amat[bad & nzr])
-Nf = vt[int(np.sum(sv > 1e-9)):].T
-Pfree = Nf @ Nf.T
-target = ((1, 2, 3, 4, 5), (0, 1, 1, 2, 2))      # s^x_{+x} s^y_{-x} s^y_{+y} s^z_{-y} s^z_{+z}
-oi = next(i for i, orb in enumerate(VECS) if STR.index(target) in orb)
-v = Pfree[:, oi] / np.max(np.abs(Pfree[:, oi]))
+TARGET = ((1, 2, 3, 4, 5), (0, 1, 1, 2, 2))      # s^x_{+x} s^y_{-x} s^y_{+y} s^z_{-y} s^z_{+z}
+
+
+def project_term(content_map):
+    """Reduce every covariant string by the record values, find the free subspace and project the target orbit."""
+    reduced_ = {}
+    for si, (sup, labs) in enumerate(STR):
+        for m in itertools.product(range(4), repeat=3):
+            Pm, coef = {}, 1
+            for s_, lab in zip(sup, labs):
+                x = tuple(np.array(m) + POS[s_])
+                if fold(x) in CS:
+                    Pm[x] = lab
+                elif content_map[fold(x)][0] != lab:
+                    coef = 0
+                    break
+                else:
+                    coef *= content_map[fold(x)][1]
+            if coef:
+                reduced_[(si, m)] = (Pm, coef)
+    fkey_, by_string_ = {}, {}
+    for (si, m), (Pm, coef) in reduced_.items():
+        fk = tuple(sorted((fold(x), l) for x, l in Pm.items()))
+        fkey_.setdefault(fk, Pm)
+        by_string_.setdefault(si, []).append((fk, coef, m))
+    klist_ = sorted(fkey_)
+    kid_ = {k_: i for i, k_ in enumerate(klist_)}
+    A_ = np.zeros((len(klist_), len(VECS)))
+    for vi, orb in enumerate(VECS):
+        for si, sg in orb.items():
+            for fk, coef, m in by_string_.get(si, []):
+                A_[kid_[fk], vi] += sg * coef
+    img_ = [car.image(fkey_[k_]) if fkey_[k_] else (1.0, None, None) for k_ in klist_]
+    bad_ = np.array([im is None for im in img_])
+    nzr_ = np.linalg.norm(A_, axis=1) > 1e-12
+    _, sv_, vt_ = np.linalg.svd(A_[bad_ & nzr_])
+    Nf_ = vt_[int(np.sum(sv_ > 1e-9)):].T
+    P_ = Nf_ @ Nf_.T
+    oi_ = next(i for i, orb in enumerate(VECS) if STR.index(TARGET) in orb)
+    v_ = P_[:, oi_] / np.max(np.abs(P_[:, oi_])) if np.linalg.norm(P_[:, oi_]) > 1e-12 else np.zeros(len(VECS))
+    return dict(reduced=reduced_, by_string=by_string_, klist=klist_, A=A_, img=img_, bad=bad_, Nf=Nf_, v=v_)
+
+
+T = project_term(content)
+reduced, by_string, klist, Amat, img_fold, bad, Nf, v = (T[k_] for k_ in ("reduced", "by_string", "klist", "A", "img", "bad", "Nf", "v"))
 weights_used = sorted({len(STR[min(VECS[j])][0]) for j in range(len(VECS)) if abs(v[j]) > 1e-9})
 cancel = np.max(np.abs(Amat[bad] @ v)) if bad.any() else 0.0
 
@@ -571,32 +584,38 @@ def is_kitaev_pattern(fk):
     return False
 
 
-same_idx = [i for i, im in enumerate(img_fold) if im is not None and im[1] is not None and abs(Amat[i] @ v) > 1e-9
-            and class_of(im[1]) == class_of(im[2])]
-same_free = len(same_idx)
+acting = [i for i, im in enumerate(img_fold) if im is not None and im[1] is not None and abs(Amat[i] @ v) > 1e-9]
+same_idx = [i for i in acting if class_of(img_fold[i][1]) == class_of(img_fold[i][2])]
 same_kitaev = sum(1 for i in same_idx if is_kitaev_pattern(klist[i]))
+other = [(klist[i], round(float(Amat[i] @ v), 4)) for i in acting if i not in same_idx]
+maj_rows = [i for i, im in enumerate(img_fold) if im is not None and im[1] is not None]
+active_dirs = int(np.linalg.matrix_rank((Amat @ Nf)[maj_rows], tol=1e-9))
 check("the free covariant subspace, and the projection of the weight-5 orbit onto it",
-      Nf.shape[1] == 41 and cancel < 1e-9 and weights_used == [5, 7] and same_free > 0 and same_kitaev == same_free,
-      f"free subspace dimension {Nf.shape[1]} of {len(VECS)}; projected term uses {int(np.sum(np.abs(v) > 1e-9))} orbits of weights "
-      f"{weights_used}; non-free strings cancel to {cancel:.0e}; same-class free bilinears {same_free}, all Kitaev's pattern at corners")
+      Nf.shape[1] == 41 and cancel < 1e-9 and weights_used == [5, 7] and len(same_idx) == 27 and same_kitaev == 27
+      and len(other) == 1 and len(other[0][0]) == 1,
+      f"free subspace dimension {Nf.shape[1]} of {len(VECS)}, of which {active_dirs} directions act on the Majoranas here; "
+      f"projected term uses {int(np.sum(np.abs(v) > 1e-9))} orbits of weights {weights_used}; non-free strings cancel to {cancel:.0e}; "
+      f"its free image is {len(same_idx)} Kitaev patterns at corners plus the dangling-axis field {other[0][0][0]} with coefficient {other[0][1]}")
 
 
 # ------------------------------------------------ 5. the chiral phase
-def term_entries(carv):
+def term_entries(carv, TT=None):
+    TT = TT or T
+    vv, bys, red = TT["v"], TT["by_string"], TT["reduced"]
     ent, const = [], 0.0
     for vi, orb in enumerate(VECS):
-        if abs(v[vi]) < 1e-14:
+        if abs(vv[vi]) < 1e-14:
             continue
         for si, sg in orb.items():
-            for fk, coef, m in by_string.get(si, []):
-                im = carv.image(reduced[(si, m)][0])
+            for fk, coef, m in bys.get(si, []):
+                im = carv.image(red[(si, m)][0])
                 if im is None:
                     continue                              # non-free strings cancel in total (check 4)
                 cf, g1, g2 = im
                 if g1 is None:
-                    const += (v[vi] * sg * coef * cf).real
+                    const += (vv[vi] * sg * coef * cf).real
                 else:
-                    ent.append((v[vi] * sg * coef * cf, g1, g2))
+                    ent.append((vv[vi] * sg * coef * cf, g1, g2))
     return ent, const
 
 
@@ -662,7 +681,7 @@ for lam in (1.0, 2.0, 4.0):
             and planes == {0: [-1.0], 1: [0.0], 2: [0.0]})
     rows5.append(f"lambda {lam}: {len(lowest)} lowest sectors (next {next_gap:.4f} up), 12 zero modes, gap "
                  f"{min(g for _, g in gaps):.4f}, weak Chern numbers ({int(planes[0][0])}, {int(planes[1][0])}, {int(planes[2][0])})")
-check("the chiral phase: in every lowest flux sector, a gapped band structure with weak Chern numbers (-1, 0, 0)",
+check("the chiral phase: in every lowest translation-invariant flux sector, a gapped band structure with weak Chern numbers (-1, 0, 0)",
       ok5, "; ".join(rows5))
 
 # ------------------------------------------------ 6. chiral surface modes on a slab
@@ -806,6 +825,41 @@ check("the phase needs zero dangling fields: its zero modes sit on dangling b's,
       f"zero modes {zm.shape[1]}, weight on dangling b's {b_weight:.3f}; with dangling fields of size 0.1 (random signs): "
       f"exact zero modes {nz7}, Chern numbers on two k_x planes {[float(round(c, 6)) + 0.0 for c in cx7]}; "
       f"with open PR 9054's generic contents no covariant term stays free (free dimension {g_free})")
+
+# ------------------------------------------------ 8. the window, the field, and the handedness
+def lowest_at(lam, TT=None, drop_b=False):
+    best = None
+    for u in itertools.product((1, -1), repeat=len(G19["non"])):
+        uvals_ = u_from_non(G19, u)
+        carv_ = Carving(G19["comp"], [(j, k, ax, off, ub) for (j, k, ax, off), ub in zip(G19["bonds"], uvals_)])
+        ent_, const_ = term_entries(carv_, TT)
+        if drop_b:
+            ent_ = [e for e in ent_ if e[1][0][0] == "c" and e[2][0][0] == "c"]
+        E_ = sum(-0.5 * ev[ev > 0].sum() for ev in (np.linalg.eigvalsh(H_of(uvals_, ent_, carv_, k, lam)) for k in ks4)) / len(ks4)
+        if best is None or E_ < best[0] - 1e-9:
+            best = (E_, uvals_, carv_, ent_)
+    return best[1:]
+
+
+window = {}
+for lam in (0.5, 0.9, 8.0, 10.0):
+    uv, cv, en = lowest_at(lam)
+    window[lam] = gap_above_zero(uv, en, cv, lam)[1]
+uv, cv, en = lowest_at(2.0, drop_b=True)
+gap_nofield = gap_above_zero(uv, en, cv, 2.0)[1]
+uv, cv, en = lowest_at(-2.0)
+c_neg = round(chern(uv, en, cv, -2.0, 0, 1.0), 6)
+uniform = {r: (a_, 1) for r, (a_, sg) in content.items()}
+TU = project_term(uniform)
+uv, cv, en = lowest_at(2.0, TU)
+gap_u = gap_above_zero(uv, en, cv, 2.0)[1]
+c_uni = [round(chern(uv, en, cv, 2.0, p_, 1.0), 6) for p_ in range(3)]
+check("a window in lambda; the dangling-axis field is essential; time reversal and uniform record signs flip the handedness",
+      window[0.5] < 1e-6 and window[0.9] > 1e-3 and window[8.0] > 1e-4 and window[10.0] < 1e-6 and gap_nofield < 1e-6
+      and c_neg == 1.0 and gap_u > 0.01 and c_uni == [1.0, 0.0, 0.0],
+      f"gap at lambda 0.5, 0.9, 8, 10: {window[0.5]:.0e}, {window[0.9]:.4f}, {window[8.0]:.4f}, {window[10.0]:.0e}; "
+      f"without the field term at lambda 2: {gap_nofield:.0e}; lambda = -2: C_x = {c_neg:+.0f}; "
+      f"uniform record signs: gap {gap_u:.4f}, weak Chern numbers {[int(c) for c in c_uni]}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

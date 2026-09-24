@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_records_carve_kitaev_models_at_the_compass_point_2026_09_24.py
+runner_sha256: 92021e6f64fb3fadc544664be7238d5ccfff5151a86edf0daaf230e5589e3a1d
+input_fingerprint_sha256: f396788d5f208c6435729d211d05a8f49f991fe08ced6b1877c78c9bfd567ab2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 17.02
+status: ok
+----- stdout -----
+A. carvings of the lattice by records
+[PASS] zero-field carvings: every component is finite or winds in one direction :: 4x4x4: 112 (complete), ranks [0, 1]; 5x5x5: 1984 (complete), ranks [0, 1]; 6x6x6: 1500 sampled, ranks [0, 1]
+[PASS] without zero fields, three-direction networks occur and each forces a record touching all three axes :: 101 carvings with a three-direction component; sizes 4x4x4: [32]; 5x5x5: [40]
+B. contents that cancel every field
+[PASS] staircase tube (16 sites on 4^3) and cube: contents orthogonal to touched axes cancel every field :: largest residual field 0.0
+C. exact solvability
+[PASS] loop operators commute with H and each other :: cube: 6 loops, E0 -6.92820323; tube, 8 sites: 6 loops; tube, 12 sites: 6 loops
+[PASS] exact ground energy = least free-Majorana ground energy over Z2 gauge configurations :: cube: 6 loops, E0 -6.92820323; tube, 8 sites: 6 loops, E0 -6.92820323; tube, 12 sites: 6 loops, E0 -10.12899020
+[PASS] a field on one site breaks loop operators :: 2 of 6 cube loops no longer commute
+D. Majorana bands of the infinite staircase tube
+[PASS] each flux sector's Majorana ground energy and gap are gauge invariant :: largest spread over configurations 0.0e+00
+[PASS] lowest Majorana ground energy per cell has pi flux through both plaquette types, with gap 2|K| :: E0/cell -3.35522 (pi, pi), -3.055342 (0, pi), -2.871982 (0, 0); gap 2.0
+[PASS] the zero-flux sector is gapless :: smallest |eps| on a 4000-point grid 0.000907
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

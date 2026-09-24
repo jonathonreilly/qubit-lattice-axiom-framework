@@ -196,6 +196,8 @@ These are recorded so each result names what it rests on. None is adopted.
   - Fields on every dangling axis (0.1 or 0.2) leave the chiral bands
     with `−1` but make the bands grown from the zero modes take `+1`, so
     the total cancels. Fields on some pairs of axes keep the total at `−1`.
+    A small-field map (exploratory) finds a nonzero total for at most eight
+    of the twelve axes, so at least four zero modes per cell remain.
   - Another free direction on the same carving makes the middle coupled
     bands touch at exactly one particle–hole pair, with Berry charges `∓1`
     at energies `∓0.007` (small pockets) and linear splitting. Above the

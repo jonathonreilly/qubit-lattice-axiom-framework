@@ -1,0 +1,8 @@
+ok W1: trace 2 cos(theta) cos k, det 1, so cos omega = cos theta cos k
+ok W4: (M^dag M - I)_00 = -2 w (w-1) (cos k cos theta - 1)
+ok W5: 2 cos^2(omega/2)-1 = cos omega; the trace is 2 cos(omega/2) = sqrt(2(1+cos omega))
+ok W5b: (1+a cos k)/2 has degree 1; a square of a degree-R trig polynomial has degree 2R, so the square root is not one
+ok W3: omega(pi/6)/omega(pi/3) = 0.6436, 0.8519, 1.0000 at theta = pi/6, pi/3, pi/2
+ok W2-W8: ring of 5 is unitary; entrywise (UT)/(TU) spread 0.851, so no scalar lambda
+HIT: confirmed - cos omega = cos theta cos k is not a clock, M = wU+(1-w)I is non-unitary for w in (0,1), and the half-step symbol does not truncate
+SUMMARY: confirmed the three failures; the prose equates the half-step trace with cos(omega/2) rather than 2 cos(omega/2), which does not change the non-locality

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-seas-polarisability-as-a-lattice-sum-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j1e08",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-seas-polarisability-as-a-lattice-sum/referee_w-macbookpro90c72-j1e08/check.py",
+ "seed": 46935,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e7be656",
+ "started_utc": "20260924T104855Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the bond average, kappa = I/12 = 0.0994834268, the Bessel representation, and the degree count. The L=16..128 zone sums and the L=8 diagonalizations were not re-run. The density-coupling coefficient 1/(6 pi^2) was not re-derived."
+ },
+ "review": "The held sea is -I/4 + (I/48)|q|^2_lat, so kappa = I/12 = 0.0994834268 > 0, and a degree-1 integrand has no q^2 log q.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-seas-polarisability-as-a-lattice-sum:a1/; its files are probes/work/derive/the-seas-polarisability-as-a-lattice-sum/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-seas-polarisability-as-a-lattice-sum/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a63bb8faebc8770f0152de8be4e852b02e43c97bc169dd1bcef850554a77a8f6",
+ "stdout_tail": "PASS held part: bond average 1+cos q_a, so the held piece is -I/4 + (I/48)|q|^2_lat and kappa = I/12\nPASS one-dimensional I: sqrt(A) = (1/(2 sqrt pi)) int (1-e^{-t A}) t^{-3/2} dt, and the zone factor is e^{-t/2} I_0(t/2)\nPASS kappa positive: I=1.1938011214297952103, kappa=0.0994834267858\nPASS no q^2 log in the rates: degree 1 gives q^4 log q; degree -1 gives q^2 log q; sin(2K)=0 at all eight zeros; ln2/(6 pi^2)=0.0117\nHIT: confirmed - the held sea gives kappa = I/12 > 0, with I the zone integral of |s|, and the interband piece is homogeneous of degree 1 so its first non-analytic term is q^4 log q\nSUMMARY: confirmed the bond average, kappa = I/12 = 0.0994834268, the Bessel representation, and the degree count. The L=16..128 zone sums and the L=8 diagonalizations were not re-run. The density-coupling coefficient 1/(6 pi^2) was not re-derived.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1e08",
+  "at_utc": "20260924T104904Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The held sea fixes kappa = I/12 = 0.0994834268, which is positive, and a degree-1 interband integrand has no q^2 log q.",
+  "by": "w-macbookpro90c72-j1e08",
+  "at_utc": "20260924T104904Z"
+ }
+}

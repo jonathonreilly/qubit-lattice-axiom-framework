@@ -1,0 +1,6 @@
+PASS held part: bond average 1+cos q_a, so the held piece is -I/4 + (I/48)|q|^2_lat and kappa = I/12
+PASS one-dimensional I: sqrt(A) = (1/(2 sqrt pi)) int (1-e^{-t A}) t^{-3/2} dt, and the zone factor is e^{-t/2} I_0(t/2)
+PASS kappa positive: I=1.1938011214297952103, kappa=0.0994834267858
+PASS no q^2 log in the rates: degree 1 gives q^4 log q; degree -1 gives q^2 log q; sin(2K)=0 at all eight zeros; ln2/(6 pi^2)=0.0117
+HIT: confirmed - the held sea gives kappa = I/12 > 0, with I the zone integral of |s|, and the interband piece is homogeneous of degree 1 so its first non-analytic term is q^4 log q
+SUMMARY: confirmed the bond average, kappa = I/12 = 0.0994834268, the Bessel representation, and the degree count. The L=16..128 zone sums and the L=8 diagonalizations were not re-run. The density-coupling coefficient 1/(6 pi^2) was not re-derived.

@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of seventeen campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the covariant plaquette clause annihilating uniform ice is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports an integer move; and, for the non-Abelian block, that one qubit's SU(2) commutant is the scalars and that the 4-dimensional SU(2) link carries a covariant link operator; and, for the randomizer block, that a distant record steers every chord and that the trace rule, but not a cubic deformation, matches the steered average; and, for the dynamics block, that a Weinberg-type precession lets a distant record shift a later marginal and that the transpose on half a singlet is negative; and, for the collapse block, that joint record effects with Born marginals are product projectors and that a record leaves its partner in the Lueders state; and, for the unitarity block, that proportional Kraus operators give a unitary conjugation while a random non-unitary channel mixes some pure state. It also checks that the eighteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
+claim_scope: "Synthesis of eighteen campaign blocks (open PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088), each built on one supplied and unadopted local dynamics clause. The runner re-derives one load-bearing identity per block in fast independent form: the coupling dimensions 1 (possibility covariance) and 3 (full soldering); records acting as fields and the ferromagnetic law (1 + t)/2; records-only CHSH <= 2 against the singlet's 2 sqrt 2; the isolated-order equivalence on the cube graph; the pi-flux tube's eps^2 = 12 + 8 cos k; the Moriya record statistic -2 sin(phi); the frequency variance identity; the 20-site three-direction network's local-flux splitting and gap above two flat zero-mode bands; and, for the Gauss block, the freeze of the link field by Gauss-invariant two-site terms, the intertwiner count that makes an oriented link field covariant under full soldering alone, and the soft-Gauss ring element -5 h^4/(32 U^3); and, for the charges block, that no role's stabilizer fixes a Bloch axis under full soldering, that covariant vertex-link terms flip a soldered link only against a fully soldered vertex, and that defect hops commute; and, for the plaquette block, that the covariant plaquette clause annihilating uniform ice is the Rokhsar-Kivelson projector; and, for the tensor block, that each row of the landed tensor vector constraint uses exactly its link site's six neighbours and that no single neighbourhood supports an integer move; and, for the non-Abelian block, that one qubit's SU(2) commutant is the scalars and that the 4-dimensional SU(2) link carries a covariant link operator; and, for the randomizer block, that a distant record steers every chord and that the trace rule, but not a cubic deformation, matches the steered average; and, for the dynamics block, that a Weinberg-type precession lets a distant record shift a later marginal and that the transpose on half a singlet is negative; and, for the collapse block, that joint record effects with Born marginals are product projectors and that a record leaves its partner in the Lueders state; and, for the unitarity block, that proportional Kraus operators give a unitary conjugation while a random non-unitary channel mixes some pure state; and, for the time-reversal block, that the covariant scalar-chirality star sum vanishes under possibility covariance. It also checks that the nineteen declared decision points are exactly those the blocks use. No block, and not this synthesis, derives the dynamics clause, adopts a decision point or establishes a physical identification."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -11,7 +11,7 @@ runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_202
 
 **Date:** 2026-09-24
 **Type:** bounded_theorem
-**Status:** synthesis of seventeen open campaign blocks with consolidated re-derivations; unaudited.
+**Status:** synthesis of eighteen open campaign blocks with consolidated re-derivations; unaudited.
 
 ## The gap this campaign addressed
 
@@ -53,6 +53,7 @@ one clause generates across the lanes.
 | D-rev | reversible, continuous-time, nearest-neighbour evolution between records; its reversibility follows from D-closed and D-onlyrec (9086) | 9084 |
 | D-closed | the lattice is the whole system | 9086 |
 | D-onlyrec | records are the only irreversible events | 9086 |
+| D-chir | a time-reversal-odd three-spin star term | 9088 |
 
 ## What the clause generates
 
@@ -184,6 +185,13 @@ one clause generates across the lanes.
     - Suppose the lattice is closed and records are its only irreversible
       events. Then evolution between records keeps pure states pure and
       distinguishable, which makes it unitary.
+18. **Covariant time-reversal breaking never keeps a carving solvable (open PR 9088).**
+    - Possibility covariance allows no time-reversal-odd three-spin star
+      term.
+    - Under the landed actions such terms exist, but none has Kitaev's
+      solvable pattern. On the cube, none preserves the loop operators.
+    - In exactly solvable carvings, time reversal is broken only by
+      records.
 
 **The ladder.** What each sector needs from the dynamics and the lattice:
 
@@ -194,6 +202,7 @@ one clause generates across the lanes.
 | U(1) photon | one neighbourhood: a plaquette ring (Rokhsar–Kivelson at uniform ice), or a soft vertex Gauss energy | 9066, 9069, 9072 |
 | Linearized-gravity tensor field (landed discretization, E-slot moves) | more than one neighbourhood: the smallest moves span a vertex's second neighbourhood | 9077 |
 | SU(2), SU(3) gauge fields | composite links of 2 and 3 qubits (6 for the full group) | 9081 |
+| Time-reversal-odd (chiral) content | a star term under soldering, which then breaks the carvings' solvability; within solvable carvings, only records break it | 9088 |
 
 ## What it does not generate
 
@@ -229,10 +238,10 @@ one clause generates across the lanes.
 ## Consolidated certificates
 
 The runner re-derives one identity per block, independently of that
-block's runner, and checks the ledger. There are eighteen checks and all
+block's runner, and checks the ledger. There are nineteen checks and all
 pass in about two seconds.
-- **L.** The eighteen declared points are exactly those used by the
-  seventeen blocks.
+- **L.** The nineteen declared points are exactly those used by the
+  eighteen blocks.
 - **1.** Coupling dimensions 1, 1 and 3.
 - **2.** The projection lemma, the resultant ground state, and the
   pentagon law `(1 + t)/2`.
@@ -262,6 +271,7 @@ pass in about two seconds.
 - **16.** The one-line range intersection, and tomography matching the
   Lüders state.
 - **17.** Proportional Kraus operators, and a random channel's purity loss.
+- **18.** The vanishing covariant scalar-chirality sum.
 
 ## Independent checks
 

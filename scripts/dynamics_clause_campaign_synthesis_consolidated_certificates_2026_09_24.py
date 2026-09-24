@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the seventeen blocks are exactly the
+L. Ledger: the decision points used by the eighteen blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -53,6 +53,8 @@ L. Ledger: the decision points used by the seventeen blocks are exactly the
    so a record updates its partner to the Lueders conditional state.
 17. (9086) Proportional Kraus operators give a unitary conjugation; random
    non-unitary channels mix some pure state.
+18. (9088) Under possibility covariance the covariant scalar-chirality star
+   sum vanishes.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -114,6 +116,7 @@ DECLARED = {
     "D-rev": "reversible, continuous-time, nearest-neighbour evolution between records",
     "D-closed": "the lattice is the whole system (nothing outside it)",
     "D-onlyrec": "records are the only irreversible events",
+    "D-chir": "a time-reversal-odd three-spin star term",
 }
 USED = {
     9040: {"D-dyn", "D-pc", "D-sold"},
@@ -133,6 +136,7 @@ USED = {
     9084: {"D-loc", "D-perm", "D-rev", "D-pc", "D-sold"},
     9085: {"D-loc", "D-perm", "D-menu"},
     9086: {"D-loc", "D-closed", "D-onlyrec"},
+    9088: {"D-pc", "D-sold", "D-chir", "D-pattern"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -715,6 +719,29 @@ low = min(np.real(np.trace(np.linalg.matrix_power(sum(K @ np.outer(w_, w_.conj()
           for w_ in [(lambda z: z / np.linalg.norm(z))(rng.normal(size=3) + 1j * rng.normal(size=3)) for _ in range(30)])
 check("proportional Kraus operators give a unitary conjugation; a random non-unitary channel mixes some pure state",
       dev_u < 1e-12 and low < 0.99, f"proportional-Kraus deviation {dev_u:.1e}; lowest output purity {low:.3f}")
+
+# ------------------------------------------ 18: covariant time-reversal breaking
+print("18. covariant time-reversal breaking")
+NBv = [np.array(v) for v in [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]]
+
+
+def _nid(v):
+    return [k for k, u in enumerate(NBv) if np.array_equal(u, v)][0]
+
+
+zero_all = True
+for kind in ("perp", "collinear"):
+    prs = [(i, k) for i in range(6) for k in range(6) if i != k and
+           ((kind == "perp" and NBv[i] @ NBv[k] == 0) or (kind == "collinear" and NBv[i] @ NBv[k] == -1))]
+    i0, k0 = prs[0]
+    tot = {}
+    for R in O:
+        i2, k2 = _nid(R @ NBv[i0]), _nid(R @ NBv[k0])
+        tot[(i2, k2)] = tot.get((i2, k2), 0) + 1
+        tot[(k2, i2)] = tot.get((k2, i2), 0) - 1
+    zero_all &= all(abs(v) < 1e-12 for v in tot.values())
+check("under possibility covariance the covariant scalar-chirality star sum vanishes (perpendicular and collinear pairs)",
+      zero_all, "every group-averaged coefficient 0")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-gravity-node-with-the-formation-kernels-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j0f6f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/gravity-node-with-the-formation-kernels/referee_w-macbookpro90c72-j0f6f/check.py",
+ "seed": 44213,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dab168fe",
+ "started_utc": "20260924T100333Z",
+ "elapsed_s": 3.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the on-site value to 18 digits, the Bessel representation, the Gaussian tail, the three K4 values, and the approach of 4 pi R G at r=8 and r=12. The r=30 extrapolation to 5/(32 pi) was not rebuilt; the axis value at r=12 is already within 0.002. The local-limit error term was not proved."
+ },
+ "review": "Watson's product gives G(0)=0.252731009858663003, the Bessel integral agrees, and 4 pi R G approaches 1 on three rays. chi=7G multiplies that constant by 7.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:gravity-node-with-the-formation-kernels:a1/; its files are probes/work/derive/gravity-node-with-the-formation-kernels/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/gravity-node-with-the-formation-kernels/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "b3df50e1c0c1bbfa78a01d8b198331bcc6b86bb1185df22caae592ee830538c9",
+ "stdout_tail": "PASS gaussian tail: the heat kernel integrates to 1/(4 pi r)\nPASS cubic harmonic: K4 is 2/5, -1/10 and -4/15 on the axis, the face diagonal and the body diagonal\nPASS no partial fractions: A/k = 1/3 - k^2/45 + ... and the concavity combination is negative from order 6\nPASS bessel: the Fourier transform of exp(2 t cos k) is I_m(2 t) for m=0..3\nPASS onsite: W/6 = 0.252731009858663003026002 and the Bessel integral agrees\nPASS tails: 4 pi R G is near 1 ((8, 0, 0):1.004108041072308222054724, (6, 6, 0):0.9992014341442746547039141, (5, 5, 5):0.9977662175744515998349181, (12, 0, 0):1.001772667580490820423894); axis c(12)=0.05078318542089557743869159, 5/(32 pi)=0.04973591971621729242777618; chi(0)=7W/6=1.769117069010641021182014\nHIT: confirmed - G(0)=W/6 with Watson's gamma product, the heat kernel integrates to 1/(4 pi r), and 4 pi R G(R) approaches 1 on the axis, the face diagonal and the body diagonal. chi=7G multiplies every constant by 7. A/k decreases from 1/3 without partial fractions.\nSUMMARY: confirmed the on-site value to 18 digits, the Bessel representation, the Gaussian tail, the three K4 values, and the approach of 4 pi R G at r=8 and r=12. The r=30 extrapolation to 5/(32 pi) was not rebuilt; the axis value at r=12 is already within 0.002. The local-limit error term was not proved.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0f6f",
+  "at_utc": "20260924T100342Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Watson's gamma product and an independent Bessel quadrature both give G(0) to 18 digits. 4 pi R G approaches 1 on three inequivalent rays.",
+  "by": "w-macbookpro90c72-j0f6f",
+  "at_utc": "20260924T100342Z"
+ }
+}

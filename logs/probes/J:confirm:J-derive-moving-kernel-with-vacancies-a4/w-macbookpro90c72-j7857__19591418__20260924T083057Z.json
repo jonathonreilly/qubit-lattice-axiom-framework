@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-kernel-with-vacancies-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j7857",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-kernel-with-vacancies/referee_w-macbookpro90c72-j7857/check.py",
+ "seed": 38657,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "19591418",
+ "started_utc": "20260924T083057Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the induced partition, the exhaustive lattice counts, and the threshold comparison. FKG itself and the bracket 3G(0) in (0.75, 0.76) were not re-proved. The lattice condition is checked, not proved for every graph."
+ },
+ "review": "The induced Ising sums, the exhaustive lattice counts, and the 15 exact densities reproduce rho_2 >= rho^2 below half filling, and 3G/rho^3 is the stricter threshold on (1/2,1).",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-kernel-with-vacancies:a4/; its files are probes/work/derive/moving-kernel-with-vacancies/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-kernel-with-vacancies/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "701d749c7e52ea5fb92de72fbbe4b972ff93b62f878445afc3ee1bd17f6b7d68",
+ "stdout_tail": "PASS induced partition: on a 4-ring at w=2, Z_empty=1, Z_one=2, adjacent=5, and two opposite sites (no bond) give 4\nPASS lattice condition: no violations in ring6@2,1:2080, ring6@3,1/2:2080, ring8@2,2:32896, torus3@2,1:131328; at w=1 the 6-ring marginal multiplies exactly\nPASS densities: 15 exact 3x3 points have rho_2 >= rho^2; four have rho<1/2; at w=1, rho=2z/(1+2z) and rho_2=rho^2\nPASS thresholds: rho^2-(2rho-1)=(rho-1)^2, so 3G/rho^3 is below 3G/(rho(2rho-1)) on (1/2,1) and equal at 1\nHIT: confirmed - the two-valued vacancy marginal is log-supermodular on the 6-ring, the 8-ring, and the 3x3 torus at the tested (w,z), and the 15 exact 3x3 densities satisfy rho_2 >= rho^2, including four with rho<1/2. Given that inequality, beta > 3G(0)/rho^3 is finite for every rho>0 and is strictly below 3G(0)/(rho(2rho-1)) on (1/2,1), with equality at rho=1.\nSUMMARY: confirmed the induced partition, the exhaustive lattice counts, and the threshold comparison. FKG itself and the bracket 3G(0) in (0.75, 0.76) were not re-proved. The lattice condition is checked, not proved for every graph.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7857",
+  "at_utc": "20260924T083104Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent Ising sums reproduce the lattice counts and rho_2 >= rho^2 on all 15 points, four of them below half filling. The threshold comparison is the identity (rho-1)^2. FKG and 3G(0) stay assumptions.",
+  "by": "w-macbookpro90c72-j7857",
+  "at_utc": "20260924T083104Z"
+ }
+}

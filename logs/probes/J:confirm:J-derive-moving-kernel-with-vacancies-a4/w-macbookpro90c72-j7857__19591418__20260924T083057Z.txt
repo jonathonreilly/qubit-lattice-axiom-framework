@@ -1,0 +1,6 @@
+PASS induced partition: on a 4-ring at w=2, Z_empty=1, Z_one=2, adjacent=5, and two opposite sites (no bond) give 4
+PASS lattice condition: no violations in ring6@2,1:2080, ring6@3,1/2:2080, ring8@2,2:32896, torus3@2,1:131328; at w=1 the 6-ring marginal multiplies exactly
+PASS densities: 15 exact 3x3 points have rho_2 >= rho^2; four have rho<1/2; at w=1, rho=2z/(1+2z) and rho_2=rho^2
+PASS thresholds: rho^2-(2rho-1)=(rho-1)^2, so 3G/rho^3 is below 3G/(rho(2rho-1)) on (1/2,1) and equal at 1
+HIT: confirmed - the two-valued vacancy marginal is log-supermodular on the 6-ring, the 8-ring, and the 3x3 torus at the tested (w,z), and the 15 exact 3x3 densities satisfy rho_2 >= rho^2, including four with rho<1/2. Given that inequality, beta > 3G(0)/rho^3 is finite for every rho>0 and is strictly below 3G(0)/(rho(2rho-1)) on (1/2,1), with equality at rho=1.
+SUMMARY: confirmed the induced partition, the exhaustive lattice counts, and the threshold comparison. FKG itself and the bracket 3G(0) in (0.75, 0.76) were not re-proved. The lattice condition is checked, not proved for every graph.

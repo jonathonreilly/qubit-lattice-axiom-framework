@@ -1,0 +1,6 @@
+PASS geometry: fixed polycubes [1, 3, 15, 86, 534, 3481, 23502]; boundary counts {6: 1, 10: 6, 14: 45, 18: 332, 16: 12, 22: 2538, 20: 240}; vertex neighbours 32, edge neighbours 12; edge-disconnected walls among <=6 cells: 0; 7-cell walls at least 24
+PASS certificate: Peierls sum at x=3/250 is 0.0896; content-less g* = 9/62500; the four content bounds satisfy g^3 Lambda^6 (Lambda/m)^5 <= (3/250)^6
+PASS half: at the published half-filling g*, each framed box is above half filling at H+ and below it at H-, inside the Peierls window
+PASS translation: on a framed 4^3 box the bond identity holds for 20 configurations, and 24 explicit shifts drop the unlike count by the wall size
+HIT: confirmed - fixed polycubes through 7 cells and the walls through 22 plaquettes match the certificate. At x=3/250 the Peierls sum is below 1/2, so the content-less gas is ordered for g <= 9/62500 at zeta = g^-3. The four content bounds and the half-filling bounds satisfy the same window. Explicit shifts remove exactly the wall.
+SUMMARY: confirmed the polycube census, the Peierls sum, the g* arithmetic, the half-filling window, and explicit translations. Mayer-Vietoris for larger walls is the attempt's import. Random content-weight graphs were not rebuilt.

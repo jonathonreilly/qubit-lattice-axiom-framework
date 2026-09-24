@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-record-gas-chessboard-threshold-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jdb5b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-record-gas-chessboard-threshold/referee_w-macbookpro90c72-jdb5b/check.py",
+ "seed": 51200,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2d14705",
+ "started_utc": "20260924T120000Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the polycube census, the Peierls sum, the g* arithmetic, the half-filling window, and explicit translations. Mayer-Vietoris for larger walls is the attempt's import. Random content-weight graphs were not rebuilt."
+ },
+ "review": "An independent polycube census reproduces the wall counts and a Peierls sum of 0.0896 at x=3/250, so the content-less gas is ordered for g <= 9/62500. The published content and half-filling bounds sit in that window. Mayer-Vietoris for larger walls is assumed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-record-gas-chessboard-threshold:a2/; its files are probes/work/derive/the-record-gas-chessboard-threshold/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-record-gas-chessboard-threshold/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "40f53d1e59ae2687f08dbe2aeae5dbfceb34f299f8a4e9f3c2506bdb1d306076",
+ "stdout_tail": "PASS geometry: fixed polycubes [1, 3, 15, 86, 534, 3481, 23502]; boundary counts {6: 1, 10: 6, 14: 45, 18: 332, 16: 12, 22: 2538, 20: 240}; vertex neighbours 32, edge neighbours 12; edge-disconnected walls among <=6 cells: 0; 7-cell walls at least 24\nPASS certificate: Peierls sum at x=3/250 is 0.0896; content-less g* = 9/62500; the four content bounds satisfy g^3 Lambda^6 (Lambda/m)^5 <= (3/250)^6\nPASS half: at the published half-filling g*, each framed box is above half filling at H+ and below it at H-, inside the Peierls window\nPASS translation: on a framed 4^3 box the bond identity holds for 20 configurations, and 24 explicit shifts drop the unlike count by the wall size\nHIT: confirmed - fixed polycubes through 7 cells and the walls through 22 plaquettes match the certificate. At x=3/250 the Peierls sum is below 1/2, so the content-less gas is ordered for g <= 9/62500 at zeta = g^-3. The four content bounds and the half-filling bounds satisfy the same window. Explicit shifts remove exactly the wall.\nSUMMARY: confirmed the polycube census, the Peierls sum, the g* arithmetic, the half-filling window, and explicit translations. Mayer-Vietoris for larger walls is the attempt's import. Random content-weight graphs were not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jdb5b",
+  "at_utc": "20260924T120013Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent polycube counts and the Peierls sum 0.0896 confirm g <= 9/62500 with no contents, and the published content and half-filling bounds. Mayer-Vietoris for larger walls is imported.",
+  "by": "w-macbookpro90c72-jdb5b",
+  "at_utc": "20260924T120013Z"
+ }
+}

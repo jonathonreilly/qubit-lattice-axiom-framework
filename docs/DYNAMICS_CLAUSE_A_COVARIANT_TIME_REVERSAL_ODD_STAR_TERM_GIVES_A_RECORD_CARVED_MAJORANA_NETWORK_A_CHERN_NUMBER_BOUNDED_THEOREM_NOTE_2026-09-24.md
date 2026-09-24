@@ -155,6 +155,22 @@ So each surface carries one chiral Majorana mode, with opposite chirality
 on the two. That is what a Chern number of magnitude 1 in the `k_x`
 planes requires. ∎
 
+## Exploratory scans, not certified here
+
+- **The route into the phase.** At `λ = 0` the zero-field network is gapped
+  (0.78, above 16 zero modes) and non-chiral.
+  - Between `λ = 0.1` and 0.8 the gap vanishes somewhere. The `k_x = π`
+    plane already has Chern number −1 while `k_x = 0` has 0, so band
+    touchings carrying Chern charge sit between them.
+  - From `λ = 0.9` the phase is gapped with `(−1, 0, 0)`, as the
+    certified window at 1 to 4 shows.
+- **Other carvings.** A coarse-grid survey covered the 16 realizable
+  networks of open PR 9097, under four coherent record rules, with every
+  single-orbit projection at `λ = 2`. It found candidates with nonzero
+  plane Chern numbers on 5 networks. Refined checks of several showed a
+  gap that vanishes somewhere, with Chern numbers that differ between
+  planes. The 19-site case here is the one verified fully gapped.
+
 ## What this means for the lanes
 
 - **Chirality lane.** Covariant ingredients now give chiral Majorana bands.

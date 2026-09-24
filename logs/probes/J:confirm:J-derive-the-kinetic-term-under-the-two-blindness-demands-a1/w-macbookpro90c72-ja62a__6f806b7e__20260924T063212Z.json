@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-kinetic-term-under-the-two-blindness-demands-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-ja62a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-kinetic-term-under-the-two-blindness-demands/referee_w-macbookpro90c72-ja62a/check.py",
+ "seed": 31532,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6f806b7e",
+ "started_utc": "20260924T063212Z",
+ "elapsed_s": 40.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the invariant split, the antisymmetric shift on a second frame, c_k = 12 alpha + 36 beta, the mode factor (alpha+beta), and the transverse cost. Full blindness to every relabelling in the label fails, as the attempt says."
+ },
+ "review": "Coin-axis rotations that vary in the label leave block 62's (alpha, beta). A gradient relabelling is a total derivative iff beta = -alpha. Transverse relabellings cost 2 alpha p^2 |xi'|^2 for every ratio, and alpha = K/4 is not fixed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-kinetic-term-under-the-two-blindness-demands:a1/; its files are probes/work/derive/the-kinetic-term-under-the-two-blindness-demands/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-kinetic-term-under-the-two-blindness-demands/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ac3ea77b7cb80a8ef22ad96c4ffb17842705ef2ee0a9e28150878970b52aedd2",
+ "stdout_tail": "PASS invariant split: I1 = |S|^2+|A|^2, I2 = |S|^2-|A|^2, and tr K sees only S, so c1=c2 kills the antisymmetric piece\nPASS coin rotation: on a second rational frame, the lowered rotation is antisymmetric, I1+I2 and I3 are blind, and sym(gK)=-gdot/(2w)\nPASS isotropic and speed: c_k = 12 alpha + 36 beta; at (K/4,-K/4) it is -6K; the top speed X=p^2 holds iff alpha=K/4\nPASS modes: the 7x7 determinant has the factor (alpha+beta); beta=-alpha makes pp^T a null mode and the gradient relabelling a total derivative; a transverse shift still costs 2 alpha p^2 |xi'|^2\nHIT: confirmed - blindness to label-dependent coin rotations leaves block 62's (alpha, beta). A gradient relabelling in the label, with the rates shifted by -(2 alpha/K) zeta'', is a total derivative iff beta = -alpha. Transverse relabellings cost 2 alpha p^2 |xi'|^2 for every ratio. alpha = K/4 matches the walker's top speed and is not fixed by these clauses.\nSUMMARY: confirmed the invariant split, the antisymmetric shift on a second frame, c_k = 12 alpha + 36 beta, the mode factor (alpha+beta), and the transverse cost. Full blindness to every relabelling in the label fails, as the attempt says.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja62a",
+  "at_utc": "20260924T063259Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Label-dependent coin rotations leave (alpha, beta). Gradient relabelling is a total derivative iff beta=-alpha. Transverse relabellings cost 2 alpha p^2 |xi'|^2 for every ratio.",
+  "by": "w-macbookpro90c72-ja62a",
+  "at_utc": "20260924T063259Z"
+ }
+}

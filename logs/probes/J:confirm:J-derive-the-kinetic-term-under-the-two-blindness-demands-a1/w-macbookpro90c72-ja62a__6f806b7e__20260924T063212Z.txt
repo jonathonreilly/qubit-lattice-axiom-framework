@@ -1,0 +1,6 @@
+PASS invariant split: I1 = |S|^2+|A|^2, I2 = |S|^2-|A|^2, and tr K sees only S, so c1=c2 kills the antisymmetric piece
+PASS coin rotation: on a second rational frame, the lowered rotation is antisymmetric, I1+I2 and I3 are blind, and sym(gK)=-gdot/(2w)
+PASS isotropic and speed: c_k = 12 alpha + 36 beta; at (K/4,-K/4) it is -6K; the top speed X=p^2 holds iff alpha=K/4
+PASS modes: the 7x7 determinant has the factor (alpha+beta); beta=-alpha makes pp^T a null mode and the gradient relabelling a total derivative; a transverse shift still costs 2 alpha p^2 |xi'|^2
+HIT: confirmed - blindness to label-dependent coin rotations leaves block 62's (alpha, beta). A gradient relabelling in the label, with the rates shifted by -(2 alpha/K) zeta'', is a total derivative iff beta = -alpha. Transverse relabellings cost 2 alpha p^2 |xi'|^2 for every ratio. alpha = K/4 matches the walker's top speed and is not fixed by these clauses.
+SUMMARY: confirmed the invariant split, the antisymmetric shift on a second frame, c_k = 12 alpha + 36 beta, the mode factor (alpha+beta), and the transverse cost. Full blindness to every relabelling in the label fails, as the attempt says.

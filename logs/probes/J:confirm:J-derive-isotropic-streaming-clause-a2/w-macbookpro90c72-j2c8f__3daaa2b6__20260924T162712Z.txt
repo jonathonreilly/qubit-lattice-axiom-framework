@@ -1,0 +1,21 @@
+ok: <|s_k|> = 1/2
+ok: <s_i^2 |s_i|> = 1/4
+ok: <s_i^2 |s_k|> = 1/8 for i != k
+ok: one-way axis rule: T_1111 - T_1122 = 1/(8 sqrt(3)) != 0, and T_1212 = 0
+ok: <s_3^6> = 1/7
+ok: <s_3^2 s_1^4> = 1/35
+ok: <s_i^2 (s_1^4+s_2^4+s_3^4)> = 1/5, equal on every axis
+ok: s1 s2 m is odd in s1, so its sphere average vanishes
+ok: at s=e1 the only forward axis hop is +e1, so M = diag(a,0,0)
+ok: two-way axis rule: mean displacement = 2 lambda kappa s
+ok: two-way axis rule: second moment = 2 lambda I, independent of s
+ok: two-way axis rule: total rate = 6 lambda
+ok: 1 +- kappa s_k = (1 - kappa) + kappa(1 +- s_k), hence nonnegative for kappa in [0,1] and |s_k|<=1
+ok: s=(1, 0, 0): mean (Fraction(1, 1), Fraction(0, 1), Fraction(0, 1)), second moment 1 I, forward and non-negative
+ok: s=(1, 1, 0): mean (Fraction(1, 1), Fraction(1, 1), Fraction(0, 1)), second moment 1 I, forward and non-negative
+ok: s=(1, 1, 1): mean (Fraction(3, 5), Fraction(3, 5), Fraction(3, 5)), second moment 1 I, forward and non-negative
+ok: forward-only total rates are [Fraction(1, 1), Fraction(2, 1), Fraction(6, 5)], not a single clock
+ok: at s=(1,1,1) the mean is (3/5)(1,1,1)
+TOTAL FAIL = 0
+HIT: confirmed - the one-way axis rate |s_k| has T_1111 = 1/(4 sqrt(3)) and T_1122 = 1/(8 sqrt(3)), so the fourth-rank moment is not isotropic, while forward-only axis hops at s=e1 give M=diag(a,0,0). The two-way rates lambda(1 +- kappa s_k) have mean 2 lambda kappa s, second moment 2 lambda I and total rate 6 lambda. Forward-only rational witnesses on the 26-neighbour set exist at (1,0,0), (1,1,0) and (1,1,1), with total rates 1, 2 and 6/5.
+SUMMARY: confirmed - anisotropy here is the one-way rate, not the restriction to axes. No continuous forward-only formula for every s was claimed, and stationarity of the uniform product measure was not checked.

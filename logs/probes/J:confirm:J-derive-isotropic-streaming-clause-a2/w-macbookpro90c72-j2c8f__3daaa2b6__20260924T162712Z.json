@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-isotropic-streaming-clause-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j2c8f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/isotropic-streaming-clause/referee_w-macbookpro90c72-j2c8f/check.py",
+ "seed": 67232,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3daaa2b6",
+ "started_utc": "20260924T162712Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - anisotropy here is the one-way rate, not the restriction to axes. No continuous forward-only formula for every s was claimed, and stationarity of the uniform product measure was not checked."
+ },
+ "review": "The one-way axis rate is anisotropic, the two-way rates lambda(1 +- kappa s_k) have second moment 2 lambda I, and forward-only rational witnesses exist at three directions with unequal total rates.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:isotropic-streaming-clause:a2/; its files are probes/work/derive/isotropic-streaming-clause/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/isotropic-streaming-clause/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ed6f798245608a6b2a8ea5773e3235b37e571d431f54e44802c3aa077fc4f37b",
+ "stdout_tail": "t s=e1 the only forward axis hop is +e1, so M = diag(a,0,0)\nok: two-way axis rule: mean displacement = 2 lambda kappa s\nok: two-way axis rule: second moment = 2 lambda I, independent of s\nok: two-way axis rule: total rate = 6 lambda\nok: 1 +- kappa s_k = (1 - kappa) + kappa(1 +- s_k), hence nonnegative for kappa in [0,1] and |s_k|<=1\nok: s=(1, 0, 0): mean (Fraction(1, 1), Fraction(0, 1), Fraction(0, 1)), second moment 1 I, forward and non-negative\nok: s=(1, 1, 0): mean (Fraction(1, 1), Fraction(1, 1), Fraction(0, 1)), second moment 1 I, forward and non-negative\nok: s=(1, 1, 1): mean (Fraction(3, 5), Fraction(3, 5), Fraction(3, 5)), second moment 1 I, forward and non-negative\nok: forward-only total rates are [Fraction(1, 1), Fraction(2, 1), Fraction(6, 5)], not a single clock\nok: at s=(1,1,1) the mean is (3/5)(1,1,1)\nTOTAL FAIL = 0\nHIT: confirmed - the one-way axis rate |s_k| has T_1111 = 1/(4 sqrt(3)) and T_1122 = 1/(8 sqrt(3)), so the fourth-rank moment is not isotropic, while forward-only axis hops at s=e1 give M=diag(a,0,0). The two-way rates lambda(1 +- kappa s_k) have mean 2 lambda kappa s, second moment 2 lambda I and total rate 6 lambda. Forward-only rational witnesses on the 26-neighbour set exist at (1,0,0), (1,1,0) and (1,1,1), with total rates 1, 2 and 6/5.\nSUMMARY: confirmed - anisotropy here is the one-way rate, not the restriction to axes. No continuous forward-only formula for every s was claimed, and stationarity of the uniform product measure was not checked.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2c8f",
+  "at_utc": "20260924T162718Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "One-way axis hops are anisotropic; two-way rates lambda(1 +- kappa s_k) have second moment 2 lambda I; forward-only witnesses exist at three directions.",
+  "by": "w-macbookpro90c72-j2c8f",
+  "at_utc": "20260924T162718Z"
+ }
+}

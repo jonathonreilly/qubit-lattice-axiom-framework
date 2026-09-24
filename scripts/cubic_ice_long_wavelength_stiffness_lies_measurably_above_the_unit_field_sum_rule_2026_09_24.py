@@ -1,37 +1,37 @@
 #!/usr/bin/env python3
-"""Cubic ice: the long-wavelength stiffness lies measurably above the unit-field sum rule.
+"""Cubic ice on the L = 16 torus: the smallest wavevectors sit above the continuous sum-rule calibration.
 
-Open PR 8871 read the large-section flux cost of uniform ice as c = 1/3 from
-the unit-field sum rule of a Gaussian field. Open PR 8881 measured c on cubic
-tori to side 24 and found it about 0.5% above, from the winding (0.3352 +-
-0.0008) and from the smallest wavevectors on L = 8 (0.3348). Open PR 8954
-showed that in the plane the sum rule misses because the correlations carry an
-excess at the zone boundary. This runner measures the long-wavelength
-stiffness and the zone profile on L = 16 with the worm of open PR 8881.
+Uniform ice and the Gaussian comparison are supplied mathematical models, as
+in landed PR 8881; every number here is a finite diagnostic of the stated
+sampling. K_L below is the continuous zero-mode calibration K_cont =
+(2N+1)/(3N) of landed PR 8881, and c_W is its discrete winding fit.
 
-With P_zz the transverse projector and K_L = 2/3 + 1/(3N) the torus sum-rule
-stiffness, a Gaussian field of stiffness K has K_L S_zz / P_zz = K_L / K at
-every wavevector. Every estimate here is a ratio of zone sums formed within
-each of 40 batches, K_L sum S_zz / sum P_zz over a set of wavevectors, with
-the standard error from the spread of the batches. This carries the exact
-pairing S(q) = S(-q) and every correlation between wavevectors.
+Because E_z^2 = 1 on every link, the covariance S_zz(q) = (1/N)|E_z(q)|^2
+sums to N over the zone in every configuration; with P_zz the transverse
+projector this makes the P_zz-weighted mean of r = K_L S_zz / P_zz, with the
+zero mode at weight 1, equal to 1 exactly. Every estimate is the batch ratio
+K_L sum S_zz / sum P_zz over a set of wavevectors, formed within each of 40
+batches, with a binned standard error from their spread. A Gaussian of
+stiffness K gives r = K_L / K, so c = K_L / (2r) is the stiffness a set
+implies. Binned errors are descriptive; no mixing bound or thermodynamic
+extrapolation is asserted.
 
 Checks:
 
 A. The exact L = 2 torus: 9600 configurations, 880 at zero flux, 125
-   winding sectors, <W^2> = 76/25; the worm reproduces <W^2> within 4
-   standard errors.
-B. On L = 16 with 10^6 worms every batch obeys the sum rule exactly, and the
-   24 smallest wavevectors (|k|^2 at most 3 units, P_zz > 0.05) give a
-   stiffness c = K_L / (2r) 0.1% to 0.5% above the torus sum-rule value
-   K_L / 2, by more than 5 standard errors.
-C. The winding stiffness also lies above K_L / 2, by more than 2
-   standard errors and within 1%. Its batch-by-batch difference to the smallest
-   wavevectors is printed and not claimed.
+   winding sectors, <W^2> = 76/25; the loop sampler reproduces <W^2>
+   within 4 standard errors.
+B. On L = 16 with 10^6 loops every batch obeys the identity, and the 24
+   smallest wavevectors (|k|^2 at most 3 units, P_zz > 0.05) imply a
+   stiffness c = K_L / (2r) 0.1% to 0.5% above K_L / 2, by more than 5
+   binned standard errors.
+C. The discrete winding fit also lies above K_L / 2, by more than 2
+   standard errors and within 1%. Its batch-by-batch difference to the
+   smallest wavevectors is printed and not claimed.
 D. In nine shells of Q = sum 2(1 - cos k) the ratio rises from the innermost
-   shell to the outermost by more than 10 standard errors; the inner half of
-   the zone (Q < 6) lies below 1 and the outer half above 1, each by more
-   than 20 standard errors.
+   shell to the outermost by more than 10 standard errors; the inner half
+   of the zone (Q < 6) lies below 1 and the outer half above 1, each by
+   more than 20 standard errors.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """

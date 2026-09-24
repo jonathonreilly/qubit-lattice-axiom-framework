@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-recapture-share-of-a-body-in-balance-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j8897",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/recapture-share-of-a-body-in-balance/referee_w-macbookpro90c72-j8897/check.py",
+ "seed": 9762,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5eec5961",
+ "started_utc": "20260924T002922Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed steps 1-5 at gamma=0 and small density; exposed normals cancel; the 40-tick factor is a model inside the executed band, and (b)(c) stay estimates"
+ },
+ "review": "Independent quadrature reproduces g-bar 0.010705051406 and separate walks reproduce the gamma=0 shares 0.134, 0.144 and 0.109, so the hitting-probability claim stands.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:recapture-share-of-a-body-in-balance:a1/; its files are probes/work/derive/recapture-share-of-a-body-in-balance/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/recapture-share-of-a-body-in-balance/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "6282ced202c9d7b6f335112fb7415dccfb8dfc061a00f494599647112f0e8a53",
+ "stdout_tail": "ok 2: emitter and all 6 neighbours are behind the first step on every face; ball R=4 has 257 sites\nok 3: exposed normals of four polycubes sum to 0; cosine-law mean content is (2/3) times the outward normal\nok 4: octant masses sum to 1.000000000000; g-bar=0.010705051406 (author 0.010705051406); 14 g-bar=0.14987; (2, 0, 0): quad 0.07491 mc 0.07485; (2, 1, 0): quad 0.02653 mc 0.02617; (1, 1, 1): quad 0.01576 mc 0.01604; (1, 1, 0): quad 0.04588 mc 0.04447\nok 5: independent walks: uniform N=15 0.1322 (author DP 0.1337); Bernoulli fill 0.06 weighted by N 0.1394 (author 0.1441); solid ball R=3 0.1051 (author 0.1086); one site 0\nok 6: steady push 0.97*(1-0.1441)=0.830 and window 0.97*(1-0.1278)=0.846 both meet 0.846+/-0.032; the window is not a sharper identity\nHIT: confirmed - at gamma=0 the own-emission share is the cosine-law directed-walk hitting probability: g-bar=0.010705051406, 14 g-bar=0.14987, one site and lattice neighbours unreachable, uniform N=15 near 0.134, Bernoulli share near 0.144, solid ball R=3 near 0.109\nSUMMARY: confirmed steps 1-5 at gamma=0 and small density; exposed normals cancel; the 40-tick factor is a model inside the executed band, and (b)(c) stay estimates\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8897",
+  "at_utc": "20260924T003013Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Gamma=0 share is the cosine-law directed-walk hitting probability: g-bar 0.010705051406 and the three body shares match an independent walk.",
+  "by": "w-macbookpro90c72-j8897",
+  "at_utc": "20260924T003013Z"
+ }
+}

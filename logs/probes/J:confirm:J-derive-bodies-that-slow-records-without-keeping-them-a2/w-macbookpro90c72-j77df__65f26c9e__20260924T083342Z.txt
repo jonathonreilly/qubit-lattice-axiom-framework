@@ -1,0 +1,5 @@
+PASS shell constant: every composition of n=2,3,4 integrates to 1/((n+1)(n+2)) in Lebesgue measure and twice that as a probability
+PASS shadow: density is rho(1+h(1/kappa-1)); number current and momentum density stay rho v; momentum current is short by rho v^2 h(1-kappa)
+PASS cancellation: (t/tau)^2 = M r^3 n_b^2 sigma^2 <m>^2 / (rho <m^2>), independent of u=1-kappa; the pair prefactor swaps into itself
+HIT: confirmed - a slowing site denser by 1/kappa leaves the number current at rho v and shortens only the momentum current, by rho v^2 h(1-kappa). The free-fall time over the linear run-down cancels u=1-kappa, leaving M r^3 n_b^2 sigma^2 <m>^2 < rho <m^2>. Shell integrals of every composition at n=2,3,4 are 2/((n+1)(n+2)) in probability measure and half of that in Lebesgue measure.
+SUMMARY: confirmed the bookkeeping, the cancellation, and the shell constants including the n=4 endpoints (4,0,0) and (3,1,0). Block 48's angular factor, sigma, and the free-fall estimate were not re-derived.

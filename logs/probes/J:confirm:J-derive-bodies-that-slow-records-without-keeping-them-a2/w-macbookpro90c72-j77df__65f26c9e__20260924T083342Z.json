@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-bodies-that-slow-records-without-keeping-them-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j77df",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/bodies-that-slow-records-without-keeping-them/referee_w-macbookpro90c72-j77df/check.py",
+ "seed": 38822,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "65f26c9e",
+ "started_utc": "20260924T083342Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the bookkeeping, the cancellation, and the shell constants including the n=4 endpoints (4,0,0) and (3,1,0). Block 48's angular factor, sigma, and the free-fall estimate were not re-derived."
+ },
+ "review": "The simplex integrals, the shadow bookkeeping, and the free-fall ratio all match the log: kappa cancels, and the shell constant is the same at every composition of n=2,3,4.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:bodies-that-slow-records-without-keeping-them:a2/; its files are probes/work/derive/bodies-that-slow-records-without-keeping-them/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/bodies-that-slow-records-without-keeping-them/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8fbd26102f281769d628e68f315242a0ff3ffa2cf5bb42a0964f8cc676dcb18a",
+ "stdout_tail": "PASS shell constant: every composition of n=2,3,4 integrates to 1/((n+1)(n+2)) in Lebesgue measure and twice that as a probability\nPASS shadow: density is rho(1+h(1/kappa-1)); number current and momentum density stay rho v; momentum current is short by rho v^2 h(1-kappa)\nPASS cancellation: (t/tau)^2 = M r^3 n_b^2 sigma^2 <m>^2 / (rho <m^2>), independent of u=1-kappa; the pair prefactor swaps into itself\nHIT: confirmed - a slowing site denser by 1/kappa leaves the number current at rho v and shortens only the momentum current, by rho v^2 h(1-kappa). The free-fall time over the linear run-down cancels u=1-kappa, leaving M r^3 n_b^2 sigma^2 <m>^2 < rho <m^2>. Shell integrals of every composition at n=2,3,4 are 2/((n+1)(n+2)) in probability measure and half of that in Lebesgue measure.\nSUMMARY: confirmed the bookkeeping, the cancellation, and the shell constants including the n=4 endpoints (4,0,0) and (3,1,0). Block 48's angular factor, sigma, and the free-fall estimate were not re-derived.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j77df",
+  "at_utc": "20260924T083349Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent simplex integrals reproduce the shell constant for every composition at n=2,3,4. The shadow identities and the cancellation of u=1-kappa are exact given the stated scalings.",
+  "by": "w-macbookpro90c72-j77df",
+  "at_utc": "20260924T083349Z"
+ }
+}

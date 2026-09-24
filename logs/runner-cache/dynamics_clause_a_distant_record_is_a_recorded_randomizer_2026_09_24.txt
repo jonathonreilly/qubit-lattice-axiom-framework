@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.py
-runner_sha256: 5a70e78ff573291b7814ca5a3aec87d4849002df711a5b27eec372aa517309e5
+runner_sha256: 7d92cdc0fc2df3480c1a3169c6748a4d091b49d4a01cf1f53355d4f6c69b9b6a
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.05
+elapsed_sec: 0.88
 status: ok
 ----- stdout -----
 [PASS] the clause carries purifications: the Heisenberg bond at J t = pi is the swap, and partial swaps give every reduced Bloch length :: |U - phase * SWAP| 3.4e-16; reduced Bloch lengths along the partial swap [1.0, 0.966, 0.866, 0.707, 0.5, 0.259, 0.0]
@@ -13,7 +13,9 @@ status: ok
 [PASS] chord consistency forces affinity: the cubic deformation passes only at zero deformation, and fails in proportion to it :: largest chord violation eps 0.0: 2.2e-16, eps 0.01: 2.5e-03, eps 0.1: 2.3e-02, eps 0.3: 6.2e-02
 [PASS] orientation from compression: a record must leave a normalizable compressed state, so P(q | -q) = 0; this forces lambda = 1 and, for any two-outcome effect, E_q = P_q :: lambda passing on a 21-point grid: [1.0]; over 13529 random effects the zero-violation effect is P_q (sample ratio |E_q - P_q| / violation up to 4.31)
 [PASS] self-consistent weights: with the partner's weights from the same law, D-loc passes only lambda = 1 and lambda = 0; compression then removes lambda = 0 :: largest marginal shift: Born (lambda 1) 2.2e-16, trivial (lambda 0) 0.0e+00, lambda 0.5 1.0e-01, anti-Born (lambda -1) 7.3e-01, cubic 6.9e-02
-TOTAL: PASS=7 FAIL=0
+[PASS] the distant update carries the argument: with a replacement update (the lock alone) anti-Born and tanh laws pass D-loc :: anti-Born: D-loc shift 1e-16, largest gap to the trace rule 0.93; tanh: D-loc shift 1e-16, largest gap to the trace rule 0.15 (the lock holds by construction)
+[PASS] D-loc is an equal-time reading: a record at distance 3 leaves site 0 unchanged at equal time and shifts it afterwards :: shift of site 0's Bloch vector at t = 0, 0.01, 0.05, 0.1: 0e+00, 1.9e-08, 2.4e-06, 1.9e-05; growth exponent 3.00
+TOTAL: PASS=9 FAIL=0
 
 ----- stderr -----
 

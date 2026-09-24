@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""A distant record is a recorded randomizer: locality of marginals forces the trace rule.
+"""A distant record is a recorded randomizer: within supplied kinematics, locality of marginals forces the trace rule.
 
 The landed affine/Born gate note names preparation affinity as the missing
 rung of the Born law, and asks for an autonomous recorded randomizer that
 proves it. Under the dynamics clause of open PR 9040, a distant record is
-one. The runner certifies (supplied models, finite diagnostics, no physical
+one. The setting is supplied: the clause's Hilbert-space kinematics
+(density operators, tensor products, purifications), the compression update
+with its distant part (D-perm), a law that is a function of the site's
+conditional state (D-tr), and locality of marginals at equal time (D-loc).
+The runner certifies (supplied models, finite diagnostics, no physical
 reading):
 
 1. The clause carries purifications: the Heisenberg bond at J t = pi is the
@@ -27,12 +31,22 @@ reading):
 6. Orientation from compression: under D-perm a record q leaves the
    normalized compression of the state, which must exist whenever q can
    form. At the antipodal pure state this forces P(q | -q) = 0: lambda = 1
-   for the affine menu law, and E_q = P_q for any two-outcome effect. So
-   the Born law follows, with neither anti-Born nor a contracted law.
+   for the affine menu law, and E_q = P_q for any two-outcome effect. So,
+   with this support condition, the Born law follows, with neither
+   anti-Born nor a contracted law.
 7. Self-consistent weights: when the partner's record weights come from
    the same law, D-loc passes only lambda = 1 and lambda = 0 (lambda = 0.5,
    anti-Born and the cubic deformation signal); compression (check 6)
    removes lambda = 0. So the Born weights of the partner are not an input.
+8. The distant update carries the argument: if a record replaced only its
+   own site's state (the lock alone, no distant update), every law would
+   pass D-loc and the lock (which hold by construction there). Anti-Born
+   and tanh laws then differ from the trace rule by up to 0.93 and 0.15 on
+   random reduced states, with zero D-loc shift.
+9. D-loc is an equal-time reading: in a four-site Heisenberg chain a record
+   at distance 3 leaves site 0's Bloch vector unchanged at equal time, and
+   shifts it afterwards, growing like t^3 (causal propagation through the
+   dynamics, not signalling by the record).
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -263,6 +277,64 @@ sc = {k: selfconsistent_shift(f) for k, f in laws.items()}
 ok7 = sc["Born (lambda 1)"] < 1e-12 and sc["trivial (lambda 0)"] < 1e-12 and all(sc[k] > 1e-2 for k in ("lambda 0.5", "anti-Born (lambda -1)", "cubic"))
 check("self-consistent weights: with the partner's weights from the same law, D-loc passes only lambda = 1 and lambda = 0; compression then removes lambda = 0",
       ok7, "largest marginal shift: " + ", ".join(f"{k} {v:.1e}" for k, v in sc.items()))
+
+# ------------------------------------------------ 8. the distant update carries the argument
+# Replacement countermodel: a record q at the partner sets the partner to P_q and leaves the site's
+# state at its reduced state (no distant update). The lock holds, and D-loc holds for every law.
+def replacement_test(f, trials=300):
+    worst_loc, worst_gap = 0.0, 0.0
+    for _ in range(trials):
+        v = rng.normal(size=4) + 1j * rng.normal(size=4)
+        v /= np.linalg.norm(v)
+        M = v.reshape(2, 2)
+        rho_site, rho_part = M @ M.conj().T, M.T @ M.conj()
+        r, bvec = bloch(rho_site), bloch(rho_part)
+        n, m = unit(rng.normal(size=3)), unit(rng.normal(size=3))
+        avg = 0.0
+        for sgn in (1, -1):
+            w = f(sgn * (bvec @ n))                               # the partner ends in P_q (the lock)
+            avg += w * f(r @ m)                                   # the site keeps its reduced state
+        worst_loc = max(worst_loc, abs(avg - f(r @ m)))
+        worst_gap = max(worst_gap, abs(f(r @ m) - 0.5 * (1 + r @ m)))
+    return worst_loc, worst_gap
+
+
+rep = {"anti-Born": replacement_test(lambda x: 0.5 * (1 - x)), "tanh": replacement_test(lambda x: 0.5 * (1 + np.tanh(2 * x) / np.tanh(2)))}
+check("the distant update carries the argument: with a replacement update (the lock alone) anti-Born and tanh laws pass D-loc",
+      all(v[0] < 1e-12 and v[1] > 0.1 for v in rep.values()),
+      "; ".join(f"{k}: D-loc shift {v[0]:.0e}, largest gap to the trace rule {v[1]:.2f}" for k, v in rep.items())
+      + " (the lock holds by construction)")
+
+# ------------------------------------------------ 9. D-loc is an equal-time reading
+def chain_ops(n):
+    def op(site, P):
+        mats = [I2] * n
+        mats[site] = P
+        out = mats[0]
+        for mm in mats[1:]:
+            out = np.kron(out, mm)
+        return out
+    H = sum(op(i, P) @ op(i + 1, P) for i in range(n - 1) for P in (PX, PY, PZ)) / 4
+    return op, H
+
+
+nch = 4
+op4, H4 = chain_ops(nch)
+psi = rng.normal(size=2 ** nch) + 1j * rng.normal(size=2 ** nch)
+psi /= np.linalg.norm(psi)
+rho0 = np.outer(psi, psi.conj())
+Pz = [op4(nch - 1, 0.5 * (I2 + sg * PZ)) for sg in (1, -1)]
+rec = sum(P @ rho0 @ P for P in Pz)                                # a record at site 3, outcome not selected
+shifts = []
+for t in (0.0, 0.01, 0.05, 0.1):
+    U = expm(-1j * H4 * t)
+    b_no = np.real([np.trace(U @ rho0 @ U.conj().T @ op4(0, P)) for P in (PX, PY, PZ)])
+    b_rec = np.real([np.trace(U @ rec @ U.conj().T @ op4(0, P)) for P in (PX, PY, PZ)])
+    shifts.append(np.linalg.norm(b_no - b_rec))
+growth = np.log(shifts[3] / shifts[2]) / np.log(2)
+check("D-loc is an equal-time reading: a record at distance 3 leaves site 0 unchanged at equal time and shifts it afterwards",
+      shifts[0] < 1e-12 and all(x > 1e-9 for x in shifts[1:]) and 2.5 < growth < 3.5,
+      f"shift of site 0's Bloch vector at t = 0, 0.01, 0.05, 0.1: {shifts[0]:.0e}, {shifts[1]:.1e}, {shifts[2]:.1e}, {shifts[3]:.1e}; growth exponent {growth:.2f}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

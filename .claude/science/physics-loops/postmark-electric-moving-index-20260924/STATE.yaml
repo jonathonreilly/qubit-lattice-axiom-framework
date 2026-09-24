@@ -6,8 +6,8 @@ runtime:
   authorized: 12h
   started_utc: "2026-09-24T04:38:00Z"
   deadline_utc: "2026-09-24T16:38:00Z"
-  checkpoint_utc: "2026-09-24T16:33:00Z"
-  runtime_used_at_checkpoint: "about 11h55m"
+  checkpoint_utc: "2026-09-24T16:34:00Z"
+  runtime_used_at_checkpoint: "about 11h56m"
 cycle_count: 4
 block_count: 4
 source:
@@ -16,7 +16,7 @@ source:
   base_revision: 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8
   branch: physics-loop/postmark-electric-quantization-phase-20260924
   worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-electric-quantization-phase-20260924
-  head_revision: c734332ca227c4371f3c188f96227c494b43f533
+  head_revision: 461bd9bcd1bf2b61a96bd93f0adcc2c6f847709c
   parent_review_branch: physics-loop/postmark-electric-weighted-phase-20260924
 active_route: "observable-aware deterministic cancellation across macroscopic spectral lags and all reciprocal phase aliases"
 target_claim_type: bounded_theorem

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-static-formation-singularity-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j4fd8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/static-formation-singularity/referee_w-macbookpro90c72-j4fd8/check.py",
+ "seed": 47461,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "46309928",
+ "started_utc": "20260924T105741Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the identity on every 4-cycle order, Z_W=20784, the UV fraction, the 9268 and 495 thresholds, the four-point gap 315/180128, and the factor 986. The price sheet is their reported test, not proved optimal. The Z^3 minimum and the cube TV were not re-summed."
+ },
+ "review": "The likelihood identity holds on every 4-cycle order, and the published plaquette test has UV below 1, so 9268 disjoint cycles separate the static law from the hull.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:static-formation-singularity:a1/; its files are probes/work/derive/static-formation-singularity/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/static-formation-singularity/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "bdfb8c094e914c6055f541cd44edc81169b81b982b29f13325f92d912c744e32",
+ "stdout_tail": "PASS likelihood: Z_W=20784, identity on 24 orders x 1296, 4 laws\nPASS plaquette separation: UV<1, threshold bound 9267.85<9268, hull gap 30457/2431728, four-point 315/180128\nPASS converse: Hellinger >= 0.99971203, so m<=495 cannot reach TV 1/2\nPASS divergence and energy: the rational divergence bound holds, and the six-neighbour weight is at most 986\nPASS rates: independent-set densities 1/3 in Z^2 and 1/4 in Z^3\nHIT: confirmed - the likelihood is W over the Z(v|A) factors, UV of the published plaquette test is below 1 so m=9268 disjoint 4-cycles give TV at least 1/2 against the hull, and the Hellinger bound leaves m<=495 powerless for the nearest fixed order\nSUMMARY: confirmed the identity on every 4-cycle order, Z_W=20784, the UV fraction, the 9268 and 495 thresholds, the four-point gap 315/180128, and the factor 986. The price sheet is their reported test, not proved optimal. The Z^3 minimum and the cube TV were not re-summed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4fd8",
+  "at_utc": "20260924T105750Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The likelihood identity holds on the 4-cycle, and the published test separates the static law from the formation hull at 9268 disjoint plaquettes.",
+  "by": "w-macbookpro90c72-j4fd8",
+  "at_utc": "20260924T105750Z"
+ }
+}

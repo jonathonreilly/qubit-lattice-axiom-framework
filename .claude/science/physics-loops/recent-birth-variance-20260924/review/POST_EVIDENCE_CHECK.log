@@ -1,0 +1,61 @@
+{
+  "status": "PASS-evidence-correspondence-and-stored-scalar-consistency",
+  "checker_sha256": "25aa9be9cd270407ee5d5d1a0a47ba2653d7133ebd8b5e668f659731e274d43f",
+  "pre_seal_sha256": "71ed041319a34f1a58a53bddbf1e7686094cb7fc7a0ca92886dbb6209868828f",
+  "pre_members_unchanged": 11,
+  "original_snapshot_pairs_verified": 8,
+  "root_runner_sha256": "1d56ded6fa3ee1ef8b739c7117d0be2aeff24c2d28f651aceda6be258ad35fc6",
+  "complete_stdout_equals_complete_result_bytes": true,
+  "stderr_empty": true,
+  "recorded_exit_code": 0,
+  "recorded_wall_seconds": 0.7096904579084367,
+  "recorded_internal_seconds": 0.033462333027273417,
+  "toy_infinite_integral_from_explicit_2x2_Lyapunov_solution": 2.68491124260355,
+  "toy_infinite_integral_formula_discrepancy": 0.0,
+  "rows_checked": [
+    {
+      "t": 0.6,
+      "epsilon": 0.12,
+      "maximum_stored_scalar_consistency_error": 0.0
+    },
+    {
+      "t": 0.6,
+      "epsilon": 0.06,
+      "maximum_stored_scalar_consistency_error": 2.117582368135751e-22
+    },
+    {
+      "t": 0.6,
+      "epsilon": 0.03,
+      "maximum_stored_scalar_consistency_error": 1.3234889800848443e-23
+    },
+    {
+      "t": 0.6,
+      "epsilon": 0.015,
+      "maximum_stored_scalar_consistency_error": 0.0
+    },
+    {
+      "t": 1.2,
+      "epsilon": 0.12,
+      "maximum_stored_scalar_consistency_error": 0.0
+    },
+    {
+      "t": 1.2,
+      "epsilon": 0.06,
+      "maximum_stored_scalar_consistency_error": 0.0
+    },
+    {
+      "t": 1.2,
+      "epsilon": 0.03,
+      "maximum_stored_scalar_consistency_error": 0.0
+    },
+    {
+      "t": 1.2,
+      "epsilon": 0.015,
+      "maximum_stored_scalar_consistency_error": 1.1102230246251565e-16
+    }
+  ],
+  "mutant_scope": "field_only_mutant_high_probability is a stored literal zero comparator, not a separately executed mutation.",
+  "root_toy_imported_or_executed": false,
+  "independent_full_cube_numerical_replication": false,
+  "scope": "Frozen identities, full output correspondence and arithmetic consistency only. Toy formulas were analytically compared in POST; these checks do not prove the cube limit or establish interval enclosures."
+}

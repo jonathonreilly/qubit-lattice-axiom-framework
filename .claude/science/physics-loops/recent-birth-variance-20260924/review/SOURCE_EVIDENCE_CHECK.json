@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-09-24T16:09:02.422517+00:00",
+  "status": "PASS-source-and-exact-control-correspondence",
+  "committed_sources": [
+    {
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "committed_bytes_equal_snapshot": true
+    },
+    {
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "committed_bytes_equal_snapshot": true
+    },
+    {
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "committed_bytes_equal_snapshot": true
+    },
+    {
+      "revision": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+      "path": "docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "committed_bytes_equal_snapshot": true
+    }
+  ],
+  "instruction_hashes_reverified": {
+    "AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+  },
+  "primitive_source_sha256": "065fc1f5e0a0130d77a2e15a0eb053c1f4d920726ac29a1ca21faf0adb9993a2",
+  "complete_primitive_log_matches_complete_result": true,
+  "primitive_stderr_empty": true,
+  "scopes": "No candidate or forbidden route read. Exact primitive tests check finite rotor algebra only; analytic argument is in PRE.md."
+}

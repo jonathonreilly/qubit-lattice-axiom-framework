@@ -1,0 +1,95 @@
+{
+  "frozen_utc": "2026-09-24T16:47:50.181371+00:00",
+  "stage": "initial-publication-source-before-correction",
+  "scope": "Snapshot retains the initially released note with omitted explicit joint-limit hypothesis and its corresponding runner/results/cache; subsequent corrections must have separate source pins.",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_initial_sources/worktree/docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "21795987055be8bf11f7e2bf8c0c05ce1b4ef1ec2c1bfc1a825a78a43dea64fd",
+      "bytes": 24416
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/scripts/recent_births_full_cube_energy_variance_2026_09_24.py",
+      "snapshot": "publication_initial_sources/worktree/scripts/recent_births_full_cube_energy_variance_2026_09_24.py",
+      "sha256": "57a2c606b7898a69cd6390bb997a1e4ac5c9233161fd84bc86c8b6d71cc383ca",
+      "bytes": 12990
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/outputs/recent_birth_full_cube_variance_20260924/RECENT_BIRTH_FULL_ENSEMBLE_RESULTS.json",
+      "snapshot": "publication_initial_sources/worktree/outputs/recent_birth_full_cube_variance_20260924/RECENT_BIRTH_FULL_ENSEMBLE_RESULTS.json",
+      "sha256": "7624d1ec0dbb59ac6d4a0cda95381dff22f66682bd69d238d8cd27ecfcd12e29",
+      "bytes": 23244
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/logs/runner-cache/recent_births_full_cube_energy_variance_2026_09_24.txt",
+      "snapshot": "publication_initial_sources/worktree/logs/runner-cache/recent_births_full_cube_energy_variance_2026_09_24.txt",
+      "sha256": "d1441be2c8aadc03a65d861319110dc09571c22db32f95b52bec677806bdbf19",
+      "bytes": 23633
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_initial_sources/worktree/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_initial_sources/worktree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_initial_sources/worktree/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_initial_sources/worktree/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "bytes": 27264
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/AGENTS.md",
+      "snapshot": "publication_initial_sources/worktree/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "publication_initial_sources/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/scripts/runner_cache.py",
+      "snapshot": "publication_initial_sources/worktree/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NINTH_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "publication_initial_sources/external/NINTH_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "bf41fb7d18dc45989f388820736134e4c0828a6e7984942653f8ffba060ff718",
+      "bytes": 388
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NINTH_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "publication_initial_sources/external/NINTH_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "d818b93ce25e89133f5e6202e3a6cfd0113ade7df8060cec4ecdb8c4eb2c4e2c",
+      "bytes": 25852
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NINTH_PRIMARY_ROOT_VERIFICATION.json",
+      "snapshot": "publication_initial_sources/external/NINTH_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "9f5e74281ff6b89293cddd33378f6112e4819e7472908683bf83ae68a1bd2a0e",
+      "bytes": 570
+    }
+  ],
+  "prior_seals": {
+    "PRE_SEAL.json": "71ed041319a34f1a58a53bddbf1e7686094cb7fc7a0ca92886dbb6209868828f",
+    "POST_SEAL.json": "3152d1e7a2bacd06f615f97ec0de54d0dc0f7f109af1347e25d31771b0373b38"
+  }
+}

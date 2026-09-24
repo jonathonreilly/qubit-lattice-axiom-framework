@@ -1,0 +1,21 @@
+{
+  "sealed_utc": "2026-09-24T16:10:03.860420+00:00",
+  "stage": "independent-blind-PRE-before-candidate-release",
+  "scope": "Full N=4-start original continuous GKLS ensemble; exact first-birth decomposition, evolved low input, compact fast no-second-birth source layer, second-moment and mixed-variance lower bounds. No full pointwise asymptotic, Fisher-coherence or external resource claim.",
+  "author_candidate_read": false,
+  "inherited_model_and_effort_retained": true,
+  "delegation_used": false,
+  "files": {
+    "PRE.md": "82b7a4734b2fcfba45022c11859abdaa2239468e8b6a6ddc93f15481b1a41a25",
+    "SOURCE_PINS.json": "5ea53dd6392a71a0a7f3a92696032c5136dc4eff37ae3cd7108c146979eb3b6e",
+    "SOURCE_EVIDENCE_CHECK.json": "e90500658757fe4cd55f9f5862c1731e3d7aa9a753b55a89dc4ab24448cae1f8",
+    "primitive_source_check.py": "065fc1f5e0a0130d77a2e15a0eb053c1f4d920726ac29a1ca21faf0adb9993a2",
+    "PRIMITIVE_SOURCE_RESULTS.json": "a91d6b23a4c8b0cc2a43e5559f9346ff9444b89c950975edec7a15df96d14659",
+    "PRIMITIVE_SOURCE_CHECK.log": "a91d6b23a4c8b0cc2a43e5559f9346ff9444b89c950975edec7a15df96d14659",
+    "PRIMITIVE_SOURCE_CHECK.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sources/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "sources/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f"
+  }
+}

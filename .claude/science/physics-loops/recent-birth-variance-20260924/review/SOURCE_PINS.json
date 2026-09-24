@@ -1,0 +1,42 @@
+{
+  "frozen_utc": "2026-09-24T15:53:41.729064+00:00",
+  "authorized_main": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "stage": "independent-blind-PRE",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317,
+      "lines": 320
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "lines": 285
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011,
+      "lines": 201
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working@c234d47c9d99b7fd5590957ec08d9083877d25e6:docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "bytes": 27264,
+      "lines": 519
+    }
+  ],
+  "excluded_sources": "No recent-birth-energy-personal, continuous-coherence, preparation-uniform, integrated-variance-publication, current campaign checkpoint or new root derivation read.",
+  "unchanged_instruction_hashes": {
+    "AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+  },
+  "instruction_reuse": "Reused the already fully read current-main AGENTS and SCIENCE_WORKFLOW; hashes reverified. Inherited model/effort; no delegation."
+}

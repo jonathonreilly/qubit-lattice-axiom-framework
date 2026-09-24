@@ -1,0 +1,33 @@
+{
+  "verified_utc": "2026-09-24T16:59:03.439731+00:00",
+  "prior_seals": {
+    "PRE_SEAL.json": {
+      "sha256": "71ed041319a34f1a58a53bddbf1e7686094cb7fc7a0ca92886dbb6209868828f",
+      "all_members_unchanged": 11
+    },
+    "POST_SEAL.json": {
+      "sha256": "3152d1e7a2bacd06f615f97ec0de54d0dc0f7f109af1347e25d31771b0373b38",
+      "all_members_unchanged": 14
+    }
+  },
+  "source_pin_verification": {
+    "PUBLICATION_INITIAL_SOURCE_PINS.json": {
+      "sha256": "10bebf9d09903e3942a89ed0b5b404a4823f3718e54c44d85e4861eeaf8524cb",
+      "snapshot_members_verified": 14,
+      "live_sources_reverified": false
+    },
+    "PUBLICATION_SOURCE_PINS.json": {
+      "sha256": "4a11e9d9d904ad0434e040e599bb012923d9998cb58213350c0905936586f821",
+      "snapshot_members_verified": 14,
+      "live_sources_reverified": true
+    }
+  },
+  "evidence_check_sha256": "c18d577eb3b2ee720acf86bf4d0a615141ad18722ac0181a1d219d10eb5a8cde",
+  "checker_sha256": "108b10cedc82e8c970aaec9002e97fb5c9f798b1f4414b4448e1f4c8844ce264",
+  "log_equals_json": true,
+  "stderr_empty": true,
+  "evidence_comparisons": 29,
+  "all_evidence_comparisons_pass": true,
+  "publication_report_sha256": "137fdd3ab4a40890c014560548ac719b788dd9d5dc9c515c4c96431c51de3d53",
+  "scope": "Final seal-time byte checks only; no scientific control rerun or audit verdict."
+}

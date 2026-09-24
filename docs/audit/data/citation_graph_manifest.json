@@ -1,6 +1,6 @@
 {
- "edge_count": 14624,
- "node_count": 6650,
+ "edge_count": 14628,
+ "node_count": 6651,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16729,6 +16729,10 @@
   "realized_state_primitive": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "recent_births_force_full_cube_energy_variance_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "875e0b5e9965",
+   "out_degree": 4
   },
   "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06": {
    "deps_hash": "8e0303c6f18c",

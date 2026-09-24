@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_in_discrete_ticks_a_local_clock_is_exact_only_for_walks_that_do_not_move_2026_09_23.py
 runner_sha256: d26861a3f4137a13ce5211ececbd9058cd8c4551cb899d6ae777c7e166c0f073
-input_fingerprint_sha256: ed4ba6adc682154c1c34fd815f36c6f004088504a8591b3c91c14354c5c5db76
+input_fingerprint_sha256: cd45e83024b486a1c99f6d2404dac61226b45165d3144be5d57477cf0ec42ec9
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.39
+elapsed_sec: 1.46
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

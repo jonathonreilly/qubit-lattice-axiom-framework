@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_in_discrete_ticks_a_local_clock_is_exact_only_for_walks_that_do_not_move_the_flat_band_theorem_and_a_walk_clocked_to_relative_eps_squared_bounded_theorem_note_2026-09-23
 claim_type: bounded_theorem
-claim_scope: "WITHIN the supplied clock clause of blocks 53 and 54 (a site's rate is a local clock w_x; block 54's walk hops on bonds timed by sqrt(w_x w_y); its translation identity says a packet moved up a uniform gradient by a does everything lambda_a times faster), run in discrete ticks. Exact: (T1) the partial-swap walk - rotations exp(-i eps_b sigma_x) on the pairs {(up,x),(down,x+1)} then {(down,x),(up,x+1)}, bond angle eps_b = eps0 sqrt(w_x w_(x+1)) - is unitary with range 2 for every clock field, equals two ticks of the coined walk at coin angle pi/2 - eps (so it is the square of a range-1 step), and its first-order generator is, after the gauge psi_x -> i^x psi_x, twice block 54's clocked line walk; (T2) at a uniform angle sin(omega/2) = sin eps |cos k|, omega = 2 eps |cos k|(1 - (eps^2/6) sin^2 k) + O(eps^5): the frequencies follow the local clock to relative eps^2; the rays obey dv/dt = (2v^2 + Psi) d_x log w with Psi in closed form, block 54's law plus O(eps^4); (T3) this walk has no exact clock: tr U(2 eps)/2 - cos 2 omega(eps) = 2 sin^4 eps sin^2 2k, and for any field U[w]^2 reaches four sites while U[2w] reaches two; (T4, the flat-band theorem) a translation-invariant unitary on l^2(Z^d; C^N) of range R whose first N((2R+1)^d + 1) powers keep range R, or whose eigenphases scale exactly with a clock over an interval, has a spectrum independent of k and never moves a walker more than (N-1)R sites; a local, covariant rule continuous in the clocks that obeys the discrete clock identity for all integer ratios up to that bound in exponential gradients has flat bands; the bound is attained by the range-1 group cos c - i sin c H with H^2 = 1. EXECUTED, NOT CLAIMED: a packet in a clock gradient follows the exact discrete rays (0.21 of 326.6 sites), not block 54's law (off 2.1). From probes workers (Claude Opus 5.5 and Claude Opus 5), refereed by another model family (a Grok model). Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN the supplied clock clause of blocks 53 and 54 (a site's rate is a local clock w_x; block 54's walk hops on bonds timed by sqrt(w_x w_y); as landed on main its translation identity is a finite-power identity whose evolution form is conditional on a realization not established there), run in discrete ticks. Exact: (T1) the partial-swap walk - rotations exp(-i eps_b sigma_x) on the pairs {(up,x),(down,x+1)} then {(down,x),(up,x+1)}, bond angle eps_b = eps0 sqrt(w_x w_(x+1)) - is unitary with range 2 for every clock field, equals two ticks of the coined walk at coin angle pi/2 - eps (so it is the square of a range-1 step), and its first-order generator is, after the gauge psi_x -> i^x psi_x, twice block 54's clocked line walk; (T2) at a uniform angle sin(omega/2) = sin eps |cos k|, omega = 2 eps |cos k|(1 - (eps^2/6) sin^2 k) + O(eps^5): the frequencies follow the local clock to relative eps^2; the rays obey dv/dt = (2v^2 + Psi) d_x log w with Psi in closed form, block 54's law plus O(eps^4); (T3) this walk has no exact clock: tr U(2 eps)/2 - cos 2 omega(eps) = 2 sin^4 eps sin^2 2k, and for any field U[w]^2 reaches four sites while U[2w] reaches two; (T4, the flat-band theorem) a translation-invariant unitary on l^2(Z^d; C^N) of range R whose first N((2R+1)^d + 1) powers keep range R, or whose eigenphases scale exactly with a clock over an interval, has a spectrum independent of k and never moves a walker more than (N-1)R sites; a local, covariant rule continuous in the clocks that obeys the discrete clock identity for all integer ratios up to that bound in exponential gradients has flat bands; the bound is attained by the range-1 group cos c - i sin c H with H^2 = 1. EXECUTED, NOT CLAIMED: a packet in a clock gradient follows the exact discrete rays (0.21 of 326.6 sites), not block 54's law (off 2.1). From probes workers (Claude Opus 5.5 and Claude Opus 5), refereed by another model family (a Grok model). Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_in_discrete_ticks_a_local_clock_is_exact_only_for_walks_that_do_not_move_2026_09_23.py
@@ -19,7 +19,7 @@ No value, constant or theorem is imported as authority; the standard mathematica
 
 ## Result up front
 
-Block 54 (#8570) put possibility's walk on local clocks. Every bond is timed by the geometric mean of its ends' rates, and a translation identity holds: a packet moved up a uniform clock gradient by `a` does everything `λ_a` times faster. The walk runs in continuous time. The question here is whether it can run in discrete ticks and keep the clock.
+Block 54 (#8570) put possibility's walk on local clocks, every bond timed by the geometric mean of its ends' rates, in continuous time. Its PR text read a translation identity as "a packet moved up a uniform clock gradient by `a` does everything `λ_a` times faster". As landed on main (c3f8c47a58), the identity is a finite-power identity on finite-support amplitudes; the evolution form needs a self-adjoint realization that is not established, and the exact packet force is withdrawn. The question here is whether the walk can run in discrete ticks and keep the clock exactly, in the discrete form of that identity.
 
 Two probes workers answered, and a referee of another model family (a Grok model) checked both.
 - Attempt a1 (`w-jonathonsmac4f50-j0f4f`, Claude Opus 5) showed that three natural formulations fail:
@@ -40,7 +40,7 @@ Two probes workers answered, and a referee of another model family (a Grok model
 
 **Executed control (not claimed).** A packet runs 400 ticks in a clock gradient. It follows the exact discrete rays to `0.21` of the `326.6` sites it travels, and misses block 54's continuous law by `2.1`: the `ε²` term is seen.
 
-In plain terms: if time comes in ticks and each place keeps its own clock, then a walker cannot move while ticking exactly at its local rate. It can do so only approximately, with an error that grows as the square of how much happens per tick. Exact local clocks need continuous time, as block 54's walk has, or a walker that stays put.
+In plain terms: if time comes in ticks and each place keeps its own clock, then a walker cannot move while ticking exactly at its local rate. It can do so only approximately, with an error that grows as the square of how much happens per tick. In ticks, an exact local clock needs a walker that stays put; whether continuous time allows one is block 54's open realization question.
 
 ## Premises and declared objects
 
@@ -49,7 +49,7 @@ In plain terms: if time comes in ticks and each place keeps its own clock, then 
 - **Block 54's walk** (#8570, open).
   - On the line, `(T_eψ)(x) = ψ(x − e)` and `D = (i/2)(T − T†)`, with symbol `sin k`; the walk is `σ D`.
   - The clocked walk is `H_w = W^{1/2} H W^{1/2}`, with every bond carrying `√(w_x w_y)`.
-  - The translation identity (T3) says that if `w(x + a) = λ_a w(x)`, then `U_w(t) T_a = T_a U_w(λ_a t)`.
+  - The translation identity (T3), as landed on main, says that if `w(x + a) = λ_a w(x)`, then `H_w^n T_a = λ_a^n T_a H_w^n` on finite-support amplitudes; the evolution form `U_w(t) T_a = T_a U_w(λ_a t)` is conditional on a self-adjoint realization not established there.
   - The ray law (T4) is `dv/dt = −w²(ε²/2)″ ∂_x log w + 2v² ∂_x log w` for `E = w(x)ε(k)`.
 - **Discrete ticks.**
   - A step is a unitary `U[w]` on `ℓ²(Z; C²)` (two components, up and down), depending on the clock field.
@@ -155,7 +155,7 @@ audit_required_before_effective_retained: true
 
 ## Prior art and what is new
 
-- **Block 54** (#8570) gave the clocked walk, the bond timing, the translation identity and the ray law, all in continuous time. **Block 53** (#8568) gave the clock clause and its "no master clock" covariance.
+- **Block 54** (#8570; landed in c3f8c47a58 as "Clocked nearest-neighbour amplitudes: finite operator identities and conditional ray motion") gave the clocked walk, the bond timing, the finite-power translation identity and the conditional ray law, in continuous time; the owner's review withdrew the exact packet force. **Block 53** (#8568; landed in c3f8c47a58) gave the clock clause and its "no master clock" covariance.
 - **Block 57** (#8578) found that the time parameter is a label: kinetic terms see only rate differences.
 - **Block 96** (#8866) found that waves need a coupling time reversal flips; the walk is such a coupling.
 - **Blocks 26 and 90–94** worked formation in discrete levels. This note is about the walk, not formation.
@@ -187,7 +187,7 @@ The note's negative sentences:
 1. *Ranges that grow with the clock.* T4 assumes a uniform range. A step whose range grows with `w` is not local in the axioms' sense.
 2. *Rules discontinuous in the clocks.* T4(c) uses continuity in the nearby clocks. A rule that switches formulations at thresholds escapes (c), not (a) or (b).
 3. *Non-periodic tick schedules.* a1's fraction-of-ticks schedules with angles in `{0, π/2}` are unitary tick by tick. T4 applies to them only through their period products.
-4. *Continuous time.* Block 54's walk keeps the clock exactly, because its time is continuous. T4 says nothing against that.
+4. *Continuous time.* T4 says nothing against continuous time. Whether block 54's continuous-time walk keeps the clock exactly depends on a self-adjoint realization that block 54, as landed, leaves open.
 5. *Three dimensions.* T4 holds in any dimension. The three-dimensional partial-swap walk (a3's plan: six layers, palindromic) is not worked here.
 
 ### N2 — Wall-independence audit
@@ -265,3 +265,7 @@ PYTHONPATH=scripts python3 scripts/admissibility_rule_in_discrete_ticks_a_local_
 ```
 
 Expected: `TOTAL: PASS=11 FAIL=0`.
+
+## Corrigendum 2026-09-23 (after the owner's landings)
+
+Block 54 was landed on main in c3f8c47a58 with its evolution identity left conditional and its exact packet force withdrawn. This note now cites the landed finite-power identity, and no longer says that block 54's continuous-time walk keeps the clock exactly. T1–T4, and every check, are unchanged.

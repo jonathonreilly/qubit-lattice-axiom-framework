@@ -22,11 +22,18 @@
  "stdout_tail": " polynomial E^16 (E^2 - 1)^24 (E^2 - 2)^24 (E^2 - 3)^8 over F_p: levels of multiplicity 16, 24, 24, 8 (momentum and species labels together); a varying field lifts all of it to exact doubling\nfamilies Q A C W U (all exact): 5/5 ok, 1 s\nSUMMARY: PARTIAL recovered PR8602's deferred finite observation ('executed multiplicity is two in every case') as an exact statement: Theta anticommutes with the three even species maps, so the symmetry of the walk in rate and reach-three fields has a 2-dimensional irreducible corepresentation and forces only doubling; certified rational fields of all four kinds have every nonzero level exactly doubled; rate fields keep the eight species' 16 zero modes exactly (kernel Phi^-1 ker H); the uniform walk on 4^3 has multiplicities 16, 24, 24, 8\nHIT: on even tori the reversal Theta = sigma_2 K anticommutes with each of block 70's even species maps V_110, V_101, V_011; with their own relations this makes the symmetry of the walk in any varying rate or reach-three field a 2-dimensional irreducible corepresentation (V -> sigma_z, sigma_x, -sigma_y, Theta -> sigma_y K), so symmetry forces levels of even multiplicity and never a four- or eightfold level; certified over F_1000033, rational rate (4x4x4), reach-three (6x4x4), frame and reach-two (4x4x4) fields have every nonzero level exactly doubled, while every positive rate field keeps the 16 zero modes of the eight species exactly (ker Phi H Phi = Phi^-1 ker H), against 16, 24, 24, 8 for the uniform walk\n",
  "checked": {
   "by": "w-macbookpro9927a-j45fd",
-  "at_utc": "20260924T121110Z",
+  "at_utc": "20260924T121150Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e0156b5d differs from the current HEAD 05957cee (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: first recovery pass of the species bundle; the new mathematics is the anticommutation of Theta with block 70's even species maps and the resulting 2-dimensional corepresentation (symmetry forces doubling only), the exact persistence of the 16 species zero modes in every rate field, and exact mod-p certificates of doubling for four field kinds; it converts PR8602's deferred floating observation into exact statements. RECOVERY_STATUS.json ranks the rest of batch 8. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-j45fd",
+  "at_utc": "20260924T121150Z"
  }
 }

@@ -120,7 +120,7 @@ USED = {
     9072: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-star", "D-tr", "D-pattern"},
     9077: {"D-dyn", "D-roles", "D-gauss"},
     9081: {"D-roles", "D-gauss"},
-    9083: {"D-dyn", "D-perm", "D-menu", "D-loc", "D-relax"},
+    9083: {"D-dyn", "D-perm", "D-menu", "D-loc"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",

@@ -154,15 +154,17 @@ one clause generates across the lanes.
     - The clause carries a condition qubit's purification to any distance.
     - Recording the partner steers the qubit to either end of any chord.
     - Under D-loc (marginals do not depend on distant record formation), the
-      law is affine: the trace rule. Repeat certainty then orients it to
-      the Born law.
-    - This discharges the landed affine/Born gate's first obligation.
+      law is affine: the trace rule.
+    - Compression consistency (D-perm) then forces `E_q = P_q`, the Born
+      orientation with full contrast.
+    - This discharges the landed affine/Born gate's first and third
+      obligations. D-tr is now derived from D-loc and D-perm, not supplied.
 
 **The ladder.** What each sector needs from the dynamics and the lattice:
 
 | Sector | Needs | Blocks |
 |---|---|---|
-| Quantum probability (Born form, frequencies, Bell) | the two-site clause; the trace rule follows from locality of marginals (D-loc) | 9041, 9043, 9046, 9052, 9083 |
+| Quantum probability (Born form, frequencies, Bell) | the two-site clause; the Born law follows from locality of marginals (D-loc) and compression (D-perm) | 9041, 9043, 9046, 9052, 9083 |
 | Z2 gauge field and Majorana fermions | the two-site clause at the compass point, plus a record carving | 9048, 9054 |
 | U(1) photon | one neighbourhood: a plaquette ring, or a soft vertex Gauss energy | 9066, 9069, 9072 |
 | Linearized-gravity tensor field | more than one neighbourhood: the smallest moves span a vertex's second neighbourhood | 9077 |
@@ -258,8 +260,8 @@ Two checkers wrote separate code and did not read the campaign's runners.
 
 A candidate built on the four axioms plus one local dynamics clause holds
 together in its quantum-probability sector:
-- the Born form, from the trace rule, which locality of marginals forces
-  (open PR 9083);
+- the Born law `Tr(P_q ρ)`: locality of marginals forces affinity and
+  compression forces the orientation (open PR 9083);
 - frequencies, through clustering;
 - Bell values, which reach the quantum bound and no further.
 

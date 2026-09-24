@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py
-runner_sha256: cd06d81447d65c3651d1473c8b52ee2b58a171f7ee58370b80307f11c11940f1
+runner_sha256: 30f37f120fa5536b26e36203311edefad4ee41d3be0da7221cdca5a6112d573d
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 == 1. Well-formedness and source linking ==
-[PASS] node ledger: 2 sources, 61 landed, 13 open, 12 decision groups, 6 choices, 8 routes, 11 targets
+[PASS] node ledger: 2 sources, 75 landed, 3 open, 12 decision groups, 6 choices, 8 routes, 11 targets
 [PASS] every edge endpoint is declared; no edge enters a source or a decision; target edges go to targets
 [PASS] every landed node's provenance is a note path present on this revision of the repository
 [PASS] every open node names a campaign pull request; the withdrawn locality group is absent
@@ -15,7 +15,7 @@ status: ok
 [PASS] the eleven targets are exactly the design note's preserved list
 
 == 2. Acyclicity and minimal decision sets ==
-[PASS] the graph is acyclic over all 113 nodes, and the same sorter rejects a two-node cycle
+[PASS] the graph is acyclic over all 117 nodes, and the same sorter rejects a two-node cycle
 [PASS] gravity has exactly four minimal decision sets: every formation set holds the order law, every static set the reading :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {ORDER_LAW,ROLES,SOLDER,UNIT} | {READING,ROLES,SOLDER}
 [PASS] control: without the layer order, gravity's sets return to the seventh edition's :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {READING,ROLES,SOLDER} | {ROLES,SOLDER,UNIT}
 [PASS] single-site formation of the uniform measure needs plan letters, so soldering with an order law alone no longer reaches gravity :: single-site route: {ALPHABET,ORDER_LAW}
@@ -27,8 +27,8 @@ status: ok
 [PASS] record dynamics: a frame source in every set (static or formed; soldering or letters) :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {ORDER_LAW,SOLDER,UNIT} | {READING,SOLDER}
 [PASS] gauge: supplied roles, or roles read from coordinate letters under formation or the static reading :: {ALPHABET,ORDER_LAW} | {ALPHABET,READING} | {ROLES}
 [PASS] the formed photon route passes through the coordinator result; directed ice feeds record dynamics; letters are fixed or relational :: the window results carry plan letters into single-site formation, the unit results carry the layer order into joint units, and the spiral, letter and multi-qubit unit results join the relational letters
-[PASS] the photon-lane results feed record dynamics only and change no minimal set :: a massless Gaussian lattice field with a fixed stiffness and lattice-Coulomb test charges on the computed prisms supports the photon route without adding a decision
-[PASS] the seam result feeds gravity only and changes no minimal set :: uniform ice carries the Green function only in its charged sector; gravity's scalar input is not among its neutral records
+[PASS] the ice-model results feed record dynamics only and change no minimal set :: finite transfer, covariance, winding and defect diagnostics of the supplied ice model support the photon route without adding a decision
+[PASS] the seam result feeds gravity only and changes no minimal set :: one-vertex scalar invariants and alignment diagnostics for one neutral statistic of the supplied ice model
 [PASS] formation law {rule, order law}; clock/rate {order law}; no target is decision-free
 [PASS] every decision group appears in some target's minimal sets; open edges are declared
 

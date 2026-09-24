@@ -55,38 +55,32 @@ their octant on the landed torus (open PR #8854), strong cycle letters record
 the frame and the roles on every window (open PR #8856), and strong letters
 are generic (open PR #8857); the minimal sets are unchanged.  Thirteenth
 edition: thirty-five of the cited pull requests have landed, so thirty-eight
-nodes now link to their landed notes and thirteen stay open.  The photon
-lane joins record dynamics.  By row transfer the flux stiffness is Gaussian
-on the square cross-section (open PR #8859).  The zero-flux layer chain is
-gapless, its gap falling as the smallest transverse wavenumber (open PR
-#8864), and its branch has the dispersion of a massless nearest-neighbour
-lattice field (open PR #8869).  The unit link field fixes one stiffness for
-the flux cost and the correlations (open PR #8871), and test defects
-interact through the lattice Green's function at that stiffness (open PR
-#8875).  The minimal sets are unchanged.  Fourteenth edition: ten more cited
-pull requests have landed, among them the first-edition inputs 8637, 8641
-and 8646 and the photon-lane results 8859 and 8864, so ten more nodes link
-to their landed notes and five stay open.  On cubic tori to side 24 the
-winding stiffness and the correlations carry the sum-rule stiffness, with a
-long-wavelength value 0.5% above 1/3 (open PR #8881), and the static photon
-has two degenerate transverse polarizations with one stiffness (open PR
-#8890).  The minimal sets are unchanged.  Fifteenth edition: the layer
-vacuum is a Gaussian flux functional, so the layer-unit law is local
-transfer times a 1/r flux interaction (open PR #8896); at the RK point of
-the supplied Hamiltonian the photon's single-mode bound is quadratic (open
-PR #8905); worms sample test-defect pairs exactly, and the pair free energy
-follows the Green function on tori (open PR #8913); and uniform ice carries
-the lattice Green function only in its charged sector, with short-ranged
-neutral scalar records, which answers the design note's seam for this
-measure and narrows gravity's input (open PR #8918).  The first three join
-record dynamics, the last feeds gravity; the minimal sets are unchanged.
-Sixteenth edition: the static photon stiffens in a background flux and
-saturation leaves square ice (open PR #8928); the unit-field sum rule is
-ten times closer for three-dimensional ice than for square ice (open PR
-#8930); in a flux sector the photon's rise is wavenumber-independent and a
-second branch crosses below it (open PR #8949); and test-defect pairs follow
-the charge-squared law with a core correction (open PR #8951).  All four
-join record dynamics; the minimal sets are unchanged.
+nodes now link to their landed notes and thirteen stay open.  The ice-model
+lane joins record dynamics: row-transfer flux costs on the square
+cross-section (PR #8859), the zero-flux layer chain's gap (PR #8864),
+transfer spectra (PR #8869), Gaussian variance calibration (PR #8871) and
+neutral defect insertions on prisms (PR #8875).  Fourteenth edition: ten
+more cited pull requests have landed, among them the first-edition inputs
+8637, 8641 and 8646 and PRs 8859 and 8864, so ten more nodes link to their
+landed notes and five stay open; winding samples on cubic tori (PR #8881)
+and tensor constraints with transverse spectra (PR #8890) join the lane.
+Fifteenth edition: Gaussian layer-functional fits (PR #8896), a flip-graph
+variational quotient for the supplied Hamiltonian (PR #8905) and
+backtracking-worm balance (PR #8913) join the lane, and one-vertex scalar
+invariants (PR #8918) feed gravity.  Sixteenth edition: saturated layers
+(PR #8928), planar and cubic calibration comparisons (PR #8930), flux-sector
+rates (PR #8949) and charge-two and charge-four defect comparisons (PR
+#8951) join the lane.  Seventeenth edition: those fourteen results have
+landed in narrowed form, with the square-ice weighted identity (PR #8954).
+Uniform ice and the Gaussian comparisons are supplied models, and every
+numerical result is a finite diagnostic.  Each of the fourteen nodes now
+links to its landed note under a name taken from its landed title, and the
+open-edge texts follow the landed scopes.  Three open results join the lane:
+an exact weighted identity for the cubic covariance, with finite L = 16
+diagnostics 0.29% above the continuous calibration (open PR #8968), the
+same diagnostics on L = 12 and L = 24 (open PR #8984), and their planar
+counterpart on square-ice tori, 4.3% to 4.7% above as on the strips (open
+PR #8985).  In every edition the minimal sets are unchanged.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -171,19 +165,23 @@ NODES = {
     "GENERIC_LETTERS": (L, D + "STRONG_CYCLE_LETTERS_ARE_GENERIC_EVERY_OBSTRUCTION_IS_A_NONTRIVIAL_ANGLE_RELATION_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
     "ROW_TRANSFER_SQUARE": (L, D + "UNIFORM_ICE_FLUX_STIFFNESS_ON_A_SQUARE_CROSS_SECTION_BY_ROW_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
     "GAPLESS_CHAIN": (L, D + "UNIFORM_ICE_ZERO_FLUX_LAYER_CHAIN_GAP_CLOSES_AS_THE_SMALLEST_TRANSVERSE_WAVENUMBER_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
-    "MASSLESS_BRANCH": (OP, "open PR #8869 (the layer transfer's branch has the dispersion of a massless nearest-neighbour lattice field)"),
-    "ONE_STIFFNESS": (OP, "open PR #8871 (the unit link field fixes one stiffness for the flux cost and the correlations)"),
-    "TEST_DEFECT_COULOMB": (OP, "open PR #8875 (test defects interact through the lattice Green's function at the flux-cost stiffness)"),
-    "WINDING_STIFFNESS": (OP, "open PR #8881 (on cubic tori to side 24 the winding stiffness and the correlations carry the sum-rule stiffness)"),
-    "TWO_POLARIZATIONS": (OP, "open PR #8890 (the static photon has two degenerate transverse polarizations with one stiffness)"),
-    "LAYER_VACUUM": (OP, "open PR #8896 (the layer vacuum is a Gaussian flux functional, so the layer-unit law carries a 1/r flux interaction)"),
-    "RK_SOFT_PHOTON": (OP, "open PR #8905 (at the RK point of the supplied Hamiltonian the photon's single-mode bound is quadratic)"),
-    "WORM_DEFECT_PAIRS": (OP, "open PR #8913 (worms sample test-defect pairs exactly; the pair free energy follows the Green function on tori)"),
-    "GREEN_CHARGED_SECTOR": (OP, "open PR #8918 (uniform ice carries the lattice Green function in its charged sector; neutral scalar records are short-ranged)"),
-    "NONLINEAR_PHOTON": (OP, "open PR #8928 (the static photon stiffens in a background flux, and saturation leaves square ice)"),
-    "DIMENSION_CONTRAST": (OP, "open PR #8930 (the unit-field sum rule is ten times closer for three-dimensional ice than for square ice)"),
-    "FLUX_QUANTA_SHIFT": (OP, "open PR #8949 (in a flux sector the photon's rise is wavenumber-independent and a second branch crosses below it)"),
-    "CHARGE_SQUARED": (OP, "open PR #8951 (test-defect pairs follow the charge-squared law with a core correction)"),
+    "TRANSFER_SPECTRA": (L, D + "UNIFORM_ICE_LAYER_TRANSFER_BRANCH_HAS_THE_DISPERSION_OF_A_MASSLESS_NEAREST_NEIGHBOUR_LATTICE_FIELD_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "VARIANCE_CALIBRATION": (L, D + "UNIFORM_ICE_UNIT_LINK_FIELD_FIXES_ONE_STIFFNESS_FOR_THE_FLUX_COST_AND_THE_FIELD_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "NEUTRAL_DEFECT_PRISMS": (L, D + "UNIFORM_ICE_TEST_DEFECTS_INTERACT_THROUGH_THE_LATTICE_GREEN_FUNCTION_WITH_THE_FLUX_COST_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "WINDING_ZERO_MODE": (L, D + "UNIFORM_ICE_ON_CUBIC_TORI_WINDING_STIFFNESS_AND_CORRELATIONS_CARRY_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "TENSOR_CONSTRAINTS": (L, D + "UNIFORM_ICE_STATIC_PHOTON_HAS_TWO_DEGENERATE_TRANSVERSE_POLARIZATIONS_WITH_ONE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "GAUSSIAN_FUNCTIONAL_FITS": (L, D + "UNIFORM_ICE_LAYER_VACUUM_IS_A_GAUSSIAN_FLUX_FUNCTIONAL_AND_THE_LAYER_UNIT_LAW_CARRIES_A_ONE_OVER_R_FLUX_INTERACTION_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "FLIP_GRAPH_QUOTIENT": (L, D + "UNIFORM_ICE_RK_PHOTON_SINGLE_MODE_BOUND_IS_QUADRATIC_WITH_THE_SUM_RULE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "BACKTRACKING_BALANCE": (L, D + "UNIFORM_ICE_BACKTRACKING_WORM_SAMPLES_TEST_DEFECT_PAIRS_EXACTLY_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "ONE_VERTEX_INVARIANTS": (L, D + "UNIFORM_ICE_CARRIES_THE_LATTICE_GREEN_FUNCTION_IN_ITS_CHARGED_SECTOR_WHILE_NEUTRAL_SCALAR_RECORDS_ARE_SHORT_RANGED_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "SATURATED_LAYERS": (L, D + "UNIFORM_ICE_STATIC_PHOTON_STIFFENS_IN_A_BACKGROUND_FLUX_AND_SATURATION_LEAVES_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "PLANAR_CUBIC_CALIBRATION": (L, D + "ICE_UNIT_FIELD_SUM_RULE_IS_TEN_TIMES_CLOSER_IN_THREE_DIMENSIONS_THAN_IN_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "FLUX_SECTOR_RATES": (L, D + "UNIFORM_ICE_FLUX_SECTOR_PHOTON_RISE_IS_WAVENUMBER_INDEPENDENT_AND_A_SECOND_BRANCH_CROSSES_BELOW_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "CHARGE_TWO_FOUR": (L, D + "UNIFORM_ICE_TEST_DEFECT_PAIRS_FOLLOW_THE_CHARGE_SQUARED_LAW_WITH_A_CORE_CORRECTION_BOUNDED_THEOREM_NOTE_2026-09-24.md"),
+    "SQUARE_ICE_IDENTITY": (L, D + "SQUARE_ICE_IS_GAUSSIAN_AT_LONG_WAVELENGTH_AND_A_ZONE_BOUNDARY_EXCESS_MAKES_THE_SUM_RULE_MISS_BOUNDED_THEOREM_NOTE_2026-09-24.md"),
+    "CUBIC_WEIGHTED_IDENTITY": (OP, "open PR #8968 (an exact weighted identity for the unit-arrow covariance on cubic tori; finite L = 16 diagnostics above the continuous calibration)"),
+    "OFFSET_ACROSS_SIZES": (OP, "open PR #8984 (finite L = 12 and L = 24 diagnostics: the smallest wavevectors stay above the continuous calibration)"),
+    "PLANAR_TORUS_OFFSET": (OP, "open PR #8985 (square ice on L x L tori: the smallest wavevectors sit 4.3% to 4.7% above the continuous calibration, as the strips do)"),
     "DEC_SOLDER": ("decision", "recorded in SOLDER_CENSUS and SOLDER_MENU"),
     "DEC_MIRROR": ("decision", "recorded in HANDED_CENSUS"),
     "DEC_ALPHABET": ("decision", "recorded in READABILITY, ROLES_REGISTERED, FRAME_REGISTRATION, STATIC_ICE_RECORDS and UNIFORM_ICE_COORDINATION"),
@@ -272,13 +270,15 @@ EDGES = [("AX", n) for n, (k, p) in NODES.items() if k in (L, OP)] + [
     ("PAIR_LETTER_ROLES", "ROLES_PAIR_LETTERS"), ("DEC_READING", "ROLES_PAIR_LETTERS"), ("DEC_ALPHABET", "ROLES_PAIR_LETTERS"),
     ("CYCLE_LETTER_ROLES", "ROLES_PAIR_LETTERS"), ("SWEEP_NO_ROLES", "ROLES_PAIR_LETTERS"),
     ("OCTANT_RECORDED", "ROLES_PAIR_LETTERS"), ("FOLDED_ROLES", "ROLES_PAIR_LETTERS"), ("GENERIC_LETTERS", "ROLES_PAIR_LETTERS"),
-    ("ROW_TRANSFER_SQUARE", "T_RECORD_DYNAMICS"), ("GAPLESS_CHAIN", "T_RECORD_DYNAMICS"), ("MASSLESS_BRANCH", "T_RECORD_DYNAMICS"),
-    ("ONE_STIFFNESS", "T_RECORD_DYNAMICS"), ("TEST_DEFECT_COULOMB", "T_RECORD_DYNAMICS"),
-    ("WINDING_STIFFNESS", "T_RECORD_DYNAMICS"), ("TWO_POLARIZATIONS", "T_RECORD_DYNAMICS"),
-    ("LAYER_VACUUM", "T_RECORD_DYNAMICS"), ("RK_SOFT_PHOTON", "T_RECORD_DYNAMICS"), ("WORM_DEFECT_PAIRS", "T_RECORD_DYNAMICS"),
-    ("GREEN_CHARGED_SECTOR", "T_GRAVITY"),
-    ("NONLINEAR_PHOTON", "T_RECORD_DYNAMICS"), ("DIMENSION_CONTRAST", "T_RECORD_DYNAMICS"),
-    ("FLUX_QUANTA_SHIFT", "T_RECORD_DYNAMICS"), ("CHARGE_SQUARED", "T_RECORD_DYNAMICS"),
+    ("ROW_TRANSFER_SQUARE", "T_RECORD_DYNAMICS"), ("GAPLESS_CHAIN", "T_RECORD_DYNAMICS"), ("TRANSFER_SPECTRA", "T_RECORD_DYNAMICS"),
+    ("VARIANCE_CALIBRATION", "T_RECORD_DYNAMICS"), ("NEUTRAL_DEFECT_PRISMS", "T_RECORD_DYNAMICS"),
+    ("WINDING_ZERO_MODE", "T_RECORD_DYNAMICS"), ("TENSOR_CONSTRAINTS", "T_RECORD_DYNAMICS"),
+    ("GAUSSIAN_FUNCTIONAL_FITS", "T_RECORD_DYNAMICS"), ("FLIP_GRAPH_QUOTIENT", "T_RECORD_DYNAMICS"), ("BACKTRACKING_BALANCE", "T_RECORD_DYNAMICS"),
+    ("ONE_VERTEX_INVARIANTS", "T_GRAVITY"),
+    ("SATURATED_LAYERS", "T_RECORD_DYNAMICS"), ("PLANAR_CUBIC_CALIBRATION", "T_RECORD_DYNAMICS"),
+    ("FLUX_SECTOR_RATES", "T_RECORD_DYNAMICS"), ("CHARGE_TWO_FOUR", "T_RECORD_DYNAMICS"),
+    ("SQUARE_ICE_IDENTITY", "T_RECORD_DYNAMICS"), ("CUBIC_WEIGHTED_IDENTITY", "T_RECORD_DYNAMICS"), ("OFFSET_ACROSS_SIZES", "T_RECORD_DYNAMICS"),
+    ("PLANAR_TORUS_OFFSET", "T_RECORD_DYNAMICS"),
     ("ROLES_PAIR_LETTERS", "ROLES_SOURCE"),
     ("STATIC_ICE_ROUTE", "PHOTON_ROUTE"), ("FORMED_ICE_ROUTE", "PHOTON_ROUTE"),
     ("ORDER_LAW", "T_FORMATION_LAW"), ("ORDER_VISIBLE", "T_FORMATION_LAW"), ("UNSOLDERED_CONSTANCY", "T_FORMATION_LAW"),
@@ -301,12 +301,12 @@ EDGES = [("AX", n) for n, (k, p) in NODES.items() if k in (L, OP)] + [
     ("HOLE_READS_CLOCK", "T_GRAVITY"),
 ]
 OPEN_EDGES = {
-    "T_GRAVITY": ["record-statistic bridge from a supported source to a curvature response (unproved; uniform ice carries the lattice Green function only in its charged sector, and its neutral scalar records are short-ranged, open PR #8918)",
-                  "continuum bridge (unproved; on the computed prisms the uniform ice flux behaves as one massless Gaussian lattice field with its stiffness fixed by the unit link field and lattice-Coulomb test charges, PRs #8859 and #8864, landed, and open PRs #8869, #8871, #8875; on tori to side 24 the long-wavelength stiffness is c = 0.335, within 0.5% of the sum-rule 1/3, with two degenerate polarizations, open PRs #8881, #8890; test-defect pairs follow the Green function on tori out to r = 8, open PR #8913, and the charge-squared law, open PR #8951; the photon is nonlinear at finite flux, open PRs #8928, #8949; its near-Gaussian form is three-dimensional, square ice missing the sum rule by 4.6%, open PR #8930)"],
-    "T_RECORD_DYNAMICS": ["photon dynamics rests on the landed quantum Hamiltonian (supplied bridge; the equal-time law is selected by a positive static rule, PR #8698, landed; linear sweep rules move flux by a linear transfer, damped when strictly positive and rigid for permutations, with mixed cases beyond both, PR #8726, landed; at the RK point of the supplied Hamiltonian the single-mode bound is quadratic, 2 n_f K |s|^2 with 2 n_f K = 0.346, open PR #8905)",
+    "T_GRAVITY": ["record-statistic bridge from a supported source to a curvature response (unproved; for the supplied ice model, an exact one-vertex invariant lemma and finite alignment diagnostics for one specified neutral statistic, PR #8918, landed)",
+                  "continuum bridge (unproved; uniform ice and the Gaussian comparisons are supplied models; on the computed prisms and tori its transfer spectra, covariances, winding samples and test-defect pairs are finite diagnostics against a supplied Gaussian lattice model, PRs #8859, #8864, #8869, #8871, #8875, #8881, #8890, #8913, #8928, #8930, #8949, #8951 and #8954, landed; on the L = 12, 16 and 24 tori the smallest wavevectors imply a stiffness 0.29% to 0.44% above the continuous calibration, open PRs #8968 and #8984; on square-ice tori up to L = 128 they sit 4.3% to 4.7% above the planar calibration, as the strips of PR #8930 do, open PR #8985; no Gaussian law, limiting stiffness or physical field is established)"],
+    "T_RECORD_DYNAMICS": ["photon dynamics rests on the landed quantum Hamiltonian (supplied bridge; the equal-time law is selected by a positive static rule, PR #8698, landed; linear sweep rules move flux by a linear transfer, damped when strictly positive and rigid for permutations, with mixed cases beyond both, PR #8726, landed; for the supplied flip Hamiltonian an exact flip-graph energy identity gives finite Rayleigh quotients, and a positive-excitation bound additionally requires removing all ground-space components, PR #8905, landed)",
                           "defect densities of front-like order laws on large windows (not computed)",
                           "first-formation orders beyond corner growth, broadcast and the designed order (not classified)",
-                          "exact formation of the uniform ice measure by layer units with an infinite cross-section, or by single sites on planar windows beyond five squares or three-dimensional windows beyond two cubes (single sites not searched; finite cell units fail around blocks and chains of units work, PR #8720, landed; layer units are exact on every infinite prism in the zero-flux sector, PR #8740, landed, and their law is local transfer times the Gaussian vacuum functional, within 0.24% on the 4 x 4 prism, whose kernel is a 1/r flux interaction in the layer, open PR #8896; no planar window of two to five squares and no pair of adjacent cubes admits a single-site order, PRs #8715, #8719, #8735, landed)"],
+                          "exact formation of the uniform ice measure by layer units with an infinite cross-section, or by single sites on planar windows beyond five squares or three-dimensional windows beyond two cubes (single sites not searched; finite cell units fail around blocks and chains of units work, PR #8720, landed; layer units are exact on every infinite prism in the zero-flux sector, PR #8740, landed, and their law has an exact positive-eigenvector Markov form, with finite fits to a Gaussian layer functional, PR #8896, landed; no planar window of two to five squares and no pair of adjacent cubes admits a single-site order, PRs #8715, #8719, #8735, landed)"],
     "T_MATTER": ["record/role bridge to physical fermions (unconstructed, per the support-rule note)"],
 }
 TARGET_BRIEF = ["formation law", "possibility domain and menus", "handedness", "Born weights", "readability",
@@ -368,8 +368,8 @@ def topo_order(nodes, parents):
 
 print("== 1. Well-formedness and source linking ==")
 kinds = {k: sum(1 for n, (kk, p) in NODES.items() if kk == k) for k in ("source", L, OP, "decision", "choice", "route", "target")}
-check("node ledger: 2 sources, 61 landed, 13 open, 12 decision groups, 6 choices, 8 routes, 11 targets",
-      kinds == {"source": 2, L: 61, OP: 13, "decision": 12, "choice": 6, "route": 8, "target": 11} and len(NODES) == 113)
+check("node ledger: 2 sources, 75 landed, 3 open, 12 decision groups, 6 choices, 8 routes, 11 targets",
+      kinds == {"source": 2, L: 75, OP: 3, "decision": 12, "choice": 6, "route": 8, "target": 11} and len(NODES) == 117)
 check("every edge endpoint is declared; no edge enters a source or a decision; target edges go to targets",
       all(u in NODES and v in NODES for u, v in EDGES)
       and all(NODES[v][0] not in ("source", "decision") for u, v in EDGES)
@@ -389,8 +389,8 @@ check("the eleven targets are exactly the design note's preserved list",
 print()
 print("== 2. Acyclicity and minimal decision sets ==")
 ACYC, ORD = topo_order(list(NODES), PARENTS)
-check("the graph is acyclic over all 113 nodes, and the same sorter rejects a two-node cycle",
-      ACYC and len(ORD) == 113 and topo_order(("a", "b"), {"a": ["b"], "b": ["a"]})[0] is False)
+check("the graph is acyclic over all 117 nodes, and the same sorter rejects a two-node cycle",
+      ACYC and len(ORD) == 117 and topo_order(("a", "b"), {"a": ["b"], "b": ["a"]})[0] is False)
 SETS = {t: decision_sets(t) for t in NODES if NODES[t][0] == "target"}
 fmt = lambda fam: " | ".join(sorted("{" + ",".join(sorted(x.replace("DEC_", "") for x in s)) + "}" for s in fam))
 EXPECT_GRAVITY = {frozenset(s) for s in (
@@ -471,19 +471,20 @@ check("the formed photon route passes through the coordinator result; directed i
       and "CYCLE_LETTER_ROLES" in PARENTS["ROLES_PAIR_LETTERS"] and "SWEEP_NO_ROLES" in PARENTS["ROLES_PAIR_LETTERS"]
       and all(n in PARENTS["ROLES_PAIR_LETTERS"] for n in ("OCTANT_RECORDED", "FOLDED_ROLES", "GENERIC_LETTERS")),
       "the window results carry plan letters into single-site formation, the unit results carry the layer order into joint units, and the spiral, letter and multi-qubit unit results join the relational letters")
-PHOTON_LANE = ("ROW_TRANSFER_SQUARE", "GAPLESS_CHAIN", "MASSLESS_BRANCH", "ONE_STIFFNESS", "TEST_DEFECT_COULOMB",
-               "WINDING_STIFFNESS", "TWO_POLARIZATIONS", "LAYER_VACUUM", "RK_SOFT_PHOTON", "WORM_DEFECT_PAIRS",
-               "NONLINEAR_PHOTON", "DIMENSION_CONTRAST", "FLUX_QUANTA_SHIFT", "CHARGE_SQUARED")
-NOPH = {k: [q for q in v if q not in PHOTON_LANE] for k, v in PARENTS.items()}
-check("the photon-lane results feed record dynamics only and change no minimal set",
-      all([v for u, v in EDGES if u == n] == ["T_RECORD_DYNAMICS"] for n in PHOTON_LANE)
+ICE_MODEL_LANE = ("ROW_TRANSFER_SQUARE", "GAPLESS_CHAIN", "TRANSFER_SPECTRA", "VARIANCE_CALIBRATION", "NEUTRAL_DEFECT_PRISMS",
+                  "WINDING_ZERO_MODE", "TENSOR_CONSTRAINTS", "GAUSSIAN_FUNCTIONAL_FITS", "FLIP_GRAPH_QUOTIENT", "BACKTRACKING_BALANCE",
+                  "SATURATED_LAYERS", "PLANAR_CUBIC_CALIBRATION", "FLUX_SECTOR_RATES", "CHARGE_TWO_FOUR",
+                  "SQUARE_ICE_IDENTITY", "CUBIC_WEIGHTED_IDENTITY", "OFFSET_ACROSS_SIZES", "PLANAR_TORUS_OFFSET")
+NOPH = {k: [q for q in v if q not in ICE_MODEL_LANE] for k, v in PARENTS.items()}
+check("the ice-model results feed record dynamics only and change no minimal set",
+      all([v for u, v in EDGES if u == n] == ["T_RECORD_DYNAMICS"] for n in ICE_MODEL_LANE)
       and all(decision_sets(t, parents=NOPH) == SETS[t] for t in SETS),
-      "a massless Gaussian lattice field with a fixed stiffness and lattice-Coulomb test charges on the computed prisms supports the photon route without adding a decision")
-NOSEAM = {k: [q for q in v if q != "GREEN_CHARGED_SECTOR"] for k, v in PARENTS.items()}
+      "finite transfer, covariance, winding and defect diagnostics of the supplied ice model support the photon route without adding a decision")
+NOSEAM = {k: [q for q in v if q != "ONE_VERTEX_INVARIANTS"] for k, v in PARENTS.items()}
 check("the seam result feeds gravity only and changes no minimal set",
-      [v for u, v in EDGES if u == "GREEN_CHARGED_SECTOR"] == ["T_GRAVITY"]
+      [v for u, v in EDGES if u == "ONE_VERTEX_INVARIANTS"] == ["T_GRAVITY"]
       and all(decision_sets(t, parents=NOSEAM) == SETS[t] for t in SETS),
-      "uniform ice carries the Green function only in its charged sector; gravity's scalar input is not among its neutral records")
+      "one-vertex scalar invariants and alignment diagnostics for one neutral statistic of the supplied ice model")
 check("formation law {rule, order law}; clock/rate {order law}; no target is decision-free",
       SETS["T_FORMATION_LAW"] == {frozenset({"DEC_RULE", "DEC_ORDER_LAW"})}
       and SETS["T_CLOCK_RATE"] == {frozenset({"DEC_ORDER_LAW"})}

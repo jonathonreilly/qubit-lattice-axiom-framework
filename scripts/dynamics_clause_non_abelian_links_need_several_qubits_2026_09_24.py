@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Non-Abelian gauge links need several qubits; one qubit carries only Abelian links.
+"""Non-Abelian gauge links need several qubits; one qubit carries no SU(N) link.
 
 A gauge link from vertex v to vertex w carries two commuting actions of the
 gauge group G: a left action (in the Gauss law at v) and a right action (in
@@ -87,14 +87,14 @@ L = expm(1j * a * E)
 R = expm(-1j * b * E)
 Up = (X + 1j * Y) / 2                             # s^+
 cov = np.linalg.norm(L @ R @ Up @ (L @ R).conj().T - np.exp(1j * (a - b)) * Up)
-check("one qubit carries a U(1) link: left and right actions commute, s^+ is covariant with charge 1",
+check("one qubit carries a U(1) link: left and right actions commute, s^+ is covariant",
       np.linalg.norm(L @ R - R @ L) < 1e-12 and cov < 1e-12, f"covariance defect {cov:.1e}")
 
 # ----------------------------------------------------------- 2. SU(2) on a qubit
 gens2 = [X / 2, Y / 2, Z / 2]
 rows = [np.kron(np.eye(2), g.T) - np.kron(g, np.eye(2)) for g in gens2]
 comm = null_dim(np.vstack(rows))
-check("one qubit carries no non-Abelian link: the commutant of the SU(2) action on C^2 is the scalars",
+check("one qubit carries no SU(2) link: the commutant of the SU(2) action on C^2 is the scalars",
       comm == 1, f"commutant dimension {comm}")
 
 # ----------------------------------------------------- 3-4. the floor 2N

@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_2026_09_24.py
+runner_sha256: a8a9572a883dfcdc09a817a0a689e7d9b728581019f9337a1b71eabb3cc22b55
+input_fingerprint_sha256: aaac22cc00cd3b4c6aed642ba0088794a9a8d88b102719aa0eb1170c0a864e27
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 12.82
+status: ok
+----- stdout -----
+A. the 16-site network and its records
+[PASS] one U-neighbour per axis at most; degrees 2 and 3; one component spanning three directions :: 16 sites, 18 bonds, 12 dangling axes, winding rank 3
+[PASS] record contents orthogonal to every bonded axis exist and cancel every field along kept bonds :: 6 dangling axes carry nonzero fields
+B. exact solvability on the 16-qubit torus
+[PASS] cycle-basis loop operators commute with H including dangling fields; a field along a kept bond breaks some :: 3 loops conserved; 2 broken by the kept-bond field
+[PASS] exact ground energy = least free-Majorana ground energy over all 2^18 gauge configurations :: ED -17.4885055277; Majorana -17.4885055277
+C. Majorana bands of the infinite periodic network
+[PASS] lowest of the 8 translation-invariant flux sectors is gapped with no flat zero band :: E0/cell -17.485797 (next -17.485797); gap on 16^3 grid 0.60910
+D. a search for more three-direction networks
+[PASS] more distinct three-direction networks exist; each lowest translation-invariant sector is gapped :: 5 distinct components; (sites, gap above flat bands) [(16, 0.609), (19, 0.788), (20, 1.146), (22, 0.306), (22, 0.776)]
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

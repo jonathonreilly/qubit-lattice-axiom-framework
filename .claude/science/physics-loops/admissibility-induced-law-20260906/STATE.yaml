@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block106: "opened for review 2026-09-23; fifty-fourth block since the source-link direction opened, from probes workers j5c0d/j152a (Grok referees): no local momentum falls with weight one on the lattice; the force is bond-placed; no ledger of the known classes demands it; nothing adopted"

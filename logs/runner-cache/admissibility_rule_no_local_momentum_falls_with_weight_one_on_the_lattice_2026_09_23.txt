@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_no_local_momentum_falls_with_weight_one_on_the_lattice_2026_09_23.py
+runner_sha256: f86d8a245e1434bb0d31219e9a34f523a85b5fa763995ce165d0b7b1a9b64f05
+input_fingerprint_sha256: 20b1f7c07485cad2c59373e7fb4df1a5ae1f4ba7accbe292126b8210a080b483
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 10.83
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_NO_LOCAL_MOMENTUM_FALLS_WITH_WEIGHT_ONE_ON_THE_LATTICE_THE_WALKS_FORCE_IS_A_BOND_ENERGY_TIMES_A_CLOCK_DIFFERENCE_AND_NO_LEDGER_CAN_DEMAND_IT_EXACTLY_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities; Admissibility is not a dynamics axiom and does not define a time metric (the walk, the clocks and the ledger are supplied clauses)
+PASS: B1 T1: [X, T_n] = n T_n exactly, so the symbol of i[X, P] is -dP/dk; for a momentum P commuting with the walk, <chi|dP/dk|chi> = d pbar/dk on the band (exact at sin k = (3/5, 4/5, 0): -28/25); so in a uniform clock gradient a plane wave's P changes at first order by -E grad u . grad_k pbar: the weight of the fall is d pbar/dk_j - cos k_j for the one-step momentum, cos 2k_j for the two-step one, 1 - k^4/6 + ... for the fourth-order stencil (-5/3 at k = pi); each has zero mean over (-pi, pi], as does the derivative of any periodic band value (a random trigonometric polynomial; |sin k|): no local momentum that commutes with the walk falls with weight one at every wave number
+PASS: C1 T2: for every state and rate field (random Gaussian-rational states and rational rate roots on 4^3 and 5^3), block 66's force density is exactly f_j(x) = d_j phi(x) eps_j(x) + d_j phi(x - e_j) eps_j(x - e_j) with eps_b = (1/2) Re[psi_y^+ chi_x + psi_x^+ chi_y] the bond's cross energy, chi = H phi psi; and eps_b = (rho_x + rho_y)/2 - (1/2) Re[(d psi)^+ (d chi)]: the energy-density part plus an exact remainder; a state on one sublattice (4^3) has energy density zero at every site and a force at 64 sites, so the force is no function of the energy density; the map (-1)^(x1+x2+x3) anticommutes with the clocked walk, flips the energy density and keeps the force (6^3)
+PASS: D1 T3: every ledger built from block 64's curls with site-multiplier rates (a random linear-plus-quadratic member on 4^3) obeys sum_a [E_a^j(x) - E_a^j(x - e_a)] = 0 exactly, with no rate term: it demands no force; a ledger that carries the rates exists (the volume member with the upwind transport, exact at B = 0) and demands a force built from the energy density and current; but at first order in the rate gradient every plane wave's force is e cos k_j (u(x+e_j) - u(x-e_j))/2 (all 48 plane waves of energy +-1 on 4^3), and k = (pi/2,0,0), (0,pi/2,0) carry the same energy density 2 and zero current at every site with forces 0 and nonzero along e_1: no requirement built from e and J can match the walk's force at every wave number
+PASS: E1 T4: with the two-step momentum (block 72, reach three), i[phi, P_j] = -(1/2) C2_j[d2_j phi] exactly; the force is (1/2)[d2_j phi(x) eps2(x) + d2_j phi(x - 2e_j) eps2(x - 2e_j)] with eps2 the two-step bond's cross energy (5^3, 6^3); at first order its plane-wave form is e cos 2k_j (u(x+2e_j) - u(x-2e_j))/4 (all 48 plane waves of energy +-1 on 8^3, where the two-step difference is not identically zero): the same obstruction with weight cos 2k_j
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the shift commutator on a chain; the symbols, weights and zone means of the momenta; the band identity at a rational point
+per_site: executed - the force density at every site of 4^3, 5^3, 6^3 for random Gaussian-rational states and rational rates; a sublattice state; the parity map
+per_mode: executed - all 48 plane waves of energy +-1 at first order in the rate gradient (one step on 4^3, two steps on 8^3)
+per_block: executed - a random curl member and the volume member with the upwind transport on 4^3
+lattice_wide: T1 for every finite-reach momentum commuting with the walk; T2 for every state and rate field; T3 for every ledger of the stated classes at first order; blocks 54, 63, 64, 66, 72 supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: the fall on the lattice - the weight of any local conserved momentum is d pbar/dk with zero zone mean, so no local momentum falls with weight one; the force is a bond energy times a clock difference, not a function of the energy density; curl ledgers demand no force and rate-carrying ledgers cannot demand the walk's at every wave number; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

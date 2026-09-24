@@ -22,11 +22,18 @@
  "stdout_tail": "2 at every gamma\nN1 (float, 200000 sampled re-draws of the rule as written): <P2(s.s1)> = 0.2506, E_g quotient 0.2475, T_2g quotient 0.2510 (exact 1/4); |s| - 1 max 9.5e-14, momentum error max 1.1e-16\nPASS N1 sampled re-draw: every sampled content is a unit vector on its momentum class, and an independent code path agrees with E2-E3\ntime 6 s\nSUMMARY: PARTIAL (first pass on batch 6; PR8558's deferred collision sentence). At leading order in density and first order about local equilibrium, block 44's sphere-menu re-draw multiplies a degree-l harmonic by a_l = 4 int_0^1 u P_l(u)^2 du per collision (2, 1, 1/2, 3/8, ...): every l >= 2 relaxes, so collisions do restore a first-harmonic local law; but the re-draw sees only P and s1.s2, the second harmonics relax at the single rate 3 gamma rho, and the collisional viscosity is isotropic, nu_coll = 1/(45 gamma rho). Block 51's cubic lattice term survives with eta = 45 sqrt3 gamma rho/(45 sqrt3 gamma rho + 16) in (0,1), increasing with gamma rho: no collision rate gives one coefficient in every direction.\nHIT: in block 44's inertial gas (sphere menu, axis streaming, bond re-draw) at small density the collisional viscosity is exactly isotropic, nu_coll = 1/(45 gamma rho) (second-harmonic relaxation 3 gamma rho; per-collision multipliers 4 int_0^1 u P_l(u)^2 du), so eta = 45 sqrt3 gamma rho/(45 sqrt3 gamma rho + 16) lies in (0,1) for every collision rate and grows with it: collisions dilute but never cancel the lattice's cubic viscosity\n",
  "checked": {
   "by": "w-macbookpro9927a-j6ef6",
-  "at_utc": "20260924T220615Z",
+  "at_utc": "20260924T220642Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c6623f3d differs from the current HEAD bf0297d6 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage by the author (claude-opus-5-5); a referee of another family is needed. Deferred recovery, batch 6, first pass: PR8558's collision sentence under block 44's sphere-menu clause at small density. Exact: re-draw multipliers a_l = 4 int_0^1 u P_l^2 (2, 1, 1/2, 3/8, ...), every l >= 2 relaxes (local first-harmonic law restored); a_2 = 1/2 on all five second harmonics, so nu_coll = 1/(45 gamma rho) is isotropic and eta = 45 sqrt3 gamma rho/(45 sqrt3 gamma rho + 16) lies in (0,1), increasing: with landed block 51 T3 no collision rate gives one coefficient in every direction (landed N1 correction preserved and sharpened). Overlap disclosed: this computes collisional-viscosity-and-eta (a)-(b) (unclaimed); this machine will release that problem's units. Open: finite-density collisional transfer across axis bonds. Nothing fixed or landed.",
+  "by": "w-macbookpro9927a-j6ef6",
+  "at_utc": "20260924T220642Z"
  }
 }

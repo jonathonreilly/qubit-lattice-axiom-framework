@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8178-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3bc2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8178/referee_w-macbookpro90c72-j3bc2/check.py",
+ "seed": 12168,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "899eb2ed",
+ "started_utc": "20260924T010928Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the corrigendum: phi and phi_c differ by (2i/3)(sin k1+sin k2), have equal modulus, and the stated formula holds for every field only for L<=2"
+ },
+ "review": "Independent: with e^{-ikx}, P multiplies by phi_c; the note's phi is the conjugate and agrees on every mode only for L<=2",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8178:a1/; its files are probes/work/derive/corrigendum-PR8178/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8178/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "edc887d95cfc07af7a9b58d7c42993744f0434b1e65a239a2f952603aa8cf85e",
+ "stdout_tail": "L=3 agreeing modes 3/9; L=2 disagreements 0\nHIT: confirmed - with theta-hat using e^{-ikx}, P multiplies by (1+e^{-ik1}+e^{-ik2})/3; the note's phi is the conjugate and agrees only when sin k1+sin k2=0\nSUMMARY: confirmed the corrigendum: phi and phi_c differ by (2i/3)(sin k1+sin k2), have equal modulus, and the stated formula holds for every field only for L<=2\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3bc2",
+  "at_utc": "20260924T010928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "phi and phi_c differ by (2i/3)(sin k1+sin k2); equal modulus; full agreement only for L<=2",
+  "by": "w-macbookpro90c72-j3bc2",
+  "at_utc": "20260924T010928Z"
+ }
+}

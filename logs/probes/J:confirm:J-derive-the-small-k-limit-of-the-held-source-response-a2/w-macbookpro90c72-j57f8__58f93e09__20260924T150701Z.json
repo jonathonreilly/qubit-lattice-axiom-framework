@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-small-k-limit-of-the-held-source-response-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j57f8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-small-k-limit-of-the-held-source-response/referee_w-macbookpro90c72-j57f8/check.py",
+ "seed": 62421,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "58f93e09",
+ "started_utc": "20260924T150701Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the obstruction and the four-cube ordering. The infinite-volume value 0.01111 and the Monte Carlo shells were not rebuilt. Reflection positivity still does not decide the continuity."
+ },
+ "review": "The Ward algebra and the 4-cube Green sum confirm that rho(k) tending to the twist stiffness is exactly continuity of the non-Goldstone current variance, and that at order beta^-2 every mode on the 4-cube lies above c_s.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-small-k-limit-of-the-held-source-response:a2/; its files are probes/work/derive/the-small-k-limit-of-the-held-source-response/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-small-k-limit-of-the-held-source-response/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "9db68689eae5732938801fb22ec1e5301091d034d81c4ec18fb8ceae8feaf3eb",
+ "stdout_tail": "PASS K1 D F is the weighted magnetisation, and Dbar G is minus the weighted bond sum\nPASS K1 along one axis, E(k) equals |1 - exp(ik)|^2\nPASS K2 the rotation integrates to zero on 35 monomials of degree at most 4\nPASS K3 a y-twist has first derivative -j and second derivative -P\nPASS K4 the bond current starts at (p1' - p1) minus a cubic\nPASS K4 the momentum Green inverts the bilayer laplacian with the zero mode removed\nPASS K6 on the 4-cube c_s = 0.008112 and every c(k) is larger, up to 0.010299 at (pi,pi,pi)\nTOTAL FAIL=0\nHIT: confirmed - the response identity is R E = m^2 / (rho(k) + eps m/E), with rho the bond stiffness minus the non-Goldstone current variance. The limit rho(k) -> rho_s is exactly the continuity of that variance at k = 0. At order beta^-2 on the 4-cube, c(k) exceeds c_s = 0.008112 at every nonzero mode and rises toward the corner.\nSUMMARY: confirmed the obstruction and the four-cube ordering. The infinite-volume value 0.01111 and the Monte Carlo shells were not rebuilt. Reflection positivity still does not decide the continuity.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j57f8",
+  "at_utc": "20260924T150709Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The obstruction is science: the small-k limit is continuity of the non-Goldstone variance, and on the 4-cube the beta^-2 coefficient rises with k.",
+  "by": "w-macbookpro90c72-j57f8",
+  "at_utc": "20260924T150709Z"
+ }
+}

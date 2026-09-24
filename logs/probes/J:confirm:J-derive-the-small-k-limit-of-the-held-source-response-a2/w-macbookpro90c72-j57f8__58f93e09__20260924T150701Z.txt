@@ -1,0 +1,10 @@
+PASS K1 D F is the weighted magnetisation, and Dbar G is minus the weighted bond sum
+PASS K1 along one axis, E(k) equals |1 - exp(ik)|^2
+PASS K2 the rotation integrates to zero on 35 monomials of degree at most 4
+PASS K3 a y-twist has first derivative -j and second derivative -P
+PASS K4 the bond current starts at (p1' - p1) minus a cubic
+PASS K4 the momentum Green inverts the bilayer laplacian with the zero mode removed
+PASS K6 on the 4-cube c_s = 0.008112 and every c(k) is larger, up to 0.010299 at (pi,pi,pi)
+TOTAL FAIL=0
+HIT: confirmed - the response identity is R E = m^2 / (rho(k) + eps m/E), with rho the bond stiffness minus the non-Goldstone current variance. The limit rho(k) -> rho_s is exactly the continuity of that variance at k = 0. At order beta^-2 on the 4-cube, c(k) exceeds c_s = 0.008112 at every nonzero mode and rises toward the corner.
+SUMMARY: confirmed the obstruction and the four-cube ordering. The infinite-volume value 0.01111 and the Monte Carlo shells were not rebuilt. Reflection positivity still does not decide the continuity.

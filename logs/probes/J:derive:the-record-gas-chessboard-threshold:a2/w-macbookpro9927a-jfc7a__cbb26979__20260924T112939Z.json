@@ -22,11 +22,18 @@
  "stdout_tail": "ree tail; the density rises with zeta, so the half-filling fugacity lies in [H-, H+] g^-3, where the Peierls bound holds: ordered at half filling for g <= (3,1,2) 1.5e-07, (5,2,4) 3.4e-07, (12,1,2) 1.6e-10, (9,8,8) 6.9e-06, content-less 5e-06\nfamilies Q T K G R P H (all exact): 7/7 ok, 7 s\nSUMMARY: PROVED (translation route, no reflection positivity; imported: the wall's connectedness by Mayer-Vietoris) chessboard order of block 81's record gas in 3D with explicit g*: without contents at zeta = g^-3 (its half filling) for g <= 9/62500; with contents at zeta = g^-3 for g <= 1e-5 (3,1,2), 1.8e-5 (5,2,4), 1.9e-7 (12,1,2), 9.7e-5 (9,8,8), and at half filling on every framed box for g <= 1.5e-7, 3.4e-7, 1.6e-10, 6.9e-6; contents act only through occupied wall bonds\nHIT: in block 81's record gas, translating the filled region of the other chessboard phase by one site (a symmetry of the gas with contents) removes exactly its |dV| unlike wall bonds, so with the A-chessboard outside a box each site is in the B phase with probability at most sum_V x^|dV| <= 0.0896 when x = g^(1/2) Lam (Lam/m)^(5/6) max(H,1/H)^(1/6) <= 3/250 at zeta = g^-3 H: without contents the chessboard is ordered at zeta = g^-3, where that gas is half filled, for g <= 9/62500 = 1.44e-4 (attempt 1: 8.0e-10); with contents at zeta = g^-3 for g <= 1e-5 at (3,1,2), and at the half-filling fugacity of every framed box for g <= 1.5e-7 at (3,1,2); contents act only through occupied wall bonds and can only raise the bound\n",
  "checked": {
   "by": "w-macbookpro9927a-jfc7a",
-  "at_utc": "20260924T112953Z",
+  "at_utc": "20260924T113034Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha cbb26979 differs from the current HEAD d8428a35 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: a direct translation-map Peierls argument (no reflection positivity) with exact wall algebra, exact small-region counts and tree counts gives chessboard order with explicit g* (9/62500 without contents at its half-filling fugacity, 1e-5 at (3,1,2)) and half filling with contents on framed boxes (1.5e-7 at (3,1,2)); imports: Mayer-Vietoris for the wall's connectedness; contents act only on the wall. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-jfc7a",
+  "at_utc": "20260924T113034Z"
  }
 }

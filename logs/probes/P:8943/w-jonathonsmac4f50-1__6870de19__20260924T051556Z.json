@@ -1,0 +1,30 @@
+{
+ "task": "P:8943",
+ "type": "pr-reexecution",
+ "lane": "postmark-electric-validity-20260923",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8943",
+ "pr": 8943,
+ "branch": "physics-loop/postmark-electric-validity-20260923",
+ "git_sha": "6870de19",
+ "started_utc": "20260924T051556Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "b4e5f3d4f44abe07eacbaf0f19771ba06fba81ef32a2e9e12843ff50a71c2213",
+ "stdout_tail": "PR #8943: [physics-loop] post-mark electric validity: short-time theorem and fixed-time wall\nbranch physics-loop/postmark-electric-validity-20260923 (base codex/mobile-record-post-formation-clock-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T051600Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,3 @@
+PR #8943: [physics-loop] post-mark electric validity: short-time theorem and fixed-time wall
+branch physics-loop/postmark-electric-validity-20260923 (base codex/mobile-record-post-formation-clock-20260923)
+runners in the PR: 0

@@ -1,0 +1,4 @@
+PR #8949: docs(ice): the flux-sector photon rise is wavenumber-independent
+branch claude/ice-flux-sector-photon-shift-and-second-branch-20260923 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_flux_sector_photon_rise_is_wavenumber_independent_and_a_second_branch_crosses_below_2026_09_23.py: rc=0 PASS=5 FAIL=0

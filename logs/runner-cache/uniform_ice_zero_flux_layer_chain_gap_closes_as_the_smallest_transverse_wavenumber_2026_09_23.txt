@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_2026_09_23.py
+runner_sha256: e688de2e38c6a9501a763ae2aac9afca2044a7fd8a31fda69c4d8bc2ce2a362e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 77.56
+status: ok
+----- stdout -----
+== A. The values of open PR #8740 ==
+[PASS] 2 x 2: top 32 + 2 sqrt(209), next modulus 14; 2 x 4: next modulus 668.3638 :: 60.9137, 14.0000; 668.3638
+
+== B. The next level ==
+[PASS] the next level is negative on every cross-section, twice degenerate on the strips and four times on the square :: degeneracies 2x2: 2, 2x4: 2, 2x6: 2, 2x8: 2, 2x10: 2, 4x4: 4
+
+== C. Strips: finite gap-times-width values ==
+[PASS] gap times b rises and stays below 2 pi on the five computed strips :: gap x b = 2.9408, 5.1158, 5.7060, 5.9434, 6.0608; 2 pi = 6.2832
+
+== D. Finite square and strip comparison ==
+[PASS] the square 4 x 4 has the gap of the strip 2 x 4 within 2% :: 1.29627 vs 1.27895
+
+time 77 s
+per_element: Row tensors count binary horizontal occupations; matrix contractions and all large spectral solves use floating-point arithmetic.
+per_site: Only the declared even periodic cross-sections are computed; the row ordering and bit convention are supplied implementation choices.
+per_mode: Numerical eigenpairs pass residual and symmetry controls; a finite computed spectrum is not a proof of asymptotic scaling.
+per_block: The quoted coefficient or gap inequalities concern the printed finite geometry list, with separate small exact-value controls.
+lattice_wide: Infinite transverse size, a Gaussian continuum limit and physical phase selection are not established by these finite computations.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

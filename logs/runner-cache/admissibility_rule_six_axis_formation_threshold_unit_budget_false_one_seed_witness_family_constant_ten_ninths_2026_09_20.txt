@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.py
+runner_sha256: 114f926a6fe64df796b1442483ddef1c603df064620bd0928e081adbb95ef3d0
+input_fingerprint_sha256: c05b1f419c5884bf0571853e8bb3b329b0827d1cb405575644b34ccc67c93fb7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.92
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_UNIT_BUDGET_IS_FALSE_ONE_SEED_WITNESS_WITH_FAMILY_CONSTANT_TEN_NINTHS_TIGHT_SIBLING_LEMMA_REFUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentences used
+PASS: A3 block 01 on main carries its claim id and the static law of a product rule
+PASS: B1 T1: from the ten marks the automaton has 37 one-sites, all in [0,3]^3 (the boxes [0,3]^3 and [-2,6]^3 agree), level sizes 1,3,3,4,3,6,7,6,3,1, one seed (000), nine amplified, 27 processed; the top site 333 is processed and its three predecessors are processed one-sites
+PASS: B2 T1: the defining rule holds at every site of [-1,4]^3; the marks and the one-set are invariant under the cyclic shift (a,b,c) -> (c,a,b)
+PASS: C1 T2: at the unit budget every tree of the family at 333 has E - |A| >= 1 (exact minimum 1, attained by a verified tree with E = 6, |A| = 5): no tree satisfies E <= 3(|S| - 1) + |A|
+PASS: C2 T2: the minimum of E - c|A| at 333 is 0 at c = 10/9 (a verified tree with E = 10, |A| = 9) and positive at c = 1, 11/10, 109/99: the family constant at this realization is exactly 10/9
+PASS: C3 T3: each of the three 1-predecessors of 333 is processed with rooted value exactly 0 (tight), so the hypothesis of the tight-sibling lemma holds at 333 and its conclusion (a rooted tree of cost at most 0) fails
+PASS: C4 T3: 333 is the only one-site of the realization with positive rooted value (the largest rooted value among the other 36 is 0)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the automaton's rule at every site of [-1,4]^3; the kinds of the 37 one-sites
+per_site: executed — the exact minimum of E - c|A| at 333 for c = 1, 109/99, 11/10, 10/9 and the rooted value of every one-site at c = 1
+per_mode: No spectral-mode theorem is asserted; this certificate concerns the explicitly declared finite discrete model. Not applicable — a finite combinatorial witness
+per_block: executed — the optimal trees verified node by node (every non-seed node with a 1-predecessor inside; one seed; E and |A| counted)
+lattice_wide: one realization on Z^3 refutes the unit budget, the tight-sibling lemma and (H); the family constant is at least 10/9; no upper bound on it and no statement about the formation law's ordering threshold is made
+PASS: G1 the five N5 resolution lines are printed
+scope: the unit budget of the explanation-tree route is false — a one-seed realization with family constant exactly 10/9 at its top site; the tight-sibling lemma and (H) fail there; exact
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

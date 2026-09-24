@@ -37,3 +37,23 @@ independent review, not a prediction of the audit verdict.
 
 This gate is author self-review only. No independent final-source review,
 formal audit, retained status, actual-readout limit, or axiom change is claimed.
+
+## Personal follow-up branch after PR #9078
+
+The current branch adds exploratory actual-generator and weighted-alias
+diagnostics, followed by one bounded spectral-distribution theorem derived
+from the already-proved five-site principal symbol and exact-side endpoint
+norm bound. The new theorem is not part of parent PR #9078; it is a candidate
+for a dependent review milestone after its source-specific gates pass.
+
+| Artifact | Role | Current evidence | Remaining work |
+|---|---|---|---|
+| `docs/POSTMARK_ELECTRIC_PRINCIPAL_WEYL_COUNT_BOUNDED_THEOREM_NOTE_2026-09-24.md` | Weak convergence of the supplied Jacobi empirical spectral measures; macroscopic quantile and normalized-phase profile | Fixed closed-walk moment proof, endpoint-strip rank control, compact-support moment argument; dependencies are the five-site symbol and exact-side norm bound | Cold-read final bytes, refresh paired runner cache and citation graph, run candidate validation; local gaps, phase-accurate quantization, and readout remain open |
+| `scripts/postmark_electric_principal_weyl_count_2026_09_24.py` | Finite-spectrum moment and CDF corroboration | Eigensolves at S=8,16,32,64,128; finite errors recorded | Diagnostic only; it is not the analytic proof |
+| `outputs/postmark_moving_index_2026_09_24/attempt_logs/` follow-up probes | Actual readout at larger S, all-lag aliases, Weyl-gap comparison, and quadratic-phase discriminators | Full stdout/JSON receipts retained with script/input hashes in `HANDOFF.md` | Keep as diagnostics and scope-corrected evidence; do not promote finite samples to a limit |
+
+The author self-review found the moment normalization consistent: the
+five-site fiber count reduces to the physical momentum symbol, the normalized
+trace factor is `1/2` over the signed cell coordinate, and the limiting
+moments are `4^m/(2m+1)`. The result does not differentiate the Weyl law into
+an adjacent-gap estimate. Independent review and formal audit remain pending.

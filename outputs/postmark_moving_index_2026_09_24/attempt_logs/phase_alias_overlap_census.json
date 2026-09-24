@@ -1,0 +1,3103 @@
+{
+  "source_revision": "5171af01191cc2db9d5bad0f8eca2185114ebbe3",
+  "input_sha256": {
+    "exact_side_runner": "a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+    "this_diagnostic": "a063f40d31707df0edf46e9bc8751fa857a121e388b26f1420ed1886d9e20db2"
+  },
+  "phase_convention": "For q_S, theta_j=C*lambda_j/4 multiplies the prepared-profile spectral coefficient c_j. The exp(-i*N_S^2/4) factor belongs to the prepared profile eta_inf, not to this conjugation phase.",
+  "alias_conventions": {
+    "individual": "alpha_j=theta_(j+1)-theta_j; alias if alpha_j is within epsilon of 2*pi*integer",
+    "fixed_lag": "alpha_(j+h)-alpha_j; alias if this lag-phase derivative is within epsilon of 2*pi*integer",
+    "warning": "The two conditions are different. These bins are descriptive diagnostics, not estimates of the omitted complement."
+  },
+  "rows": [
+    {
+      "S": 96,
+      "dimension": 957,
+      "profile_core_radius": 24,
+      "profile_tail_bound": 5.707491014309905e-12,
+      "profile_construction": "Laurent-series expansion of N_inf^2=6I-4(U+U*)+(U^2+U*^2)",
+      "individual_phase_slope": {
+        "raw_min": 0.06000601262523543,
+        "raw_max": 19.279700025706916,
+        "alias_index_min": 0,
+        "alias_index_max": 3,
+        "distinct_alias_indices": 4,
+        "prepared_mode_mass_by_threshold": {
+          "0.01": {
+            "resonant_gap_count": 2,
+            "prepared_mass_on_left_mode": 0.004442528844496429
+          },
+          "0.03": {
+            "resonant_gap_count": 9,
+            "prepared_mass_on_left_mode": 0.012372268189782319
+          },
+          "0.1": {
+            "resonant_gap_count": 26,
+            "prepared_mass_on_left_mode": 0.042540810267124064
+          }
+        }
+      },
+      "fixed_lag_increment_aliases": {
+        "definition": "wrap(alpha[j+h]-alpha[j]); this is the discrete derivative of the lag-h phase in j",
+        "thresholds": {
+          "0.01": {
+            "fixed_lag_resonance": {
+              "pairs": 1349,
+              "weight_l1": 0.019310333099695324,
+              "signed_real": 0.0002854483206778146,
+              "signed_imag": 0.0005271365675963066,
+              "sum_lag_abs": 0.01304360997950097
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 1,
+                "weight_l1": 5.490676928208114e-05,
+                "signed_real": 2.1979857340979877e-05,
+                "signed_imag": 5.031539708941848e-05,
+                "sum_lag_abs": 5.490676928208113e-05
+              },
+              "left_only": {
+                "pairs": 439,
+                "weight_l1": 0.007964320923651978,
+                "signed_real": -0.00024863347419290614,
+                "signed_imag": 0.00016605212057691906,
+                "sum_lag_abs": 0.007958753024361514
+              },
+              "right_only": {
+                "pairs": 1469,
+                "weight_l1": 0.02368422680658666,
+                "signed_real": 0.0007801723088924701,
+                "signed_imag": -0.0009287978621454545,
+                "sum_lag_abs": 0.021085524495765944
+              },
+              "neither": {
+                "pairs": 454581,
+                "weight_l1": 5.852305781426321,
+                "signed_real": -0.014923011165355679,
+                "signed_imag": -0.0057283538984997445,
+                "sum_lag_abs": 0.3740485674036958
+              }
+            }
+          },
+          "0.03": {
+            "fixed_lag_resonance": {
+              "pairs": 4345,
+              "weight_l1": 0.057398825778762146,
+              "signed_real": 0.00019496772197823609,
+              "signed_imag": 0.0010130880871759933,
+              "sum_lag_abs": 0.026455632706885467
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 36,
+                "weight_l1": 0.0006777041983726725,
+                "signed_real": -2.7385090431319777e-05,
+                "signed_imag": 6.80656126028517e-05,
+                "sum_lag_abs": 0.0006776655047728318
+              },
+              "left_only": {
+                "pairs": 2818,
+                "weight_l1": 0.0371431220668291,
+                "signed_real": 0.0006561376105037634,
+                "signed_imag": 0.00023112056832288525,
+                "sum_lag_abs": 0.02393629514593101
+              },
+              "right_only": {
+                "pairs": 5705,
+                "weight_l1": 0.0737763123455054,
+                "signed_real": 0.0003593953761064532,
+                "signed_imag": -0.0006984587535775688,
+                "sum_lag_abs": 0.041922143632178575
+              },
+              "neither": {
+                "pairs": 447931,
+                "weight_l1": 5.772412097315131,
+                "signed_real": -0.015357640369493997,
+                "signed_imag": -0.0060415116703270225,
+                "sum_lag_abs": 0.3706980485294361
+              }
+            }
+          },
+          "0.1": {
+            "fixed_lag_resonance": {
+              "pairs": 14700,
+              "weight_l1": 0.19485225868077297,
+              "signed_real": -2.2304344293782484e-05,
+              "signed_imag": 0.0004639905935242422,
+              "sum_lag_abs": 0.05296384329582118
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 325,
+                "weight_l1": 0.005575644060917492,
+                "signed_real": 0.0006048500553098338,
+                "signed_imag": 4.3143456206459006e-05,
+                "sum_lag_abs": 0.005293243704343783
+              },
+              "left_only": {
+                "pairs": 7706,
+                "weight_l1": 0.08279242752073898,
+                "signed_real": 0.0015089828514608969,
+                "signed_imag": 0.0008271388316448778,
+                "sum_lag_abs": 0.04398073362368574
+              },
+              "right_only": {
+                "pairs": 16474,
+                "weight_l1": 0.23286009408581962,
+                "signed_real": -0.006757450342813552,
+                "signed_imag": 0.004661009551059679,
+                "sum_lag_abs": 0.07799508345255204
+              },
+              "neither": {
+                "pairs": 431985,
+                "weight_l1": 5.56278107025836,
+                "signed_real": -0.009725875037272302,
+                "signed_imag": -0.011972076081889882,
+                "sum_lag_abs": 0.3546002168458678
+              }
+            }
+          }
+        },
+        "lag_fraction_bins": [
+          {
+            "lag_fraction": [
+              0.0,
+              0.125
+            ],
+            "lags": 119,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 364,
+                "weight_l1": 0.004462909104177552,
+                "signed_real": -6.478388187465511e-05,
+                "signed_imag": -6.672593871162687e-05,
+                "sum_lag_abs": 0.0025232867265321725
+              },
+              "0.03": {
+                "pairs": 1299,
+                "weight_l1": 0.014633313774108337,
+                "signed_real": 0.0002837510630387119,
+                "signed_imag": -0.00027111268850735367,
+                "sum_lag_abs": 0.004953276036476123
+              },
+              "0.1": {
+                "pairs": 4350,
+                "weight_l1": 0.047723218038525174,
+                "signed_real": 2.335823849414913e-05,
+                "signed_imag": 0.0006260084201942947,
+                "sum_lag_abs": 0.009926267263080574
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 0,
+                  "weight_l1": 0.0,
+                  "signed_real": 0.0,
+                  "signed_imag": 0.0,
+                  "sum_lag_abs": 0.0
+                },
+                "left_only": {
+                  "pairs": 141,
+                  "weight_l1": 0.001336379675414473,
+                  "signed_real": -8.364087424227065e-05,
+                  "signed_imag": -0.00010540546264857635,
+                  "sum_lag_abs": 0.0013308117761240087
+                },
+                "right_only": {
+                  "pairs": 238,
+                  "weight_l1": 0.0009476749360345661,
+                  "signed_real": 8.059327997757338e-05,
+                  "signed_imag": 5.311870065329146e-05,
+                  "sum_lag_abs": 0.0009334262309987824
+                },
+                "neither": {
+                  "pairs": 106245,
+                  "weight_l1": 1.0762732287027972,
+                  "signed_real": 0.004618137319517851,
+                  "signed_imag": 0.0003748331958156907,
+                  "sum_lag_abs": 0.05468450875834487
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 10,
+                  "weight_l1": 3.3620163348406206e-05,
+                  "signed_real": 1.3409531405734227e-05,
+                  "signed_imag": -1.484906298616606e-05,
+                  "sum_lag_abs": 3.358146974856552e-05
+                },
+                "left_only": {
+                  "pairs": 770,
+                  "weight_l1": 0.005454725381979156,
+                  "signed_real": 0.00018302432894404708,
+                  "signed_imag": -5.4484575954290244e-05,
+                  "sum_lag_abs": 0.0031108237407233056
+                },
+                "right_only": {
+                  "pairs": 1061,
+                  "weight_l1": 0.005206513599961299,
+                  "signed_real": 0.00017453856001361335,
+                  "signed_imag": -0.00014682837992409907,
+                  "sum_lag_abs": 0.002363415715307734
+                },
+                "neither": {
+                  "pairs": 104783,
+                  "weight_l1": 1.0678624241689574,
+                  "signed_real": 0.004244117304889757,
+                  "signed_imag": 0.0005387084526849625,
+                  "sum_lag_abs": 0.05488632782554862
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 85,
+                  "weight_l1": 0.00028236880304167614,
+                  "signed_real": -2.96718585129999e-05,
+                  "signed_imag": -9.272589516968621e-05,
+                  "sum_lag_abs": 0.00025287730156611636
+                },
+                "left_only": {
+                  "pairs": 2034,
+                  "weight_l1": 0.014411550667863276,
+                  "signed_real": 0.0005262274320652446,
+                  "signed_imag": 0.00024127074501896896,
+                  "sum_lag_abs": 0.005284896526910929
+                },
+                "right_only": {
+                  "pairs": 2772,
+                  "weight_l1": 0.012748545360915806,
+                  "signed_real": -0.0003414414521204526,
+                  "signed_imag": 0.00018918375494738195,
+                  "sum_lag_abs": 0.004310302777484936
+                },
+                "neither": {
+                  "pairs": 101733,
+                  "weight_l1": 1.051114818482426,
+                  "signed_real": 0.004459975603821358,
+                  "signed_imag": -1.5182170976257435e-05,
+                  "sum_lag_abs": 0.05434904730496874
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.125,
+              0.25
+            ],
+            "lags": 120,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 145,
+                "weight_l1": 0.00201689847128033,
+                "signed_real": 0.0004380606513740716,
+                "signed_imag": 1.9108846440346342e-05,
+                "sum_lag_abs": 0.0015475800965054029
+              },
+              "0.03": {
+                "pairs": 454,
+                "weight_l1": 0.005656196922368384,
+                "signed_real": -0.00012461849077023522,
+                "signed_imag": 7.953580120545738e-05,
+                "sum_lag_abs": 0.0031839105223176313
+              },
+              "0.1": {
+                "pairs": 1564,
+                "weight_l1": 0.019820334147752767,
+                "signed_real": -0.00011270663878179604,
+                "signed_imag": 0.0004250688949420365,
+                "sum_lag_abs": 0.006479975447041661
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 0,
+                  "weight_l1": 0.0,
+                  "signed_real": 0.0,
+                  "signed_imag": 0.0,
+                  "sum_lag_abs": 0.0
+                },
+                "left_only": {
+                  "pairs": 120,
+                  "weight_l1": 0.001785216649514532,
+                  "signed_real": -1.333393177184637e-06,
+                  "signed_imag": 3.8798896914174255e-05,
+                  "sum_lag_abs": 0.001785216649514532
+                },
+                "right_only": {
+                  "pairs": 240,
+                  "weight_l1": 0.0015593103349173028,
+                  "signed_real": -5.3126010592926804e-05,
+                  "signed_imag": -7.194958239166149e-05,
+                  "sum_lag_abs": 0.0015566643642327355
+                },
+                "neither": {
+                  "pairs": 92820,
+                  "weight_l1": 1.0688310923546072,
+                  "signed_real": -0.0007917394845263656,
+                  "signed_imag": -0.0008475744750851158,
+                  "sum_lag_abs": 0.05936386194209298
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 5,
+                  "weight_l1": 4.5663192716774315e-05,
+                  "signed_real": 1.3047075342762653e-06,
+                  "signed_imag": -4.4312703147777835e-05,
+                  "sum_lag_abs": 4.5663192716774315e-05
+                },
+                "left_only": {
+                  "pairs": 715,
+                  "weight_l1": 0.007591089417013277,
+                  "signed_real": -0.00025396124630901076,
+                  "signed_imag": 0.00010355331177562213,
+                  "sum_lag_abs": 0.004021307473391578
+                },
+                "right_only": {
+                  "pairs": 1075,
+                  "weight_l1": 0.007480649795468712,
+                  "signed_real": -0.0008410081867305319,
+                  "signed_imag": 0.0002796534070972633,
+                  "sum_lag_abs": 0.00475745793735532
+                },
+                "neither": {
+                  "pairs": 91385,
+                  "weight_l1": 1.0570582169338403,
+                  "signed_real": 0.0002474658372087886,
+                  "signed_imag": -0.00121961917628771,
+                  "sum_lag_abs": 0.05865531197180227
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 44,
+                  "weight_l1": 0.00017730781929436496,
+                  "signed_real": -4.948472202135457e-05,
+                  "signed_imag": -4.401155579172808e-05,
+                  "sum_lag_abs": 0.0001772018143293904
+                },
+                "left_only": {
+                  "pairs": 1853,
+                  "weight_l1": 0.018840706089913888,
+                  "signed_real": 0.00018606123573692044,
+                  "signed_imag": -0.0002656887954060236,
+                  "sum_lag_abs": 0.007287522270670419
+                },
+                "right_only": {
+                  "pairs": 2836,
+                  "weight_l1": 0.015953156043437933,
+                  "signed_real": -0.0010457639720552689,
+                  "signed_imag": 0.00020766200095881642,
+                  "sum_lag_abs": 0.0061922419745715305
+                },
+                "neither": {
+                  "pairs": 88447,
+                  "weight_l1": 1.0372044493863928,
+                  "signed_real": 6.298857004322675e-05,
+                  "signed_imag": -0.0007786868103236669,
+                  "sum_lag_abs": 0.05762004188138962
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.25,
+              0.5
+            ],
+            "lags": 239,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 496,
+                "weight_l1": 0.007610812589770704,
+                "signed_real": 0.00022508963978018227,
+                "signed_imag": 0.0008905282547037874,
+                "sum_lag_abs": 0.005044546706867357
+              },
+              "0.03": {
+                "pairs": 1549,
+                "weight_l1": 0.02184302466205685,
+                "signed_real": 0.0006875378829319141,
+                "signed_imag": 0.0012810699272847515,
+                "sum_lag_abs": 0.010117790545772111
+              },
+              "0.1": {
+                "pairs": 5252,
+                "weight_l1": 0.0729776217355343,
+                "signed_real": 0.0015772571679666793,
+                "signed_imag": 0.0015187535767009893,
+                "sum_lag_abs": 0.019792857518921247
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 1,
+                  "weight_l1": 5.490676928208114e-05,
+                  "signed_real": 2.1979857340979877e-05,
+                  "signed_imag": 5.031539708941848e-05,
+                  "sum_lag_abs": 5.490676928208113e-05
+                },
+                "left_only": {
+                  "pairs": 178,
+                  "weight_l1": 0.004842724598722976,
+                  "signed_real": -0.0001636592067734507,
+                  "signed_imag": 0.00023265868631132115,
+                  "sum_lag_abs": 0.004842724598722976
+                },
+                "right_only": {
+                  "pairs": 477,
+                  "weight_l1": 0.013813949794557088,
+                  "signed_real": 0.0005503042634083259,
+                  "signed_imag": -0.0014321858173330505,
+                  "sum_lag_abs": 0.011513938514815495
+                },
+                "neither": {
+                  "pairs": 142027,
+                  "weight_l1": 2.0415534179465062,
+                  "signed_real": -0.01347066894755309,
+                  "signed_imag": -0.00032963479137768065,
+                  "sum_lag_abs": 0.12417346500915208
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 15,
+                  "weight_l1": 0.0004332645174511214,
+                  "signed_real": 3.5954399184105437e-05,
+                  "signed_imag": 9.667897512686719e-05,
+                  "sum_lag_abs": 0.00043326451745112144
+                },
+                "left_only": {
+                  "pairs": 1044,
+                  "weight_l1": 0.01959166604103906,
+                  "signed_real": 0.001331995869935516,
+                  "signed_imag": -4.460358614042886e-05,
+                  "sum_lag_abs": 0.012401460448689151
+                },
+                "right_only": {
+                  "pairs": 1839,
+                  "weight_l1": 0.036875383362982656,
+                  "signed_real": 0.0014982436462663657,
+                  "signed_imag": -0.001936462254386069,
+                  "sum_lag_abs": 0.019147383331883663
+                },
+                "neither": {
+                  "pairs": 139785,
+                  "weight_l1": 2.0033646851875964,
+                  "signed_real": -0.015928237948963208,
+                  "signed_imag": 0.00040554034008964175,
+                  "sum_lag_abs": 0.12201301071232751
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 116,
+                  "weight_l1": 0.003764684437586034,
+                  "signed_real": 0.0010362305431341695,
+                  "signed_imag": -7.22532312472814e-05,
+                  "sum_lag_abs": 0.0035130263805304737
+                },
+                "left_only": {
+                  "pairs": 2335,
+                  "weight_l1": 0.031653901059261975,
+                  "signed_real": 0.0005789481489230127,
+                  "signed_imag": 0.00075680449060516,
+                  "sum_lag_abs": 0.016212814358783145
+                },
+                "right_only": {
+                  "pairs": 5005,
+                  "weight_l1": 0.11816355914824218,
+                  "signed_real": -0.003334214833698831,
+                  "signed_imag": -0.0013484766424184111,
+                  "sum_lag_abs": 0.03452146128123349
+                },
+                "neither": {
+                  "pairs": 135227,
+                  "weight_l1": 1.9066828544639791,
+                  "signed_real": -0.01134300789193558,
+                  "signed_imag": -0.0008149211422494563,
+                  "sum_lag_abs": 0.11540914727962728
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.5,
+              0.75
+            ],
+            "lags": 239,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 319,
+                "weight_l1": 0.005159193612979439,
+                "signed_real": -0.00028610624528032155,
+                "signed_imag": -0.0003184872225900189,
+                "sum_lag_abs": 0.003867736901975872
+              },
+              "0.03": {
+                "pairs": 968,
+                "weight_l1": 0.015034112937313158,
+                "signed_real": -0.0005813536455998656,
+                "signed_imag": -4.548048736708413e-05,
+                "sum_lag_abs": 0.008035945871989103
+              },
+              "0.1": {
+                "pairs": 3291,
+                "weight_l1": 0.053559414135966855,
+                "signed_real": -0.0013650685999471639,
+                "signed_imag": -0.001988531707272411,
+                "sum_lag_abs": 0.016241059036624754
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 0,
+                  "weight_l1": 0.0,
+                  "signed_real": 0.0,
+                  "signed_imag": 0.0,
+                  "sum_lag_abs": 0.0
+                },
+                "left_only": {
+                  "pairs": 0,
+                  "weight_l1": 0.0,
+                  "signed_real": 0.0,
+                  "signed_imag": 0.0,
+                  "sum_lag_abs": 0.0
+                },
+                "right_only": {
+                  "pairs": 298,
+                  "weight_l1": 0.007359567514256541,
+                  "signed_real": 0.0002023609485182374,
+                  "signed_imag": 0.0005222307170331378,
+                  "sum_lag_abs": 0.007077771158897787
+                },
+                "neither": {
+                  "pairs": 85264,
+                  "weight_l1": 1.3733981592234694,
+                  "signed_real": -0.005835429367963416,
+                  "signed_imag": -0.004748136847613961,
+                  "sum_lag_abs": 0.09901988906513079
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 6,
+                  "weight_l1": 0.00016515632485637055,
+                  "signed_real": -7.805372855543569e-05,
+                  "signed_imag": 3.054840360992841e-05,
+                  "sum_lag_abs": 0.00016515632485637055
+                },
+                "left_only": {
+                  "pairs": 289,
+                  "weight_l1": 0.0045056412267976305,
+                  "signed_real": -0.0006049213420667886,
+                  "signed_imag": 0.00022665541864198195,
+                  "sum_lag_abs": 0.004402703483126984
+                },
+                "right_only": {
+                  "pairs": 1082,
+                  "weight_l1": 0.024204690418660465,
+                  "signed_real": -0.0004725678478940608,
+                  "signed_imag": 0.0011051998328288127,
+                  "sum_lag_abs": 0.01564805397327934
+                },
+                "neither": {
+                  "pairs": 84185,
+                  "weight_l1": 1.3518822387674123,
+                  "signed_real": -0.004477525500928885,
+                  "signed_imag": -0.005588309785661545,
+                  "sum_lag_abs": 0.09833714115282075
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 56,
+                  "weight_l1": 0.0012811338491079726,
+                  "signed_real": -0.00034806441921369537,
+                  "signed_imag": 0.0002615922622293986,
+                  "sum_lag_abs": 0.0012799899760594176
+                },
+                "left_only": {
+                  "pairs": 1033,
+                  "weight_l1": 0.00965409412753593,
+                  "signed_real": -0.00023810794658374464,
+                  "signed_imag": -0.00011731601825852627,
+                  "sum_lag_abs": 0.007021451618523388
+                },
+                "right_only": {
+                  "pairs": 3699,
+                  "weight_l1": 0.08575610806469552,
+                  "signed_real": -0.002032156620882148,
+                  "signed_imag": 0.005573186705841291,
+                  "sum_lag_abs": 0.03276826646815709
+                },
+                "neither": {
+                  "pairs": 80774,
+                  "weight_l1": 1.2840663906963867,
+                  "signed_real": -0.003014739432765591,
+                  "signed_imag": -0.00994336908039299,
+                  "sum_lag_abs": 0.0925162624956054
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.75,
+              1.0
+            ],
+            "lags": 239,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 25,
+                "weight_l1": 6.0519321487289184e-05,
+                "signed_real": -2.681184332146207e-05,
+                "signed_imag": 2.712627753818779e-06,
+                "sum_lag_abs": 6.0459547620164166e-05
+              },
+              "0.03": {
+                "pairs": 75,
+                "weight_l1": 0.00023217748291529347,
+                "signed_real": -7.034908762228958e-05,
+                "signed_imag": -3.0924465439777835e-05,
+                "sum_lag_abs": 0.000164709730330531
+              },
+              "0.1": {
+                "pairs": 243,
+                "weight_l1": 0.0007716706229938626,
+                "signed_real": -0.00014514451202565228,
+                "signed_imag": -0.0001173085910406623,
+                "sum_lag_abs": 0.0005236840301529463
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 0,
+                  "weight_l1": 0.0,
+                  "signed_real": 0.0,
+                  "signed_imag": 0.0,
+                  "sum_lag_abs": 0.0
+                },
+                "left_only": {
+                  "pairs": 0,
+                  "weight_l1": 0.0,
+                  "signed_real": 0.0,
+                  "signed_imag": 0.0,
+                  "sum_lag_abs": 0.0
+                },
+                "right_only": {
+                  "pairs": 216,
+                  "weight_l1": 3.7242268211601172e-06,
+                  "signed_real": 3.982758126210666e-08,
+                  "signed_imag": -1.1880107172525731e-08,
+                  "sum_lag_abs": 3.7242268211601172e-06
+                },
+                "neither": {
+                  "pairs": 28225,
+                  "weight_l1": 0.29224988319894357,
+                  "signed_real": 0.0005566893151693497,
+                  "signed_imag": -0.0001778409802386819,
+                  "sum_lag_abs": 0.036806842628974885
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 0,
+                  "weight_l1": 0.0,
+                  "signed_real": 0.0,
+                  "signed_imag": 0.0,
+                  "sum_lag_abs": 0.0
+                },
+                "left_only": {
+                  "pairs": 0,
+                  "weight_l1": 0.0,
+                  "signed_real": 0.0,
+                  "signed_imag": 0.0,
+                  "sum_lag_abs": 0.0
+                },
+                "right_only": {
+                  "pairs": 648,
+                  "weight_l1": 9.075168432178082e-06,
+                  "signed_real": 1.892044510671659e-07,
+                  "signed_imag": -2.135919347729039e-08,
+                  "sum_lag_abs": 5.832674352529784e-06
+                },
+                "neither": {
+                  "pairs": 27793,
+                  "weight_l1": 0.2922445322573326,
+                  "signed_real": 0.0005565399382995458,
+                  "signed_imag": -0.00017783150115237753,
+                  "sum_lag_abs": 0.0368062568669366
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 24,
+                  "weight_l1": 7.014915188744392e-05,
+                  "signed_real": -4.1594880762852605e-06,
+                  "signed_imag": -9.458123814243768e-06,
+                  "sum_lag_abs": 7.014823185838615e-05
+                },
+                "left_only": {
+                  "pairs": 451,
+                  "weight_l1": 0.008232175576163972,
+                  "signed_real": 0.00045585398131946247,
+                  "signed_imag": 0.00021206840968529848,
+                  "sum_lag_abs": 0.008174048848797891
+                },
+                "right_only": {
+                  "pairs": 2162,
+                  "weight_l1": 0.0002387254685280296,
+                  "signed_real": -3.873464056846995e-06,
+                  "signed_imag": 3.9453731730596765e-05,
+                  "sum_lag_abs": 0.00020281095110497393
+                },
+                "neither": {
+                  "pairs": 25804,
+                  "weight_l1": 0.28371255722918537,
+                  "signed_real": 0.00010890811356428202,
+                  "signed_imag": -0.0004199168779475058,
+                  "sum_lag_abs": 0.034705717884277114
+                }
+              }
+            }
+          }
+        ],
+        "unclassified_terminal_pair_per_lag": {
+          "pairs": 956,
+          "weight_l1": 0.0357414000062775,
+          "signed_real": 0.00027243124563774436,
+          "signed_imag": -0.00027674190053970737
+        }
+      },
+      "q_real_direct": -0.02775343983454769,
+      "q_real_from_lags": -0.027753439834541645,
+      "q_reconstruction_error": 6.043776590303196e-15,
+      "scope": "finite-spin float64/complex128 census; no interval or asymptotic claim"
+    },
+    {
+      "S": 192,
+      "dimension": 1917,
+      "profile_core_radius": 24,
+      "profile_tail_bound": 5.707491014309905e-12,
+      "profile_construction": "Laurent-series expansion of N_inf^2=6I-4(U+U*)+(U^2+U*^2)",
+      "individual_phase_slope": {
+        "raw_min": 0.060001511138851625,
+        "raw_max": 38.47985000756307,
+        "alias_index_min": 0,
+        "alias_index_max": 6,
+        "distinct_alias_indices": 7,
+        "prepared_mode_mass_by_threshold": {
+          "0.01": {
+            "resonant_gap_count": 9,
+            "prepared_mass_on_left_mode": 0.004840344189117978
+          },
+          "0.03": {
+            "resonant_gap_count": 18,
+            "prepared_mass_on_left_mode": 0.011543355850268219
+          },
+          "0.1": {
+            "resonant_gap_count": 70,
+            "prepared_mass_on_left_mode": 0.03865597934004085
+          }
+        }
+      },
+      "fixed_lag_increment_aliases": {
+        "definition": "wrap(alpha[j+h]-alpha[j]); this is the discrete derivative of the lag-h phase in j",
+        "thresholds": {
+          "0.01": {
+            "fixed_lag_resonance": {
+              "pairs": 5665,
+              "weight_l1": 0.026031580357420057,
+              "signed_real": 0.0007722568285630111,
+              "signed_imag": 0.00028368058030003016,
+              "sum_lag_abs": 0.015343073646816236
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 36,
+                "weight_l1": 0.00018645975283129872,
+                "signed_real": 4.510922696011169e-06,
+                "signed_imag": -3.1062153514574345e-05,
+                "sum_lag_abs": 0.0001864597528312987
+              },
+              "left_only": {
+                "pairs": 7759,
+                "weight_l1": 0.0393158816275789,
+                "signed_real": 0.0007516632561203322,
+                "signed_imag": -0.00012858333569866885,
+                "sum_lag_abs": 0.021953858562976325
+              },
+              "right_only": {
+                "pairs": 9404,
+                "weight_l1": 0.04388660865495622,
+                "signed_real": 0.0003799655209298809,
+                "signed_imag": -0.00021808695484402168,
+                "sum_lag_abs": 0.024475290897774605
+              },
+              "neither": {
+                "pairs": 1817371,
+                "weight_l1": 8.222366461948061,
+                "signed_real": 0.005514711578397952,
+                "signed_imag": 0.006001477721626195,
+                "sum_lag_abs": 0.36893692105682513
+              }
+            }
+          },
+          "0.03": {
+            "fixed_lag_resonance": {
+              "pairs": 17392,
+              "weight_l1": 0.07976212551534027,
+              "signed_real": 0.0006633948561585679,
+              "signed_imag": 0.0006903823776503252,
+              "sum_lag_abs": 0.03063488606237259
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 153,
+                "weight_l1": 0.0008507881237936443,
+                "signed_real": 2.7334057976454393e-05,
+                "signed_imag": 3.328736393845795e-05,
+                "sum_lag_abs": 0.0008290262417426347
+              },
+              "left_only": {
+                "pairs": 11810,
+                "weight_l1": 0.05957734415418365,
+                "signed_real": 0.0009814352004633318,
+                "signed_imag": 0.0005175729818231228,
+                "sum_lag_abs": 0.028372597633176563
+              },
+              "right_only": {
+                "pairs": 22354,
+                "weight_l1": 0.10997672167901454,
+                "signed_real": 5.222481351288624e-05,
+                "signed_imag": 0.0007183334148307437,
+                "sum_lag_abs": 0.04103476163015721
+              },
+              "neither": {
+                "pairs": 1800253,
+                "weight_l1": 8.135350558026417,
+                "signed_real": 0.005589857206191501,
+                "signed_imag": 0.004354551516976622,
+                "sum_lag_abs": 0.3663081882984825
+              }
+            }
+          },
+          "0.1": {
+            "fixed_lag_resonance": {
+              "pairs": 58293,
+              "weight_l1": 0.2677518885508909,
+              "signed_real": -0.0006651871073666241,
+              "signed_imag": 0.0012690736378838984,
+              "sum_lag_abs": 0.062159449045905646
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 2415,
+                "weight_l1": 0.010359705919475654,
+                "signed_real": 4.699468237268422e-05,
+                "signed_imag": 0.0002668023564030152,
+                "sum_lag_abs": 0.008125123276718084
+              },
+              "left_only": {
+                "pairs": 58971,
+                "weight_l1": 0.25167239519631396,
+                "signed_real": 7.31973489987314e-05,
+                "signed_imag": 0.001639797898536237,
+                "sum_lag_abs": 0.06518189679261736
+              },
+              "right_only": {
+                "pairs": 70249,
+                "weight_l1": 0.31793681217625,
+                "signed_real": -0.0008065346998854132,
+                "signed_imag": 0.001751755308179995,
+                "sum_lag_abs": 0.0697732243591796
+              },
+              "neither": {
+                "pairs": 1702935,
+                "weight_l1": 7.725786498691361,
+                "signed_real": 0.007337193946658161,
+                "signed_imag": 0.0019653897144496888,
+                "sum_lag_abs": 0.3552499050982637
+              }
+            }
+          }
+        },
+        "lag_fraction_bins": [
+          {
+            "lag_fraction": [
+              0.0,
+              0.125
+            ],
+            "lags": 239,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 1061,
+                "weight_l1": 0.004349433084524466,
+                "signed_real": 7.35609506195963e-06,
+                "signed_imag": 1.254576731773244e-05,
+                "sum_lag_abs": 0.0024117722111680127
+              },
+              "0.03": {
+                "pairs": 3594,
+                "weight_l1": 0.014270161292847057,
+                "signed_real": 8.963878434112823e-05,
+                "signed_imag": 0.0002945183611083225,
+                "sum_lag_abs": 0.0044732884934218335
+              },
+              "0.1": {
+                "pairs": 12324,
+                "weight_l1": 0.04792052990178109,
+                "signed_real": -0.0002595208450441846,
+                "signed_imag": 0.0004285469131439591,
+                "sum_lag_abs": 0.008553885723449476
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 5,
+                  "weight_l1": 2.1097135139428465e-05,
+                  "signed_real": 1.7056034027483834e-05,
+                  "signed_imag": 2.180286753588703e-07,
+                  "sum_lag_abs": 2.109713513942846e-05
+                },
+                "left_only": {
+                  "pairs": 1946,
+                  "weight_l1": 0.009499123479218543,
+                  "signed_real": 4.2859535225066826e-05,
+                  "signed_imag": 0.0003237561966852911,
+                  "sum_lag_abs": 0.00435815352130018
+                },
+                "right_only": {
+                  "pairs": 2146,
+                  "weight_l1": 0.007430336719953032,
+                  "signed_real": 0.00020885894296814156,
+                  "signed_imag": -0.00021848755780404542,
+                  "sum_lag_abs": 0.0032876211477196617
+                },
+                "neither": {
+                  "pairs": 425147,
+                  "weight_l1": 1.5267643615330408,
+                  "signed_real": -0.001790080860444411,
+                  "signed_imag": 0.005562225589166256,
+                  "sum_lag_abs": 0.05319925617845086
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 28,
+                  "weight_l1": 0.00015397349344296524,
+                  "signed_real": 4.1258245191263564e-05,
+                  "signed_imag": 7.040234204600382e-07,
+                  "sum_lag_abs": 0.00014329648419280651
+                },
+                "left_only": {
+                  "pairs": 3674,
+                  "weight_l1": 0.020769791030913875,
+                  "signed_real": -0.0001122213883896714,
+                  "signed_imag": 0.0009340211414643738,
+                  "sum_lag_abs": 0.00785732977950401
+                },
+                "right_only": {
+                  "pairs": 4274,
+                  "weight_l1": 0.014542769595365032,
+                  "signed_real": 0.00039185605341084215,
+                  "signed_imag": -0.00012671907222773965,
+                  "sum_lag_abs": 0.004633199064155189
+                },
+                "neither": {
+                  "pairs": 421268,
+                  "weight_l1": 1.5082483847476298,
+                  "signed_real": -0.0018421992584361517,
+                  "signed_imag": 0.004859706164065768,
+                  "sum_lag_abs": 0.052683384643369004
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 488,
+                  "weight_l1": 0.0015904216917043937,
+                  "signed_real": -4.6984821629635906e-05,
+                  "signed_imag": 7.413968376310082e-05,
+                  "sum_lag_abs": 0.0010224236740985538
+                },
+                "left_only": {
+                  "pairs": 14247,
+                  "weight_l1": 0.060137300735671244,
+                  "signed_real": -4.216264179116654e-05,
+                  "signed_imag": 0.0016216011009444159,
+                  "sum_lag_abs": 0.012096680956672703
+                },
+                "right_only": {
+                  "pairs": 15765,
+                  "weight_l1": 0.04744279972815193,
+                  "signed_real": -0.0005015518794637158,
+                  "signed_imag": 6.092918076162102e-06,
+                  "sum_lag_abs": 0.007975003295781448
+                },
+                "neither": {
+                  "pairs": 398744,
+                  "weight_l1": 1.4345443967118239,
+                  "signed_real": -0.000930607005339197,
+                  "signed_imag": 0.003965878553939184,
+                  "sum_lag_abs": 0.05148095945486125
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.125,
+              0.25
+            ],
+            "lags": 240,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 1344,
+                "weight_l1": 0.005035378091640528,
+                "signed_real": 0.00018138282749308383,
+                "signed_imag": -1.2952091375014564e-05,
+                "sum_lag_abs": 0.0027458952267522003
+              },
+              "0.03": {
+                "pairs": 3971,
+                "weight_l1": 0.015267036138845691,
+                "signed_real": 0.0002810242007885605,
+                "signed_imag": 0.00021855042321666722,
+                "sum_lag_abs": 0.005513355419746649
+              },
+              "0.1": {
+                "pairs": 13267,
+                "weight_l1": 0.05123212644015339,
+                "signed_real": 2.5879333604512007e-05,
+                "signed_imag": 0.00047263338486453973,
+                "sum_lag_abs": 0.010135453566640848
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 10,
+                  "weight_l1": 2.9068044359988393e-05,
+                  "signed_real": 1.3998188514238235e-05,
+                  "signed_imag": -9.304619279300708e-06,
+                  "sum_lag_abs": 2.906804435998839e-05
+                },
+                "left_only": {
+                  "pairs": 1729,
+                  "weight_l1": 0.006608669193566199,
+                  "signed_real": 0.00021290868819961442,
+                  "signed_imag": 0.00013004458482272877,
+                  "sum_lag_abs": 0.003197800764105895
+                },
+                "right_only": {
+                  "pairs": 1984,
+                  "weight_l1": 0.006862944480816878,
+                  "signed_real": -5.5978937895465815e-06,
+                  "signed_imag": -0.00013911966944337787,
+                  "sum_lag_abs": 0.0031033492098844215
+                },
+                "neither": {
+                  "pairs": 369837,
+                  "weight_l1": 1.5006417090902593,
+                  "signed_real": 0.0014584917165265914,
+                  "signed_imag": 0.0005004359514322339,
+                  "sum_lag_abs": 0.0600509497737905
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 51,
+                  "weight_l1": 0.00013819788717470664,
+                  "signed_real": 2.1012043138431217e-05,
+                  "signed_imag": -1.1537998725795158e-05,
+                  "sum_lag_abs": 0.00013336063998934522
+                },
+                "left_only": {
+                  "pairs": 2953,
+                  "weight_l1": 0.010408338807769008,
+                  "signed_real": 0.0004273872022494886,
+                  "signed_imag": 0.0003045001114937866,
+                  "sum_lag_abs": 0.0045808810952068955
+                },
+                "right_only": {
+                  "pairs": 4103,
+                  "weight_l1": 0.013653429906213608,
+                  "signed_real": 1.762929544384394e-05,
+                  "signed_imag": -0.00016157638830748805,
+                  "sum_lag_abs": 0.004383138206551533
+                },
+                "neither": {
+                  "pairs": 366453,
+                  "weight_l1": 1.4899424242078443,
+                  "signed_real": 0.001213772158619134,
+                  "signed_imag": 0.0003506705230717781,
+                  "sum_lag_abs": 0.0597752410913766
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 578,
+                  "weight_l1": 0.0011785642248500008,
+                  "signed_real": -3.246971237508526e-05,
+                  "signed_imag": 9.590751749306693e-05,
+                  "sum_lag_abs": 0.000923035738129645
+                },
+                "left_only": {
+                  "pairs": 12568,
+                  "weight_l1": 0.04093107982426397,
+                  "signed_real": 0.00039810150971537797,
+                  "signed_imag": 0.00028470384776068574,
+                  "sum_lag_abs": 0.00970079846898865
+                },
+                "right_only": {
+                  "pairs": 13837,
+                  "weight_l1": 0.04111300262101845,
+                  "signed_real": 0.00041391489085290775,
+                  "signed_imag": -0.00031398698660672843,
+                  "sum_lag_abs": 0.007901224879781902
+                },
+                "neither": {
+                  "pairs": 346577,
+                  "weight_l1": 1.430919744138869,
+                  "signed_real": 0.0009002540112576975,
+                  "signed_imag": 0.0004154318688852579,
+                  "sum_lag_abs": 0.05887880142619618
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.25,
+              0.5
+            ],
+            "lags": 479,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 1803,
+                "weight_l1": 0.008772767314718228,
+                "signed_real": -5.870424679107418e-06,
+                "signed_imag": 4.291284789377887e-05,
+                "sum_lag_abs": 0.005159937187184788
+              },
+              "0.03": {
+                "pairs": 5357,
+                "weight_l1": 0.02641927314977015,
+                "signed_real": 4.90820819284127e-05,
+                "signed_imag": -5.880694013548659e-05,
+                "sum_lag_abs": 0.010267571426653297
+              },
+              "0.1": {
+                "pairs": 17865,
+                "weight_l1": 0.08931408849673945,
+                "signed_real": -0.0011943039816788934,
+                "signed_imag": 0.0002739592836550772,
+                "sum_lag_abs": 0.020873644354451496
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 13,
+                  "weight_l1": 7.476977162356734e-05,
+                  "signed_real": 5.895572853840671e-06,
+                  "signed_imag": 1.9232020383953573e-05,
+                  "sum_lag_abs": 7.476977162356734e-05
+                },
+                "left_only": {
+                  "pairs": 2588,
+                  "weight_l1": 0.013329700617204095,
+                  "signed_real": 0.00036699775104425265,
+                  "signed_imag": 1.2172585773887117e-05,
+                  "sum_lag_abs": 0.007221159837819063
+                },
+                "right_only": {
+                  "pairs": 2955,
+                  "weight_l1": 0.016990114166865192,
+                  "signed_real": -0.0002995880419884692,
+                  "signed_imag": -0.0002062197937282711,
+                  "sum_lag_abs": 0.00919953444042423
+                },
+                "neither": {
+                  "pairs": 567807,
+                  "weight_l1": 2.8883226331909944,
+                  "signed_real": 0.0016159725937604256,
+                  "signed_imag": -0.0025185898215187557,
+                  "sum_lag_abs": 0.12231769072259634
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 46,
+                  "weight_l1": 0.0003308004851597834,
+                  "signed_real": 2.3636441861671843e-05,
+                  "signed_imag": 0.00010237818636412647,
+                  "sum_lag_abs": 0.0003245528595442938
+                },
+                "left_only": {
+                  "pairs": 3596,
+                  "weight_l1": 0.018014329729696927,
+                  "signed_real": 0.0005239445768665822,
+                  "signed_imag": -0.00012516760640683417,
+                  "sum_lag_abs": 0.008651264449499867
+                },
+                "right_only": {
+                  "pairs": 7121,
+                  "weight_l1": 0.04471802693533869,
+                  "signed_real": -0.0010859224576003413,
+                  "signed_imag": 0.0002942077890859193,
+                  "sum_lag_abs": 0.015474050889768524
+                },
+                "neither": {
+                  "pairs": 562600,
+                  "weight_l1": 2.8556540605964895,
+                  "signed_real": 0.002227619314542134,
+                  "signed_imag": -0.0029648233781323957,
+                  "sum_lag_abs": 0.12094529122304765
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 746,
+                  "weight_l1": 0.003860387113066144,
+                  "signed_real": 0.00011224082377811557,
+                  "signed_imag": 5.6815919460232605e-05,
+                  "sum_lag_abs": 0.0030997189471679556
+                },
+                "left_only": {
+                  "pairs": 18908,
+                  "weight_l1": 0.08277834606835044,
+                  "signed_real": -0.0003287580168023827,
+                  "signed_imag": 0.0007316957135289184,
+                  "sum_lag_abs": 0.01889125317023248
+                },
+                "right_only": {
+                  "pairs": 21762,
+                  "weight_l1": 0.12954433492707257,
+                  "signed_real": -0.0013100001892787244,
+                  "signed_imag": 0.00044987211646625735,
+                  "sum_lag_abs": 0.026361572703168305
+                },
+                "neither": {
+                  "pairs": 531947,
+                  "weight_l1": 2.702534149638196,
+                  "signed_real": 0.003215795257973035,
+                  "signed_imag": -0.0039317887585445955,
+                  "sum_lag_abs": 0.11829675018749926
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.5,
+              0.75
+            ],
+            "lags": 479,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 1056,
+                "weight_l1": 0.006089994680702117,
+                "signed_real": 0.00030032629132414624,
+                "signed_imag": 0.0002925448274935702,
+                "sum_lag_abs": 0.004055365538377886
+              },
+              "0.03": {
+                "pairs": 3231,
+                "weight_l1": 0.018694912071820988,
+                "signed_real": 0.00015955680278829985,
+                "signed_imag": 9.536562685159543e-05,
+                "sum_lag_abs": 0.008260610138032788
+              },
+              "0.1": {
+                "pairs": 10728,
+                "weight_l1": 0.06215773438966339,
+                "signed_real": 0.00040868891519394,
+                "signed_imag": 0.00017643113783472205,
+                "sum_lag_abs": 0.01719994686198328
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 7,
+                  "weight_l1": 6.152355990694327e-05,
+                  "signed_real": -3.2439961733930286e-05,
+                  "signed_imag": -4.1208180014593715e-05,
+                  "sum_lag_abs": 6.152355990694325e-05
+                },
+                "left_only": {
+                  "pairs": 1332,
+                  "weight_l1": 0.00954253774582823,
+                  "signed_real": 0.0001243027875828507,
+                  "signed_imag": -0.0005652740467157189,
+                  "sum_lag_abs": 0.006840893847989416
+                },
+                "right_only": {
+                  "pairs": 1702,
+                  "weight_l1": 0.011748688908121982,
+                  "signed_real": 0.00044964632692816217,
+                  "signed_imag": 0.00029796884029777333,
+                  "sum_lag_abs": 0.00810153996181794
+                },
+                "neither": {
+                  "pairs": 340881,
+                  "weight_l1": 1.9185400968924826,
+                  "signed_real": 0.003346000230454152,
+                  "signed_imag": 0.006338031828039692,
+                  "sum_lag_abs": 0.10488334138996658
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 25,
+                  "weight_l1": 0.00022780923341138136,
+                  "signed_real": -5.8574205998959785e-05,
+                  "signed_imag": -5.8257806552135174e-05,
+                  "sum_lag_abs": 0.00022780923341138133
+                },
+                "left_only": {
+                  "pairs": 1425,
+                  "weight_l1": 0.010049039776845521,
+                  "signed_real": 0.00013773076041805426,
+                  "signed_imag": -0.0005664976457515514,
+                  "sum_lag_abs": 0.006947277500007403
+                },
+                "right_only": {
+                  "pairs": 4952,
+                  "weight_l1": 0.03345382953190774,
+                  "signed_real": 0.0005953080017954108,
+                  "signed_imag": 0.0006796234507656095,
+                  "sum_lag_abs": 0.014210307601484883
+                },
+                "neither": {
+                  "pairs": 337520,
+                  "weight_l1": 1.8961621685641734,
+                  "signed_real": 0.003213044827016725,
+                  "signed_imag": 0.005974650443145229,
+                  "sum_lag_abs": 0.10475004888360277
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 449,
+                  "weight_l1": 0.003484230432899652,
+                  "signed_real": 3.178702167057655e-05,
+                  "signed_imag": 4.514684491984991e-05,
+                  "sum_lag_abs": 0.0028347310656226805
+                },
+                "left_only": {
+                  "pairs": 10553,
+                  "weight_l1": 0.05671337447300505,
+                  "signed_real": -2.0799627439635826e-06,
+                  "signed_imag": -0.0008868159108300476,
+                  "sum_lag_abs": 0.017387258578610326
+                },
+                "right_only": {
+                  "pairs": 13412,
+                  "weight_l1": 0.0920919631492219,
+                  "signed_real": 0.0004767155281665059,
+                  "signed_imag": 0.0017288543555686834,
+                  "sum_lag_abs": 0.024400267670584005
+                },
+                "neither": {
+                  "pairs": 319508,
+                  "weight_l1": 1.7876032790512126,
+                  "signed_real": 0.00338108679613811,
+                  "signed_imag": 0.005142333151948666,
+                  "sum_lag_abs": 0.0997275158695641
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.75,
+              1.0
+            ],
+            "lags": 479,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 401,
+                "weight_l1": 0.0017840071858347061,
+                "signed_real": 0.0002890620393629297,
+                "signed_imag": -5.1370771030036954e-05,
+                "sum_lag_abs": 0.000970103483333359
+              },
+              "0.03": {
+                "pairs": 1239,
+                "weight_l1": 0.005110742862056305,
+                "signed_real": 8.409298631216692e-05,
+                "signed_imag": 0.0001407549066092267,
+                "sum_lag_abs": 0.0021200605845179982
+              },
+              "0.1": {
+                "pairs": 4109,
+                "weight_l1": 0.01712740932255424,
+                "signed_real": 0.00035406947055800076,
+                "signed_imag": -8.249708161439925e-05,
+                "sum_lag_abs": 0.0053965185393805865
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 1,
+                  "weight_l1": 1.2418013712078432e-09,
+                  "signed_real": 1.0890343787187235e-09,
+                  "signed_imag": 5.967200076270312e-10,
+                  "sum_lag_abs": 1.2418013712078434e-09
+                },
+                "left_only": {
+                  "pairs": 164,
+                  "weight_l1": 0.00033585059176183344,
+                  "signed_real": 4.594494068547292e-06,
+                  "signed_imag": -2.9282656264857428e-05,
+                  "sum_lag_abs": 0.00033585059176183344
+                },
+                "right_only": {
+                  "pairs": 617,
+                  "weight_l1": 0.0008545243791991179,
+                  "signed_real": 2.664618681159367e-05,
+                  "signed_imag": 4.7771225833900084e-05,
+                  "sum_lag_abs": 0.0007832461379283051
+                },
+                "neither": {
+                  "pairs": 113699,
+                  "weight_l1": 0.38809766124127143,
+                  "signed_real": 0.0008843278981011922,
+                  "signed_imag": -0.003880625825493223,
+                  "sum_lag_abs": 0.02848568299202031
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 3,
+                  "weight_l1": 7.02460480833289e-09,
+                  "signed_real": 1.5337840475275002e-09,
+                  "signed_imag": 9.594318017878219e-10,
+                  "sum_lag_abs": 7.02460480833289e-09
+                },
+                "left_only": {
+                  "pairs": 162,
+                  "weight_l1": 0.00033584480895839633,
+                  "signed_real": 4.594049318878483e-06,
+                  "signed_imag": -2.928301897665159e-05,
+                  "sum_lag_abs": 0.00033584480895839633
+                },
+                "right_only": {
+                  "pairs": 1904,
+                  "weight_l1": 0.0036086657101893774,
+                  "signed_real": 0.000133353920463131,
+                  "signed_imag": 3.279763551444274e-05,
+                  "sum_lag_abs": 0.0023340658681971107
+                },
+                "neither": {
+                  "pairs": 112412,
+                  "weight_l1": 0.385343519910282,
+                  "signed_real": 0.0007776201644496557,
+                  "signed_imag": -0.0038656522351737618,
+                  "sum_lag_abs": 0.028154222457085876
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 154,
+                  "weight_l1": 0.0002461024569554623,
+                  "signed_real": -1.7578629071286405e-05,
+                  "signed_imag": -5.2076092332356825e-06,
+                  "sum_lag_abs": 0.00024521385169926633
+                },
+                "left_only": {
+                  "pairs": 2695,
+                  "weight_l1": 0.011112294095023418,
+                  "signed_real": 4.809646062086606e-05,
+                  "signed_imag": -0.0001113868528677324,
+                  "sum_lag_abs": 0.007105905618113486
+                },
+                "right_only": {
+                  "pairs": 5473,
+                  "weight_l1": 0.0077447117507849095,
+                  "signed_real": 0.00011438694983761455,
+                  "signed_imag": -0.00011907709532437784,
+                  "sum_lag_abs": 0.003135155809864027
+                },
+                "neither": {
+                  "pairs": 106159,
+                  "weight_l1": 0.3701849291512698,
+                  "signed_real": 0.0007706648866285174,
+                  "signed_imag": -0.003626465101778825,
+                  "sum_lag_abs": 0.026865878160141916
+                }
+              }
+            }
+          }
+        ],
+        "unclassified_terminal_pair_per_lag": {
+          "pairs": 1916,
+          "weight_l1": 0.025509648038822896,
+          "signed_real": -0.0019522009013041074,
+          "signed_imag": -0.00016792445898014484
+        }
+      },
+      "q_real_direct": 0.009589238342634535,
+      "q_real_from_lags": 0.009589238342647877,
+      "q_reconstruction_error": 1.3341758253737623e-14,
+      "scope": "finite-spin float64/complex128 census; no interval or asymptotic claim"
+    },
+    {
+      "S": 384,
+      "dimension": 3837,
+      "profile_core_radius": 24,
+      "profile_tail_bound": 5.707491014309905e-12,
+      "profile_construction": "Laurent-series expansion of N_inf^2=6I-4(U+U*)+(U^2+U*^2)",
+      "individual_phase_slope": {
+        "raw_min": 0.060000378781479825,
+        "raw_max": 76.87992500205291,
+        "alias_index_min": 0,
+        "alias_index_max": 12,
+        "distinct_alias_indices": 13,
+        "prepared_mode_mass_by_threshold": {
+          "0.01": {
+            "resonant_gap_count": 15,
+            "prepared_mass_on_left_mode": 0.004538919729813746
+          },
+          "0.03": {
+            "resonant_gap_count": 38,
+            "prepared_mass_on_left_mode": 0.010146719354780944
+          },
+          "0.1": {
+            "resonant_gap_count": 133,
+            "prepared_mass_on_left_mode": 0.03480291999560223
+          }
+        }
+      },
+      "fixed_lag_increment_aliases": {
+        "definition": "wrap(alpha[j+h]-alpha[j]); this is the discrete derivative of the lag-h phase in j",
+        "thresholds": {
+          "0.01": {
+            "fixed_lag_resonance": {
+              "pairs": 22920,
+              "weight_l1": 0.03710269237938706,
+              "signed_real": 0.0002513405842907504,
+              "signed_imag": -0.000422637121634293,
+              "sum_lag_abs": 0.01749306110768226
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 105,
+                "weight_l1": 0.0002076386984907435,
+                "signed_real": 4.8174584672657865e-06,
+                "signed_imag": 9.710978413022957e-06,
+                "sum_lag_abs": 0.00020763819977639107
+              },
+              "left_only": {
+                "pairs": 24603,
+                "weight_l1": 0.04239288176764853,
+                "signed_real": 8.122149312936585e-05,
+                "signed_imag": -0.000538238972101285,
+                "sum_lag_abs": 0.019691623652427635
+              },
+              "right_only": {
+                "pairs": 32712,
+                "weight_l1": 0.060389197339421385,
+                "signed_real": -0.00020350340333063368,
+                "signed_imag": -2.6080399060637492e-05,
+                "sum_lag_abs": 0.02567335348304652
+              },
+              "neither": {
+                "pairs": 7298110,
+                "weight_l1": 11.615391923165472,
+                "signed_real": 0.011695791291550389,
+                "signed_imag": -0.008863132120651934,
+                "sum_lag_abs": 0.3654574850362914
+              }
+            }
+          },
+          "0.03": {
+            "fixed_lag_resonance": {
+              "pairs": 69947,
+              "weight_l1": 0.11281438170808905,
+              "signed_real": -0.0005168018344433084,
+              "signed_imag": -0.001001762116797359,
+              "sum_lag_abs": 0.03252734628748708
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 703,
+                "weight_l1": 0.001186946127386005,
+                "signed_real": 1.271804487994968e-05,
+                "signed_imag": 2.6143699723855277e-05,
+                "sum_lag_abs": 0.0011174814333680325
+              },
+              "left_only": {
+                "pairs": 59216,
+                "weight_l1": 0.09903536066246799,
+                "signed_real": -0.0005953675447999345,
+                "signed_imag": 0.00024308864022822227,
+                "sum_lag_abs": 0.03111303724786243
+              },
+              "right_only": {
+                "pairs": 85108,
+                "weight_l1": 0.14319655293462158,
+                "signed_real": -0.00010803095443346382,
+                "signed_imag": -0.0006437494405292705,
+                "sum_lag_abs": 0.039313996961241014
+              },
+              "neither": {
+                "pairs": 7210503,
+                "weight_l1": 11.474962781246605,
+                "signed_real": 0.0122690072941699,
+                "signed_imag": -0.00904322341282366,
+                "sum_lag_abs": 0.36304120738445195
+              }
+            }
+          },
+          "0.1": {
+            "fixed_lag_resonance": {
+              "pairs": 233830,
+              "weight_l1": 0.3762223090250014,
+              "signed_real": 0.0004671087634966501,
+              "signed_imag": -0.0016679635754789845,
+              "sum_lag_abs": 0.06292305882083118
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 8778,
+                "weight_l1": 0.01575977402304623,
+                "signed_real": 0.00010475151261258187,
+                "signed_imag": -8.620624951939116e-05,
+                "sum_lag_abs": 0.01019500211207056
+              },
+              "left_only": {
+                "pairs": 227383,
+                "weight_l1": 0.36980945056515313,
+                "signed_real": -0.0007416759088258335,
+                "signed_imag": -0.0009010163927003988,
+                "sum_lag_abs": 0.06624116153971246
+              },
+              "right_only": {
+                "pairs": 265116,
+                "weight_l1": 0.43665018064558025,
+                "signed_real": -3.824723433738328e-05,
+                "signed_imag": -0.001665217249163779,
+                "sum_lag_abs": 0.06966700316301638
+              },
+              "neither": {
+                "pairs": 6854253,
+                "weight_l1": 10.89616223573726,
+                "signed_real": 0.01225349847036708,
+                "signed_imag": -0.006765300622017295,
+                "sum_lag_abs": 0.3544484282311616
+              }
+            }
+          }
+        },
+        "lag_fraction_bins": [
+          {
+            "lag_fraction": [
+              0.0,
+              0.125
+            ],
+            "lags": 479,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 5139,
+                "weight_l1": 0.006575492625351247,
+                "signed_real": 3.0156043203285852e-06,
+                "signed_imag": -0.00015684829901953958,
+                "sum_lag_abs": 0.0025641179692190577
+              },
+              "0.03": {
+                "pairs": 16125,
+                "weight_l1": 0.021085028808367785,
+                "signed_real": -0.00015005399022011785,
+                "signed_imag": -0.00025326996063423376,
+                "sum_lag_abs": 0.00485073053769228
+              },
+              "0.1": {
+                "pairs": 54483,
+                "weight_l1": 0.07022533739593063,
+                "signed_real": 0.0003459709952997348,
+                "signed_imag": -0.0004082456361932158,
+                "sum_lag_abs": 0.009302645032308625
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 30,
+                  "weight_l1": 8.000181328225537e-05,
+                  "signed_real": 9.79468804264913e-06,
+                  "signed_imag": 9.424539320605458e-06,
+                  "sum_lag_abs": 8.000131456790297e-05
+                },
+                "left_only": {
+                  "pairs": 6659,
+                  "weight_l1": 0.01221733209668614,
+                  "signed_real": -0.00013029463187460603,
+                  "signed_imag": -0.0003079909029095347,
+                  "sum_lag_abs": 0.00455016736334248
+                },
+                "right_only": {
+                  "pairs": 7155,
+                  "weight_l1": 0.010706224760570135,
+                  "signed_real": -4.2936043832605165e-05,
+                  "signed_imag": -0.00014506786947780757,
+                  "sum_lag_abs": 0.004124892619915167
+                },
+                "neither": {
+                  "pairs": 1708640,
+                  "weight_l1": 2.1717330845045972,
+                  "signed_real": 0.0007007387032585483,
+                  "signed_imag": 0.0014144982414531799,
+                  "sum_lag_abs": 0.051233696712583376
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 180,
+                  "weight_l1": 0.0002984866789190177,
+                  "signed_real": -9.717319633614187e-06,
+                  "signed_imag": -1.3482807316579692e-05,
+                  "sum_lag_abs": 0.00027482116577083886
+                },
+                "left_only": {
+                  "pairs": 16534,
+                  "weight_l1": 0.027644055619484787,
+                  "signed_real": -0.0002410027718976517,
+                  "signed_imag": -0.00031699879772911733,
+                  "sum_lag_abs": 0.006750397771449612
+                },
+                "right_only": {
+                  "pairs": 18022,
+                  "weight_l1": 0.024023208142266796,
+                  "signed_real": 2.3388023167834296e-05,
+                  "signed_imag": -0.00017883753502488472,
+                  "sum_lag_abs": 0.005575637600820015
+                },
+                "neither": {
+                  "pairs": 1687748,
+                  "weight_l1": 2.142770892734467,
+                  "signed_real": 0.0007646347839574179,
+                  "signed_imag": 0.0014801831484570255,
+                  "sum_lag_abs": 0.051000477298024094
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 2090,
+                  "weight_l1": 0.0033155667778147057,
+                  "signed_real": -0.00012685956624509275,
+                  "signed_imag": -0.00017758008613658662,
+                  "sum_lag_abs": 0.0018491867971703042
+                },
+                "left_only": {
+                  "pairs": 56667,
+                  "weight_l1": 0.08024233576523097,
+                  "signed_real": -0.0008761744986670616,
+                  "signed_imag": 3.1222037951154453e-05,
+                  "sum_lag_abs": 0.010880483975177128
+                },
+                "right_only": {
+                  "pairs": 59184,
+                  "weight_l1": 0.07679639282618417,
+                  "signed_real": 0.0004964767666500679,
+                  "signed_imag": -0.00031305460356142214,
+                  "sum_lag_abs": 0.010170234080057468
+                },
+                "neither": {
+                  "pairs": 1604543,
+                  "weight_l1": 2.0343823478059067,
+                  "signed_real": 0.0010438600138560712,
+                  "signed_imag": 0.0014302766601332986,
+                  "sum_lag_abs": 0.04982410181567315
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.125,
+              0.25
+            ],
+            "lags": 480,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 4747,
+                "weight_l1": 0.0067493991280271415,
+                "signed_real": 4.729055314550771e-05,
+                "signed_imag": -0.00015161134734224902,
+                "sum_lag_abs": 0.0029400303783460235
+              },
+              "0.03": {
+                "pairs": 14496,
+                "weight_l1": 0.020823874082519622,
+                "signed_real": -9.974200939995761e-05,
+                "signed_imag": -2.5935765583668538e-05,
+                "sum_lag_abs": 0.005308749792988098
+              },
+              "0.1": {
+                "pairs": 47972,
+                "weight_l1": 0.06859831857928744,
+                "signed_real": -0.0002308999808244324,
+                "signed_imag": 5.2199610040212904e-05,
+                "sum_lag_abs": 0.009980909464148525
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 15,
+                  "weight_l1": 1.9214491178044593e-05,
+                  "signed_real": -2.128613347147483e-06,
+                  "signed_imag": -1.034981594704567e-05,
+                  "sum_lag_abs": 1.9214491178044593e-05
+                },
+                "left_only": {
+                  "pairs": 5495,
+                  "weight_l1": 0.007652958022652719,
+                  "signed_real": -3.0874724073686496e-05,
+                  "signed_imag": -0.00016059517498398463,
+                  "sum_lag_abs": 0.00364394799075714
+                },
+                "right_only": {
+                  "pairs": 6773,
+                  "weight_l1": 0.010744996131496234,
+                  "signed_real": -0.0002021611490316804,
+                  "signed_imag": 0.0002376240263547305,
+                  "sum_lag_abs": 0.0038767172563147546
+                },
+                "neither": {
+                  "pairs": 1483637,
+                  "weight_l1": 2.119242728732367,
+                  "signed_real": 0.005050548999158711,
+                  "signed_imag": -0.0031381488040368635,
+                  "sum_lag_abs": 0.05684034575800379
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 152,
+                  "weight_l1": 0.00021424211455411659,
+                  "signed_real": 4.626477635620632e-06,
+                  "signed_imag": -1.4654742356402217e-05,
+                  "sum_lag_abs": 0.0001892835140841384
+                },
+                "left_only": {
+                  "pairs": 13688,
+                  "weight_l1": 0.019149584595971127,
+                  "signed_real": -0.0004556293567810465,
+                  "signed_imag": 0.0003823973672850814,
+                  "sum_lag_abs": 0.005276245465602761
+                },
+                "right_only": {
+                  "pairs": 17007,
+                  "weight_l1": 0.02227713723826887,
+                  "signed_real": -0.00018421289986336628,
+                  "signed_imag": 0.00012488808547065687,
+                  "sum_lag_abs": 0.005191385270687038
+                },
+                "neither": {
+                  "pairs": 1465073,
+                  "weight_l1": 2.0960189334289,
+                  "signed_real": 0.005450600291714987,
+                  "signed_imag": -0.003564100479012507,
+                  "sum_lag_abs": 0.056544357738592455
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 1796,
+                  "weight_l1": 0.0022706183024222347,
+                  "signed_real": 7.362620223145526e-05,
+                  "signed_imag": 0.00014653721243070424,
+                  "sum_lag_abs": 0.0014074496585007223
+                },
+                "left_only": {
+                  "pairs": 48451,
+                  "weight_l1": 0.06434336611093693,
+                  "signed_real": -0.0004504169143251825,
+                  "signed_imag": -0.00011613086850277706,
+                  "sum_lag_abs": 0.009165703657699574
+                },
+                "right_only": {
+                  "pairs": 53296,
+                  "weight_l1": 0.07148020625868783,
+                  "signed_real": 0.00011833453860673893,
+                  "signed_imag": -0.0002310236370660862,
+                  "sum_lag_abs": 0.009543873194636959
+                },
+                "neither": {
+                  "pairs": 1392377,
+                  "weight_l1": 1.9995657067056472,
+                  "signed_real": 0.005073840686193182,
+                  "signed_imag": -0.002870852475475007,
+                  "sum_lag_abs": 0.05604934330097798
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.25,
+              0.5
+            ],
+            "lags": 959,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 7162,
+                "weight_l1": 0.012926836846679416,
+                "signed_real": 0.00020497243661993272,
+                "signed_imag": -0.0001785153777021667,
+                "sum_lag_abs": 0.005943983880139246
+              },
+              "0.03": {
+                "pairs": 21485,
+                "weight_l1": 0.0387999095435924,
+                "signed_real": 0.00010319220518620937,
+                "signed_imag": -0.00047838589148526783,
+                "sum_lag_abs": 0.01086826052561961
+              },
+              "0.1": {
+                "pairs": 71728,
+                "weight_l1": 0.1295736759645735,
+                "signed_real": 0.001017412229682157,
+                "signed_imag": -0.0014079384733909702,
+                "sum_lag_abs": 0.020816246533570008
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 34,
+                  "weight_l1": 4.655285877401473e-05,
+                  "signed_real": -4.580050037546254e-07,
+                  "signed_imag": 6.659204209984524e-06,
+                  "sum_lag_abs": 4.655285877401473e-05
+                },
+                "left_only": {
+                  "pairs": 7575,
+                  "weight_l1": 0.012132608734285656,
+                  "signed_real": -0.0002103890243106761,
+                  "signed_imag": -0.0002473009342741593,
+                  "sum_lag_abs": 0.005288554039150831
+                },
+                "right_only": {
+                  "pairs": 9856,
+                  "weight_l1": 0.01946934113451523,
+                  "signed_real": -0.0002472454794858062,
+                  "signed_imag": -0.0002509601576900336,
+                  "sum_lag_abs": 0.007993241032281806
+                },
+                "neither": {
+                  "pairs": 2281258,
+                  "weight_l1": 4.096992689587364,
+                  "signed_real": 0.0011371538496309237,
+                  "signed_imag": -0.004303780874532634,
+                  "sum_lag_abs": 0.12159228342826592
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 238,
+                  "weight_l1": 0.00045523513354928704,
+                  "signed_real": -1.3187151764321018e-05,
+                  "signed_imag": 3.625450319769813e-05,
+                  "sum_lag_abs": 0.0004437349507441551
+                },
+                "left_only": {
+                  "pairs": 18885,
+                  "weight_l1": 0.03425644190990369,
+                  "signed_real": -0.00010380766880353593,
+                  "signed_imag": 8.980524853353537e-05,
+                  "sum_lag_abs": 0.01088401454666324
+                },
+                "right_only": {
+                  "pairs": 27030,
+                  "weight_l1": 0.05202286268174082,
+                  "signed_real": -0.0006598722060384159,
+                  "signed_imag": -0.00045337948337066604,
+                  "sum_lag_abs": 0.013139387505638185
+                },
+                "neither": {
+                  "pairs": 2252570,
+                  "weight_l1": 4.041906652589746,
+                  "signed_real": 0.0014559283674369576,
+                  "signed_imag": -0.0044680630306474095,
+                  "sum_lag_abs": 0.12028381135579864
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 2903,
+                  "weight_l1": 0.006168138898201797,
+                  "signed_real": -5.364483913460772e-05,
+                  "signed_imag": -0.00015870251463685208,
+                  "sum_lag_abs": 0.003887973819211277
+                },
+                "left_only": {
+                  "pairs": 72378,
+                  "weight_l1": 0.134606866430779,
+                  "signed_real": 0.0009205353571953489,
+                  "signed_imag": -0.0008727613968990581,
+                  "sum_lag_abs": 0.02250139757977813
+                },
+                "right_only": {
+                  "pairs": 83894,
+                  "weight_l1": 0.16261698284559156,
+                  "signed_real": -0.0012760924190272323,
+                  "signed_imag": -0.00026946996782819393,
+                  "sum_lag_abs": 0.02402309969295609
+                },
+                "neither": {
+                  "pairs": 2139548,
+                  "weight_l1": 3.825249204140367,
+                  "signed_real": 0.001088263241797183,
+                  "signed_imag": -0.003494448882922736,
+                  "sum_lag_abs": 0.1180860284647972
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.5,
+              0.75
+            ],
+            "lags": 959,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 4558,
+                "weight_l1": 0.009393933431807451,
+                "signed_real": 1.5935610351103253e-06,
+                "signed_imag": 5.642063413729587e-05,
+                "sum_lag_abs": 0.005264216138256731
+              },
+              "0.03": {
+                "pairs": 13860,
+                "weight_l1": 0.028012672622336685,
+                "signed_real": -0.00020885056797730476,
+                "signed_imag": -0.000254193553055605,
+                "sum_lag_abs": 0.009815309974009182
+              },
+              "0.1": {
+                "pairs": 46369,
+                "weight_l1": 0.09388470689896261,
+                "signed_real": -0.00044374754735199005,
+                "signed_imag": -0.00010041341306519352,
+                "sum_lag_abs": 0.019077803331977297
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 25,
+                  "weight_l1": 6.186834178726968e-05,
+                  "signed_real": -2.3917620394766036e-06,
+                  "signed_imag": 3.9773670469359345e-06,
+                  "sum_lag_abs": 6.186834178726968e-05
+                },
+                "left_only": {
+                  "pairs": 4465,
+                  "weight_l1": 0.009850240077932141,
+                  "signed_real": 0.0004494845741027171,
+                  "signed_imag": 0.0001511038291047749,
+                  "sum_lag_abs": 0.005669220693891905
+                },
+                "right_only": {
+                  "pairs": 6750,
+                  "weight_l1": 0.015992885889938455,
+                  "signed_real": 0.0001699157764484399,
+                  "signed_imag": 6.162147631962103e-05,
+                  "sum_lag_abs": 0.007256114830059231
+                },
+                "neither": {
+                  "pairs": 1367802,
+                  "weight_l1": 2.702070213482065,
+                  "signed_real": 0.003623643189248061,
+                  "signed_imag": -0.00458733626306344,
+                  "sum_lag_abs": 0.10612786252545886
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 124,
+                  "weight_l1": 0.00021897773560627153,
+                  "signed_real": 3.099628136446562e-05,
+                  "signed_imag": 1.8028445028368216e-05,
+                  "sum_lag_abs": 0.0002096373380115877
+                },
+                "left_only": {
+                  "pairs": 9042,
+                  "weight_l1": 0.017057229269317707,
+                  "signed_real": 0.00023342724467346085,
+                  "signed_imag": 5.4943025806390796e-05,
+                  "sum_lag_abs": 0.007398064899907685
+                },
+                "right_only": {
+                  "pairs": 17185,
+                  "weight_l1": 0.03907074242640408,
+                  "signed_real": 0.0005637184115408683,
+                  "signed_imag": -0.00021563258348350112,
+                  "sum_lag_abs": 0.01247148085044279
+                },
+                "neither": {
+                  "pairs": 1352691,
+                  "weight_l1": 2.671628258360393,
+                  "signed_real": 0.003412509840180946,
+                  "signed_imag": -0.004227972477943356,
+                  "sum_lag_abs": 0.10571919411961307
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 1621,
+                  "weight_l1": 0.003489149262909524,
+                  "signed_real": 9.896491385036269e-05,
+                  "signed_imag": 1.0647205428454716e-06,
+                  "sum_lag_abs": 0.00258640255435559
+                },
+                "left_only": {
+                  "pairs": 39102,
+                  "weight_l1": 0.07705422492587687,
+                  "signed_real": -0.0004634923261871974,
+                  "signed_imag": 0.00018617375919952048,
+                  "sum_lag_abs": 0.01750348052343431
+                },
+                "right_only": {
+                  "pairs": 50608,
+                  "weight_l1": 0.10649782386923147,
+                  "signed_real": 0.00023140907533967796,
+                  "signed_imag": -0.0008324262810938966,
+                  "sum_lag_abs": 0.020698886634597315
+                },
+                "neither": {
+                  "pairs": 1287711,
+                  "weight_l1": 2.540934009733701,
+                  "signed_real": 0.004373770114756903,
+                  "signed_imag": -0.003725445789240574,
+                  "sum_lag_abs": 0.1022707447013383
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.75,
+              1.0
+            ],
+            "lags": 959,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 1314,
+                "weight_l1": 0.0014570303475218117,
+                "signed_real": -5.531570830128733e-06,
+                "signed_imag": 7.917268292366856e-06,
+                "sum_lag_abs": 0.0007807127417211538
+              },
+              "0.03": {
+                "pairs": 3981,
+                "weight_l1": 0.004092896651272184,
+                "signed_real": -0.00016134747203213788,
+                "signed_imag": 1.002305396141405e-05,
+                "sum_lag_abs": 0.0016842954571778819
+              },
+              "0.1": {
+                "pairs": 13278,
+                "weight_l1": 0.013940270186247225,
+                "signed_real": -0.0002216269333088203,
+                "signed_imag": 0.00019643433713018783,
+                "sum_lag_abs": 0.0037454544588267917
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 1,
+                  "weight_l1": 1.1934691591558477e-09,
+                  "signed_real": 1.150814995366675e-09,
+                  "signed_imag": -3.1621745729065265e-10,
+                  "sum_lag_abs": 1.1934691591558477e-09
+                },
+                "left_only": {
+                  "pairs": 409,
+                  "weight_l1": 0.0005397428360919001,
+                  "signed_real": 3.2952992856174488e-06,
+                  "signed_imag": 2.6544210961620306e-05,
+                  "sum_lag_abs": 0.000539733565285279
+                },
+                "right_only": {
+                  "pairs": 2178,
+                  "weight_l1": 0.0034757494229012463,
+                  "signed_real": 0.00011892349257101826,
+                  "signed_imag": 7.070212543285169e-05,
+                  "sum_lag_abs": 0.0024223877444756498
+                },
+                "neither": {
+                  "pairs": 456773,
+                  "weight_l1": 0.5253532068591,
+                  "signed_real": 0.0011837065502541969,
+                  "signed_imag": 0.0017516355795277867,
+                  "sum_lag_abs": 0.029663296611979473
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 9,
+                  "weight_l1": 4.464757312626842e-09,
+                  "signed_real": -2.4272220138430836e-10,
+                  "signed_imag": -1.6988292292091104e-09,
+                  "sum_lag_abs": 4.464757312626842e-09
+                },
+                "left_only": {
+                  "pairs": 1067,
+                  "weight_l1": 0.0009280492677905696,
+                  "signed_real": -2.835499199116285e-05,
+                  "signed_imag": 3.294179633233221e-05,
+                  "sum_lag_abs": 0.0008043145642390769
+                },
+                "right_only": {
+                  "pairs": 5864,
+                  "weight_l1": 0.0058026024459407795,
+                  "signed_real": 0.00014894771675961696,
+                  "signed_imag": 7.921207587912528e-05,
+                  "sum_lag_abs": 0.002936105733652952
+                },
+                "neither": {
+                  "pairs": 452421,
+                  "weight_l1": 0.5226380441330739,
+                  "signed_real": 0.0011853340108795756,
+                  "signed_imag": 0.001736729426322573,
+                  "sum_lag_abs": 0.029493366872423966
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 368,
+                  "weight_l1": 0.0005163007816979416,
+                  "signed_real": 0.00011266480191046441,
+                  "signed_imag": 0.0001024744182804986,
+                  "sum_lag_abs": 0.0004639892828326818
+                },
+                "left_only": {
+                  "pairs": 10785,
+                  "weight_l1": 0.01356265733232891,
+                  "signed_real": 0.00012787247315826394,
+                  "signed_imag": -0.00012951992444923583,
+                  "sum_lag_abs": 0.006190095803623406
+                },
+                "right_only": {
+                  "pairs": 18134,
+                  "weight_l1": 0.019258774845886745,
+                  "signed_real": 0.00039162480409336733,
+                  "signed_imag": -1.9242759614181285e-05,
+                  "sum_lag_abs": 0.005230909560768912
+                },
+                "neither": {
+                  "pairs": 430074,
+                  "weight_l1": 0.4960309673516495,
+                  "signed_real": 0.0006737644137637352,
+                  "signed_imag": 0.0018951698654877222,
+                  "sum_lag_abs": 0.028218209948374793
+                }
+              }
+            }
+          }
+        ],
+        "unclassified_terminal_pair_per_lag": {
+          "pairs": 3836,
+          "weight_l1": 0.01812301416748263,
+          "signed_real": 0.000204252841093767,
+          "signed_imag": 0.0007838277704556717
+        }
+      },
+      "q_real_direct": 0.023642224388823692,
+      "q_real_from_lags": 0.023642224388700627,
+      "q_reconstruction_error": 1.2306475283274665e-13,
+      "scope": "finite-spin float64/complex128 census; no interval or asymptotic claim"
+    },
+    {
+      "S": 512,
+      "dimension": 5117,
+      "profile_core_radius": 24,
+      "profile_tail_bound": 5.707491014309905e-12,
+      "profile_construction": "Laurent-series expansion of N_inf^2=6I-4(U+U*)+(U^2+U*^2)",
+      "individual_phase_slope": {
+        "raw_min": 0.06000021320430941,
+        "raw_max": 102.47994375112467,
+        "alias_index_min": 0,
+        "alias_index_max": 16,
+        "distinct_alias_indices": 17,
+        "prepared_mode_mass_by_threshold": {
+          "0.01": {
+            "resonant_gap_count": 15,
+            "prepared_mass_on_left_mode": 0.004315355932020848
+          },
+          "0.03": {
+            "resonant_gap_count": 42,
+            "prepared_mass_on_left_mode": 0.008684244290667697
+          },
+          "0.1": {
+            "resonant_gap_count": 155,
+            "prepared_mass_on_left_mode": 0.029748742331811108
+          }
+        }
+      },
+      "fixed_lag_increment_aliases": {
+        "definition": "wrap(alpha[j+h]-alpha[j]); this is the discrete derivative of the lag-h phase in j",
+        "thresholds": {
+          "0.01": {
+            "fixed_lag_resonance": {
+              "pairs": 41156,
+              "weight_l1": 0.04243035731211809,
+              "signed_real": -0.00013577286040676367,
+              "signed_imag": -0.00039947312929709925,
+              "sum_lag_abs": 0.017704069057815828
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 105,
+                "weight_l1": 0.00020055455693328842,
+                "signed_real": 4.056907129855355e-06,
+                "signed_imag": -3.980638376867714e-05,
+                "sum_lag_abs": 0.00020055352355719908
+              },
+              "left_only": {
+                "pairs": 33866,
+                "weight_l1": 0.04523984675834424,
+                "signed_real": 1.34034172293709e-05,
+                "signed_imag": 0.0004825677801337564,
+                "sum_lag_abs": 0.020695769930409034
+              },
+              "right_only": {
+                "pairs": 42649,
+                "weight_l1": 0.059967010780674936,
+                "signed_real": -9.557864926545052e-05,
+                "signed_imag": 1.3323912109448755e-05,
+                "sum_lag_abs": 0.025273803537559824
+              },
+              "neither": {
+                "pairs": 13007550,
+                "weight_l1": 13.41419195875277,
+                "signed_real": 0.006269449695496518,
+                "signed_imag": -0.002370179798372064,
+                "sum_lag_abs": 0.3659737805184489
+              }
+            }
+          },
+          "0.03": {
+            "fixed_lag_resonance": {
+              "pairs": 124267,
+              "weight_l1": 0.12880574639017744,
+              "signed_real": -0.00024652018396969545,
+              "signed_imag": 2.2339806697944332e-05,
+              "sum_lag_abs": 0.03339925774302738
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 861,
+                "weight_l1": 0.0009262078989444203,
+                "signed_real": -9.734138756319569e-06,
+                "signed_imag": -5.444827051762991e-05,
+                "sum_lag_abs": 0.0008975326487009827
+              },
+              "left_only": {
+                "pairs": 100210,
+                "weight_l1": 0.10899828048532205,
+                "signed_real": 1.8142565676830264e-05,
+                "signed_imag": 0.0003549091211970709,
+                "sum_lag_abs": 0.032699176381976724
+              },
+              "right_only": {
+                "pairs": 112898,
+                "weight_l1": 0.12044374424400323,
+                "signed_real": -0.00029028110638277876,
+                "signed_imag": 0.0005079069153390444,
+                "sum_lag_abs": 0.03392584730515806
+              },
+              "neither": {
+                "pairs": 12870201,
+                "weight_l1": 13.289231138220416,
+                "signed_real": 0.006473204050052588,
+                "signed_imag": -0.0027224622559160034,
+                "sum_lag_abs": 0.36490277947605815
+              }
+            }
+          },
+          "0.1": {
+            "fixed_lag_resonance": {
+              "pairs": 414934,
+              "weight_l1": 0.4282071583917982,
+              "signed_real": -0.0005839204606132031,
+              "signed_imag": -0.0004574756736992383,
+              "sum_lag_abs": 0.0643293449715086
+            },
+            "individual_slope_classes": {
+              "both": {
+                "pairs": 11935,
+                "weight_l1": 0.012094338767230732,
+                "signed_real": 0.00016409625840526867,
+                "signed_imag": -3.943244901115964e-05,
+                "sum_lag_abs": 0.008151722637934532
+              },
+              "left_only": {
+                "pairs": 376160,
+                "weight_l1": 0.3754186299154947,
+                "signed_real": 0.00035581307632547693,
+                "signed_imag": 0.0006449500040710615,
+                "sum_lag_abs": 0.060496821934911515
+              },
+              "right_only": {
+                "pairs": 392795,
+                "weight_l1": 0.4072032231557571,
+                "signed_real": -0.0002601786314378209,
+                "signed_imag": 0.0009967059675190372,
+                "sum_lag_abs": 0.06310320892737617
+              },
+              "neither": {
+                "pairs": 12303280,
+                "weight_l1": 12.724883179010185,
+                "signed_real": 0.0059316006672973905,
+                "signed_imag": -0.003516318012476463,
+                "sum_lag_abs": 0.3570414083240618
+              }
+            }
+          }
+        },
+        "lag_fraction_bins": [
+          {
+            "lag_fraction": [
+              0.0,
+              0.125
+            ],
+            "lags": 639,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 9547,
+                "weight_l1": 0.007778090775202882,
+                "signed_real": 8.496921252203199e-05,
+                "signed_imag": -8.060951641878458e-05,
+                "sum_lag_abs": 0.0025520550898712998
+              },
+              "0.03": {
+                "pairs": 29582,
+                "weight_l1": 0.02445120356696642,
+                "signed_real": 0.00026940810744478924,
+                "signed_imag": -0.00012156237419674184,
+                "sum_lag_abs": 0.004846044570365661
+              },
+              "0.1": {
+                "pairs": 98838,
+                "weight_l1": 0.080570476359001,
+                "signed_real": 3.42584126129233e-05,
+                "signed_imag": 0.00025356748664087273,
+                "sum_lag_abs": 0.009143935920632713
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 24,
+                  "weight_l1": 3.767325313588484e-05,
+                  "signed_real": -1.098372800867139e-06,
+                  "signed_imag": -2.247901927611562e-06,
+                  "sum_lag_abs": 3.767325313588485e-05
+                },
+                "left_only": {
+                  "pairs": 8792,
+                  "weight_l1": 0.009863258825861004,
+                  "signed_real": -0.00014129372127678913,
+                  "signed_imag": 9.28921008121291e-05,
+                  "sum_lag_abs": 0.0034477364942959196
+                },
+                "right_only": {
+                  "pairs": 9192,
+                  "weight_l1": 0.008775652198331504,
+                  "signed_real": -3.464763941852832e-05,
+                  "signed_imag": -1.546475717252372e-05,
+                  "sum_lag_abs": 0.0032509679043541766
+                },
+                "neither": {
+                  "pairs": 3046636,
+                  "weight_l1": 2.5209609879050676,
+                  "signed_real": 0.002100622943401674,
+                  "signed_imag": 0.0008338875185238045,
+                  "sum_lag_abs": 0.051446051065852164
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 194,
+                  "weight_l1": 0.00017438648478913012,
+                  "signed_real": -1.9585832667978155e-06,
+                  "signed_imag": -1.5001006360014751e-06,
+                  "sum_lag_abs": 0.00016539889824422212
+                },
+                "left_only": {
+                  "pairs": 24563,
+                  "weight_l1": 0.021824922723443354,
+                  "signed_real": -8.430851166591918e-05,
+                  "signed_imag": 0.00014288987031133715,
+                  "sum_lag_abs": 0.0046610565068924935
+                },
+                "right_only": {
+                  "pairs": 24646,
+                  "weight_l1": 0.019926182025361013,
+                  "signed_real": -0.00023806624681825192,
+                  "signed_imag": 0.00017402872814869727,
+                  "sum_lag_abs": 0.004455199290339691
+                },
+                "neither": {
+                  "pairs": 3015241,
+                  "weight_l1": 2.4977120809488076,
+                  "signed_real": 0.002247916551656457,
+                  "signed_imag": 0.0005936484624117643,
+                  "sum_lag_abs": 0.05139874198034529
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 2750,
+                  "weight_l1": 0.002230581870927447,
+                  "signed_real": 4.91369988046925e-05,
+                  "signed_imag": 3.823875387219842e-05,
+                  "sum_lag_abs": 0.0013210821864487415
+                },
+                "left_only": {
+                  "pairs": 88605,
+                  "weight_l1": 0.07171881065145742,
+                  "signed_real": 0.0003214570376478158,
+                  "signed_imag": 0.0003068614067280718,
+                  "sum_lag_abs": 0.00837916057559203
+                },
+                "right_only": {
+                  "pairs": 89993,
+                  "weight_l1": 0.07024229488886456,
+                  "signed_real": -0.0005348962314830857,
+                  "signed_imag": 0.0006476167903360088,
+                  "sum_lag_abs": 0.00881599828628874
+                },
+                "neither": {
+                  "pairs": 2883296,
+                  "weight_l1": 2.39544588477115,
+                  "signed_real": 0.002087885404936064,
+                  "signed_imag": -8.364999070048108e-05,
+                  "sum_lag_abs": 0.05027542884605205
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.125,
+              0.25
+            ],
+            "lags": 640,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 8294,
+                "weight_l1": 0.007897054141588096,
+                "signed_real": 5.048898102077806e-05,
+                "signed_imag": -6.2157352773208e-05,
+                "sum_lag_abs": 0.0030118777040401717
+              },
+              "0.03": {
+                "pairs": 24747,
+                "weight_l1": 0.023439201111649443,
+                "signed_real": 0.00018078481718865534,
+                "signed_imag": 0.0003107746609192461,
+                "sum_lag_abs": 0.0053628422012240605
+              },
+              "0.1": {
+                "pairs": 82447,
+                "weight_l1": 0.07787659685939166,
+                "signed_real": 0.00019887983145734875,
+                "signed_imag": 0.00037886415153309285,
+                "sum_lag_abs": 0.010212433997463384
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 15,
+                  "weight_l1": 4.1457188626089086e-05,
+                  "signed_real": 3.6908170187463605e-06,
+                  "signed_imag": -1.835637229551591e-05,
+                  "sum_lag_abs": 4.1457188626089086e-05
+                },
+                "left_only": {
+                  "pairs": 7622,
+                  "weight_l1": 0.011393382075115229,
+                  "signed_real": -5.616986285034202e-05,
+                  "signed_imag": 4.7708878784352116e-05,
+                  "sum_lag_abs": 0.004432564265094738
+                },
+                "right_only": {
+                  "pairs": 8305,
+                  "weight_l1": 0.011130671831274643,
+                  "signed_real": -0.0001663299793754423,
+                  "signed_imag": -3.3647893202552304e-05,
+                  "sum_lag_abs": 0.004029103445235219
+                },
+                "neither": {
+                  "pairs": 2644218,
+                  "weight_l1": 2.4438363204757616,
+                  "signed_real": -0.001716729597127869,
+                  "signed_imag": -0.0024110247245150494,
+                  "sum_lag_abs": 0.05589070142872377
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 161,
+                  "weight_l1": 0.00017066453309003084,
+                  "signed_real": 1.75191886988793e-06,
+                  "signed_imag": -2.2591452615647267e-05,
+                  "sum_lag_abs": 0.00016540639844488683
+                },
+                "left_only": {
+                  "pairs": 21505,
+                  "weight_l1": 0.023029440955098866,
+                  "signed_real": -4.362434453665019e-05,
+                  "signed_imag": 0.0001322504365572625,
+                  "sum_lag_abs": 0.005928657904929951
+                },
+                "right_only": {
+                  "pairs": 21249,
+                  "weight_l1": 0.01964070416125026,
+                  "signed_real": -5.925272636688127e-05,
+                  "signed_imag": -2.151495047223212e-05,
+                  "sum_lag_abs": 0.004932208953135729
+                },
+                "neither": {
+                  "pairs": 2617245,
+                  "weight_l1": 2.4235610219213366,
+                  "signed_real": -0.0018344134703012628,
+                  "signed_imag": -0.0025034641446981475,
+                  "sum_lag_abs": 0.05584827464445994
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 2334,
+                  "weight_l1": 0.0021157129603028625,
+                  "signed_real": -3.483881992803976e-05,
+                  "signed_imag": -7.510734607502176e-05,
+                  "sum_lag_abs": 0.0013479291261086262
+                },
+                "left_only": {
+                  "pairs": 77107,
+                  "weight_l1": 0.07019420822786612,
+                  "signed_real": -0.0002486482080149231,
+                  "signed_imag": -6.536191776378785e-05,
+                  "sum_lag_abs": 0.009680417555188529
+                },
+                "right_only": {
+                  "pairs": 77662,
+                  "weight_l1": 0.06922594675877992,
+                  "signed_real": 0.0004512285343807478,
+                  "signed_imag": -5.7333573990735484e-05,
+                  "sum_lag_abs": 0.009274042192720242
+                },
+                "neither": {
+                  "pairs": 2503057,
+                  "weight_l1": 2.324865963623827,
+                  "signed_real": -0.0021032801287726934,
+                  "signed_imag": -0.0022175172733992186,
+                  "sum_lag_abs": 0.05529093547313129
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.25,
+              0.5
+            ],
+            "lags": 1279,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 12857,
+                "weight_l1": 0.014841780670515016,
+                "signed_real": -0.0001198875582831397,
+                "signed_imag": -0.00018216126054650252,
+                "sum_lag_abs": 0.005994110600704936
+              },
+              "0.03": {
+                "pairs": 38492,
+                "weight_l1": 0.04476806147418568,
+                "signed_real": -0.00030669188909807917,
+                "signed_imag": -0.00018492549313352719,
+                "sum_lag_abs": 0.011337154799495056
+              },
+              "0.1": {
+                "pairs": 128666,
+                "weight_l1": 0.1495088174540168,
+                "signed_real": -0.0007258051963743704,
+                "signed_imag": -0.00016522426580709384,
+                "sum_lag_abs": 0.021362853243233976
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 41,
+                  "weight_l1": 7.008944709710362e-05,
+                  "signed_real": 5.825724756439553e-06,
+                  "signed_imag": -1.7051822814124882e-05,
+                  "sum_lag_abs": 7.008841372101427e-05
+                },
+                "left_only": {
+                  "pairs": 10561,
+                  "weight_l1": 0.014004790820189435,
+                  "signed_real": 0.0002148280387682011,
+                  "signed_imag": 0.00018067136425682832,
+                  "sum_lag_abs": 0.006422032375844451
+                },
+                "right_only": {
+                  "pairs": 13870,
+                  "weight_l1": 0.02179898197653472,
+                  "signed_real": -0.00012897075796031664,
+                  "signed_imag": -0.00010424322888851337,
+                  "sum_lag_abs": 0.00834552658538516
+                },
+                "neither": {
+                  "pairs": 4064491,
+                  "weight_l1": 4.730000219295588,
+                  "signed_real": 0.003972817070845107,
+                  "signed_imag": 0.0033705917792337986,
+                  "sum_lag_abs": 0.125175048541884
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 286,
+                  "weight_l1": 0.00034287202836173454,
+                  "signed_real": 1.2965929766428636e-05,
+                  "signed_imag": -4.0031315200854204e-05,
+                  "sum_lag_abs": 0.0003321180140391599
+                },
+                "left_only": {
+                  "pairs": 30623,
+                  "weight_l1": 0.037548077859482915,
+                  "signed_real": 0.00014672766696449276,
+                  "signed_imag": 4.533646866768903e-05,
+                  "sum_lag_abs": 0.011103471392685771
+                },
+                "right_only": {
+                  "pairs": 37144,
+                  "weight_l1": 0.04713557280642187,
+                  "signed_real": -0.00038482460358799076,
+                  "signed_imag": 0.00018097672141202735,
+                  "sum_lag_abs": 0.012201678282996084
+                },
+                "neither": {
+                  "pairs": 4020910,
+                  "weight_l1": 4.6808475588451355,
+                  "signed_real": 0.004289631083266498,
+                  "signed_imag": 0.0032436862169091265,
+                  "sum_lag_abs": 0.12421376289788441
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 3693,
+                  "weight_l1": 0.004358693346669135,
+                  "signed_real": 4.382766782677106e-05,
+                  "signed_imag": -2.5649682068260197e-05,
+                  "sum_lag_abs": 0.002948850484510551
+                },
+                "left_only": {
+                  "pairs": 116594,
+                  "weight_l1": 0.12975713858043467,
+                  "signed_real": 0.0004857425696156774,
+                  "signed_imag": 0.0006501503123591204,
+                  "sum_lag_abs": 0.019801442620911852
+                },
+                "right_only": {
+                  "pairs": 122972,
+                  "weight_l1": 0.15106585372939316,
+                  "signed_real": -0.00043120245547794995,
+                  "signed_imag": 0.00021362570571423808,
+                  "sum_lag_abs": 0.022007944477850917
+                },
+                "neither": {
+                  "pairs": 3845704,
+                  "weight_l1": 4.480692395882907,
+                  "signed_real": 0.003966132294444932,
+                  "signed_imag": 0.002591841755782892,
+                  "sum_lag_abs": 0.12109776016236173
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.5,
+              0.75
+            ],
+            "lags": 1279,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 8047,
+                "weight_l1": 0.010331190846657632,
+                "signed_real": -0.000226582113228614,
+                "signed_imag": -0.00016963145766613638,
+                "sum_lag_abs": 0.005304530020789431
+              },
+              "0.03": {
+                "pairs": 24186,
+                "weight_l1": 0.031284385301949436,
+                "signed_real": -0.0005988574719886477,
+                "signed_imag": -0.00011840525025646952,
+                "sum_lag_abs": 0.009786929903787829
+              },
+              "0.1": {
+                "pairs": 80783,
+                "weight_l1": 0.10445687193992736,
+                "signed_real": -0.00022280807907874067,
+                "signed_imag": -0.0005227389995223253,
+                "sum_lag_abs": 0.019027505458299492
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 20,
+                  "weight_l1": 3.8385956248297444e-05,
+                  "signed_real": -1.5224350445171819e-05,
+                  "signed_imag": -8.43945583637785e-06,
+                  "sum_lag_abs": 3.8385956248297444e-05
+                },
+                "left_only": {
+                  "pairs": 5249,
+                  "weight_l1": 0.00892248357566181,
+                  "signed_real": -4.9586793965595014e-05,
+                  "signed_imag": 6.107678557237585e-05,
+                  "sum_lag_abs": 0.005486723104676717
+                },
+                "right_only": {
+                  "pairs": 8559,
+                  "weight_l1": 0.015575442423402641,
+                  "signed_real": 0.00022823979929204003,
+                  "signed_imag": 0.00020898762006166529,
+                  "sum_lag_abs": 0.007455018856859669
+                },
+                "neither": {
+                  "pairs": 2439294,
+                  "weight_l1": 3.1191321335359103,
+                  "signed_real": 0.0018721180868663295,
+                  "signed_imag": -0.0020634504015075465,
+                  "sum_lag_abs": 0.10433748906411719
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 159,
+                  "weight_l1": 0.00019691260628616853,
+                  "signed_real": -2.2043174661533194e-05,
+                  "signed_imag": 9.553167526936201e-06,
+                  "sum_lag_abs": 0.00019609453514465557
+                },
+                "left_only": {
+                  "pairs": 16121,
+                  "weight_l1": 0.020752421340127412,
+                  "signed_real": 1.7664266708806074e-05,
+                  "signed_imag": 8.902296323233073e-05,
+                  "sum_lag_abs": 0.0082468252932213
+                },
+                "right_only": {
+                  "pairs": 22636,
+                  "weight_l1": 0.02966548239381127,
+                  "signed_real": 0.00029852098676721756,
+                  "signed_imag": 0.0002076885769511501,
+                  "sum_lag_abs": 0.009740345632506794
+                },
+                "neither": {
+                  "pairs": 2414206,
+                  "weight_l1": 3.0930536291510013,
+                  "signed_real": 0.0017414046629331075,
+                  "signed_imag": -0.0021080901594203024,
+                  "sum_lag_abs": 0.10409566890772783
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 2382,
+                  "weight_l1": 0.002851264364392322,
+                  "signed_real": -4.172548984050087e-05,
+                  "signed_imag": -1.6451422522154914e-05,
+                  "sum_lag_abs": 0.0020869723771616473
+                },
+                "left_only": {
+                  "pairs": 69163,
+                  "weight_l1": 0.08377880410715999,
+                  "signed_real": -0.0001322346853932925,
+                  "signed_imag": 0.00025275077535857107,
+                  "sum_lag_abs": 0.016463281906362155
+                },
+                "right_only": {
+                  "pairs": 75538,
+                  "weight_l1": 0.09983812178970905,
+                  "signed_real": 5.623750774163462e-06,
+                  "signed_imag": 0.0004030640925462312,
+                  "sum_lag_abs": 0.01838585872638713
+                },
+                "neither": {
+                  "pairs": 2306039,
+                  "weight_l1": 2.9572002552299583,
+                  "signed_real": 0.0022038831662072322,
+                  "signed_imag": -0.002441188897092531,
+                  "sum_lag_abs": 0.10213311296509664
+                }
+              }
+            }
+          },
+          {
+            "lag_fraction": [
+              0.75,
+              1.0
+            ],
+            "lags": 1279,
+            "fixed_lag_resonance": {
+              "0.01": {
+                "pairs": 2411,
+                "weight_l1": 0.001582240878154494,
+                "signed_real": 7.52386175621802e-05,
+                "signed_imag": 9.508645810753265e-05,
+                "sum_lag_abs": 0.000841495642409958
+              },
+              "0.03": {
+                "pairs": 7260,
+                "weight_l1": 0.0048628949354265726,
+                "signed_real": 0.00020883625248358783,
+                "signed_imag": 0.00013645826336543713,
+                "sum_lag_abs": 0.0020662862681549263
+              },
+              "0.1": {
+                "pairs": 24200,
+                "weight_l1": 0.01579439577946046,
+                "signed_real": 0.00013155457076963496,
+                "signed_imag": -0.0004019440465437841,
+                "sum_lag_abs": 0.004582616351878726
+              }
+            },
+            "individual_slope_classes": {
+              "0.01": {
+                "both": {
+                  "pairs": 5,
+                  "weight_l1": 1.2948711825913396e-05,
+                  "signed_real": 1.0863088600708399e-05,
+                  "signed_imag": 6.289169104953062e-06,
+                  "sum_lag_abs": 1.2948711825913394e-05
+                },
+                "left_only": {
+                  "pairs": 1642,
+                  "weight_l1": 0.0010559314615166849,
+                  "signed_real": 4.562575655389628e-05,
+                  "signed_imag": 0.00010021865070807292,
+                  "sum_lag_abs": 0.0009067136904972509
+                },
+                "right_only": {
+                  "pairs": 2723,
+                  "weight_l1": 0.0026862623511313493,
+                  "signed_real": 6.1299281967956966e-06,
+                  "signed_imag": -4.230782868862702e-05,
+                  "sum_lag_abs": 0.002193186745725588
+                },
+                "neither": {
+                  "pairs": 812911,
+                  "weight_l1": 0.6002622975403898,
+                  "signed_real": 4.0621191511296e-05,
+                  "signed_imag": -0.0021001839701070687,
+                  "sum_lag_abs": 0.029124490417872243
+                }
+              },
+              "0.03": {
+                "both": {
+                  "pairs": 61,
+                  "weight_l1": 4.1372246417355484e-05,
+                  "signed_real": -4.502294643051282e-07,
+                  "signed_imag": 1.2143040793672385e-07,
+                  "sum_lag_abs": 3.8514802828058045e-05
+                },
+                "left_only": {
+                  "pairs": 7398,
+                  "weight_l1": 0.0058434176071695074,
+                  "signed_real": -1.831651179389887e-05,
+                  "signed_imag": -5.459061757154769e-05,
+                  "sum_lag_abs": 0.002759165284247321
+                },
+                "right_only": {
+                  "pairs": 7223,
+                  "weight_l1": 0.004075802857158633,
+                  "signed_real": 9.334148362312862e-05,
+                  "signed_imag": -3.327216070060051e-05,
+                  "sum_lag_abs": 0.0025964151461797804
+                },
+                "neither": {
+                  "pairs": 802599,
+                  "weight_l1": 0.5940568473541163,
+                  "signed_real": 2.866522249777194e-05,
+                  "signed_imag": -0.0019482426311184596,
+                  "sum_lag_abs": 0.02934633104564149
+                }
+              },
+              "0.1": {
+                "both": {
+                  "pairs": 776,
+                  "weight_l1": 0.0005380862249389567,
+                  "signed_real": 0.00014769590154234562,
+                  "signed_imag": 3.9537247782078714e-05,
+                  "sum_lag_abs": 0.0004468884637049698
+                },
+                "left_only": {
+                  "pairs": 24691,
+                  "weight_l1": 0.019969668348576643,
+                  "signed_real": -7.050363752980081e-05,
+                  "signed_imag": -0.0004994505726109189,
+                  "sum_lag_abs": 0.0061725192768569
+                },
+                "right_only": {
+                  "pairs": 26630,
+                  "weight_l1": 0.01683100598900868,
+                  "signed_real": 0.0002490677703683043,
+                  "signed_imag": -0.0002102670470867034,
+                  "sum_lag_abs": 0.004619365244129398
+                },
+                "neither": {
+                  "pairs": 765184,
+                  "weight_l1": 0.5666786795023383,
+                  "signed_real": -0.00022302006951815213,
+                  "signed_imag": -0.0013658036070671297,
+                  "sum_lag_abs": 0.02824417087742143
+                }
+              }
+            }
+          }
+        ],
+        "unclassified_terminal_pair_per_lag": {
+          "pairs": 5116,
+          "weight_l1": 0.015713529576326133,
+          "signed_real": 6.382156303147472e-06,
+          "signed_imag": -0.0010674965494570767
+        }
+      },
+      "q_real_direct": 0.012503551074628472,
+      "q_real_from_lags": 0.012503551074537876,
+      "q_reconstruction_error": 9.059593353288875e-14,
+      "scope": "finite-spin float64/complex128 census; no interval or asymptotic claim"
+    }
+  ]
+}

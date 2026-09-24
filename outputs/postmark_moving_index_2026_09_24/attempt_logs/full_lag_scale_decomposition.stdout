@@ -1,0 +1,414 @@
+{
+  "source_revision": "5171af01191cc2db9d5bad0f8eca2185114ebbe3",
+  "input_sha256": {
+    "exact_side_runner": "a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+    "exact_side_note": "36463f97761bb0b51f288efb6e1de58aeabc2ece3ad51c2871199232410c0121",
+    "five_site_note": "a3af4101711b8b61bfe87551b2651de498784de17d58cf3356e864b3a9b700e3",
+    "this_diagnostic": "f17f258237ee48ac98c9498def429bab80fcd4d2dd324fa7083920b909313f79"
+  },
+  "observable": "The real cos(2*pi*n/3) component of the period-three character; the positive-lag sum is paired with its Hermitian conjugate.",
+  "criterion": "For each lag h, |sum_j W_{j,j+h} exp(i Phi_{S,h}(j))| <= D^{-1} Var(D W) max_prefix |sum exp(i Phi)|.",
+  "alias_definition": "near alias means wrapped first difference of the actual lag phase Phi is within the stated threshold of 0 modulo 2pi.",
+  "rows": [
+    {
+      "S": 96,
+      "dimension": 957,
+      "profile_core_radius": 24,
+      "profile_tail_bound": 5.707491014309905e-12,
+      "profile_construction": "Laurent-series expansion of N_inf^2=6I-4(U+U*)+(U^2+U*^2)",
+      "q_real_direct": -0.02775343983454769,
+      "q_imag_direct": 1.734723475976807e-18,
+      "spectral_vs_direct_real_error": 2.321060010856968e-15,
+      "diagonal_term_real": 0.00044068262081307295,
+      "offdiagonal_reconstruction_error": 2.321060010856968e-15,
+      "sum_actual_positive_lag_abs": 0.015615770642075276,
+      "total_offdiagonal_weight_l1": 5.919750635932133,
+      "total_abel_bound_positive_lags": 237.8633192643487,
+      "max_lag_scaled_weight_variation": 22.28528743473615,
+      "max_lag_phase_prefix": 98.16002898907814,
+      "near_alias_increment_counts": {
+        "0.01": 1349,
+        "0.03": 4345,
+        "0.1": 14700
+      },
+      "near_alias_weight_l1": {
+        "0.01": 0.019310333099695324,
+        "0.03": 0.057398825778762146,
+        "0.1": 0.19485225868077297
+      },
+      "lag_fraction_bins": [
+        {
+          "lag_fraction": [
+            0.0,
+            0.125
+          ],
+          "signed_lag_sum_real": 0.004614366318761178,
+          "signed_lag_sum_imag": 0.0003224916344023119,
+          "sum_lag_abs": 0.05467574278611275,
+          "max_lag_abs": 0.0011377187963035214,
+          "pair_weight_l1": 1.0785657219925306,
+          "abel_bound_sum": 49.6173414896344,
+          "near_alias_weight_l1_at_0_01": 0.004462909104177552,
+          "lags": 119
+        },
+        {
+          "lag_fraction": [
+            0.125,
+            0.25
+          ],
+          "signed_lag_sum_real": -0.0008461991671649608,
+          "signed_lag_sum_imag": -0.0008807249168729059,
+          "sum_lag_abs": 0.05941684677344446,
+          "max_lag_abs": 0.001735398239867652,
+          "pair_weight_l1": 1.0721756240671094,
+          "abel_bound_sum": 44.12195324731445,
+          "near_alias_weight_l1_at_0_01": 0.00201689847128033,
+          "lags": 120
+        },
+        {
+          "lag_fraction": [
+            0.25,
+            0.5
+          ],
+          "signed_lag_sum_real": -0.014301899973110455,
+          "signed_lag_sum_imag": -0.0014356974243883566,
+          "sum_lag_abs": 0.1282494254512299,
+          "max_lag_abs": 0.001931772752203032,
+          "pair_weight_l1": 2.0761159761330594,
+          "abel_bound_sum": 93.8782782467012,
+          "near_alias_weight_l1_at_0_01": 0.007610812589770704,
+          "lags": 239
+        },
+        {
+          "lag_fraction": [
+            0.5,
+            0.75
+          ],
+          "signed_lag_sum_real": -0.004120038812228322,
+          "signed_lag_sum_imag": -0.004545753255035027,
+          "sum_lag_abs": 0.10950362145369721,
+          "max_lag_abs": 0.0017613045853115362,
+          "pair_weight_l1": 1.400638413848924,
+          "abel_bound_sum": 47.36544094353912,
+          "near_alias_weight_l1_at_0_01": 0.005159193612979439,
+          "lags": 239
+        },
+        {
+          "lag_fraction": [
+            0.75,
+            1.0
+          ],
+          "signed_lag_sum_real": 0.000556710406061017,
+          "signed_lag_sum_imag": -0.00017784218162775507,
+          "sum_lag_abs": 0.03680689200314395,
+          "max_lag_abs": 0.002067441833565068,
+          "pair_weight_l1": 0.2922548998904988,
+          "abel_bound_sum": 2.880305337159775,
+          "near_alias_weight_l1_at_0_01": 6.0519321487289184e-05,
+          "lags": 239
+        }
+      ],
+      "scope": "finite-spin float64/complex128 all-lag scale diagnostic; not interval certified and not an asymptotic estimate"
+    },
+    {
+      "S": 192,
+      "dimension": 1917,
+      "profile_core_radius": 24,
+      "profile_tail_bound": 5.707491014309905e-12,
+      "profile_construction": "Laurent-series expansion of N_inf^2=6I-4(U+U*)+(U^2+U*^2)",
+      "q_real_direct": 0.009589238342634535,
+      "q_imag_direct": -1.734723475976807e-18,
+      "spectral_vs_direct_real_error": 3.138114768042044e-15,
+      "diagonal_term_real": 0.00019193758896773509,
+      "offdiagonal_reconstruction_error": 3.138114768042044e-15,
+      "sum_actual_positive_lag_abs": 0.007200228896930162,
+      "total_offdiagonal_weight_l1": 8.331265060022252,
+      "total_abel_bound_positive_lags": 511.47533260721445,
+      "max_lag_scaled_weight_variation": 31.20099349096758,
+      "max_lag_phase_prefix": 146.95745270512853,
+      "near_alias_increment_counts": {
+        "0.01": 5665,
+        "0.03": 17392,
+        "0.1": 58293
+      },
+      "near_alias_weight_l1": {
+        "0.01": 0.026031580357420057,
+        "0.03": 0.07976212551534027,
+        "0.1": 0.2677518885508909
+      },
+      "lag_fraction_bins": [
+        {
+          "lag_fraction": [
+            0.0,
+            0.125
+          ],
+          "signed_lag_sum_real": -0.0015211389940274149,
+          "signed_lag_sum_imag": 0.00566769468096735,
+          "sum_lag_abs": 0.05379704930908752,
+          "max_lag_abs": 0.0011846003828494681,
+          "pair_weight_l1": 1.5437170373695464,
+          "abel_bound_sum": 100.91893747418985,
+          "near_alias_weight_l1_at_0_01": 0.004349433084524466,
+          "lags": 239
+        },
+        {
+          "lag_fraction": [
+            0.125,
+            0.25
+          ],
+          "signed_lag_sum_real": 0.0016798006947618218,
+          "signed_lag_sum_imag": 0.0004820562447682472,
+          "sum_lag_abs": 0.060281669630053186,
+          "max_lag_abs": 0.0009436512260846487,
+          "pair_weight_l1": 1.5141423908336693,
+          "abel_bound_sum": 121.10302759738278,
+          "near_alias_weight_l1_at_0_01": 0.005035378091640528,
+          "lags": 240
+        },
+        {
+          "lag_fraction": [
+            0.25,
+            0.5
+          ],
+          "signed_lag_sum_real": 0.0003461237842322847,
+          "signed_lag_sum_imag": -0.0021526209252672396,
+          "sum_lag_abs": 0.12467301975264129,
+          "max_lag_abs": 0.001001152755978006,
+          "pair_weight_l1": 2.930413481642763,
+          "abel_bound_sum": 180.50007648538036,
+          "near_alias_weight_l1_at_0_01": 0.008772767314718228,
+          "lags": 479
+        },
+        {
+          "lag_fraction": [
+            0.5,
+            0.75
+          ],
+          "signed_lag_sum_real": 0.0032782967643576037,
+          "signed_lag_sum_imag": 0.005320825756325988,
+          "sum_lag_abs": 0.1108544111282085,
+          "max_lag_abs": 0.0009676666191325311,
+          "pair_weight_l1": 1.9537038036270808,
+          "abel_bound_sum": 94.70216619015707,
+          "near_alias_weight_l1_at_0_01": 0.006089994680702117,
+          "lags": 479
+        },
+        {
+          "lag_fraction": [
+            0.75,
+            1.0
+          ],
+          "signed_lag_sum_real": 0.0009155681275075319,
+          "signed_lag_sum_imag": -0.003862134938211097,
+          "sum_lag_abs": 0.028528546257057346,
+          "max_lag_abs": 0.0010832362004395857,
+          "pair_weight_l1": 0.38928834654917316,
+          "abel_bound_sum": 14.25112486010515,
+          "near_alias_weight_l1_at_0_01": 0.0017840071858347061,
+          "lags": 479
+        }
+      ],
+      "scope": "finite-spin float64/complex128 all-lag scale diagnostic; not interval certified and not an asymptotic estimate"
+    },
+    {
+      "S": 384,
+      "dimension": 3837,
+      "profile_core_radius": 24,
+      "profile_tail_bound": 5.707491014309905e-12,
+      "profile_construction": "Laurent-series expansion of N_inf^2=6I-4(U+U*)+(U^2+U*^2)",
+      "q_real_direct": 0.023642224388823692,
+      "q_imag_direct": 0.0,
+      "spectral_vs_direct_real_error": 3.042358032168124e-14,
+      "diagonal_term_real": 7.706502688018846e-05,
+      "offdiagonal_reconstruction_error": 3.042358032168124e-14,
+      "sum_actual_positive_lag_abs": 0.014607314372982277,
+      "total_offdiagonal_weight_l1": 11.736504655138573,
+      "total_abel_bound_positive_lags": 1024.5788433746318,
+      "max_lag_scaled_weight_variation": 43.6396083474106,
+      "max_lag_phase_prefix": 302.206764978154,
+      "near_alias_increment_counts": {
+        "0.01": 22920,
+        "0.03": 69947,
+        "0.1": 233830
+      },
+      "near_alias_weight_l1": {
+        "0.01": 0.03710269237938706,
+        "0.03": 0.11281438170808905,
+        "0.1": 0.3762223090250014
+      },
+      "lag_fraction_bins": [
+        {
+          "lag_fraction": [
+            0.0,
+            0.125
+          ],
+          "signed_lag_sum_real": 0.0005373044421634255,
+          "signed_lag_sum_imag": 0.0009709187463742529,
+          "sum_lag_abs": 0.05186067189072175,
+          "max_lag_abs": 0.00042261064073048486,
+          "pair_weight_l1": 2.1947371729101235,
+          "abel_bound_sum": 216.99056919042232,
+          "near_alias_weight_l1_at_0_01": 0.006575492625351247,
+          "lags": 479
+        },
+        {
+          "lag_fraction": [
+            0.125,
+            0.25
+          ],
+          "signed_lag_sum_real": 0.004815384512700323,
+          "signed_lag_sum_imag": -0.003071469768621559,
+          "sum_lag_abs": 0.057051889585456164,
+          "max_lag_abs": 0.0004930801877073255,
+          "pair_weight_l1": 2.1376598973776995,
+          "abel_bound_sum": 228.15115881142637,
+          "near_alias_weight_l1_at_0_01": 0.0067493991280271415,
+          "lags": 480
+        },
+        {
+          "lag_fraction": [
+            0.25,
+            0.5
+          ],
+          "signed_lag_sum_real": 4.2328060419333096e-05,
+          "signed_lag_sum_imag": -0.004230109122409566,
+          "sum_lag_abs": 0.12361629521089963,
+          "max_lag_abs": 0.00044925434104643535,
+          "pair_weight_l1": 4.137184164804526,
+          "abel_bound_sum": 363.6619029380963,
+          "near_alias_weight_l1_at_0_01": 0.012926836846679416,
+          "lags": 959
+        },
+        {
+          "lag_fraction": [
+            0.5,
+            0.75
+          ],
+          "signed_lag_sum_real": 0.005081635161485831,
+          "signed_lag_sum_imag": -0.004152130525644559,
+          "sum_lag_abs": 0.1093524681918723,
+          "max_lag_abs": 0.0005447897305939267,
+          "pair_weight_l1": 2.737554644157422,
+          "abel_bound_sum": 195.0669290271098,
+          "near_alias_weight_l1_at_0_01": 0.009393933431807451,
+          "lags": 959
+        },
+        {
+          "lag_fraction": [
+            0.75,
+            1.0
+          ],
+          "signed_lag_sum_real": 0.0013059275041875968,
+          "signed_lag_sum_imag": 0.0018488779273415374,
+          "sum_lag_abs": 0.029691231116546198,
+          "max_lag_abs": 0.0004239464174962465,
+          "pair_weight_l1": 0.5293687758887688,
+          "abel_bound_sum": 20.70828340757773,
+          "near_alias_weight_l1_at_0_01": 0.0014570303475218117,
+          "lags": 959
+        }
+      ],
+      "scope": "finite-spin float64/complex128 all-lag scale diagnostic; not interval certified and not an asymptotic estimate"
+    },
+    {
+      "S": 512,
+      "dimension": 5117,
+      "profile_core_radius": 24,
+      "profile_tail_bound": 5.707491014309905e-12,
+      "profile_construction": "Laurent-series expansion of N_inf^2=6I-4(U+U*)+(U^2+U*^2)",
+      "q_real_direct": 0.012503551074628472,
+      "q_imag_direct": -2.6020852139652106e-18,
+      "spectral_vs_direct_real_error": 1.9479383384091165e-13,
+      "diagonal_term_real": 0.0001081240207509612,
+      "offdiagonal_reconstruction_error": 1.9479383384091165e-13,
+      "sum_actual_positive_lag_abs": 0.006877611365094565,
+      "total_offdiagonal_weight_l1": 13.535312900425005,
+      "total_abel_bound_positive_lags": 1385.6784790977902,
+      "max_lag_scaled_weight_variation": 50.30712333445453,
+      "max_lag_phase_prefix": 578.3669893931319,
+      "near_alias_increment_counts": {
+        "0.01": 41156,
+        "0.03": 124267,
+        "0.1": 414934
+      },
+      "near_alias_weight_l1": {
+        "0.01": 0.04243035731211809,
+        "0.03": 0.12880574639017744,
+        "0.1": 0.4282071583917982
+      },
+      "lag_fraction_bins": [
+        {
+          "lag_fraction": [
+            0.0,
+            0.125
+          ],
+          "signed_lag_sum_real": 0.0019235617093944272,
+          "signed_lag_sum_imag": 0.0009090457508739409,
+          "sum_lag_abs": 0.0514705553980529,
+          "max_lag_abs": 0.00026248920312693837,
+          "pair_weight_l1": 2.5396378701747078,
+          "abel_bound_sum": 295.56751621416504,
+          "near_alias_weight_l1_at_0_01": 0.007778090775202882,
+          "lags": 639
+        },
+        {
+          "lag_fraction": [
+            0.125,
+            0.25
+          ],
+          "signed_lag_sum_real": -0.0019355386223295636,
+          "signed_lag_sum_imag": -0.002415320111252715,
+          "sum_lag_abs": 0.05607585360450362,
+          "max_lag_abs": 0.0003704245554939784,
+          "pair_weight_l1": 2.4664018315707774,
+          "abel_bound_sum": 307.58592825950285,
+          "near_alias_weight_l1_at_0_01": 0.007897054141588096,
+          "lags": 640
+        },
+        {
+          "lag_fraction": [
+            0.25,
+            0.5
+          ],
+          "signed_lag_sum_real": 0.004082624571411438,
+          "signed_lag_sum_imag": 0.003028276859502226,
+          "sum_lag_abs": 0.12754743354781142,
+          "max_lag_abs": 0.0004676612216787852,
+          "pair_weight_l1": 4.773352284859215,
+          "abel_bound_sum": 493.14488508315173,
+          "near_alias_weight_l1_at_0_01": 0.014841780670515016,
+          "lags": 1279
+        },
+        {
+          "lag_fraction": [
+            0.5,
+            0.75
+          ],
+          "signed_lag_sum_real": 0.0020238254027751864,
+          "signed_lag_sum_imag": -0.0024676079001785946,
+          "sum_lag_abs": 0.10771542190536378,
+          "max_lag_abs": 0.00043034054542865697,
+          "pair_weight_l1": 3.1519034314792416,
+          "abel_bound_sum": 260.1572758024405,
+          "near_alias_weight_l1_at_0_01": 0.010331190846657632,
+          "lags": 1279
+        },
+        {
+          "lag_fraction": [
+            0.75,
+            1.0
+          ],
+          "signed_lag_sum_real": 0.00010324046578466753,
+          "signed_lag_sum_imag": -0.002035985638318132,
+          "sum_lag_abs": 0.029195160187015654,
+          "max_lag_abs": 0.00033001081895801956,
+          "pair_weight_l1": 0.6040174823410484,
+          "abel_bound_sum": 29.222873738526953,
+          "near_alias_weight_l1_at_0_01": 0.001582240878154494,
+          "lags": 1279
+        }
+      ],
+      "scope": "finite-spin float64/complex128 all-lag scale diagnostic; not interval certified and not an asymptotic estimate"
+    }
+  ]
+}

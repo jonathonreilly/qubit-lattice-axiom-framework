@@ -38,7 +38,20 @@ now verifies the four-site determinant recurrence and reduced off-diagonal
 symbolically, and checks the weighted overlap and identity-metric formulas on
 four finite spins. It reduces the coordinate dimension from `10S-3` to `2S`
 away from eliminated-block poles; it does not bound the selected-time phase
-sum or prove the actual readout limit. The next route is a pole-aware,
-energy-dependent transfer estimate with the period-three insertion.
+sum or prove the actual readout limit. A focused follow-up review now selects
+direct deterministic cancellation in the prepared-weighted phase sum. Pole-safe
+reconstruction is a support tool only: eliminated-block poles are coordinate
+singularities, and a normalized-overlap contraction yields no phase bound.
+
+## Follow-up route decision after the ten-route review
+
+| Route | Mathematical object and first discriminator | Result | Status / strength |
+|---|---|---|---|
+| Pole-neighborhood excision | Prepared spectral mass near the deleted-anchor compression spectrum, normalized by adjacent full-spectrum spacing | Corrected finite scan at S=16,...,512 has 1.0–2.1% mass at relative radius 0.01; at S=512, 1.34% mass versus 1.58% of modes. The minimum ratio reaches 1.59e-6 | Counting-like finite diagnostic; no uniform mass theorem or phase bound |
+| Actual-generator readout correction | Eigensystem of H_S=C N_S with exact G_S phase exp[-it(E^2/C^2-E)] | Dense expm agrees to <=1.2e-15 at S=1,2,3,5; actual O readouts at S=8,16,32,64,128,256,512 remain finite and fluctuate around 1/3 | Corrected finite evidence only; no asymptotic separation or limit |
+| Deterministic weighted cancellation | Exact positive-lag decomposition of q_S using prepared coefficients, character matrix elements, and phase C(lambda_k-lambda_j)/4 | Full-lag bins at S=96,192,384,512 reproduce the direct scalar to <=2e-13. The sum of individual lag magnitudes is 0.389,0.378,0.372,0.372 while the signed positive-lag real sum oscillates -0.0141,+0.00470,+0.0118,+0.00620. No sampled single lag dominates; the aggregate Abel bound rises to 1386 at S=512 | Selected campaign: derive joint weighted cancellation over the two spectral indices; fixed-lag and one-lag triangle estimates do not close |
+| Discrete spectral-phase alias census | One-index slopes alpha_j=C(lambda_(j+1)-lambda_j)/4 and fixed-lag derivatives alpha_(j+h)-alpha_j | At S=96,192,384,512 there are 4,7,13,17 distinct one-index alias integers; prepared mass within 0.01 rad of an individual alias stays about 0.0043--0.0048. The all-lag L1 weight within 0.01 rad of a lag-derivative alias is 0.0193,0.0260,0.0371,0.0424. Lag reconstruction matches direct evolution within 1.3e-13 | This exposes the missing uniform estimate: branch interpolation, phase-accurate quantization, overlap weights, and summation of every reciprocal alias are unresolved; the finite census is not a decay bound |
+| Larger actual-readout sample | Direct finite-spin eigendecomposition of G_S=N_S^2-CN_S at t=1/4 | For S=512,640,768,896,1024, the period-three observable is 0.341669,0.337053,0.337260,0.336208,0.328571; generator factorization agrees at <=6.4e-13 in state/readout checks | Float64 finite samples only; neither convergence to 1/3 nor separated limiting subsequences follows |
+| Principal Weyl spectral measure | Fixed moments of the exact tridiagonal N_S from local closed walks and the five-site frozen symbol | Author proof gives weak convergence to density 1/(4 sqrt(lambda)) on (0,4), CDF sqrt(lambda)/2, quantiles 4 rho^2, and normalized phase profile theta/S^2 -> rho^2 | Bounded conditional support theorem; no adjacent gaps or phase modulo 2pi, so the O(S) alias weights remain open |
 
 Mathematical sectors searched or queued: discrete and matrix-valued WKB; stationary phase and exponential sums; Jacobi operators and orthogonal polynomials; commutator equations; spectral measures and harmonic analysis; operator/Fourier methods; semiclassical propagation and matrix-valued Egorov; finite-group character selection; endpoint weighted forms; exact Schur complements; imaginary-time Markov kernels. Number-theoretic revival analysis is useful only when tied to the actual eigenphase and overlap weights. No route supplies an axiom update: the supplied dynamics and output remain imported premises.

@@ -6,26 +6,28 @@ runtime:
   authorized: 12h
   started_utc: "2026-09-24T04:38:00Z"
   deadline_utc: "2026-09-24T16:38:00Z"
-  checkpoint_utc: "2026-09-24T14:26:00Z"
-  runtime_used_at_checkpoint: "about 9h48m"
-cycle_count: 2
-block_count: 2
+  checkpoint_utc: "2026-09-24T15:48:00Z"
+  runtime_used_at_checkpoint: "about 11h10m"
+cycle_count: 3
+block_count: 3
 source:
   repo: /Users/jonreilly/Projects/Physics
   base_ref: origin/main
   base_revision: 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8
-  branch: physics-loop/postmark-moving-index-central-match-20260924
-  worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924
-active_route: "pole-safe spectral reconstruction from the two-energy anchor Schur/Weyl pencil, followed by prepared-weighted phase control"
+  branch: physics-loop/postmark-electric-weighted-phase-20260924
+  worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-electric-weighted-phase-20260924
+  head_revision: 5171af01191cc2db9d5bad0f8eca2185114ebbe3
+  parent_review_branch: physics-loop/postmark-moving-index-central-match-20260924
+active_route: "deterministic prepared-weighted phase cancellation for the actual fixed-time readout, with Weyl-predicted quadratic phase, all reciprocal aliases, and phase-accuracy analysis"
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
 conditional_surface_status: "conditional on the supplied six-site path, integer-spin hop factors, generator, first-mark preparation, and period-three readout"
 provisional_dependency_check_state: "prior supporting notes were authored against c288aa9 and their source hashes remain unchanged at current origin/main 0e6ad828; this new block starts on 0e6ad828"
-independent_check_state: "Next-route review comprised seven isolated worker reports and three root-only exact route checks after the platform thread cap. The author has now cold-read all four candidate theorem notes and all four runners; no independent final-source review has been performed. Personal execution has no subagents."
+independent_check_state: "The ten-route selection comprised seven isolated worker reports and three root-only exact checks after the platform thread cap. Three focused follow-up lenses independently recommended direct deterministic weighted-phase cancellation over pole regularization. The author corrected the finite probe phases and checked them against dense expm for S=1,2,3,5. These workers selected and reviewed routes/probes; none independently reviewed the final authored theorem sources. The current science execution is personal, without subagents."
 formal_audit_state: not_requested
-next_milestone: "freeze and deliver the author-checked conditional-support milestone in a non-draft review PR; continue the pole-aware two-energy Schur/Weyl route personally within the remaining authorized runtime"
-strongest_unresolved_proof_obligation: "the current Schur reconstruction excludes energies at poles of H_II; derive and test an exact all-energy reconstruction including pole eigenspaces, then seek a uniform prepared-weighted O(S^2)-time phase bound"
-hard_residual_being_attacked: "the finite-spin conjugated period-three observable over time theta=C/4"
+next_milestone: "derive phase-accurate global quantization beyond the principal Weyl action and estimate the prepared-weighted two-index sum over all aliases, or isolate a quantified obstruction"
+strongest_unresolved_proof_obligation: "prove Re(q_S(1/4))->0 for the exact prepared-profile two-energy sum, including its small diagonal term, all mod-three crossing pairs, the central layer, macroscopic lags h=Theta(S), and their discrete aliases; alternatively certify separated actual-readout subsequences"
+hard_residual_being_attacked: "order-one phase corrections to the nearly quadratic Weyl phase and weighted cancellation across O(S) reciprocal aliases in the interior two-index sum, after the prepared-state endpoint strip is removed"
 open_imports:
   - "supplied one-vacancy Hamiltonian and first-mark state are not derived from framework axioms"
   - "fixed-time global finite-spin propagation and physical interpretation remain open"
@@ -38,19 +40,33 @@ trace_gate:
   reachability_to_target: supports
   artifact_role: theorem
   next_trace_action: "control the interior phase of q_S(1/4), or prove separated actual-readout subsequences; the prepared-state endpoint strip is controlled"
-review_findings: "Ten route passes selected the exact five-site cross-fiber route: seven isolated worker reports plus three root-only checks after the platform thread cap. Personal execution derived and runner-checked the five-site geometry, endpoint support bound, and weighted finite-lag diagnostics. The follow-on Schur probe verifies the four-site rational pencil and two-energy character-overlap identity at S=1,2,3,5 to floating errors below 5e-14; it proves no phase cancellation. A final read strengthened the five-site slope check to sample nonzero u; all current-source mutation receipts and four caches now match. No independent source review has been performed."
-pr_status: "author-preflighted conditional-support milestone is being frozen for a non-draft review PR; independent science review and formal audit remain pending"
+review_findings: "The ten-route selection comprised seven isolated worker reports and three root-only exact checks after the platform thread cap. Three focused follow-up lenses recommended direct deterministic weighted-phase cancellation over pole regularization. Corrected finite probes use the exact G_S phase and agree with dense expm for S=1,2,3,5. The all-lag weighted diagnostic at S=96,192,384,512 shows sum of individual lag magnitudes near 0.37 but signed totals from -0.0141 to +0.0062; fixed and sampled macroscopic lags do not dominate. The root-only alias census separates alpha_j from alpha_(j+h)-alpha_j, finds 4,7,13,17 distinct one-index alias integers and increasing all-lag near-alias L1 0.0193,0.0260,0.0371,0.0424 at 0.01 rad. A new author-proved fixed-moment theorem gives the conditional empirical spectral density 1/(4 sqrt(lambda)) on (0,4), CDF sqrt(lambda)/2, and macroscopic quantiles, using the supplied finite Jacobi coefficients. The exact principal action predicts a nearly quadratic phase and O(S) aliases; finite gap-slope correlation is 0.985--0.997 and alias counts match, but best-quadratic phase residuals reach 3.56--7.88 radians and alter q_S by up to 0.0232. Direct actual readouts at S=640,768,896,1024 are 0.33705,0.33726,0.33621,0.32857; float64 samples prove neither convergence nor separation. The next obligation is phase-accurate global quantization plus a uniform sum over all aliases and actual overlap weights. Workers reviewed routes/probes, not final theorem sources; science execution is personal, without subagents."
+pr_status: "PR #9078 is open and non-draft on the parent branch; independent science review and formal audit remain pending. The current weighted-phase follow-up is a separate dependent campaign branch with no new PR yet."
 files_touched:
   - docs/POSTMARK_ELECTRIC_MOVING_INDEX_CELL_SYMBOL_BOUNDED_THEOREM_NOTE_2026-09-24.md
   - docs/POSTMARK_ELECTRIC_TWO_BAND_CENTRAL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-24.md
   - docs/POSTMARK_ELECTRIC_EXACT_SIDE_FIXED_INDEX_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-24.md
   - docs/POSTMARK_ELECTRIC_FIVE_SITE_INTER_FIBER_PHASE_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  - docs/POSTMARK_ELECTRIC_PRINCIPAL_WEYL_COUNT_BOUNDED_THEOREM_NOTE_2026-09-24.md
   - scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py
   - scripts/postmark_electric_two_band_central_match_2026_09_24.py
   - scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py
   - scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py
+  - scripts/postmark_electric_principal_weyl_count_2026_09_24.py
   - outputs/postmark_moving_index_2026_09_24/
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/fixed_low_lag_phase_cancellation_probe_v1.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/full_lag_scale_decomposition.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/corrected_actual_generator_pole_mass_probe.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/corrected_actual_generator_schur_probe.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_alias_overlap_census.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/actual_readout_extended_sizes.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/weyl_alias_scaling_probe.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/quadratic_phase_resonant_lag_probe.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/weyl_alias_scaling_probe.py
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/actual_readout_extended_sizes.py
+  - outputs/postmark_moving_index_2026_09_24/principal_weyl_count_2026_09_24.json
+  - logs/runner-cache/postmark_electric_principal_weyl_count_2026_09_24.txt
   - logs/runner-cache/postmark_electric_*
   - .claude/science/physics-loops/postmark-electric-moving-index-20260924/
-next_exact_action: "complete the section-by-section author conformance check, run final exact-candidate validation in the disposable copy, commit/push and open the non-draft support PR; then personally test pole-safe Schur reconstruction at S=8,16,32,64 before the 16:38 UTC deadline"
+next_exact_action: "derive the global subprincipal quantization and weighted overlap transport beyond the principal quadratic Weyl phase, then bound the full alias-summed bilinear form; keep the actual G_S readout and q_S distinct and do not extrapolate finite oscillations"
 stop_condition: "complete the authorized 12h runtime, or exhaust mathematically distinct routes with explicit reopen conditions"

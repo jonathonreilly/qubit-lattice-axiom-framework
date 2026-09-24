@@ -1,0 +1,123 @@
+{
+  "source_revision": "5171af01191cc2db9d5bad0f8eca2185114ebbe3",
+  "exact_side_runner_sha256": "a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+  "derivation": "A_plus(lambda)=pi*(2-sqrt(lambda)); five-site Weyl count gives N_{<=lambda}~5*S*sqrt(lambda), so lambda_j~(j/(5*S))^2 and alpha_j~(S+1)*(2j+1)/(100*S).",
+  "rows": [
+    {
+      "S": 96,
+      "dimension": 957,
+      "actual_alpha_min_max": [
+        0.060006012625078535,
+        19.27970002571252
+      ],
+      "weyl_alpha_min_max": [
+        0.010104166666666666,
+        19.3090625
+      ],
+      "linear_fit_actual_alpha_vs_sorted_index": {
+        "slope": 0.020000134615010004,
+        "intercept": 0.18045888983729896,
+        "predicted_slope": 0.02020833333333333
+      },
+      "pearson_actual_vs_weyl_increment": 0.985476567965581,
+      "residual_rad_quantiles_abs": {
+        "0.5": 0.48239482625437713,
+        "0.9": 1.7396062292216499,
+        "0.99": 2.2215787069920014,
+        "1.0": 2.3332285218841307
+      },
+      "residual_over_S_rms": 0.009952698486841601,
+      "actual_distinct_alias_indices": 4,
+      "weyl_distinct_alias_indices": 4,
+      "same_nearest_alias_fraction": 0.8744769874476988,
+      "scope": "finite eigenvalue diagnostic; principal Weyl density does not imply individual-gap asymptotics"
+    },
+    {
+      "S": 192,
+      "dimension": 1917,
+      "actual_alpha_min_max": [
+        0.06000151113819377,
+        38.479850007523176
+      ],
+      "weyl_alpha_min_max": [
+        0.010052083333333333,
+        38.50953125
+      ],
+      "linear_fit_actual_alpha_vs_sorted_index": {
+        "slope": 0.020000033100452008,
+        "intercept": 0.180229305675885,
+        "predicted_slope": 0.020104166666666666
+      },
+      "pearson_actual_vs_weyl_increment": 0.9927140023701038,
+      "residual_rad_quantiles_abs": {
+        "0.5": 0.6793531745584387,
+        "0.9": 2.4662667268023597,
+        "0.99": 3.119313510174939,
+        "1.0": 3.296430119516536
+      },
+      "residual_over_S_rms": 0.00700926652032087,
+      "actual_distinct_alias_indices": 7,
+      "weyl_distinct_alias_indices": 7,
+      "same_nearest_alias_fraction": 0.8449895615866388,
+      "scope": "finite eigenvalue diagnostic; principal Weyl density does not imply individual-gap asymptotics"
+    },
+    {
+      "S": 384,
+      "dimension": 3837,
+      "actual_alpha_min_max": [
+        0.06000037878046338,
+        76.87992500219657
+      ],
+      "weyl_alpha_min_max": [
+        0.010026041666666667,
+        76.909765625
+      ],
+      "linear_fit_actual_alpha_vs_sorted_index": {
+        "slope": 0.020000008206413906,
+        "intercept": 0.18011461807067156,
+        "predicted_slope": 0.020052083333333335
+      },
+      "pearson_actual_vs_weyl_increment": 0.996349744175759,
+      "residual_rad_quantiles_abs": {
+        "0.5": 0.9408758385584832,
+        "0.9": 3.4779301699285945,
+        "0.99": 4.47246247124838,
+        "1.0": 4.657741220014529
+      },
+      "residual_over_S_rms": 0.00494712104944811,
+      "actual_distinct_alias_indices": 13,
+      "weyl_distinct_alias_indices": 13,
+      "same_nearest_alias_fraction": 0.7870177267987487,
+      "scope": "finite eigenvalue diagnostic; principal Weyl density does not imply individual-gap asymptotics"
+    },
+    {
+      "S": 512,
+      "dimension": 5117,
+      "actual_alpha_min_max": [
+        0.06000021320150247,
+        102.47994375107976
+      ],
+      "weyl_alpha_min_max": [
+        0.01001953125,
+        102.50982421875
+      ],
+      "linear_fit_actual_alpha_vs_sorted_index": {
+        "slope": 0.020000004606474008,
+        "intercept": 0.1800859570375527,
+        "predicted_slope": 0.0200390625
+      },
+      "pearson_actual_vs_weyl_increment": 0.9972627286298943,
+      "residual_rad_quantiles_abs": {
+        "0.5": 1.100093855760326,
+        "0.9": 4.009775162889223,
+        "0.99": 5.1602565836696925,
+        "1.0": 5.367199243208702
+      },
+      "residual_over_S_rms": 0.004280951269246513,
+      "actual_distinct_alias_indices": 17,
+      "weyl_distinct_alias_indices": 17,
+      "same_nearest_alias_fraction": 0.7464816262705238,
+      "scope": "finite eigenvalue diagnostic; principal Weyl density does not imply individual-gap asymptotics"
+    }
+  ]
+}

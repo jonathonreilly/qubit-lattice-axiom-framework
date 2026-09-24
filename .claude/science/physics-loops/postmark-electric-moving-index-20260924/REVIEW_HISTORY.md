@@ -35,3 +35,28 @@ This is an author conformance pass, not an independent review-loop receipt or au
 12. **Combined candidate gates:** the exact frozen candidate was verified as 129 byte/mode-identical paths against the author index at base `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8`. The isolated copy passed all 18 pipeline stages with `--stage-citation-manifest`; stage 18 accepted the reviewed node/edge delta. Strict audit lint ended `OK: no errors`, and changed-audit evidence reported `checked=4 failures=0 control_failures=0`. Final complete logs are under `/Users/jonreilly/Documents/Codex/research_runs/postmark_campaign_20260924/` as `combined_pipeline_pr_candidate_final.log`, `strict_audit_lint_pr_candidate_final.log`, and `changed_evidence_pr_candidate_final.log`. This is author validation only; no independent science review or formal audit is claimed.
 
 No section is marked as independently passed. Formal audit remains pending.
+
+## 2026-09-24 next-campaign route review and personal execution (15:15 UTC)
+
+| Pass | Scope and identity | Result | Limits |
+|---|---|---|---|
+| Ten-route campaign selection | Seven isolated worker reports plus three author-only exact route checks after the application thread cap; sources and route inventory are in `ROUTE_PORTFOLIO.md` and the preceding `HANDOFF.md` checkpoint | The first selected route was completed as a five-site local-support milestone and opened as PR #9078. A focused three-lens follow-up then chose direct deterministic cancellation of the actual prepared-weighted phase sum over further Schur-pole regularization | Review selects work only. The seven worker reports did not inspect final source files; the author checks and followups are not ten independent science reviews |
+| Corrected actual-generator finite probe | `outputs/postmark_moving_index_2026_09_24/attempt_logs/corrected_actual_generator_pole_mass_probe.py` and `corrected_actual_generator_schur_probe.py` on branch source base `5171af01191cc2db9d5bad0f8eca2185114ebbe3` | Readout phase corrected to `exp[-it(E^2/C^2-E)]`; dense `expm` comparison at S=1,2,3,5 has max error `1.12e-15`. The pole scan remains a counting-like finite diagnostic | Earlier root-only versions used `exp(-it C N_S)|0>` and were mislabeled as actual; they omitted `N_S^2`. The corrected outputs replace those values. No pole-mass theorem or actual-readout limit is established |
+| Fixed-lag contribution discriminator | `fixed_low_lag_phase_cancellation_probe_v1.py/.json`, then the selected fixed/macroscopic lag extension | At S=512, tested lags h<=32 contribute only `1.81e-4` to `Re(q_S)=0.01250`; individual tested lag sums are small | This does not bound untested lags or establish asymptotic dominance |
+| Full-lag scale decomposition | `full_lag_scale_decomposition.py/.json`, exact Jacobi eigensolver and profile coefficients at S=96,192,384,512 | Direct and spectral scalar agree to at most `1.95e-13`. `sum_h |L_(S,h)|` is `0.3887,0.3781,0.3716,0.3720`; the signed real sums are `-0.01410,0.004699,0.01178,0.006198`; at S=512 the maximum single-lag magnitude is below `4.7e-4` | Float64 finite samples only. They identify cancellation across many lags and motivate a joint discrete stationary-phase proof; they prove neither convergence nor a wall |
+| Phase-accuracy algebra | Exact factorization in the 15:15 UTC handoff checkpoint | `Phi_C(lambda)-Phi_C(lambda_tilde)=(lambda-lambda_tilde)(C-lambda-lambda_tilde)/4`; a generic O(S^-2) eigenvalue error does not give a vanishing phase error at time C/4 | Exact sensitivity gate only. An averaged cancellation proof may tolerate order-one termwise phase errors; no WKB expansion was rejected as a theorem |
+
+Current exact sources remain the four notes and four runners in the parent conditional-support PR #9078; that PR is open and non-draft with independent review pending. The current follow-up branch is exploratory and author-only. No formal audit, actual-readout asymptotic result, separated subsequence, model-to-axiom bridge, or axiom update is claimed.
+
+## 2026-09-24 principal Weyl-count theorem author review (15:48 UTC)
+
+| Pass | Scope and identity | Result | Limits |
+|---|---|---|---|
+| New bounded theorem proof read | `docs/POSTMARK_ELECTRIC_PRINCIPAL_WEYL_COUNT_BOUNDED_THEOREM_NOTE_2026-09-24.md`, dependencies at candidate base `0e6ad8285096ed668816f18caaa6fbbfbd9c50e8` | Re-derived the normalization `D_S~10S`, frozen physical symbol, closed-walk trace moments, endpoint-strip rank control, limiting moment identity `4^m/(2m+1)`, compact-support measure identification, and continuous-CDF quantile consequence | Author-only. The theorem establishes empirical spectral distribution and macroscopic quantiles, not local eigenvalue gaps, modulo-`2pi` phase accuracy, weighted readout, or an axiom bridge |
+| Paired runner and cache | `scripts/postmark_electric_principal_weyl_count_2026_09_24.py` and `logs/runner-cache/postmark_electric_principal_weyl_count_2026_09_24.txt` | The exact finite Jacobi eigensolve at S=8,16,32,64,128 reports empirical moments 0--8 and CDF samples; runner exit 0, cache bound to declared source hashes | Numerical corroboration only. No gate converts finite error to the weak-limit proof; independent review remains pending |
+
+The earlier combined-pipeline record in this file belongs to the frozen
+four-note/four-runner parent candidate and does not cover this follow-up
+theorem, diagnostics, or loop-pack edits. The present expanded candidate still
+needs its own exact-tree validation before any new review PR is opened. No
+independent final-source review or formal audit has occurred.

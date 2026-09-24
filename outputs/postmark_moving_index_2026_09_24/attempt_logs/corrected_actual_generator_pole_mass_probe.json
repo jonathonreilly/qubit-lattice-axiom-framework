@@ -1,0 +1,710 @@
+{
+  "base": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "method": "independent five-residue Jacobi build; tridiagonal eigensolver; each H_II block diagonalized separately; coefficients cross-checked against primary runner; target phases checked against dense expm for S<=5",
+  "rows": [
+    {
+      "S": 1,
+      "anchor_count": 2,
+      "dense_expm_readout_error_when_S_le_5": 2.220446049250313e-16,
+      "dimension": 7,
+      "direct_actual_character_expectation": "(0.5406681559102303-0.08550619114019803j)",
+      "direct_actual_period_three_readout": 0.6937787706068201,
+      "independent_coefficient_max_error": 0.0,
+      "min_gap_abs": 0.3459842416745329,
+      "min_gap_over_C": 0.17299212083726645,
+      "min_gap_over_local_spacing": 0.2157176462878985,
+      "pole_count": 5,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-05": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.01": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.05": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.1": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.25": {
+          "modes": 2,
+          "prepared_mass": 0.28571428571428537
+        },
+        "0.5": {
+          "modes": 4,
+          "prepared_mass": 0.4109300283058945
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 2,
+      "anchor_count": 4,
+      "dense_expm_readout_error_when_S_le_5": 1.1102230246251565e-16,
+      "dimension": 17,
+      "direct_actual_character_expectation": "(0.2509126727500415+0.06600617856572492j)",
+      "direct_actual_period_three_readout": 0.5006084485000273,
+      "independent_coefficient_max_error": 0.0,
+      "min_gap_abs": 0.001605668500605617,
+      "min_gap_over_C": 0.00026761141676760286,
+      "min_gap_over_local_spacing": 0.0011045424217733684,
+      "pole_count": 13,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 1,
+          "prepared_mass": 0.08943276659862494
+        },
+        "1e-05": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.01": {
+          "modes": 1,
+          "prepared_mass": 0.08943276659862494
+        },
+        "0.05": {
+          "modes": 1,
+          "prepared_mass": 0.08943276659862494
+        },
+        "0.1": {
+          "modes": 1,
+          "prepared_mass": 0.08943276659862494
+        },
+        "0.25": {
+          "modes": 7,
+          "prepared_mass": 0.44097725636408397
+        },
+        "0.5": {
+          "modes": 11,
+          "prepared_mass": 0.7073424675717611
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 3,
+      "anchor_count": 6,
+      "dense_expm_readout_error_when_S_le_5": 1.1102230246251565e-15,
+      "dimension": 27,
+      "direct_actual_character_expectation": "(0.34747376064679736-0.019484565290664006j)",
+      "direct_actual_period_three_readout": 0.5649825070978647,
+      "independent_coefficient_max_error": 0.0,
+      "min_gap_abs": 0.04504312789159037,
+      "min_gap_over_C": 0.0037535939909658644,
+      "min_gap_over_local_spacing": 0.04174264999992618,
+      "pole_count": 21,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-05": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.01": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.05": {
+          "modes": 1,
+          "prepared_mass": 0.005022311266349438
+        },
+        "0.1": {
+          "modes": 1,
+          "prepared_mass": 0.005022311266349438
+        },
+        "0.25": {
+          "modes": 7,
+          "prepared_mass": 0.3519244968530331
+        },
+        "0.5": {
+          "modes": 11,
+          "prepared_mass": 0.43194270269342994
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 5,
+      "anchor_count": 10,
+      "dense_expm_readout_error_when_S_le_5": 2.7755575615628914e-17,
+      "dimension": 47,
+      "direct_actual_character_expectation": "(-0.1589235974989176+0.0429975874947649j)",
+      "direct_actual_period_three_readout": 0.22738426833405512,
+      "independent_coefficient_max_error": 3.552713678800501e-15,
+      "min_gap_abs": 0.025523598655709634,
+      "min_gap_over_C": 0.0008507866218569877,
+      "min_gap_over_local_spacing": 0.02094935138785583,
+      "pole_count": 37,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 1,
+          "prepared_mass": 0.019170535659716353
+        },
+        "1e-05": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.01": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.05": {
+          "modes": 1,
+          "prepared_mass": 0.019170535659716353
+        },
+        "0.1": {
+          "modes": 8,
+          "prepared_mass": 0.13838473065066986
+        },
+        "0.25": {
+          "modes": 17,
+          "prepared_mass": 0.3601595716208184
+        },
+        "0.5": {
+          "modes": 20,
+          "prepared_mass": 0.4491600416807223
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 8,
+      "anchor_count": 16,
+      "dense_expm_readout_error_when_S_le_5": null,
+      "dimension": 77,
+      "direct_actual_character_expectation": "(-0.04567795128272571+0.13803526836445768j)",
+      "direct_actual_period_three_readout": 0.3028813658115159,
+      "independent_coefficient_max_error": 1.4210854715202004e-14,
+      "min_gap_abs": 0.049781358215959415,
+      "min_gap_over_C": 0.0006914077529994364,
+      "min_gap_over_local_spacing": 0.030528967929199388,
+      "pole_count": 61,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 1,
+          "prepared_mass": 0.01241153670980531
+        },
+        "1e-05": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.01": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.05": {
+          "modes": 1,
+          "prepared_mass": 0.01241153670980531
+        },
+        "0.1": {
+          "modes": 4,
+          "prepared_mass": 0.0758677395730356
+        },
+        "0.25": {
+          "modes": 20,
+          "prepared_mass": 0.1990285477800627
+        },
+        "0.5": {
+          "modes": 37,
+          "prepared_mass": 0.39399863566783094
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 16,
+      "anchor_count": 32,
+      "dense_expm_readout_error_when_S_le_5": null,
+      "dimension": 157,
+      "direct_actual_character_expectation": "(-0.04849585759934034+0.0075545751776264596j)",
+      "direct_actual_period_three_readout": 0.3010027616004398,
+      "independent_coefficient_max_error": 5.684341886080802e-14,
+      "min_gap_abs": 0.005281764889591756,
+      "min_gap_over_C": 1.9418253270557924e-05,
+      "min_gap_over_local_spacing": 0.002371114675941578,
+      "pole_count": 125,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 1,
+          "prepared_mass": 0.007147731849422648
+        },
+        "0.001": {
+          "modes": 13,
+          "prepared_mass": 0.04617435414177163
+        },
+        "1e-05": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.01": {
+          "modes": 2,
+          "prepared_mass": 0.01594270480813738
+        },
+        "0.05": {
+          "modes": 12,
+          "prepared_mass": 0.04287926557260437
+        },
+        "0.1": {
+          "modes": 25,
+          "prepared_mass": 0.09238729427747956
+        },
+        "0.25": {
+          "modes": 55,
+          "prepared_mass": 0.2894090599911098
+        },
+        "0.5": {
+          "modes": 78,
+          "prepared_mass": 0.43216185919263306
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 32,
+      "anchor_count": 64,
+      "dense_expm_readout_error_when_S_le_5": null,
+      "dimension": 317,
+      "direct_actual_character_expectation": "(-0.004077562703518188-0.03946403650957628j)",
+      "direct_actual_period_three_readout": 0.33061495819765463,
+      "independent_coefficient_max_error": 2.2737367544323206e-13,
+      "min_gap_abs": 0.04290830770287357,
+      "min_gap_over_C": 4.06328671428727e-05,
+      "min_gap_over_local_spacing": 0.002748238503815035,
+      "pole_count": 253,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 6,
+          "prepared_mass": 0.01578860186079772
+        },
+        "0.001": {
+          "modes": 45,
+          "prepared_mass": 0.10860324677419386
+        },
+        "1e-05": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.01": {
+          "modes": 6,
+          "prepared_mass": 0.021041056934851914
+        },
+        "0.05": {
+          "modes": 25,
+          "prepared_mass": 0.05203977394141703
+        },
+        "0.1": {
+          "modes": 46,
+          "prepared_mass": 0.12230856910365066
+        },
+        "0.25": {
+          "modes": 101,
+          "prepared_mass": 0.3096480247824837
+        },
+        "0.5": {
+          "modes": 163,
+          "prepared_mass": 0.48606815204783843
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 64,
+      "anchor_count": 128,
+      "dense_expm_readout_error_when_S_le_5": null,
+      "dimension": 637,
+      "direct_actual_character_expectation": "(-0.0014346318741759838-0.0873914166870557j)",
+      "direct_actual_period_three_readout": 0.33237691208388265,
+      "independent_coefficient_max_error": 9.094947017729282e-13,
+      "min_gap_abs": 0.020734547154461325,
+      "min_gap_over_C": 4.984266142899357e-06,
+      "min_gap_over_local_spacing": 0.0009427389356331128,
+      "pole_count": 509,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 21,
+          "prepared_mass": 0.020919435837226035
+        },
+        "0.001": {
+          "modes": 186,
+          "prepared_mass": 0.24160556111454298
+        },
+        "1e-05": {
+          "modes": 3,
+          "prepared_mass": 0.0013938657453784918
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 1,
+          "prepared_mass": 0.0008971063362316
+        },
+        "0.01": {
+          "modes": 12,
+          "prepared_mass": 0.017069808173637364
+        },
+        "0.05": {
+          "modes": 53,
+          "prepared_mass": 0.07866447846155199
+        },
+        "0.1": {
+          "modes": 107,
+          "prepared_mass": 0.15815471461405095
+        },
+        "0.25": {
+          "modes": 203,
+          "prepared_mass": 0.28196938281861383
+        },
+        "0.5": {
+          "modes": 321,
+          "prepared_mass": 0.4450235958895543
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 128,
+      "anchor_count": 256,
+      "dense_expm_readout_error_when_S_le_5": null,
+      "dimension": 1277,
+      "direct_actual_character_expectation": "(-0.03767388976518274-0.010096635269296425j)",
+      "direct_actual_period_three_readout": 0.30821740682321164,
+      "independent_coefficient_max_error": 3.637978807091713e-12,
+      "min_gap_abs": 0.006909566182457638,
+      "min_gap_over_C": 4.1845725426705657e-07,
+      "min_gap_over_local_spacing": 0.00033484381859796424,
+      "pole_count": 1021,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 85,
+          "prepared_mass": 0.05415552137282606
+        },
+        "0.001": {
+          "modes": 599,
+          "prepared_mass": 0.3618211217959236
+        },
+        "1e-05": {
+          "modes": 9,
+          "prepared_mass": 0.003422703932272308
+        },
+        "1e-06": {
+          "modes": 1,
+          "prepared_mass": 0.00025768429348048497
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 2,
+          "prepared_mass": 0.00037514810951211016
+        },
+        "0.01": {
+          "modes": 20,
+          "prepared_mass": 0.01245663918648349
+        },
+        "0.05": {
+          "modes": 98,
+          "prepared_mass": 0.06840720628082643
+        },
+        "0.1": {
+          "modes": 174,
+          "prepared_mass": 0.11605529732789746
+        },
+        "0.25": {
+          "modes": 395,
+          "prepared_mass": 0.2742404739739305
+        },
+        "0.5": {
+          "modes": 656,
+          "prepared_mass": 0.4417531168226906
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 256,
+      "anchor_count": 512,
+      "dense_expm_readout_error_when_S_le_5": null,
+      "dimension": 2557,
+      "direct_actual_character_expectation": "(-0.0054158361305463795-0.007484335405827055j)",
+      "direct_actual_period_three_readout": 0.3297227759129686,
+      "independent_coefficient_max_error": 1.4551915228366852e-11,
+      "min_gap_abs": 0.021295533094416896,
+      "min_gap_over_C": 3.2367967373566535e-07,
+      "min_gap_over_local_spacing": 0.0002545935829473695,
+      "pole_count": 2045,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 344,
+          "prepared_mass": 0.10072296300174402
+        },
+        "0.001": {
+          "modes": 1720,
+          "prepared_mass": 0.5340254512699272
+        },
+        "1e-05": {
+          "modes": 40,
+          "prepared_mass": 0.010736229607848136
+        },
+        "1e-06": {
+          "modes": 3,
+          "prepared_mass": 0.0008438760948286234
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "0.001": {
+          "modes": 7,
+          "prepared_mass": 0.0019571151050164133
+        },
+        "0.01": {
+          "modes": 39,
+          "prepared_mass": 0.010350950220948639
+        },
+        "0.05": {
+          "modes": 214,
+          "prepared_mass": 0.07281867925489041
+        },
+        "0.1": {
+          "modes": 377,
+          "prepared_mass": 0.129384695588037
+        },
+        "0.25": {
+          "modes": 827,
+          "prepared_mass": 0.28165532931102916
+        },
+        "0.5": {
+          "modes": 1347,
+          "prepared_mass": 0.45238060731933616
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    },
+    {
+      "S": 512,
+      "anchor_count": 1024,
+      "dense_expm_readout_error_when_S_le_5": null,
+      "dimension": 5117,
+      "direct_actual_character_expectation": "(0.012503654997150785-0.002843037546054835j)",
+      "direct_actual_period_three_readout": 0.34166910333143385,
+      "independent_coefficient_max_error": 5.820766091346741e-11,
+      "min_gap_abs": 0.0003549216780811548,
+      "min_gap_over_C": 1.3512795370414338e-09,
+      "min_gap_over_local_spacing": 1.5931848126142154e-06,
+      "pole_count": 4093,
+      "pole_neighborhood_prepared_mass_by_C_scale": {
+        "0.0001": {
+          "modes": 1255,
+          "prepared_mass": 0.18816267974291867
+        },
+        "0.001": {
+          "modes": 4296,
+          "prepared_mass": 0.6862215817873597
+        },
+        "1e-05": {
+          "modes": 139,
+          "prepared_mass": 0.020304582533845712
+        },
+        "1e-06": {
+          "modes": 13,
+          "prepared_mass": 0.0019469148777400361
+        }
+      },
+      "pole_neighborhood_prepared_mass_by_local_spacing": {
+        "0.0001": {
+          "modes": 1,
+          "prepared_mass": 0.00018980905433536662
+        },
+        "0.001": {
+          "modes": 10,
+          "prepared_mass": 0.0012787101495965313
+        },
+        "0.01": {
+          "modes": 81,
+          "prepared_mass": 0.013424103291690017
+        },
+        "0.05": {
+          "modes": 381,
+          "prepared_mass": 0.06619787142891753
+        },
+        "0.1": {
+          "modes": 747,
+          "prepared_mass": 0.12828865567456343
+        },
+        "0.25": {
+          "modes": 1596,
+          "prepared_mass": 0.2678828622651026
+        },
+        "0.5": {
+          "modes": 2669,
+          "prepared_mass": 0.4505539736236669
+        }
+      },
+      "scope": "Finite target-generator readout, eigenspectrum and prepared weights only; no uniform pole-mass or phase-cancellation result.",
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E, t=1/4"
+    }
+  ]
+}

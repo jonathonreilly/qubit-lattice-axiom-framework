@@ -5,3 +5,4 @@
 3. **Prior art placed.**
    - Blocks 59, 60, 67 and 98 were read as landed (main 8cc5f114f0). Block 98 as landed has no changed-length result, so the doubling by lengths is cited from blocks 59 and 60.
    - The comparator's constraint and lapse equations, Beig's theorem and Buchdahl's bound are named as comparators only.
+4. **Own-prior-art miss, credited after shipping.** T2 was first derived in the probes, by attempts a1 and a2 of bound-bodies-and-the-two-far-fields (issues #8649 and #8673), from the supervisor's scratch. A Grok referee confirmed the site equations and the difference identity. It failed the ledger identity for content on bonds touching a held wall; the note states (e) for content away from the walls. a2's lattice virial defect is cited, not refereed.

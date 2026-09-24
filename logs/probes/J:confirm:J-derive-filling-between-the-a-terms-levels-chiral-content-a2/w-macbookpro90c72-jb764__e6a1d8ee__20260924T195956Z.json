@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-filling-between-the-a-terms-levels-chiral-content-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jb764",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/filling-between-the-a-terms-levels-chiral-content/referee_w-macbookpro90c72-jb764/check.py",
+ "seed": 79996,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e6a1d8ee",
+ "started_utc": "20260924T195956Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed. On even tori the free sea below a0 holds N - z/2 records, the window (a0+2a, a0+6a) holds at least N+6+z/2, and one-record-per-site exclusion therefore forbids that filling. At N records every composition is the constant N a0. With holes the generator stays within 6(|a|+1/2)+|m| per hole of that constant, and for a<1/12 the lower window's hole density is at most 16 arcsin(12a)^3/pi^3. The single-sense filling asked for by the task does not exist under exclusion. The interacting anomaly theorem and the 48^3 sample's higher digits were not rebuilt."
+ },
+ "review": "Even tori hold N-z/2 records below a0 and at least N+6+z/2 in the upper window, so one-record-per-site exclusion forbids that filling, and a full lattice is the constant N a0.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:filling-between-the-a-terms-levels-chiral-content:a2/; its files are probes/work/derive/filling-between-the-a-terms-levels-chiral-content/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/filling-between-the-a-terms-levels-chiral-content/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a1e32a4f498079ccdd33b886497744aca0baa380cdd850dd6283d2884f7b8d67",
+ "stdout_tail": " S0 plane waves: on 4^3 the k=0 mode has A=6a and the k=pi/2 mode has A=4a+sigma_1\nPASS S1 symmetries: on every basis vector of 4^3, eps anticommutes with A, (A+m eps)^2 = A^2+m^2, eps T_1 anticommutes with A+m eps, and A has no on-site piece\nPASS X1 full ring: four records on a ring of four, both compositions: the generator is exactly 4 a0 on all 16 coin states\nPASS X2 hole bound: rings with one and two holes are hermitian, each row has at most two hops per hole, and the float widths are N_h=1 2.039 <= 2.4, N_h=2 3.533 <= 4.8\nPASS X3 lower window: 12^3 has 56 momenta with |sin k|<12a at a=1/20; 6^3 lower window leaves 6 holes against 16\nPASS X3 continuum sample: float 48^3 density 0.0160 of states within 6a of a0, under the zone bound 0.1375\nSUMMARY: confirmed. On even tori the free sea below a0 holds N - z/2 records, the window (a0+2a, a0+6a) holds at least N+6+z/2, and one-record-per-site exclusion therefore forbids that filling. At N records every composition is the constant N a0. With holes the generator stays within 6(|a|+1/2)+|m| per hole of that constant, and for a<1/12 the lower window's hole density is at most 16 arcsin(12a)^3/pi^3. The single-sense filling asked for by the task does not exist under exclusion. The interacting anomaly theorem and the 48^3 sample's higher digits were not rebuilt.\nHIT: confirmed - exclusion forbids the free filling between a0+2a and a0+6a, the middle sea is N - z/2 records, and a full lattice is the constant N a0 for every composition\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb764",
+  "at_utc": "20260924T200005Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent counts agree: the upper window needs more than N records, so exclusion forbids it, and a full even torus is the constant N a0.",
+  "by": "w-macbookpro90c72-jb764",
+  "at_utc": "20260924T200005Z"
+ }
+}

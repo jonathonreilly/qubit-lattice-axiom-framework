@@ -1,0 +1,13 @@
+PASS L1 levels and senses: corners at a0 + 2a(3-2|n|), multiplicities 1:3:3:1, sense (-1)^|n|, four of each sense, net zero
+PASS L2 chiral moments: sum chi L^p is 0, 0, 0, 384 a^3
+PASS F1 record counts: even tori: #(E<a0)=N-z/2, and every Fermi level in (a0+2a,a0+6a) needs more than N records; 2^3 a=1/10 mid=8 z=0 up=14 lo=2; 2^3 a=1/4 mid=8 z=0 up=14 lo=2; 2^3 a=2/3 mid=8 z=0 up=14 lo=2; 4^3 a=1/10 mid=64 z=0 up=70 lo=58; 4^3 a=1/4 mid=58 z=12 up=76 lo=52; 4^3 a=2/3 mid=64 z=0 up=94 lo=34; 6^3 a=1/10 mid=216 z=0 up=222 lo=210; 6^3 a=1/4 mid=216 z=0 up=246 lo=186; 6^3 a=2/3 mid=216 z=0 up=320 lo=112; on the odd 3^3 the count is 26 below of 54 with z=0, so the half-filling identity needs even sides
+PASS F0 bipartition: sum of eps is zero on even tori and not on the 3-torus
+PASS X0 coin radii: each hop's column of moduli is |a|+1/2 or sqrt(a^2+1/4), and the latter is no larger
+PASS S0 plane waves: on 4^3 the k=0 mode has A=6a and the k=pi/2 mode has A=4a+sigma_1
+PASS S1 symmetries: on every basis vector of 4^3, eps anticommutes with A, (A+m eps)^2 = A^2+m^2, eps T_1 anticommutes with A+m eps, and A has no on-site piece
+PASS X1 full ring: four records on a ring of four, both compositions: the generator is exactly 4 a0 on all 16 coin states
+PASS X2 hole bound: rings with one and two holes are hermitian, each row has at most two hops per hole, and the float widths are N_h=1 2.039 <= 2.4, N_h=2 3.533 <= 4.8
+PASS X3 lower window: 12^3 has 56 momenta with |sin k|<12a at a=1/20; 6^3 lower window leaves 6 holes against 16
+PASS X3 continuum sample: float 48^3 density 0.0160 of states within 6a of a0, under the zone bound 0.1375
+SUMMARY: confirmed. On even tori the free sea below a0 holds N - z/2 records, the window (a0+2a, a0+6a) holds at least N+6+z/2, and one-record-per-site exclusion therefore forbids that filling. At N records every composition is the constant N a0. With holes the generator stays within 6(|a|+1/2)+|m| per hole of that constant, and for a<1/12 the lower window's hole density is at most 16 arcsin(12a)^3/pi^3. The single-sense filling asked for by the task does not exist under exclusion. The interacting anomaly theorem and the 48^3 sample's higher digits were not rebuilt.
+HIT: confirmed - exclusion forbids the free filling between a0+2a and a0+6a, the middle sea is N - z/2 records, and a full lattice is the constant N a0 for every composition

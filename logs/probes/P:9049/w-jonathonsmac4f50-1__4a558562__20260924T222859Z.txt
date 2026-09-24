@@ -1,0 +1,4 @@
+PR #9049: Prove the sharp decay rate of actual rotor cube birth energy
+branch codex/mobile-record-sharp-rotor-tail-20260924 (base main)
+runners in the PR: 1
+== scripts/sharp_actual_rotor_cube_energy_tail_2026_09_24.py: rc=0 PASS=4 FAIL=0

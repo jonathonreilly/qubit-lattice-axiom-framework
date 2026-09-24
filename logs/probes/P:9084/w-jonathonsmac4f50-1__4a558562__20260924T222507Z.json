@@ -1,0 +1,36 @@
+{
+ "task": "P:9084",
+ "type": "pr-reexecution",
+ "lane": "dynamics-clause-h16-locality-forces-line",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 9084",
+ "pr": 9084,
+ "branch": "claude/dynamics-clause-h16-locality-forces-linear-dynamics-20260924",
+ "git_sha": "4a558562",
+ "started_utc": "20260924T222507Z",
+ "elapsed_s": 5.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/dynamics_clause_locality_of_marginals_makes_site_evolution_linear_and_completely_positive_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=6 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "855e86d5bd0b0093f83bcb348341ed1492b792e960ed757ca1826c4432c2357a",
+ "stdout_tail": "PR #9084: feat(dynamics-clause): locality of marginals makes a site's evolution linear and completely positive\nbranch claude/dynamics-clause-h16-locality-forces-linear-dynamics-20260924 (base main)\nrunners in the PR: 1\n== scripts/dynamics_clause_locality_of_marginals_makes_site_evolution_linear_and_completely_positive_2026_09_24.py: rc=0 PASS=6 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T222513Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+PR #9084: feat(dynamics-clause): locality of marginals makes a site's evolution linear and completely positive
+branch claude/dynamics-clause-h16-locality-forces-linear-dynamics-20260924 (base main)
+runners in the PR: 1
+== scripts/dynamics_clause_locality_of_marginals_makes_site_evolution_linear_and_completely_positive_2026_09_24.py: rc=0 PASS=6 FAIL=0

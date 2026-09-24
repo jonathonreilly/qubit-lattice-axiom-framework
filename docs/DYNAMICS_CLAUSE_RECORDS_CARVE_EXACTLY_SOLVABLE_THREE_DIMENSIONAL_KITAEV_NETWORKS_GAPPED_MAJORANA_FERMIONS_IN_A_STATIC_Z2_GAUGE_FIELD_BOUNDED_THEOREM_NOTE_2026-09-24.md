@@ -137,6 +137,11 @@ cell. The sector of least Majorana ground energy per cell
 *Proof.* Bloch diagonalisation of the `22 x 22` Majorana matrix (16 `c`
 operators plus 6 coupled dangling `b` operators) at every grid point. ∎
 
+The cell may also be doubled along x, y or z, giving 32 flux sectors each.
+None of these finds a lower energy per original cell than the
+translation-invariant minimum. So no flux pattern of period two in one
+direction lies lower. Larger periods are not compared.
+
 ## Theorem 5 — five distinct networks, all gapped
 
 *Statement.* A SAT search (python-sat) for relaxed carvings on 4x4x4, with
@@ -153,12 +158,12 @@ gap is measured above them. ∎
 
 ## Checks
 
-The runner prints six checks in four families. All pass in about 13
+The runner prints seven checks in four families. All pass in about 20
 seconds.
 - **A.** The carving certificate, and the field cancellation.
 - **B.** Loop conservation with its negative control, and exact
   diagonalisation equal to the Majorana minimum.
-- **C.** The band gap of the infinite network.
+- **C.** The band gap of the infinite network, and the doubled cells.
 - **D.** The five networks.
 
 An independent checker with separate code reproduced the Majorana
@@ -168,8 +173,9 @@ have not yet been checked independently.
 
 ## What this does not do
 
-- **Only translation-invariant flux sectors on the given cell are
-  compared.** The global ground-state sector is not determined.
+- **Flux sectors compared.** Only translation-invariant sectors, and
+  sectors of cells doubled in one direction, are compared. The global
+  ground-state sector is not determined.
 - **No classification.** No topological classification is made, and no
   statistics or braiding of excitations are computed.
 - **The emergent fermions are Majorana and gapped.** No U(1) charge,

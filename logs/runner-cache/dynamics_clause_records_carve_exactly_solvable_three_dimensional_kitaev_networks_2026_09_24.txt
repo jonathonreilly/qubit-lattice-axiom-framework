@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_2026_09_24.py
-runner_sha256: a8a9572a883dfcdc09a817a0a689e7d9b728581019f9337a1b71eabb3cc22b55
-input_fingerprint_sha256: aaac22cc00cd3b4c6aed642ba0088794a9a8d88b102719aa0eb1170c0a864e27
+runner_sha256: c3648d7490158df0458926d5f75a7f39588c4966849785840c48910e316650d8
+input_fingerprint_sha256: ff12c3b8fcebb8ad32c40b8b2703397db848ea46be7626432adc1ab1ba8b5040
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 12.82
+elapsed_sec: 22.86
 status: ok
 ----- stdout -----
 A. the 16-site network and its records
@@ -15,9 +15,10 @@ B. exact solvability on the 16-qubit torus
 [PASS] exact ground energy = least free-Majorana ground energy over all 2^18 gauge configurations :: ED -17.4885055277; Majorana -17.4885055277
 C. Majorana bands of the infinite periodic network
 [PASS] lowest of the 8 translation-invariant flux sectors is gapped with no flat zero band :: E0/cell -17.485797 (next -17.485797); gap on 16^3 grid 0.60910
+[PASS] doubled cells in each direction find no lower flux pattern of period two :: per-cell minimum -17.485797; doubled -17.485797, -17.485797, -17.485797
 D. a search for more three-direction networks
 [PASS] more distinct three-direction networks exist; each lowest translation-invariant sector is gapped :: 5 distinct components; (sites, gap above flat bands) [(16, 0.609), (19, 0.788), (20, 1.146), (22, 0.306), (22, 0.776)]
-TOTAL: PASS=6 FAIL=0
+TOTAL: PASS=7 FAIL=0
 
 ----- stderr -----
 

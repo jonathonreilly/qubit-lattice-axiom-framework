@@ -27,7 +27,9 @@ B. Solvability: on the 16-qubit finite torus, the loop operators of a cycle
    least free-Majorana ground energy over all 2^18 Z2 gauge configurations.
 C. The infinite periodic network: among its 8 translation-invariant flux
    sectors, the lowest Majorana ground energy has a gapped spectrum with no
-   flat zero band (gap about 0.61 |K| on a 16^3 Brillouin-zone grid).
+   flat zero band (gap about 0.61 |K| on a 16^3 Brillouin-zone grid); cells
+   doubled along x, y or z (32 flux sectors each) find no lower energy per
+   cell.
 D. Not a single accident: a SAT search (python-sat) for relaxed carvings with
    every unrecorded site keeping at least two bonds finds several distinct
    components on 4x4x4 whose closed walks span three directions; in each, the
@@ -317,6 +319,69 @@ for kk in itertools.product(range(16), repeat=3):
         gmin = min(gmin, ev[z])
 check("lowest of the 8 translation-invariant flux sectors is gapped with no flat zero band",
       zmax == 0 and gmin > 0.5, f"E0/cell {sectors[0][0]:.6f} (next {sectors[1][0]:.6f}); gap on 16^3 grid {gmin:.5f}")
+
+# doubled cells: no flux pattern of period two in any direction lies lower
+def lowest_energy_cell(comp, Ls, grid):
+    Gs = build(comp, Ls)
+    nn = Gs["n"]
+    csc = set(comp)
+    df = {}
+    for s in Gs["comp"]:
+        for ax in range(3):
+            for d in (1, -1):
+                r = nbr(s, ax, d, Ls)
+                if r not in csc and nbr(s, ax, -d, Ls) not in csc:
+                    df[(Gs["ix"][s], ax)] = df.get((Gs["ix"][s], ax), 0.0) + Gs["contents"][r][ax]
+    lv = [key for key, v in df.items() if abs(v) > 0]
+    uf = list(range(nn))
+
+    def fnd(a):
+        while uf[a] != a:
+            uf[a] = uf[uf[a]]
+            a = uf[a]
+        return a
+
+    tb, nb_ = [], []
+    for b in Gs["bonds"]:
+        ra, rb = fnd(b[0]), fnd(b[1])
+        if ra != rb:
+            uf[ra] = rb
+            tb.append(b)
+        else:
+            nb_.append(b)
+    ks = [np.array(k) * 2 * np.pi / np.array(grid) for k in itertools.product(*[range(x) for x in grid])]
+    best = None
+    for u_non in itertools.product((1, -1), repeat=len(nb_)):
+        E = 0.0
+        for k in ks:
+            N = nn + len(lv)
+            A = np.zeros((N, N), dtype=complex)
+            uu = {b: 1 for b in tb}
+            uu.update({b: v for b, v in zip(nb_, u_non)})
+            for b in Gs["bonds"]:
+                j, kk2, ax, off = b
+                t = -2 * uu[b] * np.exp(1j * np.dot(k, off))
+                A[j, kk2] += t
+                A[kk2, j] -= np.conj(t)
+            for pos, (j, ax) in enumerate(lv):
+                A[nn + pos, j] += 2 * df[(j, ax)]
+                A[j, nn + pos] -= 2 * df[(j, ax)]
+            ev = np.linalg.eigvalsh(1j * A)
+            E += -0.5 * ev[ev > 0].sum()
+        E /= len(ks)
+        best = E if best is None or E < best else best
+    return best
+
+
+e_ti = lowest_energy_cell(U16, L3, (6, 6, 6))
+doubled = []
+for mult in ((2, 1, 1), (1, 2, 1), (1, 1, 2)):
+    Ls2 = tuple(4 * m for m in mult)
+    U2 = {tuple(s[i] + 4 * sh[i] for i in range(3)) for s in U16 for sh in itertools.product(*[range(m) for m in mult])}
+    grid = tuple(3 if m == 2 else 6 for m in mult)
+    doubled.append(lowest_energy_cell(U2, Ls2, grid) / 2)
+check("doubled cells in each direction find no lower flux pattern of period two",
+      all(abs(e - e_ti) < 1e-6 for e in doubled), f"per-cell minimum {e_ti:.6f}; doubled {', '.join(f'{e:.6f}' for e in doubled)}")
 
 # ------------------------------------------------------------- D: more networks
 print("D. a search for more three-direction networks")

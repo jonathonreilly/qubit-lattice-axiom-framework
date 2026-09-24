@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py
+runner_sha256: cfdddf43078e520f1e9f355af44adedef6686a8916b9a48d9347029bd049cae0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 113.09
+status: ok
+----- stdout -----
+== A. The exact L = 2 torus ==
+[PASS] all 2^24 arrow patterns give 9600 ice configurations, 880 at zero flux, in 125 winding sectors, <W^2> = 76/25 :: 9600, 880, 125, 76/25
+[PASS] the worm reproduces <W^2> and the zero-flux fraction within 4 standard errors and visits all 125 sectors :: <W^2> 3.0367 +- 0.0094 vs 3.04; zero flux 0.09155 +- 0.00065 vs 0.09167; sectors 125
+
+== B. The winding stiffness ==
+[PASS] the sum-rule stiffness is K_L = 2/3 + 1/(3N) exactly: the projector's trace 2 is shared equally by the three directions :: L=8: 0.667318, L=12: 0.666860, L=16: 0.666748, L=24: 0.666691
+[PASS] c_W from <W^2> agrees with the sum-rule value K_L/2 within 1% on L = 8, 12, 16 and 24 :: L=8: 0.3329 +- 0.0013 (K_L/2 0.3337), L=12: 0.3350 +- 0.0011 (K_L/2 0.3334), L=16: 0.3356 +- 0.0013 (K_L/2 0.3334), L=24: 0.3350 +- 0.0024 (K_L/2 0.3333)
+[PASS] the combined value on L = 12, 16, 24 lies within 1% of 1/3 :: c_W = 0.3352 +- 0.0008, +0.56% from 1/3
+
+== C. The correlations on L = 8, 10^6 worms ==
+[PASS] K_L S_zz / P_zz agrees with 1 within 1% in every symmetry class with P_zz > 0.05 :: 70 classes; largest deviation +0.70% +- 0.27% at k = (4, 4, 4) 2pi/8
+[PASS] the smallest wavevectors lie below 1, and their stiffness K_L / (2 r) agrees with the winding value within 2 standard errors :: r = 0.9966 +- 0.0004 over 4 classes; c = 0.3348 +- 0.0001 vs winding 0.3352
+
+== D. The longitudinal null and the divergence ==
+[PASS] S_zz vanishes at k = (0, 0, k_z != 0) and no vertex carries divergence after sampling :: largest 1.2e-32, defects 0
+
+time 112 s
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

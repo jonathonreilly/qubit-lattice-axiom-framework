@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-the-two-source-interaction-under-light-cone-formation-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j09c0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-two-source-interaction-under-light-cone-formation/referee_w-macbookpro90c72-j09c0/check.py",
+ "seed": 22431,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4d477188",
+ "started_utc": "20260924T040031Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - two held sources stay reversible on the doubled ring, and the cross term of log Z is 2 beta R(x1-x2) plus O(h^4), nonnegative for mirror separations."
+ },
+ "review": "An independent doubled-ring enumeration confirms reversibility with sources on both vertices, the cross term 2 beta R, and nonnegative mirror correlations.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-two-source-interaction-under-light-cone-formation:a2/; its files are probes/work/derive/the-two-source-interaction-under-light-cone-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-two-source-interaction-under-light-cone-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "5b7499d589d748c38feb9b6584bfdbebd4450ef57facd4977dfb14d96c1b9b32",
+ "stdout_tail": "ok R1: on the ring of 4, pi(s) P(sn|s) equals the doubled weight for every pair of levels\nok R2: the level marginal of the doubled ferromagnet is the stationary weight, sources on both vertices\nok R3: at zero field the cross derivative of log Z is beta^2 <sigma_1 sigma_2> = 4*t**8*(t - 1)*(t + 1)*(t**4 - 2*t**2 + 3)/((t**2 + 1)*(t**4 + 1)*(t**8 - 4*t**6 + 8*t**4 - 4*t**2 + 1))\nok R4: the cross term is 2 beta R(x2-x1); at t=2 every Fourier mode of Rhat is nonnegative\nok R5: third-order cross terms vanish, and d<sigma_1>/d h2 = d<sigma_2>/d h1 = beta <sigma_1 sigma_2>\nok R6: on the ring of 4, sites one apart, <sigma_0 sigma_1> > 0 for every beta > 0 (4*t**8*(t - 1)*(t + 1)*(t**4 - 2*t**2 + 3)/((t**2 + 1)*(t**4 + 1)*(t**8 - 4*t**6 + 8*t**4 - 4*t**2 + 1)))\nok R7: ring of 6: mirror separations stay positive, and at t=2 the values are [105388032/30903325, 99606528/30903325, 97763328/30903325]\nok R8: R(0)-R(r) is the cosine transform of Rhat over k != 0\nSUMMARY: confirmed - two held sources stay reversible on the doubled ring, and the cross term of log Z is 2 beta R(x1-x2) plus O(h^4), nonnegative for mirror separations.\nHIT: confirmed - on the doubled light-cone ring the stationary law is the level marginal with each source on both vertices; at zero field d^2 log Z / dh1 dh2 = beta^2 <sigma_1 sigma_2> = 2 beta R, with R the Fourier response kernel, third order vanishing; mirror separations have <sigma sigma> > 0 for every beta > 0.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j09c0",
+  "at_utc": "20260924T040036Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

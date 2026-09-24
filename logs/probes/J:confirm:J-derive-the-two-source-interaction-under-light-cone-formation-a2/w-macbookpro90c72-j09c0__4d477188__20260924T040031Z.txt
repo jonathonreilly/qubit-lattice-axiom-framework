@@ -1,0 +1,10 @@
+ok R1: on the ring of 4, pi(s) P(sn|s) equals the doubled weight for every pair of levels
+ok R2: the level marginal of the doubled ferromagnet is the stationary weight, sources on both vertices
+ok R3: at zero field the cross derivative of log Z is beta^2 <sigma_1 sigma_2> = 4*t**8*(t - 1)*(t + 1)*(t**4 - 2*t**2 + 3)/((t**2 + 1)*(t**4 + 1)*(t**8 - 4*t**6 + 8*t**4 - 4*t**2 + 1))
+ok R4: the cross term is 2 beta R(x2-x1); at t=2 every Fourier mode of Rhat is nonnegative
+ok R5: third-order cross terms vanish, and d<sigma_1>/d h2 = d<sigma_2>/d h1 = beta <sigma_1 sigma_2>
+ok R6: on the ring of 4, sites one apart, <sigma_0 sigma_1> > 0 for every beta > 0 (4*t**8*(t - 1)*(t + 1)*(t**4 - 2*t**2 + 3)/((t**2 + 1)*(t**4 + 1)*(t**8 - 4*t**6 + 8*t**4 - 4*t**2 + 1)))
+ok R7: ring of 6: mirror separations stay positive, and at t=2 the values are [105388032/30903325, 99606528/30903325, 97763328/30903325]
+ok R8: R(0)-R(r) is the cosine transform of Rhat over k != 0
+SUMMARY: confirmed - two held sources stay reversible on the doubled ring, and the cross term of log Z is 2 beta R(x1-x2) plus O(h^4), nonnegative for mirror separations.
+HIT: confirmed - on the doubled light-cone ring the stationary law is the level marginal with each source on both vertices; at zero field d^2 log Z / dh1 dh2 = beta^2 <sigma_1 sigma_2> = 2 beta R, with R the Fourier response kernel, third order vanishing; mirror separations have <sigma sigma> > 0 for every beta > 0.

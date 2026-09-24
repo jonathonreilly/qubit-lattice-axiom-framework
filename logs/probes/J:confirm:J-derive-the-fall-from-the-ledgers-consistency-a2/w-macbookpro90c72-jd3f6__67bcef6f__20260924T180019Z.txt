@@ -1,0 +1,11 @@
+PASS A1 i[φ, S] = -C[dφ] at a generic site
+PASS A2 real part of v(x)e^{ik}+v(x-e)e^{-ik} is cos(k)(v(x)+v(x-e))
+PASS A2 v(x)+v(x-e) = φ(x+e)-φ(x-e), so f picks up cos k times the centred difference
+PASS B2 on the first axis, A=0 and B_00=1 are forced
+PASS B2 on the second axis the same coefficient would have to be 5/4 and 13/12
+PASS C1 cos k = 1 - k^2/2 + O(k^4)
+PASS C1 a species reflected along j has cos k - 1 = -2
+PASS B1 on a 3-torus, ∂F/∂B for F=Σ w curl^2 is not zero and its lattice divergence is 0 at every site
+TOTAL FAIL=0
+HIT: confirmed - the walk's first-order force is e times the centred difference of u times cos k, and a curl ledger stays divergence-free
+SUMMARY: confirmed - i[φ,S]=-C[dφ], the plane-wave factor cos k, the content-blind system is inconsistent (5/4 versus 13/12), and div ∂F/∂B=0.

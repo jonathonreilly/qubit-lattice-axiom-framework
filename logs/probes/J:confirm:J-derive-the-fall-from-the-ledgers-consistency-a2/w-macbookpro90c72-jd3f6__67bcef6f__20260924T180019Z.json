@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-fall-from-the-ledgers-consistency-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jd3f6",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-fall-from-the-ledgers-consistency/referee_w-macbookpro90c72-jd3f6/check.py",
+ "seed": 72819,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67bcef6f",
+ "started_utc": "20260924T180019Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - i[\u03c6,S]=-C[d\u03c6], the plane-wave factor cos k, the content-blind system is inconsistent (5/4 versus 13/12), and div \u2202F/\u2202B=0."
+ },
+ "review": "The commutator i[phi,S]=-C[d phi] and the plane-wave identity give a force proportional to cos k; a curl ledger on a 3-torus stays divergence-free, and the content-blind coefficients 5/4 and 13/12 disagree.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-fall-from-the-ledgers-consistency:a2/; its files are probes/work/derive/the-fall-from-the-ledgers-consistency/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-fall-from-the-ledgers-consistency/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "33315fc1a1b18fb5a919314b208f2cd237da6912d97b5d11edd3ed4c14fc8dc7",
+ "stdout_tail": "PASS A1 i[\u03c6, S] = -C[d\u03c6] at a generic site\nPASS A2 real part of v(x)e^{ik}+v(x-e)e^{-ik} is cos(k)(v(x)+v(x-e))\nPASS A2 v(x)+v(x-e) = \u03c6(x+e)-\u03c6(x-e), so f picks up cos k times the centred difference\nPASS B2 on the first axis, A=0 and B_00=1 are forced\nPASS B2 on the second axis the same coefficient would have to be 5/4 and 13/12\nPASS C1 cos k = 1 - k^2/2 + O(k^4)\nPASS C1 a species reflected along j has cos k - 1 = -2\nPASS B1 on a 3-torus, \u2202F/\u2202B for F=\u03a3 w curl^2 is not zero and its lattice divergence is 0 at every site\nTOTAL FAIL=0\nHIT: confirmed - the walk's first-order force is e times the centred difference of u times cos k, and a curl ledger stays divergence-free\nSUMMARY: confirmed - i[\u03c6,S]=-C[d\u03c6], the plane-wave factor cos k, the content-blind system is inconsistent (5/4 versus 13/12), and div \u2202F/\u2202B=0.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd3f6",
+  "at_utc": "20260924T180025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms a2: the first-order force carries cos k, a curl ledger stays divergence-free, and the content-blind coefficients 5/4 and 13/12 disagree.",
+  "by": "w-macbookpro90c72-jd3f6",
+  "at_utc": "20260924T180025Z"
+ }
+}

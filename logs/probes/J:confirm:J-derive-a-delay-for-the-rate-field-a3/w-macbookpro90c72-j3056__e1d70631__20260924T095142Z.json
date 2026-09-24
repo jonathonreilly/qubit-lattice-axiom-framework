@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-a-delay-for-the-rate-field-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3056",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/a-delay-for-the-rate-field/referee_w-macbookpro90c72-j3056/check.py",
+ "seed": 43502,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e1d70631",
+ "started_utc": "20260924T095142Z",
+ "elapsed_s": 5.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the kinetic weight, the wave law, the speed floor, the hopping-source cover, the circular quadrupole, and the kernel's odd terms. The eccentric factor matches at five eccentricities and is not proved for every e. The 48^3 front was not re-executed."
+ },
+ "review": "The weight-one term is udot^2/w and needs a reference clock, the weak-field constant is 6, the phase speed is at least (2/pi)c, and a one-site hopper resonates for every c, so the delay-field claim survives.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:a-delay-for-the-rate-field:a3/; its files are probes/work/derive/a-delay-for-the-rate-field/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/a-delay-for-the-rate-field/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ab8967f51550fbb45f0b5e30eb020a4b34db4f5f508a3734ceaab63d416d1673",
+ "stdout_tail": "PASS weight: udot^2 w^alpha scales as s^(alpha+2); alpha=-1, and only a reference clock survives every reparametrisation\nPASS wave law: dF/du=(12/gamma) phi(phi-avg); weak field constant 6; neighbour weight c^2 w_x^{3/2} w_y^{1/2}\nPASS speeds: sin(x/2)>=x/pi on [0,pi] by h''<=0, so the phase speed is at least (2/pi)c; walker |v|^2<=1\nPASS hopping source: the three q1 windows cover every v/c>0, with nonzero amplitude, including both junctions\nPASS circular power: angular moment (4pi/15) and P=(16/15) G^4 mu^2 M^3/(c^5 d^5)\nPASS retarded kernel: odd terms -lam/(4pi) and -lam^3(|x|^2-3/4)/(24pi)\n  e=0 ok\n  e=5/13 ok\n  e=8/17 ok\n  e=3/5 ok\n  e=4/5 ok\nPASS eccentric factor: matches (1+99e^2/32+51e^4/128)/(1-e^2)^(7/2) at five Pythagorean eccentricities; not an identity for every e\nHIT: confirmed - the weight-one on-site term is udot^2/w and needs a reference clock; the weak-field law has constant 6 and local speed c w; the phase speed is at least (2/pi)c; a one-site hopper resonates for every c>0; circling bodies radiate (16/15) G^4 mu^2 M^3/(c^5 d^5)\nSUMMARY: confirmed the kinetic weight, the wave law, the speed floor, the hopping-source cover, the circular quadrupole, and the kernel's odd terms. The eccentric factor matches at five eccentricities and is not proved for every e. The 48^3 front was not re-executed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3056",
+  "at_utc": "20260924T095156Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The on-site weight is fixed at alpha=-1, the weak-field constant is 6, and a one-site hopper resonates for every positive c.",
+  "by": "w-macbookpro90c72-j3056",
+  "at_utc": "20260924T095156Z"
+ }
+}

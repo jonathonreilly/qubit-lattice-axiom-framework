@@ -1,0 +1,14 @@
+PASS weight: udot^2 w^alpha scales as s^(alpha+2); alpha=-1, and only a reference clock survives every reparametrisation
+PASS wave law: dF/du=(12/gamma) phi(phi-avg); weak field constant 6; neighbour weight c^2 w_x^{3/2} w_y^{1/2}
+PASS speeds: sin(x/2)>=x/pi on [0,pi] by h''<=0, so the phase speed is at least (2/pi)c; walker |v|^2<=1
+PASS hopping source: the three q1 windows cover every v/c>0, with nonzero amplitude, including both junctions
+PASS circular power: angular moment (4pi/15) and P=(16/15) G^4 mu^2 M^3/(c^5 d^5)
+PASS retarded kernel: odd terms -lam/(4pi) and -lam^3(|x|^2-3/4)/(24pi)
+  e=0 ok
+  e=5/13 ok
+  e=8/17 ok
+  e=3/5 ok
+  e=4/5 ok
+PASS eccentric factor: matches (1+99e^2/32+51e^4/128)/(1-e^2)^(7/2) at five Pythagorean eccentricities; not an identity for every e
+HIT: confirmed - the weight-one on-site term is udot^2/w and needs a reference clock; the weak-field law has constant 6 and local speed c w; the phase speed is at least (2/pi)c; a one-site hopper resonates for every c>0; circling bodies radiate (16/15) G^4 mu^2 M^3/(c^5 d^5)
+SUMMARY: confirmed the kinetic weight, the wave law, the speed floor, the hopping-source cover, the circular quadrupole, and the kernel's odd terms. The eccentric factor matches at five eccentricities and is not proved for every e. The 48^3 front was not re-executed.

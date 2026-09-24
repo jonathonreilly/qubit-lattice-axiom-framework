@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:the-persistent-record-threshold-in-3d:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j0e93",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-persistent-record-threshold-in-3d/w-jonathonsmac4f50-j0e93/check.py",
+ "seed": 9997,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4040f090",
+ "started_utc": "20260924T003318Z",
+ "elapsed_s": 2.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED along the body diagonal k = kappa(1,1,1) the density branch, which is the leading multiplier, is non-real exactly when |sin kappa| > 3(1-p)/(3p+2) (p > 1/6; the line's (1-p)/p); along the axes it is real, simple and the unique root above (6p-1)/5 for every kappa in [0, pi] and p in (1/6, 1), and the leading multiplier is real there (no threshold on the axes); kappa* = 3(1-p)/5 + 9(1-p)^2/25 + O((1-p)^3)"
+ },
+ "review": "Body diagonal: full char poly = (lam-az)^2(lam-a/z)^2 Q; density (= leading) multiplier non-real iff |sin kappa| > 3(1-p)/(3p+2) (p>1/6), line analogue (1-p)/p. Axes: char poly = (lam-a)^3 P; secular function strictly decreasing above a=(6p-1)/5 (|N|<=D, D>=(lam-a)^2) -> unique simple real root above a = density branch for all kappa; leading real (P(a^{2/3})<0). kappa* = 3(1-p)/5 + 9(1-p)^2/25. Consistent with block 96 W2 grid. Same-family provenance.",
+ "what": "DERIVATION, independent attempt 1 of 2: A record with direction memory in 3D: the exact wave numbers where its density branch stops being real. SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). TASK: block 96 T2: a record that keeps its direction with probability p and otherwise turns to one of the other five has mode matrix M(k) = E(k)T, E = diag(exp(-i k.d)), T = pI + ((1 - p)/5)(J - I); its spectrum is closed under conjugation; on a line the branches are non-real iff |sin k| > (1 - p)/p. In 3D the executed grid found the leading multiplier real at long waves and non-real from |k| = 0.45 (p = 0.9, 0.99; grid-limited). (a) Along the axes and the body diagonal, the exact boundary (in k and p) where the leading multiplier leaves the real line (the discriminant of the characteristic polynomial restricted by symmetry); (b) its small-(1 - p) scaling (the memory length). HIT: (a) exact. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-persistent-record-threshold-in-3d/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-persistent-record-threshold-in-3d/<name>/check.py\"",
+ "stdout_sha256": "703e0ddc5601c5d1cf0cec7913bcf88e118cfc847731930f26b1d02f2b7a570a",
+ "stdout_tail": "(6p-1)/5 > a^2 (the other four multipliers a e^{+-i kappa}): it is the leading pair\n     when real, the larger root >= sqrt(a) > a (product a): the leading multiplier is real; so the leading multiplier leaves the real line exactly at the threshold\n     kappa* = asin(3 eps/(5 - 3 eps)), eps = 1 - p: 63*epsilon**3/250 + 9*epsilon**2/25 + 3*epsilon/5\nPASS B4 kappa* = 3 eps/5 + 9 eps^2/25 + O(eps^3): memory length 1/kappa* ~ 5/(3(1-p)) per coordinate, |k*| ~ 3 sqrt3 (1-p)/5\nPASS B4 check of 3(1-p)/(3p+2) = 3 eps/(5 - 3 eps)\nPASS B5 block 96 W2: at p = 9/10, 99/100 the first diagonal grid point (|k| = 0.453) is past the threshold; at p = 1/2 the first is real and the second (|k| = 0.907 > 0.8) is not\nPASS C the line's quarter-discriminant p^2 c^2 - (2p-1) = (1-p)^2 - p^2 s^2 (block 96 T2.1: |sin k| > (1-p)/p)\n\nSUMMARY: PROVED along the body diagonal k = kappa(1,1,1) the density branch, which is the leading multiplier, is non-real exactly when |sin kappa| > 3(1-p)/(3p+2) (p > 1/6; the line's (1-p)/p); along the axes it is real, simple and the unique root above (6p-1)/5 for every kappa in [0, pi] and p in (1/6, 1), and the leading multiplier is real there (no threshold on the axes); kappa* = 3(1-p)/5 + 9(1-p)^2/25 + O((1-p)^3)\nHIT: (a) exact: on the body diagonal the leading (density) multiplier leaves the real line exactly at |sin kappa| = 3(1-p)/(3p+2); on the axes it never does (secular function strictly decreasing above (6p-1)/5); (b) kappa* ~ 3(1-p)/5, memory length 5/(3(1-p))\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0e93",
+  "at_utc": "20260924T003345Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #8884. Body diagonal: leading (density) multiplier non-real iff |sin kappa| > 3(1-p)/(3p+2); axes: never (secular function strictly decreasing above (6p-1)/5); kappa* = 3(1-p)/5 + 9(1-p)^2/25. Matches block 96 W2 grid exactly.",
+  "by": "w-jonathonsmac4f50-j0e93",
+  "at_utc": "20260924T003345Z"
+ }
+}

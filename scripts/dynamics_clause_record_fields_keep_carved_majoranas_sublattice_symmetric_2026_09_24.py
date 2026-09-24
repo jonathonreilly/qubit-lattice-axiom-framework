@@ -1,35 +1,41 @@
 #!/usr/bin/env python3
-"""Record fields keep the carved Majoranas sublattice-symmetric, and the gapped networks stay non-chiral.
+"""Record fields keep the carved Majoranas sublattice-symmetric; a gapless start plus a time-reversal-odd term gives a Chern number.
 
 Open PR 9054 carved exactly solvable three-dimensional Kitaev networks: at
 the compass point of the fully soldered clause, with records as fields,
-every unrecorded site keeps at most one bond per axis, and records are
-orthogonal to kept axes, so record fields sit on dangling axes only. Open
-PR 9088 found no covariant time-reversal-odd star term that keeps a
-carving's Majoranas free. This runner asks whether the record fields
-themselves can make the carved Majoranas chiral (supplied models, finite
-diagnostics, no physical reading):
+every unrecorded site keeps at most one bond per axis, and its content rule
+makes records orthogonal to kept axes, so record fields sit on dangling
+axes only. Open PR 9088 found no covariant time-reversal-odd star term that
+keeps a carving's Majoranas free. This runner asks what record fields do to
+chirality (supplied models, finite diagnostics, no physical reading):
 
 1. Sublattice symmetry: give each c Majorana the parity of its site and
-   each dangling b Majorana the opposite parity. Bonds join neighbouring
-   sites and a dangling field joins b^a_j to c_j, so every coupling joins
-   opposite classes. The operator S = diag(+-1) anticommutes with the Bloch
-   Hamiltonian at every momentum, in every gauge sector and for any record
-   contents (both networks of open PR 9054, all sectors, random contents).
-2. So every weak Chern number vanishes: the negative-energy bands of the
-   lowest sector have Chern number 0 on the planes k_a = 0 and pi of each
-   axis, for both networks.
-3. The exception is a leaf: a site with a single kept bond (axis c) may
-   carry a field along c, since sigma^c_j = -i b^a_j b^b_j on the physical
-   space; that couples two dangling Majoranas of the same class. On a
-   two-site leaf pair the free-Majorana spectrum in one parity sector
-   equals the exact spin spectrum, and S no longer anticommutes.
-4. Gapped networks stay non-chiral under time-reversal-odd terms: adding
-   Kitaev's pattern s^a_i s^b_m s^c_k on every bond pair (its Majorana image
-   is a same-class hopping u_im u_mk c_i c_k) breaks S, yet the gap stays
-   open and every weak Chern number stays 0 up to kappa = 4. A Chern number
-   can change only where the gap vanishes, so chiral Majorana bands need a
-   gapless carving to start from.
+   each dangling b Majorana the opposite parity. Under the content rule
+   every coupling joins opposite classes, so S = diag(+-1) anticommutes with
+   the Bloch Hamiltonian (4x4x4 cells, an even period) in every gauge sector
+   and for any field values.
+2. So every weak Chern number of the lowest sector's negative bands vanishes
+   on the planes k_a = 0 and pi (both networks carry flat zero bands, 2 and 4
+   per cell; with particle-hole symmetry S forces zero on those planes).
+3. Outside the content rule, a leaf (a site with one kept bond, axis c) could
+   carry a field along c and stay solvable, since sigma^c_j = -i b^a_j b^b_j
+   on the physical space; that couples two same-class Majoranas and breaks
+   S. On a two-site leaf pair the free-Majorana spectrum in one parity
+   sector equals the exact spin spectrum.
+4. Kitaev's pattern s^a_i s^b_m s^c_k on every bond pair (Majorana image
+   -i eps_abc u_im u_mk c_i c_k, a same-class hopping) breaks S. Two exact zero
+   bands per cell stay at zero, the refined gap above them stays open at
+   kappa = 0.05, 0.2, 1, 4 (growing from zero in the 16-site network, where
+   kappa splits two of its four flat bands), and every weak Chern number
+   stays 0.
+5. A gapless start changes this: the 20-site network with its dangling
+   Majoranas decoupled (zero dangling fields) is gapless, and Kitaev's
+   pattern at kappa = 0.3 gaps it (0.0528) with weak Chern numbers (1, 0, 0).
+   Its records cannot all be chosen with zero fields (7 touch unrecorded
+   sites along all three axes).
+6. Zero dangling fields are realizable on other three-direction networks: a
+   SAT search finds 16 on 4x4x4 in which no record touches unrecorded sites
+   along all three axes; 8 of them have gapless dispersive Majorana bands.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -39,6 +45,9 @@ import sys
 AUDIT_TIMEOUT_SEC = 600
 
 import numpy as np
+from pysat.card import CardEnc, EncType
+from pysat.solvers import Glucose4
+from scipy.optimize import minimize
 
 RESULTS = []
 
@@ -258,6 +267,24 @@ def lowest_sector(G):
     return u_from_non(G, best[1])
 
 
+def lowest_k(G, kappa):
+    ks = [np.array(kk) * 2 * np.pi / 4 for kk in itertools.product(range(4), repeat=3)]
+    best = None
+    for u in itertools.product((1, -1), repeat=len(G["non"])):
+        E = sum(-0.5 * ev[ev > 0].sum() for ev in (np.linalg.eigvalsh(H_bloch(G, u_from_non(G, u), kk, kappa)) for kk in ks)) / len(ks)
+        if best is None or E < best[0] - 1e-12:
+            best = (E, u)
+    return u_from_non(G, best[1])
+
+
+def refined_gap(G, u, kappa, g=10, nseed=8):
+    f = lambda k: np.min(np.abs(np.linalg.eigvalsh(H_bloch(G, u, np.array(k), kappa))))
+    seeds = sorted((f(np.array(kk) * 2 * np.pi / g), kk) for kk in itertools.product(range(g), repeat=3))[:nseed]
+    return min(minimize(f, np.array(kk) * 2 * np.pi / g, method="Nelder-Mead",
+                        options={"xatol": 1e-8, "fatol": 1e-12, "maxiter": 3000}).fun for _, kk in seeds)
+
+
+
 rng = np.random.default_rng(20260924)
 NETS = {"20-site": build(N20), "16-site": build(N16)}
 
@@ -278,17 +305,21 @@ check("sublattice symmetry: every bond and every dangling-axis field joins oppos
 
 # ------------------------------------------------ 2. every weak Chern number vanishes
 LOW = {name: lowest_sector(G) for name, G in NETS.items()}
-cherns, tops = [], []
+cherns, tops, flats = [], {}, {}
 for name, G in NETS.items():
+    tops[name] = -9.0
     for plane in range(3):
         for kf in (0.0, np.pi):
             c, top = chern(G, LOW[name], plane, kf)
             cherns.append(c)
-            tops.append(top)
+            tops[name] = max(tops[name], top)
+    flats[name] = min(int(np.sum(np.abs(np.linalg.eigvalsh(H_bloch(G, LOW[name], np.array(kk) * 2 * np.pi / 4))) < 1e-9))
+                      for kk in itertools.product(range(4), repeat=3))
 check("so every weak Chern number of the lowest sector's negative bands vanishes",
-      all(c is not None and abs(c) < 1e-6 for c in cherns) and max(tops) < -0.1,
+      all(c is not None and abs(c) < 1e-6 for c in cherns) and max(tops.values()) < -0.1,
       f"planes k_a = 0, pi for each axis, both networks: largest |Chern number| {max(abs(c) for c in cherns):.0e}; "
-      f"highest negative band {max(tops):.3f}")
+      f"top of the negative bands {tops['20-site']:.3f} (20-site), {tops['16-site']:.3f} (16-site); "
+      f"flat zero bands per cell {flats['20-site']} and {flats['16-site']}")
 
 # ------------------------------------------------ 3. the leaf exception
 PX = np.array([[0, 1], [1, 0]], dtype=complex)
@@ -317,26 +348,121 @@ for _ in range(20):
     worst_leaf = max(worst_leaf, min(np.max(np.abs(np.sort(levels[p]) - spin)) for p in (0, 1)))
     Sl = np.diag([1.0, -1.0, -1.0, -1.0, 1.0, 1.0])
     sviol = max(sviol, np.linalg.norm(Sl @ (1j * A) @ Sl + 1j * A))
-check("the leaf exception: a field along a leaf's kept axis stays free-Majorana solvable and breaks the sublattice symmetry",
+check("outside the content rule, a leaf's kept-axis field stays free-Majorana solvable and breaks the sublattice symmetry",
       worst_leaf < 1e-12 and sviol > 0.1,
       f"two-site leaf pair, 20 random field sets: spin spectrum = one parity sector of the Majorana spectrum to {worst_leaf:.0e}; "
       f"|S H S + H| up to {sviol:.2f}")
 
 # ------------------------------------------------ 4. gapped networks stay non-chiral under time-reversal-odd terms
+def gap_above_flat(G, u, kappa):
+    """Number of exact zero modes per cell, and the refined smallest |E| of the remaining bands."""
+    grid = [np.array(kk) * 2 * np.pi / 6 for kk in itertools.product(range(6), repeat=3)]
+    nz = min(int(np.sum(np.abs(np.linalg.eigvalsh(H_bloch(G, u, k, kappa))) < 1e-9)) for k in grid)
+    f = lambda k: np.sort(np.abs(np.linalg.eigvalsh(H_bloch(G, u, np.array(k), kappa))))[nz]
+    seeds = sorted((f(k), tuple(k)) for k in grid)[:6]
+    return nz, min(minimize(f, np.array(k0), method="Nelder-Mead", options={"xatol": 1e-8, "fatol": 1e-12,
+                                                                                 "maxiter": 3000}).fun for _, k0 in seeds)
+
+
 rows, ok4 = [], True
 for name, G in NETS.items():
     S = np.diag(S_diag(G))
-    for kappa in (0.2, 1.0, 4.0):
+    for kappa in (0.05, 0.2, 1.0, 4.0):
         sv = max(np.linalg.norm(S @ H_bloch(G, LOW[name], k, kappa) @ S + H_bloch(G, LOW[name], k, kappa))
                  for k in [rng.uniform(0, 2 * np.pi, 3) for _ in range(3)])
-        gmin = min(np.abs(w)[np.abs(w) > 1e-7].min() for w in
-                   (np.linalg.eigvalsh(H_bloch(G, LOW[name], np.array(kk) * 2 * np.pi / 6, kappa))
-                    for kk in itertools.product(range(6), repeat=3)))
+        nz, gmin = gap_above_flat(G, LOW[name], kappa)
         cs = [chern(G, LOW[name], p, 0.0, N=16, kappa=kappa)[0] for p in range(3)]
-        ok4 &= sv > 0.1 and gmin > 0.1 and all(c is not None and abs(c) < 1e-6 for c in cs)
-        rows.append(f"{name} kappa {kappa}: |SHS+H| {sv:.1f}, gap {gmin:.3f}")
-check("gapped networks stay non-chiral: Kitaev's pattern breaks S, the gap stays open and every weak Chern number stays 0",
-      ok4, "; ".join(rows) + "; Chern numbers 0 on the three k = 0 planes throughout")
+        ok4 &= sv > 0.1 and gmin > 0.01 and nz == 2 and all(c is not None and abs(c) < 1e-6 for c in cs)
+        rows.append(f"{name} kappa {kappa}: gap {gmin:.4f}")
+check("Kitaev's pattern breaks S, yet with two flat zero bands per cell kept, the gap stays open and every weak Chern number stays 0",
+      ok4, "; ".join(rows) + "; two exact zero bands per cell at every kappa; Chern numbers 0 on the three k = 0 planes throughout")
+
+# ------------------------------------------------ 5. a gapless start plus Kitaev's pattern gives a Chern number
+G20z = dict(NETS["20-site"], live=[], dfield={})          # the 20-site network with its dangling Majoranas decoupled
+cs20 = set(N20)
+three_axis = sum(1 for r in itertools.product(range(4), repeat=3) if r not in cs20 and
+                 len({ax for ax in range(3) for d in (1, -1) if nbr(r, ax, d) in cs20}) == 3)
+
+
+gap0 = refined_gap(G20z, lowest_k(G20z, 0.0), 0.0)
+u3 = lowest_k(G20z, 0.3)
+gap3 = refined_gap(G20z, u3, 0.3)
+c5 = {(p, kf): chern(G20z, u3, p, kf, N=32, kappa=0.3)[0] for p in range(3) for kf in (0.4, 1.9, 3.5)}
+weak = [sorted({round(abs(c5[(p, kf)]), 6) * np.sign(round(c5[(p, kf)], 6)) + 0.0 for kf in (0.4, 1.9, 3.5)}) for p in range(3)]
+check("a gapless start plus Kitaev's pattern gives a Chern number: the 20-site network with decoupled dangling Majoranas",
+      gap0 < 1e-9 and gap3 > 0.04 and weak == [[1.0], [0.0], [0.0]] and three_axis == 7,
+      f"gap at kappa 0 {gap0:.0e}; at kappa 0.3 {gap3:.4f}; weak Chern numbers on planes normal to x, y, z "
+      f"{[int(round(float(w[0]))) for w in weak]} (three planes each); "
+      f"but {three_axis} of its records touch unrecorded sites along all three axes, so zero dangling fields are not realizable there")
+
+# ------------------------------------------------ 6. where zero dangling fields are realizable
+def search_zero_field(Ls, maxsol):
+    """Relaxed carvings in which no record touches unrecorded sites along all three axes, so every record can avoid them."""
+    sites = list(itertools.product(*[range(l) for l in Ls]))
+    idx_s = {s: i + 1 for i, s in enumerate(sites)}
+    cls, top = [], len(sites)
+    for s in sites:
+        u = idx_s[s]
+        for ax in range(3):
+            cls.append([-u, -idx_s[nbr(s, ax, 1, Ls)], -idx_s[nbr(s, ax, -1, Ls)]])
+        for sx, sy, sz in itertools.product((1, -1), repeat=3):
+            cls.append([u, -idx_s[nbr(s, 0, sx, Ls)], -idx_s[nbr(s, 1, sy, Ls)], -idx_s[nbr(s, 2, sz, Ls)]])
+        enc = CardEnc.atleast(lits=[idx_s[nbr(s, ax, d, Ls)] for ax in range(3) for d in (1, -1)], bound=2,
+                              top_id=top, encoding=EncType.seqcounter)
+        top = max(top, enc.nv)
+        for c in enc.clauses:
+            cls.append([-u] + c)
+    cls.append([idx_s[(0, 0, 0)]])
+    g = Glucose4(bootstrap_with=cls)
+    out = []
+    while len(out) < maxsol and g.solve():
+        m = g.get_model()
+        U = frozenset(s for s in sites if m[idx_s[s] - 1] > 0)
+        out.append(U)
+        g.add_clause([-idx_s[s] if s in U else idx_s[s] for s in sites])
+    g.delete()
+    return out
+
+
+def comps(U):
+    Uset, seen, out = set(U), set(), []
+    for s in sorted(U):
+        if s in seen:
+            continue
+        comp, stack = {s}, [s]
+        while stack:
+            v = stack.pop()
+            for ax in range(3):
+                for d in (1, -1):
+                    w = nbr(v, ax, d)
+                    if w in Uset and w not in comp:
+                        comp.add(w)
+                        stack.append(w)
+        seen |= comp
+        out.append(frozenset(comp))
+    return out
+
+
+zf = set()
+for U in search_zero_field(L3, 3000):
+    for c in comps(U):
+        if len(c) >= 8 and winding_rank(c)[1] == 3:
+            zf.add(c)
+zstats = []
+for c in sorted(zf, key=lambda x: (len(x), sorted(x))):
+    Gz = dict(build(c), live=[], dfield={})
+    ok_zero = all(len({ax for ax in range(3) for d in (1, -1) if nbr(r, ax, d) in c}) <= 2
+                  for r in itertools.product(range(4), repeat=3) if r not in c)
+    u = lowest_k(Gz, 0.0)
+    ev = np.array([np.sort(np.abs(np.linalg.eigvalsh(H_bloch(Gz, u, np.array(kk) * 2 * np.pi / 8))))
+                   for kk in itertools.product(range(8), repeat=3)])
+    nflat = int(np.sum(ev.max(axis=0) < 1e-8))
+    zstats.append((len(c), ok_zero, float(ev[:, nflat:].min())))
+ngapless = sum(1 for z in zstats if z[2] < 1e-6)
+check("zero dangling fields are realizable on other three-direction networks, and half of them are gapless",
+      len(zf) >= 10 and all(z[1] for z in zstats) and ngapless >= 4,
+      f"{len(zf)} distinct networks in 3000 solutions on 4x4x4, every record touching at most two axes; "
+      f"{ngapless} have gapless dispersive Majorana bands on an 8^3 grid, sizes {sorted({z[0] for z in zstats if z[2] < 1e-6})}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

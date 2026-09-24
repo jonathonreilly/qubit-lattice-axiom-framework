@@ -1,0 +1,1141 @@
+===== runner cache v1 =====
+runner: scripts/actual_first_output_components_and_two_birth_bounds_2026_09_24.py
+runner_sha256: e78cf1ae2da4a5de2dc70d0d49d2de48552ffbffd180b2885e8f7390be64bab3
+input_fingerprint_sha256: cca67f0a58a29bcaca5477db5654d394a31d60d19680ce9476af112bc2438ee5
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; no audit verdict or native physical law is established by finite controls.
+[PASS] component flat_band_spin_correction_probe.py; stdout sha256=286f50bdf8b82a62f0dd531e257c4ade073bc9688493424e8e0d25cd93d2897d
+[PASS] component flat_compressed_operators.py; stdout sha256=70866b7e9b7757976549d0056c32a74104b31408f16f7b59e82a6d4654fda218
+[PASS] component actual_output_check.py; stdout sha256=70d8aaeff9d0bd9976e66cf832ec42c1b5c5c5dc2a8664bde7d0d5fd00432b6f
+RESULT ACTUAL_OUTPUT_CONTROLS.json
+{
+  "source_sha256": "86090728d83471084981505fa614867b450545958e2e66eb9a0a251443aa64a3",
+  "first_sector_exact_weight_controls": [
+    {
+      "S": 1,
+      "one_hop_paths": 8,
+      "distinct_grade2_outputs": 20,
+      "A_dagger_A": 8.0,
+      "Z_dagger_Z": 80.0,
+      "H2": -8.0,
+      "H4": 24.0,
+      "first_marks": [
+        {
+          "edge": 0,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 1,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 2,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 3,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 4,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 5,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 6,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 7,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        }
+      ]
+    },
+    {
+      "S": 2,
+      "one_hop_paths": 8,
+      "distinct_grade2_outputs": 20,
+      "A_dagger_A": 8.0,
+      "Z_dagger_Z": 80.0,
+      "H2": -8.0,
+      "H4": 24.0,
+      "first_marks": [
+        {
+          "edge": 0,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 1,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 2,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 3,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 4,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 5,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 6,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 7,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        }
+      ]
+    },
+    {
+      "S": 4,
+      "one_hop_paths": 8,
+      "distinct_grade2_outputs": 20,
+      "A_dagger_A": 8.0,
+      "Z_dagger_Z": 80.0,
+      "H2": -8.0,
+      "H4": 24.0,
+      "first_marks": [
+        {
+          "edge": 0,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 1,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 2,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 3,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 4,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 5,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 6,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 7,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        }
+      ]
+    },
+    {
+      "S": 8,
+      "one_hop_paths": 8,
+      "distinct_grade2_outputs": 20,
+      "A_dagger_A": 8.0,
+      "Z_dagger_Z": 80.0,
+      "H2": -8.0,
+      "H4": 24.0,
+      "first_marks": [
+        {
+          "edge": 0,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 1,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 2,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 3,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 4,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 5,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 6,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        },
+        {
+          "edge": 7,
+          "resolved_grams": [
+            1,
+            1
+          ],
+          "coherent_gram": 2
+        }
+      ]
+    }
+  ],
+  "complete_finite_spin_loss_controls": [
+    {
+      "S": 1,
+      "P_dimension": 48,
+      "minimum_loss_without_kappa": 0.0,
+      "maximum_loss_without_kappa": 4.0,
+      "off_diagonal_nonzero_entries": 0
+    },
+    {
+      "S": 2,
+      "P_dimension": 120,
+      "minimum_loss_without_kappa": 0.0,
+      "maximum_loss_without_kappa": 4.0,
+      "off_diagonal_nonzero_entries": 0
+    },
+    {
+      "S": 4,
+      "P_dimension": 264,
+      "minimum_loss_without_kappa": 0.0,
+      "maximum_loss_without_kappa": 4.0,
+      "off_diagonal_nonzero_entries": 0
+    },
+    {
+      "S": 8,
+      "P_dimension": 552,
+      "minimum_loss_without_kappa": 0.0,
+      "maximum_loss_without_kappa": 4.0,
+      "off_diagonal_nonzero_entries": 0
+    }
+  ],
+  "symbolic_two_birth_lower_bound": "1/2 - 2*exp(-4*k*t)/3 + exp(-16*k*t)/6",
+  "scope": "Fresh exact path/loss/convolution controls only; historical saved-vector diagnostics are not replayed by this control."
+}
+
+RESULT FLAT_BAND_SPIN_CORRECTION_RESULTS.json
+{
+  "source_sha256": "791330246ebb0f35b696edd17cead1c95fc4db9ccd43792b569c01293e375d4b",
+  "status": "author exploratory exact-rational flat-projector and leading spin correction controls",
+  "exact_rows": [
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "0",
+      "D2_leakage_norm_squared": "0",
+      "flat_compressed_expectation": "0"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "75",
+      "D2_leakage_norm_squared": "29/2",
+      "flat_compressed_expectation": "11"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2225/2",
+      "D2_leakage_norm_squared": "109/2",
+      "flat_compressed_expectation": "46"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "81/2",
+      "D2_leakage_norm_squared": "17/2",
+      "flat_compressed_expectation": "8"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1473",
+      "D2_leakage_norm_squared": "137/2",
+      "flat_compressed_expectation": "53"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2080",
+      "D2_leakage_norm_squared": "32",
+      "flat_compressed_expectation": "64"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "0",
+      "D2_leakage_norm_squared": "0",
+      "flat_compressed_expectation": "0"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "75",
+      "D2_leakage_norm_squared": "29/2",
+      "flat_compressed_expectation": "11"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2225/2",
+      "D2_leakage_norm_squared": "109/2",
+      "flat_compressed_expectation": "46"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "81/2",
+      "D2_leakage_norm_squared": "17/2",
+      "flat_compressed_expectation": "8"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1473",
+      "D2_leakage_norm_squared": "137/2",
+      "flat_compressed_expectation": "53"
+    }
+  ],
+  "finite_spin_core_expansion": [
+    {
+      "S": 8,
+      "core_expansion_residual_norm": 0.004979872200340616
+    },
+    {
+      "S": 16,
+      "core_expansion_residual_norm": 0.0013046294986268816
+    },
+    {
+      "S": 32,
+      "core_expansion_residual_norm": 0.0003351217725739629
+    },
+    {
+      "S": 64,
+      "core_expansion_residual_norm": 8.500923182638994e-05
+    },
+    {
+      "S": 128,
+      "core_expansion_residual_norm": 2.1413202925062014e-05
+    }
+  ],
+  "invariant_under_D2_on_tested_vectors": false,
+  "scope": "Finite-support core identities do not establish uniform ordinary-time convergence or an invariant finite-spin band."
+}
+
+RESULT FLAT_COMPRESSED_OPERATORS_RESULTS.json
+{
+  "source_sha256": "59d9e1edc8f199e2ead35101849717df9e682ff7ecea1f474d3159b5f8552dc4",
+  "rows": [
+    {
+      "kind": 0,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 2,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 3,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 + 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 - 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 2,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 3,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    }
+  ],
+  "status": "author exact symbolic identities in the compact flat basis",
+  "scope": "Compression and invariant H4, not yet a joint-scaling time-limit proof."
+}
+
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,1321 @@
+===== runner cache v1 =====
+runner: scripts/exact_fast_spectrum_and_formation_outputs_on_rings_2026_09_24.py
+runner_sha256: fc7cef5ba2db4d624754bd5dc67bcf3a51d27ef4c02566d5223a5224b9213889
+input_fingerprint_sha256: 93a387c1ff5d33ce8eb87ffa116dd74c5b302fe94998f4ec8645d4931067f541
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; no audit verdict or native physical law is established by finite controls.
+[PASS] component ring_spectrum_check.py; stdout sha256=495f160ff855d3bd4b8565b678a57c87880f14720add0deb8d28e3729fbd1ee2
+RESULT RING_SPECTRUM_RESULTS.json
+{
+  "status": "author calculation, all stated assertions passed",
+  "source_sha256": "f4f0d47b3f9f2826baef239e57397dcf520c81eaec6e09bf8286f53053ac6336",
+  "model": "unit rotor, 2L ring, first-birth P sector, supplied Gauss background",
+  "rows": [
+    {
+      "L": 3,
+      "sites": 6,
+      "P_dimension": 15,
+      "integer_Laurent_entries": 45,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 1.7763568394002505e-15,
+          "bottom": -3.9999999999999996,
+          "top": -0.043704798532388206
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 1.3322676295501878e-15,
+          "bottom": -3.996738207852271,
+          "top": -0.023156450309275406
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 1.7763568394002505e-15,
+          "bottom": -3.9562952014676123,
+          "top": 2.7755575615628923e-16
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 8.881784197001252e-16,
+          "bottom": -3.956295201467611,
+          "top": 3.868061248243078e-16
+        }
+      ],
+      "ground_energy_theta_zero_formula": -4.0,
+      "gap_theta_zero": 0.17290908471479627,
+      "gap_formula": 0.1729090847147983,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -2.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.0666666666666656,
+          "ground_weight_formula": 0.06666666666666665
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -1.9999999999999996,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.13333333333333072,
+          "ground_weight_formula": 0.1333333333333333
+        }
+      ],
+      "full_spectral_measures": [
+        {
+          "theta": 0,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999999,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            1.2412670766236366e-16,
+            3.4021815010030383e-16,
+            6.866350197783356e-16,
+            5.273559366969494e-16
+          ],
+          "lowest_band_weight": 0.0666666666666656,
+          "lowest_band_formula": 0.06666666666666665,
+          "mean_H2": -2.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0,
+          "coherent": true,
+          "measure_normalization": 1.0000000000000002,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            3.1401849173675503e-16,
+            4.718447854656915e-16,
+            8.045527044939629e-16,
+            2.7755575615628914e-16
+          ],
+          "lowest_band_weight": 0.13333333333333072,
+          "lowest_band_formula": 0.1333333333333333,
+          "mean_H2": -1.9999999999999996,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.17,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999999,
+          "characteristic_function_errors": [
+            4.440892098500626e-16,
+            2.7755575615628914e-16,
+            4.545902364027965e-16,
+            6.866350197783356e-16,
+            1.417981262901691e-15
+          ],
+          "lowest_band_weight": 0.06666666666666679,
+          "lowest_band_formula": 0.06666666666666665,
+          "mean_H2": -2.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.17,
+          "coherent": true,
+          "measure_normalization": 1.0000000000000002,
+          "characteristic_function_errors": [
+            4.440892098500626e-16,
+            3.3306690738754696e-16,
+            9.550499576785472e-16,
+            1.6759547664370165e-15,
+            2.0920506204726484e-15
+          ],
+          "lowest_band_weight": 0.13317925938355724,
+          "lowest_band_formula": 0.13317925938355743,
+          "mean_H2": -1.9999999999999996,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.41,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999999,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            2.482534153247273e-16,
+            5.978733960281817e-16,
+            5.117875266520903e-16,
+            1.1240151438116956e-15
+          ],
+          "lowest_band_weight": 0.06666666666666585,
+          "lowest_band_formula": 0.06666666666666665,
+          "mean_H2": -2.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.41,
+          "coherent": true,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            2.0014830212433605e-16,
+            7.947987303456224e-16,
+            2.5447867175859907e-16,
+            1.7012605680568566e-15
+          ],
+          "lowest_band_weight": 0.1324388076293864,
+          "lowest_band_formula": 0.1324388076293884,
+          "mean_H2": -1.9999999999999996,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 1.31,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999999,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            1.6653345369377348e-16,
+            6.355057114912527e-16,
+            1.616509124176106e-15,
+            1.2024924957129406e-15
+          ],
+          "lowest_band_weight": 0.06666666666666544,
+          "lowest_band_formula": 0.06666666666666665,
+          "mean_H2": -2.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 1.31,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999994,
+          "characteristic_function_errors": [
+            7.771561172376096e-16,
+            8.455206652451151e-16,
+            5.224024053540252e-16,
+            7.021666937153402e-16,
+            1.5956438783387494e-15
+          ],
+          "lowest_band_weight": 0.05277972461611836,
+          "lowest_band_formula": 0.05277972461612056,
+          "mean_H2": -1.9999999999999996,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 2.7,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999999,
+          "characteristic_function_errors": [
+            1.1102230246251565e-16,
+            2.482534153247273e-16,
+            2.0816681711721685e-16,
+            1.4936523181711914e-15,
+            1.8763261812221954e-15
+          ],
+          "lowest_band_weight": 0.06666666666666654,
+          "lowest_band_formula": 0.06666666666666665,
+          "mean_H2": -2.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 2.7,
+          "coherent": true,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            4.440892098500626e-16,
+            5.978733960281817e-16,
+            1.1857187100668868e-16,
+            2.5616550616280874e-15,
+            1.836121011167253e-15
+          ],
+          "lowest_band_weight": 0.02045711700835442,
+          "lowest_band_formula": 0.020457117008354564,
+          "mean_H2": -1.9999999999999996,
+          "variance_H2": 2.0
+        }
+      ],
+      "crossing_theta": 1.0471975511965976,
+      "crossing_lowest_gap": 2.6645352591003757e-15
+    },
+    {
+      "L": 4,
+      "sites": 8,
+      "P_dimension": 36,
+      "integer_Laurent_entries": 132,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 4.440892098500626e-15,
+          "bottom": -6.828427124746189,
+          "top": -1.17157287525381
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 3.9968028886505635e-15,
+          "bottom": -6.825223476168273,
+          "top": -1.1747765238317271
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 5.329070518200751e-15,
+          "bottom": -6.817664105611033,
+          "top": -1.1823358943889644
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 6.217248937900877e-15,
+          "bottom": -6.828427124746188,
+          "top": -1.1715728752538102
+        }
+      ],
+      "ground_energy_theta_zero_formula": -6.82842712474619,
+      "gap_theta_zero": 0.0963763171773131,
+      "gap_formula": 0.09637631717731274,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -4.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.020833333333334324,
+          "ground_weight_formula": 0.02083333333333333
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -3.999999999999999,
+          "variance_H2": 2.0000000000000036,
+          "ground_weight_theta_zero": 0.04166666666666873,
+          "ground_weight_formula": 0.04166666666666666
+        }
+      ],
+      "full_spectral_measures": [
+        {
+          "theta": 0,
+          "coherent": false,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            3.3306690738754696e-16,
+            3.885780586188048e-16,
+            2.0740677722252305e-15,
+            2.897767167584095e-15,
+            6.905060640371374e-15
+          ],
+          "lowest_band_weight": 0.020833333333334324,
+          "lowest_band_formula": 0.02083333333333333,
+          "mean_H2": -4.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999997,
+          "characteristic_function_errors": [
+            0.0,
+            1.1102230246251565e-16,
+            1.0948510389028343e-15,
+            2.6322838298561117e-15,
+            6.217496750601531e-15
+          ],
+          "lowest_band_weight": 0.04166666666666873,
+          "lowest_band_formula": 0.04166666666666666,
+          "mean_H2": -3.999999999999999,
+          "variance_H2": 2.0000000000000036
+        },
+        {
+          "theta": 0.17,
+          "coherent": false,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            1.1102230246251565e-16,
+            2.2887833992611187e-16,
+            8.617648093045562e-16,
+            1.9492241005813414e-15,
+            4.631440094463846e-15
+          ],
+          "lowest_band_weight": 0.020833333333333773,
+          "lowest_band_formula": 0.02083333333333333,
+          "mean_H2": -4.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.17,
+          "coherent": true,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            3.3306690738754696e-16,
+            4.965068306494546e-16,
+            1.3732700395566711e-15,
+            2.3592239273284576e-15,
+            5.4978463891955944e-15
+          ],
+          "lowest_band_weight": 0.04163322654235998,
+          "lowest_band_formula": 0.041633226542359035,
+          "mean_H2": -3.999999999999999,
+          "variance_H2": 2.0000000000000036
+        },
+        {
+          "theta": 0.41,
+          "coherent": false,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            5.551115123125783e-16,
+            3.554447978966673e-16,
+            6.206335383118183e-16,
+            7.001065424966057e-16,
+            1.2008898127460164e-15
+          ],
+          "lowest_band_weight": 0.020833333333332787,
+          "lowest_band_formula": 0.02083333333333333,
+          "mean_H2": -4.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.41,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999994,
+          "characteristic_function_errors": [
+            5.551115123125783e-16,
+            3.1401849173675503e-16,
+            4.335559509131367e-16,
+            1.5100665727558131e-15,
+            1.6326319374041212e-15
+          ],
+          "lowest_band_weight": 0.04147240912232891,
+          "lowest_band_formula": 0.04147240912233032,
+          "mean_H2": -3.999999999999999,
+          "variance_H2": 2.0000000000000036
+        },
+        {
+          "theta": 1.31,
+          "coherent": false,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            0.0,
+            3.554447978966673e-16,
+            1.0269562977782698e-15,
+            1.0937950820210114e-15,
+            1.2658490090568385e-15
+          ],
+          "lowest_band_weight": 0.020833333333333242,
+          "lowest_band_formula": 0.02083333333333333,
+          "mean_H2": -4.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 1.31,
+          "coherent": true,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            0.0,
+            4.440892098500626e-16,
+            1.2123818431320796e-15,
+            1.1102230246251565e-15,
+            2.1210781103223385e-15
+          ],
+          "lowest_band_weight": 0.02264213867772409,
+          "lowest_band_formula": 0.022642138677724105,
+          "mean_H2": -3.999999999999999,
+          "variance_H2": 2.0000000000000036
+        },
+        {
+          "theta": 2.7,
+          "coherent": false,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            1.1102230246251565e-16,
+            5.551115123125783e-17,
+            3.7238012298709097e-16,
+            5.214799211354908e-16,
+            1.4002130849932114e-15
+          ],
+          "lowest_band_weight": 0.02083333333333433,
+          "lowest_band_formula": 0.02083333333333333,
+          "mean_H2": -4.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 2.7,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999999,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            1.2412670766236366e-16,
+            5.4672143489065705e-16,
+            2.0933390557824782e-15,
+            4.470285125465932e-15
+          ],
+          "lowest_band_weight": 0.00022529193040237935,
+          "lowest_band_formula": 0.00022529193040229004,
+          "mean_H2": -3.999999999999999,
+          "variance_H2": 2.0000000000000036
+        }
+      ],
+      "crossing_theta": 0.7853981633974483,
+      "crossing_lowest_gap": 7.105427357601002e-15
+    },
+    {
+      "L": 5,
+      "sites": 10,
+      "P_dimension": 70,
+      "integer_Laurent_entries": 280,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 7.993605777301127e-15,
+          "bottom": -9.236067977499786,
+          "top": -2.7769594807890425
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 1.0658141036401503e-14,
+          "bottom": -9.233374919607941,
+          "top": -2.767809789163879
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 8.881784197001252e-15,
+          "bottom": -9.23461961794468,
+          "top": -2.7697241642427235
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 1.5987211554602254e-14,
+          "bottom": -9.223040519210956,
+          "top": -2.763932022500211
+        }
+      ],
+      "ground_energy_theta_zero_formula": -9.23606797749979,
+      "gap_theta_zero": 0.05200494372122044,
+      "gap_formula": 0.05200494372122205,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -6.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.007896948635714642,
+          "ground_weight_formula": 0.007896948635714886
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -5.999999999999999,
+          "variance_H2": 2.000000000000007,
+          "ground_weight_theta_zero": 0.015793897271429387,
+          "ground_weight_formula": 0.015793897271429772
+        }
+      ],
+      "full_spectral_measures": [
+        {
+          "theta": 0,
+          "coherent": false,
+          "measure_normalization": 1.0000000000000002,
+          "characteristic_function_errors": [
+            6.661338147750939e-16,
+            5.661048867003676e-16,
+            1.117140368961273e-15,
+            7.313212328083572e-16,
+            3.636239032463771e-15
+          ],
+          "lowest_band_weight": 0.007896948635714642,
+          "lowest_band_formula": 0.007896948635714886,
+          "mean_H2": -6.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999999,
+          "characteristic_function_errors": [
+            7.771561172376096e-16,
+            7.108895957933346e-16,
+            8.252325904466732e-16,
+            6.800116025829084e-16,
+            2.942745555079944e-15
+          ],
+          "lowest_band_weight": 0.015793897271429387,
+          "lowest_band_formula": 0.015793897271429772,
+          "mean_H2": -5.999999999999999,
+          "variance_H2": 2.000000000000007
+        },
+        {
+          "theta": 0.17,
+          "coherent": false,
+          "measure_normalization": 1.0000000000000002,
+          "characteristic_function_errors": [
+            5.551115123125783e-16,
+            4.965068306494546e-16,
+            1.336885555457667e-15,
+            2.0548969324686372e-16,
+            1.4416220074117225e-15
+          ],
+          "lowest_band_weight": 0.007896948635714473,
+          "lowest_band_formula": 0.007896948635714886,
+          "mean_H2": -6.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.17,
+          "coherent": true,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            5.551115123125783e-16,
+            9.155133597044475e-16,
+            1.8906416838689214e-15,
+            1.8007465805506306e-15,
+            1.9076784904469936e-15
+          ],
+          "lowest_band_weight": 0.015784583926490472,
+          "lowest_band_formula": 0.015784583926490917,
+          "mean_H2": -5.999999999999999,
+          "variance_H2": 2.000000000000007
+        },
+        {
+          "theta": 0.41,
+          "coherent": false,
+          "measure_normalization": 1.0000000000000002,
+          "characteristic_function_errors": [
+            4.440892098500626e-16,
+            3.3306690738754696e-16,
+            1.0429598422709816e-15,
+            1.6310091157577475e-15,
+            1.9144628656769427e-15
+          ],
+          "lowest_band_weight": 0.007896948635712808,
+          "lowest_band_formula": 0.007896948635714886,
+          "mean_H2": -6.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.41,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999997,
+          "characteristic_function_errors": [
+            1.1102230246251565e-16,
+            1.5700924586837752e-16,
+            2.7755575615628914e-16,
+            9.126689985681992e-16,
+            3.749366326470556e-15
+          ],
+          "lowest_band_weight": 0.01573977646570477,
+          "lowest_band_formula": 0.015739776465708694,
+          "mean_H2": -5.999999999999999,
+          "variance_H2": 2.000000000000007
+        },
+        {
+          "theta": 1.31,
+          "coherent": false,
+          "measure_normalization": 1.0000000000000002,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            2.220446049250313e-16,
+            5.578801654593729e-16,
+            1.3751664079143219e-15,
+            2.429000050565505e-15
+          ],
+          "lowest_band_weight": 0.007896948635714178,
+          "lowest_band_formula": 0.007896948635714886,
+          "mean_H2": -6.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 1.31,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999992,
+          "characteristic_function_errors": [
+            7.771561172376096e-16,
+            4.965068306494546e-16,
+            1.577923392343183e-15,
+            1.1190085865828747e-15,
+            3.4919186434040926e-15
+          ],
+          "lowest_band_weight": 0.010222452381720553,
+          "lowest_band_formula": 0.010222452381721306,
+          "mean_H2": -5.999999999999999,
+          "variance_H2": 2.000000000000007
+        },
+        {
+          "theta": 2.7,
+          "coherent": false,
+          "measure_normalization": 1.0000000000000002,
+          "characteristic_function_errors": [
+            7.771561172376096e-16,
+            5.551115123125783e-16,
+            9.305364597889227e-16,
+            8.473977695066119e-16,
+            7.866468891400838e-16
+          ],
+          "lowest_band_weight": 0.007896948635713837,
+          "lowest_band_formula": 0.007896948635714886,
+          "mean_H2": -6.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 2.7,
+          "coherent": true,
+          "measure_normalization": 1.0000000000000002,
+          "characteristic_function_errors": [
+            5.551115123125783e-16,
+            9.550499576785472e-16,
+            8.899114524108741e-16,
+            1.4391316559686128e-15,
+            2.7938506530605797e-15
+          ],
+          "lowest_band_weight": 0.0012697539059824358,
+          "lowest_band_formula": 0.0012697539059824759,
+          "mean_H2": -5.999999999999999,
+          "variance_H2": 2.000000000000007
+        }
+      ],
+      "crossing_theta": 0.6283185307179586,
+      "crossing_lowest_gap": 1.7763568394002505e-15
+    },
+    {
+      "L": 6,
+      "sites": 12,
+      "P_dimension": 120,
+      "integer_Laurent_entries": 504,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 1.687538997430238e-14,
+          "bottom": -11.464101615137759,
+          "top": -4.5358983848622465
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 1.5987211554602254e-14,
+          "bottom": -11.461894378467022,
+          "top": -4.538105621532974
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 1.7763568394002505e-14,
+          "bottom": -11.464101615137757,
+          "top": -4.535898384862245
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 2.1316282072803006e-14,
+          "bottom": -11.464101615137757,
+          "top": -4.535898384862242
+        }
+      ],
+      "ground_energy_theta_zero_formula": -11.464101615137755,
+      "gap_theta_zero": 0.02963586953270614,
+      "gap_formula": 0.02963586953271085,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -8.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.003472222222221665,
+          "ground_weight_formula": 0.0034722222222222216
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -7.999999999999998,
+          "variance_H2": 2.000000000000014,
+          "ground_weight_theta_zero": 0.0069444444444433494,
+          "ground_weight_formula": 0.006944444444444443
+        }
+      ],
+      "full_spectral_measures": [
+        {
+          "theta": 0,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999982,
+          "characteristic_function_errors": [
+            1.1102230246251565e-16,
+            4.742874840267547e-16,
+            1.6946818973100072e-15,
+            1.2864492221661732e-15,
+            4.92909641155799e-15
+          ],
+          "lowest_band_weight": 0.003472222222221665,
+          "lowest_band_formula": 0.0034722222222222216,
+          "mean_H2": -8.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0,
+          "coherent": true,
+          "measure_normalization": 1.0000000000000004,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            1.1102230246251565e-16,
+            5.900916318210353e-16,
+            3.1237355943225943e-15,
+            6.011885869537829e-15
+          ],
+          "lowest_band_weight": 0.0069444444444433494,
+          "lowest_band_formula": 0.006944444444444443,
+          "mean_H2": -7.999999999999998,
+          "variance_H2": 2.000000000000014
+        },
+        {
+          "theta": 0.17,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999982,
+          "characteristic_function_errors": [
+            0.0,
+            3.510833468576701e-16,
+            8.196123257993793e-16,
+            1.5141582328301013e-15,
+            4.734583805226381e-15
+          ],
+          "lowest_band_weight": 0.0034722222222216023,
+          "lowest_band_formula": 0.0034722222222222216,
+          "mean_H2": -8.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.17,
+          "coherent": true,
+          "measure_normalization": 1.0000000000000004,
+          "characteristic_function_errors": [
+            6.661338147750939e-16,
+            4.002966042486721e-16,
+            7.850462293418876e-16,
+            1.2050523549074438e-15,
+            3.1685150487415682e-15
+          ],
+          "lowest_band_weight": 0.0069413090657312465,
+          "lowest_band_formula": 0.00694130906573244,
+          "mean_H2": -7.999999999999998,
+          "variance_H2": 2.000000000000014
+        },
+        {
+          "theta": 0.41,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999982,
+          "characteristic_function_errors": [
+            8.881784197001252e-16,
+            6.473657049138938e-16,
+            5.266250202865052e-16,
+            4.4066073871272337e-16,
+            4.754636230798038e-15
+          ],
+          "lowest_band_weight": 0.0034722222222195905,
+          "lowest_band_formula": 0.0034722222222222216,
+          "mean_H2": -8.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.41,
+          "coherent": true,
+          "measure_normalization": 1.0000000000000007,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            4.002966042486721e-16,
+            1.0007415106216803e-15,
+            3.9760830838584946e-15,
+            5.09207030855567e-15
+          ],
+          "lowest_band_weight": 0.006926220391002073,
+          "lowest_band_formula": 0.006926220391006924,
+          "mean_H2": -7.999999999999998,
+          "variance_H2": 2.000000000000014
+        },
+        {
+          "theta": 1.31,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999982,
+          "characteristic_function_errors": [
+            3.3306690738754696e-16,
+            4.47545209131181e-16,
+            1.8209011484034673e-15,
+            2.2455015447334305e-15,
+            4.422204501751134e-15
+          ],
+          "lowest_band_weight": 0.0034722222222227316,
+          "lowest_band_formula": 0.0034722222222222216,
+          "mean_H2": -8.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 1.31,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999996,
+          "characteristic_function_errors": [
+            3.3306690738754696e-16,
+            2.220446049250313e-16,
+            1.773752845565297e-15,
+            5.128945751067252e-15,
+            1.060691587480924e-14
+          ],
+          "lowest_band_weight": 0.00500716587429533,
+          "lowest_band_formula": 0.005007165874294754,
+          "mean_H2": -7.999999999999998,
+          "variance_H2": 2.000000000000014
+        },
+        {
+          "theta": 2.7,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999982,
+          "characteristic_function_errors": [
+            3.3306690738754696e-16,
+            5.4672143489065705e-16,
+            1.9333506759164896e-15,
+            9.813077866773594e-16,
+            8.089262399160908e-15
+          ],
+          "lowest_band_weight": 0.0034722222222214167,
+          "lowest_band_formula": 0.0034722222222222216,
+          "mean_H2": -8.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 2.7,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999986,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            5.551115123125783e-17,
+            4.041272810440265e-16,
+            1.985651512828512e-15,
+            1.6667795129466248e-15
+          ],
+          "lowest_band_weight": 2.113781434488403e-05,
+          "lowest_band_formula": 2.1137814344923442e-05,
+          "mean_H2": -7.999999999999998,
+          "variance_H2": 2.000000000000014
+        }
+      ],
+      "crossing_theta": 0.5235987755982988,
+      "crossing_lowest_gap": 5.329070518200751e-15
+    },
+    {
+      "L": 7,
+      "sites": 14,
+      "P_dimension": 189,
+      "integer_Laurent_entries": 819,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 2.1316282072803006e-14,
+          "bottom": -13.603875471609676,
+          "top": -6.400604429518726
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 1.0658141036401503e-14,
+          "bottom": -13.602061073053445,
+          "top": -6.396717018545929
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 1.9539925233402755e-14,
+          "bottom": -13.603377613119434,
+          "top": -6.398115824797664
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 2.3092638912203256e-14,
+          "bottom": -13.599395570481276,
+          "top": -6.396124528390327
+        }
+      ],
+      "ground_energy_theta_zero_formula": -13.603875471609676,
+      "gap_theta_zero": 0.017908466773549847,
+      "gap_formula": 0.017908466773548418,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -10.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.0017075292432711074,
+          "ground_weight_formula": 0.0017075292432710497
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -9.999999999999998,
+          "variance_H2": 2.0000000000000284,
+          "ground_weight_theta_zero": 0.003415058486542207,
+          "ground_weight_formula": 0.0034150584865420995
+        }
+      ],
+      "full_spectral_measures": [
+        {
+          "theta": 0,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999984,
+          "characteristic_function_errors": [
+            1.1102230246251565e-16,
+            3.554447978966673e-16,
+            7.791361360319881e-16,
+            2.4205105832903127e-15,
+            1.6897156987036545e-14
+          ],
+          "lowest_band_weight": 0.0017075292432711074,
+          "lowest_band_formula": 0.0017075292432710497,
+          "mean_H2": -10.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0,
+          "coherent": true,
+          "measure_normalization": 1.0000000000000009,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            1.6653345369377348e-16,
+            7.850462293418876e-17,
+            2.554116267445248e-15,
+            1.3113393333667927e-14
+          ],
+          "lowest_band_weight": 0.003415058486542207,
+          "lowest_band_formula": 0.0034150584865420995,
+          "mean_H2": -9.999999999999998,
+          "variance_H2": 2.0000000000000284
+        },
+        {
+          "theta": 0.17,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999984,
+          "characteristic_function_errors": [
+            1.1102230246251565e-16,
+            1.2412670766236366e-16,
+            2.9893669801409083e-16,
+            1.1165368122018449e-15,
+            1.0671468390601982e-15
+          ],
+          "lowest_band_weight": 0.0017075292432710712,
+          "lowest_band_formula": 0.0017075292432710497,
+          "mean_H2": -10.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.17,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999992,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            1.2412670766236366e-16,
+            3.3306690738754696e-16,
+            2.2541902238434278e-15,
+            4.05369801782883e-15
+          ],
+          "lowest_band_weight": 0.0034138401723076907,
+          "lowest_band_formula": 0.0034138401723075758,
+          "mean_H2": -9.999999999999998,
+          "variance_H2": 2.0000000000000284
+        },
+        {
+          "theta": 0.41,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999984,
+          "characteristic_function_errors": [
+            3.3306690738754696e-16,
+            8.08254562088053e-16,
+            3.1130819905933367e-15,
+            1.367085373352145e-15,
+            3.0537440611031887e-15
+          ],
+          "lowest_band_weight": 0.0017075292432743767,
+          "lowest_band_formula": 0.0017075292432710497,
+          "mean_H2": -10.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.41,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999994,
+          "characteristic_function_errors": [
+            5.551115123125783e-16,
+            3.510833468576701e-16,
+            1.0007415106216803e-15,
+            3.7846434683331464e-15,
+            3.7940016542693825e-15
+          ],
+          "lowest_band_weight": 0.0034079760875799373,
+          "lowest_band_formula": 0.003407976087574274,
+          "mean_H2": -9.999999999999998,
+          "variance_H2": 2.0000000000000284
+        },
+        {
+          "theta": 1.31,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999984,
+          "characteristic_function_errors": [
+            1.1102230246251565e-16,
+            4.335559509131367e-16,
+            1.8452761694870047e-15,
+            3.0084086470522814e-15,
+            6.803800430019991e-15
+          ],
+          "lowest_band_weight": 0.0017075292432755988,
+          "lowest_band_formula": 0.0017075292432710497,
+          "mean_H2": -10.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 1.31,
+          "coherent": true,
+          "measure_normalization": 1.0000000000000002,
+          "characteristic_function_errors": [
+            5.551115123125783e-16,
+            6.661338147750939e-16,
+            3.0247210793422136e-15,
+            3.4611380855266443e-15,
+            3.406610016784883e-15
+          ],
+          "lowest_band_weight": 0.00264551387240723,
+          "lowest_band_formula": 0.002645513872401806,
+          "mean_H2": -9.999999999999998,
+          "variance_H2": 2.0000000000000284
+        },
+        {
+          "theta": 2.7,
+          "coherent": false,
+          "measure_normalization": 0.9999999999999984,
+          "characteristic_function_errors": [
+            1.1102230246251565e-16,
+            4.47545209131181e-16,
+            1.609823385706477e-15,
+            1.2914547347233453e-15,
+            4.484329640908488e-15
+          ],
+          "lowest_band_weight": 0.001707529243270651,
+          "lowest_band_formula": 0.0017075292432710497,
+          "mean_H2": -10.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 2.7,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999991,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            1.6653345369377348e-16,
+            9.836601059614785e-16,
+            7.861494254617655e-16,
+            7.825214349576628e-15
+          ],
+          "lowest_band_weight": 0.0001679140998080688,
+          "lowest_band_formula": 0.00016791409980810616,
+          "mean_H2": -9.999999999999998,
+          "variance_H2": 2.0000000000000284
+        }
+      ],
+      "crossing_theta": 0.4487989505128276,
+      "crossing_lowest_gap": 7.105427357601002e-15
+    },
+    {
+      "L": 8,
+      "sites": 16,
+      "P_dimension": 280,
+      "integer_Laurent_entries": 1240,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 3.375077994860476e-14,
+          "bottom": -15.695518130045132,
+          "top": -8.30448186995485
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 2.6645352591003757e-14,
+          "bottom": -15.694011071248159,
+          "top": -8.305988928751843
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 2.6645352591003757e-14,
+          "bottom": -15.694251768279603,
+          "top": -8.305748231720395
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 3.019806626980426e-14,
+          "bottom": -15.695518130045157,
+          "top": -8.304481869954856
+        }
+      ],
+      "ground_energy_theta_zero_formula": -15.695518130045148,
+      "gap_theta_zero": 0.01139204907809166,
+      "gap_formula": 0.011392049078104202,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -12.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.000915291308792575,
+          "ground_weight_formula": 0.000915291308792039
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -11.999999999999998,
+          "variance_H2": 2.0000000000000284,
+          "ground_weight_theta_zero": 0.0018305826175853198,
+          "ground_weight_formula": 0.001830582617584078
+        }
+      ],
+      "full_spectral_measures": [
+        {
+          "theta": 0,
+          "coherent": false,
+          "measure_normalization": 1.000000000000004,
+          "characteristic_function_errors": [
+            0.0,
+            3.560242600308623e-16,
+            8.968100940422724e-16,
+            5.03067415305548e-15,
+            4.4661472488073795e-15
+          ],
+          "lowest_band_weight": 0.000915291308792575,
+          "lowest_band_formula": 0.000915291308792039,
+          "mean_H2": -12.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0,
+          "coherent": true,
+          "measure_normalization": 1.0,
+          "characteristic_function_errors": [
+            3.3306690738754696e-16,
+            4.666406150377611e-16,
+            2.1868857395626282e-15,
+            2.499581831544355e-15,
+            3.0426238769654992e-15
+          ],
+          "lowest_band_weight": 0.0018305826175853198,
+          "lowest_band_formula": 0.001830582617584078,
+          "mean_H2": -11.999999999999998,
+          "variance_H2": 2.0000000000000284
+        },
+        {
+          "theta": 0.17,
+          "coherent": false,
+          "measure_normalization": 1.000000000000004,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            3.1835838817813215e-16,
+            3.7238012298709097e-16,
+            8.66796450260712e-15,
+            4.982435067732258e-15
+          ],
+          "lowest_band_weight": 0.0009152913087920651,
+          "lowest_band_formula": 0.000915291308792039,
+          "mean_H2": -12.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.17,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999994,
+          "characteristic_function_errors": [
+            3.3306690738754696e-16,
+            5.2186064346577e-16,
+            2.482534153247273e-16,
+            4.254577577305031e-15,
+            4.8209285616867845e-15
+          ],
+          "lowest_band_weight": 0.001830053630169556,
+          "lowest_band_formula": 0.0018300536301696627,
+          "mean_H2": -11.999999999999998,
+          "variance_H2": 2.0000000000000284
+        },
+        {
+          "theta": 0.41,
+          "coherent": false,
+          "measure_normalization": 1.000000000000004,
+          "characteristic_function_errors": [
+            6.661338147750939e-16,
+            1.339624409766476e-15,
+            4.7791200441584545e-15,
+            7.954042913708769e-16,
+            2.0358293740687926e-15
+          ],
+          "lowest_band_weight": 0.0009152913088012329,
+          "lowest_band_formula": 0.000915291308792039,
+          "mean_H2": -12.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 0.41,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999988,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            2.237793284010081e-16,
+            1.7244233337941968e-15,
+            3.2752755289039277e-15,
+            9.411759764366413e-15
+          ],
+          "lowest_band_weight": 0.0016092232665214376,
+          "lowest_band_formula": 0.0016092232665036212,
+          "mean_H2": -11.999999999999998,
+          "variance_H2": 2.0000000000000284
+        },
+        {
+          "theta": 1.31,
+          "coherent": false,
+          "measure_normalization": 1.000000000000004,
+          "characteristic_function_errors": [
+            0.0,
+            6.253503693717357e-16,
+            1.688305753616065e-15,
+            7.13728569058591e-16,
+            5.297171784805952e-15
+          ],
+          "lowest_band_weight": 0.00091529130879126,
+          "lowest_band_formula": 0.000915291308792039,
+          "mean_H2": -12.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 1.31,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999994,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            8.331586284770563e-16,
+            2.9790409838967277e-15,
+            1.3071668013916034e-15,
+            9.50120827712435e-15
+          ],
+          "lowest_band_weight": 0.0009630105867538138,
+          "lowest_band_formula": 0.0009630105867548681,
+          "mean_H2": -11.999999999999998,
+          "variance_H2": 2.0000000000000284
+        },
+        {
+          "theta": 2.7,
+          "coherent": false,
+          "measure_normalization": 1.000000000000004,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            8.701484314627448e-16,
+            3.7763906117083025e-15,
+            1.8256017552473245e-15,
+            6.5505510578078555e-15
+          ],
+          "lowest_band_weight": 0.0009152913087920638,
+          "lowest_band_formula": 0.000915291308792039,
+          "mean_H2": -12.0,
+          "variance_H2": 2.0
+        },
+        {
+          "theta": 2.7,
+          "coherent": true,
+          "measure_normalization": 0.9999999999999998,
+          "characteristic_function_errors": [
+            2.220446049250313e-16,
+            3.891391154111657e-16,
+            1.807312143953211e-15,
+            3.969265663829997e-15,
+            6.5650150997899276e-15
+          ],
+          "lowest_band_weight": 0.00022514432278690683,
+          "lowest_band_formula": 0.00022514432278688079,
+          "mean_H2": -11.999999999999998,
+          "variance_H2": 2.0000000000000284
+        }
+      ],
+      "crossing_theta": 0.39269908169872414,
+      "crossing_lowest_gap": 5.329070518200751e-15
+    }
+  ],
+  "scope": "Exact factorization coefficients; floating spectral and overlap controls. No laboratory-time rotor/field convergence or subsequent-formation law is proved by this runner."
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

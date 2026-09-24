@@ -1,0 +1,168 @@
+===== runner cache v1 =====
+runner: scripts/cube_actual_formation_local_density_limit_2026_09_24.py
+runner_sha256: af17843a3aef26a4ff383c66f482a66d408a68933596118502099357d7b7d717
+input_fingerprint_sha256: a5586e7cf2940f416ce95c960d0a8005195eed44df8704bceb89c2cbdae97151
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 1.19
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; no audit verdict or native physical law is established by finite controls.
+[PASS] component cube_physical_controls.py; stdout sha256=0b2b25cc27a2e9676614b50de010200b4fc5afd6ee46802ad59579b565c3bd54
+RESULT CUBE_LOCAL_LIMIT_CONTROLS.json
+{
+  "source_sha256": "3a00b0626be41fe5b1f8c0bd08427935a4c8cd60a5043b785895acd46d0a4bb3",
+  "exact_rotor_first_sector": {
+    "H2_diagonal": -12,
+    "H4_diagonal": 60,
+    "ZdaggerZ_diagonal": 168,
+    "face_shifts": [
+      [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "H4_face_coefficient": -2,
+    "total_H4_Laurent_terms": 13
+  },
+  "complete_spin_operator_controls": [
+    {
+      "S": 1,
+      "dimensions": {
+        "P4": 69,
+        "Q4": 840,
+        "P6": 1308,
+        "Q6": 3168,
+        "R6": 1128,
+        "P8": 672
+      },
+      "first_electric_identity_max_error": 0.0,
+      "first_loss_diagonal_range": [
+        20.0,
+        48.0
+      ],
+      "first_zero_field_loss": 48.0,
+      "P6_to_Q6_max_column_entries": 6,
+      "P6_to_Q6_max_row_entries": 3,
+      "Q6_to_R6_max_column_entries": 3,
+      "Q6_to_R6_max_row_entries": 6,
+      "next_bare_creation_gram_range": [
+        0.0,
+        2.0
+      ],
+      "coherent_resolved_cross_gram_max": 0.0
+    },
+    {
+      "S": 2,
+      "dimensions": {
+        "P4": 767,
+        "Q4": 11112,
+        "P6": 22092,
+        "Q6": 56832,
+        "R6": 20856,
+        "P8": 14964
+      },
+      "first_electric_identity_max_error": 1.7763568394002505e-15,
+      "first_loss_diagonal_range": [
+        12.444444444444441,
+        48.0
+      ],
+      "first_zero_field_loss": 48.0,
+      "P6_to_Q6_max_column_entries": 6,
+      "P6_to_Q6_max_row_entries": 3,
+      "Q6_to_R6_max_column_entries": 3,
+      "Q6_to_R6_max_row_entries": 6,
+      "next_bare_creation_gram_range": [
+        0.0,
+        2.0
+      ],
+      "coherent_resolved_cross_gram_max": 0.0
+    }
+  ],
+  "scope": "Finite complete physical spin matrices corroborate exact combinatorial bounds. No finite-window limiting dynamics inferred numerically."
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

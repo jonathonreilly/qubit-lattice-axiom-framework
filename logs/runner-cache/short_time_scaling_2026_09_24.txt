@@ -1,0 +1,1524 @@
+===== runner cache v1 =====
+runner: scripts/short_time_scaling_2026_09_24.py
+runner_sha256: 308ec6654e3cc3513f3e97a5b25011799a55e3c3cc4e25d3478a7fad60986acc
+input_fingerprint_sha256: f99e28f51df45498ee5256bd922ee5ca8e8f9383af5a5ad8912a3762fe8b532a
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; no audit verdict or native physical law is established by finite controls.
+[PASS] component core_derivation.py; stdout sha256=bc366227dd6d37747b6d6fe41ea5393b8f6ec8714b4cfaa4eb6059eb4c154de2
+[PASS] component residue_polynomial_check.py; stdout sha256=949904d6c291834f16614fb071cfc2c9eb45521c2319c57ef3e105a3c41026e3
+[PASS] component finite_spin_jacobi_coefficients.py; stdout sha256=5f2ef6367d55dcdf0260254ccab994ff58cef15b9e4165925b89896a7eac6685
+[PASS] component scaled_time_limit_probe.py; stdout sha256=a949c81f66b19c86ff30fe267eb847cc9b737a9ebf5609eda04d4a0d1c593c5d
+RESULT CORE_D_RESULTS.json
+{
+  "claim_status": "independent exact path-coefficient reconstruction on a finite electric-support core; fixed-time convergence not established",
+  "source_revision": "b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953",
+  "source_note_sha256": "76d7f2faf3a0b4635499ddff1d8a88868d691d58c035780af737129701e30eeb",
+  "model": "six-site alternating ring, q=(1,-1,1,0,1,1), E=(1,0,0,0,0,1), actual resolved first-mark output",
+  "basis": "physical integer-link-flux states; all ordered P->Pi1->P legal-hop paths are enumerated",
+  "path_coordinate": "n=0 is actual output; positive direction is selected by vacancy moving to site 5; one path edge per H2 off-diagonal",
+  "P_charge_words": 15,
+  "paths_from_initial": 4,
+  "initial_H2_terms": {
+    "diagonal": -2,
+    "distinct_neighbors": 2,
+    "neighbor_amplitudes": [
+      -1,
+      -1
+    ]
+  },
+  "D_matrix_rows_n_minus8_to8": {
+    "0": {
+      "-1": "0",
+      "0": "0",
+      "1": "0"
+    },
+    "1": {
+      "0": "0",
+      "1": "2",
+      "2": "1"
+    },
+    "2": {
+      "1": "1",
+      "2": "0",
+      "3": "0"
+    },
+    "3": {
+      "2": "0",
+      "3": "2",
+      "4": "2"
+    },
+    "4": {
+      "3": "2",
+      "4": "4",
+      "5": "1"
+    },
+    "5": {
+      "4": "1",
+      "5": "2",
+      "6": "2"
+    },
+    "6": {
+      "5": "2",
+      "6": "8",
+      "7": "4"
+    },
+    "7": {
+      "6": "4",
+      "7": "4",
+      "8": "2"
+    },
+    "8": {
+      "7": "2",
+      "8": "8",
+      "9": "6"
+    },
+    "-1": {
+      "-2": "0",
+      "-1": "0",
+      "0": "0"
+    },
+    "-2": {
+      "-3": "0",
+      "-2": "0",
+      "-1": "0"
+    },
+    "-3": {
+      "-4": "0",
+      "-3": "0",
+      "-2": "0"
+    },
+    "-4": {
+      "-5": "0",
+      "-4": "0",
+      "-3": "0"
+    },
+    "-5": {
+      "-6": "1",
+      "-5": "2",
+      "-4": "0"
+    },
+    "-6": {
+      "-7": "0",
+      "-6": "0",
+      "-5": "1"
+    },
+    "-7": {
+      "-8": "2",
+      "-7": "2",
+      "-6": "0"
+    },
+    "-8": {
+      "-9": "1",
+      "-8": "4",
+      "-7": "2"
+    }
+  },
+  "H2_infinity_matrix_rows_n_minus8_to8": {
+    "0": {
+      "-1": -1,
+      "0": -2,
+      "1": -1
+    },
+    "1": {
+      "0": -1,
+      "1": -2,
+      "2": -1
+    },
+    "2": {
+      "1": -1,
+      "2": -2,
+      "3": -1
+    },
+    "3": {
+      "2": -1,
+      "3": -2,
+      "4": -1
+    },
+    "4": {
+      "3": -1,
+      "4": -2,
+      "5": -1
+    },
+    "5": {
+      "4": -1,
+      "5": -2,
+      "6": -1
+    },
+    "6": {
+      "5": -1,
+      "6": -2,
+      "7": -1
+    },
+    "7": {
+      "6": -1,
+      "7": -2,
+      "8": -1
+    },
+    "8": {
+      "7": -1,
+      "8": -2,
+      "9": -1
+    },
+    "-1": {
+      "-2": -1,
+      "-1": -2,
+      "0": -1
+    },
+    "-2": {
+      "-3": -1,
+      "-2": -2,
+      "-1": -1
+    },
+    "-3": {
+      "-4": -1,
+      "-3": -2,
+      "-2": -1
+    },
+    "-4": {
+      "-5": -1,
+      "-4": -2,
+      "-3": -1
+    },
+    "-5": {
+      "-6": -1,
+      "-5": -2,
+      "-4": -1
+    },
+    "-6": {
+      "-7": -1,
+      "-6": -2,
+      "-5": -1
+    },
+    "-7": {
+      "-8": -1,
+      "-7": -2,
+      "-6": -1
+    },
+    "-8": {
+      "-9": -1,
+      "-8": -2,
+      "-7": -1
+    }
+  },
+  "finite_spin_core_comparison": [
+    {
+      "S": 5,
+      "C": 30,
+      "fixed_core_entries": 15,
+      "max_abs_C_times_remainder": 0.017246507621123452,
+      "scaled_by_C": 0.0005748835873707818
+    },
+    {
+      "S": 8,
+      "C": 72,
+      "fixed_core_entries": 15,
+      "max_abs_C_times_remainder": 0.007042602804606446,
+      "scaled_by_C": 9.781392784175619e-05
+    },
+    {
+      "S": 12,
+      "C": 156,
+      "fixed_core_entries": 15,
+      "max_abs_C_times_remainder": 0.0032258400194908887,
+      "scaled_by_C": 2.067846166340313e-05
+    },
+    {
+      "S": 20,
+      "C": 420,
+      "fixed_core_entries": 15,
+      "max_abs_C_times_remainder": 0.0011933191217337047,
+      "scaled_by_C": 2.8412360041278683e-06
+    },
+    {
+      "S": 32,
+      "C": 1056,
+      "fixed_core_entries": 15,
+      "max_abs_C_times_remainder": 0.00047393375582061026,
+      "scaled_by_C": 4.4880090513315363e-07
+    }
+  ],
+  "interpretation": "The matrix rows include both diagonal returns and each distinct two-hop endpoint. Fixed-core agreement does not bound propagation to flux values growing with S or time."
+}
+
+RESULT D_RESIDUE_POLYNOMIALS.json
+{
+  "status": "exact rational path-coefficient identity checked across cycle windings",
+  "coordinate": "n increases by one vacancy hop; 15 steps shift every E by +3",
+  "basis": "D[n,n] and D[n,n+1], each quadratic in k where n=r+15k",
+  "rows": [
+    {
+      "n_mod_15": 0,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "0",
+          "0"
+        ],
+        "samples_k0_to3": [
+          "0",
+          "18",
+          "72",
+          "162"
+        ],
+        "sample_k_minus1": "18"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "3",
+          "0"
+        ],
+        "samples_k0_to3": [
+          "0",
+          "12",
+          "42",
+          "90"
+        ],
+        "sample_k_minus1": "6"
+      }
+    },
+    {
+      "n_mod_15": 1,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "12",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "32",
+          "98",
+          "200"
+        ],
+        "sample_k_minus1": "8"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "6",
+          "1"
+        ],
+        "samples_k0_to3": [
+          "1",
+          "16",
+          "49",
+          "100"
+        ],
+        "sample_k_minus1": "4"
+      }
+    },
+    {
+      "n_mod_15": 2,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "6",
+          "0"
+        ],
+        "samples_k0_to3": [
+          "0",
+          "24",
+          "84",
+          "180"
+        ],
+        "sample_k_minus1": "12"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "3",
+          "0"
+        ],
+        "samples_k0_to3": [
+          "0",
+          "12",
+          "42",
+          "90"
+        ],
+        "sample_k_minus1": "6"
+      }
+    },
+    {
+      "n_mod_15": 3,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "12",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "32",
+          "98",
+          "200"
+        ],
+        "sample_k_minus1": "8"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "9",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "20",
+          "56",
+          "110"
+        ],
+        "sample_k_minus1": "2"
+      }
+    },
+    {
+      "n_mod_15": 4,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "18",
+          "4"
+        ],
+        "samples_k0_to3": [
+          "4",
+          "40",
+          "112",
+          "220"
+        ],
+        "sample_k_minus1": "4"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "6",
+          "1"
+        ],
+        "samples_k0_to3": [
+          "1",
+          "16",
+          "49",
+          "100"
+        ],
+        "sample_k_minus1": "4"
+      }
+    },
+    {
+      "n_mod_15": 5,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "12",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "32",
+          "98",
+          "200"
+        ],
+        "sample_k_minus1": "8"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "9",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "20",
+          "56",
+          "110"
+        ],
+        "sample_k_minus1": "2"
+      }
+    },
+    {
+      "n_mod_15": 6,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "24",
+          "8"
+        ],
+        "samples_k0_to3": [
+          "8",
+          "50",
+          "128",
+          "242"
+        ],
+        "sample_k_minus1": "2"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "12",
+          "4"
+        ],
+        "samples_k0_to3": [
+          "4",
+          "25",
+          "64",
+          "121"
+        ],
+        "sample_k_minus1": "1"
+      }
+    },
+    {
+      "n_mod_15": 7,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "18",
+          "4"
+        ],
+        "samples_k0_to3": [
+          "4",
+          "40",
+          "112",
+          "220"
+        ],
+        "sample_k_minus1": "4"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "9",
+          "2"
+        ],
+        "samples_k0_to3": [
+          "2",
+          "20",
+          "56",
+          "110"
+        ],
+        "sample_k_minus1": "2"
+      }
+    },
+    {
+      "n_mod_15": 8,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "24",
+          "8"
+        ],
+        "samples_k0_to3": [
+          "8",
+          "50",
+          "128",
+          "242"
+        ],
+        "sample_k_minus1": "2"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "15",
+          "6"
+        ],
+        "samples_k0_to3": [
+          "6",
+          "30",
+          "72",
+          "132"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 9,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "30",
+          "12"
+        ],
+        "samples_k0_to3": [
+          "12",
+          "60",
+          "144",
+          "264"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "12",
+          "4"
+        ],
+        "samples_k0_to3": [
+          "4",
+          "25",
+          "64",
+          "121"
+        ],
+        "sample_k_minus1": "1"
+      }
+    },
+    {
+      "n_mod_15": 10,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "24",
+          "8"
+        ],
+        "samples_k0_to3": [
+          "8",
+          "50",
+          "128",
+          "242"
+        ],
+        "sample_k_minus1": "2"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "15",
+          "6"
+        ],
+        "samples_k0_to3": [
+          "6",
+          "30",
+          "72",
+          "132"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 11,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "36",
+          "18"
+        ],
+        "samples_k0_to3": [
+          "18",
+          "72",
+          "162",
+          "288"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "18",
+          "9"
+        ],
+        "samples_k0_to3": [
+          "9",
+          "36",
+          "81",
+          "144"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 12,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "30",
+          "12"
+        ],
+        "samples_k0_to3": [
+          "12",
+          "60",
+          "144",
+          "264"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "15",
+          "6"
+        ],
+        "samples_k0_to3": [
+          "6",
+          "30",
+          "72",
+          "132"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 13,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "36",
+          "18"
+        ],
+        "samples_k0_to3": [
+          "18",
+          "72",
+          "162",
+          "288"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "21",
+          "12"
+        ],
+        "samples_k0_to3": [
+          "12",
+          "42",
+          "90",
+          "156"
+        ],
+        "sample_k_minus1": "0"
+      }
+    },
+    {
+      "n_mod_15": 14,
+      "diag": {
+        "quadratic_k2_k_const": [
+          "18",
+          "42",
+          "24"
+        ],
+        "samples_k0_to3": [
+          "24",
+          "84",
+          "180",
+          "312"
+        ],
+        "sample_k_minus1": "0"
+      },
+      "right": {
+        "quadratic_k2_k_const": [
+          "9",
+          "18",
+          "9"
+        ],
+        "samples_k0_to3": [
+          "9",
+          "36",
+          "81",
+          "144"
+        ],
+        "sample_k_minus1": "0"
+      }
+    }
+  ],
+  "weighted_laplacian_remainder": [
+    {
+      "n_mod_15": 0,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "0"
+      ],
+      "samples_k_minus1_to3": [
+        "3",
+        "0",
+        "-3",
+        "-6",
+        "-9"
+      ]
+    },
+    {
+      "n_mod_15": 1,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "1"
+      ],
+      "samples_k_minus1_to3": [
+        "-2",
+        "1",
+        "4",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "n_mod_15": 2,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-1"
+      ],
+      "samples_k_minus1_to3": [
+        "2",
+        "-1",
+        "-4",
+        "-7",
+        "-10"
+      ]
+    },
+    {
+      "n_mod_15": 3,
+      "remainder_alpha_k_plus_beta": [
+        "0",
+        "0"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "n_mod_15": 4,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "1"
+      ],
+      "samples_k_minus1_to3": [
+        "-2",
+        "1",
+        "4",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "n_mod_15": 5,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-1"
+      ],
+      "samples_k_minus1_to3": [
+        "2",
+        "-1",
+        "-4",
+        "-7",
+        "-10"
+      ]
+    },
+    {
+      "n_mod_15": 6,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "2"
+      ],
+      "samples_k_minus1_to3": [
+        "-1",
+        "2",
+        "5",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "n_mod_15": 7,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-2"
+      ],
+      "samples_k_minus1_to3": [
+        "1",
+        "-2",
+        "-5",
+        "-8",
+        "-11"
+      ]
+    },
+    {
+      "n_mod_15": 8,
+      "remainder_alpha_k_plus_beta": [
+        "0",
+        "0"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "n_mod_15": 9,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "2"
+      ],
+      "samples_k_minus1_to3": [
+        "-1",
+        "2",
+        "5",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "n_mod_15": 10,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-2"
+      ],
+      "samples_k_minus1_to3": [
+        "1",
+        "-2",
+        "-5",
+        "-8",
+        "-11"
+      ]
+    },
+    {
+      "n_mod_15": 11,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "3"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "3",
+        "6",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "n_mod_15": 12,
+      "remainder_alpha_k_plus_beta": [
+        "-3",
+        "-3"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "-3",
+        "-6",
+        "-9",
+        "-12"
+      ]
+    },
+    {
+      "n_mod_15": 13,
+      "remainder_alpha_k_plus_beta": [
+        "0",
+        "0"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "n_mod_15": 14,
+      "remainder_alpha_k_plus_beta": [
+        "3",
+        "3"
+      ],
+      "samples_k_minus1_to3": [
+        "0",
+        "3",
+        "6",
+        "9",
+        "12"
+      ]
+    }
+  ],
+  "cell_sums": {
+    "alpha_sum": "0",
+    "beta_sum": "3"
+  },
+  "weights_nonnegative_all_integer_k": true,
+  "weights_at_least_k_squared_for_abs_k_ge_3": true
+}
+
+RESULT FINITE_SPIN_JACOBI_COEFFICIENTS.json
+{
+  "status": "exact legal-hop path polynomials; all 15 residue classes checked at k=-1,0,1,2,3",
+  "coordinate": "n=15k+r; one P-state per integer n in this connected component",
+  "finite_spin_matrix": "M_S=-H2,S is tridiagonal on I_S=[-5S,5S-4]",
+  "entry_form": "M_S[n,n+1]=sqrt((1-x1/C)(1-x2/C)); M_S[n,n]=2-(y1+y2)/C, with C=S(S+1)",
+  "boundary": "an outward edge has a factor x_i=C and therefore vanishes",
+  "generator_identity": "G_S=C H2,S+H4,S=M_S^2-C M_S because the two-A-vacancy block is zero",
+  "rows": [
+    {
+      "residue": 0,
+      "edge_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "-3",
+        "0"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ]
+    },
+    {
+      "residue": 1,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ]
+    },
+    {
+      "residue": 2,
+      "edge_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ]
+    },
+    {
+      "residue": 3,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 4,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 5,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "3",
+        "0"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 6,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 7,
+      "edge_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 8,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 9,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 10,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "residue": 11,
+      "edge_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ]
+    },
+    {
+      "residue": 12,
+      "edge_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 13,
+      "edge_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ]
+    },
+    {
+      "residue": 14,
+      "edge_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "edge_x2_k2_k_const": [
+        "9",
+        "15",
+        "6"
+      ],
+      "return_x1_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ],
+      "return_x2_k2_k_const": [
+        "9",
+        "21",
+        "12"
+      ]
+    }
+  ],
+  "scope": "integer S, supplied five-record one-vacancy sector; identities are conditional on the #8831 model"
+}
+
+RESULT SCALED_TIME_LIMIT_CHECK.json
+{
+  "status": "double-precision diagnostics only; theorem is the strong-operator argument in SHORT_TIME_SCALING_NOTE_2026-09-23.md",
+  "spins": [
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "taus": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "results": [
+    {
+      "S": 8,
+      "C": 72,
+      "dimension": 77,
+      "p_second_derivative_over_C2": -3.570119896452522,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8930111406205641,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.012272416094759375,
+          "norm_squared": 0.9999999999999991
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.6230306296804208,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.03673767965182628,
+          "norm_squared": 0.9999999999999993
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.10757931473990776,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.024196618902114497,
+          "norm_squared": 0.9999999999999998
+        }
+      ]
+    },
+    {
+      "S": 12,
+      "C": 156,
+      "dimension": 117,
+      "p_second_derivative_over_C2": -3.7979852711826245,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8864891106620576,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.005750386136252894,
+          "norm_squared": 1.0000000000000022
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.6033332066981077,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.017040256669513254,
+          "norm_squared": 1.0000000000000022
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.09322803667769498,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.009845340839901726,
+          "norm_squared": 1.0000000000000022
+        }
+      ]
+    },
+    {
+      "S": 16,
+      "C": 272,
+      "dimension": 157,
+      "p_second_derivative_over_C2": -3.8833784028329137,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8840547354506606,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.0033160109248558944,
+          "norm_squared": 0.9999999999999997
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.5960819189440958,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.009788968915501295,
+          "norm_squared": 1.0000000000000002
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.08874813168825049,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.005365435850457234,
+          "norm_squared": 1.0000000000000007
+        }
+      ]
+    },
+    {
+      "S": 24,
+      "C": 600,
+      "dimension": 237,
+      "p_second_derivative_over_C2": -3.9468776111728396,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8822479680498095,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.001509243524004833,
+          "norm_squared": 0.9999999999999998
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.5907356237068159,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.004442673678221376,
+          "norm_squared": 1.0
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.08572080404780158,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.0023381082100083217,
+          "norm_squared": 1.0000000000000007
+        }
+      ]
+    },
+    {
+      "S": 32,
+      "C": 1056,
+      "dimension": 317,
+      "p_second_derivative_over_C2": -3.969765092254456,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8815974655644365,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.0008587410386318162,
+          "norm_squared": 1.0000000000000013
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.5888181817778647,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.002525231749270218,
+          "norm_squared": 1.0000000000000013
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.08469193963891719,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.0013092438011239327,
+          "norm_squared": 1.0000000000000018
+        }
+      ]
+    },
+    {
+      "S": 48,
+      "C": 2352,
+      "dimension": 477,
+      "p_second_derivative_over_C2": -3.986408293545102,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8811246774438465,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.00038595291804177645,
+          "norm_squared": 1.0000000000000009
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.5874270433143298,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.001134093285735327,
+          "norm_squared": 1.000000000000001
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.08396425297142013,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.0005815571336268699,
+          "norm_squared": 1.0000000000000009
+        }
+      ]
+    },
+    {
+      "S": 64,
+      "C": 4160,
+      "dimension": 637,
+      "p_second_derivative_over_C2": -3.9923120834496713,
+      "scaled_times": [
+        {
+          "tau": 0.25,
+          "finite_spin_vacancy": 0.8809570155734409,
+          "bessel_limit": 0.8807387245258047,
+          "absolute_difference": 0.00021829104763615437,
+          "norm_squared": 0.9999999999999979
+        },
+        {
+          "tau": 0.5,
+          "finite_spin_vacancy": 0.586934211578532,
+          "bessel_limit": 0.5862929500285945,
+          "absolute_difference": 0.0006412615499374885,
+          "norm_squared": 0.9999999999999983
+        },
+        {
+          "tau": 1.0,
+          "finite_spin_vacancy": 0.08371024371554033,
+          "bessel_limit": 0.08338269583779326,
+          "absolute_difference": 0.00032754787774706695,
+          "norm_squared": 0.9999999999999989
+        }
+      ]
+    }
+  ]
+}
+
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

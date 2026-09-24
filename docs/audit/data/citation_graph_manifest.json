@@ -1,6 +1,6 @@
 {
- "edge_count": 14503,
- "node_count": 6607,
+ "edge_count": 14536,
+ "node_count": 6618,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -285,6 +285,10 @@
   "active_sector_grounded_by_mass_vs_k_dominant_operator_sieve_narrow_theorem_note_2026-06-06": {
    "deps_hash": "709c3097cb26",
    "out_degree": 4
+  },
+  "actual_first_output_components_and_two_birth_bounds_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "7e94f2dfc176",
+   "out_degree": 3
   },
   "adaptive_coevolving_geometry_no_go": {
    "deps_hash": "e3b0c44298fc",
@@ -3586,6 +3590,18 @@
    "deps_hash": "9d5ef3fb252d",
    "out_degree": 6
   },
+  "cube_actual_formation_local_density_limit_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "bfb24243e804",
+   "out_degree": 4
+  },
+  "cube_six_record_rotor_point_spectrum_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c4303103ee6b",
+   "out_degree": 2
+  },
+  "cube_two_mark_loop_readout_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "52067f8c1a7d",
+   "out_degree": 2
+  },
   "cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17": {
    "deps_hash": "04fc7d8812c4",
    "out_degree": 3
@@ -5369,6 +5385,10 @@
   "exact_algebra_salvage_bounded_support_note_2026-08-08": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "exact_fast_spectrum_and_formation_outputs_on_rings_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "20863af0fe34",
+   "out_degree": 3
   },
   "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11": {
    "deps_hash": "e3b0c44298fc",
@@ -16038,6 +16058,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "3342d3e60ba5",
+   "out_degree": 3
+  },
   "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -16053,6 +16077,10 @@
   "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15": {
    "deps_hash": "116e59c3d1df",
    "out_degree": 2
+  },
+  "prepared_flat_sector_with_electric_dynamics_and_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "bb80bd5715c5",
+   "out_degree": 4
   },
   "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
    "deps_hash": "e3b0c44298fc",
@@ -17174,6 +17202,10 @@
    "deps_hash": "4b1f4f4b0e8b",
    "out_degree": 4
   },
+  "rotor_clock_long_time_tail_and_moments_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "3451726cf84e",
+   "out_degree": 2
+  },
   "rotor_coupled_free_vacuum_resolvent_densities_bounded_theorem_note_2026-09-16": {
    "deps_hash": "f015d82dc5d6",
    "out_degree": 1
@@ -17470,6 +17502,10 @@
    "deps_hash": "70fa3bf728f4",
    "out_degree": 1
   },
+  "second_formation_clock_on_the_eight_site_rotor_ring_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "331ea0c4ef32",
+   "out_degree": 3
+  },
   "second_grown_family_complex_boundary_note": {
    "deps_hash": "3ba1a856c176",
    "out_degree": 1
@@ -17585,6 +17621,10 @@
   "short_time_rotor_bridge_and_endpoint_hessian_bounds_bounded_theorem_note_2026-09-16": {
    "deps_hash": "2fcf27dbac88",
    "out_degree": 1
+  },
+  "short_time_scaling_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "96e6afb8860b",
+   "out_degree": 3
   },
   "sigma_hier_uniqueness_theorem_note_2026-04-19": {
    "deps_hash": "94aa2d15c272",
@@ -26429,6 +26469,10 @@
   "z_n_spectral_asymmetry_physical_identification_note_2026-05-31": {
    "deps_hash": "84609f8d3c8c",
    "out_degree": 6
+  },
+  "zero_mode_and_goegenbauer_limit_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "57bdff63d860",
+   "out_degree": 4
   }
  },
  "schema_version": 1

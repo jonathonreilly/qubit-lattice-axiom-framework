@@ -1,0 +1,1453 @@
+===== runner cache v1 =====
+runner: scripts/prepared_flat_sector_with_electric_dynamics_and_formation_2026_09_24.py
+runner_sha256: f458a3b63f5b8876122e520b34c22d06e1f0e4477b16519ff55d3569f1ac08fd
+input_fingerprint_sha256: 8b7278024e102fc4c849065579b3055c6b72814f70c670a7dcac44cdfe231f2b
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 2.01
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; no audit verdict or native physical law is established by finite controls.
+[PASS] component flat_band_spin_correction_probe.py; stdout sha256=286f50bdf8b82a62f0dd531e257c4ade073bc9688493424e8e0d25cd93d2897d
+[PASS] component flat_compressed_operators.py; stdout sha256=70866b7e9b7757976549d0056c32a74104b31408f16f7b59e82a6d4654fda218
+[PASS] component finite_spin_dynamics_check.py; stdout sha256=bdc62fdd2aebaa4f1eaddbca4450cd41494a7ef9eb92c1edbf07519dccd5c890
+RESULT FINITE_SPIN_DYNAMICS_RESULTS.json
+{
+  "source_sha256": "90186b1c250d1978003dbb121e43c3b6486830f54b44cab4f8c4fafd2b2be945",
+  "parameters": {
+    "K": 0.4,
+    "delta": 0.7,
+    "kappa": 0.3
+  },
+  "flat_reference_cut": 32,
+  "flat_reference_Dyson_tail_norm_bound": 3.4751244008775614e-26,
+  "rows": [
+    {
+      "S": 4,
+      "eta": 8.0,
+      "epsilon": 0.2958039891549808,
+      "physical_P_dimension": 264,
+      "generator_nnz": 1624,
+      "elapsed_seconds": 0.01723175001097843,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0509856131601761,
+          "finite_spin_survival": 0.7958680740862327,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.009240213019679255
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.11336195339529459,
+          "finite_spin_survival": 0.7965541094423441,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.009926248375790592
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.08784084273565497,
+          "finite_spin_survival": 0.633219854420993,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.014436462614852097
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.18204002524140647,
+          "finite_spin_survival": 0.6367735570070084,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.01799016520086749
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.12390914737211069,
+          "finite_spin_survival": 0.503983640051737,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.017231384091765334
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.2454563087119072,
+          "finite_spin_survival": 0.5114299775504321,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.02467772159046039
+        }
+      ]
+    },
+    {
+      "S": 8,
+      "eta": 28.8,
+      "epsilon": 0.15590239111558088,
+      "physical_P_dimension": 552,
+      "generator_nnz": 3608,
+      "elapsed_seconds": 0.03428691701265052,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.026235031587904526,
+          "finite_spin_survival": 0.7892407507900885,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.002612889723535017
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.06250791664232637,
+          "finite_spin_survival": 0.7895426631478994,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.0029148020813459796
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.04039548070882518,
+          "finite_spin_survival": 0.62288392429878,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.004100532492639086
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.08901045907456703,
+          "finite_spin_survival": 0.6242234104793394,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.005440018673198432
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.05473676133715007,
+          "finite_spin_survival": 0.4916916429012408,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.004939386941269108
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.10995402889933273,
+          "finite_spin_survival": 0.49448779188823744,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.007735535928265758
+        }
+      ]
+    },
+    {
+      "S": 12,
+      "eta": 62.400000000000006,
+      "epsilon": 0.10591481821704042,
+      "physical_P_dimension": 840,
+      "generator_nnz": 5432,
+      "elapsed_seconds": 0.06323545798659325,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.01785033186924811,
+          "finite_spin_survival": 0.787839263509328,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.0012114024427745118
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.042820831851118006,
+          "finite_spin_survival": 0.787990108186998,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.0013622471204445263
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.02676122206870592,
+          "finite_spin_survival": 0.6206882053358935,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.0019048135297525803
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.058806834423212516,
+          "finite_spin_survival": 0.6213534726364343,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.0025700808302933087
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.03582493098166833,
+          "finite_spin_survival": 0.48906845206469196,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.0023161961047202806
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.07123952328360067,
+          "finite_spin_survival": 0.4904939369671218,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.0037416810071501105
+        }
+      ]
+    },
+    {
+      "S": 16,
+      "eta": 108.80000000000001,
+      "epsilon": 0.08021111848996848,
+      "physical_P_dimension": 1128,
+      "generator_nnz": 7224,
+      "elapsed_seconds": 0.11409029201604426,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.013527309941402634,
+          "finite_spin_survival": 0.7873237878160901,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.0006959267495366683
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.03254669235006876,
+          "finite_spin_survival": 0.7874131267956344,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.0007852657290808862
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.020132031176553714,
+          "finite_spin_survival": 0.6198810281622535,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.0010976363561125968
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.04427522690530717,
+          "finite_spin_survival": 0.6202830033351163,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.0014996115289753753
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.026713971483880616,
+          "finite_spin_survival": 0.4880888379011704,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.0013365819411987334
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.053333582392429725,
+          "finite_spin_survival": 0.48893435283831144,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.0021820968783397565
+        }
+      ]
+    },
+    {
+      "S": 24,
+      "eta": 240.00000000000003,
+      "epsilon": 0.05400617248673216,
+      "physical_P_dimension": 1704,
+      "generator_nnz": 11032,
+      "elapsed_seconds": 0.24484479101374745,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.009188694611830642,
+          "finite_spin_survival": 0.7869440818486919,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.0003162207821384433
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.021950813675733403,
+          "finite_spin_survival": 0.7869870442208176,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.00035918315426408665
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.013537645281779687,
+          "finite_spin_survival": 0.6192834093618662,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.0005000175557252629
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.029909098908471266,
+          "finite_spin_survival": 0.6194754479457854,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.0006920561396444036
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.017867173385485314,
+          "finite_spin_survival": 0.48736227948179134,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.0006100235218196581
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.03220048306870318,
+          "finite_spin_survival": 0.4877502345041612,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.0009979785441895372
+        }
+      ]
+    },
+    {
+      "S": 32,
+      "eta": 422.40000000000003,
+      "epsilon": 0.0407086842049331,
+      "physical_P_dimension": 2280,
+      "generator_nnz": 14840,
+      "elapsed_seconds": 0.5567232500179671,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.006956034531352558,
+          "finite_spin_survival": 0.7868078312347879,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.00017997016823445566
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.01659684238440853,
+          "finite_spin_survival": 0.7868334488948145,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.0002055878282610779
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.010800723270708551,
+          "finite_spin_survival": 0.619066934505818,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.0002835426996770085
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.023612166185862767,
+          "finite_spin_survival": 0.6191742617661699,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.0003908699600289056
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.014632343042463827,
+          "finite_spin_survival": 0.487099904429957,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.00034764846998530663
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.02920343498209096,
+          "finite_spin_survival": 0.48733011785086594,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.0005778618908942601
+        }
+      ]
+    }
+  ],
+  "scope": "Author finite-spin convergence controls for two prepared flat vectors, not a proof or a full first-output replacement."
+}
+
+RESULT FLAT_BAND_SPIN_CORRECTION_RESULTS.json
+{
+  "source_sha256": "791330246ebb0f35b696edd17cead1c95fc4db9ccd43792b569c01293e375d4b",
+  "status": "author exploratory exact-rational flat-projector and leading spin correction controls",
+  "exact_rows": [
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "0",
+      "D2_leakage_norm_squared": "0",
+      "flat_compressed_expectation": "0"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "75",
+      "D2_leakage_norm_squared": "29/2",
+      "flat_compressed_expectation": "11"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2225/2",
+      "D2_leakage_norm_squared": "109/2",
+      "flat_compressed_expectation": "46"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "81/2",
+      "D2_leakage_norm_squared": "17/2",
+      "flat_compressed_expectation": "8"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1473",
+      "D2_leakage_norm_squared": "137/2",
+      "flat_compressed_expectation": "53"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2080",
+      "D2_leakage_norm_squared": "32",
+      "flat_compressed_expectation": "64"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "0",
+      "D2_leakage_norm_squared": "0",
+      "flat_compressed_expectation": "0"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "75",
+      "D2_leakage_norm_squared": "29/2",
+      "flat_compressed_expectation": "11"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2225/2",
+      "D2_leakage_norm_squared": "109/2",
+      "flat_compressed_expectation": "46"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "81/2",
+      "D2_leakage_norm_squared": "17/2",
+      "flat_compressed_expectation": "8"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1473",
+      "D2_leakage_norm_squared": "137/2",
+      "flat_compressed_expectation": "53"
+    }
+  ],
+  "finite_spin_core_expansion": [
+    {
+      "S": 8,
+      "core_expansion_residual_norm": 0.004979872200340616
+    },
+    {
+      "S": 16,
+      "core_expansion_residual_norm": 0.0013046294986268816
+    },
+    {
+      "S": 32,
+      "core_expansion_residual_norm": 0.0003351217725739629
+    },
+    {
+      "S": 64,
+      "core_expansion_residual_norm": 8.500923182638994e-05
+    },
+    {
+      "S": 128,
+      "core_expansion_residual_norm": 2.1413202925062014e-05
+    }
+  ],
+  "invariant_under_D2_on_tested_vectors": false,
+  "scope": "Finite-support core identities do not establish uniform ordinary-time convergence or an invariant finite-spin band."
+}
+
+RESULT FLAT_COMPRESSED_OPERATORS_RESULTS.json
+{
+  "source_sha256": "59d9e1edc8f199e2ead35101849717df9e682ff7ecea1f474d3159b5f8552dc4",
+  "rows": [
+    {
+      "kind": 0,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 2,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 3,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 + 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 - 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 2,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 3,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    }
+  ],
+  "status": "author exact symbolic identities in the compact flat basis",
+  "scope": "Compression and invariant H4, not yet a joint-scaling time-limit proof."
+}
+
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

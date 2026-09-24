@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.py
+runner_sha256: 10042ae464be37386a834fcdd45b9568d6aec7a1b838866e7a75dd405218ff76
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 136.13
+status: ok
+----- stdout -----
+== A. Saturation leaves square ice ==
+[PASS] at |S| = A the top level equals the square-ice count of the torus on 2x2, 2x4, 2x6, 2x8 and 4x4 :: 2x2: 18.0 vs 18, 2x4: 114.0 vs 114, 2x6: 858.0 vs 858, 2x8: 7074.0 vs 7074, 4x4: 2970.0 vs 2970
+
+== B. The equation of state on 4 x 4 ==
+[PASS] c(S) rises monotonically from 0.3270 at |S| = 2 to 0.4373 at |S| = 16 :: 2: 0.3270, 4: 0.3300, 6: 0.3352, 8: 0.3430, 10: 0.3543, 12: 0.3705, 14: 0.3950, 16: 0.4373
+
+== C. The photon in a background flux ==
+[PASS] D_s at (pi/2, 0) rises with s from 1.2963 to 1.6846, and the small-flux shift is quadratic: D_4 - D_0 = 4 (D_2 - D_0) within 5% :: 0: 1.29627, 2: 1.30814, 4: 1.34515, 6: 1.41195, 8: 1.51835, 10: 1.68456; shift ratio 4.118
+
+== D. A local quartic cost ==
+[PASS] the quartic fit stiffens along the background more than across, and accounts for 55% to 80% of the shift at s = 2 and 4 :: c_2 = 0.3261, d = 0.0631; fraction explained 0.660, 0.641
+
+time 136 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

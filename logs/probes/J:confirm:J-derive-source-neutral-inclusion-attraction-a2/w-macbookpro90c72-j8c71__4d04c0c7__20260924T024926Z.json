@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-source-neutral-inclusion-attraction-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j8c71",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/source-neutral-inclusion-attraction/referee_w-macbookpro90c72-j8c71/check.py",
+ "seed": 18166,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4d04c0c7",
+ "started_utc": "20260924T024926Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the 6x6 formula, the coefficient 1/2, the sign, the vacancy r^{-6} constant and the absence of a 1/r channel all survive an independent Laplacian logdet, a real-space Green function, and a Z^3 Bessel quadrature."
+ },
+ "review": "Independent Laplacian logdet and a Z^3 Bessel quadrature confirm the 6x6 attraction, the coefficient 1/2 rather than 1/4, the vacancy constant -0.12171197, and no 1/r for a shift-invariant inclusion.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:source-neutral-inclusion-attraction:a2/; its files are probes/work/derive/source-neutral-inclusion-attraction/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/source-neutral-inclusion-attraction/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "df095125367564b4c640e2154e2bf9acdba998dc5518f5dbaee850c3afdc0138",
+ "stdout_tail": "oes not match. Wick: Cov(X^2,Y^2)=2c^2 and Cov(X^4,Y^4)=24c^4+72 vx vy c^2, so the free-energy cross term is -Cov = -(eps^2/2) sum M^2\nok S5: Z^3: G(0)-G(e1)=1/6, G(0) matches Watson/6, mu=0.209841695315, alpha=2.53113837, vacancy constant -0.12171197; r=5: F r^6 = -0.237095, ratio 5.9951e-05; r=10: F r^6 = -0.138318, ratio 1.1063e-06; r=20: F r^6 = -0.125441, ratio 3.1437e-08; tr(MM^T) r^6 = 0.17298, 0.15669 -> 3/(2 pi^2) = 0.15198\nok S6: the 48 signed axis permutations fix one bond on average, so the invariant bond vectors are multiples of (1,...,1); M_xy annihilates that direction for r>=2, and every entry of M is a second difference of G, hence O(r^{-3}). A shift-invariant inclusion therefore interacts at O(r^{-3}), or O(r^{-6}) if it is also cubic-invariant. Never 1/r.\ncache Z^3 points 38\nSUMMARY: confirmed - the 6x6 formula, the coefficient 1/2, the sign, the vacancy r^{-6} constant and the absence of a 1/r channel all survive an independent Laplacian logdet, a real-space Green function, and a Z^3 Bessel quadrature.\nHIT: confirmed - like inclusions attract for r>=2 through F=(1/2) log det(I - eps_x eps_y (I+eps_x A)^{-1} M (I+eps_y A)^{-1} M^T), with second order -(eps^2/2) sum M^2 rather than the task's 1/4; on Z^3, F r^6 -> -(3/(16 pi^2)) eps^2 alpha^2 with alpha=2/(1+eps mu), -0.12171197 for two vacancies; ratios to two held unit tilts are 5.995e-5, 1.106e-6, 3.144e-8 at r=5, 10, 20; a shift-invariant inclusion has no 1/r, and a cubic-invariant one decays as r^{-6}.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8c71",
+  "at_utc": "20260924T024929Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

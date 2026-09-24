@@ -1,0 +1,33 @@
+{
+  "PRE_files_unchanged": 22,
+  "executions": [
+    {
+      "name": "comparison_independent_replay",
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "name": "comparison_author_success",
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "name": "comparison_author_preserved_failure",
+      "exit_code": 1,
+      "expected_exit_code": 1
+    },
+    {
+      "name": "comparison_independent_check",
+      "exit_code": 0,
+      "expected_exit_code": 0
+    }
+  ],
+  "independent_comparison": {
+    "full_physical_dimension": 16,
+    "actual_marks_compared": 9,
+    "exact_checks": 144,
+    "scientific_discrepancies": [],
+    "author_fixed_lambda_proof_checked": true,
+    "own_uniform_lambda_proof_remains_separately_attributed": true
+  }
+}

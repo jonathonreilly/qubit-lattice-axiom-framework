@@ -1,0 +1,15 @@
+{
+  "basis_dimensions": {
+    "1": 4,
+    "3": 12
+  },
+  "initial_energy": "0",
+  "N3_high_dimensionless_eigenvalue": "3*epsilon**2 + 1",
+  "dressed_initial_energy_derivative": {
+    "resolved": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))",
+    "coherent": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))"
+  }
+}
+{"instrument": "resolved", "mark": "1", "rate": "2*kappa/(3*epsilon**2 + 1)", "conditional_energy": "2*delta/epsilon**2", "high_spectral_probability": "2*epsilon**2/(3*epsilon**2 + 1)", "conditional_energy_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"}
+{"instrument": "resolved", "mark": "-1", "rate": "2*kappa/(3*epsilon**2 + 1)", "conditional_energy": "delta/epsilon**2", "high_spectral_probability": "epsilon**2/(3*epsilon**2 + 1)", "conditional_energy_variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"}
+{"instrument": "resolved", "mark": "1", "rate": "2*kappa/(3*epsilon**2 + 1)", "conditional_energy": "2*delta/epsilon**2", "high_spectral_probability": "2*epsilon**2/(3*epsilon**2 + 1)", "conditional_energy_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"}

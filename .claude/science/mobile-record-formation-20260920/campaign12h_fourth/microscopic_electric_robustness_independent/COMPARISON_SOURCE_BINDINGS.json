@@ -1,0 +1,122 @@
+{
+  "stage": "post-PRE source comparison",
+  "created_utc": "2026-09-24T01:47:00.950132+00:00",
+  "PRE_seal_sha256": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa",
+  "PRE_bound_files_authenticated": 22,
+  "author_seal_sha256": "fe08f9e62cfc1278cf659127e23989435cb6f0dcc39942a1e6cbef7eec0b1b21",
+  "path_policy": "All scientific aliases are campaign-relative; relocated snapshots are matched by SHA256. No absolute private path is required by comparison controls.",
+  "sources": [
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/AUTHOR_SEAL.json",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/AUTHOR_SEAL.json",
+      "bytes": 2599,
+      "sha256": "fe08f9e62cfc1278cf659127e23989435cb6f0dcc39942a1e6cbef7eec0b1b21",
+      "role": "released author seal"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/DERIVATION_PLAN.md",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/DERIVATION_PLAN.md",
+      "bytes": 852,
+      "sha256": "85983aa0e5801fb81d2be29c99287542979a5352d07d09197418f7977ff9a77d",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/DEVELOPMENT_FAILURES.md",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/DEVELOPMENT_FAILURES.md",
+      "bytes": 462,
+      "sha256": "20d3235f098d722a8d0f422290470457f9ec034f8c31fe82ddf1a8ad3e331d84",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY.log",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY.log",
+      "bytes": 1520,
+      "sha256": "eb74bee3756a28911fc9aa72098509441f541e9660062f9e3cc3614d47d34d0e",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY.stderr",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY_RESULTS.json",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY_RESULTS.json",
+      "bytes": 3838,
+      "sha256": "a34ce8dd7974a99d3614990d263a9f452f1d12823801b7a8d075464fcb2eb7a0",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/FAILED_EXACT_ELECTRIC_STAR_ENERGY.log",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/FAILED_EXACT_ELECTRIC_STAR_ENERGY.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/FAILED_EXACT_ELECTRIC_STAR_ENERGY.stderr",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/FAILED_EXACT_ELECTRIC_STAR_ENERGY.stderr",
+      "bytes": 396,
+      "sha256": "73bfe1cae165dec9e3a1d587ca227b3284c282588b419c321d470ccfdaf50187",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/FAILED_exact_electric_star_energy.py",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/FAILED_exact_electric_star_energy.py",
+      "bytes": 3374,
+      "sha256": "6f3855b0b59ade314a962f4516cd5d7ea41c065712a7430051666ab35fe07459",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY.md",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY.md",
+      "bytes": 6889,
+      "sha256": "a7dfe854f72be6e30b7aa4bbb61e10c5e7876b6cd62698735968af33ae0477c2",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_electric_robustness_author/exact_electric_star_energy.py",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/exact_electric_star_energy.py",
+      "bytes": 3386,
+      "sha256": "73435f646145b5fa0a8be0a90b968ec49648aa562aefd740cddb36fbff9e896e",
+      "role": "released author artifact"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_birth_energy_author/exact_star_energy.py",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_birth_energy_author/exact_star_energy.py",
+      "bytes": 5328,
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e",
+      "role": "released author dependency"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "bytes": 9368,
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c",
+      "role": "released author dependency"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "bytes": 8477,
+      "sha256": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5",
+      "role": "released author dependency"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "bytes": 12525,
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617",
+      "role": "released author dependency"
+    },
+    {
+      "campaign_relative_path": "campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "snapshot_path": "comparison_sources/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "bytes": 2455,
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa",
+      "role": "released author dependency"
+    }
+  ]
+}

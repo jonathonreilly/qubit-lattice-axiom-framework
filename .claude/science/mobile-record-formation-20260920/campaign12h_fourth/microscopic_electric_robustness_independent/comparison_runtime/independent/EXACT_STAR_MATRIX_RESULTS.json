@@ -1,0 +1,1659 @@
+{
+  "dimension": 16,
+  "sector_dimensions": {
+    "N1": "4",
+    "N3": "12",
+    "N3_P": "9",
+    "N3_W1": "3"
+  },
+  "basis": [
+    {
+      "index": 0,
+      "q": [
+        -1,
+        0,
+        1,
+        1
+      ],
+      "E": [
+        0,
+        -1,
+        -1
+      ],
+      "N": 3,
+      "W": 0
+    },
+    {
+      "index": 1,
+      "q": [
+        -1,
+        1,
+        0,
+        1
+      ],
+      "E": [
+        -1,
+        0,
+        -1
+      ],
+      "N": 3,
+      "W": 0
+    },
+    {
+      "index": 2,
+      "q": [
+        -1,
+        1,
+        1,
+        0
+      ],
+      "E": [
+        -1,
+        -1,
+        0
+      ],
+      "N": 3,
+      "W": 0
+    },
+    {
+      "index": 3,
+      "q": [
+        0,
+        -1,
+        1,
+        1
+      ],
+      "E": [
+        1,
+        -1,
+        -1
+      ],
+      "N": 3,
+      "W": 1
+    },
+    {
+      "index": 4,
+      "q": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        -1
+      ],
+      "N": 1,
+      "W": 1
+    },
+    {
+      "index": 5,
+      "q": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "E": [
+        0,
+        -1,
+        0
+      ],
+      "N": 1,
+      "W": 1
+    },
+    {
+      "index": 6,
+      "q": [
+        0,
+        1,
+        -1,
+        1
+      ],
+      "E": [
+        -1,
+        1,
+        -1
+      ],
+      "N": 3,
+      "W": 1
+    },
+    {
+      "index": 7,
+      "q": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "E": [
+        -1,
+        0,
+        0
+      ],
+      "N": 1,
+      "W": 1
+    },
+    {
+      "index": 8,
+      "q": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "E": [
+        -1,
+        -1,
+        1
+      ],
+      "N": 3,
+      "W": 1
+    },
+    {
+      "index": 9,
+      "q": [
+        1,
+        -1,
+        0,
+        1
+      ],
+      "E": [
+        1,
+        0,
+        -1
+      ],
+      "N": 3,
+      "W": 0
+    },
+    {
+      "index": 10,
+      "q": [
+        1,
+        -1,
+        1,
+        0
+      ],
+      "E": [
+        1,
+        -1,
+        0
+      ],
+      "N": 3,
+      "W": 0
+    },
+    {
+      "index": 11,
+      "q": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "E": [
+        0,
+        1,
+        -1
+      ],
+      "N": 3,
+      "W": 0
+    },
+    {
+      "index": 12,
+      "q": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0
+      ],
+      "N": 1,
+      "W": 0
+    },
+    {
+      "index": 13,
+      "q": [
+        1,
+        0,
+        1,
+        -1
+      ],
+      "E": [
+        0,
+        -1,
+        1
+      ],
+      "N": 3,
+      "W": 0
+    },
+    {
+      "index": 14,
+      "q": [
+        1,
+        1,
+        -1,
+        0
+      ],
+      "E": [
+        -1,
+        1,
+        0
+      ],
+      "N": 3,
+      "W": 0
+    },
+    {
+      "index": 15,
+      "q": [
+        1,
+        1,
+        0,
+        -1
+      ],
+      "E": [
+        -1,
+        0,
+        1
+      ],
+      "N": 3,
+      "W": 0
+    }
+  ],
+  "all_legal_normalized_spin_transition_weights_one": true,
+  "transitions": [
+    {
+      "kind": "hop",
+      "source_word": [
+        -1,
+        0,
+        1,
+        1
+      ],
+      "source_field": [
+        0,
+        -1,
+        -1
+      ],
+      "source": 0,
+      "destination": 1,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        -1,
+        1,
+        0,
+        1
+      ],
+      "source_field": [
+        -1,
+        0,
+        -1
+      ],
+      "source": 0,
+      "destination": 2,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        -1,
+        1,
+        1,
+        0
+      ],
+      "source_field": [
+        -1,
+        -1,
+        0
+      ],
+      "source": 0,
+      "destination": 3,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        -1,
+        1,
+        1
+      ],
+      "source_field": [
+        1,
+        -1,
+        -1
+      ],
+      "source": 1,
+      "destination": 0,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        -1,
+        1,
+        1
+      ],
+      "source_field": [
+        1,
+        -1,
+        -1
+      ],
+      "source": 2,
+      "destination": 0,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        -1,
+        1,
+        1
+      ],
+      "source_field": [
+        1,
+        -1,
+        -1
+      ],
+      "source": 3,
+      "destination": 0,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_field": [
+        0,
+        0,
+        -1
+      ],
+      "edge": [
+        0,
+        1
+      ],
+      "charge_at_0": -1,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_field": [
+        0,
+        0,
+        -1
+      ],
+      "edge": [
+        0,
+        1
+      ],
+      "charge_at_0": 1,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_field": [
+        0,
+        0,
+        -1
+      ],
+      "edge": [
+        0,
+        2
+      ],
+      "charge_at_0": -1,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_field": [
+        0,
+        0,
+        -1
+      ],
+      "edge": [
+        0,
+        2
+      ],
+      "charge_at_0": 1,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_field": [
+        0,
+        0,
+        -1
+      ],
+      "source": 3,
+      "destination": 0,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_field": [
+        0,
+        -1,
+        0
+      ],
+      "edge": [
+        0,
+        1
+      ],
+      "charge_at_0": -1,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_field": [
+        0,
+        -1,
+        0
+      ],
+      "edge": [
+        0,
+        1
+      ],
+      "charge_at_0": 1,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_field": [
+        0,
+        -1,
+        0
+      ],
+      "source": 2,
+      "destination": 0,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_field": [
+        0,
+        -1,
+        0
+      ],
+      "edge": [
+        0,
+        3
+      ],
+      "charge_at_0": -1,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_field": [
+        0,
+        -1,
+        0
+      ],
+      "edge": [
+        0,
+        3
+      ],
+      "charge_at_0": 1,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        1,
+        -1,
+        1
+      ],
+      "source_field": [
+        -1,
+        1,
+        -1
+      ],
+      "source": 1,
+      "destination": 0,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        1,
+        -1,
+        1
+      ],
+      "source_field": [
+        -1,
+        1,
+        -1
+      ],
+      "source": 2,
+      "destination": 0,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        1,
+        -1,
+        1
+      ],
+      "source_field": [
+        -1,
+        1,
+        -1
+      ],
+      "source": 3,
+      "destination": 0,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_field": [
+        -1,
+        0,
+        0
+      ],
+      "source": 1,
+      "destination": 0,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_field": [
+        -1,
+        0,
+        0
+      ],
+      "edge": [
+        0,
+        2
+      ],
+      "charge_at_0": -1,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_field": [
+        -1,
+        0,
+        0
+      ],
+      "edge": [
+        0,
+        2
+      ],
+      "charge_at_0": 1,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_field": [
+        -1,
+        0,
+        0
+      ],
+      "edge": [
+        0,
+        3
+      ],
+      "charge_at_0": -1,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "birth",
+      "source_word": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_field": [
+        -1,
+        0,
+        0
+      ],
+      "edge": [
+        0,
+        3
+      ],
+      "charge_at_0": 1,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "source_field": [
+        -1,
+        -1,
+        1
+      ],
+      "source": 1,
+      "destination": 0,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "source_field": [
+        -1,
+        -1,
+        1
+      ],
+      "source": 2,
+      "destination": 0,
+      "shift": 1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "source_field": [
+        -1,
+        -1,
+        1
+      ],
+      "source": 3,
+      "destination": 0,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        1,
+        -1,
+        0,
+        1
+      ],
+      "source_field": [
+        1,
+        0,
+        -1
+      ],
+      "source": 0,
+      "destination": 2,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        1,
+        -1,
+        1,
+        0
+      ],
+      "source_field": [
+        1,
+        -1,
+        0
+      ],
+      "source": 0,
+      "destination": 3,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "source_field": [
+        0,
+        1,
+        -1
+      ],
+      "source": 0,
+      "destination": 1,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_field": [
+        0,
+        0,
+        0
+      ],
+      "source": 0,
+      "destination": 1,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_field": [
+        0,
+        0,
+        0
+      ],
+      "source": 0,
+      "destination": 2,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_field": [
+        0,
+        0,
+        0
+      ],
+      "source": 0,
+      "destination": 3,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        1,
+        0,
+        1,
+        -1
+      ],
+      "source_field": [
+        0,
+        -1,
+        1
+      ],
+      "source": 0,
+      "destination": 1,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        1,
+        1,
+        -1,
+        0
+      ],
+      "source_field": [
+        -1,
+        1,
+        0
+      ],
+      "source": 0,
+      "destination": 3,
+      "shift": -1,
+      "weight_squared": "1"
+    },
+    {
+      "kind": "hop",
+      "source_word": [
+        1,
+        1,
+        0,
+        -1
+      ],
+      "source_field": [
+        -1,
+        0,
+        1
+      ],
+      "source": 0,
+      "destination": 2,
+      "shift": -1,
+      "weight_squared": "1"
+    }
+  ],
+  "operators": {
+    "F": [
+      {
+        "row": 3,
+        "column": 0,
+        "value": "1"
+      },
+      {
+        "row": 3,
+        "column": 9,
+        "value": "1"
+      },
+      {
+        "row": 3,
+        "column": 10,
+        "value": "1"
+      },
+      {
+        "row": 4,
+        "column": 12,
+        "value": "1"
+      },
+      {
+        "row": 5,
+        "column": 12,
+        "value": "1"
+      },
+      {
+        "row": 6,
+        "column": 1,
+        "value": "1"
+      },
+      {
+        "row": 6,
+        "column": 11,
+        "value": "1"
+      },
+      {
+        "row": 6,
+        "column": 14,
+        "value": "1"
+      },
+      {
+        "row": 7,
+        "column": 12,
+        "value": "1"
+      },
+      {
+        "row": 8,
+        "column": 2,
+        "value": "1"
+      },
+      {
+        "row": 8,
+        "column": 13,
+        "value": "1"
+      },
+      {
+        "row": 8,
+        "column": 15,
+        "value": "1"
+      }
+    ],
+    "T": [
+      {
+        "row": 0,
+        "column": 3,
+        "value": "-1"
+      },
+      {
+        "row": 1,
+        "column": 6,
+        "value": "-1"
+      },
+      {
+        "row": 2,
+        "column": 8,
+        "value": "-1"
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "value": "-1"
+      },
+      {
+        "row": 3,
+        "column": 9,
+        "value": "-1"
+      },
+      {
+        "row": 3,
+        "column": 10,
+        "value": "-1"
+      },
+      {
+        "row": 4,
+        "column": 12,
+        "value": "-1"
+      },
+      {
+        "row": 5,
+        "column": 12,
+        "value": "-1"
+      },
+      {
+        "row": 6,
+        "column": 1,
+        "value": "-1"
+      },
+      {
+        "row": 6,
+        "column": 11,
+        "value": "-1"
+      },
+      {
+        "row": 6,
+        "column": 14,
+        "value": "-1"
+      },
+      {
+        "row": 7,
+        "column": 12,
+        "value": "-1"
+      },
+      {
+        "row": 8,
+        "column": 2,
+        "value": "-1"
+      },
+      {
+        "row": 8,
+        "column": 13,
+        "value": "-1"
+      },
+      {
+        "row": 8,
+        "column": 15,
+        "value": "-1"
+      },
+      {
+        "row": 9,
+        "column": 3,
+        "value": "-1"
+      },
+      {
+        "row": 10,
+        "column": 3,
+        "value": "-1"
+      },
+      {
+        "row": 11,
+        "column": 6,
+        "value": "-1"
+      },
+      {
+        "row": 12,
+        "column": 4,
+        "value": "-1"
+      },
+      {
+        "row": 12,
+        "column": 5,
+        "value": "-1"
+      },
+      {
+        "row": 12,
+        "column": 7,
+        "value": "-1"
+      },
+      {
+        "row": 13,
+        "column": 8,
+        "value": "-1"
+      },
+      {
+        "row": 14,
+        "column": 6,
+        "value": "-1"
+      },
+      {
+        "row": 15,
+        "column": 8,
+        "value": "-1"
+      }
+    ],
+    "C_original": [
+      {
+        "row": 0,
+        "column": 0,
+        "value": "1"
+      },
+      {
+        "row": 0,
+        "column": 9,
+        "value": "1"
+      },
+      {
+        "row": 0,
+        "column": 10,
+        "value": "1"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "value": "1"
+      },
+      {
+        "row": 1,
+        "column": 11,
+        "value": "1"
+      },
+      {
+        "row": 1,
+        "column": 14,
+        "value": "1"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "value": "1"
+      },
+      {
+        "row": 2,
+        "column": 13,
+        "value": "1"
+      },
+      {
+        "row": 2,
+        "column": 15,
+        "value": "1"
+      },
+      {
+        "row": 9,
+        "column": 0,
+        "value": "1"
+      },
+      {
+        "row": 9,
+        "column": 9,
+        "value": "1"
+      },
+      {
+        "row": 9,
+        "column": 10,
+        "value": "1"
+      },
+      {
+        "row": 10,
+        "column": 0,
+        "value": "1"
+      },
+      {
+        "row": 10,
+        "column": 9,
+        "value": "1"
+      },
+      {
+        "row": 10,
+        "column": 10,
+        "value": "1"
+      },
+      {
+        "row": 11,
+        "column": 1,
+        "value": "1"
+      },
+      {
+        "row": 11,
+        "column": 11,
+        "value": "1"
+      },
+      {
+        "row": 11,
+        "column": 14,
+        "value": "1"
+      },
+      {
+        "row": 12,
+        "column": 12,
+        "value": "3"
+      },
+      {
+        "row": 13,
+        "column": 2,
+        "value": "1"
+      },
+      {
+        "row": 13,
+        "column": 13,
+        "value": "1"
+      },
+      {
+        "row": 13,
+        "column": 15,
+        "value": "1"
+      },
+      {
+        "row": 14,
+        "column": 1,
+        "value": "1"
+      },
+      {
+        "row": 14,
+        "column": 11,
+        "value": "1"
+      },
+      {
+        "row": 14,
+        "column": 14,
+        "value": "1"
+      },
+      {
+        "row": 15,
+        "column": 2,
+        "value": "1"
+      },
+      {
+        "row": 15,
+        "column": 13,
+        "value": "1"
+      },
+      {
+        "row": 15,
+        "column": 15,
+        "value": "1"
+      }
+    ],
+    "W": [
+      {
+        "row": 3,
+        "column": 3,
+        "value": "1"
+      },
+      {
+        "row": 4,
+        "column": 4,
+        "value": "1"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "value": "1"
+      },
+      {
+        "row": 6,
+        "column": 6,
+        "value": "1"
+      },
+      {
+        "row": 7,
+        "column": 7,
+        "value": "1"
+      },
+      {
+        "row": 8,
+        "column": 8,
+        "value": "1"
+      }
+    ],
+    "E2": [
+      {
+        "row": 0,
+        "column": 0,
+        "value": "2"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "value": "2"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "value": "2"
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "value": "3"
+      },
+      {
+        "row": 4,
+        "column": 4,
+        "value": "1"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "value": "1"
+      },
+      {
+        "row": 6,
+        "column": 6,
+        "value": "3"
+      },
+      {
+        "row": 7,
+        "column": 7,
+        "value": "1"
+      },
+      {
+        "row": 8,
+        "column": 8,
+        "value": "3"
+      },
+      {
+        "row": 9,
+        "column": 9,
+        "value": "2"
+      },
+      {
+        "row": 10,
+        "column": 10,
+        "value": "2"
+      },
+      {
+        "row": 11,
+        "column": 11,
+        "value": "2"
+      },
+      {
+        "row": 13,
+        "column": 13,
+        "value": "2"
+      },
+      {
+        "row": 14,
+        "column": 14,
+        "value": "2"
+      },
+      {
+        "row": 15,
+        "column": 15,
+        "value": "2"
+      }
+    ],
+    "D_ext": [],
+    "resolved_j": {
+      "(1, -1)": [
+        {
+          "row": 1,
+          "column": 4,
+          "value": "1"
+        },
+        {
+          "row": 2,
+          "column": 5,
+          "value": "1"
+        }
+      ],
+      "(1, 1)": [
+        {
+          "row": 9,
+          "column": 4,
+          "value": "1"
+        },
+        {
+          "row": 10,
+          "column": 5,
+          "value": "1"
+        }
+      ],
+      "(2, -1)": [
+        {
+          "row": 0,
+          "column": 4,
+          "value": "1"
+        },
+        {
+          "row": 2,
+          "column": 7,
+          "value": "1"
+        }
+      ],
+      "(2, 1)": [
+        {
+          "row": 11,
+          "column": 4,
+          "value": "1"
+        },
+        {
+          "row": 14,
+          "column": 7,
+          "value": "1"
+        }
+      ],
+      "(3, -1)": [
+        {
+          "row": 0,
+          "column": 5,
+          "value": "1"
+        },
+        {
+          "row": 1,
+          "column": 7,
+          "value": "1"
+        }
+      ],
+      "(3, 1)": [
+        {
+          "row": 13,
+          "column": 5,
+          "value": "1"
+        },
+        {
+          "row": 15,
+          "column": 7,
+          "value": "1"
+        }
+      ]
+    }
+  },
+  "H_definition": "delta epsilon^-4 (W+epsilon T+epsilon^2 C_original)+ell E2; ell=lambda K",
+  "H1_reachable": [
+    [
+      "3*delta/epsilon**2",
+      "-sqrt(3)*delta/epsilon**3"
+    ],
+    [
+      "-sqrt(3)*delta/epsilon**3",
+      "delta/epsilon**4 + ell"
+    ]
+  ],
+  "initial_energy_moments": {
+    "norm_squared": "1",
+    "mean": "3*ell*epsilon**2/(3*epsilon**2 + 1)",
+    "second_moment": "3*ell**2*epsilon**2/(3*epsilon**2 + 1)",
+    "variance": "3*ell**2*epsilon**2/(3*epsilon**2 + 1)**2"
+  },
+  "instruments": {
+    "resolved": {
+      "marks": [
+        {
+          "mark": [
+            1,
+            -1
+          ],
+          "intensity": "2*kappa/(3*epsilon**2 + 1)",
+          "M_mean": "1",
+          "M_variance": "2",
+          "wrong_P_compressed_variance": "2*delta**2/epsilon**4",
+          "omitted_W1_variance": "delta**2/epsilon**6",
+          "norm_squared": "2",
+          "mean": "(delta + 2*ell*epsilon**2)/epsilon**2",
+          "second_moment": "(3*delta**2*epsilon**2 + delta**2 + 4*delta*ell*epsilon**4 + 4*ell**2*epsilon**6)/epsilon**6",
+          "variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"
+        },
+        {
+          "mark": [
+            1,
+            1
+          ],
+          "intensity": "2*kappa/(3*epsilon**2 + 1)",
+          "M_mean": "2",
+          "M_variance": "2",
+          "wrong_P_compressed_variance": "2*delta**2/epsilon**4",
+          "omitted_W1_variance": "2*delta**2/epsilon**6",
+          "norm_squared": "2",
+          "mean": "2*(delta + ell*epsilon**2)/epsilon**2",
+          "second_moment": "2*(3*delta**2*epsilon**2 + delta**2 + 4*delta*ell*epsilon**4 + 2*ell**2*epsilon**6)/epsilon**6",
+          "variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"
+        },
+        {
+          "mark": [
+            2,
+            -1
+          ],
+          "intensity": "2*kappa/(3*epsilon**2 + 1)",
+          "M_mean": "1",
+          "M_variance": "2",
+          "wrong_P_compressed_variance": "2*delta**2/epsilon**4",
+          "omitted_W1_variance": "delta**2/epsilon**6",
+          "norm_squared": "2",
+          "mean": "(delta + 2*ell*epsilon**2)/epsilon**2",
+          "second_moment": "(3*delta**2*epsilon**2 + delta**2 + 4*delta*ell*epsilon**4 + 4*ell**2*epsilon**6)/epsilon**6",
+          "variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"
+        },
+        {
+          "mark": [
+            2,
+            1
+          ],
+          "intensity": "2*kappa/(3*epsilon**2 + 1)",
+          "M_mean": "2",
+          "M_variance": "2",
+          "wrong_P_compressed_variance": "2*delta**2/epsilon**4",
+          "omitted_W1_variance": "2*delta**2/epsilon**6",
+          "norm_squared": "2",
+          "mean": "2*(delta + ell*epsilon**2)/epsilon**2",
+          "second_moment": "2*(3*delta**2*epsilon**2 + delta**2 + 4*delta*ell*epsilon**4 + 2*ell**2*epsilon**6)/epsilon**6",
+          "variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"
+        },
+        {
+          "mark": [
+            3,
+            -1
+          ],
+          "intensity": "2*kappa/(3*epsilon**2 + 1)",
+          "M_mean": "1",
+          "M_variance": "2",
+          "wrong_P_compressed_variance": "2*delta**2/epsilon**4",
+          "omitted_W1_variance": "delta**2/epsilon**6",
+          "norm_squared": "2",
+          "mean": "(delta + 2*ell*epsilon**2)/epsilon**2",
+          "second_moment": "(3*delta**2*epsilon**2 + delta**2 + 4*delta*ell*epsilon**4 + 4*ell**2*epsilon**6)/epsilon**6",
+          "variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"
+        },
+        {
+          "mark": [
+            3,
+            1
+          ],
+          "intensity": "2*kappa/(3*epsilon**2 + 1)",
+          "M_mean": "2",
+          "M_variance": "2",
+          "wrong_P_compressed_variance": "2*delta**2/epsilon**4",
+          "omitted_W1_variance": "2*delta**2/epsilon**6",
+          "norm_squared": "2",
+          "mean": "2*(delta + ell*epsilon**2)/epsilon**2",
+          "second_moment": "2*(3*delta**2*epsilon**2 + delta**2 + 4*delta*ell*epsilon**4 + 2*ell**2*epsilon**6)/epsilon**6",
+          "variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"
+        }
+      ],
+      "initial_rate": "12*kappa/(3*epsilon**2 + 1)",
+      "initial_gain": "6*kappa*(3*delta + 4*ell*epsilon**2)/(epsilon**2*(3*epsilon**2 + 1))",
+      "initial_loss": "12*ell*kappa/(3*epsilon**2 + 1)",
+      "initial_full_energy_derivative": "6*kappa*(3*delta + 2*ell*epsilon**2)/(epsilon**2*(3*epsilon**2 + 1))",
+      "number3_energy_per_population": "3*delta/(2*epsilon**2) + 2*ell",
+      "number3_second_moment_per_population": "9*delta**2/(2*epsilon**4) + 3*delta**2/(2*epsilon**6) + 6*delta*ell/epsilon**2 + 4*ell**2",
+      "finite_time_source_identity_on_reachable_subspace": true,
+      "reachable_loss": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "4*kappa/epsilon**2"
+        ]
+      ]
+    },
+    "coherent": {
+      "marks": [
+        {
+          "mark": 1,
+          "intensity": "4*kappa/(3*epsilon**2 + 1)",
+          "M_mean": "3/2",
+          "M_variance": "9/4",
+          "wrong_P_compressed_variance": "9*delta**2/(4*epsilon**4)",
+          "omitted_W1_variance": "3*delta**2/(2*epsilon**6)",
+          "norm_squared": "4",
+          "mean": "(3*delta + 4*ell*epsilon**2)/(2*epsilon**2)",
+          "second_moment": "(9*delta**2*epsilon**2 + 3*delta**2 + 12*delta*ell*epsilon**4 + 8*ell**2*epsilon**6)/(2*epsilon**6)",
+          "variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)"
+        },
+        {
+          "mark": 2,
+          "intensity": "4*kappa/(3*epsilon**2 + 1)",
+          "M_mean": "3/2",
+          "M_variance": "9/4",
+          "wrong_P_compressed_variance": "9*delta**2/(4*epsilon**4)",
+          "omitted_W1_variance": "3*delta**2/(2*epsilon**6)",
+          "norm_squared": "4",
+          "mean": "(3*delta + 4*ell*epsilon**2)/(2*epsilon**2)",
+          "second_moment": "(9*delta**2*epsilon**2 + 3*delta**2 + 12*delta*ell*epsilon**4 + 8*ell**2*epsilon**6)/(2*epsilon**6)",
+          "variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)"
+        },
+        {
+          "mark": 3,
+          "intensity": "4*kappa/(3*epsilon**2 + 1)",
+          "M_mean": "3/2",
+          "M_variance": "9/4",
+          "wrong_P_compressed_variance": "9*delta**2/(4*epsilon**4)",
+          "omitted_W1_variance": "3*delta**2/(2*epsilon**6)",
+          "norm_squared": "4",
+          "mean": "(3*delta + 4*ell*epsilon**2)/(2*epsilon**2)",
+          "second_moment": "(9*delta**2*epsilon**2 + 3*delta**2 + 12*delta*ell*epsilon**4 + 8*ell**2*epsilon**6)/(2*epsilon**6)",
+          "variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)"
+        }
+      ],
+      "initial_rate": "12*kappa/(3*epsilon**2 + 1)",
+      "initial_gain": "6*kappa*(3*delta + 4*ell*epsilon**2)/(epsilon**2*(3*epsilon**2 + 1))",
+      "initial_loss": "12*ell*kappa/(3*epsilon**2 + 1)",
+      "initial_full_energy_derivative": "6*kappa*(3*delta + 2*ell*epsilon**2)/(epsilon**2*(3*epsilon**2 + 1))",
+      "number3_energy_per_population": "3*delta/(2*epsilon**2) + 2*ell",
+      "number3_second_moment_per_population": "9*delta**2/(2*epsilon**4) + 3*delta**2/(2*epsilon**6) + 6*delta*ell/epsilon**2 + 4*ell**2",
+      "finite_time_source_identity_on_reachable_subspace": true,
+      "reachable_loss": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "4*kappa/epsilon**2"
+        ]
+      ]
+    }
+  },
+  "mutation_controls": {
+    "incorrect_leaf_dephased_injection_mean": "(delta + 2*ell*epsilon**2)/epsilon**2",
+    "symmetric_injection_mean": "3*delta/(2*epsilon**2) + 2*ell",
+    "dephasing_changes_answer": true,
+    "incorrect_initial_eigenstate_assumption_has_nonzero_residual_for_ell_positive": true
+  }
+}

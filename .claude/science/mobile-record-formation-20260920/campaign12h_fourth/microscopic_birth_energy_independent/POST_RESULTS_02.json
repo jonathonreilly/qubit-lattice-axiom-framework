@@ -1,0 +1,1593 @@
+{
+  "created_utc": "2026-09-24T01:20:18.742260+00:00",
+  "status": "completed",
+  "attempt": "02",
+  "checks": [
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/INTEGRITY_SELF_TEST.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_MICROSCOPIC_STAR_RECONSTRUCTION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_RECEIPT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RECONSTRUCTION_STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RESULTS_01.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RESULTS_02.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_01.stderr.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_01.stdout.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_01_runner.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_02.stderr.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_02.stdout.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/SOURCE_BINDINGS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/planning_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/repository_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/workhorse_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/microscopic_star_complete_matrix_check.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/verify_pre_seal.py",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/DEVELOPMENT_FAILURES.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY.stderr",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/exact_star_energy.py",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/AUTHOR_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.stderr",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/star_finite_time_energy.py",
+      "passed": true
+    },
+    {
+      "name": "N=1 full Gauss basis",
+      "passed": true
+    },
+    {
+      "name": "N=1 entire F matrix",
+      "passed": true
+    },
+    {
+      "name": "N=3 full Gauss basis",
+      "passed": true
+    },
+    {
+      "name": "N=3 entire F matrix",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1,+1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1,+1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved1,+1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1,-1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1,-1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved1,-1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2,+1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2,+1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved2,+1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2,-1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2,-1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved2,-1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3,+1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3,+1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved3,+1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3,-1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3,-1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved3,-1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output coherent1",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1c",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2",
+      "passed": true
+    },
+    {
+      "name": "actual complete output coherent2",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2rate",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2c",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3",
+      "passed": true
+    },
+    {
+      "name": "actual complete output coherent3",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3rate",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3c",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author full initial derivative resolved",
+      "passed": true
+    },
+    {
+      "name": "author full initial derivative coherent",
+      "passed": true
+    },
+    {
+      "name": "two-dimensional no-event space reduces full generator",
+      "passed": true
+    },
+    {
+      "name": "characteristic polynomial is even in epsilon",
+      "passed": true
+    },
+    {
+      "name": "implicit derivative nonzero",
+      "passed": true
+    },
+    {
+      "name": "slow root leading term agrees",
+      "passed": true
+    },
+    {
+      "name": "slow root correction agrees",
+      "passed": true
+    },
+    {
+      "name": "dissipativity",
+      "passed": true
+    },
+    {
+      "name": "orthonormal low/high frame",
+      "passed": true
+    },
+    {
+      "name": "no-event energy spectral decomposition",
+      "passed": true
+    },
+    {
+      "name": "slow high component starts at epsilon cubed",
+      "passed": true
+    },
+    {
+      "name": "fast low component starts at epsilon cubed",
+      "passed": true
+    },
+    {
+      "name": "S=1 author high-precision rows",
+      "passed": true
+    },
+    {
+      "name": "S=1 spectral eigen residual",
+      "passed": true
+    },
+    {
+      "name": "S=2 author high-precision rows",
+      "passed": true
+    },
+    {
+      "name": "S=2 spectral eigen residual",
+      "passed": true
+    },
+    {
+      "name": "S=4 author high-precision rows",
+      "passed": true
+    },
+    {
+      "name": "S=4 spectral eigen residual",
+      "passed": true
+    },
+    {
+      "name": "S=8 author high-precision rows",
+      "passed": true
+    },
+    {
+      "name": "S=8 spectral eigen residual",
+      "passed": true
+    },
+    {
+      "name": "S=16 author high-precision rows",
+      "passed": true
+    },
+    {
+      "name": "S=16 spectral eigen residual",
+      "passed": true
+    },
+    {
+      "name": "S=32 author high-precision rows",
+      "passed": true
+    },
+    {
+      "name": "S=32 spectral eigen residual",
+      "passed": true
+    },
+    {
+      "name": "S=64 author high-precision rows",
+      "passed": true
+    },
+    {
+      "name": "S=64 spectral eigen residual",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.5 0.01 birth",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.5 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "author resolved 0.5 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.5 0.01 birth",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.5 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "author coherent 0.5 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.5 0.08 birth",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.5 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "author resolved 0.5 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.5 0.08 birth",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.5 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "author coherent 0.5 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.5 0.3 birth",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.5 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "author resolved 0.5 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.5 0.3 birth",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.5 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "author coherent 0.5 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.25 0.01 birth",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.25 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "author resolved 0.25 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.25 0.01 birth",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.25 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "author coherent 0.25 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.25 0.08 birth",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.25 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "author resolved 0.25 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.25 0.08 birth",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.25 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "author coherent 0.25 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.25 0.3 birth",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.25 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "author resolved 0.25 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.25 0.3 birth",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.25 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "author coherent 0.25 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.125 0.01 birth",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.125 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "author resolved 0.125 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.125 0.01 birth",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.125 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "author coherent 0.125 0.01 energy",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.125 0.08 birth",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.125 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "author resolved 0.125 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.125 0.08 birth",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.125 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "author coherent 0.125 0.08 energy",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.125 0.3 birth",
+      "passed": true
+    },
+    {
+      "name": "full resolved 0.125 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "author resolved 0.125 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.125 0.3 birth",
+      "passed": true
+    },
+    {
+      "name": "full coherent 0.125 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "author coherent 0.125 0.3 energy",
+      "passed": true
+    },
+    {
+      "name": "mutation dropping no-event energy detected",
+      "passed": true
+    },
+    {
+      "name": "mutation doubling slow decay rejected by polynomial",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/INTEGRITY_SELF_TEST.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_MICROSCOPIC_STAR_RECONSTRUCTION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_RECEIPT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RECONSTRUCTION_STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RESULTS_01.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RESULTS_02.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_01.stderr.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_01.stdout.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_01_runner.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_02.stderr.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_02.stdout.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/SOURCE_BINDINGS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/planning_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/repository_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/workhorse_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/microscopic_star_complete_matrix_check.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/verify_pre_seal.py",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/DEVELOPMENT_FAILURES.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY.stderr",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/exact_star_energy.py",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/AUTHOR_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.stderr",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/star_finite_time_energy.py",
+      "passed": true
+    }
+  ],
+  "runner_sha256": "58621cf559b2a43be6df514732a002c428e6e8e46e53a8ab378b9eba3b00745c",
+  "author_builders_imported": false,
+  "exact_extension": {
+    "polynomial": "3*I*delta*epsilon**2*z + 6*I*delta*kappa + I*delta*z + epsilon**4*z**2 + 2*epsilon**2*kappa*z",
+    "slow_z0": "-6*kappa",
+    "slow_z1": "18*kappa - 12*I*kappa**2/delta",
+    "rotated_G": [
+      [
+        "-6*kappa/(3*epsilon**2 + 1)",
+        "2*sqrt(3)*kappa/(3*epsilon**3 + epsilon)"
+      ],
+      [
+        "2*sqrt(3)*kappa/(3*epsilon**3 + epsilon)",
+        "(-9*I*delta*epsilon**4 - 6*I*delta*epsilon**2 - I*delta - 2*epsilon**2*kappa)/(3*epsilon**6 + epsilon**4)"
+      ]
+    ],
+    "slow_high_leading": "-2*sqrt(3)*I*epsilon**3*kappa/delta",
+    "fast_low_leading": "2*sqrt(3)*I*epsilon**3*kappa/delta"
+  },
+  "joint_row_comparisons": [
+    {
+      "S": 1,
+      "epsilon": "0.7071067811865475244008443621048490392848",
+      "birth": "0.5195748185303928162666263684606057768105",
+      "no_event_energy": "0.517488280866812617661885578050774044594",
+      "epsilon_squared_energy": "1.038106368228995533230882341716295687513",
+      "author_differences": {
+        "P_birth": "3.9422319e-31",
+        "no_event_energy": "2.2595541e-31",
+        "epsilon_squared_energy": "3.7043125e-30"
+      },
+      "max_eigen_residual": "4.9090935e-91"
+    },
+    {
+      "S": 2,
+      "epsilon": "0.408248290463863016366214012450981898661",
+      "birth": "0.7849963443438592079759433553349626177547",
+      "no_event_energy": "0.1982612339761059885491057336525623679855",
+      "epsilon_squared_energy": "1.21053805551180647672209932194453765463",
+      "author_differences": {
+        "P_birth": "3.7382245e-32",
+        "no_event_energy": "4.3763201e-31",
+        "epsilon_squared_energy": "4.5376546e-30"
+      },
+      "max_eigen_residual": "1.9636374e-90"
+    },
+    {
+      "S": 4,
+      "epsilon": "0.2236067977499789696409173668731276235441",
+      "birth": "0.8743518836668797877603806461370187140863",
+      "no_event_energy": "0.04960295820185563660848580055715016537027",
+      "epsilon_squared_energy": "1.314007973410412463470995259233385579398",
+      "author_differences": {
+        "P_birth": "1.8714086e-32",
+        "no_event_energy": "4.983463e-32",
+        "epsilon_squared_energy": "3.3855794e-30"
+      },
+      "max_eigen_residual": "5.4423782e-91"
+    },
+    {
+      "S": 8,
+      "epsilon": "0.1178511301977579207334740603508081732141",
+      "birth": "0.8999886807947687445574416019886911541957",
+      "no_event_energy": "0.01473879954047906541496684582153883144821",
+      "epsilon_squared_energy": "1.350187726741326437189148053619446992841",
+      "author_differences": {
+        "P_birth": "3.088458e-31",
+        "no_event_energy": "3.8831448e-32",
+        "epsilon_squared_energy": "5.5300716e-31"
+      },
+      "max_eigen_residual": "3.1418198e-89"
+    },
+    {
+      "S": 16,
+      "epsilon": "0.06063390625908324337972661552903054448746",
+      "birth": "0.9068640474340248829503362955343703009895",
+      "no_event_energy": "0.003975727430556071259696214101923180661092",
+      "epsilon_squared_energy": "1.360310687796002604099253326441636051413",
+      "author_differences": {
+        "P_birth": "3.7030099e-31",
+        "no_event_energy": "3.1806611e-33",
+        "epsilon_squared_energy": "1.6360514e-30"
+      },
+      "max_eigen_residual": "7.8545833e-90"
+    },
+    {
+      "S": 32,
+      "epsilon": "0.03077287274483318318356016503131075889585",
+      "birth": "0.9086623901784039905625862399045707528919",
+      "no_event_energy": "0.0010291278177876586942910855971630678797",
+      "epsilon_squared_energy": "1.36299455982046373930855198399094435194",
+      "author_differences": {
+        "P_birth": "4.2924711e-31",
+        "no_event_energy": "3.0678797e-33",
+        "epsilon_squared_energy": "9.4435194e-31"
+      },
+      "max_eigen_residual": "1.7055411e-89"
+    },
+    {
+      "S": 64,
+      "epsilon": "0.01550434182365105702378194851981494448295",
+      "birth": "0.9091249620191960157684732566082963975777",
+      "no_event_energy": "0.0002615731606772212894604115387370489702583",
+      "epsilon_squared_energy": "1.363687505906957647984750620588295254311",
+      "author_differences": {
+        "P_birth": "2.9639758e-31",
+        "no_event_energy": "4.8970258e-35",
+        "epsilon_squared_energy": "1.7047457e-30"
+      },
+      "max_eigen_residual": "6.1088673e-90"
+    }
+  ],
+  "asymptotic_controls": [
+    {
+      "epsilon": "0.1",
+      "time": "0",
+      "high_amplitude_over_epsilon_cubed": "0.0",
+      "no_event_energy_over_epsilon_squared": "0.0",
+      "birth_error_over_epsilon_squared": "0.0",
+      "scaled_energy_error": "0.0"
+    },
+    {
+      "epsilon": "0.1",
+      "time": "0.0001",
+      "high_amplitude_over_epsilon_cubed": "1.1751834279526000037",
+      "no_event_energy_over_epsilon_squared": "2.4182292124245760803",
+      "birth_error_over_epsilon_squared": "0.0016743830548764206577",
+      "scaled_energy_error": "0.00019912615334310888126"
+    },
+    {
+      "epsilon": "0.1",
+      "time": "0.03",
+      "high_amplitude_over_epsilon_cubed": "0.77709427087140459176",
+      "no_event_energy_over_epsilon_squared": "1.0573860106928510391",
+      "birth_error_over_epsilon_squared": "0.36433471901909661739",
+      "scaled_energy_error": "0.0091847967339176786395"
+    },
+    {
+      "epsilon": "0.1",
+      "time": "0.2",
+      "high_amplitude_over_epsilon_cubed": "0.48210098244683626341",
+      "no_event_energy_over_epsilon_squared": "0.40696979659063447692",
+      "birth_error_over_epsilon_squared": "1.0864915404045970803",
+      "scaled_energy_error": "0.027664837300658162101"
+    },
+    {
+      "epsilon": "0.1",
+      "time": "0.7",
+      "high_amplitude_over_epsilon_cubed": "0.15037423826221765881",
+      "no_event_energy_over_epsilon_squared": "0.039594332594181801541",
+      "birth_error_over_epsilon_squared": "0.35736847615136157681",
+      "scaled_energy_error": "0.0091089367086003020286"
+    },
+    {
+      "epsilon": "0.05",
+      "time": "0",
+      "high_amplitude_over_epsilon_cubed": "0.0",
+      "no_event_energy_over_epsilon_squared": "0.0",
+      "birth_error_over_epsilon_squared": "0.0",
+      "scaled_energy_error": "0.0"
+    },
+    {
+      "epsilon": "0.05",
+      "time": "0.0001",
+      "high_amplitude_over_epsilon_cubed": "1.4334069043726544261",
+      "no_event_energy_over_epsilon_squared": "3.5191109567125990699",
+      "birth_error_over_epsilon_squared": "0.001454766561193764853",
+      "scaled_energy_error": "0.000012720306651843493248"
+    },
+    {
+      "epsilon": "0.05",
+      "time": "0.03",
+      "high_amplitude_over_epsilon_cubed": "0.74766459162083646808",
+      "no_event_energy_over_epsilon_squared": "0.95743126051297397806",
+      "birth_error_over_epsilon_squared": "0.3715545371661252973",
+      "scaled_energy_error": "0.0023626762290558426829"
+    },
+    {
+      "epsilon": "0.05",
+      "time": "0.2",
+      "high_amplitude_over_epsilon_cubed": "0.49865715025704461272",
+      "no_event_energy_over_epsilon_squared": "0.42589062261136708451",
+      "birth_error_over_epsilon_squared": "1.0986435021421165807",
+      "scaled_energy_error": "0.0070011905097646721579"
+    },
+    {
+      "epsilon": "0.05",
+      "time": "0.7",
+      "high_amplitude_over_epsilon_cubed": "0.15154056978304276246",
+      "no_event_energy_over_epsilon_squared": "0.039332523232987388351",
+      "birth_error_over_epsilon_squared": "0.35197142891199959522",
+      "scaled_energy_error": "0.0022435720310437912484"
+    },
+    {
+      "epsilon": "0.025",
+      "time": "0",
+      "high_amplitude_over_epsilon_cubed": "0.0",
+      "no_event_energy_over_epsilon_squared": "0.0",
+      "birth_error_over_epsilon_squared": "0.0",
+      "scaled_energy_error": "0.0"
+    },
+    {
+      "epsilon": "0.025",
+      "time": "0.0001",
+      "high_amplitude_over_epsilon_cubed": "1.4431310234548945727",
+      "no_event_energy_over_epsilon_squared": "3.547104530501911282",
+      "birth_error_over_epsilon_squared": "0.0014383664649980620306",
+      "scaled_energy_error": "9.0680884636335226678e-7"
+    },
+    {
+      "epsilon": "0.025",
+      "time": "0.03",
+      "high_amplitude_over_epsilon_cubed": "0.75572521904444085151",
+      "no_event_energy_over_epsilon_squared": "0.97272547832346129014",
+      "birth_error_over_epsilon_squared": "0.37343150371548156171",
+      "scaled_energy_error": "0.0005947764881565786369"
+    },
+    {
+      "epsilon": "0.025",
+      "time": "0.2",
+      "high_amplitude_over_epsilon_cubed": "0.50292519756472880617",
+      "no_event_energy_over_epsilon_squared": "0.43079360872936290235",
+      "birth_error_over_epsilon_squared": "1.1017077928562301129",
+      "scaled_energy_error": "0.0017556785161112068351"
+    },
+    {
+      "epsilon": "0.025",
+      "time": "0.7",
+      "high_amplitude_over_epsilon_cubed": "0.15181874440040417127",
+      "no_event_energy_over_epsilon_squared": "0.039256651425280747316",
+      "birth_error_over_epsilon_squared": "0.35059333964875514088",
+      "scaled_energy_error": "0.00055874280043574050549"
+    },
+    {
+      "epsilon": "0.0125",
+      "time": "0",
+      "high_amplitude_over_epsilon_cubed": "0.0",
+      "no_event_energy_over_epsilon_squared": "0.0",
+      "birth_error_over_epsilon_squared": "0.0",
+      "scaled_energy_error": "0.0"
+    },
+    {
+      "epsilon": "0.0125",
+      "time": "0.0001",
+      "high_amplitude_over_epsilon_cubed": "0.95663379169751196624",
+      "no_event_energy_over_epsilon_squared": "1.5564812181408231818",
+      "birth_error_over_epsilon_squared": "0.0014387063741918722203",
+      "scaled_energy_error": "5.3523454122730789681e-7"
+    },
+    {
+      "epsilon": "0.0125",
+      "time": "0.03",
+      "high_amplitude_over_epsilon_cubed": "0.75777467012315317364",
+      "no_event_energy_over_epsilon_squared": "0.97663574967181696586",
+      "birth_error_over_epsilon_squared": "0.37390520483559090456",
+      "scaled_energy_error": "0.00014895401140544852894"
+    },
+    {
+      "epsilon": "0.0125",
+      "time": "0.2",
+      "high_amplitude_over_epsilon_cubed": "0.50400048737038391259",
+      "no_event_energy_over_epsilon_squared": "0.43203045454977412359",
+      "birth_error_over_epsilon_squared": "1.1024754752411596525",
+      "scaled_energy_error": "0.00043925702454788026743"
+    },
+    {
+      "epsilon": "0.0125",
+      "time": "0.7",
+      "high_amplitude_over_epsilon_cubed": "0.15188740321157976425",
+      "no_event_energy_over_epsilon_squared": "0.039237015265937734247",
+      "birth_error_over_epsilon_squared": "0.35024701286285690805",
+      "scaled_energy_error": "0.00013955058625260153324"
+    },
+    {
+      "epsilon": "0.00625",
+      "time": "0",
+      "high_amplitude_over_epsilon_cubed": "0.0",
+      "no_event_energy_over_epsilon_squared": "0.0",
+      "birth_error_over_epsilon_squared": "0.0",
+      "scaled_energy_error": "0.0"
+    },
+    {
+      "epsilon": "0.00625",
+      "time": "0.0001",
+      "high_amplitude_over_epsilon_cubed": "0.84005812924431077092",
+      "no_event_energy_over_epsilon_squared": "1.199826611071871554",
+      "birth_error_over_epsilon_squared": "0.0014391476539479137419",
+      "scaled_energy_error": "1.4152180822547597888e-7"
+    },
+    {
+      "epsilon": "0.00625",
+      "time": "0.03",
+      "high_amplitude_over_epsilon_cubed": "0.7582883301042963326",
+      "no_event_energy_over_epsilon_squared": "0.97761657669164943892",
+      "birth_error_over_epsilon_squared": "0.37402391267642769118",
+      "scaled_energy_error": "0.000037254796452240765428"
+    },
+    {
+      "epsilon": "0.00625",
+      "time": "0.2",
+      "high_amplitude_over_epsilon_cubed": "0.5042698306462628241",
+      "no_event_energy_over_epsilon_squared": "0.4323403645198894883",
+      "birth_error_over_epsilon_squared": "1.1026674958586021063",
+      "scaled_energy_error": "0.00010983536039624790285"
+    },
+    {
+      "epsilon": "0.00625",
+      "time": "0.7",
+      "high_amplitude_over_epsilon_cubed": "0.15190451186154647942",
+      "no_event_energy_over_epsilon_squared": "0.039232064199437104008",
+      "birth_error_over_epsilon_squared": "0.35016031835885059575",
+      "scaled_energy_error": "0.000034879190598146922994"
+    }
+  ],
+  "full_matrix_extension_controls": [
+    {
+      "instrument": "resolved",
+      "epsilon": 0.5,
+      "delta": 0.7,
+      "kappa": 1.3,
+      "time": 0.01,
+      "birth": 0.08049801972405374,
+      "spectral_birth": 0.08049801972405372,
+      "energy": 0.3847729023322801,
+      "spectral_energy": 0.38477290233227945,
+      "no_event_energy": 0.04668121949125382,
+      "absolute_energy_error": 6.661338147750939e-16,
+      "absolute_author_energy_difference": 1.1102230246251565e-16,
+      "absolute_birth_error": 1.3877787807814457e-17
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.5,
+      "delta": 0.7,
+      "kappa": 1.3,
+      "time": 0.01,
+      "birth": 0.08049801972405374,
+      "spectral_birth": 0.08049801972405372,
+      "energy": 0.3847729023322801,
+      "spectral_energy": 0.38477290233227945,
+      "no_event_energy": 0.04668121949125382,
+      "absolute_energy_error": 6.661338147750939e-16,
+      "absolute_author_energy_difference": 1.1102230246251565e-16,
+      "absolute_birth_error": 1.3877787807814457e-17
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.5,
+      "delta": 0.7,
+      "kappa": 1.3,
+      "time": 0.08,
+      "birth": 0.3772996934071151,
+      "spectral_birth": 0.37729969340711533,
+      "energy": 2.830045034918158,
+      "spectral_energy": 2.8300450349181574,
+      "no_event_energy": 1.2453863226082733,
+      "absolute_energy_error": 4.440892098500626e-16,
+      "absolute_author_energy_difference": 8.881784197001252e-16,
+      "absolute_birth_error": 2.220446049250313e-16
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.5,
+      "delta": 0.7,
+      "kappa": 1.3,
+      "time": 0.08,
+      "birth": 0.37729969340711517,
+      "spectral_birth": 0.37729969340711533,
+      "energy": 2.8300450349181574,
+      "spectral_energy": 2.8300450349181574,
+      "no_event_energy": 1.2453863226082733,
+      "absolute_energy_error": 0.0,
+      "absolute_author_energy_difference": 4.440892098500626e-16,
+      "absolute_birth_error": 1.6653345369377348e-16
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.5,
+      "delta": 0.7,
+      "kappa": 1.3,
+      "time": 0.3,
+      "birth": 0.9060906280490352,
+      "spectral_birth": 0.9060906280490351,
+      "energy": 3.942992003633541,
+      "spectral_energy": 3.942992003633543,
+      "no_event_energy": 0.13741136582759564,
+      "absolute_energy_error": 2.220446049250313e-15,
+      "absolute_author_energy_difference": 1.7763568394002505e-15,
+      "absolute_birth_error": 1.1102230246251565e-16
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.5,
+      "delta": 0.7,
+      "kappa": 1.3,
+      "time": 0.3,
+      "birth": 0.9060906280490353,
+      "spectral_birth": 0.9060906280490351,
+      "energy": 3.9429920036335426,
+      "spectral_energy": 3.942992003633543,
+      "no_event_energy": 0.13741136582759564,
+      "absolute_energy_error": 4.440892098500626e-16,
+      "absolute_author_energy_difference": 0.0,
+      "absolute_birth_error": 2.220446049250313e-16
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.25,
+      "delta": 1.0,
+      "kappa": 0.4,
+      "time": 0.01,
+      "birth": 0.037884671404714784,
+      "spectral_birth": 0.03788467140471477,
+      "energy": 1.1612791750109426,
+      "spectral_energy": 1.16127917501095,
+      "no_event_energy": 0.2520470612977956,
+      "absolute_energy_error": 7.327471962526033e-15,
+      "absolute_author_energy_difference": 1.7319479184152442e-14,
+      "absolute_birth_error": 1.3877787807814457e-17
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.25,
+      "delta": 1.0,
+      "kappa": 0.4,
+      "time": 0.01,
+      "birth": 0.037884671404714784,
+      "spectral_birth": 0.03788467140471477,
+      "energy": 1.1612791750109426,
+      "spectral_energy": 1.16127917501095,
+      "no_event_energy": 0.2520470612977956,
+      "absolute_energy_error": 7.327471962526033e-15,
+      "absolute_author_energy_difference": 1.7319479184152442e-14,
+      "absolute_birth_error": 1.3877787807814457e-17
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.25,
+      "delta": 1.0,
+      "kappa": 0.4,
+      "time": 0.08,
+      "birth": 0.2757230057751964,
+      "spectral_birth": 0.27572300577519626,
+      "energy": 6.64704366499522,
+      "spectral_energy": 6.647043664995236,
+      "no_event_energy": 0.029691526390525864,
+      "absolute_energy_error": 1.5987211554602254e-14,
+      "absolute_author_energy_difference": 8.348877145181177e-14,
+      "absolute_birth_error": 1.1102230246251565e-16
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.25,
+      "delta": 1.0,
+      "kappa": 0.4,
+      "time": 0.08,
+      "birth": 0.2757230057751964,
+      "spectral_birth": 0.27572300577519626,
+      "energy": 6.64704366499522,
+      "spectral_energy": 6.647043664995236,
+      "no_event_energy": 0.029691526390525864,
+      "absolute_energy_error": 1.5987211554602254e-14,
+      "absolute_author_energy_difference": 8.348877145181177e-14,
+      "absolute_birth_error": 1.1102230246251565e-16
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.25,
+      "delta": 1.0,
+      "kappa": 0.4,
+      "time": 0.3,
+      "birth": 0.7019868571723833,
+      "spectral_birth": 0.7019868571723803,
+      "energy": 16.87221423150287,
+      "spectral_energy": 16.872214231502852,
+      "no_event_energy": 0.02452965936572615,
+      "absolute_energy_error": 1.7763568394002505e-14,
+      "absolute_author_energy_difference": 2.1316282072803006e-14,
+      "absolute_birth_error": 2.9976021664879227e-15
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.25,
+      "delta": 1.0,
+      "kappa": 0.4,
+      "time": 0.3,
+      "birth": 0.7019868571723832,
+      "spectral_birth": 0.7019868571723803,
+      "energy": 16.87221423150286,
+      "spectral_energy": 16.872214231502852,
+      "no_event_energy": 0.02452965936572615,
+      "absolute_energy_error": 7.105427357601002e-15,
+      "absolute_author_energy_difference": 3.197442310920451e-14,
+      "absolute_birth_error": 2.886579864025407e-15
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.125,
+      "delta": 1.2,
+      "kappa": 0.8,
+      "time": 0.01,
+      "birth": 0.08755447978569032,
+      "spectral_birth": 0.08755447978569049,
+      "energy": 10.154765583116603,
+      "spectral_energy": 10.154765583117166,
+      "no_event_energy": 0.06848951180562261,
+      "absolute_energy_error": 5.631051180898794e-13,
+      "absolute_author_energy_difference": 4.5297099404706387e-13,
+      "absolute_birth_error": 1.6653345369377348e-16
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.125,
+      "delta": 1.2,
+      "kappa": 0.8,
+      "time": 0.01,
+      "birth": 0.08755447978569032,
+      "spectral_birth": 0.08755447978569049,
+      "energy": 10.154765583116603,
+      "spectral_energy": 10.154765583117166,
+      "no_event_energy": 0.06848951180562261,
+      "absolute_energy_error": 5.631051180898794e-13,
+      "absolute_author_energy_difference": 4.5297099404706387e-13,
+      "absolute_birth_error": 1.6653345369377348e-16
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.125,
+      "delta": 1.2,
+      "kappa": 0.8,
+      "time": 0.08,
+      "birth": 0.5196827817438331,
+      "spectral_birth": 0.5196827817438382,
+      "energy": 59.90935579602879,
+      "spectral_energy": 59.90935579603327,
+      "no_event_energy": 0.0418993391431037,
+      "absolute_energy_error": 4.476419235288631e-12,
+      "absolute_author_energy_difference": 3.055333763768431e-13,
+      "absolute_birth_error": 5.10702591327572e-15
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.125,
+      "delta": 1.2,
+      "kappa": 0.8,
+      "time": 0.08,
+      "birth": 0.5196827817438331,
+      "spectral_birth": 0.5196827817438382,
+      "energy": 59.90935579602879,
+      "spectral_energy": 59.90935579603327,
+      "no_event_energy": 0.0418993391431037,
+      "absolute_energy_error": 4.476419235288631e-12,
+      "absolute_author_energy_difference": 3.055333763768431e-13,
+      "absolute_birth_error": 5.10702591327572e-15
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.125,
+      "delta": 1.2,
+      "kappa": 0.8,
+      "time": 0.3,
+      "birth": 0.9360751270805019,
+      "spectral_birth": 0.9360751270804974,
+      "energy": 107.84142457546739,
+      "spectral_energy": 107.84142457544202,
+      "no_event_energy": 0.005569935768708943,
+      "absolute_energy_error": 2.5366375666635577e-11,
+      "absolute_author_energy_difference": 2.6716406864579767e-12,
+      "absolute_birth_error": 4.440892098500626e-15
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.125,
+      "delta": 1.2,
+      "kappa": 0.8,
+      "time": 0.3,
+      "birth": 0.9360751270805019,
+      "spectral_birth": 0.9360751270804974,
+      "energy": 107.84142457546739,
+      "spectral_energy": 107.84142457544202,
+      "no_event_energy": 0.005569935768708943,
+      "absolute_energy_error": 2.5366375666635577e-11,
+      "absolute_author_energy_difference": 2.6716406864579767e-12,
+      "absolute_birth_error": 4.440892098500626e-15
+    }
+  ],
+  "summary": {
+    "passed": 249,
+    "failed": 0
+  }
+}

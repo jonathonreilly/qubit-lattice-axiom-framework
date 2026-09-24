@@ -1,0 +1,34 @@
+{
+  "full_physical_dimension": 16,
+  "actual_marks_compared": 9,
+  "exact_checks": 144,
+  "scientific_discrepancies": [],
+  "author_fixed_lambda_proof_checked": true,
+  "own_uniform_lambda_proof_remains_separately_attributed": true
+}
+{
+  "scaled_polynomial": "-3*K*delta*epsilon**2*lam + I*K*epsilon**4*lam*z + 3*I*delta*epsilon**2*z + 6*I*delta*kappa + I*delta*z + epsilon**4*z**2 + 2*epsilon**2*kappa*z",
+  "independently_derived_slow_root_through_epsilon2": "epsilon**2*(-3*I*K*lam + 18*kappa - 12*I*kappa**2/delta) - 6*kappa",
+  "old_basis_rotated_generator": [
+    [
+      "3*(-I*K*epsilon**2*lam - 2*kappa)/(3*epsilon**2 + 1)",
+      "sqrt(3)*(I*K*epsilon**2*lam + 2*kappa)/(epsilon*(3*epsilon**2 + 1))"
+    ],
+    [
+      "sqrt(3)*(I*K*epsilon**2*lam + 2*kappa)/(epsilon*(3*epsilon**2 + 1))",
+      "(-I*K*epsilon**4*lam - 9*I*delta*epsilon**4 - 6*I*delta*epsilon**2 - I*delta - 2*epsilon**2*kappa)/(3*epsilon**6 + epsilon**4)"
+    ]
+  ],
+  "slow_high_amplitude_order": "epsilon^3",
+  "fast_low_amplitude_order": "epsilon^3",
+  "interpretation": "These exact coefficients validate the hypotheses of the released fixed-lambda eigenvector proof. PRE uses a separate direct Duhamel proof uniform over lambda in [0,1]."
+}
+{
+  "difference": "One structural-zero assertion changed to simplify the exact polynomial coefficient. No scientific formula or tolerance changed.",
+  "historical_failures_reported": 2,
+  "historical_complete_failed_snapshot_count": 1,
+  "preserved_failure_replayed": true,
+  "raw_series": "epsilon**2*(-3*K*delta*lam + delta*(3*K*lam + 12*kappa**2/delta) - 12*kappa**2)",
+  "raw_structurally_zero": false,
+  "simplified_series": "0"
+}

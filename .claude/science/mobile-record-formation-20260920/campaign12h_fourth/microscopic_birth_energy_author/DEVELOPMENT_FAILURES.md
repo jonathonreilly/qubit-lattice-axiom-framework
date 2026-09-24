@@ -1,0 +1,1 @@
+Initial exact-control execution stopped at the spectral trace assertion because Python structural equality compared a factored expression with an expanded expression. The assertion was changed to exact symbolic equality of their difference. No scientific formula was changed. The completed run is separately logged.

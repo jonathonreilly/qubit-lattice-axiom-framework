@@ -1,0 +1,123 @@
+{
+  "standing": "Personal exact symbolic family calculation; independent review pending",
+  "source_sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e",
+  "initial_common_preparation_energy": "3*K*epsilon**2*lambda/(3*epsilon**2 + 1)",
+  "conditional_outputs": [
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        1
+      ],
+      "mark": "1",
+      "c": "2",
+      "conditional_mean": "2*(K*epsilon**2*lambda + delta)/epsilon**2",
+      "conditional_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        1
+      ],
+      "mark": "-1",
+      "c": "1",
+      "conditional_mean": "(2*K*epsilon**2*lambda + delta)/epsilon**2",
+      "conditional_variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        2
+      ],
+      "mark": "1",
+      "c": "2",
+      "conditional_mean": "2*(K*epsilon**2*lambda + delta)/epsilon**2",
+      "conditional_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        2
+      ],
+      "mark": "-1",
+      "c": "1",
+      "conditional_mean": "(2*K*epsilon**2*lambda + delta)/epsilon**2",
+      "conditional_variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        3
+      ],
+      "mark": "1",
+      "c": "2",
+      "conditional_mean": "2*(K*epsilon**2*lambda + delta)/epsilon**2",
+      "conditional_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        3
+      ],
+      "mark": "-1",
+      "c": "1",
+      "conditional_mean": "(2*K*epsilon**2*lambda + delta)/epsilon**2",
+      "conditional_variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"
+    },
+    {
+      "instrument": "coherent",
+      "edge": [
+        0,
+        1
+      ],
+      "mark": "coherent",
+      "c": "3/2",
+      "conditional_mean": "(4*K*epsilon**2*lambda + 3*delta)/(2*epsilon**2)",
+      "conditional_variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)"
+    },
+    {
+      "instrument": "coherent",
+      "edge": [
+        0,
+        2
+      ],
+      "mark": "coherent",
+      "c": "3/2",
+      "conditional_mean": "(4*K*epsilon**2*lambda + 3*delta)/(2*epsilon**2)",
+      "conditional_variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)"
+    },
+    {
+      "instrument": "coherent",
+      "edge": [
+        0,
+        3
+      ],
+      "mark": "coherent",
+      "c": "3/2",
+      "conditional_mean": "(4*K*epsilon**2*lambda + 3*delta)/(2*epsilon**2)",
+      "conditional_variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)"
+    }
+  ],
+  "initial_energy_derivatives": {
+    "resolved": {
+      "gain": "6*kappa*(4*K*epsilon**2*lambda + 3*delta)/(epsilon**2*(3*epsilon**2 + 1))",
+      "loss": "-12*K*kappa*lambda/(3*epsilon**2 + 1)",
+      "total": "6*kappa*(2*K*epsilon**2*lambda + 3*delta)/(epsilon**2*(3*epsilon**2 + 1))"
+    },
+    "coherent": {
+      "gain": "6*kappa*(4*K*epsilon**2*lambda + 3*delta)/(epsilon**2*(3*epsilon**2 + 1))",
+      "loss": "-12*K*kappa*lambda/(3*epsilon**2 + 1)",
+      "total": "6*kappa*(2*K*epsilon**2*lambda + 3*delta)/(epsilon**2*(3*epsilon**2 + 1))"
+    }
+  },
+  "scaled_no_event_characteristic_polynomial": "-3*K*delta*epsilon**2*lambda + I*K*epsilon**4*lambda*z + 3*I*delta*epsilon**2*z + 6*I*delta*kappa + I*delta*z + epsilon**4*z**2 + 2*epsilon**2*kappa*z",
+  "slow_eigenvalue_through_epsilon2": "epsilon**2*(18*kappa - I*(3*K*lambda + 12*kappa**2/delta)) - 6*kappa",
+  "no_event_initial_vector": "(1,sqrt(3)epsilon)/sqrt(1+3epsilon\u00b2)",
+  "finite_time_formed_energy_coefficient": "3delta/(2epsilon\u00b2)+2K lambda",
+  "checked_symbolically": true
+}

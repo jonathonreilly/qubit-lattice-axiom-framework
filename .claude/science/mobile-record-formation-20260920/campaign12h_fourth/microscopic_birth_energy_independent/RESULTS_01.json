@@ -1,0 +1,4133 @@
+{
+  "attempt": "01",
+  "status": "failed",
+  "checks": [
+    {
+      "name": "source identity campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "passed": true
+    },
+    {
+      "name": "source identity campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "passed": true
+    },
+    {
+      "name": "source identity campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "passed": true
+    },
+    {
+      "name": "source identity campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "passed": true
+    },
+    {
+      "name": "source identity campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "passed": true
+    },
+    {
+      "name": "S=1 physical dimension",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "S=1 number sectors",
+      "passed": true
+    },
+    {
+      "name": "S=1 P dimension",
+      "passed": true
+    },
+    {
+      "name": "S=1 Q dimension",
+      "passed": true
+    },
+    {
+      "name": "S=1 spin weights",
+      "passed": true
+    },
+    {
+      "name": "S=1 compensation diagonal identity",
+      "passed": true
+    },
+    {
+      "name": "S=1 T assembly identity",
+      "passed": true
+    },
+    {
+      "name": "S=1 compensation identity",
+      "passed": true
+    },
+    {
+      "name": "S=1 hopping number conservation",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (1, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (2, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (2, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (3, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (3, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 physical dimension",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "S=2 number sectors",
+      "passed": true
+    },
+    {
+      "name": "S=2 P dimension",
+      "passed": true
+    },
+    {
+      "name": "S=2 Q dimension",
+      "passed": true
+    },
+    {
+      "name": "S=2 spin weights",
+      "passed": true
+    },
+    {
+      "name": "S=2 compensation diagonal identity",
+      "passed": true
+    },
+    {
+      "name": "S=2 T assembly identity",
+      "passed": true
+    },
+    {
+      "name": "S=2 compensation identity",
+      "passed": true
+    },
+    {
+      "name": "S=2 hopping number conservation",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (1, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (2, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (2, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (3, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (3, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 physical dimension",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "S=4 number sectors",
+      "passed": true
+    },
+    {
+      "name": "S=4 P dimension",
+      "passed": true
+    },
+    {
+      "name": "S=4 Q dimension",
+      "passed": true
+    },
+    {
+      "name": "S=4 spin weights",
+      "passed": true
+    },
+    {
+      "name": "S=4 compensation diagonal identity",
+      "passed": true
+    },
+    {
+      "name": "S=4 T assembly identity",
+      "passed": true
+    },
+    {
+      "name": "S=4 compensation identity",
+      "passed": true
+    },
+    {
+      "name": "S=4 hopping number conservation",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (1, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (2, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (2, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (3, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (3, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 full S-independent matrices",
+      "passed": true
+    },
+    {
+      "name": "S=4 full S-independent matrices",
+      "passed": true
+    },
+    {
+      "name": "factorization full matrix",
+      "passed": true
+    },
+    {
+      "name": "M minimal polynomial",
+      "passed": true
+    },
+    {
+      "name": "rank F",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "canonical U unitary",
+      "passed": true
+    },
+    {
+      "name": "canonical U maps g to dressed g",
+      "passed": true
+    },
+    {
+      "name": "canonical transformed Hamiltonian",
+      "passed": true
+    },
+    {
+      "name": "positive P overlap",
+      "passed": true
+    },
+    {
+      "name": "low projector",
+      "passed": true
+    },
+    {
+      "name": "low spectral identity",
+      "passed": true
+    },
+    {
+      "name": "Qdark projector",
+      "passed": true
+    },
+    {
+      "name": "Qdark spectral identity",
+      "passed": true
+    },
+    {
+      "name": "high projector",
+      "passed": true
+    },
+    {
+      "name": "high spectral identity",
+      "passed": true
+    },
+    {
+      "name": "projectors sum",
+      "passed": true
+    },
+    {
+      "name": "projector ranks",
+      "passed": false
+    }
+  ],
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "runner_sha256": "761de22873981c86e230371374cf3543a906d70f85a7a92d12b3ea1d757b81a5",
+  "scope": "Independent PRE; no campaign builder imported; complete finite tensor-basis enumeration.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d",
+      "expected": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e",
+      "expected": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+      "expected": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0",
+      "expected": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9",
+      "expected": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    }
+  ],
+  "basis_certificates": {
+    "1": {
+      "basis": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "kind": "outward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 0,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 9,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 10,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 1,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 9,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 0,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 11,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 4,
+          "to": 12,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 2,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 10,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 5,
+          "to": 12,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 0,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 13,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 11,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 1,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 14,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 7,
+          "to": 12,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 2,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 14,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 1,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 15,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 13,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 15,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 2,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        }
+      ],
+      "operators": {
+        "F": [
+          [
+            3,
+            0,
+            "1"
+          ],
+          [
+            3,
+            9,
+            "1"
+          ],
+          [
+            3,
+            10,
+            "1"
+          ],
+          [
+            4,
+            12,
+            "1"
+          ],
+          [
+            5,
+            12,
+            "1"
+          ],
+          [
+            6,
+            1,
+            "1"
+          ],
+          [
+            6,
+            11,
+            "1"
+          ],
+          [
+            6,
+            14,
+            "1"
+          ],
+          [
+            7,
+            12,
+            "1"
+          ],
+          [
+            8,
+            2,
+            "1"
+          ],
+          [
+            8,
+            13,
+            "1"
+          ],
+          [
+            8,
+            15,
+            "1"
+          ]
+        ],
+        "T": [
+          [
+            0,
+            3,
+            "-1"
+          ],
+          [
+            1,
+            6,
+            "-1"
+          ],
+          [
+            2,
+            8,
+            "-1"
+          ],
+          [
+            3,
+            0,
+            "-1"
+          ],
+          [
+            3,
+            9,
+            "-1"
+          ],
+          [
+            3,
+            10,
+            "-1"
+          ],
+          [
+            4,
+            12,
+            "-1"
+          ],
+          [
+            5,
+            12,
+            "-1"
+          ],
+          [
+            6,
+            1,
+            "-1"
+          ],
+          [
+            6,
+            11,
+            "-1"
+          ],
+          [
+            6,
+            14,
+            "-1"
+          ],
+          [
+            7,
+            12,
+            "-1"
+          ],
+          [
+            8,
+            2,
+            "-1"
+          ],
+          [
+            8,
+            13,
+            "-1"
+          ],
+          [
+            8,
+            15,
+            "-1"
+          ],
+          [
+            9,
+            3,
+            "-1"
+          ],
+          [
+            10,
+            3,
+            "-1"
+          ],
+          [
+            11,
+            6,
+            "-1"
+          ],
+          [
+            12,
+            4,
+            "-1"
+          ],
+          [
+            12,
+            5,
+            "-1"
+          ],
+          [
+            12,
+            7,
+            "-1"
+          ],
+          [
+            13,
+            8,
+            "-1"
+          ],
+          [
+            14,
+            6,
+            "-1"
+          ],
+          [
+            15,
+            8,
+            "-1"
+          ]
+        ],
+        "W": [
+          [
+            3,
+            3,
+            "1"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "1"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "1"
+          ]
+        ],
+        "P": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "N": [
+          [
+            0,
+            0,
+            "3"
+          ],
+          [
+            1,
+            1,
+            "3"
+          ],
+          [
+            2,
+            2,
+            "3"
+          ],
+          [
+            3,
+            3,
+            "3"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "3"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "3"
+          ],
+          [
+            9,
+            9,
+            "3"
+          ],
+          [
+            10,
+            10,
+            "3"
+          ],
+          [
+            11,
+            11,
+            "3"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "3"
+          ],
+          [
+            14,
+            14,
+            "3"
+          ],
+          [
+            15,
+            15,
+            "3"
+          ]
+        ],
+        "DS": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "Dinf": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "compensation": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            0,
+            9,
+            "1"
+          ],
+          [
+            0,
+            10,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            1,
+            11,
+            "1"
+          ],
+          [
+            1,
+            14,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            2,
+            13,
+            "1"
+          ],
+          [
+            2,
+            15,
+            "1"
+          ],
+          [
+            9,
+            0,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            9,
+            10,
+            "1"
+          ],
+          [
+            10,
+            0,
+            "1"
+          ],
+          [
+            10,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            1,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            11,
+            14,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            2,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            13,
+            15,
+            "1"
+          ],
+          [
+            14,
+            1,
+            "1"
+          ],
+          [
+            14,
+            11,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            2,
+            "1"
+          ],
+          [
+            15,
+            13,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ]
+      },
+      "jumps": {
+        "(1, -1)": [
+          [
+            1,
+            4,
+            "1"
+          ],
+          [
+            2,
+            5,
+            "1"
+          ]
+        ],
+        "(1, 1)": [
+          [
+            9,
+            4,
+            "1"
+          ],
+          [
+            10,
+            5,
+            "1"
+          ]
+        ],
+        "(2, -1)": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            2,
+            7,
+            "1"
+          ]
+        ],
+        "(2, 1)": [
+          [
+            11,
+            4,
+            "1"
+          ],
+          [
+            14,
+            7,
+            "1"
+          ]
+        ],
+        "(3, -1)": [
+          [
+            0,
+            5,
+            "1"
+          ],
+          [
+            1,
+            7,
+            "1"
+          ]
+        ],
+        "(3, 1)": [
+          [
+            13,
+            5,
+            "1"
+          ],
+          [
+            15,
+            7,
+            "1"
+          ]
+        ]
+      }
+    },
+    "2": {
+      "basis": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "kind": "outward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 0,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 9,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 10,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 1,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 9,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 0,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 11,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 4,
+          "to": 12,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 2,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 10,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 5,
+          "to": 12,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 0,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 13,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 11,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 1,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 14,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 7,
+          "to": 12,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 2,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 14,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 1,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 15,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 13,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 15,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 2,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        }
+      ],
+      "operators": {
+        "F": [
+          [
+            3,
+            0,
+            "1"
+          ],
+          [
+            3,
+            9,
+            "1"
+          ],
+          [
+            3,
+            10,
+            "1"
+          ],
+          [
+            4,
+            12,
+            "1"
+          ],
+          [
+            5,
+            12,
+            "1"
+          ],
+          [
+            6,
+            1,
+            "1"
+          ],
+          [
+            6,
+            11,
+            "1"
+          ],
+          [
+            6,
+            14,
+            "1"
+          ],
+          [
+            7,
+            12,
+            "1"
+          ],
+          [
+            8,
+            2,
+            "1"
+          ],
+          [
+            8,
+            13,
+            "1"
+          ],
+          [
+            8,
+            15,
+            "1"
+          ]
+        ],
+        "T": [
+          [
+            0,
+            3,
+            "-1"
+          ],
+          [
+            1,
+            6,
+            "-1"
+          ],
+          [
+            2,
+            8,
+            "-1"
+          ],
+          [
+            3,
+            0,
+            "-1"
+          ],
+          [
+            3,
+            9,
+            "-1"
+          ],
+          [
+            3,
+            10,
+            "-1"
+          ],
+          [
+            4,
+            12,
+            "-1"
+          ],
+          [
+            5,
+            12,
+            "-1"
+          ],
+          [
+            6,
+            1,
+            "-1"
+          ],
+          [
+            6,
+            11,
+            "-1"
+          ],
+          [
+            6,
+            14,
+            "-1"
+          ],
+          [
+            7,
+            12,
+            "-1"
+          ],
+          [
+            8,
+            2,
+            "-1"
+          ],
+          [
+            8,
+            13,
+            "-1"
+          ],
+          [
+            8,
+            15,
+            "-1"
+          ],
+          [
+            9,
+            3,
+            "-1"
+          ],
+          [
+            10,
+            3,
+            "-1"
+          ],
+          [
+            11,
+            6,
+            "-1"
+          ],
+          [
+            12,
+            4,
+            "-1"
+          ],
+          [
+            12,
+            5,
+            "-1"
+          ],
+          [
+            12,
+            7,
+            "-1"
+          ],
+          [
+            13,
+            8,
+            "-1"
+          ],
+          [
+            14,
+            6,
+            "-1"
+          ],
+          [
+            15,
+            8,
+            "-1"
+          ]
+        ],
+        "W": [
+          [
+            3,
+            3,
+            "1"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "1"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "1"
+          ]
+        ],
+        "P": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "N": [
+          [
+            0,
+            0,
+            "3"
+          ],
+          [
+            1,
+            1,
+            "3"
+          ],
+          [
+            2,
+            2,
+            "3"
+          ],
+          [
+            3,
+            3,
+            "3"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "3"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "3"
+          ],
+          [
+            9,
+            9,
+            "3"
+          ],
+          [
+            10,
+            10,
+            "3"
+          ],
+          [
+            11,
+            11,
+            "3"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "3"
+          ],
+          [
+            14,
+            14,
+            "3"
+          ],
+          [
+            15,
+            15,
+            "3"
+          ]
+        ],
+        "DS": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "Dinf": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "compensation": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            0,
+            9,
+            "1"
+          ],
+          [
+            0,
+            10,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            1,
+            11,
+            "1"
+          ],
+          [
+            1,
+            14,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            2,
+            13,
+            "1"
+          ],
+          [
+            2,
+            15,
+            "1"
+          ],
+          [
+            9,
+            0,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            9,
+            10,
+            "1"
+          ],
+          [
+            10,
+            0,
+            "1"
+          ],
+          [
+            10,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            1,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            11,
+            14,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            2,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            13,
+            15,
+            "1"
+          ],
+          [
+            14,
+            1,
+            "1"
+          ],
+          [
+            14,
+            11,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            2,
+            "1"
+          ],
+          [
+            15,
+            13,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ]
+      },
+      "jumps": {
+        "(1, -1)": [
+          [
+            1,
+            4,
+            "1"
+          ],
+          [
+            2,
+            5,
+            "1"
+          ]
+        ],
+        "(1, 1)": [
+          [
+            9,
+            4,
+            "1"
+          ],
+          [
+            10,
+            5,
+            "1"
+          ]
+        ],
+        "(2, -1)": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            2,
+            7,
+            "1"
+          ]
+        ],
+        "(2, 1)": [
+          [
+            11,
+            4,
+            "1"
+          ],
+          [
+            14,
+            7,
+            "1"
+          ]
+        ],
+        "(3, -1)": [
+          [
+            0,
+            5,
+            "1"
+          ],
+          [
+            1,
+            7,
+            "1"
+          ]
+        ],
+        "(3, 1)": [
+          [
+            13,
+            5,
+            "1"
+          ],
+          [
+            15,
+            7,
+            "1"
+          ]
+        ]
+      }
+    },
+    "4": {
+      "basis": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "kind": "outward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 0,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 9,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 10,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 1,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 9,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 0,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 11,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 4,
+          "to": 12,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 2,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 10,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 5,
+          "to": 12,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 0,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 13,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 11,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 1,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 14,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 7,
+          "to": 12,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 2,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 14,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 1,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 15,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 13,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 15,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 2,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        }
+      ],
+      "operators": {
+        "F": [
+          [
+            3,
+            0,
+            "1"
+          ],
+          [
+            3,
+            9,
+            "1"
+          ],
+          [
+            3,
+            10,
+            "1"
+          ],
+          [
+            4,
+            12,
+            "1"
+          ],
+          [
+            5,
+            12,
+            "1"
+          ],
+          [
+            6,
+            1,
+            "1"
+          ],
+          [
+            6,
+            11,
+            "1"
+          ],
+          [
+            6,
+            14,
+            "1"
+          ],
+          [
+            7,
+            12,
+            "1"
+          ],
+          [
+            8,
+            2,
+            "1"
+          ],
+          [
+            8,
+            13,
+            "1"
+          ],
+          [
+            8,
+            15,
+            "1"
+          ]
+        ],
+        "T": [
+          [
+            0,
+            3,
+            "-1"
+          ],
+          [
+            1,
+            6,
+            "-1"
+          ],
+          [
+            2,
+            8,
+            "-1"
+          ],
+          [
+            3,
+            0,
+            "-1"
+          ],
+          [
+            3,
+            9,
+            "-1"
+          ],
+          [
+            3,
+            10,
+            "-1"
+          ],
+          [
+            4,
+            12,
+            "-1"
+          ],
+          [
+            5,
+            12,
+            "-1"
+          ],
+          [
+            6,
+            1,
+            "-1"
+          ],
+          [
+            6,
+            11,
+            "-1"
+          ],
+          [
+            6,
+            14,
+            "-1"
+          ],
+          [
+            7,
+            12,
+            "-1"
+          ],
+          [
+            8,
+            2,
+            "-1"
+          ],
+          [
+            8,
+            13,
+            "-1"
+          ],
+          [
+            8,
+            15,
+            "-1"
+          ],
+          [
+            9,
+            3,
+            "-1"
+          ],
+          [
+            10,
+            3,
+            "-1"
+          ],
+          [
+            11,
+            6,
+            "-1"
+          ],
+          [
+            12,
+            4,
+            "-1"
+          ],
+          [
+            12,
+            5,
+            "-1"
+          ],
+          [
+            12,
+            7,
+            "-1"
+          ],
+          [
+            13,
+            8,
+            "-1"
+          ],
+          [
+            14,
+            6,
+            "-1"
+          ],
+          [
+            15,
+            8,
+            "-1"
+          ]
+        ],
+        "W": [
+          [
+            3,
+            3,
+            "1"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "1"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "1"
+          ]
+        ],
+        "P": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "N": [
+          [
+            0,
+            0,
+            "3"
+          ],
+          [
+            1,
+            1,
+            "3"
+          ],
+          [
+            2,
+            2,
+            "3"
+          ],
+          [
+            3,
+            3,
+            "3"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "3"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "3"
+          ],
+          [
+            9,
+            9,
+            "3"
+          ],
+          [
+            10,
+            10,
+            "3"
+          ],
+          [
+            11,
+            11,
+            "3"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "3"
+          ],
+          [
+            14,
+            14,
+            "3"
+          ],
+          [
+            15,
+            15,
+            "3"
+          ]
+        ],
+        "DS": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "Dinf": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "compensation": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            0,
+            9,
+            "1"
+          ],
+          [
+            0,
+            10,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            1,
+            11,
+            "1"
+          ],
+          [
+            1,
+            14,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            2,
+            13,
+            "1"
+          ],
+          [
+            2,
+            15,
+            "1"
+          ],
+          [
+            9,
+            0,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            9,
+            10,
+            "1"
+          ],
+          [
+            10,
+            0,
+            "1"
+          ],
+          [
+            10,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            1,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            11,
+            14,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            2,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            13,
+            15,
+            "1"
+          ],
+          [
+            14,
+            1,
+            "1"
+          ],
+          [
+            14,
+            11,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            2,
+            "1"
+          ],
+          [
+            15,
+            13,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ]
+      },
+      "jumps": {
+        "(1, -1)": [
+          [
+            1,
+            4,
+            "1"
+          ],
+          [
+            2,
+            5,
+            "1"
+          ]
+        ],
+        "(1, 1)": [
+          [
+            9,
+            4,
+            "1"
+          ],
+          [
+            10,
+            5,
+            "1"
+          ]
+        ],
+        "(2, -1)": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            2,
+            7,
+            "1"
+          ]
+        ],
+        "(2, 1)": [
+          [
+            11,
+            4,
+            "1"
+          ],
+          [
+            14,
+            7,
+            "1"
+          ]
+        ],
+        "(3, -1)": [
+          [
+            0,
+            5,
+            "1"
+          ],
+          [
+            1,
+            7,
+            "1"
+          ]
+        ],
+        "(3, 1)": [
+          [
+            13,
+            5,
+            "1"
+          ],
+          [
+            15,
+            7,
+            "1"
+          ]
+        ]
+      }
+    }
+  },
+  "exception": "AssertionError('projector ranks')",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/microscopic_star_complete_matrix_check.py\", line 398, in main\n    result[\"exact\"], instruments, g, raw_dressed, h = exact_analysis(models[1])\n                                                      ~~~~~~~~~~~~~~^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/microscopic_star_complete_matrix_check.py\", line 190, in exact_analysis\n    record(\"projector ranks\", (sy.trace(low), sy.trace(qd), sy.trace(high)) == (10, 2, 4))\n    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/microscopic_star_complete_matrix_check.py\", line 55, in record\n    raise AssertionError(name)\nAssertionError: projector ranks\n",
+  "elapsed_seconds": 1.9429666996002197,
+  "summary": {
+    "passed": 66,
+    "failed": 1
+  }
+}

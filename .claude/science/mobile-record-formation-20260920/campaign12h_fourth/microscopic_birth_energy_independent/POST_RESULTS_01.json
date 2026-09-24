@@ -1,0 +1,555 @@
+{
+  "created_utc": "2026-09-24T01:19:02.933708+00:00",
+  "status": "failed",
+  "attempt": "01",
+  "checks": [
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/INTEGRITY_SELF_TEST.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_MICROSCOPIC_STAR_RECONSTRUCTION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_RECEIPT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RECONSTRUCTION_STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RESULTS_01.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RESULTS_02.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_01.stderr.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_01.stdout.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_01_runner.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_02.stderr.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/RUN_02.stdout.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/SOURCE_BINDINGS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/planning_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/repository_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/workhorse_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/microscopic_star_complete_matrix_check.py",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/verify_pre_seal.py",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/DEVELOPMENT_FAILURES.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY.stderr",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/exact_star_energy.py",
+      "passed": true
+    },
+    {
+      "name": "seal /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/AUTHOR_SEAL.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.log",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.stderr",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "artifact /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/star_finite_time_energy.py",
+      "passed": true
+    },
+    {
+      "name": "N=1 full Gauss basis",
+      "passed": true
+    },
+    {
+      "name": "N=1 entire F matrix",
+      "passed": true
+    },
+    {
+      "name": "N=3 full Gauss basis",
+      "passed": true
+    },
+    {
+      "name": "N=3 entire F matrix",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1,+1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1,+1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved1,+1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,+1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1,-1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1,-1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved1,-1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved1,-1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2,+1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2,+1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved2,+1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,+1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2,-1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2,-1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved2,-1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved2,-1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3,+1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3,+1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved3,+1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,+1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3,-1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3,-1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output resolved3,-1",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1c",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula resolved3,-1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 1",
+      "passed": true
+    },
+    {
+      "name": "actual complete output coherent1",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1rate",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1c",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent1target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 2",
+      "passed": true
+    },
+    {
+      "name": "actual complete output coherent2",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2rate",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2c",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent2target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3",
+      "passed": true
+    },
+    {
+      "name": "author output Gauss 3",
+      "passed": true
+    },
+    {
+      "name": "actual complete output coherent3",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3rate",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3c",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3conditional_energy",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3high_spectral_probability",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3conditional_energy_variance",
+      "passed": true
+    },
+    {
+      "name": "author formula coherent3target_B_norm_squared",
+      "passed": true
+    },
+    {
+      "name": "author full initial derivative resolved",
+      "passed": true
+    },
+    {
+      "name": "author full initial derivative coherent",
+      "passed": true
+    },
+    {
+      "name": "two-dimensional no-event space reduces full generator",
+      "passed": true
+    },
+    {
+      "name": "implicit derivative nonzero",
+      "passed": true
+    },
+    {
+      "name": "slow root leading term agrees",
+      "passed": true
+    },
+    {
+      "name": "slow root correction agrees",
+      "passed": false
+    }
+  ],
+  "runner_sha256": "058704a5b38e4cd5bd6894f7d4cd4c82ee219b7d28b0d09f5ac1cbf5e0ad5112",
+  "author_builders_imported": false,
+  "exception": "AssertionError('slow root correction agrees')",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/post_compare_and_extend.py\", line 175, in main\n    check(\"slow root correction agrees\", sy.simplify(z1 - (18 * k - 12 * sy.I * k ** 2 / d)) == 0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/post_compare_and_extend.py\", line 44, in check\n    raise AssertionError(name)\nAssertionError: slow root correction agrees\n",
+  "summary": {
+    "passed": 134,
+    "failed": 1
+  }
+}

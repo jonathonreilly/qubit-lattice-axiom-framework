@@ -1,0 +1,193 @@
+{
+  "status": "Root finite-time consistency control; independent extension review pending",
+  "source_sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e",
+  "exact_symbolic_checks": [
+    "complete loss Gamma=4W",
+    "characteristic polynomial",
+    "orthonormal low/high generator",
+    "no further microscopic star birth in N3"
+  ],
+  "full_GKLS_rows": [
+    {
+      "epsilon": 0.5,
+      "delta": 0.7,
+      "kappa": 1.3,
+      "time": 0.01,
+      "P_birth_2x2": 0.0804980197240539,
+      "P_birth_full_GKLS": 0.08049801972405374,
+      "energy_no_event": 0.04668121949125401,
+      "energy_full_GKLS": 0.38477290233228023,
+      "energy_prediction": 0.3847729023322804,
+      "absolute_energy_error": 1.6653345369377348e-16
+    },
+    {
+      "epsilon": 0.5,
+      "delta": 0.7,
+      "kappa": 1.3,
+      "time": 0.08,
+      "P_birth_2x2": 0.37729969340711544,
+      "P_birth_full_GKLS": 0.37729969340711517,
+      "energy_no_event": 1.2453863226082738,
+      "energy_full_GKLS": 2.830045034918157,
+      "energy_prediction": 2.8300450349181583,
+      "absolute_energy_error": 1.3322676295501878e-15
+    },
+    {
+      "epsilon": 0.5,
+      "delta": 0.7,
+      "kappa": 1.3,
+      "time": 0.3,
+      "P_birth_2x2": 0.9060906280490351,
+      "P_birth_full_GKLS": 0.9060906280490351,
+      "energy_no_event": 0.1374113658275961,
+      "energy_full_GKLS": 3.9429920036335426,
+      "energy_prediction": 3.9429920036335426,
+      "absolute_energy_error": 0.0
+    },
+    {
+      "epsilon": 0.25,
+      "delta": 1.0,
+      "kappa": 0.4,
+      "time": 0.01,
+      "P_birth_2x2": 0.037884671404714854,
+      "P_birth_full_GKLS": 0.03788467140471479,
+      "energy_no_event": 0.2520470612978055,
+      "energy_full_GKLS": 1.16127917501096,
+      "energy_prediction": 1.1612791750109621,
+      "absolute_energy_error": 2.220446049250313e-15
+    },
+    {
+      "epsilon": 0.25,
+      "delta": 1.0,
+      "kappa": 0.4,
+      "time": 0.08,
+      "P_birth_2x2": 0.2757230057751957,
+      "P_birth_full_GKLS": 0.2757230057751968,
+      "energy_no_event": 0.02969152639053127,
+      "energy_full_GKLS": 6.647043664995303,
+      "energy_prediction": 6.647043664995228,
+      "absolute_energy_error": 7.549516567451064e-14
+    },
+    {
+      "epsilon": 0.25,
+      "delta": 1.0,
+      "kappa": 0.4,
+      "time": 0.3,
+      "P_birth_2x2": 0.7019868571723802,
+      "P_birth_full_GKLS": 0.7019868571723828,
+      "energy_no_event": 0.02452965936572684,
+      "energy_full_GKLS": 16.87221423150289,
+      "energy_prediction": 16.872214231502852,
+      "absolute_energy_error": 3.907985046680551e-14
+    },
+    {
+      "epsilon": 0.125,
+      "delta": 1.2,
+      "kappa": 0.8,
+      "time": 0.01,
+      "P_birth_2x2": 0.08755447978569075,
+      "P_birth_full_GKLS": 0.08755447978569035,
+      "energy_no_event": 0.06848951180565434,
+      "energy_full_GKLS": 10.154765583117056,
+      "energy_prediction": 10.154765583117229,
+      "absolute_energy_error": 1.723066134218243e-13
+    },
+    {
+      "epsilon": 0.125,
+      "delta": 1.2,
+      "kappa": 0.8,
+      "time": 0.08,
+      "P_birth_2x2": 0.5196827817438392,
+      "P_birth_full_GKLS": 0.5196827817438339,
+      "energy_no_event": 0.04189933914310618,
+      "energy_full_GKLS": 59.9093557960291,
+      "energy_prediction": 59.909355796033374,
+      "absolute_energy_error": 4.277467269275803e-12
+    },
+    {
+      "epsilon": 0.125,
+      "delta": 1.2,
+      "kappa": 0.8,
+      "time": 0.3,
+      "P_birth_2x2": 0.9360751270805018,
+      "P_birth_full_GKLS": 0.936075127080506,
+      "energy_no_event": 0.0055699357687099115,
+      "energy_full_GKLS": 107.84142457546471,
+      "energy_prediction": 107.8414245754425,
+      "absolute_energy_error": 2.2211565919860732e-11
+    }
+  ],
+  "high_precision_joint_limit_rows": [
+    {
+      "S": 1,
+      "C": 2,
+      "epsilon": "0.707106781186547524400844362105",
+      "P_birth": "0.519574818530392816266626368461",
+      "P_birth_limit": "0.90928204671058749662482777992",
+      "epsilon_squared_energy": "1.03810636822899553323088234172",
+      "limiting_scaled_energy": "1.36392307006588124493724166988",
+      "no_event_energy": "0.517488280866812617661885578051"
+    },
+    {
+      "S": 2,
+      "C": 6,
+      "epsilon": "0.408248290463863016366214012451",
+      "P_birth": "0.784996344343859207975943355335",
+      "P_birth_limit": "0.90928204671058749662482777992",
+      "epsilon_squared_energy": "1.21053805551180647672209932194",
+      "limiting_scaled_energy": "1.36392307006588124493724166988",
+      "no_event_energy": "0.198261233976105988549105733653"
+    },
+    {
+      "S": 4,
+      "C": 20,
+      "epsilon": "0.223606797749978969640917366873",
+      "P_birth": "0.874351883666879787760380646137",
+      "P_birth_limit": "0.90928204671058749662482777992",
+      "epsilon_squared_energy": "1.31400797341041246347099525923",
+      "limiting_scaled_energy": "1.36392307006588124493724166988",
+      "no_event_energy": "0.0496029582018556366084858005572"
+    },
+    {
+      "S": 8,
+      "C": 72,
+      "epsilon": "0.117851130197757920733474060351",
+      "P_birth": "0.899988680794768744557441601989",
+      "P_birth_limit": "0.90928204671058749662482777992",
+      "epsilon_squared_energy": "1.35018772674132643718914805362",
+      "limiting_scaled_energy": "1.36392307006588124493724166988",
+      "no_event_energy": "0.0147387995404790654149668458215"
+    },
+    {
+      "S": 16,
+      "C": 272,
+      "epsilon": "0.060633906259083243379726615529",
+      "P_birth": "0.906864047434024882950336295534",
+      "P_birth_limit": "0.90928204671058749662482777992",
+      "epsilon_squared_energy": "1.36031068779600260409925332644",
+      "limiting_scaled_energy": "1.36392307006588124493724166988",
+      "no_event_energy": "0.00397572743055607125969621410192"
+    },
+    {
+      "S": 32,
+      "C": 1056,
+      "epsilon": "0.0307728727448331831835601650313",
+      "P_birth": "0.908662390178403990562586239905",
+      "P_birth_limit": "0.90928204671058749662482777992",
+      "epsilon_squared_energy": "1.36299455982046373930855198399",
+      "limiting_scaled_energy": "1.36392307006588124493724166988",
+      "no_event_energy": "0.00102912781778765869429108559716"
+    },
+    {
+      "S": 64,
+      "C": 4160,
+      "epsilon": "0.0155043418236510570237819485198",
+      "P_birth": "0.909124962019196015768473256608",
+      "P_birth_limit": "0.90928204671058749662482777992",
+      "epsilon_squared_energy": "1.36368750590695764798475062059",
+      "limiting_scaled_energy": "1.36392307006588124493724166988",
+      "no_event_energy": "0.000261573160677221289460411538737"
+    }
+  ],
+  "failures": []
+}

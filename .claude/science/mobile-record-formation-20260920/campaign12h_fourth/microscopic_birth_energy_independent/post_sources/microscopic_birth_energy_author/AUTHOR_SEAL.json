@@ -1,0 +1,36 @@
+{
+  "status": "Personal conditional author evidence; independent reconstruction pending",
+  "sealed_utc": "2026-09-24T00:54:22.566889+00:00",
+  "files": [
+    {
+      "path": "DEVELOPMENT_FAILURES.md",
+      "bytes": 316,
+      "sha256": "c8cb17feae10c91a3d7705e35470b35599e10b98b61c73ffa85c7c9c44ef8c75"
+    },
+    {
+      "path": "EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "bytes": 9368,
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c"
+    },
+    {
+      "path": "EXACT_STAR_ENERGY.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "EXACT_STAR_ENERGY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EXACT_STAR_ENERGY_RESULTS.json",
+      "bytes": 15374,
+      "sha256": "3a8ad2b37e5d1adb41487d87789c056da334b7a9135828941844e9be2170c6f3"
+    },
+    {
+      "path": "exact_star_energy.py",
+      "bytes": 5328,
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    }
+  ]
+}

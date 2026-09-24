@@ -1,0 +1,6381 @@
+{
+  "attempt": "02",
+  "status": "completed",
+  "checks": [
+    {
+      "name": "source identity campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "passed": true
+    },
+    {
+      "name": "source identity campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "passed": true
+    },
+    {
+      "name": "source identity campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "passed": true
+    },
+    {
+      "name": "source identity campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "passed": true
+    },
+    {
+      "name": "source identity campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "passed": true
+    },
+    {
+      "name": "S=1 physical dimension",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "S=1 number sectors",
+      "passed": true
+    },
+    {
+      "name": "S=1 P dimension",
+      "passed": true
+    },
+    {
+      "name": "S=1 Q dimension",
+      "passed": true
+    },
+    {
+      "name": "S=1 spin weights",
+      "passed": true
+    },
+    {
+      "name": "S=1 compensation diagonal identity",
+      "passed": true
+    },
+    {
+      "name": "S=1 T assembly identity",
+      "passed": true
+    },
+    {
+      "name": "S=1 compensation identity",
+      "passed": true
+    },
+    {
+      "name": "S=1 hopping number conservation",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (1, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (2, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (2, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (3, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=1 birth selection (3, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 physical dimension",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "S=2 number sectors",
+      "passed": true
+    },
+    {
+      "name": "S=2 P dimension",
+      "passed": true
+    },
+    {
+      "name": "S=2 Q dimension",
+      "passed": true
+    },
+    {
+      "name": "S=2 spin weights",
+      "passed": true
+    },
+    {
+      "name": "S=2 compensation diagonal identity",
+      "passed": true
+    },
+    {
+      "name": "S=2 T assembly identity",
+      "passed": true
+    },
+    {
+      "name": "S=2 compensation identity",
+      "passed": true
+    },
+    {
+      "name": "S=2 hopping number conservation",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (1, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (2, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (2, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (3, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 birth selection (3, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 physical dimension",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "S=4 number sectors",
+      "passed": true
+    },
+    {
+      "name": "S=4 P dimension",
+      "passed": true
+    },
+    {
+      "name": "S=4 Q dimension",
+      "passed": true
+    },
+    {
+      "name": "S=4 spin weights",
+      "passed": true
+    },
+    {
+      "name": "S=4 compensation diagonal identity",
+      "passed": true
+    },
+    {
+      "name": "S=4 T assembly identity",
+      "passed": true
+    },
+    {
+      "name": "S=4 compensation identity",
+      "passed": true
+    },
+    {
+      "name": "S=4 hopping number conservation",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (1, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (1, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (2, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (2, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (3, -1)",
+      "passed": true
+    },
+    {
+      "name": "S=4 birth selection (3, 1)",
+      "passed": true
+    },
+    {
+      "name": "S=2 full S-independent matrices",
+      "passed": true
+    },
+    {
+      "name": "S=4 full S-independent matrices",
+      "passed": true
+    },
+    {
+      "name": "factorization full matrix",
+      "passed": true
+    },
+    {
+      "name": "M minimal polynomial",
+      "passed": true
+    },
+    {
+      "name": "rank F",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "canonical U unitary",
+      "passed": true
+    },
+    {
+      "name": "canonical U maps g to dressed g",
+      "passed": true
+    },
+    {
+      "name": "canonical transformed Hamiltonian",
+      "passed": true
+    },
+    {
+      "name": "positive P overlap",
+      "passed": true
+    },
+    {
+      "name": "low projector",
+      "passed": true
+    },
+    {
+      "name": "low spectral identity",
+      "passed": true
+    },
+    {
+      "name": "Qdark projector",
+      "passed": true
+    },
+    {
+      "name": "Qdark spectral identity",
+      "passed": true
+    },
+    {
+      "name": "high projector",
+      "passed": true
+    },
+    {
+      "name": "high spectral identity",
+      "passed": true
+    },
+    {
+      "name": "projectors sum",
+      "passed": true
+    },
+    {
+      "name": "projector ranks",
+      "passed": true
+    },
+    {
+      "name": "full characteristic polynomial",
+      "passed": true
+    },
+    {
+      "name": "dressed energy exact zero",
+      "passed": true
+    },
+    {
+      "name": "dressed norm",
+      "passed": true
+    },
+    {
+      "name": "effective H2 zero",
+      "passed": true
+    },
+    {
+      "name": "effective H4 zero",
+      "passed": true
+    },
+    {
+      "name": "bare mean",
+      "passed": true
+    },
+    {
+      "name": "bare second moment",
+      "passed": true
+    },
+    {
+      "name": "bare variance",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,-1 actual jump",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,-1 effective output",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,-1 mean",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,-1 second moment",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,-1 high probability",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,-1 no Qdark energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,-1 low projection energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,-1 analytic sector count",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,+1 actual jump",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,+1 effective output",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,+1 mean",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,+1 second moment",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,+1 high probability",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,+1 no Qdark energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,+1 low projection energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 1,+1 analytic sector count",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,-1 actual jump",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,-1 effective output",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,-1 mean",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,-1 second moment",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,-1 high probability",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,-1 no Qdark energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,-1 low projection energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,-1 analytic sector count",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,+1 actual jump",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,+1 effective output",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,+1 mean",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,+1 second moment",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,+1 high probability",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,+1 no Qdark energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,+1 low projection energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 2,+1 analytic sector count",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,-1 actual jump",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,-1 effective output",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,-1 mean",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,-1 second moment",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,-1 high probability",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,-1 no Qdark energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,-1 low projection energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,-1 analytic sector count",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,+1 actual jump",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,+1 effective output",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,+1 mean",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,+1 second moment",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,+1 high probability",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,+1 no Qdark energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,+1 low projection energy",
+      "passed": true
+    },
+    {
+      "name": "resolved 3,+1 analytic sector count",
+      "passed": true
+    },
+    {
+      "name": "resolved full loss",
+      "passed": true
+    },
+    {
+      "name": "resolved N3 cannot jump",
+      "passed": true
+    },
+    {
+      "name": "resolved total rate",
+      "passed": true
+    },
+    {
+      "name": "resolved initial full energy derivative",
+      "passed": true
+    },
+    {
+      "name": "resolved loss energy term exactly zero",
+      "passed": true
+    },
+    {
+      "name": "resolved recycling equals full derivative",
+      "passed": true
+    },
+    {
+      "name": "resolved bare energy derivative",
+      "passed": true
+    },
+    {
+      "name": "resolved mixed output trace",
+      "passed": true
+    },
+    {
+      "name": "resolved mixed output m",
+      "passed": true
+    },
+    {
+      "name": "coherent 1 actual jump",
+      "passed": true
+    },
+    {
+      "name": "coherent 1 effective output",
+      "passed": true
+    },
+    {
+      "name": "coherent 1 mean",
+      "passed": true
+    },
+    {
+      "name": "coherent 1 second moment",
+      "passed": true
+    },
+    {
+      "name": "coherent 1 high probability",
+      "passed": true
+    },
+    {
+      "name": "coherent 1 no Qdark energy",
+      "passed": true
+    },
+    {
+      "name": "coherent 1 low projection energy",
+      "passed": true
+    },
+    {
+      "name": "coherent 1 analytic sector count",
+      "passed": true
+    },
+    {
+      "name": "coherent 2 actual jump",
+      "passed": true
+    },
+    {
+      "name": "coherent 2 effective output",
+      "passed": true
+    },
+    {
+      "name": "coherent 2 mean",
+      "passed": true
+    },
+    {
+      "name": "coherent 2 second moment",
+      "passed": true
+    },
+    {
+      "name": "coherent 2 high probability",
+      "passed": true
+    },
+    {
+      "name": "coherent 2 no Qdark energy",
+      "passed": true
+    },
+    {
+      "name": "coherent 2 low projection energy",
+      "passed": true
+    },
+    {
+      "name": "coherent 2 analytic sector count",
+      "passed": true
+    },
+    {
+      "name": "coherent 3 actual jump",
+      "passed": true
+    },
+    {
+      "name": "coherent 3 effective output",
+      "passed": true
+    },
+    {
+      "name": "coherent 3 mean",
+      "passed": true
+    },
+    {
+      "name": "coherent 3 second moment",
+      "passed": true
+    },
+    {
+      "name": "coherent 3 high probability",
+      "passed": true
+    },
+    {
+      "name": "coherent 3 no Qdark energy",
+      "passed": true
+    },
+    {
+      "name": "coherent 3 low projection energy",
+      "passed": true
+    },
+    {
+      "name": "coherent 3 analytic sector count",
+      "passed": true
+    },
+    {
+      "name": "coherent full loss",
+      "passed": true
+    },
+    {
+      "name": "coherent N3 cannot jump",
+      "passed": true
+    },
+    {
+      "name": "coherent total rate",
+      "passed": true
+    },
+    {
+      "name": "coherent initial full energy derivative",
+      "passed": true
+    },
+    {
+      "name": "coherent loss energy term exactly zero",
+      "passed": true
+    },
+    {
+      "name": "coherent recycling equals full derivative",
+      "passed": true
+    },
+    {
+      "name": "coherent bare energy derivative",
+      "passed": true
+    },
+    {
+      "name": "coherent mixed output trace",
+      "passed": true
+    },
+    {
+      "name": "coherent mixed output m",
+      "passed": true
+    },
+    {
+      "name": "mutation wrong compensation detected",
+      "passed": true
+    },
+    {
+      "name": "mutation coherent relative sign changes density",
+      "passed": true
+    },
+    {
+      "name": "energy-only check would miss relative-sign mutation",
+      "passed": true
+    },
+    {
+      "name": "mutation omitted jump scaling detected",
+      "passed": true
+    },
+    {
+      "name": "floating trace resolved 0.25 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating positivity resolved 0.25 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound resolved 0.25 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating trace resolved 0.25 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating positivity resolved 0.25 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound resolved 0.25 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating trace resolved 0.125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating positivity resolved 0.125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound resolved 0.125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating trace resolved 0.125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating positivity resolved 0.125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound resolved 0.125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating trace resolved 0.0625 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating positivity resolved 0.0625 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound resolved 0.0625 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating trace resolved 0.0625 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating positivity resolved 0.0625 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound resolved 0.0625 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating trace resolved 0.03125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating positivity resolved 0.03125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound resolved 0.03125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating trace resolved 0.03125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating positivity resolved 0.03125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound resolved 0.03125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating trace coherent 0.25 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating positivity coherent 0.25 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound coherent 0.25 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating trace coherent 0.25 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating positivity coherent 0.25 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound coherent 0.25 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating trace coherent 0.125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating positivity coherent 0.125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound coherent 0.125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating trace coherent 0.125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating positivity coherent 0.125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound coherent 0.125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating trace coherent 0.0625 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating positivity coherent 0.0625 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound coherent 0.0625 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating trace coherent 0.0625 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating positivity coherent 0.0625 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound coherent 0.0625 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating trace coherent 0.03125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating positivity coherent 0.03125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound coherent 0.03125 0.03",
+      "passed": true
+    },
+    {
+      "name": "floating trace coherent 0.03125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating positivity coherent 0.03125 0.2",
+      "passed": true
+    },
+    {
+      "name": "floating energy lower bound coherent 0.03125 0.2",
+      "passed": true
+    },
+    {
+      "name": "end source identity /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "passed": true
+    },
+    {
+      "name": "end source identity /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "passed": true
+    },
+    {
+      "name": "end source identity /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "passed": true
+    },
+    {
+      "name": "end source identity /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "passed": true
+    },
+    {
+      "name": "end source identity /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "passed": true
+    }
+  ],
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "runner_sha256": "6652f0c847d478f0db29b3fc4f9f739c309ce4126be69dd48221ab5d9377892b",
+  "scope": "Independent PRE; no campaign builder imported; complete finite tensor-basis enumeration.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d",
+      "expected": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e",
+      "expected": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+      "expected": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0",
+      "expected": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9",
+      "expected": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    }
+  ],
+  "basis_certificates": {
+    "1": {
+      "basis": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "kind": "outward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 0,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 9,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 10,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 1,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 9,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 0,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 11,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 4,
+          "to": 12,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 2,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 10,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 5,
+          "to": 12,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 0,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 13,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 11,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 1,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 14,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 7,
+          "to": 12,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 2,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 14,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 1,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 15,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 13,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 15,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 2,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        }
+      ],
+      "operators": {
+        "F": [
+          [
+            3,
+            0,
+            "1"
+          ],
+          [
+            3,
+            9,
+            "1"
+          ],
+          [
+            3,
+            10,
+            "1"
+          ],
+          [
+            4,
+            12,
+            "1"
+          ],
+          [
+            5,
+            12,
+            "1"
+          ],
+          [
+            6,
+            1,
+            "1"
+          ],
+          [
+            6,
+            11,
+            "1"
+          ],
+          [
+            6,
+            14,
+            "1"
+          ],
+          [
+            7,
+            12,
+            "1"
+          ],
+          [
+            8,
+            2,
+            "1"
+          ],
+          [
+            8,
+            13,
+            "1"
+          ],
+          [
+            8,
+            15,
+            "1"
+          ]
+        ],
+        "T": [
+          [
+            0,
+            3,
+            "-1"
+          ],
+          [
+            1,
+            6,
+            "-1"
+          ],
+          [
+            2,
+            8,
+            "-1"
+          ],
+          [
+            3,
+            0,
+            "-1"
+          ],
+          [
+            3,
+            9,
+            "-1"
+          ],
+          [
+            3,
+            10,
+            "-1"
+          ],
+          [
+            4,
+            12,
+            "-1"
+          ],
+          [
+            5,
+            12,
+            "-1"
+          ],
+          [
+            6,
+            1,
+            "-1"
+          ],
+          [
+            6,
+            11,
+            "-1"
+          ],
+          [
+            6,
+            14,
+            "-1"
+          ],
+          [
+            7,
+            12,
+            "-1"
+          ],
+          [
+            8,
+            2,
+            "-1"
+          ],
+          [
+            8,
+            13,
+            "-1"
+          ],
+          [
+            8,
+            15,
+            "-1"
+          ],
+          [
+            9,
+            3,
+            "-1"
+          ],
+          [
+            10,
+            3,
+            "-1"
+          ],
+          [
+            11,
+            6,
+            "-1"
+          ],
+          [
+            12,
+            4,
+            "-1"
+          ],
+          [
+            12,
+            5,
+            "-1"
+          ],
+          [
+            12,
+            7,
+            "-1"
+          ],
+          [
+            13,
+            8,
+            "-1"
+          ],
+          [
+            14,
+            6,
+            "-1"
+          ],
+          [
+            15,
+            8,
+            "-1"
+          ]
+        ],
+        "W": [
+          [
+            3,
+            3,
+            "1"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "1"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "1"
+          ]
+        ],
+        "P": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "N": [
+          [
+            0,
+            0,
+            "3"
+          ],
+          [
+            1,
+            1,
+            "3"
+          ],
+          [
+            2,
+            2,
+            "3"
+          ],
+          [
+            3,
+            3,
+            "3"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "3"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "3"
+          ],
+          [
+            9,
+            9,
+            "3"
+          ],
+          [
+            10,
+            10,
+            "3"
+          ],
+          [
+            11,
+            11,
+            "3"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "3"
+          ],
+          [
+            14,
+            14,
+            "3"
+          ],
+          [
+            15,
+            15,
+            "3"
+          ]
+        ],
+        "DS": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "Dinf": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "compensation": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            0,
+            9,
+            "1"
+          ],
+          [
+            0,
+            10,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            1,
+            11,
+            "1"
+          ],
+          [
+            1,
+            14,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            2,
+            13,
+            "1"
+          ],
+          [
+            2,
+            15,
+            "1"
+          ],
+          [
+            9,
+            0,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            9,
+            10,
+            "1"
+          ],
+          [
+            10,
+            0,
+            "1"
+          ],
+          [
+            10,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            1,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            11,
+            14,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            2,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            13,
+            15,
+            "1"
+          ],
+          [
+            14,
+            1,
+            "1"
+          ],
+          [
+            14,
+            11,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            2,
+            "1"
+          ],
+          [
+            15,
+            13,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ]
+      },
+      "jumps": {
+        "(1, -1)": [
+          [
+            1,
+            4,
+            "1"
+          ],
+          [
+            2,
+            5,
+            "1"
+          ]
+        ],
+        "(1, 1)": [
+          [
+            9,
+            4,
+            "1"
+          ],
+          [
+            10,
+            5,
+            "1"
+          ]
+        ],
+        "(2, -1)": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            2,
+            7,
+            "1"
+          ]
+        ],
+        "(2, 1)": [
+          [
+            11,
+            4,
+            "1"
+          ],
+          [
+            14,
+            7,
+            "1"
+          ]
+        ],
+        "(3, -1)": [
+          [
+            0,
+            5,
+            "1"
+          ],
+          [
+            1,
+            7,
+            "1"
+          ]
+        ],
+        "(3, 1)": [
+          [
+            13,
+            5,
+            "1"
+          ],
+          [
+            15,
+            7,
+            "1"
+          ]
+        ]
+      }
+    },
+    "2": {
+      "basis": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "kind": "outward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 0,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 9,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 10,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 1,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 9,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 0,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 11,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 4,
+          "to": 12,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 2,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 10,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 5,
+          "to": 12,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 0,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 13,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 11,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 1,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 14,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 7,
+          "to": 12,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 2,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 14,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 1,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 15,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 13,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 15,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 2,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        }
+      ],
+      "operators": {
+        "F": [
+          [
+            3,
+            0,
+            "1"
+          ],
+          [
+            3,
+            9,
+            "1"
+          ],
+          [
+            3,
+            10,
+            "1"
+          ],
+          [
+            4,
+            12,
+            "1"
+          ],
+          [
+            5,
+            12,
+            "1"
+          ],
+          [
+            6,
+            1,
+            "1"
+          ],
+          [
+            6,
+            11,
+            "1"
+          ],
+          [
+            6,
+            14,
+            "1"
+          ],
+          [
+            7,
+            12,
+            "1"
+          ],
+          [
+            8,
+            2,
+            "1"
+          ],
+          [
+            8,
+            13,
+            "1"
+          ],
+          [
+            8,
+            15,
+            "1"
+          ]
+        ],
+        "T": [
+          [
+            0,
+            3,
+            "-1"
+          ],
+          [
+            1,
+            6,
+            "-1"
+          ],
+          [
+            2,
+            8,
+            "-1"
+          ],
+          [
+            3,
+            0,
+            "-1"
+          ],
+          [
+            3,
+            9,
+            "-1"
+          ],
+          [
+            3,
+            10,
+            "-1"
+          ],
+          [
+            4,
+            12,
+            "-1"
+          ],
+          [
+            5,
+            12,
+            "-1"
+          ],
+          [
+            6,
+            1,
+            "-1"
+          ],
+          [
+            6,
+            11,
+            "-1"
+          ],
+          [
+            6,
+            14,
+            "-1"
+          ],
+          [
+            7,
+            12,
+            "-1"
+          ],
+          [
+            8,
+            2,
+            "-1"
+          ],
+          [
+            8,
+            13,
+            "-1"
+          ],
+          [
+            8,
+            15,
+            "-1"
+          ],
+          [
+            9,
+            3,
+            "-1"
+          ],
+          [
+            10,
+            3,
+            "-1"
+          ],
+          [
+            11,
+            6,
+            "-1"
+          ],
+          [
+            12,
+            4,
+            "-1"
+          ],
+          [
+            12,
+            5,
+            "-1"
+          ],
+          [
+            12,
+            7,
+            "-1"
+          ],
+          [
+            13,
+            8,
+            "-1"
+          ],
+          [
+            14,
+            6,
+            "-1"
+          ],
+          [
+            15,
+            8,
+            "-1"
+          ]
+        ],
+        "W": [
+          [
+            3,
+            3,
+            "1"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "1"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "1"
+          ]
+        ],
+        "P": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "N": [
+          [
+            0,
+            0,
+            "3"
+          ],
+          [
+            1,
+            1,
+            "3"
+          ],
+          [
+            2,
+            2,
+            "3"
+          ],
+          [
+            3,
+            3,
+            "3"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "3"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "3"
+          ],
+          [
+            9,
+            9,
+            "3"
+          ],
+          [
+            10,
+            10,
+            "3"
+          ],
+          [
+            11,
+            11,
+            "3"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "3"
+          ],
+          [
+            14,
+            14,
+            "3"
+          ],
+          [
+            15,
+            15,
+            "3"
+          ]
+        ],
+        "DS": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "Dinf": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "compensation": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            0,
+            9,
+            "1"
+          ],
+          [
+            0,
+            10,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            1,
+            11,
+            "1"
+          ],
+          [
+            1,
+            14,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            2,
+            13,
+            "1"
+          ],
+          [
+            2,
+            15,
+            "1"
+          ],
+          [
+            9,
+            0,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            9,
+            10,
+            "1"
+          ],
+          [
+            10,
+            0,
+            "1"
+          ],
+          [
+            10,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            1,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            11,
+            14,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            2,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            13,
+            15,
+            "1"
+          ],
+          [
+            14,
+            1,
+            "1"
+          ],
+          [
+            14,
+            11,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            2,
+            "1"
+          ],
+          [
+            15,
+            13,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ]
+      },
+      "jumps": {
+        "(1, -1)": [
+          [
+            1,
+            4,
+            "1"
+          ],
+          [
+            2,
+            5,
+            "1"
+          ]
+        ],
+        "(1, 1)": [
+          [
+            9,
+            4,
+            "1"
+          ],
+          [
+            10,
+            5,
+            "1"
+          ]
+        ],
+        "(2, -1)": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            2,
+            7,
+            "1"
+          ]
+        ],
+        "(2, 1)": [
+          [
+            11,
+            4,
+            "1"
+          ],
+          [
+            14,
+            7,
+            "1"
+          ]
+        ],
+        "(3, -1)": [
+          [
+            0,
+            5,
+            "1"
+          ],
+          [
+            1,
+            7,
+            "1"
+          ]
+        ],
+        "(3, 1)": [
+          [
+            13,
+            5,
+            "1"
+          ],
+          [
+            15,
+            7,
+            "1"
+          ]
+        ]
+      }
+    },
+    "4": {
+      "basis": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "kind": "outward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 0,
+          "to": 3,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 1,
+          "to": 6,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "outward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 2,
+          "to": 8,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 0,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 9,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 3,
+          "to": 10,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 1,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 9,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 0,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 4,
+          "to": 11,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 4,
+          "to": 12,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 2,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 10,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 5,
+          "to": 12,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 0,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 5,
+          "to": 13,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 11,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 1,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 6,
+          "to": 14,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 7,
+          "to": 12,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 2,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 14,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 1,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "birth",
+          "from": 7,
+          "to": 15,
+          "weight": "1",
+          "edge": 3,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 13,
+          "weight": "1",
+          "edge": 1,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 15,
+          "weight": "1",
+          "edge": 2,
+          "step": 1
+        },
+        {
+          "kind": "hop_reverse",
+          "from": 8,
+          "to": 2,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 9,
+          "to": 3,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 10,
+          "to": 3,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 11,
+          "to": 6,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 7,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 5,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 12,
+          "to": 4,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 13,
+          "to": 8,
+          "weight": "1",
+          "edge": 1,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 14,
+          "to": 6,
+          "weight": "1",
+          "edge": 3,
+          "step": -1
+        },
+        {
+          "kind": "outward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        },
+        {
+          "kind": "hop_forward",
+          "from": 15,
+          "to": 8,
+          "weight": "1",
+          "edge": 2,
+          "step": -1
+        }
+      ],
+      "operators": {
+        "F": [
+          [
+            3,
+            0,
+            "1"
+          ],
+          [
+            3,
+            9,
+            "1"
+          ],
+          [
+            3,
+            10,
+            "1"
+          ],
+          [
+            4,
+            12,
+            "1"
+          ],
+          [
+            5,
+            12,
+            "1"
+          ],
+          [
+            6,
+            1,
+            "1"
+          ],
+          [
+            6,
+            11,
+            "1"
+          ],
+          [
+            6,
+            14,
+            "1"
+          ],
+          [
+            7,
+            12,
+            "1"
+          ],
+          [
+            8,
+            2,
+            "1"
+          ],
+          [
+            8,
+            13,
+            "1"
+          ],
+          [
+            8,
+            15,
+            "1"
+          ]
+        ],
+        "T": [
+          [
+            0,
+            3,
+            "-1"
+          ],
+          [
+            1,
+            6,
+            "-1"
+          ],
+          [
+            2,
+            8,
+            "-1"
+          ],
+          [
+            3,
+            0,
+            "-1"
+          ],
+          [
+            3,
+            9,
+            "-1"
+          ],
+          [
+            3,
+            10,
+            "-1"
+          ],
+          [
+            4,
+            12,
+            "-1"
+          ],
+          [
+            5,
+            12,
+            "-1"
+          ],
+          [
+            6,
+            1,
+            "-1"
+          ],
+          [
+            6,
+            11,
+            "-1"
+          ],
+          [
+            6,
+            14,
+            "-1"
+          ],
+          [
+            7,
+            12,
+            "-1"
+          ],
+          [
+            8,
+            2,
+            "-1"
+          ],
+          [
+            8,
+            13,
+            "-1"
+          ],
+          [
+            8,
+            15,
+            "-1"
+          ],
+          [
+            9,
+            3,
+            "-1"
+          ],
+          [
+            10,
+            3,
+            "-1"
+          ],
+          [
+            11,
+            6,
+            "-1"
+          ],
+          [
+            12,
+            4,
+            "-1"
+          ],
+          [
+            12,
+            5,
+            "-1"
+          ],
+          [
+            12,
+            7,
+            "-1"
+          ],
+          [
+            13,
+            8,
+            "-1"
+          ],
+          [
+            14,
+            6,
+            "-1"
+          ],
+          [
+            15,
+            8,
+            "-1"
+          ]
+        ],
+        "W": [
+          [
+            3,
+            3,
+            "1"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "1"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "1"
+          ]
+        ],
+        "P": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "N": [
+          [
+            0,
+            0,
+            "3"
+          ],
+          [
+            1,
+            1,
+            "3"
+          ],
+          [
+            2,
+            2,
+            "3"
+          ],
+          [
+            3,
+            3,
+            "3"
+          ],
+          [
+            4,
+            4,
+            "1"
+          ],
+          [
+            5,
+            5,
+            "1"
+          ],
+          [
+            6,
+            6,
+            "3"
+          ],
+          [
+            7,
+            7,
+            "1"
+          ],
+          [
+            8,
+            8,
+            "3"
+          ],
+          [
+            9,
+            9,
+            "3"
+          ],
+          [
+            10,
+            10,
+            "3"
+          ],
+          [
+            11,
+            11,
+            "3"
+          ],
+          [
+            12,
+            12,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "3"
+          ],
+          [
+            14,
+            14,
+            "3"
+          ],
+          [
+            15,
+            15,
+            "3"
+          ]
+        ],
+        "DS": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "Dinf": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ],
+        "compensation": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            0,
+            9,
+            "1"
+          ],
+          [
+            0,
+            10,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            1,
+            11,
+            "1"
+          ],
+          [
+            1,
+            14,
+            "1"
+          ],
+          [
+            2,
+            2,
+            "1"
+          ],
+          [
+            2,
+            13,
+            "1"
+          ],
+          [
+            2,
+            15,
+            "1"
+          ],
+          [
+            9,
+            0,
+            "1"
+          ],
+          [
+            9,
+            9,
+            "1"
+          ],
+          [
+            9,
+            10,
+            "1"
+          ],
+          [
+            10,
+            0,
+            "1"
+          ],
+          [
+            10,
+            9,
+            "1"
+          ],
+          [
+            10,
+            10,
+            "1"
+          ],
+          [
+            11,
+            1,
+            "1"
+          ],
+          [
+            11,
+            11,
+            "1"
+          ],
+          [
+            11,
+            14,
+            "1"
+          ],
+          [
+            12,
+            12,
+            "3"
+          ],
+          [
+            13,
+            2,
+            "1"
+          ],
+          [
+            13,
+            13,
+            "1"
+          ],
+          [
+            13,
+            15,
+            "1"
+          ],
+          [
+            14,
+            1,
+            "1"
+          ],
+          [
+            14,
+            11,
+            "1"
+          ],
+          [
+            14,
+            14,
+            "1"
+          ],
+          [
+            15,
+            2,
+            "1"
+          ],
+          [
+            15,
+            13,
+            "1"
+          ],
+          [
+            15,
+            15,
+            "1"
+          ]
+        ]
+      },
+      "jumps": {
+        "(1, -1)": [
+          [
+            1,
+            4,
+            "1"
+          ],
+          [
+            2,
+            5,
+            "1"
+          ]
+        ],
+        "(1, 1)": [
+          [
+            9,
+            4,
+            "1"
+          ],
+          [
+            10,
+            5,
+            "1"
+          ]
+        ],
+        "(2, -1)": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            2,
+            7,
+            "1"
+          ]
+        ],
+        "(2, 1)": [
+          [
+            11,
+            4,
+            "1"
+          ],
+          [
+            14,
+            7,
+            "1"
+          ]
+        ],
+        "(3, -1)": [
+          [
+            0,
+            5,
+            "1"
+          ],
+          [
+            1,
+            7,
+            "1"
+          ]
+        ],
+        "(3, 1)": [
+          [
+            13,
+            5,
+            "1"
+          ],
+          [
+            15,
+            7,
+            "1"
+          ]
+        ]
+      }
+    }
+  },
+  "exact": {
+    "sectors": {
+      "1": {
+        "indices": [
+          4,
+          5,
+          7,
+          12
+        ],
+        "P_indices": [
+          12
+        ],
+        "Q_indices": [
+          4,
+          5,
+          7
+        ]
+      },
+      "3": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15
+        ],
+        "P_indices": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15
+        ],
+        "Q_indices": [
+          3,
+          6,
+          8
+        ]
+      }
+    },
+    "characteristic_polynomial": "x**10*(x - 1)**2*(-3*epsilon**2 + x - 1)**4",
+    "spectral_projectors": {
+      "low": [
+        [
+          0,
+          0,
+          "-epsilon**2/(3*epsilon**2 + 1) + 1"
+        ],
+        [
+          0,
+          3,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          0,
+          9,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          0,
+          10,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          1,
+          1,
+          "-epsilon**2/(3*epsilon**2 + 1) + 1"
+        ],
+        [
+          1,
+          6,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          1,
+          11,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          1,
+          14,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          2,
+          2,
+          "-epsilon**2/(3*epsilon**2 + 1) + 1"
+        ],
+        [
+          2,
+          8,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          2,
+          13,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          2,
+          15,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          3,
+          0,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          3,
+          3,
+          "1 - 1/(3*epsilon**2 + 1)"
+        ],
+        [
+          3,
+          9,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          3,
+          10,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          4,
+          4,
+          "1/3 - 1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          4,
+          5,
+          "1/3 - 1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          4,
+          7,
+          "1/3 - 1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          4,
+          12,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          5,
+          4,
+          "1/3 - 1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          5,
+          5,
+          "1/3 - 1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          5,
+          7,
+          "1/3 - 1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          5,
+          12,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          6,
+          1,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          6,
+          6,
+          "1 - 1/(3*epsilon**2 + 1)"
+        ],
+        [
+          6,
+          11,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          6,
+          14,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          7,
+          4,
+          "1/3 - 1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          7,
+          5,
+          "1/3 - 1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          7,
+          7,
+          "1/3 - 1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          7,
+          12,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          8,
+          2,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          8,
+          8,
+          "1 - 1/(3*epsilon**2 + 1)"
+        ],
+        [
+          8,
+          13,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          8,
+          15,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          9,
+          0,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          9,
+          3,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          9,
+          9,
+          "-epsilon**2/(3*epsilon**2 + 1) + 1"
+        ],
+        [
+          9,
+          10,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          10,
+          0,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          10,
+          3,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          10,
+          9,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          10,
+          10,
+          "-epsilon**2/(3*epsilon**2 + 1) + 1"
+        ],
+        [
+          11,
+          1,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          11,
+          6,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          11,
+          11,
+          "-epsilon**2/(3*epsilon**2 + 1) + 1"
+        ],
+        [
+          11,
+          14,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          12,
+          4,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          12,
+          5,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          12,
+          7,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          12,
+          12,
+          "-3*epsilon**2/(3*epsilon**2 + 1) + 1"
+        ],
+        [
+          13,
+          2,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          13,
+          8,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          13,
+          13,
+          "-epsilon**2/(3*epsilon**2 + 1) + 1"
+        ],
+        [
+          13,
+          15,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          14,
+          1,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          14,
+          6,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          14,
+          11,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          14,
+          14,
+          "-epsilon**2/(3*epsilon**2 + 1) + 1"
+        ],
+        [
+          15,
+          2,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          15,
+          8,
+          "epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          15,
+          13,
+          "-epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          15,
+          15,
+          "-epsilon**2/(3*epsilon**2 + 1) + 1"
+        ]
+      ],
+      "Qdark": [
+        [
+          4,
+          4,
+          "2/3"
+        ],
+        [
+          4,
+          5,
+          "-1/3"
+        ],
+        [
+          4,
+          7,
+          "-1/3"
+        ],
+        [
+          5,
+          4,
+          "-1/3"
+        ],
+        [
+          5,
+          5,
+          "2/3"
+        ],
+        [
+          5,
+          7,
+          "-1/3"
+        ],
+        [
+          7,
+          4,
+          "-1/3"
+        ],
+        [
+          7,
+          5,
+          "-1/3"
+        ],
+        [
+          7,
+          7,
+          "2/3"
+        ]
+      ],
+      "high": [
+        [
+          0,
+          0,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          0,
+          3,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          0,
+          9,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          0,
+          10,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          1,
+          1,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          1,
+          6,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          1,
+          11,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          1,
+          14,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          2,
+          2,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          2,
+          8,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          2,
+          13,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          2,
+          15,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          3,
+          0,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          3,
+          3,
+          "1/(3*epsilon**2 + 1)"
+        ],
+        [
+          3,
+          9,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          3,
+          10,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          4,
+          4,
+          "1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          4,
+          5,
+          "1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          4,
+          7,
+          "1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          4,
+          12,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          5,
+          4,
+          "1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          5,
+          5,
+          "1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          5,
+          7,
+          "1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          5,
+          12,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          6,
+          1,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          6,
+          6,
+          "1/(3*epsilon**2 + 1)"
+        ],
+        [
+          6,
+          11,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          6,
+          14,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          7,
+          4,
+          "1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          7,
+          5,
+          "1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          7,
+          7,
+          "1/(3*(3*epsilon**2 + 1))"
+        ],
+        [
+          7,
+          12,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          8,
+          2,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          8,
+          8,
+          "1/(3*epsilon**2 + 1)"
+        ],
+        [
+          8,
+          13,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          8,
+          15,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          9,
+          0,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          9,
+          3,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          9,
+          9,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          9,
+          10,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          10,
+          0,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          10,
+          3,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          10,
+          9,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          10,
+          10,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          11,
+          1,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          11,
+          6,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          11,
+          11,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          11,
+          14,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          12,
+          4,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          12,
+          5,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          12,
+          7,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          12,
+          12,
+          "3*epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          13,
+          2,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          13,
+          8,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          13,
+          13,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          13,
+          15,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          14,
+          1,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          14,
+          6,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          14,
+          11,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          14,
+          14,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          15,
+          2,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          15,
+          8,
+          "-epsilon/(3*epsilon**2 + 1)"
+        ],
+        [
+          15,
+          13,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ],
+        [
+          15,
+          15,
+          "epsilon**2/(3*epsilon**2 + 1)"
+        ]
+      ]
+    },
+    "bare": {
+      "mean": "3*delta/epsilon**2",
+      "second_moment": "delta**2*(9*epsilon**2 + 3)/epsilon**6",
+      "variance": "3*delta**2/epsilon**6"
+    },
+    "instruments": {
+      "resolved": {
+        "marks": {
+          "1,-1": {
+            "v_sparse": [
+              [
+                1,
+                0,
+                "1"
+              ],
+              [
+                2,
+                0,
+                "1"
+              ]
+            ],
+            "norm_squared": "2",
+            "m": "1",
+            "rate": "2*kappa/(3*epsilon**2 + 1)",
+            "mean": "delta/epsilon**2",
+            "second_moment": "delta**2*(3*epsilon**2 + 1)/epsilon**6",
+            "variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6",
+            "high_probability": "epsilon**2/(3*epsilon**2 + 1)"
+          },
+          "1,+1": {
+            "v_sparse": [
+              [
+                9,
+                0,
+                "1"
+              ],
+              [
+                10,
+                0,
+                "1"
+              ]
+            ],
+            "norm_squared": "2",
+            "m": "2",
+            "rate": "2*kappa/(3*epsilon**2 + 1)",
+            "mean": "2*delta/epsilon**2",
+            "second_moment": "delta**2*(6*epsilon**2 + 2)/epsilon**6",
+            "variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6",
+            "high_probability": "2*epsilon**2/(3*epsilon**2 + 1)"
+          },
+          "2,-1": {
+            "v_sparse": [
+              [
+                0,
+                0,
+                "1"
+              ],
+              [
+                2,
+                0,
+                "1"
+              ]
+            ],
+            "norm_squared": "2",
+            "m": "1",
+            "rate": "2*kappa/(3*epsilon**2 + 1)",
+            "mean": "delta/epsilon**2",
+            "second_moment": "delta**2*(3*epsilon**2 + 1)/epsilon**6",
+            "variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6",
+            "high_probability": "epsilon**2/(3*epsilon**2 + 1)"
+          },
+          "2,+1": {
+            "v_sparse": [
+              [
+                11,
+                0,
+                "1"
+              ],
+              [
+                14,
+                0,
+                "1"
+              ]
+            ],
+            "norm_squared": "2",
+            "m": "2",
+            "rate": "2*kappa/(3*epsilon**2 + 1)",
+            "mean": "2*delta/epsilon**2",
+            "second_moment": "delta**2*(6*epsilon**2 + 2)/epsilon**6",
+            "variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6",
+            "high_probability": "2*epsilon**2/(3*epsilon**2 + 1)"
+          },
+          "3,-1": {
+            "v_sparse": [
+              [
+                0,
+                0,
+                "1"
+              ],
+              [
+                1,
+                0,
+                "1"
+              ]
+            ],
+            "norm_squared": "2",
+            "m": "1",
+            "rate": "2*kappa/(3*epsilon**2 + 1)",
+            "mean": "delta/epsilon**2",
+            "second_moment": "delta**2*(3*epsilon**2 + 1)/epsilon**6",
+            "variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6",
+            "high_probability": "epsilon**2/(3*epsilon**2 + 1)"
+          },
+          "3,+1": {
+            "v_sparse": [
+              [
+                13,
+                0,
+                "1"
+              ],
+              [
+                15,
+                0,
+                "1"
+              ]
+            ],
+            "norm_squared": "2",
+            "m": "2",
+            "rate": "2*kappa/(3*epsilon**2 + 1)",
+            "mean": "2*delta/epsilon**2",
+            "second_moment": "delta**2*(6*epsilon**2 + 2)/epsilon**6",
+            "variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6",
+            "high_probability": "2*epsilon**2/(3*epsilon**2 + 1)"
+          }
+        },
+        "total_rate": "12*kappa/(3*epsilon**2 + 1)",
+        "initial_energy_derivative": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))",
+        "recycling_energy": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))",
+        "anticommutator_energy": "0",
+        "bare_derivative": "0",
+        "sigma_sparse": [
+          [
+            0,
+            0,
+            "1/6"
+          ],
+          [
+            0,
+            1,
+            "1/12"
+          ],
+          [
+            0,
+            2,
+            "1/12"
+          ],
+          [
+            1,
+            0,
+            "1/12"
+          ],
+          [
+            1,
+            1,
+            "1/6"
+          ],
+          [
+            1,
+            2,
+            "1/12"
+          ],
+          [
+            2,
+            0,
+            "1/12"
+          ],
+          [
+            2,
+            1,
+            "1/12"
+          ],
+          [
+            2,
+            2,
+            "1/6"
+          ],
+          [
+            9,
+            9,
+            "1/12"
+          ],
+          [
+            9,
+            10,
+            "1/12"
+          ],
+          [
+            10,
+            9,
+            "1/12"
+          ],
+          [
+            10,
+            10,
+            "1/12"
+          ],
+          [
+            11,
+            11,
+            "1/12"
+          ],
+          [
+            11,
+            14,
+            "1/12"
+          ],
+          [
+            13,
+            13,
+            "1/12"
+          ],
+          [
+            13,
+            15,
+            "1/12"
+          ],
+          [
+            14,
+            11,
+            "1/12"
+          ],
+          [
+            14,
+            14,
+            "1/12"
+          ],
+          [
+            15,
+            13,
+            "1/12"
+          ],
+          [
+            15,
+            15,
+            "1/12"
+          ]
+        ]
+      },
+      "coherent": {
+        "marks": {
+          "1": {
+            "v_sparse": [
+              [
+                1,
+                0,
+                "1"
+              ],
+              [
+                2,
+                0,
+                "1"
+              ],
+              [
+                9,
+                0,
+                "1"
+              ],
+              [
+                10,
+                0,
+                "1"
+              ]
+            ],
+            "norm_squared": "4",
+            "m": "3/2",
+            "rate": "4*kappa/(3*epsilon**2 + 1)",
+            "mean": "3*delta/(2*epsilon**2)",
+            "second_moment": "3*delta**2*(3*epsilon**2 + 1)/(2*epsilon**6)",
+            "variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)",
+            "high_probability": "3*epsilon**2/(2*(3*epsilon**2 + 1))"
+          },
+          "2": {
+            "v_sparse": [
+              [
+                0,
+                0,
+                "1"
+              ],
+              [
+                2,
+                0,
+                "1"
+              ],
+              [
+                11,
+                0,
+                "1"
+              ],
+              [
+                14,
+                0,
+                "1"
+              ]
+            ],
+            "norm_squared": "4",
+            "m": "3/2",
+            "rate": "4*kappa/(3*epsilon**2 + 1)",
+            "mean": "3*delta/(2*epsilon**2)",
+            "second_moment": "3*delta**2*(3*epsilon**2 + 1)/(2*epsilon**6)",
+            "variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)",
+            "high_probability": "3*epsilon**2/(2*(3*epsilon**2 + 1))"
+          },
+          "3": {
+            "v_sparse": [
+              [
+                0,
+                0,
+                "1"
+              ],
+              [
+                1,
+                0,
+                "1"
+              ],
+              [
+                13,
+                0,
+                "1"
+              ],
+              [
+                15,
+                0,
+                "1"
+              ]
+            ],
+            "norm_squared": "4",
+            "m": "3/2",
+            "rate": "4*kappa/(3*epsilon**2 + 1)",
+            "mean": "3*delta/(2*epsilon**2)",
+            "second_moment": "3*delta**2*(3*epsilon**2 + 1)/(2*epsilon**6)",
+            "variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)",
+            "high_probability": "3*epsilon**2/(2*(3*epsilon**2 + 1))"
+          }
+        },
+        "total_rate": "12*kappa/(3*epsilon**2 + 1)",
+        "initial_energy_derivative": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))",
+        "recycling_energy": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))",
+        "anticommutator_energy": "0",
+        "bare_derivative": "0",
+        "sigma_sparse": [
+          [
+            0,
+            0,
+            "1/6"
+          ],
+          [
+            0,
+            1,
+            "1/12"
+          ],
+          [
+            0,
+            2,
+            "1/12"
+          ],
+          [
+            0,
+            11,
+            "1/12"
+          ],
+          [
+            0,
+            13,
+            "1/12"
+          ],
+          [
+            0,
+            14,
+            "1/12"
+          ],
+          [
+            0,
+            15,
+            "1/12"
+          ],
+          [
+            1,
+            0,
+            "1/12"
+          ],
+          [
+            1,
+            1,
+            "1/6"
+          ],
+          [
+            1,
+            2,
+            "1/12"
+          ],
+          [
+            1,
+            9,
+            "1/12"
+          ],
+          [
+            1,
+            10,
+            "1/12"
+          ],
+          [
+            1,
+            13,
+            "1/12"
+          ],
+          [
+            1,
+            15,
+            "1/12"
+          ],
+          [
+            2,
+            0,
+            "1/12"
+          ],
+          [
+            2,
+            1,
+            "1/12"
+          ],
+          [
+            2,
+            2,
+            "1/6"
+          ],
+          [
+            2,
+            9,
+            "1/12"
+          ],
+          [
+            2,
+            10,
+            "1/12"
+          ],
+          [
+            2,
+            11,
+            "1/12"
+          ],
+          [
+            2,
+            14,
+            "1/12"
+          ],
+          [
+            9,
+            1,
+            "1/12"
+          ],
+          [
+            9,
+            2,
+            "1/12"
+          ],
+          [
+            9,
+            9,
+            "1/12"
+          ],
+          [
+            9,
+            10,
+            "1/12"
+          ],
+          [
+            10,
+            1,
+            "1/12"
+          ],
+          [
+            10,
+            2,
+            "1/12"
+          ],
+          [
+            10,
+            9,
+            "1/12"
+          ],
+          [
+            10,
+            10,
+            "1/12"
+          ],
+          [
+            11,
+            0,
+            "1/12"
+          ],
+          [
+            11,
+            2,
+            "1/12"
+          ],
+          [
+            11,
+            11,
+            "1/12"
+          ],
+          [
+            11,
+            14,
+            "1/12"
+          ],
+          [
+            13,
+            0,
+            "1/12"
+          ],
+          [
+            13,
+            1,
+            "1/12"
+          ],
+          [
+            13,
+            13,
+            "1/12"
+          ],
+          [
+            13,
+            15,
+            "1/12"
+          ],
+          [
+            14,
+            0,
+            "1/12"
+          ],
+          [
+            14,
+            2,
+            "1/12"
+          ],
+          [
+            14,
+            11,
+            "1/12"
+          ],
+          [
+            14,
+            14,
+            "1/12"
+          ],
+          [
+            15,
+            0,
+            "1/12"
+          ],
+          [
+            15,
+            1,
+            "1/12"
+          ],
+          [
+            15,
+            13,
+            "1/12"
+          ],
+          [
+            15,
+            15,
+            "1/12"
+          ]
+        ]
+      }
+    }
+  },
+  "floating": [
+    {
+      "instrument": "resolved",
+      "epsilon": 0.25,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.03,
+      "density_trace_error": 0.7549142277580516,
+      "error_over_epsilon": 3.0196569110322065,
+      "trace": [
+        0.9999999999999997,
+        5.736810156152343e-16
+      ],
+      "hermiticity_error": 1.1767269226919272e-15,
+      "minimum_eigenvalue": -2.7710420209993495e-16,
+      "N3_probability": 0.11368512368419742,
+      "target_N3_probability": 0.134112251940795,
+      "energy": 4.753979447559388,
+      "jump_branch_energy_lower_bound": 4.638353046315254
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.25,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.2,
+      "density_trace_error": 0.5990826642672891,
+      "error_over_epsilon": 2.3963306570691563,
+      "trace": [
+        1.0000000000000044,
+        1.8978823504087194e-15
+      ],
+      "hermiticity_error": 2.3624822082675045e-15,
+      "minimum_eigenvalue": -2.92678997008656e-17,
+      "N3_probability": 0.5541778110397425,
+      "target_N3_probability": 0.617107114024888,
+      "energy": 22.635975000222558,
+      "jump_branch_energy_lower_bound": 22.61045469042149
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.125,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.03,
+      "density_trace_error": 0.39990004934948953,
+      "error_over_epsilon": 3.1992003947959162,
+      "trace": [
+        0.9999999999999916,
+        8.60551593092479e-17
+      ],
+      "hermiticity_error": 1.967058610996297e-15,
+      "minimum_eigenvalue": -3.1594781609284134e-16,
+      "N3_probability": 0.12850101134455916,
+      "target_N3_probability": 0.134112251940795,
+      "energy": 20.983338931277036,
+      "jump_branch_energy_lower_bound": 20.971365051432052
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.125,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.2,
+      "density_trace_error": 0.307769969061812,
+      "error_over_epsilon": 2.462159752494496,
+      "trace": [
+        0.9999999999999898,
+        3.803057125097706e-15
+      ],
+      "hermiticity_error": 1.536233183951236e-14,
+      "minimum_eigenvalue": -4.398018049793447e-16,
+      "N3_probability": 0.6002713171406412,
+      "target_N3_probability": 0.617107114024888,
+      "energy": 97.97042591891156,
+      "jump_branch_energy_lower_bound": 97.96427895735263
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.0625,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.03,
+      "density_trace_error": 0.2022156245252717,
+      "error_over_epsilon": 3.235449992404347,
+      "trace": [
+        1.000000000000021,
+        -1.336287234989295e-14
+      ],
+      "hermiticity_error": 1.484034571402985e-14,
+      "minimum_eigenvalue": -5.683874172228061e-16,
+      "N3_probability": 0.13266629444664557,
+      "target_N3_probability": 0.134112251940795,
+      "energy": 86.60824459660854,
+      "jump_branch_energy_lower_bound": 86.60455701477022
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.0625,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.2,
+      "density_trace_error": 0.15407055481959098,
+      "error_over_epsilon": 2.4651288771134556,
+      "trace": [
+        1.0000000000004021,
+        2.256793710030697e-14
+      ],
+      "hermiticity_error": 8.802869006151612e-14,
+      "minimum_eigenvalue": -4.259600162607873e-15,
+      "N3_probability": 0.6128244886242301,
+      "target_N3_probability": 0.617107114024888,
+      "energy": 400.05347562481654,
+      "jump_branch_energy_lower_bound": 400.0518261738974
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.03125,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.03,
+      "density_trace_error": 0.10136226582469124,
+      "error_over_epsilon": 3.2435925063901196,
+      "trace": [
+        1.0000000000004456,
+        1.599920654522924e-14
+      ],
+      "hermiticity_error": 4.2403624659517e-14,
+      "minimum_eigenvalue": -5.813514037917493e-16,
+      "N3_probability": 0.13374791853412832,
+      "target_N3_probability": 0.134112251940795,
+      "energy": 349.24351195283253,
+      "jump_branch_energy_lower_bound": 349.24256487631584
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.03125,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.2,
+      "density_trace_error": 0.07683847294921567,
+      "error_over_epsilon": 2.4588311343749014,
+      "trace": [
+        0.9999999999958162,
+        2.707350584809266e-13
+      ],
+      "hermiticity_error": 2.617026770607694e-13,
+      "minimum_eigenvalue": -4.284918564594116e-14,
+      "N3_probability": 0.6160317893601104,
+      "target_N3_probability": 0.617107114024888,
+      "energy": 1608.5826281616673,
+      "jump_branch_energy_lower_bound": 1608.5822083771202
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.25,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.03,
+      "density_trace_error": 0.7612760862204625,
+      "error_over_epsilon": 3.04510434488185,
+      "trace": [
+        0.9999999999999997,
+        5.608874299799053e-16
+      ],
+      "hermiticity_error": 1.1800198696371792e-15,
+      "minimum_eigenvalue": -2.8193979207255645e-16,
+      "N3_probability": 0.11368512368419743,
+      "target_N3_probability": 0.134112251940795,
+      "energy": 4.753979447559378,
+      "jump_branch_energy_lower_bound": 4.638353046315255
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.25,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.2,
+      "density_trace_error": 0.6357118636124732,
+      "error_over_epsilon": 2.542847454449893,
+      "trace": [
+        1.0000000000000042,
+        1.995501203513883e-15
+      ],
+      "hermiticity_error": 3.1579742562994467e-15,
+      "minimum_eigenvalue": -1.0013888363544432e-16,
+      "N3_probability": 0.5541778110397424,
+      "target_N3_probability": 0.617107114024888,
+      "energy": 22.63597500022255,
+      "jump_branch_energy_lower_bound": 22.610454690421488
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.125,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.03,
+      "density_trace_error": 0.4044636634658219,
+      "error_over_epsilon": 3.2357093077265753,
+      "trace": [
+        0.9999999999999916,
+        4.6857862642107895e-17
+      ],
+      "hermiticity_error": 2.17785531335357e-15,
+      "minimum_eigenvalue": -2.697692330191106e-16,
+      "N3_probability": 0.12850101134455919,
+      "target_N3_probability": 0.134112251940795,
+      "energy": 20.983338931277117,
+      "jump_branch_energy_lower_bound": 20.97136505143206
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.125,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.2,
+      "density_trace_error": 0.3315156147800631,
+      "error_over_epsilon": 2.6521249182405047,
+      "trace": [
+        0.9999999999999898,
+        3.811038081284973e-15
+      ],
+      "hermiticity_error": 1.748265611752828e-14,
+      "minimum_eigenvalue": -1.0533031783471023e-15,
+      "N3_probability": 0.6002713171406412,
+      "target_N3_probability": 0.617107114024888,
+      "energy": 97.97042591891153,
+      "jump_branch_energy_lower_bound": 97.96427895735263
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.0625,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.03,
+      "density_trace_error": 0.20495980396594832,
+      "error_over_epsilon": 3.279356863455173,
+      "trace": [
+        1.000000000000021,
+        -1.336287234989295e-14
+      ],
+      "hermiticity_error": 1.6127021260682257e-14,
+      "minimum_eigenvalue": -7.855909363089869e-16,
+      "N3_probability": 0.13266629444664557,
+      "target_N3_probability": 0.134112251940795,
+      "energy": 86.60824459660854,
+      "jump_branch_energy_lower_bound": 86.60455701477022
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.0625,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.2,
+      "density_trace_error": 0.1675440615151401,
+      "error_over_epsilon": 2.6807049842422415,
+      "trace": [
+        1.0000000000004021,
+        2.256793710030697e-14
+      ],
+      "hermiticity_error": 9.501431233334086e-14,
+      "minimum_eigenvalue": -5.4355226945572e-15,
+      "N3_probability": 0.6128244886242301,
+      "target_N3_probability": 0.617107114024888,
+      "energy": 400.05347562481654,
+      "jump_branch_energy_lower_bound": 400.0518261738974
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.03125,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.03,
+      "density_trace_error": 0.10286849197725242,
+      "error_over_epsilon": 3.2917917432720776,
+      "trace": [
+        1.0000000000004456,
+        1.599920654522924e-14
+      ],
+      "hermiticity_error": 7.070594534461886e-14,
+      "minimum_eigenvalue": -1.8728463943933686e-15,
+      "N3_probability": 0.13374791853412832,
+      "target_N3_probability": 0.134112251940795,
+      "energy": 349.24351195283253,
+      "jump_branch_energy_lower_bound": 349.24256487631584
+    },
+    {
+      "instrument": "coherent",
+      "epsilon": 0.03125,
+      "delta": 1.7,
+      "kappa": 0.4,
+      "time": 0.2,
+      "density_trace_error": 0.08399896461613805,
+      "error_over_epsilon": 2.6879668677164177,
+      "trace": [
+        0.9999999999958162,
+        2.707350584809266e-13
+      ],
+      "hermiticity_error": 2.963823242375306e-12,
+      "minimum_eigenvalue": -1.436851255696694e-13,
+      "N3_probability": 0.6160317893601104,
+      "target_N3_probability": 0.617107114024888,
+      "energy": 1608.5826281616673,
+      "jump_branch_energy_lower_bound": 1608.5822083771202
+    }
+  ],
+  "elapsed_seconds": 2.8843071460723877,
+  "summary": {
+    "passed": 222,
+    "failed": 0
+  }
+}

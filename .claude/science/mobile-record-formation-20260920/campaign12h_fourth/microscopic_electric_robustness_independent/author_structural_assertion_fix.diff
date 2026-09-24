@@ -1,0 +1,11 @@
+--- frozen_failed_author_source
++++ frozen_final_author_source
+@@ -37,7 +37,7 @@
+ expected=e**4*z*z+(s.I*delta*a+2*kappa*e**2+s.I*K*lam*e**4)*z+s.I*6*kappa*delta-3*delta*K*lam*e**2
+ assert s.simplify(poly-expected)==0
+ zs=-6*kappa+(18*kappa-s.I*(12*kappa**2/delta+3*K*lam))*e**2
+-assert s.series(poly.subs(z,zs),e,0,4).removeO()==0
++assert s.simplify(s.series(poly.subs(z,zs),e,0,4).removeO())==0
+ # Bounded E2 acts as a scalar on every immediate output, explaining the
+ # unchanged variance without assuming commutation of H0 and E2 globally.
+ for b in (1,2,3):

@@ -1,0 +1,63 @@
+{
+  "sealed_utc": "2026-09-24T01:23:22.123011+00:00",
+  "standing": "Personal conditional bridge calculation; independent reconstruction pending",
+  "files": [
+    {
+      "path": "DERIVATION_PLAN.md",
+      "bytes": 852,
+      "sha256": "85983aa0e5801fb81d2be29c99287542979a5352d07d09197418f7977ff9a77d"
+    },
+    {
+      "path": "DEVELOPMENT_FAILURES.md",
+      "bytes": 462,
+      "sha256": "20d3235f098d722a8d0f422290470457f9ec034f8c31fe82ddf1a8ad3e331d84"
+    },
+    {
+      "path": "EXACT_ELECTRIC_STAR_ENERGY.log",
+      "bytes": 1520,
+      "sha256": "eb74bee3756a28911fc9aa72098509441f541e9660062f9e3cc3614d47d34d0e"
+    },
+    {
+      "path": "EXACT_ELECTRIC_STAR_ENERGY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EXACT_ELECTRIC_STAR_ENERGY_RESULTS.json",
+      "bytes": 3838,
+      "sha256": "a34ce8dd7974a99d3614990d263a9f452f1d12823801b7a8d075464fcb2eb7a0"
+    },
+    {
+      "path": "FAILED_EXACT_ELECTRIC_STAR_ENERGY.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "FAILED_EXACT_ELECTRIC_STAR_ENERGY.stderr",
+      "bytes": 396,
+      "sha256": "73bfe1cae165dec9e3a1d587ca227b3284c282588b419c321d470ccfdaf50187"
+    },
+    {
+      "path": "FAILED_exact_electric_star_energy.py",
+      "bytes": 3374,
+      "sha256": "6f3855b0b59ade314a962f4516cd5d7ea41c065712a7430051666ab35fe07459"
+    },
+    {
+      "path": "STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY.md",
+      "bytes": 6889,
+      "sha256": "a7dfe854f72be6e30b7aa4bbb61e10c5e7876b6cd62698735968af33ae0477c2"
+    },
+    {
+      "path": "exact_electric_star_energy.py",
+      "bytes": 3386,
+      "sha256": "73435f646145b5fa0a8be0a90b968ec49648aa562aefd740cddb36fbff9e896e"
+    }
+  ],
+  "sources_sha256": {
+    "microscopic_birth_energy_author/exact_star_energy.py": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e",
+    "microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c",
+    "microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5",
+    "field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617",
+    "field_energy_completion_author/ROOT_SCOPE_CORRECTION.md": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+  }
+}

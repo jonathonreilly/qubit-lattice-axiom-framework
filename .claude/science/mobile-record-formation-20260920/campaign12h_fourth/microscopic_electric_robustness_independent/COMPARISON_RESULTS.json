@@ -1,0 +1,617 @@
+{
+  "stage": "post-PRE scientific source comparison",
+  "summary": {
+    "full_physical_dimension": 16,
+    "actual_marks_compared": 9,
+    "exact_checks": 144,
+    "scientific_discrepancies": [],
+    "author_fixed_lambda_proof_checked": true,
+    "own_uniform_lambda_proof_remains_separately_attributed": true
+  },
+  "provenance": "Independent operators and initial state come only from the author-blind PRE packet; no author builder imported. Root frozen result JSON is comparison data.",
+  "checks": [
+    {
+      "check": "complete sector dimension",
+      "exact_difference": "0"
+    },
+    {
+      "check": "same original compensation",
+      "exact_difference": "0"
+    },
+    {
+      "check": "full physical electric operator",
+      "exact_difference": "0"
+    },
+    {
+      "check": "physical D_ext zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "positive original square",
+      "exact_difference": "0"
+    },
+    {
+      "check": "joint-scaled reachable H1",
+      "exact_difference": "0"
+    },
+    {
+      "check": "E2 norm bound maximum eigenvalue",
+      "exact_difference": "0"
+    },
+    {
+      "check": "root F sector 1",
+      "exact_difference": "0"
+    },
+    {
+      "check": "root F sector 3",
+      "exact_difference": "0"
+    },
+    {
+      "check": "N3 old exact spectral polynomial",
+      "exact_difference": "0"
+    },
+    {
+      "check": "N3 old high projector rank",
+      "exact_difference": "0"
+    },
+    {
+      "check": "common H0 zero eigenstate",
+      "exact_difference": "0"
+    },
+    {
+      "check": "common state is not lambda eigenstate identity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "initial energy main author versus own action",
+      "exact_difference": "0"
+    },
+    {
+      "check": "initial energy PRE",
+      "exact_difference": "0"
+    },
+    {
+      "check": "initial variance PRE",
+      "exact_difference": "0"
+    },
+    {
+      "check": "bare g original energy",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') root versus independent mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') root versus independent variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') root coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') PRE mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') PRE variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') original mark intensity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') original high spectral probability",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') old variance as lambda zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') full physical output word amplitudes",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '-1') electric scalar on immediate output",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') root versus independent mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') root versus independent variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') root coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') PRE mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') PRE variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') original mark intensity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') original high spectral probability",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') old variance as lambda zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') full physical output word amplitudes",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 1, '1') electric scalar on immediate output",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') root versus independent mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') root versus independent variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') root coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') PRE mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') PRE variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') original mark intensity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') original high spectral probability",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') old variance as lambda zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') full physical output word amplitudes",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '-1') electric scalar on immediate output",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') root versus independent mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') root versus independent variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') root coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') PRE mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') PRE variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') original mark intensity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') original high spectral probability",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') old variance as lambda zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') full physical output word amplitudes",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 2, '1') electric scalar on immediate output",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') root versus independent mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') root versus independent variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') root coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') PRE mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') PRE variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') original mark intensity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') original high spectral probability",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') old variance as lambda zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') full physical output word amplitudes",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '-1') electric scalar on immediate output",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') root versus independent mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') root versus independent variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') root coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') PRE mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') PRE variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') original mark intensity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') original high spectral probability",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') old variance as lambda zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') full physical output word amplitudes",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('resolved', 3, '1') electric scalar on immediate output",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') root versus independent mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') root versus independent variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') root coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') PRE mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') PRE variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') original mark intensity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') original high spectral probability",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') old variance as lambda zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') full physical output word amplitudes",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 1, 'coherent') electric scalar on immediate output",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') root versus independent mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') root versus independent variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') root coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') PRE mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') PRE variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') original mark intensity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') original high spectral probability",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') old variance as lambda zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') full physical output word amplitudes",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 2, 'coherent') electric scalar on immediate output",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') root versus independent mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') root versus independent variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') root coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') PRE mean",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') PRE variance",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') original mark intensity",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') original high spectral probability",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') old variance as lambda zero",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') full physical output word amplitudes",
+      "exact_difference": "0"
+    },
+    {
+      "check": "('coherent', 3, 'coherent') electric scalar on immediate output",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved complete loss operator",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved actual gain",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved actual signed loss",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved full derivative",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved PRE loss convention",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved PRE derivative",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved full finite-time source relation on reachable subspace",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved no further birth 0",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved no further birth 1",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved no further birth 2",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved no further birth 3",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved no further birth 4",
+      "exact_difference": "0"
+    },
+    {
+      "check": "resolved no further birth 5",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent complete loss operator",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent actual gain",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent actual signed loss",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent full derivative",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent PRE loss convention",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent PRE derivative",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent full finite-time source relation on reachable subspace",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent no further birth 0",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent no further birth 1",
+      "exact_difference": "0"
+    },
+    {
+      "check": "coherent no further birth 2",
+      "exact_difference": "0"
+    },
+    {
+      "check": "reachable no-event invariant subspace",
+      "exact_difference": "0"
+    },
+    {
+      "check": "author full scaled characteristic polynomial",
+      "exact_difference": "0"
+    },
+    {
+      "check": "slow root derived from independent H1",
+      "exact_difference": "0"
+    },
+    {
+      "check": "implicit-function nondegeneracy",
+      "exact_difference": "0"
+    },
+    {
+      "check": "author old-basis low diagonal",
+      "exact_difference": "0"
+    },
+    {
+      "check": "author old-basis off diagonal",
+      "exact_difference": "0"
+    },
+    {
+      "check": "old-basis high diagonal",
+      "exact_difference": "0"
+    },
+    {
+      "check": "contractivity for both instruments",
+      "exact_difference": "0"
+    },
+    {
+      "check": "slow numerator order coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "off diagonal order coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "fast eigenvalue gap coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "slow eigenvector high order coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "fast eigenvector low order coefficient",
+      "exact_difference": "0"
+    },
+    {
+      "check": "preserved assertion is an exact algebraic zero",
+      "exact_difference": "0"
+    }
+  ],
+  "no_event_comparison": {
+    "scaled_polynomial": "-3*K*delta*epsilon**2*lam + I*K*epsilon**4*lam*z + 3*I*delta*epsilon**2*z + 6*I*delta*kappa + I*delta*z + epsilon**4*z**2 + 2*epsilon**2*kappa*z",
+    "independently_derived_slow_root_through_epsilon2": "epsilon**2*(-3*I*K*lam + 18*kappa - 12*I*kappa**2/delta) - 6*kappa",
+    "old_basis_rotated_generator": [
+      [
+        "3*(-I*K*epsilon**2*lam - 2*kappa)/(3*epsilon**2 + 1)",
+        "sqrt(3)*(I*K*epsilon**2*lam + 2*kappa)/(epsilon*(3*epsilon**2 + 1))"
+      ],
+      [
+        "sqrt(3)*(I*K*epsilon**2*lam + 2*kappa)/(epsilon*(3*epsilon**2 + 1))",
+        "(-I*K*epsilon**4*lam - 9*I*delta*epsilon**4 - 6*I*delta*epsilon**2 - I*delta - 2*epsilon**2*kappa)/(3*epsilon**6 + epsilon**4)"
+      ]
+    ],
+    "slow_high_amplitude_order": "epsilon^3",
+    "fast_low_amplitude_order": "epsilon^3",
+    "interpretation": "These exact coefficients validate the hypotheses of the released fixed-lambda eigenvector proof. PRE uses a separate direct Duhamel proof uniform over lambda in [0,1]."
+  },
+  "author_failure_analysis": {
+    "difference": "One structural-zero assertion changed to simplify the exact polynomial coefficient. No scientific formula or tolerance changed.",
+    "historical_failures_reported": 2,
+    "historical_complete_failed_snapshot_count": 1,
+    "preserved_failure_replayed": true,
+    "raw_series": "epsilon**2*(-3*K*delta*lam + delta*(3*K*lam + 12*kappa**2/delta) - 12*kappa**2)",
+    "raw_structurally_zero": false,
+    "simplified_series": "0"
+  },
+  "scope": "Original physical three-leaf star, common explicit preparation, both original instruments, fixed positive K,delta,kappa, integer S>=1 with the supplied joint scaling. No reservoir construction, universal no-go, volume or repeated-formation result, audit or landing status."
+}

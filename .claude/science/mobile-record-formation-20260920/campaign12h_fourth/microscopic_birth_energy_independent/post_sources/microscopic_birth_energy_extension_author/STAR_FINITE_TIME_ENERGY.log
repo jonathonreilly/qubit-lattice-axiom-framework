@@ -1,0 +1,29 @@
+{
+  "basis_dimensions": {
+    "1": 4,
+    "3": 12
+  },
+  "initial_energy": "0",
+  "N3_high_dimensionless_eigenvalue": "3*epsilon**2 + 1",
+  "dressed_initial_energy_derivative": {
+    "resolved": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))",
+    "coherent": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))"
+  }
+}
+{"instrument": "resolved", "mark": "1", "rate": "2*kappa/(3*epsilon**2 + 1)", "conditional_energy": "2*delta/epsilon**2", "high_spectral_probability": "2*epsilon**2/(3*epsilon**2 + 1)", "conditional_energy_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"}
+{"instrument": "resolved", "mark": "-1", "rate": "2*kappa/(3*epsilon**2 + 1)", "conditional_energy": "delta/epsilon**2", "high_spectral_probability": "epsilon**2/(3*epsilon**2 + 1)", "conditional_energy_variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"}
+{"instrument": "resolved", "mark": "1", "rate": "2*kappa/(3*epsilon**2 + 1)", "conditional_energy": "2*delta/epsilon**2", "high_spectral_probability": "2*epsilon**2/(3*epsilon**2 + 1)", "conditional_energy_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"}
+{
+  "full_GKLS_cases": 9,
+  "max_energy_error": 2.2211565919860732e-11,
+  "last_joint_limit_row": {
+    "S": 64,
+    "C": 4160,
+    "epsilon": "0.0155043418236510570237819485198",
+    "P_birth": "0.909124962019196015768473256608",
+    "P_birth_limit": "0.90928204671058749662482777992",
+    "epsilon_squared_energy": "1.36368750590695764798475062059",
+    "limiting_scaled_energy": "1.36392307006588124493724166988",
+    "no_event_energy": "0.000261573160677221289460411538737"
+  }
+}

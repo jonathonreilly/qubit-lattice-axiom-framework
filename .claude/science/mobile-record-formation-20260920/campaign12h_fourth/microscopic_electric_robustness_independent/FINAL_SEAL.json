@@ -1,0 +1,382 @@
+{
+  "stage": "Final source comparison after independent PRE",
+  "sealed_utc": "2026-09-24T01:55:42.819124+00:00",
+  "standing": "Conditional scientific comparison only; no audit or landing verdict",
+  "PRE_seal_sha256": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa",
+  "PRE_bound_files_authenticated_unchanged": 22,
+  "author_seal_sha256": "fe08f9e62cfc1278cf659127e23989435cb6f0dcc39942a1e6cbef7eec0b1b21",
+  "comparison_source_bindings_sha256": "5b985b0905b0a409cca18d1d62120a1f00eca547d207aa26eccb8e8efcda2630",
+  "comparison_note_sha256": "311dae00ef1b1cf4258ecdd3086cd5c9cc6d2c242e517898f359dee9e6a5bd13",
+  "comparison_receipt_sha256": "37b3bf20d775b3f8e942b9aa39a1c80356ad1ced6772af32b07130e6b63f98eb",
+  "scope_supported": [
+    "Complete supplied physical 16-state three-leaf star with exact normalized spin shifts, original compensation and unchanged actual formation instruments",
+    "Common explicit preparation, initial microscopic energy, all nine actual marked means and full variances, complete initial gain/loss derivative",
+    "Exact finite-time number-sector energy relation for this preparation; original author fixed-lambda eigenvector proof checked",
+    "Fixed-positive-time microscopic energy scaling; independent PRE Duhamel proof supplies separately attributed uniformity in lambda in [0,1]",
+    "Necessary supply inequality only with explicit nonnegative environment, total-energy conservation, finite moments and reproduction of microscopic system energy; bounded-interaction allowance only under its stated decomposition"
+  ],
+  "claims_excluded": [
+    "General-graph or cube coefficient, repeated births, graph-size or infinite-volume uniformity",
+    "Arbitrary initial-state finite-time energy relation, an exact H_lambda eigenstate at lambda>0, or transfer of microscopic moments from trace-distance convergence alone",
+    "Autonomous reservoir realization, heat identification, native physical law or lambda selection, empirical prediction, universal reservoir no-go",
+    "Uniform asymptotics for varying positive K/delta/kappa or observation times growing with S",
+    "Audit verdict, retained status, landing approval or publication change"
+  ],
+  "scientific_discrepancies": [],
+  "failures": {
+    "author_historical_reported_failures": 2,
+    "complete_preserved_author_failure_reproduced": true,
+    "preserved_failure_exit_code": 1,
+    "failure_reason": "Structural equality on an unsimplified exact-zero coefficient; one-line simplify correction, no changed scientific coefficient or tolerance",
+    "first_historical_failure_snapshot_recovered": false,
+    "unresolved_execution_failures": []
+  },
+  "portability": "Scientific snapshots are mapped by exact hashes and relative aliases. Comparisons and runtime copies do not require an absolute private path. Historical immutable records retain original text.",
+  "files": [
+    {
+      "path": "COMPARISON.md",
+      "bytes": 14268,
+      "sha256": "311dae00ef1b1cf4258ecdd3086cd5c9cc6d2c242e517898f359dee9e6a5bd13"
+    },
+    {
+      "path": "COMPARISON_EXECUTION_RECEIPT.json",
+      "bytes": 5321,
+      "sha256": "37b3bf20d775b3f8e942b9aa39a1c80356ad1ced6772af32b07130e6b63f98eb"
+    },
+    {
+      "path": "COMPARISON_RESULTS.json",
+      "bytes": 17245,
+      "sha256": "a4f04dac83a3ddbf9b38f384c385a0c1aed196825ef9007dd8a4c1d022728b68"
+    },
+    {
+      "path": "COMPARISON_SOURCE_BINDINGS.json",
+      "bytes": 7229,
+      "sha256": "5b985b0905b0a409cca18d1d62120a1f00eca547d207aa26eccb8e8efcda2630"
+    },
+    {
+      "path": "EXACT_STAR_MATRIX_RESULTS.json",
+      "bytes": 28702,
+      "sha256": "8b26fca39e618219ed263cdd4e15ebac084a22359abeb62144c67e41b359922f"
+    },
+    {
+      "path": "EXECUTION_RECEIPT.json",
+      "bytes": 2521,
+      "sha256": "2615913e7d0ebf4d1dadd45e81631deca5b4321bf35effdd4b4d9f69cfa3762e"
+    },
+    {
+      "path": "FINITE_TIME_RESULTS.json",
+      "bytes": 26348,
+      "sha256": "5ee4da901fc3b9bd6211ddeb1fab1650ebe6a0b914a517c1dadca0428c036fae"
+    },
+    {
+      "path": "PRE_RECONSTRUCTION.md",
+      "bytes": 17655,
+      "sha256": "145bc27edb4a791a89b5d624943ef99102692783b0de5e8cfc7615e0c19c0f40"
+    },
+    {
+      "path": "PRE_SEAL.json",
+      "bytes": 4478,
+      "sha256": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa"
+    },
+    {
+      "path": "PRE_SEAL.sha256",
+      "bytes": 80,
+      "sha256": "f201f05c13d5413df8454bb1077d31892fd4908e00bc5958e9d1809c7bec55a6"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 4323,
+      "sha256": "6af22f8257c9e22e50d6bb67d9da51d4e574d7c915c6c655dd89987c717ffd04"
+    },
+    {
+      "path": "author_structural_assertion_fix.diff",
+      "bytes": 563,
+      "sha256": "8ba3b1d6f8928c35a6f7d100c4bbe419c1574fb1a13ec6b55d07eb1605d8741f"
+    },
+    {
+      "path": "bind_comparison_sources.log",
+      "bytes": 275,
+      "sha256": "29cffe98aaafc630f96e2ecb3f9f4981cc84cacb83a8812e183461ebb22e167c"
+    },
+    {
+      "path": "bind_comparison_sources.py",
+      "bytes": 2863,
+      "sha256": "2d7e5b4d8d4fa364faeb5734e41149bd585790977fca1112e64160ec8355afe5"
+    },
+    {
+      "path": "bind_sources.py",
+      "bytes": 3171,
+      "sha256": "6c02656f178cc5db425f9e78ce09c8be8e6aedb29a2b1ed9d6dc607ce04656e0"
+    },
+    {
+      "path": "compare_frozen_sources.py",
+      "bytes": 11294,
+      "sha256": "f949f50ae1c96821fb288cf6464f0858a236845d3862b53f09cd66f4ddc7ea2a"
+    },
+    {
+      "path": "comparison_author_preserved_failure.stderr",
+      "bytes": 491,
+      "sha256": "b502d19897b67d0c490df9896c3e53dd4017eb80758b60ea5cdcddc389b72d89"
+    },
+    {
+      "path": "comparison_author_preserved_failure.stdout",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "comparison_author_success.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "comparison_author_success.stdout",
+      "bytes": 1520,
+      "sha256": "eb74bee3756a28911fc9aa72098509441f541e9660062f9e3cc3614d47d34d0e"
+    },
+    {
+      "path": "comparison_independent_check.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "comparison_independent_check.stdout",
+      "bytes": 1661,
+      "sha256": "f313cb73f969ae7cbc6812988268fccb9dd4272312dacad745b067105a20887c"
+    },
+    {
+      "path": "comparison_independent_replay.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "comparison_independent_replay.stdout",
+      "bytes": 3946,
+      "sha256": "6dd526643a70d8d6ca2db51ab0135fed96016698323201c5b8cadce5837732c6"
+    },
+    {
+      "path": "comparison_runtime/author_preserved_failure/microscopic_birth_energy_author/EXACT_STAR_ENERGY_RESULTS.json",
+      "bytes": 15374,
+      "sha256": "3a8ad2b37e5d1adb41487d87789c056da334b7a9135828941844e9be2170c6f3"
+    },
+    {
+      "path": "comparison_runtime/author_preserved_failure/microscopic_birth_energy_author/exact_star_energy.py",
+      "bytes": 5328,
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "path": "comparison_runtime/author_preserved_failure/microscopic_electric_robustness_author/FAILED_exact_electric_star_energy.py",
+      "bytes": 3374,
+      "sha256": "6f3855b0b59ade314a962f4516cd5d7ea41c065712a7430051666ab35fe07459"
+    },
+    {
+      "path": "comparison_runtime/author_success/microscopic_birth_energy_author/EXACT_STAR_ENERGY_RESULTS.json",
+      "bytes": 15374,
+      "sha256": "3a8ad2b37e5d1adb41487d87789c056da334b7a9135828941844e9be2170c6f3"
+    },
+    {
+      "path": "comparison_runtime/author_success/microscopic_birth_energy_author/exact_star_energy.py",
+      "bytes": 5328,
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "path": "comparison_runtime/author_success/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY_RESULTS.json",
+      "bytes": 3838,
+      "sha256": "a34ce8dd7974a99d3614990d263a9f452f1d12823801b7a8d075464fcb2eb7a0"
+    },
+    {
+      "path": "comparison_runtime/author_success/microscopic_electric_robustness_author/exact_electric_star_energy.py",
+      "bytes": 3386,
+      "sha256": "73435f646145b5fa0a8be0a90b968ec49648aa562aefd740cddb36fbff9e896e"
+    },
+    {
+      "path": "comparison_runtime/independent/EXACT_STAR_MATRIX_RESULTS.json",
+      "bytes": 28702,
+      "sha256": "8b26fca39e618219ed263cdd4e15ebac084a22359abeb62144c67e41b359922f"
+    },
+    {
+      "path": "comparison_runtime/independent/star_local_matrix_control.py",
+      "bytes": 8637,
+      "sha256": "1d99b207b028f191961331b0c79662f9fe13e93dc145ce53c38da00deed81254"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "bytes": 12525,
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "bytes": 2455,
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "bytes": 9368,
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_birth_energy_author/exact_star_energy.py",
+      "bytes": 5328,
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "bytes": 8477,
+      "sha256": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/AUTHOR_SEAL.json",
+      "bytes": 2599,
+      "sha256": "fe08f9e62cfc1278cf659127e23989435cb6f0dcc39942a1e6cbef7eec0b1b21"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/DERIVATION_PLAN.md",
+      "bytes": 852,
+      "sha256": "85983aa0e5801fb81d2be29c99287542979a5352d07d09197418f7977ff9a77d"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/DEVELOPMENT_FAILURES.md",
+      "bytes": 462,
+      "sha256": "20d3235f098d722a8d0f422290470457f9ec034f8c31fe82ddf1a8ad3e331d84"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY.log",
+      "bytes": 1520,
+      "sha256": "eb74bee3756a28911fc9aa72098509441f541e9660062f9e3cc3614d47d34d0e"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/EXACT_ELECTRIC_STAR_ENERGY_RESULTS.json",
+      "bytes": 3838,
+      "sha256": "a34ce8dd7974a99d3614990d263a9f452f1d12823801b7a8d075464fcb2eb7a0"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/FAILED_EXACT_ELECTRIC_STAR_ENERGY.log",
+      "bytes": 1090,
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/FAILED_EXACT_ELECTRIC_STAR_ENERGY.stderr",
+      "bytes": 396,
+      "sha256": "73bfe1cae165dec9e3a1d587ca227b3284c282588b419c321d470ccfdaf50187"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/FAILED_exact_electric_star_energy.py",
+      "bytes": 3374,
+      "sha256": "6f3855b0b59ade314a962f4516cd5d7ea41c065712a7430051666ab35fe07459"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY.md",
+      "bytes": 6889,
+      "sha256": "a7dfe854f72be6e30b7aa4bbb61e10c5e7876b6cd62698735968af33ae0477c2"
+    },
+    {
+      "path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/exact_electric_star_energy.py",
+      "bytes": 3386,
+      "sha256": "73435f646145b5fa0a8be0a90b968ec49648aa562aefd740cddb36fbff9e896e"
+    },
+    {
+      "path": "exact_star_matrix.log",
+      "bytes": 3946,
+      "sha256": "6dd526643a70d8d6ca2db51ab0135fed96016698323201c5b8cadce5837732c6"
+    },
+    {
+      "path": "finite_time_control.log",
+      "bytes": 6362,
+      "sha256": "ee668d3b47c0b29349dd4027cbf2f44d5a7cd2738bbc8ebff356c00674cc3ddc"
+    },
+    {
+      "path": "finite_time_symbolic_import.log",
+      "bytes": 3946,
+      "sha256": "6dd526643a70d8d6ca2db51ab0135fed96016698323201c5b8cadce5837732c6"
+    },
+    {
+      "path": "reproduce_and_seal_PRE.py",
+      "bytes": 2994,
+      "sha256": "dd0bab34f764da8935a5563ba9379cb1442201ec98f91f810146b3710f7c52f3"
+    },
+    {
+      "path": "reproduce_comparison.py",
+      "bytes": 4965,
+      "sha256": "7eb769e624e5819cfad31989211774cc358e1986fe7c28549c5c25364ab3e97b"
+    },
+    {
+      "path": "reproduce_comparison.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduce_comparison.stdout",
+      "bytes": 780,
+      "sha256": "5a53c08ef4ab6860819aa86b6114307d1441467ff50e42a79be900e4dc8b28c6"
+    },
+    {
+      "path": "seal_comparison.py",
+      "bytes": 4972,
+      "sha256": "7405116c79d81ec021a8dd5193431c1dc440bdea2025f8a500d40bc5fafd4e1a"
+    },
+    {
+      "path": "sources/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "sources/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "bytes": 12525,
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617"
+    },
+    {
+      "path": "sources/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "bytes": 2455,
+      "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+    },
+    {
+      "path": "sources/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "sources/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "sources/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "sources/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "sources/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "bytes": 16828,
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    },
+    {
+      "path": "sources/planning_AGENTS.md",
+      "bytes": 10164,
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7"
+    },
+    {
+      "path": "sources/repository_AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "star_finite_time_control.py",
+      "bytes": 4325,
+      "sha256": "d35a6437db4ead9680cb88f8f220df430f624a52d7cdf8819dadd13dd1828c4a"
+    },
+    {
+      "path": "star_local_matrix_control.py",
+      "bytes": 8637,
+      "sha256": "1d99b207b028f191961331b0c79662f9fe13e93dc145ce53c38da00deed81254"
+    }
+  ]
+}

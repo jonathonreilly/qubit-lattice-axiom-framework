@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-09-24T01:24:48.873201+00:00",
+  "pre_seal_sha256": "82e5b45bc8ecf0aad7deb8f2af8c457062c2bcb860dc83d18c4538a1ac3053d9",
+  "exposure": "Both author notes and complete code read only after root release following PRE authentication. Root stated the extension was authored and sealed before reading PRE. This check did not independently observe the authorship process.",
+  "comparison_sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/DEVELOPMENT_FAILURES.md",
+      "snapshot": "post_sources/microscopic_birth_energy_author/DEVELOPMENT_FAILURES.md",
+      "sha256": "c8cb17feae10c91a3d7705e35470b35599e10b98b61c73ffa85c7c9c44ef8c75"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "snapshot": "post_sources/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "sha256": "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY.log",
+      "snapshot": "post_sources/microscopic_birth_energy_author/EXACT_STAR_ENERGY.log",
+      "sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY.stderr",
+      "snapshot": "post_sources/microscopic_birth_energy_author/EXACT_STAR_ENERGY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_STAR_ENERGY_RESULTS.json",
+      "snapshot": "post_sources/microscopic_birth_energy_author/EXACT_STAR_ENERGY_RESULTS.json",
+      "sha256": "3a8ad2b37e5d1adb41487d87789c056da334b7a9135828941844e9be2170c6f3"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/exact_star_energy.py",
+      "snapshot": "post_sources/microscopic_birth_energy_author/exact_star_energy.py",
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "snapshot": "post_sources/microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "sha256": "ff9362d4ad06b36c86153d71b23b361843a77a26ceb4400f7b6ed14bea12aff5"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "snapshot": "post_sources/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "sha256": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.log",
+      "snapshot": "post_sources/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.log",
+      "sha256": "a2019ee2bb50142a8eea149a9dce2d9d82a98e8fd2c7c8ad8255258fa10d3ade"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.stderr",
+      "snapshot": "post_sources/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY_RESULTS.json",
+      "snapshot": "post_sources/microscopic_birth_energy_extension_author/STAR_FINITE_TIME_ENERGY_RESULTS.json",
+      "sha256": "7ac5d9bf0a7a4e678de742a5103fb821dfe415c1b18547c2bb9fbc76c1258f93"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/star_finite_time_energy.py",
+      "snapshot": "post_sources/microscopic_birth_energy_extension_author/star_finite_time_energy.py",
+      "sha256": "41060fa782b2aa4e25105360339f4fc0ae5b4bdecbe57d2364dee44a275ae8a8"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/AUTHOR_SEAL.json",
+      "snapshot": "post_sources/microscopic_birth_energy_extension_author/AUTHOR_SEAL.json",
+      "sha256": "4812c28ae4ec3cfcace52536cecd9156557cd851b1fd2b2958d361cc49fca3b1"
+    }
+  ],
+  "computation": "Only frozen independent PRE engine imported. Author code not imported or executed. Symbolic full matrices, scalar spectral exponentials and independent full Liouville controls.",
+  "model": "Same inherited model/reasoning retained; no independent model-family claim.",
+  "post_run_01_source_sha256": "058704a5b38e4cd5bd6894f7d4cd4c82ee219b7d28b0d09f5ac1cbf5e0ad5112",
+  "post_run_02_source_sha256": "58621cf559b2a43be6df514732a002c428e6e8e46e53a8ab378b9eba3b00745c"
+}

@@ -1,0 +1,98 @@
+{
+  "stage": "post-PRE source comparison only",
+  "completed_utc": "2026-09-24T01:51:37.623323+00:00",
+  "PRE_seal_sha256": "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa",
+  "PRE_files_authenticated_before": 22,
+  "PRE_files_authenticated_after": 22,
+  "PRE_bytes_unchanged": true,
+  "source_bindings_sha256": "5b985b0905b0a409cca18d1d62120a1f00eca547d207aa26eccb8e8efcda2630",
+  "runtime_policy": "All runtime copies and generated outputs are beneath this packet. Root scientific builders execute in separate child processes and are never imported by the independent calculation. Relative names plus exact hashes permit relocation.",
+  "copies": [
+    {
+      "snapshot_path": "star_local_matrix_control.py",
+      "runtime_path": "comparison_runtime/independent/star_local_matrix_control.py",
+      "sha256": "1d99b207b028f191961331b0c79662f9fe13e93dc145ce53c38da00deed81254"
+    },
+    {
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_birth_energy_author/exact_star_energy.py",
+      "runtime_path": "comparison_runtime/author_success/microscopic_birth_energy_author/exact_star_energy.py",
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/exact_electric_star_energy.py",
+      "runtime_path": "comparison_runtime/author_success/microscopic_electric_robustness_author/exact_electric_star_energy.py",
+      "sha256": "73435f646145b5fa0a8be0a90b968ec49648aa562aefd740cddb36fbff9e896e"
+    },
+    {
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_birth_energy_author/exact_star_energy.py",
+      "runtime_path": "comparison_runtime/author_preserved_failure/microscopic_birth_energy_author/exact_star_energy.py",
+      "sha256": "ce202e534e19254516e7a3437c5c19e8a229334170eda73f65a16ae2f1fa377e"
+    },
+    {
+      "snapshot_path": "comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/FAILED_exact_electric_star_energy.py",
+      "runtime_path": "comparison_runtime/author_preserved_failure/microscopic_electric_robustness_author/FAILED_exact_electric_star_energy.py",
+      "sha256": "6f3855b0b59ade314a962f4516cd5d7ea41c065712a7430051666ab35fe07459"
+    }
+  ],
+  "executions": [
+    {
+      "name": "comparison_independent_replay",
+      "script_relative_path": "comparison_runtime/independent/star_local_matrix_control.py",
+      "script_sha256": "1d99b207b028f191961331b0c79662f9fe13e93dc145ce53c38da00deed81254",
+      "python": "3.13.5",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "wall_seconds": 0.6112747918814421,
+      "stdout_path": "comparison_independent_replay.stdout",
+      "stdout_sha256": "6dd526643a70d8d6ca2db51ab0135fed96016698323201c5b8cadce5837732c6",
+      "stderr_path": "comparison_independent_replay.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "comparison_author_success",
+      "script_relative_path": "comparison_runtime/author_success/microscopic_electric_robustness_author/exact_electric_star_energy.py",
+      "script_sha256": "73435f646145b5fa0a8be0a90b968ec49648aa562aefd740cddb36fbff9e896e",
+      "python": "3.13.5",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "wall_seconds": 0.8406107919290662,
+      "stdout_path": "comparison_author_success.stdout",
+      "stdout_sha256": "eb74bee3756a28911fc9aa72098509441f541e9660062f9e3cc3614d47d34d0e",
+      "stderr_path": "comparison_author_success.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "comparison_author_preserved_failure",
+      "script_relative_path": "comparison_runtime/author_preserved_failure/microscopic_electric_robustness_author/FAILED_exact_electric_star_energy.py",
+      "script_sha256": "6f3855b0b59ade314a962f4516cd5d7ea41c065712a7430051666ab35fe07459",
+      "python": "3.13.5",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "wall_seconds": 0.7967676247935742,
+      "stdout_path": "comparison_author_preserved_failure.stdout",
+      "stdout_sha256": "9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736",
+      "stderr_path": "comparison_author_preserved_failure.stderr",
+      "stderr_sha256": "b502d19897b67d0c490df9896c3e53dd4017eb80758b60ea5cdcddc389b72d89"
+    },
+    {
+      "name": "comparison_independent_check",
+      "script_relative_path": "compare_frozen_sources.py",
+      "script_sha256": "f949f50ae1c96821fb288cf6464f0858a236845d3862b53f09cd66f4ddc7ea2a",
+      "python": "3.13.5",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "wall_seconds": 1.3045838330872357,
+      "stdout_path": "comparison_independent_check.stdout",
+      "stdout_sha256": "f313cb73f969ae7cbc6812988268fccb9dd4272312dacad745b067105a20887c",
+      "stderr_path": "comparison_independent_check.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "reproduction_results": {
+    "own_PRE_result_byte_identical": true,
+    "author_result_byte_identical": true,
+    "author_stdout_byte_identical": true,
+    "preserved_author_failure_reproduced": true
+  },
+  "unresolved_execution_failures": []
+}

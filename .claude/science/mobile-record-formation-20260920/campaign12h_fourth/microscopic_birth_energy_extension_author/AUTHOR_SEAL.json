@@ -1,0 +1,32 @@
+{
+  "sealed_utc": "2026-09-24T01:10:48.114521+00:00",
+  "standing": "Personal exact finite-time extension; independent review pending",
+  "files": [
+    {
+      "path": "FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "bytes": 8477,
+      "sha256": "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5"
+    },
+    {
+      "path": "STAR_FINITE_TIME_ENERGY.log",
+      "bytes": 1574,
+      "sha256": "a2019ee2bb50142a8eea149a9dce2d9d82a98e8fd2c7c8ad8255258fa10d3ade"
+    },
+    {
+      "path": "STAR_FINITE_TIME_ENERGY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "STAR_FINITE_TIME_ENERGY_RESULTS.json",
+      "bytes": 6629,
+      "sha256": "7ac5d9bf0a7a4e678de742a5103fb821dfe415c1b18547c2bb9fbc76c1258f93"
+    },
+    {
+      "path": "star_finite_time_energy.py",
+      "bytes": 4645,
+      "sha256": "41060fa782b2aa4e25105360339f4fc0ae5b4bdecbe57d2364dee44a275ae8a8"
+    }
+  ],
+  "source_author_seal_sha256": "ff9362d4ad06b36c86153d71b23b361843a77a26ceb4400f7b6ed14bea12aff5"
+}

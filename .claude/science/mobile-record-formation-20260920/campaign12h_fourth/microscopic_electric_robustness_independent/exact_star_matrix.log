@@ -1,0 +1,113 @@
+{
+  "dimension": 16,
+  "sector_dimensions": {
+    "N1": "4",
+    "N3": "12",
+    "N3_P": "9",
+    "N3_W1": "3"
+  },
+  "initial": {
+    "norm_squared": "1",
+    "mean": "3*ell*epsilon**2/(3*epsilon**2 + 1)",
+    "second_moment": "3*ell**2*epsilon**2/(3*epsilon**2 + 1)",
+    "variance": "3*ell**2*epsilon**2/(3*epsilon**2 + 1)**2"
+  },
+  "H1": [
+    [
+      "3*delta/epsilon**2",
+      "-sqrt(3)*delta/epsilon**3"
+    ],
+    [
+      "-sqrt(3)*delta/epsilon**3",
+      "delta/epsilon**4 + ell"
+    ]
+  ],
+  "resolved_selected_plus": {
+    "mark": [
+      1,
+      1
+    ],
+    "intensity": "2*kappa/(3*epsilon**2 + 1)",
+    "M_mean": "2",
+    "M_variance": "2",
+    "wrong_P_compressed_variance": "2*delta**2/epsilon**4",
+    "omitted_W1_variance": "2*delta**2/epsilon**6",
+    "norm_squared": "2",
+    "mean": "2*(delta + ell*epsilon**2)/epsilon**2",
+    "second_moment": "2*(3*delta**2*epsilon**2 + delta**2 + 4*delta*ell*epsilon**4 + 2*ell**2*epsilon**6)/epsilon**6",
+    "variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"
+  },
+  "resolved_selected_minus": {
+    "mark": [
+      1,
+      -1
+    ],
+    "intensity": "2*kappa/(3*epsilon**2 + 1)",
+    "M_mean": "1",
+    "M_variance": "2",
+    "wrong_P_compressed_variance": "2*delta**2/epsilon**4",
+    "omitted_W1_variance": "delta**2/epsilon**6",
+    "norm_squared": "2",
+    "mean": "(delta + 2*ell*epsilon**2)/epsilon**2",
+    "second_moment": "(3*delta**2*epsilon**2 + delta**2 + 4*delta*ell*epsilon**4 + 4*ell**2*epsilon**6)/epsilon**6",
+    "variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"
+  },
+  "coherent_selected": {
+    "mark": 1,
+    "intensity": "4*kappa/(3*epsilon**2 + 1)",
+    "M_mean": "3/2",
+    "M_variance": "9/4",
+    "wrong_P_compressed_variance": "9*delta**2/(4*epsilon**4)",
+    "omitted_W1_variance": "3*delta**2/(2*epsilon**6)",
+    "norm_squared": "4",
+    "mean": "(3*delta + 4*ell*epsilon**2)/(2*epsilon**2)",
+    "second_moment": "(9*delta**2*epsilon**2 + 3*delta**2 + 12*delta*ell*epsilon**4 + 8*ell**2*epsilon**6)/(2*epsilon**6)",
+    "variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)"
+  },
+  "all_mark": {
+    "resolved": {
+      "initial_rate": "12*kappa/(3*epsilon**2 + 1)",
+      "initial_gain": "6*kappa*(3*delta + 4*ell*epsilon**2)/(epsilon**2*(3*epsilon**2 + 1))",
+      "initial_loss": "12*ell*kappa/(3*epsilon**2 + 1)",
+      "initial_full_energy_derivative": "6*kappa*(3*delta + 2*ell*epsilon**2)/(epsilon**2*(3*epsilon**2 + 1))",
+      "number3_energy_per_population": "3*delta/(2*epsilon**2) + 2*ell",
+      "number3_second_moment_per_population": "9*delta**2/(2*epsilon**4) + 3*delta**2/(2*epsilon**6) + 6*delta*ell/epsilon**2 + 4*ell**2",
+      "finite_time_source_identity_on_reachable_subspace": true,
+      "reachable_loss": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "4*kappa/epsilon**2"
+        ]
+      ]
+    },
+    "coherent": {
+      "initial_rate": "12*kappa/(3*epsilon**2 + 1)",
+      "initial_gain": "6*kappa*(3*delta + 4*ell*epsilon**2)/(epsilon**2*(3*epsilon**2 + 1))",
+      "initial_loss": "12*ell*kappa/(3*epsilon**2 + 1)",
+      "initial_full_energy_derivative": "6*kappa*(3*delta + 2*ell*epsilon**2)/(epsilon**2*(3*epsilon**2 + 1))",
+      "number3_energy_per_population": "3*delta/(2*epsilon**2) + 2*ell",
+      "number3_second_moment_per_population": "9*delta**2/(2*epsilon**4) + 3*delta**2/(2*epsilon**6) + 6*delta*ell/epsilon**2 + 4*ell**2",
+      "finite_time_source_identity_on_reachable_subspace": true,
+      "reachable_loss": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "4*kappa/epsilon**2"
+        ]
+      ]
+    }
+  },
+  "mutations": {
+    "incorrect_leaf_dephased_injection_mean": "(delta + 2*ell*epsilon**2)/epsilon**2",
+    "symmetric_injection_mean": "3*delta/(2*epsilon**2) + 2*ell",
+    "dephasing_changes_answer": true,
+    "incorrect_initial_eigenstate_assumption_has_nonzero_residual_for_ell_positive": true
+  }
+}

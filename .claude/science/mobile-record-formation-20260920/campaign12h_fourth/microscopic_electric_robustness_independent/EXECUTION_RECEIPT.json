@@ -1,0 +1,46 @@
+{
+  "stage": "PRE; withheld author packet not read",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "runs": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/star_local_matrix_control.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent",
+      "start_utc": "2026-09-24T01:38:55.233840+00:00",
+      "finish_utc": "2026-09-24T01:38:56.456107+00:00",
+      "wall_seconds": 1.2213149070739746,
+      "exit_code": 0,
+      "script_sha256": "1d99b207b028f191961331b0c79662f9fe13e93dc145ce53c38da00deed81254",
+      "full_log": "exact_star_matrix.log",
+      "log_sha256": "6dd526643a70d8d6ca2db51ab0135fed96016698323201c5b8cadce5837732c6"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/star_finite_time_control.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent",
+      "start_utc": "2026-09-24T01:38:56.456533+00:00",
+      "finish_utc": "2026-09-24T01:38:57.936089+00:00",
+      "wall_seconds": 1.4795730113983154,
+      "exit_code": 0,
+      "script_sha256": "d35a6437db4ead9680cb88f8f220df430f624a52d7cdf8819dadd13dd1828c4a",
+      "full_log": "finite_time_control.log",
+      "log_sha256": "ee668d3b47c0b29349dd4027cbf2f44d5a7cd2738bbc8ebff356c00674cc3ddc"
+    }
+  ],
+  "sources_revalidated": true,
+  "failed_executions": [],
+  "failed_physics_assertions": [],
+  "sensitivity_controls": [
+    "dephasing the common leaf superposition changes injected mean",
+    "lambda>0 initial state has a nonzero H-eigenstate residual and energy loss term",
+    "P-compressed output Hamiltonian misses positive epsilon^-6 variance"
+  ],
+  "numeric_role": "Full Lindblad consistency and asymptotic corroboration; analytic limit proof is separate",
+  "git_mutations": [],
+  "external_actions": [],
+  "writes_outside_owned_directory": []
+}

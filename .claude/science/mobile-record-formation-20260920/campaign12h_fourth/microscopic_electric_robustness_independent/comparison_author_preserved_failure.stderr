@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/comparison_runtime/author_preserved_failure/microscopic_electric_robustness_author/FAILED_exact_electric_star_energy.py", line 40, in <module>
+    assert s.series(poly.subs(z,zs),e,0,4).removeO()==0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

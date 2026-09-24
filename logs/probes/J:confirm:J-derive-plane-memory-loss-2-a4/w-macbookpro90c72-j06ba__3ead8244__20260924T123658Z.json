@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-plane-memory-loss-2-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j06ba",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/plane-memory-loss-2/referee_w-macbookpro90c72-j06ba/check.py",
+ "seed": 53418,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3ead8244",
+ "started_utc": "20260924T123658Z",
+ "elapsed_s": 2.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the von Mises series and the eight exact conductances. The infinite-depth limit being about 1.4 is an extrapolation, not a proof. The plane walk's return sum was not re-summed; it is a different object."
+ },
+ "review": "An independent rational solve reproduces the eight cone conductances, all above 8/5 and decreasing like 2/T^2. A site-wise twist is not o(1) through T=8. The infinite-depth limit is an extrapolation.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:plane-memory-loss-2:a4/; its files are probes/work/derive/plane-memory-loss-2/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/plane-memory-loss-2/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "f081a87be7073f001d03cdb16e3d4409a6a90045e2b2ac7bf3be02e5a582dd53",
+ "stdout_tail": "PASS entropy: kappa A(kappa) = kappa^2/3 - kappa^4/45 + O(kappa^6), so one site's small-twist cost is quadratic in the angle\nPASS cone: conductances T=1..8 are 3, 9/4, 117/59, 2595/1408, 369612/210437, 519757389/306198359, 4011089980525/2423987521503, 992844286053523947/611962959395348995; decrement*T^2 runs 3.000, 2.403, 2.240, 2.166, 2.122, 2.093, 2.071\nHIT: confirmed - the backward cone's twist conductance is exactly 3, 9/4, 117/59, 2595/1408, 369612/210437, 519757389/306198359, 4011089980525/2423987521503, 992844286053523947/611962959395348995. It decreases, every value is above 8/5, and the decrements scale like 2/T^2. A site-wise twist therefore costs a positive amount through T=8, not o(1).\nSUMMARY: confirmed the von Mises series and the eight exact conductances. The infinite-depth limit being about 1.4 is an extrapolation, not a proof. The plane walk's return sum was not re-summed; it is a different object.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j06ba",
+  "at_utc": "20260924T123707Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact rational solves reproduce the eight cone conductances, all above 8/5. The infinite-depth limit remains an extrapolation.",
+  "by": "w-macbookpro90c72-j06ba",
+  "at_utc": "20260924T123707Z"
+ }
+}

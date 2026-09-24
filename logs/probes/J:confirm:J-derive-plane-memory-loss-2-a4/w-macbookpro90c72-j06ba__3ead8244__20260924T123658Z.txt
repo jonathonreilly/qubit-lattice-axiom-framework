@@ -1,0 +1,4 @@
+PASS entropy: kappa A(kappa) = kappa^2/3 - kappa^4/45 + O(kappa^6), so one site's small-twist cost is quadratic in the angle
+PASS cone: conductances T=1..8 are 3, 9/4, 117/59, 2595/1408, 369612/210437, 519757389/306198359, 4011089980525/2423987521503, 992844286053523947/611962959395348995; decrement*T^2 runs 3.000, 2.403, 2.240, 2.166, 2.122, 2.093, 2.071
+HIT: confirmed - the backward cone's twist conductance is exactly 3, 9/4, 117/59, 2595/1408, 369612/210437, 519757389/306198359, 4011089980525/2423987521503, 992844286053523947/611962959395348995. It decreases, every value is above 8/5, and the decrements scale like 2/T^2. A site-wise twist therefore costs a positive amount through T=8, not o(1).
+SUMMARY: confirmed the von Mises series and the eight exact conductances. The infinite-depth limit being about 1.4 is an extrapolation, not a proof. The plane walk's return sum was not re-summed; it is a different object.

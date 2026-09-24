@@ -1,0 +1,87 @@
+{
+  "sealed_utc": "2026-09-24T19:55:46.109602+00:00",
+  "phase": "Released-source POST",
+  "scope": "Complete root proof/control comparison against unchanged blind PRE; source/result bindings and recorded arithmetic checked; author control not rerun; target photon contrast remains provisional; no publication or audit verdict.",
+  "preserved_PRE_seal_sha256": "34cbabad0237942680176e23a39bfdd6e9f4f34bbf56f1ff4f50b15178838f41",
+  "preserved_PRE_member_count": 13,
+  "root_author_seal_sha256": "1c43b31b63f89ba2bf246e50aa5e8dd95d93d77f0e06aafd8d394909966a9146",
+  "released_origins_rechecked_before_sealing": true,
+  "frozen_member_count": 15,
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "c276edf6749f4c03c31faf5912ee60a21f8530defe702105e186f158b587c6c3",
+      "bytes": 24757
+    },
+    {
+      "path": "POST_BINDING.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "POST_BINDING.stdout.log",
+      "sha256": "6f8f3c6ac862bfbf8b772d04959df686a5adf2b42cade0aa19c49a4c79585d7a",
+      "bytes": 5676
+    },
+    {
+      "path": "POST_BINDING_EXECUTION.json",
+      "sha256": "de98a7b16953bc68f5ce643a6d9e9cd00bd41e41f2adbc51696528dce777f02c",
+      "bytes": 617
+    },
+    {
+      "path": "POST_EVIDENCE_CHECK.json",
+      "sha256": "6f8f3c6ac862bfbf8b772d04959df686a5adf2b42cade0aa19c49a4c79585d7a",
+      "bytes": 5676
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "19888c4e48350b739733a8953cfb2a38e2d8d658468dd9c044e5f8ca44b91810",
+      "bytes": 6509
+    },
+    {
+      "path": "post-released/AUTHOR_CONTROL_SEAL.json",
+      "sha256": "1c43b31b63f89ba2bf246e50aa5e8dd95d93d77f0e06aafd8d394909966a9146",
+      "bytes": 996
+    },
+    {
+      "path": "post-released/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post-released/CONTROL.stdout.txt",
+      "sha256": "520128a1354cb2c17cd67d46f3cf641418aa981f3dfdaabcbffca5ad9fe90823",
+      "bytes": 8639
+    },
+    {
+      "path": "post-released/CONTROL_EXECUTION.json",
+      "sha256": "9931089898a357cb003510eb65658f4800086fea30aa2959f3018d046aafc50b",
+      "bytes": 199
+    },
+    {
+      "path": "post-released/FINITE_REGISTER_CONTROL_RESULTS.json",
+      "sha256": "520128a1354cb2c17cd67d46f3cf641418aa981f3dfdaabcbffca5ad9fe90823",
+      "bytes": 8639
+    },
+    {
+      "path": "post-released/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "sha256": "a04e25530ccf1dc8df8a27b41523d04703c09ff758664792a9487a8cea0ce60c",
+      "bytes": 11201
+    },
+    {
+      "path": "post-released/SOURCE_PINS.json",
+      "sha256": "0f040139e3db7d300fccf11725341d8cd05e477d308ccbb81820e2e223256928",
+      "bytes": 1704
+    },
+    {
+      "path": "post-released/finite_register_controls.py",
+      "sha256": "dc9952e2ae47f69cc9a258b72c01d009b356b6459e168e830dc045dfaca59771",
+      "bytes": 4853
+    },
+    {
+      "path": "verify_post_bindings.py",
+      "sha256": "f0408da1a4bd8f3a9f6556b071aba64bb29c1af44db4ea9ace8b305e15a3f9fa",
+      "bytes": 8187
+    }
+  ]
+}

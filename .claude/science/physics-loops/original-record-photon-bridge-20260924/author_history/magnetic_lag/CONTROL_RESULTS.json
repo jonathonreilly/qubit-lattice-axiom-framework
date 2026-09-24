@@ -1,0 +1,352 @@
+{
+  "scope": "Root finite Galerkin probes of a separate two-component rotor instrument.\n\nThis is NOT a cubic-model simulation or a certified infinite-rotor enclosure.\nIt tests the larger sufficient window with noncommuting magnetic/electric\nterms and full loss, alongside a cutoff comparison. The proof carries the\nactual original-model assertion; these probes illustrate its mechanism.\n",
+  "script_sha256": "337a224e11f31f835510ef1a7d0a7b91cae2a5a96ff7323f1fd98eee2fbd0225",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "probes": [
+    {
+      "g": 0.4,
+      "cutoff_width": 8,
+      "fourier_cutoff": 23,
+      "component_dimension": 47,
+      "initial_orbit_edge_mass": 3.909289562292055e-26,
+      "numerical_prebirth_squared_norm_defects_before_normalizing": [
+        -3.4416913763379853e-15,
+        -2.9976021664879227e-15
+      ],
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.012800000000000004,
+          "b_over_g2": 0.08000000000000002,
+          "b_over_g4": 0.5000000000000001,
+          "integrated_effect_vacuum": 0.31533953932527503,
+          "integrated_effect_packet": 0.313405467917372,
+          "contrast_over_b_g2": -0.9443708046401492,
+          "boundary_contrast_over_g2": -0.964451647150266,
+          "lag_contrast_remainder_over_b2": 0.25101053137646107,
+          "magnetic_contrast_over_b_g2": -0.9642667949153423,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.23899402739384
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.03200000000000001,
+          "b_over_g2": 0.2,
+          "b_over_g4": 1.25,
+          "integrated_effect_vacuum": 0.7748252792005257,
+          "integrated_effect_packet": 0.7701426124213011,
+          "contrast_over_b_g2": -0.9145833553172996,
+          "boundary_contrast_over_g2": -0.964451647150266,
+          "lag_contrast_remainder_over_b2": 0.24934145916483255,
+          "magnetic_contrast_over_b_g2": -0.9632976848652397,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.2388983947214687
+        }
+      ]
+    },
+    {
+      "g": 0.4,
+      "cutoff_width": 10,
+      "fourier_cutoff": 28,
+      "component_dimension": 57,
+      "initial_orbit_edge_mass": 5.350267199177974e-38,
+      "numerical_prebirth_squared_norm_defects_before_normalizing": [
+        0.0,
+        1.5543122344752192e-15
+      ],
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.012800000000000004,
+          "b_over_g2": 0.08000000000000002,
+          "b_over_g4": 0.5000000000000001,
+          "integrated_effect_vacuum": 0.31533953932527503,
+          "integrated_effect_packet": 0.31340546791737195,
+          "contrast_over_b_g2": -0.9443708046401763,
+          "boundary_contrast_over_g2": -0.9644516471502216,
+          "lag_contrast_remainder_over_b2": 0.2510105313755664,
+          "magnetic_contrast_over_b_g2": -0.9642667949153152,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.2389940273872515
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.03200000000000001,
+          "b_over_g2": 0.2,
+          "b_over_g4": 1.25,
+          "integrated_effect_vacuum": 0.7748252792005257,
+          "integrated_effect_packet": 0.7701426124213009,
+          "contrast_over_b_g2": -0.9145833553173429,
+          "boundary_contrast_over_g2": -0.9644516471502216,
+          "lag_contrast_remainder_over_b2": 0.2493414591643938,
+          "magnetic_contrast_over_b_g2": -0.9632976848652397,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.2388983947208625
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "cutoff_width": 8,
+      "fourier_cutoff": 43,
+      "component_dimension": 87,
+      "initial_orbit_edge_mass": 1.0838985023506608e-27,
+      "numerical_prebirth_squared_norm_defects_before_normalizing": [
+        -2.886579864025407e-15,
+        -2.9976021664879227e-15
+      ],
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.0016000000000000005,
+          "b_over_g2": 0.04000000000000001,
+          "b_over_g4": 1.0000000000000002,
+          "integrated_effect_vacuum": 0.03991026631577891,
+          "integrated_effect_packet": 0.039847009463318324,
+          "contrast_over_b_g2": -0.988388319696654,
+          "boundary_contrast_over_g2": -0.9910570211713041,
+          "lag_contrast_remainder_over_b2": 0.06671753686625548,
+          "magnetic_contrast_over_b_g2": -0.9910090100271984,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.029212780564063
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.008000000000000002,
+          "b_over_g2": 0.2,
+          "b_over_g4": 5.0,
+          "integrated_effect_vacuum": 0.198371837706507,
+          "integrated_effect_packet": 0.1980592427796162,
+          "contrast_over_b_g2": -0.976859146533705,
+          "boundary_contrast_over_g2": -0.9910570211713041,
+          "lag_contrast_remainder_over_b2": 0.07098937318799568,
+          "magnetic_contrast_over_b_g2": -0.9898584590487497,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.0291827897211654
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "cutoff_width": 10,
+      "fourier_cutoff": 53,
+      "component_dimension": 107,
+      "initial_orbit_edge_mass": 2.903822171609477e-42,
+      "numerical_prebirth_squared_norm_defects_before_normalizing": [
+        -8.548717289613705e-15,
+        -8.215650382226158e-15
+      ],
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.0016000000000000005,
+          "b_over_g2": 0.04000000000000001,
+          "b_over_g4": 1.0000000000000002,
+          "integrated_effect_vacuum": 0.0399102663157789,
+          "integrated_effect_packet": 0.03984700946331832,
+          "contrast_over_b_g2": -0.988388319696654,
+          "boundary_contrast_over_g2": -0.9910570211710377,
+          "lag_contrast_remainder_over_b2": 0.06671753685959568,
+          "magnetic_contrast_over_b_g2": -0.9910090100270901,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.0292127805625633
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.008000000000000002,
+          "b_over_g2": 0.2,
+          "b_over_g4": 5.0,
+          "integrated_effect_vacuum": 0.19837183770650688,
+          "integrated_effect_packet": 0.1980592427796162,
+          "contrast_over_b_g2": -0.976859146533358,
+          "boundary_contrast_over_g2": -0.9910570211710377,
+          "lag_contrast_remainder_over_b2": 0.07098937318839887,
+          "magnetic_contrast_over_b_g2": -0.9898584590487497,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.0291827897222583
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "cutoff_width": 8,
+      "fourier_cutoff": 83,
+      "component_dimension": 167,
+      "initial_orbit_edge_mass": 8.019066503543971e-28,
+      "numerical_prebirth_squared_norm_defects_before_normalizing": [
+        -1.709743457922741e-13,
+        -1.092459456231154e-13
+      ],
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.00020000000000000006,
+          "b_over_g2": 0.020000000000000004,
+          "b_over_g4": 2.0000000000000004,
+          "integrated_effect_vacuum": 0.004998090641702951,
+          "integrated_effect_packet": 0.004996095806995211,
+          "contrast_over_b_g2": -0.9974173538701901,
+          "boundary_contrast_over_g2": -0.9977609521605755,
+          "lag_contrast_remainder_over_b2": 0.01717991451927714,
+          "magnetic_contrast_over_b_g2": -0.9977488348031703,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.975378060247065
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.0020000000000000005,
+          "b_over_g2": 0.2,
+          "b_over_g4": 20.0,
+          "integrated_effect_vacuum": 0.04989121053815242,
+          "integrated_effect_packet": 0.0498713456045312,
+          "contrast_over_b_g2": -0.9932466810608216,
+          "boundary_contrast_over_g2": -0.9977609521605755,
+          "lag_contrast_remainder_over_b2": 0.022571355498769374,
+          "magnetic_contrast_over_b_g2": -0.9965510314745986,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9753697603460805
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "cutoff_width": 10,
+      "fourier_cutoff": 103,
+      "component_dimension": 207,
+      "initial_orbit_edge_mass": 3.2347199789385684e-43,
+      "numerical_prebirth_squared_norm_defects_before_normalizing": [
+        -1.63202784619898e-14,
+        -1.6764367671839864e-14
+      ],
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.00020000000000000006,
+          "b_over_g2": 0.020000000000000004,
+          "b_over_g4": 2.0000000000000004,
+          "integrated_effect_vacuum": 0.0049980906417029505,
+          "integrated_effect_packet": 0.004996095806995212,
+          "contrast_over_b_g2": -0.9974173538693228,
+          "boundary_contrast_over_g2": -0.9977609521609307,
+          "lag_contrast_remainder_over_b2": 0.017179914580401155,
+          "magnetic_contrast_over_b_g2": -0.9977488348031703,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9753780603095468
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.0020000000000000005,
+          "b_over_g2": 0.2,
+          "b_over_g4": 20.0,
+          "integrated_effect_vacuum": 0.049891210538152396,
+          "integrated_effect_packet": 0.049871345604531186,
+          "contrast_over_b_g2": -0.9932466810604746,
+          "boundary_contrast_over_g2": -0.9977609521609307,
+          "lag_contrast_remainder_over_b2": 0.022571355502280326,
+          "magnetic_contrast_over_b_g2": -0.9965510314742516,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.975369760343467
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "cutoff_width": 8,
+      "fourier_cutoff": 163,
+      "component_dimension": 327,
+      "initial_orbit_edge_mass": 6.658058337101759e-28,
+      "numerical_prebirth_squared_norm_defects_before_normalizing": [
+        1.3939960297193466e-12,
+        1.1970424651508438e-12
+      ],
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 2.5000000000000008e-05,
+          "b_over_g2": 0.010000000000000002,
+          "b_over_g4": 4.000000000000001,
+          "integrated_effect_vacuum": 0.0006249543899489123,
+          "integrated_effect_packet": 0.0006248919277334293,
+          "contrast_over_b_g2": -0.9993954477281738,
+          "boundary_contrast_over_g2": -0.9994400346798213,
+          "lag_contrast_remainder_over_b2": 0.00445869516478211,
+          "magnetic_contrast_over_b_g2": -0.9994369981509984,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9618232029590588
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.0005000000000000001,
+          "b_over_g2": 0.2,
+          "b_over_g4": 80.0,
+          "integrated_effect_vacuum": 0.012491549823972098,
+          "integrated_effect_packet": 0.012490303076829065,
+          "contrast_over_b_g2": -0.997397714426473,
+          "boundary_contrast_over_g2": -0.9994400346798213,
+          "lag_contrast_remainder_over_b2": 0.010211601266742074,
+          "magnetic_contrast_over_b_g2": -0.9982272622693906,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.961821020243447
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "cutoff_width": 10,
+      "fourier_cutoff": 203,
+      "component_dimension": 407,
+      "initial_orbit_edge_mass": 1.3063415386658592e-41,
+      "numerical_prebirth_squared_norm_defects_before_normalizing": [
+        -3.6337599595981374e-13,
+        -2.4003021792395884e-13
+      ],
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 2.5000000000000008e-05,
+          "b_over_g2": 0.010000000000000002,
+          "b_over_g4": 4.000000000000001,
+          "integrated_effect_vacuum": 0.0006249543899489124,
+          "integrated_effect_packet": 0.0006248919277334292,
+          "contrast_over_b_g2": -0.9993954477316432,
+          "boundary_contrast_over_g2": -0.9994400346926111,
+          "lag_contrast_remainder_over_b2": 0.004458696096814814,
+          "magnetic_contrast_over_b_g2": -0.9994369981562026,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9618232029818605
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.0005000000000000001,
+          "b_over_g2": 0.2,
+          "b_over_g4": 80.0,
+          "integrated_effect_vacuum": 0.012491549823972105,
+          "integrated_effect_packet": 0.012490303076829069,
+          "contrast_over_b_g2": -0.9973977144292485,
+          "boundary_contrast_over_g2": -0.9994400346926111,
+          "lag_contrast_remainder_over_b2": 0.010211601316812733,
+          "magnetic_contrast_over_b_g2": -0.998227262273554,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9618210201922404
+        }
+      ]
+    }
+  ],
+  "cutoff_comparisons": [
+    {
+      "g": 0.4,
+      "scaled_contrast_cutoff_differences": [
+        2.708944180085382e-14,
+        4.3298697960381105e-14
+      ]
+    },
+    {
+      "g": 0.2,
+      "scaled_contrast_cutoff_differences": [
+        0.0,
+        3.469446951953614e-13
+      ]
+    },
+    {
+      "g": 0.1,
+      "scaled_contrast_cutoff_differences": [
+        8.673062268371723e-13,
+        3.469446951953614e-13
+      ]
+    },
+    {
+      "g": 0.05,
+      "scaled_contrast_cutoff_differences": [
+        3.469446951953614e-12,
+        2.7755575615628914e-12
+      ]
+    }
+  ],
+  "probe_assertions_passed": true,
+  "elapsed_seconds": 0.2712200831156224
+}

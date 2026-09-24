@@ -1,0 +1,8 @@
+{
+  "sealed_utc": "2026-09-24T19:03:53.884903+00:00",
+  "status": "personal analytic candidate before independent source release",
+  "files": {
+    "SOURCE_PINS.json": "acd523005562b17239a15ba8a75b21760a6c0c183aec352a0f9f0b05b93e8956",
+    "FINITE_DURATION_TWO_RECORD_PHOTON_CONTRAST_ROOT.md": "954562baa3c57706b87c4b2e5aeecc7d7fa6c72db8b4590f3aed9f76d7ae63c5"
+  }
+}

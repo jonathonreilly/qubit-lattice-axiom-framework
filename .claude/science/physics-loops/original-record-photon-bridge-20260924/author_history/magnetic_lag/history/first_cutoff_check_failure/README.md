@@ -1,0 +1,1 @@
+The first run stopped on the cutoff-comparison assertion before writing all probe rows. Preserve this failed attempt. The diagnostic successor writes every row before asserting, so the discrepancy can be assessed without suppressing it.

@@ -1,0 +1,207 @@
+{
+  "sealed_utc": "2026-09-24T20:29:45.617493+00:00",
+  "phase": "released_source_scoped_publication_comparison",
+  "science_scope": "Section B and related introduction/evidence/limits only. No independent science coverage of Sections A/C/D or their controls.",
+  "final_note_sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+  "PRE_seal_sha256": "f306d33f15c2345fda844721d94f5d5cf3a1d6b23eca1e3d3b82a021c82fb9fa",
+  "POST_seal_sha256": "c5cef638e5ece6c1a46dda7cc5a221c9422862a582228fe2a30c47b76aa6ede4",
+  "final_live_origins_verified": 14,
+  "members": [
+    {
+      "path": "PUBLICATION_BINDING_EXECUTIONS.json",
+      "sha256": "b84b88b9959dd1e6dc920afd2bbd9ad940c17fab432fb55e7232ed20c64d27b3",
+      "bytes": 1750
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "553aef1f1956fc8198a7cae1f4aa0af26857c42ba2ce2114590f9e828600e461",
+      "bytes": 9324
+    },
+    {
+      "path": "PUBLICATION_FINAL_BINDING_REPORT.json",
+      "sha256": "de68848d3ebafa3316282eee74d535e083fba3a23503fdb23d23cb16c249f695",
+      "bytes": 17242
+    },
+    {
+      "path": "PUBLICATION_FINAL_BINDING_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_FINAL_SOURCE_BINDINGS.json",
+      "sha256": "c700b370a1c356277d74e68ff1afa7df5343961622873d3fa9ee40f508a871c1",
+      "bytes": 6530
+    },
+    {
+      "path": "PUBLICATION_FINAL_TEXT_DELTA.patch",
+      "sha256": "f53b5e2b408aa56fae675c28ed4eb382909929b4386255b15efe684e811aad23",
+      "bytes": 583
+    },
+    {
+      "path": "PUBLICATION_INITIAL_BINDING_REPORT.json",
+      "sha256": "1761927d3f6ccfcf3ac418bf15d8f07a324c790261217c7e4969474b245db4f5",
+      "bytes": 4350
+    },
+    {
+      "path": "PUBLICATION_INITIAL_BINDING_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_SECTION_B_DIFF.patch",
+      "sha256": "209117ea9599ac2fdab917cd424bb521ac8a932b690d1bc8ca5c2623c744bd30",
+      "bytes": 2905
+    },
+    {
+      "path": "PUBLICATION_SOURCE_BINDINGS.json",
+      "sha256": "b29da6bd9cbbfddfc97be644c1493818e73b90e08e4a87a3c6c1401fc388b192",
+      "bytes": 6135
+    },
+    {
+      "path": "publication_binding_check.py",
+      "sha256": "45b3c27c5d2a8761c80446ad023ca0d6fbce4b5277d1c32fea12666dee98d11f",
+      "bytes": 9878
+    },
+    {
+      "path": "publication_final_sources/external/ORIGINAL_RECORD_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "b6a510a5e75c5736a5844855f0804c1a9e18e28580420be72e5dcda92686fc90",
+      "bytes": 5312
+    },
+    {
+      "path": "publication_final_sources/external/ORIGINAL_RECORD_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "2c2733e8f6c056fd47d10b5c0b398c5099229d90d3691a98ab04a6b189f80b9c",
+      "bytes": 80324
+    },
+    {
+      "path": "publication_final_sources/external/ORIGINAL_RECORD_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "dcd91f408714192ac8c0441d46af1912521befb193d0b9a6e9ca4fe618132ebc",
+      "bytes": 1404
+    },
+    {
+      "path": "publication_final_sources/external/ORIGINAL_RECORD_PUBLICATION_RERUN_DELTA.json",
+      "sha256": "0c5722ed35df1bd500447b6a6909ceebb4c844fe4171f2cfbc405eee788fd1a0",
+      "bytes": 3878
+    },
+    {
+      "path": "publication_final_sources/publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "publication_final_sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "publication_final_sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "publication_final_sources/publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966
+    },
+    {
+      "path": "publication_final_sources/publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "path": "publication_final_sources/publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "publication_final_sources/publication/logs/runner-cache/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.txt",
+      "sha256": "05c4b5d6743da918e274b41ae715575eb5cea8f09053a55d518b452d65e63379",
+      "bytes": 74599
+    },
+    {
+      "path": "publication_final_sources/publication/outputs/original_record_photon_bridge_20260924/ORIGINAL_RECORD_PHOTON_BRIDGE_RESULTS.json",
+      "sha256": "55fabdd9280bbcbc09381311fbaaa192004b8af0814a0d1b431d34391ae053de",
+      "bytes": 74195
+    },
+    {
+      "path": "publication_final_sources/publication/scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py",
+      "sha256": "b4d9134e8798694590daeedec9e0d7d04cbf734c2570f3db4ecaeb28de90383f",
+      "bytes": 19033
+    },
+    {
+      "path": "publication_final_sources/publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "publication_sources/external/ORIGINAL_RECORD_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "cc4329fdd89b878f83e81ede04d78f4787406d8afdcc3d2d29018e3b376c4c98",
+      "bytes": 941
+    },
+    {
+      "path": "publication_sources/external/ORIGINAL_RECORD_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "b5230016905c9d20225246ecaf3ba3910676fdc88908488a2ee5ea31c449070c",
+      "bytes": 80226
+    },
+    {
+      "path": "publication_sources/external/ORIGINAL_RECORD_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "7739a23419561c7879cd4c67a83fd1f445c85d1e17ecee1bceee563da308eb1c",
+      "bytes": 1404
+    },
+    {
+      "path": "publication_sources/publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "publication_sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "publication_sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "publication_sources/publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "e905c2e11d3641e73079ab06fe0a86398eadbdfcf95654679e7b262b57133198",
+      "bytes": 39941
+    },
+    {
+      "path": "publication_sources/publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "path": "publication_sources/publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "publication_sources/publication/logs/runner-cache/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.txt",
+      "sha256": "c36fe6416910c0b693ab9448fb66ab69f03e18fbbac26e0a32bae317248d3b6c",
+      "bytes": 74607
+    },
+    {
+      "path": "publication_sources/publication/outputs/original_record_photon_bridge_20260924/ORIGINAL_RECORD_PHOTON_BRIDGE_RESULTS.json",
+      "sha256": "c2039ff13d817a249f5c4d3b00b646f29e5cc2e55b122cd126402e0a2b876609",
+      "bytes": 74203
+    },
+    {
+      "path": "publication_sources/publication/scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py",
+      "sha256": "b4d9134e8798694590daeedec9e0d7d04cbf734c2570f3db4ecaeb28de90383f",
+      "bytes": 19033
+    },
+    {
+      "path": "publication_sources/publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    }
+  ],
+  "disposition": "No outstanding material discrepancy within scope; local time-scale wording corrected by root and fresh source-bound cache verified. Seventeen numerical variations preserved and checked.",
+  "new_primary_or_author_executions": 0,
+  "read_only_binding_verifier_executions": 2,
+  "publication_or_audit_mutations_by_checker": false,
+  "delegation": false,
+  "read_only_policy": "All new comparison members and this seal chmod 0444; PRE/POST unchanged."
+}

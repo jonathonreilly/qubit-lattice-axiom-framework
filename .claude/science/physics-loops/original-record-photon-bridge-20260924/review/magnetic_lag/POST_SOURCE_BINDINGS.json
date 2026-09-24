@@ -1,0 +1,167 @@
+{
+  "scope": "Released magnetic-lag author packet; all seal members copied and hash-verified. PRE remains immutable; no author code executed.",
+  "author_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/CONTROL_EXECUTION.json",
+      "snapshot": "post_sources/CONTROL_EXECUTION.json",
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "1d5b1303e683d3c7414a96019bc47cf3c74e8a3f29aec4e7b5cc9e26df8f2692",
+      "bytes": 576
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/CONTROL_RESULTS.json",
+      "snapshot": "post_sources/CONTROL_RESULTS.json",
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "1b4c5bfe387784164c8f1f743556fabb99de9cd17714df347ad7c7a5d5109277",
+      "bytes": 13511
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/CONTROL_STDERR.log",
+      "snapshot": "post_sources/CONTROL_STDERR.log",
+      "path": "CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/CONTROL_STDOUT.log",
+      "snapshot": "post_sources/CONTROL_STDOUT.log",
+      "path": "CONTROL_STDOUT.log",
+      "sha256": "1b4c5bfe387784164c8f1f743556fabb99de9cd17714df347ad7c7a5d5109277",
+      "bytes": 13511
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/DIAGNOSTIC_STDERR.log",
+      "snapshot": "post_sources/DIAGNOSTIC_STDERR.log",
+      "path": "DIAGNOSTIC_STDERR.log",
+      "sha256": "540acfd3bcf4e8181b2b5ae828310c8997bac3c77e7d9b794d5f29b02430bd12",
+      "bytes": 540
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/DIAGNOSTIC_STDOUT.log",
+      "snapshot": "post_sources/DIAGNOSTIC_STDOUT.log",
+      "path": "DIAGNOSTIC_STDOUT.log",
+      "sha256": "ea9c77a4caf940139ef43a19372f94d0049b97058576348a079f703b1a8aa814",
+      "bytes": 12410
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "snapshot": "post_sources/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "path": "MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "sha256": "08d178740c897d007a45fea09cde258706bdb5f9ee3756291f20f9af4911662d",
+      "bytes": 9955
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/NORM_DRIFT_DIAGNOSTIC.json",
+      "snapshot": "post_sources/NORM_DRIFT_DIAGNOSTIC.json",
+      "path": "NORM_DRIFT_DIAGNOSTIC.json",
+      "sha256": "b9d696b40130e93d40e97723d62c4389b22b5d47f6e08d06fa862503bc9e5a9e",
+      "bytes": 354
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/ROOT_VERIFICATION.md",
+      "snapshot": "post_sources/ROOT_VERIFICATION.md",
+      "path": "ROOT_VERIFICATION.md",
+      "sha256": "3cbe09b9bc021a7ae72eaee692d0dce5ebf8ecd2aa10aa823eefe3bf1024f5fc",
+      "bytes": 595
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/SOURCE_PINS.json",
+      "snapshot": "post_sources/SOURCE_PINS.json",
+      "path": "SOURCE_PINS.json",
+      "sha256": "f7adbd1b73021a205f72ccef47f963bd407f2e34ff460e7eede68ebf7129d31b",
+      "bytes": 2256
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/CONTROL_RESULTS.json",
+      "snapshot": "post_sources/history/diagnostic_before_normalization/CONTROL_RESULTS.json",
+      "path": "history/diagnostic_before_normalization/CONTROL_RESULTS.json",
+      "sha256": "ea9c77a4caf940139ef43a19372f94d0049b97058576348a079f703b1a8aa814",
+      "bytes": 12410
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/DIAGNOSTIC_STDERR.log",
+      "snapshot": "post_sources/history/diagnostic_before_normalization/DIAGNOSTIC_STDERR.log",
+      "path": "history/diagnostic_before_normalization/DIAGNOSTIC_STDERR.log",
+      "sha256": "540acfd3bcf4e8181b2b5ae828310c8997bac3c77e7d9b794d5f29b02430bd12",
+      "bytes": 540
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/DIAGNOSTIC_STDOUT.log",
+      "snapshot": "post_sources/history/diagnostic_before_normalization/DIAGNOSTIC_STDOUT.log",
+      "path": "history/diagnostic_before_normalization/DIAGNOSTIC_STDOUT.log",
+      "sha256": "ea9c77a4caf940139ef43a19372f94d0049b97058576348a079f703b1a8aa814",
+      "bytes": 12410
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/NORM_DRIFT_DIAGNOSTIC.json",
+      "snapshot": "post_sources/history/diagnostic_before_normalization/NORM_DRIFT_DIAGNOSTIC.json",
+      "path": "history/diagnostic_before_normalization/NORM_DRIFT_DIAGNOSTIC.json",
+      "sha256": "b9d696b40130e93d40e97723d62c4389b22b5d47f6e08d06fa862503bc9e5a9e",
+      "bytes": 354
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/README.md",
+      "snapshot": "post_sources/history/diagnostic_before_normalization/README.md",
+      "path": "history/diagnostic_before_normalization/README.md",
+      "sha256": "e72000e9ca09d57e4b2bc1463d54b7a934c16833fd2228b880db6c7167a636ba",
+      "bytes": 655
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/magnetic_lag_controls.py",
+      "snapshot": "post_sources/history/diagnostic_before_normalization/magnetic_lag_controls.py",
+      "path": "history/diagnostic_before_normalization/magnetic_lag_controls.py",
+      "sha256": "9c05ce13094ae91e3eb6751118e64eb56bbe96cba757d5002c866f0f898a50a6",
+      "bytes": 4914
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/CONTROL_EXECUTION.json",
+      "snapshot": "post_sources/history/first_cutoff_check_failure/CONTROL_EXECUTION.json",
+      "path": "history/first_cutoff_check_failure/CONTROL_EXECUTION.json",
+      "sha256": "7064b8384ec1c1b8db2612571309207243b0e2f9d7dc8eacd3a95271d25da8b2",
+      "bytes": 576
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/CONTROL_STDERR.log",
+      "snapshot": "post_sources/history/first_cutoff_check_failure/CONTROL_STDERR.log",
+      "path": "history/first_cutoff_check_failure/CONTROL_STDERR.log",
+      "sha256": "88d73c55962427ff4f8ac544d4347eeeccc98e8e6622e14a89867c6d8c4a8990",
+      "bytes": 419
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/CONTROL_STDOUT.log",
+      "snapshot": "post_sources/history/first_cutoff_check_failure/CONTROL_STDOUT.log",
+      "path": "history/first_cutoff_check_failure/CONTROL_STDOUT.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/README.md",
+      "snapshot": "post_sources/history/first_cutoff_check_failure/README.md",
+      "path": "history/first_cutoff_check_failure/README.md",
+      "sha256": "7caa3d3f83046595486f0881147843d068eccae7d945d4cd871aca3647964a3b",
+      "bytes": 237
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/magnetic_lag_controls.py",
+      "snapshot": "post_sources/history/first_cutoff_check_failure/magnetic_lag_controls.py",
+      "path": "history/first_cutoff_check_failure/magnetic_lag_controls.py",
+      "sha256": "d153a95ff5063c04e44702c2fe0f605141f8687498a77984f81a598373db72b9",
+      "bytes": 4856
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/magnetic_lag_controls.py",
+      "snapshot": "post_sources/magnetic_lag_controls.py",
+      "path": "magnetic_lag_controls.py",
+      "sha256": "337a224e11f31f835510ef1a7d0a7b91cae2a5a96ff7323f1fd98eee2fbd0225",
+      "bytes": 5264
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/AUTHOR_CONTROL_SEAL.json",
+      "snapshot": "post_sources/AUTHOR_CONTROL_SEAL.json",
+      "path": "AUTHOR_CONTROL_SEAL.json",
+      "sha256": "3ef405f206ea3578c18c0026061e2f10c4e7ca08362128f74e6db4a8d6cc8374",
+      "bytes": 4117
+    }
+  ],
+  "preserved_PRE_seal_sha256": "f306d33f15c2345fda844721d94f5d5cf3a1d6b23eca1e3d3b82a021c82fb9fa"
+}

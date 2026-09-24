@@ -1,0 +1,320 @@
+{
+  "scope": "Root finite Galerkin probes of a separate two-component rotor instrument.\n\nThis is NOT a cubic-model simulation or a certified infinite-rotor enclosure.\nIt tests the larger sufficient window with noncommuting magnetic/electric\nterms and full loss, alongside a cutoff comparison. The proof carries the\nactual original-model assertion; these probes illustrate its mechanism.\n",
+  "script_sha256": "9c05ce13094ae91e3eb6751118e64eb56bbe96cba757d5002c866f0f898a50a6",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "probes": [
+    {
+      "g": 0.4,
+      "cutoff_width": 8,
+      "fourier_cutoff": 23,
+      "component_dimension": 47,
+      "initial_orbit_edge_mass": 3.909289562292042e-26,
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.012800000000000004,
+          "b_over_g2": 0.08000000000000002,
+          "b_over_g4": 0.5000000000000001,
+          "integrated_effect_vacuum": 0.31533953932527387,
+          "integrated_effect_packet": 0.31340546791737095,
+          "contrast_over_b_g2": -0.944370804640095,
+          "boundary_contrast_over_g2": -0.9644516471501772,
+          "lag_contrast_remainder_over_b2": 0.25101053137602963,
+          "magnetic_contrast_over_b_g2": -0.9642667949153152,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.2389940273938427
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.03200000000000001,
+          "b_over_g2": 0.2,
+          "b_over_g4": 1.25,
+          "integrated_effect_vacuum": 0.7748252792005231,
+          "integrated_effect_packet": 0.7701426124212987,
+          "contrast_over_b_g2": -0.9145833553172779,
+          "boundary_contrast_over_g2": -0.9644516471501772,
+          "lag_contrast_remainder_over_b2": 0.24934145916449627,
+          "magnetic_contrast_over_b_g2": -0.9632976848652397,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.2388983947214687
+        }
+      ]
+    },
+    {
+      "g": 0.4,
+      "cutoff_width": 10,
+      "fourier_cutoff": 28,
+      "component_dimension": 57,
+      "initial_orbit_edge_mass": 5.35026719917798e-38,
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.012800000000000004,
+          "b_over_g2": 0.08000000000000002,
+          "b_over_g4": 0.5000000000000001,
+          "integrated_effect_vacuum": 0.31533953932527503,
+          "integrated_effect_packet": 0.3134054679173724,
+          "contrast_over_b_g2": -0.9443708046399595,
+          "boundary_contrast_over_g2": -0.9644516471499995,
+          "lag_contrast_remainder_over_b2": 0.2510105313755029,
+          "magnetic_contrast_over_b_g2": -0.9642667949151525,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.2389940273872515
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.03200000000000001,
+          "b_over_g2": 0.2,
+          "b_over_g4": 1.25,
+          "integrated_effect_vacuum": 0.7748252792005257,
+          "integrated_effect_packet": 0.7701426124213022,
+          "contrast_over_b_g2": -0.9145833553170827,
+          "boundary_contrast_over_g2": -0.9644516471499995,
+          "lag_contrast_remainder_over_b2": 0.24934145916458436,
+          "magnetic_contrast_over_b_g2": -0.9632976848650663,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.238898394720854
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "cutoff_width": 8,
+      "fourier_cutoff": 43,
+      "component_dimension": 87,
+      "initial_orbit_edge_mass": 1.0838985023506574e-27,
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.0016000000000000005,
+          "b_over_g2": 0.04000000000000001,
+          "b_over_g4": 1.0000000000000002,
+          "integrated_effect_vacuum": 0.039910266315778785,
+          "integrated_effect_packet": 0.0398470094633182,
+          "contrast_over_b_g2": -0.988388319696654,
+          "boundary_contrast_over_g2": -0.9910570211713929,
+          "lag_contrast_remainder_over_b2": 0.06671753686847894,
+          "magnetic_contrast_over_b_g2": -0.9910090100273069,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.029212780564063
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.008000000000000002,
+          "b_over_g2": 0.2,
+          "b_over_g4": 5.0,
+          "integrated_effect_vacuum": 0.19837183770650635,
+          "integrated_effect_packet": 0.1980592427796156,
+          "contrast_over_b_g2": -0.9768591465336183,
+          "boundary_contrast_over_g2": -0.9910570211713929,
+          "lag_contrast_remainder_over_b2": 0.07098937318887406,
+          "magnetic_contrast_over_b_g2": -0.9898584590490966,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.029182789721148
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "cutoff_width": 10,
+      "fourier_cutoff": 53,
+      "component_dimension": 107,
+      "initial_orbit_edge_mass": 2.903822171609454e-42,
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.0016000000000000005,
+          "b_over_g2": 0.04000000000000001,
+          "b_over_g4": 1.0000000000000002,
+          "integrated_effect_vacuum": 0.03991026631577857,
+          "integrated_effect_packet": 0.039847009463318,
+          "contrast_over_b_g2": -0.9883883196964371,
+          "boundary_contrast_over_g2": -0.99105702117086,
+          "lag_contrast_remainder_over_b2": 0.06671753686057506,
+          "magnetic_contrast_over_b_g2": -0.9910090100268732,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.0292127805625633
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.008000000000000002,
+          "b_over_g2": 0.2,
+          "b_over_g4": 5.0,
+          "integrated_effect_vacuum": 0.19837183770650527,
+          "integrated_effect_packet": 0.19805924277961454,
+          "contrast_over_b_g2": -0.9768591465335315,
+          "boundary_contrast_over_g2": -0.99105702117086,
+          "lag_contrast_remainder_over_b2": 0.07098937318664297,
+          "magnetic_contrast_over_b_g2": -0.9898584590484028,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 3.0291827897222947
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "cutoff_width": 8,
+      "fourier_cutoff": 83,
+      "component_dimension": 167,
+      "initial_orbit_edge_mass": 8.019066503543087e-28,
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.00020000000000000006,
+          "b_over_g2": 0.020000000000000004,
+          "b_over_g4": 2.0000000000000004,
+          "integrated_effect_vacuum": 0.004998090641702094,
+          "integrated_effect_packet": 0.004996095806994664,
+          "contrast_over_b_g2": -0.9974173537153661,
+          "boundary_contrast_over_g2": -0.997760952006743,
+          "lag_contrast_remainder_over_b2": 0.017179914568849746,
+          "magnetic_contrast_over_b_g2": -0.9977488346496474,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.975378060247196
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.0020000000000000005,
+          "b_over_g2": 0.2,
+          "b_over_g4": 20.0,
+          "integrated_effect_vacuum": 0.04989121053814385,
+          "integrated_effect_packet": 0.049871345604525726,
+          "contrast_over_b_g2": -0.9932466809060843,
+          "boundary_contrast_over_g2": -0.997760952006743,
+          "lag_contrast_remainder_over_b2": 0.022571355503293377,
+          "magnetic_contrast_over_b_g2": -0.9965510313205551,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9753697603437286
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "cutoff_width": 10,
+      "fourier_cutoff": 103,
+      "component_dimension": 207,
+      "initial_orbit_edge_mass": 3.2347199789385142e-43,
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 0.00020000000000000006,
+          "b_over_g2": 0.020000000000000004,
+          "b_over_g4": 2.0000000000000004,
+          "integrated_effect_vacuum": 0.004998090641702868,
+          "integrated_effect_packet": 0.004996095806995127,
+          "contrast_over_b_g2": -0.9974173538706238,
+          "boundary_contrast_over_g2": -0.9977609521623518,
+          "lag_contrast_remainder_over_b2": 0.017179914586404502,
+          "magnetic_contrast_over_b_g2": -0.9977488348044714,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9753780603066367
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.0020000000000000005,
+          "b_over_g2": 0.2,
+          "b_over_g4": 20.0,
+          "integrated_effect_vacuum": 0.04989121053815159,
+          "integrated_effect_packet": 0.04987134560453036,
+          "contrast_over_b_g2": -0.9932466810615155,
+          "boundary_contrast_over_g2": -0.9977609521623518,
+          "lag_contrast_remainder_over_b2": 0.022571355504181916,
+          "magnetic_contrast_over_b_g2": -0.9965510314752924,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.975369760342293
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "cutoff_width": 8,
+      "fourier_cutoff": 163,
+      "component_dimension": 327,
+      "initial_orbit_edge_mass": 6.658058337109738e-28,
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 2.5000000000000008e-05,
+          "b_over_g2": 0.010000000000000002,
+          "b_over_g4": 4.000000000000001,
+          "integrated_effect_vacuum": 0.0006249543899497833,
+          "integrated_effect_packet": 0.0006248919277341773,
+          "contrast_over_b_g2": -0.9993954496970849,
+          "boundary_contrast_over_g2": -0.9994400366593934,
+          "lag_contrast_remainder_over_b2": 0.004458696230857777,
+          "magnetic_contrast_over_b_g2": -0.9994370001303179,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9618232031125697
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.0005000000000000001,
+          "b_over_g2": 0.2,
+          "b_over_g4": 80.0,
+          "integrated_effect_vacuum": 0.012491549823989508,
+          "integrated_effect_packet": 0.012490303076844015,
+          "contrast_over_b_g2": -0.9973977163943433,
+          "boundary_contrast_over_g2": -0.9994400366593934,
+          "lag_contrast_remainder_over_b2": 0.010211601325250876,
+          "magnetic_contrast_over_b_g2": -0.998227264242812,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9618210202625854
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "cutoff_width": 10,
+      "fourier_cutoff": 203,
+      "component_dimension": 407,
+      "initial_orbit_edge_mass": 6.559493966510232e-41,
+      "rows": [
+        {
+          "family": "b_0.2_g3",
+          "b": 2.5000000000000008e-05,
+          "b_over_g2": 0.010000000000000002,
+          "b_over_g4": 4.000000000000001,
+          "integrated_effect_vacuum": 0.0006249543899496775,
+          "integrated_effect_packet": 0.0006248919277343527,
+          "contrast_over_b_g2": -0.9993954451972122,
+          "boundary_contrast_over_g2": -0.9994400321659211,
+          "lag_contrast_remainder_over_b2": 0.004458696870918224,
+          "magnetic_contrast_over_b_g2": -0.999436995625241,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.9618232028845095
+        },
+        {
+          "family": "b_0.2_g2",
+          "b": 0.0005000000000000001,
+          "b_over_g2": 0.2,
+          "b_over_g4": 80.0,
+          "integrated_effect_vacuum": 0.012491549823987397,
+          "integrated_effect_packet": 0.012490303076847523,
+          "contrast_over_b_g2": -0.9973977118993278,
+          "boundary_contrast_over_g2": -0.9994400321659211,
+          "lag_contrast_remainder_over_b2": 0.010211601332966497,
+          "magnetic_contrast_over_b_g2": -0.9982272597422455,
+          "maximum_sampled_full_minus_magnetic_norm_over_u": 2.961821020216194
+        }
+      ]
+    }
+  ],
+  "cutoff_comparisons": [
+    {
+      "g": 0.4,
+      "scaled_contrast_cutoff_differences": [
+        1.3555823130673161e-13,
+        1.9517720772910252e-13
+      ]
+    },
+    {
+      "g": 0.2,
+      "scaled_contrast_cutoff_differences": [
+        2.1682655670929307e-13,
+        8.681944052568724e-14
+      ]
+    },
+    {
+      "g": 0.1,
+      "scaled_contrast_cutoff_differences": [
+        1.55257695588773e-10,
+        1.5543122344752192e-10
+      ]
+    },
+    {
+      "g": 0.05,
+      "scaled_contrast_cutoff_differences": [
+        4.499872696683838e-09,
+        4.4950154709511025e-09
+      ]
+    }
+  ],
+  "probe_assertions_passed": true,
+  "elapsed_seconds": 0.26549437502399087
+}

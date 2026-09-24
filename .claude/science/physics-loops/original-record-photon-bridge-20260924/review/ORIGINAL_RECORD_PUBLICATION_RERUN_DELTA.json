@@ -1,0 +1,107 @@
+{
+  "reason": "Declared note input corrected: tau_* is fixed; tau_* g^2 is the shrinking lag scale.",
+  "changes": [
+    {
+      "path": "/separate_two_component_rotor/probes/7/initial_orbit_edge_mass",
+      "old": 1.3063415386658592e-41,
+      "new": 6.559493966500577e-41,
+      "difference": 5.253152427834717e-41
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/numerical_prebirth_squared_norm_defects_before_normalizing/0",
+      "old": -3.6337599595981374e-13,
+      "new": 1.2241319069516976e-12,
+      "difference": 1.5875079029115113e-12
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/numerical_prebirth_squared_norm_defects_before_normalizing/1",
+      "old": -2.4003021792395884e-13,
+      "new": 1.4777068457760834e-12,
+      "difference": 1.7177370637000422e-12
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/0/integrated_effect_vacuum",
+      "old": 0.0006249543899489124,
+      "new": 0.0006249543899489125,
+      "difference": 1.0842021724855044e-19
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/0/integrated_effect_packet",
+      "old": 0.0006248919277334292,
+      "new": 0.0006248919277334291,
+      "difference": -1.0842021724855044e-19
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/0/contrast_over_b_g2",
+      "old": -0.9993954477316432,
+      "new": -0.9993954477351127,
+      "difference": -3.469446951953614e-12
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/0/boundary_contrast_over_g2",
+      "old": -0.9994400346926111,
+      "new": -0.999440034706822,
+      "difference": -1.4210854715202004e-11
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/0/lag_contrast_remainder_over_b2",
+      "old": 0.004458696096814814,
+      "new": 0.00445869717095847,
+      "difference": 1.074143655965809e-09
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/0/magnetic_contrast_over_b_g2",
+      "old": -0.9994369981562026,
+      "new": -0.999436998159672,
+      "difference": -3.469446951953614e-12
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/0/maximum_sampled_full_minus_magnetic_norm_over_u",
+      "old": 2.9618232029818605,
+      "new": 2.9618232030134717,
+      "difference": 3.161115813554716e-11
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/1/integrated_effect_vacuum",
+      "old": 0.012491549823972105,
+      "new": 0.012491549823972109,
+      "difference": 3.469446951953614e-18
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/1/integrated_effect_packet",
+      "old": 0.012490303076829069,
+      "new": 0.012490303076829072,
+      "difference": 3.469446951953614e-18
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/1/boundary_contrast_over_g2",
+      "old": -0.9994400346926111,
+      "new": -0.999440034706822,
+      "difference": -1.4210854715202004e-11
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/1/lag_contrast_remainder_over_b2",
+      "old": 0.010211601316812733,
+      "new": 0.010211601387866939,
+      "difference": 7.105420592179446e-11
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/1/magnetic_contrast_over_b_g2",
+      "old": -0.998227262273554,
+      "new": -0.9982272622791051,
+      "difference": -5.551115123125783e-12
+    },
+    {
+      "path": "/separate_two_component_rotor/probes/7/rows/1/maximum_sampled_full_minus_magnetic_norm_over_u",
+      "old": 2.9618210201922404,
+      "new": 2.9618210201946935,
+      "difference": 2.453148795211746e-12
+    },
+    {
+      "path": "/separate_two_component_rotor/cutoff_comparisons/3/scaled_contrast_cutoff_differences/0",
+      "old": 3.469446951953614e-12,
+      "new": 6.938893903907228e-12,
+      "difference": 3.469446951953614e-12
+    }
+  ]
+}

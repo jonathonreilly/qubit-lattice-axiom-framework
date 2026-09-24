@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-24T19:44:09.141793+00:00",
+  "elapsed_wall_seconds": 0.9095833750907332,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/magnetic_lag_controls.py"
+  ],
+  "exit_code": 0,
+  "script_sha256": "337a224e11f31f835510ef1a7d0a7b91cae2a5a96ff7323f1fd98eee2fbd0225",
+  "stdout_sha256": "1b4c5bfe387784164c8f1f743556fabb99de9cd17714df347ad7c7a5d5109277",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

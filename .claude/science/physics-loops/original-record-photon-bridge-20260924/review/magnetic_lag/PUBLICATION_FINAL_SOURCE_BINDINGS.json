@@ -1,0 +1,93 @@
+{
+  "captured_utc": "2026-09-24T20:25:58.941892+00:00",
+  "scope": "Final corrected note and genuinely fresh primary cache; comparison limited to Section B science and complete output mechanics.",
+  "base_revision": "117189ba595d3b62bfcd38a5891c75b87cc355b6",
+  "origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_final_sources/publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_final_sources/publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_final_sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_final_sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_final_sources/publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_final_sources/publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py",
+      "snapshot": "publication_final_sources/publication/scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py",
+      "sha256": "b4d9134e8798694590daeedec9e0d7d04cbf734c2570f3db4ecaeb28de90383f",
+      "bytes": 19033
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/outputs/original_record_photon_bridge_20260924/ORIGINAL_RECORD_PHOTON_BRIDGE_RESULTS.json",
+      "snapshot": "publication_final_sources/publication/outputs/original_record_photon_bridge_20260924/ORIGINAL_RECORD_PHOTON_BRIDGE_RESULTS.json",
+      "sha256": "55fabdd9280bbcbc09381311fbaaa192004b8af0814a0d1b431d34391ae053de",
+      "bytes": 74195
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/logs/runner-cache/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.txt",
+      "snapshot": "publication_final_sources/publication/logs/runner-cache/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.txt",
+      "sha256": "05c4b5d6743da918e274b41ae715575eb5cea8f09053a55d518b452d65e63379",
+      "bytes": 74599
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "publication_final_sources/external/ORIGINAL_RECORD_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "dcd91f408714192ac8c0441d46af1912521befb193d0b9a6e9ca4fe618132ebc",
+      "bytes": 1404
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "publication_final_sources/external/ORIGINAL_RECORD_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "2c2733e8f6c056fd47d10b5c0b398c5099229d90d3691a98ab04a6b189f80b9c",
+      "bytes": 80324
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PRIMARY_ROOT_VERIFICATION.json",
+      "snapshot": "publication_final_sources/external/ORIGINAL_RECORD_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "b6a510a5e75c5736a5844855f0804c1a9e18e28580420be72e5dcda92686fc90",
+      "bytes": 5312
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PUBLICATION_RERUN_DELTA.json",
+      "snapshot": "publication_final_sources/external/ORIGINAL_RECORD_PUBLICATION_RERUN_DELTA.json",
+      "sha256": "0c5722ed35df1bd500447b6a6909ceebb4c844fe4171f2cfbc405eee788fd1a0",
+      "bytes": 3878
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/scripts/runner_cache.py",
+      "snapshot": "publication_final_sources/publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    }
+  ],
+  "PRE_seal_sha256": "f306d33f15c2345fda844721d94f5d5cf3a1d6b23eca1e3d3b82a021c82fb9fa",
+  "POST_seal_sha256": "c5cef638e5ece6c1a46dda7cc5a221c9422862a582228fe2a30c47b76aa6ede4"
+}

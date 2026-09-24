@@ -1,0 +1,39 @@
+{
+  "sealed_utc": "2026-09-24T19:36:37.952460+00:00",
+  "phase": "released_source_POST",
+  "verdict": "No material discrepancy or required correction found within the conditional rotor scope. The coarser author graph bound suffices. Provisional readout premises and microscopic labeled-process bridge remain conditional.",
+  "preserved_pre_seal_sha256": "7df82180e073ab40cb2228e15fd2e2ff43c731b90e8a690388598389c58d589f",
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "326963d63fe778e3e12b5e7b0d8b004699364c6c06b428c17b82e762e09eb051",
+      "bytes": 10786
+    },
+    {
+      "path": "POST_SOURCE_BINDINGS.json",
+      "sha256": "cc0636d95dc54f075071a58d9792de32bd0bd1b78a2e68f5dbb82c98a5119efd",
+      "bytes": 1626
+    },
+    {
+      "path": "POST_VERIFICATION_REPORT.json",
+      "sha256": "538981e218417bc38710053f555490b3d82c159b6fbb1034a3c85d9412ae44a7",
+      "bytes": 6434
+    },
+    {
+      "path": "post_sources/AUTHOR_SEAL.json",
+      "sha256": "8b91c66038d2e7b1fc28d48ad150076293351985057fcd4014153e8abd79a6c1",
+      "bytes": 367
+    },
+    {
+      "path": "post_sources/FINITE_DURATION_TWO_RECORD_PHOTON_CONTRAST_ROOT.md",
+      "sha256": "954562baa3c57706b87c4b2e5aeecc7d7fa6c72db8b4590f3aed9f76d7ae63c5",
+      "bytes": 8398
+    },
+    {
+      "path": "post_sources/SOURCE_PINS.json",
+      "sha256": "acd523005562b17239a15ba8a75b21760a6c0c183aec352a0f9f0b05b93e8956",
+      "bytes": 2016
+    }
+  ],
+  "independence_scope": "Comparison to preserved blind PRE, not a new blind derivation. Stronger integration-by-parts and finite-register statements remain PRE-attributed. No numerical rerun or other active packet read."
+}

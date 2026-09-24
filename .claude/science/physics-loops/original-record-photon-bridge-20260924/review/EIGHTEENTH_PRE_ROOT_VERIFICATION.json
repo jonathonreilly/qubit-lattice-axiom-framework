@@ -1,0 +1,97 @@
+{
+  "utc": "2026-09-24T20:04:51.903905+00:00",
+  "members": [
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "matches": true
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "matches": true
+    },
+    {
+      "path": "CONTROL_STDERR.log",
+      "matches": true
+    },
+    {
+      "path": "CONTROL_STDOUT.log",
+      "matches": true
+    },
+    {
+      "path": "PRE.md",
+      "matches": true
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "matches": true
+    },
+    {
+      "path": "VERIFICATION_REPORT.json",
+      "matches": true
+    },
+    {
+      "path": "magnetic_lag_controls.py",
+      "matches": true
+    },
+    {
+      "path": "sources/FINITE_BIN_PRIOR_PRE.md",
+      "matches": true
+    },
+    {
+      "path": "sources/FINITE_BIN_PRIOR_PRE_SEAL.json",
+      "matches": true
+    },
+    {
+      "path": "sources/FINITE_BIN_PRIOR_SOURCE_PINS.json",
+      "matches": true
+    },
+    {
+      "path": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "matches": true
+    },
+    {
+      "path": "sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    }
+  ],
+  "origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/PRE.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/PRE_SEAL.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/SOURCE_PINS.json",
+      "matches": true
+    }
+  ],
+  "all_ok": true,
+  "PRE_and_code_read_complete": true
+}

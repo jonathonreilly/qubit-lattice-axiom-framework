@@ -1,0 +1,586 @@
+{
+  "scope": "Independent small analytic-machinery controls, not original-cube controls.",
+  "limits": [
+    "No verification of the imported 23 I + W + W* effect or boundary contrast.",
+    "No infinite-domain enclosure follows from a finite Fourier check.",
+    "No optimal lag power follows from this sufficient-bound control.",
+    "No microscopic marked-process convergence is numerically established."
+  ],
+  "source_sha256": "009c46193124d526ae249f2ff17dd6a55cd06ae4eb8c8f4c72a30955e9f664eb",
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "fourier_graph_rows": [
+    {
+      "g": 0.5,
+      "state": "ground_polynomial",
+      "cutoff": 16,
+      "H_norm": 0.49295929163542,
+      "K_Q_norm": 0.4330127018922253,
+      "integration_by_parts_error": 2.220446049250313e-16,
+      "graph_bound_margin": 0.3863206086696751,
+      "electric_translation_checks": [
+        {
+          "nu": -2,
+          "shifted_D_norm": 11.045361017187272,
+          "analytic_upper_bound": 30.85640646055121
+        },
+        {
+          "nu": -1,
+          "shifted_D_norm": 6.4807406984078835,
+          "analytic_upper_bound": 18.85640646055121
+        },
+        {
+          "nu": 1,
+          "shifted_D_norm": 3.7416573867739853,
+          "analytic_upper_bound": 18.85640646055121
+        },
+        {
+          "nu": 2,
+          "shifted_D_norm": 6.480740698407884,
+          "analytic_upper_bound": 30.85640646055121
+        }
+      ]
+    },
+    {
+      "g": 0.5,
+      "state": "complex_two_mode_polynomial",
+      "cutoff": 16,
+      "H_norm": 0.6793222144876443,
+      "K_Q_norm": 0.5232429510663963,
+      "integration_by_parts_error": 3.885780586188048e-16,
+      "graph_bound_margin": 0.44459715508219955,
+      "electric_translation_checks": [
+        {
+          "nu": -2,
+          "shifted_D_norm": 9.191076328493011,
+          "analytic_upper_bound": 33.74377443412468
+        },
+        {
+          "nu": -1,
+          "shifted_D_norm": 5.4291168142419455,
+          "analytic_upper_bound": 21.74377443412468
+        },
+        {
+          "nu": 1,
+          "shifted_D_norm": 5.09799762004378,
+          "analytic_upper_bound": 21.74377443412468
+        },
+        {
+          "nu": 2,
+          "shifted_D_norm": 8.80531317869122,
+          "analytic_upper_bound": 33.74377443412468
+        }
+      ]
+    },
+    {
+      "g": 0.25,
+      "state": "ground_polynomial",
+      "cutoff": 32,
+      "H_norm": 0.4980970669068203,
+      "K_Q_norm": 0.43301270189221935,
+      "integration_by_parts_error": 7.494005416219807e-16,
+      "graph_bound_margin": 0.37790439470538084,
+      "electric_translation_checks": [
+        {
+          "nu": -2,
+          "shifted_D_norm": 22.891046284519195,
+          "analytic_upper_bound": 72.42562584220408
+        },
+        {
+          "nu": -1,
+          "shifted_D_norm": 17.320508075688775,
+          "analytic_upper_bound": 60.42562584220408
+        },
+        {
+          "nu": 1,
+          "shifted_D_norm": 14.142135623730951,
+          "analytic_upper_bound": 60.42562584220408
+        },
+        {
+          "nu": 2,
+          "shifted_D_norm": 17.320508075688775,
+          "analytic_upper_bound": 72.42562584220408
+        }
+      ]
+    },
+    {
+      "g": 0.25,
+      "state": "complex_two_mode_polynomial",
+      "cutoff": 32,
+      "H_norm": 0.6892798731917722,
+      "K_Q_norm": 0.5232429510664315,
+      "integration_by_parts_error": 7.216449660063518e-16,
+      "graph_bound_margin": 0.43564193844454857,
+      "electric_translation_checks": [
+        {
+          "nu": -2,
+          "shifted_D_norm": 19.496056897235082,
+          "analytic_upper_bound": 83.97509773650323
+        },
+        {
+          "nu": -1,
+          "shifted_D_norm": 16.002935223459104,
+          "analytic_upper_bound": 71.97509773650323
+        },
+        {
+          "nu": 1,
+          "shifted_D_norm": 18.391653570509487,
+          "analytic_upper_bound": 71.97509773650323
+        },
+        {
+          "nu": 2,
+          "shifted_D_norm": 23.84266000083019,
+          "analytic_upper_bound": 83.97509773650323
+        }
+      ]
+    },
+    {
+      "g": 0.125,
+      "state": "ground_polynomial",
+      "cutoff": 64,
+      "H_norm": 0.499514887128151,
+      "K_Q_norm": 0.4330127018922194,
+      "integration_by_parts_error": 6.106226635438361e-16,
+      "graph_bound_margin": 0.37573083458871137,
+      "electric_translation_checks": [
+        {
+          "nu": -2,
+          "shifted_D_norm": 65.51335741663681,
+          "analytic_upper_bound": 238.70250336881634
+        },
+        {
+          "nu": -1,
+          "shifted_D_norm": 59.09314681077664,
+          "analytic_upper_bound": 226.70250336881634
+        },
+        {
+          "nu": 1,
+          "shifted_D_norm": 55.71355310873648,
+          "analytic_upper_bound": 226.70250336881634
+        },
+        {
+          "nu": 2,
+          "shifted_D_norm": 59.09314681077664,
+          "analytic_upper_bound": 238.70250336881634
+        }
+      ]
+    },
+    {
+      "g": 0.125,
+      "state": "complex_two_mode_polynomial",
+      "cutoff": 64,
+      "H_norm": 0.6919690663765603,
+      "K_Q_norm": 0.5232429510664315,
+      "integration_by_parts_error": 3.3861802251067274e-15,
+      "graph_bound_margin": 0.4333085486415813,
+      "electric_translation_checks": [
+        {
+          "nu": -2,
+          "shifted_D_norm": 62.7344696869986,
+          "analytic_upper_bound": 284.9003909460129
+        },
+        {
+          "nu": -1,
+          "shifted_D_norm": 61.83812639921939,
+          "analytic_upper_bound": 272.9003909460129
+        },
+        {
+          "nu": 1,
+          "shifted_D_norm": 70.06777001596203,
+          "analytic_upper_bound": 272.9003909460129
+        },
+        {
+          "nu": 2,
+          "shifted_D_norm": 78.6053890352377,
+          "analytic_upper_bound": 284.9003909460129
+        }
+      ]
+    },
+    {
+      "g": 0.0625,
+      "state": "ground_polynomial",
+      "cutoff": 128,
+      "H_norm": 0.49987812820479866,
+      "K_Q_norm": 0.4330127018922194,
+      "integration_by_parts_error": 5.551115123125783e-17,
+      "graph_bound_margin": 0.37518300616162026,
+      "electric_translation_checks": [
+        {
+          "nu": -2,
+          "shifted_D_norm": 232.21541723150088,
+          "analytic_upper_bound": 903.8100134752654
+        },
+        {
+          "nu": -1,
+          "shifted_D_norm": 225.4329168511112,
+          "analytic_upper_bound": 891.8100134752654
+        },
+        {
+          "nu": 1,
+          "shifted_D_norm": 221.99099080818578,
+          "analytic_upper_bound": 891.8100134752654
+        },
+        {
+          "nu": 2,
+          "shifted_D_norm": 225.4329168511112,
+          "analytic_upper_bound": 903.8100134752654
+        }
+      ]
+    },
+    {
+      "g": 0.0625,
+      "state": "complex_two_mode_polynomial",
+      "cutoff": 128,
+      "H_norm": 0.6926545177628591,
+      "K_Q_norm": 0.5232429510664315,
+      "integration_by_parts_error": 1.532107773982716e-14,
+      "graph_bound_margin": 0.4327191369923225,
+      "electric_translation_checks": [
+        {
+          "nu": -2,
+          "shifted_D_norm": 249.02488545649973,
+          "analytic_upper_bound": 1088.6015637840517
+        },
+        {
+          "nu": -1,
+          "shifted_D_norm": 254.05953668929502,
+          "analytic_upper_bound": 1076.6015637840517
+        },
+        {
+          "nu": 1,
+          "shifted_D_norm": 273.8682120421383,
+          "analytic_upper_bound": 1076.6015637840517
+        },
+        {
+          "nu": 2,
+          "shifted_D_norm": 288.2650260932606,
+          "analytic_upper_bound": 1088.6015637840517
+        }
+      ]
+    }
+  ],
+  "finite_bin_toy": {
+    "kappa": 0.4,
+    "first_total_rate": 2.3,
+    "first_interval": [
+      0.07,
+      0.23
+    ],
+    "first_survival_integral": 0.11395574002543801,
+    "rows": [
+      {
+        "g": 0.4,
+        "family": "controlled_lag_0.2_g5",
+        "lag": 0.0020480000000000008,
+        "lag_over_g4": 0.08000000000000002,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 0.05110342550812923,
+            "probability": 0.0009317645874581941,
+            "boundary_integral_error": 9.657449187081002e-05,
+            "semigroup_error_bound": 0.0006916362660541955,
+            "quadrature_difference": 1.3877787807814457e-17,
+            "g2_A_eta_norm": 2.269078337744655
+          },
+          {
+            "state": "p",
+            "integrated_effect": 0.050451715907768355,
+            "probability": 0.0009198820194916652,
+            "boundary_integral_error": 9.292409223166098e-05,
+            "semigroup_error_bound": 0.0006914789533758965,
+            "quadrature_difference": 2.0816681711721685e-17,
+            "g2_A_eta_norm": 2.2685622358452893
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": -1.9888598643825426,
+        "independent_repetitions_per_arm": 19074,
+        "count_difference_mean": -0.2266481013935723,
+        "count_difference_variance": 35.2856075223683,
+        "count_signal_to_standard_deviation": 0.038155160588868406
+      },
+      {
+        "g": 0.4,
+        "family": "fixed_lag_0.01",
+        "lag": 0.01,
+        "lag_over_g4": 0.39062499999999994,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 0.24770769407319074,
+            "probability": 0.004516434174096843,
+            "boundary_integral_error": 0.0022923059268093182,
+            "semigroup_error_bound": 0.016489893580775145,
+            "quadrature_difference": 5.551115123125783e-17,
+            "g2_A_eta_norm": 2.269078337744655
+          },
+          {
+            "state": "p",
+            "integrated_effect": 0.24460023438560424,
+            "probability": 0.00445977611516914,
+            "boundary_integral_error": 0.002199765614395749,
+            "semigroup_error_bound": 0.01648614295425167,
+            "quadrature_difference": 2.7755575615628914e-17,
+            "g2_A_eta_norm": 2.2685622358452893
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": -1.9421623047415824,
+        "independent_repetitions_per_arm": 3907,
+        "count_difference_mean": -0.2213630362305331,
+        "count_difference_variance": 34.91264924117678,
+        "count_signal_to_standard_deviation": 0.03746396166567642
+      },
+      {
+        "g": 0.2,
+        "family": "controlled_lag_0.2_g5",
+        "lag": 6.400000000000002e-05,
+        "lag_over_g4": 0.04000000000000001,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 0.0015999598802146657,
+            "probability": 2.917193794573975e-05,
+            "boundary_integral_error": 4.0119785335492736e-08,
+            "semigroup_error_bound": 2.664309177753509e-06,
+            "quadrature_difference": 6.505213034913027e-19,
+            "g2_A_eta_norm": 2.2376714372496287
+          },
+          {
+            "state": "p",
+            "integrated_effect": 0.0015948457071544026,
+            "probability": 2.907869164562768e-05,
+            "boundary_integral_error": 3.4292845598566865e-08,
+            "semigroup_error_bound": 2.664247474203518e-06,
+            "quadrature_difference": 6.505213034913027e-19,
+            "g2_A_eta_norm": 2.237619614333376
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": -1.9977238516652094,
+        "independent_repetitions_per_arm": 9765625,
+        "count_difference_mean": -0.91060839953191,
+        "count_difference_variance": 568.8372365146104,
+        "count_signal_to_standard_deviation": 0.03818015111828504
+      },
+      {
+        "g": 0.2,
+        "family": "fixed_lag_0.01",
+        "lag": 0.01,
+        "lag_over_g4": 6.249999999999999,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 0.24897866733127302,
+            "probability": 0.004539607725805211,
+            "boundary_integral_error": 0.0010213326687270319,
+            "semigroup_error_bound": 0.06504661078499772,
+            "quadrature_difference": 0.0,
+            "g2_A_eta_norm": 2.2376714372496287
+          },
+          {
+            "state": "p",
+            "integrated_effect": 0.24834805542280522,
+            "probability": 0.004528109830333483,
+            "boundary_integral_error": 0.0008519445771948686,
+            "semigroup_error_bound": 0.06504510435067179,
+            "quadrature_difference": 0.0,
+            "g2_A_eta_norm": 2.237619614333376
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": -1.5765297711694695,
+        "independent_repetitions_per_arm": 62500,
+        "count_difference_mean": -0.7186184669830055,
+        "count_difference_variance": 564.1628586999338,
+        "count_signal_to_standard_deviation": 0.03025492828495872
+      },
+      {
+        "g": 0.1,
+        "family": "controlled_lag_0.2_g5",
+        "lag": 2.0000000000000008e-06,
+        "lag_over_g4": 0.020000000000000004,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 5.000017295350086e-05,
+            "probability": 9.116490736505733e-07,
+            "boundary_integral_error": 1.7295350082522287e-10,
+            "semigroup_error_bound": 1.0399914731331514e-08,
+            "quadrature_difference": 6.776263578034403e-21,
+            "g2_A_eta_norm": 2.236049644178722
+          },
+          {
+            "state": "p",
+            "integrated_effect": 4.996018412215832e-05,
+            "probability": 9.109199605516305e-07,
+            "boundary_integral_error": 1.8412215830899145e-10,
+            "semigroup_error_bound": 1.039988551223065e-08,
+            "quadrature_difference": 1.3552527156068805e-20,
+            "g2_A_eta_norm": 2.236043361881052
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": -1.9994415671272887,
+        "independent_repetitions_per_arm": 5000000000,
+        "count_difference_mean": -3.6455654947137903,
+        "count_difference_variance": 9112.83686661498,
+        "count_signal_to_standard_deviation": 0.03818898424249267
+      },
+      {
+        "g": 0.1,
+        "family": "fixed_lag_0.01",
+        "lag": 0.01,
+        "lag_over_g4": 99.99999999999999,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 0.2522114339325824,
+            "probability": 0.0045985504954662885,
+            "boundary_integral_error": 0.0022114339325823296,
+            "semigroup_error_bound": 0.25999786828328764,
+            "quadrature_difference": 0.0,
+            "g2_A_eta_norm": 2.236049644178722
+          },
+          {
+            "state": "p",
+            "integrated_effect": 0.25231404660916806,
+            "probability": 0.004600421424025698,
+            "boundary_integral_error": 0.002514046609168097,
+            "semigroup_error_bound": 0.25999713780576605,
+            "quadrature_difference": 0.0,
+            "g2_A_eta_norm": 2.236043361881052
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": 1.0261267658564077,
+        "independent_repetitions_per_arm": 1000000,
+        "count_difference_mean": 1.8709285594092213,
+        "count_difference_variance": 9156.661375553998,
+        "count_signal_to_standard_deviation": 0.0195518847053441
+      },
+      {
+        "g": 0.05,
+        "family": "controlled_lag_0.2_g5",
+        "lag": 6.250000000000002e-08,
+        "lag_over_g4": 0.010000000000000002,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 1.5625009975412327e-06,
+            "probability": 2.848895319444741e-08,
+            "boundary_integral_error": 9.975412315177645e-13,
+            "semigroup_error_bound": 4.062444056219393e-11,
+            "quadrature_difference": 2.117582368135751e-22,
+            "g2_A_eta_norm": 2.236037185106839
+          },
+          {
+            "state": "p",
+            "integrated_effect": 1.562188519444846e-06,
+            "probability": 2.8483255806812934e-08,
+            "boundary_integral_error": 1.0194448451774024e-12,
+            "semigroup_error_bound": 4.0624426299852126e-11,
+            "quadrature_difference": 2.117582368135751e-22,
+            "g2_A_eta_norm": 2.2360364000836817
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": -1.9998598168744761,
+        "independent_repetitions_per_arm": 2560000000000,
+        "count_difference_mean": -14.585312344260357,
+        "count_difference_variance": 145848.85088856073,
+        "count_signal_to_standard_deviation": 0.038191281219907815
+      },
+      {
+        "g": 0.05,
+        "family": "fixed_lag_0.01",
+        "lag": 0.01,
+        "lag_over_g4": 1599.9999999999998,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 0.2482803568664939,
+            "probability": 0.004526875488080186,
+            "boundary_integral_error": 0.0017196431335061435,
+            "semigroup_error_bound": 1.0399856783921637,
+            "quadrature_difference": 2.7755575615628914e-17,
+            "g2_A_eta_norm": 2.236037185106839
+          },
+          {
+            "state": "p",
+            "integrated_effect": 0.24829450858841895,
+            "probability": 0.004527133515271322,
+            "boundary_integral_error": 0.0016554914115811115,
+            "semigroup_error_bound": 1.0399853132762136,
+            "quadrature_difference": 2.7755575615628914e-17,
+            "g2_A_eta_norm": 2.2360364000836817
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": 0.5660688770008537,
+        "independent_repetitions_per_arm": 16000000,
+        "count_difference_mean": 4.128435058176061,
+        "count_difference_variance": 144208.34342082933,
+        "count_signal_to_standard_deviation": 0.01087151985577897
+      },
+      {
+        "g": 0.025,
+        "family": "controlled_lag_0.2_g5",
+        "lag": 1.9531250000000007e-09,
+        "lag_over_g4": 0.005000000000000001,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 4.8828129211039434e-08,
+            "probability": 8.902792957282731e-10,
+            "boundary_integral_error": 4.211039398284017e-15,
+            "semigroup_error_bound": 1.586907436753923e-13,
+            "quadrature_difference": 6.617444900424222e-24,
+            "g2_A_eta_norm": 2.2360586413807253
+          },
+          {
+            "state": "p",
+            "integrated_effect": 4.8825687847742436e-08,
+            "probability": 8.902347825504843e-10,
+            "boundary_integral_error": 4.253992399334613e-15,
+            "semigroup_error_bound": 1.5869073669230322e-13,
+            "quadrature_difference": 6.617444900424222e-24,
+            "g2_A_eta_norm": 2.236058542984333
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": -1.9999648128991059,
+        "independent_repetitions_per_arm": 1310720000000000,
+        "count_difference_mean": -58.34431239136115,
+        "count_difference_variance": 2333755.4106038907,
+        "count_signal_to_standard_deviation": 0.03819186416003805
+      },
+      {
+        "g": 0.025,
+        "family": "fixed_lag_0.01",
+        "lag": 0.01,
+        "lag_over_g4": 25599.999999999996,
+        "states": [
+          {
+            "state": "v",
+            "integrated_effect": 0.2473140975063957,
+            "probability": 0.004509257760010346,
+            "boundary_integral_error": 0.002685902493604342,
+            "semigroup_error_bound": 4.1599826310042,
+            "quadrature_difference": 2.7755575615628914e-17,
+            "g2_A_eta_norm": 2.2360586413807253
+          },
+          {
+            "state": "p",
+            "integrated_effect": 0.24731448073915588,
+            "probability": 0.004509264747461992,
+            "boundary_integral_error": 0.002673019260844206,
+            "semigroup_error_bound": 4.15998244794671,
+            "quadrature_difference": 1.3877787807814457e-16,
+            "g2_A_eta_norm": 2.236058542984333
+          }
+        ],
+        "contrast_over_kappa2_weight_lag_g2": 0.06131724162710982,
+        "independent_repetitions_per_arm": 256000000,
+        "count_difference_mean": 1.7887876213595888,
+        "count_difference_variance": 2298331.0421410357,
+        "count_signal_to_standard_deviation": 0.001179919801139845
+      }
+    ]
+  },
+  "elapsed_seconds": 0.037151083117350936,
+  "all_assertions_passed": true
+}

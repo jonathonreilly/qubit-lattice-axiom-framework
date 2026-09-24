@@ -1,0 +1,714 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/AUTHOR_CONTROL_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/AUTHOR_CONTROL_SEAL.json",
+      "sha256": "943b8ae9bf740cd2560bd6b77daf91189e8efee33fd857449378fce62ad2d1a2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/CONTROL.stderr.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/CONTROL.stdout.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/CONTROL.stdout.txt",
+      "sha256": "8fafbfe150b2049d52c2a0b855f1616abeaf6dd2743e3d098c43f7ecb448a9db"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/CONTROL_EXECUTION.json",
+      "sha256": "e5d17f5ad7b80981973733f276288c004a0230b06a56fc6602f9bd558f933e88"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/NARROW_CONTROL.stderr.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/NARROW_CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/NARROW_CONTROL.stdout.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/NARROW_CONTROL.stdout.txt",
+      "sha256": "37a985d72798547907587e5387612497cf839e29565cceaaec9f7ee5be6cefa3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/NARROW_CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/NARROW_CONTROL_EXECUTION.json",
+      "sha256": "f4376fb7844d02d15b1c436b285ae5c497708339afa391053257009a87d29d81"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/NARROW_PACKET_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/NARROW_PACKET_RESULTS.json",
+      "sha256": "37a985d72798547907587e5387612497cf839e29565cceaaec9f7ee5be6cefa3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/READOUT_CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/READOUT_CONTROL_RESULTS.json",
+      "sha256": "8fafbfe150b2049d52c2a0b855f1616abeaf6dd2743e3d098c43f7ecb448a9db"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/SOURCE_PINS.json",
+      "sha256": "b9b16f37c7236ec8f9886bcf448805be9b744f2e61a5fba14cf5ef6a64e63a23"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/narrow_packet_control.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/narrow_packet_control.py",
+      "sha256": "9331da643e2b6be3a80abbcb43cd59e5fb8684417af4697e324aa37a5bff3b0a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/record_photon_readout_controls.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/record_photon_readout_controls.py",
+      "sha256": "0ed685625ec78c571229885c5fbca8e3e538f2ca5f7516fccaf8fa0a50dab4b0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/CONTROL_RESULTS.json",
+      "sha256": "27ad987dfac36c6e7da7f2713383d654fe17075696094cadac910302dba103b7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/EVIDENCE_LOG.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/EVIDENCE_LOG.md",
+      "sha256": "664879ab2c7f491083d2147dc44d483f4762bc49eff701838875feb0da405346"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/EVIDENCE_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/EVIDENCE_VERIFICATION.json",
+      "sha256": "30c5c96ac2a51c0d617e10d86b6830667870c7302991babf82ee4fb4b1e642f9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/EXECUTION.json",
+      "sha256": "44d503d86e1707c0514ad2b0e721aa499252c6e65fab85e9d2dd45a288dad7f3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/PATH_CERTIFICATES.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/PATH_CERTIFICATES.json",
+      "sha256": "2a9d9a7f88d913d57a4e16ed922cf443d2fd8c21c1d3bb93f37db69f505e526b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/POST.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/POST.md",
+      "sha256": "dc217d7ff74cb074998f2f4e92cd02b79e1bdb207c2f4ebfc0e6fd8e8ee96d1c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/POST_CHECK_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/POST_CHECK_EXECUTION.json",
+      "sha256": "e75198e949c2836f8a1cb90f724a2f1a0c0591c21f4fa88b687a538ae757314c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/POST_CHECK_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/POST_CHECK_RESULTS.json",
+      "sha256": "a3a6e0f0edeba55148fc8c02507ecbf7d3ed409a395d007de941292b287705e6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/POST_SEAL.json",
+      "sha256": "f6cc670e09877d631658d8d150f986fecfcd5925b0ecfb7394bdcd17aee7513e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/POST_SOURCE_PINS.json",
+      "sha256": "fde51b6ef27bac558f1dd8b47e832e6d7e2015fb64ff63da9eaa4d4c534b609f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/PRE.md",
+      "sha256": "7e5140e5155943d99541efc2e8de7cc25f9cee9ba4d4330b9906def5c3adf76d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/PRE_SEAL.json",
+      "sha256": "65ef5734192d3ca88511a992fad2b1788582ad8acf632c2b2d33e866d121cff6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/SOURCE_PINS.json",
+      "sha256": "a07ee0d182a82f4f37b36bd9092b0c27bd10670f7546355388ea6737eea84295"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/SOURCE_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/SOURCE_VERIFICATION.json",
+      "sha256": "42a8894d8491ca12f878206d765b67f175d00c5f4b58ce8f981c921690f53736"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/evidence_verification.stderr.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/evidence_verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/evidence_verification.stdout.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/evidence_verification.stdout.txt",
+      "sha256": "40cdc3e9dd5a2969bb99e1499096eb35fb498fe73d23e86f1b950a92ffdacc85"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/post_compare_evidence.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/post_compare_evidence.py",
+      "sha256": "17ed2c36f9166d0d6fb91371bbe6122d9efa64eea133ca6be3fac988bdd81b03"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/post_compare_evidence.stderr.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/post_compare_evidence.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/post_compare_evidence.stdout.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/post_compare_evidence.stdout.txt",
+      "sha256": "0ebc78bd6d9da4dc6230d0d52b0bf148b5a7caf72e59e95521a091102aadaf93"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/post_freeze_sources.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/post_freeze_sources.py",
+      "sha256": "2462d3b601b23e356fd3d573d9ff8815fe6eb012ef03735f240b5011766d631b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/post_freeze_sources.stderr.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/post_freeze_sources.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/post_freeze_sources.stdout.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/post_freeze_sources.stdout.txt",
+      "sha256": "7cd121d4e6ecab3d34f95f9f177128e8b0834eb9fc326a4ba9945bdc80a8230b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/readout_control.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/readout_control.py",
+      "sha256": "a52e38e04493c1b09a1ddefcdecd489096ad3f8eeec14f1c23e37090599860fc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/readout_control.stderr.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/readout_control.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/readout_control.stdout.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/readout_control.stdout.txt",
+      "sha256": "5360a1003931ab50cdeb27cf0bd5e65a92636447f6df8cc4a1bbe346e1367f49"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/run_controls.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/run_controls.py",
+      "sha256": "a6b778d7d6467bb841791719e9af773f012deebdf3e0ccd15fc2135745802528"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/run_post_checks.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/run_post_checks.py",
+      "sha256": "aa90f0a5c101b9eb695eac1b41065e7d04f325dd92e9833595154acb5f4c95e3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/seal_post.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/seal_post.py",
+      "sha256": "04b806df1614595779ef247e2b5f16473bcc353b99ad22a655726c97b9b1299d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/seal_pre.py",
+      "sha256": "4a18b629e927412c4ccfa4db803dbda5add691acbf54ef2f0101adb935baf2e2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/source_verification.stderr.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/source_verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/source_verification.stdout.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/source_verification.stdout.txt",
+      "sha256": "891c6d114717fffb5c2dcdc736796bc06d43e8c0f7e7f1ada6526c7b800501b6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/verify_evidence.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/verify_evidence.py",
+      "sha256": "4b0731000e12e02d91d46e95c488747e98defb74eda018f1924845497d8a4a4a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/verify_source_pins.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/verify_source_pins.py",
+      "sha256": "63c1bf81c7634654d28dd8a6b006bde2fe05652f8bbbfe9536ca65c625f8552f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/older_finite_bin/AUTHOR_SEAL.json",
+      "sha256": "8b91c66038d2e7b1fc28d48ad150076293351985057fcd4014153e8abd79a6c1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-personal/FINITE_DURATION_TWO_RECORD_PHOTON_CONTRAST_ROOT.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/older_finite_bin/FINITE_DURATION_TWO_RECORD_PHOTON_CONTRAST_ROOT.md",
+      "sha256": "954562baa3c57706b87c4b2e5aeecc7d7fa6c72db8b4590f3aed9f76d7ae63c5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/older_finite_bin/SOURCE_PINS.json",
+      "sha256": "acd523005562b17239a15ba8a75b21760a6c0c183aec352a0f9f0b05b93e8956"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/CONTROL_EXECUTION.json",
+      "sha256": "a1df0ea7d34e5199ff1fe5235e2da4fb1219ea47f1eb150a09b948fb349e6f75"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/CONTROL_RESULTS.json",
+      "sha256": "cfb48f263ac16420710014608085cb68512bf62af492b51bedcc1c367c4ba283"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/CONTROL_STDERR.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/CONTROL_STDOUT.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/CONTROL_STDOUT.log",
+      "sha256": "cfb48f263ac16420710014608085cb68512bf62af492b51bedcc1c367c4ba283"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/POST.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/POST.md",
+      "sha256": "326963d63fe778e3e12b5e7b0d8b004699364c6c06b428c17b82e762e09eb051"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/POST_SEAL.json",
+      "sha256": "559e622ce78a12b7a24d003ff160c29c86a60940f97e56957b4ede1f6329261a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/POST_SOURCE_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/POST_SOURCE_BINDINGS.json",
+      "sha256": "cc0636d95dc54f075071a58d9792de32bd0bd1b78a2e68f5dbb82c98a5119efd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/POST_VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/POST_VERIFICATION_REPORT.json",
+      "sha256": "538981e218417bc38710053f555490b3d82c159b6fbb1034a3c85d9412ae44a7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/PRE.md",
+      "sha256": "b0ccb94832307f39c106c87f16f1eaaf7949521b6d42f22c5ee399d850dd28ed"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/PRE_SEAL.json",
+      "sha256": "7df82180e073ab40cb2228e15fd2e2ff43c731b90e8a690388598389c58d589f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/SOURCE_PINS.json",
+      "sha256": "cefd81353225b5371142c5c0fbbb495b7ff7552c211837772ac6b02079736d49"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/VERIFICATION_REPORT.json",
+      "sha256": "585b38fb229be45c15536a8ad1fa3ff7615dfe3a2018b3c2231642ea08cba3a6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/finite_bin_controls.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/finite_bin_controls.py",
+      "sha256": "009c46193124d526ae249f2ff17dd6a55cd06ae4eb8c8f4c72a30955e9f664eb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/AUTHOR_CONTROL_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/microscopic/AUTHOR_CONTROL_SEAL.json",
+      "sha256": "1c43b31b63f89ba2bf246e50aa5e8dd95d93d77f0e06aafd8d394909966a9146"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/CONTROL.stderr.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/microscopic/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/CONTROL.stdout.txt",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/microscopic/CONTROL.stdout.txt",
+      "sha256": "520128a1354cb2c17cd67d46f3cf641418aa981f3dfdaabcbffca5ad9fe90823"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/microscopic/CONTROL_EXECUTION.json",
+      "sha256": "9931089898a357cb003510eb65658f4800086fea30aa2959f3018d046aafc50b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/FINITE_REGISTER_CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/microscopic/FINITE_REGISTER_CONTROL_RESULTS.json",
+      "sha256": "520128a1354cb2c17cd67d46f3cf641418aa981f3dfdaabcbffca5ad9fe90823"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/microscopic/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "sha256": "a04e25530ccf1dc8df8a27b41523d04703c09ff758664792a9487a8cea0ce60c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/microscopic/SOURCE_PINS.json",
+      "sha256": "0f040139e3db7d300fccf11725341d8cd05e477d308ccbb81820e2e223256928"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/finite_register_controls.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/microscopic/finite_register_controls.py",
+      "sha256": "dc9952e2ae47f69cc9a258b72c01d009b356b6459e168e830dc045dfaca59771"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/ABSTRACT_CONTROL.stderr.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/ABSTRACT_CONTROL.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/ABSTRACT_CONTROL.stdout.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/ABSTRACT_CONTROL.stdout.log",
+      "sha256": "a50a95e9444cb0ff80cfeaeaf3cfcfb8e865c1fd019f728a0106070251ef6c7c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/ABSTRACT_CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/ABSTRACT_CONTROL_EXECUTION.json",
+      "sha256": "ac345146db629dd296df25a577c6c45eb0fe5b2db7152e88aaec5bf1f7c30611"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/ABSTRACT_CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/ABSTRACT_CONTROL_RESULTS.json",
+      "sha256": "a50a95e9444cb0ff80cfeaeaf3cfcfb8e865c1fd019f728a0106070251ef6c7c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/POST.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/POST.md",
+      "sha256": "c276edf6749f4c03c31faf5912ee60a21f8530defe702105e186f158b587c6c3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/POST_BINDING.stderr.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/POST_BINDING.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/POST_BINDING.stdout.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/POST_BINDING.stdout.log",
+      "sha256": "6f8f3c6ac862bfbf8b772d04959df686a5adf2b42cade0aa19c49a4c79585d7a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/POST_BINDING_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/POST_BINDING_EXECUTION.json",
+      "sha256": "de98a7b16953bc68f5ce643a6d9e9cd00bd41e41f2adbc51696528dce777f02c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/POST_EVIDENCE_CHECK.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/POST_EVIDENCE_CHECK.json",
+      "sha256": "6f8f3c6ac862bfbf8b772d04959df686a5adf2b42cade0aa19c49a4c79585d7a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/POST_SEAL.json",
+      "sha256": "73dc48a63907c5cbe3f3973723151a84af4b7d55e10959eb62f7c6b042da3545"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/POST_SOURCE_PINS.json",
+      "sha256": "19888c4e48350b739733a8953cfb2a38e2d8d658468dd9c044e5f8ca44b91810"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/PRE.md",
+      "sha256": "e48f606abebb28c5e60cbd98539284aee214e3f2819597621c6809dc1f5d2ec0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/PRE_SEAL.json",
+      "sha256": "34cbabad0237942680176e23a39bfdd6e9f4f34bbf56f1ff4f50b15178838f41"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/SOURCE_EVIDENCE_CHECK.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/SOURCE_EVIDENCE_CHECK.json",
+      "sha256": "35a00ac4b1a1ed9e398aa87e9a39c30bdd74c4a5a413b6fee031c06a188c6393"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/SOURCE_PINS.json",
+      "sha256": "a7ab592e0b77f3f2a1e125074ec36b08f8ee4c8b3e46a6e1c95de1c111546286"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/abstract_record_control.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/abstract_record_control.py",
+      "sha256": "c2df3043cc82f1744a4dc1667ce9fb10588b0a04943c3eedd99a201b874c5ac7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/verify_post_bindings.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/verify_post_bindings.py",
+      "sha256": "f0408da1a4bd8f3a9f6556b071aba64bb29c1af44db4ea9ace8b305e15a3f9fa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/AUTHOR_CONTROL_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/AUTHOR_CONTROL_SEAL.json",
+      "sha256": "3ef405f206ea3578c18c0026061e2f10c4e7ca08362128f74e6db4a8d6cc8374"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/CONTROL_EXECUTION.json",
+      "sha256": "1d5b1303e683d3c7414a96019bc47cf3c74e8a3f29aec4e7b5cc9e26df8f2692"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/CONTROL_RESULTS.json",
+      "sha256": "1b4c5bfe387784164c8f1f743556fabb99de9cd17714df347ad7c7a5d5109277"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/CONTROL_STDERR.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/CONTROL_STDOUT.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/CONTROL_STDOUT.log",
+      "sha256": "1b4c5bfe387784164c8f1f743556fabb99de9cd17714df347ad7c7a5d5109277"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/DIAGNOSTIC_STDERR.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/DIAGNOSTIC_STDERR.log",
+      "sha256": "540acfd3bcf4e8181b2b5ae828310c8997bac3c77e7d9b794d5f29b02430bd12"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/DIAGNOSTIC_STDOUT.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/DIAGNOSTIC_STDOUT.log",
+      "sha256": "ea9c77a4caf940139ef43a19372f94d0049b97058576348a079f703b1a8aa814"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "sha256": "08d178740c897d007a45fea09cde258706bdb5f9ee3756291f20f9af4911662d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/NORM_DRIFT_DIAGNOSTIC.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/NORM_DRIFT_DIAGNOSTIC.json",
+      "sha256": "b9d696b40130e93d40e97723d62c4389b22b5d47f6e08d06fa862503bc9e5a9e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/ROOT_VERIFICATION.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/ROOT_VERIFICATION.md",
+      "sha256": "3cbe09b9bc021a7ae72eaee692d0dce5ebf8ecd2aa10aa823eefe3bf1024f5fc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/SOURCE_PINS.json",
+      "sha256": "f7adbd1b73021a205f72ccef47f963bd407f2e34ff460e7eede68ebf7129d31b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/diagnostic_before_normalization/CONTROL_RESULTS.json",
+      "sha256": "ea9c77a4caf940139ef43a19372f94d0049b97058576348a079f703b1a8aa814"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/DIAGNOSTIC_STDERR.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/diagnostic_before_normalization/DIAGNOSTIC_STDERR.log",
+      "sha256": "540acfd3bcf4e8181b2b5ae828310c8997bac3c77e7d9b794d5f29b02430bd12"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/DIAGNOSTIC_STDOUT.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/diagnostic_before_normalization/DIAGNOSTIC_STDOUT.log",
+      "sha256": "ea9c77a4caf940139ef43a19372f94d0049b97058576348a079f703b1a8aa814"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/NORM_DRIFT_DIAGNOSTIC.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/diagnostic_before_normalization/NORM_DRIFT_DIAGNOSTIC.json",
+      "sha256": "b9d696b40130e93d40e97723d62c4389b22b5d47f6e08d06fa862503bc9e5a9e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/README.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/diagnostic_before_normalization/README.md",
+      "sha256": "e72000e9ca09d57e4b2bc1463d54b7a934c16833fd2228b880db6c7167a636ba"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/diagnostic_before_normalization/magnetic_lag_controls.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/diagnostic_before_normalization/magnetic_lag_controls.py",
+      "sha256": "9c05ce13094ae91e3eb6751118e64eb56bbe96cba757d5002c866f0f898a50a6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/first_cutoff_check_failure/CONTROL_EXECUTION.json",
+      "sha256": "7064b8384ec1c1b8db2612571309207243b0e2f9d7dc8eacd3a95271d25da8b2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/CONTROL_STDERR.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/first_cutoff_check_failure/CONTROL_STDERR.log",
+      "sha256": "88d73c55962427ff4f8ac544d4347eeeccc98e8e6622e14a89867c6d8c4a8990"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/CONTROL_STDOUT.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/first_cutoff_check_failure/CONTROL_STDOUT.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/README.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/first_cutoff_check_failure/README.md",
+      "sha256": "7caa3d3f83046595486f0881147843d068eccae7d945d4cd871aca3647964a3b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/history/first_cutoff_check_failure/magnetic_lag_controls.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/history/first_cutoff_check_failure/magnetic_lag_controls.py",
+      "sha256": "d153a95ff5063c04e44702c2fe0f605141f8687498a77984f81a598373db72b9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/magnetic_lag_controls.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/magnetic_lag_controls.py",
+      "sha256": "337a224e11f31f835510ef1a7d0a7b91cae2a5a96ff7323f1fd98eee2fbd0225"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/CONTROL_EXECUTION.json",
+      "sha256": "3cf436eadfbff80d2500e1427bccb6fdf7da5a08656694aa8199c1311ee7982f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/CONTROL_RESULTS.json",
+      "sha256": "2807f15f80bb5afd4d923fe8cc597ac673e92f9a2884eb89276e71669fcae696"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/CONTROL_STDERR.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/CONTROL_STDOUT.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/CONTROL_STDOUT.log",
+      "sha256": "2807f15f80bb5afd4d923fe8cc597ac673e92f9a2884eb89276e71669fcae696"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/POST.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/POST.md",
+      "sha256": "b9a660f2e4a678576b50c3a1b0f768bdce540f01f473d236268410b42c50ce2b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/POST_SEAL.json",
+      "sha256": "c5cef638e5ece6c1a46dda7cc5a221c9422862a582228fe2a30c47b76aa6ede4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/POST_SOURCE_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/POST_SOURCE_BINDINGS.json",
+      "sha256": "b43d28766be51b7c5502dead3d90893fab4176b782d8657c095b6e9750af47d6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/POST_VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/POST_VERIFICATION_REPORT.json",
+      "sha256": "bfb0e1a013895646e68147c6d8821cdd5252ab8d7414065ab88a0c00b7ad144e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PRE.md",
+      "sha256": "7b6ac7468af969a45dd956de59f6dd3a5d1b347ab500fe885df29549d10b17ed"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PRE_SEAL.json",
+      "sha256": "f306d33f15c2345fda844721d94f5d5cf3a1d6b23eca1e3d3b82a021c82fb9fa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PUBLICATION_BINDING_EXECUTIONS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PUBLICATION_BINDING_EXECUTIONS.json",
+      "sha256": "b84b88b9959dd1e6dc920afd2bbd9ad940c17fab432fb55e7232ed20c64d27b3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PUBLICATION_COMPARISON.md",
+      "sha256": "553aef1f1956fc8198a7cae1f4aa0af26857c42ba2ce2114590f9e828600e461"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "0fd480d882c9f7f6ab238c3d0857eb8b266bf89370049f2b06b4bac7d8bed411"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PUBLICATION_FINAL_BINDING_REPORT.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PUBLICATION_FINAL_BINDING_REPORT.json",
+      "sha256": "de68848d3ebafa3316282eee74d535e083fba3a23503fdb23d23cb16c249f695"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PUBLICATION_FINAL_BINDING_STDERR.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PUBLICATION_FINAL_BINDING_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PUBLICATION_FINAL_SOURCE_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PUBLICATION_FINAL_SOURCE_BINDINGS.json",
+      "sha256": "c700b370a1c356277d74e68ff1afa7df5343961622873d3fa9ee40f508a871c1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PUBLICATION_INITIAL_BINDING_REPORT.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PUBLICATION_INITIAL_BINDING_REPORT.json",
+      "sha256": "1761927d3f6ccfcf3ac418bf15d8f07a324c790261217c7e4969474b245db4f5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PUBLICATION_INITIAL_BINDING_STDERR.log",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PUBLICATION_INITIAL_BINDING_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/PUBLICATION_SOURCE_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PUBLICATION_SOURCE_BINDINGS.json",
+      "sha256": "b29da6bd9cbbfddfc97be644c1493818e73b90e08e4a87a3c6c1401fc388b192"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/SOURCE_PINS.json",
+      "sha256": "f5ef8803a178b0fda2917a81236de65cfb6c06c0edd2b859410cd5b1d4fffdac"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/VERIFICATION_REPORT.json",
+      "sha256": "f43cbf2b299224d8ac518371c4b895316259e8d6c2af7f1fad1b5df63a563f72"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/magnetic_lag_controls.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/magnetic_lag_controls.py",
+      "sha256": "f7fa464eeababbfa24c5f873025853b9024f4ad45a1f0e95e109685326d0d5f0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/publication_binding_check.py",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/publication_binding_check.py",
+      "sha256": "45b3c27c5d2a8761c80446ad023ca0d6fbce4b5277d1c32fea12666dee98d11f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PUBLICATION_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/ORIGINAL_RECORD_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "dcd91f408714192ac8c0441d46af1912521befb193d0b9a6e9ca4fe618132ebc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PUBLICATION_CACHE_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/ORIGINAL_RECORD_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "2c2733e8f6c056fd47d10b5c0b398c5099229d90d3691a98ab04a6b189f80b9c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PRIMARY_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/ORIGINAL_RECORD_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "b6a510a5e75c5736a5844855f0804c1a9e18e28580420be72e5dcda92686fc90"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FIFTEENTH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/FIFTEENTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "7b6720015fa09a916110d0336a3d2c408b166a3c40f492083b514c4f6df96f84"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/SEVENTEENTH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/SEVENTEENTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "e40c41dc13200111dcecb129a5f86af14696f516527e1412916aea97037fb4ea"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/EIGHTEENTH_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/EIGHTEENTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "fa3055502612b6bb46a43040fc2aa25dcbc8c31a884ad8dedcfb68aaa2a22eb8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/EIGHTEENTH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/EIGHTEENTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "33ba3c2bce0f982803965c55f9cb98e94705f3277be7febdb44cc243cb013edb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/ORIGINAL_RECORD_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "f4a7edf61ce0e83d6f62dc78a277211be870c3b4649f7b378199d283055ae822"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PUBLICATION_RERUN_DELTA.json",
+      "publication": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/ORIGINAL_RECORD_PUBLICATION_RERUN_DELTA.json",
+      "sha256": "0c5722ed35df1bd500447b6a6909ceebb4c844fe4171f2cfbc405eee788fd1a0"
+    }
+  ]
+}

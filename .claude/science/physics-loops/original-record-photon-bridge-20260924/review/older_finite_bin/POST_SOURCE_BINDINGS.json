@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-09-24T19:33:03.196906+00:00",
+  "scope": "Released-source POST comparison only; preserves all blind PRE members. No additional scientific source or numerical run. Author SOURCE_PINS.json read only as an explicitly seal-bound source manifest.",
+  "released_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-personal/FINITE_DURATION_TWO_RECORD_PHOTON_CONTRAST_ROOT.md",
+      "snapshot": "post_sources/FINITE_DURATION_TWO_RECORD_PHOTON_CONTRAST_ROOT.md",
+      "sha256": "954562baa3c57706b87c4b2e5aeecc7d7fa6c72db8b4590f3aed9f76d7ae63c5",
+      "bytes": 8398
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-personal/AUTHOR_SEAL.json",
+      "snapshot": "post_sources/AUTHOR_SEAL.json",
+      "sha256": "8b91c66038d2e7b1fc28d48ad150076293351985057fcd4014153e8abd79a6c1",
+      "bytes": 367
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-personal/SOURCE_PINS.json",
+      "snapshot": "post_sources/SOURCE_PINS.json",
+      "sha256": "acd523005562b17239a15ba8a75b21760a6c0c183aec352a0f9f0b05b93e8956",
+      "bytes": 2016
+    }
+  ],
+  "preserved_pre": {
+    "PRE.md": "b0ccb94832307f39c106c87f16f1eaaf7949521b6d42f22c5ee399d850dd28ed",
+    "PRE_SEAL.json": "7df82180e073ab40cb2228e15fd2e2ff43c731b90e8a690388598389c58d589f"
+  },
+  "parent_sources": "The four scientific origins and three instruction identities remain those in the sealed PRE SOURCE_PINS.json; unchanged transitive proofs are not re-certified."
+}

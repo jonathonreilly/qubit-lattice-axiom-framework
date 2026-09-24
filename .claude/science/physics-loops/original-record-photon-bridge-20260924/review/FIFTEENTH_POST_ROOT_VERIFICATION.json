@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-24T19:47:17.736209+00:00",
+  "seal_sha256": "f6cc670e09877d631658d8d150f986fecfcd5925b0ecfb7394bdcd17aee7513e",
+  "members_verified": 26,
+  "author_origins_verified": 13,
+  "source_and_all_24_correspondence_rows_read": true,
+  "coherent_first_multiplier_scope_fix_required": true,
+  "scientific_rerun": false
+}

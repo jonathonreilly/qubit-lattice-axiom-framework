@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-24T19:45:44.235946+00:00",
+  "sources": [
+    {
+      "kind": "conditional_main_parent",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "kind": "conditional_main_parent",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "kind": "conditional_main_parent",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "kind": "Provisional resolved two-mark and boundary contrast; coherent shortcut is not imported",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce"
+    },
+    {
+      "kind": "Prior weaker sufficient window",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-personal/FINITE_DURATION_TWO_RECORD_PHOTON_CONTRAST_ROOT.md",
+      "sha256": "954562baa3c57706b87c4b2e5aeecc7d7fa6c72db8b4590f3aed9f76d7ae63c5"
+    },
+    {
+      "kind": "Attributed stronger actual prebirth electric graph estimate, section3",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/PRE.md",
+      "sha256": "b0ccb94832307f39c106c87f16f1eaaf7949521b6d42f22c5ee399d850dd28ed"
+    }
+  ]
+}

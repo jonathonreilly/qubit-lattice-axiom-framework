@@ -1,0 +1,144 @@
+{
+  "phase": "released-source POST comparison",
+  "sealed_at_utc": "2026-09-24T19:43:44.391002+00:00",
+  "preserved_PRE_seal_sha256": "65ef5734192d3ca88511a992fad2b1788582ad8acf632c2b2d33e866d121cff6",
+  "preserved_PRE_member_count": 29,
+  "all_PRE_members_unchanged": true,
+  "author_proof_sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+  "author_seal_sha256": "943b8ae9bf740cd2560bd6b77daf91189e8efee33fd857449378fce62ad2d1a2",
+  "scope": "Proof/evidence correspondence only; author controls not executed or imported; no independent POST propagation claim, publication, audit, axiom change or delegation.",
+  "member_count": 26,
+  "members": [
+    {
+      "path": "POST.md",
+      "bytes": 17332,
+      "sha256": "dc217d7ff74cb074998f2f4e92cd02b79e1bdb207c2f4ebfc0e6fd8e8ee96d1c"
+    },
+    {
+      "path": "POST_CHECKPOINT.md",
+      "bytes": 1056,
+      "sha256": "2ee079916c05b8e89f974f54a4059e47064492554a9711c6a161dd32dca46c66"
+    },
+    {
+      "path": "POST_CHECK_EXECUTION.json",
+      "bytes": 857,
+      "sha256": "e75198e949c2836f8a1cb90f724a2f1a0c0591c21f4fa88b687a538ae757314c"
+    },
+    {
+      "path": "POST_CHECK_RESULTS.json",
+      "bytes": 8262,
+      "sha256": "a3a6e0f0edeba55148fc8c02507ecbf7d3ed409a395d007de941292b287705e6"
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "bytes": 6007,
+      "sha256": "fde51b6ef27bac558f1dd8b47e832e6d7e2015fb64ff63da9eaa4d4c534b609f"
+    },
+    {
+      "path": "post_compare_evidence.py",
+      "bytes": 10535,
+      "sha256": "17ed2c36f9166d0d6fb91371bbe6122d9efa64eea133ca6be3fac988bdd81b03"
+    },
+    {
+      "path": "post_compare_evidence.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_compare_evidence.stdout.txt",
+      "bytes": 6190,
+      "sha256": "0ebc78bd6d9da4dc6230d0d52b0bf148b5a7caf72e59e95521a091102aadaf93"
+    },
+    {
+      "path": "post_freeze_sources.py",
+      "bytes": 2290,
+      "sha256": "2462d3b601b23e356fd3d573d9ff8815fe6eb012ef03735f240b5011766d631b"
+    },
+    {
+      "path": "post_freeze_sources.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_freeze_sources.stdout.txt",
+      "bytes": 4978,
+      "sha256": "7cd121d4e6ecab3d34f95f9f177128e8b0834eb9fc326a4ba9945bdc80a8230b"
+    },
+    {
+      "path": "post_sources/author/AUTHOR_CONTROL_SEAL.json",
+      "bytes": 1593,
+      "sha256": "943b8ae9bf740cd2560bd6b77daf91189e8efee33fd857449378fce62ad2d1a2"
+    },
+    {
+      "path": "post_sources/author/CONTROL.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_sources/author/CONTROL.stdout.txt",
+      "bytes": 46881,
+      "sha256": "8fafbfe150b2049d52c2a0b855f1616abeaf6dd2743e3d098c43f7ecb448a9db"
+    },
+    {
+      "path": "post_sources/author/CONTROL_EXECUTION.json",
+      "bytes": 111,
+      "sha256": "e5d17f5ad7b80981973733f276288c004a0230b06a56fc6602f9bd558f933e88"
+    },
+    {
+      "path": "post_sources/author/NARROW_CONTROL.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_sources/author/NARROW_CONTROL.stdout.txt",
+      "bytes": 4487,
+      "sha256": "37a985d72798547907587e5387612497cf839e29565cceaaec9f7ee5be6cefa3"
+    },
+    {
+      "path": "post_sources/author/NARROW_CONTROL_EXECUTION.json",
+      "bytes": 112,
+      "sha256": "f4376fb7844d02d15b1c436b285ae5c497708339afa391053257009a87d29d81"
+    },
+    {
+      "path": "post_sources/author/NARROW_PACKET_RESULTS.json",
+      "bytes": 4487,
+      "sha256": "37a985d72798547907587e5387612497cf839e29565cceaaec9f7ee5be6cefa3"
+    },
+    {
+      "path": "post_sources/author/READOUT_CONTROL_RESULTS.json",
+      "bytes": 46881,
+      "sha256": "8fafbfe150b2049d52c2a0b855f1616abeaf6dd2743e3d098c43f7ecb448a9db"
+    },
+    {
+      "path": "post_sources/author/SOURCE_PINS.json",
+      "bytes": 1735,
+      "sha256": "b9b16f37c7236ec8f9886bcf448805be9b744f2e61a5fba14cf5ef6a64e63a23"
+    },
+    {
+      "path": "post_sources/author/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "bytes": 11027,
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce"
+    },
+    {
+      "path": "post_sources/author/narrow_packet_control.py",
+      "bytes": 2752,
+      "sha256": "9331da643e2b6be3a80abbcb43cd59e5fb8684417af4697e324aa37a5bff3b0a"
+    },
+    {
+      "path": "post_sources/author/record_photon_readout_controls.py",
+      "bytes": 6331,
+      "sha256": "0ed685625ec78c571229885c5fbca8e3e538f2ca5f7516fccaf8fa0a50dab4b0"
+    },
+    {
+      "path": "run_post_checks.py",
+      "bytes": 1411,
+      "sha256": "aa90f0a5c101b9eb695eac1b41065e7d04f325dd92e9833595154acb5f4c95e3"
+    },
+    {
+      "path": "seal_post.py",
+      "bytes": 3825,
+      "sha256": "04b806df1614595779ef247e2b5f16473bcc353b99ad22a655726c97b9b1299d"
+    }
+  ],
+  "preservation": "One-time content-hash ledger; new POST members and seal are set read-only; PRE remains separately sealed."
+}

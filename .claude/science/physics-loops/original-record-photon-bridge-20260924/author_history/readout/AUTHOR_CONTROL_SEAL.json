@@ -1,0 +1,20 @@
+{
+  "kind": "root_original_two_formation_photon_readout_candidate",
+  "sealed_at_utc": "2026-09-24T18:48:54.784857+00:00",
+  "files": {
+    "READOUT_CONTROL_RESULTS.json": "8fafbfe150b2049d52c2a0b855f1616abeaf6dd2743e3d098c43f7ecb448a9db",
+    "SOURCE_PINS.json": "b9b16f37c7236ec8f9886bcf448805be9b744f2e61a5fba14cf5ef6a64e63a23",
+    "CONTROL_EXECUTION.json": "e5d17f5ad7b80981973733f276288c004a0230b06a56fc6602f9bd558f933e88",
+    "NARROW_CONTROL.stdout.txt": "37a985d72798547907587e5387612497cf839e29565cceaaec9f7ee5be6cefa3",
+    "CONTROL.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "NARROW_CONTROL_EXECUTION.json": "f4376fb7844d02d15b1c436b285ae5c497708339afa391053257009a87d29d81",
+    "narrow_packet_control.py": "9331da643e2b6be3a80abbcb43cd59e5fb8684417af4697e324aa37a5bff3b0a",
+    "record_photon_readout_controls.py": "0ed685625ec78c571229885c5fbca8e3e538f2ca5f7516fccaf8fa0a50dab4b0",
+    "NARROW_CONTROL.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+    "NARROW_PACKET_RESULTS.json": "37a985d72798547907587e5387612497cf839e29565cceaaec9f7ee5be6cefa3",
+    "CONTROL.stdout.txt": "8fafbfe150b2049d52c2a0b855f1616abeaf6dd2743e3d098c43f7ecb448a9db"
+  },
+  "review_status": "author only, blind PRE not yet dispatched",
+  "scope": "Exact initial marked effect; weak-field prepared-packet zero-separation density; no empirical confirmation or finite-bin microscopic identification"
+}

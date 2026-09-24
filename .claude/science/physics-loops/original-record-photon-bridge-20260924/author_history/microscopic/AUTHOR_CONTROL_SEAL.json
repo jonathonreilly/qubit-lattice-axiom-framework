@@ -1,0 +1,14 @@
+{
+  "sealed_utc": "2026-09-24T19:20:39.984089+00:00",
+  "kind": "personally derived fixed-bin register bridge before independent release",
+  "files": {
+    "finite_register_controls.py": "dc9952e2ae47f69cc9a258b72c01d009b356b6459e168e830dc045dfaca59771",
+    "SOURCE_PINS.json": "0f040139e3db7d300fccf11725341d8cd05e477d308ccbb81820e2e223256928",
+    "MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md": "a04e25530ccf1dc8df8a27b41523d04703c09ff758664792a9487a8cea0ce60c",
+    "CONTROL_EXECUTION.json": "9931089898a357cb003510eb65658f4800086fea30aa2959f3018d046aafc50b",
+    "CONTROL.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FINITE_REGISTER_CONTROL_RESULTS.json": "520128a1354cb2c17cd67d46f3cf641418aa981f3dfdaabcbffca5ad9fe90823",
+    "CONTROL.stdout.txt": "520128a1354cb2c17cd67d46f3cf641418aa981f3dfdaabcbffca5ad9fe90823"
+  },
+  "verification": "Full code and all6waiting/5grid rows read; separate finite model and exact finite register algebra only."
+}

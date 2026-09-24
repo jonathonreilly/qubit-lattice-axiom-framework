@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-09-24T19:14:31.880916+00:00",
+  "completed_utc": "2026-09-24T19:14:32.113470+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/finite_bin_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent",
+  "exit_code": 0,
+  "elapsed_wall_seconds": 0.23242945806123316,
+  "script_sha256": "009c46193124d526ae249f2ff17dd6a55cd06ae4eb8c8f4c72a30955e9f664eb",
+  "stdout_sha256": "cfb48f263ac16420710014608085cb68512bf62af492b51bedcc1c367c4ba283",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_sha256": "cfb48f263ac16420710014608085cb68512bf62af492b51bedcc1c367c4ba283",
+  "stdout_equals_result": true
+}

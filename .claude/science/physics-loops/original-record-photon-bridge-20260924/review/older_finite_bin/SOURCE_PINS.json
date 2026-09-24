@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-09-24T19:10:49.829656+00:00",
+  "scope": "Blind finite-bin derivation. Three pinned main notes; exact two-mark effect and boundary contrast remain provisional imported premises. No finite-bin author or other active checker packet opened.",
+  "sources": [
+    {
+      "kind": "pinned_main_source",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "kind": "pinned_main_source",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "kind": "pinned_main_source",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "kind": "PROVISIONAL_imported_readout_and_boundary_contrast",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "snapshot": "sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce"
+    },
+    {
+      "kind": "instructions_reused_after_identity_verification",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "kind": "instructions_reused_after_identity_verification",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "kind": "instructions_reused_after_identity_verification",
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ]
+}

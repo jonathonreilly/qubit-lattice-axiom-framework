@@ -16,7 +16,7 @@ runner: scripts/dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_
 ## Result
 
 The dynamics clause of open PR 9040 is a sum of nearest-neighbour two-site
-terms, and it moves nothing that an exact Gauss law protects:
+terms, and it moves no link field that an exact Gauss law protects:
 - Link sites are never adjacent in doubled coordinates.
 - Changing a link's field changes the Gauss operators at both of its ends.
 - A two-site term can compensate at most one of them.
@@ -41,9 +41,10 @@ Among the four landed rotation actions:
 No single action has both. Under full soldering the covariant ring has one
 real coupling, and the Rokhsar–Kivelson potential is covariant too.
 
-With a soft Gauss energy in place of the exact law, record fields on the
-links generate that ring at fourth order, with `g = 5h⁴/(32U³)` and no
-competing diagonal term.
+Now replace the exact law with a soft Gauss energy. Transverse record
+fields of equal size on the links then generate that ring at fourth order,
+with `g = 5h⁴/(32U³)` and no competing diagonal term. Unequal sizes do
+leave a diagonal term.
 
 ## Setting and decision points
 
@@ -107,17 +108,17 @@ charges, none move the field.
 **Rings.** With static charges, a Gauss-invariant change of the link
 fields has zero divergence at every vertex, so its support is a union of
 closed loops. The coarse lattice is bipartite and simple, so a nonzero
-divergence-free change touches at least four links. Its only four-link
-cycles are plaquette boundaries, and on one plaquette the divergence-free
-changes are `±(ring)`.
+divergence-free change touches at least four links. On Z³, and on tori
+with all sides at least 5, the four-link cycles are the plaquette
+boundaries. On a plaquette the divergence-free changes are `±(ring)`.
 
 **Where they live.**
 - A hop lies in a link site's closed neighbourhood: the link site and its
   two vertices.
 - A ring lies in a plaquette site's closed neighbourhood: its four links.
 - A vertex site's neighbourhood holds its six links. Each link's far end
-  lies outside it, so it holds no mover, only diagonal terms such as the
-  Gauss energy.
+  lies outside it, so it holds no mover of the link field. The Gauss
+  energy is diagonal there.
 
 ## Theorem 3 — what soldering allows
 
@@ -192,12 +193,16 @@ The sum is `−(h/2)⁴ [16/(2U)³ + 8/(2U·4U·2U)] = −5h⁴/(32U³)`.
 
 **Diagonal part.**
 - Pairs of links with no shared vertex cancel against the renormalization
-  term.
-- Pairs that share a vertex contribute according to whether their flips
-  cancel there (`2U`) or add (`6U`). That depends only on whether one link
-  is in and the other out.
+  term, pair by pair. That term also adds same-link and shared-vertex
+  pieces.
+- With those pieces, a pair that shares a vertex carries a fixed weight
+  set by whether their flips cancel there (`2U`) or add (`6U`). That in
+  turn depends only on whether one link is in and the other out.
 - Every ice vertex has 9 in–out pairs and 6 same-type pairs, so the
   diagonal energy is the same for every ice configuration. ∎
+
+The equal field size matters: with unequal sizes, the weights differ
+between pairs and the diagonal energy depends on the configuration.
 
 **Record fields.** At the soldered point `K = −J, D = 0`, the coupling
 along a bond `e` is `J(I − e eᵀ)`.
@@ -217,20 +222,23 @@ Neither is fixed here.
     supplies three-site hops `a_y† a_x U_e`. It says it does not derive the
     field tensor factors "from one possibility qubit per original site".
   - Theorem 1 shows why the one two-site clause cannot stand in: under an
-    exact Gauss law it moves nothing.
-  - What moves the field is a term of Admissibility shape:
+    exact Gauss law it moves no link field.
+  - Two terms of Admissibility shape move the field:
     - a ring clause at plaquette sites (Theorem 3: one real coupling, and
       the Rokhsar–Kivelson point is covariant);
-    - or a soft Gauss energy at vertex sites (Theorem 4: the ring at fourth
-      order from record fields, with `V = 0` at that order).
+    - a soft Gauss energy at vertex sites (Theorem 4). The movers are then
+      the one-site record fields: the soft energy is diagonal. The ring
+      appears at fourth order, with `V = 0` at that order for fields of
+      equal size.
 - **Charged matter.** No single landed action gives both an oriented link
-  field and a dynamical vertex charge. Charged matter therefore needs one of:
+  field and a dynamical vertex charge. Routes to charged matter include:
   - a role-dependent action, for example soldered links with twisted
     vertices;
   - charges that are defects of a soft Gauss law.
 - **Kitaev gauge field.** The exact Z2 field of open PRs 9048 and 9054
-  evades Theorem 1. Its bond variables `u_jk = i b_j b_k` are shared by two
-  sites and are not the field of a separate link site.
+  lies outside Theorem 1's assumptions. Its bond variables
+  `u_jk = i b_j b_k` are shared by two sites, not the field of a separate
+  link site, and they are static there too.
 
 ## Checks
 
@@ -239,8 +247,8 @@ The runner has 12 checks and all pass in about 4 s.
 | Check | Result |
 |---|---|
 | Roles | Neighbours differ by one role. There are no link–link bonds. Neighbour counts: vertex 6 links; link 2 vertices + 4 plaquettes; plaquette 4 links + 2 cubes; cube 6 plaquettes. |
-| Freeze, U(1) | Gauss-invariant two-site spans of dimension 38 (static charges) and 30 (dynamical). `max |[H, E_l]|` ≤ 2e-14. |
-| Freeze, Z2 | Span of dimension 30; `max |[H, X_l]|` 2e-14. The three-site `τ^z Z τ^z` moves the field. |
+| Freeze, U(1) | On the five-site window, Gauss-invariant two-site operator spans of dimension 26 (static charges) and 18 (dynamical). `max |[H, E_l]|` ≤ 5e-15. |
+| Freeze, Z2 | Span of dimension 18; `max |[H, X_l]|` 1e-14. The three-site `τ^z Z τ^z` moves the field. |
 | Freeze, compression | 7 Gauss sectors; `|[PHP, E_l]| = 0`, against `|[H, E_l]| = 53`. |
 | Hops | Movers exist with dynamical charges (norm 5.66) and not with static charges (3e-15). |
 | Rings | The L = 6 coarse torus is bipartite and simple. It has 648 four-cycles, all plaquettes, and the divergence-free changes are `±(1, 1, −1, −1)`. |
@@ -250,6 +258,28 @@ The runner has 12 checks and all pass in about 4 s.
 | Soft Gauss diagonal | The fourth-order diagonal energy is equal to machine precision on 5 ice configurations; the four sampled ones differ from the reference on at least 308 of 648 links. The ring element is exactly `−5/32`. |
 | Transverse fields | Largest longitudinal component 0. |
 | Four actions | Each is a homomorphism with determinant 1. Intertwiner dimensions (trivial, sign twist, axis, full): 0, 0, 0, 1. Invariant axes: 3, 1, 0, 0. |
+
+## Independent check
+
+A separate checker wrote its own code without reading this runner.
+- **What passed.** Every numbered claim: the freeze in symmetric and
+  compression forms, the hops, the ring coefficient, `V = 0` for fields of
+  equal size, the soldering dimensions and the four-action intertwiners.
+- **Freeze across windows.** It confirmed the freeze on several windows,
+  including a plaquette with its links and corners, and a vertex star.
+- **Ring coefficient.** Its exact-diagonalization ratios approach 1 as
+  0.99776, 0.99944, 0.99986 and 0.99996 at h/U = 0.08, 0.04, 0.02 and
+  0.01.
+- **Fourth-order formula.** It checked its own formula against exact
+  diagonalization on small systems.
+- **What it flagged.** The span dimensions first printed here counted
+  redundant zero combinations of a non-independent two-site basis. The
+  true ranks are 26 and 18, as now printed.
+  - With unequal field sizes, the diagonal term reappears. A ±30% spread
+    shifts one plaquette flip's diagonal energy by up to about 17% of `g`.
+  - The L = 4 torus has 48 extra four-link cycles that wind; they are
+    absent from L = 5 on.
+  - Several prose overstatements, now corrected.
 
 ## What this does not do
 

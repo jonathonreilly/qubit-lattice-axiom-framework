@@ -139,7 +139,12 @@ BASIS3 = [kron(PAULI[a], PAULI[b], PAULI[c], I2, I2) for a in range(4) for b in 
 def invariant_span(basis, gauss):
     cols = [np.concatenate([(b @ g - g @ b).ravel() for g in gauss]) for b in basis]
     ns = null_space(np.array(cols).T)
-    return [sum(ns[k, c] * basis[k] for k in range(len(basis))) for c in range(ns.shape[1])]
+    ops = [sum(ns[k, c] * basis[k] for k in range(len(basis))) for c in range(ns.shape[1])]
+    # the two-site basis is redundant (one-site terms repeat across bonds); keep a basis of the actual span
+    M = np.array([o.ravel() for o in ops])
+    u, sv, vh = np.linalg.svd(M, full_matrices=False)
+    r = int(np.sum(sv > 1e-9 * sv[0]))
+    return [vh[i].reshape(ops[0].shape) for i in range(r)]
 
 
 def comm_norm(A, B):

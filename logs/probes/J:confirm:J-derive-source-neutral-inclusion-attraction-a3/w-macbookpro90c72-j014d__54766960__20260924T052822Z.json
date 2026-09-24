@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-source-neutral-inclusion-attraction-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j014d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/source-neutral-inclusion-attraction/referee_w-macbookpro90c72-j014d/check.py",
+ "seed": 27702,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "54766960",
+ "started_utc": "20260924T052822Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the block-determinant formula on the 4^3 torus, the Gaussian factor 1/2, the dipole eigenvalue G(0)-G(2e), the vacancy constant -0.121712, and the three tilt ratios. The lattice Green expansion G=1/(4 pi r)+O(r^{-3}) was used as an assumed input to the constant, and the constant's algebraic prefactor was checked from that expansion."
+ },
+ "review": "Independent torus and Bessel checks confirm F = 1/2 log det(I - eps_x eps_y A_x M_xy A_y M_yx) for disjoint bonds, the Gaussian coefficient 1/2 rather than 1/4, vacancy constant -0.121712, and tilt ratios 6.0e-5, 1.1e-6, 3.1e-8 at r = 5, 10, 20.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:source-neutral-inclusion-attraction:a3/; its files are probes/work/derive/source-neutral-inclusion-attraction/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/source-neutral-inclusion-attraction/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "d446b3cc7f8da6fc2c806d05dd64b69ef841b6bf705ab12380969b1a10871890",
+ "stdout_tail": "nd hessian: Cov(X^2,Y^2)=v^2+2 c^2, so the epsilon^2 coefficient is 1/2; sum of squared second derivatives of 1/(4 pi r) is 3/(8 pi^2 r^6)\nPASS dipole eigenvalue: mu = 2(G(0)-G(e)) - (G(0)-2G(e)+G(2e)) equals G(0)-G(2e)\nPASS difference decomposition: max entry error 1.1e-16 on a random 4-site zero-row-sum matrix\nPASS torus formula and sign: L=4 r=2 formula -5.318660e-03 vs laplacian -5.318660e-03; unlike 5.027759e-03; vacancy -4.021389e-02; small-eps ratio 0.999961; L=6 contact mult 2.9585e-03 add -9.8179e-02\nPASS infinite lattice: G(0)-G(e)=0.1666666667, mu=0.209841695316, alpha(-1)=2.53114, vacancy constant -0.121712, bare -0.07599; r=5 ratio 5.995e-05 F r^6 -0.2371 r=10 ratio 1.106e-06 F r^6 -0.1383 r=20 ratio 3.144e-08 F r^6 -0.1254\nHIT: confirmed - for disjoint bonds F = 1/2 log det(I - eps_x eps_y A_x M_xy A_y M_yx), negative for like signs at every order. The second-order coefficient is 1/2, not 1/4. On Z^3 the constant is -(3/(16 pi^2)) eps_x eps_y alpha_x alpha_y, and two vacancies are 6.0e-5, 1.1e-6, 3.1e-8 of two unit tilts at r = 5, 10, 20. A rotation-invariant inclusion has no charge, so its interaction is not 1/r.\nSUMMARY: confirmed the block-determinant formula on the 4^3 torus, the Gaussian factor 1/2, the dipole eigenvalue G(0)-G(2e), the vacancy constant -0.121712, and the three tilt ratios. The lattice Green expansion G=1/(4 pi r)+O(r^{-3}) was used as an assumed input to the constant, and the constant's algebraic prefactor was checked from that expansion.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j014d",
+  "at_utc": "20260924T052833Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Disjoint inclusions interact by the 6x6 determinant. The epsilon^2 coefficient is 1/2. Two vacancies are 6.0e-5, 1.1e-6 and 3.1e-8 of two unit tilts at r=5, 10, 20.",
+  "by": "w-macbookpro90c72-j014d",
+  "at_utc": "20260924T052833Z"
+ }
+}

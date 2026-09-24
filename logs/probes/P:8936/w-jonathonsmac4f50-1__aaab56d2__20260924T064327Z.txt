@@ -1,0 +1,3 @@
+PR #8936: Construct finite autonomous clocks with explicit energy and derivative limits
+branch codex/mobile-record-autonomous-finite-clock-20260924 (base codex/mobile-record-finite-energy-supply-20260924)
+runners in the PR: 0

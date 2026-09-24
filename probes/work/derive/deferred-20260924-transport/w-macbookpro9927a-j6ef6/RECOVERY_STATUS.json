@@ -1,0 +1,247 @@
+{
+ "task": "J:derive:deferred-20260924-transport:a1",
+ "worker": "w-macbookpro9927a-j6ef6",
+ "model": "claude-opus-5-5",
+ "batch": 6,
+ "pass": "first bounded pass; not an exhaustion of the bundle",
+ "origin_main": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+ "frozen_heads": {
+  "8558": "f23fd989d6ef2290319167208ab7098cd7975f62"
+ },
+ "review_findings_touched": {
+  "U6-R5": "collisions said to restore isotropy: preserved as demoted; this pass proves the local-law half and refutes the one-coefficient half within the landed conditional model"
+ },
+ "deferred_statement": {
+  "source": "PR8558 frozen block 48 note docs/ADMISSIBILITY_RULE_FREE_CAPTURING_BODIES_ARE_CARRIED_BY_THE_WIND_CAPTURE_LAW_ANISOTROPIC_COLLISIONLESS_SHADOW_DILUTION_LAW_OF_MOTION_AND_ITS_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "frozen_sha256": "1dd75e82e4d0c9c0ff8d5db0f4d521e5205f780369f59a38dfaf92265f2fb772",
+  "landed_sha256_on_main": "69865d283d0304fc1ffcf9a677adbbe49ae1f5bbfbaa62666d6358b682e1e70c",
+  "text": [
+   "In the same units the collisional coefficient of block 47 at small density is (3/2)^2 = 9/4 in every direction",
+   "N1 route 2: Collisions - restore a first-harmonic wind and with it one coefficient in every direction"
+  ],
+  "landed_correction_preserved": "Collisions - may motivate a local closure but do not establish isotropic inflow; the companion cubic-viscosity note explicitly shows why this inference fails",
+  "disposition": "recovered and resolved at leading order in density: first half proved (every l >= 2 relaxes), second half refuted (eta = 45 sqrt3 gamma rho/(45 sqrt3 gamma rho + 16) in (0,1))"
+ },
+ "landed_baseline": [
+  {
+   "block": 44,
+   "use": "clause, sphere-menu streaming and bond re-draw"
+  },
+  {
+   "block": 48,
+   "use": "narrowed N1 route 2 (preserved); collisionless shadow T3 (near field)"
+  },
+  {
+   "block": 51,
+   "use": "nu_lat = sqrt3/16, conditional first-harmonic closure, supplied creeping model, T3/T4"
+  }
+ ],
+ "inspected_sources": [
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+   "sha256": "5c0f71fbb9b8f6fc84048a05dffbbd1cefa37a18de8989cf6576221dcc6a6e4c",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context, not used as evidence",
+   "note": "not read beyond its role"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block48_findings.md",
+   "sha256": "17aa8a572f1abe209aec0e9a7193247ce6127ee9a36a59542fa57763e7f37268",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "refuting pass W1-W5 on the collisionless statements; no collision calculation"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block48.md",
+   "sha256": "abe2663d26aa950875456e5c1c447e82f3ffb9cebe6dbc0a240958f3f977b7d8",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context, not used as evidence",
+   "note": "not read beyond its role"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block48.md",
+   "sha256": "296be179ab7f914f2c26b498cbbd71ddaef611ab2c932b023849e86758e61a9d",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context, not used as evidence",
+   "note": "not read beyond its role"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+   "sha256": "1e30352164123569fe08440390e8c8530d5d97841dfc9b474c5d7256e13d5b22",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context, not used as evidence",
+   "note": "not read beyond its role"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+   "sha256": "717efe916154ffbebe9c4aa084e9e87c0d80184744b31d7ae0ee5563abf2352c",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context, not used as evidence",
+   "note": "not read beyond its role"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block48.md",
+   "sha256": "2bec7e22bb47bcc047aba762eb3935c0b12df8b18777517618dfcbfdb5a58e0f",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "results summary; carries the phrase \"against the collisional 9/4\""
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+   "sha256": "e259303bac360b7d5d8182498b5587a26ed4c355d847b7f4400d419531fb53ac",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context, not used as evidence",
+   "note": "not read beyond its role"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+   "sha256": "20f4148126797f74a80c9481a9272a83f7d6ec15d33e5e373e891ae3cbcda174",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context, not used as evidence",
+   "note": "not read beyond its role"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+   "sha256": "e36dd47aea71a44d5a104f8114e01f68a8a95cc031b187acee3763b6715600c6",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context, not used as evidence",
+   "note": "not read beyond its role"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block48_freebody.out.txt",
+   "sha256": "12638a15c0e9e52699bb3ffb1dde5eab0795b9830f9f0e09c888fcd39f1f1051",
+   "sha256_verified": true,
+   "category": "historical-evidence",
+   "disposition": "historical output",
+   "note": "historical executed output"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block48_freebody.py",
+   "sha256": "225ce2f03c5ae17481fbd7ba408935a9ddd758e13c09b206b105de65e47d7c90",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "free-body simulation control (executed author reports; not re-run)"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block48_inertial.py",
+   "sha256": "b7521431d221e3b831c54811991efd9fe15a412cd335ed312510574a1544784a",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "inertial-gas control with scattering gamma = 1 runs (author reports; not re-run)"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block48_refuter.out.txt",
+   "sha256": "d524e16da287d84a873765e27348a0d3d5b5bd6a9ba0f0d5fe630d1d3f4c97d7",
+   "sha256_verified": true,
+   "category": "historical-evidence",
+   "disposition": "historical output",
+   "note": "historical executed output"
+  },
+  {
+   "pr": 8558,
+   "head": "f23fd989d6ef2290319167208ab7098cd7975f62",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block48_refuter.py",
+   "sha256": "090e0aacbbafa79456783ae333022d7d2a6b8164b93b575b27afad1be4cf4def",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical",
+   "note": "disjoint refuter for T1-T5 collisionless statements"
+  }
+ ],
+ "related_problems": [
+  {
+   "problem": "collisional-viscosity-and-eta",
+   "status": "no attempts, no claim",
+   "disposition": "this pass computes its parts (a)-(b); (c) finite-density exclusion and the simulator check remain; this machine will release its units so its attempts stay independent"
+  },
+  {
+   "problem": "isotropic-streaming-clause",
+   "logs": [
+    "a1 w-jonathonsmac4f50-j8197",
+    "a2 w-jonathonsmac4f50-j1e60",
+    "a3 w-macbookpro9927a-jfad7 (this machine, #9127)"
+   ],
+   "disposition": "distinct (streaming rules); a3 left the collisional viscosity open"
+  },
+  {
+   "problem": "inertial-gas-viscosity-and-damping",
+   "logs": [
+    "a2 w-macbookpro90c72-jd030 (this machine)"
+   ],
+   "disposition": "distinct (six-axis one-point closure and damping); not reused"
+  }
+ ],
+ "active_elsewhere": "none found on this question (claim status checked)",
+ "remaining_ranked": [
+  {
+   "rank": 1,
+   "group": "finite-density collisions under the same clause",
+   "why": "collisional-transfer stress across axis bonds is O(gamma rho^2) and involves the bond direction: the first place collisions could feed the cubic term; exclusion corrections to nu_lat, nu_coll"
+  },
+  {
+   "rank": 2,
+   "group": "PR8559 (block 49) U6-R5",
+   "why": "zero net flux said to remove all inverse-square fields; monopole-only no-go and growth bound to recover"
+  },
+  {
+   "rank": 3,
+   "group": "PR8562/8563/8564 (blocks 50-52) U6-R6",
+   "why": "weighted redraw cannot cancel the streaming defect; capture per face; alpha = c price"
+  },
+  {
+   "rank": 4,
+   "group": "PR8553/8554/8556 (blocks 45-47) U6-R4",
+   "why": "six-axis exchange cross flux, sqrt3 normalization, isotropic wind assumptions"
+  },
+  {
+   "rank": 5,
+   "group": "PR8549/8550 (block 44) U6-R3",
+   "why": "discrete Euler sampling vs continuous generator; degenerate sphere redraw classes"
+  },
+  {
+   "rank": 6,
+   "group": "PR8530/8546, 8547/8548 U6-R1/R2",
+   "why": "nonreversibility, pinning energy; not inspected"
+  }
+ ]
+}

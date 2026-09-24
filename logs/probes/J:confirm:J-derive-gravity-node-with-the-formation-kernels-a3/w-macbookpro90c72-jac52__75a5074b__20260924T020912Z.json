@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-gravity-node-with-the-formation-kernels-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jac52",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/gravity-node-with-the-formation-kernels/referee_w-macbookpro90c72-jac52/check.py",
+ "seed": 15752,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "75a5074b",
+ "started_utc": "20260924T020912Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the light-cone kernel algebra and the exponential remainder bound; the numerical roots of A(7 beta)=beta and =2 beta were not recomputed"
+ },
+ "review": "Independent: phi=1-E/7, chi=7/E, C/sigma^2=(7/2)(1/E+1/(14-E)), ratio 7/(14-E) is 1/2 at long wavelength and 7/2 at the corner",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:gravity-node-with-the-formation-kernels:a3/; its files are probes/work/derive/gravity-node-with-the-formation-kernels/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/gravity-node-with-the-formation-kernels/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "0503605da82258ed1f84ef58c529e2f2740f4c8df7a61766390c1b73d4891b1d",
+ "stdout_tail": "identities True corner 7/2\nHIT: confirmed - phi = 1-E/7, chi = 7/E, C/sigma^2 = (7/2)(1/E+1/(14-E)), and the ratio is 7/(14-E), equal to 1/2 at long wavelength and 7/2 at the zone corner\nSUMMARY: confirmed the light-cone kernel algebra and the exponential remainder bound; the numerical roots of A(7 beta)=beta and =2 beta were not recomputed\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jac52",
+  "at_utc": "20260924T020913Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Light-cone kernel identities chi=7/E and the covariance split both hold, including the 1/2 and 7/2 limits",
+  "by": "w-macbookpro90c72-jac52",
+  "at_utc": "20260924T020913Z"
+ }
+}

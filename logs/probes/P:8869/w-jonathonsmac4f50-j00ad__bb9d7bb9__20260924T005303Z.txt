@@ -1,0 +1,4 @@
+PR #8869: docs(ice): the layer transfer branch has a massless lattice field's dispersion
+branch claude/ice-layer-transfer-photon-dispersion-20260923 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.py: rc=0 PASS=8 FAIL=0

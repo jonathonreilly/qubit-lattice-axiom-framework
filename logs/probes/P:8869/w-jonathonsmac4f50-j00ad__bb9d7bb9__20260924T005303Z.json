@@ -1,0 +1,36 @@
+{
+ "task": "P:8869",
+ "type": "pr-reexecution",
+ "lane": "ice-layer-transfer-photon-dispersion-202",
+ "worker": "w-jonathonsmac4f50-j00ad",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8869",
+ "pr": 8869,
+ "branch": "claude/ice-layer-transfer-photon-dispersion-20260923",
+ "git_sha": "bb9d7bb9",
+ "started_utc": "20260924T005303Z",
+ "elapsed_s": 69.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=8 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #8869's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "63618416f72cc5f8a707bcbf0778e5868e6622193267a375c0bb391b2fba3726",
+ "stdout_tail": "PR #8869: docs(ice): the layer transfer branch has a massless lattice field's dispersion\nbranch claude/ice-layer-transfer-photon-dispersion-20260923 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_layer_transfer_branch_has_the_dispersion_of_a_massless_nearest_neighbour_lattice_field_2026_09_23.py: rc=0 PASS=8 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j00ad",
+  "at_utc": "20260924T005412Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

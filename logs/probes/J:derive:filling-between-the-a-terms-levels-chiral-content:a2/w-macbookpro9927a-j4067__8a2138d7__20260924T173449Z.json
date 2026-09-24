@@ -22,18 +22,18 @@
  "stdout_tail": "lf holds for every composition\nPASS X3 lower window holes: |E - a0| < 6a forces |sin k| < 12a; a = 1/20: 56 of 1728 grid points on 12^3; on 6^3 the lower window leaves 6 holes against the bound 16\nX3 (float, evidence, 48^3) states with |E - a0| < 6a per site: a=0.05: 0.0160 per site (bound 0.1375); a=0.10: 0.1355 per site (bound 2.0000)\ntime 7 s\nSUMMARY: PARTIAL (task HIT condition not met: no single-sense filling, a1's free no-go stands). New and exact: the a-term's levels sit at one record per site. On even tori the free sea at mu = a0 holds exactly N - z/2 records (eps, and eps T_1 with the staggered term), the window (a0+2a, a0+6a) of task (a) needs >= N + 6 + z/2 records on N sites, which the Record axiom's exclusion forbids for every a > 0; at one record per site the hard-core generator of every composition is the constant N a0 (flat, sense-free); with N - N_h records it is that constant plus at most 6(|a| + 1/2) N_h (+|m| N_h); the lower window leaves at most z/2 + 2#{k: |sin k| < 12a} holes (16 arcsin(12a)^3/pi^3 per site in the limit).\nHIT: under 'one record per site at a time' the filling of task (a) does not exist (the free sea there holds >= N + 6 + z/2 records on N sites, for every a > 0), the middle level a0 is exactly one record per site, where every composition's generator is the constant N a0, and below it the generator is that constant plus at most (6(|a|+1/2)+|m|) per hole; for |a| < 1/12 the lower window leaves at most 16 arcsin(12a)^3/pi^3 holes per site\n",
  "checked": {
   "by": "w-macbookpro9927a-j4067",
-  "at_utc": "20260924T173534Z",
+  "at_utc": "20260924T180040Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
-   "ok: log's git sha 8a2138d7 differs from the current HEAD 8ddd50e8 (fine if you pulled since; the run is bound to its sha)",
+   "ok: log's git sha 8a2138d7 differs from the current HEAD 46a22c2c (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
  },
  "triage": {
   "verdict": "science",
-  "note": "HIT as a new exact partial result (the task condition, a single-sense filling, is not met): the a-term's levels sit at one record per site (even tori: #(E < a0) = N - z/2); the filling of task (a) needs >= N + 6 + z/2 records, which exclusion forbids; at one record per site the hard-core generator of every composition is the constant N a0; below it the generator is diagonal plus <= 6(|a|+1/2) per hole. Builds on a1's free no-go. For a referee of another model family.",
+  "note": "HIT narrowed after triage. The core duplicates earlier work this worker had not found: the sibling a-filled-level-of-one-sense-under-exclusion a1 (#8668, confirmed #9016) and block 85 T2(b) (PR #8657). The duplicated results are: the a-term's levels at one record per site (symmetric spectrum), the capacity bound (task (a)'s filling needs >= N + 6 records; 70/64/58 on 4^3), and the jam's constant generator. Its chiral moment sum chi L^3 = 384 a^3 is #8668's -64a^3/pi^2 identity. New here: the staggered-term count (eps T_1: exactly N states below a0), the Gershgorin bound <= 6(|a|+1/2)+|m| per hole, and the small-a hole bound 16 arcsin(12a)^3/pi^3 per site. For a referee of another model family.",
   "by": "w-macbookpro9927a-j4067",
-  "at_utc": "20260924T173534Z"
+  "at_utc": "20260924T180040Z"
  }
 }

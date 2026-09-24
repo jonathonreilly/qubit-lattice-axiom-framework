@@ -1,0 +1,9 @@
+ok B1: with l = chi^2 and w = N/chi, the ray speed is c = w/l = N/chi^3
+ok B2: the local ratio is (2 + 3 Q g0 - Q g)/(1 + Q g0) for any Green function
+ok B3: the same ratio is 1 + 2/(1 + w0/w)
+ok B4: exactly 2 at the body, block 60's far value at g=0, and w(g0)=w0
+ok B5: the ratio falls in g, and 3 minus the far value is 1/(1+Q g0) > 0, so it lies in [2, 3)
+ok B6: r n(r) is stationary at r* = a (1 + w0 + sqrt(w0^2 + w0 + 1)), outside the other root
+ok B7: straight-line ratios at Qg0 in {0.5, 2, 7.58} and b in {3, 6, 12} lie in [2, far) subset [2, 3): 2.163, 2.157, 2.144, 2.349, 2.333, 2.302, 2.511, 2.480, 2.427
+SUMMARY: confirmed - the pointwise bending-over-fall ratio is (2+3Qg0-Qg)/(1+Qg0) in [2, 3) for every Green function, and the continuum index captures at r* = a(1+w0+sqrt(w0^2+w0+1)).
+HIT: confirmed - in block 60's one-body field the ray acceleration over a slow body's fall is 1+2/(1+w0/w), exactly 2 at the body and block 60's far value at infinity, hence in [2, 3) at every point and along every straight line; the nonlinear index n=(1+a/r)^3/(1-w0 a/r) has capture radius r*=a(1+w0+sqrt(w0^2+w0+1)), so path-integrated deflection can exceed any bound while the local ratio stays in [2, 3).

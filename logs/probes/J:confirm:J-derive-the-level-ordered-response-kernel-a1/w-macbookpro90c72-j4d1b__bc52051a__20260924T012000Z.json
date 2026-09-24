@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-level-ordered-response-kernel-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j4d1b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-level-ordered-response-kernel/referee_w-macbookpro90c72-j4d1b/check.py",
+ "seed": 12800,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bc52051a",
+ "started_utc": "20260924T012000Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the visit sum, the recursion, the level mass and the 8/7 on-axis comparison; the nonlinear response is still not proved"
+ },
+ "review": "The visit sum is the negative binomial series, each level sums to 4/3, and on drift-free modes the gain-one kernel is 8/E.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-level-ordered-response-kernel:a1/; its files are probes/work/derive/the-level-ordered-response-kernel/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-level-ordered-response-kernel/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "9e2bf82549057a018e5bfbe0574b9d6ca5c5614862dc077f315842b11c08a6cf",
+ "stdout_tail": "ok G: G(0)=4/3, G(1,0,0)=4/9, G(-1,0,0)=0\nok rec: closed form solves G = (4/3) delta + (1/3) sum_j G(.-e_j) for L<=6\nok level: every level sums to 4/3\nok series: sum C(L+j,j)/4^j approaches (4/3)^{L+1}\nok E: on k=(q,-q,0), 3-sum exp(-ik)=E/2 so R=8/E against 7/E\nok axis: on-axis wake is 1.142857 = 8/7 of 7/(4 pi r)\nok A: A(1.79)=0.4987 < 1/2 < A(1.81)=0.5026\nHIT: confirmed - G=(4/3) L!/(a!b!c!) 3^{-L} on the forward octant, each level sums to 4/3, and the drift-free gain-one kernel is 8/E\nSUMMARY: confirmed the visit sum, the recursion, the level mass and the 8/7 on-axis comparison; the nonlinear response is still not proved\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4d1b",
+  "at_utc": "20260924T012008Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Negative binomial visit sum gives G, each level is 4/3, and drift-free modes are 8/E.",
+  "by": "w-macbookpro90c72-j4d1b",
+  "at_utc": "20260924T012008Z"
+ }
+}

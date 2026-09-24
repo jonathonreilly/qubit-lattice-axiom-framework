@@ -1,0 +1,9 @@
+ok G: G(0)=4/3, G(1,0,0)=4/9, G(-1,0,0)=0
+ok rec: closed form solves G = (4/3) delta + (1/3) sum_j G(.-e_j) for L<=6
+ok level: every level sums to 4/3
+ok series: sum C(L+j,j)/4^j approaches (4/3)^{L+1}
+ok E: on k=(q,-q,0), 3-sum exp(-ik)=E/2 so R=8/E against 7/E
+ok axis: on-axis wake is 1.142857 = 8/7 of 7/(4 pi r)
+ok A: A(1.79)=0.4987 < 1/2 < A(1.81)=0.5026
+HIT: confirmed - G=(4/3) L!/(a!b!c!) 3^{-L} on the forward octant, each level sums to 4/3, and the drift-free gain-one kernel is 8/E
+SUMMARY: confirmed the visit sum, the recursion, the level mass and the 8/7 on-axis comparison; the nonlinear response is still not proved

@@ -22,11 +22,18 @@
  "stdout_tail": "ivatives; controls: V x V x V 1 (eps), Sym2 x Sym2 x V 1 (five derivatives admit invariants)\nok   F: five derivatives, explicit polynomial metric and rate field at the origin: C^ij R_ij = 6412057/15876000, eps d_a u R_b^d (Hess u)_dc = -16/35; for the mirrored fields g(-x), u(-x) both change sign exactly\nchecks: 7 ok, 0 fail\nSUMMARY: PARTIAL exact: (1) when the field energy sees the twist, blindness (e -> R e, th -> th + r) keeps every density of the dressed co-frame e' = R(-th) e, and the parity-odd one c5 det e'(eps.T[e']) = 2 c5 eps^{abc} e'^j_c d_a e'^j_b (at zero strain c5(eps.T - 4 div th)) survives per-tick counting and blindness; its twist equation is c5 d_a(w adj(e')_am) = 0, to first order curl rho = grad(u + 2 lam), so the flux of grad(u + 2 lam) = (1 - 2 beta) grad u through every closed surface must vanish: with block 64's beta = 1 no body at rest is allowed; (2) when it does not, blind densities are metric-only, none is odd at one or three derivatives, and C^ij R_ij and eps d_a u R_b^d (Hess u)_dc are odd, blind and per-tick at five\nHIT: a parity-odd field energy survives per-tick counting and blindness: c5 det e'(eps.T[e']), the co-frame turned back by block 65's twist (at zero strain c5(eps.T - 4 div th)); its twist equation, curl rho = grad(u + 2 lam) at first order, has no solution around a body when lam = -beta u with beta != 1/2 (block 64's member: beta = 1); without the twist the first odd, blind, per-tick density has five derivatives (sqrt(g) C^ij R_ij)\n",
  "checked": {
   "by": "w-macbookpro9927a-j7619",
-  "at_utc": "20260924T065528Z",
+  "at_utc": "20260924T065606Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e9bb1267 differs from the current HEAD 5238487a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: T1 (blind densities of frame and twist are densities of the dressed co-frame; the odd member c5 det e'(eps.T[e']) survives per-tick counting and blindness) is exact at block 65's first order and corrects attempt 1's step 8 for a field energy that sees both; T2's exclusion of bodies uses block 59/60's lengths at first order; T3 assumes normal coordinates and Weyl = 0 in 3D. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-j7619",
+  "at_utc": "20260924T065606Z"
  }
 }

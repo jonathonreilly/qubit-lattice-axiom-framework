@@ -173,6 +173,7 @@ one clause generates across the lanes.
     - So a record leaves every other site in its Lüders conditional state.
     - The distant part of D-perm, the collapse, follows from D-loc and the
       site-local lock.
+    - Two-possibility menus are forced to be antipodal.
 
 **The ladder.** What each sector needs from the dynamics and the lattice:
 
@@ -282,7 +283,7 @@ and it fixes how a record updates distant sites. So the
 quantum-probability sector's decision points reduce to:
 - D-loc;
 - the lock (a record leaves its own site in its possibility);
-- the antipodal menu;
+- two-possibility menus (that they are antipodal follows, open PR 9085);
 - reversibility, time structure and range (D-rev);
 - covariance.
 

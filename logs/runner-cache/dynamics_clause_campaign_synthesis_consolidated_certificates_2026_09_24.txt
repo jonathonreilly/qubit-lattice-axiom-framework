@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
 runner_sha256: 2dc6ab4edcd5e9c085a346986a575966baabe0a3507ca50fbb79366436d5a49c
-input_fingerprint_sha256: ebf50febc8dabdbe52f26fa2b9a53e6d4f086fb37929c38e8d0d2263162e124f
+input_fingerprint_sha256: 38b64cc659a6f6fa9a4c512f822c2d4dcd319cebfbed273c248b4d630f8ea5bd
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.99
+elapsed_sec: 0.98
 status: ok
 ----- stdout -----
 [PASS] ledger: the decision points used are exactly the declared ones :: 16 declared, 16 used across 16 blocks

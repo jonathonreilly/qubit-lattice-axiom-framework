@@ -1,0 +1,3 @@
+gram True zero_mode True pinned 1470/11=1470/11
+HIT: confirmed - on the 3^3 torus the bond sum equals <1|phi Lambda phi|1>, phi Lambda phi (1/phi) is 0, and a pinning mu gives stiffness c mu s/(c s+mu)
+SUMMARY: confirmed the rewriting and the zero-energy background; the chiral-sea numerics were not recomputed

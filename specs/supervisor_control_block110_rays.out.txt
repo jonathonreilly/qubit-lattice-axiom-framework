@@ -1,0 +1,21 @@
+curvature member, M = 1 (3a + p = 2):
+  rho = 0.5: a = 0.571429, p = 0.285714, r* = 1.613072, b_c = 4.868720
+    b= 40.0: ray 0.107626703  quadrature 0.107626705  series(4) 0.107620586
+    b= 12.0: ray 0.443101603  quadrature 0.443101604  series(4) 0.439649022
+    b=  8.0: ray 0.819289918  quadrature 0.819289918  series(4) 0.783241362
+    b = b_c(1 - 1e-3): captured;  b = b_c(1 + 1e-3): escapes
+  rho = 1.0: a = 0.500000, p = 0.500000, r* = 1.866025, b_c = 5.196152
+    b= 40.0: ray 0.108102904  quadrature 0.108102906  series(4) 0.108095045
+    b= 12.0: ray 0.452599118  quadrature 0.452599119  series(4) 0.448033498
+    b=  8.0: ray 0.858714018  quadrature 0.858714019  series(4) 0.808923525
+    b = b_c(1 - 1e-3): captured;  b = b_c(1 + 1e-3): escapes
+  rho = 3.0: a = 0.333333, p = 1.000000, r* = 2.535184, b_c = 6.064605
+    b= 40.0: ray 0.109524643  quadrature 0.109524645  series(4) 0.109509908
+    b= 12.0: ray 0.483345914  quadrature 0.483345915  series(4) 0.474028915
+    b=  8.0: ray 1.008812252  quadrature 1.008812253  series(4) 0.890265997
+    b = b_c(1 - 1e-3): captured;  b = b_c(1 + 1e-3): escapes
+log-linear completion e^(2A/r), A = 1 (first-order turn 4/b): capture threshold 2e = 5.436564
+    b= 40.0: ray 0.108691143  quadrature 0.108691145  series(6) 0.108691013
+    b= 12.0: ray 0.463895840  quadrature 0.463895841  series(6) 0.463003071
+    b=  8.0: ray 0.905147478  quadrature 0.905147478  series(6) 0.881829227
+    b = 2e(1 - 1e-3): captured;  b = 2e(1 + 1e-3): escapes

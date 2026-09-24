@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-24 block 110 — author checks (not a review PASS)
+The supervisor's derivation. T5 re-derives a Grok-refereed probes result. The 3D ray control agrees with the quadrature, and T4's values at equal charges agree with the published series. Census 6/6 in family.

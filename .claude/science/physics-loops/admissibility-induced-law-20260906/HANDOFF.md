@@ -25,3 +25,11 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
 Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
 
 Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
+
+## 2026-09-24 block 110 opened for review (supervisor's derivation with a refereed probes result; independent vs main)
+In block 60's curvature member, around a spherical body the walk's long-wave rays see the index χ³/N. That is the comparator's index at every order exactly when the body's two charges agree. The exact identity P − Q = (1/8K)Σ[2τ − e(1−w)/w]/χ shows three things:
+- a body at rest has P < Q;
+- equal charges need hop energy to balance the slowed clocks;
+- with no negative rest or hop energy, equal charges are impossible if every content clock is below 1/3.
+
+The capture threshold and the second-order term rise with ρ = P/Q. At ρ = 1 they are 3√3 M and 15π/4. The log-linear completion gives ekA and 4π.

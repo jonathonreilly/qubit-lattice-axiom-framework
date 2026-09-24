@@ -1,0 +1,82 @@
+{
+  "packet": {
+    "precision_decimal_digits": 80,
+    "direct_velocity_checks": [
+      {
+        "N": 3,
+        "direct_velocity_mean_over_J": "1.0",
+        "direct_velocity_variance_over_J_squared": "1.0",
+        "largest_identity_error": "5.271099e-81",
+        "deleted_exterior_velocity_components_defect": "1.0",
+        "cyclic_shift_two_mutation_defect": "0.5"
+      },
+      {
+        "N": 4,
+        "direct_velocity_mean_over_J": "1.33333333333333333333333333333333333333333333",
+        "direct_velocity_variance_over_J_squared": "0.555555555555555555555555555555555555555555556",
+        "largest_identity_error": "5.271099e-81",
+        "deleted_exterior_velocity_components_defect": "0.33333333333333333333333333333333333",
+        "cyclic_shift_two_mutation_defect": "0.16666666666666666666666666666666667"
+      },
+      {
+        "N": 7,
+        "direct_velocity_mean_over_J": "1.74899320123915568701666992266949320708818315",
+        "direct_velocity_variance_over_J_squared": "0.099006934752262419356249425217419237398412717",
+        "largest_identity_error": "1.0542198e-81",
+        "deleted_exterior_velocity_components_defect": "0.027001891296071568915340752332023428",
+        "cyclic_shift_two_mutation_defect": "0.013500945648035784457670376166011714"
+      },
+      {
+        "N": 13,
+        "direct_velocity_mean_over_J": "1.92363735043547326393358368134339925240366561",
+        "direct_velocity_variance_over_J_squared": "0.0103168344396798809390944587101501800438371693",
+        "largest_identity_error": "2.1084396e-81",
+        "deleted_exterior_velocity_components_defect": "0.00134567405734954968770797287523698",
+        "cyclic_shift_two_mutation_defect": "0.00067283702867477484385398643761849"
+      },
+      {
+        "N": 64,
+        "direct_velocity_mean_over_J": "1.99678981778146459082989130207298661438364991",
+        "direct_velocity_variance_over_J_squared": "0.0000201274802269549248413297293052737291815347109",
+        "largest_identity_error": "4.2168792e-81",
+        "deleted_exterior_velocity_components_defect": "0.0000004830595254469181961919135033265695",
+        "cyclic_shift_two_mutation_defect": "0.00000024152976272345909809595675166328475"
+      },
+      {
+        "N": 257,
+        "direct_velocity_mean_over_J": "1.99980077189539577343718943296503927739613828",
+        "direct_velocity_variance_over_J_squared": "0.0000000789203464840561857301211450124899210818280761",
+        "largest_identity_error": "1.3494013e-79",
+        "deleted_exterior_velocity_components_defect": "0.0000000004633288443290969808030595597602148",
+        "cyclic_shift_two_mutation_defect": "0.0000000002316644221645484904015297798801074"
+      }
+    ],
+    "symbolic_all_N_recurrence_variance_identity": true,
+    "scope": "The finite high-precision checks are not interval certificates; POST supplies the all-N finite-sum argument."
+  },
+  "finite_lift": {
+    "dimension": 16,
+    "exact_identities": {
+      "full_unitarity": true,
+      "free_energy_conservation": true,
+      "global_product_rule": true,
+      "global_phase_conjugation": true,
+      "incomplete_blocks_identity": true,
+      "exact_near_identity_metric": true
+    },
+    "correct_norm_distance_to_identity": "sqrt(2/5)",
+    "wrong_completion_preserves_blank_column": true,
+    "wrong_completion_norm_distance_to_identity": "2",
+    "wrong_completion_near_identity_bound_rejected": true
+  },
+  "clock_diagnostic": {
+    "J": 6496.270939773013,
+    "clock_dimension": 72,
+    "observed_dimensionful_minimum_eigenvalue": -4.435186788519753e-12,
+    "full_dimensionless_spectrum_error_against_high_precision_formula": 1.7763568394002505e-15,
+    "wrong_ground_shift_mutation_error": 1.000000002360224e-06,
+    "scope": "Reproduces the scale-aware finite diagnostic. Positivity follows from the exact spectrum, not the observed sign of a roundoff-sized eigenvalue."
+  },
+  "source_sha256": "0ac93e24cef8de3deab168563aad6073327b6a838d68210db07b6bc1a3d76cd9",
+  "scope": "Independent small controls; no root source import, no fixed-horizon numerical convergence claim, and no audit verdict."
+}

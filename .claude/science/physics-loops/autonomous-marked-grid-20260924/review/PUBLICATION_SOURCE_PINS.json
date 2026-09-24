@@ -1,0 +1,95 @@
+{
+  "frozen_utc": "2026-09-24T13:37:10.971428+00:00",
+  "scope": "Only the released final autonomous finite-grid note, runner, declared parents, result, execution/cache records, runner delta and fingerprint protocol; governance reused at unchanged hashes. No independent numerical replication in this step.",
+  "prior_seals": {
+    "PRE_SEAL.json": {
+      "sha256": "7853c846d329a7787680f88b2a62256029a5d42158021d4b6c577315c923358a",
+      "members_unchanged": 5
+    },
+    "POST_SEAL.json": {
+      "sha256": "311c55d8ab6b64eda18c16f61c39b5827211e5c9f5e90adb3158d6c3b709572a",
+      "members_unchanged": 22
+    }
+  },
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-publication/docs/FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_sources/worktree/docs/FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "04a95c0ebe36a2c23ad8860ccd9c24d140e17040bdb194a6d96030eaa86a197d",
+      "bytes": 21755
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-publication/scripts/finite_autonomous_marked_dynamics_under_grid_observations_2026_09_24.py",
+      "snapshot": "publication_sources/worktree/scripts/finite_autonomous_marked_dynamics_under_grid_observations_2026_09_24.py",
+      "sha256": "8e38fc60019c7d9eb2c377945d4c6bd3e3dbb59fce6736a6c5501a47df97cbbb",
+      "bytes": 12276
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-publication/docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_sources/worktree/docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+      "bytes": 16673
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-publication/docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_sources/worktree/docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+      "bytes": 17399
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-publication/AGENTS.md",
+      "snapshot": "publication_sources/worktree/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-publication/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "publication_sources/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-publication/outputs/autonomous_marked_grid_observations_20260924/PROCESS_CONTROL_RESULTS.json",
+      "snapshot": "publication_sources/worktree/outputs/autonomous_marked_grid_observations_20260924/PROCESS_CONTROL_RESULTS.json",
+      "sha256": "276afe6d625a058b6e6abb5a5bd1689832b7a6e967b4a8da86adec225e03a1fc",
+      "bytes": 6002
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-publication/logs/runner-cache/finite_autonomous_marked_dynamics_under_grid_observations_2026_09_24.txt",
+      "snapshot": "publication_sources/worktree/logs/runner-cache/finite_autonomous_marked_dynamics_under_grid_observations_2026_09_24.txt",
+      "sha256": "1a789be6cb4ff72d1a042e1252ef4878dc0a0729318d5c4c257d24fffd470c8d",
+      "bytes": 8885
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-publication/scripts/runner_cache.py",
+      "snapshot": "publication_sources/worktree/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FOURTH_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "publication_sources/external/FOURTH_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "5ff915bfc1cc41328f09b885c2b5b66d18fc56042599550c6c054e82c26b8463",
+      "bytes": 9723
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FOURTH_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "publication_sources/external/FOURTH_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "78f49b6f3ff4063334f7e9f1a949447c8dee365e21eab6eeb5266e32cff60059",
+      "bytes": 827
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FOURTH_PUBLICATION_RUNNER_DELTA.diff",
+      "snapshot": "publication_sources/external/FOURTH_PUBLICATION_RUNNER_DELTA.diff",
+      "sha256": "164021fd7a0fc344e58256ff8b32716bd5d9d57157a0975a5b8e3905b868dc54",
+      "bytes": 1616
+    }
+  ],
+  "cache_protocol_sections_inspected": [
+    "module format documentation",
+    "declared_input_paths",
+    "declared_input_fingerprint",
+    "write-cache body formatting"
+  ],
+  "complete_new_argument_and_runner_read": true
+}

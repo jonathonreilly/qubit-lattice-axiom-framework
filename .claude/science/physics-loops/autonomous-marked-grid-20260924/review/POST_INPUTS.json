@@ -1,0 +1,116 @@
+{
+  "read_utc": "2026-09-24T13:15:09.917753+00:00",
+  "sources": [
+    {
+      "relative_path": "AUTHOR_SEAL.json",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/AUTHOR_SEAL.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/AUTHOR_SEAL.json",
+      "sha256": "9cbb6f379494f1eb0d0da005a14a2641108a59b7c17080bab31b4e4a74c3cdd4",
+      "bytes": 2377
+    },
+    {
+      "relative_path": "FINITE_INTERVENTION_PERSONAL_DERIVATION.md",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/FINITE_INTERVENTION_PERSONAL_DERIVATION.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/FINITE_INTERVENTION_PERSONAL_DERIVATION.md",
+      "sha256": "95f69e24404e5ad72605f0998c92ffe14b390027bd3f73bfa555a2b98d637773",
+      "bytes": 18371
+    },
+    {
+      "relative_path": "PROCESS_CONTROL.stderr",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/PROCESS_CONTROL.stderr",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/PROCESS_CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "relative_path": "PROCESS_CONTROL.stdout",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/PROCESS_CONTROL.stdout",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/PROCESS_CONTROL.stdout",
+      "sha256": "e7acb221eb5a739f91624858e24d39961d0116504a94c3769deff7cca33dfa5a",
+      "bytes": 8476
+    },
+    {
+      "relative_path": "PROCESS_CONTROL_RESULTS.json",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/PROCESS_CONTROL_RESULTS.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/PROCESS_CONTROL_RESULTS.json",
+      "sha256": "f395b39777cf750a66c284cda46c6df4be58ccbcfa8b5f1c7d93d6266a365901",
+      "bytes": 6001
+    },
+    {
+      "relative_path": "PROCESS_EXTENSION_PLAN.md",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/PROCESS_EXTENSION_PLAN.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/PROCESS_EXTENSION_PLAN.md",
+      "sha256": "dee107152e14f9702192cb5092358e7e23257fde64248f8e6ce7769c9f8e231c",
+      "bytes": 4018
+    },
+    {
+      "relative_path": "control_attempt01/PROCESS_CONTROL.stderr",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/control_attempt01/PROCESS_CONTROL.stderr",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/control_attempt01/PROCESS_CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "relative_path": "control_attempt01/PROCESS_CONTROL.stdout",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/control_attempt01/PROCESS_CONTROL.stdout",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/control_attempt01/PROCESS_CONTROL.stdout",
+      "sha256": "ad9303411a1cb08617cae380f92572ae271ecf9594cf9326464fd65fa3e193fb",
+      "bytes": 5856
+    },
+    {
+      "relative_path": "control_attempt01/PROCESS_CONTROL_RESULTS.json",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/control_attempt01/PROCESS_CONTROL_RESULTS.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/control_attempt01/PROCESS_CONTROL_RESULTS.json",
+      "sha256": "1923235bbce961817d0a1447f1b6be3d0ef16840d0a4c37afa999b2a54766679",
+      "bytes": 4498
+    },
+    {
+      "relative_path": "control_attempt01/process_controls.py",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/control_attempt01/process_controls.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/control_attempt01/process_controls.py",
+      "sha256": "9b51504b2363e277772cd80df7a02de34618fd5f35956ba7eb4c388fa162f2c4",
+      "bytes": 10572
+    },
+    {
+      "relative_path": "control_attempt02/DIAGNOSIS.json",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/control_attempt02/DIAGNOSIS.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/control_attempt02/DIAGNOSIS.json",
+      "sha256": "4f7249434341f496483aec8273e176ee140cbaa634dbf2ad1df2ad363b3d11b0",
+      "bytes": 533
+    },
+    {
+      "relative_path": "control_attempt02/PROCESS_CONTROL.stderr",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/control_attempt02/PROCESS_CONTROL.stderr",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/control_attempt02/PROCESS_CONTROL.stderr",
+      "sha256": "d9aa8e97c1fb1ca8bb415b812e21065e97e50d7dce3887120bfe608f9efe73dd",
+      "bytes": 728
+    },
+    {
+      "relative_path": "control_attempt02/PROCESS_CONTROL.stdout",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/control_attempt02/PROCESS_CONTROL.stdout",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/control_attempt02/PROCESS_CONTROL.stdout",
+      "sha256": "f64c9084ba1e611e35804782cb7412668c233c63f3f50ecffe32c522677f0b50",
+      "bytes": 1161
+    },
+    {
+      "relative_path": "control_attempt02/process_controls.py",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/control_attempt02/process_controls.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/control_attempt02/process_controls.py",
+      "sha256": "5bacece9101fd383e684260b7f51ff4a7d4a8300b5e1a3589b87f1704e997cde",
+      "bytes": 11479
+    },
+    {
+      "relative_path": "process_controls.py",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/process_controls.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/released_sources/process_controls.py",
+      "sha256": "6cd8aebcce5a78d54bbe225cdfbb21c7c074067ccf447ea7df4532ce0da18ac6",
+      "bytes": 11792
+    }
+  ],
+  "root_parent_hashes_reverified": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42"
+  },
+  "pre_seal_sha256": "7853c846d329a7787680f88b2a62256029a5d42158021d4b6c577315c923358a",
+  "scope": "Released autonomous-process candidate and its controls only; PROCESS_EXTENSION_PLAN.md is preserved/hash-checked as opaque provenance, not used as a scientific premise."
+}

@@ -1,0 +1,1 @@
+Initial read command did not start: assigned output cwd did not yet exist (CreateProcess os error 2). Created only assigned output directory, then retried. No scientific calculation failed.

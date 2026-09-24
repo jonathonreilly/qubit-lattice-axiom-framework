@@ -1,0 +1,57 @@
+{
+  "status": "PASS-correspondence-only",
+  "checker_sha256": "7f632cf11fd924e9623bff1c027a04857cc05376b8c6e60e907a99ac06e2131a",
+  "publication_source_pins_sha256": "4a6a4d7f5bbef9a8ecfe9d89baca64bdcedda264da772eadf5556f6471a0bce8",
+  "source_snapshot_pairs_checked": 12,
+  "prior_seals_unchanged": {
+    "PRE_SEAL.json": {
+      "sha256": "7853c846d329a7787680f88b2a62256029a5d42158021d4b6c577315c923358a",
+      "members_unchanged": 5
+    },
+    "POST_SEAL.json": {
+      "sha256": "311c55d8ab6b64eda18c16f61c39b5827211e5c9f5e90adb3158d6c3b709572a",
+      "members_unchanged": 22
+    }
+  },
+  "runner_sha256": "8e38fc60019c7d9eb2c377945d4c6bd3e3dbb59fce6736a6c5501a47df97cbbb",
+  "note_sha256": "04a95c0ebe36a2c23ad8860ccd9c24d140e17040bdb194a6d96030eaa86a197d",
+  "input_fingerprint_sha256": "98bd881d2988766c559188c1404b66ce9448c593caaaff574c7b3251fcc9fdd7",
+  "complete_cache_bytes_match_recorded_execution_and_recomputed_fingerprint": true,
+  "complete_stdout_parsed_and_matches_saved_result": true,
+  "recorded_exit_code": 0,
+  "recorded_stderr": "",
+  "recorded_wall_seconds": 2.8866958618164062,
+  "runner_ast_identical_after_four_explicit_packaging_changes": true,
+  "supplied_runner_delta_matches_direct_diff": true,
+  "proof_sections_2_to_6_byte_identical": true,
+  "proof_section_7_only_drops_proposed_qualifier": true,
+  "both_post_scope_clarifications_present": true,
+  "scientific_result_payload_exactly_equals_frozen_root_result": true,
+  "root_result_differences": [
+    {
+      "path": "$.process[0].elapsed_seconds",
+      "root": 2.078149334061891,
+      "publication": 1.2110576250124723
+    },
+    {
+      "path": "$.process[1].elapsed_seconds",
+      "root": 1.9300322909839451,
+      "publication": 1.1260112079326063
+    },
+    {
+      "path": "$.elapsed_seconds",
+      "root": 4.025785374920815,
+      "publication": 2.350598500110209
+    },
+    {
+      "path": "$.source_sha256",
+      "root": "6cd8aebcce5a78d54bbe225cdfbb21c7c074067ccf447ea7df4532ce0da18ac6",
+      "publication": "8e38fc60019c7d9eb2c377945d4c6bd3e3dbb59fce6736a6c5501a47df97cbbb"
+    }
+  ],
+  "packet_width_count": 7,
+  "marked_step_count": 4,
+  "adaptive_process_case_count": 2,
+  "independent_numerical_replication_performed": false,
+  "scope": "Source, complete output, execution record and cache fingerprint correspondence. Reuses frozen analytic POST and separate independent controls; no numerical runner import or execution, no audit verdict."
+}

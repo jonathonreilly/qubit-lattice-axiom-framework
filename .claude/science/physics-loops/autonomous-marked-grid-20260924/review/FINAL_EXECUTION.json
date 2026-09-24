@@ -1,0 +1,16 @@
+{
+  "runner": "scripts/finite_autonomous_marked_dynamics_under_grid_observations_2026_09_24.py",
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_seconds": 2.8866958618164062,
+  "timeout_seconds": 180,
+  "source_sha256": "8e38fc60019c7d9eb2c377945d4c6bd3e3dbb59fce6736a6c5501a47df97cbbb",
+  "result_sha256": "276afe6d625a058b6e6abb5a5bd1689832b7a6e967b4a8da86adec225e03a1fc",
+  "cache_record": "logs/runner-cache/finite_autonomous_marked_dynamics_under_grid_observations_2026_09_24.txt",
+  "seal_entries_reverified": {
+    "PRE_SEAL.json": 5,
+    "POST_SEAL.json": 22,
+    "PUBLICATION_COMPARISON_SEAL.json": 19
+  },
+  "scope": "Root primary execution. Separate PRE/POST analytic reconstruction and separately built controls are independent evidence; final source/output correspondence is not numerical replication."
+}

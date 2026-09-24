@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.py
-runner_sha256: 10042ae464be37386a834fcdd45b9568d6aec7a1b838866e7a75dd405218ff76
+runner_sha256: 0c2acd1357cb2b70dc7385c404c9d1f7e8ecf5de92c940a076353ab7d64de44b
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 136.13
+elapsed_sec: 191.86
 status: ok
 ----- stdout -----
 == A. Saturation leaves square ice ==
@@ -18,8 +18,11 @@ status: ok
 == D. A local quartic cost ==
 [PASS] the quartic fit stiffens along the background more than across, and accounts for 55% to 80% of the shift at s = 2 and 4 :: c_2 = 0.3261, d = 0.0631; fraction explained 0.660, 0.641
 
-time 136 s
-TOTAL: PASS=4 FAIL=0
+== E. The shift does not scale with the wavenumber ==
+[PASS] at (0, pi) the shifts at s = 2 and 4 equal those at (pi/2, 0) within 2%, although D_0 differs by a third: a near-constant rise, not a rescaling :: D_0 1.29627 vs 1.74193; shifts 0.01187, 0.04888 vs 0.01179, 0.04858; quartic fraction at (0, pi) 0.893, 0.867
+
+time 191 s
+TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----
 

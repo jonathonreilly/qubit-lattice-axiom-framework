@@ -1,7 +1,7 @@
 ---
 claim_id: uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_bounded_theorem_note_2026-09-23
 claim_type: bounded_theorem
-claim_scope: "For uniform ice on infinite prisms, with the layer transfer T of the landed layer-unit note (PR 8740) applied by the row transfer of the landed note of PR 8859: at full polarization |S| = A every vertex has exactly one of its two vertical links occupied, so each layer carries two of four horizontal links at every vertex, and the top level of the |S| = A sector equals the number of square-ice configurations of the torus, exactly on 2 x 2, 2 x 4, 2 x 6, 2 x 8 and 4 x 4 (18, 114, 858, 7074, 2970). On 4 x 4 the flux cost c(S) = (A/S^2) ln(lam_0/lam_S) rises monotonically from 0.3270 at |S| = 2 to 0.4373 at |S| = 16. The branch rate D_s at physical wavenumber (pi/2, 0) in the |S| = s sector rises from 1.2963 at s = 0 to 1.3081, 1.3452, 1.4120, 1.5184 and 1.6846 at s = 2 to 10; the small-flux shift is quadratic (D_4 - D_0 = 4.118 (D_2 - D_0)). A local quartic cost fitted at |S| = 2 and 4 (c_2 = 0.3261, d = 0.0631) stiffens the field along the background (c_2 + 6 d rho^2) more than across it (c_2 + 2 d rho^2) and so predicts D_s/D_0 - 1 = 2 d rho^2/c_2, which accounts for 66% and 64% of the measured shift at s = 2 and 4. No limit beyond the computed cross-sections is claimed. No constant is compared with an outside value. No reading, rule, alphabet, unit or order law is adopted."
+claim_scope: "For uniform ice on infinite prisms, with the layer transfer T of the landed layer-unit note (PR 8740) applied by the row transfer of the landed note of PR 8859: at full polarization |S| = A every vertex has exactly one of its two vertical links occupied, so each layer carries two of four horizontal links at every vertex, and the top level of the |S| = A sector equals the number of square-ice configurations of the torus, exactly on 2 x 2, 2 x 4, 2 x 6, 2 x 8 and 4 x 4 (18, 114, 858, 7074, 2970). On 4 x 4 the flux cost c(S) = (A/S^2) ln(lam_0/lam_S) rises monotonically from 0.3270 at |S| = 2 to 0.4373 at |S| = 16. The branch rate D_s at physical wavenumber (pi/2, 0) in the |S| = s sector rises from 1.2963 at s = 0 to 1.3081, 1.3452, 1.4120, 1.5184 and 1.6846 at s = 2 to 10; the small-flux shift is quadratic (D_4 - D_0 = 4.118 (D_2 - D_0)). A local quartic cost fitted at |S| = 2 and 4 (c_2 = 0.3261, d = 0.0631) stiffens the field along the background (c_2 + 6 d rho^2) more than across it (c_2 + 2 d rho^2) and so predicts D_s/D_0 - 1 = 2 d rho^2/c_2, which accounts for 66% and 64% of the measured shift at s = 2 and 4. The shift does not scale with the wavenumber: at physical (0, pi), where D_0 = 1.7419 is a third larger, the shifts are 0.01179 and 0.04858 against 0.01187 and 0.04888 at (pi/2, 0), equal within 2%, and the quartic fraction there is 0.89 and 0.87. A background flux raises the rate by a near-constant amount; the smooth quartic rescaling does not describe it, and its fraction depends on the wavenumber. No limit beyond the computed cross-sections is claimed. No constant is compared with an outside value. No reading, rule, alphabet, unit or order law is adopted."
 
 upstream_dependencies:
   - minimal_axioms
@@ -50,19 +50,27 @@ full polarization.
    small flux the shift is quadratic in the background: D_4 − D_0 is 4.118
    times D_2 − D_0. A linear field would show no shift at all.
 
-4. **A local quartic cost explains two thirds of it.** Fit c(ρ) = c_2 + d ρ²
-   at |S| = 2 and 4, with ρ = S/A: c_2 = 0.3261, d = 0.0631. A cost
-   A(c_2 ρ² + d ρ⁴) stiffens the field along the background, c_2 + 6dρ²,
-   more than across it, c_2 + 2dρ². For a divergence-free field with
-   stiffness K_z along and K_⊥ across, the rate is √(K_z/K_⊥) |q|, so
-   D_s/D_0 − 1 = 2dρ²/c_2. This accounts for 66% and 64% of the measured
-   shift at s = 2 and 4. The rest lies beyond a local quartic cost at this
-   wavenumber, and it is recorded, not fitted.
+4. **The shift is a near-constant rise, not a rescaling.** Fit
+   c(ρ) = c_2 + d ρ² at |S| = 2 and 4, with ρ = S/A: c_2 = 0.3261,
+   d = 0.0631. A smooth cost A(c_2 ρ² + d ρ⁴) stiffens the field along the
+   background, c_2 + 6dρ², more than across it, c_2 + 2dρ². For a
+   divergence-free field with stiffness K_z along and K_⊥ across, the rate
+   is √(K_z/K_⊥) |q|, so this rescaling predicts D_s/D_0 − 1 = 2dρ²/c_2. At
+   (π/2, 0) it accounts for 66% and 64% of the measured shift. At physical
+   (0, π), however, where D_0 = 1.7419 is a third larger, the shifts are
+   0.01179 and 0.04858, equal to those at (π/2, 0) within 2%. The quartic
+   fraction there is 0.89 and 0.87. So a background flux raises the rate
+   by a near-constant amount, not in proportion to the rate, and the smooth
+   rescaling is not the mechanism. On these cross-sections a sector
+   |S| = 2 is a single threading flux line rather than a smooth
+   background, which may explain the constant rise. That reading is
+   recorded as open, not claimed.
 
 5. **What this means.** The static photon of uniform ice is linear only at
-   small flux. A background flux raises both its cost and its rate along
-   the background, quadratically in the background. The medium responds
-   nonlinearly, with its coefficients fixed by the rule and not fitted. At
+   small flux. A background flux raises its cost, and it raises the
+   photon's rate by a near-constant amount, quadratically in the
+   background. The medium responds nonlinearly, with its coefficients fixed
+   by the rule and not fitted. At
    full polarization the three-dimensional field freezes into independent
    two-dimensional ice layers. The Gaussian photon of open PRs 8871, 8881
    and 8890 is the small-flux limit of this. No constant is compared with an
@@ -72,7 +80,7 @@ full polarization.
 
 - **Runner:**
   `scripts/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.py`
-- **Result:** `TOTAL: PASS=4 FAIL=0`, about 136 s, stdout 975 characters,
+- **Result:** `TOTAL: PASS=5 FAIL=0`, about 190 s, stdout 1295 characters,
   peak about 500 MB.
 - **Cache:**
   `logs/runner-cache/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.txt`
@@ -96,8 +104,8 @@ full polarization.
 - Landed PR 8859: the flux cost on 4 × 4 up to |S| = 8.
 - Open PRs 8871, 8881 and 8890: the Gaussian photon at small flux.
 - New here: the exact saturation identity with square ice; the equation
-  of state to full polarization; the photon's rate in a background flux;
-  and the anisotropic quartic account of two thirds of its shift.
+  of state to full polarization; the photon's rate in a background flux,
+  a near-constant rise that a smooth quartic rescaling does not describe.
 
 ## Theorem — Saturation and the nonlinear response
 
@@ -152,7 +160,11 @@ primitive, no new comparator and no new framing is imported.
   seat.
 - **Independence sources:** the two-dimensional square-ice count; the cost
   and the rate as separate spectra.
-- **Correction before landing.** A first version built the dense sector
+- **Correction before landing (2).** The first push read the quartic
+  account's 66% at (π/2, 0) as its mechanism. The shift is the same at
+  (0, π), where the account gives 89%, so it is a near-constant rise; check
+  E now records this, and the interpretation is withdrawn.
+- **Correction before landing (1).** A first version built the dense sector
   matrices from rows of an N × N identity, which reached 1.6 GB on this
   machine. It now builds each unit vector directly (peak about 500 MB).
 - **Mutation census** (caught means at least one FAIL line or a nonzero
@@ -168,10 +180,12 @@ primitive, no new comparator and no new framing is imported.
 | two occupied links per vertex | rule changed | caught (4 FAILs) |
 | wrap links not identified | wrap dropped | caught (4 FAILs) |
 | row translation by two sites | projector broken | caught (2 FAILs) |
+| second wavenumber equal to the first | check E made vacuous | caught (1 FAIL) |
+| shift read without subtracting D_0 | check E changed | caught (1 FAIL) |
 
-  8 of 8 are caught.
+  10 of 10 are caught.
 - **Vacuity guard:** every count, cost, rate and fraction is printed.
-- **Budget:** 4 checks, stdout 975 characters (ceiling 6000), about 136 s
+- **Budget:** 5 checks, stdout 1295 characters (ceiling 6000), about 190 s
   (ceiling 900 s), peak about 500 MB.
 
 ## Verification
@@ -180,6 +194,6 @@ primitive, no new comparator and no new framing is imported.
 python3 scripts/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.py
 ```
 
-Expected summary line: `TOTAL: PASS=4 FAIL=0`; the runner exits nonzero
+Expected summary line: `TOTAL: PASS=5 FAIL=0`; the runner exits nonzero
 if any check fails. Cached output:
 `logs/runner-cache/uniform_ice_static_photon_stiffens_in_a_background_flux_and_saturation_leaves_square_ice_2026_09_23.txt`.

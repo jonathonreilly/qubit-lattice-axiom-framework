@@ -24,7 +24,13 @@ C. The photon in a background flux on 4 x 4. The branch rate
 D. A local quartic cost c(rho) = c_2 + d rho^2, fitted at |S| = 2 and 4,
    stiffens the field along the background (c_2 + 6 d rho^2) more than
    across it (c_2 + 2 d rho^2), so it predicts D_s / D_0 - 1 = 2 d rho^2 / c_2.
-   It accounts for between 55% and 80% of the measured shift at s = 2 and 4.
+   At (pi/2, 0) that accounts for between 55% and 80% of the measured shift
+   at s = 2 and 4.
+E. The shift does not scale with the wavenumber. At physical (0, pi), where
+   D_0 is a third larger, the shifts at s = 2 and 4 equal those at (pi/2, 0)
+   within 2%. A background flux raises the rate by a near-constant amount,
+   which the smooth quartic rescaling does not describe; its fraction
+   depends on the wavenumber.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -183,6 +189,16 @@ frac = [(2 * dq * r / c2) * D[0] / (D[s] - D[0]) for s, r in ((2, r2), (4, r4))]
 check("the quartic fit stiffens along the background more than across, and accounts for 55% to 80% of the shift at s = 2 and 4",
       dq > 0 and all(0.55 < f < 0.80 for f in frac),
       f"c_2 = {c2:.4f}, d = {dq:.4f}; fraction explained {frac[0]:.3f}, {frac[1]:.3f}")
+print()
+print("== E. The shift does not scale with the wavenumber ==")
+kpi = (2 * np.pi * 2 / 4, 0.0)                     # physical (0, pi) at occupation (pi, 0)
+Dpi = {s: np.log(lam[s] / P.top(s, kpi)) for s in (0, 2, 4)}
+same = [abs((Dpi[s] - Dpi[0]) / (D[s] - D[0]) - 1) for s in (2, 4)]
+frac_pi = [(2 * dq * r / c2) * Dpi[0] / (Dpi[s] - Dpi[0]) for s, r in ((2, r2), (4, r4))]
+check("at (0, pi) the shifts at s = 2 and 4 equal those at (pi/2, 0) within 2%, although D_0 differs by a third: a near-constant rise, not a rescaling",
+      max(same) < 0.02 and Dpi[0] / D[0] > 1.3,
+      f"D_0 {D[0]:.5f} vs {Dpi[0]:.5f}; shifts {D[2] - D[0]:.5f}, {D[4] - D[0]:.5f} vs {Dpi[2] - Dpi[0]:.5f}, {Dpi[4] - Dpi[0]:.5f}; "
+      f"quartic fraction at (0, pi) {frac_pi[0]:.3f}, {frac_pi[1]:.3f}")
 print()
 print(f"time {time.time() - T0:.0f} s")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

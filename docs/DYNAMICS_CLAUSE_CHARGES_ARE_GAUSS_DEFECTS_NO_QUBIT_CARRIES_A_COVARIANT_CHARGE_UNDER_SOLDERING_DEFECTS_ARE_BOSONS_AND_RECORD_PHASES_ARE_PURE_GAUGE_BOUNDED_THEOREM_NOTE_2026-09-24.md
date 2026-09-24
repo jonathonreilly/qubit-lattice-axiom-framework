@@ -50,8 +50,9 @@ soldering menu: trivial, sign twist, axis and full.
 
 Under full soldering, the stabilizers of a vertex, link, plaquette and cube
 site have orders 24, 8, 8 and 24.
-- Each contains rotations that turn every Bloch axis. At a link or
-  plaquette site these are the half-turns across the main axis.
+- No Bloch axis is fixed by the whole stabilizer. At a link or plaquette
+  site, the half-turns across the main axis reverse it, and the
+  quarter-turns move the others.
 - So no one-qubit observable other than a constant is covariant at any
   site.
 
@@ -73,8 +74,8 @@ A vertex–link bond is fixed by the four quarter-turns about the link axis.
 - A fully soldered vertex has no covariant charge (Theorem 1).
 
 So no covariant two-site term changes both a vertex charge and the field
-of an adjacent soldered link. The runner finds link-flip dimensions 0, 0, 0 and 2, and
-charge-transfer norms at machine zero.
+of an adjacent soldered link. The runner finds link-flip dimensions 0, 0,
+0 and 2, and charge-transfer norms at machine zero.
 
 ## Theorem 3 — soft Gauss defects are bosonic charges
 
@@ -104,8 +105,8 @@ the field.
   product.
 - Let `τ_l` be each link's `+ → −` amplitude. The product is
   `τ_b τ_r τ̄_t τ̄_l`, and its phase is the lattice curl of the link
-  phases `arg τ_l`. It sums to zero over the faces of every cube and is removed by
-  rephasing each link's field basis.
+  phases `arg τ_l`. It sums to zero over the faces of every cube, and
+  rephasing each link's field basis removes it.
 - So every ring element is negative real in that gauge: the ring is
   unfrustrated and charges see no background flux.
 
@@ -124,9 +125,10 @@ What remains of the record fields is their magnitudes:
 - **The photon lane.** Its supplied three-site hops of permanent records
   (the landed
   `HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS_BOUNDED_THEOREM_NOTE_2026-09-24.md`)
-  move charges that are qubit contents. Theorem 2 says a covariant two-site
-  clause cannot do that under any landed action. The defects are the
-  clause's own charges.
+  move charges carried by vertex states. There they are a supplied
+  three-state vertex memory. Theorem 2 shows that for qubit vertices, no
+  covariant two-site term moves such charges under any landed action. The
+  defects are the clause's own charges.
 - **Fermions.** Charged fermions are not generated: the charges here are
   bosons. The fermions the campaign found are the Z2-charged Majoranas of
   the carved Kitaev networks (open PRs 9048, 9054). Making charged

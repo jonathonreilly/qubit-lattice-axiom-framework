@@ -1,0 +1,33 @@
+ok: 4-cube c0 = -(3+3*sqrt(2)+sqrt(3))/8 = -1.121836436836
+ok: on the 4-cube, mean sin^2(k_1)/eps = -c0/3
+ok: block-56 member at gamma = 12/|c0| is (|c0|/6) sum_bonds (phi_x - phi_y)^2
+ok: axis-chessboard q=(pi,0,0): bond second variation is 4 c0/3, twice the printed (c0/12) sum
+ok: M_bond - c0 = (|c0|/12) |q|^2_lat for a generic mode
+ok: every theta has M(0) = c0, so the q=0 remainder vanishes
+twisted 4-cube
+ok: E_sea scales by s when every rate is scaled by s
+ok: uniform rate e^-0.4: E_sea = N c0 e^t
+ok: uniform rate e^0.3: E_sea = N c0 e^t
+ok: chessboard amplitude 0.4 does not change E_sea
+ok: chessboard R_site = N |c0| (cosh eps - 1)
+ok: chessboard R_bond = 0
+ok: chessboard amplitude 1.0 does not change E_sea
+ok: chessboard R_site = N |c0| (cosh eps - 1)
+ok: chessboard R_bond = 0
+ok: dE_sea/du_0 at uniform rates is c0 (-1.153447 vs -1.153447)
+  mode (1, 0, 0): sea -0.98664771 bond -0.96120574 formula -0.96120574 + B -2.544e-02
+ok: L=4 twisted mode (1, 0, 0): sea = bond part + bubble, bond part matches T_bond
+  mode (1, 1, 0): sea -0.81973297 bond -0.76896459 formula -0.76896459 + B -5.077e-02
+ok: L=4 twisted mode (1, 1, 0): sea = bond part + bubble, bond part matches T_bond
+  mode (1, 1, 1): sea -0.65522331 bond -0.57672343 formula -0.57672344 + B -7.850e-02
+ok: L=4 twisted mode (1, 1, 1): sea = bond part + bubble, bond part matches T_bond
+ok: bubble vanishes at q=0 and at the chessboard
+midpoint c0 L=32 -1.19380417  L=64 -1.19380131
+ok: midpoint sea per site on 32^3 and 64^3 sits near -1.1938; the 256-grid digit string was not rebuilt
+ok: Watson g0 1.516386059152 matches int e^{-t} I0(t/3)^3 dt (1.516386059128, quad err 2.3e-08)
+ok: g0 agrees with 1.516386059 through 8 decimals
+L=64 midpoint |c0|/12 = 0.099483, |c0|/g0 = 0.78727
+ok: long-wavelength kappa = |c0|/12 is about 0.0995 on this grid
+TOTAL FAIL = 0
+HIT: confirmed - both the site counter-term c0 sum w and the bond counter-term (c0/3) sum_bonds sqrt(w_x w_y) have weight one, match E_sea on uniform rates, and have first variation c0 there. Their remainders have no q=0 second variation. On a generic mode the bond second variation is (c0/12) sum_j (2+2 cos q_j), so the long-wavelength stiffness of the family theta T_site + (1-theta) T_bond is theta |c0|/12. Clauses that see only those constraints do not select theta = 1. On the twisted 4-cube the sea's second variation equals that bond part plus the interband bubble.
+SUMMARY: confirmed - 4-cube c0 = -(3+3 sqrt(2)+sqrt(3))/8; chessboard R_bond = 0 and R_site = N|c0|(cosh eps-1); the axis-chessboard bond quadratic form is twice the printed formula, which does not affect small q. The 256^3 extrapolation of c0 was not rebuilt.

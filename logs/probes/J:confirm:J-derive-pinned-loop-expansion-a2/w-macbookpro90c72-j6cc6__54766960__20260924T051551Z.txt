@@ -1,0 +1,16 @@
+PASS spectrum: K1 doubly stochastic, odd eigenvalue (p-q)/S, even traceless (p+q-2r)/S  [l1=1/6 l2=0]
+PASS cycle weight tr(K^n)-1 = 3 l1^n + 2 l2^n for n=3,4,5 at three triples
+PASS forest: path of two edges and a 3-star have Phi = 1 (leaves integrate out)
+PASS theta (2,2,2) and C4: brute-force content sums match 1+3 w4+18 l1^4 l2^2+2 l2^6 and tr K^4  [(3, 1, 2): theta True cycle True; (5, 1, 1): theta True cycle True; (7, 2, 1): theta True cycle True]
+PASS theta (1,2,2): content sum matches 1 + 2(3 l1^3+2 l2^3) + (3 l1^4+2 l2^4) + 6(2 l1^3 l2^2 + l1^4 l2) + 2 l2^5
+PASS Z^3: 12 unit plaquettes meet at a vertex
+PASS Z^3: 4 unit plaquettes contain a given edge
+PASS leading coefficients: [rho0^4] of the density correction is 12 w4 and of the neighbour covariance is 4 w4
+PASS connected n-edge sets through the origin: 6, 45, 380, 3402, each <= 36^n  [[6, 45, 380, 3402]]
+PASS sum_{n>=4} x^n = x^4/(1-x) <= 1/4 at x=57/100  [10556001/43000000]
+PASS KP thresholds: lambda <= 0.00246 for all z, and lambda rho0^{1/3} <= 0.00291 when rho0 <= e^{-1/4}  [all 0.00247 small 0.00291]
+PASS on (p,1,2), lambda >= 1/6 and the small-z densities are <= 5e-6 at p=3 and <= 7e-7 at p=6  [p=3 lam=1/6 rho<=5.32e-6; p=6 lam=1/3 rho<=6.65e-7]
+PASS p -> infinity: (6z)^|A| * 6^{|E|+c-|A|} = z^|A| 6^{|E|+c}
+
+SUMMARY: confirmed - the leafless expansion, the cycle and theta weights, the plaquette density and covariance coefficients, and the Kotecký–Preiss arithmetic survive an independent check; the criterion itself stays assumed, and the small-z bound needs rho0 <= e^{-1/4}.
+HIT: confirmed - at c0, Phi is the sum of w(H) over leafless H, with w(C_n)=3 l1^n+2 l2^n and w(theta_abc)=6(l1^{a+b}l2^c+l1^{a+c}l2^b+l1^{b+c}l2^a)+2 l2^{a+b+c}, checked by content enumeration; the Z^3 density correction is 12 w4 rho0^4 and the neighbour covariance begins at 4 w4 rho0^4; the cluster-expansion thresholds 0.00246 and 0.00291 match the stated geometric bound.

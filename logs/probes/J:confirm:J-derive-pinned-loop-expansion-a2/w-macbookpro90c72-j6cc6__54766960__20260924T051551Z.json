@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-pinned-loop-expansion-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j6cc6",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/pinned-loop-expansion/referee_w-macbookpro90c72-j6cc6/check.py",
+ "seed": 26951,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "54766960",
+ "started_utc": "20260924T051551Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the leafless expansion, the cycle and theta weights, the plaquette density and covariance coefficients, and the Koteck\u00fd\u2013Preiss arithmetic survive an independent check; the criterion itself stays assumed, and the small-z bound needs rho0 <= e^{-1/4}."
+ },
+ "review": "Content sums on C4 and on thetas (2,2,2) and (1,2,2) match 3 l1^n+2 l2^n and the fusion weights 6 and 2; connected edge counts through the origin are 6, 45, 380, 3402; x^4/(1-x) at 57/100 is 10556001/43000000, at most 1/4.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:pinned-loop-expansion:a2/; its files are probes/work/derive/pinned-loop-expansion/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/pinned-loop-expansion/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "c6cf345a377080dc7800e1e250512fa847f1e68550957f3cb78ea093b3c99bc1",
+ "stdout_tail": " cycle True]\nPASS theta (1,2,2): content sum matches 1 + 2(3 l1^3+2 l2^3) + (3 l1^4+2 l2^4) + 6(2 l1^3 l2^2 + l1^4 l2) + 2 l2^5\nPASS Z^3: 12 unit plaquettes meet at a vertex\nPASS Z^3: 4 unit plaquettes contain a given edge\nPASS leading coefficients: [rho0^4] of the density correction is 12 w4 and of the neighbour covariance is 4 w4\nPASS connected n-edge sets through the origin: 6, 45, 380, 3402, each <= 36^n  [[6, 45, 380, 3402]]\nPASS sum_{n>=4} x^n = x^4/(1-x) <= 1/4 at x=57/100  [10556001/43000000]\nPASS KP thresholds: lambda <= 0.00246 for all z, and lambda rho0^{1/3} <= 0.00291 when rho0 <= e^{-1/4}  [all 0.00247 small 0.00291]\nPASS on (p,1,2), lambda >= 1/6 and the small-z densities are <= 5e-6 at p=3 and <= 7e-7 at p=6  [p=3 lam=1/6 rho<=5.32e-6; p=6 lam=1/3 rho<=6.65e-7]\nPASS p -> infinity: (6z)^|A| * 6^{|E|+c-|A|} = z^|A| 6^{|E|+c}\n\nSUMMARY: confirmed - the leafless expansion, the cycle and theta weights, the plaquette density and covariance coefficients, and the Koteck\u00fd\u2013Preiss arithmetic survive an independent check; the criterion itself stays assumed, and the small-z bound needs rho0 <= e^{-1/4}.\nHIT: confirmed - at c0, Phi is the sum of w(H) over leafless H, with w(C_n)=3 l1^n+2 l2^n and w(theta_abc)=6(l1^{a+b}l2^c+l1^{a+c}l2^b+l1^{b+c}l2^a)+2 l2^{a+b+c}, checked by content enumeration; the Z^3 density correction is 12 w4 rho0^4 and the neighbour covariance begins at 4 w4 rho0^4; the cluster-expansion thresholds 0.00246 and 0.00291 match the stated geometric bound.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j6cc6",
+  "at_utc": "20260924T051600Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent content enumeration reproduces the cycle and theta weights; plaquette counts and the KP geometric bound agree. Koteck\u00fd\u2013Preiss itself stays assumed.",
+  "by": "w-macbookpro90c72-j6cc6",
+  "at_utc": "20260924T051600Z"
+ }
+}

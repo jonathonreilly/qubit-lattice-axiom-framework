@@ -1,0 +1,30 @@
+{
+ "task": "P:8929",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-finite-energy-supply-20260",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8929",
+ "pr": 8929,
+ "branch": "codex/mobile-record-finite-energy-supply-20260924",
+ "git_sha": "52bd197e",
+ "started_utc": "20260924T074543Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "b36fe37671e2fe8db66b9b32d527e6c24ed622afa720e101fcf7a86aef9a1b49",
+ "stdout_tail": "PR #8929: Construct finite coherent supplies for original formation dynamics\nbranch codex/mobile-record-finite-energy-supply-20260924 (base codex/mobile-record-microscopic-energy-20260924)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T074547Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

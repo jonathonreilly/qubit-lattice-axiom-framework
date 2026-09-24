@@ -1,0 +1,3 @@
+PR #8957: Prove physical rotor fast-energy decay without a uniform rate
+branch codex/mobile-record-rotor-fast-tail-20260924 (base codex/mobile-record-fast-band-energy-20260924)
+runners in the PR: 0

@@ -1,0 +1,30 @@
+{
+ "task": "P:8957",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-rotor-fast-tail-20260924",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8957",
+ "pr": 8957,
+ "branch": "codex/mobile-record-rotor-fast-tail-20260924",
+ "git_sha": "52bd197e",
+ "started_utc": "20260924T074524Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "d9552d213abae40bca95a41c08fe46c98cd12eadda97bb1b92a0c7adfd97b1fe",
+ "stdout_tail": "PR #8957: Prove physical rotor fast-energy decay without a uniform rate\nbranch codex/mobile-record-rotor-fast-tail-20260924 (base codex/mobile-record-fast-band-energy-20260924)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T074529Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

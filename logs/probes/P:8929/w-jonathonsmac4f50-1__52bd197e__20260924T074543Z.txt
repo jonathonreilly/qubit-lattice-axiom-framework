@@ -1,0 +1,3 @@
+PR #8929: Construct finite coherent supplies for original formation dynamics
+branch codex/mobile-record-finite-energy-supply-20260924 (base codex/mobile-record-microscopic-energy-20260924)
+runners in the PR: 0

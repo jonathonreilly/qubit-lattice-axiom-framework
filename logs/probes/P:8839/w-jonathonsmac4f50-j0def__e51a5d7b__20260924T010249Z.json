@@ -1,0 +1,30 @@
+{
+ "task": "P:8839",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-actual-field-limits-202609",
+ "worker": "w-jonathonsmac4f50-j0def",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8839",
+ "pr": 8839,
+ "branch": "codex/mobile-record-actual-field-limits-20260923",
+ "git_sha": "e51a5d7b",
+ "started_utc": "20260924T010249Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "PR re-execution of #8839's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "ecb7e566f5215b661bb734393e68e317ffa6dcce421c7c3cfcb446531d4fc411",
+ "stdout_tail": "PR #8839: Describe actual formation field limits on the ring and cube\nbranch codex/mobile-record-actual-field-limits-20260923 (base codex/mobile-record-prepared-electric-formation-20260923)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0def",
+  "at_utc": "20260924T010254Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

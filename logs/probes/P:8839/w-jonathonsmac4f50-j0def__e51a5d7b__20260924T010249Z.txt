@@ -1,0 +1,3 @@
+PR #8839: Describe actual formation field limits on the ring and cube
+branch codex/mobile-record-actual-field-limits-20260923 (base codex/mobile-record-prepared-electric-formation-20260923)
+runners in the PR: 0

@@ -1,0 +1,36 @@
+{
+ "task": "P:8896",
+ "type": "pr-reexecution",
+ "lane": "ice-layer-vacuum-gaussian-functional-202",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8896",
+ "pr": 8896,
+ "branch": "claude/ice-layer-vacuum-gaussian-functional-20260923",
+ "git_sha": "c3a05dd1",
+ "started_utc": "20260924T040615Z",
+ "elapsed_s": 67.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "8e081bc7762aaec502319cb97e1cc2451802eea25c9c36527e3a411fc5d636c8",
+ "stdout_tail": "PR #8896: docs(ice): the layer vacuum is a Gaussian flux functional with a 1/r kernel\nbranch claude/ice-layer-vacuum-gaussian-functional-20260923 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.py: rc=0 PASS=5 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T040722Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

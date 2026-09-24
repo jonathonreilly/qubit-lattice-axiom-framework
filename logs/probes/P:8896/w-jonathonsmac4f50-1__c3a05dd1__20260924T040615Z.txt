@@ -1,0 +1,4 @@
+PR #8896: docs(ice): the layer vacuum is a Gaussian flux functional with a 1/r kernel
+branch claude/ice-layer-vacuum-gaussian-functional-20260923 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_layer_vacuum_is_a_gaussian_flux_functional_and_the_layer_unit_law_carries_a_one_over_r_flux_interaction_2026_09_23.py: rc=0 PASS=5 FAIL=0

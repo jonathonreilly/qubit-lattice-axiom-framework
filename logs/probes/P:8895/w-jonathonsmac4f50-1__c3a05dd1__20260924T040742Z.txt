@@ -1,0 +1,10 @@
+PR #8895: physics-loop: admissibility induced-law block 101 - in the curvature member the clock is a constraint: a body's change of energy acts at once, unless formation keeps energy local
+branch physics-loop/admissibility-induced-law-block101-the-clock-is-a-constraint-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_in_the_curvature_member_the_clock_is_a_constraint_2026_09_23.py: rc=0 PASS=11 FAIL=0
+   mutation relabelling_broken: expected B observed B ok
+   mutation tt_speed_forged: expected C observed C ok
+   mutation e_dd_term_dropped: expected D observed D ok
+   mutation dewitt_ratio_misplaced: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

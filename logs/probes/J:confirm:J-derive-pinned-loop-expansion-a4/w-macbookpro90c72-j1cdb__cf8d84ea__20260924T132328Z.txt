@@ -1,0 +1,15 @@
+PASS A1 rows of W sum to 6, W_eq = 6p/S is the largest entry, and 6 l1 <= W_eq < 6 whenever q+4r > 0
+PASS A2 handshaking 6|A| = 2|E(A)| + |dA| on the L=3 torus (degree 6, each edge once)
+PASS A2 at z_t the squared weight equals W_eq^{-|dA|} prod (W/W_eq)^2, and weight 1 exactly on the empty and fully aligned states
+PASS A3 at K = I, Phi = 6^{beta1} on every subset of the 2x2x2 and 3x3x1 windows; |dA| = (3N - sum sigma sigma)/2 and z=1/216 gives 6^{-|dA|/2}
+PASS A4 record-vacancy weight tends to 6^{-1/2} from above on (p,1,2); record 1/36, vacancy 1/216, domino 1/1296, cube 6^{-11}
+PASS A5 beta1 is supermodular on four windows and the increment equals (neighbours in A) minus (components touched)
+PASS A6 Phi is log-supermodular on 2x2x2 (five triples, including (2,1,2)) and on 3x3x1 (three triples). Separate enumerations of 2x2x3 and 4x3x1 at (3,1,2) also had no violation; they are not repeated here
+PASS B0 the 7-state bond kernel is singular and every principal minor is >= 0 at (3,1,2), (16,1,2), (5,1,1)
+PASS B1 disseminated 4^3 weight is w(b)^8, and at z_t the block weight is the internal balance-point weight
+PASS B2 Z_cube - 7 >= 48 W_eq^{-3/2} > 8/sqrt(6) at four triples (printed 110226.56, 128.00, 29.29, 22.57); limit 152/9 + 136 sqrt(6)/27
+PASS B3 even sites of the 4-torus are an independent set, four per block; eps floor matches the printed values and tends to 0.003963
+PASS D heuristic arithmetic: e^{-4J} = 1/6 with J = (log 6)/4, and the balance line on (p,1,2) sits at p = 15.3, 6.0, 3.9, 2.7
+TOTAL FAIL=0
+HIT: confirmed - at the pinned scale large l1 supplies no small density-contour parameter: at z_t = W_eq^{-3} every configuration weighs W_eq^{-|dA|/2} prod (W/W_eq) with 6 l1 <= W_eq < 6, so each record-vacancy bond weighs more than 6^{-1/2}; as l1 -> 1 the law tends to 6^{c(A) - |dA|/2} (Ising lattice gas at J = (log 6)/4, h = 0, hard alignment, six contents per cluster) and the cycle rank is supermodular; the 2x2x2 chessboard bad-sum is at least 8/sqrt(6) > 3 for every finite triple and the event-form floor tends to 0.003963
+SUMMARY: confirmed the no-go for part (c). Density-contour weights stay above 6^{-1/2} and the l1 -> 1 limit is one fixed model. Finite-p FKG was recomputed on 2x2x2 and 3x3x1 inside this run, and on 2x2x3 and 4x3x1 at (3,1,2) in a separate enumeration. The chessboard theorem and Holley's inequality stay assumed. Coexistence of the limit model is not decided. 8/sqrt(6) = 3.2659... prints as 3.27 and is not strictly above 3.27.

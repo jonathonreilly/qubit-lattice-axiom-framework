@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-pinned-loop-expansion-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j1cdb",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/pinned-loop-expansion/referee_w-macbookpro90c72-j1cdb/check.py",
+ "seed": 56208,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cf8d84ea",
+ "started_utc": "20260924T132328Z",
+ "elapsed_s": 10.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the no-go for part (c). Density-contour weights stay above 6^{-1/2} and the l1 -> 1 limit is one fixed model. Finite-p FKG was recomputed on 2x2x2 and 3x3x1 inside this run, and on 2x2x3 and 4x3x1 at (3,1,2) in a separate enumeration. The chessboard theorem and Holley's inequality stay assumed. Coexistence of the limit model is not decided. 8/sqrt(6) = 3.2659... prints as 3.27 and is not strictly above 3.27."
+ },
+ "review": "Independent exact checks confirm the no-go: at the pinned scale every record-vacancy bond weighs more than 6^{-1/2} and the l1 to 1 limit is the fixed Ising lattice gas at J=(log 6)/4, so large l1 is not a small parameter for dense/dilute coexistence.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:pinned-loop-expansion:a4/; its files are probes/work/derive/pinned-loop-expansion/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/pinned-loop-expansion/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "692be34d0b39484f4cddbb1cca976ff3836c55bf69553898c7f65e4a4d2ed6c8",
+ "stdout_tail": "16,1,2), (5,1,1)\nPASS B1 disseminated 4^3 weight is w(b)^8, and at z_t the block weight is the internal balance-point weight\nPASS B2 Z_cube - 7 >= 48 W_eq^{-3/2} > 8/sqrt(6) at four triples (printed 110226.56, 128.00, 29.29, 22.57); limit 152/9 + 136 sqrt(6)/27\nPASS B3 even sites of the 4-torus are an independent set, four per block; eps floor matches the printed values and tends to 0.003963\nPASS D heuristic arithmetic: e^{-4J} = 1/6 with J = (log 6)/4, and the balance line on (p,1,2) sits at p = 15.3, 6.0, 3.9, 2.7\nTOTAL FAIL=0\nHIT: confirmed - at the pinned scale large l1 supplies no small density-contour parameter: at z_t = W_eq^{-3} every configuration weighs W_eq^{-|dA|/2} prod (W/W_eq) with 6 l1 <= W_eq < 6, so each record-vacancy bond weighs more than 6^{-1/2}; as l1 -> 1 the law tends to 6^{c(A) - |dA|/2} (Ising lattice gas at J = (log 6)/4, h = 0, hard alignment, six contents per cluster) and the cycle rank is supermodular; the 2x2x2 chessboard bad-sum is at least 8/sqrt(6) > 3 for every finite triple and the event-form floor tends to 0.003963\nSUMMARY: confirmed the no-go for part (c). Density-contour weights stay above 6^{-1/2} and the l1 -> 1 limit is one fixed model. Finite-p FKG was recomputed on 2x2x2 and 3x3x1 inside this run, and on 2x2x3 and 4x3x1 at (3,1,2) in a separate enumeration. The chessboard theorem and Holley's inequality stay assumed. Coexistence of the limit model is not decided. 8/sqrt(6) = 3.2659... prints as 3.27 and is not strictly above 3.27.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1cdb",
+  "at_utc": "20260924T132350Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The no-go is a science result: large l1 does not make density contours small, and the limit is the fixed six-content Ising lattice gas at J=(log 6)/4. Coexistence itself is left open.",
+  "by": "w-macbookpro90c72-j1cdb",
+  "at_utc": "20260924T132350Z"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-rays-in-a-frame-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j32d9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/rays-in-a-frame/referee_w-macbookpro90c72-j32d9/check.py",
+ "seed": 35859,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5c9512c1",
+ "started_utc": "20260924T074419Z",
+ "elapsed_s": 3.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the ray equations, the factor 2, the row structure at k=pi/3, and the staggered square on 4^3. The eikonal limit itself was assumed, as the attempt says."
+ },
+ "review": "The ray equations are the Hamilton equations of E^2 = a^2 m^2 + w^2 g^{ij} sin k_i sin k_j. Block 60's weak field bends twice the fall and the strong field by (P+3Q)/(P+Q). A transverse wave acts through the row h_j, and the staggered rest energy anticommutes with every frame.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:rays-in-a-frame:a2/; its files are probes/work/derive/rays-in-a-frame/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/rays-in-a-frame/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "3cf141c767ba0108024e0305886097b62595d6df205884a82ec1e3240ade449f",
+ "stdout_tail": "PASS ray equations: v and k-dot match the closed forms, and a slow body falls as -w^2 g^{il} d_l log a\nPASS twice the fall: weak field bends twice the fall; the strong-field ratio is (P+3Q)/(P+Q)\nPASS transverse wave: a ray along axis 1 feels h_11 as delay and turn and h_12 as drift; a ray along q feels nothing at first order\nPASS rest energy: no nonzero 2x2 matrix anticommutes with all three Paulis; the staggered sign anticommutes with a varying frame on 4^3 and squares to H^2+m^2\nHIT: confirmed - the ray equations are the Hamilton equations of E^2 = a^2 m^2 + w^2 g^{ij} sin k_i sin k_j, and a slow body falls as -w^2 g^{il} d_l log a. Block 60's weak field bends twice the fall, and the strong field by (P+3Q)/(P+Q). A transverse traceless wave acts only through the row h_j. No on-site matrix anticommutes with a full frame; the staggered rest energy does, and falls with the inverse metric.\nSUMMARY: confirmed the ray equations, the factor 2, the row structure at k=pi/3, and the staggered square on 4^3. The eikonal limit itself was assumed, as the attempt says.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j32d9",
+  "at_utc": "20260924T074431Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Ray equations, factor 2, the h_j row at k=pi/3, and the staggered square on 4^3 all hold. The eikonal limit is assumed.",
+  "by": "w-macbookpro90c72-j32d9",
+  "at_utc": "20260924T074431Z"
+ }
+}

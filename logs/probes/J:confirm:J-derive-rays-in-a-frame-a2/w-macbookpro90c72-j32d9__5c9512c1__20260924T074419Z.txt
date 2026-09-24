@@ -1,0 +1,6 @@
+PASS ray equations: v and k-dot match the closed forms, and a slow body falls as -w^2 g^{il} d_l log a
+PASS twice the fall: weak field bends twice the fall; the strong-field ratio is (P+3Q)/(P+Q)
+PASS transverse wave: a ray along axis 1 feels h_11 as delay and turn and h_12 as drift; a ray along q feels nothing at first order
+PASS rest energy: no nonzero 2x2 matrix anticommutes with all three Paulis; the staggered sign anticommutes with a varying frame on 4^3 and squares to H^2+m^2
+HIT: confirmed - the ray equations are the Hamilton equations of E^2 = a^2 m^2 + w^2 g^{ij} sin k_i sin k_j, and a slow body falls as -w^2 g^{il} d_l log a. Block 60's weak field bends twice the fall, and the strong field by (P+3Q)/(P+Q). A transverse traceless wave acts only through the row h_j. No on-site matrix anticommutes with a full frame; the staggered rest energy does, and falls with the inverse metric.
+SUMMARY: confirmed the ray equations, the factor 2, the row structure at k=pi/3, and the staggered square on 4^3. The eikonal limit itself was assumed, as the attempt says.

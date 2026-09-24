@@ -1,0 +1,37 @@
+{
+ "task": "P:8866",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block96-waves-",
+ "worker": "w-jonathonsmac4f50-j90f0",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8866",
+ "pr": 8866,
+ "branch": "physics-loop/admissibility-induced-law-block96-waves-among-moving-records-need-a-coupling-time-reversal-flips-20260923",
+ "git_sha": "15b2dc8b",
+ "started_utc": "20260924T005749Z",
+ "elapsed_s": 10.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_waves_among_moving_records_need_a_coupling_that_time_reversal_flips_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=13 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #8866's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "6c049572cc1938e15ca3fa945ccf3e41a803bacbaebf6637203f77e03f7ef66f",
+ "stdout_tail": "PR #8866: physics-loop: admissibility induced-law block 96 - waves among moving records need a coupling that time reversal flips; clocked record motion never oscillates\nbranch physics-loop/admissibility-induced-law-block96-waves-among-moving-records-need-a-coupling-time-reversal-flips-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_waves_among_moving_records_need_a_coupling_that_time_reversal_flips_2026_09_23.py: rc=0 PASS=13 FAIL=0\n   mutation circulation_injected: expected B observed B ok\n   mutation circulation_hidden: expected B observed B ok\n   mutation long_wave_oscillation_forged: expected C observed C ok\n   mutation turning_biased: expected C observed C ok\n   mutation coupling_symmetrized: expected D observed D ok\n   mutation rotations_restricted_to_an_axis: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j90f0",
+  "at_utc": "20260924T005800Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

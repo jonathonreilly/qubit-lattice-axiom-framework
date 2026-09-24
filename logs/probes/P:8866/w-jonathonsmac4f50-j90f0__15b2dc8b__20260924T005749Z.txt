@@ -1,0 +1,12 @@
+PR #8866: physics-loop: admissibility induced-law block 96 - waves among moving records need a coupling that time reversal flips; clocked record motion never oscillates
+branch physics-loop/admissibility-induced-law-block96-waves-among-moving-records-need-a-coupling-time-reversal-flips-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_waves_among_moving_records_need_a_coupling_that_time_reversal_flips_2026_09_23.py: rc=0 PASS=13 FAIL=0
+   mutation circulation_injected: expected B observed B ok
+   mutation circulation_hidden: expected B observed B ok
+   mutation long_wave_oscillation_forged: expected C observed C ok
+   mutation turning_biased: expected C observed C ok
+   mutation coupling_symmetrized: expected D observed D ok
+   mutation rotations_restricted_to_an_axis: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

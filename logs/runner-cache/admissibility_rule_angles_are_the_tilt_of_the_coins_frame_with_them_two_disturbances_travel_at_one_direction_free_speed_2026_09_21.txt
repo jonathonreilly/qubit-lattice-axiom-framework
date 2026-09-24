@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_angles_are_the_tilt_of_the_coins_frame_with_them_two_disturbances_travel_at_one_direction_free_speed_2026_09_21.py
+runner_sha256: 1cf4d1c77fd1832efde5991970891bff0cb5faa443954b8821038ba6e09fd819
+input_fingerprint_sha256: 21f4914c4284bbcbc9715c5e73d12401a732dae49b4eef0f91b64062e43d1390
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 18.59
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: for a uniform rational frame and rational sines, H^2 = (sum_ij g^ij s_i s_j) x 1 exactly, g^ij = sum_a E_a^i E_a^j = 1.055 here, with all six off-diagonal entries of g non-zero: the walker sees three lengths and three angles; a rotation of the coin axes leaves g and H^2 unchanged; diagonal frames give g^jj = E_j^j squared: block 59's bond rates and block 61's lengths
+PASS: B2 T1: on a 3x3x3 torus with a non-uniform rational frame field, <phi|H psi> = <H phi|psi> exactly for the symmetrised generator (1/2) sum_j {E^j.sigma, S_j}, and not for the unsymmetrised one: the bond from x along j carries the mean of the two ends' coin vectors
+PASS: C1 T2: <H> = sum over sites, coin axes and bond directions of E_a^j(x) Theta_a^j(x) exactly (-4.594 for a rational amplitude in a non-uniform frame), and the derivative of <H> in one entry of the frame, taken by an exact difference, is Theta there: the frame is sourced by the flux of momentum j carried along coin axis a
+PASS: C2 T2: a plane wave of the identity frame with sines (1/3, 2/3, 2/3) and energy 1 has Theta_a^j = s_a s_j/energy per unit probability: symmetric, with off-diagonal parts 2/9, 2/9, 4/9: a walker moving across the axes sources angles; one moving along an axis has the single entry Theta_1^1 (block 59 T2)
+PASS: D1 T3: R_1 and R_2 are unchanged by the relabelling h_ij -> h_ij + p_i xi_j + p_j xi_i for every real p, hence for the lattice's p_j = 2 sin(k_j/2); on diagonal h_jj = 2 lam_j they are block 61's 2 sum_j (p^2 - p_j^2) lam_j and 2 (p_3^2 lam_1 lam_2 + p_2^2 lam_1 lam_3 + p_1^2 lam_2 lam_3); on h = 2 lam delta they are block 60's 4 p^2 lam and 2 p^2 lam^2 (exact symbolic algebra)
+PASS: D2 T3: for E = 1 + eps the metric is delta + h with h = -(eps + eps^T) at first order; an antisymmetric eps (a small rotation of the coin axes) drops out: of the nine numbers of a frame, six are seen (exact symbolic algebra)
+PASS: E1 T4: with the kinetic term alpha hdot_ij hdot_ij + beta hdot^2 the mode determinant in (h_11, ..., h_23, u) is -32 X^3 alpha^2 (alpha + beta) (p^2)^2 (p^2 - 4 alpha X)^2: two equal oscillatory roots for alpha>0 and alpha+beta nonzero at p nonzero, plus three zero-frequency directions; degeneracies require separate constraint analysis (exact symbolic algebra; K = wbar = 1)
+PASS: E2 T4: at p = (1, 2, 2), X = p^2 = 9 (alpha = 1/4, beta = 1) the null space is two-dimensional and every disturbance in it has p_i h_ij = 0, zero trace and u = 0: transverse, traceless, and invisible to the rates at this order
+PASS: E3 T4: for a kinetic term invariant under the cube's symmetries only, (M_1, M_2, M_3) = (1, 0, 1), the normalized squared frequencies X/p^2 at p = (1, 2, 2) and at p = (1, 4, 8) have no value in common (the two polynomials are coprime): this witness lacks a common normalized dispersion; it does not classify all cubic-only coefficients
+PASS: E4 T5: at p = (1, 2, 2) the static matrix has rank 4 (three relabelling directions); a stress with sum_i p_i Theta_(ij) = 0 has a static response for every energy, the stress diag(1, 0, 0), which is not divergence-free, has none; a body at rest gives h = 2 lam delta, u = -lam, lam = e/(4K p^2): block 60's law
+PASS: E5 T5: near a coordinate plane, p = (1, 2, 1/100), a divergence-free stress of size 4 has a static response (taken orthogonal to the relabellings) whose largest entry is 0.667, while block 61's three-length response to a unit of hop energy at the same p is 833.333: the one-dimensional inverses are gone
+PASS: E6 T4: at equal |k| the axial and diagonal scalar lattice symbols differ by -|k|^4/18; equal X/p^2 does not mean equal finite-wave-vector phase speed
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — H^2 for a uniform rational frame with all six off-diagonal entries of the metric non-zero, under a rational rotation of the coin axes, and for diagonal frames; hermiticity on a 3x3x3 torus with a non-uniform frame field
+per_site: executed — the frame response at all 27 sites, nine entries each, summing to the energy; its derivative by an exact difference; a plane wave moving across the axes and one along an axis
+per_mode: executed — the relabelling invariance of both orders of the member; the mode determinant for the rotation-invariant kinetic family; the two transverse traceless disturbances at p = (1, 2, 2); coprimality of the speeds at two directions for a kinetic term of the cube's symmetry only
+per_block: executed — the rank test for static responses (a divergence-free stress, one that is not, a body at rest); the size of the response near a coordinate plane against block 61's; the first-order relation between frame and metric
+lattice_wide: T1 holds for every uniform frame and every wave vector, hermiticity for every frame field; T2 for every amplitude and frame field; T3 for every real p and hence every wave vector of a torus; T4 for the rotation-invariant kinetic family at every wave vector; T5 wave vector by wave vector on a torus; second order in the fields for T3 to T5, for the declared member only; that the coin has a frame, the member, K, alpha, beta, whether the walk's own stress is divergence-free, and any law for the rotation of the coin axes are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: uniform frame Gram dispersion and fixed-state response; declared relabelling-invariant tensor member; two equal lattice dispersions for positive nondegenerate coefficients; compatible static sources modulo null directions; site-to-face matter coupling remains open
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

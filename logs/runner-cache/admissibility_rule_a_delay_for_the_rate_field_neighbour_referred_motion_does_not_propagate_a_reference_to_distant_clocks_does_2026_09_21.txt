@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_delay_for_the_rate_field_neighbour_referred_motion_does_not_propagate_a_reference_to_distant_clocks_does_2026_09_21.py
+runner_sha256: 46f2341facdd83a19da97e535e55ac91082b810259c1df71ede5bc707e6d29b3
+input_fingerprint_sha256: 1d95ce9cf844072918f25a74887fa78d7a5634be749cdefb586271147027e915
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: under a change of parameter with f' = 9/4 and f'' = 2/7 at the instant, K dt is unchanged for the neighbour-difference term, for the term that refers every rate to a wall clock and for the term that refers it to the weighted mean, the bond energy times dt is unchanged (weight one), and so is the ON-SITE kinetic term of a field that is not a rate (T5: its velocity has no shift); the on-site term of the rates, sum (du/dt)^2/w changes, and is unchanged only when f'' = 0: it needs a parameter that is more than a label
+PASS: B2 T1: for a quadratic form (1/2) v^T M v the change of parameter shifts every velocity by the same amount, so invariance is M 1 = 0: true for the neighbour-difference form and for the form referred to the weighted mean (which is not of finite range: every pair of sites is coupled), false for the on-site form
+PASS: C1 T2: nearest-neighbour, covariant forms with M 1 = 0 are a 1-parameter family: multiples of the lattice operator of sum over bonds (v_x - v_y)^2.  The kinetic form and the weak-field bond energy are then the SAME operator, so their ratio, the squared frequency wbar^2/(gamma kappa), is the same for every mode: a flat band
+PASS: C2 T2: a source switched on at one site of a ring of 16 under the neighbours-only law: after the FIRST step the field at the opposite site is already non-zero, and at every step the field is the static profile times one number: the whole profile appears at once and swings in place; nothing travels
+PASS: D1 T3: under the law referred to the wall clocks a source switched on at the middle of a segment reaches exactly one more site at every step (exact zeros beyond, non-zero values within, for eight steps): a front.  With the step fixed in local ticks (c wbar h = 1/2) the recursion does not contain the ambient rate: the numerical cone moves one site per step, here twice the long-wavelength speed c*wbar; the continuous-time lattice has small tails beyond it
+PASS: D2 T2/T3: squared frequencies on a ring of 12 (E = 1, 2, 3, 4): neighbours only: 15/8 for every mode; a kinetic form of longer finite range, kappa_1 Lam + kappa_2 Lam^2: 45/28, 45/32, 5/4, 9/8, largest at long wavelength and never below wbar^2/(gamma (kappa_1 + 4 kappa_2)) = 9/8: a gap, no branch through zero; referred to a clock of the system: c^2 wbar^2 E, which goes to zero with E: waves at c wbar
+PASS: E1 T4: with psi = w^(-1/2): (1/(2 gamma c^2)) (du/dt)^2/w = (2/(gamma c^2)) (dpsi/dt)^2 and d^2u/dt^2 - (du/dt)^2/2 = -2 (d^2psi/dt^2)/psi; on a closed lattice the uniform mode under the on-site term obeys d^2psi_0/dt^2 = gamma c^2 (static part of the ledger)/(2 N psi_0) = 425/14336 > 0 here: every clock slows together against the parameter, which only a master parameter could notice; under a form with M 1 = 0 the invariant kinetic form has zero common momentum (B2), but full closed variation also imposes zero total ledger
+PASS: E2 T4: for psi0^2=4, psi^2=4+(a/4)t^2 solves psi''=a/psi^3 exactly; the original missing-initial-factor formula does not
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the change of parameter applied to six rational rates and velocities: four kinetic terms and the bond energy, with and without f''; the row sums of three kinetic matrices
+per_site: executed — a source switched on at one site: the neighbours-only law on a ring of 16 (the opposite site after one step; proportionality to the static profile for six steps) and the wall-referred law on a segment of 25 (exact zeros beyond the front for eight steps)
+per_mode: executed — squared frequencies on a ring of 12 at the four rational values of the lattice symbol, for the neighbours-only form, a form of longer finite range and a form referred to a clock of the system
+per_block: executed — the one-parameter family of nearest-neighbour covariant forms with M 1 = 0 (rank of the covariance and row-sum conditions); the uniform mode's equation under the on-site term
+lattice_wide: T1 holds for every Lagrangian that depends on the first time derivatives of the rates; T2 for every nearest-neighbour covariant quadratic kinetic form at weak field, and the acoustic-branch obstruction requires regular positive kinetic symbols and a nondegenerate quadratic potential; T3 and T4 at weak field; the full non-linear motion referred to the wall clocks is executed only; which reference, if any, the framework would state is not decided; the invariant kinetic scaling of a non-rate field is tested, not a complete physical model
+PASS: G1 the five N5 resolution lines are printed
+scope: exact rate-action covariance; specified reduced flat-band dynamics and conditional absence of an acoustic branch; reference-clock lattice-wave dispersion distinguished from a leapfrog cone; corrected uniform master-mode initial-rate factor
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

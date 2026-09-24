@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_three_lengths_per_site_a_body_at_rest_stretches_them_alike_hop_energy_drives_whole_columns_2026_09_21.py
+runner_sha256: 7533ed4c29eab8678c1b8d26c18d727db6e1b478c39bd94410bd9b456b09fdd3
+input_fingerprint_sha256: b19d79076d303de60444d5a68e0ee3bf8edb45cf8ecc565a1ca4f1f2a7f205ec
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.15
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: for the metric diag(l_1^2, l_2^2, l_3^2), volume density x scalar curvature is -2 sum_j sum_{i != j} d_i^2 lam_j at first order, and at second order it has the same variational derivatives as 2 (d_3 lam_1 d_3 lam_2 + d_2 lam_1 d_2 lam_3 + d_1 lam_2 d_1 lam_3): each pair of lengths is coupled through differences along the third axis, and no length has a term of its own (exact symbolic algebra)
+PASS: B2 T1: with equal lengths the two orders are -4 Lap lam and 2 |grad lam|^2, block 60's member; the kinetic density of lengths that change in the label, with no sliding of sites, is -2 sum_{i<m} (dlam_i/dt)(dlam_m/dt)/w^2, which is -6 (dlam/dt)^2/w^2 for equal lengths (block 60's c_k = -6K, s = 3)
+PASS: C1 T2: 5x5x5 box, walls held: the 108 static equations are non-singular (one solution); for a body at rest of energy 3/10 it has lam_1 = lam_2 = lam_3 = -u at all 27 sites, equal to the solution of block 60's law 4K Lap lam = -e (lam at the body 0.022)
+PASS: C2 T2 (the proof's ingredients): minus the one-dimensional second difference with zero walls has leading minors 2, 3, ..., n + 1, so its eigenvalues a, b, c along the three axes are positive; in their common eigenbasis the equations for lam_j + u have determinant 2abc, never zero: lam_j = -u for content at rest, and then the constraint gives the law of block 60
+PASS: D1 T3: 7x7x7 box, one unit of hop energy along axis 1 at the centre: a_2 = D_3^(-1) tau/(4K), a_3 = D_2^(-1) tau/(4K), a_1 = -D_1 D_2^(-1) D_3^(-1) tau/(4K) satisfy the three equations at all 125 sites exactly; a_2 = lam_2 + u is zero off the column through the source along axis 3 and is a tent on it, -1/6, -1/3, -1/2, -1/3, -1/6: it reaches the walls
+PASS: D2 T3: the tent's height at the source is -(n + 1)/(16K) for n interior sites across: -1/3, -1/2, -7/6, -17/2 for n = 3, 5, 13, 101; it grows with the distance to the walls: not a field that falls off
+PASS: D3 T3: with the rates from the constraint (an exact 125-site solve) all four sets of equations hold, and the rates are exactly those of block 60's law Lap u = tau/(4K): it is the lengths that leave it; EQUAL hop energies of 1/3 along the three axes still leave lam_1 + u = 1/9 at the end of a column, two sites from the source and next to the wall; and block 60's equal-lengths law Lap(u + lam) = tau/(4K) does not solve the wider equations (it passes at the source by symmetry and leaves a residual of 0.061 one site along axis 1, where there is no hop energy): these point-source examples cannot keep the three lengths equal; specially structured extended sources can
+PASS: D4 T3 boundary: structured nonzero sources tau_j=2K(Delta-D_j)f admit equal a_j=f; the point-source failure is not universal
+PASS: E1 T4: the determinant of the mode equations in (lam_1, lam_2, lam_3, u) is -16 [(2m_1 - m_2)(m_1 s^2 - (m_1 + m_2) sigma) X^2 - 2 (m_1 s^3 - (2m_1 + m_2) s sigma + 3 (m_1 + m_2) pi) X + 4 pi s] in the symmetric functions of a, b, c; for the comparator's kinetic term it is -64 [sigma X^2 - (s sigma - 3 pi) X + pi s]: a quadratic determinant identity; oscillatory mode counts require nondegenerate kinetic coefficients and positive roots
+PASS: E2 T4: with v = X/s and rho = pi/(s sigma): v_1 + v_2 = 1 - 3 rho, v_1 v_2 = rho, discriminant (1 - rho)(1 - 9 rho) >= 0 because 9 abc <= (a + b + c)(ab + ac + bc); in a coordinate plane the roots are X = a + b (v = 1) and X = 0; on a body diagonal X = a twice (v = 1/3): the normalized squared frequency depends on direction; sqrt(3) is the phase-speed ratio of these directions only in the long-wavelength limit
+PASS: E3 T4: on the 6x6x2 torus at the wave vector (pi/3, pi/3, pi), where (a, b, c) = (1, 1, 4), the two disturbances have X = 2/3 and 4; with their exact amplitudes the lattice equations of motion and the constraint hold at all 72 sites; normalized X/s values 1/9 and 2/3, against 1 and 0 in a coordinate plane and 1/3 on a body diagonal
+PASS: E4 T4: a root X = v_0 s with v_0 the same in every direction would need the coefficients of 1, sigma/s^2 and pi/s^3 to vanish together; those three polynomials in (v_0, m_1, m_2) generate the whole ring (their reduced basis is 1): for NO kinetic term of the two-number family does any disturbance travel at a direction-free speed
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the two orders of volume density x scalar curvature for three lengths and the kinetic density, by exact symbolic algebra; their restriction to equal lengths
+per_site: executed — the 108 static equations of a 5x5x5 box for a body at rest; the three equations for lam_j + u at all 125 sites of a 7x7x7 box for a point of hop energy; the constraint after an exact solve for the rates
+per_mode: executed — the mode determinant in symmetric functions; its roots in the coordinate planes and on the body diagonals; the two disturbances at (pi/3, pi/3, pi) with exact amplitudes, checked at all 72 sites of a 6x6x2 torus
+per_block: executed — the height of the tent against the size of the box; equal hop energies along the three axes; the failure of the equal-lengths law with hop energy; the reduced basis of the three isotropy conditions
+lattice_wide: T1 is a continuum identity for every metric diag(l_1^2, l_2^2, l_3^2); T2 holds for every box with held walls and every content at rest; T3 for every box and every distribution of hop energy, by linearity; T4 for every wave vector of a torus and every kinetic term M_1 sum (dlam_j/dt)^2 + M_2 sum (dlam_i/dt)(dlam_m/dt); all at second order in the fields, for the declared member only; that a site has three lengths, the member, K, M_1, M_2 and whether other variables (angles between bonds, sliding of sites) exist are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: declared quadratic model; unique product-box static solution; point-source column response with structured-source exceptions; exact normalized dispersion polynomial and no constant normalized root for the stated onsite kinetic family
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

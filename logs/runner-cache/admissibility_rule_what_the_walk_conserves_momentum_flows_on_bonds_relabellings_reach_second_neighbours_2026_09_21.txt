@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_what_the_walk_conserves_momentum_flows_on_bonds_relabellings_reach_second_neighbours_2026_09_21.py
+runner_sha256: b94441a85e3ada131d935657d76653916416b269eb5c35f90816caf91fcd5c7b
+input_fingerprint_sha256: e4ffabdc8ecf85b5b3cc60038d1e9f99143bbbe55e1bb036cd43ff7d43d6c28c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.34
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WHAT_THE_WALK_CONSERVES_MOMENTUM_FLOWS_ON_BONDS_RELABELLINGS_REACH_SECOND_NEIGHBOURS_THE_NEAREST_NEIGHBOUR_FRAME_MISSES_BY_TWO_DIFFERENCES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a 5x5x5 torus, for a rational state that is NOT stationary, d(pi_j)/dt(x) + sum_a [J_a^j(x -> x + e_a) - J_a^j(x - e_a -> x)] = 0 exactly at all 125 sites for j = 1, 2, 3: momentum is conserved locally, and it flows on the bonds
+PASS: B2 T1: the current on the bond from x along a depends on the amplitude at x + e_a + e_j, a second neighbour of x, which block 62's site-placed response Theta_a^j(x) does not see: a three-site object
+PASS: C1 T2: i[H, G_xi] psi = sum_a sum_j sigma_a (1/2){(d_a xi_j) C_a, S_j} psi exactly at all 125 sites for rational xi and psi: what a relabelling of the sites generates is a deformation placed on the BONDS along a (the difference of xi_j across the bond) that hops along a and differences along j
+PASS: C2 T2: <psi| i[H, G_xi] |psi> = sum over bonds of (d_a xi_j) J_a^j exactly, for every state: the bond current is the response to the deformation a relabelling generates
+PASS: C3 T2: on a 4x4x4 torus a superposition of three plane waves (wave vectors pi/2 along each axis, coin along that axis) has H psi = psi exactly; its bond current is divergence-free at all 64 sites for each j, while the currents themselves vary from bond to bond
+PASS: C4 T4: applied to an amplitude on one site, H reaches the six nearest neighbours only, while i[H, G_xi] reaches second neighbours of both kinds, x +- e_a +- e_j and x +- 2 e_a: this tested displacement leaves the nearest-neighbour matrix class; the generic family is not closed
+PASS: D1 T3: J_a^j(x -> x + e_a) = (1/2)[Theta_a^j(x) + Theta_a^j(x + e_a)] - (1/2) Re (d_a psi)^dagger sigma_a (d_a S_j psi) exactly on all 375 bonds for all nine (a, j): the conserved current is the bond average of block 62's site response minus a term with two more differences along a
+PASS: D2 T3: for two plane waves of equal energy with sines (1/3, 2/3, 2/3) and (2/3, 1/3, 2/3) the conserved law is sum_a (sin k_a - sin k'_a) M_a = 0 exactly, M_a = chi'^dagger sigma_a chi; and sin k_a - sin k'_a = 2 sin(q_a/2) cos(kbar_a): the symbol of the law carries the cosine of the MEAN wave number, component by component, a dependence of this displayed vertex, not a classification of all possible on-shell divergence laws
+PASS: E1 T5: d(psi^dagger sigma_c psi)/dt = 2 sum eps_cad Theta_d^a - [b_c(x) - b_c(x - e_c)], b_c(x) = Re psi^dagger(x) psi(x + e_c), exactly at all 125 sites for c = 1, 2, 3 and a state that is not stationary: the antisymmetric part of the site response is the torque on the coin
+PASS: E2 T5: on the exactly stationary state of the 4x4x4 torus the coin's density does not change, and the antisymmetric part of Theta equals the lattice divergence of b_c at all 64 sites while not vanishing: for stationary states it is a pure divergence
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the continuity equation of the momentum density with its bond current at all 125 sites of a 5x5x5 torus for a state in motion; the dependence of the current on a second neighbour
+per_site: executed — the operator identity for i[H, G_xi] at all 125 sites; the bond current against the bond average of the site response on all 375 bonds for nine index pairs; the torque identity at all 125 sites
+per_mode: executed — two plane waves of equal energy with rational sines and rational coins: the conserved law with the symbol sin k_a - sin k'_a; the identity sin k - sin k' = 2 sin(q/2) cos(kbar) at rational points
+per_block: executed — an exactly stationary superposition on a 4x4x4 torus: H psi = psi, divergence-free bond currents that vary from bond to bond, and an antisymmetric site response that is a pure divergence and not zero
+lattice_wide: T1, T2, T3 (the real-space identity) and T5 are operator identities of block 54's walk in the identity frame and hold for every state on every torus and on the infinite lattice; T2's and T5's consequences hold for every stationary state; T3's plane-wave form holds for every pair of wave vectors; T4 generic range statement on lattices with distinct second neighbours; special displacements can cancel; rates, frames that vary, a member that would use the bond current, and any law for the rotation of the coin axes are not treated
+PASS: G1 the five N5 resolution lines are printed
+scope: what the walk conserves — momentum flows on bonds through a three-site current; a relabelling of the sites generates exactly the deformation whose response that current is, with second-neighbour reach; the bond current is the endpoint average of the site response minus the stated difference-product term, the cosine of the mean wave number in a plane-wave pair; the antisymmetric part of the site response is the torque on the coin
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

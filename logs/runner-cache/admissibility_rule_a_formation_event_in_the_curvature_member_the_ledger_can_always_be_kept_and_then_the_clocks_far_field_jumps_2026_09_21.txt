@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_formation_event_in_the_curvature_member_the_ledger_can_always_be_kept_and_then_the_clocks_far_field_jumps_2026_09_21.py
+runner_sha256: b530f468c6538f30669afe566f6a66baa1b72e93632fd3a1dbe8cb1b9e838c7f
+input_fingerprint_sha256: 233330fecfe574bbe86b7c7df4c28cc08177276edc721ead3d430f77ba7d1a57
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.57
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_FORMATION_EVENT_IN_THE_CURVATURE_MEMBER_THE_LEDGER_CAN_ALWAYS_BE_KEPT_AND_THEN_THE_CLOCKS_FAR_FIELD_JUMPS_AT_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: a spread amplitude at rest on five sites (charges 1/2, 1/3, 1/5, 1/4, 1/6; bare energy 9.841; ledger 8K sum Q = 8.700) and the record at the centre that KEEPS the ledger: both are exact stationary points at all 125 sites; the record's charge is sum Q and its bare energy 8K Q'(1 + Q' g_yy) = 11.588, more than the amplitude's by 8K sum Q_x Q_x' (g_yy - g_xx') = 1.747
+PASS: B2 T1: the ledger can be kept for EVERY amplitude: for sum Q = 1000 the record's bare energy is 1379737.374, finite (block 58's law had a threshold); if instead the record keeps the amplitude's bare energy its charge is below sum Q (the increasing function Q(1 + Q g_yy) - m/(8K) is 0.291 > 0 at sum Q): the ledger falls
+PASS: C1 T2: for the discrete-harmonic functions 1, x, y, z the sum over wall bonds of (chi_inside - 1) h(wall) equals sum Q_x h(x) exactly, before and after; with the ledger kept the monopole does not jump and the dipole jumps by Q'(y - Xbar) = (-0.083, -0.200, 0.167), Xbar = (3.057, 3.138, 2.885) the centre of the charges
+PASS: C2 T2: over ANY odds of where the record forms (none is assumed) the mean jump of the dipole is Q'(sum odds_y y - Xbar): it vanishes for odds proportional to p_x/chi_x, the charge density, and not for odds proportional to p_x (mean jump 0.003, -0.005, 0.006) or to p_x/chi_x^2; at leading weak-field order p/chi and block 58's p sqrt(w) agree, p(1 - lam/2)
+PASS: D1 T3: the flux of 1-N is sum P_x = sum Q_x w_x (the flux of 1 - N): 1.152 before and 0.871 after, with the ledger kept: it jumps by -0.280; a finite record preserving S=sum P exists only for S<1/(2g_yy); in this example the ledger-preserving record does not preserve the second flux
+PASS: D2 T3: with every charge scaled by 1/1000 the jump of the flux of 1-N is within one per cent of -2[Q'^2 g_yy - sum Q_x Q_x' g_xx'] = -(m' - m)/(4K) (an exact identity between the two forms), and below one hundredth of the charge: a second-order effect, which vanishes at first order, where the two far-field coefficients agree (block 60 T4)
+PASS: D3 finite positive record flux is strictly below capacity; inverse exists below it and has a pole at capacity
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the exact fields of a five-site amplitude at rest and of the record that keeps the ledger, in a 7x7x7 box with walls at w = l = 1: both stationarity conditions at all 125 sites
+per_site: executed — the record's bare energy against the amplitude's; the ledger for a charge of 1000; the sign that decides what happens when the bare energy is kept
+per_mode: executed — the wall moments of chi - 1 against sum Q_x h(x) for the four discrete-harmonic functions 1, x, y, z, before and after; the flux of 1 - N against sum P_x
+per_block: executed — the dipole's jump against Q'(y - Xbar); the mean jump for three odds; the flux of 1-N before and after; the second-order formula with all charges scaled by 1/1000
+lattice_wide: T1 and T2 hold for every amplitude at rest and every site of formation in every box with walls held at w = l = 1, for the curvature member with isotropic stretching; the statement about odds is about ANY odds and assumes none; T3 exactly for the stated configuration, the second-order formula for every configuration; whether an amplitude that has formed no record sources anything, whether a formation event keeps the ledger, and where records form are not decided; bodies at rest are supplied; nothing moves in this note
+PASS: G1 the five N5 resolution lines are printed
+scope: supplied finite grounded stationary field comparison; ledger-preserving single-site record, harmonic charge moments, example-specific second flux change and general small-charge expansion; second-flux record capacity; no formation dynamics or universal nonzero jump
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

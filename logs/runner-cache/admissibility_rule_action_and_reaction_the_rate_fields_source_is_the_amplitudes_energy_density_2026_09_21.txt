@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_action_and_reaction_the_rate_fields_source_is_the_amplitudes_energy_density_2026_09_21.py
+runner_sha256: dbceee8828c7ae9eb373f51d059bffe815e2eb3bb8d252614609aa93e766b5cd
+input_fingerprint_sha256: 55ec29d5f85d2c7de5c46570a48644bf3df514e4e455bbf77adfcb2b41d42ea7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.12
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ACTION_AND_REACTION_THE_RATE_FIELDS_SOURCE_IS_THE_AMPLITUDES_ENERGY_DENSITY_MATCHED_PULLS_AND_A_KEPT_LEDGER_FIX_THE_CLOCK_LAWS_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: A3 weak-field packet on main: its second supplied piece is the source read off the amplitude as rho = |psi|^2
+PASS: B1 T1: on the 3x3x3 torus with a rational rate field and a rational amplitude, e_x = Re chi_x^dagger (H_w chi)_x sums to <H_w> = -9401/2535: the amplitude's energy has weight one in the rates, and e is its density
+PASS: B2 T1: e_x = d<H_w>/du_x at fixed amplitude (exact: <H_w> is a quadratic form in phi = sqrt(w), and d/du_x = (phi_x/2) d/dphi_x), checked at nine sites: along the supplied canonical chi evolution d<H_w>/dt = sum_x e_x du_x/dt, the amplitude's own flow contributing nothing because H_w is hermitian
+PASS: B3 T2: ledger defect equals sum(e-s)dotu; total-ledger multiplier exceeds mean amplitude energy by F/N in an explicit rational example
+PASS: C1 T3: three bodies of energies 2, 5, 3/2 on the 4x4x4 torus, each pulled by -E grad u in the others' fields (central differences; fields from block 53's operator with the zero mode removed): with source strengths proportional to the energies the pulls sum to zero exactly; with every body sourcing alike (a count) they sum to ('-33/6400', '-21/1280', '0'): this supplied point-force model has nonzero summed force for the specified count-source example
+PASS: C2 T3: for a pair, pull on A plus pull on B = gamma (E_A S_B - E_B S_A) x (the lattice potential's difference across A): it vanishes for every separation iff S_A/E_A = S_B/E_B, provided a separation with nonzero central gradient exists and both energies are nonzero
+PASS: D1 T4: the bond energies sum (phi_x - phi_y)^2 and sum (w_x - w_y)^2/(w_x + w_y) have weight one under w -> t w, as the amplitude's energy has: a ledger made of them keeps its form when the unit of rate is changed (a field energy quadratic in u, or of weight two, does not)
+PASS: D2 T4: both energies are homogeneous of degree two in phi, so sum_x dF/du_x = F, and the same holds for <H_w> (B1): sum_x d(ledger)/du_x = ledger.  With positive energies the ledger cannot be stationary in every u_x; the unit of rate is not a variable, the multiplier is mu = ledger per site, and the source enters as e_x - mu: the total-ledger multiplier differs from mean amplitude energy when field energy is nonzero
+PASS: D3 T4: the empty-space law of the first energy is phi_x = average of phi over the neighbours exactly (the averaging law for sqrt(w): block 53's power mean of order 1/2); the second energy gives the same phi_x through the second order of the bump (coefficients 1/6 and -1/6 at the second and third order for both) and differs at the fourth (1/6 against 1/8): these selected local zero-multiplier homogeneous bond laws agree through second order and differ at fourth
+PASS: D4 T4: at weak field dF_1/du_x = 3 wbar (u_x - average of u over the six neighbours): block 53's operator, with the ambient rate wbar multiplying it, so that the law reads (u_x - average) = -(gamma/(6*wbar))(e_x - mu) for the normalized F=(2/gamma)F_1: the coupling is a pure number and the source is the energy density counted in ambient ticks
+PASS: E1 T2: for a body at rest on the reduced walk (a real envelope with the rest-energy content) e_x = m w_x |chi_x|^2 at every site of a ring with a rational rate field, exactly: the weak-field packet's density |psi|^2 is the energy density of a body at rest per unit rest energy and local rate
+PASS: E2 T2: for a moving body (wave vector pi/2, rest energy 3/4, energy 5/4) e_x = (5/4) |chi_x|^2: the source is the energy, not the rest energy and not the probability (5/4 per unit probability)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the energy density of a rational amplitude at each of the 27 sites of a torus, and its derivative with respect to the local rate at nine of them
+per_site: executed — an instantaneous real-envelope state at every site of a ring with a rational rate field: e_x = m w_x |chi_x|^2; a moving body on a ring of four sites: e_x = (5/4) |chi_x|^2
+per_mode: executed — the bump test of the empty-space law for two field energies of weight one, as exact power series through the fourth order
+per_block: executed — three bodies on the 4x4x4 torus with exact lattice potentials: total pull zero for sources proportional to the energies, non-zero for a count; the pair identity for three choices of strengths
+lattice_wide: T1 holds for every amplitude, generator and positive rate field; T2 for every static law and ledger of the stated form; T3 for point bodies in the weak field of block 53's operator on any torus; T4 for every nearest-neighbour field energy of weight one; that the pair keeps a ledger at all, the static form of the law, the coupling and the function f are not derived; whether records and amplitudes source alike is not settled here
+PASS: G1 the five N5 resolution lines are printed
+scope: supplied canonical dynamics; clocked energy derivatives and sufficient constrained ledger conservation; conditional point-force reciprocity; distinct local zero-multiplier second-order bond-law expansion
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-travelling-disturbances-source-by-species-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-ja55e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-travelling-disturbances-source-by-species/referee_w-macbookpro90c72-ja55e/check.py",
+ "seed": 36830,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "17705ebc",
+ "started_utc": "20260924T080030Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the TT source per unit of a species' own stress is species-blind for + under the frame and (-1)^(n_a+n_b) for x; under reach two it is D_a for both polarisations when n_a=n_b, and when n_a!=n_b the x source vanishes and + becomes the transverse trace; reach three is +1 for all eight, with K=sin(2q_a)sin(2q_j)/(4E); pi_j flips with D_j and P_j does not; for alpha>0 no species gains energy by radiating"
+ },
+ "review": "Exact species maps on one 4^3 state and the TT algebra agree: frame x carries (-1)^(n_a+n_b), reach two vanishes in x when n_a differs from n_b, and the TT energy is nonnegative so a reflected species does not gain by radiating when alpha>0.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-travelling-disturbances-source-by-species:a1/; its files are probes/work/derive/the-travelling-disturbances-source-by-species/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-travelling-disturbances-source-by-species/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "f2e72b1d049eef3f388707b5a58e6a60d2514822867d650d5380dc959d87026b",
+ "stdout_tail": "S1 FOLLOWS: on one Gaussian-integer state of the 4^3 torus, all eight species maps send Theta to s_n D_a D_j Theta, J to s_n D_j J, K to s_n K, e to s_n e, pi_j to D_j pi_j, and P_j to itself\nS2 FOLLOWS: relative to the species' own K, frame + is 1 and x is (-1)^(n_a+n_b); reach two is D_a for both polarisations when n_a=n_b, and when n_a!=n_b the x source is 0 and the + source is the transverse trace; reach three is +1 because K and e pick up the same s_n\nS3 FOLLOWS: K_a^j = sin(2q_a) sin(2q_j)/(4E) with no species sign, and Theta keeps D_a D_j; the first lattice correction is -(2/3)(q_a^2+q_j^2)\nS4 FOLLOWS: a TT disturbance along e_3 has R1=0 and F2=(K wbar/4) p^2 h_ij h_ij >= 0, so with alpha>0 the free TT energy is positive and a species sign squares away in the radiated energy\nSUMMARY: confirmed - the TT source per unit of a species' own stress is species-blind for + under the frame and (-1)^(n_a+n_b) for x; under reach two it is D_a for both polarisations when n_a=n_b, and when n_a!=n_b the x source vanishes and + becomes the transverse trace; reach three is +1 for all eight, with K=sin(2q_a)sin(2q_j)/(4E); pi_j flips with D_j and P_j does not; for alpha>0 no species gains energy by radiating\nHIT: confirmed - frame, reach-two and reach-three TT source tables, the two momentum books, and the positive TT energy (K wbar/4) p^2 h^2, so a reflected species does not gain energy by emitting when alpha>0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja55e",
+  "at_utc": "20260924T080040Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Cross-family referee: exact 4^3 species maps and the TT algebra agree. A reflected species does not gain energy by radiating when alpha>0.",
+  "by": "w-macbookpro90c72-ja55e",
+  "at_utc": "20260924T080040Z"
+ }
+}

@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of twenty-one open campaign blocks (PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088, 9095, 9097, 9112), all built on one supplied and unadopted local dynamics clause, with twenty-one recorded decision points. Three findings. (a) Quantum rules as consistency conditions inside supplied kinematics. Take the Hilbert-space kinematics the clause brings (density operators, tensor products, purifications), records updating by compression (the lock, the support condition and the distant update), and odds that are a function of the site's conditional state. Then locality of marginals at equal time makes the odds affine, and the support condition fixes them to Tr(P_q rho) with antipodal two-possibility menus. The distant update is the one consistent with locality of marginals, affine joint laws and Born marginals: self-consistent, not derived. With the clause's own bond as the entangling test, a site's evolution between records with a decoupled partner is linear and completely positive. It is unitary exactly when records are the only irreversible events, which restates reversibility for channels. The generator is Hermitian, and its two-site form restates the range imposed on the generator. This is the standard no-signalling route placed in the framework. (b) Exact emergent content: under full soldering, record carvings give exactly solvable Kitaev models: Majorana fermions in a Z2 gauge field, in one dimension and, with relaxed carvings, in three. Zero-field carving components are exactly 2x2x2 cubes or face-diagonal strips. (c) What further sectors need. U(1) link fields freeze under every two-site generator with an exact Gauss law, and move by a one-neighbourhood plaquette ring or a soft vertex Gauss energy. The landed linear-gravity tensor field is moved by no single neighbourhood (integer slots), but for rotor slots with an integer constraint a soft vector constraint with one-site slot fields generates its smallest moves, the planar pieces, at twelfth order (path sum 111150053/31850496; no diagonal term at any order, so the leading dynamics is a sum of cosines of a planar curvature stencil; with a supplied electric energy three branches with omega^2 ~ k^4); qubit slots need 20-slot moves at order 20, split at fourth order where the diagonal-slot count changes, and modulo 2 the face slots carry a Z2 gauge structure. SU(N) links need 2N states, so composite links. Covariance allows time-reversal-odd star terms, even possibility covariance (an off-centre octant chirality), but on the cube carving none keeps the Majoranas free; under soldering the tripod keeps the Z2 fluxes and makes the Majoranas interact. Record fields on dangling axes keep the carved Majoranas sublattice-symmetric, so they give the gapped bands no weak Chern number, and the gapped three-dimensional networks stay non-chiral even under Kitaev's time-reversal-odd pattern. A gapless start changes this: with its dangling Majoranas decoupled, a network's bands are gapless, and Kitaev's pattern then gives weak Chern numbers (1, 0, 0); zero dangling fields are realizable by records on some networks (8 of 16 found are gapless), though not on that one, and Kitaev's pattern is not covariant: on those networks no covariant time-reversal-odd star term of weight at most three, reduced by the records, gives a free same-class bilinear. At weights five and seven one does: on a realizable 19-site carving with zero-field staggered records, a covariant star term of weights 5 and 7 reduces to free bilinears that include Kitaev's pattern at corners, and with the compass bonds every lowest flux sector is gapped with weak Chern numbers (-1, 0, 0) at lambda = 1, 2 and 4, above 12 decoupled zero modes per cell, with one chiral Majorana mode on each surface of a slab; the phase needs exactly zero dangling fields. U(1) charges under the clause are bosonic Gauss defects. The runner re-derives one identity per block and checks that the declared decision points are exactly those used. No decision point is adopted, no block is audited, and no physical identification is made."
+claim_scope: "Synthesis of twenty-one open campaign blocks (PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088, 9095, 9097, 9112), all built on one supplied and unadopted local dynamics clause, with twenty-one recorded decision points. Three findings. (a) Quantum rules as consistency conditions inside supplied kinematics. Take the Hilbert-space kinematics the clause brings (density operators, tensor products, purifications), records updating by compression (the lock, the support condition and the distant update), and odds that are a function of the site's conditional state. Then locality of marginals at equal time makes the odds affine, and the support condition fixes them to Tr(P_q rho) with antipodal two-possibility menus. The distant update is the one consistent with locality of marginals, affine joint laws and Born marginals: self-consistent, not derived. With the clause's own bond as the entangling test, a site's evolution between records with a decoupled partner is linear and completely positive. It is unitary exactly when records are the only irreversible events, which restates reversibility for channels. The generator is Hermitian, and its two-site form restates the range imposed on the generator. This is the standard no-signalling route placed in the framework. (b) Exact emergent content: under full soldering, record carvings give exactly solvable Kitaev models: Majorana fermions in a Z2 gauge field, in one dimension and, with relaxed carvings, in three. Zero-field carving components are exactly 2x2x2 cubes or face-diagonal strips. (c) What further sectors need. U(1) link fields freeze under every two-site generator with an exact Gauss law, and move by a one-neighbourhood plaquette ring or a soft vertex Gauss energy. The landed linear-gravity tensor field is moved by no single neighbourhood (integer slots), but for rotor slots with an integer constraint a soft vector constraint with one-site slot fields generates its smallest moves, the planar pieces, at twelfth order (path sum 111150053/31850496; no diagonal term at any order, so the leading dynamics is a sum of cosines of a planar curvature stencil; with a supplied electric energy three branches with omega^2 ~ k^4); qubit slots need 20-slot moves at order 20, split at fourth order where the diagonal-slot count changes, and modulo 2 the face slots carry a Z2 gauge structure. SU(N) links need 2N states, so composite links. Covariance allows time-reversal-odd star terms, even possibility covariance (an off-centre octant chirality), but on the cube carving none keeps the Majoranas free; under soldering the tripod keeps the Z2 fluxes and makes the Majoranas interact. Record fields on dangling axes keep the carved Majoranas sublattice-symmetric, so they give the gapped bands no weak Chern number, and the gapped three-dimensional networks stay non-chiral even under Kitaev's time-reversal-odd pattern. A gapless start changes this: with its dangling Majoranas decoupled, a network's bands are gapless, and Kitaev's pattern then gives weak Chern numbers (1, 0, 0); zero dangling fields are realizable by records on some networks (8 of 16 found are gapless), though not on that one, and Kitaev's pattern is not covariant: on those networks no covariant time-reversal-odd star term of weight at most three, reduced by the records, gives a free same-class bilinear. At weights five and seven one does, on a supplied record pattern: on a realizable 19-site carving with zero-field staggered records (supplied, not covariant), a covariant star term of weights 5 and 7 reduces to 27 Kitaev patterns at corners plus one essential dangling-axis field, and with the compass bonds every lowest translation-invariant flux sector is gapped with weak Chern numbers (-1, 0, 0) in a window of couplings (about 0.8 to 8.5), above 12 decoupled zero modes per cell, with one chiral Majorana mode on each surface of a slab; the record signs set the handedness, and the phase needs exactly zero dangling fields. U(1) charges under the clause are bosonic Gauss defects. The runner re-derives one identity per block and checks that the declared decision points are exactly those used. No decision point is adopted, no block is audited, and no physical identification is made."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -180,15 +180,17 @@ These are recorded so each result names what it rests on. None is adopted.
   - On those networks, no covariant time-reversal-odd star term of weight
     at most three, reduced by the records, gives a free same-class
     bilinear.
-- **9112 — a covariant Chern number.**
-  - On a realizable 19-site carving with zero-field staggered records, a
-    covariant time-reversal-odd star term of weights 5 and 7 reduces to
-    free Majorana bilinears. They include 27 copies of Kitaev's pattern at
-    corners: the record values carry the orientation signs covariance
-    denies the weight-3 pattern.
-  - With the compass bonds, every lowest flux sector (8 of 16) is gapped
-    above 12 decoupled zero modes per cell, with weak Chern numbers
-    `(−1, 0, 0)` at `λ = 1, 2, 4`.
+- **9112 — a Chern number from a covariant star term.**
+  - The carving is a realizable 19-site network with zero-field staggered
+    records, both supplied and not covariant. On it, a covariant
+    time-reversal-odd star term of weights 5 and 7 reduces to free Majorana
+    bilinears: 27 Kitaev patterns at corners plus one dangling-axis field,
+    which is essential. The record contents select which strings survive
+    and set the handedness.
+  - With the compass bonds, every lowest translation-invariant flux sector
+    (8 of 16) is gapped above 12 decoupled zero modes per cell, with weak
+    Chern numbers `(−1, 0, 0)` at `λ = 1, 2, 4`. This holds in a window of
+    `λ`, about 0.8 to 8.5.
   - A slab shows one chiral Majorana mode on each surface, with opposite
     chirality.
   - The phase needs exactly zero dangling fields. Records tilted to give
@@ -252,8 +254,9 @@ These are recorded so each result names what it rests on. None is adopted.
     dynamics is unexplored.
   - Record fields keep a sublattice symmetry, so they give the gapped
     bands no Chern number.
-  - A covariant star term of weights 5 and 7 on a realizable zero-field
-    carving gives chiral Majorana bands, with weak Chern number 1 (9112).
+  - A covariant star term of weights 5 and 7, on a realizable zero-field
+    carving supplied as a record pattern, gives chiral Majorana bands with
+    weak Chern number 1 (9112).
   - These are neutral Majoranas in a Z2 gauge field, with extensive
     zero-mode degeneracy, a small gap, and a need for exactly zero dangling
     fields. Charged chiral (Weyl) fermions remain open.
@@ -401,8 +404,15 @@ further than the theorems, it has been corrected.
   - the curvature identification is marked as a reading;
   - the comparison factor states its normalization;
   - the rotor-only scope is explicit.
-- **The covariant Chern block (9112).** Its independent check is still
-  running.
+- **The covariant Chern block (9112).** Every number reproduces, including
+  a full 19-qubit spin diagonalization. Corrected since:
+  - only the clause and the star term are covariant; the carving and
+    contents are supplied;
+  - the chirality forms among flat zero modes;
+  - a dangling-axis field is essential;
+  - the phase is a window;
+  - doubled cells at `λ = 2` and 4 find slightly lower sectors with the
+    same Chern vector.
 
 ## What this does not do
 

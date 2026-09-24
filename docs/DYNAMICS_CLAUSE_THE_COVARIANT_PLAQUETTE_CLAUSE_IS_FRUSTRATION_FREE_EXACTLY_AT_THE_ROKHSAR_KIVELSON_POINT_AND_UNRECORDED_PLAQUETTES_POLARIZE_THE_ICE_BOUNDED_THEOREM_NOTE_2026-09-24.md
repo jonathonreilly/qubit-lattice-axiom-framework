@@ -78,7 +78,7 @@ for `g ≥ 0`. ∎
 ## Theorem 3 — its ground states record uniform ice measures
 
 On the ice space, `Σ_p 2g |−_p⟩⟨−_p|` has two parts:
-- on the diagonal, the number of flippable plaquettes;
+- on the diagonal, `g` times the number of flippable plaquettes;
 - off the diagonal, `−g` for each flip.
 
 That is `g` times the Laplacian of the plaquette-flip graph. A graph

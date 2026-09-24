@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-what-fixes-the-scale-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j8362",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-what-fixes-the-scale/referee_w-macbookpro90c72-j8362/check.py",
+ "seed": 29552,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b16e5aeb",
+ "started_utc": "20260924T055912Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - an empty site matches an averaged record at exactly c0 for one neighbour; the three degree-2 branches agree only if p=q=r; averaging the neighbours as well gives (c S/6)^j, which is 1 at c0 for every j."
+ },
+ "review": "The one-bond weight is c(p+q+4r)/6, so it equals 1 only at c0; the three degree-2 sums differ unless p=q=r, and the orthogonal branch equals 1 at c0 exactly when p+q=2r.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-what-fixes-the-scale:a2/; its files are probes/work/derive/moving-what-fixes-the-scale/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-what-fixes-the-scale/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8bea2e26451248af211d17bc1a3d0c0c8c856fd1d06d909077c9f2d7f8f1741e",
+ "stdout_tail": "PASS degree 1: one neighbour gives c*S/6, equal to 1 only at c=6/S\nPASS degree 2 sums are p^2+q^2+4r^2, 2pq+4r^2, 2r(p+q)+2r^2\nPASS the three branches agree for every pair of that class, and only when p=q=r  [eq-opp (p - q)**2]\nPASS at c0 the orthogonal weight is 1 iff p+q=2r\nPASS (3,1,2) and (7,3,5) lie on p+q=2r; (5,2,4) and (5,1,1) do not  [{'3,1,2': True, '7,3,5': True, '5,2,4': False, '5,1,1': False}]\nPASS averaging the neighbours too gives [c S/6]^j, hence 1 at c0 for every j\n\nSUMMARY: confirmed - an empty site matches an averaged record at exactly c0 for one neighbour; the three degree-2 branches agree only if p=q=r; averaging the neighbours as well gives (c S/6)^j, which is 1 at c0 for every j.\nHIT: confirmed - c0=6/(p+q+4r) is the unique one-bond scale; degree 2 takes the three values p^2+q^2+4r^2, 2pq+4r^2 and 2r(p+q)+2r^2; the orthogonal branch equals 1 at c0 iff p+q=2r, which holds for (3,1,2) and (7,3,5) but not (5,2,4).\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8362",
+  "at_utc": "20260924T055917Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Stencil recomputation confirms c0 is the unique one-bond match and that degree 2 splits into three branches.",
+  "by": "w-macbookpro90c72-j8362",
+  "at_utc": "20260924T055917Z"
+ }
+}

@@ -2594,6 +2594,6 @@
     ],
     "scope": "Paired-isometry finite mixed-state witness with nonconstant internal band energies; this is a resource/leading-map toy, not a full cube apparatus."
   },
-  "elapsed_seconds": 0.11676933383569121,
+  "elapsed_seconds": 0.13325958396308124,
   "source_sha256": "ec6abee27fc084839d8c50f8d386ffc20010668bbcb681044ff8be0827bfb802"
 }

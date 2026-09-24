@@ -13,7 +13,11 @@ runner: scripts/mixed_low_field_inputs_cube_birth_energy_and_coherence_2026_09_2
 
 # Mixed low-field preparations retain the cube birth energy and coherence bounds
 
-**Status:** conditional bounded theorem with selective independent PRE/POST;
+**Type:** bounded_theorem
+
+**Status:** proposed_retained
+
+Conditional bounded theorem with selective independent PRE/POST;
 not a retained audit verdict. The model and preparation remain supplied.
 
 The large energy spread at an actual original birth does not require the

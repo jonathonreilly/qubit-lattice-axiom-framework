@@ -28,7 +28,7 @@ diagnostics, no physical reading):
    Kitaev's pattern s^a_i s^b_m s^c_k on every bond pair (its Majorana image
    is a same-class hopping u_im u_mk c_i c_k) breaks S, yet the gap stays
    open and every weak Chern number stays 0 up to kappa = 4. A Chern number
-   changes only through a gap closing, so chiral Majorana bands need a
+   can change only where the gap vanishes, so chiral Majorana bands need a
    gapless carving to start from.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.

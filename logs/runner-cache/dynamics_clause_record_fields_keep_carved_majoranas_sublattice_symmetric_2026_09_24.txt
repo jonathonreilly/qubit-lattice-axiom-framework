@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py
-runner_sha256: 3038a1a3246e96a5c2eb9ba4795c4573bde3f898c0e91589ed5bd5c3e68a5a09
+runner_sha256: 39a44245020010e284ae6d073e0a832096da81a5dfb3f17c7378f0fc70b686c5
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 2.50
+elapsed_sec: 2.34
 status: ok
 ----- stdout -----
 [PASS] sublattice symmetry: every bond and every dangling-axis field joins opposite classes, so S H(k) S = -H(k) :: both networks, all 24 gauge sectors, random record fields, random momenta: largest |S H S + H| 0e+00

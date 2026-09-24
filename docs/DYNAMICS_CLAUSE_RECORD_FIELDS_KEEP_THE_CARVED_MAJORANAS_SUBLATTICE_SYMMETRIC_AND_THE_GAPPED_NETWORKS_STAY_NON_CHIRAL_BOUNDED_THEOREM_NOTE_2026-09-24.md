@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_record_fields_keep_the_carved_majoranas_sublattice_symmetric_and_the_gapped_networks_stay_non_chiral_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Setting: the relaxed carvings of open PR 9054 at the compass point of the fully soldered clause, with records acting as fields, all supplied and none adopted. There, every record field lies on a dangling axis. (i) Give each c Majorana the parity of its site, and each dangling b Majorana the opposite parity. Every bond joins c Majoranas of neighbouring sites, and every dangling-axis field joins b^a_j to c_j. So every coupling joins opposite classes, and S = diag(+-1) anticommutes with the Bloch Hamiltonian at every momentum, in every gauge sector and for any record contents. This is certified on both networks of open PR 9054, all 24 gauge sectors, with random fields, to 0. (ii) Hence every weak Chern number of the gapped negative-energy bands vanishes (0 to 5e-16 on the planes k_a = 0 and pi, both networks, top of the negative bands -0.618). With the sublattice symmetry, generic band touchings would be lines rather than Weyl points. (iii) A leaf, meaning a site with a single kept bond along axis c, may carry a field along c while staying solvable, since sigma^c_j = -i b^a_j b^b_j on the physical space. That couples two same-class dangling Majoranas and breaks S. On a two-site leaf pair, the Majorana spectrum in one parity sector equals the exact spin spectrum to 6e-15. (iv) Adding Kitaev's time-reversal-odd pattern s^a_i s^b_m s^c_k on every bond pair of the networks breaks S, but the gap stays open up to kappa = 4 (smallest 0.13) and every weak Chern number stays 0. A Chern number changes only through a gap closing, so chiral Majorana bands in these carvings need a gapless carving, a gap-closing term or leaves. No chiral phase, Weyl node, Chern number or physical identification is claimed."
+claim_scope: "Setting: the relaxed carvings of open PR 9054 at the compass point of the fully soldered clause, with records acting as fields, all supplied and none adopted. There, every record field lies on a dangling axis. (i) Give each c Majorana the parity of its site, and each dangling b Majorana the opposite parity. Every bond joins c Majoranas of neighbouring sites, and every dangling-axis field joins b^a_j to c_j. So every coupling joins opposite classes, and S = diag(+-1) anticommutes with the Bloch Hamiltonian at every momentum, in every gauge sector and for any record contents. This is certified on both networks of open PR 9054, all 24 gauge sectors, with random fields, to 0. (ii) Hence every weak Chern number of the gapped negative-energy bands vanishes (0 to 5e-16 on the planes k_a = 0 and pi, both networks, top of the negative bands -0.618). With the sublattice symmetry, generic band touchings would be lines rather than Weyl points. (iii) A leaf, meaning a site with a single kept bond along axis c, may carry a field along c while staying solvable, since sigma^c_j = -i b^a_j b^b_j on the physical space. That couples two same-class dangling Majoranas and breaks S. On a two-site leaf pair, the Majorana spectrum in one parity sector equals the exact spin spectrum to 6e-15. (iv) Adding Kitaev's time-reversal-odd pattern s^a_i s^b_m s^c_k on every bond pair of the networks breaks S, but the gap stays open up to kappa = 4 (smallest 0.13) and every weak Chern number stays 0. A Chern number can change only where the gap vanishes, so chiral Majorana bands in these carvings need a gapless carving, a term strong enough to make the gap vanish, or leaves. No chiral phase, Weyl node, Chern number or physical identification is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py
@@ -35,8 +35,8 @@ Majoranas chiral.
   dangling Majoranas of the same class, so it breaks `S`.
 - **Breaking `S` is not enough.** Kitaev's own time-reversal-odd pattern
   breaks `S` in both networks. Yet their gaps stay open, and every weak
-  Chern number stays 0 up to `κ = 4`. A Chern number changes only when a gap
-  closes, so chirality needs a gapless carving to start from.
+  Chern number stays 0 up to `κ = 4`. A Chern number can change only where
+  the gap vanishes, so chirality needs a gapless carving to start from.
 
 ## Setting and decision points
 
@@ -110,9 +110,9 @@ breaks `S`.
 | 20-site | 0.2, 1, 4 | 6.8, 33.9, 135.8 | 0.541, 0.570, 0.342 | 0 |
 | 16-site | 0.2, 1, 4 | 5.5, 27.7, 110.9 | 0.132, 0.432, 0.212 | 0 |
 
-The gaps never close. A Chern number can change only when a gap closes, so
-these gapped networks stay non-chiral under any time-reversal-odd
-bilinear too small to close their gap. ∎
+The gaps stay open. A Chern number can change only where the gap vanishes,
+so these gapped networks stay non-chiral under any time-reversal-odd
+bilinear too weak to make their gap vanish. ∎
 
 ## What this means for the lanes
 

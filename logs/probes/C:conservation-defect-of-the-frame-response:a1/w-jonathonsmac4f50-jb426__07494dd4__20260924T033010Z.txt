@@ -1,0 +1,43 @@
+X identity sum_j (s2 - s1)_j C_(aj) = 0 at 20 random equal-energy pairs, 50-digit arithmetic (< 1e-40): PASS
+(i) block 62 W3 pair (1,2,3)+(3,1,2): relative defect of the symmetric frame response, symmetric site difference
+   L = 12: lattice 0.17329, symbol formula 0.17729, x (L/12)^3 = 0.1733; bond current of pi_j: max |div| = 1.4e-14
+   L = 24: lattice 0.02233, symbol formula 0.02218, x (L/12)^3 = 0.1786; bond current of pi_j: max |div| = 6.4e-15
+   L = 32: lattice 0.00937, symbol formula 0.00937, x (L/12)^3 = 0.1776; bond current of pi_j: max |div| = 8.9e-15
+   L = 48: lattice 0.00278, symbol formula 0.00278, x (L/12)^3 = 0.1778; bond current of pi_j: max |div| = 8.4e-15
+   L = 64: lattice 0.00117, symbol formula 0.00117, x (L/12)^3 = 0.1779; bond current of pi_j: max |div| = 8.6e-15
+   fitted power of 1/L over L = 24..64: 3.003
+(i) direction and pair: L = 24, symmetric site difference; rho_j = cos(q_j/2)/cos(K_j) on the support of q
+   (1, 2, 3)    + (3, 1, 2)    cyclic rotation                        defect 2.23e-02 (formula 2.22e-02); rho spread on supp(q) 1.77e-01; rank C 2
+   (1, 2, 3)    + (2, 3, 1)    cyclic rotation                        defect 2.20e-02 (formula 2.22e-02); rho spread on supp(q) 1.77e-01; rank C 2
+   (1, 2, 3)    + (2, 1, 3)    mirror x<->y                           defect 1.08e-14 (formula 5.48e-17); rho spread on supp(q) 0.00e+00; rank C 2
+   (1, 2, 3)    + (3, 2, 1)    mirror x<->z                           defect 1.29e-14 (formula 8.48e-17); rho spread on supp(q) 0.00e+00; rank C 2
+   (1, 2, 3)    + (-1, 2, 3)   mirror x -> -x                         defect 5.93e-15 (formula 3.49e-18); rho spread on supp(q) 0.00e+00; rank C 2
+   (1, 2, 3)    + (1, -2, -3)  half turn about x                      defect 6.22e-02 (formula 6.22e-02); rho spread on supp(q) 1.59e-01; rank C 2
+   (1, 2, 3)    + (-2, 1, 3)   quarter turn about z                   defect 1.84e-02 (formula 1.84e-02); rho spread on supp(q) 1.41e-01; rank C 2
+   (1, 2, 0)    + (2, 1, 0)    in a coordinate plane (mirror x<->y)   defect 5.90e-15 (formula 4.99e-17); rho spread on supp(q) 0.00e+00; rank C 2
+   (1, 3, 0)    + (-3, 1, 0)   in a coordinate plane (quarter turn)   defect 9.81e-02 (formula 9.81e-02); rho spread on supp(q) 2.19e-01; rank C 2
+   (2, 1, 1)    + (1, 2, 1)    mirror                                 defect 1.23e-14 (formula 3.59e-17); rho spread on supp(q) 0.00e+00; rank C 2
+   (1, 1, 2)    + (1, 2, 1)    mirror y<->z                           defect 1.22e-14 (formula 5.70e-17); rho spread on supp(q) 0.00e+00; rank C 2
+   (1, 2, 4)    + (4, 1, 2)    cyclic rotation                        defect 6.38e-02 (formula 6.34e-02); rho spread on supp(q) 2.93e-01; rank C 2
+   (1, 2, 3)    + (-3, -1, -2) rotation composed with inversion       defect 6.80e-02 (formula 6.80e-02); rho spread on supp(q) 1.32e-01; rank C 2
+   exact characterisation holds on every pair (defect zero <=> rho_j equal on the support of q): True
+(ii) local recombinations of the site responses (L = 24 and 48, pair (1,2,3)+(3,1,2)): relative defect
+   L = 24: site, symmetric difference 2.23e-02; site, forward 1.54e-01; site, backward 1.65e-01; bond average, backward 2.23e-02; face (a != j) / bond (a = j), backward 8.65e-02
+   L = 48: site, symmetric difference 2.78e-03; site, forward 3.91e-02; site, backward 4.06e-02; bond average, backward 2.78e-03; face (a != j) / bond (a = j), backward 2.16e-02
+   none is divergence-free to rounding; proof of impossibility for any fixed local recombination: its symbol is a function F(q) while
+   the null vector of C is (s2 - s1)_j = 2 cos(K_j) sin(q_j/2), which depends on K; two pairs with one q and different K need different F
+(iii) antisymmetric part: max |Theta_[aj] osc| / max |Theta_(aj) osc| and its own relative divergence
+   (1, 2, 3) + (3, 1, 2), L = 24: antisymmetric/symmetric oscillating amplitude 0.244; relative divergence of the full (unsymmetrised) response 2.14e-02
+   (1, 2, 3) + (3, 1, 2), L = 48: antisymmetric/symmetric oscillating amplitude 0.255; relative divergence of the full (unsymmetrised) response 2.69e-03
+   (1, 2, 3) + (2, 1, 3), L = 24: antisymmetric/symmetric oscillating amplitude 0.104; relative divergence of the full (unsymmetrised) response 1.66e-14
+   (1, 2, 3) + (2, 1, 3), L = 48: antisymmetric/symmetric oscillating amplitude 0.100; relative divergence of the full (unsymmetrised) response 3.56e-14
+   (1, 2, 3) + (-1, 2, 3), L = 24: antisymmetric/symmetric oscillating amplitude 0.211; relative divergence of the full (unsymmetrised) response 8.90e-15
+   (1, 2, 3) + (-1, 2, 3), L = 48: antisymmetric/symmetric oscillating amplitude 0.195; relative divergence of the full (unsymmetrised) response 2.24e-14
+(i') three waves, L = 24 and 48: (1,2,3)+(3,1,2)+(2,3,1) (cyclic triple) and (1,2,3)+(2,1,3)+(-1,2,3) (mirrors)
+   [(1, 2, 3), (3, 1, 2), (2, 3, 1)] L = 24: relative defect 2.434e-02 (x (L/12)^3 = 0.195); bond current max |div| 1.2e-14
+   [(1, 2, 3), (3, 1, 2), (2, 3, 1)] L = 48: relative defect 3.048e-03 (x (L/12)^3 = 0.195); bond current max |div| 1.4e-14
+   [(1, 2, 3), (2, 1, 3), (-1, 2, 3)] L = 24: relative defect 6.492e-03 (x (L/12)^3 = 0.052); bond current max |div| 1.1e-14
+   [(1, 2, 3), (2, 1, 3), (-1, 2, 3)] L = 48: relative defect 8.064e-04 (x (L/12)^3 = 0.052); bond current max |div| 1.3e-14
+
+SUMMARY: the symmetric frame response's divergence defect is exactly sum_j (rho_j - rho_bar)(s2 - s1)_j C_(aj) with rho_j = cos(q_j/2)/cos K_j (symbol formula = lattice to rounding); W3's 0.178 (12/L)^3 reproduced (fitted power 3.00); it vanishes exactly iff rho_j is equal on the support of q, which every cube mirror pair satisfies and cyclic/quarter-turn pairs do not; no fixed local recombination is conserved (the null vector depends on K); the bond current of pi_j is conserved to rounding
+HIT: the defect does NOT vanish in coordinate planes in general: the in-plane quarter-turn pair (1,3,0)+(-3,1,0) has relative defect 0.098 at L = 24 (formula agrees); the exact criterion is rho_j = cos(q_j/2)/cos(K_j) equal on the support of q, met by every cube mirror pair (coordinate or diagonal planes), so in-plane pairs vanish only when they are mirrors

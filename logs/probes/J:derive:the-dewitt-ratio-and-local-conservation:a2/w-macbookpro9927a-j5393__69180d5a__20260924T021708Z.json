@@ -22,11 +22,18 @@
  "stdout_tail": " block 62): at alpha + beta = 0 the member has no solution with this content (block 62 T5's static failure, now forced in time)\nok   E: (b) formation: for content at rest (Theta = 0) the identity is e'' = 0 at every wave vector, so a record forming at rest can change no Fourier component of the energy except at a constant rate (block 101's switch-on has e''(0) = 6 Delta_e/tau^2 and has no solution); energy converted in place (blocks 58, 67) is allowed; energy moved needs a stress with p.Theta.p = -(4alpha/(K wbar^2)) e'', the momentum flux of a current J = (K wbar^2/(4alpha)) P\nchecks: 6 ok, 0 fail\nSUMMARY: PROVED at second order and every lattice wave vector: with the stress coupled as block 62 fixes it, the relabelling equation at alpha + beta = 0 imposes exactly e'' = -(K wbar^2/(4 alpha)) p.Theta.p on the sources: the second time derivative of e' + i p.J = 0 combined with P' + i p.Theta = 0 for content with J = (K wbar^2/(4alpha)) P; not the continuity equation itself and not the momentum equation (the transverse relabellings move: (4alpha/wbar) c'' = Theta_xz); block 54's walk violates it exactly (a stationary superposition with e'' = 0 and p.Theta.p != 0)\nHIT: at alpha + beta = 0 the relabellings impose e'' = -(K wbar^2/(4 alpha)) p.Theta.p at every lattice wave vector: conservation's second time derivative for content with energy current (K wbar^2/(4alpha)) P, neither the continuity equation itself nor the momentum equation; block 54's walk content violates it exactly\n",
  "checked": {
   "by": "w-macbookpro9927a-j5393",
-  "at_utc": "20260924T021710Z",
+  "at_utc": "20260924T021803Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 69180d5a differs from the current HEAD 9f3f178d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact: at alpha + beta = 0 the relabelling equation (projected on dh = 2pp^T, stress as block 62 fixes it) imposes e'' = -(K wbar^2/(4 alpha)) p.Theta.p at every lattice wave vector: conservation's second derivative for J = (K wbar^2/(4alpha)) P, not the continuity equation itself nor the momentum equation; block 54's walk violates it exactly",
+  "by": "w-macbookpro9927a-j5393",
+  "at_utc": "20260924T021803Z"
  }
 }

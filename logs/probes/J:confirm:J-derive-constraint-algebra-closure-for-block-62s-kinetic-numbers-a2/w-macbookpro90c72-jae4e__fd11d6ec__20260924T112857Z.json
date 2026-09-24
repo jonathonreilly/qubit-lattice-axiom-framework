@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-constraint-algebra-closure-for-block-62s-kinetic-numbers-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jae4e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/constraint-algebra-closure-for-block-62s-kinetic-numbers/referee_w-macbookpro90c72-jae4e/check.py",
+ "seed": 49337,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fd11d6ec",
+ "started_utc": "20260924T112857Z",
+ "elapsed_s": 10.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed at linear order \u2014 on the lattice {C[N],C[M]} equals G[xi] with xi_j=(K/(4 alpha))(N_{x+e_j} M_x - N_x M_{x+e_j}) for every lapse iff beta=-alpha, when face terms are timed inversion-symmetrically; no O(p^2) remainder (symbolic, all wave vectors, and exhaustive on 4^3). The structure constant is the TT speed squared. The walker's own bracket is not part of the confirmed claim."
+ },
+ "review": "Independent Legendre transform, all 4096 site-lapse pairs on the 4^3 torus, and rank 189 to 190 agree: linear-order closure holds on the lattice iff beta=-alpha for inversion-symmetric face clocks; the walker bracket stays assumed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:constraint-algebra-closure-for-block-62s-kinetic-numbers:a2/; its files are probes/work/derive/constraint-algebra-closure-for-block-62s-kinetic-numbers/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/constraint-algebra-closure-for-block-62s-kinetic-numbers/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "98eb946ba8c4a0a297cd6ff87ac897daf972de3e5953e6dacd31ba28680ace67",
+ "stdout_tail": "h, alpha=3/7, K=5/11, c=1/2, four-corner clocks: the same identity\nPASS necessity: the bracket is affine in c: b(c)=b(1/2)+(1-2c) b1, and b1 is equal on the three diagonal momenta, zero on faces, and outside the relabelling span (rank mod 1000003: 189 -> 190); one-corner clocks at c=1/2 are also outside (near:189->190, far:189->190). Closure onto G for every lapse holds only at c=1/2, i.e. beta=-alpha, and only for an inversion-symmetric face clock\nTOTAL: PASS=6 FAIL=0\nSUMMARY: confirmed at linear order \u2014 on the lattice {C[N],C[M]} equals G[xi] with xi_j=(K/(4 alpha))(N_{x+e_j} M_x - N_x M_{x+e_j}) for every lapse iff beta=-alpha, when face terms are timed inversion-symmetrically; no O(p^2) remainder (symbolic, all wave vectors, and exhaustive on 4^3). The structure constant is the TT speed squared. The walker's own bracket is not part of the confirmed claim.\nHIT: confirmed - linear-order closure on the lattice survives: beta=-alpha is necessary and sufficient for {K R1[N], kin[M]}-(N<->M) to equal the strain relabelling G[xi], xi the bond field (K/(4 alpha))(N_{x+e} M - N M_{x+e}), for inversion-symmetric face clocks (four-corner mean and either opposite-corner mean); verified by an independent Legendre transform, the trig identity at every wave vector, every pair of site lapses on the 4^3 torus, samples on 3^3 and 5^3, and a modular rank obstruction for every other c and for a one-corner clock. Quadratic order and the walker's bracket stay open, as the attempt marked them.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jae4e",
+  "at_utc": "20260924T112955Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent exact checks reproduce linear-order closure on the lattice iff beta equals -alpha, for inversion-symmetric face clocks; one-corner clocks and every other c fail the rank test.",
+  "by": "w-macbookpro90c72-jae4e",
+  "at_utc": "20260924T112955Z"
+ }
+}

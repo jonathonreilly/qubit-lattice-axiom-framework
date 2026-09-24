@@ -1,0 +1,36 @@
+{
+ "task": "P:8918",
+ "type": "pr-reexecution",
+ "lane": "ice-green-function-only-in-charged-secto",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8918",
+ "pr": 8918,
+ "branch": "claude/ice-green-function-only-in-charged-sector-20260923",
+ "git_sha": "49aa7a42",
+ "started_utc": "20260924T024920Z",
+ "elapsed_s": 184.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "af594c4e3fb6d3231e5af25c3c2d5fba84e4bdb4ce99965323e71d642e3d80d3",
+ "stdout_tail": "PR #8918: docs(ice): the Green function lives in the charged sector of uniform ice\nbranch claude/ice-green-function-only-in-charged-sector-20260923 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T025225Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

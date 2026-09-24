@@ -1,0 +1,4 @@
+PR #8905: docs(ice): the RK-point photon's single-mode bound is quadratic
+branch claude/ice-rk-photon-quadratic-bound-20260923 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py: rc=0 PASS=4 FAIL=0

@@ -1,0 +1,10 @@
+PR #8889: physics-loop: admissibility induced-law block 100 - inertia and the rule's weights do not mix locally: streaming records keep the rule's law at three records, never at four
+branch physics-loop/admissibility-induced-law-block100-inertia-and-the-rules-weights-do-not-mix-locally-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_inertia_and_the_rules_weights_do_not_mix_locally_2026_09_23.py: rc=0 PASS=11 FAIL=0
+   mutation local_clock_certificate_negated: expected B observed B ok
+   mutation one_rate_perturbed: expected C observed C ok
+   mutation four_record_certificate_truncated: expected D observed D ok
+   mutation cluster_rows_from_the_small_torus: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

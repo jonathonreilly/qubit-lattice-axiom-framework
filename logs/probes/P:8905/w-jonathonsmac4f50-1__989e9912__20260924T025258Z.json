@@ -1,0 +1,36 @@
+{
+ "task": "P:8905",
+ "type": "pr-reexecution",
+ "lane": "ice-rk-photon-quadratic-bound-20260923",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8905",
+ "pr": 8905,
+ "branch": "claude/ice-rk-photon-quadratic-bound-20260923",
+ "git_sha": "989e9912",
+ "started_utc": "20260924T025258Z",
+ "elapsed_s": 146.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "c971692164c08953d638bad75ee6f7aead8da4736b3cb20b1b074b4939f675cc",
+ "stdout_tail": "PR #8905: docs(ice): the RK-point photon's single-mode bound is quadratic\nbranch claude/ice-rk-photon-quadratic-bound-20260923 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T025525Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

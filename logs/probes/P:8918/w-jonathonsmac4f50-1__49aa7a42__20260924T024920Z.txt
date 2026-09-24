@@ -1,0 +1,4 @@
+PR #8918: docs(ice): the Green function lives in the charged sector of uniform ice
+branch claude/ice-green-function-only-in-charged-sector-20260923 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_carries_the_lattice_green_function_in_its_charged_sector_while_neutral_scalar_records_are_short_ranged_2026_09_23.py: rc=0 PASS=4 FAIL=0

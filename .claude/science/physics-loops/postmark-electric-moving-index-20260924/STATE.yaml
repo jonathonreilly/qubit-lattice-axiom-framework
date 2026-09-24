@@ -89,6 +89,7 @@ files_touched:
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/central_bragg_route_probe.json
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/central_bragg_crossing_transfer_runner.stdout
   - outputs/postmark_moving_index_2026_09_24/attempt_logs/central_bragg_crossing_transfer_author_check.md
+  - outputs/postmark_moving_index_2026_09_24/attempt_logs/airy_turning_point_current_main_search.md
   - .claude/science/physics-loops/postmark-electric-moving-index-20260924/
 next_exact_action: "cold-read the complete final candidate diff; verify the five-node/eight-edge citation acknowledgment; run the review-only combined pipeline, strict audit lint, and changed-evidence on the frozen exact candidate; push/open one non-draft PR if gates pass; then begin the forbidden-tail boundary-selection campaign"
 stop_condition: "continue through useful ranked science blocks until the user-requested campaign is complete or the available usage limit is reached; stop earlier only for documented global quality/tooling exhaustion"

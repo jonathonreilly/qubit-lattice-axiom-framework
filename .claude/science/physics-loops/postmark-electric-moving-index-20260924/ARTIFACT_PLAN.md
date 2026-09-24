@@ -230,7 +230,7 @@ independent review or audit prediction.
 | Gate | Answer and evidence |
 |---|---|
 | V1 — unresolved target | The interior `Re(q_S(1/4))` still requires phase-accurate eigenfunctions and prepared overlaps. |
-| V2 — new evidence and search | Current-main search found no matching Airy transfer source. The new note derives the Jordan form, turning scale, coefficient, and edge shift; its runner checks the exact identities and finite diagnostics. |
+| V2 — new evidence and search | The current-main source-search receipt is `outputs/postmark_moving_index_2026_09_24/attempt_logs/airy_turning_point_current_main_search.md`; it found no matching Airy/turning or five-site transfer source. The new note derives the Jordan form, turning scale, coefficient, and edge shift; its runner checks the exact identities and finite diagnostics. |
 | V3 — obligation discharged | Only the fixed compact-energy Airy window and ordered allowed-side match are proved; remote forbidden propagation and finite-endpoint mode selection remain open. |
 | V4 — concrete gain | The `k=pi` local coalescence and its `O(R^-3/2)` overlap error are now explicit inputs for a later global quantization proof. |
 | V5 — variant/churn check | The Jordan/Airy normal form differs from both the simple/central Bragg layers and the principal Weyl count; it supplies no global closure claim. |

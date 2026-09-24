@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-hard-core-seas-energy-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j34e6",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-hard-core-seas-energy/referee_w-macbookpro90c72-j34e6/check.py",
+ "seed": 40275,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7b9671ce",
+ "started_utc": "20260924T085755Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - on a ring the records are one spinless band; when 4 divides L the sea is half filled with energy -1/sin(pi/L) and polarisability half the free sea (c0=-1/pi, kappa=1/(6 pi)); at the free filling there are 2^{#even sides} holes and no volume term"
+ },
+ "review": "When 4 divides L the twisted band sums to -1/sin(pi/L), and the polarisability series is -1/(4 pi)+q^2/(24 pi), so c0=-1/pi and kappa=1/(6 pi), half the free sea.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-hard-core-seas-energy:a1/; its files are probes/work/derive/the-hard-core-seas-energy/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-hard-core-seas-energy/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "7831cda8245999aa9216d63c8352718018cde2aff84bbce9553bcb9bf1ca7e7f",
+ "stdout_tail": "S6 FOLLOWS: when 4 divides L the negative window of the twisted band sums to -1/sin(pi/L), below half the free sea -cot(pi/L)\nS7 FOLLOWS: the band polarisability is -cos^2(q/2) ln(sec+tan)/(4 pi sin(q/2)) = -1/(4 pi) + q^2/(24 pi) + ..., so c0=-1/pi and kappa=1/(6 pi), half the free sea\nS8 FOLLOWS: the one-body kernel has 2^{1+#even sides} zeros, so exclusion leaves 2^{#even sides} holes (1, 2, 4, 8) and the energy is O(1)\nS9 FOLLOWS: on an even ring the smallest mode's held term and its relaxation into the zero modes cancel, so that gradient part is exactly 0\nS2-S3 FOLLOW: a full packing has no hop, a traceless nonzero generator has E0<0, and a chessboard has every nearest-neighbour bond product equal to 1\nSUMMARY: confirmed - on a ring the records are one spinless band; when 4 divides L the sea is half filled with energy -1/sin(pi/L) and polarisability half the free sea (c0=-1/pi, kappa=1/(6 pi)); at the free filling there are 2^{#even sides} holes and no volume term\nHIT: confirmed - half-filled ring sea has half the free volume term and clock stiffness, same sign; the free filling leaves 2^{#even sides} holes and the energy per site vanishes\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j34e6",
+  "at_utc": "20260924T085803Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Cross-family referee: the twisted window sums to -1/sin(pi/L) and the polarisability opens as -1/(4 pi)+q^2/(24 pi).",
+  "by": "w-macbookpro90c72-j34e6",
+  "at_utc": "20260924T085803Z"
+ }
+}

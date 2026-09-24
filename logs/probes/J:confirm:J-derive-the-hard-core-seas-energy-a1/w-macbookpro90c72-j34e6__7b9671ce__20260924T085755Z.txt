@@ -1,0 +1,7 @@
+S6 FOLLOWS: when 4 divides L the negative window of the twisted band sums to -1/sin(pi/L), below half the free sea -cot(pi/L)
+S7 FOLLOWS: the band polarisability is -cos^2(q/2) ln(sec+tan)/(4 pi sin(q/2)) = -1/(4 pi) + q^2/(24 pi) + ..., so c0=-1/pi and kappa=1/(6 pi), half the free sea
+S8 FOLLOWS: the one-body kernel has 2^{1+#even sides} zeros, so exclusion leaves 2^{#even sides} holes (1, 2, 4, 8) and the energy is O(1)
+S9 FOLLOWS: on an even ring the smallest mode's held term and its relaxation into the zero modes cancel, so that gradient part is exactly 0
+S2-S3 FOLLOW: a full packing has no hop, a traceless nonzero generator has E0<0, and a chessboard has every nearest-neighbour bond product equal to 1
+SUMMARY: confirmed - on a ring the records are one spinless band; when 4 divides L the sea is half filled with energy -1/sin(pi/L) and polarisability half the free sea (c0=-1/pi, kappa=1/(6 pi)); at the free filling there are 2^{#even sides} holes and no volume term
+HIT: confirmed - half-filled ring sea has half the free volume term and clock stiffness, same sign; the free filling leaves 2^{#even sides} holes and the energy per site vanishes

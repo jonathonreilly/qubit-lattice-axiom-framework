@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_records_that_move_pair_weight_transit_static_equilibrium_binding_scale_2026_09_20.py
 runner_sha256: ff71627c0872e6ded0580b942fa8a0d7ba6dd104c59259d7700c6ee244cd96e0
-input_fingerprint_sha256: a697b12811a2f039e8e72ea43133efa9dccde487d2d85f5f47c54c1f0ed7517e
+input_fingerprint_sha256: 05c71e154a45cf127242548f9d01aa198c3a95ff7f4ca2a7c8084814d7fbf9f5
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.83
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

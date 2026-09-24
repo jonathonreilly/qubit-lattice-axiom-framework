@@ -7,3 +7,5 @@
 5. Finding folded: expected multiplier next to two orthogonal records at the neutral scale was wrong in the draft (`23/24`); exact value `1`.
 6. Caveat recorded in the note: arrest at strong preference makes the large-scale structure factor understate clumping; neighbour ratio and aligned fraction are the primary indicators.
 7. Finding added after the first gate run: reflection positivity of the law with vacancies holds exactly from the neutral scale up (T5); checked symbolically and by an explicit negative form below it; a scratch numerical check of the 7×7 kernel's smallest eigenvalue agrees (−0.646 at c = 1/4, 0 at 1/2 and 1 for (3,1,2); −0.118, 0, +0.704 at c = 1/4, 2/7, 1 for (12,1,2)).
+
+**Corrigendum (2026-09-23, supervisor).** The rare-formation remark after T4 holds only conditionally on the records present (number and contents); the growing population is not a static-ensemble sample: the formation history sets which contents are present (PR #8545, exact six-site counterexample at the third birth). T1 and T4 stand. Text only.

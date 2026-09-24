@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-20 block 39 — author checks (not a review PASS)
 Complete axioms memo read before the lens. Exact stationary laws computed before arguing. Refuting pass by linear solves, a site-by-site reference simulator and a literature calibration. One finding folded (neutral-scale multiplier). Census 8/8 in family.
+
+## 2026-09-23 block 39 — corrigendum: the rare-formation remark (supervisor, Claude Opus 5.5)
+The remark is conditional on the records present; the growing population is not a static-ensemble sample (PR #8545's exact counterexample). T1 and T4 stand. Text only.

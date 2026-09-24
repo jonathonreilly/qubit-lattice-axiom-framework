@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_2026_09_23.py
+runner_sha256: a5156ceab3982becf41e2cc4d24abd2c7de96294fb555d9bef62150c6c04b722
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 73.29
+status: ok
+----- stdout -----
+== A. The row transfer reproduces open PR #8746 ==
+[PASS] trace T^2 = 9600 on 2 x 2, the transfer is symmetric, and the top eigenvalues match open PR #8746 on 2 x 2, 2 x 4, 2 x 6 :: lam0 = 60.9137, 2401.3316, 105338.1323
+
+== B. The square 4 x 4 ==
+[PASS] the top eigenvalue falls with the flux across |S| = 0, 2, 4, 6, 8 :: lam = 3244639.0, 2989915.0, 2332665.4, 1526346.9, 822834.3
+[PASS] c(S) = (A / S^2) ln(lam_0 / lam_S) is 0.327 at |S| = 2 and within 3% of it up to |S| = 6 :: c = 0.3270, 0.3300, 0.3352, 0.3430
+
+== C. Shape at equal area ==
+[PASS] the strip 2 x 8 has c = 0.314 at |S| = 2, about 4% below the square's :: 0.3137 vs 0.3270
+
+== D. Strips of width 2 ==
+[PASS] c at |S| = 2 rises with the strip's length, b = 2, 4, 6, 8, 10 :: 0.2808, 0.3073, 0.3121, 0.3137, 0.3145
+
+time 73 s
+per_element: Row tensors count binary horizontal occupations; matrix contractions and all large spectral solves use floating-point arithmetic.
+per_site: Only the declared even periodic cross-sections are computed; the row ordering and bit convention are supplied implementation choices.
+per_mode: Numerical eigenpairs pass residual and symmetry controls; a finite computed spectrum is not a proof of asymptotic scaling.
+per_block: The quoted coefficient or gap inequalities concern the printed finite geometry list, with separate small exact-value controls.
+lattice_wide: Infinite transverse size, a Gaussian continuum limit and physical phase selection are not established by these finite computations.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

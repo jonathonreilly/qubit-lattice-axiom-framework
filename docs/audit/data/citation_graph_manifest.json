@@ -1,6 +1,6 @@
 {
- "edge_count": 14080,
- "node_count": 6500,
+ "edge_count": 14091,
+ "node_count": 6510,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -762,9 +762,17 @@
    "deps_hash": "a95e40c6cf02",
    "out_degree": 3
   },
+  "admissibility_rule_gravity_node_kernel_under_the_formation_reading_a_heat_kernel_in_level_time_times_a_plane_green_function_not_the_comparators_three_dimensional_green_function_bounded_theorem_note_2026-09-18": {
+   "deps_hash": "0447028c8504",
+   "out_degree": 2
+  },
   "admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1badd550395b",
    "out_degree": 3
+  },
+  "admissibility_rule_how_records_form_static_law_outside_the_hull_of_adapted_formation_laws_and_clause_independence_on_a_causal_predecessor_structure_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06": {
    "deps_hash": "0447028c8504",
@@ -774,9 +782,17 @@
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
   },
+  "admissibility_rule_re_recording_at_every_tick_static_law_stationary_light_cone_bilayer_long_range_order_green_function_response_conditional_on_an_excluded_clause_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "7fff3dc3d206",
+   "out_degree": 1
+  },
   "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15": {
    "deps_hash": "903559348f92",
    "out_degree": 3
+  },
+  "admissibility_rule_six_axis_formation_threshold_the_unit_budget_is_false_one_seed_witness_with_family_constant_ten_ninths_tight_sibling_lemma_refuted_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_sphere_static_law_finite_torus_magnetization_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "1443a5e7b08d",
@@ -824,6 +840,10 @@
   },
   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8ae058a5c524",
+   "out_degree": 2
+  },
+  "admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_and_the_nonlinear_law_measured_against_it_bounded_theorem_note_2026-09-17": {
+   "deps_hash": "0447028c8504",
    "out_degree": 2
   },
   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {
@@ -2777,6 +2797,10 @@
   "clock_all_mode_coercivity_finite_graph_states_bounded_theorem_note_2026-09-16": {
    "deps_hash": "19a59dfa7d56",
    "out_degree": 2
+  },
+  "clock_and_rate_covariant_exponential_races_record_level_invisibility_for_order_blind_rules_and_clock_sensitive_hole_mass_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "clock_penalty_local_normal_form_and_simultaneous_ground_state_limit_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
@@ -12942,6 +12966,10 @@
    "deps_hash": "8830c572e201",
    "out_degree": 2
   },
+  "menus_and_born_stabilizer_degenerate_supports_antipodal_weight_class_and_non_affine_witness_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -16338,6 +16366,10 @@
    "deps_hash": "3f78d84d26cf",
    "out_degree": 5
   },
+  "record_dynamics_finished_record_correlators_against_propagation_kernels_nearest_neighbour_sentence_excludes_long_range_pairs_and_glued_support_rigidity_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "record_dynamics_koide_dial_firewall_2026-06-05": {
    "deps_hash": "3842babb6b6e",
    "out_degree": 3
@@ -19326,9 +19358,17 @@
    "deps_hash": "2a338d61d68b",
    "out_degree": 3
   },
+  "uniform_ice_flux_stiffness_on_a_square_cross_section_by_row_transfer_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "4583c70c3ab5",
+   "out_degree": 3
+  },
   "uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_bounded_theorem_note_2026-09-23": {
    "deps_hash": "0a5a23d65830",
    "out_degree": 2
+  },
+  "uniform_ice_zero_flux_layer_chain_gap_closes_as_the_smallest_transverse_wavenumber_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "1f45a7f9bb63",
+   "out_degree": 3
   },
   "unit_conversion_is_the_accepted_non_bounding_ruler_reconciliation_note_2026-06-08": {
    "deps_hash": "d292eab310f2",

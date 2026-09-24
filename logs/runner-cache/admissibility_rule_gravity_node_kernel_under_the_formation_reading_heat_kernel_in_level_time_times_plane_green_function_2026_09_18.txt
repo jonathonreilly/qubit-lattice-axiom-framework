@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py
+runner_sha256: 70ffeac92d67ffb3ced1bf790154b56b7d91a14ba6798b1261ff1a2412b064ba
+input_fingerprint_sha256: 314b4fe8ff6081cd68dce0930d9e18b389916374f28e74781705510709b98dbc
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.03
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
+PASS: A4 all declared inputs exist
+PASS: B1 T1: real multiplier covariance identity for t<=8, s<=3; the complex early-late orientation is checked separately
+PASS: B3 L=4 complex character detects early-late conjugation
+PASS: B2 T1: on the tori L = 3, 4 the exact rational cross-level covariance Sigma_{t,t+s} = Sigma_t (P^s)^T gives, for every cosine character of a nonzero mode, Cov/Var = Re phi(k)^s at s = 1, 2, 3, and t/L^2 for the plane average (the zero mode's random walk)
+PASS: C1 T2: 1 - u(k) = k^T M k + O(k^4) with M = (1/9)[[2,-1],[-1,2]], eigenvalues 1/9 (along (1,1)) and 1/3 (along (1,-1)): an anisotropic two-dimensional quadratic form; the comparator's E(k) = sum 2(1 - cos k_i) = |k|^2 + O(k^4) is isotropic on Z^3
+PASS: D2 T3: static Green layer recurrence has G_s=rho^|s|/(rho^-1-rho); its exponent is linear in sqrt(a), unlike the quadratic recurrence decay
+PASS: D1 T3: for every nonzero mode |C_s(k)|/C_0(k) = |phi(k)|^s <= exp(-(1 - u) s/2) <= exp(-2|k|^2 s/(9 pi^2)) on the square (log(1 - y) <= -y): a quadratic mode-decay upper bound; and phi(k) = 1 + i(k1 + k2)/3 + O(k^2): the phase drift is stated in the supplied level coordinates
+PASS: D2 T3: the comparator's 1/E(k) is not of the product form (plane factor) x (cross-plane factor) — its logarithm has a non-vanishing mixed derivative in (k1, k3) — so it cannot be written as a plane Green function times a propagator in any direction; the formation kernel is exactly of that form
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: Exact arithmetic checks the supplied recurrence and identities; its gain-one assumption is not the nonlinear Cartesian mean derivative.
+per_site: Finite periodic plane covariance matrices are compared with exact mode expressions on the explicitly listed small tori.
+per_mode: Complex covariance orientation, or real mode variances and bounds, are controlled under the explicitly declared transform convention.
+per_block: The algebraic statements require the supplied model and beta greater than zero; finite numerical observations have only their listed scope.
+lattice_wide: No nonlinear infinite-volume theorem, physical law selection, gravity kernel or retained audit grade follows from this certificate.
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py
+runner_sha256: a417c0e5cb0717e04fbc0824e3e3ce1702735e3111b2cf4eb40e8e4979a9df94
+input_fingerprint_sha256: bf01d2303c114298b80321c0a580b45a1f5708b72f8d75a0d97f8a94105cdece
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.13
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the four sentences used, among them the one-record-per-site sentence that the supplied clause contradicts
+PASS: A3 block 01 on main carries its claim id and the static law of a product rule
+PASS: B1 T1(a): on the four-cycle with the six-axis rule at (3,1,2) and (5,2,4), re-recording one site from its two neighbours is in detailed balance with the static law, for every configuration, site and new value
+PASS: B2 T1(b): the static law's conditional of one bipartition class given the other is the product of the rule's one-site kernels (every configuration): the synchronous step of a class is a draw from that conditional
+PASS: B3 T1(b): the synchronous step carries the static law's class-1 marginal to its class-0 marginal, so the space-time checkerboard of the alternating chain has the static law as a stationary law
+PASS: C1 T2: with the site's own record in the past, the synchronous chain on the four-cycle is in detailed balance with pi(s) = prod_x Z_x(s), for all 256 pairs of configurations at two weight pairs
+PASS: C2 T2: pi is the layer-0 marginal of the pair law on the doubled graph, exactly
+PASS: C3 T2: the same detailed balance for the six-axis rule at (3,1,2) on 400 random pairs of configurations
+PASS: C4 T2: for L = 4 and 6 the map (x, a) -> (x, a + |x| mod 2) carries the doubled graph (7 L^3 edges) onto the bilayer (Z/L)^3 x K_2 edge for edge
+PASS: C5 T3: on L = 4 every bond-plane reflection composed with the layer swap is an automorphism whose crossing edges are {u, theta u}; the two bilayer-layer halves (a+parity in doubled coordinates) are separated exactly by the vertical edges, each {u, sigma u}
+PASS: C6 T3: every edge of the doubled graph is crossed by one of these reflections
+PASS: D1 T3: the Laplacian of the doubled graph has symbol [[7, -A], [-A, 7]], A = 1 + 2 sum cos k_j, with the two bands E(k) and 14 - E(k) = E(k + pi) + 2
+PASS: D2 T3: on the doubled graph of the 4- and 6-cycle with two-valued records at e^beta = 2, every nonzero mode of both bands satisfies the infrared bound exactly (largest ratio to the bound 318/1000; log 2 < 6932/10000 by an exact partial sum)
+PASS: D3 T3: the closed-walk numbers obey their three-term recursion to m = 60; I_2 lies in (1409314, 1409316)/10^7 by 61 exact terms and a geometric tail; with the imported current cubic-walk bound 3 I_0 < 76/100 the ordering coupling beta_0 = (3/2)(I_0 + I_2) is below 5914/10000, and above 55/100 by partial sums
+PASS: D4 T3: the torus sums at L = 4 are G = 1517/7680 and H = 127/896; the bound 1 - (3/(2 beta))(G + H) is positive there for beta > 18239/35840
+PASS: E1 T4: for the seven-site stencil phi = 1 - E/7, the static response 1/(1 - phi) is 7/E(k), the equal-tick covariance sigma^2/(1 - phi^2) is (7 sigma^2/2)(1/E + 1/(14 - E)), and response/covariance = (1 + phi)/sigma^2
+PASS: E2 T4: for the six-site stencil the response is 6/E(k) and the covariance 3 sigma^2 (1/E + 1/(12 - E)), with a second pole at (pi, pi, pi) where phi = -1 (the two alternating chains); with the site in the past phi = -5/7 there
+PASS: E3 T4: on the 3^3 torus, exactly: the mean around a persistent unit source solves (I - P) chi = delta_0 - 1/N with chi the transform of 7/E, and the transform of 1/(1 - phi^2) is the fixed point of Sigma = P Sigma P^T + (I - J/N)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — detailed balance of one-site re-recording with the static law; the conditional of one class given the other; the band symbols; the response and covariance symbols
+per_site: executed — every configuration of the four-cycle at two weight triples; all 256 pairs for the seven-site stencil; the 3^3 torus propagation of the mean and the covariance, exactly
+per_mode: executed — the infrared bound for every nonzero mode of both bands on the doubled 4- and 6-cycle with two-valued records, exactly
+per_block: executed — the doubled graph onto the bilayer for L = 4 and 6, edge for edge; every reflection's crossing edges; the cover of all edges
+lattice_wide: T1-T4 are proved for every even torus under the supplied clause; the ordering coupling is below 5914/10000 given block 22's bracket; the nonlinear law's memory and its potential around a source are executed in the controls and not claimed; the clause itself contradicts the axioms memo and is not adopted
+PASS: G1 the five N5 resolution lines are printed
+scope: re-recording at every tick (a clause the axioms memo excludes) — the static law is stationary for the axioms' rule; the seven-site stencil is one layer of a bilayer pair ferromagnet; the infrared bound and the ordering coupling; the Green-function response; exact
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

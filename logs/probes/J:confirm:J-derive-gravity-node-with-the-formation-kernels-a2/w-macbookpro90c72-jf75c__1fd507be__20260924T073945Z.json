@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-gravity-node-with-the-formation-kernels-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jf75c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/gravity-node-with-the-formation-kernels/referee_w-macbookpro90c72-jf75c/check.py",
+ "seed": 35585,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1fd507be",
+ "started_utc": "20260924T073945Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 11 - candidate (i) is not confined to one level by a w-independent symbol; the task's kernel depends on level time, and the delta_{n,0} check does not apply. Steps 2-10 do follow: chi=7/E, self-consistent sigma^2 chi=G/beta so beta=1 (beta=1/2 for the two-point tail), kappa* of A/k=1/7 lies in [5.79145, 5.79146], and candidate (ii)'s 1/r amplitude on the level plane is exactly twice the [111] amplitude"
+ },
+ "review": "Steps 2-10 hold: kappa* for A/k=1/7 lies in [5.79145, 5.79146] and candidate (ii) has level-plane amplitude exactly twice the [111] amplitude; step 11's one-level claim does not apply to the heat-kernel candidate.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:gravity-node-with-the-formation-kernels:a2/; its files are probes/work/derive/gravity-node-with-the-formation-kernels/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/gravity-node-with-the-formation-kernels/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "4fe41af3b4237e8d5af72f7f6b00fd586c4de944ca79f92e9870aa73eff5cbe4",
+ "stdout_tail": "STEPS 2-4 FOLLOW: chi=7/E, C/sigma^2=(7/2)(1/E+1/(14-E)), C/(sigma^2 chi)=7/(14-E) -> 1/2 at k=0; E=|k|^2-(1/12)sum k_a^4+O(k^6)\nSTEPS 5-9 FOLLOW: sigma^2=1/(7 beta) identically when kappa=7 beta m and m=A(kappa); unit response is beta=1 and unit two-point tail is beta=1/2; both impose A(kappa)/kappa=1/7 or 2/7\nROOTS FOLLOW: A/k-1/7 changes sign on [5.79145, 5.79146] (5.50e-08, -1.40e-07); 2/7 on [1.63831, 1.63832]; partial fractions track coth at kappa=1\nSTEP 10 FOLLOWS: FCC quadratic form has eigenvalues 1/4, 1/4, 1/16 and inverse 4(I+J); the 1/r amplitude along the level plane is twice the amplitude along [111]\nSTEP 11 DOES NOT FOLLOW: the task's candidate (i) is a plane Green function times a level-time heat kernel. Its symbol depends on the level-time momentum (a3's |1 - phi e^{iw}|^2, which this attempt marks GIVEN). A Fourier integral that assumes no w dependence only recovers delta_{n,0} for a different object. The equal-level slice sigma^2/(1-u) is two-dimensional; that is a different reason it is not 1/(4 pi r) on Z^3\nSUMMARY: fails at step 11 - candidate (i) is not confined to one level by a w-independent symbol; the task's kernel depends on level time, and the delta_{n,0} check does not apply. Steps 2-10 do follow: chi=7/E, self-consistent sigma^2 chi=G/beta so beta=1 (beta=1/2 for the two-point tail), kappa* of A/k=1/7 lies in [5.79145, 5.79146], and candidate (ii)'s 1/r amplitude on the level plane is exactly twice the [111] amplitude\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf75c",
+  "at_utc": "20260924T073946Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

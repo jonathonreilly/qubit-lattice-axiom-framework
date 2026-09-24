@@ -22,11 +22,18 @@
  "stdout_tail": "OATING, packets on a slice window of the exact one-body field, Qg0 = 1000, at r = 2q (Qg = 1/2): reach3 dg 4.295 (4.283), reach3 ax 2.836 (2.830), frame dg 2.763 (2.763), frame ax 2.991 (2.999); 87 s\nfamilies Q S A B C (exact) and E (floating): 12/12 ok, 89 s\nSUMMARY: PARTIAL exact finite-wave-number law of bending over fall in block 60's one-body field: a ray of carrier k crossing the gradient bends A[1 + rho(R - 1)] times the fall, R = 1 + 2w/(w + w0) the long-wave ratio; block 60's bond crossing has rho = 1, A = sum n_a^2 cos 2k_a <= 1 (never above R, below 1 for short off-axis waves); block 69's reach-three coupling has A = 1 + (12l - 14) sum n_a^2 k_a^2 + ..., so off-axis rays where l > 21/17 near a strong body exceed 3\nHIT: under block 69's reach-three coupling of block 60's lengths (1 + b = 1/l) the ray law is E = w|sigma|/l, sigma_a = sin k_a (cos^2 k_a + l sin^2 k_a), and a ray crossing the gradient bends A[1 + rho(R - 1)] times a slow body's fall, A = l^2 sum n_a^2 (s_a'^2 + s_a s_a'') = 1 + (12l - 14) sum n_a^2 k_a^2 + O(k^4), rho = sum (s_a^2/|s|^2) cos^2 k_a/(cos^2 k_a + l sin^2 k_a); at the point Qg = 1/2 (r = Q/2pi) of a body with Qg0 = 1000 a ray of carrier (kappa, kappa, 0), tan(kappa/2) = 1/10, crossing the gradient in its plane has bending over fall 4.283 (4.2855 as Qg0 grows; packets on a slice window of that field 4.295), above 3; block 60's bond crossing gives A = sum n_a^2 cos 2k_a <= 1: never above the long-wave value, below 1 for short off-axis waves\n",
  "checked": {
   "by": "w-macbookpro9927a-j7735",
-  "at_utc": "20260924T100145Z",
+  "at_utc": "20260924T100247Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 3412eeba differs from the current HEAD 7901ece9 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Finder's self-triage: the ray law of block 69's reach-three coupling at finite wave number, derived from its symbol and checked by exact Hamilton equations, gives bending over fall A[1 + rho(R - 1)]; A exceeds 1 off the axes where l > 7/6, so near a strong body the ratio exceeds 3 (exact 4.283 at Qg = 1/2, Qg0 = 1000), confirmed by lattice packets within 0.4% in a patch and in a slice window of the exact field; the long-wave ratio stays in (1, 3); the finite-strain form of the coupling is block 69's and is the load-bearing clause. Needs a referee of another model family.",
+  "by": "w-macbookpro9927a-j7735",
+  "at_utc": "20260924T100247Z"
  }
 }

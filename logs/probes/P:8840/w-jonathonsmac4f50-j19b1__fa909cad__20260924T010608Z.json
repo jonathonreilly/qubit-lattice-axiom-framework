@@ -1,0 +1,37 @@
+{
+ "task": "P:8840",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block94-three-",
+ "worker": "w-jonathonsmac4f50-j19b1",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8840",
+ "pr": 8840,
+ "branch": "physics-loop/admissibility-induced-law-block94-three-readings-against-known-physics-20260923",
+ "git_sha": "fa909cad",
+ "started_utc": "20260924T010608Z",
+ "elapsed_s": 11.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_three_readings_of_records_form_against_known_physics_spacetime_reading_two_dimensional_skewed_irreversible_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=13 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #8840's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "32bccd1f46beea3be03ed9d9c11f2731d907a730a723569f9fe3c598894e16bb",
+ "stdout_tail": "PR #8840: physics-loop: admissibility induced-law block 94 - three readings of records form against known physics: the spacetime reading is two-dimensional, skewed and irreversible\nbranch physics-loop/admissibility-induced-law-block94-three-readings-against-known-physics-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_three_readings_of_records_form_against_known_physics_spacetime_reading_two_dimensional_skewed_irreversible_2026_09_23.py: rc=0 PASS=13 FAIL=0\n   mutation spacetime_past_taken_symmetric: expected B observed B ok\n   mutation skew_taken_zero: expected B observed B ok\n   mutation mirror_lines_taken_odd: expected C observed C ok\n   mutation motion_by_the_normalised_rule: expected D observed D ok\n   mutation spacetime_levels_three_dimensional: expected E observed E ok\n   mutation one_sided_front_denied: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j19b1",
+  "at_utc": "20260924T010620Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

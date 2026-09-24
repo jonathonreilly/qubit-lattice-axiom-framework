@@ -1,0 +1,12 @@
+PR #8840: physics-loop: admissibility induced-law block 94 - three readings of records form against known physics: the spacetime reading is two-dimensional, skewed and irreversible
+branch physics-loop/admissibility-induced-law-block94-three-readings-against-known-physics-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_three_readings_of_records_form_against_known_physics_spacetime_reading_two_dimensional_skewed_irreversible_2026_09_23.py: rc=0 PASS=13 FAIL=0
+   mutation spacetime_past_taken_symmetric: expected B observed B ok
+   mutation skew_taken_zero: expected B observed B ok
+   mutation mirror_lines_taken_odd: expected C observed C ok
+   mutation motion_by_the_normalised_rule: expected D observed D ok
+   mutation spacetime_levels_three_dimensional: expected E observed E ok
+   mutation one_sided_front_denied: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

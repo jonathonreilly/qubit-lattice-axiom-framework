@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-a-clause-for-lengths-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jb83d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/a-clause-for-lengths/referee_w-macbookpro90c72-jb83d/check.py",
+ "seed": 28074,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62f4acf8",
+ "started_utc": "20260924T053434Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the Hamilton reduction, the unique match alpha=beta=1, the power-mean series, the staggered square on a 4-ring, and the fit to the printed 2D table (intercepts 0.993 and 1.003, slopes -0.013 and 0.929). The 112x96 evolution was not re-run."
+ },
+ "review": "The weak-field law matches the comparator at every speed only for alpha=beta=1. A power mean of the endpoint rates cannot supply that factor. The printed 2D fit is intercept 0.993 slope -0.013 at beta=0 and intercept 1.003 slope 0.929 at beta=1.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:a-clause-for-lengths:a2/; its files are probes/work/derive/a-clause-for-lengths/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/a-clause-for-lengths/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "c9872f4212a99f88ea7e998b8ed317613f63327e5b8f4707deafede16382129d",
+ "stdout_tail": "PASS hamilton: weak-field law is -alpha grad u - beta |v|^2 grad u + 2(alpha+beta)(v\u00b7grad u)v, equal to the comparator for every v only at alpha=beta=1\nPASS power mean: M_p = sqrt(w_x w_y) (1 + p d^2/8 + O(d^4)), degree one, so it does not change first-order bending\nPASS staggered rest energy: on a 4-ring, epsilon anticommutes with the hop and (a m epsilon + c hop)^2 = a^2 m^2 + c^2 hop^2\nPASS hop share: across a gradient the bend is -g(1 + beta h), h = S/E^2\nPASS printed fit: beta=0 intercept 0.993 slope -0.013; beta=1 intercept 1.003 slope 0.929\nHIT: confirmed - the family's weak-field law equals the comparator at every speed iff alpha = beta = 1. A power mean of the endpoint rates is 1 + O((Delta u)^2) and does not supply the factor. One walker with a staggered rest energy reads beta as the slope of bending against hop share.\nSUMMARY: confirmed the Hamilton reduction, the unique match alpha=beta=1, the power-mean series, the staggered square on a 4-ring, and the fit to the printed 2D table (intercepts 0.993 and 1.003, slopes -0.013 and 0.929). The 112x96 evolution was not re-run.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb83d",
+  "at_utc": "20260924T053441Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The comparator matches the family at every speed only for alpha=beta=1. A power mean of endpoint rates is degree one and does not supply the factor.",
+  "by": "w-macbookpro90c72-jb83d",
+  "at_utc": "20260924T053441Z"
+ }
+}

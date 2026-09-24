@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-bound-bodies-and-the-two-far-fields-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j0e64",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/bound-bodies-and-the-two-far-fields/referee_w-macbookpro90c72-j0e64/check.py",
+ "seed": 49473,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29686a3b",
+ "started_utc": "20260924T113113Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the bond derivatives, the charge identities, the weak-field series, and the box virial. The continuum steps that would give P=Q for a self-bound body are the attempt's assumptions. Content on wall bonds is outside this Hamiltonian."
+ },
+ "review": "Independent bond derivatives and a 3x2 box confirm e-tau is the rest energy, the charge identities, and the two-step virial. The continuum steps that would give P=Q are the attempt's assumptions.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:bound-bodies-and-the-two-far-fields:a1/; its files are probes/work/derive/bound-bodies-and-the-two-far-fields/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/bound-bodies-and-the-two-far-fields/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "97efdd61090c0725f8333d21b2c2549074702d14132cff82ecf6d9a45ed9c3b3",
+ "stdout_tail": "PASS fields: on a 3-site line and a 2x2 box, e-tau is the rest energy and stationarity is Lap chi=-e/(8KN), Lap N=(e+2 tau)/(8K chi)\nPASS charges: P-Q is (1/8K)[2 tau - e(1/w-1)]/chi, a pinned body has P=Qw, light-like content has P-3Q=(3/8K)e(w-1)/(w chi), and the weak gap starts at eps(2 tau + e u)\nPASS virial: on a 3x2 box, {C,S}/2 is the truncated two-step hop, i[phi H phi, G_x] has no wall operator, and the staggered mass commutes with G_P but not G_x\nHIT: confirmed - from the bond energy, e-tau is the rest energy and stationarity is Lap chi=-e/(8KN), Lap N=(e+2 tau)/(8K chi). Then P-Q=(1/8K)[2 tau-e(1/w-1)]/chi, a pinned body has P=Qw, and light-like content has P-3Q=(3/8K)e(w-1)/(w chi). On a 3x2 box, i[phi H phi, G_x]=phi H2 phi-(Lam H phi+phi H Lam) with H2 the truncated two-step walk, while the staggered mass satisfies [eps,G_x]=2 eps G_x and [eps,G_P]=0.\nSUMMARY: confirmed the bond derivatives, the charge identities, the weak-field series, and the box virial. The continuum steps that would give P=Q for a self-bound body are the attempt's assumptions. Content on wall bonds is outside this Hamiltonian.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0e64",
+  "at_utc": "20260924T113121Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Bond derivatives, charge identities, and the 3x2 virial confirm the exact partial result. The continuum P=Q steps stay assumed.",
+  "by": "w-macbookpro90c72-j0e64",
+  "at_utc": "20260924T113121Z"
+ }
+}

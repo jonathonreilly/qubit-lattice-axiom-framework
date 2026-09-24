@@ -1,0 +1,5 @@
+PASS fields: on a 3-site line and a 2x2 box, e-tau is the rest energy and stationarity is Lap chi=-e/(8KN), Lap N=(e+2 tau)/(8K chi)
+PASS charges: P-Q is (1/8K)[2 tau - e(1/w-1)]/chi, a pinned body has P=Qw, light-like content has P-3Q=(3/8K)e(w-1)/(w chi), and the weak gap starts at eps(2 tau + e u)
+PASS virial: on a 3x2 box, {C,S}/2 is the truncated two-step hop, i[phi H phi, G_x] has no wall operator, and the staggered mass commutes with G_P but not G_x
+HIT: confirmed - from the bond energy, e-tau is the rest energy and stationarity is Lap chi=-e/(8KN), Lap N=(e+2 tau)/(8K chi). Then P-Q=(1/8K)[2 tau-e(1/w-1)]/chi, a pinned body has P=Qw, and light-like content has P-3Q=(3/8K)e(w-1)/(w chi). On a 3x2 box, i[phi H phi, G_x]=phi H2 phi-(Lam H phi+phi H Lam) with H2 the truncated two-step walk, while the staggered mass satisfies [eps,G_x]=2 eps G_x and [eps,G_P]=0.
+SUMMARY: confirmed the bond derivatives, the charge identities, the weak-field series, and the box virial. The continuum steps that would give P=Q for a self-bound body are the attempt's assumptions. Content on wall bonds is outside this Hamiltonian.

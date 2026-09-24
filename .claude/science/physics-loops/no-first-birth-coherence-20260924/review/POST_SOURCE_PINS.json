@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-09-24T15:56:24.083210+00:00",
+  "phase": "Released-source POST following immutable blind PRE",
+  "pre_seal": {
+    "path": "PRE_SEAL.json",
+    "sha256": "7b3a5de5ad3c2d1d47ad259333aa7ab90297d0108ebe36868306a72f8f4b1234",
+    "verified_unchanged_members": 23
+  },
+  "scientific_premises": "Exactly the five sources in unchanged SOURCE_PINS.json; their hashes match all five root main source pins",
+  "released_sources_and_reused_helper": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NO_FIRST_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "snapshot": "POST_sources/NO_FIRST_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "sha256": "9996e86906f284c834d26eb38c0056ade90fe24c910038d583b6c1ae78651c31",
+      "bytes": 13087,
+      "read_scope": "Complete source/content read in released-source POST"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/AUTHOR_SEAL.json",
+      "snapshot": "POST_sources/AUTHOR_SEAL.json",
+      "sha256": "fbbf10a319bcc951e2a21780790763550ab5e960e1b514c96d8c3e9126564382",
+      "bytes": 1596,
+      "read_scope": "Complete source/content read in released-source POST"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_ONE_BRANCH_ATTAINMENT.md",
+      "snapshot": "POST_sources/NOEVENT_ONE_BRANCH_ATTAINMENT.md",
+      "sha256": "1a8660af26a697d1b8f3545f848d612ded1f66876f609cf957bb57f8c9318753",
+      "bytes": 4908,
+      "read_scope": "Complete source/content read in released-source POST"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/ATTAINMENT_SEAL.json",
+      "snapshot": "POST_sources/ATTAINMENT_SEAL.json",
+      "sha256": "35715649cdf5458bf97735dbf7ec1ab76c82f5511e4a0164899758f9076a53d6",
+      "bytes": 426,
+      "read_scope": "Complete source/content read in released-source POST"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/CONTROL_SEAL.json",
+      "snapshot": "POST_sources/CONTROL_SEAL.json",
+      "sha256": "a31565b163c22eb2c579d10dbcf37422251ccb7cd429965f172df85bb6524cb7",
+      "bytes": 701,
+      "read_scope": "Complete source/content read in released-source POST"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/noevent_controls.py",
+      "snapshot": "POST_sources/noevent_controls.py",
+      "sha256": "2ffedffaad64dc16ebb2767d356f0109171b4b09eb9d947ded7e79626c0655db",
+      "bytes": 6970,
+      "read_scope": "Complete source/content read in released-source POST"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_CONTROL_RESULTS.json",
+      "snapshot": "POST_sources/NOEVENT_CONTROL_RESULTS.json",
+      "sha256": "cc153bee2b8570fcd36b631df2748c8e795e1f33f283b30d67b567ac8ff11aa4",
+      "bytes": 18339,
+      "read_scope": "Complete source/content read in released-source POST"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_CONTROL.stdout",
+      "snapshot": "POST_sources/NOEVENT_CONTROL.stdout",
+      "sha256": "883748e87c6164970d735079888df956be89a0c8e1ff8ea86694727de3b45a73",
+      "bytes": 20490,
+      "read_scope": "Entire file decoded; three progress records matched to result rows and final object byte-matched to completely read result JSON"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_CONTROL.stderr",
+      "snapshot": "POST_sources/NOEVENT_CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "read_scope": "Empty file verified"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/scripts/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py",
+      "sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+      "bytes": 11444,
+      "snapshot": "POST_sources/REUSED_ORDINARY_ENERGY_RUNNER.py",
+      "review_scope": "Same pinned previously checked author builder; imported function call correspondence refreshed, no independent reproduction",
+      "read_scope": "Previously completely reviewed same pinned builder; all three imported helpers refreshed in full in POST; no execution"
+    }
+  ],
+  "model_and_effort": "Inherited unchanged; no delegation",
+  "exclusions_not_read": [
+    "averaged-variance-personal",
+    "integrated-variance-publication",
+    "current campaign checkpoint",
+    "unreleased autonomous construction sources"
+  ],
+  "execution": "Only independent correspondence/occupancy bookkeeping script ran; no author function or builder executed",
+  "authority": "Conditional scoped comparison, not a scientific audit or retention verdict"
+}

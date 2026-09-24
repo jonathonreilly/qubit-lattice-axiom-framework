@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent/independent_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent",
+  "started_utc": "2026-09-24T15:26:31.911538+00:00",
+  "finished_utc": "2026-09-24T15:26:32.060473+00:00",
+  "elapsed_seconds": 0.14883516705594957,
+  "returncode": 0,
+  "script_sha256": "95425a9c9bc875c9e61afd95364a6a8ca14a6ce2113b783bf019630f352ad3db",
+  "outputs": {
+    "CONTROL.stdout.txt": {
+      "sha256": "79d067bcb0447144d0b5ffc369da526939bf50ff7a6aca5346a62d271a67de79",
+      "bytes": 19651
+    },
+    "CONTROL.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "INDEPENDENT_CONTROL_RESULTS.json": {
+      "sha256": "79d067bcb0447144d0b5ffc369da526939bf50ff7a6aca5346a62d271a67de79",
+      "bytes": 19651
+    }
+  }
+}

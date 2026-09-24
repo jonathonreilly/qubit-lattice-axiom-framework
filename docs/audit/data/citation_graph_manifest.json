@@ -1,6 +1,6 @@
 {
- "edge_count": 14622,
- "node_count": 6649,
+ "edge_count": 14626,
+ "node_count": 6650,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14525,6 +14525,10 @@
   "nn_record_gaussian_action_event_response_factorization_bounded_theorem_note_2026-08-23": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "no_first_birth_cube_energy_and_apparatus_coherence_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e4eeeeafdf5a",
+   "out_degree": 4
   },
   "no_per_site_bosonic_ccr_theorem_note_2026-05-02": {
    "deps_hash": "c8eee4235fc9",

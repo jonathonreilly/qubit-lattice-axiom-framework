@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent/freeze_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent",
+  "started_utc": "2026-09-24T15:35:59.481373+00:00",
+  "finished_utc": "2026-09-24T15:35:59.720355+00:00",
+  "elapsed_seconds": 0.23884537513367832,
+  "returncode": 0,
+  "files": {
+    "freeze_sources.py": {
+      "bytes": 5293,
+      "sha256": "6648fe2155a2bf9fed6c6fefb4031bf3e5387141c059e87c2c6300df7a7956de"
+    },
+    "SOURCE_PINS.json": {
+      "bytes": 6565,
+      "sha256": "6ecddc2af1fbbba7afc3fee5ad13a7ebc73df4cad60051d9314847a713d51d07"
+    },
+    "SOURCE_RECHECK.stdout.txt": {
+      "bytes": 6565,
+      "sha256": "6ecddc2af1fbbba7afc3fee5ad13a7ebc73df4cad60051d9314847a713d51d07"
+    },
+    "SOURCE_RECHECK.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

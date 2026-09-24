@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-09-24T15:58:21.630836+00:00",
+  "scope": "Final mechanical source/evidence binding, not a scientific verdict",
+  "pre_seal_sha256": "7b3a5de5ad3c2d1d47ad259333aa7ab90297d0108ebe36868306a72f8f4b1234",
+  "pre_member_count_reverified_unchanged": 23,
+  "released_sources_and_helper_reverified_against_current_originals": 10,
+  "post_check_execution_returncode": 0,
+  "post_sha256": "7317b366a9c936f7e2a9708bc4bb1556b55d9c516e98133b576efda9c51916cf",
+  "post_source_pins_sha256": "fceca2ab71d48f81f08f27d09b53989b550fe48904e255bb0623fdd63c11c58d",
+  "post_evidence_check_sha256": "9b75753954ba6fedbd987421b62c9118dd7a2bf3dee0ca1bed8eed9f94b111ea"
+}

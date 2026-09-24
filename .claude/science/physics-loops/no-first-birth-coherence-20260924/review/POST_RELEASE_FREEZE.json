@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-24T15:46:17.070952+00:00",
+  "released_top_level_sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NO_FIRST_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "snapshot": "POST_sources/NO_FIRST_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "sha256": "9996e86906f284c834d26eb38c0056ade90fe24c910038d583b6c1ae78651c31",
+      "bytes": 13087
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/AUTHOR_SEAL.json",
+      "snapshot": "POST_sources/AUTHOR_SEAL.json",
+      "sha256": "fbbf10a319bcc951e2a21780790763550ab5e960e1b514c96d8c3e9126564382",
+      "bytes": 1596
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_ONE_BRANCH_ATTAINMENT.md",
+      "snapshot": "POST_sources/NOEVENT_ONE_BRANCH_ATTAINMENT.md",
+      "sha256": "1a8660af26a697d1b8f3545f848d612ded1f66876f609cf957bb57f8c9318753",
+      "bytes": 4908
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/ATTAINMENT_SEAL.json",
+      "snapshot": "POST_sources/ATTAINMENT_SEAL.json",
+      "sha256": "35715649cdf5458bf97735dbf7ec1ab76c82f5511e4a0164899758f9076a53d6",
+      "bytes": 426
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/CONTROL_SEAL.json",
+      "snapshot": "POST_sources/CONTROL_SEAL.json",
+      "sha256": "a31565b163c22eb2c579d10dbcf37422251ccb7cd429965f172df85bb6524cb7",
+      "bytes": 701
+    }
+  ]
+}

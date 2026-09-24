@@ -1,0 +1,150 @@
+{
+  "created_utc": "2026-09-24T15:52:34.099973+00:00",
+  "scope": "Correspondence and preservation; author controls were not executed or made independent",
+  "pre_seal_sha256": "7b3a5de5ad3c2d1d47ad259333aa7ab90297d0108ebe36868306a72f8f4b1234",
+  "pre_members_unchanged": 23,
+  "root_source_pins": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NO_FIRST_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "snapshot": "POST_sources/NO_FIRST_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "sha256": "9996e86906f284c834d26eb38c0056ade90fe24c910038d583b6c1ae78651c31",
+      "bytes": 13087
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/AUTHOR_SEAL.json",
+      "snapshot": "POST_sources/AUTHOR_SEAL.json",
+      "sha256": "fbbf10a319bcc951e2a21780790763550ab5e960e1b514c96d8c3e9126564382",
+      "bytes": 1596
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_ONE_BRANCH_ATTAINMENT.md",
+      "snapshot": "POST_sources/NOEVENT_ONE_BRANCH_ATTAINMENT.md",
+      "sha256": "1a8660af26a697d1b8f3545f848d612ded1f66876f609cf957bb57f8c9318753",
+      "bytes": 4908
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/ATTAINMENT_SEAL.json",
+      "snapshot": "POST_sources/ATTAINMENT_SEAL.json",
+      "sha256": "35715649cdf5458bf97735dbf7ec1ab76c82f5511e4a0164899758f9076a53d6",
+      "bytes": 426
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/CONTROL_SEAL.json",
+      "snapshot": "POST_sources/CONTROL_SEAL.json",
+      "sha256": "a31565b163c22eb2c579d10dbcf37422251ccb7cd429965f172df85bb6524cb7",
+      "bytes": 701
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/noevent_controls.py",
+      "snapshot": "POST_sources/noevent_controls.py",
+      "sha256": "2ffedffaad64dc16ebb2767d356f0109171b4b09eb9d947ded7e79626c0655db",
+      "bytes": 6970
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_CONTROL_RESULTS.json",
+      "snapshot": "POST_sources/NOEVENT_CONTROL_RESULTS.json",
+      "sha256": "cc153bee2b8570fcd36b631df2748c8e795e1f33f283b30d67b567ac8ff11aa4",
+      "bytes": 18339
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_CONTROL.stdout",
+      "snapshot": "POST_sources/NOEVENT_CONTROL.stdout",
+      "sha256": "883748e87c6164970d735079888df956be89a0c8e1ff8ea86694727de3b45a73",
+      "bytes": 20490
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_CONTROL.stderr",
+      "snapshot": "POST_sources/NOEVENT_CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "reused_builder": {
+    "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/scripts/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py",
+    "sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+    "bytes": 11444,
+    "snapshot": "POST_sources/REUSED_ORDINARY_ENERGY_RUNNER.py",
+    "review_scope": "Same pinned previously checked author builder; imported function call correspondence refreshed, no independent reproduction"
+  },
+  "author_seal_scientific_pins_equal_PRE_scientific_hashes": 5,
+  "stdout_bytes_consumed": 20490,
+  "stdout_json_object_count": 4,
+  "stdout_object_character_intervals": [
+    [
+      0,
+      712
+    ],
+    [
+      713,
+      1431
+    ],
+    [
+      1432,
+      2150
+    ],
+    [
+      2151,
+      20489
+    ]
+  ],
+  "stdout_progress_rows_equal_result_rows": 3,
+  "stdout_final_object_byte_identical_to_result_file": true,
+  "stderr_bytes": 0,
+  "exit_code_as_recorded_by_author_seal": 0,
+  "independent_occupancy_recount": {
+    "count": 70,
+    "histogram_grade_empty_edges": {
+      "(2, 4)": 6,
+      "(3, 3)": 4,
+      "(2, 3)": 24,
+      "(3, 2)": 12,
+      "(1, 3)": 4,
+      "(1, 2)": 12,
+      "(2, 2)": 6,
+      "(0, 0)": 1,
+      "(4, 0)": 1
+    }
+  },
+  "author_fixed_S1_diagnostics": [
+    {
+      "epsilon": 0.1,
+      "dimension": 3197,
+      "first_high_relative_error": 0.03200907574240486,
+      "low_component_second_moment": 87.92074111178363,
+      "low_component_second_moment_target": 23.519999999999996,
+      "low_component_second_moment_relative_error": 2.738126747949985,
+      "low_vector_error": 8.408507794751094,
+      "decomposition_residual": 2.020427369103185e-15
+    },
+    {
+      "epsilon": 0.06,
+      "dimension": 3197,
+      "first_high_relative_error": 0.004331635331327965,
+      "low_component_second_moment": 48.17165585799782,
+      "low_component_second_moment_target": 23.519999999999996,
+      "low_component_second_moment_relative_error": 1.0481146198128326,
+      "low_vector_error": 5.165559248304733,
+      "decomposition_residual": 2.6035287711806303e-15
+    },
+    {
+      "epsilon": 0.035,
+      "dimension": 3197,
+      "first_high_relative_error": 0.0005061576558780256,
+      "low_component_second_moment": 32.07174301970164,
+      "low_component_second_moment_target": 23.519999999999996,
+      "low_component_second_moment_relative_error": 0.36359451614377747,
+      "low_vector_error": 3.034139280175478,
+      "decomposition_residual": 2.7921328120625476e-15
+    }
+  ],
+  "author_finest_toy_diagnostics": {
+    "epsilon": 0.02,
+    "scaled_variance": 0.23295823288991666,
+    "scaled_variance_target": 0.23520000000000005,
+    "scaled_variance_relative_error": 0.00953132274695323,
+    "scaled_Fisher": 0.34171218908438306,
+    "scaled_Fisher_target": 0.3433432161843878,
+    "scaled_Fisher_relative_error": 0.004750427627871923
+  },
+  "execution_limits": "No fixed-S cube run repeated; no independent numerical reproduction of author data; exact dissipativity and graded claims checked analytically in POST"
+}

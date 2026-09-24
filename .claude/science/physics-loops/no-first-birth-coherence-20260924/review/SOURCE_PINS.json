@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-09-24T15:35:59.702241+00:00",
+  "task": "Independent blind PRE: continuous cube N=4 no-first-birth fixed-time energetic coherence",
+  "main_reference": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "planning_reference_at_pin": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "model_and_effort": "Inherited unchanged; no delegation",
+  "scientific_sources": [
+    {
+      "snapshot": "sources/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "source_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "source_path": "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "current_file_checked": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317,
+      "git_blob_oid": "3bf888ed2f84909ad6e4336aa16746ed472afbf9",
+      "read_scope": "Read completely in this PRE task; selected proof passages rechecked.",
+      "authority": "Supplied conditional scientific premise/machinery; no retained or audit status imported"
+    },
+    {
+      "snapshot": "sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "source_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "source_path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "current_file_checked": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011,
+      "git_blob_oid": "68739ef1a24258938ba819d893ad490ccf7a4157",
+      "read_scope": "Read completely in this PRE task; selected proof passages rechecked.",
+      "authority": "Supplied conditional scientific premise/machinery; no retained or audit status imported"
+    },
+    {
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "source_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "source_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "current_file_checked": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "git_blob_oid": "d887ec756caefd04286f1e90c0e481e7a90036d4",
+      "read_scope": "Read completely in this PRE task; selected proof passages rechecked.",
+      "authority": "Supplied conditional scientific premise/machinery; no retained or audit status imported"
+    },
+    {
+      "snapshot": "sources/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "source_revision": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+      "source_path": "docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "current_file_checked": null,
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "bytes": 27264,
+      "git_blob_oid": "9fe02e460dc5710f3102468d3f21b6ea0bf759e3",
+      "read_scope": "Read completely in this PRE task; weighted section rechecked. Authorized reuse of PR9057.",
+      "authority": "Supplied conditional scientific premise/machinery; no retained or audit status imported"
+    },
+    {
+      "snapshot": "sources/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "source_revision": "e846ee9d4133f65d3778fa4dc36524a9ada6db6b",
+      "source_path": "docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "current_file_checked": null,
+      "sha256": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7",
+      "bytes": 30471,
+      "git_blob_oid": "cbacb6fe39ee94662e3391aa6ba6b8d90d396e16",
+      "read_scope": "Previously read completely during this same checker's publication comparison; identical bytes reused by explicit dispatch permission, with identity and relevant sections refreshed. No new complete reread claimed.",
+      "authority": "Supplied conditional scientific premise/machinery; no retained or audit status imported"
+    }
+  ],
+  "instruction_sources": [
+    {
+      "snapshot": "instructions/AGENTS_POINTER.md",
+      "source": "AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "read_scope": "Complete read; previously read same identities also reused"
+    },
+    {
+      "snapshot": "instructions/SCIENCE_WORKFLOW.md",
+      "source": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "read_scope": "Complete read; previously read same identities also reused"
+    },
+    {
+      "snapshot": "instructions/AGENTS_PLANNING.md",
+      "source": "origin/ai/execution:AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164,
+      "read_scope": "Complete read; previously read same identities also reused"
+    }
+  ],
+  "exclusions": [
+    "continuous-coherence-personal",
+    "averaged-variance-personal",
+    "integrated-variance-publication",
+    "current campaign checkpoint"
+  ],
+  "exclusions_read": false,
+  "reuse_limits": "No author builder imported; unchanged large calculations not rerun; new control uses exact primitive words and an explicitly separate two-band toy",
+  "authority_limit": "No publication, audit verdict, retained status, native selector or new axiom"
+}

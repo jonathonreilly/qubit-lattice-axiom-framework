@@ -1,0 +1,24 @@
+{
+  "verified_utc": "2026-09-24T16:11:49.673685+00:00",
+  "scope": "Final byte-identity and prior-packet preservation verification; no scientific computation",
+  "verification_script_sha256": "9baa0a480e9aa52633e8c6ca4a042ed1ccd5a1baee984e048af1715a1ba2ee9b",
+  "preserved_packets": [
+    {
+      "seal": "PRE_SEAL.json",
+      "sha256": "7b3a5de5ad3c2d1d47ad259333aa7ab90297d0108ebe36868306a72f8f4b1234",
+      "unchanged_members": 23
+    },
+    {
+      "seal": "POST_SEAL.json",
+      "sha256": "5b0b5634b6096a95ef0956424f48b15e6ae83f70cc210d553dc9c67ed959b218",
+      "unchanged_members": 23
+    }
+  ],
+  "dispatched_publication_and_external_sources_unchanged": 6,
+  "procedural_cache_API_source_unchanged": true,
+  "actual_declared_inputs_unchanged": 5,
+  "comparison_execution_and_output_hashes_verified": true,
+  "publication_comparison_report_sha256": "2526ff807b54877b8b0ca62b39244120df986c6afabdcdf01ec785f10bdee9ef",
+  "primary_runner_repeated": false,
+  "audit_verdict_applied": false
+}

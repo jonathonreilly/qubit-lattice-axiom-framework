@@ -1,0 +1,8 @@
+{
+  "sealed_at_utc": "2026-09-24T15:20:17.038970+00:00",
+  "files_sha256": {
+    "NOEVENT_ONE_BRANCH_ATTAINMENT.md": "1a8660af26a697d1b8f3545f848d612ded1f66876f609cf957bb57f8c9318753"
+  },
+  "root_candidate_sha256": "9996e86906f284c834d26eb38c0056ade90fe24c910038d583b6c1ae78651c31",
+  "status": "Root supplement before independent PRE disclosure; sharp only for the one-number-block relaxation, not full original process."
+}

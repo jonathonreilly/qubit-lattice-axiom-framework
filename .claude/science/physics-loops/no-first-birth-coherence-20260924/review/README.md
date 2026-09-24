@@ -1,0 +1,7 @@
+# Selective independent evidence
+
+The root sealed its derivation, attainment supplement and controls before reading PRE. PRE independently reconstructed the Hermitian-coordinate and weighted argument, with primitive words and a high-precision two-band example. POST checked the released root proof. The public synthesis attributes the PRE detail. The final comparison read the complete publication and verified helper ASTs, source adaptations, all scientific values, declared inputs and complete cache bytes without repeating the primary. The S=1 initial Riesz control retains its visible finite-resolution discrepancy; it is not later cube propagation or a joint-limit numerical proof.
+
+The complete external sealed packet is /Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent. Its source snapshots and raw unified-diff captures are retained there and pinned by the unchanged seals; they are not copied wholesale into this publication. Selected top-level reports, checker code, complete result logs, source identities and seals are copied byte-for-byte. Historical absolute paths retain their original meaning. The publication primary runner is self-contained.
+
+This is selective conditional review, not retained audit authority. Combined integration, strict audit lint, changed-evidence landing checks and the independent retained audit remain separate obligations.

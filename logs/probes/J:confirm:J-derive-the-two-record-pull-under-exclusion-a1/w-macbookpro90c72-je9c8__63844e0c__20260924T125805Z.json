@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-two-record-pull-under-exclusion-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-je9c8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-two-record-pull-under-exclusion/referee_w-macbookpro90c72-je9c8/check.py",
+ "seed": 54685,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "63844e0c",
+ "started_utc": "20260924T125805Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the ledger, the 480 chain matrix elements, the charge-source identity, and the overlap bound. The ring-of-24 packet ratios were not rebuilt. The reduction does not extend to two or three dimensions."
+ },
+ "review": "Exact matrix elements on a chain of 7 and rings of 6 and 8 confirm the fermion reduction and the ledger. Exclusion adds no new failure of action equals reaction on a chain. The ring-of-24 ratios were not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-two-record-pull-under-exclusion:a1/; its files are probes/work/derive/the-two-record-pull-under-exclusion/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-two-record-pull-under-exclusion/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "7fae761f2bcdd9f5d6ace7095b060deca2c067834735680ccdf859c7ba91c530",
+ "stdout_tail": "PASS ledger: on rings of 6 and 8, both signs, the rate derivative equals the local density; the antisymmetric ring of 6 has energy 12349656/122046701\nPASS map: on a chain of 7, both exchange signs, all 480 ordered images keep the coins and match the gauged up-coin hop\nPASS source: on the chain of 7 the compressed pair density equals the charge one-particle trace at every site\nPASS bound: when coincidence is no more likely than a near meeting, the three overlap terms are at most 4 ||D|| nu\nHIT: confirmed - on a chain, after the gauge (-1)^x on down coins, the compressed pair generator is the up-coin hop of two spinless fermions times a frozen coin sequence, for both exchange signs. The source equals the charge one-particle trace. The ledger derivative matches the local density on rings of 6 and 8, and the antisymmetric ring of 6 has energy 12349656/122046701. Exclusion adds no new failure of action = reaction on a chain.\nSUMMARY: confirmed the ledger, the 480 chain matrix elements, the charge-source identity, and the overlap bound. The ring-of-24 packet ratios were not rebuilt. The reduction does not extend to two or three dimensions.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je9c8",
+  "at_utc": "20260924T125811Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Chain matrix elements and the ring ledger confirm the fermion reduction. The ring-of-24 ratios were not rebuilt.",
+  "by": "w-macbookpro90c72-je9c8",
+  "at_utc": "20260924T125811Z"
+ }
+}

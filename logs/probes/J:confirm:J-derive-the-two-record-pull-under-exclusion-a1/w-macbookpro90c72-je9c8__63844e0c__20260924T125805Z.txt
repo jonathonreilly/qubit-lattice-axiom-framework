@@ -1,0 +1,6 @@
+PASS ledger: on rings of 6 and 8, both signs, the rate derivative equals the local density; the antisymmetric ring of 6 has energy 12349656/122046701
+PASS map: on a chain of 7, both exchange signs, all 480 ordered images keep the coins and match the gauged up-coin hop
+PASS source: on the chain of 7 the compressed pair density equals the charge one-particle trace at every site
+PASS bound: when coincidence is no more likely than a near meeting, the three overlap terms are at most 4 ||D|| nu
+HIT: confirmed - on a chain, after the gauge (-1)^x on down coins, the compressed pair generator is the up-coin hop of two spinless fermions times a frozen coin sequence, for both exchange signs. The source equals the charge one-particle trace. The ledger derivative matches the local density on rings of 6 and 8, and the antisymmetric ring of 6 has energy 12349656/122046701. Exclusion adds no new failure of action = reaction on a chain.
+SUMMARY: confirmed the ledger, the 480 chain matrix elements, the charge-source identity, and the overlap bound. The ring-of-24 packet ratios were not rebuilt. The reduction does not extend to two or three dimensions.

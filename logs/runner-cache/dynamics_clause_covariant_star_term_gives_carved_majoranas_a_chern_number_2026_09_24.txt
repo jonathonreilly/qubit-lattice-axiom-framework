@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.py
-runner_sha256: 2375ae7d351aff52560d0bd071311da9771e20e3c0de0397817e24c2714d0553
+runner_sha256: 433e399419047bebc42f2776387effca4771a6f684f5ecd6b048518e05b7856d
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 64.24
+elapsed_sec: 125.26
 status: ok
 ----- stdout -----
 [PASS] the carving: a 19-site relaxed three-direction network whose zero-field records are realizable :: connected True, winding rank 3, bonds 22; every record touches at most 2 axes; largest field on an unrecorded site 0
@@ -14,7 +14,8 @@ status: ok
 [PASS] chiral surface modes: on a slab open along z the in-gap states sit on the surfaces and cross the gap with opposite chirality :: 12-cell slab at k_x = 1, lambda = 2, 121 values of k_y: surface-localized in-gap states top 64, bottom 31, other 4; signed crossings of E = -0.01 and 0.01: top [1, 1], bottom [-1, -1]
 [PASS] dangling fields make the zero modes cancel the chirality: the chiral bands keep -1, the zero-mode bands take +1 :: zero modes 12, weight on dangling b's 12.000; dangling fields (size/draw) leave 2 exact zero modes, total Chern numbers on two k_x planes [0.0, 0.0]; 0.1/4: zero-mode bands to 0.1222, chiral from 0.1550; 0.1/5: zero-mode bands to 0.0792, chiral from 0.1128; 0.1/6: zero-mode bands to 0.1047, chiral from 0.1380; 0.2/4: zero-mode bands to 0.2645, chiral from 0.2862; in every case the chiral bands keep -1 and the negative zero-mode bands carry +1 on both planes; with open PR 9054's generic contents no covariant term stays free (free dimension 0)
 [PASS] a window in lambda; the dangling-axis field is essential; time reversal and uniform record signs flip the handedness :: gap at lambda 0.5, 0.9, 8, 10: 3e-14, 0.0105, 0.0017, 6e-17; without the field term at lambda 2: 5e-18; lambda = -2: C_x = +1; uniform record signs: gap 0.0351, weak Chern numbers [1, 0, 0]
-TOTAL: PASS=8 FAIL=0
+[PASS] another free direction gives one particle-hole pair of Majorana-Weyl nodes of charges -1 and +1 :: direction [-1.928 -1.492  4.792 -0.488 -0.316] on the principal directions: 20 coupled Majoranas; touchings from 24 seeds: [(5.172, 6.197, 6.074), (1.111, 0.086, 0.209)] at energies [-0.0071, 0.0071], charges [-1, 1]; splitting/|q| 0.309-1.387, the same at q = 1e-3 and 1e-2; C_x on 13 planes [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0], jumping by the charges at the nodes
+TOTAL: PASS=9 FAIL=0
 
 ----- stderr -----
 

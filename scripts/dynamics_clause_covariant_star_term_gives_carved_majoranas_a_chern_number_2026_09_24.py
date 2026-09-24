@@ -913,5 +913,67 @@ check("a window in lambda; the dangling-axis field is essential; time reversal a
       f"without the field term at lambda 2: {gap_nofield:.0e}; lambda = -2: C_x = {c_neg:+.0f}; "
       f"uniform record signs: gap {gap_u:.4f}, weak Chern numbers {[int(c) for c in c_uni]}")
 
+# ------------------------------------------------ 9. another free direction: one pair of Majorana-Weyl nodes
+# The direction: coefficients CW on the principal directions of the free subspace's action on the Majoranas (right
+# singular vectors of the Majorana rows of A restricted to the free subspace), each signed so that its largest orbit
+# entry is positive. Found by a random search over the five active directions; its largest string coefficient is 4.
+_, _sM, _vtM = np.linalg.svd((Amat @ Nf)[maj_rows])
+DP = np.array([Nf @ _vtM[d_] for d_ in range(active_dirs)])
+DP = DP * np.array([np.sign(r_[np.argmax(np.abs(r_))]) for r_ in DP])[:, None]
+CW, LW = np.array([-1.928, -1.492, 4.792, -0.488, -0.316]), 1.0
+vW = CW @ DP
+TW = dict(T, v=vW)
+uvW, cvW, enW = lowest_at(LW, TW)
+HW = lambda k: H_of(uvW, enW, cvW, np.asarray(k, float), LW)
+_a, _b = HW(np.array([0.3, 0.7, 1.1])), HW(np.array([1.3, 0.2, 2.1]))
+keepW = [i for i in range(_a.shape[0]) if np.abs(_a[i]).max() > 1e-12 or np.abs(_b[i]).max() > 1e-12]
+mW = len(keepW) // 2
+HrW = lambda k: HW(k)[np.ix_(keepW, keepW)]
+splitW = lambda k: np.diff(np.linalg.eigvalsh(HrW(k))[mW - 1:mW + 1])[0]
+gridW = [np.array(q) * 2 * np.pi / 8 for q in itertools.product(range(8), repeat=3)]
+nodesW = []
+for _, k0 in sorted((splitW(k), tuple(k)) for k in gridW)[:24]:
+    r_ = minimize(splitW, np.array(k0), method="Nelder-Mead", options={"xatol": 1e-11, "fatol": 1e-15, "maxiter": 5000})
+    if r_.fun < 1e-7:
+        kk_ = np.mod(r_.x, 2 * np.pi)
+        if all(np.linalg.norm(np.mod(kk_ - q + np.pi, 2 * np.pi) - np.pi) > 1e-4 for q in nodesW):
+            nodesW.append(kk_)
+
+
+def monopole(kc, r=0.01, N=32):
+    """Berry flux of the lower half of the coupled bands through a small sphere around kc."""
+    th, ph = np.linspace(0, np.pi, N + 1), np.linspace(0, 2 * np.pi, N, endpoint=False)
+    U = {}
+    for i, t in enumerate(th):
+        for j, p in enumerate(ph):
+            w, V = np.linalg.eigh(HrW(kc + r * np.array([np.sin(t) * np.cos(p), np.sin(t) * np.sin(p), np.cos(t)])))
+            U[(i, j)] = V[:, :mW]
+    tot = sum(np.angle(np.prod([np.linalg.det(q[a].conj().T @ q[(a + 1) % 4]) for a in range(4)]))
+              for i in range(N) for j in range(N)
+              for q in [[U[(i, j)], U[(i + 1, j)], U[(i + 1, (j + 1) % N)], U[(i, (j + 1) % N)]]])
+    return tot / (2 * np.pi)
+
+
+chargesW = [round(monopole(q), 6) for q in nodesW]
+energiesW = [float(np.mean(np.linalg.eigvalsh(HrW(q))[mW - 1:mW + 1])) for q in nodesW]
+partnerW = len(nodesW) == 2 and np.linalg.norm(np.mod(nodesW[0] + nodesW[1] + np.pi, 2 * np.pi) - np.pi) < 1e-5
+rngW = np.random.default_rng(9)
+dirsW = rngW.normal(size=(6, 3))
+dirsW /= np.linalg.norm(dirsW, axis=1)[:, None]
+velW = [[splitW(nodesW[0] + q * u) / q for u in dirsW] for q in (1e-3, 1e-2)] if nodesW else [[0.0], [1.0]]
+kxW = np.linspace(0.1, 2 * np.pi - 0.1, 13)
+cxW = [chern(uvW, enW, cvW, LW, 0, kf) for kf in kxW]
+cxWr = [None if c_ is None else int(round(c_)) for c_ in cxW]
+jumps_ok = partnerW and all(c_ is not None for c_ in cxW) and all(
+    (cxWr[i + 1] - cxWr[i]) == sum(int(round(ch)) for q, ch in zip(nodesW, chargesW) if kxW[i] < q[0] < kxW[i + 1])
+    for i in range(len(kxW) - 1))
+check("another free direction gives one particle-hole pair of Majorana-Weyl nodes of charges -1 and +1",
+      len(nodesW) == 2 and sorted(int(round(c_)) for c_ in chargesW) == [-1, 1] and partnerW and jumps_ok
+      and np.max(np.abs(np.array(velW[0]) - np.array(velW[1]))) < 5e-3 * max(velW[0]) and min(velW[0]) > 0.05,
+      f"direction {CW} on the principal directions: {len(keepW)} coupled Majoranas; touchings from 24 seeds: "
+      f"{[tuple(float(x_) for x_ in np.round(q, 3)) for q in nodesW]} at energies {[round(e_, 4) for e_ in energiesW]}, charges "
+      f"{[int(round(c_)) for c_ in chargesW]}; splitting/|q| {min(velW[0]):.3f}-{max(velW[0]):.3f}, the same at q = 1e-3 and 1e-2; "
+      f"C_x on 13 planes {cxWr}, jumping by the charges at the nodes")
+
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

@@ -1,0 +1,24 @@
+PASS A T3(a): i[phi, S_j] = -C_j[d_j phi] (block 66)
+PASS A T3(b): i[H_w, G_xi] = phi i[H,G_xi] phi - (Lam H phi + phi H Lam) (block 66)
+PASS A the force density's form: sum_x xi_j(x) F_x = Lam_j H phi + phi H Lam_j (so -<Lam H phi + phi H Lam> = -sum xi f, T3(c))
+PASS A1 exact bond form: f_j(x) = 1/2 [ (d_j phi)(x) beta(x) + (d_j phi)(x-e) beta(x-e) ]
+PASS A2 exact split of each bond: (d phi) beta = e(y+e)(e^{du/2}-1) + e(y)(1-e^{-du/2}) + R_y
+PASS A3 every site energy density e(y) is a form on nearest-neighbour pairs only (all 63 sites)
+     block of F_x at (x, x+2e_j): [0, 13*I/98, 13*I/98, 0]  (d_j phi)(x) = -4/7
+PASS A3 F_x has a non-zero block at (x, x+2e_j) when (d_j phi)(x) != 0: no identity f_j(x) = sum_y c_y e(y) exists
+PASS A3 the weight part (site energies x exact differences of u) has no such block; R carries it
+PASS D P_j = S_j C_j = (T^2 - T^-2)/(4i) (block 69)
+PASS D i[phi, P_j] = -(1/2) C2_j[d2_j phi], C2 the symmetric two-step hop
+PASS D1 exact 2-bond form: fP_j(x) = 1/4 [ (d2 phi)(x) beta2(x) + (d2 phi)(x-2e) beta2(x-2e) ]
+PASS D3 FP_x has a non-zero block at (x, x+3e_j): no identity fP_j(x) = sum_y c_y e(y) exists
+PASS B curls unchanged by B -> B + d xi (block 64 T1)
+PASS B a per-tick curl ledger F = sum_x w_x D_x(curls), non-uniform w: F(B + d xi) = F(B) exactly
+PASS B hence sum_b E_b (d xi)_b = 0 identically in B: the lattice identity has NO rates' term, whatever w
+     U at a site (a polynomial in B, generically non-zero): 2 degree
+PASS B control: the volume density w det e satisfies block 66 T1 exactly in this code (all orders at the point)
+PASS B continuum control: a curl-only per-tick density has d_a E_j^a = 0 identically (all j)
+     block 66 T1 residual for the curl-only density, t^2 coefficients at a point: [-18029/6750, -4673/3375, -517/375]
+PASS B ... and block 66 T1 FAILS for it at second order in the fields (the order of the fall)
+
+SUMMARY: PARTIAL content side: f_j(x) = 1/2 sum over the two j-bonds of (d phi) x (bond cross energy), exactly; = site energies x exact differences (e^{du/2}-1, 1-e^{-du/2}) + a remainder bilinear in (d phi, d chi); no identity f_j(x) = sum_y c_y e(y) exists (f reaches two steps, every e(y) one); reach three: the same over 2-bonds, reach 3. Field side: for a per-tick ledger built from curls the exact lattice identity is sum E.(d xi) = 0 for every rate field; carried rates change F by sum U du and never enter it; a curl-only density fails block 66 T1 at second order
+HIT: the per-tick ledger F = sum_x w_x D_x(curls) owes NO weight on the lattice at any order (its exact identity div dF/dB = 0 holds in every rate field), while the walk's exact balance has force density f = e.du at leading order: at the order of the fall a static solution needs the strains' force to cancel f site by site; block 66 T1's weight term comes from non-curl terms (curl-only densities fail T1 at second order, exact); and f is not a combination of site energies at any order (reach-2 support), only at long wavelength

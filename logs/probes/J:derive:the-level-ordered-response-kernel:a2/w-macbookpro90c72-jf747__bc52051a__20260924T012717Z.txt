@@ -1,0 +1,8 @@
+ok origin: only the all-stay paths sit at the origin, so G(0)=4/3
+ok recursion: closed form matches the causal recursion through level 8
+ok identity: the three parents rebuild G by a+b+c = L
+ok level: each level plane sums to 4/3
+ok wake: G(1,0,0)=4/9 and every negative coordinate is silent
+ok driftfree: on k=(q,-q,0), 3-sum e^{-ik}=E/2, so the gain-one symbol is 8/E
+SUMMARY: PARTIAL the gain-one response is the unique causal solution G=(4/3) L!/(a!b!c!) 3^{-L} on the forward octant and 0 elsewhere; each level sums to 4/3; on drift-free modes the symbol is 8/E. The nonlinear law is not solved.
+HIT: under the level-ordered past the stationary gain-one kernel is (4/3) L!/(a!b!c!) 3^{-L} on a,b,c>=0 and zero off that octant, so a held source has a one-sided wake along (1,1,1)

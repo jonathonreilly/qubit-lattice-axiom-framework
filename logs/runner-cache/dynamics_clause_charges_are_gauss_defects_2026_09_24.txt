@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_charges_are_gauss_defects_2026_09_24.py
-runner_sha256: db1b11d1f13f537adee7b8d3aff9fa534db6e9c178c720140e3099f80edb2372
+runner_sha256: ed9c4acb151d848b3a15302d25f5fd38a819bc742230fa16ed48afac14f24188
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 [PASS] no covariant one-qubit charge: under full soldering no role's stabilizer fixes a Bloch axis :: stabilizer orders (vertex, link, plaquette, cube) [24, 8, 8, 24]; fixed axes [0, 0, 0, 0]
 [PASS] no two-site charge transfer: a soldered link is flipped by a covariant vertex-link term only when the vertex is fully soldered, which has no charge :: bond stabilizer 4; link-flip dims (trivial, sign twist, axis, full) [0, 0, 0, 2]; charge-transfer norms (no charge axis: -) ['5.1e-16', '2.5e-16', '-', '-']
 [PASS] defects: one flip from ice costs 2U and leaves charges +1, -1; flips carrying the +1 defect's field onward keep 2U and move it one link :: pair energy 2 U; hop moves from the +1 defect 3, all at 2U and moving the charge: True
-[PASS] bosons: the Levin-Wen T-junction commutator of the defect hops vanishes (exchange phase 1) :: |t1 t2^dag t3 - t3 t2^dag t1| = 7.9e-17
-[PASS] record phases are pure gauge: exact ring element = -5/(2U^3) x product of flip amplitudes (phase included); ring phases are a lattice curl, zero over every cube :: ratio 0.99976+0.00000j, 0.99992+0.00000j at h/U = 0.03, 0.015; phase error 1.1e-07 rad; max cube sum 3.6e-15
-[PASS] magnitudes matter: equal field sizes give one fourth-order diagonal energy on all ice states; unequal sizes do not (the disjoint-pair and renormalization parts are configuration independent) :: shared-vertex part, equal sizes: spread 1.4e-14; unequal sizes: spread 0.5227 (units h^4/U^3)
+[PASS] bosons: the bare single-link flips that hop defects commute on distinct qubits, so the Levin-Wen T-junction phase is 1 :: |t1 t2^dag t3 - t3 t2^dag t1| = 7.9e-17
+[PASS] record phases are pure gauge: exact ring element = -5/(2U^3) x product of flip amplitudes (phase included); ring phases are a lattice curl, zero over every cube :: ratio 0.99976+0.00000j, 0.99994+0.00000j at h/U = 0.03, 0.015; phase error 4.0e-08 rad; max cube sum 3.6e-15
+[PASS] magnitudes matter: equal field sizes give one fourth-order diagonal energy on all ice states; unequal sizes do not (the disjoint-pair and renormalization parts are configuration independent) :: shared-vertex part, equal sizes: spread 0.0e+00; unequal sizes: spread 0.3769 (units h^4/U^3)
 TOTAL: PASS=6 FAIL=0
 
 ----- stderr -----

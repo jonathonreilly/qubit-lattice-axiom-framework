@@ -18,9 +18,9 @@ models, finite diagnostics, no physical reading):
    +1 and -1 at its ends; every flip of a link that carries the +1 defect's
    field onward to a neutral vertex keeps the energy 2U and moves the defect
    by one link.
-4. Bosons: the defect hops are single-link flips on distinct qubits; the
-   Levin-Wen T-junction commutator t1 t2^dag t3 - t3 t2^dag t1 vanishes, so
-   the exchange phase is 1.
+4. Bosons: in this supplied model the defect hops are bare single-link
+   flips; on distinct qubits they commute, so the Levin-Wen T-junction
+   relation t1 t2^dag t3 = t3 t2^dag t1 holds with phase 1.
 5. Record phases are pure gauge: for random complex transverse fields on one
    plaquette, the exact effective ring element equals -5/(2U^3) times the
    product of the four flip amplitudes along the ring, to O(h^6); its phase
@@ -219,7 +219,7 @@ check("defects: one flip from ice costs 2U and leaves charges +1, -1; flips carr
 dirs = [rng.normal(size=3) for _ in range(3)]
 t = [site_op(sdot(np.cross(np.eye(3)[k], dirs[k])), k, 3) for k in range(3)]   # transverse flips on three links
 lw = np.linalg.norm(t[0] @ t[1].conj().T @ t[2] - t[2] @ t[1].conj().T @ t[0])
-check("bosons: the Levin-Wen T-junction commutator of the defect hops vanishes (exchange phase 1)",
+check("bosons: the bare single-link flips that hop defects commute on distinct qubits, so the Levin-Wen T-junction phase is 1",
       lw < 1e-12, f"|t1 t2^dag t3 - t3 t2^dag t1| = {lw:.1e}")
 
 # ------------------------------------------------- 5. pure-gauge phases
@@ -250,11 +250,12 @@ def config_state(vals):
 
 a_vals, b_vals = (1, 1, -1, -1), (-1, -1, 1, 1)
 ratios, phase_err = [], []
+unit_fields = []                                  # one random transverse field set, scaled by h below
+for k in range(4):
+    d = np.cross(np.eye(3)[ppos_axis[k]], rng.normal(size=3))
+    unit_fields.append((0.6 + 0.8 * rng.random()) * d / np.linalg.norm(d))
 for h in [0.03, 0.015]:
-    fields = []
-    for k in range(4):
-        d = np.cross(np.eye(3)[ppos_axis[k]], rng.normal(size=3))
-        fields.append(h * (0.6 + 0.8 * rng.random()) * d / np.linalg.norm(d))
+    fields = [h * f for f in unit_fields]
     Es, H0, V = plaquette_model(fields)
     ev, vec = np.linalg.eigh(H0 + V)
     A, B = config_state(a_vals), config_state(b_vals)

@@ -1,0 +1,21 @@
+PASS redraw T is the projector on 19 momentum classes (sizes 6 singletons, 12 pairs, one class of 6)
+PASS  (T-I)^2 = -(T-I), so a second redraw of an isolated pair does nothing beyond the first
+PASS the site and the partner have the same one-site marginal
+PASS k=0 collision eigenvalues {-2*gamma*rho: 2, 0: 4}
+PASS density and three momenta are conserved; the axis quadrupole decays at 2 gamma rho; one collision retains 1/2 of the momentum and 1/3 of the quadrupole
+PASS six-axis Gamma is minimized at gamma rho = sqrt(2/3)
+PASS that critical point is a minimum
+PASS transverse shear eigenvalue is exactly -(1-cos k) rho (1/3 + gamma), so nu_T = rho/6 + gamma rho/2
+PASS sphere moments <sx^2>, <sx^4>, <|sx|>, <|sx|^3>, <|sx| sy^2> = [1/3, 1/5, 1/2, 1/4, 1/8]
+PASS <sx^2 sy^2>/<sy^2> = 1/15 / (1/3)
+PASS longitudinal kinetic viscosity 4/(135 gamma rho)
+PASS hop-noise piece 3/(8 sqrt 3)
+PASS density diffusion 1/(4 sqrt 3)
+PASS shear streaming piece sqrt(3)/16
+PASS projecting the l=2 return gives 1/(45 gamma rho)
+PASS six-axis (Gamma/2)k^2 is 0.0095 and 0.0381
+PASS sphere (Gamma_s/2)k^2 at wavelength 64 is 0.0031
+PASS tick-map six-axis damping from the k^2 formula is 0.0108, 0.0431
+TOTAL FAIL=0
+HIT: confirmed - the product closure gives Gamma = 2/3 + rho/6 + gamma rho/2 + 1/(3 gamma rho) on six axes, and an isolated pair saturates after one redraw
+SUMMARY: confirmed - T is the class projector, the quadrupole rate is 2 gamma rho, shear has no 1/(gamma rho) piece, and Gamma is minimized at gamma rho = sqrt(2/3). Simulations were not rebuilt.

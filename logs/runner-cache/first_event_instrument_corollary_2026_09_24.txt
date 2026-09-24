@@ -1,0 +1,313 @@
+===== runner cache v1 =====
+runner: scripts/first_event_instrument_corollary_2026_09_24.py
+runner_sha256: f81d1448607a8d7af9ea9a391c629c47680d7e787424a2a3e4e6cdd7111e17a7
+input_fingerprint_sha256: 7ed71298619d24b1806bffb4c51228345d4749c36ab735e635b3ee60b046ecab
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+Evidence boundary: supplied models; finite controls do not establish native physics, limit interchange or audit status.
+[PASS] component first_event_instrument_check.py; stdout sha256=791783435d6318e7cf0a1369c384715ee76485892745d42b7e84af149add1165
+RESULT FIRST_EVENT_INSTRUMENT_RESULTS.json
+{
+  "status": "PASS",
+  "cube_edges": 12,
+  "controls": [
+    {
+      "edge": 0,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 0,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 0,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 1,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 1,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 1,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 2,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 2,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 2,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 3,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 3,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 3,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 4,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 4,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 4,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 5,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 5,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 5,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 6,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 6,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 6,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 7,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 7,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 7,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 8,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 8,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 8,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 9,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 9,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 9,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 10,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 10,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 10,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 11,
+      "instrument": "resolved_minus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 11,
+      "instrument": "resolved_plus",
+      "input_dimension": 11,
+      "output_dimension": 22,
+      "Gram_coefficient": 2,
+      "matrix_units_checked": 121
+    },
+    {
+      "edge": 11,
+      "instrument": "coherent",
+      "input_dimension": 11,
+      "output_dimension": 44,
+      "Gram_coefficient": 4,
+      "matrix_units_checked": 121
+    }
+  ],
+  "zero_rate_normalization": "No normalized mark law when total rate is zero",
+  "scope": "Exact finite circulation-basis Gram and logical image-recovery identities; no physical record-reversal operation asserted."
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

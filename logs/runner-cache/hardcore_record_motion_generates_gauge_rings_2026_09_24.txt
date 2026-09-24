@@ -1,0 +1,850 @@
+===== runner cache v1 =====
+runner: scripts/hardcore_record_motion_generates_gauge_rings_2026_09_24.py
+runner_sha256: 70b35f871bdec805f7aeba127f237edf70da93798ce646669b939707009d257d
+input_fingerprint_sha256: 52fd67016828f250f2fad47b2d5e9350dbb50557664cd794d2cd49e49f3d416a
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 1.31
+status: ok
+----- stdout -----
+Evidence boundary: supplied models; finite controls do not establish native physics, limit interchange or audit status.
+[PASS] component hardcore_record_ring_and_formation_check.py; stdout sha256=acd0e4cdbd44850ea77872eb91026d7cb83ebc50e90595039edaf07efe54fc0e
+RESULT HARDCORE_RECORD_RING_AND_FORMATION_RESULTS.json
+{
+  "status": "PASS",
+  "geometry_dependency_sha256": "1dfd370af4b92bcff307a91314e610750e7b7961184a547f2f33d094027a8282",
+  "square": {
+    "bosonic_cases": [
+      {
+        "reference_occupancy": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "physical_sector_dimension": 5,
+        "low_indices": [
+          3,
+          4
+        ],
+        "basis": [
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ]
+        ],
+        "penalties_over_Delta": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "hop_matrix_over_t": [
+          [
+            "0",
+            "-1",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0",
+            "-1"
+          ],
+          [
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0"
+          ]
+        ],
+        "directed_Gauss_preserving_hops": 8,
+        "second_coefficient": [
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "-1"
+          ]
+        ],
+        "zero_energy_Schur_fourth": [
+          [
+            "-1",
+            "-1"
+          ],
+          [
+            "-1",
+            "-1"
+          ]
+        ],
+        "normalized_effective_fourth": [
+          [
+            "0",
+            "-1"
+          ],
+          [
+            "-1",
+            "0"
+          ]
+        ],
+        "characteristic_polynomial": "(energy**2 - energy - epsilon**2)*(energy**3 - 2*energy**2 - 3*energy*epsilon**2 + energy + epsilon**2)",
+        "exact_low_series": [
+          {
+            "a2": "-1",
+            "a4": "1",
+            "a6": "-2"
+          },
+          {
+            "a2": "-1",
+            "a4": "-1",
+            "a6": "2"
+          }
+        ],
+        "numerical_controls": [
+          {
+            "t_over_Delta": 0.02,
+            "exact_low_energies_over_Delta": [
+              -0.0004001598719233237,
+              -0.0003998401278721263
+            ],
+            "fourth_order_energies_over_Delta": [
+              -0.00040016000000000004,
+              -0.00039984
+            ],
+            "error_divided_by_ratio6": 2.0011980675962424
+          },
+          {
+            "t_over_Delta": 0.04,
+            "exact_low_energies_over_Delta": [
+              -0.0016025517884861987,
+              -0.0015974481593781249
+            ],
+            "fourth_order_energies_over_Delta": [
+              -0.00160256,
+              -0.00159744
+            ],
+            "error_divided_by_ratio6": 2.0047641116678085
+          },
+          {
+            "t_over_Delta": 0.08,
+            "exact_low_energies_over_Delta": [
+              -0.006440430829793536,
+              -0.006359556046886502
+            ],
+            "fourth_order_energies_over_Delta": [
+              -0.00644096,
+              -0.006359040000000001
+            ],
+            "error_divided_by_ratio6": 2.0186241396464824
+          }
+        ]
+      },
+      {
+        "reference_occupancy": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "physical_sector_dimension": 7,
+        "low_indices": [
+          4,
+          5
+        ],
+        "basis": [
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        ],
+        "penalties_over_Delta": [
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "hop_matrix_over_t": [
+          [
+            "0",
+            "-1",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "0",
+            "-1"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1"
+          ],
+          [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0"
+          ]
+        ],
+        "directed_Gauss_preserving_hops": 16,
+        "second_coefficient": [
+          [
+            "-2",
+            "0"
+          ],
+          [
+            "0",
+            "-2"
+          ]
+        ],
+        "zero_energy_Schur_fourth": [
+          [
+            "-2",
+            "-2"
+          ],
+          [
+            "-2",
+            "-2"
+          ]
+        ],
+        "normalized_effective_fourth": [
+          [
+            "2",
+            "-2"
+          ],
+          [
+            "-2",
+            "2"
+          ]
+        ],
+        "characteristic_polynomial": "(energy - 1)**2*(energy**2 - energy - 2*epsilon**2)*(energy**3 - 3*energy**2 - 6*energy*epsilon**2 + 2*energy + 4*epsilon**2)",
+        "exact_low_series": [
+          {
+            "a2": "-2",
+            "a4": "4",
+            "a6": "-16"
+          },
+          {
+            "a2": "-2",
+            "a4": "0",
+            "a6": "4"
+          }
+        ],
+        "numerical_controls": [
+          {
+            "t_over_Delta": 0.02,
+            "exact_low_energies_over_Delta": [
+              -0.0007999997443072122,
+              -0.000799361021956709
+            ],
+            "fourth_order_energies_over_Delta": [
+              -0.0008,
+              -0.0007993599999999999
+            ],
+            "error_divided_by_ratio6": 15.968073578689573
+          },
+          {
+            "t_over_Delta": 0.04,
+            "exact_low_energies_over_Delta": [
+              -0.0031999836945162253,
+              -0.0031898250163648
+            ],
+            "fourth_order_energies_over_Delta": [
+              -0.0032,
+              -0.0031897600000000003
+            ],
+            "error_divided_by_ratio6": 15.873135937439933
+          },
+          {
+            "t_over_Delta": 0.08,
+            "exact_low_energies_over_Delta": [
+              -0.012798971423838307,
+              -0.012640224719052183
+            ],
+            "fourth_order_energies_over_Delta": [
+              -0.0128,
+              -0.012636160000000002
+            ],
+            "error_divided_by_ratio6": 15.505672653886597
+          }
+        ]
+      }
+    ],
+    "fermionic_two_record_fourth": [
+      [
+        "2",
+        "2"
+      ],
+      [
+        "2",
+        "2"
+      ]
+    ]
+  },
+  "periodic_lattice_path_columns": [
+    {
+      "shape": [
+        6,
+        6
+      ],
+      "vertices": 36,
+      "links": 72,
+      "field_configuration_hex": "0x111bbb111bbb111bbb",
+      "eligible_first_hops": 36,
+      "eligible_degree_at_every_vertex": 2,
+      "distinct_Q_two_excursions": 594,
+      "four_hop_paths_including_time_orders": 2448,
+      "fourth_order_diagonal": 108,
+      "offdiagonal_targets": 18,
+      "every_offdiagonal_coefficient": -2,
+      "all_coefficients_exact": true,
+      "vacant_edges_after_each_first_hop": 3,
+      "leading_birth_loss_over_beta_t2_over_Delta2": 108,
+      "column_sha256": "3f668b10778c41ebfec7286a52e2a897df12c2ed63ac8463caab4abf960ad1f0"
+    },
+    {
+      "shape": [
+        6,
+        6
+      ],
+      "vertices": 36,
+      "links": 72,
+      "field_configuration_hex": "0x9bb419e85466611bbb",
+      "eligible_first_hops": 36,
+      "eligible_degree_at_every_vertex": 2,
+      "distinct_Q_two_excursions": 594,
+      "four_hop_paths_including_time_orders": 2436,
+      "fourth_order_diagonal": 108,
+      "offdiagonal_targets": 15,
+      "every_offdiagonal_coefficient": -2,
+      "all_coefficients_exact": true,
+      "vacant_edges_after_each_first_hop": 3,
+      "leading_birth_loss_over_beta_t2_over_Delta2": 108,
+      "column_sha256": "9c7e70a51062742a2671e7133894f6236e60390f8556fd3b570ff02d5dd8df1c"
+    },
+    {
+      "shape": [
+        6,
+        6
+      ],
+      "vertices": 36,
+      "links": 72,
+      "field_configuration_hex": "0x45047ae1b581eebee1",
+      "eligible_first_hops": 36,
+      "eligible_degree_at_every_vertex": 2,
+      "distinct_Q_two_excursions": 594,
+      "four_hop_paths_including_time_orders": 2416,
+      "fourth_order_diagonal": 108,
+      "offdiagonal_targets": 10,
+      "every_offdiagonal_coefficient": -2,
+      "all_coefficients_exact": true,
+      "vacant_edges_after_each_first_hop": 3,
+      "leading_birth_loss_over_beta_t2_over_Delta2": 108,
+      "column_sha256": "203a78e974b6ef69002d53fa716ee4478166c2358331add2a0ff56ade8ac1220"
+    },
+    {
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "vertices": 216,
+      "links": 648,
+      "field_configuration_hex": "0xf3cf11451f3cf11451f3cf1145128a2a79e728a2a79e728a2a79e7f3cf11451f3cf11451f3cf1145128a2a79e728a2a79e728a2a79e7f3cf11451f3cf11451f3cf1145128a2a79e728a2a79e728a2a79e7",
+      "eligible_first_hops": 324,
+      "eligible_degree_at_every_vertex": 3,
+      "distinct_Q_two_excursions": 51678,
+      "four_hop_paths_including_time_orders": 208008,
+      "fourth_order_diagonal": 1620,
+      "offdiagonal_targets": 324,
+      "every_offdiagonal_coefficient": -2,
+      "all_coefficients_exact": true,
+      "vacant_edges_after_each_first_hop": 5,
+      "leading_birth_loss_over_beta_t2_over_Delta2": 1620,
+      "column_sha256": "3078f1b00961b6fdcd132c1072df1d40213f5cdc8bcfac55ef8f15aa49919457"
+    },
+    {
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "vertices": 216,
+      "links": 648,
+      "field_configuration_hex": "0x96fb81cb1211c1db7428c7539839e396670d98abae241db425f961ce3c53794cda253c54cbdb3d5a97a22138f1a5dd96a53a9aabdd1c58a90b86ef0d4b2a8d75ebaa3ae0ea4a172373572c69225874e50b",
+      "eligible_first_hops": 324,
+      "eligible_degree_at_every_vertex": 3,
+      "distinct_Q_two_excursions": 51678,
+      "four_hop_paths_including_time_orders": 207392,
+      "fourth_order_diagonal": 1620,
+      "offdiagonal_targets": 170,
+      "every_offdiagonal_coefficient": -2,
+      "all_coefficients_exact": true,
+      "vacant_edges_after_each_first_hop": 5,
+      "leading_birth_loss_over_beta_t2_over_Delta2": 1620,
+      "column_sha256": "b63d86a5d53517c9d3b9eeef76dde7ad65dbaf443dab22c37378ffaaa1f4af7e"
+    },
+    {
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "vertices": 216,
+      "links": 648,
+      "field_configuration_hex": "0x84c7b30f36cecb68b5d75aca45948240d8a826465109ca8165d2dc650313b085b4a6c4552502a1f65baedf4c5e97074d562be2a56775ce58feb7544a2b199fc667b5bb53b384d78e8fe8ac4f5797c522dc",
+      "eligible_first_hops": 324,
+      "eligible_degree_at_every_vertex": 3,
+      "distinct_Q_two_excursions": 51678,
+      "four_hop_paths_including_time_orders": 207424,
+      "fourth_order_diagonal": 1620,
+      "offdiagonal_targets": 178,
+      "every_offdiagonal_coefficient": -2,
+      "all_coefficients_exact": true,
+      "vacant_edges_after_each_first_hop": 5,
+      "leading_birth_loss_over_beta_t2_over_Delta2": 1620,
+      "column_sha256": "4589814922ad94861d79a1f40ba134f14740aa9040be290ee731e7eeb746882a"
+    }
+  ],
+  "live_formation": {
+    "full_physical_dimension": 9,
+    "two_record_dimension": 7,
+    "four_record_dimension": 2,
+    "Gauss_and_permanent_count_checked": true,
+    "two_record_basis": [
+      [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    ],
+    "loss_diagonal_over_beta": [
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "reflection_block_low_series": {
+      "even": {
+        "c2": "-2/a",
+        "c4": "-4*(-D + a)/(D*a**3)"
+      },
+      "odd": {
+        "c2": "-2/a",
+        "c4": "4/a**3"
+      }
+    },
+    "complex_first_excursion_energy": "a=Delta-i beta/2",
+    "fixed_ring_live_birth_cases": [
+      {
+        "Delta": 256.0,
+        "hopping_t": 53.81737057623773,
+        "t_over_Delta": 0.21022410381342863,
+        "beta": 1.0,
+        "effective_ring_J": 1.0,
+        "test_time": 1.5707963267948966,
+        "no_birth_probability": 0.8409965333422831,
+        "unconditional_target_low_state_probability": 0.6851954853641943,
+        "exact_slow_decay_rates": [
+          0.08043786532601341,
+          0.07023358993001438
+        ],
+        "leading_decay_rate": 0.08838801047481656,
+        "exact_slow_coherent_ring": 0.8159846707450367
+      },
+      {
+        "Delta": 1024.0,
+        "hopping_t": 152.2185107203483,
+        "t_over_Delta": 0.14865088937534013,
+        "beta": 1.0,
+        "effective_ring_J": 1.0,
+        "test_time": 1.5707963267948966,
+        "no_birth_probability": 0.9095270458611966,
+        "unconditional_target_low_state_probability": 0.825169545794679,
+        "exact_slow_decay_rates": [
+          0.0422119634135836,
+          0.039082729483668366
+        ],
+        "leading_decay_rate": 0.0441941632874496,
+        "exact_slow_coherent_ring": 0.8996413533469401
+      },
+      {
+        "Delta": 4096.0,
+        "hopping_t": 430.5389646099018,
+        "t_over_Delta": 0.10511205190671431,
+        "beta": 1.0,
+        "effective_ring_J": 1.0,
+        "test_time": 1.5707963267948966,
+        "no_birth_probability": 0.9515116440775565,
+        "unconditional_target_low_state_probability": 0.9099683420815191,
+        "exact_slow_decay_rates": [
+          0.021604327038655887,
+          0.020732408283235894
+        ],
+        "leading_decay_rate": 0.02209708658280736,
+        "exact_slow_coherent_ring": 0.9474189178527581
+      },
+      {
+        "Delta": 16384.0,
+        "hopping_t": 1217.7480857627863,
+        "t_over_Delta": 0.07432544468767006,
+        "beta": 1.0,
+        "effective_ring_J": 1.0,
+        "test_time": 1.5707963267948966,
+        "no_birth_probability": 0.9748564899217849,
+        "unconditional_target_low_state_probability": 0.9507079284498842,
+        "exact_slow_decay_rates": [
+          0.010925857220651331,
+          0.010695317897079814
+        ],
+        "leading_decay_rate": 0.011048543445750045,
+        "exact_slow_coherent_ring": 0.9730617469164571
+      },
+      {
+        "Delta": 65536.0,
+        "hopping_t": 3444.3117168792146,
+        "t_over_Delta": 0.052556025953357156,
+        "beta": 1.0,
+        "effective_ring_J": 1.0,
+        "test_time": 1.5707963267948966,
+        "no_birth_probability": 0.9871917933837349,
+        "unconditional_target_low_state_probability": 0.9801453950362287,
+        "exact_slow_decay_rates": [
+          0.0054936735445904016,
+          0.005434372906378696
+        ],
+        "leading_decay_rate": 0.005524271727698347,
+        "exact_slow_coherent_ring": 0.986362410733534
+      }
+    ],
+    "scope": "Exact finite first-birth survival; after one birth all four sites are occupied. No infinite-lattice phase or indefinite survival conclusion."
+  },
+  "runtime_seconds": 0.9089339580386877
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

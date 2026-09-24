@@ -1,0 +1,3507 @@
+===== runner cache v1 =====
+runner: scripts/finite_rate_repeated_record_formation_2026_09_24.py
+runner_sha256: a777e26ced1364575f6d280025ede158e713742dd5e9ef9aed85844c45dc0502
+input_fingerprint_sha256: c01b61ecd78789404f5c9ed444802ad58c195bc5d34c0f8b09d668e31d052d3f
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 4.13
+status: ok
+----- stdout -----
+Evidence boundary: supplied models; finite controls do not establish native physics, limit interchange or audit status.
+[PASS] component repeated_formation_check.py; stdout sha256=9d27bcbe72ce7315f633f6b377dfd4d03194ee842942e3c4d8586c39e2e1bf58
+[PASS] component repeated_formation_dark_check.py; stdout sha256=07dfcf2aac7f3cc47a6bcac386cbd54cf37a2cc8afb298d4ce44603b69dab245
+RESULT REPEATED_FORMATION_DARK_RESULTS.json
+{
+  "created_utc": "2026-09-24T05:38:04.735991+00:00",
+  "source_sha256": "a874b05b2c3078321bb53b8110c25a50f5b1e87de6c58a75aa1a3fed2ae4786a",
+  "model_source_sha256": "dd19906f85f2ce1834495ec0480e8d9e7a2127126ce3aa01a77273a3c2399d8e",
+  "recorded_results_sha256": "dab15fc7955c75e158a96dc7b586b5e4ce73be353fb8ffa237d200be093da848",
+  "M_eigenvalue_multiplicities": {
+    "6": 1,
+    "3": 2,
+    "5": 3,
+    "2": 3,
+    "1": 3,
+    "0": 6
+  },
+  "instruments": {
+    "coherent": {
+      "spectral_weights": {
+        "0": "4/15",
+        "1": "0",
+        "2": "1/3",
+        "3": "0",
+        "5": "1/15",
+        "6": "1/3"
+      },
+      "eventual_second_birth_probability": "11/15",
+      "post_first_birth_normalization": "24"
+    },
+    "resolved": {
+      "spectral_weights": {
+        "0": "1/3",
+        "1": "0",
+        "2": "1/6",
+        "3": "0",
+        "5": "1/3",
+        "6": "1/6"
+      },
+      "eventual_second_birth_probability": "2/3",
+      "post_first_birth_normalization": "24"
+    }
+  },
+  "exact_projector_and_dark_identities": true,
+  "effective_count_rows_compared": 72,
+  "max_recorded_count_error": 4.440892098500626e-16,
+  "scope": "Exact finite four-leaf-star dark weights, microscopic eventual absorption and effective two-event law. Finite-time full dynamics checked in the separately bound runner."
+}
+
+RESULT REPEATED_FORMATION_RESULTS.json
+{
+  "created_utc": "2026-09-24T05:38:04.210006+00:00",
+  "source_sha256": "dd19906f85f2ce1834495ec0480e8d9e7a2127126ce3aa01a77273a3c2399d8e",
+  "inventories": [
+    {
+      "model": "star_2",
+      "physical_dimension": 6,
+      "P_dimension": 4,
+      "one_hole_dimension": 2,
+      "two_hole_dimension": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "A_sites": [
+        0
+      ],
+      "physical_basis": [
+        {
+          "q": [
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "integer_operator_identities_checked": true
+    },
+    {
+      "model": "star_4",
+      "physical_dimension": 45,
+      "P_dimension": 29,
+      "one_hole_dimension": 16,
+      "two_hole_dimension": 0,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "A_sites": [
+        0
+      ],
+      "physical_basis": [
+        {
+          "q": [
+            -1,
+            -1,
+            1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            -1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            -1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            -1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            0,
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            0,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            -1,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            1,
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            1,
+            -1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            1,
+            -1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            0,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            0,
+            -1,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "E": [
+            -1,
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "E": [
+            -1,
+            -1,
+            1,
+            1
+          ]
+        }
+      ],
+      "integer_operator_identities_checked": true
+    },
+    {
+      "model": "two_A_path",
+      "physical_dimension": 9,
+      "P_dimension": 4,
+      "one_hole_dimension": 4,
+      "two_hole_dimension": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "A_sites": [
+        0,
+        2
+      ],
+      "physical_basis": [
+        {
+          "q": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "E": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "q": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "integer_operator_identities_checked": true
+    }
+  ],
+  "exact_map_checks": [
+    {
+      "model": "star_2",
+      "instrument": "coherent",
+      "P_matrix_units_checked": 16,
+      "all_three_cancellation_identities_exact": true,
+      "two_hole_coherence_correction_is_needed": false
+    },
+    {
+      "model": "star_2",
+      "instrument": "resolved",
+      "P_matrix_units_checked": 16,
+      "all_three_cancellation_identities_exact": true,
+      "two_hole_coherence_correction_is_needed": false
+    },
+    {
+      "model": "two_A_path",
+      "instrument": "coherent",
+      "P_matrix_units_checked": 16,
+      "all_three_cancellation_identities_exact": true,
+      "two_hole_coherence_correction_is_needed": true
+    },
+    {
+      "model": "two_A_path",
+      "instrument": "resolved",
+      "P_matrix_units_checked": 16,
+      "all_three_cancellation_identities_exact": true,
+      "two_hole_coherence_correction_is_needed": true
+    }
+  ],
+  "full_dynamics_checks": [
+    {
+      "model": "star_2",
+      "instrument": "coherent",
+      "epsilon": 0.2,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 2.170642201834862,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.3146829333890859,
+          "error_over_epsilon": 1.5734146669454292,
+          "actual_event_count_probabilities": {
+            "0": 0.6107364307761726,
+            "1": 0.3892635692238269
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.5811998819160349,
+            "1": 0.4188001180839649
+          },
+          "actual_energy_over_Delta": 0.7413599421978097,
+          "effective_energy_over_Delta": 0.8376002361679298
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.21231179245449439,
+          "error_over_epsilon": 1.061558962272472,
+          "actual_event_count_probabilities": {
+            "0": 0.3782807988639769,
+            "1": 0.6217192011360222
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.337793302739213,
+            "1": 0.6622066972607871
+          },
+          "actual_energy_over_Delta": 1.220251610711422,
+          "effective_energy_over_Delta": 1.3244133945215741
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.1456623364924588,
+          "error_over_epsilon": 0.7283116824622939,
+          "actual_event_count_probabilities": {
+            "0": 0.23462948656535138,
+            "1": 0.7653705134346475
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.19632542766405803,
+            "1": 0.8036745723359416
+          },
+          "actual_energy_over_Delta": 1.5163628365874624,
+          "effective_energy_over_Delta": 1.6073491446718833
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.09933965115929042,
+          "error_over_epsilon": 0.49669825579645205,
+          "actual_event_count_probabilities": {
+            "0": 0.1455242974396694,
+            "1": 0.8544757025603293
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.11410431537546564,
+            "1": 0.8858956846245343
+          },
+          "actual_energy_over_Delta": 1.7000335584201074,
+          "effective_energy_over_Delta": 1.7717913692490685
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.06730281385704955,
+          "error_over_epsilon": 0.3365140692852477,
+          "actual_event_count_probabilities": {
+            "0": 0.09025863920559474,
+            "1": 0.9097413607944045
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.06631741462233066,
+            "1": 0.9336825853776692
+          },
+          "actual_energy_over_Delta": 1.8139516000022313,
+          "effective_energy_over_Delta": 1.8673651707553385
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.045280416478509264,
+          "error_over_epsilon": 0.2264020823925463,
+          "actual_event_count_probabilities": {
+            "0": 0.05598117949824759,
+            "1": 0.9440188205017512
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.03854367354747531,
+            "1": 0.9614563264525244
+          },
+          "actual_energy_over_Delta": 1.8846070695467136,
+          "effective_energy_over_Delta": 1.9229126529050489
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.03025336304150822,
+          "error_over_epsilon": 0.1512668152075411,
+          "actual_event_count_probabilities": {
+            "0": 0.03472124648199743,
+            "1": 0.9652787535180009
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.022401578514402862,
+            "1": 0.9775984214855972
+          },
+          "actual_energy_over_Delta": 1.928429761279566,
+          "effective_energy_over_Delta": 1.9551968429711943
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.020079841701840687,
+          "error_over_epsilon": 0.10039920850920343,
+          "actual_event_count_probabilities": {
+            "0": 0.02153518321805094,
+            "1": 0.978464816781947
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.013019794787303734,
+            "1": 0.9869802052126958
+          },
+          "actual_energy_over_Delta": 1.9556099403112315,
+          "effective_energy_over_Delta": 1.9739604104253916
+        }
+      ]
+    },
+    {
+      "model": "star_2",
+      "instrument": "coherent",
+      "epsilon": 0.1,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 2.170642201834862,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.15250629324261647,
+          "error_over_epsilon": 1.5250629324261646,
+          "actual_event_count_probabilities": {
+            "0": 0.589960349670701,
+            "1": 0.41003965032929757
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.5811998819160349,
+            "1": 0.4188001180839649
+          },
+          "actual_energy_over_Delta": 0.8109502492651648,
+          "effective_energy_over_Delta": 0.8376002361679298
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.09592760287862187,
+          "error_over_epsilon": 0.9592760287862186,
+          "actual_event_count_probabilities": {
+            "0": 0.34887825070328843,
+            "1": 0.6511217492967102
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.337793302739213,
+            "1": 0.6622066972607871
+          },
+          "actual_energy_over_Delta": 1.2968449534111364,
+          "effective_energy_over_Delta": 1.3244133945215741
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.060301158605460425,
+          "error_over_epsilon": 0.6030115860546043,
+          "actual_event_count_probabilities": {
+            "0": 0.2063122276357614,
+            "1": 0.7936877723642376
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.19632542766405803,
+            "1": 0.8036745723359416
+          },
+          "actual_energy_over_Delta": 1.5841830674665534,
+          "effective_energy_over_Delta": 1.6073491446718833
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.037870511109422335,
+          "error_over_epsilon": 0.37870511109422333,
+          "actual_event_count_probabilities": {
+            "0": 0.1220045536981046,
+            "1": 0.8779954463018939
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.11410431537546564,
+            "1": 0.8858956846245343
+          },
+          "actual_energy_over_Delta": 1.7541029930449707,
+          "effective_energy_over_Delta": 1.7717913692490685
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.02375491702541501,
+          "error_over_epsilon": 0.2375491702541501,
+          "actual_event_count_probabilities": {
+            "0": 0.07214846785209923,
+            "1": 0.9278515321478988
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.06631741462233066,
+            "1": 0.9336825853776692
+          },
+          "actual_energy_over_Delta": 1.8545866382567797,
+          "effective_energy_over_Delta": 1.8673651707553385
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.014879393826411739,
+          "error_over_epsilon": 0.14879393826411738,
+          "actual_event_count_probabilities": {
+            "0": 0.04266563218849973,
+            "1": 0.9573343678114986
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.03854367354747531,
+            "1": 0.9614563264525244
+          },
+          "actual_energy_over_Delta": 1.9140085272476228,
+          "effective_energy_over_Delta": 1.9229126529050489
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.009305061254264193,
+          "error_over_epsilon": 0.09305061254264192,
+          "actual_event_count_probabilities": {
+            "0": 0.025230697535753414,
+            "1": 0.9747693024642459
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.022401578514402862,
+            "1": 0.9775984214855972
+          },
+          "actual_energy_over_Delta": 1.949148184888398,
+          "effective_energy_over_Delta": 1.9551968429711943
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.005808961979653455,
+          "error_over_epsilon": 0.05808961979653455,
+          "actual_event_count_probabilities": {
+            "0": 0.014920395303840388,
+            "1": 0.9850796046961593
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.013019794787303734,
+            "1": 0.9869802052126958
+          },
+          "actual_energy_over_Delta": 1.9699283310614883,
+          "effective_energy_over_Delta": 1.9739604104253916
+        }
+      ]
+    },
+    {
+      "model": "star_2",
+      "instrument": "coherent",
+      "epsilon": 0.05,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 2.170642201834862,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.07455742648283237,
+          "error_over_epsilon": 1.4911485296566473,
+          "actual_event_count_probabilities": {
+            "0": 0.5835023151232459,
+            "1": 0.4164976848767522
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.5811998819160349,
+            "1": 0.4188001180839649
+          },
+          "actual_energy_over_Delta": 0.8307345735587378,
+          "effective_energy_over_Delta": 0.8376002361679298
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.044993770160244154,
+          "error_over_epsilon": 0.899875403204883,
+          "actual_event_count_probabilities": {
+            "0": 0.3406261345978047,
+            "1": 0.6593738654021928
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.337793302739213,
+            "1": 0.6622066972607871
+          },
+          "actual_energy_over_Delta": 1.317427965228521,
+          "effective_energy_over_Delta": 1.3244133945215741
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.02715047969740012,
+          "error_over_epsilon": 0.5430095939480023,
+          "actual_event_count_probabilities": {
+            "0": 0.1988443928393581,
+            "1": 0.8011556071606376
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.19632542766405803,
+            "1": 0.8036745723359416
+          },
+          "actual_energy_over_Delta": 1.6015407861069724,
+          "effective_energy_over_Delta": 1.6073491446718833
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.016381272147676935,
+          "error_over_epsilon": 0.3276254429535387,
+          "actual_event_count_probabilities": {
+            "0": 0.11607768326508155,
+            "1": 0.8839223167349137
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.11410431537546564,
+            "1": 0.8858956846245343
+          },
+          "actual_energy_over_Delta": 1.7673948872086362,
+          "effective_energy_over_Delta": 1.7717913692490685
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.009881996472972512,
+          "error_over_epsilon": 0.19763992945945025,
+          "actual_event_count_probabilities": {
+            "0": 0.06776167212858726,
+            "1": 0.9322383278714051
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.06631741462233066,
+            "1": 0.9336825853776692
+          },
+          "actual_energy_over_Delta": 1.8642141112309398,
+          "effective_energy_over_Delta": 1.8673651707553385
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.005960071242462799,
+          "error_over_epsilon": 0.11920142484925597,
+          "actual_event_count_probabilities": {
+            "0": 0.039556649310241845,
+            "1": 0.9604433506897476
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.03854367354747531,
+            "1": 0.9614563264525244
+          },
+          "actual_energy_over_Delta": 1.9207334380248855,
+          "effective_energy_over_Delta": 1.9229126529050489
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.0035937806947639907,
+          "error_over_epsilon": 0.07187561389527981,
+          "actual_event_count_probabilities": {
+            "0": 0.023091645402199705,
+            "1": 0.9769083545977891
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.022401578514402862,
+            "1": 0.9775984214855972
+          },
+          "actual_energy_over_Delta": 1.9537272399634893,
+          "effective_energy_over_Delta": 1.9551968429711943
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.0021663558866413207,
+          "error_over_epsilon": 0.04332711773282641,
+          "actual_event_count_probabilities": {
+            "0": 0.013480011494372722,
+            "1": 0.9865199885056131
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.013019794787303734,
+            "1": 0.9869802052126958
+          },
+          "actual_energy_over_Delta": 1.9729877483260916,
+          "effective_energy_over_Delta": 1.9739604104253916
+        }
+      ]
+    },
+    {
+      "model": "star_2",
+      "instrument": "coherent",
+      "epsilon": 0.025,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 2.170642201834862,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.03675359869277471,
+          "error_over_epsilon": 1.4701439477109883,
+          "actual_event_count_probabilities": {
+            "0": 0.5817827179033346,
+            "1": 0.41821728209667264
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.5811998819160349,
+            "1": 0.4188001180839649
+          },
+          "actual_energy_over_Delta": 0.8358708514607358,
+          "effective_energy_over_Delta": 0.8376002361679298
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.02175542470797049,
+          "error_over_epsilon": 0.8702169883188196,
+          "actual_event_count_probabilities": {
+            "0": 0.3385053628314263,
+            "1": 0.6614946371685857
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.337793302739213,
+            "1": 0.6622066972607871
+          },
+          "actual_energy_over_Delta": 1.3226612828427313,
+          "effective_energy_over_Delta": 1.3244133945215741
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.012877473005499226,
+          "error_over_epsilon": 0.5150989202199691,
+          "actual_event_count_probabilities": {
+            "0": 0.19695648760174048,
+            "1": 0.8030435123982763
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.19632542766405803,
+            "1": 0.8036745723359416
+          },
+          "actual_energy_over_Delta": 1.605896185714513,
+          "effective_energy_over_Delta": 1.6073491446718833
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.007622311855304311,
+          "error_over_epsilon": 0.3048924742121724,
+          "actual_event_count_probabilities": {
+            "0": 0.11459746954653942,
+            "1": 0.8854025304534869
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.11410431537546564,
+            "1": 0.8858956846245343
+          },
+          "actual_energy_over_Delta": 1.7706940227982089,
+          "effective_energy_over_Delta": 1.7717913692490685
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.004511628992473756,
+          "error_over_epsilon": 0.18046515969895024,
+          "actual_event_count_probabilities": {
+            "0": 0.0666775701901477,
+            "1": 0.9333224298098846
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.06631741462233066,
+            "1": 0.9336825853776692
+          },
+          "actual_energy_over_Delta": 1.8665802530336006,
+          "effective_energy_over_Delta": 1.8673651707553385
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.0026703506202566587,
+          "error_over_epsilon": 0.10681402481026635,
+          "actual_event_count_probabilities": {
+            "0": 0.03879578130350037,
+            "1": 0.9612042186965377
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.03854367354747531,
+            "1": 0.9614563264525244
+          },
+          "actual_energy_over_Delta": 1.9223708465963412,
+          "effective_energy_over_Delta": 1.9229126529050489
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.0015804804152021465,
+          "error_over_epsilon": 0.06321921660808585,
+          "actual_event_count_probabilities": {
+            "0": 0.022572997826057845,
+            "1": 0.9774270021739844
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.022401578514402862,
+            "1": 0.9775984214855972
+          },
+          "actual_energy_over_Delta": 1.9548321324602416,
+          "effective_energy_over_Delta": 1.9551968429711943
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.0009353918552865452,
+          "error_over_epsilon": 0.0374156742114618,
+          "actual_event_count_probabilities": {
+            "0": 0.01313390821721221,
+            "1": 0.9868660917828364
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.013019794787303734,
+            "1": 0.9869802052126958
+          },
+          "actual_energy_over_Delta": 1.9737194575924475,
+          "effective_energy_over_Delta": 1.9739604104253916
+        }
+      ]
+    },
+    {
+      "model": "star_2",
+      "instrument": "resolved",
+      "epsilon": 0.2,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 2.170642201834862,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.3146829333890858,
+          "error_over_epsilon": 1.573414666945429,
+          "actual_event_count_probabilities": {
+            "0": 0.6107364307761731,
+            "1": 0.38926356922382704
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.5811998819160349,
+            "1": 0.4188001180839649
+          },
+          "actual_energy_over_Delta": 0.74135994219781,
+          "effective_energy_over_Delta": 0.8376002361679298
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.2123117924544939,
+          "error_over_epsilon": 1.0615589622724693,
+          "actual_event_count_probabilities": {
+            "0": 0.37828079886397736,
+            "1": 0.621719201136023
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.337793302739213,
+            "1": 0.6622066972607871
+          },
+          "actual_energy_over_Delta": 1.2202516107114236,
+          "effective_energy_over_Delta": 1.3244133945215741
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.1456623364924579,
+          "error_over_epsilon": 0.7283116824622895,
+          "actual_event_count_probabilities": {
+            "0": 0.23462948656535165,
+            "1": 0.7653705134346486
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.19632542766405803,
+            "1": 0.8036745723359416
+          },
+          "actual_energy_over_Delta": 1.5163628365874644,
+          "effective_energy_over_Delta": 1.6073491446718833
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.09933965115928917,
+          "error_over_epsilon": 0.49669825579644583,
+          "actual_event_count_probabilities": {
+            "0": 0.1455242974396695,
+            "1": 0.8544757025603307
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.11410431537546564,
+            "1": 0.8858956846245343
+          },
+          "actual_energy_over_Delta": 1.70003355842011,
+          "effective_energy_over_Delta": 1.7717913692490685
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.06730281385704862,
+          "error_over_epsilon": 0.3365140692852431,
+          "actual_event_count_probabilities": {
+            "0": 0.09025863920559482,
+            "1": 0.9097413607944055
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.06631741462233086,
+            "1": 0.9336825853776693
+          },
+          "actual_energy_over_Delta": 1.8139516000022333,
+          "effective_energy_over_Delta": 1.8673651707553387
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.04528041647850745,
+          "error_over_epsilon": 0.22640208239253726,
+          "actual_event_count_probabilities": {
+            "0": 0.05598117949824762,
+            "1": 0.9440188205017535
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.03854367354747518,
+            "1": 0.9614563264525247
+          },
+          "actual_energy_over_Delta": 1.8846070695467176,
+          "effective_energy_over_Delta": 1.9229126529050493
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.030253363041505537,
+          "error_over_epsilon": 0.1512668152075277,
+          "actual_event_count_probabilities": {
+            "0": 0.03472124648199745,
+            "1": 0.9652787535180031
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.022401578514402602,
+            "1": 0.9775984214855966
+          },
+          "actual_energy_over_Delta": 1.9284297612795707,
+          "effective_energy_over_Delta": 1.9551968429711932
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.0200798417018389,
+          "error_over_epsilon": 0.1003992085091945,
+          "actual_event_count_probabilities": {
+            "0": 0.021535183218050966,
+            "1": 0.9784648167819494
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.013019794787303703,
+            "1": 0.9869802052126965
+          },
+          "actual_energy_over_Delta": 1.9556099403112364,
+          "effective_energy_over_Delta": 1.973960410425393
+        }
+      ]
+    },
+    {
+      "model": "star_2",
+      "instrument": "resolved",
+      "epsilon": 0.1,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 2.170642201834862,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.15250629324261647,
+          "error_over_epsilon": 1.5250629324261646,
+          "actual_event_count_probabilities": {
+            "0": 0.589960349670701,
+            "1": 0.41003965032929757
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.5811998819160349,
+            "1": 0.4188001180839649
+          },
+          "actual_energy_over_Delta": 0.8109502492651648,
+          "effective_energy_over_Delta": 0.8376002361679298
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.09592760287862193,
+          "error_over_epsilon": 0.9592760287862192,
+          "actual_event_count_probabilities": {
+            "0": 0.34887825070328843,
+            "1": 0.6511217492967102
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.337793302739213,
+            "1": 0.6622066972607871
+          },
+          "actual_energy_over_Delta": 1.2968449534111364,
+          "effective_energy_over_Delta": 1.3244133945215741
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.06030115860546042,
+          "error_over_epsilon": 0.6030115860546041,
+          "actual_event_count_probabilities": {
+            "0": 0.2063122276357614,
+            "1": 0.7936877723642376
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.19632542766405803,
+            "1": 0.8036745723359416
+          },
+          "actual_energy_over_Delta": 1.5841830674665534,
+          "effective_energy_over_Delta": 1.6073491446718833
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.03787051110942233,
+          "error_over_epsilon": 0.3787051110942233,
+          "actual_event_count_probabilities": {
+            "0": 0.1220045536981046,
+            "1": 0.8779954463018939
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.11410431537546564,
+            "1": 0.8858956846245343
+          },
+          "actual_energy_over_Delta": 1.7541029930449707,
+          "effective_energy_over_Delta": 1.7717913692490685
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.023754917025415084,
+          "error_over_epsilon": 0.23754917025415082,
+          "actual_event_count_probabilities": {
+            "0": 0.07214846785209923,
+            "1": 0.9278515321478988
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.06631741462233086,
+            "1": 0.9336825853776693
+          },
+          "actual_energy_over_Delta": 1.8545866382567797,
+          "effective_energy_over_Delta": 1.8673651707553387
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.014879393826411885,
+          "error_over_epsilon": 0.14879393826411882,
+          "actual_event_count_probabilities": {
+            "0": 0.04266563218849973,
+            "1": 0.9573343678114986
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.03854367354747518,
+            "1": 0.9614563264525247
+          },
+          "actual_energy_over_Delta": 1.9140085272476228,
+          "effective_energy_over_Delta": 1.9229126529050493
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.009305061254263652,
+          "error_over_epsilon": 0.09305061254263651,
+          "actual_event_count_probabilities": {
+            "0": 0.025230697535753414,
+            "1": 0.9747693024642459
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.022401578514402602,
+            "1": 0.9775984214855966
+          },
+          "actual_energy_over_Delta": 1.949148184888398,
+          "effective_energy_over_Delta": 1.9551968429711932
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.005808961979654021,
+          "error_over_epsilon": 0.058089619796540204,
+          "actual_event_count_probabilities": {
+            "0": 0.014920395303840388,
+            "1": 0.9850796046961593
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.013019794787303703,
+            "1": 0.9869802052126965
+          },
+          "actual_energy_over_Delta": 1.9699283310614883,
+          "effective_energy_over_Delta": 1.973960410425393
+        }
+      ]
+    },
+    {
+      "model": "star_2",
+      "instrument": "resolved",
+      "epsilon": 0.05,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 2.170642201834862,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.07455742648283224,
+          "error_over_epsilon": 1.4911485296566447,
+          "actual_event_count_probabilities": {
+            "0": 0.5835023151232459,
+            "1": 0.4164976848767522
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.5811998819160349,
+            "1": 0.4188001180839649
+          },
+          "actual_energy_over_Delta": 0.8307345735587378,
+          "effective_energy_over_Delta": 0.8376002361679298
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.04499377016024417,
+          "error_over_epsilon": 0.8998754032048834,
+          "actual_event_count_probabilities": {
+            "0": 0.3406261345978047,
+            "1": 0.6593738654021928
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.337793302739213,
+            "1": 0.6622066972607871
+          },
+          "actual_energy_over_Delta": 1.317427965228521,
+          "effective_energy_over_Delta": 1.3244133945215741
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.027150479697400122,
+          "error_over_epsilon": 0.5430095939480024,
+          "actual_event_count_probabilities": {
+            "0": 0.1988443928393581,
+            "1": 0.8011556071606376
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.19632542766405803,
+            "1": 0.8036745723359416
+          },
+          "actual_energy_over_Delta": 1.6015407861069724,
+          "effective_energy_over_Delta": 1.6073491446718833
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.016381272147676932,
+          "error_over_epsilon": 0.3276254429535386,
+          "actual_event_count_probabilities": {
+            "0": 0.11607768326508155,
+            "1": 0.8839223167349137
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.11410431537546564,
+            "1": 0.8858956846245343
+          },
+          "actual_energy_over_Delta": 1.7673948872086362,
+          "effective_energy_over_Delta": 1.7717913692490685
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.0098819964729726,
+          "error_over_epsilon": 0.197639929459452,
+          "actual_event_count_probabilities": {
+            "0": 0.06776167212858726,
+            "1": 0.9322383278714051
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.06631741462233086,
+            "1": 0.9336825853776693
+          },
+          "actual_energy_over_Delta": 1.8642141112309398,
+          "effective_energy_over_Delta": 1.8673651707553387
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.005960071242463038,
+          "error_over_epsilon": 0.11920142484926076,
+          "actual_event_count_probabilities": {
+            "0": 0.039556649310241845,
+            "1": 0.9604433506897476
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.03854367354747518,
+            "1": 0.9614563264525247
+          },
+          "actual_energy_over_Delta": 1.9207334380248855,
+          "effective_energy_over_Delta": 1.9229126529050493
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.0035937806947634815,
+          "error_over_epsilon": 0.07187561389526963,
+          "actual_event_count_probabilities": {
+            "0": 0.023091645402199705,
+            "1": 0.9769083545977891
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.022401578514402602,
+            "1": 0.9775984214855966
+          },
+          "actual_energy_over_Delta": 1.9537272399634893,
+          "effective_energy_over_Delta": 1.9551968429711932
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.002166355886641994,
+          "error_over_epsilon": 0.043327117732839884,
+          "actual_event_count_probabilities": {
+            "0": 0.013480011494372722,
+            "1": 0.9865199885056131
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.013019794787303703,
+            "1": 0.9869802052126965
+          },
+          "actual_energy_over_Delta": 1.9729877483260916,
+          "effective_energy_over_Delta": 1.973960410425393
+        }
+      ]
+    },
+    {
+      "model": "star_2",
+      "instrument": "resolved",
+      "epsilon": 0.025,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 2.170642201834862,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.0367535986927747,
+          "error_over_epsilon": 1.4701439477109879,
+          "actual_event_count_probabilities": {
+            "0": 0.5817827179033346,
+            "1": 0.41821728209667264
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.5811998819160349,
+            "1": 0.4188001180839649
+          },
+          "actual_energy_over_Delta": 0.8358708514607358,
+          "effective_energy_over_Delta": 0.8376002361679298
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.02175542470797049,
+          "error_over_epsilon": 0.8702169883188196,
+          "actual_event_count_probabilities": {
+            "0": 0.3385053628314263,
+            "1": 0.6614946371685857
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.337793302739213,
+            "1": 0.6622066972607871
+          },
+          "actual_energy_over_Delta": 1.3226612828427313,
+          "effective_energy_over_Delta": 1.3244133945215741
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.01287747300549923,
+          "error_over_epsilon": 0.5150989202199692,
+          "actual_event_count_probabilities": {
+            "0": 0.19695648760174048,
+            "1": 0.8030435123982763
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.19632542766405803,
+            "1": 0.8036745723359416
+          },
+          "actual_energy_over_Delta": 1.605896185714513,
+          "effective_energy_over_Delta": 1.6073491446718833
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.007622311855304311,
+          "error_over_epsilon": 0.3048924742121724,
+          "actual_event_count_probabilities": {
+            "0": 0.11459746954653942,
+            "1": 0.8854025304534869
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.11410431537546564,
+            "1": 0.8858956846245343
+          },
+          "actual_energy_over_Delta": 1.7706940227982089,
+          "effective_energy_over_Delta": 1.7717913692490685
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.004511628992473857,
+          "error_over_epsilon": 0.18046515969895427,
+          "actual_event_count_probabilities": {
+            "0": 0.0666775701901477,
+            "1": 0.9333224298098846
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.06631741462233086,
+            "1": 0.9336825853776693
+          },
+          "actual_energy_over_Delta": 1.8665802530336006,
+          "effective_energy_over_Delta": 1.8673651707553387
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.002670350620256853,
+          "error_over_epsilon": 0.10681402481027412,
+          "actual_event_count_probabilities": {
+            "0": 0.03879578130350037,
+            "1": 0.9612042186965377
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.03854367354747518,
+            "1": 0.9614563264525247
+          },
+          "actual_energy_over_Delta": 1.9223708465963412,
+          "effective_energy_over_Delta": 1.9229126529050493
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.0015804804152008375,
+          "error_over_epsilon": 0.0632192166080335,
+          "actual_event_count_probabilities": {
+            "0": 0.022572997826057845,
+            "1": 0.9774270021739844
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.022401578514402602,
+            "1": 0.9775984214855966
+          },
+          "actual_energy_over_Delta": 1.9548321324602416,
+          "effective_energy_over_Delta": 1.9551968429711932
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.0009353918552848831,
+          "error_over_epsilon": 0.03741567421139532,
+          "actual_event_count_probabilities": {
+            "0": 0.01313390821721221,
+            "1": 0.9868660917828364
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.013019794787303703,
+            "1": 0.9869802052126965
+          },
+          "actual_energy_over_Delta": 1.9737194575924475,
+          "effective_energy_over_Delta": 1.973960410425393
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "coherent",
+      "epsilon": 0.2,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 4.654426229508198,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.406315139909807,
+          "error_over_epsilon": 2.031575699549035,
+          "actual_event_count_probabilities": {
+            "0": 0.3411725695213284,
+            "1": 0.4895457147470539,
+            "2": 0.16928171573161735
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.3123576113330565,
+            "1": 0.4702526562233472,
+            "2": 0.21738973244359627
+          },
+          "actual_energy_over_Delta": 1.6126924069303428,
+          "effective_energy_over_Delta": 1.8100642422210793
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.2888460195444543,
+          "error_over_epsilon": 1.4442300977222715,
+          "actual_event_count_probabilities": {
+            "0": 0.10774701458338273,
+            "1": 0.4949715881747284,
+            "2": 0.39728139724188827
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.0975672773576928,
+            "1": 0.452560908135586,
+            "2": 0.4498718145067211
+          },
+          "actual_energy_over_Delta": 2.5502863840398917,
+          "effective_energy_over_Delta": 2.7046090742980566
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.1901426249138664,
+          "error_over_epsilon": 0.950713124569332,
+          "actual_event_count_probabilities": {
+            "0": 0.034028028078549356,
+            "1": 0.4225392168669939,
+            "2": 0.5434327550544565
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.030475881699718727,
+            "1": 0.38665464487485124,
+            "2": 0.5828694734254299
+          },
+          "actual_energy_over_Delta": 3.0028389595898575,
+          "effective_energy_over_Delta": 3.1047871834514225
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.12607492569932224,
+          "error_over_epsilon": 0.6303746284966112,
+          "actual_event_count_probabilities": {
+            "0": 0.010746531580347322,
+            "1": 0.3631938850110849,
+            "2": 0.6260595834085674
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.009519373610992954,
+            "1": 0.3382244761986513,
+            "2": 0.6522561501903558
+          },
+          "actual_energy_over_Delta": 3.2221102409712357,
+          "effective_energy_over_Delta": 3.285473553158725
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.08723115114035206,
+          "error_over_epsilon": 0.43615575570176024,
+          "actual_event_count_probabilities": {
+            "0": 0.0033939063627434767,
+            "1": 0.3249562591338678,
+            "2": 0.6716498345033883
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.002973448802516691,
+            "1": 0.3084207369261621,
+            "2": 0.6886058142713215
+          },
+          "actual_energy_over_Delta": 3.3319296501336755,
+          "effective_energy_over_Delta": 3.3712647309376105
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.06306275919380581,
+          "error_over_epsilon": 0.31531379596902903,
+          "actual_event_count_probabilities": {
+            "0": 0.0010718435350932439,
+            "1": 0.3018150162075536,
+            "2": 0.6971131402573529
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.000928779365375251,
+            "1": 0.2908987840576287,
+            "2": 0.7081724365769964
+          },
+          "actual_energy_over_Delta": 3.389547250421059,
+          "effective_energy_over_Delta": 3.414487314423243
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.047232241268403835,
+          "error_over_epsilon": 0.23616120634201918,
+          "actual_event_count_probabilities": {
+            "0": 0.0003385033176909766,
+            "1": 0.28798192821817503,
+            "2": 0.7116795684641337
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.00029011130402404554,
+            "1": 0.2807203734859992,
+            "2": 0.718989515209977
+          },
+          "actual_energy_over_Delta": 3.4212347679538255,
+          "effective_energy_over_Delta": 3.437398807811906
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.036335457893996635,
+          "error_over_epsilon": 0.18167728946998316,
+          "actual_event_count_probabilities": {
+            "0": 0.00010690412577599776,
+            "1": 0.27967822915309953,
+            "2": 0.7202148667211237
+          },
+          "effective_event_count_probabilities": {
+            "0": 9.061847394566901e-05,
+            "1": 0.2748210935127149,
+            "2": 0.7250882880133398
+          },
+          "actual_energy_over_Delta": 3.439367106006747,
+          "effective_energy_over_Delta": 3.4499953390787885
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "coherent",
+      "epsilon": 0.1,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 4.654426229508198,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.19458392161176363,
+          "error_over_epsilon": 1.9458392161176363,
+          "actual_event_count_probabilities": {
+            "0": 0.3194129193135761,
+            "1": 0.4767615685299923,
+            "2": 0.20382551215643382
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.3123576113330565,
+            "1": 0.4702526562233472,
+            "2": 0.21738973244359627
+          },
+          "actual_energy_over_Delta": 1.7573963009483669,
+          "effective_energy_over_Delta": 1.8100642422210793
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.12493895635555918,
+          "error_over_epsilon": 1.2493895635555918,
+          "actual_event_count_probabilities": {
+            "0": 0.0999423488692154,
+            "1": 0.46406127649780604,
+            "2": 0.43599637463298224
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.0975672773576928,
+            "1": 0.452560908135586,
+            "2": 0.4498718145067211
+          },
+          "actual_energy_over_Delta": 2.665602498779067,
+          "effective_energy_over_Delta": 2.7046090742980566
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.07555551776189265,
+          "error_over_epsilon": 0.7555551776189264,
+          "actual_event_count_probabilities": {
+            "0": 0.03127134969669152,
+            "1": 0.3954972442180633,
+            "2": 0.5732314060852491
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.030475881699718727,
+            "1": 0.38665464487485124,
+            "2": 0.5828694734254299
+          },
+          "actual_energy_over_Delta": 3.0806343604094333,
+          "effective_energy_over_Delta": 3.1047871834514225
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.047410266507985056,
+          "error_over_epsilon": 0.47410266507985055,
+          "actual_event_count_probabilities": {
+            "0": 0.009784614059175726,
+            "1": 0.34405867269413987,
+            "2": 0.6461567132466898
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.009519373610992954,
+            "1": 0.3382244761986513,
+            "2": 0.6522561501903558
+          },
+          "actual_energy_over_Delta": 3.2710913071874024,
+          "effective_energy_over_Delta": 3.285473553158725
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.031642967876711746,
+          "error_over_epsilon": 0.3164296787671174,
+          "actual_event_count_probabilities": {
+            "0": 0.0030615458947442983,
+            "1": 0.3121887190620619,
+            "2": 0.6847497350432007
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.002973448802516691,
+            "1": 0.3084207369261621,
+            "2": 0.6886058142713215
+          },
+          "actual_energy_over_Delta": 3.362517138999678,
+          "effective_energy_over_Delta": 3.3712647309376105
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.022204324829482827,
+          "error_over_epsilon": 0.22204324829482827,
+          "actual_event_count_probabilities": {
+            "0": 0.0009579389855275764,
+            "1": 0.2933585092793997,
+            "2": 0.7056835517350799
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.000928779365375251,
+            "1": 0.2908987840576287,
+            "2": 0.7081724365769964
+          },
+          "actual_energy_over_Delta": 3.4089867215301304,
+          "effective_energy_over_Delta": 3.414487314423243
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.016168991910408003,
+          "error_over_epsilon": 0.16168991910408,
+          "actual_event_count_probabilities": {
+            "0": 0.0002997332496530303,
+            "1": 0.28234243667657816,
+            "2": 0.717357830073776
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.00029011130402404554,
+            "1": 0.2807203734859992,
+            "2": 0.718989515209977
+          },
+          "actual_energy_over_Delta": 3.4338567700689304,
+          "effective_energy_over_Delta": 3.437398807811906
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.012094812989881716,
+          "error_over_epsilon": 0.12094812989881716,
+          "actual_event_count_probabilities": {
+            "0": 9.378470059665354e-05,
+            "1": 0.27589335436040285,
+            "2": 0.7240128609390084
+          },
+          "effective_event_count_probabilities": {
+            "0": 9.061847394566901e-05,
+            "1": 0.2748210935127149,
+            "2": 0.7250882880133398
+          },
+          "actual_energy_over_Delta": 3.4476899159743595,
+          "effective_energy_over_Delta": 3.4499953390787885
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "coherent",
+      "epsilon": 0.05,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 4.654426229508198,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.0940127680928836,
+          "error_over_epsilon": 1.8802553618576718,
+          "actual_event_count_probabilities": {
+            "0": 0.31410834753753103,
+            "1": 0.4720316921485401,
+            "2": 0.2138599603139281
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.3123576113330565,
+            "1": 0.4702526562233472,
+            "2": 0.21738973244359627
+          },
+          "actual_energy_over_Delta": 1.7966436830336012,
+          "effective_energy_over_Delta": 1.8100642422210793
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.057701701898251335,
+          "error_over_epsilon": 1.1540340379650267,
+          "actual_event_count_probabilities": {
+            "0": 0.09815029428823414,
+            "1": 0.4554804691800427,
+            "2": 0.44636923653172106
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.0975672773576928,
+            "1": 0.452560908135586,
+            "2": 0.4498718145067211
+          },
+          "actual_energy_over_Delta": 2.6948702144493675,
+          "effective_energy_over_Delta": 2.7046090742980566
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.033882665518998906,
+          "error_over_epsilon": 0.6776533103799781,
+          "actual_event_count_probabilities": {
+            "0": 0.030669290849444544,
+            "1": 0.38884329785080807,
+            "2": 0.5804874112997455
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.030475881699718727,
+            "1": 0.38665464487485124,
+            "2": 0.5828694734254299
+          },
+          "actual_energy_over_Delta": 3.098860480743318,
+          "effective_energy_over_Delta": 3.1047871834514225
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.020912214695359914,
+          "error_over_epsilon": 0.41824429390719825,
+          "actual_event_count_probabilities": {
+            "0": 0.009583317177283073,
+            "1": 0.33965272314404643,
+            "2": 0.6507639596786658
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.009519373610992954,
+            "1": 0.3382244761986513,
+            "2": 0.6522561501903558
+          },
+          "actual_energy_over_Delta": 3.2819750642889174,
+          "effective_energy_over_Delta": 3.285473553158725
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.013809867249897308,
+          "error_over_epsilon": 0.2761973449979461,
+          "actual_event_count_probabilities": {
+            "0": 0.0029945253240856186,
+            "1": 0.30933984943701975,
+            "2": 0.6876656252388859
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.002973448802516691,
+            "1": 0.3084207369261621,
+            "2": 0.6886058142713215
+          },
+          "actual_energy_over_Delta": 3.3691425682293286,
+          "effective_energy_over_Delta": 3.3712647309376105
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.009592167042472491,
+          "error_over_epsilon": 0.19184334084944982,
+          "actual_event_count_probabilities": {
+            "0": 0.0009357075165837631,
+            "1": 0.2914979183040489,
+            "2": 0.7075663741793583
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.000928779365375251,
+            "1": 0.2908987840576287,
+            "2": 0.7081724365769964
+          },
+          "actual_energy_over_Delta": 3.4131539668570534,
+          "effective_energy_over_Delta": 3.414487314423243
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.006907557549568402,
+          "error_over_epsilon": 0.13815115099136804,
+          "actual_event_count_probabilities": {
+            "0": 0.0002923830864107662,
+            "1": 0.2811146325711547,
+            "2": 0.7185929843424241
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.00029011130402404554,
+            "1": 0.2807203734859992,
+            "2": 0.718989515209977
+          },
+          "actual_energy_over_Delta": 3.4365416368318327,
+          "effective_energy_over_Delta": 3.437398807811906
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.005104222124271642,
+          "error_over_epsilon": 0.10208444248543283,
+          "actual_event_count_probabilities": {
+            "0": 9.136174253595702e-05,
+            "1": 0.2750807828948774,
+            "2": 0.7248278553625767
+          },
+          "effective_event_count_probabilities": {
+            "0": 9.061847394566901e-05,
+            "1": 0.2748210935127149,
+            "2": 0.7250882880133398
+          },
+          "actual_energy_over_Delta": 3.449439242593257,
+          "effective_energy_over_Delta": 3.4499953390787885
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "coherent",
+      "epsilon": 0.025,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 4.654426229508198,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.046104046597138404,
+          "error_over_epsilon": 1.8441618638855362,
+          "actual_event_count_probabilities": {
+            "0": 0.31279442688365694,
+            "1": 0.47070757900185073,
+            "2": 0.21649799411450166
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.3123576113330565,
+            "1": 0.4702526562233472,
+            "2": 0.21738973244359627
+          },
+          "actual_energy_over_Delta": 1.8066927164861235,
+          "effective_energy_over_Delta": 1.8100642422210793
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.027769718018773266,
+          "error_over_epsilon": 1.1107887207509306,
+          "actual_event_count_probabilities": {
+            "0": 0.09771235994703208,
+            "1": 0.45329324154958955,
+            "2": 0.4489943985034003
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.0975672773576928,
+            "1": 0.452560908135586,
+            "2": 0.4498718145067211
+          },
+          "actual_energy_over_Delta": 2.702176039609544,
+          "effective_energy_over_Delta": 2.7046090742980566
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.016130958130443535,
+          "error_over_epsilon": 0.6452383252177414,
+          "actual_event_count_probabilities": {
+            "0": 0.030523898336493032,
+            "1": 0.38720020341910727,
+            "2": 0.5822758982444288
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.030475881699718727,
+            "1": 0.38665464487485124,
+            "2": 0.5828694734254299
+          },
+          "actual_energy_over_Delta": 3.1033128925858313,
+          "effective_energy_over_Delta": 3.1047871834514225
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.009905978939400277,
+          "error_over_epsilon": 0.3962391575760111,
+          "actual_event_count_probabilities": {
+            "0": 0.009535215096243955,
+            "1": 0.33857960000307086,
+            "2": 0.6518851849007268
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.009519373610992954,
+            "1": 0.3382244761986513,
+            "2": 0.6522561501903558
+          },
+          "actual_energy_over_Delta": 3.284605011355801,
+          "effective_energy_over_Delta": 3.285473553158725
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.006525254349274881,
+          "error_over_epsilon": 0.26101017397099524,
+          "actual_event_count_probabilities": {
+            "0": 0.002978660390273226,
+            "1": 0.3086491035234351,
+            "2": 0.6883722360863432
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.002973448802516691,
+            "1": 0.3084207369261621,
+            "2": 0.6886058142713215
+          },
+          "actual_energy_over_Delta": 3.370738148158236,
+          "effective_energy_over_Delta": 3.3712647309376105
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.004522633108262629,
+          "error_over_epsilon": 0.18090532433050513,
+          "actual_event_count_probabilities": {
+            "0": 0.0009304895202707702,
+            "1": 0.29104760125843876,
+            "2": 0.7080219092213534
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.000928779365375251,
+            "1": 0.2908987840576287,
+            "2": 0.7081724365769964
+          },
+          "actual_energy_over_Delta": 3.414156519605391,
+          "effective_energy_over_Delta": 3.414487314423243
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.0032491073759548473,
+          "error_over_epsilon": 0.12996429503819387,
+          "actual_event_count_probabilities": {
+            "0": 0.0002906711856648798,
+            "1": 0.2808182466928217,
+            "2": 0.7188910821215888
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.00029011130402404554,
+            "1": 0.2807203734859992,
+            "2": 0.718989515209977
+          },
+          "actual_energy_over_Delta": 3.4371862463501746,
+          "effective_energy_over_Delta": 3.437398807811906
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.002394762842132557,
+          "error_over_epsilon": 0.09579051368530228,
+          "actual_event_count_probabilities": {
+            "0": 9.080138608250062e-05,
+            "1": 0.27488549856092853,
+            "2": 0.725023700053077
+          },
+          "effective_event_count_probabilities": {
+            "0": 9.061847394566901e-05,
+            "1": 0.2748210935127149,
+            "2": 0.7250882880133398
+          },
+          "actual_energy_over_Delta": 3.4498575592254044,
+          "effective_energy_over_Delta": 3.4499953390787885
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "resolved",
+      "epsilon": 0.2,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 4.654426229508197,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.3713639532942175,
+          "error_over_epsilon": 1.8568197664710875,
+          "actual_event_count_probabilities": {
+            "0": 0.3411725695213282,
+            "1": 0.4915716034797355,
+            "2": 0.16725582699893604
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.3123576113330565,
+            "1": 0.47181434618287005,
+            "2": 0.21582804248407345
+          },
+          "actual_energy_over_Delta": 1.6091106069751882,
+          "effective_energy_over_Delta": 1.8069408623020342
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.24327112755268343,
+          "error_over_epsilon": 1.216355637763417,
+          "actual_event_count_probabilities": {
+            "0": 0.10774701458338282,
+            "1": 0.5058177212945371,
+            "2": 0.38643526412208007
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.09756727735769279,
+            "1": 0.46327596697116746,
+            "2": 0.4391567556711397
+          },
+          "actual_energy_over_Delta": 2.5297720417350145,
+          "effective_energy_over_Delta": 2.683178956626894
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.1467228346210636,
+          "error_over_epsilon": 0.7336141731053181,
+          "actual_event_count_probabilities": {
+            "0": 0.0340280280785494,
+            "1": 0.445691441369066,
+            "2": 0.5202805305523847
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.030475881699718727,
+            "1": 0.4114591568283071,
+            "2": 0.558064961471974
+          },
+          "actual_energy_over_Delta": 2.9579704286045896,
+          "effective_energy_over_Delta": 3.0551781595445107
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.08781011807772574,
+          "error_over_epsilon": 0.43905059038862865,
+          "actual_event_count_probabilities": {
+            "0": 0.010746531580347335,
+            "1": 0.3983418449885717,
+            "2": 0.5909116234310815
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.009519373610992954,
+            "1": 0.3764693182533586,
+            "2": 0.6140113081356484
+          },
+          "actual_energy_over_Delta": 3.153131381162063,
+          "effective_energy_over_Delta": 3.208983869049311
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.05478509795443729,
+          "error_over_epsilon": 0.27392548977218645,
+          "actual_event_count_probabilities": {
+            "0": 0.003393906362743482,
+            "1": 0.3699229701510858,
+            "2": 0.6266831234861718
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.002973448802516691,
+            "1": 0.3569445120534404,
+            "2": 0.6400820391440426
+          },
+          "actual_energy_over_Delta": 3.243038234550981,
+          "effective_energy_over_Delta": 3.2742171806830513
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.03635182690202716,
+          "error_over_epsilon": 0.18175913451013578,
+          "actual_event_count_probabilities": {
+            "0": 0.001071843535093246,
+            "1": 0.354050448696062,
+            "2": 0.6448777077688459
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.0009287793653752512,
+            "1": 0.3464157287223977,
+            "2": 0.652655491912227
+          },
+          "actual_energy_over_Delta": 3.285831970310767,
+          "effective_energy_over_Delta": 3.303453425093704
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.02563048654457282,
+          "error_over_epsilon": 0.12815243272286408,
+          "actual_event_count_probabilities": {
+            "0": 0.00033850331769097746,
+            "1": 0.3452742317520184,
+            "2": 0.6543872649302922
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.00029011130402404565,
+            "1": 0.3406909506280784,
+            "2": 0.6590189380678975
+          },
+          "actual_energy_over_Delta": 3.307168940954008,
+          "effective_energy_over_Delta": 3.3174576535277467
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.018988314616860732,
+          "error_over_epsilon": 0.09494157308430365,
+          "actual_event_count_probabilities": {
+            "0": 0.00010690412577599802,
+            "1": 0.3403511090159265,
+            "2": 0.6595419868582993
+          },
+          "effective_event_count_probabilities": {
+            "0": 9.06184739456691e-05,
+            "1": 0.3375213112257799,
+            "2": 0.6623880703002745
+          },
+          "actual_energy_over_Delta": 3.318365193363734,
+          "effective_energy_over_Delta": 3.3245949036526574
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "resolved",
+      "epsilon": 0.1,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 4.654426229508197,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.17662277605353455,
+          "error_over_epsilon": 1.7662277605353454,
+          "actual_event_count_probabilities": {
+            "0": 0.31941291931357546,
+            "1": 0.47853653793056217,
+            "2": 0.20205054275586198
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.3123576113330565,
+            "1": 0.47181434618287005,
+            "2": 0.21582804248407345
+          },
+          "actual_energy_over_Delta": 1.753978522216987,
+          "effective_energy_over_Delta": 1.8069408623020342
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.10329771727729549,
+          "error_over_epsilon": 1.0329771727729549,
+          "actual_event_count_probabilities": {
+            "0": 0.09994234886921496,
+            "1": 0.4748430556431586,
+            "2": 0.4252145954876255
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.09756727735769279,
+            "1": 0.46327596697116746,
+            "2": 0.4391567556711397
+          },
+          "actual_energy_over_Delta": 2.6443799640026766,
+          "effective_energy_over_Delta": 2.683178956626894
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.05596464152091147,
+          "error_over_epsilon": 0.5596464152091146,
+          "actual_event_count_probabilities": {
+            "0": 0.031271349696691354,
+            "1": 0.41979577934309936,
+            "2": 0.5489328709602088
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.030475881699718727,
+            "1": 0.4114591568283071,
+            "2": 0.558064961471974
+          },
+          "actual_energy_over_Delta": 3.032435861189693,
+          "effective_energy_over_Delta": 3.0551781595445107
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.031144093639399056,
+          "error_over_epsilon": 0.31144093639399056,
+          "actual_event_count_probabilities": {
+            "0": 0.009784614059175656,
+            "1": 0.38140220614251985,
+            "2": 0.6088131797983037
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.009519373610992954,
+            "1": 0.3764693182533586,
+            "2": 0.6140113081356484
+          },
+          "actual_energy_over_Delta": 3.1967460394829406,
+          "effective_energy_over_Delta": 3.208983869049311
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.01870919295628372,
+          "error_over_epsilon": 0.18709192956283718,
+          "actual_event_count_probabilities": {
+            "0": 0.003061545894744269,
+            "1": 0.35973480704175664,
+            "2": 0.6372036470634985
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.002973448802516691,
+            "1": 0.3569445120534404,
+            "2": 0.6400820391440426
+          },
+          "actual_energy_over_Delta": 3.2676756792726915,
+          "effective_energy_over_Delta": 3.2742171806830513
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.012190838358962874,
+          "error_over_epsilon": 0.12190838358962873,
+          "actual_event_count_probabilities": {
+            "0": 0.0009579389855275662,
+            "1": 0.348020752137058,
+            "2": 0.651021308877414
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.0009287793653752512,
+            "1": 0.3464157287223977,
+            "2": 0.652655491912227
+          },
+          "actual_energy_over_Delta": 3.2998307130490967,
+          "effective_energy_over_Delta": 3.303453425093704
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.008487129700717544,
+          "error_over_epsilon": 0.08487129700717544,
+          "actual_event_count_probabilities": {
+            "0": 0.00029973324965302633,
+            "1": 0.3416488612777926,
+            "2": 0.6580514054725548
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.00029011130402404565,
+            "1": 0.3406909506280784,
+            "2": 0.6590189380678975
+          },
+          "actual_energy_over_Delta": 3.315351447864219,
+          "effective_energy_over_Delta": 3.3174576535277467
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.006193604109998004,
+          "error_over_epsilon": 0.061936041099980035,
+          "actual_event_count_probabilities": {
+            "0": 9.378470059665203e-05,
+            "1": 0.33811268812497963,
+            "2": 0.661793527174424
+          },
+          "effective_event_count_probabilities": {
+            "0": 9.06184739456691e-05,
+            "1": 0.3375213112257799,
+            "2": 0.6623880703002745
+          },
+          "actual_energy_over_Delta": 3.3233177873754602,
+          "effective_energy_over_Delta": 3.3245949036526574
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "resolved",
+      "epsilon": 0.05,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 4.654426229508197,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.08485833235965996,
+          "error_over_epsilon": 1.6971666471931992,
+          "actual_event_count_probabilities": {
+            "0": 0.3141083475375306,
+            "1": 0.4736554758579431,
+            "2": 0.21223617660452404
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.3123576113330565,
+            "1": 0.47181434618287005,
+            "2": 0.21582804248407345
+          },
+          "actual_energy_over_Delta": 1.7934304651156652,
+          "effective_energy_over_Delta": 1.8069408623020342
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.04703072543932494,
+          "error_over_epsilon": 0.9406145087864988,
+          "actual_event_count_probabilities": {
+            "0": 0.09815029428823373,
+            "1": 0.46621410927623863,
+            "2": 0.4356355964355214
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.09756727735769279,
+            "1": 0.46327596697116746,
+            "2": 0.4391567556711397
+          },
+          "actual_energy_over_Delta": 2.67349217902655,
+          "effective_energy_over_Delta": 2.683178956626894
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.024464637956323233,
+          "error_over_epsilon": 0.48929275912646464,
+          "actual_event_count_probabilities": {
+            "0": 0.030669290849444378,
+            "1": 0.41351299123073715,
+            "2": 0.5558177179198103
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.030475881699718727,
+            "1": 0.4114591568283071,
+            "2": 0.558064961471974
+          },
+          "actual_energy_over_Delta": 3.0496235074777,
+          "effective_energy_over_Delta": 3.0551781595445107
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.01331569752729696,
+          "error_over_epsilon": 0.26631395054593915,
+          "actual_event_count_probabilities": {
+            "0": 0.00958331717728305,
+            "1": 0.3776627343148911,
+            "2": 0.6127539485078137
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.009519373610992954,
+            "1": 0.3764693182533586,
+            "2": 0.6140113081356484
+          },
+          "actual_energy_over_Delta": 3.206040843235617,
+          "effective_energy_over_Delta": 3.208983869049311
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.007940583865480287,
+          "error_over_epsilon": 0.15881167730960574,
+          "actual_event_count_probabilities": {
+            "0": 0.002994525324085607,
+            "1": 0.35761368632525015,
+            "2": 0.6393917883506481
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.002973448802516691,
+            "1": 0.3569445120534404,
+            "2": 0.6400820391440426
+          },
+          "actual_energy_over_Delta": 3.2726563867785097,
+          "effective_energy_over_Delta": 3.2742171806830513
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.005164411742070896,
+          "error_over_epsilon": 0.10328823484141791,
+          "actual_event_count_probabilities": {
+            "0": 0.000935707516583757,
+            "1": 0.3467998319279123,
+            "2": 0.652264460555483
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.0009287793653752512,
+            "1": 0.3464157287223977,
+            "2": 0.652655491912227
+          },
+          "actual_energy_over_Delta": 3.3025905795452006,
+          "effective_energy_over_Delta": 3.303453425093704
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.0035841841650573283,
+          "error_over_epsilon": 0.07168368330114656,
+          "actual_event_count_probabilities": {
+            "0": 0.00029238308641076457,
+            "1": 0.34092036101822193,
+            "2": 0.6587872558953397
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.00029011130402404565,
+            "1": 0.3406909506280784,
+            "2": 0.6590189380678975
+          },
+          "actual_energy_over_Delta": 3.316955488971435,
+          "effective_energy_over_Delta": 3.3174576535277467
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.0025978374809174226,
+          "error_over_epsilon": 0.05195674961834845,
+          "actual_event_count_probabilities": {
+            "0": 9.136174253595638e-05,
+            "1": 0.33766300972628194,
+            "2": 0.6622456285311485
+          },
+          "effective_event_count_probabilities": {
+            "0": 9.06184739456691e-05,
+            "1": 0.3375213112257799,
+            "2": 0.6623880703002745
+          },
+          "actual_energy_over_Delta": 3.3242901744870728,
+          "effective_energy_over_Delta": 3.3245949036526574
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "resolved",
+      "epsilon": 0.025,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "initial_effective_birth_rate": 4.654426229508197,
+      "rows": [
+        {
+          "time": 0.0,
+          "trace_norm_error": 0.0,
+          "error_over_epsilon": 0.0,
+          "actual_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "effective_event_count_probabilities": {
+            "0": 1.0,
+            "1": 0.0,
+            "2": 0.0
+          },
+          "actual_energy_over_Delta": 0.0,
+          "effective_energy_over_Delta": 0.0
+        },
+        {
+          "time": 0.25,
+          "trace_norm_error": 0.04146856251739192,
+          "error_over_epsilon": 1.6587425006956769,
+          "actual_event_count_probabilities": {
+            "0": 0.3127944268836524,
+            "1": 0.47228539742733444,
+            "2": 0.21492017568900745
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.3123576113330565,
+            "1": 0.47181434618287005,
+            "2": 0.21582804248407345
+          },
+          "actual_energy_over_Delta": 1.803545755394083,
+          "effective_energy_over_Delta": 1.8069408623020342
+        },
+        {
+          "time": 0.5,
+          "trace_norm_error": 0.02244861765374995,
+          "error_over_epsilon": 0.897944706149998,
+          "actual_event_count_probabilities": {
+            "0": 0.09771235994702877,
+            "1": 0.46401305043222874,
+            "2": 0.4382745896207284
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.09756727735769279,
+            "1": 0.46327596697116746,
+            "2": 0.4391567556711397
+          },
+          "actual_energy_over_Delta": 2.680759005476187,
+          "effective_energy_over_Delta": 2.683178956626894
+        },
+        {
+          "time": 0.75,
+          "trace_norm_error": 0.011490104525053627,
+          "error_over_epsilon": 0.45960418100214506,
+          "actual_event_count_probabilities": {
+            "0": 0.030523898336491495,
+            "1": 0.4119704368004085,
+            "2": 0.557505664863082
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.030475881699718727,
+            "1": 0.4114591568283071,
+            "2": 0.558064961471974
+          },
+          "actual_energy_over_Delta": 3.053798204188236,
+          "effective_energy_over_Delta": 3.0551781595445107
+        },
+        {
+          "time": 1.0,
+          "trace_norm_error": 0.006208598767582715,
+          "error_over_epsilon": 0.2483439507033086,
+          "actual_event_count_probabilities": {
+            "0": 0.009535215096243277,
+            "1": 0.376765116506749,
+            "2": 0.6136996683969795
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.009519373610992954,
+            "1": 0.3764693182533586,
+            "2": 0.6140113081356484
+          },
+          "actual_energy_over_Delta": 3.208255439486086,
+          "effective_energy_over_Delta": 3.208983869049311
+        },
+        {
+          "time": 1.25,
+          "trace_norm_error": 0.003700680591499499,
+          "error_over_epsilon": 0.14802722365997995,
+          "actual_event_count_probabilities": {
+            "0": 0.002978660390272951,
+            "1": 0.35711005625362713,
+            "2": 0.6399112833560648
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.002973448802516691,
+            "1": 0.3569445120534404,
+            "2": 0.6400820391440426
+          },
+          "actual_energy_over_Delta": 3.2738315306867833,
+          "effective_energy_over_Delta": 3.2742171806830513
+        },
+        {
+          "time": 1.5,
+          "trace_norm_error": 0.002411909369824462,
+          "error_over_epsilon": 0.09647637479297848,
+          "actual_event_count_probabilities": {
+            "0": 0.0009304895202706651,
+            "1": 0.3465107208818916,
+            "2": 0.6525587895977956
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.0009287793653752512,
+            "1": 0.3464157287223977,
+            "2": 0.652655491912227
+          },
+          "actual_energy_over_Delta": 3.3032402792418494,
+          "effective_energy_over_Delta": 3.303453425093704
+        },
+        {
+          "time": 1.75,
+          "trace_norm_error": 0.0016766840215589056,
+          "error_over_epsilon": 0.06706736086235622,
+          "actual_event_count_probabilities": {
+            "0": 0.000290671185664839,
+            "1": 0.3407477011290738,
+            "2": 0.6589616276852074
+          },
+          "effective_event_count_probabilities": {
+            "0": 0.00029011130402404565,
+            "1": 0.3406909506280784,
+            "2": 0.6590189380678975
+          },
+          "actual_energy_over_Delta": 3.3173335644500845,
+          "effective_energy_over_Delta": 3.3174576535277467
+        },
+        {
+          "time": 2.0,
+          "trace_norm_error": 0.0012154613900759983,
+          "error_over_epsilon": 0.04861845560303993,
+          "actual_event_count_probabilities": {
+            "0": 9.080138608248582e-05,
+            "1": 0.33755636720395327,
+            "2": 0.6623528314098958
+          },
+          "effective_event_count_probabilities": {
+            "0": 9.06184739456691e-05,
+            "1": 0.3375213112257799,
+            "2": 0.6623880703002745
+          },
+          "actual_energy_over_Delta": 3.3245195906031446,
+          "effective_energy_over_Delta": 3.3245949036526574
+        }
+      ]
+    }
+  ],
+  "scope": "Complete finite gauge-constrained tree sectors. Exact rational embedding identities on two small models; full sparse Liouville evolutions for repeated births. No thermodynamic or photon claim."
+}
+
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

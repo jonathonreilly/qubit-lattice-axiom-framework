@@ -1,0 +1,396 @@
+===== runner cache v1 =====
+runner: scripts/fast_vacancy_motion_after_formation_2026_09_24.py
+runner_sha256: b385b58830208f7174e4923ec32a45898b6fe3e8264a9d2230d68086015262a0
+input_fingerprint_sha256: 64427d78e730499a60e8df96e647390fc53e59411a2c54d00a9d59e0fc9d0c39
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+Evidence boundary: supplied models; finite controls do not establish native physics, limit interchange or audit status.
+[PASS] component post_birth_fast_ring_check.py; stdout sha256=3fbe6f415a206274da71df6b2e01af68488451c5215f381d12fdb8cbf0f54e0f
+RESULT POST_BIRTH_FAST_RING_RESULTS.json
+{
+  "model": "six-site unit-rotor ring Fourier fibers, one vacancy, one minus record and four plus records",
+  "source_sha256": "1bbe5f601de709e268aa485b7d1213925e80ddd4742be7e79f3c380b4bee35ef",
+  "P_dimension": 15,
+  "Q1_dimension": 15,
+  "exact_graph_certificate": {
+    "cycle_length": 15,
+    "two_hop_diagonal": -2,
+    "off_diagonal_magnitude": 1,
+    "ordered_charge_words": [
+      [
+        1,
+        -1,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        -1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "vacancy_positions": [
+      3,
+      5,
+      1,
+      3,
+      5,
+      1,
+      3,
+      5,
+      1,
+      3,
+      5,
+      1,
+      3,
+      5,
+      1
+    ],
+    "oriented_flux_increment_after_one_cycle": 3,
+    "conclusion": "The fixed integer-flux initial state belongs to an infinite path component: one full 15-step matter circuit changes the integer flux by three. Vacancy position repeats every three path steps."
+  },
+  "initial_resolved_birth_output": [
+    1,
+    -1,
+    1,
+    0,
+    1,
+    1
+  ],
+  "spectra": [
+    {
+      "theta": 0,
+      "eigenvalues": [
+        -3.9999999999999996,
+        -3.827090915285202,
+        -3.827090915285201,
+        -3.338261212717717,
+        -3.338261212717714,
+        -2.6180339887498953,
+        -2.618033988749895,
+        -1.790943073464693,
+        -1.790943073464693,
+        -1.0000000000000002,
+        -0.9999999999999997,
+        -0.38196601125010526,
+        -0.38196601125010465,
+        -0.04370479853239014,
+        -0.043704798532388206
+      ],
+      "formula_error": 2.6645352591003757e-15,
+      "post_mark_commutator_frobenius": 2.0
+    },
+    {
+      "theta": 0.4487989505128276,
+      "eigenvalues": [
+        -3.9919485879904784,
+        -3.8926547675983287,
+        -3.746816401234258,
+        -3.4661037436596516,
+        -3.1996437893758274,
+        -2.786050063307847,
+        -2.4450418679126287,
+        -1.9700811859694736,
+        -1.613488164408894,
+        -1.159285543380869,
+        -0.8487658686286526,
+        -0.4938570679927781,
+        -0.2831024127962674,
+        -0.08885438842771753,
+        -0.014306147316324805
+      ],
+      "formula_error": 2.4424906541753444e-15,
+      "post_mark_commutator_frobenius": 2.0
+    },
+    {
+      "theta": 1.5707963267948966,
+      "eigenvalues": [
+        -3.989043790736547,
+        -3.902113032590308,
+        -3.732050807568877,
+        -3.48628965095479,
+        -3.1755705045849463,
+        -2.8134732861516,
+        -2.4158233816355215,
+        -1.9999999999999991,
+        -1.5841766183644812,
+        -1.1865267138483993,
+        -0.824429495415054,
+        -0.5137103490452112,
+        -0.2679491924311228,
+        -0.09788696740969331,
+        -0.010956209263453833
+      ],
+      "formula_error": 4.440892098500626e-15,
+      "post_mark_commutator_frobenius": 2.0
+    },
+    {
+      "theta": 3.141592653589793,
+      "eigenvalues": [
+        -3.95629520146761,
+        -3.95629520146761,
+        -3.6180339887498953,
+        -3.6180339887498945,
+        -3.0000000000000004,
+        -2.999999999999999,
+        -2.209056926535308,
+        -2.209056926535307,
+        -1.3819660112501067,
+        -1.3819660112501055,
+        -0.6617387872822841,
+        -0.6617387872822837,
+        -0.1729090847147985,
+        -0.1729090847147984,
+        9.238059329158746e-17
+      ],
+      "formula_error": 1.3322676295501878e-15,
+      "post_mark_commutator_frobenius": 2.0
+    }
+  ],
+  "controls": [
+    {
+      "grid": 64,
+      "fast_time": 0,
+      "vacancy_still_at_B3": 1.0,
+      "bessel_prediction": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "grid": 64,
+      "fast_time": 0.125,
+      "vacancy_still_at_B3": 0.969114309166339,
+      "bessel_prediction": 0.9691143091663387,
+      "absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "grid": 64,
+      "fast_time": 0.25,
+      "vacancy_still_at_B3": 0.8807387245258052,
+      "bessel_prediction": 0.8807387245258047,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "grid": 64,
+      "fast_time": 0.5,
+      "vacancy_still_at_B3": 0.586292950028595,
+      "bessel_prediction": 0.5862929500285945,
+      "absolute_error": 5.551115123125783e-16
+    },
+    {
+      "grid": 64,
+      "fast_time": 1,
+      "vacancy_still_at_B3": 0.0833826958377939,
+      "bessel_prediction": 0.08338269583779327,
+      "absolute_error": 6.245004513516506e-16
+    },
+    {
+      "grid": 64,
+      "fast_time": 2,
+      "vacancy_still_at_B3": 0.5326439074424043,
+      "bessel_prediction": 0.532643907442403,
+      "absolute_error": 1.3322676295501878e-15
+    },
+    {
+      "grid": 128,
+      "fast_time": 0,
+      "vacancy_still_at_B3": 0.9999999999999999,
+      "bessel_prediction": 1.0,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "grid": 128,
+      "fast_time": 0.125,
+      "vacancy_still_at_B3": 0.9691143091663396,
+      "bessel_prediction": 0.9691143091663387,
+      "absolute_error": 8.881784197001252e-16
+    },
+    {
+      "grid": 128,
+      "fast_time": 0.25,
+      "vacancy_still_at_B3": 0.880738724525804,
+      "bessel_prediction": 0.8807387245258047,
+      "absolute_error": 6.661338147750939e-16
+    },
+    {
+      "grid": 128,
+      "fast_time": 0.5,
+      "vacancy_still_at_B3": 0.5862929500285943,
+      "bessel_prediction": 0.5862929500285945,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "grid": 128,
+      "fast_time": 1,
+      "vacancy_still_at_B3": 0.08338269583779374,
+      "bessel_prediction": 0.08338269583779327,
+      "absolute_error": 4.718447854656915e-16
+    },
+    {
+      "grid": 128,
+      "fast_time": 2,
+      "vacancy_still_at_B3": 0.5326439074424043,
+      "bessel_prediction": 0.532643907442403,
+      "absolute_error": 1.3322676295501878e-15
+    },
+    {
+      "grid": 256,
+      "fast_time": 0,
+      "vacancy_still_at_B3": 0.9999999999999998,
+      "bessel_prediction": 1.0,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "grid": 256,
+      "fast_time": 0.125,
+      "vacancy_still_at_B3": 0.9691143091663416,
+      "bessel_prediction": 0.9691143091663387,
+      "absolute_error": 2.886579864025407e-15
+    },
+    {
+      "grid": 256,
+      "fast_time": 0.25,
+      "vacancy_still_at_B3": 0.8807387245258022,
+      "bessel_prediction": 0.8807387245258047,
+      "absolute_error": 2.55351295663786e-15
+    },
+    {
+      "grid": 256,
+      "fast_time": 0.5,
+      "vacancy_still_at_B3": 0.5862929500285936,
+      "bessel_prediction": 0.5862929500285945,
+      "absolute_error": 8.881784197001252e-16
+    },
+    {
+      "grid": 256,
+      "fast_time": 1,
+      "vacancy_still_at_B3": 0.0833826958377938,
+      "bessel_prediction": 0.08338269583779327,
+      "absolute_error": 5.273559366969494e-16
+    },
+    {
+      "grid": 256,
+      "fast_time": 2,
+      "vacancy_still_at_B3": 0.5326439074424049,
+      "bessel_prediction": 0.532643907442403,
+      "absolute_error": 1.887379141862766e-15
+    }
+  ],
+  "interpretation": "Supplied-model author probe only. The initial state is normalizable at one electric flux; Fourier integration computes its matter probability. No full-time field or repeated-birth theorem is inferred."
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

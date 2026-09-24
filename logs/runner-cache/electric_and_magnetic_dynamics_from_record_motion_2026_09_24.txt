@@ -1,0 +1,488 @@
+===== runner cache v1 =====
+runner: scripts/electric_and_magnetic_dynamics_from_record_motion_2026_09_24.py
+runner_sha256: 44c148af932eff336bf68888371474a88fd7d23d26fc0f7602ad347a6f59b032
+input_fingerprint_sha256: 586ded151fd8c962b2f0fbf7fdf49f3b6d537ab4f108c2c7ebc0f5634b643ebd
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 1.13
+status: ok
+----- stdout -----
+Evidence boundary: supplied models; finite controls do not establish native physics, limit interchange or audit status.
+[PASS] component large_spin_record_electric_ring_check.py; stdout sha256=7a76768d5a9bc45215cf2554ab80df380e909cd54e9691f25d706b50a9583158
+[PASS] component large_spin_live_birth_and_weight_check.py; stdout sha256=384ff80c712630f354c1a517d65cb3b540122ec657439bafc97b3d663afa1913
+RESULT LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT_RESULTS.json
+{
+  "status": "PASS",
+  "source_sha256": "ca21c2764fe7b6cb1d70d9b1487edce0592d4c1fc1834880f893f6eeee03613c",
+  "complete_live_sectors": [
+    {
+      "spin": 1,
+      "complete_physical_dimension": 19,
+      "code_dimension": 3,
+      "star_equals_onsite_charge_projectors": true,
+      "hopping_changes_either_penalty_by_one": true,
+      "record_count_and_birth_annihilation_exact": true,
+      "resolved_and_coherent_loss_exact": "2 Pvac (1-E^2/C)",
+      "largest_local_loss_eigenvalue_exact": "2"
+    },
+    {
+      "spin": 2,
+      "complete_physical_dimension": 39,
+      "code_dimension": 5,
+      "star_equals_onsite_charge_projectors": true,
+      "hopping_changes_either_penalty_by_one": true,
+      "record_count_and_birth_annihilation_exact": true,
+      "resolved_and_coherent_loss_exact": "2 Pvac (1-E^2/C)",
+      "largest_local_loss_eigenvalue_exact": "2"
+    },
+    {
+      "spin": 3,
+      "complete_physical_dimension": 59,
+      "code_dimension": 7,
+      "star_equals_onsite_charge_projectors": true,
+      "hopping_changes_either_penalty_by_one": true,
+      "record_count_and_birth_annihilation_exact": true,
+      "resolved_and_coherent_loss_exact": "2 Pvac (1-E^2/C)",
+      "largest_local_loss_eigenvalue_exact": "2"
+    }
+  ],
+  "weighted_shift_and_moment_controls": {
+    "exact_shift_inequality_rows": 7440,
+    "sampled_spins": 40,
+    "largest_exact_adjacent_w_ratio_in_screen": "25/4",
+    "all_real_quadratic_certificate": "3(1+x^2)-(1+(x+1)^2)=2(x-1/2)^2+1/2",
+    "proof_scope": "The displayed polynomial and cutoff case proof give the universal bounds; the finite screen is a control."
+  },
+  "limits": "Exact finite-sector and scalar inequalities; does not validate a many-volume normal form or phase."
+}
+
+RESULT LARGE_SPIN_RECORD_ELECTRIC_RING_RESULTS.json
+{
+  "status": "PASS",
+  "exact_square_coefficients": [
+    {
+      "spin": "1/2",
+      "dimension": 7,
+      "low_dimension": 2,
+      "low_fluxes": [
+        "-1/2",
+        "1/2"
+      ],
+      "second_coefficient": [
+        [
+          "-8/3",
+          "0"
+        ],
+        [
+          "0",
+          "-8/3"
+        ]
+      ],
+      "fourth_coefficient": [
+        [
+          "32/9",
+          "-32/9"
+        ],
+        [
+          "-32/9",
+          "32/9"
+        ]
+      ],
+      "second_electric_and_fourth_weighted_formula_exact": true
+    },
+    {
+      "spin": "1",
+      "dimension": 13,
+      "low_dimension": 3,
+      "low_fluxes": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "second_coefficient": [
+        [
+          "-2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2"
+        ]
+      ],
+      "fourth_coefficient": [
+        [
+          "2",
+          "-2",
+          "0"
+        ],
+        [
+          "-2",
+          "12",
+          "-2"
+        ],
+        [
+          "0",
+          "-2",
+          "2"
+        ]
+      ],
+      "second_electric_and_fourth_weighted_formula_exact": true
+    },
+    {
+      "spin": "2",
+      "dimension": 25,
+      "low_dimension": 5,
+      "low_fluxes": [
+        "-2",
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "second_coefficient": [
+        [
+          "-4/3",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-10/3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-4",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-10/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-4/3"
+        ]
+      ],
+      "fourth_coefficient": [
+        [
+          "8/9",
+          "-8/9",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-8/9",
+          "74/9",
+          "-2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-2",
+          "12",
+          "-2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2",
+          "74/9",
+          "-8/9"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-8/9",
+          "8/9"
+        ]
+      ],
+      "second_electric_and_fourth_weighted_formula_exact": true
+    },
+    {
+      "spin": "3",
+      "dimension": 37,
+      "low_dimension": 7,
+      "low_fluxes": [
+        "-3",
+        "-2",
+        "-1",
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "second_coefficient": [
+        [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-8/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-11/3",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-11/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-8/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "fourth_coefficient": [
+        [
+          "1/2",
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1/2",
+          "47/9",
+          "-25/18",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-25/18",
+          "181/18",
+          "-2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2",
+          "12",
+          "-2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-2",
+          "181/18",
+          "-25/18",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-25/18",
+          "47/9",
+          "-1/2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/2",
+          "1/2"
+        ]
+      ],
+      "second_electric_and_fourth_weighted_formula_exact": true
+    }
+  ],
+  "cubic_weighted_count": {
+    "rotor_fourth_scalar": "d V (4d-1)",
+    "finite_spin_second": "-d V + sum_e E_e^2 / C in the ice sector",
+    "finite_spin_fourth_diagonal": "sum_e F_e^2 + 2 sum_(unordered adjacent edges e,f) F_e F_f",
+    "F_e": "1-(E_e^2-sigma_e E_e)/C, sigma_e=+1 for stored A-to-B orientation",
+    "fourth_electric_correction_after_multiplying_J_over2": "-J(4d-1) sum_e E_e^2 / C",
+    "linear_flux_sum": "sum_e sigma_e E_e = sum_(A vertices) div E = 0"
+  },
+  "joint_scaling": {
+    "rotor_cutoff_comparison_error": 4.9404924595819466e-14,
+    "rotor_lowest_six_energies": [
+      -0.9917902570646856,
+      0.9343084882916391,
+      1.8963274132637107,
+      4.898857265988479,
+      4.928573770537735,
+      10.847751398942325
+    ],
+    "rows": [
+      {
+        "spin": 16,
+        "dimension": 193,
+        "electric_K": 0.3,
+        "magnetic_J": 1.0,
+        "Delta": 13317.119999999999,
+        "hopping_t": 1042.4380039119833,
+        "epsilon": 0.07827803638564369,
+        "removed_scalar": -320.4,
+        "lowest_six_shifted_microscopic_energies": [
+          -1.1402788796147427,
+          0.6929384456239115,
+          1.5764349942567608,
+          4.497139382005276,
+          4.5214840839260475,
+          10.246243446850249
+        ],
+        "largest_six_energy_error_against_rotor": 0.6015079520920761,
+        "error_divided_by_epsilon_squared": 98.1660977814268,
+        "eigenpair_absolute_residual": 1.733171040683021e-11,
+        "ground_code_weight": 0.9766206845226656
+      },
+      {
+        "spin": 32,
+        "dimension": 385,
+        "electric_K": 0.3,
+        "magnetic_J": 1.0,
+        "Delta": 200724.48,
+        "hopping_t": 7974.303434407297,
+        "epsilon": 0.03972760788523301,
+        "removed_scalar": -1261.2,
+        "lowest_six_shifted_microscopic_energies": [
+          -1.031120942188993,
+          0.8699772386023485,
+          1.8106119031797587,
+          4.791040777975038,
+          4.819227946771864,
+          10.685375509771585
+        ],
+        "largest_six_energy_error_against_rotor": 0.16237588917073964,
+        "error_divided_by_epsilon_squared": 102.88136337858066,
+        "eigenpair_absolute_residual": 4.729091142593948e-10,
+        "ground_code_weight": 0.9937648060061169
+      },
+      {
+        "spin": 64,
+        "dimension": 769,
+        "electric_K": 0.3,
+        "magnetic_J": 1.0,
+        "Delta": 3115008.0,
+        "hopping_t": 62350.06001600961,
+        "epsilon": 0.02001601922563589,
+        "removed_scalar": -4986.0,
+        "lowest_six_shifted_microscopic_energies": [
+          -1.0018483087669932,
+          0.9178292151571437,
+          1.8743382920691278,
+          4.871185714045037,
+          4.900503338188207,
+          10.80601105912518
+        ],
+        "largest_six_energy_error_against_rotor": 0.041740339817145866,
+        "error_divided_by_epsilon_squared": 104.18388818359608,
+        "eigenpair_absolute_residual": 7.95464339292872e-09,
+        "ground_code_weight": 0.9984025095213755
+      },
+      {
+        "spin": 128,
+        "dimension": 1537,
+        "electric_K": 0.3,
+        "magnetic_J": 1.0,
+        "Delta": 49076305.91999999,
+        "hopping_t": 493056.1722616521,
+        "epsilon": 0.010046725461883586,
+        "removed_scalar": -19808.399999999998,
+        "lowest_six_shifted_microscopic_energies": [
+          -0.9943290764431183,
+          0.9301470539630561,
+          1.8907725098435286,
+          4.89186600736738,
+          4.92148133325855,
+          10.837201377622275
+        ],
+        "largest_six_energy_error_against_rotor": 0.010550021320050007,
+        "error_divided_by_epsilon_squared": 104.52117122199942,
+        "eigenpair_absolute_residual": 1.615182783835982e-07,
+        "ground_code_weight": 0.9995965761101292
+      }
+    ],
+    "scope": "Complete finite-square numerical spectra at four supplied scales; no thermodynamic phase inference."
+  },
+  "elapsed_seconds": 0.39661083300597966,
+  "source_sha256": "88e0f4de4f62a6a56496b3be782e1dcaf9c6ba0227dc20f5d2467bc440ce1bb1"
+}
+
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

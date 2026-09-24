@@ -1,0 +1,707 @@
+===== runner cache v1 =====
+runner: scripts/weak_field_wave_packets_from_mobile_record_dynamics_2026_09_24.py
+runner_sha256: 666ec8b8487be5d09a0e4658d96a648b68d2d8eb5e13d036a0d01db08a638b93
+input_fingerprint_sha256: 7f7ceb89b30534baff44616f5708c8a4c3cae5b4890348a00e4ac61350364983
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
+Evidence boundary: supplied models; finite controls do not establish native physics, limit interchange or audit status.
+[PASS] component weak_field_wavepacket_check.py; stdout sha256=d94bd660142136afa08a11e8dc6cb56915be8b9f9af79c99d0641dd72c0be36b
+RESULT WEAK_FIELD_WAVEPACKET_RESULTS.json
+{
+  "created_utc": "2026-09-24T05:37:56.161992+00:00",
+  "script": {
+    "path": "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/mobile-record-controls-lc5fs2n2/weak_field_wavepacket_check.py",
+    "bytes": 9040,
+    "sha256": "92bb30255dcb7eef8e8d898acb318d26e451aa92fbb2a8080d043f6b7d179c9d"
+  },
+  "runtime": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit"
+  },
+  "cubic_cochains": [
+    {
+      "side": 3,
+      "volume": 27,
+      "edge_count": 81,
+      "boundary_of_boundary_exact_zero": true,
+      "divergence_rank_mod_65521": 26,
+      "curl_rank_mod_65521": 52,
+      "zero_curl_dimension": 29,
+      "transverse_oscillators": 52,
+      "full_spectrum_max_discrepancy": 9.769962616701378e-15,
+      "smallest_positive_lambda": 2.999999999999996,
+      "plaquette_vacuum_variance_range": [
+        0.7874837254174243,
+        0.7874837254174252
+      ],
+      "vacuum_potential_residual_bound_over_g2_at_c_over_a_one": 21.446261692986727,
+      "scope": "Exact incidence/modular ranks plus floating harmonic spectral control; no compact many-body diagonalization."
+    },
+    {
+      "side": 4,
+      "volume": 64,
+      "edge_count": 192,
+      "boundary_of_boundary_exact_zero": true,
+      "divergence_rank_mod_65521": 63,
+      "curl_rank_mod_65521": 126,
+      "zero_curl_dimension": 66,
+      "transverse_oscillators": 126,
+      "full_spectrum_max_discrepancy": 1.0658141036401503e-14,
+      "smallest_positive_lambda": 1.9999999999999962,
+      "plaquette_vacuum_variance_range": [
+        0.7934335972773068,
+        0.7934335972773078
+      ],
+      "vacuum_potential_residual_bound_over_g2_at_c_over_a_one": 51.606666767539735,
+      "scope": "Exact incidence/modular ranks plus floating harmonic spectral control; no compact many-body diagonalization."
+    },
+    {
+      "side": 6,
+      "volume": 216,
+      "edge_count": 648,
+      "boundary_of_boundary_exact_zero": true,
+      "divergence_rank_mod_65521": 215,
+      "curl_rank_mod_65521": 430,
+      "zero_curl_dimension": 218,
+      "transverse_oscillators": 430,
+      "full_spectrum_max_discrepancy": 1.3611488066535695e-14,
+      "smallest_positive_lambda": 0.9999999999999954,
+      "plaquette_vacuum_variance_range": [
+        0.7954185754891863,
+        0.7954185754891878
+      ],
+      "vacuum_potential_residual_bound_over_g2_at_c_over_a_one": 175.04506506168264,
+      "scope": "Exact incidence/modular ranks plus floating harmonic spectral control; no compact many-body diagonalization."
+    }
+  ],
+  "compact_single_loop": [
+    {
+      "g": 0.4,
+      "electric_cutoff": 18,
+      "dimension": 37,
+      "lowest_four_energies": [
+        0.9795736045974778,
+        2.8959782688698623,
+        4.723488413327794,
+        6.454211894994773
+      ],
+      "first_two_energy_shifts_over_g2": [
+        -0.12766497126576387,
+        -0.6501358195633604
+      ],
+      "harmonic_packet_residual_norms": [
+        0.0651508821483811,
+        0.19340945069000456
+      ],
+      "residuals_over_g2": [
+        0.40719301342738184,
+        1.2088090668125282
+      ],
+      "dynamics": [
+        {
+          "time": 0.25,
+          "state_norm_difference": 0.03503976916774482,
+          "norm_difference_over_g2": 0.21899855729840512,
+          "infidelity": 0.0010136648130530945,
+          "finite_matrix_duhamel_bound": 0.04570744117396831,
+          "state_norm_error": 5.551115123125783e-16
+        },
+        {
+          "time": 1.0,
+          "state_norm_difference": 0.10058311155632793,
+          "norm_difference_over_g2": 0.6286444472270495,
+          "infidelity": 0.006198436316691702,
+          "finite_matrix_duhamel_bound": 0.18282976469587325,
+          "state_norm_error": 7.771561172376096e-16
+        },
+        {
+          "time": 3.0,
+          "state_norm_difference": 0.23157385979325718,
+          "norm_difference_over_g2": 1.447336623707857,
+          "infidelity": 0.0187786252497385,
+          "finite_matrix_duhamel_bound": 0.5484892940876197,
+          "state_norm_error": 4.440892098500626e-16
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "electric_cutoff": 35,
+      "dimension": 71,
+      "lowest_four_energies": [
+        0.994974616478672,
+        2.974769167727622,
+        4.934092251010182,
+        6.872610742463123
+      ],
+      "first_two_energy_shifts_over_g2": [
+        -0.12563458803319935,
+        -0.6307708068094552
+      ],
+      "harmonic_packet_residual_norms": [
+        0.01687518123403813,
+        0.050491221850104656
+      ],
+      "residuals_over_g2": [
+        0.42187953085095314,
+        1.262280546252616
+      ],
+      "dynamics": [
+        {
+          "time": 0.25,
+          "state_norm_difference": 0.009021114576761049,
+          "norm_difference_over_g2": 0.22552786441902617,
+          "infidelity": 6.747739139434383e-05,
+          "finite_matrix_duhamel_bound": 0.011908810111235927,
+          "state_norm_error": 1.1102230246251565e-16
+        },
+        {
+          "time": 1.0,
+          "state_norm_difference": 0.0234331963334869,
+          "norm_difference_over_g2": 0.5858299083371724,
+          "infidelity": 0.00031909600896073975,
+          "finite_matrix_duhamel_bound": 0.04763524044494371,
+          "state_norm_error": 2.220446049250313e-16
+        },
+        {
+          "time": 3.0,
+          "state_norm_difference": 0.05508030165810714,
+          "norm_difference_over_g2": 1.3770075414526783,
+          "infidelity": 0.0009708324003486757,
+          "finite_matrix_duhamel_bound": 0.14290572133483112,
+          "state_norm_error": 1.1102230246251565e-16
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "electric_cutoff": 70,
+      "dimension": 141,
+      "lowest_four_energies": [
+        0.998748431608059,
+        2.99373584882641,
+        4.983694820116197,
+        6.968606115432328
+      ],
+      "first_two_energy_shifts_over_g2": [
+        -0.125156839194096,
+        -0.6264151173589915
+      ],
+      "harmonic_packet_residual_norms": [
+        0.004256783503196092,
+        0.012761847678657037
+      ],
+      "residuals_over_g2": [
+        0.4256783503196091,
+        1.2761847678657035
+      ],
+      "dynamics": [
+        {
+          "time": 0.25,
+          "state_norm_difference": 0.0022700405662289683,
+          "norm_difference_over_g2": 0.2270040566228968,
+          "infidelity": 4.276618408738386e-06,
+          "finite_matrix_duhamel_bound": 0.003008497378800294,
+          "state_norm_error": 1.1102230246251565e-15
+        },
+        {
+          "time": 1.0,
+          "state_norm_difference": 0.005760502604438811,
+          "norm_difference_over_g2": 0.576050260443881,
+          "infidelity": 1.9042888616427334e-05,
+          "finite_matrix_duhamel_bound": 0.012033989515201175,
+          "state_norm_error": 1.2212453270876722e-15
+        },
+        {
+          "time": 3.0,
+          "state_norm_difference": 0.013617941480896546,
+          "norm_difference_over_g2": 1.3617941480896543,
+          "infidelity": 5.830529499883941e-05,
+          "finite_matrix_duhamel_bound": 0.036101968545603526,
+          "state_norm_error": 1.2212453270876722e-15
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "electric_cutoff": 140,
+      "dimension": 281,
+      "lowest_four_energies": [
+        0.9996874022521108,
+        2.9984366197174763,
+        4.995934074409051,
+        6.992178587084271
+      ],
+      "first_two_energy_shifts_over_g2": [
+        -0.125039099155666,
+        -0.6253521130094696
+      ],
+      "harmonic_packet_residual_norms": [
+        0.0010665906213695394,
+        0.0031992387370131494
+      ],
+      "residuals_over_g2": [
+        0.4266362485478157,
+        1.2796954948052595
+      ],
+      "dynamics": [
+        {
+          "time": 0.25,
+          "state_norm_difference": 0.0005684029971664916,
+          "norm_difference_over_g2": 0.2273611988665966,
+          "infidelity": 2.681882547150849e-07,
+          "finite_matrix_duhamel_bound": 0.0007540992166742645,
+          "state_norm_error": 8.881784197001252e-16
+        },
+        {
+          "time": 1.0,
+          "state_norm_difference": 0.0014341503362051372,
+          "norm_difference_over_g2": 0.5736601344820548,
+          "infidelity": 1.176664057966903e-06,
+          "finite_matrix_duhamel_bound": 0.003016396866697058,
+          "state_norm_error": 6.661338147750939e-16
+        },
+        {
+          "time": 3.0,
+          "state_norm_difference": 0.003395659959033591,
+          "norm_difference_over_g2": 1.358263983613436,
+          "infidelity": 3.6113398822479326e-06,
+          "finite_matrix_duhamel_bound": 0.009049190600091173,
+          "state_norm_error": 8.881784197001252e-16
+        }
+      ]
+    }
+  ],
+  "larger_cutoff": [
+    {
+      "g": 0.4,
+      "electric_cutoff": 25,
+      "dimension": 51,
+      "lowest_four_energies": [
+        0.9795736045974786,
+        2.8959782688698636,
+        4.723488413327795,
+        6.454211894994776
+      ],
+      "first_two_energy_shifts_over_g2": [
+        -0.12766497126575901,
+        -0.6501358195633521
+      ],
+      "harmonic_packet_residual_norms": [
+        0.0651508821483811,
+        0.19340945069000456
+      ],
+      "residuals_over_g2": [
+        0.40719301342738184,
+        1.2088090668125282
+      ],
+      "dynamics": [
+        {
+          "time": 0.25,
+          "state_norm_difference": 0.03503976916774438,
+          "norm_difference_over_g2": 0.21899855729840234,
+          "infidelity": 0.0010136648130524284,
+          "finite_matrix_duhamel_bound": 0.04570744117396831,
+          "state_norm_error": 3.3306690738754696e-16
+        },
+        {
+          "time": 1.0,
+          "state_norm_difference": 0.10058311155632725,
+          "norm_difference_over_g2": 0.6286444472270452,
+          "infidelity": 0.006198436316690592,
+          "finite_matrix_duhamel_bound": 0.18282976469587325,
+          "state_norm_error": 2.220446049250313e-16
+        },
+        {
+          "time": 3.0,
+          "state_norm_difference": 0.23157385979325426,
+          "norm_difference_over_g2": 1.4473366237078389,
+          "infidelity": 0.01877862524973828,
+          "finite_matrix_duhamel_bound": 0.5484892940876197,
+          "state_norm_error": 4.440892098500626e-16
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "electric_cutoff": 50,
+      "dimension": 101,
+      "lowest_four_energies": [
+        0.9949746164786725,
+        2.97476916772762,
+        4.934092251010178,
+        6.872610742463124
+      ],
+      "first_two_energy_shifts_over_g2": [
+        -0.12563458803318825,
+        -0.6307708068094996
+      ],
+      "harmonic_packet_residual_norms": [
+        0.01687518123403813,
+        0.050491221850104656
+      ],
+      "residuals_over_g2": [
+        0.42187953085095314,
+        1.262280546252616
+      ],
+      "dynamics": [
+        {
+          "time": 0.25,
+          "state_norm_difference": 0.009021114576760893,
+          "norm_difference_over_g2": 0.22552786441902228,
+          "infidelity": 6.747739139345565e-05,
+          "finite_matrix_duhamel_bound": 0.011908810111235927,
+          "state_norm_error": 2.220446049250313e-16
+        },
+        {
+          "time": 1.0,
+          "state_norm_difference": 0.023433196333486426,
+          "norm_difference_over_g2": 0.5858299083371605,
+          "infidelity": 0.0003190960089600736,
+          "finite_matrix_duhamel_bound": 0.04763524044494371,
+          "state_norm_error": 0.0
+        },
+        {
+          "time": 3.0,
+          "state_norm_difference": 0.0550803016581107,
+          "norm_difference_over_g2": 1.3770075414527674,
+          "infidelity": 0.0009708324003480095,
+          "finite_matrix_duhamel_bound": 0.14290572133483112,
+          "state_norm_error": 2.220446049250313e-16
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "electric_cutoff": 100,
+      "dimension": 201,
+      "lowest_four_energies": [
+        0.9987484316080473,
+        2.9937358488263914,
+        4.983694820116164,
+        6.968606115432305
+      ],
+      "first_two_energy_shifts_over_g2": [
+        -0.12515683919527285,
+        -0.6264151173608566
+      ],
+      "harmonic_packet_residual_norms": [
+        0.004256783503196092,
+        0.012761847678657037
+      ],
+      "residuals_over_g2": [
+        0.4256783503196091,
+        1.2761847678657035
+      ],
+      "dynamics": [
+        {
+          "time": 0.25,
+          "state_norm_difference": 0.0022700405662288196,
+          "norm_difference_over_g2": 0.22700405662288192,
+          "infidelity": 4.27661840651794e-06,
+          "finite_matrix_duhamel_bound": 0.003008497378800294,
+          "state_norm_error": 0.0
+        },
+        {
+          "time": 1.0,
+          "state_norm_difference": 0.005760502604445529,
+          "norm_difference_over_g2": 0.5760502604445528,
+          "infidelity": 1.9042888613984843e-05,
+          "finite_matrix_duhamel_bound": 0.012033989515201175,
+          "state_norm_error": 1.1102230246251565e-16
+        },
+        {
+          "time": 3.0,
+          "state_norm_difference": 0.013617941480939571,
+          "norm_difference_over_g2": 1.3617941480939568,
+          "infidelity": 5.830529499617487e-05,
+          "finite_matrix_duhamel_bound": 0.036101968545603526,
+          "state_norm_error": 0.0
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "electric_cutoff": 200,
+      "dimension": 401,
+      "lowest_four_energies": [
+        0.9996874022521376,
+        2.998436619717527,
+        4.995934074409028,
+        6.992178587084226
+      ],
+      "first_two_energy_shifts_over_g2": [
+        -0.12503909914496344,
+        -0.6253521129892191
+      ],
+      "harmonic_packet_residual_norms": [
+        0.0010665906213695394,
+        0.0031992387370131494
+      ],
+      "residuals_over_g2": [
+        0.4266362485478157,
+        1.2796954948052595
+      ],
+      "dynamics": [
+        {
+          "time": 0.25,
+          "state_norm_difference": 0.0005684029971575053,
+          "norm_difference_over_g2": 0.22736119886300207,
+          "infidelity": 2.681882587118878e-07,
+          "finite_matrix_duhamel_bound": 0.0007540992166742645,
+          "state_norm_error": 1.1102230246251565e-15
+        },
+        {
+          "time": 1.0,
+          "state_norm_difference": 0.0014341503361729496,
+          "norm_difference_over_g2": 0.5736601344691797,
+          "infidelity": 1.1766640617416613e-06,
+          "finite_matrix_duhamel_bound": 0.003016396866697058,
+          "state_norm_error": 1.1102230246251565e-15
+        },
+        {
+          "time": 3.0,
+          "state_norm_difference": 0.0033956599589169485,
+          "norm_difference_over_g2": 1.3582639835667791,
+          "infidelity": 3.61133988646678e-06,
+          "finite_matrix_duhamel_bound": 0.009049190600091173,
+          "state_norm_error": 1.2212453270876722e-15
+        }
+      ]
+    }
+  ],
+  "cutoff_comparison": [
+    {
+      "g": 0.4,
+      "largest_energy_change": 2.6645352591003757e-15,
+      "largest_dynamical_error_change": 2.914335439641036e-15
+    },
+    {
+      "g": 0.2,
+      "largest_energy_change": 4.440892098500626e-15,
+      "largest_dynamical_error_change": 3.559652572704408e-15
+    },
+    {
+      "g": 0.1,
+      "largest_energy_change": 3.2862601528904634e-14,
+      "largest_dynamical_error_change": 4.302461165117677e-14
+    },
+    {
+      "g": 0.05,
+      "largest_energy_change": 5.062616992290714e-14,
+      "largest_dynamical_error_change": 1.1664237284381151e-13
+    }
+  ],
+  "limiting_single_loop_residuals_over_g2": [
+    0.42695628191498325,
+    1.2808688457449497
+  ],
+  "continuum_dispersion": [
+    {
+      "mode": [
+        1,
+        0,
+        0
+      ],
+      "side": 12,
+      "a": 0.5235987755982988,
+      "lattice_frequency": 0.9886159294653692,
+      "continuum_frequency": 1.0,
+      "error": 0.011384070534630752,
+      "analytic_error_bound": 0.01142315324200157
+    },
+    {
+      "mode": [
+        1,
+        0,
+        0
+      ],
+      "side": 24,
+      "a": 0.2617993877991494,
+      "lattice_frequency": 0.9971466573496369,
+      "continuum_frequency": 1.0,
+      "error": 0.0028533426503630777,
+      "analytic_error_bound": 0.0028557883105003925
+    },
+    {
+      "mode": [
+        1,
+        0,
+        0
+      ],
+      "side": 48,
+      "a": 0.1308996938995747,
+      "lattice_frequency": 0.9992862058229085,
+      "continuum_frequency": 1.0,
+      "error": 0.000713794177091498,
+      "analytic_error_bound": 0.0007139470776250981
+    },
+    {
+      "mode": [
+        1,
+        0,
+        0
+      ],
+      "side": 96,
+      "a": 0.06544984694978735,
+      "lattice_frequency": 0.999821522787608,
+      "continuum_frequency": 1.0,
+      "error": 0.00017847721239194758,
+      "analytic_error_bound": 0.00017848676940627453
+    },
+    {
+      "mode": [
+        1,
+        0,
+        0
+      ],
+      "side": 192,
+      "a": 0.032724923474893676,
+      "lattice_frequency": 0.9999553789049733,
+      "continuum_frequency": 1.0,
+      "error": 4.462109502667566e-05,
+      "analytic_error_bound": 4.462169235156863e-05
+    },
+    {
+      "mode": [
+        1,
+        2,
+        0
+      ],
+      "side": 12,
+      "a": 0.5235987755982988,
+      "lattice_frequency": 2.1505636626514537,
+      "continuum_frequency": 2.23606797749979,
+      "error": 0.0855043148483361,
+      "analytic_error_bound": 0.09209640573532885
+    },
+    {
+      "mode": [
+        1,
+        2,
+        0
+      ],
+      "side": 24,
+      "a": 0.2617993877991494,
+      "lattice_frequency": 2.2144406246802504,
+      "continuum_frequency": 2.23606797749979,
+      "error": 0.021627352819539425,
+      "analytic_error_bound": 0.02302410143383221
+    },
+    {
+      "mode": [
+        1,
+        2,
+        0
+      ],
+      "side": 48,
+      "a": 0.1308996938995747,
+      "lattice_frequency": 2.2306453654048553,
+      "continuum_frequency": 2.23606797749979,
+      "error": 0.0054226120949345535,
+      "analytic_error_bound": 0.005756025358458053
+    },
+    {
+      "mode": [
+        1,
+        2,
+        0
+      ],
+      "side": 96,
+      "a": 0.06544984694978735,
+      "lattice_frequency": 2.2347113375156775,
+      "continuum_frequency": 2.23606797749979,
+      "error": 0.0013566399841122845,
+      "analytic_error_bound": 0.0014390063396145132
+    },
+    {
+      "mode": [
+        1,
+        2,
+        0
+      ],
+      "side": 192,
+      "a": 0.032724923474893676,
+      "lattice_frequency": 2.2357287558016323,
+      "continuum_frequency": 2.23606797749979,
+      "error": 0.00033922169815747694,
+      "analytic_error_bound": 0.0003597515849036283
+    },
+    {
+      "mode": [
+        1,
+        2,
+        3
+      ],
+      "side": 12,
+      "a": 0.5235987755982988,
+      "lattice_frequency": 3.452542438459686,
+      "continuum_frequency": 3.7416573867739413,
+      "error": 0.2891149483142552,
+      "analytic_error_bound": 0.3218816761051478
+    },
+    {
+      "mode": [
+        1,
+        2,
+        3
+      ],
+      "side": 24,
+      "a": 0.2617993877991494,
+      "lattice_frequency": 3.6674948005689543,
+      "continuum_frequency": 3.7416573867739413,
+      "error": 0.07416258620498706,
+      "analytic_error_bound": 0.08047041902628695
+    },
+    {
+      "mode": [
+        1,
+        2,
+        3
+      ],
+      "side": 48,
+      "a": 0.1308996938995747,
+      "lattice_frequency": 3.7229977468569717,
+      "continuum_frequency": 3.7416573867739413,
+      "error": 0.018659639916969617,
+      "analytic_error_bound": 0.020117604756571737
+    },
+    {
+      "mode": [
+        1,
+        2,
+        3
+      ],
+      "side": 96,
+      "a": 0.06544984694978735,
+      "lattice_frequency": 3.7369850198289205,
+      "continuum_frequency": 3.7416573867739413,
+      "error": 0.004672366945020823,
+      "analytic_error_bound": 0.005029401189142934
+    },
+    {
+      "mode": [
+        1,
+        2,
+        3
+      ],
+      "side": 192,
+      "a": 0.032724923474893676,
+      "lattice_frequency": 3.740488828665499,
+      "continuum_frequency": 3.7416573867739413,
+      "error": 0.001168558108442408,
+      "analytic_error_bound": 0.0012573502972857335
+    }
+  ],
+  "status": "Author finite controls. Finite-box packet convergence is proved analytically in the companion note; no phase, native derivation or independent verification claimed."
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

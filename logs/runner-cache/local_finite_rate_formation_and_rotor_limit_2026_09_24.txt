@@ -1,0 +1,866 @@
+===== runner cache v1 =====
+runner: scripts/local_finite_rate_formation_and_rotor_limit_2026_09_24.py
+runner_sha256: d267f22fbabde23c2d9c395ecb7737b8a10f9c3b0f351e155dce39d3a9ae44f8
+input_fingerprint_sha256: e995af90ff6b9037f999d4c32953ed4e6a4d8aa08dea220b2e8ff8d0db5140ce
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+Evidence boundary: supplied models; finite controls do not establish native physics, limit interchange or audit status.
+[PASS] component formation_locality_check.py; stdout sha256=6345fcc8bf863d9cb3087c5538bd8911cd8f61da2fda0e294f118ab3e323afe1
+RESULT FORMATION_LOCALITY_RESULTS.json
+{
+  "created_utc": "2026-09-24T05:38:05.168243+00:00",
+  "source_sha256": "fb9fb61ab467a06f5685d808aad6d1c5f0ef488282cc32925373cede3533d313",
+  "model_source_sha256": "dd19906f85f2ce1834495ec0480e8d9e7a2127126ce3aa01a77273a3c2399d8e",
+  "controls": [
+    {
+      "model": "star_2",
+      "instrument": "coherent",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 2,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": [
+        {
+          "q": [
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        }
+      ]
+    },
+    {
+      "model": "star_2",
+      "instrument": "resolved",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 2,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": [
+        {
+          "q": [
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "coherent",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 4,
+          "one_hole_dimension": 16,
+          "nonzero_effective_channel_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": [
+        {
+          "q": [
+            -1,
+            -1,
+            1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            -1,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "empty_leaves": 4,
+          "rate": "(-13 + 21*I)*(-46137/465125 - 74529*I/465125)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            0,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "resolved",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 4,
+          "one_hole_dimension": 16,
+          "nonzero_effective_channel_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": [
+        {
+          "q": [
+            -1,
+            -1,
+            1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            -1,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "empty_leaves": 4,
+          "rate": "(-13 + 21*I)*(-46137/465125 - 74529*I/465125)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            0,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        }
+      ]
+    },
+    {
+      "model": "two_A_path",
+      "instrument": "coherent",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 1,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": []
+        },
+        {
+          "A_site": 2,
+          "degree": 2,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": [
+            1,
+            2
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": []
+    },
+    {
+      "model": "two_A_path",
+      "instrument": "resolved",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 1,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": []
+        },
+        {
+          "A_site": 2,
+          "degree": 2,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": []
+    }
+  ],
+  "coherent_and_resolved_effective_losses_equal_in_all_controls": true,
+  "scope": "Exact finite operator decompositions and basis rates. General locality/norm bounds and rotor extension rest on the separately written proof."
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

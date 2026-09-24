@@ -1,0 +1,844 @@
+===== runner cache v1 =====
+runner: scripts/charged_record_exchange_band_field_response_2026_09_24.py
+runner_sha256: 285b8faf66a8373f82ffddbce69e0378fe270c9f85da652efc687043b7f2ea6a
+input_fingerprint_sha256: c879b985405758de797799fdd2a906f210f02a45ebcc857664961c0a812f4e35
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 3.21
+status: ok
+----- stdout -----
+Evidence boundary: supplied models; finite controls do not establish native physics, limit interchange or audit status.
+[PASS] component charged_record_potential_hessian_check.py; stdout sha256=8c257e793acca859f7d8610e0f31557ca7fbe8d4884d071a6d1e0ad1a7220a13
+[PASS] component charged_band_packet_check.py; stdout sha256=fc6a495efef20424bbc80cc7eb19d3aea202591683658e7a1725c48d95daa5f5
+[PASS] component charged_band_geometry_check.py; stdout sha256=4bfe4acaa35bc70cef80e2422ebc57f87c721440a5479dccf3fbf1438524203e
+RESULT CHARGED_BAND_GEOMETRY_RESULTS.json
+{
+  "created_utc": "2026-09-24T05:38:00.545646+00:00",
+  "source_sha256": "152ffec819cf418f42befa6cd7d7c71e7e02c31646f1d9defd4a0d07ff927fda",
+  "star_spectra": [
+    {
+      "dimension": 2,
+      "coordination": 4,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "2": 2,
+        "4": 1
+      }
+    },
+    {
+      "dimension": 3,
+      "coordination": 6,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "4": 3,
+        "6": 2
+      }
+    },
+    {
+      "dimension": 4,
+      "coordination": 8,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "6": 4,
+        "8": 3
+      }
+    },
+    {
+      "dimension": 5,
+      "coordination": 10,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "8": 5,
+        "10": 4
+      }
+    },
+    {
+      "dimension": 6,
+      "coordination": 12,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "10": 6,
+        "12": 5
+      }
+    }
+  ],
+  "periodic_pi_flux": [
+    {
+      "periods": [
+        6,
+        6
+      ],
+      "plaquettes": 36,
+      "wrapping_plaquettes": 11,
+      "charge_dependent_exchange_parity_checks": 144,
+      "all_exchange_signs_reversed": true
+    },
+    {
+      "periods": [
+        6,
+        8
+      ],
+      "plaquettes": 48,
+      "wrapping_plaquettes": 13,
+      "charge_dependent_exchange_parity_checks": 192,
+      "all_exchange_signs_reversed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "plaquettes": 648,
+      "wrapping_plaquettes": 198,
+      "charge_dependent_exchange_parity_checks": 2592,
+      "all_exchange_signs_reversed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "plaquettes": 1440,
+      "wrapping_plaquettes": 352,
+      "charge_dependent_exchange_parity_checks": 5760,
+      "all_exchange_signs_reversed": true
+    }
+  ],
+  "analytic_identity": "The electric-basis unitary exp(i*pi*sum_e nu_e E_e) commutes with Gauss and electric energy and maps every R_p to -R_p, since all transported charges are odd integers.",
+  "scope": "An overall magnetic-sign change alone gives a unitarily equivalent rotor target on these even boxes. This is not a derivation of a complete fermionic microscopic model."
+}
+
+RESULT CHARGED_BAND_PACKET_RESULTS.json
+{
+  "created_utc": "2026-09-24T05:38:00.365743+00:00",
+  "source": {
+    "path": "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/mobile-record-controls-l0jgy72m/charged_band_packet_check.py",
+    "bytes": 5576,
+    "sha256": "a29c4e4e71d35f2a055750054b220abcb717f52beef26d01a382f08ba91fa469"
+  },
+  "model": "One compact coordinate, four records at fixed total charge zero on a cycle; theta only on edge 0, phi=0. K=h,J=1/h; scalar -8/h removed.",
+  "scope": "A matrix-band residual and compact-state normalization control, not a literal full cubic Gauss or thermodynamic phase simulation.",
+  "exact_band_control": {
+    "dimension": 6,
+    "band_Hessian": "4/3",
+    "u_prime_norm_squared": "5/12"
+  },
+  "harmonic_frequency": 1.632993161855452,
+  "rows": [
+    {
+      "h": 0.03125,
+      "electric_cutoff": 68,
+      "grid": 8192,
+      "full_dimension": 822,
+      "packet_norm": 0.999999871671474,
+      "residuals": [
+        0.1469562013377227,
+        0.2532528826767947
+      ],
+      "residuals_over_sqrt_h": [
+        0.8313098120265544,
+        1.432614645566421
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.002491492904748135,
+          "Duhamel_bound": 0.05659811870297754,
+          "unitarity_error": 1.3433698597964394e-14
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.011337477493228295,
+          "Duhamel_bound": 0.28299059351488765,
+          "unitarity_error": 6.483702463810914e-14
+        }
+      ]
+    },
+    {
+      "h": 0.015625,
+      "electric_cutoff": 96,
+      "grid": 8192,
+      "full_dimension": 1158,
+      "packet_norm": 0.9999999999999101,
+      "residuals": [
+        0.10351123800183838,
+        0.17881986238717779
+      ],
+      "residuals_over_sqrt_h": [
+        0.8280899040147071,
+        1.4305588990974223
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.0012795688923212284,
+          "Duhamel_bound": 0.03992764712499024,
+          "unitarity_error": 8.348877145181177e-14
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.005685886437149036,
+          "Duhamel_bound": 0.19963823562495117,
+          "unitarity_error": 4.2310599468464716e-13
+        }
+      ]
+    },
+    {
+      "h": 0.0078125,
+      "electric_cutoff": 136,
+      "grid": 8192,
+      "full_dimension": 1638,
+      "packet_norm": 0.9999999999999997,
+      "residuals": [
+        0.0730514043446323,
+        0.12636345746457275
+      ],
+      "residuals_over_sqrt_h": [
+        0.8264822941966385,
+        1.429639322678036
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.0006612050195309529,
+          "Duhamel_bound": 0.02820152021093344,
+          "unitarity_error": 3.3506530883187224e-13
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.002849695058935255,
+          "Duhamel_bound": 0.1410076010546672,
+          "unitarity_error": 2.8881341762598822e-12
+        }
+      ]
+    },
+    {
+      "h": 0.00390625,
+      "electric_cutoff": 192,
+      "grid": 8192,
+      "full_dimension": 2310,
+      "packet_norm": 0.9999999999999996,
+      "residuals": [
+        0.051604842758625605,
+        0.0893237319515361
+      ],
+      "residuals_over_sqrt_h": [
+        0.8256774841380097,
+        1.4291797112245777
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.00032205177367994266,
+          "Duhamel_bound": 0.019930310168102074,
+          "unitarity_error": 5.617728504603292e-14
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.001422882901868393,
+          "Duhamel_bound": 0.09965155084051038,
+          "unitarity_error": 1.0862422072932532e-12
+        }
+      ]
+    }
+  ],
+  "refinement": {
+    "h": 0.0078125,
+    "electric_cutoff": 196,
+    "grid": 16384,
+    "full_dimension": 2358,
+    "packet_norm": 0.9999999999999997,
+    "residuals": [
+      0.07305140434463597,
+      0.12636345746457567
+    ],
+    "residuals_over_sqrt_h": [
+      0.8264822941966802,
+      1.4296393226780688
+    ],
+    "predicted_leading_residuals_over_sqrt_h": [
+      0.8248720006399609,
+      1.4287202148493998
+    ],
+    "times": [
+      {
+        "time": 0.2,
+        "state_norm_error": 0.0006612050199220607,
+        "Duhamel_bound": 0.028201520210934375,
+        "unitarity_error": 1.6231460620019789e-13
+      },
+      {
+        "time": 1.0,
+        "state_norm_error": 0.00284969505958698,
+        "Duhamel_bound": 0.14100760105467186,
+        "unitarity_error": 9.171552406428418e-13
+      }
+    ]
+  },
+  "refinement_state_error_changes": [
+    3.911078275478652e-13,
+    6.517252015836306e-13
+  ]
+}
+
+RESULT CHARGED_RECORD_POTENTIAL_HESSIAN_RESULTS.json
+{
+  "created_utc": "2026-09-24T05:37:58.608795+00:00",
+  "source": {
+    "path": "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/mobile-record-controls-l0jgy72m/charged_record_potential_hessian_check.py",
+    "bytes": 8510,
+    "sha256": "ba9579c250661c42725419b18a7fc0d4d46f44fdcae7b6681b9cc3e1695b5e77"
+  },
+  "exact_finite_graph_controls": [
+    {
+      "sites": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "fixed_charge": 0,
+      "spin_sector_dimension": 6,
+      "theta": [
+        "-3/7",
+        "0",
+        "3/7",
+        "-1/7"
+      ],
+      "phi": [
+        "-2/5",
+        "0",
+        "2/5",
+        "-1/5"
+      ],
+      "ground_energy": -8,
+      "exact_fixed_sector_kernel_dimension": 1,
+      "exact_second_derivative": "982/3675",
+      "predicted_second_derivative": "982/3675",
+      "H1_ground_one_magnon_identity": true,
+      "direct_finite_angle_controls": [
+        {
+          "step": 0.04,
+          "symmetric_ground_curvature": 0.26719401154062794,
+          "difference_from_exact": -1.6872813113577578e-05
+        },
+        {
+          "step": 0.02,
+          "symmetric_ground_curvature": 0.2672066659981098,
+          "difference_from_exact": -4.21835563169104e-06
+        },
+        {
+          "step": 0.01,
+          "symmetric_ground_curvature": 0.26720982978289953,
+          "difference_from_exact": -1.0545708419851252e-06
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "fixed_charge": 0,
+      "spin_sector_dimension": 6,
+      "theta": [
+        "1/11",
+        "3/11",
+        "5/11",
+        "-9/11"
+      ],
+      "phi": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ground_energy": -8,
+      "exact_fixed_sector_kernel_dimension": 1,
+      "exact_second_derivative": "0",
+      "predicted_second_derivative": "0",
+      "H1_ground_one_magnon_identity": true,
+      "direct_finite_angle_controls": [
+        {
+          "step": 0.04,
+          "symmetric_ground_curvature": -2.220446049250313e-12,
+          "difference_from_exact": -2.220446049250313e-12
+        },
+        {
+          "step": 0.02,
+          "symmetric_ground_curvature": -8.881784197001252e-12,
+          "difference_from_exact": -8.881784197001252e-12
+        },
+        {
+          "step": 0.01,
+          "symmetric_ground_curvature": 0.0,
+          "difference_from_exact": 0.0
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "fixed_charge": 0,
+      "spin_sector_dimension": 20,
+      "theta": [
+        "-3/7",
+        "0",
+        "3/7",
+        "-1/7",
+        "2/7",
+        "-2/7",
+        "1/7",
+        "-3/7",
+        "0"
+      ],
+      "phi": [
+        "-2/5",
+        "0",
+        "2/5",
+        "-1/5",
+        "1/5",
+        "-2/5",
+        "0",
+        "2/5",
+        "-1/5"
+      ],
+      "ground_energy": -18,
+      "exact_fixed_sector_kernel_dimension": 1,
+      "exact_second_derivative": "14124/6125",
+      "predicted_second_derivative": "14124/6125",
+      "H1_ground_one_magnon_identity": true,
+      "direct_finite_angle_controls": [
+        {
+          "step": 0.04,
+          "symmetric_ground_curvature": 2.3058818881027676,
+          "difference_from_exact": -7.729557070179638e-05
+        },
+        {
+          "step": 0.02,
+          "symmetric_ground_curvature": 2.3059398598768155,
+          "difference_from_exact": -1.932379665392503e-05
+        },
+        {
+          "step": 0.01,
+          "symmetric_ground_curvature": 2.305954352763706,
+          "difference_from_exact": -4.830909763331448e-06
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "fixed_charge": 0,
+      "spin_sector_dimension": 20,
+      "theta": [
+        "1/11",
+        "3/11",
+        "5/11",
+        "7/11",
+        "9/11",
+        "-25/11",
+        "9/11",
+        "15/11",
+        "21/11"
+      ],
+      "phi": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ground_energy": -18,
+      "exact_fixed_sector_kernel_dimension": 1,
+      "exact_second_derivative": "0",
+      "predicted_second_derivative": "0",
+      "H1_ground_one_magnon_identity": true,
+      "direct_finite_angle_controls": [
+        {
+          "step": 0.04,
+          "symmetric_ground_curvature": 4.440892098500626e-12,
+          "difference_from_exact": 4.440892098500626e-12
+        },
+        {
+          "step": 0.02,
+          "symmetric_ground_curvature": 1.7763568394002505e-11,
+          "difference_from_exact": 1.7763568394002505e-11
+        },
+        {
+          "step": 0.01,
+          "symmetric_ground_curvature": 7.105427357601002e-11,
+          "difference_from_exact": 7.105427357601002e-11
+        }
+      ]
+    }
+  ],
+  "cubic_controls": [
+    {
+      "dimension": 2,
+      "period": 4,
+      "vertices": 16,
+      "A_records": 8,
+      "links": 32,
+      "plaquettes": 16,
+      "charge_exchange_graph_gap": 3.9999999999999973,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 1.887379141862766e-15,
+      "Hessian_nullity": 15,
+      "expected_vertex_gauge_nullity": 15,
+      "positive_Hessian_minimum": 3.428571428571427,
+      "Hessian_maximum": 8.0,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 4.571428571428571,
+          "predicted_curvature": 4.571428571428571,
+          "constant_mode_eigenvector_residual": 3.455143170218693e-16
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 4.571428571428571,
+          "predicted_curvature": 4.571428571428571,
+          "constant_mode_eigenvector_residual": 3.818540940418016e-16
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 1.5707963267948966,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            4.0,
+            5.142857142857139
+          ],
+          "two_mode_subspace_leakage": 7.509533747099948e-15
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    },
+    {
+      "dimension": 2,
+      "period": 6,
+      "vertices": 36,
+      "A_records": 18,
+      "links": 72,
+      "plaquettes": 36,
+      "charge_exchange_graph_gap": 1.999999999999995,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 1.7985612998927536e-14,
+      "Hessian_nullity": 35,
+      "expected_vertex_gauge_nullity": 35,
+      "positive_Hessian_minimum": 3.7647058823529385,
+      "Hessian_maximum": 7.89270676360413,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 4.235294117647059,
+          "predicted_curvature": 4.235294117647059,
+          "constant_mode_eigenvector_residual": 4.56258290627859e-16
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 4.235294117647059,
+          "predicted_curvature": 4.235294117647059,
+          "constant_mode_eigenvector_residual": 6.669043573285645e-16
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 1.0471975511965976,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            4.117647058823529,
+            6.588235294117647
+          ],
+          "two_mode_subspace_leakage": 1.3500290715591541e-14
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    },
+    {
+      "dimension": 2,
+      "period": 8,
+      "vertices": 64,
+      "A_records": 32,
+      "links": 128,
+      "plaquettes": 64,
+      "charge_exchange_graph_gap": 1.171572875253807,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 8.992806499463768e-15,
+      "Hessian_nullity": 63,
+      "expected_vertex_gauge_nullity": 63,
+      "positive_Hessian_minimum": 3.870967741935479,
+      "Hessian_maximum": 8.000000000000002,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 4.129032258064516,
+          "predicted_curvature": 4.129032258064516,
+          "constant_mode_eigenvector_residual": 3.173854132328396e-16
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 4.129032258064516,
+          "predicted_curvature": 4.129032258064516,
+          "constant_mode_eigenvector_residual": 4.0617942836443647e-16
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 0.7853981633974483,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            4.091239584669232,
+            7.175045382941729
+          ],
+          "two_mode_subspace_leakage": 2.8155571374219005e-14
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    },
+    {
+      "dimension": 3,
+      "period": 4,
+      "vertices": 64,
+      "A_records": 32,
+      "links": 192,
+      "plaquettes": 192,
+      "charge_exchange_graph_gap": 7.999999999999994,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 1.1546319456101628e-14,
+      "Hessian_nullity": 63,
+      "expected_vertex_gauge_nullity": 63,
+      "positive_Hessian_minimum": 7.741935483870959,
+      "Hessian_maximum": 12.004028327984715,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 8.258064516129032,
+          "predicted_curvature": 8.258064516129032,
+          "constant_mode_eigenvector_residual": 7.161027558362532e-16
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 8.258064516129032,
+          "predicted_curvature": 8.258064516129032,
+          "constant_mode_eigenvector_residual": 6.387458192867359e-16
+        },
+        {
+          "direction": 2,
+          "normalized_curvature": 8.258064516129032,
+          "predicted_curvature": 8.258064516129032,
+          "constant_mode_eigenvector_residual": 9.89644159297508e-16
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 1.5707963267948966,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            8.129032258064512,
+            11.39784946236562
+          ],
+          "two_mode_subspace_leakage": 0.7693997341934767
+        },
+        {
+          "wave_number": 1.5707963267948966,
+          "polarization": 2,
+          "projected_two_mode_Ritz_values": [
+            8.129032258064514,
+            11.39784946236562
+          ],
+          "two_mode_subspace_leakage": 0.7693997341934772
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    },
+    {
+      "dimension": 3,
+      "period": 6,
+      "vertices": 216,
+      "A_records": 108,
+      "links": 648,
+      "plaquettes": 648,
+      "charge_exchange_graph_gap": 3.9999999999999925,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 3.397282455352979e-14,
+      "Hessian_nullity": 215,
+      "expected_vertex_gauge_nullity": 215,
+      "positive_Hessian_minimum": 7.925233644859788,
+      "Hessian_maximum": 12.00000000000003,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 8.074766355140184,
+          "predicted_curvature": 8.074766355140186,
+          "constant_mode_eigenvector_residual": 1.110465939648356e-15
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 8.074766355140184,
+          "predicted_curvature": 8.074766355140186,
+          "constant_mode_eigenvector_residual": 1.3606954666529606e-15
+        },
+        {
+          "direction": 2,
+          "normalized_curvature": 8.074766355140184,
+          "predicted_curvature": 8.074766355140186,
+          "constant_mode_eigenvector_residual": 1.5007613948030377e-15
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 1.0471975511965976,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            8.056074766355128,
+            11.6902536715621
+          ],
+          "two_mode_subspace_leakage": 0.41416072485053784
+        },
+        {
+          "wave_number": 1.0471975511965976,
+          "polarization": 2,
+          "projected_two_mode_Ritz_values": [
+            8.05607476635513,
+            11.690253671562093
+          ],
+          "two_mode_subspace_leakage": 0.41416072485053734
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    }
+  ],
+  "status": "Author controls; independent reconstruction pending.",
+  "limits": "The exact finite-spin-sector calculation checks the potential-band Hessian. Cubic matrix spectra are floating corroboration, not interval enclosures or a full matter-field phase proof."
+}
+
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

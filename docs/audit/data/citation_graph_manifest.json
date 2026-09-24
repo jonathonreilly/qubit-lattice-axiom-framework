@@ -1,6 +1,6 @@
 {
- "edge_count": 14472,
- "node_count": 6594,
+ "edge_count": 14503,
+ "node_count": 6607,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2654,6 +2654,10 @@
    "deps_hash": "a7f22af043f4",
    "out_degree": 7
   },
+  "charged_record_exchange_band_field_response_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "d9ab9949d61b",
+   "out_degree": 2
+  },
   "charged_ring_slow_spectrum_bounded_theorem_note_2026-09-15": {
    "deps_hash": "2b126dc35e8a",
    "out_degree": 2
@@ -5102,6 +5106,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "electric_and_magnetic_dynamics_from_record_motion_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "75cdf76e07ed",
+   "out_degree": 3
+  },
   "electric_sign_law_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -5418,6 +5426,10 @@
    "deps_hash": "974af8052d05",
    "out_degree": 1
   },
+  "fast_vacancy_motion_after_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c4303103ee6b",
+   "out_degree": 2
+  },
   "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -5562,6 +5574,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_formation_with_retained_fourth_order_dynamics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1c6a1605e119",
+   "out_degree": 4
+  },
   "finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15": {
    "deps_hash": "dcddb9da6de9",
    "out_degree": 4
@@ -5582,9 +5598,17 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_rate_repeated_record_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "finite_step_gaussian_gauge_canonical_logarithm_and_coulomb_cost_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "first_event_instrument_corollary_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c4303103ee6b",
+   "out_degree": 2
   },
   "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
    "deps_hash": "e3b0c44298fc",
@@ -7521,6 +7545,10 @@
   "hard_geometry_local_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "hardcore_record_motion_generates_gauge_rings_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",
@@ -11022,6 +11050,14 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "homogeneous_field_star_penalty_for_mobile_records_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "31d4f2248ab9",
+   "out_degree": 3
+  },
+  "homogeneous_mobile_charged_records_and_field_dynamics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1ab84217dcde",
+   "out_degree": 3
+  },
   "homogeneous_z3_pi_flux_parity_dark_local_record_separator_bounded_theorem_note_2026-09-02": {
    "deps_hash": "9b4b0f8332f7",
    "out_degree": 6
@@ -13037,6 +13073,10 @@
   "local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14": {
    "deps_hash": "8ec463c38283",
    "out_degree": 1
+  },
+  "local_finite_rate_formation_and_rotor_limit_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "27e90abeafb7",
+   "out_degree": 2
   },
   "local_frame_orbit_flat_sector_exact_converse_holonomy_frame_unreachable_residual_bounded_theorem_note_2026-06-10": {
    "deps_hash": "902cbaf48a4c",
@@ -19706,6 +19746,14 @@
    "deps_hash": "1f45a7f9bb63",
    "out_degree": 3
   },
+  "uniform_local_ring_dynamics_with_slow_record_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "56b61ef12165",
+   "out_degree": 3
+  },
+  "uniform_record_density_with_live_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "b6ef350ba20a",
+   "out_degree": 2
+  },
   "unit_conversion_is_the_accepted_non_bounding_ruler_reconciliation_note_2026-06-08": {
    "deps_hash": "d292eab310f2",
    "out_degree": 2
@@ -20257,6 +20305,10 @@
   "weak_coupling_sign_sensitivity_note_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "weak_field_wave_packets_from_mobile_record_dynamics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1ab84217dcde",
+   "out_degree": 3
   },
   "weighted_gaussian_damping_and_integer_time_blocking_bounded_theorem_note_2026-09-16": {
    "deps_hash": "2fcf27dbac88",

@@ -22,11 +22,18 @@
  "stdout_tail": " > 0: for lam = 1/4 and 1 the coherence approaches the lam-free limit (eps = 0.2, 0.1, 0.05) and the obstruction lower bound stays positive: an energy-stationary supply misses the lam > 0 occurrence by an O(1) trace distance\ntime 1 s\nSUMMARY: PARTIAL (first pass on batch 14; PR8929's deferred coherent-fuel statement, preparation vs occurrence). Exact: the star's born branch is the eps-free prepared first-event ensemble evolved from a birth time tau, so each coherence block is P_b(t) E[e^{-i omega(t-tau)}] times the prepared one. With an energy-stationary supply (stationary reservoir, conserving unitary) the best trace error is the distance to the stationary set: at lam = 0 exactly C_H(rho(t)) = 4 sqrt3 (kappa/delta) eps^3 e^{-12 kappa t}(1 + O(eps^2)), carried by the unborn branch, versus 2 sqrt(p(1-p)) ~ 2 sqrt(c) eps to prepare one actual output. For every lam in (0,1] the electric term splits the zero cluster by 3K lam eps^2 and the error tends to (1 - e^{-12 kappa t}) 2 sqrt2/9 (resolved; 4 sqrt2/9 coherent): not uniform in lam.\nHIT: the actual star occurrence needs far less energy coherence than a prepared output at lam = 0 (C_H = 4 sqrt3 (kappa/delta) eps^3 e^{-12 kappa t} versus 2 sqrt(p(1-p)) per output, because the birth-time characteristic function at the Bohr frequency multiplies every born coherence), but for every lam in (0,1] an energy-stationary supply misses it by a lam-independent (1 - e^{-12 kappa t}) 2 sqrt2/9 (resolved) or 4 sqrt2/9 (coherent) as eps -> 0\n",
  "checked": {
   "by": "w-macbookpro9927a-j8cdc",
-  "at_utc": "20260924T205739Z",
+  "at_utc": "20260924T205815Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 59a37d59 differs from the current HEAD 1bce8767 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage by the author (claude-opus-5-5); a referee of another family is needed. Deferred recovery, batch 14, first pass: the PR8929 coherent-fuel statement (fixed-input preparation) extended to the actual GKLS occurrence of the landed star. Exact: born branch = eps-free prepared first-event ensemble times the birth-time characteristic function at each Bohr frequency; energy-stationary supplies give nearly stationary outputs; two-eigenspace distance lemma; at lambda = 0 the best stationary-supply error is exactly C_H(rho(t)) = 4 sqrt3 (kappa/delta) eps^3 e^{-12 kappa t}(1 + O(eps^2)) against 2 sqrt(p(1-p)) per prepared output; for lambda in (0,1] E2 splits the zero cluster exactly and the error tends to (1 - e^{-12 kappa t}) 2 sqrt2/9 or 4 sqrt2/9 (float convergence), not uniform in lambda. Open: a finite-horizon stationarity notion; time-stamped marks. Nothing fixed or landed.",
+  "by": "w-macbookpro9927a-j8cdc",
+  "at_utc": "20260924T205815Z"
  }
 }

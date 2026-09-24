@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_records_carve_kitaev_models_at_the_compass_point_zero_field_carvings_are_cubes_and_tubes_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "At the compass point (J = D = 0) of the fully soldered dynamics clause of open PR 9040, with records acting as fields (open PR 9041), both supplied and not adopted: if every unrecorded site has exactly one unrecorded neighbour along each axis (a carving) and every record touches the unrecorded set along at most two axes, contents orthogonal to those axes cancel every field. The unrecorded generator is then exactly Kitaev's bond-dependent model on the carved graph. Loop operators commute with it, and the exact ground energy equals the least free-Majorana ground energy over Z2 gauge configurations (checked on the cube and on 8- and 12-site periodic tubes). On every torus with all sides at least 3, every component of a zero-field carving winds in at most one direction. At least two of each carved site's three partner squares are closed. The carved sites, partner bonds and closed squares form a surface with Euler characteristic (number of interior sites)/4 >= 0, and a winding component is a strip one square wide with no interior site. The complete enumerations through a fixed site on the 4x4x4 and 5x5x5 tori (112 and 1984), and samples on 6x6x6, agree: every finite component found is the 2x2x2 cube, and every winding component is such a strip. Without the zero-field requirement, components winding in three directions occur (32 sites on 4x4x4, 40 on 5x5x5), and each forces a record touching all three axes, whose field breaks loop operators. On the infinite staircase tube the least Majorana ground energy among translation-invariant flux sectors is at pi flux through both plaquette types, -3.35522 |K| per cell, with Majorana gap 2|K|; the zero-flux sector is gapless. No three-direction exactly solvable carving, no other flux configuration and no physical particle identification is claimed."
+claim_scope: "At the compass point (J = D = 0) of the fully soldered dynamics clause of open PR 9040, with records acting as fields (open PR 9041), both supplied and not adopted: if every unrecorded site has exactly one unrecorded neighbour along each axis (a carving) and every record touches the unrecorded set along at most two axes, contents orthogonal to those axes cancel every field. The unrecorded generator is then exactly Kitaev's bond-dependent model on the carved graph. Loop operators commute with it, and the exact ground energy equals the least free-Majorana ground energy over Z2 gauge configurations (checked on the cube and on 8- and 12-site periodic tubes). On every torus with all sides at least 3, every component of a zero-field carving is either the 2x2x2 cube or a strip one square wide that winds along a face diagonal. At least two of each carved site's three partner squares are closed. The carved sites, partner bonds and closed squares form a surface with Euler characteristic (number of interior sites)/4 >= 0. An interior site forces a closed unit cube, and a strip without interior sites that does not wind would need a reversal, which closes a third square. The complete enumerations through a fixed site on the 4x4x4 and 5x5x5 tori (112 and 1984), and samples on 6x6x6, agree: every finite component found is the 2x2x2 cube, and every winding component is such a strip. Without the zero-field requirement, components winding in three directions occur (32 sites on 4x4x4, 40 on 5x5x5), and each forces a record touching all three axes, whose field breaks loop operators. On the infinite staircase tube the least Majorana ground energy among translation-invariant flux sectors is at pi flux through both plaquette types, -3.35522 |K| per cell, with Majorana gap 2|K|; the zero-flux sector is gapless. No three-direction exactly solvable carving, no other flux configuration and no physical particle identification is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_records_carve_kitaev_models_at_the_compass_point_2026_09_24.py
@@ -41,9 +41,10 @@ when records can carve the medium into a Kitaev model.
   a gauge field made of qubits, with no fermion or gauge structure
   supplied.
 - **Where it applies.** The zero-field requirement is restrictive, and
-  this is now a theorem (Theorem 3, part 2). A zero-field carving is a
-  surface of nonnegative curvature. So every component either is finite
-  or winds in one direction, as a strip one square wide (a tube). The
+  this is now a theorem (Theorem 3, parts 2 and 3). A zero-field carving
+  is a surface of nonnegative curvature. Every component is either the
+  2x2x2 cube or a strip one square wide winding along a face diagonal (a
+  tube). The
   enumerations on the 4x4x4 and 5x5x5 tori, and samples on 6x6x6, find
   only 2x2x2 cubes and such strips. Carvings that wind in
   all three directions exist, but each has a record touching the medium
@@ -165,7 +166,40 @@ component that winds is a strip one square wide.
   - A winding component is therefore an annulus or Möbius band with
     `χ = 0`, so `N_int = 0`. Every site lies in exactly two squares: a
     strip one square wide, with first homology of rank 1.
-  - A sphere has `N_int = 8`: the 2x2x2 cube. ∎
+  ∎
+
+**Part 3 — the complete classification.** Every component of a zero-field
+carving is either the 2x2x2 cube or a strip one square wide that winds
+along a face diagonal.
+
+*Proof.*
+- **An interior site forces a cube.** Suppose `u` is interior, with all
+  three partner squares closed. Its body corner
+  `b = u + σ_x e_x + σ_y e_y + σ_z e_z` then has a carved neighbour along
+  each axis: the three face corners. If `b` were recorded, it would touch
+  `U` along three axes, which zero field forbids. So `b` is carved.
+  - All eight corners of the unit cube are then carved.
+  - Each corner has a carved neighbour along each axis inside the cube, and
+    only one along each axis at all. So all its partners are inside, and
+    the cube is a whole component.
+- **Every other component is a strip.** It has `N_int = 0`, so every site
+  lies in exactly two squares. Those two squares share the site's bond along
+  one axis `a`, the rung, and lie in the planes `(a, b)` and `(a, c)`.
+  - A square's two rungs are opposite edges. Otherwise a corner would lie
+    in three squares.
+  - So along the strip all rungs are parallel to `a`. The projected walk
+    alternates between steps `±e_b` and `±e_c`.
+- **Every strip winds.** A strip that does not wind closes up with zero
+  displacement, so its `b`-steps include both signs. Somewhere a `b`-step
+  and the next `b`-step have opposite signs, separated by one `c`-step:
+  steps `+e_b`, `±e_c`, `−e_b`.
+  - At the rung after the `c`-step, a site's two non-rung partners span a
+    square. That square's fourth corner lies on the rung two steps back,
+    at the same height, so it is carved.
+  - The square is then closed, and the site is interior. That contradicts
+    `N_int = 0`.
+  - So every strip winds. With no reversals its walk is monotone, and it
+    winds along a face diagonal. ∎
 
 Every enumerated zero-field carving satisfies each step:
 - every carved site has at least two closed squares;
@@ -173,10 +207,17 @@ Every enumerated zero-field carving satisfies each step:
 - every finite component is the cube (8 sites, all interior, `χ = 2`);
 - every winding component has no interior site and `χ = 0`.
 
-The theorem does not exclude other finite shapes, such as disks. None
-appears in the enumerations. It also explains why open PR 9054 needs
-relaxed carvings: a network winding in three directions cannot be carved
-with zero fields.
+So the finite components are exactly 2x2x2 cubes, and the winding ones
+are the face-diagonal staircases, such as the staircase tube below. This
+also explains why open PR 9054 needs relaxed carvings: a network winding
+in two or three directions cannot be carved with zero fields.
+
+An independent checker confirmed each proof step on 22,972 components
+from enumerations and samples on nine tori. Every finite component is the
+cube, and all 2,117 winding components have no interior site. It
+supplied the interior-site lemma used in Part 3. Its SAT search for a
+finite strip that does not wind found none in boxes up to 11x11x11, as
+Part 3 proves.
 
 ## Theorem 4 — the staircase tube is a gapped Z2 medium
 
@@ -234,8 +275,8 @@ twenty seconds.
   three directions. With nonzero fields, three-direction carvings are not
   exactly solvable in this sense. Open PR 9054 relaxes the carving for
   that reason. Their phases are not computed here.
-- It does not classify finite zero-field components beyond the enumerated
-  tori, where every one is the 2x2x2 cube.
+- It classifies zero-field components completely: cubes and
+  face-diagonal strips. It does not classify relaxed carvings.
 - It works at the compass point. The Heisenberg and Moriya couplings
   (`J`, `D`) break exact solvability. They are not treated.
 - The carving, the contents and the sign of `K` are supplied.

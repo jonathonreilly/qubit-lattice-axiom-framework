@@ -134,7 +134,12 @@ def components(U, Ls):
                         q.append(w)
         seen |= set(pos)
         rank = int(np.linalg.matrix_rank(np.array(sorted(wind)))) if wind else 0
-        res.append((len(pos), rank))
+        prim = None
+        if rank == 1:
+            v = np.array(sorted(wind)[0])
+            g = np.gcd.reduce(np.abs(v[v != 0]))
+            prim = tuple(int(c) for c in np.abs(v // g))
+        res.append((len(pos), rank, prim))
     return res
 
 
@@ -160,7 +165,7 @@ summary = []
 all_ok, tube_seen = True, False
 for Ls, maxsol, want_complete in (((4, 4, 4), 5000, True), ((5, 5, 5), 5000, True), ((6, 6, 6), 1500, False)):
     sols, complete = carvings(Ls, True, maxsol)
-    ranks = [r for U in sols for (n, r) in components(U, Ls)]
+    ranks = [r for U in sols for (n, r, _) in components(U, Ls)]
     all_ok &= max(ranks) <= 1 and (complete or not want_complete)
     tube_seen |= 1 in ranks
     summary.append(f"{'x'.join(map(str, Ls))}: {len(sols)}{' (complete)' if complete else ' sampled'}, ranks {sorted(set(ranks))}")
@@ -179,7 +184,7 @@ def surface_data(U, Ls):
         raise ValueError("not a carving")
     out = []
     comps_rank = {}
-    for (n, r), members in zip(components(U, Ls), component_members(U, Ls)):
+    for (n, r, prim), members in zip(components(U, Ls), component_members(U, Ls)):
         Dsizes = []
         for u in members:
             sg = [partner(u, ax) for ax in range(3)]
@@ -193,7 +198,7 @@ def surface_data(U, Ls):
         V = len(members)
         F = sum(Dsizes) / 4
         chi = V - 1.5 * V + F
-        out.append((V, sum(1 for k in Dsizes if k == 3), chi, r, min(Dsizes)))
+        out.append((V, sum(1 for k in Dsizes if k == 3), chi, r, min(Dsizes), prim))
     return out
 
 
@@ -222,21 +227,24 @@ surf_ok, types = True, set()
 for Ls, maxsol in (((4, 4, 4), 5000), ((5, 5, 5), 5000), ((6, 6, 6), 300)):
     sols, _ = carvings(Ls, True, maxsol)
     for U in sols:
-        for V, nint, chi, r, mind in surface_data(U, Ls):
+        for V, nint, chi, r, mind, prim in surface_data(U, Ls):
             surf_ok &= mind >= 2 and abs(chi - nint / 4) < 1e-12 and r <= 1 and (r == 0 or nint == 0)
+            surf_ok &= (r == 1) or (V == 8 and nint == 8)
+            if r == 1:
+                surf_ok &= sorted(prim) == [0, 1, 1]
             types.add((V, nint, chi, r) if r == 0 else ('tube', nint, chi, r))
 fin = sorted(t for t in types if t[0] != 'tube')
 tub = sorted(set(t[1:] for t in types if t[0] == 'tube'))
-check("proof step: every carved site has >= 2 closed squares; chi = interior/4; winding components are strips (no interior sites)",
+check("proof steps: every carved site has >= 2 closed squares; chi = interior/4; finite components are 2x2x2 cubes; winding components are strips with no interior site along a face diagonal",
       surf_ok and len(tub) > 0, f"finite component types (sites, interior, chi, rank) {fin}; tube (interior, chi, rank) {tub}")
 three_d, forced, sizes = 0, True, {}
 for Ls in ((4, 4, 4), (5, 5, 5)):
     sols, complete = carvings(Ls, False, 5000)
     for U in sols:
         comps = components(U, Ls)
-        if any(r == 3 for n, r in comps):
+        if any(r == 3 for n, r, _ in comps):
             three_d += 1
-            sizes.setdefault('x'.join(map(str, Ls)), set()).update(n for n, r in comps if r == 3)
+            sizes.setdefault('x'.join(map(str, Ls)), set()).update(n for n, r, _ in comps if r == 3)
             forced &= any(len(ax) == 3 for ax in touched_axes(U, Ls).values())
 check("without zero fields, three-direction networks occur and each forces a record touching all three axes",
       three_d > 0 and forced, f"{three_d} carvings with a three-direction component; sizes "

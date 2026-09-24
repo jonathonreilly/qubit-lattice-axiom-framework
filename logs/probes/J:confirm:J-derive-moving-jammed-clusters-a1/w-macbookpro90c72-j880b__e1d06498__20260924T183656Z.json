@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-jammed-clusters-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j880b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-jammed-clusters/referee_w-macbookpro90c72-j880b/check.py",
+ "seed": 75016,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e1d06498",
+ "started_utc": "20260924T183656Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the surface bond count is 6 L^2, growth sites are pure j=1, z_c=1/(6(1+(c0 p)^5)) at neutrality, and the L correction flips in (2, 21/10). The sweep convention is the attempt's assumption."
+ },
+ "review": "An aligned box has exactly 6 L^2 boundary bonds and only j=1 growth sites; the L correction of evaporation flips in (2, 21/10), attracting at cp=3/2 and repelling at cp=24/5.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-jammed-clusters:a1/; its files are probes/work/derive/moving-jammed-clusters/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-jammed-clusters/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "1406d19f4c83b4aba22ad6fa36d93c5b4244c11215273cfbc243ba6b880e6158",
+ "stdout_tail": "d to 6 L^2\nPASS for L=2..6 the box has face/edge/corner counts 5/4/3 and exactly 6 L^2 singly-touching empty sites\nPASS one move from a box reaches exactly 6 L^2 configurations, one per boundary bond\nPASS G/E tends to z c A1 (1+(c p)^5)\nPASS c0 A1 = 6, so the neutral threshold is 1/(6(1+(c0 p)^5))\nPASS the L coefficient of E has numerator 12(x^5 - 2 x^4 - 1)\nPASS f' = x^3 (5x-8), so f decreases on (0, 8/5) and increases after\nPASS the unique positive root sits in (2, 21/10): f(2)=-1, f(8/5)=-11317/3125, f(21/10)=94481/100000\nPASS weak point c0=1/2, cp=3/2, z_c=16/825\nPASS at (9/10) z_c the balance is attracting: positive at L=10, negative at L=11\nPASS at z_c on the weak side, G-E stays positive through L=29\nPASS at (11/10) z_c on the weak side, G-E stays positive through L=29\nPASS strong point c0=6/25, cp=24/5\nPASS at z_c on the strong side, G-E stays negative through L=39\nPASS at (3/2) z_c the balance is repelling: negative at L=13, positive at L=14\nPASS the slanted ramp has touching census {2: 6, 1: 36}, so a convex cluster can grow at j=2\nPASS L^2 log L / L^3 tends to 0, so a fixed number of sweeps reaches a vanishing fraction\nTOTAL FAIL=0\nHIT: confirmed - an aligned box grows with no critical size when cp is below the root of x^5=2x^4+1, and nucleates only above it\nSUMMARY: confirmed - the surface bond count is 6 L^2, growth sites are pure j=1, z_c=1/(6(1+(c0 p)^5)) at neutrality, and the L correction flips in (2, 21/10). The sweep convention is the attempt's assumption.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j880b",
+  "at_utc": "20260924T183702Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms a1: an aligned box has 6 L^2 boundary bonds, and the evaporation correction flips sign in (2, 21/10).",
+  "by": "w-macbookpro90c72-j880b",
+  "at_utc": "20260924T183702Z"
+ }
+}

@@ -1,0 +1,21 @@
+PASS surface count L^3-(L-2)^3 equals 6(L-2)^2+12(L-2)+8
+PASS occupied-empty bonds expand to 6 L^2
+PASS for L=2..6 the box has face/edge/corner counts 5/4/3 and exactly 6 L^2 singly-touching empty sites
+PASS one move from a box reaches exactly 6 L^2 configurations, one per boundary bond
+PASS G/E tends to z c A1 (1+(c p)^5)
+PASS c0 A1 = 6, so the neutral threshold is 1/(6(1+(c0 p)^5))
+PASS the L coefficient of E has numerator 12(x^5 - 2 x^4 - 1)
+PASS f' = x^3 (5x-8), so f decreases on (0, 8/5) and increases after
+PASS the unique positive root sits in (2, 21/10): f(2)=-1, f(8/5)=-11317/3125, f(21/10)=94481/100000
+PASS weak point c0=1/2, cp=3/2, z_c=16/825
+PASS at (9/10) z_c the balance is attracting: positive at L=10, negative at L=11
+PASS at z_c on the weak side, G-E stays positive through L=29
+PASS at (11/10) z_c on the weak side, G-E stays positive through L=29
+PASS strong point c0=6/25, cp=24/5
+PASS at z_c on the strong side, G-E stays negative through L=39
+PASS at (3/2) z_c the balance is repelling: negative at L=13, positive at L=14
+PASS the slanted ramp has touching census {2: 6, 1: 36}, so a convex cluster can grow at j=2
+PASS L^2 log L / L^3 tends to 0, so a fixed number of sweeps reaches a vanishing fraction
+TOTAL FAIL=0
+HIT: confirmed - an aligned box grows with no critical size when cp is below the root of x^5=2x^4+1, and nucleates only above it
+SUMMARY: confirmed - the surface bond count is 6 L^2, growth sites are pure j=1, z_c=1/(6(1+(c0 p)^5)) at neutrality, and the L correction flips in (2, 21/10). The sweep convention is the attempt's assumption.

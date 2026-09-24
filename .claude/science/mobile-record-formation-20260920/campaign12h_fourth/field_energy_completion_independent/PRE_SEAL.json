@@ -1,0 +1,37 @@
+{
+  "artifacts": {
+    "EXACT_RESULTS.json": {
+      "bytes": 8014,
+      "sha256": "a0380ee5b4a380a7b36912c33bcc39c06cf66038bad503a6bfe99e0239f0f4bf"
+    },
+    "EXACT_STDERR.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "EXACT_STDOUT.log": {
+      "bytes": 2374,
+      "sha256": "edf20e0ca8b567c3d7c6999cd78c49ef3cff5cae68779afc38fea3e4739d7505"
+    },
+    "EXECUTION_RECEIPT.json": {
+      "bytes": 2747,
+      "sha256": "90e2139d09e412c00b2df6a390a3c9da2021ee9df964910e616c03836bce417d"
+    },
+    "PRE_REPORT.md": {
+      "bytes": 24310,
+      "sha256": "3c552155829036066dea78f293e6a0120c4ae56ea701653bee176beeee7d7e71"
+    },
+    "SOURCE_MANIFEST.json": {
+      "bytes": 5035,
+      "sha256": "6015159dc9e65742336c4b1d2d134436996a9be192ef834de73178a624d99ec3"
+    },
+    "exact_control.py": {
+      "bytes": 11463,
+      "sha256": "294170fa9b47a9ed2f9d207bef79364ca7a28dc6f8da431b4001e7997b80d4cb"
+    }
+  },
+  "exposure_boundary_preserved": true,
+  "sealed_utc": "2026-09-24T00:55:41.566272+00:00",
+  "source_manifest_sha256": "6015159dc9e65742336c4b1d2d134436996a9be192ef834de73178a624d99ec3",
+  "stage": "PRE: before author/source comparison",
+  "status": "Conditional construction reconstructed, finite exact controls passed; no formal audit status, physical selector, reservoir or infinite-volume theorem."
+}

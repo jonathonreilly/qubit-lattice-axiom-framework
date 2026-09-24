@@ -1,0 +1,21 @@
+{
+  "sealed_utc": "2026-09-24T00:40:48.764957+00:00",
+  "standing": "root proposed conditional electric family; independent reconstruction/comparison pending",
+  "artifacts_sha256": {
+    "field_energy_completion_author/COMPLETION_AND_TERMINAL_PHASE_RESULTS.json": "3af79c54800f5c826a2d4f87260e49bbadc389cae203b9b2dfbbaff451dfc1e4",
+    "field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617",
+    "field_energy_completion_author/completion_and_terminal_phase_check.py": "7801af64e281a48eab09613b5ba8fd4c022d24d184a9f2258d18847772cf07cc"
+  },
+  "sources_sha256": {
+    "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+    "local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0",
+    "local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9",
+    "local_compensation_locality_author/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS.md": "5539bbe3171ba21933aa42c4cc191b787029e5f5c9220dc8c3ee255e4906f582",
+    "high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md": "de24a51431ba27f10d178286da2c95cc69081b06a9058d225d4840e3225388c0",
+    "high_flux_energy_extension_author/full_rotor_energy_control.py": "be79312d8557f025e3505429f768504e723dc811cd5d320192043f2b098cbdf4",
+    "high_flux_energy_author/cube_high_flux_birth.py": "c1a13a2c954095fe1fb76272d7f13abe498220ab1e95d167cc150e136e031a9c",
+    "local_compensation_independent/model.py": "686529f4cd3dd5d73e3373f2604e56615c83228b5813a3848f2a194db00ae128"
+  },
+  "supersedes_private_seal_sha256": "7b4fc192072e64528e4c61ba7de01c8f9eb1fe5f29b2c4cd9a31843acc97f855",
+  "revision_reason": "Before independent dispatch, clarify that the new exact H4 variance is still awaiting source comparison."
+}

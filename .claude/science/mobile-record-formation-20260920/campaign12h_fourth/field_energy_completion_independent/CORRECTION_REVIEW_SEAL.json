@@ -1,0 +1,31 @@
+{
+  "disposition": "All three requested qualifications fully addressed; no new overclaim found within scope.",
+  "frozen_author_note_sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617",
+  "prior_bound_artifacts_authenticated": {
+    "FINAL_SEAL.json": 11,
+    "PRE_SEAL.json": 7
+  },
+  "prior_bytes_unchanged": true,
+  "prior_seals_sha256": {
+    "FINAL_SEAL.json": "32dc1da84668012da48f37b450770a32bdc648f23b713ea10384f384d667d1da",
+    "PRE_SEAL.json": "3c06c43ca8e216532709f929f6241d6b5c7f1c9d05a1152ad578a297fc5b6aa9"
+  },
+  "review": {
+    "bytes": 2547,
+    "path": "CORRECTION_REVIEW.md",
+    "sha256": "e4e404923cb0f79ac2c4570a0fe9acea5c78bc703ff6ae74d4ef6c9dcfe5a6c6"
+  },
+  "science_reruns": 0,
+  "scope": [
+    "Gauss-compatible fully occupied sector existence and componentwise parity",
+    "P-supported initialization",
+    "sequential fixed-window microscopic limit and ideal-composition distinction"
+  ],
+  "sealed_utc": "2026-09-24T01:13:20.843796+00:00",
+  "source": {
+    "bytes": 2455,
+    "path": "../field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+    "sha256": "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa"
+  },
+  "stage": "Narrow source-scope correction review; no audit or landing verdict"
+}

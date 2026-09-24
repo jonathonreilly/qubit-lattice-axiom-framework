@@ -1,0 +1,108 @@
+{
+  "PRE_seal_sha256": "3c06c43ca8e216532709f929f6241d6b5c7f1c9d05a1152ad578a297fc5b6aa9",
+  "additional_fully_inspected_sources": [
+    {
+      "bytes": 15225,
+      "relative_to_campaign": "high_flux_energy_independent_v2/COMPARISON.md",
+      "sha256": "df7c7b17969f20411a2551cc0e53f6d515904c4eb389b52740d6ed0eaf06da9e"
+    },
+    {
+      "bytes": 15359,
+      "relative_to_campaign": "high_flux_energy_extension_author/SELECTED_H4_IMAGE_CERTIFICATE.json",
+      "sha256": "e2266dbcb0de8faddfcd265a6e7c3c995bb66cc9d9ce17f84826f360af676b39"
+    }
+  ],
+  "author_seal": {
+    "relative_to_campaign": "field_energy_completion_author/AUTHOR_SEAL.json",
+    "sha256": "96a39d1872cfa54b9699475d0d800dc3cf05cf3208a3404bb599048964a4c7dc"
+  },
+  "created_utc": "2026-09-24T01:09:21.076403+00:00",
+  "exposure_boundary": {
+    "PRE_preserved": true,
+    "checkpoint_inspected": false,
+    "git_mutations": false,
+    "microscopic_birth_energy_author_or_checker_inspected": false,
+    "network_used": false,
+    "writes_outside_assigned_directory": false
+  },
+  "fully_inspected_author_bound_artifacts_and_sources": [
+    {
+      "bytes": 15619,
+      "coverage": "Complete code/result read",
+      "relative_to_campaign": "field_energy_completion_author/COMPLETION_AND_TERMINAL_PHASE_RESULTS.json",
+      "sha256": "3af79c54800f5c826a2d4f87260e49bbadc389cae203b9b2dfbbaff451dfc1e4"
+    },
+    {
+      "bytes": 12525,
+      "coverage": "Complete source read; unchanged compensation-source reads reused from PRE",
+      "relative_to_campaign": "field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "sha256": "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617"
+    },
+    {
+      "bytes": 4449,
+      "coverage": "Complete code/result read",
+      "relative_to_campaign": "field_energy_completion_author/completion_and_terminal_phase_check.py",
+      "sha256": "7801af64e281a48eab09613b5ba8fd4c022d24d184a9f2258d18847772cf07cc"
+    },
+    {
+      "bytes": 11637,
+      "coverage": "Complete source read; unchanged compensation-source reads reused from PRE",
+      "relative_to_campaign": "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "bytes": 6721,
+      "coverage": "Complete source read; unchanged compensation-source reads reused from PRE",
+      "relative_to_campaign": "local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "bytes": 1289,
+      "coverage": "Complete source read; unchanged compensation-source reads reused from PRE",
+      "relative_to_campaign": "local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "bytes": 7985,
+      "coverage": "Complete source read; unchanged compensation-source reads reused from PRE",
+      "relative_to_campaign": "local_compensation_locality_author/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS.md",
+      "sha256": "5539bbe3171ba21933aa42c4cc191b787029e5f5c9220dc8c3ee255e4906f582"
+    },
+    {
+      "bytes": 9237,
+      "coverage": "Complete source read; unchanged compensation-source reads reused from PRE",
+      "relative_to_campaign": "high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md",
+      "sha256": "de24a51431ba27f10d178286da2c95cc69081b06a9058d225d4840e3225388c0"
+    },
+    {
+      "bytes": 6297,
+      "coverage": "Complete code/result read",
+      "relative_to_campaign": "high_flux_energy_extension_author/full_rotor_energy_control.py",
+      "sha256": "be79312d8557f025e3505429f768504e723dc811cd5d320192043f2b098cbdf4"
+    },
+    {
+      "bytes": 2878,
+      "coverage": "Complete code/result read",
+      "relative_to_campaign": "high_flux_energy_author/cube_high_flux_birth.py",
+      "sha256": "c1a13a2c954095fe1fb76272d7f13abe498220ab1e95d167cc150e136e031a9c"
+    },
+    {
+      "bytes": 4258,
+      "coverage": "Complete code/result read",
+      "relative_to_campaign": "local_compensation_independent/model.py",
+      "sha256": "686529f4cd3dd5d73e3373f2604e56615c83228b5813a3848f2a194db00ae128"
+    }
+  ],
+  "new_independent_model": {
+    "no_author_builder_import": true,
+    "path": "exact_control.py",
+    "sha256": "294170fa9b47a9ed2f9d207bef79364ca7a28dc6f8da431b4001e7997b80d4cb"
+  },
+  "scope_correction_required": "Cyclic terminal degeneracy presupposes existence of a Gauss-compatible fully occupied sector. Also retain P initialization and sequential fixed-window then large-spin convergence scope.",
+  "separate_high_flux_comparison_dependency": {
+    "FINAL_seal_sha256": "6c9baf295340a4f93129a7967aa49651b14cadf29470bc22da1ab8658ffd332f",
+    "all_final_artifacts_hash_authenticated": 69,
+    "comparison_sha256": "df7c7b17969f20411a2551cc0e53f6d515904c4eb389b52740d6ed0eaf06da9e",
+    "coverage": "Reuse completed independent H4 coefficient comparison; authentication of all 69 files does not claim a fresh mathematical reread of every artifact."
+  }
+}

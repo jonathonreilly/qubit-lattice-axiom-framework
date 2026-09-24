@@ -1,0 +1,36 @@
+{
+ "task": "P:8890",
+ "type": "pr-reexecution",
+ "lane": "ice-two-degenerate-polarizations-2026092",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8890",
+ "pr": 8890,
+ "branch": "claude/ice-two-degenerate-polarizations-20260923",
+ "git_sha": "64525707",
+ "started_utc": "20260924T014604Z",
+ "elapsed_s": 156.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=6 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "9bc671f72688c3a4186b346c31ef0362432096c5134cc58b43c6edbd0a95b624",
+ "stdout_tail": "PR #8890: docs(ice): the static photon has two degenerate transverse polarizations\nbranch claude/ice-two-degenerate-polarizations-20260923 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_static_photon_has_two_degenerate_transverse_polarizations_with_one_stiffness_2026_09_23.py: rc=0 PASS=6 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T014840Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

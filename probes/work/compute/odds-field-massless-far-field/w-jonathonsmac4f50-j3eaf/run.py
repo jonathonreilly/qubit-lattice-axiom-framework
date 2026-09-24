@@ -128,6 +128,25 @@ for L in (41, 61):
     out("N (3,1,2) cube %d, uniform odds held on the boundary (%d iterations, %.0f s): A(r) = v/(4 pi G_D) = %s ; fit r = 3..%d: A^-2 = %.3f + %.3f log r" % (
         L, it, time.time() - t0, " ".join("%.4f" % z for z in A), rr[-1], co[0], co[1]))
     fits.append(("cube", L, co[1]))
+    if L == 41:
+        # the lattice obeys the reduced scalar law v = (1/6) sum_y v_y - (5/12) v^3 (u = 5/2), checked site by site
+        Sn = sum(np.roll(lean, s_, axis=d) for d in range(3) for s_ in (1, -1))
+        resid = lean - Sn / 6
+        rel = [abs(resid[c + rr, c, c] / (-5 / 12 * lean[c + rr, c, c] ** 3) - 1) for rr in (3, 5, 8, 12)]
+        out("N (3,1,2) cube 41: full-map residual v - (1/6) sum v_y against -(5/12) v^3 at r = 3, 5, 8, 12: relative deviation %s" % " ".join("%.3f" % z for z in rel))
+        cube_resid = max(rel)
+# continuum radial law Lap v = u v^3, u = 5/2, v(3) matched, Dirichlet wall at R: the fitted b over the accessible range
+from scipy.integrate import solve_ivp
+from scipy.optimize import brentq
+def ode_b(R, rmax, uu=2.5, r0=3.0, v0=0.0832):
+    f = lambda r, y: [y[1], uu * y[0] ** 3 - 2 * y[1] / r]
+    shoot = lambda s_: solve_ivp(f, (r0, R), [v0, s_], rtol=1e-11, atol=1e-14, dense_output=True)
+    s_ = brentq(lambda s_: shoot(s_).y[0][-1], -v0 / r0 * 3, -v0 / r0 * 0.2, xtol=1e-14)
+    rs = np.exp(np.linspace(np.log(r0), np.log(rmax), 40)); v = shoot(s_).sol(rs)[0]; A = v / (1 / rs - 1 / R)
+    return np.linalg.lstsq(np.vstack([np.ones_like(rs), np.log(rs)]).T, 1 / A ** 2, rcond=None)[0][1]
+odeb = [(R, rm, ode_b(R, rm)) for R, rm in ((30, 20), (300, 30), (3000, 300), (30000, 3000), (3e5, 3e4))]
+out("N continuum check, Lap v = (5/2) v^3 with a wall at R: fitted b = " + ", ".join("%.2f (R = %g, r = 3..%g)" % (b_, R, rm) for R, rm, b_ in odeb)
+    + ": the wall at R = 30 gives b = %.2f, as the lattice cubes do; b approaches 2u = 5 only for r << R (slowly)" % odeb[0][2])
 for trip in ((14, 6, 7), (11, 5, 5)):
     om2 = omega(*trip)
     for (L, cube) in ((21, False), (41, True)):
@@ -143,8 +162,9 @@ for trip in ((14, 6, 7), (11, 5, 5)):
 print()
 bmeas = [f[2] for f in fits if f[0] == "cube"]
 print("SUMMARY: the unpolarised odds field on the massless surface is stable only for l2 < 1/36 (exact: effective cubic u = 5/2 - 75 l2/(1 - 6 l2)); "
-      "(3,1,2) (l2 = 0, u = 5/2, b = 5): cube fits b = %s; (14,6,7) (u = -35) and (11,5,5) (massless quadrupole) order spontaneously (one-site map runs to "
-      "lean ~0.9): no Coulomb-plus-log far field there" % ", ".join("%.2f" % z for z in bmeas))
+      "(3,1,2) (l2 = 0, u = 5/2, 2u = 5): the lattice field obeys Lap v = (5/2) v^3 site by site (max rel. deviation %.3f), the cube fits b = %s match the "
+      "continuum law with the same wall (%.2f at R = 30) and b -> 5 only for r << R; tori are dominated by images; (14,6,7) (u = -35) and (11,5,5) "
+      "(massless quadrupole) order spontaneously (one-site map runs to lean ~0.9): no Coulomb-plus-log far field there" % (cube_resid, ", ".join("%.2f" % z for z in bmeas), odeb[0][2]))
 if ordered[(14, 6, 7)] or ordered[(11, 5, 5)]:
     print("HIT: on the massless surface the log far field exists only where l2 < 1/36; at (14,6,7) the quadrupole the lean creates feeds it back "
           "(u = 5/2 - 75 l2/(1 - 6 l2) = -35 < 0) and at (11,5,5) the massless quadrupole is unstable at second order: the unpolarised field "

@@ -22,11 +22,18 @@
  "stdout_tail": "routes agree to 1e-8 and the anisotropies have opposite signs with margins far above both, so a convex mixture has T exactly isotropic (T is linear in the rule); lambda itself is a float\ntime 3 s\nSUMMARY: PARTIAL (answers a1's open item 3 and block 52's open route 1 up to one float). Exact: every unit content s is the barycentre of its forward, sign-compatible neighbours among the 26 (staircase interpolation between a u_i + b u_j + c u_k and (a-b)u_i + (b-c)(u_i+u_j) + c(u_i+u_j+u_k), t = (1-a)/(b+c)): continuous cubic-covariant forward rules with a constant speed AND a constant total rate exist, so the first-order capture law is rho for every content and a1's far shadow (flux form) is isotropic. Every sign-compatible rule with mean s has M_mm = |s_m|, so T1111 = 1/4, T1122 = 1/8 (block 52's least diffusion) and isotropy is T1212 = 1/16; no constant-rate rule has M(s) in span{I, s s^T} on the arcs (a, b, 0). Float: T1212 = 0.06490 (staircase), 0.05613 (axes-and-faces), so the mixture lambda = 0.2735 is isotropic.\nHIT: forward-only hop rules on the 26 neighbours with a constant speed and a constant total rate exist (every unit s is the barycentre of its forward sign-compatible neighbours; explicit continuous rule, at most five targets), giving an isotropic capture law and far shadow; for every sign-compatible rule with mean s, T1111 = 1/4 and T1122 = 1/8 exactly, so (a)'s isotropy is T1212 = 1/16, met (float quadrature) by a mixture of the staircase and an axes-and-faces rule\n",
  "checked": {
   "by": "w-macbookpro9927a-jfad7",
-  "at_utc": "20260924T200202Z",
+  "at_utc": "20260924T200311Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 83c086d8 differs from the current HEAD 818f5916 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage by the author (claude-opus-5-5, same family as a1); a referee of another family is needed. Exact: forward sign-compatible 26-neighbour rules with constant speed and constant total rate (barycentre theorem; staircase and axes-and-faces rules), so first-order single-site capture is rho for every content and the flux-form far shadow is 1/(4 pi); the least-diffusion diagonal M_mm = |s_m| of every sign-compatible rule gives T1111 = 1/4, T1122 = 1/8, so isotropy is T1212 = 1/16; no constant-rate rule has M in span{I, s s^T} on the arcs (a,b,0). Float: the isotropic mixture weight lambda = 0.2735 (two quadrature routes). Relation: a1's open item 3; landed block 52's No-Go routes 1 and 2. Nothing fixed.",
+  "by": "w-macbookpro9927a-jfad7",
+  "at_utc": "20260924T200311Z"
  }
 }

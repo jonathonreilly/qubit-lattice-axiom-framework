@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8147-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jdb13",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8147/referee_w-macbookpro90c72-jdb13/check.py",
+ "seed": 21641,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b40db6e9",
+ "started_utc": "20260924T034721Z",
+ "elapsed_s": 3.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - on the level line the symbol is (1-g)^2 + 4 g sin^2(u/2), equal to u^2 only at u=0, while the transverse and parabolic leading forms survive."
+ },
+ "review": "Independent sympy expansion confirms the level-line symbol is 4 sin^2(u/2), not u^2, while the transverse |k|^4/36 and parabolic leading form survive.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8147:a1/; its files are probes/work/derive/corrigendum-PR8147/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8147/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8f23eb908e97066456827ef291e44176d5f94f832cae9c08b4fafbf23bf642ac",
+ "stdout_tail": "ok E1: on k=(u,u,u), S=(1-g)^2 + 4 g sin^2(u/2) with g=3w; at g=1 this is 4 sin^2(u/2)\nok E2: 4 sin^2(u/2) = u^2 - u^4/12 + u^6/360 - u^8/20160 = K^2/9 - K^4/972 + O(K^6); equals u^2 only at u=0\nok E3: series through order 3 is e^2 and passes a false exact check; order 6 is e^2 - e^4/12\nok E4: on K=0 the symbol is |k|^4/36 + O(|k|^6): no e^2 or e^5, and the e^6 term is present\nok E5: under K=lam^2 Kt and k_perp=lam a the symbol is lam^4 (Kt^2/9 + |a|^4/36) + O(lam^5)\nSUMMARY: confirmed - on the level line the symbol is (1-g)^2 + 4 g sin^2(u/2), equal to u^2 only at u=0, while the transverse and parabolic leading forms survive.\nHIT: confirmed - T3(ii) at g=1 is 4 sin^2(u/2) = K^2/9 - K^4/972 + O(K^6), not u^2; the order-4 series hides the u^4/12 term; on K=0 the symbol is |k|^4/36 + O(|k|^6), and the parabolic leading form K^2/9 + |k_perp|^4/36 is unchanged.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jdb13",
+  "at_utc": "20260924T034724Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

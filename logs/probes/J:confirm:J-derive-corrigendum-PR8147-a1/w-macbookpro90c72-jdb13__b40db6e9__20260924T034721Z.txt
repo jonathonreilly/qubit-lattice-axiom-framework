@@ -1,0 +1,7 @@
+ok E1: on k=(u,u,u), S=(1-g)^2 + 4 g sin^2(u/2) with g=3w; at g=1 this is 4 sin^2(u/2)
+ok E2: 4 sin^2(u/2) = u^2 - u^4/12 + u^6/360 - u^8/20160 = K^2/9 - K^4/972 + O(K^6); equals u^2 only at u=0
+ok E3: series through order 3 is e^2 and passes a false exact check; order 6 is e^2 - e^4/12
+ok E4: on K=0 the symbol is |k|^4/36 + O(|k|^6): no e^2 or e^5, and the e^6 term is present
+ok E5: under K=lam^2 Kt and k_perp=lam a the symbol is lam^4 (Kt^2/9 + |a|^4/36) + O(lam^5)
+SUMMARY: confirmed - on the level line the symbol is (1-g)^2 + 4 g sin^2(u/2), equal to u^2 only at u=0, while the transverse and parabolic leading forms survive.
+HIT: confirmed - T3(ii) at g=1 is 4 sin^2(u/2) = K^2/9 - K^4/972 + O(K^6), not u^2; the order-4 series hides the u^4/12 term; on K=0 the symbol is |k|^4/36 + O(|k|^6), and the parabolic leading form K^2/9 + |k_perp|^4/36 is unchanged.

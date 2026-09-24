@@ -1,0 +1,10 @@
+PASS Wasserstein formula matches an independent LP on 75 random laws  [n=75]
+PASS at most one axis has a strict antipodal obstruction
+PASS C < 1 on 5.11..5.26 and C > 1 at 5.27 and 5.30, with 3 k1 >= 1  [5.11:0.96721 5.15:0.97573 5.19:0.98422 5.23:0.99266 5.25:0.99687 5.26:0.99897 5.27:1.00107 5.30:1.00737]
+PASS their exact C(526/100) is below 1 and matches the recomputed float
+PASS a+b<1 implies the larger recurrence root is below 1  [lambda=0.9245]
+PASS shared constant takes one antipodal value and one orthogonal value  [anti {0.32438806} orth {0.32574763}]
+PASS at p=5.1, alpha=5/4, recomputed k1 matches round 1's fraction  [0.332482895712]
+
+SUMMARY: confirmed - with alpha=27/20 the shared-predecessor constant C is below 1 from p=5.11 through 5.26 and above 1 at 5.27; the recursion then gives one invariant law.
+HIT: confirmed - independent LP matches W = TV + (alpha-1) M; recomputed C(5.26) = 0.99897 < 1 and C(5.27) > 1 on (p,1,2), so the six-axis level automaton has one invariant law up to p=5.26.

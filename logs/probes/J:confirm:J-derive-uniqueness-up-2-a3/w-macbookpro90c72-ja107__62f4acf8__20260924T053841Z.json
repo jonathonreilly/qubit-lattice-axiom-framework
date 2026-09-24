@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-uniqueness-up-2-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-ja107",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/uniqueness-up-2/referee_w-macbookpro90c72-ja107/check.py",
+ "seed": 28321,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62f4acf8",
+ "started_utc": "20260924T053841Z",
+ "elapsed_s": 2.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - with alpha=27/20 the shared-predecessor constant C is below 1 from p=5.11 through 5.26 and above 1 at 5.27; the recursion then gives one invariant law."
+ },
+ "review": "Independent LP matches the transport formula, and recomputed C is 0.99897 at p=5.26 and 1.00107 at p=5.27 on (p,1,2) with alpha=27/20, so the contraction certifies one invariant law through 5.26.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:uniqueness-up-2:a3/; its files are probes/work/derive/uniqueness-up-2/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/uniqueness-up-2/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "fe377c252b0601ef58fbc209f5a7c3efa36d6185424ebcb4d86f057a7f2cd4dd",
+ "stdout_tail": "PASS Wasserstein formula matches an independent LP on 75 random laws  [n=75]\nPASS at most one axis has a strict antipodal obstruction\nPASS C < 1 on 5.11..5.26 and C > 1 at 5.27 and 5.30, with 3 k1 >= 1  [5.11:0.96721 5.15:0.97573 5.19:0.98422 5.23:0.99266 5.25:0.99687 5.26:0.99897 5.27:1.00107 5.30:1.00737]\nPASS their exact C(526/100) is below 1 and matches the recomputed float\nPASS a+b<1 implies the larger recurrence root is below 1  [lambda=0.9245]\nPASS shared constant takes one antipodal value and one orthogonal value  [anti {0.32438806} orth {0.32574763}]\nPASS at p=5.1, alpha=5/4, recomputed k1 matches round 1's fraction  [0.332482895712]\n\nSUMMARY: confirmed - with alpha=27/20 the shared-predecessor constant C is below 1 from p=5.11 through 5.26 and above 1 at 5.27; the recursion then gives one invariant law.\nHIT: confirmed - independent LP matches W = TV + (alpha-1) M; recomputed C(5.26) = 0.99897 < 1 and C(5.27) > 1 on (p,1,2), so the six-axis level automaton has one invariant law up to p=5.26.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja107",
+  "at_utc": "20260924T053848Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent recomputation of C(p) confirms the contraction through p=5.26 and its failure at 5.27.",
+  "by": "w-macbookpro90c72-ja107",
+  "at_utc": "20260924T053848Z"
+ }
+}

@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of eighteen open campaign blocks (PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088), all built on one supplied and unadopted local dynamics clause, with nineteen recorded decision points. Three findings. (a) Quantum rules and dynamics: under locality of marginals (D-loc), the lock (a record leaves its own site in its possibility), two-possibility menus, a closed lattice whose only irreversible events are records, continuous time-homogeneous nearest-neighbour evolution and covariance, the following all follow: the Born law Tr(P_q rho), the compression update at distant sites, antipodal menus, and linear, completely positive, unitary evolution of the clause's two-site form. (b) Exact emergent content: under full soldering, record carvings give exactly solvable Kitaev models: Majorana fermions in a Z2 gauge field, in one dimension and, with relaxed carvings, in three. Zero-field carving components are exactly 2x2x2 cubes or face-diagonal strips. (c) What further sectors need: U(1) link fields freeze under every two-site generator with an exact Gauss law, and move by a one-neighbourhood plaquette ring or a soft vertex Gauss energy. The landed linear-gravity tensor field is moved by no single neighbourhood (integer slots). SU(N) links need 2N states, so composite links. Time-reversal-odd star terms need soldering and break the carvings' solvability. U(1) charges under the clause are bosonic Gauss defects. The runner re-derives one identity per block and checks that the declared decision points are exactly those used. No decision point is adopted, no block is audited, and no physical identification is made."
+claim_scope: "Synthesis of eighteen open campaign blocks (PRs 9040, 9041, 9043, 9046, 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088), all built on one supplied and unadopted local dynamics clause, with nineteen recorded decision points. Three findings. (a) Quantum rules as consistency conditions inside supplied kinematics. Take the Hilbert-space kinematics the clause brings (density operators, tensor products, purifications), records updating by compression (the lock, the support condition and the distant update), and odds that are a function of the site's conditional state. Then locality of marginals at equal time makes the odds affine, and the support condition fixes them to Tr(P_q rho) with antipodal two-possibility menus. The distant update is the one consistent with locality of marginals, affine joint laws and Born marginals: self-consistent, not derived. With the clause's own bond as the entangling test, a site's evolution between records with a decoupled partner is linear and completely positive. It is unitary exactly when records are the only irreversible events, which restates reversibility for channels. The generator is Hermitian, and its two-site form restates the range imposed on the generator. This is the standard no-signalling route placed in the framework. (b) Exact emergent content: under full soldering, record carvings give exactly solvable Kitaev models: Majorana fermions in a Z2 gauge field, in one dimension and, with relaxed carvings, in three. Zero-field carving components are exactly 2x2x2 cubes or face-diagonal strips. (c) What further sectors need. U(1) link fields freeze under every two-site generator with an exact Gauss law, and move by a one-neighbourhood plaquette ring or a soft vertex Gauss energy. The landed linear-gravity tensor field is moved by no single neighbourhood (integer slots). SU(N) links need 2N states, so composite links. Covariance allows time-reversal-odd star terms, even possibility covariance (an off-centre octant chirality), but on the cube carving none keeps the Majoranas free; under soldering the tripod keeps the Z2 fluxes and makes the Majoranas interact. U(1) charges under the clause are bosonic Gauss defects. The runner re-derives one identity per block and checks that the declared decision points are exactly those used. No decision point is adopted, no block is audited, and no physical identification is made."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
@@ -22,21 +22,35 @@ covariant nearest-neighbour two-site generator, as a decision point. It did
 not adopt it, and it asked what that clause generates and what each other
 sector needs beyond it.
 
-1. **The quantum rules follow from a few readings.** Given the readings
-   below, the following all follow (open PRs 9083–9086):
-   - the Born law `Tr(P_q ρ)`;
-   - the compression update of distant sites ("collapse");
-   - antipodal record menus;
-   - linear, completely positive, unitary evolution between records, with
-     the clause's two-site form.
+1. **The quantum rules are consistency conditions inside supplied
+   kinematics** (open PRs 9083–9086).
+   - **The setting.** Take three things:
+     - the Hilbert-space kinematics the clause brings: density operators,
+       tensor products, purifications (the axioms fix no cross-site
+       composition law);
+     - records updating by compression: the lock, the support condition
+       and the distant update;
+     - odds that are a function of the site's conditional state.
+   - **The record law.** Locality of marginals at equal time makes the odds
+     affine. The support condition then fixes them to `Tr(P_q ρ)`, with
+     antipodal two-possibility menus.
+   - **The collapse.** The distant update is the one consistent with
+     locality of marginals, affine joint laws and Born marginals. That is
+     self-consistency, not derivation. The lock alone does not give it: a
+     record that only resets its own site passes locality of marginals with
+     anti-Born odds.
+   - **The dynamics.** With the clause's own bond as the entangling test, a
+     site's evolution between records, with a decoupled partner, is linear
+     and completely positive.
+     - It is unitary exactly when records are the only irreversible events,
+       which for channels restates reversibility.
+     - The generator is Hermitian. Its two-site form restates the range
+       imposed on the generator.
 
-   The readings are:
-   - locality of marginals (D-loc);
-   - the lock (a record leaves its own site in its possibility);
-   - two-possibility menus;
-   - a closed lattice whose only irreversible events are records;
-   - continuous time-homogeneous nearest-neighbour evolution;
-   - covariance.
+   This is the standard no-signalling route (prior art: Gisin 1990; Simon,
+   Bužek and Gisin 2001; Masanes, Galley and Müller 2019), placed in the
+   framework. What it adds is an autonomous recorded randomizer and one
+   locality reading that constrains both the law and the dynamics.
 2. **Exact emergent matter and gauge content.**
    - Under full soldering, records carve the medium into exactly solvable
      Kitaev models (open PRs 9048, 9054). These are Majorana fermions in a
@@ -47,27 +61,26 @@ sector needs beyond it.
 
    | Sector | What it needs beyond the two-site clause | Blocks |
    |---|---|---|
-   | Quantum probability: Born law, frequencies, Bell values | nothing further; the readings above | 9041, 9043, 9046, 9052, 9083–9086 |
+   | Quantum probability: Born law, frequencies, Bell values | nothing further, inside the supplied kinematics and readings | 9041, 9043, 9046, 9052, 9083–9086 |
    | Z2 gauge field and Majorana fermions | full soldering at the compass point, plus a record carving | 9048, 9054 |
    | U(1) photon | one neighbourhood: a plaquette ring, or a soft vertex Gauss energy | 9066, 9069, 9072 |
    | Landed linear-gravity tensor field (E-slot moves, integer slots) | more than one neighbourhood | 9077 |
    | SU(2), SU(3) gauge fields | composite links of at least 2 and 3 qubits (6 for independent Standard Model fields, 4 for one joint link) | 9081 |
-   | Time-reversal-odd (chiral) content | a star term under soldering, which breaks the carvings' solvability | 9088 |
+   | Time-reversal-odd (chiral) content | covariant star terms exist, but none keeps the cube's Majoranas free; the soldered tripod keeps the Z2 fluxes and interacts | 9088 |
 
 ## Decision points
 
 These are recorded so each result names what it rests on. None is adopted.
-Some are now derived from others, as marked.
 
 | Point | Content | Used by | Status |
 |---|---|---|---|
-| D-dyn | a covariant nearest-neighbour two-site Hermitian generator | 9040–9077, 9083 | form follows from D-loc, D-closed, D-onlyrec, D-rev and covariance (9084, 9086) |
+| D-dyn | a covariant nearest-neighbour two-site Hermitian generator, with the Hilbert-space kinematics it acts on | 9040–9077, 9083–9085 | supplied; unitarity gives a Hermitian generator, and the two-site form restates the imposed range (9084) |
 | D-pc | possibility covariance (every internal rotation) | 9040, 9084, 9088 | supplied |
 | D-sold | full soldering of the rotations to the Bloch vector | 9040, 9048, 9050, 9054, 9066, 9069, 9072, 9084, 9088 | supplied |
-| D-perm | records update by compression | 9041, 9043, 9046, 9048, 9054, 9083, 9084, 9085 | distant part follows from D-loc and the lock (9085) |
-| D-tr | odds read from the state by the trace rule | 9041, 9043, 9046, 9050, 9052, 9072 | follows from D-loc, D-perm and the menu (9083) |
+| D-perm | records update by compression: the lock, the support condition and the distant update | 9041, 9043, 9046, 9048, 9054, 9083, 9084, 9085 | supplied; the distant update is the one consistent with D-loc, affine joint laws and Born marginals (9085); the lock alone does not give it (9083) |
+| D-tr | odds are a function of the site's (conditional) state | 9041, 9043, 9046, 9050, 9052, 9072, 9083, 9084, 9085 | supplied; the trace-rule form follows from D-loc, D-perm and the menu (9083) |
 | D-relax | relaxation profile: which state records form from | 9041, 9052 | supplied (it fixes the state, not the law) |
-| D-menu | antipodal menus | 9041, 9043, 9050, 9052, 9083, 9085 | antipodal follows for two-possibility menus (9085) |
+| D-menu | antipodal menus | 9041, 9043, 9050, 9052, 9083, 9085 | antipodal follows for two-possibility menus from the support condition and normalization (9085) |
 | D-set | independently formed setting records | 9043 | supplied |
 | D-nn | Admissibility conditions: records alone, or states | 9043, 9046 | records alone leave the dynamics unreadable (9046) |
 | D-pattern | a record carving and its contents | 9048, 9054, 9066, 9069, 9072, 9088 | supplied |
@@ -75,11 +88,11 @@ Some are now derived from others, as marked.
 | D-roles | doubled-coordinate roles (vertex, link, plaquette, cube sites) | 9066, 9069, 9072, 9077, 9081 | supplied |
 | D-gauss | a Gauss law on link sites, exact or as a soft vertex-star energy | 9066, 9069, 9072, 9077, 9081 | supplied |
 | D-star | a covariant generator on a plaquette site's four link neighbours | 9072 | supplied |
-| D-loc | marginal record distributions do not depend on distant record formation | 9083, 9084, 9085, 9086 | supplied reading of physical locality |
-| D-rev | reversible, continuous-time, nearest-neighbour evolution between records | 9084 | reversibility follows from D-closed and D-onlyrec (9086) |
-| D-closed | the lattice is the whole system | 9086 | supplied reading |
-| D-onlyrec | records are the only irreversible events | 9086 | supplied reading of the Record axiom |
-| D-chir | a time-reversal-odd three-spin star term | 9088 | supplied |
+| D-loc | at equal time, marginal record distributions do not depend on distant record formation | 9083, 9084, 9085 | supplied reading of physical locality; at equal time only; given the distant update it is equivalent to affinity (9083) |
+| D-rev | reversible, continuous-time, time-homogeneous evolution with a nearest-neighbour generator | 9084 | supplied; its reversibility is D-chan with D-onlyrec (9086) |
+| D-chan | the evolution of a finite region between records is a channel | 9086 | supplied |
+| D-onlyrec | records are the only irreversible events | 9086 | supplied reading; for channels it is reversibility (9086) |
+| D-chir | a time-reversal-odd star term of weight at most three | 9088 | supplied |
 
 ## The blocks
 
@@ -96,25 +109,33 @@ Some are now derived from others, as marked.
   leaves no readable trace.
 - **9052 — frequencies.** The sequence law is the joint trace rule, and
   frequencies follow the one-shot odds exactly when correlations cluster.
-- **9083 — the Born law.**
-  - A distant record is a recorded randomizer. The clause can carry a
-    purification to any distance, and recording the partner steers the site
-    to either end of any chord.
-  - Under D-loc the law is affine. That holds even with the partner's
-    weights from the same law, where D-loc leaves `λ ∈ {0, 1}`.
-  - Compression consistency then forces `E_q = P_q`.
-  - This reduces the landed affine/Born gate's first obligation to D-loc
-    and settles its third.
-- **9084 — linear dynamics.** Under D-loc, the evolution between records is
-  affine for a partner decoupled during it. Positivity of joint records
-  after the clause's own rotations and bonds makes it completely positive.
-  With reversibility it is unitary, with the clause's two-site form.
-- **9085 — the collapse.** Joint record effects whose marginals stay Born
-  are product projectors. So a record leaves every other site in its Lüders
-  conditional state, and two-possibility menus are antipodal.
-- **9086 — unitarity.** In a closed lattice whose only irreversible events
-  are records, evolution between records keeps pure states pure and
-  distinguishable, and so it is unitary.
+- **9083 — the trace rule.**
+  - Inside the clause's kinematics and under the compression update, a
+    distant record is a recorded randomizer. The clause carries a
+    purification to any distance, and recording the partner steers the
+    site to either end of any chord.
+  - D-loc at equal time makes the law affine. Given the distant update, it
+    is equivalent to affinity, so it restates affinity as a locality
+    reading. The partner's weights can come from the same law, where D-loc
+    leaves `λ ∈ {0, 1}`.
+  - The support condition forces `E_q = P_q`.
+  - The lock alone does not give the law: a replacement update passes D-loc
+    with anti-Born odds.
+  - D-loc fails at later times, where the dynamics connects the sites.
+- **9084 — linear dynamics.**
+  - Under D-loc, a site's evolution between records, with a decoupled
+    partner, is affine. Tested with the clause's own rotation and bond, it
+    is completely positive.
+  - Reversibility gives a Hermitian generator.
+  - The clause's evolution is not a nearest-neighbour unitary at finite
+    time. So its two-site form restates the range imposed on the generator.
+- **9085 — the distant update.** Joint record effects with Born marginals
+  are product projectors, so the distant update consistent with them is
+  compression. The steering that gives joint affinity assumes the same
+  update, so this is self-consistency and uniqueness.
+- **9086 — reversibility.** For channels, "records are the only
+  irreversible events" is reversibility (Wigner's condition), and it gives
+  the unitary form.
 
 **Exact emergent content.**
 - **9040 — the couplings.** Covariant two-site couplings have dimension 6,
@@ -130,10 +151,16 @@ Some are now derived from others, as marked.
 - **9054 — three dimensions.** A 20-site relaxed network is exactly
   solvable, with genuine flux (vison `0.111|K|`). Its Majoranas are gapped
   at `0.618|K|` above two flat zero modes per cell.
-- **9088 — time-reversal breaking.**
-  - Possibility covariance allows no T-odd three-spin star term.
-  - Under the landed actions such terms exist, but none has Kitaev's
-    solvable pattern, and on the cube none preserves the loop operators.
+- **9088 — time-reversal-odd star terms.**
+  - Possibility covariance allows one at weight at most three: the
+    orientation-weighted chirality of each octant's three neighbours, off
+    the centre.
+  - The landed actions allow 68, 50, 49 and 37 dimensions. None has
+    Kitaev's solvable pattern.
+  - On the cube, no covariant odd term keeps the loops and stays bilinear
+    in the Majoranas.
+  - Under the axis and full actions, the tripod keeps the loops and is
+    quartic.
 
 **What further sectors need.**
 - **9066 — the Gauss freeze.**
@@ -163,13 +190,18 @@ Some are now derived from others, as marked.
 
 ## What stays open
 
+- **The kinematics.** The quantum rules above are consistency conditions
+  inside Hilbert-space kinematics that the clause supplies. Deriving that
+  kinematics, meaning the cross-site composition law, from the axioms is
+  open.
 - **Gauge group.** The exact gauge field found is Z2. U(1) needs a
   companion term of Admissibility shape. SU(2) and SU(3) need composite
   links, and no superlattice is chosen.
 - **Charged chiral fermions.** The emergent fermions are Z2-charged
   Majoranas, and the clause's U(1) charges are bosons. No gapless or Weyl
-  case appeared among 15 three-direction networks. Covariant time-reversal
-  breaking destroys the carvings' solvability.
+  case appeared among 15 three-direction networks. No covariant
+  time-reversal-odd star term keeps the cube's Majoranas free. The soldered
+  tripod keeps the fluxes, and its interacting dynamics is unexplored.
 - **Gravity.** No long-range rate field is generated. The landed tensor
   field needs dynamics wider than one neighbourhood.
 - **Parameters and supplied structure.**
@@ -185,8 +217,8 @@ Some are now derived from others, as marked.
   - The relaxation profile of open PR 9041 therefore needs unrecorded
     surroundings that act as an environment. How that environment fixes
     the profile is not derived.
-- **The readings themselves.** D-loc, the lock, D-closed, D-onlyrec,
-  continuous time, the range and covariance are recorded readings, not
+- **The readings themselves.** The kinematics, D-perm, D-tr, D-loc, D-chan,
+  D-onlyrec, continuous time, the range and covariance are supplied, not
   derived from the axiom text.
 
 ## Consolidated certificates
@@ -219,18 +251,22 @@ pass in about two seconds.
 - **13.** The scalar SU(2) commutant on a qubit, and covariant link
   operators on the 4-dimensional SU(2) link.
 - **14.** Steering of random chords, the trace rule's exact steered average,
-  and a cubic deformation's shift.
+  a cubic deformation's shift, and an anti-Born law passing locality of
+  marginals under a replacement update.
 - **15.** A Weinberg-type precession's signalling shift, and the negative
   partial transpose of a singlet.
 - **16.** The one-line range intersection, and tomography matching the
   Lüders state.
 - **17.** Proportional Kraus operators, and a random channel's purity loss.
-- **18.** The vanishing covariant scalar-chirality sum.
+- **18.** Vanishing through-centre chirality sums, the invariant
+  orientation-weighted octant chirality, and the tripod as a product of
+  three bond operators with four odd-degree sites.
 
 ## Independent checks
 
 Separate checkers wrote their own code without reading the campaign's
-runners. Every computation they repeated agreed. Where the prose went
+runners, and a final adversarial review examined the quantum-rules chain.
+Every computation they repeated agreed. Where the prose went
 further than the theorems, it has been corrected.
 - **Blocks 2–5.** 10 of 10 claims pass. "π flux" means an oriented
   bond-variable product of `−1`, which is loop eigenvalue `W = +1`.
@@ -259,7 +295,31 @@ further than the theorems, it has been corrected.
   - D-loc is scoped to decoupled partners;
   - a joint Standard Model link needs 4 qubits.
 - **The collapse, unitarity and time-reversal blocks (9085, 9086, 9088).**
-  The check is still running.
+  All computations pass. Corrected since:
+  - 9085 claimed the distant collapse follows from D-loc and the lock. That
+    was circular, and it now states self-consistency and uniqueness. The
+    orientation comes from the support condition, and the positivity step
+    of its proof is repaired.
+  - 9086's reading is reversibility for channels. Closure did no
+    mathematical work, the whole-region channel is now a premise, and the
+    lemma is corrected.
+  - 9088 missed three things: fields, the off-centre octant chirality, and
+    the loop-keeping tripod. It now classifies all odd star terms of weight
+    at most three, with a Majorana-degree test.
+- **An adversarial review of Finding 1 (9083–9086).** It raised these
+  points:
+  - the Hilbert-space kinematics was used but not listed;
+  - the collapse was circular;
+  - the orientation comes from the support condition, not the lock;
+  - D-loc is equivalent to affinity given the distant update;
+  - the conditional-state premise was dropped;
+  - the two-site form is imposed;
+  - unitarity is inside D-onlyrec;
+  - D-loc fails at later times.
+
+  Finding 1 now carries the review's proposed scope. The blocks carry new
+  checks for the distant update's role, the equal-time scope and the
+  imposed range.
 
 ## What this does not do
 

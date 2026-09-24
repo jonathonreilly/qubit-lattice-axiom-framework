@@ -44,17 +44,22 @@ L. Ledger: the decision points used by the eighteen blocks are exactly the
    sites are never adjacent; no single neighbourhood supports a move.
 13. (9081) The SU(2) action on one qubit has scalar commutant; the
    2N-dimensional link (N, 1) + (1, N) carries a covariant link operator.
-14. (9083) A record on a purifying partner steers a qubit to either end of
-   a chord with the chord weights; the trace rule matches the steered
-   average and a cubic deformation does not.
+14. (9083) Under the compression update a record on a purifying partner
+   steers a qubit to either end of a chord with the chord weights; the
+   trace rule matches the steered average and a cubic deformation does
+   not; with a replacement update that keeps only the lock, an anti-Born
+   law passes locality of marginals too.
 15. (9084) A Weinberg-type precession lets a distant record shift a later
    marginal; channels do not; the transpose on half a singlet is negative.
 16. (9085) Joint record effects with Born marginals are product projectors,
-   so a record updates its partner to the Lueders conditional state.
+   so the distant update consistent with them is the Lueders conditional
+   state.
 17. (9086) Proportional Kraus operators give a unitary conjugation; random
    non-unitary channels mix some pure state.
-18. (9088) Under possibility covariance the covariant scalar-chirality star
-   sum vanishes.
+18. (9088) Under possibility covariance time-reversal-odd star terms through
+   the centre vanish, while the orientation-weighted octant chirality is
+   invariant; the tripod is a product of three bond operators, so its
+   Majorana degree is 4.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -98,11 +103,11 @@ def unit(v):
 
 # ------------------------------------------------------------------ ledger
 DECLARED = {
-    "D-dyn": "covariant nearest-neighbour two-site Hermitian generator",
+    "D-dyn": "covariant nearest-neighbour two-site Hermitian generator, with the Hilbert-space kinematics it acts on",
     "D-pc": "possibility covariance (versus a soldering)",
     "D-sold": "full soldering of the rotations to the Bloch vector",
-    "D-perm": "record permanence as compression onto record projectors",
-    "D-tr": "odds read from the site's state by the trace rule",
+    "D-perm": "records update by compression: the lock, the support condition and the distant update",
+    "D-tr": "odds are a function of the site's (conditional) state",
     "D-relax": "relaxation profile / which state records form from",
     "D-nn": "Admissibility conditions: records alone versus quantum states",
     "D-menu": "antipodal menus",
@@ -112,11 +117,11 @@ DECLARED = {
     "D-roles": "doubled-coordinate roles (vertex, link, plaquette, cube sites)",
     "D-gauss": "a Gauss law on link sites, exact or as a soft vertex-star energy",
     "D-star": "a covariant generator on a plaquette site's four link neighbours",
-    "D-loc": "marginal record distributions do not depend on distant record formation",
-    "D-rev": "reversible, continuous-time, nearest-neighbour evolution between records",
-    "D-closed": "the lattice is the whole system (nothing outside it)",
+    "D-loc": "at equal time, marginal record distributions do not depend on distant record formation",
+    "D-rev": "reversible, continuous-time, time-homogeneous evolution with a nearest-neighbour generator",
+    "D-chan": "the evolution of a finite region between records is a channel",
     "D-onlyrec": "records are the only irreversible events",
-    "D-chir": "a time-reversal-odd three-spin star term",
+    "D-chir": "a time-reversal-odd star term of weight at most three",
 }
 USED = {
     9040: {"D-dyn", "D-pc", "D-sold"},
@@ -132,10 +137,10 @@ USED = {
     9072: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-star", "D-tr", "D-pattern"},
     9077: {"D-dyn", "D-roles", "D-gauss"},
     9081: {"D-roles", "D-gauss"},
-    9083: {"D-dyn", "D-perm", "D-menu", "D-loc"},
-    9084: {"D-loc", "D-perm", "D-rev", "D-pc", "D-sold"},
-    9085: {"D-loc", "D-perm", "D-menu"},
-    9086: {"D-loc", "D-closed", "D-onlyrec"},
+    9083: {"D-dyn", "D-perm", "D-tr", "D-menu", "D-loc"},
+    9084: {"D-dyn", "D-loc", "D-perm", "D-tr", "D-rev", "D-pc", "D-sold"},
+    9085: {"D-dyn", "D-loc", "D-perm", "D-tr", "D-menu"},
+    9086: {"D-chan", "D-onlyrec"},
     9088: {"D-pc", "D-sold", "D-chir", "D-pattern"},
 }
 used_all = set().union(*USED.values())
@@ -629,9 +634,23 @@ for _ in range(100):
     cub = lambda x: 0.5 * (1 + x + 0.3 * (x ** 3 - x))
     worst_tr = max(worst_tr, abs(pw * tr(n1 @ mm) + (1 - pw) * tr(n2 @ mm) - tr(r @ mm)))
     shift_cub = max(shift_cub, abs(pw * cub(n1 @ mm) + (1 - pw) * cub(n2 @ mm) - cub(r @ mm)))
-check("a distant record steers every chord; the trace rule matches the steered average, a cubic deformation does not",
-      worst_steer < 1e-10 and worst_tr < 1e-12 and shift_cub > 1e-2,
-      f"steering deviation {worst_steer:.1e}; trace-rule discrepancy {worst_tr:.1e}; cubic shift {shift_cub:.3f}")
+# replacement update (the lock alone): the site keeps its reduced state, so any normalized menu law passes D-loc
+anti = lambda x: 0.5 * (1 - x)
+rep_shift, rep_gap = 0.0, 0.0
+for _ in range(100):
+    v4 = rng.normal(size=4) + 1j * rng.normal(size=4)
+    v4 /= np.linalg.norm(v4)
+    M4 = v4.reshape(2, 2)
+    rs_, rp_ = bl(M4 @ M4.conj().T), bl(M4.T @ M4.conj())
+    nn_, mm = rng.normal(size=3), rng.normal(size=3)
+    nn_, mm = nn_ / np.linalg.norm(nn_), mm / np.linalg.norm(mm)
+    avg = sum(anti(sg * (rp_ @ nn_)) * anti(rs_ @ mm) for sg in (1, -1))
+    rep_shift = max(rep_shift, abs(avg - anti(rs_ @ mm)))
+    rep_gap = max(rep_gap, abs(anti(rs_ @ mm) - 0.5 * (1 + rs_ @ mm)))
+check("a distant record steers every chord; the trace rule matches the steered average, a cubic deformation does not; the lock alone lets anti-Born pass",
+      worst_steer < 1e-10 and worst_tr < 1e-12 and shift_cub > 1e-2 and rep_shift < 1e-12 and rep_gap > 0.3,
+      f"steering deviation {worst_steer:.1e}; trace-rule discrepancy {worst_tr:.1e}; cubic shift {shift_cub:.3f}; "
+      f"replacement update: anti-Born D-loc shift {rep_shift:.0e}, gap to the trace rule {rep_gap:.2f}")
 
 # ------------------------------------------ 15: linear dynamics
 print("15. locality of marginals forces linear dynamics")
@@ -671,8 +690,8 @@ negev = np.linalg.eigvalsh(pt).min()
 check("a Weinberg-type precession lets a distant record shift a later marginal; the transpose on half a singlet is negative",
       shift > 1e-2 and abs(negev + 0.5) < 1e-12, f"precession shift {shift:.3f}; transpose eigenvalue {negev:.3f}")
 
-# ------------------------------------------ 16: collapse from locality
-print("16. collapse from locality of marginals")
+# ------------------------------------------ 16: the consistent distant update
+print("16. compression is the distant update consistent with locality of marginals")
 Pm_ = [np.array([[0, 1], [1, 0]], dtype=complex), np.array([[0, -1j], [1j, 0]]), np.diag([1.0 + 0j, -1.0])]
 
 
@@ -698,11 +717,11 @@ for _ in range(50):
         pp = np.real(np.trace(np.kron(P_, prj(np.eye(3)[k], 1)) @ rho_)) / pq_
         tom = tom + 0.5 * (2 * pp - 1) * Pm_[k]
     dev_ = max(dev_, np.linalg.norm(tom - lued))
-check("joint record effects with Born marginals are product projectors; the partner's post-record state is the Lueders state",
+check("joint record effects with Born marginals are product projectors; the consistent partner state is the Lueders state",
       inter_ == 1 and dev_ < 1e-12, f"range intersection dimension {inter_}; tomography vs Lueders deviation {dev_:.1e}")
 
-# ------------------------------------------ 17: unitarity from closure
-print("17. a closed lattice evolves unitarily between records")
+# ------------------------------------------ 17: records as the only irreversible events
+print("17. records as the only irreversible events restate reversibility")
 from scipy.linalg import expm as _expm2
 H_ = rng.normal(size=(3, 3)) + 1j * rng.normal(size=(3, 3))
 U_ = _expm2(-1j * (H_ + H_.conj().T))
@@ -720,8 +739,8 @@ low = min(np.real(np.trace(np.linalg.matrix_power(sum(K @ np.outer(w_, w_.conj()
 check("proportional Kraus operators give a unitary conjugation; a random non-unitary channel mixes some pure state",
       dev_u < 1e-12 and low < 0.99, f"proportional-Kraus deviation {dev_u:.1e}; lowest output purity {low:.3f}")
 
-# ------------------------------------------ 18: covariant time-reversal breaking
-print("18. covariant time-reversal breaking")
+# ------------------------------------------ 18: time-reversal-odd star terms
+print("18. time-reversal-odd star terms")
 NBv = [np.array(v) for v in [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]]
 
 
@@ -740,8 +759,30 @@ for kind in ("perp", "collinear"):
         tot[(i2, k2)] = tot.get((i2, k2), 0) + 1
         tot[(k2, i2)] = tot.get((k2, i2), 0) - 1
     zero_all &= all(abs(v) < 1e-12 for v in tot.values())
-check("under possibility covariance the covariant scalar-chirality star sum vanishes (perpendicular and collinear pairs)",
-      zero_all, "every group-averaged coefficient 0")
+# the orientation-weighted octant chirality: coefficient det[d1 d2 d3] on ordered octant triples
+octs = [(d1, d2, d3) for d1 in NBv for d2 in NBv for d3 in NBv
+        if abs(d1 @ d2) + abs(d2 @ d3) + abs(d1 @ d3) == 0]
+oct_inv = all(abs(np.linalg.det(np.array([R @ d1, R @ d2, R @ d3])) - np.linalg.det(np.array([d1, d2, d3]))) < 1e-12
+              for R in O for (d1, d2, d3) in octs)
+# the tripod s^x_{m+x} s^y_{m+y} s^z_{m+z} = -i K_x K_y K_z on m and three neighbours; Majorana degree = odd-degree sites
+_I = np.eye(2, dtype=complex)
+
+
+def _op4(d):
+    out = np.array([[1.0 + 0j]])
+    for site in range(4):
+        out = np.kron(out, d.get(site, _I))
+    return out
+
+
+trip = _op4({1: Pm[0], 2: Pm[1], 3: Pm[2]})
+kkk = _op4({0: Pm[0], 1: Pm[0]}) @ _op4({0: Pm[1], 2: Pm[1]}) @ _op4({0: Pm[2], 3: Pm[2]})
+_edges = [(0, 1), (0, 2), (0, 3)]                     # the three bonds of K_x K_y K_z
+odd_sites = sum(sum(site in e for e in _edges) % 2 for site in range(4))
+check("possibility covariance: star sums through the centre vanish, the octant chirality is invariant; the tripod is a quartic bond product",
+      zero_all and oct_inv and len(octs) == 48 and np.linalg.norm(trip + 1j * kkk) < 1e-12 and odd_sites == 4,
+      f"through-centre coefficients 0; det-weighted octant coefficients invariant on {len(octs)} ordered triples; "
+      f"tripod = -i K_x K_y K_z residual {np.linalg.norm(trip + 1j * kkk):.0e}, odd-degree sites {odd_sites}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py
-runner_sha256: 0747ab7da2cd497f0251f9cea866fc79056104711879737302c4df792b09aa70
-input_fingerprint_sha256: dde9d88af45a6e2410b3b97a58491b659a71f796be358d5d3ffbaa7a48560fd3
-timeout_sec: 600
+runner_sha256: 668205f904d195778e43ed717fd57b87aa074ff1687b2cae67ebddc21a7619c9
+input_fingerprint_sha256: 570a9f1b05d88a7064f9f7e60c331ba88ffb8336772a4c648fac171d03abe768
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.99
+elapsed_sec: 1.22
 status: ok
 ----- stdout -----
 [PASS] ledger: the decision points used are exactly the declared ones :: 19 declared, 19 used across 18 blocks
@@ -35,15 +35,15 @@ status: ok
 13. non-Abelian links
 [PASS] one qubit's SU(2) commutant is the scalars; the 4-dimensional SU(2) link carries a covariant link operator :: commutant dimension 1; covariant link operators on (2, 1) + (1, 2): 2
 14. a distant record is a recorded randomizer
-[PASS] a distant record steers every chord; the trace rule matches the steered average, a cubic deformation does not :: steering deviation 9.0e-16; trace-rule discrepancy 1.1e-16; cubic shift 0.072
+[PASS] a distant record steers every chord; the trace rule matches the steered average, a cubic deformation does not; the lock alone lets anti-Born pass :: steering deviation 9.0e-16; trace-rule discrepancy 1.1e-16; cubic shift 0.072; replacement update: anti-Born D-loc shift 1e-16, gap to the trace rule 0.99
 15. locality of marginals forces linear dynamics
-[PASS] a Weinberg-type precession lets a distant record shift a later marginal; the transpose on half a singlet is negative :: precession shift 0.264; transpose eigenvalue -0.500
-16. collapse from locality of marginals
-[PASS] joint record effects with Born marginals are product projectors; the partner's post-record state is the Lueders state :: range intersection dimension 1; tomography vs Lueders deviation 3.1e-16
-17. a closed lattice evolves unitarily between records
-[PASS] proportional Kraus operators give a unitary conjugation; a random non-unitary channel mixes some pure state :: proportional-Kraus deviation 2.8e-16; lowest output purity 0.508
-18. covariant time-reversal breaking
-[PASS] under possibility covariance the covariant scalar-chirality star sum vanishes (perpendicular and collinear pairs) :: every group-averaged coefficient 0
+[PASS] a Weinberg-type precession lets a distant record shift a later marginal; the transpose on half a singlet is negative :: precession shift 0.329; transpose eigenvalue -0.500
+16. compression is the distant update consistent with locality of marginals
+[PASS] joint record effects with Born marginals are product projectors; the consistent partner state is the Lueders state :: range intersection dimension 1; tomography vs Lueders deviation 4.4e-16
+17. records as the only irreversible events restate reversibility
+[PASS] proportional Kraus operators give a unitary conjugation; a random non-unitary channel mixes some pure state :: proportional-Kraus deviation 1.9e-16; lowest output purity 0.504
+18. time-reversal-odd star terms
+[PASS] possibility covariance: star sums through the centre vanish, the octant chirality is invariant; the tripod is a quartic bond product :: through-centre coefficients 0; det-weighted octant coefficients invariant on 48 ordered triples; tripod = -i K_x K_y K_z residual 0e+00, odd-degree sites 4
 TOTAL: PASS=19 FAIL=0
 
 ----- stderr -----

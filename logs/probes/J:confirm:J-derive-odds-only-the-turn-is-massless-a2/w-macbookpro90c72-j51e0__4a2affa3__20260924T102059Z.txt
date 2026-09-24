@@ -1,0 +1,5 @@
+PASS sector kernel: angular coefficients of e^{x cos psi} cos(m psi) match I_m through x^12 for m=0..4
+PASS reflection: s.Rb = s.b and Rb.n - b.n = 2 (e_theta.b) sin theta, so a non-decreasing sea is sent to a strictly increasing one
+PASS gaussian limit: a=5 beta/2, chain N(x/6, 1/(6 beta)), eigenvalues 6^{-n}; m_L^2 -> 30 and the next odd level -> 210
+HIT: confirmed - for a non-decreasing leaning sea the turn is the Perron vector of order one if Jentzsch and the eigenvalue 1/6 are granted, and |m|>=2 is strictly below it if Soni's inequality is granted; the Gaussian chain has m_L^2 = 30
+SUMMARY: confirmed the Bessel sector kernels through order 12, the reflection identities, and the Mehler masses 30 and 210. Jentzsch, Soni, and block 103's turn eigenvalue stay assumed. The 320-node sea was not re-executed. Order m=0 stays open.

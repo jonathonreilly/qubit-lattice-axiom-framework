@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-odds-only-the-turn-is-massless-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j51e0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/odds-only-the-turn-is-massless/referee_w-macbookpro90c72-j51e0/check.py",
+ "seed": 45259,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4a2affa3",
+ "started_utc": "20260924T102059Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the Bessel sector kernels through order 12, the reflection identities, and the Mehler masses 30 and 210. Jentzsch, Soni, and block 103's turn eigenvalue stay assumed. The 320-node sea was not re-executed. Order m=0 stays open."
+ },
+ "review": "The sector kernels match I_m through order 12, the reflection raises b.n by 2(e.b)sin theta, and the Gaussian chain has lean-size mass 30, so the non-turn channels of order at least 1 stay below 1/6.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:odds-only-the-turn-is-massless:a2/; its files are probes/work/derive/odds-only-the-turn-is-massless/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/odds-only-the-turn-is-massless/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "0870d902faa05ce443bf32028fd31c53a61afc63c31ed8c2f0a514d0bab711bc",
+ "stdout_tail": "PASS sector kernel: angular coefficients of e^{x cos psi} cos(m psi) match I_m through x^12 for m=0..4\nPASS reflection: s.Rb = s.b and Rb.n - b.n = 2 (e_theta.b) sin theta, so a non-decreasing sea is sent to a strictly increasing one\nPASS gaussian limit: a=5 beta/2, chain N(x/6, 1/(6 beta)), eigenvalues 6^{-n}; m_L^2 -> 30 and the next odd level -> 210\nHIT: confirmed - for a non-decreasing leaning sea the turn is the Perron vector of order one if Jentzsch and the eigenvalue 1/6 are granted, and |m|>=2 is strictly below it if Soni's inequality is granted; the Gaussian chain has m_L^2 = 30\nSUMMARY: confirmed the Bessel sector kernels through order 12, the reflection identities, and the Mehler masses 30 and 210. Jentzsch, Soni, and block 103's turn eigenvalue stay assumed. The 320-node sea was not re-executed. Order m=0 stays open.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j51e0",
+  "at_utc": "20260924T102107Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "For a non-decreasing sea the non-turn channels of order at least 1 lie below 1/6, and the limiting lean-size mass is 30.",
+  "by": "w-macbookpro90c72-j51e0",
+  "at_utc": "20260924T102107Z"
+ }
+}

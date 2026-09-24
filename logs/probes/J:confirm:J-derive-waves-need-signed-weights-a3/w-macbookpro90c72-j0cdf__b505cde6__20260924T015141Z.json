@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-waves-need-signed-weights-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j0cdf",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/waves-need-signed-weights/referee_w-macbookpro90c72-j0cdf/check.py",
+ "seed": 14701,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b505cde6",
+ "started_utc": "20260924T015141Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the vector multi-level witnesses; the equality case still assumes Wielandt, as the author marked"
+ },
+ "review": "Independent: half-step branches are \u00b1e^{-ik/2}, the two-component rule has lambda^4-1, and the two-neighbor average vanishes at k=pi",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:waves-need-signed-weights:a3/; its files are probes/work/derive/waves-need-signed-weights/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/waves-need-signed-weights/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "036b71521691e28ac4deaffaece2e8e26729666836cfd549a2fcef5a7a746fb8",
+ "stdout_tail": "half-step roots, chain factor, lambda^4-1, diffusion at pi True\nHIT: confirmed - half-step transport has branches \u00b1e^{-ik/2} of modulus 1 at velocity 1/2; the two-component two-level rule has dispersion lambda^4-1; the average of two neighbors is inside the circle at k=pi\nSUMMARY: confirmed the vector multi-level witnesses; the equality case still assumes Wielandt, as the author marked\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0cdf",
+  "at_utc": "20260924T015141Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Half-step velocity 1/2, lambda^4-1 flat bands, and the diffusive symbol inside the circle all hold",
+  "by": "w-macbookpro90c72-j0cdf",
+  "at_utc": "20260924T015141Z"
+ }
+}

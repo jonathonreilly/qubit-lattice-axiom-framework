@@ -1,0 +1,25 @@
+  block 54 walk sum sigma_a S_a                              reach 1, displacement parities [1]: INVISIBLE (phi c^eps O phi c^eps = phi O phi exactly)
+  block 77 a-hops sum (T_j + T_j^dag)                        reach 1, displacement parities [1]: INVISIBLE (phi c^eps O phi c^eps = phi O phi exactly)
+  block 77 on-site a0                                        reach 0, displacement parities [0]: VISIBLE (216 blocks change, by c^(+-2))
+  block 77 staggered m eps(x)                                reach 0, displacement parities [0]: VISIBLE (216 blocks change, by c^(+-2))
+  block 62 frame, varying E                                  reach 1, displacement parities [1]: INVISIBLE (phi c^eps O phi c^eps = phi O phi exactly)
+  block 65 twist hop                                         reach 1, displacement parities [1]: INVISIBLE (phi c^eps O phi c^eps = phi O phi exactly)
+  block 65 blind walk (walk + frame rotation + twist hop)    reach 1, displacement parities [1]: INVISIBLE (phi c^eps O phi c^eps = phi O phi exactly)
+  block 63/64 reach-two strain sum sigma_a (1/2){C_a[B], S_j} reach 2, displacement parities [0]: VISIBLE (3774 blocks change, by c^(+-2))
+  block 69 reach-three strain sum sigma_a (1/2){C_a[B], P_j} reach 3, displacement parities [1]: INVISIBLE (phi c^eps O phi c^eps = phi O phi exactly)
+  contrast: the two-step momentum walk sum sigma_j P_j       reach 2, displacement parities [0]: VISIBLE (1296 blocks change, by c^(+-2))
+PASS the walk, the a-hops, the frame, the twist hop and the blind walk are invisible (odd displacements only)
+PASS on-site a0, the staggered mass and the reach-two strain term are visible (even displacements)
+PASS the reach-three strain term has only ODD displacements (+-e_a +-2 e_j) and is therefore INVISIBLE
+PASS contrast: the two-step momentum alone (displacement 2) is visible
+PASS block 56's simplest member: a chessboard on uniform rates costs (2/gamma) * 3N * (c - 1/c)^2 exactly (> 0)
+PASS block 56's simplest member with a generic base phi also changes
+PASS block 60 curvature-type member at UNIFORM lengths: G_x = 0 at every site, F = 0 for every rate field, so the chessboard changes nothing
+PASS contrast: at NON-uniform lengths the per-tick F changes under the chessboard (every clock is a multiplier)
+PASS block 60 T4's exact form 8K sum w chi Lap chi: zero at uniform lengths for every w
+PASS contrast: a member with a volume term c0 det e sees the chessboard at uniform lengths (c0 sum w changes)
+PASS zero mode: for walk + varying frame + twist hop + reach-three strain with the curvature member at uniform static lengths, <H_w> + F is unchanged by the chessboard of clocks, for a generic state (exact)
+PASS ... and it is NOT a zero mode once the reach-two strain term is present
+
+SUMMARY: exact on 6^3 with generic rational fields: a chessboard of clocks is invisible to every coupling whose hops are odd (walk, a-hops, varying frame, twist hop, blind walk, AND the reach-three strain term, displacements +-e_a +-2e_j) and visible to even ones (on-site a0, staggered mass, reach-two strain); the simplest member pays (2/gamma) 3N (c - 1/c)^2, the curvature member at uniform lengths pays nothing (G = 0), so there the chessboard is a zero mode of the walk and the ledger together
+HIT: the task's premise that the reach-three strain term sees the chessboard (two-step hops) is wrong: C_a[B] P_j moves by +-e_a +-2 e_j, always an odd number of steps, so phi_x phi_y is unchanged and the term is invisible (exact); the curvature member's HIT condition is NOT met (it does not change at uniform lengths)

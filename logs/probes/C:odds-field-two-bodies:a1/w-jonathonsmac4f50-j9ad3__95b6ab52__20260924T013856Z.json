@@ -1,0 +1,32 @@
+{
+ "task": "C:odds-field-two-bodies:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j9ad3",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/compute/odds-field-two-bodies/w-jonathonsmac4f50-j9ad3/run.py",
+ "seed": 13936,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "95b6ab52",
+ "started_utc": "20260924T013856Z",
+ "elapsed_s": 6175.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "bookkeeping 'energy' E_int of two cubes in the nonlinear odds field, torus side 41: (2.95,1,2) equal negative, opposite positive, orthogonal up to 0.74 of equal; decay closest to G*G (rms 0.068); sides at d=12: 1.00/6.98/20.18 x one record's; (3,1,2) equal of both signs, opposite positive, orthogonal up to 2.70 of equal; decay closest to G*G (rms 0.546); sides at d=12: 1.00/1.69/2.26 x one record's"
+ },
+ "review": "Full nonlinear odds map on the side-41 torus (Anderson-accelerated, tol 1e-12), two cubes (sides 1-3; equal/opposite/orthogonal contents) at d = 6..16 at (2.95,1,2) and (3,1,2); E = -sum log(Z/Z_void) over unformed sites (declared bookkeeping); E_int vs the exact first-order pair form (from block 42 T4(b), checked in sympy), vs G, G^2 and G*G; side dependence vs count^2 and far-lean capacity^2. Same-family provenance.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (blocks 41 and 42; open PRs titled 'ail41: what a source is when records move' and 'ail42: records interacting through the odds of unformed sites'): six-axis rule with pair weight omega = (p, q, r) for equal, opposite, orthogonal contents, T = p+q+4r, K_1 = omega/T, l1 = (p-q)/T, l2 = (p+q-2r)/T. READING (supplied by the owner, not adopted): an unformed site carries its probability distribution over the six contents, and that distribution is a condition for its neighbours. SELF-CONSISTENT ODDS: pi_x(s) proportional to the product over the six neighbours y of sum_b omega(s,b) pi_y(b); a record enters as the point mass at its content. BLOCK 42 PROVED: the derivative of the map at the uniform field is K_1 - 1/6 per neighbour; linearized, delta_x = sum_y K_1 delta_y, spectrum l_i (6 - E(k)); the lean v obeys (-Lap + m^2) v = source/l1 with m^2 = (1 - 6 l1)/l1; NO MASS TERM exactly on 5p = 7q + 4r (the triple (3,1,2) lies on it); beyond it the uniform field is unstable; existence, uniqueness and geometric decay proved for 6(1-kappa) < 1 by a contraction of the ratio metric R(x,y) = max(x/y)/min(x/y), with R(omega x, omega y) <= R/((1-kappa)+kappa R); the first-order charge a record feeds in is its content vector; with 'no record' as a seventh possibility the density channel has first-order strength rho(1-rho)(g-1)/(1+rho(g-1)), g = c/c_0, zero at the neutral scale; a record is a BOUNDARY VALUE (its odds are fixed), so the linear field of a body of agreeing records is the reaching probability of a walk killed at rate 1 - 6 l1, interior records carry the charge 1 - 6 l1, and a body's strength is its capacity, not its record count. EXECUTED: the nonlinear lean around one record follows the screened lattice Green function to four digits at range 0.77; on the massless surface r v(r) is flat at 0.28-0.30 for r = 1..5 on a 27^3 torus. Two bodies in the odds field, measured. Full nonlinear self-consistent map, side 41, at (2.95,1,2) (range 2.79) and at (3,1,2): two cubes of agreeing records (sides 1, 2, 3; equal contents, then opposite, then orthogonal) at separations 6 to 16. For each, the normalizer-weighted 'energy' E = - sum over unformed sites of log(normalizer/void value) as a function of separation (a declared bookkeeping quantity, say so), its sign for equal, opposite and orthogonal contents, its dependence on the cubes' sides (capacity or record count?) and its decay with separation against the screened Green function and its square.  DELIVERABLE in your unit worktree: probes/work/compute/odds-field-two-bodies/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/odds-field-two-bodies/<name>/run.py\"",
+ "stdout_sha256": "ae2cdf534d40324150c501eb52a424a07020d8278cacdf2ae91e8dcc000700ac",
+ "stdout_tail": " 0.7461 0.7061 0.6790 | G: 1.0000 0.5844 0.3441 0.1925 0.0936 0.0301 | G^2: 1.0000 0.3416 0.1184 0.0371 0.0088 0.0009 | G*G: 1.0000 0.7657 0.5652 0.3988 0.2667 0.1694\nN (3,1,2) sides at d=8: E_int(side)/E_int(1) = 1.000, 1.785, 2.462 ; record count^2 = 1, 64, 729 ; (far-lean capacity ratio)^2 = 1.000, 1.943, 2.635\nN (3,1,2) sides at d=12: E_int(side)/E_int(1) = 1.000, 1.695, 2.259 ; record count^2 = 1, 64, 729 ; (far-lean capacity ratio)^2 = 1.000, 1.943, 2.635\nN (3,1,2) sides at d=16: E_int(side)/E_int(1) = 1.000, 1.644, 2.147 ; record count^2 = 1, 64, 729 ; (far-lean capacity ratio)^2 = 1.000, 1.943, 2.635\nN elapsed 6175 s\nN (2.95,1,2) fit of E_int(d), one record each, rms of log(E_int/comparator) after the best constant: G 0.406, G^2 1.950, G*G 0.068\nN (2.95,1,2) E_int / first-order pair form, one record each: 0.799 0.863 0.898 0.918 0.932 0.942\nN (3,1,2) fit of E_int(d), one record each, rms of log(E_int/comparator) after the best constant: G 1.105, G^2 2.271, G*G 0.546\nN (3,1,2) E_int / first-order pair form, one record each: -0.260 -0.246 -0.236 -0.229 -0.225 -0.221\nSUMMARY: bookkeeping 'energy' E_int of two cubes in the nonlinear odds field, torus side 41: (2.95,1,2) equal negative, opposite positive, orthogonal up to 0.74 of equal; decay closest to G*G (rms 0.068); sides at d=12: 1.00/6.98/20.18 x one record's; (3,1,2) equal of both signs, opposite positive, orthogonal up to 2.70 of equal; decay closest to G*G (rms 0.546); sides at d=12: 1.00/1.69/2.26 x one record's\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9ad3",
+  "at_utc": "20260924T032152Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

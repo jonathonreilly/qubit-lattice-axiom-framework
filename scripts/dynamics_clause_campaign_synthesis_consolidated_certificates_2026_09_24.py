@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the twelve blocks are exactly the
+L. Ledger: the decision points used by the thirteen blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -42,6 +42,8 @@ L. Ledger: the decision points used by the twelve blocks are exactly the
 12. (9077) Each row of the landed tensor vector constraint uses exactly its
    link site's six neighbours; every slot enters two or more rows; slot
    sites are never adjacent; no single neighbourhood supports a move.
+13. (9081) The SU(2) action on one qubit has scalar commutant; the
+   2N-dimensional link (N, 1) + (1, N) carries a covariant link operator.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -113,6 +115,7 @@ USED = {
     9069: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-pattern"},
     9072: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-star", "D-tr", "D-pattern"},
     9077: {"D-dyn", "D-roles", "D-gauss"},
+    9081: {"D-roles", "D-gauss"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -538,6 +541,36 @@ def star_nullity(center):
 nul = [star_nullity(c_) for c_ in [(0, 0, 0), (1, 0, 0), (1, 1, 0), (1, 1, 1)]]
 check("tensor rows use exactly their link site's six neighbours; no single neighbourhood supports a move",
       six_ok and nul == [0, 0, 0, 0], f"six-neighbour placement {six_ok}; neighbourhood null dimensions (vertex, link, plaquette, cube) {nul}")
+
+# ------------------------------------------------ 13: non-Abelian links
+print("13. non-Abelian links")
+X2 = np.array([[0, 1], [1, 0]], dtype=complex)
+Y2 = np.array([[0, -1j], [1j, 0]])
+Z2m = np.diag([1.0 + 0j, -1.0])
+cm = _ns(np.vstack([np.kron(np.eye(2), g.T) - np.kron(g, np.eye(2)) for g in (X2, Y2, Z2m)])).shape[1]
+
+
+def _su2():
+    from scipy.linalg import expm as _e
+    return _e(1j * sum(rng.normal() * g for g in (X2, Y2, Z2m)))
+
+
+rows_ = []
+for _ in range(3):
+    OL_, OR_ = _su2(), _su2()
+    V_ = np.block([[OL_, np.zeros((2, 2))], [np.zeros((2, 2)), OR_]])
+    T1_ = np.einsum("ki,lj->ijkl", V_.conj(), V_)
+    A_ = np.zeros((2, 2, 4, 4, 2, 2, 4, 4), dtype=complex)
+    for a_ in range(2):
+        for b_ in range(2):
+            A_[a_, b_, :, :, a_, b_, :, :] += T1_
+    A_ -= np.einsum("xz,yw,ik,jl->xyijzwkl", OL_, OR_.conj(), np.eye(4), np.eye(4))
+    rows_.append(A_.reshape(64, 64))
+G_ = np.vstack(rows_)
+gw_ = np.linalg.eigvalsh(G_.conj().T @ G_)
+nlink = int(np.sum(gw_ < 1e-9 * max(1.0, gw_.max())))
+check("one qubit's SU(2) commutant is the scalars; the 4-dimensional SU(2) link carries a covariant link operator",
+      cm == 1 and nlink >= 1, f"commutant dimension {cm}; covariant link operators on (2, 1) + (1, 2): {nlink}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

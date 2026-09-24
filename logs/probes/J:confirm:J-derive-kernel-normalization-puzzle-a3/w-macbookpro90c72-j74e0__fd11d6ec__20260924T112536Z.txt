@@ -1,0 +1,8 @@
+PASS stencil: for all three stencils, sum_{y<y'}(1-cos k.(y-y'))=(n^2/2)(1-|phi|^2), so E[delta]=n sigma^2
+PASS gain: Hartree gain (1-x)(1+x(1-x))=1-2x^2+x^3 and (1-x)(1+x)=1-x^2; no order-1/beta term
+PASS exchange: the simplex relabeling preserves |phi| and swaps diagonals with neighbours, so the backward exchange term is constant and drops
+PASS light-cone: Gamma(0)-Gamma_bar=-(6/7)Delta and Gamma(+-e)=Delta/7; the exchange symbol is -(Delta/343) times the laplacian
+PASS noise: noise factor 1+sigma^2(2-W); light-cone R(0+)=that over (1+sigma^2 Delta_c/49); W-1 drops 1/L^d
+PASS plateaus: nine executed plateaus match 1+sigma^2(2-W) within 0.028, each above its prediction, and every quoted lowest shell has |z|<=1.7
+HIT: confirmed - under the one-loop closure, E[delta]=n sigma^2 and the order-1/beta gain cancels. Simplex relabeling forces C(e)=C(e_i-e_j), so the backward exchange term drops. On the light-cone it is -(Delta/343) times the laplacian, and R(0+)=[1+sigma^2(2-W)]/(1+sigma^2 Delta_c/49). The nine executed plateaus sit above that prediction by at most 0.028, and the quoted lowest shells have |z|<=1.7.
+SUMMARY: confirmed the stencil identity, the gain cancellation, the exchange terms, and the nine-run plateaus. The one-loop closure is assumed. The two-loop rise of R with k is not derived. The attempt's W-1 drops a 1/L^d zero-mode piece, far below the printed residuals.

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-kernel-normalization-puzzle-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j74e0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/kernel-normalization-puzzle/referee_w-macbookpro90c72-j74e0/check.py",
+ "seed": 49136,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fd11d6ec",
+ "started_utc": "20260924T112536Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the stencil identity, the gain cancellation, the exchange terms, and the nine-run plateaus. The one-loop closure is assumed. The two-loop rise of R with k is not derived. The attempt's W-1 drops a 1/L^d zero-mode piece, far below the printed residuals."
+ },
+ "review": "Stencil identity, gain cancellation, simplex relabeling, and the light-cone exchange symbol confirm the one-loop ratio. The nine executed plateaus sit above it by at most 0.028. The closure is assumed and the two-loop k rise is not derived.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:kernel-normalization-puzzle:a3/; its files are probes/work/derive/kernel-normalization-puzzle/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/kernel-normalization-puzzle/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8f5eca77e71899fba44bedf969c05f38c08045c8d08c1c98d84c2ec61e379acd",
+ "stdout_tail": "PASS stencil: for all three stencils, sum_{y<y'}(1-cos k.(y-y'))=(n^2/2)(1-|phi|^2), so E[delta]=n sigma^2\nPASS gain: Hartree gain (1-x)(1+x(1-x))=1-2x^2+x^3 and (1-x)(1+x)=1-x^2; no order-1/beta term\nPASS exchange: the simplex relabeling preserves |phi| and swaps diagonals with neighbours, so the backward exchange term is constant and drops\nPASS light-cone: Gamma(0)-Gamma_bar=-(6/7)Delta and Gamma(+-e)=Delta/7; the exchange symbol is -(Delta/343) times the laplacian\nPASS noise: noise factor 1+sigma^2(2-W); light-cone R(0+)=that over (1+sigma^2 Delta_c/49); W-1 drops 1/L^d\nPASS plateaus: nine executed plateaus match 1+sigma^2(2-W) within 0.028, each above its prediction, and every quoted lowest shell has |z|<=1.7\nHIT: confirmed - under the one-loop closure, E[delta]=n sigma^2 and the order-1/beta gain cancels. Simplex relabeling forces C(e)=C(e_i-e_j), so the backward exchange term drops. On the light-cone it is -(Delta/343) times the laplacian, and R(0+)=[1+sigma^2(2-W)]/(1+sigma^2 Delta_c/49). The nine executed plateaus sit above that prediction by at most 0.028, and the quoted lowest shells have |z|<=1.7.\nSUMMARY: confirmed the stencil identity, the gain cancellation, the exchange terms, and the nine-run plateaus. The one-loop closure is assumed. The two-loop rise of R with k is not derived. The attempt's W-1 drops a 1/L^d zero-mode piece, far below the printed residuals.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j74e0",
+  "at_utc": "20260924T112607Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Stencil identity, exchange symbol, and the nine executed plateaus confirm the one-loop ratio. The closure is assumed.",
+  "by": "w-macbookpro90c72-j74e0",
+  "at_utc": "20260924T112607Z"
+ }
+}

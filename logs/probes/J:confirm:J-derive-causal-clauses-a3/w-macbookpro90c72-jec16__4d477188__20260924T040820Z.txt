@@ -1,0 +1,6 @@
+ok M1: largest single-parent total variation: (3,1,2)->27/110, (5,2,4)->10650/63407, (2,1,2)->1/9, (40,1,1)->130/137
+ok M2: on p=5/2..5 the maximizer is three equals with one antipodal flip and matches the closed form; at p=8 and 20 a different pair is larger
+ok M3: 3 alpha_3 crosses 1 between 15/4 (1455300/1457713) and 94/25 (21011234850/20991436937); p* = 3.7563598183203703656
+ok M4: closed form -> 0, but the true alpha is 0.97710, 0.99952, 0.99980 at p=100, 4165, 10^4, so 3 alpha -> 3
+SUMMARY: confirmed - on (p,1,2) the single-parent influence crosses 1/3 at p* = 3.7563598183, and 3 alpha_3 tends to 3, so the Dobrushin bound cannot prove uniqueness at strong coupling.
+HIT: confirmed - alpha_3(p) = p^2(p-1)(p+33)/((p^3+33)(p^2+p+32)) on p in [5/2, 5], 3 alpha_3 = 1 at the smallest positive root p* = 3.7563598183 of x^5 - 2x^4 - 64x^3 + 132x^2 + 33x + 1056, and 3 alpha_3 -> 3, so no sharpening of this per-parent bound reaches the ordered phase.

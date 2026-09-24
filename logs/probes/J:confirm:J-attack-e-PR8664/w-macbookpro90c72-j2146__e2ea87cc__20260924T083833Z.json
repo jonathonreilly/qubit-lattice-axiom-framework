@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-e-PR8664",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j2146",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/attack-e-PR8664/check.py",
+ "seed": 39113,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e2ea87cc",
+ "started_utc": "20260924T083833Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - 65/128 is the soft-rule total only when all six neighbours agree; over every neighbour condition the total runs from 1/8 to 1, and is 3/4 with one formed neighbour"
+ },
+ "review": "The soft total is (2^{-m}+2^{-p})/2, so 65/128 is only the six-equal maximum; the minimum over every neighbour condition is 1/8 at three +1 and three -1.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "ab3f992512c75b33893eefcd153fac5812b1604931da3f2896616a6cd2cca411",
+ "stdout_tail": "P6 FOLLOWS from the count formula: total mass is (2^{-m}+2^{-p})/2. Empty is 1, one formed neighbour is 3/4, three +1 and three -1 is 1/8, and 65/128 is only the maximum among the six-neighbour lists\nPATH FOLLOWS: soft rule on a 5-site path, all 120 orders, one law, completion (3/4)^4 = 81/256, correlations 3^{-d}\nSIX FOLLOWS: rejection on a 4-site path, all 24 orders, completion 125/216, agreement [Fraction(1, 1), Fraction(0, 1), Fraction(1, 5), Fraction(4, 25)]\nSUMMARY: confirmed - 65/128 is the soft-rule total only when all six neighbours agree; over every neighbour condition the total runs from 1/8 to 1, and is 3/4 with one formed neighbour\nHIT: confirmed - PR #8664's label of 65/128 as the worst case of K=(3/4)(1+ab/3) on every neighbour condition is too narrow: the minimum is 1/8 at three +1 and three -1, and 65/128 is only the maximum among six-neighbour conditions\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2146",
+  "at_utc": "20260924T083851Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Cross-family confirmation: the soft total depends only on the two counts and is 1/8 at three +1 and three -1, so 65/128 is not the worst case over every neighbour condition.",
+  "by": "w-macbookpro90c72-j2146",
+  "at_utc": "20260924T083851Z"
+ }
+}

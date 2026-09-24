@@ -1,0 +1,5 @@
+P6 FOLLOWS from the count formula: total mass is (2^{-m}+2^{-p})/2. Empty is 1, one formed neighbour is 3/4, three +1 and three -1 is 1/8, and 65/128 is only the maximum among the six-neighbour lists
+PATH FOLLOWS: soft rule on a 5-site path, all 120 orders, one law, completion (3/4)^4 = 81/256, correlations 3^{-d}
+SIX FOLLOWS: rejection on a 4-site path, all 24 orders, completion 125/216, agreement [Fraction(1, 1), Fraction(0, 1), Fraction(1, 5), Fraction(4, 25)]
+SUMMARY: confirmed - 65/128 is the soft-rule total only when all six neighbours agree; over every neighbour condition the total runs from 1/8 to 1, and is 3/4 with one formed neighbour
+HIT: confirmed - PR #8664's label of 65/128 as the worst case of K=(3/4)(1+ab/3) on every neighbour condition is too narrow: the minimum is 1/8 at three +1 and three -1, and 65/128 is only the maximum among six-neighbour conditions

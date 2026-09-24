@@ -189,7 +189,7 @@ binned diagnostics are as stated. No limit beyond L = 16 is claimed.
   six checks.
 
 - **Budget:** 6 checks, stdout 1617 characters (ceiling 6000), about
-  180 to 230 s (ceiling 900 s), peak about 385 MB.
+  180 to 230 s (declared audit timeout 1800 s), peak about 385 MB.
 
 ## Verification
 

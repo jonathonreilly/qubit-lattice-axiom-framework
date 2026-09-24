@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Exact checks: in three dimensions the clocked walk needs a fast-end boundary condition exactly in the transverse sectors with
-|(sin k2, sin k3)| < sinh(g/2) - waves the ray picture turns back still reach the end (supervisor's derivation extending block 108;
+|(sin k2, sin k3)| < sinh(g/2) - including sectors whose rays turn back (supervisor's derivation extending block 108;
 block 54 as landed supplied; not adopted).
 
 B (T1): across the gradient the walk reduces to line operators with an on-site term growing with the clock.
 C (T2): the scaled zero-energy recurrence is constant; exact geometric solutions with r - 1/r = +-2m.
 D (T3): square-summable count at the fast end: four for m < m* = (lambda - 1)/(2 sqrt(lambda)) = sinh(g/2), two above.
-E (T4): rays with m > 0 turn back before the fast end; the line reaches it in finite time.
+E (T4): rays with m > 0 turn back before the fast end; on the line the inverse-clock sum is finite.
 Exact symbolic arithmetic only; the runner scans its own source for floating-point literals.
 """
 
@@ -178,7 +178,7 @@ def family_d(checks: Checks) -> None:
 
 # ============================================================================================ family E
 def family_e(checks: Checks) -> None:
-    """T4: the ray picture turns back every ray with m > 0; the line (m = 0) reaches the fast end in finite time."""
+    """T4: the ray picture turns back every ray with m > 0; on the line (m = 0) the inverse-clock sum toward the fast end is finite."""
     w, E, m, k1 = sp.symbols("w E m k1", positive=True)
     energy = w * sp.sqrt(sp.sin(k1) ** 2 + m ** 2)
     wmax = sp.solve(sp.Eq(energy.subs(sp.sin(k1), 0), E), w)
@@ -191,7 +191,7 @@ def family_e(checks: Checks) -> None:
     kk = sp.symbols("kk", integer=True, nonnegative=True)
     finite = sp.summation(sp.Integer(3) ** (-(x0 + kk)), (kk, 0, sp.oo)).subs(x0, 0) == sp.Rational(3, 2)
     line_all_four = sp.simplify((sp.sqrt(1 + m ** 2) + m).subs(m, 0) - 1) == 0
-    checks.check("E1", turn and bound and finite and line_all_four, "T4: along a ray in a static field the energy E = w sqrt(sin^2 k1 + m^2) is kept with m fixed, so a ray with m > 0 turns back before w exceeds E/m and never reaches the fast end, while at m = 0 all four roots have modulus one (block 108's line) and the fast end is reached in finite time (sum of 1/w finite, 3/2 at lambda = 3): the sectors 0 < m < m* need a boundary condition though no ray with that m reaches the end (symbolic)")
+    checks.check("E1", turn and bound and finite and line_all_four, "T4: along a ray in a static field the energy E = w sqrt(sin^2 k1 + m^2) is kept with m fixed, so a ray with m > 0 turns back before w exceeds E/m and never reaches the fast end, while at m = 0 all four roots have modulus one (block 108's line), where the inverse-clock sum toward the fast end is finite (3/2 at lambda = 3; a scalar series, not an arrival-time statement): the sectors 0 < m < m* need a boundary condition though no ray with that m reaches the end (symbolic)")
 
 
 # ============================================================================================ family F

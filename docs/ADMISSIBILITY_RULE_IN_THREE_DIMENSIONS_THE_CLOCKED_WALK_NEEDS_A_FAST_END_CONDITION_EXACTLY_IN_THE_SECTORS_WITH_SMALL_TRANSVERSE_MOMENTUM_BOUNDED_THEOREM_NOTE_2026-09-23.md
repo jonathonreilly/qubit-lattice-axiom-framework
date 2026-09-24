@@ -27,9 +27,9 @@ Block 108 found that on the line, in a clock field `w = λ^x`, the walk's dynami
   - At the fast end, two of the four solutions are always square-summable. The other two are square-summable exactly when `m < m* = (λ − 1)/(2√λ) = sinh(g/2)`.
   - So a sector needs a fast-end boundary condition exactly when its transverse momentum is small: deficiency indices `(2,2)` below `m*` and `(0,0)` above.
   - Every sector needs one once `λ ≥ 5 + 2√6`.
-- **T4: rays miss it.** A ray with transverse momentum `m > 0` keeps its energy `E = w√(sin²k₁ + m²)`, so it turns back before `w` exceeds `E/m` and never reaches the fast end. Yet the sectors `0 < m < m*` still need a boundary condition: the lattice waves reach the end where the rays do not.
+- **T4: rays miss it.** A ray with transverse momentum `m > 0` keeps its energy `E = w√(sin²k₁ + m²)`, so it turns back before `w` exceeds `E/m` and never reaches the fast end. Yet the sectors `0 < m < m*` still need a boundary condition: there the wave equation's solutions are square-summable at the fast end, where no ray goes.
 
-In plain terms: in three dimensions, only the part of the walker's motion aimed nearly along the direction in which clocks speed up can reach the end of the lattice, and only that part needs the extra condition. How "nearly" is set by the steepness of the clock field: within `sinh(g/2)` of straight along. Rays with any sideways motion turn back, but the waves do not all turn back, so the extra condition is a wave effect the ray picture cannot see.
+In plain terms: in three dimensions, only the part of the walker's motion aimed nearly along the direction in which clocks speed up needs the extra condition at the fast-clock end. How "nearly" is set by the steepness of the clock field: within `sinh(g/2)` of straight along. Rays with any sideways motion turn back, yet the waves in the small sectors still need the condition, so it is a wave effect the ray picture cannot see.
 
 ## Premises and declared objects
 
@@ -38,7 +38,7 @@ In plain terms: in three dimensions, only the part of the walker's motion aimed 
   - `H = Σ_jσ_jD_j`, with `D_j = (i/2)(T_j − T_j†)` and `(T_eψ)(x) = ψ(x − e)`.
   - `H_w = W^{1/2}HW^{1/2}`.
   - T3 as landed leaves the evolution identity conditional on a realization; T4 as landed is a conditional ray model.
-- **Block 108** (#8945, open) answers the question on the line: deficiency indices `(2,2)`.
+- **Block 108** (#8945, landed in 8cc5f114f0) answers the question on the line: deficiency indices `(2,2)`, with the endpoint theory as a stated import. As landed, its inverse-clock sum is a scalar series, not an arrival-time theorem.
 - **The clock.** `w = λ^{x₁}`, `λ = e^g > 1`, the same on each plane of constant `x₁`.
 - **Sectors.** For transverse wave numbers `(k₂, k₃)`, the sector operator is `J_k` on the line. Its minimal operator acts on finitely supported sequences, and the full operator is their direct integral.
 - **Names.** The limit-point/limit-circle theory for matrix three-term operators is due to Krein and to Berezanskii. The persistence of the solution count under a summable perturbation is Levinson's asymptotic theorem, in its discrete form. The direct-integral decomposition is von Neumann's.
@@ -76,7 +76,7 @@ In plain terms: in three dimensions, only the part of the walker's motion aimed 
 
 *Statement.*
 - Along a ray of the static field, `E = w√(sin²k₁ + m²)` and `m` are kept. So a ray with `m > 0` turns back at `w = E/m` and never reaches the fast end.
-- At `m = 0` all four roots have modulus one. This is block 108's line, whose fast end is reached in finite time.
+- At `m = 0` all four roots have modulus one. This is block 108's line, whose inverse-clock sum toward the fast end is finite. A ray of the model gets there in finite label time; block 108 as landed makes no arrival-time statement for wave packets.
 - The sectors `0 < m < m*` need a fast-end condition although no ray with that `m` reaches the end.
 
 *Proof.* The ray equations of block 54 T4 as landed, with the conserved energy. The finite sum is block 108's (family E). ∎
@@ -140,7 +140,7 @@ The imported theorems are named at definition level.
 |---|---|---|
 | `minimal_axioms` | a site's possibilities; no dynamics or time metric in the axioms | yes |
 | block 54 (#8570, landed) | the walk; the question; the ray model | yes |
-| block 108 (#8945) | the line | yes |
+| block 108 (#8945, landed) | the line | yes |
 | block 53 (#8568, landed) | the clock | yes |
 
 ### N5 — Resolution audit
@@ -193,3 +193,7 @@ PYTHONPATH=scripts python3 scripts/admissibility_rule_in_three_dimensions_the_cl
 ```
 
 Expected: `TOTAL: PASS=11 FAIL=0`.
+
+## Corrigendum 2026-09-24 (after the owner's landing 8cc5f114f0)
+
+Block 108 was landed with its domain conclusions resting on the stated endpoint theory, and with its inverse-clock sum read as a scalar series, not an arrival-time theorem. This note's T4 and its plain terms now say that the small sectors need a condition because their solutions are square-summable at the fast end, not that waves arrive there. The runner's message for E1 says the same. T1–T4, and every check, are unchanged.

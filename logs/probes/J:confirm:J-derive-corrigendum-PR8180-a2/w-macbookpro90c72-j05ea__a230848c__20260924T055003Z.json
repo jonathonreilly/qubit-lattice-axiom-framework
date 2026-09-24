@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8180-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j05ea",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8180/referee_w-macbookpro90c72-j05ea/check.py",
+ "seed": 29003,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a230848c",
+ "started_utc": "20260924T055003Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - P multiplies e^{ikx} by conj(phi) and P^T by phi, so the -ik mode advances by conj(phi) while E[X conj(Y)] returns phi^s; the comparator and the formation kernel share that phase and differ by the decay rates artanh y and -1/2 log(1-y^2)."
+ },
+ "review": "P multiplies e^{ikx} by conj(phi) and the covariance pairing returns phi^s; mode counts are 8/24 and 19/45; the comparator mixed derivative is -2 and the formation one is -5*sqrt(3)/9-2/3.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8180:a2/; its files are probes/work/derive/corrigendum-PR8180/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8180/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "6703db086e3a021bdd1e2a0e7155d15da85538b8158034850fa7dcc5c808c61f",
+ "stdout_tail": "PASS P acts by conj(phi) and P^T by phi\nPASS phi^s is real on 8 of 24 pairs on L=3 and 19 of 45 on L=4; non-real modes 6/8 and 10/15  [L3 realpairs 8/24 nonreal modes 6; L4 19/45 nonreal 10]\nPASS E[theta * conj(conj(phi)^s theta)] = phi^s |theta|^2\nPASS variance sums the geometric series (1-u^t)/(1-u) for t=1..7\nPASS E(K) = sum_a |1-e^{i K_a}|^2 = 3|1 - phi e^{iw}|^2 + 3(1-u)\nPASS 1-u = eps^2 k^T M k + O(eps^4), M=(1/9)[[2,-1],[-1,2]]  [2*a**2/9 - 2*a*b/9 + 2*b**2/9]\nPASS phi * z = 1-y, so the tau=0 recurrence gives 6*(1/(6y)) - Re term = 1\nPASS |z|^2 = (1-y)/(1+y) and artanh series starts y + y^3/3\nPASS formation rate -1/2 log(1-y^2) = y^2/2 + y^4/4 + O(y^6)  [y**4/4 + y**2/2]\nPASS G/C = y / (6 sigma^2 (1+y)^tau) after cancelling conj(phi)^tau\nPASS comparator mixed-derivative test at (pi/2, pi/3, pi/6) equals -2  [-2]\nPASS formation 1/S_F mixed derivative at (pi/3, pi/6, pi/2) equals -5*sqrt(3)/9 - 2/3  [-5*sqrt(3)/9 - 2/3]\n\nSUMMARY: confirmed - P multiplies e^{ikx} by conj(phi) and P^T by phi, so the -ik mode advances by conj(phi) while E[X conj(Y)] returns phi^s; the comparator and the formation kernel share that phase and differ by the decay rates artanh y and -1/2 log(1-y^2).\nHIT: confirmed - on the declared -ik transform, theta_hat(t+s) = conj(phi)^s theta_hat(t) + noise and Cov = phi^s Var; E = 3|1-phi e^{iw}|^2 + 3(1-u); both kernels are conj(phi)^tau times a positive factor, with rates y + ... and y^2/2 + ... .\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j05ea",
+  "at_utc": "20260924T055010Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent algebra confirms the conj(phi) multiplier, the covariance display, and the two decay rates.",
+  "by": "w-macbookpro90c72-j05ea",
+  "at_utc": "20260924T055010Z"
+ }
+}

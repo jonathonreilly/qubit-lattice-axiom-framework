@@ -143,6 +143,20 @@ Brillouin-zone grid for all 64 translation-invariant gauge configurations.
 Energies and gaps agree across configurations of the same fluxes, which
 shows they are gauge invariant. ∎
 
+"Pi flux" here means that the product of the oriented bond variables
+`u_jk` around the plaquette is `-1`, so the product of Majorana hoppings
+around it is negative. In spin language that is loop-operator eigenvalue
+`W = +1` for the loop operators defined above. An independent check with
+separate code found `<W> = +1` on every square in the exact ground state of
+the 12-site tube. So reading "pi flux" as `W = -1` would be wrong. It also
+reproduced, with separate code:
+- the ground energies;
+- the Majorana minimum over gauge configurations;
+- the closed forms `eps(k)^2 = 12 + 8 cos k` (gap `2|K|` at `k = pi`) and
+  `E0/cell = -(4 sqrt 5/pi) E(m = 4/5)`, where `E` is the complete elliptic
+  integral of the second kind;
+- the count of 112 zero-field carvings, by three independent methods.
+
 The pi-flux preference matches Lieb's rule for 4-cycles, which is not used
 as a premise. Non-translation-invariant flux configurations are not
 compared.

@@ -1,0 +1,5 @@
+unstable root 2 True
+arccos samples 13
+greens True
+HIT: confirmed - a=5/4 has a root 2 at k=0, the 1D average has omega=|k|, G=(5/8) 3^{-|x|} at cos theta=3/5, and G=-|x|/2 at a=1
+SUMMARY: confirmed the a-family stability edge and the static kernels; the multi-level classification was not re-proved from scratch

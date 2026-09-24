@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-waves-need-signed-weights-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc423",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/waves-need-signed-weights/referee_w-macbookpro90c72-jc423/check.py",
+ "seed": 19104,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "526fc9d4",
+ "started_utc": "20260924T030504Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the a-family stability edge and the static kernels; the multi-level classification was not re-proved from scratch"
+ },
+ "review": "Independent: a=5/4 has root 2 at k=0, the 1D average has omega=|k|, and the static kernels are (5/8)3^{-|x|} and -|x|/2",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:waves-need-signed-weights:a2/; its files are probes/work/derive/waves-need-signed-weights/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/waves-need-signed-weights/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "117eeb180fecf377f0901c264a226039667058b8282da2973234604bddcc63b5",
+ "stdout_tail": "unstable root 2 True\narccos samples 13\ngreens True\nHIT: confirmed - a=5/4 has a root 2 at k=0, the 1D average has omega=|k|, G=(5/8) 3^{-|x|} at cos theta=3/5, and G=-|x|/2 at a=1\nSUMMARY: confirmed the a-family stability edge and the static kernels; the multi-level classification was not re-proved from scratch\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc423",
+  "at_utc": "20260924T030505Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Stability edge, omega=|k|, and both static Green functions hold exactly",
+  "by": "w-macbookpro90c72-jc423",
+  "at_utc": "20260924T030505Z"
+ }
+}

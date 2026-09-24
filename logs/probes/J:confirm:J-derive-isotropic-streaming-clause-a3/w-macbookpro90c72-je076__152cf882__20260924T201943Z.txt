@@ -1,0 +1,8 @@
+PASS H1 staircase algebra: the mixture has total 1 and mean (a,b,c); t is in [0,1] because a<=1<=a+b+c on the sphere
+PASS H3 merge algebra: both maximal merges, scaled by (a+b+c-1)/sum z, have total weight 1 and keep the mean
+PASS H6 arc obstruction: on (a,b,0) a constant-rate forward rule cannot have M in span{I, s s^T}: the forced M22 is below b
+PASS H7 moments: T1111=1/4, T1122=1/8, so isotropy is beta=1/16; at speed 1/sqrt(3), nu_lat=sqrt(3)/16 and D_lat=1/(4 sqrt(3))
+PASS H1-H5 witnesses: both rules are forward barycentres with M_mm=|s_m| and a(-s,d)=a(s,-d) on 174 cubic images of 8 rational points
+PASS N beta signs: quadrature gives staircase beta=0.06489073 and axes-and-faces beta=0.05613252, so lambda=0.27297008 mixes them to 1/16
+SUMMARY: confirmed. Every unit content is the barycentre of at most five forward, sign-compatible neighbours under the staircase rule, and of axes and face diagonals under the maximal merge; both have total rate 1. Every such rule has M_mm=|s_m|, so the fourth-rank tensor is fixed by beta=<|s1 s2| W_12> and is isotropic exactly at beta=1/16. The two rules lie on opposite sides of 1/16 (float quadrature), and no constant-rate forward rule is pointwise isotropic on the arcs (a,b,0). The exact value of the mixing weight is not a closed form, and the shadow's density form stays assumed.
+HIT: confirmed - forward rules on the 26 neighbours with constant speed and constant total rate exist, their diagonal is |s_m|, and a mixture of the staircase and axes-and-faces rules meets beta=1/16

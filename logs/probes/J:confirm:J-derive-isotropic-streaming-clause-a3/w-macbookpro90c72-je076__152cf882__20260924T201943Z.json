@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-isotropic-streaming-clause-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-je076",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/isotropic-streaming-clause/referee_w-macbookpro90c72-je076/check.py",
+ "seed": 81183,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "152cf882",
+ "started_utc": "20260924T201943Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed. Every unit content is the barycentre of at most five forward, sign-compatible neighbours under the staircase rule, and of axes and face diagonals under the maximal merge; both have total rate 1. Every such rule has M_mm=|s_m|, so the fourth-rank tensor is fixed by beta=<|s1 s2| W_12> and is isotropic exactly at beta=1/16. The two rules lie on opposite sides of 1/16 (float quadrature), and no constant-rate forward rule is pointwise isotropic on the arcs (a,b,0). The exact value of the mixing weight is not a closed form, and the shadow's density form stays assumed."
+ },
+ "review": "Forward sign-compatible rules with constant total rate exist, the diagonal is |s_m|, and a mixture of the staircase and axes-and-faces rules meets beta=1/16.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:isotropic-streaming-clause:a3/; its files are probes/work/derive/isotropic-streaming-clause/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/isotropic-streaming-clause/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "c7a58b435428719e942144eab5f48f8e80f90b10bd0acd83bf3ce656b4090f9e",
+ "stdout_tail": "has total 1 and mean (a,b,c); t is in [0,1] because a<=1<=a+b+c on the sphere\nPASS H3 merge algebra: both maximal merges, scaled by (a+b+c-1)/sum z, have total weight 1 and keep the mean\nPASS H6 arc obstruction: on (a,b,0) a constant-rate forward rule cannot have M in span{I, s s^T}: the forced M22 is below b\nPASS H7 moments: T1111=1/4, T1122=1/8, so isotropy is beta=1/16; at speed 1/sqrt(3), nu_lat=sqrt(3)/16 and D_lat=1/(4 sqrt(3))\nPASS H1-H5 witnesses: both rules are forward barycentres with M_mm=|s_m| and a(-s,d)=a(s,-d) on 174 cubic images of 8 rational points\nPASS N beta signs: quadrature gives staircase beta=0.06489073 and axes-and-faces beta=0.05613252, so lambda=0.27297008 mixes them to 1/16\nSUMMARY: confirmed. Every unit content is the barycentre of at most five forward, sign-compatible neighbours under the staircase rule, and of axes and face diagonals under the maximal merge; both have total rate 1. Every such rule has M_mm=|s_m|, so the fourth-rank tensor is fixed by beta=<|s1 s2| W_12> and is isotropic exactly at beta=1/16. The two rules lie on opposite sides of 1/16 (float quadrature), and no constant-rate forward rule is pointwise isotropic on the arcs (a,b,0). The exact value of the mixing weight is not a closed form, and the shadow's density form stays assumed.\nHIT: confirmed - forward rules on the 26 neighbours with constant speed and constant total rate exist, their diagonal is |s_m|, and a mixture of the staircase and axes-and-faces rules meets beta=1/16\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je076",
+  "at_utc": "20260924T201950Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The staircase and merge rules are forward barycentres of total rate 1, the diagonal is |s_m|, and the two betas straddle 1/16.",
+  "by": "w-macbookpro90c72-je076",
+  "at_utc": "20260924T201950Z"
+ }
+}

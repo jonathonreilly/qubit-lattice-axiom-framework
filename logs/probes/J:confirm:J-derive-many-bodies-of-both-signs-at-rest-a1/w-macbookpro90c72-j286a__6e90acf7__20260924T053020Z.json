@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-many-bodies-of-both-signs-at-rest-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j286a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/many-bodies-of-both-signs-at-rest/referee_w-macbookpro90c72-j286a/check.py",
+ "seed": 27820,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e90acf7",
+ "started_utc": "20260924T053020Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - on the 5^3 box, Q=(4,-2) is a positive-rate rest state with mu_B below the single-body bound; a positive neighbour lowers that bound; two negative bodies stay inside their single bounds; a zero-ledger pair is static with a negative rate monopole; walk content on a closed lattice rests only if e=0."
+ },
+ "review": "Independent sparse solve matches G_AA=68/297, G_AB=37/594, G_BB=34706593/153333180; Q=(4,-2) has mu about (7.165,-1.593), past -1.104, with positive rates and positive-definite L; the quartic has two real roots and only one is positive definite.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:many-bodies-of-both-signs-at-rest:a1/; its files are probes/work/derive/many-bodies-of-both-signs-at-rest/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/many-bodies-of-both-signs-at-rest/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ab509561af7d516533b1fb62d8656959ff6e29d4eb911e3eba3028eb4dad613f",
+ "stdout_tail": ">0, L>0, N solves LN=0, rates>0  [mu=(7.1650,-1.5929) single -1.1045 chi>=0.7965 N>=0.8724 w in [0.4870,2.5559] ev 7.055e-01 rN 1.0e-15]\nPASS at the certificate mu the exact quartic has 2 real roots, both with positive lengths, one with L>0  [degree 4 real 2 rows [(True, False), (True, True)]]\nPASS threshold algebra: v_B > -(1+a v_A)/(b+D v_A) = -1/b - c^2 v_A/(b(b+D v_A))\nPASS single-body minimum -1/(4g), symmetric fold -1/(4(g0+gd)), and q+q^2/C >= -C/4\nPASS symmetric negative pair folds above the single bound; 0.99 inside, 1.01 has no real root  [mu* -1.01020 single -1.10450]\nPASS zero ledger Q=(1,-1): L>0, lengths and rates positive, rate monopole P_A+P_B<0  [mu=(1.1667,-0.8359) Psum -0.77395]\nPASS stationarity on a 4-ring gives the two field equations; one opposite pair never rests, the 2m-and-three-rest example does\nPASS walker with e=tau: 3*(-S_chi)=S_N forces S_N = -3 S_chi, so both nonnegative sums vanish\n\nSUMMARY: confirmed - on the 5^3 box, Q=(4,-2) is a positive-rate rest state with mu_B below the single-body bound; a positive neighbour lowers that bound; two negative bodies stay inside their single bounds; a zero-ledger pair is static with a negative rate monopole; walk content on a closed lattice rests only if e=0.\nHIT: confirmed - Green entries 68/297, 37/594, 34706593/153333180; Q=(4,-2) gives mu about (7.165,-1.593), past -1/(4 G_BB), with chi, N and the rates positive and L positive definite; the quartic has two real roots and only one is positive definite.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j286a",
+  "at_utc": "20260924T053026Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent Green solve and quartic confirm a negative body past its single-body bound with all rates positive.",
+  "by": "w-macbookpro90c72-j286a",
+  "at_utc": "20260924T053026Z"
+ }
+}

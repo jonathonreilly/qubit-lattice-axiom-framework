@@ -1,0 +1,12 @@
+PASS Green columns: -Delta g = delta, and the three entries match the stated fractions  [G_AA 0.228956228956 vs 0.228956228956, G_AB 0.062289562290, G_BB 0.226347572000, res 7.6e-17]
+PASS certificate Q=(4,-2): mu_B below the single-body bound, chi>0, L>0, N solves LN=0, rates>0  [mu=(7.1650,-1.5929) single -1.1045 chi>=0.7965 N>=0.8724 w in [0.4870,2.5559] ev 7.055e-01 rN 1.0e-15]
+PASS at the certificate mu the exact quartic has 2 real roots, both with positive lengths, one with L>0  [degree 4 real 2 rows [(True, False), (True, True)]]
+PASS threshold algebra: v_B > -(1+a v_A)/(b+D v_A) = -1/b - c^2 v_A/(b(b+D v_A))
+PASS single-body minimum -1/(4g), symmetric fold -1/(4(g0+gd)), and q+q^2/C >= -C/4
+PASS symmetric negative pair folds above the single bound; 0.99 inside, 1.01 has no real root  [mu* -1.01020 single -1.10450]
+PASS zero ledger Q=(1,-1): L>0, lengths and rates positive, rate monopole P_A+P_B<0  [mu=(1.1667,-0.8359) Psum -0.77395]
+PASS stationarity on a 4-ring gives the two field equations; one opposite pair never rests, the 2m-and-three-rest example does
+PASS walker with e=tau: 3*(-S_chi)=S_N forces S_N = -3 S_chi, so both nonnegative sums vanish
+
+SUMMARY: confirmed - on the 5^3 box, Q=(4,-2) is a positive-rate rest state with mu_B below the single-body bound; a positive neighbour lowers that bound; two negative bodies stay inside their single bounds; a zero-ledger pair is static with a negative rate monopole; walk content on a closed lattice rests only if e=0.
+HIT: confirmed - Green entries 68/297, 37/594, 34706593/153333180; Q=(4,-2) gives mu about (7.165,-1.593), past -1/(4 G_BB), with chi, N and the rates positive and L positive definite; the quartic has two real roots and only one is positive definite.

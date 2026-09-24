@@ -1,0 +1,177 @@
+{
+  "phase": "blind independent PRE",
+  "sealed_at_utc": "2026-09-24T21:19:18.789181+00:00",
+  "main_source_commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "scope": "Exact supplied physical matter/electric preparation and original one-formation rate effect; bounded weak-field and early first-event consequences.",
+  "provenance": "No root candidate, forbidden active packet, author helper, parent runner or delegated agent used. Prior own readout PRE/POST reuse is explicit.",
+  "status": "Conditional independent reconstruction; no audit verdict, retained-grade claim or publication action.",
+  "preservation": "One-time hash ledger; every member and this seal set read-only. Preserve originals for later POST.",
+  "member_count": 33,
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 3113,
+      "sha256": "238a8bf4e27998cd7241cc95f059c1518becfac8caadf838c40cd65bf30bfdf1"
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "bytes": 33408,
+      "sha256": "883bca13cd3492165c90d8edda1b8f0ef4f1539b6987e56c387c5d87d1b07a4b"
+    },
+    {
+      "path": "EVIDENCE_LOG.md",
+      "bytes": 6163,
+      "sha256": "5e737726ed10dab8b69b561318c0e43060ebea783bf500bd7714d2d6cfea4c92"
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION.json",
+      "bytes": 20141,
+      "sha256": "43199147b70e781452f520e045187e508b9cac826c818266b39ef5261918e006"
+    },
+    {
+      "path": "EXECUTION.json",
+      "bytes": 1062,
+      "sha256": "26d01d9f3d2c426bcbe6da8aba404914737c0e70cc32500bd95552c96fd7b6f0"
+    },
+    {
+      "path": "PATH_CERTIFICATES.json",
+      "bytes": 194169,
+      "sha256": "d1495a65189531dc12f77b14c0366488926cc78a42b938e6cd18bb7c5fe0e66e"
+    },
+    {
+      "path": "PRE.md",
+      "bytes": 27226,
+      "sha256": "5c5ef65435d4165048048fb3b3d7e8abc9ce86ef5e69d2a20024c9d767f15589"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 5523,
+      "sha256": "98dff3a548531f97b1b8099f3b1f6570ab3b84a6d1e5f82f6f15381c42d1e6bc"
+    },
+    {
+      "path": "VERIFY_EXECUTION.json",
+      "bytes": 819,
+      "sha256": "1250fe2e9e64af8c336571ed555b8bb5550bd5c7f8bfab122c90b50121c0ad2c"
+    },
+    {
+      "path": "freeze_sources.initial_typo.stderr.txt",
+      "bytes": 504,
+      "sha256": "0eb1a6abdf4d2b49426b09caeaaa9277aa5d552756bef6ef27660dd9da252c5c"
+    },
+    {
+      "path": "freeze_sources.initial_typo.stdout.txt",
+      "bytes": 1064,
+      "sha256": "1ddf5c3c7e4b6e74d888e9f1d74901e7f8fbf30187be1513b13f1a87efc10f76"
+    },
+    {
+      "path": "freeze_sources.py",
+      "bytes": 2998,
+      "sha256": "f25d2e8962785ed0177c14f591c1f0cf78392f7ae6347aa01b08e7127d9c4218"
+    },
+    {
+      "path": "freeze_sources.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "freeze_sources.stdout.txt",
+      "bytes": 4783,
+      "sha256": "8b2c398b41872bd869158272b4509325b3eabfc23f76a4bf4a287175eb55032f"
+    },
+    {
+      "path": "prepared_probe_control.py",
+      "bytes": 9555,
+      "sha256": "ae544cf6cb9198630e87fa5ebcd98cae319f27ca3429ccb3cf38cf6da4168043"
+    },
+    {
+      "path": "prepared_probe_control.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "prepared_probe_control.stdout.txt",
+      "bytes": 13513,
+      "sha256": "7ff7dcbdc36dd31b773e1c04f6814f0f8b574fb27c9afb6615996e7f1437fb34"
+    },
+    {
+      "path": "run_control.py",
+      "bytes": 1256,
+      "sha256": "86920207613b79fd28ce0731e97eed9b69582e1cf6950c20f42f798e6f288b80"
+    },
+    {
+      "path": "run_evidence_verification.py",
+      "bytes": 1150,
+      "sha256": "ac72cbeae93221a8b68ccda73924fb349b4bd0d71bbded28a5b538e79c178425"
+    },
+    {
+      "path": "seal_pre.py",
+      "bytes": 1916,
+      "sha256": "4d1733565c97fdd045503497ba1e13def409459552bc4e405e25702db9113809"
+    },
+    {
+      "path": "sources/agent_pointer.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "sources/electric_magnetic.md",
+      "bytes": 22993,
+      "sha256": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4"
+    },
+    {
+      "path": "sources/local_compensation.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "sources/local_pair_form.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "sources/readout_POST.md",
+      "bytes": 17332,
+      "sha256": "dc217d7ff74cb074998f2f4e92cd02b79e1bdb207c2f4ebfc0e6fd8e8ee96d1c"
+    },
+    {
+      "path": "sources/readout_POST_SEAL.json",
+      "bytes": 5200,
+      "sha256": "f6cc670e09877d631658d8d150f986fecfcd5925b0ecfb7394bdcd17aee7513e"
+    },
+    {
+      "path": "sources/readout_PRE.md",
+      "bytes": 29565,
+      "sha256": "7e5140e5155943d99541efc2e8de7cc25f9cee9ba4d4330b9906def5c3adf76d"
+    },
+    {
+      "path": "sources/readout_PRE_SEAL.json",
+      "bytes": 5264,
+      "sha256": "65ef5734192d3ca88511a992fad2b1788582ad8acf632c2b2d33e866d121cff6"
+    },
+    {
+      "path": "sources/weak_field_packets.md",
+      "bytes": 19851,
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "sources/workflow.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "verify_evidence.py",
+      "bytes": 10300,
+      "sha256": "0986867b751a908bb9fff0bd055a683e25ab0ba6dfce7135fd74ebe53306114e"
+    },
+    {
+      "path": "verify_evidence.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verify_evidence.stdout.txt",
+      "bytes": 16818,
+      "sha256": "a4e7eaae176059c536881d3bbf5b8daf433891d5967e7c16a8cb9452447ae763"
+    }
+  ]
+}

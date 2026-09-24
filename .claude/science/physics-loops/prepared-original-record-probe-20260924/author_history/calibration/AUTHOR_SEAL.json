@@ -1,0 +1,38 @@
+{
+  "phase": "personal root before observable-calibration PRE",
+  "created_utc": "2026-09-24T20:52:49.387341+00:00",
+  "files": {
+    "CONTROL.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "CONTROL.stdout": {
+      "sha256": "00b2a9df8189daaf4990267d44cbff46bccb06d232f1c55d1ef161e56c3f5518",
+      "bytes": 18217
+    },
+    "EXECUTION.json": {
+      "sha256": "28f64aecfff88d2bc3cfe0dd3a70db749e1a930050fae220d8ed943e00696c78",
+      "bytes": 343
+    },
+    "NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "sha256": "ef1521b7a83ef3223aa3859814488283ab97571efdeb4b4bcf28867759ee0c27",
+      "bytes": 8020
+    },
+    "OBSERVABLE_CALIBRATION_RESULTS.json": {
+      "sha256": "4f2efae45624e4e2b2c5d298fe3a4bc1a807308e1debef29166c54984cbe0d42",
+      "bytes": 17732
+    },
+    "ORIGINAL_RECORD_OBSERVABLE_CALIBRATION_ROOT.md": {
+      "sha256": "07d50a3a8ffd5e170bff4c41ab428908f19e43c484293f8082aae114d6538f30",
+      "bytes": 13955
+    },
+    "SOURCE_PINS.json": {
+      "sha256": "f5a8c54f4dbee4075b94989f7e468e544b81d48aa749c73d51654db7f2507a81",
+      "bytes": 3353
+    },
+    "observable_calibration_controls.py": {
+      "sha256": "f6a4fe09dbb8c2ec88197db4868466b3c3f5531b63cc0c56bf3909c6da56eec8",
+      "bytes": 7136
+    }
+  }
+}

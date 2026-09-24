@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-09-24T21:38:27.503818+00:00",
+  "elapsed_seconds": 0.07325833383947611,
+  "exit_code": 0,
+  "scope": "Mechanical verification only; no scientific runner execution.",
+  "script_sha256": "1d707df91f319c0dd0aa28b548c297b8bb583ef4bc5f0d7f6c64447730edd72b",
+  "stdout_sha256": "d5bffb4eaf72908fc12531f78350642a930607bb648e3164ffd139dfdf8de763",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 14633,
- "node_count": 6651,
+ "edge_count": 14638,
+ "node_count": 6652,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14876,6 +14876,10 @@
   },
   "original_formation_record_photon_readout_and_microscopic_finite_bins_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c7af889f8143",
+   "out_degree": 5
+  },
+  "original_record_calibration_and_prepared_matter_probe_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "5c7012889590",
    "out_degree": 5
   },
   "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27": {

@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-24T21:20:22.885429+00:00",
+  "seal_sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+  "members_verified": 33,
+  "source_origins_verified": 10,
+  "full_PRE_and_science_code_read": true,
+  "effect_rows_read": 48,
+  "direct_norm_rows_read": 12,
+  "path_coverage": "128 repeated path records covered mechanically by independent verifier; not claimed manually reread by root."
+}

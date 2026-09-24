@@ -1,0 +1,544 @@
+{
+  "scope": "B and C.2 only; prepared author controls and full mechanical source/runtime binding.",
+  "preserved": [
+    {
+      "path": "PRE_SEAL.json",
+      "sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+      "members_verified": 33
+    },
+    {
+      "path": "POST_SEAL.json",
+      "sha256": "dca495a9a8d810740b3048f38e6709584df74d4d707de593f19426defcae0af1",
+      "members_verified": 36
+    }
+  ],
+  "frozen_origins": 13,
+  "declared_inputs": [
+    {
+      "path": "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 36259,
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 19851,
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 39966,
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b"
+    },
+    {
+      "path": "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 38349,
+      "sha256": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b"
+    }
+  ],
+  "input_fingerprint_sha256": "53913bb08db29e1c85b0665361ec01cf06bf78cc9d6b8651ccb61ac857c3d374",
+  "helper_comparison": [
+    {
+      "name": "primitive_control",
+      "source_bytes_sha256": "33d755317e756c732f8ac43d8d7d6fa1f4a7a466e704455d7973bb803d8656fa",
+      "ast_sha256": "d7349dbb172504c511e02f19bba5deef9e62a543d80a77ad39d38c0a8abcf569",
+      "exact_text_equal": true,
+      "ast_equal": true,
+      "line": 66,
+      "end_line": 148
+    },
+    {
+      "name": "timing_probability",
+      "source_bytes_sha256": "821dfda45179e82c20599104616187b8012ef79154cac7b7edf723d15796f746",
+      "ast_sha256": "713e340439e788fa2cd9bf1395bf414ac45d36ed69c265b41532361c8421e3a0",
+      "exact_text_equal": true,
+      "ast_equal": true,
+      "line": 150,
+      "end_line": 162
+    },
+    {
+      "name": "timing_control",
+      "source_bytes_sha256": "bbb6688746bea518441857cfc26fe2bdaa9bab1f17ffe5b8f8465434281c9275",
+      "ast_sha256": "539c4a519ff8ae4726e960baa826b7b2866e3616a519e32942f41402fb3b260e",
+      "exact_text_equal": true,
+      "ast_equal": true,
+      "line": 164,
+      "end_line": 190
+    }
+  ],
+  "receipt_sha256": "9e71e3314ff31d14191034dfd6ddb0d01423ce4e7dc85c995e6143bdd8295ea1",
+  "primary_elapsed_sec": 0.45025181770324707,
+  "cache_elapsed_display": "0.45",
+  "wrapper_elapsed_recorded": false,
+  "result_internal_elapsed_seconds": 0.06606175005435944,
+  "historical_author_elapsed_seconds": 1.5052074589766562,
+  "historical_author_internal_elapsed_seconds": 0.043682541931048036,
+  "full_execution_stdout_equals_result_plus_certificate": true,
+  "cache_bytes_exactly_reconstructed": true,
+  "cache_stdout_not_truncated": true,
+  "primary_exit_code": 0,
+  "primary_stderr_bytes": 0,
+  "prepared_scientific_payload_exactly_equal_to_sealed_author": true,
+  "prepared_primitive": {
+    "scope": "Exact original selected primitive on the side-six cubic graph; no full Hamiltonian propagation.",
+    "common_flow": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        -1
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        -1
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        3
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        -1
+      ],
+      [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        -2
+      ],
+      [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        2
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        -1
+      ],
+      [
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        -2
+      ]
+    ],
+    "common_flow_paths": [
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    ],
+    "rows": [
+      {
+        "sigma": -1,
+        "initial_occupied_variable": [
+          1,
+          0,
+          0
+        ],
+        "initial_records": 112,
+        "output_records": 114,
+        "retained_paths": 1,
+        "outward_to_birth_site_rejected": 1,
+        "physical_flux_cases_checked": 5
+      },
+      {
+        "sigma": -1,
+        "initial_occupied_variable": [
+          0,
+          1,
+          0
+        ],
+        "initial_records": 112,
+        "output_records": 114,
+        "retained_paths": 1,
+        "outward_to_birth_site_rejected": 1,
+        "physical_flux_cases_checked": 5
+      },
+      {
+        "sigma": 1,
+        "initial_occupied_variable": [
+          1,
+          0,
+          0
+        ],
+        "initial_records": 112,
+        "output_records": 114,
+        "retained_paths": 1,
+        "outward_to_birth_site_rejected": 1,
+        "physical_flux_cases_checked": 5
+      },
+      {
+        "sigma": 1,
+        "initial_occupied_variable": [
+          0,
+          1,
+          0
+        ],
+        "initial_records": 112,
+        "output_records": 114,
+        "retained_paths": 1,
+        "outward_to_birth_site_rejected": 1,
+        "physical_flux_cases_checked": 5
+      }
+    ],
+    "effects": {
+      "-1": {
+        "identity": "1",
+        "cycle": "-1/2",
+        "inverse_cycle": "-1/2",
+        "dephased_identity": "1",
+        "dephased_cycle": "0"
+      },
+      "1": {
+        "identity": "1",
+        "cycle": "-1/2",
+        "inverse_cycle": "-1/2",
+        "dephased_identity": "1",
+        "dephased_cycle": "0"
+      }
+    },
+    "gauss_checks": "both charged branches and every listed loop flux satisfy div E=q-1_A"
+  },
+  "separate_timing": {
+    "scope": "Separate two coherent input states and one absorbing state at each Gaussian angle. kappa=tau=1, matter splitting g^-2, one selected jump and its full loss. No cubic electric term, Gauss constraint, other original channels or microscopic limit in this timing toy.",
+    "rows": [
+      {
+        "g": 0.4,
+        "window_exponent": 3.5,
+        "window": 0.04047715405015526,
+        "vacuum_probability": 0.004517813081332774,
+        "one_probability": 0.01001875941497439,
+        "vacuum_over_b_g2": 0.6975868837849167,
+        "one_over_b_g2": 1.5469774941687073,
+        "excess_over_b_g2": 0.8493906103837905
+      },
+      {
+        "g": 0.4,
+        "window_exponent": 2.0,
+        "window": 0.16000000000000003,
+        "vacuum_probability": 0.082541712433381,
+        "one_probability": 0.09175347610982533,
+        "vacuum_over_b_g2": 3.2242856419289443,
+        "one_over_b_g2": 3.584120160540051,
+        "excess_over_b_g2": 0.3598345186111065
+      },
+      {
+        "g": 0.2,
+        "window_exponent": 3.5,
+        "window": 0.003577708763999664,
+        "vacuum_probability": 8.921422898699658e-05,
+        "one_probability": 0.0002282439089013866,
+        "vacuum_over_b_g2": 0.623403376797364,
+        "one_over_b_g2": 1.59490279923053,
+        "excess_over_b_g2": 0.971499422433166
+      },
+      {
+        "g": 0.2,
+        "window_exponent": 2.0,
+        "window": 0.04000000000000001,
+        "vacuum_probability": 0.021532792742983267,
+        "one_probability": 0.02221813044755422,
+        "vacuum_over_b_g2": 13.457995464364538,
+        "one_over_b_g2": 13.886331529721382,
+        "excess_over_b_g2": 0.42833606535684443
+      },
+      {
+        "g": 0.1,
+        "window_exponent": 3.5,
+        "window": 0.000316227766016838,
+        "vacuum_probability": 1.7863693665189671e-06,
+        "one_probability": 4.929783710348298e-06,
+        "vacuum_over_b_g2": 0.5648995940552067,
+        "one_over_b_g2": 1.55893448966964,
+        "excess_over_b_g2": 0.9940348956144333
+      },
+      {
+        "g": 0.1,
+        "window_exponent": 2.0,
+        "window": 0.010000000000000002,
+        "vacuum_probability": 0.00543620855012088,
+        "one_probability": 0.005480997610006658,
+        "vacuum_over_b_g2": 54.36208550120878,
+        "one_over_b_g2": 54.80997610006656,
+        "excess_over_b_g2": 0.4478905988577769
+      },
+      {
+        "g": 0.05,
+        "window_exponent": 3.5,
+        "window": 2.7950849718747376e-05,
+        "vacuum_probability": 3.724197964477396e-08,
+        "one_probability": 1.070240459161056e-07,
+        "vacuum_over_b_g2": 0.5329638278552193,
+        "one_over_b_g2": 1.5316034681310131,
+        "excess_over_b_g2": 0.9986396402757938
+      },
+      {
+        "g": 0.05,
+        "window_exponent": 2.0,
+        "window": 0.0025000000000000005,
+        "vacuum_probability": 0.001362301268645677,
+        "one_probability": 0.001365132191466045,
+        "vacuum_over_b_g2": 217.96820298330826,
+        "one_over_b_g2": 218.42115063456714,
+        "excess_over_b_g2": 0.4529476512588752
+      },
+      {
+        "g": 0.025,
+        "window_exponent": 3.5,
+        "window": 2.470529422006547e-06,
+        "vacuum_probability": 7.976444789966762e-10,
+        "one_probability": 2.3412230335461328e-09,
+        "vacuum_over_b_g2": 0.5165820552576684,
+        "one_over_b_g2": 1.5162567263138973,
+        "excess_over_b_g2": 0.999674671056229
+      },
+      {
+        "g": 0.025,
+        "window_exponent": 2.0,
+        "window": 0.0006250000000000001,
+        "vacuum_probability": 0.0003407773174612623,
+        "one_probability": 0.0003409547482121807,
+        "vacuum_over_b_g2": 872.3899327008312,
+        "one_over_b_g2": 872.8441554231823,
+        "excess_over_b_g2": 0.4542227223511273
+      }
+    ],
+    "maximum_scaled_quadrature_refinement": 5.224698474128429e-08,
+    "no_uniform_optimal_window_claim": true
+  },
+  "arithmetic_rows": [
+    {
+      "g": 0.4,
+      "window_exponent": 3.5,
+      "exact_stored_arithmetic": true
+    },
+    {
+      "g": 0.4,
+      "window_exponent": 2.0,
+      "exact_stored_arithmetic": true
+    },
+    {
+      "g": 0.2,
+      "window_exponent": 3.5,
+      "exact_stored_arithmetic": true
+    },
+    {
+      "g": 0.2,
+      "window_exponent": 2.0,
+      "exact_stored_arithmetic": true
+    },
+    {
+      "g": 0.1,
+      "window_exponent": 3.5,
+      "exact_stored_arithmetic": true
+    },
+    {
+      "g": 0.1,
+      "window_exponent": 2.0,
+      "exact_stored_arithmetic": true
+    },
+    {
+      "g": 0.05,
+      "window_exponent": 3.5,
+      "exact_stored_arithmetic": true
+    },
+    {
+      "g": 0.05,
+      "window_exponent": 2.0,
+      "exact_stored_arithmetic": true
+    },
+    {
+      "g": 0.025,
+      "window_exponent": 3.5,
+      "exact_stored_arithmetic": true
+    },
+    {
+      "g": 0.025,
+      "window_exponent": 2.0,
+      "exact_stored_arithmetic": true
+    }
+  ],
+  "C2_symbolic_translation": {
+    "new_c_divergence": {
+      "c": 1,
+      "d": -1
+    },
+    "equal_surviving_output": true,
+    "equals_prior_POST_eta_c_minus_loop": true,
+    "meaning": "Both branch outputs agree; balanced minus state is annihilated for every reference field."
+  },
+  "count_bracket_transcription": {
+    "cases": 29260,
+    "maximum_cap": 54,
+    "analytic_identity": "upper^2-lower^2=(upper-lower)(upper+lower)<=2M(upper-lower)"
+  },
+  "wrapper_failure": {
+    "kind": "author-reported PosixPath receipt serialization failure before fresh run",
+    "traceback_independently_read": false,
+    "failure_file_sha256": "7b769eb4c97afdcc6be795d3b81937176b3b7ed2eafe4875feef00db6ecb6a21"
+  },
+  "evidence_limits": [
+    "No author/primary scientific program executed or imported.",
+    "Timing propagation and quadrature were not independently reproduced.",
+    "Calibration payload is mechanically byte-bound only; sections A, C.1 and D outside scientific review.",
+    "The 5.23e-8 prose value bounds the stored 5.224698474128429e-8; no interval enclosure.",
+    "No audit verdict or entire-publication approval."
+  ]
+}

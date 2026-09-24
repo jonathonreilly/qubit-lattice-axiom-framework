@@ -1,0 +1,8 @@
+{
+  "scope": "Capture guard before final source copy; no science execution or previous seal changes.",
+  "expected_execution_sha256": "b687884063bd9b628036d371aa21900301d6a8dd6eb57eafc3db0dae7ce851ef",
+  "observed_execution_sha256": "9e71e3314ff31d14191034dfd6ddb0d01423ce4e7dc85c995e6143bdd8295ea1",
+  "tool_output": "Traceback (most recent call last):\\n  File \"<stdin>\", line 11, in <module>\\nAssertionError\\n",
+  "next_step": "Report external execution record mismatch to root; pin only after clarification.",
+  "resolution": "Root supplied receipt-only correction to observed 9e71e331 hash; same completed scientific run, wrapper_elapsed_recorded=false. Updated identity checked before capture."
+}

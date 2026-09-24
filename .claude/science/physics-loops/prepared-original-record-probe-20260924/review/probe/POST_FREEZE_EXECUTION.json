@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/freeze_post_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent",
+  "started_utc": "2026-09-24T21:24:53.799290+00:00",
+  "completed_utc": "2026-09-24T21:24:53.978399+00:00",
+  "elapsed_seconds": 0.17890120903030038,
+  "exit_code": 0,
+  "script_sha256": "6c14415de0f635d83a0fccf5ba73e3cfc67f11951f1db11806feca46cd9f3c94",
+  "stdout_sha256": "fb134143291e41b2c226c352d211a52f18ace6f0989f31e3626073bfe5923751",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_sha256": "850c37ec637d1ed4aa649d397d2f59d4a26f8980d459778371e9f9581d727910"
+}

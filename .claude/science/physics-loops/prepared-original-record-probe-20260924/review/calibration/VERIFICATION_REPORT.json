@@ -1,0 +1,33 @@
+{
+  "verified_utc": "2026-09-24T21:02:04.512264+00:00",
+  "phase": "blind_PRE",
+  "PRE_sha256": "317f27047dc373562edb0efb5be53ba83a9eb5bcd0f295ec0ef7b481d03f4ee1",
+  "all_five_exact_supplied_sources_verified": true,
+  "three_sources_verified_by_git_object": true,
+  "Glauber_primary_relevant_equations_and_ordering_read": true,
+  "Glauber_local_pdf_hash_available": false,
+  "Brouri_full_extracted_text_read": true,
+  "own_control_first_run_exit": 0,
+  "own_control_stderr_empty": true,
+  "own_control_source_result_stdout_binding": true,
+  "own_control_source_sha256": "10bc8ffdddd395025bf03dfa3f1d4f673d2e80a47f7b45986370d745e10e46ac",
+  "own_result_stdout_sha256": "8d950d27a79d87d7017de2f2515a37a0bca042a456be5f625b6a63f85527be3d",
+  "one_mode_states": 8,
+  "cosine_rows": 40,
+  "spatial_rows": 12,
+  "temporal_rows": 9,
+  "complete_control_code_and_every_result_row_read": true,
+  "max_quadrature_difference": 4.440892098500626e-16,
+  "preserved_small_vacuum_subtraction_roundoff": {
+    "g": 0.025,
+    "raw_boundary_effect": 24.99937509764608,
+    "vacuum_subtracted_scaled_mean": -5.684341886080801e-12,
+    "difference_from_leading": -5.684341886080801e-12,
+    "difference_over_g2": -9.094947017729279e-09
+  },
+  "independent_scientific_control_runs": 1,
+  "parent_or_author_runs": 0,
+  "delegation": false,
+  "repository_or_audit_changes": false,
+  "scientific_scope": "Fixed prepared finite-Hermite family; original resolved first and first-pair statistics; conditional harmonic calibration, finite-state witnesses and ordered averaging. No framework-wide no-go or empirical falsification."
+}

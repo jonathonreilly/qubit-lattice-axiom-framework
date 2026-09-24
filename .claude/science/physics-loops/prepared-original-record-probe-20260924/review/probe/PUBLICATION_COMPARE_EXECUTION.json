@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-24T22:03:31.305616+00:00",
+  "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/publication_compare.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent",
+  "elapsed_seconds": 0.07559995795600116,
+  "exit_code": 0,
+  "script_sha256": "0a07c48ffd26066d60ca20393061da5f0ba7362a025cbecc976d916017766aa6",
+  "stdout_bytes": 13760,
+  "stdout_sha256": "7930c82d175b6af28ad5e4493582b75e9e0783a28f0262951b7096da906408d5",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Read-only scientific source comparison, copying frozen inputs into independent directory; no primary execution."
+}

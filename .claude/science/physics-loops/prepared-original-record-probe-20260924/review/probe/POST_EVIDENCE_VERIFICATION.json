@@ -1,0 +1,223 @@
+{
+  "created_utc": "2026-09-24T21:36:35.193863+00:00",
+  "preserved_PRE_seal_sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+  "PRE_members_unchanged": 33,
+  "new_source_origins": [
+    {
+      "path": "post_sources/author/AUTHOR_SEAL.json",
+      "sha256": "99a14ba42c0936a52cf4037428168eadc8021651dddc5b718332b4bf8b97fe33",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/author/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/author/EXECUTION.json",
+      "sha256": "6bc4f8d6072cc383abfadd75f289ffb4a3493822a8fff71b3dd6b1f065527f18",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/author/PREPARED_MATTER_INTERFERENCE_PROBE_ROOT.md",
+      "sha256": "ab3c1883b032e571efdeb52330d7665c262f70e3f303b3236f32f89accbcd7bf",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/author/PREPARED_PROBE_RESULTS.json",
+      "sha256": "8b2a55ee00d36d9ffd0695f8647f8c8c801818f7e248011489af83202feeb6be",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/author/ROOT_REVIEW.md",
+      "sha256": "2d584726fa1dc3a07a4a6b98c189efc62471a604ffd73a3a3ab9b1f9279245f3",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/author/SOURCE_PINS.json",
+      "sha256": "bf35b32bbf4a79ce1bca5d98b93ebecf5187daeb97645e225dfd232a5ba75f3b",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/author/prepared_probe_controls.py",
+      "sha256": "27da3c4fdff89c16e4c15c96e41296f2ae51964c6048b727c07c2b55cba9683c",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/bounded_target.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/public_original_readout.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/procedure/physics-claim-reviewer.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/procedure/skill-freshness.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "origin_equal": true
+    },
+    {
+      "path": "post_sources/procedure/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "origin_equal": true
+    }
+  ],
+  "reused_main_science_origins_equal": 4,
+  "current_workflow_unchanged": true,
+  "executions_bound": true,
+  "stdout_result_checks_equal": true,
+  "scientific_check_count": 8,
+  "serialized_case_count": 20,
+  "complete_serialized_cases": [
+    {
+      "sigma": -1,
+      "branch": 0,
+      "reference_loop_flux": -2,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": -1,
+      "branch": 0,
+      "reference_loop_flux": -1,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": -1,
+      "branch": 0,
+      "reference_loop_flux": 0,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": -1,
+      "branch": 0,
+      "reference_loop_flux": 1,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": -1,
+      "branch": 0,
+      "reference_loop_flux": 2,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": -1,
+      "branch": 1,
+      "reference_loop_flux": -2,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": -1,
+      "branch": 1,
+      "reference_loop_flux": -1,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": -1,
+      "branch": 1,
+      "reference_loop_flux": 0,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": -1,
+      "branch": 1,
+      "reference_loop_flux": 1,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": -1,
+      "branch": 1,
+      "reference_loop_flux": 2,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 0,
+      "reference_loop_flux": -2,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 0,
+      "reference_loop_flux": -1,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 0,
+      "reference_loop_flux": 0,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 0,
+      "reference_loop_flux": 1,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 0,
+      "reference_loop_flux": 2,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 1,
+      "reference_loop_flux": -2,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 1,
+      "reference_loop_flux": -1,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 1,
+      "reference_loop_flux": 0,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 1,
+      "reference_loop_flux": 1,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    },
+    {
+      "sigma": 1,
+      "branch": 1,
+      "reference_loop_flux": 2,
+      "initial_and_two_intermediate_Gauss_equal": true,
+      "one_successful_final_Gauss_equal": true
+    }
+  ],
+  "author_controls_executed": false,
+  "other_active_checker_packets_read": false,
+  "verifier_sha256": "ee6518e80f21c75d8667f7375107df849712f1e24a4e6a72c4f7a589d9f12a16"
+}

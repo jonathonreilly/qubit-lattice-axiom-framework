@@ -1,0 +1,111 @@
+{
+  "sealed_utc": "2026-09-24T21:22:09.830977+00:00",
+  "phase": "released_source_POST",
+  "scope": "Original record-observable calibration argument and author evidence compared with unchanged independent PRE; external count dependency excluded.",
+  "PRE_seal_sha256": "a2cea48da4281d1210637af88331ef24f1e0dfbc9d9c4df46a75e3e691a1f04a",
+  "PRE_members_unchanged": 17,
+  "author_seal_sha256": "048195b50701e436d58870fa9b5ce6153790486ad2feddd8ba87b81d86e0e172",
+  "findings": [
+    "No material algebraic or stored-evidence discrepancy found in scoped core claims.",
+    "Q1: distinguish unweighted effect mean from survival-weighted first-pair data.",
+    "Q2: imported small-background condition preserves leading limit, not automatically displayed remainder rates."
+  ],
+  "outside_scientific_review": [
+    "unrestricted-count independent PRE and its bounded global dissipator theorem"
+  ],
+  "author_runner_executions": 0,
+  "new_scientific_control_runs": 0,
+  "mechanical_verifier_runs": 1,
+  "initial_seal_guard_failure": "Wrong hard-coded display-block count; preserved in POST_SEAL_ATTEMPT01.json, corrected without scientific-content change.",
+  "other_active_packets_read": false,
+  "delegation": false,
+  "repository_publication_audit_mutations": false,
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "4493fe20219f56e382865f42d7af6f66f7099f8a9a5123d88335613b91acb0b4",
+      "bytes": 14443
+    },
+    {
+      "path": "POST_SOURCE_BINDINGS.json",
+      "sha256": "1880344291a0d39069776912b04c6e7ee762ecb7be9c34098f450f8cb2545146",
+      "bytes": 3197
+    },
+    {
+      "path": "POST_VERIFICATION_REPORT.json",
+      "sha256": "986e9ef811c1b12b5f192665a05cc2c7813536f05ffdf8bff8109b0ac2037605",
+      "bytes": 4095
+    },
+    {
+      "path": "verify_post_evidence.py",
+      "sha256": "ca083d8f967b0621086b688ee2dcbdb951d19d1e2b4981186fe6198d5cb68cf6",
+      "bytes": 6999
+    },
+    {
+      "path": "POST_VERIFY_STDOUT.log",
+      "sha256": "986e9ef811c1b12b5f192665a05cc2c7813536f05ffdf8bff8109b0ac2037605",
+      "bytes": 4095
+    },
+    {
+      "path": "POST_VERIFY_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "POST_VERIFY_EXECUTION.json",
+      "sha256": "0d9dd1a22fb11706dfb6289145cedc8593f3a8aabd6db713c9eb4a40e4505304",
+      "bytes": 447
+    },
+    {
+      "path": "POST_SEAL_ATTEMPT01.json",
+      "sha256": "362d2c9116eb5897e25d6cf45e4005443bff7d87d14187aabb44f66dbf548cc9",
+      "bytes": 460
+    },
+    {
+      "path": "post_sources/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/CONTROL.stdout",
+      "sha256": "00b2a9df8189daaf4990267d44cbff46bccb06d232f1c55d1ef161e56c3f5518",
+      "bytes": 18217
+    },
+    {
+      "path": "post_sources/EXECUTION.json",
+      "sha256": "28f64aecfff88d2bc3cfe0dd3a70db749e1a930050fae220d8ed943e00696c78",
+      "bytes": 343
+    },
+    {
+      "path": "post_sources/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "ef1521b7a83ef3223aa3859814488283ab97571efdeb4b4bcf28867759ee0c27",
+      "bytes": 8020
+    },
+    {
+      "path": "post_sources/OBSERVABLE_CALIBRATION_RESULTS.json",
+      "sha256": "4f2efae45624e4e2b2c5d298fe3a4bc1a807308e1debef29166c54984cbe0d42",
+      "bytes": 17732
+    },
+    {
+      "path": "post_sources/ORIGINAL_RECORD_OBSERVABLE_CALIBRATION_ROOT.md",
+      "sha256": "07d50a3a8ffd5e170bff4c41ab428908f19e43c484293f8082aae114d6538f30",
+      "bytes": 13955
+    },
+    {
+      "path": "post_sources/SOURCE_PINS.json",
+      "sha256": "f5a8c54f4dbee4075b94989f7e468e544b81d48aa749c73d51654db7f2507a81",
+      "bytes": 3353
+    },
+    {
+      "path": "post_sources/observable_calibration_controls.py",
+      "sha256": "f6a4fe09dbb8c2ec88197db4868466b3c3f5531b63cc0c56bf3909c6da56eec8",
+      "bytes": 7136
+    },
+    {
+      "path": "post_sources/AUTHOR_SEAL.json",
+      "sha256": "048195b50701e436d58870fa9b5ce6153790486ad2feddd8ba87b81d86e0e172",
+      "bytes": 1304
+    }
+  ],
+  "read_only_policy": "All new members and this seal chmod 0444; PRE members left unchanged."
+}

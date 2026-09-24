@@ -1,0 +1,631 @@
+{
+  "scope": "Independent finite oscillator checks; no parent or author runner is imported.\n\nThe polynomial state moments are exact in the finite matrices used below,\nbecause all states stay clear of the truncation boundary. The cosine\nexpectations use independent Hermite-Gauss quadrature, with a second order\ncomparison; floating agreement is not an interval enclosure. The spatial\nmatrix is explicitly auxiliary, not a simulated cubic record generator.\n",
+  "one_mode": {
+    "rows": [
+      {
+        "state": "number_0",
+        "ideal_matched_single_intensity": 0.0,
+        "ideal_same_mode_factorial_pair": 0.0,
+        "anomalous_pair_real": 0.0,
+        "leading_record_deficit": 0.0,
+        "scales": [
+          {
+            "g": 0.4,
+            "raw_boundary_effect": 24.84623269277327,
+            "vacuum_subtracted_scaled_mean": 0.0,
+            "difference_from_leading": 0.0,
+            "difference_over_g2": 0.0
+          },
+          {
+            "g": 0.2,
+            "raw_boundary_effect": 24.96039734661351,
+            "vacuum_subtracted_scaled_mean": 0.0,
+            "difference_from_leading": 0.0,
+            "difference_over_g2": 0.0
+          },
+          {
+            "g": 0.1,
+            "raw_boundary_effect": 24.990024958385366,
+            "vacuum_subtracted_scaled_mean": 0.0,
+            "difference_from_leading": 0.0,
+            "difference_over_g2": 0.0
+          },
+          {
+            "g": 0.05,
+            "raw_boundary_effect": 24.997501561849162,
+            "vacuum_subtracted_scaled_mean": 0.0,
+            "difference_from_leading": 0.0,
+            "difference_over_g2": 0.0
+          },
+          {
+            "g": 0.025,
+            "raw_boundary_effect": 24.99937509764608,
+            "vacuum_subtracted_scaled_mean": -5.684341886080801e-12,
+            "difference_from_leading": -5.684341886080801e-12,
+            "difference_over_g2": -9.094947017729279e-09
+          }
+        ]
+      },
+      {
+        "state": "number_1",
+        "ideal_matched_single_intensity": 1.0,
+        "ideal_same_mode_factorial_pair": 0.0,
+        "anomalous_pair_real": 0.0,
+        "leading_record_deficit": 2.0000000000000004,
+        "scales": [
+          {
+            "g": 0.4,
+            "raw_boundary_effect": 24.550835461929548,
+            "vacuum_subtracted_scaled_mean": 1.8462326927732637,
+            "difference_from_leading": -0.1537673072267367,
+            "difference_over_g2": -0.9610456701671042
+          },
+          {
+            "g": 0.2,
+            "raw_boundary_effect": 24.88198145274897,
+            "vacuum_subtracted_scaled_mean": 1.960397346613529,
+            "difference_from_leading": -0.03960265338647151,
+            "difference_over_g2": -0.9900663346617875
+          },
+          {
+            "g": 0.1,
+            "raw_boundary_effect": 24.97012470880151,
+            "vacuum_subtracted_scaled_mean": 1.9900249583855607,
+            "difference_from_leading": -0.00997504161443974,
+            "difference_over_g2": -0.9975041614439737
+          },
+          {
+            "g": 0.05,
+            "raw_boundary_effect": 24.992507807944538,
+            "vacuum_subtracted_scaled_mean": 1.997501561849901,
+            "difference_from_leading": -0.0024984381500994246,
+            "difference_over_g2": -0.9993752600397696
+          },
+          {
+            "g": 0.025,
+            "raw_boundary_effect": 24.99812548821005,
+            "vacuum_subtracted_scaled_mean": 1.9993750976425413,
+            "difference_from_leading": -0.0006249023574591561,
+            "difference_over_g2": -0.9998437719346496
+          }
+        ]
+      },
+      {
+        "state": "number_2",
+        "ideal_matched_single_intensity": 2.0000000000000004,
+        "ideal_same_mode_factorial_pair": 2.0000000000000004,
+        "anomalous_pair_real": 0.0,
+        "leading_record_deficit": 4.0,
+        "scales": [
+          {
+            "g": 0.4,
+            "raw_boundary_effect": 24.279070009553323,
+            "vacuum_subtracted_scaled_mean": 3.5447667701246734,
+            "difference_from_leading": -0.45523322987532655,
+            "difference_over_g2": -2.8452076867207903
+          },
+          {
+            "g": 0.2,
+            "raw_boundary_effect": 24.80513387676172,
+            "vacuum_subtracted_scaled_mean": 3.8815867462948175,
+            "difference_from_leading": -0.11841325370518252,
+            "difference_over_g2": -2.9603313426295625
+          },
+          {
+            "g": 0.1,
+            "raw_boundary_effect": 24.950323960465575,
+            "vacuum_subtracted_scaled_mean": 3.9700997919791083,
+            "difference_from_leading": -0.02990020802089166,
+            "difference_over_g2": -2.9900208020891657
+          },
+          {
+            "g": 0.05,
+            "raw_boundary_effect": 24.987520296232297,
+            "vacuum_subtracted_scaled_mean": 3.992506246746074,
+            "difference_from_leading": -0.007493753253926094,
+            "difference_over_g2": -2.9975013015704373
+          },
+          {
+            "g": 0.025,
+            "raw_boundary_effect": 24.996876269276967,
+            "vacuum_subtracted_scaled_mean": 3.998125390575068,
+            "difference_from_leading": -0.0018746094249317835,
+            "difference_over_g2": -2.999375079890853
+          }
+        ]
+      },
+      {
+        "state": "equal_vacuum_two_mixture",
+        "ideal_matched_single_intensity": 1.0000000000000002,
+        "ideal_same_mode_factorial_pair": 1.0000000000000002,
+        "anomalous_pair_real": 0.0,
+        "leading_record_deficit": 2.0,
+        "scales": [
+          {
+            "g": 0.4,
+            "raw_boundary_effect": 24.562651351163296,
+            "vacuum_subtracted_scaled_mean": 1.7723833850623367,
+            "difference_from_leading": -0.22761661493766328,
+            "difference_over_g2": -1.4226038433603951
+          },
+          {
+            "g": 0.2,
+            "raw_boundary_effect": 24.882765611687617,
+            "vacuum_subtracted_scaled_mean": 1.9407933731473643,
+            "difference_from_leading": -0.05920662685263567,
+            "difference_over_g2": -1.4801656713158915
+          },
+          {
+            "g": 0.1,
+            "raw_boundary_effect": 24.970174459425472,
+            "vacuum_subtracted_scaled_mean": 1.9850498959893765,
+            "difference_from_leading": -0.014950104010623466,
+            "difference_over_g2": -1.4950104010623464
+          },
+          {
+            "g": 0.05,
+            "raw_boundary_effect": 24.99251092904073,
+            "vacuum_subtracted_scaled_mean": 1.996253123373037,
+            "difference_from_leading": -0.003746876626963047,
+            "difference_over_g2": -1.4987506507852186
+          },
+          {
+            "g": 0.025,
+            "raw_boundary_effect": 24.998125683461524,
+            "vacuum_subtracted_scaled_mean": 1.999062695284692,
+            "difference_from_leading": -0.0009373047153080627,
+            "difference_over_g2": -1.4996875444929
+          }
+        ]
+      },
+      {
+        "state": "vacuum_one_superposition",
+        "ideal_matched_single_intensity": 0.4999999999999999,
+        "ideal_same_mode_factorial_pair": 0.0,
+        "anomalous_pair_real": 0.0,
+        "leading_record_deficit": 0.9999999999999996,
+        "scales": [
+          {
+            "g": 0.4,
+            "raw_boundary_effect": 24.69853407735141,
+            "vacuum_subtracted_scaled_mean": 0.9231163463866208,
+            "difference_from_leading": -0.07688365361337879,
+            "difference_over_g2": -0.4805228350836173
+          },
+          {
+            "g": 0.2,
+            "raw_boundary_effect": 24.92118939968124,
+            "vacuum_subtracted_scaled_mean": 0.9801986733068089,
+            "difference_from_leading": -0.01980132669319068,
+            "difference_over_g2": -0.4950331673297669
+          },
+          {
+            "g": 0.1,
+            "raw_boundary_effect": 24.980074833593438,
+            "vacuum_subtracted_scaled_mean": 0.9950124791927804,
+            "difference_from_leading": -0.004987520807219203,
+            "difference_over_g2": -0.49875208072192023
+          },
+          {
+            "g": 0.05,
+            "raw_boundary_effect": 24.99500468489685,
+            "vacuum_subtracted_scaled_mean": 0.998750780925661,
+            "difference_from_leading": -0.0012492190743385034,
+            "difference_over_g2": -0.49968762973540126
+          },
+          {
+            "g": 0.025,
+            "raw_boundary_effect": 24.998750292928065,
+            "vacuum_subtracted_scaled_mean": 0.9996875488184285,
+            "difference_from_leading": -0.00031245118157108287,
+            "difference_over_g2": -0.4999218905137325
+          }
+        ]
+      },
+      {
+        "state": "zero_calibrated_mean",
+        "ideal_matched_single_intensity": 0.6666666666666667,
+        "ideal_same_mode_factorial_pair": 0.6666666666666667,
+        "anomalous_pair_real": -0.6666666666666667,
+        "leading_record_deficit": -3.3306690738754696e-16,
+        "scales": [
+          {
+            "g": 0.4,
+            "raw_boundary_effect": 24.854109952262437,
+            "vacuum_subtracted_scaled_mean": -0.04923287180729207,
+            "difference_from_leading": -0.04923287180729174,
+            "difference_over_g2": -0.3077054487955733
+          },
+          {
+            "g": 0.2,
+            "raw_boundary_effect": 24.960920119239272,
+            "vacuum_subtracted_scaled_mean": -0.013069315644020916,
+            "difference_from_leading": -0.013069315644020583,
+            "difference_over_g2": -0.3267328911005145
+          },
+          {
+            "g": 0.1,
+            "raw_boundary_effect": 24.990058125468003,
+            "vacuum_subtracted_scaled_mean": -0.003316708263767509,
+            "difference_from_leading": -0.003316708263767176,
+            "difference_over_g2": -0.3316708263767175
+          },
+          {
+            "g": 0.05,
+            "raw_boundary_effect": 24.997503642579954,
+            "vacuum_subtracted_scaled_mean": -0.0008322923164882922,
+            "difference_from_leading": -0.0008322923164879591,
+            "difference_over_g2": -0.33291692659518357
+          },
+          {
+            "g": 0.025,
+            "raw_boundary_effect": 24.999375227813726,
+            "vacuum_subtracted_scaled_mean": -0.00020826823856623375,
+            "difference_from_leading": -0.00020826823856590068,
+            "difference_over_g2": -0.333229181705441
+          }
+        ]
+      },
+      {
+        "state": "same_occupation_bright",
+        "ideal_matched_single_intensity": 0.6666666666666667,
+        "ideal_same_mode_factorial_pair": 0.6666666666666667,
+        "anomalous_pair_real": 0.6666666666666667,
+        "leading_record_deficit": 2.666666666666667,
+        "scales": [
+          {
+            "g": 0.4,
+            "raw_boundary_effect": 24.46024697780414,
+            "vacuum_subtracted_scaled_mean": 2.412410718557067,
+            "difference_from_leading": -0.25425594810959984,
+            "difference_over_g2": -1.5890996756849987
+          },
+          {
+            "g": 0.2,
+            "raw_boundary_effect": 24.856365594086554,
+            "vacuum_subtracted_scaled_mean": 2.600793813173929,
+            "difference_from_leading": -0.06587285349273797,
+            "difference_over_g2": -1.646821337318449
+          },
+          {
+            "g": 0.1,
+            "raw_boundary_effect": 24.9635244593562,
+            "vacuum_subtracted_scaled_mean": 2.6500499029165066,
+            "difference_from_leading": -0.016616763750160413,
+            "difference_over_g2": -1.661676375016041
+          },
+          {
+            "g": 0.05,
+            "raw_boundary_effect": 24.99084530404046,
+            "vacuum_subtracted_scaled_mean": 2.662503123481485,
+            "difference_from_leading": -0.004163543185181862,
+            "difference_over_g2": -1.6654172740727444
+          },
+          {
+            "g": 0.025,
+            "raw_boundary_effect": 24.99770908189902,
+            "vacuum_subtracted_scaled_mean": 2.665625195288612,
+            "difference_from_leading": -0.0010414713780551033,
+            "difference_over_g2": -1.666354204888165
+          }
+        ]
+      },
+      {
+        "state": "negative_calibrated_mean",
+        "ideal_matched_single_intensity": 0.4000000000000001,
+        "ideal_same_mode_factorial_pair": 0.4000000000000001,
+        "anomalous_pair_real": -0.565685424949238,
+        "leading_record_deficit": -0.3313708498984762,
+        "scales": [
+          {
+            "g": 0.4,
+            "raw_boundary_effect": 24.89990206418794,
+            "vacuum_subtracted_scaled_mean": -0.3354335713416922,
+            "difference_from_leading": -0.004062721443216011,
+            "difference_over_g2": -0.025392009020100064
+          },
+          {
+            "g": 0.2,
+            "raw_boundary_effect": 24.97370338088669,
+            "vacuum_subtracted_scaled_mean": -0.3326508568294528,
+            "difference_from_leading": -0.0012800069309765738,
+            "difference_over_g2": -0.03200017327441434
+          },
+          {
+            "g": 0.1,
+            "raw_boundary_effect": 24.993342039943844,
+            "vacuum_subtracted_scaled_mean": -0.3317081558478207,
+            "difference_from_leading": -0.00033730594934450187,
+            "difference_over_g2": -0.03373059493445018
+          },
+          {
+            "g": 0.05,
+            "raw_boundary_effect": 24.998330202525416,
+            "vacuum_subtracted_scaled_mean": -0.33145627050146226,
+            "difference_from_leading": -8.54206029860527e-05,
+            "difference_over_g2": -0.03416824119442107
+          },
+          {
+            "g": 0.025,
+            "raw_boundary_effect": 24.999582217817096,
+            "vacuum_subtracted_scaled_mean": -0.3313922736310814,
+            "difference_from_leading": -2.1423732605219126e-05,
+            "difference_over_g2": -0.034277972168350594
+          }
+        ]
+      }
+    ],
+    "quadrature_orders": [
+      48,
+      80
+    ],
+    "max_normalization_error": 3.3306690738754696e-16,
+    "max_cosine_quadrature_difference": 4.440892098500626e-16
+  },
+  "spatial_temporal": {
+    "scope": "Auxiliary two-mode geometry, not the cubic record process.",
+    "curl_matrix": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ]
+    ],
+    "frequencies": [
+      1.4142135623730951,
+      2.449489742783178
+    ],
+    "survival_rate": 1.3,
+    "rows": [
+      {
+        "state": "number_one_wavepacket",
+        "spatial_checks": [
+          {
+            "time": 0.0,
+            "local_quadrature_excess": [
+              0.5576775358252053,
+              0.5576775358252053,
+              0.8164965809277259
+            ],
+            "spatial_sum": 1.9318516525781364,
+            "energy_weighted_occupation": 1.9318516525781362,
+            "surviving_anomalous_term": 0.0
+          },
+          {
+            "time": 0.3,
+            "local_quadrature_excess": [
+              0.721879158647966,
+              0.3934759130024441,
+              0.8164965809277255
+            ],
+            "spatial_sum": 1.9318516525781355,
+            "energy_weighted_occupation": 1.9318516525781362,
+            "surviving_anomalous_term": 0.0
+          },
+          {
+            "time": 1.0,
+            "local_quadrature_excess": [
+              1.0197443908001491,
+              0.09561068085026125,
+              0.8164965809277259
+            ],
+            "spatial_sum": 1.9318516525781364,
+            "energy_weighted_occupation": 1.9318516525781362,
+            "surviving_anomalous_term": 0.0
+          },
+          {
+            "time": 2.0,
+            "local_quadrature_excess": [
+              1.0292522813827938,
+              0.08610279026761636,
+              0.8164965809277259
+            ],
+            "spatial_sum": 1.931851652578136,
+            "energy_weighted_occupation": 1.9318516525781362,
+            "surviving_anomalous_term": 0.0
+          }
+        ],
+        "temporal_checks": [
+          {
+            "duration": 0.5,
+            "unweighted_excess_over_twice_intensity": 0.0,
+            "quadrature_value": 0.0,
+            "oscillatory_bound": 0.0,
+            "survival_weighted_excess_over_twice_intensity": 0.0,
+            "infinite_survival_weighted_limit": 0.0
+          },
+          {
+            "duration": 5.0,
+            "unweighted_excess_over_twice_intensity": 0.0,
+            "quadrature_value": 0.0,
+            "oscillatory_bound": 0.0,
+            "survival_weighted_excess_over_twice_intensity": 0.0,
+            "infinite_survival_weighted_limit": 0.0
+          },
+          {
+            "duration": 30.0,
+            "unweighted_excess_over_twice_intensity": 0.0,
+            "quadrature_value": 0.0,
+            "oscillatory_bound": 0.0,
+            "survival_weighted_excess_over_twice_intensity": 0.0,
+            "infinite_survival_weighted_limit": 0.0
+          }
+        ]
+      },
+      {
+        "state": "same_mode_anomalous",
+        "spatial_checks": [
+          {
+            "time": 0.0,
+            "local_quadrature_excess": [
+              -0.11715728752538102,
+              -0.11715728752538102,
+              -1.1102230246251565e-16
+            ],
+            "spatial_sum": -0.23431457505076214,
+            "energy_weighted_occupation": 0.5656854249492381,
+            "surviving_anomalous_term": -0.8
+          },
+          {
+            "time": 0.3,
+            "local_quadrature_excess": [
+              0.018407427630055095,
+              0.018407427630055095,
+              -2.220446049250313e-16
+            ],
+            "spatial_sum": 0.03681485526010997,
+            "energy_weighted_occupation": 0.5656854249492381,
+            "surviving_anomalous_term": -0.5288705696891278
+          },
+          {
+            "time": 1.0,
+            "local_quadrature_excess": [
+              0.663387963724958,
+              0.663387963724958,
+              -1.1102230246251565e-16
+            ],
+            "spatial_sum": 1.326775927449916,
+            "energy_weighted_occupation": 0.5656854249492381,
+            "surviving_anomalous_term": 0.761090502500678
+          },
+          {
+            "time": 2.0,
+            "local_quadrature_excess": [
+              -0.041230728771299296,
+              -0.041230728771299296,
+              -1.1102230246251565e-16
+            ],
+            "spatial_sum": -0.0824614575425987,
+            "energy_weighted_occupation": 0.5656854249492381,
+            "surviving_anomalous_term": -0.6481468824918364
+          }
+        ],
+        "temporal_checks": [
+          {
+            "duration": 0.5,
+            "unweighted_excess_over_twice_intensity": -0.2793823994546433,
+            "quadrature_value": -0.27938239945464305,
+            "oscillatory_bound": 0.39999999999999997,
+            "survival_weighted_excess_over_twice_intensity": -0.297835669969316,
+            "infinite_survival_weighted_limit": -0.0697626418988648
+          },
+          {
+            "duration": 5.0,
+            "unweighted_excess_over_twice_intensity": -0.028283922109871705,
+            "quadrature_value": -0.028283922109872215,
+            "oscillatory_bound": 0.056568542494923796,
+            "survival_weighted_excess_over_twice_intensity": -0.0700967436675436,
+            "infinite_survival_weighted_limit": -0.0697626418988648
+          },
+          {
+            "duration": 30.0,
+            "unweighted_excess_over_twice_intensity": 0.00014051474958294067,
+            "quadrature_value": 0.00014051474958291587,
+            "oscillatory_bound": 0.009428090415820633,
+            "survival_weighted_excess_over_twice_intensity": -0.06976264189886482,
+            "infinite_survival_weighted_limit": -0.0697626418988648
+          }
+        ]
+      },
+      {
+        "state": "cross_mode_anomalous",
+        "spatial_checks": [
+          {
+            "time": 0.0,
+            "local_quadrature_excess": [
+              1.094962501736976,
+              0.0203925699134343,
+              0.8164965809277259
+            ],
+            "spatial_sum": 1.9318516525781362,
+            "energy_weighted_occupation": 1.9318516525781362,
+            "surviving_anomalous_term": 0.0
+          },
+          {
+            "time": 0.3,
+            "local_quadrature_excess": [
+              0.7726744882333136,
+              0.3426805834170964,
+              0.8164965809277255
+            ],
+            "spatial_sum": 1.9318516525781355,
+            "energy_weighted_occupation": 1.9318516525781362,
+            "surviving_anomalous_term": 0.0
+          },
+          {
+            "time": 1.0,
+            "local_quadrature_excess": [
+              0.15449227574759095,
+              0.9608627959028195,
+              0.8164965809277259
+            ],
+            "spatial_sum": 1.9318516525781364,
+            "energy_weighted_occupation": 1.9318516525781362,
+            "surviving_anomalous_term": 0.0
+          },
+          {
+            "time": 2.0,
+            "local_quadrature_excess": [
+              0.6255029461845902,
+              0.4898521254658199,
+              0.8164965809277259
+            ],
+            "spatial_sum": 1.931851652578136,
+            "energy_weighted_occupation": 1.9318516525781362,
+            "surviving_anomalous_term": 0.0
+          }
+        ],
+        "temporal_checks": [
+          {
+            "duration": 0.5,
+            "unweighted_excess_over_twice_intensity": 0.2601873022237184,
+            "quadrature_value": 0.260187302223718,
+            "oscillatory_bound": 0.5372849659117709,
+            "survival_weighted_excess_over_twice_intensity": 0.30134013930945613,
+            "infinite_survival_weighted_limit": 0.0546395768428594
+          },
+          {
+            "duration": 5.0,
+            "unweighted_excess_over_twice_intensity": 0.012569855604035578,
+            "quadrature_value": 0.012569855604037889,
+            "oscillatory_bound": 0.05562383273008999,
+            "survival_weighted_excess_over_twice_intensity": 0.054758970167435896,
+            "infinite_survival_weighted_limit": 0.0546395768428594
+          },
+          {
+            "duration": 30.0,
+            "unweighted_excess_over_twice_intensity": 0.001492519237780456,
+            "quadrature_value": 0.0014925192377804866,
+            "oscillatory_bound": 0.00927063878834833,
+            "survival_weighted_excess_over_twice_intensity": 0.0546395768428594,
+            "infinite_survival_weighted_limit": 0.0546395768428594
+          }
+        ]
+      }
+    ]
+  },
+  "benchmark_methods": {
+    "scope": "Arithmetic illustration of Brouri et al.'s published normalization, not a fitted datum.",
+    "count_rates": [
+      5780.0,
+      5990.0
+    ],
+    "bin_seconds": 1e-09,
+    "integration_seconds": 11450.0,
+    "signal_fraction": 0.34,
+    "poisson_reference_counts_per_bin": 396.42419,
+    "raw_normalized_coincidence_if_corrected_g2_zero": 0.8844,
+    "implied_raw_counts_if_corrected_g2_zero": 350.597553636
+  },
+  "source_sha256": "10bc8ffdddd395025bf03dfa3f1d4f673d2e80a47f7b45986370d745e10e46ac",
+  "numpy": "2.4.4",
+  "all_assertions_passed": true,
+  "elapsed_seconds": 0.055397334042936563
+}

@@ -1,0 +1,79 @@
+{
+  "verified_utc": "2026-09-24T21:38:27.572105+00:00",
+  "scope": "Section A/C.1 source comparison and full cache/output mechanical correspondence; Section B/C.2 science excluded.",
+  "prior_seals": {
+    "PRE_SEAL.json": {
+      "sha256": "a2cea48da4281d1210637af88331ef24f1e0dfbc9d9c4df46a75e3e691a1f04a",
+      "members_unchanged": 17
+    },
+    "POST_SEAL.json": {
+      "sha256": "90b97eef5b8d85355a133252be82ebbf4dff31230ed845090a79941af2ebf876",
+      "members_unchanged": 17
+    }
+  },
+  "publication_source_snapshots_and_origins_verified": 7,
+  "all_frozen_file_hashes_verified": 7,
+  "unchanged_calibration_helpers": {
+    "displacement_element": {
+      "source_segment_identical": true,
+      "source_segment_sha256": "7f9fe5a2340093887efea4b00a1f2b8a1ab7f8429dcf9810540dbb1f24b972fd",
+      "frozen_function_pin": "7f9fe5a2340093887efea4b00a1f2b8a1ab7f8429dcf9810540dbb1f24b972fd"
+    },
+    "characteristic": {
+      "source_segment_identical": true,
+      "source_segment_sha256": "2baacb9b8ff671a2ede18f31f3793b0eb94dbd54b68dad0532c60c09edc1a7f5",
+      "frozen_function_pin": "2baacb9b8ff671a2ede18f31f3793b0eb94dbd54b68dad0532c60c09edc1a7f5"
+    },
+    "quadrature_characteristic": {
+      "source_segment_identical": true,
+      "source_segment_sha256": "db652c13a4582f2cbb137c6fbf1ba67342d6d9bb3887061b03a045aedaaef0f6",
+      "frozen_function_pin": "db652c13a4582f2cbb137c6fbf1ba67342d6d9bb3887061b03a045aedaaef0f6"
+    },
+    "lower": {
+      "source_segment_identical": true,
+      "source_segment_sha256": "08562b14acdc9c5809be3e23e758017d27675a61df91981f127571fac8e6c78f",
+      "frozen_function_pin": "08562b14acdc9c5809be3e23e758017d27675a61df91981f127571fac8e6c78f"
+    },
+    "inner": {
+      "source_segment_identical": true,
+      "source_segment_sha256": "273bc4890b27a424b6ffd2a6479aa2a534c480dc3c9b9bdf3f5c2e09e416e891",
+      "frozen_function_pin": "273bc4890b27a424b6ffd2a6479aa2a534c480dc3c9b9bdf3f5c2e09e416e891"
+    },
+    "moment_data": {
+      "source_segment_identical": true,
+      "source_segment_sha256": "3c65b2eb6b8b3a6db96fe3bad0578ffad5039872d436c8907ce38176043e5288",
+      "frozen_function_pin": "3c65b2eb6b8b3a6db96fe3bad0578ffad5039872d436c8907ce38176043e5288"
+    }
+  },
+  "calibration_main_identical_after_function_rename_only": true,
+  "calibration_complete_payload_equal_excluding_elapsed_seconds": true,
+  "equal_calibration_float_values_excluding_timer": 418,
+  "calibration_response_rows": 36,
+  "calibration_time_average_rows": 12,
+  "calibration_five_certificates_exact": true,
+  "old_calibration_timer": 0.049664958845824,
+  "new_calibration_timer": 0.055369332898408175,
+  "declared_input_paths": [
+    "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "declared_input_fingerprint_reconstructed_from_bytes": "8247f40428a273196bb856409711a88e9c3d83b22fbb594cff04a405937c08b3",
+  "execution_receipt_whole_stdout_equals_result_plus_TOTAL": true,
+  "cache_complete_bytes_reconstructed_from_receipt_and_identities": true,
+  "result_sha256": "5167ad51e690d855213f8fb36e69507919d3ae3ee41ea3e44a441eae741580c5",
+  "runner_sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+  "cache_sha256": "23f330e4b6ab6f76c334971e9198697d6172c348aad1c720c41880612069c94e",
+  "retained_primary_exit_code": 0,
+  "retained_primary_stderr_bytes": 0,
+  "retained_primary_elapsed_seconds": 0.6955687999725342,
+  "retained_primary_internal_seconds": 0.08560970914550126,
+  "count_parent_scientifically_recertified": false,
+  "other_prepared_matter_packets_opened": false,
+  "canonical_or_author_scientific_runner_executions": 0,
+  "Section_B_C2_scientific_verdict": null,
+  "publication_audit_or_prior_seal_mutations": false
+}

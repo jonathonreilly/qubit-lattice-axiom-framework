@@ -1,0 +1,28 @@
+{
+  "base_revision": "fdcd4b520036d1d2596715fda7a1bc24fc8710df",
+  "note": "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+  "runner": "scripts/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+  "result": "outputs/prepared_original_record_probe_20260924/PREPARED_ORIGINAL_RECORD_PROBE_RESULTS.json",
+  "packet": ".claude/science/physics-loops/prepared-original-record-probe-20260924",
+  "files_sha256": {
+    "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+    "scripts/original_record_calibration_and_prepared_matter_probe_2026_09_24.py": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+    "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+    "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b"
+  },
+  "root_functions": {
+    "displacement_element": "7f9fe5a2340093887efea4b00a1f2b8a1ab7f8429dcf9810540dbb1f24b972fd",
+    "characteristic": "2baacb9b8ff671a2ede18f31f3793b0eb94dbd54b68dad0532c60c09edc1a7f5",
+    "quadrature_characteristic": "db652c13a4582f2cbb137c6fbf1ba67342d6d9bb3887061b03a045aedaaef0f6",
+    "lower": "08562b14acdc9c5809be3e23e758017d27675a61df91981f127571fac8e6c78f",
+    "inner": "273bc4890b27a424b6ffd2a6479aa2a534c480dc3c9b9bdf3f5c2e09e416e891",
+    "moment_data": "3c65b2eb6b8b3a6db96fe3bad0578ffad5039872d436c8907ce38176043e5288",
+    "primitive_control": "33d755317e756c732f8ac43d8d7d6fa1f4a7a466e704455d7973bb803d8656fa",
+    "timing_probability": "821dfda45179e82c20599104616187b8012ef79154cac7b7edf723d15796f746",
+    "timing_control": "bbb6688746bea518441857cfc26fe2bdaa9bab1f17ffe5b8f8465434281c9275"
+  },
+  "calibration_main_change": "Only function name renamed; complete body and stdout certificates unchanged, captured by canonical wrapper."
+}

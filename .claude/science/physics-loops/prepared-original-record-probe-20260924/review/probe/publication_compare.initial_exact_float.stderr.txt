@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/publication_compare.py", line 186, in <module>
+    assert row[label] == value
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError

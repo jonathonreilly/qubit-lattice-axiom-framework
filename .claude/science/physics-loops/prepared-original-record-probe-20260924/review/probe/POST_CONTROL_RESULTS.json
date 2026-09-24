@@ -1,0 +1,614 @@
+{
+  "scope": "Own POST primitive/Gauss check of the separately released root preparation and arithmetic evidence review; no author code executed.",
+  "script_sha256": "4302d6bb34fb05ce660ab5325c054426f02807f0a61ec6e28ee6253b89c5f064",
+  "author_result_sha256": "8b2a55ee00d36d9ffd0695f8647f8c8c801818f7e248011489af83202feeb6be",
+  "check_count": 8,
+  "checks": [
+    {
+      "name": "root_common_flow",
+      "verified": true,
+      "links": 8,
+      "common_flow": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          -2
+        ],
+        [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          -2
+        ]
+      ],
+      "divergence": [
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            5
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            5,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            2,
+            2,
+            0
+          ],
+          -2
+        ]
+      ]
+    },
+    {
+      "name": "plaquette_divergence",
+      "verified": true,
+      "loop": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          -1
+        ]
+      ]
+    },
+    {
+      "name": "actual_root_preparation_primitive_gauss",
+      "verified": true,
+      "physical_initials": 20,
+      "physical_intermediates": 40,
+      "physical_successful_outputs": 20,
+      "serialized_cases": 20,
+      "author_rows_equal": true
+    },
+    {
+      "name": "root_resolved_effects_and_dephasing",
+      "verified": true,
+      "effects": [
+        {
+          "sigma": -1,
+          "dark": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  1
+                ],
+                [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  -1
+                ],
+                [
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  -1
+                ],
+                [
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  1
+                ]
+              ],
+              "coefficient": "-1/2"
+            },
+            {
+              "shift": [
+                [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  -1
+                ],
+                [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  1
+                ],
+                [
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  1
+                ],
+                [
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  -1
+                ]
+              ],
+              "coefficient": "-1/2"
+            }
+          ],
+          "dephased_identity": "1",
+          "dephased_nonconstant_terms": 0,
+          "dropped_path_changes_effect": true,
+          "reversed_relative_sign_changes_effect": true
+        },
+        {
+          "sigma": 1,
+          "dark": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  1
+                ],
+                [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  -1
+                ],
+                [
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  -1
+                ],
+                [
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  1
+                ]
+              ],
+              "coefficient": "-1/2"
+            },
+            {
+              "shift": [
+                [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  -1
+                ],
+                [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  1
+                ],
+                [
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  1
+                ],
+                [
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  -1
+                ]
+              ],
+              "coefficient": "-1/2"
+            }
+          ],
+          "dephased_identity": "1",
+          "dephased_nonconstant_terms": 0,
+          "dropped_path_changes_effect": true,
+          "reversed_relative_sign_changes_effect": true
+        }
+      ]
+    },
+    {
+      "name": "missing_compensating_A_sign_is_detected",
+      "verified": true
+    },
+    {
+      "name": "root_coherent_initial_effect",
+      "verified": true,
+      "final_matter_words": 2
+    },
+    {
+      "name": "author_timing_result_arithmetic_only",
+      "verified": true,
+      "rows": [
+        {
+          "g": 0.4,
+          "window_exponent": 3.5,
+          "window": 0.04047715405015526,
+          "vacuum_probability": 0.004517813081332774,
+          "one_probability": 0.01001875941497439,
+          "vacuum_over_b_g2": 0.6975868837849167,
+          "one_over_b_g2": 1.5469774941687073,
+          "excess_over_b_g2": 0.8493906103837905
+        },
+        {
+          "g": 0.4,
+          "window_exponent": 2.0,
+          "window": 0.16000000000000003,
+          "vacuum_probability": 0.082541712433381,
+          "one_probability": 0.09175347610982533,
+          "vacuum_over_b_g2": 3.2242856419289443,
+          "one_over_b_g2": 3.584120160540051,
+          "excess_over_b_g2": 0.3598345186111065
+        },
+        {
+          "g": 0.2,
+          "window_exponent": 3.5,
+          "window": 0.003577708763999664,
+          "vacuum_probability": 8.921422898699658e-05,
+          "one_probability": 0.0002282439089013866,
+          "vacuum_over_b_g2": 0.623403376797364,
+          "one_over_b_g2": 1.59490279923053,
+          "excess_over_b_g2": 0.971499422433166
+        },
+        {
+          "g": 0.2,
+          "window_exponent": 2.0,
+          "window": 0.04000000000000001,
+          "vacuum_probability": 0.021532792742983267,
+          "one_probability": 0.02221813044755422,
+          "vacuum_over_b_g2": 13.457995464364538,
+          "one_over_b_g2": 13.886331529721382,
+          "excess_over_b_g2": 0.42833606535684443
+        },
+        {
+          "g": 0.1,
+          "window_exponent": 3.5,
+          "window": 0.000316227766016838,
+          "vacuum_probability": 1.7863693665189671e-06,
+          "one_probability": 4.929783710348298e-06,
+          "vacuum_over_b_g2": 0.5648995940552067,
+          "one_over_b_g2": 1.55893448966964,
+          "excess_over_b_g2": 0.9940348956144333
+        },
+        {
+          "g": 0.1,
+          "window_exponent": 2.0,
+          "window": 0.010000000000000002,
+          "vacuum_probability": 0.00543620855012088,
+          "one_probability": 0.005480997610006658,
+          "vacuum_over_b_g2": 54.36208550120878,
+          "one_over_b_g2": 54.80997610006656,
+          "excess_over_b_g2": 0.4478905988577769
+        },
+        {
+          "g": 0.05,
+          "window_exponent": 3.5,
+          "window": 2.7950849718747376e-05,
+          "vacuum_probability": 3.724197964477396e-08,
+          "one_probability": 1.070240459161056e-07,
+          "vacuum_over_b_g2": 0.5329638278552193,
+          "one_over_b_g2": 1.5316034681310131,
+          "excess_over_b_g2": 0.9986396402757938
+        },
+        {
+          "g": 0.05,
+          "window_exponent": 2.0,
+          "window": 0.0025000000000000005,
+          "vacuum_probability": 0.001362301268645677,
+          "one_probability": 0.001365132191466045,
+          "vacuum_over_b_g2": 217.96820298330826,
+          "one_over_b_g2": 218.42115063456714,
+          "excess_over_b_g2": 0.4529476512588752
+        },
+        {
+          "g": 0.025,
+          "window_exponent": 3.5,
+          "window": 2.470529422006547e-06,
+          "vacuum_probability": 7.976444789966762e-10,
+          "one_probability": 2.3412230335461328e-09,
+          "vacuum_over_b_g2": 0.5165820552576684,
+          "one_over_b_g2": 1.5162567263138973,
+          "excess_over_b_g2": 0.999674671056229
+        },
+        {
+          "g": 0.025,
+          "window_exponent": 2.0,
+          "window": 0.0006250000000000001,
+          "vacuum_probability": 0.0003407773174612623,
+          "one_probability": 0.0003409547482121807,
+          "vacuum_over_b_g2": 872.3899327008312,
+          "one_over_b_g2": 872.8441554231823,
+          "excess_over_b_g2": 0.4542227223511273
+        }
+      ],
+      "quadrature_reported_scaled_change": 5.224698474128429e-08,
+      "author_timing_rerun": false,
+      "scope": "Arithmetic and prose correspondence only; no independent quadrature or dynamics reproduction."
+    },
+    {
+      "name": "author_execution_hash_bindings",
+      "verified": true,
+      "external_elapsed_seconds": 1.5052074589766562,
+      "internal_elapsed_seconds": 0.043682541931048036,
+      "execution_claim_is_author_evidence": true
+    }
+  ],
+  "path_certificate_sha256": "8a512e39fce0e05e7fb70424cc687c8386c449955b9130bd89b031eac0cb1029"
+}

@@ -1,0 +1,23 @@
+{
+  "note_sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+  "runner_sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+  "result_sha256": "f33be280f9a0f90aa2acb7da8bad01890da79a2e9df9eb4fe0645859e23a911a",
+  "cache_sha256": "041a5de0ab7d6c8cc0342446f192a4318b7b8da9b6180f10788105918febed03",
+  "unchanged_function_ASTs": [
+    "displacement_element",
+    "characteristic",
+    "quadrature_characteristic",
+    "lower",
+    "inner",
+    "moment_data",
+    "calibration_control_group",
+    "primitive_control",
+    "timing_probability",
+    "timing_control"
+  ],
+  "exact_non_runtime_floats": 499,
+  "differences": [],
+  "primary_seconds": 0.45025181770324707,
+  "exit_code": 0,
+  "stderr_bytes": 0
+}

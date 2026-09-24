@@ -1,0 +1,80 @@
+{
+  "verified_utc": "2026-09-24T21:18:20.155154+00:00",
+  "scope": "Hashes and stored-output arithmetic only; no author runner execution or new scientific simulation.",
+  "PRE_seal_sha256": "a2cea48da4281d1210637af88331ef24f1e0dfbc9d9c4df46a75e3e691a1f04a",
+  "PRE_members_unchanged": 17,
+  "released_origin_and_snapshot_bindings_verified": 9,
+  "author_seal_members_verified": 8,
+  "author_seal_precedes_PRE_seal": true,
+  "stdout_complete_json_equals_result": true,
+  "stdout_json_prefix_plus_newline_equals_result_bytes": true,
+  "stdout_certificate_lines": [
+    "per_element: finite reference characteristic elements checked against independent quadrature.",
+    "per_site: checked and not executed \u2014 no physical single-site detector dynamics is simulated.",
+    "per_mode: finite occupation and equal-energy phase-sensitive reference examples are exercised.",
+    "per_block: a two-mode, three-probe harmonic block checks anomalous and ordinary second moments.",
+    "lattice_wide: checked and not executed \u2014 the full cubic curl identity is analytic, not simulated here."
+  ],
+  "stderr_bytes": 0,
+  "retained_author_exit_code": 0,
+  "retained_author_wall_seconds": 0.40045516681857407,
+  "retained_author_internal_seconds": 0.049664958845824,
+  "response_rows_read_and_inventoried": 36,
+  "time_average_rows_read_and_inventoried": 12,
+  "maximum_stored_remainder_recalculation_discrepancy": 0.0,
+  "stored_maximum_characteristic_quadrature_error": 7.771870938251914e-16,
+  "stored_maximum_quadrature_refinement_error": 9.99224815253781e-16,
+  "common_scientific_source_pins_verified_against_unchanged_PRE_snapshots": [
+    {
+      "name": "WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "name": "LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "name": "LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "name": "TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce"
+    },
+    {
+      "name": "brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a"
+    }
+  ],
+  "author_declared_other_pins_not_opened_or_certified": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-independent/PRE.md",
+      "sha256": "1fd58a66171c23568841d2527a2091f3992e584cbad970bdb8979a38e4c68e7e",
+      "bytes": 38484
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    }
+  ],
+  "external_count_dependency_certified": false,
+  "author_runner_executions_by_this_checker": 0,
+  "new_primary_retrievals": 0,
+  "other_active_packets_read": false,
+  "publication_repository_audit_mutations": false,
+  "qualifications": [
+    "Unweighted effect average requires survival correction for first-pair sampling.",
+    "Small-background leading-limit condition does not preserve displayed remainder rates."
+  ]
+}

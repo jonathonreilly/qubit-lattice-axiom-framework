@@ -1,0 +1,179 @@
+{
+  "created_utc": "2026-09-24T22:03:31.375112+00:00",
+  "scope": "Scientific: B and C.2 only; source/evidence byte and declared-input cache bindings.",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "publication_sources/publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 36259,
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "reviewed_scope": "Scientific review: sections B and C.2 only; full bytes pinned."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/scripts/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+      "frozen_path": "publication_sources/publication/scripts/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+      "bytes": 15587,
+      "sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+      "reviewed_scope": "Scientific review: primitive_control, timing_probability, timing_control; full wrapper and declaration binding."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/outputs/prepared_original_record_probe_20260924/PREPARED_ORIGINAL_RECORD_PROBE_RESULTS.json",
+      "frozen_path": "publication_sources/publication/outputs/prepared_original_record_probe_20260924/PREPARED_ORIGINAL_RECORD_PROBE_RESULTS.json",
+      "bytes": 27993,
+      "sha256": "f33be280f9a0f90aa2acb7da8bad01890da79a2e9df9eb4fe0645859e23a911a",
+      "reviewed_scope": "Full bytes bound mechanically; prepared_primitive and separate_timing inspected scientifically."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/logs/runner-cache/original_record_calibration_and_prepared_matter_probe_2026_09_24.txt",
+      "frozen_path": "publication_sources/publication/logs/runner-cache/original_record_calibration_and_prepared_matter_probe_2026_09_24.txt",
+      "bytes": 28389,
+      "sha256": "041a5de0ab7d6c8cc0342446f192a4318b7b8da9b6180f10788105918febed03",
+      "reviewed_scope": "Full bytes bound mechanically; prepared_primitive and separate_timing inspected scientifically."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PREPARED_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "frozen_path": "publication_sources/external/PREPARED_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "bytes": 2629,
+      "sha256": "f299cae89c6852cb8e5e8b8b707f5e6743239ee4c95e6deba9de7af83d78f4c2",
+      "reviewed_scope": "Execution/fingerprint provenance only; wrapper-failure file is author-reported."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "frozen_path": "publication_sources/external/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "bytes": 30898,
+      "sha256": "9e71e3314ff31d14191034dfd6ddb0d01423ce4e7dc85c995e6143bdd8295ea1",
+      "reviewed_scope": "Execution/fingerprint provenance only; wrapper-failure file is author-reported."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PREPARED_OBSERVATION_PRIMARY_WRAPPER_FAILURE.md",
+      "frozen_path": "publication_sources/external/PREPARED_OBSERVATION_PRIMARY_WRAPPER_FAILURE.md",
+      "bytes": 347,
+      "sha256": "7b769eb4c97afdcc6be795d3b81937176b3b7ed2eafe4875feef00db6ecb6a21",
+      "reviewed_scope": "Execution/fingerprint provenance only; wrapper-failure file is author-reported."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/scripts/runner_cache.py",
+      "frozen_path": "publication_sources/cache_implementation.py",
+      "bytes": 24941,
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "reviewed_scope": "Read declared_input_paths, declared_input_fingerprint and cache-output formatting; not an audit execution."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "publication_sources/declared/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "reviewed_scope": "Byte binding only here; prior checked parent premises reused only within PRE/POST scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "publication_sources/declared/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "reviewed_scope": "Byte binding only here; prior checked parent premises reused only within PRE/POST scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "publication_sources/declared/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 19851,
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "reviewed_scope": "Byte binding only here; prior checked parent premises reused only within PRE/POST scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "publication_sources/declared/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 39966,
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "reviewed_scope": "Byte binding only here; prior checked parent premises reused only within PRE/POST scope."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "publication_sources/declared/docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 38349,
+      "sha256": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b",
+      "reviewed_scope": "Byte binding only here; prior checked parent premises reused only within PRE/POST scope."
+    }
+  ],
+  "reused_immutable_sources": [
+    {
+      "path": "PRE.md",
+      "bytes": 27226,
+      "sha256": "5c5ef65435d4165048048fb3b3d7e8abc9ce86ef5e69d2a20024c9d767f15589"
+    },
+    {
+      "path": "PRE_SEAL.json",
+      "bytes": 5991,
+      "sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c"
+    },
+    {
+      "path": "POST.md",
+      "bytes": 23192,
+      "sha256": "f93f56c8b39bdc79329d964bd0170ceae97876bb366733d492bc58b6edb4ecee"
+    },
+    {
+      "path": "POST_SEAL.json",
+      "bytes": 6733,
+      "sha256": "dca495a9a8d810740b3048f38e6709584df74d4d707de593f19426defcae0af1"
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "bytes": 8349,
+      "sha256": "850c37ec637d1ed4aa649d397d2f59d4a26f8980d459778371e9f9581d727910"
+    },
+    {
+      "path": "POST_CONTROL_RESULTS.json",
+      "bytes": 13649,
+      "sha256": "db0339234e5608e7b31575488f5ab765aaa736ea94af6fedf25186640462dc0b"
+    },
+    {
+      "path": "POST_PATH_CERTIFICATES.json",
+      "bytes": 227323,
+      "sha256": "8a512e39fce0e05e7fb70424cc687c8386c449955b9130bd89b031eac0cb1029"
+    },
+    {
+      "path": "post_control.py",
+      "bytes": 9864,
+      "sha256": "4302d6bb34fb05ce660ab5325c054426f02807f0a61ec6e28ee6253b89c5f064"
+    },
+    {
+      "path": "post_sources/author/AUTHOR_SEAL.json",
+      "bytes": 1119,
+      "sha256": "99a14ba42c0936a52cf4037428168eadc8021651dddc5b718332b4bf8b97fe33"
+    },
+    {
+      "path": "post_sources/author/PREPARED_MATTER_INTERFERENCE_PROBE_ROOT.md",
+      "bytes": 12776,
+      "sha256": "ab3c1883b032e571efdeb52330d7665c262f70e3f303b3236f32f89accbcd7bf"
+    },
+    {
+      "path": "post_sources/author/prepared_probe_controls.py",
+      "bytes": 6889,
+      "sha256": "27da3c4fdff89c16e4c15c96e41296f2ae51964c6048b727c07c2b55cba9683c"
+    },
+    {
+      "path": "post_sources/author/PREPARED_PROBE_RESULTS.json",
+      "bytes": 8112,
+      "sha256": "8b2a55ee00d36d9ffd0695f8647f8c8c801818f7e248011489af83202feeb6be"
+    },
+    {
+      "path": "post_sources/author/EXECUTION.json",
+      "bytes": 255,
+      "sha256": "6bc4f8d6072cc383abfadd75f289ffb4a3493822a8fff71b3dd6b1f065527f18"
+    }
+  ],
+  "preserved": [
+    {
+      "path": "PRE_SEAL.json",
+      "sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+      "members_verified": 33
+    },
+    {
+      "path": "POST_SEAL.json",
+      "sha256": "dca495a9a8d810740b3048f38e6709584df74d4d707de593f19426defcae0af1",
+      "members_verified": 36
+    }
+  ],
+  "no_author_code_executed": true,
+  "no_primary_rerun": true,
+  "no_other_active_packets_read": true
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/freeze_sources.py", line 25, in <module>
+    assert sha(b)==expected,(path,sha(b),expected)
+           ^^^^^^^^^^^^^^^^
+AssertionError: ('docs/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION_BOUNDED_THEOREM_NOTE_2026-09-24.md', 'eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4', 'eb5e31ae7e76f803c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4')

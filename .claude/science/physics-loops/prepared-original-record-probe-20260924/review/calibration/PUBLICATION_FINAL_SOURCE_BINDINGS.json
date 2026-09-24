@@ -1,0 +1,93 @@
+{
+  "captured_utc": "2026-09-24T21:41:00.540000+00:00",
+  "scope": "Final opening-sentence qualification and fresh cache bindings; science coverage remains A/C.1 only. Earlier snapshots/report remain preserved.",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PREPARED_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "publication_final_sources/PREPARED_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "c03aee54e9b3554a77ec222e72dd60b0ba630e60064b21f83e0d020d53984ec8",
+      "bytes": 2629
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "publication_final_sources/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "73bf7462228a98e913e5eba6c37e706dba48091d50a891b6638e187dcc85a18a",
+      "bytes": 30902
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_final_sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "979cef8109013ff632dc5b5cc704d770e201f75fdaa8da6e577944a5f282a4f8",
+      "bytes": 35752
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/scripts/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+      "snapshot": "publication_final_sources/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+      "sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+      "bytes": 15587
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/outputs/prepared_original_record_probe_20260924/PREPARED_ORIGINAL_RECORD_PROBE_RESULTS.json",
+      "snapshot": "publication_final_sources/PREPARED_ORIGINAL_RECORD_PROBE_RESULTS.json",
+      "sha256": "be9eea11376e4e95cb4c3189c839c0ce7049d80db338f2bb3247a06c34346e8b",
+      "bytes": 27994
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/logs/runner-cache/original_record_calibration_and_prepared_matter_probe_2026_09_24.txt",
+      "snapshot": "publication_final_sources/original_record_calibration_and_prepared_matter_probe_2026_09_24.txt",
+      "sha256": "6ce2ca164462e2908ed0aca9552bbc2198edf60912657de2b08715bd5cddb3e8",
+      "bytes": 28390
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/scripts/runner_cache.py",
+      "snapshot": "publication_final_sources/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION_BEFORE_FRONT_QUALIFICATION.json",
+      "snapshot": "publication_final_sources/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION_BEFORE_FRONT_QUALIFICATION.json",
+      "sha256": "3fa459d702c15968f50a80bea74758a8db08bdeb4ee71bee38e05e43412aa9f7",
+      "bytes": 30902
+    }
+  ],
+  "declared_file_hashes_verified": [
+    {
+      "path": "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "979cef8109013ff632dc5b5cc704d770e201f75fdaa8da6e577944a5f282a4f8",
+      "bytes": 35752
+    },
+    {
+      "path": "scripts/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+      "sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+      "bytes": 15587
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "bytes": 39966
+    },
+    {
+      "path": "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b",
+      "bytes": 38349
+    }
+  ],
+  "PRE_seal_sha256": "a2cea48da4281d1210637af88331ef24f1e0dfbc9d9c4df46a75e3e691a1f04a",
+  "POST_seal_sha256": "90b97eef5b8d85355a133252be82ebbf4dff31230ed845090a79941af2ebf876"
+}

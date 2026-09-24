@@ -1,0 +1,7 @@
+{
+  "scope": "Bookkeeping guard only; no scientific rerun or sealed-file change.",
+  "attempt": 1,
+  "tool_output": "Traceback (most recent call last):\n  File \"<stdin>\", line 15, in <module>\nAssertionError\n",
+  "cause": "Hard-coded expected display-math block count 8 was wrong: the completed POST has 9 balanced display blocks. No scientific content changed.",
+  "recovery": "Check matching display delimiters and actual count 9 before seal creation."
+}

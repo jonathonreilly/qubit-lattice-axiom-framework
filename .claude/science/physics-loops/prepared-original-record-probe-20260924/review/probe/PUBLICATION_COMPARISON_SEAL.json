@@ -1,0 +1,190 @@
+{
+  "phase": "Bounded final publication comparison",
+  "sealed_at_utc": "2026-09-24T22:07:45.006303+00:00",
+  "scope": "Scientific sections B and C.2 only; prepared author primitive/timing controls and full byte bindings.",
+  "note_sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+  "preserved": [
+    {
+      "path": "PRE_SEAL.json",
+      "sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+      "members_verified": 33
+    },
+    {
+      "path": "POST_SEAL.json",
+      "sha256": "dca495a9a8d810740b3048f38e6709584df74d4d707de593f19426defcae0af1",
+      "members_verified": 36
+    }
+  ],
+  "member_count": 33,
+  "members": [
+    {
+      "path": "PUBLICATION_ARITHMETIC_GROUPING_DIAGNOSIS.json",
+      "bytes": 3224,
+      "sha256": "2ceda188d6204801314c7ae72ee129919358ca2b4e6d6a3a2f9ee8cf284f04f6"
+    },
+    {
+      "path": "PUBLICATION_B_SOURCE_DIFF.txt",
+      "bytes": 3051,
+      "sha256": "db2be82c77cbfedd68bf0d480def1a11baf383fa465b1308c55c1f2e45c2e9ae"
+    },
+    {
+      "path": "PUBLICATION_CHECKPOINT.md",
+      "bytes": 1762,
+      "sha256": "b21d78569b80662b63be933bf969fd422fa4e0ca0d2a2217d11afe4e90282c0a"
+    },
+    {
+      "path": "PUBLICATION_COMPARE_EXECUTION.json",
+      "bytes": 917,
+      "sha256": "7fe23620dd26126fa1922160e14ad3a463d5ab55a1e71e97d1f9566ef391e375"
+    },
+    {
+      "path": "PUBLICATION_COMPARE_INITIAL_EXECUTION.json",
+      "bytes": 914,
+      "sha256": "3d1ebe249209460afcdca38b6d98072b9a9801dd07af12e6b934a7012e60ac22"
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "bytes": 11932,
+      "sha256": "fbe95c097ac35a587b957b6ab19a584183771a310c391c0ceee2642169eea920"
+    },
+    {
+      "path": "PUBLICATION_EVIDENCE_LOG.md",
+      "bytes": 4426,
+      "sha256": "2976a2b79de485be5a5161ef248865113e13c8cad5ed81ae1e387c47273f5e57"
+    },
+    {
+      "path": "PUBLICATION_EVIDENCE_VERIFICATION.json",
+      "bytes": 13760,
+      "sha256": "7930c82d175b6af28ad5e4493582b75e9e0783a28f0262951b7096da906408d5"
+    },
+    {
+      "path": "PUBLICATION_FINAL_RECHECK.json",
+      "bytes": 4578,
+      "sha256": "3ac3358ffc3c966120bb1a7026704cb783b8747671552f8a42fa7f51684afbcc"
+    },
+    {
+      "path": "PUBLICATION_PROCEDURE_FRESHNESS.json",
+      "bytes": 1549,
+      "sha256": "9f787fa553d7097f685132d26cb79e7a52fe6ce7528da3064949025b2512bff5"
+    },
+    {
+      "path": "PUBLICATION_SCOPED_EXCERPT.md",
+      "bytes": 14785,
+      "sha256": "31ecb6187443945ffa4c24cc831c3a913df0deca9adcc44d387798dc3298c4a4"
+    },
+    {
+      "path": "PUBLICATION_SOURCE_PINS.json",
+      "bytes": 9896,
+      "sha256": "ee56580c8bbf4da9b140b521f44aab49f70fef3407796e4f7cba1fcfbdd1d330"
+    },
+    {
+      "path": "publication_compare.initial_exact_float.py",
+      "bytes": 15427,
+      "sha256": "75620e0c3df8fb9de3e78c32cd2300559ecb080a97deaea3891a03de95bbf938"
+    },
+    {
+      "path": "publication_compare.initial_exact_float.stderr.txt",
+      "bytes": 264,
+      "sha256": "bd8881d6c7e46416e5ea0f93a4ed80584f48f7e5f0769e67a3d049089ed2c2cf"
+    },
+    {
+      "path": "publication_compare.initial_exact_float.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "publication_compare.py",
+      "bytes": 15603,
+      "sha256": "0a07c48ffd26066d60ca20393061da5f0ba7362a025cbecc976d916017766aa6"
+    },
+    {
+      "path": "publication_compare.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "publication_compare.stdout.txt",
+      "bytes": 13760,
+      "sha256": "7930c82d175b6af28ad5e4493582b75e9e0783a28f0262951b7096da906408d5"
+    },
+    {
+      "path": "publication_sources/cache_implementation.py",
+      "bytes": 24941,
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "publication_sources/declared/docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 38349,
+      "sha256": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b"
+    },
+    {
+      "path": "publication_sources/declared/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "publication_sources/declared/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "publication_sources/declared/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 39966,
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b"
+    },
+    {
+      "path": "publication_sources/declared/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 19851,
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "publication_sources/external/PREPARED_OBSERVATION_PRIMARY_WRAPPER_FAILURE.md",
+      "bytes": 347,
+      "sha256": "7b769eb4c97afdcc6be795d3b81937176b3b7ed2eafe4875feef00db6ecb6a21"
+    },
+    {
+      "path": "publication_sources/external/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "bytes": 30898,
+      "sha256": "9e71e3314ff31d14191034dfd6ddb0d01423ce4e7dc85c995e6143bdd8295ea1"
+    },
+    {
+      "path": "publication_sources/external/PREPARED_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "bytes": 2629,
+      "sha256": "f299cae89c6852cb8e5e8b8b707f5e6743239ee4c95e6deba9de7af83d78f4c2"
+    },
+    {
+      "path": "publication_sources/publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 36259,
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "publication_sources/publication/logs/runner-cache/original_record_calibration_and_prepared_matter_probe_2026_09_24.txt",
+      "bytes": 28389,
+      "sha256": "041a5de0ab7d6c8cc0342446f192a4318b7b8da9b6180f10788105918febed03"
+    },
+    {
+      "path": "publication_sources/publication/outputs/prepared_original_record_probe_20260924/PREPARED_ORIGINAL_RECORD_PROBE_RESULTS.json",
+      "bytes": 27993,
+      "sha256": "f33be280f9a0f90aa2acb7da8bad01890da79a2e9df9eb4fe0645859e23a911a"
+    },
+    {
+      "path": "publication_sources/publication/scripts/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+      "bytes": 15587,
+      "sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814"
+    },
+    {
+      "path": "run_publication_compare.py",
+      "bytes": 1444,
+      "sha256": "a7fa1be7ad4df2bac385a32bea73568dd585d8eb7daa3ba22520b70c3004fb07"
+    },
+    {
+      "path": "seal_publication_comparison.py",
+      "bytes": 4743,
+      "sha256": "76ea6908077792ce279eaa631ae122122a64d7818f00f0156168a576d56cbc7e"
+    }
+  ],
+  "audit_verdict": false,
+  "publication_mutation": false,
+  "author_or_primary_execution": false,
+  "preservation": "One-time content-hash ledger; all new members and this seal made read-only. Prior sealed work untouched."
+}

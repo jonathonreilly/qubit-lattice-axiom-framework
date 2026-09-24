@@ -1,0 +1,259 @@
+{
+  "sealed_utc": "2026-09-24T21:59:39.611506+00:00",
+  "phase": "narrow_final_publication_comparison",
+  "science_scope": [
+    "Section A",
+    "Section C.1",
+    "Related front/end scope wording"
+  ],
+  "not_scientifically_certified": [
+    "Section B",
+    "Section C.2",
+    "Named unrestricted-count parent theorem"
+  ],
+  "final_note_sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+  "final_runner_sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+  "final_result_sha256": "f33be280f9a0f90aa2acb7da8bad01890da79a2e9df9eb4fe0645859e23a911a",
+  "final_cache_sha256": "041a5de0ab7d6c8cc0342446f192a4318b7b8da9b6180f10788105918febed03",
+  "prior_seals": {
+    "PRE_SEAL.json": {
+      "sha256": "a2cea48da4281d1210637af88331ef24f1e0dfbc9d9c4df46a75e3e691a1f04a",
+      "members_unchanged": 17
+    },
+    "POST_SEAL.json": {
+      "sha256": "90b97eef5b8d85355a133252be82ebbf4dff31230ed845090a79941af2ebf876",
+      "members_unchanged": 17
+    }
+  },
+  "finding": "Scoped source agrees with PRE/POST; Q1/Q2 and requested front qualification resolved. No unresolved correction within scope.",
+  "final_origin_bindings_verified": 8,
+  "calibration_helpers_exact": 6,
+  "calibration_main_exact_after_rename": true,
+  "calibration_nonruntime_floats_exact": 418,
+  "whole_combined_payload_mechanical_equality_excluding_two_timers": true,
+  "full_prepared_probe_science_review_claimed": false,
+  "new_scientific_runner_executions_by_checker": 0,
+  "mechanical_verifier_runs_for_three_released_versions": 3,
+  "history": "Earlier source snapshots and verification reports are historical and preserved; final bindings use publication_seal_sources. Receipt-only capture guard mismatch and root wrapper failure description retained.",
+  "other_active_packets_read": false,
+  "delegation": false,
+  "publication_repository_audit_mutations": false,
+  "members": [
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "c8fc1e0e2de1913eba4a1d733ad9bbf67bbb5659b5014be2379bbb361d6c76e7",
+      "bytes": 11487
+    },
+    {
+      "path": "PUBLICATION_FINAL_SOURCE_BINDINGS.json",
+      "sha256": "141a32cd9d7831ff9781681799272667908d825562b472e1ee3c712d64df4ce3",
+      "bytes": 5218
+    },
+    {
+      "path": "PUBLICATION_FINAL_VERIFICATION_REPORT.json",
+      "sha256": "d2985f1eb59fd6ff98628cd9fd802b88e6a3691d1ecac5776e4eb1720280cdc6",
+      "bytes": 4712
+    },
+    {
+      "path": "PUBLICATION_FINAL_VERIFY_EXECUTION.json",
+      "sha256": "caf8afd8e9f1c86c5808a0967e4fe3de1cee223512d80c1764d9702eca5b17b8",
+      "bytes": 459
+    },
+    {
+      "path": "PUBLICATION_FINAL_VERIFY_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_FINAL_VERIFY_STDOUT.log",
+      "sha256": "d2985f1eb59fd6ff98628cd9fd802b88e6a3691d1ecac5776e4eb1720280cdc6",
+      "bytes": 4712
+    },
+    {
+      "path": "PUBLICATION_SEAL_CAPTURE_ATTEMPT01.json",
+      "sha256": "b9da75af557d434baad48c3b9628e5e375678902ec7a21df070c56cc61a12a9e",
+      "bytes": 707
+    },
+    {
+      "path": "PUBLICATION_SEAL_SOURCE_BINDINGS.json",
+      "sha256": "ba6b57b3dc4d57fc155968458b34bc4ea0b2c63a2e0dd151a4bd70488b959598",
+      "bytes": 5158
+    },
+    {
+      "path": "PUBLICATION_SEAL_VERIFICATION_REPORT.json",
+      "sha256": "34441fe0ae00b230b75be53cdea2aa6c6b34e72a7bbc753b072e44b2753f6063",
+      "bytes": 4930
+    },
+    {
+      "path": "PUBLICATION_SEAL_VERIFY_EXECUTION.json",
+      "sha256": "29ad7faa9373f93853e06031b0b70197d78058bca1a4c3ecaceb6c4e02b42f0a",
+      "bytes": 474
+    },
+    {
+      "path": "PUBLICATION_SEAL_VERIFY_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_SEAL_VERIFY_STDOUT.log",
+      "sha256": "34441fe0ae00b230b75be53cdea2aa6c6b34e72a7bbc753b072e44b2753f6063",
+      "bytes": 4930
+    },
+    {
+      "path": "PUBLICATION_SOURCE_BINDINGS.json",
+      "sha256": "7b952ab7e75d2be2dfce29c4f3f54f16067d465397da2bdffdb55eb59d9ef7f9",
+      "bytes": 4917
+    },
+    {
+      "path": "PUBLICATION_VERIFICATION_REPORT.json",
+      "sha256": "d5bffb4eaf72908fc12531f78350642a930607bb648e3164ffd139dfdf8de763",
+      "bytes": 4252
+    },
+    {
+      "path": "PUBLICATION_VERIFY_EXECUTION.json",
+      "sha256": "06b957a3867997bc7f7c6ac403f279344f0874f62fd68d1a9872896c7b6a984c",
+      "bytes": 453
+    },
+    {
+      "path": "PUBLICATION_VERIFY_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_VERIFY_STDOUT.log",
+      "sha256": "d5bffb4eaf72908fc12531f78350642a930607bb648e3164ffd139dfdf8de763",
+      "bytes": 4252
+    },
+    {
+      "path": "publication_final_sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "979cef8109013ff632dc5b5cc704d770e201f75fdaa8da6e577944a5f282a4f8",
+      "bytes": 35752
+    },
+    {
+      "path": "publication_final_sources/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "73bf7462228a98e913e5eba6c37e706dba48091d50a891b6638e187dcc85a18a",
+      "bytes": 30902
+    },
+    {
+      "path": "publication_final_sources/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION_BEFORE_FRONT_QUALIFICATION.json",
+      "sha256": "3fa459d702c15968f50a80bea74758a8db08bdeb4ee71bee38e05e43412aa9f7",
+      "bytes": 30902
+    },
+    {
+      "path": "publication_final_sources/PREPARED_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "c03aee54e9b3554a77ec222e72dd60b0ba630e60064b21f83e0d020d53984ec8",
+      "bytes": 2629
+    },
+    {
+      "path": "publication_final_sources/PREPARED_ORIGINAL_RECORD_PROBE_RESULTS.json",
+      "sha256": "be9eea11376e4e95cb4c3189c839c0ce7049d80db338f2bb3247a06c34346e8b",
+      "bytes": 27994
+    },
+    {
+      "path": "publication_final_sources/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+      "sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+      "bytes": 15587
+    },
+    {
+      "path": "publication_final_sources/original_record_calibration_and_prepared_matter_probe_2026_09_24.txt",
+      "sha256": "6ce2ca164462e2908ed0aca9552bbc2198edf60912657de2b08715bd5cddb3e8",
+      "bytes": 28390
+    },
+    {
+      "path": "publication_final_sources/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "publication_seal_sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "path": "publication_seal_sources/PREPARED_OBSERVATION_PRIMARY_WRAPPER_FAILURE.md",
+      "sha256": "7b769eb4c97afdcc6be795d3b81937176b3b7ed2eafe4875feef00db6ecb6a21",
+      "bytes": 347
+    },
+    {
+      "path": "publication_seal_sources/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "9e71e3314ff31d14191034dfd6ddb0d01423ce4e7dc85c995e6143bdd8295ea1",
+      "bytes": 30898
+    },
+    {
+      "path": "publication_seal_sources/PREPARED_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "f299cae89c6852cb8e5e8b8b707f5e6743239ee4c95e6deba9de7af83d78f4c2",
+      "bytes": 2629
+    },
+    {
+      "path": "publication_seal_sources/PREPARED_ORIGINAL_RECORD_PROBE_RESULTS.json",
+      "sha256": "f33be280f9a0f90aa2acb7da8bad01890da79a2e9df9eb4fe0645859e23a911a",
+      "bytes": 27993
+    },
+    {
+      "path": "publication_seal_sources/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+      "sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+      "bytes": 15587
+    },
+    {
+      "path": "publication_seal_sources/original_record_calibration_and_prepared_matter_probe_2026_09_24.txt",
+      "sha256": "041a5de0ab7d6c8cc0342446f192a4318b7b8da9b6180f10788105918febed03",
+      "bytes": 28389
+    },
+    {
+      "path": "publication_seal_sources/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "publication_sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "75d5c4c289fd244ce86ce85ef599db0b26386af6aab84395922d43e271a6799f",
+      "bytes": 35714
+    },
+    {
+      "path": "publication_sources/PREPARED_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "3fa459d702c15968f50a80bea74758a8db08bdeb4ee71bee38e05e43412aa9f7",
+      "bytes": 30902
+    },
+    {
+      "path": "publication_sources/PREPARED_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "febc5c7d839d714247e868eb92e9bf1432ea6f72f3e99fb16c161e45bb3ad5b8",
+      "bytes": 2629
+    },
+    {
+      "path": "publication_sources/PREPARED_ORIGINAL_RECORD_PROBE_RESULTS.json",
+      "sha256": "5167ad51e690d855213f8fb36e69507919d3ae3ee41ea3e44a441eae741580c5",
+      "bytes": 27994
+    },
+    {
+      "path": "publication_sources/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+      "sha256": "c760fac9894a0d0536e139a47723e282f7a96ef2f4aa69fdc5a4a7da31a77814",
+      "bytes": 15587
+    },
+    {
+      "path": "publication_sources/original_record_calibration_and_prepared_matter_probe_2026_09_24.txt",
+      "sha256": "23f330e4b6ab6f76c334971e9198697d6172c348aad1c720c41880612069c94e",
+      "bytes": 28390
+    },
+    {
+      "path": "publication_sources/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "verify_publication_bindings.py",
+      "sha256": "1d707df91f319c0dd0aa28b548c297b8bb583ef4bc5f0d7f6c64447730edd72b",
+      "bytes": 8739
+    },
+    {
+      "path": "verify_publication_final_bindings.py",
+      "sha256": "c53da23502823345c57a5121a9856bfdcd06c9c04949918bb9c6945e49fd98d1",
+      "bytes": 10449
+    },
+    {
+      "path": "verify_publication_seal_bindings.py",
+      "sha256": "34156972c5b95e5ed82cec0cb86ee5c37b3c11cfa6b4c4d1f7f1f12c8feee61d",
+      "bytes": 10975
+    }
+  ],
+  "read_only_policy": "All new comparison members and this seal chmod 0444; previous PRE/POST files unchanged."
+}

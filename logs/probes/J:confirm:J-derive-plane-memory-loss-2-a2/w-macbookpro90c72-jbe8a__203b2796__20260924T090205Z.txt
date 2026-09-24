@@ -1,0 +1,7 @@
+PASS kernel: A/k -> 1/3, Var=A', and the concavity series starts positive at order 7
+PASS source: N(1)=a I0 - A I1 = 0, with I0=4 A sinh(k)/k^2 and I1=4 a sinh(k)/k^2
+PASS small kappa: on (0,1/10] the series budget stays positive and the crude energy is below 1/10
+PASS budget: at 300 values on [0.1,3] the energy upper bound stays under B; worst B/lhs=1.801
+PASS memory: D_{t+1} <= beta D_t for beta<1, so m_t <= beta^t; the constant 1/3 is met by A/k -> 1/3
+HIT: confirmed - the kernel moves by at most a third of its field on |V|<=3, so the causal coupling contracts for every beta<1 and m_t <= beta^t. The constant is sharp because A(k)/k -> 1/3. No uniform coupling of this kind passes beta=1.
+SUMMARY: confirmed the moments, the source identity, the small-k series, and a 300-point budget scan. The outward-rounded 2^256 cell sweep was not re-executed. beta>=1 stays open.

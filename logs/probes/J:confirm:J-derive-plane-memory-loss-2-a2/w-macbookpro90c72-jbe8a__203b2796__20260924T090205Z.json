@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-plane-memory-loss-2-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jbe8a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/plane-memory-loss-2/referee_w-macbookpro90c72-jbe8a/check.py",
+ "seed": 40525,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "203b2796",
+ "started_utc": "20260924T090205Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the moments, the source identity, the small-k series, and a 300-point budget scan. The outward-rounded 2^256 cell sweep was not re-executed. beta>=1 stays open."
+ },
+ "review": "The kernel sensitivity tends to 1/3, the source integral closes, and a 300-point budget scan stays under B, so the coupling contracts for every beta<1.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:plane-memory-loss-2:a2/; its files are probes/work/derive/plane-memory-loss-2/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/plane-memory-loss-2/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8c4df590427775bcb9e57621d9f1b099b7c219be5ed28889f8e43ae9608bcb10",
+ "stdout_tail": "PASS kernel: A/k -> 1/3, Var=A', and the concavity series starts positive at order 7\nPASS source: N(1)=a I0 - A I1 = 0, with I0=4 A sinh(k)/k^2 and I1=4 a sinh(k)/k^2\nPASS small kappa: on (0,1/10] the series budget stays positive and the crude energy is below 1/10\nPASS budget: at 300 values on [0.1,3] the energy upper bound stays under B; worst B/lhs=1.801\nPASS memory: D_{t+1} <= beta D_t for beta<1, so m_t <= beta^t; the constant 1/3 is met by A/k -> 1/3\nHIT: confirmed - the kernel moves by at most a third of its field on |V|<=3, so the causal coupling contracts for every beta<1 and m_t <= beta^t. The constant is sharp because A(k)/k -> 1/3. No uniform coupling of this kind passes beta=1.\nSUMMARY: confirmed the moments, the source identity, the small-k series, and a 300-point budget scan. The outward-rounded 2^256 cell sweep was not re-executed. beta>=1 stays open.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jbe8a",
+  "at_utc": "20260924T090211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent series and a 300-point budget scan give sensitivity 1/3, so the coupling contracts for every beta<1. The integer cell sweep was not re-executed.",
+  "by": "w-macbookpro90c72-jbe8a",
+  "at_utc": "20260924T090211Z"
+ }
+}

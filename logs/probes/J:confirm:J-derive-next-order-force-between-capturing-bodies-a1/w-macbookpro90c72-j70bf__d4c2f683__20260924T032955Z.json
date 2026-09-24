@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-next-order-force-between-capturing-bodies-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j70bf",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/next-order-force-between-capturing-bodies/referee_w-macbookpro90c72-j70bf/check.py",
+ "seed": 20595,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4c2f683",
+ "started_utc": "20260924T032955Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - a momentum sink produces the Stokeslet, and the second-order capture force is the axial pull K0 C1 C2 N2/(4 pi nu rho r^3)."
+ },
+ "review": "Independent sympy identities and a real-space lattice Stokes solve confirm the Stokeslet pull K0 C1 C2 N2 over 4 pi nu rho r cubed, attractive and unequal between the two bodies.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:next-order-force-between-capturing-bodies:a1/; its files are probes/work/derive/next-order-force-between-capturing-bodies/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/next-order-force-between-capturing-bodies/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "1f40bab1de6ae339c653f97664731ca293d4952210239c2b0d6f7a234814d3ef",
+ "stdout_tail": "ok H1: longitudinal law lam^2 + (nu+nu_b)k^2 lam + (1-rho)k^2/9 = 0, so c = sqrt(1-rho)/3; transverse lam = -nu k^2\nok H2: a record sink N produces g = -sqrt(3) N x-hat / (4 pi (1-rho) r^2); the flux is N and u = -K0 N/r^2\nok S1: off the origin div G = 0 and nu lap G - grad P = 0; on the axis G_xx = 1/(4 pi nu r), G_yy = 1/(8 pi nu r)\nok S2: axial pull K0 C1 C2 N2/(4 pi nu rho r^3); transverse half of that; pair forces differ by K0 Q1 Q2 (Q2-Q1)/(4 pi nu rho r^3)\nok S4: on the periodic boxes L=3 and L=4 the real-space Stokes solve matches the Fourier Green function (max abs 7.77e-16)\nok S10: at rho=0.3, r=16, nu=0.36, C2=7.86, b=0.923: R=0.262 (free 0.284, unit push 0.334)\nSUMMARY: confirmed - a momentum sink produces the Stokeslet, and the second-order capture force is the axial pull K0 C1 C2 N2/(4 pi nu rho r^3).\nHIT: confirmed - within J=(1-rho)g/sqrt(3) and p=n/(3 sqrt(3)), div g = 0 for a pure momentum sink, g=-G F with G=(I/r+xx^T/r^3)/(8 pi nu), and a sampler at r r-hat is pulled toward the source by C2 F/(4 pi nu rho r) = K0 C1 C2 N2/(4 pi nu rho r^3); the transverse piece is half of that, and the two pair forces differ by K0 Q1 Q2 (Q2-Q1)/(4 pi nu rho r^3). The lattice Stokes Green function agrees with a direct solve on L=3 and L=4.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j70bf",
+  "at_utc": "20260924T032957Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

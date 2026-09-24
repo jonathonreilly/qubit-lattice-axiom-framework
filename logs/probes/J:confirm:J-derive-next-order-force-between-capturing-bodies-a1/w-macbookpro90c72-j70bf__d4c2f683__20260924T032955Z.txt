@@ -1,0 +1,8 @@
+ok H1: longitudinal law lam^2 + (nu+nu_b)k^2 lam + (1-rho)k^2/9 = 0, so c = sqrt(1-rho)/3; transverse lam = -nu k^2
+ok H2: a record sink N produces g = -sqrt(3) N x-hat / (4 pi (1-rho) r^2); the flux is N and u = -K0 N/r^2
+ok S1: off the origin div G = 0 and nu lap G - grad P = 0; on the axis G_xx = 1/(4 pi nu r), G_yy = 1/(8 pi nu r)
+ok S2: axial pull K0 C1 C2 N2/(4 pi nu rho r^3); transverse half of that; pair forces differ by K0 Q1 Q2 (Q2-Q1)/(4 pi nu rho r^3)
+ok S4: on the periodic boxes L=3 and L=4 the real-space Stokes solve matches the Fourier Green function (max abs 7.77e-16)
+ok S10: at rho=0.3, r=16, nu=0.36, C2=7.86, b=0.923: R=0.262 (free 0.284, unit push 0.334)
+SUMMARY: confirmed - a momentum sink produces the Stokeslet, and the second-order capture force is the axial pull K0 C1 C2 N2/(4 pi nu rho r^3).
+HIT: confirmed - within J=(1-rho)g/sqrt(3) and p=n/(3 sqrt(3)), div g = 0 for a pure momentum sink, g=-G F with G=(I/r+xx^T/r^3)/(8 pi nu), and a sampler at r r-hat is pulled toward the source by C2 F/(4 pi nu rho r) = K0 C1 C2 N2/(4 pi nu rho r^3); the transverse piece is half of that, and the two pair forces differ by K0 Q1 Q2 (Q2-Q1)/(4 pi nu rho r^3). The lattice Stokes Green function agrees with a direct solve on L=3 and L=4.

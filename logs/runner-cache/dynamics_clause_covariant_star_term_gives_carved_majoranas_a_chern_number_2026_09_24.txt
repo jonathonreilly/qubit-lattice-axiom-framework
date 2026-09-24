@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.py
-runner_sha256: e648fde1932fce58e5bad63dd799dc4d3d255e56858087d89da477cf62a7e8c0
+runner_sha256: b4b91f0fad75306b0827e99d1b1a7762af734875849d6c9c357fe1843de587d8
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 55.52
+elapsed_sec: 52.83
 status: ok
 ----- stdout -----
 [PASS] the carving: a 19-site relaxed three-direction network whose zero-field records are realizable :: connected True, winding rank 3, bonds 22; every record touches at most 2 axes; largest field on an unrecorded site 0
 [PASS] covariant odd star terms under full soldering, as signed rotation orbits :: weights 1 and 3: 37 (open PR 9088's full-soldering count); weights 1, 3, 5, 7: 325
-[PASS] exact Majorana images: the bond matrix is reproduced, and three-site clusters match the spin spectrum :: bond matrix deviation 0e+00; 12 clusters with bonds, Kitaev's pattern and dangling fields: largest spectral deviation 5e-15; on the carving Kitaev's pattern is a free same-class c-c bilinear and a kept-axis field is not free
+[PASS] exact Majorana images: the bond matrix is reproduced, and three-site clusters match the spin spectrum :: bond matrix deviation 0e+00; 12 clusters with bonds, Kitaev's pattern and dangling fields: largest spectral deviation 5e-15; 30 random tree clusters with multi-site product strings: 1e-14; on the carving Kitaev's pattern is a free same-class c-c bilinear and a kept-axis field is not free
 [PASS] the free covariant subspace, and the projection of the weight-5 orbit onto it :: free subspace dimension 41 of 325; projected term uses 23 orbits of weights [5, 7]; non-free strings cancel to 1e-15; same-class free bilinears 27, all Kitaev's pattern at corners
 [PASS] the chiral phase: in every lowest flux sector, a gapped band structure with weak Chern numbers (-1, 0, 0) :: lambda 1.0: 8 lowest sectors (next 0.0120 up), 12 zero modes, gap 0.0190, weak Chern numbers (-1, 0, 0); lambda 2.0: 8 lowest sectors (next 0.0242 up), 12 zero modes, gap 0.0351, weak Chern numbers (-1, 0, 0); lambda 4.0: 8 lowest sectors (next 0.0388 up), 12 zero modes, gap 0.0174, weak Chern numbers (-1, 0, 0)
 [PASS] chiral surface modes: on a slab open along z the in-gap states sit on the surfaces and cross the gap with opposite chirality :: 12-cell slab at k_x = 1, lambda = 2, 121 values of k_y: surface-localized in-gap states top 64, bottom 31, other 4; signed crossings of E = -0.01 and 0.01: top [1, 1], bottom [-1, -1]

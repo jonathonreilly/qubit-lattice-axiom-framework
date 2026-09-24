@@ -434,6 +434,64 @@ for trial in range(12):
         lev[sum(occ) % 2].append(-0.5 * eps.sum() + np.dot(occ, eps))
     spin = np.sort(np.linalg.eigvalsh(H))
     ed_dev = max(ed_dev, min(np.max(np.abs(np.sort(lev[p]) - spin)) for p in (0, 1)))
+# random tree clusters (up to 6 sites) with bonds, dangling fields and products of two or three of them
+MULP = {(a_, b_): (a_ if b_ == 0 else b_ if a_ == 0 else 0 if a_ == b_ else 6 - a_ - b_) for a_ in range(4) for b_ in range(4)}
+rngt = np.random.default_rng(11)
+tree_dev, tree_tests = 0.0, 0
+while tree_tests < 30:
+    sites = [(1, 1, 1)]
+    tbonds = []
+    for step in range(int(rngt.integers(3, 5))):
+        base = sites[rngt.integers(len(sites))]
+        ax, d = int(rngt.integers(3)), int(rngt.choice([1, -1]))
+        new = tuple(np.array(base) + d * E3[ax])
+        if new in sites or min(new) < 0 or max(new) > 3:
+            continue
+        if any(sum(abs(np.array(new) - np.array(s_))) == 1 and s_ != base for s_ in sites):
+            continue
+        if any(ax == b_[2] and sites.index(base) in b_[:2] for b_ in tbonds):
+            continue
+        sites.append(new)
+        tbonds.append((sites.index(base), len(sites) - 1, ax) if d == 1 else (len(sites) - 1, sites.index(base), ax))
+    comp = sorted(sites)
+    ixs = {s_: t for t, s_ in enumerate(comp)}
+    cl = Carving(comp, [(ixs[sites[i]], ixs[sites[j]], ax, (0, 0, 0), int(rngt.choice([1, -1]))) for i, j, ax in tbonds])
+    if len(cl.majs) % 2:
+        continue
+    gens = [{cl.comp[j0]: ax, cl.comp[k0]: ax} for (j0, k0, ax, off, u) in
+            [(ixs[sites[i]], ixs[sites[j]], ax, 0, 0) for i, j, ax in tbonds]] + [{s_: a} for s_ in comp for a in cl.dangling[s_]]
+    terms = [(rngt.normal(), g) for g in gens]
+    for _ in range(4):
+        lab = {s_: 0 for s_ in comp}
+        for gi in rngt.choice(len(gens), size=int(rngt.integers(2, 4)), replace=False):
+            for s_, a in gens[gi].items():
+                lab[s_] = MULP[(lab[s_], a + 1)]
+        Pm = {s_: l - 1 for s_, l in lab.items() if l}
+        if Pm and cl.image(Pm) is not None:
+            terms.append((rngt.normal(), Pm))
+    A = np.zeros((len(cl.majs), len(cl.majs)))
+    H = np.zeros((2 ** len(comp), 2 ** len(comp)), dtype=complex)
+    const = 0.0
+    for lamb, Pm in terms:
+        cf, g1, g2 = cl.image(Pm)
+        if g1 is None:
+            const += (lamb * cf).real
+        else:
+            tau = (lamb * cf / 1j).real
+            A[cl.mid[g1[0]], cl.mid[g2[0]]] += 2 * tau
+            A[cl.mid[g2[0]], cl.mid[g1[0]]] -= 2 * tau
+        ops = [PAU[Pm[s_]] if s_ in Pm else np.eye(2, dtype=complex) for s_ in comp]
+        Hm = ops[0]
+        for o in ops[1:]:
+            Hm = np.kron(Hm, o)
+        H += lamb * Hm
+    eps = np.sort(np.linalg.eigvalsh(1j * A))[len(cl.majs) // 2:]
+    lev = {0: [], 1: []}
+    for occ in itertools.product((0, 1), repeat=len(eps)):
+        lev[sum(occ) % 2].append(-0.5 * eps.sum() + np.dot(occ, eps) + const)
+    spin = np.sort(np.linalg.eigvalsh(H))
+    tree_dev = max(tree_dev, min(np.max(np.abs(np.sort(lev[q]) - spin)) for q in (0, 1) if len(lev[q]) == len(spin)))
+    tree_tests += 1
 corner = next(s_ for s_ in car.comp if len(car.kept[s_]) >= 2)
 ca, cc = sorted(car.kept[corner])[:2]
 xa = tuple(np.array(car.kept[corner][ca][0]) + 4 * car.kept[corner][ca][1])
@@ -443,8 +501,9 @@ kit_same = kit_img is not None and kit_img[1][0][0] == "c" and kit_img[2][0][0] 
     (sum(kit_img[1][0][1]) - sum(kit_img[2][0][1])) % 2 == 0
 kept_field_free = car.image({corner: ca}) is not None
 check("exact Majorana images: the bond matrix is reproduced, and three-site clusters match the spin spectrum",
-      bond_dev < 1e-12 and ed_dev < 1e-12 and kit_same and not kept_field_free,
+      bond_dev < 1e-12 and ed_dev < 1e-12 and tree_dev < 1e-12 and kit_same and not kept_field_free,
       f"bond matrix deviation {bond_dev:.0e}; 12 clusters with bonds, Kitaev's pattern and dangling fields: largest spectral deviation {ed_dev:.0e}; "
+      f"30 random tree clusters with multi-site product strings: {tree_dev:.0e}; "
       f"on the carving Kitaev's pattern is a free same-class c-c bilinear and a kept-axis field is not free")
 
 # ------------------------------------------------ 4. the free covariant subspace on this carving

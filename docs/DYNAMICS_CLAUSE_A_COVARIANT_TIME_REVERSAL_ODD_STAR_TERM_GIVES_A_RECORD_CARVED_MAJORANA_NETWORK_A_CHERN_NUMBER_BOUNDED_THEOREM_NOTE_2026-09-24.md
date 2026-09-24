@@ -100,6 +100,10 @@ its partner. What remains is a free term if at most two Majoranas are left:
   one parity sector of the Majorana spectrum to 5e-15. Each cluster has
   bonds, Kitaev's pattern with a random coefficient, and random dangling
   fields.
+- **Multi-site strings.** The same holds, to 1e-14, on 30 random tree
+  clusters of up to six sites. Their terms include products of two or
+  three bonds and fields, which are multi-site strings of the kind the
+  reduced star term contains.
 - **Free and not free.** Kitaev's pattern is a free same-class bilinear. A
   kept-axis field is not free. ∎
 
@@ -228,7 +232,7 @@ The runner has 7 checks and all pass in about a minute.
 |---|---|
 | The carving | Connected, winding rank 3, 22 bonds; records touch at most 2 axes; largest field on an unrecorded site 0. |
 | Covariant terms | 37 at weights 1 and 3 (open PR 9088's count), 325 at weights 1 to 7. |
-| Majorana images | Bond matrix exact; 12 three-site clusters match the spin spectrum to 5e-15. |
+| Majorana images | Bond matrix exact; 12 three-site clusters match the spin spectrum to 5e-15; 30 random tree clusters with multi-site product strings to 1e-14. |
 | The term | Free subspace 41; projected term uses 23 orbits of weights 5 and 7; non-free strings cancel to 1e-15; 27 same-class free bilinears. |
 | The chiral phase | The table above. |
 | Surface modes | 12-cell slab open along `z`: 64 top and 31 bottom in-gap surface states, 4 others; signed crossings of ±0.01, top +1, bottom −1. |

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-sources-under-the-record-reading-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j4543",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/sources-under-the-record-reading/referee_w-macbookpro90c72-j4543/check.py",
+ "seed": 31826,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "24b3b667",
+ "started_utc": "20260924T063706Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the record mass that keeps the ledger is L/(1-(gamma/12) g_yy L); the uniform star gives 1188/1091 on both boxes; the corner odds can reverse the sign."
+ },
+ "review": "The uniform 7-site star at gamma=1 has record mass 1188/1091 on the 5^3 box and the same value on the 7^3 box; corner odds give g=1.11341 against a centre-heavy quadratic form 1.34676.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:sources-under-the-record-reading:a3/; its files are probes/work/derive/sources-under-the-record-reading/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/sources-under-the-record-reading/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "d3c07580e2d0e30abdb2471475fad7a94e4a166f59d9384c557edcab835d7586",
+ "stdout_tail": "PASS m' = L/(1 - (gamma/12) g_yy L) restores the ledger\nPASS uniform 7-site star at gamma=1 on the 5^3 box has m' = 1188/1091  [1188/1091]\nPASS on the 7^3 interior, star excess is positive and the corner odds can make it negative  [excess 0.96618, corner 1.11341 vs 1.34676]\nPASS symmetric stars give the same m' on the 5^3 and 7^3 boxes; lopsided weights do not  [uniform 1.0889092576 vs 1.0889092576; lopsided 1.082359458 vs 1.082223152]\nPASS weak field: (L - E)/gamma -> -<rho, g rho>/12  [7.04343361803727e-12]\n\nSUMMARY: confirmed - the record mass that keeps the ledger is L/(1-(gamma/12) g_yy L); the uniform star gives 1188/1091 on both boxes; the corner odds can reverse the sign.\nHIT: confirmed - m' = L/(1 - (gamma/12) g_yy L); weak-field excess (gamma/12) E^2 (g_yy - <rho,g rho>); any-odds excess is nonnegative on Z^3 by g_xy <= G_0(0) and can be negative in a box; symmetric stars give m' = 1188/1091 independent of the 5^3 versus 7^3 walls.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4543",
+  "at_utc": "20260924T063711Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent held-wall solve reproduces 1188/1091 and the corner sign reversal.",
+  "by": "w-macbookpro90c72-j4543",
+  "at_utc": "20260924T063711Z"
+ }
+}

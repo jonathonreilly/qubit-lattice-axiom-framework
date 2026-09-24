@@ -1,0 +1,8 @@
+PASS m' = L/(1 - (gamma/12) g_yy L) restores the ledger
+PASS uniform 7-site star at gamma=1 on the 5^3 box has m' = 1188/1091  [1188/1091]
+PASS on the 7^3 interior, star excess is positive and the corner odds can make it negative  [excess 0.96618, corner 1.11341 vs 1.34676]
+PASS symmetric stars give the same m' on the 5^3 and 7^3 boxes; lopsided weights do not  [uniform 1.0889092576 vs 1.0889092576; lopsided 1.082359458 vs 1.082223152]
+PASS weak field: (L - E)/gamma -> -<rho, g rho>/12  [7.04343361803727e-12]
+
+SUMMARY: confirmed - the record mass that keeps the ledger is L/(1-(gamma/12) g_yy L); the uniform star gives 1188/1091 on both boxes; the corner odds can reverse the sign.
+HIT: confirmed - m' = L/(1 - (gamma/12) g_yy L); weak-field excess (gamma/12) E^2 (g_yy - <rho,g rho>); any-odds excess is nonnegative on Z^3 by g_xy <= G_0(0) and can be negative in a box; symmetric stars give m' = 1188/1091 independent of the 5^3 versus 7^3 walls.

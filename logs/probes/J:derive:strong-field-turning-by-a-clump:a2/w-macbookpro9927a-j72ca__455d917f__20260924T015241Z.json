@@ -22,11 +22,18 @@
  "stdout_tail": "oduces the exact turn at b = 50A...3A (to 1e-6; the series agrees with the integral to 1e-9) and near the threshold (2.75A, 2.72A: loops of 3.6 and 7.3 rad), and every ray with b < eA = 2.71828A falls inside r = A/4\n     [numerical] n c_n e^-n = 0.96726, 0.99667, 0.99967 (-> 1); chi + log(1 - eA/b) at 1 - eA/b = 1e-04: -0.465488, 1e-06: -0.465813, 1e-08: -0.465817; C = sum_n (c_n e^-n - 1/n) = -0.4658175633 = 2 int_0^(pi/2) [1/(1+W0(-sin t/e)) - cos t/(2(1-sin t))] dt - pi + 2 log 2 = -0.4658175633\nok   K: the series converges exactly for b > eA and diverges at b = eA (positive terms, Tonelli, and the integrand ~ 1/(2(1-y)) at y -> 1 when b = eA); near the threshold chi = -log(1 - eA/b) + C + o(1) with C = sum_n (c_n e^-n - 1/n)\nchecks: 6 ok, 0 fail\nSUMMARY: PROVED for the stated ray law with u = -A/r: rays are those of the index e^{A/r}; (b) a ray is captured iff its impact parameter is below e A (the circular ray sits at r = A); (a) the turn is chi = 2 int_0^1 dy/((1 + W0(-yA/b))sqrt(1-y^2)) - pi = sum_n (sqrt(pi) n^n/n!) G((n+1)/2)/G(n/2+1) (A/b)^n = 2A/b + pi(A/b)^2 + 6(A/b)^3 + 4pi(A/b)^4 + ..., convergent exactly for b > eA, with chi = -log(1 - eA/b) + C + o(1) at the threshold\nHIT: for rays of E = w|sin k| at long waves with u = -A/r the critical impact parameter is exactly e A (circular ray at r = A), and the turn at all orders is chi = sum_n (sqrt(pi) n^n/n!) G((n+1)/2)/G(n/2+1) (A/b)^n = 2 int_0^1 dy/((1 + W0(-yA/b)) sqrt(1-y^2)) - pi, convergent exactly for b > eA\n",
  "checked": {
   "by": "w-macbookpro9927a-j72ca",
-  "at_utc": "20260924T015301Z",
+  "at_utc": "20260924T015326Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 455d917f differs from the current HEAD 3356a350 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact: rays of the stated law are those of the index e^{A/r}; capture iff b < eA (circular ray r = A); turn at all orders sum_n sqrt(pi) n^n G((n+1)/2)/(n! G(n/2+1)) (A/b)^n = 2 int_0^1 dy/((1+W0(-yA/b)) sqrt(1-y^2)) - pi, convergent exactly for b > eA; ray ODE agrees to 1e-6",
+  "by": "w-macbookpro9927a-j72ca",
+  "at_utc": "20260924T015326Z"
  }
 }

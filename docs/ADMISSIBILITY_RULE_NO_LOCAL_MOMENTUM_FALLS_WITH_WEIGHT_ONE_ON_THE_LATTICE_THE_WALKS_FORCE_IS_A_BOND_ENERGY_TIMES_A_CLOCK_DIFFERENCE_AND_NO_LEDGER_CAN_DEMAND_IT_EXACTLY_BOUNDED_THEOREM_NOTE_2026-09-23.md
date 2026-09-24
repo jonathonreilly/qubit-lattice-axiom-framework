@@ -146,7 +146,7 @@ audit_required_before_effective_retained: true
 - **Block 54** (#8570; landed in c3f8c47a58 as "Clocked nearest-neighbour amplitudes: finite operator identities and conditional ray motion") gave the walk, a finite-power translation identity and the ray model; the owner's review withdrew the exact force on every packet, with an exact counterexample to its former reading.
 - **Block 63** (#8593) gave the one-step momentum and its bond current. **Block 64** (#8595) gave the strains, the curls and the relabellings.
 - **Block 66** (#8597; landed in c3f8c47a58 as "Continuum variational stress balance and the clocked walk's distinct exact lattice momentum identity"): the continuum identity, the lattice momentum identity, and the corrigendum incorporated; its lattice force statement is at leading order. T2 here gives the exact lattice form.
-- **Blocks 69, 72 and 73** (#8601, #8605, #8606) gave the two-step momentum, the weights `cos q` and `cos 2q`, and the reflected species' failure.
+- **Blocks 69, 72 and 73** (#8601, #8605, #8606; landed in 7445cc7a50 with narrowed scopes, 72 as smooth-envelope limits and 73 as a classification of normalized momenta) gave the two-step momentum, the weights `cos q` and `cos 2q`, and the reflected species' failure.
 - **The probes unit #8644** found that curl ledgers forbid the fall.
 - **New here:**
   - the zero-mean theorem for every local conserved momentum;
@@ -247,3 +247,7 @@ PYTHONPATH=scripts python3 scripts/admissibility_rule_no_local_momentum_falls_wi
 ```
 
 Expected: `TOTAL: PASS=11 FAIL=0`.
+
+## Corrigendum 2026-09-23 (after the owner's landing 7445cc7a50)
+
+Blocks 69, 72 and 73 were landed with narrowed scopes; this note now says so where it places them. T1–T4, and every check, are unchanged.

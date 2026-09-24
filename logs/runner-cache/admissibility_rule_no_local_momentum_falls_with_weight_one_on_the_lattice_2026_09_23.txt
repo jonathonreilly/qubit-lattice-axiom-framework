@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_no_local_momentum_falls_with_weight_one_on_the_lattice_2026_09_23.py
 runner_sha256: f86d8a245e1434bb0d31219e9a34f523a85b5fa763995ce165d0b7b1a9b64f05
-input_fingerprint_sha256: 20b1f7c07485cad2c59373e7fb4df1a5ae1f4ba7accbe292126b8210a080b483
+input_fingerprint_sha256: c520efea416a842227775b323152e706e3ef46bf02bacdce1b983b2bfeb5d177
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 10.83
+elapsed_sec: 8.41
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-delay-of-the-rate-field-with-the-curvature-member-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jef5b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/delay-of-the-rate-field-with-the-curvature-member/referee_w-macbookpro90c72-jef5b/check.py",
+ "seed": 57263,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "87e53583",
+ "started_utc": "20260924T134103Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the partial result for ledger-kept formation events. The 7x7 pencil and the continuum kernels were recomputed. The 96^3 lattice control was not rebuilt. Second order, moving bodies, and the branch alpha+beta=0 stay outside the claim."
+ },
+ "review": "The 7x7 pencil and the continuum kernels confirm that the clock follows e and its second derivative at the same label time, and that a ledger-kept dipole leaves a transverse 1/r memory.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:delay-of-the-rate-field-with-the-curvature-member:a2/; its files are probes/work/derive/delay-of-the-rate-field-with-the-curvature-member/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/delay-of-the-rate-field-with-the-curvature-member/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "b6fb29fad7b07c4ce7703d500dee1301d7f06411dbd2e04abc57030c8b8d19f6",
+ "stdout_tail": "PASS T1 the 7x7 pencil gives u/e = -1/(4K wbar p^2) + C s^2/p^4 with no pole in s (4 rational points and the symbolic axis)\nPASS T1 R1, R2 and the kinetic invariants are unchanged by a rational rotation, so H depends on p only through p^2\nPASS T2 continuum kernels: dipole Poisson clock -(D.rhat)/(16 pi K wbar r^2); B-part force and memory fall as 1/r\nTOTAL FAIL=0\nHIT: confirmed - the clock transfer function is u/e = -1/(4K wbar p^2) + C s^2/p^4 with C = alpha(alpha+3 beta)/(K^2 wbar^3 (alpha+beta)), a polynomial in s, so the clock is not retarded. A ledger-kept dipole jump moves a distant packet at once by a dipole force and leaves a transverse 1/r memory from the C term.\nSUMMARY: confirmed the partial result for ledger-kept formation events. The 7x7 pencil and the continuum kernels were recomputed. The 96^3 lattice control was not rebuilt. Second order, moving bodies, and the branch alpha+beta=0 stay outside the claim.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jef5b",
+  "at_utc": "20260924T134114Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The clock law is science: it is a polynomial in s, so a ledger-kept dipole moves a distant packet at once and leaves a 1/r memory.",
+  "by": "w-macbookpro90c72-jef5b",
+  "at_utc": "20260924T134114Z"
+ }
+}

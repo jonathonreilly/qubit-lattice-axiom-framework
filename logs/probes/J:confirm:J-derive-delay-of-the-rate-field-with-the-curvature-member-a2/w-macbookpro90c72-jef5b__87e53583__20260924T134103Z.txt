@@ -1,0 +1,6 @@
+PASS T1 the 7x7 pencil gives u/e = -1/(4K wbar p^2) + C s^2/p^4 with no pole in s (4 rational points and the symbolic axis)
+PASS T1 R1, R2 and the kinetic invariants are unchanged by a rational rotation, so H depends on p only through p^2
+PASS T2 continuum kernels: dipole Poisson clock -(D.rhat)/(16 pi K wbar r^2); B-part force and memory fall as 1/r
+TOTAL FAIL=0
+HIT: confirmed - the clock transfer function is u/e = -1/(4K wbar p^2) + C s^2/p^4 with C = alpha(alpha+3 beta)/(K^2 wbar^3 (alpha+beta)), a polynomial in s, so the clock is not retarded. A ledger-kept dipole jump moves a distant packet at once by a dipole force and leaves a transverse 1/r memory from the C term.
+SUMMARY: confirmed the partial result for ledger-kept formation events. The 7x7 pencil and the continuum kernels were recomputed. The 96^3 lattice control was not rebuilt. Second order, moving bodies, and the branch alpha+beta=0 stay outside the claim.

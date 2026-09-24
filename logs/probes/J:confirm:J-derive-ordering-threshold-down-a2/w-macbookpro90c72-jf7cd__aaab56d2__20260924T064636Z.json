@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-ordering-threshold-down-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jf7cd",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/ordering-threshold-down/referee_w-macbookpro90c72-jf7cd/check.py",
+ "seed": 32396,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aaab56d2",
+ "started_utc": "20260924T064636Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - d2-d1 has numerator p^2(p-q)(pq^2+q^3+4r^3) and d3-d2 has numerator -p^2(q-r)(pq-q^2-2qr-4r^2); each deviation is the strict maximum at an explicit triple."
+ },
+ "review": "d2-d1 equals (p-q) times a ratio of positive polynomials, and the strict maxima are d2 at (3,1,2), d3 at (3,2,1) and d1 at (1,3,2); d2 equals d3 at (7,1,1) on the second surface.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:ordering-threshold-down:a2/; its files are probes/work/derive/ordering-threshold-down/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/ordering-threshold-down/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "87d1f122904549157a1ddfd1985dbf0a2aa6b3ab19ce1dc99d08c7217969258f",
+ "stdout_tail": "PASS at p=q=r every deviation is 5/6\nPASS numerator of d2-d1 is p^2 (p-q)(p q^2 + q^3 + 4 r^3)  [p**2*(p - q)*(p*q**2 + q**3 + 4*r**3)]\nPASS d2-d1 = (p-q) times a ratio of positive polynomials, so it has the sign of p-q\nPASS numerator of d3-d2 is -p^2 (q-r)(p q - q^2 - 2 q r - 4 r^2)  [-p**2*(q - r)*(p*q - q**2 - 2*q*r - 4*r**2)]\nPASS strict maxima: d2 at (3,1,2), d3 at (3,2,1), d1 at (1,3,2)  [(3, 1, 2)->d2 [0.55, 0.7954545454545454, 0.6538461538461539]; (3, 2, 1)->d3 [0.3076923076923077, 0.47058823529411764, 0.55]; (1, 3, 2)->d1 [0.9833333333333333, 0.9318181818181818, 0.9615384615384616]]\nPASS d2 = d3 at (10, 1, 1)  [7/57]\nPASS d2 = d3 at (4, 1, 1)  [1/3]\nPASS d2 = d3 at (7, 1, 1)  [11/60]\nPASS the cofactor of (p-q) has only positive coefficients, so p>q puts d1 strictly below d2\n\nSUMMARY: confirmed - d2-d1 has numerator p^2(p-q)(pq^2+q^3+4r^3) and d3-d2 has numerator -p^2(q-r)(pq-q^2-2qr-4r^2); each deviation is the strict maximum at an explicit triple.\nHIT: confirmed - d2 > d1 exactly when p > q, d2 = d3 exactly on q = r or pq = q^2+2qr+4r^2, and the three deviations are the strict maximum at (3,1,2), (3,2,1) and (1,3,2).\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf7cd",
+  "at_utc": "20260924T064643Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent factorization confirms d2>d1 iff p>q and the three strict maxima.",
+  "by": "w-macbookpro90c72-jf7cd",
+  "at_utc": "20260924T064643Z"
+ }
+}

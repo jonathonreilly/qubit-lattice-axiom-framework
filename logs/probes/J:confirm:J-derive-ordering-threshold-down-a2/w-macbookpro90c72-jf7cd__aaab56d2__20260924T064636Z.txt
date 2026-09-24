@@ -1,0 +1,12 @@
+PASS at p=q=r every deviation is 5/6
+PASS numerator of d2-d1 is p^2 (p-q)(p q^2 + q^3 + 4 r^3)  [p**2*(p - q)*(p*q**2 + q**3 + 4*r**3)]
+PASS d2-d1 = (p-q) times a ratio of positive polynomials, so it has the sign of p-q
+PASS numerator of d3-d2 is -p^2 (q-r)(p q - q^2 - 2 q r - 4 r^2)  [-p**2*(q - r)*(p*q - q**2 - 2*q*r - 4*r**2)]
+PASS strict maxima: d2 at (3,1,2), d3 at (3,2,1), d1 at (1,3,2)  [(3, 1, 2)->d2 [0.55, 0.7954545454545454, 0.6538461538461539]; (3, 2, 1)->d3 [0.3076923076923077, 0.47058823529411764, 0.55]; (1, 3, 2)->d1 [0.9833333333333333, 0.9318181818181818, 0.9615384615384616]]
+PASS d2 = d3 at (10, 1, 1)  [7/57]
+PASS d2 = d3 at (4, 1, 1)  [1/3]
+PASS d2 = d3 at (7, 1, 1)  [11/60]
+PASS the cofactor of (p-q) has only positive coefficients, so p>q puts d1 strictly below d2
+
+SUMMARY: confirmed - d2-d1 has numerator p^2(p-q)(pq^2+q^3+4r^3) and d3-d2 has numerator -p^2(q-r)(pq-q^2-2qr-4r^2); each deviation is the strict maximum at an explicit triple.
+HIT: confirmed - d2 > d1 exactly when p > q, d2 = d3 exactly on q = r or pq = q^2+2qr+4r^2, and the three deviations are the strict maximum at (3,1,2), (3,2,1) and (1,3,2).

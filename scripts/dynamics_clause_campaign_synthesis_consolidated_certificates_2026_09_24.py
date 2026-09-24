@@ -2,7 +2,7 @@
 """One dynamics clause: consolidated certificates and decision-point ledger.
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
-9048, 9050, 9052, 9054, 9066). Each check re-derives, in a fast independent form,
+9048, 9050, 9052, 9054, 9066, 9069). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -10,7 +10,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the nine blocks are exactly the
+L. Ledger: the decision points used by the ten blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -32,6 +32,10 @@ L. Ledger: the decision points used by the nine blocks are exactly the
    rotation actions an oriented link field is covariant for full soldering
    alone and a vertex charge needs an invariant axis; the soft-Gauss ring
    element is -5 h^4 / (32 U^3).
+10. (9069) Under full soldering no role's stabilizer fixes a Bloch axis; with
+   a soldered link, covariant vertex-link terms flip the link only for a
+   fully soldered vertex (dimensions 0, 0, 0, 2); single-link flips commute
+   (Levin-Wen exchange phase 1).
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -99,6 +103,7 @@ USED = {
     9052: {"D-dyn", "D-tr", "D-menu", "D-relax"},
     9054: {"D-dyn", "D-sold", "D-perm", "D-pattern"},
     9066: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-pattern"},
+    9069: {"D-dyn", "D-sold", "D-roles", "D-gauss", "D-pattern"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -397,6 +402,50 @@ amp /= 16
 check("two-site Gauss-invariant terms freeze E_l; oriented link field covariant for full soldering alone; ring element -5/32",
       frozen < 1e-10 and itw == [0, 0, 0, 1] and inv == [3, 1, 0, 0] and abs(amp + 5 / 32) < 1e-12,
       f"max |[H, E_l]| {frozen:.1e} over {nsp.shape[1]} invariant terms; intertwiners {itw}; invariant axes {inv}; ring element {amp:.6f} h^4/U^3")
+
+# ------------------------------------------------------ 10: charges
+print("10. where charge can live")
+def _lift(R):
+    ang = np.arccos(np.clip((np.trace(R) - 1) / 2, -1, 1))
+    if np.isclose(ang, 0):
+        return I2.copy()
+    if np.isclose(ang, np.pi):
+        w_, v_ = np.linalg.eig(R)
+        nv = np.real(v_[:, np.argmin(abs(w_ - 1))])
+    else:
+        nv = np.array([R[2, 1] - R[1, 2], R[0, 2] - R[2, 0], R[1, 0] - R[0, 1]]) / (2 * np.sin(ang))
+    nv = nv / np.linalg.norm(nv)
+    from scipy.linalg import expm as _expm
+    return _expm(-1j * ang * sum(nv[k] * S[k] for k in range(3)) / 2)
+
+
+def _role(x):
+    return sum(int(c) % 2 for c in x)
+
+
+_win = [np.array(p_) for p_ in itertools.product(range(-2, 3), repeat=3)]
+fixed_axes = []
+for c_ in [(0, 0, 0), (1, 0, 0), (1, 1, 0), (1, 1, 1)]:
+    c_ = np.array(c_)
+    st_ = [R for R in O if all(_role(c_ + R @ (p_ - c_)) == _role(p_) for p_ in _win)]
+    fixed_axes.append(_ns(np.vstack([R - np.eye(3) for R in st_])).shape[1])
+bstab = [R for R in O if np.allclose(R @ np.array([1.0, 0, 0]), [1, 0, 0])]
+El = np.kron(I2, S[0] / 2)
+b2 = [np.kron(A, B) for A in PA for B in PA]
+fd = []
+for a_ in acts:
+    rows_ = []
+    for R in bstab:
+        V_ = np.kron(_lift(a_(R)), _lift(R))
+        rows_.append(np.array([(V_ @ B @ V_.conj().T).ravel() for B in b2]).T - np.array([B.ravel() for B in b2]).T)
+    nsb = _ns(np.vstack(rows_))
+    ops_ = [sum(nsb[k, c] * b2[k] for k in range(16)) for c in range(nsb.shape[1])]
+    fd.append(int(np.linalg.matrix_rank(np.array([(o @ El - El @ o).ravel() for o in ops_]), tol=1e-9)))
+t3 = [np.kron(np.kron(S[0], I2), I2), np.kron(np.kron(I2, S[1]), I2), np.kron(np.kron(I2, I2), S[2])]
+lw = np.linalg.norm(t3[0] @ t3[1].conj().T @ t3[2] - t3[2] @ t3[1].conj().T @ t3[0])
+check("no role fixes a Bloch axis; soldered links flip only against fully soldered vertices; defect hops commute",
+      fixed_axes == [0, 0, 0, 0] and fd == [0, 0, 0, 2] and lw < 1e-12,
+      f"fixed axes (vertex, link, plaquette, cube) {fixed_axes}; link-flip dims (trivial, sign twist, axis, full) {fd}; Levin-Wen {lw:.0e}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

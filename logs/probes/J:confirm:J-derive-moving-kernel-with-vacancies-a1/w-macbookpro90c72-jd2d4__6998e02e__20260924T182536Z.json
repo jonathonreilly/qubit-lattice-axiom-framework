@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-kernel-with-vacancies-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jd2d4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-kernel-with-vacancies/referee_w-macbookpro90c72-jd2d4/check.py",
+ "seed": 74336,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6998e02e",
+ "started_utc": "20260924T182536Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - factorization, c0=1/cosh, cube counterexamples X1 and X2, X3, and c1 as the largest pencil eigenvalue. Sphere numerical thresholds were not rebuilt."
+ },
+ "review": "The cube enumeration reproduces the stated neutral-scale fraction and S beta E > 1.4707, and S beta rho2 E > 1.8164, so neither full-beta bound holds; c1 is the largest pencil eigenvalue.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-kernel-with-vacancies:a1/; its files are probes/work/derive/moving-kernel-with-vacancies/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-kernel-with-vacancies/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "abf230d2e06c4d16bb4e2f2a33b0197ffcfdf388ab78e57d2b2f929ddc6f9af9",
+ "stdout_tail": " F1 |sigma-sigma'|^2 = n+n'-2nn'(s\u00b7s') on the occupation pairs\nPASS F1 the product of the Gaussian factor and the vacancy kernel is c exp(beta s\u00b7s') or 1\nPASS F3 the occupied Schur complement has eigenvalues 2c cosh(g)-2 and 2c sinh(g)\nPASS F3 the two-valued kernel is positive semidefinite exactly for c >= 1/cosh g\nPASS F5 g cosh g - sinh g > 0 for g>0, so both c0 functions decrease\nPASS neutral scales: c0(ln 3)=3/5 and c0(ln 20)=40/401\nPASS A1 on all 3^8 configurations, the all-site twist equals E(k) sum sigma psi\nPASS X1 S(pi,pi,pi) is the stated fraction at e^beta=3, c=3/5, z=1/8\nPASS sum rule sum_k S(k) = N rho\nPASS X1 S beta E > 1.4707, so 1/(beta E) fails at the neutral scale\nPASS X2 S beta rho2 E > 1.8164 (rho=0.8002, rho2=0.6882)\nPASS X3 a record-record twist gives 0; the all-site twist and E(k) sum sigma psi both give 2\nPASS B1 the empty block of the limit Gram is diag(1, beta)\nPASS B1 c1 is the largest pencil eigenvalue and c0 < c1 < 1 (1:0.99249, 2:0.91112, 3:0.71508, 5:0.28323)\nPASS the chord of sin meets sin at 0 and at pi/2\nPASS cos v - 2/pi changes sign once, so sin stays above the chord\nPASS the explicit long-range threshold 3 sqrt(3) pi/8 is 2.0405\nTOTAL FAIL=0\nHIT: confirmed - at the neutral scale the full-beta infrared bound fails, and the stiffness is 1/beta_A(c) rather than 1/(beta rho2)\nSUMMARY: confirmed - factorization, c0=1/cosh, cube counterexamples X1 and X2, X3, and c1 as the largest pencil eigenvalue. Sphere numerical thresholds were not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd2d4",
+  "at_utc": "20260924T182543Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms a1: at the neutral scale S beta E > 1.4707 and S beta rho2 E > 1.8164, and c1 is the largest pencil eigenvalue.",
+  "by": "w-macbookpro90c72-jd2d4",
+  "at_utc": "20260924T182543Z"
+ }
+}

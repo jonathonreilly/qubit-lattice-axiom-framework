@@ -1,0 +1,20 @@
+PASS F1 |sigma-sigma'|^2 = n+n'-2nn'(s·s') on the occupation pairs
+PASS F1 the product of the Gaussian factor and the vacancy kernel is c exp(beta s·s') or 1
+PASS F3 the occupied Schur complement has eigenvalues 2c cosh(g)-2 and 2c sinh(g)
+PASS F3 the two-valued kernel is positive semidefinite exactly for c >= 1/cosh g
+PASS F5 g cosh g - sinh g > 0 for g>0, so both c0 functions decrease
+PASS neutral scales: c0(ln 3)=3/5 and c0(ln 20)=40/401
+PASS A1 on all 3^8 configurations, the all-site twist equals E(k) sum sigma psi
+PASS X1 S(pi,pi,pi) is the stated fraction at e^beta=3, c=3/5, z=1/8
+PASS sum rule sum_k S(k) = N rho
+PASS X1 S beta E > 1.4707, so 1/(beta E) fails at the neutral scale
+PASS X2 S beta rho2 E > 1.8164 (rho=0.8002, rho2=0.6882)
+PASS X3 a record-record twist gives 0; the all-site twist and E(k) sum sigma psi both give 2
+PASS B1 the empty block of the limit Gram is diag(1, beta)
+PASS B1 c1 is the largest pencil eigenvalue and c0 < c1 < 1 (1:0.99249, 2:0.91112, 3:0.71508, 5:0.28323)
+PASS the chord of sin meets sin at 0 and at pi/2
+PASS cos v - 2/pi changes sign once, so sin stays above the chord
+PASS the explicit long-range threshold 3 sqrt(3) pi/8 is 2.0405
+TOTAL FAIL=0
+HIT: confirmed - at the neutral scale the full-beta infrared bound fails, and the stiffness is 1/beta_A(c) rather than 1/(beta rho2)
+SUMMARY: confirmed - factorization, c0=1/cosh, cube counterexamples X1 and X2, X3, and c1 as the largest pencil eigenvalue. Sphere numerical thresholds were not rebuilt.

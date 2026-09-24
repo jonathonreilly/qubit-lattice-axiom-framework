@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-moving-jammed-clusters-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jb732",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-jammed-clusters/referee_w-macbookpro90c72-jb732/check.py",
+ "seed": 18908,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5c349d57",
+ "started_utc": "20260924T030148Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - per-bond box evaporation, the cp=1 threshold, the facet leaving rule, and the two-move weight all survive independent enumeration."
+ },
+ "review": "Independent bond enumeration confirms per-bond box evaporation, the switch at cp=1 rather than a1s root, the facet leaving rule, and two-move evaporation on tied facets.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-jammed-clusters:a2/; its files are probes/work/derive/moving-jammed-clusters/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-jammed-clusters/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "56126754c44c29c74b802818adc30630f5100086f1c8e969ebf23a1223edcbaa",
+ "stdout_tail": "ormals, |coord|<=4: a record in layer m < h-k leaves along exactly one bond, and a tied facet (h=k) has no such layer\nok M6: octahedron: only the 6 tips leave in one move, R=1..8, and growth is 6+12R+(4R^2-4R); dodecahedron departures are 6+12R or 6+12(R-1) and growth is quadratic, R=2..8\nok M7: top layer of (111),(110),(100),(221),(331): two moves reach an isolated site; hop probability 1/(1+x) on (111) and 1/(1+x^3) on (110); static weight x^{-k_s}\nok M8: one move reaches 2(|pi_x|+|pi_y|+|pi_z|) distinct arrangements on box, octahedron and dodecahedron, sizes 2..5; at (3,1,2) a depth-1 content changes the surface law and the 5-box centre does not\nSUMMARY: confirmed - per-bond box evaporation, the cp=1 threshold, the facet leaving rule, and the two-move weight all survive independent enumeration.\nHIT: confirmed - with every occupied-empty bond visited once, the box evaporates at E(L)=24/(1+x^3)+24(L-2)/(1+x^4)+6(L-2)^2/(1+x^5), whose finite-size terms have the sign of x-1, so the stable-size/nucleation switch is at cp=1 (5p=q+4r at the neutral scale), not at a one-attempt-per-record threshold; at (3,1,2), z_c=16/825, the two counts disagree, and (11/10)z_c is repelling between L=17 and 18. A facet with sorted |normal|(h,k,l) lets only layers m<h-k leave in one move, so tied facets and all but the octahedron's 6 tips do not; those records leave in two moves at static weight x^{-k_s}. One move reaches twice the sum of the projection areas, and the move law reads depth 1 only.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb732",
+  "at_utc": "20260924T030149Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

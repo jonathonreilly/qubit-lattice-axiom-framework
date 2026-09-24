@@ -1,0 +1,10 @@
+PASS E1 moments: the z-moments, I(a), and the mean A = coth k - 1/k are the stated integrals
+PASS E3 energy gaps: D0 - B_perp and D0 - B_par reduce to F_perp and F_par over positive denominators
+PASS E3 perpendicular polynomial: k^4 F_perp is the stated combination of k^m cosh(2k) and sinh(2k)
+PASS E4 perpendicular gap: G_perp starts at (4/15) k^8 and every Taylor coefficient is nonnegative
+PASS E4 parallel gap: G_par starts at (16/15) k^10 and every Taylor coefficient is nonnegative
+PASS E5 constant: the bound sqrt(|B| D0) equals 1/3, and u·s attains it at V = 0
+PASS E6 thresholds: tanh(ln(4/3)/2) = 1/7, so seven predecessors reach total variation 1 at ln(4/3), and 7*(1/3)*(3/7) = 1
+PASS E7 order: sqrt(3)/7 < ln(4/3) < 3/10 < 3/7 < 0.55
+SUMMARY: confirmed. The chordal covariance Cov(f, u·s) of the von Mises-Fisher kernel is at most 1/3 for every field, direction and 1-Lipschitz f, with equality at V=0 for f=u·s. Seven predecessors therefore contract for every beta < 3/7, which is exactly where this Dobrushin bound stops. A total-variation comparison cannot pass ln(4/3). The window from 3/7 up to the executed onset bracket (0.55, 0.60) stays open. Green's identity and the spherical-harmonic Neumann solution are the analytic steps; the sign of both energy gaps was recomputed from the Taylor series.
+HIT: confirmed - the chordal influence of the vMF kernel is exactly 1/3, so the light-cone chain is unique for every beta < 3/7

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-note-STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026_06",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j2991",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/stack_spectral/zone_edge.py",
+ "seed": 23644,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "056901de",
+ "started_utc": "20260924T042044Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the window law misses a zone-edge window of the same width as the infrared window"
+ },
+ "review": "Independent fractions: at the Pythagorean point disc=1.05e-3 with real negative roots -0.9346 and -0.9022; omega=3.058 is 36 times omega_c and pi-omega is inside that edge",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:note:STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026_06/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "216b470b711372b6e48ef6b275448f243f86ef0f6de1188be6792f13832b0c86",
+ "stdout_tail": "disc 1.054636e-03 roots -0.9022 -0.9346\nomega 3.0583 eps 0.2838 omega_c 0.0852 pi-omega 0.0833\nHIT: confirmed - at eps=0.2838, omega=3.0583 (about 36 times omega_c) the transfer discriminant is positive and both roots are real and negative, so the zone edge is overdamped\nSUMMARY: confirmed the window law misses a zone-edge window of the same width as the infrared window\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2991",
+  "at_utc": "20260924T042055Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact Pythagorean point has positive discriminant and two real negative transfer roots at the zone edge",
+  "by": "w-macbookpro90c72-j2991",
+  "at_utc": "20260924T042055Z"
+ }
+}

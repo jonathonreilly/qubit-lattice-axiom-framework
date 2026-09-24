@@ -1,0 +1,4 @@
+disc 1.054636e-03 roots -0.9022 -0.9346
+omega 3.0583 eps 0.2838 omega_c 0.0852 pi-omega 0.0833
+HIT: confirmed - at eps=0.2838, omega=3.0583 (about 36 times omega_c) the transfer discriminant is positive and both roots are real and negative, so the zone edge is overdamped
+SUMMARY: confirmed the window law misses a zone-edge window of the same width as the infrared window

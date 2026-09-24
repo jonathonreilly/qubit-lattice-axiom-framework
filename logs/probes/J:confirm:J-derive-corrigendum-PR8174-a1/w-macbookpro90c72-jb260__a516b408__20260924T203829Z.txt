@@ -1,0 +1,7 @@
+PASS C1 closed forms: sign(d2-d1)=sign(p-q) and sign(d3-d1)=sign(g)
+PASS C2 monotonicity: each d_i decreases in p; g(q)=2r(q+2r)(q-r) and g(q-2r)=-4r^2(q+r)
+PASS C3 witness and census: at (1,2,1), d1=12/13 > 9/10; exactly 127 of 343 triples in 1..7 fail, and only there
+PASS C8 coupling failure: the 10-site event has probability 24/(13^8*1300), and all three predecessor types are reachable
+PASS C10 domain and lines: all 19 executed lines have p >= q and lie in the domain; off it the repair collapses eps2 to d1
+SUMMARY: confirmed. d1 <= max(d2, d3) holds exactly when p >= min(q, p*), with p* the positive root of g = r p^2 + (q^2+qr+2r^2)p - (q^3+4r^3). The inequality fails on a positive-measure set, including (1,2,1), and there the note's coupling has xi=1 and eta'=0 with probability 24/(13^8*1300). eps2 = max(d1,d2,d3) is the minimal repair for that coupling. The 19 executed lines of the later notes all have p >= q, so their numbers do not move.
+HIT: confirmed - block 30's clause d1 <= max(d2,d3) fails exactly when p < q and g < 0, and there the two-level coupling fails with positive probability

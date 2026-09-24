@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8174-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jb260",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8174/referee_w-macbookpro90c72-jb260/check.py",
+ "seed": 82309,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a516b408",
+ "started_utc": "20260924T203829Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed. d1 <= max(d2, d3) holds exactly when p >= min(q, p*), with p* the positive root of g = r p^2 + (q^2+qr+2r^2)p - (q^3+4r^3). The inequality fails on a positive-measure set, including (1,2,1), and there the note's coupling has xi=1 and eta'=0 with probability 24/(13^8*1300). eps2 = max(d1,d2,d3) is the minimal repair for that coupling. The 19 executed lines of the later notes all have p >= q, so their numbers do not move."
+ },
+ "review": "d1 <= max(d2,d3) holds exactly for p >= min(q,p*), fails on a positive-measure set including (1,2,1), and there the two-level coupling fails with probability 24/(13^8*1300).",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8174:a1/; its files are probes/work/derive/corrigendum-PR8174/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8174/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "6fcdba0058db99ea9dd41dac08db4bb238153f85c068164613f01fccc9a43a08",
+ "stdout_tail": "PASS C1 closed forms: sign(d2-d1)=sign(p-q) and sign(d3-d1)=sign(g)\nPASS C2 monotonicity: each d_i decreases in p; g(q)=2r(q+2r)(q-r) and g(q-2r)=-4r^2(q+r)\nPASS C3 witness and census: at (1,2,1), d1=12/13 > 9/10; exactly 127 of 343 triples in 1..7 fail, and only there\nPASS C8 coupling failure: the 10-site event has probability 24/(13^8*1300), and all three predecessor types are reachable\nPASS C10 domain and lines: all 19 executed lines have p >= q and lie in the domain; off it the repair collapses eps2 to d1\nSUMMARY: confirmed. d1 <= max(d2, d3) holds exactly when p >= min(q, p*), with p* the positive root of g = r p^2 + (q^2+qr+2r^2)p - (q^3+4r^3). The inequality fails on a positive-measure set, including (1,2,1), and there the note's coupling has xi=1 and eta'=0 with probability 24/(13^8*1300). eps2 = max(d1,d2,d3) is the minimal repair for that coupling. The 19 executed lines of the later notes all have p >= q, so their numbers do not move.\nHIT: confirmed - block 30's clause d1 <= max(d2,d3) fails exactly when p < q and g < 0, and there the two-level coupling fails with positive probability\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb260",
+  "at_utc": "20260924T203837Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The clause fails exactly on p < q and g < 0, and the 10-site coupling witness has probability 24/(13^8*1300).",
+  "by": "w-macbookpro90c72-jb260",
+  "at_utc": "20260924T203837Z"
+ }
+}

@@ -22,11 +22,18 @@
  "stdout_tail": "ach level sums to 4/3 (L <= 12), G(1,0,0) = 4/9, G(-1,0,0) = 0; without causality the recursion is not unique (any constant solves its homogeneous part)\nok   R3: S6 follows: on k = (q,-q,0) the level-ordered symbol 4/(3 - sum e^{-ik}) is 8/E and the light-cone gain-one kernel (1 - (1 + 2 sum cos)/7)^-1 is 7/E (symbolic)\nok   R4: referee side computation for (b), exact: the zero-temperature rule s' = H/|H| answers a source with (1/c)(1 - P_c)^-1, so light-cone formation gives exactly 1/E(k) (its window's top) and level-ordered formation 1/(3 - sum e^(-ik)), with |R| E = 2(3 - sum cos)/|3 - sum e^(-ik)| <= 2, equal to 2 exactly where sum sin k = 0 (163 such modes on 16^3, float scan; max elsewhere < 2); in position space its drops at r = 1 are 4/3 (forward) and 2 (backward) times the inverse Laplacian's 1/6, against the probes' finite-beta 0.918-1.060\nchecks: 5 ok, 0 fail\nSUMMARY: every step S1-S6 follows; the kernel repeats attempt a1's (already confirmed) by the causal-recursion route; the large-distance form and the nonlinear comparison are left open as the attempt says; note that 8/E against 7/E compares kernels, while in block 91's response units the zero-temperature rules give 2/E against 1/E (R4)\nHIT: confirmed - G = (4/3) L!/(a!b!c!) 3^-L on the forward octant and 0 elsewhere is the unique causal solution, each level carries 4/3, and the drift-free symbol is 8/E (7/E light-cone); verified by the generating function, exact walk sums and my own recursion loop to level 12\n",
  "checked": {
   "by": "w-macbookpro9927a-ja03f",
-  "at_utc": "20260924T013702Z",
+  "at_utc": "20260924T013732Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 21fb5313 differs from the current HEAD bd1ce7c7 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed independently: the level-ordered gain-one kernel (4/3) L!/(a!b!c!) 3^-L on the forward octant is the unique causal solution, level mass 4/3, drift-free symbol 8/E; side computation: at zero temperature the level-ordered rule answers a held source with 1/(3 - sum e^-ik), up to twice the light-cone window's top 1/E",
+  "by": "w-macbookpro9927a-ja03f",
+  "at_utc": "20260924T013732Z"
  }
 }

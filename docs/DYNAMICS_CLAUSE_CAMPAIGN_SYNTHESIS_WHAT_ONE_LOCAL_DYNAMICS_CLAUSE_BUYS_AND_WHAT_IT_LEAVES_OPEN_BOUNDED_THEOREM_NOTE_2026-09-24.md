@@ -179,6 +179,12 @@ Some are now derived from others, as marked.
   - How records come to form a carving.
 - **The photon phase.** Not placed, either for the Rokhsar–Kivelson family
   or for the pure-ring point where the soft route lands.
+- **Relaxation.** With unitary evolution between records (open PR 9086), a
+  site whose six neighbours are all recorded precesses in their field.
+  - Its Bloch component along the field is conserved, so it cannot relax.
+  - The relaxation profile of open PR 9041 therefore needs unrecorded
+    surroundings that act as an environment. How that environment fixes
+    the profile is not derived.
 - **The readings themselves.** D-loc, the lock, D-closed, D-onlyrec,
   continuous time, the range and covariance are recorded readings, not
   derived from the axiom text.

@@ -22,11 +22,18 @@
  "stdout_tail": "ers Re <= -0.050; stag G=0.05,O=1,k=(0.9, 0.4, 0.2): max |lambda - root| = 1e-13, roots Re -0.050, others Re <= -0.050\nok   N: the full m = 1 linearization (60 order-one profiles, 120 Gauss nodes) has the predicted turn eigenvalues to 1e-9 as exact eigenvalues for the uniform sea at beta = 1 (every other eigenvalue more damped: the turn is the slow, massless branch) and the staggered sea at beta = -1 (its K1 of the other sublattice equals the uniform g0, as the flip says; there the other modes also decay at about Gamma, so the turn is set apart by its dispersion, not its damping)\nchecks: 5 ok, 0 fail\nSUMMARY: PROVED (a) both seas are fixed points for every Omega; (b) the turns form an invariant subspace of the full linearized dynamics (rotation covariance gives the per-neighbour 1/6 exactly), so the turn frequencies are exactly omega = (+-Omega - i Gamma) E(k)/6: precessing, diffusing waves with omega ~ k^2 and a fixed quality Omega/Gamma; (c) the staggered sea exists iff -beta > beta0 and its turns obey lambda^2 + 2 Gamma lambda + (Gamma^2 + Omega^2)(1 - gamma^2) = 0: linear with c = Omega/sqrt(3) only at Gamma = 0, overdamped and diffusive at small k for Gamma > 0; (d) no condition on Omega/Gamma\nHIT: with precession about the target's lean the ordered sea's turns are exact eigenmodes with omega = (+-Omega - i Gamma) E(k)/6; the staggered sea's turns obey lambda^2 + 2 Gamma lambda + (Gamma^2 + Omega^2)(1 - gamma(k)^2) = 0, linear (c = Omega/sqrt(3)) only without relaxation\n",
  "checked": {
   "by": "w-macbookpro9927a-jb8c1",
-  "at_utc": "20260924T023342Z",
+  "at_utc": "20260924T023421Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha bbecc2dd differs from the current HEAD 65f17740 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact: with precession about the target's lean the ordered sea's turns are an invariant subspace of the full linearized odds dynamics (per-neighbour 1/6 by rotation covariance) with omega = (+-Omega - i Gamma) E(k)/6; the staggered sea (exists iff -beta > beta0) has lambda^2 + 2 Gamma lambda + (Gamma^2 + Omega^2)(1 - gamma^2) = 0, linear c = Omega/sqrt(3) only at Gamma = 0; full operator executed to 1e-13",
+  "by": "w-macbookpro9927a-jb8c1",
+  "at_utc": "20260924T023421Z"
  }
 }

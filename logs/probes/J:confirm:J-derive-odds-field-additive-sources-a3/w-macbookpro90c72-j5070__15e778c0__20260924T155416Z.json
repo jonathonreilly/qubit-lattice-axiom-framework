@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-odds-field-additive-sources-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j5070",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/odds-field-additive-sources/referee_w-macbookpro90c72-j5070/check.py",
+ "seed": 65256,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "15e778c0",
+ "started_utc": "20260924T155416Z",
+ "elapsed_s": 15.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at the massless clause of (c) - on the infinite cubic lattice G(4,0,0)/G(0) <= 0.1020 <= 1/9, so two records four steps apart already add to within 10 percent. The axiom memo does remove finite additivity, the identity C2/(2 C1) = G(0)/(G(0)+G(d)) is exact, and at m^2 = 5 every torus L = 5, 6, 7 meets the test at separation 1. The conductor form of D* was not given a value of kappa."
+ },
+ "review": "The screened 10 percent identity and the removal of finite additivity survive; the massless claim that the test is never met fails, since G(4,0,0)/G(0) is at most 0.102.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:odds-field-additive-sources:a3/; its files are probes/work/derive/odds-field-additive-sources/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/odds-field-additive-sources/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "951c6f326ddc2c1e32c5094f9b35545efced16a7a7d651c7b55c09f6c6d78122",
+ "stdout_tail": "rd has capacity 1/G(0)\nok: L=5 d=1: two-record identity, G(d)/G(0) = 0.099095\nok: L=5 d=2: two-record identity, G(d)/G(0) = 0.011291\nok: L=5: adjacent screened records already meet the 10 percent test\nok: L=6: one record has capacity 1/G(0)\nok: L=6 d=1: two-record identity, G(d)/G(0) = 0.098966\nok: L=6 d=2: two-record identity, G(d)/G(0) = 0.010310\nok: L=6 d=3: two-record identity, G(d)/G(0) = 0.002182\nok: L=6: adjacent screened records already meet the 10 percent test\nok: L=7: one record has capacity 1/G(0)\nok: L=7 d=1: two-record identity, G(d)/G(0) = 0.098951\nok: L=7 d=2: two-record identity, G(d)/G(0) = 0.010201\nok: L=7 d=3: two-record identity, G(d)/G(0) = 0.001212\nok: L=7: adjacent screened records already meet the 10 percent test\nok: L=7 N=3 spacing 2: capacity 0.9547 of 27 C1\nok: the interior record carries strictly less charge than an outer one\nmassless ratio at (4,0,0)\nok: A0 integer\nok: square-root bracket\nok: square-root bracket\nok: square-root bracket\nS0 = 1.486980  Sr = 0.092787  T = 0.058856  upper = 0.101981\nok: massless G(4,0,0)/G(0) <= 0.1020 <= 1/9\nTOTAL FAIL = 0\nSUMMARY: fails at the massless clause of (c) - on the infinite cubic lattice G(4,0,0)/G(0) <= 0.1020 <= 1/9, so two records four steps apart already add to within 10 percent. The axiom memo does remove finite additivity, the identity C2/(2 C1) = G(0)/(G(0)+G(d)) is exact, and at m^2 = 5 every torus L = 5, 6, 7 meets the test at separation 1. The conductor form of D* was not given a value of kappa.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5070",
+  "at_utc": "20260924T155440Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

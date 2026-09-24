@@ -29,6 +29,8 @@ Block 94's scorecard left one row of the moving-records column at "supplied": on
 
 A wave passing a record turns by twice the log of how much likelier a second record is to be found at that distance.
 
+*Corrigendum (2026-09-23): lengths double the turn.* The relation above is for block 54's product-form walk (lengths one). Block 59 (#8581) showed that with bond rates and lengths a wave's bending over a slow body's fall is `1 + β`. Block 60 (#8590) showed that its curvature member has `β = 1`, so the turn doubles, `δ(b) = 4|U(b)| = 4 log g(b)` at first order, if the records' pair law is unchanged by the lengths (not worked). The first version of this note said the lengths' contribution was not worked in the lane; it was, in blocks 59 and 60. That was missed by the supervisor's own-prior-art check.
+
 *Executed.* On a 128-torus, the lattice kick divided by the lattice pair energy is `2.10, 2.04, 2.008, 2.003, 2.0002` at `b = 2, 4, 8, 12, 16`. Walk packets passing one record agree with clouds of rays carrying the packets' own spreads to within 1–8 per cent.
 
 In plain terms: the same slow clocks that make records spend time near one another also bend a passing wave towards them. The bend is fixed by the clumping. Measure how much more often records are found at some distance from one another, take the log, double it, and that is the angle through which a wave passing at that distance turns. One field, one number, for matter and for waves.
@@ -125,7 +127,7 @@ The note makes no negative claim beyond scope. Its limits are:
 1. *Strong fields* (near a condensed clump, where `u` is of order one). The ray bends appreciably and the first-order formula fails.
 2. *Short waves.* The lattice dispersion adds `1/cos² k₀` and anisotropy.
 3. *Wide packets passing close.* Their spreads wash out the mean turn (W2's first design).
-4. *Clock-only turning.* In the physics comparator a wave turns by twice what a clock-only field gives. The lane's lengths (blocks 59–61) are where the rest would have to come from; not worked here.
+4. *Lengths.* This note's walk is block 54's product form: bonds are crossed at `√(w_x w_y)` and every length is one. With block 59's bond rates and lengths, bending over fall is `1 + β` (block 59 T4–T5). Block 54's clauses give `β = 0`, which is this note's turn. Block 60's curvature member (#8590) gives `β = 1`, and at first order the turn doubles to `4|U(b)| = 4 log g(b)`, provided the records' pair law is unchanged by the lengths. That proviso is not worked. The probes' worker result #8862 (unrefereed, same model family) extends block 60's ratio exactly to all field strengths, `1 + 2/(1 + w₀/w) ∈ [2, 3)`.
 
 ### N2 — Wall-independence audit
 No no-go wall of the repository is used.
@@ -140,7 +142,7 @@ First order in the field, straight passage and the far field are stated. The ray
 | block 53 (#8568) | the clock field of records | yes |
 | blocks 95, 97 (#8860, #8872) | pair law, timing, sign | yes |
 | block 54 (#8570) | the walk and its ray law | yes |
-| blocks 59–61 | lengths (not used) | no (placement) |
+| blocks 59, 60 (#8581, #8590) | lengths: bending over fall `1 + β`; the curvature member `β = 1` doubles the turn | no (placement; see the corrigendum) |
 
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
@@ -177,6 +179,7 @@ Block 94 scored "one geometry" as supplied, and block 96 placed the walk among t
   - the lattice kernel at the origin, `0.2527310098`, as a literature value used only to align torus constants in W1.
 
 ## Review record
+- **Corrigendum (2026-09-23, supervisor).** N1 route 4 and the per-citation table corrected: blocks 59 and 60 had already worked the lengths' contribution (bending over fall `1 + β`, curvature member `β = 1`). Found in the probe harvest through worker result #8862. Text only; no theorem, check or number changed.
 - **Who and when.** Supervisor-run block, the forty-sixth since the source-link direction opened and the ninth run on Claude Opus 5.5.
 - **What prompted it.** Block 94's "one geometry" row.
 - **The control's first design failed.** Its wide packets (`σ = 5`, `k₀ = 0.25`) passed close to the record (`b = 6`–`14`), and their transverse spreads washed out the turn. The walk and the cloud then disagreed in sign at `b = 6`. The design was replaced before any comparison entered the note.

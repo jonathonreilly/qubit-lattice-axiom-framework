@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_one_field_for_records_and_waves_wave_turns_by_twice_the_pair_energy_2026_09_23.py
 runner_sha256: 61d3e09c27d1b391777dff54ff1b3d957b300b8cf55d2ada4177d8435c475969
-input_fingerprint_sha256: 12a1c7c7564691497e6f4e7bdd3ab68bffc88b8ec1b197d49014f9c6d5836deb
+input_fingerprint_sha256: 12a27b5127e58dd0e042b39f2009d3f3d59af0ee86885f79a9464229cc50736b
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

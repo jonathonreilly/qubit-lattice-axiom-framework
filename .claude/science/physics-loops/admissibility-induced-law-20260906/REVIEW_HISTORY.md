@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-23 block 98 — author checks (not a review PASS)
 The control's first design (wide packets passing close) failed and was replaced before any comparison entered the note; torus backgrounds removed in W1. Census 6/6 in family.
+
+## 2026-09-23 block 98 — corrigendum: lengths double the turn (supervisor, Claude Opus 5.5)
+Blocks 59/60 had already worked the lengths' contribution (bending over fall 1 + β, curvature member β = 1); N1 route 4 and the citation table corrected; the turn doubles under block 60. Text only.

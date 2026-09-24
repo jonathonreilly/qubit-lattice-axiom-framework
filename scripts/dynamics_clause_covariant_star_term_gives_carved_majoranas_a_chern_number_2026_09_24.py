@@ -830,6 +830,26 @@ def split_chern(eps, seed):
 splits = {(eps, seed): split_chern(eps, seed) for eps, seed in ((0.1, 4), (0.1, 5), (0.1, 6), (0.2, 4))}
 split_ok = all(top < bot and all(c_ is not None and abs(c_ - 1) < 1e-6 for c_ in cz) and
                all(c_ is not None and abs(c_ + 1) < 1e-6 for c_ in cc) for top, bot, cz, cc in splits.values())
+d_labels = [(s_, a) for s_ in carv.comp for a in carv.dangling[s_]]
+
+
+def pair_total(axes, eps=0.1):
+    """Fields of size eps on two dangling axes only: exact zero modes, smallest other |E| on the grid, total C_x."""
+    idx = [d_labels.index(ax_) for ax_ in axes]
+
+    def Hk(k):
+        A = np.zeros((nm, nm), dtype=complex)
+        add_terms(A, [(eps * dangling_terms[i][0], dangling_terms[i][1], dangling_terms[i][2]) for i in idx], k, 1.0, carv)
+        return H_of(uvals, ent, carv, np.asarray(k, float), 2.0) + 1j * A
+    ev = np.array([np.linalg.eigvalsh(Hk(k)) for k in grid7])
+    nz_ = int(np.sum(np.abs(ev[0]) < 1e-9))
+    return nz_, float(np.sort(np.abs(ev), axis=1)[:, nz_].min()), [chern_window(Hk, kf, -np.inf, -1e-7) for kf in (0.5, 2.5, 4.5)]
+
+
+keep_pair = pair_total((((2, 1, 2), 2), ((2, 2, 1), 0)))       # z axis at (2,1,2) and x axis at (2,2,1)
+zero_pair = pair_total((((0, 0, 1), 1), ((0, 1, 0), 0)))       # y axis at (0,0,1) and x axis at (0,1,0)
+pair_ok = (keep_pair[0] == 10 and keep_pair[1] > 1e-4 and all(c_ is not None and abs(c_ + 1) < 1e-6 for c_ in keep_pair[2])
+           and zero_pair[0] == 10 and zero_pair[1] > 1e-4 and all(c_ is not None and abs(c_) < 1e-6 for c_ in zero_pair[2]))
 # generic contents (open PR 9054's rule: a fixed direction projected orthogonal to the kept axes of unrecorded
 # neighbours), which leave fields on the dangling axes: how many covariant terms stay free?
 gcontent = {}
@@ -870,13 +890,15 @@ _, g_sv, _ = np.linalg.svd(g_A[g_bad])
 g_free = len(VECS) - int(np.sum(g_sv > 1e-9))
 sp_txt = "; ".join(f"{eps}/{seed}: zero-mode bands to {top:.4f}, chiral from {bot:.4f}"
                    for (eps, seed), (top, bot, cz, cc) in splits.items())
-check("dangling fields make the zero modes cancel the chirality: the chiral bands keep -1, the zero-mode bands take +1",
+check("dangling fields decide the net chirality: on every axis the zero-mode bands take +1 and cancel it; on some pairs it stays -1",
       zm.shape[1] == 12 and abs(b_weight - 12) < 1e-9 and nz7 < 12 and all(c is not None and abs(c) < 1e-6 for c in cx7)
-      and split_ok and g_free == 0,
-      f"zero modes {zm.shape[1]}, weight on dangling b's {b_weight:.3f}; dangling fields (size/draw) leave {nz7} exact zero modes, "
-      f"total Chern numbers on two k_x planes {[float(round(c, 6)) + 0.0 for c in cx7]}; {sp_txt}; in every case the chiral "
-      f"bands keep -1 and the negative zero-mode bands carry +1 on both planes; with open PR 9054's generic contents no "
-      f"covariant term stays free (free dimension {g_free})")
+      and split_ok and pair_ok and g_free == 0,
+      f"zero modes {zm.shape[1]}, weight on dangling b's {b_weight:.3f}; fields on all 13 axes (size/draw) leave {nz7} exact "
+      f"zero modes, total Chern numbers on two k_x planes {[float(round(c, 6)) + 0.0 for c in cx7]}; {sp_txt}; in every case the "
+      f"chiral bands keep -1 and the negative zero-mode bands carry +1; fields of 0.1 on two axes only: z(2,1,2) and x(2,2,1) "
+      f"leave {keep_pair[0]} zero modes, gap {keep_pair[1]:.1e}, total C_x {[round(c_) for c_ in keep_pair[2]]}; y(0,0,1) and "
+      f"x(0,1,0): gap {zero_pair[1]:.1e}, total {[round(c_) + 0 for c_ in zero_pair[2]]}; with open PR 9054's generic contents "
+      f"no covariant term stays free (free dimension {g_free})")
 
 # ------------------------------------------------ 8. the window, the field, and the handedness
 def lowest_at(lam, TT=None, drop_b=False):

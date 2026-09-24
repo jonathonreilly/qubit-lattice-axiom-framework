@@ -1,0 +1,36 @@
+{
+ "task": "P:8913",
+ "type": "pr-reexecution",
+ "lane": "ice-worm-samples-defect-pairs-20260923",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8913",
+ "pr": 8913,
+ "branch": "claude/ice-worm-samples-defect-pairs-20260923",
+ "git_sha": "18edfa04",
+ "started_utc": "20260924T030153Z",
+ "elapsed_s": 196.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "8b8da6bd458cad82c9e95d8cd7476eaf23df6b88da818fd1547411870c10e611",
+ "stdout_tail": "PR #8913: docs(ice): worms sample test-defect pairs exactly; Coulomb law on tori\nbranch claude/ice-worm-samples-defect-pairs-20260923 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.py: rc=0 PASS=5 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260924T030509Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

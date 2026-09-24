@@ -1,0 +1,4 @@
+PR #8913: docs(ice): worms sample test-defect pairs exactly; Coulomb law on tori
+branch claude/ice-worm-samples-defect-pairs-20260923 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_backtracking_worm_samples_test_defect_pairs_exactly_2026_09_23.py: rc=0 PASS=5 FAIL=0

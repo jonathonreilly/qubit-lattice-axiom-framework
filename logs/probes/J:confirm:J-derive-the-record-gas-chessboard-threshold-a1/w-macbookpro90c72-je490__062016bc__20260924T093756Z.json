@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-record-gas-chessboard-threshold-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-je490",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-record-gas-chessboard-threshold/referee_w-macbookpro90c72-je490/check.py",
+ "seed": 42676,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "062016bc",
+ "started_utc": "20260924T093756Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the pattern census, the matrix and the moment signs, W on the cube for n<=4, the site-plane factorisation on the ring, the face constraint, and the four rational thresholds. The three named external inputs were not re-proved. Canonical half filling with contents is not claimed."
+ },
+ "review": "The four rational thresholds keep 4 eps + 2 delta below 1, W is at least 1 on p+q=2r, and the content-less gas at zeta=g^{-3} is exactly half filled, so the Peierls bound survives modulo the three named assumptions.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-record-gas-chessboard-threshold:a1/; its files are probes/work/derive/the-record-gas-chessboard-threshold/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-record-gas-chessboard-threshold/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "3dc44e1ce9950f235cae40a5aece50778e1216efb57df47b6cee54e581faa3a3",
+ "stdout_tail": ", only the two chessboards have 4 records and 0 bonds, every bad power is at least 3/8\nPASS matrix and moments: M = J + 6 l1 P1 + 6 l2 P2, rows sum to 6, Lambda >= 1, six-axis monomials are 0, 1 or 1/3\nPASS content factor: W>=1 and monotone on the cube for n<=4 at (3,1,2) and (1,3,2); tree W=1; (3,1,2) matches (1,3,2)\nPASS site-plane factorisation: on Z/4 the weight is a product of half-weights at g=1/100, 1/4, 4; bond kernel det = g-1 < 0\nPASS phase propagation: face-adjacent blocks share 4 sites, 2 even and 2 odd, so opposite chessboards contradict\nPASS e upper bound: series through 12! plus a geometric tail is below 2.7183\nPASS peierls threshold: content-less g=8.037e-10 budget=0.999974; (3,1,2) g=5.221e-10 budget=0.999926; (5,2,4) g=6.094e-10 budget=0.999881; (12,1,2) g=1.856e-10 budget=0.999735; sum k x^k from 6 is x^6(6-5x)/(1-x)^2; half-filling exponent is invariant\nHIT: confirmed - at zeta = g^{-3}, the stated g* make 4 eps + 2 delta < 1, so the Peierls bound gives liminf E[S^2]/N^2 >= (1/4)(1-4 eps-2 delta) > 0 if the chessboard estimate, the torus separation lemma and the (26e)^k count are granted; on p+q=2r one has W>=1, and without contents the gas is exactly half filled\nSUMMARY: confirmed the pattern census, the matrix and the moment signs, W on the cube for n<=4, the site-plane factorisation on the ring, the face constraint, and the four rational thresholds. The three named external inputs were not re-proved. Canonical half filling with contents is not claimed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je490",
+  "at_utc": "20260924T093821Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The four rational g* keep 4 eps + 2 delta below 1, and on p+q=2r the content weight is at least 1; order below those g* still rests on the three named assumptions.",
+  "by": "w-macbookpro90c72-je490",
+  "at_utc": "20260924T093821Z"
+ }
+}
